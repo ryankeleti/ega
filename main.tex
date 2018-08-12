@@ -1,0 +1,85 @@
+\documentclass[10pt]{amsart}
+
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage[left=0.85in,right=0.85in,top=0.89in,bottom=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{tikz-cd}
+\usepackage{epigraph}
+
+% if you don't like the font comment out the following two lines
+\renewcommand{\rmdefault}{pplx}
+\usepackage{eulervm}
+
+\allowdisplaybreaks[1]
+
+\title{EGA I}
+\author{A. Grothendieck}
+\date{ }
+
+\newcommand{\LS}{\begin{enumerate}[label=(\alph*)]}
+\newcommand{\LSA}{\begin{enumerate}[label=(\arabic*)]}
+\newcommand{\LSI}{\begin{enumerate}[label=(\roman*)]}
+\newcommand{\LE}{\end{enumerate}}
+\newcommand{\NEXT}{\medskip\noindent}
+\newcommand{\bb}{\mathbb}
+\newcommand{\scr}{\mathscr}
+\newcommand{\cal}{\mathcal}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\OP}{\operatorname}
+\newcommand{\TS}{\textstyle}
+
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\N{\mathbb{N}}
+\def\Q{\mathbb{Q}}
+\def\Z{\mathbb{Z}}
+\def\RA{\Rightarrow}
+\def\LA{\Leftarrow}
+\def\ssm{\smallsetminus}
+\def\emp{\varnothing}
+
+\DeclareMathOperator*{\Hom}{Hom}
+\DeclareMathOperator*{\img}{im}
+\DeclareMathOperator*{\pr}{pr}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{coro}[thm]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+
+\newenvironment{cx}[1][]{\par\medskip\noindent\indent\textbf{(#1)}\rmfamily}{\medskip}
+
+\begin{document}
+\maketitle
+%\setcounter{section}{0}
+\tableofcontents{}
+%\mbox{}
+
+\section*{What is this?}
+
+This is my poor translation of Grothendieck's EGA I. This
+will probably consist of lots of online translations and incorrect grammar.
+You have been warned!
+
+S'il te pla\^it pardonne-moi, Grothendieck.
+
+Ryan Keleti :)
+
+\section*{Introduction}
+\subfile{sections/intro}
+
+Chapter 0. --- Preliminaries
+\section*{Rings of Fractions}
+\subsection*{Rings and Algebras}\mbox{}\\
+\subfile{sections/prelim.1.1}
+
+
+\end{document}
+
