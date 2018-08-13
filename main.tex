@@ -8,6 +8,7 @@
 \usepackage{enumitem}
 \usepackage{tikz-cd}
 \usepackage{epigraph}
+\usepackage[super]{nth}
 
 % if you don't like the font comment out the following two lines
 \renewcommand{\rmdefault}{pplx}
@@ -30,18 +31,19 @@
 \newcommand{\mf}{\mathfrak}
 \newcommand{\OP}{\operatorname}
 \newcommand{\TS}{\textstyle}
-\newcommand{\rad}{\mathfrak{r}}
+\newcommand{\ro}{\mathfrak{r}}
+\newcommand{\rad}{\mathfrak{R}}
+\newcommand{\RA}{\Rightarrow}
+\newcommand{\LA}{\Leftarrow}
+\newcommand{\su}{\subset}
+\newcommand{\emp}{\varnothing}
+%\newcommand{\ssm}{\smallsetminus}
 
 \def\R{\mathbb{R}}
 \def\C{\mathbb{C}}
 \def\N{\mathbb{N}}
 \def\Q{\mathbb{Q}}
 \def\Z{\mathbb{Z}}
-\def\RA{\Rightarrow}
-\def\LA{\Leftarrow}
-\def\su{\subset}
-\def\ssm{\smallsetminus}
-\def\emp{\varnothing}
 
 \DeclareMathOperator*{\Hom}{Hom}
 \DeclareMathOperator*{\img}{im}
@@ -82,6 +84,10 @@ Chapter 0. --- Preliminaries
 \section*{Rings of Fractions}
 \subsection*{Rings and Algebras}\mbox{}\\
 \subfile{sections/prelim.1.0}
+\subsection*{Root (radical) of an ideal. Nilradical and radical of a ring.}\mbox{}\\
+\subfile{sections/prelim.1.1}
+\subsection*{Modules and rings of fractions}\mbox{}\\
+\subfile{sections/prelim.1.2}
 
 
 \end{document}
