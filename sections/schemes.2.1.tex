@@ -1,0 +1,21 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\begin{cx}{2.1.1}
+    Given a ringed space $(X,\O_X)$, we say that an open subset $V$ of $X$ is an \emph{affine open} if the ringed space $(V,\O_X|V)$ is an affine scheme (1.7.1).
+\end{cx}
+
+\begin{cx}[Definition]{2.1.2}
+    We define a prescheme to be a ringed space $(X,\O_X)$ such that every point of $X$ admits an affine open neighbourhood.
+\end{cx}
+
+\begin{cx}[Proposition]{2.1.3}
+    If $(X,\O_X)$ is a prescheme then the open affines give a base for the topology of $X$.
+\end{cx}
+
+In effect, if $V$ is an arbitrary open neighbourhood of $x\in X$, then there exists by hypothesis an open neighbourhood $W$ of $x$ such that $(W,\O_X|W)$ is an affine scheme; we write $A$ to mean its ring.
+In the space $W$, $V\cap W$ is an open neighbourhood of $x$; thus there exists $f\in A$ such that $D(f)$ is an open neighbourhood of $x$ contained inside $V\cap W$ (1.1.10 (i)).
+The ringed space $(D(f),\O_X|D(f))$ is thus an affine scheme, isomorphic to $A_f$ (1.3.6), whence the proposition.
+
+\end{document}
