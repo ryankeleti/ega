@@ -2,13 +2,17 @@
 
 \input{includes/preamble}
 
+\title{EGA I}
+\author{A. Grothendieck}
+% is this going to be the date it was last updated or the date of the original?
+% \date{ }
+
+
 \begin{document}
-\maketitle
-% TODO: the TOC needs fixing to show the desired level of subsubsubsub-ness
-\tableofcontents{}
 
-\subsection*{What is this?}
 
+\renewcommand{\abstractname}{What this is}
+\begin{abstract}
     This is my poor translation of Grothendieck's EGA I. This
     will probably consist of lots of online translations and incorrect grammar.
     You have been warned!
@@ -16,35 +20,51 @@
     S'il te pla\^it pardonne-moi, Grothendieck.
 
     Ryan Keleti :)
+\end{abstract}
+
+\maketitle
+
+\noindent\hspace{0.15\linewidth}
+\begin{minipage}{0.7\linewidth}
+    \tableofcontents{}
+\end{minipage}
 
 
-\section*{Introduction}
+\clearpage
+
+
+\part*{Introduction}
 \subfile{sections/intro}
 
 
+\clearpage
 
-\section*{Chapter 0. --- Preliminaries}
 
-    \subsection*{Rings of Fractions}
+\setcounter{part}{-1}
 
-        \subsubsection*{Rings and Algebras}\mbox{}\\
+\part{Preliminaries}
+
+    \section{Rings of Fractions}
+
+        \subsection{Rings and Algebras}
         \subfile{sections/prelim.1.0}
 
-        \subsubsection*{Root (radical) of an ideal. Nilradical and radical of a ring.}\mbox{}\\
+        \subsection*{Root (radical) of an ideal. Nilradical and radical of a ring.}
         \subfile{sections/prelim.1.1}
 
-        \subsubsection*{Modules and rings of fractions}\mbox{}\\
+        \subsection*{Modules and rings of fractions}
         \subfile{sections/prelim.1.2}
 
 
+\clearpage
 
-\section*{Chapter 1. --- The language of schemes}
 
-    \subsection*{Preschemes and morphisms of preschemes}
+\part{The language of schemes}
 
-        \subsubsection*{Definition of preschemes}\mbox{}\\
+    \section{Preschemes and morphisms of preschemes}
+
+        \subsection{Definition of preschemes}
         \subfile{sections/schemes.2.1}
 
 
 \end{document}
-
