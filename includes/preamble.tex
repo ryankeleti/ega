@@ -8,6 +8,7 @@
 \usepackage{epigraph}
 \usepackage[super]{nth}
 \usepackage{titlesec,titletoc}
+\usepackage{soul}
 
 
 % if you don't like the font comment out the following two lines
@@ -32,60 +33,3 @@
 
 % center the toc heading
 \renewcommand{\contentsname}{\centering Contents}
-
-
-% commands
-
-\newcommand{\asttri}{%
-    \begin{center}
-        \begin{equation*}
-            \arraycolsep=1pt
-            \def\arraystretch{0.7}
-            \begin{array}{rcl}
-                &*&\\
-                *&&*
-            \end{array}
-        \end{equation*}
-    \end{center}}
-
-\newcommand{\LS}{\begin{enumerate}[label=(\alph*)]}
-\newcommand{\LSA}{\begin{enumerate}[label=(\arabic*)]}
-\newcommand{\LSI}{\begin{enumerate}[label=(\roman*)]}
-\newcommand{\LE}{\end{enumerate}}
-\newcommand{\NEXT}{\medskip\noindent}
-\newcommand{\bb}{\mathbb}
-\newcommand{\scr}{\mathscr}
-\newcommand{\cal}{\mathcal}
-\newcommand{\mf}{\mathfrak}
-\newcommand{\OP}{\operatorname}
-\newcommand{\TS}{\textstyle}
-\newcommand{\ro}{\mathfrak{r}}
-\newcommand{\rad}{\mathfrak{R}}
-\newcommand{\RA}{\Rightarrow}
-\newcommand{\LA}{\Leftarrow}
-\newcommand{\su}{\subset}
-\newcommand{\emp}{\varnothing}
-%\newcommand{\ssm}{\smallsetminus}
-
-\def\R{\mathbb{R}}
-\def\C{\mathbb{C}}
-\def\N{\mathbb{N}}
-\def\Q{\mathbb{Q}}
-\def\Z{\mathbb{Z}}
-
-\def\O{\mathcal{O}}
-
-\DeclareMathOperator*{\Hom}{Hom}
-\DeclareMathOperator*{\img}{im}
-%\DeclareMathOperator*{\pr}{pr}
-
-% currently this works as \begin{cx}[optional prop/def]{x.y.z}
-\makeatletter
-\newenvironment{cx}[2][\@nil]{%
-    \def\tmp{#1}%
-    \ifx\tmp\@nnil
-        \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
-    \else
-        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
-    \fi}{\par\medskip}
-\makeatother
