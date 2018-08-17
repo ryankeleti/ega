@@ -1,4 +1,5 @@
 .DS_Store
+._*
 *.aux
 *.log
 *.toc
