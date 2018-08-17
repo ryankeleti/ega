@@ -1,125 +1,49 @@
 \documentclass[10pt]{amsart}
 
-\usepackage[utf8]{inputenc}
-\usepackage{subfiles}
-\usepackage[left=0.85in,right=0.85in,top=0.89in,bottom=1.15in]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{mathrsfs}
-\usepackage{enumitem}
-\usepackage{tikz-cd}
-\usepackage{epigraph}
-\usepackage[super]{nth}
-
-% if you don't like the font comment out the following two lines
-\renewcommand{\rmdefault}{pplx}
-\usepackage{eulervm}
-
-\allowdisplaybreaks[1]
-
-\title{EGA I}
-\author{A. Grothendieck}
-% is this going to be the date it was last updated or the date of the original?
-% \date{ }
-
-\newcommand{\asttri}{%
-    \begin{center}
-        \begin{equation*}
-            \arraycolsep=1pt
-            \def\arraystretch{0.7}
-            \begin{array}{rcl}
-                &*&\\
-                *&&*
-            \end{array}
-        \end{equation*}
-    \end{center}}
-
-\newcommand{\LS}{\begin{enumerate}[label=(\alph*)]}
-\newcommand{\LSA}{\begin{enumerate}[label=(\arabic*)]}
-\newcommand{\LSI}{\begin{enumerate}[label=(\roman*)]}
-\newcommand{\LE}{\end{enumerate}}
-\newcommand{\NEXT}{\medskip\noindent}
-\newcommand{\bb}{\mathbb}
-\newcommand{\scr}{\mathscr}
-\newcommand{\cal}{\mathcal}
-\newcommand{\mf}{\mathfrak}
-\newcommand{\OP}{\operatorname}
-\newcommand{\TS}{\textstyle}
-\newcommand{\ro}{\mathfrak{r}}
-\newcommand{\rad}{\mathfrak{R}}
-\newcommand{\RA}{\Rightarrow}
-\newcommand{\LA}{\Leftarrow}
-\newcommand{\su}{\subset}
-\newcommand{\emp}{\varnothing}
-%\newcommand{\ssm}{\smallsetminus}
-
-\def\R{\mathbb{R}}
-\def\C{\mathbb{C}}
-\def\N{\mathbb{N}}
-\def\Q{\mathbb{Q}}
-\def\Z{\mathbb{Z}}
-
-\def\O{\mathcal{O}}
-
-\DeclareMathOperator*{\Hom}{Hom}
-\DeclareMathOperator*{\img}{im}
-%\DeclareMathOperator*{\pr}{pr}
-
-% \theoremstyle{plain}
-% \newtheorem{thm}{Theorem}[section]
-% \newtheorem{prop}[thm]{Proposition}
-% \newtheorem{lem}[thm]{Lemma}
-% \newtheorem{coro}[thm]{Corollary}
-
-% \theoremstyle{definition}
-% \newtheorem{defn}[thm]{Definition}
-
-% currently this works as \begin{cx}[optional prop/def]{x.y.z}
-\makeatletter
-\newenvironment{cx}[2][\@nil]{%
-    \def\tmp{#1}%
-    \ifx\tmp\@nnil
-        \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
-    \else
-        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
-    \fi}{\par\medskip}
-\makeatother
+\input{includes/preamble}
 
 \begin{document}
 \maketitle
-%\setcounter{section}{0}
+% TODO: the TOC needs fixing to show the desired level of subsubsubsub-ness
 \tableofcontents{}
-%\mbox{}
 
-\section*{What is this?}
+\subsection*{What is this?}
 
-This is my poor translation of Grothendieck's EGA I. This
-will probably consist of lots of online translations and incorrect grammar.
-You have been warned!
+    This is my poor translation of Grothendieck's EGA I. This
+    will probably consist of lots of online translations and incorrect grammar.
+    You have been warned!
 
-S'il te pla\^it pardonne-moi, Grothendieck.
+    S'il te pla\^it pardonne-moi, Grothendieck.
 
-Ryan Keleti :)
+    Ryan Keleti :)
+
 
 \section*{Introduction}
 \subfile{sections/intro}
 
-% make this into a chapter heading later?
-Chapter 0. --- Preliminaries
-\section*{Rings of Fractions}
-\subsection*{Rings and Algebras}\mbox{}\\
-\subfile{sections/prelim.1.0}
-\subsection*{Root (radical) of an ideal. Nilradical and radical of a ring.}\mbox{}\\
-\subfile{sections/prelim.1.1}
-\subsection*{Modules and rings of fractions}\mbox{}\\
-\subfile{sections/prelim.1.2}
 
-\newpage
 
-% make this into a chapter heading later?
-Chapter 1. --- The language of schemes
-\section*{Preschemes and morphisms of preschemes}
-\subsection*{Definition of preschemes}\mbox{}\\
-\subfile{sections/schemes.2.1}
+\section*{Chapter 0. --- Preliminaries}
+
+    \subsection*{Rings of Fractions}
+
+        \subsubsection*{Rings and Algebras}\mbox{}\\
+        \subfile{sections/prelim.1.0}
+
+        \subsubsection*{Root (radical) of an ideal. Nilradical and radical of a ring.}\mbox{}\\
+        \subfile{sections/prelim.1.1}
+
+        \subsubsection*{Modules and rings of fractions}\mbox{}\\
+        \subfile{sections/prelim.1.2}
+
+
+
+\section*{Chapter 1. --- The language of schemes}
+
+    \subsection*{Preschemes and morphisms of preschemes}
+
+        \subsubsection*{Definition of preschemes}\mbox{}\\
+        \subfile{sections/schemes.2.1}
 
 
 \end{document}
