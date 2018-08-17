@@ -45,20 +45,31 @@
 \def\Q{\mathbb{Q}}
 \def\Z{\mathbb{Z}}
 
+\def\O{\mathcal{O}}
+
 \DeclareMathOperator*{\Hom}{Hom}
 \DeclareMathOperator*{\img}{im}
 %\DeclareMathOperator*{\pr}{pr}
 
-\theoremstyle{plain}
-\newtheorem{thm}{Theorem}[section]
-\newtheorem{prop}[thm]{Proposition}
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{coro}[thm]{Corollary}
+% \theoremstyle{plain}
+% \newtheorem{thm}{Theorem}[section]
+% \newtheorem{prop}[thm]{Proposition}
+% \newtheorem{lem}[thm]{Lemma}
+% \newtheorem{coro}[thm]{Corollary}
 
-\theoremstyle{definition}
-\newtheorem{defn}[thm]{Definition}
+% \theoremstyle{definition}
+% \newtheorem{defn}[thm]{Definition}
 
-\newenvironment{cx}[1][]{\par\medskip\noindent\indent\textbf{(#1)}\rmfamily}{\medskip}
+% currently this works as \begin{cx}[optional prop/def]{x.y.z}
+\makeatletter
+\newenvironment{cx}[2][\@nil]{%
+    \def\tmp{#1}%
+    \ifx\tmp\@nnil
+        \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
+    \else
+        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
+    \fi}{\par\medskip}
+\makeatother
 
 \begin{document}
 \maketitle
@@ -88,6 +99,14 @@ Chapter 0. --- Preliminaries
 \subfile{sections/prelim.1.1}
 \subsection*{Modules and rings of fractions}\mbox{}\\
 \subfile{sections/prelim.1.2}
+
+\newpage
+
+% make this into a chapter heading later?
+Chapter 1. --- The language of schemes
+\section*{Preschemes and morphisms of preschemes}
+\subsection*{Definition of preschemes}\mbox{}\\
+\subfile{sections/schemes.2.1}
 
 
 \end{document}
