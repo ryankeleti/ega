@@ -1,0 +1,35 @@
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage[left=1.25in,right=1.25in,top=0.99in,bottom=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{tikz-cd}
+\usepackage{epigraph}
+\usepackage[super]{nth}
+\usepackage{titlesec,titletoc}
+\usepackage{soul}
+
+
+% if you don't like the font comment out the following two lines
+\renewcommand{\rmdefault}{pplx}
+\usepackage{eulervm}
+
+\allowdisplaybreaks[1]
+
+
+% section titles
+
+\titleformat{\part}[block]{\huge}{\sc Chapter \thepart. ---\,\,}{0pt}{\filcenter\sc\Huge}[\setcounter{section}{0}]
+\titleformat{\section}[block]{\huge\bfseries}{\thesection.\,\,}{0pt}{\filcenter}[\setcounter{subsection}{-1}]
+\titleformat{\subsection}[hang]{\bfseries}{\thesubsection.\,\,}{0pt}{}
+
+
+% table of contents
+
+\dottedcontents{part}[0em]{\sc}{2em}{1em}
+\dottedcontents{section}[3em]{\bfseries}{2em}{1em}
+\dottedcontents{subsection}[6em]{}{2.5em}{1em}
+
+% center the toc heading
+\renewcommand{\contentsname}{\centering Contents}
