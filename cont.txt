@@ -1,6 +1,6 @@
 if you want to contribute, please let me know what section you are doing!
 this file will also record parts people _have_ done,
-  so you may directly send them questions regarding their contribution (for proofreading)
+  so you may directly send them questions regarding their contribution (for proofreading).
 
 |person        |section
  ryankeleti      prelim.1
