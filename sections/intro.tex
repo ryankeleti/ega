@@ -4,7 +4,7 @@
 
 \epigraph{\emph{To Oscar Zariski and Andr\'e Weil.}}
 
-This memoir, and the many others that must follow, are intended
+\oldpage{5}This memoir, and the many others that must follow, are intended
 to form a treatise on the foundations of algebraic geometry. They do not assume,
 in principle, any particular knowledge of this discipline, and it has even been
 that such knowledge, despite its obvious advantages, could sometimes (by the
@@ -37,7 +37,7 @@ systematic acceptance of nilpotent elements in the local rings of ``manifolds''
 that we consider (which necessarily shifts the idea of rational mappings into
 the background, in favor of those of regular mappings or ``morphisms''). This
 Treatise aims precisely to systematically develop the language of schemes, and
-will demonstrate, we hope, its necessity. Although it would be easy to do so, we
+will demonstrate, we hope, its necessity. Although it would be easy to do so, \oldpage{6}we
 will not try to give here an ``intuitive'' introduction to the notions
 developed in Chapter 1. For the reader who would like to have a glimpse of the
 preliminary study of the subject matter of this Treatise, we refer them to the
@@ -70,10 +70,24 @@ We give below the general outline planned for this Treatise, subject to later mo
 In principal, all chapters are considered open to changes, and supplementary paragraphs can always be added later; such paragraphs would appear in separate fascicles in order to minimise the inconveniences accompanying whatever mode of publication adopted.
 When the writing of such a paragraph is foreseen or in progress during the publication of a chapter, it will be mentioned in the summary of the chapter in question, even if, owing to certain orders of urgency, \unsure{its actual publication clearly ought to have been later.}
 For the use of the reader, we give in ``Chapter 0'' the necessary tools in commutative algebra, homological algebra, and sheaf theory, that will be used throughout this Treatise, that are more or less well known but for which it was not possible to give convenient references.
-It is recommended for the reader to not read Chapter 0 except whilst reading the Treatise proper, when the results to which we refer seem unfamiliar.
+It is recommended for the reader to not read Chapter 0 except whilst reading the Treatise proper, when the results to which we refer \oldpage{7}seem unfamiliar.
 Besides, we think that in this way, the reading of this Treatise could be a good method for the beginner to familiarise themselves with commutative algebra and homological algebra, whose study, when not accompanied with tangible applications, is considered tedious, or even depressing, by many.
 
 \asttri
+
+It is outside of our capabilities to give a historic overview, or even a summary thereof, of the ideas and results described.
+The text will contain only those references considered particularly useful for comprehension, and we indicate the origin only of the most important results.
+Formally, at least, the subjects discussed in our work are reasonably new, which explains the scarcity of references made to the Fathers of algebraic geometry from the 19th to the beginning of the 20th century, whose works we know only by hear-say.
+It is suitable, however, to say some words here about the works which have most directly influenced the authors and contributed to the development of scheme-theoretic point of view.
+We absolutely must mention the fundamental work (FAC) of J.-P.~Serre first, which has served as an introduction to algebraic geometry for more that one young student (one of the authors of this Treatise being one), deterred by the dryness of the classic \emph{Foundations} of A.~Weil [18].
+It is there that it is shown, for the first time, that the ``Zariski topology'' of an ``abstract'' algebraic variety is perfectly suited to applying certain techniques from algebraic topology, and notably to be able to define a cohomology theory.
+Further, the definition of an algebraic variety given therein is that which translates most naturally to the idea that we develop here\footnote[1]{Just as J.-P.~Serre informed us, it is right to note that the idea of defining the structure of a manifold by the data of a sheaf of rings is due to H.~Cartan, who took this idea as the starting point of his theory of analytic spaces. Of course, just as in algebraic geometry, it would be important in ``analytic geometry'' to give the right to use nilpotent elements in local rings of analytic spaces. This extension of the definition of H.~Cartan and J.-P.~Serre has recently been broached by H.~Grauert [5], and there is room to hope that a systematic report of analytic geometry in this setting will soon see the light of day. It is also evident that the ideas and techniques developed in this Treatise retain a sense of analytic geometry, even though one must expect more considerable technical difficulties in this latter theory. We can foresee that algebraic geometry, by the simplicity of its methods, will be able to serve as a sort of formal model for future developments in the theory of analytic spaces.}.
+Serre himself had incidentally noted that the cohomology theory of affine algebraic varieties could translate without difficulty by replacing the affine algebras over a field by arbitrary commutative rings.
+Chapters I and II of this Treatise, and the first two paragraphs of chapter III, can thus be considered, for the most part, as easy translations, in this bigger framework, of the principal results of (FAC) and a later article of the same author [15].
+We have also vastly profited from the \emph{Séminaire de Géométrie algébrique} de C.~Chevalley [1]; in particular, the systematic usage of ``constructible sets'' introduced by him has turned out to be extremely useful in the theory of schemes (cf. chap.~IV).
+We have also borrowed from him the study of morphisms from \oldpage{8}the point of view of dimension (chap.~IV), that translates with negligible change to the framework of schemes.
+It also merits noting that the idea of ``schemes of local rings'', introduced by Chevalley, naturally lends itself to being extended to algebraic geometry (not having, however, all the flexibility and generality that we intend to give it here); for the connections between this idea and our theory, see the chap.~I,~s.~8.
+One such extension has been developed by M.~Nagata in a series of memoires [9], which contain many special results concerning algebraic geometry over Dedekind rings\footnote[1]{Amongst the works that come close to our point of view of algebraic geometry, we pick out the work of E.~Kàhler [22] and a recent note of Chow and Igusa [3], which go back over certain results of (FAC) in the context of Nagata-Chevalley theory, as well as giving a Künneth formula.}.
 
 TODO
 
@@ -91,7 +105,7 @@ We follow successive steps:
     \item We study the problem in question when $A$ is a local \emph{artinien} ring.
     So that the problem $P$ still makes sense when $A$ is not assumed to be integral, sometimes we have to reformulate $P$, and it appears that we often thus obtain a better understanding of the problem during this stage, in an ``infinitesimal'' way.
     \item The theory of formal schemes (chap.~III,~ss.~3,~4,~and~5) lets us pass from the case of an artinien ring to a \emph{complete local ring}.
-    \item Finally, if $A$ is an arbitrary local ring, considering ``\unsure{multiform} sections'' of suitable schemes over $X$ approximates the idea of a given ``formal'' section (chap.~IV), and this will let us pass, by extension of scalars to the completion of $A$, from a known result of \completelyunsure to an analogous result for a finite simple (e.g. unramified) extension of $A$.
+    \item Finally, if $A$ is an arbitrary local ring, considering ``\unsure{multiform} sections'' of suitable schemes over $X$ approximates the idea of a given ``formal'' section (chap.~IV), and this will let us pass, \oldpage{9}by extension of scalars to the completion of $A$, from a known result of \completelyunsure to an analogous result for a finite simple (e.g. unramified) extension of $A$.
 \end{enumerate}
 
 This sketch shows the importance of the systematic study of schemes defined over an artinien ring $A$.
