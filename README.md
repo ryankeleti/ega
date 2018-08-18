@@ -11,6 +11,7 @@ see `cont.txt` if you want to contribute
 
 ## todo
 
-- add original page numbers in the margins here? might make it easier for people to find references if they were originally give by page number [done]
+- add original page numbers in the margins here? might make it easier for people to find references if they were originally give by page number [done, use
+\oldpage{x}]
 - search within the .tex files for any `TODO` comments
 
