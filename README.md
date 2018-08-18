@@ -13,4 +13,3 @@ see `cont.txt` if you want to contribute
 
 - add original page numbers in the margins here? might make it easier for people to find references if they were originally give by page numbers
 - search within the .tex files for any `TODO` comments
-- fix `\oldpage` not showing up most of the time
