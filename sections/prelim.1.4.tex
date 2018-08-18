@@ -1,0 +1,92 @@
+\documentclass[../main.tex]
+
+\begin{document}
+
+\begin{cx}{1.4.1}
+Let $S$, $T$ be two multiplicative subsets of a ring $A$ such that $S\su T$; there exists a canonical
+homomorphism $\rho_A^{T,S}$ (or simply $\rho^{T,S}$) of $S^{-1}A$ into  $T^{-1}A$, sending the
+element denoted $a/s$ of $S^{-1}A$ to the element denoted $a/s$ in $T^{-1}A$; we have
+${i_A^T=\rho_A^{T,S}\circ i_A^S}$. For every $A$-module $M$, there exists in the same way an
+$S^{-1}A$-linear map of $S^{-1}M$ into $T^{-1}M$ (the latter considered as an $S^{-1}A$-module thanks
+to the homomorphism $\rho_A^{T,S}$), which matches the element $m/s$ of $S^{-1}M$ to the element $m/s$
+of $T^{-1}M$; we note that the map $\rho_M^{T,S}$, or simply $\rho^{T,S}$, and we still have
+$i_M^T=\rho_M^{T,S}\circ i_M^S$; in canonical identification (1.2.5), $\rho_M^{T,S}$ identifies with
+$\rho_A^{T,S}\otimes 1$. The homomorphism $\rho_M^{T,S}$ is a \emph{functorial morphism} (or natural
+transformation) of the functor $S^{-1}M$ into the functor $T^{-1}M$, in other words, the diagram
+\[\begin{tikzcd}
+  S^{-1}M\ar[r,"S^{-1}u"]\ar[d,"\rho_M^{T,S}"'] & S^{-1}N\ar[d,"\rho_N^{T,S}"]\\
+  T^{-1}M\ar[r,"T^{-1}u"] & T^{-1}N
+\end{tikzcd}\]
+\oldpage{16}is commutative, for every homomorphism $u:M\to N$; $T^{-1}u$ is entirely determined by
+$S^{-1}u$, because for $m\in M$ and $t\in T$, we have
+\[
+  (T^{-1}u)(m/t)=(t/1)^{-1}\rho^{T,S}((S^{-1}u)(m/1)).
+\]
+\end{cx}
+
+\begin{cx}{1.4.2}
+With the same notation, for two $A$-modules $M$, $N$, the diagrams (cf. (1.3.4) and (1.3.5))
+\[\begin{tikzcd}
+  (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\ar[r,"\sim"]\ar[d] & S^{-1}(M\otimes_A N)\ar[d] & &
+  S^{-1}\Hom_A(M,N)\ar[r]\ar[d] &\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)\ar[d]\\
+  (T^{-1}M)\otimes_{T^{-1}A}(T^{-1}N)\ar[r,"\sim"] & T^{-1}(M\otimes_A N) & &
+  T^{-1}\Hom_A(M,N)\ar[r] &\Hom_{T^{-1}A}(T^{-1}M,T^{-1}N)
+\end{tikzcd}\]
+are commutative.
+\end{cx}
+
+\begin{cx}{1.4.3}
+There is an important case in which the homomorphism $\rho^{T,S}$ is \emph{bijective},
+we know that then every element of $T$ is divisor of an element of $S$; we then identify by
+$\rho^{T,S}$ the modules $S^{-1}M$ and $T^{-1}M$. We say that $S$ is \emph{saturated} if every divisor
+in $A$ of an element of $S$ is in $S$; by replacing $S$ with  the set $T$ of all the divisors of the
+elements of $S$ (a set which is multiplicative and saturated), we see that we can always, if we wish,
+be limited to the consideration of modules of fractions $S^{-1}M$, where $S$ is saturated.
+\end{cx}
+
+\begin{cx}{1.4.4}
+If $S$, $T$, $U$ are three multiplicative subsets of $A$ such that $S\su T\su U$, we have
+\[
+  \rho^{U,S}=\rho^{U,T}\circ\rho^{T,S}.
+\]
+\end{cx}
+
+\begin{cx}{1.4.5}
+Consider an \emph{increasing filtered family} $(S_\alpha)$ of multiplicative subsets of $A$
+(we write $\alpha\leq\beta$ for $S_\alpha\su S_\beta$), and let $S$ be the multiplicative subset
+$\bigcup_\alpha S_\alpha$; let us put $\rho_{\beta\alpha}=\rho_A^{S_\beta,S_\alpha}$ for $\alpha\leq\beta$;
+according to (1.4.4), the homomorphisms $\rho_{\beta\alpha}$ define a ring $A'$ as the \emph{inductive limit}
+of the inductive system of rings $(S_\alpha^{-1}A,\rho_{\beta\alpha})$. Let $\rho_\alpha$ be the canonical
+map $S_\alpha^{-1}A\to A'$, and let $\varphi_\alpha=\rho_A^{S,S_\alpha}$; as
+$\varphi_\alpha=\varphi_\beta\circ\rho_{\beta\alpha}$ for $\alpha\leq\beta$ according to
+(1.4.4), we can uniquely define a homomorphism $\varphi:A'\to S^{-1}A$ such that the diagram
+\[\begin{tikzcd}
+  & S_\alpha^{-1}A\ar[ddl,"\rho_\alpha"']\ar[d,very near end,"\rho_{\beta\alpha}"]\ar[rdd,"\varphi_\alpha"]\\
+  & S_\beta^{-1}A\ar[ld,"\rho_\beta"]\ar[rd,"\varphi_\beta"'] & & (\alpha\leq\beta)\\
+  A' \ar[rr,"\varphi"'] & & S^{-1}A
+\end{tikzcd}\]
+is commutative. In fact, $\varphi$ is an \emph{isomorphism}; it is indeed immediate by construction that
+$\varphi$ is surjective. On the other hand, if $\rho_\alpha(a/s_\alpha)\in A'$ is such that
+${\varphi(\rho_\alpha(a/s_\alpha))=0}$, this means that $a/s_\alpha=0$ in $S^{-1}A$, that is, to say that
+there exists $s\in S$ such that $sa=0$; but there is a $\beta\geq\alpha$ such that $s\in S_\beta$, and
+consequently, as $\rho_\alpha(a/s_\alpha)=\rho_\beta(sa/ss_\alpha)=0$, we find that $\varphi$ is injective.
+The case for an $A$-module $M$ is treated likewise, and thus we have defined canonical isomorphisms
+\[\begin{tikzcd}
+  \varinjlim S_\alpha^{-1}A\ar[r,"\sim"] & (\varinjlim S_\alpha)^{-1}A, & &
+  \varinjlim S_\alpha^{-1}M\ar[r,"\sim"] & (\varinjlim S_\alpha)^{-1}M,
+\end{tikzcd}\]
+the second being \emph{functorial} in $M$.
+\end{cx}
+
+\begin{cx}{1.4.6}
+\oldpage{17}Let $S_1$, $S_2$ be two multiplicative subsets of $A$; then $S_1 S_2$ is also a multiplicative subset
+of $A$. Let us denote by $S_2'$ the canonical image of $S_2$ in the ring $S_1^{-1}A$, which is a multiplicative
+subset of this ring. For every $A$-module $M$ there is then a functorial isomorphism
+\[\begin{tikzcd}
+  {S_2'}^{-1}(S_1^{-1}M)\ar[r,"\sim"] & (S_1 S_2)^{-1}M
+\end{tikzcd}\]
+which maps $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
+\end{cx}
+
+\end{document}
+
