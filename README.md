@@ -5,7 +5,7 @@ S’il te plaît pardonne-moi, Grothendieck.
 
 work in progress.
 
-to compile, pdflatex main.tex
+to compile, `pdflatex main.tex` or use `make all`
 
 see `cont.txt` if you want to contribute
 
