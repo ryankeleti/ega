@@ -9,6 +9,9 @@
 \contentsline {subsection}{\numberline {1.5}Change of ring.}{10}
 \contentsline {subsection}{\numberline {1.6}Indentification of the module $M_f$ as an inductive limit.}{12}
 \contentsline {subsection}{\numberline {1.7}Support of a module.}{12}
+\contentsline {section}{\numberline {2}Irreducible spaces. Noetherian spaces.}{13}
+\contentsline {subsection}{\numberline {2.0}Irreducible spaces.}{13}
+\contentsline {subsection}{\numberline {2.1}Noetherian spaces.}{13}
 \contentsline {part}{1\hspace {1em}The language of schemes}{14}
 \contentsline {section}{\numberline {1}Affine schemes}{14}
 \contentsline {subsection}{\numberline {1.0}The prime spectrum of a ring}{14}
