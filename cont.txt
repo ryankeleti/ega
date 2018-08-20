@@ -4,4 +4,4 @@ this file will also record parts people _have_ done,
 
 |person        |section
  ryankeleti      prelim.1.0-1.7, schemes.summary
- thosgood        schemes.2
+ thosgood        schemes.2, schemes.summary
