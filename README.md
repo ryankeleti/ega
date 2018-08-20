@@ -15,3 +15,28 @@ see `cont.txt` if you want to contribute
 `\oldpage{x}`]
 - search within the .tex files for any `TODO` comments
 
+## current status
+
+See `cont.tex` for what people are currently working on.
+
+- [x] Introduction
+- [ ] Preliminaries
+    + [x] 1. Rings of fractions
+    + [ ] 2. Irreducible spaces. Noetherian spaces
+    + [ ] 3. Details on sheaves
+    + [ ] 4. Ringed spaces
+    + [ ] 5. Quasi-coherent sheaves and coherent sheaves
+    + [ ] 6. Flatness
+    + [ ] 7. Adic rings
+- [ ] The language of schemes
+    + [ ] 1. Affine schemes
+    + [ ] 2. Preschemes and their morphisms
+    + [ ] 3. Products of preschemes
+    + [ ] 4. Sub preschemes and immersions
+    + [ ] 5. Reduced preschemes; separation conditions
+    + [ ] 6. Finiteness conditions
+    + [ ] 7. Rational maps
+    + [ ] 8. Chevalley schemes
+    + [ ] 9. Details on quasi-coherent sheaves
+    + [ ] 10. Formal schemes
+

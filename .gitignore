@@ -9,5 +9,6 @@
 *.gz
 *.fdb_latexmk
 *.fls
+*.toc
 
 
