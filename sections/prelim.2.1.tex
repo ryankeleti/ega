@@ -1,0 +1,46 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\begin{cx}{2.1.1}
+We say that a topological space $X$ is \emph{irreducible} if it is nonempty and
+if it is not a union of two distinct closed subspaces of $X$. It is the same to say
+that $X\neq\emp$ and that the intersection of two nonempty open sets (and consequently
+of a finite number of open sets) of $X$ is nonempty, or that every nonempty open set
+is everywhere dense, or that any closed subset is \unsure{\emph{rare}}, or finally
+that all open sets of $X$ are \emph{connected}.
+\end{cx}
+
+\begin{cx}{2.1.2}
+For a subspace $Y$ of a topological spave $X$ to be irreducible, it is necessary and
+sufficient that its closure $\overline{Y}$ be irreducible. In particular, any subspace
+which is the closure $\overline{\{x\}}$ of a reduced subspace to a point is irreducible;
+we will express the relation $y\in\overline{\{x\}}$ (equivalent to
+$\overline{\{y\}}\su\overline{\{x\}}$) by saying that there is a \emph{specialization of}
+$x$ or that there is a \emph{generalization of} $y$. When there exists in an irreducible
+space $X$ a point $x$ such that $X=\overline{\{x\}}$, we will say that $x$ is a
+\emph{generic point} of $X$. Any nonempty open subset of $X$ then contains $x$, and any
+subspace containing $x$ admits $x$ for a generic point.
+\end{cx}
+
+\begin{cx}{2.1.3}
+Recall that a \emph{Kolmogoroff space} is a topological space $X$ satisfying the axiom
+of separation:
+
+$(T_0)$ If $x\neq y$ are any two points of $X$, there is an open set containing one of
+the points $x$, $y$ and not the other.
+
+If an irreducible Kolmogoroff space admits a generic point, it admits \emph{only} one
+since a nonempty open set contains any generic point.
+
+Recall that a topological space $X$ is said to be \emph{quasi-compact} if, from any
+collection of open sets of $X$, one can extract a finite cover of $X$ (or, equivalently,
+if any decreasing filter family of nonempty closed sets has a nonempty intersection). If
+$X$ is a quasi-compact space, then any nonempty closed subset $A$ of $X$ contains a \emph{minimal}
+nonempty closed set $M$, because the set of nonempty closed subsets of $A$ is inductive for
+the relation $\supset$; if in addition $X$ is a Kolmogoroff space, $M$ is necessarily reduced
+to a single point (or, as we say by abuse of language, is a \emph{closed point}).
+\end{cx}
+
+\end{document}
+
