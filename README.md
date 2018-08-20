@@ -29,6 +29,7 @@ See `cont.tex` for what people are currently working on.
     + [ ] 6. Flatness
     + [ ] 7. Adic rings
 - [ ] The language of schemes
+    + [x] 0. Summary
     + [ ] 1. Affine schemes
     + [ ] 2. Preschemes and their morphisms
     + [ ] 3. Products of preschemes
