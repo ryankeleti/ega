@@ -17,4 +17,5 @@
 \contentsline {subsection}{\numberline {1.0}The prime spectrum of a ring}{14}
 \contentsline {section}{\numberline {2}Preschemes and morphisms of preschemes}{14}
 \contentsline {subsection}{\numberline {2.0}Definition of preschemes}{14}
+\contentsline {subsection}{\numberline {2.1}Morphisms of preschemes}{15}
 \contentsfinish 
