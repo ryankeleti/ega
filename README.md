@@ -14,6 +14,8 @@ see `cont.txt` if you want to contribute
 - add original page numbers in the margins here? might make it easier for people to find references if they were originally give by page number [done, use
 `\oldpage{x}`]
 - search within the .tex files for any `TODO` comments
+- examples should _not_ be italicised
+- when this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
 
 ## current status
 
@@ -29,6 +31,7 @@ See `cont.tex` for what people are currently working on.
     + [ ] 6. Flatness
     + [ ] 7. Adic rings
 - [ ] The language of schemes
+    + [x] 0. Summary
     + [ ] 1. Affine schemes
     + [ ] 2. Preschemes and their morphisms
     + [ ] 3. Products of preschemes
