@@ -15,6 +15,7 @@ see `cont.txt` if you want to contribute
 `\oldpage{x}`]
 - search within the .tex files for any `TODO` comments
 - examples should _not_ be italicised
+- when this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
 
 ## current status
 
