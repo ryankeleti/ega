@@ -21,7 +21,68 @@
     Let $(X,\O_X)$ be a prescheme, and $(S,\O_S)$ an affine scheme associated to a ring $A$.
     Then there exists a canonical bijective correspondence between morphisms of preschemes from $(X,\O_X)$ to $(S,\O_S)$ and ring homomorphisms from $A$ to $\Gamma(X,\O_X)$.
 \end{cx}
+Note first of all that, if $(X,\O_X)$ and $(Y,\O_Y)$ are two arbitrary ringed spaces, a morphism $(\psi,\theta)$ from $(X,\O_X)$ to $(Y,\O_Y)$ canonically defines a ring homomorphism $\Gamma(\theta)\colon\Gamma(Y,\O_Y)\to\Gamma(Y,\psi_*(\O_X))=\Gamma(X,\O_X)$.
+In the case that we consider, everything boils down to showing that any homomorphism $\varphi\colon A\to\Gamma(X,\O_X)$ is of the form $\Gamma(\theta)$ for one and only one $\theta$.
+Now, by hypothesis there is a covering $(V_\alpha)$ of $X$ by open affines; by composing of $\varphi$ with the restriction homomorphism $\Gamma(X,\O_X)\to\Gamma(V_\alpha,\O_X|V_\alpha)$ we obtain a homomorphism $\varphi_\alpha\colon A\to\Gamma(V_\alpha,\O_X|V_\alpha)$ that corresponds to a unique morphism $(\psi_\alpha,\theta_\alpha)$ from the prescheme $(V_\alpha,\O_X|V_\alpha)$ to $(S,\O_S)$, thanks to (1.7.3).
+Furthermore, for every pair of indices $(\alpha,\beta)$, every point of $V_\alpha\cap V_\beta$ admits an open affine neighbourhood $W$ contained inside $V_\alpha\cap V_\beta$ (2.1.3); it is clear that that, by composing $\varphi_\alpha$ and $\varphi_\beta$ with the restriction homomorphisms to $W$, we obtain the same homomorphism $\Gamma(S,\O_S)\to\Gamma(W,\O_X|W)$, so, thanks to the relations $(\theta_\alpha^\#)_x=(\varphi_\alpha)_x$ for all $x\in V_\alpha$ and all $\alpha$ (1.6.1), the restriction to $W$ of the morphisms $(\psi_\alpha,\theta_\alpha)$ and $(\psi_\beta,\theta_\beta)$ coincide.
+From this we conclude that there is a morphism $(\psi,\theta)\colon(X,\O_X)\to(S,\O_S)$ of ringed spaces, and only one such that its restriction to each $V_\alpha$ is $(\psi_\alpha,\theta_\alpha)$, and it is clear that this morphism is a morphism of preschemes and such that $\Gamma(\theta)=\varphi$.
 
-\unsure{TODO}
+Let $u\colon A\to\Gamma(X,\O_X)$ be a ring homomorphism, and $v=(\psi,\theta)$ the corresponding morphism $(X,\O_X)\to(S,\O_S)$.
+For every $f\in A$ we have that
+\begin{equation*}
+    \psi^{-1}(D(f))=X_{u(f)}\tag{2.2.4.1}
+\end{equation*}
+with the notation of (\textbf{0},~5.5.2) relative to the locally-free sheaf $\O_X$.
+In fact, it suffices to verify this formula when $X$ itself is affine, and then this is nothing but (1.2.2.2).
+
+\begin{cx}[Proposition]{2.2.5}
+    Under the hypotheses of (2.2.4), let $\varphi\colon A\to\Gamma(X,\O_X)$ be a ring homomorphism, $f\colon(X,\O_X)\to(S,\O_S)$ the corresponding morphism of preschemes, $\mathscr{G}$ (resp. $\mathscr{F}$) an $\O_X$-module (resp. $\O_S$-module), and $M=\Gamma(S,\mathscr{F})$.
+    Then there exists a canonical bijective \oldpage{100}correspondence between $f$-morphisms $\mathscr{F}\to\mathscr{G}$ (\textbf{0},~4.4.1) and $A$-homomorphisms $M\to(\Gamma(X,\mathscr{G}))_{[\varphi]}$.
+\end{cx}
+Indeed, reasoning as in (2.2.4), we are rapidly led to the case where $X$ is affine, and the proposition then follows from (1.6.3) and (1.3.8).
+
+\begin{cx}{2.2.6}
+    We say that a morphism of preschemes $(\psi,\theta)\colon(X,\O_X)\to(Y,\O_Y)$ is \textit{open} (resp. \textit{closed}) if, for all open subsets $U$ of $X$ (resp. all closed subsets $F$ of $X$), $\psi(U)$ is open (resp. $\psi(F)$ is closed) in $Y$.
+    We say that $(\psi,\theta)$ is \textit{dominant} if $\psi(X)$ is dense in $Y$, and \textit{surjective} if $\psi$ is surjective.
+    We will point out that these conditions rely only on the continuous map $\psi$.
+\end{cx}
+
+\begin{cx}[Proposition]{2.2.7}
+    Let
+    \begin{gather*}
+        f=(\psi,\theta)\colon(X,\O_X)\to(Y,\O_Y);\\
+        g=(\psi',\theta')\colon(Y,\O_Y)\to(Z,\O_Z)
+    \end{gather*}
+    be two morphisms of preschemes.
+    \begin{enumerate}[label=(\roman*)]
+        \item If $f$ and $g$ are both open (resp. closed, dominant, surjective), then so too is $g\circ f$.
+        \item If $f$ is surjective and $g\circ f$ closed, then $g$ is closed.
+        \item If $g\circ f$ is surjective, then $g$ is surjective.
+    \end{enumerate}
+\end{cx}
+Claims \textit{(i)} and \textit{(iii)} are evident.
+Write $g\circ f=(\psi'',\theta'')$.
+If $F$ is closed in $Y$ then $\psi^{-1}(F)$ is closed in $X$, so $\psi''(\psi^{-1}(F))$ is closed in $Z$; but since $\psi$ is surjective, $\psi(\psi^{-1}(F))=F$, so $\psi''(\psi^{-1}(F))=\psi'(F)$, which proves \textit{(ii)}.
+
+\begin{cx}[Proposition]{2.2.8}
+    Let $f=(\psi,\theta)$ be a morphism $(X,\O_X)\to(Y,\O_Y)$, and $(U_\alpha)$ an open cover of $Y$.
+    For $f$ to be open (resp. closed, surjective, dominant), it is necessary and sufficient that its restriction to every induced prescheme $(\psi^{-1}(U_\alpha),\O_X|\psi^{-1}(U_\alpha))$, considered as a morphism of preschemes from this induced prescheme to the induced prescheme $(U_\alpha,\O_Y|U_\alpha)$ is open (resp. closed, surjective, dominant).
+\end{cx}
+The proposition follows immediately from the definitions, taking into account the fact that a subset $F$ of $Y$ is closed (resp. open, dense) in $Y$ if and only if each of the $F\cap U_\alpha$ are closed (resp. open, dense) in $U_\alpha$.
+
+\begin{cx}{2.2.9}
+    Let $(X,\O_X)$ and $(Y,\O_Y)$ be two preschemes; suppose that $X$ (resp. $Y$) has a finite number of irreducible components $X_i$ (resp. $Y_i$) ($1\leqslant i\leqslant n$); let $\xi_i$ (resp. $\eta_i$) be the generic point of $X_i$ (resp. $Y_i$) (2.1.5).
+    We say that a morphism
+    \begin{equation*}
+        f=(\psi,\theta)\colon(X,\O_X)\to(Y,\O_Y)
+    \end{equation*}
+    is \textit{birational} if, for all $i$, $\psi^{-1}(\eta_i)=\{\xi_i\}$ and $\theta_{\xi_i}^\#\colon\O_{\eta_i}\to\O_{\xi_i}$ is an \textit{isomorphism}.
+    It is clear that a birational morphism is dominant (\textbf{0},~2.1.8), and so is surjective if it is also closed.
+\end{cx}
+
+\begin{cx}[Notational conventions]{2.2.10}
+    In all that follows, when there is no risk of confusion, we \textit{supress} the structure sheaf (resp. the morphism of structure sheaves) from the notation of a prescheme (resp. morphism of preschemes).
+    If $U$ is an open subset of the underlying space $X$ of a prescheme, then whenever we speak of $U$ as a prescheme we always mean the induced prescheme on $U$.
+\end{cx}
 
 \end{document}
