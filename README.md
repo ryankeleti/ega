@@ -16,6 +16,7 @@ see `cont.txt` if you want to contribute
 - search within the .tex files for any `TODO` comments
 - examples should _not_ be italicised
 - when this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
+- make a list of the commands defined in `commands.tex` and give examples of where they are found in the original text, so that people can check this whenever translating, to ensure consistency of notation
 
 ## current status
 
@@ -33,7 +34,7 @@ See `cont.tex` for what people are currently working on.
 - [ ] The language of schemes
     + [x] 0. Summary
     + [ ] 1. Affine schemes
-    + [ ] 2. Preschemes and their morphisms
+    + [x] 2. Preschemes and their morphisms
     + [ ] 3. Products of preschemes
     + [ ] 4. Sub preschemes and immersions
     + [ ] 5. Reduced preschemes; separation conditions
