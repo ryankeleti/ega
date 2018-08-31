@@ -16,6 +16,7 @@ see `cont.txt` if you want to contribute
 - search within the .tex files for any `TODO` comments
 - examples should _not_ be italicised
 - when this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
+- make a list of the commands defined in `commands.tex` and give examples of where they are found in the original text, so that people can check this whenever translating, to ensure consistency of notation
 
 ## current status
 
