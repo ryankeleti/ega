@@ -7,7 +7,7 @@ work in progress.
 
 to compile, `pdflatex main.tex` or use `make all`
 
-see `cont.txt` if you want to contribute
+see `CONTRIBUTING.md` if you want to contribute
 
 ## todo
 
@@ -20,7 +20,7 @@ see `cont.txt` if you want to contribute
 
 ## current status
 
-See `cont.tex` for what people are currently working on.
+See `CONTRIBUTING.md` for what people are currently working on.
 
 - [x] Introduction
 - [ ] Preliminaries
@@ -33,7 +33,7 @@ See `cont.tex` for what people are currently working on.
     + [ ] 7. Adic rings
 - [ ] The language of schemes
     + [x] 0. Summary
-    + [ ] 1. Affine schemes
+    + [ ] 1. Affine schemes (@thosgood)
     + [x] 2. Preschemes and their morphisms
     + [ ] 3. Products of preschemes
     + [ ] 4. Sub preschemes and immersions
