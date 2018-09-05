@@ -33,14 +33,14 @@ See `CONTRIBUTING.md` for what people are currently working on.
     + [ ] 7. Adic rings
 - [ ] The language of schemes
     + [x] 0. Summary
-    + [ ] 1. Affine schemes (@thosgood)
+    + [ ] 1. Affine schemes
     + [x] 2. Preschemes and their morphisms
     + [ ] 3. Products of preschemes
     + [ ] 4. Sub preschemes and immersions
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
     + [ ] 7. Rational maps
-    + [ ] 8. Chevalley schemes
+    + [ ] 8. Chevalley schemes (@thosgood)
     + [ ] 9. Details on quasi-coherent sheaves
     + [ ] 10. Formal schemes
 

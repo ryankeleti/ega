@@ -3,4 +3,4 @@ This file will also record parts people _have_ done, so you may directly send th
 
 |person        |section
  ryankeleti      prelim.1.0-1.7
- thosgood        ~schemes.2~, schemes.1
+ thosgood        ~schemes.2~, schemes.8
