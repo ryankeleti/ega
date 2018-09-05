@@ -17,6 +17,7 @@ see `CONTRIBUTING.md` if you want to contribute
 - examples should _not_ be italicised
 - when this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
 - make a list of the commands defined in `commands.tex` and give examples of where they are found in the original text, so that people can check this whenever translating, to ensure consistency of notation
+- update the titles to agree with [this](https://stacky.net/wiki/index.php?title=EGA_contents) ? even if not, this is a good reference for potentially unfamiliar vocabulary
 
 ## current status
 
@@ -26,7 +27,7 @@ See `CONTRIBUTING.md` for what people are currently working on.
 - [ ] Preliminaries
     + [x] 1. Rings of fractions
     + [ ] 2. Irreducible spaces. Noetherian spaces
-    + [ ] 3. Details on sheaves
+    + [ ] 3. Supplement on sheaves
     + [ ] 4. Ringed spaces
     + [ ] 5. Quasi-coherent sheaves and coherent sheaves
     + [ ] 6. Flatness
@@ -41,6 +42,6 @@ See `CONTRIBUTING.md` for what people are currently working on.
     + [ ] 6. Finiteness conditions
     + [ ] 7. Rational maps
     + [ ] 8. Chevalley schemes (@thosgood)
-    + [ ] 9. Details on quasi-coherent sheaves
+    + [ ] 9. Supplement on quasi-coherent sheaves
     + [ ] 10. Formal schemes
 
