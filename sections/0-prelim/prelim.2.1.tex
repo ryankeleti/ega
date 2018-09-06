@@ -72,7 +72,39 @@ Maximal irreducible subspaces of $X$ are called the \emph{irreducible components
 If $Z_1$, $Z_2$ are two irreducible components distinct from the space $X$, $Z_1\cap Z_2$ is a closed
 \unsure{\emph{rare}} set in each of the subspaces $Z_1$, $Z_2$; in particular, if an irreducible component
 of $X$ admits a generic point (2.1.2) such a point can not belong to any other
-irreducible component.
+irreducible component. If $X$ has only a \emph{finite} number of irreducible 
+components $Z_i$ ($1\leq i\leq n$), and if, for each $i$,we put $U_i=Z_i\cap\mathsf{C}(\bigcup_{j\neq i} Z_j)$,
+the $U_i$ are open, irreducible, \unsure{disjoint}, and their union is dense in $X$.
+Let $U$ be an open subset of a topological space $X$. If $Z$ is an irreducible subset of $X$
+that intersects with $U$, $Z\cap U$ is open and dense in $Z$, thus irreducible; conversely, for any irreducible
+closed subset $Y$ of $U$, the closure $\overline{Y}$ of $Y$ in $X$ is irreducible and $\overline{Y}\cap U=Y$.
+We conclude that there is a \emph{bijective correspondence} between the irreducible components of $U$ and the
+irreducible components of $X$ which intersect $U$.
+\end{cx}
+
+\begin{cx}{2.1.7}
+If a topological space $X$ is a union of a \emph{finite} number of irreducible closed subspaces $Y_i$, the
+irreducible components of $X$ are the maximal elements of the set of $Y_i$, because if $Z$ is an irreducible
+closed subset of $X$, $Z$ is the union of $Z\cap Y_i$, from which one sees that $Z$ must be contained in one
+of the $Y_i$. Let $Y$ be a subspace of a topological space $X$, and suppose that $Y$ has only a finite number
+of irreducible components $Y_i$, ($1\leq i\leq n$); then the closures $\overline{Y_i}$ in $X$ are the
+irreducible components of $Y$.
+\end{cx}
+
+\begin{cx}{2.1.8}
+Let $Y$ be an irreducible space admitting a single generic point $y$.
+Let $X$ be a topological space, $f$ a continuous mapping from $X$ to $Y$. Then, for
+any irreducible component $Z$ of $X$ intersecting $f^{-1}(y)$, $f(Z)$ is dense in $Y$. The
+converse is not necessarily true; however, if $Z$ has a generic point $z$,
+and if $f(Z)$ is dense in $Y$, we must have $f(z)=y$ (2.1.5); in addition, $Z\cap f^{-1}(y)$
+is then the closure of $\{z\}$ in $f^{-1}(y)$ and is therefore irreducible, and like any
+irreducible subset of $f^{-1}(y)$ containing $z$ is necessarily contained in $Z$ (2.1.6), $z$ is
+a generic point of $Z\cap f^{-1}(y)$. As any irreducible component of $f^{-1}(y)$ is
+contained in an irreducible component of $X$, we see that if any irreducible component
+$Z$ of $X$ intersecting $f^{-1}(y)$ admits a generic point, then there is a \emph{bijective correspondence}
+between all these components and all the irreducible components
+$Z\cap f^{-1}(y)$ of $f^{-1}(y)$, the generic points of $Z$ being identical to those of
+$Z\cap f^{-1}(y)$.
 \end{cx}
 
 \end{document}
