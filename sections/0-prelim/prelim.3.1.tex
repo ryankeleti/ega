@@ -1,0 +1,22 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\begin{cx}{3.1.1}
+Let $\mathbf{K}$ be a category, $(A_\alpha)_{\alpha\in I}$,
+$(A_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ two families of objects
+of $\mathbf{K}$ such that $A_{\beta\alpha}=A_{\alpha\beta}$,
+$(\rho_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ a family of morphisms
+$\rho_{\alpha\beta}:A_\alpha\to A_{\alpha\beta}$. We say that a pair formed by
+an object $A$ of $\mathbf{K}$ and a family of morphisms $\rho_\alpha:A\to A_\alpha$ 
+is a \emph{solution to the universal problem} defined by the data of the families
+$(A_\alpha)$, $(A_{\alpha\beta})$, and $(\rho_{\alpha\beta})$ if, for every object $B$
+of $\mathbf{K}$, the mapping which, at all $f\in\Hom(B,A)$ matches the
+family $(\rho_\alpha\circ f)\in\prod_\alpha\Hom(B,A_\alpha)$ is a \emph{bijection}
+of $\Hom(B,A)$ to the set of all $(f_\alpha)$ such that
+$\rho_{\alpha\beta}\circ f_\alpha=\rho_{\beta\alpha}\circ f_\beta$ for any pair of
+indices $(\alpha,\beta)$. If such a solution exists, it is unique up to an isomorphism.
+\end{cx}
+
+\end{document}
+
