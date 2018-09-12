@@ -40,5 +40,27 @@ Equivalently, we can say that, for each object $T$ of $\K$, the family
 $U\mapsto\Hom(T,\F(U))$ is a \emph{sheaf of sets}.
 \end{cx}
 
+\begin{cx}{3.1.3}
+Assume that $\K$ is the category defined by a ``type of structure
+with morphisms" $\Sigma$, the objects of $\K$ being the sets with structures
+of type $\Sigma$ and morphisms those of $\Sigma$. Suppose that the category $\K$ also satisfies
+the following condition:\\
+
+(E) If $(A,(\rho_\a))$ is a solution of a universal mapping problem \emph{in the category} $\K$
+for families $(A_\a)$, $(A_{\a\b})$, $(\rho_{\a\beta})$, then it is also a solution of the
+universal mapping problem for the same families \emph{in the category of sets} (that is, when we
+consider $A$, $A_\a$, and $A_{\a\b}$ as sets, $\rho_\a$ and $\rho_{\a\b}$ as functions)
+\footnote{It can be proved that it also means that the canonical functor $\K\to(\mathrm{Ens})$
+\emph{commutes with projective limits} (not necessarily filtered).}.\\
+
+Under these conditions, the condition (F) gives that, when considered as a presheaf
+\emph{of sets}, $U\mapsto\F(U)$ is a \emph{sheaf}. In addition, for a map $u:T\to\F(U)$
+to be a morphism of $\K$, it is necessary and sufficient, under (F), that each map $\rho_\a\circ u$
+is a morphism $T\to\F(U_\a)$, which means that the structure of type $\Sigma$ on $\F(U)$
+is the \emph{initial structure} for the morphisms $\rho_\a$ . Conversely, suppose a presheaf
+$U\mapsto\F(U)$ on $X$, with values in $\K$, is a \emph{sheaf of sets} and satisfies the previous
+condition; it is then clear that it satisfies (F), so it is a \emph{sheaf with values in} $\K$.
+\end{cx}
+
 \end{document}
 
