@@ -35,7 +35,10 @@ But then there exists a point $z\in U\cap V$ such that $\mathfrak{r}=\mathfrak{m
 \begin{cx}[Corollary]{8.2.3}
     Let $X$ be an integral scheme, and $x,y$ two points of $X$.
     In order that $x\in\overline{\{y\}}$, it is necessary and sufficient that $\O_x\subset\O_y$, or, equivalently, that every rational function defined at $x$ is also defined at $y$.
-\end{cx}
+\end{cx}    
+
+The condition is evidently necessary because the domain of definition $\delta(f)$ of a rational function $f\in R$ is open; we now show that it is sufficient.
+If $\O_x\subset\O_y$, then there exists a prime ideal $\mathfrak{p}$ of $\O_x$ such that $\O_y$ dominates $(\O_x)_\mathfrak{p}$ (8.1.3); but (2.4.2) there exists $z\in X$ such that $x\in\overline{\{z\}}$ and $\O_z=(\O_x)_\mathfrak{p}$; since $\O_z$ and $\O_y$ are allied, we have that $z=y$ by (8.2.2), whence the corollary.
 
 \begin{cx}[Corollary]{8.2.4}
     If $X$ is an integral scheme then the map $x\to\O_x$ is injective; equivalently, if $x$ and $y$ are two distinct points of $X$, then there exists a rational function defined at one of these points but not the other.
@@ -46,6 +49,10 @@ But then there exists a point $z\in U\cap V$ such that $\mathfrak{r}=\mathfrak{m
 \begin{cx}[Corollary]{8.2.5}
     Let $X$ be an integral scheme whose underlying space is Noetherian; letting $f$ run over the field $R$ of rational functions on $X$, the sets $\delta(f)$ generate the topology of $X$.
 \end{cx}
+
+In fact, every closed subset of $X$ is thus a finite union of irreducible closed subsets, i.e. of the form $\overline{\{y\}}$ (2.1.5).
+But, if $x\not\in\overline{\{y\}}$, then there exists a rational function $f$ defined at $x$ but not at $y$ (8.2.3), or, equivalently, we have that $x\in\delta(f)$ and $\delta(f)$ is not contained in $\overline{\{y\}}$.
+The complement  of $\overline{\{y\}}$ is thus a union of sets of the form $\delta(f)$, and by virtue of the first remark, every open subset of $X$ is the union of finite intersections of open sets of the form $\delta(f)$.
 
 \begin{cx}{8.2.6}
 \end{cx}
