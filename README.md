@@ -41,7 +41,7 @@ See `CONTRIBUTING.md` for what people are currently working on.
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
     + [ ] 7. Rational maps
-    + [ ] 8. Chevalley schemes (@thosgood)
-    + [ ] 9. Supplement on quasi-coherent sheaves
+    + [x] 8. Chevalley schemes
+    + [ ] 9. Supplement on quasi-coherent sheaves (@thosgood)
     + [ ] 10. Formal schemes
 
