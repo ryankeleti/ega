@@ -55,6 +55,10 @@ But, if $x\not\in\overline{\{y\}}$, then there exists a rational function $f$ de
 The complement  of $\overline{\{y\}}$ is thus a union of sets of the form $\delta(f)$, and by virtue of the first remark, every open subset of $X$ is the union of finite intersections of open sets of the form $\delta(f)$.
 
 \begin{cx}{8.2.6}
+    Corollary~(8.2.5) shows that the topology of $X$ is entirely characterised by the data of the local rings $(\O_x)_{x\in X}$ that have $R$ as their field of fractions.
+    It amounts to the same to say that the closed subsets of $X$ are defined in the following manner: given a finite subset $\{x_1,\ldots,x_n\}$ of $X$, consider the set of $y\in X$ such that $\O_y\subset\O_{x_i}$ for at least one index $i$, and these sets (over all choices of $\{x_1,\ldots,x_n\}$) are the closed subsets of $X$.
+    Further, once the topology on $X$ is known, the structure sheaf $\O_X$ is also determined by the family of the $\O_x$, since $\Gamma(U,\O_X)=\bigcap_{x\in U}\O_x$ by (8.2.1.1).
+    The family $(\O_X)_{x\in X}$ thus completely determines the prescheme $X$ when $X$ is an integral scheme whose underlying space is Noetherian.
 \end{cx}
 
 \begin{cx}[Proposition]{8.2.7}
@@ -62,12 +66,27 @@ The complement  of $\overline{\{y\}}$ is thus a union of sets of the form $\delt
     Then $L$ can be identified with a sub-field of $K$, and for all $x\in X$, $\O_{f(x)}$ is the unique local ring of $Y$ dominated by $\O_x$.
 \end{cx}
 
+In fact, if $f=(\psi,\theta)$ and $a$ is the generic point of $X$, then $\psi(a)$ is the generic point of $Y$ (\textbf{0},~2.1.5); $\theta_a^\#$ is then a monomorphism of fields, from $L=\O_{\psi(a)}$ to $K=\O_a$.
+Since every non-empty affine open $U$ of $Y$ contains $\psi(a)$, it follows from (2.2.4) that the homomorphism $\Gamma(U,\O_Y)\to\Gamma(\psi^{-1}(U),\O_X)$ corresponding to $f$ is the restriction of $\theta_a^\#$ to $\Gamma(U,\O_Y)$.
+So, for every $x\in X$, $\theta_x^\#$ is the restriction to $\O_{\psi(a)}$ of $\theta_a^\#$, and is thus a monomorphism.
+We also know that $\theta_x^\#$ is a local homomorphism, so, if we identify $L$ with a sub-field of $K$ by $\theta_a^\#$, $\O_{\psi(x)}$ is dominated by $\O_x$ (8.1.1); it is also the only local ring of $Y$ dominated by $\O_x$, since two local rings of $Y$ that are allied are identical (8.2.2).
+
 \begin{cx}[Proposition]{8.2.8}
     Let $X$ be an \emph{irreducible} prescheme; and $f\colon X\to Y$ a local immersion (\emph{resp.} a local isomorphism); and suppose further that $f$ is separated.
     Then $f$ is an immersion (\emph{resp.} an open immersion).
 \end{cx}
 
-\oldpage{168}a local immersion (resp. a local isomorphism)
+Let $f=(\psi,\theta)$; it suffices, in both cases, to prove that $\psi$ is a \emph{homeomorphism} from $X$ to $\psi(X)$ (4.5.3).
+Replacing $f$ by $f_\mathrm{red}$ (5.1.6 and 5.5.1,~(vi)), we can assume that $X$ and $Y$ are \emph{reduced}.
+If $Y'$ is the closed reduced sub-prescheme of $Y$ having $\overline{\psi(X)}$ as its underlying space, then $f$ factorises as $X\xrightarrow{f'}Y'\xrightarrow{j}Y$, where $j$ is the canonical injection (5.2.2).
+It follows from (5.5.1,~(v)) that $f'$ is again a separated morphism; further, $f'$ is again \oldpage{168}a local immersion (resp. a local isomorphism), because, since the condition is local on $X$ and $Y$, we can reduce ourselves to the case where $f$ is a closed immersion (resp. open immersion), and then our claim follows immediately from (4.2.2).
+
+We can thus suppose that $f$ is a \emph{dominant} morphism, which leads to the fact that $Y$ is, itself, irreducible (\textbf{0},~2.1.5), and so $X$ and $Y$ are both \emph{integral}.
+Further, the condition being local on $Y$, we can suppose that $Y$ is an affine scheme; since $f$ is separated, $X$ is a scheme (5.5.1,~(ii)), and we are finally at the hypotheses of (8.2.7).
+Then, for all $x\in X$, $\theta_x^\#$ is injective; but the hypothesis that $F$ is a local immersion implies that $\theta_x^\#$ is surjective (4.2.2), so $\theta_x^\#$ is bijective, or, equivalently (with the identification of (8.2.7)) we have that $\O_{\psi(x)}=\O_x$.
+This implies, by (8.2.4), that $\psi$ is an \emph{injective} map, which already proves the proposition when $f$ is a local isomorphism (4.5.3).
+When we suppose that $f$ is only a local immersion, for all $x\in X$ there exists an open neighbourhood $U$ of $x$ in $X$ and an open neighbourhood $V$ of $\psi(x)$ in $Y$ such that the restriction of $\psi$ to $U$ is a homeomorphism from $U$ to a \emph{closed} subset of $V$.
+But $U$ is dense in $X$, so $\psi(U)$ is dense in $Y$ and \emph{a fortiori} in $V$, which proves that $\psi(U)=V$; since $\psi$ is injective, $\psi^{-1}(V)=U$ and this proves that $\psi$ is a homeomorphism from $X$ to $\psi(X)$.
 
 \unsure{TODO}
 
