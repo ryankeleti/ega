@@ -72,6 +72,66 @@ Similarly, the inverse image of $\mathscr{G}\otimes_S\mathscr{F}$ by the canonic
 
 In fact, this isomorphism is $(1_X,\varphi)_S$, where $\varphi$ is the structure morphism $X\to S$, and the corollary follows from (9.1.4) and the fact that $\varphi^*(\O_S)=\O_X$.
 
-\unsure{TODO}
+\begin{cx}{9.1.8}
+    Let $X$ be an $S$-prescheme, $\mathscr{F}$ a quasi-coherent $\O_X$-module, and $\varphi\colon S'\to S$ a morphism; we denote by $\mathscr{F}_{(\varphi)}$ or $\mathscr{F}_{(S')}$ the quasi-coherent sheaf $\mathscr{F}\otimes_S\O_{S'}$ over $X\times_S S'=X_{(\varphi)}=X_{(S')}$; so $\mathscr{F}_{(S')}=p^*(\mathscr{F})$, where $p$ is the projection $X_{(S')}\to X$.
+\end{cx}
+
+\begin{cx}[Proposition]{9.1.9}
+    Let $\varphi''\colon S''\to S'$ be a morphism.
+    For every quasi-coherent $\O_X$-module $\mathscr{F}$ on the $S$-prescheme~$X$, $(\mathscr{F}_{(\varphi)})_{(\varphi')}$ is the inverse image of $\mathscr{F}_{(\varphi\circ\varphi')}$ by the canonical isomorphism $(X_{(\varphi)})_{(\varphi')}\xrightarrow{\sim}X_{(\varphi\circ\varphi')}$ \emph{(3.3.9)}.
+\end{cx}
+
+This follows immediately from the definitions and from (3.3.9), and is written
+\begin{equation*}
+    (\mathscr{F}\otimes_S\O_{S'})\otimes_{S'}\O_{S''} = \mathscr{F}\otimes_S\O_{S''}.\tag{9.1.9.1}
+\end{equation*}
+
+\begin{cx}[Proposition]{9.1.10}
+    Let $Y$ be an $S$-prescheme, and $f\colon X\to Y$ an $S$-morphism.
+    For every quasi-coherent $\O_Y$-module and every morphism $S'\to S$, we have that $(f_{(S')})^*(\mathscr{G}_{(S')})=(f^*(\mathscr{G}))_{(S')}$.
+\end{cx}
+
+This follows immediately from the commutativity of the diagram
+\oldpage{171}\begin{equation*}
+    \begin{tikzcd}
+        X_{(S')}
+            \ar{r}{f_{(S')}}
+            \ar{d}
+        & Y_{(S')}
+            \ar{d}\\
+        X
+            \ar{r}{f}
+        & Y
+    \end{tikzcd}
+\end{equation*}
+
+\begin{cx}[Corollary]{9.1.11}
+    Let $X$ and $Y$ be $S$-preschemes, and $\mathscr{F}$ (\emph{resp.} $\mathscr{G}$) a quasi-coherent $\O_X$-module (\emph{resp.} quasi-coherent $\O_Y$-module).
+    Then the inverse image of the sheaf $(\mathscr{F}_{(S')})\otimes_{(S')}(\mathscr{G}_{(S')})$ by the canonical isomorphism $(X\times_S Y)_{(S')}\xrightarrow{\sim}(X_{(S')})\times_{S'}(Y_{(S')})$ \emph{(3.3.10)} is equal to $(\mathscr{F}\otimes_S\mathscr{G})_{(S')}$.
+\end{cx}
+
+If $p,q$ are the projections of $X\times_S Y$, then the isomorphism in question is nothing but $(p_{(S')}, q_{(S')})_{S'}$; the corollary follows from propositions (9.1.4) and (9.1.10).
+
+\begin{cx}[Proposition]{9.1.12}
+    With the notation from (9.1.2), let $z$ be a point of $X\times_S Y$, $x=p(z)$, and $y=q(z)$; the fibre $(\mathscr{F}\otimes_S\mathscr{G})_z$ is isomorphic to $(\mathscr{F}_x\otimes_{\O_x}\O_z)\otimes_{\O_z}(\mathscr{G}_y\otimes_{\O_y}\O_z) = \mathscr{F}_x\otimes_{\O_x}\O_z\otimes_{\O_y}\otimes\mathscr{G}_y$.
+\end{cx}
+
+As we can reduce ourselves to the affine case, the proposition follows from equation~(1.6.5.1).
+
+\begin{cx}[Corollary]{9.1.13}
+    If $\mathscr{F}$ and $\mathscr{G}$ are of finite type, then we have that
+    \begin{equation*}
+        \Supp(\mathscr{F}\otimes_S\mathscr{G}) = p^{-1}(\Supp(\mathscr{F}))\cap q^{-1}(\Supp(\mathscr{G})).
+    \end{equation*}
+\end{cx}
+
+Since $p^*(\mathscr{F})$ and $q^*(\mathscr{G})$ are both of finite type over $\O_{X\times_S Y}$, we are reduced, by (9.1.12) and (\textbf{0},~1.7.5), to the case where $\mathscr{G}=\O_Y$, that is, it remains to prove the following equation:
+\begin{equation*}
+    \Supp(p^{-1}(\mathscr{F})) = p^{-1}(\Supp(\mathscr{F})).\tag{9.1.13.1}
+\end{equation*}
+
+The same reasoning as in (\textbf{0},~1.7.5) leads us to prove that, for all $z\in X\times_S Y$, we have $\O_z/\mathfrak{m}_x\O_z\neq0$ (with $x=p(z)$), which follows from the fact that the homomorphism $\O_x\to\O_z$ is \emph{local}, by hypothesis.
+
+We leave it to the reader to extend the results in this section to the more general case of arbitrarily (but finitely) many factors, instead of just two.
 
 \end{document}
