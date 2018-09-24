@@ -3,7 +3,34 @@
 \begin{document}
 
 \begin{cx}[Proposition]{9.1.1}
-    \oldpage{169}Let
+    \oldpage{169}Let $X$ be a prescheme (\emph{resp.} a locally Noetherian prescheme).
+    Let $\mathscr{F}$ and $\mathscr{G}$ be two quasi-coherent (\emph{resp.} coherent) $\O_X$-modules; then $\mathscr{F}\otimes_{\O_X}\mathscr{G}$ is quasi-coherent (\emph{resp.} coherent) and of finite type if $\mathscr{F}$ and $\mathscr{G}$ are of finite type.
+    If $\mathscr{F}$ admits a finite presentation and if $\mathscr{G}$ is quasi-coherent (\emph{resp.} coherent), then $\sheafHom(\mathscr{F},\mathscr{G})$ is quasi-coherent (\emph{resp.} coherent).
 \end{cx}
+
+Being a local property, we can suppose that $X$ is affine (resp. Noetherian affine); further, if $\mathscr{F}$ is coherent, then we can assume that it is the cokernel of a homomorphism $\O_X^m\to\O_X^n$.
+The claims pertaining to quasi-coherent sheaves then follow from (1.3.12) and (1.3.9); the claims pertaining to coherent sheaves follow from (1.5.1) and from the fact that, if $M$ and $N$ are modules of finite type over a Noetherian ring $A$, $M\otimes_A N$ and $\Hom_A(M,N)$ are $A$-modules of finite type.
+
+\begin{cx}[Definition]{9.1.2}
+    Let $X$ and $Y$ be two $S$-preschemes, $p$ and $q$ the projections of $X\times_S Y$, and $\mathscr{F}$ (resp. $\mathscr{G}$) a quasi-coherent $\O_X$-module (resp. quasi-coherent $\O_Y$-module).
+    We define the tensor product of $\mathscr{F}$ and $\mathscr{G}$ over $\O_S$ (\emph{or} over $S$), denoted by $\mathscr{F}\otimes_{\O_S}\mathscr{G}$ (\emph{or} $\mathscr{F}\otimes_S\mathscr{G}$) to be the tensor product $p^*(\mathscr{F})\otimes_{\O_{X\times_S Y}}q^*(\mathscr{G})$ over the prescheme $X\times_S Y$.
+\end{cx}
+
+If $X_i$ ($1\leqslant i\leqslant n$) are $S$-preschemes, and $\mathscr{F}_i$ are quasi-coherent $\O_{X_i}$-modules ($1\leqslant i\leqslant n$), then we define similarly the tensor product $\mathscr{F}_1\otimes_S\mathscr{F}_2\otimes_S\ldots\otimes_S\mathscr{F}_n$ over the prescheme $Z=X_1\times_S X_2\times_s\ldots\times_S X_n$; it is a \emph{quasi-coherent} $\O_Z$-module by virtue of (9.1.1) and (\textbf{0},~5.1.4); it is \emph{coherent} if the $\mathscr{F}_i$ are coherent and $Z$ is \emph{locally Noetherian}, by virtue of (9.1.1), (\textbf{0},~5.3.11), and (6.1.1).
+
+Note that if we take $X=Y=S$ then definition (9.1.2) gives us back the tensor product of $\O_S$-modules.
+Furthermore, as $q^*(\O_Y)=\O_{X\times_S Y}$ (\textbf{0},~4.3.4), the product $\mathscr{F}\otimes_S\O_Y$ is canonically identified with $p^*(\mathscr{F})$, and, in the same way, $\O_X\otimes_S\mathscr{G}$ is canonically identified with $q^*(\mathscr{G})$.
+In particular, if we take $Y=S$ and denote by $f$ the structure morphism $X\to Y$, we have that $\O_X\otimes_Y\mathscr{G}=f^*(\mathscr{G})$: the ordinary tensor product and the inverse image thus appear as particular cases of the general tensor product.
+
+Definition (9.1.2) leads immediately to the fact that, for fixed $X$ and $Y$, $\mathscr{F}\otimes_S\mathscr{G}$ is an \emph{additive covariant bifunctor that is right-exact} in $\mathscr{F}$ and $\mathscr{G}$.
+
+\begin{cx}[Proposition]{9.1.3}
+    Let $S,X,Y$ be three affine schemes of rings $A,B,C$ (respectively), with $B$ and $C$ being $A$-algebras.
+    Let $M$ (\emph{resp.} $N$) be a $B$-module (\emph{resp.} $C$-module), and $\mathscr{F}=\widetilde{M}$ (\emph{resp.} $\mathscr{G}=\widetilde{N}$) the associated quasi-coherent sheaf; then $\mathscr{F}\otimes_S\mathscr{G}$ is canonically isomorphic to the sheaf associated to the $(B\otimes_A C)$-module $M\otimes_A N$.
+\end{cx}
+
+\oldpage{170}In fact
+
+\unsure{TODO}
 
 \end{document}
