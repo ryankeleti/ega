@@ -10,5 +10,6 @@
 *.fdb_latexmk
 *.fls
 *.toc
+.texpadtmp
 
 
