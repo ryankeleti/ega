@@ -10,6 +10,8 @@
 \usepackage{titlesec,titletoc}
 \usepackage{soul}
 \usepackage[hidelinks]{hyperref}
+\usepackage{calligra}
+\usepackage{mathtools}
 
 
 % if you don't like the font comment out the following two lines
@@ -36,4 +38,8 @@
 
 % center the toc heading
 \renewcommand{\contentsname}{\centering Contents}
+
+% make custom numbering of equations bold and in parentheses
+\newtagform{bold}[\textbf]{(}{)}
+\usetagform{bold}
 
