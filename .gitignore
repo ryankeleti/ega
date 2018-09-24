@@ -9,4 +9,6 @@
 *.fdb_latexmk
 *.fls
 *.toc
+.gitignore
+
 
