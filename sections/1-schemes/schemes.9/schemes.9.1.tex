@@ -40,10 +40,37 @@ and by the canonical isomorphisms between tensor products, this latter module is
 
 \begin{cx}[Proposition]{9.1.4}
     Let $f\colon T\to X$, and $g\colon T\to Y$ be two $S$-morphisms, and $\mathscr{F}$ (\emph{resp.} $\mathscr{G}$) a quasi-coherent $\O_X$-module (\emph{resp.} quasi-coherent $\O_Y$-module).
-    Then $(f,g)^*_S(\mathscr{F}\otimes_S\mathscr{G}) = f^*(\mathscr{F})\otimes_{\O_T}g^*(\mathscr{G})$.
+    Then
+    \begin{equation*}
+        (f,g)^*_S(\mathscr{F}\otimes_S\mathscr{G}) = f^*(\mathscr{F})\otimes_{\O_T}g^*(\mathscr{G}).
+    \end{equation*}
 \end{cx}
 
 If $p,q$ are the projections of $X\times_S Y$, then the formula in fact follows from the relations $(f,g)^*_S\circ p^*=f^*$ and $(f,g)^*_S\circ q^*=g^*$ (\textbf{0},~3.5.5), and the fact that the inverse image of a tensor product of algebraic sheaves is the tensor product of their inverse images (\textbf{0},~4.3.3).
+
+\begin{cx}[Corollary]{9.1.5}
+    Let $f\colon X\to X'$ and $g\colon Y\to Y'$ be $S$-morphisms, and $\mathscr{F}'$ (\emph{resp.} $\mathscr{G}'$) a quasi-coherent $\O_{X'}$-module (\emph{resp.} quasi-coherent $\O_{Y'}$-module).
+    Then
+    \begin{equation*}
+        (f,g)^*_S(\mathscr{F}'\otimes_S\mathscr{G}') = f^*(\mathscr{F}')\otimes_S g^*(\mathscr{G}')
+    \end{equation*}
+\end{cx}
+
+This follows from (9.1.4) and the fact that $f\times_S g=(f\circ p, g\circ q)_S$, where $p,q$ are the projections of $X\times_S Y$.
+
+\begin{cx}[Corollary]{9.1.6}
+    Let $X,Y,Z$ be three $S$-preschemes, and $\mathscr{F}$ (\emph{resp.} $\mathscr{G},\mathscr{H}$) a quasi-coherent $\O_X$-module (\emph{resp.} quasi-coherent $\O_Y$-module, quasi-coherent $\O_Z$-module); then the sheaf $\mathscr{F}\otimes_S\mathscr{G}\otimes_S\mathscr{H}$ is the inverse image of $(\mathscr{F}\otimes_S\mathscr{G})\otimes_S\mathscr{H}$ by the canonical isomorphism from $X\times_S Y\times_S Z$ to $(X\times_S Y)\times_S Z$.
+\end{cx}
+
+In fact, this isomorphism is given by $(p_1,p_2)_S\times_S p_3$, where $p_1,p_2,p_3$ are the projections of $X\times_S Y\times_S Z$.
+
+Similarly, the inverse image of $\mathscr{G}\otimes_S\mathscr{F}$ by the canonical isomorphism from $X\times_S Y$ to $Y\times_S X$ is $\mathscr{F}\otimes_S\mathscr{G}$.
+
+\begin{cx}[Corollary]{9.1.7}
+    If $X$ is an $S$-prescheme, then every quasi-coherent $\O_X$-module $\mathscr{F}$ is the inverse image of $\mathscr{F}\otimes_S\O_S$ by the canonical isomorphism from $X$ to $X\times_S S$ (3.3.3).
+\end{cx}
+
+In fact, this isomorphism is $(1_X,\varphi)_S$, where $\varphi$ is the structure morphism $X\to S$, and the corollary follows from (9.1.4) and the fact that $\varphi^*(\O_S)=\O_X$.
 
 \unsure{TODO}
 
