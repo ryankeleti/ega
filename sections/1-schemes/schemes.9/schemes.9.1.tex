@@ -29,7 +29,21 @@ Definition (9.1.2) leads immediately to the fact that, for fixed $X$ and $Y$, $\
     Let $M$ (\emph{resp.} $N$) be a $B$-module (\emph{resp.} $C$-module), and $\mathscr{F}=\widetilde{M}$ (\emph{resp.} $\mathscr{G}=\widetilde{N}$) the associated quasi-coherent sheaf; then $\mathscr{F}\otimes_S\mathscr{G}$ is canonically isomorphic to the sheaf associated to the $(B\otimes_A C)$-module $M\otimes_A N$.
 \end{cx}
 
-\oldpage{170}In fact
+\oldpage{170}In fact, by virtue of (1.6.5), $\mathscr{F}\otimes_S\mathscr{G}$ is canonically isomorphic to the sheaf associated to the $(B\otimes_A C)$-module
+\begin{equation*}
+    \big( M\otimes_B(B\otimes_A C) \big) \otimes_{B\otimes_A C} \big( (B\otimes_A C)\otimes_C N \big)
+\end{equation*}
+and by the canonical isomorphisms between tensor products, this latter module is isomorphic to
+\begin{equation*}
+    M\otimes_B(B\otimes_A C)\otimes_C N = (M\otimes_B B)\otimes_A(C\otimes_C N) = M\otimes_A N.
+\end{equation*}
+
+\begin{cx}[Proposition]{9.1.4}
+    Let $f\colon T\to X$, and $g\colon T\to Y$ be two $S$-morphisms, and $\mathscr{F}$ (\emph{resp.} $\mathscr{G}$) a quasi-coherent $\O_X$-module (\emph{resp.} quasi-coherent $\O_Y$-module).
+    Then $(f,g)^*_S(\mathscr{F}\otimes_S\mathscr{G}) = f^*(\mathscr{F})\otimes_{\O_T}g^*(\mathscr{G})$.
+\end{cx}
+
+If $p,q$ are the projections of $X\times_S Y$, then the formula in fact follows from the relations $(f,g)^*_S\circ p^*=f^*$ and $(f,g)^*_S\circ q^*=g^*$ (\textbf{0},~3.5.5), and the fact that the inverse image of a tensor product of algebraic sheaves is the tensor product of their inverse images (\textbf{0},~4.3.3).
 
 \unsure{TODO}
 
