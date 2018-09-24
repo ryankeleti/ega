@@ -1,0 +1,66 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\begin{cx}{3.1.1}
+Let $\K$ be a category, $(A_\a)_{\a\in I}$,
+$(A_{\a\b})_{(\a,\b)\in I\times I}$ two families of objects
+of $\K$ such that $A_{\b\a}=A_{\a\b}$,
+$(\rho_{\a\b})_{(\a,\b)\in I\times I}$ a family of morphisms
+$\rho_{\a\b}:A_\a\to A_{\a\b}$. We say that a pair formed by
+an object $A$ of $\K$ and a family of morphisms $\rho_\a:A\to A_\a$ 
+is a \emph{solution to the universal problem} defined by the data of the families
+$(A_\a)$, $(A_{\a\b})$, and $(\rho_{\a\b})$ if, for every object $B$
+of $\K$, the mapping which, at all $f\in\Hom(B,A)$ matches the
+family $(\rho_\a\circ f)\in\prod_\a\Hom(B,A_\a)$ is a \emph{bijection}
+of $\Hom(B,A)$ to the set of all $(f_\a)$ such that
+$\rho_{\a\b}\circ f_\a=\rho_{\b\a}\circ f_\b$ for any pair of
+indices $(\a,\b)$. If such a solution exists, it is unique up to an isomorphism.
+\end{cx}
+
+\begin{cx}{3.1.2}
+We will not recall the defintion of a \emph{presheaf} $U\mapsto\F(U)$ on a
+topological space $X$ with values in a category $\K$ (G, I, 1.9); we say that
+such a presheaf is a \emph{sheaf with values in} $\K$ if it satifies the following
+axiom:\\
+
+(F) \emph{For any covering $(U_\a)$ of an open set $U$ of $X$ by open sets
+   $U_\a$ contained in $U$, if we denote by $\rho_\a$ (resp. $\rho_{\a\b}$) the
+   restriction morphism}
+   \[
+     \F(U)\to\F(U_\a)\quad(\text{\emph{resp. }}\F(U_\a)\to\F(U_\a\cap U_\b)),
+   \]
+   \oldpage{24}\emph{the pair formed by $\F(U)$ and the family $(\rho_\a)$ are a solution to
+   the universal problem for $(\F(U_\a))$, $(\F(U_\a\cap U_\b))$, and $(\rho_{\a\b})$
+   in} (3.1.1)\footnote{This is a special case of the more general notion of a
+   \emph{projective limit} (non-filtered) (\emph{see} (T, I, 1.8) and the book in
+   preparation announced in the Introduction).}.\\
+
+Equivalently, we can say that, for each object $T$ of $\K$, the family
+$U\mapsto\Hom(T,\F(U))$ is a \emph{sheaf of sets}.
+\end{cx}
+
+\begin{cx}{3.1.3}
+Assume that $\K$ is the category defined by a ``type of structure
+with morphisms" $\Sigma$, the objects of $\K$ being the sets with structures
+of type $\Sigma$ and morphisms those of $\Sigma$. Suppose that the category $\K$ also satisfies
+the following condition:\\
+
+(E) If $(A,(\rho_\a))$ is a solution of a universal mapping problem \emph{in the category} $\K$
+for families $(A_\a)$, $(A_{\a\b})$, $(\rho_{\a\beta})$, then it is also a solution of the
+universal mapping problem for the same families \emph{in the category of sets} (that is, when we
+consider $A$, $A_\a$, and $A_{\a\b}$ as sets, $\rho_\a$ and $\rho_{\a\b}$ as functions)
+\footnote{It can be proved that it also means that the canonical functor $\K\to(\mathrm{Ens})$
+\emph{commutes with projective limits} (not necessarily filtered).}.\\
+
+Under these conditions, the condition (F) gives that, when considered as a presheaf
+\emph{of sets}, $U\mapsto\F(U)$ is a \emph{sheaf}. In addition, for a map $u:T\to\F(U)$
+to be a morphism of $\K$, it is necessary and sufficient, under (F), that each map $\rho_\a\circ u$
+is a morphism $T\to\F(U_\a)$, which means that the structure of type $\Sigma$ on $\F(U)$
+is the \emph{initial structure} for the morphisms $\rho_\a$ . Conversely, suppose a presheaf
+$U\mapsto\F(U)$ on $X$, with values in $\K$, is a \emph{sheaf of sets} and satisfies the previous
+condition; it is then clear that it satisfies (F), so it is a \emph{sheaf with values in} $\K$.
+\end{cx}
+
+\end{document}
+

@@ -52,28 +52,28 @@ If $S$, $T$, $U$ are three multiplicative subsets of $A$ such that $S\su T\su U$
 \end{cx}
 
 \begin{cx}{1.4.5}
-Consider an \emph{increasing filtered family} $(S_\alpha)$ of multiplicative subsets of $A$
-(we write $\alpha\leq\beta$ for $S_\alpha\su S_\beta$), and let $S$ be the multiplicative subset
-$\bigcup_\alpha S_\alpha$; let us put $\rho_{\beta\alpha}=\rho_A^{S_\beta,S_\alpha}$ for $\alpha\leq\beta$;
-according to (1.4.4), the homomorphisms $\rho_{\beta\alpha}$ define a ring $A'$ as the \emph{inductive limit}
-of the inductive system of rings $(S_\alpha^{-1}A,\rho_{\beta\alpha})$. Let $\rho_\alpha$ be the canonical
-map $S_\alpha^{-1}A\to A'$, and let $\varphi_\alpha=\rho_A^{S,S_\alpha}$; as
-$\varphi_\alpha=\varphi_\beta\circ\rho_{\beta\alpha}$ for $\alpha\leq\beta$ according to
+Consider an \emph{increasing filtered family} $(S_\a)$ of multiplicative subsets of $A$
+(we write $\a\leq\b$ for $S_\a\su S_\b$), and let $S$ be the multiplicative subset
+$\bigcup_\a S_\a$; let us put $\rho_{\b\a}=\rho_A^{S_\b,S_\a}$ for $\a\leq\b$;
+according to (1.4.4), the homomorphisms $\rho_{\b\a}$ define a ring $A'$ as the \emph{inductive limit}
+of the inductive system of rings $(S_\a^{-1}A,\rho_{\b\a})$. Let $\rho_\a$ be the canonical
+map $S_\a^{-1}A\to A'$, and let $\varphi_\a=\rho_A^{S,S_\a}$; as
+$\varphi_\a=\varphi_\b\circ\rho_{\b\a}$ for $\a\leq\b$ according to
 (1.4.4), we can uniquely define a homomorphism $\varphi:A'\to S^{-1}A$ such that the diagram
 \[\TI
-  & S_\alpha^{-1}A\ar[ddl,"\rho_\alpha"']\ar[d,very near end,"\rho_{\beta\alpha}"]\ar[rdd,"\varphi_\alpha"]\\
-  & S_\beta^{-1}A\ar[ld,"\rho_\beta"]\ar[rd,"\varphi_\beta"'] & & (\alpha\leq\beta)\\
+  & S_\a^{-1}A\ar[ddl,"\rho_\a"']\ar[d,very near end,"\rho_{\b\a}"]\ar[rdd,"\varphi_\a"]\\
+  & S_\b^{-1}A\ar[ld,"\rho_\b"]\ar[rd,"\varphi_\b"'] & & (\a\leq\b)\\
   A' \ar[rr,"\varphi"'] & & S^{-1}A
 \TE\]
 is commutative. In fact, $\varphi$ is an \emph{isomorphism}; it is indeed immediate by construction that
-$\varphi$ is surjective. On the other hand, if $\rho_\alpha(a/s_\alpha)\in A'$ is such that
-${\varphi(\rho_\alpha(a/s_\alpha))=0}$, this means that $a/s_\alpha=0$ in $S^{-1}A$, that is, to say that
-there exists $s\in S$ such that $sa=0$; but there is a $\beta\geq\alpha$ such that $s\in S_\beta$, and
-consequently, as $\rho_\alpha(a/s_\alpha)=\rho_\beta(sa/ss_\alpha)=0$, we find that $\varphi$ is injective.
+$\varphi$ is surjective. On the other hand, if $\rho_\a(a/s_\a)\in A'$ is such that
+${\varphi(\rho_\a(a/s_\a))=0}$, this means that $a/s_\a=0$ in $S^{-1}A$, that is, to say that
+there exists $s\in S$ such that $sa=0$; but there is a $\b\geq\a$ such that $s\in S_\b$, and
+consequently, as $\rho_\a(a/s_\a)=\rho_\b(sa/ss_\a)=0$, we find that $\varphi$ is injective.
 The case for an $A$-module $M$ is treated likewise, and thus we have defined canonical isomorphisms
 \[\TI
-  \varinjlim S_\alpha^{-1}A\ar[r,"\sim"] & (\varinjlim S_\alpha)^{-1}A, & &
-  \varinjlim S_\alpha^{-1}M\ar[r,"\sim"] & (\varinjlim S_\alpha)^{-1}M,
+  \varinjlim S_\a^{-1}A\ar[r,"\sim"] & (\varinjlim S_\a)^{-1}A, & &
+  \varinjlim S_\a^{-1}M\ar[r,"\sim"] & (\varinjlim S_\a)^{-1}M,
 \TE\]
 the second being \emph{functorial} in $M$.
 \end{cx}
