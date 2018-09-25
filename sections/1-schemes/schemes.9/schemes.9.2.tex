@@ -5,7 +5,16 @@
 \begin{cx}[Proposition]{9.2.1}
     Let $f\colon X\to Y$ be a morphism of preschemes.
     We suppose that there exists a cover $(Y_\alpha)$ of $Y$ by affine opens having the following property: every $f^{-1}(Y_\alpha)$ admits a \emph{finite} cover $(X_{\alpha i})$ by affine opens contained in $f^{-1}(Y_\alpha)$ such that every intersection $X_{\alpha i}\cap X_{\alpha j}$ is itself a \emph{finite} union of affine opens.
-    With these hypotheses, for every quasi-coherent $\O_X$-module $\mathscr{F}$, $f_*(\mathscr{F})$ is a quasi-coherent $\O_Y$-module.
+    With these hypotheses, for every quasi-coherent $\O_X$-module $\mathscr{F}$, $f_*(\scr{F})$ is a quasi-coherent $\O_Y$-module.
 \end{cx}
+
+Since this is a local condition on $Y$, we can assume that $Y$ is equal to one of the $Y_\alpha$, and thus omit the indices~$\alpha$.
+
+\begin{enumerate}[label=\alph*)]
+    \item First, suppose that the $X_i\cap X_j$ are themselves \emph{affine} opens.
+        We set $\scr{F}_i=\scr{F}|X_i$ and $\scr{F}_{ij}=\scr{F}|(X_i\cap X_j)$, and let $\scr{F}'_i$ and $\scr{F}'_{ij}$ be the images of $\scr{F}_i$ and $\scr{F}_{ij}$ (respectively) by the restriction of $f$ to $X_i$ and $X_i\cap X_j$ (respectively); we know that the $\scr{F}'_i$ and $\scr{F}'_{ij}$ are quasi-coherent (1.6.3).
+        Set $\scr{G}=\bigoplus_i\scr{F}'_i$ and $\scr{H}=\bigoplus_{i,j}\scr{F}'_{ij}$; $\scr{G}$ and $\scr{H}$ are quasi-coherent $\O_Y$-modules; we will define a homomorphism $u\colon\scr{G}\to\scr{H}$ such that $f_*(\scr{F})$ is the \emph{kernel} of $u$; it will follow from this that $f_*(\scr{F})$ is quasi-coherent (1.3.9).
+        It suffices to define $u$ as a homomorphism of presheaves; taking into account the definitions of $\scr{G}$ and $\scr{H}$, it thus suffices, for every open subset $W\subset Y$, to define a homomorphism
+\end{enumerate}
 
 \end{document}
