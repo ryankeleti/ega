@@ -15,6 +15,18 @@ Since this is a local condition on $Y$, we can assume that $Y$ is equal to one o
         We set $\scr{F}_i=\scr{F}|X_i$ and $\scr{F}_{ij}=\scr{F}|(X_i\cap X_j)$, and let $\scr{F}'_i$ and $\scr{F}'_{ij}$ be the images of $\scr{F}_i$ and $\scr{F}_{ij}$ (respectively) by the restriction of $f$ to $X_i$ and $X_i\cap X_j$ (respectively); we know that the $\scr{F}'_i$ and $\scr{F}'_{ij}$ are quasi-coherent (1.6.3).
         Set $\scr{G}=\bigoplus_i\scr{F}'_i$ and $\scr{H}=\bigoplus_{i,j}\scr{F}'_{ij}$; $\scr{G}$ and $\scr{H}$ are quasi-coherent $\O_Y$-modules; we will define a homomorphism $u\colon\scr{G}\to\scr{H}$ such that $f_*(\scr{F})$ is the \emph{kernel} of $u$; it will follow from this that $f_*(\scr{F})$ is quasi-coherent (1.3.9).
         It suffices to define $u$ as a homomorphism of presheaves; taking into account the definitions of $\scr{G}$ and $\scr{H}$, it thus suffices, for every open subset $W\subset Y$, to define a homomorphism
+        \begin{equation*}
+            u_W\colon \bigoplus_i\Gamma(f^{-1}(W)\cap X_i, \scr{F}) \to \bigoplus_{i,j}\Gamma(f^{-1}(W)\cap X_i\cap X_j, \scr{F})
+        \end{equation*}
+        in such a way that it satisfies the usual compatibility conditions when $W$ varies.
+        If, for every section $s_i\in\Gamma(f^{-1}(W)\cap X_i, \scr{F})$, we denote by $s_{i|j}$ the restriction to $f^{-1}(W)\cap X_i\cap X_j$, then we set
+        \begin{equation*}
+            u_W\big((s_i)\big) = (s_{i|j}-s_{j|i})
+        \end{equation*}
+        and the compatibility conditions are clearly satisfied.
+        To prove that the kernel $\scr{R}$ of $u$ is $f_*(\scr{F})$, we define a homomorphism from $f_*(\scr{F})$ to $\scr{R}$ by sending each section $s\in\Gamma(f^{-1}(W), \scr{F})$ to the family $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; the axioms (F1) and (F2) of sheaves (G,~II,~1.1) tell us that this homomorphism is \emph{bijective}, which finishes the proof in this case.
+    \item In the general case, the same reasoning applies once we have established that the $\scr{F}_{ij}$ are quasi-coherent.
+    But, by hypothesis, $X_i\cap X_j$ 
 \end{enumerate}
 
 \end{document}
