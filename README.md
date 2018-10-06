@@ -26,7 +26,7 @@ See `CONTRIBUTING.md` for what people are currently working on.
 - [x] Introduction
 - [ ] Preliminaries
     + [x] 1. Rings of fractions
-    + [ ] 2. Irreducible spaces. Noetherian spaces
+    + [x] 2. Irreducible spaces. Noetherian spaces
     + [ ] 3. Supplement on sheaves
     + [ ] 4. Ringed spaces
     + [ ] 5. Quasi-coherent sheaves and coherent sheaves
