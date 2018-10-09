@@ -1,6 +1,9 @@
 #!/bin/sh
 
 git add --all
-git commit -m "update `date`"
+echo 'enter commit msg --- '
+read msg
+git commit -m $msg
 git push -u origin master
+
 
