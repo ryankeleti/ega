@@ -30,5 +30,45 @@ the projective limit of the system of $\F(V_i)$ and $\F(V_{ijk})$; it is easy to
 coverings $(V_i)$ and $(V_{ijk})$ and that $U\mapsto\F'(U)$ is a presheaf.}.
 \end{cx}
 
+\begin{cx}{3.2.2}
+For the presheaf $\F'$ thus defined to be a \emph{sheaf}, it is necessary and sufficient
+that the presheaf $\F$ on $\mathfrak{B}$ satisfies the condition:\\
+
+  (F$_0$) \emph{For any covering $(U_\a)$ of $U\in\mathfrak{B}$ by sets $U_\a\in\mathfrak{B}$
+  contained in $U$, and for any object $T\in\K$, the map which takes $f\in\Hom(T,\F(U))$
+  to the family $(\rho_{U_\a}^U\circ f)\in\prod_\a\Hom(T,\F(U_\a))$ is a bijection of
+  $\Hom(T,\F(U))$ on the set of all $(f_\a)$ such that $\rho_V^{U_\a}\circ f_\a=\rho_V^{U_\b}\circ f_\b$
+  for any pair of indices $(\a,\b)$ and any $V\in\mathfrak{B}$ such that $V\su U_\a\cap U_\b$
+  \footnote{It also means that the pair formed by $\F(U)$ and the $\rho_\a=\rho_{U_\a}^U$
+  is a \emph{solution to the universal problem} defined in (3.1.1) by the data of $A_\a=\F(U_\a)$,
+  $A_{\a\b}=\prod\F(V)$ (for $V\in\mathfrak{B}$ such that $V\su U_\a\cap U_\b$) and
+  $\rho_{\a\b}=(\rho_V''):\F(U_\a)\to\prod\F(V)$ defined by the condition that for
+  $V\in\mathfrak{B}$, $V'\in\mathfrak{B}$, $W\in\mathfrak{B}$, $V\cup V'\su U_\a\cap U_\b$,
+  $W\su V\cap V'$, $\rho_W^V\circ\rho_V''=\rho_W^{V'}\circ\rho_{V'}''$.}.}\\
+
+The condition is obviously necessary. To show that it is sufficient,
+consider first a second basis $\mathfrak{B}'$ of the topology of $X$, \emph{contained in} $\mathfrak{B}$, and
+show that if $\F''$ denotes the presheaf induced by the subfamily $(\F(V))_{V\in\mathfrak{B}'}$, $\F''$ is
+\emph{canonically isomorphic} to $\F'$. Indeed, firstly the projective limit (for $V\in\mathfrak{B}'$,
+$V\su U$) canonical morphisms ${\F'(U)\to\F(V)}$ is a morphism ${\F'(U)\to\F''(U)}$
+for all open $U$. If $U\in\mathfrak{B}$, this morphism is an isomorphism, because by hypothesis
+the canonical morphisms ${\F''(U)\to\F(V)}$ for $V\in\mathfrak{B}'$, $V\su U$, factorize into
+${\F''(U)\to\F(U)\to\F(V)}$, and it is immediate to see that the composition of morphisms
+${\F(U)\to\F''(U)}$ and ${\F''(U)\to\F(U)}$ thus defined are the identities. This being so, for
+all open $U$, the morphisms ${\F''(U)\to\F''(W)=\F(W)}$ for $W\in\mathfrak{B}$ and $W\su U$ satisfy
+the conditions characterizing the projective limit of $\F(W)$ ($W\in\mathfrak{B}$, $W\su U$), which demonstrates
+our assertion given the uniqueness of a projective limit up to isomorphism.
+
+This posed, let $U$ be any open set of $X$, $(U_\a)$ a covering of $U$ by
+the open sets contained in $U$, and $\mathfrak{B}'$ the subfamily of $\mathfrak{B}$ formed by the sets
+\oldpage{27}of $\mathfrak{B}$ contained in at least $U_\a$; it is clear that $\mathfrak{B}'$ is still a basis
+of the topology of $X$, so $\F'(U)$ (resp. $\F''(U_\a)$) is the projective limit of $\F(V)$ for $V\in\mathfrak{B}'$
+and $V\su U$ (resp., $V\su U_\a$), the axiom (F) is then immediately verified by virtue of the definition of the
+projective limit.
+
+When (F$_0$) is satisfied, we will say by abuse of language that the presheaf $\F$
+on the basis $\mathfrak{B}$ is a sheaf.
+\end{cx}
+
 \end{document}
 
