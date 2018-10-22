@@ -26,7 +26,21 @@ Since this is a local condition on $Y$, we can assume that $Y$ is equal to one o
         and the compatibility conditions are clearly satisfied.
         To prove that the kernel $\scr{R}$ of $u$ is $f_*(\scr{F})$, we define a homomorphism from $f_*(\scr{F})$ to $\scr{R}$ by sending each section $s\in\Gamma(f^{-1}(W), \scr{F})$ to the family $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; the axioms (F1) and (F2) of sheaves (G,~II,~1.1) tell us that this homomorphism is \emph{bijective}, which finishes the proof in this case.
     \item In the general case, the same reasoning applies once we have established that the $\scr{F}_{ij}$ are quasi-coherent.
-    But, by hypothesis, $X_i\cap X_j$ 
+    But, by hypothesis, $X_i\cap X_j$ is a finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens \emph{in a scheme}, the intersection of any two of them is again an affine open (5.5.6).
+    We are thus led to the first case, and so we have proved (9.2.1).
 \end{enumerate}
+
+\begin{cx}[Corollary]{9.2.2}
+    The conclusion of (9.2.1) holds true in each of the following cases:
+    \begin{enumerate}[label=\alph*)]
+        \item $f$ is separated and quasi-compact.
+        \item $f$ is separated and of finite type.
+        \item $f$ is quasi-compact and the underlying space of $X$ is locally Noetherian.
+    \end{enumerate}
+\end{cx}
+
+In case \emph{a)}, the $X_{\alpha i}\cap X_{\alpha j}$ are affine (5.5.6).
+Case \emph{b)} is a particular case of \emph{a)} (6.6.3).
+Finally, in case \emph{c)}, we can reduce to the case where $Y$ is affine and the underlying space of $X$ is Noetherian; then $X$ admits a finite cover of affine opens $(X_i)$, and the $X_i\cap X_j$, being quasi-compact, are finite unions of affine opens (2.1.3).
 
 \end{document}
