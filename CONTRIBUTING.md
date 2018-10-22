@@ -4,4 +4,4 @@ This file will also record parts people _have_ done, so you may directly send th
 |person        |section|
 |-|-|
 | ryankeleti      |~prelim.1~, ~prelim.2~, prelim.3|
-| thosgood        |~schemes.2~, ~schemes.8~, scheme.9|
+| thosgood        |~schemes.2~, ~schemes.8~, schemes.9|
