@@ -18,4 +18,27 @@
     \end{enumerate}
 \end{cx}
 
+If $j=(\psi,\theta)$ ($\psi$ being the injection $U\to X$ of underlying spaces), then by definition we have that $j_*(\scr{G})=\psi_*(\scr{G})$ for every $(\O_X|U)$-module $\scr{G}$, and, further, that $j^*(\scr{H})=\psi^*(\scr{H})=\scr{H}|U$ for every $\O_X$-module $\scr{H}$, by definition of the prescheme induced over an open subset.
+So (i) is thus a particular case of (9.2.2,~\emph{a})); for the same reason, $j_*(j^*(\scr{F}))$ is quasi-coherent, and since $\overline{\scr{G}}$ is the inverse image of $j_*(\scr{G})$ by the homomorphism $\rho\colon\scr{F}\to j_*(j^*(\scr{F}))$, (ii) follows from (4.1.1).
+
+Note that the hypothesis that the morphism $j\colon U\to X$ is quasi-compact holds whenever the open subset $U$ is \emph{quasi-compact} and $X$ is a \emph{scheme}: indeed, $U$ is then a union of finitely-many affine opens $U_i$, and for every affine open $V$ of $X$, $V\cap U_i$ is an affine open (5.5.6), and thus quasi-compact.
+
+\begin{cx}[Corollary]{9.4.3}
+    Let $X$ be a prescheme, $U$ a quasi-compact open subset of $X$ such that the injection morphism $j\colon U\to X$ is quasi-compact.
+    Suppose as well that every quasi-coherent $\O_X$-module is the inductive limit of its quasi-coherent sub-$\O_X$-modules of finite type \emph{(which will be the case if $X$ is an \emph{affine scheme})}.
+    Then let $\scr{F}$ be a quasi-coherent $\O_X$-module, and $\scr{G}$ a quasi-coherent sub-$(\O_X|U)$-module \emph{of finite type} of $\scr{F}|U$.
+    Then there exists a quasi-coherent sub-$\O_X$-module $\scr{G}'$ of $\scr{F}$ \emph{of finite type} such that $\scr{G}'|U=\scr{G}$.
+\end{cx}
+
+Indeed, we have $\scr{G}=\overline{\scr{G}}|U$, and $\overline{\scr{G}}$ is quasi-coherent, from (9.4.2), and so the inductive limit of its quasi-coherent sub-$\O_X$-modules $\scr{H}_\lambda$ of finite type.
+It follows that $\scr{G}$ is the inductive limit of the $\scr{H}_\lambda|U$, and thus equal to one of the $\scr{H}_\lambda|U$ since it is of finite type (\textbf{0},~5.2.3).
+
+\begin{cx}[Remark]{9.4.4}
+    Suppose that for \emph{every} affine open $U\subset X$, the injection morphism $U\to X$ is quasi-compact.
+    Then, if the conclusion of (9.4.3) holds for every affine open $U$ and every quasi-coherent sub-$(\O_X|U)$-module $\scr{G}$ of $\scr{F}|U$ of finite type, it follows\oldpage{175} that $\scr{F}$ is the inductive limit of its quasi-coherent sub-$\O_X$-modules of finite type.
+    Indeed, for every affine open $U\subset X$, we have that $\scr{F}|U=\widetilde{M}$, where $M$ is an $A(U)$-module, and since the latter is the inductive limit of its quasi-coherent sub-modules of finite type, $\scr{F}|U$ is the inductive limit of its sub-$(\O_X|U)$-modules of finite type (1.3.9).
+    But, by hypothesis, each of these sub-modules is induced on $U$ by a quasi-coherent sub-$\O_X$-module $\scr{G}_{\lambda,U}$ of $\scr{F}$ of finite type.
+    The finite sums of the $\scr{G}_{\lambda,U}$ are again quasi-coherent $\O_X$-modules of finite type, because the property is local, and the case where $X$ is affine was covered in (1.3.10); it is clear then that $\scr{F}$ is the inductive limit of these finite sums, whence our claim.
+\end{cx}
+
 \end{document}
