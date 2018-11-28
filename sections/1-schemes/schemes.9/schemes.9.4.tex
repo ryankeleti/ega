@@ -48,7 +48,19 @@ It follows that $\scr{G}$ is the inductive limit of the $\scr{H}_\lambda|U$, and
 Since $\scr{F}=j_*(\scr{G})$ is quasi-coherent (9.4.2) and $\scr{F}|U=\scr{G}$, it suffices to apply (9.4.3) to $\scr{F}$.
 
 \begin{cx}[Lemma]{9.4.6}
-    Let
+    Let $X$ be a prescheme, $L$ a well-ordered set, $(V_\lambda)_{\lambda\in L}$ a cover of $X$ by affine opens, and $U$ an open of $X$; for all $\lambda\in L$, we set $W_\lambda=\bigcup_{\mu<\lambda}V_\mu$.
+    Suppose that: (1) for every $\lambda\in L$, $V_\lambda\cap W_\lambda$ is quasi-compact; (2) the immersion morphism $U\to X$ is quasi-compact.
+    Then, for every quasi-coherent $\O_X$-module $\scr{F}$ and every quasi-coherent sub-$(\O_X|U)$-module $\scr{G}$ of $\scr{F}|U$ \emph{of finite type}, there exists a quasi-coherent sub-$\O_X$-module $\scr{G}'$ of $\scr{F}$ \emph{of finite type} such that $\scr{G}'|U=\scr{G}$.
 \end{cx}
+
+Let $U_\lambda=U\cup W_\lambda$; we will define a family $(\scr{G}'_\lambda)$ by recurrence, where $\scr{G}'_\lambda$ is a quasi-coherent sub-$(\O_X|U_\lambda)$-module of $\scr{F}|U_\lambda$ of finite type, such that $\scr{G}'_\lambda|U_\mu=\scr{G}'_\mu$ for $\mu<\lambda$ and $\scr{G}'_\lambda|U=\scr{G}$.
+The unique sub-$\O_X$-module $\scr{G}'$ of $\scr{F}$ such that $\scr{G}'|U_\lambda=\scr{G}'$ for all $\lambda\in L$ (\textbf{0},~3.3.1) gives us what we want.
+So suppose that the $\scr{G}'_\mu$ are defined and have the preceding properties for $\mu<\lambda$; if $\lambda$ does not have a predecessor then we take for $\scr{G}'_\lambda$ the unique sub-$(\O_X|U_\lambda)$-module of $\scr{F}|U_\lambda$ such that $\scr{G}'_\lambda|U_\mu=\scr{G}'_\mu$ for all $\mu<\lambda$, which is allowed since the $U_\mu$ with $\mu<\lambda$ then form a cover of $U_\lambda$.
+If, conversely, $\lambda=\mu+1$, then $U_\lambda=U_\mu\cup V_\mu$, and it suffices to define a quasi-coherent sub-$(\O_X|V_\mu)$-module $\scr{G}''_\mu$ of $\scr{F}|V_\mu$ of finite type such that
+\begin{equation*}
+    \scr{G}''_\mu|(U_\mu\cap V_\mu)=\scr{G}'_\mu|(U_\mu\cap V_\mu);
+\end{equation*}
+and then to take for $\scr{G}'_\lambda$ the sub-$(\O_X|U_\lambda)$-module of $\scr{F}|U_\lambda$ such that $\scr{G}'_\lambda|U_\mu=\scr{G}'_\mu$ and $\scr{G}'_\lambda|V_\mu=\scr{G}''_\mu$ (\textbf{0},~3.3.1).
+But, since $V_\mu$ is affine, the existence of $\scr{G}''_\mu$ is guaranteed by (9.4.3) as soon as we show that $U_\mu\cap V_\mu$ is quasi-compact; but $U_\mu\cap V_\mu$ is the union of $U\cap V_\mu$ and $W_\mu\cap V_\mu$, which are both quasi-compact by virtue of the hypothesis.
 
 \end{document}
