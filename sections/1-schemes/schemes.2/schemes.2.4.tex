@@ -2,76 +2,78 @@
 
 \begin{document}
 
-    \begin{cx}{2.4.1}
-        We say that an affine scheme is a \emph{local scheme} if it is the affine scheme associated to a local ring $A$; then there exists in $X=\Spec(A)$ a single \emph{closed point $a\in X$}, and for all other $b\in X$ we have that $a\in\overline{\{b\}}$ (1.1.7).
-    \end{cx}
-    
-    For all preschemes $Y$ and points $y\in Y$, the local scheme $\Spec(\O_y)$ is called the \emph{local scheme of $Y$ at the point $y$}.
-    Let $V$ be an affine open of $Y$ containing $y$, and $B$ the ring of the affine scheme $V$; then $\O_y$ is canonically identified with $B_y$ (1.3.4), and the canonical homomorphism $B\to B_y$ thus corresponds (1.6.1) to a morphism of preschemes $\Spec(\O_y)\to V$.
-    If we compose this morphism with the canonical injection $V\to Y$, then we obtain a morphism $\Spec(\O_y)\to Y$, which is \emph{independent} of the affine open $V$ (containing $y$) that we chose: indeed, if $V'$ is some other affine open containing $y$, then there exists a third affine open $W$ containing $y$ and such that $W\subset V\cap V'$ (2.1.3); we can thus assume that $V\subset V'$, and then if $B'$ is the ring of $V'$, everything comes down to remarking that the diagram
-    \begin{equation*}
-        \begin{tikzcd}[column sep=tiny, row sep=tiny]
-            B'\arrow[rr]\arrow[dr]&&B\arrow[dl]\\
-            &\O_y&
-        \end{tikzcd}
-    \end{equation*}
-    is commutative (\textbf{0},~1.5.1).
-    The morphism
-    \begin{equation*}
-        \Spec(\O_y)\to Y
-    \end{equation*}
-    thus defined is said to be \emph{canonical}.
-    
-    \begin{cx}[Proposition]{2.4.2}
-        \oldpage{102}Let $(Y,\O_Y)$ be a prescheme; for all $y\in Y$, let $(\psi,\theta)$ be the canonical morphism $(\Spec(\O_y),\widetilde{\O}_y)\to(Y,\O_Y)$.
-        Then $\psi$ is a homeomorphism from $\Spec(\O_y)$ to the subspace $S_y$ of $Y$ given by the $z$ such that $y\in\overline{\{z\}}$ (\emph{or, equivalenty, the \emph{\unsure{???}} of $y$ (\textbf{0},~2.1.2)}); furthermore, if $z=\psi(\mathfrak{p})$, then $\theta_z^\#\colon\O_z\to(\O_y)_\mathfrak{p}$ is an isomorphism; $(\psi,\theta)$ is thus a monomorphism of ringed spaces.
-    \end{cx}
-    
-    As the unique closed point $a$ of $\Spec(\O_y)$ \unsure{is a member of every point of this space}, and since $\psi(a)=y$, the image of $\Spec(\O_y)$ under the continuous map $\psi$ is contained in $S_y$.
-    Since $S_y$ is contained in every affine open containing $y$, one can consider just the case where $Y$ is an affine scheme; but then this proposition follows from (1.6.2).
-    
-    \emph{We see (2.1.5) that there is a bijective correspondence between $\Spec(\O_y)$ and the set of closed irreducible subsets of $Y$ containing $y$.}
-    
-    \begin{cx}[Corollary]{2.4.3}
-        For $y\in Y$ to be the generic point of an irreducible component of $Y$, it is necessary and sufficient that the only prime ideal of the local ring $\O_y$ is its maximal ideal (\emph{in other words, that $\O_y$ is of \emph{dimension zero}}).
-    \end{cx}
-    
-    \begin{cx}[Proposition]{2.4.4}
-        Let $(X,\O_X)$ be a local scheme of ring $A$, $a$ its unique closed point, and $(Y,\O_Y)$ a prescheme.
-        Every morphism $u=(\psi,\theta)\colon(X,\O_X)\to(Y,\O_Y)$ then factorises uniquely as $X\to\Spec(\O_{\psi(a)})\to Y$, where the second arrow denotes the canonical morphism, and the first corresponds to a local homomorphism $\O_{\psi(a)}\to A$.
-        This establishes a canonical bijective correspondence between the set of morphisms $(X,\O_X)\to(Y,\O_Y)$ and the set of local homomorphisms $\O_y\to A$ for ($y\in Y$).
-    \end{cx}
-    
-    Indeed, for all $x\in X$, we have that $a\in\overline{\{x\}}$, so $\psi(a)\in\overline{\{\psi(x)\}}$, which shows that $\psi(X)$ is contained in every affine open containing $\psi(a)$.
-    So it suffices to consider the case where $(Y,\O_Y)$ is an affine scheme of ring $B$, and we then have that $u=(^a\varphi,\tilde{\varphi})$, where $\varphi\in\Hom(B,A)$ (1.7.3).
-    Further, we have that $\varphi^{-1}(\mathfrak{j}_a)=\mathfrak{j}_{\psi(a)}$, and hence that the image under $\varphi$ of any element of $B\setminus\mathfrak{j}_{\psi(a)}$ is invertible in the local ring $A$; the factorisation in the result follows from the universal property of the ring of fractions (\textbf{0},~1.2.4).
-    Conversely, to every local homomorphism $\O_y\to A$ there exists a unique corresponding morphism $(\psi,\theta)\colon X\to\Spec(\O_y)$ such that $\psi(a)=y$ (1.7.3), and, by composing with the canonical morphism $\Spec(\O_y)\to Y$, we obtain a morphism $X\to Y$, which proves the proposition.
-    
-    \begin{cx}{2.4.5}
-        The affine schemes whose ring is a field $K$ have an underlying space that is just a point.
-        If $A$ is a local ring with maximal ideal $\mathfrak{m}$, then every local homomorphism $A\to K$ has kernel equal to $\mathfrak{m}$, and so factorises as $A\to A/\mathfrak{m}\to K$, where the second arrow is a monomorphism.
-        The morphisms $\Spec(K)\to\Spec(A)$ thus correspond bijectively to monomorphisms of fields $A/\mathfrak{m}\to K$.
-    \end{cx}
-    
-    Let $(Y,\O_Y)$ be a prescheme; for every $y\in Y$ and every ideal $\mathfrak{a}_y$ of $\O_y$, the canonical homomorphism $\O_y\to\O_y/\mathfrak{a}_y$ defines a morphism $\Spec(\O_y/\mathfrak{a}_y)\to\Spec(\O_y)$; if we compose this with the canonical morphism $\Spec(\O_y)\to Y$, then we obtain a morphism $\Spec(\O_y/\mathfrak{a}_y)\to Y$, again said to be \textit{canonical}.
-    For $\mathfrak{a}_y=\mathfrak{m}_y$, this says that $\O_y/\mathfrak{a}_y=\k(y)$, and so prop.~(2.4.4) says that:
-    
-    \begin{cx}[Corollary]{2.4.6}
-        \oldpage{103}Let $(X,\O_X)$ be a local scheme whose ring $K$ is a field, $\xi$ be the unique point of $X$, and $(Y,\O_Y)$ a prescheme.
-        Then every morphism $u\colon(X,\O_X)\to(Y,\O_Y)$ factorises uniquely as $X\to\Spec(\k(\psi(\xi))))\to Y$, where the second arrow denotes the canonical morphism, and the first corresponds to a monomorphism $\k(\psi(\xi))\to K$.
-        This establishes a canonical bijective correspondance between the set of morphisms $(X,\O_X)\to (Y,\O_Y)$ and the set of monomorphisms $\k(y)\to K$ (for $y\in Y$).
-    \end{cx}
-    
-    \begin{cx}[Corollary]{2.4.7}
-        For all $y\in Y$, every canonical morphism $\Spec(\O_y/\mathfrak{a}_y)\to Y$ is a monomorphism of ringed spaces.
-    \end{cx}
-    
-    We have already seen this when $\mathfrak{a}_y=0$ (2.4.2), and it suffices to apply (1.7.5).
-    
-    \begin{cx}[Remark]{2.4.8}
-        Let $X$ be a local scheme, and $a$ its unique closed point.
-        Since every affine open containing $a$ is necessarily in the whole of $X$, every \emph{invertible} $\O_X$-module (\textbf{0},~5.4.1) is necessarily \emph{isomorphic to $\O_X$} (or, as we say, again, \emph{trivial}).
-        This property doesn't hold in general, for an arbitrary affine scheme $\Spec(A)$; we will see in chap.~V that if $A$ is a normal ring then this is true when $A$ is \unsure{\emph{factorial}}.
-    \end{cx}
+\subsection{Local schemes}
+
+\begin{cx}{2.4.1}
+    We say that an affine scheme is a \emph{local scheme} if it is the affine scheme associated to a local ring $A$; then there exists in $X=\Spec(A)$ a single \emph{closed point $a\in X$}, and for all other $b\in X$ we have that $a\in\overline{\{b\}}$ (1.1.7).
+\end{cx}
+
+For all preschemes $Y$ and points $y\in Y$, the local scheme $\Spec(\O_y)$ is called the \emph{local scheme of $Y$ at the point $y$}.
+Let $V$ be an affine open of $Y$ containing $y$, and $B$ the ring of the affine scheme $V$; then $\O_y$ is canonically identified with $B_y$ (1.3.4), and the canonical homomorphism $B\to B_y$ thus corresponds (1.6.1) to a morphism of preschemes $\Spec(\O_y)\to V$.
+If we compose this morphism with the canonical injection $V\to Y$, then we obtain a morphism $\Spec(\O_y)\to Y$, which is \emph{independent} of the affine open $V$ (containing $y$) that we chose: indeed, if $V'$ is some other affine open containing $y$, then there exists a third affine open $W$ containing $y$ and such that $W\subset V\cap V'$ (2.1.3); we can thus assume that $V\subset V'$, and then if $B'$ is the ring of $V'$, everything comes down to remarking that the diagram
+\begin{equation*}
+    \begin{tikzcd}[column sep=tiny, row sep=tiny]
+        B'\arrow[rr]\arrow[dr]&&B\arrow[dl]\\
+        &\O_y&
+    \end{tikzcd}
+\end{equation*}
+is commutative (\textbf{0},~1.5.1).
+The morphism
+\begin{equation*}
+    \Spec(\O_y)\to Y
+\end{equation*}
+thus defined is said to be \emph{canonical}.
+
+\begin{cx}[Proposition]{2.4.2}
+    \oldpage{102}Let $(Y,\O_Y)$ be a prescheme; for all $y\in Y$, let $(\psi,\theta)$ be the canonical morphism $(\Spec(\O_y),\widetilde{\O}_y)\to(Y,\O_Y)$.
+    Then $\psi$ is a homeomorphism from $\Spec(\O_y)$ to the subspace $S_y$ of $Y$ given by the $z$ such that $y\in\overline{\{z\}}$ (\emph{or, equivalenty, the \emph{\unsure{???}} of $y$ (\textbf{0},~2.1.2)}); furthermore, if $z=\psi(\mathfrak{p})$, then $\theta_z^\#\colon\O_z\to(\O_y)_\mathfrak{p}$ is an isomorphism; $(\psi,\theta)$ is thus a monomorphism of ringed spaces.
+\end{cx}
+
+As the unique closed point $a$ of $\Spec(\O_y)$ \unsure{is a member of every point of this space}, and since $\psi(a)=y$, the image of $\Spec(\O_y)$ under the continuous map $\psi$ is contained in $S_y$.
+Since $S_y$ is contained in every affine open containing $y$, one can consider just the case where $Y$ is an affine scheme; but then this proposition follows from (1.6.2).
+
+\emph{We see (2.1.5) that there is a bijective correspondence between $\Spec(\O_y)$ and the set of closed irreducible subsets of $Y$ containing $y$.}
+
+\begin{cx}[Corollary]{2.4.3}
+    For $y\in Y$ to be the generic point of an irreducible component of $Y$, it is necessary and sufficient that the only prime ideal of the local ring $\O_y$ is its maximal ideal (\emph{in other words, that $\O_y$ is of \emph{dimension zero}}).
+\end{cx}
+
+\begin{cx}[Proposition]{2.4.4}
+    Let $(X,\O_X)$ be a local scheme of ring $A$, $a$ its unique closed point, and $(Y,\O_Y)$ a prescheme.
+    Every morphism $u=(\psi,\theta)\colon(X,\O_X)\to(Y,\O_Y)$ then factorises uniquely as $X\to\Spec(\O_{\psi(a)})\to Y$, where the second arrow denotes the canonical morphism, and the first corresponds to a local homomorphism $\O_{\psi(a)}\to A$.
+    This establishes a canonical bijective correspondence between the set of morphisms $(X,\O_X)\to(Y,\O_Y)$ and the set of local homomorphisms $\O_y\to A$ for ($y\in Y$).
+\end{cx}
+
+Indeed, for all $x\in X$, we have that $a\in\overline{\{x\}}$, so $\psi(a)\in\overline{\{\psi(x)\}}$, which shows that $\psi(X)$ is contained in every affine open containing $\psi(a)$.
+So it suffices to consider the case where $(Y,\O_Y)$ is an affine scheme of ring $B$, and we then have that $u=(^a\varphi,\tilde{\varphi})$, where $\varphi\in\Hom(B,A)$ (1.7.3).
+Further, we have that $\varphi^{-1}(\mathfrak{j}_a)=\mathfrak{j}_{\psi(a)}$, and hence that the image under $\varphi$ of any element of $B\setminus\mathfrak{j}_{\psi(a)}$ is invertible in the local ring $A$; the factorisation in the result follows from the universal property of the ring of fractions (\textbf{0},~1.2.4).
+Conversely, to every local homomorphism $\O_y\to A$ there exists a unique corresponding morphism $(\psi,\theta)\colon X\to\Spec(\O_y)$ such that $\psi(a)=y$ (1.7.3), and, by composing with the canonical morphism $\Spec(\O_y)\to Y$, we obtain a morphism $X\to Y$, which proves the proposition.
+
+\begin{cx}{2.4.5}
+    The affine schemes whose ring is a field $K$ have an underlying space that is just a point.
+    If $A$ is a local ring with maximal ideal $\mathfrak{m}$, then every local homomorphism $A\to K$ has kernel equal to $\mathfrak{m}$, and so factorises as $A\to A/\mathfrak{m}\to K$, where the second arrow is a monomorphism.
+    The morphisms $\Spec(K)\to\Spec(A)$ thus correspond bijectively to monomorphisms of fields $A/\mathfrak{m}\to K$.
+\end{cx}
+
+Let $(Y,\O_Y)$ be a prescheme; for every $y\in Y$ and every ideal $\mathfrak{a}_y$ of $\O_y$, the canonical homomorphism $\O_y\to\O_y/\mathfrak{a}_y$ defines a morphism $\Spec(\O_y/\mathfrak{a}_y)\to\Spec(\O_y)$; if we compose this with the canonical morphism $\Spec(\O_y)\to Y$, then we obtain a morphism $\Spec(\O_y/\mathfrak{a}_y)\to Y$, again said to be \textit{canonical}.
+For $\mathfrak{a}_y=\mathfrak{m}_y$, this says that $\O_y/\mathfrak{a}_y=\k(y)$, and so prop.~(2.4.4) says that:
+
+\begin{cx}[Corollary]{2.4.6}
+    \oldpage{103}Let $(X,\O_X)$ be a local scheme whose ring $K$ is a field, $\xi$ be the unique point of $X$, and $(Y,\O_Y)$ a prescheme.
+    Then every morphism $u\colon(X,\O_X)\to(Y,\O_Y)$ factorises uniquely as $X\to\Spec(\k(\psi(\xi))))\to Y$, where the second arrow denotes the canonical morphism, and the first corresponds to a monomorphism $\k(\psi(\xi))\to K$.
+    This establishes a canonical bijective correspondance between the set of morphisms $(X,\O_X)\to (Y,\O_Y)$ and the set of monomorphisms $\k(y)\to K$ (for $y\in Y$).
+\end{cx}
+
+\begin{cx}[Corollary]{2.4.7}
+    For all $y\in Y$, every canonical morphism $\Spec(\O_y/\mathfrak{a}_y)\to Y$ is a monomorphism of ringed spaces.
+\end{cx}
+
+We have already seen this when $\mathfrak{a}_y=0$ (2.4.2), and it suffices to apply (1.7.5).
+
+\begin{cx}[Remark]{2.4.8}
+    Let $X$ be a local scheme, and $a$ its unique closed point.
+    Since every affine open containing $a$ is necessarily in the whole of $X$, every \emph{invertible} $\O_X$-module (\textbf{0},~5.4.1) is necessarily \emph{isomorphic to $\O_X$} (or, as we say, again, \emph{trivial}).
+    This property doesn't hold in general, for an arbitrary affine scheme $\Spec(A)$; we will see in chap.~V that if $A$ is a normal ring then this is true when $A$ is \unsure{\emph{factorial}}.
+\end{cx}
 
 \end{document}
