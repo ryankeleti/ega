@@ -24,19 +24,45 @@
 
     - title: Irreducible spaces. Noetherian spaces
       sub:
-        - title: 2.0
-          path: /sections/prelim.2.0.tex
         - title: 2.1
           path: /sections/prelim.2.1.tex
         - title: 2.2
           path: /sections/prelim.2.2.tex
-        - title: 2.3
-          path: /sections/prelim.2.3.tex
-        - title: 2.4
-          path: /sections/prelim.2.4.tex
-        - title: 2.5
-          path: /sections/prelim.2.5.tex
+    - title: 3. Supplement on sheaves
+    - title: 4. Ringed spaces
+    - title: 5. Quasi-coherent sheaves and coherent sheaves
+    - title: 6. Flatness
+    - title: 7. Adic rings
 
 - title: 'The language of schemes'
   sub:
-
+    - title: 0.Summary
+      path: '/sections/schemes.summary.tex'
+    - title: 1. Affine schemes
+    - title: 2. Preschemes and their morphisms
+      sub:
+        - title: 2.1
+          path: /sections/schemes.2.1.tex
+        - title: 2.2
+          path: /sections/schemes.2.2.tex
+        - title: 2.3
+          path: /sections/schemes.2.3.tex
+        - title: 2.4
+          path: /sections/schemes.2.4.tex
+        - title: 2.5
+          path: /sections/schemes.2.5.tex
+    - title: 3. Products of preschemes
+    - title: 4. Sub preschemes and immersions
+    - title: 5. Reduced preschemes; separation conditions
+    - title: 6. Finiteness conditions
+    - title: 7. Rational maps
+    - title: 8. Chevalley schemes
+      sub:
+        - title: 8.1
+          path: /sections/schemes.8.1.tex
+        - title: 8.2
+          path: /sections/schemes.8.2.tex
+        - title: 8.3
+          path: /sections/schemes.8.3.tex
+    - title: 9. Supplement on quasi-coherent sheaves (@thosgood)
+    - title: 10. Formal schemes
