@@ -12,6 +12,7 @@ see `CONTRIBUTING.md` if you want to contribute
 ## todo
 
 - add an introductory section with notes from the translators, pointing out things like the fact that the usage of prescheme vs. scheme has changed, but we translate as in the original, etc.
+- sort out the TOC (i.e. just add a space where there is no number before INTRODUCTION and maybe make it a lil bit narrower)
 - add original page numbers in the margins here? might make it easier for people to find references if they were originally give by page number [done, use
 `\oldpage{x}`]
 - search within the .tex files for any `TODO` comments

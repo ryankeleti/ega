@@ -2,4 +2,28 @@
 
 \begin{document}
 
+\begin{cx}[Proposition]{9.5.1}
+    Let $f\colon X\to Y$ be a morphism of preschemes such that $f_*(\O_X)$ is a quasi-coherent $\O_Y$-module (which will be the case if $f$ is quasi-compact \unsure{and separated, or} $X$ is locally Noetherian \emph{(9.2.2)}).
+    Then there exists a smaller sub-prescheme $Y'$ of $Y$ such that the canonical injection $j\colon Y'\to Y$ \unsure{?} $f$ (\emph{or, equivalently (4.4.1), such that the sub-prescheme $f^{-1}(Y')$ of $X$ is \emph{identical} to $X$}).
+\end{cx}
+
+More precisely:
+
+\begin{cx}[Corollary]{9.5.2}
+    Under the conditions of \emph{(9.5.1)}, let $f=(\psi,\theta)$, and let $\scr{J}$ be the (quasi-coherent) kernel of the homomorphism $\theta\colon\O_Y\to f_*(\O_X)$.
+    Then the closed sub-prescheme $Y'$ of $Y$ defined by $\scr{J}$ satisfies the conditions of \emph{(9.5.1)}.
+\end{cx}
+
+Since the functor $\psi^*$ is exact, the canonical factorisation $\theta\colon\O_Y\to\O_Y/\scr{J}\xrightarrow{\theta'}\psi_*(\O_X)$ gives (\textbf{0},~3.5.4.3) a factorisation $\theta^\#\colon\psi^*(\O_Y)\to\psi^*(\O_Y)/\psi^*(\scr{J})\xrightarrow{\theta'^\#}\O_X$; since $\theta_x^\#$ is a local homomorphism for every $x\in X$, the same is true of ${\theta'_x}^\#$; if we denote by $\psi_0$ the continuous map $\psi$ considered as a map from $X$ to $X'$, and by $\theta_0$ the restriction $\theta'|X'\colon(\O_Y/\scr{J})|X'\to\psi_*(\O_X)|X'=(\psi_0)_*(\O_X)$, we see that $f_0=(\psi_0,\theta_0)$ is a morphism of preschemes $X\to X'$ (2.2.1) such that $f=j\circ f_0$.
+Now, if $X''$ is\oldpage{177} a second closed sub-prescheme of $Y$, defined by a quasi-coherent sheaf of ideals $\scr{J}'$ of $\O_Y$, such that the injection $j'\colon X''\to Y$ \unsure{?} $f$, then we should immediately have that $\psi(X)\subset X''$, and so $X'\subset X''$, since $X''$ is closed.
+Furthermore, for all $y\in X''$, $\theta$ should factorise as $\O_y\to\O_y/\scr{J}'_y\to(\psi_*(\O_X))_y$, which by definition leads to $\scr{J}'_y\subset\scr{J}_y$, and thus $X'$ is a closed sub-prescheme of $X''$ (4.1.10).
+
+\begin{cx}[Definition]{9.5.3}
+    Whenever there exists a smaller sub-prescheme $Y'$ of $Y$ such that the canonical injection $j\colon Y'\to Y$ \unsure{?} $f$, we say that $Y'$ is the \emph{closed image} prescheme of $X$ by the morphism $f$.
+\end{cx}
+
+\begin{cx}[Proposition]{9.5.4}
+    If $f_*(\O_X)$ is a quasi-coherent $\O_Y$-module, then the underlying space of the closed image of $X$ by $f$ is the closure $\overline{f(X)}$ in $Y$.
+\end{cx}
+
 \end{document}
