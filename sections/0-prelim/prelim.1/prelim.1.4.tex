@@ -1,4 +1,4 @@
-\documentclass[../main.tex]{subfiles}
+\documentclass[../main.tex]
 
 \begin{document}
 
@@ -13,10 +13,10 @@ of $T^{-1}M$; we note that the map $\rho_M^{T,S}$, or simply $\rho^{T,S}$, and w
 $i_M^T=\rho_M^{T,S}\circ i_M^S$; in canonical identification (1.2.5), $\rho_M^{T,S}$ identifies with
 $\rho_A^{T,S}\otimes 1$. The homomorphism $\rho_M^{T,S}$ is a \emph{functorial morphism} (or natural
 transformation) of the functor $S^{-1}M$ into the functor $T^{-1}M$, in other words, the diagram
-\[\TI
+\[\begin{tikzcd}
   S^{-1}M\ar[r,"S^{-1}u"]\ar[d,"\rho_M^{T,S}"'] & S^{-1}N\ar[d,"\rho_N^{T,S}"]\\
   T^{-1}M\ar[r,"T^{-1}u"] & T^{-1}N
-\TE\]
+\end{tikzcd}\]
 \oldpage{16}is commutative, for every homomorphism $u:M\to N$; $T^{-1}u$ is entirely determined by
 $S^{-1}u$, because for $m\in M$ and $t\in T$, we have
 \[
@@ -26,12 +26,12 @@ $S^{-1}u$, because for $m\in M$ and $t\in T$, we have
 
 \begin{cx}{1.4.2}
 With the same notation, for two $A$-modules $M$, $N$, the diagrams (cf. (1.3.4) and (1.3.5))
-\[\TI
+\[\begin{tikzcd}
   (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\ar[r,"\sim"]\ar[d] & S^{-1}(M\otimes_A N)\ar[d] & &
   S^{-1}\Hom_A(M,N)\ar[r]\ar[d] &\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)\ar[d]\\
   (T^{-1}M)\otimes_{T^{-1}A}(T^{-1}N)\ar[r,"\sim"] & T^{-1}(M\otimes_A N) & &
   T^{-1}\Hom_A(M,N)\ar[r] &\Hom_{T^{-1}A}(T^{-1}M,T^{-1}N)
-\TE\]
+\end{tikzcd}\]
 are commutative.
 \end{cx}
 
@@ -60,21 +60,21 @@ of the inductive system of rings $(S_\a^{-1}A,\rho_{\b\a})$. Let $\rho_\a$ be th
 map $S_\a^{-1}A\to A'$, and let $\varphi_\a=\rho_A^{S,S_\a}$; as
 $\varphi_\a=\varphi_\b\circ\rho_{\b\a}$ for $\a\leq\b$ according to
 (1.4.4), we can uniquely define a homomorphism $\varphi:A'\to S^{-1}A$ such that the diagram
-\[\TI
+\[\begin{tikzcd}
   & S_\a^{-1}A\ar[ddl,"\rho_\a"']\ar[d,very near end,"\rho_{\b\a}"]\ar[rdd,"\varphi_\a"]\\
   & S_\b^{-1}A\ar[ld,"\rho_\b"]\ar[rd,"\varphi_\b"'] & & (\a\leq\b)\\
   A' \ar[rr,"\varphi"'] & & S^{-1}A
-\TE\]
+\end{tikzcd}\]
 is commutative. In fact, $\varphi$ is an \emph{isomorphism}; it is indeed immediate by construction that
 $\varphi$ is surjective. On the other hand, if $\rho_\a(a/s_\a)\in A'$ is such that
 ${\varphi(\rho_\a(a/s_\a))=0}$, this means that $a/s_\a=0$ in $S^{-1}A$, that is, to say that
 there exists $s\in S$ such that $sa=0$; but there is a $\b\geq\a$ such that $s\in S_\b$, and
 consequently, as $\rho_\a(a/s_\a)=\rho_\b(sa/ss_\a)=0$, we find that $\varphi$ is injective.
 The case for an $A$-module $M$ is treated likewise, and thus we have defined canonical isomorphisms
-\[\TI
+\[\begin{tikzcd}
   \varinjlim S_\a^{-1}A\ar[r,"\sim"] & (\varinjlim S_\a)^{-1}A, & &
   \varinjlim S_\a^{-1}M\ar[r,"\sim"] & (\varinjlim S_\a)^{-1}M,
-\TE\]
+\end{tikzcd}\]
 the second being \emph{functorial} in $M$.
 \end{cx}
 
@@ -82,9 +82,9 @@ the second being \emph{functorial} in $M$.
 \oldpage{17}Let $S_1$, $S_2$ be two multiplicative subsets of $A$; then $S_1 S_2$ is also a multiplicative subset
 of $A$. Let us denote by $S_2'$ the canonical image of $S_2$ in the ring $S_1^{-1}A$, which is a multiplicative
 subset of this ring. For every $A$-module $M$ there is then a functorial isomorphism
-\[\TI
+\[\begin{tikzcd}
   {S_2'}^{-1}(S_1^{-1}M)\ar[r,"\sim"] & (S_1 S_2)^{-1}M
-\TE\]
+\end{tikzcd}\]
 which maps $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
 \end{cx}
 
