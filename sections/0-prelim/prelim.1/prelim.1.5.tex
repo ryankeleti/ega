@@ -16,9 +16,9 @@ defined in (1.4.1).
 \begin{cx}{1.5.2}
 Under the hypothesis of (1.5.1), let $M$ be an $A$-module. There exists a canonical
 functorial morphism
-\[\TI
+\[\begin{tikzcd}
   \sigma:{S'}^{-1}(M_{[\varphi]})\ar[r] & (S^{-1}M)_{[\varphi^{S'}]}
-\TE\]
+\end{tikzcd}\]
 of ${S'}^{-1}A'$-modules, sending each element $m/s'$ of ${S'}^{-1}(M_{[\varphi]})$ to
 the element $m/\varphi(s')$ of $(S^{-1}M)_{[\varphi^{S'}]}$; in fact, we verify
 immediately that this definition does not depend on the expression $m/s'$ of the element
@@ -35,14 +35,14 @@ ${\sigma:{S'}^{-1}(A_{[\varphi]})\to S^{-1}A}$ is a homomorphism of ${S'}^{-1}A'
 \begin{cx}{1.5.3}
 Let $M$ and $N$ be two $A$-modules; by composing the homomorphisms defined in (1.3.4) and
 (1.5.2), we obtain a homomorphism
-\[\TI
+\[\begin{tikzcd}
   (S^{-1}M\otimes_{S^{-1}A}S^{-1}N)_{[\varphi^{S'}]} & {S'}^{-1}((M\otimes A)_{[\varphi]})\ar[l]
-\TE\]
+\end{tikzcd}\]
 which is an isomorphism when $\varphi(S')=S$. Similarly, by composing the homorphisms in (1.3.5)
 and (1.5.2), we obtain a homomorphism
-\[\TI
+\[\begin{tikzcd}
   {S'}^{-1}((\Hom_A(M,N))_{[\varphi]})\ar[r] & (\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N))_{[\varphi^{S'}]}
-\TE\]
+\end{tikzcd}\]
 which is an isomorphism when $\varphi(S')=S$ and $M$ admits a finite presentation.
 \end{cx}
 
@@ -50,10 +50,10 @@ which is an isomorphism when $\varphi(S')=S$ and $M$ admits a finite presentatio
 Let us now consider an $A'$-module $N'$, and form the tensor product $N'\otimes_{A'}A_{[\varphi]}$,
 which can be considered as an $A$-module by setting $a\cdot(n'\otimes b)=n'\otimes(ab)$. There is a
 functorial isomorphism of $S^{-1}A$-modules
-\[\TI
+\[\begin{tikzcd}
   \tau:({S'}^{-1}N')\otimes_{{S'}^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}\ar[r,"\sim"] &
   S^{-1}(N'\otimes_{A'}A_{[\varphi]})
-\TE\]
+\end{tikzcd}\]
 \oldpage{18}which maps the element $(n'/s')\otimes(a/s)$ to the element $(n'\otimes a)/(\varphi(s')s)$;
 indeed, we verify separately that when we replace $n'/s'$ (resp. $a/s$) by another expression of the
 same element, $(n'\otimes a)/(\varphi(s')s)$ does not change; on the other hand, we can define a
@@ -66,38 +66,38 @@ by designating by $\psi$ the composite homomorphism $a'\mapsto\varphi(a')/1$ of 
 \begin{cx}{1.5.5}
 If $M'$ and $N'$ are two $A'$-modules, by composing the isomorphisms (1.3.4) and (1.5.4), we obtain
 an isomorphism
-\[\TI
+\[\begin{tikzcd}
   {S'}^{-1}M\otimes_{{S'}^{-1}A'}{S'}^{-1}N'\otimes_{{S'}^{-1}A'}S^{-1}A\ar[r,"\sim"] &
   S^{-1}(M'\otimes_{A'}N'\otimes_{A'}A).
-\TE\]
+\end{tikzcd}\]
 Likewise, if $M'$ admits a finite presentation, we have by (1.3.5) and (1.5.4) an isomorphism
-\[\TI
+\[\begin{tikzcd}
   \Hom_{{S'}^{-1}A'}({S'}^{-1}M',{S'}^{-1}N')\otimes_{{S'}^{-1}A'}S^{-1}A\ar[r,"\sim"] &
   S^{-1}(\Hom_{A'}(M',N')\otimes_{A'}A).
-\TE\]
+\end{tikzcd}\]
 \end{cx}
 
 \begin{cx}{1.5.6}
 Under the hypothesis of (1.5.1), let $T$ (resp. $T'$) be a second multiplicative subset of $A$
 (resp. $A'$) such that $S\su T$ (resp. $S'\su T'$) and $\varphi(T')\su T$. Then the diagram
-\[\TI
+\[\begin{tikzcd}
   {S'}^{-1}A'\ar[r,"\varphi^{S'}"]\ar[d,"\rho^{T',S'}"'] & S^{-1}A\ar[d,"\rho^{T,S}"]\\
   {T'}^{-1}A'\ar[r,"\varphi^{T'}"'] & T^{-1}A
-\TE\]
+\end{tikzcd}\]
 is commutative. If $M$ is an $A$-module, the diagram
-\[\TI
+\[\begin{tikzcd}
   {S'}^{-1}(M_{[\varphi]})\ar[r,"\sigma"]\ar[d,"\rho^{T',S'}"'] &
   (S^{-1}M)_{[\varphi^{S'}]}\ar[d,"\rho^{T,S}"]\\
   {T'}^{-1}(M_{[\varphi]})\ar[r,"\sigma"'] & (T^{-1}M)_{[\varphi^{T'}]}
-\TE\]
+\end{tikzcd}\]
 is commutative. Finally, if $N'$ is an $A'$-module, the diagram
-\[\TI
+\[\begin{tikzcd}
   ({S'}^{-1}N')\otimes_{{S'}^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}
   \ar[r,"\sim","\tau"'] \ar[d] &
   S^{-1}(N'\otimes_{A'}A_{[\varphi]})\ar[d,"\rho^{T,S}"]\\
   ({T'}^{-1}N')\otimes_{{T'}^{-1}A'}(T^{-1}A)_{[\varphi^{T'}]}
   \ar[r,"\sim","\tau"'] & T^{-1}(N'\otimes_{A'}A_{[\varphi]})
-\TE\]
+\end{tikzcd}\]
 is commutative, the left vertical arrow obtained by applying
 $\rho_{N'}^{T',S'}$ to ${S'}^{-1}N'$ and $\rho_A^{T,S}$ to $S^{-1}A$.
 \end{cx}

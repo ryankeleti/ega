@@ -14,13 +14,13 @@ $S^{-1}M$ is a \emph{covariant functor in} $M$, of the category of $A$-modules i
 
 \begin{cx}{1.3.2}
 The functor $S^{-1}M$ is \emph{exact}; in other words, if the following
-\[\TI
+\[\begin{tikzcd}
   M\ar[r,"u"] & N\ar[r,"v"] & P
-\TE\]
+\end{tikzcd}\]
 is exact, so is the following
-\[\TI
+\[\begin{tikzcd}
   S^{-1}M\ar[r,"S^{-1}u"] & S^{-1}N\ar[r,"S^{-1}v"] & S^{-1}P.
-\TE\]
+\end{tikzcd}\]
 In particular, if $u:M\to N$ is injective (resp. surjective), the same is true for $S^{-1}u$;
 \oldpage{15} if $N$ and $P$ are two
 submodules of $M$, $S^{-1}N$ and $S^{-1}P$ identify canonically with submodules of $S^{-1}M$, and we have
@@ -34,25 +34,25 @@ Let $(M_\a,\varphi_{\b\a})$ be an inductive system of $A$-modules; then
 $(S^{-1}M_\a,S^{-1}\varphi_{\b\a})$ is an inductive system of $S^{-1}A$-modules.
 Expressing the $S^{-1}M_\a$ and $S^{-1}\varphi_{\b\a}$ as tensor products (1.2.5 and 1.3.1),
 it follows from the permutability of tensor product and inductive limit operations that we have a canonical isomorphism
-\[\TI
+\[\begin{tikzcd}
   S^{-1}\varinjlim M_\a\ar[r,"\sim"] &\varinjlim S^{-1} M_\a
-\TE\]
+\end{tikzcd}\]
 which is further expressed by saying that the functor $S^{-1}M$ (in $M$) \emph{commutes with inductive limits}.
 \end{cx}
 
 \begin{cx}{1.3.4}
 Let $M$, $N$ be two $A$-modules; there is a canonical \emph{functorial} isomorphism (in $M$ and $N$)
-\[\TI
+\[\begin{tikzcd}
   (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\ar[r,"\sim"] &S^{-1}(M\otimes_A N)
-\TE\]
+\end{tikzcd}\]
 which transforms $(m/s)\otimes(n/t)$ into $(m\otimes n)/st$.
 \end{cx}
 
 \begin{cx}{1.3.5}
 We also have a \emph{functorial} homomorphism (in $M$ and $N$)
-\[\TI
+\[\begin{tikzcd}
   S^{-1}\Hom_A(M,N)\ar[r] &\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)
-\TE\]
+\end{tikzcd}\]
 which, at $u/s$, corresponds to the homomorphism $m/t\mapsto u(m)/st$. When $M$ has a finite presentation, the
 preceding homomorphism is an \emph{isomorphism}: it is immediate when $M$ is of the form $A^r$, and goes on to the general
 case starting from the following exact sequence $A^p\to A^q\to M\to 0$, and using the exactness of the functor $S^{-1}M$ and
