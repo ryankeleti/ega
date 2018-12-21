@@ -5,27 +5,27 @@
 \begin{cx}[Proposition]{9.2.1}
     Let $f\colon X\to Y$ be a morphism of preschemes.
     We suppose that there exists a cover $(Y_\alpha)$ of $Y$ by affine opens having the following property: every $f^{-1}(Y_\alpha)$ admits a \emph{finite} cover $(X_{\alpha i})$ by affine opens contained in $f^{-1}(Y_\alpha)$ such that every intersection $X_{\alpha i}\cap X_{\alpha j}$ is itself a \emph{finite} union of affine opens.
-    With these hypotheses, for every quasi-coherent $\O_X$-module $\mathscr{F}$, $f_*(\scr{F})$ is a quasi-coherent $\O_Y$-module.
+    With these hypotheses, for every quasi-coherent $\O_X$-module $\mathscr{F}$, $f_*(\sheaf{F})$ is a quasi-coherent $\O_Y$-module.
 \end{cx}
 
 Since this is a local condition on $Y$, we can assume that $Y$ is equal to one of the $Y_\alpha$, and thus omit the indices~$\alpha$.
 
 \begin{enumerate}[label=\alph*)]
     \item First, suppose that the $X_i\cap X_j$ are themselves \emph{affine} opens.
-        We set $\scr{F}_i=\scr{F}|X_i$ and $\scr{F}_{ij}=\scr{F}|(X_i\cap X_j)$, and let $\scr{F}'_i$ and $\scr{F}'_{ij}$ be the images of $\scr{F}_i$ and $\scr{F}_{ij}$ (respectively) by the restriction of $f$ to $X_i$ and $X_i\cap X_j$ (respectively); we know that the $\scr{F}'_i$ and $\scr{F}'_{ij}$ are quasi-coherent (1.6.3).
-        Set $\scr{G}=\bigoplus_i\scr{F}'_i$ and $\scr{H}=\bigoplus_{i,j}\scr{F}'_{ij}$; $\scr{G}$ and $\scr{H}$ are quasi-coherent $\O_Y$-modules; we will define a homomorphism $u\colon\scr{G}\to\scr{H}$ such that $f_*(\scr{F})$ is the \emph{kernel} of $u$; it will follow from this that $f_*(\scr{F})$ is quasi-coherent (1.3.9).
-        It suffices to define $u$ as\oldpage{172} a homomorphism of presheaves; taking into account the definitions of $\scr{G}$ and $\scr{H}$, it thus suffices, for every open subset $W\subset Y$, to define a homomorphism
+        We set $\sheaf{F}_i=\sheaf{F}|X_i$ and $\sheaf{F}_{ij}=\sheaf{F}|(X_i\cap X_j)$, and let $\sheaf{F}'_i$ and $\sheaf{F}'_{ij}$ be the images of $\sheaf{F}_i$ and $\sheaf{F}_{ij}$ (respectively) by the restriction of $f$ to $X_i$ and $X_i\cap X_j$ (respectively); we know that the $\sheaf{F}'_i$ and $\sheaf{F}'_{ij}$ are quasi-coherent (1.6.3).
+        Set $\sheaf{G}=\bigoplus_i\sheaf{F}'_i$ and $\sheaf{H}=\bigoplus_{i,j}\sheaf{F}'_{ij}$; $\sheaf{G}$ and $\sheaf{H}$ are quasi-coherent $\O_Y$-modules; we will define a homomorphism $u\colon\sheaf{G}\to\sheaf{H}$ such that $f_*(\sheaf{F})$ is the \emph{kernel} of $u$; it will follow from this that $f_*(\sheaf{F})$ is quasi-coherent (1.3.9).
+        It suffices to define $u$ as\oldpage{172} a homomorphism of presheaves; taking into account the definitions of $\sheaf{G}$ and $\sheaf{H}$, it thus suffices, for every open subset $W\subset Y$, to define a homomorphism
         \begin{equation*}
-            u_W\colon \bigoplus_i\Gamma(f^{-1}(W)\cap X_i, \scr{F}) \to \bigoplus_{i,j}\Gamma(f^{-1}(W)\cap X_i\cap X_j, \scr{F})
+            u_W\colon \bigoplus_i\Gamma(f^{-1}(W)\cap X_i, \sheaf{F}) \to \bigoplus_{i,j}\Gamma(f^{-1}(W)\cap X_i\cap X_j, \sheaf{F})
         \end{equation*}
         in such a way that it satisfies the usual compatibility conditions when $W$ varies.
-        If, for every section $s_i\in\Gamma(f^{-1}(W)\cap X_i, \scr{F})$, we denote by $s_{i|j}$ the restriction to $f^{-1}(W)\cap X_i\cap X_j$, then we set
+        If, for every section $s_i\in\Gamma(f^{-1}(W)\cap X_i, \sheaf{F})$, we denote by $s_{i|j}$ the restriction to $f^{-1}(W)\cap X_i\cap X_j$, then we set
         \begin{equation*}
             u_W\big((s_i)\big) = (s_{i|j}-s_{j|i})
         \end{equation*}
         and the compatibility conditions are clearly satisfied.
-        To prove that the kernel $\scr{R}$ of $u$ is $f_*(\scr{F})$, we define a homomorphism from $f_*(\scr{F})$ to $\scr{R}$ by sending each section $s\in\Gamma(f^{-1}(W), \scr{F})$ to the family $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; the axioms (F1) and (F2) of sheaves (G,~II,~1.1) tell us that this homomorphism is \emph{bijective}, which finishes the proof in this case.
-    \item In the general case, the same reasoning applies once we have established that the $\scr{F}_{ij}$ are quasi-coherent.
+        To prove that the kernel $\sheaf{R}$ of $u$ is $f_*(\sheaf{F})$, we define a homomorphism from $f_*(\sheaf{F})$ to $\sheaf{R}$ by sending each section $s\in\Gamma(f^{-1}(W), \sheaf{F})$ to the family $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; the axioms (F1) and (F2) of sheaves (G,~II,~1.1) tell us that this homomorphism is \emph{bijective}, which finishes the proof in this case.
+    \item In the general case, the same reasoning applies once we have established that the $\sheaf{F}_{ij}$ are quasi-coherent.
     But, by hypothesis, $X_i\cap X_j$ is a finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens \emph{in a scheme}, the intersection of any two of them is again an affine open (5.5.6).
     We are thus led to the first case, and so we have proved (9.2.1).
 \end{enumerate}
@@ -44,3 +44,4 @@ Case \emph{b)} is a particular case of \emph{a)} (6.6.3).
 Finally, in case \emph{c)}, we can reduce to the case where $Y$ is affine and the underlying space of $X$ is Noetherian; then $X$ admits a finite cover of affine opens $(X_i)$, and the $X_i\cap X_j$, being quasi-compact, are finite unions of affine opens (2.1.3).
 
 \end{document}
+
