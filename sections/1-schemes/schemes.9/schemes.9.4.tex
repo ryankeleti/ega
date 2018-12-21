@@ -3,18 +3,18 @@
 \begin{document}
 
 \begin{cx}{9.4.1}
-    Let\oldpage{174} $X$ be a topological space, $\scr{F}$ a sheaf of sets (resp. of groups, of rings) on $X$, $U$ an open subset of $X$, $\psi\colon U\to X$ the canonical injection, and $\scr{G}$ a sub-sheaf of $\scr{F}|U=\psi^*(\scr{F})$.
-    Since $\psi_*$ is left exact, $\psi_*(\scr{G})$ is a sub-sheaf of $\psi_*(\psi^*(\scr{F}))$; if we denote by $\rho$ the canonical homomorphism $\scr{F}\to\psi_*(\psi^*(\scr{F}))$ (\textbf{0},~3.5.3), then we denote by $\overline{\scr{G}}$ the sub-sheaf $\rho^{-1}(\psi_*(\scr{G}))$ of $\scr{F}$.
-    It follows immediately from the definitions that, for every open subset $V$ of $X$, $\Gamma(V,\overline{\scr{G}})$ consists of sections $s\in\Gamma(V,\scr{F})$ whose restriction to $V\cap U$ is a section of $\scr{G}$ over $V\cap U$.
-    We thus have that $\overline{\scr{G}}|U=\psi^*(\overline{\scr{G}})=\scr{G}$, and that $\overline{\scr{G}}$ is the \emph{biggest} sub-sheaf of $\scr{F}$ that restricts to $\scr{G}$ over $U$; we say that $\overline{\scr{G}}$ is the \emph{canonical extension} of the sub-sheaf $\scr{G}$ of $\scr{F}|U$ to a sub-sheaf of $\scr{F}$.
+    Let\oldpage{174} $X$ be a topological space, $\sheaf{F}$ a sheaf of sets (resp. of groups, of rings) on $X$, $U$ an open subset of $X$, $\psi\colon U\to X$ the canonical injection, and $\sheaf{G}$ a sub-sheaf of $\sheaf{F}|U=\psi^*(\sheaf{F})$.
+    Since $\psi_*$ is left exact, $\psi_*(\sheaf{G})$ is a sub-sheaf of $\psi_*(\psi^*(\sheaf{F}))$; if we denote by $\rho$ the canonical homomorphism $\sheaf{F}\to\psi_*(\psi^*(\sheaf{F}))$ (\textbf{0},~3.5.3), then we denote by $\overline{\sheaf{G}}$ the sub-sheaf $\rho^{-1}(\psi_*(\sheaf{G}))$ of $\sheaf{F}$.
+    It follows immediately from the definitions that, for every open subset $V$ of $X$, $\Gamma(V,\overline{\sheaf{G}})$ consists of sections $s\in\Gamma(V,\sheaf{F})$ whose restriction to $V\cap U$ is a section of $\sheaf{G}$ over $V\cap U$.
+    We thus have that $\overline{\sheaf{G}}|U=\psi^*(\overline{\sheaf{G}})=\sheaf{G}$, and that $\overline{\sheaf{G}}$ is the \emph{biggest} sub-sheaf of $\sheaf{F}$ that restricts to $\sheaf{G}$ over $U$; we say that $\overline{\sheaf{G}}$ is the \emph{canonical extension} of the sub-sheaf $\sheaf{G}$ of $\sheaf{F}|U$ to a sub-sheaf of $\sheaf{F}$.
 \end{cx}
 
 \begin{cx}[Proposition]{9.4.2}
     Let $X$ be a prescheme, $U$ an open subset of $X$ such that the canonical injection $j\colon U\to X$ is a quasi-compact morphism \emph{(which will be the case for \emph{all} $U$ if the underlying space of $X$ is \emph{locally Noetherian} {\normalfont(6.6.4,~(i))})}.
     Then:
     \begin{enumerate}[label=\normalfont(\roman*)]
-        \item For every quasi-coherent $(\O_X|U)$-module $\scr{G}$, $j_*(\scr{G})$ is a quasi-coherent $\O_X$-module, and $j_*(\scr{G})|U=j^*(j_*(\scr{G}))=\scr{G}$.
-        \item For every quasi-coherent $\O_X$-module $\scr{F}$ and every quasi-coherent sub-$(\O_X|U)$-module $\scr{G}$, the canonical extension $\overline{\scr{G}}$ of $\scr{G}$ {\normalfont(9.4.1)} is a quasi-coherent sub-$\O_X$-module of $\scr{F}$.
+        \item For every quasi-coherent $(\O_X|U)$-module $\sheaf{G}$, $j_*(\sheaf{G})$ is a quasi-coherent $\O_X$-module, and $j_*(\sheaf{G})|U=j^*(j_*(\sheaf{G}))=\sheaf{G}$.
+        \item For every quasi-coherent $\O_X$-module $\sheaf{F}$ and every quasi-coherent sub-$(\O_X|U)$-module $\sheaf{G}$, the canonical extension $\overline{\sheaf{G}}$ of $\sheaf{G}$ {\normalfont(9.4.1)} is a quasi-coherent sub-$\O_X$-module of $\sheaf{F}$.
     \end{enumerate}
 \end{cx}
 
