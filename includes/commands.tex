@@ -1,7 +1,10 @@
 % commands and maths things
 
+% if you are not sure of a translation.
 \newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
 \newcommand{\completelyunsure}{\unsure{[\ldots]}}
+
+% use to mark where original page starts.
 \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}}
 
 \newcommand{\asttri}{%
@@ -16,34 +19,52 @@
         \end{equation*}
     \end{center}\vspace{1.3em}}
 
+% spacing 
 \newcommand{\NEXT}{\medskip\noindent}
-\newcommand{\mf}{\mathfrak}
+
+% nilradical.
 \newcommand{\rad}{\mathfrak{R}}
+
 \newcommand{\RA}{\Longrightarrow}
 \newcommand{\LA}{\Longleftarrow}
+
 \newcommand{\su}{\subset}
 \newcommand{\us}{\supset}
+
 \newcommand{\emp}{\varnothing}
+
 \renewcommand{\a}{\alpha}
 \renewcommand{\b}{\beta}
 
+\newcommand{\mf}{\mathfrak}
+
+% for easy changes to style.
 \newcommand{\sheaf}{\mathcal}
 \newcommand{\bbold}{\mathbf}
 \newcommand{\cat}{\mathsf}
 
+% math bold letters.
 \newcommand{\R}{\bbold{R}}
 \newcommand{\C}{\bbold{C}}
 \newcommand{\N}{\bbold{N}}
 \newcommand{\Q}{\bbold{Q}}
 \newcommand{\Z}{\bbold{Z}}
+
+% residue field.
 \renewcommand{\k}{\bbold{k}}
+
+% category.
 \newcommand{\K}{\cat{K}}
+
+% structure sheaf.
 \renewcommand{\O}{\mathcal{O}}
+
+% common sheaves.
 \newcommand{\F}{\sheaf{F}}
 \newcommand{\G}{\sheaf{G}}
 
+% operators.
 \newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
-
 \DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\Supp}{Supp}
 \DeclareMathOperator{\img}{im}
