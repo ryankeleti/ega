@@ -1,6 +1,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage{subfiles}
-\usepackage[left=0.85in,right=0.85in,top=0.89in,bottom=1.15in]{geometry}
+\usepackage[left=0.8in,right=0.8in,top=0.8in,bottom=1.1in]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -15,6 +15,11 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{calligra}
 \usepackage{mathtools}
+
+% font.
+\usepackage[charter]{mathdesign}
+
+% comment out the following for `regular' script.
 \usepackage{eucal}[mathcal]
 
 % uncomment the following two lines for Euler font.
@@ -25,16 +30,12 @@
 %\binoppenalty=9999
 %\relpenalty=9999
 
-
 % section titles
-
 \titleformat{\part}[block]{\huge}{\sc Chapter \thepart. ---\,\,}{0pt}{\filcenter\sc\Huge}[\setcounter{section}{0}]
 \titleformat{\section}[block]{\huge\bfseries}{\thesection.\,\,}{0pt}{\filcenter}[\setcounter{subsection}{0}]
 \titleformat{\subsection}[hang]{\bfseries}{\thesubsection.\,\,}{0pt}{}
 
-
 % table of contents
-
 \dottedcontents{part}[0em]{\sc}{2em}{1em}
 \dottedcontents{section}[3em]{\bfseries}{2em}{1em}
 \dottedcontents{subsection}[6em]{}{2.5em}{1em}
