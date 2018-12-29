@@ -73,12 +73,21 @@ on the basis $\mf{B}$ is a sheaf.
 \begin{env}{3.2.3}
 Let $\F$, $\G$ be two presheaves on a basis $\mf{B}$, with values in $\K$; we define a \emph{morphism}
 $u:\F\to\G$ as a family $(u_V)_{V\in\mf{B}}$ of morphisms $u_V:\F(V)\to\G(V)$ satisfying the usual
-compatibility conditions with the restriction morphisms $\rho_V^W$. With the notations of \eref{3.2.1},
+compatibility conditions with the restriction morphisms $\rho_V^W$. With the notation of \eref{3.2.1},
 we have a morphism $u':\F'\to\G'$ of (ordinary) presheaves by taking for $u_U'$ the projective limit
 of the $u_V$ for $V\in\mf{B}$ and $V\su U$; the verification of the compatibility conditions with
 the ${\rho'}_U^{U'}$ follows from the functorial properties of the projective limit.
 \end{env}
 
+\begin{env}{3.2.4}
+If the category $\K$ admits inductive limits, and if $\F$ is a presheaf on the basis $\mf{B}$, with
+values in $\K$, for each $x\in X$ the neighborhoods of $x$ belonging to $\mf{B}$ form a cofinal set
+(for $\us$) in the set of neighborhoods of $x$, therefore, if $\F'$ is the (ordinary) presheaf
+corresponding to $\F$, the fiber $\F_x'$ is equal to $\varinjlim_{\mf{B}}\F(V)$ over the set of
+$V\in\mf{B}$ containing $x$. If $u:\F\to\G$ is morphism of presheaves on $\mf{B}$ with values in
+$\K$, $u':\F'\to\G'$ the corresponding morphism of ordinary presheaves, $u_x'$ is likewise the
+inductive limit of the morphisms $u_V:\F(V)\to\G(V)$ for $V\in\mf{B}$, $x\in V$.
+\end{env}
 
 \end{document}
 
