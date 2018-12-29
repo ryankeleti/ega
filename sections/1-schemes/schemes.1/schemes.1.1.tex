@@ -2,7 +2,7 @@
 
 \begin{document}
 
-\begin{cx}{1.1.1}
+\begin{env}{1.1.1}
 \oldpage{80}\emph{Notation}. Let $A$ be a (commutative) ring, $M$ an $A$-module. In
 this chapter and the following, we will constantly use the following notations:
 \begin{itemize}
@@ -31,9 +31,9 @@ this chapter and the following, we will constantly use the following notations:
   \item[] $V(f)=V(\{f\})$ for $f\in A$.
   \item[] $D(f)=X-V(f)=$ \emph{set of $x\in X$ where $f(x)\neq 0$}.
 \end{itemize}
-\end{cx}
+\end{env}
 
-\begin{cx}[Proposition]{1.1.2}
+\begin{env}[Proposition]{1.1.2}
 We have the following properties:
 \begin{enumerate}[label=(\roman*)]
   \item $V(0)=X$, $V(1)=\emp$.
@@ -43,21 +43,21 @@ We have the following properties:
   \item $V(EE')=V(E)\cup V(E')$.
   \item $V(E)=V(\mf{r}(E))$.
 \end{enumerate}
-\end{cx}
+\end{env}
 The properties (i), (ii), (iii) are trivial, and (v) follows from (ii) and from the
 formula (1.1.1.1). It is evident that $V(EE')\us V(E)\cap V(E')$; conversely, if
 $x\not\in V(E)$ and $x\not\in V(E')$, there exists $f\in E$ and $f'\in E'$ such that
 $f(x)\neq 0$ and $f'(x)\neq 0$ in $\k(x)$, hence $f(x)f'(x)\neq 0$, i.e., $x\not\in V(EE')$,
 which proves (iv).
 
-The proposition (1.1.2) shows, among other things, that sets of the form $V(E)$ (where
+The proposition \eref{1.1.2} shows, among other things, that sets of the form $V(E)$ (where
 $E$ runs through all the subsets of $A$) are the \emph{closed sets} of a topology on
 $X$, which we will call the \emph{spectral topology}\footnote{The introduction of this
 topology in algebraic geometry is due to Zariski. So this topology is usually called
 the ``Zariski topology'' of $X$.}; unless expressely stated otherwise, always assume
 $X=\Spec(A)$ with the spectral topology.
 
-\begin{cx}{1.1.3}
+\begin{env}{1.1.3}
 \oldpage{81}For each subset $Y$ of $X$, we denote by $\mf{j}(Y)$ the set of $f\in A$
 such that $f(y)=0$ for all $y\in Y$; equivalently, $\mf{j}(Y)$ is the intersection of
 the prime ideals $\mf{j}_y$ for $y\in Y$. It is clear that the relation $Y\su Y'$
@@ -69,29 +69,29 @@ for each family $(Y_\lambda)$ of subsets of $X$. Finally we have
 \begin{equation}
   \mf{j}(\{x\})=\mf{j}_x.\tag{1.1.3.2}
 \end{equation}
-\end{cx}
+\end{env}
 
-\begin{cx}[Proposition]{1.1.4}
+\begin{env}[Proposition]{1.1.4}
 \begin{enumerate}[label=(\roman*)]
   \item For each subset $E$ of $A$, we have $\mf{j}(V(E))=\mf{r}(E)$.
   \item For each subset $Y$ of $X$, $V(\mf{j}(Y))=\overline{Y}$, the closure of $Y$ in $X$.
 \end{enumerate}
-\end{cx}
+\end{env}
 (i) is an immeidate consequence of the definitions and (1.1.1.1); on the other hand, $V(\mf{j}(Y))$
 is closed and contains $Y$; conversely, if $Y\su V(E)$, we have $f(y)=0$ for $f\in E$ and all $y\in Y$,
 so $E\su\mf{j}(Y)$, $V(E)\us V(\mf{j}(Y))$, which proves (ii).
 
-\begin{cx}[Corollary]{1.1.5}
+\begin{env}[Corollary]{1.1.5}
 The closed subsets of $X=\Spec(A)$ and the ideals of $A$ equal to their radicals (otherwise the
 intersection of prime ideals) correspond bijectively by the \unsure{decent} maps $Y\mapsto\mf{j}(Y)$,
 $\mf{a}\mapsto V(\mf{a})$; the union $Y_1\cup Y_2$ of two closed subsets corresponds to
 $\mf{j}(Y_1)\cap\mf{j}(Y_2)$, and the intersection of any family $(Y_\lambda)$ of closed subsets
 corresponds to the radical of the sum of the $\mf{j}(Y_\lambda)$.
-\end{cx}
+\end{env}
 
-\begin{cx}[Corollary]{1.1.6}
+\begin{env}[Corollary]{1.1.6}
 If $A$ is a Noetherian ring, $X=\Spec(A)$ is a Noetherian space.
-\end{cx}
+\end{env}
 Note that the converse of this corollary is false, as shown
 in the example of a non-Noetherian integral ring with a single prime ideal $\neq\{0\}$, for
 example a non-discrete valuation ring of rank $1$.
@@ -102,27 +102,27 @@ $Y$; we know that as a whole, $Y$ corresponds with the set of maximal ideals
 of $A$, and it is easy to see that the topology induced on $Y$ by that of $X=\Spec(A)$
 is the initial topology of $Y$. Since $Y$ is not a Noetherian space, the same is true for $X$.
 
-\begin{cx}[Corollary]{1.1.7}
+\begin{env}[Corollary]{1.1.7}
 For each $x\in X$, the closure of $\{x\}$ is the set of $y\in X$ such that $\mf{j}_x\su\mf{j}_y$.
 For $\{x\}$ to beclosed, it is necessary and sufficient that $\mf{j}_x$ is maximal.
-\end{cx}
+\end{env}
 
-\begin{cx}[Corollary]{1.1.8}
+\begin{env}[Corollary]{1.1.8}
 The space $X=\Spec(A)$ is a Kolmogoroff space.
-\end{cx}
+\end{env}
 
 If $x$, $y$ are two distinct points of $X$, we have either $\mf{j}_x\not\su\mf{j}_y$ or
 $\mf{j}_y\not\su\mf{j}_x$, so one of the points $x$, $y$ does not belong to the closure of the other.
 
-\begin{cx}{1.1.9}
-According to proposition (1.1.2, (iv)), for two elements $f$, $g$ of $A$, we have
+\begin{env}{1.1.9}
+According to proposition (\eref{1.1.2}, (iv)), for two elements $f$, $g$ of $A$, we have
 \begin{equation}
   D(fg)=D(f)\cap D(g).\tag{1.1.9.1}
 \end{equation}
-Note also that the relation $D(f)=D(g)$ means, according to proposition (1.1.4, (i))
-and proposition (1.1.2, (v)) that $\mf{r}(f)=\mf{r}(g)$, or that the minimal prime ideals
+Note also that the relation $D(f)=D(g)$ means, according to proposition (\eref{1.1.4}, (i))
+and proposition (\eref{1.1.2}, (v)) that $\mf{r}(f)=\mf{r}(g)$, or that the minimal prime ideals
 containing $(f)$ and $(g)$ are the same; in particular, when $f=ug$, where $u$ is invertible.
-\end{cx}
+\end{env}
 
 \end{document}
 
