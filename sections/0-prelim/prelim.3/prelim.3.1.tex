@@ -19,7 +19,7 @@ indices $(\a,\b)$. If such a solution exists, it is unique up to an isomorphism.
 \end{env}
 
 \begin{env}{3.1.2}
-We will not recall the defintion of a \emph{presheaf} $U\mapsto\F(U)$ on a
+We will not recall the defintion of a \emph{presheaf} $U\mapsto\sheaf{F}(U)$ on a
 topological space $X$ with values in a category $\K$ (G, I, 1.9); we say that
 such a presheaf is a \emph{sheaf with values in} $\K$ if it satifies the following
 axiom:\\
@@ -28,16 +28,16 @@ axiom:\\
    $U_\a$ contained in $U$, if we denote by $\rho_\a$ (resp. $\rho_{\a\b}$) the
    restriction morphism}
    \[
-     \F(U)\to\F(U_\a)\quad(\text{\emph{resp. }}\F(U_\a)\to\F(U_\a\cap U_\b)),
+     \sheaf{F}(U)\to\sheaf{F}(U_\a)\quad(\text{\emph{resp. }}\sheaf{F}(U_\a)\to\sheaf{F}(U_\a\cap U_\b)),
    \]
-   \oldpage{24}\emph{the pair formed by $\F(U)$ and the family $(\rho_\a)$ are a solution to
-   the universal problem for $(\F(U_\a))$, $(\F(U_\a\cap U_\b))$, and $(\rho_{\a\b})$
-   in} (3.1.1)\footnote{This is a special case of the more general notion of a
+   \oldpage{24}\emph{the pair formed by $\sheaf{F}(U)$ and the family $(\rho_\a)$ are a solution to
+   the universal problem for $(\sheaf{F}(U_\a))$, $(\sheaf{F}(U_\a\cap U_\b))$, and $(\rho_{\a\b})$
+   in} \eref{3.1.1}\footnote{This is a special case of the more general notion of a
    \emph{projective limit} (non-filtered) (\emph{see} (T, I, 1.8) and the book in
    preparation announced in the Introduction).}.\\
 
 Equivalently, we can say that, for each object $T$ of $\K$, the family
-$U\mapsto\Hom(T,\F(U))$ is a \emph{sheaf of sets}.
+$U\mapsto\Hom(T,\sheaf{F}(U))$ is a \emph{sheaf of sets}.
 \end{env}
 
 \begin{env}{3.1.3}
@@ -54,76 +54,75 @@ consider $A$, $A_\a$, and $A_{\a\b}$ as sets, $\rho_\a$ and $\rho_{\a\b}$ as fun
 \emph{commutes with projective limits} (not necessarily filtered).}.\\
 
 Under these conditions, the condition (F) gives that, when considered as a presheaf
-\emph{of sets}, $U\mapsto\F(U)$ is a \emph{sheaf}. In addition, for a map $u:T\to\F(U)$
+\emph{of sets}, $U\mapsto\sheaf{F}(U)$ is a \emph{sheaf}. In addition, for a map $u:T\to\sheaf{F}(U)$
 to be a morphism of $\K$, it is necessary and sufficient, under (F), that each map $\rho_\a\circ u$
-is a morphism $T\to\F(U_\a)$, which means that the structure of type $\Sigma$ on $\F(U)$
+is a morphism $T\to\sheaf{F}(U_\a)$, which means that the structure of type $\Sigma$ on $\sheaf{F}(U)$
 is the \emph{initial structure} for the morphisms $\rho_\a$ . Conversely, suppose a presheaf
-$U\mapsto\F(U)$ on $X$, with values in $\K$, is a \emph{sheaf of sets} and satisfies the previous
+$U\mapsto\sheaf{F}(U)$ on $X$, with values in $\K$, is a \emph{sheaf of sets} and satisfies the previous
 condition; it is then clear that it satisfies (F), so it is a \emph{sheaf with values in} $\K$.
 \end{env}
 
 \begin{env}{3.1.4}
 When $\Sigma$ is a type of a group or ring structure, the fact that
-the presheaf $U\mapsto\F(U)$ with values in $\K$ is a sheaf of \emph{sets} leads \emph{ipso facto}
+the presheaf $U\mapsto\sheaf{F}(U)$ with values in $\K$ is a sheaf of \emph{sets} leads \emph{ipso facto}
 that it is a sheaf with values in $\K$ (in other words, a sheaf of groups or rings
 within the meaning of (G))\footnote{This is because in the category $\K$, any morphism that is a
 \emph{bijection} (as a map of sets) is an \emph{isomorphism}. This is no longer true when $\K$
 is the category of topological spaces, for example.}. But it is not the same when, for example,
 $\K$ is the category of \emph{topological rings} (with morphisms as continuous homomorphisms): a sheaf
-with values in $\K$ is a sheaf of rings $U\mapsto\F(U)$ such that for any open $U$
-and any covering of $U$ by open sets $U_\a\su U$, the topology of the ring $\F(U)$
-is to be \emph{the least fine}, making the homomorpisms $\F(U)\to\F(U_\a)$ continuous. We will say in
-this case that $U\mapsto\F(U)$, considered as a sheaf of rings (without a topology), is
-\emph{underlying} the sheaf of topological rings $U\mapsto\F(U)$. Morphisms $u_V:\F(V)\to\G(V)$
-($V$ an arbitrary open subset of $X$) of topological ring bundles are therefore homologous
-morphisms of the underlying sheaves of rings, such that $u_V$ be \emph{continuous} for all
+with values in $\K$ is a sheaf of rings $U\mapsto\sheaf{F}(U)$ such that for any open $U$
+and any covering of $U$ by open sets $U_\a\su U$, the topology of the ring $\sheaf{F}(U)$
+is to be \emph{the least fine}, making the homomorpisms $\sheaf{F}(U)\to\sheaf{F}(U_\a)$ continuous. We will say in
+this case that $U\mapsto\sheaf{F}(U)$, considered as a sheaf of rings (without a topology), is
+\emph{underlying} the sheaf of topological rings $U\mapsto\sheaf{F}(U)$. Morphisms $u_V:\sheaf{F}(V)\to\sheaf{G}(V)$
+($V$ an arbitrary open subset of $X$) of sheaves of topological rings are therefore homomorphisms of the
+underlying sheaves of rings, such that $u_V$ be \emph{continuous} for all
 open $V\su X$; to distinguish them from any homomorphisms of the sheaves
 of the underlying rings, we will call them continuous homomorphisms of sheaves of topological rings.
-We have similar definitions and conventions for sheaves of topological spaces
-or topological groups.
+We have similar definitions and conventions for sheaves of topological spaces or topological groups.
 \end{env}
 
 \begin{env}{3.1.5}
 \oldpage{25}It is clear that for any category $\K$, if there is a presheaf (respectively a
-sheaf) $\F$ on $X$ with values in $\K$ and $U$ is an open set of $X$, the $\F(V)$ for
+sheaf) $\sheaf{F}$ on $X$ with values in $\K$ and $U$ is an open set of $X$, the $\sheaf{F}(V)$ for
 open $V\su U$ constitute a presheaf (or a sheaf) with values in $\K$, which we call
-the presheaf (or sheaf) \emph{induced} by $\F$ on $U$ and that we denote $\F|U$.
+the presheaf (or sheaf) \emph{induced} by $\sheaf{F}$ on $U$ and denote it by $\sheaf{F}|U$.
 
-For any morphism $u:\F\to\G$ of presheaves on $X$ with values in $\K$, we
-denote by $u|U$ the morphism $\F|U\to\G|U$ formed by the $u_V$ for $V\su U$.
+For any morphism $u:\sheaf{F}\to\sheaf{G}$ of presheaves on $X$ with values in $\K$, we
+denote by $u|U$ the morphism $\sheaf{F}|U\to\sheaf{G}|U$ formed by the $u_V$ for $V\su U$.
 \end{env}
 
 \begin{env}{3.1.6}
 Suppose now that the category $\K$ admits \emph{inductive limits} (T, 1.8);
-then, for any presheaf (and in particular any sheaf) $\F$ on $X$ with
-values in $\K$ and all $x\in X$, we can define the \emph{fiber} $\F_x$ as the object of $\K$ defined
-by the inductive limit of the $\F(U)$ with respect to the filtering set
-(for $\us$) of the open neighborhoods $U$ of $x$ in $X$, and for the morphisms $\rho_U^V:\F(V)\to\F(U)$.
-If $u:\F\to\G$ is a morphism of presheaves with values in $\K$, we define for all
-$x\in X$ the morphism $u_x:\F_x\to\G_x$ as the inductive limit of $u_U:\F(U)\to\G(U)$ with respect to all
-open neighborhoods of $x$; we thus define $\F_x$ as a covariant functor in $\F$, with values in $\K$, for
+then, for any presheaf (and in particular any sheaf) $\sheaf{F}$ on $X$ with
+values in $\K$ and all $x\in X$, we can define the \emph{stalk} $\sheaf{F}_x$ as the object of $\K$ defined
+by the inductive limit of the $\sheaf{F}(U)$ with respect to the filtering set
+(for $\us$) of the open neighborhoods $U$ of $x$ in $X$, and for the morphisms $\rho_U^V:\sheaf{F}(V)\to\sheaf{F}(U)$.
+If $u:\sheaf{F}\to\sheaf{G}$ is a morphism of presheaves with values in $\K$, we define for all
+$x\in X$ the morphism $u_x:\sheaf{F}_x\to\sheaf{G}_x$ as the inductive limit of $u_U:\sheaf{F}(U)\to\sheaf{G}(U)$ with respect to all
+open neighborhoods of $x$; we thus define $\sheaf{F}_x$ as a covariant functor in $\sheaf{F}$, with values in $\K$, for
 all $x\in X$.
 
 When $\K$ is further defined by a kind of structure with morphisms $\Sigma$,
-we call \emph{sections over $U$} of a \emph{sheaf} $\F$ with values in $\K$ the elements
-of $\F(U)$, and we write $\Gamma(U,\F)$ instead of $\F(U)$; for $s\in\Gamma(U,\F)$, $V$ an open set
+we call \emph{sections over $U$} of a \emph{sheaf} $\sheaf{F}$ with values in $\K$ the elements
+of $\sheaf{F}(U)$, and we write $\Gamma(U,\sheaf{F})$ instead of $\sheaf{F}(U)$; for $s\in\Gamma(U,\sheaf{F})$, $V$ an open set
 contained in $U$, we write $s|V$ instead of $\rho_V^U(s)$; for all $x\in U$, the canonical image
-of $s$ in $\F_x$ is the \emph{germ} of $s$ at the point $x$, denoted by $s_x$ (\emph{we will never replace
+of $s$ in $\sheaf{F}_x$ is the \emph{germ} of $s$ at the point $x$, denoted by $s_x$ (\emph{we will never replace
 the notation $s(x)$ in this sense,} this notation being reserved for another notion relating to sheaves
 which will be considered in this Treaty \eref{5.5.1}).
 
-If then $u:\F\to\G$ is a morphism of sheaves with values in $\K$, we will write $u(s)$
-instead of $u_V(s)$ for all $s\in\Gamma(U,\F)$.
+If then $u:\sheaf{F}\to\sheaf{G}$ is a morphism of sheaves with values in $\K$, we will write $u(s)$
+instead of $u_V(s)$ for all $s\in\Gamma(U,\sheaf{F})$.
 
-If $\F$ is a sheaf of commutative groups, or rings, or modules, we say
-that the set of $x\in X$ such that $\F_x\neq\{0\}$ is the \emph{support} of $\F$, denoted
-$\Supp(\F)$; this set is not necessarily closed in $X$.
+If $\sheaf{F}$ is a sheaf of commutative groups, or rings, or modules, we say
+that the set of $x\in X$ such that $\sheaf{F}_x\neq\{0\}$ is the \emph{support} of $\sheaf{F}$, denoted
+$\Supp(\sheaf{F})$; this set is not necessarily closed in $X$.
 
 When $\K$ is defined by a type of structure with morphisms, \emph{we
-systematically refrain from using the point of view of ``{\'e}tale spaces''} in terms of
+systematically refrain from using the point of view of ``{\'e}tal{\'e} spaces''} in terms of
 relating to sheaves with values in $\K$; in other words, we will never consider
 a sheaf as a topological space (nor even as the whole union of its
-fibers), and we will not consider also a morphism $u:\F\to\G$ of such sheaves
+fibers), and we will not consider also a morphism $u:\sheaf{F}\to\sheaf{G}$ of such sheaves
 on $X$ as a continuous map of topological spaces.
 \end{env}
 

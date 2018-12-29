@@ -7,87 +7,88 @@ We will restrict to the following categories $\K$ admitting
 \emph{projective limits} (generalized, that is, corresponding to not necessarily filtered preordered sets,
 cf. (T, 1.8)). Let $X$ be a topological space, $\mf{B}$ an open basis
 for the topology of $X$. We will call a \emph{presheaf on $\mf{B}$, with values in $\K$,} to be
-a family of objects $\F(U)\in\K$, corresponding to each $U\in\mf{B}$, and a family of morphisms
-$\rho_U^V:\F(V)\to\F(U)$ defined for any pair $(U,V)$ of elements of $\mf{B}$ such that $U\su V$,
+a family of objects $\sheaf{F}(U)\in\K$, corresponding to each $U\in\mf{B}$, and a family of morphisms
+$\rho_U^V:\sheaf{F}(V)\to\sheaf{F}(U)$ defined for any pair $(U,V)$ of elements of $\mf{B}$ such that $U\su V$,
 \oldpage{26}with the conditions $\rho_U^U=$ identity and $\rho_U^W=\rho_U^V\circ\rho_V^W$ if $U$, $V$, $W$ in
-$\mf{B}$ are such that $U\su V\su W$. We can associate a \emph{presheaf with values in} $\K$ : $U\mapsto\F(U)$
-in the ordinary sense, taking for all open $U$, $\F'(U)=\varprojlim\F(V)$, where $V$ runs through
+$\mf{B}$ are such that $U\su V\su W$. We can associate a \emph{presheaf with values in} $\K$ : $U\mapsto\sheaf{F}(U)$
+in the ordinary sense, taking for all open $U$, $\sheaf{F}'(U)=\varprojlim\sheaf{F}(V)$, where $V$ runs through
 the ordered set (for $\su$, \emph{not filtered} in general) of $V\in\mf{B}$ sets such that $V\su U$, since
-the $\F(V)$ form a projective system for the $\rho_V^W$ ($V\su W\su U$, $V\in\mf{B}$, $W\in\mf{B}$).
+the $\sheaf(V)$ form a projective system for the $\rho_V^W$ ($V\su W\su U$, $V\in\mf{B}$, $W\in\mf{B}$).
 Indeed, if $U$, $U'$ are two open sets of $X$ such that $U\su U'$, we define ${\rho'}_U^{U'}$ as the
-projective limit (for $V\su U$) of the canonical morphisms $\F'(U')\to\F(V)$, in other words
-the unique morphism y $\F'(U')\to\F'(U)$, which, when composed with the canonical morphisms
-$\F'(U)\to\F(V)$, gives the canonical morphisms $\F'(U')\to\F(V)$; the verification of
+projective limit (for $V\su U$) of the canonical morphisms $\sheaf{F}'(U')\to\sheaf{F}(V)$, in other words
+the unique morphism y $\sheaf{F}'(U')\to\sheaf{F}'(U)$, which, when composed with the canonical morphisms
+$\sheaf{F}'(U)\to\sheaf{F}(V)$, gives the canonical morphisms $\sheaf{F}'(U')\to\sheaf{F}(V)$; the verification of
 the transitivity of ${\rho'}_U^{U'}$ is then immediate. Moreover, if $U\in\mf{B}$,
-the canonical morphism $\F'(U)\to\F(U)$ is an isomorphism, allowing to identify these two objects
+the canonical morphism $\sheaf{F}'(U)\to\sheaf{F}(U)$ is an isomorphism, allowing to identify these two objects
 \footnote{
-If $X$ is a \emph{Noetherian} space, we can still define $\F'(U)$ and show that it is a presheaf (in the
+If $X$ is a \emph{Noetherian} space, we can still define $\sheaf{F}'(U)$ and show that it is a presheaf (in the
 ordinary sense) when one supposes only that $\K$ admits projective limits for \emph{finite} projective systems. Indeed,
 if $U$ is any open set of $X$, there is a \emph{finite} covering $(V_i)$ of $U$ formed by sets of $\mf{B}$; for every
 couple $(i,j)$ of indices, let $(V_{ijk})$ be a finite covering of $V_i\cap V_j$ formed by sets of $\mf{B}$. Let $I$ be the set
-of $i$ and triples $(i,j,k)$, ordered only by the relations $i>(i,j,k)$, $j>(i,j,k)$; we then take $\F'(U)$ to be
-the projective limit of the system of $\F(V_i)$ and $\F(V_{ijk})$; it is easy to verify that this does not depend on the
-coverings $(V_i)$ and $(V_{ijk})$ and that $U\mapsto\F'(U)$ is a presheaf.}.
+of $i$ and triples $(i,j,k)$, ordered only by the relations $i>(i,j,k)$, $j>(i,j,k)$; we then take $\sheaf{F}'(U)$ to be
+the projective limit of the system of $\sheaf{F}(V_i)$ and $\sheaf{F}(V_{ijk})$; it is easy to verify that this does not depend on the
+coverings $(V_i)$ and $(V_{ijk})$ and that $U\mapsto\sheaf{F}'(U)$ is a presheaf.}.
 \end{env}
 
 \begin{env}{3.2.2}
-For the presheaf $\F'$ thus defined to be a \emph{sheaf}, it is necessary and sufficient
-that the presheaf $\F$ on $\mf{B}$ satisfies the condition:\\
+For the presheaf $\sheaf{F}'$ thus defined to be a \emph{sheaf}, it is necessary and sufficient
+that the presheaf $\sheaf{F}$ on $\mf{B}$ satisfies the condition:\\
 
   (F$_0$) \emph{For any covering $(U_\a)$ of $U\in\mf{B}$ by sets $U_\a\in\mf{B}$
-  contained in $U$, and for any object $T\in\K$, the map which takes $f\in\Hom(T,\F(U))$
-  to the family $(\rho_{U_\a}^U\circ f)\in\prod_\a\Hom(T,\F(U_\a))$ is a bijection of
-  $\Hom(T,\F(U))$ on the set of all $(f_\a)$ such that $\rho_V^{U_\a}\circ f_\a=\rho_V^{U_\b}\circ f_\b$
+  contained in $U$, and for any object $T\in\K$, the map which takes $f\in\Hom(T,\sheaf{F}(U))$
+  to the family $(\rho_{U_\a}^U\circ f)\in\prod_\a\Hom(T,\sheaf{F}(U_\a))$ is a bijection of
+  $\Hom(T,\sheaf{F}(U))$ on the set of all $(f_\a)$ such that $\rho_V^{U_\a}\circ f_\a=\rho_V^{U_\b}\circ f_\b$
   for any pair of indices $(\a,\b)$ and any $V\in\mf{B}$ such that $V\su U_\a\cap U_\b$
-  \footnote{It also means that the pair formed by $\F(U)$ and the $\rho_\a=\rho_{U_\a}^U$
-  is a \emph{solution to the universal problem} defined in \eref{3.1.1} by the data of $A_\a=\F(U_\a)$,
-  $A_{\a\b}=\prod\F(V)$ (for $V\in\mf{B}$ such that $V\su U_\a\cap U_\b$) and
-  $\rho_{\a\b}=(\rho_V''):\F(U_\a)\to\prod\F(V)$ defined by the condition that for
+  \footnote{It also means that the pair formed by $\sheaf{F}(U)$ and the $\rho_\a=\rho_{U_\a}^U$
+  is a \emph{solution to the universal problem} defined in \eref{3.1.1} by the data of $A_\a=\sheaf{F}(U_\a)$,
+  $A_{\a\b}=\prod\sheaf{F}(V)$ (for $V\in\mf{B}$ such that $V\su U_\a\cap U_\b$) and
+  $\rho_{\a\b}=(\rho_V''):\sheaf{F}(U_\a)\to\prod\sheaf{F}(V)$ defined by the condition that for
   $V\in\mf{B}$, $V'\in\mf{B}$, $W\in\mf{B}$, $V\cup V'\su U_\a\cap U_\b$,
   $W\su V\cap V'$, $\rho_W^V\circ\rho_V''=\rho_W^{V'}\circ\rho_{V'}''$.}.}\\
 
 The condition is obviously necessary. To show that it is sufficient,
 consider first a second basis $\mf{B}'$ of the topology of $X$, \emph{contained in} $\mf{B}$, and
-show that if $\F''$ denotes the presheaf induced by the subfamily $(\F(V))_{V\in\mf{B}'}$, $\F''$ is
-\emph{canonically isomorphic} to $\F'$. Indeed, firstly the projective limit (for $V\in\mf{B}'$,
-$V\su U$) canonical morphisms ${\F'(U)\to\F(V)}$ is a morphism ${\F'(U)\to\F''(U)}$
+show that if $\sheaf{F}''$ denotes the presheaf induced by the subfamily $(\sheaf{F}(V))_{V\in\mf{B}'}$, $\sheaf{F}''$ is
+\emph{canonically isomorphic} to $\sheaf{F}'$. Indeed, firstly the projective limit (for $V\in\mf{B}'$,
+$V\su U$) canonical morphisms ${\sheaf{F}'(U)\to\sheaf{F}(V)}$ is a morphism ${\sheaf{F}'(U)\to\sheaf{F}''(U)}$
 for all open $U$. If $U\in\mf{B}$, this morphism is an isomorphism, because by hypothesis
-the canonical morphisms ${\F''(U)\to\F(V)}$ for $V\in\mf{B}'$, $V\su U$, factorize into
-${\F''(U)\to\F(U)\to\F(V)}$, and it is immediate to see that the composition of morphisms
-${\F(U)\to\F''(U)}$ and ${\F''(U)\to\F(U)}$ thus defined are the identities. This being so, for
-all open $U$, the morphisms ${\F''(U)\to\F''(W)=\F(W)}$ for $W\in\mf{B}$ and $W\su U$ satisfy
-the conditions characterizing the projective limit of $\F(W)$ ($W\in\mf{B}$, $W\su U$), which demonstrates
+the canonical morphisms ${\sheaf{F}''(U)\to\sheaf{F}(V)}$ for $V\in\mf{B}'$, $V\su U$, factorize into
+${\sheaf{F}''(U)\to\sheaf{F}(U)\to\sheaf{F}(V)}$, and it is immediate to see that the composition of morphisms
+${\sheaf{F}(U)\to\sheaf{F}''(U)}$ and ${\sheaf{F}''(U)\to\sheaf{F}(U)}$ thus defined are the identities. This being so, for
+all open $U$, the morphisms ${\sheaf{F}''(U)\to\sheaf{F}''(W)=\sheaf{F}(W)}$ for $W\in\mf{B}$ and $W\su U$ satisfy
+the conditions characterizing the projective limit of $\sheaf{F}(W)$ ($W\in\mf{B}$, $W\su U$), which demonstrates
 our assertion given the uniqueness of a projective limit up to isomorphism.
 
 This posed, let $U$ be any open set of $X$, $(U_\a)$ a covering of $U$ by
 the open sets contained in $U$, and $\mf{B}'$ the subfamily of $\mf{B}$ formed by the sets
 \oldpage{27}of $\mf{B}$ contained in at least $U_\a$; it is clear that $\mf{B}'$ is still a basis
-of the topology of $X$, so $\F'(U)$ (resp. $\F''(U_\a)$) is the projective limit of $\F(V)$ for $V\in\mf{B}'$
+of the topology of $X$, so $\sheaf{F}'(U)$ (resp. $\sheaf{F}''(U_\a)$) is the projective limit of $\sheaf{F}(V)$ for $V\in\mf{B}'$
 and $V\su U$ (resp., $V\su U_\a$), the axiom (F) is then immediately verified by virtue of the definition of the
 projective limit.
 
-When (F$_0$) is satisfied, we will say by abuse of language that the presheaf $\F$
-on the basis $\mf{B}$ is a sheaf.
+When (F$_0$) is satisfied, we will say by abuse of language that the presheaf $\sheaf{F}$ on the basis $\mf{B}$ is a sheaf.
 \end{env}
 
 \begin{env}{3.2.3}
-Let $\F$, $\G$ be two presheaves on a basis $\mf{B}$, with values in $\K$; we define a \emph{morphism}
-$u:\F\to\G$ as a family $(u_V)_{V\in\mf{B}}$ of morphisms $u_V:\F(V)\to\G(V)$ satisfying the usual
+Let $\sheaf{F}$, $\sheaf{G}$ be two presheaves on a basis $\mf{B}$, with values in $\K$; we define a \emph{morphism}
+$u:\sheaf{F}\to\sheaf{G}$ as a family $(u_V)_{V\in\mf{B}}$ of morphisms $u_V:\sheaf{F}(V)\to\sheaf{G}(V)$ satisfying the usual
 compatibility conditions with the restriction morphisms $\rho_V^W$. With the notation of \eref{3.2.1},
-we have a morphism $u':\F'\to\G'$ of (ordinary) presheaves by taking for $u_U'$ the projective limit
+we have a morphism $u':\sheaf{F}'\to\sheaf{G}'$ of (ordinary) presheaves by taking for $u_U'$ the projective limit
 of the $u_V$ for $V\in\mf{B}$ and $V\su U$; the verification of the compatibility conditions with
 the ${\rho'}_U^{U'}$ follows from the functorial properties of the projective limit.
 \end{env}
 
 \begin{env}{3.2.4}
-If the category $\K$ admits inductive limits, and if $\F$ is a presheaf on the basis $\mf{B}$, with
+If the category $\K$ admits inductive limits, and if $\sheaf{F}$ is a presheaf on the basis $\mf{B}$, with
 values in $\K$, for each $x\in X$ the neighborhoods of $x$ belonging to $\mf{B}$ form a cofinal set
-(for $\us$) in the set of neighborhoods of $x$, therefore, if $\F'$ is the (ordinary) presheaf
-corresponding to $\F$, the fiber $\F_x'$ is equal to $\varinjlim_{\mf{B}}\F(V)$ over the set of
-$V\in\mf{B}$ containing $x$. If $u:\F\to\G$ is morphism of presheaves on $\mf{B}$ with values in
-$\K$, $u':\F'\to\G'$ the corresponding morphism of ordinary presheaves, $u_x'$ is likewise the
-inductive limit of the morphisms $u_V:\F(V)\to\G(V)$ for $V\in\mf{B}$, $x\in V$.
+(for $\us$) in the set of neighborhoods of $x$, therefore, if $\sheaf{F}'$ is the (ordinary) presheaf
+corresponding to $\sheaf{F}$, the stalk $\sheaf{F}_x'$ is equal to $\varinjlim_{\mf{B}}\sheaf{F}(V)$ over the set of
+$V\in\mf{B}$ containing $x$. If $u:\sheaf{F}\to\sheaf{G}$ is morphism of presheaves on $\mf{B}$ with values in
+$\K$, $u':\sheaf{F}'\to\sheaf{G}'$ the corresponding morphism of ordinary presheaves, $u_x'$ is likewise the
+inductive limit of the morphisms $u_V:\sheaf{F}(V)\to\sheaf{G}(V)$ for $V\in\mf{B}$, $x\in V$.
 \end{env}
+
+\unsure{TODO}
 
 \end{document}
 
