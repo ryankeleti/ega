@@ -16,19 +16,25 @@
 \usepackage{calligra}
 \usepackage{mathtools}
 
-% font.
+% font
 \usepackage[charter]{mathdesign}
 
-% comment out the following for `regular' script.
-\usepackage{eucal}[mathcal]
+% uncomment out the following for euler scr/cal
+%\usepackage{eucal}[mathcal]
 
-% uncomment the following two lines for Euler font.
+% uncomment the following two lines for Euler font
 %\renewcommand{\rmdefault}{pplx}
 %\usepackage{eulervm}
 
 \allowdisplaybreaks[1]
 %\binoppenalty=9999
 %\relpenalty=9999
+
+% hyperref setup
+\hypersetup{
+  colorlinks,
+  allcolors=[rgb]{0,0.45,0},
+}
 
 % section titles
 \titleformat{\part}[block]{\huge}{\sc Chapter \thepart. ---\,\,}{0pt}{\filcenter\sc\Huge}[\setcounter{section}{0}]

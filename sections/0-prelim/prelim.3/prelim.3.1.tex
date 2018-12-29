@@ -2,7 +2,7 @@
 
 \begin{document}
 
-\begin{cx}{3.1.1}
+\begin{env}{3.1.1}
 Let $\K$ be a category, $(A_\a)_{\a\in I}$,
 $(A_{\a\b})_{(\a,\b)\in I\times I}$ two families of objects
 of $\K$ such that $A_{\b\a}=A_{\a\b}$,
@@ -16,9 +16,9 @@ family $(\rho_\a\circ f)\in\prod_\a\Hom(B,A_\a)$ is a \emph{bijection}
 of $\Hom(B,A)$ to the set of all $(f_\a)$ such that
 $\rho_{\a\b}\circ f_\a=\rho_{\b\a}\circ f_\b$ for any pair of
 indices $(\a,\b)$. If such a solution exists, it is unique up to an isomorphism.
-\end{cx}
+\end{env}
 
-\begin{cx}{3.1.2}
+\begin{env}{3.1.2}
 We will not recall the defintion of a \emph{presheaf} $U\mapsto\F(U)$ on a
 topological space $X$ with values in a category $\K$ (G, I, 1.9); we say that
 such a presheaf is a \emph{sheaf with values in} $\K$ if it satifies the following
@@ -38,9 +38,9 @@ axiom:\\
 
 Equivalently, we can say that, for each object $T$ of $\K$, the family
 $U\mapsto\Hom(T,\F(U))$ is a \emph{sheaf of sets}.
-\end{cx}
+\end{env}
 
-\begin{cx}{3.1.3}
+\begin{env}{3.1.3}
 Assume that $\K$ is the category defined by a ``type of structure
 with morphisms" $\Sigma$, the objects of $\K$ being the sets with structures
 of type $\Sigma$ and morphisms those of $\Sigma$. Suppose that the category $\K$ also satisfies
@@ -60,9 +60,9 @@ is a morphism $T\to\F(U_\a)$, which means that the structure of type $\Sigma$ on
 is the \emph{initial structure} for the morphisms $\rho_\a$ . Conversely, suppose a presheaf
 $U\mapsto\F(U)$ on $X$, with values in $\K$, is a \emph{sheaf of sets} and satisfies the previous
 condition; it is then clear that it satisfies (F), so it is a \emph{sheaf with values in} $\K$.
-\end{cx}
+\end{env}
 
-\begin{cx}{3.1.4}
+\begin{env}{3.1.4}
 When $\Sigma$ is a type of a group or ring structure, the fact that
 the presheaf $U\mapsto\F(U)$ with values in $\K$ is a sheaf of \emph{sets} leads \emph{ipso facto}
 that it is a sheaf with values in $\K$ (in other words, a sheaf of groups or rings
@@ -81,9 +81,9 @@ open $V\su X$; to distinguish them from any homomorphisms of the sheaves
 of the underlying rings, we will call them continuous homomorphisms of sheaves of topological rings.
 We have similar definitions and conventions for sheaves of topological spaces
 or topological groups.
-\end{cx}
+\end{env}
 
-\begin{cx}{3.1.5}
+\begin{env}{3.1.5}
 \oldpage{25}It is clear that for any category $\K$, if there is a presheaf (respectively a
 sheaf) $\F$ on $X$ with values in $\K$ and $U$ is an open set of $X$, the $\F(V)$ for
 open $V\su U$ constitute a presheaf (or a sheaf) with values in $\K$, which we call
@@ -91,9 +91,9 @@ the presheaf (or sheaf) \emph{induced} by $\F$ on $U$ and that we denote $\F|U$.
 
 For any morphism $u:\F\to\G$ of presheaves on $X$ with values in $\K$, we
 denote by $u|U$ the morphism $\F|U\to\G|U$ formed by the $u_V$ for $V\su U$.
-\end{cx}
+\end{env}
 
-\begin{cx}{3.1.6}
+\begin{env}{3.1.6}
 Suppose now that the category $\K$ admits \emph{inductive limits} (T, 1.8);
 then, for any presheaf (and in particular any sheaf) $\F$ on $X$ with
 values in $\K$ and all $x\in X$, we can define the \emph{fiber} $\F_x$ as the object of $\K$ defined
@@ -110,7 +110,7 @@ of $\F(U)$, and we write $\Gamma(U,\F)$ instead of $\F(U)$; for $s\in\Gamma(U,\F
 contained in $U$, we write $s|V$ instead of $\rho_V^U(s)$; for all $x\in U$, the canonical image
 of $s$ in $\F_x$ is the \emph{germ} of $s$ at the point $x$, denoted by $s_x$ (\emph{we will never replace
 the notation $s(x)$ in this sense,} this notation being reserved for another notion relating to sheaves
-which will be considered in this Treaty (5.5.1)).
+which will be considered in this Treaty \eref{5.5.1}).
 
 If then $u:\F\to\G$ is a morphism of sheaves with values in $\K$, we will write $u(s)$
 instead of $u_V(s)$ for all $s\in\Gamma(U,\F)$.
@@ -125,7 +125,7 @@ relating to sheaves with values in $\K$; in other words, we will never consider
 a sheaf as a topological space (nor even as the whole union of its
 fibers), and we will not consider also a morphism $u:\F\to\G$ of such sheaves
 on $X$ as a continuous map of topological spaces.
-\end{cx}
+\end{env}
 
 \end{document}
 

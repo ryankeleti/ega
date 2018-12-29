@@ -2,7 +2,7 @@
 
 \begin{document}
 
-\begin{cx}{1.4.1}
+\begin{env}{1.4.1}
 Let $S$, $T$ be two multiplicative subsets of a ring $A$ such that $S\su T$; there exists a canonical
 homomorphism $\rho_A^{T,S}$ (or simply $\rho^{T,S}$) of $S^{-1}A$ into  $T^{-1}A$, sending the
 element denoted $a/s$ of $S^{-1}A$ to the element denoted $a/s$ in $T^{-1}A$; we have
@@ -10,7 +10,7 @@ ${i_A^T=\rho_A^{T,S}\circ i_A^S}$. For every $A$-module $M$, there exists in the
 $S^{-1}A$-linear map of $S^{-1}M$ into $T^{-1}M$ (the latter considered as an $S^{-1}A$-module thanks
 to the homomorphism $\rho_A^{T,S}$), which matches the element $m/s$ of $S^{-1}M$ to the element $m/s$
 of $T^{-1}M$; we note that the map $\rho_M^{T,S}$, or simply $\rho^{T,S}$, and we still have
-$i_M^T=\rho_M^{T,S}\circ i_M^S$; in canonical identification (1.2.5), $\rho_M^{T,S}$ identifies with
+$i_M^T=\rho_M^{T,S}\circ i_M^S$; in canonical identification \emph{1.2.5}, $\rho_M^{T,S}$ identifies with
 $\rho_A^{T,S}\otimes 1$. The homomorphism $\rho_M^{T,S}$ is a \emph{functorial morphism} (or natural
 transformation) of the functor $S^{-1}M$ into the functor $T^{-1}M$, in other words, the diagram
 \[\begin{tikzcd}
@@ -22,10 +22,10 @@ $S^{-1}u$, because for $m\in M$ and $t\in T$, we have
 \[
   (T^{-1}u)(m/t)=(t/1)^{-1}\rho^{T,S}((S^{-1}u)(m/1)).
 \]
-\end{cx}
+\end{env}
 
-\begin{cx}{1.4.2}
-With the same notation, for two $A$-modules $M$, $N$, the diagrams (cf. (1.3.4) and (1.3.5))
+\begin{env}{1.4.2}
+With the same notation, for two $A$-modules $M$, $N$, the diagrams (cf. \eref{1.3.4} and \eref{1.3.5})
 \[\begin{tikzcd}
   (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\ar[r,"\sim"]\ar[d] & S^{-1}(M\otimes_A N)\ar[d] & &
   S^{-1}\Hom_A(M,N)\ar[r]\ar[d] &\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)\ar[d]\\
@@ -33,25 +33,25 @@ With the same notation, for two $A$-modules $M$, $N$, the diagrams (cf. (1.3.4) 
   T^{-1}\Hom_A(M,N)\ar[r] &\Hom_{T^{-1}A}(T^{-1}M,T^{-1}N)
 \end{tikzcd}\]
 are commutative.
-\end{cx}
+\end{env}
 
-\begin{cx}{1.4.3}
+\begin{env}{1.4.3}
 There is an important case in which the homomorphism $\rho^{T,S}$ is \emph{bijective},
 we know that then every element of $T$ is divisor of an element of $S$; we then identify by
 $\rho^{T,S}$ the modules $S^{-1}M$ and $T^{-1}M$. We say that $S$ is \emph{saturated} if every divisor
 in $A$ of an element of $S$ is in $S$; by replacing $S$ with  the set $T$ of all the divisors of the
 elements of $S$ (a set which is multiplicative and saturated), we see that we can always, if we wish,
 be limited to the consideration of modules of fractions $S^{-1}M$, where $S$ is saturated.
-\end{cx}
+\end{env}
 
-\begin{cx}{1.4.4}
+\begin{env}{1.4.4}
 If $S$, $T$, $U$ are three multiplicative subsets of $A$ such that $S\su T\su U$, we have
 \[
   \rho^{U,S}=\rho^{U,T}\circ\rho^{T,S}.
 \]
-\end{cx}
+\end{env}
 
-\begin{cx}{1.4.5}
+\begin{env}{1.4.5}
 Consider an \emph{increasing filtered family} $(S_\a)$ of multiplicative subsets of $A$
 (we write $\a\leq\b$ for $S_\a\su S_\b$), and let $S$ be the multiplicative subset
 $\bigcup_\a S_\a$; let us put $\rho_{\b\a}=\rho_A^{S_\b,S_\a}$ for $\a\leq\b$;
@@ -59,7 +59,7 @@ according to (1.4.4), the homomorphisms $\rho_{\b\a}$ define a ring $A'$ as the 
 of the inductive system of rings $(S_\a^{-1}A,\rho_{\b\a})$. Let $\rho_\a$ be the canonical
 map $S_\a^{-1}A\to A'$, and let $\varphi_\a=\rho_A^{S,S_\a}$; as
 $\varphi_\a=\varphi_\b\circ\rho_{\b\a}$ for $\a\leq\b$ according to
-(1.4.4), we can uniquely define a homomorphism $\varphi:A'\to S^{-1}A$ such that the diagram
+\eref{1.4.4}, we can uniquely define a homomorphism $\varphi:A'\to S^{-1}A$ such that the diagram
 \[\begin{tikzcd}
   & S_\a^{-1}A\ar[ddl,"\rho_\a"']\ar[d,very near end,"\rho_{\b\a}"]\ar[rdd,"\varphi_\a"]\\
   & S_\b^{-1}A\ar[ld,"\rho_\b"]\ar[rd,"\varphi_\b"'] & & (\a\leq\b)\\
@@ -76,9 +76,9 @@ The case for an $A$-module $M$ is treated likewise, and thus we have defined can
   \varinjlim S_\a^{-1}M\ar[r,"\sim"] & (\varinjlim S_\a)^{-1}M,
 \end{tikzcd}\]
 the second being \emph{functorial} in $M$.
-\end{cx}
+\end{env}
 
-\begin{cx}{1.4.6}
+\begin{env}{1.4.6}
 \oldpage{17}Let $S_1$, $S_2$ be two multiplicative subsets of $A$; then $S_1 S_2$ is also a multiplicative subset
 of $A$. Let us denote by $S_2'$ the canonical image of $S_2$ in the ring $S_1^{-1}A$, which is a multiplicative
 subset of this ring. For every $A$-module $M$ there is then a functorial isomorphism
@@ -86,7 +86,7 @@ subset of this ring. For every $A$-module $M$ there is then a functorial isomorp
   {S_2'}^{-1}(S_1^{-1}M)\ar[r,"\sim"] & (S_1 S_2)^{-1}M
 \end{tikzcd}\]
 which maps $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
-\end{cx}
+\end{env}
 
 \end{document}
 

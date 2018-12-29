@@ -1,10 +1,10 @@
 % commands and maths things
 
-% if you are not sure of a translation.
+% if you are not sure of a translation
 \newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
 \newcommand{\completelyunsure}{\unsure{[\ldots]}}
 
-% use to mark where original page starts.
+% use to mark where original page starts
 \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}}
 
 \newcommand{\asttri}{%
@@ -22,7 +22,7 @@
 % spacing 
 \newcommand{\NEXT}{\medskip\noindent}
 
-% nilradical.
+% nilradical
 \newcommand{\rad}{\mathfrak{R}}
 
 \newcommand{\RA}{\Longrightarrow}
@@ -38,44 +38,43 @@
 
 \newcommand{\mf}{\mathfrak}
 
-% for easy changes to style.
+% for easy changes to style
 \newcommand{\sheaf}{\mathcal}
 \newcommand{\bbold}{\mathbf}
 \newcommand{\cat}{\mathsf}
 
-% math bold letters.
+% math bold letters
 \newcommand{\R}{\bbold{R}}
 \newcommand{\C}{\bbold{C}}
 \newcommand{\N}{\bbold{N}}
 \newcommand{\Q}{\bbold{Q}}
 \newcommand{\Z}{\bbold{Z}}
 
-% residue field.
+% residue field
 \renewcommand{\k}{\bbold{k}}
 
-% category.
+% category
 \newcommand{\K}{\cat{K}}
 
-% structure sheaf.
+% common sheaves
 \renewcommand{\O}{\mathcal{O}}
-
-% common sheaves.
 \newcommand{\F}{\sheaf{F}}
 \newcommand{\G}{\sheaf{G}}
 
-% operators.
+% operators
 \newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
 \DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\Supp}{Supp}
 \DeclareMathOperator{\img}{im}
 \DeclareMathOperator{\Spec}{Spec}
 
-
 % environments and other things
 
-% currently this works as \begin{cx}[optional prop/def]{x.y.z}
+% currently this works as \begin{env}[optional prop/def]{x.y.z}
+% assigns label to (chapter number).x.y.z
 \makeatletter
-\newenvironment{cx}[2][\@nil]{%
+\newenvironment{env}[2][\@nil]{%
+    \label{\arabic{part}.#2}
     \def\tmp{#1}%
     \ifx\tmp\@nnil
         \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
@@ -83,4 +82,14 @@
         \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
     \fi}
 \makeatother
+
+% reference the label given by env; works as \eref{x.y.z}
+\newcommand{\eref}[1]{
+  \hyperref[\arabic{part}.#1]{(#1)}
+}
+
+% reference out of chapter; use as \eref{chapter number}{x.y.z}
+\newcommand{\erefc}[2]{
+  \hyperref[#1.#2]{(#2)}
+}
 
