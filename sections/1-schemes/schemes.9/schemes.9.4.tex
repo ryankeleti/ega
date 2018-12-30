@@ -18,4 +18,86 @@
     \end{enumerate}
 \end{env}
 
+If $j=(\psi,\theta)$ ($\psi$ being the injection $U\to X$ of underlying spaces), then by definition we have that $j_*(\sheaf{G})=\psi_*(\sheaf{G})$ for every $(\O_X|U)$-module $\sheaf{G}$, and, further, that $j^*(\sheaf{H})=\psi^*(\sheaf{H})=\sheaf{H}|U$ for every $\O_X$-module $\sheaf{H}$, by definition of the prescheme induced over an open subset.
+ So (i) is thus a particular case of (9.2.2,~\emph{a})); for the same reason, $j_*(j^*(\sheaf{F}))$ is quasi-coherent, and since $\overline{\sheaf{G}}$ is the inverse image of $j_*(\sheaf{G})$ by the homomorphism $\rho\colon\sheaf{F}\to j_*(j^*(\sheaf{F}))$, (ii) follows from (4.1.1).
+ 
+ Note that the hypothesis that the morphism $j\colon U\to X$ is quasi-compact holds whenever the open subset $U$ is \emph{quasi-compact} and $X$ is a \emph{scheme}: indeed, $U$ is then a union of finitely-many affine opens $U_i$, and for every affine open $V$ of $X$, $V\cap U_i$ is an affine open (5.5.6), and thus quasi-compact.
+ 
+ \begin{env}[Corollary]{9.4.3}
+     Let $X$ be a prescheme, $U$ a quasi-compact open subset of $X$ such that the injection morphism $j\colon U\to X$ is quasi-compact.
+     Suppose as well that every quasi-coherent $\O_X$-module is the inductive limit of its quasi-coherent sub-$\O_X$-modules of finite type \emph{(which will be the case if $X$ is an \emph{affine scheme})}.
+     Then let $\sheaf{F}$ be a quasi-coherent $\O_X$-module, and $\sheaf{G}$ a quasi-coherent sub-$(\O_X|U)$-module \emph{of finite type} of $\sheaf{F}|U$.
+     Then there exists a quasi-coherent sub-$\O_X$-module $\sheaf{G}'$ of $\sheaf{F}$ \emph{of finite type} such that $\sheaf{G}'|U=\sheaf{G}$.
+ \end{env}
+ 
+ Indeed, we have $\sheaf{G}=\overline{\sheaf{G}}|U$, and $\overline{\sheaf{G}}$ is quasi-coherent, from (9.4.2), and so the inductive limit of its quasi-coherent sub-$\O_X$-modules $\sheaf{H}_\lambda$ of finite type.
+ It follows that $\sheaf{G}$ is the inductive limit of the $\sheaf{H}_\lambda|U$, and thus equal to one of the $\sheaf{H}_\lambda|U$ since it is of finite type (\textbf{0},~5.2.3).
+ 
+ \begin{env}[Remark]{9.4.4}
+     Suppose that for \emph{every} affine open $U\subset X$, the injection morphism $U\to X$ is quasi-compact.
+     Then, if the conclusion of (9.4.3) holds for every affine open $U$ and every quasi-coherent sub-$(\O_X|U)$-module $\sheaf{G}$ of $\sheaf{F}|U$ of finite type, it follows\oldpage{175} that $\sheaf{F}$ is the inductive limit of its quasi-coherent sub-$\O_X$-modules of finite type.
+     Indeed, for every affine open $U\subset X$, we have that $\sheaf{F}|U=\widetilde{M}$, where $M$ is an $A(U)$-module, and since the latter is the inductive limit of its quasi-coherent sub-modules of finite type, $\sheaf{F}|U$ is the inductive limit of its sub-$(\O_X|U)$-modules of finite type (1.3.9).
+     But, by hypothesis, each of these sub-modules is induced on $U$ by a quasi-coherent sub-$\O_X$-module $\sheaf{G}_{\lambda,U}$ of $\sheaf{F}$ of finite type.
+     The finite sums of the $\sheaf{G}_{\lambda,U}$ are again quasi-coherent $\O_X$-modules of finite type, because the property is local, and the case where $X$ is affine was covered in (1.3.10); it is clear then that $\sheaf{F}$ is the inductive limit of these finite sums, whence our claim.
+ \end{env}
+ 
+ \begin{env}[Corollary]{9.4.5}
+     Under the hypotheses of (9.4.3), for every quasi-coherent $(\O_X|U)$-module $\sheaf{G}$ of finite type, there exists a quasi-coherent $\O_X$-module $\sheaf{G}'$ of finite type such that $\sheaf{G}'|U=\sheaf{G}$.
+ \end{env}
+ 
+ Since $\sheaf{F}=j_*(\sheaf{G})$ is quasi-coherent (9.4.2) and $\sheaf{F}|U=\sheaf{G}$, it suffices to apply (9.4.3) to $\sheaf{F}$.
+ 
+ \begin{env}[Lemma]{9.4.6}
+     Let $X$ be a prescheme, $L$ a well-ordered set, $(V_\lambda)_{\lambda\in L}$ a cover of $X$ by affine opens, and $U$ an open of $X$; for all $\lambda\in L$, we set $W_\lambda=\bigcup_{\mu<\lambda}V_\mu$.
+     Suppose that: (1) for every $\lambda\in L$, $V_\lambda\cap W_\lambda$ is quasi-compact; (2) the immersion morphism $U\to X$ is quasi-compact.
+     Then, for every quasi-coherent $\O_X$-module $\sheaf{F}$ and every quasi-coherent sub-$(\O_X|U)$-module $\sheaf{G}$ of $\sheaf{F}|U$ \emph{of finite type}, there exists a quasi-coherent sub-$\O_X$-module $\sheaf{G}'$ of $\sheaf{F}$ \emph{of finite type} such that $\sheaf{G}'|U=\sheaf{G}$.
+ \end{env}
+ 
+ Let $U_\lambda=U\cup W_\lambda$; we will define a family $(\sheaf{G}'_\lambda)$ by recurrence, where $\sheaf{G}'_\lambda$ is a quasi-coherent sub-$(\O_X|U_\lambda)$-module of $\sheaf{F}|U_\lambda$ of finite type, such that $\sheaf{G}'_\lambda|U_\mu=\sheaf{G}'_\mu$ for $\mu<\lambda$ and $\sheaf{G}'_\lambda|U=\sheaf{G}$.
+ The unique sub-$\O_X$-module $\sheaf{G}'$ of $\sheaf{F}$ such that $\sheaf{G}'|U_\lambda=\sheaf{G}'$ for all $\lambda\in L$ (\textbf{0},~3.3.1) gives us what we want.
+ So suppose that the $\sheaf{G}'_\mu$ are defined and have the preceding properties for $\mu<\lambda$; if $\lambda$ does not have a predecessor then we take for $\sheaf{G}'_\lambda$ the unique sub-$(\O_X|U_\lambda)$-module of $\sheaf{F}|U_\lambda$ such that $\sheaf{G}'_\lambda|U_\mu=\sheaf{G}'_\mu$ for all $\mu<\lambda$, which is allowed since the $U_\mu$ with $\mu<\lambda$ then form a cover of $U_\lambda$.
+ If, conversely, $\lambda=\mu+1$, then $U_\lambda=U_\mu\cup V_\mu$, and it suffices to define a quasi-coherent sub-$(\O_X|V_\mu)$-module $\sheaf{G}''_\mu$ of $\sheaf{F}|V_\mu$ of finite type such that
+ \begin{equation*}
+     \sheaf{G}''_\mu|(U_\mu\cap V_\mu)=\sheaf{G}'_\mu|(U_\mu\cap V_\mu);
+ \end{equation*}
+and then to take for $\sheaf{G}'_\lambda$ the sub-$(\O_X|U_\lambda)$-module of $\sheaf{F}|U_\lambda$ such that $\sheaf{G}'_\lambda|U_\mu=\sheaf{G}'_\mu$ and $\sheaf{G}'_\lambda|V_\mu=\sheaf{G}''_\mu$ (\textbf{0},~3.3.1).
+But, since $V_\mu$ is affine, the existence of $\sheaf{G}''_\mu$ is guaranteed by (9.4.3) as soon as we show that $U_\mu\cap V_\mu$ is quasi-compact; but $U_\mu\cap V_\mu$ is the union of $U\cap V_\mu$ and $W_\mu\cap V_\mu$, which are both quasi-compact by virtue of the hypothesis.
+
+
+\begin{env}[Theorem]{9.4.7}
+    Let $X$ be a prescheme, and $U$ an open of $X$.
+    Suppose that one of the following conditions is verified:
+    \begin{enumerate}[label=\normalfont\alph*)]
+        \item the underlying space of $X$ is locally Noetherian;
+        \item $X$ is a quasi-compact scheme and $U$ is a quasi-compact open.
+    \end{enumerate}
+    Then, for every quasi-coherent $\O_X$-module $\sheaf{F}$ and every quasi-coherent sub-$(\O_X|U)$-module $\sheaf{G}$ of $\sheaf{F}|U$ \emph{of finite type}, there exists a quasi-coherent sub-$\O_X$-module $\sheaf{G}'$ of $\sheaf{F}$ \emph{of finite type} such that $\sheaf{G}'|U=\sheaf{G}$.
+\end{env}
+
+Let\oldpage{176} $(V_\lambda)_{\lambda\in L}$ be a cover of $X$ by affine opens, with $L$ supposed finite in case \emph{b)}; since $L$ is equipped with the structure of a well-ordered set, it suffices to verify that the conditions of (9.4.6) are satisfied.
+It is clear in the case of \emph{a)}, as the spaces $V_\lambda$ are Noetherian.
+For case \emph{b)}, the $V_\lambda\cap\lambda_\mu$ are affine (5.5.6), and thus quasi-compact, and since $L$ is finite, $V_\lambda\cap W_\lambda$ is quasi-compact.
+Whence the theorem.
+
+\begin{env}[Corollary]{9.4.8}
+    Under the hypotheses of \emph{(9.4.7)}, for every quasi-coherent $(\O_X|U)$-module $\sheaf{G}$ of finite type, there exists a quasi-coherent $\O_X$-module $\sheaf{G}'$ of finite type such that $\sheaf{G}'|U=\sheaf{G}$.
+\end{env}
+
+It suffices to apply (9.4.7) to $\sheaf{F}=j_*(\sheaf{G})$, which is quasi-coherent (9.4.2) and such that $\sheaf{F}|U=\sheaf{G}$.
+
+\begin{env}[Corollary]{9.4.9}
+    Let $X$ be a prescheme whose underlying space is locally Noetherian, or a quasi-compact scheme.
+    Then every quasi-coherent $\O_X$-module is the inductive limit of its quasi-coherent sub-$\O_X$-modules of finite type.
+\end{env}
+
+This follows from (9.4.7) and the remark (9.4.4).
+
+\begin{env}[Corollary]{9.4.10}
+    Under the hypotheses of (9.4.9), if a quasi-coherent $\O_X$-module $\sheaf{F}$ is such that every quasi-coherent sub-$\O_X$-module of finite type of $\sheaf{F}$ is generated by its sections over $X$, then $\sheaf{F}$ is generated by its sections over $X$.
+\end{env}
+
+In fact, let $U$ be an affine open neighbourhood of a point $x\in X$, and let $s$ be a section of $\sheaf{F}$ over $U$; the sub-$\O_X$-module $\sheaf{G}$ of $\sheaf{F}|U$ generated by $s$ is quasi-coherent and of finite type, so there exists a quasi-coherent sub-$\O_X$-module $\sheaf{G}'$ of $\sheaf{F}$ of finite type such that $\sheaf{G}'|U=\sheaf{G}$ (9.4.7).
+By hypothesis, there is thus a finite number of sections $t_i$ of $\sheaf{G}'$ over $X$ and of sections $a_i$ of $\O_X$ over a neighbourhood $V\subset U$ of $x$ such that $s|V=\sum_i a_i(t_i|V)$, which proves the corollary.
+
 \end{document}
+
