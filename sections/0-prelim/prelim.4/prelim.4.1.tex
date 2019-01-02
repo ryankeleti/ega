@@ -2,6 +2,44 @@
 
 \begin{document}
 
+\begin{env}{4.1.1}
+A \emph{ringed space} (resp. topologically ringed space) is a couple $(X,\sheaf{A})$
+consisting of a topological space $X$ and a sheaf of rings (not necessarily commutative)
+(resp. of a sheaf of topological rings) $\sheaf{A}$ on $X$; we say that $X$ is the
+\emph{underlying} topological space of the ringed space $(X,\sheaf{A})$, and $\sheaf{A}$
+the \emph{structure sheaf}. The latter is denoted $\O_X$, and its stalk at a point
+$x\in X$ is denotes $\O_{X,x}$ or simply $\O_x$ when there is no chance of confusion.
+
+We denote by $1$ or $e$ the \emph{unit section} of $\O_X$ over $X$ (the unit element
+of $\Gamma(X,\O_X)$).
+
+As in this Treaty we will have to consider in particular sheaves of \emph{commutative}
+rings, it will be understood, when we speak of a ringed space $(X,\sheaf{A})$ without
+specification, that $\sheaf{A}$ is a sheaf of commutative rings.
+
+The ringed spaces with with not necessarily commutative structure sheaves
+(resp. the topologically ringed spaces) form a \emph{category}, where we define
+a \emph{morphism} $(X,\sheaf{A})\to(Y,\sheaf{B})$ as a couple $(\psi,\theta)=\Psi$
+consisting of a continuous map $\psi:X\to Y$ and a \emph{$\psi$-morphism}
+$\theta:\sheaf{G}\to\sheaf{F}$ (3.5.1) of sheaves of rings (resp. of sheaves of
+topological rings); the \emph{composition} of a second morphism
+$\Psi'=(\psi',\theta'):(Y,\sheaf{B})\to(Z,\sheaf{C})$ and of $\Psi$, denoted
+$\Psi''=\Psi'\circ\Psi$, is the morphism $(\psi'',\theta'')$ where $\psi''=\psi'\circ\psi$,
+and $\theta''$ is the composition of $\theta$ and $\theta'$ (equal to
+$\psi_\ast'(\theta)\circ\theta'$, cf. \eref{3.5.2}). For ringed spaces, remember that we
+then have ${\theta''}^\#=\theta^\#\circ\psi^\ast({\theta'}^\#)$ \eref{3.5.5}; therefore
+if ${\theta'}^\#$ and $\theta^\#$ are the \emph{injective} (resp. \emph{surjective}),
+the same is true of ${\theta''}^\#$, taking into account that $\psi_x\circ\rho_{\psi(x)}$
+is an isomorphism for all $x\in X$ \eref{3.7.2}. We verify immediately, thanks to the
+above, that when $\psi$ is an \emph{injective} continuous map and $\theta^\#$ is
+a \emph{surjective} homomophism of sheaves of rings, the morphism $(\psi,\theta)$ is
+a \emph{momomorphism} (T, 1.1) in the category of ringed spaces.
+
+By abuse of language, we will often replace $\psi$ by $\Psi$ in notation, for
+example in writing $\Psi^{-1}(U)$ in place of $\psi^{-1}(U)$ for a subset $U$ of $Y$,
+when the is no risk of confusion.
+\end{env}
+
 \unsure{TODO}
 
 \end{document}
