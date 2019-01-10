@@ -16,7 +16,7 @@ For a subspace $Y$ of a topological spave $X$ to be irreducible, it is necessary
 sufficient that its closure $\overline{Y}$ be irreducible. In particular, any subspace
 which is the closure $\overline{\{x\}}$ of a singleton is irreducible;
 we will express the relation $y\in\overline{\{x\}}$ (equivalent to
-$\overline{\{y\}}\su\overline{\{x\}}$) by saying that there is a \emph{specialization of}
+$\overline{\{y\}}\subset\overline{\{x\}}$) by saying that there is a \emph{specialization of}
 $x$ or that there is a \emph{generalization of} $y$. When there exists in an irreducible
 space $X$ a point $x$ such that $X=\overline{\{x\}}$, we will say that $x$ is a
 \emph{generic point} of $X$. Any nonempty open subset of $X$ then contains $x$, and any
@@ -46,15 +46,15 @@ to a single point (or, as we say by abuse of language, is a \emph{closed point})
 In an irreducible space $X$, every nonempty open subspace $U$ is irreducible, and if $X$
 admits a generic point $x$, $x$ is also a generic point of $U$.
 
-Let $(U_\a)$ be a cover (whose set of indices is nonempty) of a topological space $X$,
+Let $(U_\alpha)$ be a cover (whose set of indices is nonempty) of a topological space $X$,
 consisting of nonempty open sets; if $X$ is irreducible, it is necessary and sufficient that
-$U_\a$ is irreducible for all $\a$, and that $U_\a\cap U_\b\neq\emp$ for any
-$\a$, $\b$. The condition is clearly necessary; to the that it is sufficient, it suffices
-to prove that if $V$ is a nonempty open subset of $X$, then $V\cap U_\a$ is nonempty for all
-$\a$, since then $V\cap U_\a$ is dense in $U_\a$ for all $\a$, and consequently
+$U_\alpha$ is irreducible for all $\alpha$, and that $U_\alpha\cap U_\beta\neq\emp$ for any
+$\alpha$, $\beta$. The condition is clearly necessary; to the that it is sufficient, it suffices
+to prove that if $V$ is a nonempty open subset of $X$, then $V\cap U_\alpha$ is nonempty for all
+$\alpha$, since then $V\cap U_\alpha$ is dense in $U_\alpha$ for all $\alpha$, and consequently
 $V$ is dense in $X$. Now there is at least one index $\gamma$ such that $V\cap U_\gamma\neq\emp$,
-so $V\cap U_\gamma$ is dense in $U_\gamma$, and as for all $\alpha$, $U_\a\cap V_\a\neq\emp$,
-we also have $V\cap U_\a\cap U_\gamma\neq\emp$.
+so $V\cap U_\gamma$ is dense in $U_\gamma$, and as for all $\alpha$, $U_\alpha\cap V_\alpha\neq\emp$,
+we also have $V\cap U_\alpha\cap U_\gamma\neq\emp$.
 \end{env}
 
 \begin{env}{2.1.5}
@@ -73,7 +73,7 @@ If $Z_1$, $Z_2$ are two irreducible components distinct from the space $X$, $Z_1
 \unsure{\emph{rare}} set in each of the subspaces $Z_1$, $Z_2$; in particular, if an irreducible component
 of $X$ admits a generic point \eref{2.1.2} such a point can not belong to any other
 irreducible component. If $X$ has only a \emph{finite} number of irreducible 
-components $Z_i$ ($1\leq i\leq n$), and if, for each $i$,we put $U_i=Z_i\cap\mathsf{C}(\bigcup_{j\neq i} Z_j)$,
+components $Z_i$ ($1\leq i\leq n$), and if, for each $i$,we put $U_i=Z_i\cap\mathrm{C}(\bigcup_{j\neq i}Z_j)$,
 the $U_i$ are open, irreducible, \unsure{disjoint}, and their union is dense in $X$.
 Let $U$ be an open subset of a topological space $X$. If $Z$ is an irreducible subset of $X$
 that intersects with $U$, $Z\cap U$ is open and dense in $Z$, thus irreducible; conversely, for any irreducible
