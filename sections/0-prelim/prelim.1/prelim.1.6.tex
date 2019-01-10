@@ -9,9 +9,9 @@ $m\leq n$, let $\varphi_{nm}$ be the homomorphism $z\mapsto f^{n-m}z$ of $M_m$
 into $M_n$; it is immediate that $((M_n),(\varphi_{nm}))$ is an \emph{inductive system}
 of $A$-modules; let $N=\varinjlim M_n$ be the inductive limit of this system. We define
 a canonical $A$-isomorphism, \emph{functorial} of $N$ on $M_f$. For this reason, let us
-note that, for all $n$, $\theta_n:z\mapsto z/f^n$ is an $A$-homomorphism of $M=M_n$ into
+note that, for all $n$, $\theta_n\colon z\mapsto z/f^n$ is an $A$-homomorphism of $M=M_n$ into
 $M_f$, and it follows from the definitions that we have $\theta_n\circ\varphi{nm}=\theta_m$
-for $m\leq n$. There exists therefore an $A$-homomorphism $\theta:N\to M_f$ such that, if
+for $m\leq n$. There exists therefore an $A$-homomorphism $\theta\colon N\to M_f$ such that, if
 $\varphi_n$ denotes the canonical homomorphism $M_n\to N$, we have $\theta_n=\theta\circ\varphi_n$
 for all $n$. Since, by hypothesis, every element of $M_f$ is of the form $z/f^n$ for at least $n$,
 it is clear that $\theta$ is surjective. On the other hand, if $\theta(\varphi_n(z))=0$,
@@ -24,17 +24,21 @@ of $\theta$.
 Now write $M_{f,n}$, $\varphi_{nm}^f$ and $\varphi_n^f$ instead of $M_n$, $\varphi_{nm}$ and
 $\varphi_n$. Let $g$ be a second element of $A$. As $f^n$ divides $f^n g^n$, we have a functorial
 homomorphism
-\[\begin{tikzcd}
-  \rho_{fg,f}:M_f\ar[r] & M_{fg}\quad(1.4.1\text{ and }1.4.3);
-\end{tikzcd}\]
+\[
+  \begin{tikzcd}
+    \rho_{fg,f}\colon M_f\ar[r] & M_{fg}\quad(\eref{1.4.1}\text{ and }\eref{1.4.3});
+  \end{tikzcd}
+\]
 \oldpage{20}if we indentify $M_f$ and $M_{fg}$ with $\varinjlim M_{f,n}$ and $\varinjlim M_{fg,n}$
 respectively, $\rho_{fg,f}$ identifies with the \emph{inductive limit} of the maps
-$\rho_{fg,f}^n:M_{f,n}\to M_{fg,n}$, defined by $\rho_{fg,f}^n(z)=g^n z$. Indeed, this follows
+$\rho_{fg,f}^n\colon M_{f,n}\to M_{fg,n}$, defined by $\rho_{fg,f}^n(z)=g^n z$. Indeed, this follows
 immediately from the commutivity of the diagram
-\[\begin{tikzcd}
-  M_{f,n}\ar[r,"\rho_{fg,f}^n"]\ar[d,"\varphi_n^f"'] & M_{fg,n}\ar[d,"\varphi_n^{fg}"]\\
-  M_f\ar[r,"\rho_{fg,f}"] & M_{fg}.
-\end{tikzcd}\]
+\[
+  \begin{tikzcd}
+    M_{f,n}\ar[r,"\rho_{fg,f}^n"]\ar[d,"\varphi_n^f"'] & M_{fg,n}\ar[d,"\varphi_n^{fg}"]\\
+    M_f\ar[r,"\rho_{fg,f}"] & M_{fg}.
+  \end{tikzcd}
+\]
 \end{env}
 
 \end{document}

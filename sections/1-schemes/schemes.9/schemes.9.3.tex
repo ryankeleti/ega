@@ -14,7 +14,7 @@
 \begin{enumerate}[label=\normalfont(\roman*)]
     \item Since the underlying space of $X$ is quasi-compact, and thus the union of finitely-many affine opens $U_i$ with $\sheaf{L}|U_i$ is isomorphic to $\O_X|U_i$, we can reduce to the case where $X$ is affine and $\sheaf{L}=\O_X$.
     In this case, $f$ is identified with an element of $A(X)$, and we have that $X_f=D(f)$; $s$ is identified with an element of an $A(X)$-module $M$, and $s|X_f$ to the corresponding element of $M_f$, and the result is then trivial, recalling the definition of a module of fractions.
-    \item Again\oldpage{173}, $X$ is a finite union of affine opens $U_i$ ($1\leqslant i\leqslant r$) such that $\sheaf{L}|U_i\cong\O_X|U_i$, and for every $i$, $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ is identified (by the aforementioned isomorphism) with $(f|(U_i\cap X_f))^n(s|(U_i\cap X_f))$.
+    \item Again\oldpage{173}, $X$ is a finite union of affine opens $U_i$ ($1\leq i\leq r$) such that $\sheaf{L}|U_i\cong\O_X|U_i$, and for every $i$, $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ is identified (by the aforementioned isomorphism) with $(f|(U_i\cap X_f))^n(s|(U_i\cap X_f))$.
     We then know (1.4.1) that there exists a whole number $n>0$ such that, for all $i$, $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ extends to a section $s_i$ of $\sheaf{F}\otimes\sheaf{L}^{\otimes n}$ over $U_i$.
     Let $s_{i|j}$ be the restriction of $s_i$ to $U_i\cap U_j$; by definition we have that $s_{i|j}-s_{j|i}=0$ in $X_f\cap U_i\cap U_j$.
     But, if $X$ is a Noetherian space, then $U_i\cap U_j$ is quasi-compact; if $X$ is a scheme, then $U_i\cap U_j$ is an affine open (5.5.6), and so again quasi-compact.
@@ -36,10 +36,10 @@ The following corollaries give an interpretation of theorem (9.3.1) in a more al
     Then there exists a whole number $n>0$ such that $\sheaf{J}^n\sheaf{F}=0$.
 \end{env}
 
-Since $X$ is a union of finitely-many affine opens whose rings are Noetherian, we can suppose that $X$ is affine of Noetherian ring $A$; then $\sheaf{F}=\widetilde{M}$, where $M=\Gamma(X,\sheaf{F})$ is an $A$-module of finite type, and $\sheaf{J}=\widetilde{\mf{J}}$, where $\mf{J}=\Gamma(X,\sheaf{J})$ is an ideal of $A$ (1.4.1 and 1.5.1).
-Since $A$ is Noetherian, $\mf{J}$ admits a finite system of generators $f_i$ ($1\leqslant i\leqslant m$).
-By hypothesis, every section of $\sheaf{F}$ over $X$ is zero in each of the $D(f_i)$; if $s_j$ ($1\leqslant j\leqslant q$) are sections of $\sheaf{F}$ generating $M$, then there exists a whole number $h$, independent of $i$ and $j$, such that $f_i^h s_j=0$. (1.4.1), whence $f_i^h s=0$ for all $s\in M$.
-We thus conclude that if $n=mh$ then $\mf{J}^n M=0$, and so the corresponding $\O_X$-module $\sheaf{J}^n\sheaf{F}=\widetilde{\mf{J}^nM}$ (1.3.13) is zero.
+Since $X$ is a union of finitely-many affine opens whose rings are Noetherian, we can suppose that $X$ is affine of Noetherian ring $A$; then $\sheaf{F}=\widetilde{M}$, where $M=\Gamma(X,\sheaf{F})$ is an $A$-module of finite type, and $\sheaf{J}=\widetilde{\mathfrak{J}}$, where $\mathfrak{J}=\Gamma(X,\sheaf{J})$ is an ideal of $A$ (1.4.1 and 1.5.1).
+Since $A$ is Noetherian, $\mathfrak{J}$ admits a finite system of generators $f_i$ ($1\leq i\leq m$).
+By hypothesis, every section of $\sheaf{F}$ over $X$ is zero in each of the $D(f_i)$; if $s_j$ ($1\leq j\leq q$) are sections of $\sheaf{F}$ generating $M$, then there exists a whole number $h$, independent of $i$ and $j$, such that $f_i^h s_j=0$. (1.4.1), whence $f_i^h s=0$ for all $s\in M$.
+We thus conclude that if $n=mh$ then $\mathfrak{J}^n M=0$, and so the corresponding $\O_X$-module $\sheaf{J}^n\sheaf{F}=\widetilde{\mathfrak{J}^nM}$ (1.3.13) is zero.
 
 \begin{env}[Corollary]{9.3.5}
     With the hypotheses of {\normalfont(9.3.4)}, there exists a closed sub-prescheme $Y$ of $X$, whose underlying space is the support of $\O_X/\sheaf{J}$, such that, if $j\colon Y\to X$ is the canonical injection, then $\sheaf{F}=j_*(j^*(\sheaf{F}))$.
