@@ -4,16 +4,16 @@
 
 \begin{env}{9.4.1}
 Let\oldpage{174} $X$ be a topological space, $\sheaf{F}$ a
-sheaf of sets (resp. of groups, of rings) on $X$, $U$ an open subset of $X$,
+sheaf of sets (resp.of groups, of rings) on $X$, $U$ an open subset of $X$,
 $\psi\colon U\to X$ the canonical injection, and $\sheaf{G}$ a subsheaf of
-$\sheaf{F}|U=\psi^\ast(\sheaf{F})$.  Since $\psi_\ast$ is left exact,
+$\sheaf{F}|U=\psi^\ast(\sheaf{F})$. Since $\psi_\ast$ is left exact,
 $\psi_\ast(\sheaf{G})$ is a subsheaf of $\psi_\ast(\psi^\ast(\sheaf{F}))$; if we denote
 by $\rho$ the canonical homomorphism $\sheaf{F}\to\psi_\ast(\psi^\ast(\sheaf{F}))$
 (\textbf{0},~3.5.3), then we denote by $\overline{\sheaf{G}}$ the subsheaf
-$\rho^{-1}(\psi_\ast(\sheaf{G}))$ of $\sheaf{F}$.  It follows immediately from the
+$\rho^{-1}(\psi_\ast(\sheaf{G}))$ of $\sheaf{F}$. It follows immediately from the
 definitions that, for every open subset $V$ of $X$,
 $\Gamma(V,\overline{\sheaf{G}})$ consists of sections $s\in\Gamma(V,\sheaf{F})$
-whose restriction to $V\cap U$ is a section of $\sheaf{G}$ over $V\cap U$.  We
+whose restriction to $V\cap U$ is a section of $\sheaf{G}$ over $V\cap U$. We
 thus have that $\overline{\sheaf{G}}|U=\psi^\ast(\overline{\sheaf{G}})=\sheaf{G}$,
 and that $\overline{\sheaf{G}}$ is the \emph{biggest} subsheaf of $\sheaf{F}$
 that restricts to $\sheaf{G}$ over $U$; we say that $\overline{\sheaf{G}}$ is
@@ -22,17 +22,18 @@ subsheaf of $\sheaf{F}$.
 \end{env}
 
 \begin{env}[Proposition]{9.4.2}
-Let $X$ be a prescheme, $U$ an open subset of
-$X$ such that the canonical injection $j\colon U\to X$ is a quasicompact
-morphism \emph{(which will be the case for \emph{all} $U$ if the underlying
-space of $X$ is \emph{locally Noetherian} {\normalfont(\eref{6.6.4},~(i))})}.  Then:
+Let $X$ be a prescheme, $U$ an open subset of $X$ such that the canonical injection
+$j\colon U\to X$ is a quasicompact morphism \emph{(which will be the case for
+\emph{all} $U$ if the underlying space of $X$ is \emph{locally Noetherian}
+{\normalfont(\eref{6.6.4},~(i))})}. Then:
 \begin{itemize}
-  \item[(i)] For every quasicoherent $(\O_X|U)$-module $\sheaf{G}$, $j_\ast(\sheaf{G})$ is a quasicoherent
-$\O_X$-module, and $j_\ast(\sheaf{G})|U=j^\ast(j_\ast(\sheaf{G}))=\sheaf{G}$.
+  \item[(i)] For every quasicoherent $(\O_X|U)$-module $\sheaf{G}$, $j_\ast(\sheaf{G})$
+             is a quasicoherent $\O_X$-module, and
+             $j_\ast(\sheaf{G})|U=j^\ast(j_\ast(\sheaf{G}))=\sheaf{G}$.
   \item[(ii)] For every quasicoherent $\O_X$-module $\sheaf{F}$ and every quasicoherent
-$(\O_X|U)$-submodule $\sheaf{G}$, the canonical extension
-$\overline{\sheaf{G}}$ of $\sheaf{G}$ {\normalfont(9.4.1)} is a quasicoherent
-$\O_X$-submodule of $\sheaf{F}$.
+              $(\O_X|U)$-submodule $\sheaf{G}$, the canonical extension
+              $\overline{\sheaf{G}}$ of $\sheaf{G}$ {\normalfont(9.4.1)} is a
+              quasicoherent $\O_X$-submodule of $\sheaf{F}$.
 \end{itemize}
 \end{env}
 
@@ -40,7 +41,7 @@ If $j=(\psi,\theta)$ ($\psi$ being the injection $U\to X$ of underlying spaces),
 then by definition we have that $j_\ast(\sheaf{G})=\psi_\ast(\sheaf{G})$ for every
 $(\O_X|U)$-module $\sheaf{G}$, and, further, that
 $j^\ast(\sheaf{H})=\psi^\ast(\sheaf{H})=\sheaf{H}|U$ for every $\O_X$-module
-$\sheaf{H}$, by definition of the prescheme induced over an open subset.  So (i)
+$\sheaf{H}$, by definition of the prescheme induced over an open subset. So (i)
 is thus a particular case of (\eref{9.2.2},~\emph{a})); for the same reason,
 $j_\ast(j^\ast(\sheaf{F}))$ is quasicoherent, and since $\overline{\sheaf{G}}$ is the
 inverse image of $j_\ast(\sheaf{G})$ by the homomorphism $\rho\colon\sheaf{F}\to
@@ -55,35 +56,35 @@ thus quasicompact.
 \begin{env}[Corollary]{9.4.3}
 Let $X$ be a prescheme, $U$ a quasicompact open
 subset of $X$ such that the injection morphism $j\colon U\to X$ is
-quasicompact. Suppose as well that every quasicoherent $\O_X$-module is the
+quasicompact.Suppose as well that every quasicoherent $\O_X$-module is the
 inductive limit of its quasicoherent $\O_X$-submodules of finite type
-\emph{(which will be the case if $X$ is an \emph{affine scheme})}.  Then let
+\emph{(which will be the case if $X$ is an \emph{affine scheme})}. Then let
 $\sheaf{F}$ be a quasicoherent $\O_X$-module, and $\sheaf{G}$ a quasicoherent
-$(\O_X|U)$-submodule \emph{of finite type} of $\sheaf{F}|U$. Then there exists
+$(\O_X|U)$-submodule \emph{of finite type} of $\sheaf{F}|U$.Then there exists
 a quasicoherent $\O_X$-submodule $\sheaf{G}'$ of $\sheaf{F}$ \emph{of finite
 type} such that $\sheaf{G}'|U=\sheaf{G}$.
 \end{env}
  
 Indeed, we have $\sheaf{G}=\overline{\sheaf{G}}|U$, and $\overline{\sheaf{G}}$
 is quasicoherent, from \eref{9.4.2}, and so the inductive limit of its
-quasicoherent $\O_X$-submodules $\sheaf{H}_\lambda$ of finite type.  It
+quasicoherent $\O_X$-submodules $\sheaf{H}_\lambda$ of finite type. It
 follows that $\sheaf{G}$ is the inductive limit of the $\sheaf{H}_\lambda|U$,
 and thus equal to one of the $\sheaf{H}_\lambda|U$ since it is of finite type
 (\textbf{0},~5.2.3).
  
 \begin{env}[Remark]{9.4.4}
 Suppose that for \emph{every} affine open $U\subset
-X$, the injection morphism $U\to X$ is quasicompact. Then, if the conclusion
+X$, the injection morphism $U\to X$ is quasicompact.Then, if the conclusion
 of \eref{9.4.3} holds for every affine open $U$ and every quasicoherent
 $(\O_X|U)$-submodule $\sheaf{G}$ of $\sheaf{F}|U$ of finite type, it
 follows\oldpage{175} that $\sheaf{F}$ is the inductive limit of its
-quasicoherent $\O_X$-submodules of finite type. Indeed, for every affine open
+quasicoherent $\O_X$-submodules of finite type.Indeed, for every affine open
 $U\subset X$, we have that $\sheaf{F}|U=\widetilde{M}$, where $M$ is an
 $A(U)$-module, and since the latter is the inductive limit of its quasicoherent
 submodules of finite type, $\sheaf{F}|U$ is the inductive limit of its
-$(\O_X|U)$-submodules of finite type \eref{1.3.9}. But, by hypothesis, each of
+$(\O_X|U)$-submodules of finite type \eref{1.3.9}.But, by hypothesis, each of
 these submodules is induced on $U$ by a quasicoherent $\O_X$-submodule
-$\sheaf{G}_{\lambda,U}$ of $\sheaf{F}$ of finite type. The finite sums of the
+$\sheaf{G}_{\lambda,U}$ of $\sheaf{F}$ of finite type.The finite sums of the
 $\sheaf{G}_{\lambda,U}$ are again quasicoherent $\O_X$-modules of finite type,
 because the property is local, and the case where $X$ is affine was covered in
 \eref{1.3.10}; it is clear then that $\sheaf{F}$ is the inductive limit of these
@@ -104,7 +105,7 @@ Let $X$ be a prescheme, $L$ a well-ordered set,$(V_\lambda)_{\lambda\in L}$ a co
 of $X$ by affine opens, and $U$ an open of
 $X$; for all $\lambda\in L$, we set $W_\lambda=\bigcup_{\mu<\lambda}V_\mu$.
 Suppose that: (1) for every $\lambda\in L$, $V_\lambda\cap W_\lambda$ is
-quasicompact; (2) the immersion morphism $U\to X$ is quasicompact. Then, for
+quasicompact; (2) the immersion morphism $U\to X$ is quasicompact.Then, for
 every quasicoherent $\O_X$-module $\sheaf{F}$ and every quasicoherent
 $(\O_X|U)$-submodule $\sheaf{G}$ of $\sheaf{F}|U$ \emph{of finite type}, there
 exists a quasicoherent $\O_X$-submodule $\sheaf{G}'$ of $\sheaf{F}$ \emph{of
@@ -115,9 +116,9 @@ Let $U_\lambda=U\cup W_\lambda$; we will define a family $(\sheaf{G}'_\lambda)$
 by recurrence, where $\sheaf{G}'_\lambda$ is a quasicoherent
 $(\O_X|U_\lambda)$-submodule of $\sheaf{F}|U_\lambda$ of finite type, such that
 $\sheaf{G}'_\lambda|U_\mu=\sheaf{G}'_\mu$ for $\mu<\lambda$ and
-$\sheaf{G}'_\lambda|U=\sheaf{G}$.  The unique $\O_X$-submodule $\sheaf{G}'$ of
+$\sheaf{G}'_\lambda|U=\sheaf{G}$. The unique $\O_X$-submodule $\sheaf{G}'$ of
 $\sheaf{F}$ such that $\sheaf{G}'|U_\lambda=\sheaf{G}'$ for all $\lambda\in L$
-(\textbf{0},~3.3.1) gives us what we want.  So suppose that the $\sheaf{G}'_\mu$
+(\textbf{0},~3.3.1) gives us what we want. So suppose that the $\sheaf{G}'_\mu$
 are defined and have the preceding properties for $\mu<\lambda$; if $\lambda$
 does not have a predecessor then we take for $\sheaf{G}'_\lambda$ the unique
 $(\O_X|U_\lambda)$-submodule of $\sheaf{F}|U_\lambda$ such that
@@ -132,7 +133,7 @@ of $\sheaf{F}|V_\mu$ of finite type such that
 and then to take for $\sheaf{G}'_\lambda$ the
 $(\O_X|U_\lambda)$-submodule of $\sheaf{F}|U_\lambda$ such that
 $\sheaf{G}'_\lambda|U_\mu=\sheaf{G}'_\mu$ and
-$\sheaf{G}'_\lambda|V_\mu=\sheaf{G}''_\mu$ (\textbf{0},~3.3.1).  But, since
+$\sheaf{G}'_\lambda|V_\mu=\sheaf{G}''_\mu$ (\textbf{0},~3.3.1). But, since
 $V_\mu$ is affine, the existence of $\sheaf{G}''_\mu$ is guaranteed by \eref{9.4.3}
 as soon as we show that $U_\mu\cap V_\mu$ is quasicompact; but $U_\mu\cap
 V_\mu$ is the union of $U\cap V_\mu$ and $W_\mu\cap V_\mu$, which are both
@@ -155,45 +156,43 @@ such that $\sheaf{G}'|U=\sheaf{G}$.
 Let\oldpage{176} $(V_\lambda)_{\lambda\in L}$ be a cover of $X$ by affine opens,
 with $L$ supposed finite in case \emph{(b)}; since $L$ is equipped with the
 structure of a well-ordered set, it suffices to verify that the conditions of
-\eref{9.4.6} are satisfied. It is clear in the case of \emph{(a)}, as the spaces
-$V_\lambda$ are Noetherian. For case \emph{(b)}, the $V_\lambda\cap\lambda_\mu$
+\eref{9.4.6} are satisfied.It is clear in the case of \emph{(a)}, as the spaces
+$V_\lambda$ are Noetherian.For case \emph{(b)}, the $V_\lambda\cap\lambda_\mu$
 are affine \eref{5.5.6}, and thus quasicompact, and since $L$ is finite,
-$V_\lambda\cap W_\lambda$ is quasicompact. Whence the theorem.
+$V_\lambda\cap W_\lambda$ is quasicompact.Whence the theorem.
 
 \begin{env}[Corollary]{9.4.8}
-Under the hypotheses of \eref{9.4.7}, for every
-quasicoherent $(\O_X|U)$-module $\sheaf{G}$ of finite type, there exists a
-quasicoherent $\O_X$-module $\sheaf{G}'$ of finite type such that
-$\sheaf{G}'|U=\sheaf{G}$.
+Under the hypotheses of \eref{9.4.7}, for every quasicoherent $(\O_X|U)$-module
+$\sheaf{G}$ of finite type, there exists a quasicoherent $\O_X$-module $\sheaf{G}'$
+of finite type such that $\sheaf{G}'|U=\sheaf{G}$.
 \end{env}
 
 It suffices to apply \eref{9.4.7} to $\sheaf{F}=j_\ast(\sheaf{G})$, which is
 quasicoherent \eref{9.4.2} and such that $\sheaf{F}|U=\sheaf{G}$.
 
 \begin{env}[Corollary]{9.4.9}
-Let $X$ be a prescheme whose underlying space is
-locally Noetherian, or a quasicompact scheme.  Then every quasicoherent
-$\O_X$-module is the inductive limit of its quasicoherent $\O_X$-submodules of
-finite type.
+Let $X$ be a prescheme whose underlying space is locally Noetherian, or a
+quasicompact scheme. Then every quasicoherent $\O_X$-module is the inductive limit
+of its quasicoherent $\O_X$-submodules of finite type.
 \end{env}
 
 This follows from \eref{9.4.7} and the remark \eref{9.4.4}.
 
 \begin{env}[Corollary]{9.4.10}
-Under the hypotheses of \eref{9.4.9}, if a
-quasicoherent $\O_X$-module $\sheaf{F}$ is such that every quasicoherent
-$\O_X$-submodule of finite type of $\sheaf{F}$ is generated by its sections
-over $X$, then $\sheaf{F}$ is generated by its sections over $X$.
+Under the hypotheses of \eref{9.4.9}, if a quasicoherent $\O_X$-module $\sheaf{F}$
+is such that every quasicoherent $\O_X$-submodule of finite type of $\sheaf{F}$ is
+generated by its sections over $X$, then $\sheaf{F}$ is generated by its sections
+over $X$.
 \end{env}
 
 In fact, let $U$ be an affine open neighbourhood of a point $x\in X$, and let
 $s$ be a section of $\sheaf{F}$ over $U$; the $\O_X$-submodule $\sheaf{G}$ of
 $\sheaf{F}|U$ generated by $s$ is quasicoherent and of finite type, so there
 exists a quasicoherent $\O_X$-submodule $\sheaf{G}'$ of $\sheaf{F}$ of finite
-type such that $\sheaf{G}'|U=\sheaf{G}$ \eref{9.4.7}. By hypothesis, there is thus a
+type such that $\sheaf{G}'|U=\sheaf{G}$ \eref{9.4.7}.By hypothesis, there is thus a
 finite number of sections $t_i$ of $\sheaf{G}'$ over $X$ and of sections $a_i$
-of $\O_X$ over a neighbourhood $V\subset U$ of $x$ such that $s|V=\sum_i
-a_i(t_i|V)$, which proves the corollary.
+of $\O_X$ over a neighbourhood $V\subset U$ of $x$ such that
+$s|V=\sum_i a_i(t_i|V)$, which proves the corollary.
 
 \end{document}
 
