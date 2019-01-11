@@ -75,7 +75,7 @@
 
 % reference the label given by env; works as \eref{x.y.z}
 \newcommand{\eref}[1]{
-  \hyperref[\arabic{part}.#1]{(#1)}
+  \hspace*{-0.3em}\normalfont{(\hyperref[\arabic{part}.#1]{#1})}\hspace*{-0.3em}
 }
 
 % reference out of chapter; use as \eref{chapter number}{x.y.z}
