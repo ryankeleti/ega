@@ -133,19 +133,13 @@ identifies canonically with $\sheaf{G}$ (resp. $\sheaf{F}$). The functors $\shea
 $\Hom_{\sheaf{A}}(\sheaf{F},\sheaf{G})$ are \emph{left exact} in $\sheaf{F}$ and $\sheaf{G}$; more precisely,
 if we have an exact sequence of the form $0\to\sheaf{G}'\to\sheaf{G}\to\sheaf{G}''$, the sequence
 \[
-  \begin{tikzcd}
-    0\ar[r] &\sheafHom_{\sheaf{A}}(\sheaf{F},\sheaf{G}')\ar[r] &
-    \sheafHom_{\sheaf{A}}(\sheaf{F},\sheaf{G})\ar[r] &
-    \sheafHom_{\sheaf{A}}(\sheaf{F},\sheaf{G}'')
-  \end{tikzcd}
+  0\longrightarrow\sheafHom_{\sheaf{A}}(\sheaf{F},\sheaf{G}')\longrightarrow
+  \sheafHom_{\sheaf{A}}(\sheaf{F},\sheaf{G})\longrightarrow\sheafHom_{\sheaf{A}}(\sheaf{F},\sheaf{G}'')
 \]
 is exact, and if we have an exact sequence of the form $\sheaf{F}'\to\sheaf{F}\to\sheaf{F}''\to 0$, the sequence
 \[
-  \begin{tikzcd}
-    0\ar[r] &\sheafHom_{\sheaf{A}}(\sheaf{F}'',\sheaf{G})\ar[r] &
-    \sheafHom_{\sheaf{A}}(\sheaf{F},\sheaf{G})\ar[r] &
-    \sheafHom_{\sheaf{A}}(\sheaf{F}',\sheaf{G})
-  \end{tikzcd}
+  0\longrightarrow\sheafHom_{\sheaf{A}}(\sheaf{F}'',\sheaf{G})\longrightarrow
+  \sheafHom_{\sheaf{A}}(\sheaf{F},\sheaf{G})\longrightarrow\sheafHom_{\sheaf{A}}(\sheaf{F}',\sheaf{G})
 \]
 is exact, with the analagous properties for the functor $\Hom$.
 

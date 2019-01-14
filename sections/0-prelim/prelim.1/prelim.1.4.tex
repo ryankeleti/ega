@@ -78,10 +78,8 @@ there exists $s\in S$ such that $sa=0$; but there is a $\beta\geq\alpha$ such th
 consequently, as $\rho_\alpha(a/s_\alpha)=\rho_\beta(sa/ss_\alpha)=0$, we find that $\varphi$ is injective.
 The case for an $A$-module $M$ is treated likewise, and thus we have defined canonical isomorphisms
 \[
-  \begin{tikzcd}
-    \varinjlim S_\alpha^{-1}A\ar[r,"\sim"] & (\varinjlim S_\alpha)^{-1}A, & &
-    \varinjlim S_\alpha^{-1}M\ar[r,"\sim"] & (\varinjlim S_\alpha)^{-1}M,
-  \end{tikzcd}
+  \varinjlim S_\alpha^{-1}A\xrightarrow{\sim}(\varinjlim S_\alpha)^{-1}A,\quad
+  \varinjlim S_\alpha^{-1}M\xrightarrow{\sim}(\varinjlim S_\alpha)^{-1}M,
 \]
 the second being \emph{functorial} in $M$.
 \end{env}
@@ -91,9 +89,7 @@ the second being \emph{functorial} in $M$.
 of $A$. Let us denote by $S_2'$ the canonical image of $S_2$ in the ring $S_1^{-1}A$, which is a multiplicative
 subset of this ring. For every $A$-module $M$ there is then a functorial isomorphism
 \[
-  \begin{tikzcd}
-    {S_2'}^{-1}(S_1^{-1}M)\ar[r,"\sim"] & (S_1 S_2)^{-1}M
-  \end{tikzcd}
+  {S_2'}^{-1}(S_1^{-1}M)\xrightarrow{\sim}(S_1 S_2)^{-1}M
 \]
 which maps $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
 \end{env}
