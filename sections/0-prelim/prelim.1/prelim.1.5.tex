@@ -17,9 +17,7 @@ defined in \eref{1.4.1}.
 Under the hypothesis of \eref{1.5.1}, let $M$ be an $A$-module. There exists a canonical
 functorial morphism
 \[
-  \begin{tikzcd}
-    \sigma\colon{S'}^{-1}(M_{[\varphi]})\ar[r] & (S^{-1}M)_{[\varphi^{S'}]}
-  \end{tikzcd}
+  \sigma\colon{S'}^{-1}(M_{[\varphi]})\longrightarrow(S^{-1}M)_{[\varphi^{S'}]}
 \]
 of ${S'}^{-1}A'$-modules, sending each element $m/s'$ of ${S'}^{-1}(M_{[\varphi]})$ to
 the element $m/\varphi(s')$ of $(S^{-1}M)_{[\varphi^{S'}]}$; in fact, we verify
@@ -38,16 +36,12 @@ ${\sigma\colon{S'}^{-1}(A_{[\varphi]})\to S^{-1}A}$ is a homomorphism of ${S'}^{
 Let $M$ and $N$ be two $A$-modules; by composing the homomorphisms defined in \eref{1.3.4} and
 \eref{1.5.2}, we obtain a homomorphism
 \[
-  \begin{tikzcd}
-    (S^{-1}M\otimes_{S^{-1}A}S^{-1}N)_{[\varphi^{S'}]} & {S'}^{-1}((M\otimes A)_{[\varphi]})\ar[l]
-  \end{tikzcd}
+  (S^{-1}M\otimes_{S^{-1}A}S^{-1}N)_{[\varphi^{S'}]}\longleftarrow{S'}^{-1}((M\otimes A)_{[\varphi]})
 \]
 which is an isomorphism when $\varphi(S')=S$. Similarly, by composing the homorphisms in \eref{1.3.5}
 and \eref{1.5.2}, we obtain a homomorphism
 \[
-  \begin{tikzcd}
-    {S'}^{-1}((\Hom_A(M,N))_{[\varphi]})\ar[r] & (\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N))_{[\varphi^{S'}]}
-  \end{tikzcd}
+  {S'}^{-1}((\Hom_A(M,N))_{[\varphi]})\longrightarrow(\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N))_{[\varphi^{S'}]}
 \]
 which is an isomorphism when $\varphi(S')=S$ and $M$ admits a finite presentation.
 \end{env}
@@ -57,10 +51,8 @@ Let us now consider an $A'$-module $N'$, and form the tensor product $N'\otimes_
 which can be considered as an $A$-module by setting $a\cdot(n'\otimes b)=n'\otimes(ab)$. There is a
 functorial isomorphism of $S^{-1}A$-modules
 \[
-  \begin{tikzcd}
-    \tau\colon({S'}^{-1}N')\otimes_{{S'}^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}\ar[r,"\sim"] &
-    S^{-1}(N'\otimes_{A'}A_{[\varphi]})
-  \end{tikzcd}
+  \tau\colon({S'}^{-1}N')\otimes_{{S'}^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}
+  \xrightarrow{\sim}S^{-1}(N'\otimes_{A'}A_{[\varphi]})
 \]
 \oldpage{18}which maps the element $(n'/s')\otimes(a/s)$ to the element $(n'\otimes a)/(\varphi(s')s)$;
 indeed, we verify separately that when we replace $n'/s'$ (resp. $a/s$) by another expression of the
@@ -75,17 +67,13 @@ denoting by $\psi$ the composite homomorphism $a'\mapsto\varphi(a')/1$ of $A'$ i
 If $M'$ and $N'$ are two $A'$-modules, by composing the isomorphisms \eref{1.3.4} and \eref{1.5.4}, we obtain
 an isomorphism
 \[
-  \begin{tikzcd}
-    {S'}^{-1}M\otimes_{{S'}^{-1}A'}{S'}^{-1}N'\otimes_{{S'}^{-1}A'}S^{-1}A\ar[r,"\sim"] &
-    S^{-1}(M'\otimes_{A'}N'\otimes_{A'}A).
-  \end{tikzcd}
+  {S'}^{-1}M\otimes_{{S'}^{-1}A'}{S'}^{-1}N'\otimes_{{S'}^{-1}A'}S^{-1}A
+  \xrightarrow{\sim}S^{-1}(M'\otimes_{A'}N'\otimes_{A'}A).
 \]
 Likewise, if $M'$ admits a finite presentation, we have by \eref{1.3.5} and \eref{1.5.4} an isomorphism
 \[
-  \begin{tikzcd}
-    \Hom_{{S'}^{-1}A'}({S'}^{-1}M',{S'}^{-1}N')\otimes_{{S'}^{-1}A'}S^{-1}A\ar[r,"\sim"] &
-    S^{-1}(\Hom_{A'}(M',N')\otimes_{A'}A).
-  \end{tikzcd}
+  \Hom_{{S'}^{-1}A'}({S'}^{-1}M',{S'}^{-1}N')\otimes_{{S'}^{-1}A'}S^{-1}A
+  \xrightarrow{\sim}S^{-1}(\Hom_{A'}(M',N')\otimes_{A'}A).
 \]
 \end{env}
 

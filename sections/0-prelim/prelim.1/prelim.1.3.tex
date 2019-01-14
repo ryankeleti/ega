@@ -15,15 +15,11 @@ $S^{-1}M$ is a \emph{covariant functor in} $M$, of the category of $A$-modules i
 \begin{env}{1.3.2}
 The functor $S^{-1}M$ is \emph{exact}; in other words, if the following
 \[
-  \begin{tikzcd}
-    M\ar[r,"u"] & N\ar[r,"v"] & P
-  \end{tikzcd}
+  M\xrightarrow{u}N\xrightarrow{v}P
 \]
 is exact, so is the following
 \[
-  \begin{tikzcd}
-    S^{-1}M\ar[r,"S^{-1}u"] & S^{-1}N\ar[r,"S^{-1}v"] & S^{-1}P.
-  \end{tikzcd}
+  S^{-1}M\xrightarrow{S^{-1}u}S^{-1}N\xrightarrow{S^{-1}v}S^{-1}P.
 \]
 In particular, if $u\colon M\to N$ is injective (resp. surjective), the same is true for $S^{-1}u$;
 \oldpage{15} if $N$ and $P$ are two
@@ -39,9 +35,7 @@ $(S^{-1}M_\alpha,S^{-1}\varphi_{\beta\alpha})$ is an inductive system of $S^{-1}
 Expressing the $S^{-1}M_\alpha$ and $S^{-1}\varphi_{\beta\alpha}$ as tensor products (\eref{1.2.5} and \eref{1.3.1}),
 it follows from the permutability of tensor product and inductive limit operations that we have a canonical isomorphism
 \[
-  \begin{tikzcd}
-    S^{-1}\varinjlim M_\alpha\ar[r,"\sim"] &\varinjlim S^{-1}M_\alpha
-  \end{tikzcd}
+  S^{-1}\varinjlim M_\alpha\xrightarrow{\sim}\varinjlim S^{-1}M_\alpha
 \]
 which is further expressed by saying that the functor $S^{-1}M$ (in $M$) \emph{commutes with inductive limits}.
 \end{env}
@@ -49,9 +43,7 @@ which is further expressed by saying that the functor $S^{-1}M$ (in $M$) \emph{c
 \begin{env}{1.3.4}
 Let $M$, $N$ be two $A$-modules; there is a canonical \emph{functorial} isomorphism (in $M$ and $N$)
 \[
-  \begin{tikzcd}
-    (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\ar[r,"\sim"] & S^{-1}(M\otimes_A N)
-  \end{tikzcd}
+  (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\xrightarrow{\sim}S^{-1}(M\otimes_A N)
 \]
 which transforms $(m/s)\otimes(n/t)$ into $(m\otimes n)/st$.
 \end{env}
@@ -59,9 +51,7 @@ which transforms $(m/s)\otimes(n/t)$ into $(m\otimes n)/st$.
 \begin{env}{1.3.5}
 We also have a \emph{functorial} homomorphism (in $M$ and $N$)
 \[
-  \begin{tikzcd}
-    S^{-1}\Hom_A(M,N)\ar[r] & \Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)
-  \end{tikzcd}
+  S^{-1}\Hom_A(M,N)\longrightarrow\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)
 \]
 which, at $u/s$, corresponds to the homomorphism $m/t\mapsto u(m)/st$. When $M$ has a finite presentation, the
 preceding homomorphism is an \emph{isomorphism}: it is immediate when $M$ is of the form $A^r$, and goes on to the general
