@@ -1,0 +1,138 @@
+\usepackage[T1]{fontenc}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usepackage{epigraph}
+\usepackage[super]{nth}
+%\usepackage{titlesec}
+%\usepackage{titletoc}
+\usepackage{soul}
+\usepackage[hidelinks]{hyperref}
+\usepackage{calligra}
+\usepackage{mathtools}
+
+% font
+\usepackage[charter]{mathdesign}
+
+% uncomment out the following for euler scr/cal
+%\usepackage{eucal}[mathcal]
+
+% uncomment the following two lines for Euler font
+%\renewcommand{\rmdefault}{pplx}
+%\usepackage{eulervm}
+
+\allowdisplaybreaks[1]
+%\binoppenalty=9999
+%\relpenalty=9999
+
+% hyperref setup
+\hypersetup{
+  colorlinks,
+  allcolors=[rgb]{0,0.45,0},
+}
+
+% section titles
+%\titleformat{\part}[block]{\huge}{\sc Chapter \thepart. ---\,\,}{0pt}{\filcenter\sc\Huge}[\setcounter{section}{0}]
+%\titleformat{\section}[block]{\huge\bfseries}{\thesection.\,\,}{0pt}{\filcenter}[\setcounter{subsection}{0}]
+%\titleformat{\subsection}[hang]{\bfseries}{\thesubsection.\,\,}{0pt}{}
+
+% table of contents
+%\dottedcontents{part}[0em]{\sc}{2em}{1em}
+%\dottedcontents{section}[3em]{\bfseries}{2em}{1em}
+%\dottedcontents{subsection}[6em]{}{2.5em}{1em}
+
+% center the toc heading
+%\renewcommand{\contentsname}{\centering Contents}
+
+% make custom numbering of equations bold and in parentheses
+%\newtagform{bold}[\textbf]{(}{)}
+%\usetagform{bold}
+
+% commands and maths things
+
+% if you are not sure of a translation
+\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
+\newcommand{\completelyunsure}{\unsure{[\ldots]}}
+
+% use to mark where original page starts
+\newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}}
+
+\newcommand{\asttri}{%
+    \begin{center}
+        \begin{equation*}
+            \arraycolsep=1pt
+            \def\arraystretch{0.7}
+            \begin{array}{rcl}
+                &*&\\
+                *&&*
+            \end{array}
+        \end{equation*}
+    \end{center}\vspace{1.3em}}
+
+% spacing 
+\newcommand{\NEXT}{\medskip\noindent}
+
+% nilradical
+\newcommand{\rad}{\mathfrak{R}}
+
+\newcommand{\RA}{\Longrightarrow}
+\newcommand{\LA}{\Longleftarrow}
+
+\newcommand{\emp}{\varnothing}
+
+% for easy changes to style
+\newcommand{\sheaf}{\mathcal}
+\newcommand{\bbold}{\mathbf}
+\newcommand{\cat}{\mathsf}
+
+% math bold letters
+\newcommand{\R}{\bbold{R}}
+\newcommand{\C}{\bbold{C}}
+\newcommand{\N}{\bbold{N}}
+\newcommand{\Q}{\bbold{Q}}
+\newcommand{\Z}{\bbold{Z}}
+
+% residue field
+\renewcommand{\k}{\bbold{k}}
+
+% category
+\newcommand{\K}{\cat{K}}
+
+% structure sheaf
+\renewcommand{\O}{\sheaf{O}}
+
+% operators
+\newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\img}{im}
+\DeclareMathOperator{\Spec}{Spec}
+
+% environments and other things
+
+% currently this works as \begin{env}[optional prop/def]{x.y.z}
+% assigns label to (chapter number).x.y.z
+\makeatletter
+\newenvironment{env}[2][\@nil]{%
+    \label{\arabic{part}.#2}
+    \def\tmp{#1}%
+    \ifx\tmp\@nnil
+        \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
+    \else
+        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
+    \fi}
+\makeatother
+
+% reference the label given by env; works as \eref{x.y.z}
+\newcommand{\eref}[1]{
+  \hspace*{-0.3em}\normalfont{(\hyperref[\arabic{part}.#1]{#1})}\hspace*{-0.3em}
+}
+
+% reference out of chapter; use as \eref{chapter number}{x.y.z}
+\newcommand{\erefc}[2]{
+  \hyperref[#1.#2]{(#2)}
+}
+
