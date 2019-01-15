@@ -1,5 +1,6 @@
 
 \begin{env}{8.2.1}
+\label{env-1.8.2.1}
 Let $X$ be an \emph{integral} prescheme, and $R$ its field of
 rational functions, identical to the local ring of the generic point $a$ of $X$;
 for all $x\in X$, we know that $\O_x$ can be canonically identified with a
@@ -13,10 +14,11 @@ we have
 \end{env}
 
 \begin{env}[Proposition]{8.2.2}
+\label{prop-1.8.2.2}
 \oldpage{166}Let $X$ be an integral prescheme,
 and $R$ its field of rational fractions. For $X$ to be a scheme, it is
 necessary and sufficient that the relation ``$\O_x$ and $\O_y$ are allied''
-\eref{8.1.4}, for points $x,y$ of $X$, implies that $x=y$.
+\sref{lem}{8.1.4}, for points $x,y$ of $X$, implies that $x=y$.
 \end{env}
 
 Suppose that this condition is verified, and aim to show that $X$ is separated.
@@ -59,11 +61,12 @@ $\mathfrak{p}=\mathfrak{m}_x\cap A$ and $\mathfrak{q}=\mathfrak{m}_y\cap B$,
 then $A_\mathfrak{p}=\O_x$ and $B_\mathfrak{q}=\O_y$, and since $A_\mathfrak{p}$
 and $B_\mathfrak{q}$ are allied, there exists a prime ideal $\mathfrak{r}$ of
 $C$ such that $\mathfrak{p}=\mathfrak{r}\cap A$ and
-$\mathfrak{q}=\mathfrak{r}\cap B$ \eref{8.1.4}. But then there exists a point
+$\mathfrak{q}=\mathfrak{r}\cap B$ \sref{lem}{8.1.4}. But then there exists a point
 $z\in U\cap V$ such that $\mathfrak{r}=\mathfrak{m}_z\cap C$, since $U\cap V$ is
 affine, and so evidently $x=z$ and $y=z$, whence $x=y$.
 
 \begin{env}[Corollary]{8.2.3}
+\label{cor-1.8.2.3}
 Let $X$ be an integral scheme, and $x,y$ two
 points of $X$.In order that $x\in\overline{\{y\}}$, it is necessary and
 sufficient that $\O_x\subset\O_y$, or, equivalently, that every rational
@@ -74,21 +77,23 @@ The condition is evidently necessary because the domain of definition
 $\delta(f)$ of a rational function $f\in R$ is open; we now show that it is
 sufficient.If $\O_x\subset\O_y$, then there exists a prime ideal
 $\mathfrak{p}$ of $\O_x$ such that $\O_y$ dominates $(\O_x)_\mathfrak{p}$
-\eref{8.1.3}; but \eref{2.4.2} there exists $z\in X$ such that
+\sref{lem}{8.1.3}; but \eref{2.4.2} there exists $z\in X$ such that
 $x\in\overline{\{z\}}$ and $\O_z=(\O_x)_\mathfrak{p}$; since $\O_z$ and $\O_y$
-are allied, we have that $z=y$ by \eref{8.2.2}, whence the corollary.
+are allied, we have that $z=y$ by \sref{prop}{8.2.2}, whence the corollary.
 
 \begin{env}[Corollary]{8.2.4}
+\label{cor-1.8.2.4}
 If $X$ is an integral scheme then the map
 $x\to\O_x$ is injective; equivalently, if $x$ and $y$ are two distinct points of
 $X$, then there exists a rational function defined at one of these points but
 not the other.
 \end{env}
 
-\oldpage{167}This follows from \eref{8.2.3} and the axiom ($\mathrm{T}_0$)
+\oldpage{167}This follows from \sref{cor}{8.2.3} and the axiom ($\mathrm{T}_0$)
 \eref{2.1.4}.
 
 \begin{env}[Corollary]{8.2.5}
+\label{cor-1.8.2.5}
 Let $X$ be an integral scheme whose underlying
 space is Noetherian; letting $f$ run over the field $R$ of rational functions on
 $X$, the sets $\delta(f)$ generate the topology of $X$.
@@ -97,14 +102,15 @@ $X$, the sets $\delta(f)$ generate the topology of $X$.
 In fact, every closed subset of $X$ is thus a finite union of irreducible closed
 subsets, i.e.of the form $\overline{\{y\}}$ \eref{2.1.5}. But, if
 $x\not\in\overline{\{y\}}$, then there exists a rational function $f$ defined at
-$x$ but not at $y$ \eref{8.2.3}, or, equivalently, we have that $x\in\delta(f)$
+$x$ but not at $y$ \sref{cor}{8.2.3}, or, equivalently, we have that $x\in\delta(f)$
 and $\delta(f)$ is not contained in $\overline{\{y\}}$. The complement  of
 $\overline{\{y\}}$ is thus a union of sets of the form $\delta(f)$, and by
 virtue of the first remark, every open subset of $X$ is the union of finite
 intersections of open sets of the form $\delta(f)$.
 
 \begin{env}{8.2.6}
-Corollary~\eref{8.2.5} shows that the topology of $X$ is
+\label{env-1.8.2.6}
+Corollary~\sref{cor}{8.2.5} shows that the topology of $X$ is
 entirely characterised by the data of the local rings $(\O_x)_{x\in X}$ that
 have $R$ as their field of fractions. It amounts to the same to say that the
 closed subsets of $X$ are defined in the following manner: given a finite subset
@@ -119,6 +125,7 @@ Noetherian.
 \end{env}
 
 \begin{env}[Proposition]{8.2.7}
+\label{prop-1.8.2.7}
 Let $X,Y$ be two integral schemes, $f\colon X\to Y$ a dominant morphism
 \eref{2.2.6}, and $K$ (resp.$L$) the field of rational
 functions on $X$ (resp.$Y$). Then $L$ can be identified with a subfield of
@@ -135,11 +142,12 @@ corresponding to $f$ is the restriction of $\theta_a^\#$ to $\Gamma(U,\O_Y)$.
 So, for every $x\in X$, $\theta_x^\#$ is the restriction to $\O_{\psi(a)}$ of
 $\theta_a^\#$, and is thus a monomorphism. We also know that $\theta_x^\#$ is a
 local homomorphism, so, if we identify $L$ with a subfield of $K$ by
-$\theta_a^\#$, $\O_{\psi(x)}$ is dominated by $\O_x$ \eref{8.1.1}; it is also
+$\theta_a^\#$, $\O_{\psi(x)}$ is dominated by $\O_x$ \sref{lem}{8.1.1}; it is also
 the only local ring of $Y$ dominated by $\O_x$, since two local rings of $Y$
-that are allied are identical \eref{8.2.2}.
+that are allied are identical \sref{prop}{8.2.2}.
 
 \begin{env}[Proposition]{8.2.8}
+\label{prop-1.8.2.8}
 Let $X$ be an \emph{irreducible} prescheme; and
 $f\colon X\to Y$ a local immersion (\emph{resp.} a local isomorphism); and
 suppose further that $f$ is separated. Then $f$ is an immersion (\emph{resp.}
@@ -162,11 +170,11 @@ We can thus suppose that $f$ is a \emph{dominant} morphism, which leads to the
 fact that $Y$ is, itself, irreducible (\textbf{0},~2.1.5), and so $X$ and $Y$
 are both \emph{integral}. Further, the condition being local on $Y$, we can
 suppose that $Y$ is an affine scheme; since $f$ is separated, $X$ is a scheme
-(\eref{5.5.1},~(ii)), and we are finally at the hypotheses of \eref{8.2.7}.
+(\eref{5.5.1},~(ii)), and we are finally at the hypotheses of \sref{prop}{8.2.7}.
 Then, for all $x\in X$, $\theta_x^\#$ is injective; but the hypothesis that $F$
 is a local immersion implies that $\theta_x^\#$ is surjective \eref{4.2.2}, so
 $\theta_x^\#$ is bijective, or, equivalently (with the identification of
-\eref{8.2.7}) we have that $\O_{\psi(x)}=\O_x$. This implies, by \eref{8.2.4},
+\eref{8.2.7}) we have that $\O_{\psi(x)}=\O_x$. This implies, by \sref{cor}{8.2.4},
 that $\psi$ is an \emph{injective} map, which already proves the proposition
 when $f$ is a local isomorphism \eref{4.5.3}. When we suppose that $f$ is only
 a local immersion, for all $x\in X$ there exists an open neighbourhood $U$ of
@@ -176,4 +184,3 @@ subset of $V$. But $U$ is dense in $X$, so $\psi(U)$ is dense in $Y$ and
 \emph{a fortiori} in $V$, which proves that $\psi(U)=V$; since $\psi$ is
 injective, $\psi^{-1}(V)=U$ and this proves that $\psi$ is a homeomorphism from
 $X$ to $\psi(X)$.
-
