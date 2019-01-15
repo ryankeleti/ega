@@ -1,16 +1,18 @@
 
-\begin{env}[Definition]{2.2.1}
+\begin{envr}[Definition]{2.2.1}
+\label{defn-1.2.2.1}
 Given two preschemes $(X,\O_X)$, $(Y,\O_Y)$, we
 define a morphism (of preschemes) of $(X,\O_X)$ to $(Y,\O_Y)$ to be a morphism
 of ringed spaces $(\psi,\theta)$ such that, for all $x\in X$, $\theta_x^\#$ is a
 local homomorphism $\O_{\psi(x)}\to\O_x$.
-\end{env}
+\end{envr}
 
 \oldpage{99}By passing to quotients, the map $\O_{\psi(x)}\to\O_x$ gives us a
 monomorphism $\theta^x\colon k(\psi(x))\to k(x)$, which lets us consider $k(x)$
 as an \emph{extension} of the field $k(\psi(x))$.
 
 \begin{env}{2.2.2}
+\label{env-1.2.2.2}
 The composition $(\psi'',\theta'')$ of two morphisms
 $(\psi,\theta)$, $(\psi',\theta')$ of preschemes is also a morphism of
 preschemes, since it is given by the formula
@@ -20,15 +22,17 @@ will write $\Hom(X,Y)$ to mean the set of morphisms from a prescheme $X$ to a
 prescheme $Y$.
 \end{env}
 
-\begin{env}[Example]{2.2.3}
+\begin{envr}[Example]{2.2.3}
+\label{exm-1.2.2.3}
 If $U$ is an open subset of $X$ then the canonical
 injection (\textbf{0},~4.1.2) of the induced prescheme $(U,\O_X|U)$ into
 $(X,\O_X)$ is a morphism of preschemes; it is further a \emph{monomorphism} of
 ringed spaces (and \emph{a fortiori} a monomorphism of preschemes), which
 follows rapidly from (\textbf{0},~4.1.1).
-\end{env}
+\end{envr}
 
 \begin{env}[Proposition]{2.2.4}
+\label{prop-1.2.2.4}
 Let $(X,\O_X)$ be a prescheme, and $(S,\O_S)$ an
 affine scheme associated to a ring $A$. Then there exists a canonical bijective
 correspondence between morphisms of preschemes from $(X,\O_X)$ to $(S,\O_S)$ and
@@ -72,7 +76,8 @@ $\O_X$. In fact, it suffices to verify this formula when $X$ itself is affine,
 and then this is nothing but (1.2.2.2).
 
 \begin{env}[Proposition]{2.2.5}
-Under the hypotheses of \eref{2.2.4}, let
+\label{prop-1.2.2.5}
+Under the hypotheses of \sref{prop}{2.2.4}, let
 $\varphi\colon A\to\Gamma(X,\O_X)$ be a ring homomorphism,
 $f\colon(X,\O_X)\to(S,\O_S)$ the corresponding morphism of preschemes,
 $\sheaf{G}$ (resp. $\sheaf{F}$) an $\O_X$-module (resp. $\O_S$-module), and
@@ -83,10 +88,12 @@ $M\to(\Gamma(X,\sheaf{G}))_{[\varphi]}$.
 \end{env}
 
 Indeed, reasoning as in
-\eref{2.2.4}, we are rapidly led to the case where $X$ is affine, and the proposition
+\sref{prop}{2.2.4}, we are rapidly led to the case where $X$ is affine, and the proposition
 then follows from \eref{1.6.3} and \eref{1.3.8}.
 
-\begin{env}{2.2.6} We say that a morphism of preschemes
+\begin{env}{2.2.6}
+\label{env-1.2.2.6}
+We say that a morphism of preschemes
 $(\psi,\theta)\colon(X,\O_X)\to(Y,\O_Y)$ is \emph{open} (resp. \emph{closed})
 if, for all open subsets $U$ of $X$ (resp. all closed subsets $F$ of $X$),
 $\psi(U)$ is open (resp. $\psi(F)$ is closed) in $Y$. We say that
@@ -95,7 +102,9 @@ $(\psi,\theta)$ is \emph{dominant} if $\psi(X)$ is dense in $Y$, and
 conditions rely only on the continuous map $\psi$.
 \end{env}
 
-\begin{env}[Proposition]{2.2.7} Let
+\begin{env}[Proposition]{2.2.7}
+\label{prop-1.2.2.7}
+Let
 \begin{gather*}
   f=(\psi,\theta)\colon(X,\O_X)\to(Y,\O_Y);\\
   g=(\psi',\theta')\colon(Y,\O_Y)\to(Z,\O_Z)
@@ -115,6 +124,7 @@ $\psi''(\psi^{-1}(F))$ is closed in $Z$; but since $\psi$ is surjective,
 $\psi(\psi^{-1}(F))=F$, so $\psi''(\psi^{-1}(F))=\psi'(F)$, which proves (ii).
 
 \begin{env}[Proposition]{2.2.8}
+\label{prop-1.2.2.8}
 Let $f=(\psi,\theta)$ be a morphism
 $(X,\O_X)\to(Y,\O_Y)$, and $(U_\alpha)$ an open cover of $Y$. For $f$ to be
 open (resp. closed, surjective, dominant), it is necessary and sufficient that
@@ -130,6 +140,7 @@ if and only if each of the $F\cap U_\alpha$ are closed (resp. open, dense) in
 $U_\alpha$.
 
 \begin{env}{2.2.9}
+\label{env-1.2.2.9}
 Let $(X,\O_X)$ and $(Y,\O_Y)$ be two preschemes; suppose that
 $X$ (resp. $Y$) has a finite number of irreducible components $X_i$ (resp.
 $Y_i$) ($1\leqslant i\leqslant n$); let $\xi_i$ (resp. $\eta_i$) be the generic
@@ -144,12 +155,13 @@ is clear that a birational morphism is dominant (\textbf{0},~2.1.8), and so is
 surjective if it is also closed.
 \end{env}
 
-\begin{env}[Notational conventions]{2.2.10}
+\begin{envr}[Notational conventions]{2.2.10}
+\label{rmk-1.2.2.10}
 In all that follows, when there is
 no risk of confusion, we \emph{supress} the structure sheaf (resp. the morphism
 of structure sheaves) from the notation of a prescheme (resp. morphism of
 preschemes). If $U$ is an open subset of the underlying space $X$ of a
 prescheme, then whenever we speak of $U$ as a prescheme we always mean the
 induced prescheme on $U$.
-\end{env}
+\end{envr}
 

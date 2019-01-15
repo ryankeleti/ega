@@ -1,5 +1,6 @@
 
 \begin{env}{1.1.1}
+\label{env-1.1.1.1}
 \oldpage{80}\emph{Notation}. Let $A$ be a (commutative) ring, $M$ an $A$-module. In
 this chapter and the following, we will constantly use the following notations:
 \begin{itemize}
@@ -31,6 +32,7 @@ this chapter and the following, we will constantly use the following notations:
 \end{env}
 
 \begin{env}[Proposition]{1.1.2}
+\label{env-1.1.1.2}
 We have the following properties:
 \begin{itemize}
   \item[(i)] $V(0)=X$, $V(1)=\emp$.
@@ -55,6 +57,7 @@ the ``Zariski topology'' of $X$.}; unless expressely stated otherwise, always as
 $X=\Spec(A)$ with the spectral topology.
 
 \begin{env}{1.1.3}
+\label{env-1.1.1.3}
 \oldpage{81}For each subset $Y$ of $X$, we denote by $\mathfrak{j}(Y)$ the set of $f\in A$
 such that $f(y)=0$ for all $y\in Y$; equivalently, $\mathfrak{j}(Y)$ is the intersection of
 the prime ideals $\mathfrak{j}_y$ for $y\in Y$. It is clear that the relation $Y\subset Y'$
@@ -69,6 +72,7 @@ for each family $(Y_\lambda)$ of subsets of $X$. Finally we have
 \end{env}
 
 \begin{env}[Proposition]{1.1.4}
+\label{prop-1.1.1.4}
 \begin{itemize}
   \item[(i)] For each subset $E$ of $A$, we have $\mathfrak{j}(V(E))=\mathfrak{r}(E)$.
   \item[(ii)] For each subset $Y$ of $X$, $V(\mathfrak{j}(Y))=\overline{Y}$, the closure of $Y$ in $X$.
@@ -79,6 +83,7 @@ is closed and contains $Y$; conversely, if $Y\subset V(E)$, we have $f(y)=0$ for
 so $E\subset\mathfrak{j}(Y)$, $V(E)\supset V(\mathfrak{j}(Y))$, which proves (ii).
 
 \begin{env}[Corollary]{1.1.5}
+\label{cor-1.1.1.5}
 The closed subsets of $X=\Spec(A)$ and the ideals of $A$ equal to their radicals (otherwise the
 intersection of prime ideals) correspond bijectively by the \unsure{decent} maps $Y\mapsto\mathfrak{j}(Y)$,
 $\mathfrak{a}\mapsto V(\mathfrak{a})$; the union $Y_1\cup Y_2$ of two closed subsets corresponds to
@@ -87,6 +92,7 @@ corresponds to the radical of the sum of the $\mathfrak{j}(Y_\lambda)$.
 \end{env}
 
 \begin{env}[Corollary]{1.1.6}
+\label{cor-1.1.1.6}
 If $A$ is a Noetherian ring, $X=\Spec(A)$ is a Noetherian space.
 \end{env}
 Note that the converse of this corollary is false, as shown
@@ -100,11 +106,13 @@ of $A$, and it is easy to see that the topology induced on $Y$ by that of $X=\Sp
 is the initial topology of $Y$. Since $Y$ is not a Noetherian space, the same is true for $X$.
 
 \begin{env}[Corollary]{1.1.7}
+\label{cor-1.1.1.7}
 For each $x\in X$, the closure of $\{x\}$ is the set of $y\in X$ such that $\mathfrak{j}_x\subset\mathfrak{j}_y$.
 For $\{x\}$ to beclosed, it is necessary and sufficient that $\mathfrak{j}_x$ is maximal.
 \end{env}
 
 \begin{env}[Corollary]{1.1.8}
+\label{cor-1.1.1.8}
 The space $X=\Spec(A)$ is a Kolmogoroff space.
 \end{env}
 
@@ -112,11 +120,12 @@ If $x$, $y$ are two distinct points of $X$, we have either $\mathfrak{j}_x\not\s
 $\mathfrak{j}_y\not\subset\mathfrak{j}_x$, so one of the points $x$, $y$ does not belong to the closure of the other.
 
 \begin{env}{1.1.9}
+\label{env-1.1.1.9}
 According to proposition (\eref{1.1.2}, (iv)), for two elements $f$, $g$ of $A$, we have
 \[
   D(fg)=D(f)\cap D(g).\tag{1.1.9.1}
 \]
-Note also that the relation $D(f)=D(g)$ means, according to proposition (\eref{1.1.4}, (i))
+Note also that the relation $D(f)=D(g)$ means, according to proposition (\sref{prop}{1.1.4}, (i))
 and proposition (\eref{1.1.2}, (v)) that $\mathfrak{r}(f)=\mathfrak{r}(g)$, or that the minimal prime ideals
 containing $(f)$ and $(g)$ are the same; in particular, when $f=ug$, where $u$ is invertible.
 \end{env}
