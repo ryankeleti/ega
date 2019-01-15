@@ -13,12 +13,12 @@ We say that $X$ \emph{dominates} $S$ if $\varphi$ is a dominant morphism (2.2.6)
 
 \begin{env}{2.5.2}
     Let $X$ and $Y$ be two $S$-preschemes; we say that a morphism of preschemes $u\colon X\to Y$ is a \emph{morphism of preschemes over $S$} (or an \emph{$S$-morphism}) if the diagram
-    \begin{equation*}
-        \begin{tikzcd}
-            X \arrow[rr,"u"] \arrow[dr] & & Y \arrow[dl]\\
-            & S &
-        \end{tikzcd}
-    \end{equation*}
+    \[
+      \xymatrix{
+        X \ar[rr]^u \ar[dr] & & Y \ar[dl]\\
+        & S &
+      }
+    \]
     (where the diagonal arrows are the structure morphisms) is commutative: this ensures that, for all $s\in S$ and $x\in X$ over $s$, $u(x)$ is also above $s$.
 \end{env}
 

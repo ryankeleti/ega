@@ -67,22 +67,22 @@ a $\sheaf{A}$-module $\sheaf{C}$, given with a homomorphism of $\sheaf{A}$-modul
 $\varphi\colon\sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\to\sheaf{C}$ and a section $e$ over $X$,
 such that: \nth{1} the diagram
 \[
-  \begin{tikzcd}
+  \xymatrix{
     \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}
-    \ar[r,"\varphi\otimes 1"]\ar[d,"1\otimes\varphi"'] &
-    \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\ar[d,"\varphi"]\\
-    \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\ar[r,"\varphi"] & \sheaf{C}
-  \end{tikzcd}
+    \ar[r]^{\varphi\otimes 1}\ar[d]_{1\otimes\varphi} &
+    \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\ar[d]^\varphi\\
+    \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\ar[r]^\varphi & \sheaf{C}
+  }
 \]
 is commutative; \nth{2} for each open $U\subset X$ and each section $s\in\Gamma(U,\sheaf{C})$,
 we have $\varphi((e|U)\otimes s)=\varphi(s\otimes(e|U))=s$. We say that $\sheaf{C}$ is a
 commutative $\sheaf{A}$-algebra if the diagram
 \[
-  \begin{tikzcd}
-    \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\ar[rr,"\sigma"]\ar[rd,"\varphi"']
-    & & \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\ar[ld,"\varphi"]\\
-   & \sheaf{C}
-  \end{tikzcd}
+  \xymatrix{
+    \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\ar[rr]^\sigma\ar[rd]_\varphi
+    & & \sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}\ar[ld]^\varphi\\
+    & \sheaf{C}
+  }
 \]
 is commutative, $\sigma$ denoting the canonical symmetry (twist) map of the tensor product
 $\sheaf{C}\otimes_{\sheaf{A}}\sheaf{C}$.
