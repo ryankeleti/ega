@@ -12,10 +12,10 @@ $i_M^T=\rho_M^{T,S}\circ i_M^S$; in canonical identification \eref{1.2.5}, $\rho
 $\rho_A^{T,S}\otimes 1$. The homomorphism $\rho_M^{T,S}$ is a \emph{functorial morphism} (or natural
 transformation) of the functor $S^{-1}M$ into the functor $T^{-1}M$, in other words, the diagram
 \[
-  \begin{tikzcd}
-  S^{-1}M\ar[r,"S^{-1}u"]\ar[d,"\rho_M^{T,S}"'] & S^{-1}N\ar[d,"\rho_N^{T,S}"]\\
-  T^{-1}M\ar[r,"T^{-1}u"] & T^{-1}N
-  \end{tikzcd}
+  \xymatrix{
+  S^{-1}M\ar[r]^{S^{-1}u}\ar[d]_{\rho_M^{T,S}} & S^{-1}N\ar[d]^{\rho_N^{T,S}}\\
+  T^{-1}M\ar[r]^{T^{-1}u} & T^{-1}N
+  }
 \]
 \oldpage{16}is commutative, for every homomorphism $u\colon M\to N$; $T^{-1}u$ is entirely determined by
 $S^{-1}u$, because for $m\in M$ and $t\in T$, we have
@@ -28,12 +28,12 @@ $S^{-1}u$, because for $m\in M$ and $t\in T$, we have
 \label{env-0.1.4.2}
 With the same notation, for two $A$-modules $M$, $N$, the diagrams (cf. \eref{1.3.4} and \eref{1.3.5})
 \[
-  \begin{tikzcd}
-    (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\ar[r,"\sim"]\ar[d] & S^{-1}(M\otimes_A N)\ar[d] & &
+  \xymatrix{
+    (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\ar[r]^\sim \ar[d] & S^{-1}(M\otimes_A N)\ar[d] & &
     S^{-1}\Hom_A(M,N)\ar[r]\ar[d] & \Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)\ar[d]\\
-    (T^{-1}M)\otimes_{T^{-1}A}(T^{-1}N)\ar[r,"\sim"] & T^{-1}(M\otimes_A N) & &
+    (T^{-1}M)\otimes_{T^{-1}A}(T^{-1}N)\ar[r]^\sim & T^{-1}(M\otimes_A N) & &
     T^{-1}\Hom_A(M,N)\ar[r] & \Hom_{T^{-1}A}(T^{-1}M,T^{-1}N)
-  \end{tikzcd}
+  }
 \]
 are commutative.
 \end{env}
@@ -67,11 +67,11 @@ map $S_\alpha^{-1}A\to A'$, and let $\varphi_\alpha=\rho_A^{S,S_\alpha}$; as
 $\varphi_\alpha=\varphi_\beta\circ\rho_{\beta\alpha}$ for $\alpha\leq\beta$ according to
 \eref{1.4.4}, we can uniquely define a homomorphism $\varphi\colon A'\to S^{-1}A$ such that the diagram
 \[
-  \begin{tikzcd}
-    & S_\alpha^{-1}A\ar[ddl,"\rho_\alpha"']\ar[d,very near end,"\rho_{\beta\alpha}"]\ar[rdd,"\varphi_\alpha"]\\
-    & S_\beta^{-1}A\ar[ld,"\rho_\beta"]\ar[rd,"\varphi_\beta"'] & & (\alpha\leq\beta)\\
-    A' \ar[rr,"\varphi"'] & & S^{-1}A
-  \end{tikzcd}
+  \xymatrix{
+    & S_\alpha^{-1}A\ar[ddl]_{\rho_\alpha}\ar[d]^{\rho_{\beta\alpha}}\ar[rdd]^{\varphi_\alpha}\\
+    & S_\beta^{-1}A\ar[ld]^{\rho_\beta}\ar[rd]_{\varphi_\beta} & & (\alpha\leq\beta)\\
+    A' \ar[rr]_\varphi & & S^{-1}A
+  }
 \]
 is commutative. In fact, $\varphi$ is an \emph{isomorphism}; it is indeed immediate by construction that
 $\varphi$ is surjective. On the other hand, if $\rho_\alpha(a/s_\alpha)\in A'$ is such that

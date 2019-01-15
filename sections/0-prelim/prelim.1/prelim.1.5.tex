@@ -84,27 +84,27 @@ Likewise, if $M'$ admits a finite presentation, we have by \eref{1.3.5} and \ere
 Under the hypothesis of \eref{1.5.1}, let $T$ (resp. $T'$) be a second multiplicative subset of $A$
 (resp. $A'$) such that $S\subset T$ (resp. $S'\subset T'$) and $\varphi(T')\subset T$. Then the diagram
 \[
-  \begin{tikzcd}
-    {S'}^{-1}A'\ar[r,"\varphi^{S'}"]\ar[d,"\rho^{T',S'}"'] & S^{-1}A\ar[d,"\rho^{T,S}"]\\
-    {T'}^{-1}A'\ar[r,"\varphi^{T'}"] & T^{-1}A
-  \end{tikzcd}
+  \xymatrix{
+    {S'}^{-1}A'\ar[r]^{\varphi^{S'}}\ar[d]_{\rho^{T',S'}} & S^{-1}A\ar[d]^{\rho^{T,S}}\\
+    {T'}^{-1}A'\ar[r]^{\varphi^{T'}} & T^{-1}A
+  }
 \]
 is commutative. If $M$ is an $A$-module, the diagram
 \[
-  \begin{tikzcd}
-    {S'}^{-1}(M_{[\varphi]})\ar[r,"\sigma"]\ar[d,"\rho^{T',S'}"'] &
-    (S^{-1}M)_{[\varphi^{S'}]}\ar[d,"\rho^{T,S}"]\\
-    {T'}^{-1}(M_{[\varphi]})\ar[r,"\sigma"] & (T^{-1}M)_{[\varphi^{T'}]}
-  \end{tikzcd}
+  \xymatrix{
+    {S'}^{-1}(M_{[\varphi]})\ar[r]^\sigma\ar[d]_{\rho^{T',S'}} &
+    (S^{-1}M)_{[\varphi^{S'}]}\ar[d]^{\rho^{T,S}}\\
+    {T'}^{-1}(M_{[\varphi]})\ar[r]^\sigma & (T^{-1}M)_{[\varphi^{T'}]}
+  }
 \]
 is commutative. Finally, if $N'$ is an $A'$-module, the diagram
 \[
-  \begin{tikzcd}
-    ({S'}^{-1}N')\otimes_{{S'}^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}\ar[r,"\sim","\tau"'] \ar[d] &
-    S^{-1}(N'\otimes_{A'}A_{[\varphi]})\ar[d,"\rho^{T,S}"]\\
+  \xymatrix{
+    ({S'}^{-1}N')\otimes_{{S'}^{-1}A'}(S^{-1}A)_{[\varphi^{S'}]}\ar[r]^\sim_\tau\ar[d] &
+    S^{-1}(N'\otimes_{A'}A_{[\varphi]})\ar[d]^{\rho^{T,S}}\\
     ({T'}^{-1}N')\otimes_{{T'}^{-1}A'}(T^{-1}A)_{[\varphi^{T'}]}
-    \ar[r,"\sim","\tau"'] & T^{-1}(N'\otimes_{A'}A_{[\varphi]})
-  \end{tikzcd}
+    \ar[r]^\sim_\tau & T^{-1}(N'\otimes_{A'}A_{[\varphi]})
+  }
 \]
 is commutative, the left vertical arrow obtained by applying
 $\rho_{N'}^{T',S'}$ to ${S'}^{-1}N'$ and $\rho_A^{T,S}$ to $S^{-1}A$.
