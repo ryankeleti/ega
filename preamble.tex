@@ -113,11 +113,15 @@
 
 % environments and other things
 
+%
+% should make this one environment instead of two?
+%
+
 % currently this works as \begin{env}[optional prop/def]{x.y.z}
 % assigns label to (chapter number).x.y.z
 \makeatletter
 \newenvironment{env}[2][\@nil]{%
-    \label{\arabic{part}.#2}
+%    \label{\arabic{part}.#2}
     \def\tmp{#1}%
     \ifx\tmp\@nnil
         \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
@@ -126,13 +130,12 @@
     \fi}
 \makeatother
 
-% reference the label given by env; works as \eref{x.y.z}
-\newcommand{\eref}[1]{
-  \hspace*{-0.3em}\normalfont{(\hyperref[\arabic{part}.#1]{#1})}\hspace*{-0.3em}
+% use this for env definitions, examples, etc.
+\makeatletter
+\newenvironment{envr}[2]{%
+  \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
 }
+\makeatother
 
-% reference out of chapter; use as \eref{chapter number}{x.y.z}
-\newcommand{\erefc}[2]{
-  \hyperref[#1.#2]{(#2)}
-}
+\newcommand{\eref}[1]{\hyperref[env-\arabic{part}.#1]{(#1)}}
 
