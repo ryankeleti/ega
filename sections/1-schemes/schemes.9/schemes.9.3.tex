@@ -1,5 +1,6 @@
 
 \begin{env}[Theorem]{9.3.1}
+\label{thm-1.9.3.1}
 Let $X$ be a prescheme whose underlying space is Noetherian, or a scheme whose underlying
 space is quasicompact. Let $\sheaf{L}$ be an invertible $\O_X$-module
 {\normalfont(\textbf{0},~5.4.1)}, $f$ a section of $\sheaf{L}$ over $X$, $X_f$ the open
@@ -44,21 +45,24 @@ The following corollaries give an interpretation of theorem \eref{9.3.1} in a mo
 language:
 
 \begin{env}[Corollary]{9.3.2}
-With the hypotheses of \eref{9.3.1}, consider the graded ring $A_\ast=\Gamma_\ast(\sheaf{L})$
+\label{cor-1.9.3.2}
+With the hypotheses of \sref{thm}{9.3.1}, consider the graded ring $A_\ast=\Gamma_\ast(\sheaf{L})$
 and the graded $A_\ast$-module $M_\ast=\Gamma_\ast(\sheaf{L},\sheaf{F})$
-{\normalfont(\textbf{0},~5.4.6)}. If $f\in A_n$, where $n\in\Z$, then there is
+{\normalfont(\textbf{0},~5.4.6)}. If $f\in A_n$, where $n\in\bbold{Z}$, then there is
 a canonical isomorphism $\Gamma(X_f,\sheaf{F})\xrightarrow{\sim}((M_\ast)_f)_0$
 (\emph{the subgroup of the module of fractions $(M_\ast)_f$ consisting of elements of degree
 $0$}).
 \end{env}
 
 \begin{env}[Corollary]{9.3.3}
-Suppose that the hypotheses of \eref{9.3.1} are satisfied, and suppose further that
+\label{cor-1.9.3.3}
+Suppose that the hypotheses of \sref{thm}{9.3.1} are satisfied, and suppose further that
 $\sheaf{L}=\O_X$. Then, setting $A=\Gamma(X,\O_X)$ and $M=\Gamma(X,\sheaf{F})$,
 the $A_f$-module $\Gamma(X_f,\sheaf{F})$ is canonically isomorphic to $M_f$.
 \end{env}
 
 \begin{env}[Proposition]{9.3.4}
+\label{prop-1.9.3.4}
 Let $X$ be a Noetherian prescheme, $\sheaf{F}$ a coherent $\O_X$-module, and $\sheaf{J}$ a
 coherent sheaf of ideals in $\O_X$, such that the support of $\sheaf{F}$ is contained in that
 of $\O_X|\sheaf{J}$. Then there exists a whole number $n>0$ such that $\sheaf{J}^n\sheaf{F}=0$.
@@ -76,14 +80,15 @@ $s\in M$. We thus conclude that if $n=mh$ then $\mathfrak{J}^n M=0$, and so the 
 $\O_X$-module $\sheaf{J}^n\sheaf{F}=\widetilde{\mathfrak{J}^n M}$ \eref{1.3.13} is zero.
 
 \begin{env}[Corollary]{9.3.5}
-With the hypotheses of \eref{9.3.4}, there exists a closed subprescheme $Y$ of $X$, whose
+\label{cor-1.9.3.5}
+With the hypotheses of \sref{prop}{9.3.4}, there exists a closed subprescheme $Y$ of $X$, whose
 underlying space is the support of $\O_X/\sheaf{J}$, such that, if $j\colon Y\to X$ is the canonical
 injection, then $\sheaf{F}=j_\ast(j^\ast(\sheaf{F}))$.
 \end{env}
 
 First of all, note that the supports of $\O_X/\sheaf{J}$ and $\O_X/\sheaf{J}^n$ are the same,
 since, if $\sheaf{J}_x=\O_x$, then $\sheaf{J}_x^n=\O_x$, and we also have that
-$\sheaf{J}_x^n\subset\sheaf{J}_x$ for all $x\in X$. We can, thanks to \eref{9.3.4}, thus
+$\sheaf{J}_x^n\subset\sheaf{J}_x$ for all $x\in X$. We can, thanks to \sref{prop}{9.3.4}, thus
 suppose that $\sheaf{J}\sheaf{F}=0$; we can then take $Y$ to be the closed subprescheme of $X$
 defined by $\sheaf{J}$, and since $\sheaf{F}$ is then an $(\O_X/\sheaf{J})$-module, the conclusion
 follows immediately.

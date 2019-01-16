@@ -5,7 +5,8 @@ import re
 # provided by Pieter Belmans, https://pbelmans.ncag.info/
 #
 
-filename = "main.tex"
+path = "../WEB/"
+filename = path+"web.tex"
 
 # no I, no O
 CHARACTERS = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ"

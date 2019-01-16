@@ -1,50 +1,89 @@
 
-\begin{env}[Definition]{2.5.1}
-    Given a prescheme $S$, we say that the data of a prescheme $X$ and a morphism of preschemes $\varphi\colon X\to S$ defines a prescheme $X$ \emph{over the prescheme $S$}, or an \emph{$S$-prescheme}; we say that $S$ is the \emph{base prescheme} of the $S$-prescheme $X$.
-    The morphism $\varphi$ is called the \emph{structure morphism} of the $S$-prescheme $X$.
-    When $S$ is an affine scheme of ring $A$, we also say that $X$ endowed with $\varphi$ is a prescheme \emph{over the ring $A$} (or an \emph{$A$-prescheme}).
-\end{env}
+\begin{envr}[Definition]{2.5.1}
+\label{defn-1.2.5.1}
+Given a prescheme $S$, we say that the data of a
+prescheme $X$ and a morphism of preschemes $\varphi\colon X\to S$ defines a
+prescheme $X$ \emph{over the prescheme $S$}, or an \emph{$S$-prescheme}; we say
+that $S$ is the \emph{base prescheme} of the $S$-prescheme $X$. The morphism
+$\varphi$ is called the \emph{structure morphism} of the $S$-prescheme $X$.
+When $S$ is an affine scheme of ring $A$, we also say that $X$ endowed with
+$\varphi$ is a prescheme \emph{over the ring $A$} (or an \emph{$A$-prescheme}).
+\end{envr}
 
-It follows from (2.2.4) that the data of a prescheme over a ring $A$ is equivalent to the data of a prescheme $(X,\O_X)$ whose structure sheaf $\O_X$ is a sheaf of \emph{$A$-algebras}.
-\emph{An arbitrary prescheme can always be considered as a $\mathbb{Z}$-prescheme in a unique way.}
+It follows from \sref{prop}{2.2.4} that the data of a prescheme over a ring $A$ is
+equivalent to the data of a prescheme $(X,\O_X)$ whose structure sheaf $\O_X$ is
+a sheaf of \emph{$A$-algebras}. \emph{An arbitrary prescheme can always be
+considered as a $\mathbb{Z}$-prescheme in a unique way.}
 
-If $\varphi\colon X\to S$ is the structure morphism of an $S$-prescheme $X$, we say that a point $x\in X$ is \emph{over a point $s\in S$} if $\varphi(x)=s$.
-We say that $X$ \emph{dominates} $S$ if $\varphi$ is a dominant morphism (2.2.6).
+If $\varphi\colon X\to S$ is the structure morphism of an $S$-prescheme $X$, we
+say that a point $x\in X$ is \emph{over a point $s\in S$} if $\varphi(x)=s$.  We
+say that $X$ \emph{dominates} $S$ if $\varphi$ is a dominant morphism \eref{2.2.6}.
 
 \begin{env}{2.5.2}
-    Let $X$ and $Y$ be two $S$-preschemes; we say that a morphism of preschemes $u\colon X\to Y$ is a \emph{morphism of preschemes over $S$} (or an \emph{$S$-morphism}) if the diagram
-    \[
-      \xymatrix{
-        X \ar[rr]^u \ar[dr] & & Y \ar[dl]\\
-        & S &
-      }
-    \]
-    (where the diagonal arrows are the structure morphisms) is commutative: this ensures that, for all $s\in S$ and $x\in X$ over $s$, $u(x)$ is also above $s$.
+\label{env-1.2.5.2}
+Let $X$ and $Y$ be two $S$-preschemes; we say that a morphism
+of preschemes $u\colon X\to Y$ is a \emph{morphism of preschemes over $S$} (or
+an \emph{$S$-morphism}) if the diagram
+\[
+  \xymatrix{
+    X \ar[rr]^u \ar[dr] & & Y\ar[dl]\\
+    & S &
+  }
+\]
+(where the diagonal arrows are the structure morphisms) is
+commutative: this ensures that, for all $s\in S$ and $x\in X$ over $s$, $u(x)$
+is also above $s$.
 \end{env}
 
-From this definition it follows immediately that the composition of two $S$-morphisms is an $S$-morphism; $S$-preschemes thus form a \emph{category}.
+From this definition it follows immediately that the composition of two
+$S$-morphisms is an $S$-morphism; $S$-preschemes thus form a \emph{category}.
 
-We denote by $\Hom_S(X,Y)$ the set of $S$-morphisms from an $S$-prescheme $X$ to an $S$-prescheme $Y$; the identity morphism of an $S$-prescheme is denoted by $1_X$.
+We denote by $\Hom_S(X,Y)$ the set of $S$-morphisms from an $S$-prescheme $X$ to
+an $S$-prescheme $Y$; the identity morphism of an $S$-prescheme is denoted by
+$1_X$.
 
-When $S$ is an affine scheme of ring $A$, we will also say \emph{$A$-morphism} instead of $S$-morphism.
+When $S$ is an affine scheme of ring $A$, we will also say \emph{$A$-morphism}
+instead of $S$-morphism.
 
 \begin{env}{2.5.3}
-    \oldpage{104}If $X$ is an $S$-prescheme, and $v\colon X'\to X$ a morphism of preschemes, then the composition $X'\to X\to S$ endows $X'$ with the structure of an $S$-prescheme; in particular, every prescheme induced by an open set $U$ of $X$ can be considered as an $S$-prescheme by the canonical injection.
+\label{env-1.2.5.3}
+\oldpage{104}If $X$ is an $S$-prescheme, and $v\colon X'\to X$ a morphism of preschemes,
+then the composition $X'\to X\to S$ endows $X'$ with the structure of an $S$-prescheme;
+in particular, every prescheme induced by an open set $U$ of $X$ can be considered as an
+$S$-prescheme by the canonical injection.
 \end{env}
 
-If $u\colon X\to Y$ is an $S$-morphism of $S$-preschemes, then the restriction of $u$ to any prescheme induced by an open subset $U$ of $X$ is also an $S$-morphism $U\to Y$.
-Conversely, let $(U_\alpha)$ be an open cover of $X$, and for each $\alpha$ let $u_\alpha\colon U_\alpha\to Y$ be an $S$-morphism; if, for all pairs of indices $(\alpha,\beta)$, the restrictions of $u_\alpha$ and $u_\beta$ to $U_\alpha\cap U_\beta$ agree, then there exists an $S$-morphism $X\to Y$, and only one such that the restriction to each $U_\alpha$ is $u_\alpha$.
+If $u\colon X\to Y$ is an $S$-morphism of $S$-preschemes, then the restriction
+of $u$ to any prescheme induced by an open subset $U$ of $X$ is also an
+$S$-morphism $U\to Y$. Conversely, let $(U_\alpha)$ be an open cover of $X$,
+and for each $\alpha$ let $u_\alpha\colon U_\alpha\to Y$ be an $S$-morphism; if,
+for all pairs of indices $(\alpha,\beta)$, the restrictions of $u_\alpha$ and
+$u_\beta$ to $U_\alpha\cap U_\beta$ agree, then there exists an $S$-morphism
+$X\to Y$, and only one such that the restriction to each $U_\alpha$ is
+$u_\alpha$.
 
-If $u\colon X\to Y$ is an $S$-morphism such that $u(X)\subset V$, where $V$ is an open subset of $Y$, then $u$, considered as a morphism from $X$ to $V$, is also an $S$-morphism.
+If $u\colon X\to Y$ is an $S$-morphism such that $u(X)\subset V$, where $V$ is
+an open subset of $Y$, then $u$, considered as a morphism from $X$ to $V$, is
+also an $S$-morphism.
 
 \begin{env}{2.5.4}
-    Let $S'\to S$ be a morphism of preschemes; for all $S'$-preschemes, the composition $X\to S'\to S$ endows $X$ with the structure of an $S$-prescheme.
-    Conversely, suppose that $S'$ is the induced prescheme of an open subset of $S$; let $X$ be an $S$-prescheme and suppose that the structure morphism $f\colon X\to S$ is such that $f(X)\subset S'$; then we can consider $X$ as an $S'$-preschemes.
-    In this latter case, if $Y$ is another $S$-prescheme whose structure morphism sends the underlying space to $S'$, then every $S$-morphism from $X$ to $Y$ is also an $S'$-morphism.
+\label{env-1.2.5.4}
+Let $S'\to S$ be a morphism of preschemes; for all
+$S'$-preschemes, the composition $X\to S'\to S$ endows $X$ with the structure of
+an $S$-prescheme. Conversely, suppose that $S'$ is the induced prescheme of an
+open subset of $S$; let $X$ be an $S$-prescheme and suppose that the structure
+morphism $f\colon X\to S$ is such that $f(X)\subset S'$; then we can consider
+$X$ as an $S'$-preschemes. In this latter case, if $Y$ is another $S$-prescheme
+whose structure morphism sends the underlying space to $S'$, then every
+$S$-morphism from $X$ to $Y$ is also an $S'$-morphism.
 \end{env}
 
 \begin{env}{2.5.5}
-    If $X$ is an $S$-prescheme, with structure morphism $\varphi\colon X\to S$, we define an \emph{$S$-section of $X$} to be an $S$-morphism from $S$ to $X$, that is to say a morphism of preschemes $\psi\colon S\to X$ such that $\varphi\circ\psi$ is the identity on $S$.
-    We denote by $\Gamma(X/S)$ the set of $S$-sections of $X$.
+\label{env-1.2.5.5}
+If $X$ is an $S$-prescheme, with structure morphism
+$\varphi\colon X\to S$, we define an \emph{$S$-section of $X$} to be an
+$S$-morphism from $S$ to $X$, that is to say a morphism of preschemes
+$\psi\colon S\to X$ such that $\varphi\circ\psi$ is the identity on $S$.  We
+denote by $\Gamma(X/S)$ the set of $S$-sections of $X$.
 \end{env}
 

@@ -1,5 +1,6 @@
 
 \begin{env}[Proposition]{9.5.1}
+\label{prop-1.9.5.1}
 Let $f\colon X\to Y$ be a morphism of preschemes
 such that $f_\ast(\O_X)$ is a quasicoherent $\O_Y$-module (which will be the
 case if $f$ is quasicompact \unsure{and separated, or} $X$ is locally Noetherian
@@ -12,10 +13,11 @@ to $X$}).
 More precisely:
 
 \begin{env}[Corollary]{9.5.2}
-Under the conditions of \eref{9.5.1}, let
+\label{cor-1.9.5.2}
+Under the conditions of \sref{prop}{9.5.1}, let
 $f=(\psi,\theta)$, and let $\sheaf{J}$ be the (quasicoherent) kernel of the
 homomorphism $\theta\colon\O_Y\to f_\ast(\O_X)$. Then the closed subprescheme
-$Y'$ of $Y$ defined by $\sheaf{J}$ satisfies the conditions of \eref{9.5.1}.
+$Y'$ of $Y$ defined by $\sheaf{J}$ satisfies the conditions of \sref{prop}{9.5.1}.
 \end{env}
 
 Since the functor $\psi^\ast$ is exact, the canonical factorisation
@@ -37,12 +39,15 @@ $\theta$ should factorise as $\O_y\to\O_y/\sheaf{J}'_y\to(\psi_\ast(\O_X))_y$,
 which by definition leads to $\sheaf{J}'_y\subset\sheaf{J}_y$, and thus $X'$ is
 a closed subprescheme of $X''$ \eref{4.1.10}.
 
-\begin{env}[Definition]{9.5.3} Whenever there exists a smaller subprescheme $Y'$
+\begin{envr}[Definition]{9.5.3}
+\label{defn-1.9.5.3}
+Whenever there exists a smaller subprescheme $Y'$
 of $Y$ such that the canonical injection $j\colon Y'\to Y$ \unsure{?} $f$, we
 say that $Y'$ is the \emph{closed image} prescheme of $X$ by the morphism $f$.
-\end{env}
+\end{envr}
 
 \begin{env}[Proposition]{9.5.4}
+\label{prop-1.9.5.4}
 If $f_\ast(\O_X)$ is a quasicoherent $\O_Y$-module, then the underlying space of
 the closed image of $X$ by $f$ is the closure $\overline{f(X)}$ in $Y$.
 \end{env}
