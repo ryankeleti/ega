@@ -1,29 +1,24 @@
 
-% if you are not sure of a translation
-\newcommand{\unsure}[2][]{\underline{#2}\marginpar{#1}}
-\newcommand{\completelyunsure}{\unsure{[\ldots]}}
-
-% use to mark where original page starts
-\newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}}
+\usepackage{ega-pre}
 
 % nilradical
-\newcommand{\rad}{\mathfrak{R}}
+\def\rad{\mathfrak{R}}
 
-\newcommand{\emp}{\varnothing}
+\def\emp{\varnothing}
 
 % for easy changes to style
-\newcommand{\sheaf}{\mathcal}
-\newcommand{\bbold}{\mathbf}
-\newcommand{\cat}{\mathsf}
+\def\sheaf{\mathcal}
+\def\bbold{\mathbf}
+\def\cat{\mathsf}
 
 % residue field
-\renewcommand{\k}{\bbold{k}}
+\def\k{\bbold{k}}
 
 % category
-\newcommand\K{\cat{K}}
+\def\K{\cat{K}}
 
 % structure sheaf
-\renewcommand{\O}{\sheaf{O}}
+\def\O{\sheaf{O}}
 
 % operators
 %\newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
@@ -32,34 +27,4 @@
 \def\Supp{{\mathop{\mathrm{Supp}}\nolimits}}
 \def\img{{\mathop{\mathrm{im}}\nolimits}}
 \def\Spec{{\mathop{\mathrm{Spec}}\nolimits}}
-
-% environments and other things
-
-%
-% should make this one environment instead of two?
-%
-
-% currently this works as \begin{env}[optional prop/def]{x.y.z}
-\makeatletter
-\newenvironment{env}[2][\@nil]{%
-    \def\tmp{#1}%
-    \ifx\tmp\@nnil
-        \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
-    \else
-        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
-    \fi}
-\makeatother
-
-% use this for env definitions, examples, etc.
-\makeatletter
-\newenvironment{envr}[2][\@nil]{
-  \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
-}
-\makeatother
-
-% special ref
-\newcommand{\sref}[2]{\hyperref[#1-\arabic{part}.#2]{(#2)}}
-
-% env ref
-\newcommand{\eref}[1]{\sref{env}{#1}}
 

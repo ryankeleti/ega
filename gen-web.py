@@ -126,14 +126,12 @@ schemes_title=[
 
 print "\\documentclass{book}"
 
-packages=open(path+'webpackages.tex')
-for line in packages:
-  print line
+with open(path+"webpackages.tex","r") as packages:
+  print packages.read()
 packages.close()
 
-preamble=open(path+'preamble.tex')
-for line in preamble:
-  print line
+with open(path+"preamble.tex","r") as preamble:
+  print preamble.read()
 preamble.close()
 
 #print "\\allowdisplaybreaks[1]"
