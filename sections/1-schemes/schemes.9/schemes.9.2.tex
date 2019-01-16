@@ -1,5 +1,7 @@
 
-\begin{env}[Proposition]{9.2.1} Let $f\colon X\to Y$ be a morphism of
+\begin{env}[Proposition]{9.2.1}
+\label{prop-1.9.2.1}
+Let $f\colon X\to Y$ be a morphism of
 preschemes.  We suppose that there exists a cover $(Y_\alpha)$ of $Y$ by affine
 opens having the following property: every $f^{-1}(Y_\alpha)$ admits a
 \emph{finite} cover $(X_{\alpha i})$ by affine opens contained in
@@ -19,12 +21,12 @@ $\sheaf{F}_{ij}=\sheaf{F}|(X_i\cap X_j)$, and let $\sheaf{F}'_i$ and
 $\sheaf{F}'_{ij}$ be the images of $\sheaf{F}_i$ and $\sheaf{F}_{ij}$
 (respectively) by the restriction of $f$ to $X_i$ and $X_i\cap X_j$
 (respectively); we know that the $\sheaf{F}'_i$ and $\sheaf{F}'_{ij}$ are
-quasicoherent (1.6.3).  Set $\sheaf{G}=\bigoplus_i\sheaf{F}'_i$ and
+quasicoherent \eref{1.6.3}.  Set $\sheaf{G}=\bigoplus_i\sheaf{F}'_i$ and
 $\sheaf{H}=\bigoplus_{i,j}\sheaf{F}'_{ij}$; $\sheaf{G}$ and $\sheaf{H}$ are
 quasicoherent $\O_Y$-modules; we will define a homomorphism
 $u\colon\sheaf{G}\to\sheaf{H}$ such that $f_\ast(\sheaf{F})$ is the
 \emph{kernel} of $u$; it will follow from this that $f_\ast(\sheaf{F})$ is
-quasicoherent (1.3.9).  It suffices to define $u$ as\oldpage{172} a homomorphism
+quasicoherent \eref{1.3.9}.  It suffices to define $u$ as\oldpage{172} a homomorphism
 of presheaves; taking into account the definitions of $\sheaf{G}$ and
 $\sheaf{H}$, it thus suffices, for every open subset $W\subset Y$, to define a
 homomorphism
@@ -50,12 +52,14 @@ finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens
 \eref{5.5.6}.  We are thus led to the first case, and so we have proved \eref{9.2.1}.
 \end{itemize}
 
-\begin{env}[Corollary]{9.2.2} The conclusion of \eref{9.2.1} holds true in each
+\begin{env}[Corollary]{9.2.2}
+\label{cor-1.9.2.2}
+The conclusion of \sref{prop}{9.2.1} holds true in each
 of the following cases:
 \begin{itemize}
-\item[(a)] $f$ is separated and quasicompact.
-\item[(b)] $f$ is separated and of finite type.
-\item[(c)] $f$ is quasicompact and the underlying space of $X$ is locally Noetherian.
+  \item[(a)] $f$ is separated and quasicompact.
+  \item[(b)] $f$ is separated and of finite type.
+  \item[(c)] $f$ is quasicompact and the underlying space of $X$ is locally Noetherian.
 \end{itemize}
 \end{env}
 

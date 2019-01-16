@@ -1,5 +1,6 @@
 
 \begin{env}[Proposition]{9.1.1}
+\label{prop-1.9.1.1}
 \oldpage{169}Let $X$ be a prescheme
 (\emph{resp.} a locally Noetherian prescheme). Let $\sheaf{F}$ and $\sheaf{G}$
 be two quasicoherent (\emph{resp.} coherent) $\O_X$-modules; then
@@ -18,7 +19,8 @@ claims pertaining to coherent sheaves follow from \eref{1.5.1} and from the fact
 that, if $M$ and $N$ are modules of finite type over a Noetherian ring $A$,
 $M\otimes_A N$ and $\Hom_A(M,N)$ are $A$-modules of finite type.
 
-\begin{env}[Definition]{9.1.2}
+\begin{envr}[Definition]{9.1.2}
+\label{defn-1.9.1.2}
 Let $X$ and $Y$ be two $S$-preschemes, $p$ and
 $q$ the projections of $X\times_S Y$, and $\sheaf{F}$ (resp.$\sheaf{G}$) a
 quasicoherent $\O_X$-module (resp.quasicoherent $\O_Y$-module). We define the
@@ -27,20 +29,19 @@ denoted by $\sheaf{F}\otimes_{\O_S}\sheaf{G}$ (\emph{or}
 $\sheaf{F}\otimes_S\sheaf{G}$) to be the tensor product
 $p^\ast(\sheaf{F})\otimes_{\O_{X\times_S Y}}q^\ast(\sheaf{G})$ over the
 prescheme $X\times_S Y$.
-\end{env}
-
+\end{envr}
 
 If $X_i$ ($1\leq i\leq n$) are $S$-preschemes, and $\sheaf{F}_i$ are
 quasicoherent $\O_{X_i}$-modules ($1\leq i\leq n$), then we define similarly the
 tensor product
 $\sheaf{F}_1\otimes_S\sheaf{F}_2\otimes_S\cdots\otimes_S\sheaf{F}_n$ over the
 prescheme $Z=X_1\times_S X_2\times_s\cdots\times_S X_n$; it is a
-\emph{quasicoherent} $\O_Z$-module by virtue of \eref{9.1.1} and
+\emph{quasicoherent} $\O_Z$-module by virtue of \sref{prop}{9.1.1} and
 (\textbf{0},~5.1.4); it is \emph{coherent} if the $\sheaf{F}_i$ are coherent and
-$Z$ is \emph{locally Noetherian}, by virtue of \eref{9.1.1},
+$Z$ is \emph{locally Noetherian}, by virtue of \sref{prop}{9.1.1},
 (\textbf{0},~5.3.11), and \eref{6.1.1}.
 
-Note that if we take $X=Y=S$ then definition (9.1.2) gives us back the tensor
+Note that if we take $X=Y=S$ then definition \sref{defn}{9.1.2} gives us back the tensor
 product of $\O_S$-modules. Furthermore, as $q^\ast(\O_Y)=\O_{X\times_S Y}$
 (\textbf{0},~4.3.4), the product $\sheaf{F}\otimes_S\O_Y$ is canonically
 identified with $p^\ast(\sheaf{F})$, and, in the same way,
@@ -50,11 +51,12 @@ we have that $\O_X\otimes_Y\sheaf{G}=f^\ast(\sheaf{G})$: the ordinary tensor
 product and the inverse image thus appear as particular cases of the general
 tensor product.
 
-Definition \eref{9.1.2} leads immediately to the fact that, for fixed $X$ and
+Definition \sref{defn}{9.1.2} leads immediately to the fact that, for fixed $X$ and
 $Y$, $\sheaf{F}\otimes_S\sheaf{G}$ is an \emph{additive covariant bifunctor that
 is right-exact} in $\sheaf{F}$ and $\sheaf{G}$.
 
 \begin{env}[Proposition]{9.1.3}
+\label{prop-1.9.1.3}
 Let $S,X,Y$ be three affine schemes of rings
 $A,B,C$ (respectively), with $B$ and $C$ being $A$-algebras. Let $M$
 (\emph{resp.} $N$) be a $B$-module (\emph{resp.} $C$-module), and
@@ -76,6 +78,7 @@ products, this latter module is isomorphic to
 \]
 
 \begin{env}[Proposition]{9.1.4}
+\label{prop-1.9.1.4}
 Let $f\colon T\to X$, and $g\colon T\to Y$ be
 two $S$-morphisms, and $\sheaf{F}$ (\emph{resp.} $\sheaf{G}$) a quasicoherent
 $\O_X$-module (\emph{resp.} quasicoherent $\O_Y$-module). Then
@@ -91,6 +94,7 @@ image of a tensor product of algebraic sheaves is the tensor product of their in
 images (\textbf{0},~4.3.3).
 
 \begin{env}[Corollary]{9.1.5}
+\label{cor-1.9.1.5}
 Let $f\colon X\to X'$ and $g\colon Y\to Y'$ be
 $S$-morphisms, and $\sheaf{F}'$ (\emph{resp.} $\sheaf{G}'$) a quasicoherent
 $\O_{X'}$-module (\emph{resp.} quasicoherent $\O_{Y'}$-module). Then
@@ -104,6 +108,7 @@ This follows from \eref{9.1.4} and the fact that $f\times_S g=(f\circ p, g\circ
 q)_S$, where $p,q$ are the projections of $X\times_S Y$.
 
 \begin{env}[Corollary]{9.1.6}
+\label{cor-1.9.1.6}
 Let $X,Y,Z$ be three $S$-preschemes, and
 $\sheaf{F}$ (\emph{resp.} $\sheaf{G},\sheaf{H}$) a quasicoherent $\O_X$-module
 (\emph{resp.} quasicoherent $\O_Y$-module, quasicoherent $\O_Z$-module); then
@@ -116,10 +121,10 @@ In fact, this isomorphism is given by $(p_1,p_2)_S\times_S p_3$, where
 $p_1,p_2,p_3$ are the projections of $X\times_S Y\times_S Z$.
 
 Similarly, the inverse image of $\sheaf{G}\otimes_S\sheaf{F}$ by the canonical
-isomorphism from $X\times_S Y$ to $Y\times_S X$ is
-$\sheaf{F}\otimes_S\sheaf{G}$.
+isomorphism from $X\times_S Y$ to $Y\times_S X$ is $\sheaf{F}\otimes_S\sheaf{G}$.
 
 \begin{env}[Corollary]{9.1.7}
+\label{cor-1.9.1.7}
 If $X$ is an $S$-prescheme, then every
 quasicoherent $\O_X$-module $\sheaf{F}$ is the inverse image of
 $\sheaf{F}\otimes_S\O_S$ by the canonical isomorphism from $X$ to $X\times_S S$
@@ -131,6 +136,7 @@ morphism $X\to S$, and the corollary follows from \eref{9.1.4} and the fact that
 $\varphi^\ast(\O_S)=\O_X$.
 
 \begin{env}{9.1.8}
+\label{env-1.9.1.8}
 Let $X$ be an $S$-prescheme, $\sheaf{F}$ a quasicoherent
 $\O_X$-module, and $\varphi\colon S'\to S$ a morphism; we denote by
 $\sheaf{F}_{(\varphi)}$ or $\sheaf{F}_{(S')}$ the quasicoherent sheaf
@@ -139,6 +145,7 @@ $\sheaf{F}_{(S')}=p^\ast(\sheaf{F})$, where $p$ is the projection $X_{(S')}\to X
 \end{env}
 
 \begin{env}[Proposition]{9.1.9}
+\label{prop-1.9.1.9}
 Let $\varphi''\colon S''\to S'$ be a morphism.
 For every quasicoherent $\O_X$-module $\sheaf{F}$ on the $S$-prescheme~$X$,
 $(\sheaf{F}_{(\varphi)})_{(\varphi')}$ is the inverse image of
@@ -154,8 +161,9 @@ written
 \]
 
 \begin{env}[Proposition]{9.1.10}
-Let $Y$ be an $S$-prescheme, and $f\colon X\to
-Y$ an $S$-morphism. For every quasicoherent $\O_Y$-module and every morphism
+\label{prop-1.9.1.10}
+Let $Y$ be an $S$-prescheme, and $f\colon X\to Y$ an $S$-morphism.
+For every quasicoherent $\O_Y$-module and every morphism
 $S'\to S$, we have that
 $(f_{(S')})^\ast(\sheaf{G}_{(S')})=(f^\ast(\sheaf{G}))_{(S')}$.
 \end{env}
@@ -169,6 +177,7 @@ This follows immediately from the commutativity of the diagram \oldpage{171}
 \]
 
 \begin{env}[Corollary]{9.1.11}
+\label{cor-1.9.1.11}
 Let $X$ and $Y$ be $S$-preschemes, and
 $\sheaf{F}$ (\emph{resp.} $\sheaf{G}$) a quasicoherent $\O_X$-module
 (\emph{resp.} quasicoherent $\O_Y$-module). Then the inverse image of the sheaf
@@ -182,7 +191,8 @@ is nothing but $(p_{(S')}, q_{(S')})_{S'}$; the corollary follows from
 propositions \eref{9.1.4} and \eref{9.1.10}.
 
 \begin{env}[Proposition]{9.1.12}
-With the notation from \eref{9.1.2}, let $z$ be
+\label{prop-1.9.1.12}
+With the notation from \sref{defn}{9.1.2}, let $z$ be
 a point of $X\times_S Y$, $x=p(z)$, and $y=q(z)$; the fibre
 $(\sheaf{F}\otimes_S\sheaf{G})_z$ is isomorphic to
 $(\sheaf{F}_x\otimes_{\O_x}\O_z)\otimes_{\O_z}(\sheaf{G}_y\otimes_{\O_y}\O_z)
@@ -193,8 +203,8 @@ As we can reduce ourselves to the affine case, the proposition follows from
 equation~(1.6.5.1).
 
 \begin{env}[Corollary]{9.1.13}
-If $\sheaf{F}$ and $\sheaf{G}$ are of finite
-type, then we have that
+\label{cor-1.9.1.13}
+If $\sheaf{F}$ and $\sheaf{G}$ are of finite type, then we have that
 \[
   \Supp(\sheaf{F}\otimes_S\sheaf{G})
   =p^{-1}(\Supp(\sheaf{F}))\cap q^{-1}(\Supp(\sheaf{G})).

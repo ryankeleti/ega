@@ -5,10 +5,12 @@ main:
 	pdflatex main.tex
 
 web:
-	python2 makeweb.py >> web.tex
-	plastex --renderer=Gerby web.tex
+	sh comp-web.sh
 
 clean:
 	rm main.aux main.log main.out main.toc main.pdf
+
+cleanweb:
+	rm -rf WEB/
 
 
