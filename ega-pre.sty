@@ -4,7 +4,8 @@
 %\plastexfalse
 
 % if unsure of a translation
-\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
+%\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
+\newcommand{\unsure}[1]{}
 \newcommand{\completelyunsure}{\unsure{[\ldots]}}
 
 % use to mark where original page starts
@@ -21,20 +22,24 @@
 %
 
 % currently this works as \begin{env}[optional prop/def]{x.y.z}
-\makeatletter
-\newenvironment{env}[2][\@nil]{%
-    \def\tmp{#1}%
-    \ifx\tmp\@nnil
-        \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
-    \else
-        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
-    \fi}
-\makeatother
+%\makeatletter
+%\newenvironment{env}[2][\@nil]{%
+%    \def\tmp{#1}%
+%    \ifx\tmp\@nnil
+%        \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
+%    \else
+%        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
+%    \fi}
+%\makeatother
 
 % use this for env definitions, examples, etc.
-\makeatletter
-\newenvironment{envr}[2][\@nil]{
-  \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
-}
-\makeatother
+%\makeatletter
+%\newenvironment{envr}[2][\@nil]{
+%  \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
+%}
+%\makeatother
+
+\theoremstyle{definition}
+\newtheorem{env}{Env}
+\newtheorem{envr}{Envr}
 
