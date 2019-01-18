@@ -3,11 +3,11 @@
 export PYTHONPATH=.
 export TEXINPUTS=.:.::
 export XHTMLTEMPLATES=.
-mkdir WEB/
-cd WEB/
-python2 ../gen-web.py > web.tex
-python2 ../tagger.py > tags
+mkdir -p ../ega/
+python2 ./gen-web.py > ../ega/web.tex
+#python2 ./tagger.py > ../ega/tags
 #latex2html web.tex
 #plastex --renderer=Gerby web.tex
+cd ../ega/
 plastex --renderer=XHTML web.tex
 

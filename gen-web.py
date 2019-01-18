@@ -1,6 +1,6 @@
 import sys,re
 
-path="../"
+path="../en.ega.i/"
 
 prelim_path="sections/0-prelim/"
 prelim=[
