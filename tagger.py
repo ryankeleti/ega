@@ -109,3 +109,4 @@ if len(missing) > 0:
 else:
   for label in new:
     print("%s,%s" % (new[label], label))
+
