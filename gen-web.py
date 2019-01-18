@@ -130,8 +130,6 @@ with open(path+"webpackages.tex","r") as packages:
   print packages.read()
 packages.close()
 
-print "\\usepackage{"+path+"ega-pre}"
-
 with open(path+"preamble.tex","r") as preamble:
   print preamble.read()
 preamble.close()
