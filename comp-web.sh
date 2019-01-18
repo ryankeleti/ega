@@ -9,5 +9,5 @@ python2 ../gen-web.py > web.tex
 python2 ../tagger.py > tags
 #latex2html web.tex
 #plastex --renderer=Gerby web.tex
-plastex web.tex
+plastex --renderer=XHTML web.tex
 

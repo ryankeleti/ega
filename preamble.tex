@@ -26,3 +26,53 @@
 \def\img{{\mathop{\mathrm{im}}\nolimits}}
 \def\Spec{{\mathop{\mathrm{Spec}}\nolimits}}
 
+\newif\ifplastex
+\plastexfalse
+
+% if unsure of a translation
+\ifplastex
+  \def\unsure#1{\underline{#1}}
+  \def\completelyunsure{\unsure{[...]}}
+\else
+  \newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
+  \newcommand{\completelyunsure}{\unsure{[\ldots]}}
+\fi
+
+% use to mark where original page starts
+\ifplastex
+  \newcommand{\oldpage}[1]{\ignorespaces}
+\else
+  \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}}
+\fi
+
+% special ref
+\newcommand{\sref}[2]{\hyperref[#1-\arabic{part}.#2]{(#2)}}
+
+% env ref
+\newcommand{\eref}[1]{\sref{env}{#1}}
+
+%
+% should make this one environment instead of two?
+%
+
+% currently this works as \begin{env}[optional prop/def]{x.y.z}
+%\makeatletter
+%\newenvironment{env}[2][\@nil]{%
+%    \def\tmp{#1}%
+%    \ifx\tmp\@nnil
+%        \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
+%    \else
+%        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
+%    \fi}
+%\makeatother
+
+% use this for env definitions, examples, etc.
+%\makeatletter
+%\newenvironment{envr}[2][\@nil]{
+%  \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
+%}
+%\makeatother
+
+\newtheorem{env}{Env}
+\newtheorem{envr}{Envr}
+

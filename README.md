@@ -7,6 +7,8 @@ work in progress.
 
 to compile, `pdflatex main.tex` or use `make all`
 
+to make web version, use `make web`
+
 see `CONTRIBUTING.md` if you want to contribute
 
 ## todo
