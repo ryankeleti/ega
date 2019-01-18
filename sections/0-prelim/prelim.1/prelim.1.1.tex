@@ -2,13 +2,13 @@
 \begin{env}{1.1.1}
 \label{env-0.1.1.1}
 Let $\mathfrak{a}$ be an ideal of a ring $A$; the \emph{radical} of $\mathfrak{a}$, denoted
-by $\mathfrak{r}(\mathfrak{a})$, is the set of $x\in A$ such that $x^n\in\mathfrak{a}$ for
+by $\rad(\mathfrak{a})$, is the set of $x\in A$ such that $x^n\in\mathfrak{a}$ for
 an integer $n>0$; it is an ideal containing $\mathfrak{a}$. We have
-$\mathfrak{r}(\mathfrak{r}(\mathfrak{a}))=\mathfrak{r}(\mathfrak{a})$; the relation
-$\mathfrak{a}\subset\mathfrak{b}$ leads to $\mathfrak{r}(\mathfrak{a})\subset\mathfrak{r}(\mathfrak{b})$;
+$\rad(\mathfrak{r}(\mathfrak{a}))=\rad(\mathfrak{a})$; the relation
+$\mathfrak{a}\subset\mathfrak{b}$ leads to $\rad(\mathfrak{a})\subset\rad(\mathfrak{b})$;
 the radical of a finite intersection of ideals is the intersection of their radicals. If $\varphi$
 is a homomorphism of a ring $A'$ into $A$, then we have
-$\mathfrak{r}(\varphi^{-1}(\mathfrak{a}))=\varphi^{-1}(\mathfrak{r}(\mathfrak{a}))$
+$\rad(\varphi^{-1}(\mathfrak{a}))=\varphi^{-1}(\rad(\mathfrak{a}))$
 for any ideal $\mathfrak{a}\subset A$. For an ideal to be the radical of an ideal,
 it is necessary and sufficient that it be an intersection of prime ideals. The radical of an
 ideal $\mathfrak{a}$ is the intersection of the
@@ -16,15 +16,15 @@ ideal $\mathfrak{a}$ is the intersection of the
 Noetherian, these minimal prime ideals are finite in number.
 
 The radical of the ideal $(0)$ is also called the \emph{nilradical} of $A$; it is the set
-$\rad$ of the nilpotent elements of $A$. It is said that the ring $A$ is \emph{reduced} if
-$\rad=(0)$; for every ring $A$, the quotient $A/\rad$ of $A$ by its nilradical is a
+$\nilrad$ of the nilpotent elements of $A$. It is said that the ring $A$ is \emph{reduced} if
+$\nilrad=(0)$; for every ring $A$, the quotient $A/\nilrad$ of $A$ by its nilradical is a
 reduced ring.
 \end{env}
 
 \begin{env}{1.1.2}
 \label{env-0.1.1.2}
-Recall that the \emph{nilradical} $\rad(A)$ of a ring $A$ (not necessarily commutative) is the
+Recall that the \emph{nilradical} $\nilrad(A)$ of a ring $A$ (not necessarily commutative) is the
 intersection of the maximal left ideals of $A$ (and also the intersection of maximal
-right ideals). The nilradical of $A/\rad(A)$ is $(0)$.
+right ideals). The nilradical of $A/\nilrad(A)$ is $(0)$.
 \end{env}
 
