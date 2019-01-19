@@ -130,7 +130,7 @@ and proposition (\eref{1.1.2}, (v)) that $\rad(f)=\rad(g)$, or that the minimal 
 containing $(f)$ and $(g)$ are the same; in particular, when $f=ug$, where $u$ is invertible.
 \end{env}
 
-\begin{env}[Proposition]{1.1.10}
+\begin{env}[Proposition]{1.1.10}\oldpage{82}
 \label{prop-1.1.1.10}
 \medskip\noindent
 \begin{itemize}
@@ -162,7 +162,7 @@ between ideals (resp. prime ideals) of $A/\mathfrak{a}$ and ideals (resp. prime 
 $\mathfrak{a}$.
 
 Recall that the set $\nilrad$ of nilpotent elements of $A$ (the \emph{nilradical} of $A$) is an ideal equal to
-$\rad(0)$, the intersection of all the prime ideals of $A$ \oref{env}{1.1.1}.
+$\rad(0)$, the intersection of all the prime ideals of $A$ \pref{env}{1.1.1}.
 
 \begin{env}[Corollary]{1.1.12}
 \label{cor-1.1.1.12}
@@ -171,7 +171,7 @@ The topological spaces $\Spec(A)$ and $\Spec(A/\nilrad)$ are canonically homeomo
 
 \begin{env}[Proposition]{1.1.13}
 \label{prop-1.1.1.13}
-For $X=\Spec(A)$ to be irreducible \oref{env}{2.1.1}, it is necessary and sufficient that the ring $A/\nilrad$
+For $X=\Spec(A)$ to be irreducible \pref{env}{2.1.1}, it is necessary and sufficient that the ring $A/\nilrad$
 is an integral domain (or, equivalently, that the ideal $\nilrad$ is prime).
 \end{env}
 
@@ -182,4 +182,35 @@ $\mathfrak{j}(Y_2)$ being different from $(0)$ \sref{cor}{1.1.5}; so $A$ is not 
 Conversely, if in $A$ there are elements $f\neq 0$, $g\neq 0$ such that $fg=0$, we have
 $V(f)\neq X$, $V(g)\neq X$ (since the intersection of the prime ideals of $A$ is $(0)$), and
 $X=V(fg)=V(f)\cup V(g)$.
+
+\begin{env}[Corollary]{1.1.14}
+\label{cor-1.1.1.14}
+\begin{itemize}
+  \item[(i)] In the bijective correspondence between closed subsets of $X=\Spec(A)$
+             and ideals of $A$ equal to their roots, the irreducible closed subsets
+             of $X$ correspond to the prime ideals of $A$. In particular, the irreducible
+             components of $X$ correspond to the minimal prime ideals of $A$.
+  \item[(ii)] The map $x\mapsto\overline{\{x\}}$ establishes a bijective correspondence
+              between $X$ and the set of closed irreducible subsets of $X$
+              (\emph{said otherwise,} all closed irreducible subsets of $X$ containing
+              only one generic point).
+\end{itemize}
+\end{env}
+
+(i) follows immediately from \sref{prop}{1.1.13} and \sref{prop}{1.1.11}; and for
+proving (ii), we can, by virtue of \sref{prop}{1.1.11}, we restrict to the case where
+$X$ is irreducible; then, according to the proposition \sref{prop}{1.1.13}, there exists
+in $A$ a smaller prime ideal $\nilrad$, which corresponds to the generic point
+\oldpage{83}of $X$; in addition, $X$ does not admit only one generic point since it is
+a Kolmogoroff space (\sref{cor}{1.1.8} and \pref{env}{2.1.3}).
+
+\begin{env}[Proposition]{1.1.15}
+\label{prop-1.1.1.15}
+If $\mathfrak{J}$ is an ideal in $A$ containing the radical $\nilrad(A)$, the only
+neighborhood of $V(\mathfrak{J})$ in $X=\Spec(A)$ is the whole space $X$
+\end{env}
+
+In effect, each maximal ideal of $A$ belongs by definitionn of $V(\mathfrak{J})$.
+As each ideal $\mathfrak{a}$ of $A$ is contained in a maximal ideal, we have
+$V(\mathfrak{a})\cap V(\mathfrak{J})\neq 0$, hence the proposition.
 
