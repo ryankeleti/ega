@@ -7,7 +7,7 @@ work in progress.
 
 to compile, `pdflatex main.tex` or use `make all`
 
-to make web version, use `make web`
+to make web version, use `make web` (this currently does not work)
 
 see `CONTRIBUTING.md` if you want to contribute
 
