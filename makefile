@@ -8,7 +8,7 @@ WEBDIR=WEB
 web:
 	mkdir $(WEBDIR)/
 	cp main.tex $(WEBDIR)/ega.tex
-	cp preamble.tex intro.tex main-body.tex bib.tex $(WEBDIR)/
+	cp preamble.tex intro.tex bib.tex $(WEBDIR)/
 	cd $(WEBDIR)/
 #	python tagger.py > tags
 	plastex ega.tex
