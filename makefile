@@ -5,12 +5,14 @@ main:
 	pdflatex main.tex
 
 web:
-	sh comp-web.sh
+	cp main.tex web.tex
+	python tagger.py > tags
+	plastex --renderer=Gerby web.tex
 
 clean:
 	rm -f main.aux main.log main.out main.toc main.pdf
 
 cleanweb:
-	rm -rf ../ega/
+	rm -rf web/ tags web.tex
 
 

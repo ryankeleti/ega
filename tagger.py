@@ -5,8 +5,8 @@ import re
 # provided by Pieter Belmans, https://pbelmans.ncag.info/
 #
 
-path = "../ega/"
-filename = path+"ega.tex"
+path = "./"
+filename = path+"main.tex"
 
 # no I, no O
 CHARACTERS = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ"

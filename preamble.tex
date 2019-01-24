@@ -1,4 +1,35 @@
 
+\ifplastex
+
+\usepackage{verbatim}
+\usepackage{amsmath}
+%\usepackage{amsthm}
+%\usepackage{amssymb}
+\usepackage[all]{xy}
+\xyoption{2cell}
+\UseAllTwocells
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+\else
+
+\usepackage[T1]{fontenc}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage[all]{xy}
+\usepackage{soul}
+\usepackage[hidelinks]{hyperref}
+\usepackage{calligra}
+\usepackage{mathtools}
+\usepackage[charter]{mathdesign}
+
+\fi
+
+
 % radical & nilradical
 \def\rad{\mathfrak{r}}
 \def\nilrad{\mathfrak{R}}
@@ -27,9 +58,6 @@
 \def\img{{\mathop{\mathrm{im}}\nolimits}}
 \def\Spec{{\mathop{\mathrm{Spec}}\nolimits}}
 
-\newif\ifplastex
-\plastexfalse
-
 % if unsure of a translation
 \ifplastex
   \def\unsure#1{\underline{#1}}
@@ -44,6 +72,34 @@
   \newcommand{\oldpage}[1]{\ignorespaces}
 \else
   \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}}
+\fi
+
+\ifplastex
+
+\def\asttri{\begin{center}***\end{center}}
+
+\else
+%\allowdisplaybreaks[1]
+%\binoppenalty=9999
+%\relpenalty=9999
+
+% hyperref setup
+\hypersetup{
+  colorlinks,
+  allcolors=[rgb]{0,0.45,0},
+}
+
+\newcommand{\asttri}{%
+    \begin{center}
+        \begin{equation*}
+            \arraycolsep=1pt
+            \def\arraystretch{0.7}
+            \begin{array}{rcl}
+                &*&\\
+                *&&*
+            \end{array}
+        \end{equation*}
+    \end{center}\vspace{1.3em}}
 \fi
 
 % special ref
@@ -76,7 +132,4 @@
   \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
 }
 \makeatother
-
-%\newtheorem{env}{Env}
-%\newtheorem{envr}{Envr}
 
