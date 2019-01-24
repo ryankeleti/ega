@@ -1,10 +1,12 @@
-\documentclass[10pt,oneside]{amsart}
+\newif\ifplastex
+\plastexfalse
 
-%\makeatletter
-%\def\input@path{{../}}
-%\makeatother
-\input{packages}
-\input{formatting}
+\ifplastex
+\documentclass{book}
+\else
+\documentclass[10pt,oneside]{amsart}
+\fi
+
 \input{preamble}
 
 \title{EGA I}
@@ -14,11 +16,48 @@
 
 \begin{document}
 
-\input{abstract}
+\ifplastex
+\textbf{What this is.}
+    This is a community translation of Grothendieck's EGA I.
+    As it is a work in progress by multiple people, it will probably have a few
+    mistakes --- if you spot any then please feel free to
+    \href{https://github.com/ryankeleti/en.ega.i/issues}{let us know}!
+    \thanks{\url{https://github.com/ryankeleti/en.ega.i}}
+
+\noindent
+    \textbf{Note.} EGA uses `prescheme' for what is now usually called
+    a scheme, and `scheme' for what is now usually called a
+    separated scheme.
+ 
+    On est d{\'e}sol{\'e}s, Grothendieck.
+
+    --- Ryan Keleti, Tim Hosgood
+
+\else
+
+\renewcommand{\abstractname}{What this is}
+\begin{abstract}
+    This is a community translation of Grothendieck's EGA I.
+    As it is a work in progress by multiple people, it will probably have a few
+    mistakes --- if you spot any then please feel free to
+    \href{https://github.com/ryankeleti/en.ega.i/issues}{let us know}!
+    \thanks{\url{https://github.com/ryankeleti/en.ega.i}}
+
+\noindent
+    \textbf{Note.} EGA uses `prescheme' for what is now usually called
+    a scheme, and `scheme' for what is now usually called a
+    separated scheme.
+ 
+    On est d{\'e}sol{\'e}s, Grothendieck.
+
+    --- Ryan Keleti, Tim Hosgood
+\end{abstract}
+
+\fi
 
 \maketitle
 
-\noindent\hspace{0.15\linewidth}
+%\noindent\hspace{0.15\linewidth}
 
 {
   \hypersetup{
@@ -30,7 +69,7 @@
 \clearpage
 
 
-\input{main-input}
+\input{main-body}
 
 
 \clearpage
