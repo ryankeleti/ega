@@ -115,21 +115,21 @@
 % should make this one environment instead of two?
 %
 
-% currently this works as \begin{env}[optional prop/def]{x.y.z}
+% currently this works as \begin{env}[optional rmk/def]{x.y.z}
 \makeatletter
 \newenvironment{env}[2][\@nil]{%
     \def\tmp{#1}%
     \ifx\tmp\@nnil
         \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
     \else
-        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
+        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
     \fi}
 \makeatother
 
-% use this for env definitions, examples, etc.
+% use this for propositions, corollaries, etc.
 \makeatletter
-\newenvironment{envr}[2][\@nil]{
-  \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
+\newenvironment{envs}[2][\@nil]{
+  \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
 }
 \makeatother
 

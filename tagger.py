@@ -6,7 +6,7 @@ import re
 #
 
 path = "./"
-filename = path+"main.tex"
+filename = path+"web.tex"
 
 # no I, no O
 CHARACTERS = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ"

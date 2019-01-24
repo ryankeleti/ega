@@ -4,15 +4,20 @@ main:
 	pdflatex main.tex
 	pdflatex main.tex
 
+WEBDIR=WEB
 web:
-	cp main.tex web.tex
-	python tagger.py > tags
-	plastex --renderer=Gerby web.tex
+	mkdir $(WEBDIR)/
+	cp main.tex $(WEBDIR)/ega.tex
+	cp preamble.tex intro.tex main-body.tex bib.tex $(WEBDIR)/
+	cd $(WEBDIR)/
+#	python tagger.py > tags
+	plastex ega.tex
 
 clean:
 	rm -f main.aux main.log main.out main.toc main.pdf
 
 cleanweb:
-	rm -rf web/ tags web.tex
+	rm -rf $(WEBDIR)
 
+cleanall: clean cleanweb
 
