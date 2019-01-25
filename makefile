@@ -1,8 +1,14 @@
 all: main
 
-main:
-	pdflatex main.tex
-	pdflatex main.tex
+main: en.main fr.main
+
+en.main:
+	pdflatex en.main.tex
+	pdflatex en.main.tex
+
+fr.main:
+	pdflatex fr.main.tex
+	pdflatex fr.main.tex
 
 WEBDIR=WEB
 web:
@@ -14,7 +20,8 @@ web:
 	plastex ega.tex
 
 clean:
-	rm -f main.aux main.log main.out main.toc main.pdf
+	rm -f en.main.aux en.main.log en.main.out en.main.toc en.main.pdf
+	rm -f fr.main.aux fr.main.log fr.main.out fr.main.toc fr.main.pdf
 
 cleanweb:
 	rm -rf $(WEBDIR)
