@@ -103,13 +103,13 @@
 \fi
 
 % special ref
-\newcommand{\sref}[2]{\hyperref[#1-\arabic{part}.#2]{(#2)}}
+\newcommand{\sref}[2]{\hyperref[#1-\arabic{part}.#2]{\normalfont{(#2)}}}
 
 % env ref
 \newcommand{\eref}[1]{\sref{env}{#1}}
 
 % ref prelim
-\newcommand{\pref}[2]{\hyperref[#1-0.#2]{(\textbf{0}, #2)}}
+\newcommand{\pref}[2]{\hyperref[#1-0.#2]{\normalfont{(\textbf{0}, #2)}}}
 
 %
 % should make this one environment instead of two?
