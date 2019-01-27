@@ -10,6 +10,7 @@
 \UseAllTwocells
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\usepackage{verbatim}
 
 \else
 
@@ -25,10 +26,12 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{calligra}
 \usepackage{mathtools}
-\usepackage[charter]{mathdesign}
+\usepackage[utopia,
+            uppercase=upright,
+            greeklowercase=upright]{mathdesign}
+\usepackage{verbatim}
 
 \fi
-
 
 % radical & nilradical
 \def\rad{\mathfrak{r}}
@@ -37,7 +40,7 @@
 \def\emp{\varnothing}
 
 % for easy changes to style
-\def\sheaf{\mathcal}
+\def\sheaf{\mathscr}
 \def\bbold{\mathbf}
 \def\cat{\mathsf}
 
@@ -47,8 +50,10 @@
 % category
 \def\K{\cat{K}}
 
-% structure sheaf
+% sheaves
 \def\O{\sheaf{O}}
+\def\F{\sheaf{F}}
+\def\G{\sheaf{G}}
 
 % operators
 %\newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
@@ -71,7 +76,7 @@
 \ifplastex
   \newcommand{\oldpage}[1]{\ignorespaces}
 \else
-  \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}}
+  \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}\ignorespaces}
 \fi
 
 \ifplastex
@@ -79,9 +84,9 @@
 \def\asttri{\begin{center}***\end{center}}
 
 \else
-%\allowdisplaybreaks[1]
-%\binoppenalty=9999
-%\relpenalty=9999
+\allowdisplaybreaks[1]
+\binoppenalty=9999
+\relpenalty=9999
 
 % hyperref setup
 \hypersetup{
