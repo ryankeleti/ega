@@ -10,26 +10,25 @@
 \UseAllTwocells
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
-\usepackage{verbatim}
 
 \else
 
 \usepackage[T1]{fontenc}
 \usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
 \usepackage{verbatim}
-\usepackage{amsmath}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{mathrsfs}
 \usepackage{amsthm}
-\usepackage{amssymb}
-\usepackage{mathrsfs}
 \usepackage[all]{xy}
 \usepackage{soul}
 \usepackage[hidelinks]{hyperref}
 \usepackage{calligra}
 \usepackage{mathtools}
-\usepackage[utopia,
+\usepackage[charter,
+            greekfamily=didot,
             uppercase=upright,
             greeklowercase=upright]{mathdesign}
-\usepackage{verbatim}
 
 \fi
 
@@ -54,6 +53,10 @@
 \def\O{\sheaf{O}}
 \def\F{\sheaf{F}}
 \def\G{\sheaf{G}}
+
+% im/inv im sheaf
+\def\imgs#1#2{{#1}_\ast{(#2)}}
+\def\invs#1#2{{#1}^\ast{(#2)}}
 
 % operators
 %\newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
