@@ -1,9 +1,9 @@
 # en.ega.i
 
 amateur translation (fr->en) of A. Grothendieck's EGA I.
-S’il te plaît pardonne-moi, Grothendieck.
+S’il-vous plaît pardonnez-nous, Grothendieck.
 
-work in progress.
+work in progress. see [here](https://github.com/ryankeleti/en.ega) for a French transciption project.
 
 to compile, `pdflatex main.tex` or use `make all`
 
