@@ -1,30 +1,30 @@
 all: main
 
-main: en.main fr.main
+EGAI=en.ega.i
 
-en.main:
-	pdflatex en.main.tex
-	pdflatex en.main.tex
+main: en.ega.i.main
 
-fr.main:
-	pdflatex fr.main.tex
-	pdflatex fr.main.tex
+en.ega.i.main:
+	pdflatex $(EGAI).tex
+	pdflatex $(EGAI).tex
 
-WEBDIR=WEB
-web:
-	mkdir $(WEBDIR)/
-	cp main.tex $(WEBDIR)/ega.tex
-	cp preamble.tex intro.tex bib.tex $(WEBDIR)/
-	cd $(WEBDIR)/
+#WEBDIR=WEB
+#web:
+#	mkdir $(WEBDIR)/
+#	cp $(EGAI).tex $(WEBDIR)/ega.tex
+#	cp preamble.tex bib.tex $(WEBDIR)/
+#	cd $(WEBDIR)/
 #	python tagger.py > tags
-	plastex ega.tex
+#	plastex ega.tex
 
 clean:
-	rm -f en.main.aux en.main.log en.main.out en.main.toc en.main.pdf
-	rm -f fr.main.aux fr.main.log fr.main.out fr.main.toc fr.main.pdf
+	rm -f $(EGAI).aux $(EGAI).bbl $(EGAI).blg $(EGAI).log $(EGAI).out $(EGAI).toc
 
-cleanweb:
-	rm -rf $(WEBDIR)
+cleanpdf:
+	rm -f $(EGAI).pdf
 
-cleanall: clean cleanweb
+#cleanweb:
+#	rm -rf $(WEBDIR)
+
+cleanall: clean cleanpdf #cleanweb
 
