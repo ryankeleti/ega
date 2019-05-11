@@ -17,7 +17,7 @@ to compile, `pdflatex main.tex` or use `make all`
 - make a list of the commands defined in `commands.tex` and give examples of where they are found in the original text, so that people can check this whenever translating, to ensure consistency of notation
 - update the titles to agree with [this](https://stacky.net/wiki/index.php?title=EGA_contents) ? even if not, this is a good reference for potentially unfamiliar vocabulary
 - another reference for math terms in French [here](https://ensiwiki.ensimag.fr/index.php?title=Lexique_scientifique_fran%C3%A7ais-anglais)
-- to make web version, use `make web` (this currently does not work, I've commented out plastex parts for now)
+- web version? (this currently does not work, I've removed plastex parts for now)
 
 
 ## current status
