@@ -1,29 +1,23 @@
-%\ifplastex
-%
-%\usepackage{verbatim}
-%\usepackage{amsmath}
-%%\usepackage{amsthm}
-%%\usepackage{amssymb}
-%\usepackage[all]{xy}
-%\xyoption{2cell}
-%\UseAllTwocells
-%\usepackage[T1]{fontenc}
-%\usepackage{hyperref}
-%
-%\else
+\ProvidesPackage{preamble}
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{microtype}
+\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage[all]{xy}
+\usepackage{enumitem}
 \usepackage{color}
 \usepackage{soul}
-\usepackage[colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
 \usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage[charter,
             greekfamily=didot,
             uppercase=upright,
             greeklowercase=upright]{mathdesign}
-%\fi
+\usepackage[compact]{titlesec}
+\usepackage[colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
+\usepackage{bookmark}
 
 % radical & nilradical
 \def\rad{\mathfrak{r}}
@@ -66,27 +60,21 @@
 \def\Spec{{\mathop{\mathrm{Spec}}\nolimits}}
 
 % if unsure of a translation
-%\ifplastex
-%  \def\unsure#1{\underline{#1}}
-%  \def\completelyunsure{\unsure{[...]}}
-%\else
-  \newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
-  \newcommand{\completelyunsure}{\unsure{[\ldots]}}
-%\fi
+\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
+\newcommand{\completelyunsure}{\unsure{[\ldots]}}
 
 % use to mark where original page starts
-%\ifplastex
-%  \newcommand{\oldpage}[1]{\ignorespaces}
-%\else
-  \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}\ignorespaces}
-%\fi
+\newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}\ignorespaces}
 
-%\ifplastex
-%\def\asttri{\begin{center}***\end{center}}
-%\else
 \allowdisplaybreaks[1]
 \binoppenalty=9999
 \relpenalty=9999
+\setitemize{nosep}
+
+% for Chapter 0, Chapter I, etc.
+% credit for ZeroRoman https://tex.stackexchange.com/questions/211414/
+\newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
+\renewcommand{\thechapter}{\ZeroRoman{chapter}}
 
 \newcommand{\asttri}{%
     \begin{center}
@@ -99,13 +87,9 @@
             \end{array}
         \end{equation*}
     \end{center}\vspace{1.3em}}
-%\fi
 
 % special ref
 \newcommand{\sref}[2]{\hyperref[#1-\arabic{part}.#2]{\normalfont{(#2)}}}
-
-% env ref
-\newcommand{\eref}[1]{\sref{env}{#1}}
 
 % ref prelim
 \newcommand{\pref}[2]{\hyperref[#1-0.#2]{\normalfont{(\textbf{0}, #2)}}}

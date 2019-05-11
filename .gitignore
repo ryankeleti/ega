@@ -34,6 +34,6 @@
 *.pdfsync
 
 # Built files
-*.pdf
+#*.pdf
 
 .DS_STORE
