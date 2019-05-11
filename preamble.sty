@@ -8,6 +8,7 @@
 \usepackage{enumitem}
 \usepackage{color}
 \usepackage{soul}
+\usepackage{fancyhdr}
 \usepackage{mathtools}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -18,42 +19,47 @@
 \usepackage[compact]{titlesec}
 \usepackage[colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
 \usepackage{bookmark}
+\usepackage[asterism]{sectionbreak}
 
-% radical & nilradical
-\def\rad{\mathfrak{r}}
-\def\nilrad{\mathfrak{R}}
 
-% empty set
-\def\emp{\varnothing}
+%%%%%%%%%%%%%%
+% formatting %
+%%%%%%%%%%%%%%
 
-% font family switches \phi and \varphi, change if needed
-\def\vphi{\phi}
+\allowdisplaybreaks[1]
+\binoppenalty=9999
+\relpenalty=9999
+\setitemize{nosep}
 
-% cohomology
-\def\HH{\mathrm{H}}
+% for Chapter 0, Chapter I, etc.
+% credit for ZeroRoman https://tex.stackexchange.com/questions/211414/
+\newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
+\renewcommand{\thechapter}{\ZeroRoman{chapter}}
 
-% dual
-\def\dual#1{{#1}^\vee}
+%%%%%%%%%%%%%%%%%
+% math commands %
+%%%%%%%%%%%%%%%%%
 
 % for easy changes to style
-\def\sh{\mathscr}
-\def\bb{\mathbf}
-\def\cat{\mathsf}
-
-% residue field
-\def\k{\bb{k}}
-
-% category
-\def\K{\cat{K}}
-
-% sheaves
-\def\OO{\sh{O}}
-\def\F{\sh{F}}
-\def\G{\sh{G}}
+\newcommand{\sh}{\mathscr}         % sheaf font
+\newcommand{\bb}{\mathbf}          % bold font
+\newcommand{\cat}{\mathsf}         % category font
+%
+\newcommand{\rad}{\mathfrak{r}}    % radical
+\newcommand{\nilrad}{\mathfrak{R}} % nilradical
+\newcommand{\emp}{\varnothing}     % empty set
+\newcommand{\vphi}{\phi}           % font switches \phi and \varphi, change if needed
+\newcommand{\HH}{\mathrm{H}}       % cohomology
+\newcommand{\dual}[1]{{#1}^\vee}   % dual
+\renewcommand{\k}{\bb{k}}          % residue field
+\newcommand{\K}{\cat{K}}           % category
+\newcommand{\OO}{\sh{O}}           % structure sheaf
+\newcommand{\F}{\sh{F}}            % sheaf F
+\newcommand{\G}{\sh{G}}            % sheaf G
 
 % operators
 %\newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
-\def\shHom{\sh{H}\textit{om}}
+\def\shHom{\sh{H}\textit{om}} % sheaf Hom
 \def\Hom{{\mathop{\mathrm{Hom}}\nolimits}}
 \def\Supp{{\mathop{\mathrm{Supp}}\nolimits}}
 \def\img{{\mathop{\mathrm{im}}\nolimits}}
@@ -66,29 +72,6 @@
 % use to mark where original page starts
 \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}\ignorespaces}
 
-\allowdisplaybreaks[1]
-\binoppenalty=9999
-\relpenalty=9999
-\setitemize{nosep}
-
-% for Chapter 0, Chapter I, etc.
-% credit for ZeroRoman https://tex.stackexchange.com/questions/211414/
-\newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
-\renewcommand{\thechapter}{\ZeroRoman{chapter}}
-
-% three asterisks to immitate separator in original document
-\newcommand{\asttri}{%
-    \begin{center}
-        \begin{equation*}
-            \arraycolsep=1pt
-            \def\arraystretch{0.7}
-            \begin{array}{rcl}
-                &*&\\
-                *&&*
-            \end{array}
-        \end{equation*}
-    \end{center}\vspace{1.3em}}
-
 % special ref
 \newcommand{\sref}[2]{\hyperref[#1-\arabic{chapter}.#2]{\normalfont{(#2)}}}
 
@@ -98,11 +81,7 @@
 %% ref out of chapter
 %\newcommand{\cref}[4]{\hyperref[#1-#2.#3]{\normalfont{(\textbf{#3}, #4)}}}
 
-%
-% should make this one environment instead of two?
-%
-
-% currently this works as \begin{env}[optional rmk/def]{x.y.z}
+% currently this works as \begin{env}[optional rmk]{x.y.z}
 \makeatletter
 \newenvironment{env}[2][\@nil]{%
     \def\tmp{#1}%
