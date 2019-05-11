@@ -76,6 +76,7 @@
 \newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
 \renewcommand{\thechapter}{\ZeroRoman{chapter}}
 
+% three asterisks to immitate separator in original document
 \newcommand{\asttri}{%
     \begin{center}
         \begin{equation*}
@@ -89,7 +90,7 @@
     \end{center}\vspace{1.3em}}
 
 % special ref
-\newcommand{\sref}[2]{\hyperref[#1-\arabic{part}.#2]{\normalfont{(#2)}}}
+\newcommand{\sref}[2]{\hyperref[#1-\arabic{chapter}.#2]{\normalfont{(#2)}}}
 
 % ref prelim
 \newcommand{\pref}[2]{\hyperref[#1-0.#2]{\normalfont{(\textbf{0}, #2)}}}
@@ -108,14 +109,14 @@
     \ifx\tmp\@nnil
         \par\medskip\noindent\indent\textbf{(#2)}\rmfamily
     \else
-        \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\rmfamily
+        \par\medskip\noindent\indent\textit{\textbf{#1}}~\textbf{(#2)}.\,---\rmfamily
     \fi}
 \makeatother
 
 % use this for definitions, propositions, corollaries, etc.
 \makeatletter
 \newenvironment{envs}[2][\@nil]{
-  \par\medskip\noindent\indent\textit{#1}~\textbf{(#2)}.\,---\itshape
+  \par\medskip\noindent\indent\textit{\textbf{#1}}~\textbf{(#2)}.\,---\itshape
 }
 \makeatother
 
