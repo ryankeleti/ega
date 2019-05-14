@@ -21,7 +21,6 @@
 \usepackage{bookmark}
 \usepackage[asterism]{sectionbreak}
 
-
 %%%%%%%%%%%%%%
 % formatting %
 %%%%%%%%%%%%%%
@@ -30,6 +29,7 @@
 \binoppenalty=9999
 \relpenalty=9999
 \setitemize{nosep}
+\setenumerate{nosep}
 
 % for Chapter 0, Chapter I, etc.
 % credit for ZeroRoman https://tex.stackexchange.com/questions/211414/
@@ -41,29 +41,32 @@
 %%%%%%%%%%%%%%%%%
 
 % for easy changes to style
-\newcommand{\sh}{\mathscr}         % sheaf font
-\newcommand{\bb}{\mathbf}          % bold font
-\newcommand{\cat}{\mathsf}         % category font
+\newcommand{\sh}{\mathscr}             % sheaf font
+\newcommand{\bb}{\mathbf}              % bold font
+\newcommand{\cat}{\mathsf}             % category font
 %
-\newcommand{\rad}{\mathfrak{r}}    % radical
-\newcommand{\nilrad}{\mathfrak{R}} % nilradical
-\newcommand{\emp}{\varnothing}     % empty set
-\newcommand{\vphi}{\phi}           % font switches \phi and \varphi, change if needed
-\newcommand{\HH}{\mathrm{H}}       % cohomology
-\newcommand{\dual}[1]{{#1}^\vee}   % dual
-\renewcommand{\k}{\bb{k}}          % residue field
-\newcommand{\K}{\cat{K}}           % category
-\newcommand{\OO}{\sh{O}}           % structure sheaf
-\newcommand{\F}{\sh{F}}            % sheaf F
-\newcommand{\G}{\sh{G}}            % sheaf G
+\newcommand{\rad}{\mathfrak{r}}        % radical
+\newcommand{\nilrad}{\mathfrak{R}}     % nilradical
+\newcommand{\emp}{\varnothing}         % empty set
+\newcommand{\vphi}{\phi}               % font switches \phi and \varphi,
+                                       %   change if needed
+\newcommand{\HH}{\mathrm{H}}           % cohomology H
+\newcommand{\dual}[1]{{#1}^\vee}       % dual
+\renewcommand{\k}{\bb{k}}              % residue field k
+\newcommand{\isoto}{%                  % isomorphism \to
+  \xrightarrow{\sim}}
+\newcommand{\K}{\cat{K}}               % category K
+\newcommand{\OO}{\sh{O}}               % structure sheaf O
 
 % operators
 %\newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
 \def\shHom{\sh{H}\textit{om}} % sheaf Hom
-\def\Hom{{\mathop{\mathrm{Hom}}\nolimits}}
-\def\Supp{{\mathop{\mathrm{Supp}}\nolimits}}
-\def\img{{\mathop{\mathrm{im}}\nolimits}}
-\def\Spec{{\mathop{\mathrm{Spec}}\nolimits}}
+\def\Hom{{\mathop{\mathrm{Hom}}\nolimits}\,}
+\def\Supp{{\mathop{\mathrm{Supp}}\nolimits}\,}
+\def\ker{{\mathop{\mathrm{ker}}\nolimits}\,}
+\def\img{{\mathop{\mathrm{im}}\nolimits}\,}
+\def\coker{{\mathop{\mathrm{coker}}\nolimits}\,}
+\def\Spec{{\mathop{\mathrm{Spec}}\nolimits}\,}
 
 % if unsure of a translation
 \newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
