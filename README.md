@@ -28,9 +28,9 @@ Here is the current status of the translation, along with the main contributors 
 - [ ] Preliminaries
     + [x] 1. Rings of fractions (@ryankeleti)
     + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti)
-    + [ ] 3. Supplement on sheaves
+    + [x] 3. Supplement on sheaves (@ryankeleti)
     + [ ] 4. Ringed spaces
-    + [ ] 5. Quasi-coherent sheaves and coherent sheaves
+    + [ ] 5. Quasicoherent sheaves and coherent sheaves
     + [ ] 6. Flatness
     + [ ] 7. Adic rings
 - [ ] The language of schemes
@@ -43,6 +43,22 @@ Here is the current status of the translation, along with the main contributors 
     + [ ] 6. Finiteness conditions
     + [ ] 7. Rational maps
     + [x] 8. Chevalley schemes (@thosgood)
-    + [ ] 9. Supplement on quasi-coherent sheaves (@thosgood)
+    + [ ] 9. Supplement on quasicoherent sheaves (@thosgood)
     + [ ] 10. Formal schemes
+
+
+## LaTeX conventions
+- `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
+- `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
+- `\cat` for categories, e.g. `\cat{C}` for a category C; use `\K` for a "default" category.
+- `\dual` for the dual sheaf, e.g. `\dual{F}` for F^\vee.
+- `\isoto` for an isomorphism arrow.
+- `\emp` for the empty set.
+- `\k` for the residue field.
+- `\rad`/`\nilrad` for radical/nilradical.
+- `\vphi` for `\varphi`. This is due to the font configuration swapping `\varphi` and `\phi`; if you want to use a different font, you could change this.
+- `\HH` for cohomology.
+- `\leqslant`/`\geqslant' for <=, >=.
+- Use the operators defined in `preamble.sty`, such as `\Spec`, `\im`, `\shHom`, etc.
+
 

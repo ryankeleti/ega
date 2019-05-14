@@ -3,8 +3,7 @@
 \usepackage{preamble}
 
 \begin{document}
-\title{\'El\'ements de g\'eom\'etrie alg\'ebrique I: Le langage des sch\'emas
-\\
+\title{\'El\'ements de g\'eom\'etrie alg\'ebrique I: Le langage des sch\'emas\\
 (EGA~I)}
 \author{A.~Grothendieck and J.~Dieudonn\'e}
 \date{1960}
@@ -24,8 +23,6 @@
     On est d\'esol\'es, Grothendieck.
 
     ---Ryan Keleti, Tim Hosgood
-
-%\noindent\hspace{0.15\linewidth}
 
 {
   \hypersetup{
@@ -54,35 +51,35 @@ too-exclusive habit that the birational point of view it implies) to be harmful
 to the one who wants to become familiar with the point of view and techniques
 presented here. However, we assume that the reader has a good knowledge of the
 following topics:
-\begin{itemize}
-  \item[(a)] \emph{Commutative algebra}, as it is exhibited for example in
-             volumes under preparation of the \emph{Elements} of N.~Bourbaki
-             (and, pending the publication of these volumes, in Samuel--Zariski
-             \cite{13} and Samuel \cite{11}, \cite{12}).
-  \item[(b)] \emph{Homological algebra}, for which we refer to Cartan--Eilenberg
-             \cite{2} (cited as (M)) and Godement \cite{4} (cited as (G)), as well
-             as the recent article by A. Grothendieck \cite{6} (cited as (T)).
-  \item[(c)] \emph{Sheaf theory}, where our main references will be (G) and (T);
-             this theory provides the essential language for interpreting in
-             ``geometric'' terms the essential notions of commutative algebra,
-             and to ``globalize'' them.
-  \item[(d)] Finally, it will be useful for the reader to have some familiarity with
-             \emph{functorial language}, which will be constantly used in this Treatise,
-             and for which the reader may consult (M), (G), and especially (T); the
-             principles of this language and the main results of the general theory of
-             functors will be described in more detail in a book currently in preparation
-             by the authors of this treatise.
-\end{itemize}
+\begin{enumerate}[label=(\alph*)]
+  \item \emph{Commutative algebra}, as it is exhibited for example in
+        volumes under preparation of the \emph{Elements} of N.~Bourbaki
+        (and, pending the publication of these volumes, in Samuel--Zariski
+        \cite{13} and Samuel \cite{11}, \cite{12}).
+  \item \emph{Homological algebra}, for which we refer to Cartan--Eilenberg
+        \cite{2} (cited as (M)) and Godement \cite{4} (cited as (G)), as well
+        as the recent article by A. Grothendieck \cite{6} (cited as (T)).
+  \item \emph{Sheaf theory}, where our main references will be (G) and (T);
+        this theory provides the essential language for interpreting in
+        ``geometric'' terms the essential notions of commutative algebra,
+        and to ``globalize'' them.
+  \item Finally, it will be useful for the reader to have some familiarity with
+        \emph{functorial language}, which will be constantly used in this treatise,
+        and for which the reader may consult (M), (G), and especially (T); the
+        principles of this language and the main results of the general theory of
+        functors will be described in more detail in a book currently in preparation
+        by the authors of this treatise.
+\end{enumerate}
 
 \sectionbreak
 
-It is not the place, in this Introduction, to give a more or less summarily
+It is not the place, in this introduction, to give a more or less summarily
 description from the point of view of ``schemes'' in algebraic geometry, nor the
 long list of reasons which made its adoption necessary, and in particular the
 systematic acceptance of nilpotent elements in the local rings of ``manifolds''
-that we consider (which necessarily shifts the idea of rational mappings into
-the background, in favor of those of regular mappings or ``morphisms''). This
-Treatise aims precisely to systematically develop the language of schemes, and
+that we consider (which necessarily shifts the idea of rational maps into
+the background, in favor of those of regular maps or ``morphisms''). This
+treatise aims precisely to systematically develop the language of schemes, and
 will demonstrate, we hope, its necessity. Although it would be easy to do so,
 \oldpage{6}
 we will not try to give here an ``intuitive'' introduction to the
@@ -199,7 +196,7 @@ well as giving a K\"unneth formula.}.
 \sectionbreak
 
 It goes without saying that a book on algebraic geometry, and especially a book
-dealing with the fundamentals, is of course influenced, \completelyunsure, by
+dealing with the fundamentals, is of course influenced, if only by proxy, by
 mathematicians such as O.~Zariski and A.~Weil. In particular, the
 \emph{Th\'eorie des fonctions holomorphes} de Zariski \cite{20}, properly
 flexible thanks to the cohomological methods and an existence theorem
@@ -214,7 +211,7 @@ fundamental group). We have a proper morphism (Chapter~II) $f:X\to Y$ of
 algebraic varieties (more generally, of schemes) that we wish to study on the
 neighbourhood of a point $y\in Y$, with the aim of resolving a problem $P$
 relative to a neighbourhood of $y$. We follow successive steps:
-\begin{itemize}
+\begin{enumerate}
   \item[1\textsuperscript{st}]
      We can suppose that $Y$ is affine, such that $X$ becomes a scheme
      defined on the affine ring $A$ of $Y$, and we can even replace $A$
@@ -238,7 +235,7 @@ relative to a neighbourhood of $y$. We follow successive steps:
      by extension of scalars to the completion of $A$, from a known result (of
      \completelyunsure) to an
      analogous result for a finite simple (e.g. unramified) extension of $A$.
-\end{itemize}
+\end{enumerate}
 
 This sketch shows the importance of the systematic study of schemes defined over
 an artinien ring $A$. The point of view of Serre in his formulation of the
@@ -306,10 +303,10 @@ omit the chapter number.
 \begin{env}{1.0.1}
 \label{env-0.1.0.1}
 \oldpage{11}
-All the rings considered in this Treatise will have a \emph{unit element}; all the modules
+All the rings considered in this treatise will have a \emph{unit element}; all the modules
 on such a ring will be assumed to be \emph{unitary}; the ring homomorphisms will always be
-assumed to \emph{transform the unit element into a unit element}; unless otherwise stated,
-a subring of a ring $A$ will be assumed to \emph{contain the unit element of} $A$. We will
+assumed to \emph{send the unit element to a unit element}; unless otherwise stated,
+a subring of a ring $A$ will be assumed to \emph{contain the unit element of $A$}. We will
 consider especially \emph{commutative} rings, and when we speak of a ring without
 specification, it will be implied that it is commutative. If $A$ is a ring not necessarily
 commutative, by $A$-module we will we mean a left module, unless stated otherwise.
@@ -324,34 +321,35 @@ be necessary to distinguish $M$ as an $A$-module or a $B$-module, we will denote
 $M_{[\vphi]}$ the left (resp. right) $A$-module as defined. If $L$ is an $A$-module, then
 a homomorphism $u:L\to M_{[\vphi]}$ is a homomorphism of commutative groups such that
 $u(a\cdot x)=\vphi(a)\cdot u(x)$ for $a\in A$, $x\in L$; we will also say that it is a
-$\vphi$-\emph{homomorphism} $L\to M$,
-and that the pair $(\vphi,u)$ (or, by misuse of langauge, $u$)
-is a \emph{di-homomorphism} of $(A,L)$ in $(B,M)$. The pairs $(A,L)$ formed by a ring $A$
-and an $A$-module $L$ thus form a \emph{category} for which the morphisms are
+$\vphi$-\emph{homomorphism} $L\to M$, and that the pair $(\vphi,u)$ (or, by misuse of
+langauge, $u$) is a \emph{di-homomorphism} of $(A,L)$ in $(B,M)$. The pairs $(A,L)$ formed by
+a ring $A$ and an $A$-module $L$ thus form a \emph{category} for which the morphisms are
 di-homomorphisms.
 \end{env}
 
 \begin{env}{1.0.3}
 \label{env-0.1.0.3}
-Under the hypothesis of \sref{env}{1.0.2}, if $\mathfrak{J}$ is a left (resp. right) ideal of $A$, we
-denote by $B\mathfrak{J}$ (resp. $\mathfrak{J}B$) the left (resp. right) ideal $B\vphi(\mathfrak{J})$
-(resp. $\vphi(\mathfrak{J})B$) of $B$ generated by $\vphi(\mathfrak{J})$; it is also the image
-of the canonical homomorphism $B\otimes_A\mathfrak{J}\to B$ (resp. $\mathfrak{J}\otimes_A B\to B$)
-of left (resp. right) $B$-modules.
+Under the hypothesis of \sref{env}{1.0.2}, if $\mathfrak{J}$ is a left (resp. right) ideal of
+$A$, we denote by $B\mathfrak{J}$ (resp. $\mathfrak{J}B$) the left (resp. right) ideal
+$B\vphi(\mathfrak{J})$ (resp. $\vphi(\mathfrak{J})B$) of $B$ generated by
+$\vphi(\mathfrak{J})$; it is also the image of the canonical homomorphism
+$B\otimes_A\mathfrak{J}\to B$ (resp. $\mathfrak{J}\otimes_A B\to B$) of left (resp. right)
+$B$-modules.
 \end{env}
 
 \begin{env}{1.0.4}
 \label{env-0.1.0.4}
 If $A$ is a (commutative) ring, $B$ a non necessarily commutative ring, the data of
-a structure of an $A$-\emph{algebra} on $B$ is equivalent to the data of a ring
+a structure of an \emph{$A$-algebra} on $B$ is equivalent to the data of a ring
 homomorphism $\vphi:A\to B$ such that $\vphi(A)$ is contained in the center of $B$.
-For all ideals $\mathfrak{J}$ of $A$, $\mathfrak{J}B=B\mathfrak{J}$ is then a two-sided ideal of $B$, and
-for every $B$-module $M$, $\mathfrak{J}M$ is then a $B$-module equal to $(B\mathfrak{J})M$.
+For all ideals $\mathfrak{J}$ of $A$, $\mathfrak{J}B=B\mathfrak{J}$ is then a two-sided ideal
+of $B$, and for every $B$-module $M$, $\mathfrak{J}M$ is then a $B$-module equal to
+$(B\mathfrak{J})M$.
 \end{env}
 
 \begin{env}{1.0.5}
 \label{env-0.1.0.5}
-We will not return to the notions of \emph{module of finite type} and \emph{algebra}
+We will not revisit the notions of \emph{module of finite type} and \emph{algebra}
 (commutative) \emph{of finite type}; to say that an $A$-module $M$ is of finite type means
 that there exists
 \oldpage{12}
@@ -374,23 +372,24 @@ an $A$-algebra is injective.
 
 \begin{env}{1.0.6}
 \label{env-0.1.0.6}
-An \emph{integral domain} is a ring in which the product of a finite family of elements
-$\neq 0$ is $\neq 0$; equivalently, in such a ring we have $0\neq 1$ and the product of
-two elements $\neq 0$ is non zero. A \emph{prime} ideal of a ring $A$ is an ideal
-$\mathfrak{p}$ such that $A/\mathfrak{p}$ is integral; this therefore entails
-$\mathfrak{p}\neq A$. For a ring $A$ to have at least one prime ideal, it is necessary and
-sufficent that $A\neq\{0\}$.
+An \emph{integral} ring (or an \emph{integral domain}) is a ring in which the product of a
+finite family of elements $\neq 0$ is $\neq 0$; equivalently, in such a ring we have
+$0\neq 1$ and the product of two elements $\neq 0$ is non zero. A \emph{prime} ideal of a
+ring $A$ is an ideal $\mathfrak{p}$ such that $A/\mathfrak{p}$ is integral; this therefore
+implies that $\mathfrak{p}\neq A$. For a ring $A$ to have at least one prime ideal, it is
+necessary and sufficent that $A\neq\{0\}$.
 \end{env}
 
 \begin{env}{1.0.7}
 \label{env-0.1.0.7}
-A \emph{local} ring is a ring $A$ in which there exists a single maximal ideal, which is then
+A \emph{local} ring is a ring $A$ in which there exists a unique maximal ideal, which is then
 the complement of the invertible elements and contains all the ideals $\neq A$. If $A$ and $B$
-are two local rings, $\mathfrak{m}$ and $\mathfrak{n}$ their respective maximal ideals, we say that a
-homomorphism $\vphi:A\to B$ is \emph{local} if $\vphi(\mathfrak{m})\subset\mathfrak{n}$ (or, equivalently,
-$\vphi^{-1}(\mathfrak{n})=\mathfrak{m}$). By passing to quotients, such a homomorphism then defines
-a momomorphism of the residue field $A/\mathfrak{m}$ into the residue field $B/\mathfrak{n}$. The
-composition of two local homomorphisms is a local homomorphism.
+are two local rings, $\mathfrak{m}$ and $\mathfrak{n}$ their respective maximal ideals, we
+say that a homomorphism $\vphi:A\to B$ is \emph{local} if
+$\vphi(\mathfrak{m})\subset\mathfrak{n}$ (or, equivalently, if
+$\vphi^{-1}(\mathfrak{n})=\mathfrak{m}$). By passing to quotients, such a homomorphism then
+defines a momomorphism from the residue field $A/\mathfrak{m}$ to the residue field
+$B/\mathfrak{n}$. The composition of two local homomorphisms is a local homomorphism.
 \end{env}
 
 \subsection{Radical of an ideal. Nilradical and radical of a ring}
@@ -403,14 +402,13 @@ by $\rad(\mathfrak{a})$, is the set of $x\in A$ such that $x^n\in\mathfrak{a}$ f
 an integer $n>0$; it is an ideal containing $\mathfrak{a}$. We have
 $\rad(\mathfrak{r}(\mathfrak{a}))=\rad(\mathfrak{a})$; the relation
 $\mathfrak{a}\subset\mathfrak{b}$ leads to $\rad(\mathfrak{a})\subset\rad(\mathfrak{b})$;
-the radical of a finite intersection of ideals is the intersection of their radicals. If $\vphi$
-is a homomorphism of a ring $A'$ into $A$, then we have
-$\rad(\vphi^{-1}(\mathfrak{a}))=\vphi^{-1}(\rad(\mathfrak{a}))$
-for any ideal $\mathfrak{a}\subset A$. For an ideal to be the radical of an ideal,
-it is necessary and sufficient that it be an intersection of prime ideals. The radical of an
-ideal $\mathfrak{a}$ is the intersection of the
-\emph{minimal} prime ideals among those containing $\mathfrak{a}$; if $A$ is
-Noetherian, these minimal prime ideals are finite in number.
+the radical of a finite intersection of ideals is the intersection of their radicals. If
+$\vphi$ is a homomorphism of a ring $A'$ into $A$, then we have
+$\rad(\vphi^{-1}(\mathfrak{a}))=\vphi^{-1}(\rad(\mathfrak{a}))$ for any ideal
+$\mathfrak{a}\subset A$. For an ideal to be the radical of an ideal, it is necessary and
+sufficient that it be an intersection of prime ideals. The radical of an ideal $\mathfrak{a}$
+is the intersection of the \emph{minimal} prime ideals which contain $\mathfrak{a}$; if $A$
+is Noetherian, these minimal prime ideals are finite in number.
 
 The radical of the ideal $(0)$ is also called the \emph{nilradical} of $A$; it is the set
 $\nilrad$ of the nilpotent elements of $A$. It is said that the ring $A$ is \emph{reduced} if
@@ -420,8 +418,8 @@ reduced ring.
 
 \begin{env}{1.1.2}
 \label{env-0.1.1.2}
-Recall that the \emph{nilradical} $\nilrad(A)$ of a ring $A$ (not necessarily commutative) is the
-intersection of the maximal left ideals of $A$ (and also the intersection of maximal
+Recall that the \emph{nilradical} $\nilrad(A)$ of a ring $A$ (not necessarily commutative) is
+the intersection of the maximal left ideals of $A$ (and also the intersection of maximal
 right ideals). The nilradical of $A/\nilrad(A)$ is $(0)$.
 \end{env}
 
@@ -430,8 +428,6 @@ right ideals). The nilradical of $A/\nilrad(A)$ is $(0)$.
 
 \begin{env}{1.2.1}
 \label{env-0.1.2.1}
-We say that a subset $S$ of a ring $A$ is \emph{multiplicative} if $1\in S$ and if the
-product of two elements of
 \oldpage{13}
 We say that a subset $S$ of a ring $A$ is \emph{multiplicative} if $1\in S$ and if the
 product of two elements of $S$ is in $S$. The examples which will be the most important for
@@ -442,28 +438,31 @@ ideal $\mathfrak{p}$ of $A$.
 
 \begin{env}{1.2.2}
 \label{env-0.1.2.2}
-Let $S$ be a multiplicative subset of a ring $A$, $M$ an $A$-module; in the set $M\times S$, the relation between
-couples $(m_1,s_1)$, $(m_2,s_2)$:
+Let $S$ be a multiplicative subset of a ring $A$, $M$ an $A$-module; in the set $M\times S$,
+the relation between pairs $(m_1,s_1)$, $(m_2,s_2)$:
 \begin{center}
-   ``There exists $s\in S$ such that $s(s_1 m_2-s_2 m_1)=0$''
+   ``there exists an $s\in S$ such that $s(s_1 m_2-s_2 m_1)=0$''
 \end{center}
-is an equivalence relation. We denote by $S^{-1}M$ the quotient set of $M\times S$ by this relation, by $m/s$ the canonical
-image in $S^{-1}M$ of the pair $(m,s)$; we call the \emph{canonical} mapping of $M$ in $S^{-1}M$ the mapping $i_M^S:m\mapsto m/1$
-(also denoted $i^S$). This mapping is generally neither injective nor surjective; its kernel is the set of $m\in M$ such that there
-exists an $s\in S$ for which $sm=0$.
+is an equivalence relation. We denote by $S^{-1}M$ the quotient set of $M\times S$ by this
+relation, by $m/s$ the canonical image in $S^{-1}M$ of the pair $(m,s)$; we call the
+\emph{canonical} map of $M$ to $S^{-1}M$ the map $i_M^S:m\mapsto m/1$ (also denoted $i^S$).
+This map is generally neither injective nor surjective; its kernel is the set of $m\in M$
+such that there exists an $s\in S$ for which $sm=0$.
 
 On $S^{-1}M$ we define an additive group law by taking
 \[
   (m_1/s_1)+(m_2/s_2)=(s_2 m_1+s_1 m_2)/(s_1 s_2)
 \]
-(we check that it is independent of the expressions of the elements of $S^{-1}M$ considered). On $S^{-1}A$ we further define
-a multiplicative law by taking $(a_1/s_1)(a_2/s_2)=(a_1 a_2)/(s_1 s_2)$, and finally an external law on $S^{-1}M$, having
-$S^{-1}A$ as a set of operators, by setting $(a/s)(m/s')=(am)/(ss')$. It is thus verified that $S^{-1}A$ is provided with a
-ring structure (called \emph{the ring of fractions of} $A$, \emph{with denominators in} $S$) and $S^{-1}M$ the structure of
-an $S^{-1}A$-module (called \emph{the  module of fractions of} $M$, \emph{with denominators in} $S$); for all $s\in S$,
-$s/1$ is invertible in $S^{-1}A$, its inverse being $1/s$. The canonical mapping $i_A^S$ (resp. $i_M^S$) is a homomorphism
-of rings (resp. a homomorphism of $A$-modules, $S^{-1}M$ being considered $A$-module by means of the homomorphism
-$i_A^S:A\to S^{-1}A$).
+(we check that it is independent of the expressions of the elements of $S^{-1}M$ considered).
+On $S^{-1}A$ we further define a multiplicative law by setting
+$(a_1/s_1)(a_2/s_2)=(a_1 a_2)/(s_1 s_2)$, and finally an external law on $S^{-1}M$, having
+$S^{-1}A$ as a set of operators, by setting $(a/s)(m/s')=(am)/(ss')$. It is thus verified
+that $S^{-1}A$ is provided with a ring structure (called \emph{the ring of fractions of $A$
+with denominators in $S$}) and $S^{-1}M$ the structure of an $S^{-1}A$-module (called
+\emph{the  module of fractions of $M$ with denominators in $S$}); for all $s\in S$, $s/1$ is
+invertible in $S^{-1}A$, its inverse being $1/s$. The canonical map $i_A^S$ (resp. $i_M^S$)
+is a homomorphism of rings (resp. a homomorphism of $A$-modules, $S^{-1}M$ being considered
+as an $A$-module by means of the homomorphism $i_A^S:A\to S^{-1}A$).
 \end{env}
 
 \begin{env}{1.2.3}
@@ -471,12 +470,14 @@ $i_A^S:A\to S^{-1}A$).
 If $S_f=\{f^n\}_{n\geqslant 0}$ for a $f\in A$, we write $A_f$ and $M_f$ instead of
 $S_f^{-1}A$ and $S_f^{-1}M$; when $A_f$ is considered as algebra over $A$, we can write
 $A_f=A[1/f]$. $A_f$ is isomorphic to the quotient algebra $A[T]/(fT-1)A[T]$. When $f=1$,
-$A_f$ and $M_f$ identify canonically with $A$ and $M$; if $f$ is niipotent, $A_f$ and $M_f$
-are reduced to $0$. When $S=A-\mathfrak{p}$, where $\mathfrak{p}$ is a prime ideal of $A$, we
+$A_f$ and $M_f$ identify canonically with $A$ and $M$; if $f$ is nilpotent, $A_f$ and $M_f$
+are reduced to $0$.
+
+When $S=A-\mathfrak{p}$, where $\mathfrak{p}$ is a prime ideal of $A$, we
 write $A_\mathfrak{p}$ and $M_\mathfrak{p}$ instead of $S^{-1}A$ and $S^{-1}M$;
 $A_\mathfrak{p}$ is a \emph{local ring} whose maximal ideal $\mathfrak{q}$ is generated by
 $i_A^S(\mathfrak{p})$, and we have $(i_A^S)^{-1}(\mathfrak{q})=\mathfrak{p}$; by passing to
-quotients, $i_A^S$ gives a monomorphism of the integral domains $A/\mathfrak{p}$ into the
+quotients, $i_A^S$ gives a monomorphism from the integral ring $A/\mathfrak{p}$ to the
 field $A_\mathfrak{p}/\mathfrak{q}$, which identifies with the field of fractions of
 $A/\mathfrak{p}$.
 \end{env}
@@ -491,7 +492,7 @@ any homomorphism $u$ of $A$ into a ring $B$ such that $u(S)$ is composed of \emp
 \oldpage{14}
 where $u^*$ is a ring homomorphism. Under the same hypotheses, let $M$ be an $A$-module, $N$
 a $B$-module, $v:M\to N$ a homomorphism of $A$-modules (for the $B$-module structure on $N$
-defined by $u:A\to B$); then $v$ is factorises uniquely as
+defined by $u:A\to B$); then $v$ is factorizes uniquely as
 \[
   v:M\xrightarrow{i_M^S}S^{-1}M\xrightarrow{v^*}N
 \]
@@ -501,7 +502,7 @@ defined by $u^*$).
 
 \begin{env}{1.2.5}
 \label{env-0.1.2.5}
-We define a canonical isomorphism $S^{-1}A\otimes_A M\xrightarrow{\sim}S^{-1}M$ of
+We define a canonical isomorphism $S^{-1}A\otimes_A M\isoto S^{-1}M$ of
 $S^{-1}A$-modules, sending the element $(a/s)\otimes m$ to the element $(am)/s$, the
 isomorphism reciprocally applying $m/s$ to $(1/s)\otimes m$.
 \end{env}
@@ -519,8 +520,8 @@ $(S^{-1}A)_{S^{-1}\mathfrak{p}}$ are canonically isomorphic \sref{env}{1.5.1}.
 
 \begin{env}{1.2.7}
 \label{env-0.1.2.7}
-When $A$ is an \emph{integral domain}, for which $K$ denotes its field of fractions, the
-canonical mapping $i_A^S:A\to S^{-1}A$ is injective for any multiplicative subset $S$ not
+When $A$ is an \emph{integral} ring, for which $K$ denotes its field of fractions, the
+canonical map $i_A^S:A\to S^{-1}A$ is injective for any multiplicative subset $S$ not
 containing $0$, and $S^{-1}A$ then identifies canonically with a subring of $K$ containing
 $A$. In particular, for every prime ideal $\mathfrak{p}$ of $A$ , $A_\mathfrak{p}$ is a local
 ring containing $A$, with maximal ideal $\mathfrak{p}A_\mathfrak{p}$, and we have
@@ -573,10 +574,10 @@ submodules of $S^{-1}M$, and we have
 Let $(M_\alpha,\vphi_{\beta\alpha})$ be an inductive system of $A$-modules; then
 $(S^{-1}M_\alpha,S^{-1}\vphi_{\beta\alpha})$ is an inductive system of $S^{-1}A$-modules.
 Expressing the $S^{-1}M_\alpha$ and $S^{-1}\vphi_{\beta\alpha}$ as tensor products
-(\sref{env}{1.2.5} and \sref{env}{1.3.1}), it follows from the permutability of the tensor product and
-inductive limit operations that we have a canonical isomorphism
+(\sref{env}{1.2.5} and \sref{env}{1.3.1}), it follows from the permutability of the tensor
+product and inductive limit operations that we have a canonical isomorphism
 \[
-  S^{-1}\varinjlim M_\alpha\xrightarrow{\sim}\varinjlim S^{-1}M_\alpha
+  S^{-1}\varinjlim M_\alpha\isoto\varinjlim S^{-1}M_\alpha
 \]
 which is further expressed by saying that the functor $S^{-1}M$ (in $M$) \emph{commutes with
 inductive limits}.
@@ -587,7 +588,7 @@ inductive limits}.
 Let $M$, $N$ be two $A$-modules; there is a canonical \emph{functorial} isomorphism (in $M$
 and $N$)
 \[
-  (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\xrightarrow{\sim}S^{-1}(M\otimes_A N)
+  (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\isoto S^{-1}(M\otimes_A N)
 \]
 which sends $(m/s)\otimes(n/t)$ to $(m\otimes n)/st$.
 \end{env}
@@ -600,7 +601,7 @@ We also have a \emph{functorial} homomorphism (in $M$ and $N$)
 \]
 which sends $u/s$ to the homomorphism $m/t\mapsto u(m)/st$. When $M$ has a finite
 presentation, the preceding homomorphism is an \emph{isomorphism}: it is immediate when $M$
-is of the form $A^r$, and goes on to the general case starting from the following exact
+is of the form $A^r$, and we pass to the general case by starting with the following exact
 sequence $A^p\to A^q\to M\to 0$, and using the exactness of the functor $S^{-1}M$ and
 the left-exactness of the functor $\Hom_A(M,N)$ in $M$. Note that this case always occurs
 when $A$ is \emph{Noetherian} and the $A$-module $M$ is \emph{of finite type}.
@@ -611,16 +612,17 @@ when $A$ is \emph{Noetherian} and the $A$-module $M$ is \emph{of finite type}.
 
 \begin{env}{1.4.1}
 \label{env-0.1.4.1}
-Let $S$, $T$ be two multiplicative subsets of a ring $A$ such that $S\subset T$; there exists a canonical
-homomorphism $\rho_A^{T,S}$ (or simply $\rho^{T,S}$) of $S^{-1}A$ into  $T^{-1}A$, sending the
-element denoted $a/s$ of $S^{-1}A$ to the element denoted $a/s$ in $T^{-1}A$; we have
-${i_A^T=\rho_A^{T,S}\circ i_A^S}$. For every $A$-module $M$, there exists in the same way an
-$S^{-1}A$-linear map of $S^{-1}M$ into $T^{-1}M$ (the latter considered as an $S^{-1}A$-module thanks
-to the homomorphism $\rho_A^{T,S}$), which matches the element $m/s$ of $S^{-1}M$ to the element $m/s$
-of $T^{-1}M$; we note that the map $\rho_M^{T,S}$, or simply $\rho^{T,S}$, and we still have
-$i_M^T=\rho_M^{T,S}\circ i_M^S$; in canonical identification \sref{env}{1.2.5}, $\rho_M^{T,S}$ identifies with
-$\rho_A^{T,S}\otimes 1$. The homomorphism $\rho_M^{T,S}$ is a \emph{functorial morphism} (or natural
-transformation) of the functor $S^{-1}M$ into the functor $T^{-1}M$, in other words, the diagram
+Let $S$, $T$ be two multiplicative subsets of a ring $A$ such that $S\subset T$; there exists
+a canonical homomorphism $\rho_A^{T,S}$ (or simply $\rho^{T,S}$) of $S^{-1}A$ into $T^{-1}A$,
+sending the element denoted $a/s$ of $S^{-1}A$ to the element denoted $a/s$ in $T^{-1}A$; we
+have ${i_A^T=\rho_A^{T,S}\circ i_A^S}$. For every $A$-module $M$, there exists in the same
+way an $S^{-1}A$-linear map from $S^{-1}M$ to $T^{-1}M$ (the latter considered as an
+$S^{-1}A$-module thanks to the homomorphism $\rho_A^{T,S}$), which sends the element $m/s$ of
+$S^{-1}M$ to the element $m/s$ of $T^{-1}M$; we denote this map by $\rho_M^{T,S}$, or simply
+$\rho^{T,S}$, and we still have $i_M^T=\rho_M^{T,S}\circ i_M^S$; in the canonical
+identification \sref{env}{1.2.5}, $\rho_M^{T,S}$ identifies with $\rho_A^{T,S}\otimes 1$. The
+homomorphism $\rho_M^{T,S}$ is a \emph{functorial morphism} (or natural transformation) from
+the functor $S^{-1}M$ to the functor $T^{-1}M$, in other words, the diagram
 \[
   \xymatrix{
   S^{-1}M\ar[r]^{S^{-1}u}\ar[d]_{\rho_M^{T,S}} & S^{-1}N\ar[d]^{\rho_N^{T,S}}\\
@@ -629,7 +631,7 @@ transformation) of the functor $S^{-1}M$ into the functor $T^{-1}M$, in other wo
 \]
 \oldpage{16}
 is commutative, for every homomorphism $u:M\to N$; $T^{-1}u$ is entirely determined by
-$S^{-1}u$, because for $m\in M$ and $t\in T$, we have
+$S^{-1}u$, since for $m\in M$ and $t\in T$, we have
 \[
   (T^{-1}u)(m/t)=(t/1)^{-1}\rho^{T,S}((S^{-1}u)(m/1)).
 \]
@@ -637,8 +639,8 @@ $S^{-1}u$, because for $m\in M$ and $t\in T$, we have
 
 \begin{env}{1.4.2}
 \label{env-0.1.4.2}
-With the same notation, for two $A$-modules $M$, $N$, the diagrams (cf. \sref{env}{1.3.4} and
-\sref{env}{1.3.5})
+With the same notations, for two $A$-modules $M$, $N$, the diagrams (cf. \sref{env}{1.3.4}
+and \sref{env}{1.3.5})
 \[
   \xymatrix{
     (S^{-1}M)\otimes_{S^{-1}A}(S^{-1}N)\ar[r]^\sim \ar[d] & S^{-1}(M\otimes_A N)\ar[d] & &
@@ -698,14 +700,14 @@ diagram
 is commutative. In fact, $\vphi$ is an \emph{isomorphism}; it is indeed immediate by
 construction that $\vphi$ is surjective. On the other hand, if
 $\rho_\alpha(a/s_\alpha)\in A'$ is such that ${\vphi(\rho_\alpha(a/s_\alpha))=0}$, this means
-that $a/s_\alpha=0$ in $S^{-1}A$, that is, to say that there exists $s\in S$ such that
+that $a/s_\alpha=0$ in $S^{-1}A$, that is to say that there exists $s\in S$ such that
 $sa=0$; but there is a $\beta\geqslant\alpha$ such that $s\in S_\beta$, and consequently, as
 $\rho_\alpha(a/s_\alpha)=\rho_\beta(sa/ss_\alpha)=0$, we find that $\vphi$ is injective.
 The case for an $A$-module $M$ is treated likewise, and thus we have defined canonical
 isomorphisms
 \[
-  \varinjlim S_\alpha^{-1}A\xrightarrow{\sim}(\varinjlim S_\alpha)^{-1}A,\quad
-  \varinjlim S_\alpha^{-1}M\xrightarrow{\sim}(\varinjlim S_\alpha)^{-1}M,
+  \varinjlim S_\alpha^{-1}A\isoto(\varinjlim S_\alpha)^{-1}A,\quad
+  \varinjlim S_\alpha^{-1}M\isoto(\varinjlim S_\alpha)^{-1}M,
 \]
 the second being \emph{functorial} in $M$.
 \end{env}
@@ -718,9 +720,9 @@ multiplicative subset of $A$. Let us denote by $S_2'$ the canonical image of $S_
 ring $S_1^{-1}A$, which is a multiplicative subset of this ring. For every $A$-module $M$
 there is then a functorial isomorphism
 \[
-  {S_2'}^{-1}(S_1^{-1}M)\xrightarrow{\sim}(S_1 S_2)^{-1}M
+  {S_2'}^{-1}(S_1^{-1}M)\isoto(S_1 S_2)^{-1}M
 \]
-which maps $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
+which sends $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
 \end{env}
 
 \subsection{Change of ring}
@@ -748,7 +750,7 @@ functorial morphism
 of ${S'}^{-1}A'$-modules, sending each element $m/s'$ of ${S'}^{-1}(M_{[\vphi]})$ to
 the element $m/\vphi(s')$ of $(S^{-1}M)_{[\vphi^{S'}]}$; in fact, we verify
 immediately that this definition does not depend on the expression $m/s'$ of the element
-considered. \emph{When} $S=\vphi(S')$, the homomorphism $\sigma$ is \emph{bijective}.
+considered. \emph{When $S=\vphi(S')$}, the homomorphism $\sigma$ is \emph{bijective}.
 When $A'=A$ and $\vphi$ is the identity, $\sigma$ is none other than the homomorphism
 $\rho_M^{S,S'}$ defined in \sref{env}{1.4.1}.
 
@@ -766,7 +768,7 @@ Let $M$ and $N$ be two $A$-modules; by composing the homomorphisms defined in
   (S^{-1}M\otimes_{S^{-1}A}S^{-1}N)_{[\vphi^{S'}]}
   \longleftarrow{S'}^{-1}((M\otimes A)_{[\vphi]})
 \]
-which is an isomorphism when $\vphi(S')=S$. Similarly, by composing the homorphisms in
+which is an isomorphism when $\vphi(S')=S$. Similarly, by composing the homomorphisms in
 \sref{env}{1.3.5} and \sref{env}{1.5.2}, we obtain a homomorphism
 \[
   {S'}^{-1}((\Hom_A(M,N))_{[\vphi]})
@@ -782,13 +784,13 @@ $N'\otimes_{A'}A_{[\vphi]}$, which can be considered as an $A$-module by setting
 $a\cdot(n'\otimes b)=n'\otimes(ab)$. There is a functorial isomorphism of $S^{-1}A$-modules
 \[
   \tau:({S'}^{-1}N')\otimes_{{S'}^{-1}A'}(S^{-1}A)_{[\vphi^{S'}]}
-  \xrightarrow{\sim}S^{-1}(N'\otimes_{A'}A_{[\vphi]})
+  \isoto S^{-1}(N'\otimes_{A'}A_{[\vphi]})
 \]
 \oldpage{18}
-which maps the element $(n'/s')\otimes(a/s)$ to the element $(n'\otimes a)/(\vphi(s')s)$;
+which sends the element $(n'/s')\otimes(a/s)$ to the element $(n'\otimes a)/(\vphi(s')s)$;
 indeed, we verify separately that when we replace $n'/s'$ (resp. $a/s$) by another expression
 of the same element, $(n'\otimes a)/(\vphi(s')s)$ does not change; on the other hand, we can
-define a reciprocal homomorphism of $\tau$ by sending $(n'\otimes a)/s$ to the element
+define an inverse homomorphism of $\tau$ by sending $(n'\otimes a)/s$ to the element
 $(n'/1)\otimes(a/s)$: we use the fact that $S^{-1}(N'\otimes_{A'}A_{[\vphi]})$ is canonically
 isomorphic to $(N'\otimes_{A'}A_{[\vphi]})\otimes_A S^{-1}A$ \sref{env}{1.2.5}, so also to
 $N'\otimes_{A'}(S^{-1}A)_{[\psi]}$, denoting by $\psi$ the composite homomorphism
@@ -801,13 +803,13 @@ If $M'$ and $N'$ are two $A'$-modules, by composing the isomorphisms \sref{env}{
 \sref{env}{1.5.4}, we obtain an isomorphism
 \[
   {S'}^{-1}M\otimes_{{S'}^{-1}A'}{S'}^{-1}N'\otimes_{{S'}^{-1}A'}S^{-1}A
-  \xrightarrow{\sim}S^{-1}(M'\otimes_{A'}N'\otimes_{A'}A).
+  \isoto S^{-1}(M'\otimes_{A'}N'\otimes_{A'}A).
 \]
 Likewise, if $M'$ admits a finite presentation, we have by \sref{env}{1.3.5} and
 \sref{env}{1.5.4} an isomorphism
 \[
   \Hom_{{S'}^{-1}A'}({S'}^{-1}M',{S'}^{-1}N')\otimes_{{S'}^{-1}A'}S^{-1}A
-  \xrightarrow{\sim}S^{-1}(\Hom_{A'}(M',N')\otimes_{A'}A).
+  \isoto S^{-1}(\Hom_{A'}(M',N')\otimes_{A'}A).
 \]
 \end{env}
 
@@ -881,7 +883,7 @@ $\mathfrak{p}=A\cap\mathfrak{q}$. Indeed, $A_\mathfrak{p}$ is a subring of $B_\m
 \sref{env}{1.3.2} and has \emph{a single} prime ideal $\mathfrak{p}'$ \sref{env}{1.2.6};
 since $B_\mathfrak{p}$ is not reduced to $0$, it has at least one prime ideal $\mathfrak{q}'$
 and we have necessarily $\mathfrak{q}'\cap A_\mathfrak{p}=\mathfrak{p}'$; the prime ideal
-$\mathfrak{q}_1$ of $B$, a reciprocal image of $\mathfrak{q}'$ is thus such that
+$\mathfrak{q}_1$ of $B$, an inverse image of $\mathfrak{q}'$ is thus such that
 $\mathfrak{q}_1\cap A=\mathfrak{p}$, and $\emph{a fortiori}$ we have
 $\mathfrak{q}\cap A=\mathfrak{p}$ for every minimal prime ideal $\mathfrak{q}$ of $B$
 contained in $\mathfrak{q}_1$.
@@ -957,7 +959,7 @@ $N_\mathfrak{p}=P_\mathfrak{p}=0$.
 \begin{env}{1.7.3}
 \label{env-0.1.7.3}
 If $M$ is the sum of a family $(M_\lambda)$ of submodules, $M_\mathfrak{p}$ is the sum
-of $(M_\lambda)_\mathfrak{p}$ for every prime ideal $\mathfrak{p}$ of $A$
+of the $(M_\lambda)_\mathfrak{p}$ for every prime ideal $\mathfrak{p}$ of $A$
 (\sref{env}{1.3.3} and \sref{env}{1.3.2}), so $\Supp(M)=\bigcup_\lambda\Supp(M_\lambda)$.
 \end{env}
 
@@ -965,13 +967,13 @@ of $(M_\lambda)_\mathfrak{p}$ for every prime ideal $\mathfrak{p}$ of $A$
 \label{env-0.1.7.4}
 If $M$ is an $A$-module \emph{of finite type}, $\Supp(M)$ is the set of prime
 ideals \emph{containing the annihilator of} $M$. Indeed, if $M$ is cyclic and
-generated by $x$, say that $M_\mathfrak{p}=0$ means that there exists $s\not\in\mathfrak{p}$
-such that $s\cdot x=0$, so that $\mathfrak{p}$ does not contain the annihilator of $x$.
-If now $M$ admits a finite system $(x_i)_{1\leqslant i\leqslant n}$ of generators and if
-$\mathfrak{a}_i$ is the annihilator of $x_i$, it follows from \sref{env}{1.7.3} that
-$\Supp(M)$ is the set of $\mathfrak{p}$ containing one of $\mathfrak{a}_i$, or, equivalently,
-the set of $\mathfrak{p}$ containing $\mathfrak{a}=\bigcap_i\mathfrak{a}_i$, which is the
-annihilator of $M$.
+generated by $x$, we say that $M_\mathfrak{p}=0$ means that there exists
+$s\not\in\mathfrak{p}$ such that $s\cdot x=0$, so that $\mathfrak{p}$ does not contain the
+annihilator of $x$. If now $M$ admits a finite system $(x_i)_{1\leqslant i\leqslant n}$ of
+generators and if $\mathfrak{a}_i$ is the annihilator of $x_i$, it follows from
+\sref{env}{1.7.3} that $\Supp(M)$ is the set of $\mathfrak{p}$ containing one of
+$\mathfrak{a}_i$, or, equivalently, the set of $\mathfrak{p}$ containing
+$\mathfrak{a}=\bigcap_i\mathfrak{a}_i$, which is the annihilator of $M$.
 \end{env}
 
 \begin{env}{1.7.5}
@@ -1107,7 +1109,7 @@ in $X$ are the irreducible components of $Y$.
 \begin{env}{2.1.8}
 \label{env-0.2.1.8}
 Let $Y$ be an irreducible space admitting a single generic point $y$. Let $X$ be a
-topological space, $f$ a continuous mapping from $X$ to $Y$. Then, for any irreducible
+topological space, $f$ a continuous map from $X$ to $Y$. Then, for any irreducible
 component $Z$ of $X$ intersecting $f^{-1}(y)$, $f(Z)$ is dense in $Y$. The converse is not
 necessarily true; however, if $Z$ has a generic point $z$, and if $f(Z)$ is dense in $Y$, we
 must have $f(z)=y$ \sref{env}{2.1.5}; in addition, $Z\cap f^{-1}(y)$ is then the closure of
@@ -1174,13 +1176,13 @@ Noetherian recurrence.
 \begin{env}{3.1.1}
 \label{env-0.3.1.1}
 Let $\K$ be a category, $(A_\alpha)_{\alpha\in I}$,
-$(A_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ two families of objects of $\K$ such that
-$A_{\beta\alpha}=A_{\alpha\beta}$, $(\rho_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ a
-family of morphisms $\rho_{\alpha\beta}:A_\alpha\to A_{\alpha\beta}$. We say that a pair
-formed by an object $A$ of $\K$ and a family of morphisms $\rho_\alpha:A\to A_\alpha$  is a
-\emph{solution to the universal problem} defined by the data of the families $(A_\alpha)$,
-$(A_{\alpha\beta})$, and $(\rho_{\alpha\beta})$ if, for every object $B$ of $\K$, the mapping
-which, at all $f\in\Hom(B,A)$ matches the family
+$(A_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ two families of objects of $\K$ such
+that $A_{\beta\alpha}=A_{\alpha\beta}$, $(\rho_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$
+and $\rho_{\alpha\beta}:A_\alpha\to A_{\alpha\beta}$ is a family of morphisms. We say that a
+pair formed by an object $A$ of $\K$ and a family of morphisms
+$\rho_\alpha:A\to A_\alpha$ is a \emph{solution to the universal problem} defined by the data
+of the families $(A_\alpha)$, $(A_{\alpha\beta})$, and $(\rho_{\alpha\beta})$ if, for every
+object $B$ of $\K$, the map which, for sends $f\in\Hom(B,A)$ to the family
 $(\rho_\alpha\circ f)\in\prod_\alpha\Hom(B,A_\alpha)$ is a \emph{bijection} of $\Hom(B,A)$ to
 the set of all $(f_\alpha)$ such that
 $\rho_{\alpha\beta}\circ f_\alpha=\rho_{\beta\alpha}\circ f_\beta$ for any pair of indices
@@ -1205,7 +1207,7 @@ space $X$ with values in a category $\K$ (G, I, 1.9); we say that such a preshea
     the universal problem for $(\sh{F}(U_\alpha))$, $(\sh{F}(U_\alpha\cap U_\beta))$, and
     $(\rho_{\alpha\beta})$ in} \sref{env}{3.1.1}\footnote{This is a special case of the more
     general notion of a \emph{projective limit} (non-filtered) (\emph{see} (T, I, 1.8) and
-    the book in preparation announced in the Introduction).}.\\
+    the book in preparation announced in the introduction).}.\\
 
 Equivalently, we can say that, for each object $T$ of $\K$, the family
 $U\mapsto\Hom(T,\sh{F}(U))$ is a \emph{sheaf of sets}.
@@ -1213,17 +1215,18 @@ $U\mapsto\Hom(T,\sh{F}(U))$ is a \emph{sheaf of sets}.
 
 \begin{env}{3.1.3}
 \label{env-0.3.1.3}
-Assume that $\K$ is the category defined by a ``type of structure with morphisms'' $\Sigma$,
+Assume that $\K$ is the category defined by a ``type of structure with morphisms''
+$\Sigma$,
 the objects of $\K$ being the sets with structures of type $\Sigma$ and morphisms those of
 $\Sigma$. Suppose that the category $\K$ also satisfies the following condition:\\
 
 (E) If $(A,(\rho_\alpha))$ is a solution of a universal mapping problem \emph{in the
-    category} $\K$ for families $(A_\alpha)$, $(A_{\alpha\beta})$, $(\rho_{\alpha\beta})$,
+    category $\K$} for families $(A_\alpha)$, $(A_{\alpha\beta})$, $(\rho_{\alpha\beta})$,
     then it is also a solution of the universal mapping problem for the same families
     \emph{in the category of sets} (that is, when we consider $A$, $A_\alpha$, and
     $A_{\alpha\beta}$ as sets, $\rho_\alpha$ and $\rho_{\alpha\beta}$ as
     functions)\footnote{It can be proved that it also means that the canonical functor
-    $\K\to(\mathrm{Ens})$ \emph{commutes with projective limits} (not necessarily
+    $\K\to(\mathrm{Set})$ \emph{commutes with projective limits} (not necessarily
     filtered).}.\\
 
 Under these conditions, the condition (F) gives that, when considered as a presheaf \emph{of
@@ -1378,7 +1381,7 @@ composition of morphisms $\sh{F}(U)\to\sh{F}''(U)$ and $\sh{F}''(U)\to\sh{F}(U)$
 are the identities. This being so, for all open $U$, the morphisms
 $\sh{F}''(U)\to\sh{F}''(W)=\sh{F}(W)$ for $W\in\mathfrak{B}$ and $W\subset U$ satisfy the
 conditions characterizing the projective limit of $\sh{F}(W)$ ($W\in\mathfrak{B}$,
-$W\subset U$), which demonstrates our assertion given the uniqueness of a projective limit up
+$W\subset U$), which proves our assertion given the uniqueness of a projective limit up
 to isomorphism.
 
 This posed, let $U$ be any open set of $X$, $(U_\alpha)$ a covering of $U$ by the open sets
@@ -1430,29 +1433,553 @@ identify the ordinary sheaf $\sh{F}$ with $\sh{F}_1'$.
 
 If $\sh{G}$ is a second (ordinary) sheaf on $X$ with values in $\K$, and $u:\sh{F}\to\sh{G}$
 a morphism, the preceding remark shows that the data of the $u_V:\sh{F}(V)\to\sh{G}(V)$
-\emph{for only the $V\in\mathfrak{B}$} completely determine $u$; conversely, it is
-sufficient, the $u_V$ being given for $V\in\mathfrak{B}$, to verify that the commutative
+\emph{for only the $V\in\mathfrak{B}$} completely determines $u$; conversely, it is
+sufficient, the $u_V$ being given for $V\in\mathfrak{B}$, to verify the commutative
 diagram with the restriction morphisms $\rho_V^W$ for $V\in\mathfrak{B}$, $W\in\mathfrak{B}$,
-and $V\subset W$, for
+and $V\subset W$, for there to exist a morphism $u'$ and a unique $\sh{F}$ in $\sh{G}$ such
+that $u_V'=u_V$ for each $V\in\mathfrak{B}$ \sref{env}{3.2.3}.
+\end{env}
+
+\begin{env}{3.2.6}
+\label{env-0.3.2.6}
+Suppose that $\K$ admits projective limits. Then the category of \emph{sheaves on $X$
+with values in $\K$} admits \emph{projective limits}; if $(\sh{F}_\lambda)$ is a
+projective system of sheaves on $X$ with values in $\K$, the
+$\sh{F}(U)=\varprojlim_\lambda\sh{F}_\lambda(U)$ indeed define a presheaf with values in
+$\K$, and the verification of the axiom (F) follows from the transitivity of projective
+limits; the fact that $\sh{F}$ is then the projective limit of the $\sh{F}_\lambda$ is
+immediate.
+
+When $\K$ is the category of sets, for each projective system $(\mathfrak{H}_\lambda)$ such
+\oldpage{28}
+that $\mathfrak{H}_\lambda$ is a \emph{subsheaf} of $\sh{F}_\lambda$ for each $\lambda$,
+$\varprojlim_\lambda\mathfrak{H}_\lambda$ canonically identifies with a \emph{subsheaf} of
+$\varprojlim_\lambda\sh{F}_\lambda$. If $\K$ is the category of abelian groups, the covariant
+functor $\varprojlim_\lambda\sh{F}_\lambda$ is \emph{additive} and \emph{left exact}.
 \end{env}
 
 \subsection{Gluing of sheaves}
 \label{0-prelim-3.3}
 
+\begin{env}{3.3.1}
+\label{env-0.3.3.1}
+Suppose still that the category $\K$ admits (generalized) projective limits. Let $X$ be
+a topological space, $\mathfrak{U}=(U_\lambda)_{\lambda\in L}$ an open cover of $X$, and for
+each $\lambda\in L$, let $\sh{F}_\lambda$ be a sheaf on $U_\lambda$, with values in $\K$; for
+each pair of indices $(\lambda,\mu)$, suppose that we are given an \emph{isomorphism}
+$\theta_{\lambda\mu}:\sh{F}_\mu|(U_\lambda\cap U_\mu)\isoto\sh{F}|(U_\lambda\cap U_\mu)$; in
+addition, suppose that for each triple $(\lambda,\mu,\nu)$, if we denote by
+$\theta_{\lambda\mu}'$, $\theta_{\mu\nu}'$, $\theta_{\lambda\nu}'$ the restrictions of
+$\theta_{\lambda\mu}$, $\theta_{\mu\nu}$, $\theta_{\lambda\nu}$ to
+$U_\lambda\cap U_\mu\cap U_\nu$, then we have
+$\theta_{\lambda\nu}'=\theta_{\lambda\mu}'\circ\theta_{\mu\nu}'$ (\emph{gluing condition} for
+the $\theta_{\lambda\mu}$). Then, there exists a sheaf $\sh{F}$ on $X$, with values in $\K$,
+and for each $\lambda$ an isomorphism
+$\eta_\lambda:\sh{F}|U_\lambda\isoto\sh{F}_\lambda$ such that, for each pair
+$(\lambda,\mu)$, if we denote by $\eta_\lambda'$ and $\eta_\mu'$ the restrictions of
+$\eta_\lambda$ and $\eta_\mu$ to $U_\lambda\cap U_\mu$, then we have
+$\theta_{\lambda\mu}=\eta_\lambda'\circ{\eta_\mu'}^{-1}$; in addition, $\sh{F}$ and the
+$\eta_\lambda$ are determined up to unique isomorphism by these conditions. The uniqueness
+indeed follows immediately from \sref{env}{3.2.5}. To establish the existence of $\sh{F}$,
+denote by $\mathfrak{B}$ the open basis consisting of the open sets contained in at least one
+$U_\lambda$, and for each $U\in\mathfrak{B}$, choose (by the Hilbert function $\tau$) one of
+the $\sh{F}_\lambda(U)$ for one of the $\lambda$ such that $U\subset U_\lambda$; if we denote
+this object by $\sh{F}(U)$, the $\rho_U^V$ for $U\subset V$, $U\in\mathfrak{B}$,
+$V\in\mathfrak{B}$ are defined in an evident way (by means of the $\theta_{\lambda\mu}$), and
+the transitivity conditions is a consequence of the gluing condition; in addition, the
+verification of (F$_0$) is immediate, so the presheaf on $\mathfrak{B}$ thus clearly defines
+a sheaf, and we deduce by the general procedure \sref{env}{3.2.1} an (ordinary) sheaf still
+denoted $\sh{F}$ and which answers the question. We say that $\sh{F}$ is obtained by
+\emph{gluing the $\sh{F}_\lambda$ by means of the $\theta_{\lambda\mu}$} and we usually
+indentify the $\sh{F}_\lambda$ and $\sh{F}|U_\lambda$ by means of the $\eta_\lambda$.
+
+It is clear that each sheaf $\sh{F}$ on $X$ with values in $\K$ can be considered as being
+obtained by the gluing of the sheaves $\sh{F}_\lambda=\sh{F}|U_\lambda$ (where $(U_\lambda)$
+is an arbitrary open cover of $X$), by means of the isomorphisms $\theta_{\lambda\mu}$
+reduced to the identity.
+\end{env}
+
+\begin{env}{3.3.2}
+\label{env-0.3.3.2}
+With the same notations, let $\sh{G}_\lambda$ be a second sheaf on $U_\lambda$ (for each
+$\lambda\in L$) with values in $\K$, and for each pair $(\lambda,\mu)$ let us be given an
+isomorphism
+$\omega_{\lambda\mu}:\sh{G}_\mu|(U_\lambda\cap U_\mu)
+\isoto\sh{G}_\lambda|(U_\lambda\cap U_\mu)$, these isomorphisms satisfying the
+gluing condition. Finally, suppose that we are given for each $\lambda$ a morphism
+$u_\lambda:\sh{F}_\lambda\to\sh{G}_\lambda$, and that the diagrams
+\[
+  \xymatrix{
+    \sh{F}_\mu|(U_\lambda\cap U_\mu)\ar[r]^{u_\mu}\ar[d] &
+    \sh{G}_\mu|(U_\lambda\cap U_\mu)\ar[d]\\
+    \sh{F}_\lambda|(U_\lambda\cap U_\mu)\ar[r]^{u_\lambda} &
+    \sh{G}_\lambda|(U_\lambda\cap U_\mu)
+  }
+  \tag{3.3.2.1}
+\]
+are commutative. Then, if $\sh{G}$ is obtained by gluing the $\sh{G}_\lambda$ by means of the
+$\omega_{\lambda\mu}$, there exists a unique morphism $u:\sh{F}\to\sh{G}$ such that the
+diagrams
+\oldpage{29}
+\[
+  \xymatrix{
+    \sh{F}|U_\lambda\ar[r]^{u|U_\lambda}\ar[d] &
+    \sh{G}|U_\lambda\ar[d]\\
+    \sh{F}_\lambda\ar[r]^{u_\lambda} &
+    \sh{G}_\lambda
+  }
+\]
+are commutative; this follows immediately from \sref{env}{3.2.3}. The correspondence between
+the family $(u_\lambda)$ and $u$ is in a functorial bijection with the subset of
+$\prod_\lambda\Hom(\sh{F}_\lambda,\sh{G}_\lambda)$ satisfying the conditions (3.3.2.1) on
+$\Hom(\sh{F},\sh{G})$.
+\end{env}
+
+\begin{env}{3.3.3}
+\label{env-0.3.3.3}
+With the notations of \sref{env}{3.3.1}, let $V$ be an open set of $X$; it is immediate that
+the restrictions to $V\cap U_\lambda\cap U_\mu$ of the $\theta_{\lambda\mu}$ satisfy the
+gluing condition for the induced sheaves $\sh{F}_\lambda|(V\cap U_\lambda)$ and that the
+sheaves on $V$ obtained by gluing the latter identifies canonically with $\sh{F}|V$.
+\end{env}
+
 \subsection{Direct images of presheaves}
 \label{0-prelim-3.4}
+
+\begin{env}{3.4.1}
+\label{env-0.3.4.1}
+Let $X$, $Y$ be two topological spaces, $\psi:X\to Y$ a continuous map. Let $\sh{F}$ be a
+presheaf on $X$ with values in a category $\K$; for each open $U\subset Y$, let
+$\sh{G}(U)=\sh{F}(\psi^{-1}(U))$, and if $U$, $V$ are two open subsets of $Y$ such that
+$U\subset V$, let $\rho_U^V$ be the morphism $\sh{F}(\psi^{-1}(V))\to\sh{F}(\psi^{-1}(U))$;
+it is immediate that the $\sh{G}(U)$ and the $\rho_U^V$ define a \emph{presheaf} on $Y$ with
+values in $\K$, that we call the \emph{direct image of $\sh{F}$ by $\psi$} and we denote it
+by $\psi_*(\sh{F})$. If $\sh{F}$ is a sheaf, we immediately verify the axiom (F) for the
+presheaf $\sh{G}$, so $\psi_*(\sh{F})$ is a sheaf.
+\end{env}
+
+\begin{env}{3.4.2}
+\label{env-0.3.4.2}
+Let $\sh{F}_1$, $\sh{F}_2$ be two presheaves of $X$ with values in $\K$, and let
+$u:\sh{F}_1\to\sh{F}_2$ be a morphism. When $U$ varies over the set of open subsets of $Y$,
+the family of morphisms $u_{\psi^{-1}(U)}:\sh{F}_1(\psi^{-1}(U))\to\sh{F}_2(\psi^{-1}(U))$
+satisfies the compatibility conditions with the restriction morphisms, and as a result
+defines a a morphism $\psi_*(u):\psi_*(\sh{F}_1)\to\psi_*(\sh{F}_2)$. If
+$v:\sh{F}_2\to\sh{F}_3$ is a morphism from $\sh{F}_2$ to a third preshead on $X$ with values
+in $\K$, we have $\psi_*(v\circ u)=\psi_*(v)\circ\psi_*(u)$; in other words, $\psi_*(\sh{F})$
+is a \emph{covariant functor} in $\sh{F}$, from the category of presheaves (resp. sheaves) on
+$X$ with values in $\K$, to that of presheaves (resp. sheaves) on $Y$ with values in $\K$.
+\end{env}
+
+\begin{env}{3.4.3}
+\label{env-0.3.4.3}
+Let $Z$ be a third topological space, $\psi':Y\to Z$ a continuous map, and let
+$\psi''=\psi'\circ\psi$. It is clear that we have $\psi_*''(\sh{F})=\psi_*'(\psi_*(\sh{F}))$
+for each presheaf $\sh{F}$ on $X$ with values in $\K$; in addition, for each morphism
+$u:\sh{F}\to\sh{G}$ of such presheaves, we have $\psi_*''(u)=\psi_*'(\psi_*(u))$. In other
+words, $\psi_*''$ is the \emph{composition} of the functors $\psi_*'$ and $\psi_*$, and this
+can be written as
+\[
+  (\psi'\circ\psi)_*=\psi_*'\circ\psi_*.
+\]
+
+In addition, for each open set $U$ of $Y$, the image under the restriction
+$\psi|\psi^{-1}(U)$ of the induced presheaf $\sh{F}|\psi^{-1}(U)$ is none other than the
+induced presheaf $\psi_*(\sh{F})|U$.
+\end{env}
+
+\begin{env}{3.4.4}
+\label{env-0.3.4.4}
+Suppose that the category $\K$ admits inductive limits, and let $\sh{F}$ be a presheaf on $X$
+with values in $\K$; for all $x\in X$, the morphisms $\Gamma(\psi^{-1}(U),\sh{F})\to\sh{F}_x$
+($U$ an open neighborhood of $\psi(x)$ in $Y$) form an inductive limit, which gives by
+passing
+\oldpage{30}
+to the limit a morphism $\psi_x:(\psi_*(\sh{F}))_{\psi(x)}\to\sh{F}_x$ of the stalks; in
+general, these morphisms are \emph{neither injective or surjective}. It is functorial;
+indeed, if $u:\sh{F}_1\to\sh{F}_2$ is a morphism of presheaves on $X$ with values in $\K$,
+the diagram
+\[
+  \xymatrix{
+    (\psi_*(\sh{F}_1))_{\psi(x)}\ar[r]^{\psi_x}\ar[d]_{(\psi_*(u))_{\psi(x)}} &
+    (\sh{F}_1)_x\ar[d]^{u_x}\\
+    (\psi_*(\sh{F}_2))_{\psi(x)}\ar[r]^{\psi_x} &
+    (\sh{F}_2)_x
+  }
+\]
+is commutative. If $Z$ is a third topological space, $\psi':Y\to Z$ a continuous map, and
+$\psi''=\psi'\circ\psi$, we have $\psi_x''=\psi_x\circ\psi_{\psi(x)}'$ for $x\in X$.
+\end{env}
+
+\begin{env}{3.4.5}
+\label{env-0.3.4.5}
+Under the hypotheses of \sref{env}{3.4.4}, suppose in addition that $\psi$ is a
+\emph{homeomorphism} from $X$ to the subspace $\psi(X)$ of $Y$. Then, for each $x\in X$,
+$\psi_x$ is an \emph{isomorphism}. This applies in particular to the canonical injection $j$
+of a subset $X$ of $Y$ into $Y$.
+\end{env}
+
+\begin{env}{3.4.6}
+\label{env-0.3.4.6}
+Suppose that $\K$ be the category of groups, or of rings, etc. If $\sh{F}$ is a sheaf on $X$
+with a values in $\K$, of support $S$, and if $y\not\in\overline{\psi(S)}$, it follows from
+the definition of $\psi_*(\sh{F})$ that $(\psi_*(\sh{F}))_y=\{0\}$, or in other words the
+support of $\psi_*(\sh{F})$ is contained in $\overline{\psi(S)}$; but it is not necessarily
+contined in $\psi(S)$. Under the same hypotheses, if $j$ is the canonical injection of a
+subset $X$ of $Y$ into $Y$, the sheaf $j_*(\sh{F})$ induces $\sh{F}$ on $X$; if moreover
+$X$ is \emph{closed} in $Y$, $j_*(\sh{F})$ is the sheaf on $Y$ which induces $\sh{F}$ on $X$
+and $0$ on $Y-X$ (G, II, 2.9.2), but it is in general distinct from the latter when we
+suppose that $X$ is locally closed but not closed.
+\end{env}
 
 \subsection{Inverse images of presheaves}
 \label{0-prelim-3.5}
 
-\subsection{Constant sheaves and locally constant sheaves}
+\begin{env}{3.5.1}
+\label{env-0.3.5.1}
+Under the hypotheses of \sref{env}{3.4.1}, if $\sh{F}$ (resp. $\sh{G}$) is a presheaf on $X$
+(resp. $Y$) with values in $\K$, each morphism $u:\sh{G}\to\psi_*(\sh{F})$ of presheaves on
+$Y$ is then called a \emph{$\phi$-morphism} from $\sh{G}$ to $\sh{F}$, and we denote it also
+by $\sh{G}\to\sh{F}$. We denote also by $\Hom_\phi(\sh{G},\sh{F})$ the set of
+$\Hom_Y(\sh{G},\psi_*(\sh{F}))$ the $\psi$-morphismes from $\sh{G}$ to $\sh{F}$. For each
+pair $(U,V)$, where $U$ is an open set of $X$, $V$ an open set of $Y$ such that
+$\psi(U)\subset V$, we have a morphism $u_{U,V}:\sh{G}(U)\to\sh{F}(U)$ by composing the
+restriction morphism $\sh{F}(\psi^{-1}(V))\to\sh{F}(U)$ and the morphism
+$u_V:\sh{G}(V)\to\psi_*(\sh{F})(V)=\sh{F}(\psi^{-1}(V))$; it is immediate that these
+morphisms renders commutative the diagrams
+\[
+  \xymatrix{
+    \sh{G}(V)\ar[r]^{u_{U,V}}\ar[d] &
+    \sh{F}(U)\ar[d]\\
+    \sh{G}(V')\ar[r]^{u_{U',V'}} &
+    \sh{F}(U')
+  }
+  \tag{3.5.1.1}
+\]
+for $U'\subset U$, $V'\subset V$, $\psi(U')\subset V'$. Conversely, the data of a family
+$(u_{U,V})$ of morphisms rendering commutative the diagrams (3.5.1.1) define a
+$\psi$-morphism $u$, since it suffices to take $u_V=u_{\psi^{-1}(V),V}$.
+
+\oldpage{31}
+If the category $\K$ admits (generalized) projective limits, and if $\mathfrak{B}$,
+$\mathfrak{B}'$ are the bases of the topologies of $X$ and $Y$ respectively, to define a
+$\psi$-morphism $u$ of \emph{sheaves}, we can restrict to giving the $u_{U,V}$ for
+$U\in\mathfrak{B}$, $V\in\mathfrak{B}'$, and $\psi(U)\subset V$, satisfying the compatibility
+conditions of (3.5.1.1) for $U$, $U'$ in $\mathfrak{B}$ and $V$, $V'$ in $\mathfrak{B}'$; it
+indeed suffices to define $u_W$, for each open $W\subset Y$, as the projective limit of the
+$u_{U,V}$ for $V\in\mathfrak{B}'$ and $V\subset W$, $U\in\mathfrak{B}$ and
+$\psi(U)\subset V$.
+
+When the category $\K$ admits inductive limits, we have, for each $x\in X$, a morphism
+$\sh{G}(V)\to\sh{F}(\psi^{-1}(V))\to\sh{F}_x$, for each open neighborhood $V$ of $\psi(x)$ in
+$Y$, and these morphisms form an inductive system which gives by passing to the limit a
+morphism $\sh{G}_{\psi(x)}\to\sh{F}_x$.
+\end{env}
+
+\begin{env}{3.5.2}
+\label{env-0.3.5.2}
+Under the hypotheses of \sref{env}{3.4.3}, let $\sh{F}$, $\sh{G}$, $\sh{H}$ be presheaves
+with values in $\K$ on $X$, $Y$, $Z$ respectively, and let $u:\sh{G}\to\psi_*(\sh{F})$,
+$v:\sh{H}\to\psi_*'(\sh{G})$ a $\psi$-morphism and a $\psi'$-morphism respectively. We obtain
+a $\psi''$-morphism
+$w:\sh{H}\xrightarrow{v}\psi_*'(\sh{G})\xrightarrow{\psi_*'(u)}
+\psi_*'(\psi_*(\sh{F}))=\psi_*''(\sh{F})$, that we call, by definition, the
+\emph{composition} of $u$ and $v$. We can therefore consider the pairs $(X,\sh{F})$
+consisting of a topological space $X$ and a presheaf $\sh{F}$ on $X$ (with values in $\K$) as
+forming a \emph{category}, the morphisms being the pairs
+$(\psi,\theta):(X,\sh{F})\to(Y,\sh{G})$ consisting of a continuous map $\psi:X\to Y$ and
+of a $\psi$-morphism $\theta:\sh{G}\to\sh{F}$.
+\end{env}
+
+\begin{env}{3.5.3}
+\label{env-0.3.5.3}
+Let $\psi:X\to Y$ be a continuous map, $\sh{G}$ a \emph{presheaf} on $Y$ with values in $\K$.
+We call the \emph{inverse image of $\sh{G}$ under $\psi$} the pair $(\sh{G}',\rho)$, where
+$\sh{G}'$ is a \emph{sheaf} on $X$ with values in $\K$, and $\rho:\sh{G}\to\sh{G}'$ a
+$\psi$-morphism (in other words a homomorphism $\sh{G}\to\psi_*(\sh{G}')$) such that, for
+each \emph{sheaf} $\sh{F}$ on $X$ with values in $\K$, the map
+\[
+  \Hom_X(\sh{G}',\sh{F})\longrightarrow\Hom_\psi(\sh{G},\sh{F})
+  \longrightarrow\Hom_Y(\sh{G},\psi_*(\sh{F}))
+  \tag{3.5.3.1}
+\]
+sending $v$ to $\psi_*(v)\circ\rho$, is a \emph{bijection}; this map, is functorial in
+$\sh{F}$, defines then an isomorphism of functors in $\sh{F}$. The pair $(\sh{G}',\rho)$
+is the solution of a universal problem, and we say it is \emph{determined up to unique
+isomorphism} when it exists. We then write $\sh{G}'=\psi^*(\sh{G})$, $\rho=\rho_\sh{G}$, and
+by abuse of language, we say that $\psi^*(\sh{G})$ is \emph{the inverse image sheaf} of
+$\sh{G}$ under $\psi$, and we agree that $\psi^*(\sh{G})$ is considered as equipped with a
+\emph{canonical $\psi$-morphism $\rho_\sh{G}:\sh{G}\to\psi^*(\sh{G})$}, that is to say the
+\emph{canonical homomorphism} of presheaves on $Y$:
+\[
+  \rho_\sh{G}:\sh{G}\longrightarrow\psi_*(\psi^*(\sh{G})).
+  \tag{3.5.3.2}
+\]
+
+For each homomorphism $v:\psi^*(\sh{G})\to\sh{F}$ (where $\sh{F}$ is a sheaf on $X$ with
+values in $\K$), we put $v^\flat=\psi_*(v)\circ\rho_\sh{G}:\sh{G}\to\psi_*(\sh{F})$. By
+definition, \emph{each} morphism of presheaves $u:\sh{G}\to\psi_*(\sh{F})$ is of the form
+$v^\flat$ for a unique $v$, which we will denote $u^\sharp$. In other words, each morphism
+$u:\sh{G}\to\psi_*(\sh{F})$ of presheaves factorizes in a unique way as
+\[
+  u:\sh{G}\xrightarrow{\rho_\sh{G}}\psi_*(\psi^*(\sh{G}))
+  \xrightarrow{\psi_*(u^\sharp)}\psi_*(\sh{F}).
+  \tag{3.5.3.3}
+\]
+\end{env}
+
+\begin{env}{3.5.4}
+\label{env-0.3.5.4}
+\oldpage{32}
+Suppose now that the category $\K$ be such\footnote{In the book mentioned in the
+introduction, we will give very general conditions on the category $\K$ ensuring the
+existence of inverse images of presheaves with values in $\K$.} that \emph{each} presheaf
+$\sh{F}$ on $Y$ with values in $\K$ admits an inverse image under $\psi$, and we denote it
+by $\psi^*(\sh{G})$.
+
+We will see that we can define $\psi^*(\sh{G})$ as a \emph{covariant functor} in $\sh{G}$,
+from the category of presheaves on $Y$ with values in $\K$, to that of sheaves on $X$ with
+values in $\K$, in such a way that the isomorphism $v\mapsto v^\flat$ is an \emph{isomorphism
+of bifunctors}
+\[
+  \Hom_X(\psi^*(\sh{G}),\sh{F})\isoto\Hom_Y(\sh{G},\psi_*(\sh{F}))
+  \tag{3.5.4.1}
+\]
+in $\sh{G}$ and $\sh{F}$.
+
+Indeed, for each morphism $w:\sh{G}_1\to\sh{G}_2$ of presheaves on $Y$ with values in $\K$,
+consider the composite morphism
+$\sh{G}_1\xrightarrow{w}\sh{G}_2\xrightarrow{\rho_{\sh{G}_2}}\psi_*(\psi^*(\sh{G}_2))$; to it
+corresponds a morphism $(\rho_{\sh{G}_2}\circ w)^\sharp:\psi^*(\sh{G}_1)\to\psi^*(\sh{G}_2)$,
+that we denote by $\psi^*(w)$. We therefore have, according to (3.5.3.3),
+\[
+  \psi_*(\psi^*(w))\circ\rho_{\sh{G}_1}=\rho_{\sh{G}_2}\circ w.
+  \tag{3.5.4.2}
+\]
+For each morphism $u:\sh{G}_2\to\psi_*(\sh{F})$, where $\sh{F}$ is a sheaf on $X$ with values
+in $\K$, we have, according to (3.5.3.3), (3.5.4.2), and the definition of $u^\flat$
+\[
+  (u^\sharp\circ\psi^*(w))^\flat=\psi_*(u^\sharp)\circ\psi_*(\psi^*(w))\circ\rho_{\sh{G}_1}
+  =\psi_*(u^\sharp)\circ\rho_{\sh{G}_2}\circ w=u\circ w
+\]
+where again
+\[
+  (u\circ w)^\sharp=u^\sharp\circ\psi^*(w).
+  \tag{3.5.4.3}
+\]
+
+If we take in particular for $u$ a morphism
+$\sh{G}_2\xrightarrow{w'}\sh{G}_3\xrightarrow{\rho_{\sh{G}_3}}\psi_*(\psi^*(\sh{G}_3))$, it
+becomes
+$\psi^*(w'\circ w)=(\rho_{\sh{G}_3}\circ w'\circ w)^\sharp
+=(\rho_{\sh{G}_3}\circ w')^\sharp\circ\psi^*(w)=\psi^*(w')\circ\psi^*(w)$, hence our
+assertion.
+
+FInally, for each sheaf $\sh{F}$ on $X$ with values in $\K$, let $i_\sh{F}$ be the identity
+morphism of $\psi_*(\sh{F})$ and denote by
+\[
+  \sigma_\sh{F}:\psi^*(\psi_*(\sh{F})\longrightarrow\sh{F}
+\]
+the morphism $(i_\sh{F})^\sharp$; the formula (3.5.4.3) gives in particular the factorization
+\[
+  u^\sharp:\psi^*(\sh{G})\xrightarrow{\psi^*(u)}\psi^*(\psi_*(\sh{F}))
+  \xrightarrow{\sigma_\sh{F}}\sh{F}
+  \tag{3.5.4.4}
+\]
+for each morphism $u:\sh{G}\to\psi_*(\sh{F})$. We say that the morphism $\sigma_\sh{F}$ is
+\emph{canonical}.
+\end{env}
+
+\begin{env}{3.5.5}
+\label{env-0.3.5.5}
+Let $\psi':Y\to Z$ be a continuous map, and suppose that each presheaf $\sh{H}$ on $Z$ with
+values in $\K$ admits an inverse image ${\psi'}^*(\sh{H})$ under $\psi'$. Then (with the
+hypotheses of \sref{env}{3.5.4}) each presheaf $\sh{H}$ on $Z$ with values in $\K$ admits
+an inverse image under $\psi''=\psi'\circ\psi$ and we have a canonical functorial isomorphism
+\[
+  {\psi''}^*(\sh{H})\isoto\psi^*({\psi'}^*(\sh{H})).
+  \tag{3.5.5.1}
+\]
+\oldpage{33}
+This indeed follows immediately from the definitions, taking into account that
+$\psi_*''=\psi_*'\circ\psi_*$. In addition, if $u:\sh{G}\to\psi_*(\sh{F})$ is a
+$\psi$-morphism, $v:\sh{H}\to\psi_*'(\sh{G})$ a $\psi'$-morphism, and $w=\psi_*'(u)\circ v$
+their composition \sref{env}{3.5.2}, we have immediately that $w^\sharp$ is the composite
+morphism
+\[
+  w^\sharp:\psi^*({\psi'}^*(\sh{H}))\xrightarrow{\psi^*(v^\sharp)}\psi^*(\sh{G})
+  \xrightarrow{u^\sharp}\sh{F}.
+\]
+\end{env}
+
+\begin{env}{3.5.6}
+\label{env-0.3.5.6}
+We take in particular for $\psi$ the identity map $1_X:X\to X$. Then if the inverse image
+under $\psi$ of a presheaf $\sh{F}$ on $X$ with values in $\K$ exists, we say that this
+inverse image is the \emph{sheaf associated to the presheaf $\sh{F}$}. Each morphism
+$u:\sh{F}\to\sh{F}'$ from $\sh{F}$ to a \emph{sheaf} $\sh{F}'$ with values in $\K$ factorizes
+in a unique way as
+$\sh{F}\xrightarrow{\rho_\sh{F}}1_X^*(\sh{F})\xrightarrow{u^\sharp}\sh{F}'$.
+\end{env}
+
+\subsection{Simple sheaves and locally simple sheaves}
 \label{0-prelim-3.6}
+
+\begin{env}{3.6.1}
+\label{env-0.3.6.1}
+We say that a \emph{presheaf} $\sh{F}$ on $X$, with values in $\K$, is \emph{constant} if
+the canonical morphisms $\sh{F}(X)\to\sh{F}(U)$ are \emph{isomorphisms} for each nonempty
+open $U\subset X$; we note that $\sh{F}$ is not necessarily a sheaf. We say that a
+\emph{sheaf} is \emph{simple} if it is the associated sheaf \sref{env}{3.5.6} of a constant
+presheaf. We say that a sheaf $\sh{F}$ is \emph{locally simple} if each $x\in X$ admits an
+open neighborhood $U$ such that $\sh{F}|U$ is simple.
+\end{env}
+
+\begin{env}{3.6.2}
+\label{env-0.3.6.2}
+Suppose that $X$ is \emph{irreducible} \sref{env}{2.1.1}; then the following properties are
+equivalent:
+\begin{enumerate}[label=(\alph*)]
+  \item \emph{$\sh{F}$ is a constant presheaf on $X$};
+  \item \emph{$\sh{F}$ is a simple sheaf on $X$};
+  \item \emph{$\sh{F}$ is a locally simple sheaf on $X$}.
+\end{enumerate}
+\end{env}
+
+Indeed, let $\sh{F}$ be a constant presheaf on $X$; if $U$, $V$ are two nonempty open sets in
+$X$, $U\cap V$ is nonempty, so $\sh{F}(X)\to\sh{F}(U)\to\sh{F}(U\cap V)$ and
+$\sh{F}(X)\to\sh{F}(U)$ are isomorphisms, and similarly both
+$\sh{F}(U)\to\sh{F}(U\cap V)$ and $\sh{F}(V)\to\sh{F}(U\cap V)$ are isomorphisms. We
+therefore conclude immediatelt that the axiom (F) of \sref{env}{3.1.2} is clearly satisfied,
+$\sh{F}$ is isomorphic to its associated sheaf, and as a result (a) implies (b).
+
+Now let $(U_\alpha)$ be an open cover of $X$ by nonempty open sets and let $\sh{F}$ be a
+sheaf on $X$ such that $\sh{F}|U_\alpha$ is simple for each $\alpha$; as $U_\alpha$ is
+irreducible, $\sh{F}|U_\alpha$ is a constant presheaf according to the above. As
+$U_\alpha\cap U_\beta$ is not empty, $\sh{F}(U_\alpha)\to\sh{F}(U_\alpha\cap U_\beta)$ and
+$\sh{F}(U_\beta)\to\sh{F}(U_\alpha\cap U_\beta)$ are isomorphisms, hence we have a canonical
+isomorphism $\theta_{\alpha\beta}:\sh{F}(U_\alpha)\to\sh{F}(U_\beta)$ for each pair of
+indices. But them if we apply the condition (F) for $U=X$, we see that for each index
+$\alpha_0$, $\sh{F}(U_{\alpha_0})$ and the $\theta_{\alpha_0\alpha}$ are solutions to the
+universal problem, which (according to the uniqueness) implies that
+$\sh{F}(X)\to\sh{F}(U_{\alpha_0})$ is an isomorphism, and hence proves that (c) implies (a).
 
 \subsection{Inverse images of presheaves of groups or rings}
 \label{0-prelim-3.7}
 
+\begin{env}{3.7.1}
+\label{env-0.3.7.1}
+\oldpage{34}
+We will show that when we take $\K$ to be the category of sets, the inverse image under
+$\psi$ for each presheaf $\sh{G}$ with values in $\K$ \emph{always exists} (the notations
+and hypotheses on $X$, $Y$, $\psi$ being that of \sref{env}{3.5.3}). Indeed, for each open
+$U\subset X$, define $\sh{G}'(U)$ as follows: an element $s'$ of $\sh{G}'(U)$ is a family
+$(s_x')_{x\in U}$, where $s_x'\in\sh{G}_{\psi(x)}$ for each $x\in U$, and where, for each
+$x\in U$, the following condition is satisfied: there exists an open neighborhood $V$ of
+$\psi(x)$ in $Y$, a neighborhood $W\subset\psi^{-1}(V)\cap U$ of $x$, and an element
+$s\in\sh{G}(V)$ such that $s_z'=s_{\psi(x)}$ for all $z\in W$. We verify immediately that
+$U\mapsto\sh{G}'(U)$ clearly satisfies the axioms of a \emph{sheaf}.
+
+Now let $\sh{F}$ be a sheaf of sets on $X$, and let $u:\sh{G}\to\psi_*(\sh{F})$,
+$v:\sh{G}'\to\sh{F}$ be morphisms. We define $u^\sharp$ and $v^\flat$ in the following
+manner: if $s'$ is a section of $\sh{G}'$ over a neighborhood $U$ of $x\in X$ and if $V$ is
+an open neighborhood of $\psi(x)$ and $s\in\sh{G}(V)$ such that we have $s_z'=s_{\psi(x)}$
+for $z$ in a neighborhood of $x$ contained in $\psi^{-1}(V)\cap U$, we take
+$u_x^\sharp(s_x')=u_{\psi(x)}(s_{\psi(x)})$. Similarly, if $s\in\sh{G}(V)$ ($V$ open in $Y$),
+$v^\flat(s)$ is the section of $\sh{F}$ over $\psi^{-1}(V)$, the image under $v$ of the
+sectin $s'$ of $\sh{G}'$ such that $s_x'=s_{\psi(x)}$ for all $x\in\psi^{-1}(V)$. In
+addition, the canonical homomorphism \sref{env}{3.5.3} $\rho:\sh{G}\to\psi_*(\psi^*(\sh{G}))$
+is defined in the following manner: for each open $V\subset Y$ and each section
+$s\in\Gamma(V,\sh{G})$, $\rho(s)$ is the section $(s_{\psi(x)})_{x\in\psi^{-1}(V)}$ of
+$\psi^*(\sh{G})$ over $\psi^{-1}(V)$. The verification of the relations $(u^\sharp)^\flat=u$,
+$(v^\flat)^\sharp=v$, and $v^\flat=\psi_*(v)\circ\rho$ is immediate, and proves our
+assertion.
+
+We check that, if $w:\sh{G}_1\to\sh{G}_2$ is a homomorphism of sheaves of sets on $Y$,
+$\psi^*(w)$ is expressed in the following manner: if $s'=(s_x')_{x\in U}$ is a section of
+$\psi^*(\sh{G}_1)$ over an open set $U$ of $X$, $(\psi^*(w))(s')$ is the family
+$(w_{\psi(x)}(s_x'))_{x\in U}$. Finally, it is immediate that for each open set $V$ of $Y$,
+the inverse image of $\sh{G}|V$ under the restriction of $\psi$ to $\psi^{-1}(V)$ is
+identical to the induced sheaf $\psi^*(\sh{G})|\psi^{-1}(V)$.
+
+When $\psi$ is the identity $1_X$, we recover the definition of a sheaf of sets associated
+to a presheaf (G, II, 1.2). The above considerations apply without change when $\K$ is the
+category of groups or of rings (not necessarily commutative).
+
+When $X$ is any subset of a topological space $Y$, and $j$ the canonical injection $X\to Y$,
+for each sheaf $\sh{G}$ on $Y$ with values in a category $\K$, we call the \emph{induced}
+sheaf of $X$ by $\sh{G}$ the inverse image $j^*(\sh{G})$ (whenever it exists); for the
+sheaves of sets (or of groups, or of rings) we recover the usual definition (G, II, 1.5).
+\end{env}
+
+\begin{env}{3.7.2}
+\label{env-0.3.7.2}
+Keeping the notations and hypotheses of \sref{env}{3.5.3}, suppose that $\sh{G}$ is a
+\emph{sheaf} of groups (resp. of rings) on $Y$. The definition of sections of
+$\psi^*(\sh{G})$ \sref{env}{3.7.1} shows (considering \sref{env}{3.4.4}) that the
+homomorphism of stalks $\psi_x\circ\rho_{\psi(x)}:\sh{G}_{\psi(x)}\to(\psi^*(\sh{G}))_x$
+is a \emph{functorial isomorphism in $\sh{G}$}, that identifies the two stalks; with this
+identification, $u_x^\sharp$ is identical to the homomorphism defined in \sref{env}{3.5.1},
+and in particular, we have $\Supp(\psi^*(\sh{G}))=\psi^{-1}(\Supp(\sh{G}))$.
+
+An immediate consequence of this result is that \emph{the functor $\psi^*(\sh{G})$ is exact
+in $\sh{G}$} in the abelian category of sheaves of abelian groups.
+\end{env}
+
 \subsection{Sheaves on pseudo-discrete spaces}
 \label{0-prelim-3.8}
+
+\begin{env}{3.8.1}
+\label{env-0.3.8.1}
+\oldpage{35}
+Let $X$ be a topological space whose topology admits a basis $\mathfrak{B}$ consisting of
+open \emph{quasicompact} subsets. Let $\sh{F}$ be a \emph{sheaf of sets} on $X$; if we equip
+each of the $\sh{F}(U)$ with the \emph{discrete} topology, $U\mapsto\sh{F}(U)$ is a
+\emph{presheaf of topological spaces}. We will see that there exists a \emph{sheaf of
+topological spaces $\sh{F}'$ associated to $\sh{F}$} \sref{env}{3.5.6} such that
+$\Gamma(U,\sh{F}')$ is the discrete space $\sh{F}(U)$ for each open \emph{quasicompact}
+subsets $U$. It will suffice to show that the presheaf $U\mapsto\sh{F}(U)$ of discrete
+topological spaces \emph{on} $\mathfrak{B}$ satisfy the condition (F$_0$) of
+\sref{env}{3.2.2}, and more generally that if $U$ is an open quasicompact subset and if
+$(U_\alpha)$ is a cover of $U$ by sets of $\mathfrak{B}$, then the least fine topology
+$\mathscr{T}$ on $\Gamma(U,\sh{F})$ renders continuous the maps
+$\Gamma(U,\sh{F})\to\Gamma(U_\alpha,\sh{F})$ is the \emph{discrete} topology. There exists
+a finite number of indices $\alpha_i$ such that $U=\bigcup_i U_{\alpha_i}$.
+Let $s\in\Gamma(U,\sh{F})$ and let $s_i$ be its image in $\Gamma(U_{\alpha_i},\sh{F})$;
+the intersection of the inverse images of the sets $\{s_i\}$ is by definition a neighborhood
+of $s$ for $\mathscr{T}$; but since $\sh{F}$ is a sheaf of sets and the $U_{\alpha_i}$ cover
+$U$, this intersection is reduced to $s$, hence our assertion.
+
+We note that if $U$ is an open non quasicompact subset of $X$, the topological space
+$\Gamma(U,\sh{F}')$ still has $\Gamma(U,\sh{F})$ as the underlying set, but the topology is
+not discrete in general: it is the least fine rendering commutative the maps
+$\Gamma(U,\sh{F})\to\Gamma(V,\sh{F})$, for $V\in\mathfrak{B}$ and $V\subset U$ (the
+$\Gamma(V,\sh{F})$ being discrete).
+
+The above considerations apply without modification to sheaves of groups or of rings (not
+necessarily commutative), and associate to them sheaves of \emph{topological
+groups} or \emph{topological rings}, respectively. To summarize, we say that the sheaf
+$\sh{F}'$ is the \emph{pseudo-discrete} sheaf of \emph{spaces} (resp. \emph{groups},
+\emph{rings}) associated to a sheaf of sets (resp. groups, rings) $\sh{F}$.
+\end{env}
+
+\begin{env}{3.8.2}
+\label{env-0.3.8.2}
+Let $\sh{F}$, $\sh{G}$ be two sheaves of sets (resp. groups, rings) on $X$,
+$u:\sh{F}\to\sh{G}$ a homomorphism. Then $u$ is thus a \emph{continuous} homomorphism
+$\sh{F}'\to\sh{G}'$, if we denote by $\sh{F}'$ and $\sh{G}'$ the pseudo-discrete sheaves
+associated to $\sh{F}$ and $\sh{G}$; this follows in effect from \sref{env}{3.2.5}.
+\end{env}
+
+\begin{env}{3.8.3}
+\label{env-0.3.8.3}
+Let $\sh{F}$ be a sheaf of sets, $\sh{H}$ a subsheaf of $\sh{F}$, $\sh{F}'$ and $\sh{H}'$ the
+pseudo-discrete sheaves associated to $\sh{F}$ and $\sh{H}$ respectively. Then, for each open
+$U\subset X$, $\Gamma(U,\sh{H}')$ is \emph{closed} in $\Gamma(U,\sh{F}')$: indeed, it is the
+intersection of the inverse images of the $\Gamma(V,\sh{H})$ (for $V\in\mathfrak{B}$,
+$V\subset U$) under the continuous maps $\Gamma(U,\sh{F})\to\Gamma(V,\sh{F})$, and
+$\Gamma(V,\sh{H})$ is closed in the discrete space $\Gamma(V,\sh{F})$.
+\end{env}
 
 \section{Ringed spaces}
 \label{0-prelim-4}
@@ -1486,13 +2013,13 @@ $\Psi'=(\psi',\theta'):(Y,\sh{B})\to(Z,\sh{C})$ and of $\Psi$, denoted
 $\Psi''=\Psi'\circ\Psi$, is the morphism $(\psi'',\theta'')$ where $\psi''=\psi'\circ\psi$,
 and $\theta''$ is the composition of $\theta$ and $\theta'$ (equal to
 $\psi_*'(\theta)\circ\theta'$, cf. \sref{env}{3.5.2}). For ringed spaces, remember that we
-then have ${\theta''}^\#=\theta^\#\circ\psi^*({\theta'}^\#)$ \sref{env}{3.5.5}; therefore
-if ${\theta'}^\#$ and $\theta^\#$ are the \emph{injective} (resp. \emph{surjective}),
-the same is true of ${\theta''}^\#$, taking into account that $\psi_x\circ\rho_{\psi(x)}$
-is an isomorphism for all $x\in X$ \sref{env}{3.7.2}. We verify immediately, thanks to the
-above, that when $\psi$ is an \emph{injective} continuous map and $\theta^\#$ is
-a \emph{surjective} homomophism of sheaves of rings, the morphism $(\psi,\theta)$ is
-a \emph{momomorphism} (T, 1.1) in the category of ringed spaces.
+then have ${\theta''}^\sharp=\theta^\sharp\circ\psi^*({\theta'}^\sharp)$ \sref{env}{3.5.5};
+therefore if ${\theta'}^\sharp$ and $\theta^\sharp$ are \emph{injective} (resp.
+\emph{surjective}), the same is true of ${\theta''}^\sharp$, taking into account that
+$\psi_x\circ\rho_{\psi(x)}$ is an isomorphism for all $x\in X$ \sref{env}{3.7.2}. We verify
+immediately, thanks to the above, that when $\psi$ is an \emph{injective} continuous map and
+$\theta^\sharp$ is a \emph{surjective} homomophism of sheaves of rings, the morphism
+$(\psi,\theta)$ is a \emph{momomorphism} (T, 1.1) in the category of ringed spaces.
 
 By abuse of language, we will often replace $\psi$ by $\Psi$ in notation, for
 example in writing $\Psi^{-1}(U)$ in place of $\psi^{-1}(U)$ for a subset $U$ of $Y$,
@@ -1568,7 +2095,7 @@ through the set of prime ideals of $A$) is a regular local ring; we will say tha
 rings $\sh{A}$ on $X$ is \emph{regular at a point $x$} (resp. \emph{regular}) if the stalk
 $\sh{A}_x$ is a regular ring (resp. if $\sh{A}$ is regular at each point). Finally, we will
 say that a sheaf of rings $\sh{A}$ on $X$ is \emph{normal at a point $x$} (resp.
-\emph{normal}) if the stalk $\sh{A}_x$ is an \emph{integral domain and integrally closed}
+\emph{normal}) if the stalk $\sh{A}_x$ is an \emph{integral and integrally closed} ring
 (resp. if $\sh{A}$ is normal at each point). We will say that a ringed space $(X,\sh{A})$ has
 any of these preceeding properties if the sheaf of rings $\sh{A}$ has that property.
 
@@ -1586,7 +2113,7 @@ $(\sh{A}_m)_x(\sh{F}_n)_x\subset(\sh{F}_{m+n})_x$) for each point $x$.
 Given a ringed space $(X,\sh{A})$ (not necessarily commutative), we will not recall here the
 definitions of the bifunctors $\sh{F}\otimes_\sh{A}\sh{G}$,
 $\shHom_\sh{A}(\sh{F},\sh{F})$, and $\Hom_\sh{A}(\sh{F},\sh{G})$ (G, II, 2.8 and 2.2) in
-the categories of right or left (depending on the case) $\sh{A}$-modules, with values in the
+the categories of left or right (depending on the case) $\sh{A}$-modules, with values in the
 category of sheaves of abelian groups (or more generally of $\sh{C}$-modules, if $\sh{C}$ is
 the center of $\sh{A}$). The stalk $(\sh{F}\otimes_\sh{A}\sh{G})_x$ for each point $x\in X$
 identifies canonically with $\sh{F}_x\otimes_{\sh{A}_x}\sh{G}_x$ and we define a canonical
@@ -1617,7 +2144,7 @@ $U\subset X$, we have
 \]
 
 For each left $\sh{A}$-module (resp. right), we define the \emph{dual} of $\sh{F}$ and
-denote it by $\dual{F}$ the right $\sh{A}$-module (resp. left)
+denote it by $\dual{\sh{F}}$ the right $\sh{A}$-module (resp. left)
 $\shHom_\sh{A}(\sh{F},\sh{A})$.
 
 Finally, if $\sh{A}$ is a sheaf of commutative rings, $\sh{F}$ an $\sh{A}$-module,
@@ -1648,7 +2175,7 @@ of ideals of $\sh{A}$, we have $\sh{J}_1(\sh{J}_2\sh{F})=(\sh{J}_1\sh{J}_2)\sh{F
 Let $(X_\lambda,\sh{A}_\lambda)_{\lambda\in L}$ be a family of ringed spaces; for each couple
 $(\lambda,\mu)$, suppose we are given an open subset $V_{\lambda\mu}$ of $X_\lambda$, and an
 isomorphism of ringed spaces
-$\vphi_{\lambda\mu}:(V_{\mu\lambda},\sh{A}_\mu|V_{\lambda\mu})\xrightarrow{\sim}
+$\vphi_{\lambda\mu}:(V_{\mu\lambda},\sh{A}_\mu|V_{\lambda\mu})\isoto
 (V_{\lambda\mu},\sh{A}_\lambda|V_{\lambda\mu})$, with $V_{\lambda\lambda}=X_\lambda$,
 $\vphi_{\lambda\lambda}$ being the identity. Furthermore, suppose that, for each triple
 $(\lambda,\mu,\nu)$, if we denote by $\vphi_{\mu\lambda}'$ the restriction of
@@ -1677,7 +2204,7 @@ $\vphi_{\lambda\mu}$.
 
 \begin{env}{4.2.1}
 \label{env-0.4.2.1}
-Let $(X,\sh{A}$, $(Y,\sh{B})$ be two ringed spaces, $\Psi=(\psi,\theta)$ a morphism
+Let $(X,\sh{A})$, $(Y,\sh{B})$ be two ringed spaces, $\Psi=(\psi,\theta)$ a morphism
 $(X,\sh{A})\to(Y,\sh{B})$; $\psi_*(\sh{A})$ is then a sheaf of rings on $Y$, and $\theta$ a
 homomorphism $\sh{B}\to\psi_*(\sh{A})$ of sheaves of rings. Then let $\sh{F}$ be an
 $\sh{A}$-module; the direct image $\psi_*(\sh{F})$ is a sheaf of abelian groups on $Y$. In
@@ -1695,11 +2222,134 @@ denote it $\Psi_*(\sh{F})$. If $\sh{F}_1$, $\sh{F}_2$ are two $\sh{A}$-modules o
 $u$ an $\sh{A}$-homomorphism $\sh{F}_1\to\sh{F}_2$, it is immediate (by considering the
 sections over the open subsets of $Y$) that $\psi_*(u)$ is a $\psi_*(\sh{A})$-homomorphism
 $\psi_*(\sh{F}_1)\to\psi_*(\sh{F}_2)$, and \emph{a fortiori} a $\sh{B}$-homomorphism
-$\Psi_*(\sh{F}_1)\to\Psi_*(\sh{F}_2)$;
+$\Psi_*(\sh{F}_1)\to\Psi_*(\sh{F}_2)$; as a $\sh{B}$-homomorphism, we denote it by
+$\Psi_*(u)$. So we see that $\Psi_*$ is a \emph{covariant functor} from the category of
+$\sh{A}$-modules to that of $\sh{B}$-modules. In addition, it is immediate that this functor
+is \emph{left exact} (G, II, 2.12).
+
+On $\psi_*(\sh{A})$, the structure of a $\sh{B}$-module and the structure of a sheaf of rings
+define a $\sh{B}$-algebra structure; we denote by $\Psi_*(\sh{A})$ this $\sh{B}$-algebra.
+\end{env}
+
+\begin{env}{4.2.2}
+\label{env-0.4.2.2}
+Let $\sh{M}$, $\sh{N}$ be two $\sh{A}$-modules. For each open set $U$ of $Y$, we have a
+canonical map
+\[
+  \Gamma(\psi^{-1}(U),\sh{M})\times\Gamma(\psi^{-1}(U),\sh{N})
+  \longrightarrow\Gamma(\psi^{-1}(U),\sh{M}\otimes_\sh{A}\sh{N})
+\]
+which is bilinear over the ring $\Gamma(\psi^{-1}(U),\sh{A})=\Gamma(U,\psi_*(\sh{A}))$, and
+\emph{a fortiori} over $\Gamma(U,\sh{B})$; it therefore defines a homomorphism
+\[
+  \Gamma(U,\Psi_*(\sh{M}))\otimes_{\Gamma(U,\sh{B})}\Gamma(U,\Psi_*(\sh{N}))
+  \longrightarrow\Gamma(U,\Psi_*(\sh{M}\otimes_\sh{A}\sh{N}))
+\]
+and as we check immediately that these homomorphisms are compatible with the restriction
+operations, they give a canonical functorial homomorphism of $\sh{B}$-modules
+\[
+  \Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N})
+  \longrightarrow\Psi_*(\sh{M}\otimes_\sh{A}\sh{N})
+  \tag{4.2.2.1}
+\]
+\oldpage{40}
+which is in general neither injective or surjective. If $\sh{P}$ is a third $\sh{A}$-module,
+we check immediately that the diagram
+\[
+  \xymatrix{
+    \Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N})\otimes_\sh{B}\Psi_*(\sh{P})\ar[r]\ar[d]
+    & \Psi_*(\sh{M}\otimes_\sh{A}\sh{N})\otimes_\sh{B}\Psi_*(\sh{P})\ar[d]\\
+    \Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N}\otimes_\sh{A}\sh{P})\ar[r]
+    & \Psi_*(\sh{M}\otimes_\sh{A}\sh{N}\otimes_\sh{A}\sh{P})
+  }
+  \tag{4.2.2.2}
+\]
+is commutative.
+\end{env}
+
+\begin{env}{4.2.3}
+\label{env-0.4.2.3}
+Let $\sh{M}$, $\sh{N}$ be two $\sh{A}$-modules. For each open $U\subset Y$, we have by
+definition that
+$\Gamma(\psi^{-1}(U),\shHom_\sh{A}(\sh{M},\sh{N}))=\Hom_{\sh{A}|V}(\sh{M}|V,\sh{N}|V)$, where
+we put $V=\psi^{-1}(U)$; the map $u\mapsto\Psi_*(u)$ is a homomorphism
+\[
+  \Hom_{\sh{A}|V}(\sh{M}|V,\sh{N}|V)
+  \longrightarrow\Hom_{\sh{B}|U}(\Psi_*(\sh{M})|U,\Psi_*(\sh{N})|U)
+\]
+on the $\Gamma(U,\sh{B})$-module structures; these homomorphisms are compatible with the
+restriction operations, hence they define a canonical functorial homomorphism of
+$\sh{B}$-modules
+\[
+  \Psi_*(\shHom_\sh{A}(\sh{M},\sh{N}))
+  \longrightarrow\shHom_\sh{B}(\Psi_*(\sh{M}),\Psi_*(\sh{N})).
+  \tag{4.2.3.1}
+\]
+\end{env}
+
+\begin{env}{4.2.4}
+\label{env-0.4.2.4}
+If $\sh{C}$ is an $\sh{A}$-algebra, the composite homomorphism
+\[
+  \Psi_*(\sh{C})\otimes_\sh{B}\Psi_*(\sh{C})
+  \longrightarrow\Psi_*(\sh{C}\otimes_\sh{A}\sh{C})
+  \longrightarrow\Psi_*(\sh{C})
+\]
+defines on $\Psi_*(\sh{C})$ the structure of a \emph{$\sh{B}$-algebra}, as a result of
+(4.2.2.2). We see similarly that if $\sh{M}$ is a $\sh{C}$-module, $\Psi_*(\sh{M})$ is
+canonically equipped with the structure of a $\Psi_*(\sh{C})$-module.
+\end{env}
+
+\begin{env}{4.2.5}
+\label{env-0.4.2.5}
+Consider in particular the case where $X$ is a \emph{closed} subspace of $Y$ and where $\psi$
+is the canonical injection $j:X\to Y$. If $\sh{B}'=\sh{B}|X=j^*(\sh{B})$ is the restriction
+of the sheaf of rings $\sh{B}$ to $X$, an $\sh{A}$-module $\sh{M}$ can be considered as a
+$\sh{B}'$-module by means of the homomorphism $\theta^\sharp:\sh{B}'\to\sh{A}$; then
+$\Psi_*(\sh{M})$ is the $\sh{B}$-module which induces $\sh{M}$ on $X$ and $0$ elsewhere. If
+$\sh{N}$ is a second $\sh{A}$-module, $\Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N})$
+canonically identifies with $\Psi_*(\sh{M}\otimes_{\sh{B}'}\sh{N})$ and
+$\shHom_\sh{B}(\Psi_*(\sh{M}),\Psi_*(\sh{N}))$ with
+$\Psi_*(\shHom_{\sh{B}'}(\sh{M},\sh{N}))$.
+\end{env}
+
+\begin{env}{4.2.6}
+\label{env-0.4.2.6}
+Let $(Z,\sh{C})$ be a third ringed space, $\Psi'=(\psi',\theta')$ a morphism
+$(Y,\sh{B})\to(Z,\sh{C})$; if $\Psi''$ is the composite morphism $\Psi'\circ\Psi$, it is
+clear that we have $\Psi_*''=\Psi_*'\circ\Psi_*$.
 \end{env}
 
 \subsection{Inverse image of an $\sh{A}$-module}
 \label{0-prelim-4.3}
+
+\begin{env}{4.3.1}
+\label{env-0.4.3.1}
+The hypotheses and notation being the same as \sref{env}{4.2.1}, let $\sh{G}$ be a
+$\sh{B}$-module and $\psi^*(\sh{G})$ the inverse image \sref{env}{3.7.1} which is therefore
+a sheaf of abelian groups on $X$. The deinition of sections of $\psi^*(\sh{G})$ and of
+$\psi^*(\sh{B})$ \sref{env}{3.7.1} shows that $\psi^*(\sh{G})$ is canonically equipped with
+a $\psi^*(\sh{B})$-module structure. On the other hand, the homomorphism
+$\theta^\sharp:\psi^*(\sh{B})\to\sh{A}$ endows $\sh{A}$ with the a $\psi^*(\sh{B})$-module
+structure, which we denote by $\sh{A}_{[\theta]}$ when necessary to avoid confusion; the
+tensor product $\psi^*(\sh{G})\otimes_{\psi^*(\sh{B})}\sh{A}_{[\theta]}$ is then equipped
+with an $\sh{A}$-module structure. We say that this $\sh{A}$-module is \emph{the inverse
+image of $\sh{G}$ under the morphism $\Psi$}
+\oldpage{41}
+and we denote it by $\Psi^*(\sh{G})$. If $\sh{G}_1$, $\sh{G}_2$ are two $\sh{B}$-modules over
+$Y$, $v$ a $\sh{B}$-homomorphism $\sh{G}_1\to\sh{G}_2$, $\psi^*(v)$, as we check immediately,
+is a $\psi^*(\sh{B})$-homomorphism from $\psi^*(\sh{G}_1)$ to $\psi^*(\sh{G}_2)$; as a result
+$\psi^*(v)\otimes 1$ is an $\sh{A}$-homomorphism $\Psi^*(\sh{G}_1)\to\Psi^*(\sh{G}_2)$, which
+we denote by $\Psi^*(v)$. So we define $\Psi^*$ as a \emph{covariant functor} from the
+category of $\sh{B}$-modules to that of $\sh{A}$-modules. Here, this functor (contrary to
+$\psi^*$) is no longer exact in general, but only \emph{right exact}, the tensorization by
+$\sh{A}$ being a right exact functor to the category of $\psi^*(\sh{B})$-modules.
+
+For each $x\in X$, we have
+$(\Psi^*(\sh{G}))_x=\sh{G}_{\psi(x)}\otimes_{\sh{B}_{\psi(x)}}\sh{A}_x$, according to
+\sref{env}{3.7.2}. The support of $\Psi^*(\sh{G})$ is thus contained in
+$\psi^{-1}(\Supp\sh{G})$.
+\end{env}
 
 \subsection{Relation between direct and inverse images}
 \label{0-prelim-4.4}
@@ -1803,7 +2453,7 @@ results on quasicoherent sheaves, some of which are no longer limited to a trans
 ``geometric'' language of known notions of commutative algebra, but are already of a global
 nature; they will be indispensable, in the following chapters, for the global study of
 morphisms. Finally, \textsection10 introduces a generalization of the notion of schemes,
-which will be used as an intermediary in Chapter~III to formulate and demonstrate in a
+which will be used as an intermediary in Chapter~III to formulate and prove in a
 convenient way the fundamental results of the cohomological study of the proper morphisms;
 moreover, it should be noted that the notion of formal schemes seems indispensable to express
 certain facts of the ``theory of modules'' (classification problems of algebraic varieties).
@@ -1824,47 +2474,48 @@ recommended to omit reading until then.
 \oldpage{80}
 \emph{Notation}. Let $A$ be a (commutative) ring, $M$ an $A$-module. In
 this chapter and the following, we will constantly use the following notations:
-\begin{itemize}
-  \item[--] $\Spec(A)=$ \emph{set of prime ideals} of $A$, also called the
-          \emph{prime spectrum} of $A$; for an $x\in X=\Spec(A)$, it will often be
-          convenient to write $\mathfrak{j}_x$ instead of $x$. When $\Spec(A)$ is
-          \emph{empty}, it is necessary and sufficient that the ring $A$ is
-          reduced to $0$.
-  \item[--] $A_x=A_{\mathfrak{j}_x}=$ \emph{(local) ring of fractions $S^{-1}A$},
-          where $S=A-\mathfrak{j}_x$.
-  \item[--] $\mathfrak{m}_x=\mathfrak{j}_x A_{\mathfrak{j}_x}=$ \emph{maximal ideal of $A$}.
-  \item[--] $\k(x)=A_x/\mathfrak{m}_x=$ \emph{residue field of $A_x$},
-          canonically isomorphic to the field of fractions
-          of the integral ring $A/\mathfrak{j}_x$, to which it is identified.
-  \item[--] $f(x)=$ \emph{class of $f$} mod. $\mathfrak{j}_x$ in $A/\mathfrak{j}_x\subset\k(x)$,
-          for $f\in A$ and $x\in X$. We still say that $f(x)$ is the \emph{value}
-          of $f$ at a point $x\in\Spec(A)$; the relations $f(x)=0$ and $f\in\mathfrak{j}_x$
-          are \emph{equivalent}.
-  \item[--] $M_x=M\otimes_A A_x=$ \emph{module of denominators of fractions in
-          $A-\mathfrak{j}_x$}.
-  \item[--] $\rad(E)=$ \emph{radical of the ideal of $A$ generated by a subset $E$ of $A$}.
-  \item[--] $V(E)=$ \emph{set of $x\in X$ such that $E\subset\mathfrak{j}_x$} (or the set of
-          $x\in X$ such that $f(x)=0$ for all $f\in E$), for $E\subset A$. So we have
-          \[
-            \rad(E)=\bigcap_{x\in V(E)}\mathfrak{j}_x.\tag{1.1.1.1}
-          \]
-  \item[--] $V(f)=V(\{f\})$ for $f\in A$.
-  \item[--] $D(f)=X-V(f)=$ \emph{set of $x\in X$ where $f(x)\neq 0$}.
-\end{itemize}
+\begin{enumerate}[label=--]
+  \item $\Spec(A)=$ \emph{set of prime ideals} of $A$, also called the
+        \emph{prime spectrum} of $A$; for an $x\in X=\Spec(A)$, it will often be
+        convenient to write $\mathfrak{j}_x$ instead of $x$. When $\Spec(A)$ is
+        \emph{empty}, it is necessary and sufficient that the ring $A$ is
+        reduced to $0$.
+  \item $A_x=A_{\mathfrak{j}_x}=$ \emph{(local) ring of fractions $S^{-1}A$},
+        where $S=A-\mathfrak{j}_x$.
+  \item $\mathfrak{m}_x=\mathfrak{j}_x A_{\mathfrak{j}_x}=$ \emph{maximal ideal of $A$}.
+  \item $\k(x)=A_x/\mathfrak{m}_x=$ \emph{residue field of $A_x$},
+        canonically isomorphic to the field of fractions
+        of the integral ring $A/\mathfrak{j}_x$, to which it is identified.
+  \item $f(x)=$ \emph{class of $f$} mod. $\mathfrak{j}_x$ in $A/\mathfrak{j}_x\subset\k(x)$,
+        for $f\in A$ and $x\in X$. We still say that $f(x)$ is the \emph{value}
+        of $f$ at a point $x\in\Spec(A)$; the relations $f(x)=0$ and $f\in\mathfrak{j}_x$
+        are \emph{equivalent}.
+  \item $M_x=M\otimes_A A_x=$ \emph{module of denominators of fractions in
+        $A-\mathfrak{j}_x$}.
+  \item $\rad(E)=$ \emph{radical of the ideal of $A$ generated by a subset $E$ of $A$}.
+  \item $V(E)=$ \emph{set of $x\in X$ such that $E\subset\mathfrak{j}_x$} (or the set of
+        $x\in X$ such that $f(x)=0$ for all $f\in E$), for $E\subset A$. So we have
+        \[
+          \rad(E)=\bigcap_{x\in V(E)}\mathfrak{j}_x.
+          \tag{1.1.1.1}
+        \]
+  \item $V(f)=V(\{f\})$ for $f\in A$.
+  \item $D(f)=X-V(f)=$ \emph{set of $x\in X$ where $f(x)\neq 0$}.
+\end{enumerate}
 \end{env}
 
 \begin{envs}[Proposition]{1.1.2}
 \label{env-1.1.1.2}
 We have the following properties:
-\begin{itemize}
-  \item[(i)] $V(0)=X$, $V(1)=\emp$.
-  \item[(ii)] The relation $E\subset E'$ implies $V(E)\supset V(E')$.
-  \item[(iii)] For each family $(E_\lambda)$ of subsets of $A$,
-               $V(\bigcup_\lambda E_\lambda)=V(\sum_\lambda E_\lambda)
-                 =\bigcap_\lambda V(E_\lambda)$.
-  \item[(iv)] $V(EE')=V(E)\cup V(E')$.
-  \item[(v)] $V(E)=V(\mathfrak{r}(E))$.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item $V(0)=X$, $V(1)=\emp$.
+  \item The relation $E\subset E'$ implies $V(E)\supset V(E')$.
+  \item For each family $(E_\lambda)$ of subsets of $A$,
+        $V(\bigcup_\lambda E_\lambda)=V(\sum_\lambda E_\lambda)
+          =\bigcap_\lambda V(E_\lambda)$.
+  \item $V(EE')=V(E)\cup V(E')$.
+  \item $V(E)=V(\mathfrak{r}(E))$.
+\end{enumerate}
 \end{envs}
 The properties (i), (ii), (iii) are trivial, and (v) follows from (ii) and from the
 formula (1.1.1.1). It is evident that $V(EE')\supset V(E)\cap V(E')$; conversely, if
@@ -1892,16 +2543,17 @@ that $\mathfrak{j}(Y)\supset\mathfrak{j}(Y')$ and that we have
 \]
 for each family $(Y_\lambda)$ of subsets of $X$. Finally we have
 \[
-  \mathfrak{j}(\{x\})=\mathfrak{j}_x.\tag{1.1.3.2}
+  \mathfrak{j}(\{x\})=\mathfrak{j}_x.
+  \tag{1.1.3.2}
 \]
 \end{env}
 
 \begin{envs}[Proposition]{1.1.4}
 \label{prop-1.1.1.4}
-\begin{itemize}
-  \item[(i)] For each subset $E$ of $A$, we have $\mathfrak{j}(V(E))=\rad(E)$.
-  \item[(ii)] For each subset $Y$ of $X$, $V(\mathfrak{j}(Y))=\overline{Y}$, the closure of $Y$ in $X$.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item For each subset $E$ of $A$, we have $\mathfrak{j}(V(E))=\rad(E)$.
+  \item For each subset $Y$ of $X$, $V(\mathfrak{j}(Y))=\overline{Y}$, the closure of $Y$ in $X$.
+\end{enumerate}
 \end{envs}
 (i) is an immeidate consequence of the definitions and (1.1.1.1); on the other hand, $V(\mathfrak{j}(Y))$
 is closed and contains $Y$; conversely, if $Y\subset V(E)$, we have $f(y)=0$ for $f\in E$ and all $y\in Y$,
@@ -1948,7 +2600,8 @@ $\mathfrak{j}_y\not\subset\mathfrak{j}_x$, so one of the points $x$, $y$ does no
 \label{env-1.1.1.9}
 According to proposition (\sref{env}{1.1.2}, (iv)), for two elements $f$, $g$ of $A$, we have
 \[
-  D(fg)=D(f)\cap D(g).\tag{1.1.9.1}
+  D(fg)=D(f)\cap D(g).
+  \tag{1.1.9.1}
 \]
 Note also that the relation $D(f)=D(g)$ means, according to proposition (\sref{prop}{1.1.4}, (i))
 and proposition (\sref{env}{1.1.2}, (v)) that $\rad(f)=\rad(g)$, or that the minimal prime
@@ -1959,10 +2612,10 @@ invertible.
 \begin{envs}[Proposition]{1.1.10}
 \label{prop-1.1.1.10}
 \oldpage{82}
-\begin{itemize}
-  \item[(i)] When $f$ ranges over $A$, the sets $D(f)$ forms a base for the topology of $X$.
-  \item[(ii)] For each $f\in A$, $D(f)$ is quasicompact. In particular $X=D(1)$ is quasicompact.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item When $f$ ranges over $A$, the sets $D(f)$ forms a basis for the topology of $X$.
+  \item For each $f\in A$, $D(f)$ is quasicompact. In particular $X=D(1)$ is quasicompact.
+\end{enumerate}
 \end{envs}
 
 (i) Let $U$ be an open set in $X$; by definition, we have $U=X-V(E)$ where $E$ is a subset of $A$, and
@@ -1997,30 +2650,30 @@ The topological spaces $\Spec(A)$ and $\Spec(A/\nilrad)$ are canonically homeomo
 
 \begin{envs}[Proposition]{1.1.13}
 \label{prop-1.1.1.13}
-For $X=\Spec(A)$ to be irreducible \pref{env}{2.1.1}, it is necessary and sufficient that the ring $A/\nilrad$
-is an integral domain (or, equivalently, that the ideal $\nilrad$ is prime).
+For $X=\Spec(A)$ to be irreducible \pref{env}{2.1.1}, it is necessary and sufficient that the
+ring $A/\nilrad$ is integral (or, equivalently, that the ideal $\nilrad$ is prime).
 \end{envs}
 
-By virtue of corollary \sref{cor}{1.1.12}, we can restrict to the case $\nilrad=0$. If $X$ is reducible,
-there exist two distinct closed subsets $Y_1$, $Y_2$ of $X$ such that $X=Y_1\cup Y_2$, so
-$\mathfrak{j}(X)=\mathfrak{j}(Y_1)\cap\mathfrak{j}(Y_2)=0$, the ideals $\mathfrak{j}(Y_1)$ and
-$\mathfrak{j}(Y_2)$ being different from $(0)$ \sref{cor}{1.1.5}; so $A$ is not an integral domain.
-Conversely, if in $A$ there are elements $f\neq 0$, $g\neq 0$ such that $fg=0$, we have
-$V(f)\neq X$, $V(g)\neq X$ (since the intersection of the prime ideals of $A$ is $(0)$), and
-$X=V(fg)=V(f)\cup V(g)$.
+By virtue of corollary \sref{cor}{1.1.12}, we can restrict to the case $\nilrad=0$. If $X$ is
+reducible, there exist two distinct closed subsets $Y_1$, $Y_2$ of $X$ such that
+$X=Y_1\cup Y_2$, so $\mathfrak{j}(X)=\mathfrak{j}(Y_1)\cap\mathfrak{j}(Y_2)=0$, the ideals
+$\mathfrak{j}(Y_1)$ and $\mathfrak{j}(Y_2)$ being distinct from $(0)$ \sref{cor}{1.1.5}; so
+$A$ is not an integral. Conversely, if in $A$ there are elements $f\neq 0$, $g\neq 0$ such
+that $fg=0$, we have $V(f)\neq X$, $V(g)\neq X$ (since the intersection of the prime ideals
+of $A$ is $(0)$), and $X=V(fg)=V(f)\cup V(g)$.
 
 \begin{envs}[Corollary]{1.1.14}
 \label{cor-1.1.1.14}
-\begin{itemize}
-  \item[(i)] In the bijective correspondence between closed subsets of $X=\Spec(A)$
-             and ideals of $A$ equal to their roots, the irreducible closed subsets
-             of $X$ correspond to the prime ideals of $A$. In particular, the irreducible
-             components of $X$ correspond to the minimal prime ideals of $A$.
-  \item[(ii)] The map $x\mapsto\overline{\{x\}}$ establishes a bijective correspondence
-              between $X$ and the set of closed irreducible subsets of $X$
-              (\emph{said otherwise,} all closed irreducible subsets of $X$ containing
-              only one generic point).
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item In the bijective correspondence between closed subsets of $X=\Spec(A)$
+        and ideals of $A$ equal to their roots, the irreducible closed subsets
+        of $X$ correspond to the prime ideals of $A$. In particular, the irreducible
+        components of $X$ correspond to the minimal prime ideals of $A$.
+  \item The map $x\mapsto\overline{\{x\}}$ establishes a bijective correspondence
+        between $X$ and the set of closed irreducible subsets of $X$
+        (\emph{said otherwise,} all closed irreducible subsets of $X$ containing
+        only one generic point).
+\end{enumerate}
 \end{envs}
 
 (i) follows immediately from \sref{prop}{1.1.13} and \sref{prop}{1.1.11}; and for
@@ -2052,7 +2705,7 @@ Let $A$, $A'$ be two rings,
 \]
 a homomorphism of rings. For each prime ideal $x=\mathfrak{j}_x\in\Spec(A)=X$, the
 ring $A'/\vphi^{-1}(\mathfrak{j}_x)$ is canonically isomorphic to a subring of
-$A/\mathfrak{j}_x$, so it is an integral domain, otherwise we say
+$A/\mathfrak{j}_x$, so it is integral, otherwise we say
 $\vphi^{-1}(\mathfrak{j}_x)$ is a prime ideal of $A'$; we denote it by
 $^a\vphi(x)$, and we have also defined a map
 \[
@@ -2067,27 +2720,30 @@ passing to quotients, so the canonical extention is a monomorphism of fields
 \]
 for each $f'\in A'$, we therefore have by definition
 \[
-  \vphi^x(f'(^a\vphi(x)))=(\vphi(f'))(x)\quad(x\in X).\tag{1.2.1.1}
+  \vphi^x(f'(^a\vphi(x)))=(\vphi(f'))(x)\quad(x\in X).
+  \tag{1.2.1.1}
 \]
 \end{env}
 
 \begin{envs}[Proposition]{1.2.2}
 \label{prop-1.1.2.2}
-\begin{itemize}
-  \item[(i)] For each subset $E'$ of $A'$, we have
-             \[
-               ^a\vphi^{-1}(V(E'))=V(\vphi(E')),\tag{1.2.2.1}
-             \]
-             and in particular, for each $f'\in A'$,
-             \[
-               ^a\vphi^{-1}(D(f'))=D(\vphi(f')).\tag{1.2.2.2}
-             \]
-  \item[(ii)] For each ideal $\mathfrak{a}$ of $A$, we have
-              \[
-                \overline{^a\vphi(V(\mathfrak{a}))}=V(\vphi^{-1}(\mathfrak{a})).
-                \tag{1.2.2.3}
-              \]
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item For each subset $E'$ of $A'$, we have
+        \[
+          ^a\vphi^{-1}(V(E'))=V(\vphi(E')),
+          \tag{1.2.2.1}
+        \]
+        and in particular, for each $f'\in A'$,
+        \[
+          ^a\vphi^{-1}(D(f'))=D(\vphi(f')).
+          \tag{1.2.2.2}
+        \]
+  \item For each ideal $\mathfrak{a}$ of $A$, we have
+        \[
+          \overline{^a\vphi(V(\mathfrak{a}))}=V(\vphi^{-1}(\mathfrak{a})).
+          \tag{1.2.2.3}
+        \]
+\end{enumerate}
 \end{envs}
 
 In effect, the relation $^a\vphi(x)\in V(E')$ is by definition equivalent to
@@ -2291,7 +2947,77 @@ $\theta_f(\xi)=0$, then this means that for each prime ideal $\mathfrak{p}$ of $
 exists $h\not\in\mathfrak{p}$ such that $h\xi=0$; as the annihilator of $\xi$ is not
 contained in any prime ideal of $A_f$, each $A_f$ integral, so $\xi=0$.
 
-It remains to show that $\theta_f$ is \emph{surjective};
+It remains to show that $\theta_f$ is \emph{surjective}; we can reduce to the case where
+$f=1$, the general case deduced by ``localizing'' using \sref{prop}{1.3.6}. Now let $s$ be a
+section of $\widetilde{M}$ over $X$; according to \sref{defn}{1.3.4} and
+(\sref{prop}{1.1.10}, (ii)), there exists a \emph{finite} cover $(D(f_i))_{i\in I}$ of $X$
+($f_i\in A$) such that, for each $i\in I$, the restriction $s_i=s|D(f_i)$ is of the form
+$\theta_{f_i}(\xi_i)$, where $\xi_i\in M_{f_i}$. If $i$, $j$ are two indices of $I$, if
+the restrictions of $s_i$ and $s_j$ to $D(f_i)\cap D(f_j)=D(f_i f_j)$ are equal, it follows
+by definition of $M$ that
+\[
+  \rho_{f_i f_j,f_i}(\xi_i)=\rho_{f_i f_j,f_j}(\xi_j).
+  \tag{1.3.7.1}
+\]
+By definition, we can write, for each $i\in I$, $\xi_i=z_i/f_i^{n_i}$, where $z_i\in M$, and
+as $I$ is finite, by multiplying each $z_i$ by a power of $f_i$, we can suppose that all the
+$n_i$ are equal to the same $n$. Then, by definition, (1.3.7.1) implies that there exists an
+integer $m_{ij}\geqslant 0$ such that $(f_i f_j)^{m_{ij}}(f_j^n z_i-f_i^n z_j)=0$, and we can
+moreover suppose that the $m_{ij}$ are equal to the same integer $m$; replacing then the
+$z_i$ by $f_i^m z_i$, it remains to prove for the case where $m=0$, otherwise said, the case
+where we have
+\[
+  f_j^n z_i=f_i^n z_j
+  \tag{1.3.7.2}
+\]
+for any $i$, $j$. We have $D(f_i^n)=D(f_i)$, and as the $D(f_i)$ form a cover of $X$,
+the ideal generated by the $f_i^n$ is $A$; in other words, there exist elements $g_i\in A$
+such that $\sum_i g_i f_i^n=1$. Then consider the element $z=\sum_i g_i z_i$ of $M$; in
+(1.3.7.2), we have $f_i^n z=\sum_j g_j f_i^n z_j=(\sum_j g_j f_j^n)z_i=z_i$, where by
+definition $\xi_i=z/1$ in $M_{f_i}$. We conclude
+\oldpage{87}
+that the $s_i$ are the restrictions to $D(f_i)$ of $\theta_1(z)$, which proves that
+$s=\theta_1(z)$ and finishes the proof.
+
+\begin{envs}[Corollary]{1.3.8}
+\label{cor-1.1.3.8}
+Let $M$, $N$ be two $A$-modules; the canonical homomorphism $u\mapsto\widetilde{u}$ from
+$\Hom_A(M,N)$ to $\Hom_{\widetilde{A}}(\widetilde{M},\widetilde{N})$ is bijective. In
+particular, the relations $M=0$ and $\widetilde{M}=0$ are equivalent.
+\end{envs}
+
+Consider the canonical homomorphism $v\mapsto\Gamma(v)$ from
+$\Hom_{\widetilde{A}}(\widetilde{M},\widetilde{N})$ to
+$\Hom_{\Gamma(\widetilde{A})}(\Gamma(\widetilde{M}),\Gamma(\widetilde{N}))$; the latter
+module canonically identifies with $\Hom_A(M,N)$ according to the theorem \sref{thm}{1.3.7}.
+It remains to show that $u\mapsto\widetilde{u}$ and $v\mapsto\Gamma(v)$ are inverses of each
+other; it is evident that $\Gamma(\widetilde{u})=u$ by definition of $\widetilde{u}$; on the
+other hand, if we put $u=\Gamma(v)$ for
+$v\in\Hom_{\widetilde{A}}(\widetilde{M},\widetilde{N})$, the map
+$w:\Gamma(D(f),\widetilde{M})\to\Gamma(D(f),\widetilde{N})$ canonically induced from $v$
+is such that the diagram
+\[
+  \xymatrix{
+    M\ar[r]^u\ar[d]_{\rho_{f,1}} & N\ar[d]^{\rho_{f,1}}\\
+    M_f\ar[r]^w & N_f
+  }
+\]
+is commutative; so we have necessarily that $w=u_f$ for all $f\in A$ \pref{env}{1.2.4}, which
+shows that $\widetilde{\Gamma(v)}=v$.
+
+\begin{envs}[Corollary]{1.3.9}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item Let $u$ be a homomorphism from an $A$-module $M$ to an $A$-module $N$; then the
+        sheaves associated to $\ker u$, $\img u$, $\coker u$, are respectively
+        $\ker\widetilde{u}$, $\img\widetilde{u}$, $\coker\widetilde{u}$. In particular, for
+        $\widetilde{u}$ to be injective (resp. surjective, bijective), it is necessary and
+        sufficient that $u$ is.
+  \item If $M$ is an inductive limit (resp. direct sum) of a family of $A$-modules
+        $(M_\lambda)$, $\widetilde{M}$ is the inductive limit (resp. direct sum) of the
+        family $(\widetilde{M_\lambda})$, via a canonical isomorphism.
+\end{enumerate}
+\end{envs}
+
 
 \subsection{Quasicoherent sheaves over a prime spectrum}
 \label{1-schemes-1.4}
@@ -2402,7 +3128,7 @@ integral.
 \label{defn-1.2.2.1}
 Given two preschemes $(X,\OO_X)$, $(Y,\OO_Y)$, we
 define a morphism (of preschemes) of $(X,\OO_X)$ to $(Y,\OO_Y)$ to be a morphism
-of ringed spaces $(\psi,\theta)$ such that, for all $x\in X$, $\theta_x^\#$ is a
+of ringed spaces $(\psi,\theta)$ such that, for all $x\in X$, $\theta_x^\sharp$ is a
 local homomorphism $\OO_{\psi(x)}\to\OO_x$.
 \end{envs}
 
@@ -2416,7 +3142,7 @@ field $k(\psi(x))$.
 The composition $(\psi'',\theta'')$ of two morphisms
 $(\psi,\theta)$, $(\psi',\theta')$ of preschemes is also a morphism of
 preschemes, since it is given by the formula
-$\theta''^\#=\theta^\#\circ\psi^*(\theta'^\#)$ \pref{env}{3.5.5}. From this
+${\theta''}^\sharp=\theta^\sharp\circ\psi^*({\theta'}^\sharp)$ \pref{env}{3.5.5}. From this
 we conclude that preschemes form a \emph{category}; using the usual notation, we
 will write $\Hom(X,Y)$ to mean the set of morphisms from a prescheme $X$ to a
 prescheme $Y$.
@@ -2456,7 +3182,7 @@ $V_\alpha\cap V_\beta$ admits an open affine neighbourhood $W$ contained inside
 $V_\alpha\cap V_\beta$ \sref{prop}{2.1.3}; it is clear that that, by composing
 $\vphi_\alpha$ and $\vphi_\beta$ with the restriction homomorphisms to $W$,
 we obtain the same homomorphism $\Gamma(S,\OO_S)\to\Gamma(W,\OO_X|W)$, so, thanks
-to the relations $(\theta_\alpha^\#)_x=(\vphi_\alpha)_x$ for all $x\in
+to the relations $(\theta_\alpha^\sharp)_x=(\vphi_\alpha)_x$ for all $x\in
 V_\alpha$ and all $\alpha$ \sref{env}{1.6.1}, the restriction to $W$ of the morphisms
 $(\psi_\alpha,\theta_\alpha)$ and $(\psi_\beta,\theta_\beta)$ coincide. From
 this we conclude that there is a morphism
@@ -2469,7 +3195,8 @@ Let $u:A\to\Gamma(X,\OO_X)$ be a ring homomorphism, and $v=(\psi,\theta)$
 the corresponding morphism $(X,\OO_X)\to(S,\OO_S)$. For every $f\in A$ we have
 that
 \[
-  \psi^{-1}(D(f))=X_{u(f)}\tag{2.2.4.1}
+  \psi^{-1}(D(f))=X_{u(f)}
+  \tag{2.2.4.1}
 \]
 with the notation of \pref{env}{5.5.2} relative to the locally-free sheaf
 $\OO_X$. In fact, it suffices to verify this formula when $X$ itself is affine,
@@ -2510,12 +3237,12 @@ Let
 \end{gather*}
 be two morphisms of
 preschemes.
-\begin{itemize}
-  \item[(i)] If $f$ and $g$ are both open (resp. closed, dominant, surjective),
-             then so too is $g\circ f$.
-  \item[(ii)] If $f$ is surjective and $g\circ f$ closed, then $g$ is closed.
-  \item[(iii)] If $g\circ f$ is surjective, then $g$ is surjective.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item If $f$ and $g$ are both open (resp. closed, dominant, surjective),
+        then so is $g\circ f$.
+  \item If $f$ is surjective and $g\circ f$ closed, then $g$ is closed.
+  \item If $g\circ f$ is surjective, then $g$ is surjective.
+\end{enumerate}
 \end{envs}
 Claims (i) and (iii) are evident. Write $g\circ f=(\psi'',\theta'')$.
 If $F$ is closed in $Y$ then $\psi^{-1}(F)$ is closed in $X$, so
@@ -2548,7 +3275,7 @@ point of $X_i$ (resp. $Y_i$) \sref{env}{2.1.5}. We say that a morphism
   f=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)
 \]
 is \emph{birational} if, for all $i$, $\psi^{-1}(\eta_i)=\{\xi_i\}$ and
-$\theta_{\xi_i}^\#:\OO_{\eta_i}\to\OO_{\xi_i}$ is an \emph{isomorphism}. It
+$\theta_{\xi_i}^\sharp:\OO_{\eta_i}\to\OO_{\xi_i}$ is an \emph{isomorphism}. It
 is clear that a birational morphism is dominant \pref{env}{2.1.8}, and so is
 surjective if it is also closed.
 \end{env}
@@ -2636,7 +3363,7 @@ morphism $(\Spec(\OO_y),\widetilde{\OO}_y)\to(Y,\OO_Y)$. Then $\psi$ is a homeom
 from $\Spec(\OO_y)$ to the subspace $S_y$ of $Y$ given by the $z$ such that
 $y\in\overline{\{z\}}$ (\emph{or, equivalently, the generalizations of $y$
 \pref{env}{2.1.2}}; furthermore, if $z=\psi(\mathfrak{p})$, then
-$\theta_z^\#:\OO_z\to(\OO_y)_\mathfrak{p}$ is an isomorphism; $(\psi,\theta)$
+$\theta_z^\sharp:\OO_z\to(\OO_y)_\mathfrak{p}$ is an isomorphism; $(\psi,\theta)$
 is thus a monomorphism of ringed spaces.
 \end{envs}
     
@@ -2661,7 +3388,7 @@ $\OO_y$ is of \emph{dimension zero}}).
 \label{prop-1.2.4.4}
 Let $(X,\OO_X)$ be a local scheme of a ring
 $A$, $a$ its unique closed point, and $(Y,\OO_Y)$ a prescheme.  Every morphism
-$u=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ then factorises uniquely as
+$u=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ then factorizes uniquely as
 $X\to\Spec(\OO_{\psi(a)})\to Y$, where the second arrow denotes the canonical
 morphism, and the first corresponds to a local homomorphism $\OO_{\psi(a)}\to A$.
 This establishes a canonical bijective correspondence between the set of
@@ -2677,7 +3404,7 @@ $u=(^a\vphi,\tilde{\vphi})$, where $\vphi\in\Hom(B,A)$ (1.7.3).  Further,
 we have that $\vphi^{-1}(\mathfrak{j}_a)=\mathfrak{j}_{\psi(a)}$, and hence
 that the image under $\vphi$ of any element of
 $B\setminus\mathfrak{j}_{\psi(a)}$ is invertible in the local ring $A$; the
-factorisation in the result follows from the universal property of the ring of
+factorization in the result follows from the universal property of the ring of
 fractions \pref{env}{1.2.4}. Conversely, to every local homomorphism
 $\OO_y\to A$ there exists a unique corresponding morphism
 $(\psi,\theta):X\to\Spec(\OO_y)$ such that $\psi(a)=y$ \sref{env}{1.7.3}, and,
@@ -2689,7 +3416,7 @@ $X\to Y$, which proves the proposition.
 The affine schemes whose ring is a field $K$ have an
 underlying space that is just a point. If $A$ is a local ring with maximal
 ideal $\mathfrak{m}$, then every local homomorphism $A\to K$ has kernel equal to
-$\mathfrak{m}$, and so factorises as $A\to A/\mathfrak{m}\to K$, where the
+$\mathfrak{m}$, and so factorizes as $A\to A/\mathfrak{m}\to K$, where the
 second arrow is a monomorphism. The morphisms $\Spec(K)\to\Spec(A)$ thus
 correspond bijectively to monomorphisms of fields $A/\mathfrak{m}\to K$.
 \end{env}
@@ -2707,7 +3434,7 @@ so proposition \sref{prop}{2.4.4} says that:
 \label{cor-1.2.4.6}
 \oldpage{103}
 Let $(X,\OO_X)$ be a local scheme whose ring $K$ is a field, $\xi$ be the unique point of
-$X$, and $(Y,\OO_Y)$ a prescheme. Then every morphism $u:(X,\OO_X)\to(Y,\OO_Y)$ factorises
+$X$, and $(Y,\OO_Y)$ a prescheme. Then every morphism $u:(X,\OO_X)\to(Y,\OO_Y)$ factorizes
 uniquely as $X\to\Spec(\k(\psi(\xi)))\to Y$, where the second arrow denotes the canonical
 morphism, and the first corresponds to a monomorphism $\k(\psi(\xi))\to K$.
 This establishes a canonical bijective correspondance between the set of
@@ -2902,13 +3629,13 @@ $A_\mathfrak{p}$
 Let $R$ be a field, $M$ and $N$ two local
 subrings of $R$, and $P$ the subring of $R$ generated by $M\cup N$. Then the
 following conditions are equivalent:
-\begin{itemize}
-  \item[(i)] There exists a prime ideal $\mathfrak{p}$ of $P$ such that
-$\mathfrak{m}(M)=\mathfrak{p}\cap M$ and $\mathfrak{m}(N)=\mathfrak{p}\cap N$.
-  \item[(ii)] The ideal $\mathfrak{a}$ generated in $P$ by
-$\mathfrak{m}(M)\cup\mathfrak{m}(N)$ is distinct from $P$. \item There exists a
-local subring $Q$ of $R$ simultaneously dominating both $M$ and $N$.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item There exists a prime ideal $\mathfrak{p}$ of $P$ such that
+        $\mathfrak{m}(M)=\mathfrak{p}\cap M$ and $\mathfrak{m}(N)=\mathfrak{p}\cap N$.
+  \item The ideal $\mathfrak{a}$ generated in $P$ by $\mathfrak{m}(M)\cup\mathfrak{m}(N)$ is
+        distinct from $P$.
+  \item There exists a local subring $Q$ of $R$ simultaneously dominating both $M$ and $N$.
+\end{enumerate}
 \end{envs}
 
 It is clear that (i) implies (ii); conversely, if $\mathfrak{a}\neq P$, then
@@ -2918,7 +3645,7 @@ distinct from $M$, so $\mathfrak{n}\cap M=\mathfrak{m}(M)$, and similarly
 $\mathfrak{n}\cap N=\mathfrak{m}(N)$. It is clear that, if $Q$ dominates both
 $M$ and $N$, then $P\subset Q$ and $\mathfrak{m}(M)=\mathfrak{m}(Q)\cap
 M=(\mathfrak{m}(Q)\cap P)\cap M$, and $\mathfrak{m}(N)=(\mathfrak{m}(Q)\cap
-P)\cap N$, so (iii) implies (i); the reciprocal is evident when we take
+P)\cap N$, so (iii) implies (i); the inverse is evident when we take
 $Q=P_\mathfrak{p}$.
 
 When the conditions of \sref{lem}{8.1.4} are satisfied, we say, with C.~Chevalley,
@@ -2929,16 +3656,16 @@ that the local rings $M$ and $N$ are \emph{allied}.
 Let $A$ and $B$ be two subrings of a field $R$,
 and $C$ the subring of $R$ generated by $A\cup B$. Then the following
 conditions are equivalent:
-\begin{itemize}
-  \item[(i)] For every local ring $Q$ containing $A$ and $B$, we have that
-  $A_\mathfrak{p}=B_\mathfrak{q}$, where $\mathfrak{p}=\mathfrak{m}(Q)\cap A$ and
-$\mathfrak{q}=\mathfrak{m}(Q)\cap B$.
-  \item[(ii)] For all prime ideals $\mathfrak{r}$
-of $C$, we have that $A_\mathfrak{p}=B_\mathfrak{q}$, where
-$\mathfrak{p}=\mathfrak{r}\cap A$ and $\mathfrak{q}=\mathfrak{r}\cap B$. \item
-If $M\in L(A)$ and $N\in L(B)$ are allied, then they are identical. \item
-$L(A)\cap L(B)=L(C)$.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item For every local ring $Q$ containing $A$ and $B$, we have that
+        $A_\mathfrak{p}=B_\mathfrak{q}$, where $\mathfrak{p}=\mathfrak{m}(Q)\cap A$ and
+        $\mathfrak{q}=\mathfrak{m}(Q)\cap B$.
+  \item For all prime ideals $\mathfrak{r}$ of $C$, we have that
+        $A_\mathfrak{p}=B_\mathfrak{q}$, where $\mathfrak{p}=\mathfrak{r}\cap A$ and
+        $\mathfrak{q}=\mathfrak{r}\cap B$.
+  \item If $M\in L(A)$ and $N\in L(B)$ are allied, then they are identical.
+  \item $L(A)\cap L(B)=L(C)$.
+\end{enumerate}
 \end{envs}
 
 Lemmas \sref{lem}{8.1.3} and \sref{lem}{8.1.4} prove that (i) and (iii) are equivalent; it
@@ -2972,7 +3699,8 @@ domain of definition $\delta(f)$ of $f$ is the open set of $x\in X$ such that
 $f\in\OO_x$. It thus follows from \sref{env}{7.2.6} that, for every open $U\subset X$,
 we have
 \[
-  \Gamma(U,\OO_X)=\bigcap_{x\in U}\OO_x.\tag{8.2.1.1}
+  \Gamma(U,\OO_X)=\bigcap_{x\in U}\OO_x.
+  \tag{8.2.1.1}
 \]
 \end{env}
 
@@ -3000,9 +3728,9 @@ C\to\Gamma(W,\OO_X)$ there corresponds \sref{env}{2.2.4} a morphism
 $\Phi=(\psi,\theta):W\to\Spec(C)$; we will see that $\Phi$ is an
 \emph{isomorphism} of preschemes, whence $W$ is an \emph{affine} open. The
 identification of $W$ with $L(C)=\Spec(C)$ shows that $\psi$ is
-\emph{bijective}.On the other hand, for all $x\in W$, $\theta_x^\#$ is the
+\emph{bijective}.On the other hand, for all $x\in W$, $\theta_x^\sharp$ is the
 injection $C_\mathfrak{r}\to\OO_x$, where $\mathfrak{r}=\mathfrak{m}_x\cap C$,
-and by definition $C_\mathfrak{r}$ is identified with $\OO_x$, so $\theta_x^\#$
+and by definition $C_\mathfrak{r}$ is identified with $\OO_x$, so $\theta_x^\sharp$
 is bijective. It thus remains to show that $\psi$ is a \emph{homeomorphism},
 i.e. that for every closed subset $F\subset W$, $\psi(F)$ is closed in
 $\Spec(C)$. But $F$ is the \unsure{trace over} $W$ of closed subspace of $U$,
@@ -3098,15 +3826,15 @@ by $\OO_x$.
 \end{envs}
 
 In fact, if $f=(\psi,\theta)$ and $a$ is the generic point of $X$, then
-$\psi(a)$ is the generic point of $Y$ \pref{env}{2.1.5}; $\theta_a^\#$ is then
+$\psi(a)$ is the generic point of $Y$ \pref{env}{2.1.5}; $\theta_a^\sharp$ is then
 a monomorphism of fields, from $L=\OO_{\psi(a)}$ to $K=\OO_a$. Since every
 non-empty affine open $U$ of $Y$ contains $\psi(a)$, it follows from
 \sref{env}{2.2.4} that the homomorphism $\Gamma(U,\OO_Y)\to\Gamma(\psi^{-1}(U),\OO_X)$
-corresponding to $f$ is the restriction of $\theta_a^\#$ to $\Gamma(U,\OO_Y)$.
-So, for every $x\in X$, $\theta_x^\#$ is the restriction to $\OO_{\psi(a)}$ of
-$\theta_a^\#$, and is thus a monomorphism. We also know that $\theta_x^\#$ is a
+corresponding to $f$ is the restriction of $\theta_a^\sharp$ to $\Gamma(U,\OO_Y)$.
+So, for every $x\in X$, $\theta_x^\sharp$ is the restriction to $\OO_{\psi(a)}$ of
+$\theta_a^\sharp$, and is thus a monomorphism. We also know that $\theta_x^\sharp$ is a
 local homomorphism, so, if we identify $L$ with a subfield of $K$ by
-$\theta_a^\#$, $\OO_{\psi(x)}$ is dominated by $\OO_x$ \sref{lem}{8.1.1}; it is also
+$\theta_a^\sharp$, $\OO_{\psi(x)}$ is dominated by $\OO_x$ \sref{lem}{8.1.1}; it is also
 the only local ring of $Y$ dominated by $\OO_x$, since two local rings of $Y$
 that are allied are identical \sref{prop}{8.2.2}.
 
@@ -3122,7 +3850,7 @@ Let $f=(\psi,\theta)$; it suffices, in both cases, to prove that $\psi$ is a
 \emph{homeomorphism} from $X$ to $\psi(X)$ \sref{env}{4.5.3}. Replacing $f$ by
 $f_\mathrm{red}$ (\sref{env}{5.1.6} and \sref{env}{5.5.1}, (vi)), we can assume that $X$
 and $Y$ are \emph{reduced}. If $Y'$ is the closed reduced subprescheme of $Y$
-having $\overline{\psi(X)}$ as its underlying space, then $f$ factorises as
+having $\overline{\psi(X)}$ as its underlying space, then $f$ factorizes as
 $X\xrightarrow{f'}Y'\xrightarrow{j}Y$, where $j$ is the canonical injection
 \sref{env}{5.2.2}. It follows from (\sref{env}{5.5.1}, (v)) that $f'$ is again a
 separated morphism; further, $f'$ is again
@@ -3136,9 +3864,9 @@ fact that $Y$ is, itself, irreducible \pref{env}{2.1.5}, and so $X$ and $Y$
 are both \emph{integral}. Further, the condition being local on $Y$, we can
 suppose that $Y$ is an affine scheme; since $f$ is separated, $X$ is a scheme
 (\sref{env}{5.5.1}, (ii)), and we are finally at the hypotheses of \sref{prop}{8.2.7}.
-Then, for all $x\in X$, $\theta_x^\#$ is injective; but the hypothesis that $F$
-is a local immersion implies that $\theta_x^\#$ is surjective \sref{env}{4.2.2}, so
-$\theta_x^\#$ is bijective, or, equivalently (with the identification of
+Then, for all $x\in X$, $\theta_x^\sharp$ is injective; but the hypothesis that $F$
+is a local immersion implies that $\theta_x^\sharp$ is surjective \sref{env}{4.2.2}, so
+$\theta_x^\sharp$ is bijective, or, equivalently (with the identification of
 \sref{prop}{8.2.7}) we have that $\OO_{\psi(x)}=\OO_x$. This implies, by \sref{cor}{8.2.4},
 that $\psi$ is an \emph{injective} map, which already proves the proposition
 when $f$ is a local isomorphism \sref{env}{4.5.3}. When we suppose that $f$ is only
@@ -3159,13 +3887,13 @@ Let $X$ be a \emph{Noetherian} integral scheme, and $R$ its
 field of rational functions; we denote by $X'$ the set of local subrings
 $\OO_x\subset R$, where $x$ runs over all points of $X$. The set $X'$ verifies
 the three following conditions:
-\begin{itemize}
+\begin{enumerate}
   \item[(Sch.~1)] For all $M\in X'$, $R$ is the field of fractions of $M$.
   \item[(Sch.~2)] There exists a finite set of Noetherian subrings $A_i$ of $R$
   such that $X'=\bigcup_i L(A_i)$, and, for all pairs of indices $i,j$, the subring
   $A_{ij}$ of $R$ generated by $A_i\cup A_j$ is an algebra of finite type over $A_i$.
   \item[(Sch.~3)] Two elements $M$ and $N$ of $X'$ that are allied are identical.
-\end{itemize}
+\end{enumerate}
 \end{env}
 
 We have basically seen in \sref{env}{8.2.1} that (Sch.~1) is satisfied, and (Sch.~3)
@@ -3347,14 +4075,15 @@ Let $\vphi'':S''\to S'$ be a morphism.
 For every quasicoherent $\OO_X$-module $\sh{F}$ on the $S$-prescheme $X$,
 $(\sh{F}_{(\vphi)})_{(\vphi')}$ is the inverse image of
 $\sh{F}_{(\vphi\circ\vphi')}$ by the canonical isomorphism
-$(X_{(\vphi)})_{(\vphi')}\xrightarrow{\sim}X_{(\vphi\circ\vphi')}$
+$(X_{(\vphi)})_{(\vphi')}\isoto X_{(\vphi\circ\vphi')}$
 \sref{env}{3.3.9}.
 \end{envs}
 
 This follows immediately from the definitions and from \sref{env}{3.3.9}, and is
 written
 \[
-  (\sh{F}\otimes_S\OO_{S'})\otimes_{S'}\OO_{S''}=\sh{F}\otimes_S\OO_{S''}.\tag{9.1.9.1}
+  (\sh{F}\otimes_S\OO_{S'})\otimes_{S'}\OO_{S''}=\sh{F}\otimes_S\OO_{S''}.
+  \tag{9.1.9.1}
 \]
 
 \begin{envs}[Proposition]{9.1.10}
@@ -3380,7 +4109,7 @@ Let $X$ and $Y$ be $S$-preschemes, and
 $\sh{F}$ (\emph{resp.} $\sh{G}$) a quasicoherent $\OO_X$-module
 (\emph{resp.} quasicoherent $\OO_Y$-module). Then the inverse image of the sheaf
 $(\sh{F}_{(S')})\otimes_{(S')}(\sh{G}_{(S')})$ by the canonical isomorphism
-$(X\times_S Y)_{(S')}\xrightarrow{\sim}(X_{(S')})\times_{S'}(Y_{(S')})$
+$(X\times_S Y)_{(S')}\isoto(X_{(S')})\times_{S'}(Y_{(S')})$
 \sref{env}{3.3.10} is equal to $(\sh{F}\otimes_S\sh{G})_{(S')}$.
 \end{envs}
 
@@ -3413,7 +4142,8 @@ $\OO_{X\times_S Y}$, we are reduced, by \sref{env}{9.1.12} and \pref{env}{1.7.5}
 the case where $\sh{G}=\OO_Y$, that is, it remains to prove the following
 equation:
 \[
-  \Supp(p^{-1}(\sh{F}))=p^{-1}(\Supp(\sh{F})).\tag{9.1.13.1}
+  \Supp(p^{-1}(\sh{F}))=p^{-1}(\Supp(\sh{F})).
+  \tag{9.1.13.1}
 \]
 
 The same reasoning as in \pref{env}{1.7.5} leads us to prove that, for all
@@ -3442,55 +4172,55 @@ quasicoherent $\OO_Y$-module.
 Since this is a local condition on $Y$, we can assume that $Y$ is equal to one
 of the $Y_\alpha$, and thus omit the indices $\alpha$.
 
-\begin{itemize}
-  \item[(a)] First, suppose that the $X_i\cap X_j$
-             are themselves \emph{affine} opens. We set $\sh{F}_i=\sh{F}|X_i$ and
-             $\sh{F}_{ij}=\sh{F}|(X_i\cap X_j)$, and let $\sh{F}'_i$ and
-             $\sh{F}'_{ij}$ be the images of $\sh{F}_i$ and $\sh{F}_{ij}$
-             (respectively) by the restriction of $f$ to $X_i$ and $X_i\cap X_j$
-             (respectively); we know that the $\sh{F}'_i$ and $\sh{F}'_{ij}$ are
-             quasicoherent \sref{env}{1.6.3}. Set $\sh{G}=\bigoplus_i\sh{F}'_i$ and
-             $\sh{H}=\bigoplus_{i,j}\sh{F}'_{ij}$; $\sh{G}$ and $\sh{H}$ are
-             quasicoherent $\OO_Y$-modules; we will define a homomorphism
-             $u:\sh{G}\to\sh{H}$ such that $f_*(\sh{F})$ is the
-             \emph{kernel} of $u$; it will follow from this that $f_*(\sh{F})$ is
-             quasicoherent \sref{env}{1.3.9}. It suffices to define $u$ as
+\begin{enumerate}[label=(\alph*)]
+  \item First, suppose that the $X_i\cap X_j$
+        are themselves \emph{affine} opens. We set $\sh{F}_i=\sh{F}|X_i$ and
+        $\sh{F}_{ij}=\sh{F}|(X_i\cap X_j)$, and let $\sh{F}'_i$ and
+        $\sh{F}'_{ij}$ be the images of $\sh{F}_i$ and $\sh{F}_{ij}$
+        (respectively) by the restriction of $f$ to $X_i$ and $X_i\cap X_j$
+        (respectively); we know that the $\sh{F}'_i$ and $\sh{F}'_{ij}$ are
+        quasicoherent \sref{env}{1.6.3}. Set $\sh{G}=\bigoplus_i\sh{F}'_i$ and
+        $\sh{H}=\bigoplus_{i,j}\sh{F}'_{ij}$; $\sh{G}$ and $\sh{H}$ are
+        quasicoherent $\OO_Y$-modules; we will define a homomorphism
+        $u:\sh{G}\to\sh{H}$ such that $f_*(\sh{F})$ is the
+        \emph{kernel} of $u$; it will follow from this that $f_*(\sh{F})$ is
+        quasicoherent \sref{env}{1.3.9}. It suffices to define $u$ as
 \oldpage{172}
-             a homomorphism of presheaves; taking into account the definitions of $\sh{G}$
-             and $\sh{H}$, it thus suffices, for every open subset $W\subset Y$, to define a
-             homomorphism
-             \[
-               u_W:\bigoplus_i\Gamma(f^{-1}(W)\cap X_i,\sh{F})
-               \longrightarrow\bigoplus_{i,j}\Gamma(f^{-1}(W)\cap X_i\cap X_j,\sh{F})
-             \]
-             in such a way that it satisfies the usual compatibility conditions when $W$
-             varies. If, for every section $s_i\in\Gamma(f^{-1}(W)\cap X_i,\sh{F})$, we
-             denote by $s_{i|j}$ the restriction to $f^{-1}(W)\cap X_i\cap X_j$, then we set
-             \[
-               u_W\big((s_i)\big)=(s_{i|j}-s_{j|i})
-             \]
-             and the compatibility conditions are clearly satisfied. To prove that the kernel
-             $\sh{R}$ of $u$ is $f_*(\sh{F})$, we define a homomorphism from $f_*(\sh{F})$ to
-             $\sh{R}$ by sending each section $s\in\Gamma(f^{-1}(W),\sh{F})$ to the family
-             $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; the
-             axioms (F1) and (F2) of sheaves (G, II, 1.1) tell us that this homomorphism is
-             \emph{bijective}, which finishes the proof in this case.
-  \item[(b)] In the general case, the same reasoning applies once we have established that
-             the $\sh{F}_{ij}$ are quasicoherent. But, by hypothesis, $X_i\cap X_j$ is a
-             finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens
-             \emph{in a scheme}, the intersection of any two of them is again an affine open
-             \sref{env}{5.5.6}. We are thus led to the first case, and so we have proved
-             \sref{env}{9.2.1}.
-\end{itemize}
+        a homomorphism of presheaves; taking into account the definitions of $\sh{G}$
+        and $\sh{H}$, it thus suffices, for every open subset $W\subset Y$, to define a
+        homomorphism
+        \[
+          u_W:\bigoplus_i\Gamma(f^{-1}(W)\cap X_i,\sh{F})
+          \longrightarrow\bigoplus_{i,j}\Gamma(f^{-1}(W)\cap X_i\cap X_j,\sh{F})
+        \]
+        in such a way that it satisfies the usual compatibility conditions when $W$
+        varies. If, for every section $s_i\in\Gamma(f^{-1}(W)\cap X_i,\sh{F})$, we
+        denote by $s_{i|j}$ the restriction to $f^{-1}(W)\cap X_i\cap X_j$, then we set
+        \[
+          u_W\big((s_i)\big)=(s_{i|j}-s_{j|i})
+        \]
+        and the compatibility conditions are clearly satisfied. To prove that the kernel
+        $\sh{R}$ of $u$ is $f_*(\sh{F})$, we define a homomorphism from $f_*(\sh{F})$ to
+        $\sh{R}$ by sending each section $s\in\Gamma(f^{-1}(W),\sh{F})$ to the family
+        $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; the
+        axioms (F1) and (F2) of sheaves (G, II, 1.1) tell us that this homomorphism is
+        \emph{bijective}, which finishes the proof in this case.
+  \item In the general case, the same reasoning applies once we have established that
+        the $\sh{F}_{ij}$ are quasicoherent. But, by hypothesis, $X_i\cap X_j$ is a
+        finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens
+        \emph{in a scheme}, the intersection of any two of them is again an affine open
+        \sref{env}{5.5.6}. We are thus led to the first case, and so we have proved
+        \sref{env}{9.2.1}.
+\end{enumerate}
 
 \begin{envs}[Corollary]{9.2.2}
 \label{cor-1.9.2.2}
 The conclusion of \sref{prop}{9.2.1} holds true in each of the following cases:
-\begin{itemize}
-  \item[(a)] $f$ is separated and quasicompact.
-  \item[(b)] $f$ is separated and of finite type.
-  \item[(c)] $f$ is quasicompact and the underlying space of $X$ is locally Noetherian.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\alph*)}]
+  \item $f$ is separated and quasicompact.
+  \item $f$ is separated and of finite type.
+  \item $f$ is quasicompact and the underlying space of $X$ is locally Noetherian.
+\end{enumerate}
 \end{envs}
 
 In case \emph{(a)}, the $X_{\alpha i}\cap X_{\alpha j}$ are affine \sref{env}{5.5.6}.
@@ -3509,42 +4239,41 @@ Let $X$ be a prescheme whose underlying space is Noetherian, or a scheme whose u
 space is quasicompact. Let $\sh{L}$ be an invertible $\OO_X$-module \pref{env}{5.4.1}, $f$ a
 section of $\sh{L}$ over $X$, $X_f$ the open set of $x\in X$ such that $f(x)\neq0$
 \pref{env}{5.5.1}, and $\sh{F}$ a quasicoherent $\OO_X$-module.
-\begin{itemize}
-  \item[(i)] If $s\in\Gamma(X,\sh{F})$ is such that $s|X_f=0$,
-             then there exists a whole number $n>0$ such that $s\otimes f^{\otimes n}=0$.
-  \item[(ii)] For every section $s\in\Gamma(X_f,\sh{F})$, there exists a whole number
-              $n>0$ such that $s\otimes f^{\otimes n}$ extends to a section of
-              $\sh{F}\otimes\sh{L}^{\otimes n}$ over $X$.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item If $s\in\Gamma(X,\sh{F})$ is such that $s|X_f=0$, then there exists an integer $n>0$
+        such that $s\otimes f^{\otimes n}=0$.
+  \item For every section $s\in\Gamma(X_f,\sh{F})$, there exists an integer $n>0$ such that
+        $s\otimes f^{\otimes n}$ extends to a section of $\sh{F}\otimes\sh{L}^{\otimes n}$
+        over $X$.
+\end{enumerate}
 \end{envs}
 
-\begin{itemize}
-  \item[(i)] Since the underlying space of $X$ is quasicompact, and thus the union of
-             finitely-many affine opens $U_i$ with $\sh{L}|U_i$ is isomorphic to
-             $\OO_X|U_i$, we can reduce to the case where $X$ is affine and $\sh{L}=\OO_X$.
-             In this case, $f$ is identified with an element of $A(X)$, and we have that
-             $X_f=D(f)$; $s$ is identified with an element of an $A(X)$-module $M$, and
-             $s|X_f$ to the corresponding element of $M_f$, and the result is then trivial,
-             recalling the definition of a module of fractions.
-  \item[(ii)] Again,
+\begin{enumerate}[label=(\roman*)]
+  \item Since the underlying space of $X$ is quasicompact, and thus the union of
+        finitely-many affine opens $U_i$ with $\sh{L}|U_i$ is isomorphic to
+        $\OO_X|U_i$, we can reduce to the case where $X$ is affine and $\sh{L}=\OO_X$.
+        In this case, $f$ is identified with an element of $A(X)$, and we have that
+        $X_f=D(f)$; $s$ is identified with an element of an $A(X)$-module $M$, and
+        $s|X_f$ to the corresponding element of $M_f$, and the result is then trivial,
+        recalling the definition of a module of fractions.
 \oldpage{173}
-              $X$ is a finite union of affine opens $U_i$ ($1\leqslant i\leqslant r$)
-              such that $\sh{L}|U_i\cong\OO_X|U_i$, and for every $i$,
-              $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ is identified (by the aforementioned
-              isomorphism) with $(f|(U_i\cap X_f))^n(s|(U_i\cap X_f))$. We then know
-              \sref{env}{1.4.1} that there exists a whole number $n>0$ such that, for all
-              $i$, $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ extends to a section $s_i$ of
-              $\sh{F}\otimes\sh{L}^{\otimes n}$ over $U_i$. Let $s_{i|j}$ be the restriction
-              of $s_i$ to $U_i\cap U_j$; by definition we have that $s_{i|j}-s_{j|i}=0$ in
-              $X_f\cap U_i\cap U_j$. But, if $X$ is a Noetherian space, then $U_i\cap U_j$ is
-              quasicompact; if $X$ is a scheme, then $U_i\cap U_j$ is an affine open
-              \sref{env}{5.5.6}, and so again quasicompact. By virtue of (i), there thus
-              exists a whole number $m$ (independent of $i$ and $j$) such that
-              $(s_{i|j}-s_{j|i})\otimes f^{\otimes m}=0$. It immediately follows that there
-              exists a section $s'$ of $\sh{F}\otimes\sh{L}^{\otimes(n+m)}$ over $X$,
-              restricting to $s_i\otimes f^{\otimes m}$ over each $U_i$, and restricting to
-              $s\otimes f^{\otimes(n+m)}$ over $X_f$.
-\end{itemize}
+  \item Again, $X$ is a finite union of affine opens $U_i$ ($1\leqslant i\leqslant r$)
+        such that $\sh{L}|U_i\cong\OO_X|U_i$, and for every $i$,
+        $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ is identified (by the aforementioned
+        isomorphism) with $(f|(U_i\cap X_f))^n(s|(U_i\cap X_f))$. We then know
+        \sref{env}{1.4.1} that there exists an integer $n>0$ such that, for all
+        $i$, $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ extends to a section $s_i$ of
+        $\sh{F}\otimes\sh{L}^{\otimes n}$ over $U_i$. Let $s_{i|j}$ be the restriction
+        of $s_i$ to $U_i\cap U_j$; by definition we have that $s_{i|j}-s_{j|i}=0$ in
+        $X_f\cap U_i\cap U_j$. But, if $X$ is a Noetherian space, then $U_i\cap U_j$ is
+        quasicompact; if $X$ is a scheme, then $U_i\cap U_j$ is an affine open
+        \sref{env}{5.5.6}, and so again quasicompact. By virtue of (i), there thus
+        exists an integer $m$ (independent of $i$ and $j$) such that
+        $(s_{i|j}-s_{j|i})\otimes f^{\otimes m}=0$. It immediately follows that there
+        exists a section $s'$ of $\sh{F}\otimes\sh{L}^{\otimes(n+m)}$ over $X$,
+        restricting to $s_i\otimes f^{\otimes m}$ over each $U_i$, and restricting to
+        $s\otimes f^{\otimes(n+m)}$ over $X_f$.
+\end{enumerate}
 
 The following corollaries give an interpretation of theorem \sref{env}{9.3.1} in a more
 algebraic language:
@@ -3553,7 +4282,7 @@ algebraic language:
 With the hypotheses of \sref{thm}{9.3.1}, consider the graded ring $A_*=\Gamma_*(\sh{L})$
 and the graded $A_*$-module $M_*=\Gamma_*(\sh{L},\sh{F})$ \pref{env}{5.4.6}. If $f\in A_n$,
 where $n\in\bb{Z}$, then there is a canonical isomorphism
-$\Gamma(X_f,\sh{F})\xrightarrow{\sim}((M_*)_f)_0$ (\emph{the subgroup of the module of
+$\Gamma(X_f,\sh{F})\isoto((M_*)_f)_0$ (\emph{the subgroup of the module of
 fractions $(M_*)_f$ consisting of elements of degree $0$}).
 \end{envs}
 
@@ -3624,15 +4353,14 @@ Let $X$ be a prescheme, $U$ an open subset of $X$ such that the canonical inject
 $j:U\to X$ is a quasicompact morphism \emph{(which will be the case for \emph{all} $U$ if the
 underlying space of $X$ is \emph{locally Noetherian} {\normalfont(\sref{env}{6.6.4}, (i))})}.
 Then:
-\begin{itemize}
-  \item[(i)] For every quasicoherent $(\OO_X|U)$-module $\sh{G}$, $j_*(\sh{G})$
-             is a quasicoherent $\OO_X$-module, and
-             $j_*(\sh{G})|U=j^*(j_*(\sh{G}))=\sh{G}$.
-  \item[(ii)] For every quasicoherent $\OO_X$-module $\sh{F}$ and every quasicoherent
-              $(\OO_X|U)$-submodule $\sh{G}$, the canonical extension
-              $\overline{\sh{G}}$ of $\sh{G}$ \sref{env}{9.4.1} is a
-              quasicoherent $\OO_X$-submodule of $\sh{F}$.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item For every quasicoherent $(\OO_X|U)$-module $\sh{G}$, $j_*(\sh{G})$
+        is a quasicoherent $\OO_X$-module, and $j_*(\sh{G})|U=j^*(j_*(\sh{G}))=\sh{G}$.
+  \item For every quasicoherent $\OO_X$-module $\sh{F}$ and every quasicoherent
+        $(\OO_X|U)$-submodule $\sh{G}$, the canonical extension
+        $\overline{\sh{G}}$ of $\sh{G}$ \sref{env}{9.4.1} is a
+        quasicoherent $\OO_X$-submodule of $\sh{F}$.
+\end{enumerate}
 \end{envs}
 
 If $j=(\psi,\theta)$ ($\psi$ being the injection $U\to X$ of underlying spaces), then by
@@ -3739,10 +4467,10 @@ quasicompact by virtue of the hypothesis.
 \label{thm-1.9.4.7}
 Let $X$ be a prescheme, and $U$ an open of $X$.
 Suppose that one of the following conditions is verified:
-\begin{itemize}
-  \item[(a)] the underlying space of $X$ is locally Noetherian;
-  \item[(b)] $X$ is a quasicompact scheme and $U$ is a quasicompact open.
-\end{itemize}
+\begin{enumerate}[label=\rm{(\alph*)}]
+  \item the underlying space of $X$ is locally Noetherian;
+  \item $X$ is a quasicompact scheme and $U$ is a quasicompact open.
+\end{enumerate}
 Then, for every quasicoherent $\OO_X$-module $\sh{F}$ and every quasicoherent
 $(\OO_X|U)$-submodule $\sh{G}$ of $\sh{F}|U$ \emph{of finite type}, there exists a
 quasicoherent $\OO_X$-submodule $\sh{G}'$ of $\sh{F}$ \emph{of finite type}
@@ -3818,13 +4546,13 @@ homomorphism $\theta:\OO_Y\to f_*(\OO_X)$. Then the closed subprescheme
 $Y'$ of $Y$ defined by $\sh{J}$ satisfies the conditions of \sref{prop}{9.5.1}.
 \end{envs}
 
-Since the functor $\psi^*$ is exact, the canonical factorisation
+Since the functor $\psi^*$ is exact, the canonical factorization
 $\theta:\OO_Y\to\OO_Y/\sh{J}\xrightarrow{\theta'}\psi_*(\OO_X)$ gives
-(\textbf{0},~3.5.4.3) a factorisation
-$\theta^\#:\psi^*(\OO_Y)\to\psi^*(\OO_Y)/\psi^*(\sh{J})
-\xrightarrow{\theta'^\#}\OO_X$;
-since $\theta_x^\#$ is a local homomorphism for every $x\in X$, the same is true
-of ${\theta'_x}^\#$; if we denote by $\psi_0$ the continuous map $\psi$
+(\textbf{0},~3.5.4.3) a factorization
+$\theta^\sharp:\psi^*(\OO_Y)\to\psi^*(\OO_Y)/\psi^*(\sh{J})
+\xrightarrow{{\theta'}^\sharp}\OO_X$;
+since $\theta_x^\sharp$ is a local homomorphism for every $x\in X$, the same is true
+of ${\theta'_x}^\sharp$; if we denote by $\psi_0$ the continuous map $\psi$
 considered as a map from $X$ to $X'$, and by $\theta_0$ the restriction
 $\theta'|X':(\OO_Y/\sh{J})|X'\to\psi_*(\OO_X)|X'=(\psi_0)_*(\OO_X)$,
 we see that $f_0=(\psi_0,\theta_0)$ is a morphism of preschemes $X\to X'$
@@ -3834,7 +4562,7 @@ a second closed subprescheme of $Y$, defined by a quasicoherent sheaf of ideals
 $\sh{J}'$ of $\OO_Y$, such that the injection $j':X''\to Y$ \completelyunsure
 $f$, then we should immediately have that $\psi(X)\subset X''$, and so
 $X'\subset X''$, since $X''$ is closed. Furthermore, for all $y\in X''$,
-$\theta$ should factorise as $\OO_y\to\OO_y/\sh{J}'_y\to(\psi_*(\OO_X))_y$,
+$\theta$ should factorize as $\OO_y\to\OO_y/\sh{J}'_y\to(\psi_*(\OO_X))_y$,
 which by definition leads to $\sh{J}'_y\subset\sh{J}_y$, and thus $X'$ is
 a closed subprescheme of $X''$ \sref{env}{4.1.10}.
 
