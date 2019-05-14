@@ -29,7 +29,7 @@ Here is the current status of the translation, along with the main contributors 
     + [x] 1. Rings of fractions (@ryankeleti)
     + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti)
     + [x] 3. Supplement on sheaves (@ryankeleti)
-    + [ ] 4. Ringed spaces
+    + [x] 4. Ringed spaces (@ryankeleti)
     + [ ] 5. Quasicoherent sheaves and coherent sheaves
     + [ ] 6. Flatness
     + [ ] 7. Adic rings
@@ -58,7 +58,7 @@ Here is the current status of the translation, along with the main contributors 
 - `\rad`/`\nilrad` for radical/nilradical.
 - `\vphi` for `\varphi`. This is due to the font configuration swapping `\varphi` and `\phi`; if you want to use a different font, you could change this.
 - `\HH` for cohomology.
-- `\leqslant`/`\geqslant' for <=, >=.
+- `\leqslant`/`\geqslant` for <=, >=.
 - Use the operators defined in `preamble.sty`, such as `\Spec`, `\im`, `\shHom`, etc.
 
 
