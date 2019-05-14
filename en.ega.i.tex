@@ -1,5 +1,4 @@
 \documentclass[10pt,oneside]{book}
-
 \usepackage{preamble}
 
 \begin{document}
@@ -1177,12 +1176,13 @@ Noetherian recurrence.
 \label{env-0.3.1.1}
 Let $\K$ be a category, $(A_\alpha)_{\alpha\in I}$,
 $(A_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ two families of objects of $\K$ such
-that $A_{\beta\alpha}=A_{\alpha\beta}$, $(\rho_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$
-and $\rho_{\alpha\beta}:A_\alpha\to A_{\alpha\beta}$ is a family of morphisms. We say that a
-pair formed by an object $A$ of $\K$ and a family of morphisms
-$\rho_\alpha:A\to A_\alpha$ is a \emph{solution to the universal problem} defined by the data
-of the families $(A_\alpha)$, $(A_{\alpha\beta})$, and $(\rho_{\alpha\beta})$ if, for every
-object $B$ of $\K$, the map which, for sends $f\in\Hom(B,A)$ to the family
+that $A_{\beta\alpha}=A_{\alpha\beta}$, and
+$(\rho_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ is a family of morphisms
+$\rho_{\alpha\beta}:A_\alpha\to A_{\alpha\beta}$. We say that a pair formed by an object $A$
+of $\K$ and a family of morphisms $\rho_\alpha:A\to A_\alpha$ is a \emph{solution to the
+universal problem} defined by the data of the families $(A_\alpha)$, $(A_{\alpha\beta})$,
+and $(\rho_{\alpha\beta})$ if, for every object $B$ of $\K$, the map which sends
+$f\in\Hom(B,A)$ to the family
 $(\rho_\alpha\circ f)\in\prod_\alpha\Hom(B,A_\alpha)$ is a \emph{bijection} of $\Hom(B,A)$ to
 the set of all $(f_\alpha)$ such that
 $\rho_{\alpha\beta}\circ f_\alpha=\rho_{\beta\alpha}\circ f_\beta$ for any pair of indices
@@ -2348,7 +2348,7 @@ $\sh{A}$ being a right exact functor to the category of $\psi^*(\sh{B})$-modules
 For each $x\in X$, we have
 $(\Psi^*(\sh{G}))_x=\sh{G}_{\psi(x)}\otimes_{\sh{B}_{\psi(x)}}\sh{A}_x$, according to
 \sref{env}{3.7.2}. The support of $\Psi^*(\sh{G})$ is thus contained in
-$\psi^{-1}(\Supp\sh{G})$.
+$\psi^{-1}(\Supp(\sh{G}))$.
 \end{env}
 
 \subsection{Relation between direct and inverse images}
@@ -2871,7 +2871,7 @@ $D(f)\mapsto A_f$ (resp. $D(f)\mapsto M_f$) over the base $\mathfrak{B}$ of $X$ 
 of the $D(f)$ for $f\in A$ (\sref{prop}{1.1.10}, \pref{env}{3.2.1}, and \pref{env}{3.5.6}).
 \end{envs}
 
-We saw \pref{env}{3.2.4} that the fibre $\widetilde{A}_x$ (resp. $\widetilde{M}_x$)
+We saw \pref{env}{3.2.4} that the stalk $\widetilde{A}_x$ (resp. $\widetilde{M}_x$)
 \emph{identifies with the ring $A_x$} (resp. \emph{the $A_x$-module $M_x$}); we denote by
 \[
   \theta_f:A_f\longrightarrow\Gamma(D(f),\widetilde{A})
@@ -3056,11 +3056,11 @@ $(X,\OO_X)$ such that every point of $X$ admits an affine open neighbourhood.
 If $(X,\OO_X)$ is a prescheme then the affine opens give a base for the topology of $X$.
 \end{envs}
 
-In effect, if $V$ is an arbitrary open neighbourhood of $x\in X$, then there
+Indeed, if $V$ is an arbitrary open neighbourhood of $x\in X$, then there
 exists by hypothesis an open neighbourhood $W$ of $x$ such that $(W,\OO_X|W)$ is
-an affine scheme; we write $A$ to mean its ring.  In the space $W$, $V\cap W$ is
+an affine scheme; we write $A$ to mean its ring. In the space $W$, $V\cap W$ is
 an open neighbourhood of $x$; thus there exists $f\in A$ such that $D(f)$ is an
-open neighbourhood of $x$ contained inside $V\cap W$ (\sref{prop}{1.1.10}, (i)).  The ringed
+open neighbourhood of $x$ contained inside $V\cap W$ (\sref{prop}{1.1.10}, (i)). The ringed
 space $(D(f),\OO_X|D(f))$ is thus an affine scheme, isomorphic to $A_f$
 \sref{env}{1.3.6}, whence the proposition.
 
@@ -3069,7 +3069,7 @@ space $(D(f),\OO_X|D(f))$ is thus an affine scheme, isomorphic to $A_f$
 The underlying space of a prescheme is a Kolmogoroff space.
 \end{envs}
 
-In effect, if $x,y$ are two distinct points of a prescheme $X$ then it is clear
+Indeed, if $x,y$ are two distinct points of a prescheme $X$ then it is clear
 that there exists an open neighbourhood of one of these points that does not
 contain the other if $x$ and $y$ are not in the same affine open; and if they
 are in the same affine open, this is a result of \sref{cor}{1.1.8}.
@@ -3082,11 +3082,11 @@ $x\mapsto\overline{\{x\}}$ is thus a bijection of $X$ onto its set of closed
 irreducible subsets.
 \end{envs}
 
-In effect, if $Y$ is a closed irreducible subset of $X$ and $y\in Y$, and if $U$
+Indeed, if $Y$ is a closed irreducible subset of $X$ and $y\in Y$, and if $U$
 is an open affine neighbourhood of $y$ in $X$, then $U\cap Y$ is everywhere
 dense in $Y$, as well as irreducible (\pref{env}{2.1.1} and \pref{env}{2.1.4}); thus by
 \sref{cor}{1.1.14}, $U\cap Y$ is the closure in $U$ of a point $x$, and then
-$Y\subset\overline{U}$ is the closure of $x$ in $X$.  The uniqueness of the
+$Y\subset\overline{U}$ is the closure of $x$ in $X$. The uniqueness of the
 generic point of $X$ is a result of \sref{prop}{2.1.4} and (\pref{env}{2.1.3}).
 
 \begin{env}{2.1.6}
@@ -3283,7 +3283,7 @@ surjective if it is also closed.
 \begin{env}[Notational conventions]{2.2.10}
 \label{rmk-1.2.2.10}
 In all that follows, when there is
-no risk of confusion, we \emph{supress} the structure sheaf (resp. the morphism
+no risk of confusion, we \emph{suppress} the structure sheaf (resp. the morphism
 of structure sheaves) from the notation of a prescheme (resp. morphism of
 preschemes). If $U$ is an open subset of the underlying space $X$ of a
 prescheme, then whenever we speak of $U$ as a prescheme we always mean the
@@ -3304,20 +3304,21 @@ prescheme can actually be obtained by \emph{gluing affine schemes}.
 
 \begin{env}[Example]{2.3.2}
 \label{exm-1.2.3.2}
-Let $K$ be a field, and $B=K[s]$, $C=K[t]$ be two polynomial rings in one indeterminate over $K$,
-and define $X_1=\Spec(B)$, $X_2=\Spec(C)$, which are two isomorphic affine schemes.
-In $X_1$ (resp. $X_2$), let $U_{12}$ (resp. $U_{21}$) be the affine open $D(s)$ (resp. $D(t)$) where
-the ring $B_s$ (resp. $C_t$) is formed of rational fractions of the form $f(s)/s^m$ (resp. $g(t)/t^n$)
-with $f\in B$ (resp. $g\in C$). Let $u_{12}$ be the isomorphism of preschemes $U_{21}\to U_{12}$
-corresponding \sref{prop}{2.2.4} to the isomorphism from $B$ to $C$ that, to $f(s)/s^m$, associates
-the rational fraction $f(1/t)/(1/t^m)$. We can glue $X_1$ and $X_2$ along $U_{12}$ and $U_{21}$ by
-using $u_{12}$, because there is clearly no gluing condition. We later show that the prescheme $X$
-obtained in this manner is a particular case of a general method of construction (\textbf{II},2.4.3).
-Here we only show that $X$ \emph{is not an affine scheme}; this will follow from the fact that the ring
-$\Gamma(X,\OO_X)$ is \emph{isomorphic} to $K$, and so its spectrum reduces to a point. In effect, a section
-of $\OO_X$ over $X$ has a restriction over $X_1$ (resp. $X_2$), identified to an affine open of $X$, that
-is a polynomial $f(s)$ (resp. $g(t)$), and it follows from the definitions that we should have $g(t)=f(1/t)$,
-which is not possible if $f=g\in K$.
+Let $K$ be a field, and $B=K[s]$, $C=K[t]$ be two polynomial rings in one indeterminate over
+$K$, and define $X_1=\Spec(B)$, $X_2=\Spec(C)$, which are two isomorphic affine schemes. In
+$X_1$ (resp. $X_2$), let $U_{12}$ (resp. $U_{21}$) be the affine open $D(s)$ (resp. $D(t)$)
+where the ring $B_s$ (resp. $C_t$) is formed of rational fractions of the form $f(s)/s^m$
+(resp. $g(t)/t^n$) with $f\in B$ (resp. $g\in C$). Let $u_{12}$ be the isomorphism of
+preschemes $U_{21}\to U_{12}$ corresponding \sref{prop}{2.2.4} to the isomorphism from $B$ to
+$C$ that, to $f(s)/s^m$, associates the rational fraction $f(1/t)/(1/t^m)$. We can glue $X_1$
+and $X_2$ along $U_{12}$ and $U_{21}$ by using $u_{12}$, because there is clearly no gluing
+condition. We later show that the prescheme $X$ obtained in this manner is a particular case
+of a general method of construction (\textbf{II},~2.4.3). Here we only show that $X$ \emph{is
+not an affine scheme}; this will follow from the fact that the ring $\Gamma(X,\OO_X)$ is
+\emph{isomorphic} to $K$, and so its spectrum reduces to a point. Indeed, a section of
+$\OO_X$ over $X$ has a restriction over $X_1$ (resp. $X_2$), identified to an affine open of
+$X$, that is a polynomial $f(s)$ (resp. $g(t)$), and it follows from the definitions that we
+should have $g(t)=f(1/t)$, which is not possible if $f=g\in K$.
 \end{env}
 
 \subsection{Local schemes}
@@ -4120,7 +4121,7 @@ propositions \sref{env}{9.1.4} and \sref{env}{9.1.10}.
 \begin{envs}[Proposition]{9.1.12}
 \label{prop-1.9.1.12}
 With the notation from \sref{defn}{9.1.2}, let $z$ be
-a point of $X\times_S Y$, $x=p(z)$, and $y=q(z)$; the fibre
+a point of $X\times_S Y$, $x=p(z)$, and $y=q(z)$; the stalk
 $(\sh{F}\otimes_S\sh{G})_z$ is isomorphic to
 $(\sh{F}_x\otimes_{\OO_x}\OO_z)\otimes_{\OO_z}(\sh{G}_y\otimes_{\OO_y}\OO_z)
 =\sh{F}_x\otimes_{\OO_x}\OO_z\otimes_{\OO_y}\otimes\sh{G}_y$.
@@ -4510,8 +4511,7 @@ This follows from \sref{thm}{9.4.7} and the remark \sref{rmk}{9.4.4}.
 \label{cor-1.9.4.10}
 Under the hypotheses of \sref{cor}{9.4.9}, if a quasicoherent $\OO_X$-module $\sh{F}$
 is such that every quasicoherent $\OO_X$-submodule of finite type of $\sh{F}$ is
-generated by its sections over $X$, then $\sh{F}$ is generated by its sections
-over $X$.
+generated by its sections over $X$, then $\sh{F}$ is generated by its sections over $X$.
 \end{envs}
 
 In fact, let $U$ be an affine open neighbourhood of a point $x\in X$, and let
