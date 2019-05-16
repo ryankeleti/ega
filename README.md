@@ -1,22 +1,18 @@
-# en.ega.i
+# en.ega
 
-amateur translation (fr->en) of A. Grothendieck's EGA I.
+amateur translation (fr->en) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
+
+to compile, `pdflatex en.ega.main.tex` or use `make all`.
+
+click [here](https://ryankeleti.github.io/en.ega/en.ega.main.pdf) for a copy of the compiled version.
 
 work in progress. see [here](https://github.com/ryankeleti/ega) for a French transciption project.
 
-to compile, `pdflatex main.tex` or use `make all`
-
-click [here](https://ryankeleti.github.io/en.ega/en.ega.main.pdf) for a copy of the compiled version
-
 ## todo
 
-- add original page numbers in the margins here? might make it easier for people to find references if they were originally give by page number [done, use
-`\oldpage{x}`]
 - search within the .tex files for any `TODO` comments
-- examples should _not_ be italicised
 - when this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
-- make a list of the commands defined in `commands.tex` and give examples of where they are found in the original text, so that people can check this whenever translating, to ensure consistency of notation
 - update the titles to agree with [this](https://stacky.net/wiki/index.php?title=EGA_contents) ? even if not, this is a good reference for potentially unfamiliar vocabulary
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
 - an excellent reference for math terms in French [here](http://www-users.math.umn.edu/~kwlan/documents/french-glossary.pdf)
@@ -54,7 +50,7 @@ Here is the current status of the translation, along with the main contributors 
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
 - `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
 - `\cat` for categories, e.g. `\cat{C}` for a category C; use `\K` for a "default" category.
-- `\dual` for the dual sheaf, e.g. `\dual{F}` for F^\vee.
+- `\dual` for the dual sheaf, e.g. `\dual{\sh{F}}` for `\sh{F}^\vee.
 - `\isoto` for an isomorphism arrow.
 - `\emp` for the empty set.
 - `\kres` for the residue field.
@@ -63,6 +59,6 @@ Here is the current status of the translation, along with the main contributors 
 - `\HH` for cohomology.
 - `\leqslant`/`\geqslant` for <=, >=.
 - Use the operators defined in `preamble.sty`, such as `\Spec`, `\im`, `\shHom`, etc.
-
+- Use `\oldpage{x}` to mark the original page number (x) at the current text position.
 
 
