@@ -1,0 +1,67 @@
+\documentclass[10pt,oneside]{book}
+\usepackage{preamble}
+
+\begin{document}
+\title{\'El\'ements de g\'eom\'etrie alg\'ebrique\\
+(EGA)}
+\author{A.~Grothendieck and J.~Dieudonn\'e}
+\date{1960}
+\maketitle
+\frontmatter
+\chapter*{What this is}
+    This is a community translation of Grothendieck's EGA.
+    As it is a work in progress by multiple people, it will probably have a few
+    mistakes---if you spot any then please feel free to
+    \href{https://github.com/ryankeleti/en.ega/issues}{let us know}! To contribute,
+    please visit
+    \begin{center}
+      \url{https://github.com/ryankeleti/en.ega}.
+    \end{center}
+    On est d\'esol\'es, Grothendieck.
+
+\noindent
+    \textbf{Note.} --- EGA uses \textbf{prescheme} for what is now usually called
+    a scheme, and \textbf{scheme} for what is now usually called a
+    separated scheme.
+    \begin{center}
+      \textbf{Contributors}\\
+      Tim Hosgood\\
+      Ryan Keleti
+    \end{center}
+{
+  \hypersetup{
+    linkcolor=[rgb]{0,0,0}
+  }
+  \tableofcontents{}
+}
+\clearpage
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%
+%% Introduction %%
+%%%%%%%%%%%%%%%%%%
+\input{intro.tex}
+
+\clearpage
+
+%%%%%%%%%%%%%
+%% EGA 0_I %%
+%%%%%%%%%%%%%
+\input{en.ega.0i.tex}
+
+\clearpage
+
+%%%%%%%%%%%
+%% EGA I %%
+%%%%%%%%%%%
+\input{en.ega.i.tex}    
+
+\clearpage
+
+%%%%%%%%%%%%%%%
+%% EGA I bib %%
+%%%%%%%%%%%%%%%
+\input{ega.i.bib}
+
+\end{document}
+

@@ -1,12 +1,12 @@
 all: main
 
-EGAI=en.ega.i
+EGA=en.ega.main
 
-main: en.ega.i.main
+main: en.ega.main
 
-en.ega.i.main:
-	pdflatex $(EGAI).tex
-	pdflatex $(EGAI).tex
+en.ega.main:
+	pdflatex $(EGA).tex
+	pdflatex $(EGA).tex
 
 #WEBDIR=WEB
 #web:
@@ -18,7 +18,7 @@ en.ega.i.main:
 #	plastex ega.tex
 
 clean:
-	rm -f $(EGAI).aux $(EGAI).bbl $(EGAI).blg $(EGAI).log $(EGAI).out $(EGAI).toc
+	rm -f $(EGA).aux $(EGA).bbl $(EGA).blg $(EGA).log $(EGA).out $(EGA).toc $(EGA).fls $(EGA).fdb_latexmk
 
 cleanpdf:
 	rm -f $(EGAI).pdf
