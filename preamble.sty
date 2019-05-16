@@ -2,7 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{microtype}
+%\usepackage{microtype}
 \usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage[all]{xy}
 \usepackage{enumitem}
@@ -52,7 +52,7 @@
                                        %   change if needed
 \newcommand{\HH}{\mathrm{H}}           % cohomology H
 \newcommand{\dual}[1]{{#1}^\vee}       % dual
-\renewcommand{\k}{\bb{k}}              % residue field k
+\newcommand{\kres}{\mathbf{k}\,}       % residue field k
 \newcommand{\isoto}{%                  % isomorphism \to
   \xrightarrow{\sim}}
 \newcommand{\K}{\cat{K}}               % category K
@@ -62,10 +62,11 @@
 %\newcommand*{\sheafHom}{\mathscr{H}\text{\normalfont\kern -3pt {\calligra\large om}}\,}
 \def\shHom{\sh{H}\!\textit{om}} % sheaf Hom
 \def\Hom{{\mathop{\mathrm{Hom}}\nolimits}}
+\def\Tor{{\mathop{\mathrm{Tor}}\nolimits}}
 \def\Supp{{\mathop{\mathrm{Supp}}\nolimits}\,}
-\def\ker{{\mathop{\mathrm{ker}}\nolimits}\,}
-\def\img{{\mathop{\mathrm{im}}\nolimits}\,}
-\def\coker{{\mathop{\mathrm{coker}}\nolimits}\,}
+\def\ker{{\mathop{\mathrm{Ker}}\nolimits}\,}
+\def\img{{\mathop{\mathrm{Im}}\nolimits}\,}
+\def\coker{{\mathop{\mathrm{Coker}}\nolimits}\,}
 \def\Spec{{\mathop{\mathrm{Spec}}\nolimits}\,}
 
 % if unsure of a translation
@@ -79,7 +80,7 @@
 \newcommand{\sref}[2]{\hyperref[#1-\arabic{chapter}.#2]{\normalfont{(#2)}}}
 
 % ref prelim
-\newcommand{\pref}[2]{\hyperref[#1-0.#2]{\normalfont{(\textbf{0}, #2)}}}
+\newcommand{\pref}[2]{\hyperref[#1-0.#2]{\normalfont{(\textbf{0},~#2)}}}
 
 %% ref out of chapter
 %\newcommand{\cref}[4]{\hyperref[#1-#2.#3]{\normalfont{(\textbf{#3}, #4)}}}
