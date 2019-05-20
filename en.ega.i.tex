@@ -1828,7 +1828,7 @@ $S'$-preschemes, the composition $X\to S'\to S$ endows $X$ with the structure of
 an $S$-prescheme. Conversely, suppose that $S'$ is the induced prescheme of an
 open subset of $S$; let $X$ be an $S$-prescheme and suppose that the structure
 morphism $f:X\to S$ is such that $f(X)\subset S'$; then we can consider
-$X$ as an $S'$-preschemes. In this latter case, if $Y$ is another $S$-prescheme
+$X$ as an $S'$-prescheme. In this latter case, if $Y$ is another $S$-prescheme
 whose structure morphism sends the underlying space to $S'$, then every
 $S$-morphism from $X$ to $Y$ is also an $S'$-morphism.
 \end{env}
@@ -1879,6 +1879,141 @@ $Z$, to the set of pairs consisting of an $S$-morphism $T\to X$ and an $S$-morph
 \]
 \end{envs}
 
+This is therefore a general notion of a \emph{product} of two objects in a category, applied
+to the category of $S$-preschemes (T, I, 1.1); in particular, a product of two $S$-preschemes
+is \emph{unique} up to a unique $S$-isomorphism. Because of this unicity, most of the time we
+will denote a product of two $S$-preschemes $X$, $Y$ by the notation $X\times_S Y$ (or simply
+$X\times Y$ when there is no chance of confusion), the morphisms $p_1$, $p_2$ (called the
+\emph{canonical projections} of $X\times_S$ to $X$ and $Y$, respectively) are suppressed in
+the notation. If $g:T\to X$, $h:T\to Y$ are two $S$-morphisms, we denote by $(g,h)_S$, or
+simply $(g,h)$, the $S$-morphism $f:T\to X\times_S Y$ such that $p_1\circ f=g$,
+$p_2\circ f=h$. If $X'$, $Y'$ are two $S$-preschemes, $p_1'$, $p_2'$ the canonical
+projections of $X'\times_S Y'$ (assumed to exist), $u:X'\to X$, $v:Y'\to Y$ two
+$S$-morphisms, we write $u\times_S v$ (or simply $u\times v$) for the $S$-morphism
+$(u\circ p_1',v\circ p_2')_S$ from $X'\times_S Y'$ to $X\times_S Y$.
+
+When $S$ is an affine scheme of ring $A$, we often replace $S$
+by $A$ is the above notations.
+
+\begin{envs}[Proposition]{3.2.2}
+\label{prop-1.3.2.2}
+Let $X$, $Y$, $S$ be three affine schemes, $B$, $C$, $A$ their respective rings. Let
+$Z=\Spec(B\otimes_A C)$, $p_1$, $p_2$ the $S$-morphisms corresponding \sref{prop}{2.2.4} to
+the canonical $A$-homomorphisms $u:b\mapsto b\otimes 1$ and $v:c\mapsto 1\otimes c$ from $B$
+and $C$ to $B\otimes_A C$; then $(Z,p_1,p_2)$ is a producy of $X$ and $Y$.
+\end{envs}
+
+According to \sref{prop}{2.2.4}, it suffices to check that if, to each $A$-homomorphism
+$f:B\otimes_A C\to L$ (where $L$ is an $A$-algebra), we associate the pair
+$(f\circ u,f\circ v)$, then we define a bijection
+$\Hom_A(B\otimes_A C,L)\isoto\Hom_A(B,L)\times\Hom_A(C,L)$,\footnote{The notation $\Hom_A$
+denotes here the set of homomorphisms of \emph{$A$-algebras}.} which follows immediately
+from the definitions and the relation $b\otimes c=(b\otimes 1)(1\otimes c)$.
+
+\begin{envs}[Corollary]{3.2.3}
+\label{cor-1.3.2.3}
+Let $T$ be an affine scheme of ring $D$, $\alpha=({}^a\rho,\widetilde{\rho})$
+(resp. $\beta=({}^a\sigma,\widetilde{\sigma})$) an $S$-morphism $T\to X$ (resp. $T\to Y$),
+where $\rho$ (resp. $\sigma$) is an $A$-homomorphism from $B$ (resp. $C$) to $D$; then
+$(\alpha,\beta)_S=({}^a\tau,\widetilde{\tau})$, where $\tau$ is the homomorphism
+$B\otimes_A C\to D$ such that $\tau(b\otimes c)=\rho(b)\sigma(c)$.
+\end{envs}
+
+\begin{envs}[Proposition]{3.2.4}
+\label{prop-1.3.2.4}
+Let $f:S'\to S$ be a \emph{monomorphism} of preschemes \normalfont{(T, I, 1.1)}, $X$, $Y$ two
+$S'$-preschemes, which are also considered as $S$-preschemes by means of $f$. Each product of
+$S$-preschemes $X$, $Y$ is then a product of $S'$-preschemes $X$, $Y$, and conversely.
+\end{envs}
+
+Let $\vphi:X\to S'$, $\psi:Y\to S'$ be the structure morphisms. If $T$ is an $S$-prescheme,
+$u:T\to X$, $v:T\to Y$ two $S$-morphisms, we have by definition
+$f\circ\vphi\circ u=f\circ\psi\circ v=\theta$, the structure morphism of $T$; the hypotheses
+on $f$ imply that $\vphi\circ u=\psi\circ v=\theta'$, and we can consider $T$ as an
+$S'$-prescheme with structure morphism $\theta'$, $u$ and $v$ as $S'$-morphisms. The
+conclusion of the proposition follows immediately, taking into account \sref{defn}{3.2.1}.
+
+\begin{envs}[Corollary]{3.2.5}
+\label{cor-1.3.2.5}
+Let $X$, $Y$ be two $S$-preschemes, $\vphi:X\to S$, $\psi:Y\to S$ their structure morphisms,
+$S'$ an open subset of $S$ wuch that $\vphi(X)\subset S'$, $\psi(Y)\subset S'$. Each product
+of $S$-preschemes $X$, $Y$ is then also a product of $S'$-preschemes $X$, $Y$, and
+conversely.
+\end{envs}
+
+\oldpage{106}
+It suffices to apply \sref{prop}{3.2.4} to the canonical injection $S'\to S$.
+
+\begin{envs}[Theorem]{3.2.6}
+\label{thm-1.3.2.6}
+Given two $S$-preschemes $X$, $Y$, there exists a product $X\times_S Y$.
+\end{envs}
+
+We proceed in several steps.
+
+\begin{envs}[Lemma]{3.2.6.1}
+\label{lem-1.3.2.6.1}
+Let $(Z,p,q)$ be a product of $X$ and $Y$, $U$, $V$ two open subsets of $X$, $Y$,
+respectively. If we put $W=p^{-1}(U)\cap q^{-1}(V)$, the triple consisting of $W$ and the
+restrictions of $p$ and $q$ to $W$ \emph{(considered as the morphisms $W\to U$, $W\to V$,
+respectively)} is a product of $U$ and $V$.
+\end{envs}
+
+Indeed, if $T$ is an $S$-prescheme, we can identify the $S$-morphisms $T\to W$ and the
+$S$-morphisms $T\to Z$ mapping $T$ to $W$. If then $g:T\to U$, $h:T\to V$ are any two
+$S$-morphisms, we can consider them as $S$-morphisms from $T$ to $X$ and $Y$ respectively,
+and by hypothesis there is then a unique $S$-morphism $f:T\to Z$ such that $g=p\circ f$,
+$h=q\circ f$. As $p(f(Y))\subset U$, $q(f(T))\subset V$, we have
+\[
+  f(T)\subset p^{-1}(U)\cap q^{-1}(V)=W,
+\]
+hence our assertion.
+
+\begin{envs}[Lemma]{3.2.6.2}
+\label{lem-1.3.2.6.2}
+Let $Z$ be an $S$-presceme, $p:Z\to X$, $q:Z\to Y$ two $S$-morphisms, $(U_\alpha)$ an open
+cover of $X$, $(V_\lambda)$ an open cover of $Y$. Suppose that for each pair
+$(\alpha,\lambda)$, the $S$-prescheme
+$W_{\alpha\lambda}=p^{-1}(U_\alpha)\cap q^{-1}(V_\lambda)$ and the restrictions of $p$ and
+$q$ to $W_{\alpha\lambda}$ form a product of $U_\alpha$ and $V_\lambda$. Then $(Z,p,q)$ is a
+product of $X$ and $Y$.
+\end{envs}
+
+We first show that, if $f_1$, $f_2$ are two $S$-morphisms $T\to Z$, then the relations
+$p\circ f_1=p\circ f_2$ and $q\circ f_1=q\circ f_2$ imply $f_1=f_2$. Indeed, $Z$ is the union
+of the $W_{\alpha\lambda}$, so the $f_1^{-1}(W_{\alpha\lambda})$ form an open cover of $T$,
+and similarly for $f_2^{-1}(W_{\alpha\lambda})$. In addition, we have
+\[
+  f_1^{-1}(W_{\alpha\lambda})=f_1^{-1}(p^{-1}(U_\alpha))\cap f_1^{-1}(q^{-1}(V_\lambda))
+  =f_2^{-1}(p^{-1}(U_\alpha))\cap f_2^{-1}(q^{-1}(V_\lambda))=f_2^{-1}(W_{\alpha\lambda})
+\]
+by hypothesis, and it reduces to seeing that the the restrictions of $f_1$ and $f_2$ to
+$f_1^{-1}(W_{\alpha\lambda})=f_2^{-1}(W_{\alpha\lambda})$ are identical for each pair of
+indices. But as these restrictions can be considered as $S$-morphisms from
+$f_1^{-1}(W_{\alpha\lambda})$ to $W_{\alpha\lambda}$, our assertion follows from the
+hypotheses and Definition \sref{defn}{3.2.1}.
+
+Suppose now that we are given two $S$-morphisms $g:T\to X$, $h:T\to Y$. Put
+$T_{\alpha\lambda}=g^{-1}(U_\alpha)\cap h^{-1}(V_\lambda)$; the $T_{\alpha\lambda}$ form an
+open cover of $T$. By hypothesis, there exists an $S$-morphism $f_{\alpha\lambda}$ such that
+$p\circ f_{\alpha\lambda}$ and $q\circ f_{\alpha\lambda}$ are the respective restrictions of
+$g$ and $h$ to $T_{\alpha\lambda}$. In addition, we show that the restrictions of
+$f_{\alpha\lambda}$ and $f_{\beta\mu}$ to $T_{\alpha\lambda}\cap T_{\beta\mu}$ coincide,
+which would finish the proof of \sref{lem}{3.2.6.2}. The images of
+$T_{\alpha\lambda}\cap T_{\beta\mu}$ under $f_{\alpha\lambda}$ and $f_{\beta\mu}$ are
+contained in $W_{\alpha\lambda}\cap W_{\beta\mu}$ by definition. As
+\[
+  W_{\alpha\lambda}\cap W_{\beta\mu}
+  =p^{-1}(U_\alpha\cap U_\beta)\cap q^{-1}(V_\lambda\cap V_\mu),
+\]
+it follows from \sref{lem}{3.2.6.1} that $W_{\alpha\lambda}\cap W_{\beta\mu}$ and the
+restrictions to this prescheme of $p$ and $q$ form a \emph{product} of $U_\alpha\cap U_\beta$
+and $V_\lambda\cap V_\mu$. As $p\circ f_{\alpha\lambda}$ and $p\circ f_{\beta\mu}$ coincide
+in $T_{\alpha\lambda}\cap T_{\beta\mu}$ and similarly for $q\circ f_{\alpha\lambda}$ and
+$q\circ f_{\beta\mu}$, we see that $f_{\alpha\lambda}$ and $f_{\beta\mu}$ coincide in
+$T_{\alpha\lambda}\cap T_{\beta\mu}$, q.e.d.
+
+\oldpage{107}
 
 
 
