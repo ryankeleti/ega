@@ -1,5 +1,5 @@
 \chapter{The language of schemes}
-    
+
 \section*{Summary}
 \label{1-schemes.summary}
 
@@ -1137,7 +1137,7 @@ Put $x'={}^a\vphi(x)$ and let $f'\in A'$ be such that $x'\in D(f')$; let $f=\vph
 ring $\Gamma(D(f),\widetilde{A})$ identifies with $A_f$, the modules
 $\Gamma(D(f),\widetilde{N})$ and $\Gamma(D(f'),\widetilde{N'})$ with $N_f$ and $N_{f'}'$
 respectively; let $s\in\Gamma(D(f'),\widetilde{N'})$, identified with $n'/{f'}^p$
-($n\in N'$), $s$ its image under $\widetilde{j}$ in $\Gamma(D(f),\widetilde{N})$; $s$
+($n'\in N'$), $s$ its image under $\widetilde{j}$ in $\Gamma(D(f),\widetilde{N})$; $s$
 identifies with $(n'\otimes 1)/f^p$. On the other hand, let $t\in\Gamma(D(f),\widetilde{A})$,
 identified with $g/f^q$ ($g\in A$); then, by definition, we have
 $h_x(s_x'\otimes t_x)=t_x\cdot s_x$ \pref{env}{4.4.3}. But we can canonically identify $N_f$
@@ -1146,7 +1146,7 @@ to the element $(n'/{f'}^p)\otimes 1$, and the section $y\mapsto t_y\cdot s_y$ w
 $(n'/{f'}^p)\otimes(g/f^q)$. The compatibility diagram of \pref{env}{1.5.6} show that $h_x$
 is none other than the canonical isomorphism
 \[
-  N_{x'}'\otimes{A_{x'}'}(A_x)_{[\vphi_{x'}]}\isoto N_x=(N'\otimes_{A'}A_{[\vphi]})_x.
+  N_{x'}'\otimes_{A_{x'}'}(A_x)_{[\vphi_{x'}]}\isoto N_x=(N'\otimes_{A'}A_{[\vphi]})_x.
   \tag{1.6.5.1}
 \]
 
@@ -1174,17 +1174,17 @@ and $N$ with $\Gamma(\widetilde{N'})$ and $\Gamma(\widetilde{N})$ respectively
 \begin{env}{1.6.7}
 \label{env-1.1.6.7}
 In the proof of \sref{prop}{1.6.5}, we had proved in passing that the canonical map
-(\textbf{O},~4.4.3.2) $\rho:\widetilde{N'}\to\Phi_*(\Phi^*(\widetilde{N'}))$ is none other
+(\textbf{0},~4.4.3.2) $\rho:\widetilde{N'}\to\Phi_*(\Phi^*(\widetilde{N'}))$ is none other
 than the homomorphism $\widetilde{j}$,
 \oldpage{96}
 where $j:N'\to N'\otimes_{A'}A_{[\vphi]}$ is the homomorphism $z'\mapsto z'\otimes 1$.
-Similarly, the canonical map (\textbf{O},~4.4.3.3)
+Similarly, the canonical map (\textbf{0},~4.4.3.3)
 $\sigma:\Phi^*(\Phi_*(\widetilde{M}))\to\widetilde{M}$ is none other than $\widetilde{p}$,
 where $p:M_{[\vphi]}\otimes_{A'}A_{[\vphi]}\to M$ is the canonical homomorphism which, sends
 each tensor product $z\otimes a$ ($z\in M$, $a\in A$) to $a\cdot z$; this follows immediately
 from the definitions (\pref{env}{3.7.1}, \pref{env}{4.4.3}, and \sref{thm}{1.3.7}).
 
-We conclude (\pref{env}{4.4.3} and (\textbf{O},~3.5.4.4)) that if $v:N'\to M_{[\vphi]}$ is an
+We conclude (\pref{env}{4.4.3} and (\textbf{0},~3.5.4.4)) that if $v:N'\to M_{[\vphi]}$ is an
 $A'$-homomorphism, we have $\widetilde{v}^\sharp=(v\otimes 1)^\sim$.
 \end{env}
 
@@ -1402,11 +1402,10 @@ $(X,\OO_X)$, or the \emph{restriction} of $(X,\OO_X)$ to $U$.
 \label{env-1.2.1.8}
 We say that a prescheme $(X,\OO_X)$ is \emph{irreducible}
 (resp. \emph{connected}) if the underlying space $X$ is irreducible (resp.
-connected).  We say that a prescheme is \emph{integral} if it is
-\emph{irreducible and reduced} (cf. \sref{env}{5.1.4}).  We say that a prescheme
-$(X,\OO_X)$ is \emph{locally integral} if every $x\in X$ admits an open
-neighbourhood $U$ such that the prescheme induced on $U$ by $(X,\OO_X)$ is
-integral.
+connected). We say that a prescheme is \emph{integral} if it is
+\emph{irreducible and reduced} (cf. \sref{env}{5.1.4}). We say that a prescheme
+$(X,\OO_X)$ is \emph{locally integral} if each $x\in X$ admits an open
+neighbourhood $U$ such that the prescheme induced on $U$ by $(X,\OO_X)$ is integral.
 \end{env}
 
 \subsection{Morphisms of preschemes}
@@ -1465,7 +1464,7 @@ restriction homomorphism $\Gamma(X,\OO_X)\to\Gamma(V_\alpha,\OO_X|V_\alpha)$ we
 obtain a homomorphism $\vphi_\alpha:A\to\Gamma(V_\alpha,\OO_X|V_\alpha)$
 that corresponds to a unique morphism $(\psi_\alpha,\theta_\alpha)$ from the
 prescheme $(V_\alpha,\OO_X|V_\alpha)$ to $(S,\OO_S)$, thanks to \sref{env}{1.7.3}.
-Furthermore, for every pair of indices $(\alpha,\beta)$, every point of
+Furthermore, for each pair of indices $(\alpha,\beta)$, each point of
 $V_\alpha\cap V_\beta$ admits an open affine neighbourhood $W$ contained inside
 $V_\alpha\cap V_\beta$ \sref{prop}{2.1.3}; it is clear that that, by composing
 $\vphi_\alpha$ and $\vphi_\beta$ with the restriction homomorphisms to $W$,
@@ -1480,7 +1479,7 @@ is clear that this morphism is a morphism of preschemes and such that
 $\Gamma(\theta)=\vphi$.
 
 Let $u:A\to\Gamma(X,\OO_X)$ be a ring homomorphism, and $v=(\psi,\theta)$
-the corresponding morphism $(X,\OO_X)\to(S,\OO_S)$. For every $f\in A$ we have
+the corresponding morphism $(X,\OO_X)\to(S,\OO_S)$. For each $f\in A$ we have
 that
 \[
   \psi^{-1}(D(f))=X_{u(f)}
@@ -1542,7 +1541,7 @@ $\psi(\psi^{-1}(F))=F$, so $\psi''(\psi^{-1}(F))=\psi'(F)$, which proves (ii).
 Let $f=(\psi,\theta)$ be a morphism
 $(X,\OO_X)\to(Y,\OO_Y)$, and $(U_\alpha)$ an open cover of $Y$. For $f$ to be
 open (resp. closed, surjective, dominant), it is necessary and sufficient that
-its restriction to every induced prescheme
+its restriction to each induced prescheme
 $(\psi^{-1}(U_\alpha),\OO_X|\psi^{-1}(U_\alpha))$, considered as a morphism of
 preschemes from this induced prescheme to the induced prescheme
 $(U_\alpha,\OO_Y|U_\alpha)$ is open (resp. closed, surjective, dominant).
@@ -1625,7 +1624,7 @@ is called the \emph{local scheme of $Y$ at the point $y$}. Let $V$ be an affine
 open of $Y$ containing $y$, and $B$ the ring of the affine scheme $V$; then
 $\OO_y$ is canonically identified with $B_y$ \sref{env}{1.3.4}, and the canonical
 homomorphism $B\to B_y$ thus corresponds \sref{env}{1.6.1} to a morphism of preschemes
-$\Spec(\OO_y)\to V$.  If we compose this morphism with the canonical injection
+$\Spec(\OO_y)\to V$. If we compose this morphism with the canonical injection
 $V\to Y$, then we obtain a morphism $\Spec(\OO_y)\to Y$, which is
 \emph{independent} of the affine open $V$ (containing $y$) that we chose:
 indeed, if $V'$ is some other affine open containing $y$, then there exists a
@@ -1676,7 +1675,7 @@ $\OO_y$ is of \emph{dimension zero}}).
 \begin{envs}[Proposition]{2.4.4}
 \label{prop-1.2.4.4}
 Let $(X,\OO_X)$ be a local scheme of a ring
-$A$, $a$ its unique closed point, and $(Y,\OO_Y)$ a prescheme.  Every morphism
+$A$, $a$ its unique closed point, and $(Y,\OO_Y)$ a prescheme. Every morphism
 $u=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ then factorizes uniquely as
 $X\to\Spec(\OO_{\psi(a)})\to Y$, where the second arrow denotes the canonical
 morphism, and the first corresponds to a local homomorphism $\OO_{\psi(a)}\to A$.
@@ -1689,12 +1688,12 @@ Indeed, for all $x\in X$, we have that $a\in\overline{\{x\}}$, so
 $\psi(a)\in\overline{\{\psi(x)\}}$, which shows that $\psi(X)$ is contained in
 every affine open containing $\psi(a)$. So it suffices to consider the case
 where $(Y,\OO_Y)$ is an affine scheme of ring $B$, and we then have that
-$u=({}^a\vphi,\tilde{\vphi})$, where $\vphi\in\Hom(B,A)$ (1.7.3).  Further,
+$u=({}^a\vphi,\tilde{\vphi})$, where $\vphi\in\Hom(B,A)$ \sref{thm}{1.7.3}. Further,
 we have that $\vphi^{-1}(\mathfrak{j}_a)=\mathfrak{j}_{\psi(a)}$, and hence
 that the image under $\vphi$ of any element of
 $B-\mathfrak{j}_{\psi(a)}$ is invertible in the local ring $A$; the
 factorization in the result follows from the universal property of the ring of
-fractions \pref{env}{1.2.4}. Conversely, to every local homomorphism
+fractions \pref{env}{1.2.4}. Conversely, to each local homomorphism
 $\OO_y\to A$ there exists a unique corresponding morphism
 $(\psi,\theta):X\to\Spec(\OO_y)$ such that $\psi(a)=y$ \sref{env}{1.7.3}, and,
 by composing with the canonical morphism $\Spec(\OO_y)\to Y$, we obtain a morphism
@@ -1704,13 +1703,13 @@ $X\to Y$, which proves the proposition.
 \label{env-1.2.4.5}
 The affine schemes whose ring is a field $K$ have an
 underlying space that is just a point. If $A$ is a local ring with maximal
-ideal $\mathfrak{m}$, then every local homomorphism $A\to K$ has kernel equal to
+ideal $\mathfrak{m}$, then each local homomorphism $A\to K$ has kernel equal to
 $\mathfrak{m}$, and so factorizes as $A\to A/\mathfrak{m}\to K$, where the
 second arrow is a monomorphism. The morphisms $\Spec(K)\to\Spec(A)$ thus
 correspond bijectively to monomorphisms of fields $A/\mathfrak{m}\to K$.
 \end{env}
     
-Let $(Y,\OO_Y)$ be a prescheme; for every $y\in Y$ and every ideal
+Let $(Y,\OO_Y)$ be a prescheme; for each $y\in Y$ and each ideal
 $\mathfrak{a}_y$ of $\OO_y$, the canonical homomorphism
 $\OO_y\to\OO_y/\mathfrak{a}_y$ defines a morphism
 $\Spec(\OO_y/\mathfrak{a}_y)\to\Spec(\OO_y)$; if we compose this with the
@@ -1723,7 +1722,7 @@ so proposition \sref{prop}{2.4.4} says that:
 \label{cor-1.2.4.6}
 \oldpage{103}
 Let $(X,\OO_X)$ be a local scheme whose ring $K$ is a field, $\xi$ be the unique point of
-$X$, and $(Y,\OO_Y)$ a prescheme. Then every morphism $u:(X,\OO_X)\to(Y,\OO_Y)$ factorizes
+$X$, and $(Y,\OO_Y)$ a prescheme. Then each morphism $u:(X,\OO_X)\to(Y,\OO_Y)$ factorizes
 uniquely as $X\to\Spec(\kres(\psi(\xi)))\to Y$, where the second arrow denotes the canonical
 morphism, and the first corresponds to a monomorphism $\kres(\psi(\xi))\to K$.
 This establishes a canonical bijective correspondance between the set of
@@ -1733,7 +1732,7 @@ $y\in Y$).
     
 \begin{envs}[Corollary]{2.4.7}
 \label{cor-1.2.4.7}
-For all $y\in Y$, every canonical morphism
+For all $y\in Y$, each canonical morphism
 $\Spec(\OO_y/\mathfrak{a}_y)\to Y$ is a monomorphism of ringed spaces.
 \end{envs}
     
@@ -1743,7 +1742,7 @@ to apply \sref{env}{1.7.5}.
 \begin{env}[Remark]{2.4.8}
 \label{rmk-1.2.4.8}
 Let $X$ be a local scheme, and $a$ its unique
-closed point.  Since every affine open containing $a$ is necessarily in the
+closed point. Since every affine open containing $a$ is necessarily in the
 whole of $X$, every \emph{invertible} $\OO_X$-module \pref{env}{5.4.1} is
 necessarily \emph{isomorphic to $\OO_X$} (or, as we say, again, \emph{trivial}).
 This property doesn't hold in general, for an arbitrary affine scheme
@@ -1771,7 +1770,7 @@ a sheaf of \emph{$A$-algebras}. \emph{An arbitrary prescheme can always be
 considered as a $\mathbb{Z}$-prescheme in a unique way.}
 
 If $\vphi:X\to S$ is the structure morphism of an $S$-prescheme $X$, we
-say that a point $x\in X$ is \emph{over a point $s\in S$} if $\vphi(x)=s$.  We
+say that a point $x\in X$ is \emph{over a point $s\in S$} if $\vphi(x)=s$. We
 say that $X$ \emph{dominates} $S$ if $\vphi$ is a dominant morphism \sref{env}{2.2.6}.
 
 \begin{env}{2.5.2}
@@ -1839,12 +1838,49 @@ $S$-morphism from $X$ to $Y$ is also an $S'$-morphism.
 If $X$ is an $S$-prescheme, with structure morphism
 $\vphi:X\to S$, we define an \emph{$S$-section of $X$} to be an
 $S$-morphism from $S$ to $X$, that is to say a morphism of preschemes
-$\psi:S\to X$ such that $\vphi\circ\psi$ is the identity on $S$.  We
+$\psi:S\to X$ such that $\vphi\circ\psi$ is the identity on $S$. We
 denote by $\Gamma(X/S)$ the set of $S$-sections of $X$.
 \end{env}
 
 \section{Products of preschemes}
 \label{1-schemes-3}
+
+\subsection{Sums of preschemes}
+\label{1-schemes-3.1}
+
+Let $(X_\alpha)$ be any family of preschemes; let $X$ be a topological space which it the
+\emph{sum} of the underlying spaces $X_\alpha$; $X$ is then the union of the pairwise
+disjoint open subspaces $X_\alpha'$, and for each $\alpha$ there is a homomorphism
+$\vphi_\alpha$ from $X_\alpha$ to $X_\alpha'$. If we equip each of the $X_\alpha'$ with the
+sheaf $(\vphi_\alpha)_*(\OO_{X_\alpha})$, it is clear that $X$ becomes a preschme, which
+we call the \emph{sum} of the family of preschemes $(X_\alpha)$ and which we denote
+$\amalg_\alpha X_\alpha$. If $Y$ is a prescheme, the map $f\mapsto(f\circ\vphi_\alpha)$ is a
+\emph{bijection} from the set $\Hom(X,Y)$ to the product set $\Pi_\alpha\Hom(X_\alpha,Y)$.
+In particular, if the $X_\alpha$ are $S$-preschemes, with structure morphisms $\psi_\alpha$,
+$X$ is an $S$-prescheme by the unique morphism $\psi:X\to S$ such that
+$\psi\circ\vphi_\alpha=\psi_\alpha$ for each $\alpha$. The sum of two preschemes $X$, $Y$ is
+denoted $X\amalg Y$. It is immediate that if $X=\Spec(A)$, $Y=\Spec(B)$, $X\amalg Y$
+canonically identifies with $\Spec(A\times B)$.
+
+\subsection{Products of preschemes}
+\label{1-schemes-3.2}
+
+\begin{envs}[Definition]{3.2.1}
+\label{defn-1.3.2.1}
+Given two $S$-preschemes $X$, $Y$, we say that a triple $(Z,p_1,p_2)$ consisting of an
+$S$-prescheme $Z$ and of two $S$-morphisms $p_1:Z\to X$, $p_2:Z\to Y$, is a product of the
+\oldpage{105}
+$S$-preschemes $X$ and $Y$, if, for each $S$-prescheme $T$, the map
+$f\mapsto(p_1\circ f,p_2\circ f)$ is a bijection from the set of $S$-morphisms from $T$ to
+$Z$, to the set of pairs consisting of an $S$-morphism $T\to X$ and an $S$-morphism $T\to Y$
+(in other words, a bijection
+\[
+  \Hom_S(T,Z)\isoto\Hom_S(T,X)\times\Hom_S(T,Y)).
+\]
+\end{envs}
+
+
+
 
 \section{Subpreschemes and immersion morphisms}
 \label{1-schemes-4}
@@ -1864,7 +1900,7 @@ denote by $\Gamma(X/S)$ the set of $S$-sections of $X$.
 \subsection{Allied local rings}
 \label{1-schemes-8.1}
 
-For every local ring $A$, we denote by $\mathfrak{m}(A)$ the maximal ideal of
+For each local ring $A$, we denote by $\mathfrak{m}(A)$ the maximal ideal of
 $A$.
 
 \begin{envs}[Lemma]{8.1.1}
@@ -2084,7 +2120,7 @@ In fact, every closed subset of $X$ is thus a finite union of irreducible closed
 subsets, i.e. of the form $\overline{\{y\}}$ \sref{env}{2.1.5}. But, if
 $x\not\in\overline{\{y\}}$, then there exists a rational function $f$ defined at
 $x$ but not at $y$ \sref{cor}{8.2.3}, or, equivalently, we have that $x\in\delta(f)$
-and $\delta(f)$ is not contained in $\overline{\{y\}}$. The complement  of
+and $\delta(f)$ is not contained in $\overline{\{y\}}$. The complement of
 $\overline{\{y\}}$ is thus a union of sets of the form $\delta(f)$, and by
 virtue of the first remark, every open subset of $X$ is the union of finite
 intersections of open sets of the form $\delta(f)$.

@@ -892,7 +892,7 @@ of $\K$ and a family of morphisms $\rho_\alpha:A\to A_\alpha$ is a \emph{solutio
 universal problem} defined by the data of the families $(A_\alpha)$, $(A_{\alpha\beta})$,
 and $(\rho_{\alpha\beta})$ if, for every object $B$ of $\K$, the map which sends
 $f\in\Hom(B,A)$ to the family
-$(\rho_\alpha\circ f)\in\prod_\alpha\Hom(B,A_\alpha)$ is a \emph{bijection} of $\Hom(B,A)$ to
+$(\rho_\alpha\circ f)\in\Pi_\alpha\Hom(B,A_\alpha)$ is a \emph{bijection} of $\Hom(B,A)$ to
 the set of all $(f_\alpha)$ such that
 $\rho_{\alpha\beta}\circ f_\alpha=\rho_{\beta\alpha}\circ f_\beta$ for any pair of indices
 $(\alpha,\beta)$. If such a solution exists, it is unique up to an isomorphism.
@@ -1063,16 +1063,16 @@ that the presheaf $\sh{F}$ on $\mathfrak{B}$ satisfies the condition:\\
 (F$_0$) \emph{For any covering $(U_\alpha)$ of $U\in\mathfrak{B}$ by sets
         $U_\alpha\in\mathfrak{B}$ contained in $U$, and for any object $T\in\K$, the map
         which takes $f\in\Hom(T,\sh{F}(U))$ to the family
-        $(\rho_{U_\alpha}^U\circ f)\in\prod_\alpha\Hom(T,\sh{F}(U_\alpha))$ is a bijection of
+        $(\rho_{U_\alpha}^U\circ f)\in\Pi_\alpha\Hom(T,\sh{F}(U_\alpha))$ is a bijection of
         $\Hom(T,\sh{F}(U))$ on the set of all $(f_\alpha)$ such that
         $\rho_V^{U_\alpha}\circ f_\alpha=\rho_V^{U_\beta}\circ f_\beta$ for any pair of
         indices $(\alpha,\beta)$ and any $V\in\mathfrak{B}$ such that
         $V\subset U_\alpha\cap U_\beta$\footnote{It also means that the pair formed by
         $\sh{F}(U)$ and the $\rho_\alpha=\rho_{U_\alpha}^U$ is a \emph{solution to the
         universal problem} defined in \sref{env}{3.1.1} by the data of
-        $A_\alpha=\sh{F}(U_\alpha)$, $A_{\alpha\beta}=\prod\sh{F}(V)$ (for $V\in\mathfrak{B}$
+        $A_\alpha=\sh{F}(U_\alpha)$, $A_{\alpha\beta}=\Pi\sh{F}(V)$ (for $V\in\mathfrak{B}$
         such that $V\subset U_\alpha\cap U_\beta$) and
-        $\rho_{\alpha\beta}=(\rho_V''):\sh{F}(U_\alpha)\to\prod\sh{F}(V)$ defined by the
+        $\rho_{\alpha\beta}=(\rho_V''):\sh{F}(U_\alpha)\to\Pi\sh{F}(V)$ defined by the
         condition that for $V\in\mathfrak{B}$, $V'\in\mathfrak{B}$, $W\in\mathfrak{B}$,
         $V\cup V'\subset U_\alpha\cap U_\beta$, $W\subset V\cap V'$,
         $\rho_W^V\circ\rho_V''=\rho_W^{V'}\circ\rho_{V'}''$.}.}\\
@@ -1240,7 +1240,7 @@ diagrams
 \]
 are commutative; this follows immediately from \sref{env}{3.2.3}. The correspondence between
 the family $(u_\lambda)$ and $u$ is in a functorial bijection with the subset of
-$\prod_\lambda\Hom(\sh{F}_\lambda,\sh{G}_\lambda)$ satisfying the conditions (3.3.2.1) on
+$\Pi_\lambda\Hom(\sh{F}_\lambda,\sh{G}_\lambda)$ satisfying the conditions (3.3.2.1) on
 $\Hom(\sh{F},\sh{G})$.
 \end{env}
 
