@@ -34,7 +34,7 @@ Here is the current status of the translation, along with the main contributors 
     + [ ] 7. Adic rings
 - [ ] The language of schemes
     + [x] 0. Summary
-    + [ ] 1. Affine schemes
+    + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms (@thosgood)
     + [ ] 3. Products of preschemes
     + [ ] 4. Subpreschemes and immersions
