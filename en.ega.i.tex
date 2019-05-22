@@ -390,6 +390,11 @@ For ${}^a\vphi(X)$ to be dense in $X'$, it is necessary and sufficient that each
 of the kernel $\Ker\vphi$ is nilpotent.
 \end{envs}
 
+Indeed, applying the formula (1.2.2.3) to the ideal $\mathfrak{a}=(0)$, we have
+$\widetilde{{}^a\vphi(X)}=V(\Ker\vphi)$, and for $V(\Ker\vphi)=X$ to hold, it is necessary
+and sufficient that $\Ker\vphi$ is contained in all the prime ideals of $A'$, that is to say
+in the nilradical $\rad'$ of $A'$.
+
 \subsection{Sheaf associated to a module}
 \label{1-schemes-1.3}
 
@@ -1319,6 +1324,248 @@ surjective, for each $x\in X$, $\vphi_x^\sharp:B_{{}^a\vphi(x)}\to A_x$, which i
 by $\vphi$ by passing to rings of fractions, is also surjective \pref{env}{1.5.1}; hence
 the conclusion \pref{env}{4.1.1}.
 
+\subsection{Morphisms from locally ringed spaces to affine schemes}
+\label{1-schemes-1.8}
+
+\oldpage{217$'$}
+Due to a remark by J.~Tate, the statements given in \sref{thm}{1.7.3} and \sref{prop}{2.2.4}
+can be generalized as follows:\footnote{[Trans] The following section (I.1.8) was added in
+the errata of EGA~II, hence the temporary change in page numbers, which refer to EGA~II.}
+
+\begin{envs}[Proposition]{1.8.1}
+\label{prop-1.1.8.1}
+Let $(S,\OO_S)$ be an affine scheme, $(X,\OO_X)$ a locally ringed space. Then there is a
+canonical bijection from the set of ring homomorphisms
+\oldpage{218$'$}
+$\Gamma(S,\OO_S)\to\Gamma(X,\OO_X)$ to the set of morphisms of ringed spaces
+$(\psi,\theta):(X,\OO_X)\to(S,\OO_S)$ such that, for each $x\in X$, $\theta_x^\sharp$ is a
+local homomorphism: $\OO_{\psi(x)}\to\OO_x$.
+\end{envs}
+
+We note first that if $(X,\OO_X)$, $(S,\OO_S)$ are any two ringed spaces, a morphism
+$(\psi,\theta)$ from $(X,\OO_X)$ to $(S,\OO_S)$ canonically defines a ring homomorphism
+$\Gamma(\theta):\Gamma(S,\OO_S)\to\Gamma(X,\OO_X)$, hence a first map
+\[
+  \rho:\Hom((X,\OO_X),(S,\OO_S))\longrightarrow\Hom(\Gamma(S,\OO_S),\Gamma(X,\OO_X)).
+  \tag{1.8.1.1}
+\]
+Conversely, under the stated hypotheses, we set $A=\Gamma(S,\OO_S)$, and consider a ring
+homomorphism $\vphi:A\to\Gamma(X,\OO_X)$. For each $x\in X$, it is clear that the set of the
+$f\in A$ such that $\vphi(f)(x)=0$ is a \emph{prime ideal} of $A$, since
+$\OO_x/\mathfrak{m}_x=\kres(x)$ is a field; it is therefore an element of $S=\Spec(A)$, which
+we denote ${}^a\vphi(x)$. In addition, for each $f\in A$, we have by definition
+\pref{env}{5.5.2} that ${}^a\vphi(D(f))=X_f$, which proves that ${}^a\vphi$ is a
+\emph{continuous map} $X\to S$. We define then a homomorphism
+\[
+  \widetilde{\vphi}:\OO_S\longrightarrow{}^a\vphi_*(\OO_X)
+\]
+of $\OO_S$-modules; for each $f\in A$, we have $\Gamma(D(f),\OO_S)=A_f$ \sref{prop}{1.3.6};
+for each $s\in A$, we correspond to $s/f\in A_f$ the element
+$(\vphi(s)|X_f)(\vphi(f)|X_f)^{-1}$ of $\Gamma(X_f,\OO_X)=\Gamma(D(f),{}^a\vphi(\OO_X))$, and
+we check immediately (by passing from $D(f)$ to $D(fg)$) that this is a well-defined
+homomorphism of $\OO_S$-modules, hence a morphism $({}^a\vphi,\widetilde{\vphi})$ of ringed
+spaces. In addition, with the same notations, and setting $y={}^a\vphi(x)$ for purposes of
+simplification, we see immediately \pref{env}{3.7.1} that we have
+$\widetilde{\vphi}_x^\sharp(s_y/f_y)=(\vphi(s)_x)(\vphi(f)_x)^{-1}$; as the relation
+$s_y\in\mathfrak{m}_y$ is by definition equivalent to $\vphi(s)_x\in\mathfrak{m}_x$, we see
+that $\widetilde{\vphi}_x^\sharp$ is a \emph{local} homomorphism $\OO_y\to\OO_x$, and we have
+so defined a second map $\sigma:\Hom(\Gamma(S,\OO_S),\Gamma(X,\OO_X))\to\mathfrak{L}$, where
+$\mathfrak{L}$ is the set of the morphisms $(\psi,\theta):(X,\OO_X)\to(S,\OO_S)$ such that
+$\theta_x^\sharp$ is local for each $x\in X$. It remains to prove that $\sigma$ and $\rho$
+(restricted to $\mathfrak{L}$) are inverses of each other; the definition of
+$\widetilde{\vphi}$ immediately shows that $\Gamma(\widetilde{\vphi})=\vphi$, and as a result
+$\rho\circ\sigma$ is the identity. To see that $\sigma\circ\rho$ is the identity, start with a
+morphism $(\psi,\theta)\in\mathfrak{L}$ and let $\vphi=\Gamma(\theta)$; the hypotheses on
+$\theta_x^\sharp$ allows us to induce from this morphism, by passing to quotients, a
+monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ such that for each section
+$f\in A=\Gamma(S,\OO_S)$, we have $\theta^x(f(\psi(x)))=\vphi(f)(x)$; the relation
+$f(\vphi(x))=0$ is therefore equivalent to $\vphi(f)(x)=0$, which proves that
+${}^a\vphi=\psi$. On the other hand, the definitions imply that the diagram
+\[
+  \xymatrix{
+    A\ar[r]^\vphi\ar[d] &
+    \Gamma(X,\OO_X)\ar[d]\\
+    A_{\psi(x)}\ar[r]^{\theta_x^\sharp} &
+    \OO_x
+  }
+\]
+is commutative, and it is the same for the analogous diagram where $\theta_x^\sharp$ is
+replaced by $\widetilde{\vphi}_x^\sharp$, hence $\widetilde{\vphi}_x^\sharp=\theta_x^\sharp$
+\pref{env}{1.2.4}, and as a result $\widetilde{\vphi}=\theta$.
+
+\begin{env}{1.8.2}
+\label{env-1.1.8.2}
+When $(X,\OO_X)$ and $(Y,\OO_Y)$ are \emph{locally} ringed spaces, we will consider the
+morphisms $(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ such that, for each $x\in X$,
+$\theta_x^\sharp$ is a \emph{local} homomorphism: $\OO_{\psi(x)}\to\OO_x$. Henceforth when
+we speak
+\oldpage{219$'$}
+of a \emph{morphism of locally ringed spaces}, it will always be a morphism such as the
+above; with this definition of morphisms, it is clear that the locally ringed spaces form a
+\emph{category}; for two objects $X$, $Y$ of this category, $\Hom(X,Y)$ thus denotes the set
+of morphisms of locally ringed spaces from $X$ to $Y$ (the set denoted $\mathfrak{L}$ in
+\sref{prop}{1.8.1}); when we consider the set of \emph{morphisms of ringed spaces} from $X$
+to $Y$, we will denote it by $\Hom_\text{rs}(X,Y)$ to avoid any confusion. The map (1.8.1.1)
+is then written as
+\[
+  \rho:\Hom_\text{rs}(X,Y)\longrightarrow\Hom(\Gamma(Y,\OO_Y),\Gamma(X,\OO_X))
+  \tag{1.8.2.1}
+\]
+and its restriction 
+\[
+  \rho':\Hom(X,Y)\longrightarrow\Hom(\Gamma(Y,\OO_Y),\Gamma(X,\OO_X))
+  \tag{1.8.2.2}
+\]
+is a \emph{functorial} map in $X$ and $Y$ on the category of locally ringed spaces.
+\end{env}
+
+\begin{envs}[Corollary]{1.8.3}
+\label{cor-1.1.8.3}
+Let $(Y,\OO_Y)$ be a locally ringed space. For $Y$ to be an affine scheme, it is necessary
+and sufficient that for each locally ringed space $(X,\OO_X)$, the map \emph{(1.8.2.2)} is
+bijective.
+\end{envs}
+
+Proposition \sref{prop}{1.8.1} shows that the condition is necessary. Conversely, if we
+suppose that the condition is satisfied and if we put $A=\Gamma(Y,\OO_Y)$, it follows from
+the hypotheses and from \sref{prop}{1.8.1} that the functors $X\mapsto\Hom(X,Y)$ and
+$X\mapsto\Hom(X,\Spec(A))$, from the category of locally ringed spaces to that of sets, are
+\emph{isomorphic}. We know that this implies the existence of a canonical isomorphism
+$X\to\Spec(A)$ (cf. \textbf{0},~8).
+
+\begin{env}{1.8.4}
+\label{env-1.1.8.4}
+Let $S=\Spec(A)$ be an affine scheme; denote by $(S',A')$ the ringed space whose underlying
+space is \emph{reduced to a point} and the structure sheaf $A'$ is the (necessarily simple)
+sheaf on $S'$ defined by the ring $A$. Let $\pi:S\to S'$ be the unique map from $S$ to $S'$;
+on the other hand, we note that for each open subset $U$ of $S$, we have a canonical map
+$\Gamma(S',A')=\Gamma(S,\OO_S)\to\Gamma(U,\OO_S)$ which thus defines a \emph{$\pi$-morphism}
+$\iota:A'\to\OO_S$ of sheaves of rings. We have thus canonically defined a \emph{morphism of
+ringed spaces $i=(\pi,\iota):(S,\OO_S)\to(S',A')$}. For each $A$-module $M$, we denote by
+$M'$ the simple sheaf on $S'$ defined by $M$, which is evidently an $A'$-module. It is clear
+that we have $i_*(\widetilde{M})=M'$ \sref{thm}{1.3.7}.
+\end{env}
+
+\begin{envs}[Lemma]{1.8.5}
+\label{lem-1.1.8.5}
+With the notations of \sref{env}{1.8.4}, for each $A$-module $M$, the canonical functorial
+$\OO_S$-homomorphism \emph{(\textbf{0}, 4.4.3.3)}
+\[
+  i^*(i_*(\widetilde{M}))\longrightarrow\widetilde{M}
+  \tag{1.8.5.1}
+\]
+is an isomorphism.
+\end{envs}
+
+Indeed, the two parts of (1.8.5.1) are right exact (the functor
+$M\mapsto i_*(\widetilde{M})$ being evidently exact) and commute with direct sums; by
+considering $M$ as the cokernel of a homomorphism $A^{(I)}\to A^{(J)}$, we reduce to proving
+the lemma for the case where $M=A$, and it is evident in this case.
+
+\begin{envs}[Corollary]{1.8.6}
+\label{cor-1.1.8.6}
+Let $(X,\OO_X)$ be a ringed space, $u:X\to S$ a morphism of ringed spaces.
+\oldpage{220$'$}
+For each $A$-module $M$, we have (with the notations of \sref{env}{1.8.4}) a canonical
+functorial isomorphism of $\OO_X$-modules
+\[
+  u^*(\widetilde{M})\isoto u^*(i^*(M')).
+  \tag{1.8.6.1}
+\]
+\end{envs}
+
+\begin{envs}[Corollary]{1.8.7}
+\label{cor-1.1.8.7}
+Under the hypotheses of \sref{cor}{1.8.6}, we have, for each $A$-module $M$ and each
+$\OO_X$-module $\sh{F}$, a canonical functorial isomorphism in $M$ and $\sh{F}$
+\[
+  \Hom_{\OO_S}(\widetilde{M},u_*(\sh{F}))\isoto\Hom_A(M,\Gamma(X,\sh{F})).
+  \tag{1.8.7.1}
+\]
+\end{envs}
+We have in fact, according to \pref{env}{4.4.3} and Lemma \sref{lem}{1.8.5}, a canonical
+isomorphism of bifunctors
+\[
+  \Hom_{\OO_S}(\widetilde{M},u_*(\sh{F}))\isoto\Hom_{A'}(M',i_*(u_*(\sh{F})))
+\]
+and it is clear that the right hand side is none other than $\Hom_A(M,\Gamma(X,\sh{F}))$. We
+note that the canonical homomorphism (1.8.7.1) sends each $\OO_S$-homomorphism
+$h:\widetilde{M}\to u_*(\sh{F})$ (in other words, each $u$-morphism $\widetilde{M}\to\sh{F}$)
+to the $A$-homomorphism $\Gamma(h):M\to\Gamma(S,u_*(\sh{F}))=\Gamma(X,\sh{F})$.
+
+\begin{env}{1.8.8}
+\label{env-1.1.8.8}
+With the notations of \sref{env}{1.8.4}, it is clear \pref{env}{4.1.1} that each morphism
+of ringed spaces $(\psi,\theta):X\to S'$ is equivalent to the data of a ring homomorphism
+$A\to\Gamma(X,\OO_X)$. We can thus interpret \sref{env}{1.8.1} as defining a canonical
+bijection $\Hom(X,S)\isoto\Hom(X,S')$ (where we understand that the right hand side are
+morphisms of ringed spaces, since in general $A$ is not a local ring). More generally, if
+$X$, $Y$ are two locally ringed spaces and if $(Y',A')$ is the ringed space whose underlying
+space is reduced to a point and whose sheaf of rings $A'$ is the simple sheaf defined by the
+ring $\Gamma(Y,\OO_Y)$, we can interpret (1.8.2.1) as a map
+\[
+  \rho:\Hom_\text{rs}(X,Y)\longrightarrow\Hom(X,Y').
+  \tag{1.8.8.1}
+\]
+The result of \sref{cor}{1.8.3} is interepreted by saying that affine schemes are
+characterized among locally ringed spaces as those for which the restriction o $\rho$ to
+$\Hom(X,Y)$:
+\[
+  \rho':\Hom(X,Y)\longrightarrow\Hom(X,Y')
+  \tag{1.8.8.2}
+\]
+is \emph{bijective} for \emph{each} locally ringed space $X$. In the following chapter, we
+generalize this definition, which allows us to associate to \emph{any} ringed space $Z$ (and
+not only to a ringed space whose underlying space is reduced to a point) a locally ringed
+space which we will call $\Spec(Z)$; this will be the starting point for a ``relative''
+theory of preschemes over any ringed space, extending the results of Chapter~I.
+\end{env}
+
+\begin{env}{1.8.9}
+\label{env-1.1.8.9}
+We can consider the pairs $(X,\sh{F})$ consisting of a locally ringed space $X$ and an
+$\OO_X$-module $\sh{F}$ as forming a category, a \emph{morphism} of this category being a
+pair $(u,h)$ consisting of a morphism of locally ringed spaces
+\oldpage{221$'$}
+$u:X\to Y$ and a $u$-morphism $h:\sh{G}\to\sh{F}$ of modules; these morphisms (for
+$(X,\sh{F})$ and $(Y,\sh{G})$ fixed) form a set which we denote by
+$\Hom((X,\sh{F}),(Y,\sh{G}))$; the map $(u,h)\mapsto(\rho'(u),\Gamma(h))$ is a canonical
+map
+\[
+  \Hom((X,\sh{F}),(Y,\sh{G}))
+  \longrightarrow\Hom((\Gamma(Y,\OO_Y),\Gamma(Y,\sh{G})),(\Gamma(X,\OO_X),\Gamma(X,\sh{F})))
+  \tag{1.8.9.1}
+\]
+\emph{functorial} in $(X,\sh{F})$ and $(Y,\sh{G})$, the right hand side being the set of
+di-homomorphisms corresponding to the rings and modules considered \pref{env}{1.0.2}.
+\end{env}
+
+\begin{envs}[Corollary]{1.8.10}
+\label{cor-1.1.8.10}
+Let $Y$ be a locally ringed space, $\sh{G}$ an $\OO_Y$-module. For $Y$ to be an affine scheme
+and $\sh{G}$ to be a quasi-coherent $\OO_Y$-module, it is necessary and sufficient that for
+each pair $(X,\sh{F})$ consisting of a locally ringed space $X$ and an $\OO_X$-module
+$\sh{F}$, the canonical map \emph{(1.8.9.1)} is bijective.
+\end{envs}
+
+We leave the reader to give the proof, which is modeled on that of \sref{cor}{1.8.3}, and
+using \sref{prop}{1.8.1} and \sref{cor}{1.8.7}.
+
+\begin{env}[Remark]{1.8.11}
+\label{rmk-1.1.8.11}
+The statements \sref{thm}{1.7.3}, \sref{cor}{1.7.4}, and \sref{prop}{2.2.4} are particular
+cases of \sref{prop}{1.8.1}, as well as the definition in \sref{env}{1.6.1}; similarly,
+\sref{prop}{2.2.5} follows from \sref{cor}{1.8.7}. Corollary \sref{1.8.7} also implies
+\sref{prop}{1.6.3} (and as a result \sref{cor}{1.6.4}) as a particular case, since if $X$ is
+an affine scheme and $\Gamma(X,\sh{F})=N$, the functors
+$M\mapsto\Hom_{\OO_S}(\widetilde{M},u_*(\widetilde{N}))$ and
+$M\mapsto\Hom_{\OO_S}(\widetilde{M},(N_{[\vphi]})^\sim)$ (where $\vphi:A\to\Gamma(X,\OO_X)$
+corresponds to $u$) are isomorphic by \sref{cor}{1.8.7} and \sref{cor}{1.3.8}. Finally,
+\sref{prop}{1.6.5} (and as a result \sref{cor}{1.6.6}) follow from \sref{cor}{1.8.6} and the
+fact that for each $f\in A$, the $A_f$-modules $N'\otimes_{A'}A_f$ and $(N'\otimes_{A'}A)_f$
+(notations of \sref{prop}{1.6.5}) are canonically isomorphic.
+\end{env}
+
 \section{Preschemes and morphisms of preschemes}
 \label{1-schemes-2}
 
@@ -1767,7 +2014,7 @@ $\vphi$ is a prescheme \emph{over the ring $A$} (or an \emph{$A$-prescheme}).
 It follows from \sref{prop}{2.2.4} that the data of a prescheme over a ring $A$ is
 equivalent to the data of a prescheme $(X,\OO_X)$ whose structure sheaf $\OO_X$ is
 a sheaf of \emph{$A$-algebras}. \emph{An arbitrary prescheme can always be
-considered as a $\mathbb{Z}$-prescheme in a unique way.}
+considered as a $\bb{Z}$-prescheme in a unique way.}
 
 If $\vphi:X\to S$ is the structure morphism of an $S$-prescheme $X$, we
 say that a point $x\in X$ is \emph{over a point $s\in S$} if $\vphi(x)=s$. We
@@ -1971,7 +2218,7 @@ hence our assertion.
 
 \begin{envs}[Lemma]{3.2.6.2}
 \label{lem-1.3.2.6.2}
-Let $Z$ be an $S$-presceme, $p:Z\to X$, $q:Z\to Y$ two $S$-morphisms, $(U_\alpha)$ an open
+Let $Z$ be an $S$-prescheme, $p:Z\to X$, $q:Z\to Y$ two $S$-morphisms, $(U_\alpha)$ an open
 cover of $X$, $(V_\lambda)$ an open cover of $Y$. Suppose that for each pair
 $(\alpha,\lambda)$, the $S$-prescheme
 $W_{\alpha\lambda}=p^{-1}(U_\alpha)\cap q^{-1}(V_\lambda)$ and the restrictions of $p$ and
@@ -2009,13 +2256,121 @@ contained in $W_{\alpha\lambda}\cap W_{\beta\mu}$ by definition. As
 it follows from \sref{lem}{3.2.6.1} that $W_{\alpha\lambda}\cap W_{\beta\mu}$ and the
 restrictions to this prescheme of $p$ and $q$ form a \emph{product} of $U_\alpha\cap U_\beta$
 and $V_\lambda\cap V_\mu$. As $p\circ f_{\alpha\lambda}$ and $p\circ f_{\beta\mu}$ coincide
-in $T_{\alpha\lambda}\cap T_{\beta\mu}$ and similarly for $q\circ f_{\alpha\lambda}$ and
-$q\circ f_{\beta\mu}$, we see that $f_{\alpha\lambda}$ and $f_{\beta\mu}$ coincide in
+on $T_{\alpha\lambda}\cap T_{\beta\mu}$ and similarly for $q\circ f_{\alpha\lambda}$ and
+$q\circ f_{\beta\mu}$, we see that $f_{\alpha\lambda}$ and $f_{\beta\mu}$ coincide on
 $T_{\alpha\lambda}\cap T_{\beta\mu}$, q.e.d.
 
+\begin{envs}[Lemma]{3.2.6.3}
+\label{lem-1.3.2.6.3}
 \oldpage{107}
+Let $(U_\alpha)$ be an open cover of $X$, $(V_\lambda)$ an open cover of $Y$, and suppose
+that for each pair $(\alpha,\lambda)$, there exists a product of $U_\alpha$ and $V_\lambda$;
+then there exists a product of $X$ and $Y$.
+\end{envs}
 
+Applying Lemma \sref{lem}{3.2.6.1} to the open sets $U_\alpha\cap U_\beta$ and
+$V_\lambda\cap V_\mu$, we see that there exists a product of $S$-preschemes induced
+respectively by $X$ and $Y$ on these open sets; in addition, the unicity of the product shows
+that, if we set $i=(\alpha,\lambda)$, $j=(\beta,\mu)$, then there is a canonical isomorphism
+$h_{ij}$ (resp. $h_{ji}$) from this product to an $S$-prescheme $W_{ij}$ (resp. $W_{ji}$)
+induced by $U_\alpha\times_S V_\lambda$ (resp. $U_\beta\times_S V_\mu$) on an open set;
+$f_{ij}=h_{ij}\circ h_{ji}^{-1}$ is then an isomorphism from $W_{ji}$ to $W_{ij}$. In
+addition, for a third pair $k=(\gamma,\nu)$, we have $f_{ik}=f_{ij}\circ f_{jk}$ on
+$W_{ki}\cap W_{kj}$, as it follows from applying \sref{lem}{3.2.6.1} to the open sets
+$U_\alpha\cap U_\beta\cap U_\gamma$ and $V_\lambda\cap V_\mu\cap V_\nu$ in $U_\beta$ and
+$V_\mu$, respectively. It follows that we have a prescheme $Z$, an open cover $(Z_i)$ of the
+underlying space of $Z$, and for each $i$ and isomorphism $g_i$ from the induced prescheme
+$Z_i$ to the prescheme $U_\alpha\times_S V_\lambda$, so that for each pair $(i,j)$, we have
+$f_{ij}=g_i\circ g_j^{-1}$ \sref{env}{2.3.1}; in addition, we have $g_i(Z_i\cap Z_j)=W_{ij}$.
+If $p_i$, $q_i$, $\theta_i$ are the projections and the structure morphism of the
+$S$-prescheme $U_\alpha\times_S V_\lambda$, we immediately note that
+$p_i\circ g_i=p_j\circ g_j$ on $Z_i\cap Z_j$, and similarly for the two other morphisms. We
+can thus define the morphisms of preschemes $p:Z\to X$ (resp. $q:Z\to Y$, $\theta:Z\to S$) by
+the condition that $p$ (resp. $q$, $\theta$) coincide with $p_i\circ g_i$
+(resp. $q_i\circ g_i$, $\theta_i\circ g_i$) on each of the $Z_i$; $Z$, equipped with
+$\theta$, is then an $S$-prescheme. We now show that
+$Z_i'=p^{-1}(U_\alpha)\cap q^{-1}(V_\lambda)$ is equal to $Z_i$. For each index
+$j=(\beta,\mu)$, we have $Z_j\cap Z_i'=g_j^{-1}(p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda))$.
+We have
+\[
+  p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)
+  =p_j^{-1}(U_\alpha\cap U_\beta)\cap q_j^{-1}(V_\lambda\cap V_\mu);
+\]
+according to \sref{lem}{3.2.6.1}, the restrictions of $p_j$ and $q_j$ to
+$p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)$ define on this $S$-prescheme the structure of a
+product of $U_\alpha\cap U_\beta$ and $V_\lambda\cap V_\mu$; but the unicity of the product
+then implies that $p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)=W_{ji}$. As a result we have
+$Z_j\cap Z_i'=Z_j\cap Z_i$ for each $j$, hence $Z_i'=Z_i$. We then deduce from
+\sref{lem}{3.2.6.2} that $(Z,p,q)$ is a product of $X$ and $Y$.
 
+\begin{envs}[Lemma]{3.2.6.4}
+\label{lem-1.3.2.6.4}
+Let $\vphi:X\to S$, $\psi:Y\to S$ be the structure morphisms of $X$ and $Y$, $(S_i)$ and open
+cover of $S$, and set $X_i=\vphi^{-1}(S_i)$, $Y_i=\psi^{-1}(S_i)$. If each of the products
+$X_i\times_S Y_i$ exists, then $X\times_S Y$ exists.
+\end{envs}
+
+According to \sref{lem}{3.2.6.3}, everything comes down to proving that the products
+$X_i\times_S Y_i$ exists for any $i$ and $j$. Set
+$X_{ij}=X_i\cap X_j=\vphi^{-1}(S_i\cap S_j)$, $Y_{ij}=Y_i\cap Y_j=\psi^{-1}(S_i\cap S_j)$;
+according to \sref{lem}{3.2.6.1}, the product $Z_{ij}=X_{ij}\times_S Y_{ij}$ exists. We now
+note that if $T$ is an $S$-prescheme and if $g:T\to X_i$, $h:T\to Y_j$ are $S$-morphisms,
+then we necessarily have that $\vphi(g(T))=\psi(h(T))\subset S_i\cap S_j$ according to the
+definition of an $S$-morphisms, thus $g(T)\subset X_{ij}$ and $h(T)\subset Y_{ij}$; it is
+then immediate that $Z_{ij}$ is the product of $X_i$ and $Y_j$.
+
+\begin{env}{3.2.6.5}
+\label{env-1.3.2.6.5}
+We can now complete the proof of Theorem \sref{thm}{3.2.6}. If $S$ is an \emph{affine
+scheme}, there are covers $(U_\alpha)$, $(V_\lambda)$ of $X$ and $Y$ respectively,
+consisting of affine opens; as $U_\alpha\times_S V_\lambda$ exists according to
+\sref{prop}{3.2.2}, there similarly exists $X\times_S Y$ by \sref{lem}{3.2.6.3}. If $S$
+is any prescheme, there is a cover $(S_i)$ of $S$ consisting of affine opens. If
+$\vphi:X\to S$, $\psi:Y\to S$ are the structure morphisms, and if we set
+$X_i=\vphi^{-1}(S_i)$, $Y_i=\psi^{-1}(S_i)$, the products $X_i\times_{S_i}Y_i$ exist
+according to the
+\oldpage{108}
+above; but then the products $X_i\times_S Y_i$ also exist \sref{cor}{3.2.5}, therefore
+$X\times_S Y$ similarly exists by \sref{lem}{3.2.6.4}.
+\end{env}
+
+\begin{envs}[Corollary]{3.2.7}
+\label{cor-1.3.2.7}
+Let $Z=X\times_S Y$ be the product of two $S$-preschemes, $p$, $q$ the projections from $Z$
+to $X$ and $Y$, $\vphi$ (resp. $\psi$) the structure morphism of $X$ (resp. $Y$). Let $S'$ be
+an open subset of $S$, $U$ (resp. $V$) an open subset of $X$ (resp. $Y$) contained in
+$\vphi^{-1}(S')$ (resp. $\psi^{-1}(S')$). Then the product $U\times_{S'}V$ canonically
+identifies with the prescheme induced on $Z$ by $p^{-1}(U)\cap q^{-1}(V)$ (considered as a
+$S'$-prescheme). In addition, if $f:T\to X$, $g:T\to Y$ are $S$-morphisms such that
+$f(T)\subset U$, $g(T)\subset V$, the $S'$-morphism $(f,g)_{S'}$ identifies with the
+restriction of $(f,g)_S$ to $p^{-1}(U)\cap q^{-1}(V)$.
+\end{envs}
+
+This follows from \sref{cor}{3.2.5} and \sref{lem}{3.2.6.1}.
+
+\begin{env}{3.2.8}
+\label{env-1.3.2.8}
+Let $(X_\alpha)$, $(Y_\lambda)$ be two familes of $S$-preschemes, $X$ (resp. $Y$) the sum
+of the family $(X_\alpha)$ (resp. $(Y_\lambda)$) (3.1). Then $X\times_S Y$ identifies with
+the \emph{sum} of the family $(X_\alpha\times_S Y_\lambda)$; this follows immediately from
+\sref{lem}{3.2.6.3}.
+\end{env}
+
+\begin{env}{3.2.9}
+\label{env-1.3.2.9}
+\footnote{[Trans] \sref{env}{3.2.9} is from the errata of EGA~II, on page 221.}
+\oldpage{221$'$}
+It follows from \sref{prop}{1.8.1} that we can state \sref{prop}{3.2.2} in the following
+manner: $Z=\Spec(B\otimes_A C)$ is not only a product of $X=\Spec(B)$ and $Y=\Spec(C)$ in the
+category of \emph{$S$-preschemes}, but also in the category of \emph{locally ringed spaces
+over $S$} (with a definition of $S$-morphisms modeled on that of \sref{env}{2.5.2}). The
+proof of \sref{thm}{3.2.6} also proves that for any two $S$-preschemes $X$, $Y$, the
+prescheme $X\times_S Y$ is not only the product of $X$ and $Y$ in the category of
+$S$-preschemes, but also in te category of locally ringed spaces over the prescheme $S$.
+\end{env}
+
+\subsection{Formal properties of the product; change of the base prescheme}
+\label{1-schemes-3.3}
 
 \section{Subpreschemes and immersion morphisms}
 \label{1-schemes-4}
