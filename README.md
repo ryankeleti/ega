@@ -30,7 +30,7 @@ Here is the current status of the translation, along with the main contributors 
     + [x] 3. Supplement on sheaves (@ryankeleti)
     + [x] 4. Ringed spaces (@ryankeleti)
     + [x] 5. Quasi-coherent sheaves and coherent sheaves (@ryankeleti)
-    + [ ] 6. Flatness
+    + [x] 6. Flatness (@ryankeleti)
     + [ ] 7. Adic rings
 - [ ] The language of schemes
     + [x] 0. Summary
