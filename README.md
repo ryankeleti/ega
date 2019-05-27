@@ -50,7 +50,7 @@ Here is the current status of the translation, along with the main contributors 
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
 - `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
 - `\cat` for categories, e.g. `\cat{C}` for a category C; use `\K` for a "default" category.
-- `\dual` for the dual sheaf, e.g. `\dual{\sh{F}}` for `\sh{F}^\vee.
+- `\dual` for the dual sheaf, e.g. `\dual{\sh{F}}` for `\sh{F}^\vee`.
 - `\isoto` for an isomorphism arrow.
 - `\emp` for the empty set.
 - `\kres` for the residue field.
@@ -60,5 +60,3 @@ Here is the current status of the translation, along with the main contributors 
 - `\leqslant`/`\geqslant` for <=, >=.
 - Use the operators defined in `preamble.sty`, such as `\Spec`, `\im`, `\shHom`, etc.
 - Use `\oldpage{x}` to mark the original page number (x) at the current text position.
-
-
