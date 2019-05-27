@@ -18,10 +18,10 @@ en.ega.main:
 #	plastex ega.tex
 
 clean:
-	rm -f $(EGA).aux $(EGA).bbl $(EGA).blg $(EGA).log $(EGA).out $(EGA).toc $(EGA).fls $(EGA).fdb_latexmk
+	rm -f *.aux *.bbl *.blg *.log *.out *.toc *.fls *.fdb_latexmk
 
 cleanpdf:
-	rm -f $(EGAI).pdf
+	rm -f *.pdf
 
 #cleanweb:
 #	rm -rf $(WEBDIR)
