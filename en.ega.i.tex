@@ -2378,10 +2378,10 @@ $S$-preschemes, but also in the category of locally ringed spaces over the presc
 \begin{env}{3.3.1}
 \label{env-1.3.3.1}
 The reader will notice that all the properties stated in this section, except
-(3.3.13) and (3.3.15), are true without modification in any category, whenever
-the products involved in the statements exist (since it is clear that the
-notions of an $S$-object and of an $S$-morphism can be defined exactly as in
-(2.5) for any object $S$ of the category).
+\sref{env}{3.3.13} and \sref{env}{3.3.15}, are true without modification in any
+category, whenever the products involved in the statements exist (since it is
+clear that the notions of an $S$-object and of an $S$-morphism can be defined
+exactly as in (2.5) for any object $S$ of the category).
 \end{env}
 
 \begin{env}{3.3.2}
@@ -2549,6 +2549,104 @@ expressed by the formula
 \]
 for each pair of $S$-morphisms $u:T\to X$, $v:T\to Y$.
 
+In other words, the base change functor $X_{(S')}$ \emph{commutes with
+products}; it also commutes with sums \sref{env}{3.2.8}.
+
+\begin{envs}[Corollary]{3.3.11}
+\label{cor-1.3.3.11}
+Let $Y$ be an $S$-prescheme, $f:X\to Y$ a morphism which makes $X$ a
+$Y$-prescheme (and as a result also an $S$-prescheme). The prescheme $X_{(S')}$
+then identifies with the product $X\times_Y Y_{(S')}$, the projection
+$X\times_Y Y_{(S')}\to Y_{(S')}$ identifying with $f_{(S')}$.
+\end{envs}
+
+Let $\psi:Y\to S$ be the structure morphism of $Y$; we have the commutative
+diagram
+\[
+  \xymatrix{
+    S'\ar[d] &
+    Y_{(S')}\ar[l]\ar[d] &
+    X_{(S')}\ar[l]_{f_{(S')}}\ar[d]\\
+    S &
+    Y\ar[l]_\psi &
+    X\ar[l]_f.
+  }
+\]
+We have that $Y_{(S')}$ identifies with $S_{(\psi)}'$ and $X_{(S')}$ with
+$S_{(\psi\circ f)}'$; taking into account \sref{prop}{3.3.9} and
+\sref{cor}{3.3.4}, we deduce the corollary.
+
+\begin{env}{3.3.12}
+\label{env-1.3.3.12}
+Let $f:X\to X'$, $g:Y\to Y'$ be two $S$-morphisms which are \emph{monomorphisms}
+of preschemes (T, I, 1.1); then $f\times_S g$ is a \emph{monomorphism}. Indeed,
+if $p$ and $q$ are the projections of $X\times_S Y$, $p'$, $q'$ those of
+$X'\times_S Y'$, and $u$, $v$ two $S$-morphisms $T\to X\times_S Y$, then the
+relation $(f\times_S g)\circ u=(f\times_S g)\circ v$ implies that
+$p'\circ(f\times_S g)\circ u=p'\circ(f\times_S g)\circ v$, in other words,
+$f\circ p\circ u=f\circ p\circ v$, and as $f$ is a monomorphism,
+$p\circ u=p\circ v$; using the fact that $g$ is a monomorphism, we similarly
+obtain $q\circ u=q\circ v$, hence $u=v$.
+
+\oldpage{111}
+It follows that for each base change $S'\to S$,
+\[
+  f_{(S')}:X_{(S')}\longrightarrow Y_{(S')}
+\]
+is a monomorphism.
+\end{env}
+
+\begin{env}{3.3.13}
+\label{env-1.3.3.13}
+Let $S$, $S'$ be two affine schemes of rings $A$, $A'$ respectively; a morphism
+$S'\to S$ then corresponds to a ring homomorphism $A\to A'$. If $X$ is an
+$S$-prescheme, we denote by $X_{(A')}$ or $X\otimes_A A'$ the $S'$-prescheme
+$X_{(S')}$; when $X$ is also affine of ring $B$, $X_{(A')}$ is affine of ring
+$B_{(A')}=B\otimes_A A'$ obtained by extension by scalars from the $A$-algebra
+$B$ to $A'$.
+\end{env}
+
+\begin{env}{3.3.14}
+\label{env-1.3.3.14}
+With the notations of \sref{env}{3.3.6}, for each \emph{$S$-morphism}
+$f:S'\to X$, $f'=(f,1_{S'})_S$ is an $S'$-morphism $S'\to X'=X_{(S')}$ such that
+$p\circ f'=f$, $\pi'\circ f'=1_{S'}$, in other words an \emph{$S'$-section of
+of $X'$}; conversely, if $f'$ is such an $S'$-section, $f=p\circ f'$ is an
+$S$-morphism $S'\to X$. We thus define a canonical
+\emph{bijective correspondence}
+\[
+  \Hom_S(S',X)\isoto\Hom_{S'}(S',X').
+\]
+We say that $f'$ is the \emph{graph morphism} of $f$, and we denote it by
+$\Gamma_f$.
+\end{env}
+
+\begin{env}{3.3.15}
+\label{env-1.3.3.15}
+Given a prescheme $X$, which we can always consider it as a $\bb{Z}$-prescheme,
+it follows in particular from \sref{env}{3.3.14} that the \emph{$X$-sections} of
+$X\otimes_\bb{Z}\bb{Z}[T]$ (where $T$ is an indeterminate) bijectively
+correspond to \emph{morphisms} $\bb{Z}[T]\to X$. Let us show that these
+$X$-sections also bijectively correspond to \emph{sections of the structure
+sheaf $\OO_X$ over $X$}. Indeed, let $(U_\alpha)$ be a cover of $X$ by the
+affine opens; let $u:X\to X\otimes_\bb{Z}\bb{Z}[T]$ be an $X$-morphism and let
+$u_\alpha$ be its restriction to $U_\alpha$; if $A_\alpha$ is the ring of the
+affine scheme $U_\alpha$, then $U_\alpha\otimes_\bb{Z}\bb{Z}[T]$ is an affine
+scheme of ring $A_\alpha[T]$ \sref{prop}{3.2.2}, and $u_\alpha$ canonically
+corresponds to an $A_\alpha$-homomorphism $A_\alpha[T]\to A_\alpha$
+\sref{thm}{1.7.3}. Now, as such a homomorphism is completely determined by the
+data of the image of $T$ in $A_\alpha$, let
+$s_\alpha\in A_\alpha=\Gamma(U_\alpha,\OO_X)$, and if we suppose that the
+restrictions of $u_\alpha$ and $u_\beta$ to an open affine
+$V\subset U_\alpha\cap U_\beta$ coincide, then we see immediately that
+$s_\alpha$ and $s_\beta$ coincide on $V$; thus the family $(s_\alpha)$ consists
+of the restrictions to $U_\alpha$ of a section $s$ of $\OO_X$ over $X$;
+convsersely, it is clear that such a section defines a family $(u_\alpha)$ of
+morphisms which are the restrictions to $U_\alpha$ of an $X$-morphism
+$X\to X\otimes_\bb{Z}\bb{Z}[T]$. This result is generalized in
+(\textbf{II},~1.7.12).
+\end{env}
+
 \section{Subpreschemes and immersion morphisms}
 \label{1-schemes-4}
 
@@ -2573,9 +2671,9 @@ $A$.
 \begin{envs}[Lemma]{8.1.1}
 \label{lem-1.8.1.1}
 Let $A$ and $B$ be two local rings such that $A\subset B$;
-then the following conditions are equivalent: (i)
-$\mathfrak{m}(B)\cap A=\mathfrak{m}(A)$; (ii)
-$\mathfrak{m}(A)\subset\mathfrak{m}(B)$; (iii) $1$ is not an element of
+then the following conditions are equivalent: \emph{(i)}
+$\mathfrak{m}(B)\cap A=\mathfrak{m}(A)$; \emph{(ii)}
+$\mathfrak{m}(A)\subset\mathfrak{m}(B)$; \emph{(iii)} $1$ is not an element of
 the ideal of $B$ generated by $\mathfrak{m}(A)$.
 \end{envs}
 
