@@ -68,6 +68,7 @@
 \def\Im{{\mathop{\mathrm{Im}}\nolimits}\,}
 \def\Coker{{\mathop{\mathrm{Coker}}\nolimits}\,}
 \def\Spec{{\mathop{\mathrm{Spec}}\nolimits}\,}
+\def\grad{{\mathop{\mathrm{grad}}\nolimits}\,}
 
 % if unsure of a translation
 \newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
@@ -77,7 +78,13 @@
 \newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}\ignorespaces}
 
 % special ref
-\newcommand{\sref}[2]{\hyperref[#1-\arabic{chapter}.#2]{\normalfont{(#2)}}}
+\newcommand{\sref}[3][\@nil]{%
+  \def\tmp{#1}%
+  \ifx\tmp\@nnil
+    \hyperref[#2-\arabic{chapter}.#3]{\normalfont{(#3)}}
+  \else
+    \hyperref[#2-\arabic{chapter}.#3]{\normalfont{(#3, #1)}}
+  \fi}
 
 % ref prelim
 \newcommand{\pref}[2]{\hyperref[#1-0.#2]{\normalfont{(\textbf{0},~#2)}}}
