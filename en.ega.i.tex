@@ -2647,6 +2647,22 @@ $X\to X\otimes_\bb{Z}\bb{Z}[T]$. This result is generalized in
 (\textbf{II},~1.7.12).
 \end{env}
 
+\subsection{Points of a prescheme with values in a prescheme; geometric points}
+\label{1-schemes-3.4}
+
+\begin{env}{3.4.1}
+\label{env-1.3.4.1}
+Let $X$ be a prescheme; for each prescheme $T$, we then denote by $X(T)$ the set
+$\Hom(T,X)$ of morphism $T\to X$, and the elements of this set are called
+\emph{the points of $X$ with values in $T$}. If we associate to each morphism
+$f:T\to T'$ the map $u'\mapsto u'\circ f$ from $X(T')$ to $X(T)$, we see that,
+for $X$ fixed, $X(T)$ is a \emph{contravariant functor in $T$}, from the
+category of preschemes to that of sets. In addition, each morphism of preschemes
+$g:X\to Y$ defines a functorial homomorphism $X(T)\to Y(T)$, which sends
+$v\in X(T)$ to $g\circ v$.
+\end{env}
+
+
 \section{Subpreschemes and immersion morphisms}
 \label{1-schemes-4}
 
@@ -2814,7 +2830,7 @@ equal to the intersection of the local rings belonging to $L(E)$; $C$ is thus
 identified with the intersection of the rings $\OO_z$ for $z\in W$, or,
 equivalently (8.2.1.1) with $\Gamma(W,\OO_X)$. So consider the subprescheme
 induced by $X$ on $W$; to the \unsure{identity} morphism $\vphi:
-C\to\Gamma(W,\OO_X)$ there corresponds \sref{env}{2.2.4} a morphism
+C\to\Gamma(W,\OO_X)$ there corresponds \sref{prop}{2.2.4} a morphism
 $\Phi=(\psi,\theta):W\to\Spec(C)$; we will see that $\Phi$ is an
 \emph{isomorphism} of preschemes, whence $W$ is an \emph{affine} open. The
 identification of $W$ with $L(C)=\Spec(C)$ shows that $\psi$ is
@@ -2859,7 +2875,7 @@ The condition is evidently necessary because the domain of definition
 $\delta(f)$ of a rational function $f\in R$ is open; we now show that it is
 sufficient.If $\OO_x\subset\OO_y$, then there exists a prime ideal
 $\mathfrak{p}$ of $\OO_x$ such that $\OO_y$ dominates $(\OO_x)_\mathfrak{p}$
-\sref{lem}{8.1.3}; but \sref{env}{2.4.2} there exists $z\in X$ such that
+\sref{lem}{8.1.3}; but \sref{prop}{2.4.2} there exists $z\in X$ such that
 $x\in\overline{\{z\}}$ and $\OO_z=(\OO_x)_\mathfrak{p}$; since $\OO_z$ and $\OO_y$
 are allied, we have that $z=y$ by \sref{prop}{8.2.2}, whence the corollary.
 
@@ -2919,7 +2935,7 @@ In fact, if $f=(\psi,\theta)$ and $a$ is the generic point of $X$, then
 $\psi(a)$ is the generic point of $Y$ \pref{env}{2.1.5}; $\theta_a^\sharp$ is then
 a monomorphism of fields, from $L=\OO_{\psi(a)}$ to $K=\OO_a$. Since every
 non-empty affine open $U$ of $Y$ contains $\psi(a)$, it follows from
-\sref{env}{2.2.4} that the homomorphism $\Gamma(U,\OO_Y)\to\Gamma(\psi^{-1}(U),\OO_X)$
+\sref{prop}{2.2.4} that the homomorphism $\Gamma(U,\OO_Y)\to\Gamma(\psi^{-1}(U),\OO_X)$
 corresponding to $f$ is the restriction of $\theta_a^\sharp$ to $\Gamma(U,\OO_Y)$.
 So, for every $x\in X$, $\theta_x^\sharp$ is the restriction to $\OO_{\psi(a)}$ of
 $\theta_a^\sharp$, and is thus a monomorphism. We also know that $\theta_x^\sharp$ is a
@@ -2938,11 +2954,11 @@ an open immersion).
 
 Let $f=(\psi,\theta)$; it suffices, in both cases, to prove that $\psi$ is a
 \emph{homeomorphism} from $X$ to $\psi(X)$ \sref{env}{4.5.3}. Replacing $f$ by
-$f_\mathrm{red}$ (\sref{env}{5.1.6} and \sref{env}{5.5.1}, (vi)), we can assume that $X$
+$f_\text{red}$ (\sref{env}{5.1.6} and \sref[(vi)]{env}{5.5.1}), we can assume that $X$
 and $Y$ are \emph{reduced}. If $Y'$ is the closed reduced subprescheme of $Y$
 having $\overline{\psi(X)}$ as its underlying space, then $f$ factorizes as
 $X\xrightarrow{f'}Y'\xrightarrow{j}Y$, where $j$ is the canonical injection
-\sref{env}{5.2.2}. It follows from (\sref{env}{5.5.1}, (v)) that $f'$ is again a
+\sref{env}{5.2.2}. It follows from \sref[(v)]{env}{5.5.1} that $f'$ is again a
 separated morphism; further, $f'$ is again
 \oldpage{168}
 a local immersion (resp. a local isomorphism), because, since the condition is local on $X$
@@ -2953,7 +2969,7 @@ We can thus suppose that $f$ is a \emph{dominant} morphism, which leads to the
 fact that $Y$ is, itself, irreducible \pref{env}{2.1.5}, and so $X$ and $Y$
 are both \emph{integral}. Further, the condition being local on $Y$, we can
 suppose that $Y$ is an affine scheme; since $f$ is separated, $X$ is a scheme
-(\sref{env}{5.5.1}, (ii)), and we are finally at the hypotheses of \sref{prop}{8.2.7}.
+\sref[(ii)]{env}{5.5.1}, and we are finally at the hypotheses of \sref{prop}{8.2.7}.
 Then, for all $x\in X$, $\theta_x^\sharp$ is injective; but the hypothesis that $f$
 is a local immersion implies that $\theta_x^\sharp$ is surjective \sref{env}{4.2.2}, so
 $\theta_x^\sharp$ is bijective, or, equivalently (with the identification of
@@ -3646,9 +3662,9 @@ $\sh{J}'_y\subset\sh{J}_y$, and thus $X'$ is a closed subprescheme of $X''$
 
 \begin{envs}[Definition]{9.5.3}
 \label{defn-1.9.5.3}
-Whenever there exists a smaller subprescheme $Y'$ of $Y$ such that $f$ factors through the
-canonical injection $j:Y'\to Y$, we
-say that $Y'$ is the \emph{closed image} prescheme of $X$ by the morphism $f$.
+Whenever there exists a smaller subprescheme $Y'$ of $Y$ such that $f$ factors
+through the canonical injection $j:Y'\to Y$, we say that $Y'$ is the
+\emph{closed image} prescheme of $X$ by the morphism $f$.
 \end{envs}
 
 \begin{envs}[Proposition]{9.5.4}
@@ -3657,9 +3673,50 @@ If $f_*(\OO_X)$ is a quasi-coherent $\OO_Y$-module, then the underlying space of
 the closed image of $X$ by $f$ is the closure $\overline{f(X)}$ in $Y$.
 \end{envs}
 
+As the support of $f_*(\OO_X)$ is contained in $\overline{f(X)}$, we have (with
+the notations of \sref{cor}{9.5.2}) $\sh{J}_y=\OO_y$ for
+$y\not\in\overline{f(X)}$, thus the support of $\OO_Y/\sh{J}$ is contained in
+$\overline{f(X)}$. In addition, this support is closed and contains $f(X)$:
+indeed, if $y\in f(X)$, the unit element of the ring $(\psi_*(\OO_X))_y$ is not
+zero, being the germ at $y$ of the section
+\[
+  1\in\Gamma(X,\OO_X)=\Gamma(Y,\psi_*(\OO_X));
+\]
+as it is the image under $\theta$ of the unit element of $\OO_y$, the latter
+does not belong to $\sh{J}_y$, hence $\OO_y/\sh{J}_y\neq 0$; this finishes the
+proof.
+
 \subsection{Quasi-coherent sheaves of algebras; change of structure sheaf}
 \label{1-schemes-9.6}        
 
 \section{Formal schemes}
 \label{1-schemes-10}
+
+\subsection{Formal affine schemes}
+\label{1-schemes-10.1}
+
+\begin{env}{10.1.1}
+\label{env-1.10.1.1}
+Let $A$ be an \emph{admissible} topological ring \pref{defn}{7.1.2}; for each
+ideal of definition $\mathfrak{J}$ of $A$, $\Spec(A/\mathfrak{J})$ identifies
+with the closed subspace $V(\mathfrak{J})$ of $\Spec(A)$ \sref{prop}{1.1.11},
+the set of \emph{open} prime ideals of $A$; this topological space does not
+depend
+\oldpage{181}
+on the ideal of definition $\mathfrak{J}$ considered; we denote this topological
+space by $\mathfrak{X}$. Let $(\mathfrak{J}_\lambda)$ be a fundamental system
+of neighborhoods of $0$ in $A$, consisting of ideals of definition, and for each
+$\lambda$, let $\OO_\lambda$ be the structure sheaf of
+$\Spec(A/\mathfrak{J}_\lambda)$; this sheaf is induced on $\mathfrak{X}$ by
+$\widetilde{A}/\widetilde{\mathfrak{J}_\lambda}$ (which is zero outside of
+$\mathfrak{X}$). For $\mathfrak{J}_\mu\subset\mathfrak{J}_\lambda$, the
+canonical homomorphism $A/\mathfrak{J}_\mu\to A/\mathfrak{J}_\lambda$ thus
+defines a homomorphism $u_{\lambda\mu}:\OO_\mu\to\OO_\lambda$ of sheaves of
+rings \sref{env}{1.6.1}, and $(\OO_\lambda)$ is a \emph{projective system of
+sheaves of rings} for these homomorphisms. As the topology of $\mathfrak{X}$
+admits a basis consisting of quasi-compact open subsets, we can associate to
+each $\OO_\lambda$ a \emph{sheaf of psuedo-discrete topological rings}
+\pref{env}{3.8.1} which
+...
+\end{env}
 

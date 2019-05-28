@@ -3772,9 +3772,314 @@ each neighborhood $V$ of $0$ in $A$, there exists an $n>0$ such that
 $\mathfrak{J}^n\subset V$; if $x\in A$ is such that $x^m\in\mathfrak{J}$, we have
 $x^{mq}\in V$ for $q\geqslant n$, so $x$ is topologically nilpotent.
 
+\begin{envs}[Proposition]{7.1.4}
+\label{prop-0.7.1.4}
+Let $A$ be a pre-admissible ring, $\mathfrak{J}$ an ideal of definition for $A$.
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item For an ideal $\mathfrak{J}'$ of $A$ to be contained in an ideal of
+        definition, it is necessary and sufficient that there exists an integer
+        $n>0$ such that ${\mathfrak{J}'}^n\subset\mathfrak{J}$.
+  \item For an $x\in A$ to be contained in an ideal of definition, it is
+        necessary and sufficient that it is topologically nilpotent.
+\end{enumerate}
+\end{envs}
+
+\begin{enumerate}[label=(\roman*)]
+  \item If ${\mathfrak{J}'}^n\subset\mathfrak{J}$, for each open neighborhood
+        $V$ of $0$ in $A$, there exists an $m$ such that
+        $\mathfrak{J}^m\subset V$, thus ${\mathfrak{J}'}^{mn}\subset V$.
+  \item The condition is evidently necessary; it is sufficient, since if it
+        satisfied, there exists an $n$ such that $x^n\in\mathfrak{J}$, so
+        $\mathfrak{J}'=\mathfrak{J}+Ax$ is an ideal of definition, because it is
+        open, and ${\mathfrak{J}'}^n\subset\mathfrak{J}$.
+\end{enumerate}
+
+\begin{envs}[Corollary]{7.1.5}
+\label{cor-0.7.1.5}
+In a pre-admissible ring $A$, an open prime ideal contains all the ideals of
+definition.
+\end{envs}
+
+\begin{envs}[Corollary]{7.1.6}
+The notations and hypotheses being that of \sref{prop}{7.1.4}, the following
+properties of an ideal $\mathfrak{J}_0$ of $A$ are equivalent:
+\begin{enumerate}[label=\rm{(\alph*)}]
+  \item $\mathfrak{J}_0$ is the largest ideal of definition of $A$;
+  \item $\mathfrak{J}_0$ is a maximal ideal of definition;
+  \item $\mathfrak{J}_0$ is an ideal of definition such that the ring
+        $A/\mathfrak{J}_0$ is reduced.
+\end{enumerate}
+For there to exist an ideal $\mathfrak{J}_0$ to have these properties, it is
+necessary and sufficient that the nilradical of $A/\mathfrak{J}$ to be
+nilpotent; $\mathfrak{J}_0$ is then equal to the ideal $\mathfrak{T}$ of
+topologically nilpotent elements of $A$.
+\end{envs}
+
+It is clear that (a) implies (b), and (b) implies (c) according to
+\sref[(ii)]{prop}{7.1.4} and \sref[(ii)]{lem}{7.1.3}; for the same reason, (c)
+implies (a). The latter assertion follows from \sref[(i)]{prop}{7.1.4} and
+\sref[(ii)]{lem}{7.1.3}.
+
+When $\mathfrak{T}/\mathfrak{J}$, the nilradical of $A/\mathfrak{J}$, is
+nilpotent, we denote by $A_\text{red}$ the (reduced) quotient ring
+$A/\mathfrak{T}$.
+
+\begin{envs}[Corollary]{7.1.7}
+\label{cor-0.7.1.7}
+\oldpage{62}
+A pre-admissible Noetherian ring admits a largest ideal of definition.
+\end{envs}
+
+\begin{envs}[Corollary]{7.1.8}
+\label{cor-0.7.1.8}
+If a pre-admissible ring $A$ is such that, for an ideal of definition
+$\mathfrak{J}$, the powers $\mathfrak{J}^n$ ($n>0$) form a fundamental system
+of neighborhoods of $0$, it is the same for the powers ${\mathfrak{J}'}^n$ for
+each ideal of definition $\mathfrak{J}'$ of $A$.
+\end{envs}
+
+\begin{envs}[Definition]{7.1.9}
+\label{defn-0.7.1.9}
+We say that a pre-admissible ring $A$ is \emph{pre-adic} if there exists an
+ideal of definition $\mathfrak{J}$ for $A$ such that the $\mathfrak{J}^n$ form
+a fundamental system of neighborhoods of $0$ in $A$ \emph{(or equivalently, such
+that the $\mathfrak{J}^n$ are \emph{open})}. We call a ring \emph{adic} if it
+is a separated and complete pre-adic ring.
+\end{envs}
+
+If $\mathfrak{J}$ is an ideal of definition for a pre-adic (resp. adic) ring
+$A$, we say that $A$ is a \emph{$\mathfrak{J}$-pre-adic}
+(resp. \emph{$\mathfrak{J}$-adic}) ring, and that its topology is the
+\emph{$\mathfrak{J}$-pre-adic} (resp. \emph{$\mathfrak{J}$-adic}) topology. More
+generally, if $M$ is an $A$-module, the topology on $M$ having for a fundamental
+system of neighborhoods of $0$ the submodules $\mathfrak{J}^n M$ is called the
+\emph{$\mathfrak{J}$-pre-adic} (resp. \emph{$\mathfrak{J}$-adic}) topology.
+According to \sref{cor}{7.1.8}, these topologies are independent of the choice
+of the ideal of definition $\mathfrak{J}$.
+
+\begin{envs}[Proposition]{7.1.10}
+\label{prop-0.7.1.10}
+Let $A$ be an admissible ring, $\mathfrak{J}$ an ideal of definition for $A$.
+Then $\mathfrak{J}$ is contained in the radical of $A$.
+\end{envs}
+
+This statement is equivalent to any of the following corollaries:
+\begin{envs}[Corollary]{7.1.11}
+\label{cor-0.7.1.11}
+For each $x\in\mathfrak{J}$, $1+x$ is invertible in $A$.
+\end{envs}
+
+\begin{envs}[Corollary]{7.1.12}
+\label{cor-0.7.1.12}
+For $f\in A$ to be invertible in $A$, it is necessary and sufficient that its
+canonical image in $A/\mathfrak{J}$ is invertible in $A/\mathfrak{J}$.
+\end{envs}
+
+\begin{envs}[Corollary]{7.1.13}
+\label{cor-0.7.1.13}
+For each $A$-module $M$ of finite type, the relation $M=\mathfrak{J}M$
+(equivalent to $M\otimes_A(A/\mathfrak{J})=0$) implies that $M=0$.
+\end{envs}
+
+\begin{envs}[Corollary]{7.1.14}
+\label{cor-0.7.1.14}
+Let $u:M\to N$ be a homomorphism of $A$-modules, $N$ being of finite type; for
+$u$ to be surjective, it is necessary and sufficient that
+$u\otimes 1:M\otimes_A(A/\mathfrak{J})\to N\otimes_A(A/\mathfrak{J})$ is.
+\end{envs}
+
+Indeed, the equivalence of \sref{prop}{7.1.10} and \sref{cor}{7.1.11} follows
+from Bourbaki, \emph{Alg.}, chap. VIII, \textsection6, n\textsuperscript{o}3,
+th. 1, and the equivalence of \sref{prop}{7.1.10} and \sref{prop}{7.1.10}
+and \sref{cor}{7.1.13} follows from \emph{loc. cit.}, th. 2; the fact that
+\sref{prop}{7.1.10} implies \sref{cor}{7.1.14} follows from \emph{loc. cit.},
+cor. 4 of the prop. 6; on the other hand, \sref{cor}{7.1.14} implies
+\sref{cor}{7.1.13} by applying the zero homomorphism. Finally,
+\sref{prop}{7.1.10} implies that if $f$ is invertible in $A/\mathfrak{J}$, then
+$f$ is not contained in any maximal ideal of $A$, thus $f$ is invertible in $A$,
+in other words, \sref{prop}{7.1.10} implies \sref{cor}{7.1.12}; conversely,
+\sref{cor}{7.1.12} implies \sref{cor}{7.1.11}.
+
+It therefore remains to prove \sref{cor}{7.1.11}. Now as $A$ is separated and
+complete, and the sequence $(\mathfrak{J}^n)$ tends to $0$, it is immediate that
+the series $\sum_{n=0}^\infty(-1)^n x^n$ is convergent in $A$, and that if $y$
+is its sum, then we have $y(1+x)=1$.
 
 \subsection{Adic rings and projective limits}
 \label{0-prelim-7.2}
+
+\begin{env}{7.2.1}
+\label{env-0.7.2.1}
+Each projective limit of \emph{discrete} rings is evidently a linearly
+topologized ring, separated and compact. Conversely, let $A$ be a linearly
+topologized ring, and let $(\mathfrak{J}_\lambda)$ be a fundamental system of
+open neighborhoods of $0$ in $A$ consisting of
+\oldpage{63}
+ideals. The canonical maps $\vphi_\lambda:A\to A/\mathfrak{J}_\lambda$ form
+a projective system of continuous representations and therefore defines a
+continuous representation $\vphi:A\to\varprojlim A/\mathfrak{J}_\lambda$; if $A$
+is \emph{separated}, then $\vphi$ is a topological isomorphism from $A$ to an
+everywhere dense subring of $\varprojlim A/\mathfrak{J}_\lambda$; if, in
+addition, $A$ is \emph{complete}, then $\vphi$ is a topological isomorphism from
+$A$ to $\varprojlim A/\mathfrak{J}_\lambda$.
+\end{env}
+
+\begin{envs}[Lemma]{7.2.2}
+\label{lem-0.7.2.2}
+For a linearly topologized ring to be admissible, it is necessary and sufficient
+that it is isomorphic to a projective limit $A=\varprojlim A_\lambda$, where
+$(A_\lambda,\mu_{\lambda\mu})$ is a projective limit of discrete rings having
+for the set of indices a filtered ordered (by $\leqslant$) $L$ which admits
+a smallest element denoted $0$ and satisfies the following conditions:
+1\textsuperscript{st} the $u_\lambda:A\to A_\lambda$ are sujective;
+2\textsuperscript{nd} the kernel $\mathfrak{J}_\lambda$ of
+$u_{0\lambda}:A_\lambda\to A_0$ is nilpotent. When this is so, the kernel
+$\mathfrak{J}$ of $u_0:A\to A_0$ is equal to $\varprojlim\mathfrak{J}_\lambda$.
+\end{envs}
+
+The necessity of the condition follows from \sref{env}{7.2.1}, by choosing
+$(\mathfrak{J}_\lambda)$ to be a fundamental system of neighborhoods of $0$
+consisting of ideals of definitions contained in an ideal of definition
+$\mathfrak{J}_0$ and by applying \sref[(i)]{prop}{7.1.4}. The converse follows
+from the definition of the projective limit and from \sref{env}{7.2.1}, and the
+latter assertion is immediate.
+
+\begin{env}{7.2.3}
+\label{env-0.7.2.3}
+Let $A$ be an \emph{admissible} topological ring, $\mathfrak{J}$ an ideal of $A$
+contained in an ideal of definition (in other words \sref{prop}{7.1.4} such that
+$(\mathfrak{J}^n)$ tends to $0$); we can consider on $A$ the ring topology
+having for a fundamental system of neighborhoods of $0$ the powers
+$\mathfrak{J}^n$ ($n>0$); we call again this the \emph{$\mathfrak{J}$-pre-adic}
+topology. The hypothesis that $A$ is admissible implies that
+$\bigcup_n\mathfrak{J}^n=0$, therefore the $\mathfrak{J}$-pre-adic topology on
+$A$ is \emph{separated}; let $\widehat{A}=\varprojlim A/\mathfrak{J}^n$ be the
+completion of $A$ for this topology (where the $A/\mathfrak{J}^n$ are equipped
+with the discrete topology), and denote by $u$ the (not necessarily continuous)
+ring homomorphism $A\to\widehat{A}$, the projective limit of the sequence of
+homomorphisms $u_n:A\to A/\mathfrak{J}^n$. On the other hand, the
+$\mathfrak{J}$-pre-adic topology on $A$ is finer than the given topology
+$\mathscr{T}$ on $A$; as $A$ is separated and complete for $\mathscr{T}$, we can
+extend by continuity the identity map of $A$ (equipped with the
+$\mathfrak{J}$-pre-adic topology) to $A$ equipped with $\mathscr{T}$; this
+gives a continuous representation $v:\widehat{A}\to A$.
+\end{env}
+
+\begin{envs}[Proposition]{7.2.4}
+\label{prop-0.7.2.4}
+If $A$ is an admissible ring and $\mathfrak{J}$ is contained in an ideal of
+definition of $A$, then $A$ is separated and complete for the
+$\mathfrak{J}$-pre-adic topology.
+\end{envs}
+
+Indeed, with the notations of \sref{env}{7.2.3}, it is immediate that
+$v\circ u$ is the identity map of $A$. On the other hand,
+$u_n\circ v:\widehat{A}\to A/\mathfrak{J}^n$ is the extension by continuity (for
+the $\mathfrak{J}$-pre-adic topology on $A$ and the discrete topology on
+$A/\mathfrak{J}^n$) of the canonical map $u_n$; in other words, it is the
+canonical map from $\widehat{A}=\varprojlim_k A/\mathfrak{J}^k$ to
+$A/\mathfrak{J}^n$; $u\circ v$ is therefore the projective limit of this
+sequence of maps, which is by definition the identity map of
+$\widehat{A}$; this proves the proposition.
+
+\begin{envs}[Corollary]{7.2.5}
+\label{cor-0.7.2.5}
+Under the hypotheses of \sref{env}{7.2.3}, the following conditions are
+equivalent:
+\begin{enumerate}[label=\rm{(\alph*)}]
+  \item the homomorphism $u$ is continuous;
+\oldpage{64}
+  \item the homomorphism $v$ is bicontinous;
+  \item $A$ is a $\mathfrak{J}$-adic ring.
+\end{enumerate}
+\end{envs}
+
+\begin{envs}[Corollary]{7.2.6}
+\label{cor-0.7.2.6}
+Let $A$ be an admissible ring $A$, $\mathfrak{J}$ an ideal of definition for
+$A$. For $A$ to be Noetherian, it is necessary and sufficient that
+$A/\mathfrak{J}$ is Noetherian and that $\mathfrak{J}/\mathfrak{J}^2$ is an
+$(A/\mathfrak{J})$-module of finite type.
+\end{envs}
+
+These conditions are evidently necessary. Conversely, suppose the considitions
+are satisfied; as according to \sref{prop}{7.2.4} $A$ is complete for the
+$\mathfrak{J}$-pre-adic, for it to be Noetherian, it is necessary and sufficient
+that the associated graded ring $\grad(A)$ (for the filtration on the
+$\mathfrak{J}^n$) is (\cite[p~.18--07, th.~4]{1}). Now, let $a_1,\dots,a_n$ be
+the elements of $\mathfrak{J}$ whose classes modulo $\mathfrak{J}^2$ are the
+generators of $\mathfrak{J}/\mathfrak{J}^2$ as a $(A/\mathfrak{J})$-module. It
+is immediate by induction that the classes modulo $\mathfrak{J}^{m+1}$ of the
+monomials of total degree $m$ in the $a_i$ ($1\leqslant i\leqslant n$) form a
+system of generators for the $(A/\mathfrak{J})$-module
+$\mathfrak{J}^m/\mathfrak{J}^{m+1}$. We conclude that $\grad(A)$ is a ring
+isomorphic to a quotient of $(A/\mathfrak{J})[T_1,\dots,T_n]$ ($T_i$
+indeterminates), which finishes the proof.
+
+\begin{envs}[Proposition]{7.2.7}
+\label{prop-0.7.2.7}
+Let $(A_i,u_{ij})$ be a projective system $(i\in\bb{N})$ of discrete rings, and
+for each integer $i$, let $\mathfrak{J}_i$ be the kernel in $A_i$ of the
+homomorphism $u_{0i}:A_i\to A_0$. We suppose that:
+\begin{enumerate}[label=\rm{(\alph*)}]
+  \item For $i\leqslant j$, $u_{ij}$ is surjective and its kernel is
+        $\mathfrak{J}_j^{i+1}$ \emph{(therefore $A_i$ is isomorphic to
+        $A_j/\mathfrak{J}_j^{i+1}$)}.
+  \item $\mathfrak{J}_1/\mathfrak{J}_1^2$ ($=\mathfrak{J}_1$) is a module of
+        finite type over $A_0=A_1/\mathfrak{J}_1$.
+\end{enumerate}
+Let $A=\varprojlim_i A_i$, and for each integer $n\geqslant 0$, let $u_n$ be the
+canonical homomorphism $A\to A_n$, and let $\mathfrak{J}^{(n+1)}\subset A$ be
+its kernel. Then we have these conditions:
+\begin{enumerate}[label=\rm{(\roman*)}]
+  \item $A$ is an adic ring, having $\mathfrak{J}=\mathfrak{J}^{(1)}$ for an
+        ideal of definition.
+  \item We have $\mathfrak{J}^{(n)}=\mathfrak{J}^n$ for each $n\geqslant 1$.
+  \item $\mathfrak{J}/\mathfrak{J}^2$ is isomorphic to
+        $\mathfrak{J}_1=\mathfrak{J}_1/\mathfrak{J}_1^2$, and as a result
+        is a module of finite type over $A_0=A/\mathfrak{J}$.
+\end{enumerate}
+\end{envs}
+
+The hypothesis of surjectivity on the $u_{ij}$ implies that $u_n$ is surjective;
+in addition, the hypothesis (a) implies that $\mathfrak{J}_j^{j+1}=0$, therefore
+$A$ is an admissible ring \sref{lem}{7.2.2}; by definition, the
+$\mathfrak{J}^{(n)}$ form a fundamental system of neighborhoods of $0$ in $A$,
+so (ii) implies (i). In addition, we have
+$\mathfrak{J}=\varprojlim_i\mathfrak{J}_i$ and the maps
+$\mathfrak{J}\to\mathfrak{J}_i$ are surjective, so (ii) implies (iii), and it
+remains to prove (ii). By definition, $\mathfrak{J}^{(n)}$ consists of the
+elements $(x_k)_{k\geqslant 0}$ of $A$ such that $x_k=0$ for $k<n$, therefore
+$\mathfrak{J}^{(n)}\mathfrak{J}^{(m)}\subset\mathfrak{J}^{(n+m)}$, in other
+words the $\mathfrak{J}^{(n)}$ form a \emph{filtration} of $A$. On the other
+hand, $\mathfrak{J}^{(n)}/\mathfrak{J}^{(n+1)}$ is isomorphic to the projection
+from $\mathfrak{J}^{(n)}$ to $A_n$; as
+$\mathfrak{J}^{(n)}=\varprojlim_{i>n}\mathfrak{J}_i^n$, this projection is none
+other than $\mathfrak{J}_n^n$, which is a module over $A_0=A_n/\mathfrak{J}_n$.
+Now let $a_j=(a_{jk})_{k\geqslant 0}$ be $r$ elements of
+$\mathfrak{J}=\mathfrak{J}^{(1)}$ such that $a_{11},\dots,a_{r1}$ form a system
+of generators for $\mathfrak{J}_1$ over $A_0$; we will see that the set $S_n$ of
+monomials of total degree $n$ and the $a_j$ generate the ideal
+$\mathfrak{J}^{(n)}$ of $A$. As $\mathfrak{J}_i^{i+1}=0$, it is clear first of
+all that $S_n\subset\mathfrak{J}^{(n)}$; since $A$ is complete for the
+filtration $(\mathfrak{J}^{(m)})$, it suffices to prove that the set
+$\overline{S}_n$ of classes modulo $\mathfrak{J}^{(n+1)}$ of elements of $S_n$
+generate the graded module $\grad(\mathfrak{J}^{(n)})$ over the graded ring
+$\grad(A)$ for the above filtration (\cite[p.~18--06, lemme]{1}); according to
+the definition of the multiplication on $\grad(A)$,
+\oldpage{65}
+it suffices to prove that for each $m$, $\overline{S}_m$ is a system of
+generators for the $A_0$-module $\mathfrak{J}^{(m)}/\mathfrak{J}^{(m+1)}$, or
+that $\mathfrak{J}_m^m$ is generated by the monomials of degree $m$ in the
+$a_{jm}$ ($1\leqslant j\leqslant r$). For this, it remains to show that
+$\mathfrak{J}_m$ is generated (as an $A_m$-module) by the monomials of degree
+$\leqslant m$ relative to $a_{jm}$; the proposition being evident by definition
+for $m=1$, we argue by induction on $m$, and let $\mathfrak{J}_m'$ be the
+$A_m$-submodule of $\mathfrak{J}_m$ generated by these monomials. The relation
+$\mathfrak{J}_{m-1}=\mathfrak{J}_m/\mathfrak{J}_m^m$ and the induction
+hypothesis prove that $\mathfrak{J}_m=\mathfrak{J}_m'+\mathfrak{J}_m^m$, hence,
+since $\mathfrak{J}_m^{m+1}=0$, we have $\mathfrak{J}_m^m={\mathfrak{J}_m'}^m$,
+and finally $\mathfrak{J}_m=\mathfrak{J}_m'$.
 
 \subsection{Pre-adic Noetherian rings}
 \label{0-prelim-7.3}
@@ -3793,3 +4098,4 @@ $x^{mq}\in V$ for $q\geqslant n$, so $x$ is topologically nilpotent.
 
 \subsection{Topologies on modules of homomorphisms}
 \label{0-prelim-7.8}
+
