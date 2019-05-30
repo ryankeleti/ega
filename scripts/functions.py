@@ -162,7 +162,7 @@ list_of_standard_labels = ['defn', 'lem', 'prop', 'thm', 'rmk', 'exm', 'section'
 def list_text_files(path):
   makefile_file = open(path + "makefile", 'r')
   for line in makefile_file:
-    n = line.find("LIJST = ")
+    n = line.find("FILES = ")
     if n == 0:
       break
   lijst = ""
@@ -173,7 +173,7 @@ def list_text_files(path):
     line = makefile_file.next()
   makefile_file.close()
   lijst = lijst + " " + line
-  lijst = lijst.replace("LIJST = ", "")
+  lijst = lijst.replace("FILES = ", "")
   return lijst.split()
 
 # Check if the line contains the title of the document
