@@ -9,14 +9,9 @@
 \usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage[charter,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
 
-% For any local file, say "hello.tex" you want to link to please
-% use \externaldocument[hello-]{hello}
-%\externaldocument[intro-]{intro}
+\externaldocument[intro-]{intro}
 \externaldocument[prelim-]{prelim}
 \externaldocument[schemes-]{schemes}
-%\externaldocument[coding-]{coding}
-%\externaldocument[fdl-]{fdl}
-%\externaldocument[index-]{index}
 
 \newtheoremstyle{ega-env-style}%
   {}{}{\rmfamily}{}{\bfseries}{.}{ }{\thmnote{(#3)}}%
@@ -45,13 +40,11 @@
 %\allowdisplaybreaks[1]
 %\binoppenalty=9999
 %\relpenalty=9999
-%\setitemize{nosep}
-%\setenumerate{nosep}
 
 % for Chapter 0, Chapter I, etc.
 % credit for ZeroRoman https://tex.stackexchange.com/questions/211414/
-%\newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
-%\renewcommand{\thechapter}{\ZeroRoman{chapter}}
+\newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
+\renewcommand{\thechapter}{\ZeroRoman{chapter}}
 
 \def\sh{\mathcal}               % sheaf font
 \def\bb{\mathbf}                % bold font
@@ -80,12 +73,12 @@
 % if unsure of a translation
 %\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
 %\newcommand{\completelyunsure}{\unsure{[\ldots]}}
-\def\unsure#1{}
-\def\completelyunsure{}
+\def\unsure#1{#1 (?)}
+\def\completelyunsure{(???)}
 
 % use to mark where original page starts
 %\newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}\ignorespaces}
-\def\oldpage#1{}
+\def\oldpage#1{\marginpar{#1}}
 \def\sectionbreak{\begin{center}***\end{center}}
 %\newcommand\hmmax{0}
 %\newcommand\bmmax{0}

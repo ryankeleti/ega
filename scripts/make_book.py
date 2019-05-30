@@ -30,7 +30,7 @@ with open(path + "preamble.tex", 'r') as preamble:
     if line.find("xr-hyper") >= 0:
       line = line.replace("xr-hyper", "CJKutf8")
     if line.find("\\documentclass") == 0:
-      line = line.replace("amsart", "amsbook")
+      line = line.replace("{amsart}", "[openany,oneside]{amsbook}")
     print line,
 print "\\begin{document}"
 print "\\begin{titlepage}"
@@ -49,22 +49,20 @@ print_list_contrib(path)
 print "}"
 print ""
 print "\\end{titlepage}"
+print "\\setcounter{tocdepth}{2}"
+print "\\tableofcontents{}"
 
 for name in list_text_files(path):
   with open(path + name + ".tex", 'r') as f:
-    verbatim = 0
     for line in f:
-      verbatim += beginning_of_verbatim(line)
-      if verbatim:
-        if end_of_verbatim(line):
-          verbatim = 0
-        if name != 'intro':
-          print line,
-        continue
       if line.find("\\input{preamble}") == 0:
         continue
       if line.find("\\begin{document}") == 0:
         continue
+      if line.find("\\title{Introduction}") == 0:
+        line = line.replace("\\title{Introduction}", "\\chapter*{Introduction}")
+      if line.find("\\title{Preliminaries}") == 0:
+        line = line.replace("\\title{Preliminaries}", "\\setcounter{chapter}{-1}\\chapter{Preliminaries}")
       if line.find("\\title{") == 0:
         line = line.replace("\\title{", "\\chapter{")
       if line.find("\\maketitle") == 0:
