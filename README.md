@@ -58,6 +58,6 @@ Here is the current status of the translation, along with the main contributors 
 - `\vphi` for `\varphi`. This is due to the font configuration swapping `\varphi` and `\phi`; if you want to use a different font, you could change this.
 - `\HH` for cohomology.
 - `\leqslant`/`\geqslant` for <=, >=.
-- Use the operators defined in `preamble.sty`, such as `\Spec`, `\im`, `\shHom`, etc.
+- Use the operators defined in `preamble.tex`, such as `\Spec`, `\im`, `\shHom`, etc.
 - Use `\oldpage{x}` to mark the original page number (x) at the current text position.
 
