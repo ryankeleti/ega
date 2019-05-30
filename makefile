@@ -1,30 +1,90 @@
-all: main
+# modified from https://github.com/stacks/stacks-project
+# license at scripts/COPYING
 
-EGA=en.ega.main
+LIJST = intro prelim schemes bibliography
 
-main: en.ega.main
+LIJST_TAGS = $(LIJST) book
 
-en.ega.main:
-	pdflatex $(EGA).tex
-	pdflatex $(EGA).tex
+TEX = $(patsubst %,%.tex,$(LIJST))
+TAGS = $(patsubst %,tags/tmp/%.tex,$(LIJST_TAGS))
+TAG_EXTRAS = tags/tmp/my.bib tags/tmp/hyperref.cfg\
+	tags/tmp/Makefile tags/tmp/chapters.tex\
+	tags/tmp/preamble.tex tags/tmp/bibliography.tex
+PDFS = $(patsubst %,%.pdf,$(LIJST))
+PDFLATEX := pdflatex
 
-#WEBDIR=WEB
-#web:
-#	mkdir $(WEBDIR)/
-#	cp $(EGAI).tex $(WEBDIR)/ega.tex
-#	cp preamble.tex bib.tex $(WEBDIR)/
-#	cd $(WEBDIR)/
-#	python tagger.py > tags
-#	plastex ega.tex
+.PHONY: default
+default: $(TEX)
+	@echo "make pdfs   --- makes all pdfs"
+	@echo "make book   --- makes complete book pdf"
+	@echo "make all    --- make pdfs + make book"
 
+.PHONY: pdfs
+pdfs: $(PDFS)
+
+tmp/book.tex: *.tex
+	python2 ./scripts/make_book.py "$(CURDIR)" > tmp/book.tex
+
+book.pdf: tmp/book.tex
+	$(PDFLATEX) tmp/book
+	$(PDFLATEX) tmp/book
+
+%.pdf: %.tex
+	$(PDFLATEX) $*
+	$(PDFLATEX) $*
+
+tags/tmp/book.tex: tmp/book.tex tags/tags
+	python2 ./scripts/tag_up.py "$(CURDIR)" book > tags/tmp/book.tex
+
+tags/tmp/preamble.tex: preamble.tex tags/tags
+	python2 ./scripts/tag_up.py "$(CURDIR)" preamble > tags/tmp/preamble.tex
+
+tags/tmp/chapters.tex: chapters.tex
+	cp chapters.tex tags/tmp/chapters.tex
+
+tags/tmp/%.tex: %.tex tags/tags
+	python2 ./scripts/tag_up.py "$(CURDIR)" $* > tags/tmp/$*.tex
+
+tags/tmp/hyperref.cfg: hyperref.cfg
+	cp hyperref.cfg tags/tmp/hyperref.cfg
+
+tags/tmp/ega-bib.bib: ega-bib.bib
+	cp ega-bib.bib tags/tmp/ega-bib.bib
+
+tags/tmp/makefile: tags/makefile
+	cp tags/makefile tags/tmp/makefile
+
+.PHONY: tags
+tags: $(TAGS) $(TAG_EXTRAS)
+	$(MAKE) -C tags/tmp
+
+.PHONY: tags_clean
+tags_clean:
+	rm -f tags/tmp/*
+	rm -f tmp/book.tex
+
+# Additional targets
+.PHONY: book
+book: book.pdf
+
+.PHONY: clean
 clean:
-	rm -f *.aux *.bbl *.blg *.log *.out *.toc *.fls *.fdb_latexmk
+	rm -f *.aux *.bbl *.blg *.log *.out *.toc
+	rm -f tmp/book.tex
+	rm -i *.pdf
 
-cleanpdf:
-	rm -f *.pdf
+.PHONY: cleanall
+cleanall: clean tags_clean
 
-#cleanweb:
-#	rm -rf $(WEBDIR)
+.PHONY: all
+all: pdfs book
 
-cleanall: clean cleanpdf #cleanweb
+WEBDIR=../WEB
+.PHONY: web
+web:
+	cp ega-bib.bib $(WEBDIR)/ega-bib.bib
+	cp tagger.py $(WEBDIR)/tagger.py
+	python2 ./scripts/web_book.py "$(CURDIR)" > $(WEBDIR)/book.tex
+	cd $(WEBDIR) && python tagger.py && cd -
+
 
