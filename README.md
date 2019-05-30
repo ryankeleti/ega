@@ -5,7 +5,7 @@ S’il-vous plaît pardonnez-nous, Grothendieck.
 
 to compile, `pdflatex en.ega.main.tex` or use `make all`.
 
-click [here](https://ryankeleti.github.io/en.ega/en.ega.main.pdf) for a copy of the compiled version.
+click [here](https://ryankeleti.github.io/en.ega/book.pdf) for a copy of the compiled version.
 
 work in progress. see [here](https://github.com/ryankeleti/ega) for a French transciption project.
 
@@ -17,7 +17,7 @@ work in progress. see [here](https://github.com/ryankeleti/ega) for a French tra
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
 - an excellent reference for math terms in French [here](http://www-users.math.umn.edu/~kwlan/documents/french-glossary.pdf)
 - another reference for math terms in French [here](https://ensiwiki.ensimag.fr/index.php?title=Lexique_scientifique_fran%C3%A7ais-anglais)
-- web version? (this currently does not work, I've removed plastex parts for now)
+- web version? work in progress
 
 ## current status
 
@@ -60,3 +60,4 @@ Here is the current status of the translation, along with the main contributors 
 - `\leqslant`/`\geqslant` for <=, >=.
 - Use the operators defined in `preamble.sty`, such as `\Spec`, `\im`, `\shHom`, etc.
 - Use `\oldpage{x}` to mark the original page number (x) at the current text position.
+
