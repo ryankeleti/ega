@@ -3,7 +3,7 @@
 amateur translation (fr->en) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
-to compile, `pdflatex en.ega.main.tex` or use `make all`.
+to compile, `make book`, `make pdfs`, or `make all`.
 
 click [here](https://ryankeleti.github.io/en.ega/book.pdf) for a copy of the compiled version.
 
