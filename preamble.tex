@@ -1,13 +1,13 @@
 \documentclass{amsart}
 
-\usepackage{verbatim}
+%\usepackage{verbatim}
 \usepackage[all]{xy}
-\usepackage{multicol}
 \usepackage[T1]{fontenc}
 \usepackage{xr-hyper}
 \usepackage[colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
 \usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
-\usepackage[charter,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
+\usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
+%\usepackage{amssymb}
 
 \externaldocument[intro-]{intro}
 \externaldocument[prelim-]{prelim}
@@ -46,9 +46,10 @@
 \newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
 \renewcommand{\thechapter}{\ZeroRoman{chapter}}
 
+\def\mathcal{\mathscr}
 \def\sh{\mathcal}               % sheaf font
 \def\bb{\mathbf}                % bold font
-\def\cat{\mathrm}               % category font
+\def\cat{\mathtt}               % category font
 \def\rad{\mathfrak{r}}          % radical
 \def\nilrad{\mathfrak{R}}       % nilradical
 \def\emp{\varnothing}           % empty set
@@ -57,7 +58,8 @@
 \def\dual#1{{#1}^\vee}          % dual
 \def\kres{k}                    % residue field k
 \def\isoto{\xrightarrow{\sim}}  % isomorphism \to
-\def\K{\cat{K}}                 % category K
+\def\C{\cat{C}}                 % category C
+\def\op{^\cat{op}}              % opposite category
 \def\OO{\sh{O}}                 % structure sheaf O
 
 \def\shHom{\sh{H}\!{om}} % sheaf Hom
@@ -68,6 +70,7 @@
 \def\Im{{\mathop{\mathrm{Im}}\nolimits}}
 \def\Coker{{\mathop{\mathrm{Coker}}\nolimits}}
 \def\Spec{{\mathop{\mathrm{Spec}}\nolimits}}
+\def\Spf{{\mathop{\mathrm{Spf}}\nolimits}}
 \def\grad{{\mathop{\mathrm{grad}}\nolimits}}
 
 % if unsure of a translation
