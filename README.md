@@ -32,6 +32,7 @@ Here is the current status of the translation, along with the main contributors 
     + [x] 5. Quasi-coherent sheaves and coherent sheaves (@ryankeleti)
     + [x] 6. Flatness (@ryankeleti)
     + [ ] 7. Adic rings
+    + [ ] 8. Representable functors
 - [ ] The language of schemes
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
@@ -49,7 +50,7 @@ Here is the current status of the translation, along with the main contributors 
 ## LaTeX conventions
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
 - `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
-- `\cat` for categories, e.g. `\cat{C}` for a category C; use `\K` for a "default" category.
+- `\cat` for categories, e.g. `\cat{Set}` for the category of sets; use `\C` for a "default" category, and `\op` for the opposite category.
 - `\dual` for the dual sheaf, e.g. `\dual{\sh{F}}` for `\sh{F}^\vee`.
 - `\isoto` for an isomorphism arrow.
 - `\emp` for the empty set.
