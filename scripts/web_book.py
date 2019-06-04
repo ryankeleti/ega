@@ -11,9 +11,11 @@ with open(path + "preamble.tex", 'r') as preamble:
       line = line.replace("xr-hyper", "CJKutf8")
     if line.find("\\documentclass") == 0:
       line = line.replace("{amsart}", "{book}")
+    if line.find("geometry") >= 0:
+      continue
+    if line.find("mathdesign") >= 0:
+      continue
     print(line, end='')
-print("\\newcommand{\\ZeroRoman}[1]{\\ifcase\\value{#1}\\relax 0\\else\\Roman{#1}\\fi}")
-print("\\renewcommand{\\thechapter}{\\ZeroRoman{chapter}}")
 print("\\begin{document}")
 print("\\begin{titlepage}")
 print("\\pagestyle{empty}")
@@ -62,6 +64,8 @@ for name in list_text_files(path):
       if line.find("\\title{") == 0:
         line = line.replace("\\title{", "\\chapter{")
       if line.find("\\maketitle") == 0:
+        continue
+      if line.find("\\oldpage") == 0:
         continue
       if line.find("\\tableofcontents") == 0:
         continue
