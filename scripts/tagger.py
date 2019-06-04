@@ -1,17 +1,15 @@
 #!/usr/bin/env python
-import glob
 import re
 
 #
 # modified from a script provided by Pieter Belmans, https://pbelmans.ncag.info/
 # and the script web_book.py from https://github.com/stacks/stacks-project.
 #
-
 path = "./"
 mainfile = path + "book.tex"
 
 # no I, no O
-CHARACTERS = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ"
+CHARS = "0123456789ABCDEFGHJKLMNPQRSTUVWXYZ"
 
 # recursively read a TeX file
 def read(filename):
@@ -19,7 +17,6 @@ def read(filename):
   if filename[-4:] != ".tex":
     filename += ".tex"
   tex = ""
-
   with open(filename) as f:
     for line in f:
       if line.find("\\begin{document}") == 0:
@@ -34,10 +31,8 @@ def read(filename):
         continue
       if line.find("\\end{document}") == 0:
         continue
-      # remove comments
-      line = line.split("%")[0]
-      # look for \input's
-      matches = re.findall("\\\\input{([^}]+)", line)
+      line = line.split("%")[0] # remove comments
+      matches = re.findall("\\\\input{([^}]+)", line) # look for \input's
       for match in matches:
         line = line.replace("\\input{" + match + "}", read(match))
       tex += line
@@ -45,83 +40,47 @@ def read(filename):
 
 # convert integer to tag
 def tobase(i):
-  global CHARACTERS
+  global CHARS
   assert i >= 0
-  if i < len(CHARACTERS):
-    return CHARACTERS[i]
+  if i < len(CHARS):
+    return CHARS[i]
   else:
-    return tobase(i // len(CHARACTERS)) + CHARACTERS[i % len(CHARACTERS)]
+    return tobase(i // len(CHARS)) + CHARS[i % len(CHARS)]
 
 def totag(i):
   return tobase(i).rjust(4, '0')
 
 # convert tag to integer
 def toint(tag):
-  global CHARACTERS
-  return sum([CHARACTERS.index(tag[i]) * len(CHARACTERS)**(4-i-1) for i in range(4)])
+  global CHARS
+  return sum([CHARS.index(tag[i]) * len(CHARS)**(4-i-1) for i in range(4)])
 
-tags = dict()
-labels = dict()
-inactive = []
-try:
-  with open("tags") as f:
-    for line in f:
-      # actual tag
-      if not line.startswith("#"):
-        tags[line.split(",")[0]] = line.strip().split(",")[1]
-        labels[line.strip().split(",")[1]] = line.strip().split(",")[0]
-      # check for inactive tags too
-      elif len(line.split(",")) == 2 and len(line.split(",")[0]) == 4:
-        inactive.append(line.split(",")[0])
-except FileNotFoundError:
-  pass
-
-# determine last assigned tag
-try:
-  last = toint(sorted(list(tags.keys()) + inactive)[-1])
-except IndexError:
-  last = -1
-
-i = last + 1 # where we should start
-old = [] # list of used labels with a tag
+i = 0
 new = dict() # dictionary of newly assigned labels
-tex = read(mainfile)
-matches = re.findall("\\\\label{([^}]+)}", tex)
+matches = re.findall("\\\\label{([^}]+)}", read(mainfile))
 for label in matches:
-  # old label
-  if label in labels:
-    old.append(label)
-  # new label
-  else:
-    tag = tobase(i).rjust(4, "0")
-    new[label] = tag
-    #print("%s,%s" % (tag, label))
-    i += 1
+  tag = tobase(i).rjust(4, '0')
+  if label.find("section-phantom") == 0:
+    continue
+  new[label] = tag
+  print("%s,%s" % (tag, label))
+  i += 1
 
-missing = [label for label in labels if label not in old]
-#if len(missing) > 0:
-#  print("The following labels are no longer present in the actual TeX file:")
-#  for label in missing:
-#    print(" - %s" % label)
-#  print("Not assigning tags until fixed.")
-if False:
-  pass
-else:
-  with open("tags", 'w+') as f:
-    for label in new:
-      #print("new tag %s,%s" % (new[label], label))
-      f.write(new[label]+", "+label+"\n")
+with open("tags", 'w+') as f:
+  for label in new:
+    print("writing tag %s,%s" % (new[label], label))
+    f.write(new[label] + "," + label + "\n")
 
-#def get_tag_line(line):
-#  line = line.rstrip()
-#  return line.split(",")
+def get_tag_line(line):
+  line = line.rstrip()
+  return line.split(",")
 
 # get all active tags in the project
-#def get_tags(path):
-#  tags = []
-#  with open(path + "tags", 'r') as f:
-#    for line in f:
-#      if not line.find("#") == 0:
-#        tags.append(get_tag_line(line))
-#  return tags
+def get_tags(path):
+  tags = []
+  with open(path + "tags", 'r') as f:
+    for line in f:
+      if not line.find("#") == 0:
+        tags.append(get_tag_line(line))
+  return tags
 
