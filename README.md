@@ -1,6 +1,6 @@
 # en.ega
 
-amateur translation (fr->en) of A. Grothendieck's EGA.
+amateur translation (fr -> en) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 to compile, `make book`, `make pdfs`, or `make all`.
@@ -11,9 +11,8 @@ work in progress. see [here](https://github.com/ryankeleti/ega) for a French tra
 
 ## todo
 
-- search within the .tex files for any `TODO` comments
 - when this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
-- update the titles to agree with [this](https://stacky.net/wiki/index.php?title=EGA_contents) ? even if not, this is a good reference for potentially unfamiliar vocabulary
+- reference for section titles [this](https://stacky.net/wiki/index.php?title=EGA_contents)
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
 - an excellent reference for math terms in French [here](http://www-users.math.umn.edu/~kwlan/documents/french-glossary.pdf)
 - another reference for math terms in French [here](https://ensiwiki.ensimag.fr/index.php?title=Lexique_scientifique_fran%C3%A7ais-anglais)
@@ -46,7 +45,6 @@ Here is the current status of the translation, along with the main contributors 
     + [ ] 9. Supplement on quasi-coherent sheaves (@thosgood)
     + [ ] 10. Formal schemes
 
-
 ## LaTeX conventions
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
 - `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
@@ -58,7 +56,7 @@ Here is the current status of the translation, along with the main contributors 
 - `\rad`/`\nilrad` for radical/nilradical.
 - `\vphi` for `\varphi`. This is due to the font configuration swapping `\varphi` and `\phi`; if you want to use a different font, you could change this.
 - `\HH` for cohomology.
-- `\leqslant`/`\geqslant` for <=, >=.
+- `\leqslant`/`\geqslant` for ≤, ≥.
 - Use the operators defined in `preamble.tex`, such as `\Spec`, `\im`, `\shHom`, etc.
 - Use `\oldpage{x}` to mark the original page number (x) at the current text position.
 
