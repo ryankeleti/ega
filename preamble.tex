@@ -1,13 +1,12 @@
 \documentclass{amsart}
 
-%\usepackage{verbatim}
 \usepackage[all]{xy}
 \usepackage[T1]{fontenc}
 \usepackage{xr-hyper}
 \usepackage[colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
-\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
+%\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 \usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
-%\usepackage{amssymb}
 
 \externaldocument[intro-]{intro}
 \externaldocument[prelim-]{prelim}
@@ -43,8 +42,9 @@
 
 % for Chapter 0, Chapter I, etc.
 % credit for ZeroRoman https://tex.stackexchange.com/questions/211414/
-\newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
-\renewcommand{\thechapter}{\ZeroRoman{chapter}}
+% added into scripts/make_book.py
+%\newcommand{\ZeroRoman}[1]{\ifcase\value{#1}\relax 0\else\Roman{#1}\fi}
+%\renewcommand{\thechapter}{\ZeroRoman{chapter}}
 
 \def\mathcal{\mathscr}
 \def\sh{\mathcal}               % sheaf font
@@ -62,7 +62,7 @@
 \def\op{^\cat{op}}              % opposite category
 \def\OO{\sh{O}}                 % structure sheaf O
 
-\def\shHom{\sh{H}\!{om}} % sheaf Hom
+\def\shHom{\sh{H}\!{om}}        % sheaf Hom
 \def\Hom{{\mathop{\mathrm{Hom}}\nolimits}}
 \def\Tor{{\mathop{\mathrm{Tor}}\nolimits}}
 \def\Supp{{\mathop{\mathrm{Supp}}\nolimits}}
