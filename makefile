@@ -11,6 +11,7 @@ PDFLATEX := pdflatex
 default: $(TEX)
 	@echo "make pdfs       --- makes all pdfs"
 	@echo "make book       --- makes complete book pdf"
+	@echo "make web        --- makes web tex file (WIP)"
 	@echo "make tags       --- make tags file for book"
 	@echo "make all        --- make pdfs + make book"
 	@echo "make clean      --- clean up"
@@ -38,6 +39,11 @@ book:
 .PHONY: tags
 tags:
 	python ./scripts/tagger.py
+
+.PHONY: web
+web:
+	python ./scripts/web_book.py "$(CURDIR)" > ega-web.tex
+	make tags
 
 .PHONY: clean
 clean:
