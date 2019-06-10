@@ -42,8 +42,8 @@ tags:
 
 .PHONY: web
 web:
-	python ./scripts/web_book.py "$(CURDIR)" > ega-web.tex
-#	make tags
+	python ./scripts/web_book.py "$(CURDIR)" > ega.tex
+	python ./scripts/make_tags.py "$(CURDIR)"
 
 .PHONY: clean
 clean:
