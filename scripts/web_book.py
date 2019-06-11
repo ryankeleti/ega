@@ -10,7 +10,10 @@ with open(path + "preamble.tex", 'r') as preamble:
     if line.find("xr-hyper") >= 0:
       line = line.replace("xr-hyper", "CJKutf8")
     if line.find("\\documentclass") == 0:
-      line = line.replace("{amsart}", "{book}")
+      line = line.replace("{amsart}", "{book}\n\\usepackage{amsmath}\n\\usepackage{amssymb}")
+    if line.find("hyperref") >= 0:
+      print("\\usepackage{hyperref}")
+      continue
     if line.find("geometry") >= 0:
       continue
     if line.find("mathdesign") >= 0:
@@ -23,7 +26,7 @@ print("\\setcounter{page}{1}")
 print("\\centerline{\\LARGE\\bfseries \\'El\\'ements de g\\'eom\\'etrie alg\\'ebrique}")
 print("\\vskip1in")
 print("\\noindent")
-print("\\centerline{A.~Grothendieck and J.~Dieudonn\\'e}")
+print("\\centerline{A. Grothendieck and J. Dieudonn\\'e}")
 print("\\centerline{Publications math\\'ematiques de l'I.H.\\'E.S}")
 print("\\vskip1in")
 print("\\noindent")
@@ -63,10 +66,20 @@ for name in list_text_files(path):
         line = line.replace("\\title{Preliminaries}", "\\setcounter{chapter}{-1}\\chapter{Preliminaries}")
       if line.find("\\title{") == 0:
         line = line.replace("\\title{", "\\chapter{")
+      if line.find("& ---") >= 0:
+        line = line.replace("& ---", '')
+      if line.find("--- &") >= 0:
+        line = line.replace("--- &", '')
       if line.find("\\maketitle") == 0:
         continue
       if line.find("\\oldpage") == 0:
         continue
+      if line.find("\\item") >= 0:
+        line = re.sub('\\\\item\[(.*?)\]', '\\\\item \g<1>', line)
+      if line.find("\\hyperref") >= 0:
+        line = re.sub(r'\\textbf\{\w+\},~', '', line)
+        line = re.sub(r'hyperref\[(.*?)\]\{\(\d+?\.\d+?\.\d+?\)\}', 'ref{\g<1>}', line)
+        line = re.sub(r'hyperref\[(.*?)\]\{\(\d+?\.\d+?\.\d+?\.\d+?\)\}', 'ref{\g<1>}', line)
       if line.find("\\tableofcontents") == 0:
         continue
       if line.find("\\bibliography") == 0:
