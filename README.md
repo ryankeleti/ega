@@ -1,17 +1,15 @@
-# en.ega
+# ega
 
-amateur translation (fr -> en) of A. Grothendieck's EGA.
+amateur translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 to compile, `make book`, `make pdfs`, or `make all`.
 
-click [here](https://ryankeleti.github.io/en.ega/book.pdf) for a copy of the compiled version.
-
-work in progress. see [here](https://github.com/ryankeleti/ega) for a French transciption project.
+click [here](https://ryankeleti.github.io/ega/book.pdf) for a copy of the compiled version.
 
 ## todo
 
-- when this is finished (?!) we should [assign a DOI ?](https://guides.github.com/activities/citable-code/)
+- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
 - reference for section titles [this](https://stacky.net/wiki/index.php?title=EGA_contents)
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
 - an excellent reference for math terms in French [here](http://www-users.math.umn.edu/~kwlan/documents/french-glossary.pdf)

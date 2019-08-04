@@ -37,3 +37,5 @@
 #*.pdf
 
 .DS_STORE
+*.pyc
+

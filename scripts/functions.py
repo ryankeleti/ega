@@ -1,4 +1,4 @@
-# see README.md/COPYING.
+# see README.md/COPYING.md.
 import re
 
 # find location of repository
