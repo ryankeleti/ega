@@ -1,3 +1,4 @@
+# see README.md/COPYING.md.
 from functions import *
 
 path = get_path() 
@@ -27,7 +28,7 @@ print("\\vskip1in")
 print("\\noindent")
 print("\\centerline{\\bfseries Contributors}")
 print("\\centerline{")
-with open(path + "CONTRIBUTORS.md", 'r') as f:
+with open(path + "CONTRIBUTORS", 'r') as f:
   first = 1
   for line in f:
     if line.find("%") == 0:
@@ -71,7 +72,7 @@ for name in list_text_files(path):
         continue
       print(line, end='')
 
-print("\\bibliography{ega-bib}")
+print("\\bibliography{the}")
 print("\\bibliographystyle{amsalpha}")
 print("\\end{document}")
 
