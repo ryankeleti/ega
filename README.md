@@ -11,7 +11,7 @@ click [here](https://github.com/ryankeleti/ega/releases/download/build/book.pdf)
 
 ## current status
 
-Here is the current status of the translation, along with the main contributors to the respective sections.
+Here is the current status of the translation, along with who is currently working on which sections
 
 - [x] Introduction
 - [ ] Preliminaries
@@ -26,19 +26,20 @@ Here is the current status of the translation, along with the main contributors 
 - [ ] The language of schemes
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
-    + [x] 2. Preschemes and their morphisms (@thosgood)
+    + [x] 2. Preschemes and their morphisms
     + [ ] 3. Products of preschemes (@thosgood)
     + [ ] 4. Subpreschemes and immersions
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
     + [ ] 7. Rational maps
-    + [x] 8. Chevalley schemes (@thosgood)
-    + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
+    + [x] 8. Chevalley schemes
+    + [x] 9. Supplement on quasi-coherent sheaves
     + [ ] 10. Formal schemes
 
 ## todo
 
 - check for any `\unsure` commands in the source
+- check that all `hyperref` references are found
 - when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
 - reference for section titles [this](https://stacky.net/wiki/index.php?title=EGA_contents)
 - web version? work in progress

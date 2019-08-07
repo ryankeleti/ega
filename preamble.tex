@@ -7,6 +7,7 @@
 %\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage[margin=0.75in]{geometry}
 \usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
+\usepackage{tikz-cd}
 
 \externaldocument[intro-]{intro}
 \externaldocument[prelim-]{prelim}
@@ -77,8 +78,8 @@
 % if unsure of a translation
 %\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
 %\newcommand{\completelyunsure}{\unsure{[\ldots]}}
-\def\unsure#1{#1 (?)}
-\def\completelyunsure{(???)}
+\def\unsure#1{#1 {\color{red}(?)}}
+\def\completelyunsure{\color{red}(???)}
 
 % use to mark where original page starts
 %\newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}\ignorespaces}
