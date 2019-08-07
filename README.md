@@ -27,13 +27,13 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms
-    + [x] 3. Products of preschemes
-    + [ ] 4. Subpreschemes and immersions
+    + [x] 3. Products of preschemes (@thosgood)
+    + [ ] 4. Subpreschemes and immersions (@thosgood)
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
     + [ ] 7. Rational maps
-    + [x] 8. Chevalley schemes
-    + [x] 9. Supplement on quasi-coherent sheaves
+    + [x] 8. Chevalley schemes (@thosgood)
+    + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
     + [ ] 10. Formal schemes
 
 ## todo
