@@ -1,3 +1,5 @@
+.gitignore
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -34,8 +36,6 @@
 *.pdfsync
 
 # Built files
-#*.pdf
-
+*.pdf
 .DS_STORE
 *.pyc
-
