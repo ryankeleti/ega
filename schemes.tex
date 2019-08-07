@@ -4361,6 +4361,44 @@ With this, it remains to prove that the kernel $\sh{N}$ of a $\sh{B}$-homomorphi
 Since $B$ is Noetherian, the submodule $N$ of $B^m$ is a $B$-module of finite type, so there exists a homomorphism $B^p\to B^m$ with image $N$; since the sequence $B^p\to B^m\to B$ is exact, so too is the corresponding sequence $\sh{B}^p\to\sh{B}^m\to\sh{B}$ \hyperref[prop-1.1.3.5]{(1.3.5)} and since $\sh{N}$ is the image of $\sh{B}^p\to\sh{B}^m$ \hyperref[cor-1.1.3.9]{(1.3.9,~(i))}, the proposition is proved.
 \end{proof}
 
+\begin{cor}[9.6.4]
+\label{cor-1.9.6.4}
+Under the hypotheses of \hyperref[prop-1.9.6.3]{(9.6.3)}, for a $\sh{B}$-module $\sh{F}$ to be coherent, it is necessary and sufficient that it be a quasi-coherent $\OO_X$-module and a $\sh{B}$-module of finite type.
+If this is the case, and if $\sh{G}$ is a sub-$\sh{B}$-module or a quotient module of $\sh{F}$, in order for $\sh{G}$ to be a coherent $\sh{B}$-module, it is necessary and sufficient that is be a quasi-coherent $\OO_X$-module.
+\end{cor}
+
+\begin{proof}
+\label{proof-cor-1.9.6.4}
+Taking into account \hyperref[prop-1.9.6.1]{(9.6.1)}, the conditions on $\sh{F}$ are clearly necessary; we will show that they are sufficient.
+We can restrict to the case where $X$ is affine given by a Noetherian ring $A$, $\sh{B}=\widetilde{B}$, where $B$ is an $A$-algebra of finite type, $\sh{F}=\widetilde{M}$, where $M$ is a $B$-module, and where there exists a surjective $\sh{B}$-homomorphism $\sh{B}^m\to\sh{F}\to0$.
+We then have the corresponding exact sequence $B^m\to M\to0$, so $M$ is a $B$-module of finite type; further, the kernel $P$ of the homomorphism $B^m\to M$ is then a $B$-module of finite type, since $B$ is Noetherian.
+We thus conclude \hyperref[env-1.1.3.13]{(1.3.13)} that $\sh{F}$ is the cokernel of a $\sh{B}$-homomorphism $\sh{B}^m\to\sh{B}^n$, and is thus coherent, since $\sh{B}$ is a coherent sheaf of rings \hyperref[env-0.5.3.4]{(\textbf{0},~5.3.4)}.
+The same reasoning shows that a quasi-coherent sub-$\sh{B}$-module (resp. a quotient $\sh{B}$-module) of $\sh{F}$ is of finite type, from whence the second part of the corollary.
+\end{proof}
+
+\begin{prop}[9.6.5]
+\label{prop-1.9.6.5}
+Let $X$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian.
+For all quasi-compact $\OO_X$-algebras $\sh{B}$ of finite type, there exists a quasi-coherent sub-$\OO_X$-module $\sh{E}$ of $\sh{B}$ of finite type such that $\sh{E}$ generates \hyperref[env-0.4.1.4]{(\textbf{0},~4.1.4)} the $\OO_X$-algebra $\sh{B}$.
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-1.9.6.5}
+In fact, by the hypothesis there exists a finite cover $(U_i)$ of $X$ consisting of open affines such that $\Gamma(U_i,\sh{B})=B_i$ is an algebra of finite type over $\Gamma(U_i,\OO_X)=A_i$; let $E_i$ be a sub$A_i$-module of $B_i$ of finite type that generates the $A_i$-algebra $B_i$; thanks to \hyperref[thm-1.9.4.7]{(9.4.7)}, there exists a sub-$\OO_X$-module $\sh{E}_i$ of $\sh{B}$, quasi-coherent and of finite type, such that $\sh{E}_i|U_i=\widetilde{E_i}$.
+It is clear that the sum $\sh{E}$ of the $\sh{E}_i$ is the desired object.
+\end{proof}
+
+\begin{prop}[9.6.6]
+\label{prop-1.9.6.6}
+Let $X$ be a prescheme whose underlying space is locally Noetherian, or a quasi-compact scheme.
+Then every quasi-coherent $\OO_X$-algebra $\sh{B}$ is the inductive limit of its quasi-coherent sub-$\OO_X$-algebras of finite type.
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-1.9.6.6}
+In fact, it follows from \hyperref[cor-1.9.4.9]{(9.4.9)} that $\sh{B}$ is the inductive limit (as an $\OO_X$-module) of its quasi-coherent sub-$\OO_X$-modules of finite type; the latter generating quasi-coherent sub-$\OO_X$-\emph{algebras} of $\sh{B}$ of finite type \hyperref[env-1.1.3.14]{(1.3.14)}, and so $\sh{B}$ is a fortiori their inductive limit.
+\end{proof}
+
 \section{Formal schemes}
 \label{section-formal-schemes}
 
@@ -4376,7 +4414,7 @@ the set of {\it open} prime ideals of $A$; this topological space does not depen
 \oldpage{181}
 on the ideal of definition $\mathfrak{J}$ considered; we denote this topological
 space by $\mathfrak{X}$. Let $(\mathfrak{J}_\lambda)$ be a fundamental system
-of neighborhoods of $0$ in $A$, consisting of ideals of definition, and for each
+of neighbourhoods of $0$ in $A$, consisting of ideals of definition, and for each
 $\lambda$, let $\OO_\lambda$ be the structure sheaf of
 $\Spec(A/\mathfrak{J}_\lambda)$; this sheaf is induced on $\mathfrak{X}$ by
 $\widetilde{A}/\widetilde{\mathfrak{J}_\lambda}$ (which is zero outside of
@@ -4386,10 +4424,8 @@ defines a homomorphism $u_{\lambda\mu}:\OO_\mu\to\OO_\lambda$ of sheaves of
 rings \hyperref[env-1.1.6.1]{(1.6.1)}, and $(\OO_\lambda)$ is a {\it projective system of
 sheaves of rings} for these homomorphisms. As the topology of $\mathfrak{X}$
 admits a basis consisting of quasi-compact open subsets, we can associate to
-each $\OO_\lambda$ a {\it sheaf of psuedo-discrete topological rings}
-\hyperref[env-0.3.8.1]{(\textbf{0},~3.8.1)} which
-\unsure{...}
-
+each $\OO_\lambda$ a {\it sheaf of pseudo-discrete topological rings}
+\hyperref[env-0.3.8.1]{(\textbf{0},~3.8.1)} which have $\OO_\lambda$ as the underlying (without topology) sheaf of rings, and that we denote also by $\OO_\lambda$; and the $\OO_\lambda$ give again a \emph{projective system of sheaves of topological rings} \hyperref[env-0.3.8.2]{(\textbf{0},~3.8.2)}.
 We denote by $\OO_\mathfrak{X}$ the {\it sheaf of topological rings} on $\mathfrak{X}$, the
 projective limit of the system $(\OO_\lambda)$; for each {\it quasi-compact} open subset $U$
 of $\mathfrak{X}$, then $\Gamma(U,\OO_\mathfrak{X})$ is a topological ring, the projective
