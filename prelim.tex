@@ -40,7 +40,7 @@ as an $A$-module or a $B$-module, we will denote by $M_{[\vphi]}$ the left
 (resp. right) $A$-module as defined. If $L$ is an $A$-module, then a
 homomorphism $u:L\to M_{[\vphi]}$ is a homomorphism of commutative groups such
 that $u(a\cdot x)=\vphi(a)\cdot u(x)$ for $a\in A$, $x\in L$; we will also say
-that it is a $\vphi$-{\em homomorphism} $L\to M$, and that the pair $(\vphi,u)$
+that it is a {\em $\vphi$-homomorphism} $L\to M$, and that the pair $(\vphi,u)$
 (or, by misuse of langauge, $u$) is a {\em di-homomorphism} of $(A,L)$ in
 $(B,M)$. The pairs $(A,L)$ consisting of a ring $A$ and an $A$-module $L$ thus
 form a {\em category} for which the morphisms are di-homomorphisms.
@@ -4874,6 +4874,98 @@ of the Noetherian ring $S^{-1}A$ equipped with the $S{-1}\mathfrak{J}$-preadic t
 \hyperref[cor-0.7.3.3]{(7.3.3)} $A\{S^{-1}\}$ is a flat $S^{-1}A$-module; as $S^{-1}A$ is a flat
 $A$-module \hyperref[env-0.6.3.1]{(6.3.1)}, the proposition follows from the transitivity of
 flatness \hyperref[env-0.6.2.1]{(6.2.1)}.
+\end{proof}
+
+\begin{cor}[7.6.14]
+\label{cor-0.7.6.14}
+Under the hypotheses of Proposition \hyperref[prop-0.7.6.13]{(7.6.13)}, let $S'\subset S$ be a second
+multiplicative subset of $A$; then $A\{S^{-1}\}$ is a flat $A\{{S'}^{-1}\}$-module.
+\end{cor}
+
+\begin{proof}
+\label{proof-cor-0.7.6.14}
+By \hyperref[env-0.7.6.8]{(7.6.8)}, $A\{S^{-1}\}$ canonically identifies with
+$A\{{S'}^{-1}\}\{S_0^{-1}\}$, where $S_0$ is the canonical image of $S$ in $A\{{S'}^{-1}\}$, and
+$A\{{S'}^{-1}\}$ is Noetherian \hyperref[prop-0.7.6.11]{(7.6.11)}.
+\end{proof}
+
+\begin{env}[7.6.15]
+\label{env-0.7.6.15}
+For each element $f$ of a linearly topologized ring $A$, we denote by $A_{\{f\}}$ the completed
+ring of fractions $A\{S_f^{-1}\}$, where $S_f$ is the multiplicative set of the $f^n$
+($n\geqslant 0$); for each open ideal $\mathfrak{a}$ of $A$, we write $\mathfrak{a}_{\{f\}}$ for
+$\mathfrak{a}\{S_f^{-1}\}$. If $g$ is a second element of $A$, then we have a canonical continuous
+homomorphism $A_{\{f\}}\to A_{\{fg\}}$ \hyperref[env-0.7.6.7]{(7.6.7)}. When $f$ varies over a
+multiplicative subset $S$ of $A$, the $A_{\{f\}}$ form a filtered inductive system with the above
+homomorphisms; we set $A_{\{S\}}=\varinjlim_{f\in S}A_{\{f\}}$. For every $f\in S$, we have a
+homomorphism $A_{\{f\}}\to A\{S^{-1}\}$ \hyperref[env-0.7.6.7]{(7.6.7)}, and
+\oldpage{75}
+these homomorphisms form an inductive system; by passing to the inductive limit, they thus define
+a canonical homomorphism $A_{\{S\}}\to A\{S^{-1}\}$.
+\end{env}
+
+\begin{prop}[7.6.16]
+\label{prop-0.7.6.16}
+If $A$ is a Noetherian ring, then $A\{S^{-1}\}$ is a flat module over $A_{\{S\}}$.
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-0.7.6.16}
+By \hyperref[cor-0.7.6.14]{(7.6.14)}, $A\{S^{-1}\}$ is flat for each of the rings $A_{\{f\}}$ for
+$f\in S$, and the conclusion follows from \hyperref[env-0.6.2.3]{(6.2.3)}.
+\end{proof}
+
+\begin{prop}[7.6.17]
+\label{prop-0.7.6.17}
+Let $\mathfrak{p}$ be an open prime ideal in an admissible ring $A$, and let $S=A-\mathfrak{p}$.
+Then the rings $A\{S^{-1}\}$ and $A_{\{S\}}$ are local rings, the canonical homomorphism
+$A_{\{S\}}\to A\{S^{-1}\}$ is local, and the residue fields of $A_{\{S\}}$ and $A\{S^{-1}\}$ are
+canonically isomorphic to the field of fractions of $A/\mathfrak{p}$.
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-0.7.6.17}
+Let $\mathfrak{J}\subset\mathfrak{p}$ be an ideal of definition for $A$; we have
+$S^{-1}\mathfrak{J}\subset S^{-1}\mathfrak{p}=\mathfrak{p}A_\mathfrak{p}$, so
+$A_\mathfrak{p}/S^{-1}\mathfrak{J}$ is a local ring; we conclude from 
+Corollary \hyperref[cor-0.7.1.12]{(7.1.12)}, \hyperref[env-0.7.6.9]{(7.6.9)}, and
+Proposition \hyperref[prop-0.7.6.11]{(7.6.11, i)} that $A\{S^{-1}\}$ is a local ring. Set
+$\mathfrak{m}=\varinjlim_{f\in S}\mathfrak{p}_{\{f\}}$, which is an ideal in $A_{\{S\}}$; we
+will see that each element in $A_{\{S\}}$ not in $\mathfrak{m}$ is invertible. Indeed, such an
+element is the image in $A_{\{S\}}$ of an element $z\in A_{\{f\}}$ not in $\mathfrak{p}_{\{f\}}$,
+for an $f\in S$; its canonical image $z_0$ in
+$A_{\{f\}}/\mathfrak{J}_{\{f\}}=S_f^{-1}(A/\mathfrak{J})$ therefore is not in
+$S_f^{-1}(\mathfrak{p}/\mathfrak{J})$ \hyperref[env-0.7.6.9]{(7.6.9)}, which means that
+$z_0=\overline{x}/\overline{f}^k$, where $x\not\in\mathfrak{p}$ and $\overline{x}$, $\overline{f}$
+are the classes of $x$, $f$ mod $\mathfrak{J}$. As $x\in S$, we have $g=xf\in S$, and in
+$S_g^{-1}A$, the canonical image $y_0=x^{k+1}/g^k$ of $x/f^k\in S_f^{-1}A$ admits an inverse
+$x^{k-1}f^{2k}/g^k$. This implies {\em a fortiori} that the image of $y_0$ in
+$S_g^{-1}A/S_g^{-1}\mathfrak{J}$ is invertible, so (\hyperref[env-0.7.6.9]{(7.6.9)} and
+Corollary \hyperref[cor-0.7.1.12]{(7.1.12)}) the canonical image $y$ of $z$ in $A_{\{g\}}$ is
+invertible; the image of $z$ in $A_{\{S\}}$ (equal to that of $y$) is as a result invertible.
+We thus see that $A_{\{S\}}$ a local ring with maximal ideal $\mathfrak{m}$; in addition, the image
+of $\mathfrak{p}_{\{f\}}$ in $A\{S^{-1}\}$ is contained in the maximal ideal $\mathfrak{p}\{S^{-1}\}$
+of this ring; {\em a fortiori}, the image of $\mathfrak{m}$ in $A\{S^{-1}\}$ is contained in
+$\mathfrak{p}\{S^{-1}\}$, so the canonical homomorphism $A_{\{S\}}\to A\{S^{-1}\}$ is local. Finally,
+as each element of $A\{S^{-1}\}/\mathfrak{p}\{S^{-1}\}$ is the image of an element in the ring
+$S_f^{-1}A$ for a suitable $f\in S$, the homomorphism $A_{\{S\}}\to A\{S^{-1}\}/\mathfrak{p}\{S^{-1}\}$
+is surjective, and gives an isomorphism of the residue fields by passing to quotients.
+\end{proof}
+
+\begin{cor}[7.6.18]
+\label{cor-0.7.6.18}
+Under the hypotheses of Proposition \hyperref[prop-0.7.6.17]{(7.6.17)}, if we suppose also that
+$A$ is an adic Noetherian ring, then the local rings $A\{S^{-1}\}$ and $A_{\{S\}}$ are Noetherian,
+and $A\{S^{-1}\}$ is a faithfully flat $A_{\{S\}}$-module.
+\end{cor}
+
+\begin{proof}
+\label{proof-cor-0.7.6.18}
+We know from before \hyperref[prop-0.7.6.11]{(7.6.11, ii)} that $A\{S^{-1}\}$ is Noetherian and
+$A_{\{S\}}$-flat \hyperref[prop-0.7.6.16]{(7.6.16)}; as the homomorphism $A_{\{S\}}\to A\{S^{-1}\}$
+is local, we conclude that $A\{S^{-1}\}$ is a faithfully flat $A_{\{S\}}$-module
+\hyperref[env-0.6.6.2]{(6.6.2)}, and as a result that $A_{\{S\}}$ is Noetherian
+\hyperref[env-0.6.5.2]{(6.5.2)}.
 \end{proof}
 
 \subsection{Completed tensor products}
