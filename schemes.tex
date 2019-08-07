@@ -2409,7 +2409,7 @@ and similarly for $f_2^{-1}(W_{\alpha\lambda})$. In addition, we have
   =f_2^{-1}(p^{-1}(U_\alpha))\cap f_2^{-1}(q^{-1}(V_\lambda))=f_2^{-1}(W_{\alpha\lambda})
 \]
 by hypothesis, and it reduces to seeing that the the restrictions of $f_1$ and $f_2$ to
-$f_1^{-1}(W_{\alpha\lambda})=f_2^{-1}(W_{\alpha\lambda})$ are identical for each pair of
+$f_1^{-1}(W_{\alpha\lambda})=f_2^{-1}(W_{\alpha\lambda})$ are \unsure{identical/the identity} for each pair of
 indices. But as these restrictions can be considered as $S$-morphisms from
 $f_1^{-1}(W_{\alpha\lambda})$ to $W_{\alpha\lambda}$, our assertion follows from the
 hypotheses and Definition \hyperref[defn-1.3.2.1]{(3.2.1)}.
@@ -2958,7 +2958,7 @@ the $X_i$ are localised at the $x_i$.
 \begin{proof}
 \label{proof-lem-1.3.4.6}
 In fact, there exist $\kres(s)$-monomorphisms $\kres(x_i)\to K$, all in the same extension $K$ of $\kres(s)$ (Bourbaki, \emph{Alg.}, chap.~V, §4, prop.~2).
-The compositions $\kres(s)\to\kres(x_i)\to K$ are all identical, and so the morphisms $\Spec(K)\to X_i$ corresponding to the $\kres(x_i)\to K$ are $S$-morphisms, and we thus conclude that they define a unique morphism $\Spec(K)\to Y$.
+The compositions $\kres(s)\to\kres(x_i)\to K$ are all \unsure{identical/the identity}, and so the morphisms $\Spec(K)\to X_i$ corresponding to the $\kres(x_i)\to K$ are $S$-morphisms, and we thus conclude that they define a unique morphism $\Spec(K)\to Y$.
 If $y$ is the corresponding point of $Y$, it is clear that its projection in each of the $X_i$ is $x_i$.
 \end{proof}
 
@@ -3007,7 +3007,16 @@ The set of points of $X\times_S Y$ with projections $x$ and $y$ is in bijective 
 
 \begin{proof}
 \label{proof-prop-1.3.4.9}
-
+Let $p$ (\emph{resp. $q$}) be the projection of $X\times_S Y$ into $X$ (\emph{resp. $Y$}), and $E$ the subspace $p^{-1}(x)\cap q^{-1}(y)$ of the underlying space of $X\times_S Y$.
+First note that the morphisms $\Spec(\kres(x))\to S$ and $\Spec(\kres(y))\to S$ factorise as $\Spec(\kres(x))\to\Spec(\kres(s))\to S$ and $\Spec(\kres(y))\to\Spec(\kres(s))\to S$y since $\Spec(\kres(s))\to S$ is a monomorphism \hyperref[cor-1.2.4.7]{(2.4.7)}, it follows from \hyperref[prop-1.3.2.4]{(3.2.4)} that we have
+\begin{equation*}
+    P = \Spec(\kres(x))\times_S\Spec(\kres(y)) = \Spec(\kres(x))\times_{\Spec(\kres(s))}\Spec(\kres(y)) = \Spec(\kres(x)\otimes_{\kres(s)}\kres(y)).
+\end{equation*}
+We will define two maps, $\alpha\colon P_0\to E$ and $\beta\colon E\to P_0$, inverse to one another (where $P_0$ denotes the underlying set of the prescheme $P$).
+If $i\colon\Spec(\kres(x))\to X$ and $j\colon\Spec(\kres(y))\to Y$ are the canonical morphisms \hyperref[env-1.2.4.5]{(2.4.5)}, we take for $\alpha$ the map of underlying spaces corresponding to the morphism $i\times_S j$.
+On the other hand, every $z\in E$ defines by hypothesis two $\kres(s)$-monomorphisms, $\kres(x)\to\kres(z)$ and $\kres(y)\to\kres(z)$, and so a $\kres(s)$-monomorphism $\kres(x)\otimes_{\kres(s)}\kres(y)\to\kres(z)$ and so a morphism $\Spec(\kres(z))\to P$; $\beta(z)$ will be the image of $z$ in $P_0$ under this morphism.
+The verification of the fact that $\alpha\circ\beta$ and $\beta\circ\alpha$ are the identity maps follows from \hyperref[env-1.2.4.5]{(2.4.5)} and the definition of the product \hyperref[defn-1.3.2.1]{(3.2.1)}.
+Finally, we know that $P_0$ is in bijective correspondence with the set of \unsure{types of extensions composed of $\kres(x)$ and $\kres(y)$} (Bourbaki, \emph{Alg.}, chap.~VIII, §8, prop.~1).
 \end{proof}
 
 \section{Subpreschemes and immersion morphisms}
@@ -3074,7 +3083,7 @@ It follows immediately from this definition and Proposition \hyperref[prop-1.4.1
 that the closed subpreschemes of $X$ are in canonical {\it bijective correspondence} with the
 quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$, since if two such sheaves
 $\sh{J}$, $\sh{J}'$ have the same (closed) support $Y$ and if the restrictions of
-$\OO_X/\sh{J}$ and $\OO_X/\sh{J}'$ to $Y$ are identical, then we have $\sh{J}'=\sh{J}$.
+$\OO_X/\sh{J}$ and $\OO_X/\sh{J}'$ to $Y$ are \unsure{identical/the identity}, then we have $\sh{J}'=\sh{J}$.
 
 \begin{env}[4.1.4]
 \label{env-1.4.1.4}
