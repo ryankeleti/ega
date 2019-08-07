@@ -27,7 +27,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms
-    + [ ] 3. Products of preschemes (@thosgood)
+    + [x] 3. Products of preschemes
     + [ ] 4. Subpreschemes and immersions
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
@@ -50,6 +50,7 @@ Here is the current status of the translation, along with who is currently worki
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
 - an excellent reference for math terms in French [here](http://www-users.math.umn.edu/~kwlan/documents/french-glossary.pdf)
 - another reference for math terms in French [here](https://ensiwiki.ensimag.fr/index.php?title=Lexique_scientifique_fran%C3%A7ais-anglais)
+- some chapters (I think just V and VI) have already been translated: [check here](https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/pubtexts.php)
 
 ## LaTeX conventions
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
