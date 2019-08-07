@@ -3151,6 +3151,34 @@ If $A$ is a ring, and $S$ a multiplicative set of $A$, then the canonical morphi
 In fact, this morphism is a monomorphism \hyperref[exm-1.1.6.2]{(1.6.2)}.
 \end{proof}
 
+\begin{cor}[3.5.10]
+\label{cor-1.3.5.10}
+Let $f\colon X\to Y$ be a \unsure{radical} morphism, $g\colon Y'\to Y$ a morphism, and $X'=X_{(Y')}=X\times_Y Y'$.
+Then the \unsure{radical} morphism $f_{(Y')}$ \hyperref[prop-1.3.5.7]{(3.5.7~(ii))} is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
+\end{cor}
+
+\begin{proof}
+\label{proof-cor-1.3.5.10}
+The first claim follows from \hyperref[prop-1.3.5.8]{(3.5.8)} and \hyperref[cor-1.3.4.8]{(3.4.8)}; the second, from the commutativity of the following diagram:
+\begin{equation*}
+    \begin{tikzcd}
+        X'(K) \ar[r] \ar[d]
+        & Y'(K) \ar[d]\\
+        X(K) \ar[r]
+        & Y(K)
+    \end{tikzcd}
+\end{equation*}
+\end{proof}
+
+\begin{rmk}[3.5.11]
+\label{rmk-1.3.5.11}
+We say that a morphism $f=(\psi,\theta)$ of preschemes is \emph{injective} if the map $\psi$ is injective.
+For a morphism $f=(\psi,\theta)\colon X\to Y$ to be \unsure{radical}, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}\colon X_{(Y')}\to Y'$ be injective (which justifies the terminology of a \emph{universally injective} morphism).
+In fact, the condition is necessary by \hyperref[prop-1.3.5.7]{(3.5.7),~(ii)} and \hyperref[prop-1.3.5.8]{(3.5.8)}.
+Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x\colon\kres(\psi(x))\to\kres(x)$ were not \unsure{radical}, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \hyperref[prop-1.3.5.8]{(3.5.8)}.
+But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X_{(Y')}$ \hyperref[env-1.3.3.14]{(3.3.14)}, which contradicts the hypothesis that $f_{(Y')}$ is injective.
+\end{rmk}
+
 \section{Subpreschemes and immersion morphisms}
 \label{section-subpreschemes-and-immersion-morphisms}
 
