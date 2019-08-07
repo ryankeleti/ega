@@ -1,8 +1,6 @@
 # EGA
 
 amateur translation (French to English) of A. Grothendieck's EGA, starting with EGA I.
-
-amateur translation (French to English) of A. Grothendieck's EGA I.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 to compile, `make book`, `make pdfs`, or `make all`.
