@@ -9,6 +9,7 @@ click [here](https://ryankeleti.github.io/ega/book.pdf) for a copy of the compil
 
 ## todo
 
+- check for any `\unsure` commands in the source
 - when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
 - reference for section titles [this](https://stacky.net/wiki/index.php?title=EGA_contents)
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
