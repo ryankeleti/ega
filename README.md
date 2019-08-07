@@ -1,6 +1,6 @@
-# ega
+# EGA I
 
-amateur translation (French to English) of A. Grothendieck's EGA.
+amateur translation (French to English) of A. Grothendieck's EGA I.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 to compile, `make book`, `make pdfs`, or `make all`.
@@ -8,15 +8,6 @@ to compile, `make book`, `make pdfs`, or `make all`.
 please do not commit PDF files, instead put `book.pdf` in the `build` release.
 
 click [here](https://github.com/ryankeleti/ega/releases/download/build/book.pdf) for a copy of the compiled version.
-
-## todo
-
-- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
-- reference for section titles [this](https://stacky.net/wiki/index.php?title=EGA_contents)
-- the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
-- an excellent reference for math terms in French [here](http://www-users.math.umn.edu/~kwlan/documents/french-glossary.pdf)
-- another reference for math terms in French [here](https://ensiwiki.ensimag.fr/index.php?title=Lexique_scientifique_fran%C3%A7ais-anglais)
-- web version? work in progress
 
 ## current status
 
@@ -36,14 +27,27 @@ Here is the current status of the translation, along with the main contributors 
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms (@thosgood)
-    + [ ] 3. Products of preschemes
+    + [ ] 3. Products of preschemes (@thosgood)
     + [ ] 4. Subpreschemes and immersions
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
     + [ ] 7. Rational maps
     + [x] 8. Chevalley schemes (@thosgood)
-    + [ ] 9. Supplement on quasi-coherent sheaves (@thosgood)
+    + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
     + [ ] 10. Formal schemes
+
+## todo
+
+- check for any `\unsure` commands in the source
+- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
+- reference for section titles [this](https://stacky.net/wiki/index.php?title=EGA_contents)
+- web version? work in progress
+
+## resources for contributors
+
+- the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
+- an excellent reference for math terms in French [here](http://www-users.math.umn.edu/~kwlan/documents/french-glossary.pdf)
+- another reference for math terms in French [here](https://ensiwiki.ensimag.fr/index.php?title=Lexique_scientifique_fran%C3%A7ais-anglais)
 
 ## LaTeX conventions
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
