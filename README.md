@@ -38,6 +38,7 @@ Here is the current status of the translation, along with who is currently worki
 
 ## todo
 
+- hyperref links to equations (e.g. 3.3.9.1)
 - check for any `\unsure` commands in the source
 - check that all `hyperref` references are found
 - when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)

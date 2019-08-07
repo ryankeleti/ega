@@ -3159,7 +3159,7 @@ Then the \unsure{radical} morphism $f_{(Y')}$ \hyperref[prop-1.3.5.7]{(3.5.7~(ii
 
 \begin{proof}
 \label{proof-cor-1.3.5.10}
-The first claim follows from \hyperref[prop-1.3.5.8]{(3.5.8)} and \hyperref[cor-1.3.4.8]{(3.4.8)}; the second, from the commutativity of the following diagram:
+The first claim follows from \hyperref[prop-1.3.5.8]{(3.5.8)} and \hyperref[cor-1.3.4.8]{(3.4.8)}; the second, from the commutativity of the following diagram:\oldpage{117}
 \begin{equation*}
     \begin{tikzcd}
         X'(K) \ar[r] \ar[d]
@@ -3178,6 +3178,73 @@ In fact, the condition is necessary by \hyperref[prop-1.3.5.7]{(3.5.7),~(ii)} an
 Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x\colon\kres(\psi(x))\to\kres(x)$ were not \unsure{radical}, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \hyperref[prop-1.3.5.8]{(3.5.8)}.
 But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X_{(Y')}$ \hyperref[env-1.3.3.14]{(3.3.14)}, which contradicts the hypothesis that $f_{(Y')}$ is injective.
 \end{rmk}
+
+\subsection{Fibres}
+\label{subsection-fibres}
+
+\begin{prop}[3.6.1]
+\label{prop-1.3.6.1}
+Let $f\colon X\to Y$ be a morphism, $y$ a point of $Y$, and $\mathfrak{a}_y$ a \unsure{defining ideal} of $\OO_y$ for the $\mathfrak{m}_y$-preadic topology.
+The projection $p\colon X\times_Y\Spec(\OO_y/\mathfrak{a}_y)\to X$ is a homeomorphism from the underlying space of the prescheme $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ to the fibre $f^{-1}(y)$ equipped with the topology induced from that of the underlying space of $X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-1.3.6.1}
+Since $\Spec(\OO_y/\mathfrak{a}_y)\to Y$ is \unsure{radical} (\hyperref[defn-1.3.5.4]{3.5.4} and \hyperref[cor-1.2.4.7]{2.4.7}), $\Spec(\OO_y/\mathfrak{a}_y)$ is \unsure{reduced at a single point}, and the ideal $\mathfrak{m}_y/\mathfrak{a}_y$ is nilpotent by hypothesis \hyperref[cor-1.1.1.12]{(1.1.12)}, we already know (\hyperref[cor-1.3.5.10]{3.5.10} and \hyperref[cor-1.3.3.4]{3.3.4}) that $p$ identifies, as \emph{sets}, the underlying space of $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ with $f^{-1}(y)$; everything boils down to proving that $p$ is a homeomorphism.
+By \hyperref[cor-1.3.2.7]{(3.2.7)}, the question is local on $X$ and $Y$, and so we can suppose that $X=\Spec(B)$ and $Y=\Spec(A)$, with $B$ being an $A$-algebra.
+The morphism $p$ then corresponds to the homomorphism $1\otimes\vphi\colon B\to B\otimes_A A'$, where $A'=A_y/\mathfrak{a}_y$ and $\vphi$ is the canonical map from $A$ to $A'$.
+Then every element of $B\otimes_A A'$ can be written as
+\begin{equation*}
+    \sum_i b_i\otimes\vphi(a_i)/\vphi(s) = \left(\sum_i(a_ib_i\otimes1)\right)(1\otimes\vphi(s))^{-1},
+\end{equation*}
+where $s\not\in\mathfrak{j}_y$, and prop.~\hyperref[cor-1.1.2.4]{(1.2.4)} applies.
+\end{proof}
+
+\begin{env}[3.6.2]
+\label{env-1.3.6.2}
+Throughout the rest of this treatise, whenever we consider a fibre $f^{-1}(y)$ of a morphism as having the structure of a $\kres(y)$-prescheme, \emph{it will always be the prescheme obtained by transporting the structure of $X\times_Y\Spec(\kres(y))$ by the projection to $X$}.
+We will also write this (latter) product as $X\times_Y\kres(y)$, or $X\otimes_{\OO_Y}\kres(y)$; more generally, if $B$ is an $\OO_y$-algebra, we will denote by $X\times_Y B$ or $X\otimes_{\OO_Y}B$ the product $X\times_Y\Spec(B)$.
+\end{env}
+
+With the preceding convention, it follows from \hyperref[cor-1.3.5.10]{(3.5.10)} that the points of $X$ with values in an extension $K$ of $\kres(y)$ are identified with the \emph{points of $f^{-1}(y)$ with values in $K$}.
+
+\begin{env}[3.6.3]
+\label{env-1.3.6.3}
+Let $f\colon X\to Y$ and $g\colon Y\to Z$ be two morphisms, and $h=g\circ f$ their composition; for all $z\in Z$, the fibre $h^{-1}(z)$ is a prescheme isomorphic to
+\begin{equation*}
+    X\times_Z\Spec(\kres(z)) = (X\times_Y Y)\times_Z\Spec(\kres(z)) = X\times_Y g^{-1}(z).
+\end{equation*}
+In\oldpage{118} particular, if $U$ is an open subset of $X$, then the prescheme induced on $U\cap f^{-1}(y)$ by the prescheme $f^{-1}(y)$ is isomorphic to $f^{-1}_U(y)$ ($f_U$ being the restriction of $f$ to $U$),
+\end{env}
+
+\begin{prop}[3.6.4]
+\label{prop-1.3.6.4}
+\emph{(Transitivity of fibres)}
+Let $f\colon X\to Y$ and $g\colon Y'\to Y$ be two morphisms; let $X'=X\times_Y Y'=X_{(Y')}$ and $f'=f_{(Y')}\colon X'\to Y'$.
+For every $y'\in Y'$, if we let $y=g(y')$, then the prescheme $f'^{-1}(y')$ is isomorphic to $f^{-1}(y)\otimes_{\kres(y)}\kres(y')$.
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-1.3.6.4}
+Indeed, it reduces to remarking that the two preschemes $(X\otimes_Y\kres(y))\otimes_{\kres(y)}\kres(y')$ and $(X\times_Y Y')\otimes_{Y'}\kres(y')$ are both canonically isomorphic to $X\times_Y\Spec(\kres(y'))$ by (3.3.9.1).
+\end{proof}
+
+In particular, if $V$ is an open neighbourhood of $y$ in $Y$, and we denote by $f_V$ the restriction of $f$ to the induced prescheme on $f^{-1}(V)$, then the preschemes $f^{-1}(y)$ and $f^{-1}_V(y)$ are canonically identified.
+
+\begin{prop}[3.6.5]
+\label{prop-1.3.6.5}
+Let $f\colon X\to Y$ be a morphism, $y$ a point of $Y$, $Z$ the local prescheme $\Spec(\OO_y)$, and $p=(\psi,\theta)$ the projection $X\times_Y Z\to X$; then $p$ is a homeomorphism from the underlying space of $X\times_Y Z$ to the subspace $f^{-1}(Z)$ of $X$ (\emph{when the underlying space of $Z$ is identified with a subspace of $Y$, cf.~\hyperref[prop-1.2.4.2]{(2.4.2)}}), and, for all $t\in X\times_Y Z$, letting $z=\psi(t)$, $\theta_t^\#$ is an isomorphism from $\OO_x$ to $\OO_t$.
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-1.3.6.5}
+Since $Z$ (identified as a subspace of $Y$) is contained inside every open affine containing $y$ \hyperref[prop-1.2.4.2]{(2.4.2)}, we can, as in \hyperref[prop-1.3.6.1]{(3.6.1)}, reduce to the case where $X=\Spec(A)$ and $Y=\Spec(B)$ are affine schemes, with $A$ being a $B$-algebra.
+Then $X\times_Y Z$ is the prime spectrum of $A\otimes_B B_y$, and this ring is canonically identified with $S^{-1}A$, where $S$ is the image of $B\setminus\mathfrak{j}_y$ in $A$ \hyperref[env-0.1.5.2]{(\textbf{0},~1.5.2)}; since $p$ then corresponds to the canonical homomorphism $A\to S^{-1}A$, the proposition follows from \hyperref[exm-1.1.6.2]{(1.6.2)}.
+\end{proof}
+
+\subsection{Application: reduction of a prescheme modulo $\mathfrak{J}$}
+
+\emph{This section, which makes use of notions and results from chap.~I and chap.~II, will not be used in the following, and is only intended for readers familiar with classical algebraic geometry.}
 
 \section{Subpreschemes and immersion morphisms}
 \label{section-subpreschemes-and-immersion-morphisms}
@@ -3319,7 +3386,6 @@ preschemes \hyperref[defn-1.2.2.1]{(2.2.1)}, and we call this the
 If $f:X\to Z$ is a morphism, we then say that the composite morphism
 $Y\xrightarrow{j}X\xrightarrow{f}Z$ is the {\it restriction} of $f$ to the subprescheme $Y$.
 \end{env}
-
 
 
 \section{Reduced preschemes; separation conditions}
