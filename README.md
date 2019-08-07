@@ -1,6 +1,7 @@
 # EGA
 
 amateur translation (French to English) of A. Grothendieck's EGA, starting with EGA I.
+
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 to compile, `make book`, `make pdfs`, or `make all`.
@@ -27,7 +28,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms (@thosgood)
-    + [ ] 3. Products of preschemes (@thosgood, @ryankeleti)
+    + [x] 3. Products of preschemes (@thosgood, @ryankeleti)
     + [ ] 4. Subpreschemes and immersions (@thosgood)
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
