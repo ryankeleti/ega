@@ -5,7 +5,9 @@ S’il-vous plaît pardonnez-nous, Grothendieck.
 
 to compile, `make book`, `make pdfs`, or `make all`.
 
-click [here](https://ryankeleti.github.io/ega/book.pdf) for a copy of the compiled version.
+please do not commit PDF files, instead put `book.pdf` in the `build` release.
+
+click [here](https://github.com/ryankeleti/ega/releases/download/build/book.pdf) for a copy of the compiled version.
 
 ## current status
 

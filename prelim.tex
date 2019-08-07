@@ -4116,8 +4116,8 @@ and finally $\mathfrak{J}_m=\mathfrak{J}_m'$.
 
 \begin{cor}[7.2.8]
 \label{cor-0.7.2.8}
-Under the conditions of \hyperref[prop-0.7.2.7]{(7.2.7)}, for $A$ to be Noetherian, it is
-necessary and sufficient that $A_0$ is.
+Under the conditions of Proposition \hyperref[prop-0.7.2.7]{(7.2.7)}, for $A$ to
+be Noetherian, it is necessary and sufficient that $A_0$ is.
 \end{cor}
 
 \begin{proof}
@@ -4459,11 +4459,238 @@ follows from the remark after Definition \hyperref[defn-0.7.4.1]{(7.4.1)}.
 
 \begin{env}[7.4.4]
 \label{env-0.7.4.4}
-The case of the
+The most important case of Proposition \hyperref[prop-0.7.4.2]{(7.4.2)} is when $B$ is a
+quasi-finite $A$-module, i.e., $B/\mathfrak{m}B$ is an {\it algebra of finite rank over
+$k=A/\mathfrak{m}$}; furthermore, this condition can be broken down into the combination
+of the following:
+\begin{itemize}
+  \item[(i)] {\it $\mathfrak{m}B$ is an ideal of definition for $B$};
+  \item[(ii)] {\it $B/\mathfrak{n}$ is an extension of finite rank of the field
+              $A/\mathfrak{m}$}.
+\end{itemize}
+When this is so, every $B$-module of finite type is evidently a quasi-finite $A$-module.
 \end{env}
+
+\begin{cor}[7.4.5]
+\label{cor-0.7.4.5}
+Under the hypotheses of Proposition \hyperref[prop-0.7.4.2]{(7.4.2)}, if
+$\mathfrak{b}$ is the annihilator of the $B$-module $M$, then $B/\mathfrak{b}$ is a
+quasi-finite $A$-module.
+\end{cor}
+
+\begin{proof}
+\label{proof-cor-0.7.4.5}
+Suppose $M\neq 0$ (otherwise the corollary is evident). We can consider $M$ as a
+module over the local Noetherian ring $B/\mathfrak{b}$; its annihilator then being
+reduced to $0$, the proof of Proposition \hyperref[prop-0.7.4.2]{(7.4.2)} shows
+that $\mathfrak{m}(B/\mathfrak{b})$ is an ideal of definition for $B/\mathfrak{b}$.
+On the other hand, $M/\mathfrak{n}M$ is a vector space of finite rank over
+$A/\mathfrak{m}$, being a quotient of $M/\mathfrak{m}M$, which is by hypothesis of
+finite rank over $A/\mathfrak{m}$; as $M\neq 0$, we have $M\neq\mathfrak{n}M$ by
+virtue of Nakayama's Lemma; as $M/\mathfrak{n}M$ is a vector space $\neq 0$ over
+$B/\mathfrak{n}$, the fact that it is of finite rank over $A/\mathfrak{m}$ implies
+that $B/\mathfrak{n}$ is also of finite rank over $A/\mathfrak{m}$; the conclusion
+follows from \hyperref[env-0.7.4.4]{(7.4.4)} applied to the ring $B/\mathfrak{b}$.
+\end{proof}
 
 \subsection{Rings of restricted formal series}
 \label{subsection-rings-of-restricted-formal-series}
+
+\begin{env}[7.5.1]
+\label{env-0.7.5.1}
+Let $A$ be a topological ring, linearly topologized, separated and complete; let
+$(\mathfrak{J}_\lambda)$ be a fundamental system of neighborhoods of $0$ in $A$
+consisting of (open) ideals, such that $A$ canonically identifies with
+$\varprojlim A/\mathfrak{J}_\lambda$ \hyperref[env-0.7.2.1]{(7.2.1)}. For each
+$\lambda$, let $B_\lambda=(A/\mathfrak{J}_\lambda)[T_1,\dots,T_r]$, where the
+$T_i$ are indeterminates; it is clear that the $B_\lambda$ form a projective system
+of discrete rings. We set $\varprojlim B_\lambda=A\{T_1,\dots,T_r\}$, and we will
+see that this topological ring is independent of the fundamental system of ideals
+$(\mathfrak{J}_\lambda)$ considered. More precisely, let $A'$ be the subring of the
+ring of formal series $A[\![T_1,\dots,T_r]\!]$ consisting of formal series
+$\sum_\alpha c_\alpha T^\alpha$ (with $\alpha=(\alpha_1,\dots,\alpha_r)\in\bb{N}^r$)
+such that $\lim c_\alpha=0$ (according to the filter by compliments of finite subsets
+of $\bb{N}^r$); we say that these series are the {\it restricted} formal series in the
+$T_i$, with coefficients in $A$.
+\oldpage{70}
+For each neighborhood $V$ of $0$ in $A$, let $V'$ be the set of
+$x=\sum_\alpha c_\alpha T^\alpha\in A'$ such that $c_\alpha\in V$ for all $\alpha$.
+We verify immediately that the $V'$ form a fundamental system of neighborhoods of $0$
+defining on $A'$ a {\it separated} ring topology; we will canonically define a
+{\it topological isomorphism} from the ring $A\{T_1,\dots,T_r\}$ to $A'$. For each
+$\alpha\in\bb{N}^r$ and each $\lambda$, let $\vphi_{\lambda,\alpha}$ be the map from
+$(A/\mathfrak{J}_\lambda)[T_1,\dots,T_r]$ to $A/\mathfrak{J}\lambda$ which sends each
+polynomial in the first ring to coefficient of $T^\alpha$ in that polynomial. It is
+clear that the $\vphi_{\lambda,\alpha}$ form a projective system of homomorphisms of
+$(A/\mathfrak{J}_\lambda)$-modules, so their projective limit is a continuous
+homomorphism $\vphi_\alpha:A\{T_1,\dots,T_r\}\to A$; we will see that, for each
+$y\in A\{T_1,\dots,T_r\}$, the formal series $\sum_\alpha\vphi_\alpha(y)T^\alpha$ is
+{\it restricted}. Indeed, if $y_\lambda$ is the component of $y$ in $B_\lambda$, and
+if we denote by $H_\lambda$ the finite set of the $\alpha\in\bb{N}^r$ for which the
+coefficients of the polynomial $y_\lambda$ are nonzero, then we have
+$\vphi_{\lambda,\alpha}(y_\mu)\in\mathfrak{J}_\lambda$ for
+$\mathfrak{J}_\mu\subset\mathfrak{J}_\lambda$ and $\alpha\not\in H_\lambda$, and by
+passing to the limit, $\vphi_\alpha(y)\in\mathfrak{J}_\lambda$ for
+$\alpha\not\in H_\lambda$. We thus define a ring homomorphism
+$\vphi:A\{T_1,\dots,T_r\}\to A'$ by setting
+$\vphi(y)=\sum_\alpha\vphi_\alpha(y)T^\alpha$, and it is immediate that $\vphi$ is
+continuous. Conversely, if $\theta_\lambda$ is the canonical homomorphism
+$A\to A/\mathfrak{J}_\lambda$, then for each element
+$z=\sum_\alpha c_\alpha T^\alpha\in A'$ and each $\lambda$, there are only a finite
+number of indices $\alpha$ such that $\theta_\lambda(c_\alpha)\neq 0$, and as a
+result $\psi_\lambda(z)=\sum_\alpha\theta_\lambda(c_\alpha)T^\alpha$ is in
+$B_\lambda$; the $\psi_\lambda$ are continuous and form a projective system of
+homomorphisms whose projective limit is a continuous homomorphism
+$\psi:A'\to A\{T_1,\dots,T_r\}$; is remains to verify that $\vphi\circ\psi$ and
+$\psi\circ\vphi$ are the identity automorphisms, which is immediate.
+\end{env}
+
+\begin{env}[7.5.2]
+\label{env-0.7.5.2}
+We identify $A\{T_1,\dots,T_r\}$ with the ring $A'$ of restricted formal series by
+means of the isomorphisms defined in \hyperref[env-0.7.5.1]{(7.5.1)}. The canonical
+isomorphisms
+\[
+  ((A/\mathfrak{J}_\lambda)[T_1,\dots,T_r])[T_{r+1},\dots,T_s]
+  \isoto(A/\mathfrak{J}_\lambda)[T_1,\dots,T_s]
+\]
+define, by passing to the projective limit, a canonical isomorphism
+\[
+  (A\{T_1,\dots,T_r\})\{T_{r+1},\dots,T_s\}
+  \isoto A\{T_1,\dots,T_s\}.
+\]
+\end{env}
+
+\begin{env}[7.5.3]
+\label{env-0.7.5.3}
+For every continuous homomorphism $u:A\to B$ from $A$ to a linearly topologized ring
+$B$, separated and complete, and each system $(b_1,\dots,b_r)$ of $r$ elements of $B$,
+there exists {\it a unique continuous homomorphism $\overline{u}:A\{T_1,\dots,T_r\}\to B$},
+such that $\overline{u}(a)=u(a)$ for all $a\in A$ and $\overline{u}(T_j)=b_j$ for
+$1\leqslant j\leqslant r$. It suffices to set
+\[
+  \overline{u}\big(\sum_\alpha c_\alpha T^\alpha\big)
+  =\sum_\alpha u(c_\alpha)b_1^{\alpha_1}\cdots b_r^{\alpha_r};
+\]
+the verification of the fact that the family $(u(c_\alpha)b_1^{\alpha_1}\cdots b_r^{\alpha_r})$
+is summable in $B$ and that $\overline{u}$ is continuous are immediate and left to the
+reader. We note that this property (for arbitrary $B$ and $b_j$) {\it characterize} the
+topological ring $A\{T_1,\dots,T_r\}$ up to unique isomorphism.
+\end{env}
+
+\begin{prop}[7.5.4]
+\label{prop-0.7.5.4}
+\medskip\noindent
+\begin{itemize}
+  \item[{\rm(i)}] If $A$ is an admissible ring, then so is $A'=A\{T_1,\dots,T_r\}$.
+  \item[{\rm(ii)}] Let $A$ be an adic ring, $\mathfrak{J}$ an ideal of definition for
+    $A$ such that $\mathfrak{J}/\mathfrak{J}^2$ is of finite type
+\oldpage{71}
+    over $A/\mathfrak{J}$. If we set $\mathfrak{J}'=\mathfrak{J}A'$, then $A'$ is also a
+    $\mathfrak{J}'$-adic ring, and $\mathfrak{J}'/{\mathfrak{J}'}^2$ is of finite type over
+    $A'/\mathfrak{J}'$. If in addition $A$ is Noetherian, then so is $A'$.
+\end{itemize}
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-0.7.5.4}
+\medskip\noindent
+\begin{itemize}
+  \item[(i)] If $\mathfrak{J}$ is an ideal of $A$, $\mathfrak{J}'$ the ideal of $A'$
+    consisting of the $\sum_\alpha c_\alpha T^\alpha$ such that $c_\alpha\in\mathfrak{J}$
+    for all $\alpha$, then $(\mathfrak{J}')^n\subset(\mathfrak{J}^n)'$; if $\mathfrak{J}$
+    is an ideal of definition for $A$, then $\mathfrak{J}'$ is also an ideal of definition
+    for $A'$.
+  \item[(ii)] Set $A_i=A/\mathfrak{J}^{i+1}$, and for $i\leqslant j$, let $u_{ij}$ be the
+    canonical homomorphism $A/\mathfrak{J}^{j+1}\to A/\mathfrak{J}^{i+1}$; set
+    $A_i'=A_i[T_1,\dots,T_r]$, and let $u_{ij}'$ be the homomorphism $A_j'\to A_i'$
+    ($i\leqslant j$) obtained by applying $u_{ij}$ to the coefficients of the polynomials
+    in $A_j'$. We will show that the projective system $(A_i',u_{ij}')$ satisfies the conditions
+    of Proposition \hyperref[prop-0.7.2.7]{(7.2.7)}; as $\mathfrak{J}'$ is the kernel of
+    $A'\to A_0'$, this proves the first assertion of (ii). It is clear that the $u_{ij}'$ are
+    surjective; the kernel $\mathfrak{J}_i'$ of $u_{0i}$ is the set of polynomials in
+    $A_i[T_1,\dots,T_r]$ whose coefficients are in $\mathfrak{J}/\mathfrak{J}^{i+1}$; in
+    particular, $\mathfrak{J}_1'$ is the set of polynomials in $A_1[T_1,\dots,T_r]$ whose
+    coefficients are in $\mathfrak{J}/\mathfrak{J}^2$. As $\mathfrak{J}/\mathfrak{J}^2$ is
+    of finite type over $A_1=A/\mathfrak{J}^2$, we see that $\mathfrak{J}_1'/{\mathfrak{J}_1'}^2$
+    is a module of finite type over $A_1'$ (or equivalently, over $A_0'=A_1'/\mathfrak{J}_1'$).
+    We will now show that the kernel of $u_{ij}$ is ${\mathfrak{J}_j'}^{i+1}$. It is evident that
+    ${\mathfrak{J}_j'}^{i+1}$ is contained in this kernel. On the other hand, let $a_1,\dots,a_m$
+    be the elements of $\mathfrak{J}$ whose classes mod $\mathfrak{J}^2$ generate
+    $\mathfrak{J}/\mathfrak{J}^2$; we verify immediately that the classes mod $\mathfrak{J}^{j+1}$
+    of monomials of degree $\leqslant j$ in the $a_k$ ($1\leqslant k\leqslant m$) generate
+    $\mathfrak{J}/\mathfrak{J}^{j+1}$, and the classes of monomials of degree $>i$ and
+    $\leqslant j$ generate $\mathfrak{J}^{i+1}/\mathfrak{J}^{j+1}$; a monomial in the $T_k$
+    having such an element for a coefficient is thus a product of $i+1$ elements of
+    $\mathfrak{J}_i'$, which establishes our assertion. Finally, if $A$ is Noetherian, then so
+    is $A'/\mathfrak{J}'=(A/\mathfrak{J})[T_1,\dots,T_r]$, hence $A'$ is Notherian
+    \hyperref[cor-0.7.2.8]{(7.2.8)}.
+\end{itemize}
+\end{proof}
+
+\begin{prop}[7.5.5]
+\label{prop-0.7.5.5}
+Let $A$ be a Notherian $\mathfrak{J}$-adic ring, $B$ an admissible topological ring,
+$\vphi:A\to B$ a continuous homomorphism, making $B$ and $A$-algebra. The following
+conditions are equivalent:
+\begin{itemize}
+  \item[{\rm(a)}] $B$ is Noetherian and $\mathfrak{J}B$-adic, and $B/\mathfrak{J}B$ is an
+    algebra of finite type over $A/\mathfrak{J}$.
+  \item[{\rm(b)}] $B$ is topologically $A$-isomorphic to $\varprojlim B_n$, where
+    $B_n=B_m/\mathfrak{J}^{n+1}B_m$ for $m\geqslant n$, and $B_1$ is an algebra of finite
+    type over $A_1=A/\mathfrak{J}^2$.
+  \item[{\rm(c)}] $B$ is topologically $A$-isomorphic to a quotient of an algebra of the form
+    $A\{T_1,\dots,T_r\}$ by an ideal (necessarily closed according to
+    Corollary \hyperref[cor-0.7.3.6]{(7.3.6)} and Proposition \hyperref[prop-0.7.5.4]{(7.5.4, ii)}).
+\end{itemize}
+\end{prop}
+
+\begin{proof}
+\label{proof-prop-0.7.5.5}
+As $A$ is Noetherian, so is $A'=A\{T_1,\dots,T_r\}$ \hyperref[prop-0.7.5.4]{(7.5.4)}, so
+(c) implies that $B$ is Noetherian; as $\mathfrak{J}'=\mathfrak{J}A'$ is an open neighborhood
+of $0$ in $A'$ such that the ${\mathfrak{J}'}^n$ form a fundamental system of neighborhoods of
+$0$, the images $\mathfrak{J}^n B$ of the ${\mathfrak{J}'}^n$ form a fundamental system of
+neighborhoods of $0$ in $B$, and as $B$ is separated and complete, $B$ is a $\mathfrak{J}B$-adic
+ring. Finally, $B/\mathfrak{J}B$ is an algebra (over $(A/\mathfrak{J}$) quotient of
+$A'/\mathfrak{J}A'=(A/\mathfrak{J})[T_1,\dots,T_r]$, so it is of finite type, which proves that
+(c) implies (a).
+
+If $B$ is $\mathfrak{J}B$-adic and Noetherian, then $B$ is isomorphic to $\varprojlim B_n$, where
+$B_n=B/\mathfrak{J}^{n+1}B$ \hyperref[rmk-0.7.2.11]{(7.2.11)}, and $\mathfrak{J}B/\mathfrak{J}^2 B$
+is a module of finite type over $B/\mathfrak{J}B$. Let $(a_j)_{1\leqslant j\leqslant s}$ be a
+system of generators for the $(B/\mathfrak{J}B)$-module $\mathfrak{J}B/\mathfrak{J}^2 B$, and let
+$(c_i)_{1\leqslant i\leqslant r}$ be a system of elements of $B/\mathfrak{J}^2 B$ such that the
+classes
+\oldpage{72}
+mod $\mathfrak{J}B/\mathfrak{J}^2 B$ form a system of generators for the $(A/\mathfrak{J})$-algebra
+$B/\mathfrak{J}B$; we see immediately that the $c_i a_j$ form a system of generators for the
+$(A/\mathfrak{J}^2)$-algebra $B/\mathfrak{J}^2 B$, hence (a) implies (b).
+
+It remains to prove that (b) implies (c). The hypotheses imply that $B_1$ is a Noetherian ring, and
+as $B_1=B_2/\mathfrak{J}^2 B_2$, we have $\mathfrak{J}^2 B_1=0$, hence
+$\mathfrak{J}B_1=\mathfrak{J}B_1/\mathfrak{J}^2 B_1$ is a $B_0$-module of finite type. The
+conditions of Proposition \hyperref[prop-0.7.2.7]{(7.2.7)} are thus satisfied by the projective
+system $(B_n)$ and $B$ is a $\mathfrak{J}B$-adic ring. Let $(c_i)_{1\leqslant i\leqslant r}$ be a
+finite system of elements of $B$ whose classes mod $\mathfrak{J}B$ generate the
+$(A/\mathfrak{J})$-algebra $B/\mathfrak{J}B$, and whose linear combinations with coefficients in
+$\mathfrak{J}$ are such that their classes mod $\mathfrak{J}^2 B$ generate the $B_0$-module
+$\mathfrak{J}B/\mathfrak{J}^2 B$. There exists a continuous $A$-homomorphism $u$ from
+$A'=A\{T_1,\dots,T_r\}$ to $B$ which reduces to $\vphi$ on $A$ and is such that $u(T_i)=c_i$ for
+$1\leqslant i\leqslant r$ \hyperref[env-0.7.5.3]{(7.5.3)}; if we prove that $u$ is {\it surjective},
+then (c) will be establshed, since from $u(A')=B$ we deduce that
+$u(\mathfrak{J}^n A')=\mathfrak{J}^n B$, in other words that $u$ is a strict morphism of topological
+rings and $B$ is this isomorphic to a quotient of $A'$ by a closed ideal. As $B$ is complete for the
+$\mathfrak{J}B$-adic topology, it suffices (\cite[p.~18--07]{I-1}) to show that the homomorphism
+$\grad(A')\to\grad(B)$, induced canonically by $u$ for the $\mathfrak{J}$-adic filtrations on
+$A'$ and $B$, is surjective. But by definition, the homomorphisms
+$A'/\mathfrak{J}A'\to B/\mathfrak{J}B$ and
+$\mathfrak{J}A'/\mathfrak{J}^2 A'\to\mathfrak{J}B/\mathfrak{J}^2 B$ induced by $u$ are surjective;
+by induction on $n$, we immediately deduce that so is
+$\mathfrak{J}A'/\mathfrak{J}^n A'\to\mathfrak{J}B/\mathfrak{J}^n B$, and {\it a fortiori} so is
+$\mathfrak{J}^n A'/\mathfrak{J}^{n+1}A'\to\mathfrak{J}^n B/\mathfrak{J}^{n+1}B$, which finishes the
+proof.
+\end{proof}
 
 \subsection{Completed rings of fractions}
 \label{subsection-completed-rings-of-fractions}
