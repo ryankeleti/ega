@@ -1,6 +1,6 @@
-# EGA I
+# EGA
 
-amateur translation (French to English) of A. Grothendieck's EGA I.
+amateur translation (French to English) of A. Grothendieck's EGA, starting with EGA I.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 to compile, `make book`, `make pdfs`, or `make all`.
@@ -26,8 +26,8 @@ Here is the current status of the translation, along with who is currently worki
 - [ ] The language of schemes
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
-    + [x] 2. Preschemes and their morphisms
-    + [x] 3. Products of preschemes (@thosgood)
+    + [x] 2. Preschemes and their morphisms (@thosgood)
+    + [ ] 3. Products of preschemes (@thosgood, @ryankeleti)
     + [ ] 4. Subpreschemes and immersions (@thosgood)
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
@@ -55,7 +55,7 @@ Here is the current status of the translation, along with who is currently worki
 ## LaTeX conventions
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
 - `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
-- `\cat` for categories, e.g. `\cat{Set}` for the category of sets; use `\C` for a "default" category, and `\op` for the opposite category.
+- `\cat` for categories, e.g. `\cat{Set}` for the category of sets; use `\C` for a "default" category, and `\op` for the opposite category (`C^op => \C\op`).
 - `\dual` for the dual sheaf, e.g. `\dual{\sh{F}}` for `\sh{F}^\vee`.
 - `\isoto` for an isomorphism arrow.
 - `\emp` for the empty set.
