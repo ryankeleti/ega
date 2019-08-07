@@ -27,7 +27,7 @@ Here is the current status of the translation, along with the main contributors 
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms (@thosgood)
-    + [ ] 3. Products of preschemes
+    + [ ] 3. Products of preschemes (@thosgood)
     + [ ] 4. Subpreschemes and immersions
     + [ ] 5. Reduced preschemes; separation conditions
     + [ ] 6. Finiteness conditions
