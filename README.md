@@ -12,7 +12,7 @@ click [here](https://github.com/ryankeleti/ega/releases/download/build/book.pdf)
 
 ## current status
 
-Here is the current status of the translation, along with who is currently working on which sections
+Here is the current status of the translation, along with who is currently working on/has worked on which sections
 
 - [x] Introduction
 - [ ] Preliminaries
@@ -22,15 +22,30 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 4. Ringed spaces (@ryankeleti)
     + [x] 5. Quasi-coherent sheaves and coherent sheaves (@ryankeleti)
     + [x] 6. Flatness (@ryankeleti)
-    + [ ] 7. Adic rings
-    + [ ] 8. Representable functors
+    + [ ] 7. Adic rings (@ryankeleti)
+    + [ ] 8. Representable functors (@ryankeleti)
+    + [ ] 9. Constructible sets
+    + [ ] 10. Supplement on flat modules
+    + [ ] 11. Supplement on homological algebra
+    + [ ] 12. Supplement on sheaf cohomology
+    + [ ] 13. Projective limits in homological algebra
+    + [ ] 14. Combinatorial dimension of a topological space
+    + [ ] 15. M-regular and F-regular sequences
+    + [ ] 16. Dimension and depth of Noetherian local rings
+    + [ ] 17. Regular rings
+    + [ ] 18. Supplement on extensions of algebras
+    + [ ] 19. Formally smooth algebras and Cohen rings
+    + [ ] 20. Derivations and differentials
+    + [ ] 21. Differentials in rings of characteristic p
+    + [ ] 22. Differential criteria for smoothness and regularity
+    + [ ] 23. Japanese rings
 - [ ] The language of schemes
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms (@thosgood)
     + [x] 3. Products of preschemes (@thosgood, @ryankeleti)
     + [ ] 4. Subpreschemes and immersions
-    + [ ] 5. Reduced preschemes; separation conditions
+    + [ ] 5. Reduced preschemes; separation condition
     + [ ] 6. Finiteness conditions
     + [ ] 7. Rational maps (@thosgood)
     + [x] 8. Chevalley schemes (@thosgood)
@@ -65,6 +80,6 @@ Here is the current status of the translation, along with who is currently worki
 - `\vphi` for `\varphi`. This is due to the font configuration swapping `\varphi` and `\phi`; if you want to use a different font, you could change this.
 - `\HH` for cohomology.
 - `\leqslant`/`\geqslant` for ≤, ≥.
-- Use the operators defined in `preamble.tex`, such as `\Spec`, `\im`, `\shHom`, etc.
+- Use the operators defined in `preamble.tex`, such as `\Spec`, `\Im`, `\shHom`, etc.
 - Use `\oldpage{x}` to mark the original page number (x) at the current text position.
 
