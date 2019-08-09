@@ -720,24 +720,24 @@ In other words, if we denote by $(X)$ the underlying set of $X$, we see that we 
 
 \begin{cor}[3.4.8]
 \label{cor-1.3.4.8}
-Let $f\colon X\to Y$ be an $S$-morphism, $f_{(S')}\colon X_{(S')}\to Y_{(S')}$ the $S'$-morphism inferred from $f$ by an extension $S'\to S$ of the base prescheme.
+Let $f:X\to Y$ be an $S$-morphism, $f_{(S')}:X_{(S')}\to Y_{(S')}$ the $S'$-morphism inferred from $f$ by an extension $S'\to S$ of the base prescheme.
 Let $p$ ({\em resp. $q$}) be the projection $X_{(S')}\to X$ ({\em resp. $Y_{(S')}\to Y$}); for every subset $M$ of $X$, we have
-\begin{equation*}
+\[
     q^{-1}(f(M)) = f_{(S')}(p^{-1}(M)).
-\end{equation*}
+\]
 \end{cor}
 
 \begin{proof}
 \label{proof-cor-1.3.4.8}
 In\oldpage{114} fact \hyperref[cor-1.3.3.11]{(3.3.11)}, $X_{(S')}$ is identified with the product $X\times_Y Y_{(S')}$ thanks to the commutative diagram
-\begin{equation*}
+\[
     \begin{tikzcd}
         X \ar[d, swap, "f"]
         & X_{(S')} \ar[l, swap, "p"] \ar[d, "f_{(S')}"]\\
         Y
         & Y_{(S')} \ar[l, "q"]
     \end{tikzcd}
-\end{equation*}
+\]
 By \hyperref[prop-1.3.4.7]{(3.4.7)}, the relation $q(y')=p(x)$ for $x\in M$ and $y'\in Y_{(S)}$ is equivalent to the existence of some $x'\in X_{(S')}$ such that $p(x')=x$ and $f_{(S')}(x')=y'$, whence the corollary.
 \end{proof}
 
@@ -752,10 +752,10 @@ The set of points of $X\times_S Y$ with projections $x$ and $y$ is in bijective 
 \label{proof-prop-1.3.4.9}
 Let $p$ ({\em resp. $q$}) be the projection of $X\times_S Y$ into $X$ ({\em resp. $Y$}), and $E$ the subspace $p^{-1}(x)\cap q^{-1}(y)$ of the underlying space of $X\times_S Y$.
 First note that the morphisms $\Spec(\kres(x))\to S$ and $\Spec(\kres(y))\to S$ factorise as $\Spec(\kres(x))\to\Spec(\kres(s))\to S$ and $\Spec(\kres(y))\to\Spec(\kres(s))\to S$y since $\Spec(\kres(s))\to S$ is a monomorphism \hyperref[cor-1.2.4.7]{(2.4.7)}, it follows from \hyperref[prop-1.3.2.4]{(3.2.4)} that we have
-\begin{equation*}
+\[
     P = \Spec(\kres(x))\times_S\Spec(\kres(y)) = \Spec(\kres(x))\times_{\Spec(\kres(s))}\Spec(\kres(y)) = \Spec(\kres(x)\otimes_{\kres(s)}\kres(y)).
-\end{equation*}
-We will define two maps, $\alpha\colon P_0\to E$ and $\beta\colon E\to P_0$, inverse to one another (where $P_0$ denotes the underlying set of the prescheme $P$).
+\]
+We will define two maps, $\alpha:P_0\to E$ and $\beta:E\to P_0$, inverse to one another (where $P_0$ denotes the underlying set of the prescheme $P$).
 If $i\colon\Spec(\kres(x))\to X$ and $j\colon\Spec(\kres(y))\to Y$ are the canonical morphisms \hyperref[env-1.2.4.5]{(2.4.5)}, we take for $\alpha$ the map of underlying spaces corresponding to the morphism $i\times_S j$.
 On the other hand, every $z\in E$ defines by hypothesis two $\kres(s)$-monomorphisms, $\kres(x)\to\kres(z)$ and $\kres(y)\to\kres(z)$, and so a $\kres(s)$-monomorphism $\kres(x)\otimes_{\kres(s)}\kres(y)\to\kres(z)$ and so a morphism $\Spec(\kres(z))\to P$; $\beta(z)$ will be the image of $z$ in $P_0$ under this morphism.
 The verification of the fact that $\alpha\circ\beta$ and $\beta\circ\alpha$ are the identity maps follows from \hyperref[env-1.2.4.5]{(2.4.5)} and the definition of the product \hyperref[defn-1.3.2.1]{(3.2.1)}.
@@ -769,14 +769,14 @@ Finally, we know that $P_0$ is in bijective correspondence with the set of \unsu
 \label{env-1.3.5.1}
 In a general sense, consider a property $P$ of morphisms of preschemes, and the two following propositions:
 \begin{enumerate}[(i)]
-    \item If $f\colon X\to X'$ and $g\colon Y\to Y'$ are two $S$-morphism having property $P$, then $f\times_S g$ also has property $P$.
-    \item If $f\colon X\to Y$ is an $S$-morphisms having property $P$, then every $S'$-morphism $f_{(S')}\colon X_{(S')}\to Y_{(S')}$, inferred from $f$ by an extension of base preschemes, also has property $P$.
+    \item If $f:X\to X'$ and $g:Y\to Y'$ are two $S$-morphism having property $P$, then $f\times_S g$ also has property $P$.
+    \item If $f:X\to Y$ is an $S$-morphisms having property $P$, then every $S'$-morphism $f_{(S')}:X_{(S')}\to Y_{(S')}$, inferred from $f$ by an extension of base preschemes, also has property $P$.
 \end{enumerate}
 
 Since $f_{(S')}=f\times_S 1_{S'}$, we see that if, for every prescheme $X$, the {\em identity} $1_X$ has property $P$, then (i) implies (ii); since, on the other hand, $f\times_S g$ is the composed morphism
-\begin{equation*}
+\[
     X\times_S Y \xrightarrow{f\times1_Y} X'\times_S Y \xrightarrow{1_{X'}\times g} X'\times_S Y'
-\end{equation*}
+\]
 we see that if the {\em composition} of two morphisms has property $P$, then so too does the product $f\times_S g$, and so (ii) implies (i).
 \end{env}
 
@@ -784,8 +784,8 @@ A first application of this remark is
 \begin{prop}[3.5.2]
 \label{prop-1.3.5.2}
 \begin{enumerate}[(i)]
-    \item If $f\colon X\to X'$ and $g\colon Y\to Y'$ are two surjective $S$-morphisms, then $f\times_S g$ is surjective.
-    \item If $f\colon X\to Y$ is a surjective $S$-morphism, then $f_{(S')}$ is surjective for every extension $S'$ of the base prescheme.
+    \item If $f:X\to X'$ and $g:Y\to Y'$ are two surjective $S$-morphisms, then $f\times_S g$ is surjective.
+    \item If $f:X\to Y$ is a surjective $S$-morphism, then $f_{(S')}$ is surjective for every extension $S'$ of the base prescheme.
 \end{enumerate}
 \end{prop}
 
@@ -796,15 +796,15 @@ The composition of two surjections being a surjection, it suffices to prove (ii)
 
 \begin{prop}[3.5.3]
 \label{prop-1.3.5.3}
-For a morphism $f\colon X\to Y$ to be surjective, it is necessary and sufficient that, for every field $K$ and every morphism $\Spec(K)\to Y$, there exist an extension $K'$ of $K$ and a morphism $\Spec(K')\to X$ making the following diagram commute:
-\begin{equation*}
+For a morphism $f:X\to Y$ to be surjective, it is necessary and sufficient that, for every field $K$ and every morphism $\Spec(K)\to Y$, there exist an extension $K'$ of $K$ and a morphism $\Spec(K')\to X$ making the following diagram commute:
+\[
     \begin{tikzcd}
         X \ar[d, swap, "f"]
         & \Spec(K') \ar[l] \ar[d]\\
         Y
         & \Spec(K) \ar[l]
     \end{tikzcd}
-\end{equation*}
+\]
 \end{prop}
 
 \begin{proof}
@@ -817,30 +817,30 @@ With the language introduced in \hyperref[env-1.3.4.5]{(3.4.5)}, we can say that
 
 \begin{defn}[3.5.4]
 \label{defn-1.3.5.4}
-We say that a morphism $f\colon X\to Y$ of preschemes is universally injective, or a \unsure{radical} morphism, if, for every field $K$, the corresponding map $X(K)\to Y(K)$ is injective.
+We say that a morphism $f:X\to Y$ of preschemes is universally injective, or a \unsure{radical} morphism, if, for every field $K$, the corresponding map $X(K)\to Y(K)$ is injective.
 \end{defn}
 
 It follows also from the definitions that every {\em monomorphism of preschemes} (T,~1.1) is \unsure{radical}.
 
 \begin{env}[3.5.5]
 \label{env-1.3.5.5}
-For a morphism $f\colon X\to Y$ to be \unsure{radical}, it suffices that the condition of def.~\hyperref[defn-1.3.5.4]{(3.5.4)} hold for every {\em algebraically closed} field.
+For a morphism $f:X\to Y$ to be \unsure{radical}, it suffices that the condition of def.~\hyperref[defn-1.3.5.4]{(3.5.4)} hold for every {\em algebraically closed} field.
 In fact, if $K$ is an arbitrary field, and $K'$ an algebraically-closed extension of $K$, then the diagram
-\begin{equation*}
+\[
     \begin{tikzcd}
         X(K) \ar[r, "\alpha"] \ar[d, swap, "\vphi"]
         & Y(K) \ar[d, "\vphi'"]\\
         X(K') \ar[r, swap, "\alpha'"]
         & Y(K')
     \end{tikzcd}
-\end{equation*}
+\]
 commutes, where $\vphi$ and $\vphi'$ come from the morphism $\Spec(K')\to\Spec(K)$, and $\alpha$ and $\alpha'$ corresponding to $f$.
 However, $\vphi$ is injective, and so too is $\alpha'$ by hypothesis; so $\alpha$ is necessarily injective.
 \end{env}
 
 \begin{prop}[3.5.6]
 \label{prop-1.3.5.6}
-Let $f\colon X\to Y$ and $g\colon Y\to Z$ be two morphisms of preschemes.
+Let $f:X\to Y$ and $g:Y\to Z$ be two morphisms of preschemes.
 \begin{enumerate}
     \item If $f$ and $g$ are \unsure{radical}, then so too is $g\circ f$.
     \item Conversely, if $g\circ f$ is \unsure{radical}, then so too is $f$.
@@ -855,8 +855,8 @@ Taking into account def.~\hyperref[defn-1.3.5.4]{(3.5.4)}, the proposition reduc
 \begin{prop}[3.5.7]
 \label{prop-1.3.5.7}
 \begin{enumerate}[(i)]
-    \item If the $S$-morphisms $f\colon X\to X'$ and $g\colon X\to X'$ are \unsure{radical}, then so too is $f\times_S g$.
-    \item If the $S$-morphism $f\colon X\to Y$ is \unsure{radical}, then so too is $f_{(S')}\colon X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
+    \item If the $S$-morphisms $f:X\to X'$ and $g:X\to X'$ are \unsure{radical}, then so too is $f\times_S g$.
+    \item If the $S$-morphism $f:X\to Y$ is \unsure{radical}, then so too is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
 \end{enumerate}
 \end{prop}
 
@@ -873,7 +873,7 @@ with the map $(X\times_S Y)(K)\to(X'\times_S Y')(K)$ corresponding to $f\times_S
 
 \begin{prop}[3.5.8]
 \label{prop-1.3.5.8}
-For a morphism $f=(\psi,\theta)\colon X\to Y$ to be \unsure{radical}, it is necessary and sufficient that $\psi$ be injective and that, for every $x\in X$, the monomorphism $\theta^x\colon\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a \unsure{radical} extension of $\kres(\psi(x))$.
+For a morphism $f=(\psi,\theta):X\to Y$ to be \unsure{radical}, it is necessary and sufficient that $\psi$ be injective and that, for every $x\in X$, the monomorphism $\theta^x\colon\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a \unsure{radical} extension of $\kres(\psi(x))$.
 \end{prop}
 
 \begin{proof}
@@ -896,27 +896,27 @@ In fact, this morphism is a monomorphism \hyperref[exm-1.1.6.2]{(1.6.2)}.
 
 \begin{cor}[3.5.10]
 \label{cor-1.3.5.10}
-Let $f\colon X\to Y$ be a \unsure{radical} morphism, $g\colon Y'\to Y$ a morphism, and $X'=X_{(Y')}=X\times_Y Y'$.
+Let $f:X\to Y$ be a \unsure{radical} morphism, $g:Y'\to Y$ a morphism, and $X'=X_{(Y')}=X\times_Y Y'$.
 Then the \unsure{radical} morphism $f_{(Y')}$ \hyperref[prop-1.3.5.7]{(3.5.7~(ii))} is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
 \end{cor}
 
 \begin{proof}
 \label{proof-cor-1.3.5.10}
 The first claim follows from \hyperref[prop-1.3.5.8]{(3.5.8)} and \hyperref[cor-1.3.4.8]{(3.4.8)}; the second, from the commutativity of the following diagram:\oldpage{117}
-\begin{equation*}
+\[
     \begin{tikzcd}
         X'(K) \ar[r] \ar[d]
         & Y'(K) \ar[d]\\
         X(K) \ar[r]
         & Y(K)
     \end{tikzcd}
-\end{equation*}
+\]
 \end{proof}
 
 \begin{rmk}[3.5.11]
 \label{rmk-1.3.5.11}
 We say that a morphism $f=(\psi,\theta)$ of preschemes is {\em injective} if the map $\psi$ is injective.
-For a morphism $f=(\psi,\theta)\colon X\to Y$ to be \unsure{radical}, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}\colon X_{(Y')}\to Y'$ be injective (which justifies the terminology of a {\em universally injective} morphism).
+For a morphism $f=(\psi,\theta):X\to Y$ to be \unsure{radical}, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}:X_{(Y')}\to Y'$ be injective (which justifies the terminology of a {\em universally injective} morphism).
 In fact, the condition is necessary by \hyperref[prop-1.3.5.7]{(3.5.7),~(ii)} and \hyperref[prop-1.3.5.8]{(3.5.8)}.
 Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x\colon\kres(\psi(x))\to\kres(x)$ were not \unsure{radical}, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \hyperref[prop-1.3.5.8]{(3.5.8)}.
 But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X_{(Y')}$ \hyperref[env-1.3.3.14]{(3.3.14)}, which contradicts the hypothesis that $f_{(Y')}$ is injective.
@@ -927,19 +927,19 @@ But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X
 
 \begin{prop}[3.6.1]
 \label{prop-1.3.6.1}
-Let $f\colon X\to Y$ be a morphism, $y$ a point of $Y$, and $\mathfrak{a}_y$ a \unsure{defining ideal} of $\OO_y$ for the $\mathfrak{m}_y$-preadic topology.
-The projection $p\colon X\times_Y\Spec(\OO_y/\mathfrak{a}_y)\to X$ is a homeomorphism from the underlying space of the prescheme $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ to the fibre $f^{-1}(y)$ equipped with the topology induced from that of the underlying space of $X$.
+Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, and $\mathfrak{a}_y$ a \unsure{defining ideal} of $\OO_y$ for the $\mathfrak{m}_y$-preadic topology.
+The projection $p:X\times_Y\Spec(\OO_y/\mathfrak{a}_y)\to X$ is a homeomorphism from the underlying space of the prescheme $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ to the fibre $f^{-1}(y)$ equipped with the topology induced from that of the underlying space of $X$.
 \end{prop}
 
 \begin{proof}
 \label{proof-prop-1.3.6.1}
 Since $\Spec(\OO_y/\mathfrak{a}_y)\to Y$ is \unsure{radical} (\hyperref[defn-1.3.5.4]{3.5.4} and \hyperref[cor-1.2.4.7]{2.4.7}), $\Spec(\OO_y/\mathfrak{a}_y)$ is \unsure{reduced at a single point}, and the ideal $\mathfrak{m}_y/\mathfrak{a}_y$ is nilpotent by hypothesis \hyperref[cor-1.1.1.12]{(1.1.12)}, we already know (\hyperref[cor-1.3.5.10]{3.5.10} and \hyperref[cor-1.3.3.4]{3.3.4}) that $p$ identifies, as {\em sets}, the underlying space of $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ with $f^{-1}(y)$; everything boils down to proving that $p$ is a homeomorphism.
 By \hyperref[cor-1.3.2.7]{(3.2.7)}, the question is local on $X$ and $Y$, and so we can suppose that $X=\Spec(B)$ and $Y=\Spec(A)$, with $B$ being an $A$-algebra.
-The morphism $p$ then corresponds to the homomorphism $1\otimes\vphi\colon B\to B\otimes_A A'$, where $A'=A_y/\mathfrak{a}_y$ and $\vphi$ is the canonical map from $A$ to $A'$.
+The morphism $p$ then corresponds to the homomorphism $1\otimes\vphi:B\to B\otimes_A A'$, where $A'=A_y/\mathfrak{a}_y$ and $\vphi$ is the canonical map from $A$ to $A'$.
 Then every element of $B\otimes_A A'$ can be written as
-\begin{equation*}
-    \sum_i b_i\otimes\vphi(a_i)/\vphi(s) = \left(\sum_i(a_ib_i\otimes1)\right)(1\otimes\vphi(s))^{-1},
-\end{equation*}
+\[
+  \sum_i b_i\otimes\vphi(a_i)/\vphi(s)=\left(\sum_i(a_ib_i\otimes1)\right)(1\otimes\vphi(s))^{-1},
+\]
 where $s\not\in\mathfrak{j}_y$, and prop.~\hyperref[cor-1.1.2.4]{(1.2.4)} applies.
 \end{proof}
 
@@ -953,17 +953,17 @@ With the preceding convention, it follows from \hyperref[cor-1.3.5.10]{(3.5.10)}
 
 \begin{env}[3.6.3]
 \label{env-1.3.6.3}
-Let $f\colon X\to Y$ and $g\colon Y\to Z$ be two morphisms, and $h=g\circ f$ their composition; for all $z\in Z$, the fibre $h^{-1}(z)$ is a prescheme isomorphic to
-\begin{equation*}
-    X\times_Z\Spec(\kres(z)) = (X\times_Y Y)\times_Z\Spec(\kres(z)) = X\times_Y g^{-1}(z).
-\end{equation*}
+Let $f:X\to Y$ and $g:Y\to Z$ be two morphisms, and $h=g\circ f$ their composition; for all $z\in Z$, the fibre $h^{-1}(z)$ is a prescheme isomorphic to
+\[
+  X\times_Z\Spec(\kres(z))=(X\times_Y Y)\times_Z\Spec(\kres(z))=X\times_Y g^{-1}(z).
+\]
 In\oldpage{118} particular, if $U$ is an open subset of $X$, then the prescheme induced on $U\cap f^{-1}(y)$ by the prescheme $f^{-1}(y)$ is isomorphic to $f^{-1}_U(y)$ ($f_U$ being the restriction of $f$ to $U$),
 \end{env}
 
 \begin{prop}[3.6.4]
 \label{prop-1.3.6.4}
 {\em (Transitivity of fibres)}
-Let $f\colon X\to Y$ and $g\colon Y'\to Y$ be two morphisms; let $X'=X\times_Y Y'=X_{(Y')}$ and $f'=f_{(Y')}\colon X'\to Y'$.
+Let $f:X\to Y$ and $g:Y'\to Y$ be two morphisms; let $X'=X\times_Y Y'=X_{(Y')}$ and $f'=f_{(Y')}:X'\to Y'$.
 For every $y'\in Y'$, if we let $y=g(y')$, then the prescheme $f'^{-1}(y')$ is isomorphic to $f^{-1}(y)\otimes_{\kres(y)}\kres(y')$.
 \end{prop}
 
@@ -976,7 +976,7 @@ In particular, if $V$ is an open neighborhood of $y$ in $Y$, and we denote by $f
 
 \begin{prop}[3.6.5]
 \label{prop-1.3.6.5}
-Let $f\colon X\to Y$ be a morphism, $y$ a point of $Y$, $Z$ the local prescheme $\Spec(\OO_y)$, and $p=(\psi,\theta)$ the projection $X\times_Y Z\to X$; then $p$ is a homeomorphism from the underlying space of $X\times_Y Z$ to the subspace $f^{-1}(Z)$ of $X$ ({\em when the underlying space of $Z$ is identified with a subspace of $Y$, cf.~\hyperref[prop-1.2.4.2]{(2.4.2)}}), and, for all $t\in X\times_Y Z$, letting $z=\psi(t)$, $\theta_t^\#$ is an isomorphism from $\OO_x$ to $\OO_t$.
+Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, $Z$ the local prescheme $\Spec(\OO_y)$, and $p=(\psi,\theta)$ the projection $X\times_Y Z\to X$; then $p$ is a homeomorphism from the underlying space of $X\times_Y Z$ to the subspace $f^{-1}(Z)$ of $X$ ({\em when the underlying space of $Z$ is identified with a subspace of $Y$, cf.~\hyperref[prop-1.2.4.2]{(2.4.2)}}), and, for all $t\in X\times_Y Z$, letting $z=\psi(t)$, $\theta_t^\#$ is an isomorphism from $\OO_x$ to $\OO_t$.
 \end{prop}
 
 \begin{proof}
