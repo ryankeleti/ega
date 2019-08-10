@@ -9,7 +9,7 @@ to which we refer the reader. We assume that all rings are commutative.\footnote
 expos\'e cited of N.~Bourbaki for the generalization from most of the results to the
 noncommutative case.}
 
-\oldpage{55}
+\oldpage[0\textsubscript{I}]{55}
 If $M$, $N$ are two $A$-modules, $M'$ (resp. $N'$) a submodule of $M$ (resp. $N$), we denote
 by $\Im(M'\otimes_A N')$ the submodule of $M\otimes_A N$, the image under the canonical map
 $M'\otimes_A N'\to M\otimes_A N$.
@@ -21,11 +21,11 @@ $M'\otimes_A N'\to M\otimes_A N$.
 \begin{env}[6.1.1]
 \label{env-0.6.1.1}
 Let $M$ be an $A$-module. The following conditions are equivalent:
-\begin{itemize}
-  \item[(a)] The functor $M\otimes_A N$ is exact in $N$ on the category of $A$-modules;
-  \item[(b)] $\Tor_i^A(M,N)=0$ for each $i>0$ and for each $A$-module $N$;
-  \item[(c)] $\Tor_1^A(M,N)=0$ for each $A$-module $N$.
-\end{itemize}
+\begin{enumerate}[label=(\alph*)]
+  \item The functor $M\otimes_A N$ is exact in $N$ on the category of $A$-modules;
+  \item $\Tor_i^A(M,N)=0$ for each $i>0$ and for each $A$-module $N$;
+  \item $\Tor_1^A(M,N)=0$ for each $A$-module $N$.
+\end{enumerate}
 
 When $M$ satisfies these conditions, we say that $M$ is a
 {\em flat $A$-module}. It is clear that each free $A$-module is flat.
@@ -88,7 +88,7 @@ Let $A$ and $B$ be two rings, $M$ an $A$-module, $N$ an $(A,B)$-bimodule. If $M$
 is flat and if $N$ is $B$-flat, then $M\otimes_A N$ is $B$-flat. In particular,
 if $M$ and $N$ are two flat $A$-modules, $M\otimes_A N$ is a flat $A$-module. If
 $B$ is an $A$-algebra and if $M$ is
-\oldpage{56}
+\oldpage[0\textsubscript{I}]{56}
 a flat $A$-module, then the $B$-module $M_{(B)}=M\otimes_A B$ is flat. Finally,
 if $B$ is an $A$-algebra which is flat as an $A$-module, and if $N$ is a flat
 $B$-module, then $N$ is also $A$-flat.
@@ -165,17 +165,17 @@ so it is also $S^{-1}A$-flat according to \hyperref[env-0.6.3.1]{(6.3.1)}.
 \label{env-0.6.3.3}
 Let $\vphi:A\to B$ be a ring homomorphism, $M$ a $B$-module. The following
 properties are equivalent:
-\begin{itemize}
-  \item[(a)] $M$ is a flat $A$-module.
-  \item[(b)] For each maximal ideal $\mathfrak{n}$ of $B$, $M_\mathfrak{n}$ is a flat $A$-module.
-  \item[(c)] For each maximal ideal $\mathfrak{n}$ of $B$, by setting
+\begin{enumerate}[label=(\alph*)]
+  \item $M$ is a flat $A$-module.
+  \item For each maximal ideal $\mathfrak{n}$ of $B$, $M_\mathfrak{n}$ is a flat $A$-module.
+  \item For each maximal ideal $\mathfrak{n}$ of $B$, by setting
     $\mathfrak{m}=\vphi^{-1}(\mathfrak{n})$, $M_\mathfrak{n}$ is a flat $A_\mathfrak{m}$-module.
-\end{itemize}
+\end{enumerate}
 
 Indeed, as $M_\mathfrak{n}=(M_\mathfrak{n})_\mathfrak{m}$, the equivalence of
 (b) and (c) follows from \hyperref[env-0.6.3.1]{(6.3.1)}, and the fact that (a) implies (b) is
 a particular case of \hyperref[env-0.6.3.2]{(6.3.2)}. It remains to see that (b) implies (a),
-\oldpage{57}
+\oldpage[0\textsubscript{I}]{57}
 that is to say, that for each injective homomorhism $u:N'\to N$ of $A$-modules, the
 homomorphism $v=1\otimes u:M\otimes_A N'\to M\otimes_A N$ is injective. We have that $v$ is
 also a homomorphism of $B$-modules, and we know that for it to be injective, it suffices that
@@ -225,14 +225,14 @@ $\mathfrak{m}$ of $A$, $A_\mathfrak{m}$ is a discrete valuation ring, then $B$ i
 \begin{env}[6.4.1]
 \label{env-0.6.4.1}
 For an $A$-module $M$, the following four properties are equivalent:
-\begin{itemize}
-  \item[(a)] For a sequence $N'\to N\to N''$ of $A$-modules to be exact, it is necessary and
+\begin{enumerate}[label=(\alph*)]
+  \item For a sequence $N'\to N\to N''$ of $A$-modules to be exact, it is necessary and
     sufficient that the sequence $M\otimes_A N'\to M\otimes_A N\to M\otimes_A N''$ is exact;
-  \item[(b)] $M$ is flat for each $A$-module $N$, the relation $M\otimes_A N=0$ implies $N=0$;
-  \item[(c)] $M$ is flat for each homomorphism $v:N\to N'$ of $A$-modules, the relation
+  \item $M$ is flat for each $A$-module $N$, the relation $M\otimes_A N=0$ implies $N=0$;
+  \item $M$ is flat for each homomorphism $v:N\to N'$ of $A$-modules, the relation
     $1_M\otimes v=0$, $1_M$ being the identity automorphism of $M$;
-  \item[(d)] $M$ is flat for each maximal ideal $\mathfrak{m}$ of $A$, $\mathfrak{m}M\neq M$.
-\end{itemize}
+  \item $M$ is flat for each maximal ideal $\mathfrak{m}$ of $A$, $\mathfrak{m}M\neq M$.
+\end{enumerate}
 
 When $M$ satisfies these conditions, we say that $M$ is a {\em faithfully flat} $A$-module;
 $M$ is then necessarily a {\em faithful} module. In addition, if $u:N\to N'$ is a
@@ -242,7 +242,7 @@ necessary and sufficient that $1\otimes u:M\otimes_A N\to M\otimes_A N'$ is so.
 
 \begin{env}[6.4.2]
 \label{env-0.6.4.2}
-\oldpage{58}
+\oldpage[0\textsubscript{I}]{58}
 A free module $\neq\{0\}$ is faithfully flat; it is the same for the direct sum of a flat
 module and a faithfully flat module. If $S$ is a multiplicative subset of $A$, then
 $S^{-1}A$ is a faithfully flat $A$-module if $S$ consists of invertible elements
@@ -313,19 +313,19 @@ $B$.
 \label{env-0.6.6.1}
 Let $\vphi:A\to B$ be a ring homomorphism making $B$ an $A$-algebra. The following five
 properties are equivalent:
-\begin{itemize}
-  \item[(a)] $B$ is a faithfully flat $A$-module (in other words, $M_{(B)}$ is an {\em exact}
+\begin{enumerate}[label=(\alph*)]
+  \item $B$ is a faithfully flat $A$-module (in other words, $M_{(B)}$ is an {\em exact}
     and {\em faithful} functor in $M$).
-  \item[(b)] The homomorphism $\vphi$ is injective and the $A$-module $B/\vphi(A)$ is flat.
-\oldpage{59}
-  \item[(c)] The $A$-module $B$ is flat (in other words, the functor $M_{(B)}$ is {\em exact}),
+  \item The homomorphism $\vphi$ is injective and the $A$-module $B/\vphi(A)$ is flat.
+\oldpage[0\textsubscript{I}]{59}
+  \item The $A$-module $B$ is flat (in other words, the functor $M_{(B)}$ is {\em exact}),
     and for each $A$-module $M$. the homomorphism $x\mapsto 1\otimes x$ from $M$ to $M_{(B)}$ is
     injective.
-  \item[(d)] The $A$-module $B$ is flat and for each ideal $\mathfrak{a}$ of $A$, we have
+  \item The $A$-module $B$ is flat and for each ideal $\mathfrak{a}$ of $A$, we have
     $\vphi^{-1}(\mathfrak{a}B)=\mathfrak{a}$.
-  \item[(e)] The $A$-module $B$ is flat and for each maximal ideal $\mathfrak{m}$ of $A$, there
+  \item The $A$-module $B$ is flat and for each maximal ideal $\mathfrak{m}$ of $A$, there
     exists a maximal ideal $\mathfrak{n}$ of $B$ such that $\vphi^{-1}(\mathfrak{n})=\mathfrak{m}$.
-\end{itemize}
+\end{enumerate}
 
 When these conditions are satisfied, we identify $A$ with a subring of $B$.
 \end{env}
@@ -397,7 +397,7 @@ is exact in $\sh{G}$ on the category of {\em coherent} $(\OO_Y|U)$-modules. Then
 $\mathfrak{J}$ of $\OO_y$, the canonical homomorphism
 $\mathfrak{J}\otimes_{\OO_y}\sh{F}_x\to\sh{F}_x$ is injective \hyperref[env-0.6.1.1]{(6.1.1)}. We know
 \hyperref[env-0.5.3.8]{(5.3.8)} that there then exists an open neighborhood
-\oldpage{60}
+\oldpage[0\textsubscript{I}]{60}
 $U$ of $y$ and a coherent sheaf of ideals $\sh{J}$ of $\OO_Y|U$ such that
 $\sh{J}_y=\mathfrak{J}$, hence the conclusion.
 \end{env}

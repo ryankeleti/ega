@@ -18,7 +18,7 @@ there exists a fundamental system of neighborhoods of $0$ in $A$ of (necessarily
 In a linearly topologized ring $A$, we say that an ideal $\mathfrak{J}$ is an {\em ideal of
 definition} if $\mathfrak{J}$ is open and if, for each neighborhood $V$ of $0$, there exists
 a integer $n>0$ such
-\oldpage{61}
+\oldpage[0\textsubscript{I}]{61}
 that $\mathfrak{J}^n\subset V$ {\em (which we express, by abuse of language, by saying that
 the sequence $(\mathfrak{J}^n)$ {\em tends to $0$})}. We say that a linearly topologized
 ring $A$ is {\em pre-admissible} if there exists in $A$ an ideal of definition; we say that
@@ -34,15 +34,15 @@ of $0$}.
 \begin{lem}[7.1.3]
 \label{lem-0.7.1.3}
 Let $A$ be a linearly topologized ring.
-\begin{itemize}
-  \item[{\rm(i)}] For $x\in A$ to be topologically nilpotent, it is necessary and sufficient that for
+\begin{enumerate}[label={\rm(\roman*)}]
+  \item For $x\in A$ to be topologically nilpotent, it is necessary and sufficient that for
     each open ideal $\mathfrak{J}$ of $A$, the canonical image of $x$ in $A/\mathfrak{J}$ is
     nilpotent. The set $\mathfrak{T}$ of topologically nilpotent elements of $A$ is an ideal.
-  \item[{\rm(ii)}] Suppose that in addition $A$ is pre-admissible, and let $\mathfrak{J}$ be an ideal
-     of definition for $A$. For $x\in A$ to be topologically nilpotent, it is necessary and
-     sufficient that its canonical image in $A/\mathfrak{J}$ is nilpotent; the ideal
-     $\mathfrak{T}$ is the inverse image of the nilradical of $A/\mathfrak{J}$ and is thus open.
-\end{itemize}
+  \item Suppose that in addition $A$ is pre-admissible, and let $\mathfrak{J}$ be an ideal
+    of definition for $A$. For $x\in A$ to be topologically nilpotent, it is necessary and
+    sufficient that its canonical image in $A/\mathfrak{J}$ is nilpotent; the ideal
+    $\mathfrak{T}$ is the inverse image of the nilradical of $A/\mathfrak{J}$ and is thus open.
+\end{enumerate}
 \end{lem}
 
 \begin{proof}
@@ -56,27 +56,27 @@ $x^{mq}\in V$ for $q\geqslant n$, so $x$ is topologically nilpotent.
 \begin{prop}[7.1.4]
 \label{prop-0.7.1.4}
 Let $A$ be a pre-admissible ring, $\mathfrak{J}$ an ideal of definition for $A$.
-\begin{itemize}
-  \item[{\rm(i)}] For an ideal $\mathfrak{J}'$ of $A$ to be contained in an ideal of
+\begin{enumerate}[label={\rm(\roman*)}]
+  \item For an ideal $\mathfrak{J}'$ of $A$ to be contained in an ideal of
     definition, it is necessary and sufficient that there exists an integer
     $n>0$ such that ${\mathfrak{J}'}^n\subset\mathfrak{J}$.
-  \item[{\rm(ii)}] For an $x\in A$ to be contained in an ideal of definition, it is
+  \item For an $x\in A$ to be contained in an ideal of definition, it is
     necessary and sufficient that it is topologically nilpotent.
-\end{itemize}
+\end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-prop-0.7.1.4}
 \medskip\noindent
-\begin{itemize}
-  \item[(i)] If ${\mathfrak{J}'}^n\subset\mathfrak{J}$, then for each open neighborhood
+\begin{enumerate}[label=(\roman*)]
+  \item If ${\mathfrak{J}'}^n\subset\mathfrak{J}$, then for each open neighborhood
     $V$ of $0$ in $A$, there exists an $m$ such that $\mathfrak{J}^m\subset V$, thus
     ${\mathfrak{J}'}^{mn}\subset V$.
-  \item[(ii)] The condition is evidently necessary; it is sufficient, since if it
+  \item The condition is evidently necessary; it is sufficient, since if it
     satisfied, then there exists an $n$ such that $x^n\in\mathfrak{J}$, so
     $\mathfrak{J}'=\mathfrak{J}+Ax$ is an ideal of definition, because it is
     open, and ${\mathfrak{J}'}^n\subset\mathfrak{J}$.
-\end{itemize}
+\end{enumerate}
 \end{proof}
 
 \begin{cor}[7.1.5]
@@ -88,12 +88,11 @@ In a pre-admissible ring $A$, an open prime ideal contains all the ideals of def
 \label{cor-0.7.1.6}
 The notations and hypotheses being that of \hyperref[prop-0.7.1.4]{(7.1.4)}, the following
 properties of an ideal $\mathfrak{J}_0$ of $A$ are equivalent:
-\begin{itemize}
-  \item[{\rm(a)}] $\mathfrak{J}_0$ is the largest ideal of definition of $A$;
-  \item[{\rm(b)}] $\mathfrak{J}_0$ is a maximal ideal of definition;
-  \item[{\rm(c)}] $\mathfrak{J}_0$ is an ideal of definition such that the ring $A/\mathfrak{J}_0$
-    is reduced.
-\end{itemize}
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item $\mathfrak{J}_0$ is the largest ideal of definition of $A$;
+  \item $\mathfrak{J}_0$ is a maximal ideal of definition;
+  \item $\mathfrak{J}_0$ is an ideal of definition such that the ring $A/\mathfrak{J}_0$ is reduced.
+\end{enumerate}
 For there to exist an ideal $\mathfrak{J}_0$ to have these properties, it is
 necessary and sufficient that the nilradical of $A/\mathfrak{J}$ to be
 nilpotent; $\mathfrak{J}_0$ is then equal to the ideal $\mathfrak{T}$ of
@@ -114,7 +113,7 @@ $A/\mathfrak{T}$.
 
 \begin{cor}[7.1.7]
 \label{cor-0.7.1.7}
-\oldpage{62}
+\oldpage[0\textsubscript{I}]{62}
 A pre-admissible Noetherian ring admits a largest ideal of definition.
 \end{cor}
 
@@ -206,7 +205,7 @@ Each projective limit of {\em discrete} rings is evidently a linearly
 topologized ring, separated and compact. Conversely, let $A$ be a linearly
 topologized ring, and let $(\mathfrak{J}_\lambda)$ be a fundamental system of
 open neighborhoods of $0$ in $A$ consisting of
-\oldpage{63}
+\oldpage[0\textsubscript{I}]{63}
 ideals. The canonical maps $\vphi_\lambda:A\to A/\mathfrak{J}_\lambda$ form
 a projective system of continuous representations and therefore defines a
 continuous representation $\vphi:A\to\varprojlim A/\mathfrak{J}_\lambda$; if $A$
@@ -284,12 +283,12 @@ $\widehat{A}$; this proves the proposition.
 \label{cor-0.7.2.5}
 Under the hypotheses of \hyperref[env-0.7.2.3]{(7.2.3)}, the following conditions are
 equivalent:
-\begin{itemize}
-  \item[{\rm(a)}] the homomorphism $u$ is continuous;
-\oldpage{64}
-  \item[{\rm(b)}] the homomorphism $v$ is bicontinous;
-  \item[{\rm(c)}] $A$ is a $\mathfrak{J}$-adic ring.
-\end{itemize}
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item the homomorphism $u$ is continuous;
+\oldpage[0\textsubscript{I}]{64}
+  \item the homomorphism $v$ is bicontinous;
+  \item $A$ is a $\mathfrak{J}$-adic ring.
+\end{enumerate}
 \end{cor}
 
 \begin{cor}[7.2.6]
@@ -319,23 +318,23 @@ indeterminates), which finishes the proof.
 Let $(A_i,u_{ij})$ be a projective system $(i\in\bb{N})$ of discrete rings, and
 for each integer $i$, let $\mathfrak{J}_i$ be the kernel in $A_i$ of the
 homomorphism $u_{0i}:A_i\to A_0$. We suppose that:
-\begin{itemize}
-  \item[{\rm(a)}] For $i\leqslant j$, $u_{ij}$ is surjective and its kernel is $\mathfrak{J}_j^{i+1}$
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item For $i\leqslant j$, $u_{ij}$ is surjective and its kernel is $\mathfrak{J}_j^{i+1}$
     {\em (therefore $A_i$ is isomorphic to $A_j/\mathfrak{J}_j^{i+1}$)}.
-  \item[{\rm(b)}] $\mathfrak{J}_1/\mathfrak{J}_1^2$ ($=\mathfrak{J}_1$) is a module of
+  \item $\mathfrak{J}_1/\mathfrak{J}_1^2$ ($=\mathfrak{J}_1$) is a module of
     finite type over $A_0=A_1/\mathfrak{J}_1$.
-\end{itemize}
+\end{enumerate}
 Let $A=\varprojlim_i A_i$, and for each integer $n\geqslant 0$, let $u_n$ be the
 canonical homomorphism $A\to A_n$, and let $\mathfrak{J}^{(n+1)}\subset A$ be
 its kernel. Then we have these conditions:
-\begin{itemize}
-  \item[{\rm(i)}] $A$ is an adic ring, having $\mathfrak{J}=\mathfrak{J}^{(1)}$ for an
+\begin{enumerate}[label={\rm(\roman*)}]
+  \item $A$ is an adic ring, having $\mathfrak{J}=\mathfrak{J}^{(1)}$ for an
     ideal of definition.
-  \item[{\rm(ii)}] We have $\mathfrak{J}^{(n)}=\mathfrak{J}^n$ for each $n\geqslant 1$.
-  \item[{\rm(iii)}] $\mathfrak{J}/\mathfrak{J}^2$ is isomorphic to
+  \item We have $\mathfrak{J}^{(n)}=\mathfrak{J}^n$ for each $n\geqslant 1$.
+  \item $\mathfrak{J}/\mathfrak{J}^2$ is isomorphic to
     $\mathfrak{J}_1=\mathfrak{J}_1/\mathfrak{J}_1^2$, and as a result is a module of finite type
     over $A_0=A/\mathfrak{J}$.
-\end{itemize}
+\end{enumerate}
 \end{prop}
 
 \begin{proof}
@@ -366,7 +365,7 @@ $\overline{S}_n$ of classes modulo $\mathfrak{J}^{(n+1)}$ of elements of $S_n$
 generate the graded module $\grad(\mathfrak{J}^{(n)})$ over the graded ring
 $\grad(A)$ for the above filtration (\cite[p.~18--06, lemme]{I-1}); according to
 the definition of the multiplication on $\grad(A)$,
-\oldpage{65}
+\oldpage[0\textsubscript{I}]{65}
 it suffices to prove that for each $m$, $\overline{S}_m$ is a system of
 generators for the $A_0$-module $\mathfrak{J}^{(m)}/\mathfrak{J}^{(m+1)}$, or
 that $\mathfrak{J}_m^m$ is generated by the monomials of degree $m$ in the
@@ -446,7 +445,7 @@ $h_i:M_i\to N_i$, whose projective limit is $h$, hence the corollary.
 Let $A$ be an adic ring with an ideal of definition $\mathfrak{J}$ such that
 $\mathfrak{J}/\mathfrak{J}^2$ is an $(A/\mathfrak{J})$-module of finite type; it is clear
 that the $A_i=A/\mathfrak{J}^{i+1}$ satisfy
-\oldpage{66}
+\oldpage[0\textsubscript{I}]{66}
 the conditions of Proposition \hyperref[prop-0.7.2.7]{(7.2.7)}; as $A$ is the projective
 limit of the $A_i$, we see that Proposition \hyperref[prop-0.7.2.7]{(7.2.7)} gives the
 description of {\em all} the adic rings of the type considered (and in particular of all
@@ -526,7 +525,7 @@ For the proof, see \cite[p.~2--04]{I-1}.
 
 \begin{cor}[7.3.3]
 \label{cor-0.7.3.3}
-\oldpage{67}
+\oldpage[0\textsubscript{I}]{67}
 Under the hypotheses of \hyperref[thm-0.7.3.2]{(7.3.2)}, the canonical map
 $M\otimes_A\widehat{A}\to\widehat{M}$ is bijective, and the functor $M\otimes_A\widehat{A}$
 is exact in $M$ on the category of $A$-modules of finite type; as a result, the separated
@@ -590,13 +589,12 @@ and \hyperref[env-0.6.2.2]{(6.2.2)}.
 \label{cor-0.7.3.5}
 Let $A$ be a Noetherian ring, $\mathfrak{J}$ an ideal of $A$. The following conditions are
 equivalent:
-\begin{itemize}
-  \item[{\rm(a)}] $\mathfrak{J}$ is contained in the radical of $A$.
-  \item[{\rm(b)}] $\widehat{A}$ is a faithfully flat $A$-module \hyperref[env-0.6.4.1]{(6.4.1)}.
-  \item[{\rm(c)}] Each $A$-module of finite type is separated for the $\mathfrak{J}$-pre-adic topology.
-  \item[{\rm(d)}] Each submodule of an $A$-module of finite type is closed for the
-    $\mathfrak{J}$-pre-adic topology.
-\end{itemize}
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item $\mathfrak{J}$ is contained in the radical of $A$.
+  \item $\widehat{A}$ is a faithfully flat $A$-module \hyperref[env-0.6.4.1]{(6.4.1)}.
+  \item Each $A$-module of finite type is separated for the $\mathfrak{J}$-pre-adic topology.
+  \item Each submodule of an $A$-module of finite type is closed for the $\mathfrak{J}$-pre-adic topology.
+\end{enumerate}
 \end{cor}
 
 \begin{proof}
@@ -611,7 +609,7 @@ then $\mathfrak{m}$ is closed in $A$ for the $\mathfrak{J}$-pre-adic topology, s
 $\mathfrak{m}=\bigcap_{p\geqslant 0}(\mathfrak{m}+\mathfrak{J}^p)$, and as
 $\mathfrak{m}+\mathfrak{J}^p$ is necessarily equal to $A$ or to $\mathfrak{m}$, we have that
 $\mathfrak{m}+\mathfrak{J}^p=\mathfrak{m}$ for large enough $p$,
-\oldpage{68}
+\oldpage[0\textsubscript{I}]{68}
 hence $\mathfrak{J}^p\subset\mathfrak{m}$, and $\mathfrak{J}\subset\mathfrak{m}$ when
 $\mathfrak{m}$ is prime. Finally, (a) implies (b): indeed, let $P$ be the closure of $\{0\}$
 in an $A$-module $M$ of finite type, for the $\mathfrak{J}$-pre-adic topology; according to
@@ -697,7 +695,7 @@ annihilator of $M/\mathfrak{m}M$ are those which contain $\mathfrak{m}B+\mathfra
 we denote by $\mathfrak{b}$ the annihilator of the $B$-module $M$
 \hyperref[env-0.1.7.5]{(1.7.5)}. As $B$ is Noetherian, we conclude
 (\cite[p.~127, Cor.~4]{I-11}) that $\mathfrak{m}B+\mathfrak{b}$ is an ideal
-\oldpage{69}
+\oldpage[0\textsubscript{I}]{69}
 of definition for $B$, in other words there exists a $k>0$ such that
 $\mathfrak{n}^k\subset\mathfrak{m}B+\mathfrak{b}\subset\mathfrak{n}$; as a result, for each
 $h>0$, we have
@@ -728,10 +726,10 @@ The most important case of Proposition \hyperref[prop-0.7.4.2]{(7.4.2)} is when 
 quasi-finite $A$-module, i.e., $B/\mathfrak{m}B$ is an {\em algebra of finite rank over
 $k=A/\mathfrak{m}$}; furthermore, this condition can be broken down into the combination
 of the following:
-\begin{itemize}
-  \item[(i)] {\em $\mathfrak{m}B$ is an ideal of definition for $B$};
-  \item[(ii)] {\em $B/\mathfrak{n}$ is an extension of finite rank of the field $A/\mathfrak{m}$}.
-\end{itemize}
+\begin{enumerate}[label=(\roman*)]
+  \item {\em $\mathfrak{m}B$ is an ideal of definition for $B$};
+  \item {\em $B/\mathfrak{n}$ is an extension of finite rank of the field $A/\mathfrak{m}$}.
+\end{enumerate}
 When this is so, every $B$-module of finite type is evidently a quasi-finite $A$-module.
 \end{env}
 
@@ -776,7 +774,7 @@ $\sum_\alpha c_\alpha T^\alpha$ (with $\alpha=(\alpha_1,\dots,\alpha_r)\in\bb{N}
 such that $\lim c_\alpha=0$ (according to the filter by compliments of finite subsets
 of $\bb{N}^r$); we say that these series are the {\em restricted} formal series in the
 $T_i$, with coefficients in $A$.
-\oldpage{70}
+\oldpage[0\textsubscript{I}]{70}
 For each neighborhood $V$ of $0$ in $A$, let $V'$ be the set of
 $x=\sum_\alpha c_\alpha T^\alpha\in A'$ such that $c_\alpha\in V$ for all $\alpha$.
 We verify immediately that the $V'$ form a fundamental system of neighborhoods of $0$
@@ -845,27 +843,27 @@ topological ring $A\{T_1,\dots,T_r\}$ up to unique isomorphism.
 \begin{prop}[7.5.4]
 \label{prop-0.7.5.4}
 \medskip\noindent
-\begin{itemize}
-  \item[{\rm(i)}] If $A$ is an admissible ring, then so is $A'=A\{T_1,\dots,T_r\}$.
-  \item[{\rm(ii)}] Let $A$ be an adic ring, $\mathfrak{J}$ an ideal of definition for
+\begin{enumerate}[label={\rm(\roman*)}]
+  \item If $A$ is an admissible ring, then so is $A'=A\{T_1,\dots,T_r\}$.
+  \item Let $A$ be an adic ring, $\mathfrak{J}$ an ideal of definition for
     $A$ such that $\mathfrak{J}/\mathfrak{J}^2$ is of finite type
-\oldpage{71}
+\oldpage[0\textsubscript{I}]{71}
     over $A/\mathfrak{J}$. If we set $\mathfrak{J}'=\mathfrak{J}A'$, then $A'$ is also a
     $\mathfrak{J}'$-adic ring, and $\mathfrak{J}'/{\mathfrak{J}'}^2$ is of finite type over
     $A'/\mathfrak{J}'$. If in addition $A$ is Noetherian, then so is $A'$.
-\end{itemize}
+\end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-prop-0.7.5.4}
 \medskip\noindent
-\begin{itemize}
-  \item[(i)] If $\mathfrak{J}$ is an ideal of $A$, $\mathfrak{J}'$ the ideal of $A'$
+\begin{enumerate}[label=(\roman*)]
+  \item If $\mathfrak{J}$ is an ideal of $A$, $\mathfrak{J}'$ the ideal of $A'$
     consisting of the $\sum_\alpha c_\alpha T^\alpha$ such that $c_\alpha\in\mathfrak{J}$
     for all $\alpha$, then $(\mathfrak{J}')^n\subset(\mathfrak{J}^n)'$; if $\mathfrak{J}$
     is an ideal of definition for $A$, then $\mathfrak{J}'$ is also an ideal of definition
     for $A'$.
-  \item[(ii)] Set $A_i=A/\mathfrak{J}^{i+1}$, and for $i\leqslant j$, let $u_{ij}$ be the
+  \item Set $A_i=A/\mathfrak{J}^{i+1}$, and for $i\leqslant j$, let $u_{ij}$ be the
     canonical homomorphism $A/\mathfrak{J}^{j+1}\to A/\mathfrak{J}^{i+1}$; set
     $A_i'=A_i[T_1,\dots,T_r]$, and let $u_{ij}'$ be the homomorphism $A_j'\to A_i'$
     ($i\leqslant j$) obtained by applying $u_{ij}$ to the coefficients of the polynomials
@@ -889,7 +887,7 @@ topological ring $A\{T_1,\dots,T_r\}$ up to unique isomorphism.
     $\mathfrak{J}_i'$, which establishes our assertion. Finally, if $A$ is Noetherian, then so
     is $A'/\mathfrak{J}'=(A/\mathfrak{J})[T_1,\dots,T_r]$, hence $A'$ is Notherian
     \hyperref[cor-0.7.2.8]{(7.2.8)}.
-\end{itemize}
+\end{enumerate}
 \end{proof}
 
 \begin{prop}[7.5.5]
@@ -897,16 +895,16 @@ topological ring $A\{T_1,\dots,T_r\}$ up to unique isomorphism.
 Let $A$ be a Notherian $\mathfrak{J}$-adic ring, $B$ an admissible topological ring,
 $\vphi:A\to B$ a continuous homomorphism, making $B$ and $A$-algebra. The following
 conditions are equivalent:
-\begin{itemize}
-  \item[{\rm(a)}] $B$ is Noetherian and $\mathfrak{J}B$-adic, and $B/\mathfrak{J}B$ is an
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item $B$ is Noetherian and $\mathfrak{J}B$-adic, and $B/\mathfrak{J}B$ is an
     algebra of finite type over $A/\mathfrak{J}$.
-  \item[{\rm(b)}] $B$ is topologically $A$-isomorphic to $\varprojlim B_n$, where
+  \item $B$ is topologically $A$-isomorphic to $\varprojlim B_n$, where
     $B_n=B_m/\mathfrak{J}^{n+1}B_m$ for $m\geqslant n$, and $B_1$ is an algebra of finite
     type over $A_1=A/\mathfrak{J}^2$.
-  \item[{\rm(c)}] $B$ is topologically $A$-isomorphic to a quotient of an algebra of the form
+  \item $B$ is topologically $A$-isomorphic to a quotient of an algebra of the form
     $A\{T_1,\dots,T_r\}$ by an ideal (necessarily closed according to
     Corollary \hyperref[cor-0.7.3.6]{(7.3.6)} and Proposition \hyperref[prop-0.7.5.4]{(7.5.4, ii)}).
-\end{itemize}
+\end{enumerate}
 \end{prop}
 
 \begin{proof}
@@ -926,7 +924,7 @@ is a module of finite type over $B/\mathfrak{J}B$. Let $(a_j)_{1\leqslant j\leqs
 system of generators for the $(B/\mathfrak{J}B)$-module $\mathfrak{J}B/\mathfrak{J}^2 B$, and let
 $(c_i)_{1\leqslant i\leqslant r}$ be a system of elements of $B/\mathfrak{J}^2 B$ such that the
 classes
-\oldpage{72}
+\oldpage[0\textsubscript{I}]{72}
 mod $\mathfrak{J}B/\mathfrak{J}^2 B$ form a system of generators for the $(A/\mathfrak{J})$-algebra
 $B/\mathfrak{J}B$; we see immediately that the $c_i a_j$ form a system of generators for the
 $(A/\mathfrak{J}^2)$-algebra $B/\mathfrak{J}^2 B$, hence (a) implies (b).
@@ -1000,7 +998,7 @@ but not nilpotent: indeed, $S^{-1}A$ is not $0$ and on the other hand, for each 
 exists an $n$ such that $f^n\in\mathfrak{J}_\lambda$, so $1=f^n/f^n\in S^{-1}\mathfrak{J}_\lambda$
 and $S^{-1}\mathfrak{J}_\lambda=S^{-1}A$.
 
-\oldpage{73}
+\oldpage[0\textsubscript{I}]{73}
 \begin{cor}[7.6.4]
 \label{cor-0.7.6.4}
 If, in $A$, $0$ does not belong to $S$, then the ring $A\{S^{-1}\}$ is not $0$.
@@ -1080,7 +1078,7 @@ $\mathfrak{a}'=\mathfrak{a}\{S^{-1}\}$. In particular \hyperref[env-0.1.2.6]{(1.
 The map $\mathfrak{p}\mapsto\mathfrak{p}\{S^{-1}\}$ is an increasing bijection from the set of
 {\em open prime} ideals $\mathfrak{p}$ of $A$ such that $\mathfrak{p}\cap S=\emp$ to the set
 of {\em open prime} ideals
-\oldpage{74}
+\oldpage[0\textsubscript{I}]{74}
 of $A\{S^{-1}\}$; in addition, the field of fractions of $A\{S^{-1}\}/\mathfrak{p}\{S^{-1}\}$ is
 canonically isomorphic to that of $A/\mathfrak{p}$.
 \end{prop}
@@ -1088,29 +1086,29 @@ canonically isomorphic to that of $A/\mathfrak{p}$.
 \begin{prop}[7.6.11]
 \label{prop-0.7.6.11}
 \medskip\noindent
-\begin{itemize}
-  \item[{\rm(i)}] If $A$ is an admissible ring, then so is $A'=A\{S^{-1}\}$, and for every ideal
+\begin{enumerate}[label={\rm(\roman*)}]
+  \item If $A$ is an admissible ring, then so is $A'=A\{S^{-1}\}$, and for every ideal
     of definition $\mathfrak{J}$ for $A$, $\mathfrak{J}'=\mathfrak{J}\{S^{-1}\}$ is an ideal of
     definition for $A'$.
-  \item[{\rm(ii)}] Let $A$ be an adic ring, $\mathfrak{J}$ an ideal of definition for $A$ such that
+  \item Let $A$ be an adic ring, $\mathfrak{J}$ an ideal of definition for $A$ such that
     $\mathfrak{J}/\mathfrak{J}^2$ is of finite type over $A/\mathfrak{J}$; then $A'$ is a
     $\mathfrak{J}'$-adic ring and $\mathfrak{J}'/{\mathfrak{J}'}^2$ is of finite type over
     $A'/\mathfrak{J}'$. If in addition $A$ is Noetherian, then so is $A'$.
-\end{itemize}
+\end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-prop-7.6.11}
 \medskip\noindent
-\begin{itemize}
-  \item[(i)] If $\mathfrak{J}$ is an ideal of definition for $A$, then it is clear that
+\begin{enumerate}[label=(\roman*)]
+  \item If $\mathfrak{J}$ is an ideal of definition for $A$, then it is clear that
     $S^{-1}\mathfrak{J}$ is an ideal of definition for the topological ring $S^{-1}A$, since we
     have $(S^{-1}\mathfrak{J})^n=S^{-1}\mathfrak{J}^n$. Let $A''$ be the separated ring associated
     to $S^{-1}A$, $\mathfrak{J}''$ the image of $S^{-1}\mathfrak{J}$ in $A''$; the image of
     $S^{-1}\mathfrak{J}^n$ is ${\mathfrak{J}''}^n$, so ${\mathfrak{J}''}^n$ tends to $0$ in $A''$;
     as $\mathfrak{J}'$ is the closure of $\mathfrak{J}''$ in $A'$, ${\mathfrak{J}'}^n$ is contained
     in the closure of ${\mathfrak{J}''}^n$, hence tends to $0$ in $A'$.
-  \item[(ii)] Set $A_i=A/\mathfrak{J}^{i+1}$, and for $i\leqslant j$, let $u_{ij}$ be the canonical
+  \item Set $A_i=A/\mathfrak{J}^{i+1}$, and for $i\leqslant j$, let $u_{ij}$ be the canonical
     homomorphism $A/\mathfrak{J}^{j+1}\to A/\mathfrak{J}^{i+1}$; let $S_i$ be the canonical image of
     $S$ in $A_i$, and set $A_i'=S_i^{-1}A_i$; finally, let $u_{ij}':A_j'\to A_i'$ be the homomorphism
     canonically induced by $u_{ij}$. We show that the projective system $(A_i',u_{ij}')$ satisfies
@@ -1123,7 +1121,7 @@ canonically isomorphic to that of $A/\mathfrak{p}$.
     $\mathfrak{J}_1'/{\mathfrak{J}_1'}^2$ is of finite type over $A_1'$. Finally, if $A$ is
     Noetherian, then so is $A_0'=S_0^{-1}(A/\mathfrak{J})$, which finishes the proof
     \hyperref[cor-0.7.2.8]{(7.2.8)}.
-\end{itemize}
+\end{enumerate}
 \end{proof}
 
 \begin{cor}[7.6.12]
@@ -1147,7 +1145,7 @@ flat $A$-module.
 \begin{proof}
 \label{proof-prop-0.7.6.13}
 If $\mathfrak{J}$ is an ideal of definition for $A$, then $A\{S^{-1}\}$ is the separated completion
-of the Noetherian ring $S^{-1}A$ equipped with the $S{-1}\mathfrak{J}$-preadic topology; as a result
+of the Noetherian ring $S^{-1}A$ equipped with the $S{-1}\mathfrak{J}$-pre-adic topology; as a result
 \hyperref[cor-0.7.3.3]{(7.3.3)} $A\{S^{-1}\}$ is a flat $S^{-1}A$-module; as $S^{-1}A$ is a flat
 $A$-module \hyperref[env-0.6.3.1]{(6.3.1)}, the proposition follows from the transitivity of
 flatness \hyperref[env-0.6.2.1]{(6.2.1)}.
@@ -1176,7 +1174,7 @@ homomorphism $A_{\{f\}}\to A_{\{fg\}}$ \hyperref[env-0.7.6.7]{(7.6.7)}. When $f$
 multiplicative subset $S$ of $A$, the $A_{\{f\}}$ form a filtered inductive system with the above
 homomorphisms; we set $A_{\{S\}}=\varinjlim_{f\in S}A_{\{f\}}$. For every $f\in S$, we have a
 homomorphism $A_{\{f\}}\to A\{S^{-1}\}$ \hyperref[env-0.7.6.7]{(7.6.7)}, and
-\oldpage{75}
+\oldpage[0\textsubscript{I}]{75}
 these homomorphisms form an inductive system; by passing to the inductive limit, they thus define
 a canonical homomorphism $A_{\{S\}}\to A\{S^{-1}\}$.
 \end{env}
