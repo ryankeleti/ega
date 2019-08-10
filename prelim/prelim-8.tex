@@ -1,0 +1,43 @@
+\section{Representable functors}
+\label{section-representable-functors}
+
+\subsection{Representable functors}
+\label{subsection-representable-functors}
+
+\begin{env}[8.1.1]
+\label{env-0.8.1.1}
+\oldpage[0\textsubscript{III}]{6}
+We denote by $\cat{Set}$ the category of sets. Let $\C$ be a category; for two objects
+$X$, $Y$ of $\C$, we set $h_X(Y)=\Hom(Y,X)$; for each morphism $u:Y\to Y'$ in $\C$, we
+denote by $h_X(u)$ the map $v\mapsto vu$ from $\Hom(Y',X)$ to $\Hom(Y,X)$. It is immediate
+that with these definitions, $h_X:\C\to\cat{Set}$ is a {\em contravariant functor}, i.e., an
+object of the category $\cat{Hom}(\C\op,\cat{Set})$, of covariant functors from the
+category $\C\op$ (the dual of the category $\C$) to the category $\cat{Set}$ (T, 1.7, (d) and
+%\cite{III-29}
+).
+\end{env}
+
+\begin{env}[8.1.2]
+\label{env-0.8.1.2}
+Now let $w:X\to X'$ be a morphism in $\C$; for each $Y\in\C$ and each $v\in\Hom(Y,X)=h_X(Y)$,
+we have $wv\in\Hom(Y,X')=h_{X'}(Y)$; we denote by $h_w(Y)$ the map $v\mapsto wv$ from
+$h_X(Y)$ to $h_{X'}(Y)$. It is immediate that for each morphism $u:Y\to Y'$ in $\C$, the
+diagram
+\[
+  \xymatrix{
+    h_X(Y')\ar[r]^{h_X(u)}\ar[d]_{h_w(Y')} &
+    h_X(Y)\ar[d]^{h_w(Y)}\\
+    h_{X'}(Y')\ar[r]^{h_{X'}(u)} &
+    h_{X'}(Y)
+  }
+\]
+is commutative; in other words, $h_w$ is a {\em natural transformation $h_X\to h_{X'}$}
+(T, 1.2), or also a morphism in the category $\cat{Hom}(\C\op,\cat{Set})$ (T, 1.7, (d)). The
+definitions of $h_X$ and of $h_w$ therefore constitute the definition of a {\em canonical
+covariant functor}
+\[
+  h:\C\longrightarrow\cat{Hom}(\C\op,\cat{Set}),\quad X\longmapsto h_X.
+  \tag{8.1.2.1}
+\]
+\end{env}
+

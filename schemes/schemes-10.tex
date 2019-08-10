@@ -1,0 +1,50 @@
+\section{Formal schemes}
+\label{section-formal-schemes}
+
+\subsection{Formal affine schemes}
+\label{subsection-formal-affine-schemes}
+
+\begin{env}[10.1.1]
+\label{env-1.10.1.1}
+Let $A$ be an {\em admissible} topological ring \hyperref[defn-0.7.1.2]{(\textbf{0},~7.1.2)}; for each
+ideal of definition $\mathfrak{J}$ of $A$, $\Spec(A/\mathfrak{J})$ identifies
+with the closed subspace $V(\mathfrak{J})$ of $\Spec(A)$ \hyperref[prop-1.1.1.11]{(1.1.11)},
+the set of {\em open} prime ideals of $A$; this topological space does not depend
+\oldpage[I]{181}
+on the ideal of definition $\mathfrak{J}$ considered; we denote this topological
+space by $\mathfrak{X}$. Let $(\mathfrak{J}_\lambda)$ be a fundamental system
+of neighborhoods of $0$ in $A$, consisting of ideals of definition, and for each
+$\lambda$, let $\OO_\lambda$ be the structure sheaf of
+$\Spec(A/\mathfrak{J}_\lambda)$; this sheaf is induced on $\mathfrak{X}$ by
+$\widetilde{A}/\widetilde{\mathfrak{J}_\lambda}$ (which is zero outside of
+$\mathfrak{X}$). For $\mathfrak{J}_\mu\subset\mathfrak{J}_\lambda$, the
+canonical homomorphism $A/\mathfrak{J}_\mu\to A/\mathfrak{J}_\lambda$ thus
+defines a homomorphism $u_{\lambda\mu}:\OO_\mu\to\OO_\lambda$ of sheaves of
+rings \hyperref[env-1.1.6.1]{(1.6.1)}, and $(\OO_\lambda)$ is a {\em projective system of
+sheaves of rings} for these homomorphisms. As the topology of $\mathfrak{X}$
+admits a basis consisting of quasi-compact open subsets, we can associate to
+each $\OO_\lambda$ a {\em sheaf of pseudo-discrete topological rings}
+\hyperref[env-0.3.8.1]{(\textbf{0},~3.8.1)} which have $\OO_\lambda$ as the underlying (without topology)
+sheaf of rings, and that we denote also by $\OO_\lambda$; and the $\OO_\lambda$ give again a
+{\em projective system of sheaves of topological rings} \hyperref[env-0.3.8.2]{(\textbf{0},~3.8.2)}.
+We denote by $\OO_\mathfrak{X}$ the {\em sheaf of topological rings} on $\mathfrak{X}$, the
+projective limit of the system $(\OO_\lambda)$; for each {\em quasi-compact} open subset $U$
+aof $\mathfrak{X}$, then $\Gamma(U,\OO_\mathfrak{X})$ is a topological ring, the projective
+limit of the system of {\em discrete} rings $\Gamma(U,\OO_\lambda)$
+\hyperref[env-0.3.2.6]{(3.2.6)}.
+\end{env}
+
+\begin{defn}[10.1.2]
+\label{defn-1.10.1.2}
+Given an admissible topological ring $A$, we define the formal spectrum of $A$, and denote
+it by $\Spf(A)$, to be the closed subspace $\mathfrak{X}$ of $\Spec(A)$ consisting of the
+open prime ideals of $A$. We say that a topologically ringed space is a formal affine scheme
+if it is isomorphic to a formal spectrum $\Spf(A)=\mathfrak{X}$ equipped with a sheaf of
+topological rings $\OO_\mathfrak{X}$ which is the projective limit of sheaves of
+psuedo-discrete topological rings
+$(\widetilde{A}/\widetilde{\mathfrak{J}_\lambda})|\mathfrak{X}$, where $\mathfrak{J}_\lambda$
+varies over the filtered set of ideals of definition for $A$.
+\end{defn}
+
+When we speak of a {\em formal spectrum $\mathfrak{X}=\Spf(A)$} as a formal affine scheme,
+
