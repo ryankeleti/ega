@@ -1,3 +1,8 @@
+## current contributors (last name alphabetical order)
+
+- Tim Hosgood (@thosgood)
+- Ryan Keleti (@ryankeleti)
+
 ## resources for contributors
 
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
