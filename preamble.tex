@@ -8,7 +8,7 @@
 \usepackage[margin=0.75in]{geometry}
 \usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
 \usepackage{tikz-cd}
-\usepackage{enumerate}
+\usepackage{enumitem}
 
 \externaldocument[intro-]{intro}
 \externaldocument[prelim-]{prelim}
@@ -83,7 +83,6 @@
 \def\completelyunsure{{\color{red}(???)}}
 
 % use to mark where original page starts
-%\newcommand{\oldpage}[1]{\marginpar{\textbf{#1}}\ignorespaces}
-\def\oldpage#1{\marginpar{#1}}
+\newcommand{\oldpage}[2][--]{{\marginpar{\textbf{#1}~|~#2}}}
 \def\sectionbreak{\begin{center}***\end{center}}
 

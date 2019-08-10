@@ -6,7 +6,7 @@
 
 \begin{prop}[9.1.1]
 \label{prop-1.9.1.1}
-\oldpage{169}
+\oldpage[I]{169}
 Let $X$ be a prescheme ({\em resp.} a locally Noetherian prescheme). Let $\sh{F}$ and
 $\sh{G}$ be two quasi-coherent ({\em resp.} coherent) $\OO_X$-modules; then
 $\sh{F}\otimes_{\OO_X}\sh{G}$ is quasi-coherent ({\em resp.} coherent) and
@@ -75,7 +75,7 @@ $M\otimes_A N$.
 
 \begin{proof}
 \label{proof-prop-1.9.1.3}
-\oldpage{170}
+\oldpage[I]{170}
 According to Proposition \hyperref[prop-1.1.6.5]{(1.6.5)}, $\sh{F}\otimes_S\sh{G}$
 is canonically isomorphic to the sheaf associated to the $(B\otimes_A C)$-module
 \[
@@ -195,11 +195,13 @@ $(f_{(S')})^*(\sh{G}_{(S')})=(f^*(\sh{G}))_{(S')}$.
 \begin{proof}
 \label{proof-prop-1.9.1.10}
 This follows immediately from the commutativity of the diagram
-\oldpage{171}
+\oldpage[I]{171}
 \[
   \xymatrix{
-    X_{(S')}\ar[r]^{f_{(S')}}\ar[d] & Y_{(S')}\ar[d]\\
-    X\ar[r]^f & Y.
+    X_{(S')}\ar[r]^{f_{(S')}}\ar[d] &
+    Y_{(S')}\ar[d]\\
+    X\ar[r]^f &
+    Y.
   }
 \]
 \end{proof}
@@ -283,9 +285,8 @@ quasi-coherent $\OO_Y$-module.
 \label{proof-prop-1.9.2.1}
 Since this is a local condition on $Y$, we can assume that $Y$ is equal to one
 of the $Y_\alpha$, and thus omit the indices $\alpha$.
-
-\begin{itemize}
-  \item[(a)] First, suppose that the $X_i\cap X_j$
+\begin{enumerate}[label=(\alph*)]
+  \item First, suppose that the $X_i\cap X_j$
     are themselves {\em affine} opens. We set $\sh{F}_i=\sh{F}|X_i$ and
     $\sh{F}_{ij}=\sh{F}|(X_i\cap X_j)$, and let $\sh{F}'_i$ and
     $\sh{F}'_{ij}$ be the images of $\sh{F}_i$ and $\sh{F}_{ij}$
@@ -297,7 +298,7 @@ of the $Y_\alpha$, and thus omit the indices $\alpha$.
     $u:\sh{G}\to\sh{H}$ such that $f_*(\sh{F})$ is the
     {\em kernel} of $u$; it will follow from this that $f_*(\sh{F})$ is
     quasi-coherent \hyperref[cor-1.1.3.9]{(1.3.9)}. It suffices to define $u$ as
-\oldpage{172}
+\oldpage[I]{172}
     a homomorphism of presheaves; taking into account the definitions of $\sh{G}$
     and $\sh{H}$, it thus suffices, for every open subset $W\subset Y$, to define a
     homomorphism
@@ -317,30 +318,30 @@ of the $Y_\alpha$, and thus omit the indices $\alpha$.
     $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; the
     axioms (F1) and (F2) of sheaves (G, II, 1.1) tell us that this homomorphism is
     {\em bijective}, which finishes the proof in this case.
-  \item[(b)] In the general case, the same reasoning applies once we have established that
+  \item In the general case, the same reasoning applies once we have established that
     the $\sh{F}_{ij}$ are quasi-coherent. But, by hypothesis, $X_i\cap X_j$ is a
     finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens
     {\em in a scheme}, the intersection of any two of them is again an affine open
     \hyperref[env-1.5.5.6]{(5.5.6)}. We are thus led to the first case, and so we have proved
     Proposition \hyperref[prop-1.9.2.1]{(9.2.1)}.
-\end{itemize}
+\end{enumerate}
 \end{proof}
 
 \begin{cor}[9.2.2]
 \label{cor-1.9.2.2}
-The conclusion of \hyperref[prop-1.9.2.1]{(9.2.1)} holds true in each of the following cases:
-\begin{itemize}
-  \item[{\rm(a)}] $f$ is separated and quasi-compact.
-  \item[{\rm(b)}] $f$ is separated and of finite type.
-  \item[{\rm(c)}] $f$ is quasi-compact and the underlying space of $X$ is locally Noetherian.
-\end{itemize}
+The conclusion of Proposition \hyperref[prop-1.9.2.1]{(9.2.1)} holds true in each of the following cases:
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item $f$ is separated and quasi-compact.
+  \item $f$ is separated and of finite type.
+  \item $f$ is quasi-compact and the underlying space of $X$ is locally Noetherian.
+\end{enumerate}
 \end{cor}
 
 \begin{proof}
 \label{proof-cor-1.9.2.2}
-In the case {\em (a)}, the $X_{\alpha i}\cap X_{\alpha j}$ are affine \hyperref[env-1.5.5.6]{(5.5.6)}.
-Case {\em (b)} is a particular case of {\em (a)} \hyperref[env-1.6.6.3]{(6.6.3)}. Finally, in case
-{\em (c)}, we can reduce to the case where $Y$ is affine and the underlying
+In the case (a), the $X_{\alpha i}\cap X_{\alpha j}$ are affine \hyperref[env-1.5.5.6]{(5.5.6)}.
+Case (b) is a particular case of (a) \hyperref[env-1.6.6.3]{(6.6.3)}. Finally, in case
+(c), we can reduce to the case where $Y$ is affine and the underlying
 space of $X$ is Noetherian; then $X$ admits a finite cover of affine opens
 $(X_i)$, and the $X_i\cap X_j$, being quasi-compact, are finite unions of affine
 opens \hyperref[prop-1.2.1.3]{(2.1.3)}.
@@ -355,28 +356,27 @@ Let $X$ be a prescheme whose underlying space is Noetherian, or a scheme whose u
 space is quasi-compact. Let $\sh{L}$ be an invertible $\OO_X$-module \hyperref[env-0.5.4.1]{(\textbf{0},~5.4.1)}, $f$ a
 section of $\sh{L}$ over $X$, $X_f$ the open set of $x\in X$ such that $f(x)\neq0$
 \hyperref[env-0.5.5.1]{(\textbf{0},~5.5.1)}, and $\sh{F}$ a quasi-coherent $\OO_X$-module.
-\begin{itemize}
-  \item[{\rm(i)}] If $s\in\Gamma(X,\sh{F})$ is such that $s|X_f=0$, then there exists an integer $n>0$
+\begin{enumerate}[label={\rm(\roman*)}]
+  \item If $s\in\Gamma(X,\sh{F})$ is such that $s|X_f=0$, then there exists an integer $n>0$
     such that $s\otimes f^{\otimes n}=0$.
-  \item[{\rm(ii)}] For every section $s\in\Gamma(X_f,\sh{F})$, there exists an integer $n>0$ such that
-    $s\otimes f^{\otimes n}$ extends to a section of $\sh{F}\otimes\sh{L}^{\otimes n}$
-        over $X$.
-\end{itemize}
+  \item For every section $s\in\Gamma(X_f,\sh{F})$, there exists an integer $n>0$ such that
+    $s\otimes f^{\otimes n}$ extends to a section of $\sh{F}\otimes\sh{L}^{\otimes n}$ over $X$.
+\end{enumerate}
 \end{thm}
 
 \begin{proof}
 \label{proof-thm-1.9.3.1}
 \medskip\noindent
-\begin{itemize}
-  \item[(i)] Since the underlying space of $X$ is quasi-compact, and thus the union of
+\begin{enumerate}[label=(\roman*)]
+  \item Since the underlying space of $X$ is quasi-compact, and thus the union of
     finitely-many affine opens $U_i$ with $\sh{L}|U_i$ is isomorphic to
     $\OO_X|U_i$, we can reduce to the case where $X$ is affine and $\sh{L}=\OO_X$.
     In this case, $f$ is identified with an element of $A(X)$, and we have that
     $X_f=D(f)$; $s$ is identified with an element of an $A(X)$-module $M$, and
     $s|X_f$ to the corresponding element of $M_f$, and the result is then trivial,
     recalling the definition of a module of fractions.
-\oldpage{173}
-  \item[(ii)] Again, $X$ is a finite union of affine opens $U_i$ ($1\leqslant i\leqslant r$)
+\oldpage[I]{173}
+  \item Again, $X$ is a finite union of affine opens $U_i$ ($1\leqslant i\leqslant r$)
     such that $\sh{L}|U_i\cong\OO_X|U_i$, and for every $i$,
     $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ is identified (by the aforementioned
     isomorphism) with $(f|(U_i\cap X_f))^n(s|(U_i\cap X_f))$. We then know
@@ -392,7 +392,7 @@ section of $\sh{L}$ over $X$, $X_f$ the open set of $x\in X$ such that $f(x)\neq
     exists a section $s'$ of $\sh{F}\otimes\sh{L}^{\otimes(n+m)}$ over $X$,
     restricting to $s_i\otimes f^{\otimes m}$ over each $U_i$, and restricting to
     $s\otimes f^{\otimes(n+m)}$ over $X_f$.
-\end{itemize}
+\end{enumerate}
 \end{proof}
 
 The following corollaries give an interpretation of Theorem \hyperref[thm-1.9.3.1]{(9.3.1)} in a more
@@ -458,7 +458,7 @@ follows immediately.
 \begin{env}[9.4.1]
 \label{env-1.9.4.1}
 Let
-\oldpage{174}
+\oldpage[I]{174}
 $X$ be a topological space, $\sh{F}$ a sheaf of sets (resp. of groups, of rings) on $X$, $U$
 an open subset of $X$, $\psi:U\to X$ the canonical injection, and $\sh{G}$ a subsheaf of
 $\sh{F}|U=\psi^*(\sh{F})$. Since $\psi_*$ is left exact, $\psi_*(\sh{G})$ is a subsheaf of
@@ -479,14 +479,14 @@ Let $X$ be a prescheme, $U$ an open subset of $X$ such that the canonical inject
 $j:U\to X$ is a quasi-compact morphism {\em (which will be the case for {\em all} $U$ if
 the underlying space of $X$ is {\em locally Noetherian}
 \hyperref[env-1.6.6.4]{(6.6.4)}, (i))}. Then:
-\begin{itemize}
-  \item[{\rm(i)}] For every quasi-coherent $(\OO_X|U)$-module $\sh{G}$, $j_*(\sh{G})$
+\begin{enumerate}[label={\rm(\roman*)}]
+  \item For every quasi-coherent $(\OO_X|U)$-module $\sh{G}$, $j_*(\sh{G})$
     is a quasi-coherent $\OO_X$-module, and $j_*(\sh{G})|U=j^*(j_*(\sh{G}))=\sh{G}$.
-  \item[{\rm(ii)}] For every quasi-coherent $\OO_X$-module $\sh{F}$ and every quasi-coherent
+  \item For every quasi-coherent $\OO_X$-module $\sh{F}$ and every quasi-coherent
     $(\OO_X|U)$-submodule $\sh{G}$, the canonical extension
     $\overline{\sh{G}}$ of $\sh{G}$ \hyperref[env-1.9.4.1]{(9.4.1)} is a
     quasi-coherent $\OO_X$-submodule of $\sh{F}$.
-\end{itemize}
+\end{enumerate}
 \end{prop}
 
 \begin{proof}
@@ -532,7 +532,7 @@ Suppose that for {\em every} affine open $U\subset X$, the injection morphism $U
 quasi-compact. Then, if the conclusion of \hyperref[cor-1.9.4.3]{(9.4.3)} holds for every affine open $U$
 and every quasi-coherent $(\OO_X|U)$-submodule $\sh{G}$ of $\sh{F}|U$ of finite type, it
 follows
-\oldpage{175}
+\oldpage[I]{175}
 that $\sh{F}$ is the inductive limit of its quasi-coherent $\OO_X$-submodules of finite type.
 Indeed, for every affine open $U\subset X$, we have that $\sh{F}|U=\widetilde{M}$, where $M$
 is an $A(U)$-module, and since the latter is the inductive limit of its quasi-coherent
@@ -599,10 +599,10 @@ $W_\mu\cap V_\mu$, which are both quasi-compact by virtue of the hypothesis.
 \label{thm-1.9.4.7}
 Let $X$ be a prescheme, and $U$ an open set of $X$. Suppose that one of the following
 conditions is verified:
-\begin{itemize}
-  \item[{\rm(a)}] the underlying space of $X$ is locally Noetherian;
-  \item[{\rm(b)}] $X$ is a quasi-compact scheme and $U$ is a quasi-compact open.
-\end{itemize}
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item the underlying space of $X$ is locally Noetherian;
+  \item $X$ is a quasi-compact scheme and $U$ is a quasi-compact open.
+\end{enumerate}
 Then, for every quasi-coherent $\OO_X$-module $\sh{F}$ and every quasi-coherent
 $(\OO_X|U)$-submodule $\sh{G}$ of $\sh{F}|U$ {\em of finite type}, there exists a
 quasi-coherent $\OO_X$-submodule $\sh{G}'$ of $\sh{F}$ {\em of finite type} such that
@@ -612,7 +612,7 @@ $\sh{G}'|U=\sh{G}$.
 \begin{proof}
 \label{proof-thm-1.9.4.7}
 Let
-\oldpage{176}
+\oldpage[I]{176}
 $(V_\lambda)_{\lambda\in L}$ be a cover of $X$ by affine opens, with $L$ assumed to be finite
 in case (b); since $L$ is equipped with the structure of a well-ordered set, it suffices to
 check that the conditions of \hyperref[lem-1.9.4.6]{(9.4.6)} are satisfied. It is clear in the case of (a),
@@ -697,7 +697,7 @@ continuous map $\psi$ considered as a map from $X$ to $X'$, and by $\theta_0$ th
 $\theta'|X':(\OO_Y/\sh{J})|X'\to\psi_*(\OO_X)|X'=(\psi_0)_*(\OO_X)$, we see that
 $f_0=(\psi_0,\theta_0)$ is a morphism of preschemes $X\to X'$ \hyperref[defn-1.2.2.1]{(2.2.1)} such that
 $f=j\circ f_0$. Now, if $X''$ is
-\oldpage{177}
+\oldpage[I]{177}
 a second closed subprescheme of $Y$, defined by a quasi-coherent sheaf of ideals $\sh{J}'$ of
 $\OO_Y$, such that $f$ factors through the injection $j':X''\to Y$, then we should
 immediately have that $\psi(X)\subset X''$, and so $X'\subset X''$, since $X''$ is closed.
@@ -772,7 +772,7 @@ From this, we conclude \hyperref[prop-1.4.4.1]{(4.4.1)} that the canonical injec
 
 \begin{rmk}[9.5.7]
 \label{rmk-1.9.5.7}
-If $X$ and $Y$ are $S$-schemes, proposition~\hyperref[cor-1.9.5.6]{(9.5.6)} implies that, when\oldpage{178} $Y$ if the closed image of $X$ under $f$, $f$ is an {\em epimorphism} in the category of {\em $S$-schemes} (T,~1.1).
+If $X$ and $Y$ are $S$-schemes, proposition~\hyperref[cor-1.9.5.6]{(9.5.6)} implies that, when\oldpage[I]{178} $Y$ if the closed image of $X$ under $f$, $f$ is an {\em epimorphism} in the category of {\em $S$-schemes} (T,~1.1).
 We will show in Chapter~V that, conversely, if the closed image $Y'$ of $X$ under $f$ exists and if $f$ is an epimorphism of $S$-schemes, then we necessarily have $Y'=Y$.
 \end{rmk}
 
@@ -793,9 +793,9 @@ We will see in Chapter~IV that it is the same for an extension $Y_1\to Y$ which 
 \begin{prop}[9.5.9]
 \label{prop-1.9.5.9}
 Let $f\colon X\to Y$ be a morphism such that the closed image $Y'$ of $X$ under $f$ exists.
-\begin{enumerate}[(i)]
-    \item If $X$ is reduced, then so too is $Y'$.
-    \item If the hypotheses of (9.5.1) are satisfied and $X$ is irreducible ({\em resp.} \unsure{integral}), then so too is $Y'$.
+\begin{enumerate}[label={\rm(\roman*)}]
+  \item If $X$ is reduced, then so too is $Y'$.
+  \item If the hypotheses of Proposition \hyperref[prop-1.9.5.1]{(9.5.1)} are satisfied and $X$ is irreducible ({\em resp.} \unsure{integral}), then so too is $Y'$.
 \end{enumerate}
 \end{prop}
 
@@ -803,7 +803,7 @@ Let $f\colon X\to Y$ be a morphism such that the closed image $Y'$ of $X$ under 
 \label{proof-prop-1.9.5.9}
 By hypothesis, the morphism $f$ factorizes as $X\xrightarrow{g}Y'\xrightarrow{j}Y$, where $j$ is the canonical injection.
 As $X$ is reduced, $g$ factorizes as $X\xrightarrow{h}Y'_\mathrm{red}\xrightarrow{j'}Y'$, where $j'$ is the canonical injection \hyperref[prop-1.5.2.2]{(5.2.2)}, and it then follows from the definition of $Y'$ that $Y'_\mathrm{red}=Y'$.
-If moreover the conditions of \hyperref[prop-1.5.9.1]{(9.5.1)} are satisfied, then it follows from \hyperref[prop-1.9.5.4]{(9.5.4)} that $f(X)$ is dense in $Y'$; if $X$ is irreducible, then so is $Y'$ \hyperref[env-0.2.1.5]{(\textbf{0},~2.1.5)}.
+If moreover the conditions of Proposition \hyperref[prop-1.5.9.1]{(9.5.1)} are satisfied, then it follows from \hyperref[prop-1.9.5.4]{(9.5.4)} that $f(X)$ is dense in $Y'$; if $X$ is irreducible, then so is $Y'$ \hyperref[env-0.2.1.5]{(\textbf{0},~2.1.5)}.
 The claim about integral preschemes follows from the conjunction of the two others.
 \end{proof}
 
@@ -822,7 +822,7 @@ With the above notation, if the injection $V\to X$ is quasi-compact, and if $\sh
 
 \begin{cor}[9.5.11]
 \label{cor-1.9.5.11}
-Under\oldpage{179} the hypotheses of \hyperref[prop-1.9.5.10]{(9.5.10)}, every section of $\OO_{\overline{Y}}$ over an open $V$ of $\overline{Y}$ that is null on $V\cap Y$ is null.
+Under\oldpage[I]{179} the hypotheses of \hyperref[prop-1.9.5.10]{(9.5.10)}, every section of $\OO_{\overline{Y}}$ over an open $V$ of $\overline{Y}$ that is null on $V\cap Y$ is null.
 \end{cor}
 
 \begin{proof}
@@ -868,7 +868,7 @@ Then every quasi-coherent $\OO_X$-algebra $\sh{B}$ of finite type is a coherent 
 \begin{proof}
 \label{proof-prop-1.9.6.3}
 We can once again restrict to the case where $X$ is an affine scheme given by a Noetherian ring $A$, and where $\sh{B}=\widetilde{B}$, $B$ being an $A$-algebra of finite type; $B$ is then a Noetherian ring.
-With this, it remains to prove that the kernel $\sh{N}$ of a $\sh{B}$-homomorphism $\sh{B}^m\to\sh{B}$ is a $\sh{B}$-module\oldpage{180} of finite type; but it is isomorphic (as a $\sh{B}$-module) to $\widetilde{N}$, where $N$ is the kernel of the corresponding homomorphism of $B$-modules $B^m\to B$ \hyperref[env-1.1.3.13]{(1.3.13)}.
+With this, it remains to prove that the kernel $\sh{N}$ of a $\sh{B}$-homomorphism $\sh{B}^m\to\sh{B}$ is a $\sh{B}$-module\oldpage[I]{180} of finite type; but it is isomorphic (as a $\sh{B}$-module) to $\widetilde{N}$, where $N$ is the kernel of the corresponding homomorphism of $B$-modules $B^m\to B$ \hyperref[env-1.1.3.13]{(1.3.13)}.
 Since $B$ is Noetherian, the submodule $N$ of $B^m$ is a $B$-module of finite type, so there exists a homomorphism $B^p\to B^m$ with image $N$; since the sequence $B^p\to B^m\to B$ is exact, so too is the corresponding sequence $\sh{B}^p\to\sh{B}^m\to\sh{B}$ \hyperref[prop-1.1.3.5]{(1.3.5)} and since $\sh{N}$ is the image of $\sh{B}^p\to\sh{B}^m$ \hyperref[cor-1.1.3.9]{(1.3.9,~(i))}, the proposition is proved.
 \end{proof}
 
@@ -922,7 +922,7 @@ Let $A$ be an {\em admissible} topological ring \hyperref[defn-0.7.1.2]{(\textbf
 ideal of definition $\mathfrak{J}$ of $A$, $\Spec(A/\mathfrak{J})$ identifies
 with the closed subspace $V(\mathfrak{J})$ of $\Spec(A)$ \hyperref[prop-1.1.1.11]{(1.1.11)},
 the set of {\em open} prime ideals of $A$; this topological space does not depend
-\oldpage{181}
+\oldpage[I]{181}
 on the ideal of definition $\mathfrak{J}$ considered; we denote this topological
 space by $\mathfrak{X}$. Let $(\mathfrak{J}_\lambda)$ be a fundamental system
 of neighborhoods of $0$ in $A$, consisting of ideals of definition, and for each
