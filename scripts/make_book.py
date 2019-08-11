@@ -14,8 +14,7 @@ def get_path():
 def list_text_files(path):
   with open(path + "makefile", 'r') as f:
     for line in f:
-      n = line.find("FILES = ")
-      if n == 0:
+      if line.find("FILES = ") == 0:
         break
     listf = ""
     while line.find("\\") >= 0:
