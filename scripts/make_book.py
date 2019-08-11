@@ -1,5 +1,31 @@
 # see README.md/COPYING.md.
-from functions import *
+import re
+
+# get location of repo.
+def get_path():
+  from sys import argv
+  if not len(argv) == 2:
+    print("\nThis script needs exactly one argument,")
+    print("namely the path to the EGA directory\n")
+    raise Exception('Wrong arguments')
+  return argv[1].rstrip("/") + "/"
+
+# list the stems of the TeX files in the project in the correct order.
+def list_text_files(path):
+  with open(path + "makefile", 'r') as f:
+    for line in f:
+      n = line.find("FILES = ")
+      if n == 0:
+        break
+    listf = ""
+    while line.find("\\") >= 0:
+      line = line.rstrip()
+      line = line.rstrip("\\")
+      listf += " " + line
+      line = f.next()
+  listf += " " + line
+  listf = listf.replace("FILES = ", "")
+  return listf.split()
 
 path = get_path() 
 with open(path + "preamble.tex", 'r') as preamble:
