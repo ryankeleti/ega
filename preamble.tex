@@ -87,18 +87,3 @@
 % use to mark where original page starts
 \newcommand{\oldpage}[2][--]{{\marginpar{\textbf{#1}~|~#2}}}
 \def\sectionbreak{\begin{center}***\end{center}}
-
-% to add translator (sub)sections to the document that we don't want to appear in the toc
-\makeatletter
-\ifcsname phantomsection\endcsname
-    \newcommand*{\qrr@gobblenexttocentry}[5]{}
-\else
-    \newcommand*{\qrr@gobblenexttocentry}[4]{}
-\fi
-\newcommand*{\addsection}{%
-    \addtocontents{toc}{\protect\qrr@gobblenexttocentry}%
-    \section*}
-\newcommand*{\addsubsection}{%
-    \addtocontents{toc}{\protect\qrr@gobblenexttocentry}%
-    \subsection*}
-\makeatother
