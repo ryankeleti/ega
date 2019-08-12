@@ -1265,6 +1265,181 @@ $(\widehat{M}\otimes_{\widehat{A}}\widehat{N})^\wedge$, which we denote by
 $\widehat{M}\widehat{\otimes}_{\widehat{A}}\widehat{N}$.
 \end{env}
 
+\begin{env}[7.7.2]
+\label{0.7.7.2}
+With the above notation, the tensor products $(M/V)\otimes_A(N/W)$ and
+$(M/V)\otimes_{A/\mathfrak{J}}(N/W)$ identify canonically; they identify with
+$(M\otimes_A N)/(\Im(V\otimes_A N)+\Im(M\otimes_A W))$. We conclude that $(M\otimes_A N)^\wedge$
+is {\em the separated completion of the $A$-module $M\otimes_A N$, equipped with the topology for
+which the submodules
+\[
+  \Im(V\otimes_A N)+\Im(M\otimes_A W)
+\]
+form a fundamental system of neighborhoods of $0$} ($V$ and $W$ varying over the set of open submodules
+of $M$ and $N$ respectively); we say for brevity that this topology is the {\em tensor product} of
+the given topologies on $M$ and $N$.
+\end{env}
+
+\begin{env}[7.7.3]
+\label{0.7.7.3}
+Let $M'$, $N'$ be two linearly topologized $A$-modules, $u:M\to M'$, $v:N\to N'$ two continuous
+homomorphisms; it is immediate that $u\otimes v$ is continuous for the tensor product topologies on
+$M\otimes_A N$ and $M'\otimes_A N'$ respectively; by passing to the separated completions, we obtain
+a continuous homomorphism $(M\otimes_A N)^\wedge\to(M'\otimes_A N')^\wedge$, which we denote by
+$u\widehat{\otimes}v$; $(M\otimes_A N)^\wedge$ is thus a {\em bifunctor} in $M$ and $N$ on the category
+of linearly topologized $A$-modules.
+\end{env}
+
+\begin{env}[7.7.4]
+\label{0.7.7.4}
+We similarly define the completed tensor product of any finite number of linearly topologized
+$A$-modules; it is immediate that this product has the usual properties of associativity and
+commutativity.
+\end{env}
+
+\begin{env}[7.7.5]
+\label{0.7.5.5}
+If $B$, $C$ are two linearly topologized $A$-algebras, then the tensor product topology on
+$B\otimes_A C$ has for a fundamental system of neighborhoods of $0$ the {\em ideals}
+$\Im(\mathfrak{K}\otimes_A C)+\Im(B\otimes_A\mathfrak{L})$ of the algebra $B\otimes_A C$,
+$\mathfrak{K}$ (resp. $\mathfrak{L}$) varying over the set of open ideals of $B$ (resp. $C$).
+As a result, $(B\otimes_A C)^\wedge$ is equipped with the structure of a {\em topological
+$\widehat{A}$-algebra}, the projective limit of the projective system of $(A/\mathfrak{J})$-algebras
+$(B/\mathfrak{K})\otimes_{A/\mathfrak{J}}(C/\mathfrak{L})$ ($\mathfrak{J}$ the open ideal of $A$
+such that $\mathfrak{J}B\subset\mathfrak{K}$, $\mathfrak{J}C\subset\mathfrak{L}$; it always exists).
+We say that this algebra is the {\em completed tensor product} of the algebras $B$ and $C$.
+\end{env}
+
+\begin{env}[7.7.6]
+\label{0.7.7.6}
+The $A$-algebra homomorphisms $b\mapsto b\otimes 1$, $c\mapsto 1\otimes c$ from $B$ and $C$ to
+$B\otimes_A C$ are continuous when we equip the latter algebra with the tensor product topology; by
+composing with the canonical homomorphism from $B\otimes_A C$ to its separated completion, they
+give {\em canonical homomorphisms} $\rho:B\to(B\otimes_A C)^\wedge$,
+$\sigma:C\to(B\otimes_A C)^\wedge$. The algebra $(B\otimes_A C)^\wedge$ and the homomorphisms
+$\rho$ and $\sigma$ have in addition the following {\em universal property}: for every linearly
+topologized $A$-algebra $D$, separated and complete, and each pair of continuous $A$-homomorphisms
+$u:B\to D$, $v:C\to D$, there exists a unique continuous $A$-homomorphism
+$w:(B\otimes_A C)^\wedge\to D$ such that $u=w\circ\rho$ and $v=w\circ\sigma$. Indeed, there already
+exists a unique $A$-homomorphism $w_0:B\otimes_A C\to D$ such that $u(b)=w_0(b\otimes 1)$ and
+$v(c)=w_0(1\otimes c)$, and it remains to prove that $w_0$ is {\em continuous}, since it then
+gives a
+\oldpage[0\textsubscript{I}]{77}
+continuous homomorphism $w$ by passing to the separated completion. If $\mathfrak{M}$ is an open
+ideal of $D$, then there exists by hypothesis open ideals $\mathfrak{K}\subset B$,
+$\mathfrak{L}\subset C$ such that $u(\mathfrak{K})\subset\mathfrak{M}$,
+$v(\mathfrak{L})\subset\mathfrak{M}$; the image under $w_0$ of
+$\Im(\mathfrak{K}\otimes_A C)+\Im(B\otimes_A\mathfrak{L})$ is again contained in $\mathfrak{M}$,
+hence our assertion.
+\end{env}
+
+\begin{prop}[7.7.7]
+\label{0.7.7.7}
+If $B$ and $C$ are two pre-admissible $A$-algebras, then $(B\otimes_A C)^\wedge$ is
+admissible, and if $\mathfrak{K}$ (resp. $\mathfrak{L}$) is an ideal of definition for
+$B$ (resp. $C$), then the closure in $(B\otimes_A C)^\wedge$ of the canonical image of
+$\mathfrak{H}=\Im(\mathfrak{K}\otimes_A C)+\Im(B\otimes_A\mathfrak{L})$ is an ideal of
+definition.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.7.7.7}
+It suffices to show that $\mathfrak{H}^n$ tends to $0$ for the tensor product topology, which follows
+immediately from the inclusion
+\[
+  \mathfrak{H}^{2n}\subset\Im(\mathfrak{K}^n\otimes_A C)+\Im(B\otimes_A\mathfrak{L}^n).
+\]
+\end{proof}
+
+\begin{prop}[7.7.8]
+\label{0.7.7.8}
+Let $A$ be a pre-adic ring, $\mathfrak{J}$ an ideal of defintion for $A$, $M$ an $A$-module
+{\em of finite type}, equipped with the $\mathfrak{J}$-pre-adic topology. For every topological
+adic Noetherian $A$-algebra $B$, $B\otimes_A M$ identifies with the completed tensor product
+$(B\otimes_A M)^\wedge$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.7.7.8}
+If $\mathfrak{K}$ is an ideal of definition for $B$, there exists by hypothesis an integer $m$ such
+that $\mathfrak{J}^m B\subset\mathfrak{K}$, so
+$\Im(B\otimes_A\mathfrak{J}^{nm}M)=\Im(\mathfrak{J}^{nm}B\otimes_A M)
+  \subset\Im(\mathfrak{K}^n B\otimes_A M)=\mathfrak{K}^n(B\otimes_A M)$;
+we conclude that over $B\otimes_A M$, the tensor products of the topologies of $B$ and $M$ is the
+$\mathfrak{K}$-pre-adic topology. As $B\otimes_A M$ is a $B$-module of finite type, the proposition
+follows from Corollary \hyperref[0.7.3.6]{(7.3.6)}.
+\end{proof}
+
 \subsection{Topologies on modules of homomorphisms}
 \label{subsection-topologies-on-hom-modules}
+
+\begin{env}[7.8.1]
+\label{0.7.8.1}
+Let $A$ be a {\em Noetherian $\mathfrak{J}$-adic} ring, $M$ and $N$ two $A$-modules of finite type,
+equipped with the $\mathfrak{J}$-pre-adic topology; we know \hyperref[0.7.3.6]{(7.3.6)} that they are
+separated and complete; in addition, every $A$-homomorphism $M\to N$ is automatically continuous, and
+the $A$-module $\Hom_A(M,N)$ is of finite type. For every integer $i\geqslant 0$, set
+$A_i=A/\mathfrak{J}^{i+1}$, $M_i=M/\mathfrak{J}^{i+1}M$, $N_i=N/\mathfrak{J}^{i+1}N$; for
+$i\leqslant j$, every homomorphism $u_j:M_j\to N_j$ maps $\mathfrak{J}^{i+1}M_j$ to
+$\mathfrak{J}^{i+1}N_j$, thus giving by passage to quotients a homomorphism $u_i:M_i\to N_i$, which
+defines a canonial homomorphism $\Hom_{A_j}(M_j,N_j)\to\Hom_{A_i}(M_i,N_i)$; in addition, the
+$\Hom_{A_i}(M_i,N_i)$ form a {\em projective system} for these homomorphisms, and it follows from
+Corollary \hyperref[0.7.2.10]{(7.2.10)} that there is a canonical isomorphism
+$\vphi:\Hom_A(M,N)\to\varprojlim_i\Hom_{A_i}(M_i,N_i)$. In addition:
+\end{env}
+
+\begin{prop}[7.8.2]
+\label{0.7.8.2}
+If $M$ and $N$ are modules of finite type over a $\mathfrak{J}$-adic Noetherian ring $A$, then the
+submodules $\Hom_A(M,\mathfrak{J}^{i+1}N)$ form a fundamental system of neighborhoods of $0$ in
+$\Hom_A(M,N)$ for the $\mathfrak{J}$-adic topology, and the canonical isomorphism
+$\vphi:\Hom_A(M,N)\to\varprojlim_i\Hom_{A_i}(M_i,N_i)$ is a topological isomorphism.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.7.8.2}
+We can consider $M$ as the quotient of a free $A$-module $L$ of finite type, and as a result
+identify $\Hom_A(M,N)$ as a submodule of $\Hom_A(L,N)$; in this identification,
+$\Hom_A(M,\mathfrak{J}^{i+1}N)$ is the intersection of $\Hom_A(M,N)$ and
+$\Hom_A(L,\mathfrak{J}^{i+1}N)$; as the induced topology on $\Hom_A(M,N)$ by the $\mathfrak{J}$-adic
+topology of $\Hom_A(L,N)$ is the $\mathfrak{J}$-adic \hyperref[0.7.3.2]{(7.3.2)}, we have
+reduced to proving the first assertion
+\oldpage[0\textsubscript{I}]{78}
+for $M=L=A^m$; but then $\Hom_A(L,N)=N^m$,
+$\Hom_A(L,\mathfrak{J}^{i+1}N)=(\mathfrak{J}^{i+1}N)^m=\mathfrak{J}^{i+1}N^m$ and the result is
+evident. To establish the second assertion, we note that the image of $\Hom_A(M,\mathfrak{J}^{i+1}N)$
+in $\Hom_{A_j}(M_j,N_j)$ is zero for $j\leqslant i$, hence $\vphi$ is continuous; conversely, the
+inverse image in $\Hom_A(M,N)$ of $0$ of $\Hom_{A_i}(M_i,N_i)$ is $\Hom_A(M,\mathfrak{J}^{i+1}N)$,
+so $\vphi$ is bicontinuous.
+\end{proof}
+
+If we only suppose that $A$ is a {\em Noetherian $\mathfrak{J}$-pre-adic} ring, $M$ and $N$ two
+$A$-modules of finite type, separated for the $\mathfrak{J}$-pre-adic topology, then the
+following proof shows that the first assertion of Propositon \hyperref[0.7.8.2]{(7.8.2)} remains
+valid, and that $\vphi$ is a topological isomorphism from $\Hom_A(M,N)$ to a submodule of
+$\varprojlim_i\Hom_{A_i}(M_i,N_i)$.
+
+\begin{prop}[7.8.3]
+\label{0.7.8.3}
+Under the hypotheses of Proposition \hyperref[0.7.8.2]{(7.8.2)}, the set of injective
+(resp. surjective, bijective) homomorphisms from $M$ to $N$ is an open subset of $\Hom_A(M,N)$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.7.8.3}
+According to Corollaries \hyperref[0.7.3.5]{(7.3.5)} and \hyperref[0.7.1.14]{(7.1.14)}, for
+$u$ to be injective, it is necessary and sufficient that the corresponding homomorphism
+$u_0:M/\mathfrak{J}M\to N/\mathfrak{J}N$ is, and the set of surjective homomorphisms from $M$ to $N$
+is thus the inverse image under the continuous map $\Hom_A(M,N)\to\Hom_{A_0}(M_0,N_0)$ of a subset
+of a discrete space. We now show that the set of injective homomorphisms is open; let $v$ be such a
+homomorphism and set $M'=v(M)$; by the Artin--Rees Lemma \hyperref[0.7.3.2.1]{(7.3.2.1)}, there exists
+an integer $k\geqslant 0$ such that $M'\cap\mathfrak{J}^{m+k}N\subset\mathfrak{J}^m M'$ for all
+$m>0$; we will see that for all $w\in\mathfrak{J}^{k+1}\Hom_A(M,N)$, $u=v+w$ is injective, which
+will finish the proof. Indeed, let $x\in M$ be such that $u(x)=0$; we prove that for every
+$i\geqslant 0$ the relation $x\in\mathfrak{J}^i M$ implies that $x\in\mathfrak{J}^{i+1}M$; this
+follows from $x\in\bigcap_{i\geqslant 0}\mathfrak{J}^i M=(0)$. Indeed, we then have
+$w(x)\in\mathfrak{J}^{i+k+1}N$, and as a result $w(x)=-v(x)\in M'$, so
+$v(x)\in M'\cap\mathfrak{J}^{i+k+1}N\subset\mathfrak{J}^{i+1}M'$, and as $v$ is an isomorphism from
+$M$ to $M'$, $x\in\mathfrak{J}^{i+1}M$; q.e.d.
+\end{proof}
 
