@@ -185,7 +185,7 @@ The set of points $x\in X$ where $f$ is defined is called the \emph{domain of de
 
 \begin{prop}[7.2.2]
 \label{1.7.2.2}
-Let\oldpage[0\textsubscript{I}]{159} $X$ and $Y$ be two $S$-preschemes, such that $X$ is reduced and $Y$ separated over $S$.
+Let\oldpage[I]{159} $X$ and $Y$ be two $S$-preschemes, such that $X$ is reduced and $Y$ separated over $S$.
 Let $f$ be a rational $S$-map from $X$ to $Y$, with domain of definition $U_0$.
 Then there exists exactly one $S$-morphism $U_0\to Y$ belonging to the class of $f$.
 \end{prop}
@@ -244,7 +244,7 @@ Let $p\colon Y\to X$ be an $S$-morphism (making $Y$ an $X$-prescheme), $U$ a den
 
 \begin{proof}
 \label{proof-1.7.2.5}
-We\oldpage[0\textsubscript{I}]{160} have to show that $p\circ\overline{f}$ is the identity on the domain of definition of $\overline{f}$; since $X$ is separated over $S$, this again follows from \hyperref[1.7.2.2.1]{(7.2.2.1)}.
+We\oldpage[I]{160} have to show that $p\circ\overline{f}$ is the identity on the domain of definition of $\overline{f}$; since $X$ is separated over $S$, this again follows from \hyperref[1.7.2.2.1]{(7.2.2.1)}.
 \end{proof}
 
 \begin{cor}[7.2.6]
@@ -273,4 +273,53 @@ Conversely, if $g$ is the restriction to $U$ of a $Y$-section $h$ of $X$, then $
 
 \begin{env}[7.2.8]
 \label{1.7.2.8}
+Let $X$ and $Y$ be two $S$-preschemes, with $X$ reduced and $Y$ separated over $S$.
+Let $f$ be a rational $S$-map from $X$ to $Y$, and let $x$ be a point of $X$; we can compose $f$ with the canonical $S$-morphism $\Spec(\OO_x)\to X$ \hyperref[1.2.4.1]{(2.4.1)} provided that the \unsure{trace on} $\Spec(\OO_x)$ of the domain of definition of $f$ is dense in $\Spec(\OO_x)$ (identified with the set of $z\in X$ such that $x\in\overline{\{z\}}$ \hyperref[1.2.4.2]{(2.4.2)}).
+This will happen in the follow cases:
+\begin{enumerate}
+    \item $X$ is \emph{irreducible} (and thus \emph{integral}), because then the generic point $\xi$ of $X$ is the generic point of $\Spec(\OO_x)$; since the domain of definition $U$ of $f$ contains $\xi$, $U\cap\Spec(\OO_x)$ contains $\xi$, and so is dense in $\Spec(\OO_x)$.
+    \item $X$ is \emph{locally Noetherian}; our claim then follows from
+\end{enumerate}
 \end{env}
+
+\begin{lem}[7.2.8.1]
+\label{1.7.2.8.1}
+Let $X$ be a prescheme whose underlying space is locally Noetherian, and $x$ a point of $X$.
+The irreducible components of $\Spec(\OO_x)$ are the \unsure{traces on} $\Spec(\OO_x)$ of the irreducible components of $X$ containing $x$.
+For an open subset $U\subset X$ to be such that $U\cap\Spec(\OO_x)$ is dense $\Spec(\OO_x)$, it is necessary and sufficient that it has a non-empty intersection with the irreducible components of $X$ that contain $x$ \emph{(which will be the case when $U$ is \emph{dense} in $X$)}.
+\end{lem}
+
+\begin{proof}
+\label{proof-1.7.2.8.1}
+The second claim clearly follows from the first, and so it suffices to show just that one.
+Since $\Spec(\OO_x)$ is contained in every affine open subset $U$ that contains $x$, and since the irreducible components of $U$ that contain $x$ are the \unsure{traces on} $U$ of the irreducible components of $X$ containing $x$ \hyperref[0.2.1.6]{(\textbf{0},~2.1.6)}, we can suppose that $X$ is affine, given by a ring $A$.
+Since the prime ideals of $A_x$ correspond bijectively to the prime ideals of $A$ that are contained in $\mathfrak{j}_x$ \hyperref[0.1.2.6]{(\textbf{0},~2.1.6)}, the minimal prime ideals of $A_x$ correspond to the minimal prime ideals of $A$ that are contained in $\mathfrak{j}_x$, whence the lemma.
+\end{proof}
+
+That being said, suppose that we are in one of the two cases mentioned above.
+If $U$ is the domain of definition of the rational $S$-map $f$, we denote by $f'$ the rational map from $\Spec(\OO_x)$ to $Y$ which agrees (taking \hyperref[1.2.4.2]{(2.4.2)} into account) with $f$ on $U\cap\Spec(\OO_x)$; we say that this rational map is \emph{induced by $f$}.
+
+\begin{prop}[7.2.9]
+\label{1.7.2.9}
+Let $S$ be a locally Noetherian prescheme, $X$ a reduced $S$-prescheme, and $Y$ an $S$-scheme of finite type.
+We further suppose that $X$ is either irreducible or locally Noetherian.
+Then let $f$ be a rational $S$-map from $X$ to $Y$, and $x$ a point of $X$.
+For $f$ to be defined at a point $x$, it is necessary and sufficent that the rational map $f'$ from $\Spec(\OO_x)$ to $Y$, induced by $f$ \hyperref[1.7.2.8]{(7.2.8)}, be a morphism.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.7.2.9}
+The condition clearly being necessary (since $\Spec(\OO_x)$ is contained in every open subset containing $x$), we show that it is sufficient.
+By \hyperref[1.6.5.1]{(6.5.1)}, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $g$ from $U$ to $Y$, inducing $f'$ on $\Spec(\OO_x)$.
+If $X$ is irreducible, then $U$ is dense in $X$, and by \hyperref[1.7.2.3]{(7.2.3)} we can suppose that $g$ is a rational $S$-map.
+Further, the generic point of $X$ belongs to $\Spec(\OO_x)$ and to the domain of definition of $f$, so $s$ and $g$ agree at this point, and thus on a non-empty open subset of $X$ \hyperref[1.6.5.1]{(6.5.1)}.
+But since $f$ and $g$ are rational $S$-maps, they are identical \hyperref[1.7.2.3]{(7.2.3)}, and so $f$ is defined at $x$.
+
+If we now suppose that $X$ is locally Noetherian, we can suppose that $U$ is Noetherian; then there are only a finite number of irreducible components $X_i$ of $X$ that contain $x$ \hyperref[1.7.2.8.1]{(7.2.8.1)}, and we can suppose that they are the only ones that have a non-empty intersection with $U$, by replacing, if needed, $U$ with a smaller open subset (since there are only a finite number of irreducible components of $X$ that have a non-empty intersection with $U$, $U$ being Noetherian).
+We then have, as above, that $f$ and $g$ agree on a non-empty open subset of each of the $X_i$.
+Taking into account the fact that each of the $X_i$ is contained in $\overline{U}$, we consider the morphism $f_1$, defined on a dense open subset of $U\cup(X\setminus\overline{U})$, equal to $g$ on $U$ and to $f$ on the intersection of $X\setminus\overline{U}$ with the domain of definition of $f$.
+Since $U\cup(X\setminus\overline{U})$ is dense in $X$, $f_1$ and $f$ agree on a dense open subset of $X$, and since $f$ is a rational map, $f$ is an extension of $f_1$ \hyperref[1.7.2.3]{(7.2.3)}, and is thus defined at the point $x$.
+\end{proof}
+
+\subsection{Sheaf of rational functions}
+\label{subsection-sheaf-of-rational-functions}
