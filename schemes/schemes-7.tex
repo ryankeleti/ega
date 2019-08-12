@@ -175,3 +175,52 @@ Then the rational $k$-maps from $X$ to $Y$ can be identified with the geometric 
 
 \subsection{Domain of definition of a rational map}
 \label{subsection-domain-of-definition-of-a-rational-map}
+
+\begin{env}[7.2.1]
+\label{1.7.2.1}
+Let $X$ and $Y$ be two preschemes, and $f$ rational map from $X$ to $Y$.
+We say that $f$ is \emph{defined at a point $x\in X$} if there exists an dense open subset $U$ of $X$ that contains $x$, and a morphism $U\to Y$ belonging to the equivalence class of $f$.
+The set of points $x\in X$ where $f$ is defined is called the \emph{domain of definition} of $f$; it is clear that it is an open dense subset of $X$.
+\end{env}
+
+\begin{prop}[7.2.2]
+\label{1.7.2.2}
+Let $X$ and $Y$ be two $S$-preschemes, such that $X$ is reduced and $Y$ separated over $S$.
+Let $f$ be a rational $S$-map from $X$ to $Y$, with domain of definition $U_0$.
+Then there exists exactly one $S$-morphism $U_0\to Y$ belonging to the class of $f$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.7.2.2}
+Since, for every morphism $U\to Y$ belonging to the class of $f$, we necessarily have $U\subset U_0$, it is clear that the proposition will be a consequence of the following:
+\end{proof}
+
+\begin{lem}[7.2.2.1]
+\label{1.7.2.2.1}
+Under the hypotheses of \hyperref[1.7.2.2]{(7.2.2)}, let $U_1$ and $U_2$ be two dense open subsets of $X$, and $f_i\colon U_i\to Y$ ($i=1,2$) two $S$-morphisms such that there exists an open subset $V\subset U_1\cap U_2$, dense in $X$, and on which $f_1$ and $f_2$ agree.
+Then $f_1$ and $f_2$ agree on $U_1\cap U_2$.
+\end{lem}
+
+\begin{proof}
+\label{proof-1.7.2.2.1}
+We can clearly restrict to the case where $X=U_1=U_2$.
+Since $X$ (and thus $V$) is reduced, $X$ is the smallest closed subprescheme of $X$ containing $V$ \hyperref[1.5.2.2]{(5.2.2)}.
+Let $g=(f_1,f_2)_S\colon X\to Y\times_S Y$; since, by hypothesis, the diagonal $T=\Delta_Y(Y)$ is a closed subprescheme of $Y\times_S Y$, $Z=g^{-1}(T)$ is a closed subprescheme of $X$ \hyperref[1.4.4.1]{(4.4.1)}.
+If $h\colon V\to Y$ is the common restriction of $f_1$ and $f_2$ to $V$, then the restriction of $g$ to $V$ is $g'=(h,h)_S$, which factors as $g'=\Delta_Y\circ h$; since $\Delta_Y^{-1}(T)=Y$, we have that $g'^{-1}(T)=V$, and so $Z$ is a closed subprescheme of $X$ inducing $V$, thus containing $V$, which leads to $Z=X$.
+From the equation $g^{-1}(T)=X$, we deduce \hyperref[1.4.4.1]{(4.4.1)} that $g$ factors as $\Delta_Y\circ f$, where $f$ is a morphism $X\to Y$, which implies, by the definition of the diagonal morphism, that $f_1=f_2=f$.
+\end{proof}
+
+It is clear that the morphism $U_0\to Y$ defined in \hyperref[1.7.2.2]{(7.2.2)} is the unique morphism of the class $f$ that \emph{cannot be extended} to a morphism from an open subset of $X$ that strictly contains $U_0$.
+\emph{Under the hypotheses of \hyperref[1.7.2.2]{(7.2.2)}}, we can thus \emph{identify} the rational maps from $X$ to $Y$ with the \emph{non-extendible} (to strictly larger open subsets) morphisms from dense open subsets of $X$ to $Y$.
+With this identification, prop.~\hyperref[1.7.2.2]{(7.2.2)} leads to:
+
+\begin{cor}[7.2.3]
+\label{1.7.2.3}
+With the hypotheses from \hyperref[1.7.2.2]{(7.2.2)} on $X$ and $Y$, let $U$ be a dense open subset of $X$.
+Then there exists a canonical bijective correspondence between $S$-morphisms from $U$ to $Y$ and rational $S$-maps from $X$ to $Y$ that are defined at all points of $U$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.7.2.3}
+By \hyperref[1.7.2.2]{(7.2.2)}, for every $S$-morphism $f$ from $U$ to $Y$, there indeed exists exactly one rational $S$-map $\overline{f}$ from $X$ to $Y$ which extends $f$.
+\end{proof}
