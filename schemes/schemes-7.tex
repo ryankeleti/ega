@@ -185,7 +185,7 @@ The set of points $x\in X$ where $f$ is defined is called the \emph{domain of de
 
 \begin{prop}[7.2.2]
 \label{1.7.2.2}
-Let $X$ and $Y$ be two $S$-preschemes, such that $X$ is reduced and $Y$ separated over $S$.
+Let\oldpage[0\textsubscript{I}]{159} $X$ and $Y$ be two $S$-preschemes, such that $X$ is reduced and $Y$ separated over $S$.
 Let $f$ be a rational $S$-map from $X$ to $Y$, with domain of definition $U_0$.
 Then there exists exactly one $S$-morphism $U_0\to Y$ belonging to the class of $f$.
 \end{prop}
@@ -224,3 +224,53 @@ Then there exists a canonical bijective correspondence between $S$-morphisms fro
 \label{proof-1.7.2.3}
 By \hyperref[1.7.2.2]{(7.2.2)}, for every $S$-morphism $f$ from $U$ to $Y$, there indeed exists exactly one rational $S$-map $\overline{f}$ from $X$ to $Y$ which extends $f$.
 \end{proof}
+
+\begin{cor}[7.2.4]
+\label{1.7.2.4}
+Let $S$ be a scheme, $X$ a reduced $S$-prescheme, $Y$ an $S$-scheme, and $f\colon U\to Y$ an $S$-morphism from a dense open subset $U$ of $X$ to $Y$.
+If $\overline{f}$ is the rational $\bb{Z}$-map from $X$ to $Y$ that extends $f$, then $\overline{f}$ is an $S$-morphism (and thus the rational $S$-map from $X$ to $Y$ that extends $f$).
+\end{cor}
+
+\begin{proof}
+\label{proof-1.7.2.4}
+Indeed, if $\vphi\colon X\to S$ and $\psi\colon Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, which follows from \hyperref[1.7.2.2.1]{(7.2.2.1)}, since $f$ is an $S$-morphism.
+\end{proof}
+
+\begin{cor}[7.2.5]
+\label{1.7.2.5}
+Let $X$ and $Y$ be two $S$-preschemes; suppose that $X$ is reduced, and that $X$ and $Y$ are separated over $S$.
+Let $p\colon Y\to X$ be an $S$-morphism (making $Y$ an $X$-prescheme), $U$ a dense open subset of $X$, and $f$ a $U$-section of $Y$; then the rational map $\overline{f}$ from $X$ to $Y$ extending $f$ is a rational $X$-section of $Y$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.7.2.5}
+We\oldpage[0\textsubscript{I}]{160} have to show that $p\circ\overline{f}$ is the identity on the domain of definition of $\overline{f}$; since $X$ is separated over $S$, this again follows from \hyperref[1.7.2.2.1]{(7.2.2.1)}.
+\end{proof}
+
+\begin{cor}[7.2.6]
+\label{1.7.2.6}
+Let $X$ be a reduced prescheme, and $U$ a dense open subset of $X$.
+Then there is a canonical bijective correspondence between sections of $\OO_X$ over $U$ and rational functions $s$ on $X$ defined at every point of $U$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.7.2.6}
+Taking \hyperref[1.7.2.3]{(7.2.3)}, \hyperref[1.7.1.2]{(7.1.2)}, and \hyperref[1.7.1.3]{(7.1.3)} into account, it suffices to note that the $X$-prescheme $X\otimes_{\bb{Z}}\bb{Z}[T]$ is separated over $X$ \hyperref[1.5.5.1]{(5.5.1,~(iv))}.
+\end{proof}
+
+\begin{cor}[7.2.7]
+\label{1.7.2.7}
+Let $Y$ be a reduced prescheme, $f\colon X\to Y$ a separated morphism, $U$ a dense open subset of $Y$, $g\colon U\to f^{-1}(U)$ a $U$-section of $f^{-1}(U)$, and $Z$ the reduced subprescheme of $X$ that has $\overline{g(U)}$ as its underlying space \hyperref[1.5.2.1]{(5.2.1)}.
+For $g$ to be the restriction of a $Y$-section of $X$ \emph{(in other words \hyperref[1.7.2.5]{(7.2.5)}, for the rational map from $Y$ to $X$ extending $g$ to be defined everywhere)}, it is necessary and sufficient that the restriction of $f$ to $Z$ be an isomorphism from $Z$ to $Y$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.7.2.7}
+The restriction of $f$ to $f^{-1}(U)$ is a separated morphism \hyperref[1.5.5.1]{(5.5.1,~(i))}, so $g$ is a closed immersion \hyperref[1.5.4.6]{(5.4.6)}, and so $g(U)=Z\cap f^{-1}(U)$, and the subprescheme induced by $Z$ on the open subset $g(U)$ of $Z$ is identical to the closed subprescheme of $f^{-1}(U)$ associated to $g$ \hyperref[1.5.2.1]{(5.2.1)}.
+It is clear then that the stated condition is sufficient, because if it is satisfied, and if $f_Z\colon Z\to Y$ is the restriction of $f$ to $Z$, and $\overline{g}\colon Y\to Z$ is the inverse isomorphism, then $\overline{g}$ extends $g$.
+Conversely, if $g$ is the restriction to $U$ of a $Y$-section $h$ of $X$, then $h$ is a closed immersion \hyperref[1.5.4.6]{(5.4.6)}, and so $h(Y)$ is closed, and, since it is contained in $Z$, is equal to $Z$, and it follows from \hyperref[1.5.2.1]{(5.2.1)} that $h$ is necessarily an isomorphism from $Y$ to the closed subprescheme $Z$ of $X$.
+\end{proof}
+
+\begin{env}[7.2.8]
+\label{1.7.2.8}
+\end{env}
