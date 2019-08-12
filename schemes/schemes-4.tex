@@ -18,9 +18,9 @@ direct sums of quasi-coherent $\OO_X$-modules, are also quasi-coherent
 
 \begin{prop}[4.1.2]
 \label{1.4.1.2}
-Let $X$ be a prescheme, $\sh{J}$ a quasi-coherent sheaf of ideals of $\OO_X$. The support
-$Y$ of the sheaf $\OO_X/\sh{J}$ is then closed, and if we denote by $\OO_Y$ the restriction
-of $\OO_X/\sh{J}$ to $Y$, then $(Y,\OO_Y)$ is a prescheme.
+Let $X$ be a prescheme, $\sh{I}$ a quasi-coherent sheaf of ideals of $\OO_X$. The support
+$Y$ of the sheaf $\OO_X/\sh{I}$ is then closed, and if we denote by $\OO_Y$ the restriction
+of $\OO_X/\sh{I}$ to $Y$, then $(Y,\OO_Y)$ is a prescheme.
 \end{prop}
 
 \begin{proof}
@@ -29,25 +29,25 @@ of $\OO_X/\sh{J}$ to $Y$, then $(Y,\OO_Y)$ is a prescheme.
 It evidently suffices \hyperref[1.2.1.3]{(2.1.3)} to consider the case where $X$ is an
 affine scheme, and to show that in this case $Y$ is closed in $X$ and is an {\em affine
 scheme}. Indeeed, if $X=\Spec(A)$, then we have $\OO_X=\widetilde{A}$ and
-$\sh{J}=\widetilde{\mathfrak{J}}$, where $\mathfrak{J}$ is an ideal of $A$
-\hyperref[1.1.4.1]{(1.4.1)}; $Y$ is then equal to the closed subset $V(\mathfrak{J})$ of
-$X$ and identifies with the prime spectrum of the ring $B=A/\mathfrak{J}$
+$\sh{I}=\widetilde{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of $A$
+\hyperref[1.1.4.1]{(1.4.1)}; $Y$ is then equal to the closed subset $V(\mathfrak{I})$ of
+$X$ and identifies with the prime spectrum of the ring $B=A/\mathfrak{I}$
 \hyperref[1.1.1.11]{(1.1.1.11)}; in addition, if $\vphi$ is the canonical
-homomorphism $A\to B=A/\mathfrak{J}$, then the direct image ${}^a\vphi_*(\widetilde{B})$
-canonically identifies with the sheaf $\widetilde{A}/\widetilde{\mathfrak{J}}=\OO_X/\sh{J}$
+homomorphism $A\to B=A/\mathfrak{I}$, then the direct image ${}^a\vphi_*(\widetilde{B})$
+canonically identifies with the sheaf $\widetilde{A}/\widetilde{\mathfrak{I}}=\OO_X/\sh{I}$
 (Proposition \hyperref[1.1.6.3]{(1.6.3)} and Corollary \hyperref[1.1.3.9]{(1.3.9)}),
 which finishes the proof.
 \end{proof}
 
 We say that $(Y,\OO_Y)$ is the {\em subprescheme} of $(X,\OO_X)$ {\em defined by the
-sheaf of ideals $\sh{J}$}; this is a particular case of the more general notion of
+sheaf of ideals $\sh{I}$}; this is a particular case of the more general notion of a
 {\em subprescheme}:
 
 \begin{defn}[4.1.3]
 \label{1.4.1.3}
 We say that a ringed space $(Y,\OO_Y)$ is a subprescheme of a prescheme $(X,\OO_X)$ if:
 \begin{enumerate}
-  \item[1st] $Y$ is a localy closed subspace of $X$;
+  \item[1st] $Y$ is a locally closed subspace of $X$;
   \item[2nd] if $U$ denotes the largest open subset of $X$ containing $Y$ such that
     $Y$ is closed in $U$ ({\em equivalently}, the complement in $X$ of the
     boundary of $Y$ with respect to $\overline{Y}$), then $(Y,\OO_Y)$ is
@@ -126,8 +126,8 @@ we denote by $\omega_y$ the canonical homomorphism $(\OO_X)_y\to(\OO_Y)_y$, then
 homomorphisms are the restrictions to stalks of a {\em surjective} homomorphism $\omega$
 of sheaves of rings $\OO_X|Y\to\OO_Y$: indeed, is suffices to check locally on $Y$, that is
 to say, we can suppose that $X$ is affine and that the subprescheme $Y$ is closed; if in this
-case $\sh{J}$ is the sheaf of ideals in $\OO_X$ which defines $Y$, then the $\omega_y$ are
-none other than the restriction to stalks of the homomorphism $\OO_X|Y\to(\OO_X/\sh{J})|Y$.
+case $\sh{I}$ is the sheaf of ideals in $\OO_X$ which defines $Y$, then the $\omega_y$ are
+none other than the restriction to stalks of the homomorphism $\OO_X|Y\to(\OO_X/\sh{I})|Y$.
 We have thus defined a
 {\em monomorphism of ringed spaces} \hyperref[0.4.1.1]{(\textbf{0},~4.1.1)}
 $j=(\psi,\omega^\flat)$ which is evidently a morphism $Y\to X$ of
@@ -137,4 +137,52 @@ preschemes \hyperref[1.2.2.1]{(2.2.1)}, and we call this the
 If $f:X\to Z$ is a morphism, we then say that the composite morphism
 $Y\xrightarrow{j}X\xrightarrow{f}Z$ is the {\em restriction} of $f$ to the subprescheme $Y$.
 \end{env}
+
+\begin{env}[4.1.8]
+\label{1.4.1.8}
+Conforming to the general definitions (T, I, 1.1), we will say that a morphism of
+preschemes $f:Z\to X$ is \unsure{{\em majorized}} by the injection morphism $j:Y\to X$ of
+a subprescheme $Y$ of $X$ if $f$ factorizes as $Z\xrightarrow{g}Y\xrightarrow{j}X$, where
+$g$ is a morphism of preschemes; $g$ is necessarily {\em unique} since $j$ is a monomorphism.
+\end{env}
+
+\begin{prop}[4.1.9]
+\label{1.4.1.9}
+For a morphism $f:Z\to X$ to be majorized by an injection morphism $j:Y\to X$, it is necessary
+and sufficient that $f(Z)\subset Y$ and that for all $z\in Z$, if we set $y=f(z)$, then the
+homomorphism $(\OO_X)_y\to\OO_z$ corresponding to $f$ factorizes as $(\OO_Z)_y\to(\OO_Y)_y\to\OO_z$
+({\em or equivalently, that} the kernel of $(\OO_X)_y\to\OO_z$ contains the kernel of
+$(\OO_X)_y\to(\OO_Y)_y$).
+\end{prop}
+
+\begin{proof}
+\label{proof-1.4.1.9}
+The conditions are evidently necessary. To see that they are sufficient, we can reduce to the case
+where $Y$ is a {\em closed} subprescheme of $X$, by replacing if needed $X$ by an open $U$ such that
+$Y$ is closed in $U$ \hyperref[1.4.1.3]{(4.1.3)}; $Y$ is then defined by a quasi-coherent sheaf of
+ideals $\sh{I}$ of $\OO_X$. Set $f=(\psi,\theta)$, and let $\sh{J}$ be the sheaf of ideals of
+$\psi^*(\OO_X)$, kernel of $\theta^\sharp:\psi^*(\OO_X)\to\OO_Z$; considering the properties of the
+functor $\psi^*$ \hyperref[0.3.7.2]{(\textbf{0},~3.7.2)}, the hypotheses emply that for each $z\in Z$,
+we have $(\psi^*(\sh{I}))_z\subset\sh{J}_z$, and as a result $\psi^*(\sh{I})\subset\sh{J}$. Thus
+$\theta^\sharp$ factorizes as
+\[
+  \psi^*(\OO_X)\longrightarrow\psi^*(\OO_X)/\psi^*(\sh{I})=\psi^*(\OO_X/\sh{I})\xrightarrow{\omega}\OO_Z,
+\]
+the first arrow being the canonical homomorphish/ Let $\psi'$ be the continuous map $Z\to Y$
+coinciding with $\psi$; it is clear that we have ${\psi'}^*(\OO_Y)=\psi^*(\OO_X/\sh{J})$; on the other
+hand, $\omega$ is evidently a local homomorphism, so $g=(\psi',\omega^\flat)$ is a morphism
+\oldpage[I]{122}
+of preschemes $Z\to Y$ \hyperref[1.2.2.1]{(2.2.1)}, which according to the above is such that
+$f=j\circ g$, hence the proposition.
+\end{proof}
+
+\begin{cor}[4.1.10]
+\label{1.4.1.10}
+For an injection morphism $Z\to X$ to be majorized by the injection morphism $Y\to X$, it is
+necessary and sufficient that $Z$ is a subprescheme of $Y$.
+\end{cor}
+
+We then write $Z\leqslant Y$, and this condition is evidently an {\em order relation} on the
+set of subpreschemes of $X$.
+
 

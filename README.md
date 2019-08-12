@@ -22,7 +22,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 4. Ringed spaces (@ryankeleti)
     + [x] 5. Quasi-coherent sheaves and coherent sheaves (@ryankeleti)
     + [x] 6. Flatness (@ryankeleti)
-    + [ ] 7. Adic rings (@ryankeleti)
+    + [x] 7. Adic rings (@ryankeleti)
     + [ ] 8. Representable functors (@ryankeleti)
     + [ ] 9. Constructible sets
     + [ ] 10. Supplement on flat modules
