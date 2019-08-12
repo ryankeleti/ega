@@ -6,13 +6,13 @@
 
 \begin{env}[8.1.1]
 \label{0.8.1.1}
-\oldpage[0\textsubscript{III}]{6}
-We denote by $\cat{Set}$ the category of sets. Let $\C$ be a category; for two objects
+\oldpage[0\textsubscript{III}]{5}
+We denote by $\Set$ the category of sets. Let $\C$ be a category; for two objects
 $X$, $Y$ of $\C$, we set $h_X(Y)=\Hom(Y,X)$; for each morphism $u:Y\to Y'$ in $\C$, we
 denote by $h_X(u)$ the map $v\mapsto vu$ from $\Hom(Y',X)$ to $\Hom(Y,X)$. It is immediate
-that with these definitions, $h_X:\C\to\cat{Set}$ is a {\em contravariant functor}, i.e., an
-object of the category $\cat{Hom}(\C\op,\cat{Set})$, of covariant functors from the
-category $\C\op$ (the dual of the category $\C$) to the category $\cat{Set}$ (T, 1.7, (d) and
+that with these definitions, $h_X:\C\to\Set$ is a {\em contravariant functor}, i.e., an
+object of the category $\CHom(\C\op,\Set)$, of covariant functors from the
+category $\C\op$ (the dual of the category $\C$) to the category $\Set$ (T, 1.7, (d) and
 %\cite{III-29}
 ).
 \end{env}
@@ -31,13 +31,62 @@ diagram
     h_{X'}(Y)
   }
 \]
-is commutative; in other words, $h_w$ is a {\em natural transformation $h_X\to h_{X'}$}
-(T, 1.2), or also a morphism in the category $\cat{Hom}(\C\op,\cat{Set})$ (T, 1.7, (d)). The
+is commutative; in other words, $h_w$ is a {\em natural transformation (or functorial morphism)
+$h_X\to h_{X'}$} (T, 1.2), also a morphism in the category $\CHom(\C\op,\Set)$ (T, 1.7, (d)). The
 definitions of $h_X$ and of $h_w$ therefore constitute the definition of a {\em canonical
 covariant functor}
 \[
-  h:\C\longrightarrow\cat{Hom}(\C\op,\cat{Set}),\quad X\longmapsto h_X.
+  h:\C\longrightarrow\CHom(\C\op,\Set),\quad X\longmapsto h_X.
   \tag{8.1.2.1}
 \]
 \end{env}
+
+\begin{env}[8.1.3]
+\label{0.8.1.3}
+Let $X$ be an object in $\C$, $F$ a contravariant functor from $\C$ to $\Set$
+(an object of $\CHom(\C\op,\Set)$). Let $g:h_X\to F$ be a {\em natural transformation}: for all $Y\in\C$,
+\oldpage[0\textsubscript{III}]{7}
+$g(Y)$ is thus a map $h_X(Y)\to F(Y)$ such that for each morphism $u:Y\to Y'$ in $\C$,
+the diagram
+\[
+  \xymatrix{
+    h_X(Y')\ar[r]^{h_X(u)}\ar[d]_{g(Y')} &
+    h_X(Y)\ar[d]^{g(Y)}\\
+    F(Y')\ar[r]^{F(u)} &
+    F(Y)
+  }
+  \tag{8.1.3.1}
+\]
+is commutative. In particular, we have a map $g(X):h_X(X)=\Hom(X,X)\to F(X)$, hence an element
+\[
+  \alpha(g)=(g(X))(1_X)\in F(X)
+  \tag{8.1.3.2}
+\]
+and as a result a canonical map
+\[
+  \alpha:\Hom(h_X,F)\longrightarrow F(X).
+  \tag{8.1.3.3}
+\]
+
+Conversely, consider an element $\xi\in F(X)$; for each morphism $v:Y\to X$ in $\C$, $F(v)$ is a
+map $F(X)\to F(Y)$; consider the map
+\[
+  v\longmapsto(F(v))(\xi)
+  \tag{8.1.3.4}
+\]
+from $h_X(Y)$ to $F(Y)$; if we denote by $(\beta(\xi))(Y)$ this map,
+\[
+  \beta(\xi):h_X\longrightarrow F
+  \tag{8.1.3.5}
+\]
+is a {\em natural transformation}, since for each morphism $u:Y\to Y'$ in $\C$ we have
+$(F(vu))(\xi)=(F(v)\circ F(u))(\xi)$, which makes (8.1.3.1) commutative for $g=\beta(\xi)$.
+We have thus defined a canonical map
+\[
+  \beta:F(X)\longrightarrow\Hom(h_X,F).
+  \tag{8.1.3.6}
+\]
+\end{env}
+
+
 
