@@ -323,3 +323,88 @@ Since $U\cup(X\setminus\overline{U})$ is dense in $X$, $f_1$ and $f$ agree on a 
 
 \subsection{Sheaf of rational functions}
 \label{subsection-sheaf-of-rational-functions}
+
+\begin{env}[7.3.1]
+\label{1.7.3.1}
+Let $X$ be a prescheme.
+For every open subset $U\subset X$, we denote by $R(U)$ the ring of rational functions on $U$ \hyperref[1.7.1.3]{(7.1.3)}; it is a $\Gamma(U,\OO_X)$-algebra.
+Further, if $V\subset U$ is a second open subset of $X$, then every section of $\OO_X$ over a dense (in $X$) open subset of $V$ gives, by restriction to $V$, a section over a dense (in $X$) open subset of $V$, and if two sections agree on a dense (in $X$) open subset of $U$, then their restrictions to $V$ agree on a dense (in $X$) open subset of $V$.
+We thus define a \unsure{dihomomorphism} of algebras $\rho_{V,U}\colon R(U)\to R(V)$, and it is clear that if $U\supset V\supset W$ are three open subsets of $X$, then we have $\rho_{W,U}=\rho_{W,V}\circ\rho_{V,U}$; the $R(U)$ thus define a \emph{presheaf} of algebras on $X$.
+\end{env}
+
+\begin{defn}[7.3.2]
+\label{1.7.3.2}
+We\oldpage[I]{162} define the sheaf of rational functions on a prescheme $X$, denoted by $\sh{R}(X)$, to be the $\OO_X$-algebra associated to the presheaf defined by the $R(U)$.
+\end{defn}
+
+For every prescheme $X$ and open subset $U\subset X$, it is clear that the induced sheaf $\sh{R}(X)|U$ is exactly $\sh{R}(U)$.
+
+\begin{prop}[7.3.3]
+\label{1.7.3.3}
+Let $X$ be a prescheme such that the family $(X_\lambda)$ of its irreducible components is locally finite (which is the case whenever the underlying space of $X$ is locally Noetherian).
+Then the $\OO_X$-module $\sh{R}(X)$ is quasi-coherent, and for every open subset $U$ of $X$ that has a non-empty intersection with only finitely many of the components $X_\lambda$, $R(U)$ is equal to $\Gamma(U,\sh{R}(X))$, and can be canonically identified with the \unsure{direct ???} of the local rings of the generic points of the $X_\lambda$ such that $U\cap X_\lambda\neq\emp$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.7.3.3}
+We can evidently restrict to the case where $X$ has only a finite number of irreducible components $X_i$, with generic points $x_i$ ($1\leqslant i\leqslant n$).
+The fact that $R(U)$ can be canonically identified with the \unsure{direct ???} of the $\OO_{x_i}=R(X_i)$ such that $U\cap X_i\neq\emp$ then follows from \hyperref[1.7.1.7]{(7.1.7)}.
+We will show that the presheaf $U\to R(U)$ satisfies the sheaf axioms, which will prove that $R(U)=\Gamma(U,\sh{R}(X))$.
+Indeed, it satisfies (F1) by what has already been discussed.
+To see that it satisfies (F2), consider a cover of an open subset $U$ of $X$ by open subsets $V_\alpha\subset U$; if the $s_\alpha\in R(V_\alpha)$ are such that the restrictions of $s_\alpha$ and $s_\beta$ to $V_\alpha\cap V_\beta$ agree for every pair of indices, we can conclude that, for every index $i$ such that $U\cap X_i\neq\emp$, the components in $R(X_i)$ of all the $s_\alpha$ such that $V_\alpha\cap X_i\neq\emp$ are all the same; denoting this component by $t_i$, it is clear that the element of $R(U)$ that has the $t_i$ as its components has $s_\alpha$ as its restriction to each $V_\alpha$.
+Finally, to see that $\sh{R}(X)$ is quasi-coherent, we can restrict to the case where $X=\Spec(A)$ is affine; by taking $U$ to be an affine open subset of the form $D(f)$, where $f\in A$, it follows from the above and from definition~\hyperref[1.1.3.4]{(1.3.4)} that we have $\sh{R}(X)=\widetilde{M}$, where $M$ is the direct sum of the $A$-modules $A_{x_i}$.
+\end{proof}
+
+\begin{cor}[7.3.4]
+\label{1.7.3.4}
+Let $X$ be a reduced prescheme that has only a finite number of irreducible components, and let $X_i$ ($1\leqslant i\leqslant n$) be the closed reduced preschemes of $X$ that have the irreducible components of $X$ as their underlying spaces \hyperref[1.5.2.1]{(5.2.1)}.
+If $h_i$ is the canonical injection $X_i\to X$, then $\sh{R}(X)$ is then the \unsure{direct ???} of the $\OO_X$-algebras $(h_i)_*(\sh{R}(X_i))$.
+\end{cor}
+
+\begin{cor}[7.3.5]
+\label{1.7.3.5}
+If $X$ is irreducible, then every quasi-coherent $\sh{R}(X)$-module $\sh{F}$ is a simple sheaf.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.7.3.5}
+It suffices to show that every $x\in X$ admits a neighbourhood $U$ such that $\sh{F}|U$ is a simple sheaf \hyperref[0.3.6.2]{(\textbf{0},~3.6.2)}, or, in other words, we are led to considering the case where $X$ is affine; we can further suppose that $\sh{F}$ is the cokernel of a homomorphism $(\sh{R}(X))^{I}\to(\sh{R}(X))^{J}$ \hyperref[0.5.1.3]{(\textbf{0},~5.1.3)}, and everything then follows from showing that $\sh{R}(X)$ is a simple sheaf; but this is evident, because $\Gamma(U,\sh{R}(X))=R(X)$ for every non-empty open subset $U$, where $U$ contains the generic point of $X$.
+\end{proof}
+
+\begin{cor}[7.3.6]
+\label{1.7.3.6}
+If $X$ is irreducible, then, for every quasi-coherent $\OO_X$-module $\sh{F}$, $\sh{F}\otimes_{\OO_X}\sh{R}(X)$ is a simple sheaf; if, further, $X$ is reduced (and thus integral), then $\sh{F}\otimes_{\OO_X}\sh{R}(X)$ is isomorphic to a sheaf of the form $(\sh{R}(X))^{(I)}$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.7.3.6}
+The second claim follows from the fact that $R(X)$ is a field.
+\end{proof}
+
+\begin{prop}[7.3.7]
+\label{1.7.3.7}
+Suppose that the prescheme $X$ is locally integral or locally Noetherian.\oldpage[I]{163}
+Then $\sh{R}(X)$ is a quasi-coherent $\OO_X$-algebra; if, further, $X$ is reduced (which will be the case whenever $X$ is locally integral), then the canonical homomorphism $\OO_X\to\sh{R}(X)$ is injective.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.7.3.7}
+The question being local, the first claim follows from \hyperref[1.7.3.3]{(7.3.3)}; the second follows from \hyperref[1.7.2.3]{(7.2.3)}.
+\end{proof}
+
+\begin{env}[7.3.8]
+\label{1.7.3.8}
+Let $X$ and $Y$ be two preschemes, each having a finite number of irreducible components, and let $f\colon X\to Y$ be a morphism whose restriction to the set of generic points of the irreducible components of $X$ is a \emph{surjection} onto the set of generic points of irreducible components of $Y$.
+Then we have
+\begin{equation*}
+    f^*(\sh{R}(Y)) = \sh{R}(X).
+    \tag{7.3.8.1}
+\end{equation*}
+\end{env}
+
+\begin{proof}
+\label{proof-1.7.3.8}
+Indeed, we are led (by \hyperref[1.7.3.3]{(7.3.3)}) to the case where $X$ and $Y$ are irreducible, with generic points $x$ and $y$, with $f(x)=y$; thus $(f^*(\sh{R}(Y)))_x = \OO_y\otimes_{\OO_y}\OO_x = \OO_x$ \hyperref[0.4.3.1]{(\textbf{0},~4.3.1)}, which proves \hyperref[1.7.3.8]{(7.3.8.1)}, thanks to \hyperref[1.7.3.5]{(7.3.5)}.
+\end{proof}
+
+\subsection{Torsion sheaves and torsion-free sheaves}
