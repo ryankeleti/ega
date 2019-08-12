@@ -81,6 +81,8 @@ for name in list_text_files(path):
         continue
       if line.find("\\begin{document}") == 0:
         continue
+      if line.find("\\title{What this is}") == 0:
+        line = line.replace("\\title{What this is}", "\\chapter*{What this is}")
       if line.find("\\title{Introduction}") == 0:
         line = line.replace("\\title{Introduction}", "\\chapter*{Introduction}")
       if line.find("\\title{Preliminaries}") == 0:

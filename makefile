@@ -2,7 +2,7 @@
 # modified from https://github.com/stacks/stacks-project
 # license at scripts/COPYING.md
 #
-FILES = intro prelim schemes
+FILES = what intro prelim schemes
 TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
 PDFLATEX := pdflatex
