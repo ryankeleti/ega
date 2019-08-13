@@ -96,6 +96,64 @@ On the other hand, for all $g\in B$, $\vphi$ defines a continuous homomorphism $
 We note that as a homomorphism of sheaves without topology, $\widetilde{\vphi}$ defines a homomorphism $\widetilde{\vphi}_x^\sharp:\OO_{{}^a\vphi(x)}\to\OO_x$ on the stalks, for all $x\in\fk{X}$.
 \end{env}
 
+\begin{prop}[10.2.2]
+\label{1.10.2.2}
+Let $A$, $B$ be two admissible topological rings, and let $\fk{X}=\Spf(A)$, $\fk{Y}=\Spf(B)$.
+For a morphism $u=(\psi,\theta):\fk{X}\to\fk{Y}$ of topologically ringed spaces to be of the form $({}^a\vphi,\widetilde{\vphi})$, where $\vphi$ is a continuous ring homomorphism $B\to A$, it is necessary and sufficient that for all $x\in\fk{X}$, $\theta_x^\sharp$ is a local homomorphism $\OO_{\vphi(x)}\to\OO_x$.
+\end{prop}
 
+\begin{proof}
+\label{proof-1.10.2.2}
+The condition is necessary: let $\fk{p}=\fk{j}_x\in\Spf(A)$, and let $\fk{q}=\vphi^{-1}(\fk{j}_x)$; if $g\not\in\fk{q}$, then we have $\vphi(g)\not\in\fk{p}$, and it is immediate that the homomorphism
+$B_{\{g\}}\to A_{\{\vphi(g)\}}$ induced by $\vphi$ \sref[0]{0.7.6.7} sends $\fk{q}_{\{g\}}$ to a subset of $\fk{p}_{\{\vphi(g)\}}$; by passing to the inductive limit, we see (taking into account \sref{1.10.1.5} and \sref[0]{0.7.6.17}) that $\widetilde{\vphi}_x^\sharp$ is a local homomorphism.
 
+Conversely, let $(\psi,\theta)$ be a morphism satisying the condition in the statement; according to \sref{1.10.1.3}, $\theta$ defines a continuous ring homomorphism
+\[
+  \vphi=\Gamma(\theta):B=\Gamma(\fk{Y},\OO_\fk{Y})\longrightarrow\Gamma(\fk{X},\OO_\fk{X})=A.
+\]
+By virtue of the hypothesis on $\theta$, for the section $\vphi(g)$ of $\OO_\fk{X}$ over $\fk{X}$ to be an invertible germ at the point $x$, it is necessary and sufficient that $g$ is an invertible germ at the point $\psi(x)$.
+But according to \sref[0]{0.7.6.17}, the sections of $\OO_\fk{X}$ (resp. $\OO_\fk{Y}$) over $\fk{X}$ (resp. $\OO_\fk{Y}$) whose germ is not invertible at the point $x$ (resp. $\psi(x)$) are exactly the elements of
+$\fk{j}_x$
+\oldpage[I]{183}
+(resp. $\fk{j}_{\psi(x)}$); the above remark thus shows that ${}^a\vphi=\psi$.
+Finally, for all $g\in B$ the diagram
+\[
+  \xymatrix{
+    B=\Gamma(\fk{Y},\OO_\fk{Y})\ar[r]^\vphi\ar[d] &
+    \Gamma(\fk{X},\OO_\fk{X})=A\ar[d]\\
+    B_{\{g\}}=\Gamma(\fk{D}(g),\OO_\fk{Y})\ar[r]^{\Gamma(\theta_{\fk{D}(g)})} &
+    \Gamma(\fk{D}(\vphi(g)),\OO_\fk{X})=A_{\{\vphi(g)\}}
+  }
+\]
+is commutative; by the universal property of completed rings of fractions \sref[0]{0.7.6.6}, $\theta_{\fk{D}(g)}$ is equal to $\widetilde{\vphi}_{\fk{D}(g)}$ for all $g\in B$, so \sref[0]{0.3.2.5} we have $\theta=\widetilde{\vphi}$.
+\end{proof}
+
+We say that a morphism $(\psi,\theta)$ of topologically ringed spaces satisfying the condition of Proposition \sref{1.10.2.2} is a {\em morphism of formal affine schemes}.
+We can say that the functors $\Spf(A)$ in $A$ and $\Gamma(\fk{X},\OO_\fk{X})$ in $\fk{X}$ define an {\em equivalence} between the cateory of admissible rings and the opposite category of formal affine schemes (T, I, 1.2).
+
+\begin{env}[10.2.3]
+\label{1.10.2.3}
+As a particular case of \sref{1.10.2.2}, note that for $f\in A$, the canonical injection of the formal affine scheme induced by $\fk{X}$ on $\fk{D}(f)$ corresponds to the continuous canonical homomorphism $A\to A_{\{f\}}$.
+Under the hypotheses of Proposition \sref{1.10.2.2}, let $h$ be an element of $B$, $g$ an element of $A$, multiple of $\vphi(h)$; we then have $\psi(\fk{D}(g))\subset\fk{D}(h)$; the restriction of $u$ to $\fk{D}(g)$, considered as a morphism from $\fk{D}(g)$ to $\fk{D}(h)$, is the unique morphism $v$ making the diagram
+\[
+  \xymatrix{
+    \fk{D}(g)\ar[r]^v\ar[d] &
+    \fk{D}(h)\ar[d]\\
+    \fk{X}\ar[r]^u &
+    \fk{Y}
+  }
+\]
+commutative.
+
+This morphism corresponds to the unique continuous homomorphism $\vphi':B_{\{h\}}\to A_{\{g\}}$ \sref[0]{0.7.6.7} making the diagram
+\[
+  \xymatrix{
+    A\ar[d] &
+    B\ar[l]_\vphi\ar[d]\\
+    A_{\{g\}} &
+    B_{\{h\}}\ar[l]_{\vphi'}
+  }
+\]
+commutative.
+\end{env}
 
