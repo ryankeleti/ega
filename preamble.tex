@@ -2,6 +2,8 @@
 
 \usepackage[all]{xy}
 \usepackage[T1]{fontenc}
+\usepackage{xstring}
+\usepackage{xparse}
 \usepackage{xr-hyper}
 \usepackage[colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
 %\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
@@ -88,17 +90,16 @@
 \newcommand{\oldpage}[2][--]{{\marginpar{\textbf{#1}~|~#2}}}
 \def\sectionbreak{\begin{center}***\end{center}}
 
-% to add translator (sub)sections to the document that we don't want to appear in the toc
-\makeatletter
-\ifcsname phantomsection\endcsname
-    \newcommand*{\qrr@gobblenexttocentry}[5]{}
-\else
-    \newcommand*{\qrr@gobblenexttocentry}[4]{}
-\fi
-\newcommand*{\addsection}{%
-    \addtocontents{toc}{\protect\qrr@gobblenexttocentry}%
-    \section*}
-\newcommand*{\addsubsection}{%
-    \addtocontents{toc}{\protect\qrr@gobblenexttocentry}%
-    \subsection*}
-\makeatother
+% for referencing environments.
+% use as \sref{chapter-number.x.y.z}, with optional args
+% for volume and indices, e.g. \sref[volume]{chapter-number.x.y.z}[i].
+\NewDocumentCommand{\sref}{o m o}{%
+  \IfNoValueTF{#1}%
+    {\IfNoValueTF{#3}%
+      {\hyperref[#2]{\normalfont{(\StrGobbleLeft{#2}{2})}}}%
+      {\hyperref[#2]{\normalfont{(\StrGobbleLeft{#2}{2},~{#3})}}}}%
+    {\IfNoValueTF{#3}%
+      {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrGobbleLeft{#2}{2})}}}%
+      {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrGobbleLeft,~{#3})}}}}%
+}
+
