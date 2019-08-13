@@ -716,7 +716,7 @@ In order for there to exist a point $y$ of $Y=X_1\times_S X_2\times\ldots\times_
 The condition is evidently necessary; Lemma \sref{1.3.4.6} proves that it is sufficient.
 \end{proof}
 
-In other words, if we denote by $(X)$ the underlying set of $X$, we see that we have a canonical {\em surjective} function $(X\times_S Y)\to(X)\times_{(S)}(Y)$; we must point out that this function {\em is not injective} in general; said otherwise, {\em there can exist multiple distinct points $z$ in $X\times_S Y$ having the same projections $x\in X$, $y\in Y$}; we have already seen this when $S$, $X$, and $Y$ are prime spectrums of fields $k$, $K$, and $K'$, since the tensor product $K\otimes_k K'$ has, in general, multiple distinct prime ideals \hyperref[1.3.4.9]{cf. (3.4.9)}.
+In other words, if we denote by $(X)$ the underlying set of $X$, we see that we have a canonical {\em surjective} function $(X\times_S Y)\to(X)\times_{(S)}(Y)$; we must point out that this function {\em is not injective} in general; said otherwise, {\em there can exist multiple distinct points $z$ in $X\times_S Y$ having the same projections $x\in X$, $y\in Y$}; we have already seen this when $S$, $X$, and $Y$ are prime spectrums of fields $k$, $K$, and $K'$, since the tensor product $K\otimes_k K'$ has, in general, multiple distinct prime ideals cf. \sref{1.3.4.9}.
 
 \begin{cor}[3.4.8]
 \label{1.3.4.8}
@@ -865,7 +865,7 @@ Taking into account def.~\sref{1.3.5.4}, the proposition reduces to the correspo
 \begin{proof}
 \label{proof-1.3.5.7}
 Given \sref{1.3.5.1}, it suffices to prove (i).
-We have seen \hyperref[1.3.4.2]{(3.4.2.1)} that
+We have seen \hyperref[1.3.4.2.1]{(3.4.2.1)} that
 \begin{gather*}
   (X\times_S Y)(K) = X(K)\times_{S(K)}Y(K)\\
   (X'\times_S Y')(K) = X'(K)\times_{S(K)}Y'(K)
@@ -899,7 +899,7 @@ In fact, this morphism is a monomorphism \sref{1.1.6.2}.
 \begin{cor}[3.5.10]
 \label{1.3.5.10}
 Let $f:X\to Y$ be a \unsure{radical} morphism, $g:Y'\to Y$ a morphism, and $X'=X_{(Y')}=X\times_Y Y'$.
-Then the \unsure{radical} morphism $f_{(Y')}$ \hyperref[1.3.5.7]{(3.5.7~(ii))} is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
+Then the \unsure{radical} morphism $f_{(Y')}$ \sref{1.3.5.7}{(ii)} is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
 \end{cor}
 
 \begin{proof}
@@ -919,7 +919,7 @@ The first claim follows from \sref{1.3.5.8} and \sref{1.3.4.8}; the second, from
 \label{1.3.5.11}
 We say that a morphism $f=(\psi,\theta)$ of preschemes is {\em injective} if the map $\psi$ is injective.
 For a morphism $f=(\psi,\theta):X\to Y$ to be \unsure{radical}, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}:X_{(Y')}\to Y'$ be injective (which justifies the terminology of a {\em universally injective} morphism).
-In fact, the condition is necessary by \hyperref[1.3.5.7]{(3.5.7),~(ii)} and \sref{1.3.5.8}.
+In fact, the condition is necessary by \sref{1.3.5.7}[(ii)] and \sref{1.3.5.8}.
 Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x\colon\kres(\psi(x))\to\kres(x)$ were not \unsure{radical}, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \sref{1.3.5.8}.
 But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X_{(Y')}$ \sref{1.3.3.14}, which contradicts the hypothesis that $f_{(Y')}$ is injective.
 \end{rmk}
@@ -935,7 +935,7 @@ The projection $p:X\times_Y\Spec(\OO_y/\mathfrak{a}_y)\to X$ is a homeomorphism 
 
 \begin{proof}
 \label{proof-1.3.6.1}
-Since $\Spec(\OO_y/\mathfrak{a}_y)\to Y$ is \unsure{radical} (\hyperref[1.3.5.4]{3.5.4} and \hyperref[1.2.4.7]{2.4.7}), $\Spec(\OO_y/\mathfrak{a}_y)$ is \unsure{reduced at a single point}, and the ideal $\mathfrak{m}_y/\mathfrak{a}_y$ is nilpotent by hypothesis \sref{1.1.1.12}, we already know (\hyperref[1.3.5.10]{3.5.10} and \hyperref[1.3.3.4]{3.3.4}) that $p$ identifies, as {\em sets}, the underlying space of $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ with $f^{-1}(y)$; everything boils down to proving that $p$ is a homeomorphism.
+Since $\Spec(\OO_y/\mathfrak{a}_y)\to Y$ is \unsure{radical} (\sref{1.3.5.4} and \sref{1.2.4.7}), $\Spec(\OO_y/\mathfrak{a}_y)$ is \unsure{reduced at a single point}, and the ideal $\mathfrak{m}_y/\mathfrak{a}_y$ is nilpotent by hypothesis \sref{1.1.1.12}, we already know (\sref{1.3.5.10} and \sref{1.3.3.4}) that $p$ identifies, as {\em sets}, the underlying space of $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ with $f^{-1}(y)$; everything boils down to proving that $p$ is a homeomorphism.
 By \sref{1.3.2.7}, the question is local on $X$ and $Y$, and so we can suppose that $X=\Spec(B)$ and $Y=\Spec(A)$, with $B$ being an $A$-algebra.
 The morphism $p$ then corresponds to the homomorphism $1\otimes\vphi:B\to B\otimes_A A'$, where $A'=A_y/\mathfrak{a}_y$ and $\vphi$ is the canonical map from $A$ to $A'$.
 Then every element of $B\otimes_A A'$ can be written as
@@ -984,7 +984,7 @@ Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, $Z$ the local prescheme $\Spec
 \begin{proof}
 \label{proof-1.3.6.5}
 Since $Z$ (identified as a subspace of $Y$) is contained inside every open affine containing $y$ \sref{1.2.4.2}, we can, as in \sref{1.3.6.1}, reduce to the case where $X=\Spec(A)$ and $Y=\Spec(B)$ are affine schemes, with $A$ being a $B$-algebra.
-Then $X\times_Y Z$ is the prime spectrum of $A\otimes_B B_y$, and this ring is canonically identified with $S^{-1}A$, where $S$ is the image of $B\setminus\mathfrak{j}_y$ in $A$ \hyperref[0.1.5.2]{(\textbf{0},~1.5.2)}; since $p$ then corresponds to the canonical homomorphism $A\to S^{-1}A$, the proposition follows from \sref{1.1.6.2}.
+Then $X\times_Y Z$ is the prime spectrum of $A\otimes_B B_y$, and this ring is canonically identified with $S^{-1}A$, where $S$ is the image of $B\setminus\mathfrak{j}_y$ in $A$ \sref[0]{0.1.5.2}; since $p$ then corresponds to the canonical homomorphism $A\to S^{-1}A$, the proposition follows from \sref{1.1.6.2}.
 \end{proof}
 
 \subsection{Application: reduction of a prescheme mod.~$\mathfrak{J}$}
