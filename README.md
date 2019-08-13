@@ -47,10 +47,10 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 4. Subpreschemes and immersions
     + [ ] 5. Reduced preschemes; separation condition
     + [ ] 6. Finiteness conditions
-    + [ ] 7. Rational maps (@thosgood)
+    + [x] 7. Rational maps (@thosgood)
     + [x] 8. Chevalley schemes (@thosgood)
     + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
-    + [ ] 10. Formal schemes
+    + [ ] 10. Formal schemes (@thosgood)
 
 ## todo
 
