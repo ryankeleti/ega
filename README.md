@@ -50,7 +50,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 7. Rational maps (@thosgood)
     + [x] 8. Chevalley schemes (@thosgood)
     + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
-    + [ ] 10. Formal schemes (@thosgood)
+    + [ ] 10. Formal schemes (@thosgood, @ryankeleti)
 
 ## todo
 
