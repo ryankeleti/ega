@@ -258,7 +258,7 @@ is, it remains to prove the following equation:
 \]
 
 The same reasoning as in \sref[0]{0.1.7.5} leads us to prove that, for all
-$z\in X\times_S Y$, we have $\OO_z/\mathfrak{m}_x\OO_z\neq0$ (with $x=p(z)$),
+$z\in X\times_S Y$, we have $\OO_z/\fk{m}_x\OO_z\neq0$ (with $x=p(z)$),
 which follows from the fact that the homomorphism $\OO_x\to\OO_z$ is {\em local},
 by hypothesis.
 \end{proof}
@@ -424,15 +424,15 @@ of $\OO_X|\sh{J}$. Then there exists a whole number $n>0$ such that $\sh{J}^n\sh
 \label{proof-1.9.3.4}
 Since $X$ is a union of finitely-many affine opens whose rings are Noetherian, we can suppose
 that $X$ is affine of Noetherian ring $A$; then $\sh{F}=\widetilde{M}$, where
-$M=\Gamma(X,\sh{F})$ is an $A$-module of finite type, and $\sh{J}=\widetilde{\mathfrak{J}}$,
-where $\mathfrak{J}=\Gamma(X,\sh{J})$ is an ideal of $A$ (\sref{1.1.4.1} and
-\sref{1.1.5.1}). Since $A$ is Noetherian, $\mathfrak{J}$ admits a finite system of
+$M=\Gamma(X,\sh{F})$ is an $A$-module of finite type, and $\sh{J}=\widetilde{\fk{J}}$,
+where $\fk{J}=\Gamma(X,\sh{J})$ is an ideal of $A$ (\sref{1.1.4.1} and
+\sref{1.1.5.1}). Since $A$ is Noetherian, $\fk{J}$ admits a finite system of
 generators $f_i$ ($1\leqslant i\leqslant m$). By hypothesis, every section of $\sh{F}$ over
 $X$ is zero on each of the $D(f_i)$; if $s_j$ ($1\leqslant j\leqslant q$) are sections of
 $\sh{F}$ generating $M$, then there exists a whole number $h$, independent of $i$ and $j$,
 such that $f_i^h s_j=0$ \sref{1.1.4.1}, whence $f_i^h s=0$ for all $s\in M$. We thus
-conclude that if $n=mh$ then $\mathfrak{J}^n M=0$, and so the corresponding $\OO_X$-module
-$\sh{J}^n\sh{F}=\widetilde{\mathfrak{J}^n M}$ \sref{1.1.3.13} is zero.
+conclude that if $n=mh$ then $\fk{J}^n M=0$, and so the corresponding $\OO_X$-module
+$\sh{J}^n\sh{F}=\widetilde{\fk{J}^n M}$ \sref{1.1.3.13} is zero.
 \end{proof}
 
 \begin{cor}[9.3.5]
@@ -919,29 +919,29 @@ In fact, it follows from \sref{1.9.4.9} that $\sh{B}$ is the inductive limit (as
 \begin{env}[10.1.1]
 \label{1.10.1.1}
 Let $A$ be an {\em admissible} topological ring \sref[0]{0.7.1.2}; for each
-ideal of definition $\mathfrak{J}$ of $A$, $\Spec(A/\mathfrak{J})$ identifies
-with the closed subspace $V(\mathfrak{J})$ of $\Spec(A)$ \sref{1.1.1.11},
+ideal of definition $\fk{J}$ of $A$, $\Spec(A/\fk{J})$ identifies
+with the closed subspace $V(\fk{J})$ of $\Spec(A)$ \sref{1.1.1.11},
 the set of {\em open} prime ideals of $A$; this topological space does not depend
 \oldpage[I]{181}
-on the ideal of definition $\mathfrak{J}$ considered; we denote this topological
-space by $\mathfrak{X}$. Let $(\mathfrak{J}_\lambda)$ be a fundamental system
+on the ideal of definition $\fk{J}$ considered; we denote this topological
+space by $\fk{X}$. Let $(\fk{J}_\lambda)$ be a fundamental system
 of neighborhoods of $0$ in $A$, consisting of ideals of definition, and for each
 $\lambda$, let $\OO_\lambda$ be the structure sheaf of
-$\Spec(A/\mathfrak{J}_\lambda)$; this sheaf is induced on $\mathfrak{X}$ by
-$\widetilde{A}/\widetilde{\mathfrak{J}_\lambda}$ (which is zero outside of
-$\mathfrak{X}$). For $\mathfrak{J}_\mu\subset\mathfrak{J}_\lambda$, the
-canonical homomorphism $A/\mathfrak{J}_\mu\to A/\mathfrak{J}_\lambda$ thus
+$\Spec(A/\fk{J}_\lambda)$; this sheaf is induced on $\fk{X}$ by
+$\widetilde{A}/\widetilde{\fk{J}_\lambda}$ (which is zero outside of
+$\fk{X}$). For $\fk{J}_\mu\subset\fk{J}_\lambda$, the
+canonical homomorphism $A/\fk{J}_\mu\to A/\fk{J}_\lambda$ thus
 defines a homomorphism $u_{\lambda\mu}:\OO_\mu\to\OO_\lambda$ of sheaves of
 rings \sref{1.1.6.1}, and $(\OO_\lambda)$ is a {\em projective system of
-sheaves of rings} for these homomorphisms. As the topology of $\mathfrak{X}$
+sheaves of rings} for these homomorphisms. As the topology of $\fk{X}$
 admits a basis consisting of quasi-compact open subsets, we can associate to
 each $\OO_\lambda$ a {\em sheaf of pseudo-discrete topological rings}
 \sref[0]{0.3.8.1} which have $\OO_\lambda$ as the underlying (without topology)
 sheaf of rings, and that we denote also by $\OO_\lambda$; and the $\OO_\lambda$ give again a
 {\em projective system of sheaves of topological rings} \sref[0]{0.3.8.2}.
-We denote by $\OO_\mathfrak{X}$ the {\em sheaf of topological rings} on $\mathfrak{X}$, the
+We denote by $\OO_\fk{X}$ the {\em sheaf of topological rings} on $\fk{X}$, the
 projective limit of the system $(\OO_\lambda)$; for each {\em quasi-compact} open subset $U$
-aof $\mathfrak{X}$, then $\Gamma(U,\OO_\mathfrak{X})$ is a topological ring, the projective
+aof $\fk{X}$, then $\Gamma(U,\OO_\fk{X})$ is a topological ring, the projective
 limit of the system of {\em discrete} rings $\Gamma(U,\OO_\lambda)$
 \sref[0]{0.3.2.6}.
 \end{env}
@@ -949,16 +949,16 @@ limit of the system of {\em discrete} rings $\Gamma(U,\OO_\lambda)$
 \begin{defn}[10.1.2]
 \label{1.10.1.2}
 Given an admissible topological ring $A$, we define the formal spectrum of $A$, and denote
-it by $\Spf(A)$, to be the closed subspace $\mathfrak{X}$ of $\Spec(A)$ consisting of the
+it by $\Spf(A)$, to be the closed subspace $\fk{X}$ of $\Spec(A)$ consisting of the
 open prime ideals of $A$. We say that a topologically ringed space is a formal affine scheme
-if it is isomorphic to a formal spectrum $\Spf(A)=\mathfrak{X}$ equipped with a sheaf of
-topological rings $\OO_\mathfrak{X}$ which is the projective limit of sheaves of
+if it is isomorphic to a formal spectrum $\Spf(A)=\fk{X}$ equipped with a sheaf of
+topological rings $\OO_\fk{X}$ which is the projective limit of sheaves of
 psuedo-discrete topological rings
-$(\widetilde{A}/\widetilde{\mathfrak{J}_\lambda})|\mathfrak{X}$, where $\mathfrak{J}_\lambda$
+$(\widetilde{A}/\widetilde{\fk{J}_\lambda})|\fk{X}$, where $\fk{J}_\lambda$
 varies over the filtered set of ideals of definition for $A$.
 \end{defn}
 
-When we speak of a {\em formal spectrum $\mathfrak{X}=\Spf(A)$} as a formal affine scheme,
+When we speak of a {\em formal spectrum $\fk{X}=\Spf(A)$} as a formal affine scheme,
 
 \bibliography{the}
 \bibliographystyle{amsalpha}

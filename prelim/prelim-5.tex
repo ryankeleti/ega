@@ -380,14 +380,14 @@ Due to the above, we put $\sh{L}^{-1}=\shHom_{\OO_X}(\sh{L},\OO_X)$, and we say
 that $\sh{L}^{-1}$ is the {\em inverse} of $\sh{L}$. The terminology
 ``invertible sheaf'' can be justified in the following way when $X$ is a point
 and $\OO_X$ is a {\em local} ring $A$ with maximal ideal
-$\mathfrak{m}$; if $M$ and $M'$ are two $A$-modules ($M$ being of finite type)
+$\fk{m}$; if $M$ and $M'$ are two $A$-modules ($M$ being of finite type)
 such that $M\otimes_A M'$ is isomorphic to $A$, as
-$(A/\mathfrak{m})\otimes_A(M\otimes_A M')$ identifies with
-$(M/\mathfrak{m}M)\otimes_{A/\mathfrak{m}}(M'/\mathfrak{m}M')$, this latter
-tensor product of vector spaces over the field $A/\mathfrak{m}$ is isomorphic to
-$A/\mathfrak{m}$, which requires $M/\mathfrak{m}M$ and $M'/\mathfrak{m}M'$ to be
-of dimension $1$. For each element $z\in M$ not in $\mathfrak{m}M$, we have
-$M=Az+\mathfrak{m}M$, which implies that $M=Az$ according to Nakayama's Lemma,
+$(A/\fk{m})\otimes_A(M\otimes_A M')$ identifies with
+$(M/\fk{m}M)\otimes_{A/\fk{m}}(M'/\fk{m}M')$, this latter
+tensor product of vector spaces over the field $A/\fk{m}$ is isomorphic to
+$A/\fk{m}$, which requires $M/\fk{m}M$ and $M'/\fk{m}M'$ to be
+of dimension $1$. For each element $z\in M$ not in $\fk{m}M$, we have
+$M=Az+\fk{m}M$, which implies that $M=Az$ according to Nakayama's Lemma,
 $M$ being of finite type. Moreover, as the annihilator of $z$ kills
 $M\otimes_A M'$, which is isomorphic to $A$, this annihilator is $\{0\}$, and
 as a result $M$ is {\em isomorphic to $A$}. In the general case, this shows
@@ -486,13 +486,13 @@ modules $\Gamma_*(\sh{L},\sh{F})\to\Gamma_*(f^*(\sh{L}),f^*(\sh{F}))$}.
 
 \begin{env}[5.4.7]
 \label{0.5.4.7}
-One can show that there exists a {\em set} $\mathfrak{M}$ (also denoted
-$\mathfrak{M}(X)$) of invertible $\OO_X$-modules such that each invertible
-$\OO_X$-module is isomorphic to an element of $\mathfrak{M}$ only
+One can show that there exists a {\em set} $\fk{M}$ (also denoted
+$\fk{M}(X)$) of invertible $\OO_X$-modules such that each invertible
+$\OO_X$-module is isomorphic to an element of $\fk{M}$ only
 one;\footnote{See the book in preparation cited in the introduction.} we define
-on $\mathfrak{M}$ a composition law by sending two elements $\sh{L}$, $\sh{L}'$
-of $\mathfrak{M}$ to the unique element of $\mathfrak{M}$ isomorphic to
-$\sh{L}\otimes_{\OO_X}\sh{L}'$. With this composition law, {\em $\mathfrak{M}$
+on $\fk{M}$ a composition law by sending two elements $\sh{L}$, $\sh{L}'$
+of $\fk{M}$ to the unique element of $\fk{M}$ isomorphic to
+$\sh{L}\otimes_{\OO_X}\sh{L}'$. With this composition law, {\em $\fk{M}$
 is a group isomorphic to the cohomology group $\HH^1(X,\OO_X^*)$}, where
 $\OO_X^*$ is the subsheaf of $\OO_X$ such that $\Gamma(U,\OO_X^*)$ is the group
 of invertible elements of the ring $\Gamma(U,\OO_X)$ for each open $U\subset X$
@@ -503,42 +503,42 @@ $\Gamma(U,\OO_X^*)$ canonically identifies with the {\em automorphism group} of
 the $(\OO_X|U)$-module $\OO_X|U$, the identification sending a section
 $\varepsilon$ of $\OO_X^*$ over $U$ to the automorphism $u$ of $\OO_X|U$ such
 that $u_x(s_x)=\varepsilon_x s_x$ for all $x\in X$ and all $s_x\in\OO_x$. Then
-let $\mathfrak{U}=(U_\lambda)$ be an open cover of $X$; the data, for each pair
+let $\fk{U}=(U_\lambda)$ be an open cover of $X$; the data, for each pair
 of indices $(\lambda,\mu)$, of an automorphism $\theta_{\lambda\mu}$ of
 $\OO_X|(U_\lambda\cap U_\mu)$ is the same as giving a {\em $1$-cochain} of the
-cover $\mathfrak{U}$, with values in $\OO_X^*$, and say that the
+cover $\fk{U}$, with values in $\OO_X^*$, and say that the
 $\theta_{\lambda\mu}$ satisfy the gluing condition \sref{0.3.3.1}, meaning
 that the corresponding cochain is a {\em cocycle}. Similarly, the data, for
 each $\lambda$, of an automorphism $\omega_\lambda$ of $\OO_X|U_\lambda$ is the
-same as the data of a $0$-cochain of the cover $\mathfrak{U}$, with values in
+same as the data of a $0$-cochain of the cover $\fk{U}$, with values in
 $\OO_X^*$, and its {\em coboundary} corresponds to the family of automorphisms
 $(\omega_\lambda|U_\lambda\cap U_\mu)
   \circ(\omega_\mu|U_\lambda\cap U_\mu)^{-1}$. We can send each $1$-cocycle of
-$\mathfrak{U}$ with values in $\OO_X^*$ to the element of $\mathfrak{M}$
+$\fk{U}$ with values in $\OO_X^*$ to the element of $\fk{M}$
 isomorphic to an invertible $\OO_X$-module obtained by gluing with respect to
 the family of automorphisms $(\theta_{\lambda\mu})$ corresponding to this
 cocycle, and to two cohomologous coycles correspond two equal elements of
-$\mathfrak{M}$ \sref{0.3.3.2}; in other words, we so define a map
-$\vphi_\mathfrak{U}:\HH^1(\mathfrak{U},\OO_X^*)\to\mathfrak{M}$. In addition, if
-$\mathfrak{B}$ is a second open cover of $X$, finer than $\mathfrak{U}$, the
+$\fk{M}$ \sref{0.3.3.2}; in other words, we so define a map
+$\vphi_\fk{U}:\HH^1(\fk{U},\OO_X^*)\to\fk{M}$. In addition, if
+$\fk{B}$ is a second open cover of $X$, finer than $\fk{U}$, the
 diagram
 \[
   \xymatrix{
-    \HH^1(\mathfrak{U},\OO_X^*)\ar[rd]^{\vphi_\mathfrak{U}}\ar[dd]\\
-    & \mathfrak{M}\\
-    \HH^1(\mathfrak{B},\OO_X^*)\ar[ur]_{\vphi_\mathfrak{B}}
+    \HH^1(\fk{U},\OO_X^*)\ar[rd]^{\vphi_\fk{U}}\ar[dd]\\
+    & \fk{M}\\
+    \HH^1(\fk{B},\OO_X^*)\ar[ur]_{\vphi_\fk{B}}
   }
 \]
 where the vertical arrow is the canonical homomorphism (G, II, 5.7), is
 commutative, as a result of \sref{0.3.3.3}. By passing to the inductive
-limit, we therefore obtain a map $\HH^1(X,\OO_X^*)\to\mathfrak{M}$, the \v Cech
+limit, we therefore obtain a map $\HH^1(X,\OO_X^*)\to\fk{M}$, the \v Cech
 cohomology group $\check{\HH}^1(X,\OO_X^*)$ identifying as we know with the
 first cohomology group $\HH^1(X,\OO_X^*)$ (G, II, 5.9, Cor. of Thm.~5.9.1). This
 map is {\em surjective}: indeed, by definition, for each invertible
 $\OO_X$-module $\sh{L}$, there is an open cover $(U_\lambda)$ of $X$ such that
 $\sh{L}$ is obtained by gluing the sheaves $\OO_X|U_\lambda$ \sref{0.3.3.1}.
 It is also {\em injective}, since it suffices to prove for the maps
-$\HH^1(\mathfrak{U},\OO_X)\to\mathfrak{M}$, and this follows from
+$\HH^1(\fk{U},\OO_X)\to\fk{M}$, and this follows from
 \sref{0.3.3.2}. It remains to show that
 \oldpage[0\textsubscript{I}]{52}
 the bijection thus defined is a group homomorphism. Given two invertible
@@ -568,14 +568,14 @@ note on p.~51.}
 \label{0.5.4.8}
 Let $f=(\psi,\omega)$ be a morphism $Y\to X$ of ringed spaces. The functor
 $f^*(\sh{L})$ to the category of free $\OO_X$-modules defines a map (which we
-still denote $f^*$ by abuse of language) from the set $\mathfrak{M}(X)$ to the
-set $\mathfrak{M}(Y)$. Second, we have a canonical homomorphism (T, 3.2.2)
+still denote $f^*$ by abuse of language) from the set $\fk{M}(X)$ to the
+set $\fk{M}(Y)$. Second, we have a canonical homomorphism (T, 3.2.2)
 \[
   \HH^1(X,\OO_X^*)\longrightarrow\HH^1(Y,\OO_Y^*).
   \tag{5.4.8.1}
 \]
-When we canonically identify \sref{0.5.4.7} $\mathfrak{M}(X)$ and
-$\HH^1(X,\OO_X^*)$ (resp. $\mathfrak{M}(Y)$ and $\HH^1(Y,\OO_Y^*)$), the
+When we canonically identify \sref{0.5.4.7} $\fk{M}(X)$ and
+$\HH^1(X,\OO_X^*)$ (resp. $\fk{M}(Y)$ and $\HH^1(Y,\OO_Y^*)$), the
 homomorphism (5.4.8.1) {\em identifies with the map $f^*$}. Indeed, if $\sh{L}$
 comes from a cocycle $(\varepsilon_{\lambda\mu})$ corresponding to an open cover
 $(U_\lambda)$ of $X$, it suffices to show that $f^*(\sh{L})$ comes from a
@@ -643,13 +643,13 @@ and from the relation $f^*(\OO_Y)=\OO_X$.
 We say that a ringed space $(X,\OO_X)$ is a {\em locally ringed space} if, for
 each $x\in X$, $\OO_x$ is a local ring; these ringed spaces will be by far the
 most frequent ringed spaces that we will consider in this work. We then denote
-by $\mathfrak{m}_x$ the {\em maximal ideal} of $\OO_x$, by $\kres(x)$ the
-{\em residue field $\OO_x/\mathfrak{m}_x$}; for each $\OO_X$-module $\sh{F}$,
+by $\fk{m}_x$ the {\em maximal ideal} of $\OO_x$, by $\kres(x)$ the
+{\em residue field $\OO_x/\fk{m}_x$}; for each $\OO_X$-module $\sh{F}$,
 each open set $U$ of $X$, each point $x\in U$, and each section
 $f\in\Gamma(U,\sh{F})$, we denote by $f(x)$ the {\em class} of the germ
-$f_x\in\sh{F}_x$ mod $\mathfrak{m}_x\sh{F}_x$, and we say that this is the
+$f_x\in\sh{F}_x$ mod $\fk{m}_x\sh{F}_x$, and we say that this is the
 {\em value} of $f$ at the point $x$. The relation $f(x)=0$ then means that
-$f_x\in\mathfrak{m}_x\sh{F}_x$; when this is so, we say (by abuse of language)
+$f_x\in\fk{m}_x\sh{F}_x$; when this is so, we say (by abuse of language)
 that {\em $f$ is zero at $x$}. We will take care not to confuse this relation
 with $f_x=0$.
 \end{env}
@@ -661,7 +661,7 @@ section of $\sh{L}$ over $X$. There is then an {\em equivalence} between the
 three following properties for a point $x\in X$:
 \begin{enumerate}[label=(\alph*)]
   \item {\em $f_x$ is a generator of $\sh{L}_x$};
-  \item {\em $f_x\not\in\mathfrak{m}_x\sh{L}_x$} (in other words, $f(x)\neq 0$);
+  \item {\em $f_x\not\in\fk{m}_x\sh{L}_x$} (in other words, $f(x)\neq 0$);
   \item {\em there exists a section $g$ of $\sh{L}^{-1}$ over an open
     neighborhood $V$ of $x$ such that the canonical image of $f\otimes g$
     in $\Gamma(V,\OO_X)$ \sref{0.5.4.3} is the unit section}.
@@ -669,7 +669,7 @@ three following properties for a point $x\in X$:
 
 Indeed, the question being local, we can reduce to the case where
 $\sh{L}=\OO_X$; the equivalence of (a) and (b) are then evident, and it is clear
-that (c) implies (b). Conversely, if $f_x\not\in\mathfrak{m}_x$, $f_x$ is
+that (c) implies (b). Conversely, if $f_x\not\in\fk{m}_x$, $f_x$ is
 invertible in $\OO_x$, say $f_x g_x=1_x$. By definition of germs of sections,
 this means that there exists a neighborhood $V$ of $x$ and a section $g$ of
 $\OO_X$ over $V$ such that $fg=1$ in $V$, hence (c).
@@ -699,9 +699,9 @@ proposition is evident.
 Let $\sh{F}$ be a locally free $\OO_X$ of rank $n$; it is immediate that $\wedge^p\sh{F}$ is
 a locally free $\OO_X$-module of rank $\binom{n}{p}$ if $p\leqslant n$ and $0$ if
 $p>n$, since the question is local and we can reduce to the case where $\sh{F}=\OO_X^n$;
-in addition, for each $x\in X$, $(\wedge^p\sh{F})_x/\mathfrak{m}_x(\wedge^p\sh{F})_x$ is a
+in addition, for each $x\in X$, $(\wedge^p\sh{F})_x/\fk{m}_x(\wedge^p\sh{F})_x$ is a
 vector space of dimension $\binom{n}{p}$ over $\kres(x)$, which canonically identifies with
-$\wedge^p(\sh{F}_x/\mathfrak{m}_x\sh{F}_x)$. Let $s_1,\dots,s_p$ be the sections of $\sh{F}$
+$\wedge^p(\sh{F}_x/\fk{m}_x\sh{F}_x)$. Let $s_1,\dots,s_p$ be the sections of $\sh{F}$
 over an open set $U$ of $X$, and let $s=s_1\wedge\cdots\wedge s_p$, which is a section of
 $\wedge^p\sh{F}$ over $U$ \sref{0.4.1.5}; we have $s(x)=s_1(x)\wedge\cdots\wedge s_p(x)$,
 and as a result, we say that the $s_1(x),\dots,s_p(x)$ are {\em linearly dependent} means
@@ -727,19 +727,19 @@ that $u|U$ is {\em injective} and that $\sh{F}|U$ is {\em the direct sum of the
 $u(\sh{E})|U$ and of a locally free $(\OO_X|U)$-submodule $\sh{G}$}, it is necessary and
 sufficient that $u_x:\sh{E}_x\to\sh{F}_x$ gives, by passing to quotients, an {\em injective}
 homomorphism of vector spaces
-$\sh{E}_x/\mathfrak{m}_x\sh{E}_x\to\sh{F}_x/\mathfrak{m}_x\sh{F}_x$. The condition is indeed
+$\sh{E}_x/\fk{m}_x\sh{E}_x\to\sh{F}_x/\fk{m}_x\sh{F}_x$. The condition is indeed
 {\em necessary}, since $\sh{F}_x$ is then the direct sum of the free $\OO_x$-modules
-$u_x(\sh{E}_x)$ and $\sh{G}_x$, so $\sh{F}_x/\mathfrak{m}_x\sh{F}_x$ is the direct sum of
-$u_x(\sh{E}_x)/\mathfrak{m}_x u_x(\sh{E}_x)$ and of $\sh{G}_x/\mathfrak{m}_x\sh{G}_x$. The
+$u_x(\sh{E}_x)$ and $\sh{G}_x$, so $\sh{F}_x/\fk{m}_x\sh{F}_x$ is the direct sum of
+$u_x(\sh{E}_x)/\fk{m}_x u_x(\sh{E}_x)$ and of $\sh{G}_x/\fk{m}_x\sh{G}_x$. The
 condition is {\em sufficient}, since we can reduce to the case where $\sh{E}=\OO_X^m$; let
 $s_1,\dots,s_m$ be the images under $u$ of the sections $e_i$ of $\OO_X^m$ such that
 $(e_i)_y$ is equal to the $i$-th element of the canonical basis of $\OO_y^m$ for each
 $y\in Y$ ({\em canonical sections} of $\OO_X^m$); by hypothesis $s_1(x),\dots,s_m(x)$ are
 linearly independent, so, if $\sh{F}$ is of rank $n$, there exists $n-m$ sections
 $s_{m+1},\dots,s_n$ of $\sh{F}$ over a neighborhood $V$ of $x$ such that the $s_i(x)$
-($1\leqslant i\leqslant n$) form a basis for $\sh{F}_x/\mathfrak{m}_x\sh{F}_x$. There then
+($1\leqslant i\leqslant n$) form a basis for $\sh{F}_x/\fk{m}_x\sh{F}_x$. There then
 exists \sref{0.5.5.4} a neighborhood $U\subset V$ of $x$ such that the $s_i(y)$
-($1\leqslant i\leqslant n$) form a basis for $\sh{F}_y/\mathfrak{m}_y\sh{F}_y$ for each
+($1\leqslant i\leqslant n$) form a basis for $\sh{F}_y/\fk{m}_y\sh{F}_y$ for each
 $y\in V$, and we conclude \sref{0.5.5.4} that there is an isomorphism from $\sh{F}|U$ to
 $\OO_X^n|U$, sending the $s_i|U$ ($1\leqslant i\leqslant m$) to the $e_i|U$, which finishes
 the proof.
