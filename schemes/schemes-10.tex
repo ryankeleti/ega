@@ -46,7 +46,7 @@ $(\widetilde{A}/\widetilde{\fk{J}_\lambda})|\fk{X}$, where $\fk{J}_\lambda$
 varies over the filtered set of ideals of definition for $A$.
 \end{defn}
 
-When we speak of a {\em formal spectrum $\fk{X}=\Spf(A)$} as a formal affine scheme, it will always be as the topologically-ringed space $(\fk{X},\OO_\fk{X})$ where $\OO_\fk{X}$ is defined as above.
+When we speak of a {\em formal spectrum $\fk{X}=\Spf(A)$} as a formal affine scheme, it will always be as the topologically ringed space $(\fk{X},\OO_\fk{X})$ where $\OO_\fk{X}$ is defined as above.
 
 We note that every \emph{affine scheme} $X=\Spec(A)$ can be considered as a formal affine scheme in only one way, by considering $A$ as a discrete topological ring: the topological rings $\Gamma(U,\OO_X)$ are then discrete whenever $U$ is quasi-compact (but not, in general, when $U$ is an arbitrary open subset of $X$).
 
@@ -62,7 +62,7 @@ Indeed, since $\fk{X}$ is closed in $\Spec(A)$, it is quasi-compact, and so $\Ga
 
 \begin{prop}[10.1.4]
 \label{1.10.1.4}
-Let $A$ be an admissible ring, $\fk{X}=\Spf(A)$, and, for every $f\in A$, let $\fk{D}(f)=D(f)\cap\fk{X}$; then the topologically-ringed space $(\fk{D}(f),\OO_\fk{X}|\fk{D}(f))$ is isomorphic to the formal affine spectrum $\Spf(A_{\{f\}}$ \sref[0]{0.7.6.15}.
+Let $A$ be an admissible ring, $\fk{X}=\Spf(A)$, and, for every $f\in A$, let $\fk{D}(f)=D(f)\cap\fk{X}$; then the topologically ringed space $(\fk{D}(f),\OO_\fk{X}|\fk{D}(f))$ is isomorphic to the formal affine spectrum $\Spf(A_{\{f\}}$ \sref[0]{0.7.6.15}.
 \end{prop}
 
 \begin{proof}
@@ -73,7 +73,7 @@ Further, for every quasi-compact open subset $U$ of $\fk{X}$ contained in $\fk{D
 
 \begin{env}[10.1.5]
 \label{1.10.1.5}
-As a sheaf of rings \emph{without topology}, the structure sheaf $\OO_\fk{X}$ of $\Spf(A)$ admits, for every $x\in\fk{X}$, a fibre which, by \sref{1.10.1.4}, can be identified with the inductive limit $\varindlim A_{\{f\}}$ for the $f\not\in\fk{j}_x$.
+As a sheaf of rings \emph{without topology}, the structure sheaf $\OO_\fk{X}$ of $\Spf(A)$ admits, for every $x\in\fk{X}$, a fibre which, by \sref{1.10.1.4}, can be identified with the inductive limit $\varinjlim A_{\{f\}}$ for the $f\not\in\fk{j}_x$.
 Then, by \sref[0]{0.7.6.17} and \sref[0]{0.7.6.18}:
 \end{env}
 
@@ -87,3 +87,15 @@ Since $\kres(x)$ is not reduced at $0$, we conclude from this result that the \e
 
 \subsection{Morphisms of formal affine schemes}
 \label{subsection-morphisms-of-formal-affine-schemes}
+
+\begin{env}[10.2.1]
+\label{1.10.2.1}
+Let $A$, $B$ be two admissible rings, and let $\vphi:B\to A$ be a {\em continuous} morphism.
+The continuous map ${}^a\vphi:\Spec(A)\to\Spec(B)$ \sref{1.1.2.1} then maps $\fk{X}=\Spf(A)$ to $\fk{Y}=\Spf(B)$, since the inverse image under $\vphi$ of an open prime ideal of $A$ is an open prime ideal of $B$.
+On the other hand, for all $g\in B$, $\vphi$ defines a continuous homomorphism $\Gamma(\fk{D}(g),\OO_\fk{Y})\to\Gamma(\fk{D}(\vphi(g)),\OO_\fk{X})$ according to \sref{1.10.1.4}, \sref{1.10.1.3}, and \sref[0]{0.7.6.7}; as these homomorphisms satisfy the compatibility conditions for the restrictions corresponding to the change from $g$ to a multiple of $g$, and as $\fk{D}(\vphi(g))={}^a\vphi^{-1}(\fk{D}(g))$, they define a {\em continuous} homomorphisms of sheaves of topological rings $\OO_\fk{Y}\to{}^a\vphi_*(\OO_\fk{X})$ \sref[0]{0.3.2.5}, that we denote by $\widetilde{\vphi}$; we have thus defined a morphism $\Phi=({}^a\vphi,\widetilde{\vphi})$ of topologically ringed spaces $\fk{X}\to\fk{Y}$.
+We note that as a homomorphism of sheaves without topology, $\widetilde{\vphi}$ defines a homomorphism $\widetilde{\vphi}_x^\sharp:\OO_{{}^a\vphi(x)}\to\OO_x$ on the stalks, for all $x\in\fk{X}$.
+\end{env}
+
+
+
+
