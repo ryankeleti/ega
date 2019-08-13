@@ -408,3 +408,67 @@ Indeed, we are led (by \hyperref[1.7.3.3]{(7.3.3)}) to the case where $X$ and $Y
 \end{proof}
 
 \subsection{Torsion sheaves and torsion-free sheaves}
+\label{subsection-torsion-sheaves-and-torsion-free-sheaves}
+
+\begin{env}[7.4.1]
+\label{1.7.4.1}
+Let $X$ be an \emph{integral} scheme.
+For every $\OO_X$-module $\sh{F}$, the canonical homomorphism $\OO_X\to\sh{R}(X)$ defines, by tensoring, a homomorphism (again said to be \emph{canonical}) $\sh{F}\to\sh{F}\otimes_{\OO_X}\sh{R}(X)$, which, on each fibre, is exactly the homomorphism $z\to z\otimes1$ from $\sh{F}_x$ to $\sh{F}_x\otimes_{\OO_X}R(X)$.
+The \emph{kernel $\sh{T}$} of this homomorphism is a sub-$\OO_X$-module of $\sh{F}$, called the \emph{torsion sheaf} of $\sh{F}$; it is quasi-coherent if $\sh{F}$ is quasi-coherent (\hyperref[1.4.1.1]{4.1.1} and \hyperref[1.7.3.6]{7.3.6}).
+We say that $\sh{F}$ is \emph{torsion free} if $\sh{T}=0$, and that $\sh{F}$ is a \emph{torsion sheaf} if $\sh{T}=\sh{F}$.
+For every $\OO_X$-module $\sh{F}$, $\sh{F}/\sh{T}$ is torsion free.
+We deduce from \hyperref[1.7.3.5]{(7.3.5)} that:
+\end{env}
+
+\begin{prop}[7.4.2]
+\label{1.7.4.2}
+If $X$ is an integral prescheme, then every torsion-free quasi-coherent $\OO_X$-module $\sh{F}$ is isomorphic to a subsheaf $\sh{G}$ of a simple sheaf of the form $(\sh{R}(X))^{(I)}$, generated (as a $\sh{R}(X)$-module) by $\sh{G}$.
+\end{prop}
+
+The cardinality of $I$ is called the \emph{rank} of $\sh{F}$; for every non-empty affine open subset $U$ of $X$, the rank of $\sh{F}$ is equal to the rank of $\Gamma(U,\sh{F})$ as a $\Gamma(U,\OO_X)$-module, and we see by considering the generic point of $X$, contained in $U$.
+In particular:
+
+\begin{cor}[7.4.3]
+\label{1.7.4.3}
+On an integral prescheme $X$, every torsion-free quasi-coherent $\OO_X$-module of rank 1 (in particular, every invertible $\OO_X$-module) is isomorphic to a sub-$\OO_X$-module of $\sh{R}(X)$, and vice versa.
+\end{cor}
+
+\begin{cor}[7.4.4]
+\label{1.7.4.4}
+Let $X$ be an integral prescheme, $\sh{L}$ and $\sh{L}'$ two torsion-free $\OO_X$-modulesm and $f$ (\emph{resp.} $f'$) a section of $\sh{L}$ (\emph{resp.} $\sh{L}'$) over $X$.
+In order that $f\otimes f'=0$, it is necessary and sufficient that one of the sections $f$ and $f'$ be null.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.7.4.4}
+Let $x$ be the generic point of $X$; we have, by hypothesis, that $(f\otimes f')_x = f_x\otimes f'_x = 0$.
+Since $\sh{L}_x$ and $\sh{L}'_x$ can be identified with sub-$\OO_X$-modules of the field $\OO_x$, the above equation leads to $f_x=0$ or $f'_x=0$, and thus $f=0$ or $f'=0$, since $\sh{L}$ and $\sh{L}'$ are torsion free \hyperref[1.7.3.5]{(7.3.5)}.
+\end{proof}
+
+\begin{prop}[7.4.5]
+\label{1.7.4.5}
+Let $X$ and $Y$ be two integral preschemes, and $f\colon X\to Y$ a dominant morphism.
+For every torsion-free quasi-coherent $\OO_X$-modules $\sh{F}$, $f_*(\sh{F})$ is a torsion-free $\OO_Y$-module.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.7.4.5}
+Since\oldpage[I]{164} $f_*$ is left exact \hyperref[0.4.2.1]{(\textbf{0},~4.2.1)}, it suffices, by \hyperref[1.7.4.2]{(7.4.2)}, to prove the proposition when $\sh{F}=(\sh{R}(X))^{(I)}$.
+But every non-empty open subset $U$ of $Y$ contains the generic point of $Y$, so $f^{-1}(U)$ contains the generic point of $X$ \hyperref[0.2.1.5]{(\textbf{0},~2.1.5)}, so we have that $\Gamma(U,f_*(\sh{F})) = \Gamma(f^{-1}(U),\sh{F}) = (R(X))^{(I)}$; in other words, $f_*(\sh{F})$ is the simple sheaf with fibre $(R(X))^{(I)}$, considered as a $\sh{R}(Y)$-module, and it is clearly torsion free.
+\end{proof}
+
+\begin{prop}[7.4.6]
+\label{1.7.4.6}
+Let $X$ be an integral prescheme, and $x$ its generic point.
+For every quasi-coherent $\OO_X$-module $\sh{F}$ of finite type, the following conditions are equivalent: \emph{a)} $\sh{F}$ is a torsion sheaf; \emph{b)} $\sh{F}_x=0$y \emph{c)} $\Supp(\sh{F})\neq X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.7.4.6}
+By \hyperref[1.7.3.5]{(7.3.5)} and \hyperref[1.7.4.1]{(7.4.1)}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so \emph{a)} and \emph{b)} are equivalent; also, $\Supp(\sh{F})$ is closed in $X$ \hyperref[0.5.2.2]{(\textbf{0},~5.2.2)}, and since every non-empty open subset of $X$ contains $x$, \emph{b)} and \emph{c)} are equivalent.
+\end{proof}
+
+\begin{env}[7.4.7]
+\label{1.7.4.7}
+We generalise (by an abuse of language) the definitions of \hyperref[1.7.4.1]{(7.4.1)} to the case where $X$ is a \emph{reduced} prescheme having only a \emph{finite} number of irreducible components; it then follows from \hyperref[1.7.3.4]{(7.3.4)} that the equivalence between \emph{a)} and \emph{c)} in \hyperref[1.7.4.6]{(7.4.6)} still holds true for such a prescheme.
+\end{env}
