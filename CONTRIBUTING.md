@@ -12,6 +12,7 @@
 - some chapters (I think just V and VI) have already been translated: [check here](https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/pubtexts.php)
 
 ## LaTeX conventions
+- one sentence per line (with the exception of also splitting really long sentences at semi-colons, for example)
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
 - `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
 - `\cat` for categories, e.g. `\cat{Set}` for the category of sets; use `\C` for a "default" category, and `\op` for the opposite category (`C^op => \C\op`).
