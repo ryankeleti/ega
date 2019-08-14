@@ -15,59 +15,29 @@
 \medskip
 
 \oldpage[I]{5}
-This memoir, and the many others that must follow, are intended to form a
-treatise on the foundations of algebraic geometry. They do not assume, in
-principle, any particular knowledge of this discipline, and it has even been
-that such knowledge, despite its obvious advantages, could sometimes (by the
-too-exclusive habit that the birational point of view it implies) to be harmful
-to the one who wants to become familiar with the point of view and techniques
-presented here. However, we assume that the reader has a good knowledge of the
-following topics:
+This memoir, and the many others will undoubtedly follow, are intended to form a treatise on the foundations of algebraic geometry.
+They do not, in principle, presume any particular knowledge of the subject, and it has even been recognised that such knowledge, despite its obvious advantages, could sometimes (by the too-exclusive habit of the birational point of view it implies) be a hindrance to the one who wants to become familiar with the point of view and techniques presented here.
+However, we assume that the reader has a good knowledge of the following topics:
 \begin{enumerate}[label=(\alph*)]
-  \item {\em Commutative algebra}, as it is exhibited for example in
-    volumes under preparation of the {\em \'El\'ements} of N.~Bourbaki
-    (and, pending the publication of these volumes, in Samuel--Zariski
-    \cite{I-13} and Samuel \cite{I-11,I-12}).
-  \item {\em Homological algebra}, for which we refer to Cartan--Eilenberg
-    \cite{I-2} (cited as (M)) and Godement \cite{I-4} (cited as (G)), as well
-    as the recent article by A. Grothendieck \cite{I-6} (cited as (T)).
-  \item {\em Sheaf theory}, where our main references will be (G) and (T);
-    this theory provides the essential language for interpreting in
-    ``geometric'' terms the essential notions of commutative algebra,
-    and to ``globalize'' them.
-  \item Finally, it will be useful for the reader to have some familiarity with
-    {\em functorial language}, which will be constantly used in this
-    treatise, and for which the reader may consult (M), (G), and especially
-    (T); the principles of this language and the main results of the general
-    theory of functors will be described in more detail in a book currently
-    in preparation by the authors of this treatise.
+    \item {\em Commutative algebra}, as it is laid out, for example, in the volumes (in progress of being written) of the {\em \'El\'ements} of N.~Bourbaki (and, pending the publication of these volumes, in Samuel--Zariski \cite{I-13} and Samuel \cite{I-11,I-12}).
+    \item {\em Homological algebra}, for which we refer to Cartan--Eilenberg \cite{I-2} (cited as (M)) and Godement \cite{I-4} (cited as (G)), as well as the recent article by A. Grothendieck \cite{I-6} (cited as (T)).
+    \item {\em Sheaf theory}, where our main references will be (G) and (T);
+        this theory provides the essential language for interpreting, in ``geometric'' terms, the essential notions of commutative algebra, and for ``globalizing'' them.
+    \item Finally, it will be useful for the reader to have some familiarity with {\em functorial language}, which will be constantly used in this treatise, and for which the reader may consult (M), (G), and especially (T);
+        the principles of this language and the main results of the general theory of functors will be described in more detail in a book currently in preparation by the authors of this treatise.
 \end{enumerate}
 
 \sectionbreak
 
-It is not the place, in this introduction, to give a more or less summarily
-description from the point of view of ``schemes'' in algebraic geometry, nor the
-long list of reasons which made its adoption necessary, and in particular the
-systematic acceptance of nilpotent elements in the local rings of ``manifolds''
-that we consider (which necessarily shifts the idea of rational maps into
-the background, in favor of those of regular maps or ``morphisms''). This
-treatise aims precisely to systematically develop the language of schemes, and
-will demonstrate, we hope, its necessity. Although it would be easy to do so,
-\oldpage[I]{6}
-we will not try to give here an ``intuitive'' introduction to the
-notions developed in Chapter~I. For the reader who would like to have a glimpse
-of the preliminary study of the subject matter of this treatise, we refer them
-to the conference by A.~Grothendieck at the International Congress of
-Mathematicians in Edinburgh in 1958 \cite{I-7}, and the expos\'e \cite{I-8} of the
-same author. The work \cite{I-14} (cited as (FAC)) of J.-P.~Serre can also be
-considered as an intermediary exposition between the classical point of view and
-the point of view of schemes in algebraic geometry, and, as such, its reading
-may be an excellent preparation to that of our {\em \'El\'ements}.
+It is not the place, in this introduction, to give a more or less summarily description from the ``schemes'' point of view in algebraic geometry, nor the long list of reasons which made its adoption necessary, and in particular the systematic acceptance of nilpotent elements in the local rings of ``manifolds'' that we consider (which necessarily shifts the idea of rational maps into the background, in favor of those of regular maps or ``morphisms'').
+To be precise, this treatise aims to systematically develop the language of schemes, and will demonstrate, we hope, its necessity.
+Although it would be easy to do so,\oldpage[I]{6} we will not try to give here an ``intuitive'' introduction to the notions developed in Chapter~I.
+For the reader who would like to have a glimpse of the preliminary study of the subject matter of this treatise, we refer them to the conference by A.~Grothendieck at the International Congress of Mathematicians in Edinburgh in 1958 \cite{I-7}, and the expos\'e \cite{I-8} of the same author.
+The work \cite{I-14} (cited as (FAC)) of J.-P.~Serre can also be considered as an intermediary exposition between the classical point of view and the schemes point of view in algebraic geometry, and, as such, its reading may be an excellent preparation for the reading of our {\em \'El\'ements}.
 
 \sectionbreak
 
-We give below the general outline planned for this treatise, subject to later
-modifications, especially concerning the later chapters.
+We give below the general outline planned for this treatise, subject to later modifications, especially concerning the later chapters.
 
 \begin{tabular}{rrl}
 Chapter & I. & --- The language of schemes.\\
@@ -88,174 +58,72 @@ Riemann--Roch theorem.\\
 
 \bigskip
 
-In principle, all chapters are considered open to changes, and supplementary
-paragraphs can always be added later; such paragraphs would appear in separate
-fascicles in order to minimize the inconveniences accompanying whatever mode of
-publication adopted. When the writing of such a paragraph is foreseen or in
-progress during the publication of a chapter, it will be mentioned in the
-summary of the chapter in question, even if, owing to certain orders of urgency,
-\unsure{its actual publication clearly ought to have been later.} For the use of
-the reader, we give in ``Chapter~0'' the necessary tools in commutative algebra,
-homological algebra, and sheaf theory, that will be used throughout this
-treatise, that are more or less well known but for which it was not possible to
-give convenient references. It is recommended for the reader to not read
-Chapter~0 except whilst reading the actual treatise, when the results to which
-we refer
-\oldpage[I]{7}
-seem unfamiliar. Besides, we think that in this way, the
-reading of this treatise could be a good method for the beginner to familiarize
-themselves with commutative algebra and homological algebra, whose study, when
-not accompanied with tangible applications, is considered tedious, or even
-depressing, by many.
+In principle, all chapters are considered open to changes, and supplementary sections could always be added later;
+such sections would appear in separate fascicles in order to minimize the inconveniences accompanying whatever mode of publication adopted.
+When the writing of such a section is foreseen or in progress during the publication of a chapter, it will be mentioned in the summary of the chapter in question, even if, owing to certain orders of urgency, its actual publication clearly ought to have been later.
+For the convenience of the reader, we give in ``Chapter~0'' the necessary tools in commutative algebra, homological algebra, and sheaf theory, that will be used throughout this treatise, that are more or less well known but for which it was not possible to give convenient references.
+It is recommended for the reader to not read Chapter~0 except whilst reading the actual treatise, when the results to which we refer\oldpage[I]{7} seem unfamiliar.
+Besides, we think that in this way, the reading of this treatise could be a good method for the beginner to familiarize themselves with commutative algebra and homological algebra, whose study, when not accompanied with tangible applications, is considered tedious, or even depressing, by many.
 
 \sectionbreak
 
-It is outside of our capabilities to give a historic overview, or even a summary
-thereof, of the ideas and results described. The text will contain only those
-references considered particularly useful for comprehension, and we indicate the
-origin only of the most important results. Formally, at least, the subjects
-discussed in our work are reasonably new, which explains the scarcity of
-references made to the fathers of algebraic geometry from the 19th to the
-beginning of the 20th century, whose works we know only by hear-say. It is
-suitable, however, to say some words here about the works which have most
-directly influenced the authors and contributed to the development of
-scheme-theoretic point of view. We absolutely must mention the fundamental work
-(FAC) of J.-P.~Serre first, which has served as an introduction to algebraic
-geometry for more that one young student (one of the authors of this treatise
-being one), deterred by the dryness of the classic {\em Foundations} of A.~Weil
-\cite{I-18}. It is there that it is shown, for the first time, that the ``Zariski
-topology'' of an ``abstract'' algebraic variety is perfectly suited to applying
-certain techniques from algebraic topology, and notably to be able to define a
-cohomology theory. Further, the definition of an algebraic variety given
-therein is that which translates most naturally to the idea that we develop
-here\footnote{Just as J.-P.~Serre informed us, it is right to note that the idea
-of defining the structure of a manifold by the data of a sheaf of rings is due
-to H.~Cartan, who took this idea as the starting point of his theory of analytic
-spaces. Of course, just as in algebraic geometry, it would be important in
-``analytic geometry'' to give the right to use nilpotent elements in local rings
-of analytic spaces. This extension of the definition of H.~Cartan and
-J.-P.~Serre has recently been broached by H.~Grauert \cite{I-5}, and there is room
-to hope that a systematic report of analytic geometry in this setting will soon
-see the light of day. It is also evident that the ideas and techniques developed
-in this treatise retain a sense of analytic geometry, even though one must
-expect more considerable technical difficulties in this latter theory. We can
-foresee that algebraic geometry, by the simplicity of its methods, will be able
-to serve as a sort of formal model for future developments in the theory of
-analytic spaces.}. Serre himself had incidentally noted that the cohomology
-theory of affine algebraic varieties could translate without difficulty by
-replacing the affine algebras over a field by arbitrary commutative rings.
-Chapters~I and II of this treatise, and the first two paragraphs of Chapter~III,
-can thus be considered, for the most part, as easy translations, in this bigger
-framework, of the principal results of (FAC) and a later article of the same
-author \cite{I-15}. We have also vastly profited from the {\em S\'eminaire de
-G\'eom\'etrie Alg\'ebrique} de C.~Chevalley \cite{I-1}; in particular, the
-systematic usage of ``constructible sets'' introduced by him has turned out to
-be extremely useful in the theory of schemes (cf. Chapter~IV). We have also
-borrowed from him the study of morphisms from
-\oldpage[I]{8}
-the point of view of dimension (Chapter~IV), that translates with negligible
-change to the framework of schemes. It also merits noting that the idea of
-``schemes of local rings'', introduced by Chevalley, naturally lends itself to
-being extended to algebraic geometry (not having, however, all the flexibility
-and generality that we intend to give it here); for the connections between this
-idea and our theory, see Chapter~I, \textsection8. One such extension has been
-developed by M.~Nagata in a series of memoirs \cite{I-9}, which contain many
-special results concerning algebraic geometry over Dedekind
-rings\footnote{Among the works that come close to our point of view of
-algebraic geometry, we pick out the work of E.~K\"ahler \cite{I-22} and a recent
-note of Chow and Igusa \cite{I-3}, which go back over certain results of (FAC) in
-the context of Nagata--Chevalley theory, as well as giving a K\"unneth
-formula.}.
+It is outside of our capabilities to give a historic overview, or even a summary thereof, of the ideas and results described herein.
+The text will contain only those references considered particularly useful for comprehension, and we indicate the origin of only the most important results.
+Formally, at least, the subjects discussed in our work are reasonably new, which explains the scarcity of references made to the fathers of algebraic geometry from the 19th to the beginning of the 20th century, whose works we know only by hear-say.
+It is suitable, however, to say some words here about the works which have most directly influenced the authors and contributed to the development of scheme-theoretic point of view.
+We absolutely must mention the fundamental work (FAC) of J.-P.~Serre first, which has served as an introduction to algebraic geometry for more that one young student (the author of this treatise being one), deterred by the dryness of the classic {\em Foundations} of A.~Weil \cite{I-18}.
+It is there that it is shown, for the first time, that the ``Zariski topology'' of an ``abstract'' algebraic variety is perfectly suited to applying certain techniques from algebraic topology, and notably to be able to define a cohomology theory.
+Further, the definition of an algebraic variety given therein is that which translates most naturally to the idea that we develop here\footnote{Just as J.-P.~Serre informed us, it is right to note that the idea of defining the structure of a manifold by the data of a sheaf of rings is due to H.~Cartan, who took this idea as the starting point of his theory of analytic spaces.%
+Of course, just as in algebraic geometry, it would be important in ``analytic geometry'' to give the allow the use of nilpotent elements in local rings of analytic spaces.%
+This extension of the definition of H.~Cartan and J.-P.~Serre has recently been broached by H.~Grauert \cite{I-5}, and there is room to hope that a systematic report of analytic geometry in this setting will soon see the light of day.%
+It is also evident that the ideas and techniques developed in this treatise retain a sense of analytic geometry, even though one must expect more considerable technical difficulties in this latter theory.%
+We can foresee that algebraic geometry, by the simplicity of its methods, will be able to serve as a sort of formal model for future developments in the theory of analytic spaces.}.
+Serre himself had incidentally noted that the cohomology theory of affine algebraic varieties could be translated without difficulty by replacing the affine algebras over a field by arbitrary commutative rings.
+Chapters~I and II of this treatise, and the first two paragraphs of Chapter~III, can thus be considered, for the most part, as easy translations, to this bigger framework, of the principal results of (FAC) and a later article of the same author \cite{I-15}.
+We have also vastly profited from the {\em S\'eminaire de G\'eom\'etrie Alg\'ebrique} de C.~Chevalley \cite{I-1};
+in particular, the systematic usage of ``constructible sets'' introduced by him has turned out to be extremely useful in the theory of schemes (cf. Chapter~IV).
+We have also borrowed from him the study of morphisms from\oldpage[I]{8} the point of view of dimension (Chapter~IV), that translates with negligible change to the framework of schemes.
+It also merits noting that the idea of ``schemes of local rings'', introduced by Chevalley, naturally lends itself to being extended to algebraic geometry (not having, however, all the flexibility and generality that we intend to give it here);
+for the connections between this idea and our theory, see Chapter~I, \textsection8.
+One such extension has been developed by M.~Nagata in a series of memoirs \cite{I-9}, which contain many special results concerning algebraic geometry over Dedekind rings\footnote{Among the works that come close to our point of view of algebraic geometry, we pick out the work of E.~K\"ahler \cite{I-22} and a recent note of Chow and Igusa \cite{I-3}, which go back over certain results of (FAC) in the context of Nagata--Chevalley theory, as well as giving a K\"unneth formula.}.
 
 \sectionbreak
 
-It goes without saying that a book on algebraic geometry, and especially a book
-dealing with the fundamentals, is of course influenced, if only by proxy, by
-mathematicians such as O.~Zariski and A.~Weil. In particular, the
-{\em Th\'eorie des fonctions holomorphes} de Zariski \cite{I-20}, properly
-flexible thanks to the cohomological methods and an existence theorem
-(Chapter~III, \textsection\textsection4 and 5), is (along with the method of
-descent described in Chapter~VI) one of the principal tools used in this
-treatise, and it seems to us one of the most powerful at our disposal in
-algebraic geometry.
+It goes without saying that a book on algebraic geometry, and especially a book dealing with the fundamentals, is of course influenced, if only by proxy, by mathematicians such as O.~Zariski and A.~Weil.
+In particular, the {\em Th\'eorie des fonctions holomorphes} by Zariski \cite{I-20}, reasonably flexible thanks to the cohomological methods and an existence theorem (Chapter~III, \textsection\textsection4 and 5), is (along with the method of descent described in Chapter~VI) one of the principal tools used in this treatise, and it seems to us one of the most powerful at our disposal in algebraic geometry.
 
-The general technique in which it is employed can be sketched as follows (a
-typical example of which will be given in Chapter~XI, in the study of the
-fundamental group). We have a proper morphism (Chapter~II) $f:X\to Y$ of
-algebraic varieties (more generally, of schemes) that we wish to study on the
-neighborhood of a point $y\in Y$, with the aim of resolving a problem $P$
-relative to a neighborhood of $y$. We follow successive steps:
+The general technique in which it is employed can be sketched as follows (a typical example of which will be given in Chapter~XI, in the study of the fundamental group).
+We have a proper morphism (Chapter~II) $f:X\to Y$ of algebraic varieties (or, more generally, of schemes) that we wish to study on the neighborhood of a point $y\in Y$, with the aim of resolving a problem $P$ relative to a neighborhood of $y$.
+We proceed step by step:
 \begin{enumerate}
   \item[1st]
-    We can suppose that $Y$ is affine, such that $X$ becomes a scheme
-    defined on the affine ring $A$ of $Y$, and we can even replace $A$
-    by the local ring of $y$. This reduction is always easy in practice
-    (Chapter~V) and brings us to the case where $A$ is a {\em local} ring.
+    We can suppose that $Y$ is affine, so that $X$ becomes a scheme defined on the affine ring $A$ of $Y$, and we can even replace $A$ by the local ring of $y$.
+    This reduction is always easy in practice (Chapter~V) and brings us to the case where $A$ is a {\em local} ring.
   \item[2nd]
-    We study the problem in question when $A$ is a local {\em Artinian}
-    ring. So that the problem $P$ still makes sense when $A$ is not
-    assumed to be integral, sometimes we have to reformulate $P$, and it
-    appears that we often thus obtain a better understanding of the problem
-    during this stage, in an ``infinitesimal'' way.
+    We study the problem in question when $A$ is a local {\em Artinian} ring.
+    So that the problem $P$ still makes sense when $A$ is not assumed to be integral, we sometimes have to reformulate $P$, and it appears that we often obtain a better understanding of the problem in doing so, in an ``infinitesimal'' way.
   \item[3rd]
-    The theory of formal schemes
-    (Chapter~III, \textsection\textsection3, 4, and 5) lets us pass from the
-    case of an Artinian ring to a {\em complete local ring}.
+    The theory of formal schemes (Chapter~III, \textsection\textsection3, 4, and 5) lets us pass from the case of an Artinian ring to a {\em complete local ring}.
   \item[4th]
-    Finally, if $A$ is an arbitrary local ring, considering
-    ``\unsure{multiform} sections'' of suitable schemes over $X$
-    approximates the idea of a given ``formal'' section (Chapter~IV), and
-    this will let us pass,
-\oldpage[I]{9}
-    by extension of scalars to the completion of $A$, from a known result (of
-    \completelyunsure) to an analogous result for a finite simple
-    (e.g. unramified) extension of $A$.
+    Finally, if $A$ is an arbitrary local ring, considering ``\unsure{multiform} sections'' of suitable schemes over $X$, approximating a given ``formal'' section (Chapter~IV), will let us pass\oldpage[I]{9}, by extension of scalars, to the completion of $A$, from a known result (about the schemed induced by $X$ by extension of scalars to the completion of $A$) to an analogous result for a finite simple (e.g. unramified) extension of $A$.
 \end{enumerate}
 
-This sketch shows the importance of the systematic study of schemes defined over
-an Artinian ring $A$. The point of view of Serre in his formulation of the
-theory of local class fields, and the recent works of Greenberg, seem
-to suggest that such a study could be undertaken by functorially attaching, to
-some such scheme $X$, a scheme $X'$ over the residue field $k$ of $A$ (assumed
-perfect) of dimension equal (in nice cases) to $n\dim X$, where $n$ is
-the height of $A$.
+This sketch shows the importance of the systematic study of schemes defined over an Artinian ring $A$.
+The point of view of Serre in his formulation of the theory of local class fields, and the recent works of Greenberg, seem to suggest that such a study could be undertaken by functorially attaching, to some such scheme $X$, a scheme $X'$ over the residue field $k$ of $A$ (assumed perfect) of dimension equal (in nice cases) to $n\dim X$, where $n$ is the height of $A$.
 
-As for the influence of A.~Weil, it suffices to say that it is the need to
-develop the tools necessary to formulate, with full generality, the definition
-of ``Weil cohomology'', and to tackle the proof\footnote{To avoid any
-misunderstanding, we point out that this task has barely been undertaken at the
-moment of writing this introduction, and still hasn't led to the proof of the
-Weil conjectures.} of all the formal properties necessary to establish the
-famous conjectures in Diophantine geometry \cite{I-19}, that has been one of the
-principal motivations of the writing of this treatise, as has the desire to find
-the natural setting of the usual ideas and methods of algebraic geometry, and to
-give the authors the chance to understand these ideas and methods.
+As for the influence of A.~Weil, it suffices to say that it is the need to develop the tools necessary to formulate, with full generality, the definition of ``Weil cohomology'', and to tackle the proof\footnote{To avoid any misunderstanding, we point out that this task has barely been undertaken at the moment of writing this introduction, and still hasn't led to the proof of the Weil conjectures.} of all the formal properties necessary to establish the famous conjectures in Diophantine geometry \cite{I-19}, that has been one of the principal motivations for the writing of this treatise, as well as the desire to find the natural setting of the usual ideas and methods of algebraic geometry, and to give the authors the chance to understand said ideas and methods.
 
 \sectionbreak
 
-To finish, we believe it useful to warn the reader that, as was the case with
-all the authors themselves, they will almost certainly have difficulty before
-becoming accustomed to the language of schemes, and to convince themselves that
-the usual constructions that suggest geometric intuition can be translated, in
-essentially only one sensible way, to this language. As in many parts of modern
-mathematics, the first intuition seems further and further away, in appearance,
-from the correct language needed to express the mathematics in question with
-complete precision and the desired level of generality. In practice, the
-psychological difficulty comes from the need to replicate some familiar
-set-theoretic constructions to a category that is already quite different from
-that of sets (the category of preschemes, or the category of preschemes over a
-given prescheme): Cartesian products, group laws, ring laws, module laws, fibre
-bundles, principal homogeneous fibre bundles, etc. It will most likely
-be difficult for the mathematician, in the future, to shy away from this new
-effort of abstraction, maybe rather negligible on the whole in comparison with
-that endowed by our fathers, to familiarize themselves with the theory of sets.
+Finally, we believe it useful to warn the reader that they, as did all the authors themselves, will almost certainly have difficulty before becoming accustomed to the language of schemes, and to convince themselves that the usual constructions that suggest geometric intuition can be translated, in essentially only one sensible way, to this language.
+As in many parts of modern mathematics, the first intuition seems further and further away, in appearance, from the correct language needed to express the mathematics in question with complete precision and the desired level of generality.
+In practice, the psychological difficulty comes from the need to replicate some familiar set-theoretic constructions to a category that is already quite different from that of sets (the category of preschemes, or the category of preschemes over a given prescheme): Cartesian products, group laws, ring laws, module laws, fibre bundles, principal homogeneous fibre bundles, etc.
+It will most likely be difficult for the mathematician, in the future, to shy away from this new effort of abstraction (maybe rather negligible, on the whole, in comparison with that supplied by our fathers) to familiarize themselves with the theory of sets.
 
 \sectionbreak
 
-The references are given following the numerical system; for example, in
-III,~4.9.3, the III indicates the chapter, the 4 the paragraph, the 9 the
-section of the paragraph. If we reference a chapter from within itself then we
-omit the chapter number.
+The references are given following the numerical system; for example, in III,~4.9.3, the III indicates the volume, the 4 the chapter, the 9 the section, and the 3 the paragraph.\footnote{\emph{[Trans] This is not a direct translation of the original, but instead uses the language more familiar to modern book (and LaTeX document) layouts.}}
+If we reference a volume from within itself then we omit the volume number.
 
 \bigskip
 

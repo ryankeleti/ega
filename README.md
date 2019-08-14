@@ -14,7 +14,7 @@ click [here](https://github.com/ryankeleti/ega/releases/download/build/book.pdf)
 
 Here is the current status of the translation, along with who is currently working on/has worked on which sections
 
-- [x] Introduction
+- [x] Introduction (proofread by @thosgood)
 - [ ] Preliminaries
     + [x] 1. Rings of fractions (@ryankeleti) (proofread by @thosgood)
     + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti)
