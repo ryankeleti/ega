@@ -6,11 +6,13 @@
 ## resources for contributors
 
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
+- reference for section titles [this](https://stacky.net/wiki/index.php?title=EGA_contents)
 - an excellent reference for math terms in French [here](http://www-users.math.umn.edu/~kwlan/documents/french-glossary.pdf)
 - another reference for math terms in French [here](https://ensiwiki.ensimag.fr/index.php?title=Lexique_scientifique_fran%C3%A7ais-anglais)
 - some chapters (I think just V and VI) have already been translated: [check here](https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/pubtexts.php)
 
 ## LaTeX conventions
+- one sentence per line (with the exception of also splitting really long sentences at semi-colons, for example)
 - `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
 - `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
 - `\cat` for categories, e.g. `\cat{Set}` for the category of sets; use `\C` for a "default" category, and `\op` for the opposite category (`C^op => \C\op`).

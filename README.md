@@ -16,7 +16,7 @@ Here is the current status of the translation, along with who is currently worki
 
 - [x] Introduction
 - [ ] Preliminaries
-    + [x] 1. Rings of fractions (@ryankeleti)
+    + [x] 1. Rings of fractions (@ryankeleti) (proofread by @thosgood)
     + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti)
     + [x] 3. Supplement on sheaves (@ryankeleti)
     + [x] 4. Ringed spaces (@ryankeleti)
@@ -58,5 +58,4 @@ Here is the current status of the translation, along with who is currently worki
 - check for any `\unsure` commands in the source
 - check that all `hyperref` references are found
 - when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
-- reference for section titles [this](https://stacky.net/wiki/index.php?title=EGA_contents)
 - web version? work in progress
