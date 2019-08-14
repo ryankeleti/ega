@@ -44,7 +44,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms (@thosgood)
     + [x] 3. Products of preschemes (@thosgood, @ryankeleti)
-    + [ ] 4. Subpreschemes and immersions
+    + [ ] 4. Subpreschemes and immersions (@thosgood)
     + [ ] 5. Reduced preschemes; separation condition
     + [ ] 6. Finiteness conditions
     + [x] 7. Rational maps (@thosgood)
