@@ -1,3 +1,28 @@
 \section{Finiteness conditions}
 \label{section-finiteness-conditions}
 
+\subsection{Noetherian and locally-Noetherian preschemes}
+\label{subsection-noetherian-and-locally-noetherian-preschemes}
+
+\begin{defn}[6.1.1]
+\label{1.6.1.1}
+We say that a prescheme $X$ is Noetherian (\emph{resp.} locally Noetherian) if it is a finite union (\emph{resp.} union) of affine open $V_\alpha$ in such a way that the ring of the of the induced scheme on each of the $V_\alpha$ is Noetherian.
+\end{defn}
+
+It follows immediately from \sref{1.1.5.2} that, if $X$ is locally Noetherian, then the structure sheaf $\OO_X$ is a \emph{coherent sheaf of rings}, the question being a local one.
+Every \emph{quasi-coherent sub-$\OO_X$-module} (\emph{resp.} quasi-coherent quotient $\OO_X$-module) of a \emph{coherent} $\OO_X$-module $\sh{F}$ is \emph{coherent}, as the question is once again a local one, and it suffices to apply \sref{1.1.5.1}, \sref{1.1.4.1}, and \sref{1.1.3.10}, combined with the fact that a submodule (resp. quotient module) of a module of finite type over a Noetherian ring is of finite type.
+In particular, every \emph{quasi-coherent sheaf of ideals} of $\OO_X$ is \emph{coherent}.
+
+If a prescheme $X$ is a finite union (resp. union) of open subsets $W_\lambda$ in such a way that the preschemes induced on the $W_\lambda$ are Noetherian (resp. locally Noetherian), it is clear that $X$ is Noetherian (resp. locally Noetherian).
+
+\begin{prop}[6.1.2]
+\label{1.6.1.2}
+For a prescheme $X$ to be Noetherian, it is necessary and sufficient for it to be locally Noetherian and have a quasi-compact underlying space.
+The underlying space itself is then also Noetherian.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.1.2}
+The first claim follows immediately from the definitions and \sref{1.1.1.10}[(ii)].
+The second follows from \sref{1.1.1.6} and the fact that every space that is a finite union of Noetherian subspaces is itself Noetherian \sref[0]{0.2.2.3}.
+\end{proof}
