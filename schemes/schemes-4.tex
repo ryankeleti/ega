@@ -127,3 +127,28 @@ We say that $f=j\circ g$ is the {\em canonical factorization} of the immersion $
 
 It is clear that an immersion is a {\em monomorphism} of preschemes \sref{1.4.1.7} and {\em a fortiori} a {\em radical} morphism \sref{1.3.5.4}.
 
+\begin{prop}[4.2.2]
+\label{1.4.2.2}
+\medskip\noindent
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item For a morphism $f=(\psi,\theta):Y\to X$ to be an open immersion, it is necessary and sufficient that $\psi$ is a homeomorphism between $Y$ and an open subset of $X$, and that for all $y\in Y$, the homomorphism $\theta_y^\sharp:\OO_{\psi(y)}\to\OO_y$ is bijective.
+  \item For a morphism $f=(\psi,\theta):Y\to X$ to be an immersion (resp. a closed immersion), it is necessary and sufficient that $\psi$ is a homeomorphism between $Y$ and a locally closed (resp. closed) subset of $X$, and that for all $y\in Y$, the homomorphism $\theta_y^\sharp:\OO_{\psi(y)}\to\OO_y$ is surjective.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.4.2.2}
+\medskip\noindent
+\begin{enumerate}[label=(\alph*)]
+  \item The conditions are evidently necessary.
+    Conversely, if they are satisfied, then it is clear that $\theta^\sharp$ is an isomorphism from $\OO_Y$ to $\psi^*(\OO_X)$, and $\psi^*(\OO_X)$ is the sheaf induced by ``transport of structure'' via $\psi^{-1}$ from $\OO_X|\psi(Y)$; hence the conclusion.
+  \item The conditions are evidently necessary---we prove that they are sufficient.
+    Consider first the particular case where we suppose that $X$ is an affine scheme and that $Z=\psi(Y)$ is {\em closed} in $X$.
+    We then know \sref[0]{0.3.4.6} that $\psi_*(\OO_Y)$ has $Z$ for its support and that if we denote by $\OO_Z'$ its restriction ot $Z$, then the ringed space $(Z,\OO_Z')$ is induced from $(Y,\OO_Y)$ by transport of structure via the homeomorphism $\psi$, considered as a map from $Y$ to $Z$.
+    Let us show that $f_*(\OO_Y)=\psi_*(\OO_Y)$ is a {\em quasi-coherent} $\OO_X$-module.
+    Indeed, for all $x\not\in Z$, $\psi_*(\OO_Y)$ restricted to a suitable neighborhood of $x$ is zero.
+    On the contrary, if $z\in Z$, then we have $x=\psi(y)$ for a well-defined  $y\in Y$; let $V$ be an open affine neighborhood of $y$ in $Y$; $\psi(V)$ is then open in $Z$, so \unsure{trace} over $Z$ of....
+\end{enumerate}
+\end{proof}
+
+
