@@ -14,7 +14,7 @@ click [here](https://github.com/ryankeleti/ega/releases/download/build/book.pdf)
 
 Here is the current status of the translation, along with who is currently working on/has worked on which sections
 
-- [x] Introduction
+- [x] Introduction (proofread by @thosgood)
 - [ ] Preliminaries
     + [x] 1. Rings of fractions (@ryankeleti) (proofread by @thosgood)
     + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti)
@@ -44,9 +44,9 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms (@thosgood)
     + [x] 3. Products of preschemes (@thosgood, @ryankeleti)
-    + [ ] 4. Subpreschemes and immersions
+    + [ ] 4. Subpreschemes and immersions (@thosgood)
     + [ ] 5. Reduced preschemes; separation condition
-    + [ ] 6. Finiteness conditions
+    + [ ] 6. Finiteness conditions (@thosgood)
     + [x] 7. Rational maps (@thosgood)
     + [x] 8. Chevalley schemes (@thosgood)
     + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
