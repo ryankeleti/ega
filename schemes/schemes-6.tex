@@ -112,7 +112,7 @@ Let $U_i$ ($1\leqslant i\leqslant m$) be the irreducible components of $U$ not c
 the complement (in $U$) of the union of the $U_i$ is an open neighbourhood $V$ of $X$ inside $U$, and thus so too in $X$;
 it is also, incidentally, the complement (in $X$) of the union of the irreducible components of $X$ that do not contain $x$ \sref[0]{0.2.1.6}.
 So let $W$ be an open neighbourhood of $X$ contained in $V$.
-The irreducible components of $W$ are the \unsure{traces over} $W$ of the irreducible components of $U$ that have a non-empty intersection with $W$ \sref[0]{0.2.1.6}, so these components contain $x$;
+The irreducible components of $W$ are the intersections of $W$ with the irreducible components of $U$ \sref[0]{0.2.1.6}, so these components contain $x$;
 since they are connected, so too is $W$.
 \end{proof}
 
@@ -429,3 +429,18 @@ If, further, $X$ is a scheme \emph{(or if $X$ is a \emph{$K$-scheme}, which amou
 \end{defn}
 
 Every algebraic $K$-prescheme is \emph{Noetherian} \sref{1.6.3.7}.
+
+\begin{prop}[6.4.2]
+\label{1.6.4.2}
+Let $X$ be an algebraic $K$-prescheme.
+For a point $x\in X$ to be closed, it is necessary and sufficient that $\kres(x)$ be an algebraic extension of $K$ of finite degree.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.4.2}
+We can assume that $X$ is affine, with the ring $A$ of $X$ being a $K$-algebra of finite type.
+Indeed, the affine open subsets $U$ of $X$ such that $A(U)$ is a $K$-algebra of finite type form a covering of $X$ \sref{1.6.3.1}.
+The closed points of $X$ are thus the points such that $\fk{j}_x$ is a\oldpage[I]{148} maximal ideal of $A$, or, in other words, such that $A/\fk{j}_x$ is a field (necessarily equal to $\kres(x)$).
+Since $A/\fk{j}_x$ is a $K$-algebra of finite type, we see that, if $x$ is closed, then $\kres(x)$ is a field that is an algebra of finite type over $K$, and so necessarily a $K$-algebra of \emph{finite rank} \cite{I-21}.
+Conversely, if $\kres(x)$ is of finite rank over $K$, so too is $A/\fk{j}_x\subset\kres(x)$, and since every integral ring that is also a $K$-algebra of finite rank is a field, we have that $A/\fk{j}_x=\kres(x)$, and so $x$ is closed.
+\end{proof}
