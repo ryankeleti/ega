@@ -12,17 +12,25 @@
 - some chapters (I think just V and VI) have already been translated: [check here](https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/pubtexts.php)
 
 ## LaTeX conventions
-- one sentence per line (with the exception of also splitting really long sentences at semi-colons, for example)
-- `\sh` for sheaves, e.g. `\sh{F}` for a sheaf F; use `\OO` for the structure sheaf.
-- `\bb` for bold letters, e.g. `\bb{Z}` for the ring of integers.
-- `\cat` for categories, e.g. `\cat{Set}` for the category of sets; use `\C` for a "default" category, and `\op` for the opposite category (`C^op => \C\op`).
-- `\dual` for the dual sheaf, e.g. `\dual{\sh{F}}` for `\sh{F}^\vee`.
-- `\isoto` for an isomorphism arrow.
-- `\emp` for the empty set.
-- `\kres` for the residue field.
-- `\rad`/`\nilrad` for radical/nilradical.
-- `\vphi` for `\varphi`. This is due to the font configuration swapping `\varphi` and `\phi`; if you want to use a different font, you could change this.
-- `\HH` for cohomology.
-- `\leqslant`/`\geqslant` for ≤, ≥.
-- Use the operators defined in `preamble.tex`, such as `\Spec`, `\Im`, `\shHom`, etc.
-- Use `\oldpage{x}` to mark the original page number (x) at the current text position.
+
+| command | what for | example |
+| - | - | - |
+| general | - | - |
+| `\sh` | sheaves | `\sh{F}` for a sheaf F |
+| `\bb` | bold letters | `\bb{Z}` for the ring of integers |
+| `\cat` | categories | `\cat{D}` for a category D |
+| `\fk` | Fraktur letters | `\fk{p}` for an ideal p |
+| specific | - | - |
+| `\rad` | radical | - |
+| `\nilrad` | nilradical | - |
+| `\emp` | empty set | - |
+| `\vphi` | varphi | - |
+| `\HH` | cohomology H | - |
+| `\dual` | dual of a sheaf | `\dual{F}` for F^v |
+| `\kres` | residue field k | - |
+| `\isoto` | isomorphism right arrow | `A\isoto B` for iso A->B |
+| `\op` | opposite category | `\cat{D}\op` for D^op |
+| `\C` | category C | `\C` for `\cat{C}` |
+| `\Set` | category of sets | `\Set` for `\cat{Set}` |
+| `\CHom` | functor category | `\CHom(\cat{A},\cat{B}` for functors A->B |
+| `\OO` | structure sheaf O | `\OO_X` for `\sh{O}_X` |
