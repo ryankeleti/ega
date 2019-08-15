@@ -147,7 +147,29 @@ It is clear that an immersion is a {\em monomorphism} of preschemes \sref{1.4.1.
     We then know \sref[0]{0.3.4.6} that $\psi_*(\OO_Y)$ has $Z$ for its support and that if we denote by $\OO_Z'$ its restriction ot $Z$, then the ringed space $(Z,\OO_Z')$ is induced from $(Y,\OO_Y)$ by transport of structure via the homeomorphism $\psi$, considered as a map from $Y$ to $Z$.
     Let us show that $f_*(\OO_Y)=\psi_*(\OO_Y)$ is a {\em quasi-coherent} $\OO_X$-module.
     Indeed, for all $x\not\in Z$, $\psi_*(\OO_Y)$ restricted to a suitable neighborhood of $x$ is zero.
-    On the contrary, if $z\in Z$, then we have $x=\psi(y)$ for a well-defined  $y\in Y$; let $V$ be an open affine neighborhood of $y$ in $Y$; $\psi(V)$ is then open in $Z$, so \unsure{trace} over $Z$ of....
+    On the contrary, if $z\in Z$, then we have $x=\psi(y)$ for a well-defined  $y\in Y$; let $V$ be an open affine neighborhood of $y$ in $Y$; $\psi(V)$ is then open in $Z$, so \unsure{trace} over $Z$ of an open subset $U$ of $X$, and the restriction of $U$ to $\psi_*(\OO_Y)$ is identical to the restriction of $U$ to the direct image
+\oldpage[I]{123}
+    $(\psi_V)_*(\OO_Y|V)$, where $\psi_V$ is the restriction of $\psi$ to $V$.
+    The restriction to $(V,\OO_Y|V)$ of the morphism $(\psi,\theta)$ is a morphism from this prescheme to $(X,\OO_X)$, and as a result is of the form $({}^a\vphi,\widetilde{\vphi})$, where $\vphi$ is the homomorphism from the ring $A=\Gamma(X,\OO_X)$ to the ring $\Gamma(V,\OO_Y)$ \sref{1.1.7.3}; we conclude that $(\psi_V)_*(\OO_Y|V)$ is a quasi-coherent $\OO_X$-module \sref{1.1.6.3}, which proves our assertion, due to the local nature of quasi-coherent sheaves.
+    In addition, the hypothesis that $\psi$ is a homeomorphism implies \sref[0]{0.3.4.5} that for all $y\in Y$, $\psi_y$ is an isomorphism $(\psi_*(\OO_Y))_{\psi(y)}\to\OO_y$; as the diagram
+    \[
+      \xymatrix{
+        \OO_{\psi(y)}\ar[r]^{\theta_{\psi(y)}}\ar[d]_{\psi_y\circ\alpha_{\psi(y)}} &
+        (\psi_*(\OO_Y))_{\psi(y)}\ar[d]^{\psi_y}\\
+        (\psi^*(\OO_X))_y\ar[r]^{\theta_y^\sharp} &
+        \OO_y
+      }
+    \]
+    is commutative and the vertical arrows are the isomorphisms \sref[0]{0.3.7.2}, the hypothesis that $\theta_y^\sharp$ is surjective implies that so is $\theta_{\psi(y)}$.
+    As the support of $\psi_*(\OO_Y)$ is $Z=\psi(Y)$, $\theta$ is a {\em surjective} homomorphism from $\OO_X=\widetilde{A}$ to the quasi-coherent $\OO_X$-module $f_*(\OO_Y)$.
+    As a result, there exists a unique isomorphism $\omega$ from a sheaf quotient $\widetilde{A}/\widetilde{\fk{J}}$ ($\fk{J}$ an ideal of $A$) to $f_*(\OO_Y)$ which when composed with the canonical homomorphism $\widetilde{A}\to\widetilde{A}/\widetilde{\fk{J}}$ gives $\theta$ \sref{1.1.3.8}; if $\OO_Z$ denotes the restriction of $\widetilde{A}/\widetilde{\fk{J}}$ to $Z$, then $(Z,\OO_Z)$ is a subprescheme of $(X,\OO_X)$, and $f$ factors through the canonical injection of this subprescheme into $X$ and the isomorphism $(\psi_0,\omega_0)$, where $\psi_0$ is $\psi$ considered as a map from $Y$ to $Z$, and $\omega_0$ the restriction of $\omega$ to $\OO_Z$.
+
+    We pass to the general case.
+    Let $U$ be an affine open subset of $X$ such that $U\cap\psi(Y)$ is closed in $U$ and nonempty.
+    By restricting $f$ to the prescheme induced by $Y$ on the open subset $\psi^{-1}(U)$, and by considering it as a morphism from this prescheme to the prescheme induced by $X$ on $U$, we reduce to the first case; the restriction of $f$ to $\psi^{-1}(U)$ is thus a closed immersion $\psi^{-1}(U)\to U$, canonically factoring as $j_U\circ g_U$, where $g_U$ is an isomorphism from the prescheme $\psi^{-1}(U)$ to a subprescheme $Z_U$ of $U$, and $j_U$ is the canonical injection $Z_U\to U$.
+    Let $V$ be a second affine open subset of $X$ such that $V\subset U$; as the restriction $Z_V'$ of $Z_U$ to $V$ is a subprescheme of the prescheme $V$, the restriction of $f$ to $\psi^{-1}(V)$ factors as $j_V'\circ g_V'$, where $j_V'$ is the canonical injection $Z_V'\to V$ and $g_V'$ is an isomorphism from $\psi^{-1}(V)$ to $Z_V'$.
+    By the uniqueness of the canonical factorization of an immersion \sref{1.4.2.1}, we necessarily have that $Z_V'=Z_V$ and $g_V'=g_V$.
+    We conclude \sref{1.4.1.5} that there is a subprescheme $Z$ of $X$ whose underlying space is $\psi(Y)$ and whose restriction to each $U\cap\psi(Y)$ is $Z_U$; the $g_U$ are then the restrictions to $\psi^{-1}(U)$ of an isomorphism $g:Y\to Z$ such that $f=j\circ g$, where $j$ is the canonical injection $Z\to X$.
 \end{enumerate}
 \end{proof}
 
