@@ -228,3 +228,57 @@ We say that a morphism $f\colon X\to Y$ is of finite type if $Y$ is the union of
 \end{itemize}
 We then say that $X$ is a prescheme of finite type over $Y$, or a $Y$-prescheme of finite type.
 \end{defn}
+
+\begin{prop}[6.3.2]
+\label{1.6.3.2}
+If $f\colon X\to Y$ is a morphism of finite type, then every affine open subset $W$ of $Y$ satisfies property \emph{(P)} of \sref{1.6.3.1}.
+\end{prop}
+
+We first show
+\begin{lem}[6.3.2.1]
+\label{1.6.3.2.1}
+If $T\subset Y$ is an affine open subset, satisfying property \emph{(P)}, then, for every $g\in A(T)$, $D(g)$ also satisfies property \emph{(P)}.
+\end{lem}
+
+\begin{proof}
+\label{proof-1.6.3.2.1}
+By hypothesis, $f^{-1}(T)$ is a finite union of affine open subsets $Z_j$, that are such that $A(Z_j)$ is an algebra of finite type over $A(T)$;
+let $\vphi_j\colon A(T)\to A(Z_j)$ be the homomorphism of rings corresponding to the restriction of $f$ to $Z_j$ \sref{1.2.2.4}, and set $g_j=\vphi_j(g)$;
+we then have $f^{-1}(D(g))\cap Z_j=D(g_j)$ \sref{1.1.2.2.2}.
+But $A(D(g_j))=A(Z_j)_{g_j}=A(Z_j)[1/g_j]$ is of finite type over $A(Z_j)$, and \emph{a fortiori} over $A(T)$ by the hypothesis, and so also over $A(D(g))=A(T)[1/g]$, which proves the lemma.
+\end{proof}
+
+\begin{proof}
+\label{proof-1.6.3.2}
+With the above lemma, since $W$ is quasi-compact \sref{1.1.1.10}, there exists a finite covering of $W$ by sets of the form $D(g_i)$, where each $g_i$ belongs to a ring $A(V_{\alpha(i)})$.
+Each $D(g_i)$, being quasi-compact, is a finite union of sets $D(h_{ik})$, where $h_{ik}\in A(W)$;
+if $\vphi_i\colon A(W)\to A(D(g_i))$ is the canonical map, then we have $D(h_{ik})=D(\vphi_i(h_{ik}))$ by \sref{1.1.2.2.2}.
+By \sref{1.6.3.2.1}, each of the $f^{-1}(D(h_{ik}))$ admits a finite covering by affine open subsets $U_{ijk}$, that are such that the $A(U_{ijk})$ are algebras of finite type over $A(D(h_{ik}))=A(W)[1/h_{ik}]$, whence the proposition.
+\end{proof}
+
+We\oldpage[I]{145} can thus say that the notion of a prescheme of finite type over $Y$ is \emph{local on $Y$}.
+
+\begin{prop}[6.3.3]
+\label{1.6.3.3}
+Let $X$ and $Y$ be affine schemes;
+for $X$ to be of finite type over $Y$, it is necessary and sufficient that $A(X)$ be an algebra of finite type over $A(Y)$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.3.3}
+Since the condition clearly suffices, we show that it is necessary.
+Set $A=A(Y)$ and $B=A(X)$;
+by \sref{1.6.3.2}, there exists a finite affine open cover $(V_i)$ of $X$ such that each of the rings $A(V_i)$ is an $A$-algebra of finite type.
+Further, since the $V_i$ are quasi-compact, we can cover each of them with a finite number of open subsets of the form $D(g_{ij})\subset V_i$, where $g_{ij}\in B$;
+if $\vphi_i$ is a homomorphism $B\to A(V_i)$ that corresponds to the canonical injection $V_i\to X$, then we have $B_{g_{ij}}=(A(V_i))_{\vphi_i(g_{ij})}=A(V_i)[1/\vphi_i(g_{ij})]$, so $B_{g_{ij}}$ is an $A$-algebra of finite type.
+We can thus restrict to the case where $V_i=D(g_i)$ with $g_i\in B$.
+By hypothesis, there exists a finite subset $F_i$ of $B$ and an integer $n_i\geqslant0$ such that $B_{g_i}$ is the algebra generated over $A$ by the elements $b_i/g_i^{n_i}$, where the $b_i$ run over all of $F_i$.
+Since there are only finitely many of the $g_i$, we can assume that all the $n_i$ are equal to the same integer $n$.
+Further, since the $D(g_i)$ form a cover of $X$, the ideal generated in $B$ by the $g_i$ is equal to $B$, or, in other words, there exist $h_i\in B$ such that $\sum_i h_ig_i=1$.
+So let $F$ be the finite subset of $B$ given by the union of the $F_i$, the set of the $g_i$, and the set of the $h_i$; we will show that the subring $B'=A[F]$ of $B$ is equal to $B$.
+By hypothesis, for every $b\in B$ and every $i$, the canonical image of $b$ in $B_{g_i}$ is of the form $b'_i/g_i^{m_i}$, where $b'_i\in B'$;
+by multiplying the $b'_i$ by suitable powers of the $g_i$, we can again assume that all the $m_i$ are equal to the same integer $m$.
+By the definition of the ring of fractions, there is thus an integer $N$ (dependant on $b$) such that $N\geqslant m$ and $g_i^Nb\in B'$ for all $i$;
+but, \emph{in the ring $B'$}, the $g_i^N$ generate the ideal $B'$, because the $g_i$ do (and the $h_i$ belong to $B'$);
+there are thus $c_i\in B'$ such that $\sum_i c_ig_i^N=1$, whence $b=\sum_ic_ig_i^Nb\in B'$, Q.E.D.
+\end{proof}
