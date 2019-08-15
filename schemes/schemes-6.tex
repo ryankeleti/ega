@@ -10,7 +10,7 @@ We say that a prescheme $X$ is Noetherian (\emph{resp.} locally Noetherian) if i
 \end{defn}
 
 It follows immediately from \sref{1.1.5.2} that, if $X$ is locally Noetherian, then the structure sheaf $\OO_X$ is a \emph{coherent sheaf of rings}, the question being a local one.
-Every \emph{quasi-coherent sub-$\OO_X$-module} (\emph{resp.} quasi-coherent quotient $\OO_X$-module) of a \emph{coherent} $\OO_X$-module $\sh{F}$ is \emph{coherent}, as the question is once again a local one, and it suffices to apply \sref{1.1.5.1}, \sref{1.1.4.1}, and \sref{1.1.3.10}, combined with the fact that a submodule (resp. quotient module) of a module of finite type over a Noetherian ring is of finite type.
+Every \emph{quasi-coherent sub-$\OO_X$-module}\oldpage[I]{141} (\emph{resp.} quasi-coherent quotient $\OO_X$-module) of a \emph{coherent} $\OO_X$-module $\sh{F}$ is \emph{coherent}, as the question is once again a local one, and it suffices to apply \sref{1.1.5.1}, \sref{1.1.4.1}, and \sref{1.1.3.10}, combined with the fact that a submodule (resp. quotient module) of a module of finite type over a Noetherian ring is of finite type.
 In particular, every \emph{quasi-coherent sheaf of ideals} of $\OO_X$ is \emph{coherent}.
 
 If a prescheme $X$ is a finite union (resp. union) of open subsets $W_\lambda$ in such a way that the preschemes induced on the $W_\lambda$ are Noetherian (resp. locally Noetherian), it is clear that $X$ is Noetherian (resp. locally Noetherian).
@@ -26,3 +26,205 @@ The underlying space itself is then also Noetherian.
 The first claim follows immediately from the definitions and \sref{1.1.1.10}[(ii)].
 The second follows from \sref{1.1.1.6} and the fact that every space that is a finite union of Noetherian subspaces is itself Noetherian \sref[0]{0.2.2.3}.
 \end{proof}
+
+\begin{prop}[6.1.3]
+\label{1.6.1.3}
+Let $X$ be an affine scheme given by a ring $A$.
+The following conditions are equivalent:
+\emph{a)} $X$ is Noetherian;
+\emph{b)} $X$ is locally Noetherian;
+\emph{c)} $A$ is Noetherian.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.1.3}
+The equivalence between \emph{a)} and \emph{b)} follows from \sref{1.6.1.2} ant the fact that the underlying space of every affine scheme is quasi-compact \sref{1.1.1.10};
+it is furthermore clear that \emph{c)} implies \emph{a)}.
+To see that \emph{a)} implies \emph{c)}, we remark that there is a finite cover $(V_i)$ of $X$ by affine open subsets such that the ring $A_i$ of the prescheme induced on $V_i$ is Noetherian.
+So let $(\fk{a}_n)$ be an increasing sequence of ideals of $A$;
+by a canonical bijective correspondence, there is a corresponding sequence $(\widetilde{a}_n)$ of sheaves of ideals in $\widetilde{A}=\OO_X$;
+to see that the sequence $(\fk{a}_n)$ is \unsure{stable}, it suffices to prove that the sequence $(\widetilde{\fk{a}}_n)$ is.
+But the restriction $\widetilde{\fk{a}}_n|V_i$ is a quasi-coherent sheaf of ideals in $\OO_X|V_i$, being the inverse image of $\widetilde{\fk{a}}_n$ under the canonical injection $V_i\to X$ \sref[0]{0.5.1.4};
+$\widetilde{\fk{a}}_n|V_i$ is thus of the form $\widetilde{\fk{a}}_{ni}$, where $\fk{a}_{ni}$ is an ideal of $A_i$ \sref{1.1.3.7}.
+Since $A_i$ is Noetherian, the sequence $(\fk{a}_{ni})$ is stable for all $i$, whence the proposition.
+\end{proof}
+
+We note that the above argument proves also that \emph{if $X$ is a Noetherian prescheme, then every increasing sequence of coherent sheaves of ideals of $\OO_X$ is \unsure{stable}}.
+
+\begin{prop}[6.1.4]
+\label{1.6.1.4}
+Every subprescheme of a Noetherian (\emph{resp.} locally-Noetherian) prescheme is Noetherian (\emph{resp.} locally Noetherian).
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.1.4}
+If suffices to give a proof for a Noetherian prescheme $X$;
+further, by definition~\sref{1.6.1.1}, we can also restrict to the case where $X$ is an affine scheme.
+Since every subprescheme of $X$ is a closed subprescheme of a prescheme induced on an open subset \sref{1.4.1.3}, we can restrict to the case of a subprescheme $Y$, either closed or induced on an open subset of $X$.
+The proof in the case where $Y$ is closed is immediate, since if $A$ is the ring of $X$, we know that $Y$ is an affine scheme given by the ring $A/\fk{J}$, where $\fk{J}$ is an ideal of $A$ \sref{1.4.2.3};
+since $A$ is Noetherian \sref{1.6.1.3}, so too is $A/\fk{J}$.
+
+Now suppose that $Y$ is open in $X$;
+the underlying space of $Y$ is Noetherian \sref{1.6.1.2}, hence quasi-compact, and thus a finite union of open subsets $D(f_i)$ ($f_i\in A$);
+everything reduces to showing the proposition in the case where $Y=D(f)$ with $f\in A$.
+But then $Y$ is an affine scheme whose ring is isomorphic to $A_f$ \sref{1.1.3.6};
+since $A$ is Noetherian \sref{1.6.1.3}, so too is $A_f$.
+\end{proof}
+
+\begin{env}[6.1.5]
+\label{1.6.1.5}
+WE note that the \emph{product} of two Noetherian $S$-preschemes is not necessarily Noetherian, even if the preschemes are affine, since the tensor product of two Noetherian algebras in not necessarily a Noetherian ring (cf. \sref{1.6.3.8}).
+\end{env}
+
+\begin{prop}[6.1.6]
+\label{1.6.1.6}
+If $X$ is a Noetherian prescheme, the nilradical $\sh{N}_X$ of $\OO_X$ is nilpotent.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.1.6}
+We can in fact cover $X$ with a finite number of affine open subsets $U_i$, and it suffices to prove that there exists whole numbers $n_i$ such that $(\sh{N}_X|U_i)^{n_i}=0$;
+if $n$ is the largest of the $n_i$, then we will have $\sh{N}_X^n=0$.
+We can thus restrict to the case where $X=\Spec(A)$ is affine, with $A$ a Noetherian ring;
+by \sref{1.5.1.1} and \sref{1.1.3.13}, it suffices to observe that the nilradical of $A$ is nilpotent (\cite[p.~127, cor.~4]{I-11}).
+\end{proof}
+
+\begin{cor}[6.1.7]
+\label{1.6.1.7}
+Let $X$ be a Noetherian prescheme;
+for $X$ to be an affine scheme, it is necessary and sufficient that $X_\mathrm{red}$ be affine.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.1.7}
+This follows from \sref{1.6.1.6} and \sref{1.5.1.10}.
+\end{proof}
+
+\begin{lem}[6.1.8]
+\label{1.6.1.8}
+Let $X$ be a topological space, $x$ a point of $X$, and $U$ an open neighbourhood of $x$ having only a finite number of irreducible components.
+Then there exists a neighbourhood $V$ of $x$ such that every open neighbourhood of $x$ contained in $V$ is connected.
+\end{lem}
+
+\begin{proof}
+\label{proof-1.6.1.8}
+Let $U_i$ ($1\leqslant i\leqslant m$) be the irreducible components of $U$ not containing $x$;
+the complement (in $U$) of the union of the $U_i$ is an open neighbourhood $V$ of $X$ inside $U$, and thus so too in $X$;
+it is also, incidentally, the complement (in $X$) of the union of the irreducible components of $X$ that do not contain $x$ \sref[0]{0.2.1.6}.
+So let $W$ be an open neighbourhood of $X$ contained in $V$.
+The irreducible components of $W$ are the \unsure{traces over} $W$ of the irreducible components of $U$ that have a non-empty intersection with $W$ \sref[0]{0.2.1.6}, so these components contain $x$;
+since they are connected, so too is $W$.
+\end{proof}
+
+\begin{cor}[6.1.9]
+\label{1.6.1.9}
+A locally-Noetherian topological space is locally connected (which implies, amongst other things, that its connected components are open).
+\end{cor}
+
+\begin{prop}[6.1.10]
+\label{1.6.1.10}
+Let $X$ be a locally-Noetherian topological space.
+The following conditions are equivalent.
+\begin{enumerate}[label=\alph*)]
+    \item The irreducible components of $X$ are open.
+    \item The irreducible components of $X$ are exactly its connected components.
+    \item The connected components of $X$ are irreducible.
+    \item Two distinct irreducible components of $X$ have an empty intersection.
+\end{enumerate}
+Finally, if $X$ is a prescheme, then these conditions are also equivalent to
+\begin{enumerate}[label=\alph*)]
+    \setcounter{enumi}{4}
+    \item For every $x\in X$, $\Spec(\OO_x)$ is irreducible (or, in other words, the nilradical of $\OO_x$ is prime).
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.1.10}
+It is immediate that \emph{a)} implies \emph{b)}, because an irreducible space is connected, and \emph{a)} implies that the irreducible components of $X$ are the sets that are both open and closed.
+It is trivial that \emph{b)} implies \emph{c)}; conversely, a closed set $F$ containing\oldpage[I]{143} a connected component $C$ of $X$, with $C$ distinct from $F$, cannot be irreducible, because not being connected means that $F$ is the union of two disjoint non-empty sets that are both open and closed in $F$, and thus closed in $X$;
+as a result, \emph{c)} implies \emph{b)}.
+We immediately conclude from this that \emph{c)} implies \emph{d)}, since two distinct connected components have no points in common.
+
+We have not yet used the fact that $X$ is locally Noetherian.
+Suppose now that this is indeed the case, and we will show that \emph{d)} implies \emph{a)}: by \sref[0]{0.2.1.6}, we can restrict ourselves to the case where the space $X$ is Noetherian, and so has only a finite number of irreducible components.
+Since they are closed and pairwise disjoint, they are open.
+
+Finally, the equivalence between \emph{d)} and \emph{e)} holds true even without the assumption that the underlying space of the prescheme $X$ is locally Noetherian.
+We can in fact restrict ourselves to the case where $X=\Spec(A)$ is affine, by \sref[0]{0.2.1.6};
+to say that $x$ is contained in only one single irreducible component of $X$ is to say that $\fk{j}_x$ contains only one single minimal ideal of $A$ \sref{1.1.1.14}, which is equivalent to saying that $\fk{j}_x\OO_x$ contains only one single minimal ideal of $\OO_x$, whence the conclusion.
+\end{proof}
+
+\begin{cor}[6.1.11]
+\label{1.6.1.11}
+Let $X$ be a locally-Noetherian space.
+For $X$ to be irreducible, it is necessary and sufficient that $X$ be connected and non-empty, and that any two distinct irreducible components of $X$ have an empty intersection.
+If $X$ is a prescheme, this latter condition is equivalent to asking that $\Spec(\OO_x)$ be irreducible for all $x\in X$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.1.11}
+The second claim has already been shown in \sref{1.6.1.10};
+the only thing thus remaining to show is that the conditions in the first claim are sufficient.
+But by \sref{1.6.1.10}, these conditions imply that the irreducible components of $X$ are exactly its connected components, and since $X$ is connected and non-empty, it is irreducible.
+\end{proof}
+
+\begin{cor}[6.1.12]
+\label{1.6.1.12}
+Let $X$ be a locally-Noetherian prescheme.
+For $X$ to be integral, it is necessary and sufficient that $X$ be connected and that $\OO_x$ be integral for all $x\in X$.
+\end{cor}
+
+\begin{prop}[6.1.13]
+\label{1.6.1.13}
+Let $X$ be a locally-Noetherian prescheme, and let $x\in X$ be a point such that the nilradical $\sh{N}_x$ of $\OO_x$ is prime (\emph{resp.} such that $\OO_x$ is reduced, \emph{resp.} integral);
+then there exists an open neighbourhood $U$ of $x$ that is irreducible (\emph{resp.} reduced, \emph{resp.} integral).
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.1.13}
+It suffices to consider two cases: where $\sh{N}_x$ is prime, and where $\sh{N}_x=0$; the third hypotheses is a combination of the first two.
+If $\sh{N}_x$ is prime, then $x$ belongs to only one single irreducible component $Y$ of $X$ \sref{1.6.1.10};
+the union of the irreducible components of $X$ that do not contain $x$ is closed (the set of these components being locally finite), and the complement $U$ of this union is thus open and contained in $Y$, and thus irreducible \sref[0]{0.2.1.6}
+If $\sh{N}_x=0$, we also have $\sh{N}_y=0$ for any $y$ in a neighbourhood of $x$, because $\sh{N}$ is quasi-coherent \sref{1.5.1.1}, and thus coherent, since $X$ is locally Noetherian, and the conclusion then follows from \sref[0]{0.5.2.2}.
+\end{proof}
+
+\subsection{Artinian preschemes}
+\label{subsectin-artinian-preschemes}
+
+\begin{defn}[6.2.1]
+\label{1.6.2.1}
+We say that a prescheme is Artinian if it is affine, and given by an Artinian ring.
+\end{defn}
+
+\begin{prop}[6.2.2]
+\label{1.6.2.2}
+Given\oldpage[I]{144} a prescheme $X$, the following conditions are equivalent:
+\begin{enumerate}[label=\alph*)]
+    \item $X$ is an Artinian scheme;
+    \item $X$ is Noetherian and its underlying space is discrete;
+    \item $X$ is Noetherian and the points of its underlying space are closed \emph{(the $\mathrm{T}_1$ condition)}.
+\end{enumerate}
+When any of the above hold, the underlying space of $X$ is finite, and the ring $A$ of $X$ is the direct sum of local (Artinian) rings of points of $X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.2.2}
+We know that \emph{a)} implies the last claim (\cite[p.~205, th.~3]{I-13}), so every prime ideal of $A$ is thus maximal and is the inverse image of a maximal ideal of one of the local components of $A$, and so the space $X$ is finite and discrete;
+\emph{a)} thus implies \emph{b)}, and \emph{b)} clearly implies \emph{c)}.
+To see that \emph{c)} implies \emph{a)}, we first show that $X$ is then finite;
+we can indeed restrict to the case where $X$ is affine, and we know that a Noetherian ring whose prime ideals are all maximal is Artinian (\cite[p.~203]{I-13}), whence our claim.
+The underlying space $X$ is then discrete, the topological sum of a finite number of points $x_i$, and the local rings $\OO_{x_i}=A_i$ are Artinian;
+it is clear that $X$ is isomorphic to the prime spectrum affine scheme of the ring $A$ (the direct sum of the $A_i$) \sref{1.1.7.3}.
+\end{proof}
+
+\subsection{Morphisms of finite type}
+\label{subsection-morphisms-of-finite-type}
+
+\begin{defn}[6.3.1]
+\label{1.6.3.1}
+We say that a morphism $f\colon X\to Y$ is of finite type if $Y$ is the union of a family $(V_\alpha)$ of affine open subsets having the following property:
+\begin{itemize}
+    \item[(P)] $f^{-1}(V_\alpha)$ is a finite union of affine open subsets $U_{\alpha i}$ that are such that each ring $A(U_{\alpha i})$ is an algebra of finite type over $A(V_\alpha)$.
+\end{itemize}
+We then say that $X$ is a prescheme of finite type over $Y$, or a $Y$-prescheme of finite type.
+\end{defn}
