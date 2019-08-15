@@ -173,4 +173,40 @@ It is clear that an immersion is a {\em monomorphism} of preschemes \sref{1.4.1.
 \end{enumerate}
 \end{proof}
 
+\begin{cor}[4.2.3]
+\label{1.4.2.3}
+Let $X$ be an affine scheme.
+For a morphism $f=(\psi,\theta):Y\to X$ to be a closed immersion, it is necessary and sufficicent that $Y$ is an affine scheme and that the homomorphism $\Gamma(\psi):\Gamma(\OO_X)\to\Gamma(\OO_Y)$ is surjective.
+\end{cor}
 
+\begin{cor}[4.2.4]
+\label{1.4.2.4}
+\medskip\noindent
+\begin{enumerate}[label={\rm(\alph*)}]
+  \item Let $f$ be a morphism $Y\to X$, $(V_\lambda)$ a cover of $f(Y)$ by open subsets of $X$.
+    For $f$ to be an immersion (resp. an open immersion), it is necessary and sufficient
+\oldpage[I]{124}
+    that its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ is an immersion (resp. an open immersion) into $V_\lambda$.
+  \item Let $f$ be a morphism $Y\to X$, $(V_\lambda)$ an open cover of $X$.
+    For $f$ to be a closed immersion, it is necessary and sufficient that its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ is a closed immersion into $V_\lambda$.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+\label{proof-1.4.2.4}
+Let $f=(\psi,\theta)$; in the case (a), $\theta_y^\sharp$ is surjective (resp. bijective) for all $y\in Y$, and in the case (b), $\theta_y^\sharp$ is surjective for all $y\in Y$; it thus suffices to check that $\psi$, in case (a), is a homeomorphism from $Y$ to a locally closed (resp. open) subset of $X$, and in case (b), a homeomorphism from $Y$ to a closed subset of $X$.
+Now $\psi$ is evidently injective and sends each neighborhood of $y$ in $Y$ to a neighborhood of $\psi(y)$ is $\psi(Y)$ for all $y\in Y$, by virtue of the hypothesis; in case (a), $\psi(Y)\cap V_\lambda$ is locally closed (resp. open) in $V_\lambda$, so $\psi(Y)$ is locally closed (resp. open) in the union of the $V_\lambda$, and {\em a fortiori} in $X$; in case (b), $\psi(Y)\cap V_\lambda$ is closed in $V_\lambda$, so $\psi(Y)$ is closed in $X$ since $X=\bigcup_\lambda V_\lambda$.
+\end{proof}
+
+\begin{prop}[4.2.5]
+\label{1.4.2.5}
+The composition of two immersions (resp. of two open immersions, of two closed immersions) is an immersion (resp. an open immersion, a closed immersion).
+\end{prop}
+
+\begin{proof}
+\label{proof-1.4.2.5}
+This follows easily from \sref{1.4.1.6}.
+\end{proof}
+
+\subsection{Products of immersions}
+\label{subsection-products-of-immersions}
