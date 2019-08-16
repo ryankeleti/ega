@@ -468,5 +468,21 @@ The following properties are equivalent.
 \begin{proof}
 \label{proof-1.6.4.4}
 Since $X$ is Noetherian, it follows from \sref{1.6.2.2} that the conditions \emph{a)}, \emph{b)}, and \emph{d)} are equivalent, and imply \emph{c)} and \emph{c')};
-
+it is also clear that \emph{e)} implies \emph{a)}.
+It remains to see that \emph{c)} implies \emph{d)} and \emph{e)};
+we can restrict to the case where $X$ is affine.
+Then $A(X)$ is a $K$-algebra of finite type \sref{1.6.3.3}, and thus a Jacobson ring (\cite[p.~3-11 and 3-12]{I-1}), in which there are, by hypothesis, only a finite number of maximal ideals.
+Since a finite intersection of prime ideals can only be a prime ideal if it is equal to one of the prime ideals being intersected, every prime ideal of $A(X)$ is thus maximal, whence \emph{d)}.
+Further, we then know \sref{1.6.2.2} that $A(X)$ is an Artinian $K$-algebra of finite type, and so necessarily of \emph{finite rank} \cite{I-21}.
 \end{proof}
+
+\begin{env}[6.4.5]
+\label{1.6.4.5}
+When the conditions of \sref{1.6.4.4} are satisfied, we say that $X$ is a scheme \emph{finite over $K$} (cf. \sref[II]{2.6.1.1}), or a \emph{finite $K$-scheme}, of \emph{rank} $[A:K]$, which we also denote by $\rg_K(X)$;
+if $X$ and $Y$ are finite $K$-schemes, we have
+\begin{gather*}
+\rg_K(X\sqcup Y) = \rg_K(X)+\rg_K(Y)\tag{6.4.5.1}\\
+\rg_K(X\times_K Y) = \rg_K(X)\rg_K(Y)\tag{6.4.5.2}
+\end{gather*}
+as a result of \sref{1.3.2.2}.
+\end{env}
