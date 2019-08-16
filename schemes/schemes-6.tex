@@ -514,4 +514,64 @@ The points of $X$ with values in $\Omega$ then correspond, bijectively, to the $
 
 \begin{env}[6.4.8]
 \label{1.6.4.8}
+The number $n$ defined in \sref{1.6.4.7} is called the \emph{separable rank} of $A$ (or of $X$) over $K$, or also the \emph{geometric number of points} of $X$;
+it is equal to the number of elements of $X(\Omega)_K$.
+It follows immediately from this definition that, for every extension $K'$ of $K$, $X\otimes_K K'$ has the same geometric number of points as $X$.
+If we denote this number by $n(X)$, it is clear that, if $X$ and $Y$ are two schemes, finite over $K$, then
+\begin{equation*}
+    n(X\sqcup Y) = n(X)+n(Y).\tag{6.4.8.1}
+\end{equation*}
+Under the same hypotheses, we also have
+\begin{equation*}
+    n(X\times_K Y) = n(X)n(Y)\tag{6.4.8.2}
+\end{equation*}
+because of the interpretation of $n(X)$ as the number of elements of $X(\Omega)_K$ and \hyperref[1.3.4.3]{equation~3.4.3.1}.
 \end{env}
+
+\begin{prop}[6.4.9]
+\label{1.6.4.9}
+Let $K$ be a field, $X$ and $Y$ algebraic $K$-preschemes, $f\colon X\to Y$ a $K$-morphism, and $\Omega$ an algebraically closed extension of $K$ of infinite transcendence degree over $K$.
+For $f$ to be surjective, it is necessary and sufficient that the map $X(\Omega)_K\to Y(\Omega)_K$ that corresponds to $f$ \sref{1.3.4.1} be surjective.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.4.9}
+The necessity follows from \sref{1.6.3.10}, noting that $f$ is necessarily of finite type \sref{1.6.3.9}.
+To see that the condition is sufficient, we argue as in \sref{1.6.3.10}, noting that, for every $y\in Y$, $\kres(y)$ is an extension of $K$ of finite type, and so is $K$-isomorphic to a subfield of $\Omega$.
+\end{proof}
+
+\begin{rmk}[6.4.10]
+\label{1.6.4.10}
+We will see in chapter~IV that the conclusion of \sref{1.6.4.9} still holds without the hypothesis on the transcendence degree of $\Omega$ over $K$.
+\end{rmk}
+
+\begin{prop}[6.4.11]
+\label{1.6.4.11}
+If $f\colon X\to Y$ is a morphism of finite type, then, for every $y\in Y$, the fibre $f^{-1}(y)$ is an algebraic prescheme over the residue field $\kres(y)$, and for every $x\in f^{-1}(y)$, $\kres(x)$ is an extension of $\kres(x)$ of finite type.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.4.11}
+Since $f^{-1}(y)=X\otimes_Y\kres(y)$ \sref{1.6.3.6}, the proposition follows from \sref{1.6.3.4}[(iv)] and \sref{1.6.3.3}.
+\end{proof}
+
+\begin{prop}[6.4.12]
+\label{1.6.4.12}
+Let $f\colon X\to Y$ and $g\colon Y'\to Y$ be morphisms;
+set $X'=X\times_Y Y'$, and let $f'=f_{(Y')}\colon X'\to Y'$.
+Let $y'\in Y'$ and set $y=g(y')$;
+if the fibre $f^{-1}(y)$ is a finite algebraic scheme over $\kres(y)$, then the fibre $f'^{-1}(y)$ is a finite algebraic scheme over $\kres(y')$, and has the same rank and geometric number of points as $f^{-1}(y)$ does.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.4.12}
+Taking into account the transitivity of fibres \sref{1.3.6.5}, this follows immediately from \sref{1.6.4.6} and \sref{1.6.4.8}.
+\end{proof}
+
+\begin{env}[6.4.13]
+\label{1.6.4.13}
+Proposition~\sref{1.6.4.11} shows that the morphisms of finite type that correspond, intuitively, to the ``algebraic families of algebraic varieties'', with the points of $Y$ playing the\oldpage[I]{150} role of ``parameters'', which gives these morphisms a ``geometric'' meaning.
+The morphisms which are not of finite type will show up in the following mostly in questions of ``changing the base prescheme'', by localisation or completion, for example.
+\end{env}
+
+\subsection{Local determination of a morphism}
