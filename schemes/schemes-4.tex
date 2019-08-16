@@ -210,3 +210,45 @@ This follows easily from \sref{1.4.1.6}.
 
 \subsection{Products of immersions}
 \label{subsection-products-of-immersions}
+
+\begin{prop}[4.3.1]
+\label{1.4.3.1}
+Let $\alpha:X'\to X$, $\beta:Y'\to Y$ be two $S$-morphisms; if $\alpha$ and $\beta$ are immersions (resp. open immersions, closed immersions), then $\alpha\times_S\beta$ is an immersion (resp. an open immersion, a closed immersion).n
+In addition, if $\alpha$ (resp. $\beta$) identifies $X'$ (resp. $Y'$) with a subprescheme $X''$ (resp. $Y''$) of $X$ (resp. $Y$), then $\alpha\times_S\beta$ identifies the underlying space of $X'\times_S Y'$ with the subspace $p^{-1}(X'')\cap q^{-1}(Y'')$ of the underlying space of $X\times_S Y$, where $p$ and $q$ denote the projections from $X\times_S Y$ to $X$ and $Y$ respectively.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.4.3.1}
+According to Definition \sref{1.4.2.1}, we can restrict to the case where $X'$ and $Y'$ are subpreschemes, $\alpha$ and $\beta$ the injection morphisms. The proposition has already been proven for the subpreschemes induced by open sets \sref{1.3.2.7}; as each subprescheme is a closed subprescheme of a prescheme induced by an open set \sref{1.4.1.3}, we reduce to the case where $X'$ and $Y'$ are \emph{closed} subpreschemes.
+
+Let us first show that we can assume that $S$ is \emph{affine}.
+Indeed, let $(S_\lambda)$ be a cover of $S$ by open affine sets; if $\vphi$ and $\psi$ are the structure morphisms of $X$ and $Y$, then let $X_\lambda=\vphi^{-1}(S_\lambda)$ and $Y_\lambda=\psi^{-1}(S_\lambda)$.
+The restriction $X_\lambda'$ (resp. $Y_\lambda'$) of $X'$ (resp. $Y'$) to $X_\lambda\cap X'$ (resp. $Y_\lambda\cap Y'$) is a closed subprescheme of $X_\lambda$ (resp. $Y_\lambda$), the preschemes $X_\lambda$, $Y_\lambda$, $X_\lambda'$, $Y_\lambda'$ can be considered as $S_\lambda$-preschemes and the products $X_\lambda\times_S Y_\lambda$ and $X_\lambda\times_{S_\lambda}Y_\lambda$ (resp. $X_\lambda'\times_S Y_\lambda'$ and $X_\lambda'\times_{S_\lambda}Y_\lambda'$) are identical \sref{1.3.2.5}.
+If the proposition is true when $S$ is affine, then the restriction of $\alpha\times_S\beta$ to each of the $X_\lambda'\times_S Y_\lambda'$ is thus an immersion \sref{1.3.2.7}.
+As the product $X_\lambda'\times_S Y_\mu'$ (resp. $X_\lambda\times_S Y_\mu$) identifies with $(X_\lambda'\cap X_\mu')\times_S(Y_\lambda'\cap Y_\mu')$ (resp. $(X_\lambda\cap X_\mu)\times_S(Y_\lambda\cap Y_\mu)$) \sref{1.3.2.6.4}, the restriction of $\alpha\times_S\beta$
+\oldpage[I]{125}
+to each of the $X_\lambda'\times_S Y_\mu'$ is also an immersion; the same is true for $\alpha\times_S\beta$ by \sref{1.4.2.4}.
+
+Second, we prove that we can suppose that $X$ and $Y$ are \emph{affine}.
+Indeed, let $(U_i)$ (resp. $(V_j)$) be a cover of $X$ (resp. $Y$) by open affine sets, and let $X_i'$ (resp. $Y_j'$) be the restriction of $X'$ (resp. $Y'$) to $X'\cap U_i$ (resp. $Y'\cap V_j$), which is a closed subprescheme of $U_i$ (resp. $V_j$); $U_i\times_S V_j$ indentifies with the restriction of $X\times_S Y$ to $p^{-1}(U_i)\cap q^{-1}(V_j)$ \sref{1.3.2.7}; similarly, if $p'$ and $q'$ are the projections from $X'\times_S Y'$, then $X_i'\times_S Y_j'$ identifies with the restriction of $X'\times_S Y'$ to ${p'}^{-1}(X_i')\cap{q'}^{-1}(Y_j')$.
+Set $\gamma=\alpha\times_S\beta$; we have by definition $p\circ\gamma=\alpha\circ p'$ and $q\circ\gamma=\beta\circ q'$; as $X_i'=\alpha^{-1}(U_i)$ and $Y_j'=\beta^{-1}(V_j)$, we also have ${p'}^{-1}(X_i')=\gamma^{-1}(p^{-1}(U_i))$ and ${q'}^{-1}(Y_j')=\gamma^{-1}(q^{-1}(V_j))$, hence
+\[
+  {p'}^{-1}(X_i')\cap{q'}^{-1}(Y_j')=\gamma^{-1}(p^{-1}(U_i)\cap q^{-1}(V_j))=\gamma^{-1}(U_i\times_S V_j),
+\]
+we conclude as in the first part.
+
+So suppose $X$, $Y$, $S$ are affine, and let $B$, $C$, $A$ be their respective rings.
+Then $B$ and $C$ are $A$-algebras, $X'$ and $Y'$ are affine schemes whose rings are quotient algebras $B'$ and $C'$ of $B$ and $C$ respectively.
+In addition, we have $\alpha=({}^a\rho,\widetilde{\rho})$ and $\beta=({}^a\sigma,\widetilde{\sigma})$, where $\rho$ and $\sigma$ are respectively the canonical homomorphisms $B\to B'$ and $C\to C'$ \sref{1.1.7.3}.
+This being so, we know that $X\times_S Y$ (resp. $X'\times_S Y'$) is an affine scheme with ring $B\otimes_A C$ (resp. $B'\otimes_A C'$), and $\alpha\times_S\beta=({}^a\tau,\widetilde{\tau})$, where $\tau$ is the homomorphism $\rho\otimes\sigma$ from $B\otimes_A C$ to $B'\otimes_A C'$ (\sref{1.3.2.2} and \sref{1.3.2.3}); as this homomorphism is surjective, $\alpha\times_S\beta$ is an immersion.
+In addition, if $\fk{b}$ (resp. $\fk{c}$) is the kernel of $\rho$ (resp. $\sigma$), then the kernel of $\tau$ is $u(\fk{b})+v(\fk{c})$, where $u$ (resp. $v$) is the homomorphism $b\mapsto b\otimes 1$ (resp. $c\mapsto 1\otimes c$).
+As $p=({}^a u,\widetilde{u})$ and $q=({}^a v,\widetilde{v})$, this kernel corresponds, in the prime spectrum of $B\otimes_A C$, with the closed set $p^{-1}(X')\cap q^{-1}(Y')$ ((1.2.2.1) and \sref{1.1.1.2}[iii]), which finishes the proof.
+\end{proof}
+
+\begin{cor}[4.3.2]
+\label{1.4.3.2}
+If $f:X\to Y$ is an immersion (resp. an open immersion, a closed immersion) and an $S$-morphism, then $f_{(S')}$ is an immersion (resp. an open immersion, a closed immersion) for every extension $S'\to S$ of the base prescheme.
+\end{cor}
+
+\subsection{Inverse image of a subprescheme}
+\label{subsection-inverse-image-of-subprescheme}
