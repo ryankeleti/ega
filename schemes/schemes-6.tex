@@ -1,7 +1,7 @@
 \section{Finiteness conditions}
 \label{section-finiteness-conditions}
 
-\subsection{Noetherian and locally-Noetherian preschemes}
+\subsection{Noetherian and locally Noetherian preschemes}
 \label{subsection-noetherian-and-locally-noetherian-preschemes}
 
 \begin{defn}[6.1.1]
@@ -31,16 +31,16 @@ The second follows from \sref{1.1.1.6} and the fact that every space that is a f
 \label{1.6.1.3}
 Let $X$ be an affine scheme given by a ring $A$.
 The following conditions are equivalent:
-{\em(a)} $X$ is Noetherian;
-{\em(b)} $X$ is locally Noetherian;
-{\em(c)} $A$ is Noetherian.
+\emph{a)} $X$ is Noetherian;
+\emph{b)} $X$ is locally Noetherian;
+\emph{c)} $A$ is Noetherian.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.6.1.3}
-The equivalence between (a) and (b) follows from \sref{1.6.1.2} ant the fact that the underlying space of every affine scheme is quasi-compact \sref{1.1.1.10};
-it is furthermore clear that (c) implies (a).
-To see that (a) implies (c), we remark that there is a finite cover $(V_i)$ of $X$ by affine open subsets such that the ring $A_i$ of the prescheme induced on $V_i$ is Noetherian.
+The equivalence between \emph{a)} and \emph{b)} follows from \sref{1.6.1.2} ant the fact that the underlying space of every affine scheme is quasi-compact \sref{1.1.1.10};
+it is furthermore clear that \emph{c)} implies \emph{a)}.
+To see that \emph{a)} implies \emph{c)}, we remark that there is a finite cover $(V_i)$ of $X$ by affine open subsets such that the ring $A_i$ of the prescheme induced on $V_i$ is Noetherian.
 So let $(\fk{a}_n)$ be an increasing sequence of ideals of $A$;
 by a canonical bijective correspondence, there is a corresponding sequence $(\widetilde{a}_n)$ of sheaves of ideals in $\widetilde{A}=\OO_X$;
 to see that the sequence $(\fk{a}_n)$ is \unsure{stable}, it suffices to prove that the sequence $(\widetilde{\fk{a}}_n)$ is.
@@ -49,11 +49,11 @@ $\widetilde{\fk{a}}_n|V_i$ is thus of the form $\widetilde{\fk{a}}_{ni}$, where 
 Since $A_i$ is Noetherian, the sequence $(\fk{a}_{ni})$ is stable for all $i$, whence the proposition.
 \end{proof}
 
-We note that the above argument proves also that {\em if $X$ is a Noetherian prescheme, then every increasing sequence of coherent sheaves of ideals of $\OO_X$ is \unsure{stable}}.
+We note that the above argument proves also that \emph{if $X$ is a Noetherian prescheme, then every increasing sequence of coherent sheaves of ideals of $\OO_X$ is \unsure{stable}}.
 
 \begin{prop}[6.1.4]
 \label{1.6.1.4}
-Every subprescheme of a Noetherian (resp. locally-Noetherian) prescheme is Noetherian (resp. locally Noetherian).
+Every subprescheme of a Noetherian (\emph{resp.} locally Noetherian) prescheme is Noetherian (\emph{resp.} locally Noetherian).
 \end{prop}
 
 \begin{proof}
@@ -73,7 +73,7 @@ since $A$ is Noetherian \sref{1.6.1.3}, so too is $A_f$.
 
 \begin{env}[6.1.5]
 \label{1.6.1.5}
-WE note that the {\em product} of two Noetherian $S$-preschemes is not necessarily Noetherian, even if the preschemes are affine, since the tensor product of two Noetherian algebras in not necessarily a Noetherian ring (cf. \sref{1.6.3.8}).
+We note that the \emph{product} of two Noetherian $S$-preschemes is not necessarily Noetherian, even if the preschemes are affine, since the tensor product of two Noetherian algebras in not necessarily a Noetherian ring (cf. \sref{1.6.3.8}).
 \end{env}
 
 \begin{prop}[6.1.6]
@@ -112,18 +112,18 @@ Let $U_i$ ($1\leqslant i\leqslant m$) be the irreducible components of $U$ not c
 the complement (in $U$) of the union of the $U_i$ is an open neighbourhood $V$ of $X$ inside $U$, and thus so too in $X$;
 it is also, incidentally, the complement (in $X$) of the union of the irreducible components of $X$ that do not contain $x$ \sref[0]{0.2.1.6}.
 So let $W$ be an open neighbourhood of $X$ contained in $V$.
-The irreducible components of $W$ are the \unsure{traces over} $W$ of the irreducible components of $U$ that have a non-empty intersection with $W$ \sref[0]{0.2.1.6}, so these components contain $x$;
+The irreducible components of $W$ are the intersections of $W$ with the irreducible components of $U$ \sref[0]{0.2.1.6}, so these components contain $x$;
 since they are connected, so too is $W$.
 \end{proof}
 
 \begin{cor}[6.1.9]
 \label{1.6.1.9}
-A locally-Noetherian topological space is locally connected (which implies, amongst other things, that its connected components are open).
+A locally Noetherian topological space is locally connected (which implies, amongst other things, that its connected components are open).
 \end{cor}
 
 \begin{prop}[6.1.10]
 \label{1.6.1.10}
-Let $X$ be a locally-Noetherian topological space.
+Let $X$ be a locally Noetherian topological space.
 The following conditions are equivalent.
 \begin{enumerate}[label=\alph*)]
     \item The irreducible components of $X$ are open.
@@ -156,7 +156,7 @@ to say that $x$ is contained in only one single irreducible component of $X$ is 
 
 \begin{cor}[6.1.11]
 \label{1.6.1.11}
-Let $X$ be a locally-Noetherian space.
+Let $X$ be a locally Noetherian space.
 For $X$ to be irreducible, it is necessary and sufficient that $X$ be connected and non-empty, and that any two distinct irreducible components of $X$ have an empty intersection.
 If $X$ is a prescheme, this latter condition is equivalent to asking that $\Spec(\OO_x)$ be irreducible for all $x\in X$.
 \end{cor}
@@ -170,13 +170,13 @@ But by \sref{1.6.1.10}, these conditions imply that the irreducible components o
 
 \begin{cor}[6.1.12]
 \label{1.6.1.12}
-Let $X$ be a locally-Noetherian prescheme.
+Let $X$ be a locally Noetherian prescheme.
 For $X$ to be integral, it is necessary and sufficient that $X$ be connected and that $\OO_x$ be integral for all $x\in X$.
 \end{cor}
 
 \begin{prop}[6.1.13]
 \label{1.6.1.13}
-Let $X$ be a locally-Noetherian prescheme, and let $x\in X$ be a point such that the nilradical $\sh{N}_x$ of $\OO_x$ is prime (\emph{resp.} such that $\OO_x$ is reduced, \emph{resp.} integral);
+Let $X$ be a locally Noetherian prescheme, and let $x\in X$ be a point such that the nilradical $\sh{N}_x$ of $\OO_x$ is prime (\emph{resp.} such that $\OO_x$ is reduced, \emph{resp.} integral);
 then there exists an open neighbourhood $U$ of $x$ that is irreducible (\emph{resp.} reduced, \emph{resp.} integral).
 \end{prop}
 
@@ -228,3 +228,261 @@ We say that a morphism $f\colon X\to Y$ is of finite type if $Y$ is the union of
 \end{itemize}
 We then say that $X$ is a prescheme of finite type over $Y$, or a $Y$-prescheme of finite type.
 \end{defn}
+
+\begin{prop}[6.3.2]
+\label{1.6.3.2}
+If $f\colon X\to Y$ is a morphism of finite type, then every affine open subset $W$ of $Y$ satisfies property \emph{(P)} of \sref{1.6.3.1}.
+\end{prop}
+
+We first show
+\begin{lem}[6.3.2.1]
+\label{1.6.3.2.1}
+If $T\subset Y$ is an affine open subset, satisfying property \emph{(P)}, then, for every $g\in A(T)$, $D(g)$ also satisfies property \emph{(P)}.
+\end{lem}
+
+\begin{proof}
+\label{proof-1.6.3.2.1}
+By hypothesis, $f^{-1}(T)$ is a finite union of affine open subsets $Z_j$, that are such that $A(Z_j)$ is an algebra of finite type over $A(T)$;
+let $\vphi_j\colon A(T)\to A(Z_j)$ be the homomorphism of rings corresponding to the restriction of $f$ to $Z_j$ \sref{1.2.2.4}, and set $g_j=\vphi_j(g)$;
+we then have $f^{-1}(D(g))\cap Z_j=D(g_j)$ \sref{1.1.2.2.2}.
+But $A(D(g_j))=A(Z_j)_{g_j}=A(Z_j)[1/g_j]$ is of finite type over $A(Z_j)$, and \emph{a fortiori} over $A(T)$ by the hypothesis, and so also over $A(D(g))=A(T)[1/g]$, which proves the lemma.
+\end{proof}
+
+\begin{proof}
+\label{proof-1.6.3.2}
+With the above lemma, since $W$ is quasi-compact \sref{1.1.1.10}, there exists a finite covering of $W$ by sets of the form $D(g_i)$, where each $g_i$ belongs to a ring $A(V_{\alpha(i)})$.
+Each $D(g_i)$, being quasi-compact, is a finite union of sets $D(h_{ik})$, where $h_{ik}\in A(W)$;
+if $\vphi_i\colon A(W)\to A(D(g_i))$ is the canonical map, then we have $D(h_{ik})=D(\vphi_i(h_{ik}))$ by \sref{1.1.2.2.2}.
+By \sref{1.6.3.2.1}, each of the $f^{-1}(D(h_{ik}))$ admits a finite covering by affine open subsets $U_{ijk}$, that are such that the $A(U_{ijk})$ are algebras of finite type over $A(D(h_{ik}))=A(W)[1/h_{ik}]$, whence the proposition.
+\end{proof}
+
+We\oldpage[I]{145} can thus say that the notion of a prescheme of finite type over $Y$ is \emph{local on $Y$}.
+
+\begin{prop}[6.3.3]
+\label{1.6.3.3}
+Let $X$ and $Y$ be affine schemes;
+for $X$ to be of finite type over $Y$, it is necessary and sufficient that $A(X)$ be an algebra of finite type over $A(Y)$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.3.3}
+Since the condition clearly suffices, we show that it is necessary.
+Set $A=A(Y)$ and $B=A(X)$;
+by \sref{1.6.3.2}, there exists a finite affine open cover $(V_i)$ of $X$ such that each of the rings $A(V_i)$ is an $A$-algebra of finite type.
+Further, since the $V_i$ are quasi-compact, we can cover each of them with a finite number of open subsets of the form $D(g_{ij})\subset V_i$, where $g_{ij}\in B$;
+if $\vphi_i$ is a homomorphism $B\to A(V_i)$ that corresponds to the canonical injection $V_i\to X$, then we have $B_{g_{ij}}=(A(V_i))_{\vphi_i(g_{ij})}=A(V_i)[1/\vphi_i(g_{ij})]$, so $B_{g_{ij}}$ is an $A$-algebra of finite type.
+We can thus restrict to the case where $V_i=D(g_i)$ with $g_i\in B$.
+By hypothesis, there exists a finite subset $F_i$ of $B$ and an integer $n_i\geqslant0$ such that $B_{g_i}$ is the algebra generated over $A$ by the elements $b_i/g_i^{n_i}$, where the $b_i$ run over all of $F_i$.
+Since there are only finitely many of the $g_i$, we can assume that all the $n_i$ are equal to the same integer $n$.
+Further, since the $D(g_i)$ form a cover of $X$, the ideal generated in $B$ by the $g_i$ is equal to $B$, or, in other words, there exist $h_i\in B$ such that $\sum_i h_ig_i=1$.
+So let $F$ be the finite subset of $B$ given by the union of the $F_i$, the set of the $g_i$, and the set of the $h_i$; we will show that the subring $B'=A[F]$ of $B$ is equal to $B$.
+By hypothesis, for every $b\in B$ and every $i$, the canonical image of $b$ in $B_{g_i}$ is of the form $b'_i/g_i^{m_i}$, where $b'_i\in B'$;
+by multiplying the $b'_i$ by suitable powers of the $g_i$, we can again assume that all the $m_i$ are equal to the same integer $m$.
+By the definition of the ring of fractions, there is thus an integer $N$ (dependant on $b$) such that $N\geqslant m$ and $g_i^Nb\in B'$ for all $i$;
+but, \emph{in the ring $B'$}, the $g_i^N$ generate the ideal $B'$, because the $g_i$ do (and the $h_i$ belong to $B'$);
+there are thus $c_i\in B'$ such that $\sum_i c_ig_i^N=1$, whence $b=\sum_ic_ig_i^Nb\in B'$, Q.E.D.
+\end{proof}
+
+\begin{prop}[6.3.4]
+\label{1.6.3.4}
+\begin{enumerate}[label=\rm(\roman*)]
+    \item Every closed immersion is of finite type.
+    \item The composition of two morphisms of finite type is of finite type.
+    \item If $f\colon X\to X'$ and $g\colon Y\to Y'$ are $S$-morphisms of finite type, then $f\times_S g$ is of finite type.
+    \item If $f\colon X\to Y$ is an $S$-morphism of finite type, then $f_{(S')}$ is of finite type for any extension $g\colon S'\to S$ of the base prescheme.
+    \item If the composition $g\circ f$ of two morphisms is of finite type, with $g$ separated, then $f$ is of finite type.
+    \item If a morphism $f$ is of finite type, then $f_\mathrm{red}$ is of finite type.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.3.4}
+By \sref{1.5.5.12}, it suffices to prove (i), (ii), and (iv).
+
+To show (i), we can restrict to the case of a canonical injection $X\to Y$, with $X$ being a closed subprescheme of $Y$;
+further \sref{1.6.3.2}, we can assume that $Y$ is affine, in which case $X$ is also affine \sref{1.4.2.3} and its ring is isomorphic to a quotient ring $A/\fk{J}$, where $A$ is the ring of $Y$ and $\fk{J}$ is an ideal of $A$;
+since $A/\fk{J}$ is of finite type over $A$, the conclusion follows.
+
+Now we show (ii).
+Let $f\colon X\to Y$ and $g\colon Y\to Z$ be two morphisms of finite type, and let $U$ be an affine open subset of $Z$;
+$g^{-1}$ admits a finite covering by affine open subsets $V_i$ that are such that each $A(V_i)$ is an algebra of finite type over $A(U)$ \sref{1.6.3.2};
+similarly. each\oldpage[I]{146} of the $f^{-1}$ admits a finite cover by affine open subsets $W_{ij}$ that are such that each $A(W_{ij})$ is an algebra of finite type over $A(V_i)$, and so also an algebra of finite type over $A(U)$, whence the conclusion.
+
+Finally, to show (iv), we can restrict to the case where $S=Y$;
+then $f_{(S')}$ is also equal to $f_{Y_{(S')}}$, where we consider $f$ as a $Y$-morphism, and the base extension is $Y_{(S')}\to Y$ \sref{1.3.3.9}.
+So let $p$ and $q$ be the projections $X_{(S')}\to X$ and $X_{(S')}\to S'$.
+Let $V$ be an affine open subset of $S$;
+$f^{-1}(V)$ is a finite union of affine open subsets $W_i$, each of which is such that $A(W_i)$ is an algebra of finite type over $A(V)$ \sref{1.6.3.2}.
+Let $V'$ be an affine open subset of $S'$ contained in $g^{-1}(V)$;
+since $f\circ p=g\circ q$, $q^{-1}(V')$ is contained in the union of the $p^{-1}(W_i)$;
+on the other hand, the intersection $p^{-1}(W_i)\cap q^{-1}(V')$ can be identified with the product $W_i\times V V'$ \sref{1.3.2.7}, which is an affine scheme whose ring is isomorphic to $A(W_i)\otimes_{A(V)}A(V')$ \sref{1.3.2.2};
+this ring is, by hypothesis, an algebra of finite type over $A(V')$, which proves the proposition.
+\end{proof}
+
+\begin{cor}[6.3.5]
+\label{1.6.3.5}
+Let $f\colon X\to Y$ be an immersion morphism.
+If the underlying space of $Y$ (\emph{resp.} $X$) is locally Noetherian (\emph{resp.} Noetherian), then $f$ is of finite type.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.3.5}
+We can always assume that $Y$ is affine \sref{1.6.3.2};
+if the underlying space of $Y$ is locally Noetherian, then we can further assume that it is Noetherian, and then the underlying space of $X$, which is a subspace, is also Noetherian.
+In other words, we can assume that $Y$ is affine and that the underlying space of $X$ is Noetherian;
+there then exists a covering of $X$ by a finite number of affine open subsets $D(g_i)\subset Y$, where $g_i\in A(Y)$, that are such that the $X\cap D(g_i)$ are closed in $D(g_i)$ (and thus affine schemes \sref{1.4.2.3}), because $X$ is locally closed in $Y$ \sref{1.4.1.3}.
+Then $A(X\cap D(g_i))$ is an algebra of finite type over $A(D(g_i))$, by \sref{1.6.3.4}[(i)] and \sref{1.6.3.3}, and $A(D(g_i))=A(Y)_{g_i}=A(Y)[1/g_i]$ is of finite type over $A(Y)$, which finishes the proof.
+\end{proof}
+
+\begin{cor}[6.3.6]
+\label{1.6.3.6}
+Let $f\colon X\to Y$ and $g\colon Y\to Z$ be morphisms.
+If $g\circ f$ if of finite type, with either $X$ Noetherian or $X\times_Z Y$ locally Noetherian, then $f$ is of finite type.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.3.6}
+This follows immediately from the proof of \sref{1.5.5.12} and from \sref{1.6.3.5} applied to the immersion morphism $\Gamma_f$.
+\end{proof}
+
+\begin{prop}[6.3.7]
+\label{1.6.3.7}
+Let $f\colon X\to Y$ be a morphism of finite type;
+if $Y$ is Noetherian (\emph{resp.} locally Noetherian), then $X$ is Noetherian (\emph{resp.} locally Noetherian).
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.3.7}
+We can restrict to proving the proposition for when $Y$ is Noetherian.
+Then $Y$ is a finite union of affine open subsets $V_i$ that are such that the $A(V_i)$ are Noetherian rings.
+By \sref{1.6.3.2}, each of the $f^{-1}(V_i)$ is a finite union of affine open subsets $W_{ij}$ that are such that the $A(W_{ij})$ are algebras of finite type over $A(V_i)$, and thus Noetherian rings;
+this proves that $X$ is Noetherian.
+\end{proof}
+
+\begin{cor}[6.3.8]
+\label{1.6.3.8}
+Let $X$ be a prescheme of finite type over $S$.
+For every base extension $S'\to S$ with $S'$ Noetherian (\emph{resp.} locally Noetherian), $X_{(S')}$ is Noetherian (\emph{resp.} locally Noetherian).
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.3.8}
+This follows from \sref{1.6.3.7}, since $X_{(S')}$ is of finite type over $S'$ by \sref{1.6.3.4}[(iv)].
+\end{proof}
+
+We can also says that, for a product $X\times_S Y$ of $S$-preschemes, if \emph{one} of the factors\oldpage[I]{147}, $X$ or $Y$, is \emph{of finite type} over $S$ and \emph{the other is Noetherian} (resp. \emph{locally Noetherian}), then $X\times_S Y$ is \emph{Noetherian} (resp. \emph{locally Noetherian}).
+
+\begin{cor}[6.3.9]
+\label{1.6.3.9}
+Let $X$ be a prescheme of finite type over a locally Noetherian prescheme $S$.
+Then every $S$-morphism $f\colon X\to Y$ is of finite type.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.3.9}
+In fact, we can assume that $S$ is Noetherian;
+if $\vphi\colon X\to S$ and $\psi\colon Y\to S$ are the structure morphisms, then we have $\vphi=\psi\circ f$, and $X$ is Noetherian by \sref{1.6.3.7};
+$f$ is thus of finite type by \sref{1.6.3.6}.
+\end{proof}
+
+\begin{prop}[6.3.10]
+\label{1.6.3.10}
+Let $f\colon X\to Y$ be a morphism of finite type.
+For $f$ to be surjective, it is necessary and sufficient that, for every \emph{algebraically closed} field $\Omega$, the map $X(\Omega)\to Y(\Omega)$ that corresponds to $f$ \sref{1.3.4.1} be surjective.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.3.10}
+The condition suffices, as we can see by considering, for all $y\in Y$, an algebraically closed extension $\Omega$ of $\kres(y)$, and the commutative diagram
+\begin{equation*}
+    \begin{tikzcd}[row sep=tiny]
+        X \ar[dd,swap,"f"]&\\
+        &\Spec(\Omega) \ar[ul] \ar[dl]\\
+        Y&
+    \end{tikzcd}
+\end{equation*}
+(cf. \sref{1.3.5.3}).
+Conversely, suppose that $f$ is surjective, and let $g\colon\{\xi\}=\Spec(\Omega)\to Y$ be a morphism, where $\Omega$ is an algebraically closed field.
+If we consider the diagram
+\begin{equation*}
+    \begin{tikzcd}
+        X \ar[d,swap,"f"]
+        & X_{(\Omega)} \ar[l] \ar[d,"f_{(\Omega)}"]\\
+        Y
+        & \Spec(\Omega) \ar[l]
+    \end{tikzcd}
+\end{equation*}
+then it suffices to show that there exists a \emph{rational point over $\Omega$} in $X_{(\Omega)}$ (\sref{1.3.3.14}, \sref{1.3.4.3}, and \sref{1.3.4.4}).
+Since $f$ is surjective, $X_{(\Omega)}$ is non-empty \sref{1.3.5.10}, and since $f$ is of finite type, so too is $f_{(\Omega)}$ \sref{1.6.4.3}[(iv)];
+thus $X_{(\Omega)}$ contains a non-empty affine open subset $Z$ such that $A(Z)$ is an non-null algebra of finite type over $\Omega$.
+By Hilbert's zero theorem \cite{I-21}, there exists an $\Omega$-homomorphism $A(Z)\to\Omega$, and thus a section of $X_{(\Omega)}$ over $\Spec(\Omega)$, which proves the proposition.
+\end{proof}
+
+\subsection{Algebraic preschemes}
+\label{subsection-algebraic-preschemes}
+
+\begin{defn}[6.4.1]
+\label{1.6.4.1}
+Given a field $K$, we define an algebraic $K$-prescheme to be a prescheme $X$ of finite type over $K$;
+$K$ is called the base field of $X$.
+If, further, $X$ is a scheme \emph{(or if $X$ is a \emph{$K$-scheme}, which amounts to the same thing \sref{1.5.5.8})}, we say that $X$ is an algebraic $K$-scheme.
+\end{defn}
+
+Every algebraic $K$-prescheme is \emph{Noetherian} \sref{1.6.3.7}.
+
+\begin{prop}[6.4.2]
+\label{1.6.4.2}
+Let $X$ be an algebraic $K$-prescheme.
+For a point $x\in X$ to be closed, it is necessary and sufficient that $\kres(x)$ be an algebraic extension of $K$ of finite degree.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.4.2}
+We can assume that $X$ is affine, with the ring $A$ of $X$ being a $K$-algebra of finite type.
+Indeed, the affine open subsets $U$ of $X$ such that $A(U)$ is a $K$-algebra of finite type form a covering of $X$ \sref{1.6.3.1}.
+The closed points of $X$ are thus the points such that $\fk{j}_x$ is a\oldpage[I]{148} maximal ideal of $A$, or, in other words, such that $A/\fk{j}_x$ is a field (necessarily equal to $\kres(x)$).
+Since $A/\fk{j}_x$ is a $K$-algebra of finite type, we see that, if $x$ is closed, then $\kres(x)$ is a field that is an algebra of finite type over $K$, and so necessarily a $K$-algebra of \emph{finite rank} \cite{I-21}.
+Conversely, if $\kres(x)$ is of finite rank over $K$, so too is $A/\fk{j}_x\subset\kres(x)$, and since every integral ring that is also a $K$-algebra of finite rank is a field, we have that $A/\fk{j}_x=\kres(x)$, and so $x$ is closed.
+\end{proof}
+
+\begin{cor}[6.4.3]
+\label{1.6.4.3}
+Let $K$ be an algebraically-closed field, and $X$ an algebraic $K$-prescheme;
+the closed points of $X$ are then the rational points over $K$ \sref{1.3.4.4} and can be canonically identified with the points of $X$ with values in $K$.
+\end{cor}
+
+\begin{prop}[6.4.4]
+\label{1.6.4.4}
+Let $X$ be an algebraic prescheme over a field $K$.
+The following properties are equivalent.
+\begin{itemize}
+    \item[\emph{a)}] $X$ is Artinian.
+    \item[\emph{b)}] The underlying space of $X$ is discrete.
+    \item[\emph{c)}] The underlying space of $X$ has only a finite number of closed points.
+    \item[\emph{c')}] The underlying space of $X$ is finite.
+    \item[\emph{d)}] The points of $X$ are closed.
+    \item[\emph{e)}] $X$ is isomorphic to $\Spec(A)$, where $A$ is a $K$-algebra of finite rank.
+\end{itemize}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.4.4}
+Since $X$ is Noetherian, it follows from \sref{1.6.2.2} that the conditions \emph{a)}, \emph{b)}, and \emph{d)} are equivalent, and imply \emph{c)} and \emph{c')};
+it is also clear that \emph{e)} implies \emph{a)}.
+It remains to see that \emph{c)} implies \emph{d)} and \emph{e)};
+we can restrict to the case where $X$ is affine.
+Then $A(X)$ is a $K$-algebra of finite type \sref{1.6.3.3}, and thus a Jacobson ring (\cite[p.~3-11 and 3-12]{I-1}), in which there are, by hypothesis, only a finite number of maximal ideals.
+Since a finite intersection of prime ideals can only be a prime ideal if it is equal to one of the prime ideals being intersected, every prime ideal of $A(X)$ is thus maximal, whence \emph{d)}.
+Further, we then know \sref{1.6.2.2} that $A(X)$ is an Artinian $K$-algebra of finite type, and so necessarily of \emph{finite rank} \cite{I-21}.
+\end{proof}
+
+\begin{env}[6.4.5]
+\label{1.6.4.5}
+When the conditions of \sref{1.6.4.4} are satisfied, we say that $X$ is a scheme \emph{finite over $K$} (cf. \sref[II]{2.6.1.1}), or a \emph{finite $K$-scheme}, of \emph{rank} $[A:K]$, which we also denote by $\rg_K(X)$;
+if $X$ and $Y$ are finite $K$-schemes, we have
+\begin{gather*}
+\rg_K(X\sqcup Y) = \rg_K(X)+\rg_K(Y)\tag{6.4.5.1}\\
+\rg_K(X\times_K Y) = \rg_K(X)\rg_K(Y)\tag{6.4.5.2}
+\end{gather*}
+as a result of \sref{1.3.2.2}.
+\end{env}
