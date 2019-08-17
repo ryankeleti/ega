@@ -1,18 +1,15 @@
 # EGA
 
-amateur translation (French to English) of A. Grothendieck's EGA, starting with EGA I.
+Amateur translation (French to English) of A. Grothendieck's EGA, starting with EGA I.
 
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
-to compile, `make book`, `make pdfs`, or `make all`.
+To compile, `make book`, `make pdfs`, or `make all`.
+For compiled PDFs, go to the [releases page].
 
-please do not commit PDF files, instead put `book.pdf` in the `build` release.
+## Current status
 
-click [here](https://github.com/ryankeleti/ega/releases/download/build/book.pdf) for a copy of the compiled version.
-
-## current status
-
-Here is the current status of the translation, along with who is currently working on/has worked on which sections
+Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
 - [x] Introduction (proofread by @thosgood)
 - [ ] Preliminaries
@@ -51,11 +48,3 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 8. Chevalley schemes (@thosgood)
     + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
     + [ ] 10. Formal schemes (@thosgood, @ryankeleti)
-
-## todo
-
-- hyperref links to equations (e.g. 3.3.9.1)
-- check for any `\unsure` commands in the source
-- check that all `hyperref` references are found
-- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
-- web version? work in progress
