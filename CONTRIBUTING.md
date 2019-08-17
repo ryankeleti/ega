@@ -3,6 +3,16 @@
 - Tim Hosgood (@thosgood)
 - Ryan Keleti (@ryankeleti)
 
+## notes for contributors
+- please do not commit PDF files
+
+## TODO
+- hyperref links to equations (e.g. 3.3.9.1)
+- check for any `\unsure` commands in the source
+- check that all `hyperref` references are found
+- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
+- web version? work in progress
+
 ## resources for contributors
 
 - the notes [here](https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/) are extremely helpful
