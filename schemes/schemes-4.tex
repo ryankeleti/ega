@@ -19,24 +19,24 @@ The support $Y$ of the sheaf $\OO_X/\sh{I}$ is then closed, and if we denote by 
 \begin{proof}
 \label{proof-1.4.1.2}
 \oldpage[I]{120}
-It evidently suffices \sref{1.2.1.3} to consider the case where $X$ is an affine scheme, and to show that in this case $Y$ is closed in $X$ and is an {\em affine scheme}.
+It evidently suffices \sref{1.2.1.3} to consider the case where $X$ is an affine scheme, and to show that in this case $Y$ is closed in $X$ and is an \emph{affine scheme}.
 Indeed, if $X=\Spec(A)$, then we have $\OO_X=\widetilde{A}$ and $\sh{I}=\widetilde{\fk{I}}$, where $\fk{I}$ is an ideal of $A$ \sref{1.1.4.1}; $Y$ is then equal to the closed subset $V(\fk{I})$ of $X$ and identifies with the prime spectrum of the ring $B=A/\fk{I}$ \sref{1.1.1.11};
 in addition, if $\vphi$ is the canonical homomorphism $A\to B=A/\fk{I}$, then the direct image ${}^a\vphi_*(\widetilde{B})$ canonically identifies with the sheaf $\widetilde{A}/\widetilde{\fk{I}}=\OO_X/\sh{I}$ (Proposition \sref{1.1.6.3} and Corollary \sref{1.1.3.9}), which finishes the proof.
 \end{proof}
 
-We say that $(Y,\OO_Y)$ is the {\em subprescheme} of $(X,\OO_X)$ {\em defined by the sheaf of ideals $\sh{I}$}; this is a particular case of the more general notion of a {\em subprescheme}:
+We say that $(Y,\OO_Y)$ is the \emph{subprescheme} of $(X,\OO_X)$ \emph{defined by the sheaf of ideals $\sh{I}$}; this is a particular case of the more general notion of a \emph{subprescheme}:
 
 \begin{defn}[4.1.3]
 \label{1.4.1.3}
 We say that a ringed space $(Y,\OO_Y)$ is a subprescheme of a prescheme $(X,\OO_X)$ if:
 \begin{enumerate}
   \item[1st] $Y$ is a locally closed subspace of $X$;
-  \item[2nd] if $U$ denotes the largest open subset of $X$ containing $Y$ such that     $Y$ is closed in $U$ ({\em equivalently}, the complement in $X$ of the boundary of $Y$ with respect to $\overline{Y}$), then $(Y,\OO_Y)$ is a subprescheme of $(U,\OO_X|U)$ defined by a quasi-coherent sheaf of ideals of $\OO_X|U$.
+  \item[2nd] if $U$ denotes the largest open subset of $X$ containing $Y$ such that     $Y$ is closed in $U$ (\emph{equivalently}, the complement in $X$ of the boundary of $Y$ with respect to $\overline{Y}$), then $(Y,\OO_Y)$ is a subprescheme of $(U,\OO_X|U)$ defined by a quasi-coherent sheaf of ideals of $\OO_X|U$.
 \end{enumerate}
 We say that the subprescheme $(Y,\OO_Y)$ of $(X,\OO_X)$ is closed if $Y$ is closed in $X$ (in which case $U=X$).
 \end{defn}
 
-It follows immediately from this definition and Proposition \sref{1.4.1.2} that the closed subpreschemes of $X$ are in canonical {\em bijective correspondence} with the quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$, since if two such sheaves $\sh{J}$, $\sh{J}'$ have the same (closed) support $Y$ and if the restrictions of $\OO_X/\sh{J}$ and $\OO_X/\sh{J}'$ to $Y$ are \unsure{identical/the identity}, then we have $\sh{J}'=\sh{J}$.
+It follows immediately from this definition and Proposition \sref{1.4.1.2} that the closed subpreschemes of $X$ are in canonical \emph{bijective correspondence} with the quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$, since if two such sheaves $\sh{J}$, $\sh{J}'$ have the same (closed) support $Y$ and if the restrictions of $\OO_X/\sh{J}$ and $\OO_X/\sh{J}'$ to $Y$ are \unsure{identical/the identity}, then we have $\sh{J}'=\sh{J}$.
 
 \begin{env}[4.1.4]
 \label{1.4.1.4}
@@ -57,7 +57,7 @@ We then define a quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$ by taking $\
 We check immediately according to Definition \sref{1.4.1.3} and \sref{1.4.1.4} that there exists a unique sheaf of ideals $\sh{J}$ satisfying these conditions and that define the closed subprescheme $(Y,\OO_Y)$.
 \end{proof}
 
-In particular, the {\em induced} prescheme by $X$ on an {\em open subset} of $X$ is a {\em subprescheme} of $X$.
+In particular, the \emph{induced} prescheme by $X$ on an \emph{open subset} of $X$ is a \emph{subprescheme} of $X$.
 
 \begin{prop}[4.1.6]
 \label{1.4.1.6}
@@ -74,27 +74,27 @@ Since a locally closed subset of a locally closed subspace of $X$ is a locally c
 We will always make the previous identification.
 \begin{env}[4.1.7]
 \label{1.4.1.7}
-Let $Y$ be a subprescheme of a prescheme $X$, and denote by $\psi$ the canonical injection $Y\to X$ of the {\em underlying subspaces}; we know that the inverse image $\psi^*(\OO_X)$ is the restriction $\OO_X|Y$ \sref[0]{0.3.7.1}.
-If, for each $y\in Y$, we denote by $\omega_y$ the canonical homomorphism $(\OO_X)_y\to(\OO_Y)_y$, then these homomorphisms are the restrictions to stalks of a {\em surjective} homomorphism $\omega$ of sheaves of rings $\OO_X|Y\to\OO_Y$: indeed, it suffices to check locally on $Y$, that is to say, we can suppose that $X$ is affine and that the subprescheme $Y$ is closed; if in this case $\sh{I}$ is the sheaf of ideals in $\OO_X$ which defines $Y$, then the $\omega_y$ are none other than the restriction to stalks of the homomorphism $\OO_X|Y\to(\OO_X/\sh{I})|Y$.
-We have thus defined a {\em monomorphism of ringed spaces} \sref[0]{0.4.1.1} $j=(\psi,\omega^\flat)$ which is evidently a morphism $Y\to X$ of preschemes \sref{1.2.2.1}, and we call this the {\em canonical injection morphism}.
+Let $Y$ be a subprescheme of a prescheme $X$, and denote by $\psi$ the canonical injection $Y\to X$ of the \emph{underlying subspaces}; we know that the inverse image $\psi^*(\OO_X)$ is the restriction $\OO_X|Y$ \sref[0]{0.3.7.1}.
+If, for each $y\in Y$, we denote by $\omega_y$ the canonical homomorphism $(\OO_X)_y\to(\OO_Y)_y$, then these homomorphisms are the restrictions to stalks of a \emph{surjective} homomorphism $\omega$ of sheaves of rings $\OO_X|Y\to\OO_Y$: indeed, it suffices to check locally on $Y$, that is to say, we can suppose that $X$ is affine and that the subprescheme $Y$ is closed; if in this case $\sh{I}$ is the sheaf of ideals in $\OO_X$ which defines $Y$, then the $\omega_y$ are none other than the restriction to stalks of the homomorphism $\OO_X|Y\to(\OO_X/\sh{I})|Y$.
+We have thus defined a \emph{monomorphism of ringed spaces} \sref[0]{0.4.1.1} $j=(\psi,\omega^\flat)$ which is evidently a morphism $Y\to X$ of preschemes \sref{1.2.2.1}, and we call this the \emph{canonical injection morphism}.
 
-If $f:X\to Z$ is a morphism, we then say that the composite morphism $Y\xrightarrow{j}X\xrightarrow{f}Z$ is the {\em restriction} of $f$ to the subprescheme $Y$.
+If $f:X\to Z$ is a morphism, we then say that the composite morphism $Y\xrightarrow{j}X\xrightarrow{f}Z$ is the \emph{restriction} of $f$ to the subprescheme $Y$.
 \end{env}
 
 \begin{env}[4.1.8]
 \label{1.4.1.8}
-Conforming to the general definitions (T, I, 1.1), we will say that a morphism of preschemes $f:Z\to X$ is \unsure{{\em majorized}} by the injection morphism $j:Y\to X$ of a subprescheme $Y$ of $X$ if $f$ factors as $Z\xrightarrow{g}Y\xrightarrow{j}X$, where $g$ is a morphism of preschemes; $g$ is necessarily {\em unique} since $j$ is a monomorphism.
+Conforming to the general definitions (T, I, 1.1), we will say that a morphism of preschemes $f:Z\to X$ is \unsure{\emph{majorized}} by the injection morphism $j:Y\to X$ of a subprescheme $Y$ of $X$ if $f$ factors as $Z\xrightarrow{g}Y\xrightarrow{j}X$, where $g$ is a morphism of preschemes; $g$ is necessarily \emph{unique} since $j$ is a monomorphism.
 \end{env}
 
 \begin{prop}[4.1.9]
 \label{1.4.1.9}
-For a morphism $f:Z\to X$ to be majorized by an injection morphism $j:Y\to X$, it is necessary and sufficient that $f(Z)\subset Y$ and that for all $z\in Z$, if we set $y=f(z)$, then the homomorphism $(\OO_X)_y\to\OO_z$ corresponding to $f$ factors as $(\OO_Z)_y\to(\OO_Y)_y\to\OO_z$ ({\em or equivalently, that} the kernel of $(\OO_X)_y\to\OO_z$ contains the kernel of $(\OO_X)_y\to(\OO_Y)_y$).
+For a morphism $f:Z\to X$ to be majorized by an injection morphism $j:Y\to X$, it is necessary and sufficient that $f(Z)\subset Y$ and that for all $z\in Z$, if we set $y=f(z)$, then the homomorphism $(\OO_X)_y\to\OO_z$ corresponding to $f$ factors as $(\OO_Z)_y\to(\OO_Y)_y\to\OO_z$ (\emph{or equivalently, that} the kernel of $(\OO_X)_y\to\OO_z$ contains the kernel of $(\OO_X)_y\to(\OO_Y)_y$).
 \end{prop}
 
 \begin{proof}
 \label{proof-1.4.1.9}
 The conditions are evidently necessary.
-To see that they are sufficient, we can reduce to the case where $Y$ is a {\em closed} subprescheme of $X$, by replacing if needed $X$ by an open $U$ such that $Y$ is closed in $U$ \sref{1.4.1.3}; $Y$ is then defined by a quasi-coherent sheaf of ideals $\sh{I}$ of $\OO_X$.
+To see that they are sufficient, we can reduce to the case where $Y$ is a \emph{closed} subprescheme of $X$, by replacing if needed $X$ by an open $U$ such that $Y$ is closed in $U$ \sref{1.4.1.3}; $Y$ is then defined by a quasi-coherent sheaf of ideals $\sh{I}$ of $\OO_X$.
 Set $f=(\psi,\theta)$, and let $\sh{J}$ be the sheaf of ideals of $\psi^*(\OO_X)$, kernel of $\theta^\sharp:\psi^*(\OO_X)\to\OO_Z$; considering the properties of the functor $\psi^*$ \sref[0]{0.3.7.2}, the hypotheses emply that for each $z\in Z$, we have $(\psi^*(\sh{I}))_z\subset\sh{J}_z$, and as a result $\psi^*(\sh{I})\subset\sh{J}$.
 Thus $\theta^\sharp$ factors as
 \[
@@ -111,7 +111,7 @@ of preschemes $Z\to Y$ \sref{1.2.2.1}, which according to the above is such that
 For an injection morphism $Z\to X$ to be majorized by the injection morphism $Y\to X$, it is necessary and sufficient that $Z$ is a subprescheme of $Y$.
 \end{cor}
 
-We then write $Z\leqslant Y$, and this condition is evidently an {\em order relation} on the set of subpreschemes of $X$.
+We then write $Z\leqslant Y$, and this condition is evidently an \emph{order relation} on the set of subpreschemes of $X$.
 
 \subsection{Immersion morphisms}
 \label{subsection-immersion-morphisms}
@@ -121,11 +121,11 @@ We then write $Z\leqslant Y$, and this condition is evidently an {\em order rela
 We say that a morphism $f:Y\to X$ is an immersion (resp. a closed immersion, an open immersion) if it factors as $Y\xrightarrow{g}Z\xrightarrow{j}X$, where $g$ is an isomorphism, $Z$ is a subprescheme of $X$ (resp. a closed subprescheme, a subprescheme induced by an open set) and $j$ is the injection morphism.
 \end{defn}
 
-The subprescheme $Z$ and the isomorphism $g$ are then determined in a {\em unique} way, since if $Z'$ is a second subprescheme of $X$, $j'$ the injection $Z'\to X$, and $g'$ an isomorphism $Y\to Z'$ such that $j\circ g=j'\circ g'$, then we have $j'=j\circ g\circ{g'}^{-1}$, hence $Z'\leqslant Z$ \sref{1.4.1.10}, and we similarly show that $Z\leqslant Z'$, hence $Z'=Z$, and as $j$ is a monomorphism of preschemes, $g'=g$.
+The subprescheme $Z$ and the isomorphism $g$ are then determined in a \emph{unique} way, since if $Z'$ is a second subprescheme of $X$, $j'$ the injection $Z'\to X$, and $g'$ an isomorphism $Y\to Z'$ such that $j\circ g=j'\circ g'$, then we have $j'=j\circ g\circ{g'}^{-1}$, hence $Z'\leqslant Z$ \sref{1.4.1.10}, and we similarly show that $Z\leqslant Z'$, hence $Z'=Z$, and as $j$ is a monomorphism of preschemes, $g'=g$.
 
-We say that $f=j\circ g$ is the {\em canonical factorization} of the immersion $f$, and the subprescheme $Z$ and the isomorphism $g$ are those {\em associated to $f$}.
+We say that $f=j\circ g$ is the \emph{canonical factorization} of the immersion $f$, and the subprescheme $Z$ and the isomorphism $g$ are those \emph{associated to $f$}.
 
-It is clear that an immersion is a {\em monomorphism} of preschemes \sref{1.4.1.7} and {\em a fortiori} a {\em radical} morphism \sref{1.3.5.4}.
+It is clear that an immersion is a \emph{monomorphism} of preschemes \sref{1.4.1.7} and \emph{a fortiori} a \emph{radical} morphism \sref{1.3.5.4}.
 
 \begin{prop}[4.2.2]
 \label{1.4.2.2}
@@ -143,9 +143,9 @@ It is clear that an immersion is a {\em monomorphism} of preschemes \sref{1.4.1.
   \item The conditions are evidently necessary.
     Conversely, if they are satisfied, then it is clear that $\theta^\sharp$ is an isomorphism from $\OO_Y$ to $\psi^*(\OO_X)$, and $\psi^*(\OO_X)$ is the sheaf induced by ``transport of structure'' via $\psi^{-1}$ from $\OO_X|\psi(Y)$; hence the conclusion.
   \item The conditions are evidently necessary---we prove that they are sufficient.
-    Consider first the particular case where we suppose that $X$ is an affine scheme and that $Z=\psi(Y)$ is {\em closed} in $X$.
+    Consider first the particular case where we suppose that $X$ is an affine scheme and that $Z=\psi(Y)$ is \emph{closed} in $X$.
     We then know \sref[0]{0.3.4.6} that $\psi_*(\OO_Y)$ has $Z$ for its support and that if we denote by $\OO_Z'$ its restriction ot $Z$, then the ringed space $(Z,\OO_Z')$ is induced from $(Y,\OO_Y)$ by transport of structure via the homeomorphism $\psi$, considered as a map from $Y$ to $Z$.
-    Let us show that $f_*(\OO_Y)=\psi_*(\OO_Y)$ is a {\em quasi-coherent} $\OO_X$-module.
+    Let us show that $f_*(\OO_Y)=\psi_*(\OO_Y)$ is a \emph{quasi-coherent} $\OO_X$-module.
     Indeed, for all $x\not\in Z$, $\psi_*(\OO_Y)$ restricted to a suitable neighborhood of $x$ is zero.
     On the contrary, if $z\in Z$, then we have $x=\psi(y)$ for a well-defined  $y\in Y$; let $V$ be an open affine neighborhood of $y$ in $Y$; $\psi(V)$ is then open in $Z$, so \unsure{trace} over $Z$ of an open subset $U$ of $X$, and the restriction of $U$ to $\psi_*(\OO_Y)$ is identical to the restriction of $U$ to the direct image
 \oldpage[I]{123}
@@ -161,11 +161,11 @@ It is clear that an immersion is a {\em monomorphism} of preschemes \sref{1.4.1.
       }
     \]
     is commutative and the vertical arrows are the isomorphisms \sref[0]{0.3.7.2}, the hypothesis that $\theta_y^\sharp$ is surjective implies that so is $\theta_{\psi(y)}$.
-    As the support of $\psi_*(\OO_Y)$ is $Z=\psi(Y)$, $\theta$ is a {\em surjective} homomorphism from $\OO_X=\widetilde{A}$ to the quasi-coherent $\OO_X$-module $f_*(\OO_Y)$.
+    As the support of $\psi_*(\OO_Y)$ is $Z=\psi(Y)$, $\theta$ is a \emph{surjective} homomorphism from $\OO_X=\widetilde{A}$ to the quasi-coherent $\OO_X$-module $f_*(\OO_Y)$.
     As a result, there exists a unique isomorphism $\omega$ from a sheaf quotient $\widetilde{A}/\widetilde{\fk{J}}$ ($\fk{J}$ an ideal of $A$) to $f_*(\OO_Y)$ which when composed with the canonical homomorphism $\widetilde{A}\to\widetilde{A}/\widetilde{\fk{J}}$ gives $\theta$ \sref{1.1.3.8}; if $\OO_Z$ denotes the restriction of $\widetilde{A}/\widetilde{\fk{J}}$ to $Z$, then $(Z,\OO_Z)$ is a subprescheme of $(X,\OO_X)$, and $f$ factors through the canonical injection of this subprescheme into $X$ and the isomorphism $(\psi_0,\omega_0)$, where $\psi_0$ is $\psi$ considered as a map from $Y$ to $Z$, and $\omega_0$ the restriction of $\omega$ to $\OO_Z$.
 
     We pass to the general case.
-    Let $U$ be an affine open subset of $X$ such that $U\cap\psi(Y)$ is closed in $U$ and non-empty.
+    Let $U$ be an affine open subset of $X$ such that $U\cap\psi(Y)$ is closed in $U$ and nonempty.
     By restricting $f$ to the prescheme induced by $Y$ on the open subset $\psi^{-1}(U)$, and by considering it as a morphism from this prescheme to the prescheme induced by $X$ on $U$, we reduce to the first case; the restriction of $f$ to $\psi^{-1}(U)$ is thus a closed immersion $\psi^{-1}(U)\to U$, canonically factoring as $j_U\circ g_U$, where $g_U$ is an isomorphism from the prescheme $\psi^{-1}(U)$ to a subprescheme $Z_U$ of $U$, and $j_U$ is the canonical injection $Z_U\to U$.
     Let $V$ be a second affine open subset of $X$ such that $V\subset U$; as the restriction $Z_V'$ of $Z_U$ to $V$ is a subprescheme of the prescheme $V$, the restriction of $f$ to $\psi^{-1}(V)$ factors as $j_V'\circ g_V'$, where $j_V'$ is the canonical injection $Z_V'\to V$ and $g_V'$ is an isomorphism from $\psi^{-1}(V)$ to $Z_V'$.
     By the uniqueness of the canonical factorization of an immersion \sref{1.4.2.1}, we necessarily have that $Z_V'=Z_V$ and $g_V'=g_V$.
@@ -195,7 +195,7 @@ For a morphism $f=(\psi,\theta):Y\to X$ to be a closed immersion, it is necessar
 \begin{proof}
 \label{proof-1.4.2.4}
 Let $f=(\psi,\theta)$; in the case (a), $\theta_y^\sharp$ is surjective (resp. bijective) for all $y\in Y$, and in the case (b), $\theta_y^\sharp$ is surjective for all $y\in Y$; it thus suffices to check that $\psi$, in case (a), is a homeomorphism from $Y$ to a locally closed (resp. open) subset of $X$, and in case (b), a homeomorphism from $Y$ to a closed subset of $X$.
-Now $\psi$ is evidently injective and sends each neighborhood of $y$ in $Y$ to a neighborhood of $\psi(y)$ is $\psi(Y)$ for all $y\in Y$, by virtue of the hypothesis; in case (a), $\psi(Y)\cap V_\lambda$ is locally closed (resp. open) in $V_\lambda$, so $\psi(Y)$ is locally closed (resp. open) in the union of the $V_\lambda$, and {\em a fortiori} in $X$; in case (b), $\psi(Y)\cap V_\lambda$ is closed in $V_\lambda$, so $\psi(Y)$ is closed in $X$ since $X=\bigcup_\lambda V_\lambda$.
+Now $\psi$ is evidently injective and sends each neighborhood of $y$ in $Y$ to a neighborhood of $\psi(y)$ is $\psi(Y)$ for all $y\in Y$, by virtue of the hypothesis; in case (a), $\psi(Y)\cap V_\lambda$ is locally closed (resp. open) in $V_\lambda$, so $\psi(Y)$ is locally closed (resp. open) in the union of the $V_\lambda$, and \emph{a fortiori} in $X$; in case (b), $\psi(Y)\cap V_\lambda$ is closed in $V_\lambda$, so $\psi(Y)$ is closed in $X$ since $X=\bigcup_\lambda V_\lambda$.
 \end{proof}
 
 \begin{prop}[4.2.5]

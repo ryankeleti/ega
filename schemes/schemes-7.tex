@@ -34,9 +34,9 @@ In particular, it follows that the rational functions on $X$ form a \emph{ring} 
 
 \begin{env}[7.1.4]
 \label{1.7.1.4}
-When $X$ is an \emph{irreducible} prescheme, every non-empty open subset of $X$ is dense in $X$; so we can say that the non-empty open subsets of $X$ are the \emph{open neighbourhoods of the generic point} $x$ of $X$.
-To say that two morphisms from non-empty open subsets of $X$ to $Y$ are equivalent means thus means, in this case, that they have the \emph{same germ} at the point $x$.
-Said otherwise, the rational maps (resp. rational $S$-maps) $X\to Y$ are identified with the \emph{germs of morphisms} (resp. \emph{$S$-morphisms}) from non-empty open subsets of $X$ to $Y$ at the generic point $x$ of $X$.
+When $X$ is an \emph{irreducible} prescheme, every nonempty open subset of $X$ is dense in $X$; so we can say that the nonempty open subsets of $X$ are the \emph{open neighbourhoods of the generic point} $x$ of $X$.
+To say that two morphisms from nonempty open subsets of $X$ to $Y$ are equivalent means thus means, in this case, that they have the \emph{same germ} at the point $x$.
+Said otherwise, the rational maps (resp. rational $S$-maps) $X\to Y$ are identified with the \emph{germs of morphisms} (resp. \emph{$S$-morphisms}) from nonempty open subsets of $X$ to $Y$ at the generic point $x$ of $X$.
 In particular:
 \end{env}
 
@@ -58,7 +58,7 @@ If $X$ is \emph{integral}, the ring $\OO_z$ is integral for all $z\in X$; every 
 \begin{env}[7.1.6]
 \label{1.7.1.6}
 Now suppose that $X$ has a \emph{finite} number of irreducible components $X_i$ ($1\leqslant i\leqslant n$) (which will be the case whenever the underlying space of $X$ is \emph{Noetherian}); let $X'_i$ be open subset of $X$ given by the complement of the $X_j\cap X_i$ for $j\neq i$ inside $X_i$; $X'_i$ is irreducible, its generic point $x_i$ is the generic point of $X_i$, and the $X'_i$ are pairwise disjoint, with their union being dense in $X$ \sref[0]{0.2.1.6}.
-For every dense open subset $U$ of $X$, $U_i=U\cap X'_i$ is a non-empty dense open subset of $X'_i$, with the $U_i$ being pairwise disjoint, and so $U'=\bigcup_i U'_i$ is dense in $X$.
+For every dense open subset $U$ of $X$, $U_i=U\cap X'_i$ is a nonempty dense open subset of $X'_i$, with the $U_i$ being pairwise disjoint, and so $U'=\bigcup_i U'_i$ is dense in $X$.
 Giving a morphism from $U'$ to $Y$ consists of giving (arbitrarily) a morphism from each of the $U_i$ to $Y$.
 Thus:
 \end{env}
@@ -101,7 +101,7 @@ For the other part, if $U$ is a dense open subset of $X$, the complement of $U$ 
 \begin{env}[7.1.10]
 \label{1.7.1.10}
 Suppose again that $X$ is irreducible, with generic point $x$.
-Since every non-empty open subset $U$ of $X$ containing $x$, and thus also containing every $z\in X$ such that $x\in\overline{\{z\}}$, every morphism $U\to Y$ can be composed with the canonical morphism $\Spec(\OO_x)\to X$ \sref{1.2.4.1}; and two morphisms into $Y$ from two non-empty open subsets of $X$, which agree on a non-empty open subset of $X$, give, by composition, the same morphism $\Spec(\OO_x)\to Y$.
+Since every nonempty open subset $U$ of $X$ containing $x$, and thus also containing every $z\in X$ such that $x\in\overline{\{z\}}$, every morphism $U\to Y$ can be composed with the canonical morphism $\Spec(\OO_x)\to X$ \sref{1.2.4.1}; and two morphisms into $Y$ from two nonempty open subsets of $X$, which agree on a nonempty open subset of $X$, give, by composition, the same morphism $\Spec(\OO_x)\to Y$.
 In other words, to every rational map from $X$ to $Y$ there is a corresponding well-defined morphism $\Spec(\OO_x)\to Y$.
 \end{env}
 
@@ -114,7 +114,7 @@ If we further suppose $S$ locally Noetherian then every $S$-morphism from $\Spec
 
 \begin{proof}
 \label{proof-1.7.1.11}
-Taking into account that every non-empty subset of $X$ is dense in $X$, this follows from \sref{1.6.5.1}.
+Taking into account that every nonempty subset of $X$ is dense in $X$, this follows from \sref{1.6.5.1}.
 \end{proof}
 
 \begin{cor}[7.1.12]
@@ -285,7 +285,7 @@ This will happen in the follow cases:
 \label{1.7.2.8.1}
 Let $X$ be a prescheme whose underlying space is locally Noetherian, and $x$ a point of $X$.
 The irreducible components of $\Spec(\OO_x)$ are the intersections of $\Spec(\OO_x)$ with the irreducible components of $X$ containing $x$.
-For an open subset $U\subset X$ to be such that $U\cap\Spec(\OO_x)$ is dense $\Spec(\OO_x)$, it is necessary and sufficient that it has a non-empty intersection with the irreducible components of $X$ that contain $x$ \emph{(which will be the case when $U$ is \emph{dense} in $X$)}.
+For an open subset $U\subset X$ to be such that $U\cap\Spec(\OO_x)$ is dense $\Spec(\OO_x)$, it is necessary and sufficient that it has a nonempty intersection with the irreducible components of $X$ that contain $x$ \emph{(which will be the case when $U$ is \emph{dense} in $X$)}.
 \end{lem}
 
 \begin{proof}
@@ -311,11 +311,11 @@ For $f$ to be defined at a point $x$, it is necessary and sufficent that the rat
 The condition clearly being necessary (since $\Spec(\OO_x)$ is contained in every open subset containing $x$), we show that it is sufficient.
 By \sref{1.6.5.1}, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $g$ from $U$ to $Y$, inducing $f'$ on $\Spec(\OO_x)$.
 If $X$ is irreducible, then $U$ is dense in $X$, and by \sref{1.7.2.3} we can suppose that $g$ is a rational $S$-map.
-Further, the generic point of $X$ belongs to $\Spec(\OO_x)$ and to the domain of definition of $f$, so $s$ and $g$ agree at this point, and thus on a non-empty open subset of $X$ \sref{1.6.5.1}.
+Further, the generic point of $X$ belongs to $\Spec(\OO_x)$ and to the domain of definition of $f$, so $s$ and $g$ agree at this point, and thus on a nonempty open subset of $X$ \sref{1.6.5.1}.
 But since $f$ and $g$ are rational $S$-maps, they are identical \sref{1.7.2.3}, and so $f$ is defined at $x$.
 
-If we now suppose that $X$ is locally Noetherian, we can suppose that $U$ is Noetherian; then there are only a finite number of irreducible components $X_i$ of $X$ that contain $x$ \sref{1.7.2.8.1}, and we can suppose that they are the only ones that have a non-empty intersection with $U$, by replacing, if needed, $U$ with a smaller open subset (since there are only a finite number of irreducible components of $X$ that have a non-empty intersection with $U$, $U$ being Noetherian).
-We then have, as above, that $f$ and $g$ agree on a non-empty open subset of each of the $X_i$.
+If we now suppose that $X$ is locally Noetherian, we can suppose that $U$ is Noetherian; then there are only a finite number of irreducible components $X_i$ of $X$ that contain $x$ \sref{1.7.2.8.1}, and we can suppose that they are the only ones that have a nonempty intersection with $U$, by replacing, if needed, $U$ with a smaller open subset (since there are only a finite number of irreducible components of $X$ that have a nonempty intersection with $U$, $U$ being Noetherian).
+We then have, as above, that $f$ and $g$ agree on a nonempty open subset of each of the $X_i$.
 Taking into account the fact that each of the $X_i$ is contained in $\overline{U}$, we consider the morphism $f_1$, defined on a dense open subset of $U\cup(X\setminus\overline{U})$, equal to $g$ on $U$ and to $f$ on the intersection of $X\setminus\overline{U}$ with the domain of definition of $f$.
 Since $U\cup(X\setminus\overline{U})$ is dense in $X$, $f_1$ and $f$ agree on a dense open subset of $X$, and since $f$ is a rational map, $f$ is an extension of $f_1$ \sref{1.7.2.3}, and is thus defined at the point $x$.
 \end{proof}
@@ -341,7 +341,7 @@ For every prescheme $X$ and open subset $U\subset X$, it is clear that the induc
 \begin{prop}[7.3.3]
 \label{1.7.3.3}
 Let $X$ be a prescheme such that the family $(X_\lambda)$ of its irreducible components is locally finite (which is the case whenever the underlying space of $X$ is locally Noetherian).
-Then the $\OO_X$-module $\sh{R}(X)$ is quasi-coherent, and for every open subset $U$ of $X$ that has a non-empty intersection with only finitely many of the components $X_\lambda$, $R(U)$ is equal to $\Gamma(U,\sh{R}(X))$, and can be canonically identified with the direct sum of the local rings of the generic points of the $X_\lambda$ such that $U\cap X_\lambda\neq\emp$.
+Then the $\OO_X$-module $\sh{R}(X)$ is quasi-coherent, and for every open subset $U$ of $X$ that has a nonempty intersection with only finitely many of the components $X_\lambda$, $R(U)$ is equal to $\Gamma(U,\sh{R}(X))$, and can be canonically identified with the direct sum of the local rings of the generic points of the $X_\lambda$ such that $U\cap X_\lambda\neq\emp$.
 \end{prop}
 
 \begin{proof}
@@ -351,7 +351,7 @@ The fact that $R(U)$ can be canonically identified with the direct sum of the $\
 We will show that the presheaf $U\to R(U)$ satisfies the sheaf axioms, which will prove that $R(U)=\Gamma(U,\sh{R}(X))$.
 Indeed, it satisfies (F1) by what has already been discussed.
 To see that it satisfies (F2), consider a cover of an open subset $U$ of $X$ by open subsets $V_\alpha\subset U$; if the $s_\alpha\in R(V_\alpha)$ are such that the restrictions of $s_\alpha$ and $s_\beta$ to $V_\alpha\cap V_\beta$ agree for every pair of indices, we can conclude that, for every index $i$ such that $U\cap X_i\neq\emp$, the components in $R(X_i)$ of all the $s_\alpha$ such that $V_\alpha\cap X_i\neq\emp$ are all the same; denoting this component by $t_i$, it is clear that the element of $R(U)$ that has the $t_i$ as its components has $s_\alpha$ as its restriction to each $V_\alpha$.
-Finally, to see that $\sh{R}(X)$ is quasi-coherent, we can restrict to the case where $X=\Spec(A)$ is affine; by taking $U$ to be an affine open subset of the form $D(f)$, where $f\in A$, it follows from the above and from definition~\sref{1.1.3.4} that we have $\sh{R}(X)=\widetilde{M}$, where $M$ is the direct sum of the $A$-modules $A_{x_i}$.
+Finally, to see that $\sh{R}(X)$ is quasi-coherent, we can restrict to the case where $X=\Spec(A)$ is affine; by taking $U$ to be an affine open subset of the form $D(f)$, where $f\in A$, it follows from the above and from definition~\sref{1.1.3.4} that we have $\sh{R}(X)=\wt{M}$, where $M$ is the direct sum of the $A$-modules $A_{x_i}$.
 \end{proof}
 
 \begin{cor}[7.3.4]
@@ -367,7 +367,7 @@ If $X$ is irreducible, then every quasi-coherent $\sh{R}(X)$-module $\sh{F}$ is 
 
 \begin{proof}
 \label{proof-1.7.3.5}
-It suffices to show that every $x\in X$ admits a neighbourhood $U$ such that $\sh{F}|U$ is a simple sheaf \sref[0]{0.3.6.2}, or, in other words, we are led to considering the case where $X$ is affine; we can further suppose that $\sh{F}$ is the cokernel of a homomorphism $(\sh{R}(X))^{I}\to(\sh{R}(X))^{J}$ \sref[0]{0.5.1.3}, and everything then follows from showing that $\sh{R}(X)$ is a simple sheaf; but this is evident, because $\Gamma(U,\sh{R}(X))=R(X)$ for every non-empty open subset $U$, where $U$ contains the generic point of $X$.
+It suffices to show that every $x\in X$ admits a neighbourhood $U$ such that $\sh{F}|U$ is a simple sheaf \sref[0]{0.3.6.2}, or, in other words, we are led to considering the case where $X$ is affine; we can further suppose that $\sh{F}$ is the cokernel of a homomorphism $(\sh{R}(X))^{I}\to(\sh{R}(X))^{J}$ \sref[0]{0.5.1.3}, and everything then follows from showing that $\sh{R}(X)$ is a simple sheaf; but this is evident, because $\Gamma(U,\sh{R}(X))=R(X)$ for every nonempty open subset $U$, where $U$ contains the generic point of $X$.
 \end{proof}
 
 \begin{cor}[7.3.6]
@@ -424,7 +424,7 @@ We deduce from \sref{1.7.3.5} that:
 If $X$ is an integral prescheme, then every torsion-free quasi-coherent $\OO_X$-module $\sh{F}$ is isomorphic to a subsheaf $\sh{G}$ of a simple sheaf of the form $(\sh{R}(X))^{(I)}$, generated (as a $\sh{R}(X)$-module) by $\sh{G}$.
 \end{prop}
 
-The cardinality of $I$ is called the \emph{rank} of $\sh{F}$; for every non-empty affine open subset $U$ of $X$, the rank of $\sh{F}$ is equal to the rank of $\Gamma(U,\sh{F})$ as a $\Gamma(U,\OO_X)$-module, and we see by considering the generic point of $X$, contained in $U$.
+The cardinality of $I$ is called the \emph{rank} of $\sh{F}$; for every nonempty affine open subset $U$ of $X$, the rank of $\sh{F}$ is equal to the rank of $\Gamma(U,\sh{F})$ as a $\Gamma(U,\OO_X)$-module, and we see by considering the generic point of $X$, contained in $U$.
 In particular:
 
 \begin{cor}[7.4.3]
@@ -453,7 +453,7 @@ For every torsion-free quasi-coherent $\OO_X$-modules $\sh{F}$, $f_*(\sh{F})$ is
 \begin{proof}
 \label{proof-1.7.4.5}
 Since\oldpage[I]{164} $f_*$ is left exact \sref[0]{0.4.2.1}, it suffices, by \sref{1.7.4.2}, to prove the proposition when $\sh{F}=(\sh{R}(X))^{(I)}$.
-But every non-empty open subset $U$ of $Y$ contains the generic point of $Y$, so $f^{-1}(U)$ contains the generic point of $X$ \sref[0]{0.2.1.5}, so we have that $\Gamma(U,f_*(\sh{F})) = \Gamma(f^{-1}(U),\sh{F}) = (R(X))^{(I)}$; in other words, $f_*(\sh{F})$ is the simple sheaf with fibre $(R(X))^{(I)}$, considered as a $\sh{R}(Y)$-module, and it is clearly torsion free.
+But every nonempty open subset $U$ of $Y$ contains the generic point of $Y$, so $f^{-1}(U)$ contains the generic point of $X$ \sref[0]{0.2.1.5}, so we have that $\Gamma(U,f_*(\sh{F})) = \Gamma(f^{-1}(U),\sh{F}) = (R(X))^{(I)}$; in other words, $f_*(\sh{F})$ is the simple sheaf with fibre $(R(X))^{(I)}$, considered as a $\sh{R}(Y)$-module, and it is clearly torsion free.
 \end{proof}
 
 \begin{prop}[7.4.6]
@@ -464,7 +464,7 @@ For every quasi-coherent $\OO_X$-module $\sh{F}$ of finite type, the following c
 
 \begin{proof}
 \label{proof-1.7.4.6}
-By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so \emph{a)} and \emph{b)} are equivalent; also, $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every non-empty open subset of $X$ contains $x$, \emph{b)} and \emph{c)} are equivalent.
+By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so \emph{a)} and \emph{b)} are equivalent; also, $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, \emph{b)} and \emph{c)} are equivalent.
 \end{proof}
 
 \begin{env}[7.4.7]

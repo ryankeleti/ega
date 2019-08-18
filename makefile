@@ -35,7 +35,7 @@ book:
 
 .PHONY: clean
 clean:
-	rm -f *.aux *.bbl *.blg *.log *.out *.toc
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc
 	rm -i *.pdf
 	rm -i book.tex
 

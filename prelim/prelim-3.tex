@@ -12,10 +12,10 @@ $\C$ such that $A_{\beta\alpha}=A_{\alpha\beta}$, and
 $(\rho_{\alpha\beta})_{(\alpha,\beta)\in I\times I}$ a family of morphisms
 $\rho_{\alpha\beta}:A_\alpha\to A_{\alpha\beta}$. We say that a pair consisting
 of an object $A$ of $\C$ and a family of morphisms $\rho_\alpha:A\to A_\alpha$
-is a {\em solution to the universal problem} defined by the data of the
+is a \emph{solution to the universal problem} defined by the data of the
 families $(A_\alpha)$, $(A_{\alpha\beta})$, and $(\rho_{\alpha\beta})$ if, for
 every object $B$ of $\C$, the map which sends $f\in\Hom(B,A)$ to the family
-$(\rho_\alpha\circ f)\in\Pi_\alpha\Hom(B,A_\alpha)$ is a {\em bijection} of
+$(\rho_\alpha\circ f)\in\Pi_\alpha\Hom(B,A_\alpha)$ is a \emph{bijection} of
 $\Hom(B,A)$ to the set of all $(f_\alpha)$ such that
 $\rho_{\alpha\beta}\circ f_\alpha=\rho_{\beta\alpha}\circ f_\beta$ for any pair
 of indices $(\alpha,\beta)$. If such a solution exists, it is unique up to an
@@ -24,28 +24,28 @@ isomorphism.
 
 \begin{env}[3.1.2]
 \label{0.3.1.2}
-We will not recall the definition of a {\em presheaf} $U\mapsto\sh{F}(U)$ on a
+We will not recall the definition of a \emph{presheaf} $U\mapsto\sh{F}(U)$ on a
 topological space $X$ with values in a category $\C$ (G, I, 1.9); we say that
-such a presheaf is a {\em sheaf with values in} $\C$ if it satisfies the
+such a presheaf is a \emph{sheaf with values in} $\C$ if it satisfies the
 following axiom:\\
 
-(F) {\em For any covering $(U_\alpha)$ of an open set $U$ of $X$ by open sets
+(F) \emph{For any covering $(U_\alpha)$ of an open set $U$ of $X$ by open sets
     $U_\alpha$ contained in $U$, if we denote by $\rho_\alpha$}
-    (resp. $\rho_{\alpha\beta}$) {\em the restriction morphism}
+    (resp. $\rho_{\alpha\beta}$) \emph{the restriction morphism}
     \[
       \sh{F}(U)\to\sh{F}(U_\alpha)
       \quad(\text{resp. }\sh{F}(U_\alpha)\to\sh{F}(U_\alpha\cap U_\beta)),
     \]
 \oldpage[0\textsubscript{I}]{24}
-    {\em the pair formed by $\sh{F}(U)$ and the family $(\rho_\alpha)$ are a
+    \emph{the pair formed by $\sh{F}(U)$ and the family $(\rho_\alpha)$ are a
     solution to the universal problem for $(\sh{F}(U_\alpha))$,
     $(\sh{F}(U_\alpha\cap U_\beta))$, and $(\rho_{\alpha\beta})$ in
     \sref{0.3.1.1}}\footnote{This is a special case of the more general
-    notion of a (non-filtered) {\em projective limit} ({\em see} (T, I, 1.8)
+    notion of a (non-filtered) \emph{projective limit} (\emph{see} (T, I, 1.8)
     and the book in preparation announced in the introduction).}.\\
 
 Equivalently, we can say that, for each object $T$ of $\C$, the family
-$U\mapsto\Hom(T,\sh{F}(U))$ is a {\em sheaf of sets}.
+$U\mapsto\Hom(T,\sh{F}(U))$ is a \emph{sheaf of sets}.
 \end{env}
 
 \begin{env}[3.1.3]
@@ -55,46 +55,46 @@ Assume that $\C$ is the category defined by a
 sets with structures of type $\Sigma$ and morphisms those of $\Sigma$. Suppose
 that the category $\C$ also satisfies the following condition:\\
 
-(E) If $(A,(\rho_\alpha))$ is a solution of a universal mapping problem {\em in
+(E) If $(A,(\rho_\alpha))$ is a solution of a universal mapping problem \emph{in
     the category $\C$} for families $(A_\alpha)$, $(A_{\alpha\beta})$,
     $(\rho_{\alpha\beta})$, then it is also a solution of the universal mapping
-    problem for the same families {\em in the category of sets} (that is, when
+    problem for the same families \emph{in the category of sets} (that is, when
     we consider $A$, $A_\alpha$, and $A_{\alpha\beta}$ as sets, $\rho_\alpha$
     and $\rho_{\alpha\beta}$ as functions)\footnote{It can be proved that it
-    also means that the canonical functor $\C\to\Set$ {\em commutes with
+    also means that the canonical functor $\C\to\Set$ \emph{commutes with
     projective limits} (not necessarily filtered).}.\\
 
 Under these conditions, the condition (F) gives that, when considered as a
-presheaf {\em of sets}, $U\mapsto\sh{F}(U)$ is a {\em sheaf}. In addition, for
+presheaf \emph{of sets}, $U\mapsto\sh{F}(U)$ is a \emph{sheaf}. In addition, for
 a map $u:T\to\sh{F}(U)$ to be a morphism of $\C$, it is necessary and
 sufficient, according to (F), that each map $\rho_\alpha\circ u$ is a morphism
 $T\to\sh{F}(U_\alpha)$, which means that the structure of type $\Sigma$ on
-$\sh{F}(U)$ is the {\em initial structure} for the morphisms $\rho_\alpha$.
+$\sh{F}(U)$ is the \emph{initial structure} for the morphisms $\rho_\alpha$.
 Conversely, suppose a presheaf $U\mapsto\sh{F}(U)$ on $X$, with values in $\C$,
-is a {\em sheaf of sets} and satisfies the previous condition; it is then clear
-that it satisfies (F), so it is a {\em sheaf with values in $\C$}.
+is a \emph{sheaf of sets} and satisfies the previous condition; it is then clear
+that it satisfies (F), so it is a \emph{sheaf with values in $\C$}.
 \end{env}
 
 \begin{env}[3.1.4]
 \label{0.3.1.4}
 When $\Sigma$ is a type of a group or ring structure, the fact that the presheaf
-$U\mapsto\sh{F}(U)$ with values in $\C$ is a sheaf of {\em sets} implies
-{\em ipso facto} that it is a sheaf with values in $\C$ (in other words, a
+$U\mapsto\sh{F}(U)$ with values in $\C$ is a sheaf of \emph{sets} implies
+\emph{ipso facto} that it is a sheaf with values in $\C$ (in other words, a
 sheaf of groups or rings within the meaning of (G))\footnote{This is because in
-the category $\C$, any morphism that is a {\em bijection} (as a map of sets) is
-an {\em isomorphism}. This is no longer true when $\C$ is the category of
+the category $\C$, any morphism that is a \emph{bijection} (as a map of sets) is
+an \emph{isomorphism}. This is no longer true when $\C$ is the category of
 topological spaces, for example.}. But it is not the same when, for example,
-$\C$ is the category of {\em topological rings} (with morphisms as continuous
+$\C$ is the category of \emph{topological rings} (with morphisms as continuous
 homomorphisms): a sheaf with values in $\C$ is a sheaf of rings
 $U\mapsto\sh{F}(U)$ such that for any open $U$ and any covering of $U$ by open
 sets $U_\alpha\subset U$, the topology of the ring $\sh{F}(U)$ is to be
-{\em the least fine} making the homomorpisms $\sh{F}(U)\to\sh{F}(U_\alpha)$
+\emph{the least fine} making the homomorpisms $\sh{F}(U)\to\sh{F}(U_\alpha)$
 continuous. We will say in this case that $U\mapsto\sh{F}(U)$, considered as a
-sheaf of rings (without a topology), is {\em underlying} the sheaf of
+sheaf of rings (without a topology), is \emph{underlying} the sheaf of
 topological rings $U\mapsto\sh{F}(U)$. Morphisms $u_V:\sh{F}(V)\to\sh{G}(V)$
 ($V$ an arbitrary open subset of $X$) of sheaves of topological rings are
 therefore homomorphisms of the underlying sheaves of rings, such that $u_V$ is
-{\em continuous} for all open $V\subset X$; to distinguish them from any
+\emph{continuous} for all open $V\subset X$; to distinguish them from any
 homomorphisms of the sheaves of the underlying rings, we will call them
 continuous homomorphisms of sheaves of topological rings. We have similar
 definitions and conventions for sheaves of topological spaces or topological
@@ -107,7 +107,7 @@ groups.
 It is clear that for any category $\C$, if there is a presheaf (respectively a
 sheaf) $\sh{F}$ on $X$ with values in $\C$ and $U$ is an open set of $X$, the
 $\sh{F}(V)$ for open $V\subset U$ constitute a presheaf (or a sheaf) with values
-in $\C$, which we call the presheaf (or sheaf) {\em induced} by $\sh{F}$ on $U$
+in $\C$, which we call the presheaf (or sheaf) \emph{induced} by $\sh{F}$ on $U$
 and denote it by $\sh{F}|U$.
 
 For any morphism $u:\sh{F}\to\sh{G}$ of presheaves on $X$ with values in $\C$,
@@ -117,9 +117,9 @@ for $V\subset U$.
 
 \begin{env}[3.1.6]
 \label{0.3.1.6}
-Suppose now that the category $\C$ admits {\em inductive limits} (T, 1.8);
+Suppose now that the category $\C$ admits \emph{inductive limits} (T, 1.8);
 then, for any presheaf (and in particular any sheaf) $\sh{F}$ on $X$ with values
-in $\C$ and each $x\in X$, we can define the {\em stalk} $\sh{F}_x$ as the
+in $\C$ and each $x\in X$, we can define the \emph{stalk} $\sh{F}_x$ as the
 object of $\C$ defined by the inductive limit of the $\sh{F}(U)$ with respect to
 the filtered set (for $\supset$) of the open neighborhoods $U$ of $x$ in $X$,
 and the morphisms $\rho_U^V:\sh{F}(V)\to\sh{F}(U)$. If $u:\sh{F}\to\sh{G}$ is a
@@ -130,12 +130,12 @@ thus define $\sh{F}_x$ as a covariant functor in $\sh{F}$, with values in $\C$,
 for all $x\in X$.
 
 When $\C$ is further defined by a kind of structure with morphisms $\Sigma$, we
-call {\em sections over $U$} of a {\em sheaf} $\sh{F}$ with values in $\C$ the
+call \emph{sections over $U$} of a \emph{sheaf} $\sh{F}$ with values in $\C$ the
 elements of $\sh{F}(U)$, and we write $\Gamma(U,\sh{F})$ instead of $\sh{F}(U)$;
 for $s\in\Gamma(U,\sh{F})$, $V$ an open set contained in $U$, we write $s|V$
 instead of $\rho_V^U(s)$; for all $x\in U$, the canonical image of $s$ in
-$\sh{F}_x$ is the {\em germ} of $s$ at the point $x$, denoted by $s_x$
-({\em we will never replace the notation $s(x)$ in this sense}, this notation
+$\sh{F}_x$ is the \emph{germ} of $s$ at the point $x$, denoted by $s_x$
+(\emph{we will never replace the notation $s(x)$ in this sense}, this notation
 being reserved for another notion relating to sheaves which will be considered
 in this treatise \sref{0.5.5.1}).
 
@@ -143,10 +143,10 @@ If then $u:\sh{F}\to\sh{G}$ is a morphism of sheaves with values in $\C$, we
 will write $u(s)$ instead of $u_V(s)$ for all $s\in\Gamma(V,\sh{F})$.
 
 If $\sh{F}$ is a sheaf of commutative groups, or rings, or modules, we say that
-the set of $x\in X$ such that $\sh{F}_x\neq\{0\}$ is the {\em support} of
+the set of $x\in X$ such that $\sh{F}_x\neq\{0\}$ is the \emph{support} of
 $\sh{F}$, denoted $\Supp(\sh{F})$; this set is not necessarily closed in $X$.
 
-When $\C$ is defined by a type of structure with morphisms, {\em we
+When $\C$ is defined by a type of structure with morphisms, \emph{we
 systematically refrain from using the point of view of ``\'etal\'e spaces''} in
 terms of relating to sheaves with values in $\C$; in other words, we will never
 consider a sheaf as a topological space (nor even as the whole union of its
@@ -159,19 +159,19 @@ sheaves on $X$ as a continuous map of topological spaces.
 
 \begin{env}[3.2.1]
 \label{0.3.2.1}
-We will restrict to the following categories $\C$ admitting {\em projective
+We will restrict to the following categories $\C$ admitting \emph{projective
 limits} (generalized, that is, corresponding to not necessarily filtered
 preordered sets, cf. (T, 1.8)). Let $X$ be a topological space, $\fk{B}$
-an open basis for the topology of $X$. We will call a {\em presheaf on
+an open basis for the topology of $X$. We will call a \emph{presheaf on
 $\fk{B}$, with values in $\C$}, a family of objects $\sh{F}(U)\in\C$,
 corresponding to each $U\in\fk{B}$, and a family of morphisms $\rho_U^V:\sh{F}(V)\to\sh{F}(U)$ defined for any pair $(U,V)$ of elements of
 $\fk{B}$ such that $U\subset V$,
 \oldpage[0\textsubscript{I}]{26}
 with the conditions $\rho_U^U=$ identity and $\rho_U^W=\rho_U^V\circ\rho_V^W$ if
 $U$, $V$, $W$ in $\fk{B}$ are such that $U\subset V\subset W$. We can
-associate a {\em presheaf with values in $\C$}: $U\mapsto\sh{F}(U)$ in the
+associate a \emph{presheaf with values in $\C$}: $U\mapsto\sh{F}(U)$ in the
 ordinary sense, taking for all open $U$, $\sh{F}'(U)=\varprojlim\sh{F}(V)$,
-where $V$ runs through the ordered set (for $\subset$, {\em not filtered} in
+where $V$ runs through the ordered set (for $\subset$, \emph{not filtered} in
 general) of $V\in\fk{B}$ sets such that $V\subset U$, since the $\sh(V)$
 form a projective system for the $\rho_V^W$ ($V\subset W\subset U$,
 $V\in\fk{B}$, $W\in\fk{B}$). Indeed, if $U$, $U'$ are two open sets
@@ -183,10 +183,10 @@ canonical morphisms $\sh{F}'(U')\to\sh{F}(V)$; the verification of the
 transitivity of ${\rho'}_U^{U'}$ is then immediate. Moreover, if
 $U\in\fk{B}$, the canonical morphism $\sh{F}'(U)\to\sh{F}(U)$ is an
 isomorphism, allowing us to identify these two objects\footnote{If $X$ is a
-{\em Noetherian} space, we can still define $\sh{F}'(U)$ and show that it is a
+\emph{Noetherian} space, we can still define $\sh{F}'(U)$ and show that it is a
 presheaf (in the ordinary sense) when one supposes only that $\C$ admits
-projective limits for {\em finite} projective systems. Indeed, if $U$ is any
-open set of $X$, there is a {\em finite} covering $(V_i)$ of $U$ consisting of
+projective limits for \emph{finite} projective systems. Indeed, if $U$ is any
+open set of $X$, there is a \emph{finite} covering $(V_i)$ of $U$ consisting of
 sets of $\fk{B}$; for every couple $(i,j)$ of indices, let $(V_{ijk})$ be
 a finite covering of $V_i\cap V_j$ formed by sets of $\fk{B}$. Let $I$ be
 the set of $i$ and triples $(i,j,k)$, ordered only by the relations $i>(i,j,k)$,
@@ -198,11 +198,11 @@ a presheaf.}.
 
 \begin{env}[3.2.2]
 \label{0.3.2.2}
-For the presheaf $\sh{F}'$ thus defined to be a {\em sheaf}, it is necessary
+For the presheaf $\sh{F}'$ thus defined to be a \emph{sheaf}, it is necessary
 and sufficient that the presheaf $\sh{F}$ on $\fk{B}$ satisfies the
 condition:\\
 
-(F$_0$) {\em For any covering $(U_\alpha)$ of $U\in\fk{B}$ by sets
+(F$_0$) \emph{For any covering $(U_\alpha)$ of $U\in\fk{B}$ by sets
         $U_\alpha\in\fk{B}$ contained in $U$, and for any object $T\in\C$,
         the map which sends $f\in\Hom(T,\sh{F}(U))$ to the family
         $(\rho_{U_\alpha}^U\circ f)\in\Pi_\alpha\Hom(T,\sh{F}(U_\alpha))$ is a
@@ -211,7 +211,7 @@ condition:\\
         any pair of indices $(\alpha,\beta)$ and any $V\in\fk{B}$ such
         that $V\subset U_\alpha\cap U_\beta$\footnote{It also means that the
         pair formed by $\sh{F}(U)$ and the $\rho_\alpha=\rho_{U_\alpha}^U$ is a
-        {\em solution to the universal problem} defined in \sref{0.3.1.1} by
+        \emph{solution to the universal problem} defined in \sref{0.3.1.1} by
         the data of $A_\alpha=\sh{F}(U_\alpha)$, $A_{\alpha\beta}=\Pi\sh{F}(V)$
         (for $V\in\fk{B}$ such that $V\subset U_\alpha\cap U_\beta$) and
         $\rho_{\alpha\beta}=(\rho_V''):\sh{F}(U_\alpha)\to\Pi\sh{F}(V)$ defined
@@ -221,9 +221,9 @@ condition:\\
         $\rho_W^V\circ\rho_V''=\rho_W^{V'}\circ\rho_{V'}''$.}.}\\
 
 The condition is obviously necessary. To show that it is sufficient, consider
-first a second basis $\fk{B}'$ of the topology of $X$, {\em contained in}
+first a second basis $\fk{B}'$ of the topology of $X$, \emph{contained in}
 $\fk{B}$, and show that if $\sh{F}''$ denotes the presheaf induced by the
-subfamily $(\sh{F}(V))_{V\in\fk{B}'}$, $\sh{F}''$ is {\em canonically
+subfamily $(\sh{F}(V))_{V\in\fk{B}'}$, $\sh{F}''$ is \emph{canonically
 isomorphic} to $\sh{F}'$. Indeed, first the projective limit (for
 $V\in\fk{B}'$, $V\subset U$) of the canonical morphisms
 $\sh{F}'(U)\to\sh{F}(V)$ is a morphism $\sh{F}'(U)\to\sh{F}''(U)$ for all open
@@ -256,7 +256,7 @@ $\sh{F}$ on the basis $\fk{B}$ is a sheaf.
 \begin{env}[3.2.3]
 \label{0.3.2.3}
 Let $\sh{F}$, $\sh{G}$ be two presheaves on a basis $\fk{B}$, with values
-in $\C$; we define a {\em morphism} $u:\sh{F}\to\sh{G}$ as a family
+in $\C$; we define a \emph{morphism} $u:\sh{F}\to\sh{G}$ as a family
 $(u_V)_{V\in\fk{B}}$ of morphisms $u_V:\sh{F}(V)\to\sh{G}(V)$ satisfying
 the usual compatibility conditions with the restriction morphisms $\rho_V^W$.
 With the notation of \sref{0.3.2.1}, we have a morphism
@@ -283,7 +283,7 @@ morphisms $u_V:\sh{F}(V)\to\sh{G}(V)$ for $V\in\fk{B}$, $x\in V$.
 \begin{env}[3.2.5]
 \label{0.3.2.5}
 We return to the general conditions of \sref{0.3.2.1}. If $\sh{F}$ is an
-ordinary {\em sheaf} with values in $\C$, $\sh{F}_1$ the sheaf {\em on
+ordinary \emph{sheaf} with values in $\C$, $\sh{F}_1$ the sheaf \emph{on
 $\fk{B}$} obtained by the restriction of $\sh{F}$ to $\fk{B}$, then
 the ordinary sheaf $\sh{F}_1'$ obtained from $\sh{F}_1$ by the procedure of
 \sref{0.3.2.1} is canonically isomorphic to $\sh{F}$, by virtue of the
@@ -292,7 +292,7 @@ the ordinary sheaf $\sh{F}$ with $\sh{F}_1'$.
 
 If $\sh{G}$ is a second (ordinary) sheaf on $X$ with values in $\C$, and
 $u:\sh{F}\to\sh{G}$ a morphism, the preceding remark shows that the data of the
-$u_V:\sh{F}(V)\to\sh{G}(V)$ {\em for only the $V\in\fk{B}$} completely
+$u_V:\sh{F}(V)\to\sh{G}(V)$ \emph{for only the $V\in\fk{B}$} completely
 determines $u$; conversely, it is sufficient, the $u_V$ being given for
 $V\in\fk{B}$, to verify the commutative diagram with the restriction
 morphisms $\rho_V^W$ for $V\in\fk{B}$, $W\in\fk{B}$, and
@@ -302,8 +302,8 @@ $\sh{G}$ such that $u_V'=u_V$ for each $V\in\fk{B}$ \sref{0.3.2.3}.
 
 \begin{env}[3.2.6]
 \label{0.3.2.6}
-Suppose that $\C$ admits projective limits. Then the category of {\em sheaves
-on $X$ with values in $\C$} admits {\em projective limits}; if
+Suppose that $\C$ admits projective limits. Then the category of \emph{sheaves
+on $X$ with values in $\C$} admits \emph{projective limits}; if
 $(\sh{F}_\lambda)$ is a projective system of sheaves on $X$ with values in $\C$,
 the $\sh{F}(U)=\varprojlim_\lambda\sh{F}_\lambda(U)$ indeed define a presheaf
 with values in $\C$, and the verification of the axiom (F) follows from the
@@ -313,11 +313,11 @@ limit of the $\sh{F}_\lambda$ is immediate.
 When $\C$ is the category of sets, for each projective system
 $(\fk{H}_\lambda)$ such
 \oldpage[0\textsubscript{I}]{28}
-that $\fk{H}_\lambda$ is a {\em subsheaf} of $\sh{F}_\lambda$ for each
+that $\fk{H}_\lambda$ is a \emph{subsheaf} of $\sh{F}_\lambda$ for each
 $\lambda$, $\varprojlim_\lambda\fk{H}_\lambda$ canonically identifies with
-a {\em subsheaf} of $\varprojlim_\lambda\sh{F}_\lambda$. If $\C$ is the
+a \emph{subsheaf} of $\varprojlim_\lambda\sh{F}_\lambda$. If $\C$ is the
 category of abelian groups, the covariant functor
-$\varprojlim_\lambda\sh{F}_\lambda$ is {\em additive} and {\em left exact}.
+$\varprojlim_\lambda\sh{F}_\lambda$ is \emph{additive} and \emph{left exact}.
 \end{env}
 
 \subsection{Gluing sheaves}
@@ -329,14 +329,14 @@ Suppose still that the category $\C$ admits (generalized) projective limits. Let
 $X$ be a topological space, $\fk{U}=(U_\lambda)_{\lambda\in L}$ an open
 cover of $X$, and for each $\lambda\in L$, let $\sh{F}_\lambda$ be a sheaf on
 $U_\lambda$, with values in $\C$; for each pair of indices $(\lambda,\mu)$,
-suppose that we are given an {\em isomorphism}
+suppose that we are given an \emph{isomorphism}
 $\theta_{\lambda\mu}:\sh{F}_\mu|(U_\lambda\cap U_\mu)
   \isoto\sh{F}|(U_\lambda\cap U_\mu)$; in addition, suppose that for each triple
 $(\lambda,\mu,\nu)$, if we denote by $\theta_{\lambda\mu}'$, $\theta_{\mu\nu}'$,
 $\theta_{\lambda\nu}'$ the restrictions of $\theta_{\lambda\mu}$,
 $\theta_{\mu\nu}$, $\theta_{\lambda\nu}$ to $U_\lambda\cap U_\mu\cap U_\nu$,
 then we have $\theta_{\lambda\nu}'=\theta_{\lambda\mu}'\circ\theta_{\mu\nu}'$
-({\em gluing condition} for the $\theta_{\lambda\mu}$). Then there exists a
+(\emph{gluing condition} for the $\theta_{\lambda\mu}$). Then there exists a
 sheaf $\sh{F}$ on $X$, with values in $\C$, and for each $\lambda$ an
 isomorphism $\eta_\lambda:\sh{F}|U_\lambda\isoto\sh{F}_\lambda$ such that, for
 each pair $(\lambda,\mu)$, if we denote by $\eta_\lambda'$ and $\eta_\mu'$ the
@@ -355,7 +355,7 @@ of the gluing condition; in addition, the verification of (F$_0$) is immediate,
 so the presheaf on $\fk{B}$ thus clearly defines a sheaf, and we deduce by
 the general procedure \sref{0.3.2.1} an (ordinary) sheaf still denoted
 $\sh{F}$ and which answers the question. We say that $\sh{F}$ is obtained by
-{\em gluing the $\sh{F}_\lambda$ by means of the $\theta_{\lambda\mu}$} and we
+\emph{gluing the $\sh{F}_\lambda$ by means of the $\theta_{\lambda\mu}$} and we
 usually identify the $\sh{F}_\lambda$ and $\sh{F}|U_\lambda$ by means of the
 $\eta_\lambda$.
 
@@ -421,8 +421,8 @@ $\sh{F}$ be a presheaf on $X$ with values in a category $\C$; for each open
 $U\subset Y$, let $\sh{G}(U)=\sh{F}(\psi^{-1}(U))$, and if $U$, $V$ are two open
 subsets of $Y$ such that $U\subset V$, let $\rho_U^V$ be the morphism
 $\sh{F}(\psi^{-1}(V))\to\sh{F}(\psi^{-1}(U))$; it is immediate that the
-$\sh{G}(U)$ and the $\rho_U^V$ define a {\em presheaf} on $Y$ with values in
-$\C$, that we call the {\em direct image of $\sh{F}$ by $\psi$} and we denote
+$\sh{G}(U)$ and the $\rho_U^V$ define a \emph{presheaf} on $Y$ with values in
+$\C$, that we call the \emph{direct image of $\sh{F}$ by $\psi$} and we denote
 it by $\psi_*(\sh{F})$. If $\sh{F}$ is a sheaf, we immediately verify the axiom
 (F) for the presheaf $\sh{G}$, so $\psi_*(\sh{F})$ is a sheaf.
 \end{env}
@@ -437,7 +437,7 @@ compatibility conditions with the restriction morphisms, and as a result defines
 a morphism $\psi_*(u):\psi_*(\sh{F}_1)\to\psi_*(\sh{F}_2)$. If
 $v:\sh{F}_2\to\sh{F}_3$ is a morphism from $\sh{F}_2$ to a third presheaf on $X$
 with values in $\C$, we have $\psi_*(v\circ u)=\psi_*(v)\circ\psi_*(u)$; in
-other words, $\psi_*(\sh{F})$ is a {\em covariant functor} in $\sh{F}$, from
+other words, $\psi_*(\sh{F})$ is a \emph{covariant functor} in $\sh{F}$, from
 the category of presheaves (resp. sheaves) on $X$ with values in $\C$, to that
 of presheaves (resp. sheaves) on $Y$ with values in $\C$.
 \end{env}
@@ -449,7 +449,7 @@ $\psi''=\psi'\circ\psi$. It is clear that we have
 $\psi_*''(\sh{F})=\psi_*'(\psi_*(\sh{F}))$ for each presheaf $\sh{F}$ on $X$
 with values in $\C$; in addition, for each morphism $u:\sh{F}\to\sh{G}$ of such
 presheaves, we have $\psi_*''(u)=\psi_*'(\psi_*(u))$. In other words, $\psi_*''$
-is the {\em composition} of the functors $\psi_*'$ and $\psi_*$, and this can
+is the \emph{composition} of the functors $\psi_*'$ and $\psi_*$, and this can
 be written as
 \[
   (\psi'\circ\psi)_*=\psi_*'\circ\psi_*.
@@ -468,7 +468,7 @@ $\Gamma(\psi^{-1}(U),\sh{F})\to\sh{F}_x$ ($U$ an open neighborhood of $\psi(x)$
 in $Y$) form an inductive limit, which gives by passing
 \oldpage[0\textsubscript{I}]{30}
 to the limit a morphism $\psi_x:(\psi_*(\sh{F}))_{\psi(x)}\to\sh{F}_x$ of the
-stalks; in general, these morphisms are {\em neither injective or surjective}.
+stalks; in general, these morphisms are \emph{neither injective or surjective}.
 It is functorial; indeed, if $u:\sh{F}_1\to\sh{F}_2$ is a morphism of presheaves
 on $X$ with values in $\C$, the diagram
 \[
@@ -487,8 +487,8 @@ $\psi_x''=\psi_x\circ\psi_{\psi(x)}'$ for $x\in X$.
 \begin{env}[3.4.5]
 \label{0.3.4.5}
 Under the hypotheses of \sref{0.3.4.4}, suppose in addition that $\psi$ is a
-{\em homeomorphism} from $X$ to the subspace $\psi(X)$ of $Y$. Then, for each
-$x\in X$, $\psi_x$ is an {\em isomorphism}. This applies in particular to the
+\emph{homeomorphism} from $X$ to the subspace $\psi(X)$ of $Y$. Then, for each
+$x\in X$, $\psi_x$ is an \emph{isomorphism}. This applies in particular to the
 canonical injection $j$ of a subset $X$ of $Y$ into $Y$.
 \end{env}
 
@@ -501,7 +501,7 @@ $\psi_*(\sh{F})$ that $(\psi_*(\sh{F}))_y=\{0\}$, or in other words, that the
 support of $\psi_*(\sh{F})$ is contained in $\overline{\psi(S)}$; but it is not
 necessarily contained in $\psi(S)$. Under the same hypotheses, if $j$ is the
 canonical injection of a subset $X$ of $Y$ into $Y$, the sheaf $j_*(\sh{F})$
-induces $\sh{F}$ on $X$; if moreover $X$ is {\em closed} in $Y$, $j_*(\sh{F})$
+induces $\sh{F}$ on $X$; if moreover $X$ is \emph{closed} in $Y$, $j_*(\sh{F})$
 is the sheaf on $Y$ which induces $\sh{F}$ on $X$ and $0$ on $Y-X$
 (G, II, 2.9.2), but it is in general distinct from the latter when we suppose
 that $X$ is locally closed but not closed.
@@ -515,7 +515,7 @@ that $X$ is locally closed but not closed.
 Under the hypotheses of \sref{0.3.4.1}, if $\sh{F}$ (resp. $\sh{G}$) is a
 presheaf on $X$ (resp. $Y$) with values in $\C$, then each morphism
 $u:\sh{G}\to\psi_*(\sh{F})$ of presheaves on $Y$ is called a
-{\em $\phi$-morphism} from $\sh{G}$ to $\sh{F}$, and we denote it also by
+\emph{$\phi$-morphism} from $\sh{G}$ to $\sh{F}$, and we denote it also by
 $\sh{G}\to\sh{F}$. We denote also by $\Hom_\phi(\sh{G},\sh{F})$ the set of
 $\Hom_Y(\sh{G},\psi_*(\sh{F}))$ the $\psi$-morphisms from $\sh{G}$ to $\sh{F}$.
 For each pair $(U,V)$, where $U$ is an open set of $X$, $V$ an open set of $Y$
@@ -540,7 +540,7 @@ $u_V=u_{\psi^{-1}(V),V}$.
 \oldpage[0\textsubscript{I}]{31}
 If the category $\C$ admits (generalized) projective limits, and if
 $\fk{B}$, $\fk{B}'$ are bases for the topologies of $X$ and $Y$
-respectively, to define a $\psi$-morphism $u$ of {\em sheaves}, we can restrict
+respectively, to define a $\psi$-morphism $u$ of \emph{sheaves}, we can restrict
 to giving the $u_{U,V}$ for $U\in\fk{B}$, $V\in\fk{B}'$, and
 $\psi(U)\subset V$, satisfying the compatibility conditions of (3.5.1.1) for
 $U$, $U'$ in $\fk{B}$ and $V$, $V'$ in $\fk{B}'$; it indeed suffices
@@ -563,35 +563,35 @@ $u:\sh{G}\to\psi_*(\sh{F})$, $v:\sh{H}\to\psi_*'(\sh{G})$ be a $\psi$-morphism
 and a $\psi'$-morphism respectively. We obtain a $\psi''$-morphism
 $w:\sh{H}\xrightarrow{v}\psi_*'(\sh{G})\xrightarrow{\psi_*'(u)}
   \psi_*'(\psi_*(\sh{F}))=\psi_*''(\sh{F})$, that we call, by definition, the
-{\em composition} of $u$ and $v$. We can therefore consider the pairs
+\emph{composition} of $u$ and $v$. We can therefore consider the pairs
 $(X,\sh{F})$ consisting of a topological space $X$ and a presheaf $\sh{F}$ on
-$X$ (with values in $\C$) as forming a {\em category}, the morphisms being the
+$X$ (with values in $\C$) as forming a \emph{category}, the morphisms being the
 pairs $(\psi,\theta):(X,\sh{F})\to(Y,\sh{G})$ consisting of a continuous map
 $\psi:X\to Y$ and of a $\psi$-morphism $\theta:\sh{G}\to\sh{F}$.
 \end{env}
 
 \begin{env}[3.5.3]
 \label{0.3.5.3}
-Let $\psi:X\to Y$ be a continuous map, $\sh{G}$ a {\em presheaf} on $Y$ with
-values in $\C$. We call the {\em inverse image of $\sh{G}$ under $\psi$} the
-pair $(\sh{G}',\rho)$, where $\sh{G}'$ is a {\em sheaf} on $X$ with values in
+Let $\psi:X\to Y$ be a continuous map, $\sh{G}$ a \emph{presheaf} on $Y$ with
+values in $\C$. We call the \emph{inverse image of $\sh{G}$ under $\psi$} the
+pair $(\sh{G}',\rho)$, where $\sh{G}'$ is a \emph{sheaf} on $X$ with values in
 $\C$, and $\rho:\sh{G}\to\sh{G}'$ a $\psi$-morphism (in other words a
-homomorphism $\sh{G}\to\psi_*(\sh{G}')$) such that, for each {\em sheaf}
+homomorphism $\sh{G}\to\psi_*(\sh{G}')$) such that, for each \emph{sheaf}
 $\sh{F}$ on $X$ with values in $\C$, the map
 \[
   \Hom_X(\sh{G}',\sh{F})\longrightarrow\Hom_\psi(\sh{G},\sh{F})
   \longrightarrow\Hom_Y(\sh{G},\psi_*(\sh{F}))
   \tag{3.5.3.1}
 \]
-sending $v$ to $\psi_*(v)\circ\rho$, is a {\em bijection}; this map, being
+sending $v$ to $\psi_*(v)\circ\rho$, is a \emph{bijection}; this map, being
 functorial in $\sh{F}$, then defines an isomorphism of functors in $\sh{F}$. The
 pair $(\sh{G}',\rho)$ is the solution of a universal problem, and we say it is
-{\em determined up to unique isomorphism} when it exists. We then write
+\emph{determined up to unique isomorphism} when it exists. We then write
 $\sh{G}'=\psi^*(\sh{G})$, $\rho=\rho_\sh{G}$, and by abuse of language, we say
-that $\psi^*(\sh{G})$ is {\em the inverse image sheaf} of $\sh{G}$ under
+that $\psi^*(\sh{G})$ is \emph{the inverse image sheaf} of $\sh{G}$ under
 $\psi$, and we agree that $\psi^*(\sh{G})$ is considered as equipped with a
-{\em canonical $\psi$-morphism $\rho_\sh{G}:\sh{G}\to\psi^*(\sh{G})$}, that is
-to say the {\em canonical homomorphism} of presheaves on $Y$:
+\emph{canonical $\psi$-morphism $\rho_\sh{G}:\sh{G}\to\psi^*(\sh{G})$}, that is
+to say the \emph{canonical homomorphism} of presheaves on $Y$:
 \[
   \rho_\sh{G}:\sh{G}\longrightarrow\psi_*(\psi^*(\sh{G})).
   \tag{3.5.3.2}
@@ -600,7 +600,7 @@ to say the {\em canonical homomorphism} of presheaves on $Y$:
 For each homomorphism $v:\psi^*(\sh{G})\to\sh{F}$ (where $\sh{F}$ is a sheaf on
 $X$ with values in $\C$), we put
 $v^\flat=\psi_*(v)\circ\rho_\sh{G}:\sh{G}\to\psi_*(\sh{F})$. By definition,
-{\em each} morphism of presheaves $u:\sh{G}\to\psi_*(\sh{F})$ is of the form
+\emph{each} morphism of presheaves $u:\sh{G}\to\psi_*(\sh{F})$ is of the form
 $v^\flat$ for a unique $v$, which we will denote $u^\sharp$. In other words,
 each morphism $u:\sh{G}\to\psi_*(\sh{F})$ of presheaves factorizes in a unique
 way as
@@ -617,13 +617,13 @@ way as
 Suppose now that the category $\C$ be such\footnote{In the book mentioned in the
 introduction, we will give very general conditions on the category $\C$ ensuring
 the existence of inverse images of presheaves with values in $\C$.} that
-{\em each} presheaf $\sh{F}$ on $Y$ with values in $\C$ admits an inverse image
+\emph{each} presheaf $\sh{F}$ on $Y$ with values in $\C$ admits an inverse image
 under $\psi$, and we denote it by $\psi^*(\sh{G})$.
 
-We will see that we can define $\psi^*(\sh{G})$ as a {\em covariant functor} in
+We will see that we can define $\psi^*(\sh{G})$ as a \emph{covariant functor} in
 $\sh{G}$, from the category of presheaves on $Y$ with values in $\C$, to that of
 sheaves on $X$ with values in $\C$, in such a way that the isomorphism
-$v\mapsto v^\flat$ is an {\em isomorphism of bifunctors}
+$v\mapsto v^\flat$ is an \emph{isomorphism of bifunctors}
 \[
   \Hom_X(\psi^*(\sh{G}),\sh{F})\isoto\Hom_Y(\sh{G},\psi_*(\sh{F}))
   \tag{3.5.4.1}
@@ -674,7 +674,7 @@ factorization
   \tag{3.5.4.4}
 \]
 for each morphism $u:\sh{G}\to\psi_*(\sh{F})$. We say that the morphism
-$\sigma_\sh{F}$ is {\em canonical}.
+$\sigma_\sh{F}$ is \emph{canonical}.
 \end{env}
 
 \begin{env}[3.5.5]
@@ -704,9 +704,9 @@ immediately that $w^\sharp$ is the composite morphism
 \label{0.3.5.6}
 We take in particular for $\psi$ the identity map $1_X:X\to X$. Then if the
 inverse image under $\psi$ of a presheaf $\sh{F}$ on $X$ with values in $\C$
-exists, we say that this inverse image is the {\em sheaf associated to the
+exists, we say that this inverse image is the \emph{sheaf associated to the
 presheaf $\sh{F}$}. Each morphism $u:\sh{F}\to\sh{F}'$ from $\sh{F}$ to a
-{\em sheaf} $\sh{F}'$ with values in $\C$ factorizes in a unique way as
+\emph{sheaf} $\sh{F}'$ with values in $\C$ factorizes in a unique way as
 $\sh{F}\xrightarrow{\rho_\sh{F}}1_X^*(\sh{F})\xrightarrow{u^\sharp}\sh{F}'$.
 \end{env}
 
@@ -715,35 +715,35 @@ $\sh{F}\xrightarrow{\rho_\sh{F}}1_X^*(\sh{F})\xrightarrow{u^\sharp}\sh{F}'$.
 
 \begin{env}[3.6.1]
 \label{0.3.6.1}
-We say that a {\em presheaf} $\sh{F}$ on $X$, with values in $\C$, is
-{\em constant} if the canonical morphisms $\sh{F}(X)\to\sh{F}(U)$ are
-{\em isomorphisms} for each non-empty open $U\subset X$; we note that $\sh{F}$
-is not necessarily a sheaf. We say that a {\em sheaf} is {\em simple} if it is
+We say that a \emph{presheaf} $\sh{F}$ on $X$, with values in $\C$, is
+\emph{constant} if the canonical morphisms $\sh{F}(X)\to\sh{F}(U)$ are
+\emph{isomorphisms} for each nonempty open $U\subset X$; we note that $\sh{F}$
+is not necessarily a sheaf. We say that a \emph{sheaf} is \emph{simple} if it is
 the associated sheaf \sref{0.3.5.6} of a constant presheaf. We say that a
-sheaf $\sh{F}$ is {\em locally simple} if each $x\in X$ admits an open
+sheaf $\sh{F}$ is \emph{locally simple} if each $x\in X$ admits an open
 neighborhood $U$ such that $\sh{F}|U$ is simple.
 \end{env}
 
 \begin{env}[3.6.2]
 \label{0.3.6.2}
-Suppose that $X$ is {\em irreducible} \sref{0.2.1.1}; then the following
+Suppose that $X$ is \emph{irreducible} \sref{0.2.1.1}; then the following
 properties are equivalent:
 \begin{enumerate}[label=(\alph*)]
-  \item {\em $\sh{F}$ is a constant presheaf on $X$};
-  \item {\em $\sh{F}$ is a simple sheaf on $X$};
-  \item {\em $\sh{F}$ is a locally simple sheaf on $X$}.
+  \item \emph{$\sh{F}$ is a constant presheaf on $X$};
+  \item \emph{$\sh{F}$ is a simple sheaf on $X$};
+  \item \emph{$\sh{F}$ is a locally simple sheaf on $X$}.
 \end{enumerate}
 \end{env}
 
-Indeed, let $\sh{F}$ be a constant presheaf on $X$; if $U$, $V$ are two non-empty
-open sets in $X$, then $U\cap V$ is non-empty, so
+Indeed, let $\sh{F}$ be a constant presheaf on $X$; if $U$, $V$ are two nonempty
+open sets in $X$, then $U\cap V$ is nonempty, so
 $\sh{F}(X)\to\sh{F}(U)\to\sh{F}(U\cap V)$ and $\sh{F}(X)\to\sh{F}(U)$ are
 isomorphisms, and similarly both $\sh{F}(U)\to\sh{F}(U\cap V)$ and
 $\sh{F}(V)\to\sh{F}(U\cap V)$ are isomorphisms. We therefore conclude
 immediately that the axiom (F) of \sref{0.3.1.2} is clearly satisfied,
 $\sh{F}$ is isomorphic to its associated sheaf, and as a result (a) implies (b).
 
-Now let $(U_\alpha)$ be an open cover of $X$ by non-empty open sets and let
+Now let $(U_\alpha)$ be an open cover of $X$ by nonempty open sets and let
 $\sh{F}$ be a sheaf on $X$ such that $\sh{F}|U_\alpha$ is simple for each
 $\alpha$; as $U_\alpha$ is irreducible, $\sh{F}|U_\alpha$ is a constant presheaf
 according to the above. As $U_\alpha\cap U_\beta$ is not empty,
@@ -764,7 +764,7 @@ that $\sh{F}(X)\to\sh{F}(U_{\alpha_0})$ is an isomorphism, and hence proves that
 \label{0.3.7.1}
 \oldpage[0\textsubscript{I}]{34}
 We will show that when we take $\C$ to be the category of sets, the inverse
-image under $\psi$ for each presheaf $\sh{G}$ with values in $\C$ {\em always
+image under $\psi$ for each presheaf $\sh{G}$ with values in $\C$ \emph{always
 exists} (the notations and hypotheses on $X$, $Y$, $\psi$ being that of
 \sref{0.3.5.3}). Indeed, for each open $U\subset X$, define $\sh{G}'(U)$
 as follows: an element $s'$ of $\sh{G}'(U)$ is a family $(s_x')_{x\in U}$, where
@@ -773,7 +773,7 @@ following condition is satisfied: there exists an open neighborhood $V$ of
 $\psi(x)$ in $Y$, a neighborhood $W\subset\psi^{-1}(V)\cap U$ of $x$, and an
 element $s\in\sh{G}(V)$ such that $s_z'=s_{\psi(x)}$ for all $z\in W$. We verify
 immediately that $U\mapsto\sh{G}'(U)$ clearly satisfies the axioms of a
-{\em sheaf}.
+\emph{sheaf}.
 
 Now let $\sh{F}$ be a sheaf of sets on $X$, and let $u:\sh{G}\to\psi_*(\sh{F})$,
 $v:\sh{G}'\to\sh{F}$ be morphisms. We define $u^\sharp$ and $v^\flat$ in the
@@ -807,7 +807,7 @@ commutative).
 
 When $X$ is any subset of a topological space $Y$, and $j$ the canonical
 injection $X\to Y$, for each sheaf $\sh{G}$ on $Y$ with values in a category
-$\C$, we call the {\em induced} sheaf of $X$ by $\sh{G}$ the inverse image
+$\C$, we call the \emph{induced} sheaf of $X$ by $\sh{G}$ the inverse image
 $j^*(\sh{G})$ (whenever it exists); for the sheaves of sets (or of groups, or of
 rings) we recover the usual definition (G, II, 1.5).
 \end{env}
@@ -815,16 +815,16 @@ rings) we recover the usual definition (G, II, 1.5).
 \begin{env}[3.7.2]
 \label{0.3.7.2}
 Keeping the notations and hypotheses of \sref{0.3.5.3}, suppose that $\sh{G}$
-is a {\em sheaf} of groups (resp. of rings) on $Y$. The definition of sections
+is a \emph{sheaf} of groups (resp. of rings) on $Y$. The definition of sections
 of $\psi^*(\sh{G})$ \sref{0.3.7.1} shows (considering \sref{0.3.4.4} that
 the homomorphism of stalks
 $\psi_x\circ\rho_{\psi(x)}:\sh{G}_{\psi(x)}\to(\psi^*(\sh{G}))_x$ is a
-{\em functorial isomorphism in $\sh{G}$}, that identifies the two stalks; with
+\emph{functorial isomorphism in $\sh{G}$}, that identifies the two stalks; with
 this identification, $u_x^\sharp$ is identical to the homomorphism defined in
 \sref{0.3.5.1}, and in particular, we have
 $\Supp(\psi^*(\sh{G}))=\psi^{-1}(\Supp(\sh{G}))$.
 
-An immediate consequence of this result is that {\em the functor
+An immediate consequence of this result is that \emph{the functor
 $\psi^*(\sh{G})$ is exact in $\sh{G}$} on the abelian category of sheaves of
 abelian groups.
 \end{env}
@@ -836,18 +836,18 @@ abelian groups.
 \label{0.3.8.1}
 \oldpage[0\textsubscript{I}]{35}
 Let $X$ be a topological space whose topology admits a basis $\fk{B}$
-consisting of open {\em quasi-compact} subsets. Let $\sh{F}$ be a {\em sheaf
-of sets} on $X$; if we equip each of the $\sh{F}(U)$ with the {\em discrete}
-topology, $U\mapsto\sh{F}(U)$ is a {\em presheaf of topological spaces}. We
-will see that there exists a {\em sheaf of topological spaces $\sh{F}'$
+consisting of open \emph{quasi-compact} subsets. Let $\sh{F}$ be a \emph{sheaf
+of sets} on $X$; if we equip each of the $\sh{F}(U)$ with the \emph{discrete}
+topology, $U\mapsto\sh{F}(U)$ is a \emph{presheaf of topological spaces}. We
+will see that there exists a \emph{sheaf of topological spaces $\sh{F}'$
 associated to $\sh{F}$} \sref{0.3.5.6} such that $\Gamma(U,\sh{F}')$ is the
-discrete space $\sh{F}(U)$ for each open {\em quasi-compact} subsets $U$. It
+discrete space $\sh{F}(U)$ for each open \emph{quasi-compact} subsets $U$. It
 will suffice to show that the presheaf $U\mapsto\sh{F}(U)$ of discrete
-topological spaces {\em on $\fk{B}$} satisfy the condition (F$_0$) of
+topological spaces \emph{on $\fk{B}$} satisfy the condition (F$_0$) of
 \sref{0.3.2.2}, and more generally that if $U$ is an open quasi-compact
 subset and if $(U_\alpha)$ is a cover of $U$ by sets of $\fk{B}$, then the
 least fine topology $\mathcal{T}$ on $\Gamma(U,\sh{F})$ renders continuous the
-maps $\Gamma(U,\sh{F})\to\Gamma(U_\alpha,\sh{F})$ is the {\em discrete}
+maps $\Gamma(U,\sh{F})\to\Gamma(U_\alpha,\sh{F})$ is the \emph{discrete}
 topology. There exists a finite number of indices $\alpha_i$ such that
 $U=\bigcup_i U_{\alpha_i}$. Let $s\in\Gamma(U,\sh{F})$ and let $s_i$ be its
 image in $\Gamma(U_{\alpha_i},\sh{F})$; the intersection of the inverse images
@@ -863,16 +863,16 @@ $V\in\fk{B}$ and $V\subset U$ (the $\Gamma(V,\sh{F})$ being discrete).
 
 The above considerations apply without modification to sheaves of groups or of
 rings (not necessarily commutative), and associate to them sheaves of
-{\em topological groups} or {\em topological rings}, respectively. To
-summarize, we say that the sheaf $\sh{F}'$ is the {\em pseudo-discrete} sheaf
-of {\em spaces} (resp. {\em groups}, {\em rings}) associated to a sheaf of
+\emph{topological groups} or \emph{topological rings}, respectively. To
+summarize, we say that the sheaf $\sh{F}'$ is the \emph{pseudo-discrete} sheaf
+of \emph{spaces} (resp. \emph{groups}, \emph{rings}) associated to a sheaf of
 sets (resp. groups, rings) $\sh{F}$.
 \end{env}
 
 \begin{env}[3.8.2]
 \label{0.3.8.2}
 Let $\sh{F}$, $\sh{G}$ be two sheaves of sets (resp. groups, rings) on $X$,
-$u:\sh{F}\to\sh{G}$ a homomorphism. Then $u$ is thus a {\em continuous}
+$u:\sh{F}\to\sh{G}$ a homomorphism. Then $u$ is thus a \emph{continuous}
 homomorphism $\sh{F}'\to\sh{G}'$, if we denote by $\sh{F}'$ and $\sh{G}'$ the
 pseudo-discrete sheaves associated to $\sh{F}$ and $\sh{G}$; this follows in
 effect from \sref{0.3.2.5}.
@@ -883,7 +883,7 @@ effect from \sref{0.3.2.5}.
 Let $\sh{F}$ be a sheaf of sets, $\sh{H}$ a subsheaf of $\sh{F}$, $\sh{F}'$ and
 $\sh{H}'$ the pseudo-discrete sheaves associated to $\sh{F}$ and $\sh{H}$
 respectively. Then, for each open $U\subset X$, $\Gamma(U,\sh{H}')$ is
-{\em closed} in $\Gamma(U,\sh{F}')$: indeed, it is the intersection of the
+\emph{closed} in $\Gamma(U,\sh{F}')$: indeed, it is the intersection of the
 inverse images of the $\Gamma(V,\sh{H})$ (for $V\in\fk{B}$, $V\subset U$)
 under the continuous maps $\Gamma(U,\sh{F})\to\Gamma(V,\sh{F})$, and
 $\Gamma(V,\sh{H})$ is closed in the discrete space $\Gamma(V,\sh{F})$.
