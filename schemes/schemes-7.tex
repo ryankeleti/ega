@@ -22,7 +22,7 @@ By an abuse of language, whenever we are discussing only $S$-preschemes, we will
 
 Let $f$ be a rational map from $X$ to $Y$, and $U$ an open subset of $X$; if $f_1$ and $f_2$ are two morphisms belonging to the class of $f$, defined (respectively) on dense open subsets $V$ and $W$ of $X$, then the restrictions $f_1|(U\cap V)$ and $f_2|(U\cap W)$ agree on $U\cap V\cap W$, which is dense in $U$; the class $f$ of morphisms thus defines a rational map from $U$ to $Y$, called the \emph{restriction of $f$ to $U$}, and denoted by $f|U$.
 
-If, to every $S$-morphism $f\colon X\to Y$, we take the corresponding rational $S$-map to which $f$ belongs, we obtain a canonical map from $\Hom_S(X,Y)$ to the set of rational $S$-maps from $X$ to $Y$.
+If, to every $S$-morphism $f:X\to Y$, we take the corresponding rational $S$-map to which $f$ belongs, we obtain a canonical map from $\Hom_S(X,Y)$ to the set of rational $S$-maps from $X$ to $Y$.
 We denote by $\Gamma_\mathrm{rat}(X/Y)$ the set of rational $Y$-sections on $X$, and we thus have a canonical map $\Gamma(X/Y)\to\Gamma_\mathrm{rat}(X/Y)$.
 It is also clear that, if $X$ and $Y$ are $S$-preschemes, then the set of rational $S$-maps from $X$ to $Y$ is canonically identified with $\Gamma_\mathrm{rat}((X\times_S Y)/X)$ \sref{1.3.3.14}.
 
@@ -196,7 +196,7 @@ Since, for every morphism $U\to Y$ belonging to the class of $f$, we necessarily
 
 \begin{lem}[7.2.2.1]
 \label{1.7.2.2.1}
-Under the hypotheses of \sref{1.7.2.2}, let $U_1$ and $U_2$ be two dense open subsets of $X$, and $f_i\colon U_i\to Y$ ($i=1,2$) two $S$-morphisms such that there exists an open subset $V\subset U_1\cap U_2$, dense in $X$, and on which $f_1$ and $f_2$ agree.
+Under the hypotheses of \sref{1.7.2.2}, let $U_1$ and $U_2$ be two dense open subsets of $X$, and $f_i:U_i\to Y$ ($i=1,2$) two $S$-morphisms such that there exists an open subset $V\subset U_1\cap U_2$, dense in $X$, and on which $f_1$ and $f_2$ agree.
 Then $f_1$ and $f_2$ agree on $U_1\cap U_2$.
 \end{lem}
 
@@ -204,8 +204,8 @@ Then $f_1$ and $f_2$ agree on $U_1\cap U_2$.
 \label{proof-1.7.2.2.1}
 We can clearly restrict to the case where $X=U_1=U_2$.
 Since $X$ (and thus $V$) is reduced, $X$ is the smallest closed subprescheme of $X$ containing $V$ \sref{1.5.2.2}.
-Let $g=(f_1,f_2)_S\colon X\to Y\times_S Y$; since, by hypothesis, the diagonal $T=\Delta_Y(Y)$ is a closed subprescheme of $Y\times_S Y$, $Z=g^{-1}(T)$ is a closed subprescheme of $X$ \sref{1.4.4.1}.
-If $h\colon V\to Y$ is the common restriction of $f_1$ and $f_2$ to $V$, then the restriction of $g$ to $V$ is $g'=(h,h)_S$, which factors as $g'=\Delta_Y\circ h$; since $\Delta_Y^{-1}(T)=Y$, we have that $g'^{-1}(T)=V$, and so $Z$ is a closed subprescheme of $X$ inducing $V$, thus containing $V$, which leads to $Z=X$.
+Let $g=(f_1,f_2)_S:X\to Y\times_S Y$; since, by hypothesis, the diagonal $T=\Delta_Y(Y)$ is a closed subprescheme of $Y\times_S Y$, $Z=g^{-1}(T)$ is a closed subprescheme of $X$ \sref{1.4.4.1}.
+If $h:V\to Y$ is the common restriction of $f_1$ and $f_2$ to $V$, then the restriction of $g$ to $V$ is $g'=(h,h)_S$, which factors as $g'=\Delta_Y\circ h$; since $\Delta_Y^{-1}(T)=Y$, we have that $g'^{-1}(T)=V$, and so $Z$ is a closed subprescheme of $X$ inducing $V$, thus containing $V$, which leads to $Z=X$.
 From the equation $g^{-1}(T)=X$, we deduce \sref{1.4.4.1} that $g$ factors as $\Delta_Y\circ f$, where $f$ is a morphism $X\to Y$, which implies, by the definition of the diagonal morphism, that $f_1=f_2=f$.
 \end{proof}
 
@@ -226,19 +226,19 @@ By \sref{1.7.2.2}, for every $S$-morphism $f$ from $U$ to $Y$, there indeed exis
 
 \begin{cor}[7.2.4]
 \label{1.7.2.4}
-Let $S$ be a scheme, $X$ a reduced $S$-prescheme, $Y$ an $S$-scheme, and $f\colon U\to Y$ an $S$-morphism from a dense open subset $U$ of $X$ to $Y$.
+Let $S$ be a scheme, $X$ a reduced $S$-prescheme, $Y$ an $S$-scheme, and $f:U\to Y$ an $S$-morphism from a dense open subset $U$ of $X$ to $Y$.
 If $\overline{f}$ is the rational $\bb{Z}$-map from $X$ to $Y$ that extends $f$, then $\overline{f}$ is an $S$-morphism (and thus the rational $S$-map from $X$ to $Y$ that extends $f$).
 \end{cor}
 
 \begin{proof}
 \label{proof-1.7.2.4}
-Indeed, if $\vphi\colon X\to S$ and $\psi\colon Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, which follows from \sref{1.7.2.2.1}, since $f$ is an $S$-morphism.
+Indeed, if $\vphi:X\to S$ and $\psi:Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, which follows from \sref{1.7.2.2.1}, since $f$ is an $S$-morphism.
 \end{proof}
 
 \begin{cor}[7.2.5]
 \label{1.7.2.5}
 Let $X$ and $Y$ be two $S$-preschemes; suppose that $X$ is reduced, and that $X$ and $Y$ are separated over $S$.
-Let $p\colon Y\to X$ be an $S$-morphism (making $Y$ an $X$-prescheme), $U$ a dense open subset of $X$, and $f$ a $U$-section of $Y$; then the rational map $\overline{f}$ from $X$ to $Y$ extending $f$ is a rational $X$-section of $Y$.
+Let $p:Y\to X$ be an $S$-morphism (making $Y$ an $X$-prescheme), $U$ a dense open subset of $X$, and $f$ a $U$-section of $Y$; then the rational map $\overline{f}$ from $X$ to $Y$ extending $f$ is a rational $X$-section of $Y$.
 \end{cor}
 
 \begin{proof}
@@ -254,19 +254,19 @@ Then there is a canonical bijective correspondence between sections of $\OO_X$ o
 
 \begin{proof}
 \label{proof-1.7.2.6}
-Taking \sref{1.7.2.3}, \sref{1.7.1.2}, and \sref{1.7.1.3} into account, it suffices to note that the $X$-prescheme $X\otimes_{\bb{Z}}\bb{Z}[T]$ is separated over $X$ \sref{1.5.5.1}[(iv)].
+Taking \sref{1.7.2.3}, \sref{1.7.1.2}, and \sref{1.7.1.3} into account, it suffices to note that the $X$-prescheme $X\otimes_{\bb{Z}}\bb{Z}[T]$ is separated over $X$ \sref{1.5.5.1}[iv].
 \end{proof}
 
 \begin{cor}[7.2.7]
 \label{1.7.2.7}
-Let $Y$ be a reduced prescheme, $f\colon X\to Y$ a separated morphism, $U$ a dense open subset of $Y$, $g\colon U\to f^{-1}(U)$ a $U$-section of $f^{-1}(U)$, and $Z$ the reduced subprescheme of $X$ that has $\overline{g(U)}$ as its underlying space \sref{1.5.2.1}.
+Let $Y$ be a reduced prescheme, $f:X\to Y$ a separated morphism, $U$ a dense open subset of $Y$, $g:U\to f^{-1}(U)$ a $U$-section of $f^{-1}(U)$, and $Z$ the reduced subprescheme of $X$ that has $\overline{g(U)}$ as its underlying space \sref{1.5.2.1}.
 For $g$ to be the restriction of a $Y$-section of $X$ \emph{(in other words \sref{1.7.2.5}, for the rational map from $Y$ to $X$ extending $g$ to be defined everywhere)}, it is necessary and sufficient that the restriction of $f$ to $Z$ be an isomorphism from $Z$ to $Y$.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.7.2.7}
-The restriction of $f$ to $f^{-1}(U)$ is a separated morphism \sref{1.5.5.1}[(i)], so $g$ is a closed immersion \sref{1.5.4.6}, and so $g(U)=Z\cap f^{-1}(U)$, and the subprescheme induced by $Z$ on the open subset $g(U)$ of $Z$ is identical to the closed subprescheme of $f^{-1}(U)$ associated to $g$ \sref{1.5.2.1}.
-It is clear then that the stated condition is sufficient, because if it is satisfied, and if $f_Z\colon Z\to Y$ is the restriction of $f$ to $Z$, and $\overline{g}\colon Y\to Z$ is the inverse isomorphism, then $\overline{g}$ extends $g$.
+The restriction of $f$ to $f^{-1}(U)$ is a separated morphism \sref{1.5.5.1}[i], so $g$ is a closed immersion \sref{1.5.4.6}, and so $g(U)=Z\cap f^{-1}(U)$, and the subprescheme induced by $Z$ on the open subset $g(U)$ of $Z$ is identical to the closed subprescheme of $f^{-1}(U)$ associated to $g$ \sref{1.5.2.1}.
+It is clear then that the stated condition is sufficient, because if it is satisfied, and if $f_Z:Z\to Y$ is the restriction of $f$ to $Z$, and $\overline{g}:Y\to Z$ is the inverse isomorphism, then $\overline{g}$ extends $g$.
 Conversely, if $g$ is the restriction to $U$ of a $Y$-section $h$ of $X$, then $h$ is a closed immersion \sref{1.5.4.6}, and so $h(Y)$ is closed, and, since it is contained in $Z$, is equal to $Z$, and it follows from \sref{1.5.2.1} that $h$ is necessarily an isomorphism from $Y$ to the closed subprescheme $Z$ of $X$.
 \end{proof}
 
@@ -328,7 +328,7 @@ Since $U\cup(X\setminus\overline{U})$ is dense in $X$, $f_1$ and $f$ agree on a 
 Let $X$ be a prescheme.
 For every open subset $U\subset X$, we denote by $R(U)$ the ring of rational functions on $U$ \sref{1.7.1.3}; it is a $\Gamma(U,\OO_X)$-algebra.
 Further, if $V\subset U$ is a second open subset of $X$, then every section of $\OO_X$ over a dense (in $X$) open subset of $V$ gives, by restriction to $V$, a section over a dense (in $X$) open subset of $V$, and if two sections agree on a dense (in $X$) open subset of $U$, then their restrictions to $V$ agree on a dense (in $X$) open subset of $V$.
-We thus define a di-homomorphism of algebras $\rho_{V,U}\colon R(U)\to R(V)$, and it is clear that if $U\supset V\supset W$ are three open subsets of $X$, then we have $\rho_{W,U}=\rho_{W,V}\circ\rho_{V,U}$; the $R(U)$ thus define a \emph{presheaf} of algebras on $X$.
+We thus define a di-homomorphism of algebras $\rho_{V,U}:R(U)\to R(V)$, and it is clear that if $U\supset V\supset W$ are three open subsets of $X$, then we have $\rho_{W,U}=\rho_{W,V}\circ\rho_{V,U}$; the $R(U)$ thus define a \emph{presheaf} of algebras on $X$.
 \end{env}
 
 \begin{defn}[7.3.2]
@@ -393,17 +393,17 @@ The question being local, the first claim follows from \sref{1.7.3.3}; the secon
 
 \begin{env}[7.3.8]
 \label{1.7.3.8}
-Let $X$ and $Y$ be two preschemes, each having a finite number of irreducible components, and let $f\colon X\to Y$ be a morphism whose restriction to the set of generic points of the irreducible components of $X$ is a \emph{surjection} onto the set of generic points of irreducible components of $Y$.
+Let $X$ and $Y$ be two preschemes, each having a finite number of irreducible components, and let $f:X\to Y$ be a morphism whose restriction to the set of generic points of the irreducible components of $X$ is a \emph{surjection} onto the set of generic points of irreducible components of $Y$.
 Then we have
 \begin{equation*}
-    f^*(\sh{R}(Y)) = \sh{R}(X).
+    f^*(\sh{R}(Y))=\sh{R}(X).
     \tag{7.3.8.1}
 \end{equation*}
 \end{env}
 
 \begin{proof}
 \label{proof-1.7.3.8}
-Indeed, we are led (by \sref{1.7.3.3}) to the case where $X$ and $Y$ are irreducible, with generic points $x$ and $y$, with $f(x)=y$; thus $(f^*(\sh{R}(Y)))_x = \OO_y\otimes_{\OO_y}\OO_x = \OO_x$ \sref[0]{0.4.3.1}, which proves \sref{1.7.3.8}, thanks to \sref{1.7.3.5}.
+Indeed, we are led (by \sref{1.7.3.3}) to the case where $X$ and $Y$ are irreducible, with generic points $x$ and $y$, with $f(x)=y$; thus $(f^*(\sh{R}(Y)))_x=\OO_y\otimes_{\OO_y}\OO_x=\OO_x$ \sref[0]{0.4.3.1}, which proves \sref{1.7.3.8}, thanks to \sref{1.7.3.5}.
 \end{proof}
 
 \subsection{Torsion sheaves and torsion-free sheaves}
@@ -413,7 +413,7 @@ Indeed, we are led (by \sref{1.7.3.3}) to the case where $X$ and $Y$ are irreduc
 \label{1.7.4.1}
 Let $X$ be an \emph{integral} scheme.
 For every $\OO_X$-module $\sh{F}$, the canonical homomorphism $\OO_X\to\sh{R}(X)$ defines, by tensoring, a homomorphism (again said to be \emph{canonical}) $\sh{F}\to\sh{F}\otimes_{\OO_X}\sh{R}(X)$, which, on each fibre, is exactly the homomorphism $z\to z\otimes1$ from $\sh{F}_x$ to $\sh{F}_x\otimes_{\OO_X}R(X)$.
-The \emph{kernel $\sh{T}$} of this homomorphism is a sub-$\OO_X$-module of $\sh{F}$, called the \emph{torsion sheaf} of $\sh{F}$; it is quasi-coherent if $\sh{F}$ is quasi-coherent (\sref{1.4.1.1} and \sref{1.7.3.6}).
+The \emph{kernel $\sh{T}$} of this homomorphism is a $\OO_X$-submodule of $\sh{F}$, called the \emph{torsion sheaf} of $\sh{F}$; it is quasi-coherent if $\sh{F}$ is quasi-coherent (\sref{1.4.1.1} and \sref{1.7.3.6}).
 We say that $\sh{F}$ is \emph{torsion free} if $\sh{T}=0$, and that $\sh{F}$ is a \emph{torsion sheaf} if $\sh{T}=\sh{F}$.
 For every $\OO_X$-module $\sh{F}$, $\sh{F}/\sh{T}$ is torsion free.
 We deduce from \sref{1.7.3.5} that:
@@ -429,31 +429,31 @@ In particular:
 
 \begin{cor}[7.4.3]
 \label{1.7.4.3}
-On an integral prescheme $X$, every torsion-free quasi-coherent $\OO_X$-module of rank 1 (in particular, every invertible $\OO_X$-module) is isomorphic to a sub-$\OO_X$-module of $\sh{R}(X)$, and vice versa.
+On an integral prescheme $X$, every torsion-free quasi-coherent $\OO_X$-module of rank $1$ (in particular, every invertible $\OO_X$-module) is isomorphic to a $\OO_X$-submodule of $\sh{R}(X)$, and vice versa.
 \end{cor}
 
 \begin{cor}[7.4.4]
 \label{1.7.4.4}
-Let $X$ be an integral prescheme, $\sh{L}$ and $\sh{L}'$ two torsion-free $\OO_X$-modulesm and $f$ (\emph{resp.} $f'$) a section of $\sh{L}$ (\emph{resp.} $\sh{L}'$) over $X$.
-In order that $f\otimes f'=0$, it is necessary and sufficient that one of the sections $f$ and $f'$ be null.
+Let $X$ be an integral prescheme, $\sh{L}$ and $\sh{L}'$ two torsion-free $\OO_X$-modules, and $f$ (\emph{resp.} $f'$) a section of $\sh{L}$ (\emph{resp.} $\sh{L}'$) over $X$.
+In order that $f\otimes f'=0$, it is necessary and sufficient that one of the sections $f$ and $f'$ be zero.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.7.4.4}
-Let $x$ be the generic point of $X$; we have, by hypothesis, that $(f\otimes f')_x = f_x\otimes f'_x = 0$.
-Since $\sh{L}_x$ and $\sh{L}'_x$ can be identified with sub-$\OO_X$-modules of the field $\OO_x$, the above equation leads to $f_x=0$ or $f'_x=0$, and thus $f=0$ or $f'=0$, since $\sh{L}$ and $\sh{L}'$ are torsion free \sref{1.7.3.5}.
+Let $x$ be the generic point of $X$; we have, by hypothesis, that $(f\otimes f')_x=f_x\otimes f'_x=0$.
+Since $\sh{L}_x$ and $\sh{L}'_x$ can be identified with $\OO_X$-submodules of the field $\OO_x$, the above equation leads to $f_x=0$ or $f'_x=0$, and thus $f=0$ or $f'=0$, since $\sh{L}$ and $\sh{L}'$ are torsion free \sref{1.7.3.5}.
 \end{proof}
 
 \begin{prop}[7.4.5]
 \label{1.7.4.5}
-Let $X$ and $Y$ be two integral preschemes, and $f\colon X\to Y$ a dominant morphism.
+Let $X$ and $Y$ be two integral preschemes, and $f:X\to Y$ a dominant morphism.
 For every torsion-free quasi-coherent $\OO_X$-modules $\sh{F}$, $f_*(\sh{F})$ is a torsion-free $\OO_Y$-module.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.7.4.5}
 Since\oldpage[I]{164} $f_*$ is left exact \sref[0]{0.4.2.1}, it suffices, by \sref{1.7.4.2}, to prove the proposition when $\sh{F}=(\sh{R}(X))^{(I)}$.
-But every nonempty open subset $U$ of $Y$ contains the generic point of $Y$, so $f^{-1}(U)$ contains the generic point of $X$ \sref[0]{0.2.1.5}, so we have that $\Gamma(U,f_*(\sh{F})) = \Gamma(f^{-1}(U),\sh{F}) = (R(X))^{(I)}$; in other words, $f_*(\sh{F})$ is the simple sheaf with fibre $(R(X))^{(I)}$, considered as a $\sh{R}(Y)$-module, and it is clearly torsion free.
+But every nonempty open subset $U$ of $Y$ contains the generic point of $Y$, so $f^{-1}(U)$ contains the generic point of $X$ \sref[0]{0.2.1.5}, so we have that $\Gamma(U,f_*(\sh{F}))=\Gamma(f^{-1}(U),\sh{F})=(R(X))^{(I)}$; in other words, $f_*(\sh{F})$ is the simple sheaf with fibre $(R(X))^{(I)}$, considered as a $\sh{R}(Y)$-module, and it is clearly torsion free.
 \end{proof}
 
 \begin{prop}[7.4.6]
