@@ -14,7 +14,7 @@ Here is the current status of the translation, along with who is currently worki
 - [x] Introduction (proofread by @thosgood)
 - [ ] Preliminaries
     + [x] 1. Rings of fractions (@ryankeleti) (proofread by @thosgood)
-    + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti)
+    + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti) (proofread by @thosgood)
     + [x] 3. Supplement on sheaves (@ryankeleti)
     + [x] 4. Ringed spaces (@ryankeleti)
     + [x] 5. Quasi-coherent sheaves and coherent sheaves (@ryankeleti)
