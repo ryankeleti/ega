@@ -525,7 +525,7 @@ Under the same hypotheses, we also have
 \begin{equation*}
     n(X\times_K Y) = n(X)n(Y)\tag{6.4.8.2}
 \end{equation*}
-because of the interpretation of $n(X)$ as the number of elements of $X(\Omega)_K$ and \hyperref[1.3.4.3]{equation~3.4.3.1}.
+because of the interpretation of $n(X)$ as the number of elements of $X(\Omega)_K$ and \hyperref[1.3.4.3]{equation~(3.4.3.1)}.
 \end{env}
 
 \begin{prop}[6.4.9]
@@ -589,4 +589,130 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
 
 \begin{proof}
 \label{proof-1.6.5.1}
+\begin{enumerate}[label=\rm(\roman*)]
+    \item Since the question is local on $S$, $X$, and $Y$, we can assume that $S$, $X$, and $Y$ are affine, given by rings $A$, $B$, and $C$ (respectively), and with $f$ and $f'$ of the form $({}^a\vphi,\widetilde{\vphi})$ and $({}^a\vphi',\widetilde{\vphi}')$ (respectively), where $\vphi$ and $\vphi'$ are $A$-homomorphisms from $C$ to $B$ such that $\vphi^{-1}(\fk{j}_x)=\vphi'^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphisms $\vphi_x$ and $\vphi'_x$ from $C_y$ to $B_x$, induced by $\vphi$ and $\vphi'$, are identical;
+        we can further suppose that $C$ is an $A$-algebra \emph{of finite type}.
+        Let $c_i$ ($1\leqslant i\leqslant n$) be the generators of the $A$-algebra $C$, and set $b_i=\vphi(c_i)$ and $b'_i=\vphi'(c_i)$;
+        by hypothesis, we have $b_i/1=b'_i/1$ in the ring of fractions $B_x$ ($1\leqslant i\leqslant n$).
+        This implies that there exist elements $s_i\in B\setminus\fk{j}_x$ such that $s_i(b_i-b'_i)=0$ for $1\leqslant i\leqslant n$, and we can clearly assume that all the $s_i$ are equal to a single element $g\in B\setminus\fk{j}_x$.
+        From this, we conclude that we have $b_i/1=b'_i/1$ for $1\leqslant i\leqslant n$ in the ring of fractions $B_g$;
+        if $i_g$ is the canonical homomorphism $B\to B_g$, we then have $i_g\circ\vphi=i_g\circ\vphi'$;
+        so the restrictions of $f$ and $f'$ to $D(g)$ are identical.
+    \item We can restrict to the situation as in (i), and further assume that the ring $A$ is Noetherian.
+        Let $c_i$ ($1\leqslant i\leqslant n$) be the generators of the $A$-algebra $C$, and let $\alpha\colon A[X_1,\ldots,X_n]\to C$ be the homomorphism of polynomial algebras that sends $X_i$ to $c_i$ for $1\leqslant i\leqslant n$.
+        Also let $i_y$ be the canonical homomorphism $C\to C_y$, and consider the composite homomorphism
+        \begin{equation*}
+            \beta\colon A[X_1,\ldots,X_n] \xrightarrow{\alpha} C \xrightarrow{i_y} C_y \xrightarrow{\vphi} B_x.
+        \end{equation*}
+        We denote by $\fk{a}$ the kernel of $\beta$;
+        since $A$ is Noetherian, so too is $A[X_1,\ldots,X_n]$, and so $\fk{a}$ admits a finite system of generators $Q_j(X_1,\ldots,X_n)$ ($1\leqslant j\leqslant m$).
+        Furthermore, each of the elements $\vphi(i_y(c_i))$ can be written in the form $b_i/s_i$, where $b_i\in B$ and $s_i\not\in\fk{j}_x$;
+        \oldpage[I]{151}
+        we can further assume that all of the $s_i$ are equal to a single element $g\in B\setminus\fk{j}_x$.
+        With this, by hypothesis, we have $Q_j(b_1/g,\ldots,b_n/g)=0$ in $B_x$;
+        set
+        \begin{equation*}
+            Q_j(X_1/T,\ldots,X_n/T) = P_j(X_1,\ldots,X_n,T)/T^{k_j}
+        \end{equation*}
+        where $P_j$ is homogeneous of degree $k_j$.
+        Then let $d_j=P_j(b_1,\ldots,b_n,g)\in B$.
+        By hypothesis, we have $t_jd_j=0$ for some $t_j\in B\setminus\fk{j}_x$ ($1\leqslant j\leqslant m$), and we can clearly assume that all the $t_j$ are equal to a single element $h\in B\setminus\fk{j}_x$;
+        from this we conclude that $P_j(hb_1,\ldots,hb_n,hg)=0$ for $1\leqslant j\leqslant m$.
+        With this, consider the homomorphism $\rho$ from $A[X_1,\ldots,X_n]$ to the ring of fractions $B_{hg}$ which sends $X_i$ to $hb_i/hg$ ($1\leqslant i\leqslant n$);
+        the image of $\fk{a}$ under this homomorphism is $0$, and is \emph{a fortiori} the same as the image of the kernel $\alpha^{-1}(0)$ under $\rho$.
+        So $\rho$ factors as $A[X_1,\ldots,X_n]\xrightarrow{\alpha}C\xrightarrow{\gamma}B_{hg}$, with $\gamma(c_i)=hb_i/hg$, and it is clear that, if $i_x$ is the canonical homomorphism $B_{hg}\to B_x$, then the diagram
+        \begin{equation*}
+            \begin{tikzcd}
+                C \ar[r,"\gamma"] \ar[d,swap,"i_y"]
+                & B_{hg} \ar[d,"i_x"]\\
+                C_y \ar[r,swap,"\vphi"]
+                & B_x
+            \end{tikzcd}
+            \tag{6.5.1.1}
+        \end{equation*}
+        is commutative;
+        we thus have $\vphi=\gamma_x$, and since $\vphi$ is a local homomorphism, $^a\gamma(x)=y$;
+        $f=({}^a\gamma,\widetilde{\gamma})$ is thus an $S$-morphism from the neighbourhood $D(hg)$ of $x$ to $Y$ as claimed in the proposition.
+\end{enumerate}
 \end{proof}
+
+\begin{cor}[6.5.2]
+\label{1.6.5.2}
+Under the hypotheses of \sref{1.6.5.1}[(ii)], if, further, $X$ is of finite type over $S$, then we can assume that the morphism $f$ is of finite type.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.5.2}
+This follows from \sref{1.6.3.6}.
+\end{proof}
+
+\begin{cor}[6.5.3]
+\label{1.6.5.3}
+Suppose that the hypotheses of \sref{1.6.5.1}[(ii)], and suppose further that $Y$ is integral, and that $\vphi$ is an injective homomorphism.
+Then we can assume that $f=({}^a\gamma,\widetilde{\gamma})$, where $\gamma$ is injective.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.5.3}
+Indeed, we can assume $C$ to be integral \sref{1.5.1.4}, and so $i_y$ to be injective;
+it then follows from the diagram in \hyperref[1.6.5.1]{(6.5.1.1)} that $\gamma$ is injective.
+\end{proof}
+
+\begin{prop}[6.5.4]
+\label{1.6.5.4}
+Let $f=(\psi,\theta)\colon X\to Y$ be a morphism of finite type, $x$ a point of $X$, and $y=\psi(x)$.
+\begin{enumerate}[label=\rm(\roman*)]
+    \item For $f$ to be a local immersion at the point $x$ \sref{1.4.5.1}, it is necessary and sufficient that $\theta_x^\#\colon\OO_y\to\OO_x$ be surjective.
+    \item Assume further that $Y$ is locally Noetherian.
+        For $f$ to be a local isomorphism at the point $x$ \sref{1.4.5.2}, it is necessary and sufficient that $\theta_x^\#$ be an isomorphism.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.5.4}
+\begin{itemize}
+    \item[(ii)] By \sref{1.6.5.1}, there exists an open neighbourhood $V$ of $Y$ and a morphism $g\colon V\to X$ such that $g\circ f$ (resp. $f\circ g$) is defined and agrees with the identity on a neighbourhood of $x$ (resp. $y$), whence we can easily see that $f$ is a local isomorphism.
+    \item[(i)] Since the question is local on $X$ and $Y$, we can assume that $X$ and $Y$ are affine, given by rings $A$ and $B$ (respectively);
+    we have $f=({}^a\vphi,\widetilde{\vphi})$, where $\vphi$ is a homomorphism of rings $B\to A$ that makes $A$ a $B$-algebra of finite type;
+    we have $\vphi^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphism $\vphi_x\colon B_y\to A_x$ induced by $\vphi$ is \emph{surjective}.
+    Let $(t_i)$ ($1\leqslant i\leqslant n$) be a system of generators of the $B$-algebra $A$;
+    the hypothesis on $\vphi_x$ implies that there exist $b_i\in B$ and some $c\in B\setminus\fk{j}_x$ such that, in the ring of fractions $A_x$, we have $t_i/1=\vphi(b_i)/\vphi(c)$ for $1\leqslant i\leqslant n$.
+    Then \sref{1.1.3.3} there exists some $a\in A\setminus\fk{j}_x$ such that, if we let $g=a\vphi(c)$, we also have $t_i/1=a\vphi(b_i)/g$ \emph{in the ring of fractions $A_g$}.
+    With this, there exists, by hypothesis, a polynomial $Q(X_1,\ldots,X_n)$, with coefficients in the ring $\vphi(B)$, such that $a=Q(t_1,\ldots,t_n)$;
+    let $Q(X_1/T,\ldots,X_n/T)=P(X_1,\ldots,X_n,T)/T^m$, where $P$ is homogeneous of degree $m$.
+    In the ring $A_g$, we have
+    \begin{equation*}
+        a/1 = a^mP(\vphi(b_1),\ldots,\vphi(b_n),\vphi(c))/g^m = a^m\vphi(d)/g^m
+    \end{equation*}
+    where $d\in B$.
+    Since, in $A_g$, $g/1=(a/1)(\vphi(c)/1)$ is invertible by definition, so too are $a/1$ and $\vphi(c)/1$, and we can thus write $a/1=(\vphi(d)/1)(\vphi(c)/1)^{-m}$.
+    From this we conclude that $\vphi(d)/1$ is also invertible in $A_g$.
+    So let $h=cd$;
+    since $\vphi(h)/1$ is invertible in $A_g$, the composite homomorphism $B\xrightarrow{\vphi}A\to A_g$ factors as $B\to B_h\xrightarrow{\gamma}A_g$ \sref[0]{0.1.2.4}.
+    We will show that $\gamma$ is \emph{surjective};
+    it suffices to show that the image of $B_h$ in $A_g$ contains the $t_i/1$ and $(g/1)^{-1}$.
+    But we have $(g/1)^{-1}=(\vphi(c)/1)^{m-1}(\vphi(d)/1)^{-1}=\gamma(c^m/h)$, and $a/1=\gamma(d^{m+1}/h^m)$, so $(a\vphi(b_i))/1=\gamma(b_id^{m+1}/h^m)$, and since $t_i/1=(a\vphi(b_i)/1)(g/1)^{-1}$, our claim is proved.
+    The choice of $h$ implies that $\psi(D(g))\subset D(h)$, and we also know that the restriction of $f$ to $D(g)$ is equal to $({}^a\gamma,\widetilde{\gamma})$;
+    since $\gamma$ is surjective, this restriction is a closed immersion of $D(g)$ into $D(h)$ \sref{1.4.2.3}.
+\end{itemize}
+\end{proof}
+
+\begin{cor}[6.5.5]
+\label{1.6.5.5}
+Let $f=(\psi,\theta)\colon X\to Y$ be a morphism of finite type.
+Assume that $X$ is irreducible, and denote by $x$ its generic point, and let $y=\psi(x)$.
+\begin{enumerate}[label=\rm(\roman*)]
+    \item For $f$ to be a local immersion at any point of $X$, it is necessary and sufficient that $\theta_x^\#\colon\OO_y\to\OO_x$ be surjective.
+    \item Assume further that $Y$ is irreducible and locally Noetherian.
+    For $f$ to be a local isomorphism at any point of $X$, it is necessary and sufficient that $y$ be the generic point of $Y$ \emph{(or, equivalently \sref[0]{0.2.1.4}, that $f$ be a \emph{dominant} morphism)} and that $\theta_x^\#$ be an isomorphism \emph{(in other words, that $f$ be \emph{birational} \sref{1.2.2.9})}.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.5.5}
+It is clear that (i) follows from \sref{1.6.5.4}[(i)], taking into account the fact that every non-empty open subset of $X$ contains $x$;
+similarly, (ii) follows from \sref{1.6.5.4}[(ii)].
+\end{proof}
+
+\subsection{Quasi-compact morphisms and morphisms of locally finite type}
+\label{subsection-quasi-compact-morphisms-and-morphisms-of-locally-finite-type}
