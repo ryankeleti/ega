@@ -9,7 +9,7 @@
 \oldpage[0\textsubscript{III}]{5}
 We denote by $\Set$ the category of sets.
 Let $\C$ be a category; for two objects $X$, $Y$ of $\C$, we set $h_X(Y)=\Hom(Y,X)$; for each morphism $u:Y\to Y'$ in $\C$, we denote by $h_X(u)$ the map $v\mapsto vu$ from $\Hom(Y',X)$ to $\Hom(Y,X)$.
-It is immediate that with these definitions, $h_X:\C\to\Set$ is a {\em contravariant functor}, i.e., an object of the category $\CHom(\C\op,\Set)$, of covariant functors from the category $\C\op$ (the dual of the category $\C$) to the category $\Set$ (T, 1.7, (d) and \cite{III-29}).
+It is immediate that with these definitions, $h_X:\C\to\Set$ is a \emph{contravariant functor}, i.e., an object of the category $\CHom(\C\op,\Set)$, of covariant functors from the category $\C\op$ (the dual of the category $\C$) to the category $\Set$ (T, 1.7, (d) and \cite{III-29}).
 \end{env}
 
 \begin{env}[8.1.2]
@@ -26,9 +26,9 @@ diagram
     h_{X'}(Y)
   }
 \]
-is commutative; in other words, $h_w$ is a {\em natural transformation (or functorial morphism)
+is commutative; in other words, $h_w$ is a \emph{natural transformation (or functorial morphism)
 $h_X\to h_{X'}$} (T, 1.2), also a morphism in the category $\CHom(\C\op,\Set)$ (T, 1.7, (d)). The
-definitions of $h_X$ and of $h_w$ therefore constitute the definition of a {\em canonical
+definitions of $h_X$ and of $h_w$ therefore constitute the definition of a \emph{canonical
 covariant functor}
 \[
   h:\C\longrightarrow\CHom(\C\op,\Set),\quad X\longmapsto h_X.
@@ -39,7 +39,7 @@ covariant functor}
 \begin{env}[8.1.3]
 \label{0.8.1.3}
 Let $X$ be an object in $\C$, $F$ a contravariant functor from $\C$ to $\Set$
-(an object of $\CHom(\C\op,\Set)$). Let $g:h_X\to F$ be a {\em natural transformation}: for all $Y\in\C$,
+(an object of $\CHom(\C\op,\Set)$). Let $g:h_X\to F$ be a \emph{natural transformation}: for all $Y\in\C$,
 \oldpage[0\textsubscript{III}]{6}
 $g(Y)$ is thus a map $h_X(Y)\to F(Y)$ such that for each morphism $u:Y\to Y'$ in $\C$,
 the diagram
@@ -74,7 +74,7 @@ from $h_X(Y)$ to $F(Y)$; if we denote by $(\beta(\xi))(Y)$ this map,
   \beta(\xi):h_X\longrightarrow F
   \tag{8.1.3.5}
 \]
-is a {\em natural transformation}, since for each morphism $u:Y\to Y'$ in $\C$ we have
+is a \emph{natural transformation}, since for each morphism $u:Y\to Y'$ in $\C$ we have
 $(F(vu))(\xi)=(F(v)\circ F(u))(\xi)$, which makes (8.1.3.1) commutative for $g=\beta(\xi)$.
 We have thus defined a canonical map
 \[
@@ -103,10 +103,10 @@ it is equal to $g(Y)$, which finishes the proof.
 
 \begin{env}[8.1.5]
 \label{0.8.1.5}
-Recall that a {\em subcategory} $\C'$ of a category $\C$ is defined by the condition that its objects
+Recall that a \emph{subcategory} $\C'$ of a category $\C$ is defined by the condition that its objects
 are objects of $\C$, and that if $X'$, $Y'$ are two objects of $\C'$, then the set
-$\Hom_{\C'}(X',Y')$ of morphisms $X'\to Y'$ {\em in $\C'$} is a subset of the set $\Hom_\C(X',Y')$ of
-morphisms $X'\to Y'$ {\em in $\C$}, the canonical map of ``composition of morphisms''
+$\Hom_{\C'}(X',Y')$ of morphisms $X'\to Y'$ \emph{in $\C'$} is a subset of the set $\Hom_\C(X',Y')$ of
+morphisms $X'\to Y'$ \emph{in $\C$}, the canonical map of ``composition of morphisms''
 \[
   \Hom_{\C'}(X',Y')\times\Hom_{\C'}(Y',Z')\longrightarrow\Hom_{\C'}(X',Z')
 \]
@@ -116,21 +116,21 @@ being the restriction of the canonical map
   \Hom_\C(X',Y')\times\Hom_\C(Y',Z')\longrightarrow\Hom_\C(X',Z').
 \]
 
-We say that $\C'$ is a {\em full} subcategory of $\C$ if $\Hom_{\C'}(X',Y')=\Hom_\C(X',Y')$ for every
+We say that $\C'$ is a \emph{full} subcategory of $\C$ if $\Hom_{\C'}(X',Y')=\Hom_\C(X',Y')$ for every
 pair of objects in $\C'$. The subcategory $\C''$ of $\C$ consisting of the objects of $\C$ isomorphic to
-objects of $\C'$ is then again a full subcategory of $\C$, {\em equivalent} (T, 1.2) to $\C'$ as we
+objects of $\C'$ is then again a full subcategory of $\C$, \emph{equivalent} (T, 1.2) to $\C'$ as we
 verify easily.
 
-A covariant functor $F:\C_1\to\C_2$ is called {\em fully faithful} if for every pair of objects
+A covariant functor $F:\C_1\to\C_2$ is called \emph{fully faithful} if for every pair of objects
 $X_1$, $Y_1$ of $\C_1$, the map $u\mapsto F(u)$ from $\Hom(X_1,Y_1)$ to $\Hom(F(X_1),F(Y_1))$ is
-{\em bijective}; this implies that the subcategory $F(\C_1)$ of $\C_2$ is {\em full}. In addition,
+\emph{bijective}; this implies that the subcategory $F(\C_1)$ of $\C_2$ is \emph{full}. In addition,
 if two objects $X_1$, $X_1'$ have the same image $X_2$, then there exists a unique isomorphism
 $u:X_1\to X_1'$ such that $F(u)=1_{X_1}$. For each object $X_2$ of $F(\C_1)$, let $G(X_2)$ be one of
 the objects $X_1$ of $\C_1$ such that $F(X_1)=X_2$ ($G$ is defined by means of the axiom of choice); for
 each morphism $v:X_2\to Y_2$ in $F(\C_1)$, $G(v)$ will be the unique morphism $u:G(X_2)\to G(Y_2)$ such
-that $F(u)=v$; $G$ is then a {\em functor} from $F(\C_1)$ to $\C_1$; $FG$ is the identity functor on
+that $F(u)=v$; $G$ is then a \emph{functor} from $F(\C_1)$ to $\C_1$; $FG$ is the identity functor on
 $F(\C_1)$, and the above shows that there exists an isomorphism of functors $\vphi:1_{\C_1}\to GF$
-such that $F$, $G$, $\vphi$, and the identity $1_{F(\C_1)}\to FG$ defines an {\em equivalence} between
+such that $F$, $G$, $\vphi$, and the identity $1_{F(\C_1)}\to FG$ defines an \emph{equivalence} between
 the category $\C_1$ and the full subcategory $F(\C_1)$ of $\C_2$ (T, 1.2).
 \end{env}
 
@@ -138,7 +138,7 @@ the category $\C_1$ and the full subcategory $F(\C_1)$ of $\C_2$ (T, 1.2).
 \label{0.8.1.6}
 We apply Proposition \sref{0.8.1.4} to the case where $F$ is $h_{X'}$, $X'$ being any
 object of $\C$; the map $\beta:\Hom(X,X')\to\Hom(h_X,h_{X'})$ is none other than the map
-$w\mapsto h_w$ defined in \sref{0.8.1.2}; this map being {\em bijective}, we see
+$w\mapsto h_w$ defined in \sref{0.8.1.2}; this map being \emph{bijective}, we see
 with the terminology of \sref{0.8.1.5} that:
 \end{env}
 
@@ -149,17 +149,17 @@ The canonical functor $h:\C\to\CHom(\C\op,\Set)$ is fully faithful.
 
 \begin{env}[8.1.8]
 \label{0.8.1.8}
-Let $F$ be a contravariant functor from $\C$ to $\Set$; we say that $F$ is {\em representable} if there
-exists an object $X\in\C$ such that $F$ is {\em isomorphic} to $h_X$; it follows from
+Let $F$ be a contravariant functor from $\C$ to $\Set$; we say that $F$ is \emph{representable} if there
+exists an object $X\in\C$ such that $F$ is \emph{isomorphic} to $h_X$; it follows from
 Proposition \sref{0.8.1.7} that the data of an $X\in\C$ and an isomorphism of functors
 $g:h_X\to F$ determines $X$ up to unique isomorphism. Proposition \sref{0.8.1.7} then
-implies that $h$ defines an {\em equivalence} between $\C$ and the full subcategory of
-$\CHom(\C\op,\Set)$ consisting of the {\em contravariant representable functors}. It follows from
+implies that $h$ defines an \emph{equivalence} between $\C$ and the full subcategory of
+$\CHom(\C\op,\Set)$ consisting of the \emph{contravariant representable functors}. It follows from
 Proposition \sref{0.8.1.4} that the data of a natural transformation $g:h_X\to F$ is
-equivalent to that of an element $\xi\in F(X)$; to say that $g$ is an {\em isomorphism} is
-equivalent to the following condition on $\xi$: {\em for every object $Y$ of $\C$ the map
+equivalent to that of an element $\xi\in F(X)$; to say that $g$ is an \emph{isomorphism} is
+equivalent to the following condition on $\xi$: \emph{for every object $Y$ of $\C$ the map
 $v\mapsto(F(v))(\xi)$ from $\Hom(Y,X)$ to $F(Y)$ is bijective}. When $\xi$ satsifies this condition,
-we say that the pair $(X,\xi)$ {\em represents} the representable functor $F$, By abuse of language,
+we say that the pair $(X,\xi)$ \emph{represents} the representable functor $F$, By abuse of language,
 we also say that the object $X\in\C$ represents $F$ if there exists a $\xi\in F(X)$ such that
 $(X,\xi)$ represents $F$, in other words if $h_X$ is isomorphic to $F$.
 

@@ -35,6 +35,8 @@ with open(path + "preamble.tex", 'r') as preamble:
       continue
     if line.find("xr-hyper") >= 0:
       line = line.replace("xr-hyper", "CJKutf8")
+    if line.find("\\documentclass[oneside]") == 0:
+      line = line.replace("[oneside]{amsart}", "[openany,oneside]{amsbook}")
     if line.find("\\documentclass") == 0:
       line = line.replace("{amsart}", "[openany,oneside]{amsbook}")
     print(line, end='')

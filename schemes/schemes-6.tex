@@ -10,7 +10,9 @@ We say that a prescheme $X$ is Noetherian (\emph{resp.} locally Noetherian) if i
 \end{defn}
 
 It follows immediately from \sref{1.1.5.2} that, if $X$ is locally Noetherian, then the structure sheaf $\OO_X$ is a \emph{coherent sheaf of rings}, the question being a local one.
-Every \emph{quasi-coherent sub-$\OO_X$-module}\oldpage[I]{141} (\emph{resp.} quasi-coherent quotient $\OO_X$-module) of a \emph{coherent} $\OO_X$-module $\sh{F}$ is \emph{coherent}, as the question is once again a local one, and it suffices to apply \sref{1.1.5.1}, \sref{1.1.4.1}, and \sref{1.1.3.10}, combined with the fact that a submodule (resp. quotient module) of a module of finite type over a Noetherian ring is of finite type.
+Every \emph{quasi-coherent sub-$\OO_X$-module}
+\oldpage[I]{141}
+(\emph{resp.} quasi-coherent quotient $\OO_X$-module) of a \emph{coherent} $\OO_X$-module $\sh{F}$ is \emph{coherent}, as the question is once again a local one, and it suffices to apply \sref{1.1.5.1}, \sref{1.1.4.1}, and \sref{1.1.3.10}, combined with the fact that a submodule (resp. quotient module) of a module of finite type over a Noetherian ring is of finite type.
 In particular, every \emph{quasi-coherent sheaf of ideals} of $\OO_X$ is \emph{coherent}.
 
 If a prescheme $X$ is a finite union (resp. union) of open subsets $W_\lambda$ in such a way that the preschemes induced on the $W_\lambda$ are Noetherian (resp. locally Noetherian), it is clear that $X$ is Noetherian (resp. locally Noetherian).
@@ -23,7 +25,7 @@ The underlying space itself is then also Noetherian.
 
 \begin{proof}
 \label{proof-1.6.1.2}
-The first claim follows immediately from the definitions and \sref{1.1.1.10}[(ii)].
+The first claim follows immediately from the definitions and \sref{1.1.1.10}[ii].
 The second follows from \sref{1.1.1.6} and the fact that every space that is a finite union of Noetherian subspaces is itself Noetherian \sref[0]{0.2.2.3}.
 \end{proof}
 
@@ -42,10 +44,10 @@ The equivalence between \emph{a)} and \emph{b)} follows from \sref{1.6.1.2} ant 
 it is furthermore clear that \emph{c)} implies \emph{a)}.
 To see that \emph{a)} implies \emph{c)}, we remark that there is a finite cover $(V_i)$ of $X$ by affine open subsets such that the ring $A_i$ of the prescheme induced on $V_i$ is Noetherian.
 So let $(\fk{a}_n)$ be an increasing sequence of ideals of $A$;
-by a canonical bijective correspondence, there is a corresponding sequence $(\widetilde{a}_n)$ of sheaves of ideals in $\widetilde{A}=\OO_X$;
-to see that the sequence $(\fk{a}_n)$ is \unsure{stable}, it suffices to prove that the sequence $(\widetilde{\fk{a}}_n)$ is.
-But the restriction $\widetilde{\fk{a}}_n|V_i$ is a quasi-coherent sheaf of ideals in $\OO_X|V_i$, being the inverse image of $\widetilde{\fk{a}}_n$ under the canonical injection $V_i\to X$ \sref[0]{0.5.1.4};
-$\widetilde{\fk{a}}_n|V_i$ is thus of the form $\widetilde{\fk{a}}_{ni}$, where $\fk{a}_{ni}$ is an ideal of $A_i$ \sref{1.1.3.7}.
+by a canonical bijective correspondence, there is a corresponding sequence $(\wt{a}_n)$ of sheaves of ideals in $\wt{A}=\OO_X$;
+to see that the sequence $(\fk{a}_n)$ is \unsure{stable}, it suffices to prove that the sequence $(\wt{\fk{a}}_n)$ is.
+But the restriction $\wt{\fk{a}}_n|V_i$ is a quasi-coherent sheaf of ideals in $\OO_X|V_i$, being the inverse image of $\wt{\fk{a}}_n$ under the canonical injection $V_i\to X$ \sref[0]{0.5.1.4};
+$\wt{\fk{a}}_n|V_i$ is thus of the form $\wt{\fk{a}}_{ni}$, where $\fk{a}_{ni}$ is an ideal of $A_i$ \sref{1.1.3.7}.
 Since $A_i$ is Noetherian, the sequence $(\fk{a}_{ni})$ is stable for all $i$, whence the proposition.
 \end{proof}
 
@@ -125,14 +127,14 @@ A locally Noetherian topological space is locally connected (which implies, amon
 \label{1.6.1.10}
 Let $X$ be a locally Noetherian topological space.
 The following conditions are equivalent.
-\begin{enumerate}[label=\alph*)]
+\begin{enumerate}[label=\emph{(\alph*)}]
     \item The irreducible components of $X$ are open.
     \item The irreducible components of $X$ are exactly its connected components.
     \item The connected components of $X$ are irreducible.
     \item Two distinct irreducible components of $X$ have an empty intersection.
 \end{enumerate}
 Finally, if $X$ is a prescheme, then these conditions are also equivalent to
-\begin{enumerate}[label=\alph*)]
+\begin{enumerate}[label=\emph{(\alph*)}]
     \setcounter{enumi}{4}
     \item For every $x\in X$, $\Spec(\OO_x)$ is irreducible (or, in other words, the nilradical of $\OO_x$ is prime).
 \end{enumerate}
@@ -140,16 +142,17 @@ Finally, if $X$ is a prescheme, then these conditions are also equivalent to
 
 \begin{proof}
 \label{proof-1.6.1.10}
-It is immediate that \emph{a)} implies \emph{b)}, because an irreducible space is connected, and \emph{a)} implies that the irreducible components of $X$ are the sets that are both open and closed.
-It is trivial that \emph{b)} implies \emph{c)}; conversely, a closed set $F$ containing\oldpage[I]{143} a connected component $C$ of $X$, with $C$ distinct from $F$, cannot be irreducible, because not being connected means that $F$ is the union of two disjoint non-empty sets that are both open and closed in $F$, and thus closed in $X$;
-as a result, \emph{c)} implies \emph{b)}.
-We immediately conclude from this that \emph{c)} implies \emph{d)}, since two distinct connected components have no points in common.
+It is immediate that (a) implies (b), because an irreducible space is connected, and (a) implies that the irreducible components of $X$ are the sets that are both open and closed.
+It is trivial that (b) implies (c); conversely, a closed set $F$ containing
+\oldpage[I]{143}
+a connected component $C$ of $X$, with $C$ distinct from $F$, cannot be irreducible, because not being connected means that $F$ is the union of two disjoint nonempty sets that are both open and closed in $F$, and thus closed in $X$; as a result, (c) implies (b).
+We immediately conclude from this that (c) implies (d), since two distinct connected components have no points in common.
 
 We have not yet used the fact that $X$ is locally Noetherian.
-Suppose now that this is indeed the case, and we will show that \emph{d)} implies \emph{a)}: by \sref[0]{0.2.1.6}, we can restrict ourselves to the case where the space $X$ is Noetherian, and so has only a finite number of irreducible components.
+Suppose now that this is indeed the case, and we will show that (d) implies (a): by \sref[0]{0.2.1.6}, we can restrict ourselves to the case where the space $X$ is Noetherian, and so has only a finite number of irreducible components.
 Since they are closed and pairwise disjoint, they are open.
 
-Finally, the equivalence between \emph{d)} and \emph{e)} holds true even without the assumption that the underlying space of the prescheme $X$ is locally Noetherian.
+Finally, the equivalence between (d) and (e) holds true even without the assumption that the underlying space of the prescheme $X$ is locally Noetherian.
 We can in fact restrict ourselves to the case where $X=\Spec(A)$ is affine, by \sref[0]{0.2.1.6};
 to say that $x$ is contained in only one single irreducible component of $X$ is to say that $\fk{j}_x$ contains only one single minimal ideal of $A$ \sref{1.1.1.14}, which is equivalent to saying that $\fk{j}_x\OO_x$ contains only one single minimal ideal of $\OO_x$, whence the conclusion.
 \end{proof}
@@ -157,7 +160,7 @@ to say that $x$ is contained in only one single irreducible component of $X$ is 
 \begin{cor}[6.1.11]
 \label{1.6.1.11}
 Let $X$ be a locally Noetherian space.
-For $X$ to be irreducible, it is necessary and sufficient that $X$ be connected and non-empty, and that any two distinct irreducible components of $X$ have an empty intersection.
+For $X$ to be irreducible, it is necessary and sufficient that $X$ be connected and nonempty, and that any two distinct irreducible components of $X$ have an empty intersection.
 If $X$ is a prescheme, this latter condition is equivalent to asking that $\Spec(\OO_x)$ be irreducible for all $x\in X$.
 \end{cor}
 
@@ -165,7 +168,7 @@ If $X$ is a prescheme, this latter condition is equivalent to asking that $\Spec
 \label{proof-1.6.1.11}
 The second claim has already been shown in \sref{1.6.1.10};
 the only thing thus remaining to show is that the conditions in the first claim are sufficient.
-But by \sref{1.6.1.10}, these conditions imply that the irreducible components of $X$ are exactly its connected components, and since $X$ is connected and non-empty, it is irreducible.
+But by \sref{1.6.1.10}, these conditions imply that the irreducible components of $X$ are exactly its connected components, and since $X$ is connected and nonempty, it is irreducible.
 \end{proof}
 
 \begin{cor}[6.1.12]
@@ -199,7 +202,7 @@ We say that a prescheme is Artinian if it is affine, and given by an Artinian ri
 \begin{prop}[6.2.2]
 \label{1.6.2.2}
 Given\oldpage[I]{144} a prescheme $X$, the following conditions are equivalent:
-\begin{enumerate}[label=\alph*)]
+\begin{enumerate}[label=\emph{(\alph*)}]
     \item $X$ is an Artinian scheme;
     \item $X$ is Noetherian and its underlying space is discrete;
     \item $X$ is Noetherian and the points of its underlying space are closed \emph{(the $\mathrm{T}_1$ condition)}.
@@ -209,9 +212,9 @@ When any of the above hold, the underlying space of $X$ is finite, and the ring 
 
 \begin{proof}
 \label{proof-1.6.2.2}
-We know that \emph{a)} implies the last claim (\cite[p.~205, th.~3]{I-13}), so every prime ideal of $A$ is thus maximal and is the inverse image of a maximal ideal of one of the local components of $A$, and so the space $X$ is finite and discrete;
-\emph{a)} thus implies \emph{b)}, and \emph{b)} clearly implies \emph{c)}.
-To see that \emph{c)} implies \emph{a)}, we first show that $X$ is then finite;
+We know that (a) implies the last claim (\cite[p.~205, th.~3]{I-13}), so every prime ideal of $A$ is thus maximal and is the inverse image of a maximal ideal of one of the local components of $A$, and so the space $X$ is finite and discrete;
+(a) thus implies (b), and (b) clearly implies (c).
+To see that (c) implies (a), we first show that $X$ is then finite;
 we can indeed restrict to the case where $X$ is affine, and we know that a Noetherian ring whose prime ideals are all maximal is Artinian (\cite[p.~203]{I-13}), whence our claim.
 The underlying space $X$ is then discrete, the topological sum of a finite number of points $x_i$, and the local rings $\OO_{x_i}=A_i$ are Artinian;
 it is clear that $X$ is isomorphic to the prime spectrum affine scheme of the ring $A$ (the direct sum of the $A_i$) \sref{1.1.7.3}.
@@ -223,9 +226,9 @@ it is clear that $X$ is isomorphic to the prime spectrum affine scheme of the ri
 \begin{defn}[6.3.1]
 \label{1.6.3.1}
 We say that a morphism $f\colon X\to Y$ is of finite type if $Y$ is the union of a family $(V_\alpha)$ of affine open subsets having the following property:
-\begin{itemize}
+\begin{enumerate}
     \item[(P)] $f^{-1}(V_\alpha)$ is a finite union of affine open subsets $U_{\alpha i}$ that are such that each ring $A(U_{\alpha i})$ is an algebra of finite type over $A(V_\alpha)$.
-\end{itemize}
+\end{enumerate}
 We then say that $X$ is a prescheme of finite type over $Y$, or a $Y$-prescheme of finite type.
 \end{defn}
 
@@ -285,7 +288,7 @@ there are thus $c_i\in B'$ such that $\sum_i c_ig_i^N=1$, whence $b=\sum_ic_ig_i
 
 \begin{prop}[6.3.4]
 \label{1.6.3.4}
-\begin{enumerate}[label=\rm(\roman*)]
+\begin{enumerate}[label=\emph{(\roman*)}]
     \item Every closed immersion is of finite type.
     \item The composition of two morphisms of finite type is of finite type.
     \item If $f\colon X\to X'$ and $g\colon Y\to Y'$ are $S$-morphisms of finite type, then $f\times_S g$ is of finite type.
@@ -413,8 +416,8 @@ If we consider the diagram
     \end{tikzcd}
 \end{equation*}
 then it suffices to show that there exists a \emph{rational point over $\Omega$} in $X_{(\Omega)}$ (\sref{1.3.3.14}, \sref{1.3.4.3}, and \sref{1.3.4.4}).
-Since $f$ is surjective, $X_{(\Omega)}$ is non-empty \sref{1.3.5.10}, and since $f$ is of finite type, so too is $f_{(\Omega)}$ \sref{1.6.4.3}[(iv)];
-thus $X_{(\Omega)}$ contains a non-empty affine open subset $Z$ such that $A(Z)$ is an non-null algebra of finite type over $\Omega$.
+Since $f$ is surjective, $X_{(\Omega)}$ is nonempty \sref{1.3.5.10}, and since $f$ is of finite type, so too is $f_{(\Omega)}$ \sref{1.6.4.3}[(iv)];
+thus $X_{(\Omega)}$ contains a nonempty affine open subset $Z$ such that $A(Z)$ is an non-null algebra of finite type over $\Omega$.
 By Hilbert's zero theorem \cite{I-21}, there exists an $\Omega$-homomorphism $A(Z)\to\Omega$, and thus a section of $X_{(\Omega)}$ over $\Spec(\Omega)$, which proves the proposition.
 \end{proof}
 
@@ -455,24 +458,24 @@ the closed points of $X$ are then the rational points over $K$ \sref{1.3.4.4} an
 \label{1.6.4.4}
 Let $X$ be an algebraic prescheme over a field $K$.
 The following properties are equivalent.
-\begin{itemize}
-    \item[\emph{a)}] $X$ is Artinian.
-    \item[\emph{b)}] The underlying space of $X$ is discrete.
-    \item[\emph{c)}] The underlying space of $X$ has only a finite number of closed points.
-    \item[\emph{c')}] The underlying space of $X$ is finite.
-    \item[\emph{d)}] The points of $X$ are closed.
-    \item[\emph{e)}] $X$ is isomorphic to $\Spec(A)$, where $A$ is a $K$-algebra of finite rank.
-\end{itemize}
+\begin{enumerate}
+    \item[\emph{(a)}] $X$ is Artinian.
+    \item[\emph{(b)}] The underlying space of $X$ is discrete.
+    \item[\emph{(c)}] The underlying space of $X$ has only a finite number of closed points.
+    \item[\emph{(c')}] The underlying space of $X$ is finite.
+    \item[\emph{(d)}] The points of $X$ are closed.
+    \item[\emph{(e)}] $X$ is isomorphic to $\Spec(A)$, where $A$ is a $K$-algebra of finite rank.
+\end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-1.6.4.4}
-Since $X$ is Noetherian, it follows from \sref{1.6.2.2} that the conditions \emph{a)}, \emph{b)}, and \emph{d)} are equivalent, and imply \emph{c)} and \emph{c')};
-it is also clear that \emph{e)} implies \emph{a)}.
-It remains to see that \emph{c)} implies \emph{d)} and \emph{e)};
+Since $X$ is Noetherian, it follows from \sref{1.6.2.2} that the conditions (a), (b), and (d) are equivalent, and imply (c) and (c');
+it is also clear that (e) implies (a).
+It remains to see that (c) implies (d) and (e);
 we can restrict to the case where $X$ is affine.
 Then $A(X)$ is a $K$-algebra of finite type \sref{1.6.3.3}, and thus a Jacobson ring (\cite[p.~3-11 and 3-12]{I-1}), in which there are, by hypothesis, only a finite number of maximal ideals.
-Since a finite intersection of prime ideals can only be a prime ideal if it is equal to one of the prime ideals being intersected, every prime ideal of $A(X)$ is thus maximal, whence \emph{d)}.
+Since a finite intersection of prime ideals can only be a prime ideal if it is equal to one of the prime ideals being intersected, every prime ideal of $A(X)$ is thus maximal, whence (d).
 Further, we then know \sref{1.6.2.2} that $A(X)$ is an Artinian $K$-algebra of finite type, and so necessarily of \emph{finite rank} \cite{I-21}.
 \end{proof}
 
@@ -580,17 +583,17 @@ The morphisms which are not of finite type will show up in the following mostly 
 \label{1.6.5.1}
 Let $X$ and $Y$ be $S$-preschemes, with $Y$ of finite type over $S$;
 let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
-\begin{enumerate}[label=\rm(\roman*)]
-    \item If two $S$-morphisms $f=(\psi,\theta)$ and $f'=(\psi',\theta')$ from $X$ to $Y$ are such that $\psi(x)=\psi'(x)=y$, and the (local) $\OO_s$-homomorphisms $\theta_x^\#$ and $\theta'^{\#}_x$ from $\OO_y$ to $\OO_x$ are identical, then $f$ and $f'$ agree on an open neighbourhood of $x$.
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item If two $S$-morphisms $f=(\psi,\theta)$ and $f'=(\psi',\theta')$ from $X$ to $Y$ are such that $\psi(x)=\psi'(x)=y$, and the (local) $\OO_s$-homomorphisms $\theta_x^\sharp$ and ${\theta'}_x^\sharp$ from $\OO_y$ to $\OO_x$ are identical, then $f$ and $f'$ agree on an open neighbourhood of $x$.
     \item Suppose further that $S$ is locally Noetherian.
-        For every local $\OO_s$-homomorphism $\vphi\colon\OO_y\to\OO_x$, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $f=(\psi,\theta)$ from $U$ to $Y$ such that $\psi(x)=y$ and $\theta_x^\#=\vphi$.
+        For every local $\OO_s$-homomorphism $\vphi\colon\OO_y\to\OO_x$, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $f=(\psi,\theta)$ from $U$ to $Y$ such that $\psi(x)=y$ and $\theta_x^\sharp=\vphi$.
 \end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-1.6.5.1}
-\begin{enumerate}[label=\rm(\roman*)]
-    \item Since the question is local on $S$, $X$, and $Y$, we can assume that $S$, $X$, and $Y$ are affine, given by rings $A$, $B$, and $C$ (respectively), and with $f$ and $f'$ of the form $({}^a\vphi,\widetilde{\vphi})$ and $({}^a\vphi',\widetilde{\vphi}')$ (respectively), where $\vphi$ and $\vphi'$ are $A$-homomorphisms from $C$ to $B$ such that $\vphi^{-1}(\fk{j}_x)=\vphi'^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphisms $\vphi_x$ and $\vphi'_x$ from $C_y$ to $B_x$, induced by $\vphi$ and $\vphi'$, are identical;
+\begin{enumerate}[label=(\roman*)]
+    \item Since the question is local on $S$, $X$, and $Y$, we can assume that $S$, $X$, and $Y$ are affine, given by rings $A$, $B$, and $C$ (respectively), and with $f$ and $f'$ of the form $({}^a\vphi,\wt{\vphi})$ and $({}^a\vphi',\wt{\vphi}')$ (respectively), where $\vphi$ and $\vphi'$ are $A$-homomorphisms from $C$ to $B$ such that $\vphi^{-1}(\fk{j}_x)=\vphi'^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphisms $\vphi_x$ and $\vphi'_x$ from $C_y$ to $B_x$, induced by $\vphi$ and $\vphi'$, are identical;
         we can further suppose that $C$ is an $A$-algebra \emph{of finite type}.
         Let $c_i$ ($1\leqslant i\leqslant n$) be the generators of the $A$-algebra $C$, and set $b_i=\vphi(c_i)$ and $b'_i=\vphi'(c_i)$;
         by hypothesis, we have $b_i/1=b'_i/1$ in the ring of fractions $B_x$ ($1\leqslant i\leqslant n$).
@@ -632,13 +635,13 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
         \end{equation*}
         is commutative;
         we thus have $\vphi=\gamma_x$, and since $\vphi$ is a local homomorphism, $^a\gamma(x)=y$;
-        $f=({}^a\gamma,\widetilde{\gamma})$ is thus an $S$-morphism from the neighbourhood $D(hg)$ of $x$ to $Y$ as claimed in the proposition.
+        $f=({}^a\gamma,\wt{\gamma})$ is thus an $S$-morphism from the neighbourhood $D(hg)$ of $x$ to $Y$ as claimed in the proposition.
 \end{enumerate}
 \end{proof}
 
 \begin{cor}[6.5.2]
 \label{1.6.5.2}
-Under the hypotheses of \sref{1.6.5.1}[(ii)], if, further, $X$ is of finite type over $S$, then we can assume that the morphism $f$ is of finite type.
+Under the hypotheses of \sref{1.6.5.1}[ii], if, further, $X$ is of finite type over $S$, then we can assume that the morphism $f$ is of finite type.
 \end{cor}
 
 \begin{proof}
@@ -648,8 +651,8 @@ This follows from \sref{1.6.3.6}.
 
 \begin{cor}[6.5.3]
 \label{1.6.5.3}
-Suppose that the hypotheses of \sref{1.6.5.1}[(ii)], and suppose further that $Y$ is integral, and that $\vphi$ is an injective homomorphism.
-Then we can assume that $f=({}^a\gamma,\widetilde{\gamma})$, where $\gamma$ is injective.
+Suppose that the hypotheses of \sref{1.6.5.1}[ii], and suppose further that $Y$ is integral, and that $\vphi$ is an injective homomorphism.
+Then we can assume that $f=({}^a\gamma,\wt{\gamma})$, where $\gamma$ is injective.
 \end{cor}
 
 \begin{proof}
@@ -661,19 +664,20 @@ it then follows from the diagram in \hyperref[1.6.5.1]{(6.5.1.1)} that $\gamma$ 
 \begin{prop}[6.5.4]
 \label{1.6.5.4}
 Let $f=(\psi,\theta)\colon X\to Y$ be a morphism of finite type, $x$ a point of $X$, and $y=\psi(x)$.
-\begin{enumerate}[label=\rm(\roman*)]
-    \item For $f$ to be a local immersion at the point $x$ \sref{1.4.5.1}, it is necessary and sufficient that $\theta_x^\#\colon\OO_y\to\OO_x$ be surjective.
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item For $f$ to be a local immersion at the point $x$ \sref{1.4.5.1}, it is necessary and sufficient that $\theta_x^\sharp\colon\OO_y\to\OO_x$ be surjective.
     \item Assume further that $Y$ is locally Noetherian.
-        For $f$ to be a local isomorphism at the point $x$ \sref{1.4.5.2}, it is necessary and sufficient that $\theta_x^\#$ be an isomorphism.
+        For $f$ to be a local isomorphism at the point $x$ \sref{1.4.5.2}, it is necessary and sufficient that $\theta_x^\sharp$ be an isomorphism.
 \end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-1.6.5.4}
-\begin{itemize}
+\medskip\noindent
+\begin{enumerate}
     \item[(ii)] By \sref{1.6.5.1}, there exists an open neighbourhood $V$ of $Y$ and a morphism $g\colon V\to X$ such that $g\circ f$ (resp. $f\circ g$) is defined and agrees with the identity on a neighbourhood of $x$ (resp. $y$), whence we can easily see that $f$ is a local isomorphism.
     \item[(i)] Since the question is local on $X$ and $Y$, we can assume that $X$ and $Y$ are affine, given by rings $A$ and $B$ (respectively);
-    we have $f=({}^a\vphi,\widetilde{\vphi})$, where $\vphi$ is a homomorphism of rings $B\to A$ that makes $A$ a $B$-algebra of finite type;
+    we have $f=({}^a\vphi,\wt{\vphi})$, where $\vphi$ is a homomorphism of rings $B\to A$ that makes $A$ a $B$-algebra of finite type;
     we have $\vphi^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphism $\vphi_x\colon B_y\to A_x$ induced by $\vphi$ is \emph{surjective}.
     Let $(t_i)$ ($1\leqslant i\leqslant n$) be a system of generators of the $B$-algebra $A$;
     the hypothesis on $\vphi_x$ implies that there exist $b_i\in B$ and some $c\in B\setminus\fk{j}_x$ such that, in the ring of fractions $A_x$, we have $t_i/1=\vphi(b_i)/\vphi(c)$ for $1\leqslant i\leqslant n$.
@@ -692,25 +696,25 @@ Let $f=(\psi,\theta)\colon X\to Y$ be a morphism of finite type, $x$ a point of 
     We will show that $\gamma$ is \emph{surjective};
     it suffices to show that the image of $B_h$ in $A_g$ contains the $t_i/1$ and $(g/1)^{-1}$.
     But we have $(g/1)^{-1}=(\vphi(c)/1)^{m-1}(\vphi(d)/1)^{-1}=\gamma(c^m/h)$, and $a/1=\gamma(d^{m+1}/h^m)$, so $(a\vphi(b_i))/1=\gamma(b_id^{m+1}/h^m)$, and since $t_i/1=(a\vphi(b_i)/1)(g/1)^{-1}$, our claim is proved.
-    The choice of $h$ implies that $\psi(D(g))\subset D(h)$, and we also know that the restriction of $f$ to $D(g)$ is equal to $({}^a\gamma,\widetilde{\gamma})$;
+    The choice of $h$ implies that $\psi(D(g))\subset D(h)$, and we also know that the restriction of $f$ to $D(g)$ is equal to $({}^a\gamma,\wt{\gamma})$;
     since $\gamma$ is surjective, this restriction is a closed immersion of $D(g)$ into $D(h)$ \sref{1.4.2.3}.
-\end{itemize}
+\end{enumerate}
 \end{proof}
 
 \begin{cor}[6.5.5]
 \label{1.6.5.5}
 Let $f=(\psi,\theta)\colon X\to Y$ be a morphism of finite type.
 Assume that $X$ is irreducible, and denote by $x$ its generic point, and let $y=\psi(x)$.
-\begin{enumerate}[label=\rm(\roman*)]
-    \item For $f$ to be a local immersion at any point of $X$, it is necessary and sufficient that $\theta_x^\#\colon\OO_y\to\OO_x$ be surjective.
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item For $f$ to be a local immersion at any point of $X$, it is necessary and sufficient that $\theta_x^\sharp\colon\OO_y\to\OO_x$ be surjective.
     \item Assume further that $Y$ is irreducible and locally Noetherian.
-    For $f$ to be a local isomorphism at any point of $X$, it is necessary and sufficient that $y$ be the generic point of $Y$ \emph{(or, equivalently \sref[0]{0.2.1.4}, that $f$ be a \emph{dominant} morphism)} and that $\theta_x^\#$ be an isomorphism \emph{(in other words, that $f$ be \emph{birational} \sref{1.2.2.9})}.
+    For $f$ to be a local isomorphism at any point of $X$, it is necessary and sufficient that $y$ be the generic point of $Y$ \emph{(or, equivalently \sref[0]{0.2.1.4}, that $f$ be a \emph{dominant} morphism)} and that $\theta_x^\sharp$ be an isomorphism \emph{(in other words, that $f$ be \emph{birational} \sref{1.2.2.9})}.
 \end{enumerate}
 \end{cor}
 
 \begin{proof}
 \label{proof-1.6.5.5}
-It is clear that (i) follows from \sref{1.6.5.4}[(i)], taking into account the fact that every non-empty open subset of $X$ contains $x$;
+It is clear that (i) follows from \sref{1.6.5.4}[(i)], taking into account the fact that every nonempty open subset of $X$ contains $x$;
 similarly, (ii) follows from \sref{1.6.5.4}[(ii)].
 \end{proof}
 
