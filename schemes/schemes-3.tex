@@ -758,7 +758,7 @@ First note that the morphisms $\Spec(\kres(x))\to S$ and $\Spec(\kres(y))\to S$ 
   P=\Spec(\kres(x))\times_S\Spec(\kres(y))=\Spec(\kres(x))\times_{\Spec(\kres(s))}\Spec(\kres(y))=\Spec(\kres(x)\otimes_{\kres(s)}\kres(y)).
 \]
 We will define two maps, $\alpha:P_0\to E$ and $\beta:E\to P_0$, inverse to one another (where $P_0$ denotes the underlying set of the prescheme $P$).
-If $i\colon\Spec(\kres(x))\to X$ and $j\colon\Spec(\kres(y))\to Y$ are the canonical morphisms \sref{1.2.4.5}, we take for $\alpha$ the map of underlying spaces corresponding to the morphism $i\times_S j$.
+If $i:\Spec(\kres(x))\to X$ and $j:\Spec(\kres(y))\to Y$ are the canonical morphisms \sref{1.2.4.5}, we take for $\alpha$ the map of underlying spaces corresponding to the morphism $i\times_S j$.
 On the other hand, every $z\in E$ defines by hypothesis two $\kres(s)$-monomorphisms, $\kres(x)\to\kres(z)$ and $\kres(y)\to\kres(z)$, and so a $\kres(s)$-monomorphism $\kres(x)\otimes_{\kres(s)}\kres(y)\to\kres(z)$ and so a morphism $\Spec(\kres(z))\to P$; $\beta(z)$ will be the image of $z$ in $P_0$ under this morphism.
 The verification of the fact that $\alpha\circ\beta$ and $\beta\circ\alpha$ are the identity maps follows from \sref{1.2.4.5} and the definition of the product \sref{1.3.2.1}.
 Finally, we know that $P_0$ is in bijective correspondence with the set of \unsure{types of extensions composed of $\kres(x)$ and $\kres(y)$} (Bourbaki, \emph{Alg.}, chap.~VIII, §8, prop.~1).
@@ -877,13 +877,13 @@ with the map $(X\times_S Y)(K)\to(X'\times_S Y')(K)$ corresponding to $f\times_S
 
 \begin{prop}[3.5.8]
 \label{1.3.5.8}
-For a morphism $f=(\psi,\theta):X\to Y$ to be radical, it is necessary and sufficient that $\psi$ be injective and that, for every $x\in X$, the monomorphism $\theta^x\colon\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a radical extension of $\kres(\psi(x))$.
+For a morphism $f=(\psi,\theta):X\to Y$ to be radical, it is necessary and sufficient that $\psi$ be injective and that, for every $x\in X$, the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a radical extension of $\kres(\psi(x))$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.5.8}
 We suppose that $f$ is radical and first show that the relation $\psi(x_1)=\psi(x_2)=y$ leads necessarily to $x_1=x_2$.
-In fact, there exists a field $K$, an extension of $\kres(y)$, and $\kres(y)$-monomorphisms $\kres(x_1)\to K$ and $\kres(x_2)\to K$ (Bourbaki, \emph{Alg.}, chap.~V, §4, prop.~2); the corresponding morphisms $u_1\colon\Spec(K)\to X$ and $u_2\colon\Spec(K)\to X$ are then such that $f\circ u_1=f\circ u_2$, and so $u_1=u_2$ by hypothesis, and this implies, in particular, that $x_1=x_2$.
+In fact, there exists a field $K$, an extension of $\kres(y)$, and $\kres(y)$-monomorphisms $\kres(x_1)\to K$ and $\kres(x_2)\to K$ (Bourbaki, \emph{Alg.}, chap.~V, §4, prop.~2); the corresponding morphisms $u_1:\Spec(K)\to X$ and $u_2:\Spec(K)\to X$ are then such that $f\circ u_1=f\circ u_2$, and so $u_1=u_2$ by hypothesis, and this implies, in particular, that $x_1=x_2$.
 We now consider $\kres(x)$ as the extension of $\kres(\psi(x))$ by means of $\theta^x$: if $\kres(x)$ is not a radical algebraically-closed extension, then there exist two distinct $\kres(\psi(x))$-monomorphisms from $\kres(x)$ to an algebraically-closed extension $K$ of $\kres(\psi(x))$ and the two corresponding morphisms $\Spec(K)\to X$ would contradict the hypothesis.
 Conversely, taking \sref{1.2.4.6} into account, it is immediate that the conditions stated are sufficient for $f$ to be radical.
 \end{proof}
@@ -922,7 +922,7 @@ The first claim follows from \sref{1.3.5.8} and \sref{1.3.4.8}; the second, from
 We say that a morphism $f=(\psi,\theta)$ of preschemes is \emph{injective} if the map $\psi$ is injective.
 For a morphism $f=(\psi,\theta):X\to Y$ to be radical, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}:X_{(Y')}\to Y'$ be injective (which justifies the terminology of a \emph{universally injective} morphism).
 In fact, the condition is necessary by \sref{1.3.5.7}[(ii)] and \sref{1.3.5.8}.
-Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x\colon\kres(\psi(x))\to\kres(x)$ were not radical, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \sref{1.3.5.8}.
+Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ were not radical, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \sref{1.3.5.8}.
 But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X_{(Y')}$ \sref{1.3.3.14}, which contradicts the hypothesis that $f_{(Y')}$ is injective.
 \end{rmk}
 
