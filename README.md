@@ -11,8 +11,8 @@ For compiled PDFs, go to the [releases page].
 
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
-- [x] Introduction (proofread by @thosgood)
-- [ ] Preliminaries
+- [x] Introduction (EGA I) (proofread by @thosgood)
+- [ ] Preliminaries (EGA 0)
     + [x] 1. Rings of fractions (@ryankeleti) (proofread by @thosgood)
     + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti) (proofread by @thosgood)
     + [x] 3. Supplement on sheaves (@ryankeleti)
@@ -36,7 +36,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 21. Differentials in rings of characteristic p
     + [ ] 22. Differential criteria for smoothness and regularity
     + [ ] 23. Japanese rings
-- [ ] The language of schemes
+- [ ] The language of schemes (EGA I)
     + [x] 0. Summary
     + [x] 1. Affine schemes (@ryankeleti)
     + [x] 2. Preschemes and their morphisms (@thosgood)
@@ -48,4 +48,5 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 8. Chevalley schemes (@thosgood)
     + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
     + [ ] 10. Formal schemes (@thosgood, @ryankeleti)
+- [ ] Elementary global study of some classes of morphisms (EGA II)
 
