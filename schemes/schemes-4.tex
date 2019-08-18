@@ -250,7 +250,7 @@ As $p=({}^a u,\wt{u})$ and $q=({}^a v,\wt{v})$, this kernel corresponds, in the 
 If $f:X\to Y$ is an immersion (resp. an open immersion, a closed immersion) and an $S$-morphism, then $f_{(S')}$ is an immersion (resp. an open immersion, a closed immersion) for every extension $S'\to S$ of the base prescheme.
 \end{cor}
 
-\subsection{Inverse image of a subprescheme}
+\subsection{Inverse images of a subprescheme}
 \label{subsection-inverse-image-of-subprescheme}
 
 \begin{prop}[4.4.1]
@@ -288,7 +288,7 @@ This follows from the existence of the canonical isomorphism $X\times_Y(Y\times_
 \begin{cor}[4.4.3]
 \label{1.4.4.3}
 Let $X'$ and $X''$ be two subpreschemes of $X$, $j':X'\to X$ and $j'':X''\to X$ their injection morphisms; then ${j'}^{-1}(X'')$ and ${j''}^{-1}(X')$ are both equal to the greatest lower bound $\inf(X',X'')$ of $X'$ and $X''$ for the ordering $\leqslant$ on subpreschemes, and is canonically isomorphic to $X'\times_X X''$.
-\end{prop}
+\end{cor}
 
 \begin{proof}
 \label{proof-1.4.4.3}
@@ -327,4 +327,58 @@ It suffices to apply Proposition \sref{1.4.4.1} to $i$, taking into account Prop
 
 \subsection{Local immersions and local isomorphisms}
 \label{subsection-local-immersions-isomorphisms}
+
+\begin{defn}[4.5.1]
+\label{1.4.5.1}
+Let $f:X\to Y$ be a morphism of preschemes.
+We say that $f$ is a local immersion at a point $x\in X$ if there exists an open neighborhood $U$ of $x$ in $X$ and an open neighborhood $V$ of $f(x)$ in $Y$ such that the restriction of $f$ to the induced prescheme $U$ is a closed immersion of $U$ into the induced prescheme $V$.
+We say that $f$ is a local immersion if $f$ is a local immersion for each point of $X$.
+\end{defn}
+
+\begin{defn}[4.5.2]
+\label{1.4.5.2}
+We say that a morphism $f:X\to Y$ is a local isomorphism at
+\oldpage[I]{127}
+a point $x\in X$ if there exists an open neighborhood $U$ of $x$ in $X$ such that the restriction of $f$ to the induced prescheme $U$ is an open immersion of $U$ into $Y$.
+We say that $f$ is a local isomorphism if $f$ is a local isomorphism for each point of $X$.
+\end{defn}
+
+\begin{env}[4.5.3]
+\label{1.4.5.3}
+An immersion (resp. a closed immersion) $f:X\to Y$ can be characterized as a local immersion such that $f$ is a homeomorphism from the underlying space of $X$ to a subset (resp. a closed subset) of $Y$.
+An open immersion $f$ can be characterized as an \emph{injective} local isomorphism.
+\end{env}
+
+\begin{prop}[4.5.4]
+\label{1.4.5.4}
+Let $X$ be an irreducible prescheme, $f:X\to Y$ a dominant injective morphism.
+If $f$ is a local immersion, then $f$ is an immersion and $f(X)$ is open in $Y$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.4.5.4}
+Let $x\in X$, and let $U$ be an open neighborhood of $x$, $V$ an open neighborhood of $f(x)$ in $Y$ such that the restriction of $f$ to $U$ is a closed immersion into $V$; as $U$ is dense in $X$, $f(U)$ is dense in $Y$ by hypothesis, so $f(U)=V$ and $f$ is a homeomorphism from $U$ to $V$; the hypothesis that $f$ is injective implies that $f^{-1}(V)=U$, hence the proposition.
+\end{proof}
+
+\begin{prop}[4.5.5]
+\label{1.4.5.5}
+\medskip\noindent
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item The composition of two local immersions (resp. of two local isomorphisms) is a local immersion (resp. a local isomorphism).
+  \item Let $f:X\to X'$ and $g:Y\to Y'$ be two $S$-morphisms.
+    If $f$ and $g$ are local immersions (resp. local isomorphisms), then so is $f\times_S g$.
+  \item If an $S$-morphism $f$ is a local immersion (resp. a local isomorphism), then so is $f_{(S')}$ for every extension $S'\to S$ of the base prescheme.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.4.5.5}
+According to \sref{1.3.5.1}, it suffices to prove (i) and (ii).
+
+(i) follows immediately from the transitivity of closed (resp. open) immersions \sref{1.4.2.4} and from the fact that if $f$ is a homeomorphism from $X$ to a closed subset of $Y$, then for every open $U\subset X$, $f(U)$ is open in $f(X)$, so there exists an open subset $V$ of $Y$ such that $f(U)=V\cap f(X)$, and as a result $f(U)$ is closed in $V$.
+
+To prove (ii), let $p$ and $q$ be the projections from $X\times_X Y$, $p'$ and $q'$ the projections from $X'\times_S Y'$.
+There exists by hypothesis open neighborhoods $U$, $U'$, $V$, $V'$ of $x=p(z)$, $x'=p'(z')$, $y=q(z)$, $y'=q'(z')$ respectively, such that the restrictions of $f$ and $g$ to $U$ and $V$ respectively are closed (resp. open) immersions into $U'$ and $V'$ respectively.
+As the underlying space of $U\times_S V$ and that of $U'\times_S V'$ identify with the open neighborhoods $p^{-1}(U)\cap q^{-1}(V)$ and ${p'}^{-1}(U')\cap{q'}^{-1}(V')$ of $z$ and $z'$ respectively \sref{1.3.2.7}, the proposition follows from Proposition \sref{1.4.3.1}.
+\end{proof}
 
