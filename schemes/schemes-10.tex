@@ -172,3 +172,70 @@ For every $f\in A$, $\Gamma(\fk{D}(f),\fk{J}^\Delta)$ is the projective limit of
 \]
 \end{env}
 
+\begin{env}[10.3.2]
+\label{1.10.3.2}
+\oldpage[I]{184}
+With the notations of \sref{1.10.3.1}, for all $f\in A$, the canonical map from $A_{\{f\}}=\Gamma(\fk{D}(f),\OO_\fk{X})$ to $\Gamma(\fk{D}(f),(\wt{A}/\wt{\fk{J}})|\fk{X})=S_f^{-1}A/S_f^{-1}\fk{J}$ is \emph{surjective} and has for its kernel $\Gamma(\fk{D}(f),\fk{J}^\Delta)=\fk{J}_{\{f\}}$ \sref[0]{0.7.6.9}; these maps thus define a \emph{surjective} continuous homomorphism, said to be \emph{canonical}, from the sheaf of topological rings $\OO_\fk{X}$ to the sheaf of discrete rings $(\wt{A}/\wt{\fk{J}})|\fk{X}$, whose kernel is $\fk{J}^\Delta$; this homomorphism is none other than $\wt{\vphi}$ \sref{1.10.2.1}, where $\vphi$ is the continuous homomorphism $A\to A/\fk{J}$; the morphism $({}^a\vphi,\wt{\vphi}):\Spec(A/\fk{J})\to\fk{X}$ of formal affine schemes (where ${}^a\vphi$ is the identity homeomorphism from $\fk{X}$ to itself) is also called \emph{canonical}.
+We thus have, according to the above, a \emph{canonical isomorphism}
+\[
+  \OO_\fk{X}/\fk{J}^\Delta\isoto(\wt{A}/\wt{\fk{J}})|\fk{X}.
+  \tag{10.3.2.1}
+\]
+
+It is clear (since $\Gamma(\fk{X},\fk{J}^\Delta)=\fk{J}$) that the map $\fk{J}\to\fk{J}^\Delta$ is \emph{strictly increasing}; according to the above, for $\fk{J}\subset\fk{J}'$, the sheaf ${\fk{J}'}^\Delta/\fk{J}^\Delta$ is canonically isomorphic to $\wt{\fk{J}'}/\wt{\fk{J}}=(\fk{J}'/\fk{J})^\sim$.
+\end{env}
+
+\begin{env}[10.3.3]
+\label{1.10.3.3}
+The hypotheses and notations being the same as those of \sref{1.10.3.1}, we say that a sheaf of ideals $\sh{J}$ of $\OO_\fk{X}$ is a \emph{sheaf of ideals of definition} for $\fk{X}$ (or an \emph{ideal sheaf of definition} for $\fk{X}$) if, for all $x\in\fk{X}$, there exists an open neighborhood of $x$ of the form $\fk{D}(f)$, where $f\in A$, such that $\sh{J}|\fk{D}(f)$ is of the form $\fk{H}^\Delta$, where $\fk{H}$ is an ideal of definition for $A_{\{f\}}$.
+\end{env}
+
+\begin{prop}[10.3.4]
+\label{1.10.3.4}
+For all $f\in A$, each sheaf of ideals of definition for $\fk{X}$ induces a sheaf of ideals of definition for $\fk{D}(f)$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.3.4}
+This follows from (10.3.1.1).
+\end{proof}
+
+\begin{prop}[10.3.5]
+\label{1.10.3.5}
+If $A$ is an admissible ring, then every sheaf of ideals of definition for $\fk{X}=\Spf(A)$ is of the form $\fk{J}^\Delta$, where $\fk{J}$ is an ideal of definition for $A$, uniquely determined.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.3.5}
+Let $\sh{J}$ be a sheaf of ideals of definition of $\fk{X}$; by hypothesis, and since $\fk{X}$ is quasi-compact, there is a finite number of elements $f_i\in A$ such that the $\fk{D}(f_i)$ cover $\fk{X}$ and that $\sh{J}|\fk{D}(f_i)=\fk{H}_i^\Delta$, where $\fk{H}_i$ is an ideal of definition for $A_{\{f_i\}}$.
+For each $i$, there exists an open ideal $\fk{K}_i$ of $A$ such that $(\fk{K}_i)_{\{f_i\}}=\fk{H}_i$ \sref[0]{0.7.6.9}; let $\fk{K}$ be an ideal of definition for $A$ containing all the $\fk{K}_i$.
+The canonical image of $\sh{J}/\fk{K}^\Delta$ in the structure sheaf $(A/\fk{K})^\sim$ of $\Spec(A/\fk{K})$ \sref{1.10.3.2} is thus such that its restriction to $\fk{D}(f_i)$ is equal to its restriction to $(\fk{K}_i/\fk{K})^\sim$;
+we conclude that this canonical image is a \emph{quasi-coherent} sheaf on $\Spec(A/\fk{K})$, so it is of the form $(\fk{J}/\fk{K})^\sim$, where $\fk{J}$ is an ideal of definition for $A$ containing $\fk{K}$ \sref{1.1.4.1} hence $\sh{J}=\fk{J}^\Delta$ \sref{1.10.3.2};
+in addition, as for each $i$ there exists an integer $n_i$ such that $\fk{H}_i^{n_i}\subset\fk{K}_{\{f_i\}}$, we will have, by setting $n$ to be the largest of the $n_i$, $(\sh{J}/\fk{K}^\Delta)^n=0$, and as a result \sref{1.10.3.2} $((\fk{J}/\fk{K})^\sim)^n=0$, so finally $(\fk{J}/\fk{K})^n=0$ \sref{1.1.3.13}, which prove that $\fk{J}$ is an ideal of definition for $A$ \sref[0]{0.7.1.4}.
+\end{proof}
+
+\begin{prop}[10.3.6]
+\label{1.10.3.6}
+Let $A$ be an adic ring, $\fk{J}$ an ideal of definition for $A$ such that $\fk{J}/\fk{J}^2$ is an $(A/\fk{J})$-module of finite type. For any integer $n>0$, we then have $(\fk{J}^\Delta)^n=(\fk{J}^n)^\Delta$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.3.6}
+For all $f\in A$, we have (since $\fk{J}^n$ is an open ideal)
+\[
+  (\Gamma(\fk{D}(f),\fk{J}^\Delta))^n=(\fk{J}_{\{f\}})^n=(\fk{J}^n)_{\{f\}}=\Gamma(\fk{D}(f^n),(\fk{J}^n)^\Delta)
+\]
+\oldpage[I]{185}
+according to (10.3.1.1) and \sref[0]{0.7.6.12}.
+As $(\fk{J}^\Delta)^n$ is associated to the presheaf $U\mapsto(\Gamma(U,\fk{J}^\Delta))^n$ \sref[0]{0.4.1.6}, the result follows, since the $\fk{D}(f)$ form a basis for the topology of $\fk{X}$.
+\end{proof}
+
+\begin{env}[10.3.7]
+\label{1.10.3.7}
+We say that a family $(\sh{J}_\lambda)$ of sheaves of ideals of definition for $\fk{X}$ is a \emph{fundamental system of sheaves of ideals of definition} if each sheaf of ideals of definition for $\fk{X}$ contains one of the $\sh{J}_\lambda$; as $\sh{J}_\lambda=\fk{J}_\lambda^\Delta$, it is equivalent to say that the $\fk{J}_\lambda$ for a \emph{fundamental system of neighborhoods of $0$} in $A$.
+Let $(f_\alpha)$ be a family of elements of $A$ such that the $\fk{D}(f_\alpha)$ cover $\fk{X}$.
+If $(\sh{J}_\lambda)$ is a filtered decreasing family of sheaves of ideals of $\OO_\fk{X}$ such that for each $\alpha$, the family $(\sh{J}_\lambda|\fk{D}(f_\alpha))$ is a fundamental system of sheaves of ideals of definition for $\fk{D}(f_\alpha)$, then $(\sh{J}_\lambda)$ is a fundamental system of sheaves of ideals of definition for $\fk{X}$.
+Indeed, for each sheaf of ideals of definition $\sh{J}$ for $\fk{X}$, there is a finite cover of $\fk{X}$ by $\fk{D}(f_i)$ such that, for each $i$, $\sh{J}_{\lambda_i}|\fk{D}(f_i)$ is a sheaf of ideals of definition for $\fk{D}(f_i)$ contained in $\sh{J}|\fk{D}(f_i)$.
+If $\mu$ is an index such that $\sh{J}_\mu\subset\sh{J}_{\lambda_i}$ for all $i$, then it follows from \sref{1.10.3.3} that $\sh{J}_\mu$ is a sheaf of ideals of definition for $\fk{X}$, evidently contained in $\sh{J}$, hence our assertion.
+\end{env}
+
