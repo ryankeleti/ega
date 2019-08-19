@@ -335,7 +335,7 @@ If $\sh{J}$ is a sheaf of ideals of definition for $\fk{X}$, then $\sh{T}$ is th
 \begin{proof}
 \label{proof-1.10.5.4}
 Suppose first that $\fk{X}=\Spf(A)$, where $A$ is an adic Noetherian ring.
-The existence and the properties of $\sh{T}$ follow immediately from Propositions \sref{1.10.3.4} and \sref{1.5.1.1}, taking into account the existence and the properties of the largest ideal of definition for $A$ (\sref[0]{0.7.1.6} and \sref[0]{0.7.1.7}).
+The existence and the properties of $\sh{T}$ follow immediately from Propositions \sref{1.10.3.5} and \sref{1.5.1.1}, taking into account the existence and the properties of the largest ideal of definition for $A$ (\sref[0]{0.7.1.6} and \sref[0]{0.7.1.7}).
 
 To prove the existence and the properties of $\sh{T}$ in the general case, it suffices to show that if $U\supset V$ are two Noetherian formal affine open subsets of $X$, then the largest sheaf of ideals of definition $\sh{T}_U$ for $U$ induces the largest sheaf of ideals of definition $\sh{T}_V$ for $V$; but as $(V,(\OO_\fk{X}|V)/(\sh{T}_U|V))$ is reduced, this follows from the above.
 \end{proof}
@@ -407,9 +407,47 @@ $f_{\mu\lambda}:(\fk{X},\OO_\fk{X}/\sh{J}_\lambda)\to(\fk{X},\OO_\fk{X}/\sh{J}_\
 The preschemes $X_\lambda=(\fk{X},\OO_\fk{X}/\sh{J}_\lambda)$ and the morphisms $f_{\mu\lambda}$ thus form (according to \sref{1.10.4.8}) a \emph{inductive system} in the category of formal preschemes.
 \end{env}
 
+\begin{prop}[10.6.2]
+\label{1.10.6.2}
+With the notations of \sref{1.10.6.1}, the formal prescheme $\fk{X}$ and the morphisms $f_\lambda$ form an inductive limit (T, I, 1.8) of the system $(X_\lambda,f_{\mu\lambda})$ in the category of formal preschemes.
+\end{prop}
 
+\begin{proof}
+\label{proof-1.10.6.2}
+Let $\fk{Y}$ be a formal prescheme, and for each index $\lambda$, let
+\[
+  g_\lambda=(\psi_\lambda,\theta_\lambda):X_\lambda\longrightarrow\fk{Y}
+\]
+be a morphism such that we have $g_\lambda=g_\mu\circ f_{\mu\lambda}$ for $\sh{J}_\mu\subset\sh{J}_\lambda$.
+This latter condition and the definition of the $X_\lambda$ imply first that the $\psi_\lambda$ are identical to a continuous map $\psi:\fk{X}\to\fk{Y}$ of the underlying spaces; in addition, the homomorphism $\theta_\lambda^\sharp:\psi^*(\OO_\fk{Y})\to\OO_{X_i}=\OO_\fk{X}/\sh{J}_\lambda$ form a \emph{projective system} of homomorphisms of sheaves of rings.
+By passing to the projective limit, we thus induce a homomorphism $\omega:\psi^*(\OO_\fk{Y})\to\varprojlim\OO_\fk{X}/\sh{J}_\lambda=\OO_\fk{X}$, and it is clear that the morphism $g=(\psi,\omega^\flat)$ of \emph{ringed spaces} is the \emph{unique} morphism making the diagrams
+\[
+  \xymatrix{
+    X_\lambda\ar[rr]^{g_\lambda}\ar[rd]_{f_\lambda} & &
+    \fk{Y}\\
+    & \fk{X}\ar[ru]_g
+  }
+  \tag{10.6.2.1}
+\]
+commutative.
+It remains to prove that $g$ is a morphism of \emph{formal preschemes}; the question is local on $\fk{X}$ and $\fk{Y}$, so we can assume $\fk{X}=\Spf(A)$ and $\fk{Y}=\Spf(B)$, $A$ and $B$ admissible rings, with $\sh{J}_\lambda=\fk{J}_\lambda^\Delta$, where $(\fk{J}_\lambda)$ is a fundamental system of ideal of definition for $A$ \sref{1.10.3.5}; as $A=\varprojlim A/\fk{J}_\lambda$, the existence of a morphism $g$ of formal affine schemes making the diagrams (10.6.2.1) commutative then follows from the bijective correspondence \sref{1.10.2.2} between morphisms of formal affine schemes and continuous ring homomorphisms, and from the definition of the projective limit.
+But the uniqueness of $g$ as a morphism of ringed spaces shows that it coincides with the morphism in the beginning of the proof.
+\end{proof}
 
+The following proposition establishes, under certain additional conditions, the existence of the inductive limit of a given inductive system of (usual) preschemes in the category of formal preschemes:
+\begin{prop}[10.6.3]
+\label{1.10.6.3}
+Let $\fk{X}$ be a topological space, $(\OO_i,u_{ji})$ a projective system of sheaves of rings on $\fk{X}$, with $\bb{N}$ for its set of indices.
+Let $\sh{J}_i$ be the kernel of $u_{0i}:\OO_i\to\OO_0$.
+Suppose that:
+\begin{enumerate}[label=\emph{(\alph*)}]
+  \item The ringed space $(\fk{X},\OO_i)$ is a prescheme $X_i$.
+  \item For all $x\in\fk{X}$ and all $i$, there exists an open neighborhood $U_i$ of $x$ in $\fk{X}$ such that the restriction $\sh{J}_i|U_i$ is nilpotent.
+  \item The homomorphisms $u_{ji}$ are surjective.
+\end{enumerate}
 
-
-
+\oldpage[I]{190}
+Let $\OO_\fk{X}$ be the sheaf of topological rings formed as the projective limit of the sheaves of pseudo-discrete rings $\OO_i$, and let $u_i:\OO_\fk{X}\to\OO_i$ be the canonica homomorphism.
+Then the topologically ringed space $(\fk{X},\OO_\fk{X})$ is a formal prescheme; the homomorphisms $u_i$ are surjective; their kernels $\sh{J}^{(i)}$ form a fundamental system of sheaves of ideals of definition for $\fk{X}$, and $\sh{J}^{(0)}$ is the projective limit of the sheaves of ideals $\sh{J}_i$.
+\end{prop}
 
