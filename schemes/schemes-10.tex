@@ -319,4 +319,64 @@ In addition, it follows from Definition \sref{1.10.4.5} that for the \emph{usual
 \subsection{Sheaves of ideals of definition for formal preschemes}
 \label{subsection-sheaves-of-ideals-of-definition-formal-preschemes}
 
+\begin{env}[10.5.1]
+\label{1.10.5.1}
+Let $\fk{X}$ be a formal prescheme; we say that an $\OO_\fk{X}$-ideal $\sh{J}$ is a \emph{sheaf of ideals of definition} (or an \emph{ideal sheaf of definition}) for $\fk{X}$ if every $x\in\fk{X}$ has a formal affine open neighborhood $U$ such that $\sh{J}|U$ is a sheaf of ideals of definition for the formal affine scheme induced on $U$ by $\fk{X}$ \sref{1.10.3.3}; according to (10.3.1.1) and Proposition \sref{1.10.4.3}, for each open $V\subset\fk{X}$, $\sh{J}|V$ is then a sheaf of ideals of definition for the formal prescheme induced on $V$ by $\fk{X}$.
+
+We say that a family $(\sh{J}_\lambda)$ of sheaves of ideals of definition for $\fk{X}$ is a \emph{fundamental system}
+\oldpage[I]{187}
+\emph{of sheaves of ideals of definition} if there exists a cover $(U_\alpha)$ of $\fk{X}$ by formal affine open sets such that, for each $\alpha$, the family of the $\sh{J}_\lambda|U_\alpha$ is a fundamental system of sheaves of ideals of definition \sref{1.10.3.6} for the formal affine scheme induced on $U_\alpha$ by $\fk{X}$.
+It follows from the last remark of \sref{1.10.3.7} that when $\fk{X}$ is a formal affine scheme, this definition coincides with the definition given in \sref{1.10.3.7}.
+For an open subset $V$ of $\fk{X}$, the restrictions $\sh{J}_\lambda|V$ then form a fundamental system of sheaves of ideals of definition for the formal prescheme induced on $V$, according to (10.3.1.1).
+If $\fk{X}$ is a \emph{locally Noetherian} formal prescheme, and $\sh{J}$ is a sheaf of ideals of definition for $\fk{X}$, then it follows from Proposition \sref{1.10.3.6} that the powers $\sh{J}^n$ form a fundamental system of sheaves of ideals of definition for $\fk{X}$.
+\end{env}
+
+\begin{env}[10.5.2]
+\label{1.10.5.2}
+Let $\fk{X}$ be a formal prescheme, $\sh{J}$ a sheaf of ideals of definition for $\fk{X}$.
+Then the ringed space $(\fk{X},\OO_\fk{X}/\sh{J})$ is a (usual) \emph{prescheme}, which is affine (resp. locally Noetherian, resp. Noetherian) when $\fk{X}$ is a formal affine scheme (resp. a locally Noetherian formal scheme, resp. a Noetherian formal scheme);  we can reduce to the affine case, and then the proposition has already been proven in \sref{1.10.3.2}.
+In addition, if $\theta:\OO_\fk{X}\to\OO_\fk{X}/\sh{J}$ is the canonical homomorphism, then $u=(1_\fk{X},\theta)$ is a \emph{morphism} (said to be \emph{canonical}) of formal preschemes $(\fk{X},\OO_\fk{X}/\sh{J})\to(\fk{X},\OO_\fk{X})$, because again, this was proven in the affine case \sref{1.10.3.2}, to which it is immediately reduced.
+\end{env}
+
+\begin{prop}[10.5.3]
+\label{1.10.5.3}
+Let $\fk{X}$ be a formal prescheme, $(\sh{J}_\lambda)$ a fundamental system of sheaves of ideals of definition for $\fk{X}$.
+Then the sheaf of topological rings $\OO_\fk{X}$ is the projective limit of the sheaves of pseudo-discrete rings \sref[0]{0.3.8.1} $\OO_\fk{X}/\sh{J}_\lambda$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.5.3}
+As the topology of $\fk{X}$ admits a basis of formal quasi-compact affine open sets \sref{1.10.4.3}, we reduce to the affine case, where the proposition is a consequence of Proposition \sref{1.10.3.5}, \sref{1.10.3.2}, and the definition \sref{1.10.1.1}.
+\end{proof}
+
+It is not true that any formal prescheme admits a sheaf of ideals of definition.
+However:
+\begin{prop}[10.5.4]
+\label{1.10.5.4}
+Let $\fk{X}$ be a locally Noetherian formal prescheme.
+There exists a largest sheaf of ideals of definition $\sh{T}$ for $\fk{X}$; this is the unique sheaf of ideals of definition $\sh{J}$ such that the prescheme $(\fk{X},\OO_\fk{X}/\sh{J})$ is reduced.
+If $\sh{J}$ is a sheaf of ideals of definition for $\fk{X}$, then $\sh{T}$ is the inverse image under $\OO_\fk{X}\to\OO_\fk{X}/\sh{J}$ of the nilradical of $\OO_\fk{X}/\sh{J}$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.5.4}
+Suppose first that $\fk{X}=\Spf(A)$, where $A$ is an adic Noetherian ring.
+The existence and the properties of $\sh{T}$ follow immediately from Propositions \sref{1.10.3.4} and \sref{1.5.1.1}, taking into account the existence and the properties of the largest ideal of definition for $A$ (\sref[0]{0.7.1.6} and \sref[0]{0.7.1.7}).
+
+To prove the existence and the properties of $\sh{T}$ in the general case, it suffices to show that if $U\supset V$ are two Noetherian formal affine open subsets of $X$, then the largest sheaf of ideals of definition $\sh{T}_U$ for $U$ induces the largest sheaf of ideals of definition $\sh{T}_V$ for $V$; but as $(V,(\OO_\fk{X}|V)/(\sh{T}_U|V))$ is reduced, this follows from the above.
+\end{proof}
+
+We denote by $\fk{X}_\text{red}$ the (usual) reduced prescheme $(\fk{X},\OO_\fk{X}/\sh{T}$).
+
+
+
+
+
+
+
+
+
+
+
+
 
