@@ -624,16 +624,15 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
         the image of $\fk{a}$ under this homomorphism is $0$, and is \emph{a fortiori} the same as the image of the kernel $\alpha^{-1}(0)$ under $\rho$.
         So $\rho$ factors as $A[X_1,\ldots,X_n]\xrightarrow{\alpha}C\xrightarrow{\gamma}B_{hg}$, with $\gamma(c_i)=hb_i/hg$, and it is clear that, if $i_x$ is the canonical homomorphism $B_{hg}\to B_x$, then the diagram
         \[
-            \begin{tikzcd}
-                C\ar[r,"\gamma"]\ar[d,swap,"i_y"] &
-                B_{hg}\ar[d,"i_x"]\\
-                C_y\ar[r,swap,"\vphi"] &
-                B_x
-            \end{tikzcd}
-            \tag{6.5.1.1}
+          \begin{tikzcd}
+            C\ar[r,"\gamma"]\ar[d,swap,"i_y"] &
+            B_{hg}\ar[d,"i_x"]\\
+            C_y\ar[r,"\vphi"] &
+            B_x
+          \end{tikzcd}
+          \tag{6.5.1.1}
         \]
-        is commutative;
-        we thus have $\vphi=\gamma_x$, and since $\vphi$ is a local homomorphism, $^a\gamma(x)=y$;
+        is commutative; we thus have $\vphi=\gamma_x$, and since $\vphi$ is a local homomorphism, $^a\gamma(x)=y$;
         $f=({}^a\gamma,\wt{\gamma})$ is thus an $S$-morphism from the neighbourhood $D(hg)$ of $x$ to $Y$ as claimed in the proposition.
 \end{enumerate}
 \end{proof}

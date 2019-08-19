@@ -368,15 +368,60 @@ To prove the existence and the properties of $\sh{T}$ in the general case, it su
 
 We denote by $\fk{X}_\text{red}$ the (usual) reduced prescheme $(\fk{X},\OO_\fk{X}/\sh{T}$).
 
+\begin{cor}[10.5.5]
+\label{1.10.5.5}
+Let $\fk{X}$ be a locally Noetherian formal prescheme, $\sh{T}$ the largest sheaf of ideals of definition for $\fk{X}$; for each open subset $V$ of $\fk{X}$, $\sh{T}|V$ is the largest sheaf of ideals of definition for the formal prescheme induced on $V$ by $\fk{X}$.
+\end{cor}
 
+\begin{prop}[10.5.6]
+\label{1.10.5.6}
+Let $\fk{X}$ and $\fk{Y}$ be two formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\fk{X}$ (resp. $\fk{Y}$), $f:\fk{X}\to\fk{Y}$ a morphism of formal preschemes.
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item If $f^*(\sh{K})\OO_\fk{X}\subset\sh{J}$, then there exists a unique morphism $f':(\fk{X},\OO_\fk{X}/\sh{J})\to(\fk{Y},\OO_\fk{Y}/\sh{K})$ of usual preschemes making the diagram
+    \[
+      \xymatrix{
+        (\fk{X},\OO_\fk{X})\ar[r]^f &
+        (\fk{Y},\OO_\fk{Y})\\
+        (\fk{X},\OO_\fk{X}/\sh{J})\ar[r]^{f'}\ar[u] &
+        (\fk{Y},\OO_\fk{Y}/\sh{K})\ar[u]
+      }
+      \tag{10.5.6.1}
+    \]
+    commutative, where the vertical arrows are the canonical morphisms.
+  \item Suppose that $\fk{X}=\Spf(A)$ and $\fk{Y}=\Spf(B)$ are two formal affine schemes, $\sh{J}=\fk{J}^\Delta$ and $\sh{K}=\fk{K}^\Delta$, where $\fk{J}$ (resp. $\fk{K}$) is an ideal of definition for $A$ (resp. $B$), and $f=({}^a\vphi,\wt{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism;
+    for $f^*(\sh{K})\OO_\fk{X}\subset\sh{J}$ to hold, it is necessary and sufficient that $\vphi(\fk{K})\subset\fk{J}$, and $f'$ is then the morphism $({}^a\vphi',\wt{\vphi'})$, where $\vphi':B/\fk{K}\to A/\fk{J}$ is the homomorphism induced from $\vphi$ by passing to quotients.
+\end{enumerate}
+\end{prop}
 
+\begin{proof}
+\label{proof-1.10.5.6}
+\medskip\noindent
+\begin{enumerate}[label=(\roman*)]
+  \item If $f=(\psi,\theta)$, then the hypotheses imply that the image under $\theta^\sharp:\psi^*(\OO_\fk{Y})\to\OO_\fk{X}$ of the sheaf of ideals $\psi^*(\sh{K})$ of $\psi^*(\OO_\fk{Y})$ is contained in $\sh{J}$ \sref[0]{0.4.3.5}.
+    By passing to quotients, we thus induce from $\theta^\sharp$ a homomorphism of sheaves of rings
+    \[
+      \omega:\psi^*(\OO_\fk{Y}/\sh{K})=\psi^*(\OO_\fk{Y})/\psi^*(\sh{K})\longrightarrow\OO_\fk{X}/\sh{J};
+    \]
+    in addition, as for all $x\in\fk{X}$, $\theta_x^\sharp$ is a \emph{local} homomorphism, so is $\omega_x$.
+    The morphism of ringed spaces $(\psi,\omega^\flat)$ is thus \sref{1.2.2.1} the unique morphism $f'$ of ringed spaces which we need.
+  \item The canonical functorial correspondence between morphisms of formal affine schemes and continuous homomorphisms of rings \sref{1.10.2.2} shows that in the case considered, the relation $f^*(\sh{K})\OO_\fk{X}\subset\fk{J}$ impliex that we have $f'=({}^a\vphi',\wt{\vphi'})$, where $\vphi':B/\fk{K}\to A/\fk{J}$ is the unique homomorphism making the diagram
+    \[
+      \xymatrix{
+        B\ar[r]^\vphi\ar[d] &
+        A\ar[d]\\
+        B/\fk{K}\ar[r]^{\vphi'} &
+        A/\fk{J}
+      }
+      \tag{10.5.6.2}
+    \]
+    commutative.
+    The existence of $\vphi'$ thus implies that $\vphi(\fk{K})\subset\fk{J}$.
+    Conversely, if this condition is satisfied, then denoting by $\vphi'$ the unique homomorphism making the diagram (10.5.6.2) commutative and setting $f'=({}^a\vphi',\wt{\vphi'})$, it is clear that the diagram (10.5.6.1) is commutative; the consideration of the homomorphisms ${}^a\vphi^*(\OO_\fk{Y})\to\OO_\fk{X}$ and ${}^a{\vphi'}^*(\OO_\fk{Y}/\sh{K})\to\OO_\fk{X}/\sh{J}$ corresponding to $f$ and $f'$ respectively then shows that this implies the relation $f^*(\sh{K})\OO_\fk{X}\subset\sh{J}$.
+\end{enumerate}
+\end{proof}
 
+It is clear that the correspondence $f\mapsto f'$ defined above is \emph{functorial}.
 
-
-
-
-
-
-
-
+\subsection{Formal preschemes as inductive limits of preschemes}
+\label{subsection-formal-preschemes-as-inductive-limits}
 
