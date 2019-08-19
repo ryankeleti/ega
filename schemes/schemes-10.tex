@@ -451,3 +451,43 @@ Let $\OO_\fk{X}$ be the sheaf of topological rings formed as the projective limi
 Then the topologically ringed space $(\fk{X},\OO_\fk{X})$ is a formal prescheme; the homomorphisms $u_i$ are surjective; their kernels $\sh{J}^{(i)}$ form a fundamental system of sheaves of ideals of definition for $\fk{X}$, and $\sh{J}^{(0)}$ is the projective limit of the sheaves of ideals $\sh{J}_i$.
 \end{prop}
 
+\begin{proof}
+\label{proof-1.10.6.3}
+We first note that on each stalk, $u_{ji}$ is a surjective homomorphism and \emph{a fortiori} a local homomorphism; thus $v_{ij}=(1_\fk{X},u_{ji})$ is a morphism of preschemes $X_j\to X_i$ ($i\geqslant j$) \sref{1.2.2.1}.
+Suppose first that each $X_i$ is an affine scheme woth ring $A_i$.
+There exists a \emph{ring} homomorphism $\vphi_{ji}:A_i\to A_j$ such that $u_{ji}=\wt{\vphi_{ji}}$ \sref{1.1.7.3}; as a result \sref{1.1.6.3}, the sheaf $\OO_j$ is a quasi-coherent $\OO_i$-module over $X_i$ (for the external law defined by $u_{ji}$), associated to $A_j$ considered as an $A_i$-module $\vphi_{ji}$.
+For all $f\in A_i$, let $f'=\vphi_{ji}(f)$; by hypothesis, the open sets $D(f)$ and $D(f')$ are indentical in $\fk{X}$, and the homomorphism from $\Gamma(D(f),\OO_i)=(A_i)_f$ to $\Gamma(D(f),\OO_j)=(A_j)_{f'}$ corresponding to $u_{ji}$ is none other than $(\vphi_{ji})_f$ \sref{1.1.6.1}.
+But when we consider $A_j$ as an $A_i$-module, $(A_j)_{f'}$ is the $(A_i)_f$-module $(A_j)_f$, so we also have $u_{ji}=\wt{\vphi_{ji}}$, where $\vphi_{ji}$ is now considered as a homomorphism of \emph{$A_i$-modules}.
+Then as $u_{ji}$ is surjective, we conclude that $\vphi_{ji}$ is also surjective \sref{1.1.3.9} and if $\fk{J}_{ji}$ is the kernel of $\vphi_{ji}$, then the kernel of $u_{ji}$ is a quasi-coherent $\OO_i$-module equal to $\wt{\fk{J}_{ji}}$.
+In particular, we have $\sh{J}_i=\wt{\fk{J}_i}$, where $\fk{J}_i$ is the kernel of $\vphi_{0i}:A_i\to A_0$.
+The hypothesis (b) implies that $\sh{J}_i$ is \emph{nilpotent}: indeed, as $\fk{X}$ is quasi-compact, we can cover $\fk{X}$ by a finite number of open sets $U_k$ such that $(\sh{J}_i|U_k)^{n_k}=0$, and by setting $n$ to be the largest of the $n_k$, we have $\sh{J}_i^n=0$.
+We conclude that $\fk{J}_i$ is nilpotent \sref{1.1.3.13}.
+Then the ring $A=\varprojlim A_i$ is admissible \sref[0]{0.7.2.2}, the canonical homomorphism $\vphi_i:A\to A_i$ is surjective, and its kernel $\fk{J}^{(i)}$ is equal to the projective limit of the $\fk{J}_{ik}$ for $k\geqslant i$; the $\fk{J}^{(i)}$ form a fundamental system of neighborhoods of $0$ in $A$.
+The assertions of Proposition \sref{1.10.6.3} follow in this case from \sref{1.10.1.1} and \sref{1.10.3.2}, $(\fk{X},\OO_\fk{X})$ being $\Spf(A)$.
+
+In this particular case, we note that if $f=(f_i)$ is an element of the projective limit $A=\varprojlim A_i$, then all the open sets $D(f_i)$ (affine open sets in $X_i$) identify with the open subset $\fk{D}(f)$ of $\fk{X}$, the prescheme induced on $\fk{D}(f)$ by $X_i$ thus identifying with the affine scheme $\Spec((A_i)_{f_i})$.
+
+In the general case, we remark first that for every quasi-compact open subset $U$ of $\fk{X}$, each of the $\sh{J}_i|U$ is nilpotent, as shown by the above reasoning.
+We will see that for every $x\in\fk{X}$, there exists an open neighborhood $U$ of $x$ in $\fk{X}$ which is an \emph{affine open set} for \emph{all} the $X_i$.
+Indeed, we take $U$ to be an open affine set for $X_0$, and observe that $\OO_{X_0}=\OO_{X_i}/\sh{J}_i$.
+As $\sh{J}_i|U$ is nilpotent according to the above, $U$ is also an affine open set for each $X_i$ by Proposition \sref{1.5.1.9}.
+This being so, for each $U$ satsifying the preceding conditions, the study of the affine case as above shows that $(U,\OO_X|U)$ is a formal prescheme whose $\sh{J}^{(i)}|U$ for a fundamental system of sheaves of ideals of definition, and $\sh{J}^{(0)}|U$ is the projective limit of the $\sh{J}_i|U$; hence the conclusion.
+\end{proof}
+
+\begin{cor}[10.6.4]
+\label{1.10.6.4}
+Suppose that for $i\geqslant j$, the kernel of $u_{ji}$ is $\sh{J}_i^{j+1}$ and that $\sh{J}_1/\sh{J}_1^2$
+\oldpage[I]{191}
+is of finite type over $\OO_0=\OO_1/\sh{J}_1$.
+Then $\fk{X}$ is an adic formal prescheme, and if $\sh{J}^{(n)}$ is the kernel of $\OO_\fk{X}\to\OO_n$, then we have $\sh{J}^{(n)}=\sh{J}^{n+1}$ and $\sh{J}/\sh{J}^2$ is isomorphic to $\sh{J}_1$.
+If in addition $X_0$ is locally Noetherian (resp. Noetherian), then $\fk{X}$ is locally Noetherian (resp. Noetherian).
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.6.4}
+As the underlying spaces of $\fk{X}$ and $X_0$ are the same, the question is local, and we can suppose that all the $X_i$ are affine; taking into account the relations $\sh{J}_{ij}=\wt{\fk{J}_{ji}}$ (with the notations of Proposition \sref{1.10.3.6}), we immediately reduce to the corresponding assertions of Proposition \sref[0]{0.7.2.7} and Corollary \sref[0]{0.7.2.8}, by noting that $\fk{J}_1/\fk{J}_1^2$ is then an $A_0$-module of finite type \sref{1.1.3.9}.
+\end{proof}
+
+In particular, \emph{every locally Noetherian formal prescheme $\fk{X}$} is the inductive limit of a sequence $(X_n)$ of locally Noetherian (usual) preschemes satisfying the conditions of Proposition \sref{1.10.3.6} and Corollary \sref{1.10.6.4}: it suffices to consider a sheaf of ideals of definition $\sh{J}$ for $\fk{X}$ \sref{1.10.5.4} and by setting $X_n=(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$ (\sref{1.10.5.1} and Proposition \sref{1.10.6.2}).
+
+
