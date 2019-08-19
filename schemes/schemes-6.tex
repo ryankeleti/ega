@@ -721,20 +721,20 @@ similarly, (ii) follows from \sref{1.6.5.4}[ii].
 
 \begin{defn}[6.6.1]
 \label{1.6.6.1}
-We say that a morphism $f\colon X\to Y$ is quasi-compact if the inverse image of any quasi-compact open subset of $Y$ under $f$ is quasi-compact.
+We say that a morphism $f: X\to Y$ is quasi-compact if the inverse image of any quasi-compact open subset of $Y$ under $f$ is quasi-compact.
 \end{defn}
 
 Let $\fk{B}$ be a base of the topology of $Y$ consisting of quasi-compact open subsets (for example, open affine subsets);
 for $f$ to be quasi-compact, it is necessary and sufficient that the inverse image of every set of $\fk{B}$ under $f$ be quasi-compact (or, equivalently, a \emph{finite} union of affine open subsets), because every quasi-compact open subset of $Y$ is a finite union of sets of $\fk{B}$.
-For example, if $X$ is \emph{quasi-compact} and $Y$ \emph{affine}, then \emph{every} morphism $f\colon X\to Y$ is quasi-compact:
+For example, if $X$ is \emph{quasi-compact} and $Y$ \emph{affine}, then \emph{every} morphism $f: X\to Y$ is quasi-compact:
 indeed, $X$ is a finite union of affine open subsets $U_i$, and for every affine open subset $V$ of $Y$, $U_i\cap f^{-1}(V)$ is affine \sref{1.5.5.10}, and so quasi-compact.
 
-If $f\colon X\to Y$ is a quasi-compact morphism, it is clear that, for every open subset $V$ of $Y$, the restriction of $f$ to $f^{-1}(V)$ is a quasi-compact morphism $f^{-1}(V)\to V$.
-Conversely, if $(U_\alpha)$ is an open cover of $Y$, and $f\colon X\to Y$ a morphism such that the restrictions $f^{-1}(U_\alpha)\to U_\alpha$ are quasi-compact, then $f$ is quasi-compact.
+If $f: X\to Y$ is a quasi-compact morphism, it is clear that, for every open subset $V$ of $Y$, the restriction of $f$ to $f^{-1}(V)$ is a quasi-compact morphism $f^{-1}(V)\to V$.
+Conversely, if $(U_\alpha)$ is an open cover of $Y$, and $f: X\to Y$ a morphism such that the restrictions $f^{-1}(U_\alpha)\to U_\alpha$ are quasi-compact, then $f$ is quasi-compact.
 
 \begin{defn}[6.6.2]
 \label{1.6.6.2}
-We say that a morphism $f\colon X\to Y$ is locally of finite type if, for every $x\in X$, there exists an open neighbourhood $U$ of $x$ and an open neighbourhood $V\supset f(U)$ of $y$ such that the restriction of $f$ to $U$ is a morphism of finite type from $U$ to $V$.
+We say that a morphism $f: X\to Y$ is locally of finite type if, for every $x\in X$, there exists an open neighbourhood $U$ of $x$ and an open neighbourhood $V\supset f(U)$ of $y$ such that the restriction of $f$ to $U$ is a morphism of finite type from $U$ to $V$.
 We then also say that $X$ is a prescheme locally of finite type over $Y$, or a $Y$-prescheme locally of finite type.
 \end{defn}
 
@@ -744,9 +744,105 @@ If $Y$ is locally Noetherian and $X$ locally of finite type over $Y$, then $X$ i
 
 \begin{prop}[6.6.3]
 \label{1.6.6.3}
-For a morphism $f\colon X\to Y$ to be of finite type, it is necessary and sufficient that it be quasi-compact and locally of finite type.
+For a morphism $f: X\to Y$ to be of finite type, it is necessary and sufficient that it be quasi-compact and locally of finite type.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.6.6.3}
+The necessity of the conditions is immediate, given \sref{1.6.3.1} and the remark following \sref{1.6.6.1}.
+Conversely, suppose that the conditions are satisfied, and let $U$ be an affine open subset of $Y$, given by some ring $A$;
+for all $x\in f^{-1}(U)$, there is, by hypothesis, a neighbourhood $V(x)\subset f^{-1}(U)$ of $x$, and a neighbourhood $W(x)\subset U$ of $y=f(x)$ containing $f(V(x))$, and such that the restriction of $f$ to $V(x)$ is a morphism $V(x)\to W(x)$ of finite type.
+Replacing $W(x)$ with a neighbourhood $W_1(x)\subset W(x)$ of $x$ of the form $D(g)$ (with $g\in A$), and $V(x)$ with $V(x)\cap f^{-1}(W_1(x))$, we can assume that $W(x)$ is of the form $D(g)$, and thus of finite type over $U$ (because its ring can be written as $A[1/g]$);
+so $V(x)$ is of finite type over $U$.
+Further, $f^{-1}(U)$ is quasi-compact by hypothesis, and so the finite union of open subsets $V(x_i)$, which finishes the proof.
 \end{proof}
+
+\begin{prop}[6.6.4]
+\label{1.6.6.4}
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item An immersion $X\to Y$ is quasi-compact if it is closed, or if the underlying space of $Y$ is locally Noetherian, or if the underlying space of $X$ is Noetherian.
+    \item The composition of two quasi-compact morphisms is quasi-compact.
+    \item If $f: X\to Y$ is a quasi-compact $S$-morphism, then so too is $f_{(S')}: X_{(S')}\to Y_{(S')}$ for any extension $g: S\to S'$ of the base prescheme.
+    \item If $f:X\to X'$ and $g:Y\to Y'$ are two quasi-compact $S$-morphisms, then $f\times_S g$ is quasi-compact.
+    \item If the composition of two morphisms $f: X\to Y$ and $g:Y\to Z$ is quasi-compact, and if either $g$ is separated or the underlying space of $X$ is locally Noetherian, then $f$ is quasi-compact.
+    \item For a morphism $f$ to be quasi-compact, it is necessary and sufficient that $f_\mathrm{red}$ be quasi-compact.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.6.4}
+We note that (vi) is evident because the property of being quasi-compact, for a morphism, depends only on the corresponding continuous map of underlying spaces.
+We will similarly prove the part of (v) corresponding to the case where the underlying space of $X$ is locally Noetherian.
+Set $h=g\circ f$, and let $U$ be a quasi-compact open subset of $Y$;
+$g(U)$ is quasi-compact (but not necessarily open) in $Z$, and so contained in a finite union of quasi-compact open subsets $V_j$ \sref{1.2.1.3}, and $f^{-1}(U)$ is thus contained in the union of the $h^{-1}(V_j)$, which are quasi-compact subspaces of $X$, and thus Noetherian subspaces.
+We thus conclude \sref[0]{0.2.2.3} that $f^{-1}(U)$ is a Noetherian space, and \emph{a fortiori} quasi-compact.
+
+To prove the other claims, it suffices to prove (i), (ii), and (iii) \sref{1.5.5.12}.
+But (ii) is evident, and (i) follows from \sref{1.6.3.5} whenever the space $Y$ is locally Noetherian or the space $X$ is Noetherian, and is evident for a closed immersion.
+To show (iii), we can restrict to the case where $S=Y$ \sref{1.3.3.11};
+let $f'=f_{(S')}$, and let $U'$ be a quasi-compact open subset of $S'$.
+For every $s'\in U'$, let $T$ be an affine open neighbourhood of $g(s')$ in $S$, and let $W$ be an affine open neighbourhood of $s'$ contained in $U'\cap g^{-1}(T)$;
+it will suffice to show that $f'^{-1}(W)$ is quasi-compact;
+in other words, we can restrict to showing that, when $S$ and $S'$ are \emph{affine}, the underlying space of $X\times_S S'$ is quasi-compact.
+But since $X$ is then, by hypothesis, a finite union of affine open subsets $V_j$, $X\times_S S'$ is a union of the underlying spaces of the affine schemes $V_j\times_S S'$ (\sref{1.3.2.2} and \sref{1.3.2.7}), which proves the proposition.
+\end{proof}
+
+We note also that, if $X=X'\sqcup X''$ is the sum of two preschemes, a morphism $f:X\to Y$ is quasi-compact if and only if its restrictions to both $X'$ and $X''$ are quasi-compact.
+
+\begin{prop}[6.6.5]
+\label{1.6.6.5}
+Let $f:X\to Y$ be a quasi-compact morphism.
+For $f$ to be dominant, it is necessary and sufficient that, for every generic point $y$ of an irreducible component of $Y$, $f^{-1}(y)$ contain the generic point of an irreducible component of $X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.6.5}
+It is immediate that the condition is sufficient (even without assuming that $f$ is quasi-compact).
+To see that it is necessary, consider an affine open neighbourhood $U$ of $y$;
+$f^{-1}(U)$ is quasi-compact, and so a \emph{finite} union of affine open subsets $V_i$, and the hypothesis that $f$ be dominant implies that $y$ belongs to the closure \emph{in $U$} of one of the $f(V_i)$.
+We can clearly assume $X$ and $Y$ to be reduced;
+since the closure in $X$ of an irreducible component of $V_i$ is an irreducible component on $X$ \sref[0]{0.2.1.6}, we can replace $X$ by $V_i$, and $Y$ by the closed reduced subprescheme of $U$ that has $\overline{f(V_i)}\cap U$ as its underlying space \sref{1.5.2.1}, and we are thus led to proving the proposition when $X=\Spec(A)$ and $Y=\Spec(B)$ are affine and reduced.
+Since $f$ is dominant, $B$ is a subring of $A$ \sref{1.1.2.7}, and the proposition then follows from the fact that every minimal prime ideal of $B$ is the intersection of $B$ with a minimal prime ideal of $A$ \sref[0]{0.1.5.8}.
+\end{proof}
+
+\begin{prop}[6.6.6]
+\label{1.6.6.6}
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item Every local immersion is locally of finite type.
+    \item If two morphisms $f:X\to Y$ and $g:Y\to Z$ are locally of finite type, then so too is $g\circ f$.
+    \item If $f:X\to Y$ is an $S$-morphism locally of finite type, then $f_{(S')}:X_{(S')}\to Y_{(S')}$ is locally of finite type for any extension $S'\to S$ of the base prescheme.
+    \item If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms locally of finite type, then $f\times_S g$ is locally of finite type.
+    \item If the composition $g\circ f$ of two morphisms is locally of finite type, then $f$ is locally of finite type.
+    \item If a morphism $f$ is locally of finite type, then so too is $f_\mathrm{red}$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.6.6.6}
+By \sref{1.5.5.12}, it suffices to prove (i), (ii), and (iii).
+If $j:X\to Y$ is a local immersion then, for every $x\in X$, there is an open neighbourhood $V$ of $j(x)$ in $Y$ and an open neighbourhood $U$ of $x$ in $X$ such that the restriction of $j$ to $U$ is a closed immersion $U\to V$ \sref{1.4.5.1}, and so this restriction is of finite type.
+To prove (ii), consider a point $x\in X$;
+by hypothesis, there is an open neighbourhood $W$ of $g(f(x))$ and an open neighbourhood $V$ of $f(x)$ such that $g(V)\subset W$ and such that $V$ is of of finite type over $W$;
+furthermore, $f^{-1}(V)$ is locally of finite type over $V$ \sref{1.6.6.2}, so there is an open neighbourhood $U$ of $x$ that is contained in $f^{-1}(V)$ and of is finite type over $V$;
+thus we have $g(f(U))\subset W$, and that $U$ is of finite type over $W$ \sref{1.6.3.4}[ii].
+Finally, to prove (iii), we can restrict to the case where $Y=S$ \sref{1.3.3.11};
+for every $x'\in X'=X_{(S')}$, let $x$ be the image of $x'$ in $X$, $s$ the image of $x$ in $S$, $T$ an open neighbourhood of $s$, $T'$ the inverse image of $T$ in $S'$, and $U$ an open neighbourhood of $x$ that is of finite type over $T$ and whose image is contained in $T$;
+then $U\times_S T'=U\times_T T'$ is an open neighbourhood of $x'$ \sref{1.3.2.7} that is of finite type over $T'$ \sref{1.6.3.4}[iv].
+\end{proof}
+
+\begin{cor}[6.6.7]
+\label{1.6.6.7}
+Let $X$ and $Y$ be $S$-preschemes that are locally of finite type over $S$.
+If $S$ is locally Noetherian, then $X\times_S Y$ is locally Noetherian.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.6.6.7}
+Indeed, $X$ being locally of finite type over $S$ means that it is locally Noetherian, and that $X\times_S Y$ is locally of finite type over $X$, and so $X\times_S Y$ is also locally Noetherian.
+\end{proof}
+
+\begin{rmk}[6.6.8]
+\label{1.6.6.8}
+Proposition~\sref{1.6.3.10} and its proof extend immediately to the case where we suppose only that the morphism $f$ is locally of finite type.
+Similarly, propositions~\sref{6.4.2} and \sref{6.4.9} hold true when we suppose only that the preschemes $X$ and $Y$ in the claim are locally of finite type over the field $K$.
+\end{rmk}
