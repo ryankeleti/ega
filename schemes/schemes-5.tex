@@ -1,3 +1,25 @@
 \section{Reduced preschemes; separation condition}
 \label{section-reduced-preschemes-and-separation-condition}
 
+\subsection{Reduced preschemes}
+\label{subsection-reduced-preschemes}
+
+\begin{prop}[5.1.1]
+\label{1.5.1.1}
+Let $(X,\OO_X)$ be a prescheme, $\sh{B}$ a quasi-coherent $\OO_X$-algebra.
+There exists a unique quasi-coherent $\OO_X$-module $\sh{N}$ whose stalk $\sh{N}_x$ for each $x\in X$ is the nilradical of the ring $\sh{B}_x$.
+When $X$ is affine, and as a result $\sh{B}=\wt{B}$, where $B$ is an algebra over $A(X)$, then we have $\sh{N}=\wt{\nilrad}$, where $\nilrad$ is the nilradical of $B$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.1.1}
+\oldpage[I]{128}
+The statement is local, so we reduce to showing the latter assertion.
+We know that $\wt{\nilrad}$ is a quasi-coherent $\OO_X$-module \sref{1.1.4.1} and that its stalk at a point $x\in X$ is the ideal $\nilrad_x$ of the ring of fractions $B_x$; it remains to prove that the nilradical of $B_x$ is contained in $\nilrad_x$, the opposite inclusion being evident.
+Let $z/s$ be an element of the nilradical of $B_x$, with $z\in B$, $s\not\in\fk{j}_x$; by hypothesis, there exists an integer $k$ such that
+$(z/s)^k=0$, which implies that there exists a $t\not\in\fk{j}_x$ such that $tz^k=0$.
+We conclude that $(tz)^k=0$, and as a result $z/s=(tz)/(ts)\in\nilrad_x$.
+\end{proof}
+
+We say that the quasi-coherent $\OO_X$-module $\sh{N}$ is the \emph{nilradical} of the $\OO_X$-algebra $\sh{B}$; in particular, we denote by $\sh{N}_X$ the nilradical of $\OO_X$.
+
