@@ -53,7 +53,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 1. Affine morphisms
     + [ ] 2. Homogeneous prime spectra
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
-    + [ ] 4. Projective bundles. Ample sheaves
+    + [ ] 4. Projective bundles; Ample sheaves
     + [ ] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms
     + [ ] 6. Integral morphisms and finite morphisms
     + [ ] 7. Valuative criteria
