@@ -603,3 +603,62 @@ We note that for $m\leqslant n$, the data of a morphism $f_n:X_n\to Y_n$ determi
 Let $\fk{S}$ be a formal prescheme; the formal $\fk{S}$-preschemes form a category, and we can define a notion of a \emph{product} of formal $\fk{S}$-preschemes.
 \end{env}
 
+\begin{prop}[10.7.2]
+\label{1.10.7.2}
+Let $\fk{X}=\Spf(B)$ and $\fk{Y}=\Spf(C)$ be two formal affine schemes over a formal affine scheme $\fk{S}=\Spf(A)$.
+Let $\fk{Z}=\Spf(B\wh{\otimes}_A C)$, $p_1$ and $p_2$ the $\fk{S}$-morphisms corresponding \sref{1.10.2.2} to the canonical (continuous) $A$-homomorphisms $\rho$ and $\sigma$ from $B$ and $C$ to $B\wh{\otimes}_A C$; then $(\fk{Z},p_1,p_2)$ is a product of the formal affine $\fk{S}$-schemes $\fk{X}$ and $\fk{Y}$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.7.2}
+According to Proposition \sref{1.10.4.6}, it suffices to check that if we associate to each continuous $A$-homomorphism $\vphi:B\wh{\otimes}_A C\to D$, where $D$ is an admissible ring which is a topological $A$-algebra, the pair $(\vphi\circ\rho,\vphi\circ\sigma)$, then we define a bijection
+\[
+  \Hom_A(B\wh{\otimes}_A C,D)\isoto\Hom_A(B,D)\times\Hom_A(C,D),
+\]
+which is none other than the universal property of the completed tensor product \sref[0]{0.7.7.6}.
+\end{proof}
+
+\begin{prop}[10.7.3]
+\label{1.10.7.3}
+Given two formal $\fk{S}$-preschemes $\fk{X}$ and $\fk{Y}$, the produc $\fk{X}\times_\fk{S}\fk{Y}$ exists.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.7.3}
+The proof is similar to that of Theorem \sref{1.3.2.6}, by replacing affine schemes (resp. affine open sets) by formal affine schemes (resp. formal affine open sets), and Proposition \sref{1.3.2.2} by Proposition \sref{1.10.7.2}.
+\end{proof}
+
+All the formal properties of the product of preschemes (\sref{1.3.2.7} and \sref{1.3.2.8}, \sref{1.3.3.1} and \sref{1.3.3.12}) are valid without modification for the product of formal preschemes.
+
+\begin{env}[10.7.4]
+\label{1.10.7.4}
+Let $\fk{S}$, $\fk{X}$, $\fk{Y}$ be three formal preschemes and let $f:\fk{X}\to\fk{S}$ and  $g:\fk{Y}\to\fk{S}$ two morphisms.
+Suppose that there exist in $\fk{S}$, $\fk{X}$, $\fk{Y}$ respectively three fundamental systems of sheaves of ideals of definitions $(\sh{J}_\lambda)$, $(\sh{K}_\lambda)$, $(\sh{L}_\lambda)$, having the same set of indices $I$, such that $f^*(\sh{J}_\lambda)\OO_\fk{X}\subset\sh{K}_\lambda$ and $g^*(\sh{J}_\lambda)\OO_\fk{Y}\subset\sh{L}_\lambda$ for all $\lambda$.
+Set $S_\lambda=(\fk{S},\OO_\fk{S}/\sh{J}_\lambda)$, $X_\lambda=(\fk{X},\OO_\fk{X}/\sh{K}_\lambda)$, $Y_\lambda=(\fk{Y},\OO_\fk{Y}/\sh{L}_\lambda)$; for $\sh{J}_\mu\subset\sh{J}_\lambda$, $\sh{K}_\mu\subset\sh{K}_\lambda$, $\sh{L}_\mu\subset\sh{L}_\lambda$, note that $S_\lambda$ (resp. $X_\lambda$, $Y_\lambda$) is a closed subprescheme of $S_\mu$ (resp. $X_\mu$, $Y_\mu$) having the \emph{same}
+\oldpage[I]{194}
+underlying space \sref{1.10.6.1}.
+As $S_\lambda\to S_\mu$ is a monomorphism of preschemes, we see first that the products $X_\lambda\times_{S_\lambda}Y_\lambda$ and $X_\lambda\times_{S_\mu}Y_\lambda$ are identical \sref{1.3.2.4}, since $X_\lambda\times_{S_\mu}Y_\lambda$ identifies with a closed subprescheme of $X_\mu\times_{S_\mu}Y_\mu$ having the \emph{same} underlying space \sref{1.4.3.1}.
+This being so, the product $\fk{X}\times_\fk{S}\fk{Y}$ is the \emph{inductive limit} of the usual preschemes $X_\lambda\times_{S_\lambda}Y_\lambda$: indeed, as we see in Proposition \sref{1.10.6.2}, we can reduce to the case where $\fk{S}$, $\fk{X}$, and $\fk{Y}$ are formal affine schemes.
+Taking into account Proposition \sref{1.10.5.6}[ii] and the hypotheses on the fundamental systems of sheaves of ideals of definition for $\fk{S}$, $\fk{X}$, and $\fk{Y}$, we immediately see that our assertion follows from the definition of the completed tensor product of two algebras \sref[0]{0.7.7.1}.
+
+In addition, let $\fk{Z}$ be a formal $\fk{S}$-prescheme, $(\sh{M}_\lambda)$ a fundamental system of ideals of definition for $\fk{Z}$ having $I$ for its set of indices, $u:\fk{Z}\to\fk{X}$ and $v:\fk{Z}\to\fk{Y}$ two $\fk{S}$-morphisms such that $u^*(\sh{K}_\lambda)\OO_\fk{Z}\subset\sh{M}_\lambda$ and $v^*(\sh{L}_\lambda)\OO_\fk{Z}\subset\sh{M}_\lambda$ for all $\lambda$.
+If we set $Z_\lambda=(\fk{Z},\OO_\fk{Z}/\sh{M}_\lambda)$, and if $u_\lambda:Z_\lambda\to X_\lambda$ and $v_\lambda:Z_\lambda\to Y_\lambda$ are the $S_\lambda$-morphisms corresponding to $u$ and $v$ \sref{1.10.5.6}, then we have immediately that $(u,v)_\fk{S}$ is the inductive limit of the $S_\lambda$-morphisms $(u_\lambda,v_\lambda)_{S_\lambda}$.
+
+The considerations of this section apply in particular when $\fk{S}$, $\fk{X}$, and $\fk{Y}$ are locally Noetherian, taking for the fundamental systems of sheaves of ideals of definition the systems consisting of the powers of a sheaf of ideals of definition \sref{1.10.5.1}.
+But we note that $\fk{X}\times_\fk{S}\fk{Y}$ is not necessarily locally Noetherian (see however \sref{1.10.13.5}).
+\end{env}
+
+\subsection{Formal completion of a prescheme along a closed subset}
+\label{subsection-formal-completion-along-closed-subset}
+
+\begin{env}[10.8.1]
+\label{1.10.8.1}
+Let $X$ be a \emph{locally Noetherian} (usual) prescheme, $X'$ a closed subset of the underlying space of $X$; we denote by $\Phi$ the set of \emph{coherent} sheaves of ideals $\sh{J}$ of $\OO_X$ such that the support of $\OO_X/\sh{J}$ is $X'$.
+The set $\Phi$ is nonempty (\sref{1.5.2.1}, \sref{1.4.1.4}, \sref{1.6.1.1}); we order it by the relation $\supset$.
+\end{env}
+
+\begin{lem}[10.8.2]
+\label{1.10.8.2}
+The ordered set $\Phi$ is filtered; if $X$ is Noetherian, then for all $\sh{J}_0\in\Phi$, the set of powers $\sh{J}_0^n$ ($n>0$) is cofinal in $\Phi$.
+\end{lem}
+
