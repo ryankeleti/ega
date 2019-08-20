@@ -504,4 +504,102 @@ The (usual) preschemes $X_n=(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$ are then affine an
 As the $\sh{J}^n$ form a fundamental system of sheaves of ideals of definition for $\fk{X}$ \sref{1.10.5.1}, we have $\OO_\fk{X}=\varprojlim\OO_\fk{X}/\sh{J}^n$ \sref{1.10.5.3}; we conclude \sref{1.10.1.3} that $A$ is topologically isomorphic to $\varprojlim A/\fk{J}^n$, which is adic and Noetherian \sref[0]{0.7.2.8}.
 \end{proof}
 
+\begin{rmk}[10.6.6]
+\label{1.10.6.6}
+With the notations of Proposition \sref{1.10.6.3}, let $\sh{F}_i$ be an $\OO_i$-module, and suppose we are given, for $i\geqslant i$, a $v_{ij}$-morphism $\theta_{ji}:\sh{F}_i\to\sh{F}_j$, such that $\theta_{kj}\circ\theta_{ji}=\theta_{ki}$ for $k\leqslant j\leqslant i$.
+As the continuous underlying map of $v_{ij}$ is the identity, $\theta_{ji}$ is a homomorphism of sheaves of abelian groups on the space $\fk{X}$; in addition, if $\sh{F}$ is the projective limit of the projective system $(\sh{F}_i)$ of sheaves of abelian groups, the fact that the $\theta_{ji}$ are $v_{ij}$-morphism allows one to define on $\sh{F}$ an $\OO_\fk{X}$-module structure by passing to the projective limit; equipped with this structure, we say that $\sh{F}$ is the \emph{projective limit} (with respect to the $\theta_{ji}$) of the system of $\OO_i$-modules $(\sh{F}_i)$.
+In the particular case where $v_{ij}^*(\sh{F}_i)=\sh{F}_j$, and where $\theta_{ji}$ is the \emph{identity}, we say that $\sh{F}$ is the projective limit of a system $(\sh{F}_i)$ such that $v_{ij}^*(\sh{F}_i)=\sh{F}_j$ for $j\leqslant i$ (without mentioning the $\theta_{ji}$).
+\end{rmk}
+
+\begin{env}[10.6.7]
+\label{1.10.6.7}
+Let $\fk{X}$ and $\fk{Y}$ be two formal preschemes, $\sh{J}$ (resp. $\sh{K}$) a sheaf of ideals of definition for $\fk{X}$ (resp. $\fk{Y}$), $f:\fk{X}\to\fk{Y}$ a morphism such that $f^*(\sh{K})\OO_\fk{X}\subset\sh{J}$.
+We then have for every integer $n>0$, $f^*(\sh{K}^n)\OO_\fk{X}=(f^*(\fk{K})\OO_\fk{X})^n\subset\sh{J}^n$; we can thus \sref{1.10.5.6} induce from $f$ a morphism of (usual) preschemes $f_n:X_n\to Y_n$, by setting $X_n=(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$ and $Y_n=(\sh{Y},\OO_\fk{Y}/\sh{K}^{n+1})$, and it immediately follows from the definitions that the diagrams
+\[
+  \xymatrix{
+    X_m\ar[r]^{f_m}\ar[d] &
+    Y_m\ar[d]\\
+    X_n\ar[r]^{f_n} &
+    Y_n
+  }
+  \tag{10.6.7.1}
+\]
+\oldpage[I]{192}
+are commutative for $m\leqslant n$; in other words, $(f_n)$ is an \emph{inductive system} of morphisms.
+\end{env}
+
+\begin{env}[10.6.8]
+\label{1.10.6.8}
+Conversely, let $(X_n)$ (resp. $(Y_n)$) be an inductive system of (usual) preschemes satisfying conditions (b) and (c) of Proposition \sref{1.10.6.3}, and let $\fk{X}$ (resp. $\fk{Y}$) its inductive limit.
+By definition of the inductive limit, each sequence $(f_n)$ of morphisms $X_n\to Y_n$ form an inductive system admitting an \emph{inductive limit $f:\fk{X}\to\fk{Y}$}, which is the unique morphism of formal preschemes making the diagrams
+\[
+  \xymatrix{
+    X_n\ar[r]^{f_n}\ar[d] &
+    Y_n\ar[d]\\
+    \fk{X}\ar[r]^f &
+    \fk{Y}
+  }
+\]
+commutative.
+\end{env}
+
+\begin{prop}[10.6.9]
+\label{1.10.6.9}
+Let $\fk{X}$ and $\fk{Y}$ be locally Notherian formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\fk{X}$ (resp. $\fk{Y}$); the map $f\mapsto(f_n)$ defined in \sref{1.10.6.7} is a bijection from the set of morphisms $f:\fk{X}\to\fk{Y}$ such that $f^*(\sh{K})\OO_\fk{X}\subset\sh{J}$ to the set of sequences $(f_n)$ of morphisms making the diagrams (10.6.7.1) commutative.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.6.9}
+If $f$ is the inductive limit of this sequence, then it is necessary to show that $f^*(\sh{K})\OO_\fk{X}\subset\sh{J}$.
+The statement being local on $\fk{X}$ and $\fk{Y}$, we can reduce to the case where $\fk{X}=\Spf(A)$ and $\fk{Y}=\Spf(B)$ are affine, $A$ and $B$ adic Noetherian rings, $\sh{J}=\fk{J}^\Delta$ and $\sh{K}=\fk{K}^\Delta$, where $\fk{J}$ (resp. $\fk{K}$) is an ideal of definition for $A$ (resp. $B$).
+We then have $X_n=\Spec(A_n)$ and $Y_n=\Spec(B_n)$, with $A_n=A/\fk{J}^{n+1}$ and $B_n=B/\fk{K}^{n+1}$, according to Proposition \sref{1.10.3.6} and \sref{1.10.3.2}; $f_n=({}^a\vphi_n,\wt{\vphi_n})$, where the homomorphisms $\vphi_n:B_n\to A_n$ forms a projective system, thus $f=({}^a\vphi,\wt{\vphi})$, so $f=({}^a\vphi,\wt{\vphi})$, where $\vphi=\varprojlim\vphi_n$.
+The commutativity of the diagram (10.6.7.1) for $m=0$ then gives the condition $\vphi_n(\fk{K}/\fk{K}^{n+1})\subset\fk{J}/\fk{J}^{n+1}$ for all $n$, so by passing to the projective limit we have $\vphi(\fk{K})\subset\fk{J}$, and this implies that $f^*(\sh{K})\OO_\fk{X}\subset\sh{J}$ \sref{1.10.5.6}[ii].
+\end{proof}
+
+\begin{cor}[10.6.10]
+\label{1.10.6.10}
+Let $\fk{X}$ and $\fk{Y}$ be two locally Noetherian formal preschemes, $\sh{T}$ the largest sheaf of ideals of definition for $\fk{X}$ \sref{1.10.5.4}.
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item For every sheaf of ideals of definition $\sh{K}$ for $\fk{Y}$ and every morphism $f:\fk{X}\to\fk{Y}$, we have $f^*(\sh{K})\OO_\fk{X}\subset\sh{T}$.
+  \item There is a canonical bijective correspondence between $\Hom(\fk{X},\fk{Y})$ and the set of sequences $(f_n)$ of morphisms making the diagrams (10.6.7.1) commutative, where $X_n=(\fk{X},\OO_\fk{X}/\sh{T}^{n+1})$ and $Y_n=(\fk{Y},\OO_\fk{Y}/\sh{K}^{n+1})$.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.6.10}
+(ii) follows immediately from (i) and Proposition \sref{1.10.6.9}.
+To prove (i), we can reduce to the case where $\fk{X}=\Spf(A)$ and $\fk{Y}=\Spf(B)$, $A$ and $B$ Noetherian, $\sh{T}=\fk{T}^\Delta$ and $\sh{K}=\fk{K}^\Delta$, where $\fk{T}$ is the largest ideal of definition for $A$ and $\fk{K}$ is an ideal of definition for $B$.
+Let $f=({}^a\vphi,\wt{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism; as the elements of $\fk{K}$ are topologically nilpotent \sref[0]{0.7.1.4}[ii], so are those of $\vphi(\fk{K})$, so $\vphi(\fk{K})\subset\fk{T}$ since $\fk{T}$ is the set of topologically nilpotent elements of $A$ \sref[0]{0.7.1.6}; hence, by Proposition \sref{1.10.5.6}[ii], we are done.
+\end{proof}
+
+\begin{cor}[10.6.11]
+\label{1.10.6.11}
+Lett $\fk{S}$, $\fk{X}$, $\fk{Y}$ be locally Noetherian formal preschemes, $f:\fk{X}\to\fk{S}$ and $g:\fk{Y}\to\fk{S}$ the morphisms making $\fk{X}$ and $\fk{Y}$ formal $\fk{S}$-preschemes.
+Let $\sh{J}$ (resp. $\sh{K}$, $\sh{L}$) be a sheaf of ideals of definition for $\fk{S}$ (resp. $\fk{X}$, $\fk{Y}$), and suppose that $f^*(\sh{J})\OO_\fk{X}\subset\sh{K}$ and $g^*(\sh{J})\OO_\fk{Y}=\sh{L}$; set $S_n=(\fk{S},\OO_\fk{S}/\sh{J}^{n+1})$, $X_n=(\fk{X},\OO_\fk{X}/\sh{K}^{n+1})$, and $Y_n=(\fk{Y},\OO_\fk{Y}/\sh{L}^{n+1})$.
+Then there exists a canonical bijective correspondence
+\oldpage[I]{193}
+between $\Hom_\fk{S}(\fk{X},\fk{Y})$ and the set of sequences $(u_n)$ of $S_n$-morphisms $u_n:X_n\to Y_n$ making the diagrams (10.6.7.1) commutative.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.6.11}
+For each $\fk{S}$-morphism $u:\fk{X}\to\fk{Y}$, we have by definition that $f=g\circ u$, so
+\[
+  u^*(\sh{L})\OO_\fk{X}=u^*(g^*(\sh{J}\OO_\fk{Y})\OO_\fk{X}=f^*(\sh{J})\OO_\fk{X}\subset\sh{K},
+\]
+and the corollary follows from Proposition \sref{1.10.6.9}.
+\end{proof}
+
+We note that for $m\leqslant n$, the data of a morphism $f_n:X_n\to Y_n$ determines a unique morphism $f_m:X_m\to Y_m$ making the diagram (10.6.7.1) commutative, as we immediately see that we can reduce to the affine case; we thus have defined a map $\vphi_{mn}:\Hom_{S_n}(X_n,Y_n)\to\Hom_{S_m}(X_m,Y_m)$ and the $\Hom_{S_n}(X_n,Y_n)$ form with the $\vphi_{mn}$ a \emph{projective system of sets}; Corollary \sref{1.10.6.11} says that there is a canonical bijection
+\[
+  \Hom_\fk{S}(\fk{X},\fk{Y})\isoto\varprojlim_n\Hom_{S_n}(X_n,Y_n).
+\]
+
+\subsection{Products of formal preschemes}
+\label{subsection-products-of-formal-preschemes}
+
+\begin{env}[10.7.1]
+\label{1.10.7.1}
+Let $\fk{S}$ be a formal prescheme; the formal $\fk{S}$-preschemes form a category, and we can define a notion of a \emph{product} of formal $\fk{S}$-preschemes.
+\end{env}
 
