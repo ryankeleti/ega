@@ -9,10 +9,10 @@ PDFLATEX := pdflatex
 
 .PHONY: default
 default: $(TEX)
-	@echo "make pdfs       --- makes all pdfs"
-	@echo "make book       --- makes complete book pdf"
-	@echo "make all        --- make pdfs + make book"
-	@echo "make clean      --- clean up"
+	@echo "make pdfs  --- makes all pdfs"
+	@echo "make book  --- makes complete book pdf"
+	@echo "make all   --- make pdfs + make book"
+	@echo "make clean --- clean up"
 
 .PHONY: pdfs
 pdfs: $(PDFS)

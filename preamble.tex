@@ -45,6 +45,10 @@
 \def\l@subsection{\@tocline{2}{0pt}{2.5pc}{5pc}{}}
 \makeatother
 
+\renewcommand{\to}{\mathchoice{\longrightarrow}{\rightarrow}{\rightarrow}{\rightarrow}}
+\let\mapstoo\mapsto
+\renewcommand{\mapsto}{\mathchoice{\longmapsto}{\mapstoo}{\mapstoo}{\mapstoo}}
+
 %\allowdisplaybreaks[1]
 %\binoppenalty=9999
 %\relpenalty=9999

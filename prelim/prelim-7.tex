@@ -293,10 +293,8 @@ equivalent:
 
 \begin{cor}[7.2.6]
 \label{0.7.2.6}
-Let $A$ be an admissible ring $A$, $\fk{J}$ an ideal of definition for
-$A$. For $A$ to be Noetherian, it is necessary and sufficient that
-$A/\fk{J}$ is Noetherian and that $\fk{J}/\fk{J}^2$ is an
-$(A/\fk{J})$-module of finite type.
+Let $A$ be an admissible ring $A$, $\fk{J}$ an ideal of definition for $A$.
+For $A$ to be Noetherian, it is necessary and sufficient for $A/\fk{J}$ to be Noetherian and for $\fk{J}/\fk{J}^2$ to be an $A/\fk{J}$-module of finite type.
 \end{cor}
 
 These conditions are evidently necessary. Conversely, suppose the conditions
@@ -305,10 +303,10 @@ $\fk{J}$-pre-adic, for it to be Noetherian, it is necessary and sufficient
 that the associated graded ring $\grad(A)$ (for the filtration on the
 $\fk{J}^n$) is (\cite[p~.18--07, th.~4]{I-1}). Now, let $a_1,\dots,a_n$ be
 the elements of $\fk{J}$ whose classes mod.~$\fk{J}^2$ are the
-generators of $\fk{J}/\fk{J}^2$ as a $(A/\fk{J})$-module. It
+generators of $\fk{J}/\fk{J}^2$ as a $A/\fk{J}$-module. It
 is immediate by induction that the classes mod.~$\fk{J}^{m+1}$ of the
 monomials of total degree $m$ in the $a_i$ ($1\leqslant i\leqslant n$) form a
-system of generators for the $(A/\fk{J})$-module
+system of generators for the $A/\fk{J}$-module
 $\fk{J}^m/\fk{J}^{m+1}$. We conclude that $\grad(A)$ is a ring
 isomorphic to a quotient of $(A/\fk{J})[T_1,\dots,T_n]$ ($T_i$
 indeterminates), which finishes the proof.
@@ -443,7 +441,7 @@ $h_i:M_i\to N_i$, whose projective limit is $h$, hence the corollary.
 \begin{rmk}[7.2.11]
 \label{0.7.2.11}
 Let $A$ be an adic ring with an ideal of definition $\fk{J}$ such that
-$\fk{J}/\fk{J}^2$ is an $(A/\fk{J})$-module of finite type; it is clear
+$\fk{J}/\fk{J}^2$ is an $A/\fk{J}$-module of finite type; it is clear
 that the $A_i=A/\fk{J}^{i+1}$ satisfy
 \oldpage[0\textsubscript{I}]{66}
 the conditions of Proposition \sref{0.7.2.7}; as $A$ is the projective
@@ -464,7 +462,7 @@ canonical image of $\fk{J}$, then $\overline{\fk{J}}$ is an ideal of definition
 for $A$, $\overline{\fk{J}^n}$ is the closure of the canonical image of
 $\fk{J}^n$, $A/\overline{\fk{J}^n}$ identifies with $B/\fk{J}^n$ and
 $\overline{\fk{J}}/\overline{\fk{J}^2}$ is isomorphic to
-$\fk{J}/\fk{J}^2$ as an $(A/\overline{\fk{J}})$-module. Similarly, if $N$
+$\fk{J}/\fk{J}^2$ as an $A/\overline{\fk{J}}$-module. Similarly, if $N$
 is such that $N/\fk{J}N$ is a $B$-module of finite type, and if we set
 $M_i=N/\fk{J}^{i+1}N$, then $M=\varprojlim M_i$ is an $A$-module of finite type,
 isomorphic to the separated completion of $N$ for the $\fk{J}$-pre-adic topology, and
@@ -485,8 +483,7 @@ $\wh{A}=\varprojlim_n A/\fk{J}^n$
 $M'\xrightarrow{u}M\xrightarrow{v}M''\to 0$ be an exact sequence of $A$-modules; as
 $M/\fk{J}^n M=M\otimes_A(A/\fk{J}^n)$, the sequence
 \[
-  M'/\fk{J}^n M'\xrightarrow{u_n}M/\fk{J}^n M
-  \xrightarrow{v_n}M''/\fk{J}^n M''\longrightarrow 0
+  M'/\fk{J}^n M'\xrightarrow{u_n}M/\fk{J}^n M\xrightarrow{v_n}M''/\fk{J}^n M''\to 0
 \]
 is exact for each $n$. In addition, as
 $v(\fk{J}^n M)=\fk{J}^n v(M)=\fk{J}^n M''$,
@@ -784,7 +781,7 @@ $\alpha\in\bb{N}^r$ and each $\lambda$, let $\vphi_{\lambda,\alpha}$ be the map 
 $(A/\fk{J}_\lambda)[T_1,\dots,T_r]$ to $A/\fk{J}\lambda$ which sends each
 polynomial in the first ring to coefficient of $T^\alpha$ in that polynomial. It is
 clear that the $\vphi_{\lambda,\alpha}$ form a projective system of homomorphisms of
-$(A/\fk{J}_\lambda)$-modules, so their projective limit is a continuous
+$A/\fk{J}_\lambda$-modules, so their projective limit is a continuous
 homomorphism $\vphi_\alpha:A\{T_1,\dots,T_r\}\to A$; we will see that, for each
 $y\in A\{T_1,\dots,T_r\}$, the formal series $\sum_\alpha\vphi_\alpha(y)T^\alpha$ is
 \emph{restricted}. Indeed, if $y_\lambda$ is the component of $y$ in $B_\lambda$, and
@@ -920,13 +917,13 @@ $A'/\fk{J}A'=(A/\fk{J})[T_1,\dots,T_r]$, so it is of finite type, which proves t
 If $B$ is $\fk{J}B$-adic and Noetherian, then $B$ is isomorphic to $\varprojlim B_n$, where
 $B_n=B/\fk{J}^{n+1}B$ \sref{0.7.2.11}, and $\fk{J}B/\fk{J}^2 B$
 is a module of finite type over $B/\fk{J}B$. Let $(a_j)_{1\leqslant j\leqslant s}$ be a
-system of generators for the $(B/\fk{J}B)$-module $\fk{J}B/\fk{J}^2 B$, and let
+system of generators for the $B/\fk{J}B$-module $\fk{J}B/\fk{J}^2 B$, and let
 $(c_i)_{1\leqslant i\leqslant r}$ be a system of elements of $B/\fk{J}^2 B$ such that the
 classes
 \oldpage[0\textsubscript{I}]{72}
-mod $\fk{J}B/\fk{J}^2 B$ form a system of generators for the $(A/\fk{J})$-algebra
+mod $\fk{J}B/\fk{J}^2 B$ form a system of generators for the $A/\fk{J}$-algebra
 $B/\fk{J}B$; we see immediately that the $c_i a_j$ form a system of generators for the
-$(A/\fk{J}^2)$-algebra $B/\fk{J}^2 B$, hence (a) implies (b).
+$A/\fk{J}^2$-algebra $B/\fk{J}^2 B$, hence (a) implies (b).
 
 It remains to prove that (b) implies (c). The hypotheses imply that $B_1$ is a Noetherian ring, and
 as $B_1=B_2/\fk{J}^2 B_2$, we have $\fk{J}^2 B_1=0$, hence
@@ -934,7 +931,7 @@ $\fk{J}B_1=\fk{J}B_1/\fk{J}^2 B_1$ is a $B_0$-module of finite type. The
 conditions of Proposition \sref{0.7.2.7} are thus satisfied by the projective
 system $(B_n)$ and $B$ is a $\fk{J}B$-adic ring. Let $(c_i)_{1\leqslant i\leqslant r}$ be a
 finite system of elements of $B$ whose classes mod $\fk{J}B$ generate the
-$(A/\fk{J})$-algebra $B/\fk{J}B$, and whose linear combinations with coefficients in
+$A/\fk{J}$-algebra $B/\fk{J}B$, and whose linear combinations with coefficients in
 $\fk{J}$ are such that their classes mod $\fk{J}^2 B$ generate the $B_0$-module
 $\fk{J}B/\fk{J}^2 B$. There exists a continuous $A$-homomorphism $u$ from
 $A'=A\{T_1,\dots,T_r\}$ to $B$ which reduces to $\vphi$ on $A$ and is such that $u(T_i)=c_i$ for
@@ -1246,7 +1243,7 @@ is local, we conclude that $A\{S^{-1}\}$ is a faithfully flat $A_{\{S\}}$-module
 Let $A$ be a linearly topologized ring, $M$, $N$ two linearly topologized $A$-modules. Let
 $\fk{J}$, $V$, $W$ be open neighborhoods of $0$ in $A$, $M$, $N$ respectively, which are
 $A$-modules, and such that $\fk{J}M\subset V$, $\fk{J}N\subset W$, so that
-$M/V$ and $N/W$ can be considered as $(A/\fk{J})$-modules. When $\fk{J}$, $V$, $W$
+$M/V$ and $N/W$ can be considered as $A/\fk{J}$-modules. When $\fk{J}$, $V$, $W$
 vary over the systems of open neighborhoods satisfying these properties, it is immediate that the
 modules $(M/V)\otimes_{A/\fk{J}}(N/W)$ form a projective system of modules
 \oldpage[0\textsubscript{I}]{76}
@@ -1299,7 +1296,7 @@ $B\otimes_A C$ has for a fundamental system of neighborhoods of $0$ the \emph{id
 $\Im(\fk{K}\otimes_A C)+\Im(B\otimes_A\fk{L})$ of the algebra $B\otimes_A C$,
 $\fk{K}$ (resp. $\fk{L}$) varying over the set of open ideals of $B$ (resp. $C$).
 As a result, $(B\otimes_A C)^\wedge$ is equipped with the structure of a \emph{topological
-$\wh{A}$-algebra}, the projective limit of the projective system of $(A/\fk{J})$-algebras
+$\wh{A}$-algebra}, the projective limit of the projective system of $A/\fk{J}$-algebras
 $(B/\fk{K})\otimes_{A/\fk{J}}(C/\fk{L})$ ($\fk{J}$ the open ideal of $A$
 such that $\fk{J}B\subset\fk{K}$, $\fk{J}C\subset\fk{L}$; it always exists).
 We say that this algebra is the \emph{completed tensor product} of the algebras $B$ and $C$.
@@ -1317,8 +1314,7 @@ topologized $A$-algebra $D$, separated and complete, and each pair of continuous
 $u:B\to D$, $v:C\to D$, there exists a unique continuous $A$-homomorphism
 $w:(B\otimes_A C)^\wedge\to D$ such that $u=w\circ\rho$ and $v=w\circ\sigma$. Indeed, there already
 exists a unique $A$-homomorphism $w_0:B\otimes_A C\to D$ such that $u(b)=w_0(b\otimes 1)$ and
-$v(c)=w_0(1\otimes c)$, and it remains to prove that $w_0$ is \emph{continuous}, since it then
-gives a
+$v(c)=w_0(1\otimes c)$, and it remains to prove that $w_0$ is \emph{continuous}, since it then gives a
 \oldpage[0\textsubscript{I}]{77}
 continuous homomorphism $w$ by passing to the separated completion. If $\fk{M}$ is an open
 ideal of $D$, then there exists by hypothesis open ideals $\fk{K}\subset B$,
@@ -1333,14 +1329,12 @@ hence our assertion.
 If $B$ and $C$ are two pre-admissible $A$-algebras, then $(B\otimes_A C)^\wedge$ is
 admissible, and if $\fk{K}$ (resp. $\fk{L}$) is an ideal of definition for
 $B$ (resp. $C$), then the closure in $(B\otimes_A C)^\wedge$ of the canonical image of
-$\fk{H}=\Im(\fk{K}\otimes_A C)+\Im(B\otimes_A\fk{L})$ is an ideal of
-definition.
+$\fk{H}=\Im(\fk{K}\otimes_A C)+\Im(B\otimes_A\fk{L})$ is an ideal of definition.
 \end{prop}
 
 \begin{proof}
 \label{proof-0.7.7.7}
-It suffices to show that $\fk{H}^n$ tends to $0$ for the tensor product topology, which follows
-immediately from the inclusion
+It suffices to show that $\fk{H}^n$ tends to $0$ for the tensor product topology, which follows immediately from the inclusion
 \[
   \fk{H}^{2n}\subset\Im(\fk{K}^n\otimes_A C)+\Im(B\otimes_A\fk{L}^n).
 \]
@@ -1356,13 +1350,9 @@ $(B\otimes_A M)^\wedge$.
 
 \begin{proof}
 \label{proof-0.7.7.8}
-If $\fk{K}$ is an ideal of definition for $B$, there exists by hypothesis an integer $m$ such
-that $\fk{J}^m B\subset\fk{K}$, so
-$\Im(B\otimes_A\fk{J}^{nm}M)=\Im(\fk{J}^{nm}B\otimes_A M)
-  \subset\Im(\fk{K}^n B\otimes_A M)=\fk{K}^n(B\otimes_A M)$;
-we conclude that over $B\otimes_A M$, the tensor products of the topologies of $B$ and $M$ is the
-$\fk{K}$-pre-adic topology. As $B\otimes_A M$ is a $B$-module of finite type, the proposition
-follows from Corollary \sref{0.7.3.6}.
+If $\fk{K}$ is an ideal of definition for $B$, there exists by hypothesis an integer $m$ such that $\fk{J}^m B\subset\fk{K}$, so $\Im(B\otimes_A\fk{J}^{nm}M)=\Im(\fk{J}^{nm}B\otimes_A M)\subset\Im(\fk{K}^n B\otimes_A M)=\fk{K}^n(B\otimes_A M)$;
+we conclude that over $B\otimes_A M$, the tensor products of the topologies of $B$ and $M$ is the $\fk{K}$-pre-adic topology.
+As $B\otimes_A M$ is a $B$-module of finite type, the proposition follows from Corollary \sref{0.7.3.6}.
 \end{proof}
 
 \subsection{Topologies on modules of homomorphisms}
@@ -1380,7 +1370,8 @@ $\fk{J}^{i+1}N_j$, thus giving by passage to quotients a homomorphism $u_i:M_i\t
 defines a canonial homomorphism $\Hom_{A_j}(M_j,N_j)\to\Hom_{A_i}(M_i,N_i)$; in addition, the
 $\Hom_{A_i}(M_i,N_i)$ form a \emph{projective system} for these homomorphisms, and it follows from
 Corollary \sref{0.7.2.10} that there is a canonical isomorphism
-$\vphi:\Hom_A(M,N)\to\varprojlim_i\Hom_{A_i}(M_i,N_i)$. In addition:
+$\vphi:\Hom_A(M,N)\to\varprojlim_i\Hom_{A_i}(M_i,N_i)$.
+In addition:
 \end{env}
 
 \begin{prop}[7.8.2]
@@ -1393,8 +1384,7 @@ $\vphi:\Hom_A(M,N)\to\varprojlim_i\Hom_{A_i}(M_i,N_i)$ is a topological isomorph
 
 \begin{proof}
 \label{proof-0.7.8.2}
-We can consider $M$ as the quotient of a free $A$-module $L$ of finite type, and as a result
-identify $\Hom_A(M,N)$ as a submodule of $\Hom_A(L,N)$; in this identification,
+We can consider $M$ as the quotient of a free $A$-module $L$ of finite type, and as a result identify $\Hom_A(M,N)$ as a submodule of $\Hom_A(L,N)$; in this identification,
 $\Hom_A(M,\fk{J}^{i+1}N)$ is the intersection of $\Hom_A(M,N)$ and
 $\Hom_A(L,\fk{J}^{i+1}N)$; as the induced topology on $\Hom_A(M,N)$ by the $\fk{J}$-adic
 topology of $\Hom_A(L,N)$ is the $\fk{J}$-adic \sref{0.7.3.2}, we have

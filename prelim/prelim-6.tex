@@ -45,8 +45,8 @@ particular, every projective $A$-module is flat.
 Let $0\to M'\to M\to M''\to 0$ be an exact sequence of $A$-modules, such that
 $M''$ is \emph{flat}. Then, for each $A$-module $N$, the sequence
 \[
-  0\longrightarrow M'\otimes_A N\longrightarrow M\otimes_A N
-  \longrightarrow M''\otimes_A N\longrightarrow 0
+  0\to M'\otimes_A N\to M\otimes_A N
+  \to M''\otimes_A N\to 0
 \]
 is exact. In addition, for $M$ to be flat, is it necessary and sufficient that
 $M'$ is (but is can be that $M$ and $M'$ are flat without $M''=M/M'$ being so).
@@ -100,7 +100,7 @@ Let $A$ be a ring, $B$ an $A$-algebra which is flat as an $A$-module. Let $M$,
 $N$ be two $A$-modules, such that $M$ admits a finite presentation; then the
 canonical homomorphism
 \[
-  \Hom_A(M,N)\otimes_A B\longrightarrow\Hom_B(M\otimes_A B,N\otimes_A B)
+  \Hom_A(M,N)\otimes_A B\to\Hom_B(M\otimes_A B,N\otimes_A B)
   \tag{6.2.2.1}
 \]
 (sending $u\otimes b$ to the homomorphism $m\otimes b'\mapsto u(m)\otimes b' b$)
@@ -410,9 +410,9 @@ If $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of $\OO_X$-module
 $\sh{F}''$ is $f$-flat at a point $x\in X$, then, for each open neighborhood $U$ of $y=f(x)$
 and each $(\OO_Y|U)$-module $\sh{G}$, the sequence
 \[
-  0\longrightarrow(f^*(\sh{G})\otimes_{\OO_X}\sh{F}')_x
-  \longrightarrow(f^*(\sh{G})\otimes_{\OO_X}\sh{F})_x
-  \longrightarrow(f^*(\sh{G})\otimes_{\OO_X}\sh{F}'')_x\longrightarrow 0
+  0\to(f^*(\sh{G})\otimes_{\OO_X}\sh{F}')_x
+  \to(f^*(\sh{G})\otimes_{\OO_X}\sh{F})_x
+  \to(f^*(\sh{G})\otimes_{\OO_X}\sh{F}'')_x\to 0
 \]
 is exact. For $\sh{F}$ to be $f$-flat at $x$, it is necessary and sufficient that $\sh{F}'$
 is. We have similar statements for the corresponding notions of a $f$-flat $\OO_X$-modules
@@ -432,7 +432,7 @@ particular, if $f$ and $g$ are flat morphisms, then $g\circ f$ is flat.
 Let $X$, $Y$ be two ringed spaces, $f:X\to Y$ a \emph{flat} morphism. Then the canonical
 homomorphism of bifunctors \sref{0.4.4.6}
 \[
-  f^*(\shHom_{\OO_Y}(\sh{F},\sh{G}))\longrightarrow\shHom_{\OO_X}(f^*(\sh{F}),f^*(\sh{G}))
+  f^*(\shHom_{\OO_Y}(\sh{F},\sh{G}))\to\shHom_{\OO_X}(f^*(\sh{F}),f^*(\sh{G}))
   \tag{6.7.6.1}
 \]
 is an \emph{isomorphism} when $\sh{F}$ admits a \emph{finite presentation} \sref{0.5.2.5}.
