@@ -10,17 +10,17 @@ For compiled PDFs, go to the [releases page](https://github.com/ryankeleti/ega/r
 
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
-- [x] Introduction (EGA I) (proofread by @thosgood)
+- [x] Introduction (EGA I) _(proofread by @thosgood)_
 - [ ] Preliminaries (EGA 0_I)
-    + [x] 1. Rings of fractions (@ryankeleti) (proofread by @thosgood)
-    + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti) (proofread by @thosgood)
-    + [x] 3. Supplement on sheaves (@ryankeleti)
-    + [x] 4. Ringed spaces (@ryankeleti)
-    + [x] 5. Quasi-coherent sheaves and coherent sheaves (@ryankeleti)
-    + [x] 6. Flatness (@ryankeleti)
-    + [x] 7. Adic rings (@ryankeleti)
+    + [x] 1. Rings of fractions _(@ryankeleti, proofread by @thosgood)_
+    + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti, proofread by @thosgood)_
+    + [x] 3. Supplement on sheaves _(@ryankeleti)_
+    + [x] 4. Ringed spaces _(@ryankeleti)_
+    + [x] 5. Quasi-coherent sheaves and coherent sheaves _(@ryankeleti)_
+    + [x] 6. Flatness _(@ryankeleti)_
+    + [x] 7. Adic rings _(@ryankeleti)_
 - [ ] Preliminaries (EGA 0_III)
-    + [ ] 8. Representable functors (@ryankeleti)
+    + [ ] 8. Representable functors _(@ryankeleti)_
     + [ ] 9. Constructible sets
     + [ ] 10. Supplement on flat modules
     + [ ] 11. Supplement on homological algebra
@@ -39,16 +39,16 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 23. Japanese rings
 - [ ] The language of schemes (EGA I)
     + [x] 0. Summary
-    + [x] 1. Affine schemes (@ryankeleti)
-    + [x] 2. Preschemes and their morphisms (@thosgood)
-    + [x] 3. Products of preschemes (@thosgood, @ryankeleti)
-    + [x] 4. Subpreschemes and immersions (@ryankeleti)
-    + [ ] 5. Reduced preschemes; separation condition (@thosgood)
-    + [x] 6. Finiteness conditions (@thosgood)
-    + [x] 7. Rational maps (@thosgood)
-    + [x] 8. Chevalley schemes (@thosgood)
-    + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
-    + [ ] 10. Formal schemes (@thosgood, @ryankeleti)
+    + [x] 1. Affine schemes _(@ryankeleti)_
+    + [x] 2. Preschemes and their morphisms _(@thosgood)_
+    + [x] 3. Products of preschemes _(@thosgood, @ryankeleti)_
+    + [x] 4. Subpreschemes and immersions _(@ryankeleti)_
+    + [ ] 5. Reduced preschemes; separation condition _(@thosgood)_
+    + [x] 6. Finiteness conditions _(@thosgood)_
+    + [x] 7. Rational maps _(@thosgood)_
+    + [x] 8. Chevalley schemes _(@thosgood)_
+    + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
+    + [ ] 10. Formal schemes _(@thosgood, @ryankeleti)_
 - [ ] Elementary global study of some classes of morphisms (EGA II)
     + [ ] 1. Affine morphisms
     + [ ] 2. Homogeneous prime spectra
@@ -87,4 +87,4 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 18. Supplement on étale morphisms. Henselian local rings and strictly local rings
     + [ ] 19. Regular immersions and normal flatness
     + [ ] 20. Meromorphic functions and pseudo-morphisms
-    + [ ] 21. Divisor
+    + [ ] 21. Divisors
