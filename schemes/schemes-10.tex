@@ -662,3 +662,32 @@ The set $\Phi$ is nonempty (\sref{1.5.2.1}, \sref{1.4.1.4}, \sref{1.6.1.1}); we 
 The ordered set $\Phi$ is filtered; if $X$ is Noetherian, then for all $\sh{J}_0\in\Phi$, the set of powers $\sh{J}_0^n$ ($n>0$) is cofinal in $\Phi$.
 \end{lem}
 
+\begin{proof}
+\label{proof-1.10.8.2}
+If $\sh{J}_1$ and $\sh{J}_2$ are in $\Phi$, and if we set $\sh{J}=\sh{J}_1\cap\sh{J}_2$, then $\sh{J}$ is coherent since $\OO_X$ is coherent (\sref{1.6.1.1} and \sref[0]{0.5.3.4}), and we have $\sh{J}_x=(\sh{J}_1)_x\cap(\sh{J}_2)_x$ for all $x\in X$, so $\sh{J}_x=\OO_x$ for $x\not\in X'$ and $\sh{J}_x\neq\OO_x$ for $x\in X'$, which proves that $\sh{J}\in\Phi$.
+On the other hand, if $X$ is Noetherian and if $\sh{J}_0$ and $\sh{J}$ are in $\Phi$, then there exists an integer $n>0$ such that $\sh{J}_0^n(\OO_X/\sh{J})=0$ \sref{1.9.3.4}, which implies that $\sh{J}_0^n\subset\sh{J}$.
+\end{proof}
+
+\begin{env}[10.8.3]
+\label{1.10.8.2}
+Now let $\sh{F}$ be a \emph{coherent} $\OO_X$-module; for all $\sh{J}\in\Phi$, we have that $\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J})$ is a coherent $\OO_X$-module \sref{1.9.1.1} with support contained in $X'$, and we will usually identify it with its restriction to $X'$.
+When $\sh{J}$ varies over $\Phi$, these sheaves form a \emph{projective system} of sheaves of abelian groups.
+\end{env}
+
+\begin{defn}[10.8.4]
+\label{1.10.8.4}
+Given a closed subset $X'$ of a locally Noetherian prescheme $X$ and a coherent $\OO_X$-module $\sh{F}$, we call the \emph{completion of $\sh{F}$ along $X'$}, and denote it by $\sh{F}_{/X'}$ (or $\wh{\sh{F}}$ when there is little chance of confusion), the restriction to $X'$ of the sheaf
+\oldpage[I]{195}
+$\varprojlim_\Phi(\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J}))$; we say that its sections over $X'$ are the \emph{formal sections of $\sh{F}$ along $X'$}.
+\end{defn}
+
+
+
+
+
+
+
+
+
+
+
