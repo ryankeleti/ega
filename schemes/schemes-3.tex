@@ -820,14 +820,14 @@ With the language introduced in \sref{1.3.4.5}, we can say that \emph{every geom
 
 \begin{defn}[3.5.4]
 \label{1.3.5.4}
-We say that a morphism $f:X\to Y$ of preschemes is universally injective, or a radical morphism, if, for every field $K$, the corresponding map $X(K)\to Y(K)$ is injective.
+We say that a morphism $f:X\to Y$ of preschemes is universally injective, or a radicial morphism, if, for every field $K$, the corresponding map $X(K)\to Y(K)$ is injective.
 \end{defn}
 
-It follows also from the definitions that every \emph{monomorphism of preschemes} (T,~1.1) is radical.
+It follows also from the definitions that every \emph{monomorphism of preschemes} (T,~1.1) is radicial.
 
 \begin{env}[3.5.5]
 \label{1.3.5.5}
-For a morphism $f:X\to Y$ to be radical, it suffices that the condition of Definition \sref{1.3.5.4} hold for every \emph{algebraically closed} field.
+For a morphism $f:X\to Y$ to be radicial, it suffices that the condition of Definition \sref{1.3.5.4} hold for every \emph{algebraically closed} field.
 In fact, if $K$ is an arbitrary field, and $K'$ an algebraically-closed extension of $K$, then the diagram
 \[
   \xymatrix{
@@ -845,8 +845,8 @@ However, $\vphi$ is injective, and so too is $\alpha'$ by hypothesis; so $\alpha
 \label{1.3.5.6}
 Let $f:X\to Y$ and $g:Y\to Z$ be two morphisms of preschemes.
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $f$ and $g$ are radical, then so is $g\circ f$.
-  \item Conversely, if $g\circ f$ is radical, then so is $f$.
+  \item If $f$ and $g$ are radicial, then so is $g\circ f$.
+  \item Conversely, if $g\circ f$ is radicial, then so is $f$.
 \end{enumerate}
 \end{prop}
 
@@ -859,8 +859,8 @@ Taking into account def.~\sref{1.3.5.4}, the proposition reduces to the correspo
 \label{1.3.5.7}
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item If the $S$-morphisms $f:X\to X'$ and $g:X\to X'$ are radical, then so is $f\times_S g$.
-  \item If the $S$-morphism $f:X\to Y$ is radical, then so is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
+  \item If the $S$-morphisms $f:X\to X'$ and $g:X\to X'$ are radicial, then so is $f\times_S g$.
+  \item If the $S$-morphism $f:X\to Y$ is radicial, then so is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
 \end{enumerate}
 \end{prop}
 
@@ -877,20 +877,20 @@ with the map $(X\times_S Y)(K)\to(X'\times_S Y')(K)$ corresponding to $f\times_S
 
 \begin{prop}[3.5.8]
 \label{1.3.5.8}
-For a morphism $f=(\psi,\theta):X\to Y$ to be radical, it is necessary and sufficient that $\psi$ be injective and that, for every $x\in X$, the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a radical extension of $\kres(\psi(x))$.
+For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient that $\psi$ be injective and that, for every $x\in X$, the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a radicial extension of $\kres(\psi(x))$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.5.8}
-We suppose that $f$ is radical and first show that the relation $\psi(x_1)=\psi(x_2)=y$ leads necessarily to $x_1=x_2$.
+We suppose that $f$ is radicial and first show that the relation $\psi(x_1)=\psi(x_2)=y$ leads necessarily to $x_1=x_2$.
 In fact, there exists a field $K$, an extension of $\kres(y)$, and $\kres(y)$-monomorphisms $\kres(x_1)\to K$ and $\kres(x_2)\to K$ (Bourbaki, \emph{Alg.}, chap.~V, §4, prop.~2); the corresponding morphisms $u_1:\Spec(K)\to X$ and $u_2:\Spec(K)\to X$ are then such that $f\circ u_1=f\circ u_2$, and so $u_1=u_2$ by hypothesis, and this implies, in particular, that $x_1=x_2$.
-We now consider $\kres(x)$ as the extension of $\kres(\psi(x))$ by means of $\theta^x$: if $\kres(x)$ is not a radical algebraically-closed extension, then there exist two distinct $\kres(\psi(x))$-monomorphisms from $\kres(x)$ to an algebraically-closed extension $K$ of $\kres(\psi(x))$ and the two corresponding morphisms $\Spec(K)\to X$ would contradict the hypothesis.
-Conversely, taking \sref{1.2.4.6} into account, it is immediate that the conditions stated are sufficient for $f$ to be radical.
+We now consider $\kres(x)$ as the extension of $\kres(\psi(x))$ by means of $\theta^x$: if $\kres(x)$ is not a radicial algebraically-closed extension, then there exist two distinct $\kres(\psi(x))$-monomorphisms from $\kres(x)$ to an algebraically-closed extension $K$ of $\kres(\psi(x))$ and the two corresponding morphisms $\Spec(K)\to X$ would contradict the hypothesis.
+Conversely, taking \sref{1.2.4.6} into account, it is immediate that the conditions stated are sufficient for $f$ to be radicial.
 \end{proof}
 
 \begin{cor}[3.5.9]
 \label{1.3.5.9}
-If $A$ is a ring and $S$ is a multiplicative set of $A$, then the canonical morphism $\Spec(S^{-1}A)\to\Spec(A)$ is radical.
+If $A$ is a ring and $S$ is a multiplicative set of $A$, then the canonical morphism $\Spec(S^{-1}A)\to\Spec(A)$ is radicial.
 \end{cor}
 
 \begin{proof}
@@ -900,8 +900,8 @@ Indeed, this morphism is a monomorphism \sref{1.1.6.2}.
 
 \begin{cor}[3.5.10]
 \label{1.3.5.10}
-Let $f:X\to Y$ be a radical morphism, $g:Y'\to Y$ a morphism, and $X'=X_{(Y')}=X\times_Y Y'$.
-Then the radical morphism $f_{(Y')}$ \sref{1.3.5.7}{(ii)} is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
+Let $f:X\to Y$ be a radicial morphism, $g:Y'\to Y$ a morphism, and $X'=X_{(Y')}=X\times_Y Y'$.
+Then the radicial morphism $f_{(Y')}$ \sref{1.3.5.7}{(ii)} is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
 \end{cor}
 
 \begin{proof}
@@ -920,9 +920,9 @@ The first claim follows from \sref{1.3.5.8} and \sref{1.3.4.8}; the second, from
 \begin{rmk}[3.5.11]
 \label{1.3.5.11}
 We say that a morphism $f=(\psi,\theta)$ of preschemes is \emph{injective} if the map $\psi$ is injective.
-For a morphism $f=(\psi,\theta):X\to Y$ to be radical, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}:X_{(Y')}\to Y'$ be injective (which justifies the terminology of a \emph{universally injective} morphism).
+For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}:X_{(Y')}\to Y'$ be injective (which justifies the terminology of a \emph{universally injective} morphism).
 In fact, the condition is necessary by \sref{1.3.5.7}[(ii)] and \sref{1.3.5.8}.
-Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ were not radical, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \sref{1.3.5.8}.
+Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ were not radicial, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \sref{1.3.5.8}.
 But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X_{(Y')}$ \sref{1.3.3.14}, which contradicts the hypothesis that $f_{(Y')}$ is injective.
 \end{rmk}
 
@@ -937,7 +937,7 @@ The projection $p:X\times_Y\Spec(\OO_y/\fk{a}_y)\to X$ is a homeomorphism from t
 
 \begin{proof}
 \label{proof-1.3.6.1}
-Since $\Spec(\OO_y/\fk{a}_y)\to Y$ is radical (\sref{1.3.5.4} and \sref{1.2.4.7}), $\Spec(\OO_y/\fk{a}_y)$ is a single point, and the ideal $\fk{m}_y/\fk{a}_y$ is nilpotent by hypothesis \sref{1.1.1.12}, we already know (\sref{1.3.5.10} and \sref{1.3.3.4}) that $p$ identifies, as \emph{sets}, the underlying space of $X\times_Y\Spec(\OO_y/\fk{a}_y)$ with $f^{-1}(y)$; everything boils down to proving that $p$ is a homeomorphism.
+Since $\Spec(\OO_y/\fk{a}_y)\to Y$ is radicial (\sref{1.3.5.4} and \sref{1.2.4.7}), $\Spec(\OO_y/\fk{a}_y)$ is a single point, and the ideal $\fk{m}_y/\fk{a}_y$ is nilpotent by hypothesis \sref{1.1.1.12}, we already know (\sref{1.3.5.10} and \sref{1.3.3.4}) that $p$ identifies, as \emph{sets}, the underlying space of $X\times_Y\Spec(\OO_y/\fk{a}_y)$ with $f^{-1}(y)$; everything boils down to proving that $p$ is a homeomorphism.
 By \sref{1.3.2.7}, the question is local on $X$ and $Y$, and so we can suppose that $X=\Spec(B)$ and $Y=\Spec(A)$, with $B$ being an $A$-algebra.
 The morphism $p$ then corresponds to the homomorphism $1\otimes\vphi:B\to B\otimes_A A'$, where $A'=A_y/\fk{a}_y$ and $\vphi$ is the canonical map from $A$ to $A'$.
 Then every element of $B\otimes_A A'$ can be written as

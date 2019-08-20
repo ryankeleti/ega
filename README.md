@@ -5,7 +5,7 @@ Amateur translation (French to English) of A. Grothendieck's EGA, starting with 
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 To compile, `make book`, `make pdfs`, or `make all`.
-For compiled PDFs, go to the [releases page].
+For compiled PDFs, go to the [releases page](https://github.com/ryankeleti/ega/releases).
 
 ## Current status
 

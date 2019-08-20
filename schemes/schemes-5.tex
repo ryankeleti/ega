@@ -33,4 +33,72 @@ it is also the smallest subprescheme of $X$ that has $X$ as its underlying space
 
 \begin{proof}
 \label{proof-1.5.1.2}
+Since the structure sheaf of the closed subprescheme of $Y$ defined by $\sh{N}_X$ is $\OO_X/\sh{N}_X$, it is immediate that $Y$ is reduced and has $X$ as its underlying space, because $\sh{N}_x\neq\OO_x$ for any $x\in X$.
+To show the other claims, note that a subprescheme $Z$ of $X$ that has $X$ as its underlying space is defined by a sheaf of ideals $\sh{I}$ \sref{1.4.1.3} such that $\sh{I}_x\neq\OO_x$ for any $x\in X$.
+We can restrict to the case where $X$ is affine, say $X=\Spec(A)$ and $\sh{I}=\wt{\fk{I}}$, where $\fk{I}$ is an ideal of $A$;
+then, for every $x\in X$, we have $\fk{I}_x\subset\fk{j}_x$, and so $\fk{I}$ is contained in every prime ideal of $A$, and so also in their intersection $\nilrad$, the nilradical of $A$.
+This proves that $Y$ is the small subprescheme of $X$ that has $X$ as its underlying space \sref{1.4.1.9};
+furthermore, if $Z$ is distinct from $Y$, we necessarily have $\sh{I}_x\neq\sh{N}_x$ for at least one $x\in X$, and so \sref{1.5.1.1} $Z$ is not reduced.
+\end{proof}
+
+\begin{defn}[5.1.3]
+\label{1.5.1.3}
+We define the reduced prescheme associated to a prescheme $X$, denoted by $X_\mathrm{red}$, to be the unique reduced subprescheme of $X$ that has $X$ as its underlying space.
+\end{defn}
+
+Saying that a prescheme $X$ is reduced thus implies that $X=X_\mathrm{red}$.
+
+\begin{prop}[5.1.4]
+\label{1.5.1.4}
+For the prime spectrum of a ring $A$ to be a reduced (\emph{resp.} integral) prescheme \sref{1.2.1.7}, it is necessary and sufficient that $A$ be a reduced (\emph{resp.} integral) ring.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.1.4}
+Indeed, it follows immediately from \sref{1.5.1.1} that the condition $\sh{N}=(0)$ is necessary and sufficient for $X=\Spec(A)$ to be reduced;
+the claim relating to integral rings is then a consequence of \sref{1.1.1.13}.
+\end{proof}
+
+Since every ring of fractions $\neq\{0\}$ of an integral ring is integral, it follows from \sref{1.5.1.4} that, for every \emph{locally integral} prescheme $X$, $\OO_x$ is an \emph{integral} ring for every $x\in X$.
+The converse is true whenever the underlying space of $X$ is \emph{locally Noetherian}:
+indeed, $X$ is then reduced, and if $U$ is an affine open subset of $X$, which is a Noetherian space, then $U$ has only a finite number of irreducible components, and so its ring $A$ has only a finite number of minimal prime ideals \sref{1.1.1.14}.
+If two of these components $U_i$ had a common point $x$, then $\OO_x$ would have at least two distinct minimal prime ideals, and would thus not be integral;
+the $U_i$ are thus open subsets that are pairwise disjoint, and each of them is thus integral.
+
+\begin{env}[5.1.5]
+\label{1.5.1.5}
+Let $f=(\psi,\theta):X\to Y$ be a morphism of preschemes;
+\oldpage[I]{129}
+the homomorphism $\theta_x^\#:\OO_{\psi(x)}\to\OO_x$ sends each nilpotent element of $\OO_{\psi(x)}$ to a nilpotent element of $\OO_x$;
+by passing to the quotients, $\theta^\#$ induces a homomorphism
+\begin{equation*}
+    \omega:\psi^*(\OO_Y/\sh{N}_Y)\to\OO_X/\sh{N}_X.
+\end{equation*}
+It is clear that, for every $x\in X$, $\omega_x:\OO_{\psi(x)}/\sh{N}_{\psi(x)}\to\OO_x/\sh{N}_x$ is a local homomorphism, and so $(\psi,\omega^\flat)$ is a morphism of preschemes $X_\mathrm{red}\to Y_\mathrm{red}$, which we denote by $f_\mathrm{red}$, and call the \emph{reduced} morphism associated to $f$.
+It is immediate that, for two morphisms $f:X\to Y$ and $g:Y\to Z$, we have $(g\circ f)_\mathrm{red}=g_\mathrm{red}\circ f_\mathrm{red}$, and so we have defined $X_\mathrm{red}$ as a \emph{covariant functor} in $X$.
+
+The preceding definition shows that the diagram
+\begin{equation*}
+    \xymatrix{
+        X_\mathrm{red} \ar[r]^{f_\mathrm{red}} \ar[d]
+        & Y_\mathrm{red} \ar[d]\\
+        X \ar[r]_f
+        &Y
+    }
+\end{equation*}
+is commutative, where the vertical arrows are the injection morphisms;
+in other words, $X_\mathrm{red}\to X$ is a \emph{functorial} morphism.
+We note in particular that, if $X$ is reduced, every morphism $f:X\to Y$ factors as $X\xrightarrow{f_\mathrm{red}}Y_\mathrm{red}\to Y$;
+in other words, $f$ is \unsure{bounded above} by the injection morphism $Y_\mathrm{red}\to Y$.
+\end{env}
+
+\begin{prop}[5.1.6]
+\label{1.5.1.6}
+Let $f:X\to Y$ be a morphism;
+if $f$ is surjective (\emph{resp.} radicial, an immersion, a closed immersion, an open immersion, a local immersion, a local isomorphism), then so too is $f_\mathrm{red}$.
+Conversely, if $f_\mathrm{red}$ is surjective (\emph{resp.} radicial), then so too is $f$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.1.6}
 \end{proof}
