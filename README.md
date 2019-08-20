@@ -20,6 +20,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 5. Quasi-coherent sheaves and coherent sheaves (@ryankeleti)
     + [x] 6. Flatness (@ryankeleti)
     + [x] 7. Adic rings (@ryankeleti)
+- [ ] Preliminaries (EGA III)
     + [ ] 8. Representable functors (@ryankeleti)
     + [ ] 9. Constructible sets
     + [ ] 10. Supplement on flat modules
@@ -49,4 +50,41 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 9. Supplement on quasi-coherent sheaves (@thosgood)
     + [ ] 10. Formal schemes (@thosgood, @ryankeleti)
 - [ ] Elementary global study of some classes of morphisms (EGA II)
-
+    + [ ] 1. Affine morphisms
+    + [ ] 2. Homogeneous prime spectra
+    + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
+    + [ ] 4. Projective bundles. Ample sheaves
+    + [ ] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms
+    + [ ] 6. Integral morphisms and finite morphisms
+    + [ ] 7. Valuative criteria
+    + [ ] 8. Blowup schemes; projective cones; projective closure
+- [ ] Cohomological study of coherent sheaves (EGA III)
+    + [ ] 1. Cohomology of affine schemes
+    + [ ] 2. Cohomological study of projective morphisms
+    + [ ] 3. Finiteness theorem for proper morphisms
+    + [ ] 4. The fundamental theorem of proper morphisms. Applications
+    + [ ] 5. An existence theorem for coherent algebraic coherent sheaves
+    + [ ] 6. Local and global Tor functors; Kunneth formula
+    + [ ] 7. Base change for homological functors of sheaves of modules
+- [ ] Local study of schemes and their morphisms (EGA IV)
+    + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes
+    + [ ] 2. Base change and flatness
+    + [ ] 3. Associated prime cycles and primary decomposition
+    + [ ] 4. Change of base field for algebraic preschemes
+    + [ ] 5. Dimension, depth, and regularity of locally Noetherian preschemes
+    + [ ] 6. Flat morphisms of locally Noetherian
+    + [ ] 7. Relations between a local Noetherian ring and its completion. Excellent rings
+    + [ ] 8. Projective limits of preschemes
+    + [ ] 9. Constructible properties
+    + [ ] 10. Jacobson preschemes
+    + [ ] 11. Topological properties of finitely presented flat morphisms. Flatness criteria
+    + [ ] 12. Fibres of finitely presented flat morphisms
+    + [ ] 13. Equidimensional morphisms
+    + [ ] 14. Universally open morphisms
+    + [ ] 15. Fibres of a universally open morphism
+    + [ ] 16. Differential invariants. Differentially smooth morphisms
+    + [ ] 17. Smooth morphisms, unramified morphisms, and étale morphisms
+    + [ ] 18. Supplement on étale morphisms. Henselian local rings and strictly local rings
+    + [ ] 19. Regular immersions and normal flatness
+    + [ ] 20. Meromorphic functions and pseudo-morphisms
+    + [ ] 21. Divisors
