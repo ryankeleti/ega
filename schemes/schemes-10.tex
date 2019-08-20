@@ -83,7 +83,7 @@ $B_{\{g\}}\to A_{\{\vphi(g)\}}$ induced by $\vphi$ \sref[0]{0.7.6.7} sends $\fk{
 
 Conversely, let $(\psi,\theta)$ be a morphism satisying the condition in the statement; according to \sref{1.10.1.3}, $\theta$ defines a continuous ring homomorphism
 \[
-  \vphi=\Gamma(\theta):B=\Gamma(\fk{Y},\OO_\fk{Y})\longrightarrow\Gamma(\fk{X},\OO_\fk{X})=A.
+  \vphi=\Gamma(\theta):B=\Gamma(\fk{Y},\OO_\fk{Y})\to\Gamma(\fk{X},\OO_\fk{X})=A.
 \]
 By virtue of the hypothesis on $\theta$, for the section $\vphi(g)$ of $\OO_\fk{X}$ over $\fk{X}$ to be an invertible germ at the point $x$, it is necessary and sufficient that $g$ is an invertible germ at the point $\psi(x)$.
 But according to \sref[0]{0.7.6.17}, the sections of $\OO_\fk{X}$ (resp. $\OO_\fk{Y}$) over $\fk{X}$ (resp. $\OO_\fk{Y}$) whose germ is not invertible at the point $x$ (resp. $\psi(x)$) are exactly the elements of
@@ -374,7 +374,7 @@ Let $\fk{X}$ and $\fk{Y}$ be two formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be
   \item If $f=(\psi,\theta)$, then the hypotheses imply that the image under $\theta^\sharp:\psi^*(\OO_\fk{Y})\to\OO_\fk{X}$ of the sheaf of ideals $\psi^*(\sh{K})$ of $\psi^*(\OO_\fk{Y})$ is contained in $\sh{J}$ \sref[0]{0.4.3.5}.
     By passing to quotients, we thus induce from $\theta^\sharp$ a homomorphism of sheaves of rings
     \[
-      \omega:\psi^*(\OO_\fk{Y}/\sh{K})=\psi^*(\OO_\fk{Y})/\psi^*(\sh{K})\longrightarrow\OO_\fk{X}/\sh{J};
+      \omega:\psi^*(\OO_\fk{Y}/\sh{K})=\psi^*(\OO_\fk{Y})/\psi^*(\sh{K})\to\OO_\fk{X}/\sh{J};
     \]
     in addition, as for all $x\in\fk{X}$, $\theta_x^\sharp$ is a \emph{local} homomorphism, so is $\omega_x$.
     The morphism of ringed spaces $(\psi,\omega^\flat)$ is thus \sref{1.2.2.1} the unique morphism $f'$ of ringed spaces which we need.
@@ -416,7 +416,7 @@ With the notations of \sref{1.10.6.1}, the formal prescheme $\fk{X}$ and the mor
 \label{proof-1.10.6.2}
 Let $\fk{Y}$ be a formal prescheme, and for each index $\lambda$, let
 \[
-  g_\lambda=(\psi_\lambda,\theta_\lambda):X_\lambda\longrightarrow\fk{Y}
+  g_\lambda=(\psi_\lambda,\theta_\lambda):X_\lambda\to\fk{Y}
 \]
 be a morphism such that we have $g_\lambda=g_\mu\circ f_{\mu\lambda}$ for $\sh{J}_\mu\subset\sh{J}_\lambda$.
 This latter condition and the definition of the $X_\lambda$ imply first that the $\psi_\lambda$ are identical to a continuous map $\psi:\fk{X}\to\fk{Y}$ of the underlying spaces; in addition, the homomorphism $\theta_\lambda^\sharp:\psi^*(\OO_\fk{Y})\to\OO_{X_i}=\OO_\fk{X}/\sh{J}_\lambda$ form a \emph{projective system} of homomorphisms of sheaves of rings.
@@ -489,5 +489,19 @@ As the underlying spaces of $\fk{X}$ and $X_0$ are the same, the question is loc
 \end{proof}
 
 In particular, \emph{every locally Noetherian formal prescheme $\fk{X}$} is the inductive limit of a sequence $(X_n)$ of locally Noetherian (usual) preschemes satisfying the conditions of Proposition \sref{1.10.3.6} and Corollary \sref{1.10.6.4}: it suffices to consider a sheaf of ideals of definition $\sh{J}$ for $\fk{X}$ \sref{1.10.5.4} and by setting $X_n=(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$ (\sref{1.10.5.1} and Proposition \sref{1.10.6.2}).
+
+\begin{cor}[10.6.5]
+\label{1.10.6.5}
+Let $A$ be an admissible ring.
+For the formal affine scheme $\fk{X}=\Spf(A)$ to be Noetherian, it is necessary and sufficient for $A$ to be adic and Noetherian.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.6.5}
+The condition is evidently sufficient.
+Conversely, suppose that $\fk{X}$ is Noetherian, and let $\fk{J}$ be an ideal of definition for $A$, $\sh{J}=\fk{J}^\Delta$ the corresponding sheaf of ideals of definition for $\fk{X}$.
+The (usual) preschemes $X_n=(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$ are then affine and Noetherian, so the rings $A_n=A/\fk{J}^{n+1}$ are Noetherian \sref{1.6.1.3}, hence we conclude that $\fk{J}/\fk{J}^2$ is an $A/\fk{J}$-module of finite type.
+As the $\sh{J}^n$ form a fundamental system of sheaves of ideals of definition for $\fk{X}$ \sref{1.10.5.1}, we have $\OO_\fk{X}=\varprojlim\OO_\fk{X}/\sh{J}^n$ \sref{1.10.5.3}; we conclude \sref{1.10.1.3} that $A$ is topologically isomorphic to $\varprojlim A/\fk{J}^n$, which is adic and Noetherian \sref[0]{0.7.2.8}.
+\end{proof}
 
 

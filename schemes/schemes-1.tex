@@ -254,7 +254,7 @@ $V(\fk{a})\cap V(\fk{J})\neq 0$, hence the proposition.
 \label{1.1.2.1}
 Let $A$, $A'$ be two rings,
 \[
-  \vphi:A'\longrightarrow A
+  \vphi:A'\to A
 \]
 a homomorphism of rings. For each prime ideal $x=\fk{j}_x\in\Spec(A)=X$, the
 ring $A'/\vphi^{-1}(\fk{j}_x)$ is canonically isomorphic to a subring of
@@ -262,14 +262,14 @@ $A/\fk{j}_x$, so it is integral, otherwise we say
 $\vphi^{-1}(\fk{j}_x)$ is a prime ideal of $A'$; we denote it by
 ${}^a\vphi(x)$, and we have also defined a map
 \[
-  {}^a\vphi:X=\Spec(A)\longrightarrow X'=\Spec(A')
+  {}^a\vphi:X=\Spec(A)\to X'=\Spec(A')
 \]
 (also denoted $\Spec(\vphi)$) we call this the map \emph{associated} to the
 homomorphism $\vphi$. We denote by $\vphi^x$ the injective homomorphism of
 $A'/\vphi^{-1}(\fk{j}_x)$ to $A/\fk{j}_x$ induced by $\vphi$ by
 passing to quotients, so the canonical extension is a monomorphism of fields
 \[
-  \vphi^x:\kres({}^a\vphi(x))\longrightarrow\kres(x);
+  \vphi^x:\kres({}^a\vphi(x))\to\kres(x);
 \]
 for each $f'\in A'$, we therefore have by definition
 \[
@@ -413,7 +413,7 @@ If $D(f)=D(g)$, then Lemma \sref{1.1.3.2}, (b), shows that $M_f=M_g$. More gener
 $D(f)\supset D(g)$, then $S_f'\subset S_g'$, and we know \sref[0]{0.1.4.1} that there exists
 a canonical functorial homomorphism
 \[
-  \rho_{g,f}:M_f\longrightarrow M_g,
+  \rho_{g,f}:M_f\to M_g,
 \]
 and if $D(f)\supset D(g)\supset D(h)$, we have \sref[0]{0.1.4.4}
 \[
@@ -430,7 +430,7 @@ the union of the $S_f'$ for $f\in A-\fk{j}_x$ is $A-\fk{j}_x$, we conclude
 \sref[0]{0.1.4.5} that the $A_x$-module $M_x$ canonically identifies with the \emph{inductive
 limit} $\varinjlim M_f$, relative to the family of homomorphisms $(\rho_{g,f})$. We denote by
 \[
-  \rho_x^f:M_f\longrightarrow M_x
+  \rho_x^f:M_f\to M_x
 \]
 the canonical homomorphism for $f\in A-\fk{j}_x$ (or, equivalently, $x\in D(f)$).
 
@@ -447,10 +447,10 @@ of the $D(f)$ for $f\in A$ (\sref{1.1.1.10}, \sref[0]{0.3.2.1}, and
 We saw \sref[0]{0.3.2.4} that the stalk $\wt{A}_x$ (resp. $\wt{M}_x$)
 \emph{identifies with the ring $A_x$} (resp. \emph{the $A_x$-module $M_x$}); we denote by
 \[
-  \theta_f:A_f\longrightarrow\Gamma(D(f),\wt{A})
+  \theta_f:A_f\to\Gamma(D(f),\wt{A})
 \]
 \[
-  (\text{resp. }\theta_f:M_f\longrightarrow\Gamma(D(f),\wt{M})),
+  (\text{resp. }\theta_f:M_f\to\Gamma(D(f),\wt{M})),
 \]
 the canonical map, so that for each $x\in D(f)$ and each $\xi\in M_f$, we have
 \[
@@ -508,7 +508,7 @@ $\wt{M}|D(f)$ then follows from the definitions.
 \label{1.1.3.7}
 For each $A$-module $M$ and each $f\in A$, the homomorphism
 \[
-  \theta_f:M_f\longrightarrow\Gamma(D(f),\wt{M})
+  \theta_f:M_f\to\Gamma(D(f),\wt{M})
 \]
 is bijective \emph{(in other words, the presheaf $D(f)\mapsto M_f$ is a \emph{sheaf})}. In
 particular, $M$ identifies with $\Gamma(X,\wt{M})$ via $\theta_1$.
@@ -606,10 +606,10 @@ is commutative; so we have necessarily that $w=u_f$ for all $f\in A$
 \begin{enumerate}[label=(\roman*)]
   \item It suffices to apply the fact that $\wt{M}$ is an exact functor in $M$ \sref{1.1.3.5} to the two exact sequences of $A$-modules
     \[
-      0\longrightarrow\Ker u\longrightarrow M\longrightarrow\Im u\longrightarrow 0,
+      0\to\Ker u\to M\to\Im u\to 0,
     \]
     \[
-      0\longrightarrow\Im u\longrightarrow N\longrightarrow\Coker u\longrightarrow 0.
+      0\to\Im u\to N\to\Coker u\to 0.
     \]
     The second assertion then follows from Theorem \sref{1.1.3.7}.
   \item Let $(M_\lambda,g_{\mu\lambda})$ be an inductive system of $A$-modules, with inductive limit $M$, and let $g_\lambda$ be the canonical homomorphism $M_\lambda\to M$.
@@ -690,7 +690,7 @@ Let $M$, $N$ be two $A$-modules.
 \begin{enumerate}[label=(\roman*)]
   \item The sheaf $\sh{F}=\wt{M}\otimes_{\wt{A}}\wt{N}$ is associated to the presheaf
     \[
-      U\longmapsto\sh{F}(U)=\Gamma(U,\wt{M})\otimes_{\Gamma(U,\wt{A})}\Gamma(U,\wt{N}),
+      U\mapsto\sh{F}(U)=\Gamma(U,\wt{M})\otimes_{\Gamma(U,\wt{A})}\Gamma(U,\wt{N}),
     \]
     $U$ varying over the basis \sref{1.1.1.10}, (i) of $X$ consisting of the
     $D(f)$, where $f\in A$. We have that $\sh{F}(D(f))$ canonically identifies with
@@ -711,7 +711,7 @@ Let $M$, $N$ be two $A$-modules.
     \]
   \item The sheaf $\sh{G}=\shHom_{\wt{A}}(\wt{M},\wt{N})$ is associated to the presheaf
     \[
-      U\longmapsto\sh{G}(U)=\Hom_{\wt{A}|U}(\wt{M}|U,\wt{N}|U),
+      U\mapsto\sh{G}(U)=\Hom_{\wt{A}|U}(\wt{M}|U,\wt{N}|U),
     \]
     $U$ varying over the basis of $X$ consisting of the $D(f)$. We have that $\sh{G}(D(f))$ canonically
     identifies with $\Hom_{A_f}(M_f,N_f)$ (Proposition \sref{1.1.3.6} and
@@ -1020,12 +1020,12 @@ Let $A$, $A'$ be two rings,
 \]
 a homomorphism,
 \[
-  {}^a\vphi:X=\Spec(A)\longrightarrow X'=\Spec(A')
+  {}^a\vphi:X=\Spec(A)\to X'=\Spec(A')
 \]
 the continuous map associated to $\vphi$ \sref{1.1.2.1}. We will define a \emph{canonical
 homomorphism}
 \[
-  \wt{\vphi}:\OO_{X'}\longrightarrow{}^a\vphi_*(\OO_X)
+  \wt{\vphi}:\OO_{X'}\to{}^a\vphi_*(\OO_X)
 \]
 of sheaves of rings. For each $f'\in A'$, we put $f=\vphi(f')$; we have
 ${}^a\vphi^{-1}(D(f'))=D(f)$ (1.2.2.2). The rings $\Gamma(D(f'),\wt{A'})$ and
@@ -1034,7 +1034,7 @@ $\Gamma(D(f),\wt{A})$ identify respectively with $A_{f'}'$ and $A_f$
 homomorphism $\vphi_{f'}:A_{f'}'\to A_f$ \sref[0]{0.1.5.1}, in other words, we have a
 homomorphism of rings
 \[
-  \Gamma(D(f),\wt{A'})\longrightarrow\Gamma({}^a\vphi^{-1}(D(f')),\wt{A})
+  \Gamma(D(f),\wt{A'})\to\Gamma({}^a\vphi^{-1}(D(f')),\wt{A})
   =\Gamma(D(f'),{}^a\vphi_*(\wt{A}))
 \]
 \oldpage[I]{94}
@@ -1052,14 +1052,14 @@ is commutative \sref[0]{0.1.5.1}; we have thus defined a homomorphism of $\OO_{X
 as the $D(f')$ form a basis for the topology og $X'$ \sref[0]{0.3.2.3}. The pair
 $\Phi=({}^a\vphi,\wt{\vphi})$ is thus a \emph{morphism} of ringed spaces
 \[
-  \Phi:(X,\OO_X)\longrightarrow(X',\OO_{X'}),
+  \Phi:(X,\OO_X)\to(X',\OO_{X'}),
 \]
 \sref[0]{0.4.1.1}.
 
 We note further that, if we put $x'={}^a\vphi(x)$, then the homomorphism
 $\wt{\vphi}_x^\sharp$ \sref[0]{0.3.7.1} is none other than the homomorphism
 \[
-  \vphi_x:A_{x'}'\longrightarrow A_x
+  \vphi_x:A_{x'}'\to A_x
 \]
 canonically induced by $\vphi:A'\to A$ \sref[0]{0.1.5.1}. Indeed, each $z'\in A_{x'}'$
 can be written as $g'/f'$, where $f'$, $g'$ are in $A'$ and $f'\not\in\fk{j}_{x'}$;
@@ -1208,7 +1208,7 @@ presentation}; it then follows from \sref{1.1.6.7} and \sref{1.1.3.12}, (ii) tha
 canonical homomorphism \sref[0]{0.4.4.6}
 \[
   \Phi^*(\shHom_{\wt{A'}}(\wt{N_1'},\wt{N_2'}))
-  \longrightarrow\shHom_{\wt{A}}(\Phi^*(\wt{N_1'}),\Phi^*(\wt{N_2'}))
+  \to\shHom_{\wt{A}}(\Phi^*(\wt{N_1'}),\Phi^*(\wt{N_2'}))
 \]
 is none other than $\wt{\gamma}$, where $\gamma$ denotes the canonical homomorphism
 of $A$-modules
@@ -1285,7 +1285,7 @@ We prove that the condition is sufficient. By definition, $\theta$ is a homomorp
 $\OO_Y\to\psi_*(\OO_X)$, and we canonically obtain a ring homomorphism
 \[
   \vphi=\Gamma(\theta):B=\Gamma(Y,\OO_Y)
-  \longrightarrow\Gamma(Y,\psi_*(\OO_X))=\Gamma(X,\OO_X)=A.
+  \to\Gamma(Y,\psi_*(\OO_X))=\Gamma(X,\OO_X)=A.
 \]
 
 The hypotheses on $\theta_x^\sharp$ allow us to deduce from this homomorphism, by passing to
@@ -1364,7 +1364,7 @@ We note first that if $(X,\OO_X)$, $(S,\OO_S)$ are any two ringed spaces, a morp
 $(\psi,\theta)$ from $(X,\OO_X)$ to $(S,\OO_S)$ canonically defines a ring homomorphism
 $\Gamma(\theta):\Gamma(S,\OO_S)\to\Gamma(X,\OO_X)$, hence a first map
 \[
-  \rho:\Hom((X,\OO_X),(S,\OO_S))\longrightarrow\Hom(\Gamma(S,\OO_S),\Gamma(X,\OO_X)).
+  \rho:\Hom((X,\OO_X),(S,\OO_S))\to\Hom(\Gamma(S,\OO_S),\Gamma(X,\OO_X)).
   \tag{1.8.1.1}
 \]
 Conversely, under the stated hypotheses, we set $A=\Gamma(S,\OO_S)$, and consider a ring
@@ -1375,7 +1375,7 @@ we denote ${}^a\vphi(x)$. In addition, for each $f\in A$, we have by definition
 \sref[0]{0.5.5.2} that ${}^a\vphi(D(f))=X_f$, which proves that ${}^a\vphi$ is a
 \emph{continuous map} $X\to S$. We define then a homomorphism
 \[
-  \wt{\vphi}:\OO_S\longrightarrow{}^a\vphi_*(\OO_X)
+  \wt{\vphi}:\OO_S\to{}^a\vphi_*(\OO_X)
 \]
 of $\OO_S$-modules; for each $f\in A$, we have $\Gamma(D(f),\OO_S)=A_f$ \sref{1.1.3.6};
 for each $s\in A$, we correspond to $s/f\in A_f$ the element
@@ -1427,12 +1427,12 @@ of morphisms of locally ringed spaces from $X$ to $Y$ (the set denoted $\fk{L}$ 
 to $Y$, we will denote it by $\Hom_\text{rs}(X,Y)$ to avoid any confusion. The map (1.8.1.1)
 is then written as
 \[
-  \rho:\Hom_\text{rs}(X,Y)\longrightarrow\Hom(\Gamma(Y,\OO_Y),\Gamma(X,\OO_X))
+  \rho:\Hom_\text{rs}(X,Y)\to\Hom(\Gamma(Y,\OO_Y),\Gamma(X,\OO_X))
   \tag{1.8.2.1}
 \]
 and its restriction
 \[
-  \rho':\Hom(X,Y)\longrightarrow\Hom(\Gamma(Y,\OO_Y),\Gamma(X,\OO_X))
+  \rho':\Hom(X,Y)\to\Hom(\Gamma(Y,\OO_Y),\Gamma(X,\OO_X))
   \tag{1.8.2.2}
 \]
 is a \emph{functorial} map in $X$ and $Y$ on the category of locally ringed spaces.
@@ -1473,7 +1473,7 @@ that we have $i_*(\wt{M})=M'$ \sref{1.1.3.7}.
 With the notation of \sref{1.1.8.4}, for each $A$-module $M$, the canonical functorial
 $\OO_S$-homomorphism \emph{(\textbf{0}, 4.4.3.3)}
 \[
-  i^*(i_*(\wt{M}))\longrightarrow\wt{M}
+  i^*(i_*(\wt{M}))\to\wt{M}
   \tag{1.8.5.1}
 \]
 is an isomorphism.
@@ -1533,14 +1533,14 @@ $X$, $Y$ are two locally ringed spaces and if $(Y',A')$ is the ringed space whos
 space is a point and whose sheaf of rings $A'$ is the simple sheaf defined by the
 ring $\Gamma(Y,\OO_Y)$, we can interpret (1.8.2.1) as a map
 \[
-  \rho:\Hom_\text{rs}(X,Y)\longrightarrow\Hom(X,Y').
+  \rho:\Hom_\text{rs}(X,Y)\to\Hom(X,Y').
   \tag{1.8.8.1}
 \]
 The result of Corollary \sref{1.1.8.3} is interpreted by saying that affine schemes are
 characterized among locally ringed spaces as those for which the restriction o $\rho$ to
 $\Hom(X,Y)$:
 \[
-  \rho':\Hom(X,Y)\longrightarrow\Hom(X,Y')
+  \rho':\Hom(X,Y)\to\Hom(X,Y')
   \tag{1.8.8.2}
 \]
 is \emph{bijective} for \emph{each} locally ringed space $X$. In the following chapter, we
@@ -1561,8 +1561,7 @@ $(X,\sh{F})$ and $(Y,\sh{G})$ fixed) form a set which we denote by
 $\Hom((X,\sh{F}),(Y,\sh{G}))$; the map $(u,h)\mapsto(\rho'(u),\Gamma(h))$ is a canonical
 map
 \[
-  \Hom((X,\sh{F}),(Y,\sh{G}))
-  \longrightarrow\Hom((\Gamma(Y,\OO_Y),\Gamma(Y,\sh{G})),(\Gamma(X,\OO_X),\Gamma(X,\sh{F})))
+  \Hom((X,\sh{F}),(Y,\sh{G}))\to\Hom((\Gamma(Y,\OO_Y),\Gamma(Y,\sh{G})),(\Gamma(X,\OO_X),\Gamma(X,\sh{F})))
   \tag{1.8.9.1}
 \]
 \emph{functorial} in $(X,\sh{F})$ and $(Y,\sh{G})$, the right hand side being the set of

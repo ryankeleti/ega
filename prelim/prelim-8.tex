@@ -31,7 +31,7 @@ $h_X\to h_{X'}$} (T, 1.2), also a morphism in the category $\CHom(\C\op,\Set)$ (
 definitions of $h_X$ and of $h_w$ therefore constitute the definition of a \emph{canonical
 covariant functor}
 \[
-  h:\C\longrightarrow\CHom(\C\op,\Set),\quad X\longmapsto h_X.
+  h:\C\to\CHom(\C\op,\Set),\quad X\mapsto h_X.
   \tag{8.1.2.1}
 \]
 \end{env}
@@ -59,26 +59,26 @@ is commutative. In particular, we have a map $g(X):h_X(X)=\Hom(X,X)\to F(X)$, he
 \]
 and as a result a canonical map
 \[
-  \alpha:\Hom(h_X,F)\longrightarrow F(X).
+  \alpha:\Hom(h_X,F)\to F(X).
   \tag{8.1.3.3}
 \]
 
 Conversely, consider an element $\xi\in F(X)$; for each morphism $v:Y\to X$ in $\C$, $F(v)$ is a
 map $F(X)\to F(Y)$; consider the map
 \[
-  v\longmapsto(F(v))(\xi)
+  v\mapsto(F(v))(\xi)
   \tag{8.1.3.4}
 \]
 from $h_X(Y)$ to $F(Y)$; if we denote by $(\beta(\xi))(Y)$ this map,
 \[
-  \beta(\xi):h_X\longrightarrow F
+  \beta(\xi):h_X\to F
   \tag{8.1.3.5}
 \]
 is a \emph{natural transformation}, since for each morphism $u:Y\to Y'$ in $\C$ we have
 $(F(vu))(\xi)=(F(v)\circ F(u))(\xi)$, which makes (8.1.3.1) commutative for $g=\beta(\xi)$.
 We have thus defined a canonical map
 \[
-  \beta:F(X)\longrightarrow\Hom(h_X,F).
+  \beta:F(X)\to\Hom(h_X,F).
   \tag{8.1.3.6}
 \]
 \end{env}
@@ -108,12 +108,12 @@ are objects of $\C$, and that if $X'$, $Y'$ are two objects of $\C'$, then the s
 $\Hom_{\C'}(X',Y')$ of morphisms $X'\to Y'$ \emph{in $\C'$} is a subset of the set $\Hom_\C(X',Y')$ of
 morphisms $X'\to Y'$ \emph{in $\C$}, the canonical map of ``composition of morphisms''
 \[
-  \Hom_{\C'}(X',Y')\times\Hom_{\C'}(Y',Z')\longrightarrow\Hom_{\C'}(X',Z')
+  \Hom_{\C'}(X',Y')\times\Hom_{\C'}(Y',Z')\to\Hom_{\C'}(X',Z')
 \]
 \oldpage[0\textsubscript{III}]{7}
 being the restriction of the canonical map
 \[
-  \Hom_\C(X',Y')\times\Hom_\C(Y',Z')\longrightarrow\Hom_\C(X',Z').
+  \Hom_\C(X',Y')\times\Hom_\C(Y',Z')\to\Hom_\C(X',Z').
 \]
 
 We say that $\C'$ is a \emph{full} subcategory of $\C$ if $\Hom_{\C'}(X',Y')=\Hom_\C(X',Y')$ for every

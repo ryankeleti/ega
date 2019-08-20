@@ -157,14 +157,14 @@ $\Hom_\sh{A}(\sh{F},\sh{G})$ are \emph{left exact} in $\sh{F}$ and $\sh{G}$;
 more precisely, if we have an exact sequence of the form
 $0\to\sh{G}'\to\sh{G}\to\sh{G}''$, the sequence
 \[
-  0\longrightarrow\shHom_\sh{A}(\sh{F},\sh{G}')\longrightarrow
-  \shHom_\sh{A}(\sh{F},\sh{G})\longrightarrow\shHom_\sh{A}(\sh{F},\sh{G}'')
+  0\to\shHom_\sh{A}(\sh{F},\sh{G}')\to
+  \shHom_\sh{A}(\sh{F},\sh{G})\to\shHom_\sh{A}(\sh{F},\sh{G}'')
 \]
 is exact, and if we have an exact sequence of the form
 $\sh{F}'\to\sh{F}\to\sh{F}''\to 0$, the sequence
 \[
-  0\longrightarrow\shHom_\sh{A}(\sh{F}'',\sh{G})\longrightarrow
-  \shHom_\sh{A}(\sh{F},\sh{G})\longrightarrow\shHom_\sh{A}(\sh{F}',\sh{G})
+  0\to\shHom_\sh{A}(\sh{F}'',\sh{G})\to
+  \shHom_\sh{A}(\sh{F},\sh{G})\to\shHom_\sh{A}(\sh{F}',\sh{G})
 \]
 is exact, with the analogous properties for the functor $\Hom$. In addiiton,
 $\shHom_\sh{A}(\sh{A},\sh{G})$ canonically identifies with $\sh{G}$; finally,
@@ -278,21 +278,21 @@ Let $\sh{M}$, $\sh{N}$ be two $\sh{A}$-modules. For each open set $U$ of $Y$, we
 have a canonical map
 \[
   \Gamma(\psi^{-1}(U),\sh{M})\times\Gamma(\psi^{-1}(U),\sh{N})
-  \longrightarrow\Gamma(\psi^{-1}(U),\sh{M}\otimes_\sh{A}\sh{N})
+  \to\Gamma(\psi^{-1}(U),\sh{M}\otimes_\sh{A}\sh{N})
 \]
 which is bilinear over the ring
 $\Gamma(\psi^{-1}(U),\sh{A})=\Gamma(U,\psi_*(\sh{A}))$, and \emph{a fortiori}
 over $\Gamma(U,\sh{B})$; it therefore defines a homomorphism
 \[
   \Gamma(U,\Psi_*(\sh{M}))\otimes_{\Gamma(U,\sh{B})}\Gamma(U,\Psi_*(\sh{N}))
-  \longrightarrow\Gamma(U,\Psi_*(\sh{M}\otimes_\sh{A}\sh{N}))
+  \to\Gamma(U,\Psi_*(\sh{M}\otimes_\sh{A}\sh{N}))
 \]
 and as we check immediately that these homomorphisms are compatible with the
 restriction operations, they give a canonical functorial homomorphism of
 $\sh{B}$-modules
 \[
   \Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N})
-  \longrightarrow\Psi_*(\sh{M}\otimes_\sh{A}\sh{N})
+  \to\Psi_*(\sh{M}\otimes_\sh{A}\sh{N})
   \tag{4.2.2.1}
 \]
 \oldpage[0\textsubscript{I}]{40}
@@ -319,14 +319,14 @@ $\Gamma(\psi^{-1}(U),\shHom_\sh{A}(\sh{M},\sh{N}))
 $u\mapsto\Psi_*(u)$ is a homomorphism
 \[
   \Hom_{\sh{A}|V}(\sh{M}|V,\sh{N}|V)
-  \longrightarrow\Hom_{\sh{B}|U}(\Psi_*(\sh{M})|U,\Psi_*(\sh{N})|U)
+  \to\Hom_{\sh{B}|U}(\Psi_*(\sh{M})|U,\Psi_*(\sh{N})|U)
 \]
 on the $\Gamma(U,\sh{B})$-module structures; these homomorphisms are compatible
 with the restriction operations, hence they define a canonical functorial
 homomorphism of $\sh{B}$-modules
 \[
   \Psi_*(\shHom_\sh{A}(\sh{M},\sh{N}))
-  \longrightarrow\shHom_\sh{B}(\Psi_*(\sh{M}),\Psi_*(\sh{N})).
+  \to\shHom_\sh{B}(\Psi_*(\sh{M}),\Psi_*(\sh{N})).
   \tag{4.2.3.1}
 \]
 \end{env}
@@ -336,8 +336,8 @@ homomorphism of $\sh{B}$-modules
 If $\sh{C}$ is an $\sh{A}$-algebra, the composite homomorphism
 \[
   \Psi_*(\sh{C})\otimes_\sh{B}\Psi_*(\sh{C})
-  \longrightarrow\Psi_*(\sh{C}\otimes_\sh{A}\sh{C})
-  \longrightarrow\Psi_*(\sh{C})
+  \to\Psi_*(\sh{C}\otimes_\sh{A}\sh{C})
+  \to\Psi_*(\sh{C})
 \]
 defines on $\Psi_*(\sh{C})$ the structure of a \emph{$\sh{B}$-algebra}, as a
 result of (4.2.2.2). We see similarly that if $\sh{M}$ is a $\sh{C}$-module,
@@ -560,13 +560,13 @@ directly).
 If we take for $v$ the identity homomorphism of $\Psi^*(\sh{B})$, $v_\theta^\flat$ is a
 homomorphism
 \[
-  \rho_\sh{G}:\sh{G}\longrightarrow\Psi_*(\Psi^*(\sh{G}));
+  \rho_\sh{G}:\sh{G}\to\Psi_*(\Psi^*(\sh{G}));
   \tag{4.4.3.2}
 \]
 if we take for $u$ the identity homomorphism of $\Psi_*(\sh{F})$, $u_\theta^\sharp$ is a
 homomorphism
 \[
-  \sigma_\sh{F}:\Psi^*(\Psi_*(\sh{F}))\longrightarrow\sh{F};
+  \sigma_\sh{F}:\Psi^*(\Psi_*(\sh{F}))\to\sh{F};
   \tag{4.4.3.3}
 \]
 these homomorphisms will be called \emph{canonical}. They are in general neither injective or
@@ -614,7 +614,7 @@ Let $\sh{M}$, $\sh{N}$ be two $\sh{B}$-modules, $V$ an open set of $Y$,
 $U=\psi^{-1}(V)$; the map $v\mapsto\Psi^*(v)$ is a homomorphism
 \[
   \Hom_{\sh{B}|V}(\sh{M}|V,\sh{N}|V)
-  \longrightarrow\Hom_{\sh{A}|U}(\Psi^*(\sh{M})|U,\Psi^*(\sh{N})|U)
+  \to\Hom_{\sh{A}|U}(\Psi^*(\sh{M})|U,\Psi^*(\sh{N})|U)
 \]
 for the $\Gamma(V,\sh{B})$-module structures
 ($\Hom_{\sh{A}|U}(\Psi^*(\sh{M})|U,\Psi^*(\sh{N})|U)$ is normaly equipped with the a
@@ -625,12 +625,12 @@ $\Gamma(V,\sh{B})$-module). We see immediately that these homomorphisms are comp
 the restriction morphisms, and as a result define a canonical functorial homomorphism
 \[
   \gamma:\shHom_\sh{B}(\sh{M},\sh{N})
-  \longrightarrow\Psi_*(\shHom_\sh{A}(\Psi^*(\sh{M}),\Psi^*(\sh{N}));
+  \to\Psi_*(\shHom_\sh{A}(\Psi^*(\sh{M}),\Psi^*(\sh{N}));
 \]
 it also corresponds to this homomorphism the homomorphism
 \[
   \gamma^\sharp:\Psi^*(\shHom_\sh{B}(\sh{M},\sh{N}))
-  \longrightarrow\shHom_\sh{A}(\Psi^*(\sh{M}),\Psi^*(\sh{N}))
+  \to\shHom_\sh{A}(\Psi^*(\sh{M}),\Psi^*(\sh{N}))
 \]
 and these canonical morphisms are functorial in $\sh{M}$ and $\sh{N}$.
 \end{env}
