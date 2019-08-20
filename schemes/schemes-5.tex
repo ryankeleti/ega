@@ -139,4 +139,29 @@ for $X$ to be an affine scheme, it is necessary and sufficient for $X_0$ to be a
 
 \begin{proof}
 \label{proof-1.5.1.9}
+The condition is clearly necessary, so we will show that it is sufficient.
+If we set $X_k=(X,\OO_X/\sh{I}^{k+1})$, it is enough to prove by induction on $k$ that $X_k$ is affine, and so we are led to consider the base case where $\sh{I}^2=0$.
+We set
+\begin{gather*}
+    A = \Gamma(X,\OO_X)\\
+    A_0 = \Gamma(X_0,\OO_{X_0})=\Gamma(X,\OO_X/\sh{I}).
+\end{gather*}
+The canonical homomorphism $\OO_X\to\OO_X/\sh{I}$ induces a homomorphism of rings $\vphi:A\to A_0$.
+We will see below that $\vphi$ is \emph{surjective}, so that
+\begin{equation*}
+    0 \to \Gamma(X,\sh{I}) \to \Gamma(X,\OO_X) \to \Gamma(X,\OO_X/\sh{I}) \to 0
+\end{equation*}
+is an \emph{exact} sequence.
+We now prove, assuming that this is true, the proposition.
+Note that $\fk{R}=\Gamma(X,\sh{I})$ is an ideal whose square is zero in $A$, and thus a module over $A_0=A/\fk{R}$.
+By hypothesis, we have $X_0=\Spec(A)$, and, since the underlying spaces of $X_0$ and $X$ are identical, $\fk{R}=\Gamma(X_0,\sh{I})$;
+Additionally, since $\sh{I}^2=0$, $\sh{I}$ is a quasi-coherent $(\OO_X/\sh{I})$-module, so we have $\sh{I}\congeq\wt{\fk{R}}$ and $\fk{R}_x=\sh{I}_x$ for all $x\in X_0$ \sref{1.1.4.1}.
+With this in mind, let $X'=\Spec(A)$, and consider the morphism $f=(\psi,\theta):X\to X'$ of preschemes that corresponds to the identity map $A\to\Gamma(X,\OO_X)$ \sref{1.2.2.4}.
+For every affine open subset $V$ of $X$, the diagram
+\[
+  xymatrix{
+    A \ar[r] \ar[d]
+    & \Gamma(V,\OO_X|V) \ar[d]\\
+  }
+\]
 \end{proof}
