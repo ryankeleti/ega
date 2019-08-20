@@ -74,7 +74,7 @@ print(contributors)
 print("}")
 print("\\end{titlepage}")
 print("\\setcounter{tocdepth}{2}")
-print("\\tableofcontents{}")
+print("\\tableofcontents")
 
 for name in list_text_files(path):
   with open(path + name + ".tex", 'r') as f:
