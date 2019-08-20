@@ -88,7 +88,7 @@ Conforming to the general definitions (T, I, 1.1), we will say that a morphism o
 
 \begin{prop}[4.1.9]
 \label{1.4.1.9}
-For a morphism $f:Z\to X$ to be majorized by an injection morphism $j:Y\to X$, it is necessary and sufficient that $f(Z)\subset Y$ and that for all $z\in Z$, if we set $y=f(z)$, then the homomorphism $(\OO_X)_y\to\OO_z$ corresponding to $f$ factors as $(\OO_Z)_y\to(\OO_Y)_y\to\OO_z$ (\emph{or equivalently, that} the kernel of $(\OO_X)_y\to\OO_z$ contains the kernel of $(\OO_X)_y\to(\OO_Y)_y$).
+For a morphism $f:Z\to X$ to be majorized by an injection morphism $j:Y\to X$, it is necessary and sufficient that $f(Z)\subset Y$ and that, for all $z\in Z$, letting $y=f(z)$, the homomorphism $(\OO_X)_y\to\OO_z$ corresponding to $f$ factors as $(\OO_Z)_y\to(\OO_Y)_y\to\OO_z$ (\emph{or equivalently, that} the kernel of $(\OO_X)_y\to\OO_z$ contains the kernel of $(\OO_X)_y\to(\OO_Y)_y$).
 \end{prop}
 
 \begin{proof}
@@ -108,7 +108,7 @@ of preschemes $Z\to Y$ \sref{1.2.2.1}, which according to the above is such that
 
 \begin{cor}[4.1.10]
 \label{1.4.1.10}
-For an injection morphism $Z\to X$ to be majorized by the injection morphism $Y\to X$, it is necessary and sufficient that $Z$ is a subprescheme of $Y$.
+For an injection morphism $Z\to X$ to be majorized by the injection morphism $Y\to X$, it is necessary and sufficient for $Z$ to be a subprescheme of $Y$.
 \end{cor}
 
 We then write $Z\leqslant Y$, and this condition is evidently an \emph{ordering} on the set of subpreschemes of $X$.
@@ -131,8 +131,8 @@ It is clear that an immersion is a \emph{monomorphism} of preschemes \sref{1.4.1
 \label{1.4.2.2}
 \medskip\noindent
 \begin{enumerate}[label={\rm(\alph*)}]
-  \item For a morphism $f=(\psi,\theta):Y\to X$ to be an open immersion, it is necessary and sufficient that $\psi$ is a homeomorphism between $Y$ and an open subset of $X$, and that for all $y\in Y$, the homomorphism $\theta_y^\sharp:\OO_{\psi(y)}\to\OO_y$ is bijective.
-  \item For a morphism $f=(\psi,\theta):Y\to X$ to be an immersion (resp. a closed immersion), it is necessary and sufficient that $\psi$ is a homeomorphism between $Y$ and a locally closed (resp. closed) subset of $X$, and that for all $y\in Y$, the homomorphism $\theta_y^\sharp:\OO_{\psi(y)}\to\OO_y$ is surjective.
+  \item For a morphism $f=(\psi,\theta):Y\to X$ to be an open immersion, it is necessary and sufficient for $\psi$ to be a homeomorphism between $Y$ and an open subset of $X$, and that for all $y\in Y$, the homomorphism $\theta_y^\sharp:\OO_{\psi(y)}\to\OO_y$ is bijective.
+  \item For a morphism $f=(\psi,\theta):Y\to X$ to be an immersion (resp. a closed immersion), it is necessary and sufficient for $\psi$ to be a homeomorphism between $Y$ and a locally closed (resp. closed) subset of $X$, and that for all $y\in Y$, the homomorphism $\theta_y^\sharp:\OO_{\psi(y)}\to\OO_y$ is surjective.
 \end{enumerate}
 \end{prop}
 
@@ -186,9 +186,9 @@ For a morphism $f=(\psi,\theta):Y\to X$ to be a closed immersion, it is necessar
   \item Let $f$ be a morphism $Y\to X$, $(V_\lambda)$ a cover of $f(Y)$ by open subsets of $X$.
     For $f$ to be an immersion (resp. an open immersion), it is necessary and sufficient
 \oldpage[I]{124}
-    that its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ is an immersion (resp. an open immersion) into $V_\lambda$.
+    for its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ to be an immersion (resp. an open immersion) into $V_\lambda$.
   \item Let $f$ be a morphism $Y\to X$, $(V_\lambda)$ an open cover of $X$.
-    For $f$ to be a closed immersion, it is necessary and sufficient that its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ is a closed immersion into $V_\lambda$.
+    For $f$ to be a closed immersion, it is necessary and sufficient for its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ to be a closed immersion into $V_\lambda$.
 \end{enumerate}
 \end{cor}
 
@@ -256,7 +256,7 @@ If $f:X\to Y$ is an immersion (resp. an open immersion, a closed immersion) and 
 \begin{prop}[4.4.1]
 \label{1.4.4.1}
 Let $f:X\to Y$ be a morphism, $Y'$ a subprescheme (resp. a closed subprescheme, a prescheme induced by an open set) of $Y$, and $j:Y'\to Y$ the injection morphism.
-Then the projection $p:X\times_Y Y'\to X$ is an immersion (resp. a closed immersion, an open immersion); the subprescheme of $X$ associated to $p$ has the underlying space $f^{-1}(Y')$; in addition, if $j'$ is the injection morphism of this subprescheme into $X$, then for a morphism $h:Z\to X$ to be such that $f\circ h:Z\to Y$ is majorized by $j$, it is necessary and sufficient that $h$ is majorized by $j'$.
+Then the projection $p:X\times_Y Y'\to X$ is an immersion (resp. a closed immersion, an open immersion); the subprescheme of $X$ associated to $p$ has the underlying space $f^{-1}(Y')$; in addition, if $j'$ is the injection morphism of this subprescheme into $X$, then for a morphism $h:Z\to X$ to be such that $f\circ h:Z\to Y$ is \unsure{majorized} by $j$, it is necessary and sufficient that $h$ be \unsure{majorized} by $j'$.
 \end{prop}
 
 \begin{proof}
