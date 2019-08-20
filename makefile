@@ -2,7 +2,7 @@
 # modified from https://github.com/stacks/stacks-project
 # license at scripts/COPYING.md
 #
-FILES = what intro prelim schemes morphisms
+FILES = what intro prelim schemes morphisms cohomology
 TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
 PDFLATEX := pdflatex
