@@ -63,9 +63,13 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 2. Cohomological study of projective morphisms
     + [ ] 3. Finiteness theorem for proper morphisms
     + [ ] 4. The fundamental theorem of proper morphisms. Applications
-    + [ ] 5. An existence theorem for coherent algebraic coherent sheaves
+    + [ ] 5. An existence theorem for coherent algebraic sheaves
     + [ ] 6. Local and global Tor functors; Künneth formula
     + [ ] 7. Base change for homological functors of sheaves of modules
+    + [x] 8. ~~The duality theorem for projective bundles~~
+    + [x] 9. ~~Relative cohomology and local cohomology; local duality~~
+    + [x] 10. ~~Relations between projective cohomology and local cohomology. Formal completion technique along a divisor~~
+    + [x] 11. ~~Global and local Picard groups~~
 - [ ] Local study of schemes and their morphisms (EGA IV)
     + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes
     + [ ] 2. Base change and flatness
