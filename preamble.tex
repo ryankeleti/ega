@@ -5,7 +5,7 @@
 \usepackage{xstring}
 \usepackage{xparse}
 \usepackage{xr-hyper}
-\usepackage[colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
+\usepackage[linktocpage=true,colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
 %\usepackage[left=0.75in,right=0.75in,top=0.75in,bottom=0.75in]{geometry}
 \usepackage[margin=0.75in]{geometry}
 \usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
@@ -39,6 +39,11 @@
 \newtheorem*{exm}{Example}
 \newtheorem*{rmk}{Remark}
 \newtheorem*{nota}{Notational conventions}
+
+% indent subsections, see https://tex.stackexchange.com/questions/177290/.
+\makeatletter
+\def\l@subsection{\@tocline{2}{0pt}{2.5pc}{5pc}{}}
+\makeatother
 
 %\allowdisplaybreaks[1]
 %\binoppenalty=9999
