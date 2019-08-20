@@ -50,7 +50,7 @@ Saying that a prescheme $X$ is reduced thus implies that $X=X_\mathrm{red}$.
 
 \begin{prop}[5.1.4]
 \label{1.5.1.4}
-For the prime spectrum of a ring $A$ to be a reduced (\emph{resp.} integral) prescheme \sref{1.2.1.7}, it is necessary and sufficient that $A$ be a reduced (\emph{resp.} integral) ring.
+For the prime spectrum of a ring $A$ to be a reduced (\emph{resp.} integral) prescheme \sref{1.2.1.7}, it is necessary and sufficient that $A$ is a reduced (\emph{resp.} integral) ring.
 \end{prop}
 
 \begin{proof}
@@ -69,26 +69,26 @@ the $U_i$ are thus open subsets that are pairwise disjoint, and each of them is 
 \label{1.5.1.5}
 Let $f=(\psi,\theta):X\to Y$ be a morphism of preschemes;
 \oldpage[I]{129}
-the homomorphism $\theta_x^\#:\OO_{\psi(x)}\to\OO_x$ sends each nilpotent element of $\OO_{\psi(x)}$ to a nilpotent element of $\OO_x$;
-by passing to the quotients, $\theta^\#$ induces a homomorphism
-\begin{equation*}
-    \omega:\psi^*(\OO_Y/\sh{N}_Y)\to\OO_X/\sh{N}_X.
-\end{equation*}
+the homomorphism $\theta_x^\sharp:\OO_{\psi(x)}\to\OO_x$ sends each nilpotent element of $\OO_{\psi(x)}$ to a nilpotent element of $\OO_x$;
+by passing to the quotients, $\theta^\sharp$ induces a homomorphism
+\[
+  \omega:\psi^*(\OO_Y/\sh{N}_Y)\longrightarrow\OO_X/\sh{N}_X.
+\]
 It is clear that, for every $x\in X$, $\omega_x:\OO_{\psi(x)}/\sh{N}_{\psi(x)}\to\OO_x/\sh{N}_x$ is a local homomorphism, and so $(\psi,\omega^\flat)$ is a morphism of preschemes $X_\mathrm{red}\to Y_\mathrm{red}$, which we denote by $f_\mathrm{red}$, and call the \emph{reduced} morphism associated to $f$.
 It is immediate that, for two morphisms $f:X\to Y$ and $g:Y\to Z$, we have $(g\circ f)_\mathrm{red}=g_\mathrm{red}\circ f_\mathrm{red}$, and so we have defined $X_\mathrm{red}$ as a \emph{covariant functor} in $X$.
 
 The preceding definition shows that the diagram
-\begin{equation*}
-    \xymatrix{
-        X_\mathrm{red} \ar[r]^{f_\mathrm{red}} \ar[d]
-        & Y_\mathrm{red} \ar[d]\\
-        X \ar[r]_f
-        &Y
-    }
-\end{equation*}
+\[
+  \xymatrix{
+    X_\mathrm{red}\ar[r]^{f_\mathrm{red}}\ar[d] &
+    Y_\mathrm{red}\ar[d]\\
+    X\ar[r]^f &
+    Y
+  }
+\]
 is commutative, where the vertical arrows are the injection morphisms;
 in other words, $X_\mathrm{red}\to X$ is a \emph{functorial} morphism.
-We note in particular that, if $X$ is reduced, every morphism $f:X\to Y$ factors as $X\xrightarrow{f_\mathrm{red}}Y_\mathrm{red}\to Y$;
+We note in particular that if $X$ is reduced, then every morphism $f:X\to Y$ factors as $X\xrightarrow{f_\mathrm{red}}Y_\mathrm{red}\to Y$;
 in other words, $f$ is \unsure{bounded above} by the injection morphism $Y_\mathrm{red}\to Y$.
 \end{env}
 
