@@ -12,7 +12,7 @@ For compiled PDFs, go to the [releases page](https://github.com/ryankeleti/ega/r
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
 - [x] Introduction (EGA I) (proofread by @thosgood)
-- [ ] Preliminaries (EGA 0)
+- [ ] Preliminaries (EGA 0_I)
     + [x] 1. Rings of fractions (@ryankeleti) (proofread by @thosgood)
     + [x] 2. Irreducible spaces. Noetherian spaces (@ryankeleti) (proofread by @thosgood)
     + [x] 3. Supplement on sheaves (@ryankeleti)
@@ -20,13 +20,14 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 5. Quasi-coherent sheaves and coherent sheaves (@ryankeleti)
     + [x] 6. Flatness (@ryankeleti)
     + [x] 7. Adic rings (@ryankeleti)
-- [ ] Preliminaries (EGA III)
+- [ ] Preliminaries (EGA 0_III)
     + [ ] 8. Representable functors (@ryankeleti)
     + [ ] 9. Constructible sets
     + [ ] 10. Supplement on flat modules
     + [ ] 11. Supplement on homological algebra
     + [ ] 12. Supplement on sheaf cohomology
     + [ ] 13. Projective limits in homological algebra
+- [ ] Preliminaries (EGA 0_IV)
     + [ ] 14. Combinatorial dimension of a topological space
     + [ ] 15. M-regular and F-regular sequences
     + [ ] 16. Dimension and depth of Noetherian local rings
@@ -64,7 +65,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 3. Finiteness theorem for proper morphisms
     + [ ] 4. The fundamental theorem of proper morphisms. Applications
     + [ ] 5. An existence theorem for coherent algebraic coherent sheaves
-    + [ ] 6. Local and global Tor functors; Kunneth formula
+    + [ ] 6. Local and global Tor functors; Künneth formula
     + [ ] 7. Base change for homological functors of sheaves of modules
 - [ ] Local study of schemes and their morphisms (EGA IV)
     + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes
@@ -87,4 +88,4 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 18. Supplement on étale morphisms. Henselian local rings and strictly local rings
     + [ ] 19. Regular immersions and normal flatness
     + [ ] 20. Meromorphic functions and pseudo-morphisms
-    + [ ] 21. Divisors
+    + [ ] 21. Divisor
