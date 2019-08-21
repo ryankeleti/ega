@@ -425,7 +425,91 @@ Furthermore, $p_2$ can be identified with $(g\circ f)\times_Z 1_Y$ \sref{1.3.3.4
 if $g\circ f$ is an immersion (\emph{resp.} a local immersion), then so too is $p_2$ (\sref{1.4.3.1} and \sref{1.4.5.5}), and since $\Gamma_f$ is an immersion \sref{1.5.3.11}, we are done, by \sref{1.4.2.4} (\emph{resp.} \sref{1.4.5.5}).
 \end{proof}
 
+\begin{cor}[5.3.14]
+\label{1.5.3.14}
+Let $j:X\to Y$ and $g:Z\to Z$ be $S$-morphisms.
+If $j$ is an immersion (\emph{resp.} a local immersion), then so too is $(j,g)_S$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.14}
+Indeed, if $p:Y\times_S Z\to Y$ is the projection onto the first component, then we have $j=p\circ(j,g)_S$, and it suffices to apply \sref{1.5.3.13}.
+\end{proof}
+
+\begin{prop}[5.3.15]
+\label{1.5.3.15}
+If $f:X\to Y$ is an $S$-morphism, then the diagram
+\[
+  \xymatrix{
+    X \ar[r]^{\Delta_X} \ar[d]_f
+    & X\times_S X \ar[d]^{f\times_S f}\\
+    Y \ar[r]_{\Delta_Y}
+    & Y\times_S Y
+  }
+\]
+commutes \emph{(in other words, $\Delta_X$ is a functorial morphism in the category of preschemes)}.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.3.15}
+The proof is immediate and left to the reader.
+\end{proof}
+
+\begin{cor}[5.3.16]
+\label{1.5.3.16}
+If $X$ is a subprescheme of $Y$, then the diagonal $\Delta_X(X)$ can be identified with a subprescheme of $\Delta_Y(Y)$, and the underlying space can be identified with
+\[
+    \Delta_Y(Y)\cap p_1^{-1}(X) = \Delta_Y\cap p_2^{-1}(X)
+\]
+($p_1$ and $p_2$ being the projections of $Y\times_S Y$).
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.16}
+Apply \sref{1.5.3.15} to the injection morphism $f:X\to Y$;
+we then know that $f\times_S f$ is an immersion that identifies the underlying space of $X\times_S X$ with the subspace $p_1^{-1}(X)\cap p_2^{-1}(X)$ of $Y\times_S Y$ \sref{1.4.3.1};
+further, if $z\in\Delta_Y(Y)\cap p_1^{-1}(X)$, then we have $z=\Delta_Y(y)$
 \oldpage[I]{135}
+and $y=p_1(z)\in X$, so $y=f(y)$, and $z=\Delta_Y(f(y))$ belongs to $\Delta_X(X)$ by the commutativity of diagram \hyperref[1.5.3.15]{(5.3.15.1)}.
+\end{proof}
+
+\begin{cor}[5.3.17]
+\label{1.5.3.17}
+Let $f_1:Y\to X$ and $f_2:Y\to X$ be $S$-morphisms, and $y$ a point of $Y$ such that $f_1(y)=f_2(y)=x$, and such that the homomorphisms $\kres(x)\to\kres(y)$ corresponding to $f_1 $ and $f_2$ are identical.
+Then, if $f=(f_1,f_2)_S$, the point $f(y)$ belongs to the diagonal $\Delta_{X|S}(X)$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.17}
+The two homomorphisms $\kres(x)\to\kres(y)$ corresponding to $f_i$ ($i=1,2$) define two $S$-morphisms $g_i:\Spec(\kres(y))\to\Spec(\kres(x))$ such that the diagrams
+\[
+  \xymatrix{
+    \Spec(\kres(y)) \ar[r]^{g_i} \ar[d]
+    & \Spec(\kres(x)) \ar[d]\\
+    Y \ar[r]_{f_i}
+    & X
+  }
+\]
+are commutative.
+The diagram
+\[
+  \xymatrix{
+    \Spec(\kres(y)) \ar[r]^{(g_1,g_2)_S} \ar[d]
+    & \Spec(\kres(x))\times_S\Spec(\kres(x)) \ar[d]\\
+    Y \ar[r]_{(f_1,f_2)_S}
+    & X\times_S X
+  }
+\]
+is thus also commutative.
+But it follows from the equality $g_1=g_2$ that the image under $(g_1,g_2)_S$ of the unique point of $\Spec(\kres(y))$ belongs to the diagonal of $\Spec(\kres(x))\times_S\Spec(\kres(x))$;
+the conclusion then follows from \sref{1.5.3.15}.
+\end{proof}
+
+\subsection{Separated morphisms and separated preschemes}
+\label{subsection-separated-morphism-and-separated-preschemes}
+
+
+
 \oldpage[I]{136}
 \oldpage[I]{137}
 \oldpage[I]{138}
