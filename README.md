@@ -1,6 +1,6 @@
 # EGA
 
-![EGA0status](https://img.shields.io/badge/EGA%200-31%25-yellow) ![EGAIstatus](https://img.shields.io/badge/EGA%20I-85%25-green) ![EGA2status](https://img.shields.io/badge/EGA%20II-0%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-0%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-0%25-red)
+![EGA0status](https://img.shields.io/badge/EGA%200-31%25-yellow) ![EGAIstatus](https://img.shields.io/badge/EGA%20I-95%25-green) ![EGA2status](https://img.shields.io/badge/EGA%20II-0%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-0%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-0%25-red)
 
 Amateur translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
@@ -45,7 +45,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 2. Preschemes and their morphisms _(@thosgood)_
     + [x] 3. Products of preschemes _(@thosgood, @ryankeleti)_
     + [x] 4. Subpreschemes and immersions _(@ryankeleti)_
-    + [ ] 5. Reduced preschemes; separation condition _(@thosgood)_
+    + [x] 5. Reduced preschemes; separation condition _(@thosgood)_
     + [x] 6. Finiteness conditions _(@thosgood)_
     + [x] 7. Rational maps _(@thosgood)_
     + [x] 8. Chevalley schemes _(@thosgood)_
