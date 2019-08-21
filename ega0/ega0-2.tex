@@ -1,0 +1,111 @@
+\section{Irreducible spaces. Noetherian spaces}
+\label{section-irreducible-and-noetherian-spaces}
+
+\subsection{Irreducible spaces}
+\label{subsection-irreducible-spaces}
+
+\begin{env}[2.1.1]
+\label{0.2.1.1}
+\oldpage[0\textsubscript{I}]{21}
+We say that a topological space $X$ is \emph{irreducible} if it is nonempty and if it is not a union of two distinct closed subspaces of $X$.
+It is equivalent to say that $X\neq\emp$ and the intersection of two nonempty open sets (and consequently of a finite number of open sets) of $X$ is nonempty, or that every nonempty open set is everywhere dense, or that any closed set is \emph{rare}, or, lastly, that all open sets of $X$ are \emph{connected}.
+\end{env}
+
+\begin{env}[2.1.2]
+\label{0.2.1.2}
+For a subspace $Y$ of a topological space $X$ to be irreducible, it is necessary and sufficient that its closure $\overline{Y}$ be irreducible.
+In particular, any subspace which is the closure $\overline{\{x\}}$ of a singleton is irreducible; we will express the relation $y\in\overline{\{x\}}$ (equivalent to $\overline{\{y\}}\subset\overline{\{x\}}$) by saying that $y$ is a \emph{specialization of $x$} or that $x$ is a \emph{generalization of $y$}.
+When there exists, in an irreducible space $X$, a point $x$ such that $X=\overline{\{x\}}$, we will say that $x$ is a \emph{generic point of $X$}.
+Any nonempty open subset of $X$ then contains $x$, and any subspace containing $x$ has $x$ as a generic point.
+\end{env}
+
+\begin{env}[2.1.3]
+\label{0.2.1.3}
+Recall that a \emph{Kolmogoroff space} is a topological space $X$ satisfying the axiom of separation:
+
+$(T_0)$ If $x\neq y$ are any two points of $X$, there is an open set containing one of the points $x$ and $y$, but not the other.
+
+If an irreducible Kolmogoroff space admits a generic point, it admits \emph{exactly} one, since a nonempty open set contains any generic point.
+
+Recall that a topological space $X$ is said to be \emph{quasi-compact} if, from any collection of open sets of $X$, one can extract a finite cover of $X$ (or, equivalently, if any decreasing filtered family of nonempty closed sets has a nonempty intersection).
+If $X$ is a quasi-compact space, then any nonempty closed subset $A$ of $X$ contains a \emph{minimal} nonempty closed set $M$, because the set of nonempty closed subsets of $A$ is inductive under the relation $\supset$; if, in addition, $X$ is a Kolmogoroff space, $M$ is necessarily a single point (or, as we say by abuse of language, is a \emph{closed point}).
+\end{env}
+
+\begin{env}[2.1.4]
+\label{0.2.1.4}
+In an irreducible space $X$, every nonempty open subspace $U$ is irreducible, and if $X$ admits a generic point $x$, $x$ is also a generic point of $U$.
+
+To prove this, let $(U_\alpha)$ be a cover (whose set of indices is nonempty) of a topological space $X$, consisting of nonempty open sets; if $X$ is irreducible, it is necessary and sufficient that $U_\alpha$ is irreducible for all $\alpha$, and that $U_\alpha\cap U_\beta\neq\emp$ for any $\alpha$, $\beta$.
+The condition is clearly necessary; to see that it is sufficient, it suffices to prove that if $V$ is a nonempty open subset of $X$, then $V\cap U_\alpha$ is nonempty for all $\alpha$, since then $V\cap U_\alpha$ is dense in $U_\alpha$ for all $\alpha$, and consequently $V$ is dense in $X$.
+Now there is at least one index $\gamma$ such that $V\cap U_\gamma\neq\emp$, so $V\cap U_\gamma$ is dense in $U_\gamma$, and as for all $\alpha$, $U_\alpha\cap V_\alpha\neq\emp$, we also have $V\cap U_\alpha\cap U_\gamma\neq\emp$.
+\end{env}
+
+\begin{env}[2.1.5]
+\label{0.2.1.5}
+\oldpage[0\textsubscript{I}]{22}
+Let $X$ be an irreducible space, and $f$ a continuous map from $X$ into a topological space $Y$.
+Then $f(X)$ is irreducible, and if $x$ is a generic point of $X$, then $f(x)$ is a generic point of $f(X)$ and hence also of $\overline{f(X)}$. 
+In particular, if, in addition, $Y$ is irreducible and with a single generic point $y$, then for $f(X)$ to be everywhere dense, it is necessary and sufficient that $f(x)=y$.
+\end{env}
+
+\begin{env}[2.1.6]
+\label{0.2.1.6}
+Any irreducible subspace of a topological space $X$ is contained in a maximal irreducible subspace, which is necessarily closed.
+Maximal irreducible subspaces of $X$ are called the \emph{irreducible components} of $X$.
+If $Z_1$ and $Z_2$ are two irreducible components distinct from the space $X$, then $Z_1\cap Z_2$ is a closed \emph{rare} set in each of the subspaces $Z_1$, $Z_2$; in particular, if an irreducible component of $X$ admits a generic point \sref{0.2.1.2}, such a point cannot belong to any other irreducible component.
+If $X$ has only a \emph{finite} number of irreducible components $Z_i$ ($1\leqslant i\leqslant n$), and if, for each $i$, we put
+$U_i=Z_i\cap\mathrm{C}(\bigcup_{j\neq i}Z_j)$, then the $U_i$ are open, irreducible, disjoint, and their union is dense in $X$.
+Let $U$ be an open subset of a topological space $X$.
+If $Z$ is an irreducible subset of $X$ that intersects $U$, then $Z\cap U$ is open and dense in $Z$, thus irreducible; conversely, for any irreducible closed subset $Y$ of $U$, the closure $\overline{Y}$ of $Y$ in $X$ is irreducible and $\overline{Y}\cap U=Y$.
+We conclude that there is a \emph{bijective correspondence} between the irreducible components of $U$ and the irreducible components of $X$ which intersect $U$.
+\end{env}
+
+\begin{env}[2.1.7]
+\label{0.2.1.7}
+If a topological space $X$ is a union of a \emph{finite} number of irreducible closed subspaces $Y_i$, then the irreducible components of $X$ are the maximal elements of the set of the $Y_i$, because if $Z$ is an irreducible closed subset of $X$, then $Z$ is the union of the $Z\cap Y_i$, from which one sees that $Z$ must be contained in one of the $Y_i$.
+Let $Y$ be a subspace of a topological space $X$, and suppose that $Y$ has only a finite number of irreducible components $Y_i$, ($1\leqslant i\leqslant n$); then the closures $\overline{Y_i}$ in $X$ are the irreducible components of $Y$.
+\end{env}
+
+\begin{env}[2.1.8]
+\label{0.2.1.8}
+Let $Y$ be an irreducible space admitting a single generic point $y$.
+Let $X$ be a topological space, and $f$ a continuous map from $X$ to $Y$.
+Then, for any irreducible component $Z$ of $X$ intersecting $f^{-1}(y)$, $f(Z)$ is dense in $Y$.
+The converse is not necessarily true; however, if $Z$ has a generic point $z$, and if $f(Z)$ is dense in $Y$, then we must have $f(z)=y$ \sref{0.2.1.5}; in addition, $Z\cap f^{-1}(y)$ is then the closure of $\{z\}$ in $f^{-1}(y)$ and is therefore irreducible, and as an irreducible subset of $f^{-1}(y)$ containing $z$ is necessarily contained in $Z$ \sref{0.2.1.6}, $z$ is a generic point of $Z\cap f^{-1}(y)$.
+As any irreducible component of $f^{-1}(y)$ is contained in an irreducible component of $X$, we see that, if any irreducible component $Z$ of $X$ intersecting $f^{-1}(y)$ admits a generic point, then there is a \emph{bijective correspondence} between all these components and all the irreducible components $Z\cap f^{-1}(y)$ of $f^{-1}(y)$, the generic points of $Z$ being identical to those of $Z\cap f^{-1}(y)$.
+\end{env}
+
+\subsection{Noetherian spaces}
+\label{subsection-noetherian-spaces}
+
+\begin{env}[2.2.1]
+\label{0.2.2.1}
+\oldpage[0\textsubscript{I}]{23}
+We say that a topological space $X$ is \emph{Noetherian} if the set of open subsets of $X$ satisfies the \emph{maximal} condition, or, equivalently, if the set of closed subsets of $X$ satisfies the \emph{minimal} condition.
+We say that $X$ is \emph{locally Noetherian} if each $x\in X$ admits a neighborhood which is a Noetherian subspace.
+\end{env}
+
+\begin{env}[2.2.2]
+\label{0.2.2.2}
+Let $E$ be an ordered set satisfying the \emph{minimal} condition, and let $\mathbf{P}$ be a property of the elements of $E$ subject to the following condition: if $a\in E$ is such that for any $x<a$, $\mathbf{P}(x)$ is true, then $\mathbf{P}(a)$ is true.
+Under these conditions, $\mathbf{P}(x)$ \emph{is true for all $x\in E$} (``principle of Noetherian recurrence'').
+Indeed, let $F$ be the set of $x\in E$ for which $\mathbf{P}(x)$ is false; if $F$ were not empty, it would have a minimal element $a$, and as then $\mathbf{P}(x)$ is true for all $x<a$, $\mathbf{P}(a)$ would be true, which is a contradiction.
+
+We will apply this principle in particular when $E$ is a \emph{set of closed subsets of a Noetherian space}.
+\end{env}
+
+\begin{env}[2.2.3]
+\label{0.2.2.3}
+Any subspace of a Noetherian space is Noetherian.
+Conversely, any topological space that is a finite union of Noetherian subspaces is Noetherian.
+\end{env}
+
+\begin{env}[2.2.4]
+\label{0.2.2.4}
+Any Noetherian space is quasi-compact; conversely, any topological space in which all open sets are quasi-compact is Noetherian.
+\end{env}
+
+\begin{env}[2.2.5]
+\label{0.2.2.5}
+A Noetherian space has only a \emph{finite} number of irreducible components, as we see by Noetherian recurrence.
+\end{env}

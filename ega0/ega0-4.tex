@@ -1,0 +1,669 @@
+\section{Ringed spaces}
+\label{section-ringed-spaces}
+
+\subsection{Ringed spaces, sheaves of $\mathcal{A}$-modules, $\mathcal{A}$-algebras}
+\label{subsection-ringed-spaces-sheaves-of-modules-and-algebras}
+
+\begin{env}[4.1.1]
+\label{0.4.1.1}
+A \emph{ringed space} (resp. topologically ringed space) is a pair $(X,\sh{A})$
+consisting of a topological space $X$ and a sheaf of (not necessarily
+commutative) rings (resp. of a sheaf of topological rings) $\sh{A}$ on $X$; we
+say that $X$ is the \emph{underlying} topological space of the ringed space
+$(X,\sh{A})$, and $\sh{A}$ the \emph{structure sheaf}. The latter is denoted
+$\OO_X$, and its stalk at a point $x\in X$ is denoted $\OO_{X,x}$ or simply
+$\OO_x$ when there is no chance of confusion.
+
+We denote by $1$ or $e$ the \emph{unit section} of $\OO_X$ over $X$ (the unit
+element of $\Gamma(X,\OO_X)$).
+
+As in this treatise we will have to consider in particular sheaves of
+\emph{commutative} rings, it will be understood, when we speak of a ringed space
+$(X,\sh{A})$ without specification, that $\sh{A}$ is a sheaf of commutative
+rings.
+
+The ringed spaces with with not necessarily commutative structure sheaves
+(resp. the topologically ringed spaces) form a \emph{category}, where we define
+a \emph{morphism} $(X,\sh{A})\to(Y,\sh{B})$ as a couple $(\psi,\theta)=\Psi$
+consisting of a continuous map $\psi:X\to Y$ and a \emph{$\psi$-morphism}
+$\theta:\sh{B}\to\sh{A}$ \sref{0.3.5.1} of sheaves of rings (resp. of sheaves
+of topological rings); the \emph{composition} of a second morphism
+$\Psi'=(\psi',\theta'):(Y,\sh{B})\to(Z,\sh{C})$ and of $\Psi$, denoted
+$\Psi''=\Psi'\circ\Psi$, is the morphism $(\psi'',\theta'')$ where
+$\psi''=\psi'\circ\psi$, and $\theta''$ is the composition of $\theta$ and
+$\theta'$ (equal to $\psi_*'(\theta)\circ\theta'$, cf. \sref{0.3.5.2}). For
+ringed spaces, remember that we then have
+${\theta''}^\sharp=\theta^\sharp\circ\psi^*({\theta'}^\sharp)$
+\sref{0.3.5.5}; therefore if ${\theta'}^\sharp$ and $\theta^\sharp$ are
+\emph{injective} (resp. \emph{surjective}), then the same is true of
+${\theta''}^\sharp$, taking into account that $\psi_x\circ\rho_{\psi(x)}$ is an
+isomorphism for all $x\in X$ \sref{0.3.7.2}. We verify immediately, thanks to
+the above, that when $\psi$ is an \emph{injective} continuous map and when
+$\theta^\sharp$ is a \emph{surjective} homomophism of sheaves of rings, the
+morphism $(\psi,\theta)$ is a \emph{momomorphism} (T, 1.1) in the category of
+ringed spaces.
+
+By abuse of language, we will often replace $\psi$ by $\Psi$ in notation, for
+example in writing $\Psi^{-1}(U)$ in place of $\psi^{-1}(U)$ for a subset $U$ of
+$Y$, when the is no risk of confusion.
+\end{env}
+
+\begin{env}[4.1.2]
+\label{0.4.1.2}
+For each subset $M$ of $X$, the pair $(M,\sh{A}|M)$ is evidently a ringed space,
+said to be \emph{induced} on $M$ by the ringed space $(X,\sh{A})$ (and is still
+called the \emph{restriction} of $(X,\sh{A})$ to $M$). If $j$ is the canonical
+injection $M\to X$ and $\omega$ is the identity map of $\sh{A}|M$,
+$(j,\omega^\flat)$ is a monomorphism $(M,\sh{A}|M)\to(X,\sh{A})$ of ringed
+spaces, called the \emph{canonical injection}. The composition of a morphism
+$\Psi:(X,\sh{A})\to(Y,\sh{B})$ and this injection is called the
+\emph{restriction} of $\Psi$ to $M$.
+\end{env}
+
+\begin{env}[4.1.3]
+\label{0.4.1.3}
+We will not revisit the definitions of \emph{$\sh{A}$-modules} or
+\emph{algebraic sheaves} on a ringed space $(X,\sh{A})$ (G, II, 2.2); when
+$\sh{A}$ is a sheaf of not necessarily commutative rings, by $\sh{A}$-module we
+will always mean ``left $\sh{A}$-module'' unless expressly stated otherwise. The
+$\sh{A}$-submodules of $\sh{A}$ will be called \emph{sheaves of ideals} (left,
+right, or two-sided) in $\sh{A}$ or \emph{$\sh{A}$-ideals}.
+
+When $\sh{A}$ is a sheaf of commutative rings, and in the definition of
+$\sh{A}$-modules, we replace everywhere the \emph{module} structure by that of
+an \emph{algebra}, we obtain the definition of an \emph{$\sh{A}$-algebra} on
+$X$. It is the same to say that an $\sh{A}$-algebra (not necessarily
+commutative) is a $\sh{A}$-module $\sh{C}$, given with a homomorphism of
+$\sh{A}$-modules $\vphi:\sh{C}\otimes_\sh{A}\sh{C}\to\sh{C}$ and a section $e$
+over $X$, such that: 1st the diagram
+\[
+  \xymatrix{
+    \sh{C}\otimes_\sh{A}\sh{C}\otimes_\sh{A}\sh{C}
+    \ar[r]^{\vphi\otimes 1}\ar[d]_{1\otimes\vphi} &
+    \sh{C}\otimes_\sh{A}\sh{C}\ar[d]^\vphi\\
+    \sh{C}\otimes_\sh{A}\sh{C}\ar[r]^\vphi & \sh{C}
+  }
+\]
+is commutative; 2nd for each open $U\subset X$ and each
+section $s\in\Gamma(U,\sh{C})$, we have
+$\vphi((e|U)\otimes s)=\vphi(s\otimes(e|U))=s$. We say that $\sh{C}$ is a
+commutative $\sh{A}$-algebra if the diagram
+\[
+  \xymatrix{
+    \sh{C}\otimes_\sh{A}\sh{C}\ar[rr]^\sigma\ar[rd]_\vphi
+    & & \sh{C}\otimes_\sh{A}\sh{C}\ar[ld]^\vphi\\
+    & \sh{C}
+  }
+\]
+is commutative, $\sigma$ denoting the canonical symmetry (twist) map of the
+tensor product $\sh{C}\otimes_\sh{A}\sh{C}$.
+
+The homomorphisms of $\sh{A}$-algebras are also defined as the homomorphisms of
+$\sh{A}$-modules in (G, II, 2.2), but naturally no longer form an abelian group.
+
+If $\sh{M}$ is an $\sh{A}$-submodule of an $\sh{A}$-algebra $\sh{C}$, the
+\emph{$\sh{A}$-subalgebra of $\sh{C}$ generated by $\sh{M}$} is the sum of the
+images of the homomorphisms $\bigotimes^n\sh{M}\to\sh{C}$ (for each
+$n\geqslant 0$). This is also the sheaf associated to the presheaf
+$U\mapsto\sh{B}(U)$ of algebras, $\sh{B}(U)$ being the subalgebra of
+$\Gamma(U,\sh{C})$ generated by the submodule $\Gamma(U,\sh{M})$.
+\end{env}
+
+\begin{env}[4.1.4]
+\label{0.4.1.4}
+We say that a sheaf of rings $\sh{A}$ on a topological space $X$ is
+\emph{reduced at a point $x$ in $X$} if the stalk $\sh{A}_x$ is a \emph{reduced}
+ring \sref{0.1.1.1}; we say that $\sh{A}$ is \emph{reduced} if it is reduced
+at all points of $X$. Recall that a ring $A$ is called \emph{regular} if each of
+the local rings $A_\fk{p}$ (where $\fk{p}$ varies over the set of
+prime ideals of $A$) is a regular local ring; we will say that a sheaf of rings
+$\sh{A}$ on $X$ is \emph{regular at a point $x$} (resp. \emph{regular}) if the
+stalk $\sh{A}_x$ is a regular ring (resp. if $\sh{A}$ is regular at each point).
+Finally, we will say that a sheaf of rings $\sh{A}$ on $X$ is \emph{normal at a
+point $x$} (resp. \emph{normal}) if the stalk $\sh{A}_x$ is an \emph{integral
+and integrally closed} ring (resp. if $\sh{A}$ is normal at each point). We will
+say that a ringed space $(X,\sh{A})$ has any of these preceeding properties if
+the sheaf of rings $\sh{A}$ has that property.
+
+A \emph{graded} sheaf of rings $\sh{A}$ is by definition a sheaf of rings that
+is the direct sum (G, II, 2,7) of a family $(\sh{A}_n)_{n\in\bb{Z}}$ of sheaves
+of abelian groups with the conditions $\sh{A}_m\sh{A}_n\subset\sh{A}_{m+n}$; a
+\emph{graded $\sh{A}$-module} is an $\sh{A}$-module $\sh{F}$ that is the direct
+sum of a family $(\sh{F}_n)_{n\in\bb{Z}}$ of sheaves of abelian groups,
+satisfying the conditions $\sh{A}_m\sh{F}_n\subset\sh{F}_{m+n}$. It is
+equivalent to say that $(\sh{A}_m)_x(\sh{A}_n)_x\subset(\sh{A}_{m+n})_x$
+(resp. $(\sh{A}_m)_x(\sh{F}_n)_x\subset(\sh{F}_{m+n})_x$) for each point $x$.
+\end{env}
+
+\begin{env}[4.1.5]
+\label{0.4.1.5}
+Given a ringed space $(X,\sh{A})$ (not necessarily commutative), we will not
+recall here the definitions of the bifunctors $\sh{F}\otimes_\sh{A}\sh{G}$,
+$\shHom_\sh{A}(\sh{F},\sh{F})$, and $\Hom_\sh{A}(\sh{F},\sh{G})$
+(G, II, 2.8 and 2.2) in the categories of left or right (depending on the case)
+$\sh{A}$-modules, with values in the category of sheaves of abelian groups (or
+more generally of $\sh{C}$-modules, if $\sh{C}$ is the center of $\sh{A}$). The
+stalk $(\sh{F}\otimes_\sh{A}\sh{G})_x$ for each point $x\in X$ canonically
+identifies with $\sh{F}_x\otimes_{\sh{A}_x}\sh{G}_x$ and we define a canonical
+and functorial homomorphism
+$(\shHom_\sh{A}(\sh{F},\sh{G}))_x\to\Hom_{\sh{A}_x}(\sh{F}_x,\sh{G}_x)$ which is
+in general neither injective nor surjective. The bifunctors considered above are
+additive and in particular, commute with finite direct limits;
+$\sh{F}\otimes_\sh{A}\sh{G}$ is right exact in $\sh{F}$ and in $\sh{G}$,
+commutes with inductive limits, and $\sh{A}\otimes_\sh{A}\sh{G}$
+(resp. $\sh{F}\otimes_\sh{A}\sh{A}$) canonically identifies with $\sh{G}$
+(resp. $\sh{F}$). The functors $\shHom_\sh{A}(\sh{F},\sh{G})$ and
+$\Hom_\sh{A}(\sh{F},\sh{G})$ are \emph{left exact} in $\sh{F}$ and $\sh{G}$;
+more precisely, if we have an exact sequence of the form
+$0\to\sh{G}'\to\sh{G}\to\sh{G}''$, the sequence
+\[
+  0\to\shHom_\sh{A}(\sh{F},\sh{G}')\to
+  \shHom_\sh{A}(\sh{F},\sh{G})\to\shHom_\sh{A}(\sh{F},\sh{G}'')
+\]
+is exact, and if we have an exact sequence of the form
+$\sh{F}'\to\sh{F}\to\sh{F}''\to 0$, the sequence
+\[
+  0\to\shHom_\sh{A}(\sh{F}'',\sh{G})\to
+  \shHom_\sh{A}(\sh{F},\sh{G})\to\shHom_\sh{A}(\sh{F}',\sh{G})
+\]
+is exact, with the analogous properties for the functor $\Hom$. In addiiton,
+$\shHom_\sh{A}(\sh{A},\sh{G})$ canonically identifies with $\sh{G}$; finally,
+for each open $U\subset X$, we have
+\[
+  \Gamma(U,\shHom_\sh{A}(\sh{F},\sh{G})=\Hom_{\sh{A}|U}(\sh{F}|U,\sh{G}|U).
+\]
+
+For each left (resp. right) $\sh{A}$-module, we define the \emph{dual} of
+$\sh{F}$ and denote it by $\dual{\sh{F}}$ the right (resp. left) $\sh{A}$-module
+$\shHom_\sh{A}(\sh{F},\sh{A})$.
+
+Finally, if $\sh{A}$ is a sheaf of commutative rings, $\sh{F}$ an
+$\sh{A}$-module, $U\mapsto\wedge^p\Gamma(U,\sh{F})$ is a presheaf whose
+associated sheaf is an $\sh{A}$-module denoted $\wedge^p\sh{F}$ and is called
+the \emph{$p$-th exterior power of $\sh{F}$}; we verify easily that the
+canonical map of the presheaf $U\mapsto\wedge^p\Gamma(U,\sh{F})$ to the
+associated sheaf $\wedge^p\sh{F}$ is \emph{injective}, and for each $x\in X$,
+$(\wedge^p\sh{F})_x=\wedge^p(\sh{F}_x)$. It is clear that $\wedge^p\sh{F}$ is a
+covariant functor in $\sh{F}$.
+\end{env}
+
+\begin{env}[4.1.6]
+\label{0.4.1.6}
+Suppose that $\sh{A}$ is a sheaf of not-necessarily-commutative rings, $\sh{J}$
+a left sheaf of ideals of $\sh{A}$, $\sh{F}$ an left $\sh{A}$-module; we then
+denote by $\sh{J}\sh{F}$ the $\sh{A}$-submodule of $\sh{F}$, the image of
+$\sh{J}\otimes_\bb{Z}\sh{F}$ (where $\bb{Z}$ is the sheaf associated to the
+constant presheaf $U\mapsto\bb{Z}$) under the canonical map
+$\sh{J}\otimes_\bb{Z}\sh{F}\to\sh{F}$; it is clear that for each $x\in X$, we
+have $(\sh{J}\sh{F})_x=\sh{J}_x\sh{F}_x$. When $\sh{A}$ is commutative,
+$\sh{J}\sh{F}$ is also the canonical image of
+$\sh{J}\otimes_\sh{A}\sh{F}\to\sh{F}$. It is immediate that $\sh{J}\sh{F}$ is
+also the $\sh{A}$-module associated to the presheaf
+$U\mapsto\Gamma(U,\sh{J})\Gamma(U,\sh{F})$. If $\sh{J}_1$, $\sh{J}_2$ are two
+left sheaves of ideals of $\sh{A}$, we have
+$\sh{J}_1(\sh{J}_2\sh{F})=(\sh{J}_1\sh{J}_2)\sh{F}$.
+\end{env}
+
+\begin{env}[4.1.7]
+\label{0.4.1.7}
+Let $(X_\lambda,\sh{A}_\lambda)_{\lambda\in L}$ be a family of ringed spaces;
+for each couple $(\lambda,\mu)$, suppose we are given an open subset
+$V_{\lambda\mu}$ of $X_\lambda$, and an isomorphism of ringed spaces
+$\vphi_{\lambda\mu}:(V_{\mu\lambda},\sh{A}_\mu|V_{\lambda\mu})
+  \isoto(V_{\lambda\mu},\sh{A}_\lambda|V_{\lambda\mu})$, with
+$V_{\lambda\lambda}=X_\lambda$, $\vphi_{\lambda\lambda}$ being the identity.
+Furthermore, suppose that, for each triple $(\lambda,\mu,\nu)$, if we denote by
+$\vphi_{\mu\lambda}'$ the restriction of $\vphi_{\mu\lambda}$ to
+$V_{\lambda\mu}\cap V_{\lambda\nu}$, $\vphi_{\mu\lambda}'$ is an isomorphism
+from $(V_{\lambda\mu}\cap V_{\lambda\nu},
+  \sh{A}_\lambda|(V_{\lambda\mu}\cap V_{\lambda\nu}))$ to
+$(V_{\mu\nu}\cap V_{\mu\lambda},\sh{A}_\mu|(V_{\mu\nu}\cap V_{\mu\lambda}))$ and
+that we have $\vphi_{\lambda\nu}'=\vphi_{\lambda\mu}'\circ\vphi_{\mu\nu}'$
+(\emph{gluing condition} for the $\vphi_{\lambda\mu}$). We can first consider
+the topological space obtained by gluing (by means of the $\vphi_{\lambda\mu}$)
+of the $X_\lambda$
+\oldpage[0\textsubscript{I}]{39}
+along the $V_{\lambda\mu}$; if we identify $X_\lambda$ with the corresponding
+open subset $X_\lambda'$ in $X$, the hypotheses imply that the three sets
+$V_{\lambda\mu}\cap V_{\lambda\nu}$, $V_{\mu\nu}\cap V_{\mu\lambda}$,
+$V_{\nu\lambda}\cap V_{\nu\mu}$ identify with
+$X_\lambda'\cap X_\mu'\cap X_\nu'$. We can also transport to $X_\lambda'$ the
+ringed space structure of $X_\lambda$, and if $\sh{A}_\lambda'$ are the
+transported sheaves of rings corresponding to the $\sh{A}_\lambda$, the
+$\sh{A}_\lambda'$ satisfy the gluing condition \sref{0.3.3.1} and therefore
+define a sheaf of rings $\sh{A}$ on $X$; we say that $(X,\sh{A})$ is the ringed
+space obtained by \emph{gluing the $(X_\lambda,\sh{A}_\lambda)$ along the
+$V_{\lambda\mu}$}, by means of the $\vphi_{\lambda\mu}$.
+\end{env}
+
+\subsection{Direct image of an $\mathcal{A}$-module}
+\label{subsection-direct-image-of-module-sheaf}
+
+\begin{env}[4.2.1]
+\label{0.4.2.1}
+Let $(X,\sh{A})$, $(Y,\sh{B})$ be two ringed spaces, $\Psi=(\psi,\theta)$ a
+morphism $(X,\sh{A})\to(Y,\sh{B})$; $\psi_*(\sh{A})$ is then a sheaf of rings on
+$Y$, and $\theta$ a homomorphism $\sh{B}\to\psi_*(\sh{A})$ of sheaves of rings.
+Then let $\sh{F}$ be an $\sh{A}$-module; the direct image $\psi_*(\sh{F})$ is a
+sheaf of abelian groups on $Y$. In addition, for each open $U\subset Y$,
+\[
+  \Gamma(U,\psi_*(\sh{F}))=\Gamma(\psi^{-1}(U),\sh{F})
+\]
+is equipped with the structure of a module over the ring
+$\Gamma(U,\psi_*(\sh{A}))=\Gamma(\psi^{-1}(U),\sh{A})$; the bilinear maps which
+define these structures are compatible with the restriction operations, defining
+on $\psi_*(\sh{F})$ the structure of a $\psi_*(\sh{A})$-module. The homomorphism
+$\theta:\sh{B}\to\psi_*(\sh{A})$ then defines also on $\psi_*(\sh{F})$ a
+\emph{$\sh{B}$-module} structure; we say that this
+$\sh{B}$-module is the \emph{direct image of $\sh{F}$ under the morphism
+$\Psi$}, and we denote it by $\Psi_*(\sh{F})$. If $\sh{F}_1$, $\sh{F}_2$ are two
+$\sh{A}$-modules over $X$ and $u$ an $\sh{A}$-homomorphism
+$\sh{F}_1\to\sh{F}_2$, it is immediate (by considering the sections over the
+open subsets of $Y$) that $\psi_*(u)$ is a $\psi_*(\sh{A})$-homomorphism
+$\psi_*(\sh{F}_1)\to\psi_*(\sh{F}_2)$, and \emph{a fortiori} a
+$\sh{B}$-homomorphism $\Psi_*(\sh{F}_1)\to\Psi_*(\sh{F}_2)$; as a
+$\sh{B}$-homomorphism, we denote it by $\Psi_*(u)$. So we see that $\Psi_*$ is a
+\emph{covariant functor} from the category of $\sh{A}$-modules to that of
+$\sh{B}$-modules. In addition, it is immediate that this functor is \emph{left
+exact} (G, II, 2.12).
+
+On $\psi_*(\sh{A})$, the structure of a $\sh{B}$-module and the structure of a
+sheaf of rings define a $\sh{B}$-algebra structure; we denote by
+$\Psi_*(\sh{A})$ this $\sh{B}$-algebra.
+\end{env}
+
+\begin{env}[4.2.2]
+\label{0.4.2.2}
+Let $\sh{M}$, $\sh{N}$ be two $\sh{A}$-modules. For each open set $U$ of $Y$, we
+have a canonical map
+\[
+  \Gamma(\psi^{-1}(U),\sh{M})\times\Gamma(\psi^{-1}(U),\sh{N})
+  \to\Gamma(\psi^{-1}(U),\sh{M}\otimes_\sh{A}\sh{N})
+\]
+which is bilinear over the ring
+$\Gamma(\psi^{-1}(U),\sh{A})=\Gamma(U,\psi_*(\sh{A}))$, and \emph{a fortiori}
+over $\Gamma(U,\sh{B})$; it therefore defines a homomorphism
+\[
+  \Gamma(U,\Psi_*(\sh{M}))\otimes_{\Gamma(U,\sh{B})}\Gamma(U,\Psi_*(\sh{N}))
+  \to\Gamma(U,\Psi_*(\sh{M}\otimes_\sh{A}\sh{N}))
+\]
+and as we check immediately that these homomorphisms are compatible with the
+restriction operations, they give a canonical functorial homomorphism of
+$\sh{B}$-modules
+\[
+  \Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N})
+  \to\Psi_*(\sh{M}\otimes_\sh{A}\sh{N})
+  \tag{4.2.2.1}
+\]
+\oldpage[0\textsubscript{I}]{40}
+which is in general neither injective nor surjective. If $\sh{P}$ is a third
+$\sh{A}$-module, we check immediately that the diagram
+\[
+  \xymatrix{
+    \Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N})\otimes_\sh{B}\Psi_*(\sh{P})\ar[r]\ar[d]
+    & \Psi_*(\sh{M}\otimes_\sh{A}\sh{N})\otimes_\sh{B}\Psi_*(\sh{P})\ar[d]\\
+    \Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N}\otimes_\sh{A}\sh{P})\ar[r]
+    & \Psi_*(\sh{M}\otimes_\sh{A}\sh{N}\otimes_\sh{A}\sh{P})
+  }
+  \tag{4.2.2.2}
+\]
+is commutative.
+\end{env}
+
+\begin{env}[4.2.3]
+\label{0.4.2.3}
+Let $\sh{M}$, $\sh{N}$ be two $\sh{A}$-modules. For each open $U\subset Y$, we
+have by definition that
+$\Gamma(\psi^{-1}(U),\shHom_\sh{A}(\sh{M},\sh{N}))
+  =\Hom_{\sh{A}|V}(\sh{M}|V,\sh{N}|V)$, where we put $V=\psi^{-1}(U)$; the map
+$u\mapsto\Psi_*(u)$ is a homomorphism
+\[
+  \Hom_{\sh{A}|V}(\sh{M}|V,\sh{N}|V)
+  \to\Hom_{\sh{B}|U}(\Psi_*(\sh{M})|U,\Psi_*(\sh{N})|U)
+\]
+on the $\Gamma(U,\sh{B})$-module structures; these homomorphisms are compatible
+with the restriction operations, hence they define a canonical functorial
+homomorphism of $\sh{B}$-modules
+\[
+  \Psi_*(\shHom_\sh{A}(\sh{M},\sh{N}))
+  \to\shHom_\sh{B}(\Psi_*(\sh{M}),\Psi_*(\sh{N})).
+  \tag{4.2.3.1}
+\]
+\end{env}
+
+\begin{env}[4.2.4]
+\label{0.4.2.4}
+If $\sh{C}$ is an $\sh{A}$-algebra, the composite homomorphism
+\[
+  \Psi_*(\sh{C})\otimes_\sh{B}\Psi_*(\sh{C})
+  \to\Psi_*(\sh{C}\otimes_\sh{A}\sh{C})
+  \to\Psi_*(\sh{C})
+\]
+defines on $\Psi_*(\sh{C})$ the structure of a \emph{$\sh{B}$-algebra}, as a
+result of (4.2.2.2). We see similarly that if $\sh{M}$ is a $\sh{C}$-module,
+$\Psi_*(\sh{M})$ is canonically equipped with the structure of a
+$\Psi_*(\sh{C})$-module.
+\end{env}
+
+\begin{env}[4.2.5]
+\label{0.4.2.5}
+Consider in particular the case where $X$ is a \emph{closed} subspace of $Y$ and
+where $\psi$ is the canonical injection $j:X\to Y$. If
+$\sh{B}'=\sh{B}|X=j^*(\sh{B})$ is the restriction of the sheaf of rings $\sh{B}$
+to $X$, an $\sh{A}$-module $\sh{M}$ can be considered as a $\sh{B}'$-module by
+means of the homomorphism $\theta^\sharp:\sh{B}'\to\sh{A}$; then
+$\Psi_*(\sh{M})$ is the $\sh{B}$-module which induces $\sh{M}$ on $X$ and $0$
+elsewhere. If $\sh{N}$ is a second $\sh{A}$-module,
+$\Psi_*(\sh{M})\otimes_\sh{B}\Psi_*(\sh{N})$ canonically identifies with
+$\Psi_*(\sh{M}\otimes_{\sh{B}'}\sh{N})$ and
+$\shHom_\sh{B}(\Psi_*(\sh{M}),\Psi_*(\sh{N}))$ with
+$\Psi_*(\shHom_{\sh{B}'}(\sh{M},\sh{N}))$.
+\end{env}
+
+\begin{env}[4.2.6]
+\label{0.4.2.6}
+Let $(Z,\sh{C})$ be a third ringed space, $\Psi'=(\psi',\theta')$ a morphism
+$(Y,\sh{B})\to(Z,\sh{C})$; if $\Psi''$ is the composite morphism
+$\Psi'\circ\Psi$, it is clear that we have $\Psi_*''=\Psi_*'\circ\Psi_*$.
+\end{env}
+
+\subsection{Inverse image of an $\mathcal{A}$-module}
+\label{subsection-inverse-image-of-module-sheaf}
+
+\begin{env}[4.3.1]
+\label{0.4.3.1}
+The hypotheses and notation being the same as \sref{0.4.2.1}, let $\sh{G}$ be
+a $\sh{B}$-module and $\psi^*(\sh{G})$ the inverse image \sref{0.3.7.1} which
+is therefore a sheaf of abelian groups on $X$. The definition of sections of
+$\psi^*(\sh{G})$ and of $\psi^*(\sh{B})$ \sref{0.3.7.1} shows that
+$\psi^*(\sh{G})$ is canonically equipped with a $\psi^*(\sh{B})$-module
+structure. On the other hand, the homomorphism
+$\theta^\sharp:\psi^*(\sh{B})\to\sh{A}$ endows $\sh{A}$ with the a
+$\psi^*(\sh{B})$-module structure, which we denote by $\sh{A}_{[\theta]}$ when
+necessary to avoid confusion; the tensor product
+$\psi^*(\sh{G})\otimes_{\psi^*(\sh{B})}\sh{A}_{[\theta]}$ is then equipped with
+an $\sh{A}$-module structure. We say that this $\sh{A}$-module is \emph{the
+inverse image of $\sh{G}$ under the morphism $\Psi$}
+\oldpage[0\textsubscript{I}]{41}
+and we denote it by $\Psi^*(\sh{G})$. If $\sh{G}_1$, $\sh{G}_2$ are two
+$\sh{B}$-modules over $Y$, $v$ a $\sh{B}$-homomorphism $\sh{G}_1\to\sh{G}_2$,
+then $\psi^*(v)$, as we check immediately, is a $\psi^*(\sh{B})$-homomorphism
+from $\psi^*(\sh{G}_1)$ to $\psi^*(\sh{G}_2)$; as a result $\psi^*(v)\otimes 1$
+is an $\sh{A}$-homomorphism $\Psi^*(\sh{G}_1)\to\Psi^*(\sh{G}_2)$, which we
+denote by $\Psi^*(v)$. So we define $\Psi^*$ as a \emph{covariant functor} from
+the category of $\sh{B}$-modules to that of $\sh{A}$-modules. Here, this functor
+(contrary to $\psi^*$) is no longer exact in general, but only \emph{right
+exact}, the tensorization by $\sh{A}$ being a right exact functor to the
+category of $\psi^*(\sh{B})$-modules.
+
+For each $x\in X$, we have
+$(\Psi^*(\sh{G}))_x=\sh{G}_{\psi(x)}\otimes_{\sh{B}_{\psi(x)}}\sh{A}_x$,
+according to \sref{0.3.7.2}. The support of $\Psi^*(\sh{G})$ is thus
+contained in $\psi^{-1}(\Supp(\sh{G}))$.
+\end{env}
+
+\begin{env}[4.3.2]
+\label{0.4.3.2}
+Let $(\sh{G}_\lambda)$ be an inductive system of $\sh{B}$-modules, and let
+$\sh{G}=\varinjlim\sh{G}_\lambda$ be its inductive limit. The canonical
+homomorphisms $\sh{G}_\lambda\to\sh{G}$ define the
+$\psi^*(\sh{B})$-homomorphisms $\psi^*(\sh{G}_\lambda)\to\psi^*(\sh{G})$, which
+give a canonical homomorphism
+$\varinjlim\psi^*(\sh{G}_\lambda)\to\psi^*(\sh{G})$. As the stalk at a point of
+an inductive limit of sheaves is the inductive limit of the stalks at the same
+point (G, II, 1.11), the preceding canonical homomorphism is \emph{bijective}
+\sref{0.3.7.2}. In addition, the tensor product commutes with inductive
+limits of sheaves, and we thus have a \emph{canonical functorial isomorphism}
+$\varinjlim\Psi^*(\sh{G}_\lambda)\isoto\Psi^*(\varinjlim\sh{G}_\lambda)$ of
+$\sh{A}$-modules.
+
+On the other hand, for a finite direct sum $\bigoplus_i\sh{G}_i$ of
+$\sh{B}$-modules, it is clear that
+$\psi^*(\bigoplus_i\sh{G}_i)=\bigoplus_i\psi^*(\sh{G}_i)$, therefore, by
+tensoring with $\sh{A}_{[\theta]}$,
+\[
+  \Psi^*\big(\bigoplus_i\sh{G}_i\big)=\bigoplus_i\Psi^*(\sh{G}_i).
+  \tag{4.3.2.1}
+\]
+By passing to the inductive limit, we deduce, in light of the above, that the
+above equality is still true for \emph{any} direct sum.
+\end{env}
+
+\begin{env}[4.3.3]
+\label{0.4.3.3}
+Let $\sh{G}_1$, $\sh{G}_2$ be two $\sh{B}$-modules; from the definition of the
+inverse images of sheaves of abelian groups \sref{0.3.7.1}, we obtain
+immediately a canonical homomorphism
+$\psi^*(\sh{G}_1)\otimes_{\psi^*(\sh{B})}\psi^*(\sh{G}_2)
+  \to\psi^*(\sh{G}_1\otimes_\sh{B}\sh{G}_2)$ of $\psi^*(\sh{B})$-modules, and
+the stalk at a point of a tensor product of sheaves being the tensor product of
+the stalks at this point (G, II, 2.8), we deduce from \sref{0.3.7.2} that the
+above homomorphism is in fact a \emph{isomorphism}. By tensoring with $\sh{A}$,
+we obtain a \emph{canonical functorial isomorphism}
+\[
+  \Psi^*(\sh{G}_1)\otimes_\sh{A}\Psi^*(\sh{G}_2)
+  \isoto\Psi^*(\sh{G}_1\otimes_\sh{B}\sh{G}_2).
+  \tag{4.3.3.1}
+\]
+\end{env}
+
+\begin{env}[4.3.4]
+\label{0.4.3.4}
+Let $\sh{C}$ be a $\sh{B}$-algebra; the data of the algebra structure on
+$\sh{C}$ is the same as the data of a $\sh{B}$-homomorphism
+$\sh{C}\otimes_\sh{B}\sh{C}\to\sh{C}$ satisfying the associativity and
+commutativity conditions (conditions which are checked stalk-wise); the above
+isomorphism allows us to consider this homomorphism as a homomorphism of
+$\sh{A}$-modules $\Psi^*(\sh{C})\otimes_\sh{A}\Psi^*(\sh{C})\to\Psi^*(\sh{C})$
+satisfying the same conditions, so $\Psi^*(\sh{C})$ is thus equipped with an
+$\sh{A}$-algebra structure. In particular, it follows immediately from the
+definitions that the $\sh{A}$-algebra $\Psi^*(\sh{B})$ is \emph{equal to
+$\sh{A}$} (up to a canonical isomorphism).
+
+Similarly, if $\sh{M}$ is a $\sh{C}$-module, the data of this module structure
+is the same
+\oldpage[0\textsubscript{I}]{42}
+as that of a $\sh{B}$-homomorphism $\sh{C}\otimes_\sh{B}\sh{M}\to\sh{M}$
+satisfying the associativity condition; hence we give a $\Psi^*(\sh{C})$-module
+structure on $\Psi^*(\sh{M})$.
+\end{env}
+
+\begin{env}[4.3.5]
+\label{0.4.3.5}
+Let $\sh{J}$ be a sheaf of ideals of $\sh{B}$; as the functor $\psi^*$ is exact,
+the $\psi^*(\sh{B})$-module $\psi^*(\sh{J})$ canonically identifies with a sheaf
+of ideals of $\psi^*(\sh{B})$; the canonical injection
+$\psi^*(\sh{J})\to\psi^*(\sh{B})$ then gives a homomorphism of $\sh{A}$-modules
+$\Psi^*(\sh{J})=\psi^*(\sh{J})\otimes_{\psi^*(\sh{B})}\sh{A}_{[\theta]}
+  \to\sh{A}$; we denote by $\Psi^*(\sh{J})\sh{A}$, or $\sh{J}\sh{A}$ if there is
+no fear of confusion, the image of $\Psi^*(\sh{J})$ under this homomorphism. So
+we have by definition $\sh{J}\sh{A}=\theta^\sharp(\psi^*(\sh{J}))\sh{A}$ and in
+particular, for each $x\in X$,
+$(\sh{J}\sh{A})_x=\theta_x^\sharp(\sh{J}_{\psi(x)})\sh{A}_x$, taking into
+account the canonical identification between the stalks of $\psi^*(\sh{J})$ and
+those of $\sh{J}$ \sref{0.3.7.2}. If $\sh{J}_1$, $\sh{J}_2$ are two sheaves
+of ideals of $\sh{B}$, then we have
+$(\sh{J}_1\sh{J}_2)\sh{A}
+  =\sh{J}_1(\sh{J}_2\sh{A})=(\sh{J}_1\sh{A})(\sh{J}_2\sh{A})$.
+
+If $\sh{F}$ is an $\sh{A}$-module, we set $\sh{J}\sh{F}=(\sh{J}\sh{A})\sh{F}$.
+\end{env}
+
+\begin{env}[4.3.6]
+\label{0.4.3.6}
+Let $(Z,\sh{C})$ be a third ringed space, $\Psi'=(\psi',\theta')$ a morphism
+$(Y,\sh{B})\to(Z,\sh{C})$; if $\Psi''$ is the composite morphism
+$\Psi'\circ\Psi$, it follows from the definition \sref{0.4.3.1} and from
+(4.3.3.1) that we have ${\Psi''}^*=\Psi^*\circ{\Psi'}^*$.
+\end{env}
+
+\subsection{Relation between direct and inverse images}
+\label{subsection-relation-between-direct-and-inverse-images}
+
+\begin{env}[4.4.1]
+\label{0.4.4.1}
+The hypotheses and notations being the same as in \sref{0.4.2.1}, let
+$\sh{G}$ be a $\sh{B}$-module. By definition, a homomorphism
+$u:\sh{G}\to\Psi_*(\sh{F})$ of $\sh{B}$-modules is still called a
+\emph{$\Psi$-morphisms from $\sh{G}$ to $\sh{F}$}, or simply a
+\emph{homomorphism from $\sh{G}$ to $\sh{F}$} and we write it as
+$u:\sh{G}\to\sh{F}$ when no confusion will occur. To give such a homomorphism is
+the same as giving, for each pair $(U,V)$ where $U$ is an open set of $X$, $V$
+an open set of $Y$ such that $\psi(U)\subset V$, a \emph{homomorphism
+$u_{U,V}:\Gamma(V,\sh{G})\to\Gamma(U,\sh{F})$ of $\Gamma(V,\sh{B})$-modules},
+$\Gamma(U,\sh{F})$ being considered as a $\Gamma(V,\sh{B})$-module by means of
+the ring homomorphism $\theta_{U,V}:\Gamma(V,\sh{B})\to\Gamma(U,\sh{A})$; the
+$u_{U,V}$ must in addition render commutative the diagrams (3.5.1.1). It
+suffices, moreover, to define $u$ by the data of the $u_{U,V}$ when $U$
+(resp. $V$) varies over a basis $\fk{B}$ (resp. $\fk{B}'$) for the
+topology of $X$ (resp. $Y$) and to check the commutativity of (3.5.1.1) for
+these restrictions.
+\end{env}
+
+\begin{env}[4.4.2]
+\label{0.4.4.2}
+Under the hypotheses of \sref{0.4.2.1} and \sref{0.4.2.6}, let $\sh{H}$ be
+a $\sh{C}$-module, $v:\sh{H}\to\Psi_*'(\sh{G})$ a $\Psi'$-morphism; then
+$w:\sh{H}\xrightarrow{v}\Psi_*'(\sh{G})\xrightarrow{\Psi_*'(u)}\Psi_*'(\Psi_*(\sh{F}))$
+is a $\Psi''$-morphism which we call the \emph{composition} of $u$ and $v$.
+\end{env}
+
+\begin{env}[4.4.3]
+\label{0.4.4.3}
+We will now see that we can define a canonical \emph{isomorphism} of \emph{bifunctors} in
+$\sh{F}$ and $\sh{G}$
+\[
+  \Hom_\sh{A}(\Psi^*(\sh{G}),\sh{F})\isoto\Hom_\sh{B}(\sh{G},\Psi_*(\sh{F}))
+  \tag{4.4.3.1}
+\]
+which we denote by $v\mapsto v_\theta^\flat$ (or simply $v\mapsto v^\flat$ if there is no
+chance of confusion); we denote by $u\mapsto u_\theta^\sharp$, or $u\mapsto u^\sharp$, the
+inverse isomorphism. This definition is the following: by composing
+$v:\Psi^*(\sh{G})\to\sh{F}$ with the canonical map $\psi^*(\sh{G})\to\Psi^*(\sh{G})$, we
+obtain a homomorphism of sheaves of groups $v':\psi^*(\sh{G})\to\sh{F}$, which is also a
+homomorphism of $\psi^*(\sh{B})$-modules. We obtain \sref{0.3.7.1} a homomorphism
+${v'}^\flat:\sh{G}\to\psi_*(\sh{F})=\Psi_*(\sh{F})$, which is also a homomorphism of
+$\sh{B}$-modules as we
+\oldpage[0\textsubscript{I}]{43}
+check easily; we take $v_\theta^\flat={v'}^\flat$. Similarly, for
+$u:\sh{G}\to\Psi_*(\sh{F})$, which is a homomorphism of $\sh{B}$-modules, we obtain
+\sref{0.3.7.1} a homomorphism $u^\sharp:\psi^*(\sh{G})\to\sh{F}$ of
+$\psi^*(\sh{B})$-modules, hence by tensoring with $\sh{A}$ we have a homomorphism of
+$\sh{A}$-modules $\Psi^*(\sh{G})\to\sh{F}$, which we denote by $u_\theta^\sharp$. It is
+immediate to check that $(u_\theta^\sharp)_\theta^\flat=u$ and
+$(v_\theta^\flat)_\theta^\sharp=v$, so we have established the functorial nature in $\sh{F}$
+of the isomorphism $v\mapsto v_\theta^\flat$. The functorial nature in $\sh{G}$ of
+$u\mapsto u_\theta^\sharp$ is then formally shown as in \sref{0.3.5.4} (reasoning that
+would also prove the functorial nature of $\Psi^*$ established in \sref{0.4.3.1}
+directly).
+
+If we take for $v$ the identity homomorphism of $\Psi^*(\sh{B})$, $v_\theta^\flat$ is a
+homomorphism
+\[
+  \rho_\sh{G}:\sh{G}\to\Psi_*(\Psi^*(\sh{G}));
+  \tag{4.4.3.2}
+\]
+if we take for $u$ the identity homomorphism of $\Psi_*(\sh{F})$, $u_\theta^\sharp$ is a
+homomorphism
+\[
+  \sigma_\sh{F}:\Psi^*(\Psi_*(\sh{F}))\to\sh{F};
+  \tag{4.4.3.3}
+\]
+these homomorphisms will be called \emph{canonical}. They are in general neither injective or
+surjective. We have canonical factorizations analogous to (3.5.3.3) and (3.5.4.4).
+
+We note that if $s$ is a section of $\sh{G}$ over an open set $V$ of $Y$, $\rho_\sh{G}(s)$ is
+the section $s'\otimes 1$ of $\Psi^*)(\sh{G})$ over $\psi^{-1}(V)$, $s'$ being such that
+$s_x'=s_{\psi(x)}$ for all $x\in\psi^{-1}(V)$. We also note that if
+$u:\sh{G}\to\psi_*(\sh{F})$ is a homomorphism, it defines for all $x\in X$ a homomorphism
+$u_x:\sh{G}_{\psi(x)}\to\sh{F}_x$ on the stalks, obtained by composing
+$(u^\sharp)_x:(\Psi^*(\sh{G}))_x\to\sh{F}_x$ and the canonical homomorphism
+$s_x\mapsto s_x\otimes 1$ from $\sh{G}_{\psi(x)}$ to
+$(\Psi^*(\sh{G}))_x=\sh{G}_{\psi(x)}\otimes_{\sh{B}_{\psi(x)}}\sh{A}_x$. The homomorphism
+$u_x$ is obtained also by passing to the inductive limit relative to the homomorphisms
+$\Gamma(V,\sh{G})\xrightarrow{u}\Gamma(\psi^{-1}(V),\sh{F})\to\sh{F}_x$, where $V$ varies
+over the neighborhoods of $\psi(x)$.
+\end{env}
+
+\begin{env}[4.4.4]
+\label{0.4.4.4}
+Let $\sh{F}_1$, $\sh{F}_2$ be $\sh{A}$-modules, $\sh{G}_1$, $\sh{G}_2$ be $\sh{B}$-modules,
+$u_i$ ($i=1,2$) a homomorphism from $\sh{G}_i$ to $\sh{F}_i$. We denote by $u_1\otimes u_2$
+the homomorphism $u:\sh{G}_1\otimes_\sh{B}\sh{G}_2\to\sh{F}_1\otimes_\sh{A}\sh{F}_2$ such
+that $u^\sharp=(u_1)^\sharp\otimes(u_2)^\sharp$ (taking into account (4.3.3.1)); we check
+that $u$ is also the composition
+$\sh{G}_1\otimes_\sh{B}\sh{G}_2\to\Psi_*(\sh{F}_1)\otimes_\sh{B}\Psi_*(\sh{F}_2)
+\to\Psi_*(\sh{F}_1\otimes_\sh{A}\sh{F}_2)$, where the first arrow is the ordinary tensor
+product $u_1\otimes_\sh{B}u_2$ and the second is the canonical homomorphism (4.2.2.1).
+\end{env}
+
+\begin{env}[4.4.5]
+\label{0.4.4.5}
+Let $(\sh{G}_\lambda)_{\lambda\in L}$ be an inductive system of
+$\sh{B}$-modules, and, for each $\lambda\in L$, let $u_\lambda$ be a
+homomorphism $\sh{G}_\lambda\to\Psi_*(\sh{F})$, form an inductive limit; we put
+$\sh{G}=\varinjlim\sh{G}_\lambda$ and $u=\varinjlim u_\lambda$; then the
+$(u_\lambda)^\sharp$ form an inductive system of homomorphisms
+$\Psi^*(\sh{G}_\lambda)\to\sh{F}$, and the inductive limit of this system is
+none other than $u^\sharp$.
+\end{env}
+
+\begin{env}[4.4.6]
+\label{0.4.4.6}
+Let $\sh{M}$, $\sh{N}$ be two $\sh{B}$-modules, $V$ an open set of $Y$,
+$U=\psi^{-1}(V)$; the map $v\mapsto\Psi^*(v)$ is a homomorphism
+\[
+  \Hom_{\sh{B}|V}(\sh{M}|V,\sh{N}|V)
+  \to\Hom_{\sh{A}|U}(\Psi^*(\sh{M})|U,\Psi^*(\sh{N})|U)
+\]
+for the $\Gamma(V,\sh{B})$-module structures
+($\Hom_{\sh{A}|U}(\Psi^*(\sh{M})|U,\Psi^*(\sh{N})|U)$ is normaly equipped with the a
+$\Gamma(U,\psi^*(\sh{B}))$-module structure, and thanks to the canonical homomorphism
+\oldpage[0\textsubscript{I}]{44}
+\sref{0.3.7.2} $\Gamma(V,\sh{B})\to\Gamma(U,\psi^*(\sh{B}))$, it is also a
+$\Gamma(V,\sh{B})$-module). We see immediately that these homomorphisms are compatible with
+the restriction morphisms, and as a result define a canonical functorial homomorphism
+\[
+  \gamma:\shHom_\sh{B}(\sh{M},\sh{N})
+  \to\Psi_*(\shHom_\sh{A}(\Psi^*(\sh{M}),\Psi^*(\sh{N}));
+\]
+it also corresponds to this homomorphism the homomorphism
+\[
+  \gamma^\sharp:\Psi^*(\shHom_\sh{B}(\sh{M},\sh{N}))
+  \to\shHom_\sh{A}(\Psi^*(\sh{M}),\Psi^*(\sh{N}))
+\]
+and these canonical morphisms are functorial in $\sh{M}$ and $\sh{N}$.
+\end{env}
+
+\begin{env}[4.4.7]
+\label{0.4.4.7}
+Suppose that $\sh{F}$ (resp. $\sh{G}$) is an $\sh{A}$-algebra (resp. a $\sh{B}$-algebra). If
+$u:\sh{G}\to\Psi_*(\sh{F})$ is a homomorphism of $\sb{B}$-algebras, $u^\sharp$ is a
+homomorphism $\Psi^*(\sh{G})\to\sh{F}$ of $\sh{A}$-algebras; this follows from the
+commutativity of the diagram
+\[
+  \xymatrix{
+    \sh{G}\otimes_\sh{B}\sh{G}\ar[r]\ar[d] &
+    \sh{G}\ar[d]^u\\
+    \Psi_*(\sh{F}\otimes_\sh{A}\sh{F})\ar[r] &
+    \Psi_*(\sh{F})
+  }
+\]
+and from \sref{0.4.4.4}. Similarly, if $v:\Psi^*(\sh{G})\to\sh{F}$ is a homomorphism of
+$\sh{A}$-algebras, $v^\flat:\sh{G}\to\Psi_*(\sh{F})$ is a homomorphism of $\sh{B}$-algebras.
+\end{env}
+
+\begin{env}[4.4.8]
+\label{0.4.4.8}
+Let $(Z,\sh{C})$ be a third ringed space, $\Psi'=(\psi',\theta')$ a morphism
+$(Y,\sh{B})\to(Z,\sh{C})$, and $\Psi'':(X,\sh{A})\to(Z,\sh{C})$ the composite morphism
+$\Psi'\circ\Psi$. Let $\sh{H}$ be a $\sh{C}$-module, $u'$ a homomorphsim from $\sh{H}$ to
+$\sh{G}$; the composition $v''=v\circ v'$ is by definition the homomorphism from $\sh{H}$ to
+$\sh{F}$ defined by
+$\sh{H}\xrightarrow{v'}\Psi_*'(\sh{G})\xrightarrow{\Psi_*'(v)}\Psi_*'(\Psi_*(\sh{F}))$; we
+check that ${v''}^\sharp$ is the homomorphism
+\[
+  \Psi^*({\Psi'}^*(\sh{H}))\xrightarrow{\Psi^*({v'}^\sharp)}\Psi^*(\sh{G})
+  \xrightarrow{v^\sharp}\sh{F}.
+\]
+\end{env}
