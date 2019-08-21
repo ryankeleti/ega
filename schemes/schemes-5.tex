@@ -179,6 +179,7 @@ Furthermore, the relation $\fk{R}_x=\sh{I}_x$ shows that the restriction of $\th
 additionally, by passing to the quotients, $\theta^\sharp$ gives an \emph{isomorphism} $\psi^*(\OO_X/\wt{\fk{R}})\to\OO_X/\sh{I}$, because $f_0$ is an isomorphism;
 we thus immediately conclude, by the \unsure{lemma of 5} (M,~I,~1.1), that $\theta^\sharp$ is itself an isomorphism, and thus that $f$ is an \emph{isomorphism}, and hence $X$ is affine.
 So everything relies on proving the exactitude of \hyperref[1.5.1.9]{(5.1.9.1)}, which will follow from showing that $\HH^1(X,\sh{I})=0$.
+\oldpage[I]{131}
 But $\HH^1(X,\sh{I})=\HH^1(X_0,\sh{I})$, and we have seen that $\sh{I}$ is a quasi coherent $\OO_{X_0}$-module.
 Our proof will thus follow from
 \begin{lem}[5.1.9.2]
@@ -253,4 +254,143 @@ Since, by \sref{1.5.2.2}, the restriction of $f$ to $X'$ factors as $X'\to Y'\to
 
 \begin{env}[5.3.1]
 \label{1.5.3.1}
+Let $X$ be an $S$-prescheme;
+we define the \emph{diagonal morphism} of $X$ in $X\times_S X$, denoted by $\Delta_{X|S}$, or $\Delta_X$, or even $\Delta$ if no confusion may arise, to be the $S$-morphism $(1_X,1_X)_S$, or, in other words, the unique $S$-morphism $\Delta_X$ such that
+\[
+    p_1\circ\Delta_X = p_2\circ\Delta_X = 1_X\tag{5.3.1.1}
+\]
+where $p_1$ and $p_2$ are the projections of $X\times_S X$ (def.~\sref{1.3.2.1}).
+If $f:T\to X$ and $g:T\to Y$ are $S$-morphisms, we can immediately see that
+\[
+    (f,g)_S = (f\times_S g)\circ\Delta_{T|S}.\tag{5.3.1.2}
+\]
+
+The reader will note that the preceding definition and the results stated in \sref{1.5.3.1} to \sref{1.5.3.8} are true in any category, \emph{provided that the products treated within exist in the category}.
 \end{env}
+
+\begin{prop}[5.3.2]
+\label{1.5.3.2}
+Let $X$ and $Y$ be $S$-preschemes;
+if we make the canonic identification between $(X\times Y)\times(X\times Y)$ and $(X\times X)\times(Y\times Y)$, then the morphism $\Delta_{X\times Y}$ is identified with $\Delta_X\times\Delta_Y$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.3.2}
+Indeed, if $p_1:X\times X\to X$ and $q_1:Y\times Y\to Y$ are the projections onto the first component, then the projection onto the first component $(X\times Y)\times(X\times Y)\to X\times Y$ is identified with $p_1\times q_1$, and we have
+\[
+    (p_1\times q_1)\circ(\Delta_X\times\Delta_Y) = (p_1\circ\Delta_X)\times(q_1\circ\Delta_Y) = 1_{X\times Y}
+\]
+and we can argue similarly for the projections onto the second component.
+\end{proof}
+
+\begin{cor}[5.3.4]
+\label{1.5.3.4}
+For every extension $S'\to S$ of the base prescheme, $\Delta_{X_{S'}}$ is canonically identified with $(\Delta_X)_{(S')}$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.4}
+It suffices to remark that $(X\times_S X)_{(S')}$ is canonically identified with $X_{(S')}\times_{S'}X_{(S')}$ \sref{1.3.3.10}.
+\end{proof}
+
+\begin{prop}[5.3.5]
+\label{1.5.3.5}
+Let $X$ and $Y$ be $S$-preschemes, and $\vphi:S\to T$ a morphism of preschemes, which lets us consider every $S$-prescheme as a $T$-prescheme.
+Let $f:X\to S$ and $g:Y\to S$ be the structure morphisms, $p$ and $q$ the projections of $X\times_S Y$, and $\pi=f\circ p=g\circ q$ the structure morphism $X\times_S Y\to S$.
+Then the diagram
+\[
+  \xymatrix{
+    X\times_S Y \ar[r]^{(p,q)_T} \ar[d]_\pi
+    & X\times_T Y \ar[d]^{f\times_T g}\\
+    S \ar[r]_{\Delta_{S|T}}
+    & S\times_T S
+  }\tag{5.3.5.1}
+\]
+\oldpage[I]{133}
+commutes, and identifies $X\times_S Y$ with the product of the $(S\times_T S)$-preschemes $S$ and $X\times_T Y$, and the projections with $\pi$ and $(p,q)_T$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.3.5}
+By \sref{1.3.4.3}, we are led to proving the corresponding proposition \emph{in the category of sets}, replacing $X$, $Y$, and $S$ by $X(Z)_T$, $Y(Z)_T$, and $S(Z)_T$ (respectively), with $Z$ being an arbitrary $T$-prescheme.
+But in the category of sets, the proof is immediate and left to the reader.
+\end{proof}
+
+\begin{cor}[5.3.6]
+\label{1.5.3.6}
+The morphism $(p,q)_T$ can be identified (letting $P=S\times_T S$) with $1_{X\times_T Y}\times_P\Delta_S$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.6}
+This follows from \sref{1.5.3.5} and \sref{1.3.3.4}.
+\end{proof}
+
+\begin{cor}[5.3.7]
+\label{1.5.3.7}
+If $f:X\to Y$ is an $S$-morphism then the diagram
+\[
+  \xymatrix{
+    X \ar[r]^{(1_X,f)_S} \ar[d]_f
+    & X\times_S Y \ar[d]^{f\times_S 1_Y}\\
+    Y \ar[r]_{\Delta_Y}
+    & Y\times_S Y
+  }
+\]
+commutes, and identifies $X$ with the product of the $(Y\times_S Y)$-preschemes $Y$ and $X\times_S Y$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.7}
+It suffices to apply \sref{1.5.3.5}, replacing $S$ by $Y$ and $T$ by $S$, and noting that $X\times_Y Y=X$ \sref{1.3.3.3}.
+\end{proof}
+
+\begin{prop}[5.3.8]
+\label{1.5.3.8}
+For $f:X\to Y$ to be a monomorphism of preschemes, it is necessary and sufficient for $\Delta_{X|Y}$ to be an isomorphism from $X$ to $X\times_Y X$.
+\end{prop}
+
+\begin{proof}
+\label{1.5.3.8}
+Indeed, to say that $f$ is a monomorphism implies that, for every $Y$-prescheme $Z$, the corresponding map $f':X(Z)_Y\to Y(Z)_Y$ is an injection, and since $Y(Z)_Y$ is \unsure{reduced at a single element}, this implies that $X(Z)_Y$ is too.
+But this can also be expressed by saying that $X(Z)_Y\times X(Z)_Y$ is canonically isomorphic to $X(Z)_Y$, and the former is exactly the set $(X\times_Y X)(Z)_Y$ \hyperref[1.3.4.3]{(3.4.3.1)}, which implies that $\Delta_{X|Y}$ is an isomorphism.
+\end{proof}
+
+\begin{prop}[5.3.9]
+\label{1.5.3.9}
+The diagonal morphism $\Delta_X$ is an immersion from $X$ to $X\times_S X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.3.9}
+Indeed, since the continuous maps $p_1$ and $\Delta_X$ from the underlying spaces are such that $p_1\circ\Delta_X$ is the identity, $\Delta_X$ is a homeomorphism from $X$ to $\Delta_X(X)$.
+Similarly, the composite homomorphism $\OO_x\to\OO_{\Delta_X(x)}\to\OO_x$ composed of the homomorphisms corresponding to $p_1$ and $\Delta_X$ is the identity, which means that the homomorphism corresponding to $\Delta_X$ is surjective;
+the proposition thus follows from \sref{1.4.2.2}.
+\end{proof}
+
+We say that the subprescheme of $X\times_S X$ associated to the immersion $\Delta_X$ \sref{1.4.2.1} is \emph{the diagonal} of $X\times_S X$.
+
+\begin{cor}[5.3.10]
+\label{1.5.3.10}
+Under the hypotheses of \sref{1.5.3.5}, $(p,q)_T$ is an immersion.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.10}
+This follows from \sref{1.5.3.6} and \sref{1.4.3.1}.
+\end{proof}
+
+We say (under the hypotheses of \sref{1.5.3.5}) that $(p,q)_T$ is the \emph{canonical immersion} of $X\times_S Y$ into $X\times_T Y$.
+
+\begin{cor}[5.3.11]
+\label{1.5.3.11}
+Let $X$ and $Y$ be $S$-preschemes, and $f:X\to Y$ an $S$-morphism;
+then the graph morphism $\Gamma_f=(1_X,f)_S$ of $f$ \sref{1.3.3.14} is an immersion of $X$ into $X\times_S Y$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.11}
+This is a particular case of cor.~\sref{1.5.3.10}, where we replace $S$ by $Y$ and $T$ by $S$ (cf. \sref{1.5.3.7}).
+\end{proof}
+
+\oldpage[I]{134}
