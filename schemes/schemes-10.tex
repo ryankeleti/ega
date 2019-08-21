@@ -10,7 +10,7 @@ Let $A$ be an \emph{admissible} topological ring \sref[0]{0.7.1.2}; for each ide
 \oldpage[I]{181}
 on the ideal of definition $\fk{J}$ considered; we denote this topological space by $\fk{X}$. Let $(\fk{J}_\lambda)$ be a fundamental system of neighborhoods of $0$ in $A$, consisting of ideals of definition, and for each $\lambda$, let $\OO_\lambda$ be the structure sheaf of $\Spec(A/\fk{J}_\lambda)$; this sheaf is induced on $\fk{X}$ by $\wt{A}/\wt{\fk{J}_\lambda}$ (which is zero outside of $\fk{X}$).
 For $\fk{J}_\mu\subset\fk{J}_\lambda$, the canonical homomorphism $A/\fk{J}_\mu\to A/\fk{J}_\lambda$ thus defines a homomorphism $u_{\lambda\mu}:\OO_\mu\to\OO_\lambda$ of sheaves of rings \sref{1.1.6.1}, and $(\OO_\lambda)$ is a \emph{projective system of sheaves of rings} for these homomorphisms.
-As the topology of $\fk{X}$ admits a basis consisting of quasi-compact open subsets, we can associate to each $\OO_\lambda$ a \emph{sheaf of pseudo-discrete topological rings} \sref[0]{0.3.8.1} which have $\OO_\lambda$ as the underlying (without topology) sheaf of rings, and that we denote also by $\OO_\lambda$; and the $\OO_\lambda$ give again a \emph{projective system of sheaves of topological rings} \sref[0]{0.3.8.2}.
+As the topology of $\fk{X}$ admits a basis consisting of quasi-compact open subsets, we can associate to each $\OO_\lambda$ a \emph{pseudo-discrete sheaf of topological rings} \sref[0]{0.3.8.1} which have $\OO_\lambda$ as the underlying (without topology) sheaf of rings, and that we denote also by $\OO_\lambda$; and the $\OO_\lambda$ give again a \emph{projective system of sheaves of topological rings} \sref[0]{0.3.8.2}.
 We denote by $\OO_\fk{X}$ the \emph{sheaf of topological rings} on $\fk{X}$, the projective limit of the system $(\OO_\lambda)$; for each \emph{quasi-compact} open subset $U$ of $\fk{X}$, $\Gamma(U,\OO_\fk{X})$ is a topological ring, the projective limit of the system of \emph{discrete} rings $\Gamma(U,\OO_\lambda)$ \sref[0]{0.3.2.6}.
 \end{env}
 
@@ -315,7 +315,7 @@ In addition, if $\theta:\OO_\fk{X}\to\OO_\fk{X}/\sh{J}$ is the canonical homomor
 \begin{prop}[10.5.3]
 \label{1.10.5.3}
 Let $\fk{X}$ be a formal prescheme, $(\sh{J}_\lambda)$ a fundamental system of sheaves of ideals of definition for $\fk{X}$.
-Then the sheaf of topological rings $\OO_\fk{X}$ is the projective limit of the sheaves of pseudo-discrete rings \sref[0]{0.3.8.1} $\OO_\fk{X}/\sh{J}_\lambda$.
+Then the sheaf of topological rings $\OO_\fk{X}$ is the projective limit of the pseudo-discrete sheaves of rings \sref[0]{0.3.8.1} $\OO_\fk{X}/\sh{J}_\lambda$.
 \end{prop}
 
 \begin{proof}
@@ -447,7 +447,7 @@ Suppose that:
 \end{enumerate}
 
 \oldpage[I]{190}
-Let $\OO_\fk{X}$ be the sheaf of topological rings formed as the projective limit of the sheaves of pseudo-discrete rings $\OO_i$, and let $u_i:\OO_\fk{X}\to\OO_i$ be the canonica homomorphism.
+Let $\OO_\fk{X}$ be the sheaf of topological rings formed as the projective limit of the pseudo-discrete sheaves of rings $\OO_i$, and let $u_i:\OO_\fk{X}\to\OO_i$ be the canonica homomorphism.
 Then the topologically ringed space $(\fk{X},\OO_\fk{X})$ is a formal prescheme; the homomorphisms $u_i$ are surjective; their kernels $\sh{J}^{(i)}$ form a fundamental system of sheaves of ideals of definition for $\fk{X}$, and $\sh{J}^{(0)}$ is the projective limit of the sheaves of ideals $\sh{J}_i$.
 \end{prop}
 
@@ -681,13 +681,44 @@ Given a closed subset $X'$ of a locally Noetherian prescheme $X$ and a coherent 
 $\varprojlim_\Phi(\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J}))$; we say that its sections over $X'$ are the \emph{formal sections of $\sh{F}$ along $X'$}.
 \end{defn}
 
+It is immediate that for every open $U\subset X$, we have $(\sh{F}|U)_{/(U\cap X')}=(\sh{F}_{/X'})|(U\cap X')$.
 
+By passing to the projective limit, it is clear that the $(\OO_X)_{/X'}$ is a sheaf of rings, and that $\sh{F}_{/X'}$ can be considered as an $(\OO_X)_{/X'}$-module.
+In addition, as there exists a basis for the topology of $X'$ consisting of quasi-compat open sets, we can consider $(\OO_X)_{/X'}$ (resp. $\sh{F}_{/X'}$) as a \emph{sheaf of topological rings} (resp. of \emph{topological groups}), the projective limit of the \emph{pseudo-discrete} sheaves of rings (resp. groups) $\OO_X/\sh{F}$ (resp. $\sh{F}\otimes_{\OO_X}(\OO_X/\sh{F})=\sh{F}/\sh{J}\sh{F}$), and by passing to the projective limit, $\sh{F}_{/X'}$ then becomes a \emph{topological $(\OO_X)_{/X'}$-module} (\sref[0]{0.3.8.1} and \sref[0]{3.8.2}); recall that for every \emph{quasi-compact} open $U\subset X$, $\Gamma(U\cap X',(\OO_X)_{/X'})$ (resp. $\Gamma(U\cap X',\sh{F}_{/X'})$) is then the projective limit of the discrete rings (resp. groups) $\Gamma(U,\OO_X/\sh{J})$ (resp. $\Gamma(U,\sh{F}/\sh{J}\sh{F})$).
 
+Now if $u:\sh{F}\to\sh{G}$ is a homomorphism of $\OO_X$-modules, then we canonically induce homomorphisms $u_\sh{J}:\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J})\to\sh{G}\otimes_{\OO_X}(\OO_X/\sh{J})$ for all $\sh{J}\in\Phi$, and these homomorphisms form a projective system.
+By passing to the projective limit and restricting to $X'$, they give a continuous $(\OO_X)_{/X'}$-homomorphism $\sh{F}_{/X'}\to\sh{G}_{/X'}$, denoted $u_{/X'}$ or $\wh{u}$, and we call it the \emph{completion} of the homomorphism $u$ along $X'$.
+It is clear that if $v:\sh{G}\to\sh{H}$ is a second homomorphism of $\OO_X$-modles, then we have $(v\circ u)_{/X'}=(v_{/X'})\circ(u_{/X'})$, hence $\sh{F}_{/X'}$ is a \emph{covariant additive functor} in $\sh{F}$ from the category of coherent $\OO_X$-modules to the category pf topological $(\OO_X)_{/X'}$-modules.
 
+\begin{prop}[10.8.5]
+\label{1.10.8.5}
+The support of $(\OO_X)_{/X'}$ is $X'$; the topologically ringed space $(X',(\OO_X)_{/X'})$ is a locally Noetherian formal prescheme, and if $\sh{J}\in\Phi$, then $\sh{J}_{/X'}$ is a sheaf of ideals of definition for this formal prescheme.
+If $X=\Spec(A)$ is an affine scheme with Noetherian ring $A$, $\sh{J}=\wt{\fk{J}}$, where $\fk{J}$ is an ideal of $A$, and $X'=V(\fk{J})$, then $(X',(\OO_X)_{/X'})$ canonically identifies with $\Spf(\wh{A})$, where $\wh{A}$ is the separated completion of $A$ with respect to the $\fk{J}$-pre-adic topology.
+\end{prop}
 
+\begin{proof}
+\label{proof-1.10.8.5}
+We can evidently reduce to proving the latter assertion.
+We know \sref[0]{0.7.3.3} that the separated completion $\wh{\fk{J}}$ of $\fk{J}$ with respect to the $\fk{J}$-pre-adic topology identifies with the ideal $\fk{J}\wh{A}$ of $\wh{A}$, where $\wh{A}$ is the Noetherian $\wh{\fk{J}}$-adic ring such that $\wh{A}/\wh{\fk{J}}^n=A/\fk{J}^n$ \sref[0]{0.7.2.6}.
+This latter relation shows that the open prime ideals of $\wh{A}$ are the ideals $\wh{\fk{p}}=\fk{p}\wh{\fk{J}}$, where $\fk{p}$ is a prime ideal of $A$ containing $\fk{J}$, and that we have $\wh{\fk{p}}\cap A=\fk{p}$, hence $\Spf(\wh{A})=X'$.
+As $\OO_X/\sh{J}^n=(A/\fk{J}^n)^\sim$, the proposition immediately follows from the definitions.
+\end{proof}
 
+We say that the formal prescheme defined above is the \emph{completion of $X$ along $X'$}, and we denote it by $X_{/X'}$ or $\wh{X}$ when there is little chance of confusion.
+When we take $X'=X$, we can set $\sh{J}=0$, and thus we have $X_{/X}=X$.
 
+It is clear that if $U$ is a subprescheme induced on an open subset of $X$, then $U_{/(U\cap X')}$ canonically identifies with the formal subprescheme induced on $X_{/X'}$ by the open subset $U\cap X'$ of $X'$.
 
+\begin{cor}[10.8.6]
+\label{1.10.8.6}
+The (usual) prescheme $\wh{X}_\mathrm{red}$ is the unique reduced subprescheme of $X$ having $X'$ for its underlying space \sref{1.5.2.1}.
+For $\wh{X}$ to be Noetherian, it is necessary and sufficient that $\wh{X}_\mathrm{red}$ is, and it suffices that $X$ is.
+\end{cor}
 
-
+\begin{proof}
+\label{proof-1.10.8.6}
+Since the determination of $\wh{X}_\mathrm{red}$ is local \sref{1.10.5.4}, we can assume that $X$ is an affine scheme with Noetherian ring $A$; with the notations of Proposition \sref{1.10.8.5}, the ideal $\fk{T}$ of topologically nilpotent elements of $\wh{A}$ is the inverse image under the canonical map $\wh{A}\to\wh{A}/\wh{\fk{J}}=A/\fk{J}$ of the nilradical of $A/\fk{J}$ \sref[0]{0.7.1.3}, so $\wh{A}/\fk{T}$ is isomorphic to the quotient of $A/\fk{J}$ by its nilradical.
+The first assertion then follows from Propositions \sref{1.10.5.4} and \sref{1.5.1.1}.
+If $\wh{X}_\mathrm{red}$ is Noetherian, then its underlying space $X'$ is as well, so the $X_n'=\Spec(\OO_X/\sh{J}^n)$ are Noetherian \sref{1.6.1.2} and so is $\wh{X}$ \sref{1.10.6.4}; the converse is immediate by Proposition \sref{1.6.1.2}.
+\end{proof}
 

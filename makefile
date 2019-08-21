@@ -28,7 +28,7 @@ pdfs: $(PDFS)
 	mkdir -p $(PDF_DIR)
 	mv $*.pdf $(PDF_DIR)
 
-$(FILES): % : %.pdf
+$(FILES): %: %.pdf
 
 .PHONY: book
 book:
