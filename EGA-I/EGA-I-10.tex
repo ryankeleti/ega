@@ -42,7 +42,7 @@ Let $A$ be an admissible ring, $\fk{X}=\Spf(A)$, and, for every $f\in A$, let $\
 \begin{proof}
 \label{proof-1.10.1.4}
 For every \unsure{ideal of definition} $\fk{J}$ of $A$, the discrete ring $S_f^{-1}A/ S_f^{-1}\fk{J}$ is canonically identified with $A_{\{f\}}/\fk{J}_{\{f\}}$ \sref[0]{0.7.6.9}, so, by \sref{1.1.2.5} and \sref{1.1.2.6}, the topological space $\Spf(A_{\{f\}})$ is canonically identified with $\fk{D}(f)$.
-Further, for every quasi-compact open subset $U$ of $\fk{X}$ contained in $\fk{D}(f)$, $\Gamma(U,\OO_\lambda)$ can be identified with the module of sections of the structure sheaf of $\Spec(S_f^{-1}A/ S_f^{-1}\fk{J}_\lambda)$ over $U$ \sref{1.1.3.6}, so, setting $\fk{N}=\Spf(A_{\{f\}})$, $\Gamma(U,\OO_\fk{X})$ can be identified with the module of sections $\Gamma(U,\OO_\fk{N})$, which proves the proposition.
+Further, for every quasi-compact open subset $U$ of $\fk{X}$ contained in $\fk{D}(f)$, $\Gamma(U,\OO_\lambda)$ can be identified with the module of sections of the structure sheaf of $\Spec(S_f^{-1}A/ S_f^{-1}\fk{J}_\lambda)$ over $U$ \sref{1.1.3.6}, so, setting $\fk{Y}=\Spf(A_{\{f\}})$, $\Gamma(U,\OO_\fk{X})$ can be identified with the module of sections $\Gamma(U,\OO_\fk{Y})$, which proves the proposition.
 \end{proof}
 
 \begin{env}[10.1.5]
@@ -741,4 +741,22 @@ For $f$ to be separated, it is necessary and sufficient for the morphism $f_0:X_
 
 \begin{proof}
 \label{proof-1.10.15.2}
+Indeed, $\Delta_{\fk{X}|\fk{G}}$ is then the inductive limit of the sequence of morphisms $\Delta_{X_n|S_n}$ \sref{1.10.7.4}, and the image of the underlying space of $\fk{X}$ (resp. of $\fk{X}\times_\fk{G}\fk{X}$ under $\Delta_{\fk{X}|\fk{G}}$) is identical to the image of the underlying space of $X_0$ (resp. of $X_0\times_{S_0}X_0$) under $\Delta_{X_0|S_0}$;
+whence the conclusion.
+\end{proof}
+
+\begin{prop}[10.15.3]
+\label{1.10.15.3}
+Suppose that all the formal preschemes (\emph{resp.} morphisms of formal preschemes) in what follows are inductive limits of sequences of usual preschemes (\emph{resp.} of morphisms of usual preschemes).
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item The composition of two separated morphisms is separated.
+    \item If $f:\fk{X}\to\fk{X}'$ and $g:\fk{Y}\to\fk{Y}'$ are separated $\fk{G}$-morphisms, then $f\times_\fk{G}g$ is separated.
+    \item If $f:\fk{X}\to\fk{Y}$ is a separated $\fk{G}$-morphism, then the $\fk{G}'$-morphism $f_{(\fk{G}')}$ is separated for every extension $\fk{G}'\to\fk{G}$ of the base formal prescheme.
+    \item If the composition $g\circ f$ of two morphisms is separated, then $f$ is separated.
+\end{enumerate}
+\emph{(In the above, it is implicit that if the same formal prescheme $\fk{Z}$ is mentioned more than once in the same proposition, we consider it as the inductive limit of the \emph{same} sequence $(Z_n)$ of usual preschemes wherever it is mentioned, and the morphisms from $\fk{Z}$ to another formal prescheme (resp. from a formal prescheme to $\fk{Z}$) as inductive limits of morphisms from $Z_n$ to some usual preschemes (resp. from some usual preschemes to $Z_n$)).}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.15.3}
 \end{proof}
