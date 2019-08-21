@@ -7,7 +7,9 @@
 - please do not commit PDF files
 
 ## TODO
-- check errata in e.g. EGA IV
+- check errata in EGA II and onwards
+- lists of notations?
+- terminology indices?
 - hyperref links to equations (e.g. 3.3.9.1)
 - check for any `\unsure` commands in the source
 - check that all `hyperref` references are found

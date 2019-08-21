@@ -401,6 +401,30 @@ $G$ is the the graph of the morphism $p_2\circ g^{-1}$, where $p_2$ is the proje
 When we take, in particular, $X=S$, then the $S$-morphisms $S\to Y$, that are nothing but the \emph{$S$-section} of $Y$ \sref{1.2.5.5}, are equal to their graph morphisms;
 the subpreschemes of $Y$ that are the graphs of $S$-sections (in other words, those that are isomorphic to $S$ by the restriction of the structure morphism $Y\to S$) are then also called the \emph{images} of these sections, or, by an abuse of language, the \emph{$S$-sections} of $Y$.
 
+\begin{cor}[5.3.12]
+\label{1.5.3.12}
+With the hypotheses and notation of \sref{1.5.3.11}, for every morphism $g:S'\to S$, let $f'$ be the inverse image of $f$ under $g$ \sref{1.3.3.7};
+then $\Gamma_{f'}$ is the inverse image of $\Gamma_f$ under $g$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.12}
+This is a particular case of formula \hyperref[1.3.3.10]{3.3.10.1}.
+\end{proof}
+
+\begin{cor}[5.3.13]
+\label{1.5.3.13}
+Let $f:X\to Y$ and $g:Y\to Z$ be morphisms;
+if $g\circ f$ is an immersion (\emph{resp.} a local immersion), then so too is $f$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.3.13}
+Indeed, $f$ factors as $X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y$.
+Furthermore, $p_2$ can be identified with $(g\circ f)\times_Z 1_Y$ \sref{1.3.3.4};
+if $g\circ f$ is an immersion (\emph{resp.} a local immersion), then so too is $p_2$ (\sref{1.4.3.1} and \sref{1.4.5.5}), and since $\Gamma_f$ is an immersion \sref{1.5.3.11}, we are done, by \sref{1.4.2.4} (\emph{resp.} \sref{1.4.5.5}).
+\end{proof}
+
 \oldpage[I]{135}
 \oldpage[I]{136}
 \oldpage[I]{137}
