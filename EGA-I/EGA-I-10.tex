@@ -759,4 +759,56 @@ Suppose that all the formal preschemes (\emph{resp.} morphisms of formal presche
 
 \begin{proof}
 \label{proof-1.10.15.3}
+With the notation of \sref{1.10.15.2}, we in fact have $(g\circ f)_0=g_0\circ f_0$, and $(f\times_\fk{G}g)_0=f_0\times_{S_0}g_0$;
+the claims of \sref{1.10.15.3} are then immediate consequences of \sref{1.10.15.2} and the corresponding claims in \sref{1.5.5.1} for usual preschemes.
+\end{proof}
+
+We leave it to the reader to state, for the same type of formal preschemes and morphisms as in \sref{1.10.15.3}, the propositions corresponding to \sref{1.5.5.5}, \sref{1.5.5.9}, and \sref{1.5.5.10} (by replacing ``affine open subset'' by ``formal affine open subset satisfying condition \emph{(b)} of \sref{1.10.6.3}'').
+
+A similar argument also shows that every \emph{Noetherian} formal affine scheme is separated, which justifies the terminology.
+
+\begin{prop}[10.15.4]
+\label{1.10.15.4}
+Let $\fk{G}$ be a locally Noetherian formal prescheme, and $\fk{X}$ and $\fk{Y}$ locally Noetherian formal $\fk{G}$-preschemes such that $\fk{X}$ or $\fk{Y}$ is of finite type over $\fk{G}$ (so that $\fk{X}\times_\fk{G}\fk{Y}$ is locally Noetherian) and such that $\fk{Y}$ is separated over $\fk{G}$.
+Let $f:\fk{X}\to\fk{Y}$ be a $\fk{G}$-morphism;
+then the graph morphism $\Gamma_f(1_\fk{X},f)_\fk{G}:\fk{X}\to\fk{X}\times_\fk{G}\fk{Y}$ is a closed immersion.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.15.4}
+We can assume that $\fk{G}$ is the inductive limit of a sequence $(S_n)$ of locally Noetherian preschemes, $\fk{X}$ (resp. $\fk{Y}$) the inductive limit of a sequence $(X_n)$ (resp. $(Y_n)$) of $S_n$-preschemes, and $f$ the inductive limit of a sequence $(f_n:X_n\to Y_n)$ of $S_n$-morphisms;
+then $\fk{X}\times_\fk{G}\fk{Y}$ is the inductive limit of the sequence $(X_n\times_{S_n}Y_n)$, and $\Gamma_f$ the inductive limit of the sequence $(\Gamma_{f_n})$ \sref{1.10.7.4};
+by hypothesis, $Y_0$ is separated over $S_0$ \sref{1.10.15.2}, so the space $\Gamma_{f_0}(X_0)$ is a closed subspace of $X_0\times_{S_0}Y_0$;
+since the underlying spaces of $\fk{X}\times_\fk{G}\fk{Y}$ (resp. $\Gamma_f(\fk{X})$) and $X_0\times_{S_0}Y_0$ (resp. $\Gamma_{f_0}(X_0)$) are the same, we already see that $\Gamma_f(\fk{X})$ is a \emph{closed} subspace of $\fk{X}\times_\fk{G}\fk{Y}$.
+Now note that, when $(U,V)$ runs over the set of pairs consisting of a Noetherian formal affine open subset $U$ (resp. $V$) of $\fk{X}$ (resp $\fk{Y}$) such that $f(U)\subset V$, the open subsets $U\times_S V$ form a cover of $\Gamma_f(\fk{X})$ in $\fk{X}\times_\fk{G}\fk{Y}$, and if $f_U:U\to V$ is the restriction of $f$ to $U$, then $\Gamma_{f_U}:U\to U\times_\fk{G}V$ is the restriction of $\Gamma_f$ to $U$.
+If we show that $\Gamma_{f_U}$ is a closed immersion, then $\Gamma_f$ will be a closed immersion \sref{1.10.14.4}, or, in other words, we are led to consider the case where $\fk{G}=\Spf(A)$, $\fk{X}=\Spf(B)$, and $\fk{Y}=\Spf(C)$ are affine (with $A$, $B$, and $C$ Noetherian adics), with $f$ corresponding to a continuous $A$-homomorphism $\vphi:C\to B$;
+$\Gamma_f$ then corresponds to the unique continuous homomorphism $\omega: B\wh{\otimes}_A C\to B$ which, when composed with the canonical homomorphisms $B\to B\wh{\otimes}_A C$ and $C\to B\wh{\otimes}_A C$, gives (respectively) the identity and $\vphi$.
+But it is clear that $\omega$ is \emph{surjective}, whence our claim.
+\end{proof}
+
+\begin{cor}[10.15.5]
+\label{1.10.15.5}
+Let $\fk{G}$ be a locally Noetherian formal prescheme, and $\fk{X}$ a $\fk{G}$-prescheme of finite type;
+for $\fk{X}$ to be separated over $\fk{G}$, it is necessary and sufficient for the diagonal morphism $\fk{X}\to\fk{X}\times_\fk{G}\fk{X}$ to be a closed immersion.
+\end{cor}
+
+\begin{prop}[10.15.6]
+\label{1.10.15.6}
+A closed immersion $j:\fk{Y}\to\fk{X}$ of locally Noetherian formal preschemes is a separated morphism.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.15.6}
+With the notation of \sref{1.10.14.2}, $j_0:Y_0\to X_0$ is a closed immersion, thus a separated morphism, and so it suffices to apply \sref{1.10.15.2}.
+\end{proof}
+
+\begin{prop}[10.15.7]
+\label{1.10.15.7}
+Let $X$ be a locally Noetherian (usual) prescheme, $X'$ a closed subset of $X$, and $\wh{X}=X_{/X'}$.
+For $\wh{X}$ to be separated, it is necessary and sufficient for $\wh{X}_\mathrm{red}$ to be separated, and it is sufficient that $X$ be separated.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.15.7}
+Indeed, with the notation of \sref{1.10.8.5}, for $\wh{X}$ to be separated, it is necessary and sufficient for $X'_0$ to be separated \sref{1.10.15.2}, and since $\wh{X}_\mathrm{red}=(X'_0)_\mathrm{red}$, it is equivalent to ask for $\wh{X}_\mathrm{red}$ to be separated \sref{1.5.5.1}[vi].
 \end{proof}
