@@ -5,7 +5,8 @@
 FILES = what intro prelim schemes morphisms cohomology
 TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
-PDFLATEX := pdflatex
+PDFLATEX = pdflatex
+PDF_DIR = $(shell pwd)/pdfs
 
 .PHONY: default
 default: $(TEX)
@@ -23,6 +24,8 @@ pdfs: $(PDFS)
 	bibtex $*
 	$(PDFLATEX) $*
 	$(PDFLATEX) $*
+	mkdir -p $(PDF_DIR)
+	mv $*.pdf $(PDF_DIR)
 
 .PHONY: book
 book:
@@ -32,12 +35,22 @@ book:
 	bibtex book
 	$(PDFLATEX) book
 	$(PDFLATEX) book
+	mkdir -p $(PDF_DIR)
+	mv book.pdf $(PDF_DIR)
 
 .PHONY: clean
 clean:
 	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc
 	if [ -f book.tex ]; then rm -i book.tex; fi
+	if [ -d $(PDF_DIR) ]; then rm -ir $(PDF_DIR); fi
 	for f in *.pdf; do if [ -f "$$f" ]; then rm -i *.pdf; fi; done
+
+.PHONY: cleanforceall
+cleanforceall:
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex $(PDF_DIR)/*.pdf
+	rmdir $(PDF_DIR)
+
+
 
 .PHONY: all
 all: pdfs book
