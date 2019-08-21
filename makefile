@@ -10,10 +10,11 @@ PDF_DIR = $(shell pwd)/pdfs
 
 .PHONY: default
 default: $(TEX)
-	@echo "make pdfs  --- makes all pdfs"
-	@echo "make book  --- makes complete book pdf"
-	@echo "make all   --- make pdfs + make book"
-	@echo "make clean --- clean up"
+	@echo "make pdfs       --- makes all pdfs"
+	@echo "make book       --- makes complete book pdf"
+	@echo "make all        --- make pdfs + make book"
+	@echo "make clean      --- clean up"
+	@echo "make cleanforce --- clean up everything without prompt"
 
 .PHONY: pdfs
 pdfs: $(PDFS)
@@ -26,6 +27,8 @@ pdfs: $(PDFS)
 	$(PDFLATEX) $*
 	mkdir -p $(PDF_DIR)
 	mv $*.pdf $(PDF_DIR)
+
+$(FILES): % : %.pdf
 
 .PHONY: book
 book:
@@ -42,15 +45,18 @@ book:
 clean:
 	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc
 	if [ -f book.tex ]; then rm -i book.tex; fi
-	if [ -d $(PDF_DIR) ]; then rm -ir $(PDF_DIR); fi
 	for f in *.pdf; do if [ -f "$$f" ]; then rm -i *.pdf; fi; done
+	if [ -d $(PDF_DIR) ]; then\
+	  for f in $(PDF_DIR)/*.pdf; do\
+	    if [ -f "$$f" ]; then rm -i $(PDF_DIR)/*.pdf; fi;\
+	  done;\
+	  rm -ir $(PDF_DIR);\
+	fi
 
-.PHONY: cleanforceall
-cleanforceall:
-	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex $(PDF_DIR)/*.pdf
-	rmdir $(PDF_DIR)
-
-
+.PHONY: cleanforce
+cleanforce:
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex
+	rm -rf $(PDF_DIR)
 
 .PHONY: all
 all: pdfs book
