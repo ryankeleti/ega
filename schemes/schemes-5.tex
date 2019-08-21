@@ -205,3 +205,48 @@ For $X$ to be an affine scheme, it is necessary and sufficient for $X_\mathrm{re
 
 \subsection{Existence of a subprescheme with a given underlying space}
 \label{subsection-existence-of-a-subprescheme-with-a-given-underlying-space}
+
+\begin{prop}[5.2.1]
+\label{1.5.2.1}
+For every locally closed subspace $Y$ of the underlying space of a prescheme $X$, there exists exactly one reduced subprescheme of $X$ that has $Y$ as its underlying space.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.2.1}
+The uniqueness follows from \sref{1.5.1.2}, so it remains only to show the existence of the prescheme in question.
+
+If $X$ is affine, given by some ring $A$, and $Y$ closed in $X$, then the proposition is immediate:
+$\fk{j}(Y)$ is the largest ideal $\fk{a}\subset A$ such that $V(\fk{a})=Y$, and it is equal to its radical \sref{1.1.1.4}[i], so $A/\fk{j}(Y)$ is a reduced ring.
+
+In the general case, for every affine open $U\subset X$ such that $U\cap Y$ is closed in $U$, consider the closed subprescheme $Y_U$ of $U$ defined by the sheaf of ideals associated to the ideal $\fk{j}(U\cap Y)$ of $A(U)$, which is reduced.
+We can show that, if $V$ is an affine open subset of $X$ contained in $U$, then $Y_V$ is \emph{induced} by $Y_U$ on $V\cap Y$;
+but this induced prescheme is a closed subprescheme of $V$ which is reduced and has $V\cap Y$ as its underlying space;
+the uniqueness of $Y_V$ thus implies to our claim.
+\end{proof}
+
+\begin{prop}[5.2.2]
+\label{1.5.2.2}
+Let $X$ be a reduced subprescheme of a prescheme $Y$; if $Z$ is the closed reduced subprescheme of $Y$ that has $\overline{X}$ as its underlying space, then $X$ is a subprescheme induced on an open subset of $Z$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.5.2.2}
+\oldpage[I]{132}
+There is indeed an open subset $U$ of $Y$ such that $X=U\cap\overline{X}$;
+since, by \sref{1.5.2.2}, $X$ is a reduced subprescheme of $Z$, the subprescheme $X$ is induced by $Z$ on the open subspace $X$ by uniqueness \sref{1.5.2.1}.
+\end{proof}
+
+\begin{cor}[5.2.4]
+\label{1.5.2.4}
+Let $f:X\to Y$ be a morphism, and $X'$ (\emph{resp.} $Y'$) a closed subprescheme of $X$ (\emph{resp.} $Y$) defined by a quasi-coherent sheaf of ideals $\sh{J}$ (\emph{resp.} $\sh{K}$) of $\OO_X$ (\emph{resp.} $\OO_Y$).
+Suppose that $X'$ is reduced, and that $f(X')\subset Y'$.
+Then we have $f^*(\sh{K})\OO_X\subset\sh{J}$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.5.2.4}
+Since, by \sref{1.5.2.2}, the restriction of $f$ to $X'$ factors as $X'\to Y'\to Y$, it suffices to apply \sref{1.4.4.6}.
+\end{proof}
+
+\subsection{Diagonal; graph of a morphism}
+\label{subsection-diagonal-graph-of-a-morphism}
