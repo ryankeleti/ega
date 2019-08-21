@@ -137,8 +137,6 @@ Let $X_0$ be the closed subprescheme $(X,\OO_X/\sh{I})$ of $X$;
 for $X$ to be an affine scheme, it is necessary and sufficient for $X_0$ to be an affine scheme.
 \end{prop}
 
-\begin{proof}
-\label{proof-1.5.1.9}
 The condition is clearly necessary, so we will show that it is sufficient.
 If we set $X_k=(X,\OO_X/\sh{I}^{k+1})$, it is enough to prove by induction on $k$ that $X_k$ is affine, and so we are led to consider the base case where $\sh{I}^2=0$.
 We set
@@ -183,4 +181,27 @@ we thus immediately conclude, by the \unsure{lemma of 5} (M,~I,~1.1), that $\the
 So everything relies on proving the exactitude of \hyperref[1.5.1.9]{(5.1.9.1)}, which will follow from showing that $\HH^1(X,\sh{I})=0$.
 But $\HH^1(X,\sh{I})=\HH^1(X_0,\sh{I})$, and we have seen that $\sh{I}$ is a quasi coherent $\OO_{X_0}$-module.
 Our proof will thus follow from
+\begin{lem}[5.1.9.2]
+\label{1.5.1.9.2}
+If $Y$ is an affine scheme, and $\sh{F}$ a quasi-coherent $\OO_Y$-module, then $\HH^1(Y,\sh{F})=0$.
+\end{lem}
+
+\begin{proof}
+\label{proof-1.5.1.9}
+This lemma will be proven in chap.~III, §1, and a consequence of the more general theorem that $\HH^i(Y,\sh{F})=0$ for all $i>0$.
+To give an independent proof, note that $\HH^1(Y,\sh{F})$ can be identified with the module $\Ext_{\OO_Y}^1(Y;\OO_Y,\sh{F})$ of extensions classes of the $\OO_Y$-module $\OO_Y$ by the $\OO_Y$-module $\sh{F}$ (T,~4.2.3);
+so everything relies on proving that such an extension $\sh{G}$ is trivial.
+But, for all $y\in Y$, there is a neighbourhood $V$ of $y$ in $Y$ such that $\sh{G}|V$ is isomorphic to $\sh{F}|Y\oplus\OO_Y|V$ \sref[0]{1.5.4.9};
+from this we conclude that $\sh{G}$ is a \emph{quasi-coherent} $\OO_Y$-module.
+If $A$ is the ring of $Y$, then we have $\sh{F}=\wt{M}$ and $\sh{G}=\wt{N}$, where $M$ and $N$ are $A$-modules, and, by hypothesis, $N$ is an extension of the $A$-module $A$ by the $A$-module $M$ \sref{1.1.3.11}.
+Since this extension is necessarily trivial, the lemma is proven, and so too is \sref{1.5.1.9}.
 \end{proof}
+
+\begin{cor}[5.1.10]
+\label{1.5.1.10}
+Let $X$ be a prescheme such that $\sh{N}_X$ is nilpotent.
+For $X$ to be an affine scheme, it is necessary and sufficient for $X_\mathrm{red}$ to be an affine scheme.
+\end{cor}
+
+\subsection{Existence of a subprescheme with a given underlying space}
+\label{subsection-existence-of-a-subprescheme-with-a-given-underlying-space}
