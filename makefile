@@ -2,7 +2,7 @@
 # modified from https://github.com/stacks/stacks-project
 # license at scripts/COPYING.md
 #
-FILES = what intro ega0 egaI egaII egaIII
+FILES = What Introduction EGA-0 EGA-I EGA-II EGA-III
 TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
 PDFLATEX = pdflatex
