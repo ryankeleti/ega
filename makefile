@@ -49,6 +49,7 @@ clean:
 	if [ -d $(PDF_DIR) ]; then\
 	  for f in $(PDF_DIR)/*.pdf; do\
 	    if [ -f "$$f" ]; then rm -i $(PDF_DIR)/*.pdf; fi;\
+	    break;\
 	  done;\
 	  rm -ir $(PDF_DIR);\
 	fi
