@@ -1132,12 +1132,120 @@ As the image of $j\otimes 1$ is the ideal $\fk{b}A$ of $A$, the image of $(j\oti
 \subsection{Coherent sheaves on formal preschemes}
 \label{subsection-coherent-sheaves-on-formal-preschemes}
 
+\begin{prop}[10.11.1]
+\label{1.10.11.1}
+\oldpage[I]{204}
+If $\fk{X}$ is a locally Noetherian formal prescheme, then the sheaf of rings $\OO_\fk{X}$ is coherent and every sheaf of ideals of definition for $\fk{X}$ is coherent.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.11.1}
+The question is local, so we can reduce to the case of a Noetherian affine formal scheme, and the proposition follows from Propositions \sref{1.10.10.3} and \sref{1.10.10.5}.
+\end{proof}
+
+\begin{env}[10.11.2]
+\label{1.10.11.2}
+Let $\fk{X}$ be a locally Noetherian formal prescheme, $\sh{J}$ a sheaf of ideals of definition for $\fk{X}$, and $X_n$ the locally Noetherian (usual) prescheme $(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$, such that $\fk{X}$ is the \emph{inductive limit} of the sequence $(X_n)$ with respect to the canonical morphisms $u_{mn}:X_m\to X_n$ \sref{1.10.6.3}.
+With these notations:
+\end{env}
+
+\begin{thm}[10.11.3]
+\label{1.10.11.3}
+For an $\OO_\fk{X}$-module $\sh{F}$ to be coherent, it is necessary and sufficient for it to be isomorphic to a projective limit of a sequence $(\sh{F}_n)$, where $\sh{F}_n$ is a coherent $\OO_{X_n}$-module such that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leqslant n$ \sref{1.10.6.6}.
+The projective system $(\sh{F}_n)$ is then isomorphic to the system of the $u_n^*(\sh{F})=\sh{F}\otimes_{\OO_\fk{X}}\OO_{X_n}$, where $u_n$ is the canonical morphism $X_n\to\fk{X}$.
+\end{thm}
+
+\begin{proof}
+\label{proof-1.10.11.3}
+The question is local, so we can reduce to the case where $\fk{X}$ is a Noetherian affine formal scheme, and the theorem then is a consequence of Proposition \sref{1.10.10.5} and Corollary \sref{1.10.10.6}.
+\end{proof}
+
+We can thus say that \emph{the data of a coherent $\OO_\fk{X}$-module is equivalent to the data of a projective system $(\sh{F}_n)$ of coherent $\OO_{X_n}$-modules such that $u_{mn}(\sh{F}_n)=\sh{F}_m$ for $m\leqslant n$}.
+
+\begin{cor}[10.11.4]
+\label{1.10.11.4}
+If $\sh{F}$ and $\sh{G}$ are two coherent $\OO_\fk{X}$-modules, then we can (with the notations of Theorem \sref{1.10.11.3}) define a canonical functorial isomorphism
+\[
+  \Hom_{\OO_\fk{X}}(\sh{F},\sh{G})\isoto\varprojlim_n\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n).
+  \tag{10.11.4.1}
+\]
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.11.4}
+The projective limit in the right hand side is understood to be with respect to the maps $\theta_n\mapsto u_{mn}^*(\theta_n)$ ($m\leqslant n$) from $\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ to $\Hom_{\OO_{X_m}}(\sh{F}_m,\sh{F}_m)$.
+The homomorphism (10.11.4.1) sends an element $\theta\in\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})$ to the sequence $(u_n^*(\theta))$; we see that we have defined an inverse homomorphism of the above by sending a projective system $(\theta_n)\in\varprojlim_n\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ to its projective limit in $\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})$, taking into account Theorem \sref{1.10.11.3}.
+\end{proof}
+
+\begin{cor}[10.11.5]
+\label{1.10.11.5}
+For a homomorphism $\theta:\sh{F}\to\sh{G}$ to be surjective, it is necessary and sufficient for the corresponding homomorphism $\theta_0=u_0^(\theta):\sh{F}_0\to\sh{G}_0$ to be surjective.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.11.5}
+The question is local, so we reduce to the case where $\fk{X}=\Spf(A)$, where $A$ is an adic Noetherian ring, $\sh{F}=M^\Delta$, $\sh{G}=N^\Delta$, and $\theta=u^\Delta$, where $M$ and $N$ are two $A$-modules of finite type and $u$ is a homomorphism $M\to N$; we then have that $\theta_0=\wt{u_0}$, where $u_0$ is the homomorphism $u\otimes 1:M\otimes_A A/\fk{J}\to N\otimes_A A/\fk{J}$; the conclusion follows from the fact that $u$ and $u_0$ are simultaneously surjective \sref[0]{0.7.1.14}.
+\end{proof}
+
+\begin{env}[10.11.6]
+\label{1.10.11.6}
+Theorem \sref{1.10.11.3} shows that we can consider every coherent $\OO_\fk{X}$-module $\sh{F}$ as a \emph{topological $\OO_\fk{X}$-module}, considering it as a projective limit of \emph{pseudo-discrete} sheaves of groups $\sh{F}_n$ \sref[0]{0.3.8.1}.
+It then follows from Corollary \sref{1.10.11.4} that every homomorphism $u:\sh{F}\to\sh{G}$ of coherent $\OO_\fk{X}$-modules is automatically \emph{continuous}
+\oldpage[I]{205}
+\sref[0]{0.3.8.2}.
+In addition, if $\sh{H}$ is a coherent $\OO_\fk{X}$-submodule of a coherent $\OO_\fk{X}$-module $\sh{F}$, then for every open $U\subset\fk{X}$, $\Gamma(U,\sh{H})$ is a \emph{closed} subgroup of the topological group $\Gamma(U,\sh{F})$, since the functor $\Gamma$ is left exact, $\Gamma(U,\sh{H})$ the kernel of the homomorphism $\Gamma(U,\sh{F})\to\Gamma(U,\sh{F}/\sh{H})$, which is \emph{continuous} by the above, since $\sh{F}/\sh{G}$ is coherent \sref[0]{0.5.3.4}; our assertion follows from the fact that $\Gamma(U,\sh{F}/\sh{H})$ is a separated topological group.
+\end{env}
+
+\begin{prop}[10.11.7]
+\label{1.10.11.7}
+Let $\sh{F}$ and $\sh{G}$ be two coherent $\OO_\fk{X}$-modules.
+We can define (with the notations of Theorem \sref{1.10.11.3}) two canonical functorial isomorphisms of topological $\OO_\fk{X}$-modules \sref{1.10.11.6}
+\[
+  \sh{F}\otimes_{\OO_\fk{X}}\sh{G}\isoto\varprojlim_n(\sh{F}_n\otimes_{\OO_{X_n}}\sh{G}_n),
+  \tag{10.11.7.1}
+\]
+\[
+  \shHom_{\OO_\fk{X}}(\sh{F},\sh{G})\isoto\varprojlim_n\shHom_{\OO_{X_n}}(\sh{F}_n\sh{G}_n).
+  \tag{10.11.7.2}
+\]
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.11.7}
+The existence of the isomorphism (10.11.7.1) follows from the formula
+\[
+  \sh{F}_n\otimes_{\OO_{X_n}}\sh{G}_n=(\sh{F}\otimes_{\OO_\fk{X}}\OO_{X_n})\otimes_{\OO_{X_n}}(\sh{G}\otimes_{\OO_\fk{X}}\OO_{X_n})=(\sh{F}\otimes_{\OO_\fk{X}}\sh{G})\otimes_{\OO_\fk{X}}\OO_{X_n}
+\]
+and from Theorem \sref{1.10.11.3}.
+The isomorphism (10.11.7.2) where the two sodes are considered as sheaves of modules without topology, follows from the definition of the sections of $\shHom_{\OO_\fk{X}}(\sh{F},\sh{G})$ and $\shHom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ and the existence of the isomorphism (10.11.4.1), mapping a prescheme induced on an arbitrary Noetherian formal affine open set to $\fk{X}$.
+It rwmains to prove that the isomorphism (10.11.7.2) is bicontinuous over a quasi-compact set, and we can thus reduce to the case where $\fk{X}=\Spf(A)$, $A$ an adic Noetherian ring, hence \sref{1.10.10.5} $\sh{F}=M^\Delta$ and $\sh{G}=N^\Delta$, where $M$ and $N$ are $A$-modules of finite type; taking into account (10.10.2.1), (10.10.2.3), and Corollary \sref{1.1.3.12}[ii], we reduce to showing that the canonical isomorphism $\Hom_A(M,N)\isoto\varprojlim_n\Hom_{A_n}(M_n,N_n)$ (with $M_n=M\otimes_A A_n$ and $N_n=N\otimes_A A_n$) is continuous, which has been proved in \sref[0]{0.7.8.2}.
+\end{proof}
+
+\begin{env}[10.11.8]
+\label{1.10.11.8}
+As $\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})$ is the group of sections of the sheaf of topological groups $\shHom_{\OO_\fk{X}}(\sh{F},\sh{G})$, it is equipped with a group topology.
+If $\fk{X}$ is \emph{Noetherian}, then it follows from (10.11.7.2) that the subgroups $\Hom_{\OO_\fk{X}}(\sh{F},\sh{J}^n\sh{G})$ ($n$ arbitrary) form a fundamental system of neighborhoods of $0$ in this group.
+\end{env}
+
+\begin{prop}[10.11.9]
+\label{1.10.11.9}
+Let $\fk{X}$ be a Noetherian formal prescheme, $\sh{F}$ and $\sh{G}$ two coherent $\OO_\fk{X}$-modules.
+In the topological group $\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})$, the surjective (resp. injective, bijective) homomorphisms form an open set.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.11.9}
+By Corollary \sref{1.10.11.5}, the set of surjective homomorphisms in $\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})$ is the inverse image under the continuous map $\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})\to\Hom_{\OO_{X_0}}(\sh{F}_0,\sh{G}_0)$ of a subset of the discrete group $\Hom_{\OO_{X_0}}(\sh{F}_0,\sh{G}_0)$, hence the first assertion.
+To show the second, we cover $\fk{X}$ by a finite number of Noetherian formal affine subsets $U_i$.
+For $\theta\in\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})$ to be injective, it is necessary and sufficient for all of the images under the (continuous) restriction maps $\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})\to\Hom_{\OO_\fk{X}|U_i)}(\sh{F}|U_i,\sh{G}|U_i)$ to be injective; we can thus reduce to the affine case, and then this has already been proved in \sref[0]{0.7.8.3}.
+\end{proof}
+
 \subsection{Adic morphisms of formal preschemes}
 \label{subsection-adic-morphisms-of-formal-preschemes}
 
-\oldpage[I]{206}
 \begin{env}[10.12.1]
 \label{1.10.12.1}
+\oldpage[I]{206}
 Let $\fk{X}$ and $\fk{S}$ be two \emph{locally Noetherian} formal preschemes;
 we say that a morphism $f:\fk{X}\to\fk{S}$ is \emph{adic} if there exists an ideal of definition $\sh{J}$ of $\fk{S}$ such that $\sh{K}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$;
 we then also say that $\fk{X}$ is an \emph{adic $\fk{S}$-prescheme} (for $f$).
@@ -1216,7 +1324,7 @@ If $\sh{K}=\fk{K}^\Delta$, the equality $f^*(\sh{J})\OO_\fk{X}=\sh{K}$ then foll
 \label{1.10.12.3.2}
 The above equivalence gives, for adic $\fk{S}$-preschemes $\fk{X}$ and $\fk{Y}$, a \emph{canonical bijection}
 \[
-    \Hom_\fk{S}(\fk{X},\fk{Y}) \xrightarrow{\sim} \varprojlim_n\Hom_{S_n}(X_n,Y_n)
+  \Hom_\fk{S}(\fk{X},\fk{Y})\isoto\varprojlim_n\Hom_{S_n}(X_n,Y_n)
 \]
 where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\leqslant n$.
 \end{env}
@@ -1410,17 +1518,18 @@ it then follows from \sref[0]{0.7.7.8} that $C\wh{\otimes}_A(A/\fk{a})$ can be i
 Under the hypotheses of \sref{1.10.14.5}[ii], let $p:\fk{X}\times_\fk{G}\fk{Y}\to\fk{X}$ and $q:\fk{X}\times_\fk{G}\fk{Y}\to\fk{Y}$ be the projections, so that the diagram
 \[
   \xymatrix{
-    \fk{X} \ar[d]_f
-    & \fk{X}\times_\fk{G}\fk{Y} \ar[l]^p \ar[d]^q\\
-    \fk{G}
-    & \fk{Y} \ar[l]_g
+    \fk{X}\ar[d]_f &
+    \fk{X}\times_\fk{G}\fk{Y}\ar[l]^p\ar[d]^q\\
+    \fk{G} &
+    \fk{Y}\ar[l]_g
   }
 \]
 commutes.
 For every coherent $\OO_\fk{X}$ module $\sh{F}$, we then have a canonical isomorphism of $\OO_\fk{Y}$-modules
-\begin{equation*}
-    u:g^*(f_*(\sh{F})) \xrightarrow{\sim} q_*(p^*(\sh{F})).\tag{10.14.6.1}
-\end{equation*}
+\[
+  u:g^*(f_*(\sh{F}))\isoto q_*(p^*(\sh{F})).
+  \tag{10.14.6.1}
+\]
 \end{cor}
 
 \begin{proof}
