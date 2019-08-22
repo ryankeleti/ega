@@ -39,3 +39,4 @@
 *.pdf
 .DS_STORE
 *.pyc
+book.tex

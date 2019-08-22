@@ -40,7 +40,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 22. Differential criteria for smoothness and regularity
     + [ ] 23. Japanese rings
 - [ ] The language of schemes (EGA I)
-    + [x] 0. Summary
+    + [x] 0. Summary _(proofread by @thosgood)_
     + [x] 1. Affine schemes _(@ryankeleti)_
     + [x] 2. Preschemes and their morphisms _(@thosgood)_
     + [x] 3. Products of preschemes _(@thosgood, @ryankeleti)_
