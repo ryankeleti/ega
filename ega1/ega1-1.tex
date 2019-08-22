@@ -46,27 +46,28 @@ We have the following properties:
 
 \begin{proof}
 \label{proof-1.1.1.2}
-The properties (i), (ii), (iii) are trivial, and (v) follows from (ii) and from the formula (1.1.1.1).
-It is evident that $V(EE')\supset V(E)\cap V(E')$; conversely, if $x\not\in V(E)$ and $x\not\in V(E')$, then there exists $f\in E$ and $f'\in E'$ such that $f(x)\neq 0$ and $f'(x)\neq 0$ in $\kres(x)$, hence $f(x)f'(x)\neq 0$, i.e., $x\not\in V(EE')$, which proves (iv).
+The properties (i), (ii), (iii) are trivial, and (v) follows from (ii) and from equation \hyperref[1.1.1.1]{(1.1.1.1)}.
+It is evident that $V(EE')\supset V(E)\cap V(E')$;
+conversely, if $x\not\in V(E)$ and $x\not\in V(E')$, then there exists $f\in E$ and $f'\in E'$ such that $f(x)\neq 0$ and $f'(x)\neq 0$ in $\kres(x)$, hence $f(x)f'(x)\neq 0$, i.e., $x\not\in V(EE')$, which proves (iv).
 \end{proof}
 
 Proposition \sref{1.1.1.2} shows, among other things, that sets of the form $V(E)$ (where $E$ varies over the subsets of $A$) are the \emph{closed sets} of a topology on $X$, which we will call the \emph{spectral topology}
 \footnote{The introduction of this topology in algebraic geometry is due to Zariski.
 So this topology is usually called the ``Zariski topology'' on $X$.};
-unless expressly stated otherwise, always assume $X=\Spec(A)$ is equipped with the spectral topology.
+unless expressly stated otherwise, we always assume that $X=\Spec(A)$ is equipped with the spectral topology.
 
 \begin{env}[1.1.3]
 \label{1.1.1.3}
 \oldpage[I]{81}
-For each subset $Y$ of $X$, we denote by $\fk{j}(Y)$ the set of $f\in A$ such that
-$f(y)=0$ for all $y\in Y$; equivalently, $\fk{j}(Y)$ is the intersection of the prime
-ideals $\fk{j}_y$ for $y\in Y$. It is clear that the relation $Y\subset Y'$ implies
-that $\fk{j}(Y)\supset\fk{j}(Y')$ and that we have
+For each subset $Y$ of $X$, we denote by $\fk{j}(Y)$ the set of $f\in A$ such that $f(y)=0$ for all $y\in Y$;
+equivalently, $\fk{j}(Y)$ is the intersection of the prime ideals $\fk{j}_y$ for $y\in Y$.
+It is clear that the relation $Y\subset Y'$ implies that $\fk{j}(Y)\supset\fk{j}(Y')$ and that we have
 \[
   \fk{j}\bigg(\bigcup_\lambda Y_\lambda\bigg)=\bigcap_\lambda\fk{j}(Y_\lambda)
   \tag{1.1.3.1}
 \]
-for each family $(Y_\lambda)$ of subsets of $X$. Finally we have
+for each family $(Y_\lambda)$ of subsets of $X$.
+Finally we have
 \[
   \fk{j}(\{x\})=\fk{j}_x.
   \tag{1.1.3.2}
@@ -84,20 +85,15 @@ for each family $(Y_\lambda)$ of subsets of $X$. Finally we have
 
 \begin{proof}
 \label{proof-1.1.1.4}
-(i) is an immediate consequence of the definitions and (1.1.1.1); on the other hand,
-$V(\fk{j}(Y))$ is closed and contains $Y$; conversely, if $Y\subset V(E)$, we have
-$f(y)=0$ for $f\in E$ and all $y\in Y$, so $E\subset\fk{j}(Y)$,
-$V(E)\supset V(\fk{j}(Y))$, which proves (ii).
+(i) is an immediate consequence of the definitions and (1.1.1.1);
+on the other hand, $V(\fk{j}(Y))$ is closed and contains $Y$;
+conversely, if $Y\subset V(E)$, we have $f(y)=0$ for $f\in E$ and all $y\in Y$, so $E\subset\fk{j}(Y)$, $V(E)\supset V(\fk{j}(Y))$, which proves (ii).
 \end{proof}
 
 \begin{cor}[1.1.5]
 \label{1.1.1.5}
-The closed subsets of $X=\Spec(A)$ and the ideals of $A$ equal to their radicals (otherwise
-the intersection of prime ideals) correspond bijectively by the \unsure{descent} maps
-$Y\mapsto\fk{j}(Y)$, $\fk{a}\mapsto V(\fk{a})$; the union $Y_1\cup Y_2$ of
-two closed subsets corresponds to $\fk{j}(Y_1)\cap\fk{j}(Y_2)$, and the
-intersection of any family $(Y_\lambda)$ of closed subsets corresponds to the radical of the
-sum of the $\fk{j}(Y_\lambda)$.
+The closed subsets of $X=\Spec(A)$ and the ideals of $A$ equal to their radicals (in other words, those that are the intersection of prime ideals) correspond bijectively by the inclusion-reversing maps $Y\mapsto\fk{j}(Y)$, $\fk{a}\mapsto V(\fk{a})$;
+the union $Y_1\cup Y_2$ of two closed subsets corresponds to $\fk{j}(Y_1)\cap\fk{j}(Y_2)$, and the intersection of any family $(Y_\lambda)$ of closed subsets corresponds to the radical of the sum of the $\fk{j}(Y_\lambda)$.
 \end{cor}
 
 \begin{cor}[1.1.6]
@@ -105,21 +101,16 @@ sum of the $\fk{j}(Y_\lambda)$.
 If $A$ is a Noetherian ring, $X=\Spec(A)$ is a Noetherian space.
 \end{cor}
 
-Note that the converse of this corollary is false, as shown
-in the example of a non-Noetherian integral ring with a single prime ideal $\neq\{0\}$, for
-example a nondiscrete valuation ring of rank $1$.
+Note that the converse of this corollary is false, as shown by any non-Noetherian integral ring with a single prime ideal $\neq\{0\}$ (for example a nondiscrete valuation ring of rank $1$).
 
-As an example of ring $A$ whose spectrum is not a Noetherian space, one can consider the ring
-$\sh{C}(Y)$ of continuous real functions on an infinite compact space $Y$; we know that as a
-whole, $Y$ corresponds with the set of maximal ideals of $A$, and it is easy to see that the
-topology induced on $Y$ by that of $X=\Spec(A)$ is the initial topology of $Y$. Since $Y$ is
-not a Noetherian space, the same is true for $X$.
+As an example of ring $A$ whose spectrum is not a Noetherian space, one can consider the ring $\sh{C}(Y)$ of continuous real functions on an infinite compact space $Y$;
+we know that, as a set, $Y$ corresponds to the set of maximal ideals of $A$, and it is easy to see that the topology induced on $Y$ by that of $X=\Spec(A)$ is the original topology of $Y$.
+Since $Y$ is not a Noetherian space, the same is true for $X$.
 
 \begin{cor}[1.1.7]
 \label{1.1.1.7}
-For each $x\in X$, the closure of $\{x\}$ is the set of $y\in X$ such that
-$\fk{j}_x\subset\fk{j}_y$. For $\{x\}$ to be closed, it is necessary and
-sufficient that $\fk{j}_x$ is maximal.
+For each $x\in X$, the closure of $\{x\}$ is the set of $y\in X$ such that $\fk{j}_x\subset\fk{j}_y$.
+For $\{x\}$ to be closed, it is necessary and sufficient that $\fk{j}_x$ is maximal.
 \end{cor}
 
 \begin{cor}[1.1.8]
@@ -129,22 +120,18 @@ The space $X=\Spec(A)$ is a Kolmogoroff space.
 
 \begin{proof}
 \label{proof-1.1.1.8}
-If $x$, $y$ are two distinct points of $X$, we have either
-$\fk{j}_x\not\subset\fk{j}_y$ or $\fk{j}_y\not\subset\fk{j}_x$, so
-one of the points $x$, $y$ does not belong to the closure of the other.
+If $x$, $y$ are two distinct points of $X$, we have either $\fk{j}_x\not\subset\fk{j}_y$ or $\fk{j}_y\not\subset\fk{j}_x$, so one of the points $x$, $y$ does not belong to the closure of the other.
 \end{proof}
 
 \begin{env}[1.1.9]
 \label{1.1.1.9}
-According to Proposition \sref{1.1.1.2}, (iv), for two elements $f$, $g$ of $A$, we have
+According to Proposition \sref{1.1.1.2}[iv], for two elements $f$, $g$ of $A$, we have
 \[
   D(fg)=D(f)\cap D(g).
   \tag{1.1.9.1}
 \]
-Note also that the relation $D(f)=D(g)$ means, according to Proposition
-\sref{1.1.1.4}, (i) and Proposition \sref{1.1.1.2}, (v) that $\rad(f)=\rad(g)$, or
-that the minimal prime ideals containing $(f)$ and $(g)$ are the same; in particular, when
-$f=ug$, where $u$ is invertible.
+Note also that the equality $D(f)=D(g)$ means, according to Proposition~\sref{1.1.1.4}[i] and Proposition~\sref{1.1.1.2}[v], that $\rad(f)=\rad(g)$, or that the minimal prime ideals containing $(f)$ and $(g)$ are the same;
+in particular, it is also the case when $f=ug$, where $u$ is invertible.
 \end{env}
 
 \begin{prop}[1.1.10]
@@ -153,7 +140,8 @@ $f=ug$, where $u$ is invertible.
 \oldpage[I]{82}
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item When $f$ ranges over $A$, the sets $D(f)$ forms a basis for the topology of $X$.
-  \item For every $f\in A$, $D(f)$ is quasi-compact. In particular $X=D(1)$ is quasi-compact.
+  \item For every $f\in A$, $D(f)$ is quasi-compact.
+    In particular, $X=D(1)$ is quasi-compact.
 \end{enumerate}
 \end{prop}
 
@@ -161,33 +149,27 @@ $f=ug$, where $u$ is invertible.
 \label{proof-1.1.1.10}
 \medskip\noindent
 \begin{enumerate}[label=(\roman*)]
-  \item Let $U$ be an open set in $X$; by definition, we have $U=X-V(E)$ where $E$ is a subset of $A$, and $V(E)=\bigcap_{f\in E}V(f)$, hence $U=\bigcup_{f\in E}D(f)$.
-  \item According to (i), it is sufficient to prove that if $(f_\lambda)_{\lambda\in L}$ is a family of elements of $A$ such that $D(f)\subset\bigcup_{\lambda\in L}D(f_\lambda)$, there exists a finite subset $J$ of $L$ such that $D(f)\subset\bigcup_{\lambda\in J}D(f_\lambda)$.
-    Let $\fk{a}$ be the ideal of $A$ generated by the $f_\lambda$; we have by hypothesis
-    that $V(f)\supset V(\fk{a})$, so $\rad(f)\subset\rad(\fk{a})$; as $f\in\rad(f)$,
-    there exists an integer $n\geqslant 0$ such that $f^n\in\fk{a}$. But then $f^n$ belongs
-    to the ideal $\fk{b}$ generated by the finite subfamily $(f_\lambda)_{\lambda\in J}$,
-    and we have $V(f)=V(f^n)\supset V(\fk{b})=\bigcap_{\lambda\in J}V(f_\lambda)$, that is
-    to say, $D(f)\supset\bigcup_{\lambda\in J}D(f_\lambda)$.
+  \item Let $U$ be an open set in $X$;
+    by definition, we have $U=X\setminus V(E)$ where $E$ is a subset of $A$, and $V(E)=\bigcap_{f\in E}V(f)$, hence $U=\bigcup_{f\in E}D(f)$.
+  \item By (i), it suffices to prove that, if $(f_\lambda)_{\lambda\in L}$ is a family of elements of $A$ such that $D(f)\subset\bigcup_{\lambda\in L}D(f_\lambda)$, then there exists a finite subset $J$ of $L$ such that $D(f)\subset\bigcup_{\lambda\in J}D(f_\lambda)$.
+    Let $\fk{a}$ be the ideal of $A$ generated by the $f_\lambda$;
+    we have, by hypothesis, that $V(f)\supset V(\fk{a})$, so $\rad(f)\subset\rad(\fk{a})$;
+    since $f\in\rad(f)$, there exists an integer $n\geqslant 0$ such that $f^n\in\fk{a}$.
+    But then $f^n$ belongs to the ideal $\fk{b}$ generated by the finite subfamily $(f_\lambda)_{\lambda\in J}$, and we have $V(f)=V(f^n)\supset V(\fk{b})=\bigcap_{\lambda\in J}V(f_\lambda)$, that is to say, $D(f)\supset\bigcup_{\lambda\in J}D(f_\lambda)$.
 \end{enumerate}
 \end{proof}
 
 \begin{prop}[1.1.11]
 \label{1.1.1.11}
-For each ideal $\fk{a}$ of $A$, $\Spec(A/\fk{a})$ canonically identifies with the
-closed subspace $V(\fk{a})$ of $\Spec(A)$.
+For each ideal $\fk{a}$ of $A$, $\Spec(A/\fk{a})$ is canonically identified with the closed subspace $V(\fk{a})$ of $\Spec(A)$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.1.1.11}
-We know there is a canonical bijective correspondence (respecting the inclusion order
-structure) between ideals (resp. prime ideals) of $A/\fk{a}$ and ideals (resp. prime
-ideals) of $A$ containing $\fk{a}$.
+We know there is a canonical bijective correspondence (respecting the inclusion order structure) between ideals (resp. prime ideals) of $A/\fk{a}$ and ideals (resp. prime ideals) of $A$ containing $\fk{a}$.
 \end{proof}
 
-Recall that the set $\nilrad$ of nilpotent elements of $A$ (the \emph{nilradical} of $A$) is
-an ideal equal to $\rad(0)$, the intersection of all the prime ideals of $A$
-\sref[0]{0.1.1.1}
+Recall that the set $\nilrad$ of nilpotent elements of $A$ (the \emph{nilradical} of $A$) is an ideal equal to $\rad(0)$, the intersection of all the prime ideals of $A$ \sref[0]{0.1.1.1}.
 
 \begin{cor}[1.1.12]
 \label{1.1.1.12}
@@ -196,42 +178,35 @@ The topological spaces $\Spec(A)$ and $\Spec(A/\nilrad)$ are canonically homeomo
 
 \begin{prop}[1.1.13]
 \label{1.1.1.13}
-For $X=\Spec(A)$ to be irreducible \sref[0]{0.2.1.1}, it is necessary and
-sufficient that the ring $A/\nilrad$ is integral (or, equivalently, that the ideal $\nilrad$ is prime).
+For $X=\Spec(A)$ to be irreducible \sref[0]{0.2.1.1}, it is necessary and sufficient that the ring $A/\nilrad$ is integral (or, equivalently, that the ideal $\nilrad$ is prime).
 \end{prop}
 
 \begin{proof}
 \label{proof-1.1.1.13}
-By virtue of Corollary \sref{1.1.1.12}, we can restrict to the case where
-$\nilrad=0$. If $X$ is reducible, then there exist two distinct closed subsets $Y_1$, $Y_2$
-of $X$ such that $X=Y_1\cup Y_2$, so $\fk{j}(X)=\fk{j}(Y_1)\cap\fk{j}(Y_2)=0$,
-the ideals $\fk{j}(Y_1)$ and $\fk{j}(Y_2)$ being distinct from $(0)$
-\sref{1.1.1.5}; so $A$ is not integral. Conversely, if in $A$ there are
-elements $f\neq 0$, $g\neq 0$ such that $fg=0$, we have $V(f)\neq X$, $V(g)\neq X$ (since the
-intersection of the prime ideals of $A$ is $(0)$), and $X=V(fg)=V(f)\cup V(g)$.
+By virtue of Corollary \sref{1.1.1.12}, we can restrict to the case where $\nilrad=0$.
+If $X$ is reducible, then there exist two distinct closed subsets $Y_1$ and $Y_2$ of $X$ such that $X=Y_1\cup Y_2$, so $\fk{j}(X)=\fk{j}(Y_1)\cap\fk{j}(Y_2)=0$, since the ideals $\fk{j}(Y_1)$ and $\fk{j}(Y_2)$ are distinct from $(0)$ \sref{1.1.1.5};
+so $A$ is not integral.
+Conversely, if there are elements $f\neq 0$, $g\neq 0$ of $A$ such that $fg=0$, we have $V(f)\neq X$, $V(g)\neq X$ (since the intersection of all the prime ideals of $A$ is $(0)$), and $X=V(fg)=V(f)\cup V(g)$.
 \end{proof}
 
 \begin{cor}[1.1.14]
 \label{1.1.1.14}
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item In the bijective correspondence between closed subsets of $X=\Spec(A)$ and ideals of $A$ equal to their roots, the irreducible closed subsets of $X$ correspond to the prime ideals of $A$.
+  \item In the bijective correspondence between closed subsets of $X=\Spec(A)$ and ideals of $A$ equal to their radicals, the irreducible closed subsets of $X$ correspond to the prime ideals of $A$.
     In particular, the irreducible components of $X$ correspond to the minimal prime ideals of $A$.
-  \item The map $x\mapsto\overline{\{x\}}$ establishes a bijective correspondence between $X$ and the set of closed irreducible subsets of $X$ (\emph{said otherwise,} all closed irreducible subsets of $X$ containing only one generic point).
+  \item The map $x\mapsto\overline{\{x\}}$ establishes a bijective correspondence between $X$ and the set of closed irreducible subsets of $X$ (\emph{in other words,} all closed irreducible subsets of $X$ admit exactly one generic point).
 \end{enumerate}
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.1.14}
-(i) follows immediately from \sref{1.1.1.13} and
-\sref{1.1.1.11}; and for
-proving (ii), we can, by virtue of \sref{1.1.1.11}, we restrict to the
-case where $X$ is irreducible; then, according to
-Proposition \sref{1.1.1.13}, there exists
-in $A$ a smaller prime ideal $\nilrad$, which corresponds to the generic point
+(i) follows immediately from \sref{1.1.1.13} and \sref{1.1.1.11};
+and for proving (ii), we can, by \sref{1.1.1.11}, restrict to the case where $X$ is irreducible;
+then, according to Proposition~\sref{1.1.1.13}, there exists a smaller prime ideal $\nilrad$ in $A$, which corresponds to the generic point
 \oldpage[I]{83}
-of $X$; in addition, $X$ does not admit only one generic point since it is a Kolmogoroff
-space (\sref{1.1.1.8} and \sref[0]{0.2.1.3}).
+of $X$;
+in addition, $X$ admits at most one generic point since it is a Kolmogoroff space (\sref{1.1.1.8} and \sref[0]{0.2.1.3}).
 \end{proof}
 
 \begin{prop}[1.1.15]
@@ -242,9 +217,8 @@ neighborhood of $V(\fk{J})$ in $X=\Spec(A)$ is the whole space $X$.
 
 \begin{proof}
 \label{proof-1.1.1.15}
-Each maximal ideal of $A$ belongs by definition of $V(\fk{J})$.
-As each ideal $\fk{a}$ of $A$ is contained in a maximal ideal, we have
-$V(\fk{a})\cap V(\fk{J})\neq 0$, hence the proposition.
+Each maximal ideal of $A$ belongs, by definition, to $V(\fk{J})$.
+As each ideal $\fk{a}$ of $A$ is contained in a maximal ideal, we have $V(\fk{a})\cap V(\fk{J})\neq 0$, whence the proposition.
 \end{proof}
 
 \subsection{Functorial properties of prime spectra of rings}
