@@ -12,12 +12,12 @@
 \usepackage{tikz-cd}
 \usepackage{enumitem}
 
-\externaldocument[What-]{What}
-\externaldocument[Introduction-]{Introduction}
-\externaldocument[EGA-0-]{EGA-0}
-\externaldocument[EGA-I-]{EGA-I}
-\externaldocument[EGA-II-]{EGA-II}
-\externaldocument[EGA-III-]{EGA-III}
+\externaldocument[what-]{what}
+\externaldocument[intro-]{intro}
+\externaldocument[ega0-]{ega0}
+\externaldocument[ega1-]{ega1}
+\externaldocument[ega2-]{ega2}
+\externaldocument[ega3-]{ega3}
 
 \newtheoremstyle{ega-env-style}%
   {}{}{\rmfamily}{}{\bfseries}{.}{ }{\thmnote{(#3)}}%
@@ -59,28 +59,28 @@
 %\renewcommand{\thechapter}{\ZeroRoman{chapter}}
 
 \def\mathcal{\mathscr}
-\def\sh{\mathcal}                 % sheaf font
-\def\bb{\mathbf}                  % bold font
-\def\cat{\mathtt}                 % category font
-\def\fk{\mathfrak}                % mathfrak font
-\def\wt#1{{\widetilde{#1}}}       % tilde over
-\def\wh#1{{\widehat{#1}}}         % hat over
-\def\rad{\fk{r}}                  % radical
-\def\nilrad{\fk{R}}               % nilradical
-\def\emp{\varnothing}             % empty set
-\def\vphi{\phi}                   % for switching \phi and \varphi, change if needed
-\def\HH{\mathrm{H}}               % cohomology H
-\def\CHH{\check{\HH}}             % Čech cohomology H
-\def\dual#1{{#1}^\vee}            % dual
-\def\kres{k}                      % residue field k
-\def\C{\cat{C}}                   % category C
-\def\op{^\cat{op}}                % opposite category
-\def\Set{\cat{Set}}               % category of sets
-\def\CHom{\cat{Hom}}              % functor category
-\def\OO{\sh{O}}                   % structure sheaf O
+\def\sh{\mathcal}                   % sheaf font
+\def\bb{\mathbf}                    % bold font
+\def\cat{\mathtt}                   % category font
+\def\fk{\mathfrak}                  % mathfrak font
+\def\wt#1{{\smash{\widetilde{#1}}}} % tilde over
+\def\wh#1{{\smash{\widehat{#1}}}}   % hat over
+\def\rad{\fk{r}}                    % radical
+\def\nilrad{\fk{R}}                 % nilradical
+\def\emp{\varnothing}               % empty set
+\def\vphi{\phi}                     % for switching \phi and \varphi, change if needed
+\def\HH{\mathrm{H}}                 % cohomology H
+\def\CHH{\check{\HH}}               % Čech cohomology H
+\def\dual#1{{#1}^\vee}              % dual
+\def\kres{k}                        % residue field k
+\def\C{\cat{C}}                     % category C
+\def\op{^\cat{op}}                  % opposite category
+\def\Set{\cat{Set}}                 % category of sets
+\def\CHom{\cat{Hom}}                % functor category
+\def\OO{\sh{O}}                     % structure sheaf O
 
-\def\shHom{\sh{H}\!{om}}          % sheaf Hom
-\def\shProj{\sh{P}\!{roj}}        % sheaf Proj
+\def\shHom{\sh{H}\!{om}}            % sheaf Hom
+\def\shProj{\sh{P}\!{roj}}          % sheaf Proj
 \def\red{\mathrm{red}}
 \def\rg{{\mathop{\mathrm{rg}}}}
 \def\Hom{{\mathop{\mathrm{Hom}}\nolimits}}
