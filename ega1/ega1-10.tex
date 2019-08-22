@@ -936,21 +936,61 @@ Under the hypotheses of \sref{1.10.9.1}, for every coherent $\OO_Y$-module $\sh{
 If we canonically identify $(f^*(\sh{G}))_{/X'}$ with $i_X^*(f^*(\sh{G}))$ and $\wh{f}^*(\sh{G}_{/Y'})$ with $\wh{f}^*(i_Y^*(\sh{G}))$ \sref{1.10.8.8}, then the proposition immediately follows from the commutativity of the diagram in \sref{1.10.9.2}.
 \end{proof}
 
+\begin{env}[10.9.6]
+\label{1.10.9.6}
+Now let $\sh{F}$ be a coherent $\OO_X$-module, and let $\sh{G}$ be a coherent $\OO_Y$-module.
+If $u:\sh{G}\to\sh{F}$ is an $f$-morphism from $\sh{G}$ to $\sh{F}$, then it corresonds to an $\OO_X$-homomorphism $u^\sharp:f^*(\sh{G})\to\sh{F}$, thus by completion a continuous $(\OO_X)_{/X'}$-homomorphism $(u^\sharp)_{/X'}:(f^*(\sh{G}))_{/X'}\to\sh{F}_{/X'}$, and by Proposition \sref{1.10.9.5}, there exists a unique $\wh{f}$-morphism $v:\sh{G}_{/Y'}\to\sh{F}_{/X'}$
+\oldpage[I]{200}
+such that $v^\sharp=(u^\sharp)_{/X'}$.
+If we conider the triples $(\sh{F},X,X')$ ($\sh{F}$ being a coherent $\OO_X$-module and $X'$ a closed subset of $X$) as a \emph{category}, the morphisms $(\sh{F},X,X')\to(\sh{G},Y,Y')$ consisting of a morphism of preschemes $f:X\to Y$ such that $f(X')\subset Y'$ and an $f$-morphism $u:\sh{G}\to\sh{F}$, then we can say that $(X_{/X'},\sh{F}_{/X'})$ is a \emph{functor} in $(\sh{F},X,X')$ with values in the category of pairs $(\fk{Z},\sh{H})$ consisting of a locally Noetherian formal prescheme $\fk{Z}$ and an $\OO_\fk{Z}$-module $\sh{H}$, the morphisms of the latter category being the pairs consisting of a morphism $g$ of formal preschemes and a $g$-morphism.
+\end{env}
 
+\begin{prop}[10.9.7]
+\label{1.10.9.7}
+Let $S$, $X$, and $Y$ be three locally Noetherian preschemes, $g:X\to S$ and $h:Y\to S$ two morphisms, $S'$ a closed subset of $S$, $X'$ (resp. $Y'$) a closed subset of $X$ (resp. $Y$) such that $g(X')\subset S'$ (resp. $h(Y')\subset S'$); let $Z=X\times_S Y$; suppose $Z$ is locally Noetherian, and let $Z'=p^{-1}(X')\cap q^{-1}(Y')$, where $p$ and $q$ are the projections of $X\times_S Y$.
+With these conditions, the completion $Z_{/Z'}$ indentifies with the product of formal $S_{/S'}$-preschemes $(X_{/X'})\times_{S_{/S'}}(Y_{/Y'})$, the structure morphisms indentify with $\wh{g}$ and $\wh{h}$, and the projections with $\wh{p}$ and $\wh{q}$.
+\end{prop}
 
+\begin{proof}
+\label{proof-1.10.9.7}
+It is immediate that the question is local for $S$, $X$, and $Y$, and we thus reduce to the case where $S=\Spec(A)$, $X=\Spec(B)$, $Y=\Spec(C)$, $S'=V(\fk{J})$, $X'=V(\fk{K})$, and $Y'=V(\fk{L})$, where $\fk{J}$, $\fk{K}$, and $\fk{L}$ are three ideals such that $\vphi(\fk{J})\subset\fk{K}$ and $\psi(\fk{J})\subset\fk{L}$, where we denote by $\vphi$ and $\psi$ the homomorphisms $A\to B$ and $A\to C$ which correspond to $g$ and $h$.
+We know that $Z=\Spec(B\otimes_A C)$ and that $Z'=V(\fk{M})$, where $\fk{M}$ is the ideal $\Im(\fk{K}\otimes_A C)+\Im(B\otimes_A\fk{L})$.
+The conclusion follows \sref{1.10.7.2} from the fact that the completed tensor product $(\wh{B}\otimes_\wh{A}\wh{C})^\wedge$ (where $\wh{A}$, $\wh{B}$, and $\wh{C}$ are respectively the separated completions of $A$, $B$, and $C$ with respect to the $\fk{J}$-, $\fk{K}$-, and $\fk{L}$-pre-adic topologies) is the separated completion of the tensor product $B\otimes_A C$ with respect to the $\fk{M}$-pre-adic topology \sref[0]{0.7.7.2}.
+\end{proof}
 
+In addition, we note that if $T$ is a locally Noetherian $S$-prescheme, $u:T\to X$ and $v:T\to Y$ two $S$-morphisms, $T'$ a closed subset of $T$ such that $u(T')\subset X'$ and $v(T')\subset Y'$, then the extension to the completion $((u,v)_S)^\wedge$ identifies with $(\wh{u},\wh{v})_{S_{/S'}}$.
 
+\begin{cor}[10.9.8]
+\label{1.10.9.8}
+Let $X$ and $Y$ be two locally Noetherian $S$-preschemes such that $X\times_S Y$ is locally Noetherian; let $S'$ be a closed subset of $S$, $X'$ (resp. $Y'$) a closed subset of $X$ (resp. $Y$) whose image in $S$ is contained in $S'$.
+For every $S$-morphism $f:X\to Y$ such that $f(X')\subset Y'$, the graph morphism $\Gamma_\wh{f}$ identifies with the extension $(\Gamma_f)^\wedge$ of the graph morphism of $f$.
+\end{cor}
 
+\begin{cor}[10.9.9]
+\label{1.10.9.9}
+Let $X$ and $Y$ be two locally Noetherian preschemes, $f:X\to Y$ a morphism, $Y'$ a closed subset of $Y$, and $X'=f^{-1}(Y')$.
+Then the prescheme $X_{/X'}$ indentifies by the commutative diagram
+\[
+  \xymatrix{
+    X\ar[d]_f &
+    X_{/X'}\ar[l]\ar[d]^{\wh{f}}\\
+    Y &
+    Y_{/Y'}\ar[l]
+  }
+\]
+with the product $X\times_Y(Y_{/Y'})$ of formal preschemes.
+\end{cor}
 
+\begin{proof}
+\label{proof-1.10.9.9}
+It suffices to apply Proposition \sref{1.10.9.7}, replacing $S$ and $S'$ by $Y$, $X$ and $X'$ by $X$.
+\end{proof}
 
-
-
-
-
-
-
-
-
+\begin{rmk}[10.9.10]
+\label{1.10.9.10}
+\oldpage[I]{201}
+If $S$ is the sum $X_1\amalg X_2$ (3.1), $X'$ the union $X_1'\cup X_2'$, where $X_i'$ is a closed subset of $X_i$ ($i=1,2$), then we have $X_{/X'}={X_1}_{/X_1'}\amalg{X_2}_{/X_2'}$.
+\end{rmk}
 
 \subsection{Application to coherent sheaves on formal affine schemes}
 \label{subsection-application-to-coherent-sheaves-on-formal-affine-schemes}
