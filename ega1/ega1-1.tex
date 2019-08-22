@@ -561,21 +561,18 @@ $s=\theta_1(z)$ and finishes the proof.
 
 \begin{cor}[1.3.8]
 \label{1.1.3.8}
-Let $M$, $N$ be two $A$-modules; the canonical homomorphism $u\mapsto\wt{u}$ from
-$\Hom_A(M,N)$ to $\Hom_{\wt{A}}(\wt{M},\wt{N})$ is bijective. In
-particular, the relations $M=0$ and $\wt{M}=0$ are equivalent.
+Let $M$ and $N$ be two $A$-modules; the canonical homomorphism $u\mapsto\wt{u}$ from $\Hom_A(M,N)$ to $\Hom_\wt{A}(\wt{M},\wt{N})$ is bijective.
+In particular, the relations $M=0$ and $\wt{M}=0$ are equivalent.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.3.8}
-Consider the canonical homomorphism $v\mapsto\Gamma(v)$ from
-$\Hom_{\wt{A}}(\wt{M},\wt{N})$ to
-$\Hom_{\Gamma(\wt{A})}(\Gamma(\wt{M}),\Gamma(\wt{N}))$; the latter
-module canonically identifies with $\Hom_A(M,N)$ according to Theorem \sref{1.1.3.7}.
+Consider the canonical homomorphism $v\mapsto\Gamma(v)$ from $\Hom_\wt{A}(\wt{M},\wt{N})$ to $\Hom_{\Gamma(\wt{A})}(\Gamma(\wt{M}),\Gamma(\wt{N}))$;
+the latter module canonically identifies with $\Hom_A(M,N)$ according to Theorem \sref{1.1.3.7}.
 It remains to show that $u\mapsto\wt{u}$ and $v\mapsto\Gamma(v)$ are inverses of each
 other; it is evident that $\Gamma(\wt{u})=u$ by definition of $\wt{u}$; on the
 other hand, if we put $u=\Gamma(v)$ for
-$v\in\Hom_{\wt{A}}(\wt{M},\wt{N})$, the map
+$v\in\Hom_\wt{A}(\wt{M},\wt{N})$, the map
 $w:\Gamma(D(f),\wt{M})\to\Gamma(D(f),\wt{N})$ canonically induced from $v$
 is such that the diagram
 \[
@@ -668,19 +665,16 @@ $\Gamma$ is exact.
 
 \begin{proof}
 \label{proof-1.1.3.11}
-Let $\wt{M}\xrightarrow{\wt{u}}\wt{N}
-\xrightarrow{\wt{v}}\wt{P}$ be an exact sequence corresponding to two
-homomorphisms $u:M\to N$, $v:N\to P$ of $A$-modules. If $Q=\Im u$ and $R=\Ker v$, we have
-$\wt{Q}=\Im\wt{u}=\Ker\wt{v}=\wt{R}$ (Corollary \sref{1.1.3.9}),
-hence $Q=R$.
+Let $\wt{M}\xrightarrow{\wt{u}}\wt{N}\xrightarrow{\wt{v}}\wt{P}$ be an exact sequence corresponding to two homomorphisms $u:M\to N$ and $v:N\to P$ of $A$-modules.
+If $Q=\Im u$ and $R=\Ker v$, we have $\wt{Q}=\Im\wt{u}=\Ker\wt{v}=\wt{R}$ (Corollary \sref{1.1.3.9}), hence $Q=R$.
 \end{proof}
 
 \begin{cor}[1.3.12]
 \label{1.1.3.12}
-Let $M$, $N$ be two $A$-modules.
+Let $M$ and $N$ be two $A$-modules.
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item The sheaf associated to $M\otimes_A N$ canonically identifies with $\wt{M}\otimes_{\wt{A}}\wt{N}$.
-  \item If in addition $M$ admits a finite presentation, then the sheaf associated to $\Hom_A(M,N)$ canonically identifies with $\shHom_{\wt{A}}(\wt{M},\wt{N})$.
+  \item The sheaf associated to $M\otimes_A N$ canonically identifies with $\wt{M}\otimes_\wt{A}\wt{N}$.
+  \item If in addition $M$ admits a finite presentation, then the sheaf associated to $\Hom_A(M,N)$ canonically identifies with $\shHom_\wt{A}(\wt{M},\wt{N})$.
 \end{enumerate}
 \end{cor}
 
@@ -688,7 +682,7 @@ Let $M$, $N$ be two $A$-modules.
 \label{proof-1.1.3.12}
 \medskip\noindent
 \begin{enumerate}[label=(\roman*)]
-  \item The sheaf $\sh{F}=\wt{M}\otimes_{\wt{A}}\wt{N}$ is associated to the presheaf
+  \item The sheaf $\sh{F}=\wt{M}\otimes_\wt{A}\wt{N}$ is associated to the presheaf
     \[
       U\mapsto\sh{F}(U)=\Gamma(U,\wt{M})\otimes_{\Gamma(U,\wt{A})}\Gamma(U,\wt{N}),
     \]
@@ -707,9 +701,9 @@ Let $M$, $N$ be two $A$-modules.
     thus obtained satisfy the compatibility conditions with respect to the restriction
     operations \sref[0]{0.1.4.2}, so they define a canonical functorial isomorphism
     \[
-      \wt{M}\otimes_{\wt{A}}\wt{N}\isoto(M\otimes_A N)^\sim.
+      \wt{M}\otimes_\wt{A}\wt{N}\isoto(M\otimes_A N)^\sim.
     \]
-  \item The sheaf $\sh{G}=\shHom_{\wt{A}}(\wt{M},\wt{N})$ is associated to the presheaf
+  \item The sheaf $\sh{G}=\shHom_\wt{A}(\wt{M},\wt{N})$ is associated to the presheaf
     \[
       U\mapsto\sh{G}(U)=\Hom_{\wt{A}|U}(\wt{M}|U,\wt{N}|U),
     \]
@@ -721,7 +715,7 @@ Let $M$, $N$ be two $A$-modules.
     and Theorem \sref{1.1.3.7}), and the canonical isomorphisms
     $\sh{G}(D(f))\isoto\Gamma(D(f),(\Hom_A(M,N))^\sim)$ thus obtained are compatible with the restriction
     operations \sref[0]{0.1.4.2}; they thus define a canonical isomorphism
-    $\shHom_{\wt{A}}(\wt{M},\wt{N})\isoto(\Hom_A(M,N))^\sim$.
+    $\shHom_\wt{A}(\wt{M},\wt{N})\isoto(\Hom_A(M,N))^\sim$.
 \end{enumerate}
 \end{proof}
 
@@ -741,14 +735,9 @@ $\vphi:B\otimes_A B\to B$, so that: 1st the diagrams
     B
   }
 \]
-($\sigma$ the canonical symmetry map) are commutative; 2nd
-$\vphi(e\otimes x)=\vphi(x\otimes e)=x$. According to
-Corollary \sref{1.1.3.12}, the homomorphism
-$\wt{\vphi}:\wt{B}\otimes_{\wt{A}}\wt{B}\to\wt{B}$ of
-$\wt{A}$-modules satisfies the analogous conditions, thus defines an
-\emph{$\wt{A}$-algebra} structure on $\wt{B}$. In a similar way, the data of
-a $B$-module $N$ is the same as the data of an $A$-module $N$ and an $A$-homomorphism
-$\psi:B\otimes_A N\to N$ such that the diagram
+($\sigma$ the canonical symmetry map) are commutative; 2nd $\vphi(e\otimes x)=\vphi(x\otimes e)=x$.
+According to Corollary \sref{1.1.3.12}, the homomorphism $\wt{\vphi}:\wt{B}\otimes_\wt{A}\wt{B}\to\wt{B}$ of $\wt{A}$-modules satisfies the analogous conditions, thus it defines an \emph{$\wt{A}$-algebra} structure on $\wt{B}$.
+In a similar way, the data of a $B$-module $N$ is the same as the data of an $A$-module $N$ and an $A$-homomorphism $\psi:B\otimes_A N\to N$ such that the diagram
 \[
   \xymatrix{
     B\otimes_A B\otimes_A B\ar[r]^{\vphi\otimes 1}\ar[d]_{1\otimes\psi} &
@@ -757,8 +746,7 @@ $\psi:B\otimes_A N\to N$ such that the diagram
     N
   }
 \]
-is commutative and $\psi(e\otimes n)=n$; the homomorphism
-$\wt{\psi}:\wt{B}\otimes_{\wt{A}}\wt{N}\to\wt{N}$
+is commutative and $\psi(e\otimes n)=n$; the homomorphism $\wt{\psi}:\wt{B}\otimes_\wt{A}\wt{N}\to\wt{N}$
 satisfies the analogous condition, and so defines a \emph{$\wt{B}$-module} structure
 on $\wt{N}$.
 
@@ -772,8 +760,8 @@ is a $B$-module of finite type \sref[0]{0.5.2.3}.
 
 \oldpage[I]{90}
 If $M$, $N$ are two $B$-modules, the $\wt{B}$-module
-$\wt{M}\otimes_{\wt{B}}\wt{N}$ canonically identifies with
-$(M\otimes_B N)^\sim$; similarly $\shHom_{\wt{B}}(\wt{M},\wt{N})$
+$\wt{M}\otimes_\wt{B}\wt{N}$ canonically identifies with
+$(M\otimes_B N)^\sim$; similarly $\shHom_\wt{B}(\wt{M},\wt{N})$
 canonically identifies with $(\Hom_B(M,N))^\sim$ when $M$ admits a finite presentation; the
 proofs are similar to those in Corollary \sref{1.1.3.12}.
 
@@ -939,7 +927,7 @@ where $N$ is a $B$-module.
 Indeed, a quasi-coherent $\OO_X$-algebra is a quasi-coherent $\OO_X$-module, therefore of the
 form $\wt{B}$, where $B$ is an $A$-module; the fact that $B$ is an $A$-algebra
 follows from the characterization of the structure of an $\OO_X$-algebra using the
-homomorphism $\wt{B}\otimes_{\wt{A}}\wt{B}\to\wt{B}$ of
+homomorphism $\wt{B}\otimes_\wt{A}\wt{B}\to\wt{B}$ of
 $\wt{A}$-modules, as well as Corollary \sref{1.1.3.12}. If $\sh{G}$ is a quasi-coherent
 $\wt{B}$-module, it suffices to show, in a similar way,
 that it is also a quasi-coherent $\wt{A}$-module to conclude the proof; as the
@@ -1207,8 +1195,8 @@ Let $N_1'$, $N_2'$ be two $A'$-modules, and assume $N_1'$ admits a \emph{finite
 presentation}; it then follows from \sref{1.1.6.7} and \sref{1.1.3.12}, (ii) that the
 canonical homomorphism \sref[0]{0.4.4.6}
 \[
-  \Phi^*(\shHom_{\wt{A'}}(\wt{N_1'},\wt{N_2'}))
-  \to\shHom_{\wt{A}}(\Phi^*(\wt{N_1'}),\Phi^*(\wt{N_2'}))
+  \Phi^*(\shHom_\wt{A'}(\wt{N_1'},\wt{N_2'}))
+  \to\shHom_\wt{A}(\Phi^*(\wt{N_1'}),\Phi^*(\wt{N_2'}))
 \]
 is none other than $\wt{\gamma}$, where $\gamma$ denotes the canonical homomorphism
 of $A$-modules
@@ -1219,7 +1207,7 @@ $\Hom_{A'}(N_1',N_2')\otimes_{A'}A\to\Hom_A(N_1'\otimes_{A'}A,N_2'\otimes_{A'}A)
 \label{1.1.6.9}
 Let $\fk{J}'$ be an ideal of $A'$, $M$ an $A$-module; as by definition
 $\wt{\fk{J}'}\wt{M}$ is the image of the canonical homomorphism
-$\Phi^*(\wt{\fk{J}'})\otimes_{\wt{A}}\wt{M}\to\wt{M}$, it
+$\Phi^*(\wt{\fk{J}'})\otimes_\wt{A}\wt{M}\to\wt{M}$, it
 follows from Proposition \sref{1.1.6.5} and
 Corollary \sref{1.1.3.12}, (i) that
 $\wt{\fk{J}'}\wt{M}$ canonically identifies with $(\fk{J}' M)^\sim$;
