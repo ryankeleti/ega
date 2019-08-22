@@ -1187,6 +1187,131 @@ Under the hypotheses of \sref{1.10.9.9}, if $f$ is a morphism of finite type, th
 \subsection{Closed subpreschemes of formal preschemes}
 \label{subsection-closed-subpreschemes-of-formal-preschemes}
 
+\begin{prop}[10.14.1]
+\label{1.10.14.1}
+Let $\fk{X}$ be a locally Noetherian formal preschemes, and $\sh{A}$ a coherent sheaf of ideals of $\OO_\fk{X}$.
+If $\fk{Y}$ if the (closed) support of $\OO_\fk{X}/\sh{A}$, then the topologically ringed space $(\fk{Y},(\OO_\fk{X}/\sh{A})|\fk{Y})$ is a locally Noetherian formal prescheme that is Noetherian if $\fk{X}$ is.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.14.1}
+Note that $\OO_\fk{X}/\fk{A}$ is coherent by \sref{1.10.10.3} and \sref[0]{0.5.3.4}, so its support $\fk{Y}$ is closed \sref[0]{0.5.2.2}.
+Let $\sh{J}$ be an ideal of definition of $\fk{X}$, and let $X_n=(\fk{X}/\OO_\fk{X}/\sh{J}^{n+1})$;
+the sheaf of rings $\OO_\fk{X}/\sh{A}$ is the projective limit of the sheaves $\OO_\fk{X}/(\sh{A}+\sh{J}^{n+1})=(\OO_\fk{X}/\sh{A})\otimes_{\OO_\fk{X}}(\OO_\fk{X}/\sh{J}^{n+1})$ \sref{1.10.11.3}, which all have support $\fk{Y}$.
+The sheaf $(\sh{A}+\sh{J}^{n+1})/\sh{J}^{n+1}$ is a coherent $\OO_\fk{X}$-module, since $\sh{J}^{n+1}$ is coherent, and so $(\sh{A}+\sh{J}^{n+1})/\sh{J}^{n+1}$ is also a coherent $(\OO_\fk{X}/\sh{J}^{n+1})$-module \sref[0]{0.5.3.10};
+if $Y_n$ is the closed subprescheme of $X_n$ defined by this sheaf of ideals, it is immediate that $(\fk{Y},(\OO_\fk{X}/\sh{A})|\fk{Y})$
+\oldpage[I]{210}
+is the formal prescheme given by the inductive limit of the $Y_n$, and since the conditions of \sref{1.10.6.4} are satisfied, this proves that this formal prescheme is locally Noetherian, and Noetherian if $\fk{X}$ is (since then $Y_0$ is, by \sref{1.6.1.4}).
+\end{proof}
+
+\begin{defn}[10.14.2]
+\label{1.10.14.2}
+We define a closed subprescheme of a formal prescheme $\fk{X}$ to be any formal prescheme of the form $(\fk{Y},(\OO_\fk{X}/\sh{A})|\fk{Y})$ with $\sh{A}$ a coherent $\OO_\fk{X}$-module;
+we say that this prescheme is the subprescheme defined by $\sh{A}$.
+\end{defn}
+
+It is clear that the correspondence thus defined between coherent $\OO_\fk{X}$-modules and closed subpreschemes of $\fk{X}$ is bijective.
+
+The morphism of topologically ringed spaces $j=(\psi,\theta):\fk{Y}\to\fk{X}$, where $\psi$ is the injection $\fk{Y}\to\fk{X}$ and $\theta^\sharp$ the canonical homomorphism $\OO_\fk{X}\to\OO_\fk{X}/\sh{A}$, is evidently \sref{1.10.4.5} a morphism of formal preschemes, and we call it the \emph{canonical injection} from $\fk{Y}$ to $\fk{X}$.
+Note that, if $\fk{X}=\Spf(A)$, or if $A$ is Noetherian and adic, then we have $\sh{A}=\fk{a}^\Delta$, where $\fk{a}$ is an ideal of $A$ \sref{1.10.10.5}, and it immediately follows from the above that we then have $\fk{Y}=\Spf(A/\fk{a})$, up to isomorphism, and $j$ corresponds \sref{1.10.2.2} to the canonical homomorphism $A\to A/\fk{a}$.
+
+We say that a morphism $f:\fk{Z}\to\fk{X}$ of locally Noetherian formal preschemes is a \emph{closed immersion} if it factors as $\fk{Z}\xrightarrow{g}\fk{Y}\xrightarrow{j}\fk{X}$, where $g$ is an isomorphism from $\fk{Z}$ to a closed subprescheme $\fk{Y}$ of $\fk{X}$, and $j$ the canonical injection.
+Since $j$ is a monomorphism of ringed spaces, $g$ and $\fk{Y}$ are necessarily \emph{unique}.
+
+\begin{prop}[10.14.3]
+\label{1.10.14.3}
+A closed immersion is a morphism of finite type.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.14.3}
+We can immediately restrict to the case where $\fk{X}$ is a formal affine scheme $\Spf(A)$ and $\fk{Y}=\Spf(A/\fk{a})$;
+the proposition then follows from \sref{1.10.13.1}[\emph{c}].
+\end{proof}
+
+\begin{lem}[10.14.4]
+\label{1.10.14.4}
+Let $f:\fk{Y}\to\fk{X}$ be a morphism of locally Noetherian formal preschemes, and let $(U_\alpha)$ be a cover of $f(\fk{Y})$ by Noetherian formal affine open subsets of $\fk{X}$ such that the $f^{-1}(U_\alpha)$ are Noetherian formal affine open subsets of $\fk{Y}$.
+For $f$ to be a closed immersion, it is necessary and sufficient for $f(\fk{Y})$ to be a closed subset of $\fk{X}$ and, for all $\alpha$, for the restriction of $f$ to $f^{-1}(U_\alpha)$ to correspond \sref{1.10.4.6} to a surjective homomorphism $\Gamma(U_\alpha,\OO_\fk{X})\to\Gamma(f^{-1}(U_\alpha),\OO_\fk{Y})$.
+\end{lem}
+
+\begin{proof}
+\label{proof-1.10.14.4}
+The conditions are clearly necessary.
+Conversely, if the conditions are satisfied, and if we denote by $\fk{a}_\alpha$ the kernel of $\Gamma(U_\alpha,\OO_\fk{X})\to\Gamma(f^{-1}(U_\alpha),\OO_\fk{Y})$, we can define a coherent sheaf of ideals $\sh{A}$ of $\OO_\fk{X}$ by setting $\sh{A}|U_\alpha=\fk{a}_\alpha^\Delta$, and taking $\sh{A}$ to be zero on the complement of the union of the $U_\alpha$.
+Because $f(\fk{Y})$ is closed, and the support of $\fk{a}_\alpha^\Delta$ is $U_\alpha\cap f(\fk{Y})$, everything relies on proving that $\fk{a}_\alpha^\Delta$ and $\fk{a}_\beta^\Delta$ induce the same sheaf on any Noetherian formal affine open subset $V\subset U_\alpha\cap U_\beta$.
+But the restriction of $f$ to $f^{-1}(U_\alpha)$ is a closed immersion of this formal prescheme into $U_\alpha$, $f^{-1}(V)$ is a Noetherian formal affine open subsets of $f^{-1}(U_\alpha)$, and the restriction of $f$ to $f^{-1}(V)$ is a closed immersion;
+if $\fk{b}$ is the kernel of the surjective homomorphism $\Gamma(V,\OO_\fk{X})\to\Gamma(f^{-1}(V),\OO_\fk{Y})$ corresponding to this restriction, then it is immediate \sref{1.10.10.2} that $\fk{a}_\alpha^\Delta$ induces $\fk{b}^\Delta$ on $V$.
+The sheaf of ideals $\sh{A}$ being thus defined, it is then clear that $f=g\circ j$, where $j:\fk{Z}\to\fk{X}$ is the canonical injection of the closed subprescheme $\fk{Z}$ of $\fk{X}$ defined by $\sh{A}$, and $g$ is an isomorphism from $\fk{Y}$ to $\fk{Z}$.
+\end{proof}
+
+\begin{prop}[10.14.5]
+\label{1.10.14.5}
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item If $f:\fk{Z}\to\fk{Y}$ and $g:\fk{Y}\to\fk{X}$ are closed immersions of locally Noetherian formal preschemes, then $g\circ f$ is a closed immersion.
+\oldpage[I]{211}
+    \item Let $\fk{X}$, $\fk{Y}$, and $\fk{G}$ be locally Noetherian formal preschemes, $f:\fk{X}\to\fk{G}$ a closed immersion, and $g:\fk{Y}\to\fk{G}$ a morphism.
+        Then the morphism $\fk{X}\times_\fk{G}\fk{Y}\to\fk{Y}$ is a closed immersion.
+    \item Let $\fk{G}$ be a locally Noetherian formal prescheme, and $\fk{X}'$ and $\fk{Y}'$ locally Noetherian formal $\fk{G}$-preschemes such that $\fk{X}'\times_\fk{G}\fk{Y}'$ is locally Noetherian.
+    If $\fk{X}$ and $\fk{Y}$ are locally Noetherian $\fk{G}$-preschemes, and $f:\fk{X}\to\fk{X}'$ and $g:\fk{Y}\to\fk{Y}'$ are $\fk{G}$-morphisms that are closed immersions, then $f\times_\fk{G}g$ is a closed immersion.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.14.5}
+By \sref{1.3.5.1}, it again suffices to prove (i) and (ii).
+
+To prove (i), we can assume that $\fk{Y}$ (resp. $\fk{Z}$) is a closed subprescheme of $\fk{X}$ (resp. $\fk{Y}$) defined by a coherent sheaf $\sh{J}$ (resp. $\sh{K}$) of ideals of $\OO_\fk{X}$ (resp. $\OO_\fk{Y}$);
+if $\psi$ is the injection $\fk{Y}\to\fk{X}$ of underlying spaces, then $\psi_*(\sh{K})$ is a coherent sheaf of ideals of $\psi_*(\OO_\fk{Y})=\OO_\fk{X}/\sh{J}$ \sref[0]{0.5.3.12}, and thus also a coherent $\OO_\fk{X}$-module \sref[0]{0.5.3.10};
+the kernel $\sh{K}_1$ of $\OO_\fk{X}\to(\OO_\fk{X}/\sh{J})/\psi_*(\sh{K})$ is thus a coherent sheaf of ideals of $\OO_\fk{X}$ \sref[0]{0.5.3.4}, and $\OO_\fk{X}/\sh{K}_1$ is isomorphic to $\psi_*(\OO_\fk{Y}/\sh{K})$, which proves that $\fk{Z}$ is an isomorphism to a closed subprescheme of $\fk{X}$.
+
+To prove (ii), it is immediate that we can restrict to the case where $fk{G}=\Spf(A)$, $\fk{X}=\Spf(B)$, and $\fk{Y}=\Spf(C)$, with $A$ a Noetherian $\fk{J}$-adic ring, $B=A/\fk{a}$ (where $\fk{a}$ is an ideal of $A$), and $C$ a Noetherian topological adic $A$-algebra.
+Everything then relies on proving that the homomorphism $C\to C\wh{\otimes}_A(A/\fk{a})$ is \emph{surjective}:
+but $A/\fk{a}$ is an $A$-module of finite type, and its topology is the $\fk{J}$-adic topology;
+it then follows from \sref[0]{0.7.7.8} that $C\wh{\otimes}_A(A/\fk{a})$ can be identified with $C\otimes_A(A/\fk{a})=C/\fk{a}C$, whence our claim.
+\end{proof}
+
+\begin{cor}[10.14.6]
+\label{1.10.14.6}
+Under the hypotheses of \sref{1.10.14.5}[ii], let $p:\fk{X}\times_\fk{G}\fk{Y}\to\fk{X}$ and $q:\fk{X}\times_\fk{G}\fk{Y}\to\fk{Y}$ be the projections, so that the diagram
+\[
+  \xymatrix{
+    \fk{X} \ar[d]_f
+    & \fk{X}\times_\fk{G}\fk{Y} \ar[l]^p \ar[d]^q\\
+    \fk{G}
+    & \fk{Y} \ar[l]_g
+  }
+\]
+commutes.
+For every coherent $\OO_\fk{X}$ module $\sh{F}$, we then have a canonical isomorphism of $\OO_\fk{Y}$-modules
+\begin{equation*}
+    u:g^*(f_*(\sh{F})) \xrightarrow{\sim} q_*(p^*(\sh{F})).\tag{10.14.6.1}
+\end{equation*}
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.14.6}
+We know that defining a homomorphism $g^*(f_*(\sh{F})) \to q_*(p^*(\sh{F}))$ is equivalent to defining a homomorphism $f_*(\sh{F}) \to g_*(q_*(p^*(\sh{F}))) = f_*(p_*(p^*(\sh{F})))$ \sref[0]{0.4.4.3}:
+we take $u=f_*(\rho)$, where $\rho$ is the canonical homomorphism $\sh{F}\to p_*(p^*(\sh{F}))$ \sref[0]{0.4.4.3}.
+To see that $u$ is an isomorphism, we can immediately restrict to the case where $\fk{G}$, $\fk{X}$, and $\fk{Y}$ are formal spectra of Noetherian adic rings $A$, $B$, and $C$ (respectively), with the conditions above in \sref{1.10.14.5}[ii];
+we then have $\sh{F}=M^\Delta$, where $M$ is an $(A/\fk{a})$-module of finite type \sref{1.10.10.5}, and the two sides of \hyperref[1.10.14.6]{(10.14.6.1)} are then identified, respectively, by \sref{1.10.10.8}, with $(C\otimes_A M)^\Delta$ and $((C/\fk{a}C)\otimes_{A/\fk{a}}M)^\Delta$, whence the corollary, because $(C/\fk{a}C)\otimes_{A/\fk{a}}M = (C\otimes_A(A/\fk{a}))\otimes_{A/\fk{a}}M$ is canonically identified with $C\otimes_A M$.
+\end{proof}
+
+\oldpage[I]{212}
+\begin{cor}[10.14.7]
+\label{1.10.14.7}
+Let $X$ be a locally Noetherian usual prescheme, $Y$ a closed subprescheme of $X$, $j$ the canonical injection $Y\to X$, $X'$ a closed subset of $X$, and $Y'=Y\cap X'$;
+then $\wh{j}:Y_{/Y'}\to X_{/X'}$ is a closed immersion, and, for every coherent $\OO_Y$-module $\sh{F}$, we have
+\[
+    \wh{j}_*(\sh{F}_{/Y'}) = (j_*(\sh{F}))_{/X'}.
+\]
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.14.7}
+Since $Y'=j^{-1}(X')$, it suffices to use \sref{1.10.9.9} and apply \sref{1.10.14.5} and \sref{1.10.14.6}.
+\end{proof}
+
 \subsection{Separated formal preschemes}
 \label{subsection-separated-formal-preschemes}
 
