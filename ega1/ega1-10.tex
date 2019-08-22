@@ -41,7 +41,7 @@ Let $A$ be an admissible ring, $\fk{X}=\Spf(A)$, and, for every $f\in A$, let $\
 
 \begin{proof}
 \label{proof-1.10.1.4}
-For every \unsure{ideal of definition} $\fk{J}$ of $A$, the discrete ring $S_f^{-1}A/ S_f^{-1}\fk{J}$ is canonically identified with $A_{\{f\}}/\fk{J}_{\{f\}}$ \sref[0]{0.7.6.9}, so, by \sref{1.1.2.5} and \sref{1.1.2.6}, the topological space $\Spf(A_{\{f\}})$ is canonically identified with $\fk{D}(f)$.
+For every ideal of definition $\fk{J}$ of $A$, the discrete ring $S_f^{-1}A/ S_f^{-1}\fk{J}$ is canonically identified with $A_{\{f\}}/\fk{J}_{\{f\}}$ \sref[0]{0.7.6.9}, so, by \sref{1.1.2.5} and \sref{1.1.2.6}, the topological space $\Spf(A_{\{f\}})$ is canonically identified with $\fk{D}(f)$.
 Further, for every quasi-compact open subset $U$ of $\fk{X}$ contained in $\fk{D}(f)$, $\Gamma(U,\OO_\lambda)$ can be identified with the module of sections of the structure sheaf of $\Spec(S_f^{-1}A/ S_f^{-1}\fk{J}_\lambda)$ over $U$ \sref{1.1.3.6}, so, setting $\fk{Y}=\Spf(A_{\{f\}})$, $\Gamma(U,\OO_\fk{X})$ can be identified with the module of sections $\Gamma(U,\OO_\fk{Y})$, which proves the proposition.
 \end{proof}
 
@@ -737,6 +737,87 @@ If $\wh{X}_\red$ is Noetherian, then its underlying space $X'$ is as well, so th
 \oldpage[I]{206}
 \begin{env}[10.12.1]
 \label{1.10.12.1}
+Let $\fk{X}$ and $\fk{G}$ be two \emph{locally Noetherian} formal preschemes;
+we say that a morphism $f:\fk{X}\to\fk{G}$ is \emph{adic} if there exists an ideal of definition $\sh{J}$ of $\fk{G}$ such that $\sh{K}=f^*(\sh{J}\OO_\fk{X}$ is an ideal of definition of $\fk{X}$;
+we then also say that $\fk{X}$ is an \emph{adic $\fk{G}$-prescheme} (for $f$).
+Whenever this is the case, for \emph{every} ideal of definition $\sh{J}_1$ of $\fk{G}$, $\sh{K}_1=f^*(\sh{J}_1)\OO_\fk{X}$ is an ideal of definition of $\fk{X}$.
+Indeed, the question being local, we can assume that $\fk{X}$ and $\fk{G}$ are Noetherian and affine;
+there then exists a whole number $n$ such that $\sh{J}^n\subset\sh{J}_1$ and $\sh{J}_1^n\subset\sh{J}$ (\sref{1.10.3.6} and \sref[0]{0.7.1.4}), whence $\sh{K}^n\subset\sh{K}_1$ and $\sh{K}_1^n\subset\sh{K}$.
+The first of these equalities shows that $\sh{K}_1=\fk{K}_1^\Delta$, where $\fk{K}_1$ is an open ideal of $A=\Gamma(\fk{X},\OO_\fk{X})$, and the second shows that $\fk{K}_1$ is an ideal of definition of $A$ \sref[0]{0.7.1.4}, whence our claim.
+\end{env}
+
+It follows immediately from the above that, if $\fk{X}$ and $\fk{Y}$ are adic $\fk{G}$-preschemes, then \emph{every $\fk{G}$-morphism $u:\fk{X}\to\fk{Y}$ is adic}:
+indeed, if $f:\fk{X}\to\fk{G}$ and $g:\fk{Y}\to\fk{G}$ are the structure morphisms, and $\sh{J}$ is an ideal of definition of $\fk{G}$, then we have $f=g\circ u$, and so $u^*(g^*(\sh{J})\OO_\fk{Y})\OO_\fk{X}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$, and, by hypothesis, $g^*(\sh{J})\OO_\fk{Y}$ is an ideal of definition of $\fk{Y}$.
+
+\begin{env}[10.12.2]
+\label{1.10.12.2}
+In what follows, we suppose that we have some fixed locally Noetherian formal prescheme $\fk{G}$, and some ideal of definition $\sh{J}$ of $\fk{G}$;
+we set $S_n=(\fk{G},\OO_\fk{G}/\sh{J}^{n+1})$.
+The (locally Noetherian) adic $\fk{G}$-preschemes clearly form a \emph{category}.
+We say that an inductive system $(X_n)$ of locally Noetherian (usual) $S_n$-preschemes is an \emph{adic inductive $(S_n)$-system} if the structure morphisms $f_n:X_n\to S_n$ are such that, for $m\leqslant n$, the diagrams
+\[
+  \xymatrix{
+    X_n \ar[d]_{f_n}
+    & X_m \ar[l] \ar[d]^{f_m}\\
+    S_n
+    & S_m \ar[l]
+  }
+\]
+commute and \emph{identify $X_m$ with the product $X_n\times_{S_n}S_m=(X_n)_{(S_n)}$}.
+The adic inductive systems form a \emph{category}:
+it suffices in fact to define a morphism $(X_n)\to(Y_n)$ of such systems to be an \emph{inductive system of $S_n$-morphisms $u_n:X_n\to Y_n$} such that $u_m$ is identified with $(u_n)_{(S_m)}$ for $m\leqslant n$.
+With this in mind:
+\end{env}
+
+\begin{thm}[10.12.3]
+\label{1.10.12.3}
+There is a canonical equivalence between the category of adic $\fk{G}$-preschemes and the category of adic inductive $(S_n)$-systems.
+\end{thm}
+
+The equivalence in question is obtained in the following way:
+if $\fk{X}$ is an adic $\fk{G}$-prescheme, and $f:\fk{X}\to\fk{G}$ is the structure morphism, then $\sh{K}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$, and we associate to $\fk{X}$ the inductive system of the $X_n=(\fk{X},\OO_\fk{X}/\sh{K}^{n+1})$, with the stucure morphism $f_n:X_n\to S_n$ corresponding to $f$ \sref{1.10.5.6}.
+We first show that $(X_n)$ is an \emph{adic inductive system}:
+if $f=(\psi,\theta)$, we have $\psi^*(\sh{J})\OO_\fk{X}=\sh{K}$, so $\psi^*(\sh{J}^n)\OO_\fk{X}=\sh{K}^n$ for all $n$, and (by exactness of the functor $\psi^*$) $\sh{K}^{m+1}/\sh{K}^{n+1}=\psi^*(\sh{J}^{m+1}/\sh{J}^{n+1})(\OO_\fk{X}/\sh{K}^{n+1})$ for $m\leqslant n$;
+our conclusion thus follows from \sref{1.4.4.5}.
+Furthermore, it can be immediately verified that a $\fk{G}$-morphism $u:\fk{X}\to\fk{Y}$ of adic $\fk{G}$-preschemes corresponds (with the obvious notation)
+\oldpage[I]{207}
+to an inductive system of $S_n$-morphisms $u_n:X_n\to Y_n$ such that $u_m$ is identified with $(u_n)_{(S_m)}$ for $m\leqslant n$.
+
+The fact that this equivalence is well defined will follow from the more-precise following proposition.
+
+\begin{prop}[10.12.3.1]
+\label{1.10.12.3.1}
+Let $(X_n)$ be an inductive system of $S_n$-preschemes;
+suppose that the structure morphisms $f_n:X_n\to S_n$ are such that the diagrams in \hyperref[1.10.12.2]{(10.12.2.1)} commute and identify $X_m$ with $X_n\times_{S_n}S_m$ for $m\leqslant n$.
+Then the inductive system $(X_n)$ satisfies conditions \emph{(b)} and \emph{(c)} of \sref{1.10.6.3};
+let $\fk{X}$ be the inductive limit, and $f:\fk{X}\to\fk{G}$ the morphism given by the inductive limit of the inductive system $(f_n)$.
+Then, if $X_0$ is locally Noetherian, $\fk{X}$ is locally Noetherian, and $f$ is an adic morphism.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.12.3.1}
+Since the sheaf of ideals of $\OO_{S_n}$ that defines the subprescheme $S_m$ of $S_n$ is nilpotent, so too, by \sref{1.4.4.5}, is the sheaf of ideals of $\OO_{X_n}$ that defines the subprescheme $X_m$ of $X_n$, so the conditions of \sref{1.10.6.3} are satisfied.
+The question being local on $\fk{X}$ and $\fk{G}$, we can assume that $\fk{G}=\Spf(A)$, $\sh{J}=\fk{J}^\Delta$ (with $A$ a Noetherian $\fk{J}$-adic ring), and $X_n=\Spec(B_n)$;
+if $A_n=A/\fk{J}^{n+1}$, then the hypothesis implies that $B_0$ is Noetherian, and if we set $\fk{J}_n=\fk{J}/\fk{J}^{n+1}$, then $B_m=B_n/\fk{J}_n^{m+1}B_n$.
+The kernel of $B_n\to B_0$ is thus $\fk{K}_n=\fk{J}_nB_n$, and the kernel of $B_n\to B_m$ is $\fk{K}_n^{m+1}$ for $m\leqslant n$;
+further, since $A_1$ is Noetherian, $\fk{J}_1$ is of finite type over $A_1$, and so $\fk{K}_1=\fk{K}_1/\fk{K}_1^2$ is of finite type over $B_1$, and \emph{a fortiori} of finite type over $B_0=B_1/\fk{K}_1$;
+the fact that $\fk{X}$ is Noetherian then follows from \sref{1.10.6.4};
+if $B=\varprojlim B_n$, then we have $\fk{X}=\Spf(B)$, and if $\fk{K}$ is the kernel of $B\to B_0$, then $B_n=B/\fk{K}^{n+1}$.
+If $\rho_n:A/\fk{J}^{n+1}\to B/\fk{K}^{n+1}$ is the homomorphism corresponding to $f_n$, then we have that
+\[
+    \fk{K}/\fk{K}^{n+1} = (B/\fk{K}^{n+1})\rho_n(\fk{J}/\fk{J}^{n+1})
+\]
+since the homomorphism $\rho:A\to B$ corresponding to $f$ is equal to $\varprojlim\rho_n$, and that the ideal $\fk{J}B$ of $B$ is dense in $\fk{K}$, and since every ideal of $B$ is closed \sref[0]{0.7.3.5}, we also have that $\fk{K}=\fk{J}B$.
+If $\sh{K}=\fk{K}^\Delta$, the equality $f^*(\sh{J})\OO_\fk{X}=\sh{K}$ then follows from \sref{1.10.10.9}, and finishes the proof.
+\end{proof}
+
+\begin{env}[10.12.3.2]
+\label{1.10.12.3.2}
+The above equivalence gives, for adic $\fk{G}$-preschemes $\fk{X}$ and $\fk{Y}$, a \emph{canonical bijection}
+\[
+    \Hom_\fk{G}(\fk{X},\fk{Y}) \xrightarrow{\sim} \varprojlim_n\Hom_{S_n}(X_n,Y_n)
+\]
+where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\leqslant n$
 \end{env}
 
 \subsection{Morphisms of finite type}
