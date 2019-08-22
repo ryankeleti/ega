@@ -735,7 +735,7 @@ fact \sref{1.3.3.11}, $X_{(S')}$ is identified with the product $X\times_Y Y_{(S
 \[
   \xymatrix{
     X\ar[d]_f &
-    X_{(S')}\ar[l]_p\ar[d]_{f_{(S')}}\\
+    X_{(S')}\ar[l]_p\ar[d]^{f_{(S')}}\\
     Y &
     Y_{(S')}\ar[l]_q
   }
@@ -747,12 +747,12 @@ Lemma \sref{1.3.4.6} can be made clearer in the following manner:
 \begin{prop}[3.4.9]
 \label{1.3.4.9}
 Let $X$ and $Y$ be two $S$-preschemes, and $x$ a point of $X$ and $y$ a point of $Y$ both above the same point $s\in S$.
-The set of points of $X\times_S Y$ with projections $x$ and $y$ is in bijective correspondence with the set of \unsure{types of extensions composed of $\kres(x)$ and $\kres(y)$ considered as extensions of $\kres(s)$} (Bourbaki, \emph{Alg.}, chap.~VIII, §8, prop.~2).
+The set of points of $X\times_S Y$ with projections $x$ and $y$ is in bijective correspondence with the set of \unsure{types of extensions composed of $\kres(x)$ and $\kres(y)$ considered as extensions of $\kres(s)$} \emph{(Bourbaki, \emph{Alg.}, chap.~VIII, \textsection8, prop.~2)}.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.4.9}
-Let $p$ (\emph{resp. $q$}) be the projection of $X\times_S Y$ into $X$ (\emph{resp. $Y$}), and $E$ the subspace $p^{-1}(x)\cap q^{-1}(y)$ of the underlying space of $X\times_S Y$.
+Let $p$ (resp. $q$) be the projection from $X\times_S Y$ to $X$ (resp. $Y$), and $E$ the subspace $p^{-1}(x)\cap q^{-1}(y)$ of the underlying space of $X\times_S Y$.
 First note that the morphisms $\Spec(\kres(x))\to S$ and $\Spec(\kres(y))\to S$ factorise as $\Spec(\kres(x))\to\Spec(\kres(s))\to S$ and $\Spec(\kres(y))\to\Spec(\kres(s))\to S$y since $\Spec(\kres(s))\to S$ is a monomorphism \sref{1.2.4.7}, it follows from \sref{1.3.2.4} that we have
 \[
   P=\Spec(\kres(x))\times_S\Spec(\kres(y))=\Spec(\kres(x))\times_{\Spec(\kres(s))}\Spec(\kres(y))=\Spec(\kres(x)\otimes_{\kres(s)}\kres(y)).
@@ -761,7 +761,7 @@ We will define two maps, $\alpha:P_0\to E$ and $\beta:E\to P_0$, inverse to one 
 If $i:\Spec(\kres(x))\to X$ and $j:\Spec(\kres(y))\to Y$ are the canonical morphisms \sref{1.2.4.5}, we take for $\alpha$ the map of underlying spaces corresponding to the morphism $i\times_S j$.
 On the other hand, every $z\in E$ defines by hypothesis two $\kres(s)$-monomorphisms, $\kres(x)\to\kres(z)$ and $\kres(y)\to\kres(z)$, and so a $\kres(s)$-monomorphism $\kres(x)\otimes_{\kres(s)}\kres(y)\to\kres(z)$ and so a morphism $\Spec(\kres(z))\to P$; $\beta(z)$ will be the image of $z$ in $P_0$ under this morphism.
 The verification of the fact that $\alpha\circ\beta$ and $\beta\circ\alpha$ are the identity maps follows from \sref{1.2.4.5} and the definition of the product \sref{1.3.2.1}.
-Finally, we know that $P_0$ is in bijective correspondence with the set of \unsure{types of extensions composed of $\kres(x)$ and $\kres(y)$} (Bourbaki, \emph{Alg.}, chap.~VIII, §8, prop.~1).
+Finally, we know that $P_0$ is in bijective correspondence with the set of \unsure{types of extensions composed of $\kres(x)$ and $\kres(y)$} (Bourbaki, \emph{Alg.}, chap.~VIII, \textsection8, prop.~1).
 \end{proof}
 
 \subsection{Surjections and injections}

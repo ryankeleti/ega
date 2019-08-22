@@ -89,10 +89,6 @@ For an element $f\in A$ to be such that $D(f)$ is dense in $X$, it is necessary 
 \end{lem}
 
 \begin{proof}
-\label{proof-1.7.1.9}
-\end{proof}
-
-\begin{proof}
 \label{proof-1.7.1.9.1}
 To show \hyperref[1.7.1.9.1]{(7.1.9.1)}, we again denote by $X_i$ ($1\leqslant i\leqslant n$) the irreducible components of $X$; if $D(f)$ is dense in $X$ then $D(f)\cap X_i\neq\emp$ for $1\leqslant i\leqslant n$, and vice-versa; but this means that $f\not\in\fk{p}_i$ for $1\leqslant i\leqslant n$, where we set $\fk{p}_i=\fk{j}(X_i)$, and since the $\fk{p}_i$ are the minimal prime ideals of $A$ \hyperref[1.1.1.14]{(1.1.14)}, the conditions $f\not\in\fk{p}_i$ ($1\leqslant i\leqslant n$) are equivalent to $f\in Q$, whence the first claim of the lemma.
 For the other part, if $U$ is a dense open subset of $X$, the complement of $U$ is a set of the form $V(\fk{a})$, where $\fk{a}$ is an ideal which is not contained in any of the $\fk{p}_i$; it is thus not contained in their union (\cite[p.~13]{I-10}), and there thus exists some $f\in\fk{a}$ belonging to $Q$; whence $D(f)\subset U$, which finishes the proof.
@@ -359,7 +355,7 @@ The fact that $R(U)$ can be canonically identified with the direct sum of the $\
 We will show that the presheaf $U\to R(U)$ satisfies the sheaf axioms, which will prove that $R(U)=\Gamma(U,\sh{R}(X))$.
 Indeed, it satisfies (F1) by what has already been discussed.
 To see that it satisfies (F2), consider a cover of an open subset $U$ of $X$ by open subsets $V_\alpha\subset U$; if the $s_\alpha\in R(V_\alpha)$ are such that the restrictions of $s_\alpha$ and $s_\beta$ to $V_\alpha\cap V_\beta$ agree for every pair of indices, we can conclude that, for every index $i$ such that $U\cap X_i\neq\emp$, the components in $R(X_i)$ of all the $s_\alpha$ such that $V_\alpha\cap X_i\neq\emp$ are all the same; denoting this component by $t_i$, it is clear that the element of $R(U)$ that has the $t_i$ as its components has $s_\alpha$ as its restriction to each $V_\alpha$.
-Finally, to see that $\sh{R}(X)$ is quasi-coherent, we can restrict to the case where $X=\Spec(A)$ is affine; by taking $U$ to be an affine open subset of the form $D(f)$, where $f\in A$, it follows from the above and from definition~\sref{1.1.3.4} that we have $\sh{R}(X)=\wt{M}$, where $M$ is the direct sum of the $A$-modules $A_{x_i}$.
+Finally, to see that $\sh{R}(X)$ is quasi-coherent, we can restrict to the case where $X=\Spec(A)$ is affine; by taking $U$ to be an affine open subset of the form $D(f)$, where $f\in A$, it follows from the above and from Definition \sref{1.1.3.4} that we have $\sh{R}(X)=\wt{M}$, where $M$ is the direct sum of the $A$-modules $A_{x_i}$.
 \end{proof}
 
 \begin{cor}[7.3.4]
@@ -375,12 +371,12 @@ If $X$ is irreducible, then every quasi-coherent $\sh{R}(X)$-module $\sh{F}$ is 
 
 \begin{proof}
 \label{proof-1.7.3.5}
-It suffices to show that every $x\in X$ admits a neighbourhood $U$ such that $\sh{F}|U$ is a simple sheaf \sref[0]{0.3.6.2}, or, in other words, we are led to considering the case where $X$ is affine; we can further suppose that $\sh{F}$ is the cokernel of a homomorphism $(\sh{R}(X))^{I}\to(\sh{R}(X))^{J}$ \sref[0]{0.5.1.3}, and everything then follows from showing that $\sh{R}(X)$ is a simple sheaf; but this is evident, because $\Gamma(U,\sh{R}(X))=R(X)$ for every nonempty open subset $U$, where $U$ contains the generic point of $X$.
+It suffices to show that every $x\in X$ admits a neighbourhood $U$ such that $\sh{F}|U$ is a simple sheaf \sref[0]{0.3.6.2}, or in other words, we are led to considering the case where $X$ is affine; we can further suppose that $\sh{F}$ is the cokernel of a homomorphism $(\sh{R}(X))^{I}\to(\sh{R}(X))^{J}$ \sref[0]{0.5.1.3}, and everything then follows from showing that $\sh{R}(X)$ is a simple sheaf; but this is evident, because $\Gamma(U,\sh{R}(X))=R(X)$ for every nonempty open subset $U$, where $U$ contains the generic point of $X$.
 \end{proof}
 
 \begin{cor}[7.3.6]
 \label{1.7.3.6}
-If $X$ is irreducible, then, for every quasi-coherent $\OO_X$-module $\sh{F}$, $\sh{F}\otimes_{\OO_X}\sh{R}(X)$ is a simple sheaf; if, further, $X$ is reduced (and thus integral), then $\sh{F}\otimes_{\OO_X}\sh{R}(X)$ is isomorphic to a sheaf of the form $(\sh{R}(X))^{(I)}$.
+If $X$ is irreducible, then for every quasi-coherent $\OO_X$-module $\sh{F}$, $\sh{F}\otimes_{\OO_X}\sh{R}(X)$ is a simple sheaf; if moreover $X$ is reduced (and thus integral), then $\sh{F}\otimes_{\OO_X}\sh{R}(X)$ is isomorphic to a sheaf of the form $(\sh{R}(X))^{(I)}$.
 \end{cor}
 
 \begin{proof}
@@ -477,12 +473,12 @@ But every nonempty open subset $U$ of $Y$ contains the generic point of $Y$, so 
 \begin{prop}[7.4.6]
 \label{1.7.4.6}
 Let $X$ be an integral prescheme, and $x$ its generic point.
-For every quasi-coherent $\OO_X$-module $\sh{F}$ of finite type, the following conditions are equivalent: \emph{a)} $\sh{F}$ is a torsion sheaf; \emph{b)} $\sh{F}_x=0$y \emph{c)} $\Supp(\sh{F})\neq X$.
+For every quasi-coherent $\OO_X$-module $\sh{F}$ of finite type, the following conditions are equivalent: \emph{(a)} $\sh{F}$ is a torsion sheaf; \emph{(b)} $\sh{F}_x=0$; \emph{(c)} $\Supp(\sh{F})\neq X$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.7.4.6}
-By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so \emph{a)} and \emph{b)} are equivalent; also, $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, \emph{b)} and \emph{c)} are equivalent.
+By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so (a) and (b) are equivalent; also, $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, (b) and (c) are equivalent.
 \end{proof}
 
 \begin{env}[7.4.7]
