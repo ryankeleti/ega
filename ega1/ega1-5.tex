@@ -151,16 +151,16 @@ We will see below that $\vphi$ is \emph{surjective}, so that
 \end{equation*}
 is an \emph{exact} sequence.
 We now prove, assuming that this is true, the proposition.
-Note that $\fk{R}=\Gamma(X,\sh{I})$ is an ideal whose square is zero in $A$, and thus a module over $A_0=A/\fk{R}$.
-By hypothesis, we have $X_0=\Spec(A)$, and, since the underlying spaces of $X_0$ and $X$ are identical, $\fk{R}=\Gamma(X_0,\sh{I})$;
-Additionally, since $\sh{I}^2=0$, $\sh{I}$ is a quasi-coherent $(\OO_X/\sh{I})$-module, so we have $\sh{I}\cong\wt{\fk{R}}$ and $\fk{R}_x=\sh{I}_x$ for all $x\in X_0$ \sref{1.1.4.1}.
+Note that $\fk{K}=\Gamma(X,\sh{I})$ is an ideal whose square is zero in $A$, and thus a module over $A_0=A/\fk{K}$.
+By hypothesis, we have $X_0=\Spec(A)$, and, since the underlying spaces of $X_0$ and $X$ are identical, $\fk{K}=\Gamma(X_0,\sh{I})$;
+Additionally, since $\sh{I}^2=0$, $\sh{I}$ is a quasi-coherent $(\OO_X/\sh{I})$-module, so we have $\sh{I}\cong\wt{\fk{K}}$ and $\fk{K}_x=\sh{I}_x$ for all $x\in X_0$ \sref{1.1.4.1}.
 With this in mind, let $X'=\Spec(A)$, and consider the morphism $f=(\psi,\theta):X\to X'$ of preschemes that corresponds to the identity map $A\to\Gamma(X,\OO_X)$ \sref{1.2.2.4}.
 For every affine open subset $V$ of $X$, the diagram
 \[
   \xymatrix{
     A \ar[r] \ar[d]
     & \Gamma(V,\OO_X|V) \ar[d]\\
-    A_0=A/\fk{R} \ar[r]
+    A_0=A/\fk{K} \ar[r]
     & \Gamma(V,\OO_{X_0}|V)
   }
 \]
@@ -175,8 +175,8 @@ is commutative, whence the diagram
 \]
 is also commutative, $X'_0$ being the closed subprescheme of $X'$ defined by the quasi-coherent sheaf of ideals $\wt{R}$, and $j$ and $j'$ being the canonical injection morphisms.
 But since $X_0$ is affine, $f_0$ is an isomorphism, and since the underlying continuous maps of $j$ and $j'$ are the identity maps, we see straight away that $\psi:X\to X'$ is a homeomorphism.
-Furthermore, the relation $\fk{R}_x=\sh{I}_x$ shows that the restriction of $\theta^\sharp:\psi^*(\OO_{X'})\to\OO_X$ is an \emph{isomorphism} from $\psi^*(\wt{\fk{R}})$ to $\sh{I}$;
-additionally, by passing to the quotients, $\theta^\sharp$ gives an \emph{isomorphism} $\psi^*(\OO_X/\wt{\fk{R}})\to\OO_X/\sh{I}$, because $f_0$ is an isomorphism;
+Furthermore, the relation $\fk{K}_x=\sh{I}_x$ shows that the restriction of $\theta^\sharp:\psi^*(\OO_{X'})\to\OO_X$ is an \emph{isomorphism} from $\psi^*(\wt{\fk{K}})$ to $\sh{I}$;
+additionally, by passing to the quotients, $\theta^\sharp$ gives an \emph{isomorphism} $\psi^*(\OO_X/\wt{\fk{K}})\to\OO_X/\sh{I}$, because $f_0$ is an isomorphism;
 we thus immediately conclude, by the \unsure{lemma of 5} (M,~I,~1.1), that $\theta^\sharp$ is itself an isomorphism, and thus that $f$ is an \emph{isomorphism}, and hence $X$ is affine.
 So everything relies on proving the exactitude of \hyperref[1.5.1.9]{(5.1.9.1)}, which will follow from showing that $\HH^1(X,\sh{I})=0$.
 \oldpage[I]{131}
