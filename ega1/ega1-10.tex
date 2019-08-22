@@ -872,6 +872,86 @@ If $u_{/X'}$ is a monomorphism (resp. an epimorphism), then we have $v_{/X'}=0$ 
 \subsection{Extension of morphisms to completions}
 \label{subsection-extension-of-morphisms-to-completions}
 
+\begin{env}[10.9.1]
+\label{1.10.9.1}
+Let $X$ and $Y$ be two locally Noetherian (usual) preschemes, $f:X\to Y$ a morphism, $X'$ (resp. $Y'$) a closed subset of the underlying space $X$ (resp. $Y$), such that $f(X')\subset Y'$.
+Let $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of $\OO_X$ (resp. $\OO_Y$) such that the support of $\OO_X/\sh{J}$ (resp. $\OO_Y/\sh{K}$) is $X'$ (resp. $Y'$) and $f^*(\sh{K})\OO_X\subset\sh{J}$; we note that there always exist such sheaves of ideals, since for example, we can take $\sh{J}$ to be the largest sheaf of ideals of $\OO_X$ defining a subprescheme of $X$ with underlying space $X'$ \sref{1.5.2.1}, and the hypothesis $f(X')\subset Y'$ implies that $f^*(\sh{K})\OO_X\subset\sh{J}$ \sref{1.5.2.4}.
+For every integer $n>0$ we have $f^*(\sh{K}^n)\OO_X\subset\sh{J}^n$ \sref[0]{0.4.3.5}; as a result \sref{1.4.4.6}, if we set $X_n'=(X',\OO_X/\sh{J}^{n+1})$ and $Y_n'=(Y',\OO_Y/\sh{K}^{n+1})$, then $f$ induces a morphism $f_n:X_n'\to Y_n'$, and it is immediate that the $f_n$ form an inductive system.
+We denote its inductive limit \sref{1.10.6.8} by $\wh{f}:X_{/X'}\to Y_{/Y'}$, and we say (by abuse of language) that $\wh{f}$ is the \emph{extension of $f$ to the completions of $X$ and $Y$ along $X'$ and $Y'$}.
+It is immediate to check that this morphism does not depend on the choice of sheaves of ideals $\sh{J}$ and $\sh{K}$ satisfying the above conditions.
+It suffices to see that when $X$ and $Y$ are Noetherian affine schemes with rings $A$ and $B$; then $\sh{J}=\wt{\fk{J}}$ and $\sh{K}=\wt{\fk{K}}$, where $\fk{J}$ (resp. $\fk{K}$) is an ideal of $A$ (resp. $B$), $f$ corresponds to a ring homomorphism $\vphi:B\to A$ such that $\vphi(\fk{K})\subset\fk{J}$ (\sref{1.4.4.6} and \sref{1.1.7.4}); \emph{$\wh{f}$ is then the morphism corresponding \sref{1.10.2.2} to the continuous homomorphism $\wh{\vphi}:\wh{B}\to\wh{A}$}, where $\wh{A}$ (resp. $\wh{B}$) is the separated completion of $A$ (resp. $B$) with respect to the $\fk{J}$-pre-adic (resp. $\fk{K}$-pre-adic) topology \sref{1.10.6.8}; we know that if we replace $\sh{J}$ by another
+\oldpage[I]{199}
+sheaf of ideals $\sh{J}'=\wt{\fk{J}'}$ such that the support of $\OO_X/\sh{J}'$ is $X'$, then the $\fk{J}$-pre-adic and $\fk{J}'$-pre-adic topologies on $A$ are the same \sref{1.10.82}.
+
+We note that by definition the continuous map $X'\to Y'$ of the underlying spaces of $X_{/X'}$ and $Y_{/Y'}$ correspondign to $\wh{f}$ is none other than the restriction to $X'$ of $f$.
+\end{env}
+
+\begin{env}[10.9.2]
+\label{1.10.9.2}
+It follows immediately from the above definition that the diagram of morphisms of ringed spaces
+\[
+  \xymatrix{
+    \wh{X}\ar[r]^{\wh{f}}\ar[d]_{i_X} &
+    \wh{Y}\ar[d]^{i_Y}\\
+    X\ar[r]^f &
+    Y
+  }
+\]
+is commutative, the vertical arrows being the canonical morphisms \sref{1.10.8.7}.
+\end{env}
+
+\begin{env}[10.9.3]
+\label{1.10.9.3}
+Let $Z$ be a third prescheme, $g:Y\to Z$ a morphism, and $Z'$ a closed subset of $Z$ such that $g(Y')\subset Z'$.
+If $\wh{g}$ denotes the completion of the morphism $g$ along $Y'$ and $Z'$, then it immediately follows from \sref{1.10.9.1} that we have $(g\circ f)^\wedge=\wh{g}\circ\wh{f}$.
+\end{env}
+
+\begin{prop}[10.9.4]
+\label{1.10.9.4}
+Let $X$ and $Y$ be two locally Noetherian $S$-preschemes, $Y$ being of finite type over $S$.
+Let $f$ and $g$ be two $S$-morphisms from $X$ to $Y$ such that $f(X')\subset Y'$ and $g(X')\subset Y'$.
+For $\wh{f}=\wh{g}$ to hold, it is necessary and sufficient for $f$ and $g$ to coincide on a neighborhood of $X'$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.9.4}
+The condition is evidently sufficient (without the finiteness hypothesis on $Y$).
+To see that it is necessary, we remark first that the hypothesis $\wh{f}=\wh{g}$ implies that $f(x)=g(x)$ for all $x\in X'$.
+On the other hand, the question being local, we can assume that $X$ and $Y$ are affine open neighborhoods of $x$ and $y=f(x)=g(x)$ respectively, with Noetherian rings, that $S$ is affine, and that $\Gamma(Y,\OO_Y)$ is a $\Gamma(S,\OO_S)$-algebra of finite type \sref{1.6.3.3}.
+Then $f$ and $g$ correspond to two $\Gamma(S,\OO_S)$-homomorphisms $\rho$ and $\sigma$ from $\Gamma(Y,\OO_Y)$ to $\Gamma(X,\OO_X)$ \sref{1.1.7.3}, and by hypotheseis, the extensions by continuity of these homomorphisms to the separated completion of $\Gamma(Y,\OO_Y)$ are the same.
+We conclude from Proposition \sref{1.10.8.11} that for every section $s\in\Gamma(Y,\OO_Y)$, the sections $\rho(s)$ and $\sigma(s)$ coincide on a neighborhood of $X'$ (depending on $s$); as $\Gamma(Y,\OO_Y)$ is an algebra of finite type over $\Gamma(S,\OO_S)$, we have that there exists a neighborhood $V$ of $X'$ such that $\rho(s)$ and $\sigma(s)$ coincide on $V$ for \emph{every} section $s\in\Gamma(Y,\OO_Y)$.
+If $h\in\Gamma(X,\OO_X)$ is such that $D(h)$ is a neighborhood of $x$ contained in $V$, then we conclude from the above and from Theorem \sref{1.1.4.1}[d] that $f$ and $g$ coincide on $D(h)$.
+\end{proof}
+
+\begin{prop}[10.9.5]
+\label{1.10.9.5}
+Under the hypotheses of \sref{1.10.9.1}, for every coherent $\OO_Y$-module $\sh{G}$, there exists a canonical functorial isomorphism of $(\OO_X)_{/X'}$-modules
+\[
+  (f^*(\sh{G}))_{/X'}\isoto\wh{f}^*(\sh{G}_{/Y'}).
+\]
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.9.5}
+If we canonically identify $(f^*(\sh{G}))_{/X'}$ with $i_X^*(f^*(\sh{G}))$ and $\wh{f}^*(\sh{G}_{/Y'})$ with $\wh{f}^*(i_Y^*(\sh{G}))$ \sref{1.10.8.8}, then the proposition immediately follows from the commutativity of the diagram in \sref{1.10.9.2}.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Application to coherent sheaves on formal affine schemes}
 \label{subsection-application-to-coherent-sheaves-on-formal-affine-schemes}
 
@@ -884,23 +964,23 @@ If $u_{/X'}$ is a monomorphism (resp. an epimorphism), then we have $v_{/X'}=0$ 
 \oldpage[I]{206}
 \begin{env}[10.12.1]
 \label{1.10.12.1}
-Let $\fk{X}$ and $\fk{G}$ be two \emph{locally Noetherian} formal preschemes;
-we say that a morphism $f:\fk{X}\to\fk{G}$ is \emph{adic} if there exists an ideal of definition $\sh{J}$ of $\fk{G}$ such that $\sh{K}=f^*(\sh{J}\OO_\fk{X}$ is an ideal of definition of $\fk{X}$;
-we then also say that $\fk{X}$ is an \emph{adic $\fk{G}$-prescheme} (for $f$).
-Whenever this is the case, for \emph{every} ideal of definition $\sh{J}_1$ of $\fk{G}$, $\sh{K}_1=f^*(\sh{J}_1)\OO_\fk{X}$ is an ideal of definition of $\fk{X}$.
-Indeed, the question being local, we can assume that $\fk{X}$ and $\fk{G}$ are Noetherian and affine;
+Let $\fk{X}$ and $\fk{S}$ be two \emph{locally Noetherian} formal preschemes;
+we say that a morphism $f:\fk{X}\to\fk{S}$ is \emph{adic} if there exists an ideal of definition $\sh{J}$ of $\fk{S}$ such that $\sh{K}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$;
+we then also say that $\fk{X}$ is an \emph{adic $\fk{S}$-prescheme} (for $f$).
+Whenever this is the case, for \emph{every} ideal of definition $\sh{J}_1$ of $\fk{S}$, $\sh{K}_1=f^*(\sh{J}_1)\OO_\fk{X}$ is an ideal of definition of $\fk{X}$.
+Indeed, the question being local, we can assume that $\fk{X}$ and $\fk{S}$ are Noetherian and affine;
 there then exists a whole number $n$ such that $\sh{J}^n\subset\sh{J}_1$ and $\sh{J}_1^n\subset\sh{J}$ (\sref{1.10.3.6} and \sref[0]{0.7.1.4}), whence $\sh{K}^n\subset\sh{K}_1$ and $\sh{K}_1^n\subset\sh{K}$.
 The first of these equalities shows that $\sh{K}_1=\fk{K}_1^\Delta$, where $\fk{K}_1$ is an open ideal of $A=\Gamma(\fk{X},\OO_\fk{X})$, and the second shows that $\fk{K}_1$ is an ideal of definition of $A$ \sref[0]{0.7.1.4}, whence our claim.
 \end{env}
 
-It follows immediately from the above that, if $\fk{X}$ and $\fk{Y}$ are adic $\fk{G}$-preschemes, then \emph{every $\fk{G}$-morphism $u:\fk{X}\to\fk{Y}$ is adic}:
-indeed, if $f:\fk{X}\to\fk{G}$ and $g:\fk{Y}\to\fk{G}$ are the structure morphisms, and $\sh{J}$ is an ideal of definition of $\fk{G}$, then we have $f=g\circ u$, and so $u^*(g^*(\sh{J})\OO_\fk{Y})\OO_\fk{X}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$, and, by hypothesis, $g^*(\sh{J})\OO_\fk{Y}$ is an ideal of definition of $\fk{Y}$.
+It follows immediately from the above that, if $\fk{X}$ and $\fk{Y}$ are adic $\fk{S}$-preschemes, then \emph{every $\fk{S}$-morphism $u:\fk{X}\to\fk{Y}$ is adic}:
+indeed, if $f:\fk{X}\to\fk{S}$ and $g:\fk{Y}\to\fk{S}$ are the structure morphisms, and $\sh{J}$ is an ideal of definition of $\fk{S}$, then we have $f=g\circ u$, and so $u^*(g^*(\sh{J})\OO_\fk{Y})\OO_\fk{X}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$, and, by hypothesis, $g^*(\sh{J})\OO_\fk{Y}$ is an ideal of definition of $\fk{Y}$.
 
 \begin{env}[10.12.2]
 \label{1.10.12.2}
-In what follows, we suppose that we have some fixed locally Noetherian formal prescheme $\fk{G}$, and some ideal of definition $\sh{J}$ of $\fk{G}$;
-we set $S_n=(\fk{G},\OO_\fk{G}/\sh{J}^{n+1})$.
-The (locally Noetherian) adic $\fk{G}$-preschemes clearly form a \emph{category}.
+In what follows, we suppose that we have some fixed locally Noetherian formal prescheme $\fk{S}$, and some ideal of definition $\sh{J}$ of $\fk{S}$;
+we set $S_n=(\fk{S},\OO_\fk{S}/\sh{J}^{n+1})$.
+The (locally Noetherian) adic $\fk{S}$-preschemes clearly form a \emph{category}.
 We say that an inductive system $(X_n)$ of locally Noetherian (usual) $S_n$-preschemes is an \emph{adic inductive $(S_n)$-system} if the structure morphisms $f_n:X_n\to S_n$ are such that, for $m\leqslant n$, the diagrams
 \[
   \xymatrix{
@@ -918,15 +998,15 @@ With this in mind:
 
 \begin{thm}[10.12.3]
 \label{1.10.12.3}
-There is a canonical equivalence between the category of adic $\fk{G}$-preschemes and the category of adic inductive $(S_n)$-systems.
+There is a canonical equivalence between the category of adic $\fk{S}$-preschemes and the category of adic inductive $(S_n)$-systems.
 \end{thm}
 
 The equivalence in question is obtained in the following way:
-if $\fk{X}$ is an adic $\fk{G}$-prescheme, and $f:\fk{X}\to\fk{G}$ is the structure morphism, then $\sh{K}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$, and we associate to $\fk{X}$ the inductive system of the $X_n=(\fk{X},\OO_\fk{X}/\sh{K}^{n+1})$, with the stucure morphism $f_n:X_n\to S_n$ corresponding to $f$ \sref{1.10.5.6}.
+if $\fk{X}$ is an adic $\fk{S}$-prescheme, and $f:\fk{X}\to\fk{S}$ is the structure morphism, then $\sh{K}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$, and we associate to $\fk{X}$ the inductive system of the $X_n=(\fk{X},\OO_\fk{X}/\sh{K}^{n+1})$, with the stucure morphism $f_n:X_n\to S_n$ corresponding to $f$ \sref{1.10.5.6}.
 We first show that $(X_n)$ is an \emph{adic inductive system}:
 if $f=(\psi,\theta)$, we have $\psi^*(\sh{J})\OO_\fk{X}=\sh{K}$, so $\psi^*(\sh{J}^n)\OO_\fk{X}=\sh{K}^n$ for all $n$, and (by exactness of the functor $\psi^*$) $\sh{K}^{m+1}/\sh{K}^{n+1}=\psi^*(\sh{J}^{m+1}/\sh{J}^{n+1})(\OO_\fk{X}/\sh{K}^{n+1})$ for $m\leqslant n$;
 our conclusion thus follows from \sref{1.4.4.5}.
-Furthermore, it can be immediately verified that a $\fk{G}$-morphism $u:\fk{X}\to\fk{Y}$ of adic $\fk{G}$-preschemes corresponds (with the obvious notation)
+Furthermore, it can be immediately verified that a $\fk{S}$-morphism $u:\fk{X}\to\fk{Y}$ of adic $\fk{S}$-preschemes corresponds (with the obvious notation)
 \oldpage[I]{207}
 to an inductive system of $S_n$-morphisms $u_n:X_n\to Y_n$ such that $u_m$ is identified with $(u_n)_{(S_m)}$ for $m\leqslant n$.
 
@@ -937,14 +1017,14 @@ The fact that this equivalence is well defined will follow from the more-precise
 Let $(X_n)$ be an inductive system of $S_n$-preschemes;
 suppose that the structure morphisms $f_n:X_n\to S_n$ are such that the diagrams in \hyperref[1.10.12.2]{(10.12.2.1)} commute and identify $X_m$ with $X_n\times_{S_n}S_m$ for $m\leqslant n$.
 Then the inductive system $(X_n)$ satisfies conditions \emph{(b)} and \emph{(c)} of \sref{1.10.6.3};
-let $\fk{X}$ be the inductive limit, and $f:\fk{X}\to\fk{G}$ the morphism given by the inductive limit of the inductive system $(f_n)$.
+let $\fk{X}$ be the inductive limit, and $f:\fk{X}\to\fk{S}$ the morphism given by the inductive limit of the inductive system $(f_n)$.
 Then, if $X_0$ is locally Noetherian, $\fk{X}$ is locally Noetherian, and $f$ is an adic morphism.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.12.3.1}
 Since the sheaf of ideals of $\OO_{S_n}$ that defines the subprescheme $S_m$ of $S_n$ is nilpotent, so too, by \sref{1.4.4.5}, is the sheaf of ideals of $\OO_{X_n}$ that defines the subprescheme $X_m$ of $X_n$, so the conditions of \sref{1.10.6.3} are satisfied.
-The question being local on $\fk{X}$ and $\fk{G}$, we can assume that $\fk{G}=\Spf(A)$, $\sh{J}=\fk{J}^\Delta$ (with $A$ a Noetherian $\fk{J}$-adic ring), and $X_n=\Spec(B_n)$;
+The question being local on $\fk{X}$ and $\fk{S}$, we can assume that $\fk{S}=\Spf(A)$, $\sh{J}=\fk{J}^\Delta$ (with $A$ a Noetherian $\fk{J}$-adic ring), and $X_n=\Spec(B_n)$;
 if $A_n=A/\fk{J}^{n+1}$, then the hypothesis implies that $B_0$ is Noetherian, and if we set $\fk{J}_n=\fk{J}/\fk{J}^{n+1}$, then $B_m=B_n/\fk{J}_n^{m+1}B_n$.
 The kernel of $B_n\to B_0$ is thus $\fk{K}_n=\fk{J}_nB_n$, and the kernel of $B_n\to B_m$ is $\fk{K}_n^{m+1}$ for $m\leqslant n$;
 further, since $A_1$ is Noetherian, $\fk{J}_1$ is of finite type over $A_1$, and so $\fk{K}_1=\fk{K}_1/\fk{K}_1^2$ is of finite type over $B_1$, and \emph{a fortiori} of finite type over $B_0=B_1/\fk{K}_1$;
@@ -960,9 +1040,9 @@ If $\sh{K}=\fk{K}^\Delta$, the equality $f^*(\sh{J})\OO_\fk{X}=\sh{K}$ then foll
 
 \begin{env}[10.12.3.2]
 \label{1.10.12.3.2}
-The above equivalence gives, for adic $\fk{G}$-preschemes $\fk{X}$ and $\fk{Y}$, a \emph{canonical bijection}
+The above equivalence gives, for adic $\fk{S}$-preschemes $\fk{X}$ and $\fk{Y}$, a \emph{canonical bijection}
 \[
-    \Hom_\fk{G}(\fk{X},\fk{Y}) \xrightarrow{\sim} \varprojlim_n\Hom_{S_n}(X_n,Y_n)
+    \Hom_\fk{S}(\fk{X},\fk{Y}) \xrightarrow{\sim} \varprojlim_n\Hom_{S_n}(X_n,Y_n)
 \]
 where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\leqslant n$
 \end{env}
@@ -978,21 +1058,21 @@ where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\
 
 \begin{defn}[10.15.1]
 \label{1.10.15.1}
-Let $\fk{G}$ be a formal prescheme, $\fk{X}$ a formal $\fk{G}$-prescheme, and $f:\fk{X}\to\fk{G}$ the structure morphism.
-We define the diagonal morphism $\Delta_{\fk{X}|\fk{G}}:\fk{X}\to\fk{X}\times_\fk{G}\fk{X}$ (also denoted by $\Delta_\fk{X}$) to be the morphism $(1_\fk{X},1_\fk{X})_\fk{G}$.
-We say that $\fk{X}$ is separated over $\fk{G}$, or is a formal $\fk{G}$-scheme, or that $f$ is a separated morphism, if the image of the underlying space of $\fk{X}$ under $\Delta_\fk{X}$ is a closed subset of the underlying space of $\fk{X}\times_\fk{G}\fk{X}$.
+Let $\fk{S}$ be a formal prescheme, $\fk{X}$ a formal $\fk{S}$-prescheme, and $f:\fk{X}\to\fk{S}$ the structure morphism.
+We define the diagonal morphism $\Delta_{\fk{X}|\fk{S}}:\fk{X}\to\fk{X}\times_\fk{S}\fk{X}$ (also denoted by $\Delta_\fk{X}$) to be the morphism $(1_\fk{X},1_\fk{X})_\fk{S}$.
+We say that $\fk{X}$ is separated over $\fk{S}$, or is a formal $\fk{S}$-scheme, or that $f$ is a separated morphism, if the image of the underlying space of $\fk{X}$ under $\Delta_\fk{X}$ is a closed subset of the underlying space of $\fk{X}\times_\fk{S}\fk{X}$.
 We say that a formal prescheme $\fk{X}$ is separated, or is a formal schemes, if it is separated over $\bb{Z}$.
 \end{defn}
 
 \begin{prop}[10.15.2]
 \label{1.10.15.2}
-Suppose that the formal preschemes $\fk{G}$ and $\fk{X}$ are inductive limits of sequences $(S_n)$ and $(X_n)$ (respectively) of usual preschemes, and that the morphism $f:\fk{X}\to\fk{G}$ is the inductive limit of a sequence of morphisms $f_n:X_n\to S_n$.
+Suppose that the formal preschemes $\fk{S}$ and $\fk{X}$ are inductive limits of sequences $(S_n)$ and $(X_n)$ (respectively) of usual preschemes, and that the morphism $f:\fk{X}\to\fk{S}$ is the inductive limit of a sequence of morphisms $f_n:X_n\to S_n$.
 For $f$ to be separated, it is necessary and sufficient for the morphism $f_0:X_0\to S_0$ to be separated.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.15.2}
-Indeed, $\Delta_{\fk{X}|\fk{G}}$ is then the inductive limit of the sequence of morphisms $\Delta_{X_n|S_n}$ \sref{1.10.7.4}, and the image of the underlying space of $\fk{X}$ (resp. of $\fk{X}\times_\fk{G}\fk{X}$ under $\Delta_{\fk{X}|\fk{G}}$) is identical to the image of the underlying space of $X_0$ (resp. of $X_0\times_{S_0}X_0$) under $\Delta_{X_0|S_0}$;
+Indeed, $\Delta_{\fk{X}|\fk{S}}$ is then the inductive limit of the sequence of morphisms $\Delta_{X_n|S_n}$ \sref{1.10.7.4}, and the image of the underlying space of $\fk{X}$ (resp. of $\fk{X}\times_\fk{S}\fk{X}$ under $\Delta_{\fk{X}|\fk{S}}$) is identical to the image of the underlying space of $X_0$ (resp. of $X_0\times_{S_0}X_0$) under $\Delta_{X_0|S_0}$;
 whence the conclusion.
 \end{proof}
 
@@ -1001,8 +1081,8 @@ whence the conclusion.
 Suppose that all the formal preschemes (\emph{resp.} morphisms of formal preschemes) in what follows are inductive limits of sequences of usual preschemes (\emph{resp.} of morphisms of usual preschemes).
 \begin{enumerate}[label=\emph{(\roman*)}]
     \item The composition of two separated morphisms is separated.
-    \item If $f:\fk{X}\to\fk{X}'$ and $g:\fk{Y}\to\fk{Y}'$ are separated $\fk{G}$-morphisms, then $f\times_\fk{G}g$ is separated.
-    \item If $f:\fk{X}\to\fk{Y}$ is a separated $\fk{G}$-morphism, then the $\fk{G}'$-morphism $f_{(\fk{G}')}$ is separated for every extension $\fk{G}'\to\fk{G}$ of the base formal prescheme.
+    \item If $f:\fk{X}\to\fk{X}'$ and $g:\fk{Y}\to\fk{Y}'$ are separated $\fk{S}$-morphisms, then $f\times_\fk{S}g$ is separated.
+    \item If $f:\fk{X}\to\fk{Y}$ is a separated $\fk{S}$-morphism, then the $\fk{S}'$-morphism $f_{(\fk{S}')}$ is separated for every extension $\fk{S}'\to\fk{S}$ of the base formal prescheme.
     \item If the composition $g\circ f$ of two morphisms is separated, then $f$ is separated.
 \end{enumerate}
 \emph{(In the above, it is implicit that if the same formal prescheme $\fk{Z}$ is mentioned more than once in the same proposition, we consider it as the inductive limit of the \emph{same} sequence $(Z_n)$ of usual preschemes wherever it is mentioned, and the morphisms from $\fk{Z}$ to another formal prescheme (resp. from a formal prescheme to $\fk{Z}$) as inductive limits of morphisms from $Z_n$ to some usual preschemes (resp. from some usual preschemes to $Z_n$)).}
@@ -1010,7 +1090,7 @@ Suppose that all the formal preschemes (\emph{resp.} morphisms of formal presche
 
 \begin{proof}
 \label{proof-1.10.15.3}
-With the notation of \sref{1.10.15.2}, we in fact have $(g\circ f)_0=g_0\circ f_0$, and $(f\times_\fk{G}g)_0=f_0\times_{S_0}g_0$;
+With the notation of \sref{1.10.15.2}, we in fact have $(g\circ f)_0=g_0\circ f_0$, and $(f\times_\fk{S}g)_0=f_0\times_{S_0}g_0$;
 the claims of \sref{1.10.15.3} are then immediate consequences of \sref{1.10.15.2} and the corresponding claims in \sref{1.5.5.1} for usual preschemes.
 \end{proof}
 
@@ -1022,27 +1102,27 @@ A similar argument also shows that every \emph{Noetherian} formal affine scheme 
 
 \begin{prop}[10.15.4]
 \label{1.10.15.4}
-Let $\fk{G}$ be a locally Noetherian formal prescheme, and $\fk{X}$ and $\fk{Y}$ locally Noetherian formal $\fk{G}$-preschemes such that $\fk{X}$ or $\fk{Y}$ is of finite type over $\fk{G}$ (so that $\fk{X}\times_\fk{G}\fk{Y}$ is locally Noetherian) and such that $\fk{Y}$ is separated over $\fk{G}$.
-Let $f:\fk{X}\to\fk{Y}$ be a $\fk{G}$-morphism;
-then the graph morphism $\Gamma_f(1_\fk{X},f)_\fk{G}:\fk{X}\to\fk{X}\times_\fk{G}\fk{Y}$ is a closed immersion.
+Let $\fk{S}$ be a locally Noetherian formal prescheme, and $\fk{X}$ and $\fk{Y}$ locally Noetherian formal $\fk{S}$-preschemes such that $\fk{X}$ or $\fk{Y}$ is of finite type over $\fk{S}$ (so that $\fk{X}\times_\fk{S}\fk{Y}$ is locally Noetherian) and such that $\fk{Y}$ is separated over $\fk{S}$.
+Let $f:\fk{X}\to\fk{Y}$ be a $\fk{S}$-morphism;
+then the graph morphism $\Gamma_f(1_\fk{X},f)_\fk{S}:\fk{X}\to\fk{X}\times_\fk{S}\fk{Y}$ is a closed immersion.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.15.4}
-We can assume that $\fk{G}$ is the inductive limit of a sequence $(S_n)$ of locally Noetherian preschemes, $\fk{X}$ (resp. $\fk{Y}$) the inductive limit of a sequence $(X_n)$ (resp. $(Y_n)$) of $S_n$-preschemes, and $f$ the inductive limit of a sequence $(f_n:X_n\to Y_n)$ of $S_n$-morphisms;
-then $\fk{X}\times_\fk{G}\fk{Y}$ is the inductive limit of the sequence $(X_n\times_{S_n}Y_n)$, and $\Gamma_f$ the inductive limit of the sequence $(\Gamma_{f_n})$ \sref{1.10.7.4};
+We can assume that $\fk{S}$ is the inductive limit of a sequence $(S_n)$ of locally Noetherian preschemes, $\fk{X}$ (resp. $\fk{Y}$) the inductive limit of a sequence $(X_n)$ (resp. $(Y_n)$) of $S_n$-preschemes, and $f$ the inductive limit of a sequence $(f_n:X_n\to Y_n)$ of $S_n$-morphisms;
+then $\fk{X}\times_\fk{S}\fk{Y}$ is the inductive limit of the sequence $(X_n\times_{S_n}Y_n)$, and $\Gamma_f$ the inductive limit of the sequence $(\Gamma_{f_n})$ \sref{1.10.7.4};
 by hypothesis, $Y_0$ is separated over $S_0$ \sref{1.10.15.2}, so the space $\Gamma_{f_0}(X_0)$ is a closed subspace of $X_0\times_{S_0}Y_0$;
-since the underlying spaces of $\fk{X}\times_\fk{G}\fk{Y}$ (resp. $\Gamma_f(\fk{X})$) and $X_0\times_{S_0}Y_0$ (resp. $\Gamma_{f_0}(X_0)$) are the same, we already see that $\Gamma_f(\fk{X})$ is a \emph{closed} subspace of $\fk{X}\times_\fk{G}\fk{Y}$.
-Now note that, when $(U,V)$ runs over the set of pairs consisting of a Noetherian formal affine open subset $U$ (resp. $V$) of $\fk{X}$ (resp $\fk{Y}$) such that $f(U)\subset V$, the open subsets $U\times_S V$ form a cover of $\Gamma_f(\fk{X})$ in $\fk{X}\times_\fk{G}\fk{Y}$, and if $f_U:U\to V$ is the restriction of $f$ to $U$, then $\Gamma_{f_U}:U\to U\times_\fk{G}V$ is the restriction of $\Gamma_f$ to $U$.
-If we show that $\Gamma_{f_U}$ is a closed immersion, then $\Gamma_f$ will be a closed immersion \sref{1.10.14.4}, or, in other words, we are led to consider the case where $\fk{G}=\Spf(A)$, $\fk{X}=\Spf(B)$, and $\fk{Y}=\Spf(C)$ are affine (with $A$, $B$, and $C$ Noetherian adics), with $f$ corresponding to a continuous $A$-homomorphism $\vphi:C\to B$;
+since the underlying spaces of $\fk{X}\times_\fk{S}\fk{Y}$ (resp. $\Gamma_f(\fk{X})$) and $X_0\times_{S_0}Y_0$ (resp. $\Gamma_{f_0}(X_0)$) are the same, we already see that $\Gamma_f(\fk{X})$ is a \emph{closed} subspace of $\fk{X}\times_\fk{S}\fk{Y}$.
+Now note that, when $(U,V)$ runs over the set of pairs consisting of a Noetherian formal affine open subset $U$ (resp. $V$) of $\fk{X}$ (resp $\fk{Y}$) such that $f(U)\subset V$, the open subsets $U\times_S V$ form a cover of $\Gamma_f(\fk{X})$ in $\fk{X}\times_\fk{S}\fk{Y}$, and if $f_U:U\to V$ is the restriction of $f$ to $U$, then $\Gamma_{f_U}:U\to U\times_\fk{S}V$ is the restriction of $\Gamma_f$ to $U$.
+If we show that $\Gamma_{f_U}$ is a closed immersion, then $\Gamma_f$ will be a closed immersion \sref{1.10.14.4}, or, in other words, we are led to consider the case where $\fk{S}=\Spf(A)$, $\fk{X}=\Spf(B)$, and $\fk{Y}=\Spf(C)$ are affine (with $A$, $B$, and $C$ Noetherian adics), with $f$ corresponding to a continuous $A$-homomorphism $\vphi:C\to B$;
 $\Gamma_f$ then corresponds to the unique continuous homomorphism $\omega: B\wh{\otimes}_A C\to B$ which, when composed with the canonical homomorphisms $B\to B\wh{\otimes}_A C$ and $C\to B\wh{\otimes}_A C$, gives (respectively) the identity and $\vphi$.
 But it is clear that $\omega$ is \emph{surjective}, whence our claim.
 \end{proof}
 
 \begin{cor}[10.15.5]
 \label{1.10.15.5}
-Let $\fk{G}$ be a locally Noetherian formal prescheme, and $\fk{X}$ a $\fk{G}$-prescheme of finite type;
-for $\fk{X}$ to be separated over $\fk{G}$, it is necessary and sufficient for the diagonal morphism $\fk{X}\to\fk{X}\times_\fk{G}\fk{X}$ to be a closed immersion.
+Let $\fk{S}$ be a locally Noetherian formal prescheme, and $\fk{X}$ a $\fk{S}$-prescheme of finite type;
+for $\fk{X}$ to be separated over $\fk{S}$, it is necessary and sufficient for the diagonal morphism $\fk{X}\to\fk{X}\times_\fk{S}\fk{X}$ to be a closed immersion.
 \end{cor}
 
 \begin{prop}[10.15.6]
