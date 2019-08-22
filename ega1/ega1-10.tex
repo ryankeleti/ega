@@ -752,7 +752,7 @@ By taking tensor products, for every coherent $\OO_X$-module $\sh{F}$, the canon
   0\to\Gamma(U\cap X',\sh{F}_{/X'}')\to\Gamma(U\cap X',\sh{F}_{/X'})\to\Gamma(U\cap X',\sh{F}_{/X'}'')\to 0
 \]
 is exact.
-We have that $\sh{F}|U=\wt{M}$, $\sh{F}'|U=\wt{M'}$, $\sh{F}''|U=\wt{M''}$, where $M$, $M'$, $M''$ are three $A$-modules of finite type such that the sequence $0\to M'\to M\to M''\to 0$ is exact (\sref{1.1.5.1} and \sref{1.1.3.11}); let $\sh{J}\in\Phi$ are let $\fk{J}$ be an ideal of $A$ such that $\sh{J}|U=\wt{\fk{J}}$.
+We have that $\sh{F}|U=\wt{M}$, $\sh{F}'|U=\wt{M'}$, $\sh{F}''|U=\wt{M''}$, where $M$, $M'$, $M''$ are three $A$-modules of finite type such that the sequence $0\to M'\to M\to M''\to 0$ is exact (\sref{1.1.5.1} and \sref{1.1.3.11}); let $\sh{J}\in\Phi$ and let $\fk{J}$ be an ideal of $A$ such that $\sh{J}|U=\wt{\fk{J}}$.
 We then have
 \[
   \Gamma(U\cap X',\sh{F}\otimes_{\OO_X}\OO_X/\sh{J}^n)=M\otimes_A(A/\fk{J}^n)
@@ -763,7 +763,7 @@ We then have
 \]
 the separated completion of $M$ with respect to the $\fk{J}$-pre-adic topology, and similarly
 \[
-  \Gamma(U\cap X',\sh{F}_{/X'}')=\wh{M'}, \Gamma(U\cap X',\sh{F}_{/X'}'')=\wh{M''};
+  \Gamma(U\cap X',\sh{F}_{/X'}')=\wh{M'},\ \Gamma(U\cap X',\sh{F}_{/X'}'')=\wh{M''};
 \]
 our assertion then follows since $A$ is Noetherian, and the functor $\wh{M}$ in $M$ is exact on the category of $A$-modules of finite type \sref[0]{0.7.3.3}.
 \oldpage[I]{197}
@@ -813,6 +813,60 @@ If $\sh{F}$ and $\sh{G}$ are two coherent $\OO_X$-modules, then there exist cano
 \begin{proof}
 \label{proof-1.10.8.10}
 This follows from the canonical identification of $i^*(\sh{F})$ and of $\sh{F}_{/X'}$; the existence of the first isomorphism is then a valid result for all morphisms of ringed spaces (\textbf{0},~4.3.3.1), and the second is a valid result for all flat morphism \sref[0]{0.6.7.6}, by Corollary \sref{1.10.8.9}.
+\end{proof}
+
+\begin{prop}[10.8.11]
+\label{1.10.8.11}
+For every coherent $\OO_X$-module $\sh{F}$, the kernel of the canonical homomorphism $\Gamma(X,\sh{F})\to\Gamma(X',\sh{F}_{/X'})$ induced by $\sh{F}\to\sh{F}_{/X'}$ consists of the zero sections in a neighborhood of $X'$.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.8.11}
+It follows from the definition of $\sh{F}_{/X'}$ that the canonical image of such a section is zero.
+Conversely, if $s\in\Gamma(X,\sh{F})$ has a zero image in $\Gamma(X',\sh{F}_{/X'})$, then it suffices to see that every $x\in X'$ admits a neighborhood in $X$ in which $s$ is zero, and we can thus reduce to the case where $X=\Spec(A)$ is affine, $A$ Noetherian, $X'=V(\fk{J})$, where $\fk{J}$ is an ideal of $A$, and $\sh{F}=\wt{M}$, where $M$ is an $A$-module of finite type.
+Then $\Gamma(X',\sh{F}_{/X'})$ is the separated completion $\wh{M}$ of $M$ for the $\fk{J}$-pre-adic topology, and the homomorphism $\Gamma(X,\sh{F})\to\Gamma(X',\sh{F}_{/X'})$ is the canonical homomorphism $M\to\wh{M}$.
+We know \sref[0]{0.7.3.7} that the kernel of this homomorphism is the set of the $z\in M$ killed by an element of $1+\fk{J}$.
+So we have $(1+f)s=0$ for some $f\in\fk{J}$; for every $x\in X'$ we have $(1_x+f_x)s_x=0$, and as $1_x+f_x$ is invertible in $\OO_x$ ($\fk{J}_x\OO_x$ being contained in the maximal ideal of $\OO_x$), we have $s_x=0$, which proves the proposition.
+\end{proof}
+
+\begin{cor}[10.8.12]
+\label{1.10.8.12}
+The support of $\sh{F}_{/X'}$ is equal to $\Supp(\sh{F})\cap X'$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.8.12}
+It is clear that $\sh{F}_{/X'}$ is an $(\OO_X)_{/X'}$-module of finite type (\sref{1.10.8.8}[ii] and \sref[0]{0.5.2.4}),
+\oldpage[I]{198}
+so its support is closed \sref[0]{0.5.2.2} and evidently contained in $\Supp(\sh{F})\cap X'$.
+To show that it is equal to the latter set, we immediately reduce to proving that the relation $\Gamma(X',\sh{F}_{/X'})=0$ implies that $\Supp(\sh{F})\cap X'=\emp$; this follows from Proposition \sref{1.10.8.11} and from Theorem \sref{1.1.4.1}.
+\end{proof}
+
+\begin{cor}[10.8.13]
+\label{1.10.8.13}
+Let $u:\sh{F}\to\sh{G}$ be a homomorphism of coherent $\OO_X$-modules.
+For $u_{/X'}:\sh{F}_{/X'}\to\sh{G}_{/X'}$ to be zero, it is necessary and sufficient for $u$ to be zero on a neighborhood of $X'$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.8.13}
+By Proposition \sref{1.10.8.8}[ii], $u_{/X'}$ identifies with $i^*(u)$, so if we consider $u$ as a section over $X$ of the sheaf $\sh{H}=\shHom_{\OO_X}(\sh{F},\sh{G})$, then $u_{/X'}$ is the section over $X'$ of $i^*(\sh{H})=\sh{H}_{/X'}$ to which it canonically corresponds ((10.8.10.2) and \sref[0]{0.4.4.6}).
+It thus suffices to apply Proposition \sref{1.10.8.11} to the coherent $\OO_X$-module $\sh{H}$.
+\end{proof}
+
+\begin{cor}[10.8.14]
+\label{1.10.8.14}
+Let $u:\sh{F}\to\sh{G}$ be a homomorphism of coherent $\OO_X$-modules.
+For $u_{/X'}$ to be a monomorphism (resp. an epimorphism), it is necessary and sufficient for $u$ to be a monomorphism (resp. an epimorphism) on a neighborhood of $X'$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.8.14}
+Let $\sh{P}$ and $\sh{N}$ be the cokernel and kernel of $u$, such that we have the exact sequence $0\to\sh{N}\xrightarrow{v}\sh{F}\xrightarrow{u}\sh{G}\xrightarrow{w}\sh{P}\to 0$, hence \sref{1.10.8.8}[i] the exact sequence
+\[
+  0\to\sh{N}_{/X'}\xrightarrow{v_{/X'}}\sh{F}_{/X'}\xrightarrow{u_{/X'}}\sh{G}_{/X'}\xrightarrow{w_{/X'}}\sh{P}_{/X'}\to 0.
+\]
+If $u_{/X'}$ is a monomorphism (resp. an epimorphism), then we have $v_{/X'}=0$ (resp. $w_{/X'}=0$), so there exists a neighborhood of $X'$ on which $v=0$ (resp. $w=0$) by Corollary \sref{1.10.8.13}.
 \end{proof}
 
 \subsection{Extension of morphisms to completions}
