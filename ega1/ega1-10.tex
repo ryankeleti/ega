@@ -1132,12 +1132,34 @@ As the image of $j\otimes 1$ is the ideal $\fk{b}A$ of $A$, the image of $(j\oti
 \subsection{Coherent sheaves on formal preschemes}
 \label{subsection-coherent-sheaves-on-formal-preschemes}
 
+\begin{prop}[10.11.1]
+\label{1.10.11.1}
+If $\fk{X}$ is a locally Noetherian formal prescheme, then the sheaf of rings $\OO_\fk{X}$ is coherent and every sheaf of ideals of definition for $\fk{X}$ is coherent.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.11.1}
+The question is local, so we can reduce to the case of a Noetherian affine formal scheme, and the proposition follows from Propositions \sref{1.10.10.3} and \sref{1.10.10.5}.
+\end{proof}
+
+\begin{env}[10.11.2]
+\label{1.10.11.2}
+Let $\fk{X}$ be a locally Noetherian formal prescheme, $\sh{J}$ a sheaf of ideals of definition for $\fk{X}$, and $X_n$ the locally Noetherian (usual) prescheme $(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$, such that $\fk{X}$ is the \emph{inductive limit} of the sequence $(X_n)$ with respect to the canonical morphisms $u_{mn}:X_m\to X_n$ \sref{1.10.6.3}.
+With these notations:
+\end{env}
+
+\begin{thm}[10.11.3]
+\label{1.10.11.3}
+For an $\OO_\fk{X}$-module $\sh{F}$ to be coherent, it is necessary and sufficient for it to be isomorphic to a projective limit of a sequence $(\sh{F}_n)$, where $\sh{F}_n$ is a coherent $\OO_{X_n}$-module such that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leqslant n$ \sref{1.10.6.6}.
+The projective system $(\sh{F}_n)$ is then isomorphic to the system of the $u_n^*(\sh{F})=\sh{F}\otimes_{\OO_\fk{X}}\OO_{X_n}$, where $u_n$ is the canonical morphism $X_n\to\fk{X}$.
+\end{thm}
+
 \subsection{Adic morphisms of formal preschemes}
 \label{subsection-adic-morphisms-of-formal-preschemes}
 
-\oldpage[I]{206}
 \begin{env}[10.12.1]
 \label{1.10.12.1}
+\oldpage[I]{206}
 Let $\fk{X}$ and $\fk{S}$ be two \emph{locally Noetherian} formal preschemes;
 we say that a morphism $f:\fk{X}\to\fk{S}$ is \emph{adic} if there exists an ideal of definition $\sh{J}$ of $\fk{S}$ such that $\sh{K}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$;
 we then also say that $\fk{X}$ is an \emph{adic $\fk{S}$-prescheme} (for $f$).
