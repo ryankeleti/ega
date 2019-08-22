@@ -722,6 +722,99 @@ The first assertion then follows from Propositions \sref{1.10.5.4} and \sref{1.5
 If $\wh{X}_\red$ is Noetherian, then its underlying space $X'$ is as well, so the $X_n'=\Spec(\OO_X/\sh{J}^n)$ are Noetherian \sref{1.6.1.2} and so is $\wh{X}$ \sref{1.10.6.4}; the converse is immediate by Proposition \sref{1.6.1.2}.
 \end{proof}
 
+\begin{env}[10.8.7]
+\label{1.10.8.7}
+The canonical homomorphisms $\OO_X\to\OO_X/\sh{J}$ (for $\sh{J}\in\Phi$) form a projective system and give, by passing to the projective limit, a homomorphism of sheaves of rings $\theta:\OO_X\to\psi_*((\OO_X)_{/X'})=\varprojlim_\Phi(\OO_X/\sh{J})$, denoting by $\psi$ the canonical injection $X'\to X$ of the underlying spaces.
+We denote by $i$ (or $i_X$) the morphism (said to be \emph{canonical})
+\[
+  (\psi,\theta):X_{/X'}\to X
+\]
+of ringed spaces.
+
+By taking tensor products, for every coherent $\OO_X$-module $\sh{F}$, the canonical homomorphisms $\OO_X\to\OO_X/\sh{J}$ give homomorphisms $\sh{F}\to\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J})$ of $\OO_X$-modules which form a projective system and thus give, by passing to the projective limit, a canonical functorial homomorphism $\gamma:\sh{F}\to\psi_*(\sh{F}_{/X'})$ of $\OO_X$-modules.
+\end{env}
+
+\begin{prop}[10.8.8]
+\label{1.10.8.8}
+\medskip\noindent
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item The functor $\sh{F}_{/X'}$ (in $\sh{F}$) is exact.
+  \item The functorial homomorphism $\gamma^\sharp:i^*(\sh{F})\to\sh{F}_{/X'}$ of $(\OO_X)_{/X'}$-modules in an isomorphism.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.8.8}
+\medskip\noindent
+\begin{enumerate}[label=(\roman*)]
+  \item It suffices to prove that if $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of coherent $\OO_X$-modules, and if $U$ is an affine open subset $X$ with Noetherian ring $A$, then the sequence
+\[
+  0\to\Gamma(U\cap X',\sh{F}_{/X'}')\to\Gamma(U\cap X',\sh{F}_{/X'})\to\Gamma(U\cap X',\sh{F}_{/X'}'')\to 0
+\]
+is exact.
+We have that $\sh{F}|U=\wt{M}$, $\sh{F}'|U=\wt{M'}$, $\sh{F}''|U=\wt{M''}$, where $M$, $M'$, $M''$ are three $A$-modules of finite type such that the sequence $0\to M'\to M\to M''\to 0$ is exact (\sref{1.1.5.1} and \sref{1.1.3.11}); let $\sh{J}\in\Phi$ are let $\fk{J}$ be an ideal of $A$ such that $\sh{J}|U=\wt{\fk{J}}$.
+We then have
+\[
+  \Gamma(U\cap X',\sh{F}\otimes_{\OO_X}\OO_X/\sh{J}^n)=M\otimes_A(A/\fk{J}^n)
+\]
+\sref{1.3.12}; so, by definition of the projective limit, we have
+\[
+  \Gamma(U\cap X',\sh{F}_{/X'})=\varprojlim_n(M\otimes_A(A/\fk{J}^n))=\wh{M},
+\]
+the separated completion of $M$ with respect to the $\fk{J}$-pre-adic topology, and similarly
+\[
+  \Gamma(U\cap X',\sh{F}_{/X'}')=\wh{M'}, \Gamma(U\cap X',\sh{F}_{/X'}'')=\wh{M''};
+\]
+our assertion then follows since $A$ is Noetherian, and the functor $\wh{M}$ in $M$ is exact on the category of $A$-modules of finite type \sref[0]{0.7.3.3}.
+\oldpage[I]{197}
+  \item The question is local, so we can assume that we have an exact sequence $\OO_X^m\to\OO_X^n\to\sh{F}\to 0$ \sref[0]{0.5.3.2}; as $\gamma^\sharp$ is functorial, and the functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ are right exact (by (i) and \sref[0]{0.4.3.1}), we have the commutative diagram
+\[
+  \xymatrix{
+    i^*(\OO_X^m)\ar[r]\ar[d]_{\gamma^\sharp} &
+    i^*(\OO_X^n)\ar[r]\ar[d]_{\gamma^\sharp} &
+    i^*(\sh{F})\ar[r]\ar[d]_{\gamma^\sharp} &
+    0\\
+    (\OO_X^m)_{/X'}\ar[r] &
+    (\OO_X^n)_{/X'}\ar[r] &
+    \sh{F}_{/X'}\ar[r] &
+    0
+  }
+  \tag{10.8.8.1}
+\]
+whose rows are exact.
+In addition, the two functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ commute with finite direct sums (\sref[0]{0.3.2.6} and \sref[0]{0.4.3.2}), and thus we reduce to proving our assertion for $\sh{F}=\OO_X$.
+We have $i^*(\OO_X)=(\OO_X)_{/X'}=\OO_\wh{X}$ \sref[0]{0.4.3.4}, and $\gamma^\sharp$ is a homomophism of \emph{$\OO_\wh{X}$-modules}; so it suffices to check that $\gamma^\sharp$ sends the unit section of $\OO_\wh{X}$ over an open subset of $X'$ to itself, which is immediate and shows in this case that $\gamma^\sharp$ is the identity.
+\end{enumerate}
+\end{proof}
+
+\begin{cor}[10.8.9]
+\label{1.10.8.9}
+The morphism of ringed spaces $i:X_{/X'}\to X$ is flat.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.8.9}
+This follows from \sref[0]{0.6.7.3} and Proposition \sref{1.10.8.8}[i].
+\end{proof}
+
+\begin{cor}[10.8.10]
+\label{1.10.8.10}
+If $\sh{F}$ and $\sh{G}$ are two coherent $\OO_X$-modules, then there exist canonical functorial isomorphisms (in $\sh{F}$ and $\sh{G}$)
+\[
+  (\sh{F}_{/X'})\otimes_{(\OO_X)_{/X'}}(\sh{G}_{/X'})\isoto(\sh{F}\otimes_{\OO_X}\sh{G})_{/X'},
+  \tag{10.8.10.1}
+\]
+\[
+  (\shHom_{\OO_X}(\sh{F},\sh{G}))_{/X'}\isoto\shHom_{(\OO_X)_{/X'}}(\sh{F}_{/X'},\sh{G}_{/X'}).
+  \tag{10.8.10.2}
+\]
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.8.10}
+This follows from the canonical identification of $i^*(\sh{F})$ and of $\sh{F}_{/X'}$; the existence of the first isomorphism is then a valid result for all morphisms of ringed spaces (\textbf{0},~4.3.3.1), and the second is a valid result for all flat morphism \sref[0]{0.6.7.6}, by Corollary \sref{1.10.8.9}.
+\end{proof}
+
 \subsection{Extension of morphisms to completions}
 \label{subsection-extension-of-morphisms-to-completions}
 
@@ -869,7 +962,7 @@ the claims of \sref{1.10.15.3} are then immediate consequences of \sref{1.10.15.
 
 We leave it to the reader to state, for the same type of formal preschemes and morphisms as in \sref{1.10.15.3}, the propositions corresponding to \sref{1.5.5.5}, \sref{1.5.5.9}, and \sref{1.5.5.10}
 \oldpage[I]{213}
-(by replacing ``affine open subset'' by ``formal affine open subset satisfying condition \emph{(b)} of \sref{1.10.6.3}'').
+(by replacing ``affine open subset'' by ``formal affine open subset satisfying condition (b) of \sref{1.10.6.3}'').
 
 A similar argument also shows that every \emph{Noetherian} formal affine scheme is separated, which justifies the terminology.
 
@@ -916,5 +1009,5 @@ For $\wh{X}$ to be separated, it is necessary and sufficient for $\wh{X}_\red$ t
 
 \begin{proof}
 \label{proof-1.10.15.7}
-Indeed, with the notation of \sref{1.10.8.5}, for $\wh{X}$ to be separated, it is necessary and sufficient for $X'_0$ to be separated \sref{1.10.15.2}, and since $\wh{X}_\red=(X'_0)_\red$, it is equivalent to ask for $\wh{X}_\red$ to be separated \sref{1.5.5.1}[vi].
+With the notation of \sref{1.10.8.5}, for $\wh{X}$ to be separated, it is necessary and sufficient for $X'_0$ to be separated \sref{1.10.15.2}, and since $\wh{X}_\red=(X'_0)_\red$, it is equivalent to ask for $\wh{X}_\red$ to be separated \sref{1.5.5.1}[vi].
 \end{proof}
