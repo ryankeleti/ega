@@ -404,22 +404,22 @@ For $f$ to be surjective, it is necessary and sufficient that, for every \emph{a
 \label{proof-1.6.3.10}
 The condition suffices, as we can see by considering, for all $y\in Y$, an algebraically closed extension $\Omega$ of $\kres(y)$, and the commutative diagram
 \[
-  \begin{tikzcd}[row sep=tiny]
-    X\ar[dd,swap,"f"]\\
+  \xymatrix{
+    X\ar[dd]_f\\
     & \Spec(\Omega)\ar[ul]\ar[dl]\\
     Y
-  \end{tikzcd}
+  }
 \]
 (cf. \sref{1.3.5.3}).
 Conversely, suppose that $f$ is surjective, and let $g:\{\xi\}=\Spec(\Omega)\to Y$ be a morphism, where $\Omega$ is an algebraically closed field.
 If we consider the diagram
 \[
-  \begin{tikzcd}
-    X \ar[d,swap,"f"] &
-    X_{(\Omega)}\ar[l]\ar[d,"f_{(\Omega)}"]\\
+  \xymatrix{
+    X\ar[d]_f &
+    X_{(\Omega)}\ar[l]\ar[d]^{f_{(\Omega)}}\\
     Y &
     \Spec(\Omega)\ar[l]
-  \end{tikzcd}
+  }
 \]
 then it suffices to show that there exists a \emph{rational point over $\Omega$} in $X_{(\Omega)}$ (\sref{1.3.3.14}, \sref{1.3.4.3}, and \sref{1.3.4.4}).
 Since $f$ is surjective, $X_{(\Omega)}$ is nonempty \sref{1.3.5.10}, and since $f$ is of finite type, so too is $f_{(\Omega)}$ \sref{1.6.4.3}[iv];
@@ -638,12 +638,12 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
         the image of $\fk{a}$ under this homomorphism is $0$, and is \emph{a fortiori} the same as the image of the kernel $\alpha^{-1}(0)$ under $\rho$.
         So $\rho$ factors as $A[X_1,\ldots,X_n]\xrightarrow{\alpha}C\xrightarrow{\gamma}B_{hg}$, with $\gamma(c_i)=hb_i/hg$, and it is clear that, if $i_x$ is the canonical homomorphism $B_{hg}\to B_x$, then the diagram
         \[
-          \begin{tikzcd}
-            C\ar[r,"\gamma"]\ar[d,swap,"i_y"] &
-            B_{hg}\ar[d,"i_x"]\\
-            C_y\ar[r,"\vphi"] &
+          \xymatrix{
+            C\ar[r]^\gamma\ar[d]_{i_y} &
+            B_{hg}\ar[d]^{i_x}\\
+            C_y\ar[r]^\vphi &
             B_x
-          \end{tikzcd}
+          }
           \tag{6.5.1.1}
         \]
         is commutative; we thus have $\vphi=\gamma_x$, and since $\vphi$ is a local homomorphism, $^a\gamma(x)=y$;
