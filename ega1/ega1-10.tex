@@ -995,6 +995,71 @@ If $S$ is the sum $X_1\amalg X_2$ (3.1), $X'$ the union $X_1'\cup X_2'$, where $
 \subsection{Application to coherent sheaves on formal affine schemes}
 \label{subsection-application-to-coherent-sheaves-on-formal-affine-schemes}
 
+\begin{env}[10.10.1]
+\label{1.10.10.1}
+In this paragraph, $A$ denotes an \emph{adic Noetherian ring}, $\fk{J}$ an ideal of definition for $A$.
+Let $X=\Spec(A)$, $\fk{X}=\Spf(A)$, which identifies with the closed subset $V(\fk{J})$ of $X$ \sref{1.10.1.2}.
+In addition, the Definitions \sref{1.10.1.2} and \sref{1.10.8.4} show that the \emp{formal affine scheme $\fk{X}$} is identical the completion $X_{/\fk{X}}$ of the affine scheme $X$ along the closed subset $\fk{X}$ of its underling space.
+To every coherent $\OO_X$-module $\sh{F}$ corresponds an $\OO_\fk{X}$-module of finite type $\sh{F}_{/\fk{X}}$, which is a sheaf of topological modules over over the sheaf of topological rings $\OO_\fk{X}$.
+Every coherent $\OO_X$-module $\sh{F}$ is of the form $\wt{M}$, where $M$ is an $A$-module of finite type \sref{1.1.5.1}; we set $(\wt{M})_{/X}=M^\Delta$.
+In addition, if $u:M\to N$ is an $A$-homomorphism of $A$-modules of finite type, then it corresponds to a homomorphism $\wt{u}:\wt{M}\to\wt{N}$, and as a result to a continuous homomorphism $\wt{u}_{/X'}:(\wt{M})_{/X'}\to(\wt{N})_{/X'}$, which we denote by $u^\Delta$.
+It is immediate that $(v\circ u)^\Delta=v^\Delta\circ u^\Delta$; we have thus defined a \emph{covariant additive functor $M^\Delta$} from the category of $A$-modules of finite type to the category of $\OO_\fk{X}$-modules of finite type.
+When $A$ is a \emph{discrete} ring, we have $M^\Delta=\wt{M}$.
+\end{env}
+
+\begin{prop}[10.10.2]
+\label{1.10.10.2}
+\medskip\noindent
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item $M^\Delta$ is an exact functor in $M$, and there exists a canonical functorial isomorphism of $A$-modules $\Gamma(\fk{X},M^\Delta)\isoto M$.
+  \item If $M$ and $N$ are two $A$-modules of finite type, then there exist canonical functorial isomorphisms
+    \[
+      (M\otimes_A N)^\Delta\isoto M^\Delta\otimes_{\OO_\fk{X}}N^\Delta,
+      \tag{10.10.2.1}
+    \]
+    \[
+      (\Hom_A(M,N))^\Delta\isoto\shHom_{\OO_\fk{X}}(M^\Delta,N^\Delta).
+      \tag{10.10.2.2}
+    \]
+  \item The map $u\mapsto u^\Delta$ is a functorial isomorphism
+    \[
+      \Hom_A(M,N)\isoto\Hom_{\OO_X}(M^\Delta,N^\Delta).
+      \tag{10.10.2.3}
+    \]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.10.2}
+The exactness of $M^\Delta$ follows from the exactness of the functors $\wt{M}$ \sref{1.1.3.5} and $\sh{F}_{/X'}$ \sref{1.10.8.8}.
+By definition, $\Gamma(X,M^\Delta)$ is the separated completion of the $A$-module $\Gamma(X,\wt{M})=M$ with respect to the $\fk{J}$-pre-adic topology; but as $A$ is complete and $M$ is of finite type, we know \sref[0]{0.7.3.6} that $M$ is separated and complete, which proves (i).
+The isomorphism (10.10.2.1) (resp. (10.10.2.2)) coms from the composition of the isomorphisms \sref{1.1.3.12}[i] and (10.8.10.1) (resp. \sref{1.1.3.12}[ii] and (10.8.10.2)).
+Finally, as $\Hom_A(M,N)$ is an $A$-mdodule of finite type, we can apply (i), which identifies $\Gamma(\fk{X},(\Hom_A(M,N))^\Delta)$ with $\Hom_A(M,N)$, and we use (10.10.2.2), which proves that the homomorphism (10.10.2.3) is an isomorphism.
+\end{proof}
+
+We deduce from Proposition \sref{1.10.10.2} a series of analogous results to those of Theorem \sref{1.1.3.7} and Corollary \sref{1.1.3.12}, which we leave to the reader to formulate.
+
+\oldpage[I]{202}
+We note that the exactness property of $M^\Delta$, applied to the exact sequence $0\to\fk{J}\to A\to A/\fk{J}\to 0$ shows that the sheaf of ideals of $\OO_\fk{X}$ denoted here by $\fk{J}^\Delta$ coincides with the one described similarly in \sref{1.10.3.1}, by \sref{1.10.3.2}.
+
+\begin{prop}[10.10.3]
+\label{1.10.10.3}
+Under the hypotheses of \sref{1.10.10.1}, $\OO_\fk{X}$ is a coherent sheaf of rings.
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.10.3}
+If $f\in A$, then we know that $A_{\{f\}}$ is an adic Noetherian ring \sref[0]{0.7.6.11}, and as the question is local, we reduce \sref{1.10.1.4} to proving that the kernel of the homomorphism $v:\OO_\fk{X}^n\to\OO_\fk{X}$ is an $\OO_\fk{X}$-module of finite type.
+We then have $v=u^\Delta$, where $u$ is an $A$-homomorphism $A^n\to A$ \sref{1.10.10.2}; as $A$ is Noetherian, the kernel of $u$ is of finite type, in other words we have a homomorphism $A^m\xrightarrow{w}A^n$ such that the sequence $A^m\xrightarrow{w}A^n\xrightarrow{u}A$ is exact.
+We conclude \sref{1.10.10.2} that the sequence $\OO_\fk{X}^m\xrightarrow{w^\Delta}\OO_\fk{X}^n\xrightarrow{v}\OO_\fk{X}$ is exact, which proves that the kernel of $v$ is of finite type.
+\end{proof}
+
+\begin{env}[10.10.4]
+\label{1.10.10.4}
+With the above notations, set $A_n=A/\fk{J}^{n+1}$, and let $S_n$ be the affine scheme $\Spec(A_n)=(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$, $\sh{J}=\fk{J}^\Delta$ being the sheaf of ideals of definition for $\OO_\fk{X}$ corresponding to the ideal $\fk{J}$.
+Let $u_{mn}$ be the morphism of preschemes $X_m\to X_n$ corresponding to the canonical homomorphism $A_n\to A_m$ for $m\leqslant n$; the formal scheme $\fk{X}$ is the inductive limit of the $X_n$ with respect to the $u_{mn}$ \sref{1.10.6.3}.
+\end{env}
+
 \subsection{Coherent sheaves on formal preschemes}
 \label{subsection-coherent-sheaves-on-formal-preschemes}
 
