@@ -969,7 +969,7 @@ For every $S$-morphism $f:X\to Y$ such that $f(X')\subset Y'$, the graph morphis
 \begin{cor}[10.9.9]
 \label{1.10.9.9}
 Let $X$ and $Y$ be two locally Noetherian preschemes, $f:X\to Y$ a morphism, $Y'$ a closed subset of $Y$, and $X'=f^{-1}(Y')$.
-Then the prescheme $X_{/X'}$ indentifies by the commutative diagram
+Then the prescheme $X_{/X'}$ is identified, by the commutative diagram
 \[
   \xymatrix{
     X\ar[d]_f &
@@ -1084,11 +1084,105 @@ The above equivalence gives, for adic $\fk{S}$-preschemes $\fk{X}$ and $\fk{Y}$,
 \[
     \Hom_\fk{S}(\fk{X},\fk{Y}) \xrightarrow{\sim} \varprojlim_n\Hom_{S_n}(X_n,Y_n)
 \]
-where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\leqslant n$
+where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\leqslant n$.
 \end{env}
 
 \subsection{Morphisms of finite type}
 \label{subsection-morphisms-of-finite-type}
+
+\begin{prop}[10.13.1]
+\label{1.10.13.1}
+Let $\mathfrak{Y}$ be a locally Noetherian formal prescheme, $\sh{K}$ an ideal of definition of $\fk{Y}$, and $f:\fk{X}\to\fk{Y}$ a morphism of formal preschemes.
+Then the following conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $X$ is locally Noetherian, $f$ is an adic morphism \sref{1.10.12.1}, and, if we set $\sh{J}=f^*(\sh{K})\OO_\fk{X}$, the morphism $f_0:(\fk{X},\OO_\fk{X}/\sh{J})\to(\fk{Y},\OO_\fk{Y}/\sh{K})$ induced by $f$ is of finite type.
+    \item $\fk{X}$ is locally Noetherian, and is the inductive limit of an adic inductive $(Y_n)$-system $(X_n)$ such that the morphism $X_0\to Y_0$ is of finite type.
+\oldpage[I]{208}
+    \item Every point of $\fk{Y}$ has a Noetherian formal affine open neighbourhood $V$ that has the following property:
+
+        (\textbf{Q}) $f^{-1}(V)$ is a finite union of Noetherian formal affine open subsets $U_i$ such that the Noetherian adic ring $\Gamma(U_i,\OO_\fk{X})$ is topologically isomorphic to the quotient of a formal series algebra, restricted \sref[0]{0.7.5.1} to $\Gamma(V,\OO_\fk{Y})$, by an ideal (necessarily closed).
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.13.1}
+It is immediate that \emph{(a)} implies \emph{(b)} by \sref{1.10.12.3}.
+To show that \emph{(b)} implies \emph{(c)}, we can, since the question is local on $\fk{Y}$, assume that $\fk{Y}=\Spf(B)$, where $B$ is Noetherian and adic;
+let $\sh{K}=\fk{K}^\Delta$, with $\fk{K}$ an ideal of definition of $B$.
+Since, by hypothesis, $X_0$ is of finite type over $Y_0$, $X_0$ is a finite union of affine open subsets $U_i$ such that the ring $A_{i0}$ of the affine scheme induced by $X_0$ on $U_i$ is an algebra of finite type over the ring $B/\fk{K}$ of $Y_0$ \sref{1.6.3.2}.
+By \sref{1.5.1.9}, $U_i$ is also an affine open subset in each of the Noetherian preschemes $X_n$, and if $A_{in}$ is the ring of the affine scheme induced by $X_n$ on $U_i$, then hypothesis \emph{(b)} implies that, for $m\leqslant n$, $A_{im}$ is isomorphic to $A_{in}/\fk{K}^{m+1}A_{in}$.
+Consequently, the formal prescheme induced by $\fk{X}$ on $U_i$ is isomorphic to $\Spf(A_i)$, where $A_i=\varprojlim_n A_{in}$ \sref{1.10.6.4};
+$A_i$ is a $\fk{K}A_i$-adic ring, and $A_i/\fk{K}A_i$, isomorphic to $A_{i0}$, is an algebra of finite type over $B/\fk{K}$.
+We thus conclude \sref[0]{0.7.5.5} that $A_i$ is topologically isomorphic to a quotient of a formal series algebra restricted to $B$ (by a necessarily-closed ideal, because such an algebra is Noetherian \sref[0]{0.7.5.4}).
+
+To show that \emph{(c)} implies \emph{(a)}, we can restrict to the case where $\fk{X}=\Spf(A)$ is also affine, with $A$ a Noetherian adic ring that is isomorphic to a quotient of a formal series algebra, restricted to $B$, by a closed ideal.
+Then \sref[0]{0.7.5.5} $A/\fk{K}A$ is an algebra of finite type over $B/\fk{K}$, and $\fk{K}A=\fk{J}$ is an ideal of definition of $A$, and so, by \sref{1.10.10.9}, the conditions of \emph{(a)} are satisfied.
+\end{proof}
+
+We note that, if the conditions of prop.~\sref{1.10.13.1} are satisfied, then property~\emph{(a)} holds true for \emph{any} ideal of definition $\sh{K}$ of $\fk{Y}$ (by \emph{(c)}), and so, in property~\emph{(b)}, \emph{all} the $f_n$ are morphisms of finite type.
+
+\begin{cor}[10.13.2]
+\label{1.10.13.2}
+If the conditions of \sref{1.10.13.1} are satisfied, then every Noetherian formal affine open subset $V$ of $\fk{Y}$ has property~(\textbf{Q}), and if $\fk{Y}$ is Noetherian, then so too is $\fk{X}$.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.13.2}
+This follows immediately from \sref{1.10.13.1} and \sref{1.6.3.2}.
+\end{proof}
+
+\begin{defn}[10.13.3]
+\label{1.10.13.3}
+When the equivalent properties \emph{(a)}, \emph{(b)}, and \emph{(c)} of \sref{1.10.13.1} are satisfied, we say that the morphism $f$ is of finite type, or that $\fk{X}$ is a formal $\fk{Y}$-prescheme of finite type, or a formal prescheme of finite type over $\fk{Y}$.
+\end{defn}
+
+\begin{cor}[10.13.4]
+\label{1.10.13.4}
+Let $\fk{X}=\Spf(A)$ and $\fk{Y}=\Spf(B)$ be Noetherian formal affine schemes;
+for $\fk{X}$ to be of finite type over $\fk{Y}$, it is necessary and sufficient for the Noetherian adic ring $A$ to be isomorphic to the quotient of a formal series algebra, restricted to $B$, by some closed ideal.
+\end{cor}
+
+\begin{proof}
+\label{proof-1.10.13.4}
+With the notation of \sref{1.10.13.1}, if $\fk{X}$ is of finite type over $\fk{Y}$, then $A/\fk{K}A$ is a $(B/\fk{K})$-algebra of finite type by \sref{1.6.3.3}, and $\fk{K}A$ is an ideal of definition of $A$ \sref{1.10.10.9}.
+We are then done, by \sref[0]{0.7.5.5}.
+\end{proof}
+
+\begin{prop}[10.13.5]
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item The composition of two morphisms (of formal preschemes) of finite type is again of finite type.
+\oldpage[I]{209}
+    \item Let $\fk{X}$, $\fk{G}$, and $\fk{G}'$ be locally Noetherian (\emph{resp.} Noetherian) formal preschemes, and $f:\fk{X}\to\fk{G}$ and $\fk{X}\to\fk{G}'$ morphisms.
+        If $f$ is of finite type, then $\fk{X}\times_\fk{G}\fk{G}'$ is locally Noetherian (\emph{resp.} Noetherian) and of finite type over $\fk{G}'$.
+    \item Let $\fk{G}$ be a locally Noetherian formal prescheme, and $\fk{X}'$ and $\fk{Y}'$ formal $\fk{G}$-preschemes such that $\fk{X}'\times_\fk{G}\fk{Y}'$ is locally Noetherian.
+    If $\fk{X}$ and $\fk{Y}$ are locally Noetherian formal $\fk{G}$-preschemes, and $f:\fk{X}\to\fk{X}'$ and $g:\fk{Y}\to\fk{Y}'$ are $\fk{G}$-morphisms of finite type, then $\fk{X}\times_\fk{G}\fk{Y}$ is locally Noetherian, and $f\times_\fk{G}g$ is a $\fk{G}$-morphism of finite type.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-1.10.13.5}
+By the formal argument of \sref{1.3.5.1}, (iii) follows from (i) and (ii), so it suffices to prove (i) and (ii).
+
+Let $\fk{X}$, $\fk{Y}$, and $\fk{Z}$ be locally Noetherian formal preschemes, and $f:\fk{X}\to\fk{Y}$ and $g:\fk{Y}\to\fk{Z}$ morphisms of finite type.
+If $\sh{L}$ is an ideal of definition of $\fk{Z}$, then $\sh{K}=g^*(\sh{L})\OO_\fk{Y}$ is an ideal of definition of $\fk{Y}$, and $\sh{J}=f^*(g^*(\sh{L}))\OO_\fk{X}$ is an ideal of definition for $\fk{X}$.
+Let $X_0=(\fk{X},\OO_\fk{X}/\sh{J})$, $Y_0=(\fk{Y},\OO_\fk{Y}/\sh{K})$, and $Z_0=(\fk{Z},\OO_\fk{Z}/\sh{L})$, and let $f_0:X_0\to Y_0$ and $g_0:Y_0\to Z_0$ be the morphisms corresponding to $f$ and $g$ (respectively).
+Since, by hypothesis, $f_0$ and $g_0$ are of finite type, so too is $g_0\circ f_0$ \sref{1.6.3.4}, which corresponds to $g\circ f$;
+thus $g\circ f$ is of finite type, by \sref{1.10.13.1}.
+
+Under the conditions of (ii), $\fk{G}$ (resp. $\fk{X}$, $\fk{G}'$) is the inductive limit of a sequence $(S_n)$ (resp. $(X_n)$, $(S'_n)$) of locally Noetherian preschemes, and we can assume \sref{1.10.13.1} that $X_m=X_n\times_{S_n}S_m$ for $m\leqslant n$.
+The formal prescheme $\fk{X}\times_\fk{G}\fk{G}'$ is then the inductive limit of the preschemes $X_n\times_{S_n}S'_n$ \sref{1.10.7.4}, and we have
+\[
+    X_m\times_{S_m}S'_m = (X_n\times_{S_n}S_m)\times_{S_m}S'_m = (X_n\times_{S_n}S'_n)\times_{S'_n}S'_m.
+\]
+Furthermore, $X_0\times_{S_0}S'_0$ is locally Noetherian because $X_0$ of finite type over $S_0$ \sref{1.6.3.8}.
+We thus conclude \sref{1.10.12.3.1}, first of all, that $\fk{X}\times_\fk{G}\fk{G}'$ is locally Noetherian;
+then, since $X_0\times_{S_0}S'_0$ is of finite type over $S'_0$ \sref{1.6.3.8}, it follows from \hyperref[1.10.12.3]{(10.12.3.1)} and \sref{1.10.13.1} that $\fk{X}\times_\fk{G}\fk{G}'$ is of finite type over $\fk{G}'$, which proves (ii) (the claim about Noetherian preschemes being an immediate consequence of \sref{1.6.3.8}).
+\end{proof}
+
+\begin{cor}[10.13.6]
+\label{1.10.13.6}
+Under the hypotheses of \sref{1.10.9.9}, if $f$ is a morphism of finite type, then so too is its extension $\wh{f}$ to the completions.
+\end{cor}
 
 \subsection{Closed subpreschemes of formal preschemes}
 \label{subsection-closed-subpreschemes-of-formal-preschemes}
