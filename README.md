@@ -6,6 +6,7 @@ Amateur translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 To compile, `make book`, `make pdfs`, or `make all`.
+
 Compiled PDFs, auto-compiled every hour:
 - [Full document](https://fppf.site/ega/book.pdf).
 - [What this is](https://fppf.site/ega/what.pdf).
