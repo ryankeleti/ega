@@ -333,33 +333,33 @@ Applying equation~\hyperref[1.1.2.2]{(1.2.2.3)} to the ideal $\fk{a}=(0)$, we ha
 
 \begin{env}[1.3.1]
 \label{1.1.3.1}
-Let $A$ be a commutative ring, $M$ an $A$-module, $f$ an element of $A$, $S_f$ the
-multiplicative set of the $f^n$, where $n\geqslant 0$. Recall that we put $A_f=S_f^{-1}A$,
-$M_f=S_f^{-1}M$. If $S_f'$ is the saturated multiplicative subset of $A$ consisting of the
-$g\in A$ which divide an element of $S_f$, we know that $A_f$ and $M_f$ canonically identify
-with ${S_f'}^{-1}A$ and ${S_f'}^{-1}M$ \sref[0]{0.1.4.3}.
+Let $A$ be a commutative ring, $M$ an $A$-module, $f$ an element of $A$, and $S_f$ the multiplicative set consisting of the $f^n$, where $n\geqslant 0$.
+Recall that we set $A_f=S_f^{-1}A$, $M_f=S_f^{-1}M$.
+If $S_f'$ is the saturated multiplicative subset of $A$ consisting of the $g\in A$ which divide an element of $S_f$, we know that $A_f$ and $M_f$ are canonically identified with ${S_f'}^{-1}A$ and ${S_f'}^{-1}M$ \sref[0]{0.1.4.3}.
 \end{env}
 
 \begin{lem}[1.3.2]
 \label{1.1.3.2}
 The following conditions are equivalent:
-\begin{center}
-\emph{(a)} $g\in S_f'$;
-\emph{(b)} $S_g'\subset S_f'$;
-\emph{(c)} $f\in\rad(g)$;
-\emph{(d)} $\rad(f)\subset\rad(g)$;
-\emph{(e)} $V(g)\subset V(f)$;
-\emph{(f)} $D(f)\subset D(g)$.
-\end{center}
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $g\in S_f'$;
+    \item $S_g'\subset S_f'$;
+    \item $f\in\rad(g)$;
+    \item $\rad(f)\subset\rad(g)$;
+    \item $V(g)\subset V(f)$;
+    \item $D(f)\subset D(g)$.
+\end{enumerate}
 \end{lem}
-This follows immediately from the definitions and from
-Corollary \sref{1.1.1.5}.
+
+\begin{proof}
+\label{proof-1.1.3.2}
+This follows immediately from the definitions and \sref{1.1.1.5}.
+\end{proof}
 
 \begin{env}[1.3.3]
 \label{1.1.3.3}
-If $D(f)=D(g)$, then Lemma \sref{1.1.3.2}, (b), shows that $M_f=M_g$. More generally, if
-$D(f)\supset D(g)$, then $S_f'\subset S_g'$, and we know \sref[0]{0.1.4.1} that there exists
-a canonical functorial homomorphism
+If $D(f)=D(g)$, then Lemma~\sref{1.1.3.2}[b] shows that $M_f=M_g$.
+More generally, if $D(f)\supset D(g)$, then $S_f'\subset S_g'$, and we know \sref[0]{0.1.4.1} that there exists a canonical functorial homomorphism
 \[
   \rho_{g,f}:M_f\to M_g,
 \]
@@ -371,36 +371,28 @@ and if $D(f)\supset D(g)\supset D(h)$, we have \sref[0]{0.1.4.4}
 \end{env}
 
 \oldpage[I]{85}
-When $f$ runs over the elements of $A-\fk{j}_x$ (for a given $x$ in $X=\Spec(A)$), the
-sets $S_f'$ constitute an increasing filtered set of subsets of $A-\fk{j}_x$, since for
-two elements $f$, $g$ of $A-\fk{j}_x$, $S_f'$ and $S_g'$ are contained in $S_{fg}'$; as
-the union of the $S_f'$ for $f\in A-\fk{j}_x$ is $A-\fk{j}_x$, we conclude
-\sref[0]{0.1.4.5} that the $A_x$-module $M_x$ canonically identifies with the \emph{inductive
-limit} $\varinjlim M_f$, relative to the family of homomorphisms $(\rho_{g,f})$. We denote by
+When $f$ ranges over the elements of $A\setminus\fk{j}_x$ (for a given $x$ in $X=\Spec(A)$), the sets $S_f'$ constitute an increasing filtered set of subsets of $A-\fk{j}_x$, since for elements $f$ and $g$ of $A\setminus\fk{j}_x$, $S_f'$ and $S_g'$ are contained in $S_{fg}'$;
+since the union of the $S_f'$ over $f\in A\setminus\fk{j}_x$ is $A-\fk{j}_x$, we conclude \sref[0]{0.1.4.5} that the $A_x$-module $M_x$ is canonically identified with the \emph{inductive limit} $\varinjlim M_f$, relative to the family of homomorphisms $(\rho_{g,f})$.
+We denote by
 \[
   \rho_x^f:M_f\to M_x
 \]
-the canonical homomorphism for $f\in A-\fk{j}_x$ (or, equivalently, $x\in D(f)$).
+the canonical homomorphism for $f\in A\setminus\fk{j}_x$ (or, equivalently, $x\in D(f)$).
 
 \begin{defn}[1.3.4]
 \label{1.1.3.4}
-We define the structure sheaf of the prime spectrum $X=\Spec(A)$ (resp. sheaf associated to
-an $A$-module $M$) and denote it by $\wt{A}$ or $\OO_X$ (resp. $\wt{M}$) as the
-sheaf of rings (resp. the $\wt{A}$-module) associated to the presheaf
-$D(f)\mapsto A_f$ (resp. $D(f)\mapsto M_f$) over the basis $\fk{B}$ of $X$ consisting
-of the $D(f)$ for $f\in A$ (\sref{1.1.1.10}, \sref[0]{0.3.2.1}, and
-\sref[0]{0.3.5.6}).
+We define the structure sheaf of the prime spectrum $X=\Spec(A)$ (resp. the sheaf associated to the $A$-module $M$), denoted by $\wt{A}$ or $\OO_X$ (resp. $\wt{M}$) as the sheaf of rings (resp. the $\wt{A}$-module) associated to the presheaf $D(f)\mapsto A_f$ (resp. $D(f)\mapsto M_f$), defined on the basis $\fk{B}$ of $X$ consisting of the $D(f)$ for $f\in A$ (\sref{1.1.1.10}, \sref[0]{0.3.2.1}, and \sref[0]{0.3.5.6}).
 \end{defn}
 
-We saw \sref[0]{0.3.2.4} that the stalk $\wt{A}_x$ (resp. $\wt{M}_x$)
-\emph{identifies with the ring $A_x$} (resp. \emph{the $A_x$-module $M_x$}); we denote by
+We saw \sref[0]{0.3.2.4} that the stalk $\wt{A}_x$ (resp. $\wt{M}_x$) \emph{can be identified with the ring $A_x$} (resp. \emph{the $A_x$-module $M_x$});
+we denote by
 \[
   \theta_f:A_f\to\Gamma(D(f),\wt{A})
 \]
 \[
-  (\text{resp. }\theta_f:M_f\to\Gamma(D(f),\wt{M})),
+  \text{(resp. }\theta_f:M_f\to\Gamma(D(f),\wt{M})\text{),}
 \]
-the canonical map, so that for each $x\in D(f)$ and each $\xi\in M_f$, we have
+the canonical map, so that, for all $x\in D(f)$ and all $\xi\in M_f$, we have
 \[
   (\theta_f(\xi))_x=\rho_x^f(\xi).
   \tag{1.3.4.1}
@@ -408,34 +400,26 @@ the canonical map, so that for each $x\in D(f)$ and each $\xi\in M_f$, we have
 
 \begin{prop}[1.3.5]
 \label{1.1.3.5}
-$\wt{M}$ is an exact covariant functor in $M$, from the category of $A$-modules to the
-category of $\wt{A}$-modules.
+$\wt{M}$ is an exact functor, covariant in $M$, from the category of $A$-modules to the category of $\wt{A}$-modules.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.1.3.5}
-Indeed, let $M$, $N$ be two $A$-modules, $u$ a homomorphism $M\to N$; for each $f\in A$,
-it canonically assigns to $u$ a homomorphism $u_f$ of the $A_f$-module $M_f$ to the
-$A_f$-module $N_f$, and the diagram (for $D(g)\subset D(f)$)
+Indeed, let $M$, $N$ be two $A$-modules, and $u$ a homomorphism $M\to N$;
+for each $f\in A$, $u$ corresponds canonically to a homomorphism $u_f$ from the $A_f$-module $M_f$ to the $A_f$-module $N_f$, and the diagram (for $D(g)\subset D(f)$)
 \[
   \xymatrix{
     M_f\ar[r]^{u_f}\ar[d]_{\rho_{g,f}} & N_f\ar[d]^{\rho_{g,f}}\\
     M_g\ar[r]^{u_g} & N_g
   }
 \]
-is commutative \sref{1.1.4.1}; these homomorphisms then define a homomorphism of
-$\wt{A}$-modules $\wt{u}:\wt{M}\to\wt{N}$ \sref[0]{0.3.2.3}. In
-addition, for each $x\in X$, $\wt{u}_x$ is the inductive limit of the $u_f$ for
-$x\in D(f)$ ($f\in A$), and as a result \sref[0]{0.1.4.5}, if we canonically identify
-$\wt{M}_x$ and $\wt{N}_x$ with $M_x$ and $N_x$ respectively, then $\wt{u}_x$
-identifies with the homomorphism $u_x$ canonically induced by $u$. If $P$ is a third
-$A$-module, $v$ a homomorphism $N\to P$ and $w=v\circ u$, it is immediate that
-$w_x=v_x\circ u_x$, so $\wt{w}=\wt{v}\circ\wt{u}$. We have therefore
-clearly defined a \emph{covariant functor} $\wt{M}$ in $M$, from the category of
-$A$-modules to that of $\wt{A}$-modules. \emph{This functor is exact}, since for each
-$x\in X$, $M_x$ is an exact functor in $M$ \sref[0]{0.1.3.2}; in addition, we have
-$\Supp(M)=\Supp(\wt{M})$ by the definitions \sref[0]{0.1.7.1} and
-\sref[0]{0.3.1.6}.
+is commutative \sref{1.1.4.1};
+these homomorphisms then define a homomorphism of $\wt{A}$-modules $\wt{u}:\wt{M}\to\wt{N}$ \sref[0]{0.3.2.3}.
+In addition, for each $x\in X$, $\wt{u}_x$ is the inductive limit of the $u_f$ for $x\in D(f)$ ($f\in A$), and as a result \sref[0]{0.1.4.5}, if we canonically identify $\wt{M}_x$ and $\wt{N}_x$ with $M_x$ and $N_x$ respectively, then $\wt{u}_x$ is identified with the homomorphism $u_x$ canonically induced by $u$.
+If $P$ is a third $A$-module, $v$ a homomorphism $N\to P$, and $w=v\circ u$, it is immediate that $w_x=v_x\circ u_x$, so $\wt{w}=\wt{v}\circ\wt{u}$.
+We have therefore clearly defined a \emph{covariant (in $M$) functor} $\wt{M}$, from the category of $A$-modules to that of $\wt{A}$-modules.
+\emph{This functor is exact}, since, for each $x\in X$, $M_x$ is an exact functor in $M$ \sref[0]{0.1.3.2};
+in addition, we have $\Supp(M)=\Supp(\wt{M})$, by definition (\sref[0]{0.1.7.1} and \sref[0]{0.3.1.6}).
 \end{proof}
 
 \oldpage[I]{86}
