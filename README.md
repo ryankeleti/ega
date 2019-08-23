@@ -13,7 +13,7 @@ For compiled PDFs, go to the [releases page](https://github.com/ryankeleti/ega/r
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
 - [x] Introduction (EGA I) _(proofread by @thosgood)_
-- [ ] Preliminaries (EGA 0_I)
+- [x] Preliminaries (EGA 0_I)
     + [x] 1. Rings of fractions _(@ryankeleti, proofread by @thosgood)_
     + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti, proofread by @thosgood)_
     + [x] 3. Supplement on sheaves _(@ryankeleti)_
