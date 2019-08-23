@@ -6,14 +6,22 @@ Amateur translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 To compile, `make book`, `make pdfs`, or `make all`.
-For compiled PDFs, go to the [releases page](https://github.com/ryankeleti/ega/releases).
+
+Compiled PDFs, auto-compiled every hour:
+- [Full document](https://fppf.site/ega/book.pdf).
+- [What this is](https://fppf.site/ega/what.pdf).
+- [Introduction](https://fppf.site/ega/intro.pdf).
+- [EGA 0](https://fppf.site/ega/ega0.pdf).
+- [EGA I](https://fppf.site/ega/ega1.pdf).
+- [EGA II](https://fppf.site/ega/ega2.pdf).
+- [EGA III](https://fppf.site/ega/ega3.pdf).
 
 ## Current status
 
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
 - [x] Introduction (EGA I) _(proofread by @thosgood)_
-- [ ] Preliminaries (EGA 0_I)
+- [x] Preliminaries (EGA 0_I)
     + [x] 1. Rings of fractions _(@ryankeleti, proofread by @thosgood)_
     + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti, proofread by @thosgood)_
     + [x] 3. Supplement on sheaves _(@ryankeleti)_
@@ -40,7 +48,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 22. Differential criteria for smoothness and regularity
     + [ ] 23. Japanese rings
 - [ ] The language of schemes (EGA I)
-    + [x] 0. Summary
+    + [x] 0. Summary _(proofread by @thosgood)_
     + [x] 1. Affine schemes _(@ryankeleti)_
     + [x] 2. Preschemes and their morphisms _(@thosgood)_
     + [x] 3. Products of preschemes _(@thosgood, @ryankeleti)_
