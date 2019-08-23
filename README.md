@@ -30,8 +30,8 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 6. Flatness _(@ryankeleti)_
     + [x] 7. Adic rings _(@ryankeleti)_
 - [ ] Preliminaries (EGA 0_III)
-    + [ ] 8. Representable functors _(@ryankeleti)_
-    + [ ] 9. Constructible sets
+    + [x] 8. Representable functors _(@ryankeleti)_
+    + [ ] 9. Constructible sets _(@ryankeleti)_
     + [ ] 10. Supplement on flat modules
     + [ ] 11. Supplement on homological algebra
     + [ ] 12. Supplement on sheaf cohomology

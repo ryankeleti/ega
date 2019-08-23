@@ -198,6 +198,140 @@ To say that this functor is \emph{representable} means that there exists an obje
 For example, in the category $\Set$, the final objects are the singleton sets; in the category of \emph{augmented algebras} over a field $K$ (where the morphisms are the algebra homomorphisms compatible with the augmentation), $K$ is a final object; in the category of \emph{$S$-preschemes} \sref[I]{1.2.5.1}, $S$ is a final object.
 \end{env}
 
+\begin{env}[8.1.11]
+\label{0.8.1.11}
+For two objects $X$ and $Y$ of a category $\C$, set $h_X'(Y)=\Hom(X,Y)$, and for every morphism $u:Y\to Y'$, let $h_X(u)$ be the map $v\mapsto vu$ from $\Hom(X,Y)$ to $\Hom(X,Y')$; $h_X'$ is then a \emph{covariant functor $\C\to\Set$}, so we deduce as in \sref{0.8.1.2} the definition of a canonical covariant functor $h':\C\op\to\CHom(\C,\Set)$; a \emph{covariant} functor $F$ from $\C$ to $\Set$, in other words an object of $\CHom(\C,\Set)$, is then \emph{representable} if there exists an object $X\in\C$ (necessarily unique up to unique isomorphism) such that $F$ is \emph{isomorphic to $h_X'$}; we leave it to the reader to develop the ``dual'' notions of the above, which this time cover the notion of an \emph{inductive limit}, and in particular the usual notion of a ``solution to a universal problem''.
+\end{env}
 
+\subsection{Algebraic structures in categories}
+\label{subsection-algebraic-structures-in-categories}
 
+\begin{env}[8.2.1]
+\label{0.8.2.1}
+\oldpage[0\textsubscript{III}]{9}
+Given two contravariant functors $F$ and $F'$ from $\C$ to $\Set$, recall that for every object $Y\in\C$, we set $(F\times F')(Y)=F(Y)\times F'(Y)$, and for every morphism $u:Y\to Y'$ in $\C$, we set $(F\times F')(u)=F(u)\times F'(u)$, which is the map $(t,t')\mapsto(F(u)(t),F'(u)(t'))$ from $F(Y')\times F'(Y')$ to $F(Y)\times F'(Y)$; $F\times F':\C\to\Set$ is thus a \emph{contravariant functor} (which is none other than the \emph{product} of the objects $F$ and $F'$ in the category $\CHom(\C\op,\Set)$).
+Given an object $X\in\C$, we call an \emph{internal composition law} on $X$ a \emph{natural transformation}
+\[
+  \gamma_X:h_X\times h_X\to h_X.
+  \tag{8.2.1.1}
+\]
 
+In other words (T, 1.2), for every object $Y\in\C$, $\gamma_X(Y)$ is a map $h_X(Y)\times h_X(Y)\to h_X(Y)$ (thus by definition an \emph{internal composition law} on the set $h_X(Y)$) with the condition that for every morphism $u:Y\to Y'$ in $\C$, the diagram
+\[
+  \xymatrix{
+    h_X(Y')\times h_X(Y')\ar[rr]^{h_X(u)\times h_X(u)}\ar[dd]_{\gamma_X(Y')} & &
+    h_X(Y)\times h_X(Y)\ar[dd]^{\gamma_X(Y)}\\\\
+    h_X(Y')\ar[rr]^{h_X(u)} & &
+    h_X(Y)
+  }
+\]
+is commutative; this implies that for the composition laws $\gamma_X(Y)$ and $\gamma_X(Y')$, $h_X(u)$ is a \emph{homomorphism} from $h_X(Y')$ to $h_X(Y)$.
+
+In a similar way, given two objects $Z$ and $X$ of $\C$, we call an \emph{external composition law on $X$, with $Z$ as its domain of operators} a natural transformation
+\[
+  \omega_{X,Z}:h_Z\times h_X\to h_X.
+  \tag{8.2.1.2}
+\]
+
+We see as above that for every $Y\in\C$, $\omega_{X,Z}(Y)$ is an external composition law on $h_X(Y)$, with $h_Z(Y)$ as its domain of operators and such that for every morphism $u:Y\to Y'$, $h_X(u)$ and $h_Z(u)$ form a \emph{di-homomorphism} from $(h_Z(Y'),h_X(Y'))$ to $(h_Z(Y),h_X(Y))$.
+\end{env}
+
+\begin{env}[8.2.2]
+\label{0.8.2.2}
+Let $X'$ be a second object of $\C$, and suppose we are given an internal composition law $\gamma_{X'}$ on $X'$; we say that a morphism $w:X\to X'$ in $\C$ is a \emph{homomorphism} for the composition laws if for every $Y\in\C$, $h_w(Y):h_X(Y)\to h_{X'}(Y)$ is a \emph{homomorphism} for the composition laws $\gamma_X(Y)$ and $\gamma_{X'}(Y)$.
+If $X''$ is a third
+\oldpage[0\textsubscript{III}]{10}
+object of $\C$ equipped with an internal composition law $\gamma_{X''}$ and $w':X'\to X''$ is a morphism in $\C$ which is a homomorphism for $\gamma_{X'}$ and $\gamma_{X''}$, then it is clear that the morphism $w'w:X\to X''$ is a homomorphism for the composition laws $\gamma_X$ and $\gamma_{X''}$.
+An isomorphism $w:X\isoto X'$ in $\C$ is called an \emph{isomorphism for the composition laws $\gamma_X$ and $\gamma_{X'}$} if $w$ is a homomorphism for these composition laws, and if its inverse morphism $w^{-1}$ is a homomorphism for the composition laws $\gamma_{X'}$ and $\gamma_X$.
+
+We define in a similar way the \emph{di-homomorphisms} for pairs of objects of $\C$ equipped with external composition laws.
+\end{env}
+
+\begin{env}[8.2.3]
+\label{0.8.2.3}
+When an internal composition law $\gamma_X$ on an object $X\in\C$ is such that $\gamma_X(Y)$ is a \emph{group law} on $h_X(Y)$ for \emph{every} $Y\in\C$, we say that $X$, equipped with this law, is a \emph{$\C$-group} or a \emph{group object in $\C$}.
+We similarly define \emph{$\C$-rings}, \emph{$\C$-modules}, etc.
+\end{env}
+
+\begin{env}[8.2.4]
+\label{0.8.2.4}
+Suppose that the \emph{product} $X\times X$ of an object $X\in\C$ by itself exists in $\C$; by definition, we then have $h_{X\times X}=h_X\times h_X$ up to canonical isomorphism, since it is a particular case of the projective limit \sref{0.8.1.9}; an internal composition law on $X$ can thus be considered as a functorial morphism $\gamma_X:h_{X\times X}\to h_X$, and thus canonically determine \sref{0.8.1.6} an element $c_X\in\Hom(X\times X,X)$ such that $h_{c_X}=\gamma_X$; in this case, the data of an internal composition law on $X$ is equivalent to the data of a morphism $X\times X\to X$; when $\C$ is the category $\Set$, we recover the classical notion of an internal composition law on a set.
+We have an analogous result for an external composition law when the product $Z\times X$ exists in $\C$.
+\end{env}
+
+\begin{env}[8.2.5]
+\label{0.8.2.5}
+With the above notations, suppose that in addition $X\times X\times X$ exists in $\C$; the characterization of the product as an object representing a functor \sref{0.8.1.9} implies the existence of canonical isomorphisms
+\[
+  (X\times X)\times X\isoto X\times X\times X\isoto X\times(X\times X);
+\]
+if we canonically identity $X\times X\times X$ with $(X\times X)\times X$, then the map $\gamma_X(Y)\times 1_{h_X(Y)}$ identifies with $h_{c_X\times 1_X}(Y)$ for all $Y\in\C$.
+As a result, it is equivalent to say that for every $Y\in\C$, the internal law $\gamma_X(Y)$ is associative, or that the diagram of maps
+\[
+  \xymatrix{
+    h_X(Y)\times h_X(Y)\times h_X(Y)\ar[rr]^{\gamma_X(Y)\times 1}\ar[dd]_{1\times\gamma_X(Y)} & &
+    h_X(Y)\times h_X(Y)\ar[dd]^{\gamma_X(Y)}\\\\
+    h_X(Y)\times h_X(Y)\ar[rr]^{\gamma_X(Y)} & &
+    h_X(Y)
+  }
+\]
+\oldpage[0\textsubscript{III}]{11}
+is commutative, or that the diagram of morphisms
+\[
+  \xymatrix{
+    X\times X\times X\ar[rr]^{c_X\times 1_X}\ar[dd]_{1_X\times c_X} & &
+    X\times X\ar[dd]^{c_X}\\\\
+    X\times X\ar[rr]^{c_X} & &
+    X
+  }
+\]
+is commutative.
+\end{env}
+
+\begin{env}[8.2.6]
+\label{0.8.2.6}
+Under the hypotheses of \sref{0.8.2.5}, if we want to express, for every $Y\in\C$, the internal law $\gamma_X(Y)$ as a \emph{group law}, then it is first necessary that it is associative, and second that there exists a map $\alpha_X(Y):h_X(Y)\to h_X(Y)$ having the properties of the \emph{inverse} operation of a group; as for every morphism $u:Y\to Y'$ in $\C$, we have seen that $h_X(u)$ must be a group homomorphism $h_X(Y')\to h_X(Y)$, we first see that $\alpha_X:h_X\to h_X$ must be a \emph{natural transformation}.
+On the other hand, one can express the chacteristic properties of the inverse $s\mapsto s^{-1}$ of a group $G$ without involving the identity element: it suffices to check that the two composite maps
+\[
+  (s,t)\mapsto(s,s^{-1},t)\mapsto(s,s^{-1}t)\mapsto s(s^{-1}t),
+\]
+\[
+  (s,t)\mapsto(s,s^{-1},t)\mapsto(s,ts^{-1})\mapsto(ts^{-1})s
+\]
+are equal to the second projection $(s,t)\mapsto t$ from $G\times G$ to $G$.
+By \sref{0.8.1.3}, we have $\alpha_X=h_{a_X}$, where $a_X\in\Hom(X,X)$; the first condition above then expresses that the composite morphism
+\[
+  X\times X\xrightarrow{(1_X,a_X)\times 1_X}X\times X\times X\xrightarrow{1_X\times c_X}X\times X\xrightarrow{c_X}X
+\]
+is the second projection $X\times X\to X$ in $\C$, and the second condition is similar.
+\end{env}
+
+\begin{env}[8.2.7]
+\label{0.8.2.7}
+Now suppose that there exists a \emph{final object} $e$ \sref{0.8.1.10} in $\C$.
+Let us always assume that $\gamma_X(Y)$ is a group law on $h_X(Y)$ for every $Y\in\C$, and denote by $\eta_X(Y)$ the identity element of $\gamma_X(Y)$.
+As, for every morphism $u:Y\to Y'$ in $\C$, $h_X(u)$ is a group homomorphism, we have $\eta_X(Y)=(h_X(u))(\eta_X(Y'))$; taking in particular $Y'=e$, in which case $u$ is the unique element $\varepsilon$ of $\Hom(Y,e)$, we see that the element $\eta_X(e)$ completely determines $\eta_X(Y)$ for every $Y\in\C$.
+Set $e_X=\eta_X(X)$, the identity element of the group $h_X(X)=\Hom(X,X)$; the commutativity of the diagram
+\[
+  \xymatrix{
+    h_X(e)\ar[r]^{h_X(\varepsilon)}\ar[d]_{h_{e_X}(e)} &
+    h_X(Y)\ar[d]^{h_{e_X}(Y)}\\
+    h_X(e)\ar[r]^{h_X(\varepsilon)} &
+    h_X(Y)
+  }
+\]
+(cf. \sref{0.8.1.2}) shows that, on the set $h_X(Y)$, the map $h_{e_X}(Y)$ is none other than
+\oldpage[0\textsubscript{III}]{12}
+$s\mapsto\eta_X(Y)$ sending every element to the identity element.
+We then verify that the fact that $\eta_X(Y)$ is the identity element of $\gamma_X(Y)$ for every $Y\in\C$ is equivalent to saying that the composite morphism
+\[
+  X\xrightarrow{(1_X,1_X)}X\times X\xrightarrow{1_X\times e_X}X\times X\xrightarrow{c_X}X,
+\]
+and the analoh in which we swap $1_X$ and $e_X$, are both \emph{equal} to $1_X$.
+\end{env}
+
+\begin{env}[8.2.8]
+\label{0.8.2.8}
+One could of course easily extend the examples of algebraic structures in categories.
+The example of groups was treated with enough detail, but latter on we will usually leave it to the reader to develop analogous notions for the examples of algebraic structures we will encounter.
+\end{env}
