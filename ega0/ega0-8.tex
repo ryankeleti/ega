@@ -168,3 +168,36 @@ $h_{X'}\to F'$ two isomorphisms of functors. Then it follows from \sref{0.8.1.6}
 there is a canonical bijective correspondence between $\Hom(X,X')$ and the set $\Hom(F,F')$ of
 natural transformations $F\to F'$.
 \end{env}
+
+\begin{env}[8.1.9]
+\label{0.8.1.9}
+\textit{Example I. Projective limits}.
+The notion of a contravariant representable functor covers in particular the ``dual'' notion of the usual notion of a ``solution to a universal problem''.
+\oldpage[0\textsubscript{III}]{8}
+More generally, we will see that the notion of the \emph{projective limit} is a special case of the notion of a representable functor.
+Recall that in a category $\C$, we define a \emph{projective system} by the data of a preordered set $I$, a family $(A_\alpha)_{\alpha\in I}$ of objects of $\C$, and for every pair of indices $(\alpha,\beta)$ such that $\alpha\leqslant\beta$, a morphism $u_{\alpha\beta}:A_\beta\to A_\alpha$.
+A \emph{projective limit} of this system in $\C$ consists of an object $B$ of $\C$ (denoted $\varprojlim A_\alpha$), and for each $\alpha\in I$, a morphism $u_\alpha:B\to A_\alpha$ such that: 1\textsuperscript{st}. $u_\alpha=u_{\alpha\beta}u_\beta$ for $\alpha\leqslant\beta$; 2\textsuperscript{nd}. for every object $X$ of $\C$ and every family $(v_\alpha)_{\alpha\in I}$ of morphisms $v_\alpha:X\to A_\alpha$ such that $v_\alpha=u_{\alpha\beta}v_\beta$ for $\alpha\leqslant\beta$, there exists a unique morphism $v:X\to B$ (denoted $\varprojlim v_\alpha$) such that $v_\alpha=u_\alpha v$ for all $\alpha\in I$ (T, 1.8).
+This can be interpreted in the following way: the $u_{\alpha\beta}$ canonically define maps
+\[
+  \overline{u}_{\alpha\beta}:\Hom(X,A_\beta)\to\Hom(X,A_\alpha)
+\]
+which define a \emph{projective system} of sets $(\Hom(X,A_\alpha),\overline{u}_{\alpha\beta})$, and $(v_\alpha)$ is by definition an element of the set $\varprojlim\Hom(X,A_\alpha)$; it is clear that $X\mapsto\varprojlim\Hom(X,A_\alpha)$ is a \emph{contravariant functor} from $\C$ to $\Set$, and the existence of the projective limit $B$ is equivalent to saying that $(v_\alpha)\mapsto\varprojlim v_\alpha$ is an \emph{isomorphism} of functors in $X$
+\[
+  \varprojlim\Hom(X,A_\alpha)\isoto\Hom(X,B),
+  \tag{8.1.9.1}
+\]
+in other words, that the functor $X\mapsto\varprojlim\Hom(X,A_\alpha)$ is \emph{representable}.
+\end{env}
+
+\begin{env}[8.1.10]
+\label{0.8.1.10}
+\textit{Example II. Final objects}.
+Let $\C$ be a category, $\{a\}$ a singleton set.
+Consider the contravariant functor $F:\C\to\Set$ which sends every object $X$ of $\C$ to the set $\{a\}$, and every morphism $X\to X'$ in $\C$ to the unique map $\{a\}\to\{a\}$.
+To say that this functor is \emph{representable} means that there exists an object $e\in\C$ such that for every $Y\in\C$, $\Hom(Y,e)=h_e(Y)$ is a \emph{singleton set}; we say that $e$ is an \emph{final object} of $\C$, and it is clear that two final objects of $\C$ are isomorphic (which allows us to define, in general with the axiom of choice, \emph{one} final object of $\C$ which we then denote $e_\C$).
+For example, in the category $\Set$, the final objects are the singleton sets; in the category of \emph{augmented algebras} over a field $K$ (where the morphisms are the algebra homomorphisms compatible with the augmentation), $K$ is a final object; in the category of \emph{$S$-preschemes} \sref[I]{1.2.5.1}, $S$ is a final object.
+\end{env}
+
+
+
+
