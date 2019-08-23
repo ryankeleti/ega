@@ -226,28 +226,24 @@ As each ideal $\fk{a}$ of $A$ is contained in a maximal ideal, we have $V(\fk{a}
 
 \begin{env}[1.2.1]
 \label{1.1.2.1}
-Let $A$, $A'$ be two rings,
+Let $A$, $A'$ be two rings, and
 \[
   \vphi:A'\to A
 \]
-a homomorphism of rings. For each prime ideal $x=\fk{j}_x\in\Spec(A)=X$, the
-ring $A'/\vphi^{-1}(\fk{j}_x)$ is canonically isomorphic to a subring of
-$A/\fk{j}_x$, so it is integral, otherwise we say
-$\vphi^{-1}(\fk{j}_x)$ is a prime ideal of $A'$; we denote it by
-${}^a\vphi(x)$, and we have also defined a map
+a homomorphism of rings.
+For each prime ideal $x=\fk{j}_x\in\Spec(A)=X$, the ring $A'/\vphi^{-1}(\fk{j}_x)$ is canonically isomorphic to a subring of $A/\fk{j}_x$, and so it is integral, or, in other words, $\vphi^{-1}(\fk{j}_x)$ is a prime ideal of $A'$;
+we denote it by ${}^a\vphi(x)$, and we have thus defined a map
 \[
   {}^a\vphi:X=\Spec(A)\to X'=\Spec(A')
 \]
-(also denoted $\Spec(\vphi)$) we call this the map \emph{associated} to the
-homomorphism $\vphi$. We denote by $\vphi^x$ the injective homomorphism of
-$A'/\vphi^{-1}(\fk{j}_x)$ to $A/\fk{j}_x$ induced by $\vphi$ by
-passing to quotients, so the canonical extension is a monomorphism of fields
+(also denoted $\Spec(\vphi)$), that we call the map \emph{associated} to the homomorphism $\vphi$.
+We denote by $\vphi^x$ the injective homomorphism from $A'/\vphi^{-1}(\fk{j}_x)$ to $A/\fk{j}_x$ induced by $\vphi$ by passing to quotients, as well as its canonical extension to a monomorphism of fields
 \[
   \vphi^x:\kres({}^a\vphi(x))\to\kres(x);
 \]
-for each $f'\in A'$, we therefore have by definition
+for each $f'\in A'$, we therefore have, by definition,
 \[
-  \vphi^x(f'({}^a\vphi(x)))=(\vphi(f'))(x)\quad(x\in X).
+  \vphi^x(f'({}^a\vphi(x)))=(\vphi(f'))(x)\qquad(x\in X).
   \tag{1.2.1.1}
 \]
 \end{env}
@@ -276,16 +272,10 @@ for each $f'\in A'$, we therefore have by definition
 
 \begin{proof}
 \label{proof-1.1.2.2}
-The relation ${}^a\vphi(x)\in V(E')$ is by definition equivalent to
-$E'\subset\vphi^{-1}(\fk{j}_x)$, so $\vphi(E')\subset\fk{j}_x$, and
-finally $x\in V(\vphi(E'))$, hence (i). To prove (ii), we can suppose that
-$\fk{a}$ is equal to its radical, since $V(\rad(\fk{a}))=V(\fk{a})$
-(\sref{1.1.1.2}, (v)) and
-$\vphi^{-1}(\rad(\fk{a}))=\rad(\vphi^{-1}(\fk{a}))$; the relation
-$f'\in\fk{a}'$ is by definition equivalent to $f'(x')=0$ for each
-$x\in{{}^a\vphi(Y)}$, so, by virtue of the formula (1.2.1.1), it is equivalent as well
-to $\vphi(f')(x)=0$ for each $x\in Y$, or $\vphi(f')\in\fk{j}(Y)=\fk{a}$,
-since $\fk{a}$ is equal to its radical; hence (ii).
+The relation ${}^a\vphi(x)\in V(E')$ is, by definition, equivalent to $E'\subset vphi^{-1}(\fk{j}_x)$, so $\vphi(E')\subset\fk{j}_x$, and finally $x\in V(\vphi(E'))$, hence (i).
+To prove (ii), we can suppose that $\fk{a}$ is equal to its radical, since $V(\rad(\fk{a}))=V(\fk{a})$ \sref{1.1.1.2}[v] and $\vphi^{-1}(\rad(\fk{a}))=\rad(\vphi^{-1}(\fk{a}))$;
+the relation $f'\in\fk{a}'$ is, by definition, equivalent to $f'(x')=0$ for each $x\in{{}^a\vphi(Y)}$, so, by equation~\hyperref[1.1.2.1]{(1.2.1.1)}, it is also equivalent to $\vphi(f')(x)=0$ for each $x\in Y$, or to $\vphi(f')\in\fk{j}(Y)=\fk{a}$, since $\fk{a}$ is equal to its radical;
+hence (ii).
 \end{proof}
 
 \begin{cor}[1.2.3]
@@ -293,65 +283,49 @@ since $\fk{a}$ is equal to its radical; hence (ii).
 The map ${}^a\vphi$ is continuous.
 \end{cor}
 
-We remark that if $A''$ is a third ring, $\vphi'$ a homomorphism $A''\to A'$, we have
-${}^a(\vphi'\circ\vphi)={}^a\vphi\circ{}^a\vphi'$; this result and Corollary
-\sref{1.1.2.3} gives that $\Spec(A)$ is a \emph{contravariant functor} in $A$, from the
-category of rings to that of topological spaces.
+We remark that, if $A''$ is a third ring, and $\vphi'$ a homomorphism $A''\to A'$, then we have ${}^a(\vphi'\circ\vphi)={}^a\vphi\circ{}^a\vphi'$;
+this result, with Corollary~\sref{1.1.2.3}, says that $\Spec(A)$ is a \emph{contravariant functor} in $A$, from the category of rings to that of topological spaces.
 
 \begin{cor}[1.2.4]
 \label{1.1.2.4}
 \oldpage[I]{84}
-Suppose that $\vphi$ is such that for each $f\in A$ written as $f=h\vphi(f')$, where $h$ is
-invertible in $A$ (\emph{which is in particular the case when $\vphi$ is} surjective). Then
-${}^a\vphi$ is a homeomorphism from $X$ to ${}^a\vphi(X)$.
+Suppose that $\vphi$ is such that every $f\in A$ can be written as $f=h\vphi(f')$, where $h$ is invertible in $A$ (\emph{which, in particular, is the case when $\vphi$ is \emph{surjective}}).
+Then ${}^a\vphi$ is a homeomorphism from $X$ to ${}^a\vphi(X)$.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.2.4}
-We show that for each subset $E\subset A$, there exists a subset $E'$ of $A'$ such that
-$V(E)=V(\vphi(E'))$; according to the axiom ($T_0$) \sref{1.1.1.8} and the formula
-(1.2.2.1), this implies first that ${}^a\vphi$ is injective, then, according to (1.2.2.1),
-that ${}^a\vphi$ is a homeomorphism. Or, it suffices for each $f\in E$ to have a $f'\in A'$
-such that $h\vphi(f')=f$ with $h$ invertible in $A$; the set $E'$ of these elements $f'$
-provides the answer.
+We show that for each subset $E\subset A$, there exists a subset $E'$ of $A'$ such that $V(E)=V(\vphi(E'))$;
+according to the ($T_0$) axiom \sref{1.1.1.8} and the formula \hyperref[1.1.2.2]{(1.2.2.1)}, this implies first of all that ${}^a\vphi$ is injective, and then, by \hyperref[1.1.2.2]{(1.2.2.1)}, that ${}^a\vphi$ is a homeomorphism.
+But it suffices, for each $f\in E$, to take $f'\in A'$ such that $h\vphi(f')=f$ with $h$ invertible in $A$;
+the set $E'$ of these elements $f'$ is exactly what we are searching for.
 \end{proof}
 
 \begin{env}[1.2.5]
 \label{1.1.2.5}
-In particular, when $\vphi$ is the canonical homomorphism of $A$ to a ring quotient
-$A/\fk{a}$, we get \sref{1.1.1.12}, and ${}^a\vphi$ is the
-\emph{canonical injection} of $V(\fk{a})$, identified with $\Spec(A/\fk{a})$,
-in $X=\Spec(A)$.
+In particular, when $\vphi$ is the canonical homomorphism from $A$ to a ring quotient $A/\fk{a}$, we again get \sref{1.1.1.12}, and ${}^a\vphi$ is the \emph{canonical injection} of $V(\fk{a})$, identified with $\Spec(A/\fk{a})$, into $X=\Spec(A)$.
 \end{env}
 
 Another particular case of \sref{1.1.2.4}:
 \begin{cor}[1.2.6]
 \label{1.1.2.6}
-If $S$ is a multiplicative subset of $A$, the spectrum $\Spec(S^{-1}A)$ identifies
-canonically (with its topology) with the subspace of $X=\Spec(A)$ consisting of the $x$
-such that $\fk{j}_x\cap S=\emp$.
+If $S$ is a multiplicative subset of $A$, the spectrum $\Spec(S^{-1}A)$ is canonically identified (with its topology) with the subspace of $X=\Spec(A)$ consisting of the $x$ such that $\fk{j}_x\cap S=\emp$.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.2.6}
-We know by \sref[0]{0.1.2.6} that the prime ideals of $S^{-1}A$ are the ideals
-$S^{-1}\fk{j}_x$ such that $\fk{j}_x\cap S=\emp$, and that we have
-$\fk{j}_x=(i_A^S)^{-1}(S^{-1}\fk{j}_x)$. It suffices to apply the $i_A^S$
-with Corollary \sref{1.1.2.4}.
+We know by \sref[0]{0.1.2.6} that the prime ideals of $S^{-1}A$ are the ideals $S^{-1}\fk{j}_x$ such that $\fk{j}_x\cap S=\emp$, and that we have $\fk{j}_x=(i_A^S)^{-1}(S^{-1}\fk{j}_x)$.
+It then suffices to apply Corollary~\sref{1.1.2.4} to the $i_A^S$.
 \end{proof}
 
 \begin{cor}[1.2.7]
 \label{1.1.2.7}
-For ${}^a\vphi(X)$ to be dense in $X'$, it is necessary and sufficient for each element
-of the kernel $\Ker\vphi$ to be nilpotent.
+For ${}^a\vphi(X)$ to be dense in $X'$, it is necessary and sufficient for each element of the kernel $\Ker\vphi$ to be nilpotent.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.2.7}
-Applying the formula (1.2.2.3) to the ideal $\fk{a}=(0)$, we have
-$\wt{{}^a\vphi(X)}=V(\Ker\vphi)$, and for $V(\Ker\vphi)=X$ to hold, it is necessary
-and sufficient that $\Ker\vphi$ is contained in all the prime ideals of $A'$, that is to say
-in the nilradical $\rad'$ of $A'$.
+Applying equation~\hyperref[1.1.2.2]{(1.2.2.3)} to the ideal $\fk{a}=(0)$, we have $\wt{{}^a\vphi(X)}=V(\Ker\vphi)$, and for $V(\Ker\vphi)=X$ to hold, it is necessary and sufficient for $\Ker\vphi$ to be contained in all the prime ideals of $A'$, or, equivalent, in the nilradical $\rad'$ of $A'$.
 \end{proof}
 
 \subsection{Sheaf associated to a module}
