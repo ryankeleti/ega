@@ -6,7 +6,14 @@ Amateur translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 To compile, `make book`, `make pdfs`, or `make all`.
-For compiled PDFs, go to the [releases page](https://github.com/ryankeleti/ega/releases).
+Compiled PDFs, auto-compiled every hour:
+- [Full document](https://fppf.site/ega/book.pdf).
+- [What this is](https://fppf.site/ega/what.pdf).
+- [Introduction](https://fppf.site/ega/intro.pdf).
+- [EGA 0](https://fppf.site/ega/ega0.pdf).
+- [EGA I](https://fppf.site/ega/ega1.pdf).
+- [EGA II](https://fppf.site/ega/ega2.pdf).
+- [EGA III](https://fppf.site/ega/ega3.pdf).
 
 ## Current status
 
