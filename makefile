@@ -32,7 +32,7 @@ $(FILES): %: %.pdf
 
 .PHONY: book
 book:
-	python ./scripts/make_book.py "$(CURDIR)" > book.tex
+	python3 ./scripts/make_book.py "$(CURDIR)" > book.tex
 	$(PDFLATEX) book
 	$(PDFLATEX) book
 	bibtex book
