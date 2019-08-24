@@ -15,6 +15,7 @@ Compiled PDFs, auto-compiled every hour:
 - [EGA I](https://fppf.site/ega/ega1.pdf).
 - [EGA II](https://fppf.site/ega/ega2.pdf).
 - [EGA III](https://fppf.site/ega/ega3.pdf).
+- [References](https://fppf.site/ega/ref.pdf).
 
 ## Current status
 
