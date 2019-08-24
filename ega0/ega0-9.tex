@@ -4,6 +4,100 @@
 \subsection{Constructible sets}
 \label{subsection-constructible sets}
 
+\begin{defn}[9.1.1]
+\label{0.9.1.1}
+We say that a continuous map $f:X\to Y$ is \emph{quasi-compact} if for every quasi-compact open subset $U$ of $Y$, $f^{-1}(U)$ is quasi-compact.
+We say that a subset $Z$ of a topological space $X$ is \emph{retrocompact} in $X$ if the canonical injection $Z\to X$ is quasi-compact, in other words, if for every quasi-compact open subset $U$ of $X$, $U\cap Z$ is quasi-compact.
+\end{defn}
+
+A \emph{closed} subset of $X$ is retrocompact in $X$, but a quasi-compact subset of $X$ is not necessarily retrocompact in $X$.
+If $X$ is quasi-compact, every retrocompact open subset of $X$ is quasi-compact.
+It is clear that every \emph{finite} union of retrocompact sets in $X$ is retrocompact in $X$, as every finite union of quasi-compact sets is quasi-compact.
+Every finite intersection of retrocompact open sets in $X$ is a retrocompact open set in $X$.
+In a \emph{locally Noetherian} space $X$, every quasi-compact set is a Noetherian subspace, and as a result \emph{every subset} of $X$ is retrocompact in $X$.
+
+\begin{defn}[9.1.2]
+\label{0.9.1.2}
+Given a topological space $X$, we say that a subset of $X$ is \emph{constructible} if it belongs to the smallest set of subsets $\fk{F}$ of $X$ containing all the retrocompact open subsets of $\fk{F}$ and is stable under finite intersections and complements (which implies that $\fk{F}$ is also stable under finite unions).
+\end{defn}
+
+\begin{prop}[9.1.3]
+\label{0.9.1.3}
+For a subset of $X$ to be constructible, it is necessary and sufficient for it to be a finite union of sets of the form $U\cap\complement{V}$, where $U$ and $V$ are retrocompact open sets in $X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.9.1.3}
+It is clear that the condition is sufficient.
+To see that it is necessary, consider the set $\fk{G}$ of finite unions of sets of the form $U\cap\complement{V}$, where $U$ and $V$ are retrocompact open sets in $X$; it suffices to see that every complement of a set in $\fk{G}$ is in $\fk{G}$.
+Let $Z=\bigcup_{i\in I}(U_i\cap\complement{V_i})$, where $I$ is finite, $U_i$ and $V_i$ retrocompact open sets in $X$; we have
+$\complement{Z}=\bigcap_{i\in I}(V_i\cup\complement{U_i})$, so $Z$ is a finite union of sets which are intersections of a certain number of the $V_i$ and of a certain number of the $\complement{U_i}$, thus of the form
+\oldpage[0\textsubscript{III}]{13}
+$V\cap\complement{U}$, where $U$ is the union of a certain number of the $U_i$ and $V$ is the intersection of a certain number of the $V_i$; but we have noted above that finite unions and intersections of retrocompact open sets in $X$ are retrocompact open sets in $X$, hence the conclusion.
+\end{proof}
+
+\begin{cor}[9.1.4]
+\label{0.9.1.4}
+Every constructible subset of $X$ is retrocompact in $X$.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.9.1.4}
+It suffices to show that if $U$ and $V$ are retrocompact open sets in $X$, then $U\cap\complement{V}$ is retrocompact in $X$; if $W$ is a quasi-compact open set in $X$, then $W\cap U\cap\complement{V}$ is closed in the quasi-compact space $W\cap U$, hence it is quasi-compact.
+\end{proof}
+
+In particular:
+\begin{cor}[9.1.5]
+\label{0.9.1.5}
+For an open subset $U$ of $X$ to be constructible, it is necessary and sufficient for it to be retrocompact in $X$.
+For a closed subset $F$ of $X$ to be constructible, it is necessary and sufficient for the open set $\complement{F}$ to be retrocompact.
+\end{cor}
+
+\begin{env}[9.1.6]
+\label{0.9.1.6}
+An important case is when every quasi-compact open subset of $X$ is retrocompact, in other words, when the intersection of two quasi-compact open subsets of $X$ is quasi-compact (cf.~\sref[I]{1.5.5.6}).
+When $X$ is also quasi-compact, this implies that the retrocompact open subsets of $X$ are identical to the quasi-compact open subsets of $X$, and the constructible subsets of $X$ are finite unions of sets of the form $U\cap\complement{V}$, where $U$ and $V$ are quasi-compact open sets.
+\end{env}
+
+\begin{cor}[9.1.7]
+\label{0.9.1.7}
+For a subset of a Noetherian space to be constructible, it is necessary and sufficient for it to be a finite union of locally closed subsets of $X$.
+\end{cor}
+
+\begin{prop}[9.1.8]
+\label{0.9.1.8}
+Let $X$ be a topological space, $U$ an open subset of $X$.
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item If $T$ is a constructible subset of $X$, then $T\cap U$ is a constructible subset of $U$.
+  \item In addition, suppose that $U$ is retrocompact in $X$. For a subset $Z$ of $U$ to be constructible in $X$, it is necessary and sufficient for it to be constructible in $U$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.9.1.8}
+\medskip\noindent
+\begin{enumerate}[label=(\roman*)]
+  \item Using Proposition \sref{0.9.1.3}, we reduce to showing that if $T$ is a retrocompact open set in $X$, then $T\cap U$ is a retrocompact open set in $U$, in other words, for every quasi-compact open $W\subset U$, $T\cap U\cap W=T\cap W$ is quasi-compact, which immediately follows from the hypothesis.
+  \item The condition is necessary by (i), so it remains to show that it is sufficient.
+    By Proposition \sref{0.9.1.3}, it suffices to consider the case where $Z$ is a retrocompact open set \emph{in $U$}, because it will then follow that $U-Z$ is constructible in $X$, and if $Z$ and $Z'$ are two retrocompact opens \emph{in $U$}, then $Z\cap(U-Z')$ will be constructible in $X$.
+    If $W$ is a quasi-compact open set in $X$ and $Z$ a retrocompact open set in $U$, then we have $Z\cap W=Z\cap(W\cap U)$, and by hypothesis $W\cap U$ is a quasi-compact open set in $U$; so $W\cap Z$ is quasi-compact, and as a result $Z$ is a retrocompact open set in $X$, and \emph{a fortiori} constructible in $X$.
+\end{enumerate}
+\end{proof}
+
+\begin{cor}[9.1.9]
+\label{0.9.1.9}
+Let $X$ be a topological space, $(U_i)_{i\in I}$ a finite cover of $X$ by retrocompact open sets in $X$.
+For a subset $Z$ of $X$ to be constructible in $X$, it is necessary and sufficient for $Z\cap U_i$ to be constructible in $U_i$ for all $i\in I$.
+\end{cor}
+
+\begin{env}[9.1.10]
+\label{0.9.1.10}
+In particular, suppose that $X$ is quasi-compact and every point
+\oldpage[0\textsubscript{III}]{14}
+of $X$ admits a fundamental system of retrocompact open neighborhoods in $X$ (and \emph{a fortiori} quasi-compact); then the condition for a subset $Z$ of $X$ to be constructible in $X$ is of a \emph{local} nature, in other words, it is necessary and sufficient that for evert $x\in X$, there exists an open neighborhood $V$ of $x$ such that $V\cap Z$ is constructible in $V$.
+Indeed, if this condition is satisfied, then there exists for every $x\in X$ an open neighborhood $V$ of $x$ which is \emph{retrocompact in $X$} and such that $V\cap Z$ is constructible in $V$, by the hypotheses on $X$ and by Proposition \sref{0.9.1.8}[i]; it then suffices to cover $X$ by a finite number of these neighborhoods and to apply Corollary \sref{0.9.1.9}.
+\end{env}
+
 \subsection{Constructible subsets of Noetherian spaces}
 \label{subsection-constructible-subsets-of-noetherian-spaces}
 
