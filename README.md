@@ -32,9 +32,9 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 7. Adic rings _(@ryankeleti)_
 - [ ] Preliminaries (EGA 0_III)
     + [x] 8. Representable functors _(@ryankeleti)_
-    + [ ] 9. Constructible sets _(@ryankeleti)_
+    + [x] 9. Constructible sets _(@ryankeleti)_
     + [ ] 10. Supplement on flat modules
-    + [ ] 11. Supplement on homological algebra
+    + [ ] 11. Supplement on homological algebra _(@ryankeleti)_
     + [ ] 12. Supplement on sheaf cohomology
     + [ ] 13. Projective limits in homological algebra
 - [ ] Preliminaries (EGA 0_IV)
