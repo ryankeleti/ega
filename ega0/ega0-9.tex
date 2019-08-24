@@ -178,6 +178,7 @@ Let $X$ be a Noetherian space, $(E_\alpha)$ an increasing filtered family of con
   \item[\emph{(1st)}] $X$ is the union of the family $(E_\alpha)$.
   \item[\emph{(2nd)}] Every irreducible closed subset of $X$ is contained in the closure of one of the $E_\alpha$.
 \end{enumerate}
+
 Then there exists an index $\alpha$ such that $X=E_\alpha$.
 
 When every irreducible closed subset of $X$ admits a generic point, the hypothesis \emph{(1st)} can be omitted.
@@ -189,13 +190,13 @@ We apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\fk
 The proposition is evident if $X$ is not irreducible, because each of the irreducible components $X_i$ of $X$ ($1\leqslant i\leqslant m$) is contained in an $E_{\alpha_i}$, and there exists an $E_\alpha$ containing all of the $E_{\alpha_i}$.
 Now suppose that $X$ is irreducible.
 By hypothesis, there exists a $\beta$ such that $X=\overline{E_\beta}$, so \sref{0.9.2.2} $E_\beta$ contains a nonempty open subset $U$ of $X$.
-But then the closed set $X-U$ is contained in an $E_\gamma$, and it suffices to take $E_\alpha$ containing $E_\beta$ and $E_\gamma$.
+But then the closed set $X-U$ is contained in an $E_\gamma$, and it suffices to take an $E_\alpha$ containing $E_\beta$ and $E_\gamma$.
 When every irreducible closed subset $Y$ of $X$
 \oldpage[0\textsubscript{III}]{16}
 admits a generic point $y$, there exists $\alpha$ such that $y\in E_\alpha$, so $Y=\overline{\{y\}}\subset\overline{E_\alpha}$, and condition (2nd) is therefore a consequence of (1st).
 \end{proof}
 
-\begin{prop}[0.9.2.5]
+\begin{prop}[9.2.5]
 \label{0.9.2.5}
 Let $X$ be a Noetherian space, $x$ a point of $X$, and $E$ a constructible subset of $X$.
 For $E$ to be a neighborhood of $x$, it is necessary and sufficient that for every irreducible closed subset $Y$ of $X$ containing $x$, $E\cap Y$ is dense in $Y$ (if there exists a generic point $y$ of $Y$, this also implies \sref{0.9.2.2} that $y\in E$).
@@ -223,3 +224,52 @@ In addition, Proposition \sref{0.9.2.5} shows that $E$ is then a neighborhood of
 
 \subsection{Constructible functions}
 \label{subsection-constructible-functions}
+
+\begin{defn}[9.3.1]
+\label{0.9.3.1}
+Let $h$ be a map from a topological spacee $X$ to a set $T$.
+We say that $h$ is \emph{constructible} if $h^{-1}(t)$ is constructible for every $t\in T$, and empty except for finitely many values of $t$; then for every subset $S$ of $T$, $h^{-1}(S)$ is constructible.
+We say that $h$ is \emph{locally constructible} if every $x\in X$ has an open neighborhood $V$ such that $h|V$ is constructible.
+\end{defn}
+
+Every constructible function is locally constructible; the converse is true when $X$ is quasi-compact and admits a basis formed by the retrocompact open sets in $X$ (in particular, when $X$ is Noetherian).
+
+\begin{prop}[9.3.2]
+\label{0.9.3.2}
+Let $h$ be a map from a Noetherian space $X$ to a set $T$.
+For $h$ to be constructible, it is necessary and sufficient that for every irreducible closed subset $Y$ of $X$, there exists a nonempty subset $U$ of $Y$, open relative to $Y$, in which $h$ is constant.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.9.3.2}
+The condition is necessary: indeed, by hypothesis, $h$ does not take finitely many values $t_i$ on $Y$, and each of the sets $h^{-1}(t_i)\cap Y$ is constructible in $Y$ \sref{0.9.2.1}; as they can not all be rare subsets of the space $Y$, at least one of them contains a nonempty open set \sref{0.9.2.3}.
+
+\oldpage[0\textsubscript{III}]{17}
+To see that the condition is sufficient, we apply the principle of Noetherian induction on the set $\fk{M}$ of closed subsets $Y$ of $X$ such that the restriction $h|Y$ is constructible; we can thus assume that for every closed subset $Y\neq X$ of $X$,
+$h|Y$ is constructible.
+If $X$ is not irreducible, then the restriction of $h$ to each of the (finitely many) irreducible components $X_i$ of $X$ is constructible, and it then follows immediately from Definition \sref{0.9.3.1} that $h$ is constructible.
+If $X$ is irreducible, then there exists by hypothesis a nonempty open subset $U$ of $X$ on which $h$ is constant; on the other hand, the restriction of $h$ to $X-U$ is constructible by hypothesis, and it follows immediately that $h$ is constructible.
+\end{proof}
+
+\begin{cor}[9.3.3]
+\label{0.9.3.3}
+Let $X$ be a Noetherian space in which every irreducible closed subset admits a generic point.
+If $h$ is a map from $X$ to a set $T$ such that, for every $t\in T$, $h^{-1}(t)$ is constructible, then $h$ is constructible.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.9.3.3}
+If $Y$ is an irreducible closed subset of $X$ and $y$ its generic point, then $Y\cap h^{-1}(h(y))$ is constructible and contains $y$, hence \sref{0.9.2.2} this set contains a nonempty open subset of $Y$, and it suffices to apply Proposition \sref{0.9.3.2}.
+\end{proof}
+
+\begin{prop}[9.3.4]
+\label{0.9.3.4}
+Let $X$ be a Noetherian space in which every irreducible closed subset admits a generic point, $h$ a constructible map from $X$ to an ordered set.
+For $h$ to be upper semi-continuous on $X$, it is necessary and sufficient that for every $x\in X$ and every specialization \sref[0]{0.2.1.2} $x'$ of $x$, we have $h(x')\leqslant h(x)$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.9.3.4}
+The function $h$ does not take a finite number of values; therefore, to say that it is upper semi-continuous means that for every $x\in X$, the set $E$ of the $y\in X$ such that $h(y)\leqslant h(x)$ is a neighborhood of $x$.
+By hypothesis, $E$ is a constructible subset of $X$; on the other hand,to say that an irreducible closed subset $Y$ of $X$ contains $x$ means that its generic point $y$ is a specialization of $x$; the conclusion then follows from Proposition \sref{0.9.2.5}.
+\end{proof}
