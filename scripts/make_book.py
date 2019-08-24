@@ -97,6 +97,8 @@ for name in list_text_files(path):
         continue
       if line.find("\\bibliography") == 0:
         continue
+      if line.find("\\nocite{*}") == 0:
+        continue
       if line.find("\\end{document}") == 0:
         continue
       print(line, end='')
