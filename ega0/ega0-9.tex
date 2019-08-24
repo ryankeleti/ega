@@ -98,6 +98,39 @@ of $X$ admits a fundamental system of retrocompact open neighborhoods in $X$ (an
 Indeed, if this condition is satisfied, then there exists for every $x\in X$ an open neighborhood $V$ of $x$ which is \emph{retrocompact in $X$} and such that $V\cap Z$ is constructible in $V$, by the hypotheses on $X$ and by Proposition \sref{0.9.1.8}[i]; it then suffices to cover $X$ by a finite number of these neighborhoods and to apply Corollary \sref{0.9.1.9}.
 \end{env}
 
+\begin{defn}[9.1.11]
+\label{0.9.1.11}
+Let $X$ be a topological space.
+We say that a subset $T$ of $X$ is \emph{locally constructible} in $X$ if for every $x\in X$ there exists an open neighborhood $V$ of $x$ such that $T\cap V$ is constructible in $V$.
+\end{defn}
+
+It follows from Proposition \sref{0.9.1.8}[i] that if $V$ is such that $V\cap T$ is constructible in $V$, then for every open $W\subset V$, $W\cap T$ is constructible in $W$.
+If $T$ is locally constructible in $X$, then for every open set $U$ in $X$, $T\cap U$ is locally constructible in $U$, as a result of the above remark.
+The same remark shows that the set of locally constructible subsets of $X$ is stable under finite unions and finite intersections; on ther other hand, it is clear that it is also stabble under taking complements.
+
+\begin{prop}[9.1.12]
+\label{0.9.1.12}
+Let $X$ be a topological space.
+Every constructible set in $X$ is locally constructible in $X$.
+The converse is true if $X$ is quasi-compact and if its topology admits a basis formed by the retrocompact sets in $X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.9.1.12}
+The first assertion follows from Definition \sref{0.9.1.11} and the second from \sref{0.9.1.10}.
+\end{proof}
+
+\begin{cor}[9.1.13]
+\label{0.9.1.13}
+Let $X$ be a topological space whose topology admits a basis formed by the retrocompact sets in $X$.
+Then every locally constructible subset $T$ of $X$ is retrocompact in $X$.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.9.1.13}
+Let $U$ be a quasi-compact open set in $X$; $T\cap U$ is locally constructible in $U$, hence constructible in $U$ by Proposition \sref{0.9.1.12}, and as a result quasi-compact by Corollary \sref{0.9.1.4}.
+\end{proof}
+
 \subsection{Constructible subsets of Noetherian spaces}
 \label{subsection-constructible-subsets-of-noetherian-spaces}
 
