@@ -777,8 +777,8 @@ the proposition then follows from Corollaries~\sref{1.1.3.8} and \sref{1.1.3.9}.
 
 \begin{thm}[1.5.1]
 \label{1.1.5.1}
-Let $A$ be a \emph{Noetherian} ring, $X=\Spec(A)$ its prime spectrum, $V$ an open subset of
-$X$, and $\sh{F}$ an $(\OO_X|V)$-module. The following conditions are equivalent:
+Let $A$ be a \emph{Noetherian} ring, $X=\Spec(A)$ its prime spectrum, $V$ an open subset of $X$, and $\sh{F}$ an $(\OO_X|V)$-module.
+The following conditions are equivalent.
 \begin{enumerate}[label=\emph{(\alph*)}]
   \item $\sh{F}$ is coherent.
   \item $\sh{F}$ is of finite type and quasi-coherent.
@@ -789,47 +789,38 @@ $X$, and $\sh{F}$ an $(\OO_X|V)$-module. The following conditions are equivalent
 \begin{proof}
 \label{proof-1.1.5.1}
 \oldpage[I]{93}
-(a) trivially implies (b). To see that (b) implies (c), since $V$ is quasi-compact
-\sref[0]{0.2.2.3}, we have previously seen that $\sh{F}$ is isomorphic to a
-sheaf $\wt{N}|V$, where $N$ is an $A$-module \sref{1.1.4.1}. We have
-$N=\varinjlim M_\lambda$, where $M_\lambda$ vary over the set of $A$-submodules of $N$ of finite type, hence
-\sref{1.1.3.9} $\sh{F}=\wt{N}|V=\varinjlim\wt{M_\lambda}|V$; but as $\sh{F}$
-is of finite type, and $V$ is quasi-compact, there exists an index $\lambda$ such that
-$\sh{F}=\wt{M_\lambda}|V$ \sref[0]{0.5.2.3}.
+(a) trivially implies (b).
+To see that (b) implies (c), note that, since $V$ is quasi-compact \sref[0]{0.2.2.3}, we have previously seen that $\sh{F}$ is isomorphic to a sheaf $\wt{N}|V$, where $N$ is an $A$-module \sref{1.1.4.1}.
+We have $N=\varinjlim M_\lambda$, where $M_\lambda$ run over the set of $A$-submodules of $N$ of finite type, hence \sref{1.1.3.9} $\sh{F}=\wt{N}|V=\varinjlim\wt{M_\lambda}|V$;
+but since $\sh{F}$ is of finite type, and $V$ is quasi-compact, there exists an index $\lambda$ such that $\sh{F}=\wt{M_\lambda}|V$ \sref[0]{0.5.2.3}.
 
-Finally, we show that (c) implies (a). It is clear that $\sh{F}$ is then of finite type
-(\sref{1.1.3.6} and \sref{1.1.3.9}); in addition, the question being local, we can
-reduce to the case where $V=D(f)$, $f\in A$. As $A_f$ is Noetherian, we see finally that it
-reduces to proving that the kernel of a homomorphism $\wt{A^n}\to\wt{M}$, where
-$M$ is an $A$-module, is of finite type. Such a homomorphism is of the form $\wt{u}$,
-where $u$ is a homomorphism $A^n\to M$ \sref{1.1.3.8}, and if $P=\Ker u$, we have
-$\wt{P}=\Ker\wt{u}$ \sref{1.1.3.9}. As $A$ is Noetherian, $P$ is of finite
-type, which finishes the proof.
+Finally, we show that (c) implies (a).
+It is clear that $\sh{F}$ is then of finite type (\sref{1.1.3.6} and \sref{1.1.3.9});
+in addition, the question being local, we can restrict to the case where $V=D(f)$, $f\in A$.
+Since $A_f$ is Noetherian, we see that it suffices to prove that the kernel of a homomorphism $\wt{A^n}\to\wt{M}$, where $M$ is an $A$-module, is of finite type.
+But such a homomorphism is of the form $\wt{u}$, where $u$ is a homomorphism $A^n\to M$ \sref{1.1.3.8}, and if $P=\Ker u$ then we have $\wt{P}=\Ker\wt{u}$ \sref{1.1.3.9}.
+Since $A$ is Noetherian, $P$ is of finite type, which finishes the proof.
 \end{proof}
 
 \begin{cor}[1.5.2]
 \label{1.1.5.2}
-Under the hypotheses of \sref{1.1.5.1}, the sheaf $\OO_X$ is a quasi-coherent sheaf of
-rings.
+Under the hypotheses of \sref{1.1.5.1}, the sheaf $\OO_X$ is a quasi-coherent sheaf of rings.
 \end{cor}
 
 \begin{cor}[1.5.3]
 \label{1.1.5.3}
-Under the hypotheses of \sref{1.1.5.1}, each coherent sheaf over an open subset of $X$ is
-induced by a coherent sheaf on $X$.
+Under the hypotheses of \sref{1.1.5.1}, every coherent sheaf over an open subset of $X$ is induced by a coherent sheaf on $X$.
 \end{cor}
 
 \begin{cor}[1.5.4]
 \label{1.1.5.4}
-Under the hypotheses of \sref{1.1.5.1}, each quasi-coherent $\OO_X$-module $\sh{F}$ is
-the inductive limit of the coherent $\OO_X$-submodules of $\sh{F}$.
+Under the hypotheses of \sref{1.1.5.1}, every quasi-coherent $\OO_X$-module $\sh{F}$ is the inductive limit of the coherent $\OO_X$-submodules of $\sh{F}$.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.5.4}
-Indeed, $\sh{F}=\wt{M}$ where $M$ is an $A$-module, and $M$ is the inductive limit of
-its submodules of finite type; we conclude the proof by \sref{1.1.3.9} and
-\sref{1.1.5.1}.
+Indeed, $\sh{F}=\wt{M}$, where $M$ is an $A$-module, and $M$ is the inductive limit of its submodules of finite type;
+we conclude the proof by appealing to \sref{1.1.3.9} and \sref{1.1.5.1}.
 \end{proof}
 
 \subsection{Functorial properties of quasi-coherent sheaves over a prime spectrum}
