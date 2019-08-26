@@ -79,7 +79,7 @@ Let $X$ be a topological space, $U$ an open subset of $X$.
 \begin{enumerate}[label=(\roman*)]
   \item Using Proposition \sref{0.9.1.3}, we reduce to showing that if $T$ is a retrocompact open set in $X$, then $T\cap U$ is a retrocompact open set in $U$, in other words, for every quasi-compact open $W\subset U$, $T\cap U\cap W=T\cap W$ is quasi-compact, which immediately follows from the hypothesis.
   \item The condition is necessary by (i), so it remains to show that it is sufficient.
-    By Proposition \sref{0.9.1.3}, it suffices to consider the case where $Z$ is a retrocompact open set \emph{in $U$}, because it will then follow that $U-Z$ is constructible in $X$, and if $Z$ and $Z'$ are two retrocompact opens \emph{in $U$}, then $Z\cap(U-Z')$ will be constructible in $X$.
+    By Proposition \sref{0.9.1.3}, it suffices to consider the case where $Z$ is a retrocompact open set \emph{in $U$}, because it will then follow that $U\setmin Z$ is constructible in $X$, and if $Z$ and $Z'$ are two retrocompact opens \emph{in $U$}, then $Z\cap(U\setmin Z')$ will be constructible in $X$.
     If $W$ is a quasi-compact open set in $X$ and $Z$ a retrocompact open set in $U$, then we have $Z\cap W=Z\cap(W\cap U)$, and by hypothesis $W\cap U$ is a quasi-compact open set in $U$; so $W\cap Z$ is quasi-compact, and as a result $Z$ is a retrocompact open set in $X$, and \emph{a fortiori} constructible in $X$.
 \end{enumerate}
 \end{proof}
@@ -168,7 +168,7 @@ For a subset $E$ of $X$ to be constructible, it is necessary and sufficient that
 The necessity of the condition follows from the fact that $E\cap Y$ must be a constructible subset of $Y$ and from Proposition \sref{0.9.2.2}, since a nondense subset of $Y$ is necessarily rare in the irreducible space $Y$ \sref[0]]{0.2.1.1}.
 To prove that the condition is sufficient, apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\fk{F}$ of closed subsets $Y$ of $X$ such that $Y\cap E$ is constructible (relative to $Y$ or relative to $X$, which are equivalent): we can thus assume that for every closed subset $Y\neq X$ of $X$, $E\cap Y$ is constructible.
 First suppose that $X$ is not irreducible, and let $X_i$ ($1\leqslant i\leqslant m$) are its irreducible components, necessarily of finite number \sref[0]{0.2.2.5}; by hypothesis the $E\cap X_i$ are constructible, hence their union $E$ is as well.
-Suppose now that $X$ is irreducible; then by hypothesis, if $E$ is rare, then $\overline{E}\neq X$ and $E=E\cap\overline{E}$ is constructible; if $E$ contains a nonempty open subset $U$ of $X$, then it is the union of $U$ and $E\cap(X-U)$; but $X-U$ is a closed set distinct from $X$, so $E\cap(X-U)$ is constructible; as a result, $E$ is itself constructible, which finishes the proof.
+Suppose now that $X$ is irreducible; then by hypothesis, if $E$ is rare, then $\overline{E}\neq X$ and $E=E\cap\overline{E}$ is constructible; if $E$ contains a nonempty open subset $U$ of $X$, then it is the union of $U$ and $E\cap(X\setmin U)$; but $X\setmin U$ is a closed set distinct from $X$, so $E\cap(X\setmin U)$ is constructible; as a result, $E$ is itself constructible, which finishes the proof.
 \end{proof}
 
 \begin{cor}[9.2.4]
@@ -190,7 +190,7 @@ We apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\fk
 The proposition is evident if $X$ is not irreducible, because each of the irreducible components $X_i$ of $X$ ($1\leqslant i\leqslant m$) is contained in an $E_{\alpha_i}$, and there exists an $E_\alpha$ containing all of the $E_{\alpha_i}$.
 Now suppose that $X$ is irreducible.
 By hypothesis, there exists a $\beta$ such that $X=\overline{E_\beta}$, so \sref{0.9.2.2} $E_\beta$ contains a nonempty open subset $U$ of $X$.
-But then the closed set $X-U$ is contained in an $E_\gamma$, and it suffices to take an $E_\alpha$ containing $E_\beta$ and $E_\gamma$.
+But then the closed set $X\setmin U$ is contained in an $E_\gamma$, and it suffices to take an $E_\alpha$ containing $E_\beta$ and $E_\gamma$.
 When every irreducible closed subset $Y$ of $X$
 \oldpage[0\textsubscript{III}]{16}
 admits a generic point $y$, there exists $\alpha$ such that $y\in E_\alpha$, so $Y=\overline{\{y\}}\subset\overline{E_\alpha}$, and condition (2nd) is therefore a consequence of (1st).
@@ -207,7 +207,7 @@ For $E$ to be a neighborhood of $x$, it is necessary and sufficient that for eve
 The condition is evidently necessary; we will prove that it is sufficient.
 Applying the principle of Noetherian induction to the set $\fk{M}$ of closed subsets $Y$ of $X$ containing $x$ and such that $E\cap Y$ is a neighborhood of $x$ in $Y$, we can assume that every closed subset $Y\neq X$ of $X$ containing $x$ belongs to $\fk{M}$.
 If $X$ is not irreducible, then each of the irreducible components $X_i$ of $X$ containing $x$ are distinct from $X$, hence $E\cap X_i$ is a neighborhood of $x$ with respect to $X_i$; as a result, $E$ is a neighborhood of $x$ in the union of the irreducible components of $X$ containing $x$, and as this union is a neighborhood of $x$ in $X$, so is $E$.
-If $X$ is irreducible, then $E$ is dense in $X$ by hypothesis, so it contains a nonempty open subset $U$ of $X$ \sref{0.9.2.2}; the proposition is then evident if $x\in U$; otherwise, $x$ is by hypothesis inside $E\cap(X-U)$ with respect to $X-U$, so the closure of $X-E$ in $X$ does not contain $x$, and the complement of this closure is a neighborhood of $x$ contained in $E$, which finishes the proof.
+If $X$ is irreducible, then $E$ is dense in $X$ by hypothesis, so it contains a nonempty open subset $U$ of $X$ \sref{0.9.2.2}; the proposition is then evident if $x\in U$; otherwise, $x$ is by hypothesis inside $E\cap(X\setmin U)$ with respect to $X\setmin U$, so the closure of $X\setmin E$ in $X$ does not contain $x$, and the complement of this closure is a neighborhood of $x$ contained in $E$, which finishes the proof.
 \end{proof}
 
 \begin{cor}[9.2.6]
@@ -248,7 +248,7 @@ The condition is necessary: indeed, by hypothesis, $h$ does not take finitely ma
 To see that the condition is sufficient, we apply the principle of Noetherian induction on the set $\fk{M}$ of closed subsets $Y$ of $X$ such that the restriction $h|Y$ is constructible; we can thus assume that for every closed subset $Y\neq X$ of $X$,
 $h|Y$ is constructible.
 If $X$ is not irreducible, then the restriction of $h$ to each of the (finitely many) irreducible components $X_i$ of $X$ is constructible, and it then follows immediately from Definition \sref{0.9.3.1} that $h$ is constructible.
-If $X$ is irreducible, then there exists by hypothesis a nonempty open subset $U$ of $X$ on which $h$ is constant; on the other hand, the restriction of $h$ to $X-U$ is constructible by hypothesis, and it follows immediately that $h$ is constructible.
+If $X$ is irreducible, then there exists by hypothesis a nonempty open subset $U$ of $X$ on which $h$ is constant; on the other hand, the restriction of $h$ to $X\setmin U$ is constructible by hypothesis, and it follows immediately that $h$ is constructible.
 \end{proof}
 
 \begin{cor}[9.3.3]
