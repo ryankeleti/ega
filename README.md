@@ -5,8 +5,8 @@ S’il-vous plaît pardonnez-nous, Grothendieck.
 
 To compile, `make book`, `make pdfs`, or `make all`.
 
-Compiled PDFs, auto-compiled every hour:
-- [Full document](https://fppf.site/ega/book.pdf).
+## PDFs
+There is the [**full document**](https://fppf.site/ega/book.pdf), or individual sections can be downloaded separately:
 - [What this is](https://fppf.site/ega/what.pdf).
 - [Introduction](https://fppf.site/ega/intro.pdf).
 - [EGA 0](https://fppf.site/ega/ega0.pdf).
@@ -14,6 +14,8 @@ Compiled PDFs, auto-compiled every hour:
 - [EGA II](https://fppf.site/ega/ega2.pdf).
 - [EGA III](https://fppf.site/ega/ega3.pdf).
 - [References](https://fppf.site/ega/ref.pdf).
+
+All the PDFs are auto-compliled every hour, so will be up to date with the latest commit.
 
 ![lastupdate](https://img.shields.io/github/last-commit/ryankeleti/ega)
 
