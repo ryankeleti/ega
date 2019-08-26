@@ -97,7 +97,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 10. ~~Relations between projective cohomology and local cohomology. Formal completion technique along a divisor~~
     + [x] 11. ~~Global and local Picard groups~~
 - [ ] Local study of schemes and their morphisms (EGA IV)
-    + [ ] 0. Summary _(@thosgood)_
+    + [x] 0. Summary _(@thosgood)_
     + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes
     + [ ] 2. Base change and flatness
     + [ ] 3. Associated prime cycles and primary decomposition
