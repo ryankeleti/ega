@@ -675,150 +675,101 @@ Indeed, $C$ is the direct sum of the submodules of $B$ which are the images of t
 
 \begin{thm}[1.4.1]
 \label{1.1.4.1}
-Let $X$ be the prime spectrum of a ring $A$, $V$ a quasi-compact open subset of $X$, and
-$\sh{F}$ an $(\OO_X|V)$-module. The four following conditions are equivalent:
+Let $X$ be the prime spectrum of a ring $A$, $V$ a quasi-compact open subset of $X$, and $\sh{F}$ an $(\OO_X|V)$-module.
+The following four conditions are equivalent.
 \begin{enumerate}[label=\emph{(\alph*)}]
   \item There exists an $A$-module $M$ such that $\sh{F}$ is isomorphic to $\wt{M}|V$.
-  \item There exists a finite open cover $(V_i)$ of $V$ by sets of the form $D(f_i)$
-    ($f_i\in A$) contained in $V$, such that, for each $i$, $\sh{F}|V_i$ is isomorphic to
-    a sheaf of the form $\wt{M_i}$, where $M_i$ is an $A_{f_i}$-module.
+  \item There exists a finite open cover $(V_i)$ of $V$ by sets of the form $D(f_i)$ ($f_i\in A$) contained in $V$, such that, for each $i$, $\sh{F}|V_i$ is isomorphic to a sheaf of the form $\wt{M_i}$, where $M_i$ is an $A_{f_i}$-module.
   \item The sheaf $\sh{F}$ is quasi-coherent \sref[0]{0.5.1.3}.
   \item The two following properties are satisfied:
     \begin{enumerate}[label=\emph{(d\arabic*)}]
-      \item For each $f\in A$ such that $D(f)\subset V$ and for each section
-        $s\in\Gamma(D(f),\sh{F})$, there exists an integer $n\geqslant 0$ such that
-        $f^n s$ extends to a section of $\sh{F}$ over $V$.
-      \item For each $f\in A$ such that $D(f)\subset V$ and for each section
-        $t\in\Gamma(V,\sh{F})$ such that the restriction of $t$ to $D(f)$ is $0$,
-        there exists an integer $n\geqslant 0$ such that $f^n t=0$.
+      \item For each $f\in A$ such that $D(f)\subset V$, and for each section $s\in\Gamma(D(f),\sh{F})$, there exists an integer $n\geqslant 0$ such that $f^n s$ extends to a section of $\sh{F}$ over $V$.
+      \item For each $f\in A$ such that $D(f)\subset V$ and for each section $t\in\Gamma(V,\sh{F})$ such that the restriction of $t$ to $D(f)$ is $0$, there exists an integer $n\geqslant 0$ such that $f^n t=0$.
     \end{enumerate}
 \end{enumerate}
 \end{thm}
-(In the statement of the conditions (d1) and (d2), we have tacitly identified $A$ and
-$\Gamma(\wt{A})$ according to Theorem \sref{1.1.3.7}).
+(In the statement of the conditions (d1) and (d2), we have tacitly identified $A$ and $\Gamma(\wt{A})$ using Theorem~\sref{1.1.3.7}).
 
 \begin{proof}
 \label{proof-1.1.4.1}
-The fact that (a) implies (b) is an immediate consequence of Proposition \sref{1.1.3.6} and the fact
-that the $D(f_i)$ form a basis for the topology of $X$ \sref{1.1.1.10}. As each
-$A$-module is isomorphic to the cokernel of a homomorphism of the form $A^{(I)}\to A^{(J)}$,
-\sref{1.1.3.6} proves that each sheaf associated to an $A$-module is quasi-coherent; so
-(b) implies (c). Conversely, if $\sh{F}$ is quasi-coherent, each $x\in V$ has a neighborhood
-of the form $D(f)\subset V$ such that $\sh{F}|D(f)$ is isomorphic to the cokernel of a
-homomorphism $\wt{A_f}^{(I)}\to\wt{A_f}^{(J)}$, so a sheaf $\wt{N}$
-associated to the module $N$, the cokernel of the corresponding homomorphism
-$A_f^{(I)}\to A_f^{(J)}$ (Corollaries \sref{1.1.3.8} and \sref{1.1.3.9}); as $V$ is quasi-compact,
-it is clear that (c) implies (b).
+The fact that (a) implies (b) is an immediate consequence of Proposition~\sref{1.1.3.6} and the fact that the $D(f_i)$ form a basis for the topology of $X$ \sref{1.1.1.10}.
+As each $A$-module is isomorphic to the cokernel of a homomorphism of the form $A^{(I)}\to A^{(J)}$, \sref{1.1.3.6} implies that each sheaf associated to an $A$-module is quasi-coherent;
+so (b) implies (c).
+Conversely, if $\sh{F}$ is quasi-coherent, each $x\in V$ has a neighborhood of the form $D(f)\subset V$ such that $\sh{F}|D(f)$ is isomorphic to the cokernel of a homomorphism $\wt{A_f}^{(I)}\to\wt{A_f}^{(J)}$, so also to the sheaf $\wt{N}$ associated to the module $N$, the cokernel of the corresponding homomorphism
+$A_f^{(I)}\to A_f^{(J)}$ (Corollaries~\sref{1.1.3.8} and \sref{1.1.3.9});
+since $V$ is quasi-compact, it is clear that (c) implies (b).
 
 \oldpage[I]{91}
-To prove that (b) implies (d1) and (d2), we first assume that $V=D(g)$ for a $g\in A$, and
-that $\sh{F}$ is isomorphic to the sheaf $\wt{N}$ associated to an $A_g$-module $N$;
-by replacing $X$ with $V$ and $A$ with $A_g$ \sref{1.1.3.6}, we can reduce to the case
-where $g=1$. Then $\Gamma(D(f),\wt{N})$ and $N_f$ are canonically identified
-(Proposition \sref{1.1.3.6} and Theorem \sref{1.1.3.7}), so a section $s\in\Gamma(D(f),\wt{N})$
-identifies with an element of the form $z/f^n$, where $z\in N$; the section $f^n s$ identifies
-with the element $z/1$ of $N_f$ and as a result the restriction to $D(f)$ of a section of
-$\wt{N}$ over $X$ identifies with the element $z\in N$; hence (d1) in this case.
-Similarly, $t\in\Gamma(X,\wt{N})$ is identified with an element $z'\in N$, the
-restriction of $t$ to $D(f)$ is identified with the image $z'/1$ of $z'$ in $N_f$, and we say
-that this image is zero means that there exists an $n\geqslant 0$ such that $f^n z'=0$ in
-$N$, or, equivalently, $f^n t=0$.
+To prove that (b) implies (d1) and (d2), we first assume that $V=D(g)$ for some $g\in A$, and that $\sh{F}$ is isomorphic to the sheaf $\wt{N}$ associated to an $A_g$-module $N$;
+by replacing $X$ with $V$ and $A$ with $A_g$ \sref{1.1.3.6}, we can reduce to the case where $g=1$.
+Then $\Gamma(D(f),\wt{N})$ and $N_f$ are canonically identified with one another (Proposition~\sref{1.1.3.6} and Theorem~\sref{1.1.3.7}), so a section $s\in\Gamma(D(f),\wt{N})$ is identified with an element of the form $z/f^n$, where $z\in N$;
+the section $f^n s$ is identified with the element $z/1$ of $N_f$ and, as a result, is the restriction to $D(f)$ of the section of $\wt{N}$ over $X$ that is identified with the element $z\in N$;
+hence (d1) in this case.
+Similarly, $t\in\Gamma(X,\wt{N})$ is identified with an element $z'\in N$, the restriction of $t$ to $D(f)$ is identified with the image $z'/1$ of $z'$ in $N_f$, and to say that this image is zero means that there exists some $n\geqslant 0$ such that $f^n z'=0$ in $N$, or, equivalently, $f^n t=0$.
 
-To finish the proof that (b) implies (d1) and (d2), it suffices to establish the following
-lemma:
+To finish the proof, that (b) implies (d1) and (d2), it suffices to establish the following lemma.
 \begin{lem}[1.4.1.1]
 \label{1.1.4.1.1}
-Suppose that $V$ is the finite union of sets of the form $D(g_i)$, and that each of the
-sheaves $\sh{F}|D(g_i)$, $\sh{F}|(D(g_i)\cap D(g_j))=\sh{F}|D(g_i g_j)$ satisfy \emph{(d1)}
-and \emph{(d2)}; then $\sh{F}$ has the following two properties:
+Suppose that $V$ is the finite union of sets of the form $D(g_i)$, and that all of the sheaves $\sh{F}|D(g_i)$ and $\sh{F}|(D(g_i)\cap D(g_j))=\sh{F}|D(g_i g_j)$ satisfy \emph{(d1)} and \emph{(d2)};
+then $\sh{F}$ has the following two properties:
 \begin{enumerate}[label=\emph{(d$'$\arabic*)}]
-  \item For each $f\in A$ and for each section $s\in\Gamma(D(f)\cap V,\sh{F})$, there exists
-    an integer $n\geqslant 0$ such that $f^n s$ extends to a section of $\sh{F}$ over $V$.
-  \item For each $f\in A$ and for each section $t\in\Gamma(V,\sh{F})$ such that the
-    restriction of $t$ to $D(f)\cap V$ is $0$, there exists an integer $n\geqslant 0$ such that $f^n t=0$.
+  \item For each $f\in A$ and for each section $s\in\Gamma(D(f)\cap V,\sh{F})$, there exists an integer $n\geqslant 0$ such that $f^n s$ extends to a section of $\sh{F}$ over $V$.
+  \item For each $f\in A$ and for each section $t\in\Gamma(V,\sh{F})$ such that the restriction of $t$ to $D(f)\cap V$ is $0$, there exists an integer $n\geqslant 0$ such that $f^n t=0$.
 \end{enumerate}
 \end{lem}
 
-We first prove (d$'$2): as $D(f)\cap D(g_i)=D(fg_i)$, there exists for each $i$ an integer
-$n_i$ such that the restriction of $(fg_i)^{n_i}t$ to $D(g_i)$ is zero: as the image of $g_i$
-in $A_{g_i}$ is invertible, the restriction of $f^{n_i}t$ to $D(g_i)$ is also zero; taking
-for $n$ the largest of the $n_i$, we have proved (d$'$2).
+We first prove (d$'$2): since $D(f)\cap D(g_i)=D(fg_i)$, there exists, for each $i$, an integer $n_i$ such that the restriction of $(fg_i)^{n_i}t$ to $D(g_i)$ is zero:
+since the image of $g_i$ in $A_{g_i}$ is invertible, the restriction of $f^{n_i}t$ to $D(g_i)$ is also zero;
+taking $n$ to be the largest of the $n_i$, we have proved (d$'$2).
 
-To show (d$'$1), we apply (d1) to the sheaf $\sh{F}|D(g_i)$: there exists an integer
-$n_i\geqslant 0$ and a section $s_i'$ of $\sh{F}$ over $D(g_i)$ extending the restriction of
-$(fg_i)^{n_i}s$ to $D(fg_i)$; as the image of $g_i$ in $A_{g_i}$ is invertible, there is a
-section $s_i$ of $\sh{F}$ over $D(g_i)$ such that $s_i'=g_i^{n_i}s_i$, and $s_i$ extends the
-restriction of $f^{n_i}s$ to $D(fg_i)$; in addition we can suppose that all the $n_i$ are
-equal to the same integer $n$. By construction, the restriction of $s_i-s_j$ to
-$D(f)\cap D(g_i)\cap D(g_j)=D(fg_i g_j)$ is zero; according to (d2) applied to the sheaf
-$\sh{F}|D(g_i g_j)$, there exists an integer $m_{ij}\geqslant 0$ such that the restriction to
-$D(g_i g_j)$ of $(fg_i g_j)^{m_{ij}}(s_i-s_j)$ is zero; as the image of $g_i g_j$ in
-$A_{g_i g_j}$ is invertible, the restriction of $f^{m_{ij}}(s_i-s_j)$ to $D(g_i g_j)$ is
-zero. We can then assume that all the $m_{ij}$ are equal to the same integer $m$, and so
-there exists a section $s'\in\Gamma(V,\sh{F})$ extending the $f^m s_i$; as a result, this
-section extends $f^{n+m}s$, hence we have proved (d$'$1).
+To show (d$'$1), we apply (d1) to the sheaf $\sh{F}|D(g_i)$: there exists an integer $n_i\geqslant 0$ and a section $s_i'$ of $\sh{F}$ over $D(g_i)$ extending the restriction of $(fg_i)^{n_i}s$ to $D(fg_i)$;
+since the image of $g_i$ in $A_{g_i}$ is invertible, there is a section $s_i$ of $\sh{F}$ over $D(g_i)$ such that $s_i'=g_i^{n_i}s_i$, and $s_i$ extends the
+restriction of $f^{n_i}s$ to $D(fg_i)$;
+in addition we can suppose that all the $n_i$ are equal to a single integer $n$.
+By construction, the restriction of $s_i-s_j$ to $D(f)\cap D(g_i)\cap D(g_j)=D(fg_i g_j)$ is zero;
+by (d2) applied to the sheaf $\sh{F}|D(g_i g_j)$, there exists an integer $m_{ij}\geqslant 0$ such that the restriction to $D(g_i g_j)$ of $(fg_i g_j)^{m_{ij}}(s_i-s_j)$ is zero;
+since the image of $g_i g_j$ in $A_{g_i g_j}$ is invertible, the restriction of $f^{m_{ij}}(s_i-s_j)$ to $D(g_i g_j)$ is zero.
+We can then assume that all the $m_{ij}$ are equal to a single integer $m$, and so there exists a section $s'\in\Gamma(V,\sh{F})$ extending the $f^m s_i$;
+as a result, this section extends $f^{n+m}s$, hence we have proved (d$'$1).
 
-It remains to prove that (d1) and (d2) imply (a). We show first that (d1) and (d2) imply that
-these conditions are satisfied for each sheaf $\sh{F}|D(g)$, where $g\in A$ is such that
-$D(g)\subset V$. It is evident for (d1); on the other hand, if $t\in\Gamma(D(g),\sh{F})$ is
-such that its restriction to $D(f)\subset D(g)$ is zero, there exists by (d1) an integer
-$m\geqslant 0$ such that $g^m t$
+It remains to show that (d1) and (d2) imply (a).
+We first show that (d1) and (d2) imply that these conditions are satisfied for each sheaf $\sh{F}|D(g)$, where $g\in A$ is such that $D(g)\subset V$.
+It is evident for (d1);
+on the other hand, if $t\in\Gamma(D(g),\sh{F})$ is such that its restriction to $D(f)\subset D(g)$ is zero, there exists, by (d1), an integer $m\geqslant 0$ such that $g^m t$
 \oldpage[I]{92}
-extends to a section $s$ of $\sh{F}$ over $V$; applying (d2), we see that there exists an
-integer $n\geqslant 0$ such that $f^n g^m t=0$, and as the image of $g$ in $A_g$ is
-invertible, $f^n t=0$.
+extends to a section $s$ of $\sh{F}$ over $V$;
+applying (d2), we see that there exists an integer $n\geqslant 0$ such that $f^n g^m t=0$, and as the image of $g$ in $A_g$ is invertible, $f^n t=0$.
 
-That being so, as $V$ is quasi-compact, Lemma \sref{1.1.4.1.1} proves that
-the conditions (d$'$1) and (d$'$2) are satisfied. Consider then the $A$-module
-$M=\Gamma(V,\sh{F})$, and define a homomorphism of $\wt{A}$-modules
-$u:\wt{M}\to j_*(\sh{F})$, where $j$ is the canonical injection $V\to X$. As the
-$D(f)$ form a basis for the topology of $X$, it suffices, for each $f\in A$, to define a
-homomorphism $u_f:M_f\to\Gamma(D(f),j_*(\sh{F}))=\Gamma(D(f)\cap V,\sh{F})$, with the usual
-compatibility conditions \sref[0]{0.3.2.5}. As the canonical image of $f$ in $A_f$ is
-invertible, the restriction homomorphism $M=\Gamma(V,\sh{F})\to\Gamma(D(f)\cap V,\sh{F})$
-factorizes as $M\to M_f\xrightarrow{u_f}\Gamma(D(f)\cap V,\sh{F})$ \sref[0]{0.1.2.4}, and the
-verification of these compatibility conditions for $D(g)\subset D(f)$ is immediate. This being
-so, we show that the condition (d$'$1) (resp. (d$'$2)) implies that each of the $u_f$ are
-surjective (resp. injective), which proves that $u$ is \emph{bijective}, and as a result that
-$\sh{F}$ is the restriction to $V$ of an $\wt{A}$-module isomorphic to
-$\wt{M}$. If $s\in\Gamma(D(f)\cap V,\sh{F})$, there exists according to (d$'$1) an
-integer $n\geqslant 0$ such that $f^n s$ extends to a section $z\in M$; we then have
-$u_f(z/f^n)=s$, so $u_f$ is surjective. Similarly, if $z\in M$ is such that $u_f(z/1)=0$,
-this means that the restriction to $D(f)\cap V$ of the section $z$ is zero; according to
-(d$'$2), there exists an integer $n\geqslant 0$ such that $f^n z=0$, hence $z/1=0$ in $M_f$,
-and therefore $u_f$ is injective.
-\begin{flushright}
-Q.E.D.
-\end{flushright}
+That being so, since $V$ is quasi-compact, Lemma~\sref{1.1.4.1.1} proves that
+the conditions (d$'$1) and (d$'$2) are satisfied.
+Consider then the $A$-module $M=\Gamma(V,\sh{F})$, and define a homomorphism of $\wt{A}$-modules $u:\wt{M}\to j_*(\sh{F})$, where $j$ is the canonical injection $V\to X$.
+Since the $D(f)$ form a basis for the topology of $X$, it suffices, for each $f\in A$, to define a homomorphism $u_f:M_f\to\Gamma(D(f),j_*(\sh{F}))=\Gamma(D(f)\cap V,\sh{F})$, with the usual compatibility conditions \sref[0]{0.3.2.5}.
+Since the canonical image of $f$ in $A_f$ is invertible, the restriction homomorphism $M=\Gamma(V,\sh{F})\to\Gamma(D(f)\cap V,\sh{F})$ factors as $M\to M_f\xrightarrow{u_f}\Gamma(D(f)\cap V,\sh{F})$ \sref[0]{0.1.2.4}, and the verification of these compatibility conditions for $D(g)\subset D(f)$ is immediate.
+This being so, we show that the condition (d$'$1) (resp. (d$'$2)) implies that each of the $u_f$ are surjective (resp. injective), which proves that $u$ is \emph{bijective}, and as a result that $\sh{F}$ is the restriction to $V$ of an $\wt{A}$-module isomorphic to $\wt{M}$.
+If $s\in\Gamma(D(f)\cap V,\sh{F})$, there exists, by (d$'$1), an integer $n\geqslant 0$ such that $f^n s$ extends to a section $z\in M$;
+we then have $u_f(z/f^n)=s$, so $u_f$ is surjective.
+Similarly, if $z\in M$ is such that $u_f(z/1)=0$, this means that the restriction to $D(f)\cap V$ of the section $z$ is zero;
+according to (d$'$2), there exists an integer $n\geqslant 0$ such that $f^n z=0$, hence $z/1=0$ in $M_f$, and so $u_f$ is injective.
 \end{proof}
 
 \begin{cor}[1.4.2]
 \label{1.1.4.2}
-Each quasi-coherent sheaf over a quasi-compact open subset of $X$ is induced by a
-quasi-coherent sheaf on $X$.
+Each quasi-coherent sheaf over a quasi-compact open subset of $X$ is induced by a quasi-coherent sheaf on $X$.
 \end{cor}
 
 \begin{cor}[1.4.3]
 \label{1.1.4.3}
-Each quasi-coherent $\OO_X$-algebra over $X=\Spec(A)$ is isomorphic to an $\OO_X$-algebra of
-the form $\wt{B}$, where $B$ is an algebra over $A$; each quasi-coherent
-$\wt{B}$-module is isomorphic to a $\wt{B}$-module of the form $\wt{N}$,
-where $N$ is a $B$-module.
+Every quasi-coherent $\OO_X$-algebra over $X=\Spec(A)$ is isomorphic to an $\OO_X$-algebra of the form $\wt{B}$, where $B$ is an algebra over $A$;
+every quasi-coherent $\wt{B}$-module is isomorphic to a $\wt{B}$-module of the form $\wt{N}$, where $N$ is a $B$-module.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.4.3}
-Indeed, a quasi-coherent $\OO_X$-algebra is a quasi-coherent $\OO_X$-module, therefore of the
-form $\wt{B}$, where $B$ is an $A$-module; the fact that $B$ is an $A$-algebra
-follows from the characterization of the structure of an $\OO_X$-algebra using the
-homomorphism $\wt{B}\otimes_\wt{A}\wt{B}\to\wt{B}$ of
-$\wt{A}$-modules, as well as Corollary \sref{1.1.3.12}. If $\sh{G}$ is a quasi-coherent
-$\wt{B}$-module, it suffices to show, in a similar way,
-that it is also a quasi-coherent $\wt{A}$-module to conclude the proof; as the
-question is local, we can, by restricting to an open subset of $X$ of the form $D(f)$, assume
-that $\sh{G}$ is the cokernel of a homomorphism $\wt{B}^{(I)}\to\wt{B}^{(J)}$
-of $\wt{B}$-modules (and \emph{a fortiori} of $\wt{A}$-modules); the
-proposition then follows from Corollaries \sref{1.1.3.8} and \sref{1.1.3.9}.
+Indeed, a quasi-coherent $\OO_X$-algebra is a quasi-coherent $\OO_X$-module, and therefore of the form $\wt{B}$, where $B$ is an $A$-module;
+the fact that $B$ is an $A$-algebra follows from the characterization of the structure of an $\OO_X$-algebra using the homomorphism $\wt{B}\otimes_\wt{A}\wt{B}\to\wt{B}$ of $\wt{A}$-modules, as well as Corollary~\sref{1.1.3.12}.
+If $\sh{G}$ is a quasi-coherent $\wt{B}$-module, it suffices to show, in a similar way, that it is also a quasi-coherent $\wt{A}$-module to conclude the proof;
+since the question is local, we can, by restricting to an open subset of $X$ of the form $D(f)$, assume that $\sh{G}$ is the cokernel of a homomorphism $\wt{B}^{(I)}\to\wt{B}^{(J)}$ of $\wt{B}$-modules (and \emph{a fortiori} of $\wt{A}$-modules);
+the proposition then follows from Corollaries~\sref{1.1.3.8} and \sref{1.1.3.9}.
 \end{proof}
 
 \subsection{Coherent sheaves over a prime spectrum}

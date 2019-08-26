@@ -17,7 +17,7 @@ There is the [**full document**](https://fppf.site/ega/book.pdf), or individual 
 
 All the PDFs are auto-compliled every hour, so will be up to date with the latest commit.
 
-![lastupdate](https://img.shields.io/github/last-commit/ryankeleti/ega)
+![lastupdate](https://img.shields.io/github/last-commit/ryankeleti/ega/master)
 
 ## Current status
 
