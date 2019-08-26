@@ -977,7 +977,7 @@ We conclude (\sref[0]{0.4.4.3} and (\textbf{0},~3.5.4.4)) that if $v:N'\to M_{[\
 
 \begin{env}[1.6.8]
 \label{1.1.6.8}
-Let $N_1'$, $N_2'$ be $A'$-modules, and assume $N_1'$ admits a \emph{finite presentation};
+Let $N_1'$ and $N_2'$ be $A'$-modules, and assume $N_1'$ admits a \emph{finite presentation};
 it then follows from \sref{1.1.6.7} and \sref{1.1.3.12}[ii] that the
 canonical homomorphism \sref[0]{0.4.4.6}
 \[
@@ -1009,57 +1009,42 @@ in other words, $(\Spec(A),\wt{A})$ is a \emph{functor} from the category of rin
 
 \begin{defn}[1.7.1]
 \label{1.1.7.1}
-We say that a ringed space $(X,\OO_X)$ is an affine scheme if it is isomorphic to a ringed
-space of the form $(\Spec(A),\wt{A})$, where $A$ is a ring; we then say that
-$\Gamma(X,\OO_X)$, which canonically identifies with the ring $A$ \sref{1.1.3.7} is the
-ring of the affine scheme $(X,\OO_X)$, and we denote it by $A(X)$ when there is no chance of
-confusion.
+We say that a ringed space $(X,\OO_X)$ is an affine scheme if it is isomorphic to a ringed space of the form $(\Spec(A),\wt{A})$, where $A$ is a ring;
+we then say that $\Gamma(X,\OO_X)$, which is canonically identified with the ring $A$ \sref{1.1.3.7}, is the ring of the affine scheme $(X,\OO_X)$, and we denote it by $A(X)$ when there is no chance of confusion.
 \end{defn}
 
-By abuse of language, when we speak of an \emph{affine scheme $\Spec(A)$}, it will always be
-the ringed space $(\Spec(A),\wt{A})$.
+By abuse of language, when we speak of an \emph{affine scheme $\Spec(A)$};
+it will always be the ringed space $(\Spec(A),\wt{A})$.
 
 \begin{env}[1.7.2]
 \label{1.1.7.2}
-Let $A$, $B$ be two rings, $(X,\OO_X)$, $(Y,\OO_Y)$ the affine schemes corresponding to
-the prime spectra $X=\Spec(A)$, $Y=\Spec(B)$. We have seen \sref{1.1.6.1} that each ring
-homomorphism $\vphi:B\to A$ corresponds to a morphism
-$\Phi=({}^a\vphi,\wt{\vphi})=\Spec(\vphi):(X,\OO_X)\to(Y,\OO_Y)$. We note that $\vphi$
-is entirely determined by $\Phi$, since we have by definition
-$\vphi=\Gamma(\wt{\vphi}):\Gamma(\wt{B})
-\to\Gamma({}^a\vphi_*(\wt{A})=\Gamma(\wt{A})$.
+Let $A$ and $B$ be rings, and $(X,\OO_X)$ and $(Y,\OO_Y)$ the affine schemes corresponding to the prime spectra $X=\Spec(A)$, $Y=\Spec(B)$.
+We have seen \sref{1.1.6.1} that each ring homomorphism $\vphi:B\to A$ corresponds to a morphism $\Phi=({}^a\vphi,\wt{\vphi})=\Spec(\vphi):(X,\OO_X)\to(Y,\OO_Y)$.
+We note that $\vphi$ is entirely determined by $\Phi$, since we have, by definition, $\vphi=\Gamma(\wt{\vphi}):\Gamma(\wt{B})\to\Gamma({}^a\vphi_*(\wt{A})=\Gamma(\wt{A})$.
 \end{env}
 
 \begin{thm}[1.7.3]
 \label{1.1.7.3}
-Let $(X,\OO_X)$, $(Y,\OO_Y)$ be two affine schemes. For a morphism of ringed spaces
-$(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ to be of the form $({}^a\vphi,\wt{\vphi})$,
-where $\vphi$ is a homomorphism of rings: $A(Y)\to A(X)$, it is necessary and sufficient
-that, for each $x\in X$, $\theta_x^\sharp$ be a local homomorphism: $\OO_{\psi(x)}\to\OO_x$.
+Let $(X,\OO_X)$  $(Y,\OO_Y)$ be affine schemes.
+For a morphism of ringed spaces $(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ to be of the form $({}^a\vphi,\wt{\vphi})$, where $\vphi$ is a homomorphism of rings $A(Y)\to A(X)$, it is necessary and sufficient that, for each $x\in X$, $\theta_x^\sharp$ be a local homomorphism: $\OO_{\psi(x)}\to\OO_x$.
 \end{thm}
 
 \begin{proof}
 \label{proof-1.1.7.3}
 \oldpage[I]{97}
-Set $A=A(X)$, $B=A(Y)$. The condition is necessary, since we saw \sref{1.1.6.1} that
-$\wt{\vphi}_x^\sharp$ is the homomorphism from $B_{{}^a\vphi(x)}$ to $A_x$ canonically
-induced by $\vphi$, and by definition of ${}^a\vphi(x)=\vphi^{-1}(\fk{j}_x)$, this
-homomorphism is local.
+Let $A=A(X)$, $B=A(Y)$.
+The condition is necessary, since we saw \sref{1.1.6.1} that $\wt{\vphi}_x^\sharp$ is the homomorphism from $B_{{}^a\vphi(x)}$ to $A_x$ canonically induced by $\vphi$, and, by definition, of ${}^a\vphi(x)=\vphi^{-1}(\fk{j}_x)$, this homomorphism is local.
 
-We prove that the condition is sufficient. By definition, $\theta$ is a homomorphism
-$\OO_Y\to\psi_*(\OO_X)$, and we canonically obtain a ring homomorphism
+We now prove that the condition is sufficient.
+By definition, $\theta$ is a homomorphism $\OO_Y\to\psi_*(\OO_X)$, and we canonically obtain a ring homomorphism
 \[
   \vphi=\Gamma(\theta):B=\Gamma(Y,\OO_Y)
   \to\Gamma(Y,\psi_*(\OO_X))=\Gamma(X,\OO_X)=A.
 \]
 
-The hypotheses on $\theta_x^\sharp$ allow us to deduce from this homomorphism, by passing to
-quotients, a momomorphism $\theta^x$ from the residue field $\kres(\psi(x))$ to the residue
-field $\kres(x)$, such that, for each section $f\in\Gamma(Y,\OO_Y)=B$, we have
-$\theta^x(f(\psi(x)))=\vphi(f)(x)$. The relation $f(\psi(x))=0$ is therefore equivalent to
-$\vphi(f)(x)=0$, which means that $\fk{j}_{\psi(x)}=\fk{j}_{{}^a\vphi(x)}$, and
-we now write $\psi(x)={}^a\vphi(x)$ for each $x\in X$, or $\psi={}^a\vphi$. We also know that
-the diagram
+The hypotheses on $\theta_x^\sharp$ mean that this homomorphism induces, by passing to quotients, a monomorphism $\theta^x$ from the residue field $\kres(\psi(x))$ to the residue field $\kres(x)$, such that, for each section $f\in\Gamma(Y,\OO_Y)=B$, we have $\theta^x(f(\psi(x)))=\vphi(f)(x)$.
+The relation $f(\psi(x))=0$ is therefore equivalent to $\vphi(f)(x)=0$, which means that $\fk{j}_{\psi(x)}=\fk{j}_{{}^a\vphi(x)}$, and we now write $\psi(x)={}^a\vphi(x)$ for each $x\in X$, or $\psi={}^a\vphi$.
+We also know that the diagram
 \[
   \xymatrix{
     B=\Gamma(Y,\OO_Y)\ar[r]^\vphi\ar[d] &
@@ -1068,40 +1053,29 @@ the diagram
     A_x
   }
 \]
-is commutative \sref[0]{0.3.7.2}, which means that $\theta_x^\sharp$ is equal to the
-homomorphism $\vphi_x:B_{\psi(x)}\to A_x$ canonically induced by $\vphi$ \sref[0]{0.1.5.1}.
-As the data of the $\theta_x^\sharp$ completely characterize $\theta^\sharp$, and as a result
-$\theta$ \sref[0]{0.3.7.1}, we conclude that we have $\theta=\wt{\vphi}$, by
-definition of $\wt{\vphi}$ \sref{1.1.6.1}.
+is commutative \sref[0]{0.3.7.2}, which means that $\theta_x^\sharp$ is equal to the homomorphism $\vphi_x:B_{\psi(x)}\to A_x$ canonically induced by $\vphi$ \sref[0]{0.1.5.1}.
+As the data of the $\theta_x^\sharp$ completely characterize $\theta^\sharp$, and as a result $\theta$ \sref[0]{0.3.7.1}, we conclude that we have $\theta=\wt{\vphi}$, by the definition of $\wt{\vphi}$ \sref{1.1.6.1}.
 \end{proof}
 
-We say that a mormphism $(\psi,\theta)$ of ringed spaces satisfying the condition of
-\sref{1.1.7.3} is a \emph{morphism of affine schemes}.
+We say that a morphism $(\psi,\theta)$ of ringed spaces satisfying the condition of \sref{1.1.7.3} is a \emph{morphism of affine schemes}.
 
 \begin{cor}[1.7.4]
 \label{1.1.7.4}
-If $(X,\OO_X)$, $(Y,\OO_Y)$ are affine schemes, there exists a canonical isomorphism from
-the set of morphisms of affine schemes $\Hom((X,\OO_X),(Y,\OO_Y))$ to the set of
-ring homomorphisms from $B$ to $A$, where $A=\Gamma(\OO_X)$ and $B=\Gamma(\OO_Y)$.
+If $(X,\OO_X)$ and $(Y,\OO_Y)$ are affine schemes, there exists a canonical isomorphism from the set of morphisms of affine schemes $\Hom((X,\OO_X),(Y,\OO_Y))$ to the set of ring homomorphisms from $B$ to $A$, where $A=\Gamma(\OO_X)$ and $B=\Gamma(\OO_Y)$.
 \end{cor}
 
-Furthermore, we can say that the functors $(\Spec(A),\wt{A})$ in $A$ and
-$\Gamma(X,\OO_X)$ in $(X,\OO_X)$ define an \emph{equivalence} between the category of
-commutative rings and the opposite category of affine schemes (T, I, 1.2).
+Furthermore, we can say that the functors $(\Spec(A),\wt{A})$ in $A$ and $\Gamma(X,\OO_X)$ in $(X,\OO_X)$ define an \emph{equivalence} between the category of commutative rings and the opposite category of affine schemes (T, I, 1.2).
 
 \begin{cor}[1.7.5]
 \label{1.1.7.5}
-If $\vphi:B\to A$ is surjective, then the corresponding morphism
-$({}^a\vphi,\wt{\vphi})$ is a momomorphism of ringed spaces
-\emph{(cf. \sref{1.4.1.7})}.
+If $\vphi:B\to A$ is surjective, then the corresponding morphism $({}^a\vphi,\wt{\vphi})$ is a monomorphism of ringed spaces \emph{(cf. \sref{1.4.1.7})}.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.7.5}
-Indeed, we know that ${}^a\vphi$ is injective \sref{1.1.2.5}, and as $\vphi$ is
-surjective, for each $x\in X$, $\vphi_x^\sharp:B_{{}^a\vphi(x)}\to A_x$, which is induced
-by $\vphi$ by passing to rings of fractions, is also surjective \sref[0]{0.1.5.1}; hence
-the conclusion \sref[0]{0.4.1.1}.
+Indeed, we know that ${}^a\vphi$ is injective \sref{1.1.2.5}, and, since $\vphi$ is
+surjective, for each $x\in X$, $\vphi_x^\sharp:B_{{}^a\vphi(x)}\to A_x$, which is induced by $\vphi$ by passing to rings of fractions, is also surjective \sref[0]{0.1.5.1};
+hence the conclusion \sref[0]{0.4.1.1}.
 \end{proof}
 
 \subsection{Morphisms from locally ringed spaces to affine schemes}
