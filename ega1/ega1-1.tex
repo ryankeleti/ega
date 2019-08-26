@@ -482,39 +482,36 @@ that the $s_i$ are the restrictions to $D(f_i)$ of $\theta_1(z)$, which proves t
 
 \begin{cor}[1.3.8]
 \label{1.1.3.8}
-Let $M$ and $N$ be two $A$-modules; the canonical homomorphism $u\mapsto\wt{u}$ from $\Hom_A(M,N)$ to $\Hom_\wt{A}(\wt{M},\wt{N})$ is bijective.
-In particular, the relations $M=0$ and $\wt{M}=0$ are equivalent.
+Let $M$ and $N$ be $A$-modules;
+the canonical homomorphism $u\mapsto\wt{u}$ from $\Hom_A(M,N)$ to $\Hom_\wt{A}(\wt{M},\wt{N})$ is bijective.
+In particular, the equations $M=0$ and $\wt{M}=0$ are equivalent.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.3.8}
 Consider the canonical homomorphism $v\mapsto\Gamma(v)$ from $\Hom_\wt{A}(\wt{M},\wt{N})$ to $\Hom_{\Gamma(\wt{A})}(\Gamma(\wt{M}),\Gamma(\wt{N}))$;
-the latter module canonically identifies with $\Hom_A(M,N)$ according to Theorem \sref{1.1.3.7}.
-It remains to show that $u\mapsto\wt{u}$ and $v\mapsto\Gamma(v)$ are inverses of each
-other; it is evident that $\Gamma(\wt{u})=u$ by definition of $\wt{u}$; on the
-other hand, if we put $u=\Gamma(v)$ for
-$v\in\Hom_\wt{A}(\wt{M},\wt{N})$, the map
-$w:\Gamma(D(f),\wt{M})\to\Gamma(D(f),\wt{N})$ canonically induced from $v$
-is such that the diagram
+the latter module is canonically identified with $\Hom_A(M,N)$, by Theorem~\sref{1.1.3.7}.
+It remains to show that $u\mapsto\wt{u}$ and $v\mapsto\Gamma(v)$ are inverses of each other;
+it is evident that $\Gamma(\wt{u})=u$ by definition of $\wt{u}$;
+on the other hand, if we let $u=\Gamma(v)$ for $v\in\Hom_\wt{A}(\wt{M},\wt{N})$, then the map $w:\Gamma(D(f),\wt{M})\to\Gamma(D(f),\wt{N})$ canonically induced from $v$ is such that the diagram
 \[
   \xymatrix{
     M\ar[r]^u\ar[d]_{\rho_{f,1}} & N\ar[d]^{\rho_{f,1}}\\
     M_f\ar[r]^w & N_f
   }
 \]
-is commutative; so we have necessarily that $w=u_f$ for all $f\in A$
-\sref[0]{0.1.2.4}, which shows that $\wt{\Gamma(v)}=v$.
+is commutative;
+so we necessarily have that $w=u_f$ for all $f\in A$ \sref[0]{0.1.2.4}, which shows that $\wt{\Gamma(v)}=v$.
 \end{proof}
 
 \begin{cor}[1.3.9]
 \label{1.1.3.9}
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item Let $u$ be a homomorphism from an $A$-module $M$ to an $A$-module $N$; then the sheaves associated to $\Ker u$, $\Im u$, $\Coker u$, are respectively $\Ker\wt{u}$, $\Im\wt{u}$, $\Coker\wt{u}$.
+  \item Let $u$ be a homomorphism from an $A$-module $M$ to an $A$-module $N$;
+    then the sheaves associated to $\Ker u$, $\Im u$, and $\Coker u$, are $\Ker\wt{u}$, $\Im\wt{u}$, and $\Coker\wt{u}$ (respectively).
     In particular, for $\wt{u}$ to be injective (resp. surjective, bijective), it is necessary and sufficient for $u$ to be so too.
-  \item If $M$ is an inductive limit (resp. direct sum) of a family of $A$-modules
-    $(M_\lambda)$, then $\wt{M}$ is the inductive limit (resp. direct sum) of the
-    family $(\wt{M_\lambda})$, via a canonical isomorphism.
+  \item If $M$ is an inductive limit (resp. direct sum) of a family of $A$-modules $(M_\lambda)$, then $\wt{M}$ is the inductive limit (resp. direct sum) of the family $(\wt{M_\lambda})$, via a canonical isomorphism.
 \end{enumerate}
 \end{cor}
 
@@ -529,39 +526,33 @@ is commutative; so we have necessarily that $w=u_f$ for all $f\in A$
     \[
       0\to\Im u\to N\to\Coker u\to 0.
     \]
-    The second assertion then follows from Theorem \sref{1.1.3.7}.
+    The second claim then follows from Theorem~\sref{1.1.3.7}.
   \item Let $(M_\lambda,g_{\mu\lambda})$ be an inductive system of $A$-modules, with inductive limit $M$, and let $g_\lambda$ be the canonical homomorphism $M_\lambda\to M$.
-    As we have $\wt{g_{\nu\mu}}\circ\wt{g_{\mu\lambda}}=\wt{g_{\nu\lambda}}$ and $\wt{g_\lambda}=\wt{g_\mu}\circ\wt{g_{\mu\lambda}}$ for $\lambda\leqslant\mu\leqslant\nu$, $(\wt{M_\lambda},\wt{g_{\mu\lambda}})$ is an inductive system of sheaves on $X$, and if we denote by $h_\lambda$ the canonical homomorphism $\wt{M_\lambda}\to\varinjlim\wt{M_\lambda}$, then there is a unique homomorphism $v:\varinjlim\wt{M_\lambda}\to\wt{M}$ such that $v\circ h_\lambda=\wt{g_\lambda}$.
-    To see that $v$ is bijective, it suffices to check, for each $x\in X$, that $v_x$ is a bijection from $(\varinjlim\wt{M_\lambda})_x$ to $\wt{M}_x$; but $\wt{M}_x=M_x$, and
+    Since we have $\wt{g_{\nu\mu}}\circ\wt{g_{\mu\lambda}}=\wt{g_{\nu\lambda}}$ and $\wt{g_\lambda}=\wt{g_\mu}\circ\wt{g_{\mu\lambda}}$ for $\lambda\leqslant\mu\leqslant\nu$, it follows that $(\wt{M_\lambda},\wt{g_{\mu\lambda}})$ is an inductive system of sheaves on $X$, and if we denote by $h_\lambda$ the canonical homomorphism $\wt{M_\lambda}\to\varinjlim\wt{M_\lambda}$, then there is a unique homomorphism $v:\varinjlim\wt{M_\lambda}\to\wt{M}$ such that $v\circ h_\lambda=\wt{g_\lambda}$.
+    To see that $v$ is bijective, it suffices to check, for each $x\in X$, that $v_x$ is a bijection from $(\varinjlim\wt{M_\lambda})_x$ to $\wt{M}_x$;
+    but $\wt{M}_x=M_x$, and
     \[
       (\varinjlim\wt{M_\lambda})_x=\varinjlim(\wt{M_\lambda})_x
       =\varinjlim(M_\lambda)_x=M_x\quad\sref[0]{0.1.3.3}.
     \]
     Conversely, it follows from the definitions that $(\wt{g_\lambda})_x$ and
-    $(h_\lambda)$ are all equal to the canonical map from $(M_\lambda)_x$ to $M_x$; as
-    $(\wt{g_\lambda})_x=v_x\circ(h_\lambda)_x$, $v_x$ is the identity.
-
+    $(h_\lambda)$ are both equal to the canonical map from $(M_\lambda)_x$ to $M_x$;
+    since $(\wt{g_\lambda})_x=v_x\circ(h_\lambda)_x$, $v_x$ is the identity.
 \oldpage[I]{88}
-    Finally, if $M$ is the direct sum of two $A$-modules $N$, $P$, it is immediate that $\wt{M}=\wt{N}\oplus\wt{P}$; each direct sum being the inductive limit of finite direct sums, the assertions of (ii) are proved.
+    Finally, if $M$ is the direct sum of two $A$-modules $N$ and $P$, it is immediate that $\wt{M}=\wt{N}\oplus\wt{P}$;
+    each direct sum being the inductive limit of finite direct sums, the claims of (ii) are thus proved.
 \end{enumerate}
 \end{proof}
 
-We note that Corollary \sref{1.1.3.8} proves that the sheaves isomorphic to the associated sheaves
-of $A$-modules forms an \emph{abelian category} (T, I, 1.4).
+We note that Corollary~\sref{1.1.3.8} proves that the sheaves isomorphic to the associated sheaves of $A$-modules form an \emph{abelian category} (T, I, 1.4).
 
-We also note that it follows from Corollary \sref{1.1.3.9} that if $M$ is an $A$-module \emph{of
-finite type}, that is to say there exists a surjective homomorphism $A^n\to M$, then there
-exists a surjective homomorphism $\wt{A^n}\to\wt{M}$, in other words, the
-$\wt{A}$-module $\wt{M}$ is \emph{generated by a finite family of sections over
-$X$} \sref[0]{0.5.1.1}, and conversely.
+We also note that Corollary~\sref{1.1.3.9} implies that, if $M$ is an $A$-module \emph{of finite type} (that is to say, there exists a surjective homomorphism $A^n\to M$) then there exists a surjective homomorphism $\wt{A^n}\to\wt{M}$, or, in other words, the $\wt{A}$-module $\wt{M}$ is \emph{generated by a finite family of sections over $X$} \sref[0]{0.5.1.1}, and vice versa.
 
 \begin{env}[1.3.10]
 \label{1.1.3.10}
-If $N$ is a submodule of an $A$-module $M$, the canonical injection $j:N\to M$ gives by
-\sref{1.1.3.9} an injective homomorphism $\wt{N}\to\wt{M}$, which allows us
-to canonically identify $\wt{N}$ with a \emph{$\wt{A}$-submodule} of
-$\wt{M}$; we will always assume we have made this identification. If $N$ and $P$ are
-two submodules of $M$, we then have
+If $N$ is a submodule of an $A$-module $M$, the canonical injection $j:N\to M$ gives, by \sref{1.1.3.9}, an injective homomorphism $\wt{N}\to\wt{M}$, which allows us to canonically identify $\wt{N}$ with an \emph{$\wt{A}$-submodule} of $\wt{M}$;
+we will always assume that we have made this identification.
+If $N$ and $P$ are submodules of $M$, then we have
 \begin{equation*}
   \label{1.1.3.10.1}
   (N+P)^\sim=\wt{N}+\wt{P},
@@ -572,32 +563,29 @@ two submodules of $M$, we then have
   (N\cap P)^\sim=\wt{N}\cap\wt{P},
   \tag{1.3.10.2}
 \end{equation*}
-since $N+P$ and $N\cap P$ are respectively the images of the canonical homomorphism
-$N\oplus P\to M$, and the kernel of the canonical homomorphism $M\to(M/N)\oplus(M/P)$, and
-it suffices to apply \sref{1.1.3.9}.
+since $N+P$ and $N\cap P$ are the image of the canonical homomorphism
+$N\oplus P\to M$ and the kernel of the canonical homomorphism $M\to(M/N)\oplus(M/P)$ (respectively), and it suffices to apply \sref{1.1.3.9}.
 
-We conclude from \sref{1.1.3.10.1} and \sref{1.1.3.10.2} that if $\wt{N}=\wt{P}$, we have
-$N=P$.
+We conclude from \sref{1.1.3.10.1} and \sref{1.1.3.10.2} that, if $\wt{N}=\wt{P}$, then we have $N=P$.
 \end{env}
 
 \begin{cor}[1.3.11]
 \label{1.1.3.11}
-On the category of sheaves isomorphic to the associated sheaves of $A$-modules, the functor
-$\Gamma$ is exact.
+On the category of sheaves isomorphic to the associated sheaves of $A$-modules, the functor $\Gamma$ is exact.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.3.11}
 Let $\wt{M}\xrightarrow{\wt{u}}\wt{N}\xrightarrow{\wt{v}}\wt{P}$ be an exact sequence corresponding to two homomorphisms $u:M\to N$ and $v:N\to P$ of $A$-modules.
-If $Q=\Im u$ and $R=\Ker v$, we have $\wt{Q}=\Im\wt{u}=\Ker\wt{v}=\wt{R}$ (Corollary \sref{1.1.3.9}), hence $Q=R$.
+If $Q=\Im u$ and $R=\Ker v$, we have $\wt{Q}=\Im\wt{u}=\Ker\wt{v}=\wt{R}$ (Corollary~\sref{1.1.3.9}), hence $Q=R$.
 \end{proof}
 
 \begin{cor}[1.3.12]
 \label{1.1.3.12}
 Let $M$ and $N$ be two $A$-modules.
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item The sheaf associated to $M\otimes_A N$ canonically identifies with $\wt{M}\otimes_\wt{A}\wt{N}$.
-  \item If in addition $M$ admits a finite presentation, then the sheaf associated to $\Hom_A(M,N)$ canonically identifies with $\shHom_\wt{A}(\wt{M},\wt{N})$.
+  \item The sheaf associated to $M\otimes_A N$ is canonically identified with $\wt{M}\otimes_\wt{A}\wt{N}$.
+  \item If, in addition $M$, admits a finite presentation, then the sheaf associated to $\Hom_A(M,N)$ is canonically identified with $\shHom_\wt{A}(\wt{M},\wt{N})$.
 \end{enumerate}
 \end{cor}
 
