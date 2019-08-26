@@ -1,10 +1,6 @@
 # EGA
 
-**First draft:** ![EGA0status](https://img.shields.io/badge/EGA%200-31%25-yellow) ![EGAIstatus](https://img.shields.io/badge/EGA%20I-100%25-brightgreen) ![EGA2status](https://img.shields.io/badge/EGA%20II-3%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-0%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-0%25-red)
-
-**Proofreading:** ![EGA0status'](https://img.shields.io/badge/EGA%200-5%25-orange) ![EGAIstatus'](https://img.shields.io/badge/EGA%20I-5%25-orange) ![EGA2status'](https://img.shields.io/badge/EGA%20II-0%25-red) ![EGA3status'](https://img.shields.io/badge/EGA%20III-0%25-red) ![EGA4status'](https://img.shields.io/badge/EGA%20IV-0%25-red)
-
-Amateur translation (French to English) of A. Grothendieck's EGA.
+Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 To compile, `make book`, `make pdfs`, or `make all`.
@@ -19,7 +15,13 @@ Compiled PDFs, auto-compiled every hour:
 - [EGA III](https://fppf.site/ega/ega3.pdf).
 - [References](https://fppf.site/ega/ref.pdf).
 
+![lastupdate](https://img.shields.io/github/last-commit/ryankeleti/ega)
+
 ## Current status
+
+**First draft:** ![EGA0status](https://img.shields.io/badge/EGA%200-31%25-yellow) ![EGAIstatus](https://img.shields.io/badge/EGA%20I-100%25-brightgreen) ![EGA2status](https://img.shields.io/badge/EGA%20II-3%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-0%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-0%25-red)
+
+**Proofreading:** ![EGA0status'](https://img.shields.io/badge/EGA%200-5%25-orange) ![EGAIstatus'](https://img.shields.io/badge/EGA%20I-5%25-orange) ![EGA2status'](https://img.shields.io/badge/EGA%20II-0%25-red) ![EGA3status'](https://img.shields.io/badge/EGA%20III-0%25-red) ![EGA4status'](https://img.shields.io/badge/EGA%20IV-0%25-red)
 
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
