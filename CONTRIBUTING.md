@@ -34,6 +34,9 @@
 | `\cat` | categories | `\cat{D}` for a category D |
 | `\fk` | Fraktur letters | `\fk{p}` for an ideal p |
 | specific | - | - |
+| `\wt` | tilde over | `\wt{A}` for Ã |
+| `\wh` | hat over | `\wh{A}` for Â |
+| `\setmin` | set subtraction | `B\setmin A` for B-A |
 | `\rad` | radical | - |
 | `\nilrad` | nilradical | - |
 | `\emp` | empty set | - |
