@@ -1,14 +1,12 @@
 # EGA
 
-![EGA0status](https://img.shields.io/badge/EGA%200-31%25-yellow) ![EGAIstatus](https://img.shields.io/badge/EGA%20I-100%25-green) ![EGA2status](https://img.shields.io/badge/EGA%20II-0%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-0%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-0%25-red)
-
-Amateur translation (French to English) of A. Grothendieck's EGA.
+Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
 To compile, `make book`, `make pdfs`, or `make all`.
 
-Compiled PDFs, auto-compiled every hour:
-- [Full document](https://fppf.site/ega/book.pdf).
+## PDFs
+There is the [**full document**](https://fppf.site/ega/book.pdf), or individual sections can be downloaded separately:
 - [What this is](https://fppf.site/ega/what.pdf).
 - [Introduction](https://fppf.site/ega/intro.pdf).
 - [EGA 0](https://fppf.site/ega/ega0.pdf).
@@ -17,7 +15,19 @@ Compiled PDFs, auto-compiled every hour:
 - [EGA III](https://fppf.site/ega/ega3.pdf).
 - [References](https://fppf.site/ega/ref.pdf).
 
+All the PDFs are auto-compliled every hour, so will be up to date with the latest commit.
+
+![lastupdate](https://img.shields.io/github/last-commit/ryankeleti/ega)
+
 ## Current status
+
+| | First draft | Proofreading |
+| ------ | ----------- | ------------ |
+| ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-31%25-orange) | ![EGA0p](https://img.shields.io/badge/-5%25-red)|
+| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-5%25-red)|
+| ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-3%25-red) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
+| ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-0%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
+| ![EGA4](https://img.shields.io/badge/EGA-4-lightgrey) | ![EGA4fd](https://img.shields.io/badge/-0%25-red) | ![EGA4p](https://img.shields.io/badge/-0%25-red)|
 
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
