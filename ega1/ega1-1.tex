@@ -1068,7 +1068,7 @@ Furthermore, we can say that the functors $(\Spec(A),\wt{A})$ in $A$ and $\Gamma
 
 \begin{cor}[1.7.5]
 \label{1.1.7.5}
-If $\vphi:B\to A$ is surjective, then the corresponding morphism $({}^a\vphi,\wt{\vphi})$ is a monomorphism of ringed spaces \emph{(cf. \sref{1.4.1.7})}.
+If $\vphi:B\to A$ is surjective, then the corresponding morphism $({}^a\vphi,\wt{\vphi})$ is a monomorphism of ringed spaces \emph{(cf.~\sref{1.4.1.7})}.
 \end{cor}
 
 \begin{proof}
@@ -1082,63 +1082,43 @@ hence the conclusion \sref[0]{0.4.1.1}.
 \label{subsection-morphisms-lrs-to-affine-schemes}
 
 \oldpage[II]{217}
-Due to a remark by J.~Tate, the statements given in Theorem \sref{1.1.7.3}
-and Proposition \sref{1.2.2.4}
-can be generalized as follows:\footnote{[Trans] The following section (I.1.8) was added in
-the errata of EGA~II, hence the temporary change in page numbers, which refer to EGA~II.}
+Due to a remark by J.~Tate, the statements of Theorem~\sref{1.1.7.3} and Proposition~\sref{1.2.2.4} can be generalized as follows:\footnote{[Trans] The following section (I.1.8) was added in the errata of EGA~II, hence the temporary change in page numbers, which refer to EGA~II.}
 
 \begin{prop}[1.8.1]
 \label{1.1.8.1}
-Let $(S,\OO_S)$ be an affine scheme, $(X,\OO_X)$ a locally ringed space. Then there is a
-canonical bijection from the set of ring homomorphisms
+Let $(S,\OO_S)$ be an affine scheme, and $(X,\OO_X)$ a locally ringed space.
+Then there is a canonical bijection from the set of ring homomorphisms
 \oldpage[II]{218}
-$\Gamma(S,\OO_S)\to\Gamma(X,\OO_X)$ to the set of morphisms of ringed spaces
-$(\psi,\theta):(X,\OO_X)\to(S,\OO_S)$ such that, for each $x\in X$, $\theta_x^\sharp$ is a
-local homomorphism: $\OO_{\psi(x)}\to\OO_x$.
+$\Gamma(S,\OO_S)\to\Gamma(X,\OO_X)$ to the set of morphisms of ringed spaces $(\psi,\theta):(X,\OO_X)\to(S,\OO_S)$ such that, for each $x\in X$, $\theta_x^\sharp$ is a local homomorphism $\OO_{\psi(x)}\to\OO_x$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.1.8.1}
-We note first that if $(X,\OO_X)$, $(S,\OO_S)$ are any two ringed spaces, a morphism
-$(\psi,\theta)$ from $(X,\OO_X)$ to $(S,\OO_S)$ canonically defines a ring homomorphism
-$\Gamma(\theta):\Gamma(S,\OO_S)\to\Gamma(X,\OO_X)$, hence a first map
+We note first that if $(X,\OO_X)$ and $(S,\OO_S)$ are any two ringed spaces, then a morphism $(\psi,\theta)$ from $(X,\OO_X)$ to $(S,\OO_S)$ canonically defines a ring homomorphism $\Gamma(\theta):\Gamma(S,\OO_S)\to\Gamma(X,\OO_X)$, hence a first map
 \begin{equation*}
   \label{1.1.8.1.1}
   \rho:\Hom((X,\OO_X),(S,\OO_S))\to\Hom(\Gamma(S,\OO_S),\Gamma(X,\OO_X)).
   \tag{1.8.1.1}
 \end{equation*}
-Conversely, under the stated hypotheses, we set $A=\Gamma(S,\OO_S)$, and consider a ring
-homomorphism $\vphi:A\to\Gamma(X,\OO_X)$. For each $x\in X$, it is clear that the set of the
-$f\in A$ such that $\vphi(f)(x)=0$ is a \emph{prime ideal} of $A$, since
-$\OO_x/\fk{m}_x=\kres(x)$ is a field; it is therefore an element of $S=\Spec(A)$, which
-we denote ${}^a\vphi(x)$. In addition, for each $f\in A$, we have by definition
-\sref[0]{0.5.5.2} that ${}^a\vphi(D(f))=X_f$, which proves that ${}^a\vphi$ is a
-\emph{continuous map} $X\to S$. We define then a homomorphism
+Conversely, under the stated hypotheses, we set $A=\Gamma(S,\OO_S)$, and consider a ring homomorphism $\vphi:A\to\Gamma(X,\OO_X)$.
+For each $x\in X$, it is clear that the set of the $f\in A$ such that $\vphi(f)(x)=0$ is a \emph{prime ideal} of $A$, since $\OO_x/\fk{m}_x=\kres(x)$ is a field;
+it is therefore an element of $S=\Spec(A)$, which we denote by ${}^a\vphi(x)$.
+In addition, for each $f\in A$, we have, by definition \sref[0]{0.5.5.2}, that ${}^a\vphi(D(f))=X_f$, which proves that ${}^a\vphi$ is a \emph{continuous map} $X\to S$.
+We then define a homomorphism
 \[
   \wt{\vphi}:\OO_S\to{}^a\vphi_*(\OO_X)
 \]
-of $\OO_S$-modules; for each $f\in A$, we have $\Gamma(D(f),\OO_S)=A_f$ \sref{1.1.3.6};
-for each $s\in A$, we correspond to $s/f\in A_f$ the element
-$(\vphi(s)|X_f)(\vphi(f)|X_f)^{-1}$ of $\Gamma(X_f,\OO_X)=\Gamma(D(f),{}^a\vphi(\OO_X))$, and
-we check immediately (by passing from $D(f)$ to $D(fg)$) that this is a well-defined
-homomorphism of $\OO_S$-modules, hence a morphism $({}^a\vphi,\wt{\vphi})$ of ringed
-spaces. In addition, with the same notations, and setting $y={}^a\vphi(x)$ for purposes of
-simplification, we see immediately \sref[0]{0.3.7.1} that we have
-$\wt{\vphi}_x^\sharp(s_y/f_y)=(\vphi(s)_x)(\vphi(f)_x)^{-1}$; as the relation
-$s_y\in\fk{m}_y$ is by definition equivalent to $\vphi(s)_x\in\fk{m}_x$, we see
-that $\wt{\vphi}_x^\sharp$ is a \emph{local} homomorphism $\OO_y\to\OO_x$, and we have
-so defined a second map $\sigma:\Hom(\Gamma(S,\OO_S),\Gamma(X,\OO_X))\to\fk{L}$, where
-$\fk{L}$ is the set of the morphisms $(\psi,\theta):(X,\OO_X)\to(S,\OO_S)$ such that
-$\theta_x^\sharp$ is local for each $x\in X$. It remains to prove that $\sigma$ and $\rho$
-(restricted to $\fk{L}$) are inverses of each other; the definition of
-$\wt{\vphi}$ immediately shows that $\Gamma(\wt{\vphi})=\vphi$, and as a result
-$\rho\circ\sigma$ is the identity. To see that $\sigma\circ\rho$ is the identity, start with a
-morphism $(\psi,\theta)\in\fk{L}$ and let $\vphi=\Gamma(\theta)$; the hypotheses on
-$\theta_x^\sharp$ allows us to induce from this morphism, by passing to quotients, a
-monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ such that for each section
-$f\in A=\Gamma(S,\OO_S)$, we have $\theta^x(f(\psi(x)))=\vphi(f)(x)$; the relation
-$f(\vphi(x))=0$ is therefore equivalent to $\vphi(f)(x)=0$, which proves that
-${}^a\vphi=\psi$. On the other hand, the definitions imply that the diagram
+of $\OO_S$-modules;
+for each $f\in A$, we have $\Gamma(D(f),\OO_S)=A_f$ \sref{1.1.3.6};
+for each $s\in A$, we associate to $s/f\in A_f$ the element $(\vphi(s)|X_f)(\vphi(f)|X_f)^{-1}$ of $\Gamma(X_f,\OO_X)=\Gamma(D(f),{}^a\vphi(\OO_X))$, and we immediately see (by passing from $D(f)$ to $D(fg)$) that this is a well-defined homomorphism of $\OO_S$-modules, hence a morphism $({}^a\vphi,\wt{\vphi})$ of ringed spaces.
+In addition, with the same notation, and setting $y={}^a\vphi(x)$ for purposes of simplification, we immediately see \sref[0]{0.3.7.1} that we have $\wt{\vphi}_x^\sharp(s_y/f_y)=(\vphi(s)_x)(\vphi(f)_x)^{-1}$;
+since the relation $s_y\in\fk{m}_y$ is, by definition, equivalent to $\vphi(s)_x\in\fk{m}_x$, we see that $\wt{\vphi}_x^\sharp$ is a \emph{local} homomorphism $\OO_y\to\OO_x$, and we have thus defined a second map $\sigma:\Hom(\Gamma(S,\OO_S),\Gamma(X,\OO_X))\to\fk{L}$, where $\fk{L}$ is the set of the morphisms $(\psi,\theta):(X,\OO_X)\to(S,\OO_S)$ such that $\theta_x^\sharp$ is local for each $x\in X$.
+It remains to prove that $\sigma$ and $\rho$ (restricted to $\fk{L}$) are inverses of each other;
+the definition of $\wt{\vphi}$ immediately shows that $\Gamma(\wt{\vphi})=\vphi$, and, as a result, that $\rho\circ\sigma$ is the identity.
+To see that $\sigma\circ\rho$ is the identity, start with a morphism $(\psi,\theta)\in\fk{L}$ and let $\vphi=\Gamma(\theta)$;
+the hypotheses on $\theta_x^\sharp$ mean that this morphism induces, by passing to quotients, a monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ such that for each section $f\in A=\Gamma(S,\OO_S)$, we have $\theta^x(f(\psi(x)))=\vphi(f)(x)$;
+the equation $f(\vphi(x))=0$ is therefore equivalent to $\vphi(f)(x)=0$, which proves that ${}^a\vphi=\psi$.
+On the other hand, the definitions imply that the diagram
 \[
   \xymatrix{
     A\ar[r]^\vphi\ar[d] &
@@ -1147,25 +1127,19 @@ ${}^a\vphi=\psi$. On the other hand, the definitions imply that the diagram
     \OO_x
   }
 \]
-is commutative, and it is the same for the analogous diagram where $\theta_x^\sharp$ is
-replaced by $\wt{\vphi}_x^\sharp$, hence $\wt{\vphi}_x^\sharp=\theta_x^\sharp$
-\sref[0]{0.1.2.4}, and as a result $\wt{\vphi}=\theta$.
+is commutative, and it is the same for the analogous diagram where $\theta_x^\sharp$ is replaced by $\wt{\vphi}_x^\sharp$, hence $\wt{\vphi}_x^\sharp=\theta_x^\sharp$ \sref[0]{0.1.2.4}, and, as a result, $\wt{\vphi}=\theta$.
 \end{proof}
 
 \begin{env}[1.8.2]
 \label{1.1.8.2}
-When $(X,\OO_X)$ and $(Y,\OO_Y)$ are \emph{locally} ringed spaces, we will consider the
-morphisms $(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ such that, for each $x\in X$,
-$\theta_x^\sharp$ is a \emph{local} homomorphism: $\OO_{\psi(x)}\to\OO_x$. Henceforth when
-we speak
+When $(X,\OO_X)$ and $(Y,\OO_Y)$ are \emph{locally} ringed spaces, we will consider the morphisms $(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ such that, for each $x\in X$, $\theta_x^\sharp$ is a \emph{local} homomorphism $\OO_{\psi(x)}\to\OO_x$.
+Henceforth when we speak
 \oldpage[II]{219}
-of a \emph{morphism of locally ringed spaces}, it will always be a morphism such as the
-above; with this definition of morphisms, it is clear that the locally ringed spaces form a
-\emph{category}; for two objects $X$, $Y$ of this category, $\Hom(X,Y)$ thus denotes the set
-of morphisms of locally ringed spaces from $X$ to $Y$ (the set denoted $\fk{L}$ in
-\sref{1.1.8.1}); when we consider the set of \emph{morphisms of ringed spaces} from $X$
-to $Y$, we will denote it by $\Hom_\text{rs}(X,Y)$ to avoid any confusion. The map (1.8.1.1)
-is then written as
+of a \emph{morphism of locally ringed spaces}, it will always be a morphism like the above;
+with this definition of morphisms, it is clear that the locally ringed spaces form a \emph{category};
+for any two objects $X$ and $Y$ of this category, $\Hom(X,Y)$ thus denotes the set of morphisms of locally ringed spaces from $X$ to $Y$ (the set denoted $\fk{L}$ in \sref{1.1.8.1});
+when we consider the set of \emph{morphisms of ringed spaces} from $X$ to $Y$, we will denote it by $\Hom_\text{rs}(X,Y)$ to avoid any confusion.
+The map \sref{1.1.8.1.1} is then written as
 \begin{equation*}
   \label{1.1.8.2.1}
   \rho:\Hom_\text{rs}(X,Y)\to\Hom(\Gamma(Y,\OO_Y),\Gamma(X,\OO_X))
@@ -1182,38 +1156,31 @@ is a \emph{functorial} map in $X$ and $Y$ on the category of locally ringed spac
 
 \begin{cor}[1.8.3]
 \label{1.1.8.3}
-Let $(Y,\OO_Y)$ be a locally ringed space. For $Y$ to be an affine scheme, it is necessary
-and sufficient that for each locally ringed space $(X,\OO_X)$, the map \sref{1.1.8.2.2} is
-bijective.
+Let $(Y,\OO_Y)$ be a locally ringed space.
+For $Y$ to be an affine scheme, it is necessary and sufficient that, for each locally ringed space $(X,\OO_X)$, the map \sref{1.1.8.2.2} be bijective.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.8.3}
-Proposition \sref{1.1.8.1} shows that the condition is necessary. Conversely, if we
-suppose that the condition is satisfied and if we put $A=\Gamma(Y,\OO_Y)$, it follows from
-the hypotheses and from \sref{1.1.8.1} that the functors $X\mapsto\Hom(X,Y)$ and
-$X\mapsto\Hom(X,\Spec(A))$, from the category of locally ringed spaces to that of sets, are
-\emph{isomorphic}. We know that this implies the existence of a canonical isomorphism
-$X\to\Spec(A)$ (cf. \textbf{0},~8).
+Proposition~\sref{1.1.8.1} shows that the condition is necessary.
+Conversely, if we suppose that the condition is satisfied, and if we put $A=\Gamma(Y,\OO_Y)$, then it follows from the hypotheses and from \sref{1.1.8.1} that the functors $X\mapsto\Hom(X,Y)$ and $X\mapsto\Hom(X,\Spec(A))$, from the category of locally ringed spaces to that of sets, are \emph{isomorphic}.
+We know that this implies the existence of a canonical isomorphism $X\to\Spec(A)$ (cf.~\textbf{0},~8).
 \end{proof}
 
 \begin{env}[1.8.4]
 \label{1.1.8.4}
-Let $S=\Spec(A)$ be an affine scheme; denote by $(S',A')$ the ringed space whose underlying
-space is \emph{a point} and the structure sheaf $A'$ is the (necessarily simple)
-sheaf on $S'$ defined by the ring $A$. Let $\pi:S\to S'$ be the unique map from $S$ to $S'$;
-on the other hand, we note that for each open subset $U$ of $S$, we have a canonical map
-$\Gamma(S',A')=\Gamma(S,\OO_S)\to\Gamma(U,\OO_S)$ which thus defines a \emph{$\pi$-morphism}
-$\iota:A'\to\OO_S$ of sheaves of rings. We have thus canonically defined a \emph{morphism of
-ringed spaces $i=(\pi,\iota):(S,\OO_S)\to(S',A')$}. For each $A$-module $M$, we denote by
-$M'$ the simple sheaf on $S'$ defined by $M$, which is evidently an $A'$-module. It is clear
-that we have $i_*(\wt{M})=M'$ \sref{1.1.3.7}.
+Let $S=\Spec(A)$ be an affine scheme;
+denote by $(S',A')$ the ringed space whose underlying space is \emph{a point} and the structure sheaf $A'$ is the (necessarily simple) sheaf on $S'$ defined by the ring $A$.
+Let $\pi:S\to S'$ be the unique map from $S$ to $S'$;
+on the other hand, we note that, for each open subset $U$ of $S$, we have a canonical map $\Gamma(S',A')=\Gamma(S,\OO_S)\to\Gamma(U,\OO_S)$ which thus defines a \emph{$\pi$-morphism} $\iota:A'\to\OO_S$ of sheaves of rings.
+We have thus canonically defined a \emph{morphism of ringed spaces $i=(\pi,\iota):(S,\OO_S)\to(S',A')$}.
+For each $A$-module $M$, we denote by $M'$ the simple sheaf on $S'$ defined by $M$, which is evidently an $A'$-module.
+It is clear that $i_*(\wt{M})=M'$ \sref{1.1.3.7}.
 \end{env}
 
 \begin{lem}[1.8.5]
 \label{1.1.8.5}
-With the notation of \sref{1.1.8.4}, for each $A$-module $M$, the canonical functorial
-$\OO_S$-homomorphism \emph{(\textbf{0}, 4.4.3.3)}
+With the notation of \sref{1.1.8.4}, for each $A$-module $M$, the canonical functorial $\OO_S$-homomorphism \sref[0]{4.4.3.3}
 \begin{equation*}
   \label{1.1.8.5.1}
   i^*(i_*(\wt{M}))\to\wt{M}
@@ -1224,18 +1191,15 @@ is an isomorphism.
 
 \begin{proof}
 \label{proof-1.1.8.5}
-Indeed, the two parts of (1.8.5.1) are right exact (the functor
-$M\mapsto i_*(\wt{M})$ being evidently exact) and commute with direct sums; by
-considering $M$ as the cokernel of a homomorphism $A^{(I)}\to A^{(J)}$, we reduce to proving
-the lemma for the case where $M=A$, and it is evident in this case.
+Indeed, the two parts of \sref{1.1.8.5.1} are right exact (the functor $M\mapsto i_*(\wt{M})$ evidently being exact) and commute with direct sums;
+by considering $M$ as the cokernel of a homomorphism $A^{(I)}\to A^{(J)}$, we can reduce to proving the lemma for the case where $M=A$, and it is evident in this case.
 \end{proof}
 
 \begin{cor}[1.8.6]
 \label{1.1.8.6}
-Let $(X,\OO_X)$ be a ringed space, $u:X\to S$ a morphism of ringed spaces.
+Let $(X,\OO_X)$ be a ringed space, and $u:X\to S$ a morphism of ringed spaces.
 \oldpage[II]{220}
-For each $A$-module $M$, we have (with the notation of \sref{1.1.8.4}) a canonical
-functorial isomorphism of $\OO_X$-modules
+For each $A$-module $M$, we have (with the notation of \sref{1.1.8.4}) a canonical functorial isomorphism of $\OO_X$-modules
 \begin{equation*}
   \label{1.1.8.6.1}
   u^*(\wt{M})\isoto u^*(i^*(M')).
@@ -1245,8 +1209,7 @@ functorial isomorphism of $\OO_X$-modules
 
 \begin{cor}[1.8.7]
 \label{1.1.8.7}
-Under the hypotheses of \sref{1.1.8.6}, we have, for each $A$-module $M$ and each
-$\OO_X$-module $\sh{F}$, a canonical functorial isomorphism in $M$ and $\sh{F}$
+Under the hypotheses of \sref{1.1.8.6}, we have, for each $A$-module $M$ and each $\OO_X$-module $\sh{F}$, a canonical isomorphism, functorial in $M$ and $\sh{F}$,
 \begin{equation*}
   \label{1.1.8.7.1}
   \Hom_{\OO_S}(\wt{M},u_*(\sh{F}))\isoto\Hom_A(M,\Gamma(X,\sh{F})).
@@ -1256,89 +1219,65 @@ $\OO_X$-module $\sh{F}$, a canonical functorial isomorphism in $M$ and $\sh{F}$
 
 \begin{proof}
 \label{proof-1.1.8.7}
-We have, according to \sref[0]{0.4.4.3} and Lemma \sref{1.1.8.5}, a canonical
+We have, according to \sref[0]{0.4.4.3} and Lemma~\sref{1.1.8.5}, a canonical
 isomorphism of bifunctors
 \[
   \Hom_{\OO_S}(\wt{M},u_*(\sh{F}))\isoto\Hom_{A'}(M',i_*(u_*(\sh{F})))
 \]
-and it is clear that the right hand side is none other than $\Hom_A(M,\Gamma(X,\sh{F}))$. We
-note that the canonical homomorphism (1.8.7.1) sends each $\OO_S$-homomorphism
-$h:\wt{M}\to u_*(\sh{F})$ (in other words, each $u$-morphism $\wt{M}\to\sh{F}$)
-to the $A$-homomorphism $\Gamma(h):M\to\Gamma(S,u_*(\sh{F}))=\Gamma(X,\sh{F})$.
+and it is clear that the right hand side is exactly $\Hom_A(M,\Gamma(X,\sh{F}))$.
+We note that the canonical homomorphism \sref{1.1.8.7.1} sends each $\OO_S$-homomorphism $h:\wt{M}\to u_*(\sh{F})$ (in other words, each $u$-morphism $\wt{M}\to\sh{F}$) to the $A$-homomorphism $\Gamma(h):M\to\Gamma(S,u_*(\sh{F}))=\Gamma(X,\sh{F})$.
 \end{proof}
 
 \begin{env}[1.8.8]
 \label{1.1.8.8}
-With the notation of \sref{1.1.8.4}, it is clear \sref[0]{0.4.1.1} that each morphism
-of ringed spaces $(\psi,\theta):X\to S'$ is equivalent to the data of a ring homomorphism
-$A\to\Gamma(X,\OO_X)$. We can thus interpret Proposition \sref{1.1.8.1} as defining a canonical
-bijection $\Hom(X,S)\isoto\Hom(X,S')$ (where we understand that the right hand side are
-morphisms of ringed spaces, since in general $A$ is not a local ring). More generally, if
-$X$, $Y$ are two locally ringed spaces and if $(Y',A')$ is the ringed space whose underlying
-space is a point and whose sheaf of rings $A'$ is the simple sheaf defined by the
-ring $\Gamma(Y,\OO_Y)$, we can interpret (1.8.2.1) as a map
+With the notation of \sref{1.1.8.4}, it is clear \sref[0]{0.4.1.1} that each morphism of ringed spaces $(\psi,\theta):X\to S'$ is equivalent to the data of a ring homomorphism $A\to\Gamma(X,\OO_X)$.
+We can thus interpret Proposition~\sref{1.1.8.1} as defining a canonical bijection $\Hom(X,S)\isoto\Hom(X,S')$ (where we understand that the right-hand side is the collection of morphisms of ringed spaces, since in general $A$ is not a local ring).
+More generally, if $X$ and $Y$ are locally ringed spaces, and if $(Y',A')$ is the ringed space whose underlying space is a point and whose sheaf of rings $A'$ is the simple sheaf defined by the ring $\Gamma(Y,\OO_Y)$, we can interpret \sref{1.1.8.2.1} as a map
 \begin{equation*}
   \label{1.1.8.8.1}
   \rho:\Hom_\text{rs}(X,Y)\to\Hom(X,Y').
   \tag{1.8.8.1}
 \end{equation*}
-The result of Corollary \sref{1.1.8.3} is interpreted by saying that affine schemes are
-characterized among locally ringed spaces as those for which the restriction o $\rho$ to
+The result of Corollary~\sref{1.1.8.3} is interpreted by saying that affine schemes are characterized among locally ringed spaces as those for which the restriction of $\rho$ to
 $\Hom(X,Y)$:
 \begin{equation*}
   \label{1.1.8.8.2}
   \rho':\Hom(X,Y)\to\Hom(X,Y')
   \tag{1.8.8.2}
 \end{equation*}
-is \emph{bijective} for \emph{each} locally ringed space $X$. In the following chapter, we
-generalize this definition, which allows us to associate to \emph{any} ringed space $Z$ (and
-not only to a ringed space whose underlying space is a point) a locally ringed
-space which we will call $\Spec(Z)$; this will be the starting point for a ``relative''
-theory of preschemes over any ringed space, extending the results of Chapter~I.
+is \emph{bijective} for \emph{every} locally ringed space $X$.
+In the following chapter, we generalize this definition, which allows us to associate to \emph{any} ringed space $Z$ (and not only to a ringed space whose underlying space is a point) a locally ringed space which we will call $\Spec(Z)$;
+this will be the starting point for a ``relative'' theory of preschemes over any ringed space, extending the results of Chapter~I.
 \end{env}
 
 \begin{env}[1.8.9]
 \label{1.1.8.9}
-We can consider the pairs $(X,\sh{F})$ consisting of a locally ringed space $X$ and an
-$\OO_X$-module $\sh{F}$ as forming a category, a \emph{morphism} of this category being a
-pair $(u,h)$ consisting of a morphism of locally ringed spaces
+We can consider the pairs $(X,\sh{F})$ consisting of a locally ringed space $X$ and an $\OO_X$-module $\sh{F}$ as forming a category, a \emph{morphism} in this category being a pair $(u,h)$ consisting of a morphism of locally ringed spaces
 \oldpage[II]{221}
-$u:X\to Y$ and a $u$-morphism $h:\sh{G}\to\sh{F}$ of modules; these morphisms (for
-$(X,\sh{F})$ and $(Y,\sh{G})$ fixed) form a set which we denote by
-$\Hom((X,\sh{F}),(Y,\sh{G}))$; the map $(u,h)\mapsto(\rho'(u),\Gamma(h))$ is a canonical
-map
+$u:X\to Y$ and a $u$-morphism $h:\sh{G}\to\sh{F}$ of modules;
+these morphisms (for $(X,\sh{F})$ and $(Y,\sh{G})$ fixed) form a set which we denote by $\Hom((X,\sh{F}),(Y,\sh{G}))$;
+the map $(u,h)\mapsto(\rho'(u),\Gamma(h))$ is a canonical map
 \begin{equation*}
   \label{1.1.8.9.1}
   \Hom((X,\sh{F}),(Y,\sh{G}))\to\Hom((\Gamma(Y,\OO_Y),\Gamma(Y,\sh{G})),(\Gamma(X,\OO_X),\Gamma(X,\sh{F})))
   \tag{1.8.9.1}
 \end{equation*}
-\emph{functorial} in $(X,\sh{F})$ and $(Y,\sh{G})$, the right hand side being the set of
-di-homomorphisms corresponding to the rings and modules considered \sref[0]{0.1.0.2}.
+\emph{functorial} in $(X,\sh{F})$ and $(Y,\sh{G})$, the right-hand side being the set of di-homomorphisms corresponding to the rings and modules considered \sref[0]{0.1.0.2}.
 \end{env}
 
 \begin{cor}[1.8.10]
 \label{1.1.8.10}
-Let $Y$ be a locally ringed space, $\sh{G}$ an $\OO_Y$-module. For $Y$ to be an affine scheme
-and $\sh{G}$ to be a quasi-coherent $\OO_Y$-module, it is necessary and sufficient that for
-each pair $(X,\sh{F})$ consisting of a locally ringed space $X$ and an $\OO_X$-module
-$\sh{F}$, the canonical map \sref{1.1.8.9.1} be bijective.
+Let $Y$ be a locally ringed space, and $\sh{G}$ an $\OO_Y$-module.
+For $Y$ to be an affine scheme and $\sh{G}$ to be a quasi-coherent $\OO_Y$-module, it is necessary and sufficient that, for each pair $(X,\sh{F})$ consisting of a locally ringed space $X$ and an $\OO_X$-module $\sh{F}$, the canonical map \sref{1.1.8.9.1} be bijective.
 \end{cor}
 
-We leave the reader to give the proof, which is modelled on that of \sref{1.1.8.3}, and
-using \sref{1.1.8.1} and \sref{1.1.8.7}.
+We leave the proof, which is modelled on that of \sref{1.1.8.3}, using \sref{1.1.8.1} and \sref{1.1.8.7}, to the reader.
 
 \begin{rmk}[1.8.11]
 \label{1.1.8.11}
-The statements \sref{1.1.7.3}, \sref{1.1.7.4}, and \sref{1.2.2.4} are particular
-cases of \sref{1.1.8.1}, as well as the definition in \sref{1.1.6.1}; similarly,
-\sref{1.2.2.5} follows from \sref{1.1.8.7}. Corollary \sref{1.1.8.7} also implies
-\sref{1.1.6.3} (and as a result \sref{1.1.6.4}) as a particular case, since if $X$ is
-an affine scheme and $\Gamma(X,\sh{F})=N$, the functors
-$M\mapsto\Hom_{\OO_S}(\wt{M},u_*(\wt{N}))$ and
-$M\mapsto\Hom_{\OO_S}(\wt{M},(N_{[\vphi]})^\sim)$ (where $\vphi:A\to\Gamma(X,\OO_X)$
-corresponds to $u$) are isomorphic by Corollaries \sref{1.1.8.7} and \sref{1.1.3.8}. Finally,
-\sref{1.1.6.5} (and as a result \sref{1.1.6.6}) follow from \sref{1.1.8.6} and the
-fact that for each $f\in A$, the $A_f$-modules $N'\otimes_{A'}A_f$ and $(N'\otimes_{A'}A)_f$
-(notations of \sref{1.1.6.5}) are canonically isomorphic.
+The statements \sref{1.1.7.3}, \sref{1.1.7.4}, and \sref{1.2.2.4} are particular cases of \sref{1.1.8.1}, as well as the definition in \sref{1.1.6.1};
+similarly, \sref{1.2.2.5} follows from \sref{1.1.8.7}.
+Corollary~\sref{1.1.8.7} also implies \sref{1.1.6.3} (and, as a result, \sref{1.1.6.4}) as a particular case, since if $X$ is an affine scheme and $\Gamma(X,\sh{F})=N$, then the functors $M\mapsto\Hom_{\OO_S}(\wt{M},u_*(\wt{N}))$ and $M\mapsto\Hom_{\OO_S}(\wt{M},(N_{[\vphi]})^\sim)$ (where $\vphi:A\to\Gamma(X,\OO_X)$ corresponds to $u$) are isomorphic, by Corollaries~\sref{1.1.8.7} and \sref{1.1.3.8}.
+Finally, \sref{1.1.6.5} (and, as a result, \sref{1.1.6.6}) follow from \sref{1.1.8.6}, and the fact that, for each $f\in A$, the $A_f$-modules $N'\otimes_{A'}A_f$ and $(N'\otimes_{A'}A)_f$ (with the notation of \sref{1.1.6.5}) are canonically isomorphic.
 \end{rmk}
 
