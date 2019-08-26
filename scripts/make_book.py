@@ -1,5 +1,7 @@
 # see README.md/COPYING.md.
 import re
+import subprocess
+from datetime import datetime
 
 # get location of repo.
 def get_path():
@@ -47,11 +49,11 @@ print("\\begin{titlepage}")
 print("\\pagestyle{empty}")
 print("\\setcounter{page}{1}")
 print("\\centerline{\\LARGE\\bfseries \\'El\\'ements de g\\'eom\\'etrie alg\\'ebrique}")
-print("\\vskip1in")
+print("\\vskip0.5in")
 print("\\noindent")
 print("\\centerline{A.~Grothendieck and J.~Dieudonn\\'e}")
 print("\\centerline{Publications math\\'ematiques de l'I.H.\\'E.S}")
-print("\\vskip1in")
+print("\\vskip0.5in")
 print("\\noindent")
 print("\\centerline{\\bfseries Contributors}")
 print("\\centerline{")
@@ -72,6 +74,9 @@ with open(path + "CONTRIBUTORS", 'r') as f:
     contributors += ", " + contributor
 print(contributors)
 print("}")
+print("\\vskip0.5in")
+print("\\noindent")
+print("\\centerline{\\tt autobuild\ ::\ "+str(datetime.utcnow().strftime("%Y-%m-%d %H:%M"))+", hash\ ::\ "+subprocess.check_output(["git", "rev-parse", "--short", "HEAD"]).decode("ascii").strip()+"}")
 print("\\end{titlepage}")
 print("\\setcounter{tocdepth}{2}")
 print("\\tableofcontents")
