@@ -50,6 +50,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 12. Supplement on sheaf cohomology
     + [ ] 13. Projective limits in homological algebra
 - [ ] Preliminaries (EGA 0_IV)
+    + [ ] (14-ε). Summary
     + [ ] 14. Combinatorial dimension of a topological space
     + [ ] 15. M-regular and F-regular sequences
     + [ ] 16. Dimension and depth of Noetherian local rings
@@ -73,6 +74,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
     + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
 - [ ] Elementary global study of some classes of morphisms (EGA II)
+    + [x] 0. Summary _(@ryankeleti, proofread by @thosgood)_
     + [ ] 1. Affine morphisms
     + [ ] 2. Homogeneous prime spectra
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
@@ -82,6 +84,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 7. Valuative criteria
     + [ ] 8. Blowup schemes; projective cones; projective closure
 - [ ] Cohomological study of coherent sheaves (EGA III)
+    + [x] 0. Summary _(@thosgood, proofread by @thosgood)_
     + [ ] 1. Cohomology of affine schemes
     + [ ] 2. Cohomological study of projective morphisms
     + [ ] 3. Finiteness theorem for proper morphisms
@@ -94,12 +97,13 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 10. ~~Relations between projective cohomology and local cohomology. Formal completion technique along a divisor~~
     + [x] 11. ~~Global and local Picard groups~~
 - [ ] Local study of schemes and their morphisms (EGA IV)
+    + [ ] 0. Summary _(@thosgood)_
     + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes
     + [ ] 2. Base change and flatness
     + [ ] 3. Associated prime cycles and primary decomposition
     + [ ] 4. Change of base field for algebraic preschemes
     + [ ] 5. Dimension, depth, and regularity of locally Noetherian preschemes
-    + [ ] 6. Flat morphisms of locally Noetherian
+    + [ ] 6. Flat morphisms of locally Noetherian preschemes
     + [ ] 7. Relations between a local Noetherian ring and its completion. Excellent rings
     + [ ] 8. Projective limits of preschemes
     + [ ] 9. Constructible properties
