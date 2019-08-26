@@ -828,32 +828,29 @@ we conclude the proof by appealing to \sref{1.1.3.9} and \sref{1.1.5.1}.
 
 \begin{env}[1.6.1]
 \label{1.1.6.1}
-Let $A$, $A'$ be two rings,
+Let $A$, $A'$ be rings,
 \[
   \vphi:A'\to A
 \]
-a homomorphism,
+a homomorphism, and
 \[
   {}^a\vphi:X=\Spec(A)\to X'=\Spec(A')
 \]
-the continuous map associated to $\vphi$ \sref{1.1.2.1}. We will define a \emph{canonical
-homomorphism}
+the continuous map associated to $\vphi$ \sref{1.1.2.1}.
+We will define a \emph{canonical homomorphism}
 \[
   \wt{\vphi}:\OO_{X'}\to{}^a\vphi_*(\OO_X)
 \]
-of sheaves of rings. For each $f'\in A'$, we put $f=\vphi(f')$; we have
-${}^a\vphi^{-1}(D(f'))=D(f)$ (1.2.2.2). The rings $\Gamma(D(f'),\wt{A'})$ and
-$\Gamma(D(f),\wt{A})$ identify respectively with $A_{f'}'$ and $A_f$
-(\sref{1.1.3.6} and \sref{1.1.3.7}). The homomorphism $\vphi$ canonically defines a
-homomorphism $\vphi_{f'}:A_{f'}'\to A_f$ \sref[0]{0.1.5.1}, in other words, we have a
-homomorphism of rings
+of sheaves of rings.
+For each $f'\in A'$, we put $f=\vphi(f')$;
+we have ${}^a\vphi^{-1}(D(f'))=D(f)$ \sref{1.1.2.2.2}.
+The rings $\Gamma(D(f'),\wt{A'})$ and $\Gamma(D(f),\wt{A})$ are identified  with $A_{f'}'$ and $A_f$ (respectively) (\sref{1.1.3.6} and \sref{1.1.3.7}). The homomorphism $\vphi$ canonically defines a homomorphism $\vphi_{f'}:A_{f'}'\to A_f$ \sref[0]{0.1.5.1}, in other words, we have a homomorphism of rings
 \[
   \Gamma(D(f),\wt{A'})\to\Gamma({}^a\vphi^{-1}(D(f')),\wt{A})
-  =\Gamma(D(f'),{}^a\vphi_*(\wt{A}))
+  =\Gamma(D(f'),{}^a\vphi_*(\wt{A})).
 \]
 \oldpage[I]{94}
-In addition, these homomorphism satisfy the usual compatibility conditions: for
-$D(f')\supset D(g')$, the diagram
+In addition, these homomorphisms satisfy the usual compatibility conditions: for $D(f')\supset D(g')$, the diagram
 \[
   \xymatrix{
     \Gamma(D(f'),\wt{A'})\ar[r]\ar[d] &
@@ -862,70 +859,52 @@ $D(f')\supset D(g')$, the diagram
     \Gamma(D(g'),{}^a\vphi_*(\wt{A})
   }
 \]
-is commutative \sref[0]{0.1.5.1}; we have thus defined a homomorphism of $\OO_{X'}$-algebras,
-as the $D(f')$ form a basis for the topology og $X'$ \sref[0]{0.3.2.3}. The pair
-$\Phi=({}^a\vphi,\wt{\vphi})$ is thus a \emph{morphism} of ringed spaces
+is commutative \sref[0]{0.1.5.1};
+we have thus defined a homomorphism of $\OO_{X'}$-algebras, as the $D(f')$ form a basis for the topology of $X'$ \sref[0]{0.3.2.3}.
+The pair $\Phi=({}^a\vphi,\wt{\vphi})$ is thus a \emph{morphism} of ringed spaces
 \[
   \Phi:(X,\OO_X)\to(X',\OO_{X'}),
 \]
 \sref[0]{0.4.1.1}.
 
-We note further that, if we put $x'={}^a\vphi(x)$, then the homomorphism
-$\wt{\vphi}_x^\sharp$ \sref[0]{0.3.7.1} is none other than the homomorphism
+We also note that, if we put $x'={}^a\vphi(x)$, then the homomorphism $\wt{\vphi}_x^\sharp$ \sref[0]{0.3.7.1} is exactly the homomorphism
 \[
   \vphi_x:A_{x'}'\to A_x
 \]
-canonically induced by $\vphi:A'\to A$ \sref[0]{0.1.5.1}. Indeed, each $z'\in A_{x'}'$
-can be written as $g'/f'$, where $f'$, $g'$ are in $A'$ and $f'\not\in\fk{j}_{x'}$;
-$D(f')$ is then a neighborhood of $x'$ in $X'$, and the homomorphism
-$\Gamma(D(f'),\wt{A'})\to\Gamma({}^a\vphi^{-1}(D(f')),\wt{A})$ induced by
-$\wt{\vphi}$ is none other than $\vphi_{f'}$; by considering the section
-$s'\in\Gamma(D(f'),\wt{A'})$ corresponding to $g'/f'\in A_{f'}'$, we obtain
-$\wt{\vphi}_x^\sharp(z')=\vphi(g')/\vphi(f')$ in $A_x$.
+canonically induced by $\vphi:A'\to A$ \sref[0]{0.1.5.1}.
+Indeed, each $z'\in A_{x'}'$ can be written as $g'/f'$, where $f'$, $g'$ are in $A'$ and $f'\not\in\fk{j}_{x'}$;
+$D(f')$ is then a neighborhood of $x'$ in $X'$, and the homomorphism $\Gamma(D(f'),\wt{A'})\to\Gamma({}^a\vphi^{-1}(D(f')),\wt{A})$ induced by $\wt{\vphi}$ is exactly $\vphi_{f'}$;
+by considering the section $s'\in\Gamma(D(f'),\wt{A'})$ corresponding to $g'/f'\in A_{f'}'$, we obtain $\wt{\vphi}_x^\sharp(z')=\vphi(g')/\vphi(f')$ in $A_x$.
 \end{env}
 
 \begin{exm}[1.6.2]
 \label{1.1.6.2}
-Let $S$ be a multiplicative subset of $A$, $\vphi$ the canonical homomorphism $A\to S^{-1}A$;
-we have already seen \sref{1.1.2.6} that ${}^a\vphi$ is a \emph{homeomorphism} from
-$Y=\Spec(S^{-1}A)$ to the subspace of $X=\Spec(A)$ consisting of the $x$ such that
-$\fk{j}_x\cap S=\emp$. In addition, for each $x$ in this subspace, thus of the form
-${}^a\vphi(y)$ with $y\in Y$, the homomorphism $\wt{\vphi}_y^\sharp:\OO_x\to\OO_y$ is
-\emph{bijective} \sref[0]{0.1.2.6}; in other words, $\OO_Y$ identifies with the sheaf on $Y$
-induced by $\OO_X$.
+Let $S$ be a multiplicative subset of $A$, and $\vphi$ the canonical homomorphism $A\to S^{-1}A$;
+we have already seen \sref{1.1.2.6} that ${}^a\vphi$ is a \emph{homeomorphism} from $Y=\Spec(S^{-1}A)$ to the subspace of $X=\Spec(A)$ consisting of the $x$ such that $\fk{j}_x\cap S=\emp$.
+In addition, for each $x$ in this subspace, which is thus of the form ${}^a\vphi(y)$ with $y\in Y$, the homomorphism $\wt{\vphi}_y^\sharp:\OO_x\to\OO_y$ is
+\emph{bijective} \sref[0]{0.1.2.6};
+in other words, $\OO_Y$ is identified with the sheaf on $Y$ induced by $\OO_X$.
 \end{exm}
 
 \begin{prop}[1.6.3]
 \label{1.1.6.3}
-For each $A$-module $M$, there exists a canonical functorial isomorphism from the
-$\OO_{X'}$-module $(M_{[\vphi]})^\sim$ to the direct image $\Phi_*(\wt{M})$.
+For every $A$-module $M$, there exists a canonical functorial isomorphism from the $\OO_{X'}$-module $(M_{[\vphi]})^\sim$ to the direct image $\Phi_*(\wt{M})$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.1.6.3}
-For purposes of abbreviation, we set $M'=M_{[\vphi]}$, and for each $f'\in A'$, we put
-$f=\vphi(f')$. The modules of sections $\Gamma(D(f'),\wt{M'})$ and
-$\Gamma(D(f),\wt{M})$ identify respectively with the modules $M_{f'}'$ and $M_f$
-(over $A_{f'}'$ and $A_f$, respectively); in addition, the $A_{f'}'$-module
-$(M_f)_{[\vphi_{f'}]}$ is canonically isomorphic to $M_{f'}'$ \sref[0]{0.1.5.2}. We thus have
-a functorial isomorphism of $\Gamma(D(f'),\wt{A'})$-modules:
-$\Gamma(D(f'),\wt{M'})
-\isoto\Gamma({}^a\vphi^{-1}(D(f')),\wt{M})_{[\vphi_{f'}]}$
-and these isomorphisms satisfy the usual compatibility conditions with the restrictions
-\sref[0]{0.1.5.6}, thus defining the desired functorial isomorphism. We note that, in a
-precise way, if $u:M_1\to M_2$ is a homomorphism of $A$-modules, it can be considered as a
-homomorphism $(M_1)_{[\vphi]}\to(M_2)_{[\vphi]}$ of $A'$-modules; if we denote by
-$u_{[\vphi]}$ this homomorphism, $\Phi_*(\wt{u})$ identifies with
-$(u_{[\vphi]})^\sim$.
+For purposes of abbreviation, we write $M'=M_{[\vphi]}$, and for each $f'\in A'$, we put $f=\vphi(f')$.
+The modules of sections $\Gamma(D(f'),\wt{M'})$ and $\Gamma(D(f),\wt{M})$ are identified, respectively, with the modules $M_{f'}'$ and $M_f$ (over $A_{f'}'$ and $A_f$, respectively);
+in addition, the $A_{f'}'$-module $(M_f)_{[\vphi_{f'}]}$ is canonically isomorphic to $M_{f'}'$ \sref[0]{0.1.5.2}.
+We thus have a functorial isomorphism of $\Gamma(D(f'),\wt{A'})$-modules: $\Gamma(D(f'),\wt{M'}) \isoto\Gamma({}^a\vphi^{-1}(D(f')),\wt{M})_{[\vphi_{f'}]}$ and these isomorphisms satisfy the usual compatibility conditions with the restrictions \sref[0]{0.1.5.6}, thus defining the desired functorial isomorphism.
+We note that, in a precise way, if $u:M_1\to M_2$ is a homomorphism of $A$-modules, it can be considered as a homomorphism $(M_1)_{[\vphi]}\to(M_2)_{[\vphi]}$ of $A'$-modules;
+if we denote this homomorphism by $u_{[\vphi]}$, then $\Phi_*(\wt{u})$ is identified with $(u_{[\vphi]})^\sim$.
 \end{proof}
 
-This proof also shows that for each \emph{$A$-algebra $B$}, the canonical functorial
-isomorphism
+This proof also shows that, for each \emph{$A$-algebra $B$}, the canonical functorial isomorphism
 \oldpage[I]{95}
-$(B_{[\vphi]})^\sim\isoto\Phi_*(\wt{B})$ is an isomorphism of
-\emph{$\OO_{X'}$-algebras}; if $M$ is a $B$-module, the canonical functorial isomorphism
-$(M_{[\vphi]})^\sim\isoto\Phi_*(\wt{M})$ is an isomorphism of
-$\Phi_*(\wt{B})$-modules.
+$(B_{[\vphi]})^\sim\isoto\Phi_*(\wt{B})$ is an isomorphism of \emph{$\OO_{X'}$-algebras};
+if $M$ is a $B$-module, the canonical functorial isomorphism $(M_{[\vphi]})^\sim\isoto\Phi_*(\wt{M})$ is an isomorphism of $\Phi_*(\wt{B})$-modules.
 
 \begin{cor}[1.6.4]
 \label{1.1.6.4}
@@ -940,118 +919,89 @@ exact functor in $M'$ \sref{1.1.3.5}.
 
 \begin{prop}[1.6.5]
 \label{1.1.6.5}
-Let $N'$ be an $A'$-module, $N$ the $A$-module $N'\otimes_{A'}A_{[\vphi]}$; there exists a
-canonical functorial isomorphism from the $\OO_X$-module $\Phi^*(\wt{N'})$ to
-$\wt{N}$.
+Let $N'$ be an $A'$-module, and $N$ the $A$-module $N'\otimes_{A'}A_{[\vphi]}$;
+then there exists a canonical functorial isomorphism from the $\OO_X$-module $\Phi^*(\wt{N'})$ to $\wt{N}$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.1.6.5}
-We first remark that $j:z'\mapsto z'\otimes 1$ is an $A'$-homomorphism from $N'$ to
-$N_{[\vphi]}$: indeed, by definition, for $f'\in A'$, we have
-$(f' z')\otimes 1=z'\otimes\vphi(f')=\vphi(f')(z'\otimes 1)$. We have \sref{1.1.3.8} a
-homomorphism $\wt{j}:\wt{N'}\to(N_{[\vphi]})^\sim$ of $\OO_{X'}$-modules, and
-according to \sref{1.1.6.3}, we can consider that $\wt{j}$ maps $\wt{N'}$
-to $\Phi_*(\wt{N})$. There canonically corresponds to this homomorphism
-$\wt{j}$ a homomorphism $h=\wt{j}^\sharp$ from $\Phi^*(\wt{N'})$ to
-$\wt{N}$ \sref[0]{0.4.4.3}; we will see that for each stalk, $h_x$ is \emph{bijective}.
-Put $x'={}^a\vphi(x)$ and let $f'\in A'$ be such that $x'\in D(f')$; let $f=\vphi(f')$. The
-ring $\Gamma(D(f),\wt{A})$ identifies with $A_f$, the modules
+We first remark that $j:z'\mapsto z'\otimes 1$ is an $A'$-homomorphism from $N'$ to $N_{[\vphi]}$: indeed, by definition, for $f'\in A'$, we have $(f' z')\otimes 1=z'\otimes\vphi(f')=\vphi(f')(z'\otimes 1)$.
+We have \sref{1.1.3.8} a homomorphism $\wt{j}:\wt{N'}\to(N_{[\vphi]})^\sim$ of $\OO_{X'}$-modules, and, thanks to \sref{1.1.6.3}, we can consider $\wt{j}$ as mapping $\wt{N'}$ to $\Phi_*(\wt{N})$.
+There canonically corresponds to this homomorphism $\wt{j}$ a homomorphism $h=\wt{j}^\sharp$ from $\Phi^*(\wt{N'})$ to $\wt{N}$ \sref[0]{0.4.4.3};
+we will see that, for each stalk, $h_x$ is \emph{bijective}.
+Put $x'={}^a\vphi(x)$ and let $f'\in A'$ be such that $x'\in D(f')$;
+let $f=\vphi(f')$.
+The ring $\Gamma(D(f),\wt{A})$ is identified with $A_f$, the modules
 $\Gamma(D(f),\wt{N})$ and $\Gamma(D(f'),\wt{N'})$ with $N_f$ and $N_{f'}'$
-respectively; let $s\in\Gamma(D(f'),\wt{N'})$, identified with $n'/{f'}^p$
-($n'\in N'$), $s$ its image under $\wt{j}$ in $\Gamma(D(f),\wt{N})$; $s$
-identifies with $(n'\otimes 1)/f^p$. On the other hand, let $t\in\Gamma(D(f),\wt{A})$,
-identified with $g/f^q$ ($g\in A$); then, by definition, we have
-$h_x(s_x'\otimes t_x)=t_x\cdot s_x$ \sref[0]{0.4.4.3}. But we can canonically identify $N_f$
-with $N_{f'}'\otimes_{A_{f'}'}(A_f)_{[\vphi_{f'}]}$ \sref[0]{0.1.5.4}; $s$ then corresponds
-to the element $(n'/{f'}^p)\otimes 1$, and the section $y\mapsto t_y\cdot s_y$ with
-$(n'/{f'}^p)\otimes(g/f^q)$. The compatibility diagram of \sref[0]{0.1.5.6} show that $h_x$
-is none other than the canonical isomorphism
+(respectively);
+let $s\in\Gamma(D(f'),\wt{N'})$, identified with $n'/{f'}^p$ ($n'\in N'$), and $s$ be its image under $\wt{j}$ in $\Gamma(D(f),\wt{N})$;
+$s$ is identified with $(n'\otimes 1)/f^p$.
+On the other hand, let $t\in\Gamma(D(f),\wt{A})$, identified with $g/f^q$ ($g\in A$);
+then, by definition, we have $h_x(s_x'\otimes t_x)=t_x\cdot s_x$ \sref[0]{0.4.4.3}.
+But we can canonically identify $N_f$ with $N_{f'}'\otimes_{A_{f'}'}(A_f)_{[\vphi_{f'}]}$ \sref[0]{0.1.5.4};
+$s$ then corresponds to the element $(n'/{f'}^p)\otimes 1$, and the section $y\mapsto t_y\cdot s_y$ with $(n'/{f'}^p)\otimes(g/f^q)$.
+The compatibility diagram of \sref[0]{0.1.5.6} show that $h_x$ is exactly the canonical isomorphism
 \begin{equation*}
   \label{1.1.6.5.1}
   N_{x'}'\otimes_{A_{x'}'}(A_x)_{[\vphi_{x'}]}\isoto N_x=(N'\otimes_{A'}A_{[\vphi]})_x.
   \tag{1.6.5.1}
 \end{equation*}
 
-In addition, let $v:N_1'\to N_2'$ be a homomorphism of $A'$-modules; as
-$\wt{v}_{x'}=v_{x'}$ for each $x'\in X'$, it follows immediately from the above that
-$\Phi^*(\wt{v})$ canonically identifies with $(v\otimes 1)^\sim$, which finishes the
-proof of \sref{1.1.6.5}.
+In addition, let $v:N_1'\to N_2'$ be a homomorphism of $A'$-modules;
+since $\wt{v}_{x'}=v_{x'}$ for each $x'\in X'$, it follows immediately from the above that $\Phi^*(\wt{v})$ is canonically identified with $(v\otimes 1)^\sim$, which finishes the proof of \sref{1.1.6.5}.
 \end{proof}
 
-If $B'$ is an $A'$-algebra, the canonical isomorphism from $\Phi^*(\wt{B'})$ to
-$(B'\otimes_{A'}A_{[\vphi]})^\sim$ is an isomorphism of $\OO_X$-algebras; if in addition $N'$
-is a $B'$-module, the canonical isomorphism from $\Phi^*(\wt{N'})$ to
-$(N'\otimes_{A'}A_{[\vphi]})^\sim$ is an isomorphism of $\Phi^*(\wt{B'})$-modules.
+If $B'$ is an $A'$-algebra, the canonical isomorphism from $\Phi^*(\wt{B'})$ to $(B'\otimes_{A'}A_{[\vphi]})^\sim$ is an isomorphism of $\OO_X$-algebras;
+if, in addition, $N'$ is a $B'$-module, then the canonical isomorphism from $\Phi^*(\wt{N'})$ to $(N'\otimes_{A'}A_{[\vphi]})^\sim$ is an isomorphism of $\Phi^*(\wt{B'})$-modules.
 
 \begin{cor}[1.6.6]
 \label{1.1.6.6}
-The sections of $\Phi^*(\wt{N'})$, the canonical images of the sections $s'$, where
-$s'$ varies over the $A'$-module $\Gamma(\wt{N'})$, generate the $A$-module
-$\Gamma(\Phi^*(N'))$.
+The sections of $\Phi^*(\wt{N'})$, the canonical images of the sections $s'$, where $s'$ varies over the $A'$-module $\Gamma(\wt{N'})$, generate the $A$-module $\Gamma(\Phi^*(N'))$.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.1.6.6}
-Indeed. these images identify with the elements $z'\otimes 1$ of $N$, when we identify $N'$
-and $N$ with $\Gamma(\wt{N'})$ and $\Gamma(\wt{N})$ respectively
-\sref{1.1.3.7} and $z'$ varies over $N'$.
+Indeed, these images are identified with the elements $z'\otimes 1$ of $N$, when we identify $N'$ and $N$ with $\Gamma(\wt{N'})$ and $\Gamma(\wt{N})$ (respectively) \sref{1.1.3.7}, and $z'$ varies over $N'$.
 \end{proof}
 
 \begin{env}[1.6.7]
 \label{1.1.6.7}
-In the proof of \sref{1.1.6.5}, we had proved in passing that the canonical map
-(\textbf{0},~4.4.3.2) $\rho:\wt{N'}\to\Phi_*(\Phi^*(\wt{N'}))$ is none other
-than the homomorphism $\wt{j}$,
+In the proof of \sref{1.1.6.5}, we had proved in passing that the canonical map (\textbf{0},~4.4.3.2) $\rho:\wt{N'}\to\Phi_*(\Phi^*(\wt{N'}))$ is exactly the homomorphism $\wt{j}$,
 \oldpage[I]{96}
 where $j:N'\to N'\otimes_{A'}A_{[\vphi]}$ is the homomorphism $z'\mapsto z'\otimes 1$.
-Similarly, the canonical map (\textbf{0},~4.4.3.3)
-$\sigma:\Phi^*(\Phi_*(\wt{M}))\to\wt{M}$ is none other than $\wt{p}$,
-where $p:M_{[\vphi]}\otimes_{A'}A_{[\vphi]}\to M$ is the canonical homomorphism which, sends
-each tensor product $z\otimes a$ ($z\in M$, $a\in A$) to $a\cdot z$; this follows immediately
-from the definitions (\sref[0]{0.3.7.1}, \sref[0]{0.4.4.3},
-and \sref{1.1.3.7}).
+Similarly, the canonical map (\textbf{0},~4.4.3.3) $\sigma:\Phi^*(\Phi_*(\wt{M}))\to\wt{M}$ is exactly $\wt{p}$, where $p:M_{[\vphi]}\otimes_{A'}A_{[\vphi]}\to M$ is the canonical homomorphism, which sends each tensor product $z\otimes a$ ($z\in M$, $a\in A$) to $a\cdot z$;
+this follows immediately from the definitions (\sref[0]{0.3.7.1}, \sref[0]{0.4.4.3}, and \sref{1.1.3.7}).
 
-We conclude (\sref[0]{0.4.4.3} and (\textbf{0},~3.5.4.4)) that if $v:N'\to M_{[\vphi]}$ is an
-$A'$-homomorphism, we have $\wt{v}^\sharp=(v\otimes 1)^\sim$.
+We conclude (\sref[0]{0.4.4.3} and (\textbf{0},~3.5.4.4)) that if $v:N'\to M_{[\vphi]}$ is an $A'$-homomorphism, then $\wt{v}^\sharp=(v\otimes 1)^\sim$.
 \end{env}
 
 \begin{env}[1.6.8]
 \label{1.1.6.8}
-Let $N_1'$, $N_2'$ be two $A'$-modules, and assume $N_1'$ admits a \emph{finite
-presentation}; it then follows from \sref{1.1.6.7} and \sref{1.1.3.12}, (ii) that the
+Let $N_1'$, $N_2'$ be $A'$-modules, and assume $N_1'$ admits a \emph{finite presentation};
+it then follows from \sref{1.1.6.7} and \sref{1.1.3.12}[ii] that the
 canonical homomorphism \sref[0]{0.4.4.6}
 \[
   \Phi^*(\shHom_\wt{A'}(\wt{N_1'},\wt{N_2'}))
   \to\shHom_\wt{A}(\Phi^*(\wt{N_1'}),\Phi^*(\wt{N_2'}))
 \]
-is none other than $\wt{\gamma}$, where $\gamma$ denotes the canonical homomorphism
-of $A$-modules
-$\Hom_{A'}(N_1',N_2')\otimes_{A'}A\to\Hom_A(N_1'\otimes_{A'}A,N_2'\otimes_{A'}A)$.
+is exactly $\wt{\gamma}$, where $\gamma$ denotes the canonical homomorphism of $A$-modules $\Hom_{A'}(N_1',N_2')\otimes_{A'}A\to\Hom_A(N_1'\otimes_{A'}A,N_2'\otimes_{A'}A)$.
 \end{env}
 
 \begin{env}[1.6.9]
 \label{1.1.6.9}
-Let $\fk{J}'$ be an ideal of $A'$, $M$ an $A$-module; as by definition
-$\wt{\fk{J}'}\wt{M}$ is the image of the canonical homomorphism
-$\Phi^*(\wt{\fk{J}'})\otimes_\wt{A}\wt{M}\to\wt{M}$, it
-follows from Proposition \sref{1.1.6.5} and
-Corollary \sref{1.1.3.12}, (i) that
+Let $\fk{J}'$ be an ideal of $A'$, and $M$ an $A$-module;
+since, by definition, $\wt{\fk{J}'}\wt{M}$ is the image of the canonical homomorphism $\Phi^*(\wt{\fk{J}'})\otimes_\wt{A}\wt{M}\to\wt{M}$, it
+follows from Proposition~\sref{1.1.6.5} and Corollary~\sref{1.1.3.12}[i] that
 $\wt{\fk{J}'}\wt{M}$ canonically identifies with $(\fk{J}' M)^\sim$;
-in particular, $\Phi^*(\wt{\fk{J}'})\wt{A}$ identifies with
-$(\fk{J}' A)^\sim$, and taking into account the right exactness of the functor $\Phi^*$,
-the $\wt{A}$-algebra $\Phi^*((A'/\fk{J}')^\sim)$ identifies with
-$(A/\fk{J}' A)^\sim$.
+in particular, $\Phi^*(\wt{\fk{J}'})\wt{A}$ is identified with $(\fk{J}' A)^\sim$, and, taking the right exactness of the functor $\Phi^*$ into account,
+the $\wt{A}$-algebra $\Phi^*((A'/\fk{J}')^\sim)$ is identified with $(A/\fk{J}' A)^\sim$.
 \end{env}
 
 \begin{env}[1.6.10]
 \label{1.1.6.10}
-Let $A''$ be a third ring, $\vphi'$ a homomorphism $A''\to A'$, and put
-$\vphi''=\vphi\circ\vphi'$. It follows immediately from the definitions that
-${}^a\vphi''=({}^a\vphi')\circ({}^a\vphi)$, and
-$\wt{\vphi''}=\wt{\vphi}\circ\wt{\vphi'}$ \sref[0]{0.1.5.7}. We conclude
-that we have $\Phi''=\Phi'\circ\Phi$; in other words, $(\Spec(A),\wt{A})$ is a
-\emph{functor} from the category of rings to that of ringed spaces.
+Let $A''$ be a third ring, $\vphi'$ a homomorphism $A''\to A'$, and write $\vphi''=\vphi\circ\vphi'$.
+It follows immediately from the definitions that ${}^a\vphi''=({}^a\vphi')\circ({}^a\vphi)$, and $\wt{\vphi''}=\wt{\vphi}\circ\wt{\vphi'}$ \sref[0]{0.1.5.7}. We conclude that $\Phi''=\Phi'\circ\Phi$;
+in other words, $(\Spec(A),\wt{A})$ is a \emph{functor} from the category of rings to that of ringed spaces.
 \end{env}
 
 \subsection{Characterization of morphisms of affine schemes}
