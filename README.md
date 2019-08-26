@@ -26,7 +26,7 @@ All the PDFs are auto-compliled every hour, so will be up to date with the lates
 | | First draft | Proofreading |
 | ------ | ----------- | ------------ |
 | ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-31%25-orange) | ![EGA0p](https://img.shields.io/badge/-10%25-red)|
-| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-5%25-red)|
+| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-10%25-red)|
 | ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-3%25-red) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-0%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA4](https://img.shields.io/badge/EGA-4-lightgrey) | ![EGA4fd](https://img.shields.io/badge/-0%25-red) | ![EGA4p](https://img.shields.io/badge/-0%25-red)|
