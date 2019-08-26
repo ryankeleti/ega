@@ -61,7 +61,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 21. Differentials in rings of characteristic p
     + [ ] 22. Differential criteria for smoothness and regularity
     + [ ] 23. Japanese rings
-- [ ] The language of schemes (EGA I)
+- [x] The language of schemes (EGA I)
     + [x] 0. Summary _(proofread by @thosgood)_
     + [x] 1. Affine schemes _(@ryankeleti, proofread by @thosgood)_
     + [x] 2. Preschemes and their morphisms _(@thosgood, proofread by @thosgood)_
