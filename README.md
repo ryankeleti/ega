@@ -15,7 +15,7 @@ There is the [**full document**](https://fppf.site/ega/book.pdf), or individual 
 - [EGA I](https://fppf.site/ega/ega1.pdf).
 - [EGA II](https://fppf.site/ega/ega2.pdf).
 - [EGA III](https://fppf.site/ega/ega3.pdf).
-- [EGA III](https://fppf.site/ega/ega4.pdf).
+- [EGA IV](https://fppf.site/ega/ega4.pdf).
 - [References](https://fppf.site/ega/ref.pdf).
 
 All the PDFs are auto-compliled every hour if any changes have been made since the last auto-compile, so will always be up to date with the latest commit.
@@ -26,7 +26,7 @@ All the PDFs are auto-compliled every hour if any changes have been made since t
 
 | | First draft | Proofreading |
 | ------ | ----------- | ------------ |
-| ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-39%25-yellow) | ![EGA0p](https://img.shields.io/badge/-10%25-red)|
+| ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-39%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
 | ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-30%25-orange)|
 | ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-3%25-red) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-0%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
