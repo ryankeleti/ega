@@ -15,6 +15,7 @@ There is the [**full document**](https://fppf.site/ega/book.pdf), or individual 
 - [EGA I](https://fppf.site/ega/ega1.pdf).
 - [EGA II](https://fppf.site/ega/ega2.pdf).
 - [EGA III](https://fppf.site/ega/ega3.pdf).
+- [EGA III](https://fppf.site/ega/ega4.pdf).
 - [References](https://fppf.site/ega/ref.pdf).
 
 All the PDFs are auto-compliled every hour if any changes have been made since the last auto-compile, so will always be up to date with the latest commit.
