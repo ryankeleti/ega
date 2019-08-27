@@ -2,7 +2,7 @@
 # modified from https://github.com/stacks/stacks-project
 # license at scripts/COPYING.md
 #
-FILES = what intro ega0 ega1 ega2 ega3 ref
+FILES = what intro ega0 ega1 ega2 ega3 ega4 ref
 TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
 PDFLATEX = pdflatex
@@ -32,7 +32,7 @@ $(FILES): %: %.pdf
 
 .PHONY: book
 book:
-	python3 ./scripts/make_book.py "$(CURDIR)" > book.tex
+	python3 ./scripts/make_book.py "$(CURDIR)"
 	$(PDFLATEX) book
 	$(PDFLATEX) book
 	bibtex book
@@ -56,9 +56,33 @@ clean:
 
 .PHONY: cleanforce
 cleanforce:
-	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex *-auto.tex
 	rm -rf $(PDF_DIR)
 
 .PHONY: all
 all: pdfs book
+
+.PHONY: auto
+auto:
+	python3 ./scripts/make_book.py "$(CURDIR)"
+	cp book.tex book-auto.tex
+	sed -i 's/\\end{titlepage}/\\vskip0.5in\\noindent\\centerline{\\tt autobuild~::~$(shell date -u +"%F %H:%M %Z"),~git~hash~::~$(shell git rev-parse --short HEAD)}\\end{titlepage}/' book-auto.tex
+	mkdir -p $(PDF_DIR)
+	$(PDFLATEX) book-auto
+	$(PDFLATEX) book-auto
+	bibtex book-auto
+	$(PDFLATEX) book-auto
+	$(PDFLATEX) book-auto
+	mv book-auto.pdf $(PDF_DIR)
+	for f in $(FILES); do\
+	  cp "$$f".tex "$$f"-auto.tex;\
+	  sed -i 's/\\maketitle/\\maketitle\\noindent\\centerline{\\tt autobuild~::~$(shell date -u +"%F %H:%M %Z"),~git~hash~::~$(shell git rev-parse --short HEAD)}\\\\/' "$$f"-auto.tex;\
+	  $(PDFLATEX) "$$f"-auto;\
+	  $(PDFLATEX) "$$f"-auto;\
+	  bibtex "$$f"-auto;\
+		$(PDFLATEX) "$$f"-auto;\
+	  $(PDFLATEX) "$$f"-auto;\
+	  mv "$$f"-auto.pdf $(PDF_DIR);\
+	done
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *-auto.tex
 

@@ -1,0 +1,94 @@
+\input{preamble}
+
+\begin{document}
+\title{Local study of schemes and their morphisms (EGA~IV)}
+\maketitle
+
+\phantomsection
+\label{section-phantom}
+
+build hack
+\cite{I-1}
+
+\tableofcontents
+
+\section*{Summary}
+\label{section-ega4-summary}
+
+\oldpage[IV-1]{222}
+\begin{longtable}{ll}
+    \textsection1. & Relative finiteness conditions. Constructible sets of preschemes.\\
+    \textsection2. & Base change and flatness.\\
+    \textsection3. & Associated prime cycles and primary decomposition.\\
+    \textsection4. & Change of base field for algebraic preschemes.\\
+    \textsection5. & Dimension and depth for preschemes.\\
+    \textsection6. & Flat morphisms of locally Noetherian preschemes.\\
+    \textsection7. & Application to the relations between a local Noetherian ring and its completion. Excellent rings.\\
+    \textsection8. & Projective limits of preschemes.\\
+    \textsection9. & Constructible properties.\\
+    \textsection10. & Jacobson preschemes.\\
+    \textsection11.\footnote{The order and content of \textsection\textsection11--21 are given only as an indication of what the titles will be, and will possibly be modified before their publication. \emph{[Trans.] This was indeed the case: many of \textsection\textsection}11--21 ended up having entirely different titles.} & Topological properties of finitely presented flat morphisms. Local flatness criteria.\\
+    \textsection12. & Study of fibres of finitely presented flat morphisms.\\
+    \textsection13. & Equidimensional morphisms.\\
+    \textsection14. & Universally open morphisms.\\
+    \textsection15. & Study of fibres of a universally open morphism.\\
+    \textsection16. & Differential invariants. Differentially smooth morphisms.\\
+    \textsection17. & Smooth morphisms, unramified morphisms, and étale morphisms.\\
+    \textsection18. & Supplement on \'etale morphisms. Henselian local rings and strictly local rings.\\
+    \textsection19. & Regular immersions and transversely regular immersions.\\
+    \textsection20. & Hyperplane sections; generic projections.\\
+    \textsection21. & Infinitesimal extensions.
+\end{longtable}
+\bigskip
+
+\oldpage[IV-1]{223}
+The subjects discussed in the chapter call for the following remarks.
+\begin{enumerate}[label=(\alph*)]
+  \item The common property of all the subjects discussed is that they all related to \emph{local} properties of preschemes or morphisms, i.e. considered at a point, or the points of a fibre, or on a (non-specified) neighbourhood of a point or of a fibre.
+    These properties are generally of a \emph{topological}, \emph{differential}, or \emph{dimensional} nature (i.e. bringing the ideas of \emph{dimension} and \emph{depth} into play), and are linked to the properties of the \emph{local rings} at the points considered.
+    One type of problem is the relating, for a given morphisms $f:X\to Y$ and point $x\in X$, of the properties of $X$ at $x$ with those of $Y$ at $y=f(x)$ and those of the fibre $X_y=f^{-1}(y)$ at $x$.
+    Another is the determining of the topological nature (for example, the constructibility, or the fact of being open or closed) of the set of points $x\in X$ at which $X$ has a certain property, or for which the fibre $X_{f(x)}$ passing through $x$ has a certain property at $x$.
+    Similarly, we are interested in the topological nature of the set of points $y\in Y$ such that $X$ has a certain property at all the points of the fibre $X_y$, or those such that this fibre itself has a certain property.
+  \item The most important idea for the following chapters is that of \emph{flat morphisms of finite presentation}, as well as the particular cases of \emph{smooth morphisms} and \emph{étale morphisms}.
+    Their detailed study (as well as that of connected questions) really starts in \textsection11.
+  \item Sections \textsection\textsection1--10 can be considered as being preliminary in nature, and as developing three types of techniques, used, not only in the other sections of the chapter, but also, of course, in the follow chapters:
+    \begin{enumerate}[label=(c\arabic*)]
+      \item Sections \textsection\textsection1--4 are envisaged as treating the diverse aspects of the idea of \emph{change of base}, above all in relation with the conditions of \emph{finiteness} or \emph{flatness}; we there initiate the technique of \emph{descent}, with its most elementary aspects (the questions of ``effectiveness'' linked to this technique will be studied in Chapter~V).
+      \item Sections \textsection\textsection5--7 are focused on what we may call \emph{Noetherian} techniques, since the preschemes considered are always locally Noetherian, whereas, on the contrary, there is generally no finiteness condition imposed on the \emph{morphisms}; this is essentially due to the fact that the ideas of dimension and depth are hardly manageable except in the case of Noetherian local rings.
+        Recall that \textsection7 constitutes a ``\unsure{delicate}'' theory of Noetherian local rings, not much used in what follows in the chapter.
+      \item Sections \textsection\textsection8--10 describe, amongst other things, the means of \emph{eliminating the Noetherian hypotheses} on the preschemes considered, by substituting such hypotheses for suitable ones of \emph{finiteness} (``finite presentation'') on the \emph{morphisms} considered: the advantage of this substitution is that the latter such hypotheses (those of finiteness on the morphisms) are \emph{stable under base change}, which is not the case for the Noetherian hypotheses on the preschemes.
+        The technique permitting this substitution relies, in some part, on the use of the idea of the \emph{projective limit} of preschemes, thanks to which we can reduce a question to the same question with \emph{Noetherian} hypotheses; on the other hand, it relies on the systematic use of \emph{constructible sets}, which have the double interest of being preserved under taking inverse images (of arbitrary morphisms)
+\oldpage[IV-1]{224}
+        and by direct images (of morphisms of finite presentation), and having manageable topological properties in locally Noetherian preschemes.
+        The same techniques often even allow to restrict to the case of more specific Noetherian rings, for example the \emph{$\bb{Z}$-algebras of finite type}, and it is here that the properties of ``excellent'' rings (studied in \textsection7) intervene in a decisive manner.
+        Independently of the question of elimination of Noetherian hypotheses, the techniques of \textsection\textsection8--10, elementary in nature, find constant use in nearly all applications.
+    \end{enumerate}
+\end{enumerate}
+
+\input{ega4/ega4-1}
+% \input{ega4/ega4-2}
+% \input{ega4/ega4-3}
+% \input{ega4/ega4-4}
+% \input{ega4/ega4-5}
+% \input{ega4/ega4-6}
+% \input{ega4/ega4-7}
+% \input{ega4/ega4-8}
+% \input{ega4/ega4-9}
+% \input{ega4/ega4-10}
+% \input{ega4/ega4-11}
+% \input{ega4/ega4-12}
+% \input{ega4/ega4-13}
+% \input{ega4/ega4-14}
+% \input{ega4/ega4-15}
+% \input{ega4/ega4-16}
+% \input{ega4/ega4-17}
+% \input{ega4/ega4-18}
+% \input{ega4/ega4-19}
+% \input{ega4/ega4-20}
+% \input{ega4/ega4-21}
+
+\bibliography{the}
+\bibliographystyle{amsalpha}
+
+\end{document}
+

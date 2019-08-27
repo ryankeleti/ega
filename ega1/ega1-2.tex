@@ -6,32 +6,27 @@
 
 \begin{env}[2.1.1]
 \label{1.2.1.1}
-Given a ringed space $(X,\OO_X)$, we say that an open subset
-$V$ of $X$ is an {\em affine open} if the ringed space $(V,\OO_X|V)$ is an
-affine scheme \sref{1.1.7.1}.
+Given a ringed space $(X,\OO_X)$, we say that an open subset $V$ of $X$ is an \emph{affine open} subset if the ringed space $(V,\OO_X|V)$ is an affine scheme \sref{1.1.7.1}.
 \end{env}
 
 \begin{defn}[2.1.2]
 \label{1.2.1.2}
-We define a prescheme to be a ringed space
-$(X,\OO_X)$ such that every point of $X$ admits an affine open neighborhood.
+We define a prescheme to be a ringed space $(X,\OO_X)$ such that every point of $X$ admits an affine open neighborhood.
 \end{defn}
 
 \begin{prop}[2.1.3]
 \label{1.2.1.3}
 \oldpage[I]{98}
-If $(X,\OO_X)$ is a prescheme then the affine opens give a basis for the topology of $X$.
+If $(X,\OO_X)$ is a prescheme, then its affine open subsets form a basis for the topology of $X$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.2.1.3}
-If $V$ is an arbitrary open neighborhood of $x\in X$, then there
-exists by hypothesis an open neighborhood $W$ of $x$ such that $(W,\OO_X|W)$ is
-an affine scheme; we write $A$ to mean its ring. In the space $W$, $V\cap W$ is
-an open neighborhood of $x$; thus there exists $f\in A$ such that $D(f)$ is an
-open neighborhood of $x$ contained inside $V\cap W$ \sref{1.1.1.10}, (i).
-The ringed space $(D(f),\OO_X|D(f))$ is thus an affine scheme, isomorphic to $A_f$
-\sref{1.1.3.6}, whence the proposition.
+If $V$ is an arbitrary open neighborhood of $x\in X$, then there exists by hypothesis an open neighborhood $W$ of $x$ such that $(W,\OO_X|W)$ is an affine scheme;
+we write $A$ to mean its ring.
+In the space $W$, $V\cap W$ is an open neighborhood of $x$;
+so there exists some $f\in A$ such that $D(f)$ is an open neighborhood of $x$ contained inside $V\cap W$ \sref{1.1.1.10}[i].
+The ringed space $(D(f),\OO_X|D(f))$ is thus an affine scheme, isomorphic to $A_f$ \sref{1.1.3.6}, whence the proposition.
 \end{proof}
 
 \begin{prop}[2.1.4]
@@ -41,62 +36,45 @@ The underlying space of a prescheme is a Kolmogoroff space.
 
 \begin{proof}
 \label{proof-1.2.1.4}
-If $x$, $y$ are two distinct points of a prescheme $X$ then it is clear
-that there exists an open neighborhood of one of these points that does not
-contain the other if $x$ and $y$ are not in the same affine open; and if they
-are in the same affine open, this is a result of \sref{1.1.1.8}.
+If $x$ and $y$ are two distinct points of a prescheme $X$, then it is clear that there exists an open neighborhood of one of these points that does not contain the other if $x$ and $y$ are not in the same affine open subset; and if they are in the same affine open subset, this is a result of \sref{1.1.1.8}.
 \end{proof}
 
 \begin{prop}[2.1.5]
 \label{1.2.1.5}
-If $(X,\OO_X)$ is a prescheme then every closed
-irreducible subset of $X$ admits exactly one generic point, and the map
-$x\mapsto\overline{\{x\}}$ is thus a bijection of $X$ onto its set of closed
-irreducible subsets.
+If $(X,\OO_X)$ is a prescheme, then every closed irreducible subset of $X$ admits exactly one generic point, and the map $x\mapsto\overline{\{x\}}$ is thus a bijection of $X$ onto its set of closed irreducible subsets.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.2.1.5}
-If $Y$ is a closed irreducible subset of $X$ and $y\in Y$, and if $U$
-is an open affine neighborhood of $y$ in $X$, then $U\cap Y$ is everywhere
-dense in $Y$, as well as irreducible (\sref[0]{0.2.1.1} and \sref[0]{0.2.1.4}); thus by
-Corollary \sref{1.1.1.14}, $U\cap Y$ is the closure in $U$ of a point $x$, and then
-$Y\subset\overline{U}$ is the closure of $x$ in $X$. The uniqueness of the
-generic point of $X$ is a result of Proposition \sref{1.2.1.4} and of \sref[0]{0.2.1.3}.
+If $Y$ is a closed irreducible subset of $X$ and $y\in Y$, and if $U$ is an open affine neighborhood of $y$ in $X$, then $U\cap Y$ is dense in $Y$, and also irreducible (\sref[0]{0.2.1.1} and \sref[0]{0.2.1.4});
+thus, by Corollary~\sref{1.1.1.14}, $U\cap Y$ is the closure in $U$ of a point $x$, and so $Y\subset\overline{U}$ is the closure of $x$ in $X$.
+The uniqueness of the generic point of $X$ is a result of Proposition~\sref{1.2.1.4} and of \sref[0]{0.2.1.3}.
 \end{proof}
 
 \begin{env}[2.1.6]
 \label{1.2.1.6}
-If $Y$ is a closed irreducible subset of $X$ and $y$ its
-generic point then the local ring $\OO_y$, also written $\OO_{X/Y}$, is called the
-{\em local ring of $X$ along $Y$}, or the {\em local ring of $Y$ in $X$}.
+If $Y$ is a closed irreducible subset of $X$, and $y$ its generic point, then the local ring $\OO_y$ (also written $\OO_{X/Y}$) is called the \emph{local ring of $X$ along $Y$}, or the \emph{local ring of $Y$ in $X$}.
 
-If $X$ itself is irreducible and $x$ its generic point then we say that
-$\OO_x$ is the {\em ring of rational functions on $X$} (cf. \textsection7).
+If $X$ itself is irreducible and $x$ its generic point then we say that $\OO_x$ is the \emph{ring of rational functions on $X$} (cf.~\textsection7).
 \end{env}
 
 \begin{prop}[2.1.7]
 \label{1.2.1.7}
-If $(X,\OO_X)$ is a prescheme then the ringed
-space $(U,\OO_X|U)$ is a prescheme for every open subset $U$.
+If $(X,\OO_X)$ is a prescheme, then the ringed space $(U,\OO_X|U)$ is a prescheme for every open subset $U$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.2.1.7}
-This follows directly from Definition \sref{1.2.1.2} and Proposition \sref{1.2.1.3}.
+This follows directly from Definition~\sref{1.2.1.2} and Proposition~\sref{1.2.1.3}.
 \end{proof}
 
-We say that $(U,\OO_X|U)$ is the prescheme {\em induced} on $U$ by
-$(X,\OO_X)$, or the {\em restriction} of $(X,\OO_X)$ to $U$.
+We say that $(U,\OO_X|U)$ is the prescheme \emph{induced} on $U$ by $(X,\OO_X)$, or the \emph{restriction} of $(X,\OO_X)$ to $U$.
 
 \begin{env}[2.1.8]
 \label{1.2.1.8}
-We say that a prescheme $(X,\OO_X)$ is {\em irreducible}
-(resp. {\em connected}) if the underlying space $X$ is irreducible (resp.
-connected). We say that a prescheme is {\em integral} if it is
-{\em irreducible and reduced} (cf. \sref{1.5.1.4}). We say that a prescheme
-$(X,\OO_X)$ is {\em locally integral} if each $x\in X$ admits an open
-neighborhood $U$ such that the prescheme induced on $U$ by $(X,\OO_X)$ is integral.
+We say that a prescheme $(X,\OO_X)$ is \emph{irreducible} (resp. \emph{connected}) if the underlying space $X$ is irreducible (resp. connected).
+We say that a prescheme is \emph{integral} if it is \emph{irreducible and reduced} (cf. \sref{1.5.1.4}).
+We say that a prescheme $(X,\OO_X)$ is \emph{locally integral} if every $x\in X$ admits an open neighborhood $U$ such that the prescheme induced on $U$ by $(X,\OO_X)$ is integral.
 \end{env}
 
 \subsection{Morphisms of preschemes}
@@ -104,122 +82,83 @@ neighborhood $U$ such that the prescheme induced on $U$ by $(X,\OO_X)$ is integr
 
 \begin{defn}[2.2.1]
 \label{1.2.2.1}
-Given two preschemes $(X,\OO_X)$, $(Y,\OO_Y)$, we
-define a morphism (of preschemes) of $(X,\OO_X)$ to $(Y,\OO_Y)$ to be a morphism
-of ringed spaces $(\psi,\theta)$ such that, for all $x\in X$, $\theta_x^\sharp$ is a
-local homomorphism $\OO_{\psi(x)}\to\OO_x$.
+Given two preschemes, $(X,\OO_X)$ and $(Y,\OO_Y)$, we define a morphism (of preschemes) from $(X,\OO_X)$ to $(Y,\OO_Y)$ to be a morphism of ringed spaces $(\psi,\theta)$ such that, for all $x\in X$, $\theta_x^\sharp$ is a local homomorphism $\OO_{\psi(x)}\to\OO_x$.
 \end{defn}
 
 \oldpage[I]{99}
-By passing to quotients, the map $\OO_{\psi(x)}\to\OO_x$ gives us a monomorphism
-$\theta^x:\kres(\psi(x))\to\kres(x)$, which lets us consider $\kres(x)$ as an
-{\em extension} of the field $\kres(\psi(x))$.
+By passing to quotients, the map $\OO_{\psi(x)}\to\OO_x$ gives us a monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$, which lets us consider $\kres(x)$ as an \emph{extension} of the field $\kres(\psi(x))$.
 
 \begin{env}[2.2.2]
 \label{1.2.2.2}
-The composition $(\psi'',\theta'')$ of two morphisms
-$(\psi,\theta)$, $(\psi',\theta')$ of preschemes is also a morphism of
-preschemes, since it is given by the formula
-${\theta''}^\sharp=\theta^\sharp\circ\psi^*({\theta'}^\sharp)$ \sref[0]{0.3.5.5}. From this
-we conclude that preschemes form a {\em category}; using the usual notation, we
-will write $\Hom(X,Y)$ to mean the set of morphisms from a prescheme $X$ to a
-prescheme $Y$.
+The composition $(\psi'',\theta'')$ of two morphisms $(\psi,\theta)$, $(\psi',\theta')$ of preschemes is also a morphism of preschemes, since it is given by the formula ${\theta''}^\sharp=\theta^\sharp\circ\psi^*({\theta'}^\sharp)$ \sref[0]{0.3.5.5}.
+From this we conclude that preschemes form a \emph{category};
+using the usual notation, we will write $\Hom(X,Y)$ to mean the set of morphisms from a prescheme $X$ to a prescheme $Y$.
 \end{env}
 
 \begin{exm}[2.2.3]
 \label{1.2.2.3}
-If $U$ is an open subset of $X$ then the canonical
-injection \sref[0]{0.4.1.2} of the induced prescheme $(U,\OO_X|U)$ into
-$(X,\OO_X)$ is a morphism of preschemes; it is further a {\em monomorphism} of
-ringed spaces (and {\em a fortiori} a monomorphism of preschemes), which
-quickly follows from \sref[0]{0.4.1.1}.
+If $U$ is an open subset of $X$, then the canonical injection \sref[0]{0.4.1.2} of the induced prescheme $(U,\OO_X|U)$ into $(X,\OO_X)$ is a morphism of preschemes;
+it is further a \emph{monomorphism} of ringed spaces (and \emph{a fortiori} a monomorphism of preschemes), which follows rapidly from \sref[0]{0.4.1.1}.
 \end{exm}
 
 \begin{prop}[2.2.4]
 \label{1.2.2.4}
-Let $(X,\OO_X)$ be a prescheme, and $(S,\OO_S)$ an
-affine scheme associated to a ring $A$. Then there exists a canonical bijective
-correspondence between morphisms of preschemes from $(X,\OO_X)$ to $(S,\OO_S)$ and
-ring homomorphisms from $A$ to $\Gamma(X,\OO_X)$.
+Let $(X,\OO_X)$ be a prescheme, and $(S,\OO_S)$ an affine scheme associated to a ring $A$.
+Then there exists a canonical bijective correspondence between morphisms of preschemes from $(X,\OO_X)$ to $(S,\OO_S)$ and ring homomorphisms from $A$ to $\Gamma(X,\OO_X)$.
 \end{prop}
 
-Note first that, if $(X,\OO_X)$ and $(Y,\OO_Y)$ are two arbitrary ringed spaces,
-a morphism $(\psi,\theta)$ from $(X,\OO_X)$ to $(Y,\OO_Y)$ canonically defines a ring
-homomorphism
-$\Gamma(\theta):\Gamma(Y,\OO_Y)\to\Gamma(Y,\psi_*(\OO_X))=\Gamma(X,\OO_X)$.
-In the case that we consider, everything boils down to showing that any
-homomorphism $\vphi:A\to\Gamma(X,\OO_X)$ is of the form $\Gamma(\theta)$
-for one and only one $\theta$. Now, by hypothesis there is a covering
-$(V_\alpha)$ of $X$ by affine opens; by composing of $\vphi$ with the
-restriction homomorphism $\Gamma(X,\OO_X)\to\Gamma(V_\alpha,\OO_X|V_\alpha)$ we
-obtain a homomorphism $\vphi_\alpha:A\to\Gamma(V_\alpha,\OO_X|V_\alpha)$
-that corresponds to a unique morphism $(\psi_\alpha,\theta_\alpha)$ from the
-prescheme $(V_\alpha,\OO_X|V_\alpha)$ to $(S,\OO_S)$, according to Theorem \sref{1.1.7.3}.
-Furthermore, for each pair of indices $(\alpha,\beta)$, each point of
-$V_\alpha\cap V_\beta$ admits an open affine neighborhood $W$ contained inside
-$V_\alpha\cap V_\beta$ \sref{1.2.1.3}; it is clear that by composing
-$\vphi_\alpha$ and $\vphi_\beta$ with the restriction homomorphisms to $W$,
-we obtain the same homomorphism $\Gamma(S,\OO_S)\to\Gamma(W,\OO_X|W)$, so, thanks
-to the relations $(\theta_\alpha^\sharp)_x=(\vphi_\alpha)_x$ for all $x\in
-V_\alpha$ and all $\alpha$ \sref{1.1.6.1}, the restriction to $W$ of the morphisms
-$(\psi_\alpha,\theta_\alpha)$ and $(\psi_\beta,\theta_\beta)$ coincide. From
-this we conclude that there is a morphism
-$(\psi,\theta):(X,\OO_X)\to(S,\OO_S)$ of ringed spaces, and only one such
-that its restriction to each $V_\alpha$ is $(\psi_\alpha,\theta_\alpha)$, and it
-is clear that this morphism is a morphism of preschemes and such that
-$\Gamma(\theta)=\vphi$.
+\begin{proof}
+First note that, if $(X,\OO_X)$ and $(Y,\OO_Y)$ are two arbitrary ringed spaces,
+a morphism $(\psi,\theta)$ from $(X,\OO_X)$ to $(Y,\OO_Y)$ canonically defines a ring homomorphism $\Gamma(\theta):\Gamma(Y,\OO_Y)\to\Gamma(Y,\psi_*(\OO_X))=\Gamma(X,\OO_X)$.
+In the case that we consider, everything boils down to showing that any homomorphism $\vphi:A\to\Gamma(X,\OO_X)$ is of the form $\Gamma(\theta)$ for exactly one $\theta$.
+Now, by hypothesis, there is a covering $(V_\alpha)$ of $X$ by affine open subsets;
+by composing $\vphi$ with the restriction homomorphism $\Gamma(X,\OO_X)\to\Gamma(V_\alpha,\OO_X|V_\alpha)$, we obtain a homomorphism $\vphi_\alpha:A\to\Gamma(V_\alpha,\OO_X|V_\alpha)$ that corresponds to a unique morphism $(\psi_\alpha,\theta_\alpha)$ from the prescheme $(V_\alpha,\OO_X|V_\alpha)$ to $(S,\OO_S)$, by Theorem~\sref{1.1.7.3}.
+Furthermore, for each pair of indices $(\alpha,\beta)$, each point of $V_\alpha\cap V_\beta$ admits an open affine neighborhood $W$ contained inside $V_\alpha\cap V_\beta$ \sref{1.2.1.3};
+it is clear that, by composing $\vphi_\alpha$ and $\vphi_\beta$ with the restriction homomorphisms to $W$, we obtain the same homomorphism $\Gamma(S,\OO_S)\to\Gamma(W,\OO_X|W)$, so, with the equation $(\theta_\alpha^\sharp)_x=(\vphi_\alpha)_x$ for all $x\in V_\alpha$ and all $\alpha$ \sref{1.1.6.1}, the restriction to $W$ of the morphisms $(\psi_\alpha,\theta_\alpha)$ and $(\psi_\beta,\theta_\beta)$ coincide.
+From this we conclude that there is a morphism $(\psi,\theta):(X,\OO_X)\to(S,\OO_S)$ of ringed spaces, and only one such that its restriction to each $V_\alpha$ is $(\psi_\alpha,\theta_\alpha)$, and it is clear that this morphism is a morphism of preschemes and such that $\Gamma(\theta)=\vphi$.
 
-Let $u:A\to\Gamma(X,\OO_X)$ be a ring homomorphism, and $v=(\psi,\theta)$
-the corresponding morphism $(X,\OO_X)\to(S,\OO_S)$. For each $f\in A$ we have
-that
-\[
+Let $u:A\to\Gamma(X,\OO_X)$ be a ring homomorphism, and $v=(\psi,\theta)$ the corresponding morphism $(X,\OO_X)\to(S,\OO_S)$.
+For each $f\in A$, we have that
+\begin{equation*}
+  \label{1.2.2.4.1}
   \psi^{-1}(D(f))=X_{u(f)}
   \tag{2.2.4.1}
-\]
-with the notation of \sref[0]{0.5.5.2} relative to the locally free sheaf
-$\OO_X$. In fact, it suffices to verify this formula when $X$ itself is affine,
-and then this is nothing but (1.2.2.2).
+\end{equation*}
+with the notation of \sref[0]{0.5.5.2} relative to the locally free sheaf $\OO_X$.
+In fact, it suffices to verify this formula when $X$ itself is affine, and then this is nothing but \sref{1.1.2.2.2}.
+\end{proof}
 
 \begin{prop}[2.2.5]
 \label{1.2.2.5}
-Under the hypotheses of Proposition \sref{1.2.2.4}, let
-$\vphi:A\to\Gamma(X,\OO_X)$ be a ring homomorphism,
-$f:(X,\OO_X)\to(S,\OO_S)$ the corresponding morphism of preschemes,
-$\sh{G}$ (resp. $\sh{F}$) an $\OO_X$-module (resp. $\OO_S$-module), and
-$M=\Gamma(S,\sh{F})$. Then there exists a canonical bijective
+Under the hypotheses of Proposition~\sref{1.2.2.4}, let $\vphi:A\to\Gamma(X,\OO_X)$ be a ring homomorphism, $f:(X,\OO_X)\to(S,\OO_S)$ the corresponding morphism of preschemes, $\sh{G}$ (resp. $\sh{F}$) an $\OO_X$-module (resp. $\OO_S$-module), and $M=\Gamma(S,\sh{F})$.
+Then there exists a canonical bijective
 \oldpage[I]{100}
-correspondence between $f$-morphisms $\sh{F}\to\sh{G}$ \sref[0]{0.4.4.1} and
-$A$-homomorphisms $M\to(\Gamma(X,\sh{G}))_{[\vphi]}$.
+correspondence between $f$-morphisms $\sh{F}\to\sh{G}$ \sref[0]{0.4.4.1} and $A$-homomorphisms $M\to(\Gamma(X,\sh{G}))_{[\vphi]}$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.2.2.5}
-Reasoning as in Proposition \sref{1.2.2.4}, we reduce to the case where $X$ is
-affine, and the proposition then follows from Proposition \sref{1.1.6.3}
-and from Corollary \sref{1.1.3.8}.
+Reasoning as in Proposition~\sref{1.2.2.4}, we reduce to the case where $X$ is affine, and the proposition then follows from Proposition~\sref{1.1.6.3} and from Corollary~\sref{1.1.3.8}.
 \end{proof}
 
 \begin{env}[2.2.6]
 \label{1.2.2.6}
-We say that a morphism of preschemes
-$(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ is {\em open} (resp. {\em closed})
-if, for all open subsets $U$ of $X$ (resp. all closed subsets $F$ of $X$),
-$\psi(U)$ is open (resp. $\psi(F)$ is closed) in $Y$. We say that
-$(\psi,\theta)$ is {\em dominant} if $\psi(X)$ is dense in $Y$, and
-{\em surjective} if $\psi$ is surjective. We will point out that these
-conditions rely only on the continuous map $\psi$.
+We say that a morphism of preschemes $(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ is \emph{open} (resp. \emph{closed}) if, for all open subsets $U$ of $X$ (resp. all closed subsets $F$ of $X$), $\psi(U)$ is open (resp. $\psi(F)$ is closed) in $Y$.
+We say that $(\psi,\theta)$ is \emph{dominant} if $\psi(X)$ is dense in $Y$, and \emph{surjective} if $\psi$ is surjective.
+We note that these conditions rely only on the continuous map $\psi$.
 \end{env}
 
 \begin{prop}[2.2.7]
 \label{1.2.2.7}
 Let
 \[
-  f=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y);
+  f=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)
 \]
+and
 \[
   g=(\psi',\theta'):(Y,\OO_Y)\to(Z,\OO_Z)
 \]
-be two morphisms of preschemes.
+be morphisms of preschemes.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item If $f$ and $g$ are both open (resp. closed, dominant, surjective),
     then so is $g\circ f$.
@@ -230,54 +169,40 @@ be two morphisms of preschemes.
 
 \begin{proof}
 \label{proof-1.2.2.7}
-Claims (i) and (iii) are evident. Write $g\circ f=(\psi'',\theta'')$.
-If $F$ is closed in $Y$ then $\psi^{-1}(F)$ is closed in $X$, so
-$\psi''(\psi^{-1}(F))$ is closed in $Z$; but since $\psi$ is surjective,
-$\psi(\psi^{-1}(F))=F$, so $\psi''(\psi^{-1}(F))=\psi'(F)$, which proves (ii).
+Claims (i) and (iii) are evident.
+Write $g\circ f=(\psi'',\theta'')$.
+If $F$ is closed in $Y$ then $\psi^{-1}(F)$ is closed in $X$, so $\psi''(\psi^{-1}(F))$ is closed in $Z$;
+but since $\psi$ is surjective, $\psi(\psi^{-1}(F))=F$, so $\psi''(\psi^{-1}(F))=\psi'(F)$, which proves (ii).
 \end{proof}
 
 \begin{prop}[2.2.8]
 \label{1.2.2.8}
-Let $f=(\psi,\theta)$ be a morphism
-$(X,\OO_X)\to(Y,\OO_Y)$, and $(U_\alpha)$ an open cover of $Y$. For $f$ to be
-open (resp. closed, surjective, dominant), it is necessary and sufficient for
-its restriction to each induced prescheme
-$(\psi^{-1}(U_\alpha),\OO_X|\psi^{-1}(U_\alpha))$, considered as a morphism of
-preschemes from this induced prescheme to the induced prescheme
-$(U_\alpha,\OO_Y|U_\alpha)$ to be open (resp. closed, surjective, dominant).
+Let $f=(\psi,\theta)$ be a morphism $(X,\OO_X)\to(Y,\OO_Y)$, and $(U_\alpha)$ an open cover of $Y$.
+For $f$ to be open (resp. closed, surjective, dominant), it is necessary and sufficient for its restriction to each induced prescheme $(\psi^{-1}(U_\alpha),\OO_X|\psi^{-1}(U_\alpha))$, considered as a morphism of preschemes from this induced prescheme to the induced prescheme $(U_\alpha,\OO_Y|U_\alpha)$ to be open (resp. closed, surjective, dominant).
 \end{prop}
 
 \begin{proof}
 \label{proof-1.2.2.8}
-The proposition follows immediately from the definitions, taking into
-account the fact that a subset $F$ of $Y$ is closed (resp. open, dense) in $Y$
-if and only if each of the $F\cap U_\alpha$ are closed (resp. open, dense) in
-$U_\alpha$.
+The proposition follows immediately from the definitions, taking into account the fact that a subset $F$ of $Y$ is closed (resp. open, dense) in $Y$ if and only if each of the $F\cap U_\alpha$ are closed (resp. open, dense) in $U_\alpha$.
 \end{proof}
 
 \begin{env}[2.2.9]
 \label{1.2.2.9}
-Let $(X,\OO_X)$ and $(Y,\OO_Y)$ be two preschemes; suppose that
-$X$ (resp. $Y$) has a finite number of irreducible components $X_i$ (resp.
-$Y_i$) ($1\leqslant i\leqslant n$); let $\xi_i$ (resp. $\eta_i$) be the generic
-point of $X_i$ (resp. $Y_i$) \sref{1.2.1.5}. We say that a morphism
+Let $(X,\OO_X)$ and $(Y,\OO_Y)$ be two preschemes;
+suppose that $X$ (resp. $Y$) has a finite number of irreducible components $X_i$ (resp. $Y_i$) ($1\leqslant i\leqslant n$);
+let $\xi_i$ (resp. $\eta_i$) be the generic point of $X_i$ (resp. $Y_i$) \sref{1.2.1.5}.
+We say that a morphism
 \[
   f=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)
 \]
-is {\em birational} if, for all $i$, $\psi^{-1}(\eta_i)=\{\xi_i\}$ and
-$\theta_{\xi_i}^\sharp:\OO_{\eta_i}\to\OO_{\xi_i}$ is an {\em isomorphism}. It
-is clear that a birational morphism is dominant \sref[0]{0.2.1.8}, and
-thus it is surjective if it is also closed.
+is \emph{birational} if, for all $i$, $\psi^{-1}(\eta_i)=\{\xi_i\}$ and $\theta_{\xi_i}^\sharp:\OO_{\eta_i}\to\OO_{\xi_i}$ is an \emph{isomorphism}.
+It is clear that a birational morphism is dominant \sref[0]{0.2.1.8}, and thus it is surjective if it is also closed.
 \end{env}
 
 \begin{nota}[2.2.10]
 \label{1.2.2.10}
-In all that follows, when there is
-no risk of confusion, we {\em suppress} the structure sheaf (resp. the morphism
-of structure sheaves) from the notation of a prescheme (resp. morphism of
-preschemes). If $U$ is an open subset of the underlying space $X$ of a
-prescheme, then whenever we speak of $U$ as a prescheme we always mean the
-induced prescheme on $U$.
+In all that follows, when there is no risk of confusion, we \emph{suppress} the structure sheaf (resp. the morphism of structure sheaves) from the notation of a prescheme (resp. morphism of preschemes).
+If $U$ is an open subset of the underlying space $X$ of a prescheme, then whenever we speak of $U$ as a prescheme we always mean the induced prescheme on $U$.
 \end{nota}
 
 \subsection{Gluing preschemes}
@@ -286,29 +211,20 @@ induced prescheme on $U$.
 \begin{env}[2.3.1]
 \label{1.2.3.1}
 \oldpage[I]{101}
-It follows from definition \sref{1.2.1.2} that every ringed space obtained by
-{\em gluing} preschemes \sref[0]{0.4.1.6} is again a prescheme. In particular, although
-every prescheme admits, by definition, a cover by affine open sets, we see that every
-prescheme can actually be obtained by {\em gluing affine schemes}.
+It follows from Definition~\sref{1.2.1.2} that every ringed space obtained by \emph{gluing} preschemes \sref[0]{0.4.1.6} is again a prescheme.
+In particular, although every prescheme admits, by definition, a cover by affine open sets, we see that every prescheme can actually be obtained by \emph{gluing affine schemes}.
 \end{env}
 
 \begin{env}[Example]{2.3.2}
 \label{1.2.3.2}
-Let $K$ be a field, and $B=K[s]$, $C=K[t]$ be two polynomial rings in one indeterminate over
-$K$, and define $X_1=\Spec(B)$, $X_2=\Spec(C)$, which are two isomorphic affine schemes. In
-$X_1$ (resp. $X_2$), let $U_{12}$ (resp. $U_{21}$) be the affine open $D(s)$ (resp. $D(t)$)
-where the ring $B_s$ (resp. $C_t$) is formed of rational fractions of the form $f(s)/s^m$
-(resp. $g(t)/t^n$) with $f\in B$ (resp. $g\in C$). Let $u_{12}$ be the isomorphism of
-preschemes $U_{21}\to U_{12}$ corresponding \sref{1.2.2.4} to the isomorphism from $B$ to
-$C$ that, to $f(s)/s^m$, associates the rational fraction $f(1/t)/(1/t^m)$. We can glue $X_1$
-and $X_2$ along $U_{12}$ and $U_{21}$ by using $u_{12}$, because there is clearly no gluing
-condition. We later show that the prescheme $X$ obtained in this manner is a particular case
-of a general method of construction (\textbf{II},~2.4.3). Here we only show that $X$ {\em is
-not an affine scheme}; this will follow from the fact that the ring $\Gamma(X,\OO_X)$ is
-{\em isomorphic} to $K$, and so its spectrum reduces to a point. Indeed, a section of
-$\OO_X$ over $X$ has a restriction over $X_1$ (resp. $X_2$), identified to an affine open of
-$X$, that is a polynomial $f(s)$ (resp. $g(t)$), and it follows from the definitions that we
-should have $g(t)=f(1/t)$, which is not possible if $f=g\in K$.
+Let $K$ be a field, $B=K[s]$ and $C=K[t]$ polynomial rings in one indeterminate over $K$, and define $X_1=\Spec(B)$ and $X_2=\Spec(C)$, which are isomorphic affine schemes.
+In $X_1$ (resp. $X_2$), let $U_{12}$ (resp. $U_{21}$) be the affine open $D(s)$ (resp. $D(t)$) where the ring $B_s$ (resp. $C_t$) is formed of rational fractions of the form $f(s)/s^m$ (resp. $g(t)/t^n$) with $f\in B$ (resp. $g\in C$).
+Let $u_{12}$ be the isomorphism of preschemes $U_{21}\to U_{12}$ corresponding \sref{1.2.2.4} to the isomorphism from $B$ to $C$ that, to $f(s)/s^m$, associates the rational fraction $f(1/t)/(1/t^m)$.
+We can glue $X_1$ and $X_2$ along $U_{12}$ and $U_{21}$ by using $u_{12}$, because there is clearly no gluing condition.
+We later show that the prescheme $X$ obtained in this manner is a particular case of a general method of construction \sref[II]{2.2.4.3}.
+Here we show only that $X$ \emph{is not an affine scheme};
+this will follow from the fact that the ring $\Gamma(X,\OO_X)$ is \emph{isomorphic} to $K$, and so its spectrum reduces to a point.
+Indeed, a section of $\OO_X$ over $X$ has a restriction over $X_1$ (resp. $X_2$), identified with an affine open of $X$, that is a polynomial $f(s)$ (resp. $g(t)$), and it follows from the definitions that we should have $g(t)=f(1/t)$, which is not possible if $f=g\in K$.
 \end{env}
 
 \subsection{Local schemes}
@@ -316,24 +232,16 @@ should have $g(t)=f(1/t)$, which is not possible if $f=g\in K$.
 
 \begin{env}[2.4.1]
 \label{1.2.4.1}
-We say that an affine scheme is a {\em local scheme} if
-it is the affine scheme associated to a local ring $A$; then there exists in
-$X=\Spec(A)$ a single {\em closed point $a\in X$}, and for all other $b\in X$
-we have that $a\in\overline{\{b\}}$ \sref{1.1.1.7}.
+We say that an affine scheme is a \emph{local scheme} if it is the affine scheme associated to a local ring $A$;
+there then exists, in $X=\Spec(A)$, a single \emph{closed point $a\in X$}, and for all other $b\in X$ we have that $a\in\overline{\{b\}}$ \sref{1.1.1.7}.
 \end{env}
 
 For all preschemes $Y$ and points $y\in Y$, the local scheme $\Spec(\OO_y)$
-is called the {\em local scheme of $Y$ at the point $y$}. Let $V$ be an affine
-open of $Y$ containing $y$, and $B$ the ring of the affine scheme $V$; then
-$\OO_y$ is canonically identified with $B_y$ \sref{1.1.3.4}, and the canonical
-homomorphism $B\to B_y$ thus corresponds \sref{1.1.6.1} to a morphism of preschemes
-$\Spec(\OO_y)\to V$. If we compose this morphism with the canonical injection
-$V\to Y$, then we obtain a morphism $\Spec(\OO_y)\to Y$, which is
-{\em independent} of the affine open $V$ (containing $y$) that we chose:
-indeed, if $V'$ is some other affine open containing $y$, then there exists a
-third affine open $W$ containing $y$ and such that $W\subset V\cap V'$ \sref{1.2.1.3};
-we can thus assume that $V\subset V'$, and then if $B'$ is the ring of $V'$,
-everything comes down to remarking that the diagram
+is called the \emph{local scheme of $Y$ at the point $y$}.
+Let $V$ be an affine open subset of $Y$ containing $y$, and $B$ the ring of the affine scheme $V$;
+then $\OO_y$ is canonically identified with $B_y$ \sref{1.1.3.4}, and the canonical homomorphism $B\to B_y$ thus corresponds \sref{1.1.6.1} to a morphism of preschemes $\Spec(\OO_y)\to V$.
+If we compose this morphism with the canonical injection $V\to Y$, then we obtain a morphism $\Spec(\OO_y)\to Y$ which is \emph{independent} of the affine open subset $V$ (containing $y$) that we chose: indeed, if $V'$ is some other affine open subset containing $y$, then there exists a third affine open subset $W$ that contains $y$ and is such that $W\subset V\cap V'$ \sref{1.2.1.3};
+we can thus assume that $V\subset V'$, and then if $B'$ is the ring of $V'$, so everything relies on remarking that the diagram
 \[
   \xymatrix{
     B'\ar[rr]\ar[dr] & &
@@ -341,119 +249,86 @@ everything comes down to remarking that the diagram
     & \OO_y
   }
 \]
-is commutative \sref[0]{0.1.5.1}. The morphism
+is commutative \sref[0]{0.1.5.1}.
+The morphism
 \[
   \Spec(\OO_y)\to Y
 \]
 thus defined is said to be {\it canonical}.
+
 \begin{prop}[2.4.2]
 \label{1.2.4.2}
 \oldpage[I]{102}
-Let $(Y,\OO_Y)$ be a prescheme; for all $y\in Y$, let $(\psi,\theta)$ be the canonical
-morphism $(\Spec(\OO_y),\widetilde{\OO}_y)\to(Y,\OO_Y)$. Then $\psi$ is a homeomorphism
-from $\Spec(\OO_y)$ to the subspace $S_y$ of $Y$ given by the $z$ such that
-$y\in\overline{\{z\}}$ ({\em or, equivalently, the generalizations of $y$
-\sref[0]{0.2.1.2}}; furthermore, if $z=\psi(\fk{p})$, then
-$\theta_z^\sharp:\OO_z\to(\OO_y)_\fk{p}$ is an isomorphism; $(\psi,\theta)$
-is thus a monomorphism of ringed spaces.
+Let $(Y,\OO_Y)$ be a prescheme;
+for all $y\in Y$, let $(\psi,\theta)$ be the canonical morphism $(\Spec(\OO_y),\widetilde{\OO}_y)\to(Y,\OO_Y)$.
+Then $\psi$ is a homeomorphism from $\Spec(\OO_y)$ to the subspace $S_y$ of $Y$ given by the $z$ such that $y\in\overline{\{z\}}$ (\emph{or, equivalently, the generalizations of $y$ \sref[0]{0.2.1.2}};
+furthermore, if $z=\psi(\fk{p})$, then $\theta_z^\sharp:\OO_z\to(\OO_y)_\fk{p}$ is an isomorphism;
+$(\psi,\theta)$ is thus a monomorphism of ringed spaces.
 \end{prop}
 
-As the unique closed point $a$ of $\Spec(\OO_y)$ is contained in the closure of any
-point of this space, and since $\psi(a)=y$, the image of $\Spec(\OO_y)$ under
-the continuous map $\psi$ is contained in $S_y$. Since $S_y$ is contained in
-every affine open containing $y$, one can consider just the case where $Y$ is an
-affine scheme; but then this proposition follows from \sref{1.1.6.2}.
+\begin{proof}
+\label{proof-1.2.4.2}
+Since the unique closed point $a$ of $\Spec(\OO_y)$ is contained in the closure of any point of this space, and since $\psi(a)=y$, the image of $\Spec(\OO_y)$ under the continuous map $\psi$ is contained in $S_y$.
+Since $S_y$ is contained in every affine open containing $y$, one can consider just the case where $Y$ is an affine scheme;
+but then this proposition follows from \sref{1.1.6.2}.
+\end{proof}
 
-{\em We see \sref{1.2.1.5} that there is a bijective correspondence between
-$\Spec(\OO_y)$ and the set of closed irreducible subsets of $Y$ containing $y$.}
+\emph{We see \sref{1.2.1.5} that there is a bijective correspondence between $\Spec(\OO_y)$ and the set of closed irreducible subsets of $Y$ containing $y$.}
 
 \begin{cor}[2.4.3]
 \label{1.2.4.3}
-For $y\in Y$ to be the generic point of an
-irreducible component of $Y$, it is necessary and sufficient for the only prime
-ideal of the local ring $\OO_y$ to be its maximal ideal ({\em in other words, that
-$\OO_y$ is of {\em dimension zero}}).
+For $y\in Y$ to be the generic point of an irreducible component of $Y$, it is necessary and sufficient for the only prime ideal of the local ring $\OO_y$ to be its maximal ideal (\emph{in other words, for $\OO_y$ to be of \emph{dimension zero}}).
 \end{cor}
 
 \begin{prop}[2.4.4]
 \label{1.2.4.4}
-Let $(X,\OO_X)$ be a local scheme of a ring
-$A$, $a$ its unique closed point, and $(Y,\OO_Y)$ a prescheme. Every morphism
-$u=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ then factorizes uniquely as
-$X\to\Spec(\OO_{\psi(a)})\to Y$, where the second arrow denotes the canonical
-morphism, and the first corresponds to a local homomorphism $\OO_{\psi(a)}\to A$.
-This establishes a canonical bijective correspondence between the set of
-morphisms $(X,\OO_X)\to(Y,\OO_Y)$ and the set of local homomorphisms $\OO_y\to A$
-for ($y\in Y$).
+Let $(X,\OO_X)$ be a local scheme of some ring $A$, $a$ its unique closed point, and $(Y,\OO_Y)$ a prescheme.
+Every morphism $u=(\psi,\theta):(X,\OO_X)\to(Y,\OO_Y)$ then factors uniquely as $X\to\Spec(\OO_{\psi(a)})\to Y$, where the second arrow denotes the canonical morphism, and the first corresponds to a local homomorphism $\OO_{\psi(a)}\to A$.
+This establishes a canonical bijective correspondence between the set of morphisms $(X,\OO_X)\to(Y,\OO_Y)$ and the set of local homomorphisms $\OO_y\to A$ for ($y\in Y$).
 \end{prop}
 
-Indeed, for all $x\in X$, we have that $a\in\overline{\{x\}}$, so
-$\psi(a)\in\overline{\{\psi(x)\}}$, which shows that $\psi(X)$ is contained in
-every affine open containing $\psi(a)$. So it suffices to consider the case
-where $(Y,\OO_Y)$ is an affine scheme of ring $B$, and we then have that
-$u=({}^a\vphi,\tilde{\vphi})$, where $\vphi\in\Hom(B,A)$ \sref{1.1.7.3}. Further,
-we have that $\vphi^{-1}(\fk{j}_a)=\fk{j}_{\psi(a)}$, and hence
-that the image under $\vphi$ of any element of
-$B-\fk{j}_{\psi(a)}$ is invertible in the local ring $A$; the
-factorization in the result follows from the universal property of the ring of
-fractions \sref[0]{0.1.2.4}. Conversely, to each local homomorphism
-$\OO_y\to A$ there exists a unique corresponding morphism
-$(\psi,\theta):X\to\Spec(\OO_y)$ such that $\psi(a)=y$ \sref{1.1.7.3}, and,
-by composing with the canonical morphism $\Spec(\OO_y)\to Y$, we obtain a morphism
-$X\to Y$, which proves the proposition.
+Indeed, for all $x\in X$, we have that $a\in\overline{\{x\}}$, so $\psi(a)\in\overline{\{\psi(x)\}}$, which shows that $\psi(X)$ is contained in every affine open subset that contains $\psi(a)$.
+So it suffices to consider the case where $(Y,\OO_Y)$ is an affine scheme of ring $B$, and then we have that $u=({}^a\vphi,\tilde{\vphi})$, where $\vphi\in\Hom(B,A)$ \sref{1.1.7.3}.
+Further, we have that $\vphi^{-1}(\fk{j}_a)=\fk{j}_{\psi(a)}$, and hence that the image under $\vphi$ of any element of $B\setmin\fk{j}_{\psi(a)}$ is invertible in the local ring $A$;
+the factorization in the result follows from the universal property of the ring of fractions \sref[0]{0.1.2.4}.
+Conversely, to each local homomorphism $\OO_y\to A$ there is a unique corresponding morphism $(\psi,\theta):X\to\Spec(\OO_y)$ such that $\psi(a)=y$ \sref{1.1.7.3}, and, by composing with the canonical morphism $\Spec(\OO_y)\to Y$, we obtain a morphism $X\to Y$, which proves the proposition.
 
 \begin{env}[2.4.5]
 \label{1.2.4.5}
-The affine schemes whose ring is a field $K$ have an
-underlying space that is just a point. If $A$ is a local ring with maximal
-ideal $\fk{m}$, then each local homomorphism $A\to K$ has kernel equal to
-$\fk{m}$, and so factorizes as $A\to A/\fk{m}\to K$, where the
-second arrow is a monomorphism. The morphisms $\Spec(K)\to\Spec(A)$ thus
-correspond bijectively to monomorphisms of fields $A/\fk{m}\to K$.
+The affine schemes whose ring is a field $K$ have an underlying space that is just a point.
+If $A$ is a local ring with maximal ideal $\fk{m}$, then each local homomorphism $A\to K$ has kernel equal to $\fk{m}$, and so factors as $A\to A/\fk{m}\to K$, where the second arrow is a monomorphism.
+The morphisms $\Spec(K)\to\Spec(A)$ thus correspond bijectively to monomorphisms of fields $A/\fk{m}\to K$.
 \end{env}
 
-Let $(Y,\OO_Y)$ be a prescheme; for each $y\in Y$ and each ideal
-$\fk{a}_y$ of $\OO_y$, the canonical homomorphism
-$\OO_y\to\OO_y/\fk{a}_y$ defines a morphism
-$\Spec(\OO_y/\fk{a}_y)\to\Spec(\OO_y)$; if we compose this with the
-canonical morphism $\Spec(\OO_y)\to Y$, then we obtain a morphism
-$\Spec(\OO_y/\fk{a}_y)\to Y$, again said to be \textit{canonical}. For
-$\fk{a}_y=\fk{m}_y$, this says that $\OO_y/\fk{a}_y=\kres(y)$, and
-so Proposition \sref{1.2.4.4} says that:
+Let $(Y,\OO_Y)$ be a prescheme;
+for each $y\in Y$ and each ideal $\fk{a}_y$ of $\OO_y$, the canonical homomorphism $\OO_y\to\OO_y/\fk{a}_y$ defines a morphism $\Spec(\OO_y/\fk{a}_y)\to\Spec(\OO_y)$;
+if we compose this with the canonical morphism $\Spec(\OO_y)\to Y$, then we obtain a morphism $\Spec(\OO_y/\fk{a}_y)\to Y$, again said to be \textit{canonical}.
+For $\fk{a}_y=\fk{m}_y$, this says that $\OO_y/\fk{a}_y=\kres(y)$, and so Proposition~\sref{1.2.4.4} says that:
 
 \begin{cor}[2.4.6]
 \label{1.2.4.6}
 \oldpage[I]{103}
-Let $(X,\OO_X)$ be a local scheme whose ring $K$ is a field, $\xi$ be the unique point of
-$X$, and $(Y,\OO_Y)$ a prescheme. Then each morphism $u:(X,\OO_X)\to(Y,\OO_Y)$ factorizes
-uniquely as $X\to\Spec(\kres(\psi(\xi)))\to Y$, where the second arrow denotes the canonical
-morphism, and the first corresponds to a monomorphism $\kres(\psi(\xi))\to K$.
-This establishes a canonical bijective correspondence between the set of
-morphisms $(X,\OO_X)\to (Y,\OO_Y)$ and the set of monomorphisms $\kres(y)\to K$ (for
-$y\in Y$).
+Let $(X,\OO_X)$ be a local scheme whose ring $K$ is a field, $\xi$ the unique point of $X$, and $(Y,\OO_Y)$ a prescheme.
+Then each morphism $u:(X,\OO_X)\to(Y,\OO_Y)$ factors uniquely as $X\to\Spec(\kres(\psi(\xi)))\to Y$, where the second arrow denotes the canonical morphism, and the first corresponds to a monomorphism $\kres(\psi(\xi))\to K$.
+This establishes a canonical bijective correspondence between the set of morphisms $(X,\OO_X)\to (Y,\OO_Y)$ and the set of monomorphisms $\kres(y)\to K$ (for $y\in Y$).
 \end{cor}
 
 \begin{cor}[2.4.7]
 \label{1.2.4.7}
-For all $y\in Y$, each canonical morphism
-$\Spec(\OO_y/\fk{a}_y)\to Y$ is a monomorphism of ringed spaces.
+For all $y\in Y$, every canonical morphism $\Spec(\OO_y/\fk{a}_y)\to Y$ is a monomorphism of ringed spaces.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.2.4.7}
-We have already seen this when $\fk{a}_y=0$ \sref{1.2.4.2}, and it suffices
-to apply Corollary \sref{1.1.7.5}.
+We have already seen this when $\fk{a}_y=0$ \sref{1.2.4.2}, and it suffices to apply Corollary~\sref{1.1.7.5}.
 \end{proof}
 
 \begin{rmk}{2.4.8}
 \label{1.2.4.8}
-Let $X$ be a local scheme, and $a$ its unique
-closed point. Since every affine open containing $a$ is necessarily in the
-whole of $X$, every {\em invertible} $\OO_X$-module \sref[0]{0.5.4.1} is
-necessarily {\em isomorphic to $\OO_X$} (or, as we say, again, {\em trivial}).
-This property does not hold in general for an arbitrary affine scheme
-$\Spec(A)$; we will see in Chapter~V that if $A$ is a normal ring then this is
-true when $A$ is \unsure{{\em factorial}}.
+Let $X$ be a local scheme, and $a$ its unique closed point.
+Since every affine open subset containing $a$ is necessarily equal to the whole of $X$, every \emph{invertible} $\OO_X$-module \sref[0]{0.5.4.1} is necessarily \emph{isomorphic to $\OO_X$} (or, as we say, again, \emph{trivial}).
+This property does not hold in general for an arbitrary affine scheme $\Spec(A)$;
+we will see in Chapter~V that if $A$ is a normal ring then this is true when $A$ is a unique factorisation domain.
 \end{rmk}
 
 \subsection{Preschemes over a prescheme}
@@ -461,90 +336,66 @@ true when $A$ is \unsure{{\em factorial}}.
 
 \begin{defn}[2.5.1]
 \label{1.2.5.1}
-Given a prescheme $S$, we say that the data of a
-prescheme $X$ and a morphism of preschemes $\vphi:X\to S$ defines a
-prescheme $X$ {\em over the prescheme $S$}, or an {\em $S$-prescheme}; we say
-that $S$ is the {\em base prescheme} of the $S$-prescheme $X$. The morphism
-$\vphi$ is called the {\em structure morphism} of the $S$-prescheme $X$.
-When $S$ is an affine scheme of ring $A$, we also say that $X$ endowed with
-$\vphi$ is a prescheme {\em over the ring $A$} (or an {\em $A$-prescheme}).
+Given a prescheme $S$, we say that the data of a prescheme $X$ and a morphism of preschemes $\vphi:X\to S$ defines a prescheme $X$ \emph{over the prescheme $S$}, or an \emph{$S$-prescheme};
+we say that $S$ is the \emph{base prescheme} of the $S$-prescheme $X$.
+The morphism $\vphi$ is called the \emph{structure morphism} of the $S$-prescheme $X$.
+When $S$ is an affine scheme of ring $A$, we also say that $X$ endowed with $\vphi$ is a prescheme \emph{over the ring $A$} (or an \emph{$A$-prescheme}).
 \end{defn}
 
-It follows from \sref{1.2.2.4} that the data of a prescheme over a ring $A$ is
-equivalent to the data of a prescheme $(X,\OO_X)$ whose structure sheaf $\OO_X$ is
-a sheaf of {\em $A$-algebras}. {\em An arbitrary prescheme can always be
-considered as a $\bb{Z}$-prescheme in a unique way.}
+It follows from \sref{1.2.2.4} that the data of a prescheme over a ring $A$ is equivalent to the data of a prescheme $(X,\OO_X)$ whose structure sheaf $\OO_X$ is a sheaf of \emph{$A$-algebras}.
+\emph{An arbitrary prescheme can always be considered as a $\bb{Z}$-prescheme in a unique way.}
 
 If $\vphi:X\to S$ is the structure morphism of an $S$-prescheme $X$, we
-say that a point $x\in X$ is {\em over a point $s\in S$} if $\vphi(x)=s$. We
-say that $X$ {\em dominates} $S$ if $\vphi$ is a dominant morphism \sref{1.2.2.6}.
+say that a point $x\in X$ is \emph{over a point $s\in S$} if $\vphi(x)=s$. We
+say that $X$ \emph{dominates} $S$ if $\vphi$ is a dominant morphism \sref{1.2.2.6}.
 
 \begin{env}[2.5.2]
 \label{1.2.5.2}
-Let $X$ and $Y$ be two $S$-preschemes; we say that a morphism
-of preschemes $u:X\to Y$ is a {\em morphism of preschemes over $S$} (or
-an {\em $S$-morphism}) if the diagram
+Let $X$ and $Y$ be $S$-preschemes;
+we say that a morphism of preschemes $u:X\to Y$ is a \emph{morphism of preschemes over $S$} (or an \emph{$S$-morphism}) if the diagram
 \[
   \xymatrix{
     X \ar[rr]^u \ar[dr] & & Y\ar[dl]\\
     & S &
   }
 \]
-(where the diagonal arrows are the structure morphisms) is
-commutative: this ensures that, for all $s\in S$ and $x\in X$ over $s$, $u(x)$
-is also above $s$.
+(where the diagonal arrows are the structure morphisms) is commutative: this ensures that, for all $s\in S$ and $x\in X$ over $s$, $u(x)$ also lies over $s$.
 \end{env}
 
-From this definition it follows immediately that the composition of two
-$S$-morphisms is an $S$-morphism; $S$-preschemes thus form a {\em category}.
+It follows immediately from this definition that the composition of two $S$-morphisms is an $S$-morphism;
+$S$-preschemes thus form a \emph{category}.
 
-We denote by $\Hom_S(X,Y)$ the set of $S$-morphisms from an $S$-prescheme $X$ to
-an $S$-prescheme $Y$; the identity morphism of an $S$-prescheme is denoted by
-$1_X$.
+We denote by $\Hom_S(X,Y)$ the set of $S$-morphisms from an $S$-prescheme $X$ to an $S$-prescheme $Y$;
+the identity morphism of an $S$-prescheme $X$ is denoted by $1_X$.
 
-When $S$ is an affine scheme of ring $A$, we will also say {\em $A$-morphism}
-instead of $S$-morphism.
+When $S$ is an affine scheme of ring $A$, we will also say \emph{$A$-morphism} instead of $S$-morphism.
 
 \begin{env}[2.5.3]
 \label{1.2.5.3}
 \oldpage[I]{104}
-If $X$ is an $S$-prescheme, and $v:X'\to X$ a morphism of preschemes,
-then the composition $X'\to X\to S$ endows $X'$ with the structure of an $S$-prescheme;
-in particular, every prescheme induced by an open set $U$ of $X$ can be considered as an
-$S$-prescheme by the canonical injection.
+If $X$ is an $S$-prescheme, and $v:X'\to X$ a morphism of preschemes, then the composition $X'\to X\to S$ endows $X'$ with the structure of an $S$-prescheme;
+in particular, every prescheme induced by an open set $U$ of $X$ can be considered as an $S$-prescheme by the canonical injection.
 
-If $u:X\to Y$ is an $S$-morphism of $S$-preschemes, then the restriction
-of $u$ to any prescheme induced by an open subset $U$ of $X$ is also an
-$S$-morphism $U\to Y$. Conversely, let $(U_\alpha)$ be an open cover of $X$,
-and for each $\alpha$ let $u_\alpha:U_\alpha\to Y$ be an $S$-morphism; if,
-for all pairs of indices $(\alpha,\beta)$, the restrictions of $u_\alpha$ and
-$u_\beta$ to $U_\alpha\cap U_\beta$ agree, then there exists an $S$-morphism
-$X\to Y$, and only one such that the restriction to each $U_\alpha$ is
-$u_\alpha$.
+If $u:X\to Y$ is an $S$-morphism of $S$-preschemes, then the restriction of $u$ to any prescheme induced by an open subset $U$ of $X$ is also an $S$-morphism $U\to Y$.
+Conversely, let $(U_\alpha)$ be an open cover of $X$, and for each $\alpha$ let $u_\alpha:U_\alpha\to Y$ be an $S$-morphism;
+if, for all pairs of indices $(\alpha,\beta)$, the restrictions of $u_\alpha$ and $u_\beta$ to $U_\alpha\cap U_\beta$ agree, then there exists an $S$-morphism $X\to Y$, and exactly one such that the restriction to each $U_\alpha$ is $u_\alpha$.
 
-If $u:X\to Y$ is an $S$-morphism such that $u(X)\subset V$, where $V$ is
-an open subset of $Y$, then $u$, considered as a morphism from $X$ to $V$, is
-also an $S$-morphism.
+If $u:X\to Y$ is an $S$-morphism such that $u(X)\subset V$, where $V$ is an open subset of $Y$, then $u$, considered as a morphism from $X$ to $V$, is also an $S$-morphism.
 \end{env}
 
 \begin{env}[2.5.4]
 \label{1.2.5.4}
-Let $S'\to S$ be a morphism of preschemes; for all
-$S'$-preschemes, the composition $X\to S'\to S$ endows $X$ with the structure of
-an $S$-prescheme. Conversely, suppose that $S'$ is the induced prescheme of an
-open subset of $S$; let $X$ be an $S$-prescheme and suppose that the structure
-morphism $f:X\to S$ is such that $f(X)\subset S'$; then we can consider
-$X$ as an $S'$-prescheme. In this latter case, if $Y$ is another $S$-prescheme
-whose structure morphism sends the underlying space to $S'$, then every
-$S$-morphism from $X$ to $Y$ is also an $S'$-morphism.
+Let $S'\to S$ be a morphism of preschemes;
+for all $S'$-preschemes, the composition $X\to S'\to S$ endows $X$ with the structure of an $S$-prescheme.
+Conversely, suppose that $S'$ is the induced prescheme of an open subset of $S$;
+let $X$ be an $S$-prescheme and suppose that the structure morphism $f:X\to S$ is such that $f(X)\subset S'$;
+then we can consider $X$ as an $S'$-prescheme.
+In this latter case, if $Y$ is another $S$-prescheme whose structure morphism sends the underlying space to $S'$, then every $S$-morphism from $X$ to $Y$ is also an $S'$-morphism.
 \end{env}
 
 \begin{env}[2.5.5]
 \label{1.2.5.5}
-If $X$ is an $S$-prescheme, with structure morphism
-$\vphi:X\to S$, we define an {\em $S$-section of $X$} to be an
-$S$-morphism from $S$ to $X$, that is to say a morphism of preschemes
-$\psi:S\to X$ such that $\vphi\circ\psi$ is the identity on $S$. We
-denote by $\Gamma(X/S)$ the set of $S$-sections of $X$.
+If $X$ is an $S$-prescheme, with structure morphism $\vphi:X\to S$, we define an \emph{$S$-section of $X$} to be an $S$-morphism from $S$ to $X$, that is to say a morphism of preschemes $\psi:S\to X$ such that $\vphi\circ\psi$ is the identity on $S$.
+We denote by $\Gamma(X/S)$ the set of $S$-sections of $X$.
 \end{env}
 
