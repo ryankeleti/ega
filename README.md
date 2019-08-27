@@ -8,15 +8,15 @@ S’il-vous plaît pardonnez-nous, Grothendieck.
 To compile, `make book`, `make pdfs`, or `make all`.
 
 ## PDFs
-There is the [**full document**](https://fppf.site/ega/book.pdf), or individual sections can be downloaded separately:
-- [What this is](https://fppf.site/ega/what.pdf).
-- [Introduction](https://fppf.site/ega/intro.pdf).
-- [EGA 0](https://fppf.site/ega/ega0.pdf).
-- [EGA I](https://fppf.site/ega/ega1.pdf).
-- [EGA II](https://fppf.site/ega/ega2.pdf).
-- [EGA III](https://fppf.site/ega/ega3.pdf).
-- [EGA IV](https://fppf.site/ega/ega4.pdf).
-- [References](https://fppf.site/ega/ref.pdf).
+There is the [**full document**](https://fppf.site/ega/book-auto.pdf), or individual sections can be downloaded separately:
+- [What this is](https://fppf.site/ega/what-auto.pdf).
+- [Introduction](https://fppf.site/ega/intro-auto.pdf).
+- [EGA 0](https://fppf.site/ega/ega0-auto.pdf).
+- [EGA I](https://fppf.site/ega/ega1-auto.pdf).
+- [EGA II](https://fppf.site/ega/ega2-auto.pdf).
+- [EGA III](https://fppf.site/ega/ega3-auto.pdf).
+- [EGA IV](https://fppf.site/ega/ega4-auto.pdf).
+- [References](https://fppf.site/ega/ref-auto.pdf).
 
 All the PDFs are auto-compliled every hour if any changes have been made since the last auto-compile, so will always be up to date with the latest commit.
 
