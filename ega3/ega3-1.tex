@@ -39,6 +39,7 @@ then $g$ identifies with an \emph{alternating} map from $[1,r]^k$ to $M$, and it
 
 \begin{env}[1.1.3]
 \label{3.1.1.3}
+\oldpage[III]{83}
 From the above complexes, we deduce as usual the \emph{homology and cohomology $A$-modules} (G, I, 2.2)
 \[
   \HH_\bullet(\mathbf{f},M)=\HH_\bullet(K_\bullet(\mathbf{f},M)),
@@ -96,6 +97,7 @@ For every chain complex $L_\bullet$ of $A$-modules, we have an exact sequence
 for every index $p$.
 \end{lem}
 
+\oldpage[III]{84}
 This is a particular case of an exact sequece of low-order terms of the K\"unneth spectral sequence (M, XVII, 5.2 (a) and G, I, 5.5.2); it can be proved directly as follows.
 Consider $K_0$ and $K_1$ as chain complexes (zero in dimensions $\neq 0$ and $\neq 1$ respectively); we then have an exact sequence of complexes
 \[
@@ -108,4 +110,102 @@ to which we can apply the exact sequence in homology
 But it is evident that $\HH_p(K_0\otimes L_\bullet)=K_0\otimes\HH_p(L_\bullet)$ and $\HH_p(K_1\otimes L_\bullet)=K_1\otimes\HH_{p-1}(L_\bullet)$ for all $p$; in addition, we verify immediately that the operator $\partial:K_1\otimes\HH_p(L_\bullet)\to K_0\otimes\HH_p(L_\bullet)$ is none other than $d_1\otimes 1$; the lemma thus follows from the above exact sequence and the definition of $\HH_0(K_\bullet\otimes\HH_p(L_\bullet))$ and $\HH_1(K_\bullet\otimes\HH_{p-1}(L_\bullet))$.
 
 The lemma having been established, the end of the proof of Proposition \sref{3.1.1.4} is immediate: the induction hypothesis of Lemma \sref{3.1.1.4.1} gives $\HH_p(K_\bullet\otimes L_\bullet)=0$ for $p\geq 2$; in addition if we show that $\HH_1(K_\bullet,\HH_0(L_\bullet))=0$, then we also deduce from Lemma \sref{3.1.1.4.1} that $\HH_1(K_\bullet\otimes L_\bullet)=0$; but by definition, $\HH_1(K_\bullet,\HH_0(L_\bullet))$ is none other than the kernel of the scaling $z\mapsto f_r\cdot z$ on $M_{r-1}$, and as by hypothesis this kernel is zero, this finishes the proof.
+
+\begin{env}[1.1.5]
+\label{3.1.1.5}
+Let $\mathbf{g}=(g_i)_{1\leq i\leq r}$ be a second sequence of $r$ elements of $A$, and set $\mathbf{f}\mathbf{g}=(f_i g_i)_{1\leq i\leq r}$.
+We can define a canonical homomorphism of complexes
+\[
+  \vphi_\mathbf{g}:K_\bullet(\mathbf{f}\mathbf{g})\to K_\bullet(\mathbf{f})
+  \tag{1.1.5.1}
+\]
+as the canonical extension to the exterior algebra $\wedge(A^r)$ of the $A$-linear map $(x_1,\dots,x_r)\mapsto(g_1 x_1,\dots,g_r x_r)$ from $A^r$ to itself.
+To see that we have a homomorphism of complexes, it suffices to note, in general, that if $u:E\to F$ is an $A$-linear map, and if $\mathbf{x}\in\dual{F}$ and $\mathbf{y}={}^t u(\mathbf{x})\in\dual{E}$, then we have the formula
+\[
+  (\wedge u)\circ i_\mathbf{y}=i_\mathbf{x}\circ(\wedge u);
+  \tag{1.1.5.2}
+\]
+indeed, the two elements are antiderivations of $\wedge F$, and it suffies to check that they coincide on $F$, which follows immediately from the definitions.
+
+When we identify $K_\bullet(\mathbf{f})$ with the tensor product of the $K_\bullet(f_i)$ \sref{3.1.1.1}, $\vphi_\mathbf{g}$ is the tensor product of the $\vphi_{g_i}$, where $\vphi_{g_i}$ is the identity in degree $0$ and multiplication by $g_i$ in degree $1$.
+\end{env}
+
+\begin{env}[1.1.6]
+\label{3.1.1.6}
+In particular, for every pair of integers $m$ and $n$ such that $0\leq n\leq m$, we have homomorphisms of complexes
+\[
+  \vphi_{\mathbf{f}^{m-n}}:K_\bullet(\mathbf{f}^m)\to K_\bullet(\mathbf{f}^n)
+  \tag{1.1.6.1}
+\]
+and as a result, homomorphisms
+\[
+  \vphi_{\mathbf{f}^{m-n}}:K^\bullet(\mathbf{f}^n,M)\to K^\bullet(\mathbf{f}^m,M),
+  \tag{1.1.6.2}
+\]
+\[
+  \vphi_{\mathbf{f}^{m-n}}:\HH^\bullet(\mathbf{f}^n,M)\to\HH^\bullet(\mathbf{f}^m,M).
+  \tag{1.1.6.3}
+\]
+
+\oldpage[III]{85}
+The latter homomorphisms evidently satisfy the transitivity condition $\vphi_{\mathbf{f}^{m-p}}=\vphi_{\mathbf{f}^{m-n}}\circ\vphi_{\mathbf{f}^{n-p}}$ for $p\leq n\lq m$; they therefore define two \emph{inductive systems} of $A$-modules; we set
+\[
+  C^\bullet((\mathbf{f}),M)=\varinjlim_n K^\bullet(\mathbf{f}^n,M),
+  \tag{1.1.6.4}
+\]
+\[
+  \HH^\bullet((\mathbf{f}),M)=\HH^\bullet(C^\bullet((\mathbf{f}),M))=\varinjlim_n\HH^\bullet(\mathbf{f}^n,M),
+  \tag{1.1.6.5},
+\]
+the last equality following from the fact that passing to the inductive limit commutes with the functor $\HH^\bullet$ (G, I, 2.1).
+We will later see \sref{3.1.4.3} that $\HH^\bullet((\mathbf{f}),M)$ does not depend on the \emph{ideal $(\mathbf{f})$} of $A$ (and similarly on the $(\mathbf{f})$-pre-adic topology on $A$), which justifies the notations.
+
+It is clear that $M\mapsto C^\bullet((\mathbf{f}),M)$ is an exact $A$-linear functor, and $M\mapsto\HH^\bullet((\mathbf{f}),M)$ is a cohomological functor.
+\end{env}
+
+\begin{env}[1.1.7]
+\label{3.1.1.7}
+Set $\mathbf{f}=(f_i)\in A^r$ and $\mathbf{g}=(g_i)\in A^r$; denote by $e_\mathbf{g}$ the left multiplication by the vector $\mathbf{g}\in A^r$ on the exterior algebra $\wedge(A^r)$; we know that we have the \emph{homotopy formula}
+\[
+  i_\mathbf{f}e_\mathbf{g}+e_\mathbf{g}i_\mathbf{f}=\langle\mathbf{g},\mathbf{f}\rangle 1
+  \tag{1.1.7.1}
+\]
+in the $A$-module $A^r$ ($1$ denotes the identity automorphism of $A^r$); this relation also implies that \emph{in the complex $K_\bullet(\mathbf{f})$} we have
+\[
+  de_\mathbf{g}+e_\mathbf{g}d=\langle\mathbf{g},\mathbf{f}\rangle 1.
+  \tag{1.1.7.2}
+\]
+
+If the ideal $(\mathbf{f})$ is equal to $A$, then there exists a $\mathbf{g}\in A^r$ such that $\langle\mathbf{g},\mathbf{f}\rangle=\sum_{i=1}^r g_i f_i=1$.
+As a result (G, I, 2.4):
+\end{env}
+
+\begin{prop}[1.1.8]
+\label{3.1.1.8}
+Suppose that the ideal $(\mathbf{f})$ generated by the $f_i$ is equal to $A$.
+Then the complex $K_\bullet(\mathbf{f})$ is homotopically trivial, and so are the complexes $K_\bullet(\mathbf{f},M)$ and $K^\bullet(\mathbf{f},M)$ for every $A$-module $M$.
+\end{prop}
+
+\begin{cor}[1.1.9]
+\label{3.1.1.9}
+If $(\mathbf{f})=A$, then we have $\HH^\bullet(\mathbf{f},M)=0$ and $\HH^\bullet((\mathbf{f}),M)=0$ for every $A$-module $M$.
+\end{cor}
+
+\begin{proof}
+\label{proof-3.1.1.9}
+Indeed, we then have $(\mathbf{f}^n)=A$ for all $n$.
+\end{proof}
+
+\begin{rmk}[1.1.10]
+\label{3.1.1.10}
+With the same notations as above, set $X=\Spec(A)$ and $Y$ the closed subprescheme of $X$ defined by the ideal $(\mathbf{f})$.
+We will prove in \textsection9 that $\HH^\bullet((\mathbf{f}),M)$ is isomorphic to the cohomology $\HH_Y^\bullet(X,\wt{M})$ corresponding to the antifilter $\Phi$ of closed subsets of $Y$ (T, 3.2).
+We will also show that Proposition \sref{3.1.2.3} applied to $X$ and to $\sh{F}=\wt{M}$ is a particular case of an exact sequence in cohomology
+\[
+  \cdots\to\HH_Y^p(X,\sh{F})\to\HH^p(X,\sh{F})\to\HH^p(X\setmin Y,\sh{F})\to\HH_Y^{p+1}(X,\sh{F})\to\cdots.
+\]
+\end{rmk}
+
+\subsection{\v Cech cohomology of an open cover}
+\label{subsection-cech-cohomology-open-cover}
 
