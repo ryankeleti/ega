@@ -75,12 +75,12 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
     + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
 - [ ] Elementary global study of some classes of morphisms (EGA II)
-    + [x] 0. Summary _(@ryankeleti, proofread by @thosgood)_
-    + [ ] 1. Affine morphisms
+    + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
+    + [ ] 1. Affine morphisms _(@ryankeleti)_
     + [ ] 2. Homogeneous prime spectra
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
     + [ ] 4. Projective bundles; Ample sheaves
-    + [ ] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms
+    + [ ] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
     + [ ] 6. Integral morphisms and finite morphisms
     + [ ] 7. Valuative criteria
     + [ ] 8. Blowup schemes; projective cones; projective closure
