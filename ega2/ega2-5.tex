@@ -1,5 +1,8 @@
 \section{Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms}
-\label{section-quasi-affine-projective-proper-morphisms}
+\label{section:quasi-affine-projective-proper-morphisms}
+
+\subsection{Quasi-affine morphisms}
+\label{subsection:quasi-affine-morphisms}
 
 \begin{defn}[5.1.1]
 \label{2.5.1.1}
@@ -96,3 +99,75 @@ The other properties are local on $Y$
 \oldpage[II]{96}
 and thus follow immediately from \sref{2.5.1.2} and \sref{2.5.1.4}, taking into account the fact that $f_*(\sh{F})$ is quasi-coherent whenever $f$ is separated \sref[I]{1.9.2.2}[a].
 \end{proof}
+
+\begin{cor}[5.1.7]
+\label{2.5.1.7}
+Let $f:X\to Y$ be a quasi-affine morphism.
+For every open subset $U$ of $Y$, the restriction $f^{-1}(U)\to U$ of $f$ is quasi-affine.
+\end{cor}
+
+\begin{cor}[5.1.8]
+\label{2.5.1.8}
+Let $Y$ be an affine scheme, and $f:X\to Y$ a quasi-compact morphism.
+For $f$ to be quasi-affine, it is necessary and sufficient for $X$ to be a quasi-affine scheme.
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.1.8}
+This is an immediate consequence of \sref{2.5.1.6} and \sref{2.4.6.6}.
+\end{proof}
+
+\begin{cor}[5.1.9]
+\label{2.5.1.9}
+Let $Y$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian, and $f:X\to Y$ a morphism of \emph{finite type}.
+If $f$ is quasi-affine, then there exists a quasi-coherent sub-$\OO_Y$-algebra $\sh{B}$ of $\sh{A}(X)=f_*(\OO_X)$ of \emph{finite type} \sref[I]{1.9.6.2} such that the morphism $X\to\Spec(\sh{B}$ corresponding to the canonical injection $\sh{B}\to\sh{A}(X)$ is an immersion.
+Further, every quasi-coherent sub-$\OO_Y$-algebra $\sh{B}'$ of finite type over $\sh{A}(X)$ containing $\sh{B}$ has the same property.
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.1.9}
+Indeed, $\sh{A}(X)$ is the inductive limit of its quasi-coherent sub-$\OO_Y$-algebras of finite type \sref[I]{1.9.6.5};
+the result is then a particular case of \sref{2.3.8.4}, taking into account the identification of $\Spec(\sh{A}(X))$ with $\Proj(\sh{A}(X)[T])$ \sref{2.3.1.7}.
+\end{proof}
+
+\begin{prop}[5.1.10]
+\label{2.5.1.10}
+\medskip\noindent
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item A quasi-compact morphism $X\to Y$ that is a homeomorphism from the underlying space of $X$ to some subspace of the underlying space of $Y$ (so, in particular, any closed immersion) is quasi-affine.
+    \item The composition of any two quasi-affine morphisms is quasi-affine.
+    \item If $f:X\to Y$ is a quasi-affine $S$-morphism, then $f_{(S')}:X_{(S')}\to Y_{(S')}$ is a quasi-affine morphism for any extension $S'\to S$ of the base prescheme.
+    \item If $f:X\to Y$ and $g:X'\to Y'$ are quasi-affine $S$-morphisms, then $f\times_S g$ is quasi-affine.
+    \item If $f:X\to Y$ and $g:Y\to Z$ are morphisms such that $g\circ f$ is quasi-affine, and if $g$ is separated or the underlying space of $X$ is locally Noetherian, then $f$ is quasi-affine.
+    \item If $f$ is a quasi-affine morphism then so too is $f_\red$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-2.5.1.10}
+Taking into account the criterion \sref{2.5.1.6}[c'], all of (i), (iii), (iv), (v), and (vi) follow immediately from \sref{2.4.6.13}[i \emph{bis}], \sref{2.4.6.13}[iii], \sref{2.4.6.13}[iv], \sref{2.4.6.13}[v], and \sref{2.4.6.13}[vi] (respectively).
+To prove (ii), we can restrict to the case where $Z$ is affine, and then the claim follows directly from applying \sref{2.4.6.13}[ii] to $\sh{L}=\OO_X$ and $\sh{K}=\OO_Y$.
+\end{proof}
+
+\begin{rmk}[5.1.11]
+Let $f:X\to Y$ and $g:Y\to Z$ be morphisms such that $X\times_Z Y$ is locally Noetherian.
+Then the graph immersion $\Gamma_f:X\to X\times_Z Y$ is quasi-affine, since it is quasi-compact \sref[I]{1.6.3.5}, and since \sref[I]{1.5.5.12} shows that, in (v), the conclusion still holds true if we remove the hypothesis that $g$ is separated.
+\end{rmk}
+
+\begin{prop}[5.1.12]
+\label{2.5.1.12}
+Let $f:X\to Y$ be a quasi-compact morphism, and $g:X'\to X$ a quasi-affine morphism.
+If $\sh{L}$ is an ample (for $f$) $\OO_X$-module, then $g^*(\sh{L})$ is an ample (for $f\circ g$) $\OO_{X'}$-module.
+\end{prop}
+
+\begin{proof}
+\label{proof-2.5.1.12}
+Since $\OO_{X'}$ is very ample for $g$, and the question is local on $Y$ \sref{2.4.6.4}, it follows from \sref{2.4.6.13}[ii] that there exists (for $Y$ affine) an integer $n$ such that
+\[
+    g^*(\sh(L)^{\otimes n}) = (g^*(\sh{L}))^{\otimes n}
+\]
+is ample for $f\circ g$, and so $g^*(\sh{L})$ is ample for $f\circ g$ \sref{2.4.6.9}
+\end{proof}
+
+\subsection{Serre's criterion}
+\label{subsection:serres-criterion}
