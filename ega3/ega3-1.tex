@@ -148,7 +148,7 @@ and as a result, homomorphisms
 \]
 
 \oldpage[III]{85}
-The latter homomorphisms evidently satisfy the transitivity condition $\vphi_{\mathbf{f}^{m-p}}=\vphi_{\mathbf{f}^{m-n}}\circ\vphi_{\mathbf{f}^{n-p}}$ for $p\leq n\lq m$; they therefore define two \emph{inductive systems} of $A$-modules; we set
+The latter homomorphisms evidently satisfy the transitivity condition $\vphi_{\mathbf{f}^{m-p}}=\vphi_{\mathbf{f}^{m-n}}\circ\vphi_{\mathbf{f}^{n-p}}$ for $p\leq n\leq m$; they therefore define two \emph{inductive systems} of $A$-modules; we set
 \[
   C^\bullet((\mathbf{f}),M)=\varinjlim_n K^\bullet(\mathbf{f}^n,M),
   \tag{1.1.6.4}
@@ -208,4 +208,136 @@ We will also show that Proposition \sref{3.1.2.3} applied to $X$ and to $\sh{F}=
 
 \subsection{\v Cech cohomology of an open cover}
 \label{subsection-cech-cohomology-open-cover}
+
+\begin{nota}[1.2.1]
+\label{3.1.2.1}
+In this section, we denote:
+\begin{enumerate}[label=--]
+  \item $X$ a prescheme;
+  \item $\sh{F}$ a quasi-coherent $\OO_X$-module;
+\oldpage[III]{86}
+  \item $A=\Gamma(X,\OO_X)$, $M=\Gamma(X,\sh{F})$;
+  \item $\mathbf{f}=(f_i)_{1\leq i\leq r}$ a finite system of elements of $A$;
+  \item $U_i=X_{f_i}$, the open set \sref[0]{0.5.5.2} of the $x\in X$ such that $f_i(x)\neq 0$;
+  \item $U=\bigcup_{i=1}^r U_i$;
+  \item $\fk{U}$ the cover $(U_i)_{1\leq i\leq r}$ of $U$.
+\end{enumerate}
+\end{nota}
+
+\begin{env}[1.2.2]
+\label{3.1.2.2}
+Suppose that $X$ is either a prescheme whose underlying space is \emph{Noetherian} or a \emph{scheme} whose underlying space is \emph{quasi-compact}.
+We then know \sref[I]{1.9.3.3} that we have $\Gamma(U_i,\sh{F})=M_{f_i}$.
+We set
+\[
+  U_{i_0 i_1\cdots i_p}=\bigcap_{k=0}^p U_{i_k}=X_{f_{i_0}f_{i_1}\cdots f_{i_p}}
+\]
+\sref[0]{0.5.5.3}; so we also have
+\[
+  \Gamma(U_{i_0 i_1\cdots i_p},\sh{F})=M_{f_{i_0}f_{i_1}\cdots f_{i_p}}.
+  \tag{1.2.2.1}
+\]
+
+We have \sref[0]{0.1.6.1} that $M_{f_{i_0}f_{i_1}\cdots f_{i_p}}$ identifies with the inductive limit $\varinjlim_n M_{i_0 i_1\cdots i_p}^{(n)}$, where the inductive system is formed by the $M_{i_0 i_1\cdots i_p}^{(n)}=M$, the homomorphisms $\vphi_{nm}:M_{i_0 i_1\cdots i_p}^{(m)}\to M_{i_0 i_1\cdots i_p}^{(n)}$ being multiplication by $(f_{i_0}f_{i_1}\cdots f_{i_p})^{n-m}$ for $m\leq n$.
+We denote by $C_n^p(M)$ the set of \emph{alternating} maps from $[1,r]^{p+1}$ to $M$ (for all $n$); these $A$-modules also form an inductive system with respect to the $\vphi_{nm}$.
+If $C^p(\fk{U},\sh{F})$ is the group of \emph{alternating} \v Cech $p$-cochains relative to the cover $\fk{U}$, with coefficients in $\sh{F}$ (G, II, 5.1), then it follows from the above that we can write
+\[
+  C^p(\fk{U},\sh{F})=\varinjlim_n C_n^p(M).
+  \tag{1.2.2.2}
+\]
+
+With the notations of \sref{3.1.1.2}, $C_n^p(M)$ identifies with $K^{p+1}(\mathbf{f}^n,M)$, and the map $\vphi_{nm}$ identifies with the map $\vphi_{\mathbf{f}^{n-m}}$ defined in \sref{3.1.1.6}.
+We thus have, for every $p\geq 0$, a canonical functorial isomorphism
+\[
+  C^p(\fk{U},\sh{F})\isoto C^{p+1}((\mathbf{f}),M).
+  \tag{1.2.2.3}
+\]
+
+In addition, the formula (1.1.2.3) and the definition of the cohomology of a cover (G, II, 5.1) shows that the isomorphisms (1.2.2.3) are compatible with the coboundary maps.
+\end{env}
+
+\begin{prop}[1.2.3]
+\label{3.1.2.3}
+If $X$ is a prescheme whose underlying space in Noetherian or a scheme whose underlying space is quasi-compact, then there exists a canonical functorial isomorphism in $\sh{F}$
+\[
+  \HH^p(\fk{U},\sh{F})\isoto\HH^{p+1}((\mathbf{f}),M)\text{ for }p\geq 1.
+  \tag{1.2.3.1}
+\]
+
+In addition, we have a functorial exact sequence in $\sh{F}$
+\[
+  0\to\HH^0((\mathbf{f}),M)\to M\to\HH^0(\fk{U},\sh{F})\to\HH^1((\mathbf{f}),M)\to 0.
+  \tag{1.2.3.2}
+\]
+\end{prop}
+
+\begin{proof}
+\label{proof-3.1.2.3}
+\oldpage[III]{87}
+The isomorphisms (1.2.3.1) are immediate consequences of what we saw in \sref{3.1.2.2}.
+On the other hand, we have $C^0(\fk{U},\sh{F})=C^1((\mathbf{f}),M)$; as a result, $\HH^0(\fk{U},\sh{F})$ identifies with the subgroup of $1$-cocycles of $C^1((\mathbf{f}),M)$; as $M=C^0((\mathbf{f}),M)$, the exact sequence (1.2.3.2) is none other than the one given by the definition of the cohomology groups $\HH^0((\mathbf{f}),M)$ and $\HH^1((\mathbf{f}),M)$.
+\end{proof}
+
+\begin{cor}[1.2.4]
+\label{3.1.2.4}
+Suppose that the $X_{f_i}$ are quasi-compact and that there exists $g_i\in\Gamma(U,\sh{F})$ such that $\sum_i g_i(f_i|U)=1|U$.
+Then for every quasi-coherent $(\OO_X|U)$-module $\sh{G}$, we have $\HH^p(\fk{U},\sh{G})=0$ for $p>0$; if in addition $U=X$, then the canonical homomorphism (1.2.3.2) $M\to\HH^0(\fk{U},\sh{F})$ is bijective.
+\end{cor}
+
+\begin{proof}
+\label{proof-3.1.2.4}
+As by hypothesis the $U_i=X_{f_i}$ are quasi-compact, so is $U$, and we can reduce to the case where $U=X$; the hypothesis then implies that $\HH^p((\mathbf{f}),M)=0$ for all $p\geq 0$ \sref{3.1.1.9}.
+The corollary then follows immediately from (1.2.3.1) and (1.2.3.2).
+\end{proof}
+
+We note that since $\HH^0(\fk{U},\sh{F})=\HH^0(U,\sh{F})$ (G, II, 5.2.2), we have again proved \sref[I]{1.1.3.7} as a special case.
+
+\begin{rmk}[1.2.5]
+\label{3.1.2.5}
+Suppose that $X$ is an \emph{affine scheme}; then the $U_i=X_{f_i}=D(f_i)$ are affine open sets, as well as the $U_{i_0 i_1\cdots i_p}$ (but $U$ is not necessarily affine).
+In this case, the functors $\Gamma(X,\sh{F})$ and $\Gamma(U_{i_0 i_1\cdots i_p},\sh{F})$ are exact in $\sh{F}$ \sref[I]{1.1.3.11}.
+If we have an exact sequence $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ of quasi-coherent $\OO_X$-modules, then the sequence of complexes
+\[
+  0\to C^\bullet(\fk{U},\sh{F}')\to C^\bullet(\fk{U},\sh{F})\to C^\bullet(\fk{U},\sh{F}'')\to 0
+\]
+is exact, and thus gives an exact sequence in cohomolology
+\[
+  \cdots\to\HH^p(\fk{U},\sh{F})\to\HH^p(\fk{U},\sh{F})\to\HH^p(\fk{U},\sh{F}'')\xrightarrow{\partial}\HH^{p+1}(\fk{U},\sh{F}')\to\cdots.
+\]
+On the other hand, if we set $M'=\Gamma(X,\sh{F}')$ and $M''=\Gamma(X,\sh{F}'')$, then the sequence $0\to M'\to M\to M''\to 0$ is exact; as $C^\bullet((\mathbf{f}),M)$ is an exact functor in $M$, we also have the exact sequence in cohomology
+\[
+  \cdots\HH^p((\mathbf{f}),M')\to\HH^p((\mathbf{f}),M)\to\HH^p((\mathbf{f}),M'')\xrightarrow{\partial}\HH^{p+1}((\mathbf{f}),M')\to\cdots.
+\]
+
+This being so, as the diagram
+\[
+  \xymatrix{
+    0\ar[r] &
+    C^\bullet(\fk{U},\sh{F}')\ar[r]\ar[d] &
+    C^\bullet(\fk{U},\sh{F})\ar[r]\ar[d] &
+    C^\bullet(\fk{U},\sh{F}'')\ar[r]\ar[d] &
+    0\\
+    0\ar[r] &
+    C^\bullet((\mathbf{f}),M')\ar[r] &
+    C^\bullet((\mathbf{f}),M)\ar[r] &
+    C^\bullet((\mathbf{f}),M'')\ar[r] &
+    0
+  }
+\]
+\oldpage[III]{88}
+is commutative, we conclude that the diagrams
+\[
+  \xymatrix{
+    \HH^p(\fk{U},\sh{F}'')\ar[r]^\partial\ar[d] &
+    \HH^{p+1}(\fk{U},\sh{F}')\ar[d]\\
+    \HH^{p+1}((\mathbf{f}),M'')\ar[r]^\partial &
+    \HH^{p+2}((\mathbf{f}),M')
+  }
+  \tag{1.2.5.1}
+\]
+are commutative for all $p$ (G, I, 2.1.1).
+\end{rmk}
+
+\subsection{Cohomology of an affine scheme}
+\label{subsection-cohomology-affine-scheme}
 
