@@ -6,25 +6,27 @@
 
 \begin{env}[4.1.1]
 \label{1.4.1.1}
-As the notion of a quasi-coherent sheaf \sref[0]{0.5.1.3} is local, a quasi-coherent $\OO_X$-module $\sh{F}$ over a prescheme $X$ can be defined by the condition that, for each affine open $V$ of $X$, $\sh{F}|V$ is isomorphic to the sheaf associated to a $\Gamma(V,\OO_X)$-module \sref{1.1.4.1}.
-It is clear that over a prescheme $X$, the structure sheaf $\OO_X$ is quasi-coherent and that the kernels, cokernels, and images of homomorphisms of quasi-coherent $\OO_X$-modules, as well as inductive limits and direct sums of quasi-coherent $\OO_X$-modules, are also quasi-coherent (Theorem \sref{1.1.3.7} and Corollary \sref{1.1.3.9}).
+As the notion of a quasi-coherent sheaf \sref[0]{0.5.1.3} is local, a quasi-coherent $\OO_X$-module $\sh{F}$ over a prescheme $X$ can be defined by the following condition: for each affine open $V$ of $X$, $\sh{F}|V$ is isomorphic to the sheaf associated to a $\Gamma(V,\OO_X)$-module \sref{1.1.4.1}.
+It is clear that, over a prescheme $X$, the structure sheaf $\OO_X$ is quasi-coherent, and that the kernels, cokernels, and images of homomorphisms of quasi-coherent $\OO_X$-modules, as well as inductive limits and direct sums of quasi-coherent $\OO_X$-modules, are also quasi-coherent (Theorem~\sref{1.1.3.7} and Corollary~\sref{1.1.3.9}).
 \end{env}
 
 \begin{prop}[4.1.2]
 \label{1.4.1.2}
-Let $X$ be a prescheme, $\sh{I}$ a quasi-coherent sheaf of ideals of $\OO_X$.
-The support $Y$ of the sheaf $\OO_X/\sh{I}$ is then closed, and if we denote by $\OO_Y$ the restriction of $\OO_X/\sh{I}$ to $Y$, then $(Y,\OO_Y)$ is a prescheme.
+Let $X$ be a prescheme, and $\sh{I}$ a quasi-coherent sheaf of ideals of $\OO_X$.
+Then the support $Y$ of the sheaf $\OO_X/\sh{I}$ is closed, and if we denote by $\OO_Y$ the restriction of $\OO_X/\sh{I}$ to $Y$, then $(Y,\OO_Y)$ is a prescheme.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.4.1.2}
 \oldpage[I]{120}
-It evidently suffices \sref{1.2.1.3} to consider the case where $X$ is an affine scheme, and to show that in this case $Y$ is closed in $X$ and is an \emph{affine scheme}.
-Indeed, if $X=\Spec(A)$, then we have $\OO_X=\wt{A}$ and $\sh{I}=\wt{\fk{I}}$, where $\fk{I}$ is an ideal of $A$ \sref{1.1.4.1}; $Y$ is then equal to the closed subset $V(\fk{I})$ of $X$ and identifies with the prime spectrum of the ring $B=A/\fk{I}$ \sref{1.1.1.11};
-in addition, if $\vphi$ is the canonical homomorphism $A\to B=A/\fk{I}$, then the direct image ${}^a\vphi_*(\wt{B})$ canonically identifies with the sheaf $\wt{A}/\wt{\fk{I}}=\OO_X/\sh{I}$ (Proposition \sref{1.1.6.3} and Corollary \sref{1.1.3.9}), which finishes the proof.
+It evidently suffices \sref{1.2.1.3} to consider the case where $X$ is an affine scheme, and to show that, in this case, $Y$ is closed in $X$, and is an \emph{affine scheme}.
+Indeed, if $X=\Spec(A)$, then we have $\OO_X=\wt{A}$ and $\sh{I}=\wt{\fk{I}}$, where $\fk{I}$ is an ideal of $A$ \sref{1.1.4.1};
+$Y$ is then equal to the closed subset $V(\fk{I})$ of $X$ and can be identified with the prime spectrum of the ring $B=A/\fk{I}$ \sref{1.1.1.11};
+in addition, if $\vphi$ is the canonical homomorphism $A\to B=A/\fk{I}$, then the direct image ${}^a\vphi_*(\wt{B})$ is canonically identified with the sheaf $\wt{A}/\wt{\fk{I}}=\OO_X/\sh{I}$ (Proposition~\sref{1.1.6.3} and Corollary~\sref{1.1.3.9}), which finishes the proof.
 \end{proof}
 
-We say that $(Y,\OO_Y)$ is the \emph{subprescheme} of $(X,\OO_X)$ \emph{defined by the sheaf of ideals $\sh{I}$}; this is a particular case of the more general notion of a \emph{subprescheme}:
+We say that $(Y,\OO_Y)$ is the \emph{subprescheme} of $(X,\OO_X)$ \emph{defined by the sheaf of ideals $\sh{I}$};
+this is a particular case of the more general notion of a \emph{subprescheme}:
 
 \begin{defn}[4.1.3]
 \label{1.4.1.3}
@@ -36,42 +38,47 @@ We say that a ringed space $(Y,\OO_Y)$ is a subprescheme of a prescheme $(X,\OO_
 We say that the subprescheme $(Y,\OO_Y)$ of $(X,\OO_X)$ is closed if $Y$ is closed in $X$ (in which case $U=X$).
 \end{defn}
 
-It follows immediately from this definition and Proposition \sref{1.4.1.2} that the closed subpreschemes of $X$ are in canonical \emph{bijective correspondence} with the quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$, since if two such sheaves $\sh{J}$, $\sh{J}'$ have the same (closed) support $Y$ and if the restrictions of $\OO_X/\sh{J}$ and $\OO_X/\sh{J}'$ to $Y$ are \unsure{identical/the identity}, then we have $\sh{J}'=\sh{J}$.
+It follows immediately from this definition and Proposition~\sref{1.4.1.2} that the closed subpreschemes of $X$ are in canonical \emph{bijective correspondence} with the quasi-coherent sheaves of ideals $\sh{J}$ of $\OO_X$, since if two such sheaves $\sh{J}$ and $\sh{J}'$ have the same (closed) support $Y$, and if the restrictions of $\OO_X/\sh{J}$ and $\OO_X/\sh{J}'$ to $Y$ are identical, then we have $\sh{J}'=\sh{J}$.
 
 \begin{env}[4.1.4]
 \label{1.4.1.4}
-Let $(Y,\OO_Y)$ be a subprescheme of $X$, $U$ the largest open subset of $X$ containing $Y$ and in which $Y$ is closed, $V$ an open subset of $X$ contained in $U$; then $V\cap Y$ is closed in $V$. In addition, if $Y$ is defined by the quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X|U$, then $\sh{J}|V$ is a quasi-coherent sheaf of ideals of $\OO_X|V$, and it is immediate that the prescheme induced by $Y$ on $Y\cap V$ is the closed subprescheme of $V$ defined by the sheaf of ideals $\sh{J}|V$.
+Let $(Y,\OO_Y)$ be a subprescheme of $X$, $U$ the largest open subset of $X$ such that $Y$ is closed (and thus contained) in $U$, and $V$ an open subset of $X$ contained in $U$;
+then $V\cap Y$ is closed in $V$.
+In addition, if $Y$ is defined by the quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X|U$, then $\sh{J}|V$ is a quasi-coherent sheaf of ideals of $\OO_X|V$, and it is immediate that the prescheme induced by $Y$ on $Y\cap V$ is the closed subprescheme of $V$ defined by the sheaf of ideals $\sh{J}|V$.
 Conversely:
 \end{env}
 
 \begin{prop}[4.1.5]
 \label{1.4.1.5}
-Let $(Y,\OO_Y)$ be a ringed space such that $Y$ is a subspace of $X$ and that there exists a cover $(V_\alpha)$ of $Y$ by open subsets of $X$ such that for each $\alpha$, $Y\cap V_\alpha$ is closed in $V_\alpha$ and the ringed space $(Y\cap V_\alpha,\OO_Y|(Y\cap V_\alpha))$ is a closed subprescheme of the prescheme induced on $V_\alpha$ by $X$.
+Let $(Y,\OO_Y)$ be a ringed space such that $Y$ is a subspace of $X$, and there exists a cover $(V_\alpha)$ of $Y$ by open subsets of $X$ such that, for each $\alpha$, $Y\cap V_\alpha$ is closed in $V_\alpha$, and the ringed space $(Y\cap V_\alpha,\OO_Y|(Y\cap V_\alpha))$ is a closed subprescheme of the prescheme induced on $V_\alpha$ by $X$.
 Then $(Y,\OO_Y)$ is a subprescheme of $X$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.4.1.5}
-The hypotheses imply that $Y$ is locally closed in $X$ and that the largest open $U$ containing $Y$ in which $Y$ is closed contains all the $V_\alpha$; we can thus reduce to the case where $U=X$ and $Y$ is closed in $X$.
-We then define a quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$ by taking $\sh{J}|V_\alpha$ to be the sheaf of ideals of $\OO_X|V_\alpha$ which define the closed subprescheme $(Y\cap V_\alpha,\OO_Y|(Y\cap V_\alpha))$, and for each open subset $W$ of $X$ not intersecting $Y$, $\sh{J}|W=\OO_X|W$.
-We check immediately according to Definition \sref{1.4.1.3} and \sref{1.4.1.4} that there exists a unique sheaf of ideals $\sh{J}$ satisfying these conditions and that define the closed subprescheme $(Y,\OO_Y)$.
+The hypotheses imply that $Y$ is locally closed in $X$ and that the largest open $U$ in which $Y$ is closed (and thus contained) contains all the $V_\alpha$;
+we can thus reduce to the case where $U=X$ and $Y$ is closed in $X$.
+We then define a quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$ by taking $\sh{J}|V_\alpha$ to be the sheaf of ideals of $\OO_X|V_\alpha$ which define the closed subprescheme $(Y\cap V_\alpha,\OO_Y|(Y\cap V_\alpha))$, and, for each open subset $W$ of $X$ not intersecting $Y$, $\sh{J}|W=\OO_X|W$.
+We see immediately, by Definition~\sref{1.4.1.3} and \sref{1.4.1.4}, that there exists a unique sheaf of ideals $\sh{J}$ satisfying these conditions, and that it defines the closed subprescheme $(Y,\OO_Y)$.
 \end{proof}
 
-In particular, the \emph{induced} prescheme by $X$ on an \emph{open subset} of $X$ is a \emph{subprescheme} of $X$.
+In particular, the \emph{induced} (by $X$) prescheme on an \emph{open subset} of $X$ is a \emph{subprescheme} of $X$.
 
 \begin{prop}[4.1.6]
 \label{1.4.1.6}
 A subprescheme (resp. a closed subprescheme) of a subprescheme
 \oldpage[I]{121}
-(resp. closed subprescheme) of $X$ canonically identifies with a subprescheme (resp. closed subprescheme) of $X$.
+(resp. closed subprescheme) of $X$ is canonically identified with a subprescheme (resp. closed subprescheme) of $X$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.4.1.6}
-Since a locally closed subset of a locally closed subspace of $X$ is a locally closed subspace of $X$, it is clear \sref{1.4.1.5} that the question is local and that we can thus suppose that $X$ is affine; the proposition then follows from the canonical identification of $A/\fk{J}'$ and $(A/\fk{J})/(\fk{J}'/\fk{J})$ when $\fk{J}$, $\fk{J}'$ are two ideals of a ring $A$ such that $\fk{J}\subset\fk{J}'$.
+Since a locally closed subset of a locally closed subspace of $X$ is a locally closed subspace of $X$, it is clear \sref{1.4.1.5} that the question is local and that we can thus suppose that $X$ is affine;
+the proposition then follows from the canonical identification of $A/\fk{J}'$ with $(A/\fk{J})/(\fk{J}'/\fk{J})$, where $A$ is some ring, and $\fk{J}$ and $\fk{J}'$ are ideals of $A$ such that $\fk{J}\subset\fk{J}'$.
 \end{proof}
 
-We will always make the previous identification.
+In what follows, we will always make use of the above identification.
+
 \begin{env}[4.1.7]
 \label{1.4.1.7}
 Let $Y$ be a subprescheme of a prescheme $X$, and denote by $\psi$ the canonical injection $Y\to X$ of the \emph{underlying subspaces}; we know that the inverse image $\psi^*(\OO_X)$ is the restriction $\OO_X|Y$ \sref[0]{0.3.7.1}.
