@@ -453,7 +453,7 @@ Then the topologically ringed space $(\fk{X},\OO_\fk{X})$ is a formal prescheme;
 
 \begin{proof}
 \label{proof-1.10.6.3}
-We first note that on each stalk, $u_{ji}$ is a surjective homomorphism and \emph{a fortiori} a local homomorphism; thus $v_{ij}=(1_\fk{X},u_{ji})$ is a morphism of preschemes $X_j\to X_i$ ($i\geqslant j$) \sref{1.2.2.1}.
+We first note that on each stalk, $u_{ji}$ is a surjective homomorphism and \emph{a fortiori} a local homomorphism; thus $v_{ij}=(1_\fk{X},u_{ji})$ is a morphism of preschemes $X_j\to X_i$ ($i\geq j$) \sref{1.2.2.1}.
 Suppose first that each $X_i$ is an affine scheme woth ring $A_i$.
 There exists a \emph{ring} homomorphism $\vphi_{ji}:A_i\to A_j$ such that $u_{ji}=\wt{\vphi_{ji}}$ \sref{1.1.7.3}; as a result \sref{1.1.6.3}, the sheaf $\OO_j$ is a quasi-coherent $\OO_i$-module over $X_i$ (for the external law defined by $u_{ji}$), associated to $A_j$ considered as an $A_i$-module $\vphi_{ji}$.
 For all $f\in A_i$, let $f'=\vphi_{ji}(f)$; by hypothesis, the open sets $D(f)$ and $D(f')$ are identical in $\fk{X}$, and the homomorphism from $\Gamma(D(f),\OO_i)=(A_i)_f$ to $\Gamma(D(f),\OO_j)=(A_j)_{f'}$ corresponding to $u_{ji}$ is none other than $(\vphi_{ji})_f$ \sref{1.1.6.1}.
@@ -462,7 +462,7 @@ Then as $u_{ji}$ is surjective, we conclude that $\vphi_{ji}$ is also surjective
 In particular, we have $\sh{J}_i=\wt{\fk{J}_i}$, where $\fk{J}_i$ is the kernel of $\vphi_{0i}:A_i\to A_0$.
 The hypothesis (b) implies that $\sh{J}_i$ is \emph{nilpotent}: indeed, as $\fk{X}$ is quasi-compact, we can cover $\fk{X}$ by a finite number of open sets $U_k$ such that $(\sh{J}_i|U_k)^{n_k}=0$, and by setting $n$ to be the largest of the $n_k$, we have $\sh{J}_i^n=0$.
 We conclude that $\fk{J}_i$ is nilpotent \sref{1.1.3.13}.
-Then the ring $A=\varprojlim A_i$ is admissible \sref[0]{0.7.2.2}, the canonical homomorphism $\vphi_i:A\to A_i$ is surjective, and its kernel $\fk{J}^{(i)}$ is equal to the projective limit of the $\fk{J}_{ik}$ for $k\geqslant i$; the $\fk{J}^{(i)}$ form a fundamental system of neighborhoods of $0$ in $A$.
+Then the ring $A=\varprojlim A_i$ is admissible \sref[0]{0.7.2.2}, the canonical homomorphism $\vphi_i:A\to A_i$ is surjective, and its kernel $\fk{J}^{(i)}$ is equal to the projective limit of the $\fk{J}_{ik}$ for $k\geq i$; the $\fk{J}^{(i)}$ form a fundamental system of neighborhoods of $0$ in $A$.
 The assertions of Proposition \sref{1.10.6.3} follow in this case from \sref{1.10.1.1} and \sref{1.10.3.2}, $(\fk{X},\OO_\fk{X})$ being $\Spf(A)$.
 
 In this particular case, we note that if $f=(f_i)$ is an element of the projective limit $A=\varprojlim A_i$, then all the open sets $D(f_i)$ (affine open sets in $X_i$) identify with the open subset $\fk{D}(f)$ of $\fk{X}$, the prescheme induced on $\fk{D}(f)$ by $X_i$ thus identifying with the affine scheme $\Spec((A_i)_{f_i})$.
@@ -476,7 +476,7 @@ This being so, for each $U$ satsifying the preceding conditions, the study of th
 
 \begin{cor}[10.6.4]
 \label{1.10.6.4}
-Suppose that for $i\geqslant j$, the kernel of $u_{ji}$ is $\sh{J}_i^{j+1}$ and that $\sh{J}_1/\sh{J}_1^2$
+Suppose that for $i\geq j$, the kernel of $u_{ji}$ is $\sh{J}_i^{j+1}$ and that $\sh{J}_1/\sh{J}_1^2$
 \oldpage[I]{191}
 is of finite type over $\OO_0=\OO_1/\sh{J}_1$.
 Then $\fk{X}$ is an adic formal prescheme, and if $\sh{J}^{(n)}$ is the kernel of $\OO_\fk{X}\to\OO_n$, then we have $\sh{J}^{(n)}=\sh{J}^{n+1}$ and $\sh{J}/\sh{J}^2$ is isomorphic to $\sh{J}_1$.
@@ -506,9 +506,9 @@ As the $\sh{J}^n$ form a fundamental system of sheaves of ideals of definition f
 
 \begin{rmk}[10.6.6]
 \label{1.10.6.6}
-With the notations of Proposition \sref{1.10.6.3}, let $\sh{F}_i$ be an $\OO_i$-module, and suppose we are given, for $i\geqslant i$, a $v_{ij}$-morphism $\theta_{ji}:\sh{F}_i\to\sh{F}_j$, such that $\theta_{kj}\circ\theta_{ji}=\theta_{ki}$ for $k\leqslant j\leqslant i$.
+With the notations of Proposition \sref{1.10.6.3}, let $\sh{F}_i$ be an $\OO_i$-module, and suppose we are given, for $i\geq i$, a $v_{ij}$-morphism $\theta_{ji}:\sh{F}_i\to\sh{F}_j$, such that $\theta_{kj}\circ\theta_{ji}=\theta_{ki}$ for $k\leq j\leq i$.
 As the continuous underlying map of $v_{ij}$ is the identity, $\theta_{ji}$ is a homomorphism of sheaves of abelian groups on the space $\fk{X}$; in addition, if $\sh{F}$ is the projective limit of the projective system $(\sh{F}_i)$ of sheaves of abelian groups, the fact that the $\theta_{ji}$ are $v_{ij}$-morphism allows one to define on $\sh{F}$ an $\OO_\fk{X}$-module structure by passing to the projective limit; equipped with this structure, we say that $\sh{F}$ is the \emph{projective limit} (with respect to the $\theta_{ji}$) of the system of $\OO_i$-modules $(\sh{F}_i)$.
-In the particular case where $v_{ij}^*(\sh{F}_i)=\sh{F}_j$, and where $\theta_{ji}$ is the \emph{identity}, we say that $\sh{F}$ is the projective limit of a system $(\sh{F}_i)$ such that $v_{ij}^*(\sh{F}_i)=\sh{F}_j$ for $j\leqslant i$ (without mentioning the $\theta_{ji}$).
+In the particular case where $v_{ij}^*(\sh{F}_i)=\sh{F}_j$, and where $\theta_{ji}$ is the \emph{identity}, we say that $\sh{F}$ is the projective limit of a system $(\sh{F}_i)$ such that $v_{ij}^*(\sh{F}_i)=\sh{F}_j$ for $j\leq i$ (without mentioning the $\theta_{ji}$).
 \end{rmk}
 
 \begin{env}[10.6.7]
@@ -525,7 +525,7 @@ We then have for every integer $n>0$, $f^*(\sh{K}^n)\OO_\fk{X}=(f^*(\fk{K})\OO_\
   \tag{10.6.7.1}
 \]
 \oldpage[I]{192}
-are commutative for $m\leqslant n$; in other words, $(f_n)$ is an \emph{inductive system} of morphisms.
+are commutative for $m\leq n$; in other words, $(f_n)$ is an \emph{inductive system} of morphisms.
 \end{env}
 
 \begin{env}[10.6.8]
@@ -590,7 +590,7 @@ For each $\fk{S}$-morphism $u:\fk{X}\to\fk{Y}$, we have by definition that $f=g\
 and the corollary follows from Proposition \sref{1.10.6.9}.
 \end{proof}
 
-We note that for $m\leqslant n$, the data of a morphism $f_n:X_n\to Y_n$ determines a unique morphism $f_m:X_m\to Y_m$ making the diagram (10.6.7.1) commutative, as we immediately see that we can reduce to the affine case; we thus have defined a map $\vphi_{mn}:\Hom_{S_n}(X_n,Y_n)\to\Hom_{S_m}(X_m,Y_m)$ and the $\Hom_{S_n}(X_n,Y_n)$ form with the $\vphi_{mn}$ a \emph{projective system of sets}; Corollary \sref{1.10.6.11} says that there is a canonical bijection
+We note that for $m\leq n$, the data of a morphism $f_n:X_n\to Y_n$ determines a unique morphism $f_m:X_m\to Y_m$ making the diagram (10.6.7.1) commutative, as we immediately see that we can reduce to the affine case; we thus have defined a map $\vphi_{mn}:\Hom_{S_n}(X_n,Y_n)\to\Hom_{S_m}(X_m,Y_m)$ and the $\Hom_{S_n}(X_n,Y_n)$ form with the $\vphi_{mn}$ a \emph{projective system of sets}; Corollary \sref{1.10.6.11} says that there is a canonical bijection
 \[
   \Hom_\fk{S}(\fk{X},\fk{Y})\isoto\varprojlim_n\Hom_{S_n}(X_n,Y_n).
 \]
@@ -1057,7 +1057,7 @@ We conclude \sref{1.10.10.2} that the sequence $\OO_\fk{X}^m\xrightarrow{w^\Delt
 \begin{env}[10.10.4]
 \label{1.10.10.4}
 With the above notations, set $A_n=A/\fk{J}^{n+1}$, and let $S_n$ be the affine scheme $\Spec(A_n)=(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$, $\sh{J}=\fk{J}^\Delta$ being the sheaf of ideals of definition for $\OO_\fk{X}$ corresponding to the ideal $\fk{J}$.
-Let $u_{mn}$ be the morphism of preschemes $X_m\to X_n$ corresponding to the canonical homomorphism $A_n\to A_m$ for $m\leqslant n$; the formal scheme $\fk{X}$ is the inductive limit of the $X_n$ with respect to the $u_{mn}$ \sref{1.10.6.3}.
+Let $u_{mn}$ be the morphism of preschemes $X_m\to X_n$ corresponding to the canonical homomorphism $A_n\to A_m$ for $m\leq n$; the formal scheme $\fk{X}$ is the inductive limit of the $X_n$ with respect to the $u_{mn}$ \sref{1.10.6.3}.
 \end{env}
 
 \begin{prop}[10.10.5]
@@ -1074,16 +1074,16 @@ The following conditions are equivalent:
 \begin{proof}
 \label{proof-1.10.10.5}
 We first show that (b) implies (c).
-We have $\sh{F}_n=\wt{M_n}$, where $M_n$ is an $A_n$-module of finite type, and the hypotheses imply that $M_m=M_n\otimes_{A_n}A_m$ for $m\leqslant n$ \sref{1.1.6.5}; the $M_n$ thus form a projective system for the canonical di-homomorphisms $M_n\to M_m$ ($m\leqslant n$), and it follows immediately from the definition of the $A_n$ that this projective system satisfies the conditions of \sref[0]{0.7.2.9}; as a result, its projective limit $M$ is an $A$-module of finite type such that $M_n=M\otimes_A A_n$ for all $n$.
+We have $\sh{F}_n=\wt{M_n}$, where $M_n$ is an $A_n$-module of finite type, and the hypotheses imply that $M_m=M_n\otimes_{A_n}A_m$ for $m\leq n$ \sref{1.1.6.5}; the $M_n$ thus form a projective system for the canonical di-homomorphisms $M_n\to M_m$ ($m\leq n$), and it follows immediately from the definition of the $A_n$ that this projective system satisfies the conditions of \sref[0]{0.7.2.9}; as a result, its projective limit $M$ is an $A$-module of finite type such that $M_n=M\otimes_A A_n$ for all $n$.
 We deduce that $\sh{F}_n$ is induced over $X_n$ by $\wt{M}\otimes_{\OO_X}(\OO_X/\wt{\fk{J}}^{n+1})$, so $\sh{F}=M^\Delta$ by Definition \sref{1.10.8.4}.
 
-Conversely, (c) implies (b); indeed, if $u_n$ is the immersion morphism $X_n\to X$, then $u_n^*(\wt{M})=(M\otimes_A A_n)^\sim$ is induced over $X_n$ by $\wt{M}\otimes_{\OO_X}(\OO_X/\wt{\fk{J}}^{n+1})$, and $M^\Delta=\varprojlim u_n^*(\wt{M})$ by Definition \sref{1.10.8.4}; as $u_m=u_n\circ u_{mn}$ for $m\leqslant n$, the $\sh{F}_n=u_n^*(\wt{M})$ satisfy the conditions of (b), hence our assertion.
+Conversely, (c) implies (b); indeed, if $u_n$ is the immersion morphism $X_n\to X$, then $u_n^*(\wt{M})=(M\otimes_A A_n)^\sim$ is induced over $X_n$ by $\wt{M}\otimes_{\OO_X}(\OO_X/\wt{\fk{J}}^{n+1})$, and $M^\Delta=\varprojlim u_n^*(\wt{M})$ by Definition \sref{1.10.8.4}; as $u_m=u_n\circ u_{mn}$ for $m\leq n$, the $\sh{F}_n=u_n^*(\wt{M})$ satisfy the conditions of (b), hence our assertion.
 
 We now show that (c) implies (a): indeed, we have by definition that $\OO_\fk{X}=A^\Delta$; as $M$ is the cokernel of a homomorphism $A^m\to A^n$, it follows from Proposition \sref{1.10.10.2} that $M^\Delta$ is the cokernel of a homomorphism $\OO_\fk{X}^m\to\OO_\fk{X}^n$, and as the sheaf of rings $\OO_\fk{X}$ is coherent \sref{1.10.10.3}, so is $M^\Delta$ \sref[0]{0.5.3.4}.
 
 \oldpage[I]{203}
 Finally, (a) implies (b).
-Considered as an $\OO_\fk{X}$-module, we have that $\OO_{X_n}=\OO_\fk{X}/\sh{J}^{n+1}=A_n^\Delta$; $\sh{F}_n=\sh{F}\otimes_{\OO_\fk{X}}\OO_{X_n}$ is a coherent $\OO_\fk{X}$-module \sref[0]{0.5.3.5}, and as it is also an $\OO_{X_n}$-modules and $\sh{J}^{n+1}$ is coherent, we conclude that $\sh{F}_n$ is a coherent $\OO_{X_n}$-module \sref[0]{0.5.3.10}, and it is imediate that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leqslant n$ (recalling that the continuous map $X_m\to X_n$ of the underlying spaces in the identity on $\fk{X}$).
+Considered as an $\OO_\fk{X}$-module, we have that $\OO_{X_n}=\OO_\fk{X}/\sh{J}^{n+1}=A_n^\Delta$; $\sh{F}_n=\sh{F}\otimes_{\OO_\fk{X}}\OO_{X_n}$ is a coherent $\OO_\fk{X}$-module \sref[0]{0.5.3.5}, and as it is also an $\OO_{X_n}$-modules and $\sh{J}^{n+1}$ is coherent, we conclude that $\sh{F}_n$ is a coherent $\OO_{X_n}$-module \sref[0]{0.5.3.10}, and it is imediate that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leq n$ (recalling that the continuous map $X_m\to X_n$ of the underlying spaces in the identity on $\fk{X}$).
 The sheaf $\sh{G}=\varprojlim\sh{F}_n$ is thus a coherent $\OO_\fk{X}$-module, since we have seen that (b) implies (a). The canonical homomorphisms $\sh{F}\to\sh{F}_n$ form a projective system, which by passing to the limit gives a canonical homomorphism $w:\sh{F}\to\sh{G}$, and it remains to prove that $w$ is bijective.
 The question is now \emph{local}, so we can reduce to the case where $\sh{F}$ is the cokernel of a homomorphism $\OO_\fk{X}^p\to\OO_\fk{X}^q$; as this homomorphism is of the form $v^\Delta$, where $v$ is a homomorphism $A^m\to A^n$ \sref{1.10.10.2}, $\sh{F}$ is isomorphic to $M^\Delta$, where $M=\Coker{v}$ \sref{1.10.10.2}.
 We then have by Proposition \sref{1.10.10.2} that $\sh{F}_n=M^\Delta\otimes_{\OO_\fk{X}}A_n^\Delta=(M\otimes_A A_n)^\Delta$, and as the $\fk{J}$-adic topology on $M\otimes_A A_n$ is discrete, we have $(M\otimes_A A_n)^\Delta=(M\otimes_A A_n)^\sim$ (as an $\OO_{X_n}$-module); we have seen above that $M^\Delta=\varprojlim\sh{F}_n$, and $w$ is thus the identity in this case.
@@ -1151,7 +1151,7 @@ With these notations:
 
 \begin{thm}[10.11.3]
 \label{1.10.11.3}
-For an $\OO_\fk{X}$-module $\sh{F}$ to be coherent, it is necessary and sufficient for it to be isomorphic to a projective limit of a sequence $(\sh{F}_n)$, where $\sh{F}_n$ is a coherent $\OO_{X_n}$-module such that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leqslant n$ \sref{1.10.6.6}.
+For an $\OO_\fk{X}$-module $\sh{F}$ to be coherent, it is necessary and sufficient for it to be isomorphic to a projective limit of a sequence $(\sh{F}_n)$, where $\sh{F}_n$ is a coherent $\OO_{X_n}$-module such that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leq n$ \sref{1.10.6.6}.
 The projective system $(\sh{F}_n)$ is then isomorphic to the system of the $u_n^*(\sh{F})=\sh{F}\otimes_{\OO_\fk{X}}\OO_{X_n}$, where $u_n$ is the canonical morphism $X_n\to\fk{X}$.
 \end{thm}
 
@@ -1160,7 +1160,7 @@ The projective system $(\sh{F}_n)$ is then isomorphic to the system of the $u_n^
 The question is local, so we can reduce to the case where $\fk{X}$ is a Noetherian affine formal scheme, and the theorem then is a consequence of Proposition \sref{1.10.10.5} and Corollary \sref{1.10.10.6}.
 \end{proof}
 
-We can thus say that \emph{the data of a coherent $\OO_\fk{X}$-module is equivalent to the data of a projective system $(\sh{F}_n)$ of coherent $\OO_{X_n}$-modules such that $u_{mn}(\sh{F}_n)=\sh{F}_m$ for $m\leqslant n$}.
+We can thus say that \emph{the data of a coherent $\OO_\fk{X}$-module is equivalent to the data of a projective system $(\sh{F}_n)$ of coherent $\OO_{X_n}$-modules such that $u_{mn}(\sh{F}_n)=\sh{F}_m$ for $m\leq n$}.
 
 \begin{cor}[10.11.4]
 \label{1.10.11.4}
@@ -1173,7 +1173,7 @@ If $\sh{F}$ and $\sh{G}$ are two coherent $\OO_\fk{X}$-modules, then we can (wit
 
 \begin{proof}
 \label{proof-1.10.11.4}
-The projective limit in the right hand side is understood to be with respect to the maps $\theta_n\mapsto u_{mn}^*(\theta_n)$ ($m\leqslant n$) from $\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ to $\Hom_{\OO_{X_m}}(\sh{F}_m,\sh{F}_m)$.
+The projective limit in the right hand side is understood to be with respect to the maps $\theta_n\mapsto u_{mn}^*(\theta_n)$ ($m\leq n$) from $\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ to $\Hom_{\OO_{X_m}}(\sh{F}_m,\sh{F}_m)$.
 The homomorphism (10.11.4.1) sends an element $\theta\in\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})$ to the sequence $(u_n^*(\theta))$; we see that we have defined an inverse homomorphism of the above by sending a projective system $(\theta_n)\in\varprojlim_n\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ to its projective limit in $\Hom_{\OO_\fk{X}}(\sh{F},\sh{G})$, taking into account Theorem \sref{1.10.11.3}.
 \end{proof}
 
@@ -1263,7 +1263,7 @@ indeed, if $f:\fk{X}\to\fk{S}$ and $g:\fk{Y}\to\fk{S}$ are the structure morphis
 In what follows, we suppose that we have some fixed locally Noetherian formal prescheme $\fk{S}$, and some ideal of definition $\sh{J}$ of $\fk{S}$;
 we set $S_n=(\fk{S},\OO_\fk{S}/\sh{J}^{n+1})$.
 The (locally Noetherian) adic $\fk{S}$-preschemes clearly form a \emph{category}.
-We say that an inductive system $(X_n)$ of locally Noetherian (usual) $S_n$-preschemes is an \emph{adic inductive $(S_n)$-system} if the structure morphisms $f_n:X_n\to S_n$ are such that, for $m\leqslant n$, the diagrams
+We say that an inductive system $(X_n)$ of locally Noetherian (usual) $S_n$-preschemes is an \emph{adic inductive $(S_n)$-system} if the structure morphisms $f_n:X_n\to S_n$ are such that, for $m\leq n$, the diagrams
 \[
   \xymatrix{
     X_n \ar[d]_{f_n}
@@ -1274,7 +1274,7 @@ We say that an inductive system $(X_n)$ of locally Noetherian (usual) $S_n$-pres
 \]
 commute and \emph{identify $X_m$ with the product $X_n\times_{S_n}S_m=(X_n)_{(S_n)}$}.
 The adic inductive systems form a \emph{category}:
-it suffices in fact to define a morphism $(X_n)\to(Y_n)$ of such systems to be an \emph{inductive system of $S_n$-morphisms $u_n:X_n\to Y_n$} such that $u_m$ is identified with $(u_n)_{(S_m)}$ for $m\leqslant n$.
+it suffices in fact to define a morphism $(X_n)\to(Y_n)$ of such systems to be an \emph{inductive system of $S_n$-morphisms $u_n:X_n\to Y_n$} such that $u_m$ is identified with $(u_n)_{(S_m)}$ for $m\leq n$.
 With this in mind:
 \end{env}
 
@@ -1286,18 +1286,18 @@ There is a canonical equivalence between the category of adic $\fk{S}$-prescheme
 The equivalence in question is obtained in the following way:
 if $\fk{X}$ is an adic $\fk{S}$-prescheme, and $f:\fk{X}\to\fk{S}$ is the structure morphism, then $\sh{K}=f^*(\sh{J})\OO_\fk{X}$ is an ideal of definition of $\fk{X}$, and we associate to $\fk{X}$ the inductive system of the $X_n=(\fk{X},\OO_\fk{X}/\sh{K}^{n+1})$, with the stucure morphism $f_n:X_n\to S_n$ corresponding to $f$ \sref{1.10.5.6}.
 We first show that $(X_n)$ is an \emph{adic inductive system}:
-if $f=(\psi,\theta)$, we have $\psi^*(\sh{J})\OO_\fk{X}=\sh{K}$, so $\psi^*(\sh{J}^n)\OO_\fk{X}=\sh{K}^n$ for all $n$, and (by exactness of the functor $\psi^*$) $\sh{K}^{m+1}/\sh{K}^{n+1}=\psi^*(\sh{J}^{m+1}/\sh{J}^{n+1})(\OO_\fk{X}/\sh{K}^{n+1})$ for $m\leqslant n$;
+if $f=(\psi,\theta)$, we have $\psi^*(\sh{J})\OO_\fk{X}=\sh{K}$, so $\psi^*(\sh{J}^n)\OO_\fk{X}=\sh{K}^n$ for all $n$, and (by exactness of the functor $\psi^*$) $\sh{K}^{m+1}/\sh{K}^{n+1}=\psi^*(\sh{J}^{m+1}/\sh{J}^{n+1})(\OO_\fk{X}/\sh{K}^{n+1})$ for $m\leq n$;
 our conclusion thus follows from \sref{1.4.4.5}.
 Furthermore, it can be immediately verified that a $\fk{S}$-morphism $u:\fk{X}\to\fk{Y}$ of adic $\fk{S}$-preschemes corresponds (with the obvious notation)
 \oldpage[I]{207}
-to an inductive system of $S_n$-morphisms $u_n:X_n\to Y_n$ such that $u_m$ is identified with $(u_n)_{(S_m)}$ for $m\leqslant n$.
+to an inductive system of $S_n$-morphisms $u_n:X_n\to Y_n$ such that $u_m$ is identified with $(u_n)_{(S_m)}$ for $m\leq n$.
 
 The fact that this equivalence is well defined will follow from the more-precise following proposition.
 
 \begin{prop}[10.12.3.1]
 \label{1.10.12.3.1}
 Let $(X_n)$ be an inductive system of $S_n$-preschemes;
-suppose that the structure morphisms $f_n:X_n\to S_n$ are such that the diagrams in \hyperref[1.10.12.2]{(10.12.2.1)} commute and identify $X_m$ with $X_n\times_{S_n}S_m$ for $m\leqslant n$.
+suppose that the structure morphisms $f_n:X_n\to S_n$ are such that the diagrams in \hyperref[1.10.12.2]{(10.12.2.1)} commute and identify $X_m$ with $X_n\times_{S_n}S_m$ for $m\leq n$.
 Then the inductive system $(X_n)$ satisfies conditions \emph{(b)} and \emph{(c)} of \sref{1.10.6.3};
 let $\fk{X}$ be the inductive limit, and $f:\fk{X}\to\fk{S}$ the morphism given by the inductive limit of the inductive system $(f_n)$.
 Then, if $X_0$ is locally Noetherian, $\fk{X}$ is locally Noetherian, and $f$ is an adic morphism.
@@ -1308,7 +1308,7 @@ Then, if $X_0$ is locally Noetherian, $\fk{X}$ is locally Noetherian, and $f$ is
 Since the sheaf of ideals of $\OO_{S_n}$ that defines the subprescheme $S_m$ of $S_n$ is nilpotent, by \sref{1.4.4.5} so is the sheaf of ideals of $\OO_{X_n}$ that defines the subprescheme $X_m$ of $X_n$, so the conditions of \sref{1.10.6.3} are satisfied.
 The question being local on $\fk{X}$ and $\fk{S}$, we can assume that $\fk{S}=\Spf(A)$, $\sh{J}=\fk{J}^\Delta$ (with $A$ a Noetherian $\fk{J}$-adic ring), and $X_n=\Spec(B_n)$;
 if $A_n=A/\fk{J}^{n+1}$, then the hypothesis implies that $B_0$ is Noetherian, and if we set $\fk{J}_n=\fk{J}/\fk{J}^{n+1}$, then $B_m=B_n/\fk{J}_n^{m+1}B_n$.
-The kernel of $B_n\to B_0$ is thus $\fk{K}_n=\fk{J}_nB_n$, and the kernel of $B_n\to B_m$ is $\fk{K}_n^{m+1}$ for $m\leqslant n$;
+The kernel of $B_n\to B_0$ is thus $\fk{K}_n=\fk{J}_nB_n$, and the kernel of $B_n\to B_m$ is $\fk{K}_n^{m+1}$ for $m\leq n$;
 further, since $A_1$ is Noetherian, $\fk{J}_1$ is of finite type over $A_1$, and so $\fk{K}_1=\fk{K}_1/\fk{K}_1^2$ is of finite type over $B_1$, and \emph{a fortiori} of finite type over $B_0=B_1/\fk{K}_1$;
 the fact that $\fk{X}$ is Noetherian then follows from \sref{1.10.6.4};
 if $B=\varprojlim B_n$, then we have $\fk{X}=\Spf(B)$, and if $\fk{K}$ is the kernel of $B\to B_0$, then $B_n=B/\fk{K}^{n+1}$.
@@ -1326,7 +1326,7 @@ The above equivalence gives, for adic $\fk{S}$-preschemes $\fk{X}$ and $\fk{Y}$,
 \[
   \Hom_\fk{S}(\fk{X},\fk{Y})\isoto\varprojlim_n\Hom_{S_n}(X_n,Y_n)
 \]
-where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\leqslant n$.
+where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\leq n$.
 \end{env}
 
 \subsection{Morphisms of finite type}
@@ -1353,7 +1353,7 @@ It is immediate that (a) implies (b) by \sref{1.10.12.3}.
 To show that (b) implies (c), we can, since the question is local on $\fk{Y}$, assume that $\fk{Y}=\Spf(B)$, where $B$ is Noetherian and adic;
 let $\sh{K}=\fk{K}^\Delta$, with $\fk{K}$ an ideal of definition of $B$.
 Since, by hypothesis, $X_0$ is of finite type over $Y_0$, $X_0$ is a finite union of affine open subsets $U_i$ such that the ring $A_{i0}$ of the affine scheme induced by $X_0$ on $U_i$ is an algebra of finite type over the ring $B/\fk{K}$ of $Y_0$ \sref{1.6.3.2}.
-By \sref{1.5.1.9}, $U_i$ is also an affine open subset in each of the Noetherian preschemes $X_n$, and if $A_{in}$ is the ring of the affine scheme induced by $X_n$ on $U_i$, then hypothesis (b) implies that, for $m\leqslant n$, $A_{im}$ is isomorphic to $A_{in}/\fk{K}^{m+1}A_{in}$.
+By \sref{1.5.1.9}, $U_i$ is also an affine open subset in each of the Noetherian preschemes $X_n$, and if $A_{in}$ is the ring of the affine scheme induced by $X_n$ on $U_i$, then hypothesis (b) implies that, for $m\leq n$, $A_{im}$ is isomorphic to $A_{in}/\fk{K}^{m+1}A_{in}$.
 Consequently, the formal prescheme induced by $\fk{X}$ on $U_i$ is isomorphic to $\Spf(A_i)$, where $A_i=\varprojlim_n A_{in}$ \sref{1.10.6.4};
 $A_i$ is a $\fk{K}A_i$-adic ring, and $A_i/\fk{K}A_i$, isomorphic to $A_{i0}$, is an algebra of finite type over $B/\fk{K}$.
 We thus conclude \sref[0]{0.7.5.5} that $A_i$ is topologically isomorphic to a quotient of a formal series algebra restricted to $B$ (by a necessarily-closed ideal, because such an algebra is Noetherian \sref[0]{0.7.5.4}).
@@ -1413,7 +1413,7 @@ Let $X_0=(\fk{X},\OO_\fk{X}/\sh{J})$, $Y_0=(\fk{Y},\OO_\fk{Y}/\sh{K})$, and $Z_0
 Since, by hypothesis, $f_0$ and $g_0$ are of finite type, so is $g_0\circ f_0$ \sref{1.6.3.4}, which corresponds to $g\circ f$;
 thus $g\circ f$ is of finite type, by \sref{1.10.13.1}.
 
-Under the conditions of (ii), $\fk{S}$ (resp. $\fk{X}$, $\fk{S}'$) is the inductive limit of a sequence $(S_n)$ (resp. $(X_n)$, $(S'_n)$) of locally Noetherian preschemes, and we can assume \sref{1.10.13.1} that $X_m=X_n\times_{S_n}S_m$ for $m\leqslant n$.
+Under the conditions of (ii), $\fk{S}$ (resp. $\fk{X}$, $\fk{S}'$) is the inductive limit of a sequence $(S_n)$ (resp. $(X_n)$, $(S'_n)$) of locally Noetherian preschemes, and we can assume \sref{1.10.13.1} that $X_m=X_n\times_{S_n}S_m$ for $m\leq n$.
 The formal prescheme $\fk{X}\times_\fk{S}\fk{S}'$ is then the inductive limit of the preschemes $X_n\times_{S_n}S'_n$ \sref{1.10.7.4}, and we have
 \[
     X_m\times_{S_m}S'_m = (X_n\times_{S_n}S_m)\times_{S_m}S'_m = (X_n\times_{S_n}S'_n)\times_{S'_n}S'_m.

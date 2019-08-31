@@ -108,7 +108,7 @@ Then there exists a neighbourhood $V$ of $x$ such that every open neighbourhood 
 
 \begin{proof}
 \label{proof-1.6.1.8}
-Let $U_i$ ($1\leqslant i\leqslant m$) be the irreducible components of $U$ not containing $x$;
+Let $U_i$ ($1\leq i\leq m$) be the irreducible components of $U$ not containing $x$;
 the complement (in $U$) of the union of the $U_i$ is an open neighbourhood $V$ of $X$ inside $U$, and thus so too in $X$;
 it is also, incidentally, the complement (in $X$) of the union of the irreducible components of $X$ that do not contain $x$ \sref[0]{0.2.1.6}.
 So let $W$ be an open neighbourhood of $X$ contained in $V$.
@@ -277,13 +277,13 @@ by \sref{1.6.3.2}, there exists a finite affine open cover $(V_i)$ of $X$ such t
 Further, since the $V_i$ are quasi-compact, we can cover each of them with a finite number of open subsets of the form $D(g_{ij})\subset V_i$, where $g_{ij}\in B$;
 if $\vphi_i$ is a homomorphism $B\to A(V_i)$ that corresponds to the canonical injection $V_i\to X$, then we have $B_{g_{ij}}=(A(V_i))_{\vphi_i(g_{ij})}=A(V_i)[1/\vphi_i(g_{ij})]$, so $B_{g_{ij}}$ is an $A$-algebra of finite type.
 We can thus restrict to the case where $V_i=D(g_i)$ with $g_i\in B$.
-By hypothesis, there exists a finite subset $F_i$ of $B$ and an integer $n_i\geqslant0$ such that $B_{g_i}$ is the algebra generated over $A$ by the elements $b_i/g_i^{n_i}$, where the $b_i$ run over all of $F_i$.
+By hypothesis, there exists a finite subset $F_i$ of $B$ and an integer $n_i\geq0$ such that $B_{g_i}$ is the algebra generated over $A$ by the elements $b_i/g_i^{n_i}$, where the $b_i$ run over all of $F_i$.
 Since there are only finitely many of the $g_i$, we can assume that all the $n_i$ are equal to the same integer $n$.
 Further, since the $D(g_i)$ form a cover of $X$, the ideal generated in $B$ by the $g_i$ is equal to $B$, or, in other words, there exist $h_i\in B$ such that $\sum_i h_ig_i=1$.
 So let $F$ be the finite subset of $B$ given by the union of the $F_i$, the set of the $g_i$, and the set of the $h_i$; we will show that the subring $B'=A[F]$ of $B$ is equal to $B$.
 By hypothesis, for every $b\in B$ and every $i$, the canonical image of $b$ in $B_{g_i}$ is of the form $b'_i/g_i^{m_i}$, where $b'_i\in B'$;
 by multiplying the $b'_i$ by suitable powers of the $g_i$, we can again assume that all the $m_i$ are equal to the same integer $m$.
-By the definition of the ring of fractions, there is thus an integer $N$ (dependant on $b$) such that $N\geqslant m$ and $g_i^Nb\in B'$ for all $i$;
+By the definition of the ring of fractions, there is thus an integer $N$ (dependant on $b$) such that $N\geq m$ and $g_i^Nb\in B'$ for all $i$;
 but, \emph{in the ring $B'$}, the $g_i^N$ generate the ideal $B'$, because the $g_i$ do (and the $h_i$ belong to $B'$);
 there are thus $c_i\in B'$ such that $\sum_i c_ig_i^N=1$, whence $b=\sum_ic_ig_i^Nb\in B'$, Q.E.D.
 \end{proof}
@@ -613,23 +613,23 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
 \begin{enumerate}[label=(\roman*)]
     \item Since the question is local on $S$, $X$, and $Y$, we can assume that $S$, $X$, and $Y$ are affine, given by rings $A$, $B$, and $C$ (respectively), and with $f$ and $f'$ of the form $({}^a\vphi,\wt{\vphi})$ and $({}^a\vphi',\wt{\vphi}')$ (respectively), where $\vphi$ and $\vphi'$ are $A$-homomorphisms from $C$ to $B$ such that $\vphi^{-1}(\fk{j}_x)=\vphi'^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphisms $\vphi_x$ and $\vphi'_x$ from $C_y$ to $B_x$, induced by $\vphi$ and $\vphi'$, are identical;
         we can further suppose that $C$ is an $A$-algebra \emph{of finite type}.
-        Let $c_i$ ($1\leqslant i\leqslant n$) be the generators of the $A$-algebra $C$, and set $b_i=\vphi(c_i)$ and $b'_i=\vphi'(c_i)$;
-        by hypothesis, we have $b_i/1=b'_i/1$ in the ring of fractions $B_x$ ($1\leqslant i\leqslant n$).
-        This implies that there exist elements $s_i\in B\setminus\fk{j}_x$ such that $s_i(b_i-b'_i)=0$ for $1\leqslant i\leqslant n$, and we can clearly assume that all the $s_i$ are equal to a single element $g\in B\setminus\fk{j}_x$.
-        From this, we conclude that we have $b_i/1=b'_i/1$ for $1\leqslant i\leqslant n$ in the ring of fractions $B_g$;
+        Let $c_i$ ($1\leq i\leq n$) be the generators of the $A$-algebra $C$, and set $b_i=\vphi(c_i)$ and $b'_i=\vphi'(c_i)$;
+        by hypothesis, we have $b_i/1=b'_i/1$ in the ring of fractions $B_x$ ($1\leq i\leq n$).
+        This implies that there exist elements $s_i\in B\setmin\fk{j}_x$ such that $s_i(b_i-b'_i)=0$ for $1\leq i\leq n$, and we can clearly assume that all the $s_i$ are equal to a single element $g\in B\setmin\fk{j}_x$.
+        From this, we conclude that we have $b_i/1=b'_i/1$ for $1\leq i\leq n$ in the ring of fractions $B_g$;
         if $i_g$ is the canonical homomorphism $B\to B_g$, we then have $i_g\circ\vphi=i_g\circ\vphi'$;
         so the restrictions of $f$ and $f'$ to $D(g)$ are identical.
     \item We can restrict to the situation as in (i), and further assume that the ring $A$ is Noetherian.
-        Let $c_i$ ($1\leqslant i\leqslant n$) be the generators of the $A$-algebra $C$, and let $\alpha:A[X_1,\ldots,X_n]\to C$ be the homomorphism of polynomial algebras that sends $X_i$ to $c_i$ for $1\leqslant i\leqslant n$.
+        Let $c_i$ ($1\leq i\leq n$) be the generators of the $A$-algebra $C$, and let $\alpha:A[X_1,\ldots,X_n]\to C$ be the homomorphism of polynomial algebras that sends $X_i$ to $c_i$ for $1\leq i\leq n$.
         Also let $i_y$ be the canonical homomorphism $C\to C_y$, and consider the composite homomorphism
         \[
             \beta:A[X_1,\ldots,X_n] \xrightarrow{\alpha} C \xrightarrow{i_y} C_y \xrightarrow{\vphi} B_x.
         \]
         We denote by $\fk{a}$ the kernel of $\beta$;
-        since $A$ is Noetherian, so too is $A[X_1,\ldots,X_n]$, and so $\fk{a}$ admits a finite system of generators $Q_j(X_1,\ldots,X_n)$ ($1\leqslant j\leqslant m$).
+        since $A$ is Noetherian, so too is $A[X_1,\ldots,X_n]$, and so $\fk{a}$ admits a finite system of generators $Q_j(X_1,\ldots,X_n)$ ($1\leq j\leq m$).
         Furthermore, each of the elements $\vphi(i_y(c_i))$ can be written in the form $b_i/s_i$, where $b_i\in B$ and $s_i\not\in\fk{j}_x$;
         \oldpage[I]{151}
-        we can further assume that all of the $s_i$ are equal to a single element $g\in B\setminus\fk{j}_x$.
+        we can further assume that all of the $s_i$ are equal to a single element $g\in B\setmin\fk{j}_x$.
         With this, by hypothesis, we have $Q_j(b_1/g,\ldots,b_n/g)=0$ in $B_x$;
         set
         \[
@@ -637,9 +637,9 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
         \]
         where $P_j$ is homogeneous of degree $k_j$.
         Then let $d_j=P_j(b_1,\ldots,b_n,g)\in B$.
-        By hypothesis, we have $t_jd_j=0$ for some $t_j\in B\setminus\fk{j}_x$ ($1\leqslant j\leqslant m$), and we can clearly assume that all the $t_j$ are equal to a single element $h\in B\setminus\fk{j}_x$;
-        from this we conclude that $P_j(hb_1,\ldots,hb_n,hg)=0$ for $1\leqslant j\leqslant m$.
-        With this, consider the homomorphism $\rho$ from $A[X_1,\ldots,X_n]$ to the ring of fractions $B_{hg}$ which sends $X_i$ to $hb_i/hg$ ($1\leqslant i\leqslant n$);
+        By hypothesis, we have $t_jd_j=0$ for some $t_j\in B\setmin\fk{j}_x$ ($1\leq j\leq m$), and we can clearly assume that all the $t_j$ are equal to a single element $h\in B\setmin\fk{j}_x$;
+        from this we conclude that $P_j(hb_1,\ldots,hb_n,hg)=0$ for $1\leq j\leq m$.
+        With this, consider the homomorphism $\rho$ from $A[X_1,\ldots,X_n]$ to the ring of fractions $B_{hg}$ which sends $X_i$ to $hb_i/hg$ ($1\leq i\leq n$);
         the image of $\fk{a}$ under this homomorphism is $0$, and is \emph{a fortiori} the same as the image of the kernel $\alpha^{-1}(0)$ under $\rho$.
         So $\rho$ factors as $A[X_1,\ldots,X_n]\xrightarrow{\alpha}C\xrightarrow{\gamma}B_{hg}$, with $\gamma(c_i)=hb_i/hg$, and it is clear that, if $i_x$ is the canonical homomorphism $B_{hg}\to B_x$, then the diagram
         \[
@@ -696,9 +696,9 @@ Let $f=(\psi,\theta):X\to Y$ be a morphism of finite type, $x$ a point of $X$, a
     \item[(i)] Since the question is local on $X$ and $Y$, we can assume that $X$ and $Y$ are affine, given by rings $A$ and $B$ (respectively);
     we have $f=({}^a\vphi,\wt{\vphi})$, where $\vphi$ is a homomorphism of rings $B\to A$ that makes $A$ a $B$-algebra of finite type;
     we have $\vphi^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphism $\vphi_x:B_y\to A_x$ induced by $\vphi$ is \emph{surjective}.
-    Let $(t_i)$ ($1\leqslant i\leqslant n$) be a system of generators of the $B$-algebra $A$;
-    the hypothesis on $\vphi_x$ implies that there exist $b_i\in B$ and some $c\in B\setminus\fk{j}_x$ such that, in the ring of fractions $A_x$, we have $t_i/1=\vphi(b_i)/\vphi(c)$ for $1\leqslant i\leqslant n$.
-    Then \sref{1.1.3.3} there exists some $a\in A\setminus\fk{j}_x$ such that, if we let $g=a\vphi(c)$, we also have $t_i/1=a\vphi(b_i)/g$ \emph{in the ring of fractions $A_g$}.
+    Let $(t_i)$ ($1\leq i\leq n$) be a system of generators of the $B$-algebra $A$;
+    the hypothesis on $\vphi_x$ implies that there exist $b_i\in B$ and some $c\in B\setmin\fk{j}_x$ such that, in the ring of fractions $A_x$, we have $t_i/1=\vphi(b_i)/\vphi(c)$ for $1\leq i\leq n$.
+    Then \sref{1.1.3.3} there exists some $a\in A\setmin\fk{j}_x$ such that, if we let $g=a\vphi(c)$, we also have $t_i/1=a\vphi(b_i)/g$ \emph{in the ring of fractions $A_g$}.
     With this, there exists, by hypothesis, a polynomial $Q(X_1,\ldots,X_n)$, with coefficients in the ring $\vphi(B)$, such that $a=Q(t_1,\ldots,t_n)$;
     \oldpage[I]{152}
     let $Q(X_1/T,\ldots,X_n/T)=P(X_1,\ldots,X_n,T)/T^m$, where $P$ is homogeneous of degree $m$.
