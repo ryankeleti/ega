@@ -343,7 +343,7 @@ If $\sh{E}$ is a quasi-coherent $\OO_Y$-module of finite type, then $\sh{E}$ is 
 \begin{proof}
 \label{proof-2.5.3.4}
 (i) follows from \sref{2.5.1.6} and \sref{2.5.1.10}[i].
-The other claims are immediate consequences of definition~\sref{2.5.3.1},  of the properties of morphisms of finite type \sref[I]{1.6.3.4}, and of \sref{2.4.6.13}.
+The other claims are immediate consequences of Definition~\sref{2.5.3.1},  of the properties of morphisms of finite type \sref[I]{1.6.3.4}, and of \sref{2.4.6.13}.
 \end{proof}
 
 \begin{rmk}[5.3.5]
@@ -363,3 +363,54 @@ This follows from \sref{2.4.6.18}.
 
 \subsection{Proper morphisms and universally closed morphisms}
 \label{subsection:proper-morphisms-and-universally-closed-morphisms}
+
+\begin{defn}[5.4.1]
+\label{2.5.4.1}
+We say that a morphism of preschemes $f:X\to Y$ is proper if it satisfies the following two conditions:
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $f$ is separated and of finite type; and
+    \item for every prescheme $Y'$ and every morphism $Y'\to Y$, the projection $f_{(Y')}:X\times_Y Y'\to Y'$ is a closed morphism \sref[I]{1.2.2.6}.
+\end{enumerate}
+
+When this is the case, we also say that $X$ (considered as a $Y$-prescheme with structure morphism $f$) is proper over $Y$.
+\end{defn}
+
+It is immediate that conditions~\emph{(a)} and \emph{(b)} are \emph{local} on $Y$.
+To show that the image of a closed subset $Z$ of $X\times_Y Y'$ under the projection $q:X\times_Y Y'\to Y'$ is closed in $Y$, it suffices to see that $q(Z)\cap U'$ is closed in $U'$ for every affine open subset $U'$ of $Y'$;
+since $q(Z)\cap U'=q(Z\cap q^{-1}(U'))$, and since $q^{-1}(U')$ can be identified with $X\times_Y U'$ \sref[I]{1.4.4.1}, we see that to satisfy condition \emph{(b)} of Definition~\sref{2.5.4.1}, we can restrict to the case where $Y$ is an \emph{affine} scheme.
+We further see \sref{2.5.3.6} that, if $Y$ is locally Noetherian, then we can even restrict to proving \emph{(b)} in the case where $Y'$ is of finite type over $Y$.
+
+It is clear that every proper morphism is \emph{closed}.
+
+\begin{prop}[5.4.2]
+\label{2.5.4.2}
+\medskip\noindent
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item A closed immersion is a proper morphism.
+    \item The composition of two proper morphisms is proper.
+    \item If $X$ and $Y$ are $S$-preschemes, and $f:X\to Y$ a proper $S$-morphism, then $f_{(S')}:X_{(S')}\to Y_{(S')}$ is proper for every extension $S'\to S$ of the base prescheme.
+    \item If $f:X\to Y$ and $g:X'\to Y'$ are proper $S$-morphisms, then $f\times_S g:X\times_S Y\to X'\times_S Y'$ is a proper $S$-morphism.
+\end{enumerate}
+\end{prop}
+
+\oldpage[II]{101}
+\begin{proof}
+\label{proof-2.5.4.2}
+It suffices to prove (i), (ii), and (iii) \sref[I]{1.3.5.1}.
+In each of the three cases, verifying condition~\emph{(a)} of \sref{2.5.4.1} follows from previous results (\sref[I]{1.5.5.1} and \sref{2.6.4.3});
+it remains to verify condition~\emph{(b)}.
+It is immediate in case (i), because if $X\to Y$ is a closed immersion, then so too is $X\times_Y Y'\to Y\times_Y Y'=Y'$ (\sref[I]{1.4.3.2} and \sref{2.3.3.3}).
+To prove (ii), consider two proper morphisms $X\to Y$ and $Y\to Z$, and a morphism $Z'\to Z$.
+We can write $X\times_Z Z'=X\times_Y(Y\times_Z Z')$ \sref[I]{1.3.3.9.1}, and so the projection $X\times_Z Z'\to Z'$ factors as $X\times_Y(Y\times_Z Z')\to Y\times_Z Z'\to Z'$.
+Taking the initial remark into account, (ii) follows from the fact that the composition of two closed morphisms is closed.
+Finally, for every morphism $S'\to S$, we can identify $X_{(S')}$ with $X\times_Y Y_{(S')}$ \sref[I]{1.3.3.11};
+for every morphism $Z\to Y_{(S')}$, we can write
+\[
+    X_{(S')}\times_{Y_{(S')}}Z = (X\times_Y Y_{(S')})\times_{Y_{(S')}}Z = X\times_Y Z;
+\]
+since $X\times_Y Z\to Z$ is closed, by hypothesis, this proves (iii).
+\end{proof}
+
+\begin{cor}[5.4.3]
+\label{2.5.4.3}
+\end{cor}
