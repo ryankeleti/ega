@@ -299,4 +299,67 @@ Further:
 
 \begin{prop}[5.3.2]
 \label{2.5.3.2}
+Let $Y$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian, and let $X$ be a $Y$-prescheme.
+The following conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $X$ is a quasi-projective $Y$-scheme.
+    \item $X$ is of finite type over $Y$, and there exists some quasi-coherent $\OO_Y$-module $\sh{E}$ of finite type such that $X$ is $Y$-isomorphic to a subprescheme of $\PP(\sh{E})$.
+    \item $X$ is of finite type over $Y$, and there exists some quasi-coherent graded $\OO_Y$-algebra $\sh{S}$ such that $\sh{S}_1$ is of finite type and generates $\sh{S}$, and such that $X$ is $Y$-isomorphic to a induced subprescheme on some everywhere-dense open subset of $\Proj(\sh{S})$.
+\end{enumerate}
 \end{prop}
+
+\begin{proof}
+\label{proof-2.5.3.2}
+This follows immediately from the previous remark and from \sref{2.4.4.3}, \sref{2.4.4.6}, and \sref{2.4.4.7}.
+\end{proof}
+
+We note that, whenever $Y$ is a \emph{Noetherian} prescheme, we can, in conditions~\emph{(b)} and \emph{(c)} of \sref{2.5.3.2}, remove the hypothesis that $X$ is of finite type over $Y$, since this automatically satisfied \sref[I]{1.6.3.5}.
+
+\begin{cor}[5.3.3]
+\label{2.5.3.3}
+Let $Y$ be a quasi-compact scheme such that there exists an ample $\OO_Y$-module $\sh{L}$ \sref{2.4.5.3}.
+For a $Y$-scheme $X$ to be quasi-projective, it is necessary and sufficient for it to be of finite type over $Y$ and also isomorphic to a sub-$Y$-scheme of a projective bundle of the form $\PP_Y^r$.
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.3.3}
+If $\sh{E}$ is a quasi-coherent $\OO_Y$-module of finite type, then $\sh{E}$ is isomorphic to a quotient of an $\OO_Y$-module $\sh{L}^{\otimes(-n)}\otimes_{\OO_Y}\OO_Y^k$ \sref{2.4.5.5}, and so $\PP(\sh{E})$ is isomorphic to a closed subscheme of $\PP_Y^{k-1}$ (\sref{2.4.1.2} and \sref{2.4.1.4}).
+\end{proof}
+
+\begin{prop}[5.3.4]
+\label{2.5.3.4}
+\medskip\noindent
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item A quasi-affine morphism of finite type (and, in particular, a quasi-compact immersion, or an affine morphism of finite type) is quasi-projective.
+    \item If $f:X\to Y$ and $g:Y\to Z$ are quasi-projective, and if $Z$ is quasi-compact, then $g\circ f$ is quasi-projective.
+\oldpage[II]{100}
+    \item If $f:X\to Y$ is a quasi-projective $S$-morphism, then $f_{(S')}:X_{(S')}\to Y_{(S')}$ is quasi-projective for every extension $S'\to S$ of the base prescheme.
+    \item If $f:X\to Y$ and $g:X'\to Y'$ are quasi-projective $S$-morphisms, then $f\times_S g$ is quasi-projective.
+    \item If $f:X\to Y$ and $g:Y\to Z$ are morphisms such that $g\circ f$ is quasi-projective, and if $g$ is separated or $X$ locally Noetherian, then $f$ is quasi-projective.
+    \item If $f$ is a quasi-projective morphism then so too is $f_\red$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-2.5.3.4}
+(i) follows from \sref{2.5.1.6} and \sref{2.5.1.10}[i].
+The other claims are immediate consequences of definition~\sref{2.5.3.1},  of the properties of morphisms of finite type \sref[I]{1.6.3.4}, and of \sref{2.4.6.13}.
+\end{proof}
+
+\begin{rmk}[5.3.5]
+\label{2.5.3.5}
+We note that we can have $f_\red$ being quasi-projective without $f$ being quasi-projective, even if we assume that $Y$ is the spectrum of an algebra of finite rank over $\bb{C}$ and that $f$ is proper.
+\end{rmk}
+
+\begin{cor}[5.3.6]
+\label{2.5.3.6}
+If $X$ and $X'$ are quasi-projective $Y$-schemes, then $X\sqcup X'$ is a quasi-projective $Y$-scheme.
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.3.6}
+This follows from \sref{2.4.6.18}.
+\end{proof}
+
+\subsection{Proper morphisms and universally closed morphisms}
+\label{subsection:proper-morphisms-and-universally-closed-morphisms}
