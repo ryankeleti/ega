@@ -27,7 +27,7 @@ All the PDFs are auto-compliled every hour if any changes have been made since t
 | | First draft | Proofreading |
 | ------ | ----------- | ------------ |
 | ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-39%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
-| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-30%25-orange)|
+| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-50%25-yellow)|
 | ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-3%25-red) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-0%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA4](https://img.shields.io/badge/EGA-4-lightgrey) | ![EGA4fd](https://img.shields.io/badge/-0%25-red) | ![EGA4p](https://img.shields.io/badge/-0%25-red)|
@@ -36,8 +36,8 @@ Here is the current status of the translation, along with who is currently worki
 
 - [x] Introduction (EGA I) _(proofread by @thosgood)_
 - [x] Preliminaries (EGA 0_I)
-    + [x] 1. Rings of fractions _(@ryankeleti, proofread by @thosgood)_
-    + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti, proofread by @thosgood)_
+    + [x] 1. Rings of fractions _(@ryankeleti / proofread by @thosgood)_
+    + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti / proofread by @thosgood)_
     + [x] 3. Supplement on sheaves _(@ryankeleti)_
     + [x] 4. Ringed spaces _(@ryankeleti)_
     + [x] 5. Quasi-coherent sheaves and coherent sheaves _(@ryankeleti)_
@@ -64,28 +64,28 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 23. Japanese rings
 - [x] The language of schemes (EGA I)
     + [x] 0. Summary _(proofread by @thosgood)_
-    + [x] 1. Affine schemes _(@ryankeleti, proofread by @thosgood)_
-    + [x] 2. Preschemes and their morphisms _(@thosgood, proofread by @thosgood)_
+    + [x] 1. Affine schemes _(@ryankeleti / proofread by @thosgood)_
+    + [x] 2. Preschemes and their morphisms _(@thosgood / proofread by @thosgood)_
     + [x] 3. Products of preschemes _(@thosgood, @ryankeleti)_
-    + [x] 4. Subpreschemes and immersions _(@ryankeleti)_
+    + [x] 4. Subpreschemes and immersions _(@ryankeleti / proofread by @thosgood)_
     + [x] 5. Reduced preschemes; separation condition _(@thosgood)_
     + [x] 6. Finiteness conditions _(@thosgood)_
     + [x] 7. Rational maps _(@thosgood)_
-    + [x] 8. Chevalley schemes _(@thosgood, proofread by @thosgood)_
+    + [x] 8. Chevalley schemes _(@thosgood / proofread by @thosgood)_
     + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
     + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
 - [ ] Elementary global study of some classes of morphisms (EGA II)
-    + [x] 0. Summary _(@ryankeleti, proofread by @thosgood)_
-    + [ ] 1. Affine morphisms
+    + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
+    + [ ] 1. Affine morphisms _(@ryankeleti)_
     + [ ] 2. Homogeneous prime spectra
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
     + [ ] 4. Projective bundles; Ample sheaves
-    + [ ] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms
+    + [ ] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
     + [ ] 6. Integral morphisms and finite morphisms
     + [ ] 7. Valuative criteria
     + [ ] 8. Blowup schemes; projective cones; projective closure
 - [ ] Cohomological study of coherent sheaves (EGA III)
-    + [x] 0. Summary _(@thosgood, proofread by @thosgood)_
+    + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
     + [ ] 1. Cohomology of affine schemes
     + [ ] 2. Cohomological study of projective morphisms
     + [ ] 3. Finiteness theorem for proper morphisms

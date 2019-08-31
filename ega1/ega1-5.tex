@@ -1,8 +1,8 @@
 \section{Reduced preschemes; separation condition}
-\label{section-reduced-preschemes-and-separation-condition}
+\label{section:reduced-preschemes-and-separation-condition}
 
 \subsection{Reduced preschemes}
-\label{subsection-reduced-preschemes}
+\label{subsection:reduced-preschemes}
 
 \begin{prop}[5.1.1]
 \label{1.5.1.1}
@@ -207,7 +207,7 @@ For $X$ to be an affine scheme, it is necessary and sufficient for $X_\red$ to b
 \end{cor}
 
 \subsection{Existence of a subprescheme with a given underlying space}
-\label{subsection-existence-of-a-subprescheme-with-a-given-underlying-space}
+\label{subsection:existence-of-a-subprescheme-with-a-given-underlying-space}
 
 \begin{prop}[5.2.1]
 \label{1.5.2.1}
@@ -252,7 +252,7 @@ Since, by \sref{1.5.2.2}, the restriction of $f$ to $X'$ factors as $X'\to Y'\to
 \end{proof}
 
 \subsection{Diagonal; graph of a morphism}
-\label{subsection-diagonal-graph-of-a-morphism}
+\label{subsection:diagonal-graph-of-a-morphism}
 
 \begin{env}[5.3.1]
 \label{1.5.3.1}
@@ -509,7 +509,7 @@ the conclusion then follows from \sref{1.5.3.15}.
 \end{proof}
 
 \subsection{Separated morphisms and separated preschemes}
-\label{subsection-separated-morphism-and-separated-preschemes}
+\label{subsection:separated-morphism-and-separated-preschemes}
 
 \begin{defn}[5.4.1]
 \label{1.5.4.1}
@@ -599,14 +599,14 @@ finally, assuming that the conclusion of \sref{1.5.4.6} is true for the $Y$ sect
 \end{rmk}
 
 \subsection{Separation criteria}
-\label{subsection-separation-criteria}
+\label{subsection:separation-criteria}
 
 \begin{prop}[5.5.1]
 \label{1.5.5.1}
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
     \item Every monomorphism of preschemes (and, in particular, every immersion) is a separated morphism.
-    \item The composition of two separated morphisms is separated.
+    \item The composition of any two separated morphisms is separated.
     \item If $f:X\to X'$ and $g:Y\to Y'$ are two separated $S$-morphisms, then $f\times_S g$ is separated.
     \item If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated, for every extension $S'\to S$ of the base prescheme.
     \item If the composition $g\circ f$ is separated, then $f$ is separated.
@@ -671,7 +671,7 @@ This is a particular case of \sref{1.5.5.1}[iv].
 
 \begin{prop}[5.5.4]
 \label{1.5.5.4}
-Let $X$ be a prescheme, and assume that its underlying space is a \emph{finite} union of closed subsets $X_k$ ($1\leqslant k\leqslant n$);
+Let $X$ be a prescheme, and assume that its underlying space is a \emph{finite} union of closed subsets $X_k$ ($1\leq k\leq n$);
 for each $k$, consider the reduced subprescheme of $X$ that has $X_k$ as its underlying space \sref{1.5.2.1}, and denote this again by $X_k$.
 Let $f:X\to Y$ be a morphism, and for each $k$, let $Y_k$ be a closed subset of $Y$ such that $f(X_k)\subset Y_k$;
 we again denote by $Y_k$ the reduced subprescheme of $Y$ that has $Y_k$ as its underlying space, so that the restriction $X_k\to Y$ of $f$ to $X_k$ factors as $X_k\xrightarrow{f_k}Y_k\to Y$ \sref{1.5.2.2}.
@@ -781,7 +781,7 @@ the inverse isomorphism defines a morphism $f:X\to\Spec(K[s])$ that is surjectiv
 
 We can also give examples where \emph{neither} of the two conditions of \sref{1.5.5.6} are satisfied.
 First note that, in the prime spectrum $Y$ of the ring $A=K[s,t]$ of polynomials in two indeterminates over a field $K$, the open subset $U$ given by the union of $D(s)$ and $D(t)$ is \emph{not an affine open subset}.
-Indeed, if $z$ is a section of $\OO_Y$ over $U$, there exist two integers $m,n\geqslant0$ such that $s^mz$ and $t^nz$ are the restrictions of polynomials in $s$ and $t$ to $U$ \sref{1.1.4.1}, which is clearly possible only if the section $z$ extends to a section over the whole of $Y$, identified with a polynomial in $s$ and $t$.
+Indeed, if $z$ is a section of $\OO_Y$ over $U$, there exist two integers $m,n\geq0$ such that $s^mz$ and $t^nz$ are the restrictions of polynomials in $s$ and $t$ to $U$ \sref{1.1.4.1}, which is clearly possible only if the section $z$ extends to a section over the whole of $Y$, identified with a polynomial in $s$ and $t$.
 If $U$ were an affine open subset, then the injection morphism $U\to Y$ would be an isomorphism \sref{1.1.7.3}, which is a contradiction, since $U\neq Y$.
 
 With the above in mind, take two affine schemes $Y_1$ and $Y_2$, prime spectra of the rings $A_1=K[s_1,t_2]$ and $A_2=K[s_2,t_2]$ (respectively);
@@ -794,7 +794,7 @@ we then have an example where the conditions of \sref{1.5.5.6} are not satisfied
 Given some property \textbf{P} of morphisms of preschemes, consider the following propositions.
 \begin{enumerate}[label=(\roman*)]
     \item \emph{Every closed immersion has property~\textbf{P}.}
-    \item \emph{The composition of two morphisms that both have property~\textbf{P} also has property~\textbf{P}.}
+    \item \emph{The composition of any two morphisms that both have property~\textbf{P} also has property~\textbf{P}.}
     \item \emph{If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms that have property~\textbf{P}, then $f\times_S g$ has property~\textbf{P}.}
 \oldpage[I]{140}
     \item \emph{If $f:X\to Y$ is an $S$-morphism that has property~\textbf{P}, then every $S'$-morphism $f_{(S')}$ obtained by an extension $S'\to S$ of the base prescheme also has property~\textbf{P}.}

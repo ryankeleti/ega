@@ -1,8 +1,8 @@
 \section{Constructible sets}
-\label{section-constructible sets}
+\label{section:constructible sets}
 
 \subsection{Constructible sets}
-\label{subsection-constructible sets}
+\label{subsection:constructible sets}
 
 \begin{defn}[9.1.1]
 \label{0.9.1.1}
@@ -132,7 +132,7 @@ Let $U$ be a quasi-compact open set in $X$; $T\cap U$ is locally constructible i
 \end{proof}
 
 \subsection{Constructible subsets of Noetherian spaces}
-\label{subsection-constructible-subsets-of-noetherian-spaces}
+\label{subsection:constructible-subsets-of-noetherian-spaces}
 
 \begin{env}[9.2.1]
 \label{0.9.2.1}
@@ -167,7 +167,7 @@ For a subset $E$ of $X$ to be constructible, it is necessary and sufficient that
 \label{proof-0.9.2.3}
 The necessity of the condition follows from the fact that $E\cap Y$ must be a constructible subset of $Y$ and from Proposition \sref{0.9.2.2}, since a nondense subset of $Y$ is necessarily rare in the irreducible space $Y$ \sref[0]]{0.2.1.1}.
 To prove that the condition is sufficient, apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\fk{F}$ of closed subsets $Y$ of $X$ such that $Y\cap E$ is constructible (relative to $Y$ or relative to $X$, which are equivalent): we can thus assume that for every closed subset $Y\neq X$ of $X$, $E\cap Y$ is constructible.
-First suppose that $X$ is not irreducible, and let $X_i$ ($1\leqslant i\leqslant m$) are its irreducible components, necessarily of finite number \sref[0]{0.2.2.5}; by hypothesis the $E\cap X_i$ are constructible, hence their union $E$ is as well.
+First suppose that $X$ is not irreducible, and let $X_i$ ($1\leq i\leq m$) are its irreducible components, necessarily of finite number \sref[0]{0.2.2.5}; by hypothesis the $E\cap X_i$ are constructible, hence their union $E$ is as well.
 Suppose now that $X$ is irreducible; then by hypothesis, if $E$ is rare, then $\overline{E}\neq X$ and $E=E\cap\overline{E}$ is constructible; if $E$ contains a nonempty open subset $U$ of $X$, then it is the union of $U$ and $E\cap(X\setmin U)$; but $X\setmin U$ is a closed set distinct from $X$, so $E\cap(X\setmin U)$ is constructible; as a result, $E$ is itself constructible, which finishes the proof.
 \end{proof}
 
@@ -187,7 +187,7 @@ When every irreducible closed subset of $X$ admits a generic point, the hypothes
 \begin{proof}
 \label{proof-0.9.2.4}
 We apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\fk{M}$ of closed subsets of $X$ contained in at least one of the $E_\alpha$; we can thus suppose that every closed subset $Y\neq X$ of $X$ is contained in one of the $E_\alpha$.
-The proposition is evident if $X$ is not irreducible, because each of the irreducible components $X_i$ of $X$ ($1\leqslant i\leqslant m$) is contained in an $E_{\alpha_i}$, and there exists an $E_\alpha$ containing all of the $E_{\alpha_i}$.
+The proposition is evident if $X$ is not irreducible, because each of the irreducible components $X_i$ of $X$ ($1\leq i\leq m$) is contained in an $E_{\alpha_i}$, and there exists an $E_\alpha$ containing all of the $E_{\alpha_i}$.
 Now suppose that $X$ is irreducible.
 By hypothesis, there exists a $\beta$ such that $X=\overline{E_\beta}$, so \sref{0.9.2.2} $E_\beta$ contains a nonempty open subset $U$ of $X$.
 But then the closed set $X\setmin U$ is contained in an $E_\gamma$, and it suffices to take an $E_\alpha$ containing $E_\beta$ and $E_\gamma$.
@@ -223,7 +223,7 @@ In addition, Proposition \sref{0.9.2.5} shows that $E$ is then a neighborhood of
 \end{proof}
 
 \subsection{Constructible functions}
-\label{subsection-constructible-functions}
+\label{subsection:constructible-functions}
 
 \begin{defn}[9.3.1]
 \label{0.9.3.1}
@@ -265,11 +265,11 @@ If $Y$ is an irreducible closed subset of $X$ and $y$ its generic point, then $Y
 \begin{prop}[9.3.4]
 \label{0.9.3.4}
 Let $X$ be a Noetherian space in which every irreducible closed subset admits a generic point, $h$ a constructible map from $X$ to an ordered set.
-For $h$ to be upper semi-continuous on $X$, it is necessary and sufficient that for every $x\in X$ and every specialization \sref[0]{0.2.1.2} $x'$ of $x$, we have $h(x')\leqslant h(x)$.
+For $h$ to be upper semi-continuous on $X$, it is necessary and sufficient that for every $x\in X$ and every specialization \sref[0]{0.2.1.2} $x'$ of $x$, we have $h(x')\leq h(x)$.
 \end{prop}
 
 \begin{proof}
 \label{proof-0.9.3.4}
-The function $h$ does not take a finite number of values; therefore, to say that it is upper semi-continuous means that for every $x\in X$, the set $E$ of the $y\in X$ such that $h(y)\leqslant h(x)$ is a neighborhood of $x$.
+The function $h$ does not take a finite number of values; therefore, to say that it is upper semi-continuous means that for every $x\in X$, the set $E$ of the $y\in X$ such that $h(y)\leq h(x)$ is a neighborhood of $x$.
 By hypothesis, $E$ is a constructible subset of $X$; on the other hand,to say that an irreducible closed subset $Y$ of $X$ contains $x$ means that its generic point $y$ is a specialization of $x$; the conclusion then follows from Proposition \sref{0.9.2.5}.
 \end{proof}
