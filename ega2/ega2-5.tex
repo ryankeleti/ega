@@ -226,4 +226,61 @@ the exact cohomology sequence $\HH^1(X,\sh{F}'_k)\to\HH^1(X,\sh{F}'_{k+1})\to\HH
 
 \begin{rmk}[5.2.1.1]
 \label{2.5.2.1.1}
+When $X$ is a \emph{Noetherian} prescheme, we can replace ``quasi-coherent'' by ``coherent'' in the statements of \emph{(c')} and \emph{(d')}.
+Indeed, in the proof of the fact that \emph{(c')} implies \emph{(b)}, $\sh{J}$ and $\sh{J}'$ are then \emph{coherent} sheaves of ideals, and, furthermore, every quasi-coherent submodule of a coherent module is coherent \sref[I]{1.6.1.1};
+whence the conclusion.
 \end{rmk}
+
+\begin{cor}[5.2.2]
+\label{2.5.2.2}
+Let $f:X\to Y$ be a separated quasi-compact morphism.
+The following conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item The morphism $f$ is an affine morphism.
+    \item The functor $f_*$ is exact in the category of quasi-coherent $\OO_X$-modules.
+    \item For every quasi-coherent $\OO_X$-module $\sh{F}$, we have $\RR^1 f_*(\sh{F})=0$.
+    \item[\emph{(c')}] for every quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$, we have $\RR^1 f_*(\sh{J})=0$.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.2.2}
+All these conditions are local on $Y$, by definition of the functor $\RR^1 f_*$ (T,~3.7.3.), and so we can assume that $Y$ is affine.
+If $f$ is affine, then $X$ is affine, and property~\emph{(b)} is nothing more than \sref[I]{1.1.6.4}.
+Conversely, we now show that \emph{(b)} implies \emph{(a)}:
+for every quasi-coherent $\OO_X$-module $\sh{F}$, we have that $f_*(\sh{F})$ is a quasi-coherent $\OO_Y$-module \sref[I]{1.9.2.2}[a].
+By hypothesis, the functor $f_*(\sh{F})$ is exact in $\sh{F}$, and the functor $\Gamma(Y,\sh{G})$ is exact in $\sh{G}$ (in the category of quasi-coherent $\OO_Y$-modules) because $Y$ is affine \sref[I]{1.1.3.11};
+so $\Gamma(Y,f_*(\sh{F}))=\Gamma(X,\sh{F})$ is exact in $\sh{F}$, which proves our claim, by \sref{2.5.2.1}[c].
+
+If $f$ is affine, then $f^{-1}(U)$ is affine for every affine open subset $U$ of $Y$ \sref{2.1.3.2}, and so $\HH^1(f^{-1}(U),\sh{F})=0$ \sref{2.5.2.1}[d], which, by definition, implies that $\RR^1 f_*(\sh{F})=0$.
+Finally, suppose that condition~\emph{(c')} is satisfied;
+the exact sequence of terms of low degree in the Leray spectral sequence (G,~II,~4.17.1 and I,~4.5.1) give, in particular, the exact sequence
+\[
+    0\to\HH^1(Y,f_*(\sh{J}))\to\HH^1(X,\sh{J})\to\HH^0(Y,\RR^1 f_*(\sh{J})).
+\]
+Since $Y$ is affine, and $f_*(\sh{J})$ quasi-coherent \sref[I]{1.9.2.2}[a], we have that $\HH^1(Y,f_*(\sh{J}))=0$ \sref{2.5.2.1};
+hypothesis~\emph{(c')} thus implies that $\HH^1(X,\sh{J})=0$, and we conclude, by \sref{2.5.2.1}, that $X$ is an affine scheme.
+\end{proof}
+
+\begin{cor}[5.2.3]
+\label{2.5.2.3}
+If $f:X\to Y$ is an affine morphism, then, for every quasi-coherent $\OO_X$-module $\sh{F}$, the canonical homomorphism $\HH^1(Y,f_*(\sh{F}))\to\HH^1(X,\sh{F})$ is bijective.
+\end{cor}
+
+\oldpage[II]{99}
+\begin{proof}
+\label{proof-2.5.2.3}
+We have the exact sequence
+\[
+    0\to\HH^1(Y,f_*(\sh{F}))\to\HH^1(X,\sh{F})\to\HH^0(Y,\RR^1 f_*(\sh{F}))
+\]
+of terms of low degree in the Leray spectral sequence, and the conclusion follows from \sref{2.5.2.2}.
+\end{proof}
+
+\begin{rmk}[5.2.4]
+\label{2.5.2.4}
+In chapter~III,~\textsection1, we prove that, if $X$ is affine, then we have $\HH^i(X,\sh{F})=0$ for all $i>0$ and all quasi-coherent $\OO_X$-modules $\sh{F}$.
+\end{rmk}
+
+\subsection{Quasi-projective morphisms}
+\label{subsection:quasi-projective-morphisms}
