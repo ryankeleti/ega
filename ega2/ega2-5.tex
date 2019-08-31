@@ -413,4 +413,143 @@ since $X\times_Y Z\to Z$ is closed, by hypothesis, this proves (iii).
 
 \begin{cor}[5.4.3]
 \label{2.5.4.3}
+Let $f:X\to Y$ and $g:Y\to Z$ be morphisms such that $g\circ f$ is proper.
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item If $g$ is separated, then $f$ is proper.
+    \item If $g$ is separated and of finite type, and if $f$ is surjective, then $g$ is proper.
+\end{enumerate}
 \end{cor}
+
+\begin{proof}
+\label{proof-2.5.4.3}
+(i) follows from \sref{2.5.4.2} by the general procedure \sref[I]{1.5.5.12}.
+To prove (ii), we need only verify that condition~\emph{(b)} of Definition~\sref{2.5.4.1} is satisfied.
+For every morphism $Z'\to Z$, the diagram
+\[
+  \xymatrix{
+    X\times_Z Z' \ar[r]^{f\times1_{Z'}} \ar[dr]_p
+    & Y\times_Z Z' \ar[d]^{p'}\\
+    & Z'
+  }
+\]
+(where $p$ and $p'$ are the projections) commutes \sref[I]{1.3.2.1};
+further, $f\times1_{Z'}$ is surjective because $f$ is surjective \sref[I]{1.3.5.2}, and $p$ is a closed morphism by hypothesis.
+Every closed subset $F$ of $Y\times_Z Z'$ is thus the image under $f\times1_{Z'}$ of some closed subset $E$ of $X\times_Z Z'$, so $p'(F)=p(E)$ is closed in $Z'$ by hypothesis, whence the corollary.
+\end{proof}
+
+\begin{cor}[5.4.4]
+\label{2.5.4.4}
+If $X$ is a proper prescheme over $Y$, and $\sh{S}$ a quasi-coherent $\OO_Y$-algebra, then every $Y$-morphism $f:X\to\Proj(\sh{S})$ is proper (and \emph{a fortiori} closed).
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.4.4}
+The structure morphism $p:\Proj(\sh{S})\to Y$ is separated, and $p\circ f$ is proper by hypothesis.
+\end{proof}
+
+\begin{cor}[5.4.5]
+\label{2.5.4.5}
+Let $f:X\to Y$ be a separated morphism of finite type.
+Let $(X_i)_{1\leq i\leq n}$ (resp. $(Y_i)_{1\leq i\leq n}$) be a finite family of closed subpreschemes of $X$ (resp. $Y$), and $j_i$ (resp. $h_i$) the canonical injection $X_i\to X$ (resp. $Y_i\to Y$).
+Suppose that the underlying space of $X$ is the union of the $X_i$, and that, for all $i$, there is a morphism $f_i:X_i\to Y_i$, such that the diagram
+\[
+  \xymatrix{
+    X_i \ar[r]^{f_i} \ar[d]_{j_i}
+    & Y_i \ar[d]^{h_i}\\
+    X \ar[r]_f
+    & Y
+  }
+\]
+commutes.
+Then, for $f$ to be proper, it is necessary and sufficient for all of the $f_i$ to be proper.
+\end{cor}
+
+\oldpage[II]{102}
+\begin{proof}
+\label{proof-2.5.4.5}
+If $f$ is proper, then so too is $f\circ j_i$, because $j_i$ is a closed immersion \sref{2.5.4.2};
+since $h_i$ is a closed immersion. and thus a separated morphism, $f_i$ is proper, by \sref{2.5.4.3}.
+Conversely, suppose that all of the $f_i$ are proper, and consider the prescheme $Z$ given by the \emph{sum} off the $X_i$;
+let $u$ be the morphism $Z\to X$ which reduces to $j_i$ on each $X_i$.
+The restriction of $f\circ u$ to each $X_i$ is equal to $f\circ j_i=h_i\circ f_i$, and is thus proper, because both the $h_i$ and the $f_i$ are \sref{2.5.4.2};
+it then follows immediately from Definition~\sref{2.5.4.1} that $u$ is proper.
+But since $u$ is surjective, by hypothesis, we conclude that $f$ is proper by \sref{2.5.4.3}.
+\end{proof}
+
+\begin{cor}[5.4.6]
+\label{2.5.4.6}
+Let $f:X\to Y$ be a separated morphism of finite type;
+for $f$ to be proper, it is necessary and sufficient for $f_\red:X_\red\to Y_\red$ to be proper.
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.4.6}
+This is a particular case of \sref{2.5.4.5}, with $n=1$, $X_1=X_\red$, and $Y_1=Y_\red$ \sref[I]{1.5.1.5}.
+\end{proof}
+
+\begin{env}[5.4.7]
+\label{2.5.4.7}
+If $X$ and $Y$ are Noetherian preschemes, and $f:X\to Y$ a separated morphism of finite type, then we can, to show that $f$ is proper, restrict to the the case of \emph{dominant} morphisms and \emph{integral} preschemes.
+Indeed, let $X_i$ ($1\leq i\leq n$) be the (finitely many) irreducible components of $X$, and consider, for each $i$, the unique reduced closed subprescheme of $X$ that has $X_i$ as its underlying space, which we again denote by $X_i$ \sref[I]{1.5.2.1}.
+Let $Y_i$ be the unique reduced closed subprescheme of $Y$ that has $\overline{f(X_i)}$ as its underlying space.
+If $g_i$ (resp. $h_i$) is the injection morphism $X_i\to X$ (resp. $Y_i\to Y$), then we conclude that $f\circ g_i=h_i\circ f_i$, where $f_i$ is a dominant morphism $X_i\to Y_i$ \sref[I]{1.5.2.2};
+we are then under the right conditions to apply \sref{2.5.4.5}, and for $f$ to be proper, it is necessary and sufficient for all the $f_i$ to be proper.
+\end{env}
+
+\begin{cor}[5.4.8]
+\label{2.5.4.8}
+Let $X$ and $Y$ be separated $S$-preschemes of finite type over $S$, and $f:X\to Y$ an $S$-morphism.
+For $f$ to be proper, it is necessary and sufficient that, for every $S$-prescheme $S'$, the morphism $f\times_S 1_{S'}:X\times_S S'\to Y\times_S S'$ be closed.
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.4.8}
+First note that, if $g:X\to S$ and $h:Y\to S$ are the structure morphisms, then we have, by definition, $g=h\circ f$, and so $f$ is separated and of finite type (\sref[I]{1.5.5.1} and \sref{2.6.3.4}).
+If $f$ is proper, then so too is $f\times_S 1_{S'}$ \sref{2.5.4.2};
+\emph{a fortiori}, $f\times_S 1_{S'}$ is closed.
+Conversely, suppose that the conditions of the statement are satisfied, and let $Y'$ be a $Y$-prescheme;
+$Y'$ can also be considered as an $S$-prescheme, and since $Y\to S$ is separated, $X\times_Y Y'$ can be identified with a closed subprescheme of $X\times_S Y'$ \sref[I]{1.5.4.2}.
+In the commutative diagram
+\[
+  \xymatrix{
+    X\times_Y Y' \ar[r]^{f\times1_{Y'}} \ar[d]
+    & Y\times_Y Y'=Y' \ar[d]\\
+    X\times_S Y' \ar[r]_{f\times1_{S'}}
+    & Y\times_S Y'
+  }
+\]
+the vertical arrows are closed immersions;
+it thus immediately follows that if $f\times1_{S'}$ is a closed morphism, then so too is $f\times1_{Y'}$
+\end{proof}
+
+\begin{rmk}[5.4.9]
+\label{2.5.4.9}
+We say that a morphism $f:X\to Y$ is \emph{universally closed} if it satisfies condition~\emph{(b)} of Definition~\sref{2.5.4.1}.
+The reader will observe that,
+\oldpage[II]{103}
+in Propositions~\sref{2.5.4.2} to \sref{2.5.4.8}, we can replace every occurrence of ``proper'' with ``universally closed'' without changing the validity of the results (and in the hypotheses of \sref{2.5.4.3}, \sref{2.5.4.5}, \sref{2.5.4.6}, and \sref{2.5.4.8}, we can omit the finiteness conditions).
+\end{rmk}
+
+\begin{env}[5.4.10]
+\label{2.5.4.10}
+Let $f:X\to Y$ be a morphism of finite type.
+We say that a closed subset $Z$ of $X$ is \emph{proper on $Y$} (or \emph{$Y$-proper}, or \emph{proper for $f$}) if the restriction of $f$ to a closed subprescheme of $X$, with underlying space $Z$ \sref[1]{1.5.2.1}, is \emph{proper}.
+Since this restriction is then separated, it follows from \sref{2.5.4.6} and \sref[I]{1.5.5.1}[vi] that the preceding property \emph{does not depend} on the closed subprescheme of $X$ that has $Z$ as its underlying space.
+If $g:X'\to X$ is a \emph{proper} morphism, then $g^{-1}(Z)$ is a \emph{proper} subset of $X'$:
+if $T$ is a subprescheme of $X$ that has $Z$ as its underlying space, it suffices to note that the restriction of $g$ to the closed subprescheme $g^{-1}(T)$ of $X'$ is a proper morphism $g^{-1}(T)\to T$, by \sref{2.5.4.2}[iii], and to then apply \sref{2.5.4.2}[ii].
+Further, if $X''$ is a $Y$-\emph{scheme} of finite type, and $u:X\to X''$ a $Y$-morphism, then $u(Z)$ is a \emph{proper} subset of $X''$;
+indeed, let us take $T$ to be the reduced closed subprescheme of $X$ having $Z$ as its underlying space;
+then the restriction of $f$ to $T$ is proper, and thus so too is the restriction of $u$ to $T$ \sref{2.5.4.3}[i], thus $u(Z)$ is closed in $X''$;
+let $T''$ be a closed subprescheme of $X''$ having $u(Z)$ as its underlying space \sref[I]{1.5.2.1}, such that $u|T$ factors as $T\xrightarrow{v}T''\xrightarrow{j}X''$, where $j$ is the canonical injection \sref[I]{1.5.2.2}, and $v$ is thus proper and surjective \sref{2.5.4.5};
+if $g$ is the restriction to $T''$ of the structure morphism $X''\to Y$, then $g$ is separated and of finite type, and we have that $f|T=g\circ v$;
+it thus follows from \sref{2.5.4.3}[ii] that $g$ is proper, whence our assertion.
+\end{env}
+
+It follows, in particular, from these remarks that, if $Z$ is a $Y$-proper subset of $X$, then
+\begin{enumerate}
+    \item for every closed subprescheme $X'$ of $X$, $Z\cap X'$ is a $Y$-proper subset of $X'$; and
+    \item if $X$ is a subprescheme of a $Y$-scheme of finite type $X''$, then $Z$ is also a $Y$-proper subset of $X''$ (and so, in particular, is \emph{closed in $X''$}).
+\end{enumerate}
+
+\subsection{Projective morphisms}
+\label{subsection:projective-morphisms}
