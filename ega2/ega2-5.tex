@@ -705,3 +705,111 @@ For every section $f$ of $\sh{L}$ over $X$, $X_f$ is affine over $X$ (and thus a
 
 \subsection{Chow's lemma}
 \label{subsection:chows-lemma}
+
+\begin{thm}[5.6.1]
+\label{2.5.6.1}
+\emph{(Chow's lemma).}
+Let $S$ be a prescheme, and $X$ an $S$-scheme of finite type.
+Suppose that the following conditions are satisfied:
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $S$ is Noetherian;
+    \item $S$ is a quasi-compact scheme, and $X$ has a finite number of irreducible components.
+\end{enumerate}
+Under these hypotheses,
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item there exists a \emph{quasi-projective} $S$-scheme $X'$, and an $S$-morphism $f:X'\to X$ that is both\emph{projective} and \emph{surjective};
+    \item we can take $X'$ and $f$ to be such that there exists an open subset $U\subset X$ for which $U'=f^{-1}(U)$ is dense in $X'$, and for which the restriction of $f$ to $U'$ is an isomorphism $U'\xrightarrow{\sim}U$; and
+    \item if $X$ is reduced (resp. irreducible, integral), then we can assume that $X'$ is reduced (resp. irreducible, integral).
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\label{proof-2.5.6.1}
+The proof proceeds in multiple steps.
+\begin{enumerate}[label=(\Alph*)]
+    \item We can first restrict to the case where $X$ is \emph{irreducible}.
+        Indeed, in hypothesis \emph{(a)}, $X$ is Noetherian, and so, in the two hypotheses, the irreducible components $X_i$ of $X$ are finite in number.
+        If the theorem is shown to be true for each of the reduced closed preschemes of $X$ having the $X_i$ as their underlying spaces, and if $X'_i$ and $f_i:X'_i\to X_i$ are the prescheme and the morphism corresponding to $X_i$ (respectively), then the prescheme $X'$ given by the \emph{sum} of the $X'_i$, and the morphism $f:X'\to X$ whose restriction to each $X'_i$ is $j_i\circ f_i$ (where $j_i$ is the canonical injection $X_i\to X$) satisfy the conclusion of the theorem.
+        It is immediate that $X'$ is reduced if all of the $X'_i$ are;
+        further, we can satisfy (ii) by taking $U$ to be the union of the sets $U_i\cap C\left(\bigcup_{j\neq i}X_j\right)$.
+        Finally, since the $X'_i$ are quasi-projective over $S$, so too is $X'$
+\oldpage[II]{107}
+        \sref{2.5.3.6};
+        similarly, the morphisms $X'_i\to X$ are projective by \sref{2.5.5.5}[i] and \sref{2.5.5.5}[ii], and so $f$ is projective \sref{2.5.5.6}, and is clearly surjective, by definition.
+    \item Now suppose that $X$ is \emph{irreducible}.
+        Since the structure morphism $r:X\to S$ is of finite type, there exists a finite cover $(S_i)$ of $S$ by affine open subsets, and for each $i$ there is a finite cover $(T_{ij})$ of $r^{-1}(S_i)$ by affine open subsets, and the morphisms $T_{ij}\to S_i$ are of finite type, and so quasi-projective \sref{2.5.3.4}[i];
+        since in both hypotheses~\emph{(a)} and \emph{(b)} the immersion $S_i\to S$ is quasi-compact, it is also quasi-projective \sref{2.5.3.4}[i], and so the restriction of $r$ to $T_{ij}$ is a quasi-projective morphism \sref{2.5.3.4}[ii].
+        Denote the $T_{ij}$ by $U_k$ ($1\leq k\leq n$).
+        There exists, for each index $k$, an open immersion $\vphi_k:U_k\to P_k$, where $P_k$ is projective over $S$ (\sref{2.5.3.2} and \sref{2.5.5.2}).
+        Let $U=\bigcap_k U_k$;
+        since $X$ is irreducible, and the $U_k$ nonempty, $U$ is nonempty, and so dense in $X$;
+        the restrictions of the $\vphi_k$ to $U$ define a morphism
+        \[
+            \vphi:U\to P = P_1\times_S P_2\times_S\ldots\times_S P_n
+        \]
+        such that the diagrams
+        \begin{equation*}
+        \label{2.5.6.1.1}
+            \xymatrix{
+                U \ar[r]^\vphi \ar[d]_{j_k}
+                & P \ar[d]^{p_k}\\
+                U_k\ar[r]_{\vphi_k}
+                & P_k
+            }\tag{5.6.1.1}
+        \end{equation*}
+        commute, where $j_k$ is the canonical injection $U\to U_k$, and $p_k$ the canonical projection $P\to P_k$.
+        If $j$ is the canonical injection $U\to X$, then the morphism $\psi=(j,\vphi)_S:U\to X\times_S P$ is an \emph{immersion} \sref[I]{1.5.3.14}.
+        In hypothesis~\emph{(a)}, $X\times_S P$ is locally Noetherian (\sref{2.3.4.1}, \sref[I]{1.6.3.7}, and \sref[I]{1.6.3.8});
+        in hypothesis~\emph{(b)}, $X\times_S P$ is a quasi-compact scheme (\sref[I]{1.5.5.1} and \sref[I]{1.6.6.4});
+        in both cases, the \emph{closure} $X'$ in $X\times_S P$ of the subprescheme $Z$ associated to $\psi$ (and so with underlying space $\psi(U)$) exists, and $\psi$ factors as
+        \begin{equation*}
+        \label{2.5.6.1.2}
+            \psi:U\xrightarrow{\psi'}X'\xrightarrow{h}X\times_S P\tag{5.6.1.2}
+        \end{equation*}
+        where $\psi'$ is an \emph{open immersion} and $h$ a \emph{closed immersion} \sref[I]{1.9.5.10}.
+        Let $q_1:X\times_S P\to X$ and $q_2:X\times_S P\to P$ be the canonical projections; we set
+        \begin{gather*}
+            f:X'\xrightarrow{h}X\times_S P\xrightarrow{q_1}X\tag{5.6.1.3}\label{2.5.6.1.3}\\
+            g:X'\xrightarrow{h}X\times_S P\xrightarrow{q_2}P.\tag{5.6.1.4}\label{2.5.6.1.4}
+        \end{gather*}
+        We will see that $X'$ and $f$ satisfy the conclusion of the theorem.
+    \item First we show that $f$ is \emph{projective} and \emph{surjective}, and that the restriction of $f$ to $U'=f^{-1}(U)$ is an \emph{isomorphism} from $U'$ to $U$.
+        Since the $P_k$ are projective over $S$, so too is $P$ \sref{2.5.5.5}[iv], and so $X\times_S P$ is projective over $X$ \sref{2.5.5.5}[iii], and thus so too is $X'$, which is a closed subprescheme of $X\times_S P$.
+        Furthermore, we have $f\circ\psi' = q_1\circ(h\circ\psi') = q_1\circ\psi = j$, so $f(X')$ contains the open everywhere-dense subset $U$ of $X$;
+        but $f$ is a \emph{closed} morphism \sref{2.5.5.3}, so $f(X')=X$.
+        Now note that $q_1^{-1}(U)=U\times_S P$ is induced on an open subset of $X\times_S P$, and, by definition, the prescheme $U'=h^{-1}(U\times_S P)$ is induced by $X'$ on the open subset $U'$;
+        it is thus the closure \emph{relative to}
+\oldpage[II]{108}
+        $U\times_S P$ of the prescheme $Z$ \sref[I]{1.9.5.8}.
+        But the immersion $\psi$ factors as $U\xrightarrow{\Gamma_\vphi}U\times_S P\xrightarrow{j\times1}X\times_S P$, and since $P$ is separated over $S$, the graph morphism $\Gamma_\vphi$ is a closed immersion \sref[I]{1.5.4.3}, and so $Z$ is a \emph{closed} subprescheme of $U\times_S P$, whence $U'=Z$.
+        Since $\psi$ is an immersion, the restriction of $f$ to $U'$ is an isomorphism onto $U$, and the inverse of $\psi'$;
+        finally, by the definition of $X'$, $U'$ is dense in $X'$.
+    \item We now show that $g$ is an \emph{immersion}, which will imply that $X'$ is \emph{quasi-projective} over $S$, because $P$ is projective over $S$.
+        Set
+        \begin{align*}
+            V_k &= \vphi_k(U_k) \quad \mbox{(open subset of $P_k$)}\\
+            W_k &= p_k^{-1}(V_k) \quad \mbox{(open subset of $P$)}\\
+            U'_k &= f^{-1}(U_k) \quad \mbox{(open subset of $X'$)}\\
+            U''_k &= g^{-1}(W_k) \quad \mbox{(open subset of $X'$)}.
+        \end{align*}
+        It is clear that the $U'_k$ form an open cover of $X'$;
+        we will first see that the $U''_k$ also form an open cover of $X'$, by showing that $U'_k\subset U''_k$.
+        For this, it will suffice to show that the diagram
+        \begin{equation*}
+        \label{2.5.6.1.5}
+            \xymatrix{
+                U'_k \ar[r]^{g|U'_k} \ar[d]_{f|U'_k}
+                & P \ar[d]^{p_k}\\
+                U_k \ar[r]_{\vphi_k}
+                & P_k
+            }\tag{5.6.1.5}
+        \end{equation*}
+        commutes.
+        But the prescheme $U'_k=h^{-1}(U_k\times_S P)$ is induced by $X'$ on the open subset $U'_k$, and is thus the closure of $Z=U'\subset U'_k$ relative to $U'_k$ \sref[I]{1.9.5.8}.
+        To show the commutativity of \sref{2.5.6.1.5}, it thus suffices (since $P_k$ is an $S$-scheme) to show that composing the diagram with the canonical injection $U'\to U'_k$ (or, equivalently, thanks to the isomorphism from $U'$ to $U$, with $\psi$) gives us a commutative diagram \sref[I]{1.9.5.6}.
+        But, by definition, the diagram thus obtains is exactly \sref{2.5.6.1.1}, whence our claim.
+
+        The $W_k$ thus form an open cover of $g(X')$;
+        to show that $g$ is an immersion, it suffices to show that each of the restrictions $g|U''_k$ is an immersion into $W_k$ \sref[I]{1.4.2.4}.
+\end{enumerate}
+\end{proof}
