@@ -80,13 +80,13 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 2. Homogeneous prime spectra
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
     + [ ] 4. Projective bundles; Ample sheaves
-    + [ ] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
+    + [x] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
     + [ ] 6. Integral morphisms and finite morphisms
     + [ ] 7. Valuative criteria
     + [ ] 8. Blowup schemes; projective cones; projective closure
 - [ ] Cohomological study of coherent sheaves (EGA III)
     + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
-    + [ ] 1. Cohomology of affine schemes
+    + [x] 1. Cohomology of affine schemes _(@ryankeleti)_
     + [ ] 2. Cohomological study of projective morphisms
     + [ ] 3. Finiteness theorem for proper morphisms
     + [ ] 4. The fundamental theorem of proper morphisms. Applications
