@@ -811,5 +811,34 @@ The proof proceeds in multiple steps.
 
         The $W_k$ thus form an open cover of $g(X')$;
         to show that $g$ is an immersion, it suffices to show that each of the restrictions $g|U''_k$ is an immersion into $W_k$ \sref[I]{1.4.2.4}.
+        For this, consider the morphism $u_k:W_k\xrightarrow{p_k}V_k\xrightarrow{\vphi_k^{-1}}U_k\to X$;
+        since $X$ is separated over $S$, the graph morphism $\Gamma_{u_k}:W_k\to X\times_S W_k$ is a closed immersion \sref[I]{1.5.4.3}, and so the graph $T_k=\Gamma_{u_k}(W_k)$ is a closed subprescheme of $X\times_S W$;
+        if we show that $U'\to X\times_S W_k$ factors through this subprescheme, then the map from the subprescheme induced by $X'$ on the open subset $X''_k$ of $X'$ to $X\times_S W_k$ will also factor through this graph, by \sref[I]{1.9.5.8}.
+        Since the restriction of $q_2$ to $T_k$ is an isomorphism onto $W_k$, the restriction of $g$ to $X''_k$ will be an immersion into $W_k$, and our claim will be proven.
+        Let $v_k$ be the canonical injection $U'\to X\times_S W_k$;
+        we have to show that there exists a morphism $w_k:U'\to W_k$ such that $v_k=\Gamma_{u_k}\circ w_k$.
+        By the definition of the product, it suffices to prove that $q_1\circ v_k=u_k\circ q_2\circ v_k$ \sref[I]{1.3.2.1}, or, by composing on the right
+\oldpage[II]{109}
+        with the isomorphism $\psi':U\to U'$, that $q_1\circ\psi=u_k\circ q_2\circ\psi$.
+        But since $q_1\circ\psi=j$ and $q_2\circ\psi=\vphi$, our claim follows from the commutativity of \sref{2.5.6.1.1}, taking into account the definition of $u_k$.
+    \item It is clear that since $U$, and thus $U'$, is irreducible, so too is the $X'$ from the preceding construction, and the morphism $f$ is thus \emph{birational} \sref[I]{1.2.2.9}.
+        If, further, $X$ is reduced, then so too is $U'$, and so $X'$ is also reduced \sref[I]{1.9.5.9}.
+        This finishes the proof.
 \end{enumerate}
+\end{proof}
+
+\begin{cor}[5.6.2]
+\label{2.5.6.2}
+Suppose that one of the hypotheses, \emph{(a)} and \emph{(b)}, of \sref{2.5.6.1} is satisfied.
+For $X$ to be proper over $S$, it is necessary and sufficient for there to exist a projective scheme $X'$ over $S$, and a surjective $S-$morphism $f:X'\to X$ (which is thus projective, by \sref{2.5.5.5}[v]).
+Whenever this is the case, we can further choose $f$ to be such that there exists a dense open subset $U$ of $X$ for which the restriction of $f$ to $f^{-1}(U)$ is an isomorphism $f^{-1}\xrightarrow{\sim}U$, and for which $f^{-1}(U)$ is dense in $X'$.
+If, further, $X$ is irreducible (resp. reduced), then we can assume that $X'$ is also irreducible (resp. reduced);
+when $X$ and $X'$ are irreducible, $f$ is a birational morphism.
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.6.2}
+The condition is sufficient, by \sref{2.5.5.3} and \sref{2.5.4.3}[ii].
+It is necessary because, with the notation of \sref{2.5.6.1}, if $X$ is proper over $S$, then $X'$ is proper over $S$, because it is projective over $X$, and thus proper over $X$ \sref{2.5.5.3}, and our claim follows from \sref{2.5.4.2}[ii];
+furthermore, since $X'$ is quasi-projective over $S$, it is projective over $S$, by \sref{2.5.5.3}.
 \end{proof}
