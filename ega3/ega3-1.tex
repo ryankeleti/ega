@@ -306,7 +306,7 @@ is exact, and thus gives an exact sequence in cohomolology
 \]
 On the other hand, if we set $M'=\Gamma(X,\sh{F}')$ and $M''=\Gamma(X,\sh{F}'')$, then the sequence $0\to M'\to M\to M''\to 0$ is exact; as $C^\bullet((\mathbf{f}),M)$ is an exact functor in $M$, we also have the exact sequence in cohomology
 \[
-  \cdots\HH^p((\mathbf{f}),M')\to\HH^p((\mathbf{f}),M)\to\HH^p((\mathbf{f}),M'')\xrightarrow{\partial}\HH^{p+1}((\mathbf{f}),M')\to\cdots.
+  \cdots\to\HH^p((\mathbf{f}),M')\to\HH^p((\mathbf{f}),M)\to\HH^p((\mathbf{f}),M'')\xrightarrow{\partial}\HH^{p+1}((\mathbf{f}),M')\to\cdots.
 \]
 
 This being so, as the diagram
@@ -394,4 +394,354 @@ It suffices to note that, according to Corollary~\sref{3.1.3.3}, for every affin
 
 \subsection{Application to the cohomology of arbitrary preschemes}
 \label{subsection:application-cohomology-preschemes}
+
+\begin{prop}[1.4.1]
+\label{3.1.4.1}
+Let $X$ be a scheme, $\fk{U}=(U_\alpha)$ be a cover of $X$ by affine open sets.
+For every quasi-coherent $\OO_X$-module $\sh{F}$, the cohomology modules $\HH^\bullet(X,\sh{F})$ and $\HH^\bullet(\fk{U},\sh{F})$ (over $\Gamma(X,\OO_X)$) are canonically isomorphic.
+\end{prop}
+
+\begin{proof}
+\label{proof-3.1.4.1}
+As $X$ is a scheme, every finite intersection $V$ of open sets in the cover $\fk{U}$ is affine \sref[I]{1.5.5.6}, so $\HH^q(V,\sh{F})=0$ for $g\geq 1$ by Theorem~\sref{3.1.3.1}.
+The proposition then follows from a theorem of Leray (G, II, 5.4.1).
+\end{proof}
+
+\begin{rmk}[1.4.2]
+\label{3.1.4.2}
+We note that the result of Proposition~\sref{3.1.4.1} is still true when the finite intersections of the sets $U_\alpha$ are affine, even when we do not necessarily assume that $X$ is a scheme.
+\end{rmk}
+
+\begin{cor}[1.4.3]
+\label{3.1.4.3}
+Let $X$ be a scheme with quasi-compact underlying space, $A=\Gamma(X,\OO_X)$, and $\mathbf{f}=(f_i)_{1\leq i\leq r}$ a finite sequence of elements of $A$ such that the $X_{f_i}$ (notation of \sref{3.1.2.1}) are affine.
+Then (with the notations of \sref{3.1.2.1}), for every quasi-coherent $\OO_X$-module $\sh{F}$, we have a canonical isomorphism which is functorial in $\sh{F}$
+\[
+  \HH^q(U,\sh{F})\isoto\HH^{q+1}((\mathbf{f}),M)\text{ for }q\geq 1,
+  \tag{1.4.3.1}
+\]
+and an exact sequence which is functorial in $\sh{F}$
+\[
+  0\to\HH^0((\mathbf{f}),M)\to M\to\HH^0(U,\sh{F})\to\HH^1((\mathbf{f}),M)\to 0.
+  \tag{1.4.3.2}
+\]
+\end{cor}
+
+\begin{proof}
+\label{proof-3.1.4.3}
+This follows immediately from Propositions~\sref{3.1.4.1} and \sref{3.1.2.3}.
+\end{proof}
+
+\begin{env}[1.4.4]
+\label{3.1.4.4}
+If $X$ is an \emph{affine scheme}, then it follows from Remark~\sref{3.1.2.5} and Proposition~\sref{3.1.4.1} that for all $q\geq 0$, the diagrams
+\[
+  \xymatrix{
+    \HH^q(U,\sh{F}'')\ar[r]^\partial\ar[d] &
+    \HH^{q+1}(U,\sh{F}')\ar[d]\\
+    \HH^{q+1}((\mathbf{f}),M'')\ar[r]^\partial &
+    \HH^{q+2}((\mathbf{f}),M')
+  }
+  \tag{1.4.4.1}
+\]
+corresponding to an exact sequence $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ of quasi-coherent $\OO_X$-modules (with the notations of Remark~\sref{3.1.2.5}) are commutative.
+\end{env}
+
+\begin{prop}
+\label{3.1.4.5}
+\oldpage[III]{90}
+Let $X$ be a quasi-compact scheme, $\sh{L}$ an invertible $\OO_X$-module, and consider the graded ring $A_*=\Gamma_*(\sh{L})$ \sref[0]{0.5.4.6}; then $\HH^\bullet(\sh{F},\sh{L})=\bigoplus_{n\in\bb{Z}}\HH^\bullet(X,\sh{F}\otimes\sh{L}^{\otimes n})$ is a graded $A_*$-module, and for all $f\in A_n$, we have a canonical isomorphism
+\[
+  \HH^\bullet(X_f,\sh{F})\isoto(\HH^\bullet(\sh{F},\sh{L}))_{(f)}
+  \tag{1.4.5.1}
+\]
+of $(A_*)_{(f)}$-modules.
+\end{prop}
+
+\begin{proof}
+\label{proof-3.1.4.5}
+As $X$ is a quasi-compact scheme, we can calculate the cohomology of all the $\OO_X$-modules $\sh{F}\otimes\sh{L}^{\otimes n}$ using the same finite cover $\fk{U}=(U_i)$ consisting of the affine open sets such that the restriction $\sh{L}|U_i$ is isomorphic to $\OO_X|U_i$ for each $i$ \sref{3.1.4.1}.
+It is then immediate that the $U_i\cap X_f$ are affine open sets \sref[I]{3.1.3.6}, and we can thus calculate the cohomology $\HH^\bullet(X_f,\sh{F}\otimes\sh{L}^{\otimes n})$ using the cover $\fk{U}|X_f=(U_i\cap X_f)$ \sref{3.1.4.1}.
+It is immediate that for all $f\in A_n$, multiplication by $f$ defines a homomorphism $C^\bullet(\fk{U},\sh{F}\otimes\sh{L}^m)\to C^\bullet(\fk{U},\sh{F}\otimes\sh{L}^{\otimes(m+n)})$, hence a homomorphism $\HH^\bullet(\fk{U},\sh{F}\otimes\sh{L}^{\otimes m})\to\HH^\bullet(\fk{U},\sh{F}\otimes\sh{L}^{\otimes(m+n)})$, which establishes the first assertion.
+On the other hand, for a given $f\in A_n$, it follows from \sref[I]{1.9.3.2} that we have an isomorphism of complexes of $(A_*)_{(f)}$-modules
+\[
+  C^\bullet(\fk{U}|X_f,\sh{F})\isoto\bigg(C^\bullet\bigg(\fk{U},\bigoplus_{n\in\bb{Z}}\sh{F}\otimes\sh{L}^{\otimes n}\bigg)\bigg)_{(f)},
+\]
+taking into account \sref[I]{1.1.3.9}[ii].
+Passing to the cohomology of these complexes, we induce the isomorphism (1.4.5.1), recalling that the functor $M\mapsto M_{(f)}$ is exact on the category of graded $A_*$-modules.
+\end{proof}
+
+\begin{cor}[1.4.6]
+\label{3.1.4.6}
+Suppose that the hypotheses of Proposition~\sref{3.1.4.5} are satisfied, and in addition suppose that $\sh{L}=\OO_X$.
+If we set $A=\Gamma(X,\OO_X)$, then for all $f\in A$, we have a canonical isomorphism $\HH^\bullet(X_f,\sh{F})\isoto(\HH^\bullet(X,\sh{F}))_f$ of $A_f$-modules.
+\end{cor}
+
+\begin{cor}[1.4.7]
+\label{3.1.4.7}
+Let $X$ be a quasi-compact scheme, $f$ an element of $\Gamma(X,\OO_X)$.
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item Suppose that the open set $X_f$ is affine.
+    Then for every quasi-coherent $\OO_X$-module $\sh{F}$, every $i>0$, and every $\xi\in\HH^i(X,\sh{F})$, there exists an integer $n>0$ such that $f^n\xi=0$.
+  \item Conversely, suppose that $X_f$ is quasi-compact and that for every quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$ and every $\zeta\in\HH^1(X,\sh{J})$, there exists an $n>0$ such that $f^n\zeta=0$.
+    Then $X_f$ is affine.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+\label{proof-3.1.4.7}
+\medskip\noindent
+\begin{enumerate}[label=(\roman*)]
+  \item If $X_f$ is affine, then we have $\HH^i(X_f,\sh{F})=0$ for all $i>0$ \sref{3.1.3.1}, so the assertion follows directly from Corollary~\sref{3.1.4.6}.
+  \item By virtue of Serre's criterion \sref[II]{2.5.2.1}, it suffices to prove that for every quasi-coherent sheaf of ideals $\sh{K}$ of $\OO_X|X_f$, we have $\HH^1(X_f,\sh{K})=0$.
+    As $X_f$ is a quasi-compact open set in a quasi-compact scheme $X$, there exists a quasi-coherent sheaf of ideals $\sh{J}$ of $\OO_X$ such that $\sh{K}=\sh{J}|X_f$ \sref[I]{1.9.4.2}.
+    According to Corollary~\sref{3.1.4.6}, we have $\HH^1(X_f,\sh{K})=(\HH^1(X,\sh{J}))_f$, and the hypothesis implies that the right hand side is zero, hence the assertion.
+\end{enumerate}
+\end{proof}
+
+\begin{rmk}[1.4.8]
+\label{3.1.4.8}
+We note that Corollary~\sref{3.1.4.7}[i] gives a simpler proof of the relation (\textbf{II},~4.5.13.2).
+\end{rmk}
+
+\begin{lem}[1.4.9]
+\label{3.1.4.9}
+\oldpage[III]{91}
+Let $X$ be a quasi-comact scheme, $\fk{U}=(U_i)_{1\leq i\leq n}$ a finite cover of $X$ by affine open sets, and $\sh{F}$ a quasi-coherent $\OO_X$-module.
+The complex of sheaves $\sh{C}^\bullet(\fk{U},\sh{F})$ defined by the cover $\fk{U}$ (G, II, 5.2) is then a quasi-coherent $\OO_X$-module.
+\end{lem}
+
+\begin{proof}
+\label{proof-3.1.4.9}
+It follows from the definitions (G, II, 5.2) that $\sh{C}^p(\fk{U},\sh{F})$ is the direct sum of the direct image sheaves of the $\sh{F}|U_{i_0\cdots i_p}$ under the canonical injection $U_{i_0\cdots i_p}\to X$.
+The hypothesis that $X$ is a scheme implies that these injections are affine morphisms \sref[I]{1.5.5.6}, hence the $\sh{C}^p(\fk{U},\sh{F})$ are quasi-coherent \sref[II]{2.1.2.6}.
+\end{proof}
+
+\begin{prop}[1.4.10]
+\label{3.1.4.10}
+Let $u:X\to Y$ be a separated and quasi-compact morphism.
+For every quasi-coherent $\OO_X$-module $\sh{F}$, the $\RR^q u_*(\sh{F})$ are quasi-coherent $\OO_Y$-modules.
+\end{prop}
+
+\begin{proof}
+\label{proof-3.1.4.10}
+The question is local on $Y$, so we can suppose that $Y$ is affine.
+Then $X$ is a finite union of affine open sets $U_i$ ($1\leq i\leq n$); let $\fk{U}$ be the cover $(U_i)$.
+In addition, as $Y$ is a scheme, it follows from \sref[I]{1.5.5.10} that for every affine open $V\subset Y$, the canonical injection $u^{-1}\to X$ is an affine morphism; we conclude (Proposition~\sref{3.1.4.1} and (G, II, 5.2)) that we have a canonical isomorphism
+\[
+  \HH^\bullet(u^{-1}(V),\sh{F})\isoto\HH^\bullet(\Gamma*V,\sh{K}^\bullet),
+  \tag{1.4.10.1}
+\]
+where we set $\sh{K}^\bullet=u_*(\sh{C}^\bullet(\fk{U},\sh{F}))$.
+According to Lemma~\sref{3.1.4.1} and \sref[I]{1.9.2.2}, $\sh{K}^\bullet$ is a quasi-coherent $\OO_Y$-module; moreover, it constitutes a \emph{complex of sheaves} since so is $\sh{C}^\bullet(\fk{U},\sh{F})$.
+It then follows from the definition of the cohomology $\sh{H}^\bullet(\sh{K}^\bullet)$ (G, II, 4.1) that the latter consists of quasi-coherent $\OO_Y$-modules \sref[I]{1.4.1.1}.
+As (for $V$ affine in $Y$) the functor $\Gamma(V,\sh{G})$ is exact in $\sh{G}$ on the category of quasi-coherent $\OO_Y$-modules, we have (G, II, 4.1)
+\[
+  \HH^\bullet(\Gamma(V,\sh{K}^\bullet))=\Gamma(V,\sh{H}^\bullet(\sh{K}^\bullet)).
+  \tag{1.4.10.2}
+\]
+
+Finally, we note that it follows from the definition of the canonical homomorphism
+\[
+  \HH^\bullet(\fk{U},\sh{F})\to\HH^\bullet(X,\sh{F}),
+\]
+given in (G, II, 5.2), that if $V'\subset V$ is a second affine open subset of $Y$, then the
+diagram
+\[
+  \xymatrix{
+    \HH^\bullet(u^{-1}(V),\sh{F})\ar[r]^\sim\ar[d] &
+    \HH^\bullet(\Gamma(V,\sh{K}^\bullet))\ar[d]\\
+    \HH^\bullet(u^{-1}(V'),\sh{F})\ar[r]^\sim &
+    \HH^\bullet(\Gamma(V',\sh{K}^\bullet))
+  }
+\]
+is commutative.
+We thus conclude from the above that the isomorphisms (1.4.10.1) define an isomorphism of $\OO_Y$-modules
+\[
+  \RR^\bullet u_*(\sh{F})\isoto\sh{H}^\bullet(\sh{K}^\bullet),
+  \tag{1.4.10.3}
+\]
+\oldpage[III]{92}
+and as a result, $\RR^\bullet u_*(\sh{F})$ is quasi-coherent.
+\end{proof}
+
+In addition, it follows from (1.4.10.3), (1.4.10.2), and (1.4.10.1) that:
+\begin{cor}[1.4.11]
+\label{3.1.4.11}
+Under the hypotheses of Proposition~\sref{3.1.4.10}, for every affine open set $V$ of $Y$, the canonical homomorphism
+\[
+  \HH^q(u^{-1}(V),\sh{F})\to\Gamma(V,\RR^1 u_*(\sh{F}))
+  \tag{1.4.11.1}
+\]
+is an isomorphism for all $q\geq 0$.
+\end{cor}
+
+\begin{cor}[1.4.12]
+\label{3.1.4.12}
+Suppose that the hypotheses of Proposition~\sref{3.1.4.10} are satisfied, and in addition suppose that $Y$ is quasi-compact.
+Then there exists an integer $r>0$ such that for every quasi-coherent $\OO_X$-module $\sh{F}$ and every integer $q>r$, we have $\RR^q u_*(\sh{F})=0$.
+If $Y$ is affine, then we can take for $r$ an integer such that there exists a cover of $X$ consisting of $r$ open affine sets.
+\end{cor}
+
+\begin{proof}
+\label{proof-3.1.4.12}
+As we can cover $Y$ by a finite number of affine open sets, we can reduce to proving the second assertion, by virtue of Corollary~\sref{3.1.4.11}.
+If $\fk{U}$ is a cover of $X$ by $r$ affine open sets, then we have $\HH^q(\fk{U},\sh{F})=0$ for $q>r$, since the cochains of $C^q(\fk{U},\sh{F})$ are alternating; the assertion thus follows from Proposition~\sref{3.1.4.1}.
+\end{proof}
+
+\begin{cor}[1.4.13]
+\label{3.1.4.13}
+Suppose that the hypotheses of Proposition~\sref{3.1.4.10} are satsified, and in addition suppose that $Y=\Spec(A)$ is affine.
+Then for every quasi-coherent $\OO_X$-module $\sh{F}$ and every $f\in A$, we have
+\[
+  \Gamma(Y_f,\RR^q u_*(\sh{F}))=(\Gamma(Y,\RR^q u_*(\sh{F}))_f
+\]
+up to canonical isomorphism.
+\end{cor}
+
+\begin{proof}
+\label{proof-3.1.4.13}
+This follows from the fact that $\RR^q u_*(\sh{F})$ is a quasi-coherent $\OO_Y$-module \sref[I]{1.1.3.7}.
+\end{proof}
+
+\begin{prop}[1.4.14]
+\label{3.1.4.14}
+Let $f:X\to Y$ be a separated and quasi-compact morphism, $g:Y\to Z$ an affine morphism.
+For every quasi-coherent $\OO_X$-module $\sh{F}$, the canonical homomorphism $\RR^p(g\circ f)_*(\sh{F})\to g_*(\RR^p f_*(\sh{F}))$ (\textbf{0},~12.2.5.2) is bijective for all $p$.
+\end{prop}
+
+\begin{proof}
+\label{proof-3.1.4.14}
+For every affine open subset $W$ of $Z$, $g^{-1}(W)$ is an affine open subset of $Y$.
+The homomorphism of presheaves defining the canonical homomorphism
+\[
+  \RR^p(g\circ f)_*(\sh{F})\to g_*(\RR^p f_*(\sh{F}))
+\]
+\sref[0]{0.12.2.5} is thus bijective by Corollary~\sref{3.1.4.11}.
+\end{proof}
+
+\begin{prop}[1.4.15]
+\label{3.1.4.15}
+Let $u:X\to Y$ be a separated morphism of finite type, $v:Y'\to Y$ a flat morphism of preschemes \sref[0]{0.6.7.1}; let $u'=u_{(Y')}$, such that we have the commutative diagram
+\[
+  \xymatrix{
+    X\ar[d]_u &
+    X'=X_{(Y')}\ar[l]_{v'}\ar[d]^{u'}\\
+    Y &
+    Y'\ar[l]_{v}.
+  }
+  \tag{1.4.15.1}
+\]
+Then for every quasi-coherent $\OO_X$-module $\sh{F}$, $\RR^q u_*'(\sh{F}')$ is canonically isomorphic to $\RR^q u_*(\sh{F})\otimes_{\OO_Y}\OO_{Y'}=v^*(\RR^q u_*(\sh{F}))$ for all $q\geq 0$, where $\sh{F}'={v'}^*(\sh{F})=\sh{F}\otimes_{\OO_Y}\OO_{Y'}$.
+\end{prop}
+
+\begin{proof}
+\label{proof-3.1.4.15}
+\oldpage[III]{93}
+The canonical homomorphism $\rho:\sh{F}\to v_*'({v'}^*(\sh{F}))$ (\textbf{0},~4.4.3.2) defines by functoriality a homomorphism
+\[
+  \RR^q u_*(\sh{F})\to\RR^q u_*(v_*'(\sh{F}')).
+  \tag{1.4.15.2}
+\]
+
+On the other hand, we have, by setting $w=u\circ v'=v\circ u'$, the canonical homomorphisms (\textbf{0}~,12.2.5.1 and 12.2.5.2)
+\[
+  \RR^q u_*(v_*'(\sh{F}'))\to\RR^q w_*(\sh{F}')\to v_*(\RR^q u_*'(\sh{F}')).
+  \tag{1.4.15.3}
+\]
+
+Composing (1.4.15.3) and (1.4.15.2), we have a homomorphism
+\[
+  \psi:\RR^q u_*(\sh{F})\to v_*(\RR^q u_*'(\sh{F}')),
+\]
+and finally we obtain a canonical homomorphism (whose definition does not make \emph{any assumptions} on $v$)
+\[
+  \psi^\sharp:v^*(\RR^q u_*(\sh{F}))\to\RR^q u_*'(\sh{F}'),
+  \tag{1.4.15.4}
+\]
+and it is necessary to prove that it is an isomorphism when $v$ is \emph{flat}.
+It is clear that the question is local on $Y$ and $Y'$, and we can therefore suppose that $Y=\Spec(A)$ and $Y'=\Spec(B)$; we will also use the following lemma:
+\begin{lem}
+\label{3.1.4.15.5}
+Let $\vphi:A\to B$ be a ring homomorphism, $Y=\Spec(A)$, $X=\Spec(B)$, $f:X\to Y$ the morphism corresponding to $\vphi$, and $M$ a $B$-module.
+For the $\OO_X$-module $\wt{M}$ to be $f$-flat \sref[0]{0.6.7.1}, it is necessary and sufficient for $M$ to be a flat $A$-module.
+In particular, for the morphism $f$ to be flat, it is necessary and sufficient for $B$ to be a flat $A$-module.
+\end{lem}
+
+This follows from the definition \sref[0]{0.6.7.1} and from \sref[0]{0.6.3.3}, taking into account \sref[I]{1.1.3.4}.
+
+This being so, it follows from (1.4.11.1) and the definitions of the homomorphisms (1.4.15.3) (cf.~\sref[0]{0.12.2.5}) that $\psi$ then corresponds to the composite morphism
+\[
+  \HH^q(X,\sh{F})\xrightarrow{\rho_q}\HH^q(X,v_*'({v'}^*(\sh{F})))\xrightarrow{\theta_q}\HH^q(X',{v'}^*(v_*'({v'}^*(\sh{F}))))\xrightarrow{\sigma_q}\HH^q(X',{v'}^*(\sh{F})),
+\]
+where $\rho_q$ and $\sigma_q$ are the homomorphisms in cohomology corresponding to the canonical morphisms $\rho$ and $\sigma:{v'}^*(v_*'(\sh{G}'))\to\sh{G}'$, and $\theta_q$ is the $\vphi$-morphism (\textbf{0},~12.1.3.1) relative to the $\OO_X$-module $v_*'({v'}^*(\sh{F}))$.
+But by the functoriality of $\theta_q$, we have the commutative diagram
+\[
+  \xymatrix{
+    \HH^q(X,\sh{F})\ar[rr]^{\rho_q}\ar[dd]_{\theta_q} & &
+    \HH^q(X,v_*'({v'}^*(\sh{F})))\ar[dd]^{\theta_q}\\\\
+    \HH^q(X',{v'}^*(\sh{F}))\ar[rr]^{{v'}^*(\rho_q)} & &
+    \HH^q(X',{v'}^*(v_*'({v'}^*(\sh{F})))),
+  }
+\]
+\oldpage[III]{94}
+and as by definition \sref[0]{0.4.4.3} ${v'}^*(\rho)$ is the inverse of $\sigma$, we see that the composite morphism considered above is finally none other than $\theta_q$; as a result, $\psi^\sharp$ is the associated $B$-homomorphism $\HH^q(X,\sh{F})\otimes_A B\to\HH^q(X',\sh{F}')$.
+As $u$ is of finite type, $X$ is a finite union of affine open sets $U_i$ ($1\leq i\leq r$); let $\fk{U}$ be the cover $(U_i)$.
+As $v$ is an affine morphism, so is $v'$ \sref[II]{2.1.6.5}[iii], and as a result the $U_i'={v'}^{-1}(U_i)$ form an affine open cover $\fk{U}'$ of $X'$.
+We then know (\textbf{0},~12.1.4.2) that the diagram
+\[
+  \xymatrix{
+    \HH^q(\fk{U},\sh{F})\ar[r]^{\theta_q}\ar[d] &
+    \HH^q(\fk{U}',\sh{F}')\ar[d]\\
+    \HH^q(X,\sh{F})\ar[r]^{\theta_q} &
+    \HH^q(X',\sh{F}')
+  }
+\]
+is commutative, and the vertical arrows are isomorphisms since $X$ and $X'$ are schemes \sref[I]{1.1.4.1}.
+As a result, it suffices to prove that the canonical $\vphi$-morphism $\theta_q:\HH^q(\fk{U},\sh{F})\to\HH^q(\fk{U}',\sh{F}')$ is such that the associated $B$-homomorphism
+\[
+  \HH^q(\fk{U},\sh{F})\otimes_A B\to\HH^q(\fk{U}',\sh{F}')
+\]
+is an isomorphism.
+For every sequence $\mathbf{s}=(i_k)_{0\leq k\leq p}$ of $p+1$ indices of $[1,r]$, set $U_\mathbf{s}=\bigcap_{k=0}^p U_{i_k}$, $U_\mathbf{s}'=\bigcap_{k=0}^p U_{i_k}'={v'}^{-1}(U_\mathbf{s})$, $M_\mathbf{s}=\Gamma(U_\mathbf{s},\sh{F})$, and $M_\mathbf{s}'=\Gamma(U_\mathbf{s}',\sh{F}')$.
+The canonical map $M_\mathbf{s}\otimes_A B\to M_\mathbf{s}'$ is an isomorphism \sref[I]{1.1.6.5}, hence the canonical map $C^p(\fk{U},\sh{F})\otimes_A B\to C^p(\fk{U}',\sh{F}')$ is an isomorphism, by which $d\otimes 1$ identifies with the coboundary map $C^p(\fk{U}',\sh{F}')\to C^{p+1}(\fk{U}',\sh{F}')$.
+As $B$ is a \emph{flat} $A$-module, it follows from the definition of the cohomology modules that the canonical map $\HH^q(\fk{U},\sh{F})\otimes_A B\to\HH^q(\fk{U}',\sh{F}')$ is an isomorhism \sref[0]{0.6.1.1}.
+This result will later be generalized in \textsection6.
+\end{proof}
+
+\begin{cor}[1.4.16]
+\label{3.1.4.16}
+Let $A$ be a ring, $X$ an $A$-scheme of finite type, and $B$ an $A$-algebra which is faithfully flat over $A$.
+For $X$ to be affine, it is necessary and sufficient for $X\otimes_A B$ to be.
+\end{cor}
+
+\begin{proof}
+\label{proof-3.1.4.16}
+The condition is evidently necessary \sref[I]{1.3.2.2}; we show that it is sufficient.
+As $X$ is separated over $A$ and the morphism $\Spec(B)\to\Spec(A)$ is flat, it follows from Proposition~\sref{3.1.4.1} that we have
+\[
+  \HH^i(X\otimes_A B,\sh{F}\otimes_A B)=\HH^i(X,\sh{F})\otimes_A B
+  \tag{1.4.16.1}
+\]
+for every $i\geq 0$ and every quasi-coherent $\OO_X$-module $\sh{F}$.
+If $X\otimes_A B$ is affine, the left hand side of (1.4.16.1) is zero for $i=1$, hence so is $\HH^1(X,\sh{F})$ since $B$ is a faithfully flat $A$-module.
+As $X$ is a quasi-compact scheme, we finish the proof by Serre's criterion \sref[II]{2.5.2.1}.
+\end{proof}
+
+\begin{prop}[1.4.17]
+\label{3.1.4.17}
+Let $X$ be a prescheme, $0\to\sh{F}\xrightarrow{u}\sh{G}\xrightarrow{v}\sh{H}\to 0$ an exact sequence of $\OO_X$-modules.
+If $\sh{F}$ and $\sh{H}$ are quasi-coherent, then so is $\sh{G}$.
+\end{prop}
+
+\begin{proof}
+\label{proof-3.1.4.17}
+\oldpage[III]{95}
+The question is local on $X$, so we can suppose that $X=\Spec(A)$ is affine, and it then suffices to prove that $\sh{G}$ satisfies the conditions (d1) and (d2) of \sref[I]{1.1.4.1} (with $V=X$).
+The verification of (d2) is immediate, because if $t\in\Gamma(X,\sh{G})$ is zero when restricted to $D(f)$, then so is its image $v(t)\in\Gamma(X,\sh{H})$; therefore there exists an $m>0$ such that $f^m v(t)=v(f^m t)=0$ \sref[I]{1.1.4.1}, and as $\Gamma$ is left exact, $f^m t=u(s)$, where $s\in\Gamma(X,\sh{F})$; as $u$ is injective, the restriction of $s$ to $D(f)$ is zero, hence \sref[I]{1.1.4.1} there exists an integer $n>0$ such that $f^n s=0$; we finally deduce that $f^{m+n}t=u(f^n s)=0$.
+
+We now check (d1); let $t'\in\Gamma(D(f),\sh{G})$; as $\sh{H}$ is quasi-coherent, there exists an integer $m$ such that $f^m v(t')=v(f^m t')$ extends to a section $z\in\Gamma(X,\sh{H})$ \sref[I]{1.1.4.1}.
+But in virtue of Theorem~\sref{3.1.3.1} (or (\textbf{I},~5.1.9.2)) applied to the quasi-coherent $\OO_X$-module $\sh{F}$, the sequence $\Gamma(X,\sh{G})\to\Gamma(X,\sh{H})\to 0$ is exact, so there exists $t\in\Gamma(X,\sh{G})$ such that $z=v(t)$; we thus see that $v(f^m t'-t'')=0$, denoting by $t''$ the restriction of $t$ to $D(f)$; thus we have $f^m t'-t''=u(s')$, where $s'\in\Gamma(D(f),\sh{F})$.
+But as $\sh{F}$ is quasi-coherent, there exists an integer $n>0$ such that $f^n s'$ extends to a section $s\in\Gamma(X,\sh{F})$; as $f^{m+n}t'-f^n t''=u(f^n s')$, we see that $f^{m+n}t'$ is the restriction to $D(f)$ of a section $f^n t+u(f^n s)\in\Gamma(X,\sh{G})$, which finishes the proof.
+\end{proof}
 
