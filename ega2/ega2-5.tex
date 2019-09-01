@@ -842,3 +842,48 @@ The condition is sufficient, by \sref{2.5.5.3} and \sref{2.5.4.3}[ii].
 It is necessary because, with the notation of \sref{2.5.6.1}, if $X$ is proper over $S$, then $X'$ is proper over $S$, because it is projective over $X$, and thus proper over $X$ \sref{2.5.5.3}, and our claim follows from \sref{2.5.4.2}[ii];
 furthermore, since $X'$ is quasi-projective over $S$, it is projective over $S$, by \sref{2.5.5.3}.
 \end{proof}
+
+\begin{cor}[5.6.3]
+\label{2.5.6.3}
+Let $S$ be a locally Noetherian prescheme, and $X$ an $S$-scheme of finite type over $S$, with structure morphism $f_0:X\to S$.
+For $X$ to be proper over $S$, it is necessary and sufficient that, for every morphism \emph{of finite type} $S'\to S$, $(f_0)_{(S')}:X_{(S')}\to S'$ be a closed morphism.
+It even suffices for this condition to be verified only for every $S$-prescheme of the form $S'=S\otimes_\bb{Z}\bb{Z}[T_1,\ldots,T_n]$ (where the $T_i$ are indeterminates).
+\end{cor}
+
+\begin{proof}
+\label{proof-2.5.6.3}
+The condition being clearly necessary, we now show that it is sufficient.
+Since the question is local on $S$ and $S'$ \sref{2.5.4.1}, we can suppose that $S$ and $S'$ are affine and Noetherian.
+By Chow's lemma, there exists a projective $S$-scheme $P$, an immersion $j:X'\to P$, and a surjective projective morphism $f:X'\to X$, such that the diagram
+\[
+  \xymatrix{
+    X \ar[d]^{f_0}
+    & X' \ar[l]^f \ar[d]_j\\
+    S
+    & P \ar[l]_r
+  }
+\]
+commutes.
+Since $P$ is of finite type over $S$, the first hypothesis implies that the projection $q_2:X\times_S P\to P$ is a \emph{closed} morphism.
+But the immersion $j$ is the composition of $q_2$ and the morphism $f\times1$ from $X'\times_S P$ to $X\times_S P$;
+but $f$, being projective, is proper \sref{2.5.5.3}, and so $f\times1$ is closed.
+We thus conclude that $j$ is a closed immersion, and thus proper \sref{2.5.4.2}[i].
+Furthermore, the structure morphism $r:P\to S$ is projective, and thus proper \sref{2.5.5.3}, so $f_0\circ f=r\circ j$ is proper \sref{2.5.4.2}[ii];
+finally, since $f$ is surjective, $f_0$ is proper, by \sref{2.5.4.3}.
+
+To prove the proposition using only the second, weaker hypothesis (where $S'$ is of the form $S\otimes_\bb{Z}\bb{Z}[T_1,\ldots,T_n]$), it suffices to show that it implies the first.
+But, if $S'$ is affine and of finite type over $S=\Spec(A)$,
+\oldpage[II]{110}
+then we have $S'=\Spec(A[c_1,\ldots,c_n])$ \sref[I]{1.6.3.3}, and $S'$ is thus isomorphic to a closed subprescheme of $S''=\Spec(A[T_1,\ldots,T_n])$ (where the $T_i$ are indeterminates).
+In the commutative diagram
+\[
+  \xymatrix{
+    X\times_S S' \ar[r]^{1_X\times j} \ar[d]_{(f_0)_{(S')}}
+    & X\times_S S'' \ar[d]^{(f_0)_{(S'')}}\\
+    S' \ar[r]_j
+    & S''
+  }
+\]
+both $j$ and $1_X\times j$ are closed immersions \sref[I]{1.4.3.1}, and $(f_0)_{(S')}$ is closed by hypothesis;
+thus $(f_0)_{(S'')}$ is also closed.
+\end{proof}
