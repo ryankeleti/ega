@@ -1,2 +1,411 @@
 \section{Combinatorial dimension of a topological space}
 \label{section:combinatorial-dimension-of-a-topological-space}
+
+\oldpage[0\textsubscript{IV}]{6}
+
+\subsection{Combinatorial dimension of a topological space}
+\label{subsection:combinatorial-dimension-of-a-topological-space}
+
+\begin{env}[14.1.1]
+\label{0.14.1.1}
+Let $I$ be an ordered set;
+a \emph{chain} of elements of $I$ is, by definition, a strictly-increasing finite sequence $i_0<i_1<\ldots<i_n$ of elements of $I$ ($n\geq0$);
+by definition, the \emph{length} of this chain is $n$.
+If $X$ is a topological space, the set of its \emph{irreducible closed} subsets is ordered by inclusion, and so we have the notion of a \emph{chain} of irreducible closed subsets of $X$.
+\end{env}
+
+\begin{defn}[14.1.2]
+\label{0.14.1.2}
+Let $X$ be a topological space.
+We define the combinatorial dimension of $X$ (or simply the dimension of $X$, if there is no risk of confusion), denoted by $\dimc(X)$ (or simply $\dim(X)$), to be the upper bound of lengths of chains of irreducible closed subsets of $X$.
+For all $x\in X$, we define the combinatorial dimension of $X$ at $x$ (or simply the dimension of $X$ at $x$), denoted by $\dim_x(X)$, to be the number $\inf_U(\dim(U))$, where $U$ varies over the open neighbourhoods of $x$ in $X$.
+\end{defn}
+
+It follows from this definition that we have
+\[
+    \dim(\emp) = -\infty
+\]
+(the upper bound in $\overline{\bb{R}}$ of the empty set being $-\infty$).
+If $(X_\alpha)$ is the family of irreducible components of $X$, then we have
+\begin{equation*}
+\label{0.14.1.2.1}
+    \dim(X) = \sup_\alpha\dim(X_\alpha)\tag{14.1.2.1}
+\end{equation*}
+because every chain of irreducible closed subsets of $X$ is, by definition, contained in some irreducible component of $X$, and, conversely, the irreducible components are closed in $X$, so every irreducible closed subset of an $X_\alpha$ is a irreducible closed subset of $X$.
+
+\begin{defn}[14.1.3]
+\label{0.14.1.3}
+We say that a topological space $X$ is equidimensional if all its irreducible components have the same dimension (which is thus equal to $\dim(X)$, by \sref{0.14.1.2.1}).
+\end{defn}
+
+\begin{prop}[14.1.4]
+\label{0.14.1.4}
+\medskip\noindent
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item For every closed subset $Y$ of a topological space $X$, we have $\dim(Y)\leq\dim(X)$.
+    \item If a topological space $X$ is a finite union of closed subsets $X_i$, then we have $\dim(X)=\sup_i\dim(X_i)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.1.4}
+For every irreducible closed subset $Z$ of $Y$, the closure $\overline{Z}$ of $Z$ in $X$ is irreducible \sref[0\textsubscript{I}]{0.2.1.2}, and $\overline{Z}\cap Y=Z$, whence (i).
+Now, if $X=\bigcup_{i=1}^nX_i$, where the $X_i$ are closed, then every irreducible closed subset of $X$ is contained in one of the $X_i$ \sref[0\textsubscript{I}]{0.2.1.1}, and so every chain of irreducible closed subsets of $X$ is contained in one of the $X_i$, whence (ii).
+\end{proof}
+
+From \sref{0.14.1.4}[i], we see that, for all $x\in X$, we can also write
+\begin{equation*}
+\label{0.14.1.4.1}
+    \dim_x(X) = \lim_U\dim(U)\tag{14.1.4.1}
+\end{equation*}
+where the limit is taken over the decreasing filtered set of open neighbourhoods of $x$ in $X$.
+
+\oldpage[0\textsubscript{IV}]{7}
+
+\begin{cor}[14.1.5]
+\label{0.14.1.5}
+Let $X$ be a topological space, $x$ a point of $X$, $U$ a neighbourhood of $x$, and $Y_i$ ($1\leq i\leq n$) closed subsets of $U$ such that, for all $i$, $x\in Y_i$, and such that $U$ is the union of the $Y_i$.
+Then we have
+\begin{equation*}
+\label{0.14.1.5.1}
+    \dim_x(X) = \sup_i(\dim_x(Y_i)).\tag{14.1.5.1}
+\end{equation*}
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.1.5}
+It follows from \sref{0.14.1.4}[ii] that we have $\dim_x(X) = \inf_V(\sup_i(\dim(Y_i\cap V)))$, where $V$ ranges over the set of open neighbourhoods of $x$ that are contained in $U$;
+similarly, we have $\dim_x(Y_i) = \inf_V(\dim(Y_i\cap V))$ for all $i$.
+The corollary is thus evident if
+\[
+    \sup_i(\dim_x(Y_i)) = +\infty;
+\]
+if this were not the case, then there would be an open neighbourhood $V_0\subset U$ of $x$ such that $\dim(Y_i\cap V)=\dim_x(Y_i)$ for $1\leq i\leq n$ and for all $V\subset V_0$, whence the conclusion.
+\end{proof}
+
+\begin{prop}[14.1.6]
+\label{0.14.1.6}
+For every topological space $X$, we have $\dim(X)=\sup_{x\in X}\dim_x(X)$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.1.6}
+It follows from Definition~\sref{0.14.1.2} and Proposition~\sref{0.14.1.4} that $\dim_x(X)\leq\dim(X)$ for all $x\in X$.
+Now, let $Z_0\subset Z_1\subset\ldots\subset Z_n$ be a chain of irreducible closed subsets of $X$, and let $x\in Z_0$;
+for every open subset $U\subset X$ that contains $x$, $U\cap Z_i$ is irreducible \sref[0\textsubscript{I}]{0.2.1.6} and closed in $U$, and since we have $\overline{U\cap Z_i}=Z_i$ in $X$, the $U\cap Z_i$ are pairwise distinct;
+thus $\dim(U)\geq n$, which finishes the proof.
+\end{proof}
+
+\begin{cor}[14.1.7]
+\label{0.14.1.7}
+If $(X_\alpha)$ is an open, or closed and locally finite, cover of $X$, then $\dim(X)=\sup_\alpha(\dim(X_\alpha))$.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.1.7}
+If $X_\alpha$ is a neighbourhood of $x\in X$, then $\dim_x(X)\leq\dim(X_\alpha)$, whence the claim for open covers.
+On the other hand, if the $X_\alpha$ are closed, and $U$ is a neighbourhood of $x\in X$ which meets only finitely many of the $X_\alpha$, then
+\[
+    \dim_x(X)\leq\dim(U)=\sup_\alpha(\dim(U\cap X_\alpha))\leq\sup_\alpha(\dim(X_\alpha))
+\]
+by \sref{0.14.1.4}, whence the other claim.
+\end{proof}
+
+\begin{cor}[14.1.8]
+\label{0.14.1.8}
+Let $X$ be a Noetherian Kolmogoroff space \sref[0\textsubscript{I}]{0.2.1.3}, and $F$ the set of closed points of $X$.
+Then $\dim(X)=\sup_{x\in F}\dim_x(X)$.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.1.8}
+With the notation from the proof of \sref{0.14.1.6}, it suffices to note that there exists a closed point in $Z_0$ \sref[0\textsubscript{I}]{0.2.1.3}.
+\end{proof}
+
+\begin{prop}[14.1.9]
+\label{0.14.1.9}
+Let $X$ be a nonempty Noetherian Kolmogoroff space.
+To have $\dim(X)=0$, it is necessary and sufficient for $X$ to be finite and discrete.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.1.9}
+If a space $X$ is separated (and \emph{a fortiori} if $X$ is a discrete space), then all the irreducible closed subsets of $X$ are single points, and so $\dim(X)=0$.
+Conversely, suppose that $X$ is a Noetherian Kolmogoroff space such that $\dim(X)=0$;
+since every irreducible component of $X$ contains a closed point \sref[0\textsubscript{I}]{0.2.1.3}, it must be exactly this single point.
+Since $X$ has only a finite number of irreducible components, it is thus finite and discrete.
+\end{proof}
+
+\begin{cor}[14.1.10]
+\label{0.14.1.10}
+Let $X$ be a Noetherian Kolmogoroff space.
+For a point $x\in X$ to be isolated, it is necessary and sufficient to have $\dim_x(X)=0$.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.1.10}
+The condition is clearly necessary (without any hypotheses on $X$).
+It is also sufficient,
+\oldpage[0\textsubscript{IV}]{8}
+because it implies that $\dim(U)=0$ for any open neighbourhood $U$ of $x$, and since $U$ is a Noetherian Kolmogoroff space, $U$ is finite and discrete.
+\end{proof}
+
+\begin{prop}[14.1.11]
+\label{0.14.1.11}
+The function $x\mapsto\dim_x(X)$ is upper semi-continuous on $X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.1.11}
+It is clear that this function is upper semi-continuous at every point where its value is $+\infty$.
+So suppose that $\dim_x(X)=n<+\infty$;
+then Equation~\sref{0.14.1.4.1} shows that there exists an open neighbourhood $U_0$ of $x$ such that $\dim(U)=n$ for every open neighbourhood $U\subset U_0$ of $x$.
+So, for all $y\in U_0$ and every open neighbourhood $V\subset U_0$ of $y$, we have $\dim(V)\leq\dim(U_0)=n$ \sref{0.14.1.4};
+we thus deduce from \sref{0.14.1.4.1} that $\dim_y(X)\leq n$.
+\end{proof}
+
+\begin{rmk}[14.1.12]
+\label{0.14.1.12}
+If $X$ and $Y$ are topological spaces, and $f:X\to Y$ a continuous map, then it can be the case that $\dim(f(X))>\dim(X)$;
+we obtain such an example by taking $X$ to be a discrete space with 2 points, $a$ and $b$, and $Y$ to be the set $\{a,b\}$ endowed with the topology for which\footnote{\emph{[Trans.] This is now often referred to as the \emph{Sierpiński space}, or the \emph{connected two-point set}.}} the closed sets are $\emp$, $\{a\}$, and $\{a,b\}$;
+if $f:X\to Y$ is the identity map, then $\dim(Y)=1$ and $\dim(X)=0$.
+We note that $Y$ is the spectrum of a discrete valuation ring $A$, of which $a$ is the unique closed point, and $b$ the generic point;
+if $K$ and $k$ are the field of fractions and the residue field of $A$ (respectively), then $X$ is the spectrum of the ring $k\times K$, and $f$ is the continuous map corresponding to the homomorphism $(\vphi,\psi):A\to k\times K$, where $\vphi:A\to k$ and $\psi:A\to K$ are the canonical homomorphism (cf.~\sref[IV]{4.5.4.3}).
+\end{rmk}
+
+\subsection{Codimension of a closed subset}
+\label{subsection:codimension-of-a-closed-subset}
+
+\begin{defn}[14.2.1]
+\label{0.14.2.1}
+Given an irreducible closed subset $Y$ of a topological space $X$, we define the combinatorial codimension (or simply codimension) of $Y$ in $X$, denoted by $\codim(Y,X)$, to be the upper bound of the lengths of chains of irreducible closed subsets of $X$ of which $Y$ is the smallest element.
+If $Y$ is an arbitrary closed subset of $X$, then we define the codimension of $Y$ in $X$, again denoted by $\codim(Y,X)$, to be the lower bound of the codimensions in $X$ of the irreducible components of $Y$.
+We say that $X$ is equicodimensional if all the minimal irreducible closed subsets of $X$ has the same codimension in $X$.
+\end{defn}
+
+It follows from this definition that $\codim(\emp,X)=+\infty$, since the lower bound of the empty set of $\overline{\bb{R}}$ is $+\infty$.
+If $Y$ is closed in $X$, and if $(X_\alpha)$ (resp. $(Y_\alpha)$) is the family of irreducible components of $X$ (resp. $Y$), then every $Y_\beta$ is contained in some $X_\alpha$, and, more generally, every chain of irreducible closed subsets of $X$ of which $Y_\beta$ is the smallest element is formed of subsets of some $X_\alpha$;
+we thus have
+\begin{equation*}
+\label{0.14.2.1.1}
+    \codim(Y,X) = \inf_\beta(\sup_\alpha(\codim(Y_\beta,X_\alpha)))\tag{14.2.1.1}
+\end{equation*}
+where, for every $\beta$, $\alpha$ ranges over the set of indices such that $Y_\beta\subset X_\alpha$.
+
+\begin{prop}[14.2.2]
+\label{0.14.2.2}
+Let $X$ be a topological space.
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item If $\Phi$ is the set of irreducible closed subsets of $X$, then
+        \begin{equation*}
+        \label{0.14.2.2.1}
+            \dim(X) = \sup_{Y\in\Phi}(\codim(Y,X)).\tag{14.2.2.1}
+        \end{equation*}
+    \item For every nonempty closed subset $Y$ of $X$, we have
+        \begin{equation*}
+        \label{0.14.2.2.2}
+            \dim(Y)+\codim(Y,X) \leq \dim(X).\tag{14.2.2.2}
+        \end{equation*}
+    \item If $Y$, $Z$, and $T$ are closed subsets of $X$ such that $Y\subset Z\subset T$, then
+        \begin{equation*}
+        \label{0.14.2.2.3}
+            \codim(Y,Z)+\codim(Z,T) \leq \codim(Y,T).\tag{14.2.2.3}
+        \end{equation*}
+    \item For a closed subset $Y$ of $X$ to be such that $\codim(Y,X)=0$, it is necessary and sufficient for $Y$ to contain an irreducible component of $X$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.2.2}
+Claims~(i) and (iv) are immediate consequences of Definition~\sref{0.14.2.1}.
+To show (ii), we can restrict to the case where $Y$ is irreducible, and then the equation follows from Definitions~\sref{0.14.1.1} and \sref{0.14.2.1}.
+Finally, to show (iii), we can, by Definition~\sref{0.14.2.1}, first restrict to the case where $Y$ is irreducible;
+then $\codim(Y,Z)=\sup_\alpha(\codim(Y,Z_\alpha))$ for the irreducible components $Z_\alpha$ of $Z$ that contain $Y$;
+it is clear that $\codim(Y,T)\geq\codim(Y,Z)$, so the inequality is true if $\codim(Y,Z)=+\infty$;
+but if this were not the case, then there would exist some $\alpha$ such that $\codim(Y,Z)=\codim(Y,Z_\alpha)$, and by \sref{0.14.2.1}, we can restrict to the case where $Z$ itself is irreducible;
+but then the inequality in \sref{0.14.2.2.3} is an evident consequence of Definition~\sref{0.14.2.1}.
+\end{proof}
+
+\begin{prop}[14.2.3]
+\label{0.14.2.3}
+Let $X$ be a topological space, and $Y$ a closed subset of $X$.
+For every open subset $U$ of $X$, we have
+\begin{equation*}
+\label{0.14.2.3.1}
+    \codim(Y\cap U,U) \geq \codim(Y,X).\tag{14.2.3.1}
+\end{equation*}
+
+Furthermore, for this inequality \sref{0.14.2.3.1} to be an equality, it is necessary and sufficient to have $\codim(Y,X)=\inf_\alpha(\codim(Y_\alpha,X))$, where $(Y_\alpha)$ is the family of irreducible components of $Y$ that meet $U$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.2.3}
+We know \sref[0\textsubscript{I}]{0.2.1.6} that $Z\mapsto\overline{Z}$ is a bijection from the set of irreducible closed subsets of $U$ to the set of irreducible closed subsets of $X$ that meet $U$, and, in particular, induces a correspondence between the irreducible components of $Y\cap U$ and the irreducible components of $Y$ that meet $U$;
+if $Y_\alpha$ is one of the latter such components, then we have $\codim(Y_\alpha,X)=\codim(Y_\alpha\cap U,U)$, and the proposition then follows from Definition~\sref{0.14.2.1}.
+\end{proof}
+
+\begin{defn}[14.2.4]
+\label{0.14.2.4}
+Let $X$ be a topological space, $Y$ a closed subset of $X$, and $x$ a point of $X$.
+We define the codimension of $Y$ in $X$ at the point $x$, denoted by $\codim_x(Y,X)$, to be the number $\sup_U(\codim(Y\cap U,U))$, where $U$ ranges over the set of open neighbourhoods of $x$ in $X$.
+\end{defn}
+
+By \sref{0.14.2.3}, we can also write
+\begin{equation*}
+\label{0.14.2.4.1}
+    \codim_x(Y,X) = \lim_U(\codim(Y\cap U, U))\tag{14.2.4.1}
+\end{equation*}
+where the limit is taken over the decreasing filtered set of open neighbourhoods of $x$ in $X$.
+We note that we have
+\[
+    \codim_x(Y,X) = +\infty \quad\text{if}\quad x\in X\setmin Y.
+\]
+
+\oldpage[0\textsubscript{IV}]{10}
+\begin{prop}[14.2.5]
+\label{0.14.2.5}
+If $(Y_i)_{1\leq i\leq n}$ is a finite family of closed subsets of a topological space $X$, and $Y$ is the union of this family, then
+\begin{equation*}
+\label{0.14.2.5.1}
+    \codim(Y,X) = \inf_i(\codim(Y_i,X)).\tag{14.2.5.1}
+\end{equation*}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.2.5}
+Indeed, every irreducible component of one of the $Y_i$ is contained in an irreducible component of $Y$, and, conversely, every irreducible component of $Y$ is also an irreducible component of ome of the $Y_i$ \sref[0\textsubscript{I}]{0.2.1.1};
+the conclusion then follows from Definition~\sref{0.14.2.1} and the inequality in \sref{0.14.2.2.3}.
+\end{proof}
+
+\begin{cor}
+\label{0.14.2.6}
+Let $X$ be a topological space, and $Y$ a locally-Noetherian closed subspace of $X$.
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item For all $x\in X$, there exists only a finite number of irreducible components $Y_i$ ($1\leq i\leq n$) of $Y$ that contain $x$, and we have $\codim_x(Y,X)=\inf_i(\codim(Y_i,X))$.
+    \item The function $x\mapsto\codim_x(Y,X)$ is lower semi-continuous on $X$.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.2.6}
+By hypothesis, there exists an open neighbourhood $U_0$ of $x$ in $X$ such that $Y\cap U_0$ is Noetherian, and so $U_0$ has only a finite number of irreducible components, which are the intersections of $U_0$ with the irreducible components of $Y$;
+\emph{a fortiori} there are only a finite number of irreducible components $Y_i$ ($1\leq i\leq n$) of $Y$ that contain $x$, and we can, by replacing $U_0$ with an open neighbourhood $U\subset U_0$ of $x$ that doesn't meet any of the $Y_j$ that do not contain $x$, assume that the $Y_i\cap U$ are the irreducible components of $Y\cap U$;
+for every open neighbourhood $V\subset U$ of $x$ in $X$, the $Y_i\cap V$ are thus the irreducible components of $Y\cap V$, and \sref{0.14.2.3} then shows that $\codim(Y_i,X)=\codim(Y_i\cap V,V)$, which proves (i).
+Further, for every $x'\in U$, the irreducible components of $Y$ that contain $x'$ are certain $Y_i$, and so $\codim_{x'}(Y,X)\geq\codim_x(Y,X)$, which proves (ii).
+\end{proof}
+
+\subsection{The chain condition}
+\label{subsection:the-chain-condition}
+
+\begin{env}[14.3.1]
+\label{0.14.3.1}
+In a topological space $X$, we say that a chain $Z_0\subset Z_1\subset\ldots\subset Z_n$ of irreducible closed subsets if \emph{saturated} if there does not exist an irreducible closed subset $Z'$, distinct from each of the $Z_i$, such that $Z_k\subset Z'\subset Z_{k+1}$ for any $k$.
+\end{env}
+
+\begin{prop}[14.3.2]
+\label{0.14.3.2}
+Let $X$ be a topological space such that, for any two irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have $\codim(Y,Z)<+\infty$.
+The following two conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item Any two saturated chains of closed irreducible subsets of $X$ that have the same first and last elements as one another have the same length.
+    \item If $Y$, $Z$, and $T$ are irreducible closed subsets of $X$ such that $Y\subset Z\subset T$, then
+        \begin{equation*}
+        \label{0.14.3.2.1}
+            \codim(Y,T) = \codim(Y,Z)+\codim(Z,T).\tag{14.3.2.1}
+        \end{equation*}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.3.2}
+It is immediate that \emph{(a)} implies \emph{(b)}.
+Conversely, suppose that \emph{(b)} is satisfied, and we will show that, if we have two saturated chains with the same first and last elements as one another, of lengths $m$ and $n\leq m$ (respectively), then $m=n$.
+We proceed by induction on $n$, with the proposition being clear for $n=1$.
+So suppose that $1<n<m$, and let $Z_0\subset Z_1\subset\ldots\subset Z_n$ be a saturated chain such that there exists another saturated chain, with first element $Z_0$ and last element $Z_n$, of length $m$.
+Since $\codim(Z_0,Z_n)\geq m>n$, and $\codim(Z_0,Z_1)=1$, it follows from \emph{(b)} that $\codim(Z_1,Z_n)=\codim(Z_0,Z_n)-1>n-1$, which contradicts our induction hypothesis.
+\end{proof}
+
+When the conditions of \sref{0.14.3.2} are satisfied, we say that $X$ satisfies the \emph{chain condition}, or that it is a \emph{catenary space}.
+It is clear that every closed subspace of a catenary space is catenary.
+
+\begin{prop}[14.3.3]
+\label{0.14.3.3}
+Let $X$ be a Noetherian Kolmogoroff space of finite dimension.
+The following conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item Any two maximal chains of irreducible closed subsets of $X$ have the same length.
+    \item $X$ is equidimensional, equicodimensional, and catenary.
+    \item $X$ is equidimensional, and, for any irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have
+        \begin{equation*}
+        \label{0.14.3.3.1}
+            \dim(Z) = \dim(Y)+\codim(Y,Z).\tag{14.3.3.1}
+        \end{equation*}
+    \item $X$ is equicodimensional, and, for any irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have
+        \begin{equation*}
+        \label{0.14.3.3.2}
+            \codim(Y,Z) = \codim(Y,Z)+\codim(Z,X).\tag{14.3.3.2}
+        \end{equation*}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.3.3}
+The hypotheses on $X$ imply that the first and last elements of a maximal chain of irreducible closed subsets of $X$ are necessarily a closed point and an irreducible component of $X$ (respectively) \sref[0\textsubscript{I}]{0.2.1.3};
+further, every saturated chain with first element $Y$ and last element $Z$ (thus $Y\subset Z$) is contained in a maximal chain whose elements differ from those of the given chain, or are contained in $Y$, or contain $Z$.
+These remarks immediately establish the equivalence between \emph{(a)} and \emph{(b)}, and also show that, if \emph{(a)} is satisfied, then we have, for every irreducible closed subset $Y$ fo $X$,
+\begin{equation*}
+\label{0.14.3.3.3}
+    \dim(Y)+\codim(Y,X) = \dim(X);
+\end{equation*}
+from \sref{0.14.3.2.1}, we immediately deduce \sref{0.14.3.3.1} and \sref{0.14.3.3.2} from \sref{0.14.3.3.3}.
+Conversely, \sref{0.14.3.3.1} implies \sref{0.14.3.2.1}, and so \sref{0.14.3.3.1} implies the chain condition, by \sref{0.14.3.2};
+further, by applying \sref{0.14.3.3.1} to the case where $Y$ is a single closed point $x$ of $X$, and $Z$ is an irreducible component of $X$, we get that $\codim(\{x\},X)=\dim(Z)$;
+we thus conclude that \emph{(c)} implies \emph{(b)}.
+Similarly, \sref{0.14.3.3.2} implies \sref{0.14.3.2.1}, and thus the chain condition;
+further, with the same choice of $Y$ and $Z$ as above, \sref{0.14.3.3.2} again implies that $\codim(\{x\},X)=\dim(Z)$, and so (since every irreducible component of $X$ contains a closed point, by \sref[0\textsubscript{I}]{0.2.1.3}) \emph{(d)} implies \emph{(b)}.
+\end{proof}
+
+We say that a Noetherian Kolmogoroff space is \emph{biequidimensional} if it is of \emph{finite dimension} and if it verifies any of the (equivalent) conditions of \sref{0.14.3.3}.
+
+\begin{cor}[14.3.4]
+\label{0.14.3.4}
+Let $X$ be a biequidimensional Noetherian Kolmogoroff space;
+then, for every closed point $x$ of $X$, and every irreducible component $Z$ of $X$, we have
+\begin{equation*}
+\label{0.14.3.4.1}
+    \dim(X) = \dim(Z) = \codim(\{x\},X) = \dim_x(X).\tag{0.14.3.4.1}
+\end{equation*}
+\end{cor}
+
+\oldpage[0\textsubscript{IV}]{12}
+\begin{proof}
+\label{proof-0.14.3.4}
+The last equality follows from the fact that, if $Y_0=\{x\}\subset Y_1\subset\ldots\subset Y_m$ is a maximal chain of irreducible closed subsets of $X$, and $U$ an open neighbourhood of $x$, then the $U\cap Y_i$ are pairwise disjoint irreducible closed subsets of $U$ (because $\overline{U\cap Y_i}=Y_i$), whence $\dim(U)=\dim(X)$, by \sref{0.14.1.4}.
+\end{proof}
+
+\begin{cor}[14.3.5]
+\label{0.14.3.5}
+Let $X$ be a Noetherian Kolmogoroff space;
+if $X$ is biequidimensional, then so too is every union of irreducible components of $X$, and every irreducible closed subset of $X$.
+Further, for every closed subset $Y$ of $X$, we have
+\begin{equation*}
+\label{0.14.3.5.1}
+    \dim(Y)+\codim(Y,X) = \dim(X).\tag{14.3.5.1}
+\end{equation*}
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.3.5}
+Every chain of irreducible closed subsets of $X$ is contained in an irreducible component of $X$, and so the first claim follows immediately from \sref{0.14.3.3}.
+Further, if $X'$ is an irreducible closed subset of $X$, then $X'$ trivially satisfies the conditions of \sref{0.14.3.3}[c], whence the second claim.
+
+Finally, to show \sref{0.14.3.5.1}, note that we have seen, in the proof of \sref{0.14.3.3}, that this equation is true whenever $Y$ is irreducible;
+if $Y_i$ ($1\leq i\leq m$) are the irreducible components of $Y$, then the $Y_i$ for which $\dim(Y_i)$ is the largest are also those for which $\codim(Y_i,X)$ is the smallest;
+so \sref{0.14.3.5.1} follows from the definitions of $\dim(Y)$ and $\codim(Y,X)$.
+\end{proof}
+
+\begin{rmk}[14.3.6]
+\label{0.14.3.6}
+The reader will note that the proof of \sref{0.14.3.2} applies to any ordered set, and the fact that we are working with the example of a set of irreducible closed subsets of a topological space is not used at all in the proof.
+It is the same in the proof of \sref{0.14.3.3}, which holds, more generally, for any ordered set $E$ such that, for all $x\in E$, there exists some $z\leq x$ which is \emph{minimal} in $E$, and such that the length of chains of elements of $E$ is bounded.
+\end{rmk}
