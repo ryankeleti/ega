@@ -1,3 +1,67 @@
 \section{Supplement on flat modules}
 \label{section:supplement-on-flat-modules}
 
+For the proofs that are missing in \hyperref[subsection:relations-between-flat-modules-and-free-modules]{(10.1)} and \hyperref[subsection:local-flatness-criteria]{(10.2)}, we refer the reader to Bourbaki, \emph{Alg. comm.}, chap.~II and III.
+
+\subsection{Relations between flat modules and free modules}
+\label{subsection:relations-between-flat-modules-and-free-modules}
+
+\begin{env}[10.1.1]
+\label{0.10.1.1}
+Let $A$ be a ring, $\fk{J}$ an ideal of $A$, and $M$ an $A$-module;
+for every integer $p\geq0$, we have a canonical homomorphism of $(A/\fk{J})$-modules
+\begin{equation*}
+\label{0.10.1.1.1}
+    \vphi_p: (M/\fk{J}M) \otimes_{A/\fk{J}} (\fk{J}^p/\fk{J}^{p+1}) \to \fk{J}^pM/\fk{J}^{p+1}M\tag{10.1.1.1}
+\end{equation*}
+which is evidently \emph{surjective}.
+We denote by $\gr(A)=\oplus_{p\geq0}\fk{J}^p/\fk{J}^{p+1}$ the graded ring associated to $A$ filtered by the $\fk{J}^p$, and by $\gr(M)=\oplus_{p\geq0}\fk{J}^pM/\fk{J}^{p+1}M$ the graded $\gr(A)$-module associated to $M$ filtered by the $\fk{J}^pM$;
+we then have $\gr_p(A)=\fk{J}^p/\fk{J}^{p+1}$, and $\gr_p(M)=\fk{J}^pM/\fk{J}^{p+1}M$;
+the $\vphi$ define a \emph{surjective} homomorphism of graded $\gr(A)$-modules
+\begin{equation*}
+\label{0.10.1.1.2}
+    \vphi: \gr_0(M) \otimes_{\gr_0(A)} \gr(A) \to \gr(M).\tag{10.1.1.2}
+\end{equation*}
+\end{env}
+
+\oldpage[0\textsubscript{III}]{18}
+\begin{env}[10.1.2]
+\label{0.10.1.2}
+Suppose that \emph{one} of the following hypotheses is satisfied:
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item $\fk{J}$ is nilpotent;
+    \item $A$ is Noetherian, $\fk{J}$ is contained in the radical of $A$, and $M$ is of finite type.
+\end{enumerate}
+Then the following properties are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $M$ is a free $A$-module.
+    \item $M/\fk{J}M=N\otimes_A(A/\fk{J})$ is a free $(A/\fk{J})$-module, and $\Tor_1^A(M,A/\fk{J})=0$.
+    \item $M/\fk{J}M$ is a free $(A/\fk{J})$-module, and the canonical homomorphism \sref{0.10.1.1.2} is injective (and thus bijective).
+\end{enumerate}
+\end{env}
+
+\begin{env}[10.1.3]
+\label{0.10.1.3}
+Suppose that $A/\fk{J}$ is a \emph{field} (in other words, that $\fk{J}$ is maximal), and that one of the hypotheses, (i) and (ii), of \sref{0.10.1.2} is satisfied.
+Then the following properties are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $M$ is a free $A$-module.
+    \item $M$ is a projective $A$-module.
+    \item $M$ is a flat $A$-module.
+    \item $\Tor_1^A(M,A/\fk{J})=0$.
+    \item The canonical homomorphism \sref{0.10.1.1.2} is bijective.
+\end{enumerate}
+\end{env}
+
+This result can be applied, in particular, to the following two cases:
+\begin{enumerate}[label=(\roman*)]
+    \item $M$ is an \emph{arbitrary} module, over a local ring $A$ whose maximal ideal $\fk{J}$ is \emph{nilpotent} (for example, a local Artinian ring);
+    \item $M$ is a module \emph{of finite type} over a \emph{local Noetherian} ring.
+\end{enumerate}
+
+\subsection{Local flatness criteria}
+\label{subsection:local-flatness-criteria}
+
+\begin{env}[10.2.1]
+\label{0.10.2.1}
+\end{env}

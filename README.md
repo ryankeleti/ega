@@ -46,13 +46,13 @@ Here is the current status of the translation, along with who is currently worki
 - [ ] Preliminaries (EGA 0_III)
     + [x] 8. Representable functors _(@ryankeleti)_
     + [x] 9. Constructible sets _(@ryankeleti)_
-    + [ ] 10. Supplement on flat modules
+    + [ ] 10. Supplement on flat modules _(@thosgood)_
     + [ ] 11. Supplement on homological algebra _(@ryankeleti)_
     + [ ] 12. Supplement on sheaf cohomology
     + [ ] 13. Projective limits in homological algebra
 - [ ] Preliminaries (EGA 0_IV)
     + [x] (14-ε). Summary _(@thosgood)_
-    + [ ] 14. Combinatorial dimension of a topological space _(@thosgood)_
+    + [x] 14. Combinatorial dimension of a topological space _(@thosgood)_
     + [ ] 15. M-regular and F-regular sequences
     + [ ] 16. Dimension and depth of Noetherian local rings
     + [ ] 17. Regular rings
