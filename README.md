@@ -51,8 +51,8 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 12. Supplement on sheaf cohomology
     + [ ] 13. Projective limits in homological algebra
 - [ ] Preliminaries (EGA 0_IV)
-    + [ ] (14-ε). Summary
-    + [ ] 14. Combinatorial dimension of a topological space
+    + [x] (14-ε). Summary _(@thosgood)_
+    + [ ] 14. Combinatorial dimension of a topological space _(@thosgood)_
     + [ ] 15. M-regular and F-regular sequences
     + [ ] 16. Dimension and depth of Noetherian local rings
     + [ ] 17. Regular rings
