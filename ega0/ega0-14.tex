@@ -1,7 +1,7 @@
 \section{Combinatorial dimension of a topological space}
 \label{section:combinatorial-dimension-of-a-topological-space}
 
-\oldpage[IV]{6}
+\oldpage[0\textsubscript{IV}]{6}
 
 \subsection{Combinatorial dimension of a topological space}
 \label{subsection:combinatorial-dimension-of-a-topological-space}
@@ -60,7 +60,7 @@ From \sref{0.14.1.4}[i], we see that, for all $x\in X$, we can also write
 \end{equation*}
 where the limit is taken over the decreasing filtered set of open neighbourhoods of $x$ in $X$.
 
-\oldpage[IV]{7}
+\oldpage[0\textsubscript{IV}]{7}
 
 \begin{cor}[14.1.5]
 \label{0.14.1.5}
@@ -146,7 +146,7 @@ For a point $x\in X$ to be isolated, it is necessary and sufficient to have $\di
 \label{proof-0.14.1.10}
 The condition is clearly necessary (without any hypotheses on $X$).
 It is also sufficient,
-\oldpage[IV]{8}
+\oldpage[0\textsubscript{IV}]{8}
 because it implies that $\dim(U)=0$ for any open neighbourhood $U$ of $x$, and since $U$ is a Noetherian Kolmogoroff space, $U$ is finite and discrete.
 \end{proof}
 
@@ -175,3 +175,124 @@ if $K$ and $k$ are the field of fractions and the residue field of $A$ (respecti
 
 \subsection{Codimension of a closed subset}
 \label{subsection:codimension-of-a-closed-subset}
+
+\begin{defn}[14.2.1]
+\label{0.14.2.1}
+Given an irreducible closed subset $Y$ of a topological space $X$, we define the combinatorial codimension (or simply codimension) of $Y$ in $X$, denoted by $\codim(Y,X)$, to be the upper bound of the lengths of chains of irreducible closed subsets of $X$ of which $Y$ is the smallest element.
+If $Y$ is an arbitrary closed subset of $X$, then we define the codimension of $Y$ in $X$, again denoted by $\codim(Y,X)$, to be the lower bound of the codimensions in $X$ of the irreducible components of $Y$.
+We say that $X$ is equicodimensional if all the minimal irreducible closed subsets of $X$ has the same codimension in $X$.
+\end{defn}
+
+It follows from this definition that $\codim(\emp,X)=+\infty$, since the lower bound of the empty set of $\overline{\bb{R}}$ is $+\infty$.
+If $Y$ is closed in $X$, and if $(X_\alpha)$ (resp. $(Y_\alpha)$) is the family of irreducible components of $X$ (resp. $Y$), then every $Y_\beta$ is contained in some $X_\alpha$, and, more generally, every chain of irreducible closed subsets of $X$ of which $Y_\beta$ is the smallest element is formed of subsets of some $X_\alpha$;
+we thus have
+\begin{equation*}
+\label{0.14.2.1.1}
+    \codim(Y,X) = \inf_\beta(\sup_\alpha(\codim(Y_\beta,X_\alpha)))\tag{14.2.1.1}
+\end{equation*}
+where, for every $\beta$, $\alpha$ ranges over the set of indices such that $Y_\beta\subset X_\alpha$.
+
+\begin{prop}[14.2.2]
+\label{0.14.2.2}
+Let $X$ be a topological space.
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item If $\Phi$ is the set of irreducible closed subsets of $X$, then
+        \begin{equation*}
+        \label{0.14.2.2.1}
+            \dim(X) = \sup_{Y\in\Phi}(\codim(Y,X)).\tag{14.2.2.1}
+        \end{equation*}
+    \item For every nonempty closed subset $Y$ of $X$, we have
+        \begin{equation*}
+        \label{0.14.2.2.2}
+            \dim(Y)+\codim(Y,X) \leq \dim(X).\tag{14.2.2.2}
+        \end{equation*}
+    \item If $Y$, $Z$, and $T$ are closed subsets of $X$ such that $Y\subset Z\subset T$, then
+        \begin{equation*}
+        \label{0.14.2.2.3}
+            \codim(Y,Z)+\codim(Z,T) \leq \codim(Y,T).\tag{14.2.2.3}
+        \end{equation*}
+    \item For a closed subset $Y$ of $X$ to be such that $\codim(Y,X)=0$, it is necessary and sufficient for $Y$ to contain an irreducible component of $X$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.2.2}
+Claims~(i) and (iv) are immediate consequences of Definition~\sref{0.14.2.1}.
+To show (ii), we can restrict to the case where $Y$ is irreducible, and then the equation follows from Definitions~\sref{0.14.1.1} and \sref{0.14.2.1}.
+Finally, to show (iii), we can, by Definition~\sref{0.14.2.1}, first restrict to the case where $Y$ is irreducible;
+then $\codim(Y,Z)=\sup_\alpha(\codim(Y,Z_\alpha))$ for the irreducible components $Z_\alpha$ of $Z$ that contain $Y$;
+it is clear that $\codim(Y,T)\geq\codim(Y,Z)$, so the inequality is true if $\codim(Y,Z)=+\infty$;
+but if this were not the case, then there would exist some $\alpha$ such that $\codim(Y,Z)=\codim(Y,Z_\alpha)$, and by \sref{0.14.2.1}, we can restrict to the case where $Z$ itself is irreducible;
+but then the inequality in \sref{0.14.2.2.3} is an evident consequence of Definition~\sref{0.14.2.1}.
+\end{proof}
+
+\begin{prop}[14.2.3]
+\label{0.14.2.3}
+Let $X$ be a topological space, and $Y$ a closed subset of $X$.
+For every open subset $U$ of $X$, we have
+\begin{equation*}
+\label{0.14.2.3.1}
+    \codim(Y\cap U,U) \geq \codim(Y,X).\tag{14.2.3.1}
+\end{equation*}
+
+Furthermore, for this inequality \sref{0.14.2.3.1} to be an equality, it is necessary and sufficient to have $\codim(Y,X)=\inf_\alpha(\codim(Y_\alpha,X))$, where $(Y_\alpha)$ is the family of irreducible components of $Y$ that meet $U$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.2.3}
+We know \sref[0\textsubscript{I}]{0.2.1.6} that $Z\mapsto\overline{Z}$ is a bijection from the set of irreducible closed subsets of $U$ to the set of irreducible closed subsets of $X$ that meet $U$, and, in particular, induces a correspondence between the irreducible components of $Y\cap U$ and the irreducible components of $Y$ that meet $U$;
+if $Y_\alpha$ is one of the latter such components, then we have $\codim(Y_\alpha,X)=\codim(Y_\alpha\cap U,U)$, and the proposition then follows from Definition~\sref{0.14.2.1}.
+\end{proof}
+
+\begin{defn}[14.2.4]
+\label{0.14.2.4}
+Let $X$ be a topological space, $Y$ a closed subset of $X$, and $x$ a point of $X$.
+We define the codimension of $Y$ in $X$ at the point $x$, denoted by $\codim_x(Y,X)$, to be the number $\sup_U(\codim(Y\cap U,U))$, where $U$ ranges over the set of open neighbourhoods of $x$ in $X$.
+\end{defn}
+
+By \sref{0.14.2.3}, we can also write
+\begin{equation*}
+\label{0.14.2.4.1}
+    \codim_x(Y,X) = \lim_U(\codim(Y\cap U, U))\tag{14.2.4.1}
+\end{equation*}
+where the limit is taken over the decreasing filtered set of open neighbourhoods of $x$ in $X$.
+We note that we have
+\[
+    \codim_x(Y,X) = +\infty \quad\text{if}\quad x\in X\setmin Y.
+\]
+
+\oldpage[0\textsubscript{IV}]{10}
+\begin{prop}[14.2.5]
+\label{0.14.2.5}
+If $(Y_i)_{1\leq i\leq n}$ is a finite family of closed subsets of a topological space $X$, and $Y$ is the union of this family, then
+\begin{equation*}
+\label{0.14.2.5.1}
+    \codim(Y,X) = \inf_i(\codim(Y_i,X)).\tag{14.2.5.1}
+\end{equation*}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.2.5}
+Indeed, every irreducible component of one of the $Y_i$ is contained in an irreducible component of $Y$, and, conversely, every irreducible component of $Y$ is also an irreducible component of ome of the $Y_i$ \sref[0\textsubscript{I}]{0.2.1.1};
+the conclusion then follows from Definition~\sref{0.14.2.1} and the inequality in \sref{0.14.2.2.3}.
+\end{proof}
+
+\begin{cor}
+\label{0.14.2.6}
+Let $X$ be a topological space, and $Y$ a locally-Noetherian closed subspace of $X$.
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item For all $x\in X$, there exists only a finite number of irreducible components $Y_i$ ($1\leq i\leq n$) of $Y$ that contain $x$, and we have $\codim_x(Y,X)=\inf_i(\codim(Y_i,X))$.
+    \item The function $x\mapsto\codim_x(Y,X)$ is lower semi-continuous on $X$.
+\end{enumerate}
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.2.6}
+By hypothesis, there exists an open neighbourhood $U_0$ of $x$ in $X$ such that $Y\cap U_0$ is Noetherian, and so $U_0$ has only a finite number of irreducible components, which are the intersections of $U_0$ with the irreducible components of $Y$;
+\emph{a fortiori} there are only a finite number of irreducible components $Y_i$ ($1\leq i\leq n$) of $Y$ that contain $x$, and we can, by replacing $U_0$ with an open neighbourhood $U\subset U_0$ of $x$ that doesn't meet any of the $Y_j$ that do not contain $x$, assume that the $Y_i\cap U$ are the irreducible components of $Y\cap U$;
+for every open neighbourhood $V\subset U$ of $x$ in $X$, the $Y_i\cap V$ are thus the irreducible components of $Y\cap V$, and \sref{0.14.2.3} then shows that $\codim(Y_i,X)=\codim(Y_i\cap V,V)$, which proves (i).
+Further, for every $x'\in U$, the irreducible components of $Y$ that contain $x'$ are certain $Y_i$, and so $\codim_{x'}(Y,X)\geq\codim_x(Y,X)$, which proves (ii).
+\end{proof}
+
+\subsection{The chain condition}
+\label{subsection:the-chain-condition}
