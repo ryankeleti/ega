@@ -11,13 +11,13 @@
 Let $I$ be an ordered set;
 a \emph{chain} of elements of $I$ is, by definition, a strictly-increasing finite sequence $i_0<i_1<\ldots<i_n$ of elements of $I$ ($n\geq0$);
 by definition, the \emph{length} of this chain is $n$.
-If $X$ is a topological space, the set of its \emph{closed irreducible} subsets is ordered by inclusion, and so we have the notion of a \emph{chain} of closed irreducible subsets of $X$.
+If $X$ is a topological space, the set of its \emph{irreducible closed} subsets is ordered by inclusion, and so we have the notion of a \emph{chain} of irreducible closed subsets of $X$.
 \end{env}
 
 \begin{defn}[14.1.2]
 \label{0.14.1.2}
 Let $X$ be a topological space.
-We define the combinatorial dimension of $X$ (or simply the dimension of $X$, if there is no risk of confusion), denoted by $\dimc(X)$ (or simply $\dim(X)$), to be the upper bound of lengths of chains of closed irreducible subsets of $X$.
+We define the combinatorial dimension of $X$ (or simply the dimension of $X$, if there is no risk of confusion), denoted by $\dimc(X)$ (or simply $\dim(X)$), to be the upper bound of lengths of chains of irreducible closed subsets of $X$.
 For all $x\in X$, we define the combinatorial dimension of $X$ at $x$ (or simply the dimension of $X$ at $x$), denoted by $\dim_x(X)$, to be the number $\inf_U(\dim(U))$, where $U$ varies over the open neighbourhoods of $x$ in $X$.
 \end{defn}
 
@@ -31,7 +31,7 @@ If $(X_\alpha)$ is the family of irreducible components of $X$, then we have
 \label{0.14.1.2.1}
     \dim(X) = \sup_\alpha\dim(X_\alpha)\tag{14.1.2.1}
 \end{equation*}
-because every chain of closed irreducible subsets of $X$ is, by definition, contained in some irreducible component of $X$, and, conversely, the irreducible components are closed in $X$, so every closed irreducible subset of an $X_\alpha$ is a closed irreducible subset of $X$.
+because every chain of irreducible closed subsets of $X$ is, by definition, contained in some irreducible component of $X$, and, conversely, the irreducible components are closed in $X$, so every irreducible closed subset of an $X_\alpha$ is a irreducible closed subset of $X$.
 
 \begin{defn}[14.1.3]
 \label{0.14.1.3}
@@ -49,4 +49,129 @@ We say that a topological space $X$ is equidimensional if all its irreducible co
 
 \begin{proof}
 \label{proof-0.14.1.4}
+For every irreducible closed subset $Z$ of $Y$, the closure $\overline{Z}$ of $Z$ in $X$ is irreducible \sref[0\textsubscript{I}]{0.2.1.2}, and $\overline{Z}\cap Y=Z$, whence (i).
+Now, if $X=\bigcup_{i=1}^nX_i$, where the $X_i$ are closed, then every irreducible closed subset of $X$ is contained in one of the $X_i$ \sref[0\textsubscript{I}]{0.2.1.1}, and so every chain of irreducible closed subsets of $X$ is contained in one of the $X_i$, whence (ii).
 \end{proof}
+
+From \sref{0.14.1.4}[i], we see that, for all $x\in X$, we can also write
+\begin{equation*}
+\label{0.14.1.4.1}
+    \dim_x(X) = \lim_U\dim(U)\tag{14.1.4.1}
+\end{equation*}
+where the limit is taken over the decreasing filtered set of open neighbourhoods of $x$ in $X$.
+
+\oldpage[IV]{7}
+
+\begin{cor}[14.1.5]
+\label{0.14.1.5}
+Let $X$ be a topological space, $x$ a point of $X$, $U$ a neighbourhood of $x$, and $Y_i$ ($1\leq i\leq n$) closed subsets of $U$ such that, for all $i$, $x\in Y_i$, and such that $U$ is the union of the $Y_i$.
+Then we have
+\begin{equation*}
+\label{0.14.1.5.1}
+    \dim_x(X) = \sup_i(\dim_x(Y_i)).\tag{14.1.5.1}
+\end{equation*}
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.1.5}
+It follows from \sref{0.14.1.4}[ii] that we have $\dim_x(X) = \inf_V(\sup_i(\dim(Y_i\cap V)))$, where $V$ ranges over the set of open neighbourhoods of $x$ that are contained in $U$;
+similarly, we have $\dim_x(Y_i) = \inf_V(\dim(Y_i\cap V))$ for all $i$.
+The corollary is thus evident if
+\[
+    \sup_i(\dim_x(Y_i)) = +\infty;
+\]
+if this were not the case, then there would be an open neighbourhood $V_0\subset U$ of $x$ such that $\dim(Y_i\cap V)=\dim_x(Y_i)$ for $1\leq i\leq n$ and for all $V\subset V_0$, whence the conclusion.
+\end{proof}
+
+\begin{prop}[14.1.6]
+\label{0.14.1.6}
+For every topological space $X$, we have $\dim(X)=\sup_{x\in X}\dim_x(X)$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.1.6}
+It follows from Definition~\sref{0.14.1.2} and Proposition~\sref{0.14.1.4} that $\dim_x(X)\leq\dim(X)$ for all $x\in X$.
+Now, let $Z_0\subset Z_1\subset\ldots\subset Z_n$ be a chain of irreducible closed subsets of $X$, and let $x\in Z_0$;
+for every open subset $U\subset X$ that contains $x$, $U\cap Z_i$ is irreducible \sref[0\textsubscript{I}]{0.2.1.6} and closed in $U$, and since we have $\overline{U\cap Z_i}=Z_i$ in $X$, the $U\cap Z_i$ are pairwise distinct;
+thus $\dim(U)\geq n$, which finishes the proof.
+\end{proof}
+
+\begin{cor}[14.1.7]
+\label{0.14.1.7}
+If $(X_\alpha)$ is an open, or closed and locally finite, cover of $X$, then $\dim(X)=\sup_\alpha(\dim(X_\alpha))$.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.1.7}
+If $X_\alpha$ is a neighbourhood of $x\in X$, then $\dim_x(X)\leq\dim(X_\alpha)$, whence the claim for open covers.
+On the other hand, if the $X_\alpha$ are closed, and $U$ is a neighbourhood of $x\in X$ which meets only finitely many of the $X_\alpha$, then
+\[
+    \dim_x(X)\leq\dim(U)=\sup_\alpha(\dim(U\cap X_\alpha))\leq\sup_\alpha(\dim(X_\alpha))
+\]
+by \sref{0.14.1.4}, whence the other claim.
+\end{proof}
+
+\begin{cor}[14.1.8]
+\label{0.14.1.8}
+Let $X$ be a Noetherian Kolmogoroff space \sref[0\textsubscript{I}]{0.2.1.3}, and $F$ the set of closed points of $X$.
+Then $\dim(X)=\sup_{x\in F}\dim_x(X)$.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.1.8}
+With the notation from the proof of \sref{0.14.1.6}, it suffices to note that there exists a closed point in $Z_0$ \sref[0\textsubscript{I}]{0.2.1.3}.
+\end{proof}
+
+\begin{prop}[14.1.9]
+\label{0.14.1.9}
+Let $X$ be a nonempty Noetherian Kolmogoroff space.
+To have $\dim(X)=0$, it is necessary and sufficient for $X$ to be finite and discrete.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.1.9}
+If a space $X$ is separated (and \emph{a fortiori} if $X$ is a discrete space), then all the irreducible closed subsets of $X$ are single points, and so $\dim(X)=0$.
+Conversely, suppose that $X$ is a Noetherian Kolmogoroff space such that $\dim(X)=0$;
+since every irreducible component of $X$ contains a closed point \sref[0\textsubscript{I}]{0.2.1.3}, it must be exactly this single point.
+Since $X$ has only a finite number of irreducible components, it is thus finite and discrete.
+\end{proof}
+
+\begin{cor}[14.1.10]
+\label{0.14.1.10}
+Let $X$ be a Noetherian Kolmogoroff space.
+For a point $x\in X$ to be isolated, it is necessary and sufficient to have $\dim_x(X)=0$.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.14.1.10}
+The condition is clearly necessary (without any hypotheses on $X$).
+It is also sufficient,
+\oldpage[IV]{8}
+because it implies that $\dim(U)=0$ for any open neighbourhood $U$ of $x$, and since $U$ is a Noetherian Kolmogoroff space, $U$ is finite and discrete.
+\end{proof}
+
+\begin{prop}[14.1.11]
+\label{0.14.1.11}
+The function $x\mapsto\dim_x(X)$ is upper semi-continuous on $X$.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.1.11}
+It is clear that this function is upper semi-continuous at every point where its value is $+\infty$.
+So suppose that $\dim_x(X)=n<+\infty$;
+then Equation~\sref{0.14.1.4.1} shows that there exists an open neighbourhood $U_0$ of $x$ such that $\dim(U)=n$ for every open neighbourhood $U\subset U_0$ of $x$.
+So, for all $y\in U_0$ and every open neighbourhood $V\subset U_0$ of $y$, we have $\dim(V)\leq\dim(U_0)=n$ \sref{0.14.1.4};
+we thus deduce from \sref{0.14.1.4.1} that $\dim_y(X)\leq n$.
+\end{proof}
+
+\begin{rmk}[14.1.12]
+\label{0.14.1.12}
+If $X$ and $Y$ are topological spaces, and $f:X\to Y$ a continuous map, then it can be the case that $\dim(f(X))>\dim(X)$;
+we obtain such an example by taking $X$ to be a discrete space with 2 points, $a$ and $b$, and $Y$ to be the set $\{a,b\}$ endowed with the topology for which\footnote{\emph{[Trans.] This is now often referred to as the \emph{Sierpiński space}, or the \emph{connected two-point set}.}} the closed sets are $\emp$, $\{a\}$, and $\{a,b\}$;
+if $f:X\to Y$ is the identity map, then $\dim(Y)=1$ and $\dim(X)=0$.
+We note that $Y$ is the spectrum of a discrete valuation ring $A$, of which $a$ is the unique closed point, and $b$ the generic point;
+if $K$ and $k$ are the field of fractions and the residue field of $A$ (respectively), then $X$ is the spectrum of the ring $k\times K$, and $f$ is the continuous map corresponding to the homomorphism $(\vphi,\psi):A\to k\times K$, where $\vphi:A\to k$ and $\psi:A\to K$ are the canonical homomorphism (cf.~\sref[IV]{4.5.4.3}).
+\end{rmk}
+
+\subsection{Codimension of a closed subset}
+\label{subsection:codimension-of-a-closed-subset}
