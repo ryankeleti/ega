@@ -1,10 +1,13 @@
 \section{Combinatorial dimension of a topological space}
 \label{section:combinatorial-dimension-of-a-topological-space}
 
+\oldpage[IV]{6}
+
 \subsection{Combinatorial dimension of a topological space}
 \label{subsection:combinatorial-dimension-of-a-topological-space}
 
 \begin{env}[14.1.1]
+\label{0.14.1.1}
 Let $I$ be an ordered set;
 a \emph{chain} of elements of $I$ is, by definition, a strictly-increasing finite sequence $i_0<i_1<\ldots<i_n$ of elements of $I$ ($n\geq0$);
 by definition, the \emph{length} of this chain is $n$.
@@ -12,4 +15,38 @@ If $X$ is a topological space, the set of its \emph{closed irreducible} subsets 
 \end{env}
 
 \begin{defn}[14.1.2]
+\label{0.14.1.2}
+Let $X$ be a topological space.
+We define the combinatorial dimension of $X$ (or simply the dimension of $X$, if there is no risk of confusion), denoted by $\dimc(X)$ (or simply $\dim(X)$), to be the upper bound of lengths of chains of closed irreducible subsets of $X$.
+For all $x\in X$, we define the combinatorial dimension of $X$ at $x$ (or simply the dimension of $X$ at $x$), denoted by $\dim_x(X)$, to be the number $\inf_U(\dim(U))$, where $U$ varies over the open neighbourhoods of $x$ in $X$.
 \end{defn}
+
+It follows from this definition that we have
+\[
+    \dim(\emp) = -\infty
+\]
+(the upper bound in $\overline{\bb{R}}$ of the empty set being $-\infty$).
+If $(X_\alpha)$ is the family of irreducible components of $X$, then we have
+\begin{equation*}
+\label{0.14.1.2.1}
+    \dim(X) = \sup_\alpha\dim(X_\alpha)\tag{14.1.2.1}
+\end{equation*}
+because every chain of closed irreducible subsets of $X$ is, by definition, contained in some irreducible component of $X$, and, conversely, the irreducible components are closed in $X$, so every closed irreducible subset of an $X_\alpha$ is a closed irreducible subset of $X$.
+
+\begin{defn}[14.1.3]
+\label{0.14.1.3}
+We say that a topological space $X$ is equidimensional if all its irreducible components have the same dimension (which is thus equal to $\dim(X)$, by \sref{0.14.1.2.1}).
+\end{defn}
+
+\begin{prop}[14.1.4]
+\label{0.14.1.4}
+\medskip\noindent
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item For every closed subset $Y$ of a topological space $X$, we have $\dim(Y)\leq\dim(X)$.
+    \item If a topological space $X$ is a finite union of closed subsets $X_i$, then we have $\dim(X)=\sup_i\dim(X_i)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.14.1.4}
+\end{proof}
