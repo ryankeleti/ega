@@ -22,7 +22,7 @@ pdfs: $(PDFS)
 %.pdf: %.tex
 	$(PDFLATEX) $*
 	$(PDFLATEX) $*
-	bibtex $*
+	if [ $* != what ]; then bibtex $*; fi
 	$(PDFLATEX) $*
 	$(PDFLATEX) $*
 	mkdir -p $(PDF_DIR)
