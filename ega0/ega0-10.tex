@@ -91,4 +91,44 @@ More specifically, if $\fk{J}$ is then the \emph{maximal} ideal of $A$, we can, 
 
 \begin{env}[10.2.3]
 \label{0.10.2.3}
+With the hypotheses on $A$, $B$, $\fk{J}$, and $M$ from the start of \sref{0.10.2.2}, let $\wh{A}$ be the separated completion of $A$ for the $\fk{J}$-preadic topology, and $\wh{M}$ the separated completion of $M$ for the $\fk{J}B$-preadic topology.
+Then, for $M$ to be a flat $A$-module, it is necessary and sufficient for $\wh{M}$ to be a flat $\wh{A}$-module.
 \end{env}
+
+\begin{env}[10.2.4]
+\label{0.10.2.4}
+Let $\rho:A\to B$ be a local homomorphism of local Noetherian rings, $k$ the residue field of $A$, and $M$ and $N$ both $B$-modules of finite type, with $N$ assumed to be \emph{$A$-flat}.
+Let $u:M\to N$ be a $B$-homomorphism.
+Then the following conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $u$ is injective, and $\Coker(u)$ is a flat $A$-module.
+    \item $u\otimes1:M\otimes_A k\to N\otimes_A k$ is injective.
+\end{enumerate}
+\end{env}
+
+\begin{env}[10.2.5]
+\label{0.10.2.5}
+Let $\rho:A\to B$ and $\sigma:B\to C$ be local homomorphisms of local Noetherian rings, $k$ the residue field of $A$, and $M$ a $C$-module of finite type.
+Suppose that $B$ is a \emph{flat} $A$-module.
+Then the following conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $M$ is a flat $B$-module.
+    \item $M$ is a flat $A$-module, and $M\otimes_A k$ is a flat $(B\otimes_A k)$-module.
+\end{enumerate}
+\end{env}
+
+\begin{prop}[10.2.6]
+\label{0.10.2.6}
+Let $A$ and $B$ be local Noetherian rings, $\rho:A\to B$ a local homomorphism, $\fk{J}$ an ideal of $B$ contained in the maximal ideal, and $M$ a $B$-module of finite type.
+Suppose that, for all $n\geq0$, $M_n=M/\fk{J}^{n+1}M$ is a flat $A$-module.
+Then $M$ is a flat $A$-module.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.10.2.6}
+We have to prove that, for every injective homomorphism $u:N'\to N$ of $A$-modules of finite type, $v=1\otimes u:M\otimes_A N'\to M\otimes_A N$ is injective.
+But $M\otimes_A N'$ and $M\otimes_A N$ are $B$-modules of finite type, and thus separated for the $\fk{J}$-preadic topology \sref[0\textsubscript{I}]{0.7.3.5};
+it thus suffices to prove that the homomorphism $\wh{v}:\wh{M\otimes_A N'}\to\wh{M\otimes_A N}$ of the separated completions is injective.
+But $\wh{v}=\varprojlim v_n$, where $v_n$ is the homomorphism $1\otimes u:M_n\otimes_A N'\to M_n\otimes_A N$;
+since, by hypothesis, $M_n$ is $A$-flat, $v_n$ is injective for all $n$, and thus so too is $v$, because the functor $\varprojlim$ is left exact.
+\end{proof}
