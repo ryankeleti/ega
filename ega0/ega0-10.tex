@@ -24,7 +24,7 @@ the $\vphi$ define a \emph{surjective} homomorphism of graded $\gr(A)$-modules
 \end{equation*}
 \end{env}
 
-\oldpage[0\textsubscript{III}]{18}
+\oldpage[0\textsubscript{III-1}]{18}
 \begin{env}[10.1.2]
 \label{0.10.1.2}
 Suppose that \emph{one} of the following hypotheses is satisfied:
@@ -84,7 +84,7 @@ This is also the case if $A$ is Noetherian and $M$ is \emph{ideally separated}, 
 \label{0.10.2.2}
 Let $A$ be a Noetherian ring, $B$ a commutative Noetherian $A$-algebra, $\fk{J}$ an ideal of $A$ such that $\fk{J}B$ is contained in the radical of $B$, and $M$ a $B$-\emph{module} of finite type.
 Then, when $M$ is considered as an $A$-\emph{module}, the four conditions of \sref{0.10.2.1} are \emph{equivalent}.
-\oldpage[0\textsubscript{III}]{10}
+\oldpage[0\textsubscript{III-1}]{10}
 This result applies first and foremost in the case where $A$ and $B$ are \emph{local} Noetherian rings, with the homomorphism $A\to B$ being a \emph{local} homomorphism.
 More specifically, if $\fk{J}$ is then the \emph{maximal} ideal of $A$, we can, in conditions~\emph{(b)} and \emph{(c)}, remove the hypothesis that $M/\fk{J}M$ is flat, since it is automatically satisfied, and condition~\emph{(d)} implies that the modules $M/\fk{J}^nM$ are \emph{free} over the $A/\fk{J}^n$.
 \end{env}
@@ -131,4 +131,27 @@ But $M\otimes_A N'$ and $M\otimes_A N$ are $B$-modules of finite type, and thus 
 it thus suffices to prove that the homomorphism $\wh{v}:\wh{M\otimes_A N'}\to\wh{M\otimes_A N}$ of the separated completions is injective.
 But $\wh{v}=\varprojlim v_n$, where $v_n$ is the homomorphism $1\otimes u:M_n\otimes_A N'\to M_n\otimes_A N$;
 since, by hypothesis, $M_n$ is $A$-flat, $v_n$ is injective for all $n$, and thus so too is $v$, because the functor $\varprojlim$ is left exact.
+\end{proof}
+
+\begin{cor}[10.2.7]
+\label{0.10.2.7}
+Let $A$ be a Noetherian ring, $B$ a local Noetherian ring, $\rho:A\to B$ a homomorphism, $f$ an element of the maximal ideal of $B$, and $M$ a $B$-module of finite type.
+Suppose that the homothety $f_M:x\to fx$ on $M$ is injective, and that $M/fM$ is a flat $A$-module.
+Then $M$ is a flat $A$-module.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.10.2.7}
+Let $M_i=f^iM$ for $i\geq0$;
+since $f_M$ is injective, $M_i/M_{i+1}$ is isomorphic to $M/fM$, and thus $A$-flat for all $i\geq0$;
+the exact sequence
+\[
+    0 \to M_i/M_{i+1} \to M/M_{i+1} \to M/M_i \to 0
+\]
+gives us, by induction on $i$, that $M/M_i$ is \emph{$A$-flat} for all $i\geq0$ \sref[0\textsubscript{I}]{0.6.1.2};
+we can thus apply \sref{0.10.2.6}.
+We can also argue directly as follows:
+for every $A$-module $N$ of finite type, $M\otimes_A N$ is a $B$-module of finite type;
+since $f$ belongs to the radical $\fk{n}$ of $B$, the $(f)$-adic topology on $M\otimes_A N$ is finer than the
+\oldpage[0\textsubscript{III-1}]{20}
 \end{proof}
