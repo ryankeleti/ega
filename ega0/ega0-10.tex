@@ -1,7 +1,7 @@
 \section{Supplement on flat modules}
 \label{section:supplement-on-flat-modules}
 
-For the proofs that are missing in \hyperref[subsection:relations-between-flat-modules-and-free-modules]{(10.1)} and \hyperref[subsection:local-flatness-criteria]{(10.2)}, we refer the reader to Bourbaki, \emph{Alg. comm.}, chap.~II and III.
+For any proofs missing in \hyperref[subsection:relations-between-flat-modules-and-free-modules]{(10.1)} and \hyperref[subsection:local-flatness-criteria]{(10.2)}, we refer the reader to Bourbaki, \emph{Alg. comm.}, chap.~II and III.
 
 \subsection{Relations between flat modules and free modules}
 \label{subsection:relations-between-flat-modules-and-free-modules}
@@ -173,7 +173,7 @@ in the commutative diagram
 $1_{M/M_i}\otimes j$ is injective, because $M/M_i$ is $A$-flat;
 we thus conclude that
 \[
-    \Ker(M\otimes_A N' \to M\otimes_A N) \subset \Ket(M\otimes_A N' \to (M/M_i)\otimes_A N')
+    \Ker(M\otimes_A N' \to M\otimes_A N) \subset \Ker(M\otimes_A N' \to (M/M_i)\otimes_A N')
 \]
 for any $i$;
 since the intersection (over $i$) of the latter kernel is $0$, as we saw above, so too is the intersection (over $i$) of the former, and so $M$ is $A$-flat.
@@ -209,3 +209,66 @@ and since $A$ is reduced, we know that this condition implies that $M$ is a \emp
 
 \subsection{Existence of flat extensions of local rings}
 \label{subsection:existence-of-flat-extensions-of-local-rings}
+
+\begin{prop}[10.3.1]
+\label{0.10.3.1}
+Let $A$ be a local Noetherian ring, with maximal ideal $\fk{J}$, and residue field $k=A/\fk{J}$.
+Let $K$ be a field extension of $k$.
+Then there exists a local homomorphism from $A$ to a local Noetherian ring $B$, such that $B/\fk{J}B$ is $k$-isomorphic to $K$, and such that $B$ is a flat $A$-module.
+\end{prop}
+
+The rest of this section is devoted to proving this proposition, step-by-step.
+
+\begin{env}[10.3.1.1]
+\label{0.10.3.1.1}
+First suppose that $K=k(T)$, where $T$ is an indeterminate.
+In the ring of polynomials $A'=A[T]$, consider the prime ideal $\fk{J}'=\fk{J}A$, consisting of the
+\oldpage[0\textsubscript{III-1}]{21}
+polynomials that have coefficients in the ideal $\fk{J}$;
+it is clear that $A'/\fk{J}'$ is canonically isomorphic to $k[T]$.
+We will show that the ring of fractions $B=A'_\fk{J}$ is that for which we are searching (that is, a ring which satisfies the conditions of the conclusion of the proposition);
+it is clearly a local Noetherian ring, with maximal ideal $\fk{L}=\fk{J}B$.
+Further, $B/\fk{L}=(A'/\fk{J}')_{\fk{J}'}=(k[T])_{\fk{J}'}$ is exactly the field of fractions $K$ of $k[T]$.
+Finally, $B$ is a flat $A'$-module, and $A'$ is a free $A$-module, so $B$ is a flat $A$-module \sref[0\textsubscript{I}]{0.6.2.1}.
+\end{env}
+
+\begin{env}[10.3.1.2]
+\label{0.10.3.1.2}
+Now suppose that $K=k(t)=k[t]$, where $t$ is algebraic over $k$;
+let $f\in k[T]$ be the minimal polynomial of $t$;
+there exists a monic polynomial $F\in A[T]$ whose canonical image in $k[T]$ is $f$.
+So let $A'=A[T]$, and let $\fk{J}'$ be the ideal $\fk{J}A'+(F)$ in $A'$.
+We will see that the quotient ring $B=A'/(F)$ is that for which we are searching.
+First of all, it is clear that $B$ is a \emph{free} $A$-module, and thus flat.
+The ring $A'/\fk{J}'$ is isomorphic to
+\[
+(A'/\fk{J}A') / \big( (\fk{J}A'+(F))/\fk{J}A' \big) = k[T]/(f) = K;
+\]
+the image $\fk{L}$ of $\fk{J}'$ in $B$ is thus maximal, and we evidently have that $\fk{L}=\fk{J}B$.
+Finally, $B$ is a semi-local ring, because it is an $A$-module of finite type (Bourbaki, \emph{Alg. comm.}, chap.~IV, \textsection~2, n\textsuperscript{o}~5, cor.~3 of prop.~9), and its maximal ideals are in bijective correspondence with those of $B/\fk{J}B$ (\cite[vol.~I, p.~259]{I-13});
+the previous arguments then prove that $B$ is a local ring.
+\end{env}
+
+\begin{lem}[10.3.1.3]
+\label{0.10.3.1.3}
+Let $(A_\lambda,f_{\mu\lambda})$ be a filtered inductive system of local rings, such that the $f_{\mu\lambda}$ are local homomorphisms;
+let $\fk{m}_\lambda$ be the maximal ideal of $A_\lambda$, and let $K_\lambda=A_\lambda/\fk{m}_\lambda$.
+Then $A'=\varinjlim A_\lambda$ is a local ring, with maximal ideal $\fk{m}=\varinjlim\fk{m}_\lambda$, and residue field $K=\varinjlim K_\lambda$.
+Further, if $\fk{m}_\mu=\fk{m}_\lambda A_\mu$ with $\lambda<\mu$, then we have $\fk{m}'=\fk{m}_\lambda A'$ for all $\lambda$.
+If, further, for $\lambda<\mu$, $A_\mu$ is a flat $A_\lambda$-module, and if all the $A_\lambda$ are Noetherian, then $A'$ is a flat Noetherian $A_\lambda$-modules for all $\lambda$.
+\end{lem}
+
+\begin{proof}
+\label{proof-0.10.3.1.3}
+Since
+\end{proof}
+
+\begin{env}[10.3.1.4]
+\label{0.10.3.1.4}
+\end{env}
+
+We have also shown the following:
+\begin{cor}[10.3.2]
+\label{0.10.3.2}
+If $K$ is an extension of finite degree, then we can assume that $B$ is a finite $A$-algebra.
+\end{cor}
