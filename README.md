@@ -1,6 +1,6 @@
 # EGA
 
-![EGA0status](https://img.shields.io/badge/EGA%200-39%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-green) ![EGA2status](https://img.shields.io/badge/EGA%20II-20%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
+![EGA0status](https://img.shields.io/badge/EGA%200-46%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-green) ![EGA2status](https://img.shields.io/badge/EGA%20II-20%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
 
 Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
@@ -26,7 +26,7 @@ All the PDFs are auto-compliled every hour if any changes have been made since t
 
 | | First draft | Proofreading |
 | ------ | ----------- | ------------ |
-| ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-39%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
+| ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-46%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
 | ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-50%25-yellow)|
 | ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-20%25-red) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-3%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
@@ -46,13 +46,13 @@ Here is the current status of the translation, along with who is currently worki
 - [ ] Preliminaries (EGA 0_III)
     + [x] 8. Representable functors _(@ryankeleti)_
     + [x] 9. Constructible sets _(@ryankeleti)_
-    + [ ] 10. Supplement on flat modules
+    + [x] 10. Supplement on flat modules _(@thosgood)_
     + [ ] 11. Supplement on homological algebra _(@ryankeleti)_
     + [ ] 12. Supplement on sheaf cohomology
     + [ ] 13. Projective limits in homological algebra
 - [ ] Preliminaries (EGA 0_IV)
     + [x] (14-ε). Summary _(@thosgood)_
-    + [ ] 14. Combinatorial dimension of a topological space _(@thosgood)_
+    + [x] 14. Combinatorial dimension of a topological space _(@thosgood)_
     + [ ] 15. M-regular and F-regular sequences
     + [ ] 16. Dimension and depth of Noetherian local rings
     + [ ] 17. Regular rings

@@ -1,3 +1,339 @@
 \section{Supplement on flat modules}
 \label{section:supplement-on-flat-modules}
 
+For any proofs missing in \hyperref[subsection:relations-between-flat-modules-and-free-modules]{(10.1)} and \hyperref[subsection:local-flatness-criteria]{(10.2)}, we refer the reader to Bourbaki, \emph{Alg. comm.}, chap.~II and III.
+
+\subsection{Relations between flat modules and free modules}
+\label{subsection:relations-between-flat-modules-and-free-modules}
+
+\begin{env}[10.1.1]
+\label{0.10.1.1}
+Let $A$ be a ring, $\fk{J}$ an ideal of $A$, and $M$ an $A$-module;
+for every integer $p\geq0$, we have a canonical homomorphism of $(A/\fk{J})$-modules
+\begin{equation*}
+\label{0.10.1.1.1}
+    \vphi_p: (M/\fk{J}M) \otimes_{A/\fk{J}} (\fk{J}^p/\fk{J}^{p+1}) \to \fk{J}^pM/\fk{J}^{p+1}M\tag{10.1.1.1}
+\end{equation*}
+which is evidently \emph{surjective}.
+We denote by $\gr(A)=\oplus_{p\geq0}\fk{J}^p/\fk{J}^{p+1}$ the graded ring associated to $A$ filtered by the $\fk{J}^p$, and by $\gr(M)=\oplus_{p\geq0}\fk{J}^pM/\fk{J}^{p+1}M$ the graded $\gr(A)$-module associated to $M$ filtered by the $\fk{J}^pM$;
+we then have $\gr_p(A)=\fk{J}^p/\fk{J}^{p+1}$, and $\gr_p(M)=\fk{J}^pM/\fk{J}^{p+1}M$;
+the $\vphi$ define a \emph{surjective} homomorphism of graded $\gr(A)$-modules
+\begin{equation*}
+\label{0.10.1.1.2}
+    \vphi: \gr_0(M) \otimes_{\gr_0(A)} \gr(A) \to \gr(M).\tag{10.1.1.2}
+\end{equation*}
+\end{env}
+
+\oldpage[0\textsubscript{III-1}]{18}
+\begin{env}[10.1.2]
+\label{0.10.1.2}
+Suppose that \emph{one} of the following hypotheses is satisfied:
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item $\fk{J}$ is nilpotent;
+    \item $A$ is Noetherian, $\fk{J}$ is contained in the radical of $A$, and $M$ is of finite type.
+\end{enumerate}
+Then the following properties are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $M$ is a free $A$-module.
+    \item $M/\fk{J}M=N\otimes_A(A/\fk{J})$ is a free $(A/\fk{J})$-module, and $\Tor_1^A(M,A/\fk{J})=0$.
+    \item $M/\fk{J}M$ is a free $(A/\fk{J})$-module, and the canonical homomorphism \sref{0.10.1.1.2} is injective (and thus bijective).
+\end{enumerate}
+\end{env}
+
+\begin{env}[10.1.3]
+\label{0.10.1.3}
+Suppose that $A/\fk{J}$ is a \emph{field} (in other words, that $\fk{J}$ is maximal), and that one of the hypotheses, (i) and (ii), of \sref{0.10.1.2} is satisfied.
+Then the following properties are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $M$ is a free $A$-module.
+    \item $M$ is a projective $A$-module.
+    \item $M$ is a flat $A$-module.
+    \item $\Tor_1^A(M,A/\fk{J})=0$.
+    \item The canonical homomorphism \sref{0.10.1.1.2} is bijective.
+\end{enumerate}
+\end{env}
+
+This result can be applied, in particular, to the following two cases:
+\begin{enumerate}[label=(\roman*)]
+    \item $M$ is an \emph{arbitrary} module, over a local ring $A$ whose maximal ideal $\fk{J}$ is \emph{nilpotent} (for example, a local Artinian ring);
+    \item $M$ is a module \emph{of finite type} over a \emph{local Noetherian} ring.
+\end{enumerate}
+
+\subsection{Local flatness criteria}
+\label{subsection:local-flatness-criteria}
+
+\begin{env}[10.2.1]
+\label{0.10.2.1}
+With the hypotheses and notation of \sref{0.10.1.1}, consider the following conditions.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $M$ is a flat $A$-module.
+    \item $M/\fk{J}M$ is a flat $(A/\fk{J})$-module, and $\Tor_1^A(M,A/\fk{J})=0$.
+    \item $M/\fk{J}M$ is a flat $(A/\fk{J})$-module, and the canonical homomorphism \sref{0.10.1.1.2} is bijective.
+    \item For all $n\geq1$, $M/\fk{J}^nM$ is a flat $(A/\fk{J}^n)$-module.
+\end{enumerate}
+
+Then we have the implications
+\[
+    \text{(a)}\implies\text{(b)}\implies\text{(c)}\implies\text{(d)},
+\]
+and, if $\fk{J}$ is \emph{nilpotent}, then the four conditions are \emph{equivalent}.
+This is also the case if $A$ is Noetherian and $M$ is \emph{ideally separated}, that is to say, for every ideal $\fk{a}$ of $A$, the $A$-module $\fk{a}\otimes_A M$ is \emph{separated} for the $\fk{J}$-preadic topology.
+\end{env}
+
+\begin{env}[10.2.2]
+\label{0.10.2.2}
+Let $A$ be a Noetherian ring, $B$ a commutative Noetherian $A$-algebra, $\fk{J}$ an ideal of $A$ such that $\fk{J}B$ is contained in the radical of $B$, and $M$ a $B$-\emph{module} of finite type.
+Then, when $M$ is considered as an $A$-\emph{module}, the four conditions of \sref{0.10.2.1} are \emph{equivalent}.
+\oldpage[0\textsubscript{III-1}]{10}
+This result applies first and foremost in the case where $A$ and $B$ are \emph{local} Noetherian rings, with the homomorphism $A\to B$ being a \emph{local} homomorphism.
+More specifically, if $\fk{J}$ is then the \emph{maximal} ideal of $A$, we can, in conditions~\emph{(b)} and \emph{(c)}, remove the hypothesis that $M/\fk{J}M$ is flat, since it is automatically satisfied, and condition~\emph{(d)} implies that the modules $M/\fk{J}^nM$ are \emph{free} over the $A/\fk{J}^n$.
+\end{env}
+
+\begin{env}[10.2.3]
+\label{0.10.2.3}
+With the hypotheses on $A$, $B$, $\fk{J}$, and $M$ from the start of \sref{0.10.2.2}, let $\wh{A}$ be the separated completion of $A$ for the $\fk{J}$-preadic topology, and $\wh{M}$ the separated completion of $M$ for the $\fk{J}B$-preadic topology.
+Then, for $M$ to be a flat $A$-module, it is necessary and sufficient for $\wh{M}$ to be a flat $\wh{A}$-module.
+\end{env}
+
+\begin{env}[10.2.4]
+\label{0.10.2.4}
+Let $\rho:A\to B$ be a local homomorphism of local Noetherian rings, $k$ the residue field of $A$, and $M$ and $N$ both $B$-modules of finite type, with $N$ assumed to be \emph{$A$-flat}.
+Let $u:M\to N$ be a $B$-homomorphism.
+Then the following conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $u$ is injective, and $\Coker(u)$ is a flat $A$-module.
+    \item $u\otimes1:M\otimes_A k\to N\otimes_A k$ is injective.
+\end{enumerate}
+\end{env}
+
+\begin{env}[10.2.5]
+\label{0.10.2.5}
+Let $\rho:A\to B$ and $\sigma:B\to C$ be local homomorphisms of local Noetherian rings, $k$ the residue field of $A$, and $M$ a $C$-module of finite type.
+Suppose that $B$ is a \emph{flat} $A$-module.
+Then the following conditions are equivalent.
+\begin{enumerate}[label=\emph{(\alph*)}]
+    \item $M$ is a flat $B$-module.
+    \item $M$ is a flat $A$-module, and $M\otimes_A k$ is a flat $(B\otimes_A k)$-module.
+\end{enumerate}
+\end{env}
+
+\begin{prop}[10.2.6]
+\label{0.10.2.6}
+Let $A$ and $B$ be local Noetherian rings, $\rho:A\to B$ a local homomorphism, $\fk{J}$ an ideal of $B$ contained in the maximal ideal, and $M$ a $B$-module of finite type.
+Suppose that, for all $n\geq0$, $M_n=M/\fk{J}^{n+1}M$ is a flat $A$-module.
+Then $M$ is a flat $A$-module.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.10.2.6}
+We have to prove that, for every injective homomorphism $u:N'\to N$ of $A$-modules of finite type, $v=1\otimes u:M\otimes_A N'\to M\otimes_A N$ is injective.
+But $M\otimes_A N'$ and $M\otimes_A N$ are $B$-modules of finite type, and thus separated for the $\fk{J}$-preadic topology \sref[0\textsubscript{I}]{0.7.3.5};
+it thus suffices to prove that the homomorphism $\wh{v}:\wh{M\otimes_A N'}\to\wh{M\otimes_A N}$ of the separated completions is injective.
+But $\wh{v}=\varprojlim v_n$, where $v_n$ is the homomorphism $1\otimes u:M_n\otimes_A N'\to M_n\otimes_A N$;
+since, by hypothesis, $M_n$ is $A$-flat, $v_n$ is injective for all $n$, and thus so too is $v$, because the functor $\varprojlim$ is left exact.
+\end{proof}
+
+\begin{cor}[10.2.7]
+\label{0.10.2.7}
+Let $A$ be a Noetherian ring, $B$ a local Noetherian ring, $\rho:A\to B$ a homomorphism, $f$ an element of the maximal ideal of $B$, and $M$ a $B$-module of finite type.
+Suppose that the homothety $f_M:x\to fx$ on $M$ is injective, and that $M/fM$ is a flat $A$-module.
+Then $M$ is a flat $A$-module.
+\end{cor}
+
+\begin{proof}
+\label{proof-0.10.2.7}
+Let $M_i=f^iM$ for $i\geq0$;
+since $f_M$ is injective, $M_i/M_{i+1}$ is isomorphic to $M/fM$, and thus $A$-flat for all $i\geq0$;
+the exact sequence
+\[
+    0 \to M_i/M_{i+1} \to M/M_{i+1} \to M/M_i \to 0
+\]
+gives us, by induction on $i$, that $M/M_i$ is \emph{$A$-flat} for all $i\geq0$ \sref[0\textsubscript{I}]{0.6.1.2};
+we can thus apply \sref{0.10.2.6}.
+We can also argue directly as follows:
+for every $A$-module $N$ of finite type, $M\otimes_A N$ is a $B$-module of finite type;
+since $f$ belongs to the radical $\fk{n}$ of $B$, the $(f)$-adic topology on $M\otimes_A N$ is finer than the
+\oldpage[0\textsubscript{III-1}]{20}
+$\fk{u}$-adic topology, and we know that the latter is \emph{separated} \sref[0\textsubscript{I},0.7.3.5].
+Now, since $M/M_i$ is $A$-flat, we have that
+\[
+    f^i(M\otimes_A N) = \Im(M_i\otimes_A N \to  M\otimes_A N) = \Ker(M\otimes_A N \to (M/M_i)\otimes_A N)
+\]
+by \sref[0\textsubscript{I}]{0.6.1.2}.
+So let $N$ be an $A$-module of finite type, and $N'$ a submodule of $N$, with canonical injection $j:N'\to N$;
+in the commutative diagram
+\[
+  \xymatrix{
+    M\otimes_A N' \ar[r] \ar[d]_{1_M\otimes j}
+    & (M/M_i)\otimes_A N' \ar[d]^{1_{M/M_i}\otimes j}\\
+    M\otimes_A N \ar[r]
+    & (M/M_i)\otimes_A N
+  }
+\]
+$1_{M/M_i}\otimes j$ is injective, because $M/M_i$ is $A$-flat;
+we thus conclude that
+\[
+    \Ker(M\otimes_A N' \to M\otimes_A N) \subset \Ker(M\otimes_A N' \to (M/M_i)\otimes_A N')
+\]
+for any $i$;
+since the intersection (over $i$) of the latter kernel is $0$, as we saw above, so too is the intersection (over $i$) of the former, and so $M$ is $A$-flat.
+\end{proof}
+
+\begin{prop}[10.2.8]
+\label{0.10.2.8}
+Let $A$ be a reduced Noetherian ring, and $M$ an $A$-module of finite type.
+Suppose that, for every $A$-algebra $B$ (which is then a discrete valuation ring), $M\otimes_A B$ is a flat $B$-module (and thus free \sref{0.10.1.3}).
+Then $M$ is a flat $A$-module.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.10.2.8}
+We know that, for $M$ to be flat, it is necessary and suffices for $M_\fk{m}$ to be a flat $A_\fk{m}$-module for every maximal ideal $\fk{m}$ of $A$ \sref[0\textsubscript{I}]{0.6.3.3};
+we can thus restrict to the case where $A$ is \emph{local} \sref[0\textsubscript{I}]{0.1.2.8}.
+So let $\fk{m}$ be the maximal ideal of $A$, $\fk{p}_i$ ($1\leq i\leq r$) the minimal prime ideals of $A$, and $k$ the residue field $A/fk{m}$.
+We know \sref[II]{2.7.1.7} that there exists, for each $i$, a discrete valuation ring $B_i$ that has the same field of fractions $K_i$ as the integral ring $A/\fk{p}_i$, and that, further, dominates $A/\fk{p}_i$.
+Let $M_i=M\otimes_A B_i$.
+By hypothesis, $M_i$ is free over $B_i$, and so, denoting by $k_i$ the residue field of $B_i$, we have
+\begin{equation*}
+\label{0.10.2.8.1}
+    \rg_{k_i}(M_i\otimes_{B_i}k_i) = \rg_{K_i}(M_i\otimes_{B_i}K_i).\tag{10.2.8.1}
+\end{equation*}
+
+But it is clear that the composite homomorphism $A\to A/\fk{p}_i\to B_i$ is local, and so $k$ is an extension of $k_i$, and that we have $M_i\otimes_{B_i}k_i = M\otimes_A k_i = (M\otimes_A k)\otimes_k k_i$, and also that $M_i\otimes_{B_i}K_i = M\otimes_A K_i$.
+Equation~\sref{0.10.2.8.1} thus implies that
+\[
+    \rg_k(M\otimes_A k) = \rg_{K_i}(M\otimes_A K_i) \quad\mbox{for $1\leq i\leq r$}
+\]
+and since $A$ is reduced, we know that this condition implies that $M$ is a \emph{free} $A$-module (Bourbaki, \emph{Alg. comm.}, chap.~II, \textsection~3, n\textsuperscript{o}~2, prop.~7).
+\end{proof}
+
+\subsection{Existence of flat extensions of local rings}
+\label{subsection:existence-of-flat-extensions-of-local-rings}
+
+\begin{prop}[10.3.1]
+\label{0.10.3.1}
+Let $A$ be a local Noetherian ring, with maximal ideal $\fk{J}$, and residue field $k=A/\fk{J}$.
+Let $K$ be a field extension of $k$.
+Then there exists a local homomorphism from $A$ to a local Noetherian ring $B$, such that $B/\fk{J}B$ is $k$-isomorphic to $K$, and such that $B$ is a flat $A$-module.
+\end{prop}
+
+The rest of this section is devoted to proving this proposition, step-by-step.
+
+\begin{env}[10.3.1.1]
+\label{0.10.3.1.1}
+First suppose that $K=k(T)$, where $T$ is an indeterminate.
+In the ring of polynomials $A'=A[T]$, consider the prime ideal $\fk{J}'=\fk{J}A$, consisting of the
+\oldpage[0\textsubscript{III-1}]{21}
+polynomials that have coefficients in the ideal $\fk{J}$;
+it is clear that $A'/\fk{J}'$ is canonically isomorphic to $k[T]$.
+We will show that the ring of fractions $B=A'_\fk{J}$ is that for which we are searching (that is, a ring which satisfies the conditions of the conclusion of the proposition);
+it is clearly a local Noetherian ring, with maximal ideal $\fk{L}=\fk{J}B$.
+Further, $B/\fk{L}=(A'/\fk{J}')_{\fk{J}'}=(k[T])_{\fk{J}'}$ is exactly the field of fractions $K$ of $k[T]$.
+Finally, $B$ is a flat $A'$-module, and $A'$ is a free $A$-module, so $B$ is a flat $A$-module \sref[0\textsubscript{I}]{0.6.2.1}.
+\end{env}
+
+\begin{env}[10.3.1.2]
+\label{0.10.3.1.2}
+Now suppose that $K=k(t)=k[t]$, where $t$ is algebraic over $k$;
+let $f\in k[T]$ be the minimal polynomial of $t$;
+there exists a monic polynomial $F\in A[T]$ whose canonical image in $k[T]$ is $f$.
+So let $A'=A[T]$, and let $\fk{J}'$ be the ideal $\fk{J}A'+(F)$ in $A'$.
+We will see that the quotient ring $B=A'/(F)$ is that for which we are searching.
+First of all, it is clear that $B$ is a \emph{free} $A$-module, and thus flat.
+The ring $A'/\fk{J}'$ is isomorphic to
+\[
+(A'/\fk{J}A') / \big( (\fk{J}A'+(F))/\fk{J}A' \big) = k[T]/(f) = K;
+\]
+the image $\fk{L}$ of $\fk{J}'$ in $B$ is thus maximal, and we evidently have that $\fk{L}=\fk{J}B$.
+Finally, $B$ is a semi-local ring, because it is an $A$-module of finite type (Bourbaki, \emph{Alg. comm.}, chap.~IV, \textsection~2, n\textsuperscript{o}~5, cor.~3 of prop.~9), and its maximal ideals are in bijective correspondence with those of $B/\fk{J}B$ (\cite[vol.~I, p.~259]{I-13});
+the previous arguments then prove that $B$ is a local ring.
+\end{env}
+
+\begin{lem}[10.3.1.3]
+\label{0.10.3.1.3}
+Let $(A_\lambda,f_{\mu\lambda})$ be a filtered inductive system of local rings, such that the $f_{\mu\lambda}$ are local homomorphisms;
+let $\fk{m}_\lambda$ be the maximal ideal of $A_\lambda$, and let $K_\lambda=A_\lambda/\fk{m}_\lambda$.
+Then $A'=\varinjlim A_\lambda$ is a local ring, with maximal ideal $\fk{m}=\varinjlim\fk{m}_\lambda$, and residue field $K=\varinjlim K_\lambda$.
+Further, if $\fk{m}_\mu=\fk{m}_\lambda A_\mu$ with $\lambda<\mu$, then we have $\fk{m}'=\fk{m}_\lambda A'$ for all $\lambda$.
+If, further, for $\lambda<\mu$, $A_\mu$ is a flat $A_\lambda$-module, and if all the $A_\lambda$ are Noetherian, then $A'$ is a flat Noetherian $A_\lambda$-modules for all $\lambda$.
+\end{lem}
+
+\begin{proof}
+\label{proof-0.10.3.1.3}
+Since, by hypothesis, $(f_\mu\lambda)(\fk{m}_\lambda)\subset\fk{m}_\mu$ for $\lambda<\mu$, the $\fk{m}_\lambda$ form an inductive system, and its limit $\fk{m}'$ is evidently an ideal of $A'$.
+Further, if $x'\not\in\fk{m}'$, there exists a $\lambda$ such that $x'=f_\lambda(x_\lambda)$ for some $x_\lambda\in A_\lambda$ (where $f_\lambda:A_\lambda\to A'$ denotes the canonical homomorphism);
+because $x'\not\in\fk{m}'$, we necessarily have that $x_\lambda\not\in\fk{m}_\lambda$, and so $x_\lambda$ admits an inverse $y_\lambda$ in $A_\lambda$, and $y'=f_\lambda(y_\lambda)$ is the inverse of $x'$ in $A'$, which proves that $A'$ is a local ring with maximal ideal $\fk{m}'$;
+the claim about $K$ follows immediately from the fact that $\varinjlim$ is an exact functor.
+The hypothesis that $\fk{m}_\mu=\fk{m}_\lambda A_\mu$ implies that the canonical map $\fk{m}_\lambda\otimes_{A_\lambda}A_\mu\to\fk{m}_\mu$ is surjective;
+the equality $\fk{m}'=\fk{m}_\lambda A'$ then follows from, again, the fact that the functor $\varinjlim$ is exact and commutes with the tensor product.
+
+Now suppose that, for $\lambda<\mu$, we have $\fk{m}_\mu=\fk{m}_\lambda A_\mu$, and that $A_\mu$ is a flat $A_\lambda$-module.
+Then $A'$ is a flat $A_\lambda$-module for all $\lambda$, by \sref[0\textsubscript{I}]{0.6.2.3};
+since $A'$ and $A_\lambda$ are local rings, and since $\fk{m}'=\fk{m}_\lambda A'$, $A'$ is even a \emph{faithfully flat} $A_\lambda$-module \sref[0\textsubscript{I}]{0.6.6.2}.
+Finally, suppose further that the $A_\lambda$ are \emph{Noetherian};
+the $\fk{m}_\lambda$-adic topologies are then separated \sref[0\textsubscript{I}]{0.7.3.5};
+we now show that, from this, it follows that the $\fk{m}'$-adic topology on $A'$ is \emph{separated}.
+Indeed, if $x'\in A'$ belongs to all the $\fk{m}^{'n}$ ($n\geq0$), then it is the image of some $x_\mu\in A_\mu$ for a specific index $\mu$, and since the inverse image in $A_\mu$ of $\fk{m}^{'n}=\fk{m}_\mu^n A'$ is $\fk{m}_\mu^n$ \sref[0\textsubscript{I}]{0.6.6.1}, $x_\mu$ belongs to all the $\fk{m}_\mu^n$, so $x_\mu=0$, by hypothesis, and so $x'=0$.
+Denote by $\wh{A}'$ the completion of $A'$ for the $\fk{m}'$-adic topology;
+the above shows that we have $A'\subset\wh{A}'$.
+We will now show that $\wh{A}'$ is \emph{Noetherian} and \emph{$A_\lambda$-flat} for all $\lambda$;
+from this,
+\oldpage[0\textsubscript{III-1}]{22}
+it will follow that $\wh{A}'$ is $A'$-flat \sref[0\textsubscript{I}]{0.6.2.3}, and since $\fk{m}'\wh{A}'\neq\wh{A}'$, that $\wh{A}'$ is a faithfully flat $A'$-module \sref[0\textsubscript{I}]{0.6.6.2}, whence the final conclusion that $A'$ is \emph{Noetherian} \sref[0\textsubscript{I}]{0.6.5.2}, which will finish the proof of the lemma.
+
+We have $\wh{A}'=\varprojlim_n A'/\fk{m}^{'n}$;
+by the fact that $A'$ is $A_\lambda$-flat, we have that
+\[
+    \fk{m}^{'n}/\fk{m}^{'n+1} = (\fk{m}_\lambda^{n}/\fk{m}_\lambda^{n+1})\otimes_{A_\lambda}A' = (\fk{m}_\lambda^{n}/\fk{m}_\lambda^{n+1})\otimes_{K_\lambda}(K_\lambda\otimes_{A_\lambda}A') = (\fk{m}_\lambda^{n}/\fk{m}_\lambda^{n+1})\otimes_{K_\lambda}K;
+\]
+since $\fk{m}_\lambda^{n}/\fk{m}_\lambda^{n+1}$ is a $K_\lambda$-vector space of finite dimension, $\fk{m}_\lambda^{'n}/\fk{m}_\lambda^{'n+1}$ is a $K$-vector space of finite dimension for all $n\geq0$.
+It thus follows from \sref[0\textsubscript{I}]{0.7.2.12} and \sref[0\textsubscript{I}]{0.7.2.8} that $\wh{A}'$ is \emph{Noetherian}.
+We further know that the maximal ideal of $\wh{A}'$ is $\fk{m}'A'$, and that $\wh{A}'/\fk{m}^{'n}\wh{A}'$ is isomorphic to $A'/\fk{m}^{'n}$;
+since $A'/\fk{m}^{'n}=(A_\lambda/\fk{m}_\lambda^n)\otimes_{A_\lambda}A'$, we see that $A'/\fk{m}^{'n}$ is a flat $(A_\lambda/\fk{m}_\lambda^n)$-module \sref[0\textsubscript{I}]{0.6.2.1};
+criterion~\sref{0.10.2.2} is thus applicable to the Noetherian $A_\lambda$-algebra $\wh{A}'$, and shows that $\wh{A}'$ is \emph{$A_\lambda$-flat}.
+\end{proof}
+
+\begin{env}[10.3.1.4]
+\label{0.10.3.1.4}
+We now treat the general case.
+There exists an ordinal $\gamma$ and, for every ordinal $\lambda\leq\gamma$, a subfield $k_\lambda$ of $K$ that contains $k$, such that (i) for all $\lambda<\gamma$, $k_{\lambda+1}$ is an extension of $k_\lambda$ generated by a single element; (ii) for every limit ordinal $\mu$, $k_\mu=\bigcup_{\lambda<\mu}k_\lambda$; and (iii) $K=k_\gamma$.
+In fact, it suffices to consider a bijection $\xi\mapsto t_\xi$ from the set of ordinals $\xi\leq\beta$ (for some suitable $\beta$) to $K$, and to define $k_\lambda$ by transfinite induction (for $\lambda\leq\beta$) as the union of the $k_\mu$ for $\mu<\lambda$ if $\lambda$ is a limit ordinal, and as $k_\nu(t_\xi)$ if $\lambda=\nu+1$, where $\xi$ is the smallest ordinal such that $t_\xi\not\in k_\nu$;
+$\gamma$ is then, by definition, the smallest ordinal $\leq\beta$ such that $k_\gamma=K$.
+
+With this in mind, we will define, by transfinite induction, a family of local Noetherian rings $A_\lambda$ for $\lambda\leq\gamma$, and local homomorphisms $f_{\mu\lambda}:A_\lambda\to A_\mu$ for $\lambda\leq\mu$, satisfying the following conditions:
+\begin{enumerate}[label=\emph{(\roman*)}]
+    \item $(A_\lambda,f_{\mu\lambda})$ is an inductive system, and $A_0=A$;
+    \item for all $\lambda$, we have a $k$-isomorphism $A_\lambda/\fk{J}A_\lambda\xrightarrow{\sim}k_\lambda$;
+    \item for $\lambda\leq\mu$, $A_\mu$ is a flat $A_\lambda$-module.
+\end{enumerate}
+
+So suppose that the $A_\lambda$ and the $f_{\mu\lambda}$ are defined for $\lambda<\mu<\xi$, and suppose, first of all, that $\xi=\zeta+1$, so that $k_\xi=k_\zeta(t)$.
+If $t$ is transcendental over $k_\zeta$, we define $A_\zeta$, following the procedure of \sref{0.10.3.1.1}, to be equal to $(A_\zeta[t])_{\fk{J}A_{\zeta[t]}}$;
+the canonical map is $f_{\zeta\xi}$, and, for $\lambda<\zeta$, we take $f_{\xi\lambda}=f_{\xi\zeta}\circ f_{\zeta\lambda}$;
+the verification of conditions~(i) to (iii) is then immediate, given that what we have shown in \sref{0.10.3.1.1}.
+So now suppose that $t$ is algebraic, and let $h$ be its minimal polynomial in $k_\zeta[T]$, and $H$ a monic polynomial in $A_\zeta[T]$ whose image in $k_\zeta[T]$ is $h$;
+we then take $A_\xi$ to be equal to $A_\zeta[T](H)$, with the $f_{\xi\lambda}$ being defined as berofe;
+the verification of conditions~(i) to (iii) then follows from what we have shown in \sref{0.10.3.1.2}.
+
+Now suppose that $\xi$ has no predecessor;
+we then take $A_\xi$ to be the inductive limit of the inductive system of local rings $(A_\lambda,f_{\mu\lambda})$ for $\lambda<\xi$;
+we define $f_{\xi\lambda}$ as the canonical map for $\lambda<\xi$.
+The fact that $A_\xi$ is local and Noetherian, that the $f_{\xi\lambda}$ are local homomorphism, and that conditions~(i) to (iii) are satisfied for $\lambda\leq\xi$
+\oldpage[0\textsubscript{III-1}]{23}
+then follows from the induction hypothesis, and from Lemma~\sref{0.10.3.1.3}.
+With this construction, it is clear that the ring $B=A_\gamma$ satisfies the conditions of \sref{0.10.3.1}.\qed
+\end{env}
+
+We note that, by \sref{0.10.2.1}[c], we have a canonical isomorphism
+\begin{equation*}
+\label{0.10.3.1.5}
+    \gr(A)\otimes_k K\xrightarrow{\sim}\gr(B).\tag{10.3.1.5}
+\end{equation*}
+
+We can also replace $B$ by its $\fk{J}B$-adic completion $\wh{B}$ without changing the conclusions of \sref{0.10.3.1}, because $\wh{B}$ is a flat $B$-module \sref[0\textsubscript{I}]{0.7.3.3}, and thus a flat $A$-module \sref[0\textsubscript{I}]{0.6.2.1}.
+
+We have also shown the following:
+\begin{cor}[10.3.2]
+\label{0.10.3.2}
+If $K$ is an extension of finite degree, then we can assume that $B$ is a finite $A$-algebra.
+\end{cor}
