@@ -154,4 +154,58 @@ We can also argue directly as follows:
 for every $A$-module $N$ of finite type, $M\otimes_A N$ is a $B$-module of finite type;
 since $f$ belongs to the radical $\fk{n}$ of $B$, the $(f)$-adic topology on $M\otimes_A N$ is finer than the
 \oldpage[0\textsubscript{III-1}]{20}
+$\fk{u}$-adic topology, and we know that the latter is \emph{separated} \sref[0\textsubscript{I},0.7.3.5].
+Now, since $M/M_i$ is $A$-flat, we have that
+\[
+    f^i(M\otimes_A N) = \Im(M_i\otimes_A N \to  M\otimes_A N) = \Ker(M\otimes_A N \to (M/M_i)\otimes_A N)
+\]
+by \sref[0\textsubscript{I}]{0.6.1.2}.
+So let $N$ be an $A$-module of finite type, and $N'$ a submodule of $N$, with canonical injection $j:N'\to N$;
+in the commutative diagram
+\[
+  \xymatrix{
+    M\otimes_A N' \ar[r] \ar[d]_{1_M\otimes j}
+    & (M/M_i)\otimes_A N' \ar[d]^{1_{M/M_i}\otimes j}\\
+    M\otimes_A N \ar[r]
+    & (M/M_i)\otimes_A N
+  }
+\]
+$1_{M/M_i}\otimes j$ is injective, because $M/M_i$ is $A$-flat;
+we thus conclude that
+\[
+    \Ker(M\otimes_A N' \to M\otimes_A N) \subset \Ket(M\otimes_A N' \to (M/M_i)\otimes_A N')
+\]
+for any $i$;
+since the intersection (over $i$) of the latter kernel is $0$, as we saw above, so too is the intersection (over $i$) of the former, and so $M$ is $A$-flat.
 \end{proof}
+
+\begin{prop}[10.2.8]
+\label{0.10.2.8}
+Let $A$ be a reduced Noetherian ring, and $M$ an $A$-module of finite type.
+Suppose that, for every $A$-algebra $B$ (which is then a discrete valuation ring), $M\otimes_A B$ is a flat $B$-module (and thus free \sref{0.10.1.3}).
+Then $M$ is a flat $A$-module.
+\end{prop}
+
+\begin{proof}
+\label{proof-0.10.2.8}
+We know that, for $M$ to be flat, it is necessary and suffices for $M_\fk{m}$ to be a flat $A_\fk{m}$-module for every maximal ideal $\fk{m}$ of $A$ \sref[0\textsubscript{I}]{0.6.3.3};
+we can thus restrict to the case where $A$ is \emph{local} \sref[0\textsubscript{I}]{0.1.2.8}.
+So let $\fk{m}$ be the maximal ideal of $A$, $\fk{p}_i$ ($1\leq i\leq r$) the minimal prime ideals of $A$, and $k$ the residue field $A/fk{m}$.
+We know \sref[II]{2.7.1.7} that there exists, for each $i$, a discrete valuation ring $B_i$ that has the same field of fractions $K_i$ as the integral ring $A/\fk{p}_i$, and that, further, dominates $A/\fk{p}_i$.
+Let $M_i=M\otimes_A B_i$.
+By hypothesis, $M_i$ is free over $B_i$, and so, denoting by $k_i$ the residue field of $B_i$, we have
+\begin{equation*}
+\label{0.10.2.8.1}
+    \rg_{k_i}(M_i\otimes_{B_i}k_i) = \rg_{K_i}(M_i\otimes_{B_i}K_i).\tag{10.2.8.1}
+\end{equation*}
+
+But it is clear that the composite homomorphism $A\to A/\fk{p}_i\to B_i$ is local, and so $k$ is an extension of $k_i$, and that we have $M_i\otimes_{B_i}k_i = M\otimes_A k_i = (M\otimes_A k)\otimes_k k_i$, and also that $M_i\otimes_{B_i}K_i = M\otimes_A K_i$.
+Equation~\sref{0.10.2.8.1} thus implies that
+\[
+    \rg_k(M\otimes_A k) = \rg_{K_i}(M\otimes_A K_i) \quad\mbox{for $1\leq i\leq r$}
+\]
+and since $A$ is reduced, we know that this condition implies that $M$ is a \emph{free} $A$-module (Bourbaki, \emph{Alg. comm.}, chap.~II, \textsection~3, n\textsuperscript{o}~2, prop.~7).
+\end{proof}
+
+\subsection{Existence of flat extensions of local rings}
+\label{subsection:existence-of-flat-extensions-of-local-rings}
