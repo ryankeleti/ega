@@ -21,14 +21,14 @@ a integer $n>0$ such
 \oldpage[0\textsubscript{I}]{61}
 that $\fk{J}^n\subset V$ \emph{(which we express, by abuse of language, by saying that
 the sequence $(\fk{J}^n)$ \emph{tends to $0$})}. We say that a linearly topologized
-ring $A$ is \emph{pre-admissible} if there exists in $A$ an ideal of definition; we say that
-$A$ is \emph{admissible} if it is pre-admissible and if in addition it is separated and
+ring $A$ is \emph{preadmissible} if there exists in $A$ an ideal of definition; we say that
+$A$ is \emph{admissible} if it is preadmissible and if in addition it is separated and
 complete.
 \end{defn}
 
 It is clear that if $\fk{J}$ is an ideal of definition, $\fk{L}$ an open ideal of
 $A$, then $\fk{J}\cap\fk{L}$ is also an ideal of definition; the ideals of
-definition of a pre-admissible ring $A$ thus form a \emph{fundamental system of neighborhoods
+definition of a preadmissible ring $A$ thus form a \emph{fundamental system of neighborhoods
 of $0$}.
 
 \begin{lem}[7.1.3]
@@ -38,7 +38,7 @@ Let $A$ be a linearly topologized ring.
   \item For $x\in A$ to be topologically nilpotent, it is necessary and sufficient that for
     each open ideal $\fk{J}$ of $A$, the canonical image of $x$ in $A/\fk{J}$ is
     nilpotent. The set $\fk{T}$ of topologically nilpotent elements of $A$ is an ideal.
-  \item Suppose that in addition $A$ is pre-admissible, and let $\fk{J}$ be an ideal
+  \item Suppose that in addition $A$ is preadmissible, and let $\fk{J}$ be an ideal
     of definition for $A$. For $x\in A$ to be topologically nilpotent, it is necessary and
     sufficient that its canonical image in $A/\fk{J}$ is nilpotent; the ideal
     $\fk{T}$ is the inverse image of the nilradical of $A/\fk{J}$ and is thus open.
@@ -55,7 +55,7 @@ $x^{mq}\in V$ for $q\geq n$, so $x$ is topologically nilpotent.
 
 \begin{prop}[7.1.4]
 \label{0.7.1.4}
-Let $A$ be a pre-admissible ring, $\fk{J}$ an ideal of definition for $A$.
+Let $A$ be a preadmissible ring, $\fk{J}$ an ideal of definition for $A$.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item For an ideal $\fk{J}'$ of $A$ to be contained in an ideal of
     definition, it is necessary and sufficient that there exists an integer
@@ -81,7 +81,7 @@ Let $A$ be a pre-admissible ring, $\fk{J}$ an ideal of definition for $A$.
 
 \begin{cor}[7.1.5]
 \label{0.7.1.5}
-In a pre-admissible ring $A$, an open prime ideal contains all the ideals of definition.
+In a preadmissible ring $A$, an open prime ideal contains all the ideals of definition.
 \end{cor}
 
 \begin{cor}[7.1.6]
@@ -114,12 +114,12 @@ $A/\fk{T}$.
 \begin{cor}[7.1.7]
 \label{0.7.1.7}
 \oldpage[0\textsubscript{I}]{62}
-A pre-admissible Noetherian ring admits a largest ideal of definition.
+A preadmissible Noetherian ring admits a largest ideal of definition.
 \end{cor}
 
 \begin{cor}[7.1.8]
 \label{0.7.1.8}
-If a pre-admissible ring $A$ is such that, for an ideal of definition
+If a preadmissible ring $A$ is such that, for an ideal of definition
 $\fk{J}$, the powers $\fk{J}^n$ ($n>0$) form a fundamental system
 of neighborhoods of $0$, it is the same for the powers ${\fk{J}'}^n$ for
 each ideal of definition $\fk{J}'$ of $A$.
@@ -127,20 +127,20 @@ each ideal of definition $\fk{J}'$ of $A$.
 
 \begin{defn}[7.1.9]
 \label{0.7.1.9}
-We say that a pre-admissible ring $A$ is \emph{pre-adic} if there exists an
+We say that a preadmissible ring $A$ is \emph{preadic} if there exists an
 ideal of definition $\fk{J}$ for $A$ such that the $\fk{J}^n$ form
 a fundamental system of neighborhoods of $0$ in $A$ \emph{(or equivalently, such
 that the $\fk{J}^n$ are \emph{open})}. We call a ring \emph{adic} if it
-is a separated and complete pre-adic ring.
+is a separated and complete preadic ring.
 \end{defn}
 
-If $\fk{J}$ is an ideal of definition for a pre-adic (resp. adic) ring
-$A$, we say that $A$ is a \emph{$\fk{J}$-pre-adic}
+If $\fk{J}$ is an ideal of definition for a preadic (resp. adic) ring
+$A$, we say that $A$ is a \emph{$\fk{J}$-preadic}
 (resp. \emph{$\fk{J}$-adic}) ring, and that its topology is the
-\emph{$\fk{J}$-pre-adic} (resp. \emph{$\fk{J}$-adic}) topology. More
+\emph{$\fk{J}$-preadic} (resp. \emph{$\fk{J}$-adic}) topology. More
 generally, if $M$ is an $A$-module, the topology on $M$ having for a fundamental
 system of neighborhoods of $0$ the submodules $\fk{J}^n M$ is called the
-\emph{$\fk{J}$-pre-adic} (resp. \emph{$\fk{J}$-adic}) topology.
+\emph{$\fk{J}$-preadic} (resp. \emph{$\fk{J}$-adic}) topology.
 According to \sref{0.7.1.8}, these topologies are independent of the choice
 of the ideal of definition $\fk{J}$.
 
@@ -244,18 +244,18 @@ Let $A$ be an \emph{admissible} topological ring, $\fk{J}$ an ideal of $A$
 contained in an ideal of definition (in other words \sref{0.7.1.4} such that
 $(\fk{J}^n)$ tends to $0$); we can consider on $A$ the ring topology
 having for a fundamental system of neighborhoods of $0$ the powers
-$\fk{J}^n$ ($n>0$); we call again this the \emph{$\fk{J}$-pre-adic}
+$\fk{J}^n$ ($n>0$); we call again this the \emph{$\fk{J}$-preadic}
 topology. The hypothesis that $A$ is admissible implies that
-$\bigcup_n\fk{J}^n=0$, therefore the $\fk{J}$-pre-adic topology on
+$\bigcup_n\fk{J}^n=0$, therefore the $\fk{J}$-preadic topology on
 $A$ is \emph{separated}; let $\wh{A}=\varprojlim A/\fk{J}^n$ be the
 completion of $A$ for this topology (where the $A/\fk{J}^n$ are equipped
 with the discrete topology), and denote by $u$ the (not necessarily continuous)
 ring homomorphism $A\to\wh{A}$, the projective limit of the sequence of
 homomorphisms $u_n:A\to A/\fk{J}^n$. On the other hand, the
-$\fk{J}$-pre-adic topology on $A$ is finer than the given topology
+$\fk{J}$-preadic topology on $A$ is finer than the given topology
 $\mathcal{T}$ on $A$; as $A$ is separated and complete for $\mathcal{T}$, we can
 extend by continuity the identity map of $A$ (equipped with the
-$\fk{J}$-pre-adic topology) to $A$ equipped with $\mathcal{T}$; this
+$\fk{J}$-preadic topology) to $A$ equipped with $\mathcal{T}$; this
 gives a continuous representation $v:\wh{A}\to A$.
 \end{env}
 
@@ -263,7 +263,7 @@ gives a continuous representation $v:\wh{A}\to A$.
 \label{0.7.2.4}
 If $A$ is an admissible ring and $\fk{J}$ is contained in an ideal of
 definition of $A$, then $A$ is separated and complete for the
-$\fk{J}$-pre-adic topology.
+$\fk{J}$-preadic topology.
 \end{prop}
 
 \begin{proof}
@@ -271,7 +271,7 @@ $\fk{J}$-pre-adic topology.
 With the notation of \sref{0.7.2.3}, it is immediate that
 $v\circ u$ is the identity map of $A$. On the other hand,
 $u_n\circ v:\wh{A}\to A/\fk{J}^n$ is the extension by continuity (for
-the $\fk{J}$-pre-adic topology on $A$ and the discrete topology on
+the $\fk{J}$-preadic topology on $A$ and the discrete topology on
 $A/\fk{J}^n$) of the canonical map $u_n$; in other words, it is the
 canonical map from $\wh{A}=\varprojlim_k A/\fk{J}^k$ to
 $A/\fk{J}^n$; $u\circ v$ is therefore the projective limit of this
@@ -299,7 +299,7 @@ For $A$ to be Noetherian, it is necessary and sufficient for $A/\fk{J}$ to be No
 
 These conditions are evidently necessary. Conversely, suppose the conditions
 are satisfied; as according to \sref{0.7.2.4} $A$ is complete for the
-$\fk{J}$-pre-adic, for it to be Noetherian, it is necessary and sufficient
+$\fk{J}$-preadic topology, for it to be Noetherian, it is necessary and sufficient
 that the associated graded ring $\grad(A)$ (for the filtration on the
 $\fk{J}^n$) is (\cite[p~.18--07, th.~4]{I-1}). Now, let $a_1,\dots,a_n$ be
 the elements of $\fk{J}$ whose classes mod.~$\fk{J}^2$ are the
@@ -455,7 +455,7 @@ the \emph{adic Noetherian} rings).
 Let $B$ be a ring, $\fk{J}$ an ideal of $B$ such that $\fk{J}/\fk{J}^2$ is
 a module of finite type over $B/\fk{J}$ (or over $B$, equivalently); set
 $A=\varprojlim_n B/\fk{J}^{n+1}$; $A$ is the separated completion of $B$ equipped with
-the $\fk{J}$-pre-adic topology. If $A_n=B/\fk{J}^{n+1}$, then it is immediate
+the $\fk{J}$-preadic topology. If $A_n=B/\fk{J}^{n+1}$, then it is immediate
 that the $A_n$ satisfy the conditions of Proposition \sref{0.7.2.7};
 therefore $A$ is an adic ring and if $\overline{\fk{J}}$ is the closure in $A$ of the
 canonical image of $\fk{J}$, then $\overline{\fk{J}}$ is an ideal of definition
@@ -465,21 +465,21 @@ $\overline{\fk{J}}/\overline{\fk{J}^2}$ is isomorphic to
 $\fk{J}/\fk{J}^2$ as an $A/\overline{\fk{J}}$-module. Similarly, if $N$
 is such that $N/\fk{J}N$ is a $B$-module of finite type, and if we set
 $M_i=N/\fk{J}^{i+1}N$, then $M=\varprojlim M_i$ is an $A$-module of finite type,
-isomorphic to the separated completion of $N$ for the $\fk{J}$-pre-adic topology, and
+isomorphic to the separated completion of $N$ for the $\fk{J}$-preadic topology, and
 $\overline{\fk{J}^n}M$ identifies with the closure of the canonical image of
 $\fk{J}^n N$, and $M/\overline{\fk{J}^n}M$ identifies with
 $N/\fk{J}^n N$.
 \end{exm}
 
-\subsection{Pre-adic Noetherian rings}
-\label{subsection:pre-adic-noetherian-rings}
+\subsection{preadic Noetherian rings}
+\label{subsection:preadic-noetherian-rings}
 
 \begin{env}[7.3.1]
 \label{0.7.3.1}
 Let $A$ be a ring, $\fk{J}$ an ideal of $A$, and $M$ an $A$-module; we denote by
 $\wh{A}=\varprojlim_n A/\fk{J}^n$
 (resp. $\wh{M}=\varprojlim_n M/\fk{J}^n M$) the separated completion of $A$
-(resp. $M$) for the $\fk{J}$-pre-adic topology. Let
+(resp. $M$) for the $\fk{J}$-preadic topology. Let
 $M'\xrightarrow{u}M\xrightarrow{v}M''\to 0$ be an exact sequence of $A$-modules; as
 $M/\fk{J}^n M=M\otimes_A(A/\fk{J}^n)$, the sequence
 \[
@@ -504,8 +504,8 @@ finite type. In addition, we have the following theorem.
 \label{0.7.3.2}
 \emph{(Krull's Theorem)}. Let $A$ be a \emph{Noetherian} ring, $\fk{J}$ an ideal of
 $A$, $M$ an $A$-module \emph{of finite type}, and $M'$ a submodule of $M$; then the induced
-topology on $M'$ by the $\fk{J}$-pre-adic topology of $M$ is identical to the
-$\fk{J}$-pre-adic topology of $M'$.
+topology on $M'$ by the $\fk{J}$-preadic topology of $M$ is identical to the
+$\fk{J}$-preadic topology of $M'$.
 \end{thm}
 
 This follows immediately from
@@ -538,7 +538,7 @@ an exact sequence; we have seen that $\wh{v}:\wh{M}\to\wh{M''}$ is surjective
 \sref{0.7.3.1}; on the other hand, if $i$ is the canonical homomorphism
 $M\to\wh{M}$, it follows from Krull's Theorem \sref{0.7.3.2} that the
 closure of $i(u(M'))$ in $\wh{M}$ identifies with the separated completion of $M'$ for
-the $\fk{J}$-pre-adic topology; thus $\wh{u}$ is injective, and according to
+the $\fk{J}$-preadic topology; thus $\wh{u}$ is injective, and according to
 \sref{0.7.3.1}, the image of $\wh{u}$ is equal to the kernel of
 $\wh{v}$.
 
@@ -587,8 +587,8 @@ equivalent:
 \begin{enumerate}[label=\emph{(\alph*)}]
   \item $\fk{J}$ is contained in the radical of $A$.
   \item $\wh{A}$ is a faithfully flat $A$-module \sref{0.6.4.1}.
-  \item Each $A$-module of finite type is separated for the $\fk{J}$-pre-adic topology.
-  \item Each submodule of an $A$-module of finite type is closed for the $\fk{J}$-pre-adic topology.
+  \item Each $A$-module of finite type is separated for the $\fk{J}$-preadic topology.
+  \item Each submodule of an $A$-module of finite type is closed for the $\fk{J}$-preadic topology.
 \end{enumerate}
 \end{cor}
 
@@ -598,18 +598,18 @@ As $\wh{A}$ is a flat $A$-module, the conditions (b) and (c) are equivalent, sin
 (b) is equivalent to saying that if $M$ is an $A$-module of finite type, then the canonical
 map $M\to\wh{M}=M\otimes_A\wh{A}$ is injective \sref{0.6.6.1}[c].
 It is immediate that (c) implies (d), since if $N$ is a submodule of an $A$-module $M$ of
-finite type, then $M/N$ is separated for the $\fk{J}$-pre-adic topology, so $N$ is
+finite type, then $M/N$ is separated for the $\fk{J}$-preadic topology, so $N$ is
 closed in $M$. We show that (d) implies (a): if $\fk{m}$ is a maximal ideal of $A$,
-then $\fk{m}$ is closed in $A$ for the $\fk{J}$-pre-adic topology, so
+then $\fk{m}$ is closed in $A$ for the $\fk{J}$-preadic topology, so
 $\fk{m}=\bigcap_{p\geq 0}(\fk{m}+\fk{J}^p)$, and as
 $\fk{m}+\fk{J}^p$ is necessarily equal to $A$ or to $\fk{m}$, we have that
 $\fk{m}+\fk{J}^p=\fk{m}$ for large enough $p$,
 \oldpage[0\textsubscript{I}]{68}
 hence $\fk{J}^p\subset\fk{m}$, and $\fk{J}\subset\fk{m}$ when
 $\fk{m}$ is prime. Finally, (a) implies (b): indeed, let $P$ be the closure of $\{0\}$
-in an $A$-module $M$ of finite type, for the $\fk{J}$-pre-adic topology; according to
+in an $A$-module $M$ of finite type, for the $\fk{J}$-preadic topology; according to
 Krull's Theorem \sref{0.7.3.2}, the topology induced on $P$ by the
-$\fk{J}$-pre-adic topology of $M$ is the $\fk{J}$-pre-adic topology of $P$,
+$\fk{J}$-preadic topology of $M$ is the $\fk{J}$-preadic topology of $P$,
 so $\fk{J}P=P$; as $P$ is of finite type, it follows from Nakayama's Lemma that
 $P=0$ ($\fk{J}$ being contained in the radical of $A$).
 \end{proof}
@@ -619,8 +619,8 @@ when $A$ is a \emph{local Noetherian ring} and $\fk{J}\neq A$ is any ideal of $A
 
 \begin{cor}[7.3.6]
 \label{0.7.3.6}
-If $A$ is a $\fk{J}$-pre-adic Noetherian ring, then each $A$-module of finite type
-is separated and complete for the $\fk{J}$-pre-adic topology.
+If $A$ is a $\fk{J}$-preadic Noetherian ring, then each $A$-module of finite type
+is separated and complete for the $\fk{J}$-preadic topology.
 \end{cor}
 
 \begin{proof}
@@ -658,12 +658,12 @@ $k=A/\fk{m}$.
 \end{defn}
 
 When $A$ is \emph{Noetherian}, the separated completion $\wh{M}$ of $M$ for the
-$\fk{m}$-pre-adic topology is then an \emph{$\wh{A}$-module of finite type};
+$\fk{m}$-preadic topology is then an \emph{$\wh{A}$-module of finite type};
 indeed, as $\fk{m}/\fk{m}^2$ is then an $A$-module of finite type, this follows
 from Example \sref{0.7.2.12} and from the hypothesis on $M/\fk{m}M$.
 
 In particular, if we suppose that in addition $A$ is \emph{complete} and $M$ is
-\emph{separated} for the $\fk{m}$-pre-adic topology (in other words,
+\emph{separated} for the $\fk{m}$-preadic topology (in other words,
 $\bigcap_n\fk{m}^n M=0$), then $M$ is also an \emph{$A$-module of finite type}: indeed,
 $\wh{M}$ is then an $A$-module of finite type, and as $M$ identifies with a submodule of
 $\wh{M}$, $M$ is also of finite type (and is indeed identical to its completion
@@ -673,8 +673,8 @@ according to Corollary \sref{0.7.3.6}).
 \label{0.7.4.2}
 Let $A$, $B$ be two local rings, $\fk{m}$, $\fk{n}$ their maximal ideals, and
 suppose that $B$ is Noetherian. Let $\vphi:A\to B$ be a local homomorphism, $M$ a $B$-module
-of finite type. If $M$ is a quasi-finite $A$-module, then the $\fk{m}$-pre-adic and
-$\fk{n}$-pre-adic topologies on $M$ are identical, thus separated.
+of finite type. If $M$ is a quasi-finite $A$-module, then the $\fk{m}$-preadic and
+$\fk{n}$-preadic topologies on $M$ are identical, thus separated.
 \end{prop}
 
 \begin{proof}
@@ -698,20 +698,20 @@ $h>0$, we have
   \fk{n}^{hk}\subset(\fk{m}B+\fk{b})^h M
   =\fk{m}^h M\subset\fk{n}^h M,
 \]
-which proves that the $\fk{m}$-pre-adic and $\fk{n}$-pre-adic topologies on $M$
+which proves that the $\fk{m}$-preadic and $\fk{n}$-preadic topologies on $M$
 are the same; the second is separated according to Corollary \sref{0.7.3.5}.
 \end{proof}
 
 \begin{cor}[7.4.3]
 \label{0.7.4.3}
 Under the hypotheses of Proposition \sref{0.7.2.4}, if in addition $A$ is
-Noetherian and complete for the $\fk{m}$-pre-adic topology, then $M$ is an $A$-module
+Noetherian and complete for the $\fk{m}$-preadic topology, then $M$ is an $A$-module
 of finite type.
 \end{cor}
 
 \begin{proof}
 \label{proof-0.7.4.3}
-Indeed, $M$ is then separated for the $\fk{m}$-pre-adic topology, and our assertion
+Indeed, $M$ is then separated for the $\fk{m}$-preadic topology, and our assertion
 follows from the remark after Definition \sref{0.7.4.1}.
 \end{proof}
 
@@ -1137,7 +1137,7 @@ flat $A$-module.
 \begin{proof}
 \label{proof-0.7.6.13}
 If $\fk{J}$ is an ideal of definition for $A$, then $A\{S^{-1}\}$ is the separated completion
-of the Noetherian ring $S^{-1}A$ equipped with the $S{-1}\fk{J}$-pre-adic topology; as a result
+of the Noetherian ring $S^{-1}A$ equipped with the $S{-1}\fk{J}$-preadic topology; as a result
 \sref{0.7.3.3} $A\{S^{-1}\}$ is a flat $S^{-1}A$-module; as $S^{-1}A$ is a flat
 $A$-module \sref{0.6.3.1}, the proposition follows from the transitivity of flatness \sref{0.6.2.1}.
 \end{proof}
@@ -1324,7 +1324,7 @@ hence our assertion.
 
 \begin{prop}[7.7.7]
 \label{0.7.7.7}
-If $B$ and $C$ are two pre-admissible $A$-algebras, then $(B\otimes_A C)^\wedge$ is
+If $B$ and $C$ are two preadmissible $A$-algebras, then $(B\otimes_A C)^\wedge$ is
 admissible, and if $\fk{K}$ (resp. $\fk{L}$) is an ideal of definition for
 $B$ (resp. $C$), then the closure in $(B\otimes_A C)^\wedge$ of the canonical image of
 $\fk{H}=\Im(\fk{K}\otimes_A C)+\Im(B\otimes_A\fk{L})$ is an ideal of definition.
@@ -1340,8 +1340,8 @@ It suffices to show that $\fk{H}^n$ tends to $0$ for the tensor product topology
 
 \begin{prop}[7.7.8]
 \label{0.7.7.8}
-Let $A$ be a pre-adic ring, $\fk{J}$ an ideal of defintion for $A$, $M$ an $A$-module
-\emph{of finite type}, equipped with the $\fk{J}$-pre-adic topology. For every topological
+Let $A$ be a preadic ring, $\fk{J}$ an ideal of defintion for $A$, $M$ an $A$-module
+\emph{of finite type}, equipped with the $\fk{J}$-preadic topology. For every topological
 adic Noetherian $A$-algebra $B$, $B\otimes_A M$ identifies with the completed tensor product
 $(B\otimes_A M)^\wedge$.
 \end{prop}
@@ -1349,7 +1349,7 @@ $(B\otimes_A M)^\wedge$.
 \begin{proof}
 \label{proof-0.7.7.8}
 If $\fk{K}$ is an ideal of definition for $B$, there exists by hypothesis an integer $m$ such that $\fk{J}^m B\subset\fk{K}$, so $\Im(B\otimes_A\fk{J}^{nm}M)=\Im(\fk{J}^{nm}B\otimes_A M)\subset\Im(\fk{K}^n B\otimes_A M)=\fk{K}^n(B\otimes_A M)$;
-we conclude that over $B\otimes_A M$, the tensor products of the topologies of $B$ and $M$ is the $\fk{K}$-pre-adic topology.
+we conclude that over $B\otimes_A M$, the tensor products of the topologies of $B$ and $M$ is the $\fk{K}$-preadic topology.
 As $B\otimes_A M$ is a $B$-module of finite type, the proposition follows from Corollary \sref{0.7.3.6}.
 \end{proof}
 
@@ -1359,7 +1359,7 @@ As $B\otimes_A M$ is a $B$-module of finite type, the proposition follows from C
 \begin{env}[7.8.1]
 \label{0.7.8.1}
 Let $A$ be a \emph{Noetherian $\fk{J}$-adic} ring, $M$ and $N$ two $A$-modules of finite type,
-equipped with the $\fk{J}$-pre-adic topology; we know \sref{0.7.3.6} that they are
+equipped with the $\fk{J}$-preadic topology; we know \sref{0.7.3.6} that they are
 separated and complete; in addition, every $A$-homomorphism $M\to N$ is automatically continuous, and
 the $A$-module $\Hom_A(M,N)$ is of finite type. For every integer $i\geq 0$, set
 $A_i=A/\fk{J}^{i+1}$, $M_i=M/\fk{J}^{i+1}M$, $N_i=N/\fk{J}^{i+1}N$; for
@@ -1396,8 +1396,8 @@ inverse image in $\Hom_A(M,N)$ of $0$ of $\Hom_{A_i}(M_i,N_i)$ is $\Hom_A(M,\fk{
 so $\vphi$ is bicontinuous.
 \end{proof}
 
-If we only suppose that $A$ is a \emph{Noetherian $\fk{J}$-pre-adic} ring, $M$ and $N$ two
-$A$-modules of finite type, separated for the $\fk{J}$-pre-adic topology, then the
+If we only suppose that $A$ is a \emph{Noetherian $\fk{J}$-preadic} ring, $M$ and $N$ two
+$A$-modules of finite type, separated for the $\fk{J}$-preadic topology, then the
 following proof shows that the first assertion of Propositon \sref{0.7.8.2} remains
 valid, and that $\vphi$ is a topological isomorphism from $\Hom_A(M,N)$ to a submodule of
 $\varprojlim_i\Hom_{A_i}(M_i,N_i)$.

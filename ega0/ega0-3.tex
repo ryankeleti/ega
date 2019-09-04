@@ -27,11 +27,9 @@ isomorphism.
 We will not recall the definition of a \emph{presheaf} $U\mapsto\sh{F}(U)$ on a
 topological space $X$ with values in a category $\C$ (G, I, 1.9); we say that
 such a presheaf is a \emph{sheaf with values in} $\C$ if it satisfies the
-following axiom:\\
-
-(F) \emph{For any covering $(U_\alpha)$ of an open set $U$ of $X$ by open sets
-    $U_\alpha$ contained in $U$, if we denote by $\rho_\alpha$}
-    (resp. $\rho_{\alpha\beta}$) \emph{the restriction morphism}
+following axiom:
+\begin{enumerate}
+  \item[(F)] \emph{For any covering $(U_\alpha)$ of an open set $U$ of $X$ by open sets $U_\alpha$ contained in $U$, if we denote by $\rho_\alpha$} (resp. $\rho_{\alpha\beta}$) \emph{the restriction morphism}
     \[
       \sh{F}(U)\to\sh{F}(U_\alpha)
       \quad(\text{resp. }\sh{F}(U_\alpha)\to\sh{F}(U_\alpha\cap U_\beta)),
@@ -43,6 +41,7 @@ following axiom:\\
     \sref{0.3.1.1}}\footnote{This is a special case of the more general
     notion of a (non-filtered) \emph{projective limit} (\emph{see} (T, I, 1.8)
     and the book in preparation announced in the introduction).}.\\
+\end{enumerate}
 
 Equivalently, we can say that, for each object $T$ of $\C$, the family
 $U\mapsto\Hom(T,\sh{F}(U))$ is a \emph{sheaf of sets}.
@@ -53,16 +52,16 @@ $U\mapsto\Hom(T,\sh{F}(U))$ is a \emph{sheaf of sets}.
 Assume that $\C$ is the category defined by a
 ``type of structure with morphisms'' $\Sigma$, the objects of $\C$ being the
 sets with structures of type $\Sigma$ and morphisms those of $\Sigma$. Suppose
-that the category $\C$ also satisfies the following condition:\\
-
-(E) If $(A,(\rho_\alpha))$ is a solution of a universal mapping problem \emph{in
-    the category $\C$} for families $(A_\alpha)$, $(A_{\alpha\beta})$,
+that the category $\C$ also satisfies the following condition:
+\begin{enumerate}
+  \item[(E)] If $(A,(\rho_\alpha))$ is a solution of a universal mapping problem \emph{in the category $\C$} for families $(A_\alpha)$, $(A_{\alpha\beta})$,
     $(\rho_{\alpha\beta})$, then it is also a solution of the universal mapping
     problem for the same families \emph{in the category of sets} (that is, when
     we consider $A$, $A_\alpha$, and $A_{\alpha\beta}$ as sets, $\rho_\alpha$
     and $\rho_{\alpha\beta}$ as functions)\footnote{It can be proved that it
     also means that the canonical functor $\C\to\Set$ \emph{commutes with
-    projective limits} (not necessarily filtered).}.\\
+    projective limits} (not necessarily filtered).}.
+\end{enumerate}
 
 Under these conditions, the condition (F) gives that, when considered as a
 presheaf \emph{of sets}, $U\mapsto\sh{F}(U)$ is a \emph{sheaf}. In addition, for
@@ -200,9 +199,9 @@ a presheaf.}.
 \label{0.3.2.2}
 For the presheaf $\sh{F}'$ thus defined to be a \emph{sheaf}, it is necessary
 and sufficient that the presheaf $\sh{F}$ on $\fk{B}$ satisfies the
-condition:\\
-
-(F$_0$) \emph{For any covering $(U_\alpha)$ of $U\in\fk{B}$ by sets
+condition:
+\begin{enumerate}
+  \item[(F$_0$)] \emph{For any covering $(U_\alpha)$ of $U\in\fk{B}$ by sets
         $U_\alpha\in\fk{B}$ contained in $U$, and for any object $T\in\C$,
         the map which sends $f\in\Hom(T,\sh{F}(U))$ to the family
         $(\rho_{U_\alpha}^U\circ f)\in\Pi_\alpha\Hom(T,\sh{F}(U_\alpha))$ is a
@@ -218,7 +217,8 @@ condition:\\
         by the condition that for $V\in\fk{B}$, $V'\in\fk{B}$,
         $W\in\fk{B}$, $V\cup V'\subset U_\alpha\cap U_\beta$,
         $W\subset V\cap V'$,
-        $\rho_W^V\circ\rho_V''=\rho_W^{V'}\circ\rho_{V'}''$.}.}\\
+        $\rho_W^V\circ\rho_V''=\rho_W^{V'}\circ\rho_{V'}''$.}.}
+\end{enumerate}
 
 The condition is obviously necessary. To show that it is sufficient, consider
 first a second basis $\fk{B}'$ of the topology of $X$, \emph{contained in}
@@ -238,12 +238,12 @@ satisfy the conditions characterizing the projective limit of $\sh{F}(W)$
 ($W\in\fk{B}$, $W\subset U$), which proves our assertion given the
 uniqueness of a projective limit up to isomorphism.
 
-This posed, let $U$ be any open set of $X$, $(U_\alpha)$ a covering of $U$ by
+This being so, let $U$ be any open set of $X$, $(U_\alpha)$ a covering of $U$ by
 the open sets contained in $U$, and $\fk{B}'$ the subfamily of
 $\fk{B}$ formed by the sets
 \oldpage[0\textsubscript{I}]{27}
 of $\fk{B}$ contained in at least one $U_\alpha$; it is clear that
-$\fk{B}'$ is still a basis of the topology of $X$, so $\sh{F}'(U)$
+$\fk{B}'$ is still a basis of the topology of $U$, so $\sh{F}'(U)$
 (resp. $\sh{F}''(U_\alpha)$) is the projective limit of $\sh{F}(V)$ for
 $V\in\fk{B}'$ and $V\subset U$ (resp., $V\subset U_\alpha$), the axiom (F)
 is then immediately verified by virtue of the definition of the projective
@@ -311,10 +311,10 @@ transitivity of projective limits; the fact that $\sh{F}$ is then the projective
 limit of the $\sh{F}_\lambda$ is immediate.
 
 When $\C$ is the category of sets, for each projective system
-$(\fk{H}_\lambda)$ such
+$(\sh{H}_\lambda)$ such
 \oldpage[0\textsubscript{I}]{28}
-that $\fk{H}_\lambda$ is a \emph{subsheaf} of $\sh{F}_\lambda$ for each
-$\lambda$, $\varprojlim_\lambda\fk{H}_\lambda$ canonically identifies with
+that $\sh{H}_\lambda$ is a \emph{subsheaf} of $\sh{F}_\lambda$ for each
+$\lambda$, $\varprojlim_\lambda\sh{H}_\lambda$ canonically identifies with
 a \emph{subsheaf} of $\varprojlim_\lambda\sh{F}_\lambda$. If $\C$ is the
 category of abelian groups, the covariant functor
 $\varprojlim_\lambda\sh{F}_\lambda$ is \emph{additive} and \emph{left exact}.
@@ -486,10 +486,9 @@ $\psi_x''=\psi_x\circ\psi_{\psi(x)}'$ for $x\in X$.
 
 \begin{env}[3.4.5]
 \label{0.3.4.5}
-Under the hypotheses of \sref{0.3.4.4}, suppose in addition that $\psi$ is a
-\emph{homeomorphism} from $X$ to the subspace $\psi(X)$ of $Y$. Then, for each
-$x\in X$, $\psi_x$ is an \emph{isomorphism}. This applies in particular to the
-canonical injection $j$ of a subset $X$ of $Y$ into $Y$.
+Under the hypotheses of \sref{0.3.4.4}, suppose in addition that $\psi$ is a \emph{homeomorphism} from $X$ to the subspace $\psi(X)$ of $Y$.
+Then, for each $x\in X$, $\psi_x$ is an \emph{isomorphism}.
+This applies in particular to the canonical injection $j$ of a subset $X$ of $Y$ into $Y$.
 \end{env}
 
 \begin{env}[3.4.6]
@@ -502,7 +501,7 @@ support of $\psi_*(\sh{F})$ is contained in $\overline{\psi(S)}$; but it is not
 necessarily contained in $\psi(S)$. Under the same hypotheses, if $j$ is the
 canonical injection of a subset $X$ of $Y$ into $Y$, the sheaf $j_*(\sh{F})$
 induces $\sh{F}$ on $X$; if moreover $X$ is \emph{closed} in $Y$, $j_*(\sh{F})$
-is the sheaf on $Y$ which induces $\sh{F}$ on $X$ and $0$ on $Y-X$
+is the sheaf on $Y$ which induces $\sh{F}$ on $X$ and $0$ on $Y\setmin X$
 (G, II, 2.9.2), but it is in general distinct from the latter when we suppose
 that $X$ is locally closed but not closed.
 \end{env}
@@ -695,8 +694,7 @@ $\psi$-morphism, $v:\sh{H}\to\psi_*'(\sh{G})$ a $\psi'$-morphism, and
 $w=\psi_*'(u)\circ v$ their composition \sref{0.3.5.2}, then we have
 immediately that $w^\sharp$ is the composite morphism
 \[
-  w^\sharp:\psi^*({\psi'}^*(\sh{H}))\xrightarrow{\psi^*(v^\sharp)}\psi^*(\sh{G})
-  \xrightarrow{u^\sharp}\sh{F}.
+  w^\sharp:\psi^*({\psi'}^*(\sh{H}))\xrightarrow{\psi^*(v^\sharp)}\psi^*(\sh{G})\xrightarrow{u^\sharp}\sh{F}.
 \]
 \end{env}
 
@@ -733,7 +731,6 @@ properties are equivalent:
   \item \emph{$\sh{F}$ is a simple sheaf on $X$};
   \item \emph{$\sh{F}$ is a locally simple sheaf on $X$}.
 \end{enumerate}
-\end{env}
 
 Indeed, let $\sh{F}$ be a constant presheaf on $X$; if $U$, $V$ are two nonempty
 open sets in $X$, then $U\cap V$ is nonempty, so
@@ -756,6 +753,7 @@ index $\alpha_0$, $\sh{F}(U_{\alpha_0})$ and the $\theta_{\alpha_0\alpha}$ are
 solutions to the universal problem, which (according to the uniqueness) implies
 that $\sh{F}(X)\to\sh{F}(U_{\alpha_0})$ is an isomorphism, and hence proves that
 (c) implies (a).
+\end{env}
 
 \subsection{Inverse images of presheaves of groups or rings}
 \label{subsection:inverse-images-of-psh-grps-or-rings}

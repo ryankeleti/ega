@@ -253,7 +253,7 @@ $\OO_{X\times_S Y}$, we reduce, by Proposition \sref{1.9.1.12} and
 by \sref[0]{0.1.7.5}, to the case where $\sh{G}=\OO_Y$, that
 is, it remains to prove the following equation:
 \[
-  \Supp(p^{-1}(\sh{F}))=p^{-1}(\Supp(\sh{F})).
+  \Supp(p^*(\sh{F}))=p^{-1}(\Supp(\sh{F})).
   \tag{9.1.13.1}
 \]
 
@@ -799,23 +799,25 @@ Then there exists a smaller closed subprescheme $\overline{Y}$ of $X$ \unsure{co
 
 \begin{proof}
 \label{proof-1.9.5.10}
-It suffices to apply \sref{1.9.5.1} to the injection $j$, which is separated \sref{1.5.5.1} and quasi-compact by hypothesis; \sref{1.9.5.1} thus proves the existence of $\overline{Y}$ and \sref{1.9.5.4} shows that its underlying space is the closure of $Y$ in $X$; since $Y$ is locally closed in $X$, it is open in $\overline{Y}$, and the last claim comes from \sref{1.9.5.8} applied to an open $V$ of $X$ such that $Y$ is closed in $V$.
+It suffices to apply Proposition~\sref{1.9.5.1} to the injection $j$, which is separated \sref{1.5.5.1} and quasi-compact by hypothesis; \sref{1.9.5.1} thus proves the existence of $\overline{Y}$ and \sref{1.9.5.4} shows that its underlying space is the closure of $Y$ in $X$; since $Y$ is locally closed in $X$, it is open in $\overline{Y}$, and the last claim comes from \sref{1.9.5.8} applied to an open $V$ of $X$ such that $Y$ is closed in $V$.
 \end{proof}
 
-With the above notation, if the injection $V\to X$ is quasi-compact, and if $\sh{J}$ is the quasi-coherent sheaf of ideals of $\OO_X|V$ defining the closed subprescheme $Y$ of $V$, it follows from \sref{1.9.5.1} that the quasi-coherent sheaf of ideals of $\OO_X$ defining $\overline{Y}$ is the canonical extension \sref{1.9.4.1} $\overline{\sh{J}}$ of $\sh{J}$, because it is evidently the largest quasi-coherent subsheaf of ideals of $\OO_X$ inducing $\sh{J}$ on $V$.
+With the above notation, if the injection $V\to X$ is quasi-compact, and if $\sh{J}$ is the quasi-coherent sheaf of ideals of $\OO_X|V$ defining the closed subprescheme $Y$ of $V$, it follows from Proposition~\sref{1.9.5.1} that the quasi-coherent sheaf of ideals of $\OO_X$ defining $\overline{Y}$ is the canonical extension \sref{1.9.4.1} $\overline{\sh{J}}$ of $\sh{J}$, because it is evidently the largest quasi-coherent subsheaf of ideals of $\OO_X$ inducing $\sh{J}$ on $V$.
 
 \begin{cor}[9.5.11]
 \label{1.9.5.11}
-Under\oldpage[I]{179} the hypotheses of \sref{1.9.5.10}, every section of $\OO_{\overline{Y}}$ over an open $V$ of $\overline{Y}$ that is null on $V\cap Y$ is null.
+Under
+\oldpage[I]{179}
+the hypotheses of Proposition~\sref{1.9.5.10}, every section of $\OO_{\overline{Y}}$ over an open $V$ of $\overline{Y}$ that is zero on $V\cap Y$ is zero.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.9.5.11}
-By \sref{1.9.5.8}, we can reduce to the case where $V=\overline{Y}$.
+By Proposition~\sref{1.9.5.8}, we can reduce to the case where $V=\overline{Y}$.
 If we take into account that the sections of $\OO_{\overline{Y}}$ over $\overline{Y}$ canonically correspond to the $\overline{Y}$-sections of $\overline{Y}\otimes_Z Z[T]$ \sref{1.3.3.15} and that the latter is separated over $\overline{Y}$, the corollary appears as a specific case of \sref{1.9.5.6}.
 \end{proof}
 
-When there exists a smaller closed subprescheme $Y$ of $X$ \unsure{containing} a subprescheme $Y$ of $X$, we say that $Y'$ is the \emph{closure} of $Y$ in $X$, when it doesn't lead to any confusion.
+When there exists a smaller closed subprescheme $Y'$ of $X$ majorizing a subprescheme $Y$ of $X$, we say that $Y'$ is the \emph{closure} of $Y$ in $X$, when there is little cause for confusion.
 
 \subsection{Quasi-coherent sheaves of algebras; change of structure sheaf}
 \label{subsection:qcoh-algs-and-change-of-str-sheaf}
@@ -874,7 +876,7 @@ The same reasoning shows that a quasi-coherent $\sh{B}$-submodule (resp. a quoti
 \begin{prop}[9.6.5]
 \label{1.9.6.5}
 Let $X$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian.
-For all quasi-compact $\OO_X$-algebras $\sh{B}$ of finite type, there exists a quasi-coherent $\OO_X$-submodule $\sh{E}$ of $\sh{B}$ of finite type such that $\sh{E}$ generates \sref[0]{0.4.1.4} the $\OO_X$-algebra $\sh{B}$.
+For all quasi-compact $\OO_X$-algebras $\sh{B}$ of finite type, there exists a quasi-coherent $\OO_X$-submodule $\sh{E}$ of $\sh{B}$ of finite type such that $\sh{E}$ generates \sref[0]{0.4.1.3} the $\OO_X$-algebra $\sh{B}$.
 \end{prop}
 
 \begin{proof}
