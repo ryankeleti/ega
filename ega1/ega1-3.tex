@@ -664,8 +664,7 @@ Consider in particular that case where $T$ is of the form $\Spec(A)$, where $A$ 
 \emph{local} ring; the elements of $X(A)$ then bijectively correspond to \emph{local}
 homomorphisms $\OO_x\to A$ for $x\in X$ \sref{1.2.2.4}; we say that the
 point $x$ of the underlying space of $X$ is the \emph{location}\footnote{\emph{[Trans.] We say that
-the geometric point lies over this $x$.}} of the point of $X$ with values in $A$ to which it
-corresponds.
+the geometric point lies over this $x$.}} of the point of $X$ with values in $A$ to which it corresponds.
 
 More particularly, we call the \emph{geometric points} of a prescheme $S$ the \emph{points of
 $X$ with values in a field $K$}: the data of such a point is equivalent to the data of its
@@ -740,10 +739,10 @@ fact \sref{1.3.3.11}, $X_{(S')}$ is identified with the product $X\times_Y Y_{(S
     Y_{(S')}\ar[l]_q
   }
 \]
-By \sref{1.3.4.7}, the relation $q(y')=p(x)$ for $x\in M$ and $y'\in Y_{(S)}$ is equivalent to the existence of some $x'\in X_{(S')}$ such that $p(x')=x$ and $f_{(S')}(x')=y'$, whence the corollary.
+By \sref{1.3.4.7}, the relation $q(y')=f(x)$ for $x\in M$ and $y'\in Y_{(S)}$ is equivalent to the existence of some $x'\in X_{(S')}$ such that $p(x')=x$ and $f_{(S')}(x')=y'$, whence the corollary.
 \end{proof}
 
-Lemma \sref{1.3.4.6} can be made clearer in the following manner:
+Lemma~\sref{1.3.4.6} can be made clearer in the following manner:
 \begin{prop}[3.4.9]
 \label{1.3.4.9}
 Let $X$ and $Y$ be two $S$-preschemes, and $x$ a point of $X$ and $y$ a point of $Y$ both above the same point $s\in S$.
@@ -769,17 +768,17 @@ Finally, we know that $P_0$ is in bijective correspondence with the set of \unsu
 
 \begin{env}[3.5.1]
 \label{1.3.5.1}
-In a general sense, consider a property $P$ of morphisms of preschemes, and the two following propositions:
+In a general sense, consider a property $\textbf{P}$ of morphisms of preschemes, and the two following propositions:
 \begin{enumerate}[label=(\roman*)]
-  \item If $f:X\to X'$ and $g:Y\to Y'$ are two $S$-morphism having property $P$, then $f\times_S g$ also has property $P$.
-  \item If $f:X\to Y$ is an $S$-morphisms having property $P$, then every $S'$-morphism $f_{(S')}:X_{(S')}\to Y_{(S')}$, induced by $f$ by an extension of base preschemes, also has property $P$.
+  \item If $f:X\to X'$ and $g:Y\to Y'$ are two $S$-morphisms having property $\textbf{P}$, then $f\times_S g$ also has property $\textbf{P}$.
+  \item If $f:X\to Y$ is an $S$-morphism having property $\textbf{P}$, then every $S'$-morphism $f_{(S')}:X_{(S')}\to Y_{(S')}$, induced by $f$ by an extension of base preschemes, also has property $\textbf{P}$.
 \end{enumerate}
 
-Since $f_{(S')}=f\times_S 1_{S'}$, we see that if, for every prescheme $X$, the \emph{identity} $1_X$ has property $P$, then (i) implies (ii); since, on the other hand, $f\times_S g$ is the composed morphism
+Since $f_{(S')}=f\times_S 1_{S'}$, we see that if for every prescheme $X$ the \emph{identity} $1_X$ has property $\textbf{P}$, then (i) implies (ii); on the other hand, since $f\times_S g$ is the composite morphism
 \[
-  X\times_S Y \xrightarrow{f\times1_Y} X'\times_S Y \xrightarrow{1_{X'}\times g} X'\times_S Y'
+  X\times_S Y\xrightarrow{f\times1_Y}X'\times_S Y\xrightarrow{1_{X'}\times g}X'\times_S Y',
 \]
-we see that if the \emph{composition} of two morphisms has property $P$, then so too does the product $f\times_S g$, and so (ii) implies (i).
+we see that if the \emph{composition} of two morphisms has property $\textbf{P}$, then so does the product $f\times_S g$, and so (ii) implies (i).
 \end{env}
 
 A first application of this remark is
@@ -805,7 +804,7 @@ For a morphism $f:X\to Y$ to be surjective, it is necessary and sufficient that,
     X\ar[d]_f &
     \Spec(K')\ar[l]\ar[d]\\
     Y &
-    \Spec(K)\ar[l]
+    \Spec(K).\ar[l]
   }
 \]
 \end{prop}
@@ -820,14 +819,14 @@ With the language introduced in \sref{1.3.4.5}, we can say that \emph{every geom
 
 \begin{defn}[3.5.4]
 \label{1.3.5.4}
-We say that a morphism $f:X\to Y$ of preschemes is universally injective, or a radicial morphism, if, for every field $K$, the corresponding map $X(K)\to Y(K)$ is injective.
+We say that a morphism $f:X\to Y$ of preschemes is \emph{universally injective}, or a \emph{radicial morphism}, if, for every field $K$, the corresponding map $X(K)\to Y(K)$ is injective.
 \end{defn}
 
 It follows also from the definitions that every \emph{monomorphism of preschemes} (T,~1.1) is radicial.
 
 \begin{env}[3.5.5]
 \label{1.3.5.5}
-For a morphism $f:X\to Y$ to be radicial, it suffices that the condition of Definition \sref{1.3.5.4} hold for every \emph{algebraically closed} field.
+For a morphism $f:X\to Y$ to be radicial, it suffices that the condition of Definition~\sref{1.3.5.4} hold for every \emph{algebraically closed} field.
 In fact, if $K$ is an arbitrary field, and $K'$ an algebraically-closed extension of $K$, then the diagram
 \[
   \xymatrix{
@@ -838,7 +837,7 @@ In fact, if $K$ is an arbitrary field, and $K'$ an algebraically-closed extensio
   }
 \]
 commutes, where $\vphi$ and $\vphi'$ come from the morphism $\Spec(K')\to\Spec(K)$, and $\alpha$ and $\alpha'$ corresponding to $f$.
-However, $\vphi$ is injective, and so too is $\alpha'$ by hypothesis; so $\alpha$ is necessarily injective.
+However, $\vphi$ is injective, and so is $\alpha'$ by hypothesis; hence $\alpha$ is necessarily injective.
 \end{env}
 
 \begin{prop}[3.5.6]
@@ -852,7 +851,7 @@ Let $f:X\to Y$ and $g:Y\to Z$ be two morphisms of preschemes.
 
 \begin{proof}
 \label{proof-1.3.5.6}
-Taking into account def.~\sref{1.3.5.4}, the proposition reduces to the corresponding assertions for the maps $X(K)\to Y(K)\to Z(K)$, which are evident.
+Taking into account Definition~\sref{1.3.5.4}, the proposition reduces to the corresponding assertions for the maps $X(K)\to Y(K)\to Z(K)$, which are evident.
 \end{proof}
 
 \begin{prop}[3.5.7]
@@ -867,17 +866,19 @@ Taking into account def.~\sref{1.3.5.4}, the proposition reduces to the correspo
 \begin{proof}
 \label{proof-1.3.5.7}
 Given \sref{1.3.5.1}, it suffices to prove (i).
-We have seen \hyperref[1.3.4.2.1]{(3.4.2.1)} that
-\begin{gather*}
-  (X\times_S Y)(K) = X(K)\times_{S(K)}Y(K)\\
-  (X'\times_S Y')(K) = X'(K)\times_{S(K)}Y'(K)
-\end{gather*}
+We have seen (3.4.2.1) that
+\[
+  (X\times_S Y)(K)=X(K)\times_{S(K)}Y(K),
+\]
+\[
+  (X'\times_S Y')(K)=X'(K)\times_{S(K)}Y'(K),
+\]
 with the map $(X\times_S Y)(K)\to(X'\times_S Y')(K)$ corresponding to $f\times_S g$ thus being identified with $(u,v)\to(f\circ u,g\circ v)$, and the proposition then follows.
 \end{proof}
 
 \begin{prop}[3.5.8]
 \label{1.3.5.8}
-For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient that $\psi$ be injective and that, for every $x\in X$, the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a radicial extension of $\kres(\psi(x))$.
+For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient for $\psi$ to be injective and that, for every $x\in X$, the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a radicial extension of $\kres(\psi(x))$.
 \end{prop}
 
 \begin{proof}
@@ -931,7 +932,7 @@ But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X
 
 \begin{prop}[3.6.1]
 \label{1.3.6.1}
-Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, and $\fk{a}_y$ a \unsure{defining ideal} of $\OO_y$ for the $\fk{m}_y$-preadic topology.
+Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, and $\fk{a}_y$ an ideal of definition for $\OO_y$ for the $\fk{m}_y$-preadic topology.
 The projection $p:X\times_Y\Spec(\OO_y/\fk{a}_y)\to X$ is a homeomorphism from the underlying space of the prescheme $X\times_Y\Spec(\OO_y/\fk{a}_y)$ to the fibre $f^{-1}(y)$ equipped with the topology induced from that of the underlying space of $X$.
 \end{prop}
 
@@ -944,7 +945,7 @@ Then every element of $B\otimes_A A'$ can be written as
 \[
   \sum_i b_i\otimes\vphi(a_i)/\vphi(s)=\left(\sum_i(a_ib_i\otimes1)\right)(1\otimes\vphi(s))^{-1},
 \]
-where $s\not\in\fk{j}_y$, and prop.~\sref{1.1.2.4} applies.
+where $s\not\in\fk{j}_y$, and Proposition~\sref{1.1.2.4} applies.
 \end{proof}
 
 \begin{env}[3.6.2]
@@ -1004,16 +1005,16 @@ Let $A$ be a ring, $X$ an $A$-prescheme, and $\fk{J}$ an ideal of $A$; then $X_0
 This terminology is used foremost when $A$ is a \emph{local ring} and $\fk{J}$ its maximal ideal, in such a way that $X_0$ is a prescheme over the residue field $k=A/\fk{J}$ of $A$.
 
 When $A$ is also integral, with field of fractions $K$, we can consider the $K$-prescheme $X'=X\otimes_A K$.
-By an abuse of language which we will not use, it has been said, up until now, that $X_0$ is \unsure{\emph{induced by $X'$}} by reduction mod.~$\fk{J}$.
+By an abuse of language which we will not use, it has been said, up until now, that $X_0$ is \emph{induced by $X'$} by reduction mod.~$\fk{J}$.
 In the case where this language was used, $A$ was a local ring of dimension~$1$ (most often a discrete valuation ring) and it was implied (be it more or less explicitly) that the given $K$-prescheme $X'$ was a closed subprescheme of a $K$-prescheme $P'$ (in fact, a projective space \unsure{of the form} $\bb{P}_K^r$, cf. \sref[II]{2.4.1.1}), itself of the form $P'=P\otimes_A K$, where $P$ is a given $A$-prescheme (in fact, the $A$-scheme $\bb{P}_A^r$, with the notation of \sref[II]{2.4.1.1}).
 In our language, the definition of $X_0$ in terms of $X'$ is formulated as follows:
 
 We consider the affine scheme $Y=\Spec(A)$, formed of two points, the unique closed point
 \oldpage[I]{119}
-$y=\fk{J}$ and the generic point $(0)$, the set $U$ \unsure{reduced to} the generic point being thus open $U=\Spec(K)$ in $Y$.
+$y=\fk{J}$ and the generic point $(0)$, the singleton set $U$ of the generic point being thus an open $U=\Spec(K)$ in $Y$.
 If $X$ is an $A$-prescheme (said otherwise, a $Y$-prescheme), then $X\otimes_A K=X'$ is nothing but the prescheme induced by $X$ on $\psi^{-1}(U)$, denoting by $\psi$ the structure morphism $X\to Y$.
 In particular, if $\vphi$ is the structure morphism $P\to Y$, a closed subprescheme $X'$ of $P'=\vphi^{-1}(U)$ is then a (locally closed) subprescheme of $P$.
-If $P$ is Noetherian (for example, if $A$ is Noetherian and $P$ is of finite type over $A$), then there exists a smaller closed subprescheme $X=\overline{X'}$ of $G$ that \unsure{contains} $X$ \sref{1.9.5.10}, and $X'$ is the prescheme induced by $X$ on the open $\vphi^{-1}(U)\cap X$, and so is isomorphic to $X\otimes_A K$ \sref{1.9.5.10}.
+If $P$ is Noetherian (for example, if $A$ is Noetherian and $P$ is of finite type over $A$), then there exists a smaller closed subprescheme $X=\overline{X'}$ of $G$ that majorizes $X'$ \sref{1.9.5.10}, and $X'$ is the prescheme induced by $X$ on the open $\vphi^{-1}(U)\cap X$, and so is isomorphic to $X\otimes_A K$ \sref{1.9.5.10}.
 \emph{The immersion of $X'$ into $P'=P\otimes_A K$ thus lets us canonically consider $X'$ as being of the form $X'=X\otimes_A K$, where $X$ is an $A$-prescheme.}
 We can then consider the reduced mod.~$\fk{J}$ prescheme $X_0=X\otimes_A k$, which is nothing but the fibre $\psi^{-1}(y)$ of the closed point $y$.
 Up until now, lacking the adequate terminology, we had avoided explicitly introducing the $A$-prescheme $X$.
