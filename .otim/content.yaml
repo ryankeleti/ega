@@ -1,0 +1,99 @@
+- title: What this is
+  path: what.tex
+
+- title: Introduction
+  path: intro.tex
+
+- title: Preliminaries (EGA 0)
+  sub:
+    - title: 1. Rings of fractions
+      path: /ega0/ega0-1.tex
+    - title: 2. Irreducible spaces. Noetherian spaces
+      path: /ega0/ega0-2.tex
+    - title: 3. Supplement on sheaves
+      path: /ega0/ega0-3.tex
+    - title: 4. Ringed spaces
+      path: /ega0/ega0-4.tex
+    - title: 5. Quasi-coherent and coherent sheaves
+      path: /ega0/ega0-5.tex
+    - title: 6. Flatness
+      path: /ega0/ega0-6.tex
+    - title: 7. Adic rings
+      path: /ega0/ega0-7.tex
+    - title: 8. Representable functors
+      path: /ega0/ega0-8.tex
+    - title: 9. Constructible sets
+      path: /ega0/ega0-9.tex
+    - title: 10. Supplement on flat modules
+      path: /ega0/ega0-10.tex
+    - title: 11. Supplement on homological algebra
+      path: /ega0/ega0-11.tex
+    - title: 12. Supplement on sheaf cohomology
+      path: /ega0/ega0-12.tex
+    - title: 13. Projective limits in homological algebra
+      path: /ega0/ega0-13.tex
+    - title: Summary
+      path: /ega0/ega0-14-e.tex
+    - title: 14. Combinatorial dimension of a topological space
+      path: /ega0/ega0-14.tex
+
+- title: The language of schemes (EGA I)
+  sub:
+    - title: Summary
+      path: ega1.tex
+    - title: 1. Affine schemes
+      path: ega1/ega1-1.tex
+    - title: 2. Preschemes and morphisms of preschemes
+      path: ega1/ega1-2.tex
+    - title: 3. Products of preschemes
+      path: ega1/ega1-3.tex
+    - title: 4. Subpreschemes and immersions
+      path: ega1/ega1-4.tex
+    - title: 5. Reduced preschemes; separation condition
+      path: ega1/ega1-5.tex
+    - title: 6. Finiteness conditions
+      path: ega1/ega1-6.tex
+    - title: 7. Rational maps
+      path: ega1/ega1-7.tex
+    - title: 8. Chevalley schemes
+      path: ega1/ega1-8.tex
+    - title: 9. Supplement on quasi-coherent sheaves
+      path: ega1/ega1-9.tex
+    - title: 10. Formal schemes
+      path: ega1/ega1-10.tex
+
+- title: Elementary global study of some classes of morphisms (EGA II)
+  sub:
+    - title: Summary
+      path: ega2.tex
+    - title: 1. Affine morphisms
+      path: ega2/ega2-1.tex
+    - title: 2. Homogeneous prime spectra
+      path: ega2/ega2-2.tex
+    - title: 3. Homogeneous prime spectrum of a sheaf of graded algebras
+      path: ega2/ega2-3.tex
+    - title: 4. Projective bundles; ample sheaves
+      path: ega2/ega2-4.tex
+    - title: 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms
+      path: ega2/ega2-5.tex
+    - title: 6. Integral morphisms and finite morphisms
+      path: ega2/ega2-6.tex
+    - title: 7. Valuative criteria
+      path: ega2/ega2-7.tex
+    - title: 8. Blowup schemes; projective cones; projective closure
+      path: ega2/ega2-8.tex
+
+- title: Cohomological study of coherent sheaves (EGA III)
+  sub:
+    - title: Summary
+      path: ega3.tex
+    - title: 1. Cohomology of affine schemes
+      path: ega3/ega3-1.tex
+
+- title: Local study of schemes and their morphisms (EGA IV)
+  sub:
+    - title: Summary
+      path: ega4.tex
+
+- title: Bibliography
+  path: ref.tex
