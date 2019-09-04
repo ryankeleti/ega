@@ -89,6 +89,8 @@ with open(path + "book.tex", 'w') as book:
           line = line.replace("\\title{Preliminaries}", "\\setcounter{chapter}{-1}\\chapter{Preliminaries}")
         if line.find("\\title{") == 0:
           line = line.replace("\\title{", "\\chapter{")
+          if line.find("\\chapter{}") == 0:
+            line = ""
         if line.find("\\maketitle") == 0:
           continue
         if line.find("\\tableofcontents") == 0:
