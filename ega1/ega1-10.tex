@@ -693,13 +693,13 @@ It is clear that if $v:\sh{G}\to\sh{H}$ is a second homomorphism of $\OO_X$-modl
 \begin{prop}[10.8.5]
 \label{1.10.8.5}
 The support of $(\OO_X)_{/X'}$ is $X'$; the topologically ringed space $(X',(\OO_X)_{/X'})$ is a locally Noetherian formal prescheme, and if $\sh{J}\in\Phi$, then $\sh{J}_{/X'}$ is a sheaf of ideals of definition for this formal prescheme.
-If $X=\Spec(A)$ is an affine scheme with Noetherian ring $A$, $\sh{J}=\wt{\fk{J}}$, where $\fk{J}$ is an ideal of $A$, and $X'=V(\fk{J})$, then $(X',(\OO_X)_{/X'})$ canonically identifies with $\Spf(\wh{A})$, where $\wh{A}$ is the separated completion of $A$ with respect to the $\fk{J}$-pre-adic topology.
+If $X=\Spec(A)$ is an affine scheme with Noetherian ring $A$, $\sh{J}=\wt{\fk{J}}$, where $\fk{J}$ is an ideal of $A$, and $X'=V(\fk{J})$, then $(X',(\OO_X)_{/X'})$ canonically identifies with $\Spf(\wh{A})$, where $\wh{A}$ is the separated completion of $A$ with respect to the $\fk{J}$-preadic topology.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.8.5}
 We can evidently reduce to proving the latter assertion.
-We know \sref[0]{0.7.3.3} that the separated completion $\wh{\fk{J}}$ of $\fk{J}$ with respect to the $\fk{J}$-pre-adic topology identifies with the ideal $\fk{J}\wh{A}$ of $\wh{A}$, where $\wh{A}$ is the Noetherian $\wh{\fk{J}}$-adic ring such that $\wh{A}/\wh{\fk{J}}^n=A/\fk{J}^n$ \sref[0]{0.7.2.6}.
+We know \sref[0]{0.7.3.3} that the separated completion $\wh{\fk{J}}$ of $\fk{J}$ with respect to the $\fk{J}$-preadic topology identifies with the ideal $\fk{J}\wh{A}$ of $\wh{A}$, where $\wh{A}$ is the Noetherian $\wh{\fk{J}}$-adic ring such that $\wh{A}/\wh{\fk{J}}^n=A/\fk{J}^n$ \sref[0]{0.7.2.6}.
 This latter relation shows that the open prime ideals of $\wh{A}$ are the ideals $\wh{\fk{p}}=\fk{p}\wh{\fk{J}}$, where $\fk{p}$ is a prime ideal of $A$ containing $\fk{J}$, and that we have $\wh{\fk{p}}\cap A=\fk{p}$, hence $\Spf(\wh{A})=X'$.
 As $\OO_X/\sh{J}^n=(A/\fk{J}^n)^\sim$, the proposition immediately follows from the definitions.
 \end{proof}
@@ -761,7 +761,7 @@ We then have
 \[
   \Gamma(U\cap X',\sh{F}_{/X'})=\varprojlim_n(M\otimes_A(A/\fk{J}^n))=\wh{M},
 \]
-the separated completion of $M$ with respect to the $\fk{J}$-pre-adic topology, and similarly
+the separated completion of $M$ with respect to the $\fk{J}$-preadic topology, and similarly
 \[
   \Gamma(U\cap X',\sh{F}_{/X'}')=\wh{M'},\ \Gamma(U\cap X',\sh{F}_{/X'}'')=\wh{M''};
 \]
@@ -824,7 +824,7 @@ For every coherent $\OO_X$-module $\sh{F}$, the kernel of the canonical homomorp
 \label{proof-1.10.8.11}
 It follows from the definition of $\sh{F}_{/X'}$ that the canonical image of such a section is zero.
 Conversely, if $s\in\Gamma(X,\sh{F})$ has a zero image in $\Gamma(X',\sh{F}_{/X'})$, then it suffices to see that every $x\in X'$ admits a neighborhood in $X$ in which $s$ is zero, and we can thus reduce to the case where $X=\Spec(A)$ is affine, $A$ Noetherian, $X'=V(\fk{J})$, where $\fk{J}$ is an ideal of $A$, and $\sh{F}=\wt{M}$, where $M$ is an $A$-module of finite type.
-Then $\Gamma(X',\sh{F}_{/X'})$ is the separated completion $\wh{M}$ of $M$ for the $\fk{J}$-pre-adic topology, and the homomorphism $\Gamma(X,\sh{F})\to\Gamma(X',\sh{F}_{/X'})$ is the canonical homomorphism $M\to\wh{M}$.
+Then $\Gamma(X',\sh{F}_{/X'})$ is the separated completion $\wh{M}$ of $M$ for the $\fk{J}$-preadic topology, and the homomorphism $\Gamma(X,\sh{F})\to\Gamma(X',\sh{F}_{/X'})$ is the canonical homomorphism $M\to\wh{M}$.
 We know \sref[0]{0.7.3.7} that the kernel of this homomorphism is the set of the $z\in M$ killed by an element of $1+\fk{J}$.
 So we have $(1+f)s=0$ for some $f\in\fk{J}$; for every $x\in X'$ we have $(1_x+f_x)s_x=0$, and as $1_x+f_x$ is invertible in $\OO_x$ ($\fk{J}_x\OO_x$ being contained in the maximal ideal of $\OO_x$), we have $s_x=0$, which proves the proposition.
 \end{proof}
@@ -879,9 +879,9 @@ Let $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of $\OO_X$ (resp. $\OO_Y$) su
 For every integer $n>0$ we have $f^*(\sh{K}^n)\OO_X\subset\sh{J}^n$ \sref[0]{0.4.3.5}; as a result \sref{1.4.4.6}, if we set $X_n'=(X',\OO_X/\sh{J}^{n+1})$ and $Y_n'=(Y',\OO_Y/\sh{K}^{n+1})$, then $f$ induces a morphism $f_n:X_n'\to Y_n'$, and it is immediate that the $f_n$ form an inductive system.
 We denote its inductive limit \sref{1.10.6.8} by $\wh{f}:X_{/X'}\to Y_{/Y'}$, and we say (by abuse of language) that $\wh{f}$ is the \emph{extension of $f$ to the completions of $X$ and $Y$ along $X'$ and $Y'$}.
 It is immediate to check that this morphism does not depend on the choice of sheaves of ideals $\sh{J}$ and $\sh{K}$ satisfying the above conditions.
-It suffices to see that when $X$ and $Y$ are Noetherian affine schemes with rings $A$ and $B$; then $\sh{J}=\wt{\fk{J}}$ and $\sh{K}=\wt{\fk{K}}$, where $\fk{J}$ (resp. $\fk{K}$) is an ideal of $A$ (resp. $B$), $f$ corresponds to a ring homomorphism $\vphi:B\to A$ such that $\vphi(\fk{K})\subset\fk{J}$ (\sref{1.4.4.6} and \sref{1.1.7.4}); \emph{$\wh{f}$ is then the morphism corresponding \sref{1.10.2.2} to the continuous homomorphism $\wh{\vphi}:\wh{B}\to\wh{A}$}, where $\wh{A}$ (resp. $\wh{B}$) is the separated completion of $A$ (resp. $B$) with respect to the $\fk{J}$-pre-adic (resp. $\fk{K}$-pre-adic) topology \sref{1.10.6.8}; we know that if we replace $\sh{J}$ by another
+It suffices to see that when $X$ and $Y$ are Noetherian affine schemes with rings $A$ and $B$; then $\sh{J}=\wt{\fk{J}}$ and $\sh{K}=\wt{\fk{K}}$, where $\fk{J}$ (resp. $\fk{K}$) is an ideal of $A$ (resp. $B$), $f$ corresponds to a ring homomorphism $\vphi:B\to A$ such that $\vphi(\fk{K})\subset\fk{J}$ (\sref{1.4.4.6} and \sref{1.1.7.4}); \emph{$\wh{f}$ is then the morphism corresponding \sref{1.10.2.2} to the continuous homomorphism $\wh{\vphi}:\wh{B}\to\wh{A}$}, where $\wh{A}$ (resp. $\wh{B}$) is the separated completion of $A$ (resp. $B$) with respect to the $\fk{J}$-preadic (resp. $\fk{K}$-preadic) topology \sref{1.10.6.8}; we know that if we replace $\sh{J}$ by another
 \oldpage[I]{199}
-sheaf of ideals $\sh{J}'=\wt{\fk{J}'}$ such that the support of $\OO_X/\sh{J}'$ is $X'$, then the $\fk{J}$-pre-adic and $\fk{J}'$-pre-adic topologies on $A$ are the same \sref{1.10.82}.
+sheaf of ideals $\sh{J}'=\wt{\fk{J}'}$ such that the support of $\OO_X/\sh{J}'$ is $X'$, then the $\fk{J}$-preadic and $\fk{J}'$-preadic topologies on $A$ are the same \sref{1.10.82}.
 
 We note that by definition the continuous map $X'\to Y'$ of the underlying spaces of $X_{/X'}$ and $Y_{/Y'}$ correspondign to $\wh{f}$ is none other than the restriction to $X'$ of $f$.
 \end{env}
@@ -955,7 +955,7 @@ With these conditions, the completion $Z_{/Z'}$ identifies with the product of f
 \label{proof-1.10.9.7}
 It is immediate that the question is local for $S$, $X$, and $Y$, and we thus reduce to the case where $S=\Spec(A)$, $X=\Spec(B)$, $Y=\Spec(C)$, $S'=V(\fk{J})$, $X'=V(\fk{K})$, and $Y'=V(\fk{L})$, where $\fk{J}$, $\fk{K}$, and $\fk{L}$ are three ideals such that $\vphi(\fk{J})\subset\fk{K}$ and $\psi(\fk{J})\subset\fk{L}$, where we denote by $\vphi$ and $\psi$ the homomorphisms $A\to B$ and $A\to C$ which correspond to $g$ and $h$.
 We know that $Z=\Spec(B\otimes_A C)$ and that $Z'=V(\fk{M})$, where $\fk{M}$ is the ideal $\Im(\fk{K}\otimes_A C)+\Im(B\otimes_A\fk{L})$.
-The conclusion follows \sref{1.10.7.2} from the fact that the completed tensor product $(\wh{B}\otimes_\wh{A}\wh{C})^\wedge$ (where $\wh{A}$, $\wh{B}$, and $\wh{C}$ are respectively the separated completions of $A$, $B$, and $C$ with respect to the $\fk{J}$-, $\fk{K}$-, and $\fk{L}$-pre-adic topologies) is the separated completion of the tensor product $B\otimes_A C$ with respect to the $\fk{M}$-pre-adic topology \sref[0]{0.7.7.2}.
+The conclusion follows \sref{1.10.7.2} from the fact that the completed tensor product $(\wh{B}\otimes_\wh{A}\wh{C})^\wedge$ (where $\wh{A}$, $\wh{B}$, and $\wh{C}$ are respectively the separated completions of $A$, $B$, and $C$ with respect to the $\fk{J}$-, $\fk{K}$-, and $\fk{L}$-preadic topologies) is the separated completion of the tensor product $B\otimes_A C$ with respect to the $\fk{M}$-preadic topology \sref[0]{0.7.7.2}.
 \end{proof}
 
 In addition, we note that if $T$ is a locally Noetherian $S$-prescheme, $u:T\to X$ and $v:T\to Y$ two $S$-morphisms, $T'$ a closed subset of $T$ such that $u(T')\subset X'$ and $v(T')\subset Y'$, then the extension to the completion $((u,v)_S)^\wedge$ identifies with $(\wh{u},\wh{v})_{S_{/S'}}$.
@@ -1032,12 +1032,12 @@ When $A$ is a \emph{discrete} ring, we have $M^\Delta=\wt{M}$.
 \begin{proof}
 \label{proof-1.10.10.2}
 The exactness of $M^\Delta$ follows from the exactness of the functors $\wt{M}$ \sref{1.1.3.5} and $\sh{F}_{/X'}$ \sref{1.10.8.8}.
-By definition, $\Gamma(X,M^\Delta)$ is the separated completion of the $A$-module $\Gamma(X,\wt{M})=M$ with respect to the $\fk{J}$-pre-adic topology; but as $A$ is complete and $M$ is of finite type, we know \sref[0]{0.7.3.6} that $M$ is separated and complete, which proves (i).
+By definition, $\Gamma(X,M^\Delta)$ is the separated completion of the $A$-module $\Gamma(X,\wt{M})=M$ with respect to the $\fk{J}$-preadic topology; but as $A$ is complete and $M$ is of finite type, we know \sref[0]{0.7.3.6} that $M$ is separated and complete, which proves (i).
 The isomorphism (10.10.2.1) (resp. (10.10.2.2)) coms from the composition of the isomorphisms \sref{1.1.3.12}[i] and (10.8.10.1) (resp. \sref{1.1.3.12}[ii] and (10.8.10.2)).
-Finally, as $\Hom_A(M,N)$ is an $A$-mdodule of finite type, we can apply (i), which identifies $\Gamma(\fk{X},(\Hom_A(M,N))^\Delta)$ with $\Hom_A(M,N)$, and we use (10.10.2.2), which proves that the homomorphism (10.10.2.3) is an isomorphism.
+Finally, as $\Hom_A(M,N)$ is an $A$-module of finite type, we can apply (i), which identifies $\Gamma(\fk{X},(\Hom_A(M,N))^\Delta)$ with $\Hom_A(M,N)$, and we use (10.10.2.2), which proves that the homomorphism (10.10.2.3) is an isomorphism.
 \end{proof}
 
-We deduce from Proposition \sref{1.10.10.2} a series of analogous results to those of Theorem \sref{1.1.3.7} and Corollary \sref{1.1.3.12}, which we leave to the reader to formulate.
+We deduce from Proposition~\sref{1.10.10.2} a series of analogous results to those of Theorem~\sref{1.1.3.7} and Corollary~\sref{1.1.3.12}, which we leave to the reader to formulate.
 
 \oldpage[I]{202}
 We note that the exactness property of $M^\Delta$, applied to the exact sequence $0\to\fk{J}\to A\to A/\fk{J}\to 0$ shows that the sheaf of ideals of $\OO_\fk{X}$ denoted here by $\fk{J}^\Delta$ coincides with the one described similarly in \sref{1.10.3.1}, by \sref{1.10.3.2}.
@@ -1272,7 +1272,7 @@ We say that an inductive system $(X_n)$ of locally Noetherian (usual) $S_n$-pres
     & S_m \ar[l]
   }
 \]
-commute and \emph{identify $X_m$ with the product $X_n\times_{S_n}S_m=(X_n)_{(S_n)}$}.
+commute and \emph{identify $X_m$ with the product $X_n\times_{S_n}S_m=(X_n)_{(S_m)}$}.
 The adic inductive systems form a \emph{category}:
 it suffices in fact to define a morphism $(X_n)\to(Y_n)$ of such systems to be an \emph{inductive system of $S_n$-morphisms $u_n:X_n\to Y_n$} such that $u_m$ is identified with $(u_n)_{(S_m)}$ for $m\leq n$.
 With this in mind:

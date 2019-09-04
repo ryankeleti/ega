@@ -419,13 +419,13 @@ If we consider the diagram
     X\ar[d]_f &
     X_{(\Omega)}\ar[l]\ar[d]^{f_{(\Omega)}}\\
     Y &
-    \Spec(\Omega)\ar[l]
+    \Spec(\Omega),\ar[l]
   }
 \]
 then it suffices to show that there exists a \emph{rational point over $\Omega$} in $X_{(\Omega)}$ (\sref{1.3.3.14}, \sref{1.3.4.3}, and \sref{1.3.4.4}).
 Since $f$ is surjective, $X_{(\Omega)}$ is nonempty \sref{1.3.5.10}, and since $f$ is of finite type, so too is $f_{(\Omega)}$ \sref{1.6.4.3}[iv];
 thus $X_{(\Omega)}$ contains a nonempty affine open subset $Z$ such that $A(Z)$ is an non-null algebra of finite type over $\Omega$.
-By Hilbert's zero theorem \cite{I-21}, there exists an $\Omega$-homomorphism $A(Z)\to\Omega$, and thus a section of $X_{(\Omega)}$ over $\Spec(\Omega)$, which proves the proposition.
+By Hilbert's Nullstellensatz~\cite{I-21}, there exists an $\Omega$-homomorphism $A(Z)\to\Omega$, and thus a section of $X_{(\Omega)}$ over $\Spec(\Omega)$, which proves the proposition.
 \end{proof}
 
 \subsection{Algebraic preschemes}
@@ -433,9 +433,8 @@ By Hilbert's zero theorem \cite{I-21}, there exists an $\Omega$-homomorphism $A(
 
 \begin{defn}[6.4.1]
 \label{1.6.4.1}
-Given a field $K$, we define an algebraic $K$-prescheme to be a prescheme $X$ of finite type over $K$;
-$K$ is called the base field of $X$.
-If, further, $X$ is a scheme \emph{(or if $X$ is a \emph{$K$-scheme}, which amounts to the same thing \sref{1.5.5.8})}, we say that $X$ is an algebraic $K$-scheme.
+Given a field $K$, we define an \emph{algebraic $K$-prescheme} to be a prescheme $X$ of finite type over $K$; $K$ is called the base field of $X$.
+If in addition $X$ is a scheme \emph{(or if $X$ is a \emph{$K$-scheme}, which is equivalent \sref{1.5.5.8})}, we say that $X$ is an \emph{algebraic $K$-scheme}.
 \end{defn}
 
 Every algebraic $K$-prescheme is \emph{Noetherian} \sref{1.6.3.7}.
@@ -449,43 +448,42 @@ For a point $x\in X$ to be closed, it is necessary and sufficient that $\kres(x)
 \begin{proof}
 \label{proof-1.6.4.2}
 We can assume that $X$ is affine, with the ring $A$ of $X$ being a $K$-algebra of finite type.
-Indeed, the affine open subsets $U$ of $X$ such that $A(U)$ is a $K$-algebra of finite type form a covering of $X$ \sref{1.6.3.1}.
+Indeed, the affine open subsets $U$ of $X$ such that $A(U)$ is a $K$-algebra of finite type form a finite cover of $X$ \sref{1.6.3.1}.
 The closed points of $X$ are thus the points such that $\fk{j}_x$ is a
 \oldpage[I]{148}
-maximal ideal of $A$, or, in other words, such that $A/\fk{j}_x$ is a field (necessarily equal to $\kres(x)$).
-Since $A/\fk{j}_x$ is a $K$-algebra of finite type, we see that, if $x$ is closed, then $\kres(x)$ is a field that is an algebra of finite type over $K$, and so necessarily a $K$-algebra of \emph{finite rank} \cite{I-21}.
-Conversely, if $\kres(x)$ is of finite rank over $K$, so too is $A/\fk{j}_x\subset\kres(x)$, and since every integral ring that is also a $K$-algebra of finite rank is a field, we have that $A/\fk{j}_x=\kres(x)$, and so $x$ is closed.
+maximal ideal of $A$, or in other words, such that $A/\fk{j}_x$ is a field (necessarily equal to $\kres(x)$).
+Since $A/\fk{j}_x$ is a $K$-algebra of finite type, we see that if $x$ is closed, then $\kres(x)$ is a field that is an algebra of finite type over $K$, and so necessarily a $K$-algebra of \emph{finite rank}~\cite{I-21}.
+Conversely, if $\kres(x)$ is of finite rank over $K$, then so is $A/\fk{j}_x\subset\kres(x)$, and since every integral ring that is also a $K$-algebra of finite rank is a field, we have that $A/\fk{j}_x=\kres(x)$, and hence $x$ is closed.
 \end{proof}
 
 \begin{cor}[6.4.3]
 \label{1.6.4.3}
-Let $K$ be an algebraically-closed field, and $X$ an algebraic $K$-prescheme;
-the closed points of $X$ are then the rational points over $K$ \sref{1.3.4.4} and can be canonically identified with the points of $X$ with values in $K$.
+Let $K$ be an algebraically-closed field, and $X$ an algebraic $K$-prescheme; the closed points of $X$ are then the rational points over $K$ \sref{1.3.4.4} and can be canonically identified with the points of $X$ with values in $K$.
 \end{cor}
 
 \begin{prop}[6.4.4]
 \label{1.6.4.4}
 Let $X$ be an algebraic prescheme over a field $K$.
 The following properties are equivalent.
-\begin{enumerate}
-    \item[\emph{(a)}] $X$ is Artinian.
-    \item[\emph{(b)}] The underlying space of $X$ is discrete.
-    \item[\emph{(c)}] The underlying space of $X$ has only a finite number of closed points.
-    \item[\emph{(c')}] The underlying space of $X$ is finite.
-    \item[\emph{(d)}] The points of $X$ are closed.
-    \item[\emph{(e)}] $X$ is isomorphic to $\Spec(A)$, where $A$ is a $K$-algebra of finite rank.
+\begin{enumerate}[label=\emph{(\alph*)}]
+  \item $X$ is Artinian.
+  \item The underlying space of $X$ is discrete.
+  \item The underlying space of $X$ has only a finite number of closed points.
+  \item[\emph{(c$'$)}] The underlying space of $X$ is finite.
+  \item The points of $X$ are closed.
+  \item $X$ is isomorphic to $\Spec(A)$, where $A$ is a $K$-algebra of finite rank.
 \end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-1.6.4.4}
-Since $X$ is Noetherian, it follows from \sref{1.6.2.2} that the conditions (a), (b), and (d) are equivalent, and imply (c) and (c');
+Since $X$ is Noetherian, it follows from \sref{1.6.2.2} that the conditions (a), (b), and (d) are equivalent, and imply (c) and (c$'$);
 it is also clear that (e) implies (a).
 It remains to see that (c) implies (d) and (e);
 we can restrict to the case where $X$ is affine.
 Then $A(X)$ is a $K$-algebra of finite type \sref{1.6.3.3}, and thus a Jacobson ring (\cite[p.~3-11 and 3-12]{I-1}), in which there are, by hypothesis, only a finite number of maximal ideals.
 Since a finite intersection of prime ideals can only be a prime ideal if it is equal to one of the prime ideals being intersected, every prime ideal of $A(X)$ is thus maximal, whence (d).
-Further, we then know \sref{1.6.2.2} that $A(X)$ is an Artinian $K$-algebra of finite type, and so necessarily of \emph{finite rank} \cite{I-21}.
+Further, we then know \sref{1.6.2.2} that $A(X)$ is an Artinian $K$-algebra of finite type, and so necessarily of \emph{finite rank}~\cite{I-21}.
 \end{proof}
 
 \begin{env}[6.4.5]
@@ -663,19 +661,18 @@ Under the hypotheses of \sref{1.6.5.1}[ii], if, further, $X$ is of finite type o
 
 \begin{proof}
 \label{proof-1.6.5.2}
-This follows from \sref{1.6.3.6}.
+This follows from Corollary~\sref{1.6.3.6}.
 \end{proof}
 
 \begin{cor}[6.5.3]
 \label{1.6.5.3}
-Suppose that the hypotheses of \sref{1.6.5.1}[ii], and suppose further that $Y$ is integral, and that $\vphi$ is an injective homomorphism.
+Suppose that the hypotheses of Proposition~\sref{1.6.5.1}[ii], and suppose further that $Y$ is integral, and that $\vphi$ is an injective homomorphism.
 Then we can assume that $f=({}^a\gamma,\wt{\gamma})$, where $\gamma$ is injective.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.6.5.3}
-Indeed, we can assume $C$ to be integral \sref{1.5.1.4}, and so $i_y$ to be injective;
-it then follows from the diagram in \hyperref[1.6.5.1]{(6.5.1.1)} that $\gamma$ is injective.
+Indeed, we can assume $C$ to be integral \sref{1.5.1.4}, hence $i_y$ injective; it then follows from the diagram (6.5.1.1) that $\gamma$ is injective.
 \end{proof}
 
 \begin{prop}[6.5.4]
