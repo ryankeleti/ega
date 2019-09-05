@@ -765,17 +765,17 @@ Finally, we know that $P_0$ is in bijective correspondence with the set of \unsu
 
 \begin{env}[3.5.1]
 \label{1.3.5.1}
-In a general sense, consider a property $\textbf{P}$ of morphisms of preschemes, and the two following propositions:
+In a general sense, consider a property $\textbf{P}$ of morphisms of preschemes, and the following two propositions:
 \begin{enumerate}[label=(\roman*)]
-  \item If $f:X\to X'$ and $g:Y\to Y'$ are two $S$-morphisms having property $\textbf{P}$, then $f\times_S g$ also has property $\textbf{P}$.
-  \item If $f:X\to Y$ is an $S$-morphism having property $\textbf{P}$, then every $S'$-morphism $f_{(S')}:X_{(S')}\to Y_{(S')}$, induced by $f$ by an extension of base preschemes, also has property $\textbf{P}$.
+  \item If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms that have property $\textbf{P}$, then $f\times_S g$ also has property $\textbf{P}$.
+  \item If $f:X\to Y$ is an $S$-morphism that has property $\textbf{P}$, then every $S'$-morphism $f_{(S')}:X_{(S')}\to Y_{(S')}$, induced by $f$ by an extension of the base prescheme, also has property $\textbf{P}$.
 \end{enumerate}
 
-Since $f_{(S')}=f\times_S 1_{S'}$, we see that if for every prescheme $X$ the \emph{identity} $1_X$ has property $\textbf{P}$, then (i) implies (ii); on the other hand, since $f\times_S g$ is the composite morphism
+Since $f_{(S')}=f\times_S 1_{S'}$, we see that, if, for every prescheme $X$, the \emph{identity} $1_X$ has property $\textbf{P}$, then (i) implies (ii); on the other hand, since $f\times_S g$ is the composite morphism
 \[
   X\times_S Y\xrightarrow{f\times1_Y}X'\times_S Y\xrightarrow{1_{X'}\times g}X'\times_S Y',
 \]
-we see that if the \emph{composition} of two morphisms has property $\textbf{P}$, then so does the product $f\times_S g$, and so (ii) implies (i).
+we see that, if the \emph{composition} of two morphisms has property $\textbf{P}$, then so does the product $f\times_S g$, and so (ii) implies (i).
 \end{env}
 
 A first application of this remark is
@@ -783,19 +783,19 @@ A first application of this remark is
 \label{1.3.5.2}
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $f:X\to X'$ and $g:Y\to Y'$ are two surjective $S$-morphisms, then $f\times_S g$ is surjective.
+  \item If $f:X\to X'$ and $g:Y\to Y'$ are surjective $S$-morphisms, then $f\times_S g$ is surjective.
   \item If $f:X\to Y$ is a surjective $S$-morphism, then $f_{(S')}$ is surjective for every extension $S'$ of the base prescheme.
 \end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.5.2}
-The composition of any two surjections being a surjection, it suffices to prove (ii); but this proposition follows quickly from \sref{1.3.4.8} applied to $M=X$.
+The composition of any two surjections being a surjection, it suffices to prove (ii); but this proposition follows immediately from \sref{1.3.4.8} applied to $M=X$.
 \end{proof}
 
 \begin{prop}[3.5.3]
 \label{1.3.5.3}
-For a morphism $f:X\to Y$ to be surjective, it is necessary and sufficient that, for every field $K$ and every morphism $\Spec(K)\to Y$, there exists an extension $K'$ of $K$ and a morphism $\Spec(K')\to X$ making the following diagram commute:
+For a morphism $f:X\to Y$ to be surjective, it is necessary and sufficient that, for every field $K$ and every morphism $\Spec(K)\to Y$, there exist an extension $K'$ of $K$ and a morphism $\Spec(K')\to X$ that make the following diagram commute:
 \[
   \xymatrix{
     X\ar[d]_f &
@@ -808,8 +808,8 @@ For a morphism $f:X\to Y$ to be surjective, it is necessary and sufficient that,
 
 \begin{proof}
 \label{proof-prof-1.3.5.3}
-The condition is sufficient because, for all $y\in Y$, it suffices to apply it to a morphism $\Spec(K)\to Y$ corresponding to a monomorphism $\kres(y)\to K$, $K$ being an extension of $\kres(y)$ \sref{1.2.4.6}.
-Conversely, suppose that $f$ is surjective, and let $y\in Y$ be the image of the unique point of $\Spec(K)$; there exists some $x\in X$ such that $f(x)=y$; we will consider the corresponding monomorphism $\kres(y)\to\kres(x)$ \sref{1.2.2.1}; it then suffices to take $K'$ to be the extension of $\kres(y)$ such that there exist $\kres(y)$-monomorphisms from $\kres(x)$ and $K$ to $K'$ (Bourbaki, \emph{Alg.}, chap.~V, §4, prop.~2); the morphism $\Spec(K')\to X$ corresponding to $\kres(x)\to K'$ is exactly that for which we search.
+The condition is sufficient because, for all $y\in Y$, it suffices to apply it to a morphism $\Spec(K)\to Y$ corresponding to a monomorphism $\kres(y)\to K$, with $K$ being an extension of $\kres(y)$ \sref{1.2.4.6}.
+Conversely, suppose that $f$ is surjective, and let $y\in Y$ be the image of the unique point of $\Spec(K)$; there exists some $x\in X$ such that $f(x)=y$; we will consider the corresponding monomorphism $\kres(y)\to\kres(x)$ \sref{1.2.2.1}; it then suffices to take $K'$ to be the extension of $\kres(y)$ such that there exist $\kres(y)$-monomorphisms from $\kres(x)$ and $K$ to $K'$ (Bourbaki, \emph{Alg.}, chap.~V, §4, prop.~2); the morphism $\Spec(K')\to X$ corresponding to $\kres(x)\to K'$ is exactly that for which we are searching.
 \end{proof}
 
 With the language introduced in \sref{1.3.4.5}, we can say that \emph{every geometric point of $Y$ with values in $K$ comes from a geometric point of $X$ with values in an extension of $K$}.
@@ -834,21 +834,21 @@ In fact, if $K$ is an arbitrary field, and $K'$ an algebraically-closed extensio
   }
 \]
 commutes, where $\vphi$ and $\vphi'$ come from the morphism $\Spec(K')\to\Spec(K)$, and $\alpha$ and $\alpha'$ corresponding to $f$.
-However, $\vphi$ is injective, and so is $\alpha'$ by hypothesis; hence $\alpha$ is necessarily injective.
+However, $\vphi$ is injective, and so too is $\alpha'$, by hypothesis; hence $\alpha$ is necessarily injective.
 \end{env}
 
 \begin{prop}[3.5.6]
 \label{1.3.5.6}
 Let $f:X\to Y$ and $g:Y\to Z$ be two morphisms of preschemes.
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $f$ and $g$ are radicial, then so is $g\circ f$.
-  \item Conversely, if $g\circ f$ is radicial, then so is $f$.
+  \item If $f$ and $g$ are radicial, then so too is $g\circ f$.
+  \item Conversely, if $g\circ f$ is radicial, then so too is $f$.
 \end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.5.6}
-Taking into account Definition~\sref{1.3.5.4}, the proposition reduces to the corresponding assertions for the maps $X(K)\to Y(K)\to Z(K)$, which are evident.
+Taking into account Definition~\sref{1.3.5.4}, the proposition reduces to the corresponding claims for the maps $X(K)\to Y(K)\to Z(K)$, and these claims are evident.
 \end{proof}
 
 \begin{prop}[3.5.7]
@@ -863,7 +863,7 @@ Taking into account Definition~\sref{1.3.5.4}, the proposition reduces to the co
 \begin{proof}
 \label{proof-1.3.5.7}
 Given \sref{1.3.5.1}, it suffices to prove (i).
-We have seen (3.4.2.1) that
+We have seen \sref{1.3.4.2.1} that
 \[
   (X\times_S Y)(K)=X(K)\times_{S(K)}Y(K),
 \]
@@ -875,20 +875,20 @@ with the map $(X\times_S Y)(K)\to(X'\times_S Y')(K)$ corresponding to $f\times_S
 
 \begin{prop}[3.5.8]
 \label{1.3.5.8}
-For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient for $\psi$ to be injective and that, for every $x\in X$, the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ makes $\kres(x)$ a radicial extension of $\kres(\psi(x))$.
+For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient for $\psi$ to be injective and for the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ to make $\kres(x)$ a radicial extension of $\kres(\psi(x))$ for every $x\in X$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.5.8}
-We suppose that $f$ is radicial and first show that the relation $\psi(x_1)=\psi(x_2)=y$ leads necessarily to $x_1=x_2$.
-In fact, there exists a field $K$, an extension of $\kres(y)$, and $\kres(y)$-monomorphisms $\kres(x_1)\to K$ and $\kres(x_2)\to K$ (Bourbaki, \emph{Alg.}, chap.~V, §4, prop.~2); the corresponding morphisms $u_1:\Spec(K)\to X$ and $u_2:\Spec(K)\to X$ are then such that $f\circ u_1=f\circ u_2$, and so $u_1=u_2$ by hypothesis, and this implies, in particular, that $x_1=x_2$.
-We now consider $\kres(x)$ as the extension of $\kres(\psi(x))$ by means of $\theta^x$: if $\kres(x)$ is not a radicial algebraically-closed extension, then there exist two distinct $\kres(\psi(x))$-monomorphisms from $\kres(x)$ to an algebraically-closed extension $K$ of $\kres(\psi(x))$ and the two corresponding morphisms $\Spec(K)\to X$ would contradict the hypothesis.
+We suppose that $f$ is radicial and first show that the equation $\psi(x_1)=\psi(x_2)=y$ necessarily implies that $x_1=x_2$.
+Indeed, there exists a field $K$, and an extension of $\kres(y)$, along with $\kres(y)$-monomorphisms $\kres(x_1)\to K$ and $\kres(x_2)\to K$ (Bourbaki, \emph{Alg.}, chap.~V, §4, prop.~2); the corresponding morphisms $u_1:\Spec(K)\to X$ and $u_2:\Spec(K)\to X$ are then such that $f\circ u_1=f\circ u_2$, and so $u_1=u_2$ by hypothesis, and this implies, in particular, that $x_1=x_2$.
+We now consider $\kres(x)$ as the extension of $\kres(\psi(x))$ by means of $\theta^x$: if $\kres(x)$ is not a radicial algebraically-closed extension, then there exist two distinct $\kres(\psi(x))$-monomorphisms from $\kres(x)$ to an algebraically-closed extension $K$ of $\kres(\psi(x))$, and the two corresponding morphisms $\Spec(K)\to X$ would contradict the hypothesis.
 Conversely, taking \sref{1.2.4.6} into account, it is immediate that the conditions stated are sufficient for $f$ to be radicial.
 \end{proof}
 
 \begin{cor}[3.5.9]
 \label{1.3.5.9}
-If $A$ is a ring and $S$ is a multiplicative set of $A$, then the canonical morphism $\Spec(S^{-1}A)\to\Spec(A)$ is radicial.
+If $A$ is a ring, and $S$ is a multiplicative set of $A$, then the canonical morphism $\Spec(S^{-1}A)\to\Spec(A)$ is radicial.
 \end{cor}
 
 \begin{proof}
@@ -899,7 +899,7 @@ Indeed, this morphism is a monomorphism \sref{1.1.6.2}.
 \begin{cor}[3.5.10]
 \label{1.3.5.10}
 Let $f:X\to Y$ be a radicial morphism, $g:Y'\to Y$ a morphism, and $X'=X_{(Y')}=X\times_Y Y'$.
-Then the radicial morphism $f_{(Y')}$ \sref{1.3.5.7}{(ii)} is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
+Then the radicial morphism $f_{(Y')}$ \sref{1.3.5.7}[ii] is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
 \end{cor}
 
 \begin{proof}
@@ -919,8 +919,8 @@ The first claim follows from \sref{1.3.5.8} and \sref{1.3.4.8}; the second, from
 \label{1.3.5.11}
 We say that a morphism $f=(\psi,\theta)$ of preschemes is \emph{injective} if the map $\psi$ is injective.
 For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}:X_{(Y')}\to Y'$ be injective (which justifies the terminology of a \emph{universally injective} morphism).
-In fact, the condition is necessary by \sref{1.3.5.7}[(ii)] and \sref{1.3.5.8}.
-Conversely, the condition implies that $\psi$ is injective; if for some $x\in X$ the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ were not radicial, then there would be an extension $K$ of $\kres(\psi(x))$ and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \sref{1.3.5.8}.
+In fact, the condition is necessary by \sref{1.3.5.7}[ii] and \sref{1.3.5.8}.
+Conversely, the condition implies that $\psi$ is injective; if, for some $x\in X$, the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ were not radicial, then there would be an extension $K$ of $\kres(\psi(x))$, and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \sref{1.3.5.8}.
 But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X_{(Y')}$ \sref{1.3.3.14}, which contradicts the hypothesis that $f_{(Y')}$ is injective.
 \end{rmk}
 
