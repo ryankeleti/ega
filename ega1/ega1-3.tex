@@ -295,12 +295,12 @@ The reader will notice that all the properties stated in this section, except
 \sref{1.3.3.13} and \sref{1.3.3.15}, are true without modification in any
 category, whenever the products involved in the statements exist (since it is
 clear that the notions of an $S$-object and of an $S$-morphism can be defined
-exactly as in (2.5) for any object $S$ of the category).
+exactly as in \hyperref[subsection:preschemes-over-prescheme]{(2.5)} for any object $S$ of the category).
 \end{env}
 
 \begin{env}[3.3.2]
 \label{1.3.3.2}
-First, $X\times_S Y$ is a \emph{covariant bifunctor} in $X$ and $Y$ on the
+First of all, $X\times_S Y$ is a \emph{covariant bifunctor} in $X$ and $Y$ on the
 category of $S$-preschemes: it suffices in fact to note that the diagram
 \[
   \xymatrix{
@@ -321,7 +321,7 @@ For each $S$-prescheme $X$, the first (resp. second) projection from
 $X\times_S S$ (resp. $S\times_S X$) is a functorial isomorphism from
 $X\times_S S$ (resp. $S\times_S X$) to $X$, whose inverse isomorphism is
 $(1_X,\vphi)_S$ (resp. $(\vphi,1_X)_S$), where we denote by $\vphi$ the
-structure morphism $X\to S$; therefore we can write, up to a canonical
+structure morphism $X\to S$; we can therefore write, up to a canonical
 isomorphism,
 \[
   X\times_S S=S\times_S X=X.
@@ -331,31 +331,30 @@ isomorphism,
 \begin{proof}
 \label{proof-1.3.3.3}
 It suffices to prove that the triple $(X,1_X,\vphi)$ is a product of $X$ and
-$S$. If $T$ is an $S$-prescheme, the only $S$-morphism from $T$ to $S$ is
+$S$. If $T$ is an $S$-prescheme, then the only $S$-morphism from $T$ to $S$ is
 necessarily the structure morphism $\psi:T\to S$. If $f$ is an $S$-morphism from
-$T$ to $X$, we necessarily have $\psi=\vphi\circ f$, hence our assertion.
+$T$ to $X$, we necessarily have $\psi=\vphi\circ f$, hence our claim.
 \end{proof}
 
 \begin{cor}[3.3.4]
 \label{1.3.3.4}
-Let $X$, $Y$ be two $S$-preschemes, $\vphi:X\to S$, $\psi:Y\to S$ their
-structure morphisms. If we canonically identify $X$ with $X\times_S S$ and $Y$
-with $S\times_S Y$, the projections $X\times_S Y\to X$ and $X\times_S Y\to Y$
-identify respectively with $1_X\times\psi$ and $\vphi\times 1_Y$.
+Let $X$ and $Y$ be $S$-preschemes, with structure morphisms $\vphi:X\to S$ and $\psi:Y\to S$. If we canonically identify $X$ with $X\times_S S$, and $Y$
+with $S\times_S Y$, then the projections $X\times_S Y\to X$ and $X\times_S Y\to Y$
+are identified with $1_X\times\psi$ and $\vphi\times 1_Y$ (respectively).
 \end{cor}
 
 The proof is immediate and is left to the reader.
 
 \begin{env}[3.3.5]
 \label{1.3.3.5}
-We can define in a manner similar to (3.2) the product of a
+We can define, in a manner similar to \hyperref[subsection:products-of-preschemes]{(3.2)}, the product of a
 \oldpage[I]{109}
-finite number $n$ of $S$-preschemes, the existence of these products following
-from \sref{1.3.2.6} by induction on $n$, and noting that
+finite number $n$ of $S$-preschemes, and the existence of these products follows
+from \sref{1.3.2.6} by induction on $n$, and by noting that
 $(X_1\times_S X_2\times_S\cdots\times_S X_{n-1})\times_S X_n$ satisfies the
 definition of a product. The uniqueness of the product implies, as in any
 category, its \emph{commutativity} and \emph{associativity} properties. If, for
-example, $p_1$, $p_2$, $p_3$ denote the projections from
+example, $p_1$, $p_2$, and $p_3$ denote the projections from
 $X_1\times_S X_2\times_S X_3$, and if we identify this prescheme with
 $(X_1\times_S X_2)\times_S X_3$, then the projection to $X_1\times_S X_2$ is
 identified with $(p_1,p_2)_S$.
@@ -363,21 +362,21 @@ identified with $(p_1,p_2)_S$.
 
 \begin{env}[3.3.6]
 \label{1.3.3.6}
-Let $S$, $S'$ be two preschemes, $\vphi:S'\to S$ a morphism, which makes $S'$ an
+Let $S$ and $S'$ be preschemes, and $\vphi:S'\to S$ a morphism, which lets us consider $S'$ as an
 $S$-prescheme. For each $S$-prescheme $X$, consider the product $X\times_S S'$,
-and let $p$ and $\pi'$ be the projections to $X$ and $S'$ respectively. Equipped
+and let $p$ and $\pi'$ be the projections to $X$ and to $S'$ (respectively). Equipped
 with $\pi'$, this product is an $S'$-prescheme; when we consider it as such, we
 denote it by $X_{(S')}$ or $X_{(\vphi)}$, and we say that this is the prescheme
-obtained by \emph{base change} from $S$ to $S'$, by means of the morphism
-$\vphi$, or the \emph{inverse image} of $X$ by $\vphi$. We note that if $\pi$ is
-the structure morphism of $X$, $\theta$ the structure morphism of
+obtained by \emph{base change} (or \emph{a change of base}) from $S$ to $S'$ by means of the morphism
+$\vphi$, or the \emph{inverse image} of $X$ by $\vphi$. We note that, if $\pi$ is
+the structure morphism of $X$, and $\theta$ the structure morphism of
 $X\times_S S'$, considered as an $S$-prescheme, then the diagram
 \[
   \xymatrix{
     X\ar[d]_\pi &
     X_{(S')}\ar[l]_p\ar[ld]_\theta\ar[d]^{\pi'}\\
     S &
-    S'\ar[l]_\vphi
+    S'\ar[l]^\vphi
   }
 \]
 is commutative.
@@ -388,7 +387,7 @@ is commutative.
 With the notation of \sref{1.3.3.6}, for each $S$-morphism $f:X\to Y$, we
 denote by $f_{(S')}$ the $S'$-morphism $f\times_S 1:X_{(S')}\to Y_{(S')}$, and
 we say that $f_{(S')}$ is the \emph{base change} (or \emph{inverse image}) of
-$f$ by $\vphi$. Therefore, $X_{(S')}$ is a \emph{covariant functor} in $X$, from
+$f$ by $\vphi$. Therefore $X_{(S')}$ is a \emph{covariant functor} in $X$, from
 the category of $S$-preschemes to that of $S'$-preschemes.
 \end{env}
 
@@ -397,15 +396,15 @@ the category of $S$-preschemes to that of $S'$-preschemes.
 The prescheme $X_{(S')}$ can be considered as a solution to a \emph{universal
 mapping problem}: each $S'$-prescheme $T$ is also an $S$-prescheme via $\vphi$;
 each $S$-morphism $g:T\to X$ is then uniquely written as $g=p\circ f$, where $f$
-is an $S'$-morphism $T\to X_{(S')}$, as it follows from the definition of the
+is an $S'$-morphism $T\to X_{(S')}$, as follows from the definition of the
 product applied to the $S$-morphisms $f$ and $\psi:T\to S'$ (the structure
 morphism of $T$).
 \end{env}
 
 \begin{prop}[3.3.9]
 \label{1.3.3.9}
-\emph{(``Transitivity of base change'')}. Let $S''$ be a prescheme,
-$\vphi':S''\to S$ a morphism. For each $S$-prescheme $X$, there exists an
+\emph{(``Transitivity of base change'')}. Let $S''$ be a prescheme, and
+$\vphi':S''\to S$ a morphism. For each $S$-prescheme $X$, there exists a
 canonical functorial isomorphism from the $S''$-prescheme
 $(X_{(\vphi)})_{(\vphi')}$ to the $S''$-prescheme $X_{(\vphi\circ\vphi')}$.
 \end{prop}
@@ -414,7 +413,7 @@ $(X_{(\vphi)})_{(\vphi')}$ to the $S''$-prescheme $X_{(\vphi\circ\vphi')}$.
 \label{proof-1.3.3.9}
 Let $T$ be a $S''$-prescheme, $\psi$ its structure morphism, and $g$ an
 $S$-morphism from $T$ to $X$ ($T$ being considered as an $S$-prescheme with
-structure morphism $\vphi\circ\vphi'\circ\psi$). As $T$ is also a $S'$-prescheme
+structure morphism $\vphi\circ\vphi'\circ\psi$). Since $T$ is also an $S'$-prescheme
 with structure morphism $\vphi'\circ\psi$, we can write $g=p\circ g'$, where
 $g'$ is an $S'$-morphism $T\to X_{(\vphi)}$, and then $g'=p'\circ g''$, where
 $g''$ is an $S''$-morphism $T\to(X_{(\vphi)})_{(\vphi')}$:
@@ -429,27 +428,29 @@ $g''$ is an $S''$-morphism $T\to(X_{(\vphi)})_{(\vphi')}$:
   }
 \]
 \oldpage[I]{110}
-Hence the result follows by the uniqueness of the solution to a universal
+So the result follows by the uniqueness of the solution to a universal
 mapping problem.
 \end{proof}
 
 This result can be written as the equality (up to a canonical isomorphism)
-$(X_{(S')})_{(S'')}=X_{(S'')}$, if there is no chance of confusion, or also
-\[
+$(X_{(S')})_{(S'')}=X_{(S'')}$ (if there is no chance of confusion), or also as
+\begin{equation*}
+\label{1.3.3.9.1}
   (X\times_S S')\times_{S'}S''=X\times_S S'';
   \tag{3.3.9.1}
-\]
+\end{equation*}
 the functorial nature of the isomorphism defined in \sref{1.3.3.9} can
 similarly be expressed by the transitivity formula for base change morphisms
-\[
+\begin{equation*}
+\label{1.3.3.9.2}
   (f_{(S')})_{(S'')}=f_{(S'')}
   \tag{3.3.9.2}
-\]
+\end{equation*}
 for each $S$-morphism $f:X\to Y$.
 
 \begin{cor}[3.3.10]
 \label{1.3.3.10}
-If $X$ and $Y$ are two $S$-preschemes, then there exists a canonical functorial
+If $X$ and $Y$ are $S$-preschemes, then there exists a canonical functorial
 isomorphism from the $S'$-prescheme $X_{(S')}\times_{S'}Y_{(S')}$ to the
 $S'$-prescheme $(X\times_S Y)_{(S')}$.
 \end{cor}
@@ -461,15 +462,16 @@ We have, up to canonical isomorphism,
   (X\times_S S')\times_{S'}(Y\times_S S')
   =X\times_S(Y\times_S S')=(X\times_S Y)\times_S S'
 \]
-according to (3.3.9.1) and the associativity of products of $S$-preschemes.
+according to \sref{1.3.3.9.1} and the associativity of products of $S$-preschemes.
 \end{proof}
 
 The functorial nature of the isomorphism defined in
-Corollary \sref{1.3.3.10} can be expressed by the formula
-\[
+Corollary~\sref{1.3.3.10} can be expressed by the formula
+\begin{equation*}
+\label{1.3.3.10.1}
   (u_{(S')},v_{(S')})_{S'}=((u,v)_S)_{(S')}
   \tag{3.3.10.1}
-\]
+\end{equation*}
 for each pair of $S$-morphisms $u:T\to X$, $v:T\to Y$.
 
 In other words, the base change functor $X_{(S')}$ \emph{commutes with
@@ -477,10 +479,10 @@ products}; it also commutes with sums \sref{1.3.2.8}.
 
 \begin{cor}[3.3.11]
 \label{1.3.3.11}
-Let $Y$ be an $S$-prescheme, $f:X\to Y$ a morphism which makes $X$ a
-$Y$-prescheme (and as a result also an $S$-prescheme). The prescheme $X_{(S')}$
-then identifies with the product $X\times_Y Y_{(S')}$, the projection
-$X\times_Y Y_{(S')}\to Y_{(S')}$ identifying with $f_{(S')}$.
+Let $Y$ be an $S$-prescheme, and $f:X\to Y$ a morphism which makes $X$ a
+$Y$-prescheme (and, as a result, also an $S$-prescheme). The prescheme $X_{(S')}$
+is then identified with the product $X\times_Y Y_{(S')}$, the projection
+$X\times_Y Y_{(S')}\to Y_{(S')}$ being identified with $f_{(S')}$.
 \end{cor}
 
 \begin{proof}
@@ -497,25 +499,25 @@ diagram
     X\ar[l]_f.
   }
 \]
-We have that $Y_{(S')}$ identifies with $S_{(\psi)}'$ and $X_{(S')}$ with
-$S_{(\psi\circ f)}'$; taking into account \sref{1.3.3.9} and
-\sref{1.3.3.4}, we deduce the corollary.
+We have that $Y_{(S')}$ is identified with $S_{(\psi)}'$, and $X_{(S')}$ with
+$S_{(\psi\circ f)}'$; taking \sref{1.3.3.9} and
+\sref{1.3.3.4} into account, we thus deduce the corollary.
 \end{proof}
 
 \begin{env}[3.3.12]
 \label{1.3.3.12}
-Let $f:X\to X'$, $g:Y\to Y'$ be two $S$-morphisms which are \emph{monomorphisms}
+Let $f:X\to X'$ and $g:Y\to Y'$ be $S$-morphisms which are \emph{monomorphisms}
 of preschemes (T, I, 1.1); then $f\times_S g$ is a \emph{monomorphism}. Indeed,
-if $p$ and $q$ are the projections of $X\times_S Y$, $p'$, $q'$ those of
-$X'\times_S Y'$, and $u$, $v$ two $S$-morphisms $T\to X\times_S Y$, then the
-relation $(f\times_S g)\circ u=(f\times_S g)\circ v$ implies that
-$p'\circ(f\times_S g)\circ u=p'\circ(f\times_S g)\circ v$, in other words,
-$f\circ p\circ u=f\circ p\circ v$, and as $f$ is a monomorphism,
+if $p$ and $q$ are the projections of $X\times_S Y$, $p'$ and $q'$ the projections of
+$X'\times_S Y'$, and $u$ and $v$ both $S$-morphisms $T\to X\times_S Y$, then the
+equation $(f\times_S g)\circ u=(f\times_S g)\circ v$ implies that
+$p'\circ(f\times_S g)\circ u=p'\circ(f\times_S g)\circ v$, or, in other words, that
+$f\circ p\circ u=f\circ p\circ v$, and since $f$ is a monomorphism,
 $p\circ u=p\circ v$; using the fact that $g$ is a monomorphism, we similarly
 obtain $q\circ u=q\circ v$, hence $u=v$.
 
 \oldpage[I]{111}
-It follows that for each base change $S'\to S$,
+It follows that, for each base change $S'\to S$,
 \[
   f_{(S')}:X_{(S')}\to Y_{(S')}
 \]
@@ -524,20 +526,20 @@ is a monomorphism.
 
 \begin{env}[3.3.13]
 \label{1.3.3.13}
-Let $S$, $S'$ be two affine schemes of rings $A$, $A'$ respectively; a morphism
+Let $S$ and $S'$ be affine schemes of rings $A$ and $A'$ (respectively); a morphism
 $S'\to S$ then corresponds to a ring homomorphism $A\to A'$. If $X$ is an
 $S$-prescheme, we denote by $X_{(A')}$ or $X\otimes_A A'$ the $S'$-prescheme
 $X_{(S')}$; when $X$ is also affine of ring $B$, $X_{(A')}$ is affine of ring
-$B_{(A')}=B\otimes_A A'$ obtained by extension by scalars from the $A$-algebra
+$B_{(A')}=B\otimes_A A'$ obtained by extension of scalars from the $A$-algebra
 $B$ to $A'$.
 \end{env}
 
 \begin{env}[3.3.14]
 \label{1.3.3.14}
 With the notation of \sref{1.3.3.6}, for each \emph{$S$-morphism}
-$f:S'\to X$, $f'=(f,1_{S'})_S$ is an $S'$-morphism $S'\to X'=X_{(S')}$ such that
-$p\circ f'=f$, $\pi'\circ f'=1_{S'}$, in other words an \emph{$S'$-section of
-of $X'$}; conversely, if $f'$ is such an $S'$-section, $f=p\circ f'$ is an
+$f:S'\to X$, we have that $f'=(f,1_{S'})_S$ is an $S'$-morphism $S'\to X'=X_{(S')}$ such that
+$p\circ f'=f$, $\pi'\circ f'=1_{S'}$, or, in other words, an \emph{$S'$-section of
+of $X'$}; conversely, if $f'$ is such an $S'$-section, then $f=p\circ f'$ is an
 $S$-morphism $S'\to X$. We thus define a canonical
 \emph{bijective correspondence}
 \[
@@ -549,29 +551,28 @@ $\Gamma_f$.
 
 \begin{env}[3.3.15]
 \label{1.3.3.15}
-Given a prescheme $X$, which we can always consider it as a $\bb{Z}$-prescheme,
-it follows in particular from \sref{1.3.3.14} that the \emph{$X$-sections} of
-$X\otimes_\bb{Z}\bb{Z}[T]$ (where $T$ is an indeterminate) bijectively
-correspond to \emph{morphisms} $\bb{Z}[T]\to X$. Let us show that these
-$X$-sections also bijectively correspond to \emph{sections of the structure
-sheaf $\OO_X$ over $X$}. Indeed, let $(U_\alpha)$ be a cover of $X$ by the
-affine opens; let $u:X\to X\otimes_\bb{Z}\bb{Z}[T]$ be an $X$-morphism and let
+Given a prescheme $X$, which we can always consider as a $\bb{Z}$-prescheme,
+it follows, in particular, from \sref{1.3.3.14} that the \emph{$X$-sections} of
+$X\otimes_\bb{Z}\bb{Z}[T]$ (where $T$ is an indeterminate)
+correspond bijectively with \emph{morphisms} $\bb{Z}[T]\to X$. We will show that these
+$X$-sections also correspond bijectively with \emph{sections of the structure
+sheaf $\OO_X$ over $X$}. Indeed, let $(U_\alpha)$ be a cover of $X$ by
+affine open subsets; let $u:X\to X\otimes_\bb{Z}\bb{Z}[T]$ be an $X$-morphism, and let
 $u_\alpha$ be its restriction to $U_\alpha$; if $A_\alpha$ is the ring of the
 affine scheme $U_\alpha$, then $U_\alpha\otimes_\bb{Z}\bb{Z}[T]$ is an affine
 scheme of ring $A_\alpha[T]$ \sref{1.3.2.2}, and $u_\alpha$ canonically
 corresponds to an $A_\alpha$-homomorphism $A_\alpha[T]\to A_\alpha$
-\sref{1.1.7.3}. Now, as such a homomorphism is completely determined by the
+\sref{1.1.7.3}. Now, since such a homomorphism is completely determined by the
 data of the image of $T$ in $A_\alpha$, let
 $s_\alpha\in A_\alpha=\Gamma(U_\alpha,\OO_X)$, and if we suppose that the
-restrictions of $u_\alpha$ and $u_\beta$ to an affine open
+restrictions of $u_\alpha$ and $u_\beta$ to an affine open subset
 $V\subset U_\alpha\cap U_\beta$ coincide, then we see immediately that
 $s_\alpha$ and $s_\beta$ coincide on $V$; thus the family $(s_\alpha)$ consists
 of the restrictions to $U_\alpha$ of a section $s$ of $\OO_X$ over $X$;
-convsersely, it is clear that such a section defines a family $(u_\alpha)$ of
+conversely, it is clear that such a section defines a family $(u_\alpha)$ of
 morphisms which are the restrictions to $U_\alpha$ of an $X$-morphism
 $X\to X\otimes_\bb{Z}\bb{Z}[T]$. This result is generalized in
 \sref[II]{2.1.7.12}.
-\end{env}
 
 \subsection{Points of a prescheme with values in a prescheme; geometric points}
 \label{subsection:prescheme-geometric-points}
