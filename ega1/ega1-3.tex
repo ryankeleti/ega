@@ -5,26 +5,26 @@
 \label{subsection:sums-of-preschemes}
 
 Let $(X_\alpha)$ be any family of preschemes; let $X$ be a topological space which is the
-\emph{sum} of the underlying spaces $X_\alpha$; $X$ is then the union of the pairwise
+\emph{sum} of the underlying spaces $X_\alpha$; $X$ is then the union of pairwise
 disjoint open subspaces $X_\alpha'$, and for each $\alpha$ there is a homomorphism
 $\vphi_\alpha$ from $X_\alpha$ to $X_\alpha'$. If we equip each of the $X_\alpha'$ with the
 sheaf $(\vphi_\alpha)_*(\OO_{X_\alpha})$, it is clear that $X$ becomes a prescheme, which
 we call the \emph{sum} of the family of preschemes $(X_\alpha)$ and which we denote
-$\bigsqcup_\alpha X_\alpha$. If $Y$ is a prescheme, the map $f\mapsto(f\circ\vphi_\alpha)$ is a
+$\bigsqcup_\alpha X_\alpha$. If $Y$ is a prescheme, then the map $f\mapsto(f\circ\vphi_\alpha)$ is a
 \emph{bijection} from the set $\Hom(X,Y)$ to the product set $\Pi_\alpha\Hom(X_\alpha,Y)$.
-In particular, if the $X_\alpha$ are $S$-preschemes, with structure morphisms $\psi_\alpha$,
+In particular, if the $X_\alpha$ are $S$-preschemes, with structure morphisms $\psi_\alpha$, then
 $X$ is an $S$-prescheme by the unique morphism $\psi:X\to S$ such that
-$\psi\circ\vphi_\alpha=\psi_\alpha$ for each $\alpha$. The sum of two preschemes $X$, $Y$ is
-denoted by $X\sqcup Y$. It is immediate that if $X=\Spec(A)$, $Y=\Spec(B)$, $X\sqcup Y$
-canonically identifies with $\Spec(A\times B)$.
+$\psi\circ\vphi_\alpha=\psi_\alpha$ for each $\alpha$. The sum of two preschemes $X$ and $Y$ is
+denoted by $X\sqcup Y$. It is immediate that, if $X=\Spec(A)$ and $Y=\Spec(B)$, then $X\sqcup Y$
+is canonically identified with $\Spec(A\times B)$.
 
 \subsection{Products of preschemes}
 \label{subsection:products-of-preschemes}
 
 \begin{defn}[3.2.1]
 \label{1.3.2.1}
-Given two $S$-preschemes $X$, $Y$, we say that a triple $(Z,p_1,p_2)$ consisting of an
-$S$-prescheme $Z$ and of two $S$-morphisms $p_1:Z\to X$, $p_2:Z\to Y$, is a product of the
+Given $S$-preschemes $X$ and $Y$, we say that a triple $(Z,p_1,p_2)$, consisting of an
+$S$-prescheme $Z$, and $S$-morphisms $p_1:Z\to X$ and $p_2:Z\to Y$, is a product of the
 \oldpage[I]{105}
 $S$-preschemes $X$ and $Y$, if, for each $S$-prescheme $T$, the map
 $f\mapsto(p_1\circ f,p_2\circ f)$ is a bijection from the set of $S$-morphisms from $T$ to
@@ -35,43 +35,42 @@ $Z$, to the set of pairs consisting of an $S$-morphism $T\to X$ and an $S$-morph
 \]
 \end{defn}
 
-There is therefore a general notion of a \emph{product} of two objects in a category, applied
+This is the general notion of a \emph{product} of two objects in a category, applied
 to the category of $S$-preschemes (T, I, 1.1); in particular, a product of two $S$-preschemes
 is \emph{unique} up to a unique $S$-isomorphism. Because of this uniqueness, most of the time
-we will denote a product of two $S$-preschemes $X$, $Y$ by the notation $X\times_S Y$ (or
-simply $X\times Y$ when there is no chance of confusion), the morphisms $p_1$, $p_2$ (called
-the \emph{canonical projections} of $X\times_S$ to $X$ and $Y$, respectively) are suppressed
-in the notation. If $g:T\to X$, $h:T\to Y$ are two $S$-morphisms, we denote by $(g,h)_S$, or
+we will denote a product of two $S$-preschemes $X$ and $Y$ by $X\times_S Y$ (or
+simply $X\times Y$, when there is no chance of confusion), with the morphisms $p_1$ and $p_2$
+(the \emph{canonical projections} of $X\times_S Y$ to $X$ and to $Y$, respectively) being suppressed
+in the notation. If $g:T\to X$ and $h:T\to Y$ are $S$-morphisms, we denote by $(g,h)_S$, or
 simply $(g,h)$, the $S$-morphism $f:T\to X\times_S Y$ such that $p_1\circ f=g$,
-$p_2\circ f=h$. If $X'$, $Y'$ are two $S$-preschemes, $p_1'$, $p_2'$ the canonical
-projections of $X'\times_S Y'$ (assumed to exist), $u:X'\to X$, $v:Y'\to Y$ two
-$S$-morphisms, then we write $u\times_S v$ (or simply $u\times v$) for the $S$-morphism
+$p_2\circ f=h$. If $X'$ and $Y'$ ar two $S$-preschemes, $p_1'$ and $p_2'$ the canonical
+projections of $X'\times_S Y'$ (assumed to exist), and $u:X'\to X$ and $v:Y'\to Y$ $S$-morphisms, then we write $u\times_S v$ (or simply $u\times v$) for the $S$-morphism
 $(u\circ p_1',v\circ p_2')_S$ from $X'\times_S Y'$ to $X\times_S Y$.
 
-When $S$ is an affine scheme of ring $A$, we often replace $S$
+When $S$ is an affine scheme given by some ring $A$, we often replace $S$
 by $A$ is the above notation.
 
 \begin{prop}[3.2.2]
 \label{1.3.2.2}
-Let $X$, $Y$, $S$ be three affine schemes, $B$, $C$, $A$ their respective rings. Let
-$Z=\Spec(B\otimes_A C)$, $p_1$, $p_2$ the $S$-morphisms corresponding \sref{1.2.2.4} to
-the canonical $A$-homomorphisms $u:b\mapsto b\otimes 1$ and $v:c\mapsto 1\otimes c$ from $B$
+Let $X$, $Y$, and $S$ be affine schemes, given by rings $B$, $C$, and $A$ (respectively). Let
+$Z=\Spec(B\otimes_A C)$, and let $p_1$ and $p_2$ be the $S$-morphisms corresponding \sref{1.2.2.4} to
+the canonical $A$-homomorphisms $u:b\mapsto b\otimes 1$ and $v:c\mapsto 1\otimes c$ (respectively) from $B$
 and $C$ to $B\otimes_A C$; then $(Z,p_1,p_2)$ is a product of $X$ and $Y$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.2.2}
-According to \sref{1.2.2.4}, it suffices to check that if, to each $A$-homomorphism
+According to \sref{1.2.2.4}, it suffices to check that, if, to each $A$-homomorphism
 $f:B\otimes_A C\to L$ (where $L$ is an $A$-algebra), we associate the pair
-$(f\circ u,f\circ v)$, then we define a bijection
+$(f\circ u,f\circ v)$, then this defines a bijection
 $\Hom_A(B\otimes_A C,L)\isoto\Hom_A(B,L)\times\Hom_A(C,L)$,\footnote{The notation $\Hom_A$
 denotes here the set of homomorphisms of \emph{$A$-algebras}.} which follows immediately
-from the definitions and the relation $b\otimes c=(b\otimes 1)(1\otimes c)$.
+from the definitions and the fact that $b\otimes c=(b\otimes 1)(1\otimes c)$.
 \end{proof}
 
 \begin{cor}[3.2.3]
 \label{1.3.2.3}
-Let $T$ be an affine scheme of ring $D$, $\alpha=({}^a\rho,\widetilde{\rho})$
+Let $T$ be an affine scheme given by some ring $D$, and $\alpha=({}^a\rho,\widetilde{\rho})$
 (resp. $\beta=({}^a\sigma,\widetilde{\sigma})$) an $S$-morphism $T\to X$ (resp. $T\to Y$),
 where $\rho$ (resp. $\sigma$) is an $A$-homomorphism from $B$ (resp. $C$) to $D$; then
 $(\alpha,\beta)_S=({}^a\tau,\widetilde{\tau})$, where $\tau$ is the homomorphism
@@ -80,26 +79,26 @@ $B\otimes_A C\to D$ such that $\tau(b\otimes c)=\rho(b)\sigma(c)$.
 
 \begin{prop}[3.2.4]
 \label{1.3.2.4}
-Let $f:S'\to S$ be a \emph{monomorphism} of preschemes \emph{(T, I, 1.1)}, $X$, $Y$ two
-$S'$-preschemes, which are also considered as $S$-preschemes by means of $f$. Each product of
-$S$-preschemes $X$, $Y$ is then a product of $S'$-preschemes $X$, $Y$, and conversely.
+Let $f:S'\to S$ be a \emph{monomorphism} of preschemes \emph{(T, I, 1.1)}, and let $X$ and $Y$ be
+$S'$-preschemes, also considered as $S$-preschemes via $f$. Every product of
+the $S$-preschemes $X$ and $Y$ is then a product of the $S'$-preschemes $X$ and $Y$, and vice versa.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.2.4}
-Let $\vphi:X\to S'$, $\psi:Y\to S'$ be the structure morphisms. If $T$ is an $S$-prescheme,
-$u:T\to X$, $v:T\to Y$ two $S$-morphisms, we have by definition
+Let $\vphi:X\to S'$ and $\psi:Y\to S'$ be the structure morphisms. If $T$ is an $S$-prescheme, and
+$u:T\to X$ and $v:T\to Y$ are $S$-morphisms, then we have, by definition, that
 $f\circ\vphi\circ u=f\circ\psi\circ v=\theta$, the structure morphism of $T$; the hypotheses
-on $f$ imply that $\vphi\circ u=\psi\circ v=\theta'$, and we can consider $T$ as an
-$S'$-prescheme with structure morphism $\theta'$, $u$ and $v$ as $S'$-morphisms. The
-conclusion of the proposition follows immediately, taking into account \sref{1.3.2.1}.
+on $f$ imply that $\vphi\circ u=\psi\circ v=\theta'$, and so we can consider $T$ as an
+$S'$-prescheme with structure morphism $\theta'$, and $u$ and $v$ as $S'$-morphisms. The
+conclusion of the proposition follows immediately, taking \sref{1.3.2.1} into account.
 \end{proof}
 
 \begin{cor}[3.2.5]
 \label{1.3.2.5}
-Let $X$, $Y$ be two $S$-preschemes, $\vphi:X\to S$, $\psi:Y\to S$ their structure morphisms,
-$S'$ an open subset of $S$ such that $\vphi(X)\subset S'$, $\psi(Y)\subset S'$. Each product
-of $S$-preschemes $X$, $Y$ is then also a product of $S'$-preschemes $X$, $Y$, and
+Let $X$ and $Y$ be $S$-preschemes, with structure morphisms $\vphi:X\to S$ and $\psi:Y\to S$, and let
+$S'$ be an open subset of $S$ such that $\vphi(X)\subset S'$ and $\psi(Y)\subset S'$. Every product
+of the $S$-preschemes $X$ and $Y$ is then also a product of the $S'$-preschemes $X$ and $Y$, and
 conversely.
 \end{cor}
 
@@ -108,54 +107,52 @@ It suffices to apply \sref{1.3.2.4} to the canonical injection $S'\to S$.
 
 \begin{thm}[3.2.6]
 \label{1.3.2.6}
-Given two $S$-preschemes $X$, $Y$, there exists a product $X\times_S Y$.
+Given $S$-preschemes $X$ and $Y$, there exists a product $X\times_S Y$.
 \end{thm}
 
-\begin{proof}
-\label{proof-1.3.2.6}
-We proceed in several steps.
+The proof proceeds in several steps.
 
 \begin{lem}[3.2.6.1]
 \label{1.3.2.6.1}
-Let $(Z,p,q)$ be a product of $X$ and $Y$, $U$, $V$ two open subsets of $X$, $Y$,
-respectively. If we put $W=p^{-1}(U)\cap q^{-1}(V)$, then the triple consisting of $W$ and
-the restrictions of $p$ and $q$ to $W$ \emph{(considered as the morphisms $W\to U$, $W\to V$,
+Let $(Z,p,q)$ be a product of $X$ and $Y$, and $U$ and $V$ open subsets of $X$ and $Y$,
+respectively. If we let $W=p^{-1}(U)\cap q^{-1}(V)$, then the triple consisting of $W$ and
+the restrictions of $p$ and $q$ to $W$ \emph{(considered as the morphisms $W\to U$ and $W\to V$,
 respectively)} is a product of $U$ and $V$.
 \end{lem}
 
-Indeed, if $T$ is an $S$-prescheme, we can identify the $S$-morphisms $T\to W$ and the
-$S$-morphisms $T\to Z$ mapping $T$ to $W$. If then $g:T\to U$, $h:T\to V$ are any two
-$S$-morphisms, we can consider them as $S$-morphisms from $T$ to $X$ and $Y$ respectively,
-and by hypothesis there is then a unique $S$-morphism $f:T\to Z$ such that $g=p\circ f$,
-$h=q\circ f$. As $p(f(Y))\subset U$, $q(f(T))\subset V$, we have
+Indeed, if $T$ is an $S$-prescheme, then we can identify the $S$-morphisms $T\to W$ with the
+$S$-morphisms $T\to Z$ mapping $T$ to $W$. Then, if $g:T\to U$ and $h:T\to V$ are any two
+$S$-morphisms, we can consider them as $S$-morphisms from $T$ to $X$ and to $Y$, respectively,
+and, by hypothesis, there is then a unique $S$-morphism $f:T\to Z$ such that $g=p\circ f$ and
+$h=q\circ f$. Since $p(f(Y))\subset U$, $q(f(T))\subset V$, we have
 \[
   f(T)\subset p^{-1}(U)\cap q^{-1}(V)=W,
 \]
-hence our assertion.
+hence our claim.
 
 \begin{lem}[3.2.6.2]
 \label{1.3.2.6.2}
-Let $Z$ be an $S$-prescheme, $p:Z\to X$, $q:Z\to Y$ two $S$-morphisms, $(U_\alpha)$ an open
-cover of $X$, $(V_\lambda)$ an open cover of $Y$. Suppose that for each pair
+Let $Z$ be an $S$-prescheme, $p:Z\to X$ and $q:Z\to Y$ both $S$-morphisms, $(U_\alpha)$ an open
+cover of $X$, and $(V_\lambda)$ an open cover of $Y$. Suppose that, for each pair
 $(\alpha,\lambda)$, the $S$-prescheme
 $W_{\alpha\lambda}=p^{-1}(U_\alpha)\cap q^{-1}(V_\lambda)$ and the restrictions of $p$ and
 $q$ to $W_{\alpha\lambda}$ form a product of $U_\alpha$ and $V_\lambda$. Then $(Z,p,q)$ is a
 product of $X$ and $Y$.
 \end{lem}
 
-We first show that, if $f_1$, $f_2$ are two $S$-morphisms $T\to Z$, then the relations
-$p\circ f_1=p\circ f_2$ and $q\circ f_1=q\circ f_2$ imply $f_1=f_2$. Indeed, $Z$ is the union
+We first show that, if $f_1$ and $f_2$ are $S$-morphisms $T\to Z$, then the equations
+$p\circ f_1=p\circ f_2$ and $q\circ f_1=q\circ f_2$ imply that $f_1=f_2$. Indeed, $Z$ is the union
 of the $W_{\alpha\lambda}$, so the $f_1^{-1}(W_{\alpha\lambda})$ form an open cover of $T$,
 and similarly for $f_2^{-1}(W_{\alpha\lambda})$. In addition, we have
 \[
   f_1^{-1}(W_{\alpha\lambda})=f_1^{-1}(p^{-1}(U_\alpha))\cap f_1^{-1}(q^{-1}(V_\lambda))
   =f_2^{-1}(p^{-1}(U_\alpha))\cap f_2^{-1}(q^{-1}(V_\lambda))=f_2^{-1}(W_{\alpha\lambda})
 \]
-by hypothesis, and it reduces to seeing that the the restrictions of $f_1$ and $f_2$ to
-$f_1^{-1}(W_{\alpha\lambda})=f_2^{-1}(W_{\alpha\lambda})$ are \unsure{identical/the identity} for each pair of
-indices. But as these restrictions can be considered as $S$-morphisms from
-$f_1^{-1}(W_{\alpha\lambda})$ to $W_{\alpha\lambda}$, our assertion follows from the
-hypotheses and Definition \sref{1.3.2.1}.
+by hypothesis, and it thus reduces to noting that the the restrictions of $f_1$ and $f_2$ to
+$f_1^{-1}(W_{\alpha\lambda})=f_2^{-1}(W_{\alpha\lambda})$ are identical for each pair of
+indices. But since these restrictions can be considered as $S$-morphisms from
+$f_1^{-1}(W_{\alpha\lambda})$ to $W_{\alpha\lambda}$, our claim follows from the
+hypotheses and Definition~\sref{1.3.2.1}.
 
 Suppose now that we are given two $S$-morphisms $g:T\to X$, $h:T\to Y$. Put
 $T_{\alpha\lambda}=g^{-1}(U_\alpha)\cap h^{-1}(V_\lambda)$; the $T_{\alpha\lambda}$ form an
@@ -250,9 +247,8 @@ $X_i=\vphi^{-1}(S_i)$, $Y_i=\psi^{-1}(S_i)$, the products $X_i\times_{S_i}Y_i$ e
 according to the
 \oldpage[I]{108}
 above; but then the products $X_i\times_S Y_i$ also exist \sref{1.3.2.5}, therefore
-$X\times_S Y$ similarly exists by Lemma \sref{1.3.2.6.4}.
+$X\times_S Y$ similarly exists by Lemma \sref{1.3.2.6.4}.\qed
 \end{env}
-\end{proof}
 
 \begin{cor}[3.2.7]
 \label{1.3.2.7}
