@@ -573,6 +573,7 @@ conversely, it is clear that such a section defines a family $(u_\alpha)$ of
 morphisms which are the restrictions to $U_\alpha$ of an $X$-morphism
 $X\to X\otimes_\bb{Z}\bb{Z}[T]$. This result is generalized in
 \sref[II]{2.1.7.12}.
+\end{env}
 
 \subsection{Points of a prescheme with values in a prescheme; geometric points}
 \label{subsection:prescheme-geometric-points}
@@ -580,10 +581,10 @@ $X\to X\otimes_\bb{Z}\bb{Z}[T]$. This result is generalized in
 \begin{env}[3.4.1]
 \label{1.3.4.1}
 Let $X$ be a prescheme; for each prescheme $T$, we then denote by $X(T)$ the set
-$\Hom(T,X)$ of morphism $T\to X$, and the elements of this set are called
+$\Hom(T,X)$ of morphisms $T\to X$, and the elements of this set are called
 \emph{the points of $X$ with values in $T$}. If we associate to each morphism
-$f:T\to T'$ the map $u'\mapsto u'\circ f$ from $X(T')$ to $X(T)$, we see that,
-for $X$ fixed, $X(T)$ is a \emph{contravariant functor in $T$}, from the
+$f:T\to T'$ the map $u'\mapsto u'\circ f$ from $X(T')$ to $X(T)$, we see,
+for fixed $X$, that $X(T)$ is a \emph{contravariant functor in $T$}, from the
 category of preschemes to that of sets. In addition, each morphism of preschemes
 $g:X\to Y$ defines a functorial homomorphism $X(T)\to Y(T)$, which sends
 $v\in X(T)$ to $g\circ v$.
@@ -591,18 +592,19 @@ $v\in X(T)$ to $g\circ v$.
 
 \begin{env}[3.4.2]
 \label{1.3.4.2}
-Given three sets $P$, $Q$, $R$ and two maps $\vphi:P\to R$, $\psi:Q\to R$, we define the
+Given sets $P$, $Q$, and $R$, and maps $\vphi:P\to R$ and $\psi:Q\to R$, we define the
 \emph{fibre product of $P$ and $Q$ over $R$} (relative to $\vphi$ and $\psi$) as the subset
 of
 \oldpage[I]{112}
 the product set $P\times Q$ consisting of the pairs $(p,q)$ such that $\vphi(p)=\psi(q)$; we
-denote it by $P\times_R Q$. Definition \sref{1.3.2.1} of the product
+denote it by $P\times_R Q$. Definition~\sref{1.3.2.1} of the product
 of $S$-preschemes can be interpreted, with the notation of \sref{1.3.4.1},
 via the formula
-\[
+\begin{equation*}
+\label{1.3.4.2.1}
   (X\times_S Y)(T)=X(T)\times_{S(T)}Y(T).
   \tag{3.4.2.1}
-\]
+\end{equation*}
 the maps $X(T)\to S(T)$ and $Y(T)\to S(T)$ corresponding to the structure morphisms
 $X\to S$ and $Y\to S$.
 \end{env}
@@ -612,24 +614,26 @@ $X\to S$ and $Y\to S$.
 If we are given a prescheme $S$ and we consider only the $S$-preschemes and $S$-morphisms,
 then we will denote by $X(T)_S$ the set $\Hom_S(T,X)$ of $S$-morphisms $T\to X$, and suppress
 the subscript $S$ when there is no chance of confusion; we say that the elements of $X(T)_S$
-are the \emph{points} (or \emph{$S$-points} when there is a possibility of confusion)
+are the \emph{points} (or \emph{$S$-points}, when there is a possibility of confusion)
 \emph{of the $S$-prescheme $X$ with values in the $S$-prescheme $T$}. In particular, an
 \emph{$S$-section} of $X$ is none other than a \emph{point of $X$ with values in $S$}. The
-formula (3.4.2.1) can then be written as
-\[
+formula \sref{1.3.4.2.1} can then be written as
+\begin{equation*}
+\label{1.3.4.3.1}
   (X\times_S Y)(T)_S=X(T)_S\times Y(T)_S;
   \tag{3.4.3.1}
-\]
-more generally, if $Z$ is an $S$-prescheme, and $X$, $Y$, $T$ are $Z$-preschemes (thus
+\end{equation*}
+more generally, if $Z$ is an $S$-prescheme, and $X$, $Y$, and $T$ are $Z$-preschemes (thus
 \emph{ipso facto} $S$-preschemes), then we have
-\[
+\begin{equation*}
+\label{1.3.4.3.2}
   (X\times_Z Y)(T)_S=X(T)_S\times_{Z(T)_S}Y(T)_S.
   \tag{3.4.3.2}
-\]
+\end{equation*}
 
-We note that to show that a triple $(W,r,s)$ consisting of an $S$-prescheme $W$ and two
-$S$-morphisms $r:W\to X$, $s:W\to Y$ is a product of $X$ and $Y$ (over $Z$), it suffices by
-definition to check that for \emph{each $S$-prescheme $T$}, the diagram
+We note that, to show that a triple $(W,r,s)$ consisting of an $S$-prescheme $W$ and
+$S$-morphisms $r:W\to X$ and $s:W\to Y$ is a product of $X$ and $Y$ (over $Z$), it suffices, by
+definition, to check that, for \emph{each $S$-prescheme $T$}, the diagram
 \[
   \xymatrix{
     W(T)_S\ar[r]^{r'}\ar[d]_{s'} &
@@ -639,8 +643,7 @@ definition to check that for \emph{each $S$-prescheme $T$}, the diagram
   }
 \]
 makes $W(T)_S$ the fibre product of $X(T)_S$ and $Y(T)_S$ over $Z(T)_S$, where $r'$ and $s'$
-correspond to $r$ and $s$, $\vphi'$ and $\psi'$ to the structure morphisms $\vphi:X\to Z$,
-$\psi:Y\to Z$.
+correspond to $r$ and $s$, and $\vphi'$ and $\psi'$ to the structure morphisms $\vphi:X\to Z$ and $\psi:Y\to Z$.
 \end{env}
 
 \begin{env}[3.4.4]
@@ -655,13 +658,13 @@ set of points of the $A$-prescheme $X$ with values in the $A$-prescheme $T$.
 
 \begin{env}[3.4.5]
 \label{1.3.4.5}
-Consider in particular that case where $T$ is of the form $\Spec(A)$, where $A$ is a
-\emph{local} ring; the elements of $X(A)$ then bijectively correspond to \emph{local}
+Consider, in particular, the case where $T$ is of the form $\Spec(A)$, where $A$ is a
+\emph{local} ring; the elements of $X(A)$ then correspond bijectively to \emph{local}
 homomorphisms $\OO_x\to A$ for $x\in X$ \sref{1.2.2.4}; we say that the
-point $x$ of the underlying space of $X$ is the \emph{location}\footnote{\emph{[Trans.] We say that
-the geometric point lies over this $x$.}} of the point of $X$ with values in $A$ to which it corresponds.
+point $x$ of the underlying space of $X$ is the \emph{location}\footnote{\emph{[Trans.] We also say that
+\emph{the geometric point lies over this $x$}.}} of the point of $X$ with values in $A$ to which it corresponds.
 
-More particularly, we call the \emph{geometric points} of a prescheme $S$ the \emph{points of
+More specifically, we define the \emph{geometric points} of a prescheme $S$ to be the \emph{points of
 $X$ with values in a field $K$}: the data of such a point is equivalent to the data of its
 \oldpage[I]{113}
 location $x$ in the underlying subspace of $X$, and of an \emph{extension} $K$ of $\kres(x)$;
@@ -670,14 +673,14 @@ say that this geometric point is \emph{located at $x$}. We also define a map $X(
 sending a geometric point with values in $K$ to its location.
 
 If $S'=\Spec(K)$ is an $S$-prescheme (in other words, if $K$ is considered as an extension
-of the residue field $\kres(s)$, where $s\in S$) and if $X$ is an $S$-prescheme, then an
-element of $X(K)_S$, or as we say, a \emph{geometric point of $X$ lying over $s$ with values
+of the residue field $\kres(s)$, where $s\in S$), and if $X$ is an $S$-prescheme, then an
+element of $X(K)_S$, or, as we say, a \emph{geometric point of $X$ lying over $s$ with values
 in $K$}, consists of the data of a $\kres(s)$-monomorphism from the residue field $\kres(x)$
 to $K$, where $x$ is a point of $X$ \emph{lying over $s$} (therefore $\kres(x)$ is an
 extension of $\kres(s)$).
 
 In particular, if $S=\Spec(K)=\{\xi\}$, \emph{then the geometric points of $X$ with values in
-$K$ identify with the points $x\in X$ such that $\kres(x)=K$}; we say that these latter
+$K$ can be identified with the points $x\in X$ such that $\kres(x)=K$}; we say that these latter
 points are the \emph{$K$-rational points of the $K$-prescheme $X$}; if $K'$ is an extension
 of $K$, then the geometric points of $X$ with values in $K'$ bijectively correspond to the
 $K'$-rational points of $X'=X_{(K')}$ \sref{1.3.3.14}.
@@ -685,8 +688,8 @@ $K'$-rational points of $X'=X_{(K')}$ \sref{1.3.3.14}.
 
 \begin{lem}[3.4.6]
 \label{1.3.4.6}
-Let $X_i$ ($1\leq i\leq n$) be $S$-preschemes, $s$ a point of $S$, $x_i$
-($1\leq i\leq n$) a point of $X_i$ lying over $s$. Then there exists an extension
+Let $X_i$ ($1\leq i\leq n$) be $S$-preschemes, $s$ a point of $S$, and $x_i$
+($1\leq i\leq n$) points of $X_i$ lying over $s$. Then there exists an extension
 $K$ of $\kres(s)$ and a geometric point of the product
 $Y=X_1\times_S X_2\times_S\cdots\times_S X_n$, with values in $K$, whose projections to
 the $X_i$ are localized at the $x_i$.
@@ -694,38 +697,37 @@ the $X_i$ are localized at the $x_i$.
 
 \begin{proof}
 \label{proof-1.3.4.6}
-In fact, there exist $\kres(s)$-monomorphisms $\kres(x_i)\to K$, all in the same extension $K$ of $\kres(s)$ (Bourbaki, \emph{Alg.}, chap.~V, \textsection4, prop.~2).
-The compositions $\kres(s)\to\kres(x_i)\to K$ are all identical, and so the morphisms $\Spec(K)\to X_i$ corresponding to the $\kres(x_i)\to K$ are $S$-morphisms, and we thus conclude that they define a unique morphism $\Spec(K)\to Y$.
+There exist $\kres(s)$-monomorphisms $\kres(x_i)\to K$, all in the same extension $K$ of $\kres(s)$ (Bourbaki, \emph{Alg.}, chap.~V, \textsection4, prop.~2).
+The compositions $\kres(s)\to\kres(x_i)\to K$ are all identical, and so the morphisms $\Spec(K)\to X_i$ corresponding to the $\kres(x_i)\to K$ are all $S$-morphisms, and we thus conclude that they define a unique morphism $\Spec(K)\to Y$.
 If $y$ is the corresponding point of $Y$, it is clear that its projection in each of the $X_i$ is $x_i$.
 \end{proof}
 
 \begin{prop}[3.4.7]
 \label{1.3.4.7}
-Let $X_i$ ($1\leq i\leq n$) be $S$-preschemes, and for each index $i$ let $x_i$ be a point of $X_i$.
-In order for there to exist a point $y$ of $Y=X_1\times_S X_2\times\ldots\times_S X_n$ whose image is $x_i$ under the $i$th projection for each $1\leq i\leq n$, it is necessary and sufficient that the $x_i$ all be above the same point $s$ of $S$.
+Let $X_i$ ($1\leq i\leq n$) be $S$-preschemes, and, for each index $i$, let $x_i$ be a point of $X_i$.
+For there to exist a point $y$ of $Y=X_1\times_S X_2\times\ldots\times_S X_n$ whose image is $x_i$ under the $i$th projection for each $1\leq i\leq n$, it is necessary and sufficient that the $x_i$ all lie above the same point $s$ of $S$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.4.7}
-The condition is evidently necessary; Lemma \sref{1.3.4.6} proves that it is sufficient.
+The condition is evidently necessary; Lemma~\sref{1.3.4.6} proves that it is sufficient.
 \end{proof}
 
-In other words, if we denote by $(X)$ the underlying set of $X$, we see that we have a canonical \emph{surjective} function $(X\times_S Y)\to(X)\times_{(S)}(Y)$; we must point out that this function \emph{is not injective} in general; said otherwise, \emph{there can exist multiple distinct points $z$ in $X\times_S Y$ having the same projections $x\in X$, $y\in Y$}; we have already seen this when $S$, $X$, and $Y$ are prime spectrums of fields $k$, $K$, and $K'$, since the tensor product $K\otimes_k K'$ has, in general, multiple distinct prime ideals cf. \sref{1.3.4.9}.
+In other words, if we denote by $(X)$ the underlying set of $X$, we see that we have a canonical \emph{surjective} function $(X\times_S Y)\to(X)\times_{(S)}(Y)$; we must point out that this function \emph{is not injective} in general; in other words, \emph{there can exist multiple distinct points $z$ in $X\times_S Y$ that have the same projections $x\in X$ and $y\in Y$}; we have already seen this when $S$, $X$, and $Y$ are prime spectra of fields $k$, $K$, and $K'$ (respectively), since the tensor product $K\otimes_k K'$ has, in general, multiple distinct prime ideals (cf.~\sref{1.3.4.9}).
 
 \begin{cor}[3.4.8]
 \label{1.3.4.8}
-Let $f:X\to Y$ be an $S$-morphism, $f_{(S')}:X_{(S')}\to Y_{(S')}$ the $S'$-morphism induced by $f$ by an extension $S'\to S$ of the base prescheme.
+Let $f:X\to Y$ be an $S$-morphism, and $f_{(S')}:X_{(S')}\to Y_{(S')}$ the $S'$-morphism induced by $f$ by an extension $S'\to S$ of the base prescheme.
 Let $p$ (\emph{resp. $q$}) be the projection $X_{(S')}\to X$ (\emph{resp. $Y_{(S')}\to Y$}); for every subset $M$ of $X$, we have
 \[
   q^{-1}(f(M))=f_{(S')}(p^{-1}(M)).
 \]
 \end{cor}
 
+\oldpage[I]{114}
 \begin{proof}
 \label{proof-1.3.4.8}
-In
-\oldpage[I]{114}
-fact \sref{1.3.3.11}, $X_{(S')}$ is identified with the product $X\times_Y Y_{(S')}$ thanks to the commutative diagram
+Indeed \sref{1.3.3.11}, $X_{(S')}$ can be identified with the product $X\times_Y Y_{(S')}$ thanks to the commutative diagram
 \[
   \xymatrix{
     X\ar[d]_f &
@@ -734,28 +736,28 @@ fact \sref{1.3.3.11}, $X_{(S')}$ is identified with the product $X\times_Y Y_{(S
     Y_{(S')}\ar[l]_q
   }
 \]
-By \sref{1.3.4.7}, the relation $q(y')=f(x)$ for $x\in M$ and $y'\in Y_{(S)}$ is equivalent to the existence of some $x'\in X_{(S')}$ such that $p(x')=x$ and $f_{(S')}(x')=y'$, whence the corollary.
+By \sref{1.3.4.7}, the equation $q(y')=f(x)$ for $x\in M$ and $y'\in Y_{(S)}$ is equivalent to the existence of some $x'\in X_{(S')}$ such that $p(x')=x$ and $f_{(S')}(x')=y'$, whence the corollary.
 \end{proof}
 
 Lemma~\sref{1.3.4.6} can be made clearer in the following manner:
 \begin{prop}[3.4.9]
 \label{1.3.4.9}
-Let $X$ and $Y$ be two $S$-preschemes, and $x$ a point of $X$ and $y$ a point of $Y$ both above the same point $s\in S$.
-The set of points of $X\times_S Y$ with projections $x$ and $y$ is in bijective correspondence with the set of \unsure{types of extensions composed of $\kres(x)$ and $\kres(y)$ considered as extensions of $\kres(s)$} \emph{(Bourbaki, \emph{Alg.}, chap.~VIII, \textsection8, prop.~2)}.
+Let $X$ and $Y$ be $S$-preschemes, $x$ a point of $X$, and $y$ a point of $Y$, with both $x$ and $y$ lying above the same point $s\in S$.
+The set of points of $X\times_S Y$ with projections $x$ and $y$ is in bijective correspondence with the set of \unsure{types of extensions} composed of $\kres(x)$ and $\kres(y)$ considered as extensions of $\kres(s)$ \emph{(Bourbaki, \emph{Alg.}, chap.~VIII, \textsection8, prop.~2)}.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.4.9}
 Let $p$ (resp. $q$) be the projection from $X\times_S Y$ to $X$ (resp. $Y$), and $E$ the subspace $p^{-1}(x)\cap q^{-1}(y)$ of the underlying space of $X\times_S Y$.
-First note that the morphisms $\Spec(\kres(x))\to S$ and $\Spec(\kres(y))\to S$ factorise as $\Spec(\kres(x))\to\Spec(\kres(s))\to S$ and $\Spec(\kres(y))\to\Spec(\kres(s))\to S$y since $\Spec(\kres(s))\to S$ is a monomorphism \sref{1.2.4.7}, it follows from \sref{1.3.2.4} that we have
+First, note that the morphisms $\Spec(\kres(x))\to S$ and $\Spec(\kres(y))\to S$ factor as $\Spec(\kres(x))\to\Spec(\kres(s))\to S$ and $\Spec(\kres(y))\to\Spec(\kres(s))\to S$; since $\Spec(\kres(s))\to S$ is a monomorphism \sref{1.2.4.7}, it follows from \sref{1.3.2.4} that we have
 \[
   P=\Spec(\kres(x))\times_S\Spec(\kres(y))=\Spec(\kres(x))\times_{\Spec(\kres(s))}\Spec(\kres(y))=\Spec(\kres(x)\otimes_{\kres(s)}\kres(y)).
 \]
 We will define two maps, $\alpha:P_0\to E$ and $\beta:E\to P_0$, inverse to one another (where $P_0$ denotes the underlying set of the prescheme $P$).
-If $i:\Spec(\kres(x))\to X$ and $j:\Spec(\kres(y))\to Y$ are the canonical morphisms \sref{1.2.4.5}, we take for $\alpha$ the map of underlying spaces corresponding to the morphism $i\times_S j$.
-On the other hand, every $z\in E$ defines by hypothesis two $\kres(s)$-monomorphisms, $\kres(x)\to\kres(z)$ and $\kres(y)\to\kres(z)$, and so a $\kres(s)$-monomorphism $\kres(x)\otimes_{\kres(s)}\kres(y)\to\kres(z)$ and so a morphism $\Spec(\kres(z))\to P$; $\beta(z)$ will be the image of $z$ in $P_0$ under this morphism.
+If $i:\Spec(\kres(x))\to X$ and $j:\Spec(\kres(y))\to Y$ are the canonical morphisms \sref{1.2.4.5}, we take $\alpha$ to be the map of underlying spaces corresponding to the morphism $i\times_S j$.
+On the other hand, every $z\in E$ defines, by hypothesis, two $\kres(s)$-monomorphisms, $\kres(x)\to\kres(z)$ and $\kres(y)\to\kres(z)$, and thus a $\kres(s)$-monomorphism $\kres(x)\otimes_{\kres(s)}\kres(y)\to\kres(z)$, and thus a morphism $\Spec(\kres(z))\to P$; $\beta(z)$ will be the image of $z$ in $P_0$ under this morphism.
 The verification of the fact that $\alpha\circ\beta$ and $\beta\circ\alpha$ are the identity maps follows from \sref{1.2.4.5} and the definition of the product \sref{1.3.2.1}.
-Finally, we know that $P_0$ is in bijective correspondence with the set of \unsure{types of extensions composed of $\kres(x)$ and $\kres(y)$} (Bourbaki, \emph{Alg.}, chap.~VIII, \textsection8, prop.~1).
+Finally, we know that $P_0$ is in bijective correspondence with the set of \unsure{types of extensions} composed of $\kres(x)$ and $\kres(y)$ (Bourbaki, \emph{Alg.}, chap.~VIII, \textsection8, prop.~1).
 \end{proof}
 
 \subsection{Surjections and injections}
