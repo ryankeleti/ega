@@ -154,52 +154,52 @@ indices. But since these restrictions can be considered as $S$-morphisms from
 $f_1^{-1}(W_{\alpha\lambda})$ to $W_{\alpha\lambda}$, our claim follows from the
 hypotheses and Definition~\sref{1.3.2.1}.
 
-Suppose now that we are given two $S$-morphisms $g:T\to X$, $h:T\to Y$. Put
-$T_{\alpha\lambda}=g^{-1}(U_\alpha)\cap h^{-1}(V_\lambda)$; the $T_{\alpha\lambda}$ form an
+Suppose now that we are given $S$-morphisms $g:T\to X$ and $h:T\to Y$. Let
+$T_{\alpha\lambda}=g^{-1}(U_\alpha)\cap h^{-1}(V_\lambda)$; then the $T_{\alpha\lambda}$ form an
 open cover of $T$. By hypothesis, there exists an $S$-morphism $f_{\alpha\lambda}$ such that
-$p\circ f_{\alpha\lambda}$ and $q\circ f_{\alpha\lambda}$ are the respective restrictions of
-$g$ and $h$ to $T_{\alpha\lambda}$. In addition, we show that the restrictions of
+$p\circ f_{\alpha\lambda}$ and $q\circ f_{\alpha\lambda}$ are the restrictions of
+$g$ and $h$ to $T_{\alpha\lambda}$ (respectively). Now, we will show that the restrictions of
 $f_{\alpha\lambda}$ and $f_{\beta\mu}$ to $T_{\alpha\lambda}\cap T_{\beta\mu}$ coincide,
-which would finish the proof of Lemma \sref{1.3.2.6.2}. The images of
+which will finish the proof of Lemma~\sref{1.3.2.6.2}. The images of
 $T_{\alpha\lambda}\cap T_{\beta\mu}$ under $f_{\alpha\lambda}$ and $f_{\beta\mu}$ are
-contained in $W_{\alpha\lambda}\cap W_{\beta\mu}$ by definition. As
+contained in $W_{\alpha\lambda}\cap W_{\beta\mu}$ by definition. Since
 \[
   W_{\alpha\lambda}\cap W_{\beta\mu}
   =p^{-1}(U_\alpha\cap U_\beta)\cap q^{-1}(V_\lambda\cap V_\mu),
 \]
-it follows from Lemma \sref{1.3.2.6.1} that $W_{\alpha\lambda}\cap W_{\beta\mu}$ and the
+it follows from Lemma~\sref{1.3.2.6.1} that $W_{\alpha\lambda}\cap W_{\beta\mu}$ and the
 restrictions to this prescheme of $p$ and $q$ form a \emph{product} of $U_\alpha\cap U_\beta$
-and $V_\lambda\cap V_\mu$. As $p\circ f_{\alpha\lambda}$ and $p\circ f_{\beta\mu}$ coincide
+and $V_\lambda\cap V_\mu$. Since $p\circ f_{\alpha\lambda}$ and $p\circ f_{\beta\mu}$ coincide
 on $T_{\alpha\lambda}\cap T_{\beta\mu}$ and similarly for $q\circ f_{\alpha\lambda}$ and
 $q\circ f_{\beta\mu}$, we see that $f_{\alpha\lambda}$ and $f_{\beta\mu}$ coincide on
-$T_{\alpha\lambda}\cap T_{\beta\mu}$, q.e.d.
+$T_{\alpha\lambda}\cap T_{\beta\mu}$.
 
 \begin{lem}[3.2.6.3]
 \label{1.3.2.6.3}
 \oldpage[I]{107}
 Let $(U_\alpha)$ be an open cover of $X$, $(V_\lambda)$ an open cover of $Y$, and suppose
-that for each pair $(\alpha,\lambda)$, there exists a product of $U_\alpha$ and $V_\lambda$;
+that, for each pair $(\alpha,\lambda)$, there exists a product of $U_\alpha$ and $V_\lambda$;
 then there exists a product of $X$ and $Y$.
 \end{lem}
 
-Applying Lemma \sref{1.3.2.6.1} to the open sets $U_\alpha\cap U_\beta$ and
-$V_\lambda\cap V_\mu$, we see that there exists a product of $S$-preschemes induced
-respectively by $X$ and $Y$ on these open sets; in addition, the uniqueness of the product
-shows that, if we set $i=(\alpha,\lambda)$, $j=(\beta,\mu)$, then there is a canonical
+Applying Lemma~\sref{1.3.2.6.1} to the open sets $U_\alpha\cap U_\beta$ and
+$V_\lambda\cap V_\mu$, we see that there exists a product of $S$-preschemes induced,
+respectively, by $X$ and $Y$ on these open sets; in addition, the uniqueness of the product
+shows that, if we set $i=(\alpha,\lambda)$ and $j=(\beta,\mu)$, then there is a canonical
 isomorphism $h_{ij}$ (resp. $h_{ji}$) from this product to an $S$-prescheme $W_{ij}$
 (resp. $W_{ji}$) induced by $U_\alpha\times_S V_\lambda$ (resp. $U_\beta\times_S V_\mu$) on
-an open set; $f_{ij}=h_{ij}\circ h_{ji}^{-1}$ is then an isomorphism from $W_{ji}$ to
+an open set; then $f_{ij}=h_{ij}\circ h_{ji}^{-1}$ is an isomorphism from $W_{ji}$ to
 $W_{ij}$. In addition, for a third pair $k=(\gamma,\nu)$, we have
 $f_{ik}=f_{ij}\circ f_{jk}$ on
-$W_{ki}\cap W_{kj}$, as it follows from applying Lemma \sref{1.3.2.6.1} to
+$W_{ki}\cap W_{kj}$, by applying Lemma \sref{1.3.2.6.1} to
 the open sets $U_\alpha\cap U_\beta\cap U_\gamma$ and $V_\lambda\cap V_\mu\cap V_\nu$ in
 $U_\beta$ and $V_\mu$, respectively. It follows that we have a prescheme $Z$, an open cover
-$(Z_i)$ of the underlying space of $Z$, and for each $i$ and isomorphism $g_i$ from the
+$(Z_i)$ of the underlying space of $Z$, and, for each $i$, an isomorphism $g_i$ from the
 induced prescheme
-$Z_i$ to the prescheme $U_\alpha\times_S V_\lambda$, so that for each pair $(i,j)$, we have
+$Z_i$ to the prescheme $U_\alpha\times_S V_\lambda$, so that, for each pair $(i,j)$, we have
 $f_{ij}=g_i\circ g_j^{-1}$ \sref{1.2.3.1}; in addition, we have $g_i(Z_i\cap Z_j)=W_{ij}$.
-If $p_i$, $q_i$, $\theta_i$ are the projections and the structure morphism of the
-$S$-prescheme $U_\alpha\times_S V_\lambda$, we immediately note that
+If $p_i$, $q_i$, and $\theta_i$ are the projections and the structure morphism of the
+$S$-prescheme $U_\alpha\times_S V_\lambda$ (respectively), we immediately see that
 $p_i\circ g_i=p_j\circ g_j$ on $Z_i\cap Z_j$, and similarly for the two other morphisms. We
 can thus define the morphisms of preschemes $p:Z\to X$ (resp. $q:Z\to Y$, $\theta:Z\to S$) by
 the condition that $p$ (resp. $q$, $\theta$) coincide with $p_i\circ g_i$
@@ -207,72 +207,70 @@ the condition that $p$ (resp. $q$, $\theta$) coincide with $p_i\circ g_i$
 $\theta$, is then an $S$-prescheme. We now show that
 $Z_i'=p^{-1}(U_\alpha)\cap q^{-1}(V_\lambda)$ is equal to $Z_i$. For each index
 $j=(\beta,\mu)$, we have $Z_j\cap Z_i'=g_j^{-1}(p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda))$.
-We have
+We have, by Lemma~\sref{1.3.2.6.1},
 \[
   p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)
   =p_j^{-1}(U_\alpha\cap U_\beta)\cap q_j^{-1}(V_\lambda\cap V_\mu);
 \]
-according to Lemma \sref{1.3.2.6.1}, the restrictions of $p_j$ and $q_j$ to
-$p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)$ define on this $S$-prescheme the structure of a
+with the restrictions of $p_j$ and $q_j$ to
+$p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)$ defining, on this $S$-prescheme, the structure of a
 product of $U_\alpha\cap U_\beta$ and $V_\lambda\cap V_\mu$; but the uniqueness of the
-product then implies that $p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)=W_{ji}$. As a result we
+product then implies that $p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)=W_{ji}$. As a result, we
 have $Z_j\cap Z_i'=Z_j\cap Z_i$ for each $j$, hence $Z_i'=Z_i$. We then deduce from
-Lemma \sref{1.3.2.6.2} that $(Z,p,q)$ is a product of $X$ and $Y$.
+Lemma~\sref{1.3.2.6.2} that $(Z,p,q)$ is a product of $X$ and $Y$.
 
 \begin{lem}[3.2.6.4]
 \label{1.3.2.6.4}
-Let $\vphi:X\to S$, $\psi:Y\to S$ be the structure morphisms of $X$ and $Y$, $(S_i)$ and open
-cover of $S$, and set $X_i=\vphi^{-1}(S_i)$, $Y_i=\psi^{-1}(S_i)$. If each of the products
+Let $\vphi:X\to S$ and $\psi:Y\to S$ be the structure morphisms of $X$ and $Y$, $(S_i)$ an open
+cover of $S$, and let $X_i=\vphi^{-1}(S_i)$, $Y_i=\psi^{-1}(S_i)$. If each of the products
 $X_i\times_S Y_i$ exists, then $X\times_S Y$ exists.
 \end{lem}
 
-According to Lemma \sref{1.3.2.6.3}, everything comes down to proving that the products
+According to Lemma~\sref{1.3.2.6.3}, everything follows from proving that the products
 $X_i\times_S Y_i$ exists for any $i$ and $j$. Set
 $X_{ij}=X_i\cap X_j=\vphi^{-1}(S_i\cap S_j)$, $Y_{ij}=Y_i\cap Y_j=\psi^{-1}(S_i\cap S_j)$;
-according to Lemma \sref{1.3.2.6.1}, the product $Z_{ij}=X_{ij}\times_S Y_{ij}$ exists. We now
-note that if $T$ is an $S$-prescheme and if $g:T\to X_i$, $h:T\to Y_j$ are $S$-morphisms,
-then we necessarily have that $\vphi(g(T))=\psi(h(T))\subset S_i\cap S_j$ according to the
-definition of an $S$-morphisms, thus $g(T)\subset X_{ij}$ and $h(T)\subset Y_{ij}$; it is
+by Lemma~\sref{1.3.2.6.1}, the product $Z_{ij}=X_{ij}\times_S Y_{ij}$ exists. We now
+note that, if $T$ is an $S$-prescheme, and if $g:T\to X_i$ and $h:T\to Y_j$ are $S$-morphisms,
+then we necessarily have that $\vphi(g(T))=\psi(h(T))\subset S_i\cap S_j$ by the
+definition of an $S$-morphism, and thus that $g(T)\subset X_{ij}$ and $h(T)\subset Y_{ij}$; it is
 then immediate that $Z_{ij}$ is the product of $X_i$ and $Y_j$.
 
 \begin{env}[3.2.6.5]
 \label{1.3.2.6.5}
-We can now complete the proof of Theorem \sref{1.3.2.6}. If $S$ is an \emph{affine
-scheme}, there are covers $(U_\alpha)$, $(V_\lambda)$ of $X$ and $Y$ respectively,
-consisting of affine opens; as $U_\alpha\times_S V_\lambda$ exists according to
-\sref{1.3.2.2}, there similarly exists $X\times_S Y$ by Lemma \sref{1.3.2.6.3}. If $S$
-is any prescheme, there is a cover $(S_i)$ of $S$ consisting of affine opens. If
-$\vphi:X\to S$, $\psi:Y\to S$ are the structure morphisms, and if we set
-$X_i=\vphi^{-1}(S_i)$, $Y_i=\psi^{-1}(S_i)$, the products $X_i\times_{S_i}Y_i$ exist
-according to the
+We can now complete the proof of Theorem~\sref{1.3.2.6}. If $S$ is an \emph{affine
+scheme}, then there are covers $(U_\alpha)$ and $(V_\lambda)$ of $X$ and $Y$ (respectively)
+consisting of affine open subsets; since $U_\alpha\times_S V_\lambda$ exists, by
+\sref{1.3.2.2}, $X\times_S Y$ exists similarly, by Lemma~\sref{1.3.2.6.3}. If $S$
+is any prescheme, then there is a cover $(S_i)$ of $S$ consisting of affine open subsets. If
+$\vphi:X\to S$ and $\psi:Y\to S$ are the structure morphisms, and if we set
+$X_i=\vphi^{-1}(S_i)$ and $Y_i=\psi^{-1}(S_i)$, then the products $X_i\times_{S_i}Y_i$ exist, by the
 \oldpage[I]{108}
 above; but then the products $X_i\times_S Y_i$ also exist \sref{1.3.2.5}, therefore
-$X\times_S Y$ similarly exists by Lemma \sref{1.3.2.6.4}.\qed
+$X\times_S Y$ exists similarly, by Lemma~\sref{1.3.2.6.4}.\qed
 \end{env}
 
 \begin{cor}[3.2.7]
 \label{1.3.2.7}
-Let $Z=X\times_S Y$ be the product of two $S$-preschemes, $p$, $q$ the projections from $Z$
-to $X$ and $Y$, $\vphi$ (resp. $\psi$) the structure morphism of $X$ (resp. $Y$). Let $S'$ be
-an open subset of $S$, $U$ (resp. $V$) an open subset of $X$ (resp. $Y$) contained in
-$\vphi^{-1}(S')$ (resp. $\psi^{-1}(S')$). Then the product $U\times_{S'}V$ canonically
-identifies with the prescheme induced on $Z$ by $p^{-1}(U)\cap q^{-1}(V)$ (considered as a
-$S'$-prescheme). In addition, if $f:T\to X$, $g:T\to Y$ are $S$-morphisms such that
-$f(T)\subset U$, $g(T)\subset V$, the $S'$-morphism $(f,g)_{S'}$ identifies with the
+Let $Z=X\times_S Y$ be the product of two $S$-preschemes, $p$ and $q$ the projections from $Z$
+to $X$ and to $Y$ (respectively),and  $\vphi$ (resp. $\psi$) the structure morphism of $X$ (resp. $Y$). Let $S'$ be
+an open subset of $S$, and $U$ (resp. $V$) an open subset of $X$ (resp. $Y$) contained in
+$\vphi^{-1}(S')$ (resp. $\psi^{-1}(S')$). Then the product $U\times_{S'}V$ is canonically
+identified with the prescheme induced on $Z$ by $p^{-1}(U)\cap q^{-1}(V)$ (considered as an
+$S'$-prescheme). In addition, if $f:T\to X$ and $g:T\to Y$ are $S$-morphisms such that
+$f(T)\subset U$ and $g(T)\subset V$, then the $S'$-morphism $(f,g)_{S'}$ can be identified with the
 restriction of $(f,g)_S$ to $p^{-1}(U)\cap q^{-1}(V)$.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.3.2.7}
-This follows from Corollary \sref{1.3.2.5} and Lemma \sref{1.3.2.6.1}.
+This follows from Corollary~\sref{1.3.2.5} and Lemma~\sref{1.3.2.6.1}.
 \end{proof}
 
 \begin{env}[3.2.8]
 \label{1.3.2.8}
-Let $(X_\alpha)$, $(Y_\lambda)$ be two familes of $S$-preschemes, $X$ (resp. $Y$) the sum
-of the family $(X_\alpha)$ (resp. $(Y_\lambda)$) (3.1). Then $X\times_S Y$ identifies with
-the \emph{sum} of the family $(X_\alpha\times_S Y_\lambda)$; this follows immediately from
-Lemma \sref{1.3.2.6.3}.
+Let $(X_\alpha)$ and $(Y_\lambda)$ be families of $S$-preschemes, and $X$ (resp. $Y$) the sum
+of the family $(X_\alpha)$ (resp. $(Y_\lambda)$) \hyperref[subsection:sums-of-preschemes]{(3.1)}. Then $X\times_S Y$ can be identified with
+the \emph{sum} of the family $(X_\alpha\times_S Y_\lambda)$; this follows immediately from Lemma~\sref{1.3.2.6.3}.
 \end{env}
 
 \begin{env}[3.2.9]
@@ -282,8 +280,8 @@ Lemma \sref{1.3.2.6.3}.
 It follows from \sref{1.1.8.1} that we can state \sref{1.3.2.2} in the following
 manner: $Z=\Spec(B\otimes_A C)$ is not only a product of $X=\Spec(B)$ and $Y=\Spec(C)$ in the
 category of \emph{$S$-preschemes}, but also in the category of \emph{locally ringed spaces
-over $S$} (with a definition of $S$-morphisms modeled on that of \sref{1.2.5.2}). The
-proof of \sref{1.3.2.6} also proves that for any two $S$-preschemes $X$, $Y$, the
+over $S$} (with a definition of $S$-morphisms modelled on that of \sref{1.2.5.2}). The
+proof of \sref{1.3.2.6} also proves that, for any two $S$-preschemes $X$ and $Y$, the
 prescheme $X\times_S Y$ is not only the product of $X$ and $Y$ in the category of
 $S$-preschemes, but also in the category of locally ringed spaces over the prescheme $S$.
 \end{env}
