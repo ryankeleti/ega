@@ -1,3 +1,78 @@
 \section{Finiteness theorem for proper morphisms}
 \label{section:finiteness-theorem-for-proper-morphisms}
 
+\subsection{The d\'evissage lemma}
+\label{subsection:devissage-lemma}
+
+\begin{defn}[3.1.1]
+\label{3.3.1.1}
+Let $\C$ be an abelian category.
+We say that a subset $\C'$ of the set of objects of $\C$ is \emph{exact} if $0\in\C'$ and if, for every exact sequence $0\to A'\to A\to A''\to 0$ in $\C$ such that two of the objects $A$, $A'$, $A''$ are in $\C'$, then the third is also in $\C'$.
+\end{defn}
+
+\begin{thm}[3.1.2]
+\label{3.3.1.2}
+Let $X$ be a Noetherian prescheme; we denote by $\C$ the abelian category of coherent $\OO_X$-modules.
+Let $\C'$ be an exact subset of $\C$, $X'$ a closed subset of the underlying space of $X$.
+Suppose that for every closed irreducible subset $Y$ of $X'$, with generic point $y$, there exists a $\OO_X$-module $\sh{G}\in\C'$ such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
+Then every coheren $\OO_X$-module with support contained in $X'$ is in $\C'$ (and in particular, if $X'=X$, then we have $\C'=\C$).
+\end{thm}
+
+\begin{proof}
+\label{proof-3.3.1.2}
+Consider the following property $\textbf{P}(Y)$ of a closed subset $Y$ of $X'$: every coherent $\OO_X$-module with support contained in $Y$ is in $\C'$.
+By virtue of the principle of Noetherian induction \sref[0]{0.2.2.2}, we see that we can reduce to showing that \emph{if $Y$ is a closed subset of $X'$ such that the property $\textbf{P}(Y')$ is true for every closed subset $Y'$ of $Y$, distinct from $Y$, then $\textbf{P}(Y)$ is true}.
+
+Therefore, let $\sh{F}\in\C$ have support contained in $Y$, and we show that $\sh{F}\in\C'$.
+Denote also by $Y$ the reduced closed subprescheme of $X$ having $Y$ for its underlying space \sref[I]{1.5.2.1}; it is defined by a coherent sheaf of ideals $\sh{J}$ of $\OO_X$.
+We know \sref[I]{1.9.3.4} that there exists an integer $n>0$ such that $\sh{J}^n\sh{F}=0$; for $1\leq k\leq n$, we thus have an exact sequence
+\[
+  0\to\sh{J}^{k-1}\sh{F}/\sh{J}^k\sh{F}\to\sh{F}/\sh{J}^k\sh{F}\to\sh{F}/\sh{J}^{k-1}\sh{F}\to 0
+\]
+ of coherent $\OO_X$-modules (\sref[I]{1.5.3.6} and \sref[I]{1.5.3.3}); as $\C'$ is exact, we see, by induction on $k$, that it suffices to show that each of the $\sh{F}_k=\sh{J}^{k-1}\sh{F}/\sh{J}^k\sh{F}$ is in $\C'$.
+We thus reduce to proving that $\sh{F}\in\C'$ under the additional hypothesis that $\sh{J}\sh{F}=0$; it is equivalent to say that $\sh{F}=j_*(j^*(\sh{F}))$, where $j$ is the canonical injection $Y\to X$.
+Let us now consider two cases:
+\begin{enumerate}[label=(\alph*)]
+  \item $Y$ is \emph{reducible}.
+    Let $Y=Y'\cap Y''$, where $Y'$ and $Y''$ are closed subsets of $Y$, distinct from $Y$; denote also by $Y'$ and $Y''$ the reduced closed subpreschemes of $X$ having $Y$ and $Y''$ for their respective underlying spaces, which are defined respectively by sheaves of ideals $\sh{J}'$ and $\sh{J}''$ of $\OO_X$.
+    Set $\sh{F}'=\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J}')$ and $\sh{F}''=\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J}'')$.
+    The canonical homomorphisms $\sh{F}\to\sh{F}'$ and $\sh{F}\to\sh{F}''$ thus define a homomorphism $u:\sh{F}\to\sh{F}'\oplus\sh{F}''$.
+    We show that for every $z\not\in Y'\cap Y''$, the homomorphism $u_z:\sh{F}_z\to\sh{F}_z'\oplus\sh{F}_z''$ is \emph{bijective}.
+    Indeed, we have $\sh{J}'\cap\sh{J}''=\sh{J}$, since the question is local and
+\oldpage{116}
+    the above equality follows from (\sref[I]{1.5.2.1} and \sref[I]{1.1.1.5}); if $z\not\in Y''$, then we have $\sh{J}_z'=\sh{J}_z$, hence $\sh{F}_z'=\sh{F}_z$ and $\sh{F}_z''=0$, which establishes our assertion in this case; we reason similarly for $z\not\in Y'$.
+    As a result, the kernel and cokernel of $u$, which are in $\C$ \sref[0]{0.5.3.4}, have their support in $Y'\cap Y''$, and thus is in $\C'$ by hypothesis; for the same reason, $\sh{F}'$ and $\sh{F}''$ are in $\C'$, hence also $\sh{F}'\oplus\sh{F}''$, as $\C'$ is exact.
+    The conclusion then follows from the consideration of the two exact sequences
+    \[
+      0\to\Im u\to\sh{F}'\oplus\sh{F}''\to\Coker u\to 0,
+    \]
+    \[
+      0\to\Ker u\to\sh{F}\to\Im u\to 0,
+    \]
+    and the hypothesis that $\C'$ is exact.
+  \item $Y$ is irreducible, and as a result, the subprescheme $Y$ of $X$ is \emph{integral}.
+    If $y$ is its generic point, then we have $(\OO_Y)_y=\kres(y)$, and as $j^*(\sh{F})$ is a coherent $\OO_Y$-module, $\sh{F}_y=(j^*(\sh{F}))_y$ is a $\kres(y)$-vector space of finite dimension~$m$.
+    By hypothesis, there is a coherent $\OO_X$-module $\sh{G}$ (necessarily of support $Y$) such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
+    As a result, there is a $\kres(y)$-isomorphism $(\sh{G}_y)^m\isoto\sh{F}_y$, which is also an $\OO_Y$-isomorphism, and as $\sh{G}^m$ and $\sh{F}$ are coherent, there exists an open neighborhood $W$ of $y$ in $X$ and an isomorphism $\sh{G}^m|W\isoto\sh{F}|W$ \sref[0]{0.5.2.7}.
+    Let $\sh{H}$ be the graph of this isomorphism, which is a coherent $(\OO_X|W)$-submodule of $(\sh{G}^m\oplus\sh{F})|W$, canonically isomorphic to $\sh{G}^m|W$ and to $\sh{F}|W$; there thus exists a coherent $\OO_X$-submodule $\sh{H}_0$ of $\sh{G}^m\oplus\sh{F}$, inducing $\sh{H}$ on $W$ and $0$ on $X\setmin Y$, since $\sh{G}^m$ and $\sh{F}$ have $Y$ for their support \sref[I]{1.9.4.7}.
+    The restrictions $v:\sh{H}_0\to\sh{G}^m$ and $w:\sh{H}_0\to\sh{F}$ of the canonical projections of $\sh{G}^m\oplus\sh{F}$ are then homomorphisms of coherent $\OO_X$-modules, which, on $W$ and on $X\setmin Y$, reduce to isomorphisms; in other words, the kernels and cokernels of $v$ and $w$ have their suppoer in the closed set $Y\setmin(Y\cap W)$, distinct from $Y$.
+    They are in $\C'$; on the other hand, we have $\sh{G}^m\in\C'$ since $\sh{G}\in\C'$ and since $\C'$ is exact.
+    We conclude successively, by the exactness of $\C'$, that $\sh{H}_0\in\C'$, then $\sh{F}\in\C'$.
+Q.E.D.
+\end{enumerate}
+\end{proof}
+
+\begin{cor}[3.1.3]
+\label{3.3.1.3}
+Suppose that the exact subset $\C'$ of $\C$ has in addition the property that any coherent direct factor of a coherent $\OO_X$-module $\sh{M}\in\C'$ is also in $\C'$.
+In this case, the conclusion of Theorem~\sref{3.3.1.2} is still valid when the condition ``$\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$'' is replaced by $\sh{G}_y\neq 0$ (this is equivalent to $\Supp(\sh{G})=Y$).
+\end{cor}
+
+\begin{proof}
+\label{proof-3.3.1.3}
+The reasoning of Theorem~\sref{3.3.1.2} must be modifies only in the case~(b); now $\sh{G}_y$ is a $\kres(y)$-vector space of dimension $q>0$, and as a result, we have an $\OO_Y$-isomorphism $(\sh{G}_y)^m\isoto(\sh{F}_y)^q$; the end of the reasoning in Theorem~\sref{3.3.1.2} then proves that $\sh{F}^q\in\C'$, and the additional hypothesis on $\C'$ implies that $\sh{F}\in\C'$.
+\end{proof}
+
+\subsection{The finiteness theorem: the case of usual schemes}
+\label{subsection:finiteness-theorem-usual-case}
+
