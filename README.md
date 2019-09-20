@@ -27,7 +27,7 @@ All the PDFs are auto-compliled every hour if any changes have been made since t
 | | First draft | Proofreading |
 | ------ | ----------- | ------------ |
 | ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-46%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
-| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-60%25-yellow)|
+| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-green) | ![EGA1p](https://img.shields.io/badge/-70%25-yellowgreen)|
 | ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-20%25-red) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-3%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA4](https://img.shields.io/badge/EGA-4-lightgrey) | ![EGA4fd](https://img.shields.io/badge/-1%25-red) | ![EGA4p](https://img.shields.io/badge/-0%25-red)|
@@ -68,7 +68,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 2. Preschemes and their morphisms _(@thosgood / proofread by @thosgood)_
     + [x] 3. Products of preschemes _(@thosgood, @ryankeleti / proofread by @thosgood)_
     + [x] 4. Subpreschemes and immersions _(@ryankeleti / proofread by @thosgood)_
-    + [x] 5. Reduced preschemes; separation condition _(@thosgood)_
+    + [x] 5. Reduced preschemes; separation condition _(@thosgood / proofread by @thosgood)_
     + [x] 6. Finiteness conditions _(@thosgood)_
     + [x] 7. Rational maps _(@thosgood)_
     + [x] 8. Chevalley schemes _(@thosgood / proofread by @thosgood)_

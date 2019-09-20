@@ -606,8 +606,8 @@ finally, if we assume that the conclusion of \sref{1.5.4.6} is true for the $Y$ 
 \begin{enumerate}[label=\emph{(\roman*)}]
     \item Every monomorphism of preschemes (and, in particular, every immersion) is a separated morphism.
     \item The composition of any two separated morphisms is separated.
-    \item If $f:X\to X'$ and $g:Y\to Y'$ are two separated $S$-morphisms, then $f\times_S g$ is separated.
-    \item If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated, for every extension $S'\to S$ of the base prescheme.
+    \item If $f:X\to X'$ and $g:Y\to Y'$ are separated $S$-morphisms, then $f\times_S g$ is separated.
+    \item If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated for every extension $S'\to S$ of the base prescheme.
     \item If the composition $g\circ f$ is separated, then $f$ is separated.
     \item For a morphism $f$ to be separated, it is necessary and sufficient for $f_\red$ \sref{1.5.1.5} to be separated.
 \end{enumerate}
@@ -617,15 +617,16 @@ finally, if we assume that the conclusion of \sref{1.5.4.6} is true for the $Y$ 
 \label{proof-1.5.5.1}
 Note that (i) is an immediate consequence of \sref{1.5.3.8}.
 If $f:X\to Y$ and $g:Y\to Z$ are morphisms, then the diagram
-\[
+\begin{equation*}
+\label{1.5.5.1.1}
   \xymatrix{
     X\ar[rr]^{\Delta_{X|Z}}\ar[dr]_{\Delta_{X|Y}} & &
     X\times_Z X\\
     & X\times_Y X\ar[ur]_j
   }
   \tag{5.5.1.1}
-\]
-where $j$ denotes the canonical immersion \sref{1.5.3.10} is commutative, as can be immediately verified.
+\end{equation*}
+commutes (where $j$ denotes the canonical immersion \sref{1.5.3.10}), as can be immediately verified.
 If $f$ and $g$ are separated, then $\Delta_{X|Y}$ is a closed immersion by definition, and $j$ is a closed immersion by \sref{1.5.4.2}, whence $\Delta_{X|Z}$ is a closed immersion by \sref{1.4.2.4}, which
 \oldpage[I]{137}
 proves (ii).
@@ -634,8 +635,8 @@ But $X_{(S')}\times_{Y_{(S')}}X_{(S')}$ is canonically identified with $(X\times
 the proposition then follows from \sref{1.4.3.1}.
 
 To prove (v), consider, as in \sref{1.5.3.13}, the factorisation $X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y$ of $f$, noting that $p_2=(g\circ f)\times_Z 1_Y$;
-the hypothesis (that $g\circ f$ is separated) implies that $g_2$ is separated, by (iii) and (i), and since $\Gamma_f$ is an immersion, $\Gamma_f$ is separated, by (i), whence $f$ is separated, by (ii).
-Finally, to prove (vi), recall that the preschemes $X_\red\times_{Y_\red}X_\red$ and $X_\red\times_Y X_\red$ are canonically identified \sref{1.5.1.7};
+the hypothesis (that $g\circ f$ is separated) implies that $g_2$ is separated, by (iii) and (i), and, since $\Gamma_f$ is an immersion, $\Gamma_f$ is separated, by (i), whence $f$ is separated, by (ii).
+Finally, to prove (vi), recall that the preschemes $X_\red\times_{Y_\red}X_\red$ and $X_\red\times_Y X_\red$ are canonically identified with one another \sref{1.5.1.7};
 if we denote by $j$ the injection $X_\red\to X$, then the diagram
 \[
   \xymatrix{
@@ -645,7 +646,7 @@ if we denote by $j$ the injection $X_\red\to X$, then the diagram
     X\times_Y X
   }
 \]
-commutes \sref{1.5.3.15}, and the proposition follows from the fact that the vertical arrows are the homeomorphisms of the underlying spaces \sref{1.4.3.1}.
+commutes \sref{1.5.3.15}, and the proposition follows from the fact that the vertical arrows are homeomorphisms of the underlying spaces \sref{1.4.3.1}.
 \end{proof}
 
 \begin{cor}[5.5.2]
@@ -655,7 +656,7 @@ If $f:X\to Y$ is separated, then the restriction of $f$ to any subprescheme of $
 
 \begin{proof}
 \label{proof-1.5.5.2}
-This follows from \hyperref[1.5.5.1]{(5.5.1, (i) and (ii))}.
+This follows from \sref{1.5.5.1}[i and ii].
 \end{proof}
 
 \begin{cor}[5.5.3]
@@ -672,22 +673,22 @@ This is a particular case of \sref{1.5.5.1}[iv].
 \label{1.5.5.4}
 Let $X$ be a prescheme, and assume that its underlying space is a \emph{finite} union of closed subsets $X_k$ ($1\leq k\leq n$);
 for each $k$, consider the reduced subprescheme of $X$ that has $X_k$ as its underlying space \sref{1.5.2.1}, and denote this again by $X_k$.
-Let $f:X\to Y$ be a morphism, and for each $k$, let $Y_k$ be a closed subset of $Y$ such that $f(X_k)\subset Y_k$;
+Let $f:X\to Y$ be a morphism, and, for each $k$, let $Y_k$ be a closed subset of $Y$ such that $f(X_k)\subset Y_k$;
 we again denote by $Y_k$ the reduced subprescheme of $Y$ that has $Y_k$ as its underlying space, so that the restriction $X_k\to Y$ of $f$ to $X_k$ factors as $X_k\xrightarrow{f_k}Y_k\to Y$ \sref{1.5.2.2}.
-For $f$ to be separated, it is necessary and sufficient for the $f_k$ to be separated.
+For $f$ to be separated, it is necessary and sufficient for all the $f_k$ to be separated.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.5.5.4}
-The necessity follows from \hyperref[1.5.5.1]{(5.5.1, (i), (ii), and (v))}.
+The necessity follows from \sref{1.5.5.1}[i, ii, and v].
 Conversely, if the condition of the statement is satisfied, then each of the restrictions $X_k\to Y$ of $f$ is separated \hyperref[1.5.5.1]{(5.5.1, (i) and (ii))};
-if $p_1$ and $p_2$ are the projections of $X\times_Y X$, then the subspace $\Delta_{X_k}(X_k)$ is identified with the subspace $\Delta_X(X)\cap p_1^{-1}(X_k)$ of the underlying space of $X\times_Y X$ \sref{1.5.3.16};
+if $p_1$ and $p_2$ are the projections of $X\times_Y X$, then the subspace $\Delta_{X_k}(X_k)$ can be identified with the subspace $\Delta_X(X)\cap p_1^{-1}(X_k)$ of the underlying space of $X\times_Y X$ \sref{1.5.3.16};
 these subspaces are closed in $X\times_Y X$, and thus so too is their union $\Delta_X(X)$.
 \end{proof}
 
 Suppose, in particular, that the $X_k$ are the \emph{irreducible components} of $X$;
 then we can suppose that the $Y_k$ are the irreducible components of $Y$ \sref[0]{0.2.1.5};
-prop.~\sref{1.5.5.4} then, in this case, leads to the idea of separation in the case of \emph{integral} preschemes \sref{1.2.1.7}.
+Proposition~\sref{1.5.5.4} then, in this case, leads to the idea of separation in the case of \emph{integral} preschemes \sref{1.2.1.7}.
 
 \oldpage[I]{138}
 \begin{prop}[5.5.5]
@@ -698,16 +699,16 @@ for a morphism $f:X\to Y$ to be separated, it is necessary and sufficient for ea
 
 \begin{proof}
 \label{proof-1.5.5.5}
-If we set $X_\lambda=f^{-1}(Y_\lambda)$, everything relies, taking \sref{1.4.2.4}[b] and the identification of the products $X_\lambda\times_Y X_\lambda$ and $X_\lambda\times_{Y_\lambda}X_\lambda$, on proving that the $X_\lambda\times_Y X_\lambda$ form a cover of $X\times_Y X$.
-But if we set $Y_{\lambda\mu}=Y_\lambda\cap Y_\mu$ and $X_{\lambda\mu}=X_\lambda\cap X_\mu=f^{-1}(Y_{\lambda\mu})$, then $X_\lambda\times_Y X_\mu$ can be identified with the product $X_{\lambda\mu}\times_{Y_{\lambda\mu}}X_{\lambda\mu}$ \hyperref[1.3.2.6]{(3.2.6.4)}, and so also with $X_{\lambda\mu}\times_Y X_{\lambda\mu}$ \sref{1.3.2.5}, and finally with an open subset of $X_\lambda\times_Y X_\lambda$, which proves our claim \sref{1.3.2.7}.
+If we set $X_\lambda=f^{-1}(Y_\lambda)$, everything reduces, by taking \sref{1.4.2.4}[b] and the identification of the products $X_\lambda\times_Y X_\lambda$ and $X_\lambda\times_{Y_\lambda}X_\lambda$ into account, to proving that the $X_\lambda\times_Y X_\lambda$ form a cover of $X\times_Y X$.
+But if we set $Y_{\lambda\mu}=Y_\lambda\cap Y_\mu$ and $X_{\lambda\mu}=X_\lambda\cap X_\mu=f^{-1}(Y_{\lambda\mu})$, then $X_\lambda\times_Y X_\mu$ can be identified with the product $X_{\lambda\mu}\times_{Y_{\lambda\mu}}X_{\lambda\mu}$ \sref{1.3.2.6.4}, and so also with $X_{\lambda\mu}\times_Y X_{\lambda\mu}$ \sref{1.3.2.5}, and finally with an open subset of $X_\lambda\times_Y X_\lambda$, which proves our claim \sref{1.3.2.7}.
 \end{proof}
 
-Prop.~\sref{1.5.5.4} allows us, by taking an affine open cover of $Y$, to restrict our study of separated morphisms to only those that take values in affine schemes.
+Proposition~\sref{1.5.5.4} allows us, by taking an affine open cover of $Y$, to restrict our study of separated morphisms to just those that take values in affine schemes.
 
 \begin{prop}[5.5.6]
 \label{1.5.5.6}
 Let $Y$ be an \emph{affine} scheme, $X$ a prescheme, and $(U_\alpha)$ a cover of $X$ by affine open subsets.
-For a morphism $f:X\to Y$ to be separated, it is necessary and sufficient for $U_\alpha\cap U_\beta$ to be an affine open subset for every pair of indices $(\alpha,\beta)$, and for the ring $\Gamma(U_\alpha\cap U_\beta,\OO_X)$ to be generated by the union of the canonical images of the rings $\Gamma(U_\alpha,\OO_X)$ and $\Gamma(U_\beta,\OO_X)$.
+For a morphism $f:X\to Y$ to be separated, it is necessary and sufficient for $U_\alpha\cap U_\beta$ to be, for every pair of indices $(\alpha,\beta)$, an affine open subset, \emph{and} for the ring $\Gamma(U_\alpha\cap U_\beta,\OO_X)$ to be generated by the union of the canonical images of the rings $\Gamma(U_\alpha,\OO_X)$ and $\Gamma(U_\beta,\OO_X)$.
 \end{prop}
 
 \begin{proof}
@@ -718,7 +719,7 @@ denoting the projections of $X\times_Y X$ by $p$ and $q$, we have
   \Delta_X^{-1}(U_\alpha\times_Y U_\beta)&=\Delta_X^{-1}(p^{-1}(U_\alpha)\cap q^{-1}(U_\beta))\\
                                          &=\Delta_X^{-1}(p^{-1}(U_\alpha))\cap\Delta_X^{-1}(q^{-1}(U_\beta))=U_\alpha\cap U_\beta;
 \end{align*}
-so everything relies on proving that the restriction of $\Delta_X$ to $U_\alpha\cap U_\beta$ is a closed immersion into $U_\alpha\times_Y U_\beta$.
+so everything reduces to proving that the restriction of $\Delta_X$ to $U_\alpha\cap U_\beta$ is a closed immersion into $U_\alpha\times_Y U_\beta$.
 But this restriction is exactly $(j_\alpha,j_\beta)_Y$, where $j_\alpha$ (resp. $j_\beta$) denotes the injection morphism from $U_\alpha\cap U_\beta$ to $U_\alpha$ (resp. $U_\beta$), as follows from the definitions.
 Since $U_\alpha\times_Y U_\beta$ is an affine scheme whose ring is canonically isomorphic to $\Gamma(U_\alpha,\OO_X)\otimes_{\Gamma(Y,\OO_Y)}\Gamma(U_\beta,\OO_X)$ \sref{1.3.2.2}, we see that $U_\alpha\cap U_\beta$ must be an affine scheme, and that the map $h_\alpha\otimes h_\beta\mapsto h_\alpha h_\beta$ from the ring $A(U_\alpha\times_Y U_\beta)$ to $\Gamma(U_\alpha\cap U_\beta,\OO_X)$ must be surjective \sref{1.4.2.3}, which finishes the proof.
 \end{proof}
@@ -736,7 +737,7 @@ for $f:X\to Y$ to be a separated morphism, it is necessary and sufficient for $X
 
 \begin{proof}
 \label{proof-1.5.5.8}
-We see indeed that the criteria of \sref{1.5.5.6} does not depend on $f$.
+Indeed, we see that the criteria of \sref{1.5.5.6} do not depend on $f$.
 \end{proof}
 
 \begin{cor}[5.5.9]
@@ -755,7 +756,7 @@ In particular, if $X$ and $Y$ are affine schemes, then \emph{every} morphism $X\
 \begin{prop}[5.5.10]
 \label{1.5.5.10}
 Let $Y$ be a \emph{scheme}, and $f:X\to Y$ a morphism.
-For every affine open subset $U$ of $X$ and every affine open subset $V$ of $Y$, $U\cap f^{-1}(V)$ is affine.
+For every affine open subset $U$ of $X$, and every affine open subset $V$ of $Y$, $U\cap f^{-1}(V)$ is affine.
 \end{prop}
 
 \begin{proof}
@@ -771,12 +772,12 @@ The proposition then follows from the fact that $\Gamma_f$ is an immersion.
 
 \begin{exm}[5.5.11]
 \label{1.5.5.11}
-The prescheme from example~\sref{1.2.3.2} (``the projective line over a field $K$'') is \emph{separated}, because, for the cover $(X_1,X_2)$ of $X$ by affine open subsets, $X_1\cap X_2=U_{12}$ is affine, and $\Gamma(U_{12},\OO_X)$, the ring of rational fractions of the form $f(s)/s^m$ with $f\in K[s]$, is generated by $K[s]$ and $1/s$, so the conditions of \sref{1.5.5.6} are satisfied.
+The prescheme from Example~\sref{1.2.3.2} (``the projective line over a field $K$'') is \emph{separated}, because, for the cover $(X_1,X_2)$ of $X$ by affine open subsets, $X_1\cap X_2=U_{12}$ is affine, and $\Gamma(U_{12},\OO_X)$, the ring of rational fractions of the form $f(s)/s^m$ with $f\in K[s]$, is generated by $K[s]$ and $1/s$, so the conditions of \sref{1.5.5.6} are satisfied.
 
-With the same choice of $X_1$, $X_2$, $U_{12}$, and $U_{21}$ as in example~\sref{1.2.3.2}, now take $u_{12}$ to be the isomorphism which sends $f(s)$ to $f(t)$;
+With the same choice of $X_1$, $X_2$, $U_{12}$, and $U_{21}$ as in Example~\sref{1.2.3.2}, now take $u_{12}$ to be the isomorphism which sends $f(s)$ to $f(t)$;
 we now obtain, by gluing, a \emph{non-separated integral} prescheme $X$, because the first condition of \sref{1.5.5.6} is satisfied, but not the second.
 It is immediate here that $\Gamma(X,\OO_X)\to\Gamma(X_1,\OO_X)=K[s]$ is an isomorphism;
-the inverse isomorphism defines a morphism $f:X\to\Spec(K[s])$ that is surjective, and for every $y\in\Spec(K[s])$ such that $\fk{j}_y\neq(0)$, $f^{-1}(y)$ reduces to a single point, but for $\fk{j}_y=(0)$, $f^{-1}(y)$ consists of \emph{two} distinct points (we say that $X$ is the ``affine line over $K$, where the point $0$ is doubled'').
+the inverse isomorphism defines a morphism $f:X\to\Spec(K[s])$ that is surjective, and for every $y\in\Spec(K[s])$ such that $\fk{j}_y\neq(0)$, $f^{-1}(y)$ consists of a single point, but for $\fk{j}_y=(0)$, $f^{-1}(y)$ consists of \emph{two} distinct points (we say that $X$ is the ``affine line over $K$ with the point $0$ doubled'').
 
 We can also give examples where \emph{neither} of the two conditions of \sref{1.5.5.6} are satisfied.
 First note that, in the prime spectrum $Y$ of the ring $A=K[s,t]$ of polynomials in two indeterminates over a field $K$, the open subset $U$ given by the union of $D(s)$ and $D(t)$ is \emph{not an affine open subset}.
@@ -785,7 +786,7 @@ If $U$ were an affine open subset, then the injection morphism $U\to Y$ would be
 
 With the above in mind, take two affine schemes $Y_1$ and $Y_2$, prime spectra of the rings $A_1=K[s_1,t_2]$ and $A_2=K[s_2,t_2]$ (respectively);
 take $U_{12}=D(s_1)\cup D(t_1)$ and $U_{21}=D(s_2)\cup D(t_2)$, and take $u_{12}$ to be the restriction of an isomorphism $Y_2\to Y_1$ to $U_{21}$ corresponding to the isomorphism of rings that sends $f(s_1,t_1)$ to $f(s_2,t_2)$;
-we then have an example where the conditions of \sref{1.5.5.6} are not satisfied (the integral prescheme thus obtained is called ``the affine plane over $K$, where the point $0$ is doubled'').
+we then have an example where the conditions of \sref{1.5.5.6} are not satisfied (the integral prescheme thus obtained is called ``the affine plane over $K$ with the point $0$ doubled'').
 \end{exm}
 
 \begin{rmk}[5.5.12]
@@ -804,7 +805,7 @@ If we suppose that (i) and (ii) are both true, then (iii) and (iv) are \emph{equ
 
 The first claim has already been shown \sref{1.3.5.1}.
 Consider the factorisation \sref{1.5.3.13} $X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y$ of $f$;
-the relation $p_2=(g\circ f)\times_Z 1_Y$ shows that, if $g\circ f$ has property~\textbf{P}, then so too is $p_2$, by (iii);
+the equation $p_2=(g\circ f)\times_Z 1_Y$ shows that, if $g\circ f$ has property~\textbf{P}, then so too does $p_2$, by (iii);
 if $g$ is separated, then $\Gamma_f$ is a closed immersion \sref{1.5.4.3}, and so also has property~\textbf{P}, by (i);
 finally, by (ii), $f$ has property~\textbf{P}.
 
@@ -817,7 +818,7 @@ Finally, consider the commutative diagram
     Y,
   }
 \]
-where the vertical arrows are the closed immersions \sref{1.5.1.5}, and so have property~\textbf{P}, by (i).
+where the vertical arrows are the closed immersions \sref{1.5.1.5}, and thus have property~\textbf{P}, by (i).
 The hypothesis that $f$ has property~\textbf{P} implies, by (ii), that $X_\red\xrightarrow{f_\red}Y_\red\to Y$ has property~\textbf{P};
 finally, since a closed immersion is separated \sref{1.5.5.1}[i], $f_\red$ has property~\textbf{P}, by (v).
 
