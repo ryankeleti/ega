@@ -344,7 +344,7 @@ commutes, and identifies $X$ with the product of the $(Y\times_S Y)$-preschemes 
 
 \begin{proof}
 \label{proof-1.5.3.7}
-It suffices to apply \sref{1.5.3.5}, replacing $S$ by $Y$ and $T$ by $S$, and noting that $X\times_Y Y=X$ \sref{1.3.3.3}.
+It suffices to apply \sref{1.5.3.5}, replacing $S$ by $Y$, and $T$ by $S$, and noting that $X\times_Y Y=X$ \sref{1.3.3.3}.
 \end{proof}
 
 \begin{prop}[5.3.8]
@@ -392,7 +392,7 @@ then the graph morphism $\Gamma_f=(1_X,f)_S$ of $f$ \sref{1.3.3.14} is an immers
 
 \begin{proof}
 \label{proof-1.5.3.11}
-This is a particular case of Corollary \sref{1.5.3.10}, where we replace $S$ by $Y$ and $T$ by $S$ (cf. \sref{1.5.3.7}).
+This is a particular case of Corollary \sref{1.5.3.10}, where we replace $S$ by $Y$, and $T$ by $S$ (cf. \sref{1.5.3.7}).
 \end{proof}
 
 \oldpage[I]{134}
@@ -513,9 +513,9 @@ the conclusion then follows from \sref{1.5.3.15}.
 \begin{defn}[5.4.1]
 \label{1.5.4.1}
 We say that a morphism of preschemes $f:X\to Y$ is separated if the diagonal morphism $X\to X\times_Y X$ is a \emph{closed} immersion;
-we then also say that $X$ is a separated prescheme over $Y$, or a $Y$-scheme.
+we then also say that $X$ is a \emph{separated prescheme over $Y$}, or a \emph{$Y$-scheme}.
 We say that a prescheme $X$ is separated if it is separated over $\Spec(\bb{Z})$;
-we then also say that $X$ is a scheme \emph{(cf. \sref{1.5.5.7})}.
+we then also say that $X$ is a \emph{scheme}\footnote{\emph{[Trans.] We repeat here the warning given at the very start of this translation: the early versions of the EGA use \emph{prescheme} to mean is now usually called a scheme, and \emph{scheme} for what is now usually called a separated scheme.}. Grothendieck himself later said that the more modern terminology was preferable, but we have decided to keep this translation `historically accurate' by using the older nomenclature.} \emph{(cf. \sref{1.5.5.7})}.
 \end{defn}
 
 By \sref{1.5.3.9}, for $X$ to be separated over $Y$, it is necessary and sufficient for $\Delta_X(X)$ to be a \emph{closed subspace} of the underlying space of $X\times_Y X$.
@@ -528,7 +528,7 @@ If $X$ and $Y$ are $S$-preschemes, then the canonical immersion $X\times_S Y\to 
 
 \begin{proof}
 \label{proof-1.5.4.2}
-Indeed, if we refer to diagram~\hyperref[1.5.3.5]{(5.3.5.1)}, we see that $(p,q)_T$ can be considered as being obtained from $\Delta_{S|T}$ by the extension $f\times_T g:X\times_T Y\to S\times_T S$ of the base prescheme $S\times_T S$;
+Indeed, if we refer to the diagram in \sref{1.5.3.5.1}, we see that $(p,q)_T$ can be considered as being obtained from $\Delta_{S|T}$ by the extension $f\times_T g:X\times_T Y\to S\times_T S$ of the base prescheme $S\times_T S$;
 the proposition then follows from \sref{1.4.3.2}.
 \end{proof}
 
@@ -540,7 +540,7 @@ Then the graph morphism $\Gamma_f:X\to X\times_S Y$ \sref{1.5.3.11} is a closed 
 
 \begin{proof}
 \label{proof-1.5.4.3}
-This is a particular case of \sref{1.5.4.2}, where we replace $S$ by $Y$ and $T$ by $S$.
+This is a particular case of \sref{1.5.4.2}, where we replace $S$ by $Y$, and $T$ by $S$.
 \end{proof}
 
 \begin{cor}[5.4.4]
@@ -558,7 +558,7 @@ The proof using \sref{1.5.4.3} is the same as that of \sref{1.5.3.13} using \sre
 \begin{cor}[5.4.5]
 \label{1.5.4.5}
 Let $Z$ be an $S$-scheme, and $j:X\to Y$ and $g:X\to Z$ $S$-morphisms.
-If $j$ is a closed immersion, then so too $(j,g)_S:X\to Y\times_S Z$.
+If $j$ is a closed immersion, then so too is $(j,g)_S:X\to Y\times_S Z$.
 \end{cor}
 
 \begin{proof}
@@ -592,9 +592,9 @@ It then follows from \sref{1.5.2.2} that $h$ factors as $S\to Z\to X\times_S X$,
 
 \begin{rmk}[5.4.8]
 \label{1.5.4.8}
-If we suppose, conversely, that the conclusion of \sref{1.5.4.3} is true when $f=1_Y$, we can conclude that $Y$ is separated over $S$;
-similarly, if we suppose that the conclusion of \sref{1.5.4.5} applies to the two morphisms $Y\xrightarrow{\Delta_Y}Y\times_Z Y\xrightarrow{p_1}Y$, we can conclude that $\Delta_Y$ is a closed immersion, and thus that $Y$ is separated over $Z$;
-finally, assuming that the conclusion of \sref{1.5.4.6} is true for the $Y$ section $\Delta_Y$ of the $Y$-prescheme $Y\times_S Y\to Y$ implies that $Y$ is separated over $S$.
+If we suppose, conversely, that the conclusion of \sref{1.5.4.3} is true when $f=1_Y$, then we can conclude that $Y$ is separated over $S$;
+similarly, if we suppose that the conclusion of \sref{1.5.4.5} applies to the two morphisms $Y\xrightarrow{\Delta_Y}Y\times_Z Y\xrightarrow{p_1}Y$, then we can conclude that $\Delta_Y$ is a closed immersion, and thus that $Y$ is separated over $Z$;
+finally, if we assume that the conclusion of \sref{1.5.4.6} is true for the $Y$ section $\Delta_Y$ of the $Y$-prescheme $Y\times_S Y\to Y$, then this implies that $Y$ is separated over $S$.
 \end{rmk}
 
 \subsection{Separation criteria}
