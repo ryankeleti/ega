@@ -260,19 +260,19 @@ we define the \emph{diagonal morphism} of $X$ in $X\times_S X$, denoted by $\Del
 \[
     p_1\circ\Delta_X=p_2\circ\Delta_X=1_X\tag{5.3.1.1}
 \]
-where $p_1$ and $p_2$ are the projections of $X\times_S X$ (def.~\sref{1.3.2.1}).
-If $f:T\to X$ and $g:T\to Y$ are $S$-morphisms, we can immediately see that
+where $p_1$ and $p_2$ are the projections of $X\times_S X$ (Definition~\sref{1.3.2.1}).
+If $f:T\to X$ and $g:T\to Y$ are $S$-morphisms, we immediately have that
 \[
     (f,g)_S=(f\times_S g)\circ\Delta_{T|S}.\tag{5.3.1.2}
 \]
 
-The reader will note that the preceding definition and the results stated in \sref{1.5.3.1} to \sref{1.5.3.8} are true in any category, \emph{provided that the products treated within exist in the category}.
+The reader will note that the preceding definition and the results stated in \sref{1.5.3.1} to \sref{1.5.3.8} are true in any category, \emph{provided that the products used within exist in the category}.
 \end{env}
 
 \begin{prop}[5.3.2]
 \label{1.5.3.2}
 Let $X$ and $Y$ be $S$-preschemes;
-if we make the canonic identification between $(X\times Y)\times(X\times Y)$ and $(X\times X)\times(Y\times Y)$, then the morphism $\Delta_{X\times Y}$ is identified with $\Delta_X\times\Delta_Y$.
+if we make the canonical identification between $(X\times Y)\times(X\times Y)$ and $(X\times X)\times(Y\times Y)$, then the morphism $\Delta_{X\times Y}$ is identified with $\Delta_X\times\Delta_Y$.
 \end{prop}
 
 \begin{proof}
@@ -315,7 +315,7 @@ commutes, and identifies $X\times_S Y$ with the product of the $(S\times_T S)$-p
 \begin{proof}
 \label{proof-1.5.3.5}
 By \sref{1.3.4.3}, we are led to proving the corresponding proposition \emph{in the category of sets}, replacing $X$, $Y$, and $S$ by $X(Z)_T$, $Y(Z)_T$, and $S(Z)_T$ (respectively), with $Z$ being an arbitrary $T$-prescheme.
-But in the category of sets, the proof is immediate and left to the reader.
+But, in the category of sets, the proof is immediate and left to the reader.
 \end{proof}
 
 \begin{cor}[5.3.6]
@@ -330,7 +330,7 @@ This follows from \sref{1.5.3.5} and \sref{1.3.3.4}.
 
 \begin{cor}[5.3.7]
 \label{1.5.3.7}
-If $f:X\to Y$ is an $S$-morphism then the diagram
+If $f:X\to Y$ is an $S$-morphism, then the diagram
 \[
   \xymatrix{
     X\ar[r]^{(1_X,f)_S}\ar[d]_f &
@@ -354,8 +354,8 @@ For $f:X\to Y$ to be a monomorphism of preschemes, it is necessary and sufficien
 
 \begin{proof}
 \label{1.5.3.8}
-Indeed, to say that $f$ is a monomorphism implies that, for every $Y$-prescheme $Z$, the corresponding map $f':X(Z)_Y\to Y(Z)_Y$ is an injection, and since $Y(Z)_Y$ reduces to a single element, this implies that $X(Z)_Y$ does too.
-But this can also be expressed by saying that $X(Z)_Y\times X(Z)_Y$ is canonically isomorphic to $X(Z)_Y$, and the former is exactly the set $(X\times_Y X)(Z)_Y$ \hyperref[1.3.4.3]{(3.4.3.1)}, which implies that $\Delta_{X|Y}$ is an isomorphism.
+Indeed, to say that $f$ is a monomorphism implies that, for every $Y$-prescheme $Z$, the corresponding map $f':X(Z)_Y\to Y(Z)_Y$ is an injection, and, since $Y(Z)_Y$ consists of a single element, this implies that $X(Z)_Y$ consists of a single element as well.
+But this can also be expressed by saying that $X(Z)_Y\times X(Z)_Y$ is canonically isomorphic to $X(Z)_Y$; the former is exactly the set $(X\times_Y X)(Z)_Y$ \hyperref[1.3.4.3]{(3.4.3.1)}, which implies that $\Delta_{X|Y}$ is an isomorphism.
 \end{proof}
 
 \begin{prop}[5.3.9]
@@ -366,7 +366,7 @@ The diagonal morphism $\Delta_X$ is an immersion from $X$ to $X\times_S X$.
 \begin{proof}
 \label{proof-1.5.3.9}
 Indeed, since the continuous maps $p_1$ and $\Delta_X$ from the underlying spaces are such that $p_1\circ\Delta_X$ is the identity, $\Delta_X$ is a homeomorphism from $X$ to $\Delta_X(X)$.
-Similarly, the composite homomorphism $\OO_x\to\OO_{\Delta_X(x)}\to\OO_x$ composed of the homomorphisms corresponding to $p_1$ and $\Delta_X$ is the identity, which means that the homomorphism corresponding to $\Delta_X$ is surjective;
+Similarly, the composite homomorphism $\OO_x\to\OO_{\Delta_X(x)}\to\OO_x$ (composed of the homomorphisms corresponding to $p_1$ and $\Delta_X$) is the identity, which means that the homomorphism corresponding to $\Delta_X$ is surjective;
 the proposition thus follows from \sref{1.4.2.2}.
 \end{proof}
 
@@ -400,7 +400,7 @@ The subprescheme of $X\times_S Y$ associated to the immersion $\Gamma_f$ \sref{1
 the subpreschemes of $X\times_S Y$ that are graphs of morphisms $X\to Y$ are characterised by the property that the restriction to such a subprescheme $G$ of the projection $p_1:X\times_S Y\to X$ is an \emph{isomorphism} $g$ from $G$ to $X$:
 $G$ is the the graph of the morphism $p_2\circ g^{-1}$, where $p_2$ is the projection $X\times_S Y\to Y$.
 
-When we take, in particular, $X=S$, then the $S$-morphisms $S\to Y$, that are nothing but the \emph{$S$-section} of $Y$ \sref{1.2.5.5}, are equal to their graph morphisms;
+When we take, in particular, $X=S$, then the $S$-morphisms $S\to Y$ (which are exactly the \emph{$S$-sections} of $Y$ \sref{1.2.5.5}) are equal to their graph morphisms;
 the subpreschemes of $Y$ that are the graphs of $S$-sections (in other words, those that are isomorphic to $S$ by the restriction of the structure morphism $Y\to S$) are then also called the \emph{images} of these sections, or, by an abuse of language, the \emph{$S$-sections} of $Y$.
 
 \begin{cor}[5.3.12]
@@ -411,7 +411,7 @@ then $\Gamma_{f'}$ is the inverse image of $\Gamma_f$ under $g$.
 
 \begin{proof}
 \label{proof-1.5.3.12}
-This is a particular case of formula \hyperref[1.3.3.10]{3.3.10.1}.
+This is a particular case of \sref{1.3.3.10.1}.
 \end{proof}
 
 \begin{cor}[5.3.13]
@@ -441,14 +441,15 @@ Indeed, if $p:Y\times_S Z\to Y$ is the projection onto the first component, then
 \begin{prop}[5.3.15]
 \label{1.5.3.15}
 If $f:X\to Y$ is an $S$-morphism, then the diagram
-\[
+\begin{equation*}
+\label{1.5.3.15.1}
   \xymatrix{
     X\ar[r]^{\Delta_X}\ar[d]_f &
     X\times_S X\ar[d]^{f\times_S f}\\
     Y\ar[r]^{\Delta_Y} &
     Y\times_S Y
-  }
-\]
+  }\tag{5.3.15.1}
+\end{equation*}
 commutes \emph{(in other words, $\Delta_X$ is a functorial morphism in the category of preschemes)}.
 \end{prop}
 
@@ -468,11 +469,10 @@ If $X$ is a subprescheme of $Y$, then the diagonal $\Delta_X(X)$ can be identifi
 
 \begin{proof}
 \label{proof-1.5.3.16}
-Apply \sref{1.5.3.15} to the injection morphism $f:X\to Y$;
-we then know that $f\times_S f$ is an immersion that identifies the underlying space of $X\times_S X$ with the subspace $p_1^{-1}(X)\cap p_2^{-1}(X)$ of $Y\times_S Y$ \sref{1.4.3.1};
+Applying \sref{1.5.3.15} to the injection morphism $f:X\to Y$, we see that $f\times_S f$ is an immersion that identifies the underlying space of $X\times_S X$ with the subspace $p_1^{-1}(X)\cap p_2^{-1}(X)$ of $Y\times_S Y$ \sref{1.4.3.1};
 further, if $z\in\Delta_Y(Y)\cap p_1^{-1}(X)$, then we have $z=\Delta_Y(y)$
 \oldpage[I]{135}
-and $y=p_1(z)\in X$, so $y=f(y)$, and $z=\Delta_Y(f(y))$ belongs to $\Delta_X(X)$ by the commutativity of diagram \hyperref[1.5.3.15]{(5.3.15.1)}.
+and $y=p_1(z)\in X$, so $y=f(y)$, and $z=\Delta_Y(f(y))$ belongs to $\Delta_X(X)$ by the commutativity of \sref{1.5.3.15.1}.
 \end{proof}
 
 \begin{cor}[5.3.17]
@@ -492,7 +492,7 @@ The two homomorphisms $\kres(x)\to\kres(y)$ corresponding to $f_i$ ($i=1,2$) def
     X
   }
 \]
-are commutative.
+commute.
 The diagram
 \[
   \xymatrix{
@@ -502,7 +502,7 @@ The diagram
     X\times_S X
   }
 \]
-is thus also commutative.
+thus also commutes.
 But it follows from the equality $g_1=g_2$ that the image under $(g_1,g_2)_S$ of the unique point of $\Spec(\kres(y))$ belongs to the diagonal of $\Spec(\kres(x))\times_S\Spec(\kres(x))$;
 the conclusion then follows from \sref{1.5.3.15}.
 \end{proof}
