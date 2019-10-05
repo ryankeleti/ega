@@ -173,8 +173,8 @@ Then the rational $k$-maps from $X$ to $Y$ can be identified with the geometric 
 
 \begin{env}[7.2.1]
 \label{1.7.2.1}
-Let $X$ and $Y$ be two preschemes, and $f$ rational map from $X$ to $Y$.
-We say that $f$ is \emph{defined at a point $x\in X$} if there exists an dense open subset $U$ of $X$ that contains $x$, and a morphism $U\to Y$ belonging to the equivalence class of $f$.
+Let $X$ and $Y$ be preschemes, and $f$ rational map from $X$ to $Y$.
+We say that $f$ is \emph{defined at a point $x\in X$} if there exists a dense open subset $U$ of $X$ that contains $x$, and a morphism $U\to Y$ belonging to the equivalence class of $f$.
 The set of points $x\in X$ where $f$ is defined is called the \emph{domain of definition} of $f$; it is clear that it is an open dense subset of $X$.
 \end{env}
 
@@ -182,7 +182,7 @@ The set of points $x\in X$ where $f$ is defined is called the \emph{domain of de
 \label{1.7.2.2}
 Let
 \oldpage[I]{159}
-$X$ and $Y$ be two $S$-preschemes, such that $X$ is reduced and $Y$ separated over $S$.
+$X$ and $Y$ be $S$-preschemes such that $X$ is reduced and $Y$ is separated over $S$.
 Let $f$ be a rational $S$-map from $X$ to $Y$, with domain of definition $U_0$.
 Then there exists exactly one $S$-morphism $U_0\to Y$ belonging to the class of $f$.
 \end{prop}
@@ -203,13 +203,13 @@ Then $f_1$ and $f_2$ agree on $U_1\cap U_2$.
 We can clearly restrict to the case where $X=U_1=U_2$.
 Since $X$ (and thus $V$) is reduced, $X$ is the smallest closed subprescheme of $X$ containing $V$ \sref{1.5.2.2}.
 Let $g=(f_1,f_2)_S:X\to Y\times_S Y$; since, by hypothesis, the diagonal $T=\Delta_Y(Y)$ is a closed subprescheme of $Y\times_S Y$, $Z=g^{-1}(T)$ is a closed subprescheme of $X$ \sref{1.4.4.1}.
-If $h:V\to Y$ is the common restriction of $f_1$ and $f_2$ to $V$, then the restriction of $g$ to $V$ is $g'=(h,h)_S$, which factors as $g'=\Delta_Y\circ h$; since $\Delta_Y^{-1}(T)=Y$, we have that $g'^{-1}(T)=V$, and so $Z$ is a closed subprescheme of $X$ inducing $V$, thus containing $V$, which leads to $Z=X$.
+If $h:V\to Y$ is the common restriction of $f_1$ and $f_2$ to $V$, then the restriction of $g$ to $V$ is $g'=(h,h)_S$, which factors as $g'=\Delta_Y\circ h$; since $\Delta_Y^{-1}(T)=Y$, we have that $g'^{-1}(T)=V$, and so $Z$ is a closed subprescheme of $X$ inducing $V$, thus containing $V$, which implies that $Z=X$.
 From the equation $g^{-1}(T)=X$, we deduce \sref{1.4.4.1} that $g$ factors as $\Delta_Y\circ f$, where $f$ is a morphism $X\to Y$, which implies, by the definition of the diagonal morphism, that $f_1=f_2=f$.
 \end{proof}
 
 It is clear that the morphism $U_0\to Y$ defined in \sref{1.7.2.2} is the unique morphism of the class $f$ that \emph{cannot be extended} to a morphism from an open subset of $X$ that strictly contains $U_0$.
 \emph{Under the hypotheses of \sref{1.7.2.2}}, we can thus \emph{identify} the rational maps from $X$ to $Y$ with the \emph{non-extendible} (to strictly larger open subsets) morphisms from dense open subsets of $X$ to $Y$.
-With this identification, prop.~\sref{1.7.2.2} leads to:
+With this identification, Proposition~\sref{1.7.2.2} leads to:
 
 \begin{cor}[7.2.3]
 \label{1.7.2.3}
@@ -219,7 +219,7 @@ Then there exists a canonical bijective correspondence between $S$-morphisms fro
 
 \begin{proof}
 \label{proof-1.7.2.3}
-By \sref{1.7.2.2}, for every $S$-morphism $f$ from $U$ to $Y$, there indeed exists exactly one rational $S$-map $\overline{f}$ from $X$ to $Y$ which extends $f$.
+By \sref{1.7.2.2}, for every $S$-morphism $f$ from $U$ to $Y$, there exists exactly one rational $S$-map $\overline{f}$ from $X$ to $Y$ which extends $f$.
 \end{proof}
 
 \begin{cor}[7.2.4]
@@ -230,7 +230,7 @@ If $\overline{f}$ is the rational $\bb{Z}$-map from $X$ to $Y$ that extends $f$,
 
 \begin{proof}
 \label{proof-1.7.2.4}
-Indeed, if $\vphi:X\to S$ and $\psi:Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, which follows from \sref{1.7.2.2.1}, since $f$ is an $S$-morphism.
+Indeed, if $\vphi:X\to S$ and $\psi:Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, but this follows from \sref{1.7.2.2.1}, since $f$ is an $S$-morphism.
 \end{proof}
 
 \begin{cor}[7.2.5]
@@ -249,7 +249,7 @@ have to show that $p\circ\overline{f}$ is the identity on the domain of definiti
 \begin{cor}[7.2.6]
 \label{1.7.2.6}
 Let $X$ be a reduced prescheme, and $U$ a dense open subset of $X$.
-Then there is a canonical bijective correspondence between sections of $\OO_X$ over $U$ and rational functions $s$ on $X$ defined at every point of $U$.
+Then there is a canonical bijective correspondence between sections of $\OO_X$ over $U$ and rational functions on $X$ defined at every point of $U$.
 \end{cor}
 
 \begin{proof}
@@ -260,24 +260,24 @@ Taking \sref{1.7.2.3}, \sref{1.7.1.2}, and \sref{1.7.1.3} into account, it suffi
 \begin{cor}[7.2.7]
 \label{1.7.2.7}
 Let $Y$ be a reduced prescheme, $f:X\to Y$ a separated morphism, $U$ a dense open subset of $Y$, $g:U\to f^{-1}(U)$ a $U$-section of $f^{-1}(U)$, and $Z$ the reduced subprescheme of $X$ that has $\overline{g(U)}$ as its underlying space \sref{1.5.2.1}.
-For $g$ to be the restriction of a $Y$-section of $X$ \emph{(in other words \sref{1.7.2.5}, for the rational map from $Y$ to $X$ extending $g$ to be defined everywhere)}, it is necessary and sufficient that the restriction of $f$ to $Z$ be an isomorphism from $Z$ to $Y$.
+For $g$ to be the restriction of a $Y$-section of $X$ \emph{(in other words \sref{1.7.2.5}, for the rational map from $Y$ to $X$ extending $g$ to be defined everywhere)}, it is necessary and sufficient for the restriction of $f$ to $Z$ to be an isomorphism from $Z$ to $Y$.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.7.2.7}
 The restriction of $f$ to $f^{-1}(U)$ is a separated morphism \sref{1.5.5.1}[i], so $g$ is a closed immersion \sref{1.5.4.6}, and so $g(U)=Z\cap f^{-1}(U)$, and the subprescheme induced by $Z$ on the open subset $g(U)$ of $Z$ is identical to the closed subprescheme of $f^{-1}(U)$ associated to $g$ \sref{1.5.2.1}.
-It is clear then that the stated condition is sufficient, because if it is satisfied, and if $f_Z:Z\to Y$ is the restriction of $f$ to $Z$, and $\overline{g}:Y\to Z$ is the inverse isomorphism, then $\overline{g}$ extends $g$.
+It is then clear that the stated condition is sufficient, because, if satisfied, and if $f_Z:Z\to Y$ is the restriction of $f$ to $Z$, and $\overline{g}:Y\to Z$ is the inverse isomorphism, then $\overline{g}$ extends $g$.
 Conversely, if $g$ is the restriction to $U$ of a $Y$-section $h$ of $X$, then $h$ is a closed immersion \sref{1.5.4.6}, and so $h(Y)$ is closed, and, since it is contained in $Z$, is equal to $Z$, and it follows from \sref{1.5.2.1} that $h$ is necessarily an isomorphism from $Y$ to the closed subprescheme $Z$ of $X$.
 \end{proof}
 
 \begin{env}[7.2.8]
 \label{1.7.2.8}
-Let $X$ and $Y$ be two $S$-preschemes, with $X$ reduced and $Y$ separated over $S$.
-Let $f$ be a rational $S$-map from $X$ to $Y$, and let $x$ be a point of $X$; we can compose $f$ with the canonical $S$-morphism $\Spec(\OO_x)\to X$ \sref{1.2.4.1} provided that the \unsure{trace on} $\Spec(\OO_x)$ of the domain of definition of $f$ is dense in $\Spec(\OO_x)$ (identified with the set of $z\in X$ such that $x\in\overline{\{z\}}$ \sref{1.2.4.2}).
+Let $X$ and $Y$ be two $S$-preschemes, with $X$ reduced, and $Y$ separated over $S$.
+Let $f$ be a rational $S$-map from $X$ to $Y$, and let $x$ be a point of $X$; we can compose $f$ with the canonical $S$-morphism $\Spec(\OO_x)\to X$ \sref{1.2.4.1} provided that the intersection of $\Spec(\OO_x)$ with the domain of definition of $f$ is dense in $\Spec(\OO_x)$ (identified with the set of $z\in X$ such that $x\in\overline{\{z\}}$ \sref{1.2.4.2}).
 This will happen in the follow cases:
 \begin{enumerate}
     \item $X$ is \emph{irreducible} (and thus \emph{integral}), because then the generic point $\xi$ of $X$ is the generic point of $\Spec(\OO_x)$; since the domain of definition $U$ of $f$ contains $\xi$, $U\cap\Spec(\OO_x)$ contains $\xi$, and so is dense in $\Spec(\OO_x)$.
-    \item $X$ is \emph{locally Noetherian}; our claim then follows from
+    \item $X$ is \emph{locally Noetherian}; our claim then follows from:
 \end{enumerate}
 \end{env}
 
@@ -285,40 +285,40 @@ This will happen in the follow cases:
 \label{1.7.2.8.1}
 Let $X$ be a prescheme whose underlying space is locally Noetherian, and $x$ a point of $X$.
 The irreducible components of $\Spec(\OO_x)$ are the intersections of $\Spec(\OO_x)$ with the irreducible components of $X$ containing $x$.
-For an open subset $U\subset X$ to be such that $U\cap\Spec(\OO_x)$ is dense $\Spec(\OO_x)$, it is necessary and sufficient that it has a nonempty intersection with the irreducible components of $X$ that contain $x$ \emph{(which will be the case when $U$ is \emph{dense} in $X$)}.
+For an open subset $U\subset X$ to be such that $U\cap\Spec(\OO_x)$ is dense $\Spec(\OO_x)$, it is necessary and sufficient for it to have a nonempty intersection with the irreducible components of $X$ that contain $x$ \emph{(which will be the case whenever $U$ is \emph{dense} in $X$)}.
 \end{lem}
 
 \begin{proof}
 \label{proof-1.7.2.8.1}
-The second claim clearly follows from the first, and so it suffices to show just that one.
-Since $\Spec(\OO_x)$ is contained in every affine open subset $U$ that contains $x$, and since the irreducible components of $U$ that contain $x$ are the intersections of $U$ with the irreducible components of $X$ containing $x$ \sref[0]{0.2.1.6}, we can suppose that $X$ is affine, given by a ring $A$.
+It suffices to show just the first claim, since the second then follows.
+Since $\Spec(\OO_x)$ is contained in every affine open subset $U$ that contains $x$, and since the irreducible components of $U$ that contain $x$ are the intersections of $U$ with the irreducible components of $X$ containing $x$ \sref[0]{0.2.1.6}, we can suppose that $X$ is affine, given by some ring $A$.
 Since the prime ideals of $A_x$ correspond bijectively to the prime ideals of $A$ that are
 \oldpage[I]{161}
 contained in $\fk{j}_x$ \sref{0.2.1.6}, the minimal prime ideals of $A_x$ correspond to the minimal prime ideals of $A$ that are contained in $\fk{j}_x$, hence the lemma.
 \end{proof}
 
-That being said, suppose that we are in one of the two cases mentioned above.
+With this in mind, suppose that we are in one of the two cases mentioned in \sref{1.7.2.8}.
 If $U$ is the domain of definition of the rational $S$-map $f$, we denote by $f'$ the rational map from $\Spec(\OO_x)$ to $Y$ which agrees (taking \sref{1.2.4.2} into account) with $f$ on $U\cap\Spec(\OO_x)$; we say that this rational map is \emph{induced by $f$}.
 
 \begin{prop}[7.2.9]
 \label{1.7.2.9}
 Let $S$ be a locally Noetherian prescheme, $X$ a reduced $S$-prescheme, and $Y$ an $S$-scheme of finite type.
-We further suppose that $X$ is either irreducible or locally Noetherian.
+Suppose further that $X$ is either irreducible or locally Noetherian.
 Then let $f$ be a rational $S$-map from $X$ to $Y$, and $x$ a point of $X$.
-For $f$ to be defined at a point $x$, it is necessary and sufficent that the rational map $f'$ from $\Spec(\OO_x)$ to $Y$, induced by $f$ \sref{1.7.2.8}, be a morphism.
+For $f$ to be defined at a point $x$, it is necessary and sufficient for the rational map $f'$ from $\Spec(\OO_x)$ to $Y$, induced by $f$ \sref{1.7.2.8}, to be a morphism.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.7.2.9}
 The condition clearly being necessary (since $\Spec(\OO_x)$ is contained in every open subset containing $x$), we show that it is sufficient.
-By \sref{1.6.5.1}, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $g$ from $U$ to $Y$, inducing $f'$ on $\Spec(\OO_x)$.
-If $X$ is irreducible, then $U$ is dense in $X$, and by \sref{1.7.2.3} we can suppose that $g$ is a rational $S$-map.
-Further, the generic point of $X$ belongs to $\Spec(\OO_x)$ and to the domain of definition of $f$, so $s$ and $g$ agree at this point, and thus on a nonempty open subset of $X$ \sref{1.6.5.1}.
+By \sref{1.6.5.1}, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $g$ from $U$ to $Y$ that induces $f'$ on $\Spec(\OO_x)$.
+If $X$ is irreducible, then $U$ is dense in $X$, and, by \sref{1.7.2.3}, we can suppose that $g$ is a rational $S$-map.
+Further, the generic point of $X$ belongs to both $\Spec(\OO_x)$ and the domain of definition of $f$, and so $s$ and $g$ agree at this point, and thus on a nonempty open subset of $X$ \sref{1.6.5.1}.
 But since $f$ and $g$ are rational $S$-maps, they are identical \sref{1.7.2.3}, and so $f$ is defined at $x$.
 
-If we now suppose that $X$ is locally Noetherian, we can suppose that $U$ is Noetherian; then there are only a finite number of irreducible components $X_i$ of $X$ that contain $x$ \sref{1.7.2.8.1}, and we can suppose that they are the only ones that have a nonempty intersection with $U$, by replacing, if needed, $U$ with a smaller open subset (since there are only a finite number of irreducible components of $X$ that have a nonempty intersection with $U$, $U$ being Noetherian).
+If we now suppose that $X$ is locally Noetherian, then we can suppose that $U$ is Noetherian; then there are only a finite number of irreducible components $X_i$ of $X$ that contain $x$ \sref{1.7.2.8.1}, and we can suppose that they are the only ones that have a nonempty intersection with $U$, by replacing, if needed, $U$ with a smaller open subset (since there are only a finite number of irreducible components of $X$ that have a nonempty intersection with $U$, because $U$ is Noetherian).
 We then have, as above, that $f$ and $g$ agree on a nonempty open subset of each of the $X_i$.
-Taking into account the fact that each of the $X_i$ is contained in $\overline{U}$, we consider the morphism $f_1$, defined on a dense open subset of $U\cup(X\setmin\overline{U})$, equal to $g$ on $U$ and to $f$ on the intersection of $X\setmin\overline{U}$ with the domain of definition of $f$.
+Taking into account the fact that each of the $X_i$ is contained in $\overline{U}$, we consider the morphism $f_1$, defined on a dense open subset of $U\cup(X\setmin\overline{U})$, equal to $g$ on $U$, and to $f$ on the intersection of $X\setmin\overline{U}$ with the domain of definition of $f$.
 Since $U\cup(X\setmin\overline{U})$ is dense in $X$, $f_1$ and $f$ agree on a dense open subset of $X$, and since $f$ is a rational map, $f$ is an extension of $f_1$ \sref{1.7.2.3}, and is thus defined at the point $x$.
 \end{proof}
 
