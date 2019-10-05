@@ -437,7 +437,7 @@ We deduce from \sref{1.7.3.5} that:
 If $X$ is an integral prescheme, then every torsion-free quasi-coherent $\OO_X$-module $\sh{F}$ is isomorphic to a subsheaf $\sh{G}$ of a simple sheaf of the form $(\sh{R}(X))^{(I)}$, generated (as a $\sh{R}(X)$-module) by $\sh{G}$.
 \end{prop}
 
-The cardinality of $I$ is called the \emph{rank} of $\sh{F}$; for every nonempty affine open subset $U$ of $X$, the rank of $\sh{F}$ is equal to the rank of $\Gamma(U,\sh{F})$ as a $\Gamma(U,\OO_X)$-module, and we see by considering the generic point of $X$, contained in $U$.
+The cardinality of $I$ is called the \emph{rank} of $\sh{F}$; for every nonempty affine open subset $U$ of $X$, the rank of $\sh{F}$ is equal to the rank of $\Gamma(U,\sh{F})$ as a $\Gamma(U,\OO_X)$-module, as we see by considering the generic point of $X$, contained in $U$.
 In particular:
 
 \begin{cor}[7.4.3]
@@ -447,8 +447,8 @@ On an integral prescheme $X$, every torsion-free quasi-coherent $\OO_X$-module o
 
 \begin{cor}[7.4.4]
 \label{1.7.4.4}
-Let $X$ be an integral prescheme, $\sh{L}$ and $\sh{L}'$ two torsion-free $\OO_X$-modules, and $f$ (resp. $f'$) a section of $\sh{L}$ (resp. $\sh{L}'$) over $X$.
-In order that $f\otimes f'=0$, it is necessary and sufficient that one of the sections $f$ and $f'$ be zero.
+Let $X$ be an integral prescheme, $\sh{L}$ and $\sh{L}'$ torsion-free $\OO_X$-modules, and $f$ (resp. $f'$) a section of $\sh{L}$ (resp. $\sh{L}'$) over $X$.
+In order to have $f\otimes f'=0$, it is necessary and sufficient for one of the sections $f$ and $f'$ to be zero.
 \end{cor}
 
 \begin{proof}
@@ -459,7 +459,7 @@ Since $\sh{L}_x$ and $\sh{L}'_x$ can be identified with $\OO_X$-submodules of th
 
 \begin{prop}[7.4.5]
 \label{1.7.4.5}
-Let $X$ and $Y$ be two integral preschemes, and $f:X\to Y$ a dominant morphism.
+Let $X$ and $Y$ be integral preschemes, and $f:X\to Y$ a dominant morphism.
 For every torsion-free quasi-coherent $\OO_X$-modules $\sh{F}$, $f_*(\sh{F})$ is a torsion-free $\OO_Y$-module.
 \end{prop}
 
@@ -467,7 +467,7 @@ For every torsion-free quasi-coherent $\OO_X$-modules $\sh{F}$, $f_*(\sh{F})$ is
 \label{proof-1.7.4.5}
 Since
 \oldpage[I]{164}
-$f_*$ is left exact \sref[0]{0.4.2.1}, it suffices, by \sref{1.7.4.2}, to prove the proposition when $\sh{F}=(\sh{R}(X))^{(I)}$.
+$f_*$ is left exact \sref[0]{0.4.2.1}, it suffices, by \sref{1.7.4.2}, to prove the proposition in the case where $\sh{F}=(\sh{R}(X))^{(I)}$.
 But every nonempty open subset $U$ of $Y$ contains the generic point of $Y$, so $f^{-1}(U)$ contains the generic point of $X$ \sref[0]{0.2.1.5}, so we have that $\Gamma(U,f_*(\sh{F}))=\Gamma(f^{-1}(U),\sh{F})=(R(X))^{(I)}$; in other words, $f_*(\sh{F})$ is the simple sheaf with fibre $(R(X))^{(I)}$, considered as a $\sh{R}(Y)$-module, and it is clearly torsion free.
 \end{proof}
 
@@ -479,7 +479,7 @@ For every quasi-coherent $\OO_X$-module $\sh{F}$ of finite type, the following c
 
 \begin{proof}
 \label{proof-1.7.4.6}
-By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so (a) and (b) are equivalent; also, $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, (b) and (c) are equivalent.
+By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so (a) and (b) are equivalent; then, $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, (b) and (c) are equivalent.
 \end{proof}
 
 \begin{env}[7.4.7]
