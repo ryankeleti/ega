@@ -39,7 +39,7 @@ Let us now consider two cases:
     The canonical homomorphisms $\sh{F}\to\sh{F}'$ and $\sh{F}\to\sh{F}''$ thus define a homomorphism $u:\sh{F}\to\sh{F}'\oplus\sh{F}''$.
     We show that for every $z\not\in Y'\cap Y''$, the homomorphism $u_z:\sh{F}_z\to\sh{F}_z'\oplus\sh{F}_z''$ is \emph{bijective}.
     Indeed, we have $\sh{J}'\cap\sh{J}''=\sh{J}$, since the question is local and
-\oldpage{116}
+\oldpage[III]{116}
     the above equality follows from (\sref[I]{1.5.2.1} and \sref[I]{1.1.1.5}); if $z\not\in Y''$, then we have $\sh{J}_z'=\sh{J}_z$, hence $\sh{F}_z'=\sh{F}_z$ and $\sh{F}_z''=0$, which establishes our assertion in this case; we reason similarly for $z\not\in Y'$.
     As a result, the kernel and cokernel of $u$, which are in $\C$ \sref[0]{0.5.3.4}, have their support in $Y'\cap Y''$, and thus is in $\C'$ by hypothesis; for the same reason, $\sh{F}'$ and $\sh{F}''$ are in $\C'$, hence also $\sh{F}'\oplus\sh{F}''$, as $\C'$ is exact.
     The conclusion then follows from the consideration of the two exact sequences
@@ -54,7 +54,7 @@ Let us now consider two cases:
     If $y$ is its generic point, then we have $(\OO_Y)_y=\kres(y)$, and as $j^*(\sh{F})$ is a coherent $\OO_Y$-module, $\sh{F}_y=(j^*(\sh{F}))_y$ is a $\kres(y)$-vector space of finite dimension~$m$.
     By hypothesis, there is a coherent $\OO_X$-module $\sh{G}$ (necessarily of support $Y$) such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
     As a result, there is a $\kres(y)$-isomorphism $(\sh{G}_y)^m\isoto\sh{F}_y$, which is also an $\OO_Y$-isomorphism, and as $\sh{G}^m$ and $\sh{F}$ are coherent, there exists an open neighborhood $W$ of $y$ in $X$ and an isomorphism $\sh{G}^m|W\isoto\sh{F}|W$ \sref[0]{0.5.2.7}.
-    Let $\sh{H}$ be the graph of this isomorphism, which is a coherent $(\OO_X|W)$-submodule of $(\sh{G}^m\oplus\sh{F})|W$, canonically isomorphic to $\sh{G}^m|W$ and to $\sh{F}|W$; there thus exists a coherent $\OO_X$-submodule $\sh{H}_0$ of $\sh{G}^m\oplus\sh{F}$, inducing $\sh{H}$ on $W$ and $0$ on $X\setmin Y$, since $\sh{G}^m$ and $\sh{F}$ have $Y$ for their support \sref[I]{1.9.4.7}.
+    Let $\sh{H}$ be the graph of this isomorphism, which is a coherent $(\OO_X|W)$-submodule of $(\sh{G}^m\oplus\sh{F})|W$, canonically isomorphic to $\sh{G}^m|W$ and to $\sh{F}|W$; there thus exists a coherent $\OO_X$-submodule $\sh{H}_0$ of $\sh{G}^m\oplus\sh{F}$, inducing $\sh{H}$ on $W$ and $0$ on $X\setmin Y$, since $\sh{G}^m$ and $\sh{F}$ have $Y$ for their support~\sref[I]{1.9.4.7}.
     The restrictions $v:\sh{H}_0\to\sh{G}^m$ and $w:\sh{H}_0\to\sh{F}$ of the canonical projections of $\sh{G}^m\oplus\sh{F}$ are then homomorphisms of coherent $\OO_X$-modules, which, on $W$ and on $X\setmin Y$, reduce to isomorphisms; in other words, the kernels and cokernels of $v$ and $w$ have their suppoer in the closed set $Y\setmin(Y\cap W)$, distinct from $Y$.
     They are in $\C'$; on the other hand, we have $\sh{G}^m\in\C'$ since $\sh{G}\in\C'$ and since $\C'$ is exact.
     We conclude successively, by the exactness of $\C'$, that $\sh{H}_0\in\C'$, then $\sh{F}\in\C'$.
@@ -70,9 +70,37 @@ In this case, the conclusion of Theorem~\sref{3.3.1.2} is still valid when the c
 
 \begin{proof}
 \label{proof-3.3.1.3}
-The reasoning of Theorem~\sref{3.3.1.2} must be modifies only in the case~(b); now $\sh{G}_y$ is a $\kres(y)$-vector space of dimension $q>0$, and as a result, we have an $\OO_Y$-isomorphism $(\sh{G}_y)^m\isoto(\sh{F}_y)^q$; the end of the reasoning in Theorem~\sref{3.3.1.2} then proves that $\sh{F}^q\in\C'$, and the additional hypothesis on $\C'$ implies that $\sh{F}\in\C'$.
+The reasoning of Theorem~\sref{3.3.1.2} must be modified only in the case~(b); now $\sh{G}_y$ is a $\kres(y)$-vector space of dimension $q>0$, and as a result, we have an $\OO_Y$-isomorphism $(\sh{G}_y)^m\isoto(\sh{F}_y)^q$; the end of the reasoning in Theorem~\sref{3.3.1.2} then proves that $\sh{F}^q\in\C'$, and the additional hypothesis on $\C'$ implies that $\sh{F}\in\C'$.
 \end{proof}
 
 \subsection{The finiteness theorem: the case of usual schemes}
 \label{subsection:finiteness-theorem-usual-case}
+
+\begin{thm}[3.2.1]
+\label{3.3.2.1}
+Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a proper morphism.
+For every coherent $\OO_X$-module $\sh{F}$, the $\OO_Y$-modules $\RR^q f_*(\sh{F})$ are coherent for $q\geq 0$.
+\end{thm}
+
+\begin{proof}
+\label{proof-3.3.2.1}
+The question being local on $Y$, we can suppose $Y$ Noetherian, thus $X$ Noetherian~\sref[I]{1.6.3.7}.
+The coherent $\OO_X$-modules $\sh{F}$ for which the conclusion of Theorem~\sref{3.3.2.1} is true forms an \emph{exact} subset $\C'$ of the category $\C$ of coherent $\OO_X$-modules.
+\oldpage[III]{117}
+Indeed, let $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of coherent $\OO_X$-modules; suppose for example that $\sh{F}'$ and $\sh{F}''$ belong to $\C'$; we have the long exact sequence in cohomology
+\[
+  \RR^{q-1}f_*(\sh{F}'')\xrightarrow{\partial}\RR^q f_*(\sh{F}')\to\RR^q f_*(\sh{F})\to\RR^q f_*(\sh{F}'')\xrightarrow{\partial}\RR^{q+1}f_*(\sh{F}'),
+\]
+in which by hypothesis the outer four terms are coherent; it is the same for the middle term $\RR^q f_*(\sh{F})$ by (\sref[0]{0.5.3.4}~and~\sref[0]{0.5.3.3}).
+We show in the same way that when $\sh{F}$ and $\sh{F}'$ (resp.~$\sh{F}$ and $\sh{F}''$) are in $\C'$, then so is $\sh{F}''$ (resp.~$\sh{F}'$).
+In addition, every coherent \emph{direct factor} $\sh{F}'$ of an $\OO_X$-module $\sh{F}\in\C'$ belongs to $\C'$: indeed, $\RR^q f_*(\sh{F}')$ is then a direct factor of $\RR^q f_*(\sh{F})$~(G,~II,~4.4.4), therefore it is of finite type, and as it is quasi-coherent~\sref{3.1.4.10}, it is coherent, as $Y$ is Noetherian.
+By virtue of Corollary~\sref{3.3.1.3}, we reduce to proving that when $X$ is \emph{irreducible} with generic point $x$, there exists \emph{one} coherent $\OO_X$-module $\sh{F}$ belonging to $\C'$, such that $\sh{F}_x\neq 0$: indeed, if this point is established, then it can be applied to any irreducible closed subprescheme $Y$ of $X$, since if $j:Y\to X$ is the canonical injection, then $f\circ j$ is proper~\sref[II]{2.5.4.2}, and if $\sh{G}$ is a coherent $\OO_Y$-module with support $Y$, then $j_*(\sh{G})$ is a coherent $\OO_X$-module such that $\RR^q(f\circ j)_*(\sh{G})=\RR^q f_*(j_*(\sh{G}))$~(G,~II,~4.9.1), therefore we can apply COrollary~\sref{3.3.1.3}.
+
+By virtue of Chow's lemma~\sref[II]{2.5.6.2}, there exists an irreducible prescheme $X'$ an a \emph{projective} and surjective morphism $g:X'\to X$ such that $f\circ g:X'\to Y$ is \emph{projective}.
+There exists an ample $\OO_X$-module $\sh{L}$ for $g$~\sref[II]{2.5.3.1}; we apply the fundamental theorem of projective morphisms~\sref{3.2.2.1} to $g:X'\to X$ and with $\sh{L}$: there thus exixts an integer $n$ such that $\sh{F}=g_*(\OO_{X'}(n))$ is a coherent $\OO_X$-module and $\RR^q g_*(\OO_{X'}(n))=0$ for all $q>0$; in addition, as $g^*(g_*(\OO_{X'}(n)))\to\OO_{X'}(n)$ is surjective for $n$ large enough~\sref{3.2.2.1}, we see that we can suppose, at the generic point $x$ of $X$, that we have $\sh{F}_x\neq 0$~\sref[II]{2.3.4.7}.
+On the other hand, as $f\circ g$ is projective as $Y$ is Noetherian, the $\RR^q(f\circ g)_*(\OO_{X'}(n))$ are \emph{coherent}~\sref{3.2.2.1}.
+This being so, $\RR^\bullet(f\circ g)_*(\OO_{X'}(n))$ is the abutment of a Leray spectral sequence, whose $E_2$-term is given by $E_2^{pq}=\RR^p f_*(\RR^q g_*(\OO_{X'}(n)))$; the above shows that this spectral sequence degenerates, and we then know~\sref[0]{0.11.1.6} that $E_2^{p0}=\RR^p f_*(\sh{F})$ is isomorphic to $\RR^p(f\circ g)_*(\OO_{X'}(n))$, which finishes the proof.
+\end{proof}
+
+
 
