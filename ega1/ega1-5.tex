@@ -7,7 +7,7 @@
 \begin{prop}[5.1.1]
 \label{1.5.1.1}
 Let $(X,\OO_X)$ be a prescheme, and $\sh{B}$ a quasi-coherent $\OO_X$-algebra.
-There exists a unique quasi-coherent $\OO_X$-module $\sh{N}$ whose stalk $\sh{N}_x$ at each $x\in X$ is the nilradical of the ring $\sh{B}_x$.
+Then there exists a unique quasi-coherent $\OO_X$-module $\sh{N}$ whose stalk $\sh{N}_x$ at any $x\in X$ is the nilradical of the ring $\sh{B}_x$.
 When $X$ is affine, and, consequently, $\sh{B}=\wt{B}$, where $B$ is an algebra over $A(X)$, then we have $\sh{N}=\wt{\nilrad}$, where $\nilrad$ is the nilradical of $B$.
 \end{prop}
 
@@ -15,9 +15,9 @@ When $X$ is affine, and, consequently, $\sh{B}=\wt{B}$, where $B$ is an algebra 
 \label{proof-1.5.1.1}
 \oldpage[I]{128}
 The statement is local, so it suffices to show the latter claim.
-We know that $\wt{\nilrad}$ is a quasi-coherent $\OO_X$-module \sref{1.1.4.1} and that its stalk at a point $x\in X$ is the ideal $\nilrad_x$ of the ring of fractions $B_x$;
+We know that $\wt{\nilrad}$ is a quasi-coherent $\OO_X$-module \sref{1.1.4.1}, and that its stalk at a point $x\in X$ is the ideal $\nilrad_x$ of the ring of fractions $B_x$;
 it remains to prove that the nilradical of $B_x$ is contained in $\nilrad_x$, the converse inclusion being evident.
-Let $z/s$ be an element of the nilradical of $B_x$, with $z\in B$, $s\not\in\fk{j}_x$;
+Let $z/s$ be an element of the nilradical of $B_x$, with $z\in B$, and $s\not\in\fk{j}_x$;
 by hypothesis, there exists an integer $k$ such that $(z/s)^k=0$, which implies that there exists some $t\not\in\fk{j}_x$ such that $tz^k=0$.
 We conclude that $(tz)^k=0$, and, as a result, that $z/s=(tz)/(ts)\in\nilrad_x$.
 \end{proof}
@@ -56,14 +56,14 @@ For the prime spectrum of a ring $A$ to be a reduced (resp. integral) prescheme 
 \begin{proof}
 \label{proof-1.5.1.4}
 Indeed, it follows immediately from \sref{1.5.1.1} that the condition $\sh{N}=(0)$ is necessary and sufficient for $X=\Spec(A)$ to be reduced;
-the claim relating to integral rings is then a consequence of \sref{1.1.1.13}.
+the claim corresponding to integral rings is then a consequence of \sref{1.1.1.13}.
 \end{proof}
 
 Since every ring of fractions $\neq\{0\}$ of an integral ring is integral, it follows from \sref{1.5.1.4} that, for every \emph{locally integral} prescheme $X$, $\OO_x$ is an \emph{integral} ring for every $x\in X$.
 The converse is true whenever the underlying space of $X$ is \emph{locally Noetherian}:
 indeed, $X$ is then reduced, and if $U$ is an affine open subset of $X$, which is a Noetherian space, then $U$ has only a finite number of irreducible components, and so its ring $A$ has only a finite number of minimal prime ideals \sref{1.1.1.14}.
-If two of these components $U_i$ had a common point $x$, then $\OO_x$ would have at least two distinct minimal prime ideals, and would thus not be integral;
-the $U_i$ are thus open subsets that are pairwise disjoint, and each of them is thus integral.
+If two of the irreducible components of $U$ had a common point $x$, then $\OO_x$ would have at least two distinct minimal prime ideals, and would thus not be integral;
+the components of $U$ are thus open subsets that are pairwise disjoint, and each of them is thus integral.
 
 \begin{env}[5.1.5]
 \label{1.5.1.5}
@@ -75,7 +75,7 @@ by passing to the quotients, $\theta^\sharp$ induces a homomorphism
   \omega:\psi^*(\OO_Y/\sh{N}_Y)\to\OO_X/\sh{N}_X.
 \]
 It is clear that, for every $x\in X$, $\omega_x:\OO_{\psi(x)}/\sh{N}_{\psi(x)}\to\OO_x/\sh{N}_x$ is a local homomorphism, and so $(\psi,\omega^\flat)$ is a morphism of preschemes $X_\red\to Y_\red$, which we denote by $f_\red$, and call the \emph{reduced} morphism associated to $f$.
-It is immediate that, for two morphisms $f:X\to Y$ and $g:Y\to Z$, we have $(g\circ f)_\red=g_\red\circ f_\red$, and so we have defined $X_\red$ as a \emph{covariant functor} in $X$.
+It is immediate that, for morphisms $f:X\to Y$ and $g:Y\to Z$, we have $(g\circ f)_\red=g_\red\circ f_\red$, and so we have defined $X_\red$ as a \emph{functor}, \emph{covariant} in $X$.
 
 The preceding definition shows that the diagram
 \[
@@ -88,8 +88,8 @@ The preceding definition shows that the diagram
 \]
 is commutative, where the vertical arrows are the injection morphisms;
 in other words, $X_\red\to X$ is a \emph{functorial} morphism.
-We note in particular that if $X$ is reduced, then every morphism $f:X\to Y$ factors as $X\xrightarrow{f_\red}Y_\red\to Y$;
-in other words, $f$ is \unsure{bounded above} by the injection morphism $Y_\red\to Y$.
+We note in particular that, if $X$ is reduced, then every morphism $f:X\to Y$ factors as $X\xrightarrow{f_\red}Y_\red\to Y$;
+in other words, $f$ factors through the injection morphism $Y_\red\to Y$.
 \end{env}
 
 \begin{prop}[5.1.6]
@@ -102,13 +102,13 @@ Conversely, if $f_\red$ is surjective (resp. radicial), then so too is $f$.
 \begin{proof}
 \label{proof-1.5.1.6}
 The proposition is trivial if $f$ is surjective;
-if $f$ is radicial, the proposition follows from the fact that, for every $x\in X$, the field $\kres(x)$ is the same for the preschemes $X$ and $X_\red$ \sref{1.3.5.8}.
-Finally, if $f=(\psi,\theta)$ is an immersion, a closed immersion, of a local immersion (resp. an open immersion, or a local isomorphism), then the proposition follows from the fact that if $\theta_x^\sharp$ is surjective (resp. bijective) then so too is the homomorphism obtained by passing to the quotients by the nilradicals $\OO_{\psi(x)}$ and $\OO_x$ (\sref{1.5.1.2} and \sref{1.4.2.2}) (cf. \sref{1.5.5.12}).
+if $f$ is radicial, then the proposition follows from the fact that, for every $x\in X$, the field $\kres(x)$ is the same for the preschemes $X$ and $X_\red$ \sref{1.3.5.8}.
+Finally, if $f=(\psi,\theta)$ is an immersion, a closed immersion, or a local immersion (resp. an open immersion, or a local isomorphism), then the proposition follows from the fact that, if $\theta_x^\sharp$ is surjective (resp. bijective), then so too is the homomorphism obtained by passing to the quotients by the nilradicals $\OO_{\psi(x)}$ and $\OO_x$ (\sref{1.5.1.2} and \sref{1.4.2.2}) (cf. \sref{1.5.5.12}).
 \end{proof}
 
 \begin{prop}[5.1.7]
 \label{1.5.1.7}
-If $X$ and $Y$ are $S$-preschemes, then the preschemes $X_\red\times_{S_\red}Y_\red$ and $X_\red\times_S Y_\red$ are identical, and are canonically identified with a subprescheme of $X\times_S Y$ that has the same underlying subspace as the two aforementioned products.
+If $X$ and $Y$ are $S$-preschemes, then the preschemes $X_\red\times_{S_\red}Y_\red$ and $X_\red\times_S Y_\red$ are identical, and canonically identified with a subprescheme of $X\times_S Y$ that has the same underlying subspace as the two aforementioned products.
 \end{prop}
 
 \begin{proof}
@@ -119,7 +119,7 @@ Furthermore, if $\vphi$ and $\psi$ are the structure morphisms $X_\red\to S$ and
 
 \begin{cor}[5.1.8]
 \label{1.5.1.8}
-The preschemes $(X\times_S Y)_\red$ and $(X_\red\times_{S_\red}Y_\red)_\red$ are canonically identified.
+The preschemes $(X\times_S Y)_\red$ and $(X_\red\times_{S_\red}Y_\red)_\red$ are canonically identified with one another.
 \end{cor}
 
 \begin{proof}
@@ -127,7 +127,7 @@ The preschemes $(X\times_S Y)_\red$ and $(X_\red\times_{S_\red}Y_\red)_\red$ are
 This follows from \sref{1.5.1.2} and \sref{1.5.1.7}.
 \end{proof}
 
-We note that even if $X$ and $Y$ are reduced preschemes, $X\times_S Y$ might not be, because the tensor product of two reduced algebras can have nilpotent elements.
+We note that, even if $X$ and $Y$ are reduced preschemes, $X\times_S Y$ might not be reduced, because the tensor product of two reduced algebras can have nilpotent elements.
 
 \begin{prop}[5.1.9]
 \label{1.5.1.9}
@@ -138,19 +138,18 @@ for $X$ to be an affine scheme, it is necessary and sufficient for $X_0$ to be a
 \end{prop}
 
 The condition is clearly necessary, so we will show that it is sufficient.
-If we set $X_k=(X,\OO_X/\sh{I}^{k+1})$, it is enough to prove by induction on $k$ that $X_k$ is affine, and so we are led to consider the base case where $\sh{I}^2=0$.
+If we set $X_k=(X,\OO_X/\sh{I}^{k+1})$, it is enough to prove by induction on $k$ that $X_k$ is affine, and so we are led to consider the base case, where $\sh{I}^2=0$.
 We set
-\[
-  A=\Gamma(X,\OO_X),
-\]
-\[
-  A_0=\Gamma(X_0,\OO_{X_0})=\Gamma(X,\OO_X/\sh{I}).
-\]
+\begin{align*}
+  A&=\Gamma(X,\OO_X)\\
+  A_0&=\Gamma(X_0,\OO_{X_0})=\Gamma(X,\OO_X/\sh{I}).
+\end{align*}
 The canonical homomorphism $\OO_X\to\OO_X/\sh{I}$ induces a homomorphism of rings $\vphi:A\to A_0$.
-We will see below that $\vphi$ is \emph{surjective}, so that
-\[
-  0\to\Gamma(X,\sh{I})\to\Gamma(X,\OO_X)\to\Gamma(X,\OO_X/\sh{I})\to 0
-\]
+We will see below that $\vphi$ is \emph{surjective}, which implies that
+\begin{equation*}
+\label{1.5.1.9.1}
+  0\to\Gamma(X,\sh{I})\to\Gamma(X,\OO_X)\to\Gamma(X,\OO_X/\sh{I})\to 0\tag{5.1.9.1}
+\end{equation*}
 is an \emph{exact} sequence.
 We now prove, assuming that this is true, the proposition.
 Note that $\fk{K}=\Gamma(X,\sh{I})$ is an ideal whose square is zero in $A$, and thus a module over $A_0=A/\fk{K}$.
@@ -166,7 +165,7 @@ For every affine open subset $V$ of $X$, the diagram
     \Gamma(V,\OO_{X_0}|V)
   }
 \]
-is commutative, whence the diagram
+commutes, whence the diagram
 \[
   \xymatrix{
     X' &
@@ -175,12 +174,12 @@ is commutative, whence the diagram
     X_0\ar[l]_{f_0}\ar[u]_j
   }
 \]
-is also commutative, $X'_0$ being the closed subprescheme of $X'$ defined by the quasi-coherent sheaf of ideals $\wt{R}$, and $j$ and $j'$ being the canonical injection morphisms.
-But since $X_0$ is affine, $f_0$ is an isomorphism, and since the underlying continuous maps of $j$ and $j'$ are the identity maps, we see straight away that $\psi:X\to X'$ is a homeomorphism.
-Furthermore, the relation $\fk{K}_x=\sh{I}_x$ shows that the restriction of $\theta^\sharp:\psi^*(\OO_{X'})\to\OO_X$ is an \emph{isomorphism} from $\psi^*(\wt{\fk{K}})$ to $\sh{I}$;
+also commutes ($X'_0$ being the closed subprescheme of $X'$ defined by the quasi-coherent sheaf of ideals $\wt{R}$, and $j$ and $j'$ being the canonical injection morphisms).
+But since $X_0$ is affine, $f_0$ is an isomorphism, and since the underlying continuous maps of $j$ and $j'$ are identity maps, we see straight away that $\psi:X\to X'$ is a homeomorphism.
+Furthermore, the equation $\fk{K}_x=\sh{I}_x$ shows that the restriction of $\theta^\sharp:\psi^*(\OO_{X'})\to\OO_X$ is an \emph{isomorphism} from $\psi^*(\wt{\fk{K}})$ to $\sh{I}$;
 additionally, by passing to the quotients, $\theta^\sharp$ gives an \emph{isomorphism} $\psi^*(\OO_X/\wt{\fk{K}})\to\OO_X/\sh{I}$, because $f_0$ is an isomorphism;
-we thus immediately conclude, by the \unsure{lemma of 5} (M,~I,~1.1), that $\theta^\sharp$ is itself an isomorphism, and thus that $f$ is an \emph{isomorphism}, and hence $X$ is affine.
-So everything relies on proving the exactitude of \hyperref[1.5.1.9]{(5.1.9.1)}, which will follow from showing that $\HH^1(X,\sh{I})=0$.
+we thus immediately conclude, by the 5 lemma (M,~I,~1.1), that $\theta^\sharp$ is itself an isomorphism, and thus that $f$ is an \emph{isomorphism}, and thus that $X$ is affine.
+So everything reduces to proving the exactitude of \sref{1.5.1.9.1}, which will follow from showing that $\HH^1(X,\sh{I})=0$.
 \oldpage[I]{131}
 But $\HH^1(X,\sh{I})=\HH^1(X_0,\sh{I})$, and we have seen that $\sh{I}$ is a quasi coherent $\OO_{X_0}$-module.
 Our proof will thus follow from
@@ -191,13 +190,13 @@ If $Y$ is an affine scheme, and $\sh{F}$ a quasi-coherent $\OO_Y$-module, then $
 
 \begin{proof}
 \label{proof-1.5.1.9}
-This lemma will be proven in chap.~III, §1, and a consequence of the more general theorem that $\HH^i(Y,\sh{F})=0$ for all $i>0$.
+This lemma will be proven in Chapter~III, §1, as a consequence of the more general theorem that $\HH^i(Y,\sh{F})=0$ for all $i>0$.
 To give an independent proof, note that $\HH^1(Y,\sh{F})$ can be identified with the module $\Ext_{\OO_Y}^1(Y;\OO_Y,\sh{F})$ of extensions classes of the $\OO_Y$-module $\OO_Y$ by the $\OO_Y$-module $\sh{F}$ (T,~4.2.3);
-so everything relies on proving that such an extension $\sh{G}$ is trivial.
+so everything reduces to proving that such an extension $\sh{G}$ is trivial.
 But, for all $y\in Y$, there is a neighbourhood $V$ of $y$ in $Y$ such that $\sh{G}|V$ is isomorphic to $\sh{F}|Y\oplus\OO_Y|V$ \sref[0]{0.5.4.9};
 from this we conclude that $\sh{G}$ is a \emph{quasi-coherent} $\OO_Y$-module.
 If $A$ is the ring of $Y$, then we have $\sh{F}=\wt{M}$ and $\sh{G}=\wt{N}$, where $M$ and $N$ are $A$-modules, and, by hypothesis, $N$ is an extension of the $A$-module $A$ by the $A$-module $M$ \sref{1.1.3.11}.
-Since this extension is necessarily trivial, the lemma is proven, and so too is \sref{1.5.1.9}.
+Since this extension is necessarily trivial, the lemma is proven, and thus so too is \sref{1.5.1.9}.
 \end{proof}
 
 \begin{cor}[5.1.10]
@@ -223,8 +222,8 @@ $\fk{j}(Y)$ is the largest ideal $\fk{a}\subset A$ such that $V(\fk{a})=Y$, and 
 
 In the general case, for every affine open $U\subset X$ such that $U\cap Y$ is closed in $U$, consider the closed subprescheme $Y_U$ of $U$ defined by the sheaf of ideals associated to the ideal $\fk{j}(U\cap Y)$ of $A(U)$, which is reduced.
 We can show that, if $V$ is an affine open subset of $X$ contained in $U$, then $Y_V$ is \emph{induced} by $Y_U$ on $V\cap Y$;
-but this induced prescheme is a closed subprescheme of $V$ which is reduced and has $V\cap Y$ as its underlying space;
-the uniqueness of $Y_V$ thus implies to our claim.
+but this induced prescheme is a closed subprescheme (of $V$) which is reduced and has $V\cap Y$ as its underlying space;
+the uniqueness of $Y_V$ thus implies our claim.
 \end{proof}
 
 \begin{prop}[5.2.2]
@@ -243,7 +242,7 @@ since, by \sref{1.5.2.2}, $X$ is a reduced subprescheme of $Z$, the subprescheme
 \label{1.5.2.4}
 Let $f:X\to Y$ be a morphism, and $X'$ (resp. $Y'$) a closed subprescheme of $X$ (resp. $Y$) defined by a quasi-coherent sheaf of ideals $\sh{J}$ (resp. $\sh{K}$) of $\OO_X$ (resp. $\OO_Y$).
 Suppose that $X'$ is reduced, and that $f(X')\subset Y'$.
-Then we have $f^*(\sh{K})\OO_X\subset\sh{J}$.
+Then $f^*(\sh{K})\OO_X\subset\sh{J}$.
 \end{cor}
 
 \begin{proof}
@@ -261,19 +260,19 @@ we define the \emph{diagonal morphism} of $X$ in $X\times_S X$, denoted by $\Del
 \[
     p_1\circ\Delta_X=p_2\circ\Delta_X=1_X\tag{5.3.1.1}
 \]
-where $p_1$ and $p_2$ are the projections of $X\times_S X$ (def.~\sref{1.3.2.1}).
-If $f:T\to X$ and $g:T\to Y$ are $S$-morphisms, we can immediately see that
+where $p_1$ and $p_2$ are the projections of $X\times_S X$ (Definition~\sref{1.3.2.1}).
+If $f:T\to X$ and $g:T\to Y$ are $S$-morphisms, we immediately have that
 \[
     (f,g)_S=(f\times_S g)\circ\Delta_{T|S}.\tag{5.3.1.2}
 \]
 
-The reader will note that the preceding definition and the results stated in \sref{1.5.3.1} to \sref{1.5.3.8} are true in any category, \emph{provided that the products treated within exist in the category}.
+The reader will note that the preceding definition and the results stated in \sref{1.5.3.1} to \sref{1.5.3.8} are true in any category, \emph{provided that the products used within exist in the category}.
 \end{env}
 
 \begin{prop}[5.3.2]
 \label{1.5.3.2}
 Let $X$ and $Y$ be $S$-preschemes;
-if we make the canonic identification between $(X\times Y)\times(X\times Y)$ and $(X\times X)\times(Y\times Y)$, then the morphism $\Delta_{X\times Y}$ is identified with $\Delta_X\times\Delta_Y$.
+if we make the canonical identification between $(X\times Y)\times(X\times Y)$ and $(X\times X)\times(Y\times Y)$, then the morphism $\Delta_{X\times Y}$ is identified with $\Delta_X\times\Delta_Y$.
 \end{prop}
 
 \begin{proof}
@@ -316,7 +315,7 @@ commutes, and identifies $X\times_S Y$ with the product of the $(S\times_T S)$-p
 \begin{proof}
 \label{proof-1.5.3.5}
 By \sref{1.3.4.3}, we are led to proving the corresponding proposition \emph{in the category of sets}, replacing $X$, $Y$, and $S$ by $X(Z)_T$, $Y(Z)_T$, and $S(Z)_T$ (respectively), with $Z$ being an arbitrary $T$-prescheme.
-But in the category of sets, the proof is immediate and left to the reader.
+But, in the category of sets, the proof is immediate and left to the reader.
 \end{proof}
 
 \begin{cor}[5.3.6]
@@ -331,7 +330,7 @@ This follows from \sref{1.5.3.5} and \sref{1.3.3.4}.
 
 \begin{cor}[5.3.7]
 \label{1.5.3.7}
-If $f:X\to Y$ is an $S$-morphism then the diagram
+If $f:X\to Y$ is an $S$-morphism, then the diagram
 \[
   \xymatrix{
     X\ar[r]^{(1_X,f)_S}\ar[d]_f &
@@ -345,7 +344,7 @@ commutes, and identifies $X$ with the product of the $(Y\times_S Y)$-preschemes 
 
 \begin{proof}
 \label{proof-1.5.3.7}
-It suffices to apply \sref{1.5.3.5}, replacing $S$ by $Y$ and $T$ by $S$, and noting that $X\times_Y Y=X$ \sref{1.3.3.3}.
+It suffices to apply \sref{1.5.3.5}, replacing $S$ by $Y$, and $T$ by $S$, and noting that $X\times_Y Y=X$ \sref{1.3.3.3}.
 \end{proof}
 
 \begin{prop}[5.3.8]
@@ -355,8 +354,8 @@ For $f:X\to Y$ to be a monomorphism of preschemes, it is necessary and sufficien
 
 \begin{proof}
 \label{1.5.3.8}
-Indeed, to say that $f$ is a monomorphism implies that, for every $Y$-prescheme $Z$, the corresponding map $f':X(Z)_Y\to Y(Z)_Y$ is an injection, and since $Y(Z)_Y$ reduces to a single element, this implies that $X(Z)_Y$ does too.
-But this can also be expressed by saying that $X(Z)_Y\times X(Z)_Y$ is canonically isomorphic to $X(Z)_Y$, and the former is exactly the set $(X\times_Y X)(Z)_Y$ \hyperref[1.3.4.3]{(3.4.3.1)}, which implies that $\Delta_{X|Y}$ is an isomorphism.
+Indeed, to say that $f$ is a monomorphism implies that, for every $Y$-prescheme $Z$, the corresponding map $f':X(Z)_Y\to Y(Z)_Y$ is an injection, and, since $Y(Z)_Y$ consists of a single element, this implies that $X(Z)_Y$ consists of a single element as well.
+But this can also be expressed by saying that $X(Z)_Y\times X(Z)_Y$ is canonically isomorphic to $X(Z)_Y$; the former is exactly the set $(X\times_Y X)(Z)_Y$ \hyperref[1.3.4.3]{(3.4.3.1)}, which implies that $\Delta_{X|Y}$ is an isomorphism.
 \end{proof}
 
 \begin{prop}[5.3.9]
@@ -367,7 +366,7 @@ The diagonal morphism $\Delta_X$ is an immersion from $X$ to $X\times_S X$.
 \begin{proof}
 \label{proof-1.5.3.9}
 Indeed, since the continuous maps $p_1$ and $\Delta_X$ from the underlying spaces are such that $p_1\circ\Delta_X$ is the identity, $\Delta_X$ is a homeomorphism from $X$ to $\Delta_X(X)$.
-Similarly, the composite homomorphism $\OO_x\to\OO_{\Delta_X(x)}\to\OO_x$ composed of the homomorphisms corresponding to $p_1$ and $\Delta_X$ is the identity, which means that the homomorphism corresponding to $\Delta_X$ is surjective;
+Similarly, the composite homomorphism $\OO_x\to\OO_{\Delta_X(x)}\to\OO_x$ (composed of the homomorphisms corresponding to $p_1$ and $\Delta_X$) is the identity, which means that the homomorphism corresponding to $\Delta_X$ is surjective;
 the proposition thus follows from \sref{1.4.2.2}.
 \end{proof}
 
@@ -393,7 +392,7 @@ then the graph morphism $\Gamma_f=(1_X,f)_S$ of $f$ \sref{1.3.3.14} is an immers
 
 \begin{proof}
 \label{proof-1.5.3.11}
-This is a particular case of Corollary \sref{1.5.3.10}, where we replace $S$ by $Y$ and $T$ by $S$ (cf. \sref{1.5.3.7}).
+This is a particular case of Corollary \sref{1.5.3.10}, where we replace $S$ by $Y$, and $T$ by $S$ (cf. \sref{1.5.3.7}).
 \end{proof}
 
 \oldpage[I]{134}
@@ -401,7 +400,7 @@ The subprescheme of $X\times_S Y$ associated to the immersion $\Gamma_f$ \sref{1
 the subpreschemes of $X\times_S Y$ that are graphs of morphisms $X\to Y$ are characterised by the property that the restriction to such a subprescheme $G$ of the projection $p_1:X\times_S Y\to X$ is an \emph{isomorphism} $g$ from $G$ to $X$:
 $G$ is the the graph of the morphism $p_2\circ g^{-1}$, where $p_2$ is the projection $X\times_S Y\to Y$.
 
-When we take, in particular, $X=S$, then the $S$-morphisms $S\to Y$, that are nothing but the \emph{$S$-section} of $Y$ \sref{1.2.5.5}, are equal to their graph morphisms;
+When we take, in particular, $X=S$, then the $S$-morphisms $S\to Y$ (which are exactly the \emph{$S$-sections} of $Y$ \sref{1.2.5.5}) are equal to their graph morphisms;
 the subpreschemes of $Y$ that are the graphs of $S$-sections (in other words, those that are isomorphic to $S$ by the restriction of the structure morphism $Y\to S$) are then also called the \emph{images} of these sections, or, by an abuse of language, the \emph{$S$-sections} of $Y$.
 
 \begin{cor}[5.3.12]
@@ -412,7 +411,7 @@ then $\Gamma_{f'}$ is the inverse image of $\Gamma_f$ under $g$.
 
 \begin{proof}
 \label{proof-1.5.3.12}
-This is a particular case of formula \hyperref[1.3.3.10]{3.3.10.1}.
+This is a particular case of \sref{1.3.3.10.1}.
 \end{proof}
 
 \begin{cor}[5.3.13]
@@ -442,14 +441,15 @@ Indeed, if $p:Y\times_S Z\to Y$ is the projection onto the first component, then
 \begin{prop}[5.3.15]
 \label{1.5.3.15}
 If $f:X\to Y$ is an $S$-morphism, then the diagram
-\[
+\begin{equation*}
+\label{1.5.3.15.1}
   \xymatrix{
     X\ar[r]^{\Delta_X}\ar[d]_f &
     X\times_S X\ar[d]^{f\times_S f}\\
     Y\ar[r]^{\Delta_Y} &
     Y\times_S Y
-  }
-\]
+  }\tag{5.3.15.1}
+\end{equation*}
 commutes \emph{(in other words, $\Delta_X$ is a functorial morphism in the category of preschemes)}.
 \end{prop}
 
@@ -469,11 +469,10 @@ If $X$ is a subprescheme of $Y$, then the diagonal $\Delta_X(X)$ can be identifi
 
 \begin{proof}
 \label{proof-1.5.3.16}
-Apply \sref{1.5.3.15} to the injection morphism $f:X\to Y$;
-we then know that $f\times_S f$ is an immersion that identifies the underlying space of $X\times_S X$ with the subspace $p_1^{-1}(X)\cap p_2^{-1}(X)$ of $Y\times_S Y$ \sref{1.4.3.1};
+Applying \sref{1.5.3.15} to the injection morphism $f:X\to Y$, we see that $f\times_S f$ is an immersion that identifies the underlying space of $X\times_S X$ with the subspace $p_1^{-1}(X)\cap p_2^{-1}(X)$ of $Y\times_S Y$ \sref{1.4.3.1};
 further, if $z\in\Delta_Y(Y)\cap p_1^{-1}(X)$, then we have $z=\Delta_Y(y)$
 \oldpage[I]{135}
-and $y=p_1(z)\in X$, so $y=f(y)$, and $z=\Delta_Y(f(y))$ belongs to $\Delta_X(X)$ by the commutativity of diagram \hyperref[1.5.3.15]{(5.3.15.1)}.
+and $y=p_1(z)\in X$, so $y=f(y)$, and $z=\Delta_Y(f(y))$ belongs to $\Delta_X(X)$ by the commutativity of \sref{1.5.3.15.1}.
 \end{proof}
 
 \begin{cor}[5.3.17]
@@ -493,7 +492,7 @@ The two homomorphisms $\kres(x)\to\kres(y)$ corresponding to $f_i$ ($i=1,2$) def
     X
   }
 \]
-are commutative.
+commute.
 The diagram
 \[
   \xymatrix{
@@ -503,7 +502,7 @@ The diagram
     X\times_S X
   }
 \]
-is thus also commutative.
+thus also commutes.
 But it follows from the equality $g_1=g_2$ that the image under $(g_1,g_2)_S$ of the unique point of $\Spec(\kres(y))$ belongs to the diagonal of $\Spec(\kres(x))\times_S\Spec(\kres(x))$;
 the conclusion then follows from \sref{1.5.3.15}.
 \end{proof}
@@ -514,9 +513,9 @@ the conclusion then follows from \sref{1.5.3.15}.
 \begin{defn}[5.4.1]
 \label{1.5.4.1}
 We say that a morphism of preschemes $f:X\to Y$ is separated if the diagonal morphism $X\to X\times_Y X$ is a \emph{closed} immersion;
-we then also say that $X$ is a separated prescheme over $Y$, or a $Y$-scheme.
+we then also say that $X$ is a \emph{separated prescheme over $Y$}, or a \emph{$Y$-scheme}.
 We say that a prescheme $X$ is separated if it is separated over $\Spec(\bb{Z})$;
-we then also say that $X$ is a scheme \emph{(cf. \sref{1.5.5.7})}.
+we then also say that $X$ is a \emph{scheme}\footnote{\emph{[Trans.] We repeat here the warning given at the very start of this translation: the early versions of the EGA use \emph{prescheme} to mean is now usually called a scheme, and \emph{scheme} for what is now usually called a separated scheme.}. Grothendieck himself later said that the more modern terminology was preferable, but we have decided to keep this translation `historically accurate' by using the older nomenclature.} \emph{(cf. \sref{1.5.5.7})}.
 \end{defn}
 
 By \sref{1.5.3.9}, for $X$ to be separated over $Y$, it is necessary and sufficient for $\Delta_X(X)$ to be a \emph{closed subspace} of the underlying space of $X\times_Y X$.
@@ -529,7 +528,7 @@ If $X$ and $Y$ are $S$-preschemes, then the canonical immersion $X\times_S Y\to 
 
 \begin{proof}
 \label{proof-1.5.4.2}
-Indeed, if we refer to diagram~\hyperref[1.5.3.5]{(5.3.5.1)}, we see that $(p,q)_T$ can be considered as being obtained from $\Delta_{S|T}$ by the extension $f\times_T g:X\times_T Y\to S\times_T S$ of the base prescheme $S\times_T S$;
+Indeed, if we refer to the diagram in \sref{1.5.3.5.1}, we see that $(p,q)_T$ can be considered as being obtained from $\Delta_{S|T}$ by the extension $f\times_T g:X\times_T Y\to S\times_T S$ of the base prescheme $S\times_T S$;
 the proposition then follows from \sref{1.4.3.2}.
 \end{proof}
 
@@ -541,7 +540,7 @@ Then the graph morphism $\Gamma_f:X\to X\times_S Y$ \sref{1.5.3.11} is a closed 
 
 \begin{proof}
 \label{proof-1.5.4.3}
-This is a particular case of \sref{1.5.4.2}, where we replace $S$ by $Y$ and $T$ by $S$.
+This is a particular case of \sref{1.5.4.2}, where we replace $S$ by $Y$, and $T$ by $S$.
 \end{proof}
 
 \begin{cor}[5.4.4]
@@ -559,7 +558,7 @@ The proof using \sref{1.5.4.3} is the same as that of \sref{1.5.3.13} using \sre
 \begin{cor}[5.4.5]
 \label{1.5.4.5}
 Let $Z$ be an $S$-scheme, and $j:X\to Y$ and $g:X\to Z$ $S$-morphisms.
-If $j$ is a closed immersion, then so too $(j,g)_S:X\to Y\times_S Z$.
+If $j$ is a closed immersion, then so too is $(j,g)_S:X\to Y\times_S Z$.
 \end{cor}
 
 \begin{proof}
@@ -593,9 +592,9 @@ It then follows from \sref{1.5.2.2} that $h$ factors as $S\to Z\to X\times_S X$,
 
 \begin{rmk}[5.4.8]
 \label{1.5.4.8}
-If we suppose, conversely, that the conclusion of \sref{1.5.4.3} is true when $f=1_Y$, we can conclude that $Y$ is separated over $S$;
-similarly, if we suppose that the conclusion of \sref{1.5.4.5} applies to the two morphisms $Y\xrightarrow{\Delta_Y}Y\times_Z Y\xrightarrow{p_1}Y$, we can conclude that $\Delta_Y$ is a closed immersion, and thus that $Y$ is separated over $Z$;
-finally, assuming that the conclusion of \sref{1.5.4.6} is true for the $Y$ section $\Delta_Y$ of the $Y$-prescheme $Y\times_S Y\to Y$ implies that $Y$ is separated over $S$.
+If we suppose, conversely, that the conclusion of \sref{1.5.4.3} is true when $f=1_Y$, then we can conclude that $Y$ is separated over $S$;
+similarly, if we suppose that the conclusion of \sref{1.5.4.5} applies to the two morphisms $Y\xrightarrow{\Delta_Y}Y\times_Z Y\xrightarrow{p_1}Y$, then we can conclude that $\Delta_Y$ is a closed immersion, and thus that $Y$ is separated over $Z$;
+finally, if we assume that the conclusion of \sref{1.5.4.6} is true for the $Y$ section $\Delta_Y$ of the $Y$-prescheme $Y\times_S Y\to Y$, then this implies that $Y$ is separated over $S$.
 \end{rmk}
 
 \subsection{Separation criteria}
@@ -607,8 +606,8 @@ finally, assuming that the conclusion of \sref{1.5.4.6} is true for the $Y$ sect
 \begin{enumerate}[label=\emph{(\roman*)}]
     \item Every monomorphism of preschemes (and, in particular, every immersion) is a separated morphism.
     \item The composition of any two separated morphisms is separated.
-    \item If $f:X\to X'$ and $g:Y\to Y'$ are two separated $S$-morphisms, then $f\times_S g$ is separated.
-    \item If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated, for every extension $S'\to S$ of the base prescheme.
+    \item If $f:X\to X'$ and $g:Y\to Y'$ are separated $S$-morphisms, then $f\times_S g$ is separated.
+    \item If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated for every extension $S'\to S$ of the base prescheme.
     \item If the composition $g\circ f$ is separated, then $f$ is separated.
     \item For a morphism $f$ to be separated, it is necessary and sufficient for $f_\red$ \sref{1.5.1.5} to be separated.
 \end{enumerate}
@@ -618,15 +617,16 @@ finally, assuming that the conclusion of \sref{1.5.4.6} is true for the $Y$ sect
 \label{proof-1.5.5.1}
 Note that (i) is an immediate consequence of \sref{1.5.3.8}.
 If $f:X\to Y$ and $g:Y\to Z$ are morphisms, then the diagram
-\[
+\begin{equation*}
+\label{1.5.5.1.1}
   \xymatrix{
     X\ar[rr]^{\Delta_{X|Z}}\ar[dr]_{\Delta_{X|Y}} & &
     X\times_Z X\\
     & X\times_Y X\ar[ur]_j
   }
   \tag{5.5.1.1}
-\]
-where $j$ denotes the canonical immersion \sref{1.5.3.10} is commutative, as can be immediately verified.
+\end{equation*}
+commutes (where $j$ denotes the canonical immersion \sref{1.5.3.10}), as can be immediately verified.
 If $f$ and $g$ are separated, then $\Delta_{X|Y}$ is a closed immersion by definition, and $j$ is a closed immersion by \sref{1.5.4.2}, whence $\Delta_{X|Z}$ is a closed immersion by \sref{1.4.2.4}, which
 \oldpage[I]{137}
 proves (ii).
@@ -635,8 +635,8 @@ But $X_{(S')}\times_{Y_{(S')}}X_{(S')}$ is canonically identified with $(X\times
 the proposition then follows from \sref{1.4.3.1}.
 
 To prove (v), consider, as in \sref{1.5.3.13}, the factorisation $X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y$ of $f$, noting that $p_2=(g\circ f)\times_Z 1_Y$;
-the hypothesis (that $g\circ f$ is separated) implies that $g_2$ is separated, by (iii) and (i), and since $\Gamma_f$ is an immersion, $\Gamma_f$ is separated, by (i), whence $f$ is separated, by (ii).
-Finally, to prove (vi), recall that the preschemes $X_\red\times_{Y_\red}X_\red$ and $X_\red\times_Y X_\red$ are canonically identified \sref{1.5.1.7};
+the hypothesis (that $g\circ f$ is separated) implies that $g_2$ is separated, by (iii) and (i), and, since $\Gamma_f$ is an immersion, $\Gamma_f$ is separated, by (i), whence $f$ is separated, by (ii).
+Finally, to prove (vi), recall that the preschemes $X_\red\times_{Y_\red}X_\red$ and $X_\red\times_Y X_\red$ are canonically identified with one another \sref{1.5.1.7};
 if we denote by $j$ the injection $X_\red\to X$, then the diagram
 \[
   \xymatrix{
@@ -646,7 +646,7 @@ if we denote by $j$ the injection $X_\red\to X$, then the diagram
     X\times_Y X
   }
 \]
-commutes \sref{1.5.3.15}, and the proposition follows from the fact that the vertical arrows are the homeomorphisms of the underlying spaces \sref{1.4.3.1}.
+commutes \sref{1.5.3.15}, and the proposition follows from the fact that the vertical arrows are homeomorphisms of the underlying spaces \sref{1.4.3.1}.
 \end{proof}
 
 \begin{cor}[5.5.2]
@@ -656,7 +656,7 @@ If $f:X\to Y$ is separated, then the restriction of $f$ to any subprescheme of $
 
 \begin{proof}
 \label{proof-1.5.5.2}
-This follows from \hyperref[1.5.5.1]{(5.5.1, (i) and (ii))}.
+This follows from \sref{1.5.5.1}[i and ii].
 \end{proof}
 
 \begin{cor}[5.5.3]
@@ -673,22 +673,22 @@ This is a particular case of \sref{1.5.5.1}[iv].
 \label{1.5.5.4}
 Let $X$ be a prescheme, and assume that its underlying space is a \emph{finite} union of closed subsets $X_k$ ($1\leq k\leq n$);
 for each $k$, consider the reduced subprescheme of $X$ that has $X_k$ as its underlying space \sref{1.5.2.1}, and denote this again by $X_k$.
-Let $f:X\to Y$ be a morphism, and for each $k$, let $Y_k$ be a closed subset of $Y$ such that $f(X_k)\subset Y_k$;
+Let $f:X\to Y$ be a morphism, and, for each $k$, let $Y_k$ be a closed subset of $Y$ such that $f(X_k)\subset Y_k$;
 we again denote by $Y_k$ the reduced subprescheme of $Y$ that has $Y_k$ as its underlying space, so that the restriction $X_k\to Y$ of $f$ to $X_k$ factors as $X_k\xrightarrow{f_k}Y_k\to Y$ \sref{1.5.2.2}.
-For $f$ to be separated, it is necessary and sufficient for the $f_k$ to be separated.
+For $f$ to be separated, it is necessary and sufficient for all the $f_k$ to be separated.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.5.5.4}
-The necessity follows from \hyperref[1.5.5.1]{(5.5.1, (i), (ii), and (v))}.
+The necessity follows from \sref{1.5.5.1}[i, ii, and v].
 Conversely, if the condition of the statement is satisfied, then each of the restrictions $X_k\to Y$ of $f$ is separated \hyperref[1.5.5.1]{(5.5.1, (i) and (ii))};
-if $p_1$ and $p_2$ are the projections of $X\times_Y X$, then the subspace $\Delta_{X_k}(X_k)$ is identified with the subspace $\Delta_X(X)\cap p_1^{-1}(X_k)$ of the underlying space of $X\times_Y X$ \sref{1.5.3.16};
+if $p_1$ and $p_2$ are the projections of $X\times_Y X$, then the subspace $\Delta_{X_k}(X_k)$ can be identified with the subspace $\Delta_X(X)\cap p_1^{-1}(X_k)$ of the underlying space of $X\times_Y X$ \sref{1.5.3.16};
 these subspaces are closed in $X\times_Y X$, and thus so too is their union $\Delta_X(X)$.
 \end{proof}
 
 Suppose, in particular, that the $X_k$ are the \emph{irreducible components} of $X$;
 then we can suppose that the $Y_k$ are the irreducible components of $Y$ \sref[0]{0.2.1.5};
-prop.~\sref{1.5.5.4} then, in this case, leads to the idea of separation in the case of \emph{integral} preschemes \sref{1.2.1.7}.
+Proposition~\sref{1.5.5.4} then, in this case, leads to the idea of separation in the case of \emph{integral} preschemes \sref{1.2.1.7}.
 
 \oldpage[I]{138}
 \begin{prop}[5.5.5]
@@ -699,16 +699,16 @@ for a morphism $f:X\to Y$ to be separated, it is necessary and sufficient for ea
 
 \begin{proof}
 \label{proof-1.5.5.5}
-If we set $X_\lambda=f^{-1}(Y_\lambda)$, everything relies, taking \sref{1.4.2.4}[b] and the identification of the products $X_\lambda\times_Y X_\lambda$ and $X_\lambda\times_{Y_\lambda}X_\lambda$, on proving that the $X_\lambda\times_Y X_\lambda$ form a cover of $X\times_Y X$.
-But if we set $Y_{\lambda\mu}=Y_\lambda\cap Y_\mu$ and $X_{\lambda\mu}=X_\lambda\cap X_\mu=f^{-1}(Y_{\lambda\mu})$, then $X_\lambda\times_Y X_\mu$ can be identified with the product $X_{\lambda\mu}\times_{Y_{\lambda\mu}}X_{\lambda\mu}$ \hyperref[1.3.2.6]{(3.2.6.4)}, and so also with $X_{\lambda\mu}\times_Y X_{\lambda\mu}$ \sref{1.3.2.5}, and finally with an open subset of $X_\lambda\times_Y X_\lambda$, which proves our claim \sref{1.3.2.7}.
+If we set $X_\lambda=f^{-1}(Y_\lambda)$, everything reduces, by taking \sref{1.4.2.4}[b] and the identification of the products $X_\lambda\times_Y X_\lambda$ and $X_\lambda\times_{Y_\lambda}X_\lambda$ into account, to proving that the $X_\lambda\times_Y X_\lambda$ form a cover of $X\times_Y X$.
+But if we set $Y_{\lambda\mu}=Y_\lambda\cap Y_\mu$ and $X_{\lambda\mu}=X_\lambda\cap X_\mu=f^{-1}(Y_{\lambda\mu})$, then $X_\lambda\times_Y X_\mu$ can be identified with the product $X_{\lambda\mu}\times_{Y_{\lambda\mu}}X_{\lambda\mu}$ \sref{1.3.2.6.4}, and so also with $X_{\lambda\mu}\times_Y X_{\lambda\mu}$ \sref{1.3.2.5}, and finally with an open subset of $X_\lambda\times_Y X_\lambda$, which proves our claim \sref{1.3.2.7}.
 \end{proof}
 
-Prop.~\sref{1.5.5.4} allows us, by taking an affine open cover of $Y$, to restrict our study of separated morphisms to only those that take values in affine schemes.
+Proposition~\sref{1.5.5.4} allows us, by taking an affine open cover of $Y$, to restrict our study of separated morphisms to just those that take values in affine schemes.
 
 \begin{prop}[5.5.6]
 \label{1.5.5.6}
 Let $Y$ be an \emph{affine} scheme, $X$ a prescheme, and $(U_\alpha)$ a cover of $X$ by affine open subsets.
-For a morphism $f:X\to Y$ to be separated, it is necessary and sufficient for $U_\alpha\cap U_\beta$ to be an affine open subset for every pair of indices $(\alpha,\beta)$, and for the ring $\Gamma(U_\alpha\cap U_\beta,\OO_X)$ to be generated by the union of the canonical images of the rings $\Gamma(U_\alpha,\OO_X)$ and $\Gamma(U_\beta,\OO_X)$.
+For a morphism $f:X\to Y$ to be separated, it is necessary and sufficient for $U_\alpha\cap U_\beta$ to be, for every pair of indices $(\alpha,\beta)$, an affine open subset, \emph{and} for the ring $\Gamma(U_\alpha\cap U_\beta,\OO_X)$ to be generated by the union of the canonical images of the rings $\Gamma(U_\alpha,\OO_X)$ and $\Gamma(U_\beta,\OO_X)$.
 \end{prop}
 
 \begin{proof}
@@ -719,7 +719,7 @@ denoting the projections of $X\times_Y X$ by $p$ and $q$, we have
   \Delta_X^{-1}(U_\alpha\times_Y U_\beta)&=\Delta_X^{-1}(p^{-1}(U_\alpha)\cap q^{-1}(U_\beta))\\
                                          &=\Delta_X^{-1}(p^{-1}(U_\alpha))\cap\Delta_X^{-1}(q^{-1}(U_\beta))=U_\alpha\cap U_\beta;
 \end{align*}
-so everything relies on proving that the restriction of $\Delta_X$ to $U_\alpha\cap U_\beta$ is a closed immersion into $U_\alpha\times_Y U_\beta$.
+so everything reduces to proving that the restriction of $\Delta_X$ to $U_\alpha\cap U_\beta$ is a closed immersion into $U_\alpha\times_Y U_\beta$.
 But this restriction is exactly $(j_\alpha,j_\beta)_Y$, where $j_\alpha$ (resp. $j_\beta$) denotes the injection morphism from $U_\alpha\cap U_\beta$ to $U_\alpha$ (resp. $U_\beta$), as follows from the definitions.
 Since $U_\alpha\times_Y U_\beta$ is an affine scheme whose ring is canonically isomorphic to $\Gamma(U_\alpha,\OO_X)\otimes_{\Gamma(Y,\OO_Y)}\Gamma(U_\beta,\OO_X)$ \sref{1.3.2.2}, we see that $U_\alpha\cap U_\beta$ must be an affine scheme, and that the map $h_\alpha\otimes h_\beta\mapsto h_\alpha h_\beta$ from the ring $A(U_\alpha\times_Y U_\beta)$ to $\Gamma(U_\alpha\cap U_\beta,\OO_X)$ must be surjective \sref{1.4.2.3}, which finishes the proof.
 \end{proof}
@@ -737,7 +737,7 @@ for $f:X\to Y$ to be a separated morphism, it is necessary and sufficient for $X
 
 \begin{proof}
 \label{proof-1.5.5.8}
-We see indeed that the criteria of \sref{1.5.5.6} does not depend on $f$.
+Indeed, we see that the criteria of \sref{1.5.5.6} do not depend on $f$.
 \end{proof}
 
 \begin{cor}[5.5.9]
@@ -756,7 +756,7 @@ In particular, if $X$ and $Y$ are affine schemes, then \emph{every} morphism $X\
 \begin{prop}[5.5.10]
 \label{1.5.5.10}
 Let $Y$ be a \emph{scheme}, and $f:X\to Y$ a morphism.
-For every affine open subset $U$ of $X$ and every affine open subset $V$ of $Y$, $U\cap f^{-1}(V)$ is affine.
+For every affine open subset $U$ of $X$, and every affine open subset $V$ of $Y$, $U\cap f^{-1}(V)$ is affine.
 \end{prop}
 
 \begin{proof}
@@ -772,12 +772,12 @@ The proposition then follows from the fact that $\Gamma_f$ is an immersion.
 
 \begin{exm}[5.5.11]
 \label{1.5.5.11}
-The prescheme from example~\sref{1.2.3.2} (``the projective line over a field $K$'') is \emph{separated}, because, for the cover $(X_1,X_2)$ of $X$ by affine open subsets, $X_1\cap X_2=U_{12}$ is affine, and $\Gamma(U_{12},\OO_X)$, the ring of rational fractions of the form $f(s)/s^m$ with $f\in K[s]$, is generated by $K[s]$ and $1/s$, so the conditions of \sref{1.5.5.6} are satisfied.
+The prescheme from Example~\sref{1.2.3.2} (``the projective line over a field $K$'') is \emph{separated}, because, for the cover $(X_1,X_2)$ of $X$ by affine open subsets, $X_1\cap X_2=U_{12}$ is affine, and $\Gamma(U_{12},\OO_X)$, the ring of rational fractions of the form $f(s)/s^m$ with $f\in K[s]$, is generated by $K[s]$ and $1/s$, so the conditions of \sref{1.5.5.6} are satisfied.
 
-With the same choice of $X_1$, $X_2$, $U_{12}$, and $U_{21}$ as in example~\sref{1.2.3.2}, now take $u_{12}$ to be the isomorphism which sends $f(s)$ to $f(t)$;
+With the same choice of $X_1$, $X_2$, $U_{12}$, and $U_{21}$ as in Example~\sref{1.2.3.2}, now take $u_{12}$ to be the isomorphism which sends $f(s)$ to $f(t)$;
 we now obtain, by gluing, a \emph{non-separated integral} prescheme $X$, because the first condition of \sref{1.5.5.6} is satisfied, but not the second.
 It is immediate here that $\Gamma(X,\OO_X)\to\Gamma(X_1,\OO_X)=K[s]$ is an isomorphism;
-the inverse isomorphism defines a morphism $f:X\to\Spec(K[s])$ that is surjective, and for every $y\in\Spec(K[s])$ such that $\fk{j}_y\neq(0)$, $f^{-1}(y)$ reduces to a single point, but for $\fk{j}_y=(0)$, $f^{-1}(y)$ consists of \emph{two} distinct points (we say that $X$ is the ``affine line over $K$, where the point $0$ is doubled'').
+the inverse isomorphism defines a morphism $f:X\to\Spec(K[s])$ that is surjective, and for every $y\in\Spec(K[s])$ such that $\fk{j}_y\neq(0)$, $f^{-1}(y)$ consists of a single point, but for $\fk{j}_y=(0)$, $f^{-1}(y)$ consists of \emph{two} distinct points (we say that $X$ is the ``affine line over $K$ with the point $0$ doubled'').
 
 We can also give examples where \emph{neither} of the two conditions of \sref{1.5.5.6} are satisfied.
 First note that, in the prime spectrum $Y$ of the ring $A=K[s,t]$ of polynomials in two indeterminates over a field $K$, the open subset $U$ given by the union of $D(s)$ and $D(t)$ is \emph{not an affine open subset}.
@@ -786,7 +786,7 @@ If $U$ were an affine open subset, then the injection morphism $U\to Y$ would be
 
 With the above in mind, take two affine schemes $Y_1$ and $Y_2$, prime spectra of the rings $A_1=K[s_1,t_2]$ and $A_2=K[s_2,t_2]$ (respectively);
 take $U_{12}=D(s_1)\cup D(t_1)$ and $U_{21}=D(s_2)\cup D(t_2)$, and take $u_{12}$ to be the restriction of an isomorphism $Y_2\to Y_1$ to $U_{21}$ corresponding to the isomorphism of rings that sends $f(s_1,t_1)$ to $f(s_2,t_2)$;
-we then have an example where the conditions of \sref{1.5.5.6} are not satisfied (the integral prescheme thus obtained is called ``the affine plane over $K$, where the point $0$ is doubled'').
+we then have an example where the conditions of \sref{1.5.5.6} are not satisfied (the integral prescheme thus obtained is called ``the affine plane over $K$ with the point $0$ doubled'').
 \end{exm}
 
 \begin{rmk}[5.5.12]
@@ -805,7 +805,7 @@ If we suppose that (i) and (ii) are both true, then (iii) and (iv) are \emph{equ
 
 The first claim has already been shown \sref{1.3.5.1}.
 Consider the factorisation \sref{1.5.3.13} $X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y$ of $f$;
-the relation $p_2=(g\circ f)\times_Z 1_Y$ shows that, if $g\circ f$ has property~\textbf{P}, then so too is $p_2$, by (iii);
+the equation $p_2=(g\circ f)\times_Z 1_Y$ shows that, if $g\circ f$ has property~\textbf{P}, then so too does $p_2$, by (iii);
 if $g$ is separated, then $\Gamma_f$ is a closed immersion \sref{1.5.4.3}, and so also has property~\textbf{P}, by (i);
 finally, by (ii), $f$ has property~\textbf{P}.
 
@@ -818,7 +818,7 @@ Finally, consider the commutative diagram
     Y,
   }
 \]
-where the vertical arrows are the closed immersions \sref{1.5.1.5}, and so have property~\textbf{P}, by (i).
+where the vertical arrows are the closed immersions \sref{1.5.1.5}, and thus have property~\textbf{P}, by (i).
 The hypothesis that $f$ has property~\textbf{P} implies, by (ii), that $X_\red\xrightarrow{f_\red}Y_\red\to Y$ has property~\textbf{P};
 finally, since a closed immersion is separated \sref{1.5.5.1}[i], $f_\red$ has property~\textbf{P}, by (v).
 
