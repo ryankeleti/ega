@@ -52,7 +52,7 @@ Let us now consider two cases:
     and the hypothesis that $\C'$ is exact.
   \item $Y$ is irreducible, and as a result, the subprescheme $Y$ of $X$ is \emph{integral}.
     If $y$ is its generic point, then we have $(\OO_Y)_y=\kres(y)$, and as $j^*(\sh{F})$ is a coherent $\OO_Y$-module, $\sh{F}_y=(j^*(\sh{F}))_y$ is a $\kres(y)$-vector space of finite dimension~$m$.
-    By hypothesis, there is a coherent $\OO_X$-module $\sh{G}$ (necessarily of support $Y$) such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
+    By hypothesis, there is a coherent $\OO_X$-module $\sh{G}\in\C'$ (necessarily of support $Y$) such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
     As a result, there is a $\kres(y)$-isomorphism $(\sh{G}_y)^m\isoto\sh{F}_y$, which is also an $\OO_Y$-isomorphism, and as $\sh{G}^m$ and $\sh{F}$ are coherent, there exists an open neighborhood $W$ of $y$ in $X$ and an isomorphism $\sh{G}^m|W\isoto\sh{F}|W$ \sref[0]{0.5.2.7}.
     Let $\sh{H}$ be the graph of this isomorphism, which is a coherent $(\OO_X|W)$-submodule of $(\sh{G}^m\oplus\sh{F})|W$, canonically isomorphic to $\sh{G}^m|W$ and to $\sh{F}|W$; there thus exists a coherent $\OO_X$-submodule $\sh{H}_0$ of $\sh{G}^m\oplus\sh{F}$, inducing $\sh{H}$ on $W$ and $0$ on $X\setmin Y$, since $\sh{G}^m$ and $\sh{F}$ have $Y$ for their support~\sref[I]{1.9.4.7}.
     The restrictions $v:\sh{H}_0\to\sh{G}^m$ and $w:\sh{H}_0\to\sh{F}$ of the canonical projections of $\sh{G}^m\oplus\sh{F}$ are then homomorphisms of coherent $\OO_X$-modules, which, on $W$ and on $X\setmin Y$, reduce to isomorphisms; in other words, the kernels and cokernels of $v$ and $w$ have their suppoer in the closed set $Y\setmin(Y\cap W)$, distinct from $Y$.
@@ -102,5 +102,39 @@ On the other hand, as $f\circ g$ is projective as $Y$ is Noetherian, the $\RR^q(
 This being so, $\RR^\bullet(f\circ g)_*(\OO_{X'}(n))$ is the abutment of a Leray spectral sequence, whose $E_2$-term is given by $E_2^{pq}=\RR^p f_*(\RR^q g_*(\OO_{X'}(n)))$; the above shows that this spectral sequence degenerates, and we then know~\sref[0]{0.11.1.6} that $E_2^{p0}=\RR^p f_*(\sh{F})$ is isomorphic to $\RR^p(f\circ g)_*(\OO_{X'}(n))$, which finishes the proof.
 \end{proof}
 
+\begin{cor}[3.2.2]
+\label{3.3.2.2}
+Let $Y$ be a locally Noetherian prescheme.
+For every proper morphism $f:X\to Y$, the direct image under $f$ of any coherent $\OO_X$-module is a coherent $\OO_Y$-module.
+\end{cor}
+
+\begin{cor}[3.2.3]
+\label{3.3.2.3}
+Let $A$ be a Noetherian ring, $X$ a proper scheme over $A$; for every coherent $\OO_X$-module $\sh{F}$, the $\HH^p(X,\sh{F})$ are $A$-modules of finite type, and there exists an integer $r>0$ such that for every coherent $\OO_X$-module $\sh{F}$ and all $p>r$, $\HH^p(X,\sh{F})=0$.
+\end{cor}
+
+\begin{proof}
+\label{proof-3.3.2.3}
+The second assertion has already been proved~\sref{3.1.4.12}; the first follows from the finiteness theorem~\sref{3.3.2.1}, taking into account Corollary~\sref{3.1.4.11}.
+\end{proof}
+
+In particular, if $X$ is a \emph{proper algebraic scheme} over a field $k$, then, for every coherent $\OO_X$-module $\sh{F}$, the $\HH^p(X,\sh{F})$ are \emph{finite-dimensional} $k$-vector spaces.
+
+\begin{cor}[3.2.4]
+\label{3.3.2.4}
+Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a morphism of finite type.
+For every coherent $\OO_X$-module $\sh{F}$ whose support in proper over $Y$~\sref[II]{2.5.4.10}, the $\OO_Y$-modules $\RR^q f_*(\sh{F})$ are coherent.
+\end{cor}
+
+\begin{proof}
+\label{proof-3.3.2.4}
+\oldpage[III]{118}
+The question being local on $Y$, we can suppose $Y$ Noetherian, and it is the same for $X$~\sref[I]{1.6.3.7}.
+By hypothesis, every closed subprescheme $Z$ of $X$ whose underlying space is $\Supp(\sh{F})$ is proper over $Y$, in other words, if $j:Z\to X$ is the canonical injection, then $f\circ j:Z\to Y$ is proper.
+We can suppose that $Z$ is such that $\sh{F}=j_*(\sh{G})$, where $\sh{G}=j^*(\sh{F})$ is a coherent $\OO_Z$-module~\sref[I]{1.9.3.5}; as we have $\RR^q f_*(\sh{F})=\RR^q(f\circ j)_*(\sh{G})$ by Corollary~\sref{3.1.3.4}, the conclusion follows immediately from Theorem~\sref{3.3.2.1}.
+\end{proof}
+
+\subsection{Generalization of the finiteness theorem (usual schemes)}
+\label{subsection:finiteness-theorem-generalization-usual}
 
 
