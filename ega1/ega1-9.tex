@@ -8,9 +8,9 @@
 \label{1.9.1.1}
 \oldpage[I]{169}
 Let $X$ be a prescheme (resp. a locally Noetherian prescheme). Let $\sh{F}$ and
-$\sh{G}$ be two quasi-coherent (resp. coherent) $\OO_X$-modules; then
-$\sh{F}\otimes_{\OO_X}\sh{G}$ is quasi-coherent (resp. coherent) and
-of finite type if $\sh{F}$ and $\sh{G}$ are of finite type. If
+$\sh{G}$ be quasi-coherent (resp. coherent) $\OO_X$-modules; then
+$\sh{F}\otimes_{\OO_X}\sh{G}$ is quasi-coherent (resp. coherent); it is further
+of finite type if both $\sh{F}$ and $\sh{G}$ are of finite type. If
 $\sh{F}$ admits a finite presentation and if $\sh{G}$ is quasi-coherent
 (resp. coherent), then $\shHom(\sh{F},\sh{G})$ is quasi-coherent
 (resp. coherent).
@@ -18,13 +18,13 @@ $\sh{F}$ admits a finite presentation and if $\sh{G}$ is quasi-coherent
 
 \begin{proof}
 \label{proof-1.9.1.1}
-Being a local property, we can suppose that $X$ is affine (resp. Noetherian
+Being a local proposition, we can suppose that $X$ is affine (resp. Noetherian
 affine); further, if $\sh{F}$ is coherent, then we can assume that it is the
 cokernel of a homomorphism $\OO_X^m\to\OO_X^n$. The claims pertaining to
-quasi-coherent sheaves then follow from the Corollaries \sref{1.1.3.12} and \sref{1.1.3.9}; the
-claims pertaining to coherent sheaves follow from Theorem \sref{1.1.5.1} and from the fact
+quasi-coherent sheaves then follow from the Corollaries~\sref{1.1.3.12} and \sref{1.1.3.9}; the
+claims pertaining to coherent sheaves follow from Theorem~\sref{1.1.5.1} and from the fact
 that, if $M$ and $N$ are modules of finite type over a Noetherian ring $A$,
-then $M\otimes_A N$ and $\Hom_A(M,N)$ are $A$-modules of finite type.
+then $M\otimes_A N$ and $\Hom_A(M,N)$ are both $A$-modules of finite type.
 \end{proof}
 
 \begin{defn}[9.1.2]
@@ -40,16 +40,16 @@ prescheme $X\times_S Y$.
 \end{defn}
 
 If $X_i$ ($1\leq i\leq n$) are $S$-preschemes, and $\sh{F}_i$ are quasi-coherent
-$\OO_{X_i}$-modules ($1\leq i\leq n$), then we define similarly the tensor product
+$\OO_{X_i}$-modules ($1\leq i\leq n$), then we similarly define the tensor product
 $\sh{F}_1\otimes_S\sh{F}_2\otimes_S\cdots\otimes_S\sh{F}_n$ over the
 prescheme $Z=X_1\times_S X_2\times_S\cdots\times_S X_n$; it is a
 \emph{quasi-coherent} $\OO_Z$-module by virtue of \sref{1.9.1.1} and
-\sref[0]{0.5.1.4}; it is \emph{coherent} if the $\sh{F}_i$ are coherent and
+\sref[0]{0.5.1.4}; it is \emph{coherent} if all the $\sh{F}_i$ are coherent and
 $Z$ is \emph{locally Noetherian}, by virtue of \sref{1.9.1.1},
 \sref[0]{0.5.3.11}, and \sref{1.6.1.1}.
 
 Note that if we take $X=Y=S$ then definition \sref{1.9.1.2} gives us back the tensor
-product of $\OO_S$-modules. Furthermore, as $q^*(\OO_Y)=\OO_{X\times_S Y}$
+product of $\OO_S$-modules. Furthermore, since $q^*(\OO_Y)=\OO_{X\times_S Y}$
 \sref[0]{0.4.3.4}, the product $\sh{F}\otimes_S\OO_Y$ is canonically
 identified with $p^*(\sh{F})$, and, in the same way,
 $\OO_X\otimes_S\sh{G}$ is canonically identified with $q^*(\sh{G})$. In
