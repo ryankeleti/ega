@@ -14,6 +14,7 @@ default: $(TEX)
 	@echo "make book       --- makes complete book pdf"
 	@echo "make all        --- make pdfs + make book"
 	@echo "make clean      --- clean up"
+	@echo "make cleanaux   --- clean up auxiliary files"
 	@echo "make cleanforce --- clean up everything without prompt"
 
 .PHONY: pdfs
@@ -40,6 +41,10 @@ book:
 	$(PDFLATEX) book
 	mkdir -p $(PDF_DIR)
 	mv book.pdf $(PDF_DIR)
+
+.PHONY: cleanaux
+cleanaux:
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc
 
 .PHONY: clean
 clean:
