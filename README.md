@@ -1,6 +1,6 @@
 # EGA
 
-![EGA0status](https://img.shields.io/badge/EGA%200-39%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-green) ![EGA2status](https://img.shields.io/badge/EGA%20II-0%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-0%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-0%25-red)
+![EGA0status](https://img.shields.io/badge/EGA%200-46%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-green) ![EGA2status](https://img.shields.io/badge/EGA%20II-20%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
 
 Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
@@ -26,18 +26,18 @@ All the PDFs are auto-compliled every hour if any changes have been made since t
 
 | | First draft | Proofreading |
 | ------ | ----------- | ------------ |
-| ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-39%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
-| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-brightgreen) | ![EGA1p](https://img.shields.io/badge/-30%25-orange)|
-| ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-3%25-red) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
-| ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-0%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
-| ![EGA4](https://img.shields.io/badge/EGA-4-lightgrey) | ![EGA4fd](https://img.shields.io/badge/-0%25-red) | ![EGA4p](https://img.shields.io/badge/-0%25-red)|
+| ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-46%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
+| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-green) | ![EGA1p](https://img.shields.io/badge/-70%25-yellowgreen)|
+| ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-20%25-red) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
+| ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-3%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
+| ![EGA4](https://img.shields.io/badge/EGA-4-lightgrey) | ![EGA4fd](https://img.shields.io/badge/-1%25-red) | ![EGA4p](https://img.shields.io/badge/-0%25-red)|
 
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
 - [x] Introduction (EGA I) _(proofread by @thosgood)_
 - [x] Preliminaries (EGA 0_I)
-    + [x] 1. Rings of fractions _(@ryankeleti, proofread by @thosgood)_
-    + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti, proofread by @thosgood)_
+    + [x] 1. Rings of fractions _(@ryankeleti / proofread by @thosgood)_
+    + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti / proofread by @thosgood)_
     + [x] 3. Supplement on sheaves _(@ryankeleti)_
     + [x] 4. Ringed spaces _(@ryankeleti)_
     + [x] 5. Quasi-coherent sheaves and coherent sheaves _(@ryankeleti)_
@@ -46,13 +46,13 @@ Here is the current status of the translation, along with who is currently worki
 - [ ] Preliminaries (EGA 0_III)
     + [x] 8. Representable functors _(@ryankeleti)_
     + [x] 9. Constructible sets _(@ryankeleti)_
-    + [ ] 10. Supplement on flat modules
+    + [x] 10. Supplement on flat modules _(@thosgood)_
     + [ ] 11. Supplement on homological algebra _(@ryankeleti)_
     + [ ] 12. Supplement on sheaf cohomology
     + [ ] 13. Projective limits in homological algebra
 - [ ] Preliminaries (EGA 0_IV)
-    + [ ] (14-ε). Summary
-    + [ ] 14. Combinatorial dimension of a topological space
+    + [x] (14-ε). Summary _(@thosgood)_
+    + [x] 14. Combinatorial dimension of a topological space _(@thosgood)_
     + [ ] 15. M-regular and F-regular sequences
     + [ ] 16. Dimension and depth of Noetherian local rings
     + [ ] 17. Regular rings
@@ -64,29 +64,29 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 23. Japanese rings
 - [x] The language of schemes (EGA I)
     + [x] 0. Summary _(proofread by @thosgood)_
-    + [x] 1. Affine schemes _(@ryankeleti, proofread by @thosgood)_
-    + [x] 2. Preschemes and their morphisms _(@thosgood, proofread by @thosgood)_
-    + [x] 3. Products of preschemes _(@thosgood, @ryankeleti)_
-    + [x] 4. Subpreschemes and immersions _(@ryankeleti)_
-    + [x] 5. Reduced preschemes; separation condition _(@thosgood)_
+    + [x] 1. Affine schemes _(@ryankeleti / proofread by @thosgood)_
+    + [x] 2. Preschemes and their morphisms _(@thosgood / proofread by @thosgood)_
+    + [x] 3. Products of preschemes _(@thosgood, @ryankeleti / proofread by @thosgood)_
+    + [x] 4. Subpreschemes and immersions _(@ryankeleti / proofread by @thosgood)_
+    + [x] 5. Reduced preschemes; separation condition _(@thosgood / proofread by @thosgood)_
     + [x] 6. Finiteness conditions _(@thosgood)_
-    + [x] 7. Rational maps _(@thosgood)_
-    + [x] 8. Chevalley schemes _(@thosgood, proofread by @thosgood)_
+    + [x] 7. Rational maps _(@thosgood / proofread by @thosgood)_
+    + [x] 8. Chevalley schemes _(@thosgood / proofread by @thosgood)_
     + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
     + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
 - [ ] Elementary global study of some classes of morphisms (EGA II)
-    + [x] 0. Summary _(@ryankeleti, proofread by @thosgood)_
-    + [ ] 1. Affine morphisms
+    + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
+    + [ ] 1. Affine morphisms _(@ryankeleti)_
     + [ ] 2. Homogeneous prime spectra
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
     + [ ] 4. Projective bundles; Ample sheaves
-    + [ ] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms
+    + [x] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
     + [ ] 6. Integral morphisms and finite morphisms
     + [ ] 7. Valuative criteria
     + [ ] 8. Blowup schemes; projective cones; projective closure
 - [ ] Cohomological study of coherent sheaves (EGA III)
-    + [x] 0. Summary _(@thosgood, proofread by @thosgood)_
-    + [ ] 1. Cohomology of affine schemes
+    + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
+    + [x] 1. Cohomology of affine schemes _(@ryankeleti)_
     + [ ] 2. Cohomological study of projective morphisms
     + [ ] 3. Finiteness theorem for proper morphisms
     + [ ] 4. The fundamental theorem of proper morphisms. Applications

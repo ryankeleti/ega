@@ -7,10 +7,15 @@
 \usepackage{xr-hyper}
 \usepackage[linktocpage=true,colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
 \usepackage[left=0.95in,right=0.95in,top=0.75in,bottom=0.75in]{geometry}
-\usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
+%\usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
+\usepackage[charter,greekfamily=didot]{mathdesign}
+
+\usepackage{Baskervaldx}
+
 \usepackage{enumitem}
 \usepackage{longtable}
 \usepackage{aurical}
+\usepackage{microtype}
 
 \externaldocument[what-]{what}
 \externaldocument[intro-]{intro}
@@ -42,11 +47,19 @@
 \newtheorem*{defn}{Definition}
 \newtheorem*{exm}{Example}
 \newtheorem*{rmk}{Remark}
-\newtheorem*{nota}{Notational conventions}
+\newtheorem*{nota}{Notation}
 
 % indent subsections, see https://tex.stackexchange.com/questions/177290/.
+% also make section titles bigger.
+% also add § to \thesection, https://tex.stackexchange.com/questions/119667/ and https://tex.stackexchange.com/questions/308737/.
 \makeatletter
-\def\l@subsection{\@tocline{2}{0pt}{2.5pc}{5pc}{}}
+\def\l@subsection{\@tocline{2}{0pt}{2.5pc}{1.5pc}{}}
+\def\section{\@startsection{section}{1}%
+  \z@{.7\linespacing\@plus\linespacing}{.5\linespacing}%
+  {\normalfont\bfseries\Large\scshape\centering}}
+\renewcommand{\@seccntformat}[1]{%
+  \ifnum\pdfstrcmp{#1}{section}=0\textsection\fi%
+  \csname the#1\endcsname.~}
 \makeatother
 
 %\allowdisplaybreaks[1]
@@ -64,6 +77,8 @@
 \def\bb{\mathbf}                    % bold font
 \def\cat{\mathtt}                   % category font
 \def\fk{\mathfrak}                  % mathfrak font
+\def\leq{\leqslant}                 % <=
+\def\geq{\geqslant}                 % >=
 \def\wt#1{{\widetilde{#1}}}         % tilde over
 \def\wh#1{{\widehat{#1}}}           % hat over
 \def\setmin{-}                      % set minus
@@ -73,6 +88,8 @@
 \def\vphi{\phi}                     % for switching \phi and \varphi, change if needed
 \def\HH{\mathrm{H}}                 % cohomology H
 \def\CHH{\check{\HH}}               % Čech cohomology H
+\def\RR{\mathrm{R}}                 % right derived R
+\def\LL{\mathrm{L}}                 % left derived L
 \def\dual#1{{#1}^\vee}              % dual
 \def\kres{k}                        % residue field k
 \def\C{\cat{C}}                     % category C
@@ -98,8 +115,12 @@
 \def\Spec{{\mathop{\mathrm{Spec}}\nolimits}}
 \def\Spf{{\mathop{\mathrm{Spf}}\nolimits}}
 \def\grad{{\mathop{\mathrm{grad}}\nolimits}}
+\def\dim{{\mathop{\mathrm{dim}}\nolimits}}
+\def\dimc{{\mathop{\mathrm{dimc}}\nolimits}}
+\def\codim{{\mathop{\mathrm{codim}}\nolimits}}
 
 \renewcommand{\to}{\mathchoice{\longrightarrow}{\rightarrow}{\rightarrow}{\rightarrow}}
+\newcommand{\from}{\mathchoice{\longleftarrow}{\leftarrow}{\leftarrow}{\leftarrow}}
 \let\mapstoo\mapsto
 \renewcommand{\mapsto}{\mathchoice{\longmapsto}{\mapstoo}{\mapstoo}{\mapstoo}}
 \def\isoto{\simeq}  % isomorphism

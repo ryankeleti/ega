@@ -8,7 +8,7 @@
 
 ## TODO
 - check errata in EGA II and onwards
-- lists of notations?
+- lists of notation?
 - terminology indices?
 - hyperref links to equations (e.g. 3.3.9.1)
 - check for any `\unsure` commands in the source
