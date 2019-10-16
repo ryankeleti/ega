@@ -8,7 +8,7 @@
 \label{0.11.1.1}
 In the following, we use a more general notion of a spectral sequence than that defined in (T, 2.4); keeping the notations of (T, 2.4), we call a \emph{spectral sequence} in an abelian category $\C$ a system $E$ consisting of the following parts:
 \begin{enumerate}[label=(\alph*)]
-  \item A family $(E_r^{pq})$ of objects of $\C$ defined for $p,q\in\bb{Z}$ and $r\geqslant 2$.
+  \item A family $(E_r^{pq})$ of objects of $\C$ defined for $p,q\in\bb{Z}$ and $r\geq 2$.
   \item A family of morphisms $d_r^{pq}:E_r^{pq}\to E_r^{p+r,q-r+1}$ such that $d_r^{p+r,q-r+1}d_r^{pq}=0$.
     We set $Z_{r+1}(E_r^{pq})=\Ker(d_r^{pq})$ and $B_{r+1}(E_r^{pq})=\Im(d_r^{p+r,q-r+1})$, so that
     \[
@@ -16,10 +16,10 @@ In the following, we use a more general notion of a spectral sequence than that 
     \]
   \item A family of isomorphisms $\alpha_r^{pq}:Z_{r+1}(E_r^{pq})/B_{r+1}(E_r^{pq})\isoto E_{r+1}^{pq}$.
 
-  We then define for $k\geqslant r+1$, by induction on $k$, the subobjects $B_k(E_r^{pq})$ and $Z_k(E_r^{pq})$ as the inverse images, under the canonical morphism $E_r^{pq}\to E_r^{pq}/B_{r+1}(E_r^{pq})$ of the subobjects of this quotuent identified via $\alpha_r^{pq}$ with the subobjects $B_k(E_{r+1}^{pq})$ and $Z_k(E_{r+1}^{pq})$ respectively.
+  We then define for $k\geq r+1$, by induction on $k$, the subobjects $B_k(E_r^{pq})$ and $Z_k(E_r^{pq})$ as the inverse images, under the canonical morphism $E_r^{pq}\to E_r^{pq}/B_{r+1}(E_r^{pq})$ of the subobjects of this quotuent identified via $\alpha_r^{pq}$ with the subobjects $B_k(E_{r+1}^{pq})$ and $Z_k(E_{r+1}^{pq})$ respectively.
 It is clear that we then have, up to isomorphism,
   \[
-    Z_k(E_r^{pq})/B_k(E_r^{pq})=E_k^{pq}\text{ for }k\geqslant r+1,
+    Z_k(E_r^{pq})/B_k(E_r^{pq})=E_k^{pq}\text{ for }k\geq r+1,
     \tag{11.1.1.1}
   \]
   and, if we set $B_r(E_r^{pq})=0$ and $Z_r(E_r^{pq})=E_r^{pq}$, then we have the inclusion relations
@@ -28,7 +28,7 @@ It is clear that we then have, up to isomorphism,
     \tag{11.1.1.2}
   \]
   The other parts of the data of $E$ are then:
-  \item Two subobjects $B_\infty(E_2^{pq})$ and $Z_\infty(E_2^{pq})$ of $E_2^{pq}$ such that we have $B_\infty(E_2^{pq})\subset Z_\infty(E_2^{pq})$ and, for every $k\geqslant 2$,
+  \item Two subobjects $B_\infty(E_2^{pq})$ and $Z_\infty(E_2^{pq})$ of $E_2^{pq}$ such that we have $B_\infty(E_2^{pq})\subset Z_\infty(E_2^{pq})$ and, for every $k\geq 2$,
     \[
       B_k(E_2^{pq})\subset B_\infty(E_2^{pq})\text{ and }Z_\infty(E_2^{pq})\subset Z_k(E_2^{pq}).
     \]
@@ -46,8 +46,8 @@ It is clear that we then have, up to isomorphism,
 
 The family $(E^n)$, without the filtrations, is called the \emph{abutment} (or \emph{limit}) of the spectral sequence $E$.
 
-Suppose that the category $\C$ admits infinite direct sums, or that for every $r\geqslant 2$ and every $n\in\bb{Z}$, there are finitely many pairs $(p,q)$ such that $p+q=n$ and $E_r^{pq}\neq 0$ (it suffices for it to hold for $r=2$).
-Then the $E_r^{(n)}=\sum_{p+q=n}E_r^{pq}$ are defined, and we if denote by $d_r^{(n)}$ the morphism $E_r^{(n)}\to E_r^{(n+1)}$ whose restriction to $E_r^{pq}$ is $d_r^{pq}$ for every pair $(p,q)$ such that $p+q=n$, then $d_r^{(n+1)}\circ d_r^{(n)}=0$, in other words, $(E_r^{(n)})_{n\in\bb{Z}}$ is a \emph{complex $E_r^{(\bullet)}$} in $\C$, with differentials of degree $+1$, and it follows from (c) that $\HH^n(E_n^{(\bullet)})$ is \emph{isomorphic to $E_{r+1}^{(n)}$} for every $r\geqslant 2$.
+Suppose that the category $\C$ admits infinite direct sums, or that for every $r\geq 2$ and every $n\in\bb{Z}$, there are finitely many pairs $(p,q)$ such that $p+q=n$ and $E_r^{pq}\neq 0$ (it suffices for it to hold for $r=2$).
+Then the $E_r^{(n)}=\sum_{p+q=n}E_r^{pq}$ are defined, and we if denote by $d_r^{(n)}$ the morphism $E_r^{(n)}\to E_r^{(n+1)}$ whose restriction to $E_r^{pq}$ is $d_r^{pq}$ for every pair $(p,q)$ such that $p+q=n$, then $d_r^{(n+1)}\circ d_r^{(n)}=0$, in other words, $(E_r^{(n)})_{n\in\bb{Z}}$ is a \emph{complex $E_r^{(\bullet)}$} in $\C$, with differentials of degree $+1$, and it follows from (c) that $\HH^n(E_n^{(\bullet)})$ is \emph{isomorphic to $E_{r+1}^{(n)}$} for every $r\geq 2$.
 \end{env}
 
 \begin{env}[11.1.2]
@@ -72,7 +72,7 @@ being commutative; in addition, by passing to quotients, $u_r^{pq}$ gives a morp
 \]
 must be commutative.
 
-The above definitions show, by induction on $r$, that if the $u_2^{pq}$ are \emph{isomorphisms}, then so are the $u_r^{pq}$ for $r\geqslant 2$; \emph{if in addition we know that $u_2^{pq}(B_\infty(E_2^{pq}))=B_\infty(E_2^{\prime pq})$ and $u_2^{pq}(Z_\infty(E_2^{pq}))=Z_\infty(E_2^{\prime pq})$ and the $u^n$ are isomorphisms}, then we can conclude that $u$ is an \emph{isomorphism}.
+The above definitions show, by induction on $r$, that if the $u_2^{pq}$ are \emph{isomorphisms}, then so are the $u_r^{pq}$ for $r\geq 2$; \emph{if in addition we know that $u_2^{pq}(B_\infty(E_2^{pq}))=B_\infty(E_2^{\prime pq})$ and $u_2^{pq}(Z_\infty(E_2^{pq}))=Z_\infty(E_2^{\prime pq})$ and the $u^n$ are isomorphisms}, then we can conclude that $u$ is an \emph{isomorphism}.
 \end{env}
 
 \begin{env}[11.1.3]
@@ -82,19 +82,19 @@ Recall that if $(F^p(X))_{p\in\bb{Z}}$ is a (decreasing) \emph{filtration} of an
 We say that a spectral sequence $E=(E_r^{pq},E^n)$ is \emph{weakly convergent} if we have $B_\infty(E_2^{pq})=\sup_k(B_k(E_2^{pq}))$ and $Z_\infty(E_2^{pq})=\inf_k(Z_k(E_2^{pq}))$ (in other words, the objects of $B_\infty(E_2^{pq})$ and $Z_\infty(E_2^{pq})$ are determined from the data of (a) and (c) of the spectral sequence $E$).
 We say that the spectral sequence $E$ is \emph{regular} if it is weakly convergent and if in addition:
 \begin{enumerate}
-  \item[(1st)] For every pair $(p,q)$, the decreasing sequence $(Z_k(E_2^{pq}))_{k\geqslant 2}$ is \emph{stable}; the hypothesis that $E$ is weakly convergent then implies that $Z_\infty(E_2^{pq})=Z_k(E_2^{pq})$ for $k$ large enough (depending on $p$ and $q$).
+  \item[(1st)] For every pair $(p,q)$, the decreasing sequence $(Z_k(E_2^{pq}))_{k\geq 2}$ is \emph{stable}; the hypothesis that $E$ is weakly convergent then implies that $Z_\infty(E_2^{pq})=Z_k(E_2^{pq})$ for $k$ large enough (depending on $p$ and $q$).
   \item[(2nd)] For every $n$, the filtration $(F^p(E^n))_{p\in\bb{Z}}$ of $E^n$ is \emph{discrete} and \emph{exhaustive}.
 \end{enumerate}
 
 We say that the spectral sequence $E$ is \emph{coregular} if it is weakly convergent and if in addition:
 \begin{enumerate}
-  \item[(3rd)] For every pair $(p,q)$, the increasing sequence $(B_k(E_2^{pq}))_{k\geqslant 2}$ is \emph{stable}, which implies that $B_\infty(E_2^{pq})=B_k(E_2^{pq})$, and as a result, $E_\infty^{pq}=\inf E_k^{pq}$.
+  \item[(3rd)] For every pair $(p,q)$, the increasing sequence $(B_k(E_2^{pq}))_{k\geq 2}$ is \emph{stable}, which implies that $B_\infty(E_2^{pq})=B_k(E_2^{pq})$, and as a result, $E_\infty^{pq}=\inf E_k^{pq}$.
   \item[(4th)] For every $n$, the filtration of $E^n$ is \emph{codiscrete}.
 \end{enumerate}
 
 Finally, we say that $E$ is \emph{biregular} if it is both regular and coregular, in other words if we have the following conditions:
 \begin{enumerate}[label=(\alph*)]
-  \item For every pair $(p,q)$, the sequences $(B_k(E_2^{pq}))_{k\geqslant 2}$ and $(Z_k(E_2^{pq}))_{k\geqslant 2}$ are \emph{stable} and we have $B_\infty(E_2^{pq})=B_k(E_2^{pq})$ and $Z_\infty(E_2^{pq})=Z_k(E_2^{pq})$ for $k$ large enough (which implies that $E_\infty^{pq}=E_k^{pq}$).
+  \item For every pair $(p,q)$, the sequences $(B_k(E_2^{pq}))_{k\geq 2}$ and $(Z_k(E_2^{pq}))_{k\geq 2}$ are \emph{stable} and we have $B_\infty(E_2^{pq})=B_k(E_2^{pq})$ and $Z_\infty(E_2^{pq})=Z_k(E_2^{pq})$ for $k$ large enough (which implies that $E_\infty^{pq}=E_k^{pq}$).
   \item For every $n$, the filatration $(F^p(E^n))_{p\in\bb{Z}}$ is \emph{discrete} and \emph{codiscrete} (which we also call \emph{finite}).
 \end{enumerate}
 
@@ -128,9 +128,9 @@ But as the filtrations of the $E^n$ and the $E^{\prime n}$ are discrete and exha
 
 \begin{env}[11.1.6]
 \label{0.11.1.6}
-It follows from (11.1.1.2) and the definition (11.1.1.3) that if, for a spectral sequence $E$, we have $E_r{pq}=0$, then we have $E_k^{pq}=0$ for $k\geqslant r$ and $E_\infty^{pq}=0$.
-We say that a spectral sequence \emph{degenerates} if there exists an integer $r\geqslant 2$ and, for every integer $n\in\bb{Z}$, an integer $q(n)$ such that \emph{$E_r^{n-q,q}=0$ for every $q\neq q(n)$}.
-We first deduce from the previous remark that we also have $E_k^{n-q,q}=0$ for $k\geqslant r$ (including $k=\infty$) and $q\neq q(n)$.
+It follows from (11.1.1.2) and the definition (11.1.1.3) that if, for a spectral sequence $E$, we have $E_r{pq}=0$, then we have $E_k^{pq}=0$ for $k\geq r$ and $E_\infty^{pq}=0$.
+We say that a spectral sequence \emph{degenerates} if there exists an integer $r\geq 2$ and, for every integer $n\in\bb{Z}$, an integer $q(n)$ such that \emph{$E_r^{n-q,q}=0$ for every $q\neq q(n)$}.
+We first deduce from the previous remark that we also have $E_k^{n-q,q}=0$ for $k\geq r$ (including $k=\infty$) and $q\neq q(n)$.
 In addition, the definition of $E_{r+1}^{pq}$ shows that we have $E_{r+1}^{n-q(n),q(n)}=E_r^{n-q(n),q(n)}$; if $E$ is \emph{weakly convergent}, then we also have $E_\infty^{n-q(n),q(n)}=E_r^{n-q(n),q(n)}$; in other words, for every $n\in\bb{Z}$, $\gr_p(E^n)=0$ for $p\neq q(n)$ and $\gr_{q(n)}(E^n)=E_r^{n-q(n),q(n)}$.
 If in addition the filtration of $E^n$ is \emph{discrete} and \emph{exhaustive}, then the spectral sequence $E$ is \emph{regular}, and we have $E^n=E_r^{n-q(n),q(n)}$ up to unique isomorphism.
 \end{env}
@@ -144,7 +144,7 @@ Then the \emph{inductive limit} of this inductive system exists in the additive 
 \begin{rmk}[11.1.8]
 \label{0.11.1.8}
 Suppose that the category $\C$ is the category of $A$-modules over a \emph{Noetherian} ring $A$ (resp. a ring $A$).
-Then the definitions of \sref{0.11.1.1} show that if, for a given $r$, the $E_r^{pq}$ are $A$-modules \emph{of finite type} (resp. \emph{of finite length}), then so are each of the modules $E_s^{pq}$ for $s\geqslant r$, hence so is $E_\infty^{pq}$.
+Then the definitions of \sref{0.11.1.1} show that if, for a given $r$, the $E_r^{pq}$ are $A$-modules \emph{of finite type} (resp. \emph{of finite length}), then so are each of the modules $E_s^{pq}$ for $s\geq r$, hence so is $E_\infty^{pq}$.
 If in addition the filtration of the abutment/limit $(E^n)$ is \emph{discrete} or \emph{codiscrete} for all $n$, then we conclude that each of the $E^n$ is also an $A$-module \emph{of finite type} (resp. \emph{of finite length}).
 \end{rmk}
 
@@ -159,10 +159,10 @@ We will then use the following lemma:
 Let $(E_r^{pq})$ be a family of objects of $\C$ related by the data of \emph{(a)}, \emph{(b)}, and \emph{(c)} of \sref{0.11.1.1}.
 For a fixed integer $n$, the following properties are equivalent:
 \begin{enumerate}[label=\emph{(\alph*)}]
-  \item There exists an integer $r(n)$ such that for $r\geqslant r(n)$, $p+q=n$ or $p+q=n-1$, the morphisms $d_r^{pq}$ are zero.
-  \item There exists an integer $r(n)$ such that for $p+q=n$ or $p+q=n+1$, we have $B_r(E_2^{pq})=B_s(E_2^{pq})$ for $s\geqslant r\geqslant r(n)$.
-  \item There exists an integer $r(n)$ such that for $p+q=n$ or $p+q=n-1$, we have $Z_r(E_2^{pq})=Z_s(E_2^{pq})$ for $s\geqslant r\geqslant r(n)$.
-  \item There exists an integer $r(n)$ such that for $p+q=n$, we have $B_r(E_2^{pq})=B_s(E_2^{pq})$ and $Z_r(E_2^{pq})=Z_s(E_2^{pq})$ for $s\geqslant r\geqslant r(n)$.
+  \item There exists an integer $r(n)$ such that for $r\geq r(n)$, $p+q=n$ or $p+q=n-1$, the morphisms $d_r^{pq}$ are zero.
+  \item There exists an integer $r(n)$ such that for $p+q=n$ or $p+q=n+1$, we have $B_r(E_2^{pq})=B_s(E_2^{pq})$ for $s\geq r\geq r(n)$.
+  \item There exists an integer $r(n)$ such that for $p+q=n$ or $p+q=n-1$, we have $Z_r(E_2^{pq})=Z_s(E_2^{pq})$ for $s\geq r\geq r(n)$.
+  \item There exists an integer $r(n)$ such that for $p+q=n$, we have $B_r(E_2^{pq})=B_s(E_2^{pq})$ and $Z_r(E_2^{pq})=Z_s(E_2^{pq})$ for $s\geq r\geq r(n)$.
 \end{enumerate}
 \end{lem}
 
@@ -196,7 +196,7 @@ Let $K^\bullet$ be a complex in $\C$ whose differential $d$ is of degree $+1$, a
 \oldpage[0\textsubscript{III}]{28}
 of $K^\bullet$, in other words, $F^p(K^\bullet)=(K^i\cap F^p(K^\bullet)))_{i\in\bb{Z}}$; in addition, we assume that $d(F^p(K^\bullet))\subset F^p(K^\bullet)$ for every $p\in\bb{Z}$.
 Let us quickly recall how one \emph{functorially} defines a spectral sequence $E(K^\bullet)$ from $K^\bullet$ (M, XV, 4 and G, I, 4.3).
-For $r\geqslant 2$, the canonical morphism $F^p(K^\bullet)/F^{p+r}(K^\bullet)\to F^p(K^\bullet)/F^{p+1}(K^\bullet)$ defines a morphism in cohomology
+For $r\geq 2$, the canonical morphism $F^p(K^\bullet)/F^{p+r}(K^\bullet)\to F^p(K^\bullet)/F^{p+1}(K^\bullet)$ defines a morphism in cohomology
 \[
   \HH^{p+q}(F^p(K^\bullet)/F^{p+r}(K^\bullet))\to\HH^{p+q}(F^p(K^\bullet)/F^{p+1}(K^\bullet)).
 \]
@@ -231,8 +231,8 @@ This defines a filtration on $E^n(K^\bullet)=\HH^n(K^\bullet)$; we will not give
 
 \begin{env}[11.2.3]
 \label{0.11.2.3}
-The \emph{functorial} nature of $E(K^\bullet)$ is understood in the following way: given two \emph{filtered} complexes $K^\bullet$ and $K^{\prime\bullet}$ in $\C$ and a morphism of complexes $u:K^\bullet\to K^{\prime\bullet}$ that is \emph{compatible with the filtrations}, we induce in an evident way the morphisms $u_r^{pq}$ (for $r\geqslant 1$) and $u^n$, and we show that these morphisms are compatible with the $d_r^{pq}$, $\alpha_r^{pq}$, and $\beta^{pq}$ in the sense of \sref{0.11.1.2}, and thus given a well-defined morphism $E(u):E(K^\bullet)\to E(K^{\prime\bullet})$ of spectral sequences.
-In addition, we show that if $u$ and $v$ are morphisms $K^\bullet\to K^{\prime\bullet}$ of the above type, \emph{homotopic in degree $\leqslant k$}, then $u_r^{pq}=v_r^{pq}$ for $r>k$ and $u^n=v^n$ for all $n$ (M, XV, 3.1).
+The \emph{functorial} nature of $E(K^\bullet)$ is understood in the following way: given two \emph{filtered} complexes $K^\bullet$ and $K^{\prime\bullet}$ in $\C$ and a morphism of complexes $u:K^\bullet\to K^{\prime\bullet}$ that is \emph{compatible with the filtrations}, we induce in an evident way the morphisms $u_r^{pq}$ (for $r\geq 1$) and $u^n$, and we show that these morphisms are compatible with the $d_r^{pq}$, $\alpha_r^{pq}$, and $\beta^{pq}$ in the sense of \sref{0.11.1.2}, and thus given a well-defined morphism $E(u):E(K^\bullet)\to E(K^{\prime\bullet})$ of spectral sequences.
+In addition, we show that if $u$ and $v$ are morphisms $K^\bullet\to K^{\prime\bullet}$ of the above type, \emph{homotopic in degree $\leq k$}, then $u_r^{pq}=v_r^{pq}$ for $r>k$ and $u^n=v^n$ for all $n$ (M, XV, 3.1).
 \end{env}
 
 \begin{env}[11.2.4]
