@@ -1,8 +1,8 @@
 \section{Products of preschemes}
-\label{section:products-of-preschemes}
+\label{section:1.3}
 
 \subsection{Sums of preschemes}
-\label{subsection:sums-of-preschemes}
+\label{subsection:1.3.1}
 
 Let $(X_\alpha)$ be any family of preschemes; let $X$ be a topological space which is the
 \emph{sum} of the underlying spaces $X_\alpha$; $X$ is then the union of pairwise
@@ -11,15 +11,13 @@ $\vphi_\alpha$ from $X_\alpha$ to $X_\alpha'$. If we equip each of the $X_\alpha
 sheaf $(\vphi_\alpha)_*(\OO_{X_\alpha})$, it is clear that $X$ becomes a prescheme, which
 we call the \emph{sum} of the family of preschemes $(X_\alpha)$ and which we denote
 $\bigsqcup_\alpha X_\alpha$. If $Y$ is a prescheme, then the map $f\mapsto(f\circ\vphi_\alpha)$ is a
-\emph{bijection} from the set $\Hom(X,Y)$ to the product set $\Pi_\alpha\Hom(X_\alpha,Y)$.
-In particular, if the $X_\alpha$ are $S$-preschemes, with structure morphisms $\psi_\alpha$, then
-$X$ is an $S$-prescheme by the unique morphism $\psi:X\to S$ such that
-$\psi\circ\vphi_\alpha=\psi_\alpha$ for each $\alpha$. The sum of two preschemes $X$ and $Y$ is
-denoted by $X\sqcup Y$. It is immediate that, if $X=\Spec(A)$ and $Y=\Spec(B)$, then $X\sqcup Y$
-is canonically identified with $\Spec(A\times B)$.
+\emph{bijection} from the set $\Hom(X,Y)$ to the product set $\prod_\alpha\Hom(X_\alpha,Y)$.
+In particular, if the $X_\alpha$ are $S$-preschemes, with structure morphisms $\psi_\alpha$, then $X$ is an $S$-prescheme by the unique morphism $\psi:X\to S$ such that
+$\psi\circ\vphi_\alpha=\psi_\alpha$ for each $\alpha$. The sum of two preschemes $X$ and $Y$ is denoted by $X\sqcup Y$.
+It is immediate that, if $X=\Spec(A)$ and $Y=\Spec(B)$, then $X\sqcup Y$ is canonically identified with $\Spec(A\times B)$.
 
 \subsection{Products of preschemes}
-\label{subsection:products-of-preschemes}
+\label{subsection:1.3.2}
 
 \begin{defn}[3.2.1]
 \label{1.3.2.1}
@@ -269,8 +267,8 @@ This follows from Corollary~\sref{1.3.2.5} and Lemma~\sref{1.3.2.6.1}.
 \begin{env}[3.2.8]
 \label{1.3.2.8}
 Let $(X_\alpha)$ and $(Y_\lambda)$ be families of $S$-preschemes, and $X$ (resp. $Y$) the sum
-of the family $(X_\alpha)$ (resp. $(Y_\lambda)$) \hyperref[subsection:sums-of-preschemes]{(3.1)}. Then $X\times_S Y$ can be identified with
-the \emph{sum} of the family $(X_\alpha\times_S Y_\lambda)$; this follows immediately from Lemma~\sref{1.3.2.6.3}.
+of the family $(X_\alpha)$ (resp. $(Y_\lambda)$) \hyperref[subsection:1.3.1]{(3.1)}.
+Then $X\times_S Y$ can be identified with the \emph{sum} of the family $(X_\alpha\times_S Y_\lambda)$; this follows immediately from Lemma~\sref{1.3.2.6.3}.
 \end{env}
 
 \begin{env}[3.2.9]
@@ -287,7 +285,7 @@ $S$-preschemes, but also in the category of locally ringed spaces over the presc
 \end{env}
 
 \subsection{Formal properties of the product; change of the base prescheme}
-\label{subsection:product-formal-and-base-change}
+\label{subsection:1.3.3}
 
 \begin{env}[3.3.1]
 \label{1.3.3.1}
@@ -295,7 +293,7 @@ The reader will notice that all the properties stated in this section, except
 \sref{1.3.3.13} and \sref{1.3.3.15}, are true without modification in any
 category, whenever the products involved in the statements exist (since it is
 clear that the notions of an $S$-object and of an $S$-morphism can be defined
-exactly as in \hyperref[subsection:preschemes-over-prescheme]{(2.5)} for any object $S$ of the category).
+exactly as in \hyperref[subsection:1.2.5]{(2.5)} for any object $S$ of the category).
 \end{env}
 
 \begin{env}[3.3.2]
@@ -347,7 +345,7 @@ The proof is immediate and is left to the reader.
 
 \begin{env}[3.3.5]
 \label{1.3.3.5}
-We can define, in a manner similar to \hyperref[subsection:products-of-preschemes]{(3.2)}, the product of a
+We can define, in a manner similar to \hyperref[subsection:1.3.2]{(3.2)}, the product of a
 \oldpage[I]{109}
 finite number $n$ of $S$-preschemes, and the existence of these products follows
 from \sref{1.3.2.6} by induction on $n$, and by noting that
@@ -576,7 +574,7 @@ $X\to X\otimes_\bb{Z}\bb{Z}[T]$. This result is generalized in
 \end{env}
 
 \subsection{Points of a prescheme with values in a prescheme; geometric points}
-\label{subsection:prescheme-geometric-points}
+\label{subsection:1.3.4}
 
 \begin{env}[3.4.1]
 \label{1.3.4.1}
@@ -761,7 +759,7 @@ Finally, we know that $P_0$ is in bijective correspondence with the set of \unsu
 \end{proof}
 
 \subsection{Surjections and injections}
-\label{subsection:surjections-and-injections}
+\label{subsection:1.3.5}
 
 \begin{env}[3.5.1]
 \label{1.3.5.1}
@@ -925,24 +923,24 @@ But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X
 \end{rmk}
 
 \subsection{Fibres}
-\label{subsection:fibres}
+\label{subsection:1.3.6}
 
 \begin{prop}[3.6.1]
 \label{1.3.6.1}
-Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, and $\fk{a}_y$ an ideal of definition for $\OO_y$ for the $\fk{m}_y$-preadic topology.
-Then the projection $p:X\times_Y\Spec(\OO_y/\fk{a}_y)\to X$ is a homeomorphism from the underlying space of the prescheme $X\times_Y\Spec(\OO_y/\fk{a}_y)$ to the fibre $f^{-1}(y)$ equipped with the topology induced from that of the underlying space of $X$.
+Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, and $\mathfrak{a}_y$ an ideal of definition for $\OO_y$ for the $\mathfrak{m}_y$-preadic topology.
+Then the projection $p:X\times_Y\Spec(\OO_y/\mathfrak{a}_y)\to X$ is a homeomorphism from the underlying space of the prescheme $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ to the fibre $f^{-1}(y)$ equipped with the topology induced from that of the underlying space of $X$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.3.6.1}
-Since $\Spec(\OO_y/\fk{a}_y)\to Y$ is radicial (\sref{1.3.5.4} and \sref{1.2.4.7}), since $\Spec(\OO_y/\fk{a}_y)$ is a single point, and since the ideal $\fk{m}_y/\fk{a}_y$ is nilpotent by hypothesis \sref{1.1.1.12}, we already know (\sref{1.3.5.10} and \sref{1.3.3.4}) that $p$ identifies, as \emph{sets}, the underlying space of $X\times_Y\Spec(\OO_y/\fk{a}_y)$ with $f^{-1}(y)$; everything reduces to proving that $p$ is a homeomorphism.
+Since $\Spec(\OO_y/\mathfrak{a}_y)\to Y$ is radicial (\sref{1.3.5.4} and \sref{1.2.4.7}), since $\Spec(\OO_y/\mathfrak{a}_y)$ is a single point, and since the ideal $\mathfrak{m}_y/\mathfrak{a}_y$ is nilpotent by hypothesis \sref{1.1.1.12}, we already know (\sref{1.3.5.10} and \sref{1.3.3.4}) that $p$ identifies, as \emph{sets}, the underlying space of $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ with $f^{-1}(y)$; everything reduces to proving that $p$ is a homeomorphism.
 By \sref{1.3.2.7}, the question is local on $X$ and $Y$, and so we can suppose that $X=\Spec(B)$ and $Y=\Spec(A)$, with $B$ being an $A$-algebra.
-The morphism $p$ then corresponds to the homomorphism $1\otimes\vphi:B\to B\otimes_A A'$, where $A'=A_y/\fk{a}_y$ and $\vphi$ is the canonical map from $A$ to $A'$.
+The morphism $p$ then corresponds to the homomorphism $1\otimes\vphi:B\to B\otimes_A A'$, where $A'=A_y/\mathfrak{a}_y$ and $\vphi$ is the canonical map from $A$ to $A'$.
 Then every element of $B\otimes_A A'$ can be written as
 \[
   \sum_i b_i\otimes\vphi(a_i)/\vphi(s)=\left(\sum_i(a_ib_i\otimes1)\right)(1\otimes\vphi(s))^{-1},
 \]
-where $s\not\in\fk{j}_y$, and Proposition~\sref{1.1.2.4} applies.
+where $s\not\in\mathfrak{j}_y$, and Proposition~\sref{1.1.2.4} applies.
 \end{proof}
 
 \begin{env}[3.6.2]
@@ -984,38 +982,38 @@ Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, $Z$ the local prescheme $\Spec
 \begin{proof}
 \label{proof-1.3.6.5}
 Since $Z$ (identified as a subspace of $Y$) is contained inside every affine open containing $y$ \sref{1.2.4.2}, we can, as in \sref{1.3.6.1}, reduce to the case where $X=\Spec(A)$ and $Y=\Spec(B)$ are affine schemes, with $A$ being a $B$-algebra.
-Then $X\times_Y Z$ is the prime spectrum of $A\otimes_B B_y$, and this ring is canonically identified with $S^{-1}A$, where $S$ is the image of $B\setmin\fk{j}_y$ in $A$ \sref[0]{0.1.5.2}; since $p$ then corresponds to the canonical homomorphism $A\to S^{-1}A$, the proposition follows from \sref{1.1.6.2}.
+Then $X\times_Y Z$ is the prime spectrum of $A\otimes_B B_y$, and this ring is canonically identified with $S^{-1}A$, where $S$ is the image of $B\setmin\mathfrak{j}_y$ in $A$ \sref[0]{0.1.5.2}; since $p$ then corresponds to the canonical homomorphism $A\to S^{-1}A$, the proposition follows from \sref{1.1.6.2}.
 \end{proof}
 
 \subsection{Application: reduction of a prescheme mod.~$\mathfrak{J}$}
-\label{subsection:reduction-of-a-prescheme}
+\label{subsection:1.3.7}
 
 \emph{This section, which makes use of notions and results from Chapter~I and Chapter~II, will not be used in what follows in this treatise, and is only intended for readers familiar with classical algebraic geometry}.
 
 \begin{env}[3.7.1]
 \label{1.3.7.1}
-Let $A$ be a ring, $X$ an $A$-prescheme, and $\fk{J}$ an ideal of $A$; then $X_0=X\otimes_A(A/\fk{J})$ is an $(A/\fk{J})$-prescheme, which we sometimes say is induced from $X$ by \emph{reduction} mod.~$\fk{J}$.
+Let $A$ be a ring, $X$ an $A$-prescheme, and $\mathfrak{J}$ an ideal of $A$; then $X_0=X\otimes_A(A/\mathfrak{J})$ is an $(A/\mathfrak{J})$-prescheme, which we sometimes say is induced from $X$ by \emph{reduction} mod.~$\mathfrak{J}$.
 \end{env}
 
 \begin{env}
 \label{1.3.7.2}
-This terminology is used foremost when $A$ is a \emph{local ring} and $\fk{J}$ its maximal ideal, in such a way that $X_0$ is a prescheme over the residue field $k=A/\fk{J}$ of $A$.
+This terminology is used foremost when $A$ is a \emph{local ring} and $\mathfrak{J}$ its maximal ideal, in such a way that $X_0$ is a prescheme over the residue field $k=A/\mathfrak{J}$ of $A$.
 
 When $A$ is also integral, with field of fractions $K$, we can consider the $K$-prescheme $X'=X\otimes_A K$.
-By an abuse of language which we will not use, it has been said, up until now, that $X_0$ is \emph{induced by $X'$} by reduction mod.~$\fk{J}$.
+By an abuse of language which we will not use, it has been said, up until now, that $X_0$ is \emph{induced by $X'$} by reduction mod.~$\mathfrak{J}$.
 In the case where this language was used, $A$ was a local ring of dimension~$1$ (most often a discrete valuation ring) and it was implied (be it more or less explicitly) that the given $K$-prescheme $X'$ was a closed subprescheme of a $K$-prescheme $P'$ (in fact, a projective space \unsure{of the form} $\bb{P}_K^r$, cf. \sref[II]{2.4.1.1}), itself of the form $P'=P\otimes_A K$, where $P$ is a given $A$-prescheme (in fact, the $A$-scheme $\bb{P}_A^r$, with the notation of \sref[II]{2.4.1.1}).
 In our language, the definition of $X_0$ in terms of $X'$ is formulated as follows:
 
 We consider the affine scheme $Y=\Spec(A)$, formed of two points, the unique closed point
 \oldpage[I]{119}
-$y=\fk{J}$ and the generic point $(0)$, the singleton set $U$ of the generic point being thus an open $U=\Spec(K)$ in $Y$.
+$y=\mathfrak{J}$ and the generic point $(0)$, the singleton set $U$ of the generic point being thus an open $U=\Spec(K)$ in $Y$.
 If $X$ is an $A$-prescheme (or, in other words, a $Y$-prescheme), then $X\otimes_A K=X'$ is exactly the prescheme induced by $X$ on $\psi^{-1}(U)$, denoting by $\psi$ the structure morphism $X\to Y$.
 In particular, if $\vphi$ is the structure morphism $P\to Y$, then a closed subprescheme $X'$ of $P'=\vphi^{-1}(U)$ is a (locally closed) subprescheme of $P$.
 If $P$ is Noetherian (for example, if $A$ is Noetherian and $P$ is of finite type over $A$), then there exists a smaller closed subprescheme $X=\overline{X'}$ of $G$ that through which $X'$ factors \sref{1.9.5.10}, and $X'$ is the prescheme induced by $X$ on the open $\vphi^{-1}(U)\cap X$, and so is isomorphic to $X\otimes_A K$ \sref{1.9.5.10}.
 \emph{The immersion of $X'$ into $P'=P\otimes_A K$ thus lets us canonically consider $X'$ as being of the form $X'=X\otimes_A K$, where $X$ is an $A$-prescheme.}
-We can then consider the reduced mod.~$\fk{J}$ prescheme $X_0=X\otimes_A k$, which is exactly the fibre $\psi^{-1}(y)$ of the closed point $y$.
+We can then consider the reduced mod.~$\mathfrak{J}$ prescheme $X_0=X\otimes_A k$, which is exactly the fibre $\psi^{-1}(y)$ of the closed point $y$.
 Up until now, lacking the adequate terminology, we had avoided explicitly introducing the $A$-prescheme $X$.
-One ought to, however, note that all the claims normally made about the ``reduced mod.~$\fk{J}$'' prescheme  $X_0$ should be seen as consequences of more complicated claims about $X$ itself, and cannot be satisfactorily formulated or understood except by interpreting them as such.
+One ought to, however, note that all the claims normally made about the ``reduced mod.~$\mathfrak{J}$'' prescheme  $X_0$ should be seen as consequences of more complicated claims about $X$ itself, and cannot be satisfactorily formulated or understood except by interpreting them as such.
 It seems also that any hypotheses made on $X_0$ always reduce to hypotheses on $X$ itself (independent of the prior data of an immersion of $X'$ in $\bb{P}_K^r$), which lets us give more intrinsic statements.
 \end{env}
 

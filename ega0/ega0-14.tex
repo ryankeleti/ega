@@ -1,13 +1,13 @@
 \section{Combinatorial dimension of a topological space}
-\label{section:combinatorial-dimension-of-a-topological-space}
+\label{section:0.14}
 
 \subsection{Combinatorial dimension of a topological space}
-\label{subsection:combinatorial-dimension-of-a-topological-space}
+\label{subsection:0.14.1}
 
 \begin{env}[14.1.1]
 \label{0.14.1.1}
 \oldpage[0\textsubscript{IV-1}]{6}
-Let $I$ be an ordered set; a \emph{chain} of elements of $I$ is, by definition, a strictly-increasing finite sequence $i_0<i_1<\ldots<i_n$ of elements of $I$ ($n\geq 0$); by definition, the \emph{length} of this chain is $n$.
+Let $I$ be an ordered set; a \emph{chain} of elements of $I$ is, by definition, a strictly-increasing finite sequence $i_0<i_1<\cdots<i_n$ of elements of $I$ ($n\geq 0$); by definition, the \emph{length} of this chain is $n$.
 If $X$ is a topological space, the set of its \emph{irreducible closed} subsets is ordered by inclusion, and so we have the notion of a \emph{chain} of irreducible closed subsets of $X$.
 \end{env}
 
@@ -25,7 +25,7 @@ It follows from this definition that we have
 (the upper bound in $\overline{\bb{R}}$ of the empty set being $-\infty$).
 If $(X_\alpha)$ is the family of irreducible components of $X$, then we have
 \[
-\label{0.14.1.2.1}
+\label{eq:0.14.1.2.1}
   \dim(X)=\sup_\alpha\dim(X_\alpha),
   \tag{14.1.2.1}
 \]
@@ -173,7 +173,7 @@ if $K$ and $k$ are the field of fractions and the residue field of $A$ (respecti
 \end{rmk}
 
 \subsection{Codimension of a closed subset}
-\label{subsection:codimension-of-a-closed-subset}
+\label{subsection:0.14.2}
 
 \begin{defn}[14.2.1]
 \label{0.14.2.1}
@@ -183,10 +183,9 @@ We say that $X$ is equicodimensional if all the minimal irreducible closed subse
 \end{defn}
 
 It follows from this definition that $\codim(\emp,X)=+\infty$, since the lower bound of the empty set of $\overline{\bb{R}}$ is $+\infty$.
-If $Y$ is closed in $X$, and if $(X_\alpha)$ (resp. $(Y_\alpha)$) is the family of irreducible components of $X$ (resp. $Y$), then every $Y_\beta$ is contained in some $X_\alpha$, and, more generally, every chain of irreducible closed subsets of $X$ of which $Y_\beta$ is the smallest element is formed of subsets of some $X_\alpha$;
-we thus have
+If $Y$ is closed in $X$, and if $(X_\alpha)$ (resp.~$(Y_\alpha)$) is the family of irreducible components of $X$ (resp.~$Y$), then every $Y_\beta$ is contained in some $X_\alpha$, and, more generally, every chain of irreducible closed subsets of $X$ of which $Y_\beta$ is the smallest element is formed of subsets of some $X_\alpha$; we thus have
 \[
-\label{0.14.2.1.1}
+\label{eq:0.14.2.1.1}
   \codim(Y,X)=\inf_\beta(\sup_\alpha(\codim(Y_\beta,X_\alpha))),
   \tag{14.2.1.1}
 \]
@@ -198,20 +197,20 @@ Let $X$ be a topological space.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item If $\Phi$ is the set of irreducible closed subsets of $X$, then
     \[
-    \label{0.14.2.2.1}
+    \label{eq:0.14.2.2.1}
       \dim(X)=\sup_{Y\in\Phi}(\codim(Y,X)).
       \tag{14.2.2.1}
     \]
 \oldpage[0\textsubscript{IV-1}]{9}
   \item For every nonempty closed subset $Y$ of $X$, we have
     \[
-    \label{0.14.2.2.2}
+    \label{eq:0.14.2.2.2}
       \dim(Y)+\codim(Y,X)\leq\dim(X).
       \tag{14.2.2.2}
     \]
   \item If $Y$, $Z$, and $T$ are closed subsets of $X$ such that $Y\subset Z\subset T$, then
     \[
-    \label{0.14.2.2.3}
+    \label{eq:0.14.2.2.3}
       \codim(Y,Z)+\codim(Z,T)\leq\codim(Y,T).
        \tag{14.2.2.3}
     \]
@@ -302,7 +301,7 @@ Further, for every $x'\in U$, the irreducible components of $Y$ that contain $x'
 \end{proof}
 
 \subsection{The chain condition}
-\label{subsection:the-chain-condition}
+\label{subsection:0.14.3}
 
 \begin{env}[14.3.1]
 \label{0.14.3.1}

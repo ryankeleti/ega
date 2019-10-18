@@ -1,27 +1,28 @@
 \section{Supplement on flat modules}
-\label{section:supplement-on-flat-modules}
+\label{section:0.10}
 
-For any proofs missing in \hyperref[subsection:relations-between-flat-modules-and-free-modules]{(10.1)} and \hyperref[subsection:local-flatness-criteria]{(10.2)}, we refer the reader to Bourbaki, \emph{Alg. comm.}, chap.~II and III.
+For any proofs missing in \hyperref[subsection:0.10.1]{(10.1)} and \hyperref[subsection:0.10.2]{(10.2)}, we refer the reader to Bourbaki,~\emph{Alg.~comm.}, chap.~II and~III.
 
 \subsection{Relations between flat modules and free modules}
-\label{subsection:relations-between-flat-modules-and-free-modules}
+\label{subsection:0.10.1}
 
 \begin{env}[10.1.1]
 \label{0.10.1.1}
 Let $A$ be a ring, $\fk{J}$ an ideal of $A$, and $M$ an $A$-module;
 for every integer $p\geq0$, we have a canonical homomorphism of $(A/\fk{J})$-modules
-\begin{equation*}
+\[
 \label{0.10.1.1.1}
     \vphi_p: (M/\fk{J}M) \otimes_{A/\fk{J}} (\fk{J}^p/\fk{J}^{p+1}) \to \fk{J}^pM/\fk{J}^{p+1}M\tag{10.1.1.1}
-\end{equation*}
+\]
 which is evidently \emph{surjective}.
 We denote by $\gr(A)=\oplus_{p\geq0}\fk{J}^p/\fk{J}^{p+1}$ the graded ring associated to $A$ filtered by the $\fk{J}^p$, and by $\gr(M)=\oplus_{p\geq0}\fk{J}^pM/\fk{J}^{p+1}M$ the graded $\gr(A)$-module associated to $M$ filtered by the $\fk{J}^pM$;
 we then have $\gr_p(A)=\fk{J}^p/\fk{J}^{p+1}$, and $\gr_p(M)=\fk{J}^pM/\fk{J}^{p+1}M$;
 the $\vphi$ define a \emph{surjective} homomorphism of graded $\gr(A)$-modules
-\begin{equation*}
-\label{0.10.1.1.2}
-    \vphi: \gr_0(M) \otimes_{\gr_0(A)} \gr(A) \to \gr(M).\tag{10.1.1.2}
-\end{equation*}
+\[
+\label{eq:0.10.1.1.2}
+  \vphi:\gr_0(M)\otimes_{\gr_0(A)}\gr(A)\to\gr(M).
+  \tag{10.1.1.2}
+\]
 \end{env}
 
 \oldpage[0\textsubscript{III-1}]{18}
@@ -29,14 +30,14 @@ the $\vphi$ define a \emph{surjective} homomorphism of graded $\gr(A)$-modules
 \label{0.10.1.2}
 Suppose that \emph{one} of the following hypotheses is satisfied:
 \begin{enumerate}[label=\emph{(\roman*)}]
-    \item $\fk{J}$ is nilpotent;
-    \item $A$ is Noetherian, $\fk{J}$ is contained in the radical of $A$, and $M$ is of finite type.
+  \item $\fk{J}$ is nilpotent;
+  \item $A$ is Noetherian, $\fk{J}$ is contained in the radical of $A$, and $M$ is of finite type.
 \end{enumerate}
 Then the following properties are equivalent.
 \begin{enumerate}[label=\emph{(\alph*)}]
-    \item $M$ is a free $A$-module.
-    \item $M/\fk{J}M=N\otimes_A(A/\fk{J})$ is a free $(A/\fk{J})$-module, and $\Tor_1^A(M,A/\fk{J})=0$.
-    \item $M/\fk{J}M$ is a free $(A/\fk{J})$-module, and the canonical homomorphism \sref{0.10.1.1.2} is injective (and thus bijective).
+  \item $M$ is a free $A$-module.
+  \item $M/\fk{J}M=N\otimes_A(A/\fk{J})$ is a free $(A/\fk{J})$-module, and $\Tor_1^A(M,A/\fk{J})=0$.
+  \item $M/\fk{J}M$ is a free $(A/\fk{J})$-module, and the canonical homomorphism \sref{0.10.1.1.2} is injective (and thus bijective).
 \end{enumerate}
 \end{env}
 
@@ -45,22 +46,22 @@ Then the following properties are equivalent.
 Suppose that $A/\fk{J}$ is a \emph{field} (in other words, that $\fk{J}$ is maximal), and that one of the hypotheses, (i) and (ii), of \sref{0.10.1.2} is satisfied.
 Then the following properties are equivalent.
 \begin{enumerate}[label=\emph{(\alph*)}]
-    \item $M$ is a free $A$-module.
-    \item $M$ is a projective $A$-module.
-    \item $M$ is a flat $A$-module.
-    \item $\Tor_1^A(M,A/\fk{J})=0$.
-    \item The canonical homomorphism \sref{0.10.1.1.2} is bijective.
+  \item $M$ is a free $A$-module.
+  \item $M$ is a projective $A$-module.
+  \item $M$ is a flat $A$-module.
+  \item $\Tor_1^A(M,A/\fk{J})=0$.
+  \item The canonical homomorphism \sref{0.10.1.1.2} is bijective.
 \end{enumerate}
 \end{env}
 
 This result can be applied, in particular, to the following two cases:
 \begin{enumerate}[label=(\roman*)]
-    \item $M$ is an \emph{arbitrary} module, over a local ring $A$ whose maximal ideal $\fk{J}$ is \emph{nilpotent} (for example, a local Artinian ring);
-    \item $M$ is a module \emph{of finite type} over a \emph{local Noetherian} ring.
+  \item $M$ is an \emph{arbitrary} module, over a local ring $A$ whose maximal ideal $\fk{J}$ is \emph{nilpotent} (for example, a local Artinian ring);
+  \item $M$ is a module \emph{of finite type} over a \emph{local Noetherian} ring.
 \end{enumerate}
 
 \subsection{Local flatness criteria}
-\label{subsection:local-flatness-criteria}
+\label{subsection:0.10.2}
 
 \begin{env}[10.2.1]
 \label{0.10.2.1}
@@ -194,10 +195,10 @@ So let $\fk{m}$ be the maximal ideal of $A$, $\fk{p}_i$ ($1\leq i\leq r$) the mi
 We know \sref[II]{2.7.1.7} that there exists, for each $i$, a discrete valuation ring $B_i$ that has the same field of fractions $K_i$ as the integral ring $A/\fk{p}_i$, and that, further, dominates $A/\fk{p}_i$.
 Let $M_i=M\otimes_A B_i$.
 By hypothesis, $M_i$ is free over $B_i$, and so, denoting by $k_i$ the residue field of $B_i$, we have
-\begin{equation*}
+\[
 \label{0.10.2.8.1}
     \rg_{k_i}(M_i\otimes_{B_i}k_i) = \rg_{K_i}(M_i\otimes_{B_i}K_i).\tag{10.2.8.1}
-\end{equation*}
+\]
 
 But it is clear that the composite homomorphism $A\to A/\fk{p}_i\to B_i$ is local, and so $k$ is an extension of $k_i$, and that we have $M_i\otimes_{B_i}k_i = M\otimes_A k_i = (M\otimes_A k)\otimes_k k_i$, and also that $M_i\otimes_{B_i}K_i = M\otimes_A K_i$.
 Equation~\sref{0.10.2.8.1} thus implies that
@@ -208,7 +209,7 @@ and since $A$ is reduced, we know that this condition implies that $M$ is a \emp
 \end{proof}
 
 \subsection{Existence of flat extensions of local rings}
-\label{subsection:existence-of-flat-extensions-of-local-rings}
+\label{subsection:0.10.3}
 
 \begin{prop}[10.3.1]
 \label{0.10.3.1}
@@ -325,10 +326,11 @@ With this construction, it is clear that the ring $B=A_\gamma$ satisfies the con
 \end{env}
 
 We note that, by \sref{0.10.2.1}[c], we have a canonical isomorphism
-\begin{equation*}
-\label{0.10.3.1.5}
-    \gr(A)\otimes_k K\xrightarrow{\sim}\gr(B).\tag{10.3.1.5}
-\end{equation*}
+\[
+\label{eq:0.10.3.1.5}
+  \gr(A)\otimes_k K\xrightarrow{\sim}\gr(B).
+  \tag{10.3.1.5}
+\]
 
 We can also replace $B$ by its $\fk{J}B$-adic completion $\wh{B}$ without changing the conclusions of \sref{0.10.3.1}, because $\wh{B}$ is a flat $B$-module \sref[0\textsubscript{I}]{0.7.3.3}, and thus a flat $A$-module \sref[0\textsubscript{I}]{0.6.2.1}.
 
@@ -337,3 +339,4 @@ We have also shown the following:
 \label{0.10.3.2}
 If $K$ is an extension of finite degree, then we can assume that $B$ is a finite $A$-algebra.
 \end{cor}
+

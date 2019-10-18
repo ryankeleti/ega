@@ -1,25 +1,20 @@
 \section{Supplement on quasi-coherent sheaves}
-\label{section:supplement-on-qcoh}
+\label{section:1.9}
 
 \subsection{Tensor product of quasi-coherent sheaves}
-\label{subsection:tensor-product-of-qcoh}
+\label{subsection:1.9.1}
 
 \begin{prop}[9.1.1]
 \label{1.9.1.1}
 \oldpage[I]{169}
-Let $X$ be a prescheme (resp. a locally Noetherian prescheme). Let $\sh{F}$ and
-$\sh{G}$ be two quasi-coherent (resp. coherent) $\OO_X$-modules; then
-$\sh{F}\otimes_{\OO_X}\sh{G}$ is quasi-coherent (resp. coherent) and
-of finite type if $\sh{F}$ and $\sh{G}$ are of finite type. If
-$\sh{F}$ admits a finite presentation and if $\sh{G}$ is quasi-coherent
-(resp. coherent), then $\shHom(\sh{F},\sh{G})$ is quasi-coherent
-(resp. coherent).
+Let $X$ be a prescheme (resp.~a locally Noetherian prescheme).
+Let $\sh{F}$ and $\sh{G}$ be two quasi-coherent (resp.~coherent) $\OO_X$-modules; then $\sh{F}\otimes_{\OO_X}\sh{G}$ is quasi-coherent (resp.~coherent) and of finite type if $\sh{F}$ and $\sh{G}$ are of finite type.
+If $\sh{F}$ admits a finite presentation and if $\sh{G}$ is quasi-coherent (resp.~coherent), then $\shHom(\sh{F},\sh{G})$ is quasi-coherent (resp.~coherent).
 \end{prop}
 
 \begin{proof}
 \label{proof-1.9.1.1}
-Being a local property, we can suppose that $X$ is affine (resp. Noetherian
-affine); further, if $\sh{F}$ is coherent, then we can assume that it is the
+Being a local property, we can suppose that $X$ is affine (resp.~Noetherian affine); further, if $\sh{F}$ is coherent, then we can assume that it is the
 cokernel of a homomorphism $\OO_X^m\to\OO_X^n$. The claims pertaining to
 quasi-coherent sheaves then follow from the Corollaries \sref{1.1.3.12} and \sref{1.1.3.9}; the
 claims pertaining to coherent sheaves follow from Theorem \sref{1.1.5.1} and from the fact
@@ -30,13 +25,12 @@ then $M\otimes_A N$ and $\Hom_A(M,N)$ are $A$-modules of finite type.
 \begin{defn}[9.1.2]
 \label{1.9.1.2}
 Let $X$ and $Y$ be two $S$-preschemes, $p$ and
-$q$ the projections of $X\times_S Y$, and $\sh{F}$ (resp.$\sh{G}$) a
+$q$ the projections of $X\times_S Y$, and $\sh{F}$ (resp.~$\sh{G}$) a
 quasi-coherent $\OO_X$-module (resp. quasi-coherent $\OO_Y$-module). We define the
 tensor product of $\sh{F}$ and $\sh{G}$ over $\OO_S$ (\emph{or} over $S$),
-denoted by $\sh{F}\otimes_{\OO_S}\sh{G}$ (\emph{or}
-$\sh{F}\otimes_S\sh{G}$) to be the tensor product
-$p^*(\sh{F})\otimes_{\OO_{X\times_S Y}}q^*(\sh{G})$ over the
-prescheme $X\times_S Y$.
+denoted by $\sh{F}\otimes_{\OO_S}\sh{G}$
+(\emph{or} $\sh{F}\otimes_S\sh{G}$) to be the tensor product
+$p^*(\sh{F})\otimes_{\OO_{X\times_S Y}}q^*(\sh{G})$ over the prescheme $X\times_S Y$.
 \end{defn}
 
 If $X_i$ ($1\leq i\leq n$) are $S$-preschemes, and $\sh{F}_i$ are quasi-coherent
@@ -258,7 +252,7 @@ is, it remains to prove the following equation:
 \]
 
 The same reasoning as in \sref[0]{0.1.7.5} leads us to prove that, for all
-$z\in X\times_S Y$, we have $\OO_z/\fk{m}_x\OO_z\neq0$ (with $x=p(z)$),
+$z\in X\times_S Y$, we have $\OO_z/\mathfrak{m}_x\OO_z\neq0$ (with $x=p(z)$),
 which follows from the fact that the homomorphism $\OO_x\to\OO_z$ is \emph{local},
 by hypothesis.
 \end{proof}
@@ -267,7 +261,7 @@ We leave it to the reader to extend the results in this section to the more
 general case of arbitrarily (but finitely) many factors, instead of just two.
 
 \subsection{Direct image of a quasi-coherent sheaf}
-\label{subsection:direct-image-of-qcoh}
+\label{subsection:1.9.2.1}
 
 \begin{prop}[9.2.1]
 \label{1.9.2.1}
@@ -334,7 +328,7 @@ Case (b) is a particular case of (a) \sref{1.6.6.3}. Finally, in case (c), we ca
 \end{proof}
 
 \subsection{Extension of sections of quasi-coherent sheaves}
-\label{subsection:extension-of-sections-of-qcoh}
+\label{subsection:1.9.3}
 
 \begin{thm}[9.3.1]
 \label{1.9.3.1}
@@ -408,15 +402,15 @@ of $\OO_X|\sh{J}$. Then there exists a whole number $n>0$ such that $\sh{J}^n\sh
 \label{proof-1.9.3.4}
 Since $X$ is a union of finitely-many affine opens whose rings are Noetherian, we can suppose
 that $X$ is affine of Noetherian ring $A$; then $\sh{F}=\wt{M}$, where
-$M=\Gamma(X,\sh{F})$ is an $A$-module of finite type, and $\sh{J}=\wt{\fk{J}}$,
-where $\fk{J}=\Gamma(X,\sh{J})$ is an ideal of $A$ (\sref{1.1.4.1} and
-\sref{1.1.5.1}). Since $A$ is Noetherian, $\fk{J}$ admits a finite system of
+$M=\Gamma(X,\sh{F})$ is an $A$-module of finite type, and $\sh{J}=\wt{\mathfrak{J}}$,
+where $\mathfrak{J}=\Gamma(X,\sh{J})$ is an ideal of $A$ (\sref{1.1.4.1} and
+\sref{1.1.5.1}). Since $A$ is Noetherian, $\mathfrak{J}$ admits a finite system of
 generators $f_i$ ($1\leq i\leq m$). By hypothesis, every section of $\sh{F}$ over
 $X$ is zero on each of the $D(f_i)$; if $s_j$ ($1\leq j\leq q$) are sections of
 $\sh{F}$ generating $M$, then there exists a whole number $h$, independent of $i$ and $j$,
 such that $f_i^h s_j=0$ \sref{1.1.4.1}, whence $f_i^h s=0$ for all $s\in M$. We thus
-conclude that if $n=mh$ then $\fk{J}^n M=0$, and so the corresponding $\OO_X$-module
-$\sh{J}^n\sh{F}=\wt{\fk{J}^n M}$ \sref{1.1.3.13} is zero.
+conclude that if $n=mh$ then $\mathfrak{J}^n M=0$, and so the corresponding $\OO_X$-module
+$\sh{J}^n\sh{F}=\wt{\mathfrak{J}^n M}$ \sref{1.1.3.13} is zero.
 \end{proof}
 
 \begin{cor}[9.3.5]
@@ -437,7 +431,7 @@ follows immediately.
 \end{proof}
 
 \subsection{Extension of quasi-coherent sheaves}
-\label{subsection:extension-of-qcoh}
+\label{subsection:1.9.4}
 
 \begin{env}[9.4.1]
 \label{1.9.4.1}
@@ -649,7 +643,7 @@ $s|V=\sum_i a_i(t_i|V)$, which proves the corollary.
 \end{proof}
 
 \subsection{Closed image of a prescheme; closure of a subprescheme}
-\label{subsection:closed-image-and-closure}
+\label{subsection:1.9.5}
 
 \begin{prop}[9.5.1]
 \label{1.9.5.1}
@@ -820,7 +814,7 @@ If we take into account that the sections of $\OO_{\overline{Y}}$ over $\overlin
 When there exists a smaller closed subprescheme $Y'$ of $X$ majorizing a subprescheme $Y$ of $X$, we say that $Y'$ is the \emph{closure} of $Y$ in $X$, when there is little cause for confusion.
 
 \subsection{Quasi-coherent sheaves of algebras; change of structure sheaf}
-\label{subsection:qcoh-algs-and-change-of-str-sheaf}
+\label{subsection:1.9.6}
 
 \begin{prop}[9.6.1]
 \label{1.9.6.1}

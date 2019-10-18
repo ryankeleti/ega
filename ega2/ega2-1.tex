@@ -1,10 +1,10 @@
 \cite{I-1}.
 
 \section{Affine morphisms}
-\label{section:affine-morphisms}
+\label{section:2.1}
 
 \subsection{$S$-preschemes and $\mathcal{O}_S$-algebras}
-\label{subsection:s-preschemes-algebras}
+\label{subsection:2.1.1}
 
 \begin{env}[1.1.1]
 \label{2.1.1.1}
@@ -22,6 +22,7 @@ Similarly, for every $\OO_X$-module $\sh{F}$ (resp. every $\OO_X$-algebra $\sh{B
 \label{2.1.1.2}
 Let $Y$ be a second $S$-prescheme, $g:Y\to S$ its structure morphism, and $h:X\to Y$ an $S$-morphism; we then have the commutative diagram
 \[
+\label{eq:2.1.1.2.1}
   \xymatrix{
     X\ar[rr]^h\ar[rd]_f & &
     Y\ar[ld]^g\\
@@ -32,7 +33,7 @@ Let $Y$ be a second $S$-prescheme, $g:Y\to S$ its structure morphism, and $h:X\t
 
 We have by definition $h=(\psi,\theta)$, where $\theta:\OO_Y\to h_*(\OO_X)=\psi_*(\OO_X)$ is a homomorphism of sheaves of rings; we induce \sref[0]{0.4.2.2} a homomorphism of $\OO_S$-algebras $g_*(\theta):g_*(\OO_Y)\to g_*(h_*(\OO_X))=f_*(\OO_X)$, in other words, a homomorphism of $\OO_S$-algebras $\sh{A}(Y)\to\sh{A}(X)$, which we denote by $\sh{A}(h)$.
 If $h':Y\to Z$ is a second $S$-morphism, then it is immediate that $\sh{A}(h'\circ h)=\sh{A}(h)\circ\sh{A}(h')$.
-We havve thus define a \emph{contravariant functor $\sh{A}(X)$} from the category of $S$-preschemes to the category of $\OO_S$-algebras.
+We have thus defined a \emph{contravariant functor $\sh{A}(X)$} from the category of $S$-preschemes to the category of $\OO_S$-algebras.
 
 Now let $\sh{F}$ be an $\OO_X$-module, $\sh{G}$ an $\OO_Y$-module, and $u:\sh{G}\to\sh{F}$ an $h$-morphism, that is \sref[0]{0.4.4.1} a homomorphism of $\OO_Y$-modules $\sh{G}\to h_*(\sh{F})$.
 Then $g_*(u):g_*(\sh{G})\to g_*(h_*(\sh{F}))=f_*(\sh{F})$ is a homomorphism $\sh{A}(\sh{G})\to\sh{A}(\sh{F})$ of $\OO_S$-modules, which we denote by $\sh{A}(u)$; in addition, the pair $(\sh{A}(h),\sh{A}(u))$ form a \emph{di-homomorphism} from the $\sh{A}(Y)$-module $\sh{A}(\sh{G})$ to the $\sh{A}(X)$-module $\sh{A}(\sh{F})$.
@@ -45,7 +46,7 @@ We can theen say that $(\sh{A}(X),\sh{A}(\sh{F}))$ is a \emph{contravariant func
 \end{env}
 
 \subsection{Affine preschemes over a prescheme}
-\label{subsection:affine-preschemes-over-a-prescheme}
+\label{subsection:2.1.2}
 
 \begin{defn}[1.2.1]
 \label{2.1.2.1}
