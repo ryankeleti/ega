@@ -249,3 +249,61 @@ When the filtration of $K^\bullet$ is regular and exhaustive, and filtered induc
 \subsection{The spectral sequences of a bicomplex}
 \label{subsection-spectral-sequence-bicomplex}
 
+\begin{env}[11.3.1]
+\label{0.11.3.1}
+With regard the conventions for bicomplexes, we follow those of~(T,~2.4) rather than those of~(M), the two differentials $d'$ and $d''$ (of degree~$+1$) of such a bicomplex $K^{\bullet\bullet}=(K^{ij})$ being thus assumed to be \emph{permutable}.
+Suppose that \emph{one} of the following two conditions is satisifed: 1st.~\emph{Infinite direct sums} exist in $\C$; 2nd.~For all $n\in\bb{Z}$, there is only a \emph{finite} number of pairs $(p,q)$ such that $p+q=n$ and $K^{pq}\neq 0$.
+Then, the bicomplex $K^{\bullet\bullet}$ defines a (simple) \emph{complex} $(K^{\prime n})_{n\in\bb{Z}}$ with $K^{\prime n}=\sum_{i+j=n}K^{ij}$, the differential $d$ (of degree~$+1$) of this complex being given by $dx=d'x+(-1)^i d''x$ for $x\in K^{ij}$.
+When we later speak of the spectral sequence of a (simple) \emph{complex} that is \emph{defined by a bicomplex $K^{\bullet\bullet}$}, it will always be understood that of the above conditions is satisfied.
+We adopt the analogous conventions for multicomplexes.
+
+We denote by $K^{i,\bullet}$ (resp.~$K^{\bullet,j}$) the simple complex $(K^{ij})_{j\in\bb{Z}}$ (resp.~$(K^{ij})_{i\in\bb{Z}}$), by $Z_\text{II}^p(K^{i,\bullet})$, $B_\text{II}^p(K^{i,\bullet})$, $\HH_\text{II}^p(K^{i,\bullet})$ (resp.~$Z_\text{I}^p(K^{\bullet,j})$, $B_\text{I}^p(K^{\bullet,j})$, $\HH_\text{I}^p(K^{\bullet,j})$) its $p$ objects of cocycles, of coboundaries, and of cohomology, respectively; the differential $d':K^{i,\bullet}\to K^{i+1,\bullet}$ is a morphism of complexes, which thus gives an operator on the cocycles, coboundaries, and cohomology,
+\begin{align*}
+  d'&:Z_\text{II}^p(K^{i,\bullet})\to Z_\text{II}^p(K^{i+1,\bullet}),\\
+  d'&:B_\text{II}^p(K^{i,\bullet})\to B_\text{II}^p(K^{i+1,\bullet}),\\
+  d'&:\HH_\text{II}^p(K^{i,\bullet})\to\HH_\text{II}^p(K^{i+1,\bullet}),
+\end{align*}
+and it is clear that for these operators, $(Z_\text{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$, $(B_\text{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$, and $(\HH_\text{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$ are complexes; we denote the complex $(\HH_\text{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$ by $\HH_\text{II}^p(K^{\bullet\bullet})$, its $q$ objects of cocycles, coboundaries, and cohomology by $Z_\text{I}^q(\HH_\text{II}^p(K^{\bullet\bullet}))$, $B_\text{I}^q(\HH_\text{II}^p(K^{\bullet\bullet}))$, and $\HH_\text{I}^q(\HH_\text{II}^p(K^{\bullet\bullet}))$.
+We similarly define the complexes $\HH_\text{I}^p(K^{\bullet\bullet})$ and their cohomology objects $\HH_\text{II}^q(\HH_\text{I}^p(K^{\bullet\bullet}))$.
+Recall on the other hand that $\HH^n(K^{\bullet\bullet})$ denotes the $n$ object of the cohomology of the \emph{(simple)} complex defined by $K^{\bullet\bullet}$.
+\end{env}
+
+\begin{env}[11.3.2]
+\label{0.11.3.2}
+On the complex defined by a bicomplex $K^{\bullet\bullet}$, we can consider two canonical filtrations $(F_\text{I}^p(K^{\bullet\bullet}))$ and $(F_\text{II}^p(K^{\bullet\bullet}))$ given by
+\[
+\label{0.11.3.2.1}
+  F_\text{I}^p(K^{\bullet\bullet})=\left(\sum_{i+j=n,i\geq p}K^{ij}\right)_{n\in\bb{Z}}\quad\text{and}\quad F_\text{II}^p(K^{\bullet\bullet})=\left(\sum_{i+j=n,j\geq p}K^{ij}\right)_{n\in\bb{Z}},
+  \tag{11.3.2.1}
+\]
+\oldpage[0\textsubscript{III}]{30}
+which, by definition, are graded subobjects of the (simple) complex define by $K^{\bullet\bullet}$, and thus make this complex a filtered complex; moreover, is is clear that these filtrations are \emph{exhaustive} and \emph{separated}.
+
+There corresponds to each of these filtrations a spectral sequence~\sref{0.11.2.2}; we denote by $'E(K^{\bullet\bullet})$ and $''E(K^{\bullet\bullet})$ the spectral sequences corresponding to $(F_\text{I}^p(K^{\bullet\bullet}))$ and $(F_\text{II}^p(K^{\bullet\bullet}))$ respectively, called the \emph{spectral sequence of the bicomplex $K^{\bullet\bullet}$}, and both having as their abutment the cohomology $(\HH^n(K^{\bullet\bullet}))$.
+We show in addition~(M,~XV,~6) that we have
+\[
+\label{0.11.3.2.2}
+  'E_2^{pq}(K^{\bullet\bullet})=\HH_\text{I}^p(\HH_\text{II}^p(K^{\bullet\bullet})),\quad ''E_2^{pq}(K^{\bullet\bullet}))=\HH_\text{II}^p(\HH_\text{I}^p(K^{\bullet\bullet})).
+  \tag{11.3.2.2}
+\]
+
+Every morphism $u:K^{\bullet\bullet}\to K^{\prime\bullet\bullet}$ of bicomplexes is \emph{ipso facto} compatible with the filtrations of the same type of $K^{\bullet\bullet}$ and $K^{\prime\bullet\bullet}$, thus define a morphism for each of the two spectral sequences; in addition, two \emph{homotopic} morphisms define a homotopy \emph{of order $\leq 1$} of the corresponding filtered (simple) complexes, thus the \emph{same} morphism for each of the two spectral sequences~(M,~XV,~6.1).
+\end{env}
+
+\begin{prop}[11.3.3]
+\label{0.11.3.3}
+Let $K^{\bullet\bullet}=(K^{ij})$ be a bicomplex in an abelian category $\C$.
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item If there exist $i_0$ and $j_0$ such that $K^{ij}=0$ for $i<i_0$ or $j<j_0$ (resp.~$i>i_0$ or $j>j_0$), then the two spectral sequences $'E(K^{\bullet\bullet})$ and $''E(K^{\bullet\bullet})$ are biregular.
+  \item If there exist $i_0$ and $i_1$ such that $K^{ij}=0$ for $i<i_0$ or $i>i_1$ (resp.~if there exist $j_0$ and $j_1$ such that $K^{ij}=0$ for $j<j_0$ or $j>j_1$), then the two spectral sequences $'E(K^{\bullet\bullet})$ and $''E(K^{\bullet\bullet})$ are biregular.
+  \item If there exists $i_0$ such that $K^{ij}=0$ for $i>i_0$ (resp.~if there exists $j_0$ such that $K^{ij}=0$ for $j<j_0$), then the spectral sequence $'E(K^{\bullet\bullet})$ is regular.
+  \item If there exists $i_0$ such that $K^{ij}=0$ for $i<i_0$ (resp.~if there exists $j_0$ such that $K^{ij}=0$ for $j>j_0$), then the spectral sequence $''E(K^{\bullet\bullet})$ is regular.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\label{proof-0.11.3.3}
+The proposition follows immediately from the definitions~\sref{0.11.1.3} and from~\sref{0.11.2.4}, 
+\end{proof}
+
+
