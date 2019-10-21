@@ -161,21 +161,21 @@ As for the second assertion, it suffices to remark that there is a finite affine
 
 \begin{cor}[3.3.2]
 \label{3.3.3.2}
-Let $A$ be a Notherian ring, $\fk{m}$ an ideal of $A$, $X$ a proper $A$-scheme, and $\sh{F}$ a coherent $\OO_X$-module.
-Then, for all $p\geq 0$, the direct sum $\bigoplus_{k\geq 0}\HH^p(X,\fk{m}^k\sh{F})$ is a module of finite type over the ring $S=\bigoplus_{k\geq 0}\fk{m}^k$; in particular, there exists an integer $k_p\geq 0$ such that for all $k\geq k_p$ and all $r>0$, we have
+Let $A$ be a Notherian ring, $\mathfrak{m}$ an ideal of $A$, $X$ a proper $A$-scheme, and $\sh{F}$ a coherent $\OO_X$-module.
+Then, for all $p\geq 0$, the direct sum $\bigoplus_{k\geq 0}\HH^p(X,\mathfrak{m}^k\sh{F})$ is a module of finite type over the ring $S=\bigoplus_{k\geq 0}\mathfrak{m}^k$; in particular, there exists an integer $k_p\geq 0$ such that for all $k\geq k_p$ and all $r>0$, we have
 \[
 \label{3.3.3.2.1}
-  \HH^p(X,\fk{m}^{k+r}\sh{F})=\fk{m}^r\HH^p(X,\fk{m}^k\sh{F}).
+  \HH^p(X,\mathfrak{m}^{k+r}\sh{F})=\mathfrak{m}^r\HH^p(X,\mathfrak{m}^k\sh{F}).
   \tag{3.3.2.1}
 \]
 \end{cor}
 
 \begin{proof}
 \label{proof-3.3.3.2}
-It suffices to apply Proposition~\sref{3.3.3.1} with $Y=\Spec(A)$, $\sh{S}=\wt{S}$, $\sh{M}_k=\fk{m}^k\sh{F}$, taking into account Corollary~\sref{3.1.4.11}.
+It suffices to apply Proposition~\sref{3.3.3.1} with $Y=\Spec(A)$, $\sh{S}=\wt{S}$, $\sh{M}_k=\mathfrak{m}^k\sh{F}$, taking into account Corollary~\sref{3.1.4.11}.
 \end{proof}
 
-It should be remembered that the $S$-module structure on $\bigoplus_{k\geq 0}\HH^p(X,\fk{m}^k\sh{F})$ is obtained by considering, for every $a\in\fk{m}^r$, the map $\HH^p(X,\fk{m}^k\sh{F})\to\HH^p(X,\fk{m}^{k+r}\sh{F})$, which comes from the passage to cohomology of the multiplication map $\fk{m}^r\sh{F}\to\fk{m}^{k+r}\sh{F}$ defined by $a$~\sref{3.2.4.1}.
+It should be remembered that the $S$-module structure on $\bigoplus_{k\geq 0}\HH^p(X,\mathfrak{m}^k\sh{F})$ is obtained by considering, for every $a\in\mathfrak{m}^r$, the map $\HH^p(X,\mathfrak{m}^k\sh{F})\to\HH^p(X,\mathfrak{m}^{k+r}\sh{F})$, which comes from the passage to cohomology of the multiplication map $\mathfrak{m}^r\sh{F}\to\mathfrak{m}^{k+r}\sh{F}$ defined by $a$~\sref{3.2.4.1}.
 
 \subsection{Finiteness theorem: the case of formal schemes}
 \label{subsection:3.3.4}
@@ -185,13 +185,13 @@ The results of this section (except the definition~\sref{3.3.4.1}) will not be u
 
 \begin{env}[3.4.1]
 \label{3.3.4.1}
-Let $\fk{X}$ and $\fk{S}$ be two locally Noetherian formal preschemes~\sref[I]{1.10.4.2}, $f:\fk{X}\to\fk{S}$ a morphism of formal preschemes.
+Let $\mathfrak{X}$ and $\mathfrak{S}$ be two locally Noetherian formal preschemes~\sref[I]{1.10.4.2}, $f:\mathfrak{X}\to\mathfrak{S}$ a morphism of formal preschemes.
 We say that $f$ is a \emph{proper} morphism if it satisfies the following conditions:
 \begin{enumerate}
   \item[1st.] \emph{$f$ is a morphism of finite type~\sref[I]{1.10.13.3}}.
-  \item[2nd.] \emph{If $\sh{K}$ is a sheaf of ideals of definition for $\fk{S}$ and if we set $\sh{J}=f^*(\sh{K})\OO_\fk{X}$, $X_0=(\fk{X},\OO_\fk{X}/\sh{J})$, $S_0=(\fk{S},\OO_\fk{S}/\sh{K})$, then the morphism $f_0:X_0\to S_0$ induced by $f$~\sref[I]{1.10.5.6} is proper}.
+  \item[2nd.] \emph{If $\sh{K}$ is a sheaf of ideals of definition for $\mathfrak{S}$ and if we set $\sh{J}=f^*(\sh{K})\OO_\mathfrak{X}$, $X_0=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J})$, $S_0=(\mathfrak{S},\OO_\mathfrak{S}/\sh{K})$, then the morphism $f_0:X_0\to S_0$ induced by $f$~\sref[I]{1.10.5.6} is proper}.
 \end{enumerate}
-It is immediate that this definition does not depend on the sheaf of ideals of definition $\sh{K}$ for $\sh{S}$ considered; indeed, if $\sh{K}'$ is a second sheaf of ideals of definition such that $\sh{K}'\subset\sh{K}$, and if we set $\sh{J}'=f^*(\sh{K}')\OO_\fk{X}$, $X_0'=(\fk{X},\OO_\fk{X}/\sh{J}')$, $S_0'=(\sh{S},\OO_\fk{S}/\sh{K}')$, then the morphism $f_0':X_0'\to S_0'$ induced by $f$ is such that the diagram
+It is immediate that this definition does not depend on the sheaf of ideals of definition $\sh{K}$ for $\sh{S}$ considered; indeed, if $\sh{K}'$ is a second sheaf of ideals of definition such that $\sh{K}'\subset\sh{K}$, and if we set $\sh{J}'=f^*(\sh{K}')\OO_\mathfrak{X}$, $X_0'=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}')$, $S_0'=(\sh{S},\OO_\mathfrak{S}/\sh{K}')$, then the morphism $f_0':X_0'\to S_0'$ induced by $f$ is such that the diagram
 \[
   \xymatrix{
     X_0\ar[r]^{f_0}\ar[d]_i &
@@ -202,140 +202,140 @@ It is immediate that this definition does not depend on the sheaf of ideals of d
 \]
 is commutative, $i$ and $j$ being surjective immersions; it is equivalent to say that $f_0$ or $f_0'$ is proper, by virtue of~\sref[II]{2.5.4.5}.
 
-We note that, for all $n\geq 0$, if we set $X_n=(\fk{X},\OO_\fk{X}/\sh{J}^{n+1})$, $S_n=(\fk{S},\OO_\fk{S}/\sh{K}^{n+1})$, then the morphism $f_n:X_n\to S_n$ induced by $f$~\sref[I]{1.10.5.6} is proper for all $n$ whenever it is for $n=0$~\sref[II]{2.5.4.6}.
+We note that, for all $n\geq 0$, if we set $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$, $S_n=(\mathfrak{S},\OO_\mathfrak{S}/\sh{K}^{n+1})$, then the morphism $f_n:X_n\to S_n$ induced by $f$~\sref[I]{1.10.5.6} is proper for all $n$ whenever it is for $n=0$~\sref[II]{2.5.4.6}.
 
 If $g:Y\to Z$ is a proper morphism of locally Noetherian usual preschemes, $Z'$ a closed subset of $Z$, $Y'$ a closed subset of $Y$ such that $g(Y')\subset Z'$, then the extension $\wh{g}:Y_{/Y'}\to Z_{/Z'}$ of $g$ to the completions~\sref[I]{1.10.9.1} is a proper morphism of formal preschemes, as it follows from the definition and from~\sref[II]{2.5.4.5}.
 
-Let $\fk{X}$ and $\fk{S}$ be two locally Noetherian formal preschemes, $f:\fk{X}\to\fk{S}$ a morphism \emph{of finite type}~\sref[I]{1.10.13.3}; the notation being the same as above, we say that a subset $Z$ of the underlying space of $\fk{X}$ is \emph{proper} over $\fk{S}$ (or proper for $f$) if, considered as a subset of $X_0$, $Z$ is \emph{proper over $S_0$}~\sref[II]{2.5.4.10}.
+Let $\mathfrak{X}$ and $\mathfrak{S}$ be two locally Noetherian formal preschemes, $f:\mathfrak{X}\to\mathfrak{S}$ a morphism \emph{of finite type}~\sref[I]{1.10.13.3}; the notation being the same as above, we say that a subset $Z$ of the underlying space of $\mathfrak{X}$ is \emph{proper} over $\mathfrak{S}$ (or proper for $f$) if, considered as a subset of $X_0$, $Z$ is \emph{proper over $S_0$}~\sref[II]{2.5.4.10}.
 All the properties of proper subsets of usual preschemes stated in~\sref[II]{2.5.4.10} are still true for the proper subsets of formal preschemes, as it follows immediately from the definitions.
 \end{env}
 
 \begin{thm}[3.4.2]
 \label{3.3.4.2}
-Let $\fk{X}$ and $\fk{Y}$ be locally Noetherian formal preschemes, $f:\fk{X}\to\fk{Y}$ a proper morphism.
-For every coherent $\OO_\fk{X}$-module $\sh{F}$, the $\OO_\fk{Y}$-modules $\RR^q f_*(\sh{F})$ are coherent for all $q\geq 0$.
+Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Noetherian formal preschemes, $f:\mathfrak{X}\to\mathfrak{Y}$ a proper morphism.
+For every coherent $\OO_\mathfrak{X}$-module $\sh{F}$, the $\OO_\mathfrak{Y}$-modules $\RR^q f_*(\sh{F})$ are coherent for all $q\geq 0$.
 \end{thm}
 
-Let $\sh{J}$ be a sheaf of ideals of definition for $\fk{Y}$, $\sh{K}=f^*(\sh{J})\OO_\fk{X}$, and consider the $\OO_\fk{X}$-modules
+Let $\sh{J}$ be a sheaf of ideals of definition for $\mathfrak{Y}$, $\sh{K}=f^*(\sh{J})\OO_\mathfrak{X}$, and consider the $\OO_\mathfrak{X}$-modules
 \[
 \label{3.3.4.2.1}
-  \sh{F}_k=\sh{F}\otimes_{\OO_\fk{Y}}(\OO_\fk{Y}/\sh{J}^{k+1})=\sh{F}/\sh{K}^{k+1}\sh{F}\quad(k\geq 0)
+  \sh{F}_k=\sh{F}\otimes_{\OO_\mathfrak{Y}}(\OO_\mathfrak{Y}/\sh{J}^{k+1})=\sh{F}/\sh{K}^{k+1}\sh{F}\quad(k\geq 0)
   \tag{3.4.2.1}
 \]
-which evidently form a \emph{projective system} of topological $\OO_\fk{X}$-modules, such that
+which evidently form a \emph{projective system} of topological $\OO_\mathfrak{X}$-modules, such that
 \oldpage[III]{120}
 $\sh{F}=\varprojlim_k\sh{F}_k$~\sref[I]{1.10.11.3}.
-On the other hand, it follows from Theorem~\sref{3.3.4.2} that each of the $\RR^q f_*(\sh{F})$, being coherent, is naturally equipped with a topological $\OO_\fk{Y}$-module structure~\sref[I]{1.10.11.6}, and so are the $\RR^q f_*(\sh{F}_k)$.
+On the other hand, it follows from Theorem~\sref{3.3.4.2} that each of the $\RR^q f_*(\sh{F})$, being coherent, is naturally equipped with a topological $\OO_\mathfrak{Y}$-module structure~\sref[I]{1.10.11.6}, and so are the $\RR^q f_*(\sh{F}_k)$.
 The canonical homomorphisms $\sh{F}\to\sh{F}_k=\sh{F}/\sh{K}^{k+1}\sh{F}$ canonically correspond to homomorphisms
 \[
   \RR^q f_*(\sh{F})\to\RR^q f_*(\sh{F}_k),
 \]
-which are necessarily continuous for the topological $\OO_\fk{Y}$-module structures above~\sref[I]{1.10.11.6}, and form a projective system, giving the limit a canonical functorial homomorphism
+which are necessarily continuous for the topological $\OO_\mathfrak{Y}$-module structures above~\sref[I]{1.10.11.6}, and form a projective system, giving the limit a canonical functorial homomorphism
 \[
 \label{3.3.4.2.2}
   \RR^q f_*(\sh{F})\to\varprojlim_k\RR^q f_*(\sh{F}_k),
   \tag{3.4.2.2}
 \]
-which will be a continuous homomorphism of topological $\OO_\fk{Y}$-modules.
+which will be a continuous homomorphism of topological $\OO_\mathfrak{Y}$-modules.
 We will prove along with Theorem~\sref{3.3.4.2} the
 \begin{cor}[3.4.3]
 \label{3.3.4.3}
 Each of the homomorphisms~(3.4.2.2) is a topological isomorphism.
-In addition, if $\fk{Y}$ is Noetherian, then the projective system $(\RR^q f_*(\sh{F}/\sh{K}^{k+1}\sh{F}))_{k\geq 0}$ satisfies the \emph{(ML)}-condition~\sref[0]{0.13.1.1}.
+In addition, if $\mathfrak{Y}$ is Noetherian, then the projective system $(\RR^q f_*(\sh{F}/\sh{K}^{k+1}\sh{F}))_{k\geq 0}$ satisfies the \emph{(ML)}-condition~\sref[0]{0.13.1.1}.
 \end{cor}
 We will begin by establishing Theorem~\sref{3.3.4.2} and Corollary~\sref{3.3.4.3} when $Y$ is a Noetherian formal affine scheme~\sref[I]{1.10.4.1}:
 \begin{cor}[3.4.4]
 \label{3.3.4.4}
-Under the hypotheses of Theorem~\sref{3.3.4.2}, suppose in addition that $\fk{Y}=\Spf(A)$, where $A$ is an adic Noetherian ring.
-Let $\fk{J}$ be an ideal of definition for $A$, and set $\sh{F}_k=\sh{F}/\fk{J}^{k+1}\sh{F}$ for $k\geq 0$.
-Then the $\HH^n(\fk{X},\sh{F})$ are $A$-modules of finite type; the projective system $(\HH^n(\fk{X},\sh{F}_k))_{k\geq 0}$ satisfies the \emph{(ML)}-condition for all $n$; if we set
+Under the hypotheses of Theorem~\sref{3.3.4.2}, suppose in addition that $\mathfrak{Y}=\Spf(A)$, where $A$ is an adic Noetherian ring.
+Let $\mathfrak{J}$ be an ideal of definition for $A$, and set $\sh{F}_k=\sh{F}/\mathfrak{J}^{k+1}\sh{F}$ for $k\geq 0$.
+Then the $\HH^n(\mathfrak{X},\sh{F})$ are $A$-modules of finite type; the projective system $(\HH^n(\mathfrak{X},\sh{F}_k))_{k\geq 0}$ satisfies the \emph{(ML)}-condition for all $n$; if we set
 \[
 \label{3.3.4.4.1}
-  N_{n,k}=\Ker\big(\HH^n(\fk{X},\sh{F})\to\HH^n(\fk{X},\sh{F}_k)\big)
+  N_{n,k}=\Ker\big(\HH^n(\mathfrak{X},\sh{F})\to\HH^n(\mathfrak{X},\sh{F}_k)\big)
   \tag{3.4.4.1}
 \]
-(also equal to $\Im(\HH^n(\fk{X},\fk{J}^{k+1}\sh{F})\to\HH^n(\fk{X},\sh{F}))$ by the exact sequence in cohomology), then the $N_{n,k}$ define on $\HH^n(\fk{X},\sh{F})$ a $\fk{J}$-good filtration~\sref[0]{0.13.7.7}; finally, the canonical homomorphism
+(also equal to $\Im(\HH^n(\mathfrak{X},\mathfrak{J}^{k+1}\sh{F})\to\HH^n(\mathfrak{X},\sh{F}))$ by the exact sequence in cohomology), then the $N_{n,k}$ define on $\HH^n(\mathfrak{X},\sh{F})$ a $\mathfrak{J}$-good filtration~\sref[0]{0.13.7.7}; finally, the canonical homomorphism
 \[
 \label{3.3.4.4.2}
-  \HH^n(\fk{X},\sh{F})\to\varprojlim_k\HH^n(\fk{X},\sh{F}_k)
+  \HH^n(\mathfrak{X},\sh{F})\to\varprojlim_k\HH^n(\mathfrak{X},\sh{F}_k)
   \tag{3.4.4.2}
 \]
-is a topological isomorphism for all $n$ (the left hand side being equipped with the $\fk{J}$-adic topology, the $\HH^n(\fk{X},\sh{F}_k)$ with the discrete topology).
+is a topological isomorphism for all $n$ (the left hand side being equipped with the $\mathfrak{J}$-adic topology, the $\HH^n(\mathfrak{X},\sh{F}_k)$ with the discrete topology).
 \end{cor}
 
 Set
 \[
 \label{3.3.4.4.3}
-  S=\gr(A)=\bigoplus_{k\geq 0}\fk{J}^k/\fk{J}^{k+1},\ \sh{M}=\gr(\sh{F})=\bigoplus_{k\geq 0}\fk{J}^k\sh{F}/\fk{J}^{k+1}\sh{F}.
+  S=\gr(A)=\bigoplus_{k\geq 0}\mathfrak{J}^k/\mathfrak{J}^{k+1},\ \sh{M}=\gr(\sh{F})=\bigoplus_{k\geq 0}\mathfrak{J}^k\sh{F}/\mathfrak{J}^{k+1}\sh{F}.
 \]
-We know that $\fk{J}^\Delta$ is a sheaf of ideals of definition for $\fk{Y}$~\sref[I]{1.10.3.1}; let $\sh{K}=f^*(\fk{J}^\Delta)\OO_\fk{X}$, $X_0=(\fk{X},\OO_\fk{X}/\sh{K})$, $Y_0=(\fk{Y},\OO_\fk{Y}/\fk{J}^\Delta)=\Spec(A_0)$, with $A_0=A/\fk{J}$.
-It is clear that the $\sh{M}_k=\fk{J}^k\sh{F}/\fk{J}^{k+1}\sh{F}$ are coherent $\OO_{X_0}$-modules~\sref[I]{1.10.11.3}.
+We know that $\mathfrak{J}^\Delta$ is a sheaf of ideals of definition for $\mathfrak{Y}$~\sref[I]{1.10.3.1}; let $\sh{K}=f^*(\mathfrak{J}^\Delta)\OO_\mathfrak{X}$, $X_0=(\mathfrak{X},\OO_\mathfrak{X}/\sh{K})$, $Y_0=(\mathfrak{Y},\OO_\mathfrak{Y}/\mathfrak{J}^\Delta)=\Spec(A_0)$, with $A_0=A/\mathfrak{J}$.
+It is clear that the $\sh{M}_k=\mathfrak{J}^k\sh{F}/\mathfrak{J}^{k+1}\sh{F}$ are coherent $\OO_{X_0}$-modules~\sref[I]{1.10.11.3}.
 Consider on the other hand the quasi-coherent graded $\OO_{X_0}$-algebra
 \[
 \label{3.3.4.4.4}
-  \sh{S}=\OO_{X_0}\otimes_{A_0}S=\gr(\OO_\fk{X})=\bigoplus_{k\geq 0}\sh{K}^k/\sh{K}^{k+1}.
+  \sh{S}=\OO_{X_0}\otimes_{A_0}S=\gr(\OO_\mathfrak{X})=\bigoplus_{k\geq 0}\sh{K}^k/\sh{K}^{k+1}.
   \tag{3.4.4.4}
 \]
 
-The hypothesis that $\sh{F}$ is a $\OO_\fk{X}$-module of finite type implies first that $\sh{M}$ is
+The hypothesis that $\sh{F}$ is a $\OO_\mathfrak{X}$-module of finite type implies first that $\sh{M}$ is
 \oldpage[III]{121}
 a graded $\sh{S}$-module \emph{of finite type}.
-Indeed, the question is local on $\fk{X}$, and we can thus suppose that $\fk{X}=\Spf(B)$, where $B$ is an adic Noetherian ring, and $\sh{F}=N^\Delta$, where $N$ is a $B$-module of finite type~\sref[I]{1.10.10.5}; we have in addition $X_0=\Spec(B_0)$, where $B_0=B/\fk{J}B$, and the quasi-coherent $\OO_{X_0}$-modules $\sh{S}$ and $\sh{M}$ are respectively equal to $\wt{S'}$ and $\wt{M'}$, where $S'=\bigoplus_{k\geq 0}((\fk{J}^k/\fk{J}^{k+1})\otimes_{A_0}B_0)$ and $M'=\bigoplus_{k\geq 0}((\fk{J}^k/\fk{J}^{k+1})\otimes_{A_0}N_0)$, with $N_0=N/\fk{J}N$; we then evidently have $M'=S'\otimes_{B_0}N_0$, and as $N_0$ is a $B_0$-module of finite type, $M'$ is a $S'$-module of finite type, hence our assertion~\sref[I]{1.1.3.13}.
+Indeed, the question is local on $\mathfrak{X}$, and we can thus suppose that $\mathfrak{X}=\Spf(B)$, where $B$ is an adic Noetherian ring, and $\sh{F}=N^\Delta$, where $N$ is a $B$-module of finite type~\sref[I]{1.10.10.5}; we have in addition $X_0=\Spec(B_0)$, where $B_0=B/\mathfrak{J}B$, and the quasi-coherent $\OO_{X_0}$-modules $\sh{S}$ and $\sh{M}$ are respectively equal to $\wt{S'}$ and $\wt{M'}$, where $S'=\bigoplus_{k\geq 0}((\mathfrak{J}^k/\mathfrak{J}^{k+1})\otimes_{A_0}B_0)$ and $M'=\bigoplus_{k\geq 0}((\mathfrak{J}^k/\mathfrak{J}^{k+1})\otimes_{A_0}N_0)$, with $N_0=N/\mathfrak{J}N$; we then evidently have $M'=S'\otimes_{B_0}N_0$, and as $N_0$ is a $B_0$-module of finite type, $M'$ is a $S'$-module of finite type, hence our assertion~\sref[I]{1.1.3.13}.
 
 As the morphism $f_0:X_0\to Y_0$ is \emph{proper} by hypothesis, we can apply Corollary~\sref{3.3.3.2} to $\sh{S}$, $\sh{M}$, and the morphism $f_0$: taking into account Corollary~\sref{3.1.4.11}, we conclude that for \emph{all $n\geq 0$}, $\bigoplus_{k\geq 0}\HH^n(X_0,\sh{M}_k)$ is a graded $S$-module \emph{of finite type}.
-This proves that the condition ($\text{F}_n$) of~\sref[0]{0.13.7.7} is satisfied for \emph{all $n\geq 0$}, when we consider the strictly projective system $(\sh{F}/\fk{J}^k\sh{F})_{k\geq 0}$ of sheaves of abelian groups on $X_0$, each equipped with its natural ``filtered $A$-module'' structure.
+This proves that the condition ($\text{F}_n$) of~\sref[0]{0.13.7.7} is satisfied for \emph{all $n\geq 0$}, when we consider the strictly projective system $(\sh{F}/\mathfrak{J}^k\sh{F})_{k\geq 0}$ of sheaves of abelian groups on $X_0$, each equipped with its natural ``filtered $A$-module'' structure.
 We can thus apply~\sref[0]{0.13.7.7}, which proves that:
 \begin{enumerate}
-  \item[1st.] The projective system $(\HH^n(\fk{X},\sh{F}_k))_{k\geq 0}$ satisfies the (ML)-condition.
-  \item[2nd.] If $\HH^{\prime n}=\varprojlim_k\HH^n(\fk{X},\sh{F}_k)$, then $\HH^{\prime n}$ is an $A$-module of finite type.
-  \item[3rd.] The filtration defined on $\HH^{\prime n}$ by the kernels of the canonical homomorphisms $\HH^{\prime n}\to\HH^n(\fk{X},\sh{F}_k)$ is $\fk{J}$-good.
+  \item[1st.] The projective system $(\HH^n(\mathfrak{X},\sh{F}_k))_{k\geq 0}$ satisfies the (ML)-condition.
+  \item[2nd.] If $\HH^{\prime n}=\varprojlim_k\HH^n(\mathfrak{X},\sh{F}_k)$, then $\HH^{\prime n}$ is an $A$-module of finite type.
+  \item[3rd.] The filtration defined on $\HH^{\prime n}$ by the kernels of the canonical homomorphisms $\HH^{\prime n}\to\HH^n(\mathfrak{X},\sh{F}_k)$ is $\mathfrak{J}$-good.
 \end{enumerate}
 
-Note that on the other hand, if we set $X_k=(\fk{X},\OO_\fk{X}/\sh{K}^{k+1})$, then $\sh{F}_k$ is a coherent $\OO_{X_k}$-module~\sref[I]{1.10.11.3}, and if $U$ is an affine open set in $X_0$, then $U$ is also an affine open set in each of the $X_k$~\sref[I]{1.5.1.9}, so $\HH^n(U,\sh{F}_k)=0$ for all $n>0$ and all $k$~\sref{3.1.3.1} and $\HH^0(U,\sh{F}_k)\to\HH^0(U,\sh{F}_h)$ is surjective for $h\leq k$~\sref[I]{1.1.3.9}.
-We are thus in the conditions of~\sref[0]{0.13.3.2} and applying~\sref[0]{0.13.3.1} proves that $\HH^{\prime n}$ canonically identifies with $\HH^n(\fk{X},\varprojlim_k\sh{F}_k)=\HH^n(\fk{X},\sh{F})$; this finishes the proof of Corollary~\sref{3.3.4.4}.
+Note that on the other hand, if we set $X_k=(\mathfrak{X},\OO_\mathfrak{X}/\sh{K}^{k+1})$, then $\sh{F}_k$ is a coherent $\OO_{X_k}$-module~\sref[I]{1.10.11.3}, and if $U$ is an affine open set in $X_0$, then $U$ is also an affine open set in each of the $X_k$~\sref[I]{1.5.1.9}, so $\HH^n(U,\sh{F}_k)=0$ for all $n>0$ and all $k$~\sref{3.1.3.1} and $\HH^0(U,\sh{F}_k)\to\HH^0(U,\sh{F}_h)$ is surjective for $h\leq k$~\sref[I]{1.1.3.9}.
+We are thus in the conditions of~\sref[0]{0.13.3.2} and applying~\sref[0]{0.13.3.1} proves that $\HH^{\prime n}$ canonically identifies with $\HH^n(\mathfrak{X},\varprojlim_k\sh{F}_k)=\HH^n(\mathfrak{X},\sh{F})$; this finishes the proof of Corollary~\sref{3.3.4.4}.
 
 \begin{env}[3.4.5]
 \label{3.3.4.5}
 We return to the proof of~\sref{3.3.4.2} and~\sref{3.3.4.3}.
-We first prove the propositions for the case $\fk{Y}=\Spf(A)$ envissaged in~\sref{3.3.4.4}; for this, for all $g\in A$, apply~\sref{3.3.4.4} to the Noetherian affine formal scheme induced on the open set $\fk{Y}_g=\fk{D}(g)$ of $\fk{Y}$, which is equal to $\Spf(A_{\{g\}})$, and to the formal prescheme induced by $\fk{X}$ on $f^{-1}(\fk{Y}_g)$; note that $\fk{Y}_g$ is also an affine open set in the prescheme $Y_k=(\fk{Y},\OO_\fk{Y}/(\fk{J}^\Delta)^{k+1})$, and as $\sh{F}_k$ is a coherent $\OO_{X_k}$-module, we have
+We first prove the propositions for the case $\mathfrak{Y}=\Spf(A)$ envissaged in~\sref{3.3.4.4}; for this, for all $g\in A$, apply~\sref{3.3.4.4} to the Noetherian affine formal scheme induced on the open set $\mathfrak{Y}_g=\mathfrak{D}(g)$ of $\mathfrak{Y}$, which is equal to $\Spf(A_{\{g\}})$, and to the formal prescheme induced by $\mathfrak{X}$ on $f^{-1}(\mathfrak{Y}_g)$; note that $\mathfrak{Y}_g$ is also an affine open set in the prescheme $Y_k=(\mathfrak{Y},\OO_\mathfrak{Y}/(\mathfrak{J}^\Delta)^{k+1})$, and as $\sh{F}_k$ is a coherent $\OO_{X_k}$-module, we have
 \[
-  \HH^n(f^{-1}(\fk{Y}_g),\sh{F}_k)=\Gamma(\fk{Y}_g,\RR^n f_*(\sh{F}_k))
+  \HH^n(f^{-1}(\mathfrak{Y}_g),\sh{F}_k)=\Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}_k))
 \]
 for all $k\geq 0$ by virtue of Corollary~\sref{3.1.4.11}.
 The canonical homomorphism
 \[
-  \HH^n(f^{-1}(\fk{Y}_g),\sh{F})\to\varprojlim_k\Gamma(\fk{Y}_g,\RR^n f_*(\sh{F}_k))
+  \HH^n(f^{-1}(\mathfrak{Y}_g),\sh{F})\to\varprojlim_k\Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}_k))
 \]
 is an isomorphism; but we have~\sref[0]{0.3.2.6}
 \[
-  \varprojlim_k\Gamma(\fk{Y}_g,\RR^n f_*(\sh{F}_k))=\Gamma(\fk{Y}_g,\varprojlim_k\RR^n f_*(\sh{F}_k)),
+  \varprojlim_k\Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}_k))=\Gamma(\mathfrak{Y}_g,\varprojlim_k\RR^n f_*(\sh{F}_k)),
 \]
 \oldpage[III]{122}
-and as the sheaf $\RR^n f_*(\sh{F})$ is the sheaf associated to the presheaf $\fk{Y}_g\mapsto\HH^n(f^{-1}(\fk{Y}_g),\sh{F})$ on the $\fk{Y}_g$~\sref[0]{0.3.2.1}, we have shown that the homormorphism~(3.4.2.2) is \emph{bijective}.
-Let us now prove that $\RR^n f_*(\sh{F})$ is a coherent $\OO_\fk{Y}$-module, and more precisely that we have
+and as the sheaf $\RR^n f_*(\sh{F})$ is the sheaf associated to the presheaf $\mathfrak{Y}_g\mapsto\HH^n(f^{-1}(\mathfrak{Y}_g),\sh{F})$ on the $\mathfrak{Y}_g$~\sref[0]{0.3.2.1}, we have shown that the homormorphism~(3.4.2.2) is \emph{bijective}.
+Let us now prove that $\RR^n f_*(\sh{F})$ is a coherent $\OO_\mathfrak{Y}$-module, and more precisely that we have
 \[
 \label{3.3.4.5.1}
-  \RR^n f_*(\sh{F})=\big(\HH^n(\fk{X},\sh{F})\big)^\Delta.
+  \RR^n f_*(\sh{F})=\big(\HH^n(\mathfrak{X},\sh{F})\big)^\Delta.
   \tag{3.4.5.1}
 \]
 
 With the above notation, we have, since $\sh{F}_k$ is a coherent $\OO_{X_k}$-module~\sref{3.1.4.13},
 \[
-  \Gamma(\fk{Y}_g,\RR^n f_*(\sh{F}_k))=(\Gamma(\fk{Y},\RR^n f_*(\sh{F}_k)))_g=(\HH^n(\fk{X},\sh{F}_k))_g.
+  \Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}_k))=(\Gamma(\mathfrak{Y},\RR^n f_*(\sh{F}_k)))_g=(\HH^n(\mathfrak{X},\sh{F}_k))_g.
 \]
 
-Now the $\HH^n(\fk{X},\sh{F}_k)$ form a projective system satisfying (ML), and their projective limit $\HH^n(\fk{X},\sh{F})$ is an $A$-module of finite type.
+Now the $\HH^n(\mathfrak{X},\sh{F}_k)$ form a projective system satisfying (ML), and their projective limit $\HH^n(\mathfrak{X},\sh{F})$ is an $A$-module of finite type.
 We conclude~\sref[0]{0.13.7.8} that we have
 \[
-  \varprojlim_k\big((\HH^n(\fk{X},\sh{F}_k))_g\big)=\HH^n(\fk{X},\sh{F})\otimes_A A_{\{g\}}=\Gamma(\fk{Y}_g,(\HH^n(\fk{X},\sh{F}))^\Delta),
+  \varprojlim_k\big((\HH^n(\mathfrak{X},\sh{F}_k))_g\big)=\HH^n(\mathfrak{X},\sh{F})\otimes_A A_{\{g\}}=\Gamma(\mathfrak{Y}_g,(\HH^n(\mathfrak{X},\sh{F}))^\Delta),
 \]
-taking into account~\sref[I]{1.10.10.8} applied to $A$ and $A_{\{g\}}$; this proves~(3.4.5.1) since $\Gamma(\fk{Y}_g,\RR^n f_*(\sh{F}))=\varprojlim_k\Gamma(\fk{Y}_g,\RR^n f_*(\sh{F}_k))$.
+taking into account~\sref[I]{1.10.10.8} applied to $A$ and $A_{\{g\}}$; this proves~(3.4.5.1) since $\Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}))=\varprojlim_k\Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}_k))$.
 
-As~(3.4.2.2) is then an isomorphism of coherent $\OO_\fk{Y}$-modules, it is necessarily a \emph{topological} isomorphism~\sref[I]{1.10.11.6}.
-Finally, it follows from the relations $\RR^n f_*(\sh{F}_k)=(\HH^n(\fk{X},\sh{F}_k))^\Delta$ that the projective system $(\RR^n f_*(\sh{F}_k))_{k\geq 0}$ satisfies (ML)~\sref[I]{1.10.10.2}.
+As~(3.4.2.2) is then an isomorphism of coherent $\OO_\mathfrak{Y}$-modules, it is necessarily a \emph{topological} isomorphism~\sref[I]{1.10.11.6}.
+Finally, it follows from the relations $\RR^n f_*(\sh{F}_k)=(\HH^n(\mathfrak{X},\sh{F}_k))^\Delta$ that the projective system $(\RR^n f_*(\sh{F}_k))_{k\geq 0}$ satisfies (ML)~\sref[I]{1.10.10.2}.
 
-Once~\sref{3.3.4.2} and~\sref{3.3.4.3} are proved in the case where the formal prescheme $\fk{Y}$ is affine Noetherian, it is immediate to pass to the general case for~\sref{3.3.4.2} and the first assertion of~\sref{3.3.4.3}, which are local on $\fk{Y}$.
-As for the second assertion of~\sref{3.3.4.3}, it suffices, $\fk{Y}$ being Noetherian, to cover it by a finite number of Noetherian affine open sets $U_i$ and to note that the restricyions of the projective system $(\RR^q f_*(\sh{F}_k))$ to each of the $U_i$ satisfies (ML).
+Once~\sref{3.3.4.2} and~\sref{3.3.4.3} are proved in the case where the formal prescheme $\mathfrak{Y}$ is affine Noetherian, it is immediate to pass to the general case for~\sref{3.3.4.2} and the first assertion of~\sref{3.3.4.3}, which are local on $\mathfrak{Y}$.
+As for the second assertion of~\sref{3.3.4.3}, it suffices, $\mathfrak{Y}$ being Noetherian, to cover it by a finite number of Noetherian affine open sets $U_i$ and to note that the restricyions of the projective system $(\RR^q f_*(\sh{F}_k))$ to each of the $U_i$ satisfies (ML).
 \end{env}
 
 Along the way, we have in addition proved:
@@ -344,7 +344,7 @@ Along the way, we have in addition proved:
 Under the hypotheses of Corollary~\sref{3.3.4.4}, the canonical homomorphism
 \[
 \label{3.3.4.6.1}
-  \HH^q(\fk{X},\sh{F})\to\Gamma(\fk{Y},\RR^q f_*(\sh{F}))
+  \HH^q(\mathfrak{X},\sh{F})\to\Gamma(\mathfrak{Y},\RR^q f_*(\sh{F}))
   \tag{3.4.6.1}
 \]
 is bijective.
