@@ -273,8 +273,8 @@ general case of an arbitrary (but finite) number of factors, instead of just two
 Let $f:X\to Y$ be a morphism of
 preschemes. We suppose that there exists a cover $(Y_\alpha)$ of $Y$ by affine
 opens having the following property: every $f^{-1}(Y_\alpha)$ admits a
-\emph{finite} cover $(X_{\alpha i})$ by affine opens contained in
-$f^{-1}(Y_\alpha)$ such that every intersection $X_{\alpha i}\cap X_{\alpha j}$
+\emph{finite} cover $(X_{\alpha i})$ by affine opens that are contained in
+$f^{-1}(Y_\alpha)$ and that are such that every intersection $X_{\alpha i}\cap X_{\alpha j}$
 is itself a \emph{finite} union of affine opens. With these hypotheses, for
 every quasi-coherent $\OO_X$-module $\sh{F}$, $f_*(\sh{F})$ is a
 quasi-coherent $\OO_Y$-module.
@@ -289,7 +289,7 @@ of the $Y_\alpha$, and thus omit the indices $\alpha$.
     are themselves \emph{affine} opens. We set $\sh{F}_i=\sh{F}|X_i$ and
     $\sh{F}_{ij}=\sh{F}|(X_i\cap X_j)$, and let $\sh{F}'_i$ and
     $\sh{F}'_{ij}$ be the images of $\sh{F}_i$ and $\sh{F}_{ij}$
-    (respectively) by the restriction of $f$ to $X_i$ and $X_i\cap X_j$
+    (respectively) by the restriction of $f$ to $X_i$ and to $X_i\cap X_j$
     (respectively); we know that the $\sh{F}'_i$ and $\sh{F}'_{ij}$ are
     quasi-coherent \sref{1.1.6.3}. Set $\sh{G}=\bigoplus_i\sh{F}'_i$ and
     $\sh{H}=\bigoplus_{i,j}\sh{F}'_{ij}$; $\sh{G}$ and $\sh{H}$ are
@@ -304,15 +304,15 @@ of the $Y_\alpha$, and thus omit the indices $\alpha$.
     \[
       u_W:\bigoplus_i\Gamma(f^{-1}(W)\cap X_i,\sh{F})\to\bigoplus_{i,j}\Gamma(f^{-1}(W)\cap X_i\cap X_j,\sh{F})
     \]
-    in such a way that it satisfies the usual compatibility conditions when $W$ varies.
-    If for every section $s_i\in\Gamma(f^{-1}(W)\cap X_i,\sh{F})$ we denote by $s_{i|j}$ its restriction to $f^{-1}(W)\cap X_i\cap X_j$, then we set
+    that satisfies the usual compatibility conditions when we let $W$ vary.
+    If, for every section $s_i\in\Gamma(f^{-1}(W)\cap X_i,\sh{F})$, we denote by $s_{i|j}$ its restriction to $f^{-1}(W)\cap X_i\cap X_j$, then we set
     \[
       u_W\big((s_i)\big)=(s_{i|j}-s_{j|i})
     \]
     and the compatibility conditions are clearly satisfied.
-    To prove that the kernel $\sh{R}$ of $u$ is $f_*(\sh{F})$, we define a homomorphism from $f_*(\sh{F})$ to $\sh{R}$ by sending each section $s\in\Gamma(f^{-1}(W),\sh{F})$ to the family $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; the axioms (F1) and (F2) of sheaves (G, II, 1.1) tell us that this homomorphism is \emph{bijective}, which finishes the proof in this case.
+    To prove that the kernel $\sh{R}$ of $u$ is $f_*(\sh{F})$, we define a homomorphism from $f_*(\sh{F})$ to $\sh{R}$ by sending each section $s\in\Gamma(f^{-1}(W),\sh{F})$ to the family $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; axioms (F1) and (F2) of sheaves (G,~II,~1.1) tell us that this homomorphism is \emph{bijective}, which finishes the proof in this case.
   \item In the general case, the same reasoning applies once we have established that the $\sh{F}_{ij}$ are quasi-coherent.
-    But, by hypothesis, $X_i\cap X_j$ is a finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens \emph{in a scheme}, the intersection of any two of them is again an affine open \sref{1.5.5.6}. We are thus led to the first case, and so we have proved Proposition \sref{1.9.2.1}.
+    But, by hypothesis, $X_i\cap X_j$ is a finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens \emph{in a scheme}, the intersection of any two of them is again an affine open \sref{1.5.5.6}. We are thus led to the first case, and so we have proved Proposition~\sref{1.9.2.1}.
 \end{enumerate}
 \end{proof}
 
