@@ -352,16 +352,16 @@ section of $\sh{L}$ over $X$, $X_f$ the open set of $x\in X$ such that $f(x)\neq
 \medskip\noindent
 \begin{enumerate}[label=(\roman*)]
   \item Since the underlying space of $X$ is quasi-compact, and thus the union of
-    finitely-many affine opens $U_i$ with $\sh{L}|U_i$ is isomorphic to
+    finitely-many affine opens $U_i$ with $\sh{L}|U_i$ isomorphic to
     $\OO_X|U_i$, we can reduce to the case where $X$ is affine and $\sh{L}=\OO_X$.
-    In this case, $f$ is identified with an element of $A(X)$, and we have that
-    $X_f=D(f)$; $s$ is identified with an element of an $A(X)$-module $M$, and
+    In this case, $f$ can be identified with an element of $A(X)$, and we have that
+    $X_f=D(f)$; $s$ can be identified with an element of an $A(X)$-module $M$, and
     $s|X_f$ to the corresponding element of $M_f$, and the result is then trivial,
     recalling the definition of a module of fractions.
 \oldpage[I]{173}
   \item Again, $X$ is a finite union of affine opens $U_i$ ($1\leq i\leq r$)
-    such that $\sh{L}|U_i\cong\OO_X|U_i$, and for every $i$,
-    $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ is identified (by the aforementioned
+    such that $\sh{L}|U_i\cong\OO_X|U_i$, and, for every $i$,
+    $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ can be identified (by the aforementioned
     isomorphism) with $(f|(U_i\cap X_f))^n(s|(U_i\cap X_f))$. We then know
     \sref{1.1.4.1} that there exists an integer $n>0$ such that, for all
     $i$, $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ extends to a section $s_i$ of
@@ -372,13 +372,13 @@ section of $\sh{L}$ over $X$, $X_f$ the open set of $x\in X$ such that $f(x)\neq
     \sref{1.5.5.6}, and so again quasi-compact. By virtue of (i), there thus
     exists an integer $m$ (independent of $i$ and $j$) such that
     $(s_{i|j}-s_{j|i})\otimes f^{\otimes m}=0$. It immediately follows that there
-    exists a section $s'$ of $\sh{F}\otimes\sh{L}^{\otimes(n+m)}$ over $X$,
-    restricting to $s_i\otimes f^{\otimes m}$ over each $U_i$, and restricting to
-    $s\otimes f^{\otimes(n+m)}$ over $X_f$.
+    exists a section $s'$ of $\sh{F}\otimes\sh{L}^{\otimes(n+m)}$ over $X$ that
+    restricts to $s_i\otimes f^{\otimes m}$ over each $U_i$, and restricts to
+    $s\otimes f^{\otimes(n+m)}$ over $X_f$.\qedhere
 \end{enumerate}
 \end{proof}
 
-The following corollaries give an interpretation of Theorem \sref{1.9.3.1} in a more
+The following corollaries give an interpretation of Theorem~\sref{1.9.3.1} in a more
 algebraic language:
 \begin{cor}[9.3.2]
 \label{1.9.3.2}
@@ -400,21 +400,21 @@ $\Gamma(X_f,\sh{F})$ is canonically isomorphic to $M_f$.
 \label{1.9.3.4}
 Let $X$ be a Noetherian prescheme, $\sh{F}$ a coherent $\OO_X$-module, and $\sh{J}$ a
 coherent sheaf of ideals in $\OO_X$, such that the support of $\sh{F}$ is contained in that
-of $\OO_X|\sh{J}$. Then there exists a whole number $n>0$ such that $\sh{J}^n\sh{F}=0$.
+of $\OO_X|\sh{J}$. Then there exists an integer $n>0$ such that $\sh{J}^n\sh{F}=0$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.9.3.4}
 Since $X$ is a union of finitely-many affine opens whose rings are Noetherian, we can suppose
-that $X$ is affine of Noetherian ring $A$; then $\sh{F}=\wt{M}$, where
+that $X$ is affine, given by some Noetherian ring $A$; then $\sh{F}=\wt{M}$, where
 $M=\Gamma(X,\sh{F})$ is an $A$-module of finite type, and $\sh{J}=\wt{\fk{J}}$,
 where $\fk{J}=\Gamma(X,\sh{J})$ is an ideal of $A$ (\sref{1.1.4.1} and
 \sref{1.1.5.1}). Since $A$ is Noetherian, $\fk{J}$ admits a finite system of
 generators $f_i$ ($1\leq i\leq m$). By hypothesis, every section of $\sh{F}$ over
 $X$ is zero on each of the $D(f_i)$; if $s_j$ ($1\leq j\leq q$) are sections of
-$\sh{F}$ generating $M$, then there exists a whole number $h$, independent of $i$ and $j$,
+$\sh{F}$ that generate $M$, then there exists an integer $h$, independent of $i$ and $j$,
 such that $f_i^h s_j=0$ \sref{1.1.4.1}, whence $f_i^h s=0$ for all $s\in M$. We thus
-conclude that if $n=mh$ then $\fk{J}^n M=0$, and so the corresponding $\OO_X$-module
+conclude that, if $n=mh$, then $\fk{J}^n M=0$, and so the corresponding $\OO_X$-module
 $\sh{J}^n\sh{F}=\wt{\fk{J}^n M}$ \sref{1.1.3.13} is zero.
 \end{proof}
 
