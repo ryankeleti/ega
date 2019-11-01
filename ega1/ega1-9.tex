@@ -445,8 +445,8 @@ Let
 $X$ be a topological space, $\sh{F}$ a sheaf of sets (resp. of groups, of rings) on $X$, $U$
 an open subset of $X$, $\psi:U\to X$ the canonical injection, and $\sh{G}$ a subsheaf of
 $\sh{F}|U=\psi^*(\sh{F})$. Since $\psi_*$ is left exact, $\psi_*(\sh{G})$ is a subsheaf of
-$\psi_*(\psi^*(\sh{F}))$; if we denote by $\rho$ the canonical homomorphism
-$\sh{F}\to\psi_*(\psi^*(\sh{F}))$ \sref[0]{0.3.5.3}, then we denote by $\overline{\sh{G}}$
+$\psi_*(\psi^*(\sh{F}))$; we denote by $\rho$ the canonical homomorphism
+$\sh{F}\to\psi_*(\psi^*(\sh{F}))$ \sref[0]{0.3.5.3}, and we denote by $\overline{\sh{G}}$
 the subsheaf $\rho^{-1}(\psi_*(\sh{G}))$ of $\sh{F}$. It follows immediately from the
 definitions that, for every open subset $V$ of $X$, $\Gamma(V,\overline{\sh{G}})$ consists of
 sections $s\in\Gamma(V,\sh{F})$ whose restriction to $V\cap U$ is a section of $\sh{G}$ over
@@ -458,14 +458,14 @@ $\sh{G}$ of $\sh{F}|U$ to a subsheaf of $\sh{F}$.
 
 \begin{prop}[9.4.2]
 \label{1.9.4.2}
-Let $X$ be a prescheme, $U$ an open subset of $X$ such that the canonical injection
+Let $X$ be a prescheme, and $U$ an open subset of $X$ such that the canonical injection
 $j:U\to X$ is a quasi-compact morphism \emph{(which will be the case for \emph{all} $U$ if
 the underlying space of $X$ is \emph{locally Noetherian}
 \sref{1.6.6.4}[i])}. Then:
 \begin{enumerate}[label=\emph{(\roman*)}]
-  \item For every quasi-coherent $(\OO_X|U)$-module $\sh{G}$, $j_*(\sh{G})$
-    is a quasi-coherent $\OO_X$-module, and $j_*(\sh{G})|U=j^*(j_*(\sh{G}))=\sh{G}$.
-  \item For every quasi-coherent $\OO_X$-module $\sh{F}$ and every quasi-coherent
+  \item for every quasi-coherent $(\OO_X|U)$-module $\sh{G}$, $j_*(\sh{G})$
+    is a quasi-coherent $\OO_X$-module, and $j_*(\sh{G})|U=j^*(j_*(\sh{G}))=\sh{G}$;
+  \item for every quasi-coherent $\OO_X$-module $\sh{F}$ and every quasi-coherent
     $(\OO_X|U)$-submodule $\sh{G}$, the canonical extension
     $\overline{\sh{G}}$ of $\sh{G}$ \sref{1.9.4.1} is a
     quasi-coherent $\OO_X$-submodule of $\sh{F}$.
@@ -474,11 +474,11 @@ the underlying space of $X$ is \emph{locally Noetherian}
 
 \begin{proof}
 \label{proof-1.9.4.2}
-If $j=(\psi,\theta)$ ($\psi$ being the injection $U\to X$ of underlying spaces), then by
-definition we have that $j_*(\sh{G})=\psi_*(\sh{G})$ for every $(\OO_X|U)$-module $\sh{G}$,
+If $j=(\psi,\theta)$ ($\psi$ being the injection $U\to X$ of underlying spaces), then, by
+definition, we have that $j_*(\sh{G})=\psi_*(\sh{G})$ for every $(\OO_X|U)$-module $\sh{G}$,
 and, further, that $j^*(\sh{H})=\psi^*(\sh{H})=\sh{H}|U$ for every $\OO_X$-module $\sh{H}$,
 by definition of the prescheme induced over an open subset. So (i) is thus a particular case
-of (\sref{1.9.2.2}, (a)); for the same reason, $j_*(j^*(\sh{F}))$ is quasi-coherent, and
+of (\sref{1.9.2.2}[a]); for the same reason, $j_*(j^*(\sh{F}))$ is quasi-coherent, and
 since $\overline{\sh{G}}$ is the inverse image of $j_*(\sh{G})$ by the homomorphism
 $\rho:\sh{F}\to j_*(j^*(\sh{F}))$, (ii) follows from \sref{1.4.1.1}.
 \end{proof}
@@ -486,26 +486,25 @@ $\rho:\sh{F}\to j_*(j^*(\sh{F}))$, (ii) follows from \sref{1.4.1.1}.
 Note that the hypothesis that the morphism $j:U\to X$ is quasi-compact
 holds whenever the open subset $U$ is \emph{quasi-compact} and $X$ is a
 \emph{scheme}: indeed, $U$ is then a union of finitely-many affine opens $U_i$,
-and for every affine open $V$ of $X$, $V\cap U_i$ is an affine open \sref{1.5.5.6}, and
+and, for every affine open $V$ of $X$, $V\cap U_i$ is an affine open \sref{1.5.5.6}, and
 thus quasi-compact.
 
 \begin{cor}[9.4.3]
 \label{1.9.4.3}
-Let $X$ be a prescheme, $U$ a quasi-compact open subset of $X$ such that the injection
+Let $X$ be a prescheme, and $U$ a quasi-compact open subset of $X$ such that the injection
 morphism $j:U\to X$ is quasi-compact. Suppose as well that every quasi-coherent
 $\OO_X$-module is the inductive limit of its quasi-coherent $\OO_X$-submodules of finite type
 \emph{(which will be the case if $X$ is an \emph{affine scheme})}. Then let $\sh{F}$ be a
-quasi-coherent $\OO_X$-module, and $\sh{G}$ a quasi-coherent $(\OO_X|U)$-submodule \emph{of
-finite type} of $\sh{F}|U$. Then there exists a quasi-coherent $\OO_X$-submodule $\sh{G}'$ of
+quasi-coherent $\OO_X$-module, and $\sh{G}$ a quasi-coherent $(\OO_X|U)$-submodule of $\sh{F}|U$ \emph{of finite type}. Then there exists a quasi-coherent $\OO_X$-submodule $\sh{G}'$ of
 $\sh{F}$ \emph{of finite type} such that $\sh{G}'|U=\sh{G}$.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.9.4.3}
 We have $\sh{G}=\overline{\sh{G}}|U$, and $\overline{\sh{G}}$ is quasi-coherent, from
-\sref{1.9.4.2}, and so the inductive limit of its quasi-coherent $\OO_X$-submodules
+\sref{1.9.4.2}, so the inductive limit of its quasi-coherent $\OO_X$-submodules
 $\sh{H}_\lambda$ of finite type. It follows that $\sh{G}$ is the inductive limit of the
-$\sh{H}_\lambda|U$, and thus equal to one of the $\sh{H}_\lambda|U$ since it is of finite
+$\sh{H}_\lambda|U$, and thus equal to one of the $\sh{H}_\lambda|U$, since it is of finite
 type \sref[0]{0.5.2.3}.
 \end{proof}
 
@@ -513,7 +512,7 @@ type \sref[0]{0.5.2.3}.
 \label{1.9.4.4}
 Suppose that for \emph{every} affine open $U\subset X$, the injection morphism $U\to X$ is
 quasi-compact. Then, if the conclusion of \sref{1.9.4.3} holds for every affine open $U$
-and every quasi-coherent $(\OO_X|U)$-submodule $\sh{G}$ of $\sh{F}|U$ of finite type, it
+and for every quasi-coherent $(\OO_X|U)$-submodule $\sh{G}$ of $\sh{F}|U$ of finite type, it
 follows
 \oldpage[I]{175}
 that $\sh{F}$ is the inductive limit of its quasi-coherent $\OO_X$-submodules of finite type.
@@ -523,14 +522,14 @@ submodules of finite type, $\sh{F}|U$ is the inductive limit of its $(\OO_X|U)$-
 finite type \sref{1.1.3.9}. But, by hypothesis, each of these submodules is induced on $U$
 by a quasi-coherent $\OO_X$-submodule $\sh{G}_{\lambda,U}$ of $\sh{F}$ of finite type. The
 finite sums of the $\sh{G}_{\lambda,U}$ are again quasi-coherent $\OO_X$-modules of finite
-type, because the property is local, and the case where $X$ is affine was covered in
+type, because this is a local property, and the case where $X$ is affine was covered in
 \sref{1.1.3.10}; it is clear then that $\sh{F}$ is the inductive limit of these finite
 sums, whence our claim.
 \end{rmk}
 
 \begin{cor}[9.4.5]
 \label{1.9.4.5}
-Under the hypotheses of Corollary \sref{1.9.4.3}, for every quasi-coherent $(\OO_X|U)$-module
+Under the hypotheses of Corollary~\sref{1.9.4.3}, for every quasi-coherent $(\OO_X|U)$-module
 $\sh{G}$ of finite type, there exists a quasi-coherent $\OO_X$-module $\sh{G}'$ of finite
 type such that $\sh{G}'|U=\sh{G}$.
 \end{cor}
@@ -538,7 +537,7 @@ type such that $\sh{G}'|U=\sh{G}$.
 \begin{proof}
 \label{proof-1.9.4.5}
 Since $\sh{F}=j_*(\sh{G})$ is quasi-coherent \sref{1.9.4.2} and $\sh{F}|U=\sh{G}$, it
-suffices to apply Corollary \sref{1.9.4.3} to $\sh{F}$.
+suffices to apply Corollary~\sref{1.9.4.3} to $\sh{F}$.
 \end{proof}
 
 \begin{lem}[9.4.6]
@@ -546,7 +545,7 @@ suffices to apply Corollary \sref{1.9.4.3} to $\sh{F}$.
 Let $X$ be a prescheme, $L$ a well-ordered set, $(V_\lambda)_{\lambda\in L}$ a cover of $X$
 by affine opens, and $U$ an open subset of $X$; for all $\lambda\in L$, we set
 $W_\lambda=\bigcup_{\mu<\lambda}V_\mu$. Suppose that: (1) for every $\lambda\in L$,
-$V_\lambda\cap W_\lambda$ is quasi-compact; (2) the immersion morphism $U\to X$ is
+$V_\lambda\cap W_\lambda$ is quasi-compact; and (2) the immersion morphism $U\to X$ is
 quasi-compact. Then, for every quasi-coherent $\OO_X$-module $\sh{F}$ and every
 quasi-coherent $(\OO_X|U)$-submodule $\sh{G}$ of $\sh{F}|U$ \emph{of finite type}, there
 exists a quasi-coherent $\OO_X$-submodule $\sh{G}'$ of $\sh{F}$ \emph{of finite type} such
@@ -559,10 +558,10 @@ Let $U_\lambda=U\cup W_\lambda$; we will define a family $(\sh{G}'_\lambda)$ by 
 where $\sh{G}'_\lambda$ is a quasi-coherent $(\OO_X|U_\lambda)$-submodule of
 $\sh{F}|U_\lambda$ of finite type, such that $\sh{G}'_\lambda|U_\mu=\sh{G}'_\mu$ for
 $\mu<\lambda$ and $\sh{G}'_\lambda|U=\sh{G}$. The unique $\OO_X$-submodule $\sh{G}'$ of
-$\sh{F}$ such that $\sh{G}'|U_\lambda=\sh{G}'$ for all $\lambda\in L$ \sref[0]{0.3.3.1} gives
+$\sh{F}$ such that $\sh{G}'|U_\lambda=\sh{G}'$ for all $\lambda\in L$ \sref[0]{0.3.3.1} will then give
 us what we want. So suppose that the $\sh{G}'_\mu$ are defined and have the preceding
-properties for $\mu<\lambda$; if $\lambda$ does not have a predecessor then we take for
-$\sh{G}'_\lambda$ the unique $(\OO_X|U_\lambda)$-submodule of $\sh{F}|U_\lambda$ such that
+properties for $\mu<\lambda$; if $\lambda$ does not have a predecessor then we take
+$\sh{G}'_\lambda$ to be the unique $(\OO_X|U_\lambda)$-submodule of $\sh{F}|U_\lambda$ such that
 $\sh{G}'_\lambda|U_\mu=\sh{G}'_\mu$ for all $\mu<\lambda$, which is allowed since the $U_\mu$
 with $\mu<\lambda$ then form a cover of $U_\lambda$. If, conversely, $\lambda=\mu+1$, then
 $U_\lambda=U_\mu\cup V_\mu$, and it suffices to define a quasi-coherent
@@ -570,17 +569,17 @@ $(\OO_X|V_\mu)$-submodule $\sh{G}''_\mu$ of $\sh{F}|V_\mu$ of finite type such t
 \[
   \sh{G}''_\mu|(U_\mu\cap V_\mu)=\sh{G}'_\mu|(U_\mu\cap V_\mu);
 \]
-and then to take for $\sh{G}'_\lambda$ the $(\OO_X|U_\lambda)$-submodule of
+and then to take $\sh{G}'_\lambda$ to be the $(\OO_X|U_\lambda)$-submodule of
 $\sh{F}|U_\lambda$ such that $\sh{G}'_\lambda|U_\mu=\sh{G}'_\mu$ and
 $\sh{G}'_\lambda|V_\mu=\sh{G}''_\mu$ \sref[0]{0.3.3.1}. But, since $V_\mu$ is affine, the
 existence of $\sh{G}''_\mu$ is guaranteed by \sref{1.9.4.3} as soon as we show that
 $U_\mu\cap V_\mu$ is quasi-compact; but $U_\mu\cap V_\mu$ is the union of $U\cap V_\mu$ and
-$W_\mu\cap V_\mu$, which are both quasi-compact by virtue of the hypothesis.
+$W_\mu\cap V_\mu$, which are both quasi-compact by virtue of the hypotheses.
 \end{proof}
 
 \begin{thm}[9.4.7]
 \label{1.9.4.7}
-Let $X$ be a prescheme, and $U$ an open set of $X$. Suppose that one of the following
+Let $X$ be a prescheme, and $U$ an open subset of $X$. Suppose that one of the following
 conditions is verified:
 \begin{enumerate}[label=\emph{(\alph*)}]
   \item the underlying space of $X$ is locally Noetherian;
@@ -599,8 +598,8 @@ Let
 $(V_\lambda)_{\lambda\in L}$ be a cover of $X$ by affine opens, with $L$ assumed to be finite
 in case (b); since $L$ is equipped with the structure of a well-ordered set, it suffices to
 check that the conditions of \sref{1.9.4.6} are satisfied. It is clear in the case of (a),
-as the spaces $V_\lambda$ are Noetherian. For case (b), the $V_\lambda\cap\lambda_\mu$ are
-affine \sref{1.5.5.6}, and thus quasi-compact, and since $L$ is finite,
+since the spaces $V_\lambda$ are Noetherian. For case (b), the $V_\lambda\cap\lambda_\mu$ are
+affine \sref{1.5.5.6}, and thus quasi-compact, and, since $L$ is finite,
 $V_\lambda\cap W_\lambda$ is quasi-compact. Whence the theorem.
 \end{proof}
 
@@ -626,7 +625,7 @@ $\OO_X$-submodules of finite type.
 
 \begin{proof}
 \label{proof-1.9.4.9}
-This follows from Theorem \sref{1.9.4.7} and Remark \sref{1.9.4.4}.
+This follows from Theorem~\sref{1.9.4.7} and Remark~\sref{1.9.4.4}.
 \end{proof}
 
 \begin{cor}[9.4.10]
@@ -642,7 +641,7 @@ Let $U$ be an affine open neighborhood of a point $x\in X$, and let $s$ be a
 section of $\sh{F}$ over $U$; the $\OO_X$-submodule $\sh{G}$ of $\sh{F}|U$ generated by $s$
 is quasi-coherent and of finite type, so there exists a quasi-coherent $\OO_X$-submodule
 $\sh{G}'$ of $\sh{F}$ of finite type such that $\sh{G}'|U=\sh{G}$ \sref{1.9.4.7}. By
-hypothesis, there is thus a finite number of sections $t_i$ of $\sh{G}'$ over $X$ and of
+hypothesis, there thus exists a finite number of sections $t_i$ of $\sh{G}'$ over $X$ and of
 sections $a_i$ of $\OO_X$ over a neighborhood $V\subset U$ of $x$ such that
 $s|V=\sum_i a_i(t_i|V)$, which proves the corollary.
 \end{proof}
