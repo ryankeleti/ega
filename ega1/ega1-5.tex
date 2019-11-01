@@ -1,8 +1,8 @@
 \section{Reduced preschemes; separation condition}
-\label{section:reduced-preschemes-and-separation-condition}
+\label{section:1.5}
 
 \subsection{Reduced preschemes}
-\label{subsection:reduced-preschemes}
+\label{subsection:1.5.1}
 
 \begin{prop}[5.1.1]
 \label{1.5.1.1}
@@ -17,8 +17,8 @@ When $X$ is affine, and, consequently, $\sh{B}=\wt{B}$, where $B$ is an algebra 
 The statement is local, so it suffices to show the latter claim.
 We know that $\wt{\nilrad}$ is a quasi-coherent $\OO_X$-module \sref{1.1.4.1}, and that its stalk at a point $x\in X$ is the ideal $\nilrad_x$ of the ring of fractions $B_x$;
 it remains to prove that the nilradical of $B_x$ is contained in $\nilrad_x$, the converse inclusion being evident.
-Let $z/s$ be an element of the nilradical of $B_x$, with $z\in B$, and $s\not\in\fk{j}_x$;
-by hypothesis, there exists an integer $k$ such that $(z/s)^k=0$, which implies that there exists some $t\not\in\fk{j}_x$ such that $tz^k=0$.
+Let $z/s$ be an element of the nilradical of $B_x$, with $z\in B$, and $s\not\in\mathfrak{j}_x$;
+by hypothesis, there exists an integer $k$ such that $(z/s)^k=0$, which implies that there exists some $t\not\in\mathfrak{j}_x$ such that $tz^k=0$.
 We conclude that $(tz)^k=0$, and, as a result, that $z/s=(tz)/(ts)\in\nilrad_x$.
 \end{proof}
 
@@ -35,8 +35,8 @@ it is also the smallest subprescheme of $X$ that has $X$ as its underlying space
 \label{proof-1.5.1.2}
 Since the structure sheaf of the closed subprescheme of $Y$ defined by $\sh{N}_X$ is $\OO_X/\sh{N}_X$, it is immediate that $Y$ is reduced and has $X$ as its underlying space, because $\sh{N}_x\neq\OO_x$ for any $x\in X$.
 To show the other claims, note that a subprescheme $Z$ of $X$ that has $X$ as its underlying space is defined by a sheaf of ideals $\sh{I}$ \sref{1.4.1.3} such that $\sh{I}_x\neq\OO_x$ for any $x\in X$.
-We can restrict to the case where $X$ is affine, say $X=\Spec(A)$ and $\sh{I}=\wt{\fk{I}}$, where $\fk{I}$ is an ideal of $A$;
-then, for every $x\in X$, we have $\fk{I}_x\subset\fk{j}_x$, and so $\fk{I}$ is contained in every prime ideal of $A$, and so also in their intersection $\nilrad$, the nilradical of $A$.
+We can restrict to the case where $X$ is affine, say $X=\Spec(A)$ and $\sh{I}=\wt{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of $A$;
+then, for every $x\in X$, we have $\mathfrak{I}_x\subset\mathfrak{j}_x$, and so $\mathfrak{I}$ is contained in every prime ideal of $A$, and so also in their intersection $\nilrad$, the nilradical of $A$.
 This proves that $Y$ is the small subprescheme of $X$ that has $X$ as its underlying space \sref{1.4.1.9};
 furthermore, if $Z$ is distinct from $Y$, we necessarily have $\sh{I}_x\neq\sh{N}_x$ for at least one $x\in X$, and so \sref{1.5.1.1} $Z$ is not reduced.
 \end{proof}
@@ -146,22 +146,22 @@ We set
 \end{align*}
 The canonical homomorphism $\OO_X\to\OO_X/\sh{I}$ induces a homomorphism of rings $\vphi:A\to A_0$.
 We will see below that $\vphi$ is \emph{surjective}, which implies that
-\begin{equation*}
+\[
 \label{1.5.1.9.1}
   0\to\Gamma(X,\sh{I})\to\Gamma(X,\OO_X)\to\Gamma(X,\OO_X/\sh{I})\to 0\tag{5.1.9.1}
-\end{equation*}
+\]
 is an \emph{exact} sequence.
 We now prove, assuming that this is true, the proposition.
-Note that $\fk{K}=\Gamma(X,\sh{I})$ is an ideal whose square is zero in $A$, and thus a module over $A_0=A/\fk{K}$.
-By hypothesis, we have $X_0=\Spec(A)$, and, since the underlying spaces of $X_0$ and $X$ are identical, $\fk{K}=\Gamma(X_0,\sh{I})$;
-Additionally, since $\sh{I}^2=0$, $\sh{I}$ is a quasi-coherent $(\OO_X/\sh{I})$-module, so we have $\sh{I}\cong\wt{\fk{K}}$ and $\fk{K}_x=\sh{I}_x$ for all $x\in X_0$ \sref{1.1.4.1}.
+Note that $\mathfrak{K}=\Gamma(X,\sh{I})$ is an ideal whose square is zero in $A$, and thus a module over $A_0=A/\mathfrak{K}$.
+By hypothesis, we have $X_0=\Spec(A)$, and, since the underlying spaces of $X_0$ and $X$ are identical, $\mathfrak{K}=\Gamma(X_0,\sh{I})$;
+Additionally, since $\sh{I}^2=0$, $\sh{I}$ is a quasi-coherent $(\OO_X/\sh{I})$-module, so we have $\sh{I}\cong\wt{\mathfrak{K}}$ and $\mathfrak{K}_x=\sh{I}_x$ for all $x\in X_0$ \sref{1.1.4.1}.
 With this in mind, let $X'=\Spec(A)$, and consider the morphism $f=(\psi,\theta):X\to X'$ of preschemes that corresponds to the identity map $A\to\Gamma(X,\OO_X)$ \sref{1.2.2.4}.
 For every affine open subset $V$ of $X$, the diagram
 \[
   \xymatrix{
     A\ar[r]\ar[d] &
     \Gamma(V,\OO_X|V)\ar[d]\\
-    A_0=A/\fk{K}\ar[r] &
+    A_0=A/\mathfrak{K}\ar[r] &
     \Gamma(V,\OO_{X_0}|V)
   }
 \]
@@ -176,8 +176,8 @@ commutes, whence the diagram
 \]
 also commutes ($X'_0$ being the closed subprescheme of $X'$ defined by the quasi-coherent sheaf of ideals $\wt{R}$, and $j$ and $j'$ being the canonical injection morphisms).
 But since $X_0$ is affine, $f_0$ is an isomorphism, and since the underlying continuous maps of $j$ and $j'$ are identity maps, we see straight away that $\psi:X\to X'$ is a homeomorphism.
-Furthermore, the equation $\fk{K}_x=\sh{I}_x$ shows that the restriction of $\theta^\sharp:\psi^*(\OO_{X'})\to\OO_X$ is an \emph{isomorphism} from $\psi^*(\wt{\fk{K}})$ to $\sh{I}$;
-additionally, by passing to the quotients, $\theta^\sharp$ gives an \emph{isomorphism} $\psi^*(\OO_X/\wt{\fk{K}})\to\OO_X/\sh{I}$, because $f_0$ is an isomorphism;
+Furthermore, the equation $\mathfrak{K}_x=\sh{I}_x$ shows that the restriction of $\theta^\sharp:\psi^*(\OO_{X'})\to\OO_X$ is an \emph{isomorphism} from $\psi^*(\wt{\mathfrak{K}})$ to $\sh{I}$;
+additionally, by passing to the quotients, $\theta^\sharp$ gives an \emph{isomorphism} $\psi^*(\OO_X/\wt{\mathfrak{K}})\to\OO_X/\sh{I}$, because $f_0$ is an isomorphism;
 we thus immediately conclude, by the 5 lemma (M,~I,~1.1), that $\theta^\sharp$ is itself an isomorphism, and thus that $f$ is an \emph{isomorphism}, and thus that $X$ is affine.
 So everything reduces to proving the exactitude of \sref{1.5.1.9.1}, which will follow from showing that $\HH^1(X,\sh{I})=0$.
 \oldpage[I]{131}
@@ -206,7 +206,7 @@ For $X$ to be an affine scheme, it is necessary and sufficient for $X_\red$ to b
 \end{cor}
 
 \subsection{Existence of a subprescheme with a given underlying space}
-\label{subsection:existence-of-a-subprescheme-with-a-given-underlying-space}
+\label{subsection:1.5.2}
 
 \begin{prop}[5.2.1]
 \label{1.5.2.1}
@@ -218,9 +218,9 @@ For every locally closed subspace $Y$ of the underlying space of a prescheme $X$
 The uniqueness follows from \sref{1.5.1.2}, so it remains only to show the existence of the prescheme in question.
 
 If $X$ is affine, given by some ring $A$, and $Y$ closed in $X$, then the proposition is immediate:
-$\fk{j}(Y)$ is the largest ideal $\fk{a}\subset A$ such that $V(\fk{a})=Y$, and it is equal to its radical \sref{1.1.1.4}[i], so $A/\fk{j}(Y)$ is a reduced ring.
+$\mathfrak{j}(Y)$ is the largest ideal $\mathfrak{a}\subset A$ such that $V(\mathfrak{a})=Y$, and it is equal to its radical \sref{1.1.1.4}[i], so $A/\mathfrak{j}(Y)$ is a reduced ring.
 
-In the general case, for every affine open $U\subset X$ such that $U\cap Y$ is closed in $U$, consider the closed subprescheme $Y_U$ of $U$ defined by the sheaf of ideals associated to the ideal $\fk{j}(U\cap Y)$ of $A(U)$, which is reduced.
+In the general case, for every affine open $U\subset X$ such that $U\cap Y$ is closed in $U$, consider the closed subprescheme $Y_U$ of $U$ defined by the sheaf of ideals associated to the ideal $\mathfrak{j}(U\cap Y)$ of $A(U)$, which is reduced.
 We can show that, if $V$ is an affine open subset of $X$ contained in $U$, then $Y_V$ is \emph{induced} by $Y_U$ on $V\cap Y$;
 but this induced prescheme is a closed subprescheme (of $V$) which is reduced and has $V\cap Y$ as its underlying space;
 the uniqueness of $Y_V$ thus implies our claim.
@@ -251,19 +251,23 @@ Since, by \sref{1.5.2.2}, the restriction of $f$ to $X'$ factors as $X'\to Y'\to
 \end{proof}
 
 \subsection{Diagonal; graph of a morphism}
-\label{subsection:diagonal-graph-of-a-morphism}
+\label{subsection:1.5.3}
 
 \begin{env}[5.3.1]
 \label{1.5.3.1}
 Let $X$ be an $S$-prescheme;
 we define the \emph{diagonal morphism} of $X$ in $X\times_S X$, denoted by $\Delta_{X|S}$, or $\Delta_X$, or even $\Delta$ if no confusion may arise, to be the $S$-morphism $(1_X,1_X)_S$, or, in other words, the unique $S$-morphism $\Delta_X$ such that
 \[
-    p_1\circ\Delta_X=p_2\circ\Delta_X=1_X\tag{5.3.1.1}
+\label{eq:1.5.3.1.1}
+  p_1\circ\Delta_X=p_2\circ\Delta_X=1_X,
+  \tag{5.3.1.1}
 \]
 where $p_1$ and $p_2$ are the projections of $X\times_S X$ (Definition~\sref{1.3.2.1}).
 If $f:T\to X$ and $g:T\to Y$ are $S$-morphisms, we immediately have that
 \[
-    (f,g)_S=(f\times_S g)\circ\Delta_{T|S}.\tag{5.3.1.2}
+\label{eq:1.5.3.1.2}
+  (f,g)_S=(f\times_S g)\circ\Delta_{T|S}.
+  \tag{5.3.1.2}
 \]
 
 The reader will note that the preceding definition and the results stated in \sref{1.5.3.1} to \sref{1.5.3.8} are true in any category, \emph{provided that the products used within exist in the category}.
@@ -441,7 +445,7 @@ Indeed, if $p:Y\times_S Z\to Y$ is the projection onto the first component, then
 \begin{prop}[5.3.15]
 \label{1.5.3.15}
 If $f:X\to Y$ is an $S$-morphism, then the diagram
-\begin{equation*}
+\[
 \label{1.5.3.15.1}
   \xymatrix{
     X\ar[r]^{\Delta_X}\ar[d]_f &
@@ -449,7 +453,7 @@ If $f:X\to Y$ is an $S$-morphism, then the diagram
     Y\ar[r]^{\Delta_Y} &
     Y\times_S Y
   }\tag{5.3.15.1}
-\end{equation*}
+\]
 commutes \emph{(in other words, $\Delta_X$ is a functorial morphism in the category of preschemes)}.
 \end{prop}
 
@@ -508,12 +512,11 @@ the conclusion then follows from \sref{1.5.3.15}.
 \end{proof}
 
 \subsection{Separated morphisms and separated preschemes}
-\label{subsection:separated-morphism-and-separated-preschemes}
+\label{subsection:1.5.4}
 
 \begin{defn}[5.4.1]
 \label{1.5.4.1}
-We say that a morphism of preschemes $f:X\to Y$ is separated if the diagonal morphism $X\to X\times_Y X$ is a \emph{closed} immersion;
-we then also say that $X$ is a \emph{separated prescheme over $Y$}, or a \emph{$Y$-scheme}.
+We say that a morphism of preschemes $f:X\to Y$ is separated if the diagonal morphism $X\to X\times_Y X$ is a \emph{closed} immersion; we then also say that $X$ is a \emph{separated prescheme over $Y$}, or a \emph{$Y$-scheme}.
 We say that a prescheme $X$ is separated if it is separated over $\Spec(\bb{Z})$;
 we then also say that $X$ is a \emph{scheme}\footnote{\emph{[Trans.] We repeat here the warning given at the very start of this translation: the early versions of the EGA use \emph{prescheme} to mean is now usually called a scheme, and \emph{scheme} for what is now usually called a separated scheme.}. Grothendieck himself later said that the more modern terminology was preferable, but we have decided to keep this translation `historically accurate' by using the older nomenclature.} \emph{(cf. \sref{1.5.5.7})}.
 \end{defn}
@@ -598,39 +601,39 @@ finally, if we assume that the conclusion of \sref{1.5.4.6} is true for the $Y$ 
 \end{rmk}
 
 \subsection{Separation criteria}
-\label{subsection:separation-criteria}
+\label{subsection:1.5.5}
 
 \begin{prop}[5.5.1]
 \label{1.5.5.1}
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
-    \item Every monomorphism of preschemes (and, in particular, every immersion) is a separated morphism.
-    \item The composition of any two separated morphisms is separated.
-    \item If $f:X\to X'$ and $g:Y\to Y'$ are separated $S$-morphisms, then $f\times_S g$ is separated.
-    \item If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated for every extension $S'\to S$ of the base prescheme.
-    \item If the composition $g\circ f$ is separated, then $f$ is separated.
-    \item For a morphism $f$ to be separated, it is necessary and sufficient for $f_\red$ \sref{1.5.1.5} to be separated.
+  \item Every monomorphism of preschemes (and, in particular, every immersion) is a separated morphism.
+  \item The composition of any two separated morphisms is separated.
+  \item If $f:X\to X'$ and $g:Y\to Y'$ are separated $S$-morphisms, then $f\times_S g$ is separated.
+  \item If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated for every extension $S'\to S$ of the base prescheme.
+  \item If the composition $g\circ f$ is separated, then $f$ is separated.
+  \item For a morphism $f$ to be separated, it is necessary and sufficient for $f_\red$ \sref{1.5.1.5} to be separated.
 \end{enumerate}
 \end{prop}
 
 \begin{proof}
 \label{proof-1.5.5.1}
-Note that (i) is an immediate consequence of \sref{1.5.3.8}.
+Note that~(i) is an immediate consequence of \sref{1.5.3.8}.
 If $f:X\to Y$ and $g:Y\to Z$ are morphisms, then the diagram
-\begin{equation*}
-\label{1.5.5.1.1}
+\[
+\label{eq:1.5.5.1.1}
   \xymatrix{
     X\ar[rr]^{\Delta_{X|Z}}\ar[dr]_{\Delta_{X|Y}} & &
     X\times_Z X\\
     & X\times_Y X\ar[ur]_j
   }
   \tag{5.5.1.1}
-\end{equation*}
+\]
 commutes (where $j$ denotes the canonical immersion \sref{1.5.3.10}), as can be immediately verified.
 If $f$ and $g$ are separated, then $\Delta_{X|Y}$ is a closed immersion by definition, and $j$ is a closed immersion by \sref{1.5.4.2}, whence $\Delta_{X|Z}$ is a closed immersion by \sref{1.4.2.4}, which
 \oldpage[I]{137}
-proves (ii).
-Given (i) and (ii), (iii) and (iv) are equivalent \sref{1.3.5.1}, so it suffices to prove (iv).
+proves~(ii).
+Given~(i) and~(ii), (iii) and~(iv) are equivalent \sref{1.3.5.1}, so it suffices to prove (iv).
 But $X_{(S')}\times_{Y_{(S')}}X_{(S')}$ is canonically identified with $(X\times_Y X)\times_Y Y_{(S')}$ by \sref{1.3.3.11} and \hyperref[1.3.3.9]{(3.3.9.1)}, and we immediately see that the diagonal morphism $\Delta_{X_{(S')}}$ can then be identified with $\Delta_X\times_Y 1_{Y_{(S')}}$;
 the proposition then follows from \sref{1.4.3.1}.
 
@@ -777,7 +780,7 @@ The prescheme from Example~\sref{1.2.3.2} (``the projective line over a field $K
 With the same choice of $X_1$, $X_2$, $U_{12}$, and $U_{21}$ as in Example~\sref{1.2.3.2}, now take $u_{12}$ to be the isomorphism which sends $f(s)$ to $f(t)$;
 we now obtain, by gluing, a \emph{non-separated integral} prescheme $X$, because the first condition of \sref{1.5.5.6} is satisfied, but not the second.
 It is immediate here that $\Gamma(X,\OO_X)\to\Gamma(X_1,\OO_X)=K[s]$ is an isomorphism;
-the inverse isomorphism defines a morphism $f:X\to\Spec(K[s])$ that is surjective, and for every $y\in\Spec(K[s])$ such that $\fk{j}_y\neq(0)$, $f^{-1}(y)$ consists of a single point, but for $\fk{j}_y=(0)$, $f^{-1}(y)$ consists of \emph{two} distinct points (we say that $X$ is the ``affine line over $K$ with the point $0$ doubled'').
+the inverse isomorphism defines a morphism $f:X\to\Spec(K[s])$ that is surjective, and for every $y\in\Spec(K[s])$ such that $\mathfrak{j}_y\neq(0)$, $f^{-1}(y)$ consists of a single point, but for $\mathfrak{j}_y=(0)$, $f^{-1}(y)$ consists of \emph{two} distinct points (we say that $X$ is the ``affine line over $K$ with the point $0$ doubled'').
 
 We can also give examples where \emph{neither} of the two conditions of \sref{1.5.5.6} are satisfied.
 First note that, in the prime spectrum $Y$ of the ring $A=K[s,t]$ of polynomials in two indeterminates over a field $K$, the open subset $U$ given by the union of $D(s)$ and $D(t)$ is \emph{not an affine open subset}.

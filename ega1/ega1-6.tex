@@ -1,8 +1,8 @@
 \section{Finiteness conditions}
-\label{section:finiteness-conditions}
+\label{section:1.6}
 
 \subsection{Noetherian and locally Noetherian preschemes}
-\label{subsection:noetherian-and-locally-noetherian-preschemes}
+\label{subsection:1.6.1}
 
 \begin{defn}[6.1.1]
 \label{1.6.1.1}
@@ -42,11 +42,11 @@ The following conditions are equivalent:
 \label{proof-1.6.1.3}
 The equivalence between (a) and (b) follows from \sref{1.6.1.2} ant the fact that the underlying space of every affine scheme is quasi-compact \sref{1.1.1.10}; it is furthermore clear that (c) implies (a).
 To see that (a) implies (c), we remark that there is a finite cover $(V_i)$ of $X$ by affine open subsets such that the ring $A_i$ of the prescheme induced on $V_i$ is Noetherian.
-So let $(\fk{a}_n)$ be an increasing sequence of ideals of $A$; by a canonical bijective correspondence, there is a corresponding sequence $(\wt{\fk{a}}_n)$ of sheaves of ideals in $\wt{A}=\OO_X$;
-to see that the sequence $(\fk{a}_n)$ is \unsure{stable}, it suffices to prove that the sequence $(\wt{\fk{a}}_n)$ is.
-But the restriction $\wt{\fk{a}}_n|V_i$ is a quasi-coherent sheaf of ideals in $\OO_X|V_i$, being the inverse image of $\wt{\fk{a}}_n$ under the canonical injection $V_i\to X$ \sref[0]{0.5.1.4};
-$\wt{\fk{a}}_n|V_i$ is thus of the form $\wt{\fk{a}}_{ni}$, where $\fk{a}_{ni}$ is an ideal of $A_i$ \sref{1.1.3.7}.
-Since $A_i$ is Noetherian, the sequence $(\fk{a}_{ni})$ is stable for all $i$, whence the proposition.
+So let $(\mathfrak{a}_n)$ be an increasing sequence of ideals of $A$; by a canonical bijective correspondence, there is a corresponding sequence $(\wt{\mathfrak{a}}_n)$ of sheaves of ideals in $\wt{A}=\OO_X$;
+to see that the sequence $(\mathfrak{a}_n)$ is \unsure{stable}, it suffices to prove that the sequence $(\wt{\mathfrak{a}}_n)$ is.
+But the restriction $\wt{\mathfrak{a}}_n|V_i$ is a quasi-coherent sheaf of ideals in $\OO_X|V_i$, being the inverse image of $\wt{\mathfrak{a}}_n$ under the canonical injection $V_i\to X$ \sref[0]{0.5.1.4};
+$\wt{\mathfrak{a}}_n|V_i$ is thus of the form $\wt{\mathfrak{a}}_{ni}$, where $\mathfrak{a}_{ni}$ is an ideal of $A_i$ \sref{1.1.3.7}.
+Since $A_i$ is Noetherian, the sequence $(\mathfrak{a}_{ni})$ is stable for all $i$, whence the proposition.
 \end{proof}
 
 We note that the above argument proves also that \emph{if $X$ is a Noetherian prescheme, then every increasing sequence of coherent sheaves of ideals of $\OO_X$ is \unsure{stable}}.
@@ -61,8 +61,8 @@ Every subprescheme of a Noetherian (resp. locally Noetherian) prescheme is Noeth
 If suffices to give a proof for a Noetherian prescheme $X$;
 further, by definition~\sref{1.6.1.1}, we can also restrict to the case where $X$ is an affine scheme.
 Since every subprescheme of $X$ is a closed subprescheme of a prescheme induced on an open subset \sref{1.4.1.3}, we can restrict to the case of a subprescheme $Y$, either closed or induced on an open subset of $X$.
-The proof in the case where $Y$ is closed is immediate, since if $A$ is the ring of $X$, we know that $Y$ is an affine scheme given by the ring $A/\fk{J}$, where $\fk{J}$ is an ideal of $A$ \sref{1.4.2.3};
-since $A$ is Noetherian \sref{1.6.1.3}, so too is $A/\fk{J}$.
+The proof in the case where $Y$ is closed is immediate, since if $A$ is the ring of $X$, we know that $Y$ is an affine scheme given by the ring $A/\mathfrak{J}$, where $\mathfrak{J}$ is an ideal of $A$ \sref{1.4.2.3};
+since $A$ is Noetherian \sref{1.6.1.3}, so too is $A/\mathfrak{J}$.
 
 Now suppose that $Y$ is open in $X$;
 the underlying space of $Y$ is Noetherian \sref{1.6.1.2}, hence quasi-compact, and thus a finite union of open subsets $D(f_i)$ ($f_i\in A$);
@@ -152,7 +152,7 @@ Since they are closed and pairwise disjoint, they are open.
 
 Finally, the equivalence between (d) and (e) holds true even without the assumption that the underlying space of the prescheme $X$ is locally Noetherian.
 We can in fact restrict ourselves to the case where $X=\Spec(A)$ is affine, by \sref[0]{0.2.1.6};
-to say that $x$ is contained in only one single irreducible component of $X$ is to say that $\fk{j}_x$ contains only one single minimal ideal of $A$ \sref{1.1.1.14}, which is equivalent to saying that $\fk{j}_x\OO_x$ contains only one single minimal ideal of $\OO_x$, whence the conclusion.
+to say that $x$ is contained in only one single irreducible component of $X$ is to say that $\mathfrak{j}_x$ contains only one single minimal ideal of $A$ \sref{1.1.1.14}, which is equivalent to saying that $\mathfrak{j}_x\OO_x$ contains only one single minimal ideal of $\OO_x$, whence the conclusion.
 \end{proof}
 
 \begin{cor}[6.1.11]
@@ -190,11 +190,11 @@ If $\sh{N}_x=0$, we also have $\sh{N}_y=0$ for any $y$ in a neighbourhood of $x$
 \end{proof}
 
 \subsection{Artinian preschemes}
-\label{subsectin-artinian-preschemes}
+\label{subsection:1.6.2}
 
 \begin{defn}[6.2.1]
 \label{1.6.2.1}
-We say that a prescheme is Artinian if it is affine, and given by an Artinian ring.
+We say that a prescheme is \emph{Artinian} if it is affine, and given by an Artinian ring.
 \end{defn}
 
 \begin{prop}[6.2.2]
@@ -221,11 +221,11 @@ it is clear that $X$ is isomorphic to the prime spectrum affine scheme of the ri
 \end{proof}
 
 \subsection{Morphisms of finite type}
-\label{subsection:morphisms-of-finite-type}
+\label{subsection:1.6.3}
 
 \begin{defn}[6.3.1]
 \label{1.6.3.1}
-We say that a morphism $f:X\to Y$ is of finite type if $Y$ is the union of a family $(V_\alpha)$ of affine open subsets having the following property:
+We say that a morphism $f:X\to Y$ is \emph{of finite type} if $Y$ is the union of a family $(V_\alpha)$ of affine open subsets having the following property:
 \begin{enumerate}
   \item[(P)] $f^{-1}(V_\alpha)$ is a finite union of affine open subsets $U_{\alpha i}$ that are such that each ring $A(U_{\alpha i})$ is an algebra of finite type over $A(V_\alpha)$.
 \end{enumerate}
@@ -306,8 +306,8 @@ there are thus $c_i\in B'$ such that $\sum_i c_ig_i^N=1$, whence $b=\sum_ic_ig_i
 By \sref{1.5.5.12}, it suffices to prove (i), (ii), and (iv).
 
 To show (i), we can restrict to the case of a canonical injection $X\to Y$, with $X$ being a closed subprescheme of $Y$;
-further \sref{1.6.3.2}, we can assume that $Y$ is affine, in which case $X$ is also affine \sref{1.4.2.3} and its ring is isomorphic to a quotient ring $A/\fk{J}$, where $A$ is the ring of $Y$ and $\fk{J}$ is an ideal of $A$;
-since $A/\fk{J}$ is of finite type over $A$, the conclusion follows.
+further \sref{1.6.3.2}, we can assume that $Y$ is affine, in which case $X$ is also affine \sref{1.4.2.3} and its ring is isomorphic to a quotient ring $A/\mathfrak{J}$, where $A$ is the ring of $Y$ and $\mathfrak{J}$ is an ideal of $A$;
+since $A/\mathfrak{J}$ is of finite type over $A$, the conclusion follows.
 
 Now we show (ii).
 Let $f:X\to Y$ and $g:Y\to Z$ be two morphisms of finite type, and let $U$ be an affine open subset of $Z$;
@@ -429,7 +429,7 @@ By Hilbert's Nullstellensatz~\cite{I-21}, there exists an $\Omega$-homomorphism 
 \end{proof}
 
 \subsection{Algebraic preschemes}
-\label{subsection:algebraic-preschemes}
+\label{subsection:1.6.4}
 
 \begin{defn}[6.4.1]
 \label{1.6.4.1}
@@ -449,11 +449,11 @@ For a point $x\in X$ to be closed, it is necessary and sufficient that $\kres(x)
 \label{proof-1.6.4.2}
 We can assume that $X$ is affine, with the ring $A$ of $X$ being a $K$-algebra of finite type.
 Indeed, the affine open subsets $U$ of $X$ such that $A(U)$ is a $K$-algebra of finite type form a finite cover of $X$ \sref{1.6.3.1}.
-The closed points of $X$ are thus the points such that $\fk{j}_x$ is a
+The closed points of $X$ are thus the points such that $\mathfrak{j}_x$ is a
 \oldpage[I]{148}
-maximal ideal of $A$, or in other words, such that $A/\fk{j}_x$ is a field (necessarily equal to $\kres(x)$).
-Since $A/\fk{j}_x$ is a $K$-algebra of finite type, we see that if $x$ is closed, then $\kres(x)$ is a field that is an algebra of finite type over $K$, and so necessarily a $K$-algebra of \emph{finite rank}~\cite{I-21}.
-Conversely, if $\kres(x)$ is of finite rank over $K$, then so is $A/\fk{j}_x\subset\kres(x)$, and since every integral ring that is also a $K$-algebra of finite rank is a field, we have that $A/\fk{j}_x=\kres(x)$, and hence $x$ is closed.
+maximal ideal of $A$, or in other words, such that $A/\mathfrak{j}_x$ is a field (necessarily equal to $\kres(x)$).
+Since $A/\mathfrak{j}_x$ is a $K$-algebra of finite type, we see that if $x$ is closed, then $\kres(x)$ is a field that is an algebra of finite type over $K$, and so necessarily a $K$-algebra of \emph{finite rank}~\cite{I-21}.
+Conversely, if $\kres(x)$ is of finite rank over $K$, then so is $A/\mathfrak{j}_x\subset\kres(x)$, and since every integral ring that is also a $K$-algebra of finite rank is a field, we have that $A/\mathfrak{j}_x=\kres(x)$, and hence $x$ is closed.
 \end{proof}
 
 \begin{cor}[6.4.3]
@@ -524,7 +524,7 @@ for every algebraically closed extension $\Omega$ of $K$, the underlying space o
 \begin{proof}
 \label{proof-1.6.4.7}
 We can clearly restrict to the case where the ring $A=A(X)$ is \emph{local} \sref{1.6.2.2};
-let $\fk{m}$ be its maximal ideal, and $L=A/\fk{m}$ its residue field, an algebraic extension of $K$.
+let $\mathfrak{m}$ be its maximal ideal, and $L=A/\mathfrak{m}$ its residue field, an algebraic extension of $K$.
 The points of $X$ with values in $\Omega$ then correspond, bijectively, to the $\Omega$-sections of $X\otimes_K\Omega$ (\sref{1.3.4.1} and \sref{1.3.3.14}), and also to the $K$-homomorphisms from $L$ to $\Omega$ \sref{1.1.7.3}, whence the proposition (Bourbaki, \emph{Alg.}, chap.~V, §7, n\textsuperscript{o}~5, prop.~8), taking \sref{1.6.4.3} into account.
 \end{proof}
 
@@ -593,6 +593,7 @@ The morphisms which are not of finite type will show up in the following mostly 
 \end{env}
 
 \subsection{Local determination of a morphism}
+\label{subsection:1.6.5}
 
 \begin{prop}[6.5.1]
 \label{1.6.5.1}
@@ -609,11 +610,11 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
 \label{proof-1.6.5.1}
 \medskip\noindent
 \begin{enumerate}[label=(\roman*)]
-    \item Since the question is local on $S$, $X$, and $Y$, we can assume that $S$, $X$, and $Y$ are affine, given by rings $A$, $B$, and $C$ (respectively), and with $f$ and $f'$ of the form $({}^a\vphi,\wt{\vphi})$ and $({}^a\vphi',\wt{\vphi}')$ (respectively), where $\vphi$ and $\vphi'$ are $A$-homomorphisms from $C$ to $B$ such that $\vphi^{-1}(\fk{j}_x)=\vphi'^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphisms $\vphi_x$ and $\vphi'_x$ from $C_y$ to $B_x$, induced by $\vphi$ and $\vphi'$, are identical;
+    \item Since the question is local on $S$, $X$, and $Y$, we can assume that $S$, $X$, and $Y$ are affine, given by rings $A$, $B$, and $C$ (respectively), and with $f$ and $f'$ of the form $({}^a\vphi,\wt{\vphi})$ and $({}^a\vphi',\wt{\vphi}')$ (respectively), where $\vphi$ and $\vphi'$ are $A$-homomorphisms from $C$ to $B$ such that $\vphi^{-1}(\mathfrak{j}_x)=\vphi'^{-1}(\mathfrak{j}_x)=\mathfrak{j}_y$, and the homomorphisms $\vphi_x$ and $\vphi'_x$ from $C_y$ to $B_x$, induced by $\vphi$ and $\vphi'$, are identical;
         we can further suppose that $C$ is an $A$-algebra \emph{of finite type}.
         Let $c_i$ ($1\leq i\leq n$) be the generators of the $A$-algebra $C$, and set $b_i=\vphi(c_i)$ and $b'_i=\vphi'(c_i)$;
         by hypothesis, we have $b_i/1=b'_i/1$ in the ring of fractions $B_x$ ($1\leq i\leq n$).
-        This implies that there exist elements $s_i\in B\setmin\fk{j}_x$ such that $s_i(b_i-b'_i)=0$ for $1\leq i\leq n$, and we can clearly assume that all the $s_i$ are equal to a single element $g\in B\setmin\fk{j}_x$.
+        This implies that there exist elements $s_i\in B\setmin\mathfrak{j}_x$ such that $s_i(b_i-b'_i)=0$ for $1\leq i\leq n$, and we can clearly assume that all the $s_i$ are equal to a single element $g\in B\setmin\mathfrak{j}_x$.
         From this, we conclude that we have $b_i/1=b'_i/1$ for $1\leq i\leq n$ in the ring of fractions $B_g$;
         if $i_g$ is the canonical homomorphism $B\to B_g$, we then have $i_g\circ\vphi=i_g\circ\vphi'$;
         so the restrictions of $f$ and $f'$ to $D(g)$ are identical.
@@ -623,11 +624,11 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
         \[
             \beta:A[X_1,\ldots,X_n] \xrightarrow{\alpha} C \xrightarrow{i_y} C_y \xrightarrow{\vphi} B_x.
         \]
-        We denote by $\fk{a}$ the kernel of $\beta$;
-        since $A$ is Noetherian, so too is $A[X_1,\ldots,X_n]$, and so $\fk{a}$ admits a finite system of generators $Q_j(X_1,\ldots,X_n)$ ($1\leq j\leq m$).
-        Furthermore, each of the elements $\vphi(i_y(c_i))$ can be written in the form $b_i/s_i$, where $b_i\in B$ and $s_i\not\in\fk{j}_x$;
+        We denote by $\mathfrak{a}$ the kernel of $\beta$;
+        since $A$ is Noetherian, so too is $A[X_1,\ldots,X_n]$, and so $\mathfrak{a}$ admits a finite system of generators $Q_j(X_1,\ldots,X_n)$ ($1\leq j\leq m$).
+        Furthermore, each of the elements $\vphi(i_y(c_i))$ can be written in the form $b_i/s_i$, where $b_i\in B$ and $s_i\not\in\mathfrak{j}_x$;
         \oldpage[I]{151}
-        we can further assume that all of the $s_i$ are equal to a single element $g\in B\setmin\fk{j}_x$.
+        we can further assume that all of the $s_i$ are equal to a single element $g\in B\setmin\mathfrak{j}_x$.
         With this, by hypothesis, we have $Q_j(b_1/g,\ldots,b_n/g)=0$ in $B_x$;
         set
         \[
@@ -635,10 +636,10 @@ let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
         \]
         where $P_j$ is homogeneous of degree $k_j$.
         Then let $d_j=P_j(b_1,\ldots,b_n,g)\in B$.
-        By hypothesis, we have $t_jd_j=0$ for some $t_j\in B\setmin\fk{j}_x$ ($1\leq j\leq m$), and we can clearly assume that all the $t_j$ are equal to a single element $h\in B\setmin\fk{j}_x$;
+        By hypothesis, we have $t_jd_j=0$ for some $t_j\in B\setmin\mathfrak{j}_x$ ($1\leq j\leq m$), and we can clearly assume that all the $t_j$ are equal to a single element $h\in B\setmin\mathfrak{j}_x$;
         from this we conclude that $P_j(hb_1,\ldots,hb_n,hg)=0$ for $1\leq j\leq m$.
         With this, consider the homomorphism $\rho$ from $A[X_1,\ldots,X_n]$ to the ring of fractions $B_{hg}$ which sends $X_i$ to $hb_i/hg$ ($1\leq i\leq n$);
-        the image of $\fk{a}$ under this homomorphism is $0$, and is \emph{a fortiori} the same as the image of the kernel $\alpha^{-1}(0)$ under $\rho$.
+        the image of $\mathfrak{a}$ under this homomorphism is $0$, and is \emph{a fortiori} the same as the image of the kernel $\alpha^{-1}(0)$ under $\rho$.
         So $\rho$ factors as $A[X_1,\ldots,X_n]\xrightarrow{\alpha}C\xrightarrow{\gamma}B_{hg}$, with $\gamma(c_i)=hb_i/hg$, and it is clear that, if $i_x$ is the canonical homomorphism $B_{hg}\to B_x$, then the diagram
         \[
           \xymatrix{
@@ -692,10 +693,10 @@ Let $f=(\psi,\theta):X\to Y$ be a morphism of finite type, $x$ a point of $X$, a
     \item[(ii)] By \sref{1.6.5.1}, there exists an open neighbourhood $V$ of $Y$ and a morphism $g:V\to X$ such that $g\circ f$ (resp. $f\circ g$) is defined and agrees with the identity on a neighbourhood of $x$ (resp. $y$), whence we can easily see that $f$ is a local isomorphism.
     \item[(i)] Since the question is local on $X$ and $Y$, we can assume that $X$ and $Y$ are affine, given by rings $A$ and $B$ (respectively);
     we have $f=({}^a\vphi,\wt{\vphi})$, where $\vphi$ is a homomorphism of rings $B\to A$ that makes $A$ a $B$-algebra of finite type;
-    we have $\vphi^{-1}(\fk{j}_x)=\fk{j}_y$, and the homomorphism $\vphi_x:B_y\to A_x$ induced by $\vphi$ is \emph{surjective}.
+    we have $\vphi^{-1}(\mathfrak{j}_x)=\mathfrak{j}_y$, and the homomorphism $\vphi_x:B_y\to A_x$ induced by $\vphi$ is \emph{surjective}.
     Let $(t_i)$ ($1\leq i\leq n$) be a system of generators of the $B$-algebra $A$;
-    the hypothesis on $\vphi_x$ implies that there exist $b_i\in B$ and some $c\in B\setmin\fk{j}_x$ such that, in the ring of fractions $A_x$, we have $t_i/1=\vphi(b_i)/\vphi(c)$ for $1\leq i\leq n$.
-    Then \sref{1.1.3.3} there exists some $a\in A\setmin\fk{j}_x$ such that, if we let $g=a\vphi(c)$, we also have $t_i/1=a\vphi(b_i)/g$ \emph{in the ring of fractions $A_g$}.
+    the hypothesis on $\vphi_x$ implies that there exist $b_i\in B$ and some $c\in B\setmin\mathfrak{j}_x$ such that, in the ring of fractions $A_x$, we have $t_i/1=\vphi(b_i)/\vphi(c)$ for $1\leq i\leq n$.
+    Then \sref{1.1.3.3} there exists some $a\in A\setmin\mathfrak{j}_x$ such that, if we let $g=a\vphi(c)$, we also have $t_i/1=a\vphi(b_i)/g$ \emph{in the ring of fractions $A_g$}.
     With this, there exists, by hypothesis, a polynomial $Q(X_1,\ldots,X_n)$, with coefficients in the ring $\vphi(B)$, such that $a=Q(t_1,\ldots,t_n)$;
     \oldpage[I]{152}
     let $Q(X_1/T,\ldots,X_n/T)=P(X_1,\ldots,X_n,T)/T^m$, where $P$ is homogeneous of degree $m$.
@@ -734,15 +735,15 @@ similarly, (ii) follows from \sref{1.6.5.4}[ii].
 \end{proof}
 
 \subsection{Quasi-compact morphisms and morphisms locally of finite type}
-\label{subsection:quasi-compact-morphisms-and-morphisms-locally-of-finite-type}
+\label{subsection:1.6.6}
 
 \begin{defn}[6.6.1]
 \label{1.6.6.1}
-We say that a morphism $f: X\to Y$ is quasi-compact if the inverse image of any quasi-compact open subset of $Y$ under $f$ is quasi-compact.
+We say that a morphism $f:X\to Y$ is quasi-compact if the inverse image of any quasi-compact open subset of $Y$ under $f$ is quasi-compact.
 \end{defn}
 
-Let $\fk{B}$ be a base of the topology of $Y$ consisting of quasi-compact open subsets (for example, affine open subsets);
-for $f$ to be quasi-compact, it is necessary and sufficient that the inverse image of every set of $\fk{B}$ under $f$ be quasi-compact (or, equivalently, a \emph{finite} union of affine open subsets), because every quasi-compact open subset of $Y$ is a finite union of sets of $\fk{B}$.
+Let $\mathfrak{B}$ be a base of the topology of $Y$ consisting of quasi-compact open subsets (for example, affine open subsets);
+for $f$ to be quasi-compact, it is necessary and sufficient that the inverse image of every set of $\mathfrak{B}$ under $f$ be quasi-compact (or, equivalently, a \emph{finite} union of affine open subsets), because every quasi-compact open subset of $Y$ is a finite union of sets of $\mathfrak{B}$.
 For example, if $X$ is \emph{quasi-compact} and $Y$ \emph{affine}, then \emph{every} morphism $f: X\to Y$ is quasi-compact:
 indeed, $X$ is a finite union of affine open subsets $U_i$, and for every affine open subset $V$ of $Y$, $U_i\cap f^{-1}(V)$ is affine \sref{1.5.5.10}, and so quasi-compact.
 

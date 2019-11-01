@@ -1,8 +1,8 @@
 \section{Preschemes and morphisms of preschemes}
-\label{section:preschemes-and-morphisms}
+\label{section:1.2}
 
 \subsection{Definition of preschemes}
-\label{subsection:preschemes-definition}
+\label{subsection:1.2.1}
 
 \begin{env}[2.1.1]
 \label{1.2.1.1}
@@ -78,7 +78,7 @@ We say that a prescheme $(X,\OO_X)$ is \emph{locally integral} if every $x\in X$
 \end{env}
 
 \subsection{Morphisms of preschemes}
-\label{subsection:prescheme-morphisms}
+\label{subsection:1.2.2}
 
 \begin{defn}[2.2.1]
 \label{1.2.2.1}
@@ -206,7 +206,7 @@ If $U$ is an open subset of the underlying space $X$ of a prescheme, then whenev
 \end{nota}
 
 \subsection{Gluing preschemes}
-\label{subsection:gluing-preschemes}
+\label{subsection:1.2.3}
 
 \begin{env}[2.3.1]
 \label{1.2.3.1}
@@ -228,7 +228,7 @@ Indeed, a section of $\OO_X$ over $X$ has a restriction over $X_1$ (resp. $X_2$)
 \end{env}
 
 \subsection{Local schemes}
-\label{subsection:local-schemes}
+\label{subsection:1.2.4}
 
 \begin{env}[2.4.1]
 \label{1.2.4.1}
@@ -262,7 +262,7 @@ thus defined is said to be {\it canonical}.
 Let $(Y,\OO_Y)$ be a prescheme;
 for all $y\in Y$, let $(\psi,\theta)$ be the canonical morphism $(\Spec(\OO_y),\widetilde{\OO}_y)\to(Y,\OO_Y)$.
 Then $\psi$ is a homeomorphism from $\Spec(\OO_y)$ to the subspace $S_y$ of $Y$ given by the $z$ such that $y\in\overline{\{z\}}$ (\emph{or, equivalently, the generalizations of $y$ \sref[0]{0.2.1.2}};
-furthermore, if $z=\psi(\fk{p})$, then $\theta_z^\sharp:\OO_z\to(\OO_y)_\fk{p}$ is an isomorphism;
+furthermore, if $z=\psi(\mathfrak{p})$, then $\theta_z^\sharp:\OO_z\to(\OO_y)_\mathfrak{p}$ is an isomorphism;
 $(\psi,\theta)$ is thus a monomorphism of ringed spaces.
 \end{prop}
 
@@ -289,21 +289,21 @@ This establishes a canonical bijective correspondence between the set of morphis
 
 Indeed, for all $x\in X$, we have that $a\in\overline{\{x\}}$, so $\psi(a)\in\overline{\{\psi(x)\}}$, which shows that $\psi(X)$ is contained in every affine open subset that contains $\psi(a)$.
 So it suffices to consider the case where $(Y,\OO_Y)$ is an affine scheme of ring $B$, and then we have that $u=({}^a\vphi,\tilde{\vphi})$, where $\vphi\in\Hom(B,A)$ \sref{1.1.7.3}.
-Further, we have that $\vphi^{-1}(\fk{j}_a)=\fk{j}_{\psi(a)}$, and hence that the image under $\vphi$ of any element of $B\setmin\fk{j}_{\psi(a)}$ is invertible in the local ring $A$;
+Further, we have that $\vphi^{-1}(\mathfrak{j}_a)=\mathfrak{j}_{\psi(a)}$, and hence that the image under $\vphi$ of any element of $B\setmin\mathfrak{j}_{\psi(a)}$ is invertible in the local ring $A$;
 the factorization in the result follows from the universal property of the ring of fractions \sref[0]{0.1.2.4}.
 Conversely, to each local homomorphism $\OO_y\to A$ there is a unique corresponding morphism $(\psi,\theta):X\to\Spec(\OO_y)$ such that $\psi(a)=y$ \sref{1.1.7.3}, and, by composing with the canonical morphism $\Spec(\OO_y)\to Y$, we obtain a morphism $X\to Y$, which proves the proposition.
 
 \begin{env}[2.4.5]
 \label{1.2.4.5}
 The affine schemes whose ring is a field $K$ have an underlying space that is just a point.
-If $A$ is a local ring with maximal ideal $\fk{m}$, then each local homomorphism $A\to K$ has kernel equal to $\fk{m}$, and so factors as $A\to A/\fk{m}\to K$, where the second arrow is a monomorphism.
-The morphisms $\Spec(K)\to\Spec(A)$ thus correspond bijectively to monomorphisms of fields $A/\fk{m}\to K$.
+If $A$ is a local ring with maximal ideal $\mathfrak{m}$, then each local homomorphism $A\to K$ has kernel equal to $\mathfrak{m}$, and so factors as $A\to A/\mathfrak{m}\to K$, where the second arrow is a monomorphism.
+The morphisms $\Spec(K)\to\Spec(A)$ thus correspond bijectively to monomorphisms of fields $A/\mathfrak{m}\to K$.
 \end{env}
 
 Let $(Y,\OO_Y)$ be a prescheme;
-for each $y\in Y$ and each ideal $\fk{a}_y$ of $\OO_y$, the canonical homomorphism $\OO_y\to\OO_y/\fk{a}_y$ defines a morphism $\Spec(\OO_y/\fk{a}_y)\to\Spec(\OO_y)$;
-if we compose this with the canonical morphism $\Spec(\OO_y)\to Y$, then we obtain a morphism $\Spec(\OO_y/\fk{a}_y)\to Y$, again said to be \textit{canonical}.
-For $\fk{a}_y=\fk{m}_y$, this says that $\OO_y/\fk{a}_y=\kres(y)$, and so Proposition~\sref{1.2.4.4} says that:
+for each $y\in Y$ and each ideal $\mathfrak{a}_y$ of $\OO_y$, the canonical homomorphism $\OO_y\to\OO_y/\mathfrak{a}_y$ defines a morphism $\Spec(\OO_y/\mathfrak{a}_y)\to\Spec(\OO_y)$;
+if we compose this with the canonical morphism $\Spec(\OO_y)\to Y$, then we obtain a morphism $\Spec(\OO_y/\mathfrak{a}_y)\to Y$, again said to be \textit{canonical}.
+For $\mathfrak{a}_y=\mathfrak{m}_y$, this says that $\OO_y/\mathfrak{a}_y=\kres(y)$, and so Proposition~\sref{1.2.4.4} says that:
 
 \begin{cor}[2.4.6]
 \label{1.2.4.6}
@@ -315,12 +315,12 @@ This establishes a canonical bijective correspondence between the set of morphis
 
 \begin{cor}[2.4.7]
 \label{1.2.4.7}
-For all $y\in Y$, every canonical morphism $\Spec(\OO_y/\fk{a}_y)\to Y$ is a monomorphism of ringed spaces.
+For all $y\in Y$, every canonical morphism $\Spec(\OO_y/\mathfrak{a}_y)\to Y$ is a monomorphism of ringed spaces.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.2.4.7}
-We have already seen this when $\fk{a}_y=0$ \sref{1.2.4.2}, and it suffices to apply Corollary~\sref{1.1.7.5}.
+We have already seen this when $\mathfrak{a}_y=0$ \sref{1.2.4.2}, and it suffices to apply Corollary~\sref{1.1.7.5}.
 \end{proof}
 
 \begin{rmk}{2.4.8}
@@ -332,7 +332,7 @@ we will see in Chapter~V that if $A$ is a normal ring then this is true when $A$
 \end{rmk}
 
 \subsection{Preschemes over a prescheme}
-\label{subsection:preschemes-over-prescheme}
+\label{subsection:1.2.5}
 
 \begin{defn}[2.5.1]
 \label{1.2.5.1}

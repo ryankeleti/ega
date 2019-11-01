@@ -1,8 +1,8 @@
 \section{Cohomology of affine schemes}
-\label{section:cohomology-of-affine-schemes}
+\label{section:3.1}
 
 \subsection{Review of the exterior algebra complex}
-\label{subsection:review-exterior-algebra-complex}
+\label{subsection:3.1.1}
 
 \begin{env}[1.1.1]
 \label{3.1.1.1}
@@ -207,7 +207,7 @@ We will also show that Proposition \sref{3.1.2.3} applied to $X$ and to $\sh{F}=
 \end{rmk}
 
 \subsection{\v Cech cohomology of an open cover}
-\label{subsection:cech-cohomology-open-cover}
+\label{subsection:3.1.2}
 
 \begin{nota}[1.2.1]
 \label{3.1.2.1}
@@ -220,7 +220,7 @@ In this section, we denote:
   \item $\mathbf{f}=(f_i)_{1\leq i\leq r}$ a finite system of elements of $A$;
   \item $U_i=X_{f_i}$, the open set \sref[0]{0.5.5.2} of the $x\in X$ such that $f_i(x)\neq 0$;
   \item $U=\bigcup_{i=1}^r U_i$;
-  \item $\fk{U}$ the cover $(U_i)_{1\leq i\leq r}$ of $U$.
+  \item $\mathfrak{U}$ the cover $(U_i)_{1\leq i\leq r}$ of $U$.
 \end{enumerate}
 \end{nota}
 
@@ -240,16 +240,16 @@ We set
 
 We have \sref[0]{0.1.6.1} that $M_{f_{i_0}f_{i_1}\cdots f_{i_p}}$ identifies with the inductive limit $\varinjlim_n M_{i_0 i_1\cdots i_p}^{(n)}$, where the inductive system is formed by the $M_{i_0 i_1\cdots i_p}^{(n)}=M$, the homomorphisms $\vphi_{nm}:M_{i_0 i_1\cdots i_p}^{(m)}\to M_{i_0 i_1\cdots i_p}^{(n)}$ being multiplication by $(f_{i_0}f_{i_1}\cdots f_{i_p})^{n-m}$ for $m\leq n$.
 We denote by $C_n^p(M)$ the set of \emph{alternating} maps from $[1,r]^{p+1}$ to $M$ (for all $n$); these $A$-modules also form an inductive system with respect to the $\vphi_{nm}$.
-If $C^p(\fk{U},\sh{F})$ is the group of \emph{alternating} \v Cech $p$-cochains relative to the cover $\fk{U}$, with coefficients in $\sh{F}$ (G, II, 5.1), then it follows from the above that we can write
+If $C^p(\mathfrak{U},\sh{F})$ is the group of \emph{alternating} \v Cech $p$-cochains relative to the cover $\mathfrak{U}$, with coefficients in $\sh{F}$ (G, II, 5.1), then it follows from the above that we can write
 \[
-  C^p(\fk{U},\sh{F})=\varinjlim_n C_n^p(M).
+  C^p(\mathfrak{U},\sh{F})=\varinjlim_n C_n^p(M).
   \tag{1.2.2.2}
 \]
 
 With the notations of \sref{3.1.1.2}, $C_n^p(M)$ identifies with $K^{p+1}(\mathbf{f}^n,M)$, and the map $\vphi_{nm}$ identifies with the map $\vphi_{\mathbf{f}^{n-m}}$ defined in \sref{3.1.1.6}.
 We thus have, for every $p\geq 0$, a canonical functorial isomorphism
 \[
-  C^p(\fk{U},\sh{F})\isoto C^{p+1}((\mathbf{f}),M).
+  C^p(\mathfrak{U},\sh{F})\isoto C^{p+1}((\mathbf{f}),M).
   \tag{1.2.2.3}
 \]
 
@@ -260,13 +260,13 @@ In addition, the formula (1.1.2.3) and the definition of the cohomology of a cov
 \label{3.1.2.3}
 If $X$ is a prescheme whose underlying space in Noetherian or a scheme whose underlying space is quasi-compact, then there exists a canonical functorial isomorphism in $\sh{F}$
 \[
-  \HH^p(\fk{U},\sh{F})\isoto\HH^{p+1}((\mathbf{f}),M)\text{ for }p\geq 1.
+  \HH^p(\mathfrak{U},\sh{F})\isoto\HH^{p+1}((\mathbf{f}),M)\text{ for }p\geq 1.
   \tag{1.2.3.1}
 \]
 
 In addition, we have a functorial exact sequence in $\sh{F}$
 \[
-  0\to\HH^0((\mathbf{f}),M)\to M\to\HH^0(\fk{U},\sh{F})\to\HH^1((\mathbf{f}),M)\to 0.
+  0\to\HH^0((\mathbf{f}),M)\to M\to\HH^0(\mathfrak{U},\sh{F})\to\HH^1((\mathbf{f}),M)\to 0.
   \tag{1.2.3.2}
 \]
 \end{prop}
@@ -275,13 +275,13 @@ In addition, we have a functorial exact sequence in $\sh{F}$
 \label{proof-3.1.2.3}
 \oldpage[III]{87}
 The isomorphisms (1.2.3.1) are immediate consequences of what we saw in \sref{3.1.2.2}.
-On the other hand, we have $C^0(\fk{U},\sh{F})=C^1((\mathbf{f}),M)$; as a result, $\HH^0(\fk{U},\sh{F})$ identifies with the subgroup of $1$-cocycles of $C^1((\mathbf{f}),M)$; as $M=C^0((\mathbf{f}),M)$, the exact sequence (1.2.3.2) is none other than the one given by the definition of the cohomology groups $\HH^0((\mathbf{f}),M)$ and $\HH^1((\mathbf{f}),M)$.
+On the other hand, we have $C^0(\mathfrak{U},\sh{F})=C^1((\mathbf{f}),M)$; as a result, $\HH^0(\mathfrak{U},\sh{F})$ identifies with the subgroup of $1$-cocycles of $C^1((\mathbf{f}),M)$; as $M=C^0((\mathbf{f}),M)$, the exact sequence (1.2.3.2) is none other than the one given by the definition of the cohomology groups $\HH^0((\mathbf{f}),M)$ and $\HH^1((\mathbf{f}),M)$.
 \end{proof}
 
 \begin{cor}[1.2.4]
 \label{3.1.2.4}
 Suppose that the $X_{f_i}$ are quasi-compact and that there exists $g_i\in\Gamma(U,\sh{F})$ such that $\sum_i g_i(f_i|U)=1|U$.
-Then for every quasi-coherent $(\OO_X|U)$-module $\sh{G}$, we have $\HH^p(\fk{U},\sh{G})=0$ for $p>0$; if in addition $U=X$, then the canonical homomorphism (1.2.3.2) $M\to\HH^0(\fk{U},\sh{F})$ is bijective.
+Then for every quasi-coherent $(\OO_X|U)$-module $\sh{G}$, we have $\HH^p(\mathfrak{U},\sh{G})=0$ for $p>0$; if in addition $U=X$, then the canonical homomorphism (1.2.3.2) $M\to\HH^0(\mathfrak{U},\sh{F})$ is bijective.
 \end{cor}
 
 \begin{proof}
@@ -290,7 +290,7 @@ As by hypothesis the $U_i=X_{f_i}$ are quasi-compact, so is $U$, and we can redu
 The corollary then follows immediately from (1.2.3.1) and (1.2.3.2).
 \end{proof}
 
-We note that since $\HH^0(\fk{U},\sh{F})=\HH^0(U,\sh{F})$ (G, II, 5.2.2), we have again proved \sref[I]{1.1.3.7} as a special case.
+We note that since $\HH^0(\mathfrak{U},\sh{F})=\HH^0(U,\sh{F})$ (G, II, 5.2.2), we have again proved \sref[I]{1.1.3.7} as a special case.
 
 \begin{rmk}[1.2.5]
 \label{3.1.2.5}
@@ -298,11 +298,11 @@ Suppose that $X$ is an \emph{affine scheme}; then the $U_i=X_{f_i}=D(f_i)$ are a
 In this case, the functors $\Gamma(X,\sh{F})$ and $\Gamma(U_{i_0 i_1\cdots i_p},\sh{F})$ are exact in $\sh{F}$ \sref[I]{1.1.3.11}.
 If we have an exact sequence $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ of quasi-coherent $\OO_X$-modules, then the sequence of complexes
 \[
-  0\to C^\bullet(\fk{U},\sh{F}')\to C^\bullet(\fk{U},\sh{F})\to C^\bullet(\fk{U},\sh{F}'')\to 0
+  0\to C^\bullet(\mathfrak{U},\sh{F}')\to C^\bullet(\mathfrak{U},\sh{F})\to C^\bullet(\mathfrak{U},\sh{F}'')\to 0
 \]
 is exact, and thus gives an exact sequence in cohomolology
 \[
-  \cdots\to\HH^p(\fk{U},\sh{F})\to\HH^p(\fk{U},\sh{F})\to\HH^p(\fk{U},\sh{F}'')\xrightarrow{\partial}\HH^{p+1}(\fk{U},\sh{F}')\to\cdots.
+  \cdots\to\HH^p(\mathfrak{U},\sh{F})\to\HH^p(\mathfrak{U},\sh{F})\to\HH^p(\mathfrak{U},\sh{F}'')\xrightarrow{\partial}\HH^{p+1}(\mathfrak{U},\sh{F}')\to\cdots.
 \]
 On the other hand, if we set $M'=\Gamma(X,\sh{F}')$ and $M''=\Gamma(X,\sh{F}'')$, then the sequence $0\to M'\to M\to M''\to 0$ is exact; as $C^\bullet((\mathbf{f}),M)$ is an exact functor in $M$, we also have the exact sequence in cohomology
 \[
@@ -313,9 +313,9 @@ This being so, as the diagram
 \[
   \xymatrix{
     0\ar[r] &
-    C^\bullet(\fk{U},\sh{F}')\ar[r]\ar[d] &
-    C^\bullet(\fk{U},\sh{F})\ar[r]\ar[d] &
-    C^\bullet(\fk{U},\sh{F}'')\ar[r]\ar[d] &
+    C^\bullet(\mathfrak{U},\sh{F}')\ar[r]\ar[d] &
+    C^\bullet(\mathfrak{U},\sh{F})\ar[r]\ar[d] &
+    C^\bullet(\mathfrak{U},\sh{F}'')\ar[r]\ar[d] &
     0\\
     0\ar[r] &
     C^\bullet((\mathbf{f}),M')\ar[r] &
@@ -328,18 +328,18 @@ This being so, as the diagram
 is commutative, we conclude that the diagrams
 \[
   \xymatrix{
-    \HH^p(\fk{U},\sh{F}'')\ar[r]^\partial\ar[d] &
-    \HH^{p+1}(\fk{U},\sh{F}')\ar[d]\\
+    \HH^p(\mathfrak{U},\sh{F}'')\ar[r]^\partial\ar[d] &
+    \HH^{p+1}(\mathfrak{U},\sh{F}')\ar[d]\\
     \HH^{p+1}((\mathbf{f}),M'')\ar[r]^\partial &
     \HH^{p+2}((\mathbf{f}),M')
   }
   \tag{1.2.5.1}
 \]
-are commutative for all $p$ (G, I, 2.1.1).
+are commutative for all $p$~(G, I, 2.1.1).
 \end{rmk}
 
 \subsection{Cohomology of an affine scheme}
-\label{subsection:cohomology-affine-scheme}
+\label{subsection:3.1.3}
 
 \begin{thm}[1.3.1]
 \label{3.1.3.1}
@@ -349,8 +349,8 @@ For every quasi-coherent $\OO_X$-module $\sh{F}$, we have $\HH^p(X,\sh{F})=0$ fo
 
 \begin{proof}
 \label{proof-3.1.3.1}
-Let $\fk{U}$ be a finite cover of $X$ by the affine open sets $X_{f_i}=D(f_i)$ ($1\leq i\leq r$); we then know that the ideal of $A=\Gamma(X,\OO_X)$ generated by the $f_i$ is equal to $A$.
-We thus conclude from Corollary~\sref{3.1.2.4} that we have $\HH^p(\fk{U},\sh{F})=0$ for $p>0$.
+Let $\mathfrak{U}$ be a finite cover of $X$ by the affine open sets $X_{f_i}=D(f_i)$ ($1\leq i\leq r$); we then know that the ideal of $A=\Gamma(X,\OO_X)$ generated by the $f_i$ is equal to $A$.
+We thus conclude from Corollary~\sref{3.1.2.4} that we have $\HH^p(\mathfrak{U},\sh{F})=0$ for $p>0$.
 As there are finite covers of $X$ by affine open sets which are arbitrarily fine \sref[I]{1.1.1.10}, the definition of \v Cech cohomology (G, II, 5.8) shows that we also have $\CHH^p(X,\sh{F})=0$ for $p>0$.
 But this also applies to every prescheme $X_f$ for $f\in A$ \sref[I]{1.1.3.6}, hence $\CHH^p(X_f,\sh{F})=0$ for $p>0$.
 As we have $X_f\cap X_g=X_{fg}$, we deduce that we also have $\HH^p(X,\sh{F})=0$ for all $p>0$, by virtue of (G, II, 5.9.2).
@@ -393,17 +393,17 @@ It suffices to note that, according to Corollary~\sref{3.1.3.3}, for every affin
 \end{proof}
 
 \subsection{Application to the cohomology of arbitrary preschemes}
-\label{subsection:application-cohomology-preschemes}
+\label{subsection:3.1.4}
 
 \begin{prop}[1.4.1]
 \label{3.1.4.1}
-Let $X$ be a scheme, $\fk{U}=(U_\alpha)$ be a cover of $X$ by affine open sets.
-For every quasi-coherent $\OO_X$-module $\sh{F}$, the cohomology modules $\HH^\bullet(X,\sh{F})$ and $\HH^\bullet(\fk{U},\sh{F})$ (over $\Gamma(X,\OO_X)$) are canonically isomorphic.
+Let $X$ be a scheme, $\mathfrak{U}=(U_\alpha)$ be a cover of $X$ by affine open sets.
+For every quasi-coherent $\OO_X$-module $\sh{F}$, the cohomology modules $\HH^\bullet(X,\sh{F})$ and $\HH^\bullet(\mathfrak{U},\sh{F})$ (over $\Gamma(X,\OO_X)$) are canonically isomorphic.
 \end{prop}
 
 \begin{proof}
 \label{proof-3.1.4.1}
-As $X$ is a scheme, every finite intersection $V$ of open sets in the cover $\fk{U}$ is affine \sref[I]{1.5.5.6}, so $\HH^q(V,\sh{F})=0$ for $g\geq 1$ by Theorem~\sref{3.1.3.1}.
+As $X$ is a scheme, every finite intersection $V$ of open sets in the cover $\mathfrak{U}$ is affine \sref[I]{1.5.5.6}, so $\HH^q(V,\sh{F})=0$ for $g\geq 1$ by Theorem~\sref{3.1.3.1}.
 The proposition then follows from a theorem of Leray (G, II, 5.4.1).
 \end{proof}
 
@@ -447,7 +447,7 @@ If $X$ is an \emph{affine scheme}, then it follows from Remark~\sref{3.1.2.5} an
 corresponding to an exact sequence $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ of quasi-coherent $\OO_X$-modules (with the notations of Remark~\sref{3.1.2.5}) are commutative.
 \end{env}
 
-\begin{prop}
+\begin{prop}[1.4.5]
 \label{3.1.4.5}
 \oldpage[III]{90}
 Let $X$ be a quasi-compact scheme, $\sh{L}$ an invertible $\OO_X$-module, and consider the graded ring $A_*=\Gamma_*(\sh{L})$ \sref[0]{0.5.4.6}; then $\HH^\bullet(\sh{F},\sh{L})=\bigoplus_{n\in\bb{Z}}\HH^\bullet(X,\sh{F}\otimes\sh{L}^{\otimes n})$ is a graded $A_*$-module, and for all $f\in A_n$, we have a canonical isomorphism
@@ -460,12 +460,12 @@ of $(A_*)_{(f)}$-modules.
 
 \begin{proof}
 \label{proof-3.1.4.5}
-As $X$ is a quasi-compact scheme, we can calculate the cohomology of all the $\OO_X$-modules $\sh{F}\otimes\sh{L}^{\otimes n}$ using the same finite cover $\fk{U}=(U_i)$ consisting of the affine open sets such that the restriction $\sh{L}|U_i$ is isomorphic to $\OO_X|U_i$ for each $i$ \sref{3.1.4.1}.
-It is then immediate that the $U_i\cap X_f$ are affine open sets \sref[I]{3.1.3.6}, and we can thus calculate the cohomology $\HH^\bullet(X_f,\sh{F}\otimes\sh{L}^{\otimes n})$ using the cover $\fk{U}|X_f=(U_i\cap X_f)$ \sref{3.1.4.1}.
-It is immediate that for all $f\in A_n$, multiplication by $f$ defines a homomorphism $C^\bullet(\fk{U},\sh{F}\otimes\sh{L}^m)\to C^\bullet(\fk{U},\sh{F}\otimes\sh{L}^{\otimes(m+n)})$, hence a homomorphism $\HH^\bullet(\fk{U},\sh{F}\otimes\sh{L}^{\otimes m})\to\HH^\bullet(\fk{U},\sh{F}\otimes\sh{L}^{\otimes(m+n)})$, which establishes the first assertion.
+As $X$ is a quasi-compact scheme, we can calculate the cohomology of all the $\OO_X$-modules $\sh{F}\otimes\sh{L}^{\otimes n}$ using the same finite cover $\mathfrak{U}=(U_i)$ consisting of the affine open sets such that the restriction $\sh{L}|U_i$ is isomorphic to $\OO_X|U_i$ for each $i$ \sref{3.1.4.1}.
+It is then immediate that the $U_i\cap X_f$ are affine open sets \sref[I]{3.1.3.6}, and we can thus calculate the cohomology $\HH^\bullet(X_f,\sh{F}\otimes\sh{L}^{\otimes n})$ using the cover $\mathfrak{U}|X_f=(U_i\cap X_f)$ \sref{3.1.4.1}.
+It is immediate that for all $f\in A_n$, multiplication by $f$ defines a homomorphism $C^\bullet(\mathfrak{U},\sh{F}\otimes\sh{L}^m)\to C^\bullet(\mathfrak{U},\sh{F}\otimes\sh{L}^{\otimes(m+n)})$, hence a homomorphism $\HH^\bullet(\mathfrak{U},\sh{F}\otimes\sh{L}^{\otimes m})\to\HH^\bullet(\mathfrak{U},\sh{F}\otimes\sh{L}^{\otimes(m+n)})$, which establishes the first assertion.
 On the other hand, for a given $f\in A_n$, it follows from \sref[I]{1.9.3.2} that we have an isomorphism of complexes of $(A_*)_{(f)}$-modules
 \[
-  C^\bullet(\fk{U}|X_f,\sh{F})\isoto\bigg(C^\bullet\bigg(\fk{U},\bigoplus_{n\in\bb{Z}}\sh{F}\otimes\sh{L}^{\otimes n}\bigg)\bigg)_{(f)},
+  C^\bullet(\mathfrak{U}|X_f,\sh{F})\isoto\bigg(\!\!C^\bullet\bigg(\mathfrak{U},\bigoplus_{n\in\bb{Z}}\sh{F}\otimes\sh{L}^{\otimes n}\bigg)\!\!\bigg)_{(f)},
 \]
 taking into account \sref[I]{1.1.3.9}[ii].
 Passing to the cohomology of these complexes, we induce the isomorphism (1.4.5.1), recalling that the functor $M\mapsto M_{(f)}$ is exact on the category of graded $A_*$-modules.
@@ -507,14 +507,14 @@ We note that Corollary~\sref{3.1.4.7}[i] gives a simpler proof of the relation (
 \begin{lem}[1.4.9]
 \label{3.1.4.9}
 \oldpage[III]{91}
-Let $X$ be a quasi-comact scheme, $\fk{U}=(U_i)_{1\leq i\leq n}$ a finite cover of $X$ by affine open sets, and $\sh{F}$ a quasi-coherent $\OO_X$-module.
-The complex of sheaves $\sh{C}^\bullet(\fk{U},\sh{F})$ defined by the cover $\fk{U}$ (G, II, 5.2) is then a quasi-coherent $\OO_X$-module.
+Let $X$ be a quasi-comact scheme, $\mathfrak{U}=(U_i)_{1\leq i\leq n}$ a finite cover of $X$ by affine open sets, and $\sh{F}$ a quasi-coherent $\OO_X$-module.
+The complex of sheaves $\sh{C}^\bullet(\mathfrak{U},\sh{F})$ defined by the cover $\mathfrak{U}$ (G, II, 5.2) is then a quasi-coherent $\OO_X$-module.
 \end{lem}
 
 \begin{proof}
 \label{proof-3.1.4.9}
-It follows from the definitions (G, II, 5.2) that $\sh{C}^p(\fk{U},\sh{F})$ is the direct sum of the direct image sheaves of the $\sh{F}|U_{i_0\cdots i_p}$ under the canonical injection $U_{i_0\cdots i_p}\to X$.
-The hypothesis that $X$ is a scheme implies that these injections are affine morphisms \sref[I]{1.5.5.6}, hence the $\sh{C}^p(\fk{U},\sh{F})$ are quasi-coherent \sref[II]{2.1.2.6}.
+It follows from the definitions (G, II, 5.2) that $\sh{C}^p(\mathfrak{U},\sh{F})$ is the direct sum of the direct image sheaves of the $\sh{F}|U_{i_0\cdots i_p}$ under the canonical injection $U_{i_0\cdots i_p}\to X$.
+The hypothesis that $X$ is a scheme implies that these injections are affine morphisms \sref[I]{1.5.5.6}, hence the $\sh{C}^p(\mathfrak{U},\sh{F})$ are quasi-coherent \sref[II]{2.1.2.6}.
 \end{proof}
 
 \begin{prop}[1.4.10]
@@ -526,14 +526,14 @@ For every quasi-coherent $\OO_X$-module $\sh{F}$, the $\RR^q u_*(\sh{F})$ are qu
 \begin{proof}
 \label{proof-3.1.4.10}
 The question is local on $Y$, so we can suppose that $Y$ is affine.
-Then $X$ is a finite union of affine open sets $U_i$ ($1\leq i\leq n$); let $\fk{U}$ be the cover $(U_i)$.
+Then $X$ is a finite union of affine open sets $U_i$ ($1\leq i\leq n$); let $\mathfrak{U}$ be the cover $(U_i)$.
 In addition, as $Y$ is a scheme, it follows from \sref[I]{1.5.5.10} that for every affine open $V\subset Y$, the canonical injection $u^{-1}(V)\to X$ is an affine morphism; we conclude (Proposition~\sref{3.1.4.1} and (G, II, 5.2)) that we have a canonical isomorphism
 \[
   \HH^\bullet(u^{-1}(V),\sh{F})\isoto\HH^\bullet(\Gamma(V,\sh{K}^\bullet)),
   \tag{1.4.10.1}
 \]
-where we set $\sh{K}^\bullet=u_*(\sh{C}^\bullet(\fk{U},\sh{F}))$.
-According to Lemma~\sref{3.1.4.1} and \sref[I]{1.9.2.2}, $\sh{K}^\bullet$ is a quasi-coherent $\OO_Y$-module; moreover, it constitutes a \emph{complex of sheaves} since so is $\sh{C}^\bullet(\fk{U},\sh{F})$.
+where we set $\sh{K}^\bullet=u_*(\sh{C}^\bullet(\mathfrak{U},\sh{F}))$.
+According to Lemma~\sref{3.1.4.1} and \sref[I]{1.9.2.2}, $\sh{K}^\bullet$ is a quasi-coherent $\OO_Y$-module; moreover, it constitutes a \emph{complex of sheaves} since so is $\sh{C}^\bullet(\mathfrak{U},\sh{F})$.
 It then follows from the definition of the cohomology $\sh{H}^\bullet(\sh{K}^\bullet)$ (G, II, 4.1) that the latter consists of quasi-coherent $\OO_Y$-modules \sref[I]{1.4.1.1}.
 As (for $V$ affine in $Y$) the functor $\Gamma(V,\sh{G})$ is exact in $\sh{G}$ on the category of quasi-coherent $\OO_Y$-modules, we have (G, II, 4.1)
 \[
@@ -543,7 +543,7 @@ As (for $V$ affine in $Y$) the functor $\Gamma(V,\sh{G})$ is exact in $\sh{G}$ o
 
 Finally, we note that it follows from the definition of the canonical homomorphism
 \[
-  \HH^\bullet(\fk{U},\sh{F})\to\HH^\bullet(X,\sh{F}),
+  \HH^\bullet(\mathfrak{U},\sh{F})\to\HH^\bullet(X,\sh{F}),
 \]
 given in (G, II, 5.2), that if $V'\subset V$ is a second affine open subset of $Y$, then the
 diagram
@@ -586,7 +586,7 @@ If $Y$ is affine, then we can take for $r$ an integer such that there exists a c
 \begin{proof}
 \label{proof-3.1.4.12}
 As we can cover $Y$ by a finite number of affine open sets, we can reduce to proving the second assertion, by virtue of Corollary~\sref{3.1.4.11}.
-If $\fk{U}$ is a cover of $X$ by $r$ affine open sets, then we have $\HH^q(\fk{U},\sh{F})=0$ for $q>r$, since the cochains of $C^q(\fk{U},\sh{F})$ are alternating; the assertion thus follows from Proposition~\sref{3.1.4.1}.
+If $\mathfrak{U}$ is a cover of $X$ by $r$ affine open sets, then we have $\HH^q(\mathfrak{U},\sh{F})=0$ for $q>r$, since the cochains of $C^q(\mathfrak{U},\sh{F})$ are alternating; the assertion thus follows from Proposition~\sref{3.1.4.1}.
 \end{proof}
 
 \begin{cor}[1.4.13]
@@ -661,7 +661,7 @@ and finally we obtain a canonical homomorphism (whose definition does not make \
 \]
 and it is necessary to prove that it is an isomorphism when $v$ is \emph{flat}.
 It is clear that the question is local on $Y$ and $Y'$, and we can therefore suppose that $Y=\Spec(A)$ and $Y'=\Spec(B)$; we will also use the following lemma:
-\begin{lem}
+\begin{lem}[1.4.15.5]
 \label{3.1.4.15.5}
 Let $\vphi:A\to B$ be a ring homomorphism, $Y=\Spec(A)$, $X=\Spec(B)$, $f:X\to Y$ the morphism corresponding to $\vphi$, and $M$ a $B$-module.
 For the $\OO_X$-module $\wt{M}$ to be $f$-flat \sref[0]{0.6.7.1}, it is necessary and sufficient for $M$ to be a flat $A$-module.
@@ -686,26 +686,26 @@ But by the functoriality of $\theta_q$, we have the commutative diagram
 \]
 \oldpage[III]{94}
 and as by definition \sref[0]{0.4.4.3} ${v'}^*(\rho)$ is the inverse of $\sigma$, we see that the composite morphism considered above is finally none other than $\theta_q$; as a result, $\psi^\sharp$ is the associated $B$-homomorphism $\HH^q(X,\sh{F})\otimes_A B\to\HH^q(X',\sh{F}')$.
-As $u$ is of finite type, $X$ is a finite union of affine open sets $U_i$ ($1\leq i\leq r$); let $\fk{U}$ be the cover $(U_i)$.
-As $v$ is an affine morphism, so is $v'$ \sref[II]{2.1.6.5}[iii], and as a result the $U_i'={v'}^{-1}(U_i)$ form an affine open cover $\fk{U}'$ of $X'$.
+As $u$ is of finite type, $X$ is a finite union of affine open sets $U_i$ ($1\leq i\leq r$); let $\mathfrak{U}$ be the cover $(U_i)$.
+As $v$ is an affine morphism, so is $v'$ \sref[II]{2.1.6.5}[iii], and as a result the $U_i'={v'}^{-1}(U_i)$ form an affine open cover $\mathfrak{U}'$ of $X'$.
 We then know (\textbf{0},~12.1.4.2) that the diagram
 \[
   \xymatrix{
-    \HH^q(\fk{U},\sh{F})\ar[r]^{\theta_q}\ar[d] &
-    \HH^q(\fk{U}',\sh{F}')\ar[d]\\
+    \HH^q(\mathfrak{U},\sh{F})\ar[r]^{\theta_q}\ar[d] &
+    \HH^q(\mathfrak{U}',\sh{F}')\ar[d]\\
     \HH^q(X,\sh{F})\ar[r]^{\theta_q} &
     \HH^q(X',\sh{F}')
   }
 \]
 is commutative, and the vertical arrows are isomorphisms since $X$ and $X'$ are schemes \sref[I]{1.1.4.1}.
-As a result, it suffices to prove that the canonical $\vphi$-morphism $\theta_q:\HH^q(\fk{U},\sh{F})\to\HH^q(\fk{U}',\sh{F}')$ is such that the associated $B$-homomorphism
+As a result, it suffices to prove that the canonical $\vphi$-morphism $\theta_q:\HH^q(\mathfrak{U},\sh{F})\to\HH^q(\mathfrak{U}',\sh{F}')$ is such that the associated $B$-homomorphism
 \[
-  \HH^q(\fk{U},\sh{F})\otimes_A B\to\HH^q(\fk{U}',\sh{F}')
+  \HH^q(\mathfrak{U},\sh{F})\otimes_A B\to\HH^q(\mathfrak{U}',\sh{F}')
 \]
 is an isomorphism.
 For every sequence $\mathbf{s}=(i_k)_{0\leq k\leq p}$ of $p+1$ indices of $[1,r]$, set $U_\mathbf{s}=\bigcap_{k=0}^p U_{i_k}$, $U_\mathbf{s}'=\bigcap_{k=0}^p U_{i_k}'={v'}^{-1}(U_\mathbf{s})$, $M_\mathbf{s}=\Gamma(U_\mathbf{s},\sh{F})$, and $M_\mathbf{s}'=\Gamma(U_\mathbf{s}',\sh{F}')$.
-The canonical map $M_\mathbf{s}\otimes_A B\to M_\mathbf{s}'$ is an isomorphism \sref[I]{1.1.6.5}, hence the canonical map $C^p(\fk{U},\sh{F})\otimes_A B\to C^p(\fk{U}',\sh{F}')$ is an isomorphism, by which $d\otimes 1$ identifies with the coboundary map $C^p(\fk{U}',\sh{F}')\to C^{p+1}(\fk{U}',\sh{F}')$.
-As $B$ is a \emph{flat} $A$-module, it follows from the definition of the cohomology modules that the canonical map $\HH^q(\fk{U},\sh{F})\otimes_A B\to\HH^q(\fk{U}',\sh{F}')$ is an isomorhism \sref[0]{0.6.1.1}.
+The canonical map $M_\mathbf{s}\otimes_A B\to M_\mathbf{s}'$ is an isomorphism \sref[I]{1.1.6.5}, hence the canonical map $C^p(\mathfrak{U},\sh{F})\otimes_A B\to C^p(\mathfrak{U}',\sh{F}')$ is an isomorphism, by which $d\otimes 1$ identifies with the coboundary map $C^p(\mathfrak{U}',\sh{F}')\to C^{p+1}(\mathfrak{U}',\sh{F}')$.
+As $B$ is a \emph{flat} $A$-module, it follows from the definition of the cohomology modules that the canonical map $\HH^q(\mathfrak{U},\sh{F})\otimes_A B\to\HH^q(\mathfrak{U}',\sh{F}')$ is an isomorhism \sref[0]{0.6.1.1}.
 This result will later be generalized in \textsection6.
 \end{proof}
 

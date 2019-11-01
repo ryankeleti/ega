@@ -9,13 +9,15 @@
 \definecolor{brightmaroon}{rgb}{0.76, 0.13, 0.28}
 \usepackage[linktocpage=true,colorlinks=true,hyperindex,citecolor=blue,linkcolor=brightmaroon]{hyperref}
 \usepackage[left=0.95in,right=0.95in,top=0.75in,bottom=0.75in]{geometry}
-\usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
+%\usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
+\usepackage[charter,greekfamily=didot]{mathdesign}
 
 \usepackage{Baskervaldx}
 
 \usepackage{enumitem}
 \usepackage{longtable}
 \usepackage{aurical}
+\usepackage{microtype}
 
 \externaldocument[what-]{what}
 \externaldocument[intro-]{intro}
@@ -101,6 +103,9 @@
 \def\shHom{\sh{H}\textup{\kern-2.2pt{\Fontauri\slshape om}}}   % sheaf Hom
 \def\shProj{\sh{P}\textup{\kern-2.2pt{\Fontauri\slshape roj}}\!} % sheaf Proj
 \def\shExt{\sh{E}\textup{\kern-2.2pt{\Fontauri\slshape xt}}\!}   % sheaf Ext
+%\def\shHom{{\sh{H}\!\textit{om}}\!}   % sheaf Hom
+%\def\shProj{{\sh{P}\!\textit{roj}}\!} % sheaf Proj
+%\def\shExt{{\sh{E}\!\textit{xt}}\!}   % sheaf Ext
 \def\red{\mathrm{red}}
 \def\rg{{\mathop{\mathrm{rg}}\nolimits}}
 \def\gr{{\mathop{\mathrm{gr}}\nolimits}}
@@ -147,3 +152,4 @@
       {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrGobbleLeft{#2}{2})}}}%
       {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrGobbleLeft{#2}{2},~{#3})}}}}%
 }
+

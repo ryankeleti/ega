@@ -1,8 +1,8 @@
 \section{Subpreschemes and immersion morphisms}
-\label{section:subpreschemes-and-immersion-morphisms}
+\label{section:1.4}
 
 \subsection{Subpreschemes}
-\label{subsection:subpreschemes}
+\label{subsection:1.4.1}
 
 \begin{env}[4.1.1]
 \label{1.4.1.1}
@@ -20,9 +20,9 @@ Then the support $Y$ of the sheaf $\OO_X/\sh{I}$ is closed, and if we denote by 
 \label{proof-1.4.1.2}
 \oldpage[I]{120}
 It evidently suffices \sref{1.2.1.3} to consider the case where $X$ is an affine scheme, and to show that, in this case, $Y$ is closed in $X$, and is an \emph{affine scheme}.
-Indeed, if $X=\Spec(A)$, then we have $\OO_X=\wt{A}$ and $\sh{I}=\wt{\fk{I}}$, where $\fk{I}$ is an ideal of $A$ \sref{1.1.4.1};
-$Y$ is then equal to the closed subset $V(\fk{I})$ of $X$ and can be identified with the prime spectrum of the ring $B=A/\fk{I}$ \sref{1.1.1.11};
-in addition, if $\vphi$ is the canonical homomorphism $A\to B=A/\fk{I}$, then the direct image ${}^a\vphi_*(\wt{B})$ is canonically identified with the sheaf $\wt{A}/\wt{\fk{I}}=\OO_X/\sh{I}$ (Proposition~\sref{1.1.6.3} and Corollary~\sref{1.1.3.9}), which finishes the proof.
+Indeed, if $X=\Spec(A)$, then we have $\OO_X=\wt{A}$ and $\sh{I}=\wt{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of $A$ \sref{1.1.4.1};
+$Y$ is then equal to the closed subset $V(\mathfrak{I})$ of $X$ and can be identified with the prime spectrum of the ring $B=A/\mathfrak{I}$ \sref{1.1.1.11};
+in addition, if $\vphi$ is the canonical homomorphism $A\to B=A/\mathfrak{I}$, then the direct image ${}^a\vphi_*(\wt{B})$ is canonically identified with the sheaf $\wt{A}/\wt{\mathfrak{I}}=\OO_X/\sh{I}$ (Proposition~\sref{1.1.6.3} and Corollary~\sref{1.1.3.9}), which finishes the proof.
 \end{proof}
 
 We say that $(Y,\OO_Y)$ is the \emph{subprescheme} of $(X,\OO_X)$ \emph{defined by the sheaf of ideals $\sh{I}$};
@@ -32,8 +32,8 @@ this is a particular case of the more general notion of a \emph{subprescheme}:
 \label{1.4.1.3}
 We say that a ringed space $(Y,\OO_Y)$ is a subprescheme of a prescheme $(X,\OO_X)$ if:
 \begin{enumerate}
-  \item[1st] $Y$ is a locally closed subspace of $X$;
-  \item[2nd] if $U$ denotes the largest open subset of $X$ containing $Y$ such that $Y$ is closed in $U$ (\emph{equivalently}, the complement in $X$ of the boundary of $Y$ with respect to $\overline{Y}$), then $(Y,\OO_Y)$ is a subprescheme of $(U,\OO_X|U)$ defined by a quasi-coherent sheaf of ideals of $\OO_X|U$.
+  \item[1st.] $Y$ is a locally closed subspace of $X$;
+  \item[2nd.] if $U$ denotes the largest open subset of $X$ containing $Y$ such that $Y$ is closed in $U$ (\emph{equivalently}, the complement in $X$ of the boundary of $Y$ with respect to $\overline{Y}$), then $(Y,\OO_Y)$ is a subprescheme of $(U,\OO_X|U)$ defined by a quasi-coherent sheaf of ideals of $\OO_X|U$.
 \end{enumerate}
 We say that the subprescheme $(Y,\OO_Y)$ of $(X,\OO_X)$ is closed if $Y$ is closed in $X$ (in which case $U=X$).
 \end{defn}
@@ -74,7 +74,7 @@ A subprescheme (resp. a closed subprescheme) of a subprescheme
 \begin{proof}
 \label{proof-1.4.1.6}
 Since a locally closed subset of a locally closed subspace of $X$ is a locally closed subspace of $X$, it is clear \sref{1.4.1.5} that the question is local and that we can thus suppose that $X$ is affine;
-the proposition then follows from the canonical identification of $A/\fk{J}'$ with $(A/\fk{J})/(\fk{J}'/\fk{J})$, where $A$ is some ring, and $\fk{J}$ and $\fk{J}'$ are ideals of $A$ such that $\fk{J}\subset\fk{J}'$.
+the proposition then follows from the canonical identification of $A/\mathfrak{J}'$ with $(A/\mathfrak{J})/(\mathfrak{J}'/\mathfrak{J})$, where $A$ is some ring, and $\mathfrak{J}$ and $\mathfrak{J}'$ are ideals of $A$ such that $\mathfrak{J}\subset\mathfrak{J}'$.
 \end{proof}
 
 In what follows, we will always make use of the above identification.
@@ -127,7 +127,7 @@ For an injection morphism $Z\to X$ to be factor through the injection morphism $
 We then write $Z\leq Y$, and this condition is evidently an \emph{ordering} on the set of subpreschemes of $X$.
 
 \subsection{Immersion morphisms}
-\label{subsection:immersion-morphisms}
+\label{subsection:1.4.2}
 
 \begin{defn}[4.2.1]
 \label{1.4.2.1}
@@ -180,8 +180,8 @@ It is clear that an immersion is a \emph{monomorphism} of preschemes \sref{1.4.1
     \]
     is commutative, and the vertical arrows are the isomorphisms \sref[0]{0.3.7.2}, the hypothesis that $\theta_y^\sharp$ is surjective implies that $\theta_{\psi(y)}$ is surjective as well.
     Since the support of $\psi_*(\OO_Y)$ is $Z=\psi(Y)$, $\theta$ is a \emph{surjective} homomorphism from $\OO_X=\wt{A}$ to the quasi-coherent $\OO_X$-module $f_*(\OO_Y)$.
-    As a result, there exists a unique isomorphism $\omega$ from a sheaf quotient $\wt{A}/\wt{\fk{J}}$ (with $\fk{J}$ being an ideal of $A$) to $f_*(\OO_Y)$ which, when composed with the canonical homomorphism $\wt{A}\to\wt{A}/\wt{\fk{J}}$, gives $\theta$ \sref{1.1.3.8};
-    if $\OO_Z$ denotes the restriction of $\wt{A}/\wt{\fk{J}}$ to $Z$, then $(Z,\OO_Z)$ is a subprescheme of $(X,\OO_X)$, and $f$ factors through the canonical injection of this subprescheme into $X$ and the isomorphism $(\psi_0,\omega_0)$, where $\psi_0$ is $\psi$ considered as a map from $Y$ to $Z$, and $\omega_0$ the restriction of $\omega$ to $\OO_Z$.
+    As a result, there exists a unique isomorphism $\omega$ from a sheaf quotient $\wt{A}/\wt{\mathfrak{J}}$ (with $\mathfrak{J}$ being an ideal of $A$) to $f_*(\OO_Y)$ which, when composed with the canonical homomorphism $\wt{A}\to\wt{A}/\wt{\mathfrak{J}}$, gives $\theta$ \sref{1.1.3.8};
+    if $\OO_Z$ denotes the restriction of $\wt{A}/\wt{\mathfrak{J}}$ to $Z$, then $(Z,\OO_Z)$ is a subprescheme of $(X,\OO_X)$, and $f$ factors through the canonical injection of this subprescheme into $X$ and the isomorphism $(\psi_0,\omega_0)$, where $\psi_0$ is $\psi$ considered as a map from $Y$ to $Z$, and $\omega_0$ the restriction of $\omega$ to $\OO_Z$.
 
     We now pass to the general case.
     Let $U$ be an affine open subset of $X$ such that $U\cap\psi(Y)$ is closed in $U$ and nonempty.
@@ -235,13 +235,12 @@ This follows easily from \sref{1.4.1.6}.
 \end{proof}
 
 \subsection{Products of immersions}
-\label{subsection:products-of-immersions}
+\label{subsection:1.4.3}
 
 \begin{prop}[4.3.1]
 \label{1.4.3.1}
-Let $\alpha:X'\to X$, $\beta:Y'\to Y$ be two $S$-morphisms;
-if $\alpha$ and $\beta$ are immersions (resp. open immersions, closed immersions), then $\alpha\times_S\beta$ is an immersion (resp. an open immersion, a closed immersion).
-In addition, if $\alpha$ (resp. $\beta$) identifies $X'$ (resp. $Y'$) with a subprescheme $X''$ (resp. $Y''$) of $X$ (resp. $Y$), then $\alpha\times_S\beta$ identifies the underlying space of $X'\times_S Y'$ with the subspace $p^{-1}(X'')\cap q^{-1}(Y'')$ of the underlying space of $X\times_S Y$, where $p$ and $q$ denote the projections from $X\times_S Y$ to $X$ and $Y$ respectively.
+Let $\alpha:X'\to X$, $\beta:Y'\to Y$ be two $S$-morphisms; if $\alpha$ and $\beta$ are immersions (resp. open immersions, closed immersions), then $\alpha\times_S\beta$ is an immersion (resp. an open immersion, a closed immersion).
+In addition, if $\alpha$ (resp.~$\beta$) identifies $X'$ (resp.~$Y'$) with a subprescheme $X''$ (resp.~$Y''$) of $X$ (resp.~$Y$), then $\alpha\times_S\beta$ identifies the underlying space of $X'\times_S Y'$ with the subspace $p^{-1}(X'')\cap q^{-1}(Y'')$ of the underlying space of $X\times_S Y$, where $p$ and $q$ denote the projections from $X\times_S Y$ to $X$ and $Y$ respectively.
 \end{prop}
 
 \begin{proof}
@@ -277,7 +276,7 @@ Then $B$ and $C$ are $A$-algebras, and $X'$ and $Y'$ are affine schemes whose ri
 In addition, we have $\alpha=({}^a\rho,\wt{\rho})$ and $\beta=({}^a\sigma,\wt{\sigma})$, where $\rho$ and $\sigma$ are (respectively) the canonical homomorphisms $B\to B'$ and $C\to C'$ \sref{1.1.7.3}.
 With that in mind, we know that $X\times_S Y$ (resp. $X'\times_S Y'$) is an affine scheme with ring $B\otimes_A C$ (resp. $B'\otimes_A C'$), and $\alpha\times_S\beta=({}^a\tau,\wt{\tau})$, where $\tau$ is the homomorphism $\rho\otimes\sigma$ from $B\otimes_A C$ to $B'\otimes_A C'$ (Proposition~\sref{1.3.2.2} and Corollary~\sref{1.3.2.3});
 since this homomorphism is surjective, $\alpha\times_S\beta$ is an immersion.
-In addition, if $\fk{b}$ (resp. $\fk{c}$) is the kernel of $\rho$ (resp. $\sigma$), then the kernel of $\tau$ is $u(\fk{b})+v(\fk{c})$, where $u$ (resp. $v$) is the homomorphism $b\mapsto b\otimes 1$ (resp. $c\mapsto 1\otimes c$).
+In addition, if $\mathfrak{b}$ (resp. $\mathfrak{c}$) is the kernel of $\rho$ (resp. $\sigma$), then the kernel of $\tau$ is $u(\mathfrak{b})+v(\mathfrak{c})$, where $u$ (resp. $v$) is the homomorphism $b\mapsto b\otimes 1$ (resp. $c\mapsto 1\otimes c$).
 Since $p=({}^a u,\wt{u})$ and $q=({}^a v,\wt{v})$, this kernel corresponds, in the prime spectrum of $B\otimes_A C$, to the closed set $p^{-1}(X')\cap q^{-1}(Y')$ (\sref{1.1.2.2.1} and Proposition~\sref{1.1.1.2}[iii]), which finishes the proof.
 \end{proof}
 
@@ -287,7 +286,7 @@ If $f:X\to Y$ is an immersion (resp. an open immersion, a closed immersion) and 
 \end{cor}
 
 \subsection{Inverse images of a subprescheme}
-\label{subsection:inverse-image-of-subprescheme}
+\label{subsection:1.4.4}
 
 \begin{prop}[4.4.1]
 \label{1.4.4.1}
@@ -355,7 +354,7 @@ the closed subprescheme $f^{-1}(Y')$ of $X$ is then defined by the quasi-coheren
 \begin{proof}
 \label{proof-1.4.4.5}
 The statement is evidently local on $X$ and $Y$;
-it thus suffices to note that if $A$ is a $B$-algebra and $\fk{K}$ an ideal of $B$, then we have $A\otimes_B(B/\fk{K})=A/\fk{K}A$, and to then apply \sref{1.1.6.9}.
+it thus suffices to note that if $A$ is a $B$-algebra and $\mathfrak{K}$ an ideal of $B$, then we have $A\otimes_B(B/\mathfrak{K})=A/\mathfrak{K}A$, and to then apply \sref{1.1.6.9}.
 \end{proof}
 
 \begin{cor}[4.4.6]
@@ -370,7 +369,7 @@ It suffices to apply Proposition~\sref{1.4.4.1} to $i$, taking Proposition~\sref
 \end{proof}
 
 \subsection{Local immersions and local isomorphisms}
-\label{subsection:local-immersions-isomorphisms}
+\label{subsection:1.4.5}
 
 \begin{defn}[4.5.1]
 \label{1.4.5.1}
