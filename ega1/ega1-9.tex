@@ -823,19 +823,19 @@ When there exists a smaller closed subprescheme $Y'$ of $X$ containing a subpres
 
 \begin{prop}[9.6.1]
 \label{1.9.6.1}
-Let $X$ be a prescheme, $\sh{B}$ a quasi-coherent $\OO_X$-algebra \sref[0]{0.5.1.3}.
+Let $X$ be a prescheme, and $\sh{B}$ a quasi-coherent $\OO_X$-algebra \sref[0]{0.5.1.3}.
 For a $\sh{B}$-module $\sh{F}$ to be quasi-coherent (on the ringed space $(X,\sh{B})$) it is necessary and sufficient that $\sh{F}$ be a quasi-coherent $\OO_X$-module.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.9.6.1}
-Since the question is a local, we can assume $X$ to be affine, given by the ring $A$, and thus $\sh{B}=\wt{B}$, where $B$ is an $A$-algebra \sref{1.1.4.3}.
+Since the question is local, we can assume $X$ to be affine, given by some ring $A$, and thus $\sh{B}=\wt{B}$, where $B$ is an $A$-algebra \sref{1.1.4.3}.
 If $\sh{F}$ is quasi-coherent on the ringed space $(X,\sh{B})$ then we can also assume that $\sh{F}$ is the cokernel of a $\sh{B}$-homomorphism $\sh{B}^{(I)}\to\sh{B}^{(J)}$; since this homomorphism is also an $\OO_X$-homomorphism of $\OO_X$-modules, and $\sh{B}^{(I)}$ and $\sh{B}^{(J)}$ are quasi-coherent $\OO_X$-modules \sref{1.1.3.9}[ii], $\sh{F}$ is also a quasi-coherent $\OO_X$-module \sref{1.1.3.9}[i].
 
 Conversely, if $\sh{F}$ is a quasi-coherent $\OO_X$-module, then $\sh{F}=\wt{M}$, where $M$ is a $B$-module \sref{1.1.4.3}; $M$ is isomorphic to the cokernel of a $B$-homomorphism $B^{(I)}\to B^{(J)}$, so $\sh{F}$ is a $\sh{B}$-module isomorphic to the cokernel of the corresponding homomorphism $\sh{B}^{(I)}\to\sh{B}^{(J)}$ \sref{1.1.3.13}, which finishes the proof.
 \end{proof}
 
-In particular, if $\sh{F}$ and $\sh{G}$ are two quasi-coherent $\sh{B}$-modules, $\sh{F}\otimes_{\sh{B}}\sh{G}$ is a quasi-coherent $\sh{B}$-module; similarly for $\shHom(\sh{F},\sh{G})$ whenever we further suppose that $\sh{F}$ admits a finite presentation \sref{1.1.3.13}.
+In particular, if $\sh{F}$ and $\sh{G}$ are two quasi-coherent $\sh{B}$-modules, then $\sh{F}\otimes_{\sh{B}}\sh{G}$ is a quasi-coherent $\sh{B}$-module; similarly for $\shHom(\sh{F},\sh{G})$ whenever we further suppose that $\sh{F}$ admits a finite presentation \sref{1.1.3.13}.
 
 \begin{env}[9.6.2]
 \label{1.9.6.2}
@@ -852,21 +852,23 @@ Then every quasi-coherent $\OO_X$-algebra $\sh{B}$ of finite type is a coherent 
 
 \begin{proof}
 \label{proof-1.9.6.3}
-We can once again restrict to the case where $X$ is an affine scheme given by a Noetherian ring $A$, and where $\sh{B}=\wt{B}$, $B$ being an $A$-algebra of finite type; $B$ is then a Noetherian ring.
-With this, it remains to prove that the kernel $\sh{N}$ of a $\sh{B}$-homomorphism $\sh{B}^m\to\sh{B}$ is a $\sh{B}$-module\oldpage[I]{180} of finite type; but it is isomorphic (as a $\sh{B}$-module) to $\wt{N}$, where $N$ is the kernel of the corresponding homomorphism of $B$-modules $B^m\to B$ \sref{1.1.3.13}.
-Since $B$ is Noetherian, the submodule $N$ of $B^m$ is a $B$-module of finite type, so there exists a homomorphism $B^p\to B^m$ with image $N$; since the sequence $B^p\to B^m\to B$ is exact, so is the corresponding sequence $\sh{B}^p\to\sh{B}^m\to\sh{B}$ \sref{1.1.3.5} and since $\sh{N}$ is the image of $\sh{B}^p\to\sh{B}^m$ \sref{1.1.3.9}[i], the proposition is proved.
+We can once again restrict to the case where $X$ is an affine scheme given by a Noetherian ring $A$, and where $\sh{B}=\wt{B}$, with $B$ being an $A$-algebra of finite type; $B$ is then a Noetherian ring.
+With this, it remains to prove that the kernel $\sh{N}$ of a $\sh{B}$-homomorphism $\sh{B}^m\to\sh{B}$ is a $\sh{B}$-module
+\oldpage[I]{180}
+of finite type; but it is isomorphic (as a $\sh{B}$-module) to $\wt{N}$, where $N$ is the kernel of the corresponding homomorphism of $B$-modules $B^m\to B$ \sref{1.1.3.13}.
+Since $B$ is Noetherian, the submodule $N$ of $B^m$ is a $B$-module of finite type, so there exists a homomorphism $B^p\to B^m$ with image $N$; since the sequence $B^p\to B^m\to B$ is exact, so too is the corresponding sequence $\sh{B}^p\to\sh{B}^m\to\sh{B}$ \sref{1.1.3.5}, and since $\sh{N}$ is the image of $\sh{B}^p\to\sh{B}^m$ \sref{1.1.3.9}[i], this proves the proposition.
 \end{proof}
 
 \begin{cor}[9.6.4]
 \label{1.9.6.4}
 Under the hypotheses of \sref{1.9.6.3}, for a $\sh{B}$-module $\sh{F}$ to be coherent, it is necessary and sufficient that it be a quasi-coherent $\OO_X$-module and a $\sh{B}$-module of finite type.
-If this is the case, and if $\sh{G}$ is a $\sh{B}$-submodule or a quotient module of $\sh{F}$, then in order for $\sh{G}$ to be a coherent $\sh{B}$-module, it is necessary and sufficient that it is a quasi-coherent $\OO_X$-module.
+If this is the case, and if $\sh{G}$ is a $\sh{B}$-submodule or a quotient module of $\sh{F}$, then in order for $\sh{G}$ to be a coherent $\sh{B}$-module, it is necessary and sufficient that it be a quasi-coherent $\OO_X$-module.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.9.6.4}
-Taking into account \sref{1.9.6.1}, the conditions on $\sh{F}$ are clearly necessary; we will show that they are sufficient.
-We can restrict to the case where $X$ is affine given by a Noetherian ring $A$, $\sh{B}=\wt{B}$, where $B$ is an $A$-algebra of finite type, $\sh{F}=\wt{M}$, where $M$ is a $B$-module, and where there exists a surjective $\sh{B}$-homomorphism $\sh{B}^m\to\sh{F}\to0$.
+Taking \sref{1.9.6.1} into account, the conditions on $\sh{F}$ are clearly necessary; we will show that they are sufficient.
+We can restrict to the case where $X$ is affine, given by some Noetherian ring $A$, where $\sh{B}=\wt{B}$, with $B$ an $A$-algebra of finite type, where $\sh{F}=\wt{M}$, with $M$ a $B$-module, and where there exists a surjective $\sh{B}$-homomorphism $\sh{B}^m\to\sh{F}\to0$.
 We then have the corresponding exact sequence $B^m\to M\to0$, so $M$ is a $B$-module of finite type; further, the kernel $P$ of the homomorphism $B^m\to M$ is then a $B$-module of finite type, since $B$ is Noetherian.
 We thus conclude \sref{1.1.3.13} that $\sh{F}$ is the cokernel of a $\sh{B}$-homomorphism $\sh{B}^m\to\sh{B}^n$, and is thus coherent, since $\sh{B}$ is a coherent sheaf of rings \sref[0]{0.5.3.4}.
 The same reasoning shows that a quasi-coherent $\sh{B}$-submodule (resp. a quotient $\sh{B}$-module) of $\sh{F}$ is of finite type, from whence the second part of the corollary.
@@ -874,13 +876,13 @@ The same reasoning shows that a quasi-coherent $\sh{B}$-submodule (resp. a quoti
 
 \begin{prop}[9.6.5]
 \label{1.9.6.5}
-Let $X$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian.
+Let $X$ be a quasi-compact scheme, or a prescheme whose underlying space is Noetherian.
 For all quasi-compact $\OO_X$-algebras $\sh{B}$ of finite type, there exists a quasi-coherent $\OO_X$-submodule $\sh{E}$ of $\sh{B}$ of finite type such that $\sh{E}$ generates \sref[0]{0.4.1.3} the $\OO_X$-algebra $\sh{B}$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.9.6.5}
-In fact, by the hypothesis there exists a finite cover $(U_i)$ of $X$ consisting of affine opens such that $\Gamma(U_i,\sh{B})=B_i$ is an algebra of finite type over $\Gamma(U_i,\OO_X)=A_i$; let $E_i$ be a $A_i$-submodule of $B_i$ of finite type that generates the $A_i$-algebra $B_i$; thanks to \sref{1.9.4.7}, there exists a $\OO_X$-submodule $\sh{E}_i$ of $\sh{B}$, quasi-coherent and of finite type, such that $\sh{E}_i|U_i=\wt{E_i}$.
+In fact, by hypothesis, there exists a finite cover $(U_i)$ of $X$ consisting of affine opens such that $\Gamma(U_i,\sh{B})=B_i$ is an algebra of finite type over $\Gamma(U_i,\OO_X)=A_i$; let $E_i$ be a $A_i$-submodule of $B_i$ of finite type that generates the $A_i$-algebra $B_i$; thanks to \sref{1.9.4.7}, there exists a $\OO_X$-submodule $\sh{E}_i$ of $\sh{B}$, quasi-coherent and of finite type, such that $\sh{E}_i|U_i=\wt{E_i}$.
 It is clear that the sum $\sh{E}$ of the $\sh{E}_i$ is the desired object.
 \end{proof}
 
