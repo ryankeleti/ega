@@ -5,7 +5,9 @@
 \usepackage{xstring}
 \usepackage{xparse}
 \usepackage{xr-hyper}
-\usepackage[linktocpage=true,colorlinks=true,hyperindex,citecolor=blue,linkcolor=magenta]{hyperref}
+\usepackage{xcolor}
+\definecolor{brightmaroon}{rgb}{0.76, 0.13, 0.28}
+\usepackage[linktocpage=true,colorlinks=true,hyperindex,citecolor=blue,linkcolor=brightmaroon]{hyperref}
 \usepackage[left=0.95in,right=0.95in,top=0.75in,bottom=0.75in]{geometry}
 %\usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
 \usepackage[charter,greekfamily=didot]{mathdesign}
@@ -98,7 +100,7 @@
 \def\CHom{\cat{Hom}}                % functor category
 \def\OO{\sh{O}}                     % structure sheaf O
 
-\def\shHom{\sh{H}\textup{\kern-2.2pt{\Fontauri\slshape om}}\!}   % sheaf Hom
+\def\shHom{\sh{H}\textup{\kern-2.2pt{\Fontauri\slshape om}}}   % sheaf Hom
 \def\shProj{\sh{P}\textup{\kern-2.2pt{\Fontauri\slshape roj}}\!} % sheaf Proj
 \def\shExt{\sh{E}\textup{\kern-2.2pt{\Fontauri\slshape xt}}\!}   % sheaf Ext
 %\def\shHom{{\sh{H}\!\textit{om}}\!}   % sheaf Hom
