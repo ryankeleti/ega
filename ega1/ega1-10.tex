@@ -6,18 +6,18 @@
 
 \begin{env}[10.1.1]
 \label{1.10.1.1}
-Let $A$ be an \emph{admissible} topological ring \sref[0]{0.7.1.2}; for each ideal of definition $\mathfrak{J}$ of $A$, $\Spec(A/\mathfrak{J})$ identifies with the closed subspace $V(\mathfrak{J})$ of $\Spec(A)$ \sref{1.1.1.11}, the set of \emph{open} prime ideals of $A$; this topological space does not depend
+Let $A$ be an \emph{admissible} topological ring \sref[0]{0.7.1.2}; for each ideal of definition $\mathfrak{J}$ of $A$, $\Spec(A/\mathfrak{J})$ can be identified with the closed subspace $V(\mathfrak{J})$ of $\Spec(A)$ \sref{1.1.1.11}, the set of \emph{open} prime ideals of $A$; this topological space does not depend
 \oldpage[I]{181}
 on the ideal of definition $\mathfrak{J}$ considered; we denote this topological space by $\mathfrak{X}$. Let $(\mathfrak{J}_\lambda)$ be a fundamental system of neighborhoods of $0$ in $A$, consisting of ideals of definition, and for each $\lambda$, let $\OO_\lambda$ be the structure sheaf of $\Spec(A/\mathfrak{J}_\lambda)$; this sheaf is induced on $\mathfrak{X}$ by $\wt{A}/\wt{\mathfrak{J}_\lambda}$ (which is zero outside of $\mathfrak{X}$).
 For $\mathfrak{J}_\mu\subset\mathfrak{J}_\lambda$, the canonical homomorphism $A/\mathfrak{J}_\mu\to A/\mathfrak{J}_\lambda$ thus defines a homomorphism $u_{\lambda\mu}:\OO_\mu\to\OO_\lambda$ of sheaves of rings \sref{1.1.6.1}, and $(\OO_\lambda)$ is a \emph{projective system of sheaves of rings} for these homomorphisms.
-As the topology of $\mathfrak{X}$ admits a basis consisting of quasi-compact open subsets, we can associate to each $\OO_\lambda$ a \emph{pseudo-discrete sheaf of topological rings} \sref[0]{0.3.8.1} which have $\OO_\lambda$ as the underlying (without topology) sheaf of rings, and that we denote also by $\OO_\lambda$; and the $\OO_\lambda$ give again a \emph{projective system of sheaves of topological rings} \sref[0]{0.3.8.2}.
+Since the topology of $\mathfrak{X}$ admits a basis consisting of quasi-compact open subsets, we can associate to each $\OO_\lambda$ a \emph{pseudo-discrete sheaf of topological rings} \sref[0]{0.3.8.1} which have $\OO_\lambda$ as the underlying sheaf of rings (without topologies), and that we denote also by $\OO_\lambda$; and the $\OO_\lambda$ give again a \emph{projective system of sheaves of topological rings} \sref[0]{0.3.8.2}.
 We denote by $\OO_\mathfrak{X}$ the \emph{sheaf of topological rings} on $\mathfrak{X}$, the projective limit of the system $(\OO_\lambda)$; for each \emph{quasi-compact} open subset $U$ of $\mathfrak{X}$, $\Gamma(U,\OO_\mathfrak{X})$ is a topological ring, the projective limit of the system of \emph{discrete} rings $\Gamma(U,\OO_\lambda)$ \sref[0]{0.3.2.6}.
 \end{env}
 
 \begin{defn}[10.1.2]
 \label{1.10.1.2}
-Given an admissible topological ring $A$, we define the formal spectrum of $A$, and denote it by $\Spf(A)$, to be the closed subspace $\mathfrak{X}$ of $\Spec(A)$ consisting of the open prime ideals of $A$.
-We say that a topologically ringed space is a formal affine scheme if it is isomorphic to a formal spectrum $\Spf(A)=\mathfrak{X}$ equipped with a sheaf of topological rings $\OO_\mathfrak{X}$ which is the projective limit of sheaves of psuedo-discrete topological rings $(\wt{A}/\wt{\mathfrak{J}_\lambda})|\mathfrak{X}$, where $\mathfrak{J}_\lambda$ varies over the filtered set of ideals of definition for $A$.
+Given an admissible topological ring $A$, we define the formal spectrum of $A$, denoted by $\Spf(A)$, to be the closed subspace $\mathfrak{X}$ of $\Spec(A)$ consisting of the open prime ideals of $A$.
+We say that a topologically ringed space is a formal affine scheme if it is isomorphic to a formal spectrum $\Spf(A)=\mathfrak{X}$ equipped with a sheaf of topological rings $\OO_\mathfrak{X}$ which is the projective limit of sheaves of psuedo-discrete topological rings $(\wt{A}/\wt{\mathfrak{J}_\lambda})|\mathfrak{X}$, where $\mathfrak{J}_\lambda$ varies over the filtered set of ideals of definition of $A$.
 \end{defn}
 
 When we speak of a \emph{formal spectrum $\mathfrak{X}=\Spf(A)$} as a formal affine scheme, it will always be as the topologically ringed space $(\mathfrak{X},\OO_\mathfrak{X})$ where $\OO_\mathfrak{X}$ is defined as above.
@@ -36,7 +36,7 @@ Indeed, since $\mathfrak{X}$ is closed in $\Spec(A)$, it is quasi-compact, and s
 
 \begin{prop}[10.1.4]
 \label{1.10.1.4}
-Let $A$ be an admissible ring, $\mathfrak{X}=\Spf(A)$, and, for every $f\in A$, let $\mathfrak{D}(f)=D(f)\cap\mathfrak{X}$; then the topologically ringed space $(\mathfrak{D}(f),\OO_\mathfrak{X}|\mathfrak{D}(f))$ is isomorphic to the formal affine spectrum $\Spf(A_{\{f\}}$ \sref[0]{0.7.6.15}.
+Let $A$ be an admissible ring, $\mathfrak{X}=\Spf(A)$, and, for every $f\in A$, let $\mathfrak{D}(f)=D(f)\cap\mathfrak{X}$; then the topologically ringed space $(\mathfrak{D}(f),\OO_\mathfrak{X}|\mathfrak{D}(f))$ is isomorphic to the formal affine spectrum $\Spf(A_{\{f\}})$ \sref[0]{0.7.6.15}.
 \end{prop}
 
 \begin{proof}
@@ -57,7 +57,7 @@ For every $x\in\mathfrak{X}=\Spf(A)$, the fibre $\OO_x$ is a local ring whose re
 If, further, $A$ is adic and Noetherian, then $\OO_x$ is a Noetherian ring.
 \end{prop}
 
-Since $\kres(x)$ is not reduced at $0$, we conclude from this result that the \emph{support} of the ring of sheaves $\OO_\mathfrak{X}$ is \emph{equal to $\mathfrak{X}$}.
+Since $\kres(x)$ is not reduced at $0$, we conclude from this that the \emph{support} of the ring of sheaves $\OO_\mathfrak{X}$ is \emph{equal to $\mathfrak{X}$}.
 
 \subsection{Morphisms of formal affine schemes}
 \label{subsection:1.10.2}
