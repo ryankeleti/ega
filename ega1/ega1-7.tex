@@ -42,7 +42,7 @@ In particular:
 
 \begin{prop}[7.1.5]
 \label{1.7.1.5}
-If $X$ is an irreducible prescheme, the ring $R(X)$ of rational maps on $X$ is canonically identified with the local ring $\OO_x$ of the generic point $x$ of $X$.
+If $X$ is an irreducible prescheme, then the ring $R(X)$ of rational maps on $X$ is canonically identified with the local ring $\OO_x$ of the generic point $x$ of $X$.
 It is a local ring of dimension~0, and thus a local Artinian ring when $X$ is Noetherian; it is a field when $X$ is integral, and, when $X$ is further an affine scheme, it is identified with the field of fractions of $A(X)$.
 \end{prop}
 
@@ -53,16 +53,16 @@ For the other claims, we can reduce to the case where $X$ is affine, given by so
 Finally, if $A$ is Noetherian, we know (\cite[p.~127, cor.~4]{I-11}) that $\mathfrak{j}_x$ is nilpotent, and $\OO_x=A_x$ Artinian.
 \end{proof}
 
-If $X$ is \emph{integral}, the ring $\OO_z$ is integral for all $z\in X$; every affine open subset $U$ containing $z$ also contains $x$, and $R(U)$, being equal to the field of fractions of $A(U)$, is identified with $R(X)$; we thus conclude that $R(X)$ can also be identified with the \emph{field of fractions of $\OO_z$}: the canonical identification of $\OO_z$ to a subring of $R(X)$ consists of associating, to every germ of a section $s\in\OO_z$, the unique rational function on $X$, class of a section of $\OO_X$, (necessarily defined on a dense open subset of $X$) having $s$ as its germ at the point $z$.
+If $X$ is \emph{integral}, then the ring $\OO_z$ is integral for all $z\in X$; every affine open subset $U$ containing $z$ also contains $x$, and $R(U)$, being equal to the field of fractions of $A(U)$, is identified with $R(X)$; we thus conclude that $R(X)$ can also be identified with the \emph{field of fractions of $\OO_z$}: the canonical identification of $\OO_z$ to a subring of $R(X)$ consists of associating, to every germ of a section $s\in\OO_z$, the unique rational function on $X$, class of a section of $\OO_X$, (necessarily defined on a dense open subset of $X$) having $s$ as its germ at the point $z$.
 
 \begin{env}[7.1.6]
 \label{1.7.1.6}
 Now suppose that $X$ has a \emph{finite} number of irreducible components $X_i$ ($1\leq i\leq n$) (which will be the case whenever the underlying space of $X$ is \emph{Noetherian}); let $X'_i$ be the open subset of $X$ given by the complement of the $X_j\cap X_i$ for $j\neq i$ inside $X_i$; $X'_i$ is irreducible, its generic point $x_i$ is the generic point of $X_i$, and the $X'_i$ are pairwise disjoint, with their union being dense in $X$ \sref[0]{0.2.1.6}.
 For every dense open subset $U$ of $X$, $U_i=U\cap X'_i$ is a nonempty dense open subset of $X'_i$, with the $U_i$ being pairwise disjoint, and so $U'=\bigcup_i U'_i$ is dense in $X$.
 Giving a morphism from $U'$ to $Y$ consists of giving (arbitrarily) a morphism from each of the $U_i$ to $Y$.
-Thus:
 \end{env}
 
+Thus:
 \begin{prop}[7.1.7]
 \label{1.7.1.7}
 Let $X$ and $Y$ be two preschemes (resp. $S$-preschemes) such that $X$ has a finite number of irreducible components $X_i$, with generic points $x_i$ ($1\leq i\leq n$).
@@ -82,7 +82,6 @@ If $Q$ is the complement of the union of the minimal prime ideals of $A$, then t
 \end{cor}
 
 This will follow from the following lemma:
-
 \begin{lem}[7.1.9.1]
 \label{1.7.1.9.1}
 For an element $f\in A$ to be such that $D(f)$ is dense in $X$, it is necessary and sufficient that $f\in Q$; every dense open subset of $X$ contains an open subset of the form $D(f)$, where $f\in Q$.
@@ -144,11 +143,10 @@ Under the conditions of \sref{1.7.1.12}, rational $S$-maps from $X$ to $Y$ depen
 
 \begin{proof}
 \label{proof-1.7.1.14}
-In fact, since $z\in\overline{\{x\}}$, $x$ is the generic point of $Z=\Spec(\OO_z)$, and $\OO_{X,x}=\OO_{Z,z}$.
+Since $z\in\overline{\{x\}}$, $x$ is the generic point of $Z=\Spec(\OO_z)$, and $\OO_{X,x}=\OO_{Z,z}$.
 \end{proof}
 
-When $X$ is integral, $R(X)=\OO_x=\kres(x)$ is a field \sref{1.7.1.5}; the preceding corollaries then specialise to the following:
-
+When $X$ is integral, $R(X)=\OO_x=\kres(x)$ is a field \sref{1.7.1.5}; the preceding corollaries then specialize to the following:
 \begin{cor}[7.1.15]
 \label{1.7.1.15}
 Suppose that the conditions of \sref{1.7.1.12} are satisfied, and further that $X$ is integral.
@@ -187,10 +185,8 @@ Let $f$ be a rational $S$-map from $X$ to $Y$, with domain of definition $U_0$.
 Then there exists exactly one $S$-morphism $U_0\to Y$ belonging to the class of $f$.
 \end{prop}
 
-\begin{proof}
-\label{proof-1.7.2.2}
+%\label{proof-1.7.2.2}
 Since, for every morphism $U\to Y$ belonging to the class of $f$, we necessarily have $U\subset U_0$, it is clear that the proposition will be a consequence of the following:
-\end{proof}
 
 \begin{lem}[7.2.2.1]
 \label{1.7.2.2.1}
@@ -209,8 +205,7 @@ From the equation $g^{-1}(T)=X$, we deduce \sref{1.4.4.1} that $g$ factors as $\
 
 It is clear that the morphism $U_0\to Y$ defined in \sref{1.7.2.2} is the unique morphism of the class $f$ that \emph{cannot be extended} to a morphism from an open subset of $X$ that strictly contains $U_0$.
 \emph{Under the hypotheses of \sref{1.7.2.2}}, we can thus \emph{identify} the rational maps from $X$ to $Y$ with the \emph{non-extendible} (to strictly larger open subsets) morphisms from dense open subsets of $X$ to $Y$.
-With this identification, Proposition~\sref{1.7.2.2} leads to:
-
+With this identification, Proposition~\sref{1.7.2.2} implies:
 \begin{cor}[7.2.3]
 \label{1.7.2.3}
 With the hypotheses from \sref{1.7.2.2} on $X$ and $Y$, let $U$ be a dense open subset of $X$.
@@ -230,7 +225,7 @@ If $\overline{f}$ is the rational $\bb{Z}$-map from $X$ to $Y$ that extends $f$,
 
 \begin{proof}
 \label{proof-1.7.2.4}
-Indeed, if $\vphi:X\to S$ and $\psi:Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, but this follows from \sref{1.7.2.2.1}, since $f$ is an $S$-morphism.
+Indeed, if $\vphi:X\to S$ and $\psi:Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, then it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, but this follows from \sref{1.7.2.2.1}, since $f$ is an $S$-morphism.
 \end{proof}
 
 \begin{cor}[7.2.5]
@@ -276,8 +271,8 @@ Let $X$ and $Y$ be two $S$-preschemes, with $X$ reduced, and $Y$ separated over 
 Let $f$ be a rational $S$-map from $X$ to $Y$, and let $x$ be a point of $X$; we can compose $f$ with the canonical $S$-morphism $\Spec(\OO_x)\to X$ \sref{1.2.4.1} provided that the intersection of $\Spec(\OO_x)$ with the domain of definition of $f$ is dense in $\Spec(\OO_x)$ (identified with the set of $z\in X$ such that $x\in\overline{\{z\}}$ \sref{1.2.4.2}).
 This will happen in the follow cases:
 \begin{enumerate}
-    \item $X$ is \emph{irreducible} (and thus \emph{integral}), because then the generic point $\xi$ of $X$ is the generic point of $\Spec(\OO_x)$; since the domain of definition $U$ of $f$ contains $\xi$, $U\cap\Spec(\OO_x)$ contains $\xi$, and so is dense in $\Spec(\OO_x)$.
-    \item $X$ is \emph{locally Noetherian}; our claim then follows from:
+  \item[1st.] $X$ is \emph{irreducible} (and thus \emph{integral}), because then the generic point $\xi$ of $X$ is the generic point of $\Spec(\OO_x)$; since the domain of definition $U$ of $f$ contains $\xi$, $U\cap\Spec(\OO_x)$ contains $\xi$, and so is dense in $\Spec(\OO_x)$.
+  \item[2nd.] $X$ is \emph{locally Noetherian}; our claim then follows from:
 \end{enumerate}
 \end{env}
 
@@ -298,7 +293,7 @@ contained in $\mathfrak{j}_x$ \sref{0.2.1.6}, the minimal prime ideals of $A_x$ 
 \end{proof}
 
 With this in mind, suppose that we are in one of the two cases mentioned in \sref{1.7.2.8}.
-If $U$ is the domain of definition of the rational $S$-map $f$, we denote by $f'$ the rational map from $\Spec(\OO_x)$ to $Y$ which agrees (taking \sref{1.2.4.2} into account) with $f$ on $U\cap\Spec(\OO_x)$; we say that this rational map is \emph{induced by $f$}.
+If $U$ is the domain of definition of the rational $S$-map $f$, then we denote by $f'$ the rational map from $\Spec(\OO_x)$ to $Y$ which agrees (taking~\sref{1.2.4.2} into account) with $f$ on $U\cap\Spec(\OO_x)$; we say that this rational map is \emph{induced by $f$}.
 
 \begin{prop}[7.2.9]
 \label{1.7.2.9}
@@ -311,7 +306,7 @@ For $f$ to be defined at a point $x$, it is necessary and sufficient for the rat
 \begin{proof}
 \label{proof-1.7.2.9}
 The condition clearly being necessary (since $\Spec(\OO_x)$ is contained in every open subset containing $x$), we show that it is sufficient.
-By \sref{1.6.5.1}, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $g$ from $U$ to $Y$ that induces $f'$ on $\Spec(\OO_x)$.
+By~\sref{1.6.5.1}, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $g$ from $U$ to $Y$ that induces $f'$ on $\Spec(\OO_x)$.
 If $X$ is irreducible, then $U$ is dense in $X$, and, by \sref{1.7.2.3}, we can suppose that $g$ is a rational $S$-map.
 Further, the generic point of $X$ belongs to both $\Spec(\OO_x)$ and the domain of definition of $f$, and so $s$ and $g$ agree at this point, and thus on a nonempty open subset of $X$ \sref{1.6.5.1}.
 But since $f$ and $g$ are rational $S$-maps, they are identical \sref{1.7.2.3}, and so $f$ is defined at $x$.
@@ -439,7 +434,6 @@ If $X$ is an integral prescheme, then every torsion-free quasi-coherent $\OO_X$-
 
 The cardinality of $I$ is called the \emph{rank} of $\sh{F}$; for every nonempty affine open subset $U$ of $X$, the rank of $\sh{F}$ is equal to the rank of $\Gamma(U,\sh{F})$ as a $\Gamma(U,\OO_X)$-module, as we see by considering the generic point of $X$, contained in $U$.
 In particular:
-
 \begin{cor}[7.4.3]
 \label{1.7.4.3}
 On an integral prescheme $X$, every torsion-free quasi-coherent $\OO_X$-module of rank $1$ (in particular, every invertible $\OO_X$-module) is isomorphic to a $\OO_X$-submodule of $\sh{R}(X)$, and vice versa.
@@ -479,7 +473,7 @@ For every quasi-coherent $\OO_X$-module $\sh{F}$ of finite type, the following c
 
 \begin{proof}
 \label{proof-1.7.4.6}
-By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so (a) and (b) are equivalent; then, $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, (b) and (c) are equivalent.
+By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\OO_X}\sh{R}(X)=0$ are equivalent, so (a) and (b) are equivalent; then $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, (b) and (c) are equivalent.
 \end{proof}
 
 \begin{env}[7.4.7]
