@@ -66,30 +66,33 @@ Since $\kres(x)$ is not reduced at $0$, we conclude from this that the \emph{sup
 \label{1.10.2.1}
 Let $A$, $B$ be two admissible rings, and let $\vphi:B\to A$ be a \emph{continuous} morphism.
 The continuous map ${}^a\vphi:\Spec(A)\to\Spec(B)$ \sref{1.1.2.1} then maps $\mathfrak{X}=\Spf(A)$ to $\mathfrak{Y}=\Spf(B)$, since the inverse image under $\vphi$ of an open prime ideal of $A$ is an open prime ideal of $B$.
-On the other hand, for all $g\in B$, $\vphi$ defines a continuous homomorphism $\Gamma(\mathfrak{D}(g),\OO_\mathfrak{Y})\to\Gamma(\mathfrak{D}(\vphi(g)),\OO_\mathfrak{X})$ according to \sref{1.10.1.4}, \sref{1.10.1.3}, and \sref[0]{0.7.6.7}; as these homomorphisms satisfy the compatibility conditions for the restrictions corresponding to the change from $g$ to a multiple of $g$, and as $\mathfrak{D}(\vphi(g))={}^a\vphi^{-1}(\mathfrak{D}(g))$, they define a \emph{continuous} homomorphisms of sheaves of topological rings $\OO_\mathfrak{Y}\to{}^a\vphi_*(\OO_\mathfrak{X})$ \sref[0]{0.3.2.5}, that we denote by $\wt{\vphi}$; we have thus defined a morphism $\Phi=({}^a\vphi,\wt{\vphi})$ of topologically ringed spaces $\mathfrak{X}\to\mathfrak{Y}$.
-We note that as a homomorphism of sheaves without topology, $\wt{\vphi}$ defines a homomorphism $\wt{\vphi}_x^\sharp:\OO_{{}^a\vphi(x)}\to\OO_x$ on the stalks, for all $x\in\mathfrak{X}$.
+Conversely, for all $g\in B$, $\vphi$ defines a continuous homomorphism $\Gamma(\mathfrak{D}(g),\OO_\mathfrak{Y})\to\Gamma(\mathfrak{D}(\vphi(g)),\OO_\mathfrak{X})$ according to \sref{1.10.1.4}, \sref{1.10.1.3}, and \sref[0]{0.7.6.7};
+since these homomorphisms satisfy the compatibility conditions for the restrictions corresponding to the change from $g$ to a multiple of $g$, and since $\mathfrak{D}(\vphi(g))={}^a\vphi^{-1}(\mathfrak{D}(g))$, they define a \emph{continuous} homomorphism of sheaves of topological rings $\OO_\mathfrak{Y}\to{}^a\vphi_*(\OO_\mathfrak{X})$ \sref[0]{0.3.2.5} that we denote by $\wt{\vphi}$;
+we have thus defined a morphism $\Phi=({}^a\vphi,\wt{\vphi})$ of topologically ringed spaces $\mathfrak{X}\to\mathfrak{Y}$.
+We note that, as a homomorphism of sheaves without topology, $\wt{\vphi}$ defines a homomorphism $\wt{\vphi}_x^\sharp:\OO_{{}^a\vphi(x)}\to\OO_x$ on the stalks, for all $x\in\mathfrak{X}$.
 \end{env}
 
 \begin{prop}[10.2.2]
 \label{1.10.2.2}
-Let $A$, $B$ be two admissible topological rings, and let $\mathfrak{X}=\Spf(A)$, $\mathfrak{Y}=\Spf(B)$.
-For a morphism $u=(\psi,\theta):\mathfrak{X}\to\mathfrak{Y}$ of topologically ringed spaces to be of the form $({}^a\vphi,\wt{\vphi})$, where $\vphi$ is a continuous ring homomorphism $B\to A$, it is necessary and sufficient that for all $x\in\mathfrak{X}$, $\theta_x^\sharp$ is a local homomorphism $\OO_{\vphi(x)}\to\OO_x$.
+Let $A$ and $B$ be admissible topological rings, and let $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$.
+For a morphism $u=(\psi,\theta):\mathfrak{X}\to\mathfrak{Y}$ of topologically ringed spaces to be of the form $({}^a\vphi,\wt{\vphi})$, where $\vphi$ is a continuous ring homomorphism $B\to A$, it is necessary and sufficient that $\theta_x^\sharp$ be a local homomorphism $\OO_{\vphi(x)}\to\OO_x$ for all $x\in\mathfrak{X}$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.2.2}
 The condition is necessary: let $\mathfrak{p}=\mathfrak{j}_x\in\Spf(A)$, and let $\mathfrak{q}=\vphi^{-1}(\mathfrak{j}_x)$; if $g\not\in\mathfrak{q}$, then we have $\vphi(g)\not\in\mathfrak{p}$, and it is immediate that the homomorphism
-$B_{\{g\}}\to A_{\{\vphi(g)\}}$ induced by $\vphi$ \sref[0]{0.7.6.7} sends $\mathfrak{q}_{\{g\}}$ to a subset of $\mathfrak{p}_{\{\vphi(g)\}}$; by passing to the inductive limit, we see (taking into account \sref{1.10.1.5} and \sref[0]{0.7.6.17}) that $\wt{\vphi}_x^\sharp$ is a local homomorphism.
+$B_{\{g\}}\to A_{\{\vphi(g)\}}$ induced by $\vphi$ \sref[0]{0.7.6.7} sends $\mathfrak{q}_{\{g\}}$ to a subset of $\mathfrak{p}_{\{\vphi(g)\}}$; by passing to the inductive limit, we see (taking \sref{1.10.1.5} and \sref[0]{0.7.6.17} into account) that $\wt{\vphi}_x^\sharp$ is a local homomorphism.
 
-Conversely, let $(\psi,\theta)$ be a morphism satisying the condition in the statement; according to \sref{1.10.1.3}, $\theta$ defines a continuous ring homomorphism
+Conversely, let $(\psi,\theta)$ be a morphism satisfying the condition of the proposition;
+by \sref{1.10.1.3}, $\theta$ defines a continuous ring homomorphism
 \[
   \vphi=\Gamma(\theta):B=\Gamma(\mathfrak{Y},\OO_\mathfrak{Y})\to\Gamma(\mathfrak{X},\OO_\mathfrak{X})=A.
 \]
-By virtue of the hypothesis on $\theta$, for the section $\vphi(g)$ of $\OO_\mathfrak{X}$ over $\mathfrak{X}$ to be an invertible germ at the point $x$, it is necessary and sufficient that $g$ is an invertible germ at the point $\psi(x)$.
-But according to \sref[0]{0.7.6.17}, the sections of $\OO_\mathfrak{X}$ (resp. $\OO_\mathfrak{Y}$) over $\mathfrak{X}$ (resp. $\OO_\mathfrak{Y}$) whose germ is not invertible at the point $x$ (resp. $\psi(x)$) are exactly the elements of
-$\mathfrak{j}_x$
+By virtue of the hypothesis on $\theta$, for the section $\vphi(g)$ of $\OO_\mathfrak{X}$ over $\mathfrak{X}$ to be an invertible germ at the point $x$, it is necessary and sufficient that $g$ be an invertible germ at the point $\psi(x)$.
+But, by \sref[0]{0.7.6.17}, the sections of $\OO_\mathfrak{X}$ (resp. $\OO_\mathfrak{Y}$) over $\mathfrak{X}$ (resp. $\mathfrak{Y}$) that have a non-invertible germ at the point $x$ (resp. $\psi(x)$) are exactly the elements of $\mathfrak{j}_x$
 \oldpage[I]{183}
-(resp. $\mathfrak{j}_{\psi(x)}$); the above remark thus shows that ${}^a\vphi=\psi$.
+(resp. $\mathfrak{j}_{\psi(x)}$);
+the above remark thus shows that ${}^a\vphi=\psi$.
 Finally, for all $g\in B$ the diagram
 \[
   \xymatrix{
@@ -99,16 +102,17 @@ Finally, for all $g\in B$ the diagram
     \Gamma(\mathfrak{D}(\vphi(g)),\OO_\mathfrak{X})=A_{\{\vphi(g)\}}
   }
 \]
-is commutative; by the universal property of completed rings of fractions \sref[0]{0.7.6.6}, $\theta_{\mathfrak{D}(g)}$ is equal to $\wt{\vphi}_{\mathfrak{D}(g)}$ for all $g\in B$, so \sref[0]{0.3.2.5} we have $\theta=\wt{\vphi}$.
+is commutative; by the universal property of completed rings of fractions \sref[0]{0.7.6.6}, $\theta_{\mathfrak{D}(g)}$ is equal to $\wt{\vphi}_{\mathfrak{D}(g)}$ for all $g\in B$, and so \sref[0]{0.3.2.5} we have $\theta=\wt{\vphi}$.
 \end{proof}
 
-We say that a morphism $(\psi,\theta)$ of topologically ringed spaces satisfying the condition of Proposition \sref{1.10.2.2} is a \emph{morphism of formal affine schemes}.
+We say that a morphism $(\psi,\theta)$ of topologically ringed spaces satisfying the condition of Proposition~\sref{1.10.2.2} is a \emph{morphism of formal affine schemes}.
 We can say that the functors $\Spf(A)$ in $A$ and $\Gamma(\mathfrak{X},\OO_\mathfrak{X})$ in $\mathfrak{X}$ define an \emph{equivalence} between the cateory of admissible rings and the opposite category of formal affine schemes (T, I, 1.2).
 
 \begin{env}[10.2.3]
 \label{1.10.2.3}
-As a particular case of \sref{1.10.2.2}, note that for $f\in A$, the canonical injection of the formal affine scheme induced by $\mathfrak{X}$ on $\mathfrak{D}(f)$ corresponds to the continuous canonical homomorphism $A\to A_{\{f\}}$.
-Under the hypotheses of Proposition \sref{1.10.2.2}, let $h$ be an element of $B$, $g$ an element of $A$, multiple of $\vphi(h)$; we then have $\psi(\mathfrak{D}(g))\subset\mathfrak{D}(h)$; the restriction of $u$ to $\mathfrak{D}(g)$, considered as a morphism from $\mathfrak{D}(g)$ to $\mathfrak{D}(h)$, is the unique morphism $v$ making the diagram
+As a particular case of \sref{1.10.2.2}, note that, for $f\in A$, the canonical injection of the formal affine scheme induced by $\mathfrak{X}$ on $\mathfrak{D}(f)$ corresponds to the continuous canonical homomorphism $A\to A_{\{f\}}$.
+Under the hypotheses of Proposition \sref{1.10.2.2}, let $h$ be an element of $B$, and $g$ an element of $A$ that is a multiple of $\vphi(h)$;
+we then have $\psi(\mathfrak{D}(g))\subset\mathfrak{D}(h)$; the restriction of $u$ to $\mathfrak{D}(g)$, considered as a morphism from $\mathfrak{D}(g)$ to $\mathfrak{D}(h)$, is the unique morphism $v$ making the diagram
 \[
   \xymatrix{
     \mathfrak{D}(g)\ar[r]^v\ar[d] &
@@ -117,7 +121,7 @@ Under the hypotheses of Proposition \sref{1.10.2.2}, let $h$ be an element of $B
     \mathfrak{Y}
   }
 \]
-commutative.
+commutate.
 
 This morphism corresponds to the unique continuous homomorphism $\vphi':B_{\{h\}}\to A_{\{g\}}$ \sref[0]{0.7.6.7} making the diagram
 \[
@@ -128,7 +132,7 @@ This morphism corresponds to the unique continuous homomorphism $\vphi':B_{\{h\}
     B_{\{h\}}\ar[l]_{\vphi'}
   }
 \]
-commutative.
+commutate.
 \end{env}
 
 \subsection{Ideals of definition for a formal affine scheme}
