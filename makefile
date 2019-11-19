@@ -7,6 +7,7 @@ TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
 PDFLATEX = pdflatex
 PDF_DIR = $(shell pwd)/pdfs
+WEBNAME = ega
 
 .PHONY: default
 default: $(TEX)
@@ -63,6 +64,8 @@ clean:
 cleanforce:
 	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex *-auto.tex
 	rm -rf $(PDF_DIR)
+	rm -rf tags $(WEBNAME).* $(WEBNAME)
+	rm -rf plastex/ gerby-website/
 
 .PHONY: all
 all: pdfs book

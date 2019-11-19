@@ -115,7 +115,7 @@ We say that a sheaf of rings $\sh{A}$ on a topological space $X$ is
 \emph{reduced at a point $x$ in $X$} if the stalk $\sh{A}_x$ is a \emph{reduced}
 ring \sref{0.1.1.1}; we say that $\sh{A}$ is \emph{reduced} if it is reduced
 at all points of $X$. Recall that a ring $A$ is called \emph{regular} if each of
-the local rings $A_\fk{p}$ (where $\fk{p}$ varies over the set of
+the local rings $A_\mathfrak{p}$ (where $\mathfrak{p}$ varies over the set of
 prime ideals of $A$) is a regular local ring; we will say that a sheaf of rings
 $\sh{A}$ on $X$ is \emph{regular at a point $x$} (resp. \emph{regular}) if the
 stalk $\sh{A}_x$ is a regular ring (resp. if $\sh{A}$ is regular at each point).
@@ -515,7 +515,7 @@ $\Gamma(U,\sh{F})$ being considered as a $\Gamma(V,\sh{B})$-module by means of
 the ring homomorphism $\theta_{U,V}:\Gamma(V,\sh{B})\to\Gamma(U,\sh{A})$; the
 $u_{U,V}$ must in addition render commutative the diagrams (3.5.1.1). It
 suffices, moreover, to define $u$ by the data of the $u_{U,V}$ when $U$
-(resp. $V$) varies over a basis $\fk{B}$ (resp. $\fk{B}'$) for the
+(resp. $V$) varies over a basis $\mathfrak{B}$ (resp. $\mathfrak{B}'$) for the
 topology of $X$ (resp. $Y$) and to check the commutativity of (3.5.1.1) for
 these restrictions.
 \end{env}
@@ -533,6 +533,7 @@ is a $\Psi''$-morphism which we call the \emph{composition} of $u$ and $v$.
 We will now see that we can define a canonical \emph{isomorphism} of \emph{bifunctors} in
 $\sh{F}$ and $\sh{G}$
 \[
+\label{eq:0.4.4.3.1}
   \Hom_\sh{A}(\Psi^*(\sh{G}),\sh{F})\isoto\Hom_\sh{B}(\sh{G},\Psi_*(\sh{F}))
   \tag{4.4.3.1}
 \]
@@ -667,3 +668,4 @@ check that ${v''}^\sharp$ is the homomorphism
   \xrightarrow{v^\sharp}\sh{F}.
 \]
 \end{env}
+

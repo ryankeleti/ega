@@ -8,7 +8,7 @@ Let $(X_\alpha)$ be any family of preschemes; let $X$ be a topological space whi
 \emph{sum} of the underlying spaces $X_\alpha$; $X$ is then the union of pairwise
 disjoint open subspaces $X_\alpha'$, and for each $\alpha$ there is a homomorphism
 $\vphi_\alpha$ from $X_\alpha$ to $X_\alpha'$. If we equip each of the $X_\alpha'$ with the
-sheaf $(\vphi_\alpha)_*(\OO_{X_\alpha})$, it is clear that $X$ becomes a prescheme, which
+sheaf $(\vphi_\alpha)_*(\sh{O}_{X_\alpha})$, it is clear that $X$ becomes a prescheme, which
 we call the \emph{sum} of the family of preschemes $(X_\alpha)$ and which we denote
 $\bigsqcup_\alpha X_\alpha$. If $Y$ is a prescheme, then the map $f\mapsto(f\circ\vphi_\alpha)$ is a
 \emph{bijection} from the set $\Hom(X,Y)$ to the product set $\prod_\alpha\Hom(X_\alpha,Y)$.
@@ -19,7 +19,7 @@ It is immediate that, if $X=\Spec(A)$ and $Y=\Spec(B)$, then $X\sqcup Y$ is cano
 \subsection{Products of preschemes}
 \label{subsection:1.3.2}
 
-\begin{defn}[3.2.1]
+\begin{definition}[3.2.1]
 \label{1.3.2.1}
 Given $S$-preschemes $X$ and $Y$, we say that a triple $(Z,p_1,p_2)$, consisting of an
 $S$-prescheme $Z$, and $S$-morphisms $p_1:Z\to X$ and $p_2:Z\to Y$, is a product of the
@@ -31,7 +31,7 @@ $Z$, to the set of pairs consisting of an $S$-morphism $T\to X$ and an $S$-morph
 \[
   \Hom_S(T,Z)\isoto\Hom_S(T,X)\times\Hom_S(T,Y)).
 \]
-\end{defn}
+\end{definition}
 
 This is the general notion of a \emph{product} of two objects in a category, applied
 to the category of $S$-preschemes (T, I, 1.1); in particular, a product of two $S$-preschemes
@@ -48,13 +48,13 @@ $(u\circ p_1',v\circ p_2')_S$ from $X'\times_S Y'$ to $X\times_S Y$.
 When $S$ is an affine scheme given by some ring $A$, we often replace $S$
 by $A$ is the above notation.
 
-\begin{prop}[3.2.2]
+\begin{proposition}[3.2.2]
 \label{1.3.2.2}
 Let $X$, $Y$, and $S$ be affine schemes, given by rings $B$, $C$, and $A$ (respectively). Let
 $Z=\Spec(B\otimes_A C)$, and let $p_1$ and $p_2$ be the $S$-morphisms corresponding \sref{1.2.2.4} to
 the canonical $A$-homomorphisms $u:b\mapsto b\otimes 1$ and $v:c\mapsto 1\otimes c$ (respectively) from $B$
 and $C$ to $B\otimes_A C$; then $(Z,p_1,p_2)$ is a product of $X$ and $Y$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.2.2}
@@ -66,21 +66,21 @@ denotes here the set of homomorphisms of \emph{$A$-algebras}.} which follows imm
 from the definitions and the fact that $b\otimes c=(b\otimes 1)(1\otimes c)$.
 \end{proof}
 
-\begin{cor}[3.2.3]
+\begin{corollary}[3.2.3]
 \label{1.3.2.3}
 Let $T$ be an affine scheme given by some ring $D$, and $\alpha=({}^a\rho,\widetilde{\rho})$
 (resp. $\beta=({}^a\sigma,\widetilde{\sigma})$) an $S$-morphism $T\to X$ (resp. $T\to Y$),
 where $\rho$ (resp. $\sigma$) is an $A$-homomorphism from $B$ (resp. $C$) to $D$; then
 $(\alpha,\beta)_S=({}^a\tau,\widetilde{\tau})$, where $\tau$ is the homomorphism
 $B\otimes_A C\to D$ such that $\tau(b\otimes c)=\rho(b)\sigma(c)$.
-\end{cor}
+\end{corollary}
 
-\begin{prop}[3.2.4]
+\begin{proposition}[3.2.4]
 \label{1.3.2.4}
 Let $f:S'\to S$ be a \emph{monomorphism} of preschemes \emph{(T, I, 1.1)}, and let $X$ and $Y$ be
 $S'$-preschemes, also considered as $S$-preschemes via $f$. Every product of
 the $S$-preschemes $X$ and $Y$ is then a product of the $S'$-preschemes $X$ and $Y$, and vice versa.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.2.4}
@@ -92,31 +92,30 @@ $S'$-prescheme with structure morphism $\theta'$, and $u$ and $v$ as $S'$-morphi
 conclusion of the proposition follows immediately, taking \sref{1.3.2.1} into account.
 \end{proof}
 
-\begin{cor}[3.2.5]
+\begin{corollary}[3.2.5]
 \label{1.3.2.5}
 Let $X$ and $Y$ be $S$-preschemes, with structure morphisms $\vphi:X\to S$ and $\psi:Y\to S$, and let
 $S'$ be an open subset of $S$ such that $\vphi(X)\subset S'$ and $\psi(Y)\subset S'$. Every product
 of the $S$-preschemes $X$ and $Y$ is then also a product of the $S'$-preschemes $X$ and $Y$, and
 conversely.
-\end{cor}
+\end{corollary}
 
 \oldpage[I]{106}
 It suffices to apply \sref{1.3.2.4} to the canonical injection $S'\to S$.
 
-\begin{thm}[3.2.6]
+\begin{theorem}[3.2.6]
 \label{1.3.2.6}
 Given $S$-preschemes $X$ and $Y$, there exists a product $X\times_S Y$.
-\end{thm}
+\end{theorem}
 
 The proof proceeds in several steps.
-
-\begin{lem}[3.2.6.1]
+\begin{lemma}[3.2.6.1]
 \label{1.3.2.6.1}
 Let $(Z,p,q)$ be a product of $X$ and $Y$, and $U$ and $V$ open subsets of $X$ and $Y$,
 respectively. If we let $W=p^{-1}(U)\cap q^{-1}(V)$, then the triple consisting of $W$ and
 the restrictions of $p$ and $q$ to $W$ \emph{(considered as the morphisms $W\to U$ and $W\to V$,
 respectively)} is a product of $U$ and $V$.
-\end{lem}
+\end{lemma}
 
 Indeed, if $T$ is an $S$-prescheme, then we can identify the $S$-morphisms $T\to W$ with the
 $S$-morphisms $T\to Z$ mapping $T$ to $W$. Then, if $g:T\to U$ and $h:T\to V$ are any two
@@ -128,7 +127,7 @@ $h=q\circ f$. Since $p(f(Y))\subset U$, $q(f(T))\subset V$, we have
 \]
 hence our claim.
 
-\begin{lem}[3.2.6.2]
+\begin{lemma}[3.2.6.2]
 \label{1.3.2.6.2}
 Let $Z$ be an $S$-prescheme, $p:Z\to X$ and $q:Z\to Y$ both $S$-morphisms, $(U_\alpha)$ an open
 cover of $X$, and $(V_\lambda)$ an open cover of $Y$. Suppose that, for each pair
@@ -136,7 +135,7 @@ $(\alpha,\lambda)$, the $S$-prescheme
 $W_{\alpha\lambda}=p^{-1}(U_\alpha)\cap q^{-1}(V_\lambda)$ and the restrictions of $p$ and
 $q$ to $W_{\alpha\lambda}$ form a product of $U_\alpha$ and $V_\lambda$. Then $(Z,p,q)$ is a
 product of $X$ and $Y$.
-\end{lem}
+\end{lemma}
 
 We first show that, if $f_1$ and $f_2$ are $S$-morphisms $T\to Z$, then the equations
 $p\circ f_1=p\circ f_2$ and $q\circ f_1=q\circ f_2$ imply that $f_1=f_2$. Indeed, $Z$ is the union
@@ -172,13 +171,13 @@ on $T_{\alpha\lambda}\cap T_{\beta\mu}$ and similarly for $q\circ f_{\alpha\lamb
 $q\circ f_{\beta\mu}$, we see that $f_{\alpha\lambda}$ and $f_{\beta\mu}$ coincide on
 $T_{\alpha\lambda}\cap T_{\beta\mu}$.
 
-\begin{lem}[3.2.6.3]
+\begin{lemma}[3.2.6.3]
 \label{1.3.2.6.3}
 \oldpage[I]{107}
 Let $(U_\alpha)$ be an open cover of $X$, $(V_\lambda)$ an open cover of $Y$, and suppose
 that, for each pair $(\alpha,\lambda)$, there exists a product of $U_\alpha$ and $V_\lambda$;
 then there exists a product of $X$ and $Y$.
-\end{lem}
+\end{lemma}
 
 Applying Lemma~\sref{1.3.2.6.1} to the open sets $U_\alpha\cap U_\beta$ and
 $V_\lambda\cap V_\mu$, we see that there exists a product of $S$-preschemes induced,
@@ -217,12 +216,12 @@ product then implies that $p_j^{-1}(U_\alpha)\cap q_j^{-1}(V_\lambda)=W_{ji}$. A
 have $Z_j\cap Z_i'=Z_j\cap Z_i$ for each $j$, hence $Z_i'=Z_i$. We then deduce from
 Lemma~\sref{1.3.2.6.2} that $(Z,p,q)$ is a product of $X$ and $Y$.
 
-\begin{lem}[3.2.6.4]
+\begin{lemma}[3.2.6.4]
 \label{1.3.2.6.4}
 Let $\vphi:X\to S$ and $\psi:Y\to S$ be the structure morphisms of $X$ and $Y$, $(S_i)$ an open
 cover of $S$, and let $X_i=\vphi^{-1}(S_i)$, $Y_i=\psi^{-1}(S_i)$. If each of the products
 $X_i\times_S Y_i$ exists, then $X\times_S Y$ exists.
-\end{lem}
+\end{lemma}
 
 According to Lemma~\sref{1.3.2.6.3}, everything follows from proving that the products
 $X_i\times_S Y_i$ exists for any $i$ and $j$. Set
@@ -247,7 +246,7 @@ above; but then the products $X_i\times_S Y_i$ also exist \sref{1.3.2.5}, theref
 $X\times_S Y$ exists similarly, by Lemma~\sref{1.3.2.6.4}.\qed
 \end{env}
 
-\begin{cor}[3.2.7]
+\begin{corollary}[3.2.7]
 \label{1.3.2.7}
 Let $Z=X\times_S Y$ be the product of two $S$-preschemes, $p$ and $q$ the projections from $Z$
 to $X$ and to $Y$ (respectively),and  $\vphi$ (resp. $\psi$) the structure morphism of $X$ (resp. $Y$). Let $S'$ be
@@ -257,7 +256,7 @@ identified with the prescheme induced on $Z$ by $p^{-1}(U)\cap q^{-1}(V)$ (consi
 $S'$-prescheme). In addition, if $f:T\to X$ and $g:T\to Y$ are $S$-morphisms such that
 $f(T)\subset U$ and $g(T)\subset V$, then the $S'$-morphism $(f,g)_{S'}$ can be identified with the
 restriction of $(f,g)_S$ to $p^{-1}(U)\cap q^{-1}(V)$.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-1.3.2.7}
@@ -313,7 +312,7 @@ category of $S$-preschemes: it suffices in fact to note that the diagram
 is commutative.
 \end{env}
 
-\begin{prop}[3.3.3]
+\begin{proposition}[3.3.3]
 \label{1.3.3.3}
 For each $S$-prescheme $X$, the first (resp. second) projection from
 $X\times_S S$ (resp. $S\times_S X$) is a functorial isomorphism from
@@ -324,7 +323,7 @@ isomorphism,
 \[
   X\times_S S=S\times_S X=X.
 \]
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.3.3}
@@ -334,12 +333,12 @@ necessarily the structure morphism $\psi:T\to S$. If $f$ is an $S$-morphism from
 $T$ to $X$, we necessarily have $\psi=\vphi\circ f$, hence our claim.
 \end{proof}
 
-\begin{cor}[3.3.4]
+\begin{corollary}[3.3.4]
 \label{1.3.3.4}
 Let $X$ and $Y$ be $S$-preschemes, with structure morphisms $\vphi:X\to S$ and $\psi:Y\to S$. If we canonically identify $X$ with $X\times_S S$, and $Y$
 with $S\times_S Y$, then the projections $X\times_S Y\to X$ and $X\times_S Y\to Y$
 are identified with $1_X\times\psi$ and $\vphi\times 1_Y$ (respectively).
-\end{cor}
+\end{corollary}
 
 The proof is immediate and is left to the reader.
 
@@ -399,13 +398,13 @@ product applied to the $S$-morphisms $f$ and $\psi:T\to S'$ (the structure
 morphism of $T$).
 \end{env}
 
-\begin{prop}[3.3.9]
+\begin{proposition}[3.3.9]
 \label{1.3.3.9}
 \emph{(``Transitivity of base change'')}. Let $S''$ be a prescheme, and
 $\vphi':S''\to S$ a morphism. For each $S$-prescheme $X$, there exists a
 canonical functorial isomorphism from the $S''$-prescheme
 $(X_{(\vphi)})_{(\vphi')}$ to the $S''$-prescheme $X_{(\vphi\circ\vphi')}$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.3.9}
@@ -432,26 +431,26 @@ mapping problem.
 
 This result can be written as the equality (up to a canonical isomorphism)
 $(X_{(S')})_{(S'')}=X_{(S'')}$ (if there is no chance of confusion), or also as
-\begin{equation*}
+\[
 \label{1.3.3.9.1}
   (X\times_S S')\times_{S'}S''=X\times_S S'';
   \tag{3.3.9.1}
-\end{equation*}
+\]
 the functorial nature of the isomorphism defined in \sref{1.3.3.9} can
 similarly be expressed by the transitivity formula for base change morphisms
-\begin{equation*}
+\[
 \label{1.3.3.9.2}
   (f_{(S')})_{(S'')}=f_{(S'')}
   \tag{3.3.9.2}
-\end{equation*}
+\]
 for each $S$-morphism $f:X\to Y$.
 
-\begin{cor}[3.3.10]
+\begin{corollary}[3.3.10]
 \label{1.3.3.10}
 If $X$ and $Y$ are $S$-preschemes, then there exists a canonical functorial
 isomorphism from the $S'$-prescheme $X_{(S')}\times_{S'}Y_{(S')}$ to the
 $S'$-prescheme $(X\times_S Y)_{(S')}$.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-1.3.3.10}
@@ -465,23 +464,23 @@ according to \sref{1.3.3.9.1} and the associativity of products of $S$-prescheme
 
 The functorial nature of the isomorphism defined in
 Corollary~\sref{1.3.3.10} can be expressed by the formula
-\begin{equation*}
+\[
 \label{1.3.3.10.1}
   (u_{(S')},v_{(S')})_{S'}=((u,v)_S)_{(S')}
   \tag{3.3.10.1}
-\end{equation*}
+\]
 for each pair of $S$-morphisms $u:T\to X$, $v:T\to Y$.
 
 In other words, the base change functor $X_{(S')}$ \emph{commutes with
 products}; it also commutes with sums \sref{1.3.2.8}.
 
-\begin{cor}[3.3.11]
+\begin{corollary}[3.3.11]
 \label{1.3.3.11}
 Let $Y$ be an $S$-prescheme, and $f:X\to Y$ a morphism which makes $X$ a
 $Y$-prescheme (and, as a result, also an $S$-prescheme). The prescheme $X_{(S')}$
 is then identified with the product $X\times_Y Y_{(S')}$, the projection
 $X\times_Y Y_{(S')}\to Y_{(S')}$ being identified with $f_{(S')}$.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-1.3.3.11}
@@ -554,7 +553,7 @@ it follows, in particular, from \sref{1.3.3.14} that the \emph{$X$-sections} of
 $X\otimes_\bb{Z}\bb{Z}[T]$ (where $T$ is an indeterminate)
 correspond bijectively with \emph{morphisms} $\bb{Z}[T]\to X$. We will show that these
 $X$-sections also correspond bijectively with \emph{sections of the structure
-sheaf $\OO_X$ over $X$}. Indeed, let $(U_\alpha)$ be a cover of $X$ by
+sheaf $\sh{O}_X$ over $X$}. Indeed, let $(U_\alpha)$ be a cover of $X$ by
 affine open subsets; let $u:X\to X\otimes_\bb{Z}\bb{Z}[T]$ be an $X$-morphism, and let
 $u_\alpha$ be its restriction to $U_\alpha$; if $A_\alpha$ is the ring of the
 affine scheme $U_\alpha$, then $U_\alpha\otimes_\bb{Z}\bb{Z}[T]$ is an affine
@@ -562,11 +561,11 @@ scheme of ring $A_\alpha[T]$ \sref{1.3.2.2}, and $u_\alpha$ canonically
 corresponds to an $A_\alpha$-homomorphism $A_\alpha[T]\to A_\alpha$
 \sref{1.1.7.3}. Now, since such a homomorphism is completely determined by the
 data of the image of $T$ in $A_\alpha$, let
-$s_\alpha\in A_\alpha=\Gamma(U_\alpha,\OO_X)$, and if we suppose that the
+$s_\alpha\in A_\alpha=\Gamma(U_\alpha,\sh{O}_X)$, and if we suppose that the
 restrictions of $u_\alpha$ and $u_\beta$ to an affine open subset
 $V\subset U_\alpha\cap U_\beta$ coincide, then we see immediately that
 $s_\alpha$ and $s_\beta$ coincide on $V$; thus the family $(s_\alpha)$ consists
-of the restrictions to $U_\alpha$ of a section $s$ of $\OO_X$ over $X$;
+of the restrictions to $U_\alpha$ of a section $s$ of $\sh{O}_X$ over $X$;
 conversely, it is clear that such a section defines a family $(u_\alpha)$ of
 morphisms which are the restrictions to $U_\alpha$ of an $X$-morphism
 $X\to X\otimes_\bb{Z}\bb{Z}[T]$. This result is generalized in
@@ -598,11 +597,11 @@ the product set $P\times Q$ consisting of the pairs $(p,q)$ such that $\vphi(p)=
 denote it by $P\times_R Q$. Definition~\sref{1.3.2.1} of the product
 of $S$-preschemes can be interpreted, with the notation of \sref{1.3.4.1},
 via the formula
-\begin{equation*}
+\[
 \label{1.3.4.2.1}
   (X\times_S Y)(T)=X(T)\times_{S(T)}Y(T).
   \tag{3.4.2.1}
-\end{equation*}
+\]
 the maps $X(T)\to S(T)$ and $Y(T)\to S(T)$ corresponding to the structure morphisms
 $X\to S$ and $Y\to S$.
 \end{env}
@@ -616,18 +615,18 @@ are the \emph{points} (or \emph{$S$-points}, when there is a possibility of conf
 \emph{of the $S$-prescheme $X$ with values in the $S$-prescheme $T$}. In particular, an
 \emph{$S$-section} of $X$ is none other than a \emph{point of $X$ with values in $S$}. The
 formula \sref{1.3.4.2.1} can then be written as
-\begin{equation*}
+\[
 \label{1.3.4.3.1}
   (X\times_S Y)(T)_S=X(T)_S\times Y(T)_S;
   \tag{3.4.3.1}
-\end{equation*}
+\]
 more generally, if $Z$ is an $S$-prescheme, and $X$, $Y$, and $T$ are $Z$-preschemes (thus
 \emph{ipso facto} $S$-preschemes), then we have
-\begin{equation*}
+\[
 \label{1.3.4.3.2}
   (X\times_Z Y)(T)_S=X(T)_S\times_{Z(T)_S}Y(T)_S.
   \tag{3.4.3.2}
-\end{equation*}
+\]
 
 We note that, to show that a triple $(W,r,s)$ consisting of an $S$-prescheme $W$ and
 $S$-morphisms $r:W\to X$ and $s:W\to Y$ is a product of $X$ and $Y$ (over $Z$), it suffices, by
@@ -658,7 +657,7 @@ set of points of the $A$-prescheme $X$ with values in the $A$-prescheme $T$.
 \label{1.3.4.5}
 Consider, in particular, the case where $T$ is of the form $\Spec(A)$, where $A$ is a
 \emph{local} ring; the elements of $X(A)$ then correspond bijectively to \emph{local}
-homomorphisms $\OO_x\to A$ for $x\in X$ \sref{1.2.2.4}; we say that the
+homomorphisms $\sh{O}_x\to A$ for $x\in X$ \sref{1.2.2.4}; we say that the
 point $x$ of the underlying space of $X$ is the \emph{location}\footnote{\emph{[Trans.] We also say that
 \emph{the geometric point lies over this $x$}.}} of the point of $X$ with values in $A$ to which it corresponds.
 
@@ -684,14 +683,14 @@ of $K$, then the geometric points of $X$ with values in $K'$ bijectively corresp
 $K'$-rational points of $X'=X_{(K')}$ \sref{1.3.3.14}.
 \end{env}
 
-\begin{lem}[3.4.6]
+\begin{lemma}[3.4.6]
 \label{1.3.4.6}
 Let $X_i$ ($1\leq i\leq n$) be $S$-preschemes, $s$ a point of $S$, and $x_i$
 ($1\leq i\leq n$) points of $X_i$ lying over $s$. Then there exists an extension
 $K$ of $\kres(s)$ and a geometric point of the product
 $Y=X_1\times_S X_2\times_S\cdots\times_S X_n$, with values in $K$, whose projections to
 the $X_i$ are localized at the $x_i$.
-\end{lem}
+\end{lemma}
 
 \begin{proof}
 \label{proof-1.3.4.6}
@@ -700,11 +699,11 @@ The compositions $\kres(s)\to\kres(x_i)\to K$ are all identical, and so the morp
 If $y$ is the corresponding point of $Y$, it is clear that its projection in each of the $X_i$ is $x_i$.
 \end{proof}
 
-\begin{prop}[3.4.7]
+\begin{proposition}[3.4.7]
 \label{1.3.4.7}
 Let $X_i$ ($1\leq i\leq n$) be $S$-preschemes, and, for each index $i$, let $x_i$ be a point of $X_i$.
 For there to exist a point $y$ of $Y=X_1\times_S X_2\times\ldots\times_S X_n$ whose image is $x_i$ under the $i$th projection for each $1\leq i\leq n$, it is necessary and sufficient that the $x_i$ all lie above the same point $s$ of $S$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.4.7}
@@ -713,14 +712,14 @@ The condition is evidently necessary; Lemma~\sref{1.3.4.6} proves that it is suf
 
 In other words, if we denote by $(X)$ the underlying set of $X$, we see that we have a canonical \emph{surjective} function $(X\times_S Y)\to(X)\times_{(S)}(Y)$; we must point out that this function \emph{is not injective} in general; in other words, \emph{there can exist multiple distinct points $z$ in $X\times_S Y$ that have the same projections $x\in X$ and $y\in Y$}; we have already seen this when $S$, $X$, and $Y$ are prime spectra of fields $k$, $K$, and $K'$ (respectively), since the tensor product $K\otimes_k K'$ has, in general, multiple distinct prime ideals (cf.~\sref{1.3.4.9}).
 
-\begin{cor}[3.4.8]
+\begin{corollary}[3.4.8]
 \label{1.3.4.8}
 Let $f:X\to Y$ be an $S$-morphism, and $f_{(S')}:X_{(S')}\to Y_{(S')}$ the $S'$-morphism induced by $f$ by an extension $S'\to S$ of the base prescheme.
 Let $p$ (\emph{resp. $q$}) be the projection $X_{(S')}\to X$ (\emph{resp. $Y_{(S')}\to Y$}); for every subset $M$ of $X$, we have
 \[
   q^{-1}(f(M))=f_{(S')}(p^{-1}(M)).
 \]
-\end{cor}
+\end{corollary}
 
 \oldpage[I]{114}
 \begin{proof}
@@ -738,11 +737,11 @@ By \sref{1.3.4.7}, the equation $q(y')=f(x)$ for $x\in M$ and $y'\in Y_{(S)}$ is
 \end{proof}
 
 Lemma~\sref{1.3.4.6} can be made clearer in the following manner:
-\begin{prop}[3.4.9]
+\begin{proposition}[3.4.9]
 \label{1.3.4.9}
 Let $X$ and $Y$ be $S$-preschemes, $x$ a point of $X$, and $y$ a point of $Y$, with both $x$ and $y$ lying above the same point $s\in S$.
 The set of points of $X\times_S Y$ with projections $x$ and $y$ is in bijective correspondence with the set of \unsure{types of extensions} composed of $\kres(x)$ and $\kres(y)$ considered as extensions of $\kres(s)$ \emph{(Bourbaki, \emph{Alg.}, chap.~VIII, \textsection8, prop.~2)}.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.4.9}
@@ -777,21 +776,21 @@ we see that, if the \emph{composition} of two morphisms has property $\textbf{P}
 \end{env}
 
 A first application of this remark is
-\begin{prop}[3.5.2]
+\begin{proposition}[3.5.2]
 \label{1.3.5.2}
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item If $f:X\to X'$ and $g:Y\to Y'$ are surjective $S$-morphisms, then $f\times_S g$ is surjective.
   \item If $f:X\to Y$ is a surjective $S$-morphism, then $f_{(S')}$ is surjective for every extension $S'$ of the base prescheme.
 \end{enumerate}
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.5.2}
 The composition of any two surjections being a surjection, it suffices to prove (ii); but this proposition follows immediately from \sref{1.3.4.8} applied to $M=X$.
 \end{proof}
 
-\begin{prop}[3.5.3]
+\begin{proposition}[3.5.3]
 \label{1.3.5.3}
 For a morphism $f:X\to Y$ to be surjective, it is necessary and sufficient that, for every field $K$ and every morphism $\Spec(K)\to Y$, there exist an extension $K'$ of $K$ and a morphism $\Spec(K')\to X$ that make the following diagram commute:
 \[
@@ -802,7 +801,7 @@ For a morphism $f:X\to Y$ to be surjective, it is necessary and sufficient that,
     \Spec(K).\ar[l]
   }
 \]
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-prof-1.3.5.3}
@@ -812,10 +811,10 @@ Conversely, suppose that $f$ is surjective, and let $y\in Y$ be the image of the
 
 With the language introduced in \sref{1.3.4.5}, we can say that \emph{every geometric point of $Y$ with values in $K$ comes from a geometric point of $X$ with values in an extension of $K$}.
 
-\begin{defn}[3.5.4]
+\begin{definition}[3.5.4]
 \label{1.3.5.4}
 We say that a morphism $f:X\to Y$ of preschemes is \emph{universally injective}, or a \emph{radicial morphism}, if, for every field $K$, the corresponding map $X(K)\to Y(K)$ is injective.
-\end{defn}
+\end{definition}
 
 It follows also from the definitions that every \emph{monomorphism of preschemes} (T,~1.1) is radicial.
 
@@ -835,28 +834,28 @@ commutes, where $\vphi$ and $\vphi'$ come from the morphism $\Spec(K')\to\Spec(K
 However, $\vphi$ is injective, and so too is $\alpha'$, by hypothesis; hence $\alpha$ is necessarily injective.
 \end{env}
 
-\begin{prop}[3.5.6]
+\begin{proposition}[3.5.6]
 \label{1.3.5.6}
 Let $f:X\to Y$ and $g:Y\to Z$ be two morphisms of preschemes.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item If $f$ and $g$ are radicial, then so is $g\circ f$.
   \item Conversely, if $g\circ f$ is radicial, then so is $f$.
 \end{enumerate}
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.5.6}
 Taking into account Definition~\sref{1.3.5.4}, the proposition reduces to the corresponding claims for the maps $X(K)\to Y(K)\to Z(K)$, and these claims are evident.
 \end{proof}
 
-\begin{prop}[3.5.7]
+\begin{proposition}[3.5.7]
 \label{1.3.5.7}
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item If the $S$-morphisms $f:X\to X'$ and $g:X\to X'$ are radicial, then so is $f\times_S g$.
   \item If the $S$-morphism $f:X\to Y$ is radicial, then so is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for every extension $S'\to S$ of the base prescheme.
 \end{enumerate}
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.5.7}
@@ -871,10 +870,10 @@ We have seen \sref{1.3.4.2.1} that
 with the map $(X\times_S Y)(K)\to(X'\times_S Y')(K)$ corresponding to $f\times_S g$ thus being identified with $(u,v)\to(f\circ u,g\circ v)$, and the proposition then follows.
 \end{proof}
 
-\begin{prop}[3.5.8]
+\begin{proposition}[3.5.8]
 \label{1.3.5.8}
 For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient for $\psi$ to be injective and for the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ to make $\kres(x)$ a radicial extension of $\kres(\psi(x))$ for every $x\in X$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.5.8}
@@ -884,21 +883,21 @@ We now consider $\kres(x)$ as the extension of $\kres(\psi(x))$ by means of $\th
 Conversely, taking \sref{1.2.4.6} into account, it is immediate that the conditions stated are sufficient for $f$ to be radicial.
 \end{proof}
 
-\begin{cor}[3.5.9]
+\begin{corollary}[3.5.9]
 \label{1.3.5.9}
 If $A$ is a ring, and $S$ is a multiplicative set of $A$, then the canonical morphism $\Spec(S^{-1}A)\to\Spec(A)$ is radicial.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-1.3.5.9}
 Indeed, this morphism is a monomorphism \sref{1.1.6.2}.
 \end{proof}
 
-\begin{cor}[3.5.10]
+\begin{corollary}[3.5.10]
 \label{1.3.5.10}
 Let $f:X\to Y$ be a radicial morphism, $g:Y'\to Y$ a morphism, and $X'=X_{(Y')}=X\times_Y Y'$.
 Then the radicial morphism $f_{(Y')}$ \sref{1.3.5.7}[ii] is a bijection from the underlying space of $X$ to $g^{-1}(f(X))$; further, for every field $K$, the set $X'(K)$ can be identified with the subset of $Y'(K)$ given by the inverse image of the map $Y'(K)\to Y(K)$ (corresponding to $g$) from the subset $X(K)$ of $Y(K)$.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-1.3.5.10}
@@ -913,27 +912,27 @@ The first claim follows from \sref{1.3.5.8} and \sref{1.3.4.8}; the second, from
 \]
 \end{proof}
 
-\begin{rmk}[3.5.11]
+\begin{remark}[3.5.11]
 \label{1.3.5.11}
 We say that a morphism $f=(\psi,\theta)$ of preschemes is \emph{injective} if the map $\psi$ is injective.
 For a morphism $f=(\psi,\theta):X\to Y$ to be radicial, it is necessary and sufficient that, for every morphism $Y'\to Y$, the morphism $f_{(Y')}:X_{(Y')}\to Y'$ be injective (which justifies the terminology of a \emph{universally injective} morphism).
 In fact, the condition is necessary by \sref{1.3.5.7}[ii] and \sref{1.3.5.8}.
 Conversely, the condition implies that $\psi$ is injective; if, for some $x\in X$, the monomorphism $\theta^x:\kres(\psi(x))\to\kres(x)$ were not radicial, then there would be an extension $K$ of $\kres(\psi(x))$, and two distinct morphisms $\Spec(K)\to X$ corresponding to the same morphism $\Spec(K)\to Y$ \sref{1.3.5.8}.
 But then, setting $Y'=\Spec(K)$, there would be two distinct $Y'$-sections of $X_{(Y')}$ \sref{1.3.3.14}, which contradicts the hypothesis that $f_{(Y')}$ is injective.
-\end{rmk}
+\end{remark}
 
 \subsection{Fibres}
 \label{subsection:1.3.6}
 
-\begin{prop}[3.6.1]
+\begin{proposition}[3.6.1]
 \label{1.3.6.1}
-Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, and $\mathfrak{a}_y$ an ideal of definition for $\OO_y$ for the $\mathfrak{m}_y$-preadic topology.
-Then the projection $p:X\times_Y\Spec(\OO_y/\mathfrak{a}_y)\to X$ is a homeomorphism from the underlying space of the prescheme $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ to the fibre $f^{-1}(y)$ equipped with the topology induced from that of the underlying space of $X$.
-\end{prop}
+Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, and $\mathfrak{a}_y$ an ideal of definition for $\sh{O}_y$ for the $\mathfrak{m}_y$-preadic topology.
+Then the projection $p:X\times_Y\Spec(\sh{O}_y/\mathfrak{a}_y)\to X$ is a homeomorphism from the underlying space of the prescheme $X\times_Y\Spec(\sh{O}_y/\mathfrak{a}_y)$ to the fibre $f^{-1}(y)$ equipped with the topology induced from that of the underlying space of $X$.
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.6.1}
-Since $\Spec(\OO_y/\mathfrak{a}_y)\to Y$ is radicial (\sref{1.3.5.4} and \sref{1.2.4.7}), since $\Spec(\OO_y/\mathfrak{a}_y)$ is a single point, and since the ideal $\mathfrak{m}_y/\mathfrak{a}_y$ is nilpotent by hypothesis \sref{1.1.1.12}, we already know (\sref{1.3.5.10} and \sref{1.3.3.4}) that $p$ identifies, as \emph{sets}, the underlying space of $X\times_Y\Spec(\OO_y/\mathfrak{a}_y)$ with $f^{-1}(y)$; everything reduces to proving that $p$ is a homeomorphism.
+Since $\Spec(\sh{O}_y/\mathfrak{a}_y)\to Y$ is radicial (\sref{1.3.5.4} and \sref{1.2.4.7}), since $\Spec(\sh{O}_y/\mathfrak{a}_y)$ is a single point, and since the ideal $\mathfrak{m}_y/\mathfrak{a}_y$ is nilpotent by hypothesis \sref{1.1.1.12}, we already know (\sref{1.3.5.10} and \sref{1.3.3.4}) that $p$ identifies, as \emph{sets}, the underlying space of $X\times_Y\Spec(\sh{O}_y/\mathfrak{a}_y)$ with $f^{-1}(y)$; everything reduces to proving that $p$ is a homeomorphism.
 By \sref{1.3.2.7}, the question is local on $X$ and $Y$, and so we can suppose that $X=\Spec(B)$ and $Y=\Spec(A)$, with $B$ being an $A$-algebra.
 The morphism $p$ then corresponds to the homomorphism $1\otimes\vphi:B\to B\otimes_A A'$, where $A'=A_y/\mathfrak{a}_y$ and $\vphi$ is the canonical map from $A$ to $A'$.
 Then every element of $B\otimes_A A'$ can be written as
@@ -946,7 +945,7 @@ where $s\not\in\mathfrak{j}_y$, and Proposition~\sref{1.1.2.4} applies.
 \begin{env}[3.6.2]
 \label{1.3.6.2}
 Throughout the rest of this treatise, whenever we consider a fibre $f^{-1}(y)$ of a morphism as having the structure of a $\kres(y)$-prescheme, \emph{it will always be the prescheme obtained by transporting the structure of $X\times_Y\Spec(\kres(y))$ by the projection to $X$}.
-We will also write this (latter) product as $X\times_Y\kres(y)$, or $X\otimes_{\OO_Y}\kres(y)$; more generally, if $B$ is an $\OO_y$-algebra, we will denote by $X\times_Y B$ or $X\otimes_{\OO_Y}B$ the product $X\times_Y\Spec(B)$.
+We will also write this (latter) product as $X\times_Y\kres(y)$, or $X\otimes_{\sh{O}_Y}\kres(y)$; more generally, if $B$ is an $\sh{O}_y$-algebra, we will denote by $X\times_Y B$ or $X\otimes_{\sh{O}_Y}B$ the product $X\times_Y\Spec(B)$.
 \end{env}
 
 With the preceding convention, it follows from \sref{1.3.5.10} that the points of $X$ with values in an extension $K$ of $\kres(y)$ are identified with the \emph{points of $f^{-1}(y)$ with values in $K$}.
@@ -960,12 +959,12 @@ Let $f:X\to Y$ and $g:Y\to Z$ be two morphisms, and $h=g\circ f$ their compositi
 In\oldpage[I]{118} particular, if $U$ is an open subset of $X$, then the prescheme induced on $U\cap f^{-1}(y)$ by the prescheme $f^{-1}(y)$ is isomorphic to $f^{-1}_U(y)$ ($f_U$ being the restriction of $f$ to $U$),
 \end{env}
 
-\begin{prop}[3.6.4]
+\begin{proposition}[3.6.4]
 \label{1.3.6.4}
 \emph{(Transitivity of fibres)}
 Let $f:X\to Y$ and $g:Y'\to Y$ be morphisms; let $X'=X\times_Y Y'=X_{(Y')}$ and $f'=f_{(Y')}:X'\to Y'$.
 For every $y'\in Y'$, if we let $y=g(y')$, then the prescheme $f'^{-1}(y')$ is isomorphic to $f^{-1}(y)\otimes_{\kres(y)}\kres(y')$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.6.4}
@@ -974,10 +973,10 @@ Indeed, it suffices to remark that the two preschemes $(X\otimes_Y\kres(y))\otim
 
 In particular, if $V$ is an open neighborhood of $y$ in $Y$, and we denote by $f_V$ the restriction of $f$ to the induced prescheme on $f^{-1}(V)$, then the preschemes $f^{-1}(y)$ and $f^{-1}_V(y)$ are canonically identified.
 
-\begin{prop}[3.6.5]
+\begin{proposition}[3.6.5]
 \label{1.3.6.5}
-Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, $Z$ the local prescheme $\Spec(\OO_y)$, and $p=(\psi,\theta)$ the projection $X\times_Y Z\to X$; then $p$ is a homeomorphism from the underlying space of $X\times_Y Z$ to the subspace $f^{-1}(Z)$ of $X$ (\emph{when the underlying space of $Z$ is identified with a subspace of $Y$, cf.~\sref{1.2.4.2}}), and, for all $t\in X\times_Y Z$, letting $z=\psi(t)$, we have that $\theta_t^\sharp$ is an isomorphism from $\OO_x$ to $\OO_t$.
-\end{prop}
+Let $f:X\to Y$ be a morphism, $y$ a point of $Y$, $Z$ the local prescheme $\Spec(\sh{O}_y)$, and $p=(\psi,\theta)$ the projection $X\times_Y Z\to X$; then $p$ is a homeomorphism from the underlying space of $X\times_Y Z$ to the subspace $f^{-1}(Z)$ of $X$ (\emph{when the underlying space of $Z$ is identified with a subspace of $Y$, cf.~\sref{1.2.4.2}}), and, for all $t\in X\times_Y Z$, letting $z=\psi(t)$, we have that $\theta_t^\sharp$ is an isomorphism from $\sh{O}_x$ to $\sh{O}_t$.
+\end{proposition}
 
 \begin{proof}
 \label{proof-1.3.6.5}

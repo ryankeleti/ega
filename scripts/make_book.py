@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # see README.md/COPYING.md.
 
 # get location of repo.

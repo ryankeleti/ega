@@ -9,13 +9,13 @@
 \begin{env}[1.1.1]
 \label{2.1.1.1}
 Let $S$ be a prescheme, $X$ an $S$-prescheme, and $f:X\to S$ its structure morphism.
-We know \sref[0]{0.4.2.4} that the direct image $f_*(\OO_X)$ is an $\OO_S$-algebra, which we
+We know \sref[0]{0.4.2.4} that the direct image $f_*(\sh{O}_X)$ is an $\sh{O}_S$-algebra, which we
 \oldpage[II]{6}
 denote $\sh{A}(X)$ when there is little chance of confusion; if $U$ is an open subset of $S$, then we have
 \[
   \sh{A}(f^{-1}(U))=\sh{A}(X)|U.
 \]
-Similarly, for every $\OO_X$-module $\sh{F}$ (resp. every $\OO_X$-algebra $\sh{B}$), we write $\sh{A}(\sh{F})$ (resp. $\sh{A}(\sh{B})$) for the direct image $f_*(\sh{F})$ (resp. $f_*(\sh{B})$) which is an $\sh{A}(X)$-module (resp. an $\sh{A}(X)$-algebra) and not only an $\OO_S$-module (resp. an $\OO_S$-algebra).
+Similarly, for every $\sh{O}_X$-module $\sh{F}$ (resp. every $\sh{O}_X$-algebra $\sh{B}$), we write $\sh{A}(\sh{F})$ (resp. $\sh{A}(\sh{B})$) for the direct image $f_*(\sh{F})$ (resp. $f_*(\sh{B})$) which is an $\sh{A}(X)$-module (resp. an $\sh{A}(X)$-algebra) and not only an $\sh{O}_S$-module (resp. an $\sh{O}_S$-algebra).
 \end{env}
 
 \begin{env}[1.1.2]
@@ -31,58 +31,58 @@ Let $Y$ be a second $S$-prescheme, $g:Y\to S$ its structure morphism, and $h:X\t
   \tag{1.1.2.1}
 \]
 
-We have by definition $h=(\psi,\theta)$, where $\theta:\OO_Y\to h_*(\OO_X)=\psi_*(\OO_X)$ is a homomorphism of sheaves of rings; we induce \sref[0]{0.4.2.2} a homomorphism of $\OO_S$-algebras $g_*(\theta):g_*(\OO_Y)\to g_*(h_*(\OO_X))=f_*(\OO_X)$, in other words, a homomorphism of $\OO_S$-algebras $\sh{A}(Y)\to\sh{A}(X)$, which we denote by $\sh{A}(h)$.
+We have by definition $h=(\psi,\theta)$, where $\theta:\sh{O}_Y\to h_*(\sh{O}_X)=\psi_*(\sh{O}_X)$ is a homomorphism of sheaves of rings; we induce \sref[0]{0.4.2.2} a homomorphism of $\sh{O}_S$-algebras $g_*(\theta):g_*(\sh{O}_Y)\to g_*(h_*(\sh{O}_X))=f_*(\sh{O}_X)$, in other words, a homomorphism of $\sh{O}_S$-algebras $\sh{A}(Y)\to\sh{A}(X)$, which we denote by $\sh{A}(h)$.
 If $h':Y\to Z$ is a second $S$-morphism, then it is immediate that $\sh{A}(h'\circ h)=\sh{A}(h)\circ\sh{A}(h')$.
-We have thus defined a \emph{contravariant functor $\sh{A}(X)$} from the category of $S$-preschemes to the category of $\OO_S$-algebras.
+We have thus defined a \emph{contravariant functor $\sh{A}(X)$} from the category of $S$-preschemes to the category of $\sh{O}_S$-algebras.
 
-Now let $\sh{F}$ be an $\OO_X$-module, $\sh{G}$ an $\OO_Y$-module, and $u:\sh{G}\to\sh{F}$ an $h$-morphism, that is \sref[0]{0.4.4.1} a homomorphism of $\OO_Y$-modules $\sh{G}\to h_*(\sh{F})$.
-Then $g_*(u):g_*(\sh{G})\to g_*(h_*(\sh{F}))=f_*(\sh{F})$ is a homomorphism $\sh{A}(\sh{G})\to\sh{A}(\sh{F})$ of $\OO_S$-modules, which we denote by $\sh{A}(u)$; in addition, the pair $(\sh{A}(h),\sh{A}(u))$ form a \emph{di-homomorphism} from the $\sh{A}(Y)$-module $\sh{A}(\sh{G})$ to the $\sh{A}(X)$-module $\sh{A}(\sh{F})$.
+Now let $\sh{F}$ be an $\sh{O}_X$-module, $\sh{G}$ an $\sh{O}_Y$-module, and $u:\sh{G}\to\sh{F}$ an $h$-morphism, that is \sref[0]{0.4.4.1} a homomorphism of $\sh{O}_Y$-modules $\sh{G}\to h_*(\sh{F})$.
+Then $g_*(u):g_*(\sh{G})\to g_*(h_*(\sh{F}))=f_*(\sh{F})$ is a homomorphism $\sh{A}(\sh{G})\to\sh{A}(\sh{F})$ of $\sh{O}_S$-modules, which we denote by $\sh{A}(u)$; in addition, the pair $(\sh{A}(h),\sh{A}(u))$ form a \emph{di-homomorphism} from the $\sh{A}(Y)$-module $\sh{A}(\sh{G})$ to the $\sh{A}(X)$-module $\sh{A}(\sh{F})$.
 \end{env}
 
 \begin{env}[1.1.3]
 \label{2.1.1.3}
-If we fix the prescheme $S$, then we can consider the pairs $(X,\sh{F})$, where $X$ is an $S$-prescheme and $\sh{F}$ is an $\OO_X$-module, as forming a \emph{category}, by defining a \emph{morphism} $(X,\sh{F})\to(Y,\sh{G})$ as a pair $(h,u)$, where $h:X\to Y$ is an $S$-morphism and $u:\sh{G}\to\sh{F}$ is an $h$-morphism.
-We can theen say that $(\sh{A}(X),\sh{A}(\sh{F}))$ is a \emph{contravariant functor} with values in the category whose objects are pairs consisting of an $\OO_S$-algebra and a module over that algebra, and the morphisms are the di-homomorphisms.
+If we fix the prescheme $S$, then we can consider the pairs $(X,\sh{F})$, where $X$ is an $S$-prescheme and $\sh{F}$ is an $\sh{O}_X$-module, as forming a \emph{category}, by defining a \emph{morphism} $(X,\sh{F})\to(Y,\sh{G})$ as a pair $(h,u)$, where $h:X\to Y$ is an $S$-morphism and $u:\sh{G}\to\sh{F}$ is an $h$-morphism.
+We can theen say that $(\sh{A}(X),\sh{A}(\sh{F}))$ is a \emph{contravariant functor} with values in the category whose objects are pairs consisting of an $\sh{O}_S$-algebra and a module over that algebra, and the morphisms are the di-homomorphisms.
 \end{env}
 
 \subsection{Affine preschemes over a prescheme}
 \label{subsection:2.1.2}
 
-\begin{defn}[1.2.1]
+\begin{definition}[1.2.1]
 \label{2.1.2.1}
 Let $X$ be an $S$-prescheme, $f:X\to S$ its structure morphism.
 We say that $X$ is \emph{affine over $S$} if there exists a cover $(S_\alpha)$ of $S$ by affine open sets such that for all $\alpha$, the induced prescheme on $X$ by the open set $f^{-1}(S_\alpha)$ is affine.
-\end{defn}
+\end{definition}
 
-\begin{exm}[1.2.2]
+\begin{example}[1.2.2]
 \label{2.1.2.2}
 Every closed subprescheme of $S$ is an affine $S$-prescheme over $S$ (\sref[I]{1.4.2.3} and \sref[I]{1.4.2.4}).
-\end{exm}
+\end{example}
 
-\begin{rmk}[1.2.3]
+\begin{remark}[1.2.3]
 \label{2.1.2.3}
 An affine prescheme $X$ over $S$ is not necessarily an affine scheme, as the example $X=S$ shows \sref{2.1.2.2}.
 On the other hand, if an affine scheme $X$ is an $S$-prescheme, then $X$ is not necessarily affine over
 \oldpage[II]{7}
 $S$ (see Example~\sref{2.1.3.3}).
 However, remember that if $S$ is a \emph{scheme}, then every $S$-prescheme which is an affine scheme is affine over $S$ \sref[I]{1.5.5.10}.
-\end{rmk}
+\end{remark}
 
-\begin{prop}[1.2.4]
+\begin{proposition}[1.2.4]
 \label{2.1.2.4}
 Every $S$-prescheme which is affine over $S$ is separated over $S$ (in other words, it is an $S$-scheme).
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-2.1.2.4}
 This follows immediately from \sref[I]{1.5.5.5} and \sref[I]{1.5.5.8}.
 \end{proof}
 
-\begin{prop}[1.2.5]
+\begin{proposition}[1.2.5]
 \label{2.1.2.5}
 Let $X$ be an $S$-scheme affine over $S$, $f:X\to S$ its structure morphism.
 For every open $U\subset S$, $f^{-1}(U)$ is affine over $U$.
-\end{prop}
+\end{proposition}
 
 
 

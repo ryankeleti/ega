@@ -4,11 +4,11 @@
 \subsection{Constructible sets}
 \label{subsection:0.9.1}
 
-\begin{defn}[9.1.1]
+\begin{definition}[9.1.1]
 \label{0.9.1.1}
 We say that a continuous map $f:X\to Y$ is \emph{quasi-compact} if for every quasi-compact open subset $U$ of $Y$, $f^{-1}(U)$ is quasi-compact.
 We say that a subset $Z$ of a topological space $X$ is \emph{retrocompact} in $X$ if the canonical injection $Z\to X$ is quasi-compact, in other words, if for every quasi-compact open subset $U$ of $X$, $U\cap Z$ is quasi-compact.
-\end{defn}
+\end{definition}
 
 A \emph{closed} subset of $X$ is retrocompact in $X$, but a quasi-compact subset of $X$ is not necessarily retrocompact in $X$.
 If $X$ is quasi-compact, every retrocompact open subset of $X$ is quasi-compact.
@@ -16,30 +16,30 @@ It is clear that every \emph{finite} union of retrocompact sets in $X$ is retroc
 Every finite intersection of retrocompact open sets in $X$ is a retrocompact open set in $X$.
 In a \emph{locally Noetherian} space $X$, every quasi-compact set is a Noetherian subspace, and as a result \emph{every subset} of $X$ is retrocompact in $X$.
 
-\begin{defn}[9.1.2]
+\begin{definition}[9.1.2]
 \label{0.9.1.2}
-Given a topological space $X$, we say that a subset of $X$ is \emph{constructible} if it belongs to the smallest set of subsets $\fk{F}$ of $X$ containing all the retrocompact open subsets of $\fk{F}$ and is stable under finite intersections and complements (which implies that $\fk{F}$ is also stable under finite unions).
-\end{defn}
+Given a topological space $X$, we say that a subset of $X$ is \emph{constructible} if it belongs to the smallest set of subsets $\mathfrak{F}$ of $X$ containing all the retrocompact open subsets of $\mathfrak{F}$ and is stable under finite intersections and complements (which implies that $\mathfrak{F}$ is also stable under finite unions).
+\end{definition}
 
-\begin{prop}[9.1.3]
+\begin{proposition}[9.1.3]
 \label{0.9.1.3}
 For a subset of $X$ to be constructible, it is necessary and sufficient for it to be a finite union of sets of the form $U\cap\complement{V}$, where $U$ and $V$ are retrocompact open sets in $X$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-0.9.1.3}
 It is clear that the condition is sufficient.
-To see that it is necessary, consider the set $\fk{G}$ of finite unions of sets of the form $U\cap\complement{V}$, where $U$ and $V$ are retrocompact open sets in $X$; it suffices to see that every complement of a set in $\fk{G}$ is in $\fk{G}$.
+To see that it is necessary, consider the set $\mathfrak{G}$ of finite unions of sets of the form $U\cap\complement{V}$, where $U$ and $V$ are retrocompact open sets in $X$; it suffices to see that every complement of a set in $\mathfrak{G}$ is in $\mathfrak{G}$.
 Let $Z=\bigcup_{i\in I}(U_i\cap\complement{V_i})$, where $I$ is finite, $U_i$ and $V_i$ retrocompact open sets in $X$; we have
 $\complement{Z}=\bigcap_{i\in I}(V_i\cup\complement{U_i})$, so $Z$ is a finite union of sets which are intersections of a certain number of the $V_i$ and of a certain number of the $\complement{U_i}$, thus of the form
 \oldpage[0\textsubscript{III}]{13}
 $V\cap\complement{U}$, where $U$ is the union of a certain number of the $U_i$ and $V$ is the intersection of a certain number of the $V_i$; but we have noted above that finite unions and intersections of retrocompact open sets in $X$ are retrocompact open sets in $X$, hence the conclusion.
 \end{proof}
 
-\begin{cor}[9.1.4]
+\begin{corollary}[9.1.4]
 \label{0.9.1.4}
 Every constructible subset of $X$ is retrocompact in $X$.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-0.9.1.4}
@@ -47,11 +47,11 @@ It suffices to show that if $U$ and $V$ are retrocompact open sets in $X$, then 
 \end{proof}
 
 In particular:
-\begin{cor}[9.1.5]
+\begin{corollary}[9.1.5]
 \label{0.9.1.5}
 For an open subset $U$ of $X$ to be constructible, it is necessary and sufficient for it to be retrocompact in $X$.
 For a closed subset $F$ of $X$ to be constructible, it is necessary and sufficient for the open set $\complement{F}$ to be retrocompact.
-\end{cor}
+\end{corollary}
 
 \begin{env}[9.1.6]
 \label{0.9.1.6}
@@ -59,19 +59,19 @@ An important case is when every quasi-compact open subset of $X$ is retrocompact
 When $X$ is also quasi-compact, this implies that the retrocompact open subsets of $X$ are identical to the quasi-compact open subsets of $X$, and the constructible subsets of $X$ are finite unions of sets of the form $U\cap\complement{V}$, where $U$ and $V$ are quasi-compact open sets.
 \end{env}
 
-\begin{cor}[9.1.7]
+\begin{corollary}[9.1.7]
 \label{0.9.1.7}
 For a subset of a Noetherian space to be constructible, it is necessary and sufficient for it to be a finite union of locally closed subsets of $X$.
-\end{cor}
+\end{corollary}
 
-\begin{prop}[9.1.8]
+\begin{proposition}[9.1.8]
 \label{0.9.1.8}
 Let $X$ be a topological space, $U$ an open subset of $X$.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item If $T$ is a constructible subset of $X$, then $T\cap U$ is a constructible subset of $U$.
   \item In addition, suppose that $U$ is retrocompact in $X$. For a subset $Z$ of $U$ to be constructible in $X$, it is necessary and sufficient for it to be constructible in $U$.
 \end{enumerate}
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-0.9.1.8}
@@ -84,11 +84,11 @@ Let $X$ be a topological space, $U$ an open subset of $X$.
 \end{enumerate}
 \end{proof}
 
-\begin{cor}[9.1.9]
+\begin{corollary}[9.1.9]
 \label{0.9.1.9}
 Let $X$ be a topological space, $(U_i)_{i\in I}$ a finite cover of $X$ by retrocompact open sets in $X$.
 For a subset $Z$ of $X$ to be constructible in $X$, it is necessary and sufficient for $Z\cap U_i$ to be constructible in $U_i$ for all $i\in I$.
-\end{cor}
+\end{corollary}
 
 \begin{env}[9.1.10]
 \label{0.9.1.10}
@@ -98,33 +98,33 @@ of $X$ admits a fundamental system of retrocompact open neighborhoods in $X$ (an
 Indeed, if this condition is satisfied, then there exists for every $x\in X$ an open neighborhood $V$ of $x$ which is \emph{retrocompact in $X$} and such that $V\cap Z$ is constructible in $V$, by the hypotheses on $X$ and by Proposition \sref{0.9.1.8}[i]; it then suffices to cover $X$ by a finite number of these neighborhoods and to apply Corollary \sref{0.9.1.9}.
 \end{env}
 
-\begin{defn}[9.1.11]
+\begin{definition}[9.1.11]
 \label{0.9.1.11}
 Let $X$ be a topological space.
 We say that a subset $T$ of $X$ is \emph{locally constructible} in $X$ if for every $x\in X$ there exists an open neighborhood $V$ of $x$ such that $T\cap V$ is constructible in $V$.
-\end{defn}
+\end{definition}
 
 It follows from Proposition \sref{0.9.1.8}[i] that if $V$ is such that $V\cap T$ is constructible in $V$, then for every open $W\subset V$, $W\cap T$ is constructible in $W$.
 If $T$ is locally constructible in $X$, then for every open set $U$ in $X$, $T\cap U$ is locally constructible in $U$, as a result of the above remark.
 The same remark shows that the set of locally constructible subsets of $X$ is stable under finite unions and finite intersections; on ther other hand, it is clear that it is also stabble under taking complements.
 
-\begin{prop}[9.1.12]
+\begin{proposition}[9.1.12]
 \label{0.9.1.12}
 Let $X$ be a topological space.
 Every constructible set in $X$ is locally constructible in $X$.
 The converse is true if $X$ is quasi-compact and if its topology admits a basis formed by the retrocompact sets in $X$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-0.9.1.12}
 The first assertion follows from Definition \sref{0.9.1.11} and the second from \sref{0.9.1.10}.
 \end{proof}
 
-\begin{cor}[9.1.13]
+\begin{corollary}[9.1.13]
 \label{0.9.1.13}
 Let $X$ be a topological space whose topology admits a basis formed by the retrocompact sets in $X$.
 Then every locally constructible subset $T$ of $X$ is retrocompact in $X$.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-0.9.1.13}
@@ -142,11 +142,11 @@ The inverse image of a constructible set in $X$ by a continuous map from a Noeth
 If $Y$ is a constructible subset of a Noetherian space $X$, then the subsets of $Y$ are constructible as subspaces of $Y$ and are identical to those which are constructible as subspaces of $X$.
 \end{env}
 
-\begin{prop}[9.2.2]
+\begin{proposition}[9.2.2]
 \label{0.9.2.2}
 Let $X$ be an irreducible Noetherian space, $E$ a constructible subset of $X$.
 For $E$ to be everywhere dense in $X$, it is necessary and sufficient for $E$ to contain a nonempty open subset of $X$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-0.9.2.2}
@@ -157,21 +157,21 @@ As a result, if $\overline{E}=X$, then $X$ is equal to one of the $F_i$, hence $
 
 When $X$ admits a generic point $x$ \sref[0]{0.2.1.2}, the condition of Proposition \sref{0.9.2.2} is equivalent to the relation $x\in E$.
 
-\begin{prop}[9.2.3]
+\begin{proposition}[9.2.3]
 \label{0.9.2.3}
 Let $X$ be a Noetherian space.
 For a subset $E$ of $X$ to be constructible, it is necessary and sufficient that, for every irreducible closed subset $Y$ of $X$, $E\cap Y$ is rare in $Y$ or contains a nonempty open subset of $Y$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-0.9.2.3}
 The necessity of the condition follows from the fact that $E\cap Y$ must be a constructible subset of $Y$ and from Proposition \sref{0.9.2.2}, since a nondense subset of $Y$ is necessarily rare in the irreducible space $Y$ \sref[0]]{0.2.1.1}.
-To prove that the condition is sufficient, apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\fk{F}$ of closed subsets $Y$ of $X$ such that $Y\cap E$ is constructible (relative to $Y$ or relative to $X$, which are equivalent): we can thus assume that for every closed subset $Y\neq X$ of $X$, $E\cap Y$ is constructible.
+To prove that the condition is sufficient, apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\mathfrak{F}$ of closed subsets $Y$ of $X$ such that $Y\cap E$ is constructible (relative to $Y$ or relative to $X$, which are equivalent): we can thus assume that for every closed subset $Y\neq X$ of $X$, $E\cap Y$ is constructible.
 First suppose that $X$ is not irreducible, and let $X_i$ ($1\leq i\leq m$) are its irreducible components, necessarily of finite number \sref[0]{0.2.2.5}; by hypothesis the $E\cap X_i$ are constructible, hence their union $E$ is as well.
 Suppose now that $X$ is irreducible; then by hypothesis, if $E$ is rare, then $\overline{E}\neq X$ and $E=E\cap\overline{E}$ is constructible; if $E$ contains a nonempty open subset $U$ of $X$, then it is the union of $U$ and $E\cap(X\setmin U)$; but $X\setmin U$ is a closed set distinct from $X$, so $E\cap(X\setmin U)$ is constructible; as a result, $E$ is itself constructible, which finishes the proof.
 \end{proof}
 
-\begin{cor}[9.2.4]
+\begin{corollary}[9.2.4]
 \label{0.9.2.4}
 Let $X$ be a Noetherian space, $(E_\alpha)$ an increasing filtered family of constructible subsets of $X$, such that
 \begin{enumerate}
@@ -182,11 +182,11 @@ Let $X$ be a Noetherian space, $(E_\alpha)$ an increasing filtered family of con
 Then there exists an index $\alpha$ such that $X=E_\alpha$.
 
 When every irreducible closed subset of $X$ admits a generic point, the hypothesis \emph{(1st)} can be omitted.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-0.9.2.4}
-We apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\fk{M}$ of closed subsets of $X$ contained in at least one of the $E_\alpha$; we can thus suppose that every closed subset $Y\neq X$ of $X$ is contained in one of the $E_\alpha$.
+We apply the principle of Noetherian induction \sref[0]{0.2.2.2} to the set $\mathfrak{M}$ of closed subsets of $X$ contained in at least one of the $E_\alpha$; we can thus suppose that every closed subset $Y\neq X$ of $X$ is contained in one of the $E_\alpha$.
 The proposition is evident if $X$ is not irreducible, because each of the irreducible components $X_i$ of $X$ ($1\leq i\leq m$) is contained in an $E_{\alpha_i}$, and there exists an $E_\alpha$ containing all of the $E_{\alpha_i}$.
 Now suppose that $X$ is irreducible.
 By hypothesis, there exists a $\beta$ such that $X=\overline{E_\beta}$, so \sref{0.9.2.2} $E_\beta$ contains a nonempty open subset $U$ of $X$.
@@ -196,25 +196,25 @@ When every irreducible closed subset $Y$ of $X$
 admits a generic point $y$, there exists $\alpha$ such that $y\in E_\alpha$, so $Y=\overline{\{y\}}\subset\overline{E_\alpha}$, and condition (2nd) is therefore a consequence of (1st).
 \end{proof}
 
-\begin{prop}[9.2.5]
+\begin{proposition}[9.2.5]
 \label{0.9.2.5}
 Let $X$ be a Noetherian space, $x$ a point of $X$, and $E$ a constructible subset of $X$.
 For $E$ to be a neighborhood of $x$, it is necessary and sufficient that for every irreducible closed subset $Y$ of $X$ containing $x$, $E\cap Y$ is dense in $Y$ (if there exists a generic point $y$ of $Y$, this also implies \sref{0.9.2.2} that $y\in E$).
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-0.9.2.5}
 The condition is evidently necessary; we will prove that it is sufficient.
-Applying the principle of Noetherian induction to the set $\fk{M}$ of closed subsets $Y$ of $X$ containing $x$ and such that $E\cap Y$ is a neighborhood of $x$ in $Y$, we can assume that every closed subset $Y\neq X$ of $X$ containing $x$ belongs to $\fk{M}$.
+Applying the principle of Noetherian induction to the set $\mathfrak{M}$ of closed subsets $Y$ of $X$ containing $x$ and such that $E\cap Y$ is a neighborhood of $x$ in $Y$, we can assume that every closed subset $Y\neq X$ of $X$ containing $x$ belongs to $\mathfrak{M}$.
 If $X$ is not irreducible, then each of the irreducible components $X_i$ of $X$ containing $x$ are distinct from $X$, hence $E\cap X_i$ is a neighborhood of $x$ with respect to $X_i$; as a result, $E$ is a neighborhood of $x$ in the union of the irreducible components of $X$ containing $x$, and as this union is a neighborhood of $x$ in $X$, so is $E$.
 If $X$ is irreducible, then $E$ is dense in $X$ by hypothesis, so it contains a nonempty open subset $U$ of $X$ \sref{0.9.2.2}; the proposition is then evident if $x\in U$; otherwise, $x$ is by hypothesis inside $E\cap(X\setmin U)$ with respect to $X\setmin U$, so the closure of $X\setmin E$ in $X$ does not contain $x$, and the complement of this closure is a neighborhood of $x$ contained in $E$, which finishes the proof.
 \end{proof}
 
-\begin{cor}[9.2.6]
+\begin{corollary}[9.2.6]
 \label{0.9.2.6}
 Let $X$ be a Noetherian space, $E$ a subset of $X$.
 For $E$ to be an open set in $X$, it is necessary and sufficient that for every irreducible closed subset $Y$ of $X$ intersecting $E$, $E\cap Y$ contains a nonempty open subset of $Y$.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-0.9.2.6}
@@ -225,51 +225,52 @@ In addition, Proposition \sref{0.9.2.5} shows that $E$ is then a neighborhood of
 \subsection{Constructible functions}
 \label{subsection:0.9.3}
 
-\begin{defn}[9.3.1]
+\begin{definition}[9.3.1]
 \label{0.9.3.1}
 Let $h$ be a map from a topological spacee $X$ to a set $T$.
 We say that $h$ is \emph{constructible} if $h^{-1}(t)$ is constructible for every $t\in T$, and empty except for finitely many values of $t$; then for every subset $S$ of $T$, $h^{-1}(S)$ is constructible.
 We say that $h$ is \emph{locally constructible} if every $x\in X$ has an open neighborhood $V$ such that $h|V$ is constructible.
-\end{defn}
+\end{definition}
 
 Every constructible function is locally constructible; the converse is true when $X$ is quasi-compact and admits a basis formed by the retrocompact open sets in $X$ (in particular, when $X$ is Noetherian).
 
-\begin{prop}[9.3.2]
+\begin{proposition}[9.3.2]
 \label{0.9.3.2}
 Let $h$ be a map from a Noetherian space $X$ to a set $T$.
 For $h$ to be constructible, it is necessary and sufficient that for every irreducible closed subset $Y$ of $X$, there exists a nonempty subset $U$ of $Y$, open relative to $Y$, in which $h$ is constant.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-0.9.3.2}
 The condition is necessary: indeed, by hypothesis, $h$ does not take finitely many values $t_i$ on $Y$, and each of the sets $h^{-1}(t_i)\cap Y$ is constructible in $Y$ \sref{0.9.2.1}; as they can not all be rare subsets of the space $Y$, at least one of them contains a nonempty open set \sref{0.9.2.3}.
 
 \oldpage[0\textsubscript{III}]{17}
-To see that the condition is sufficient, we apply the principle of Noetherian induction on the set $\fk{M}$ of closed subsets $Y$ of $X$ such that the restriction $h|Y$ is constructible; we can thus assume that for every closed subset $Y\neq X$ of $X$,
+To see that the condition is sufficient, we apply the principle of Noetherian induction on the set $\mathfrak{M}$ of closed subsets $Y$ of $X$ such that the restriction $h|Y$ is constructible; we can thus assume that for every closed subset $Y\neq X$ of $X$,
 $h|Y$ is constructible.
 If $X$ is not irreducible, then the restriction of $h$ to each of the (finitely many) irreducible components $X_i$ of $X$ is constructible, and it then follows immediately from Definition \sref{0.9.3.1} that $h$ is constructible.
 If $X$ is irreducible, then there exists by hypothesis a nonempty open subset $U$ of $X$ on which $h$ is constant; on the other hand, the restriction of $h$ to $X\setmin U$ is constructible by hypothesis, and it follows immediately that $h$ is constructible.
 \end{proof}
 
-\begin{cor}[9.3.3]
+\begin{corollary}[9.3.3]
 \label{0.9.3.3}
 Let $X$ be a Noetherian space in which every irreducible closed subset admits a generic point.
 If $h$ is a map from $X$ to a set $T$ such that, for every $t\in T$, $h^{-1}(t)$ is constructible, then $h$ is constructible.
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-0.9.3.3}
 If $Y$ is an irreducible closed subset of $X$ and $y$ its generic point, then $Y\cap h^{-1}(h(y))$ is constructible and contains $y$, hence \sref{0.9.2.2} this set contains a nonempty open subset of $Y$, and it suffices to apply Proposition \sref{0.9.3.2}.
 \end{proof}
 
-\begin{prop}[9.3.4]
+\begin{proposition}[9.3.4]
 \label{0.9.3.4}
 Let $X$ be a Noetherian space in which every irreducible closed subset admits a generic point, $h$ a constructible map from $X$ to an ordered set.
 For $h$ to be upper semi-continuous on $X$, it is necessary and sufficient that for every $x\in X$ and every specialization \sref[0]{0.2.1.2} $x'$ of $x$, we have $h(x')\leq h(x)$.
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-0.9.3.4}
 The function $h$ does not take a finite number of values; therefore, to say that it is upper semi-continuous means that for every $x\in X$, the set $E$ of the $y\in X$ such that $h(y)\leq h(x)$ is a neighborhood of $x$.
 By hypothesis, $E$ is a constructible subset of $X$; on the other hand,to say that an irreducible closed subset $Y$ of $X$ contains $x$ means that its generic point $y$ is a specialization of $x$; the conclusion then follows from Proposition \sref{0.9.2.5}.
 \end{proof}
+

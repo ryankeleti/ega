@@ -1,0 +1,41 @@
+\documentclass{book}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[all]{xy}
+\usepackage{enumerate}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{env}[theorem]{---}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{notation}[theorem]{Notation}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\input{preamble-base}
+
+\def\vphi{\varphi}
+\def\shHom{{\sh{H}\!\textit{om}}\!}   % sheaf Hom
+\def\shProj{{\sh{P}\!\textit{roj}}\!} % sheaf Proj
+\def\shExt{{\sh{E}\!\textit{xt}}\!}   % sheaf Ext
+
+% if unsure of a translation
+\def\unsure#1{#1 {(?)}}
+\def\completelyunsure{{(???)}}
+
+% use to mark where original page starts
+%\def\oldpage#1{{\ignorespaces}}
+\def\sectionbreak{\[***\]}
+
+% for referencing environments.
+%\def\sref#1{\ref{#1}}
+
