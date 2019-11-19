@@ -711,7 +711,7 @@ The proof proceeds in multiple steps.
   \item[(A)] We can first restrict to the case where $X$ is \emph{irreducible}.
     Indeed, in hypothesis~(a), $X$ is Noetherian, and so, in the two hypotheses, the irreducible components $X_i$ of $X$ are finite in number.
     If the theorem is shown to be true for each of the reduced closed preschemes of $X$ having the $X_i$ as their underlying spaces, and if $X'_i$ and $f_i:X'_i\to X_i$ are the prescheme and the morphism corresponding to $X_i$ (respectively), then the prescheme $X'$ given by the \emph{sum} of the $X'_i$, and the morphism $f:X'\to X$ whose restriction to each $X'_i$ is $j_i\circ f_i$ (where $j_i$ is the canonical injection $X_i\to X$) satisfy the conclusion of the theorem.
-    It is immediate that $X'$ is reduced if all of the $X'_i$ are; furthermore, we can satisfy (ii) by taking $U$ to be the union of the sets $U_i\cap C\left(\bigcup_{j\neq i}X_j\right)$.
+    It is immediate that $X'$ is reduced if all of the $X'_i$ are; furthermore, we can satisfy (ii) by taking $U$ to be the union of the sets $U_i\cap\complement\left(\bigcup_{j\neq i}X_j\right)$.
     Finally, since the $X'_i$ are quasi-projective over $S$, so is $X'$
 \oldpage[II]{107}
     \sref{2.5.3.6}; similarly, the morphisms $X'_i\to X$ are projective by \sref{2.5.5.5}[i] and \sref{2.5.5.5}[ii], and so $f$ is projective \sref{2.5.5.6}, and is clearly surjective, by definition.
@@ -810,7 +810,7 @@ The proof proceeds in multiple steps.
 \label{2.5.6.2}
 Suppose that one of the hypotheses, \emph{(a)} and \emph{(b)}, of \sref{2.5.6.1} is satisfied.
 For $X$ to be proper over $S$, it is necessary and sufficient for there to exist a projective scheme $X'$ over $S$, and a surjective $S-$morphism $f:X'\to X$ (which is thus projective, by \sref{2.5.5.5}[v]).
-Whenever this is the case, we can further choose $f$ to be such that there exists a dense open subset $U$ of $X$ for which the restriction of $f$ to $f^{-1}(U)$ is an isomorphism $f^{-1}\isoto U$, and for which $f^{-1}(U)$ is dense in $X'$.
+Whenever this is the case, we can further choose $f$ to be such that there exists a dense open subset $U$ of $X$ for which the restriction of $f$ to $f^{-1}(U)$ is an isomorphism $f^{-1}(U)\isoto U$, and for which $f^{-1}(U)$ is dense in $X'$.
 If in addition $X$ is irreducible (resp. reduced), then we can assume that $X'$ is also irreducible (resp. reduced); when $X$ and $X'$ are irreducible, $f$ is a birational morphism.
 \end{corollary}
 
