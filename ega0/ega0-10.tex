@@ -93,8 +93,8 @@ More specifically, if $\mathfrak{J}$ is then the \emph{maximal} ideal of $A$, we
 
 \begin{env}[10.2.3]
 \label{0.10.2.3}
-With the hypotheses on $A$, $B$, $\mathfrak{J}$, and $M$ from the start of \sref{0.10.2.2}, let $\wh{A}$ be the separated completion of $A$ for the $\mathfrak{J}$-preadic topology, and $\wh{M}$ the separated completion of $M$ for the $\mathfrak{J}B$-preadic topology.
-Then, for $M$ to be a flat $A$-module, it is necessary and sufficient for $\wh{M}$ to be a flat $\wh{A}$-module.
+With the hypotheses on $A$, $B$, $\mathfrak{J}$, and $M$ from the start of \sref{0.10.2.2}, let $\widehat{A}$ be the separated completion of $A$ for the $\mathfrak{J}$-preadic topology, and $\widehat{M}$ the separated completion of $M$ for the $\mathfrak{J}B$-preadic topology.
+Then, for $M$ to be a flat $A$-module, it is necessary and sufficient for $\widehat{M}$ to be a flat $\widehat{A}$-module.
 \end{env}
 
 \begin{env}[10.2.4]
@@ -130,8 +130,8 @@ Then $M$ is a flat $A$-module.
 \label{proof-0.10.2.6}
 We have to prove that, for every injective homomorphism $u:N'\to N$ of $A$-modules of finite type, $v=1\otimes u:M\otimes_A N'\to M\otimes_A N$ is injective.
 But $M\otimes_A N'$ and $M\otimes_A N$ are $B$-modules of finite type, and thus separated for the $\mathfrak{J}$-preadic topology \sref[0\textsubscript{I}]{0.7.3.5};
-it thus suffices to prove that the homomorphism $\wh{v}:\wh{M\otimes_A N'}\to\wh{M\otimes_A N}$ of the separated completions is injective.
-But $\wh{v}=\varprojlim v_n$, where $v_n$ is the homomorphism $1\otimes u:M_n\otimes_A N'\to M_n\otimes_A N$;
+it thus suffices to prove that the homomorphism $\widehat{v}:\widehat{M\otimes_A N'}\to\widehat{M\otimes_A N}$ of the separated completions is injective.
+But $\widehat{v}=\varprojlim v_n$, where $v_n$ is the homomorphism $1\otimes u:M_n\otimes_A N'\to M_n\otimes_A N$;
 since, by hypothesis, $M_n$ is $A$-flat, $v_n$ is injective for all $n$, and thus so too is $v$, because the functor $\varprojlim$ is left exact.
 \end{proof}
 
@@ -273,23 +273,23 @@ Finally, suppose further that the $A_\lambda$ are \emph{Noetherian};
 the $\mathfrak{m}_\lambda$-adic topologies are then separated \sref[0\textsubscript{I}]{0.7.3.5};
 we now show that, from this, it follows that the $\mathfrak{m}'$-adic topology on $A'$ is \emph{separated}.
 Indeed, if $x'\in A'$ belongs to all the $\mathfrak{m}^{'n}$ ($n\geq0$), then it is the image of some $x_\mu\in A_\mu$ for a specific index $\mu$, and since the inverse image in $A_\mu$ of $\mathfrak{m}^{'n}=\mathfrak{m}_\mu^n A'$ is $\mathfrak{m}_\mu^n$ \sref[0\textsubscript{I}]{0.6.6.1}, $x_\mu$ belongs to all the $\mathfrak{m}_\mu^n$, so $x_\mu=0$, by hypothesis, and so $x'=0$.
-Denote by $\wh{A}'$ the completion of $A'$ for the $\mathfrak{m}'$-adic topology;
-the above shows that we have $A'\subset\wh{A}'$.
-We will now show that $\wh{A}'$ is \emph{Noetherian} and \emph{$A_\lambda$-flat} for all $\lambda$;
+Denote by $\widehat{A}'$ the completion of $A'$ for the $\mathfrak{m}'$-adic topology;
+the above shows that we have $A'\subset\widehat{A}'$.
+We will now show that $\widehat{A}'$ is \emph{Noetherian} and \emph{$A_\lambda$-flat} for all $\lambda$;
 from this,
 \oldpage[0\textsubscript{III-1}]{22}
-it will follow that $\wh{A}'$ is $A'$-flat \sref[0\textsubscript{I}]{0.6.2.3}, and since $\mathfrak{m}'\wh{A}'\neq\wh{A}'$, that $\wh{A}'$ is a faithfully flat $A'$-module \sref[0\textsubscript{I}]{0.6.6.2}, whence the final conclusion that $A'$ is \emph{Noetherian} \sref[0\textsubscript{I}]{0.6.5.2}, which will finish the proof of the lemma.
+it will follow that $\widehat{A}'$ is $A'$-flat \sref[0\textsubscript{I}]{0.6.2.3}, and since $\mathfrak{m}'\widehat{A}'\neq\widehat{A}'$, that $\widehat{A}'$ is a faithfully flat $A'$-module \sref[0\textsubscript{I}]{0.6.6.2}, whence the final conclusion that $A'$ is \emph{Noetherian} \sref[0\textsubscript{I}]{0.6.5.2}, which will finish the proof of the lemma.
 
-We have $\wh{A}'=\varprojlim_n A'/\mathfrak{m}^{\prime n}$;
+We have $\widehat{A}'=\varprojlim_n A'/\mathfrak{m}^{\prime n}$;
 by the fact that $A'$ is $A_\lambda$-flat, we have that
 \[
   \mathfrak{m}^{\prime n}/\mathfrak{m}^{\prime n+1}=(\mathfrak{m}_\lambda^{n}/\mathfrak{m}_\lambda^{n+1})\otimes_{A_\lambda}A'=(\mathfrak{m}_\lambda^{n}/\mathfrak{m}_\lambda^{n+1})\otimes_{K_\lambda}(K_\lambda\otimes_{A_\lambda}A')=(\mathfrak{m}_\lambda^{n}/\mathfrak{m}_\lambda^{n+1})\otimes_{K_\lambda}K;
 \]
 since $\mathfrak{m}_\lambda^{n}/\mathfrak{m}_\lambda^{n+1}$ is a $K_\lambda$-vector space of finite dimension, $\mathfrak{m}_\lambda^{\prime n}/\mathfrak{m}_\lambda^{\prime n+1}$ is a $K$-vector space of finite dimension for all $n\geq 0$.
-It thus follows from \sref[0\textsubscript{I}]{0.7.2.12} and \sref[0\textsubscript{I}]{0.7.2.8} that $\wh{A}'$ is \emph{Noetherian}.
-We further know that the maximal ideal of $\wh{A}'$ is $\mathfrak{m}'A'$, and that $\wh{A}'/\mathfrak{m}^{\prime n}\wh{A}'$ is isomorphic to $A'/\mathfrak{m}^{\prime n}$;
+It thus follows from \sref[0\textsubscript{I}]{0.7.2.12} and \sref[0\textsubscript{I}]{0.7.2.8} that $\widehat{A}'$ is \emph{Noetherian}.
+We further know that the maximal ideal of $\widehat{A}'$ is $\mathfrak{m}'A'$, and that $\widehat{A}'/\mathfrak{m}^{\prime n}\widehat{A}'$ is isomorphic to $A'/\mathfrak{m}^{\prime n}$;
 since $A'/\mathfrak{m}^{\prime n}=(A_\lambda/\mathfrak{m}_\lambda^n)\otimes_{A_\lambda}A'$, we see that $A'/\mathfrak{m}^{\prime n}$ is a flat $(A_\lambda/\mathfrak{m}_\lambda^n)$-module \sref[0\textsubscript{I}]{0.6.2.1};
-criterion~\sref{0.10.2.2} is thus applicable to the Noetherian $A_\lambda$-algebra $\wh{A}'$, and shows that $\wh{A}'$ is \emph{$A_\lambda$-flat}.
+criterion~\sref{0.10.2.2} is thus applicable to the Noetherian $A_\lambda$-algebra $\widehat{A}'$, and shows that $\widehat{A}'$ is \emph{$A_\lambda$-flat}.
 \end{proof}
 
 \begin{env}[10.3.1.4]
@@ -330,7 +330,7 @@ We note that, by \sref{0.10.2.1}[c], we have a canonical isomorphism
   \tag{10.3.1.5}
 \]
 
-We can also replace $B$ by its $\mathfrak{J}B$-adic completion $\wh{B}$ without changing the conclusions of \sref{0.10.3.1}, because $\wh{B}$ is a flat $B$-module \sref[0\textsubscript{I}]{0.7.3.3}, and thus a flat $A$-module \sref[0\textsubscript{I}]{0.6.2.1}.
+We can also replace $B$ by its $\mathfrak{J}B$-adic completion $\widehat{B}$ without changing the conclusions of \sref{0.10.3.1}, because $\widehat{B}$ is a flat $B$-module \sref[0\textsubscript{I}]{0.7.3.3}, and thus a flat $A$-module \sref[0\textsubscript{I}]{0.6.2.1}.
 
 We have also shown the following:
 \begin{corollary}[10.3.2]

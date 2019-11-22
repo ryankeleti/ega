@@ -34,11 +34,11 @@ of $0$}.
 \begin{lemma}[7.1.3]
 \label{0.7.1.3}
 Let $A$ be a linearly topologized ring.
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item For $x\in A$ to be topologically nilpotent, it is necessary and sufficient that for
+\begin{enumerate}
+  \item[{\rm(i)}] For $x\in A$ to be topologically nilpotent, it is necessary and sufficient that for
     each open ideal $\mathfrak{J}$ of $A$, the canonical image of $x$ in $A/\mathfrak{J}$ is
     nilpotent. The set $\mathfrak{T}$ of topologically nilpotent elements of $A$ is an ideal.
-  \item Suppose that in addition $A$ is preadmissible, and let $\mathfrak{J}$ be an ideal
+  \item[{\rm(ii)}] Suppose that in addition $A$ is preadmissible, and let $\mathfrak{J}$ be an ideal
     of definition for $A$. For $x\in A$ to be topologically nilpotent, it is necessary and
     sufficient that its canonical image in $A/\mathfrak{J}$ is nilpotent; the ideal
     $\mathfrak{T}$ is the inverse image of the nilradical of $A/\mathfrak{J}$ and is thus open.
@@ -56,11 +56,11 @@ $x^{mq}\in V$ for $q\geq n$, so $x$ is topologically nilpotent.
 \begin{proposition}[7.1.4]
 \label{0.7.1.4}
 Let $A$ be a preadmissible ring, $\mathfrak{J}$ an ideal of definition for $A$.
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item For an ideal $\mathfrak{J}'$ of $A$ to be contained in an ideal of
+\begin{enumerate}
+  \item[{\rm(i)}] For an ideal $\mathfrak{J}'$ of $A$ to be contained in an ideal of
     definition, it is necessary and sufficient that there exists an integer
     $n>0$ such that ${\mathfrak{J}'}^n\subset\mathfrak{J}$.
-  \item For an $x\in A$ to be contained in an ideal of definition, it is
+  \item[{\rm(ii)}] For an $x\in A$ to be contained in an ideal of definition, it is
     necessary and sufficient that it is topologically nilpotent.
 \end{enumerate}
 \end{proposition}
@@ -68,11 +68,11 @@ Let $A$ be a preadmissible ring, $\mathfrak{J}$ an ideal of definition for $A$.
 \begin{proof}
 \label{proof-0.7.1.4}
 \medskip\noindent
-\begin{enumerate}[label=(\roman*)]
-  \item If ${\mathfrak{J}'}^n\subset\mathfrak{J}$, then for each open neighborhood
+\begin{enumerate}
+  \item[(i)] If ${\mathfrak{J}'}^n\subset\mathfrak{J}$, then for each open neighborhood
     $V$ of $0$ in $A$, there exists an $m$ such that $\mathfrak{J}^m\subset V$, thus
     ${\mathfrak{J}'}^{mn}\subset V$.
-  \item The condition is evidently necessary; it is sufficient, since if it
+  \item[(ii)] The condition is evidently necessary; it is sufficient, since if it
     satisfied, then there exists an $n$ such that $x^n\in\mathfrak{J}$, so
     $\mathfrak{J}'=\mathfrak{J}+Ax$ is an ideal of definition, because it is
     open, and ${\mathfrak{J}'}^n\subset\mathfrak{J}$.
@@ -247,16 +247,16 @@ having for a fundamental system of neighborhoods of $0$ the powers
 $\mathfrak{J}^n$ ($n>0$); we call again this the \emph{$\mathfrak{J}$-preadic}
 topology. The hypothesis that $A$ is admissible implies that
 $\bigcup_n\mathfrak{J}^n=0$, therefore the $\mathfrak{J}$-preadic topology on
-$A$ is \emph{separated}; let $\wh{A}=\varprojlim A/\mathfrak{J}^n$ be the
+$A$ is \emph{separated}; let $\widehat{A}=\varprojlim A/\mathfrak{J}^n$ be the
 completion of $A$ for this topology (where the $A/\mathfrak{J}^n$ are equipped
 with the discrete topology), and denote by $u$ the (not necessarily continuous)
-ring homomorphism $A\to\wh{A}$, the projective limit of the sequence of
+ring homomorphism $A\to\widehat{A}$, the projective limit of the sequence of
 homomorphisms $u_n:A\to A/\mathfrak{J}^n$. On the other hand, the
 $\mathfrak{J}$-preadic topology on $A$ is finer than the given topology
 $\mathcal{T}$ on $A$; as $A$ is separated and complete for $\mathcal{T}$, we can
 extend by continuity the identity map of $A$ (equipped with the
 $\mathfrak{J}$-preadic topology) to $A$ equipped with $\mathcal{T}$; this
-gives a continuous representation $v:\wh{A}\to A$.
+gives a continuous representation $v:\widehat{A}\to A$.
 \end{env}
 
 \begin{proposition}[7.2.4]
@@ -270,13 +270,13 @@ $\mathfrak{J}$-preadic topology.
 \label{proof-0.7.2.4}
 With the notation of \sref{0.7.2.3}, it is immediate that
 $v\circ u$ is the identity map of $A$. On the other hand,
-$u_n\circ v:\wh{A}\to A/\mathfrak{J}^n$ is the extension by continuity (for
+$u_n\circ v:\widehat{A}\to A/\mathfrak{J}^n$ is the extension by continuity (for
 the $\mathfrak{J}$-preadic topology on $A$ and the discrete topology on
 $A/\mathfrak{J}^n$) of the canonical map $u_n$; in other words, it is the
-canonical map from $\wh{A}=\varprojlim_k A/\mathfrak{J}^k$ to
+canonical map from $\widehat{A}=\varprojlim_k A/\mathfrak{J}^k$ to
 $A/\mathfrak{J}^n$; $u\circ v$ is therefore the projective limit of this
 sequence of maps, which is by definition the identity map of
-$\wh{A}$; this proves the proposition.
+$\widehat{A}$; this proves the proposition.
 \end{proof}
 
 \begin{corollary}[7.2.5]
@@ -316,20 +316,20 @@ indeterminates), which finishes the proof.
 Let $(A_i,u_{ij})$ be a projective system $(i\in\bb{N})$ of discrete rings, and
 for each integer $i$, let $\mathfrak{J}_i$ be the kernel in $A_i$ of the
 homomorphism $u_{0i}:A_i\to A_0$. We suppose that:
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item For $i\leq j$, $u_{ij}$ is surjective and its kernel is $\mathfrak{J}_j^{i+1}$
+\begin{enumerate}
+  \item[{\rm(a)}] For $i\leq j$, $u_{ij}$ is surjective and its kernel is $\mathfrak{J}_j^{i+1}$
     \emph{(therefore $A_i$ is isomorphic to $A_j/\mathfrak{J}_j^{i+1}$)}.
-  \item $\mathfrak{J}_1/\mathfrak{J}_1^2$ ($=\mathfrak{J}_1$) is a module of
+  \item[{\rm(b)}] $\mathfrak{J}_1/\mathfrak{J}_1^2$ ($=\mathfrak{J}_1$) is a module of
     finite type over $A_0=A_1/\mathfrak{J}_1$.
 \end{enumerate}
 Let $A=\varprojlim_i A_i$, and for each integer $n\geq 0$, let $u_n$ be the
 canonical homomorphism $A\to A_n$, and let $\mathfrak{J}^{(n+1)}\subset A$ be
 its kernel. Then we have these conditions:
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item $A$ is an adic ring, having $\mathfrak{J}=\mathfrak{J}^{(1)}$ for an
+\begin{enumerate}
+  \item[{\rm(i)}] $A$ is an adic ring, having $\mathfrak{J}=\mathfrak{J}^{(1)}$ for an
     ideal of definition.
-  \item We have $\mathfrak{J}^{(n)}=\mathfrak{J}^n$ for each $n\geq 1$.
-  \item $\mathfrak{J}/\mathfrak{J}^2$ is isomorphic to
+  \item[{\rm(ii)}] We have $\mathfrak{J}^{(n)}=\mathfrak{J}^n$ for each $n\geq 1$.
+  \item[{\rm(iii)}] $\mathfrak{J}/\mathfrak{J}^2$ is isomorphic to
     $\mathfrak{J}_1=\mathfrak{J}_1/\mathfrak{J}_1^2$, and as a result is a module of finite type
     over $A_0=A/\mathfrak{J}$.
 \end{enumerate}
@@ -477,8 +477,8 @@ $N/\mathfrak{J}^n N$.
 \begin{env}[7.3.1]
 \label{0.7.3.1}
 Let $A$ be a ring, $\mathfrak{J}$ an ideal of $A$, and $M$ an $A$-module; we denote by
-$\wh{A}=\varprojlim_n A/\mathfrak{J}^n$
-(resp. $\wh{M}=\varprojlim_n M/\mathfrak{J}^n M$) the separated completion of $A$
+$\widehat{A}=\varprojlim_n A/\mathfrak{J}^n$
+(resp. $\widehat{M}=\varprojlim_n M/\mathfrak{J}^n M$) the separated completion of $A$
 (resp. $M$) for the $\mathfrak{J}$-preadic topology. Let
 $M'\xrightarrow{u}M\xrightarrow{v}M''\to 0$ be an exact sequence of $A$-modules; as
 $M/\mathfrak{J}^n M=M\otimes_A(A/\mathfrak{J}^n)$, the sequence
@@ -487,15 +487,15 @@ $M/\mathfrak{J}^n M=M\otimes_A(A/\mathfrak{J}^n)$, the sequence
 \]
 is exact for each $n$. In addition, as
 $v(\mathfrak{J}^n M)=\mathfrak{J}^n v(M)=\mathfrak{J}^n M''$,
-$\wh{v}=\varprojlim v_n$ is surjective (Bourbaki, \emph{Top. g\'en.}, Chap.~IX,
+$\widehat{v}=\varprojlim v_n$ is surjective (Bourbaki, \emph{Top. g\'en.}, Chap.~IX,
 2nd ed., p.~60, Cor.~2). On the other hand, if $z=(z_k)$ is an element of the kernel of
-$\wh{v}$, then for each integer $k$, there exists a $z_k'\in M'/\mathfrak{J}^k M'$
-such that $u_k(z_k')=z_k$; we conclude that there exists  a $z'=(z_n')\in\wh{M'}$
-such that the first $k$ components of $\wh{u}(z')$ coincide with the $z$; in other
-words, the image of $\wh{M'}$ under $\wh{u}$ is \emph{dense} in the kernel of
-$\wh{v}$.
+$\widehat{v}$, then for each integer $k$, there exists a $z_k'\in M'/\mathfrak{J}^k M'$
+such that $u_k(z_k')=z_k$; we conclude that there exists  a $z'=(z_n')\in\widehat{M'}$
+such that the first $k$ components of $\widehat{u}(z')$ coincide with the $z$; in other
+words, the image of $\widehat{M'}$ under $\widehat{u}$ is \emph{dense} in the kernel of
+$\widehat{v}$.
 
-If we suppose that $A$ is \emph{Noetherian}, then so is $\wh{A}$, according to
+If we suppose that $A$ is \emph{Noetherian}, then so is $\widehat{A}$, according to
 \sref{0.7.2.12}, $\mathfrak{J}/\mathfrak{J}^2$ is then an $A$-module of
 finite type. In addition, we have the following theorem.
 \end{env}
@@ -524,40 +524,40 @@ For the proof, see \cite[p.~2--04]{I-1}.
 \begin{corollary}[7.3.3]
 \label{0.7.3.3}
 Under the hypotheses of \sref{0.7.3.2}, the canonical map
-$M\otimes_A\wh{A}\to\wh{M}$ is bijective, and the functor $M\otimes_A\wh{A}$
+$M\otimes_A\widehat{A}\to\widehat{M}$ is bijective, and the functor $M\otimes_A\widehat{A}$
 is exact in $M$ on the category of $A$-modules of finite type; as a result, the separated
-$\mathfrak{J}$-adic completion $\wh{A}$ is a flat $A$-module
+$\mathfrak{J}$-adic completion $\widehat{A}$ is a flat $A$-module
 \sref{0.6.1.1}.
 \end{corollary}
 
 \begin{proof}
 \label{proof-0.7.3.3}
-We first note that $\wh{M}$ is an \emph{exact} functor in $M$ on the category of
+We first note that $\widehat{M}$ is an \emph{exact} functor in $M$ on the category of
 $A$-modules of finite type. Indeed, let $0\to M'\xrightarrow{u}M\xrightarrow{v}M''\to 0$ be
-an exact sequence; we have seen that $\wh{v}:\wh{M}\to\wh{M''}$ is surjective
+an exact sequence; we have seen that $\widehat{v}:\widehat{M}\to\widehat{M''}$ is surjective
 \sref{0.7.3.1}; on the other hand, if $i$ is the canonical homomorphism
-$M\to\wh{M}$, it follows from Krull's Theorem \sref{0.7.3.2} that the
-closure of $i(u(M'))$ in $\wh{M}$ identifies with the separated completion of $M'$ for
-the $\mathfrak{J}$-preadic topology; thus $\wh{u}$ is injective, and according to
-\sref{0.7.3.1}, the image of $\wh{u}$ is equal to the kernel of
-$\wh{v}$.
+$M\to\widehat{M}$, it follows from Krull's Theorem \sref{0.7.3.2} that the
+closure of $i(u(M'))$ in $\widehat{M}$ identifies with the separated completion of $M'$ for
+the $\mathfrak{J}$-preadic topology; thus $\widehat{u}$ is injective, and according to
+\sref{0.7.3.1}, the image of $\widehat{u}$ is equal to the kernel of
+$\widehat{v}$.
 
-This being so, the canonical map $M\otimes_A\wh{A}\to\wh{M}$ is obtained by passing
+This being so, the canonical map $M\otimes_A\widehat{A}\to\widehat{M}$ is obtained by passing
 to the projective limit of the maps
-$M\otimes_A\wh{A}\to M\otimes_A(A/\mathfrak{J}^n)=M/\mathfrak{J}^n M$. It is clear that
+$M\otimes_A\widehat{A}\to M\otimes_A(A/\mathfrak{J}^n)=M/\mathfrak{J}^n M$. It is clear that
 this map is bijective when $M$ is of the form $A^p$. If $M$ is an $A$-module of finite type,
 then we have an exact sequence $A^p\to A^q\to M\to 0$, hence, by virtue of the \emph{right}
-exactness of the functors $M\otimes_A\wh{A}$ and $\wh{M}$ (in $M$) on the category
+exactness of the functors $M\otimes_A\widehat{A}$ and $\widehat{M}$ (in $M$) on the category
 of $A$-modules of finite type, we have the commutative diagram
 \[
   \xymatrix{
-    A^p\otimes_A\wh{A}\ar[r]\ar[d] &
-    A^q\otimes_A\wh{A}\ar[r]\ar[d] &
-    M\otimes_A\wh{A}\ar[r]\ar[d] &
+    A^p\otimes_A\widehat{A}\ar[r]\ar[d] &
+    A^q\otimes_A\widehat{A}\ar[r]\ar[d] &
+    M\otimes_A\widehat{A}\ar[r]\ar[d] &
     0\\
-    \wh{A^p}\ar[r] &
-    \wh{A^q}\ar[r] &
-    \wh{M}\ar[r] &
+    \widehat{A^p}\ar[r] &
+    \widehat{A^q}\ar[r] &
+    \widehat{M}\ar[r] &
     0,
   }
 \]
@@ -570,33 +570,32 @@ immediately finishes the proof.
 Let $A$ be a Noetherian ring, $\mathfrak{J}$ an ideal of $A$, $M$ and $N$ two $A$-modules of
 finite type; we have the canonical functorial isomorphisms
 \[
-  (M\otimes_A N)^\wedge\isoto\wh{M}\otimes_\wh{A}\wh{N},\ (\Hom_A(M,N))^\wedge\isoto\Hom_\wh{A}(\wh{M},\wh{N}).
+  (M\otimes_A N)^\wedge\isoto\widehat{M}\otimes_{\widehat{A}}\widehat{N},\ (\Hom_A(M,N))^\wedge\isoto\Hom_{\widehat{A}}(\widehat{M},\widehat{N}).
 \]
 \end{corollary}
 
 \begin{proof}
 \label{proof-0.7.3.4}
-This follows from Corollary \sref{0.7.3.3}, \sref{0.6.2.1},
-and \sref{0.6.2.2}.
+This follows from Corollary \sref{0.7.3.3}, \sref{0.6.2.1}, and \sref{0.6.2.2}.
 \end{proof}
 
 \begin{corollary}[7.3.5]
 \label{0.7.3.5}
 Let $A$ be a Noetherian ring, $\mathfrak{J}$ an ideal of $A$. The following conditions are
 equivalent:
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item $\mathfrak{J}$ is contained in the radical of $A$.
-  \item $\wh{A}$ is a faithfully flat $A$-module \sref{0.6.4.1}.
-  \item Each $A$-module of finite type is separated for the $\mathfrak{J}$-preadic topology.
-  \item Each submodule of an $A$-module of finite type is closed for the $\mathfrak{J}$-preadic topology.
+\begin{enumerate}
+  \item[{\rm(a)}] $\mathfrak{J}$ is contained in the radical of $A$.
+  \item[{\rm(b)}] $\widehat{A}$ is a faithfully flat $A$-module \sref{0.6.4.1}.
+  \item[{\rm(c)}] Each $A$-module of finite type is separated for the $\mathfrak{J}$-preadic topology.
+  \item[{\rm(d)}] Each submodule of an $A$-module of finite type is closed for the $\mathfrak{J}$-preadic topology.
 \end{enumerate}
 \end{corollary}
 
 \begin{proof}
 \label{proof-0.7.3.5}
-As $\wh{A}$ is a flat $A$-module, the conditions (b) and (c) are equivalent, since
+As $\widehat{A}$ is a flat $A$-module, the conditions (b) and (c) are equivalent, since
 (b) is equivalent to saying that if $M$ is an $A$-module of finite type, then the canonical
-map $M\to\wh{M}=M\otimes_A\wh{A}$ is injective \sref{0.6.6.1}[c].
+map $M\to\widehat{M}=M\otimes_A\widehat{A}$ is injective \sref{0.6.6.1}[c].
 It is immediate that (c) implies (d), since if $N$ is a submodule of an $A$-module $M$ of
 finite type, then $M/N$ is separated for the $\mathfrak{J}$-preadic topology, so $N$ is
 closed in $M$. We show that (d) implies (a): if $\mathfrak{m}$ is a maximal ideal of $A$,
@@ -625,7 +624,7 @@ is separated and complete for the $\mathfrak{J}$-preadic topology.
 
 \begin{proof}
 \label{proof-0.7.3.6}
-As we then have $\wh{A}=A$, this follows immediately from
+As we then have $\widehat{A}=A$, this follows immediately from
 Corollary \sref{0.7.3.3}.
 \end{proof}
 
@@ -635,7 +634,7 @@ We conclude that Proposition \sref{0.7.2.9} gives the description of
 \begin{corollary}[7.3.7]
 \label{0.7.3.7}
 Under the hypotheses of \sref{0.7.3.2}, the kernel of the canonical map
-$M\to\wh{M}=M\otimes_A\wh{A}$ is the set of the $x\in M$ killed by an element of
+$M\to\widehat{M}=M\otimes_A\widehat{A}$ is the set of the $x\in M$ killed by an element of
 $1+\mathfrak{J}$.
 \end{corollary}
 
@@ -657,16 +656,16 @@ is quasi-finite (over $A$) if $M/\mathfrak{m}M$ is of finite rank over the resid
 $k=A/\mathfrak{m}$.
 \end{definition}
 
-When $A$ is \emph{Noetherian}, the separated completion $\wh{M}$ of $M$ for the
-$\mathfrak{m}$-preadic topology is then an \emph{$\wh{A}$-module of finite type};
+When $A$ is \emph{Noetherian}, the separated completion $\widehat{M}$ of $M$ for the
+$\mathfrak{m}$-preadic topology is then an \emph{$\widehat{A}$-module of finite type};
 indeed, as $\mathfrak{m}/\mathfrak{m}^2$ is then an $A$-module of finite type, this follows
 from Example \sref{0.7.2.12} and from the hypothesis on $M/\mathfrak{m}M$.
 
 In particular, if we suppose that in addition $A$ is \emph{complete} and $M$ is
 \emph{separated} for the $\mathfrak{m}$-preadic topology (in other words,
 $\bigcap_n\mathfrak{m}^n M=0$), then $M$ is also an \emph{$A$-module of finite type}: indeed,
-$\wh{M}$ is then an $A$-module of finite type, and as $M$ identifies with a submodule of
-$\wh{M}$, $M$ is also of finite type (and is indeed identical to its completion
+$\widehat{M}$ is then an $A$-module of finite type, and as $M$ identifies with a submodule of
+$\widehat{M}$, $M$ is also of finite type (and is indeed identical to its completion
 according to Corollary \sref{0.7.3.6}).
 
 \begin{proposition}[7.4.2]
@@ -721,9 +720,9 @@ The most important case of Proposition \sref{0.7.4.2} is when $B$ is a
 quasi-finite $A$-module, i.e., $B/\mathfrak{m}B$ is an \emph{algebra of finite rank over
 $k=A/\mathfrak{m}$}; furthermore, this condition can be broken down into the combination
 of the following:
-\begin{enumerate}[label=(\roman*)]
-  \item \emph{$\mathfrak{m}B$ is an ideal of definition for $B$};
-  \item \emph{$B/\mathfrak{n}$ is an extension of finite rank of the field $A/\mathfrak{m}$}.
+\begin{enumerate}
+  \item[(i)] \emph{$\mathfrak{m}B$ is an ideal of definition for $B$};
+  \item[(ii)] \emph{$B/\mathfrak{n}$ is an extension of finite rank of the field $A/\mathfrak{m}$}.
 \end{enumerate}
 When this is so, every $B$-module of finite type is evidently a quasi-finite $A$-module.
 \end{env}
@@ -980,8 +979,8 @@ by $u_\lambda$, then the kernel of $v_\lambda$ is surjective, hence the proposit
 
 \begin{corollary}[7.6.3]
 \label{0.7.6.3}
-If $S'$ is the canonical image of $S$ in the separated completion $\wh{A}$ of $A$, then
-$A\{S^{-1}\}$ canonically identifies with $\wh{A}\{{S'}^{-1}\}$.
+If $S'$ is the canonical image of $S$ in the separated completion $\widehat{A}$ of $A$, then
+$A\{S^{-1}\}$ canonically identifies with $\widehat{A}\{{S'}^{-1}\}$.
 \end{corollary}
 
 We note that if $A$ is separated and complete, then it is not necessarily the same for
@@ -1079,11 +1078,11 @@ canonically isomorphic to that of $A/\mathfrak{p}$.
 \begin{proposition}[7.6.11]
 \label{0.7.6.11}
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $A$ is an admissible ring, then so is $A'=A\{S^{-1}\}$, and for every ideal
+\begin{enumerate}
+  \item[{\rm(i)}] If $A$ is an admissible ring, then so is $A'=A\{S^{-1}\}$, and for every ideal
     of definition $\mathfrak{J}$ for $A$, $\mathfrak{J}'=\mathfrak{J}\{S^{-1}\}$ is an ideal of
     definition for $A'$.
-  \item Let $A$ be an adic ring, $\mathfrak{J}$ an ideal of definition for $A$ such that
+  \item[{\rm(ii)}] Let $A$ be an adic ring, $\mathfrak{J}$ an ideal of definition for $A$ such that
     $\mathfrak{J}/\mathfrak{J}^2$ is of finite type over $A/\mathfrak{J}$; then $A'$ is a
     $\mathfrak{J}'$-adic ring and $\mathfrak{J}'/{\mathfrak{J}'}^2$ is of finite type over
     $A'/\mathfrak{J}'$. If in addition $A$ is Noetherian, then so is $A'$.
@@ -1093,15 +1092,15 @@ canonically isomorphic to that of $A/\mathfrak{p}$.
 \begin{proof}
 \label{proof-7.6.11}
 \medskip\noindent
-\begin{enumerate}[label=(\roman*)]
-  \item If $\mathfrak{J}$ is an ideal of definition for $A$, then it is clear that
+\begin{enumerate}
+  \item[(i)] If $\mathfrak{J}$ is an ideal of definition for $A$, then it is clear that
     $S^{-1}\mathfrak{J}$ is an ideal of definition for the topological ring $S^{-1}A$, since we
     have $(S^{-1}\mathfrak{J})^n=S^{-1}\mathfrak{J}^n$. Let $A''$ be the separated ring associated
     to $S^{-1}A$, $\mathfrak{J}''$ the image of $S^{-1}\mathfrak{J}$ in $A''$; the image of
     $S^{-1}\mathfrak{J}^n$ is ${\mathfrak{J}''}^n$, so ${\mathfrak{J}''}^n$ tends to $0$ in $A''$;
     as $\mathfrak{J}'$ is the closure of $\mathfrak{J}''$ in $A'$, ${\mathfrak{J}'}^n$ is contained
     in the closure of ${\mathfrak{J}''}^n$, hence tends to $0$ in $A'$.
-  \item Set $A_i=A/\mathfrak{J}^{i+1}$, and for $i\leq j$, let $u_{ij}$ be the canonical
+  \item[(ii)] Set $A_i=A/\mathfrak{J}^{i+1}$, and for $i\leq j$, let $u_{ij}$ be the canonical
     homomorphism $A/\mathfrak{J}^{j+1}\to A/\mathfrak{J}^{i+1}$; let $S_i$ be the canonical image of
     $S$ in $A_i$, and set $A_i'=S_i^{-1}A_i$; finally, let $u_{ij}':A_j'\to A_i'$ be the homomorphism
     canonically induced by $u_{ij}$. We show that the projective system $(A_i',u_{ij}')$ satisfies
@@ -1246,13 +1245,12 @@ vary over the systems of open neighborhoods satisfying these properties, it is i
 modules $(M/V)\otimes_{A/\mathfrak{J}}(N/W)$ form a projective system of modules
 \oldpage[0\textsubscript{I}]{76}
 over the projective system of rings $A/\mathfrak{J}$; by passing to the projective limit, we
-thus obtain a module over the separated completion $\wh{A}$ of $A$, which we call the
+thus obtain a module over the separated completion $\widehat{A}$ of $A$, which we call the
 \emph{completed tensor product} of $M$ and $N$ and denote by $(M\otimes_A N)^\wedge$. If we have
-that $M/V$ is canonically isomorphic to $\wh{M}/\overline{V}$, where $\wh{M}$ is the
-separated completion of $M$ and $\overline{V}$ the closure in $\wh{M}$ of the image of $V$,
+that $M/V$ is canonically isomorphic to $\widehat{M}/\overline{V}$, where $\widehat{M}$ is the
+separated completion of $M$ and $\overline{V}$ the closure in $\widehat{M}$ of the image of $V$,
 then we see that the completed tensor product $(M\otimes_A N)^\wedge$ canonically identifies with
-$(\wh{M}\otimes_\wh{A}\wh{N})^\wedge$, which we denote by
-$\wh{M}\wh{\otimes}_\wh{A}\wh{N}$.
+$(\widehat{M}\otimes_{\widehat{A}}\widehat{N})^\wedge$, which we denote by $\widehat{M}\widehat{\otimes}_{\widehat{A}}\widehat{N}$.
 \end{env}
 
 \begin{env}[7.7.2]
@@ -1276,7 +1274,7 @@ Let $M'$, $N'$ be two linearly topologized $A$-modules, $u:M\to M'$, $v:N\to N'$
 homomorphisms; it is immediate that $u\otimes v$ is continuous for the tensor product topologies on
 $M\otimes_A N$ and $M'\otimes_A N'$ respectively; by passing to the separated completions, we obtain
 a continuous homomorphism $(M\otimes_A N)^\wedge\to(M'\otimes_A N')^\wedge$, which we denote by
-$u\wh{\otimes}v$; $(M\otimes_A N)^\wedge$ is thus a \emph{bifunctor} in $M$ and $N$ on the category
+$u\widehat{\otimes}v$; $(M\otimes_A N)^\wedge$ is thus a \emph{bifunctor} in $M$ and $N$ on the category
 of linearly topologized $A$-modules.
 \end{env}
 
@@ -1294,7 +1292,7 @@ $B\otimes_A C$ has for a fundamental system of neighborhoods of $0$ the \emph{id
 $\Im(\mathfrak{K}\otimes_A C)+\Im(B\otimes_A\mathfrak{L})$ of the algebra $B\otimes_A C$,
 $\mathfrak{K}$ (resp. $\mathfrak{L}$) varying over the set of open ideals of $B$ (resp. $C$).
 As a result, $(B\otimes_A C)^\wedge$ is equipped with the structure of a \emph{topological
-$\wh{A}$-algebra}, the projective limit of the projective system of $A/\mathfrak{J}$-algebras
+$\widehat{A}$-algebra}, the projective limit of the projective system of $A/\mathfrak{J}$-algebras
 $(B/\mathfrak{K})\otimes_{A/\mathfrak{J}}(C/\mathfrak{L})$ ($\mathfrak{J}$ the open ideal of $A$
 such that $\mathfrak{J}B\subset\mathfrak{K}$, $\mathfrak{J}C\subset\mathfrak{L}$; it always exists).
 We say that this algebra is the \emph{completed tensor product} of the algebras $B$ and $C$.

@@ -67,18 +67,18 @@ For a subset of a Noetherian space to be constructible, it is necessary and suff
 \begin{proposition}[9.1.8]
 \label{0.9.1.8}
 Let $X$ be a topological space, $U$ an open subset of $X$.
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $T$ is a constructible subset of $X$, then $T\cap U$ is a constructible subset of $U$.
-  \item In addition, suppose that $U$ is retrocompact in $X$. For a subset $Z$ of $U$ to be constructible in $X$, it is necessary and sufficient for it to be constructible in $U$.
+\begin{enumerate}
+  \item[{\rm(i)}] If $T$ is a constructible subset of $X$, then $T\cap U$ is a constructible subset of $U$.
+  \item[{\rm(ii)}] In addition, suppose that $U$ is retrocompact in $X$. For a subset $Z$ of $U$ to be constructible in $X$, it is necessary and sufficient for it to be constructible in $U$.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 \label{proof-0.9.1.8}
 \medskip\noindent
-\begin{enumerate}[label=(\roman*)]
-  \item Using Proposition \sref{0.9.1.3}, we reduce to showing that if $T$ is a retrocompact open set in $X$, then $T\cap U$ is a retrocompact open set in $U$, in other words, for every quasi-compact open $W\subset U$, $T\cap U\cap W=T\cap W$ is quasi-compact, which immediately follows from the hypothesis.
-  \item The condition is necessary by (i), so it remains to show that it is sufficient.
+\begin{enumerate}
+  \item[(i)] Using Proposition \sref{0.9.1.3}, we reduce to showing that if $T$ is a retrocompact open set in $X$, then $T\cap U$ is a retrocompact open set in $U$, in other words, for every quasi-compact open $W\subset U$, $T\cap U\cap W=T\cap W$ is quasi-compact, which immediately follows from the hypothesis.
+  \item[(ii)] The condition is necessary by (i), so it remains to show that it is sufficient.
     By Proposition \sref{0.9.1.3}, it suffices to consider the case where $Z$ is a retrocompact open set \emph{in $U$}, because it will then follow that $U\setmin Z$ is constructible in $X$, and if $Z$ and $Z'$ are two retrocompact opens \emph{in $U$}, then $Z\cap(U\setmin Z')$ will be constructible in $X$.
     If $W$ is a quasi-compact open set in $X$ and $Z$ a retrocompact open set in $U$, then we have $Z\cap W=Z\cap(W\cap U)$, and by hypothesis $W\cap U$ is a quasi-compact open set in $U$; so $W\cap Z$ is quasi-compact, and as a result $Z$ is a retrocompact open set in $X$, and \emph{a fortiori} constructible in $X$.
 \end{enumerate}

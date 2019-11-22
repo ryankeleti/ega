@@ -1,8 +1,9 @@
 \section{Combinatorial dimension of a topological space}
 \label{section:0.14}
 
-\noindent
-\textbf{Summary}
+\begin{gather*}
+  \textbf{Summary}
+\end{gather*}
 
 \oldpage[IV-1]{5}
 \begin{longtable}{ll}
@@ -334,20 +335,21 @@ In a topological space $X$, we say that a chain $Z_0\subset Z_1\subset\ldots\sub
 \label{0.14.3.2}
 Let $X$ be a topological space such that, for any two irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have $\codim(Y,Z)<+\infty$.
 The following two conditions are equivalent.
-\begin{enumerate}[label=\emph{(\alph*)}]
-    \item Any two saturated chains of closed irreducible subsets of $X$ that have the same first and last elements as one another have the same length.
-    \item If $Y$, $Z$, and $T$ are irreducible closed subsets of $X$ such that $Y\subset Z\subset T$, then
-        \begin{equation*}
-        \label{0.14.3.2.1}
-            \codim(Y,T) = \codim(Y,Z)+\codim(Z,T).\tag{14.3.2.1}
-        \end{equation*}
+\begin{enumerate}
+  \item[{\rm(a)}] Any two saturated chains of closed irreducible subsets of $X$ that have the same first and last elements as one another have the same length.
+  \item[{\rm(b)}] If $Y$, $Z$, and $T$ are irreducible closed subsets of $X$ such that $Y\subset Z\subset T$, then
+    \[
+    \label{eq:0.14.3.2.1}
+      \codim(Y,T)=\codim(Y,Z)+\codim(Z,T).
+      \tag{14.3.2.1}
+    \]
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 \label{proof-0.14.3.2}
-It is immediate that \emph{(a)} implies \emph{(b)}.
-Conversely, suppose that \emph{(b)} is satisfied, and we will show that, if we have two saturated chains with the same first and last elements as one another, of lengths $m$ and $n\leq m$ (respectively), then $m=n$.
+It is immediate that (a) implies (b).
+Conversely, suppose that (b) is satisfied, and we will show that if we have two saturated chains with the same first and last elements as one another, of lengths $m$ and $n\leq m$ (respectively), then $m=n$.
 We proceed by induction on $n$, with the proposition being clear for $n=1$.
 So suppose that $1<n<m$, and let $Z_0\subset Z_1\subset\ldots\subset Z_n$ be a
 \oldpage[0\textsubscript{IV-1}]{11}
@@ -362,16 +364,16 @@ It is clear that every closed subspace of a catenary space is catenary.
 \label{0.14.3.3}
 Let $X$ be a Noetherian Kolmogoroff space of finite dimension.
 The following conditions are equivalent.
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item Any two maximal chains of irreducible closed subsets of $X$ have the same length.
-  \item $X$ is equidimensional, equicodimensional, and catenary.
-  \item $X$ is equidimensional, and, for any irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have
+\begin{enumerate}
+  \item[{\rm(a)}] Any two maximal chains of irreducible closed subsets of $X$ have the same length.
+  \item[{\rm(b)}] $X$ is equidimensional, equicodimensional, and catenary.
+  \item[{\rm(c)}] $X$ is equidimensional, and, for any irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have
     \[
     \label{eq:0.14.3.3.1}
       \dim(Z)=\dim(Y)+\codim(Y,Z).
       \tag{14.3.3.1}
     \]
-  \item $X$ is equicodimensional, and, for any irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have
+  \item[{\rm(d)}] $X$ is equicodimensional, and, for any irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have
     \[
     \label{eq:0.14.3.3.2}
       \codim(Y,Z)=\codim(Y,Z)+\codim(Z,X).
@@ -384,17 +386,18 @@ The following conditions are equivalent.
 \label{proof-0.14.3.3}
 The hypotheses on $X$ imply that the first and last elements of a maximal chain of irreducible closed subsets of $X$ are necessarily a closed point and an irreducible component of $X$ (respectively) \sref[0\textsubscript{I}]{0.2.1.3};
 further, every saturated chain with first element $Y$ and last element $Z$ (thus $Y\subset Z$) is contained in a maximal chain whose elements differ from those of the given chain, or are contained in $Y$, or contain $Z$.
-These remarks immediately establish the equivalence between \emph{(a)} and \emph{(b)}, and also show that, if \emph{(a)} is satisfied, then we have, for every irreducible closed subset $Y$ fo $X$,
+These remarks immediately establish the equivalence between (a) and (b), and also show that if (a) is satisfied, then we have, for every irreducible closed subset $Y$ fo $X$,
 \[
 \label{eq:0.14.3.3.3}
   \dim(Y)+\codim(Y,X)=\dim(X);
+  \tag{14.3.3.3}
 \]
-from \sref{0.14.3.2.1}, we immediately deduce \sref{0.14.3.3.1} and \sref{0.14.3.3.2} from \sref{0.14.3.3.3}.
-Conversely, \sref{0.14.3.3.1} implies \sref{0.14.3.2.1}, and so \sref{0.14.3.3.1} implies the chain condition, by \sref{0.14.3.2};
-further, by applying \sref{0.14.3.3.1} to the case where $Y$ is a single closed point $x$ of $X$, and $Z$ is an irreducible component of $X$, we get that $\codim(\{x\},X)=\dim(Z)$;
-we thus conclude that \emph{(c)} implies \emph{(b)}.
-Similarly, \sref{0.14.3.3.2} implies \sref{0.14.3.2.1}, and thus the chain condition;
-further, with the same choice of $Y$ and $Z$ as above, \sref{0.14.3.3.2} again implies that $\codim(\{x\},X)=\dim(Z)$, and so (since every irreducible component of $X$ contains a closed point, by \sref[0\textsubscript{I}]{0.2.1.3}) \emph{(d)} implies \emph{(b)}.
+from \eref{eq:0.14.3.2.1}, we immediately deduce \eref{eq:0.14.3.3.1} and \eref{eq:0.14.3.3.2} from \eref{eq:0.14.3.3.3}.
+Conversely, \eref{eq:0.14.3.3.1} implies \eref{eq:0.14.3.2.1}, and so \eref{eq:0.14.3.3.1} implies the chain condition, by \sref{0.14.3.2};
+further, by applying \eref{eq:0.14.3.3.1} to the case where $Y$ is a single closed point $x$ of $X$, and $Z$ is an irreducible component of $X$, we get that $\codim(\{x\},X)=\dim(Z)$;
+we thus conclude that (c) implies (b).
+Similarly, \eref{eq:0.14.3.3.2} implies \eref{eq:0.14.3.2.1}, and thus the chain condition;
+further, with the same choice of $Y$ and $Z$ as above, \eref{eq:0.14.3.3.2} again implies that $\codim(\{x\},X)=\dim(Z)$, and so (since every irreducible component of $X$ contains a closed point, by \sref[0\textsubscript{I}]{0.2.1.3}), (d) implies (b).
 \end{proof}
 
 We say that a Noetherian Kolmogoroff space is \emph{biequidimensional} if it is of \emph{finite dimension} and if it verifies any of the (equivalent) conditions of \sref{0.14.3.3}.
@@ -406,7 +409,7 @@ then, for every closed point $x$ of $X$, and every irreducible component $Z$ of 
 \[
 \label{eq:0.14.3.4.1}
   \dim(X)=\dim(Z)=\codim(\{x\},X)=\dim_x(X).
-  \tag{0.14.3.4.1}
+  \tag{14.3.4.1}
 \]
 \end{corollary}
 

@@ -8,14 +8,14 @@
 \label{1.5.1.1}
 Let $(X,\sh{O}_X)$ be a prescheme, and $\sh{B}$ a quasi-coherent $\sh{O}_X$-algebra.
 Then there exists a unique quasi-coherent $\sh{O}_X$-module $\sh{N}$ whose stalk $\sh{N}_x$ at any $x\in X$ is the nilradical of the ring $\sh{B}_x$.
-When $X$ is affine, and, consequently, $\sh{B}=\wt{B}$, where $B$ is an algebra over $A(X)$, then we have $\sh{N}=\wt{\nilrad}$, where $\nilrad$ is the nilradical of $B$.
+When $X$ is affine, and, consequently, $\sh{B}=\widetilde{B}$, where $B$ is an algebra over $A(X)$, then we have $\sh{N}=\widetilde{\nilrad}$, where $\nilrad$ is the nilradical of $B$.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.5.1.1}
 \oldpage[I]{128}
 The statement is local, so it suffices to show the latter claim.
-We know that $\wt{\nilrad}$ is a quasi-coherent $\sh{O}_X$-module \sref{1.1.4.1}, and that its stalk at a point $x\in X$ is the ideal $\nilrad_x$ of the ring of fractions $B_x$;
+We know that $\widetilde{\nilrad}$ is a quasi-coherent $\sh{O}_X$-module \sref{1.1.4.1}, and that its stalk at a point $x\in X$ is the ideal $\nilrad_x$ of the ring of fractions $B_x$;
 it remains to prove that the nilradical of $B_x$ is contained in $\nilrad_x$, the converse inclusion being evident.
 Let $z/s$ be an element of the nilradical of $B_x$, with $z\in B$, and $s\not\in\mathfrak{j}_x$;
 by hypothesis, there exists an integer $k$ such that $(z/s)^k=0$, which implies that there exists some $t\not\in\mathfrak{j}_x$ such that $tz^k=0$.
@@ -35,7 +35,7 @@ it is also the smallest subprescheme of $X$ that has $X$ as its underlying space
 \label{proof-1.5.1.2}
 Since the structure sheaf of the closed subprescheme of $Y$ defined by $\sh{N}_X$ is $\sh{O}_X/\sh{N}_X$, it is immediate that $Y$ is reduced and has $X$ as its underlying space, because $\sh{N}_x\neq\sh{O}_x$ for any $x\in X$.
 To show the other claims, note that a subprescheme $Z$ of $X$ that has $X$ as its underlying space is defined by a sheaf of ideals $\sh{I}$ \sref{1.4.1.3} such that $\sh{I}_x\neq\sh{O}_x$ for any $x\in X$.
-We can restrict to the case where $X$ is affine, say $X=\Spec(A)$ and $\sh{I}=\wt{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of $A$;
+We can restrict to the case where $X$ is affine, say $X=\Spec(A)$ and $\sh{I}=\widetilde{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of $A$;
 then, for every $x\in X$, we have $\mathfrak{I}_x\subset\mathfrak{j}_x$, and so $\mathfrak{I}$ is contained in every prime ideal of $A$, and so also in their intersection $\nilrad$, the nilradical of $A$.
 This proves that $Y$ is the small subprescheme of $X$ that has $X$ as its underlying space \sref{1.4.1.9};
 furthermore, if $Z$ is distinct from $Y$, we necessarily have $\sh{I}_x\neq\sh{N}_x$ for at least one $x\in X$, and so \sref{1.5.1.1} $Z$ is not reduced.
@@ -154,7 +154,7 @@ is an \emph{exact} sequence.
 We now prove, assuming that this is true, the proposition.
 Note that $\mathfrak{K}=\Gamma(X,\sh{I})$ is an ideal whose square is zero in $A$, and thus a module over $A_0=A/\mathfrak{K}$.
 By hypothesis, we have $X_0=\Spec(A)$, and, since the underlying spaces of $X_0$ and $X$ are identical, $\mathfrak{K}=\Gamma(X_0,\sh{I})$;
-Additionally, since $\sh{I}^2=0$, $\sh{I}$ is a quasi-coherent $(\sh{O}_X/\sh{I})$-module, so we have $\sh{I}\cong\wt{\mathfrak{K}}$ and $\mathfrak{K}_x=\sh{I}_x$ for all $x\in X_0$ \sref{1.1.4.1}.
+Additionally, since $\sh{I}^2=0$, $\sh{I}$ is a quasi-coherent $(\sh{O}_X/\sh{I})$-module, so we have $\sh{I}\cong\widetilde{\mathfrak{K}}$ and $\mathfrak{K}_x=\sh{I}_x$ for all $x\in X_0$ \sref{1.1.4.1}.
 With this in mind, let $X'=\Spec(A)$, and consider the morphism $f=(\psi,\theta):X\to X'$ of preschemes that corresponds to the identity map $A\to\Gamma(X,\sh{O}_X)$ \sref{1.2.2.4}.
 For every affine open subset $V$ of $X$, the diagram
 \[
@@ -174,10 +174,10 @@ commutes, whence the diagram
     X_0\ar[l]_{f_0}\ar[u]_j
   }
 \]
-also commutes ($X'_0$ being the closed subprescheme of $X'$ defined by the quasi-coherent sheaf of ideals $\wt{R}$, and $j$ and $j'$ being the canonical injection morphisms).
+also commutes ($X'_0$ being the closed subprescheme of $X'$ defined by the quasi-coherent sheaf of ideals $\widetilde{R}$, and $j$ and $j'$ being the canonical injection morphisms).
 But since $X_0$ is affine, $f_0$ is an isomorphism, and since the underlying continuous maps of $j$ and $j'$ are identity maps, we see straight away that $\psi:X\to X'$ is a homeomorphism.
-Furthermore, the equation $\mathfrak{K}_x=\sh{I}_x$ shows that the restriction of $\theta^\sharp:\psi^*(\sh{O}_{X'})\to\sh{O}_X$ is an \emph{isomorphism} from $\psi^*(\wt{\mathfrak{K}})$ to $\sh{I}$;
-additionally, by passing to the quotients, $\theta^\sharp$ gives an \emph{isomorphism} $\psi^*(\sh{O}_X/\wt{\mathfrak{K}})\to\sh{O}_X/\sh{I}$, because $f_0$ is an isomorphism;
+Furthermore, the equation $\mathfrak{K}_x=\sh{I}_x$ shows that the restriction of $\theta^\sharp:\psi^*(\sh{O}_{X'})\to\sh{O}_X$ is an \emph{isomorphism} from $\psi^*(\widetilde{\mathfrak{K}})$ to $\sh{I}$;
+additionally, by passing to the quotients, $\theta^\sharp$ gives an \emph{isomorphism} $\psi^*(\sh{O}_X/\widetilde{\mathfrak{K}})\to\sh{O}_X/\sh{I}$, because $f_0$ is an isomorphism;
 we thus immediately conclude, by the 5 lemma (M,~I,~1.1), that $\theta^\sharp$ is itself an isomorphism, and thus that $f$ is an \emph{isomorphism}, and thus that $X$ is affine.
 So everything reduces to proving the exactitude of \sref{1.5.1.9.1}, which will follow from showing that $\HH^1(X,\sh{I})=0$.
 \oldpage[I]{131}
@@ -195,7 +195,7 @@ To give an independent proof, note that $\HH^1(Y,\sh{F})$ can be identified with
 so everything reduces to proving that such an extension $\sh{G}$ is trivial.
 But, for all $y\in Y$, there is a neighbourhood $V$ of $y$ in $Y$ such that $\sh{G}|V$ is isomorphic to $\sh{F}|Y\oplus\sh{O}_Y|V$ \sref[0]{0.5.4.9};
 from this we conclude that $\sh{G}$ is a \emph{quasi-coherent} $\sh{O}_Y$-module.
-If $A$ is the ring of $Y$, then we have $\sh{F}=\wt{M}$ and $\sh{G}=\wt{N}$, where $M$ and $N$ are $A$-modules, and, by hypothesis, $N$ is an extension of the $A$-module $A$ by the $A$-module $M$ \sref{1.1.3.11}.
+If $A$ is the ring of $Y$, then we have $\sh{F}=\widetilde{M}$ and $\sh{G}=\widetilde{N}$, where $M$ and $N$ are $A$-modules, and, by hypothesis, $N$ is an extension of the $A$-module $A$ by the $A$-module $M$ \sref{1.1.3.11}.
 Since this extension is necessarily trivial, the lemma is proven, and thus so too is \sref{1.5.1.9}.
 \end{proof}
 
@@ -610,13 +610,13 @@ finally, if we assume that the conclusion of \sref{1.5.4.6} is true for the $Y$ 
 \begin{proposition}[5.5.1]
 \label{1.5.5.1}
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item Every monomorphism of preschemes (and, in particular, every immersion) is a separated morphism.
-  \item The composition of any two separated morphisms is separated.
-  \item If $f:X\to X'$ and $g:Y\to Y'$ are separated $S$-morphisms, then $f\times_S g$ is separated.
-  \item If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated for every extension $S'\to S$ of the base prescheme.
-  \item If the composition $g\circ f$ is separated, then $f$ is separated.
-  \item For a morphism $f$ to be separated, it is necessary and sufficient for $f_\red$ \sref{1.5.1.5} to be separated.
+\begin{enumerate}
+  \item[{\rm(i)}] Every monomorphism of preschemes (and, in particular, every immersion) is a separated morphism.
+  \item[{\rm(ii)}] The composition of any two separated morphisms is separated.
+  \item[{\rm(iii)}] If $f:X\to X'$ and $g:Y\to Y'$ are separated $S$-morphisms, then $f\times_S g$ is separated.
+  \item[{\rm(iv)}] If $f:X\to Y$ is a separated $S$-morphism, then the $S'$-morphism $f_{(S')}$ is separated for every extension $S'\to S$ of the base prescheme.
+  \item[{\rm(v)}] If the composition $g\circ f$ is separated, then $f$ is separated.
+  \item[{\rm(vi)}] For a morphism $f$ to be separated, it is necessary and sufficient for $f_\red$ \sref{1.5.1.5} to be separated.
 \end{enumerate}
 \end{proposition}
 
@@ -799,14 +799,14 @@ we then have an example where the conditions of \sref{1.5.5.6} are not satisfied
 \begin{remark}[5.5.12]
 \label{1.5.5.12}
 Given some property \textbf{P} of morphisms of preschemes, consider the following propositions.
-\begin{enumerate}[label=(\roman*)]
-    \item \emph{Every closed immersion has property~\textbf{P}.}
-    \item \emph{The composition of any two morphisms that both have property~\textbf{P} also has property~\textbf{P}.}
-    \item \emph{If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms that have property~\textbf{P}, then $f\times_S g$ has property~\textbf{P}.}
+\begin{enumerate}
+  \item[(i)] \emph{Every closed immersion has property~\textbf{P}.}
+  \item[(ii)] \emph{The composition of any two morphisms that both have property~\textbf{P} also has property~\textbf{P}.}
+  \item[(iii)] \emph{If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms that have property~\textbf{P}, then $f\times_S g$ has property~\textbf{P}.}
 \oldpage[I]{140}
-    \item \emph{If $f:X\to Y$ is an $S$-morphism that has property~\textbf{P}, then every $S'$-morphism $f_{(S')}$ obtained by an extension $S'\to S$ of the base prescheme also has property~\textbf{P}.}
-    \item \emph{If the composition $g\circ f$ of two morphisms $f:X\to Y$ and $g:Y\to Z$ has property~\textbf{P}, and $g$ is separated, then $f$ has property~\textbf{P}.}
-    \item \emph{If a morphism $f:X\to Y$ has property~\textbf{P}, then so too does $f_\red$ \sref{1.5.1.5}.}
+  \item[(iv)] \emph{If $f:X\to Y$ is an $S$-morphism that has property~\textbf{P}, then every $S'$-morphism $f_{(S')}$ obtained by an extension $S'\to S$ of the base prescheme also has property~\textbf{P}.}
+  \item[(v)] \emph{If the composition $g\circ f$ of two morphisms $f:X\to Y$ and $g:Y\to Z$ has property~\textbf{P}, and $g$ is separated, then $f$ has property~\textbf{P}.}
+  \item[(vi)] \emph{If a morphism $f:X\to Y$ has property~\textbf{P}, then so too does $f_\red$ \sref{1.5.1.5}.}
 \end{enumerate}
 If we suppose that (i) and (ii) are both true, then (iii) and (iv) are \emph{equivalent}, and (v) and (vi) are \emph{consequences} of (i), (ii), and (iii).
 

@@ -42,10 +42,10 @@ The following conditions are equivalent:
 \label{proof-1.6.1.3}
 The equivalence between (a) and (b) follows from \sref{1.6.1.2} ant the fact that the underlying space of every affine scheme is quasi-compact \sref{1.1.1.10}; it is furthermore clear that (c) implies (a).
 To see that (a) implies (c), we remark that there is a finite cover $(V_i)$ of $X$ by affine open subsets such that the ring $A_i$ of the prescheme induced on $V_i$ is Noetherian.
-So let $(\mathfrak{a}_n)$ be an increasing sequence of ideals of $A$; by a canonical bijective correspondence, there is a corresponding sequence $(\wt{\mathfrak{a}}_n)$ of sheaves of ideals in $\wt{A}=\sh{O}_X$;
-to see that the sequence $(\mathfrak{a}_n)$ is \unsure{stable}, it suffices to prove that the sequence $(\wt{\mathfrak{a}}_n)$ is.
-But the restriction $\wt{\mathfrak{a}}_n|V_i$ is a quasi-coherent sheaf of ideals in $\sh{O}_X|V_i$, being the inverse image of $\wt{\mathfrak{a}}_n$ under the canonical injection $V_i\to X$ \sref[0]{0.5.1.4};
-$\wt{\mathfrak{a}}_n|V_i$ is thus of the form $\wt{\mathfrak{a}}_{ni}$, where $\mathfrak{a}_{ni}$ is an ideal of $A_i$ \sref{1.1.3.7}.
+So let $(\mathfrak{a}_n)$ be an increasing sequence of ideals of $A$; by a canonical bijective correspondence, there is a corresponding sequence $(\widetilde{\mathfrak{a}}_n)$ of sheaves of ideals in $\widetilde{A}=\sh{O}_X$;
+to see that the sequence $(\mathfrak{a}_n)$ is \unsure{stable}, it suffices to prove that the sequence $(\widetilde{\mathfrak{a}}_n)$ is.
+But the restriction $\widetilde{\mathfrak{a}}_n|V_i$ is a quasi-coherent sheaf of ideals in $\sh{O}_X|V_i$, being the inverse image of $\widetilde{\mathfrak{a}}_n$ under the canonical injection $V_i\to X$ \sref[0]{0.5.1.4};
+$\widetilde{\mathfrak{a}}_n|V_i$ is thus of the form $\widetilde{\mathfrak{a}}_{ni}$, where $\mathfrak{a}_{ni}$ is an ideal of $A_i$ \sref{1.1.3.7}.
 Since $A_i$ is Noetherian, the sequence $(\mathfrak{a}_{ni})$ is stable for all $i$, whence the proposition.
 \end{proof}
 
@@ -125,16 +125,15 @@ A locally Noetherian topological space is locally connected (which implies, amon
 \label{1.6.1.10}
 Let $X$ be a locally Noetherian topological space.
 The following conditions are equivalent.
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item The irreducible components of $X$ are open.
-  \item The irreducible components of $X$ are exactly its connected components.
-  \item The connected components of $X$ are irreducible.
-  \item Two distinct irreducible components of $X$ have an empty intersection.
+\begin{enumerate}
+  \item[{\rm(a)}] The irreducible components of $X$ are open.
+  \item[{\rm(b)}] The irreducible components of $X$ are exactly its connected components.
+  \item[{\rm(c)}] The connected components of $X$ are irreducible.
+  \item[{\rm(d)}] Two distinct irreducible components of $X$ have an empty intersection.
 \end{enumerate}
 Finally, if $X$ is a prescheme, then these conditions are also equivalent to
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \setcounter{enumi}{4}
-  \item For every $x\in X$, $\Spec(\sh{O}_x)$ is irreducible (or, in other words, the nilradical of $\sh{O}_x$ is prime).
+\begin{enumerate}
+  \item[{\rm(e)}] For every $x\in X$, $\Spec(\sh{O}_x)$ is irreducible (or, in other words, the nilradical of $\sh{O}_x$ is prime).
 \end{enumerate}
 \end{proposition}
 
@@ -202,10 +201,10 @@ We say that a prescheme is \emph{Artinian} if it is affine, and given by an Arti
 Given
 \oldpage[I]{144}
 a prescheme $X$, the following conditions are equivalent:
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item $X$ is an Artinian scheme;
-  \item $X$ is Noetherian and its underlying space is discrete;
-  \item $X$ is Noetherian and the points of its underlying space are closed \emph{(the $\mathrm{T}_1$ condition)}.
+\begin{enumerate}
+  \item[{\rm(a)}] $X$ is an Artinian scheme;
+  \item[{\rm(b)}] $X$ is Noetherian and its underlying space is discrete;
+  \item[{\rm(c)}] $X$ is Noetherian and the points of its underlying space are closed \emph{(the $\mathrm{T}_1$ condition)}.
 \end{enumerate}
 When any of the above hold, the underlying space of $X$ is finite, and the ring $A$ of $X$ is the direct sum of local (Artinian) rings of points of $X$.
 \end{proposition}
@@ -291,13 +290,13 @@ there are thus $c_i\in B'$ such that $\sum_i c_ig_i^N=1$, whence $b=\sum_ic_ig_i
 \begin{proposition}[6.3.4]
 \label{1.6.3.4}
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\roman*)}]
-    \item Every closed immersion is of finite type.
-    \item The composition of any two morphisms of finite type is of finite type.
-    \item If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms of finite type, then $f\times_S g$ is of finite type.
-    \item If $f:X\to Y$ is an $S$-morphism of finite type, then $f_{(S')}$ is of finite type for any extension $g:S'\to S$ of the base prescheme.
-    \item If the composition $g\circ f$ of two morphisms is of finite type, with $g$ separated, then $f$ is of finite type.
-    \item If a morphism $f$ is of finite type, then $f_\red$ is of finite type.
+\begin{enumerate}
+  \item[{\rm(i)}] Every closed immersion is of finite type.
+  \item[{\rm(ii)}] The composition of any two morphisms of finite type is of finite type.
+  \item[{\rm(iii)}] If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms of finite type, then $f\times_S g$ is of finite type.
+  \item[{\rm(iv)}] If $f:X\to Y$ is an $S$-morphism of finite type, then $f_{(S')}$ is of finite type for any extension $g:S'\to S$ of the base prescheme.
+  \item[{\rm(v)}] If the composition $g\circ f$ of two morphisms is of finite type, with $g$ separated, then $f$ is of finite type.
+  \item[{\rm(vi)}] If a morphism $f$ is of finite type, then $f_\red$ is of finite type.
 \end{enumerate}
 \end{proposition}
 
@@ -465,13 +464,13 @@ Let $K$ be an algebraically-closed field, and $X$ an algebraic $K$-prescheme; th
 \label{1.6.4.4}
 Let $X$ be an algebraic prescheme over a field $K$.
 The following properties are equivalent.
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item $X$ is Artinian.
-  \item The underlying space of $X$ is discrete.
-  \item The underlying space of $X$ has only a finite number of closed points.
-  \item[\emph{(c$'$)}] The underlying space of $X$ is finite.
-  \item The points of $X$ are closed.
-  \item $X$ is isomorphic to $\Spec(A)$, where $A$ is a $K$-algebra of finite rank.
+\begin{enumerate}
+  \item[{\rm(a)}] $X$ is Artinian.
+  \item[{\rm(b)}] The underlying space of $X$ is discrete.
+  \item[{\rm(c)}] The underlying space of $X$ has only a finite number of closed points.
+  \item[{\rm(c')}] The underlying space of $X$ is finite.
+  \item[{\rm(d)}] The points of $X$ are closed.
+  \item[{\rm(e)}] $X$ is isomorphic to $\Spec(A)$, where $A$ is a $K$-algebra of finite rank.
 \end{enumerate}
 \end{proposition}
 
@@ -599,59 +598,59 @@ The morphisms which are not of finite type will show up in the following mostly 
 \label{1.6.5.1}
 Let $X$ and $Y$ be $S$-preschemes, with $Y$ of finite type over $S$;
 let $x\in X$ and $y\in Y$ lie over the same point $s\in S$.
-\begin{enumerate}[label=\emph{(\roman*)}]
-    \item If two $S$-morphisms $f=(\psi,\theta)$ and $f'=(\psi',\theta')$ from $X$ to $Y$ are such that $\psi(x)=\psi'(x)=y$, and the (local) $\sh{O}_s$-homomorphisms $\theta_x^\sharp$ and ${\theta'}_x^\sharp$ from $\sh{O}_y$ to $\sh{O}_x$ are identical, then $f$ and $f'$ agree on an open neighbourhood of $x$.
-    \item Suppose further that $S$ is locally Noetherian.
-        For every local $\sh{O}_s$-homomorphism $\vphi:\sh{O}_y\to\sh{O}_x$, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $f=(\psi,\theta)$ from $U$ to $Y$ such that $\psi(x)=y$ and $\theta_x^\sharp=\vphi$.
+\begin{enumerate}
+  \item[{\rm(i)}] If two $S$-morphisms $f=(\psi,\theta)$ and $f'=(\psi',\theta')$ from $X$ to $Y$ are such that $\psi(x)=\psi'(x)=y$, and the (local) $\sh{O}_s$-homomorphisms $\theta_x^\sharp$ and ${\theta'}_x^\sharp$ from $\sh{O}_y$ to $\sh{O}_x$ are identical, then $f$ and $f'$ agree on an open neighbourhood of $x$.
+  \item[{\rm(ii)}] Suppose further that $S$ is locally Noetherian.
+    For every local $\sh{O}_s$-homomorphism $\vphi:\sh{O}_y\to\sh{O}_x$, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $f=(\psi,\theta)$ from $U$ to $Y$ such that $\psi(x)=y$ and $\theta_x^\sharp=\vphi$.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.6.5.1}
 \medskip\noindent
-\begin{enumerate}[label=(\roman*)]
-    \item Since the question is local on $S$, $X$, and $Y$, we can assume that $S$, $X$, and $Y$ are affine, given by rings $A$, $B$, and $C$ (respectively), and with $f$ and $f'$ of the form $({}^a\vphi,\wt{\vphi})$ and $({}^a\vphi',\wt{\vphi}')$ (respectively), where $\vphi$ and $\vphi'$ are $A$-homomorphisms from $C$ to $B$ such that $\vphi^{-1}(\mathfrak{j}_x)=\vphi'^{-1}(\mathfrak{j}_x)=\mathfrak{j}_y$, and the homomorphisms $\vphi_x$ and $\vphi'_x$ from $C_y$ to $B_x$, induced by $\vphi$ and $\vphi'$, are identical;
-        we can further suppose that $C$ is an $A$-algebra \emph{of finite type}.
-        Let $c_i$ ($1\leq i\leq n$) be the generators of the $A$-algebra $C$, and set $b_i=\vphi(c_i)$ and $b'_i=\vphi'(c_i)$;
-        by hypothesis, we have $b_i/1=b'_i/1$ in the ring of fractions $B_x$ ($1\leq i\leq n$).
-        This implies that there exist elements $s_i\in B\setmin\mathfrak{j}_x$ such that $s_i(b_i-b'_i)=0$ for $1\leq i\leq n$, and we can clearly assume that all the $s_i$ are equal to a single element $g\in B\setmin\mathfrak{j}_x$.
-        From this, we conclude that we have $b_i/1=b'_i/1$ for $1\leq i\leq n$ in the ring of fractions $B_g$;
-        if $i_g$ is the canonical homomorphism $B\to B_g$, we then have $i_g\circ\vphi=i_g\circ\vphi'$;
-        so the restrictions of $f$ and $f'$ to $D(g)$ are identical.
-    \item We can restrict to the situation as in (i), and further assume that the ring $A$ is Noetherian.
-        Let $c_i$ ($1\leq i\leq n$) be the generators of the $A$-algebra $C$, and let $\alpha:A[X_1,\ldots,X_n]\to C$ be the homomorphism of polynomial algebras that sends $X_i$ to $c_i$ for $1\leq i\leq n$.
-        Also let $i_y$ be the canonical homomorphism $C\to C_y$, and consider the composite homomorphism
-        \[
-            \beta:A[X_1,\ldots,X_n] \xrightarrow{\alpha} C \xrightarrow{i_y} C_y \xrightarrow{\vphi} B_x.
-        \]
-        We denote by $\mathfrak{a}$ the kernel of $\beta$;
-        since $A$ is Noetherian, so too is $A[X_1,\ldots,X_n]$, and so $\mathfrak{a}$ admits a finite system of generators $Q_j(X_1,\ldots,X_n)$ ($1\leq j\leq m$).
-        Furthermore, each of the elements $\vphi(i_y(c_i))$ can be written in the form $b_i/s_i$, where $b_i\in B$ and $s_i\not\in\mathfrak{j}_x$;
-        \oldpage[I]{151}
-        we can further assume that all of the $s_i$ are equal to a single element $g\in B\setmin\mathfrak{j}_x$.
-        With this, by hypothesis, we have $Q_j(b_1/g,\ldots,b_n/g)=0$ in $B_x$;
-        set
-        \[
-            Q_j(X_1/T,\ldots,X_n/T)=P_j(X_1,\ldots,X_n,T)/T^{k_j}
-        \]
-        where $P_j$ is homogeneous of degree $k_j$.
-        Then let $d_j=P_j(b_1,\ldots,b_n,g)\in B$.
-        By hypothesis, we have $t_jd_j=0$ for some $t_j\in B\setmin\mathfrak{j}_x$ ($1\leq j\leq m$), and we can clearly assume that all the $t_j$ are equal to a single element $h\in B\setmin\mathfrak{j}_x$;
-        from this we conclude that $P_j(hb_1,\ldots,hb_n,hg)=0$ for $1\leq j\leq m$.
-        With this, consider the homomorphism $\rho$ from $A[X_1,\ldots,X_n]$ to the ring of fractions $B_{hg}$ which sends $X_i$ to $hb_i/hg$ ($1\leq i\leq n$);
-        the image of $\mathfrak{a}$ under this homomorphism is $0$, and is \emph{a fortiori} the same as the image of the kernel $\alpha^{-1}(0)$ under $\rho$.
-        So $\rho$ factors as $A[X_1,\ldots,X_n]\xrightarrow{\alpha}C\xrightarrow{\gamma}B_{hg}$, with $\gamma(c_i)=hb_i/hg$, and it is clear that, if $i_x$ is the canonical homomorphism $B_{hg}\to B_x$, then the diagram
-        \[
-          \xymatrix{
-            C\ar[r]^\gamma\ar[d]_{i_y} &
-            B_{hg}\ar[d]^{i_x}\\
-            C_y\ar[r]^\vphi &
-            B_x
-          }
-          \tag{6.5.1.1}
-        \]
-        is commutative; we thus have $\vphi=\gamma_x$, and since $\vphi$ is a local homomorphism, $^a\gamma(x)=y$;
-        $f=({}^a\gamma,\wt{\gamma})$ is thus an $S$-morphism from the neighbourhood $D(hg)$ of $x$ to $Y$ as claimed in the proposition.
+\begin{enumerate}
+  \item[(i)] Since the question is local on $S$, $X$, and $Y$, we can assume that $S$, $X$, and $Y$ are affine, given by rings $A$, $B$, and $C$ (respectively), and with $f$ and $f'$ of the form $({}^a\vphi,\widetilde{\vphi})$ and $({}^a\vphi',\widetilde{\vphi}')$ (respectively), where $\vphi$ and $\vphi'$ are $A$-homomorphisms from $C$ to $B$ such that $\vphi^{-1}(\mathfrak{j}_x)=\vphi'^{-1}(\mathfrak{j}_x)=\mathfrak{j}_y$, and the homomorphisms $\vphi_x$ and $\vphi'_x$ from $C_y$ to $B_x$, induced by $\vphi$ and $\vphi'$, are identical;
+    we can further suppose that $C$ is an $A$-algebra \emph{of finite type}.
+    Let $c_i$ ($1\leq i\leq n$) be the generators of the $A$-algebra $C$, and set $b_i=\vphi(c_i)$ and $b'_i=\vphi'(c_i)$;
+    by hypothesis, we have $b_i/1=b'_i/1$ in the ring of fractions $B_x$ ($1\leq i\leq n$).
+    This implies that there exist elements $s_i\in B\setmin\mathfrak{j}_x$ such that $s_i(b_i-b'_i)=0$ for $1\leq i\leq n$, and we can clearly assume that all the $s_i$ are equal to a single element $g\in B\setmin\mathfrak{j}_x$.
+    From this, we conclude that we have $b_i/1=b'_i/1$ for $1\leq i\leq n$ in the ring of fractions $B_g$;
+    if $i_g$ is the canonical homomorphism $B\to B_g$, we then have $i_g\circ\vphi=i_g\circ\vphi'$;
+    so the restrictions of $f$ and $f'$ to $D(g)$ are identical.
+  \item[(ii)] We can restrict to the situation as in (i), and further assume that the ring $A$ is Noetherian.
+    Let $c_i$ ($1\leq i\leq n$) be the generators of the $A$-algebra $C$, and let $\alpha:A[X_1,\ldots,X_n]\to C$ be the homomorphism of polynomial algebras that sends $X_i$ to $c_i$ for $1\leq i\leq n$.
+    Also let $i_y$ be the canonical homomorphism $C\to C_y$, and consider the composite homomorphism
+    \[
+      \beta:A[X_1,\ldots,X_n] \xrightarrow{\alpha} C \xrightarrow{i_y} C_y \xrightarrow{\vphi} B_x.
+    \]
+    We denote by $\mathfrak{a}$ the kernel of $\beta$;
+    since $A$ is Noetherian, so too is $A[X_1,\ldots,X_n]$, and so $\mathfrak{a}$ admits a finite system of generators $Q_j(X_1,\ldots,X_n)$ ($1\leq j\leq m$).
+    Furthermore, each of the elements $\vphi(i_y(c_i))$ can be written in the form $b_i/s_i$, where $b_i\in B$ and $s_i\not\in\mathfrak{j}_x$;
+\oldpage[I]{151}
+    we can further assume that all of the $s_i$ are equal to a single element $g\in B\setmin\mathfrak{j}_x$.
+    With this, by hypothesis, we have $Q_j(b_1/g,\ldots,b_n/g)=0$ in $B_x$; set
+    \[
+      Q_j(X_1/T,\ldots,X_n/T)=P_j(X_1,\ldots,X_n,T)/T^{k_j}
+    \]
+    where $P_j$ is homogeneous of degree $k_j$.
+    Then let $d_j=P_j(b_1,\ldots,b_n,g)\in B$.
+    By hypothesis, we have $t_jd_j=0$ for some $t_j\in B\setmin\mathfrak{j}_x$ ($1\leq j\leq m$), and we can clearly assume that all the $t_j$ are equal to a single element $h\in B\setmin\mathfrak{j}_x$;
+    from this we conclude that $P_j(hb_1,\ldots,hb_n,hg)=0$ for $1\leq j\leq m$.
+    With this, consider the homomorphism $\rho$ from $A[X_1,\ldots,X_n]$ to the ring of fractions $B_{hg}$ which sends $X_i$ to $hb_i/hg$ ($1\leq i\leq n$);
+    the image of $\mathfrak{a}$ under this homomorphism is $0$, and is \emph{a fortiori} the same as the image of the kernel $\alpha^{-1}(0)$ under $\rho$.
+    So $\rho$ factors as $A[X_1,\ldots,X_n]\xrightarrow{\alpha}C\xrightarrow{\gamma}B_{hg}$, with $\gamma(c_i)=hb_i/hg$, and it is clear that, if $i_x$ is the canonical homomorphism $B_{hg}\to B_x$, then the diagram
+    \[
+    \label{eq:1.6.5.1.1}
+      \xymatrix{
+        C\ar[r]^\gamma\ar[d]_{i_y} &
+        B_{hg}\ar[d]^{i_x}\\
+        C_y\ar[r]^\vphi &
+        B_x
+      }
+      \tag{6.5.1.1}
+    \]
+    is commutative; we thus have $\vphi=\gamma_x$, and since $\vphi$ is a local homomorphism, $^a\gamma(x)=y$;
+    $f=({}^a\gamma,\widetilde{\gamma})$ is thus an $S$-morphism from the neighbourhood $D(hg)$ of $x$ to $Y$ as claimed in the proposition.
 \end{enumerate}
 \end{proof}
 
@@ -668,7 +667,7 @@ This follows from Corollary~\sref{1.6.3.6}.
 \begin{corollary}[6.5.3]
 \label{1.6.5.3}
 Suppose that the hypotheses of Proposition~\sref{1.6.5.1}[ii], and suppose further that $Y$ is integral, and that $\vphi$ is an injective homomorphism.
-Then we can assume that $f=({}^a\gamma,\wt{\gamma})$, where $\gamma$ is injective.
+Then we can assume that $f=({}^a\gamma,\widetilde{\gamma})$, where $\gamma$ is injective.
 \end{corollary}
 
 \begin{proof}
@@ -679,9 +678,9 @@ Indeed, we can assume $C$ to be integral \sref{1.5.1.4}, hence $i_y$ injective; 
 \begin{proposition}[6.5.4]
 \label{1.6.5.4}
 Let $f=(\psi,\theta):X\to Y$ be a morphism of finite type, $x$ a point of $X$, and $y=\psi(x)$.
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item For $f$ to be a local immersion at the point $x$ \sref{1.4.5.1}, it is necessary and sufficient that $\theta_x^\sharp:\sh{O}_y\to\sh{O}_x$ be surjective.
-  \item Assume further that $Y$ is locally Noetherian.
+\begin{enumerate}
+  \item[{\rm(i)}] For $f$ to be a local immersion at the point $x$ \sref{1.4.5.1}, it is necessary and sufficient that $\theta_x^\sharp:\sh{O}_y\to\sh{O}_x$ be surjective.
+  \item[{\rm(ii)}] Assume further that $Y$ is locally Noetherian.
     For $f$ to be a local isomorphism at the point $x$ \sref{1.4.5.2}, it is necessary and sufficient that $\theta_x^\sharp$ be an isomorphism.
 \end{enumerate}
 \end{proposition}
@@ -690,9 +689,9 @@ Let $f=(\psi,\theta):X\to Y$ be a morphism of finite type, $x$ a point of $X$, a
 \label{proof-1.6.5.4}
 \medskip\noindent
 \begin{enumerate}
-    \item[(ii)] By \sref{1.6.5.1}, there exists an open neighbourhood $V$ of $Y$ and a morphism $g:V\to X$ such that $g\circ f$ (resp. $f\circ g$) is defined and agrees with the identity on a neighbourhood of $x$ (resp. $y$), whence we can easily see that $f$ is a local isomorphism.
-    \item[(i)] Since the question is local on $X$ and $Y$, we can assume that $X$ and $Y$ are affine, given by rings $A$ and $B$ (respectively);
-    we have $f=({}^a\vphi,\wt{\vphi})$, where $\vphi$ is a homomorphism of rings $B\to A$ that makes $A$ a $B$-algebra of finite type;
+  \item[(ii)] By \sref{1.6.5.1}, there exists an open neighbourhood $V$ of $Y$ and a morphism $g:V\to X$ such that $g\circ f$ (resp. $f\circ g$) is defined and agrees with the identity on a neighbourhood of $x$ (resp. $y$), whence we can easily see that $f$ is a local isomorphism.
+  \item[(i)] Since the question is local on $X$ and $Y$, we can assume that $X$ and $Y$ are affine, given by rings $A$ and $B$ (respectively);
+    we have $f=({}^a\vphi,\widetilde{\vphi})$, where $\vphi$ is a homomorphism of rings $B\to A$ that makes $A$ a $B$-algebra of finite type;
     we have $\vphi^{-1}(\mathfrak{j}_x)=\mathfrak{j}_y$, and the homomorphism $\vphi_x:B_y\to A_x$ induced by $\vphi$ is \emph{surjective}.
     Let $(t_i)$ ($1\leq i\leq n$) be a system of generators of the $B$-algebra $A$;
     the hypothesis on $\vphi_x$ implies that there exist $b_i\in B$ and some $c\in B\setmin\mathfrak{j}_x$ such that, in the ring of fractions $A_x$, we have $t_i/1=\vphi(b_i)/\vphi(c)$ for $1\leq i\leq n$.
@@ -712,7 +711,7 @@ Let $f=(\psi,\theta):X\to Y$ be a morphism of finite type, $x$ a point of $X$, a
     We will show that $\gamma$ is \emph{surjective};
     it suffices to show that the image of $B_h$ in $A_g$ contains the $t_i/1$ and $(g/1)^{-1}$.
     But we have $(g/1)^{-1}=(\vphi(c)/1)^{m-1}(\vphi(d)/1)^{-1}=\gamma(c^m/h)$, and $a/1=\gamma(d^{m+1}/h^m)$, so $(a\vphi(b_i))/1=\gamma(b_id^{m+1}/h^m)$, and since $t_i/1=(a\vphi(b_i)/1)(g/1)^{-1}$, our claim is proved.
-    The choice of $h$ implies that $\psi(D(g))\subset D(h)$, and we also know that the restriction of $f$ to $D(g)$ is equal to $({}^a\gamma,\wt{\gamma})$;
+    The choice of $h$ implies that $\psi(D(g))\subset D(h)$, and we also know that the restriction of $f$ to $D(g)$ is equal to $({}^a\gamma,\widetilde{\gamma})$;
     since $\gamma$ is surjective, this restriction is a closed immersion of $D(g)$ into $D(h)$ \sref{1.4.2.3}.
 \end{enumerate}
 \end{proof}
@@ -779,13 +778,13 @@ Further, $f^{-1}(U)$ is quasi-compact by hypothesis, and so the finite union of 
 \begin{proposition}[6.6.4]
 \label{1.6.6.4}
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\alph*)}]
-    \item An immersion $X\to Y$ is quasi-compact if it is closed, or if the underlying space of $Y$ is locally Noetherian, or if the underlying space of $X$ is Noetherian.
-    \item The composition of any two quasi-compact morphisms is quasi-compact.
-    \item If $f: X\to Y$ is a quasi-compact $S$-morphism, then so too is $f_{(S')}: X_{(S')}\to Y_{(S')}$ for any extension $g: S\to S'$ of the base prescheme.
-    \item If $f:X\to X'$ and $g:Y\to Y'$ are two quasi-compact $S$-morphisms, then $f\times_S g$ is quasi-compact.
-    \item If the composition of any two morphisms $f: X\to Y$ and $g:Y\to Z$ is quasi-compact, and if either $g$ is separated or the underlying space of $X$ is locally Noetherian, then $f$ is quasi-compact.
-    \item For a morphism $f$ to be quasi-compact, it is necessary and sufficient that $f_\red$ be quasi-compact.
+\begin{enumerate}
+  \item[{\rm(i)}] An immersion $X\to Y$ is quasi-compact if it is closed, or if the underlying space of $Y$ is locally Noetherian, or if the underlying space of $X$ is Noetherian.
+  \item[{\rm(ii)}] The composition of any two quasi-compact morphisms is quasi-compact.
+  \item[{\rm(iii)}] If $f: X\to Y$ is a quasi-compact $S$-morphism, then so too is $f_{(S')}: X_{(S')}\to Y_{(S')}$ for any extension $g: S\to S'$ of the base prescheme.
+  \item[{\rm(iv)}] If $f:X\to X'$ and $g:Y\to Y'$ are two quasi-compact $S$-morphisms, then $f\times_S g$ is quasi-compact.
+  \item[{\rm(v)}] If the composition of any two morphisms $f: X\to Y$ and $g:Y\to Z$ is quasi-compact, and if either $g$ is separated or the underlying space of $X$ is locally Noetherian, then $f$ is quasi-compact.
+  \item[{\rm(vi)}] For a morphism $f$ to be quasi-compact, it is necessary and sufficient that $f_\red$ be quasi-compact.
 \end{enumerate}
 \end{proposition}
 
@@ -829,13 +828,13 @@ Since $f$ is dominant, $B$ is a subring of $A$ \sref{1.1.2.7}, and the propositi
 \begin{proposition}[6.6.6]
 \label{1.6.6.6}
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\alph*)}]
-    \item Every local immersion is locally of finite type.
-    \item If two morphisms $f:X\to Y$ and $g:Y\to Z$ are locally of finite type, then so too is $g\circ f$.
-    \item If $f:X\to Y$ is an $S$-morphism locally of finite type, then $f_{(S')}:X_{(S')}\to Y_{(S')}$ is locally of finite type for any extension $S'\to S$ of the base prescheme.
-    \item If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms locally of finite type, then $f\times_S g$ is locally of finite type.
-    \item If the composition $g\circ f$ of two morphisms is locally of finite type, then $f$ is locally of finite type.
-    \item If a morphism $f$ is locally of finite type, then so too is $f_\red$.
+\begin{enumerate}
+  \item[{\rm(i)}] Every local immersion is locally of finite type.
+  \item[{\rm(ii)}] If two morphisms $f:X\to Y$ and $g:Y\to Z$ are locally of finite type, then so too is $g\circ f$.
+  \item[{\rm(iii)}] If $f:X\to Y$ is an $S$-morphism locally of finite type, then $f_{(S')}:X_{(S')}\to Y_{(S')}$ is locally of finite type for any extension $S'\to S$ of the base prescheme.
+  \item[{\rm(iv)}] If $f:X\to X'$ and $g:Y\to Y'$ are $S$-morphisms locally of finite type, then $f\times_S g$ is locally of finite type.
+  \item[{\rm(v)}] If the composition $g\circ f$ of two morphisms is locally of finite type, then $f$ is locally of finite type.
+  \item[{\rm(vi)}] If a morphism $f$ is locally of finite type, then so too is $f_\red$.
 \end{enumerate}
 \end{proposition}
 

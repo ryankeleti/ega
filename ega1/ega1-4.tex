@@ -20,9 +20,9 @@ Then the support $Y$ of the sheaf $\sh{O}_X/\sh{I}$ is closed, and if we denote 
 \label{proof-1.4.1.2}
 \oldpage[I]{120}
 It evidently suffices \sref{1.2.1.3} to consider the case where $X$ is an affine scheme, and to show that, in this case, $Y$ is closed in $X$, and is an \emph{affine scheme}.
-Indeed, if $X=\Spec(A)$, then we have $\sh{O}_X=\wt{A}$ and $\sh{I}=\wt{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of $A$ \sref{1.1.4.1};
+Indeed, if $X=\Spec(A)$, then we have $\sh{O}_X=\widetilde{A}$ and $\sh{I}=\widetilde{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of $A$ \sref{1.1.4.1};
 $Y$ is then equal to the closed subset $V(\mathfrak{I})$ of $X$ and can be identified with the prime spectrum of the ring $B=A/\mathfrak{I}$ \sref{1.1.1.11};
-in addition, if $\vphi$ is the canonical homomorphism $A\to B=A/\mathfrak{I}$, then the direct image ${}^a\vphi_*(\wt{B})$ is canonically identified with the sheaf $\wt{A}/\wt{\mathfrak{I}}=\sh{O}_X/\sh{I}$ (Proposition~\sref{1.1.6.3} and Corollary~\sref{1.1.3.9}), which finishes the proof.
+in addition, if $\vphi$ is the canonical homomorphism $A\to B=A/\mathfrak{I}$, then the direct image ${}^a\vphi_*(\widetilde{B})$ is canonically identified with the sheaf $\widetilde{A}/\widetilde{\mathfrak{I}}=\sh{O}_X/\sh{I}$ (Proposition~\sref{1.1.6.3} and Corollary~\sref{1.1.3.9}), which finishes the proof.
 \end{proof}
 
 We say that $(Y,\sh{O}_Y)$ is the \emph{subprescheme} of $(X,\sh{O}_X)$ \emph{defined by the sheaf of ideals $\sh{I}$};
@@ -143,20 +143,20 @@ It is clear that an immersion is a \emph{monomorphism} of preschemes \sref{1.4.1
 \begin{proposition}[4.2.2]
 \label{1.4.2.2}
 \medskip\noindent
-\begin{enumerate}[label={\rm(\alph*)}]
-  \item For a morphism $f=(\psi,\theta):Y\to X$ to be an open immersion, it is necessary and sufficient for $\psi$ to be a homeomorphism from $Y$ to some open subset of $X$, and, for all $y\in Y$, that the homomorphism $\theta_y^\sharp:\sh{O}_{\psi(y)}\to\sh{O}_y$ be bijective.
-  \item For a morphism $f=(\psi,\theta):Y\to X$ to be an immersion (resp. a closed immersion), it is necessary and sufficient for $\psi$ to be a homeomorphism from $Y$ to some locally closed (resp. closed) subset of $X$, and, for all $y\in Y$, that the homomorphism $\theta_y^\sharp:\sh{O}_{\psi(y)}\to\sh{O}_y$ be surjective.
+\begin{enumerate}
+  \item[{\rm(a)}] For a morphism $f=(\psi,\theta):Y\to X$ to be an open immersion, it is necessary and sufficient for $\psi$ to be a homeomorphism from $Y$ to some open subset of $X$, and, for all $y\in Y$, that the homomorphism $\theta_y^\sharp:\sh{O}_{\psi(y)}\to\sh{O}_y$ be bijective.
+  \item[{\rm(b)}] For a morphism $f=(\psi,\theta):Y\to X$ to be an immersion (resp. a closed immersion), it is necessary and sufficient for $\psi$ to be a homeomorphism from $Y$ to some locally closed (resp. closed) subset of $X$, and, for all $y\in Y$, that the homomorphism $\theta_y^\sharp:\sh{O}_{\psi(y)}\to\sh{O}_y$ be surjective.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.4.2.2}
 \medskip\noindent
-\begin{enumerate}[label=(\alph*)]
-  \item The conditions are evidently necessary.
+\begin{enumerate}
+  \item[(a)] The conditions are evidently necessary.
     Conversely, if they are satisfied, then it is clear that $\theta^\sharp$ is an isomorphism from $\sh{O}_Y$ to $\psi^*(\sh{O}_X)$, and $\psi^*(\sh{O}_X)$ is the sheaf induced by ``transport of structure'' via $\psi^{-1}$ from $\sh{O}_X|\psi(Y)$;
     hence the conclusion.
-  \item The conditions are evidently necessary---we prove that they are sufficient.
+  \item[(b)] The conditions are evidently necessary---we prove that they are sufficient.
     Consider first the particular case where we suppose that $X$ is an affine scheme, and that $Z=\psi(Y)$ is \emph{closed} in $X$.
     We then know \sref[0]{0.3.4.6} that $\psi_*(\sh{O}_Y)$ has support equal to $Z$, and that, denoting its restriction to $Z$ by $\sh{O}_Z'$, the ringed space $(Z,\sh{O}_Z')$ is induced from $(Y,\sh{O}_Y)$ by transport of structure via the homeomorphism $\psi$ considered as a map from $Y$ to $Z$.
     Let us now show that $f_*(\sh{O}_Y)=\psi_*(\sh{O}_Y)$ is a \emph{quasi-coherent} $\sh{O}_X$-module.
@@ -166,7 +166,7 @@ It is clear that an immersion is a \emph{monomorphism} of preschemes \sref{1.4.1
     $\psi(V)$ is then open in $Z$, and so equal to the intersection of $Z$ with an open subset $U$ of $X$, and the restriction of $U$ to $\psi_*(\sh{O}_Y)$ is identical to the restriction of $U$ to the direct image
 \oldpage[I]{123}
     $(\psi_V)_*(\sh{O}_Y|V)$, where $\psi_V$ is the restriction of $\psi$ to $V$.
-    The restriction of the morphism $(\psi,\theta)$ to $(V,\sh{O}_Y|V)$ is a morphism from this aforementioned prescheme to $(X,\sh{O}_X)$, and, as a result, is of the form $({}^a\vphi,\wt{\vphi})$, where $\vphi$ is the homomorphism from the ring $A=\Gamma(X,\sh{O}_X)$ to the ring $\Gamma(V,\sh{O}_Y)$ \sref{1.1.7.3};
+    The restriction of the morphism $(\psi,\theta)$ to $(V,\sh{O}_Y|V)$ is a morphism from this aforementioned prescheme to $(X,\sh{O}_X)$, and, as a result, is of the form $({}^a\vphi,\widetilde{\vphi})$, where $\vphi$ is the homomorphism from the ring $A=\Gamma(X,\sh{O}_X)$ to the ring $\Gamma(V,\sh{O}_Y)$ \sref{1.1.7.3};
     we conclude that $(\psi_V)_*(\sh{O}_Y|V)$ is a quasi-coherent $\sh{O}_X$-module \sref{1.1.6.3}, which proves our assertion, due to the local nature of quasi-coherent sheaves.
     In addition, the hypothesis that $\psi$ is a homeomorphism implies \sref[0]{0.3.4.5} that, for all $y\in Y$, $\psi_y$ is an isomorphism $(\psi_*(\sh{O}_Y))_{\psi(y)}\to\sh{O}_y$;
     since the diagram
@@ -179,9 +179,9 @@ It is clear that an immersion is a \emph{monomorphism} of preschemes \sref{1.4.1
       }
     \]
     is commutative, and the vertical arrows are the isomorphisms \sref[0]{0.3.7.2}, the hypothesis that $\theta_y^\sharp$ is surjective implies that $\theta_{\psi(y)}$ is surjective as well.
-    Since the support of $\psi_*(\sh{O}_Y)$ is $Z=\psi(Y)$, $\theta$ is a \emph{surjective} homomorphism from $\sh{O}_X=\wt{A}$ to the quasi-coherent $\sh{O}_X$-module $f_*(\sh{O}_Y)$.
-    As a result, there exists a unique isomorphism $\omega$ from a sheaf quotient $\wt{A}/\wt{\mathfrak{J}}$ (with $\mathfrak{J}$ being an ideal of $A$) to $f_*(\sh{O}_Y)$ which, when composed with the canonical homomorphism $\wt{A}\to\wt{A}/\wt{\mathfrak{J}}$, gives $\theta$ \sref{1.1.3.8};
-    if $\sh{O}_Z$ denotes the restriction of $\wt{A}/\wt{\mathfrak{J}}$ to $Z$, then $(Z,\sh{O}_Z)$ is a subprescheme of $(X,\sh{O}_X)$, and $f$ factors through the canonical injection of this subprescheme into $X$ and the isomorphism $(\psi_0,\omega_0)$, where $\psi_0$ is $\psi$ considered as a map from $Y$ to $Z$, and $\omega_0$ the restriction of $\omega$ to $\sh{O}_Z$.
+    Since the support of $\psi_*(\sh{O}_Y)$ is $Z=\psi(Y)$, $\theta$ is a \emph{surjective} homomorphism from $\sh{O}_X=\widetilde{A}$ to the quasi-coherent $\sh{O}_X$-module $f_*(\sh{O}_Y)$.
+    As a result, there exists a unique isomorphism $\omega$ from a sheaf quotient $\widetilde{A}/\widetilde{\mathfrak{J}}$ (with $\mathfrak{J}$ being an ideal of $A$) to $f_*(\sh{O}_Y)$ which, when composed with the canonical homomorphism $\widetilde{A}\to\widetilde{A}/\widetilde{\mathfrak{J}}$, gives $\theta$ \sref{1.1.3.8};
+    if $\sh{O}_Z$ denotes the restriction of $\widetilde{A}/\widetilde{\mathfrak{J}}$ to $Z$, then $(Z,\sh{O}_Z)$ is a subprescheme of $(X,\sh{O}_X)$, and $f$ factors through the canonical injection of this subprescheme into $X$ and the isomorphism $(\psi_0,\omega_0)$, where $\psi_0$ is $\psi$ considered as a map from $Y$ to $Z$, and $\omega_0$ the restriction of $\omega$ to $\sh{O}_Z$.
 
     We now pass to the general case.
     Let $U$ be an affine open subset of $X$ such that $U\cap\psi(Y)$ is closed in $U$ and nonempty.
@@ -204,12 +204,12 @@ For a morphism $f=(\psi,\theta):Y\to X$ to be a closed immersion, it is necessar
 \begin{corollary}[4.2.4]
 \label{1.4.2.4}
 \medskip\noindent
-\begin{enumerate}[label={\rm(\alph*)}]
-  \item Let $f$ be a morphism $Y\to X$, and $(V_\lambda)$ a cover of $f(Y)$ by open subsets of $X$.
+\begin{enumerate}
+  \item[{\rm(a)}] Let $f$ be a morphism $Y\to X$, and $(V_\lambda)$ a cover of $f(Y)$ by open subsets of $X$.
     For $f$ to be an immersion (resp. an open immersion), it is necessary and sufficient
 \oldpage[I]{124}
     for its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ to be an immersion (resp. an open immersion) into $V_\lambda$.
-  \item Let $f$ be a morphism $Y\to X$, and $(V_\lambda)$ an open cover of $X$.
+  \item[{\rm(b)}] Let $f$ be a morphism $Y\to X$, and $(V_\lambda)$ an open cover of $X$.
     For $f$ to be a closed immersion, it is necessary and sufficient for its restriction to each of the induced preschemes $f^{-1}(V_\lambda)$ to be a closed immersion into $V_\lambda$.
 \end{enumerate}
 \end{corollary}
@@ -273,11 +273,11 @@ and we then conclude as in the previous part of the proof.
 
 So suppose $X$, $Y$, and $S$ are affine, and let $B$, $C$, and $A$ be their respective rings.
 Then $B$ and $C$ are $A$-algebras, and $X'$ and $Y'$ are affine schemes whose rings are quotient algebras $B'$ and $C'$ of $B$ and $C$ respectively.
-In addition, we have $\alpha=({}^a\rho,\wt{\rho})$ and $\beta=({}^a\sigma,\wt{\sigma})$, where $\rho$ and $\sigma$ are (respectively) the canonical homomorphisms $B\to B'$ and $C\to C'$ \sref{1.1.7.3}.
-With that in mind, we know that $X\times_S Y$ (resp. $X'\times_S Y'$) is an affine scheme with ring $B\otimes_A C$ (resp. $B'\otimes_A C'$), and $\alpha\times_S\beta=({}^a\tau,\wt{\tau})$, where $\tau$ is the homomorphism $\rho\otimes\sigma$ from $B\otimes_A C$ to $B'\otimes_A C'$ (Proposition~\sref{1.3.2.2} and Corollary~\sref{1.3.2.3});
+In addition, we have $\alpha=({}^a\rho,\widetilde{\rho})$ and $\beta=({}^a\sigma,\widetilde{\sigma})$, where $\rho$ and $\sigma$ are (respectively) the canonical homomorphisms $B\to B'$ and $C\to C'$ \sref{1.1.7.3}.
+With that in mind, we know that $X\times_S Y$ (resp. $X'\times_S Y'$) is an affine scheme with ring $B\otimes_A C$ (resp. $B'\otimes_A C'$), and $\alpha\times_S\beta=({}^a\tau,\widetilde{\tau})$, where $\tau$ is the homomorphism $\rho\otimes\sigma$ from $B\otimes_A C$ to $B'\otimes_A C'$ (Proposition~\sref{1.3.2.2} and Corollary~\sref{1.3.2.3});
 since this homomorphism is surjective, $\alpha\times_S\beta$ is an immersion.
 In addition, if $\mathfrak{b}$ (resp. $\mathfrak{c}$) is the kernel of $\rho$ (resp. $\sigma$), then the kernel of $\tau$ is $u(\mathfrak{b})+v(\mathfrak{c})$, where $u$ (resp. $v$) is the homomorphism $b\mapsto b\otimes 1$ (resp. $c\mapsto 1\otimes c$).
-Since $p=({}^a u,\wt{u})$ and $q=({}^a v,\wt{v})$, this kernel corresponds, in the prime spectrum of $B\otimes_A C$, to the closed set $p^{-1}(X')\cap q^{-1}(Y')$ (\sref{1.1.2.2.1} and Proposition~\sref{1.1.1.2}[iii]), which finishes the proof.
+Since $p=({}^a u,\widetilde{u})$ and $q=({}^a v,\widetilde{v})$, this kernel corresponds, in the prime spectrum of $B\otimes_A C$, to the closed set $p^{-1}(X')\cap q^{-1}(Y')$ (\sref{1.1.2.2.1} and Proposition~\sref{1.1.1.2}[iii]), which finishes the proof.
 \end{proof}
 
 \begin{corollary}[4.3.2]

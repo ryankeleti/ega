@@ -26,8 +26,10 @@ cd "$BASE" || return
   "$PIPLOC"/plastex --renderer=Gerby ./"$FNAME".tex
 
   # 3) import tex
-  rm -rf "$BASE"/gerby-website/gerby/tex
-  git clone https://github.com/ryankeleti/ega "$BASE"/gerby-website/gerby/tex
+  if [ ! -d "$BASE"/gerby-website/gerby/tex ]; then
+    mkdir -p "$BASE"/gerby-website/gerby/tex
+  fi
+  curl https://raw.githubusercontent.com/ryankeleti/ega/master/CONTRIBUTORS -o "$BASE"/gerby-website/gerby/tex/CONTRIBUTORS
 
   # 4) import plasTeX output into database.
   cd "$BASE"/gerby-website/gerby/tools/ || return

@@ -1,5 +1,7 @@
 % current contributors (last name alphabetical order)
 % this file is read by scripts/make_book.py for building book.tex with contributors names.
+% also used for web version, if and when it's up.
 
 Tim Hosgood
 Ryan Keleti
+

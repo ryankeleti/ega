@@ -1,7 +1,5 @@
-#
 # modified from https://github.com/stacks/stacks-project
-# license at scripts/COPYING.md
-#
+# see scripts/README.md
 FILES = what intro ega0 ega1 ega2 ega3 ega4 ref
 TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
@@ -14,6 +12,7 @@ default: $(TEX)
 	@echo "make pdfs       --- makes all pdfs"
 	@echo "make book       --- makes complete book pdf"
 	@echo "make all        --- make pdfs + make book"
+	@echo "make auto       --- make all, but for server"
 	@echo "make clean      --- clean up"
 	@echo "make cleanaux   --- clean up auxiliary files"
 	@echo "make cleanforce --- clean up everything without prompt"

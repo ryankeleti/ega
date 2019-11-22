@@ -38,17 +38,21 @@ def rm_oldpage(line):
   return line
 
 def convert_sref(line):
-  line = re.sub(r"sref\[.*?\]", "sref", line)
-  line = re.sub(r"sref{(.*?)}\[(.*?)\]", r"sref{\1}, (\2)", line)
-  line = re.sub(r"sref", "ref", line)
+  line = re.sub(r"\\eref", r"\\ref", line)
+  line = re.sub(r"\\sref\[.*?\]", r"\\sref", line)
+  line = re.sub(r"\\sref{(.*?)}\[(.*?)\]", r"\\sref{\1}, (\2)", line)
+  line = re.sub(r"\\sref", r"\\ref", line)
   return line
 
 def convert_sectioning(line):
   if line.find("\\title{Preliminaries") == 0:
-    line = line.replace("\\title{Preliminaries", "\\setcounter{chapter}{-1}\\chapter{Preliminaries")
-  line = re.sub(r"\\title{", r"\\chapter{", line)
-  line = re.sub(r"\\chapter{}", "", line)
-#  line = re.sub(r"\\section\*{(.*?)}", r"{\\bf \1}", line)
+    line = line.replace("\\title{Preliminaries", "\\setcounter{part}{-1}\\part{Preliminaries")
+  line = re.sub(r"\\title{", r"\\part{", line)
+  line = re.sub(r"\\section{", r"\\chapter{", line)
+  line = re.sub(r"\\subsection{", r"\\section{", line)
+  line = re.sub(r"{section}", r"{chapter}", line)
+  line = re.sub(r"{subsection}", r"{section}", line)
+  line = re.sub(r"\\part{}", "", line)
   return line
 
 path = get_path() 

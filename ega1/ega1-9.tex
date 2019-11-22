@@ -65,7 +65,7 @@ $Y$, $\sh{F}\otimes_S\sh{G}$ is a \emph{right-exact additive covariant bifunctor
 Let $S$, $X$, and $Y$ be affine schemes of rings
 $A$, $B$, and $C$ (respectively), with $B$ and $C$ being $A$-algebras. Let $M$
 (resp. $N$) be a $B$-module (resp. $C$-module), and
-$\sh{F}=\wt{M}$ (resp. $\sh{G}=\wt{N}$) the
+$\sh{F}=\widetilde{M}$ (resp. $\sh{G}=\widetilde{N}$) the
 associated quasi-coherent sheaf; then $\sh{F}\otimes_S\sh{G}$ is
 canonically isomorphic to the sheaf associated to the $(B\otimes_A C)$-module
 $M\otimes_A N$.
@@ -265,7 +265,7 @@ We leave it to the reader to extend the results in this section to the more
 general case of an arbitrary (but finite) number of factors, instead of just two.
 
 \subsection{Direct image of a quasi-coherent sheaf}
-\label{subsection:1.9.2.1}
+\label{subsection:1.9.2}
 
 \begin{proposition}[9.2.1]
 \label{1.9.2.1}
@@ -283,8 +283,8 @@ quasi-coherent $\sh{O}_Y$-module.
 \label{proof-1.9.2.1}
 Since this is a local condition on $Y$, we can assume that $Y$ is equal to one
 of the $Y_\alpha$, and thus omit the indices $\alpha$.
-\begin{enumerate}[label=(\alph*)]
-  \item First, suppose that the $X_i\cap X_j$
+\begin{enumerate}
+  \item[(a)] First, suppose that the $X_i\cap X_j$
     are themselves \emph{affine} opens. We set $\sh{F}_i=\sh{F}|X_i$ and
     $\sh{F}_{ij}=\sh{F}|(X_i\cap X_j)$, and let $\sh{F}'_i$ and
     $\sh{F}'_{ij}$ be the images of $\sh{F}_i$ and $\sh{F}_{ij}$
@@ -310,7 +310,7 @@ of the $Y_\alpha$, and thus omit the indices $\alpha$.
     \]
     and the compatibility conditions are clearly satisfied.
     To prove that the kernel $\sh{R}$ of $u$ is $f_*(\sh{F})$, we define a homomorphism from $f_*(\sh{F})$ to $\sh{R}$ by sending each section $s\in\Gamma(f^{-1}(W),\sh{F})$ to the family $(s_i)$, where $s_i$ is the restriction of $s$ to $f^{-1}(W)\cap X_i$; axioms (F1) and (F2) of sheaves (G,~II,~1.1) tell us that this homomorphism is \emph{bijective}, which finishes the proof in this case.
-  \item In the general case, the same reasoning applies once we have established that the $\sh{F}_{ij}$ are quasi-coherent.
+  \item[(b)] In the general case, the same reasoning applies once we have established that the $\sh{F}_{ij}$ are quasi-coherent.
     But, by hypothesis, $X_i\cap X_j$ is a finite union of affine opens $X_{ijk}$; and since the $X_{ijk}$ are affine opens \emph{in a scheme}, the intersection of any two of them is again an affine open \sref{1.5.5.6}. We are thus led to the first case, and so we have proved Proposition~\sref{1.9.2.1}.
 \end{enumerate}
 \end{proof}
@@ -318,10 +318,10 @@ of the $Y_\alpha$, and thus omit the indices $\alpha$.
 \begin{corollary}[9.2.2]
 \label{1.9.2.2}
 The conclusion of Proposition~\sref{1.9.2.1} holds true in each of the following cases:
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item $f$ is separated and quasi-compact;
-  \item $f$ is separated and of finite type;
-  \item $f$ is quasi-compact, and the underlying space of $X$ is locally Noetherian.
+\begin{enumerate}
+  \item[{\rm(a)}] $f$ is separated and quasi-compact;
+  \item[{\rm(b)}] $f$ is separated and of finite type;
+  \item[{\rm(c)}] $f$ is quasi-compact, and the underlying space of $X$ is locally Noetherian.
 \end{enumerate}
 \end{corollary}
 
@@ -340,17 +340,17 @@ Let $X$ be a prescheme whose underlying space is Noetherian, or a scheme whose u
 space is quasi-compact. Let $\sh{L}$ be an invertible $\sh{O}_X$-module \sref[0]{0.5.4.1}, $f$ a
 section of $\sh{L}$ over $X$, $X_f$ the open set of $x\in X$ such that $f(x)\neq0$
 \sref[0]{0.5.5.1}, and $\sh{F}$ a quasi-coherent $\sh{O}_X$-module.
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $s\in\Gamma(X,\sh{F})$ is such that $s|X_f=0$, then there exists an integer $n>0$ such that $s\otimes f^{\otimes n}=0$.
-  \item For every section $s\in\Gamma(X_f,\sh{F})$, there exists an integer $n>0$ such that $s\otimes f^{\otimes n}$ extends to a section of $\sh{F}\otimes\sh{L}^{\otimes n}$ over $X$.
+\begin{enumerate}
+  \item[{\rm(i)}] If $s\in\Gamma(X,\sh{F})$ is such that $s|X_f=0$, then there exists an integer $n>0$ such that $s\otimes f^{\otimes n}=0$.
+  \item[{\rm(ii)}] For every section $s\in\Gamma(X_f,\sh{F})$, there exists an integer $n>0$ such that $s\otimes f^{\otimes n}$ extends to a section of $\sh{F}\otimes\sh{L}^{\otimes n}$ over $X$.
 \end{enumerate}
 \end{theorem}
 
 \begin{proof}
 \label{proof-1.9.3.1}
 \medskip\noindent
-\begin{enumerate}[label=(\roman*)]
-  \item Since the underlying space of $X$ is quasi-compact, and thus the union of
+\begin{enumerate}
+  \item[(i)] Since the underlying space of $X$ is quasi-compact, and thus the union of
     finitely-many affine opens $U_i$ with $\sh{L}|U_i$ isomorphic to
     $\sh{O}_X|U_i$, we can reduce to the case where $X$ is affine and $\sh{L}=\sh{O}_X$.
     In this case, $f$ can be identified with an element of $A(X)$, and we have that
@@ -358,7 +358,7 @@ section of $\sh{L}$ over $X$, $X_f$ the open set of $x\in X$ such that $f(x)\neq
     $s|X_f$ to the corresponding element of $M_f$, and the result is then trivial,
     recalling the definition of a module of fractions.
 \oldpage[I]{173}
-  \item Again, $X$ is a finite union of affine opens $U_i$ ($1\leq i\leq r$)
+  \item[(ii)] Again, $X$ is a finite union of affine opens $U_i$ ($1\leq i\leq r$)
     such that $\sh{L}|U_i\cong\sh{O}_X|U_i$, and, for every $i$,
     $(s\otimes f^{\otimes n})|(U_i\cap X_f)$ can be identified (by the aforementioned
     isomorphism) with $(f|(U_i\cap X_f))^n(s|(U_i\cap X_f))$. We then know
@@ -405,16 +405,16 @@ of $\sh{O}_X|\sh{J}$. Then there exists an integer $n>0$ such that $\sh{J}^n\sh{
 \begin{proof}
 \label{proof-1.9.3.4}
 Since $X$ is a union of finitely-many affine opens whose rings are Noetherian, we can suppose
-that $X$ is affine, given by some Noetherian ring $A$; then $\sh{F}=\wt{M}$, where
-$M=\Gamma(X,\sh{F})$ is an $A$-module of finite type, and $\sh{J}=\wt{\fk{J}}$,
-where $\fk{J}=\Gamma(X,\sh{J})$ is an ideal of $A$ (\sref{1.1.4.1} and
-\sref{1.1.5.1}). Since $A$ is Noetherian, $\fk{J}$ admits a finite system of
+that $X$ is affine, given by some Noetherian ring $A$; then $\sh{F}=\widetilde{M}$, where
+$M=\Gamma(X,\sh{F})$ is an $A$-module of finite type, and $\sh{J}=\widetilde{\mathfrak{J}}$,
+where $\mathfrak{J}=\Gamma(X,\sh{J})$ is an ideal of $A$ (\sref{1.1.4.1} and
+\sref{1.1.5.1}). Since $A$ is Noetherian, $\mathfrak{J}$ admits a finite system of
 generators $f_i$ ($1\leq i\leq m$). By hypothesis, every section of $\sh{F}$ over
 $X$ is zero on each of the $D(f_i)$; if $s_j$ ($1\leq j\leq q$) are sections of
 $\sh{F}$ that generate $M$, then there exists an integer $h$, independent of $i$ and $j$,
 such that $f_i^h s_j=0$ \sref{1.1.4.1}, whence $f_i^h s=0$ for all $s\in M$. We thus
-conclude that, if $n=mh$, then $\fk{J}^n M=0$, and so the corresponding $\sh{O}_X$-module
-$\sh{J}^n\sh{F}=\wt{\fk{J}^n M}$ \sref{1.1.3.13} is zero.
+conclude that, if $n=mh$, then $\mathfrak{J}^n M=0$, and so the corresponding $\sh{O}_X$-module
+$\sh{J}^n\sh{F}=\widetilde{\mathfrak{J}^n M}$ \sref{1.1.3.13} is zero.
 \end{proof}
 
 \begin{corollary}[9.3.5]
@@ -461,10 +461,10 @@ Let $X$ be a prescheme, and $U$ an open subset of $X$ such that the canonical in
 $j:U\to X$ is a quasi-compact morphism \emph{(which will be the case for \emph{all} $U$ if
 the underlying space of $X$ is \emph{locally Noetherian}
 \sref{1.6.6.4}[i])}. Then:
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item for every quasi-coherent $(\sh{O}_X|U)$-module $\sh{G}$, $j_*(\sh{G})$
+\begin{enumerate}
+  \item[{\rm(i)}] for every quasi-coherent $(\sh{O}_X|U)$-module $\sh{G}$, $j_*(\sh{G})$
     is a quasi-coherent $\sh{O}_X$-module, and $j_*(\sh{G})|U=j^*(j_*(\sh{G}))=\sh{G}$;
-  \item for every quasi-coherent $\sh{O}_X$-module $\sh{F}$ and every quasi-coherent
+  \item[{\rm(ii)}] for every quasi-coherent $\sh{O}_X$-module $\sh{F}$ and every quasi-coherent
     $(\sh{O}_X|U)$-submodule $\sh{G}$, the canonical extension
     $\overline{\sh{G}}$ of $\sh{G}$ \sref{1.9.4.1} is a
     quasi-coherent $\sh{O}_X$-submodule of $\sh{F}$.
@@ -515,7 +515,7 @@ and for every quasi-coherent $(\sh{O}_X|U)$-submodule $\sh{G}$ of $\sh{F}|U$ of 
 follows
 \oldpage[I]{175}
 that $\sh{F}$ is the inductive limit of its quasi-coherent $\sh{O}_X$-submodules of finite type.
-Indeed, for every affine open $U\subset X$, we have that $\sh{F}|U=\wt{M}$, where $M$
+Indeed, for every affine open $U\subset X$, we have that $\sh{F}|U=\widetilde{M}$, where $M$
 is an $A(U)$-module, and since the latter is the inductive limit of its quasi-coherent
 submodules of finite type, $\sh{F}|U$ is the inductive limit of its $(\sh{O}_X|U)$-submodules of
 finite type \sref{1.1.3.9}. But, by hypothesis, each of these submodules is induced on $U$
@@ -578,11 +578,10 @@ $W_\mu\cap V_\mu$, which are both quasi-compact by virtue of the hypotheses.
 
 \begin{theorem}[9.4.7]
 \label{1.9.4.7}
-Let $X$ be a prescheme, and $U$ an open subset of $X$. Suppose that one of the following
-conditions is verified:
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item the underlying space of $X$ is locally Noetherian;
-  \item $X$ is a quasi-compact scheme and $U$ is a quasi-compact open.
+Let $X$ be a prescheme, and $U$ an open subset of $X$. Suppose that one of the following conditions is verified:
+\begin{enumerate}
+  \item[{\rm(a)}] the underlying space of $X$ is locally Noetherian;
+  \item[{\rm(b)}] $X$ is a quasi-compact scheme and $U$ is a quasi-compact open.
 \end{enumerate}
 Then, for every quasi-coherent $\sh{O}_X$-module $\sh{F}$ and every quasi-coherent
 $(\sh{O}_X|U)$-submodule $\sh{G}$ of $\sh{F}|U$ \emph{of finite type}, there exists a
@@ -775,9 +774,9 @@ We will see in Chapter~IV that it is the same for an extension $Y_1\to Y$ which 
 \begin{proposition}[9.5.9]
 \label{1.9.5.9}
 Let $f:X\to Y$ be a morphism such that the closed image $Y'$ of $X$ under $f$ exists.
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $X$ is reduced, then so too is $Y'$.
-  \item If the hypotheses of Proposition~\sref{1.9.5.1} are satisfied and $X$ is irreducible (resp. integral), then so too is $Y'$.
+\begin{enumerate}
+  \item[{\rm(i)}] If $X$ is reduced, then so too is $Y'$.
+  \item[{\rm(ii)}] If the hypotheses of Proposition~\sref{1.9.5.1} are satisfied and $X$ is irreducible (resp. integral), then so too is $Y'$.
 \end{enumerate}
 \end{proposition}
 
@@ -828,10 +827,10 @@ For a $\sh{B}$-module $\sh{F}$ to be quasi-coherent (on the ringed space $(X,\sh
 
 \begin{proof}
 \label{proof-1.9.6.1}
-Since the question is local, we can assume $X$ to be affine, given by some ring $A$, and thus $\sh{B}=\wt{B}$, where $B$ is an $A$-algebra \sref{1.1.4.3}.
+Since the question is local, we can assume $X$ to be affine, given by some ring $A$, and thus $\sh{B}=\widetilde{B}$, where $B$ is an $A$-algebra \sref{1.1.4.3}.
 If $\sh{F}$ is quasi-coherent on the ringed space $(X,\sh{B})$ then we can also assume that $\sh{F}$ is the cokernel of a $\sh{B}$-homomorphism $\sh{B}^{(I)}\to\sh{B}^{(J)}$; since this homomorphism is also an $\sh{O}_X$-homomorphism of $\sh{O}_X$-modules, and $\sh{B}^{(I)}$ and $\sh{B}^{(J)}$ are quasi-coherent $\sh{O}_X$-modules \sref{1.1.3.9}[ii], $\sh{F}$ is also a quasi-coherent $\sh{O}_X$-module \sref{1.1.3.9}[i].
 
-Conversely, if $\sh{F}$ is a quasi-coherent $\sh{O}_X$-module, then $\sh{F}=\wt{M}$, where $M$ is a $B$-module \sref{1.1.4.3}; $M$ is isomorphic to the cokernel of a $B$-homomorphism $B^{(I)}\to B^{(J)}$, so $\sh{F}$ is a $\sh{B}$-module isomorphic to the cokernel of the corresponding homomorphism $\sh{B}^{(I)}\to\sh{B}^{(J)}$ \sref{1.1.3.13}, which finishes the proof.
+Conversely, if $\sh{F}$ is a quasi-coherent $\sh{O}_X$-module, then $\sh{F}=\widetilde{M}$, where $M$ is a $B$-module \sref{1.1.4.3}; $M$ is isomorphic to the cokernel of a $B$-homomorphism $B^{(I)}\to B^{(J)}$, so $\sh{F}$ is a $\sh{B}$-module isomorphic to the cokernel of the corresponding homomorphism $\sh{B}^{(I)}\to\sh{B}^{(J)}$ \sref{1.1.3.13}, which finishes the proof.
 \end{proof}
 
 In particular, if $\sh{F}$ and $\sh{G}$ are two quasi-coherent $\sh{B}$-modules, then $\sh{F}\otimes_{\sh{B}}\sh{G}$ is a quasi-coherent $\sh{B}$-module; similarly for $\shHom(\sh{F},\sh{G})$ whenever we further suppose that $\sh{F}$ admits a finite presentation \sref{1.1.3.13}.
@@ -839,7 +838,7 @@ In particular, if $\sh{F}$ and $\sh{G}$ are two quasi-coherent $\sh{B}$-modules,
 \begin{env}[9.6.2]
 \label{1.9.6.2}
 Given a prescheme $X$, we say that a quasi-coherent $\sh{O}_X$-algebra $\sh{B}$ is of \emph{finite type} if, for all $x\in X$, there exists an open \emph{affine} neighborhood $U$ of $x$ such that $\Gamma(U,\sh{B})=B$ is an algebra of finite type over $\Gamma(U,\sh{O}_X)=A$.
-We then have that $\sh{B}|U=\wt{B}$ and, for all $f\in A$, the induced $(\sh{O}_X|D(f))$-algebra $\sh{B}|D(f)$ is of finite type, because it is isomorphic to $(B_f)^{\sim}$, and $B_f=B\otimes_A A_f$ is clearly an algebra of finite type over $A_f$.
+We then have that $\sh{B}|U=\widetilde{B}$ and, for all $f\in A$, the induced $(\sh{O}_X|D(f))$-algebra $\sh{B}|D(f)$ is of finite type, because it is isomorphic to $(B_f)^{\sim}$, and $B_f=B\otimes_A A_f$ is clearly an algebra of finite type over $A_f$.
 Since the $D(f)$ form a basis for the topology of $U$, we thus conclude that if $\sh{B}$ is a quasi-coherent $\sh{O}_X$-algebra of finite type then, for every open $V$ of $X$, $\sh{B}|V$ is a quasi-coherent $(\sh{O}_X|V)$-algebra of finite type.
 \end{env}
 
@@ -851,10 +850,10 @@ Then every quasi-coherent $\sh{O}_X$-algebra $\sh{B}$ of finite type is a cohere
 
 \begin{proof}
 \label{proof-1.9.6.3}
-We can once again restrict to the case where $X$ is an affine scheme given by a Noetherian ring $A$, and where $\sh{B}=\wt{B}$, with $B$ being an $A$-algebra of finite type; $B$ is then a Noetherian ring.
+We can once again restrict to the case where $X$ is an affine scheme given by a Noetherian ring $A$, and where $\sh{B}=\widetilde{B}$, with $B$ being an $A$-algebra of finite type; $B$ is then a Noetherian ring.
 With this, it remains to prove that the kernel $\sh{N}$ of a $\sh{B}$-homomorphism $\sh{B}^m\to\sh{B}$ is a $\sh{B}$-module
 \oldpage[I]{180}
-of finite type; but it is isomorphic (as a $\sh{B}$-module) to $\wt{N}$, where $N$ is the kernel of the corresponding homomorphism of $B$-modules $B^m\to B$ \sref{1.1.3.13}.
+of finite type; but it is isomorphic (as a $\sh{B}$-module) to $\widetilde{N}$, where $N$ is the kernel of the corresponding homomorphism of $B$-modules $B^m\to B$ \sref{1.1.3.13}.
 Since $B$ is Noetherian, the submodule $N$ of $B^m$ is a $B$-module of finite type, so there exists a homomorphism $B^p\to B^m$ with image $N$; since the sequence $B^p\to B^m\to B$ is exact, so too is the corresponding sequence $\sh{B}^p\to\sh{B}^m\to\sh{B}$ \sref{1.1.3.5}, and since $\sh{N}$ is the image of $\sh{B}^p\to\sh{B}^m$ \sref{1.1.3.9}[i], this proves the proposition.
 \end{proof}
 
@@ -867,7 +866,7 @@ If this is the case, and if $\sh{G}$ is a $\sh{B}$-submodule or a quotient modul
 \begin{proof}
 \label{proof-1.9.6.4}
 Taking \sref{1.9.6.1} into account, the conditions on $\sh{F}$ are clearly necessary; we will show that they are sufficient.
-We can restrict to the case where $X$ is affine, given by some Noetherian ring $A$, where $\sh{B}=\wt{B}$, with $B$ an $A$-algebra of finite type, where $\sh{F}=\wt{M}$, with $M$ a $B$-module, and where there exists a surjective $\sh{B}$-homomorphism $\sh{B}^m\to\sh{F}\to0$.
+We can restrict to the case where $X$ is affine, given by some Noetherian ring $A$, where $\sh{B}=\widetilde{B}$, with $B$ an $A$-algebra of finite type, where $\sh{F}=\widetilde{M}$, with $M$ a $B$-module, and where there exists a surjective $\sh{B}$-homomorphism $\sh{B}^m\to\sh{F}\to0$.
 We then have the corresponding exact sequence $B^m\to M\to0$, so $M$ is a $B$-module of finite type; further, the kernel $P$ of the homomorphism $B^m\to M$ is then a $B$-module of finite type, since $B$ is Noetherian.
 We thus conclude \sref{1.1.3.13} that $\sh{F}$ is the cokernel of a $\sh{B}$-homomorphism $\sh{B}^m\to\sh{B}^n$, and is thus coherent, since $\sh{B}$ is a coherent sheaf of rings \sref[0]{0.5.3.4}.
 The same reasoning shows that a quasi-coherent $\sh{B}$-submodule (resp. a quotient $\sh{B}$-module) of $\sh{F}$ is of finite type, from whence the second part of the corollary.
@@ -881,7 +880,7 @@ For all quasi-compact $\sh{O}_X$-algebras $\sh{B}$ of finite type, there exists 
 
 \begin{proof}
 \label{proof-1.9.6.5}
-In fact, by hypothesis, there exists a finite cover $(U_i)$ of $X$ consisting of affine opens such that $\Gamma(U_i,\sh{B})=B_i$ is an algebra of finite type over $\Gamma(U_i,\sh{O}_X)=A_i$; let $E_i$ be a $A_i$-submodule of $B_i$ of finite type that generates the $A_i$-algebra $B_i$; thanks to \sref{1.9.4.7}, there exists a $\sh{O}_X$-submodule $\sh{E}_i$ of $\sh{B}$, quasi-coherent and of finite type, such that $\sh{E}_i|U_i=\wt{E_i}$.
+In fact, by hypothesis, there exists a finite cover $(U_i)$ of $X$ consisting of affine opens such that $\Gamma(U_i,\sh{B})=B_i$ is an algebra of finite type over $\Gamma(U_i,\sh{O}_X)=A_i$; let $E_i$ be a $A_i$-submodule of $B_i$ of finite type that generates the $A_i$-algebra $B_i$; thanks to \sref{1.9.4.7}, there exists a $\sh{O}_X$-submodule $\sh{E}_i$ of $\sh{B}$, quasi-coherent and of finite type, such that $\sh{E}_i|U_i=\widetilde{E_i}$.
 It is clear that the sum $\sh{E}$ of the $\sh{E}_i$ is the desired object.
 \end{proof}
 
