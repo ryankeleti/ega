@@ -76,7 +76,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
 - [ ] Elementary global study of some classes of morphisms (EGA II)
     + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
-    + [ ] 1. Affine morphisms _(@ryankeleti)_
+    + [x] 1. Affine morphisms _(@ryankeleti)_
     + [ ] 2. Homogeneous prime spectra
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
     + [ ] 4. Projective bundles; Ample sheaves
