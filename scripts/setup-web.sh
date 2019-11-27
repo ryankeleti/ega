@@ -75,6 +75,5 @@ ln -s ../../../tags          tags
 # 5) setup soft links for database.
 cd "$BASE"/gerby-website/ || return
 ln -s gerby/tools/"$FNAME".sqlite   "$FNAME".sqlite
-ln -s gerby/tools/comments.sqlite   comments.sqlite
 cd "$BASE" || return
 
