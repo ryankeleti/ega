@@ -37,6 +37,11 @@ def rm_oldpage(line):
   line = re.sub(r"\\oldpage\[.*?]{.*?}", "", line)
   return line
 
+def convert_symb(line):
+  line = re.sub(r"<", r"\\lt ", line)
+  line = re.sub(r">", r"\\gt ", line)
+  return line
+
 def convert_sref(line):
   line = re.sub(r"\\eref", r"\\ref", line)
   line = re.sub(r"\\sref\[.*?\]", r"\\sref", line)
@@ -55,7 +60,7 @@ def convert_sectioning(line):
 #  line = re.sub(r"{section}", r"{chapter}", line)
 #  line = re.sub(r"{subsection}", r"{section}", line)
 #  line = re.sub(r"\\part{}", "", line)
-  line = re.sub(r"\\chaptert{}", "", line)
+  line = re.sub(r"\\chapter{}", "", line)
   return line
 
 path = get_path() 
@@ -95,6 +100,7 @@ with open(path + out + ".tex", 'w') as book:
           continue
         line = re.sub(r"~", " ", line)
         line = rm_oldpage(line)
+        line = convert_symb(line)
         line = convert_sref(line)
         line = convert_sectioning(line)
         if line.find("\\input{") == 0:
@@ -103,6 +109,7 @@ with open(path + out + ".tex", 'w') as book:
             for ffline in ff:
               ffline = re.sub(r"~", " ", ffline)
               ffline = rm_oldpage(ffline)
+              ffline = convert_symb(ffline)
               ffline = convert_sref(ffline)
               ffline = convert_sectioning(ffline)
               if ffline.find("longtable") >= 0:
