@@ -18,7 +18,7 @@ XYJAX_SRC=https://github.com/ryankeleti/XyJax.git
 #sudo apt-get update
 #sudo apt install dvipng
 
-rm -rf tags "$FNAME" "$FNAME".* "$BASE"/plastex "$BASE"/gerby-website
+rm -rf tags "$FNAME" "$FNAME".* "$BASE"/plastex "$BASE"/gerby-website "$BASE"/env
 cp "$BASE"/scripts/configuration.py "$BASE"/configuration.py
 python3 "$BASE"/scripts/make_web.py "$BASE"
 
@@ -26,10 +26,13 @@ python3 "$BASE"/scripts/make_web.py "$BASE"
 # install.
 #
 
+python3 -m venv env
+source env/bin/activate
+
 #git clone "$EGA_SRC" "$EGA_DIR"
 
 cd "$BASE" || return
-pip install unidecode --user
+pip install unidecode
 
 # 1) install plasTeX.
 git clone "$PLASTEX_SRC"
@@ -37,7 +40,7 @@ cd "$BASE"/plastex/ || return
 # use the Gerby branch of plasTeX.
 git checkout gerby
 # actual install.
-pip install . --user
+pip install .
 cd "$BASE" || return
 
 # 2) install Gerby.
@@ -51,7 +54,7 @@ git clone "$PYBTEX_SRC"
 #wget https://bitbucket.org/pybtex-devs/pybtex/issues/attachments/110/pybtex-devs/pybtex/1514284299.07/110/no-protected-in-math-mode.patch
 cd pybtex || return
 git apply ./no-protected-in-math-mode.patch
-pip install . --user
+pip install .
 cd .. || return
 # import XyJax.
 git clone "$XYJAX_SRC"
@@ -60,7 +63,7 @@ sed -i -e 's@\[MathJax\]@/static/XyJax@' XyJax/extensions/TeX/xypic.js
 # actual install.
 cd "$BASE"/gerby-website/ || return
 # we use -e because we want to change the source files.
-pip install -e . --user
+pip install -e .
 cd "$BASE" || return
 
 # 3) setup configuration.

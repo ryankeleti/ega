@@ -4,7 +4,7 @@ set -x
 
 BASE=$HOME/ega
 EGA_DIR="$BASE"
-PIPLOC=$(python -c "import site; print(site.USER_BASE)")/bin
+PIPLOC="$BASE"/env/bin
 FNAME=ega
 
 cd "$BASE" || return

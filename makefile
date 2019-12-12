@@ -65,6 +65,7 @@ cleanforce:
 	rm -rf $(PDF_DIR)
 	rm -rf tags $(WEBNAME).* $(WEBNAME)
 	rm -rf plastex/ gerby-website/
+	rm -rf env/
 
 .PHONY: all
 all: pdfs book
