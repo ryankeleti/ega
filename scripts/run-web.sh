@@ -5,6 +5,12 @@ set -x
 BASE=$HOME/ega
 EGA_DIR="$BASE"
 
+if [ -z "$1" ]; then
+  echo "\$BASE defaulting to $BASE"
+else
+  BASE=$(readlink -f "$1")
+fi
+
 cd "$EGA_DIR" || return
 ./scripts/update-web.sh
 

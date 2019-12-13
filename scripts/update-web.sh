@@ -7,6 +7,12 @@ EGA_DIR="$BASE"
 PIPLOC="$BASE"/env/bin
 FNAME=ega
 
+if [ -z "$1" ]; then
+  echo "\$BASE defaulting to $BASE"
+else
+  BASE=$(readlink -f "$1")
+fi
+
 cd "$BASE" || return
 
 #

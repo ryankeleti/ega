@@ -18,6 +18,14 @@ XYJAX_SRC=https://github.com/ryankeleti/XyJax.git
 #sudo apt-get update
 #sudo apt install dvipng
 
+if [ -z "$1" ]; then
+  echo "\$BASE defaulting to $BASE"
+else
+  BASE=$(readlink -f "$1")
+fi
+
+cd "$BASE" || return
+
 rm -rf tags "$FNAME" "$FNAME".* "$BASE"/plastex "$BASE"/gerby-website "$BASE"/env
 cp "$BASE"/scripts/configuration.py "$BASE"/configuration.py
 python3 "$BASE"/scripts/make_web.py "$BASE"
@@ -26,12 +34,10 @@ python3 "$BASE"/scripts/make_web.py "$BASE"
 # install.
 #
 
-python3 -m venv env
-source env/bin/activate
+python3 -m venv "$BASE"/env
+source "$BASE"/env/bin/activate
 
 #git clone "$EGA_SRC" "$EGA_DIR"
-
-cd "$BASE" || return
 pip install unidecode
 
 # 1) install plasTeX.
