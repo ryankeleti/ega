@@ -222,14 +222,14 @@ If $\mu$ is an index such that $\sh{J}_\mu\subset\sh{J}_{\lambda_i}$ for all $i$
 
 \begin{env}[10.4.1]
 \label{1.10.4.1}
-Given a topologically ringed space $\mathfrak{X}$, we say that an open $U\subset\mathfrak{X}$ is an \emph{formal affine open} (resp.~an \emph{formal adic affine open}, resp.~an \emph{formal Noetherian affine open}) if the topologically ringed space induced on $U$ by $\mathfrak{X}$ is a formal affine scheme (resp.~a scheme whose ring is adic, resp.~adic and Noetherian).
+Given a topologically ringed space $\mathfrak{X}$, we say that an open $U\subset\mathfrak{X}$ is a \emph{formal affine open} (resp.~a \emph{formal adic affine open}, resp.~a \emph{formal Noetherian affine open}) if the topologically ringed space induced on $U$ by $\mathfrak{X}$ is a formal affine scheme (resp.~a scheme whose ring is adic, resp.~adic and Noetherian).
 \end{env}
 
 \begin{defn}[10.4.2]
 \label{1.10.4.2}
 A \emph{formal prescheme} is a topologically ringed space $\mathfrak{X}$ which admits a formal affine open neighborhood for each point.
 We say that the formal prescheme $\mathfrak{X}$ is adic (resp. locally Noetherian) if each point of $\mathfrak{X}$ admits a formal adic (resp. Noetherian) open neighborhood.
-We say that $\mathfrak{X}$ is Noetherian if it is locally Noetherian and if its underlying space is quasi-compact (hence Noetherian).
+We say that $\mathfrak{X}$ is Noetherian if it is locally Noetherian and its underlying space is quasi-compact (and hence Noetherian).
 \end{defn}
 
 \begin{prop}[10.4.3]
@@ -239,12 +239,12 @@ If $\mathfrak{X}$ is a formal prescheme (resp. a locally Noetherian formal presc
 
 \begin{proof}
 \label{proof-1.10.4.3}
-This follows from Definition \sref{1.10.4.2} and Proposition \sref{1.10.1.4} by taking into account that if $A$ is an adic Noetherian ring, then so if $A_{\{f\}}$ for all $f\in A$ \sref[0]{0.7.6.11}.
+This follows from Definition \sref{1.10.4.2} and Proposition \sref{1.10.1.4} by taking into account that, if $A$ is an adic Noetherian ring, then so too is $A_{\{f\}}$ for all $f\in A$ \sref[0]{0.7.6.11}.
 \end{proof}
 
 \begin{cor}[10.4.4]
 \label{1.10.4.4}
-If $\mathfrak{X}$ is a formal prescheme (resp. a locally Noetherian formal prescheme, resp. a Noetherian formal prescheme), then the topologically ringed space induced on each open set of $\mathfrak{X}$ a formal prescheme (resp. a locally Noetherian formal prescheme, resp. a Noetherian formal prescheme).
+If $\mathfrak{X}$ is a formal prescheme (resp. a locally Noetherian formal prescheme, resp. a Noetherian formal prescheme), then the topologically ringed space induced on each open set of $\mathfrak{X}$ is also a formal prescheme (resp. a locally Noetherian formal prescheme, resp. a Noetherian formal prescheme).
 \end{cor}
 
 \begin{defn}[10.4.5]
@@ -255,17 +255,17 @@ Given two formal preschemes $\mathfrak{X}$ and $\mathfrak{Y}$, a morphism (of fo
 It is immediate that the composition of any two morphisms of formal preschemes is again a morphism of formal preschemes; the formal preschemes thus form a \emph{category}, and we denote by $\Hom(\mathfrak{X},\mathfrak{Y})$ the set of morphisms from a formal prescheme $\mathfrak{X}$ to a formal prescheme $\mathfrak{Y}$.
 
 \oldpage[I]{186}
-If $U$ is an open subset of $\mathfrak{X}$, then the canonical injection into $\mathfrak{X}$ of the formal prescheme induced on $U$ by $\mathfrak{X}$ is a morphism of formal preschemes (and similarly a \emph{momomorphism} of topologically ringed spaces \sref[0]{0.4.1.1}).
+If $U$ is an open subset of $\mathfrak{X}$, then the canonical injection into $\mathfrak{X}$ of the formal prescheme induced on $U$ by $\mathfrak{X}$ is a morphism of formal preschemes (and in fact a \emph{momomorphism} of topologically ringed spaces \sref[0]{0.4.1.1}).
 
 \begin{prop}[10.4.6]
 \label{1.10.4.6}
-Let $\mathfrak{X}$ be a formal prescheme, $\mathfrak{S}=\Spf(A)$ a formal affine scheme.
-There exists a canonical bijective equivalence between the morphisms from a formal prescheme $\mathfrak{X}$ to the formal prescheme $\mathfrak{S}$ and the continuous homomorphisms from the ring $A$ to the topological ring $\Gamma(\mathfrak{X}.\OO_\mathfrak{X})$.
+Let $\mathfrak{X}$ be a formal prescheme, and $\mathfrak{S}=\Spf(A)$ a formal affine scheme.
+There exists a canonical bijective equivalence between the morphisms from the formal prescheme $\mathfrak{X}$ to the formal prescheme $\mathfrak{S}$ and the continuous homomorphisms from the ring $A$ to the topological ring $\Gamma(\mathfrak{X},\OO_\mathfrak{X})$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.4.6}
-The proof is similar to that of \sref{1.2.2.4}, by replacing ``homomorphism'' by ``continuous homomorphism'', ``affine open'' by ``formal affine open'', and by using Proposition \sref{1.10.2.2} instead of Theorem \sref{1.1.7.3}; we leave the details to the reader.
+The proof is similar to that of \sref{1.2.2.4}, by replacing ``homomorphism'' with ``continuous homomorphism'', ``affine open'' with ``formal affine open'', and by using Proposition \sref{1.10.2.2} instead of Theorem \sref{1.1.7.3}; we leave the details to the reader.
 \end{proof}
 
 \begin{env}[10.4.7]
@@ -274,7 +274,7 @@ Given a formal prescheme $\mathfrak{S}$, we say that the data of a formal presch
 If $\mathfrak{S}=\Spf(A)$, where $A$ is an admissible ring, then we also say that the formal $\mathfrak{S}$-prescheme $\mathfrak{X}$ is a \emph{formal $A$-prescheme} or a formal prescheme \emph{over $A$}.
 An arbitrary formal prescheme can be considered as a formal prescheme over $\bb{Z}$ (equipped with the discrete topology).
 
-If $\mathfrak{X}$ and $\mathfrak{Y}$ are two formal $\mathfrak{S}$-preschemes, we say that a morphism $u:\mathfrak{X}\to\mathfrak{Y}$ is a \emph{$\mathfrak{S}$-morphism} if the diagram
+If $\mathfrak{X}$ and $\mathfrak{Y}$ are formal $\mathfrak{S}$-preschemes, then we say that a morphism $u:\mathfrak{X}\to\mathfrak{Y}$ is a \emph{$\mathfrak{S}$-morphism} if the diagram
 \[
   \xymatrix{
     \mathfrak{X}\ar[rr]^u\ar[rd] & &
@@ -283,15 +283,15 @@ If $\mathfrak{X}$ and $\mathfrak{Y}$ are two formal $\mathfrak{S}$-preschemes, w
   }
 \]
 (where the downwards arrows are the structure morphisms) is commutative.
-With this definition, the formal $\mathfrak{S}$-preschemes (for $\mathfrak{S}$ fixed) forms a \emph{category}.
+With this definition, the formal $\mathfrak{S}$-preschemes (for some fixed $\mathfrak{S}$) form a \emph{category}.
 We denote by $\Hom_\mathfrak{S}(\mathfrak{X},\mathfrak{Y})$ the set of $\mathfrak{S}$-morphisms from a formal $\mathfrak{S}$-prescheme $\mathfrak{X}$ to a formal $\mathfrak{S}$-prescheme $\mathfrak{Y}$.
-When $\mathfrak{S}=\Spf(A)$, we also say \emph{$A$-morphism} instead of \emph{$\mathfrak{S}$-morphism}.
+When $\mathfrak{S}=\Spf(A)$, we sometimes say \emph{$A$-morphism} instead of \emph{$\mathfrak{S}$-morphism}.
 \end{env}
 
 \begin{env}[10.4.8]
 \label{1.10.4.8}
-As each affine scheme can be considered as a formal affine scheme \sref{1.10.1.2}, each (usual) prescheme can be considered as a formal prescheme.
-In addition, it follows from Definition \sref{1.10.4.5} that for the \emph{usual} preschemes, the morphisms (resp. $S$-morphisms) of \emph{formal} preschemes coincide with the morphisms (resp. $S$-morphisms) defined in \textsection2.
+Since every affine scheme can be considered as a formal affine scheme \sref{1.10.1.2}, every (usual) prescheme can be considered as a formal prescheme.
+In addition, it follows from Definition \sref{1.10.4.5} that, for the \emph{usual} preschemes, the morphisms (resp. $S$-morphisms) of \emph{formal} preschemes coincide with the morphisms (resp. $S$-morphisms) defined in \textsection2.
 \end{env}
 
 \subsection{Sheaves of ideals of definition for formal preschemes}
