@@ -144,10 +144,11 @@ Let $A$ be an admissible ring, $\mathfrak{J}$ an open ideal of $A$, and $\mathfr
 Let $(\mathfrak{J}_\lambda)$ be the set of those ideals of definition for $A$ that are contained in $\mathfrak{J}$; then $\wt{\mathfrak{J}}/\wt{\mathfrak{J}}_\lambda$ is a sheaf of ideals of $\wt{A}/\wt{\mathfrak{J}}_\lambda$.
 Denote by $\mathfrak{J}^\Delta$ the projective limit of the sheaves on $\mathfrak{X}$ induced by $\wt{\mathfrak{J}}/\wt{\mathfrak{J}}_\lambda$, which is identified with a \emph{sheaf of ideals} of $\OO_\mathfrak{X}$ \sref[0]{0.3.2.6}.
 For every $f\in A$, $\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)$ is the projective limit of the $S_f^{-1}\mathfrak{J}/S_f^{-1}\mathfrak{J}_\lambda$, or, in other words, can be identified with the open ideal $\mathfrak{J}_{\{f\}}$ of the ring $A_{\{f\}}$ \sref[0]{0.7.6.9}, and, in particular, $\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$; we conclude (the $\mathfrak{D}(f)$ forming a basis for the topology of $\mathfrak{X}$) that
-\[
+\begin{equation*}
+\label{1.10.3.1.1}
   \mathfrak{J}^\Delta|\mathfrak{D}(f)=(\mathfrak{J}_{\{f\}})^\Delta.
   \tag{10.3.1.1}
-\]
+\end{equation*}
 \end{env}
 
 \begin{env}[10.3.2]
@@ -155,10 +156,11 @@ For every $f\in A$, $\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)$ is the project
 \oldpage[I]{184}
 With the notation of \sref{1.10.3.1}, for all $f\in A$, the canonical map from $A_{\{f\}}=\Gamma(\mathfrak{D}(f),\OO_\mathfrak{X})$ to $\Gamma(\mathfrak{D}(f),(\wt{A}/\wt{\mathfrak{J}})|\mathfrak{X})=S_f^{-1}A/S_f^{-1}\mathfrak{J}$ is \emph{surjective} and has $\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)=\mathfrak{J}_{\{f\}}$ as its kernel \sref[0]{0.7.6.9}; these maps thus define a \emph{surjective} continuous homomorphism, said to be \emph{canonical}, from the sheaf of topological rings $\OO_\mathfrak{X}$ to the sheaf of discrete rings $(\wt{A}/\wt{\mathfrak{J}})|\mathfrak{X}$, whose kernel is $\mathfrak{J}^\Delta$; this homomorphism is none other than $\wt{\vphi}$ \sref{1.10.2.1}, where $\vphi$ is the continuous homomorphism $A\to A/\mathfrak{J}$; the morphism $({}^a\vphi,\wt{\vphi}):\Spec(A/\mathfrak{J})\to\mathfrak{X}$ of formal affine schemes (where ${}^a\vphi$ is the identity homeomorphism from $\mathfrak{X}$ to itself) is also said to be \emph{canonical}.
 We thus have, according to the above, a \emph{canonical isomorphism}
-\[
+\begin{equation*}
+\label{1.10.3.2.1}
   \OO_\mathfrak{X}/\mathfrak{J}^\Delta\isoto(\wt{A}/\wt{\mathfrak{J}})|\mathfrak{X}.
   \tag{10.3.2.1}
-\]
+\end{equation*}
 
 It is clear (since $\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$) that the map $\mathfrak{J}\to\mathfrak{J}^\Delta$ is \emph{strictly increasing}; according to the above, for $\mathfrak{J}\subset\mathfrak{J}'$, the sheaf ${\mathfrak{J}'}^\Delta/\mathfrak{J}^\Delta$ is canonically isomorphic to $\wt{\mathfrak{J}'}/\wt{\mathfrak{J}}=(\mathfrak{J}'/\mathfrak{J})^\sim$.
 \end{env}
@@ -175,7 +177,7 @@ For all $f\in A$, each sheaf of ideals of definition for $\mathfrak{X}$ induces 
 
 \begin{proof}
 \label{proof-1.10.3.4}
-This follows from (10.3.1.1).
+This follows from \sref{1.10.3.1.1}.
 \end{proof}
 
 \begin{prop}[10.3.5]
@@ -204,7 +206,7 @@ For all $f\in A$, we have (since $\mathfrak{J}^n$ is an open ideal)
   (\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta))^n=(\mathfrak{J}_{\{f\}})^n=(\mathfrak{J}^n)_{\{f\}}=\Gamma(\mathfrak{D}(f^n),(\mathfrak{J}^n)^\Delta)
 \]
 \oldpage[I]{185}
-by to (10.3.1.1) and \sref[0]{0.7.6.12}.
+by \sref{1.10.3.1.1} and \sref[0]{0.7.6.12}.
 The result then follows from the fact that $(\mathfrak{J}^\Delta)^n$ is associated to the presheaf $U\mapsto(\Gamma(U,\mathfrak{J}^\Delta))^n$ \sref[0]{0.4.1.6}, since the $\mathfrak{D}(f)$ form a basis for the topology of $\mathfrak{X}$.
 \end{proof}
 
@@ -299,13 +301,13 @@ In addition, it follows from Definition \sref{1.10.4.5} that, for the \emph{usua
 
 \begin{env}[10.5.1]
 \label{1.10.5.1}
-Let $\mathfrak{X}$ be a formal prescheme; we say that an $\OO_\mathfrak{X}$-ideal $\sh{J}$ is a \emph{sheaf of ideals of definition} (or an \emph{ideal sheaf of definition}) for $\mathfrak{X}$ if every $x\in\mathfrak{X}$ has a formal affine open neighborhood $U$ such that $\sh{J}|U$ is a sheaf of ideals of definition for the formal affine scheme induced on $U$ by $\mathfrak{X}$ \sref{1.10.3.3}; according to (10.3.1.1) and Proposition \sref{1.10.4.3}, for each open $V\subset\mathfrak{X}$, $\sh{J}|V$ is then a sheaf of ideals of definition for the formal prescheme induced on $V$ by $\mathfrak{X}$.
+Let $\mathfrak{X}$ be a formal prescheme; we say that an $\OO_\mathfrak{X}$-ideal $\sh{J}$ is a \emph{sheaf of ideals of definition} (or an \emph{ideal sheaf of definition}) for $\mathfrak{X}$ if every $x\in\mathfrak{X}$ has a formal affine open neighborhood $U$ such that $\sh{J}|U$ is a sheaf of ideals of definition for the formal affine scheme induced on $U$ by $\mathfrak{X}$ \sref{1.10.3.3}; by \sref{1.10.3.1.1} and Proposition \sref{1.10.4.3}, for each open $V\subset\mathfrak{X}$, $\sh{J}|V$ is then a sheaf of ideals of definition for the formal prescheme induced on $V$ by $\mathfrak{X}$.
 
 We say that a family $(\sh{J}_\lambda)$ of sheaves of ideals of definition for $\mathfrak{X}$ is a \emph{fundamental system}
 \oldpage[I]{187}
 \emph{of sheaves of ideals of definition} if there exists a cover $(U_\alpha)$ of $\mathfrak{X}$ by formal affine open sets such that, for each $\alpha$, the family of the $\sh{J}_\lambda|U_\alpha$ is a fundamental system of sheaves of ideals of definition \sref{1.10.3.6} for the formal affine scheme induced on $U_\alpha$ by $\mathfrak{X}$.
 It follows from the last remark of \sref{1.10.3.7} that when $\mathfrak{X}$ is a formal affine scheme, this definition coincides with the definition given in \sref{1.10.3.7}.
-For an open subset $V$ of $\mathfrak{X}$, the restrictions $\sh{J}_\lambda|V$ then form a fundamental system of sheaves of ideals of definition for the formal prescheme induced on $V$, according to (10.3.1.1).
+For an open subset $V$ of $\mathfrak{X}$, the restrictions $\sh{J}_\lambda|V$ then form a fundamental system of sheaves of ideals of definition for the formal prescheme induced on $V$, according to \sref{1.10.3.1.1}.
 If $\mathfrak{X}$ is a \emph{locally Noetherian} formal prescheme, and $\sh{J}$ is a sheaf of ideals of definition for $\mathfrak{X}$, then it follows from Proposition \sref{1.10.3.6} that the powers $\sh{J}^n$ form a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$.
 \end{env}
 
@@ -356,7 +358,8 @@ Let $\mathfrak{X}$ be a locally Noetherian formal prescheme, $\sh{T}$ the larges
 Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$), $f:\mathfrak{X}\to\mathfrak{Y}$ a morphism of formal preschemes.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item If $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$, then there exists a unique morphism $f':(\mathfrak{X},\OO_\mathfrak{X}/\sh{J})\to(\mathfrak{Y},\OO_\mathfrak{Y}/\sh{K})$ of usual preschemes making the diagram
-    \[
+    \begin{equation*}
+    \label{1.10.5.6.1}
       \xymatrix{
         (\mathfrak{X},\OO_\mathfrak{X})\ar[r]^f &
         (\mathfrak{Y},\OO_\mathfrak{Y})\\
@@ -364,7 +367,7 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. 
         (\mathfrak{Y},\OO_\mathfrak{Y}/\sh{K})\ar[u]
       }
       \tag{10.5.6.1}
-    \]
+    \end{equation*}
     commutative, where the vertical arrows are the canonical morphisms.
   \item Suppose that $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$ are two formal affine schemes, $\sh{J}=\mathfrak{J}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of definition for $A$ (resp. $B$), and $f=({}^a\vphi,\wt{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism;
     for $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ to hold, it is necessary and sufficient that $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and $f'$ is then the morphism $({}^a\vphi',\wt{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the homomorphism induced from $\vphi$ by passing to quotients.
@@ -383,7 +386,8 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. 
     in addition, as for all $x\in\mathfrak{X}$, $\theta_x^\sharp$ is a \emph{local} homomorphism, so is $\omega_x$.
     The morphism of ringed spaces $(\psi,\omega^\flat)$ is thus \sref{1.2.2.1} the unique morphism $f'$ of ringed spaces which we need.
   \item The canonical functorial correspondence between morphisms of formal affine schemes and continuous homomorphisms of rings \sref{1.10.2.2} shows that in the case considered, the relation $f^*(\sh{K})\OO_\mathfrak{X}\subset\mathfrak{J}$ impliex that we have $f'=({}^a\vphi',\wt{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the unique homomorphism making the diagram
-    \[
+    \begin{equation*}
+    \label{1.10.5.6.2}
       \xymatrix{
         B\ar[r]^\vphi\ar[d] &
         A\ar[d]\\
@@ -391,10 +395,10 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. 
         A/\mathfrak{J}
       }
       \tag{10.5.6.2}
-    \]
+    \end{equation*}
     commutative.
     The existence of $\vphi'$ thus implies that $\vphi(\mathfrak{K})\subset\mathfrak{J}$.
-    Conversely, if this condition is satisfied, then denoting by $\vphi'$ the unique homomorphism making the diagram (10.5.6.2) commutative and setting $f'=({}^a\vphi',\wt{\vphi'})$, it is clear that the diagram (10.5.6.1) is commutative; the consideration of the homomorphisms ${}^a\vphi^*(\OO_\mathfrak{Y})\to\OO_\mathfrak{X}$ and ${}^a{\vphi'}^*(\OO_\mathfrak{Y}/\sh{K})\to\OO_\mathfrak{X}/\sh{J}$ corresponding to $f$ and $f'$ respectively then shows that this implies the relation $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
+    Conversely, if this condition is satisfied, then denoting by $\vphi'$ the unique homomorphism making the diagram \sref{1.10.5.6.2} commutative and setting $f'=({}^a\vphi',\wt{\vphi'})$, it is clear that the diagram \sref{1.10.5.6.1} is commutative; the consideration of the homomorphisms ${}^a\vphi^*(\OO_\mathfrak{Y})\to\OO_\mathfrak{X}$ and ${}^a{\vphi'}^*(\OO_\mathfrak{Y}/\sh{K})\to\OO_\mathfrak{X}/\sh{J}$ corresponding to $f$ and $f'$ respectively then shows that this implies the relation $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
 \end{enumerate}
 \end{proof}
 
@@ -425,16 +429,17 @@ Let $\mathfrak{Y}$ be a formal prescheme, and for each index $\lambda$, let
 be a morphism such that we have $g_\lambda=g_\mu\circ f_{\mu\lambda}$ for $\sh{J}_\mu\subset\sh{J}_\lambda$.
 This latter condition and the definition of the $X_\lambda$ imply first that the $\psi_\lambda$ are identical to a continuous map $\psi:\mathfrak{X}\to\mathfrak{Y}$ of the underlying spaces; in addition, the homomorphism $\theta_\lambda^\sharp:\psi^*(\OO_\mathfrak{Y})\to\OO_{X_i}=\OO_\mathfrak{X}/\sh{J}_\lambda$ form a \emph{projective system} of homomorphisms of sheaves of rings.
 By passing to the projective limit, we thus induce a homomorphism $\omega:\psi^*(\OO_\mathfrak{Y})\to\varprojlim\OO_\mathfrak{X}/\sh{J}_\lambda=\OO_\mathfrak{X}$, and it is clear that the morphism $g=(\psi,\omega^\flat)$ of \emph{ringed spaces} is the \emph{unique} morphism making the diagrams
-\[
+\begin{equation*}
+\label{1.10.6.2.1}
   \xymatrix{
     X_\lambda\ar[rr]^{g_\lambda}\ar[rd]_{f_\lambda} & &
     \mathfrak{Y}\\
     & \mathfrak{X}\ar[ru]_g
   }
   \tag{10.6.2.1}
-\]
+\end{equation*}
 commutative.
-It remains to prove that $g$ is a morphism of \emph{formal preschemes}; the question is local on $\mathfrak{X}$ and $\mathfrak{Y}$, so we can assume $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$, $A$ and $B$ admissible rings, with $\sh{J}_\lambda=\mathfrak{J}_\lambda^\Delta$, where $(\mathfrak{J}_\lambda)$ is a fundamental system of ideal of definition for $A$ \sref{1.10.3.5}; as $A=\varprojlim A/\mathfrak{J}_\lambda$, the existence of a morphism $g$ of formal affine schemes making the diagrams (10.6.2.1) commutative then follows from the bijective correspondence \sref{1.10.2.2} between morphisms of formal affine schemes and continuous ring homomorphisms, and from the definition of the projective limit.
+It remains to prove that $g$ is a morphism of \emph{formal preschemes}; the question is local on $\mathfrak{X}$ and $\mathfrak{Y}$, so we can assume $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$, $A$ and $B$ admissible rings, with $\sh{J}_\lambda=\mathfrak{J}_\lambda^\Delta$, where $(\mathfrak{J}_\lambda)$ is a fundamental system of ideal of definition for $A$ \sref{1.10.3.5}; as $A=\varprojlim A/\mathfrak{J}_\lambda$, the existence of a morphism $g$ of formal affine schemes making the diagrams \sref{1.10.6.2.1} commutative then follows from the bijective correspondence \sref{1.10.2.2} between morphisms of formal affine schemes and continuous ring homomorphisms, and from the definition of the projective limit.
 But the uniqueness of $g$ as a morphism of ringed spaces shows that it coincides with the morphism in the beginning of the proof.
 \end{proof}
 
@@ -519,7 +524,8 @@ In the particular case where $v_{ij}^*(\sh{F}_i)=\sh{F}_j$, and where $\theta_{j
 \label{1.10.6.7}
 Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. $\sh{K}$) a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$), $f:\mathfrak{X}\to\mathfrak{Y}$ a morphism such that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
 We then have for every integer $n>0$, $f^*(\sh{K}^n)\OO_\mathfrak{X}=(f^*(\sh{K})\OO_\mathfrak{X})^n\subset\sh{J}^n$; we can thus \sref{1.10.5.6} induce from $f$ a morphism of (usual) preschemes $f_n:X_n\to Y_n$, by setting $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$ and $Y_n=(\sh{Y},\OO_\mathfrak{Y}/\sh{K}^{n+1})$, and it immediately follows from the definitions that the diagrams
-\[
+\begin{equation*}
+\label{1.10.6.7.1}
   \xymatrix{
     X_m\ar[r]^{f_m}\ar[d] &
     Y_m\ar[d]\\
@@ -527,7 +533,7 @@ We then have for every integer $n>0$, $f^*(\sh{K}^n)\OO_\mathfrak{X}=(f^*(\sh{K}
     Y_n
   }
   \tag{10.6.7.1}
-\]
+\end{equation*}
 \oldpage[I]{192}
 are commutative for $m\leq n$; in other words, $(f_n)$ is an \emph{inductive system} of morphisms.
 \end{env}
@@ -549,7 +555,7 @@ commutative.
 
 \begin{prop}[10.6.9]
 \label{1.10.6.9}
-Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Notherian formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$); the map $f\mapsto(f_n)$ defined in \sref{1.10.6.7} is a bijection from the set of morphisms $f:\mathfrak{X}\to\mathfrak{Y}$ such that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ to the set of sequences $(f_n)$ of morphisms making the diagrams (10.6.7.1) commutative.
+Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Notherian formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$); the map $f\mapsto(f_n)$ defined in \sref{1.10.6.7} is a bijection from the set of morphisms $f:\mathfrak{X}\to\mathfrak{Y}$ such that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ to the set of sequences $(f_n)$ of morphisms making the diagrams \sref{1.10.6.7.1} commutative.
 \end{prop}
 
 \begin{proof}
@@ -557,7 +563,7 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Notherian formal preschemes, $\
 If $f$ is the inductive limit of this sequence, then it is necessary to show that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
 The statement being local on $\mathfrak{X}$ and $\mathfrak{Y}$, we can reduce to the case where $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$ are affine, $A$ and $B$ adic Noetherian rings, $\sh{J}=\mathfrak{J}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of definition for $A$ (resp. $B$).
 We then have $X_n=\Spec(A_n)$ and $Y_n=\Spec(B_n)$, with $A_n=A/\mathfrak{J}^{n+1}$ and $B_n=B/\mathfrak{K}^{n+1}$, according to Proposition \sref{1.10.3.6} and \sref{1.10.3.2}; $f_n=({}^a\vphi_n,\wt{\vphi_n})$, where the homomorphisms $\vphi_n:B_n\to A_n$ forms a projective system, thus $f=({}^a\vphi,\wt{\vphi})$, so $f=({}^a\vphi,\wt{\vphi})$, where $\vphi=\varprojlim\vphi_n$.
-The commutativity of the diagram (10.6.7.1) for $m=0$ then gives the condition $\vphi_n(\mathfrak{K}/\mathfrak{K}^{n+1})\subset\mathfrak{J}/\mathfrak{J}^{n+1}$ for all $n$, so by passing to the projective limit we have $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and this implies that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ \sref{1.10.5.6}[ii].
+The commutativity of the diagram \sref{1.10.6.7.1} for $m=0$ then gives the condition $\vphi_n(\mathfrak{K}/\mathfrak{K}^{n+1})\subset\mathfrak{J}/\mathfrak{J}^{n+1}$ for all $n$, so by passing to the projective limit we have $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and this implies that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ \sref{1.10.5.6}[ii].
 \end{proof}
 
 \begin{cor}[10.6.10]
@@ -565,7 +571,7 @@ The commutativity of the diagram (10.6.7.1) for $m=0$ then gives the condition $
 Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two locally Noetherian formal preschemes, $\sh{T}$ the largest sheaf of ideals of definition for $\mathfrak{X}$ \sref{1.10.5.4}.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item For every sheaf of ideals of definition $\sh{K}$ for $\mathfrak{Y}$ and every morphism $f:\mathfrak{X}\to\mathfrak{Y}$, we have $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{T}$.
-  \item There is a canonical bijective correspondence between $\Hom(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(f_n)$ of morphisms making the diagrams (10.6.7.1) commutative, where $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{T}^{n+1})$ and $Y_n=(\mathfrak{Y},\OO_\mathfrak{Y}/\sh{K}^{n+1})$.
+  \item There is a canonical bijective correspondence between $\Hom(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(f_n)$ of morphisms making the diagrams \sref{1.10.6.7.1} commutative, where $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{T}^{n+1})$ and $Y_n=(\mathfrak{Y},\OO_\mathfrak{Y}/\sh{K}^{n+1})$.
 \end{enumerate}
 \end{cor}
 
@@ -582,7 +588,7 @@ Let $\mathfrak{S}$, $\mathfrak{X}$, $\mathfrak{Y}$ be locally Noetherian formal 
 Let $\sh{J}$ (resp. $\sh{K}$, $\sh{L}$) be a sheaf of ideals of definition for $\mathfrak{S}$ (resp. $\mathfrak{X}$, $\mathfrak{Y}$), and suppose that $f^*(\sh{J})\OO_\mathfrak{X}\subset\sh{K}$ and $g^*(\sh{J})\OO_\mathfrak{Y}=\sh{L}$; set $S_n=(\mathfrak{S},\OO_\mathfrak{S}/\sh{J}^{n+1})$, $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{K}^{n+1})$, and $Y_n=(\mathfrak{Y},\OO_\mathfrak{Y}/\sh{L}^{n+1})$.
 Then there exists a canonical bijective correspondence
 \oldpage[I]{193}
-between $\Hom_\mathfrak{S}(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(u_n)$ of $S_n$-morphisms $u_n:X_n\to Y_n$ making the diagrams (10.6.7.1) commutative.
+between $\Hom_\mathfrak{S}(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(u_n)$ of $S_n$-morphisms $u_n:X_n\to Y_n$ making the diagrams \sref{1.10.6.7.1} commutative.
 \end{cor}
 
 \begin{proof}
@@ -594,7 +600,7 @@ For each $\mathfrak{S}$-morphism $u:\mathfrak{X}\to\mathfrak{Y}$, we have by def
 and the corollary follows from Proposition \sref{1.10.6.9}.
 \end{proof}
 
-We note that for $m\leq n$, the data of a morphism $f_n:X_n\to Y_n$ determines a unique morphism $f_m:X_m\to Y_m$ making the diagram (10.6.7.1) commutative, as we immediately see that we can reduce to the affine case; we thus have defined a map $\vphi_{mn}:\Hom_{S_n}(X_n,Y_n)\to\Hom_{S_m}(X_m,Y_m)$ and the $\Hom_{S_n}(X_n,Y_n)$ form with the $\vphi_{mn}$ a \emph{projective system of sets}; Corollary \sref{1.10.6.11} says that there is a canonical bijection
+We note that for $m\leq n$, the data of a morphism $f_n:X_n\to Y_n$ determines a unique morphism $f_m:X_m\to Y_m$ making the diagram \sref{1.10.6.7.1} commutative, as we immediately see that we can reduce to the affine case; we thus have defined a map $\vphi_{mn}:\Hom_{S_n}(X_n,Y_n)\to\Hom_{S_m}(X_m,Y_m)$ and the $\Hom_{S_n}(X_n,Y_n)$ form with the $\vphi_{mn}$ a \emph{projective system of sets}; Corollary \sref{1.10.6.11} says that there is a canonical bijection
 \[
   \Hom_\mathfrak{S}(\mathfrak{X},\mathfrak{Y})\isoto\varprojlim_n\Hom_{S_n}(X_n,Y_n).
 \]
@@ -772,7 +778,8 @@ the separated completion of $M$ with respect to the $\mathfrak{J}$-preadic topol
 our assertion then follows since $A$ is Noetherian, and the functor $\wh{M}$ in $M$ is exact on the category of $A$-modules of finite type \sref[0]{0.7.3.3}.
 \oldpage[I]{197}
   \item The question is local, so we can assume that we have an exact sequence $\OO_X^m\to\OO_X^n\to\sh{F}\to 0$ \sref[0]{0.5.3.2}; as $\gamma^\sharp$ is functorial, and the functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ are right exact (by (i) and \sref[0]{0.4.3.1}), we have the commutative diagram
-\[
+\begin{equation*}
+\label{1.10.8.8.1}
   \xymatrix{
     i^*(\OO_X^m)\ar[r]\ar[d]_{\gamma^\sharp} &
     i^*(\OO_X^n)\ar[r]\ar[d]_{\gamma^\sharp} &
@@ -784,7 +791,7 @@ our assertion then follows since $A$ is Noetherian, and the functor $\wh{M}$ in 
     0
   }
   \tag{10.8.8.1}
-\]
+\end{equation*}
 whose rows are exact.
 In addition, the two functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ commute with finite direct sums (\sref[0]{0.3.2.6} and \sref[0]{0.4.3.2}), and thus we reduce to proving our assertion for $\sh{F}=\OO_X$.
 We have $i^*(\OO_X)=(\OO_X)_{/X'}=\OO_\wh{X}$ \sref[0]{0.4.3.4}, and $\gamma^\sharp$ is a homomophism of \emph{$\OO_\wh{X}$-modules}; so it suffices to check that $\gamma^\sharp$ sends the unit section of $\OO_\wh{X}$ over an open subset of $X'$ to itself, which is immediate and shows in this case that $\gamma^\sharp$ is the identity.
@@ -804,14 +811,16 @@ This follows from \sref[0]{0.6.7.3} and Proposition \sref{1.10.8.8}[i].
 \begin{cor}[10.8.10]
 \label{1.10.8.10}
 If $\sh{F}$ and $\sh{G}$ are two coherent $\OO_X$-modules, then there exist canonical functorial isomorphisms (in $\sh{F}$ and $\sh{G}$)
-\[
+\begin{equation*}
+\label{1.10.8.10.1}
   (\sh{F}_{/X'})\otimes_{(\OO_X)_{/X'}}(\sh{G}_{/X'})\isoto(\sh{F}\otimes_{\OO_X}\sh{G})_{/X'},
   \tag{10.8.10.1}
-\]
-\[
+\end{equation*}
+\begin{equation*}
+\label{1.10.8.10.2}
   (\shHom_{\OO_X}(\sh{F},\sh{G}))_{/X'}\isoto\shHom_{(\OO_X)_{/X'}}(\sh{F}_{/X'},\sh{G}_{/X'}).
   \tag{10.8.10.2}
-\]
+\end{equation*}
 \end{cor}
 
 \begin{proof}
@@ -854,7 +863,7 @@ For $u_{/X'}:\sh{F}_{/X'}\to\sh{G}_{/X'}$ to be zero, it is necessary and suffic
 
 \begin{proof}
 \label{proof-1.10.8.13}
-By Proposition \sref{1.10.8.8}[ii], $u_{/X'}$ identifies with $i^*(u)$, so if we consider $u$ as a section over $X$ of the sheaf $\sh{H}=\shHom_{\OO_X}(\sh{F},\sh{G})$, then $u_{/X'}$ is the section over $X'$ of $i^*(\sh{H})=\sh{H}_{/X'}$ to which it canonically corresponds ((10.8.10.2) and \sref[0]{0.4.4.6}).
+By Proposition \sref{1.10.8.8}[ii], $u_{/X'}$ identifies with $i^*(u)$, so if we consider $u$ as a section over $X$ of the sheaf $\sh{H}=\shHom_{\OO_X}(\sh{F},\sh{G})$, then $u_{/X'}$ is the section over $X'$ of $i^*(\sh{H})=\sh{H}_{/X'}$ to which it canonically corresponds (\sref{1.10.8.10.2} and \sref[0]{0.4.4.6}).
 It thus suffices to apply Proposition \sref{1.10.8.11} to the coherent $\OO_X$-module $\sh{H}$.
 \end{proof}
 
@@ -1017,19 +1026,22 @@ When $A$ is a \emph{discrete} ring, we have $M^\Delta=\wt{M}$.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item $M^\Delta$ is an exact functor in $M$, and there exists a canonical functorial isomorphism of $A$-modules $\Gamma(\mathfrak{X},M^\Delta)\isoto M$.
   \item If $M$ and $N$ are two $A$-modules of finite type, then there exist canonical functorial isomorphisms
-    \[
+    \begin{equation*}
+    \label{1.10.10.2.1}
       (M\otimes_A N)^\Delta\isoto M^\Delta\otimes_{\OO_\mathfrak{X}}N^\Delta,
       \tag{10.10.2.1}
-    \]
-    \[
+    \end{equation*}
+    \begin{equation*}
+    \label{1.10.10.2.2}
       (\Hom_A(M,N))^\Delta\isoto\shHom_{\OO_\mathfrak{X}}(M^\Delta,N^\Delta).
       \tag{10.10.2.2}
-    \]
+    \end{equation*}
   \item The map $u\mapsto u^\Delta$ is a functorial isomorphism
-    \[
+    \begin{equation*}
+    \label{1.10.10.2.3}
       \Hom_A(M,N)\isoto\Hom_{\OO_X}(M^\Delta,N^\Delta).
       \tag{10.10.2.3}
-    \]
+    \end{equation*}
 \end{enumerate}
 \end{prop}
 
@@ -1037,8 +1049,8 @@ When $A$ is a \emph{discrete} ring, we have $M^\Delta=\wt{M}$.
 \label{proof-1.10.10.2}
 The exactness of $M^\Delta$ follows from the exactness of the functors $\wt{M}$ \sref{1.1.3.5} and $\sh{F}_{/X'}$ \sref{1.10.8.8}.
 By definition, $\Gamma(X,M^\Delta)$ is the separated completion of the $A$-module $\Gamma(X,\wt{M})=M$ with respect to the $\mathfrak{J}$-preadic topology; but as $A$ is complete and $M$ is of finite type, we know \sref[0]{0.7.3.6} that $M$ is separated and complete, which proves (i).
-The isomorphism (10.10.2.1) (resp. (10.10.2.2)) coms from the composition of the isomorphisms \sref{1.1.3.12}[i] and (10.8.10.1) (resp. \sref{1.1.3.12}[ii] and (10.8.10.2)).
-Finally, as $\Hom_A(M,N)$ is an $A$-module of finite type, we can apply (i), which identifies $\Gamma(\mathfrak{X},(\Hom_A(M,N))^\Delta)$ with $\Hom_A(M,N)$, and we use (10.10.2.2), which proves that the homomorphism (10.10.2.3) is an isomorphism.
+The isomorphism \sref{1.10.10.2.1} (resp. \sref{1.10.10.2.2}) comes from the composition of the isomorphisms \sref{1.1.3.12}[i] and \sref{1.10.8.10.1} (resp. \sref{1.1.3.12}[ii] and \sref{1.10.8.10.2}).
+Finally, as $\Hom_A(M,N)$ is an $A$-module of finite type, we can apply (i), which identifies $\Gamma(\mathfrak{X},(\Hom_A(M,N))^\Delta)$ with $\Hom_A(M,N)$, and we use \sref{1.10.10.2.2}, which proves that the homomorphism \sref{1.10.10.2.3} is an isomorphism.
 \end{proof}
 
 We deduce from Proposition~\sref{1.10.10.2} a series of analogous results to those of Theorem~\sref{1.1.3.7} and Corollary~\sref{1.1.3.12}, which we leave to the reader to formulate.
@@ -1169,16 +1181,17 @@ We can thus say that \emph{the data of a coherent $\OO_\mathfrak{X}$-module is e
 \begin{cor}[10.11.4]
 \label{1.10.11.4}
 If $\sh{F}$ and $\sh{G}$ are two coherent $\OO_\mathfrak{X}$-modules, then we can (with the notation of Theorem \sref{1.10.11.3}) define a canonical functorial isomorphism
-\[
+\begin{equation*}
+\label{1.10.11.4.1}
   \Hom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})\isoto\varprojlim_n\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n).
   \tag{10.11.4.1}
-\]
+\end{equation*}
 \end{cor}
 
 \begin{proof}
 \label{proof-1.10.11.4}
 The projective limit in the right hand side is understood to be with respect to the maps $\theta_n\mapsto u_{mn}^*(\theta_n)$ ($m\leq n$) from $\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ to $\Hom_{\OO_{X_m}}(\sh{F}_m,\sh{F}_m)$.
-The homomorphism (10.11.4.1) sends an element $\theta\in\Hom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})$ to the sequence $(u_n^*(\theta))$; we see that we have defined an inverse homomorphism of the above by sending a projective system $(\theta_n)\in\varprojlim_n\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ to its projective limit in $\Hom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})$, taking into account Theorem \sref{1.10.11.3}.
+The homomorphism \sref{1.10.11.4.1} sends an element $\theta\in\Hom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})$ to the sequence $(u_n^*(\theta))$; we see that we have defined an inverse homomorphism of the above by sending a projective system $(\theta_n)\in\varprojlim_n\Hom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ to its projective limit in $\Hom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})$, taking into account Theorem \sref{1.10.11.3}.
 \end{proof}
 
 \begin{cor}[10.11.5]
@@ -1204,31 +1217,33 @@ In addition, if $\sh{H}$ is a coherent $\OO_\mathfrak{X}$-submodule of a coheren
 \label{1.10.11.7}
 Let $\sh{F}$ and $\sh{G}$ be two coherent $\OO_\mathfrak{X}$-modules.
 We can define (with the notation of Theorem \sref{1.10.11.3}) two canonical functorial isomorphisms of topological $\OO_\mathfrak{X}$-modules \sref{1.10.11.6}
-\[
+\begin{equation*}
+\label{1.10.11.7.1}
   \sh{F}\otimes_{\OO_\mathfrak{X}}\sh{G}\isoto\varprojlim_n(\sh{F}_n\otimes_{\OO_{X_n}}\sh{G}_n),
   \tag{10.11.7.1}
-\]
-\[
+\end{equation*}
+\begin{equation*}
+\label{1.10.11.7.2}
   \shHom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})\isoto\varprojlim_n\shHom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n).
   \tag{10.11.7.2}
-\]
+\end{equation*}
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.11.7}
-The existence of the isomorphism (10.11.7.1) follows from the formula
+The existence of the isomorphism \sref{1.10.11.7.1} follows from the formula
 \[
   \sh{F}_n\otimes_{\OO_{X_n}}\sh{G}_n=(\sh{F}\otimes_{\OO_\mathfrak{X}}\OO_{X_n})\otimes_{\OO_{X_n}}(\sh{G}\otimes_{\OO_\mathfrak{X}}\OO_{X_n})=(\sh{F}\otimes_{\OO_\mathfrak{X}}\sh{G})\otimes_{\OO_\mathfrak{X}}\OO_{X_n}
 \]
 and from Theorem \sref{1.10.11.3}.
-The isomorphism (10.11.7.2) where the two sodes are considered as sheaves of modules without topology, follows from the definition of the sections of $\shHom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})$ and $\shHom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ and the existence of the isomorphism (10.11.4.1), mapping a prescheme induced on an arbitrary Noetherian formal affine open set to $\mathfrak{X}$.
-It rwmains to prove that the isomorphism (10.11.7.2) is bicontinuous over a quasi-compact set, and we can thus reduce to the case where $\mathfrak{X}=\Spf(A)$, $A$ an adic Noetherian ring, hence \sref{1.10.10.5} $\sh{F}=M^\Delta$ and $\sh{G}=N^\Delta$, where $M$ and $N$ are $A$-modules of finite type; taking into account (10.10.2.1), (10.10.2.3), and Corollary \sref{1.1.3.12}[ii], we reduce to showing that the canonical isomorphism $\Hom_A(M,N)\isoto\varprojlim_n\Hom_{A_n}(M_n,N_n)$ (with $M_n=M\otimes_A A_n$ and $N_n=N\otimes_A A_n$) is continuous, which has been proved in \sref[0]{0.7.8.2}.
+The isomorphism \sref{1.10.11.7.2} where the two sodes are considered as sheaves of modules without topology, follows from the definition of the sections of $\shHom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})$ and $\shHom_{\OO_{X_n}}(\sh{F}_n,\sh{G}_n)$ and the existence of the isomorphism \sref{1.10.11.4.1}, mapping a prescheme induced on an arbitrary Noetherian formal affine open set to $\mathfrak{X}$.
+It rwmains to prove that the isomorphism \sref{1.10.11.7.2} is bicontinuous over a quasi-compact set, and we can thus reduce to the case where $\mathfrak{X}=\Spf(A)$, $A$ an adic Noetherian ring, hence \sref{1.10.10.5} $\sh{F}=M^\Delta$ and $\sh{G}=N^\Delta$, where $M$ and $N$ are $A$-modules of finite type; taking into account \sref{1.10.10.2.1}, \sref{1.10.10.2.3}, and Corollary \sref{1.1.3.12}[ii], we reduce to showing that the canonical isomorphism $\Hom_A(M,N)\isoto\varprojlim_n\Hom_{A_n}(M_n,N_n)$ (with $M_n=M\otimes_A A_n$ and $N_n=N\otimes_A A_n$) is continuous, which has been proved in \sref[0]{0.7.8.2}.
 \end{proof}
 
 \begin{env}[10.11.8]
 \label{1.10.11.8}
 As $\Hom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})$ is the group of sections of the sheaf of topological groups $\shHom_{\OO_\mathfrak{X}}(\sh{F},\sh{G})$, it is equipped with a group topology.
-If $\mathfrak{X}$ is \emph{Noetherian}, then it follows from (10.11.7.2) that the subgroups $\Hom_{\OO_\mathfrak{X}}(\sh{F},\sh{J}^n\sh{G})$ ($n$ arbitrary) form a fundamental system of neighborhoods of $0$ in this group.
+If $\mathfrak{X}$ is \emph{Noetherian}, then it follows from \sref{1.10.11.7.2} that the subgroups $\Hom_{\OO_\mathfrak{X}}(\sh{F},\sh{J}^n\sh{G})$ ($n$ arbitrary) form a fundamental system of neighborhoods of $0$ in this group.
 \end{env}
 
 \begin{prop}[10.11.9]
@@ -1301,7 +1316,7 @@ The fact that this equivalence is well defined will follow from the more-precise
 \begin{prop}[10.12.3.1]
 \label{1.10.12.3.1}
 Let $(X_n)$ be an inductive system of $S_n$-preschemes;
-suppose that the structure morphisms $f_n:X_n\to S_n$ are such that the diagrams in \hyperref[1.10.12.2]{(10.12.2.1)} commute and identify $X_m$ with $X_n\times_{S_n}S_m$ for $m\leq n$.
+suppose that the structure morphisms $f_n:X_n\to S_n$ are such that the diagrams in \sref{1.10.12.2.1} commute and identify $X_m$ with $X_n\times_{S_n}S_m$ for $m\leq n$.
 Then the inductive system $(X_n)$ satisfies conditions \emph{(b)} and \emph{(c)} of \sref{1.10.6.3};
 let $\mathfrak{X}$ be the inductive limit, and $f:\mathfrak{X}\to\mathfrak{S}$ the morphism given by the inductive limit of the inductive system $(f_n)$.
 Then, if $X_0$ is locally Noetherian, $\mathfrak{X}$ is locally Noetherian, and $f$ is an adic morphism.
@@ -1424,7 +1439,7 @@ The formal prescheme $\mathfrak{X}\times_\mathfrak{S}\mathfrak{S}'$ is then the 
 \]
 Furthermore, $X_0\times_{S_0}S'_0$ is locally Noetherian because $X_0$ of finite type over $S_0$ \sref{1.6.3.8}.
 We thus conclude \sref{1.10.12.3.1}, first of all, that $\mathfrak{X}\times_\mathfrak{S}\mathfrak{S}'$ is locally Noetherian;
-then, since $X_0\times_{S_0}S'_0$ is of finite type over $S'_0$ \sref{1.6.3.8}, it follows from \hyperref[1.10.12.3]{(10.12.3.1)} and \sref{1.10.13.1} that $\mathfrak{X}\times_\mathfrak{S}\mathfrak{S}'$ is of finite type over $\mathfrak{S}'$, which proves (ii) (the claim about Noetherian preschemes being an immediate consequence of \sref{1.6.3.8}).
+then, since $X_0\times_{S_0}S'_0$ is of finite type over $S'_0$ \sref{1.6.3.8}, it follows from \sref{1.10.12.3.1} and \sref{1.10.13.1} that $\mathfrak{X}\times_\mathfrak{S}\mathfrak{S}'$ is of finite type over $\mathfrak{S}'$, which proves (ii) (the claim about Noetherian preschemes being an immediate consequence of \sref{1.6.3.8}).
 \end{proof}
 
 \begin{cor}[10.13.6]
@@ -1533,10 +1548,11 @@ Under the hypotheses of \sref{1.10.14.5}[ii], let $p:\mathfrak{X}\times_\mathfra
 \]
 commutes.
 For every coherent $\OO_\mathfrak{X}$ module $\sh{F}$, we then have a canonical isomorphism of $\OO_\mathfrak{Y}$-modules
-\[
+\begin{equation*}
+\label{1.10.14.6.1}
   u:g^*(f_*(\sh{F}))\isoto q_*(p^*(\sh{F})).
   \tag{10.14.6.1}
-\]
+\end{equation*}
 \end{cor}
 
 \begin{proof}
@@ -1544,7 +1560,7 @@ For every coherent $\OO_\mathfrak{X}$ module $\sh{F}$, we then have a canonical 
 We know that defining a homomorphism $g^*(f_*(\sh{F})) \to q_*(p^*(\sh{F}))$ is equivalent to defining a homomorphism $f_*(\sh{F}) \to g_*(q_*(p^*(\sh{F}))) = f_*(p_*(p^*(\sh{F})))$ \sref[0]{0.4.4.3}:
 we take $u=f_*(\rho)$, where $\rho$ is the canonical homomorphism $\sh{F}\to p_*(p^*(\sh{F}))$ \sref[0]{0.4.4.3}.
 To see that $u$ is an isomorphism, we can immediately restrict to the case where $\mathfrak{S}$, $\mathfrak{X}$, and $\mathfrak{Y}$ are formal spectra of Noetherian adic rings $A$, $B$, and $C$ (respectively), with the conditions above in \sref{1.10.14.5}[ii];
-we then have $\sh{F}=M^\Delta$, where $M$ is an $(A/\mathfrak{a})$-module of finite type \sref{1.10.10.5}, and the two sides of \hyperref[1.10.14.6]{(10.14.6.1)} are then identified, respectively, by \sref{1.10.10.8}, with $(C\otimes_A M)^\Delta$ and $((C/\mathfrak{a}C)\otimes_{A/\mathfrak{a}}M)^\Delta$, whence the corollary, because $(C/\mathfrak{a}C)\otimes_{A/\mathfrak{a}}M = (C\otimes_A(A/\mathfrak{a}))\otimes_{A/\mathfrak{a}}M$ is canonically identified with $C\otimes_A M$.
+we then have $\sh{F}=M^\Delta$, where $M$ is an $(A/\mathfrak{a})$-module of finite type \sref{1.10.10.5}, and the two sides of \sref{1.10.14.6.1} are then identified, respectively, by \sref{1.10.10.8}, with $(C\otimes_A M)^\Delta$ and $((C/\mathfrak{a}C)\otimes_{A/\mathfrak{a}}M)^\Delta$, whence the corollary, because $(C/\mathfrak{a}C)\otimes_{A/\mathfrak{a}}M = (C\otimes_A(A/\mathfrak{a}))\otimes_{A/\mathfrak{a}}M$ is canonically identified with $C\otimes_A M$.
 \end{proof}
 
 \oldpage[I]{212}
