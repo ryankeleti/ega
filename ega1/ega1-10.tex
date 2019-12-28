@@ -140,10 +140,10 @@ commutate.
 
 \begin{env}[10.3.1]
 \label{1.10.3.1}
-Let $A$ be an admissible ring, $\mathfrak{J}$ an open ideal of $A$, $\mathfrak{X}$ the formal affine scheme $\Spf(A)$.
-Let $(\mathfrak{J}_\lambda)$ be the set of the ideals of definition for $A$ contained in $\mathfrak{J}$; then $\wt{\mathfrak{J}}/\wt{\mathfrak{J}}_\lambda$ is a sheaf of ideals of $\wt{A}/\wt{\mathfrak{J}}_\lambda$.
-Denote by $\mathfrak{J}^\Delta$ the projective limit of the induced sheaves on $\mathfrak{X}$ by $\wt{\mathfrak{J}}/\wt{\mathfrak{J}}_\lambda$, which identifies with a \emph{sheaf of ideals} of $\OO_\mathfrak{X}$ \sref[0]{0.3.2.6}.
-For every $f\in A$, $\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)$ is the projective limit of the $S_f^{-1}\mathfrak{J}/S_f^{-1}\mathfrak{J}_\lambda$, in other words, it identifies with the open ideal $\mathfrak{J}_{\{f\}}$ of the ring $A_{\{f\}}$ \sref[0]{0.7.6.9}, and in particular $\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$; we conclude (the $\mathfrak{D}(f)$ forming a basis for the topology of $\mathfrak{X}$) that we have
+Let $A$ be an admissible ring, $\mathfrak{J}$ an open ideal of $A$, and $\mathfrak{X}$ the formal affine scheme $\Spf(A)$.
+Let $(\mathfrak{J}_\lambda)$ be the set of those ideals of definition for $A$ that are contained in $\mathfrak{J}$; then $\wt{\mathfrak{J}}/\wt{\mathfrak{J}}_\lambda$ is a sheaf of ideals of $\wt{A}/\wt{\mathfrak{J}}_\lambda$.
+Denote by $\mathfrak{J}^\Delta$ the projective limit of the sheaves on $\mathfrak{X}$ induced by $\wt{\mathfrak{J}}/\wt{\mathfrak{J}}_\lambda$, which is identified with a \emph{sheaf of ideals} of $\OO_\mathfrak{X}$ \sref[0]{0.3.2.6}.
+For every $f\in A$, $\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)$ is the projective limit of the $S_f^{-1}\mathfrak{J}/S_f^{-1}\mathfrak{J}_\lambda$, or, in other words, can be identified with the open ideal $\mathfrak{J}_{\{f\}}$ of the ring $A_{\{f\}}$ \sref[0]{0.7.6.9}, and, in particular, $\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$; we conclude (the $\mathfrak{D}(f)$ forming a basis for the topology of $\mathfrak{X}$) that
 \[
   \mathfrak{J}^\Delta|\mathfrak{D}(f)=(\mathfrak{J}_{\{f\}})^\Delta.
   \tag{10.3.1.1}
@@ -153,7 +153,7 @@ For every $f\in A$, $\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)$ is the project
 \begin{env}[10.3.2]
 \label{1.10.3.2}
 \oldpage[I]{184}
-With the notation of \sref{1.10.3.1}, for all $f\in A$, the canonical map from $A_{\{f\}}=\Gamma(\mathfrak{D}(f),\OO_\mathfrak{X})$ to $\Gamma(\mathfrak{D}(f),(\wt{A}/\wt{\mathfrak{J}})|\mathfrak{X})=S_f^{-1}A/S_f^{-1}\mathfrak{J}$ is \emph{surjective} and has for its kernel $\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)=\mathfrak{J}_{\{f\}}$ \sref[0]{0.7.6.9}; these maps thus define a \emph{surjective} continuous homomorphism, said to be \emph{canonical}, from the sheaf of topological rings $\OO_\mathfrak{X}$ to the sheaf of discrete rings $(\wt{A}/\wt{\mathfrak{J}})|\mathfrak{X}$, whose kernel is $\mathfrak{J}^\Delta$; this homomorphism is none other than $\wt{\vphi}$ \sref{1.10.2.1}, where $\vphi$ is the continuous homomorphism $A\to A/\mathfrak{J}$; the morphism $({}^a\vphi,\wt{\vphi}):\Spec(A/\mathfrak{J})\to\mathfrak{X}$ of formal affine schemes (where ${}^a\vphi$ is the identity homeomorphism from $\mathfrak{X}$ to itself) is also called \emph{canonical}.
+With the notation of \sref{1.10.3.1}, for all $f\in A$, the canonical map from $A_{\{f\}}=\Gamma(\mathfrak{D}(f),\OO_\mathfrak{X})$ to $\Gamma(\mathfrak{D}(f),(\wt{A}/\wt{\mathfrak{J}})|\mathfrak{X})=S_f^{-1}A/S_f^{-1}\mathfrak{J}$ is \emph{surjective} and has $\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta)=\mathfrak{J}_{\{f\}}$ as its kernel \sref[0]{0.7.6.9}; these maps thus define a \emph{surjective} continuous homomorphism, said to be \emph{canonical}, from the sheaf of topological rings $\OO_\mathfrak{X}$ to the sheaf of discrete rings $(\wt{A}/\wt{\mathfrak{J}})|\mathfrak{X}$, whose kernel is $\mathfrak{J}^\Delta$; this homomorphism is none other than $\wt{\vphi}$ \sref{1.10.2.1}, where $\vphi$ is the continuous homomorphism $A\to A/\mathfrak{J}$; the morphism $({}^a\vphi,\wt{\vphi}):\Spec(A/\mathfrak{J})\to\mathfrak{X}$ of formal affine schemes (where ${}^a\vphi$ is the identity homeomorphism from $\mathfrak{X}$ to itself) is also said to be \emph{canonical}.
 We thus have, according to the above, a \emph{canonical isomorphism}
 \[
   \OO_\mathfrak{X}/\mathfrak{J}^\Delta\isoto(\wt{A}/\wt{\mathfrak{J}})|\mathfrak{X}.
@@ -165,7 +165,7 @@ It is clear (since $\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$) that
 
 \begin{env}[10.3.3]
 \label{1.10.3.3}
-The hypotheses and notation being the same as those of \sref{1.10.3.1}, we say that a sheaf of ideals $\sh{J}$ of $\OO_\mathfrak{X}$ is a \emph{sheaf of ideals of definition} for $\mathfrak{X}$ (or an \emph{ideal sheaf of definition} for $\mathfrak{X}$) if, for all $x\in\mathfrak{X}$, there exists an open neighborhood of $x$ of the form $\mathfrak{D}(f)$, where $f\in A$, such that $\sh{J}|\mathfrak{D}(f)$ is of the form $\mathfrak{H}^\Delta$, where $\mathfrak{H}$ is an ideal of definition for $A_{\{f\}}$.
+The hypotheses and notation being the same as in \sref{1.10.3.1}, we say that a sheaf of ideals $\sh{J}$ of $\OO_\mathfrak{X}$ is a \emph{sheaf of ideals of definition} for $\mathfrak{X}$ (or an \emph{ideal sheaf of definition} for $\mathfrak{X}$) if, for all $x\in\mathfrak{X}$, there exists an open neighborhood of $x$ of the form $\mathfrak{D}(f)$, where $f\in A$, such that $\sh{J}|\mathfrak{D}(f)$ is of the form $\mathfrak{H}^\Delta$, where $\mathfrak{H}$ is an ideal of definition for $A_{\{f\}}$.
 \end{env}
 
 \begin{prop}[10.3.4]
@@ -180,21 +180,21 @@ This follows from (10.3.1.1).
 
 \begin{prop}[10.3.5]
 \label{1.10.3.5}
-If $A$ is an admissible ring, then every sheaf of ideals of definition for $\mathfrak{X}=\Spf(A)$ is of the form $\mathfrak{J}^\Delta$, where $\mathfrak{J}$ is an ideal of definition for $A$, uniquely determined.
+If $A$ is an admissible ring, then every sheaf of ideals of definition for $\mathfrak{X}=\Spf(A)$ is of the form $\mathfrak{J}^\Delta$, where $\mathfrak{J}$ is a uniquely determined ideal of definition for $A$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.3.5}
-Let $\sh{J}$ be a sheaf of ideals of definition of $\mathfrak{X}$; by hypothesis, and since $\mathfrak{X}$ is quasi-compact, there is a finite number of elements $f_i\in A$ such that the $\mathfrak{D}(f_i)$ cover $\mathfrak{X}$ and that $\sh{J}|\mathfrak{D}(f_i)=\mathfrak{H}_i^\Delta$, where $\mathfrak{H}_i$ is an ideal of definition for $A_{\{f_i\}}$.
+Let $\sh{J}$ be a sheaf of ideals of definition of $\mathfrak{X}$; by hypothesis, and since $\mathfrak{X}$ is quasi-compact, there are finitely-many elements $f_i\in A$ such that the $\mathfrak{D}(f_i)$ cover $\mathfrak{X}$ and such that $\sh{J}|\mathfrak{D}(f_i)=\mathfrak{H}_i^\Delta$, where $\mathfrak{H}_i$ is an ideal of definition for $A_{\{f_i\}}$.
 For each $i$, there exists an open ideal $\mathfrak{K}_i$ of $A$ such that $(\mathfrak{K}_i)_{\{f_i\}}=\mathfrak{H}_i$ \sref[0]{0.7.6.9}; let $\mathfrak{K}$ be an ideal of definition for $A$ containing all the $\mathfrak{K}_i$.
 The canonical image of $\sh{J}/\mathfrak{K}^\Delta$ in the structure sheaf $(A/\mathfrak{K})^\sim$ of $\Spec(A/\mathfrak{K})$ \sref{1.10.3.2} is thus such that its restriction to $\mathfrak{D}(f_i)$ is equal to its restriction to $(\mathfrak{K}_i/\mathfrak{K})^\sim$;
-we conclude that this canonical image is a \emph{quasi-coherent} sheaf on $\Spec(A/\mathfrak{K})$, so it is of the form $(\mathfrak{J}/\mathfrak{K})^\sim$, where $\mathfrak{J}$ is an ideal of definition for $A$ containing $\mathfrak{K}$ \sref{1.1.4.1} hence $\sh{J}=\mathfrak{J}^\Delta$ \sref{1.10.3.2};
-in addition, as for each $i$ there exists an integer $n_i$ such that $\mathfrak{H}_i^{n_i}\subset\mathfrak{K}_{\{f_i\}}$, we will have, by setting $n$ to be the largest of the $n_i$, $(\sh{J}/\mathfrak{K}^\Delta)^n=0$, and as a result \sref{1.10.3.2} $((\mathfrak{J}/\mathfrak{K})^\sim)^n=0$, so finally $(\mathfrak{J}/\mathfrak{K})^n=0$ \sref{1.1.3.13}, which prove that $\mathfrak{J}$ is an ideal of definition for $A$ \sref[0]{0.7.1.4}.
+we conclude that this canonical image is a \emph{quasi-coherent} sheaf on $\Spec(A/\mathfrak{K})$, and so is of the form $(\mathfrak{J}/\mathfrak{K})^\sim$, where $\mathfrak{J}$ is an ideal of definition for $A$ containing $\mathfrak{K}$ \sref{1.1.4.1}, whence $\sh{J}=\mathfrak{J}^\Delta$ \sref{1.10.3.2};
+in addition, since for each $i$ there exists an integer $n_i$ such that $\mathfrak{H}_i^{n_i}\subset\mathfrak{K}_{\{f_i\}}$, we will have, by setting $n$ to be the largest of the $n_i$, that $(\sh{J}/\mathfrak{K}^\Delta)^n=0$, and, as a result \sref{1.10.3.2}, that $((\mathfrak{J}/\mathfrak{K})^\sim)^n=0$, whence finally that $(\mathfrak{J}/\mathfrak{K})^n=0$ \sref{1.1.3.13}, which proves that $\mathfrak{J}$ is an ideal of definition for $A$ \sref[0]{0.7.1.4}.
 \end{proof}
 
 \begin{prop}[10.3.6]
 \label{1.10.3.6}
-Let $A$ be an adic ring, $\mathfrak{J}$ an ideal of definition for $A$ such that $\mathfrak{J}/\mathfrak{J}^2$ is an $(A/\mathfrak{J})$-module of finite type. For any integer $n>0$, we then have $(\mathfrak{J}^\Delta)^n=(\mathfrak{J}^n)^\Delta$.
+Let $A$ be an adic ring, and $\mathfrak{J}$ an ideal of definition for $A$ such that $\mathfrak{J}/\mathfrak{J}^2$ is an $(A/\mathfrak{J})$-module of finite type. For any integer $n>0$, we then have $(\mathfrak{J}^\Delta)^n=(\mathfrak{J}^n)^\Delta$.
 \end{prop}
 
 \begin{proof}
@@ -204,17 +204,17 @@ For all $f\in A$, we have (since $\mathfrak{J}^n$ is an open ideal)
   (\Gamma(\mathfrak{D}(f),\mathfrak{J}^\Delta))^n=(\mathfrak{J}_{\{f\}})^n=(\mathfrak{J}^n)_{\{f\}}=\Gamma(\mathfrak{D}(f^n),(\mathfrak{J}^n)^\Delta)
 \]
 \oldpage[I]{185}
-according to (10.3.1.1) and \sref[0]{0.7.6.12}.
-As $(\mathfrak{J}^\Delta)^n$ is associated to the presheaf $U\mapsto(\Gamma(U,\mathfrak{J}^\Delta))^n$ \sref[0]{0.4.1.6}, the result follows, since the $\mathfrak{D}(f)$ form a basis for the topology of $\mathfrak{X}$.
+by to (10.3.1.1) and \sref[0]{0.7.6.12}.
+The result then follows from the fact that $(\mathfrak{J}^\Delta)^n$ is associated to the presheaf $U\mapsto(\Gamma(U,\mathfrak{J}^\Delta))^n$ \sref[0]{0.4.1.6}, since the $\mathfrak{D}(f)$ form a basis for the topology of $\mathfrak{X}$.
 \end{proof}
 
 \begin{env}[10.3.7]
 \label{1.10.3.7}
-We say that a family $(\sh{J}_\lambda)$ of sheaves of ideals of definition for $\mathfrak{X}$ is a \emph{fundamental system of sheaves of ideals of definition} if each sheaf of ideals of definition for $\mathfrak{X}$ contains one of the $\sh{J}_\lambda$; as $\sh{J}_\lambda=\mathfrak{J}_\lambda^\Delta$, it is equivalent to say that the $\mathfrak{J}_\lambda$ for a \emph{fundamental system of neighborhoods of $0$} in $A$.
+We say that a family $(\sh{J}_\lambda)$ of sheaves of ideals of definition for $\mathfrak{X}$ is a \emph{fundamental system of sheaves of ideals of definition} if each sheaf of ideals of definition for $\mathfrak{X}$ contains one of the $\sh{J}_\lambda$; since $\sh{J}_\lambda=\mathfrak{J}_\lambda^\Delta$, it is equivalent to say that the $\mathfrak{J}_\lambda$ form a \emph{fundamental system of neighborhoods of $0$} in $A$.
 Let $(f_\alpha)$ be a family of elements of $A$ such that the $\mathfrak{D}(f_\alpha)$ cover $\mathfrak{X}$.
-If $(\sh{J}_\lambda)$ is a filtered decreasing family of sheaves of ideals of $\OO_\mathfrak{X}$ such that for each $\alpha$, the family $(\sh{J}_\lambda|\mathfrak{D}(f_\alpha))$ is a fundamental system of sheaves of ideals of definition for $\mathfrak{D}(f_\alpha)$, then $(\sh{J}_\lambda)$ is a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$.
-Indeed, for each sheaf of ideals of definition $\sh{J}$ for $\mathfrak{X}$, there is a finite cover of $\mathfrak{X}$ by $\mathfrak{D}(f_i)$ such that, for each $i$, $\sh{J}_{\lambda_i}|\mathfrak{D}(f_i)$ is a sheaf of ideals of definition for $\mathfrak{D}(f_i)$ contained in $\sh{J}|\mathfrak{D}(f_i)$.
-If $\mu$ is an index such that $\sh{J}_\mu\subset\sh{J}_{\lambda_i}$ for all $i$, then it follows from \sref{1.10.3.3} that $\sh{J}_\mu$ is a sheaf of ideals of definition for $\mathfrak{X}$, evidently contained in $\sh{J}$, hence our assertion.
+If $(\sh{J}_\lambda)$ is a filtered decreasing family of sheaves of ideals of $\OO_\mathfrak{X}$ such that, for each $\alpha$, the family $(\sh{J}_\lambda|\mathfrak{D}(f_\alpha))$ is a fundamental system of sheaves of ideals of definition for $\mathfrak{D}(f_\alpha)$, then $(\sh{J}_\lambda)$ is a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$.
+Indeed, for each sheaf of ideals of definition $\sh{J}$ for $\mathfrak{X}$, there is a finite cover of $\mathfrak{X}$ by $\mathfrak{D}(f_i)$ such that, for each $i$, $\sh{J}_{\lambda_i}|\mathfrak{D}(f_i)$ is a sheaf of ideals of definition for $\mathfrak{D}(f_i)$ that is contained in $\sh{J}|\mathfrak{D}(f_i)$.
+If $\mu$ is an index such that $\sh{J}_\mu\subset\sh{J}_{\lambda_i}$ for all $i$, then it follows from \sref{1.10.3.3} that $\sh{J}_\mu$ is a sheaf of ideals of definition for $\mathfrak{X}$, evidently contained in $\sh{J}$, whence our assertion.
 \end{env}
 
 \subsection{Formal preschemes and morphisms of formal preschemes}
