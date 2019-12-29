@@ -313,20 +313,20 @@ If $\mathfrak{X}$ is a \emph{locally Noetherian} formal prescheme, and $\sh{J}$ 
 
 \begin{env}[10.5.2]
 \label{1.10.5.2}
-Let $\mathfrak{X}$ be a formal prescheme, $\sh{J}$ a sheaf of ideals of definition for $\mathfrak{X}$.
-Then the ringed space $(\mathfrak{X},\OO_\mathfrak{X}/\sh{J})$ is a (usual) \emph{prescheme}, which is affine (resp. locally Noetherian, resp. Noetherian) when $\mathfrak{X}$ is a formal affine scheme (resp. a locally Noetherian formal scheme, resp. a Noetherian formal scheme);  we can reduce to the affine case, and then the proposition has already been proven in \sref{1.10.3.2}.
-In addition, if $\theta:\OO_\mathfrak{X}\to\OO_\mathfrak{X}/\sh{J}$ is the canonical homomorphism, then $u=(1_\mathfrak{X},\theta)$ is a \emph{morphism} (said to be \emph{canonical}) of formal preschemes $(\mathfrak{X},\OO_\mathfrak{X}/\sh{J})\to(\mathfrak{X},\OO_\mathfrak{X})$, because again, this was proven in the affine case \sref{1.10.3.2}, to which it is immediately reduced.
+Let $\mathfrak{X}$ be a formal prescheme, and $\sh{J}$ a sheaf of ideals of definition for $\mathfrak{X}$.
+Then the ringed space $(\mathfrak{X},\OO_\mathfrak{X}/\sh{J})$ is a (usual) \emph{prescheme}, which is affine (resp. locally Noetherian, resp. Noetherian) when $\mathfrak{X}$ is a formal affine scheme (resp. a locally Noetherian formal scheme, resp. a Noetherian formal scheme);  we can reduce to the affine case, and then the proposition has already been proved in \sref{1.10.3.2}.
+In addition, if $\theta:\OO_\mathfrak{X}\to\OO_\mathfrak{X}/\sh{J}$ is the canonical homomorphism, then $u=(1_\mathfrak{X},\theta)$ is a \emph{morphism} (said to be \emph{canonical}) of formal preschemes $(\mathfrak{X},\OO_\mathfrak{X}/\sh{J})\to(\mathfrak{X},\OO_\mathfrak{X})$, because, again, this was proved in the affine case \sref{1.10.3.2}, to which it is immediately reduced.
 \end{env}
 
 \begin{prop}[10.5.3]
 \label{1.10.5.3}
-Let $\mathfrak{X}$ be a formal prescheme, $(\sh{J}_\lambda)$ a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$.
+Let $\mathfrak{X}$ be a formal prescheme, and $(\sh{J}_\lambda)$ a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$.
 Then the sheaf of topological rings $\OO_\mathfrak{X}$ is the projective limit of the pseudo-discrete sheaves of rings \sref[0]{0.3.8.1} $\OO_\mathfrak{X}/\sh{J}_\lambda$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.5.3}
-As the topology of $\mathfrak{X}$ admits a basis of formal quasi-compact affine open sets \sref{1.10.4.3}, we reduce to the affine case, where the proposition is a consequence of Proposition \sref{1.10.3.5}, \sref{1.10.3.2}, and the definition \sref{1.10.1.1}.
+Since the topology of $\mathfrak{X}$ admits a basis of formal quasi-compact affine open sets \sref{1.10.4.3}, we reduce to the affine case, where the proposition is a consequence of Proposition \sref{1.10.3.5}, \sref{1.10.3.2}, and Definition \sref{1.10.1.1}.
 \end{proof}
 
 It is not true that any formal prescheme admits a sheaf of ideals of definition.
@@ -343,19 +343,19 @@ If $\sh{J}$ is a sheaf of ideals of definition for $\mathfrak{X}$, then $\sh{T}$
 Suppose first that $\mathfrak{X}=\Spf(A)$, where $A$ is an adic Noetherian ring.
 The existence and the properties of $\sh{T}$ follow immediately from Propositions \sref{1.10.3.5} and \sref{1.5.1.1}, taking into account the existence and the properties of the largest ideal of definition for $A$ (\sref[0]{0.7.1.6} and \sref[0]{0.7.1.7}).
 
-To prove the existence and the properties of $\sh{T}$ in the general case, it suffices to show that if $U\supset V$ are two Noetherian formal affine open subsets of $X$, then the largest sheaf of ideals of definition $\sh{T}_U$ for $U$ induces the largest sheaf of ideals of definition $\sh{T}_V$ for $V$; but as $(V,(\OO_\mathfrak{X}|V)/(\sh{T}_U|V))$ is reduced, this follows from the above.
+To prove the existence and the properties of $\sh{T}$ in the general case, it suffices to show that, if $U\supset V$ are two Noetherian formal affine open subsets of $X$, then the largest sheaf of ideals of definition $\sh{T}_U$ for $U$ induces the largest sheaf of ideals of definition $\sh{T}_V$ for $V$; but as $(V,(\OO_\mathfrak{X}|V)/(\sh{T}_U|V))$ is reduced, this follows from the above.
 \end{proof}
 
 We denote by $\mathfrak{X}_\text{red}$ the (usual) reduced prescheme $(\mathfrak{X},\OO_\mathfrak{X}/\sh{T}$).
 
 \begin{cor}[10.5.5]
 \label{1.10.5.5}
-Let $\mathfrak{X}$ be a locally Noetherian formal prescheme, $\sh{T}$ the largest sheaf of ideals of definition for $\mathfrak{X}$; for each open subset $V$ of $\mathfrak{X}$, $\sh{T}|V$ is the largest sheaf of ideals of definition for the formal prescheme induced on $V$ by $\mathfrak{X}$.
+Let $\mathfrak{X}$ be a locally Noetherian formal prescheme, and $\sh{T}$ the largest sheaf of ideals of definition for $\mathfrak{X}$; for each open subset $V$ of $\mathfrak{X}$, $\sh{T}|V$ is the largest sheaf of ideals of definition for the formal prescheme induced on $V$ by $\mathfrak{X}$.
 \end{cor}
 
 \begin{prop}[10.5.6]
 \label{1.10.5.6}
-Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$), $f:\mathfrak{X}\to\mathfrak{Y}$ a morphism of formal preschemes.
+Let $\mathfrak{X}$ and $\mathfrak{Y}$ be formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$), and $f:\mathfrak{X}\to\mathfrak{Y}$ a morphism of formal preschemes.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item If $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$, then there exists a unique morphism $f':(\mathfrak{X},\OO_\mathfrak{X}/\sh{J})\to(\mathfrak{Y},\OO_\mathfrak{Y}/\sh{K})$ of usual preschemes making the diagram
     \begin{equation*}
@@ -368,9 +368,9 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. 
       }
       \tag{10.5.6.1}
     \end{equation*}
-    commutative, where the vertical arrows are the canonical morphisms.
-  \item Suppose that $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$ are two formal affine schemes, $\sh{J}=\mathfrak{J}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of definition for $A$ (resp. $B$), and $f=({}^a\vphi,\wt{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism;
-    for $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ to hold, it is necessary and sufficient that $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and $f'$ is then the morphism $({}^a\vphi',\wt{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the homomorphism induced from $\vphi$ by passing to quotients.
+    commutate, where the vertical arrows are the canonical morphisms.
+  \item Suppose that $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$ are formal affine schemes, $\sh{J}=\mathfrak{J}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of definition for $A$ (resp. $B$), and $f=({}^a\vphi,\wt{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism;
+    for $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ to hold, it is necessary and sufficient that $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and, in this case, $f'$ is then the morphism $({}^a\vphi',\wt{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the homomorphism induced from $\vphi$ by passing to quotients.
 \end{enumerate}
 \end{prop}
 
@@ -379,13 +379,13 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. 
 \medskip\noindent
 \begin{enumerate}[label=(\roman*)]
   \item If $f=(\psi,\theta)$, then the hypotheses imply that the image under $\theta^\sharp:\psi^*(\OO_\mathfrak{Y})\to\OO_\mathfrak{X}$ of the sheaf of ideals $\psi^*(\sh{K})$ of $\psi^*(\OO_\mathfrak{Y})$ is contained in $\sh{J}$ \sref[0]{0.4.3.5}.
-    By passing to quotients, we thus induce from $\theta^\sharp$ a homomorphism of sheaves of rings
+    By passing to quotients, we thus obtain from $\theta^\sharp$ a homomorphism of sheaves of rings
     \[
       \omega:\psi^*(\OO_\mathfrak{Y}/\sh{K})=\psi^*(\OO_\mathfrak{Y})/\psi^*(\sh{K})\to\OO_\mathfrak{X}/\sh{J};
     \]
-    in addition, as for all $x\in\mathfrak{X}$, $\theta_x^\sharp$ is a \emph{local} homomorphism, so is $\omega_x$.
-    The morphism of ringed spaces $(\psi,\omega^\flat)$ is thus \sref{1.2.2.1} the unique morphism $f'$ of ringed spaces which we need.
-  \item The canonical functorial correspondence between morphisms of formal affine schemes and continuous homomorphisms of rings \sref{1.10.2.2} shows that in the case considered, the relation $f^*(\sh{K})\OO_\mathfrak{X}\subset\mathfrak{J}$ implies that we have $f'=({}^a\vphi',\wt{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the unique homomorphism making the diagram
+    furthermore, since, for all $x\in\mathfrak{X}$, $\theta_x^\sharp$ is a \emph{local} homomorphism, so too is $\omega_x$.
+    The morphism of ringed spaces $(\psi,\omega^\flat)$ is thus \sref{1.2.2.1} the unique morphism $f'$ of ringed spaces whose existence was claimed.
+  \item The canonical functorial correspondence between morphisms of formal affine schemes and continuous homomorphisms of rings \sref{1.10.2.2} shows that, in the case considered, the relation $f^*(\sh{K})\OO_\mathfrak{X}\subset\mathfrak{J}$ implies that we have $f'=({}^a\vphi',\wt{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the unique homomorphism making the diagram
     \begin{equation*}
     \label{1.10.5.6.2}
       \xymatrix{
@@ -396,9 +396,9 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. 
       }
       \tag{10.5.6.2}
     \end{equation*}
-    commutative.
+    commutate.
     The existence of $\vphi'$ thus implies that $\vphi(\mathfrak{K})\subset\mathfrak{J}$.
-    Conversely, if this condition is satisfied, then denoting by $\vphi'$ the unique homomorphism making the diagram \sref{1.10.5.6.2} commutative and setting $f'=({}^a\vphi',\wt{\vphi'})$, it is clear that the diagram \sref{1.10.5.6.1} is commutative; the consideration of the homomorphisms ${}^a\vphi^*(\OO_\mathfrak{Y})\to\OO_\mathfrak{X}$ and ${}^a{\vphi'}^*(\OO_\mathfrak{Y}/\sh{K})\to\OO_\mathfrak{X}/\sh{J}$ corresponding to $f$ and $f'$ respectively then shows that this implies the relation $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
+    Conversely, if this condition is satisfied, then, denoting by $\vphi'$ the unique homomorphism making the diagram \sref{1.10.5.6.2} commutate and setting $f'=({}^a\vphi',\wt{\vphi'})$, it is clear that the diagram \sref{1.10.5.6.1} is commutative; considering the homomorphisms ${}^a\vphi^*(\OO_\mathfrak{Y})\to\OO_\mathfrak{X}$ and ${}^a{\vphi'}^*(\OO_\mathfrak{Y}/\sh{K})\to\OO_\mathfrak{X}/\sh{J}$ corresponding to $f$ and $f'$ respectively then leads to the fact that this implies the relation $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
 \end{enumerate}
 \end{proof}
 
