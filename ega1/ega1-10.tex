@@ -409,26 +409,26 @@ It is clear that the correspondence $f\mapsto f'$ defined above is \emph{functor
 
 \begin{env}[10.6.1]
 \label{1.10.6.1}
-Let $\mathfrak{X}$ be a formal prescheme, $(\sh{J}_\lambda)$ a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$; for each $\lambda$, let $f_\lambda$ be the canonical morphism $(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}_\lambda)\to\mathfrak{X}$ \sref{1.10.5.2}; for $\sh{J}_\mu\subset\sh{J}_\lambda$, the canonical morphism $\OO_\mathfrak{X}/\sh{J}_\mu\to\OO_\mathfrak{X}/\sh{J}_\lambda$ defines a canonical morphism
+Let $\mathfrak{X}$ be a formal prescheme, and $(\sh{J}_\lambda)$ a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$; for each $\lambda$, let $f_\lambda$ be the canonical morphism $(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}_\lambda)\to\mathfrak{X}$ \sref{1.10.5.2}; for $\sh{J}_\mu\subset\sh{J}_\lambda$, the canonical morphism $\OO_\mathfrak{X}/\sh{J}_\mu\to\OO_\mathfrak{X}/\sh{J}_\lambda$ defines a canonical morphism
 \oldpage[I]{189}
-$f_{\mu\lambda}:(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}_\lambda)\to(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}_\mu)$ of (usual) preschemes such that we have $f_\lambda=f_\mu\circ f_{\mu\lambda}$.
-The preschemes $X_\lambda=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}_\lambda)$ and the morphisms $f_{\mu\lambda}$ thus form (according to \sref{1.10.4.8}) a \emph{inductive system} in the category of formal preschemes.
+$f_{\mu\lambda}:(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}_\lambda)\to(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}_\mu)$ of (usual) preschemes such that $f_\lambda=f_\mu\circ f_{\mu\lambda}$.
+The preschemes $X_\lambda=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}_\lambda)$ and the morphisms $f_{\mu\lambda}$ thus form (by \sref{1.10.4.8}) an \emph{inductive system} in the category of formal preschemes.
 \end{env}
 
 \begin{prop}[10.6.2]
 \label{1.10.6.2}
-With the notation of \sref{1.10.6.1}, the formal prescheme $\mathfrak{X}$ and the morphisms $f_\lambda$ form an inductive limit (T, I, 1.8) of the system $(X_\lambda,f_{\mu\lambda})$ in the category of formal preschemes.
+With the notation of \sref{1.10.6.1}, the formal prescheme $\mathfrak{X}$ and the morphisms $f_\lambda$ form an inductive limit (T,~I,~1.8) of the system $(X_\lambda,f_{\mu\lambda})$ in the category of formal preschemes.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.6.2}
-Let $\mathfrak{Y}$ be a formal prescheme, and for each index $\lambda$, let
+Let $\mathfrak{Y}$ be a formal prescheme, and, for each index $\lambda$, let
 \[
   g_\lambda=(\psi_\lambda,\theta_\lambda):X_\lambda\to\mathfrak{Y}
 \]
-be a morphism such that we have $g_\lambda=g_\mu\circ f_{\mu\lambda}$ for $\sh{J}_\mu\subset\sh{J}_\lambda$.
-This latter condition and the definition of the $X_\lambda$ imply first that the $\psi_\lambda$ are identical to a continuous map $\psi:\mathfrak{X}\to\mathfrak{Y}$ of the underlying spaces; in addition, the homomorphism $\theta_\lambda^\sharp:\psi^*(\OO_\mathfrak{Y})\to\OO_{X_i}=\OO_\mathfrak{X}/\sh{J}_\lambda$ form a \emph{projective system} of homomorphisms of sheaves of rings.
-By passing to the projective limit, we thus induce a homomorphism $\omega:\psi^*(\OO_\mathfrak{Y})\to\varprojlim\OO_\mathfrak{X}/\sh{J}_\lambda=\OO_\mathfrak{X}$, and it is clear that the morphism $g=(\psi,\omega^\flat)$ of \emph{ringed spaces} is the \emph{unique} morphism making the diagrams
+be a morphism such that $g_\lambda=g_\mu\circ f_{\mu\lambda}$ for $\sh{J}_\mu\subset\sh{J}_\lambda$.
+This latter condition and the definition of the $X_\lambda$ imply first of all that the $\psi_\lambda$ are identical to a single continuous map $\psi:\mathfrak{X}\to\mathfrak{Y}$ of the underlying spaces; in addition, the homomorphisms $\theta_\lambda^\sharp:\psi^*(\OO_\mathfrak{Y})\to\OO_{X_i}=\OO_\mathfrak{X}/\sh{J}_\lambda$ form a \emph{projective system} of homomorphisms of sheaves of rings.
+By passing to the projective limit, there is an induced homomorphism $\omega:\psi^*(\OO_\mathfrak{Y})\to\varprojlim\OO_\mathfrak{X}/\sh{J}_\lambda=\OO_\mathfrak{X}$, and it is clear that the morphism $g=(\psi,\omega^\flat)$ of \emph{ringed spaces} is the \emph{unique} morphism making the diagrams
 \begin{equation*}
 \label{1.10.6.2.1}
   \xymatrix{
@@ -439,65 +439,65 @@ By passing to the projective limit, we thus induce a homomorphism $\omega:\psi^*
   \tag{10.6.2.1}
 \end{equation*}
 commutative.
-It remains to prove that $g$ is a morphism of \emph{formal preschemes}; the question is local on $\mathfrak{X}$ and $\mathfrak{Y}$, so we can assume $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$, $A$ and $B$ admissible rings, with $\sh{J}_\lambda=\mathfrak{J}_\lambda^\Delta$, where $(\mathfrak{J}_\lambda)$ is a fundamental system of ideal of definition for $A$ \sref{1.10.3.5}; as $A=\varprojlim A/\mathfrak{J}_\lambda$, the existence of a morphism $g$ of formal affine schemes making the diagrams \sref{1.10.6.2.1} commutative then follows from the bijective correspondence \sref{1.10.2.2} between morphisms of formal affine schemes and continuous ring homomorphisms, and from the definition of the projective limit.
+It remains to prove that $g$ is a morphism of \emph{formal preschemes}; the question is local on $\mathfrak{X}$ and $\mathfrak{Y}$, so we can assume that $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$, with $A$ and $B$ admissible rings, and with $\sh{J}_\lambda=\mathfrak{J}_\lambda^\Delta$, where $(\mathfrak{J}_\lambda)$ is a fundamental system of ideals of definition for $A$ \sref{1.10.3.5}; since $A=\varprojlim A/\mathfrak{J}_\lambda$, the existence of a morphism $g$ of formal affine schemes making the diagrams \sref{1.10.6.2.1} commutate then follows from the bijective correspondence \sref{1.10.2.2} between morphisms of formal affine schemes and continuous ring homomorphisms, and from the definition of the projective limit.
 But the uniqueness of $g$ as a morphism of ringed spaces shows that it coincides with the morphism in the beginning of the proof.
 \end{proof}
 
 The following proposition establishes, under certain additional conditions, the existence of the inductive limit of a given inductive system of (usual) preschemes in the category of formal preschemes:
 \begin{prop}[10.6.3]
 \label{1.10.6.3}
-Let $\mathfrak{X}$ be a topological space, $(\OO_i,u_{ji})$ a projective system of sheaves of rings on $\mathfrak{X}$, with $\bb{N}$ for its set of indices.
+Let $\mathfrak{X}$ be a topological space, and $(\OO_i,u_{ji})$ a projective system of sheaves of rings on $\mathfrak{X}$, with $\bb{N}$ for its set of indices.
 Let $\sh{J}_i$ be the kernel of $u_{0i}:\OO_i\to\OO_0$.
 Suppose that:
 \begin{enumerate}[label=\emph{(\alph*)}]
-  \item The ringed space $(\mathfrak{X},\OO_i)$ is a prescheme $X_i$.
-  \item For all $x\in\mathfrak{X}$ and all $i$, there exists an open neighborhood $U_i$ of $x$ in $\mathfrak{X}$ such that the restriction $\sh{J}_i|U_i$ is nilpotent.
-  \item The homomorphisms $u_{ji}$ are surjective.
+  \item the ringed space $(\mathfrak{X},\OO_i)$ is a prescheme $X_i$;
+  \item for all $x\in\mathfrak{X}$ and all $i$, there exists an open neighborhood $U_i$ of $x$ in $\mathfrak{X}$ such that the restriction $\sh{J}_i|U_i$ is nilpotent; and
+  \item the homomorphisms $u_{ji}$ are surjective.
 \end{enumerate}
 
 \oldpage[I]{190}
-Let $\OO_\mathfrak{X}$ be the sheaf of topological rings formed as the projective limit of the pseudo-discrete sheaves of rings $\OO_i$, and let $u_i:\OO_\mathfrak{X}\to\OO_i$ be the canonical homomorphism.
+Let $\OO_\mathfrak{X}$ be the sheaf of topological rings given by the projective limit of the pseudo-discrete sheaves of rings $\OO_i$, and let $u_i:\OO_\mathfrak{X}\to\OO_i$ be the canonical homomorphism.
 Then the topologically ringed space $(\mathfrak{X},\OO_\mathfrak{X})$ is a formal prescheme; the homomorphisms $u_i$ are surjective; their kernels $\sh{J}^{(i)}$ form a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$, and $\sh{J}^{(0)}$ is the projective limit of the sheaves of ideals $\sh{J}_i$.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.6.3}
-We first note that on each stalk, $u_{ji}$ is a surjective homomorphism and \emph{a fortiori} a local homomorphism; thus $v_{ij}=(1_\mathfrak{X},u_{ji})$ is a morphism of preschemes $X_j\to X_i$ ($i\geq j$) \sref{1.2.2.1}.
-Suppose first that each $X_i$ is an affine scheme with ring $A_i$.
-There exists a \emph{ring} homomorphism $\vphi_{ji}:A_i\to A_j$ such that $u_{ji}=\wt{\vphi_{ji}}$ \sref{1.1.7.3}; as a result \sref{1.1.6.3}, the sheaf $\OO_j$ is a quasi-coherent $\OO_i$-module over $X_i$ (for the external law defined by $u_{ji}$), associated to $A_j$ considered as an $A_i$-module $\vphi_{ji}$.
-For all $f\in A_i$, let $f'=\vphi_{ji}(f)$; by hypothesis, the open sets $D(f)$ and $D(f')$ are identical in $\mathfrak{X}$, and the homomorphism from $\Gamma(D(f),\OO_i)=(A_i)_f$ to $\Gamma(D(f),\OO_j)=(A_j)_{f'}$ corresponding to $u_{ji}$ is none other than $(\vphi_{ji})_f$ \sref{1.1.6.1}.
+We first note that, on each stalk, $u_{ji}$ is a surjective homomorphism and \emph{a fortiori} a local homomorphism; thus $v_{ij}=(1_\mathfrak{X},u_{ji})$ is a morphism of preschemes $X_j\to X_i$ ($i\geq j$) \sref{1.2.2.1}.
+Suppose first that each $X_i$ is an affine scheme of ring $A_i$.
+There exists a \emph{ring} homomorphism $\vphi_{ji}:A_i\to A_j$ such that $u_{ji}=\wt{\vphi_{ji}}$ \sref{1.1.7.3}; as a result \sref{1.1.6.3}, the sheaf $\OO_j$ is a quasi-coherent $\OO_i$-module over $X_i$ (for the external law defined by $u_{ji}$), associated to $A_j$ considered as an $A_i$-module by means of $\vphi_{ji}$.
+For all $f\in A_i$, let $f'=\vphi_{ji}(f)$; by hypothesis, the open sets $D(f)$ and $D(f')$ are identical in $\mathfrak{X}$, and the homomorphism from $\Gamma(D(f),\OO_i)=(A_i)_f$ to $\Gamma(D(f),\OO_j)=(A_j)_{f'}$ corresponding to $u_{ji}$ is exactly $(\vphi_{ji})_f$ \sref{1.1.6.1}.
 But when we consider $A_j$ as an $A_i$-module, $(A_j)_{f'}$ is the $(A_i)_f$-module $(A_j)_f$, so we also have $u_{ji}=\wt{\vphi_{ji}}$, where $\vphi_{ji}$ is now considered as a homomorphism of \emph{$A_i$-modules}.
-Then as $u_{ji}$ is surjective, we conclude that $\vphi_{ji}$ is also surjective \sref{1.1.3.9} and if $\mathfrak{J}_{ji}$ is the kernel of $\vphi_{ji}$, then the kernel of $u_{ji}$ is a quasi-coherent $\OO_i$-module equal to $\wt{\mathfrak{J}_{ji}}$.
+Then, since $u_{ji}$ is surjective, we conclude that $\vphi_{ji}$ is also surjective \sref{1.1.3.9}, and if $\mathfrak{J}_{ji}$ is the kernel of $\vphi_{ji}$, then the kernel of $u_{ji}$ is a quasi-coherent $\OO_i$-module equal to $\wt{\mathfrak{J}_{ji}}$.
 In particular, we have $\sh{J}_i=\wt{\mathfrak{J}_i}$, where $\mathfrak{J}_i$ is the kernel of $\vphi_{0i}:A_i\to A_0$.
-The hypothesis (b) implies that $\sh{J}_i$ is \emph{nilpotent}: indeed, as $\mathfrak{X}$ is quasi-compact, we can cover $\mathfrak{X}$ by a finite number of open sets $U_k$ such that $(\sh{J}_i|U_k)^{n_k}=0$, and by setting $n$ to be the largest of the $n_k$, we have $\sh{J}_i^n=0$.
-We conclude that $\mathfrak{J}_i$ is nilpotent \sref{1.1.3.13}.
+Hypothesis~(b) implies that $\sh{J}_i$ is \emph{nilpotent}: indeed, since $\mathfrak{X}$ is quasi-compact, we can cover $\mathfrak{X}$ by a finite number of open sets $U_k$ such that $(\sh{J}_i|U_k)^{n_k}=0$, and, by setting $n$ to be the largest of the $n_k$, we have $\sh{J}_i^n=0$.
+We thus conclude that $\mathfrak{J}_i$ is nilpotent \sref{1.1.3.13}.
 Then the ring $A=\varprojlim A_i$ is admissible \sref[0]{0.7.2.2}, the canonical homomorphism $\vphi_i:A\to A_i$ is surjective, and its kernel $\mathfrak{J}^{(i)}$ is equal to the projective limit of the $\mathfrak{J}_{ik}$ for $k\geq i$; the $\mathfrak{J}^{(i)}$ form a fundamental system of neighborhoods of $0$ in $A$.
-The assertions of Proposition \sref{1.10.6.3} follow in this case from \sref{1.10.1.1} and \sref{1.10.3.2}, $(\mathfrak{X},\OO_\mathfrak{X})$ being $\Spf(A)$.
+The assertions of Proposition \sref{1.10.6.3} follow in this case from \sref{1.10.1.1} and \sref{1.10.3.2}, with $(\mathfrak{X},\OO_\mathfrak{X})$ being $\Spf(A)$.
 
-In this particular case, we note that if $f=(f_i)$ is an element of the projective limit $A=\varprojlim A_i$, then all the open sets $D(f_i)$ (affine open sets in $X_i$) identify with the open subset $\mathfrak{D}(f)$ of $\mathfrak{X}$, the prescheme induced on $\mathfrak{D}(f)$ by $X_i$ thus identifying with the affine scheme $\Spec((A_i)_{f_i})$.
+Again, in this particular case, we note that, if $f=(f_i)$ is an element of the projective limit $A=\varprojlim A_i$, then all the open sets $D(f_i)$ (which are affine open sets in $X_i$) can be identified with the open subset $\mathfrak{D}(f)$ of $\mathfrak{X}$, and the prescheme induced on $\mathfrak{D}(f)$ by $X_i$ thus being identified with the affine scheme $\Spec((A_i)_{f_i})$.
 
-In the general case, we remark first that for every quasi-compact open subset $U$ of $\mathfrak{X}$, each of the $\sh{J}_i|U$ is nilpotent, as shown by the above reasoning.
-We will see that for every $x\in\mathfrak{X}$, there exists an open neighborhood $U$ of $x$ in $\mathfrak{X}$ which is an \emph{affine open set} for \emph{all} the $X_i$.
+In the general case, we remark first that, for every quasi-compact open subset $U$ of $\mathfrak{X}$, each of the $\sh{J}_i|U$ is nilpotent, as shown by the above reasoning.
+We will show that, for every $x\in\mathfrak{X}$, there exists an open neighborhood $U$ of $x$ in $\mathfrak{X}$ which is an \emph{affine open set} for \emph{all} the $X_i$.
 Indeed, we take $U$ to be an affine open set for $X_0$, and observe that $\OO_{X_0}=\OO_{X_i}/\sh{J}_i$.
-As $\sh{J}_i|U$ is nilpotent according to the above, $U$ is also an affine open set for each $X_i$ by Proposition \sref{1.5.1.9}.
-This being so, for each $U$ satisfying the preceding conditions, the study of the affine case as above shows that $(U,\OO_X|U)$ is a formal prescheme whose $\sh{J}^{(i)}|U$ for a fundamental system of sheaves of ideals of definition, and $\sh{J}^{(0)}|U$ is the projective limit of the $\sh{J}_i|U$; hence the conclusion.
+Since, by the above, $\sh{J}_i|U$ is nilpotent, $U$ is also an affine open set for each $X_i$, by Proposition \sref{1.5.1.9}.
+This being so, for each $U$ satisfying the preceding conditions, the study of the affine case as above shows that $(U,\OO_X|U)$ is a formal prescheme whose $\sh{J}^{(i)}|U$ form a fundamental system of sheaves of ideals of definition, and $\sh{J}^{(0)}|U$ is the projective limit of the $\sh{J}_i|U$; whence the conclusion.
 \end{proof}
 
 \begin{cor}[10.6.4]
 \label{1.10.6.4}
-Suppose that for $i\geq j$, the kernel of $u_{ji}$ is $\sh{J}_i^{j+1}$ and that $\sh{J}_1/\sh{J}_1^2$
+Suppose that, for $i\geq j$, the kernel of $u_{ji}$ is $\sh{J}_i^{j+1}$ and that $\sh{J}_1/\sh{J}_1^2$
 \oldpage[I]{191}
 is of finite type over $\OO_0=\OO_1/\sh{J}_1$.
-Then $\mathfrak{X}$ is an adic formal prescheme, and if $\sh{J}^{(n)}$ is the kernel of $\OO_\mathfrak{X}\to\OO_n$, then we have $\sh{J}^{(n)}=\sh{J}^{n+1}$ and $\sh{J}/\sh{J}^2$ is isomorphic to $\sh{J}_1$.
-If in addition $X_0$ is locally Noetherian (resp. Noetherian), then $\mathfrak{X}$ is locally Noetherian (resp. Noetherian).
+Then $\mathfrak{X}$ is an adic formal prescheme, and if $\sh{J}^{(n)}$ is the kernel of $\OO_\mathfrak{X}\to\OO_n$, then $\sh{J}^{(n)}=\sh{J}^{n+1}$ and $\sh{J}/\sh{J}^2$ is isomorphic to $\sh{J}_1$.
+If, in addition, $X_0$ is locally Noetherian (resp. Noetherian), then $\mathfrak{X}$ is locally Noetherian (resp. Noetherian).
 \end{cor}
 
 \begin{proof}
 \label{proof-1.10.6.4}
-As the underlying spaces of $\mathfrak{X}$ and $X_0$ are the same, the question is local, and we can suppose that all the $X_i$ are affine; taking into account the relations $\sh{J}_{ij}=\wt{\mathfrak{J}_{ji}}$ (with the notation of Proposition \sref{1.10.3.6}), we immediately reduce to the corresponding assertions of Proposition \sref[0]{0.7.2.7} and Corollary \sref[0]{0.7.2.8}, by noting that $\mathfrak{J}_1/\mathfrak{J}_1^2$ is then an $A_0$-module of finite type \sref{1.1.3.9}.
+Since the underlying spaces of $\mathfrak{X}$ and $X_0$ are the same, the question is local, and we can suppose that all the $X_i$ are affine; taking into account the fact that $\sh{J}_{ij}=\wt{\mathfrak{J}_{ji}}$ (with the notation of Proposition \sref{1.10.3.6}), we can immediately reduce the problem to the corresponding assertions of Proposition \sref[0]{0.7.2.7} and Corollary \sref[0]{0.7.2.8}, by noting that $\mathfrak{J}_1/\mathfrak{J}_1^2$ is then an $A_0$-module of finite type \sref{1.1.3.9}.
 \end{proof}
 
-In particular, \emph{every locally Noetherian formal prescheme $\mathfrak{X}$} is the inductive limit of a sequence $(X_n)$ of locally Noetherian (usual) preschemes satisfying the conditions of Proposition \sref{1.10.3.6} and Corollary \sref{1.10.6.4}: it suffices to consider a sheaf of ideals of definition $\sh{J}$ for $\mathfrak{X}$ \sref{1.10.5.4} and by setting $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$ (\sref{1.10.5.1} and Proposition \sref{1.10.6.2}).
+In particular, \emph{every locally Noetherian formal prescheme $\mathfrak{X}$} is the inductive limit of a sequence $(X_n)$ of locally Noetherian (usual) preschemes satisfying the conditions of Proposition \sref{1.10.3.6} and Corollary \sref{1.10.6.4}: it suffices to consider a sheaf of ideals of definition $\sh{J}$ for $\mathfrak{X}$ \sref{1.10.5.4} and to take $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$ (\sref{1.10.5.1} and Proposition \sref{1.10.6.2}).
 
 \begin{cor}[10.6.5]
 \label{1.10.6.5}
@@ -508,22 +508,22 @@ For the formal affine scheme $\mathfrak{X}=\Spf(A)$ to be Noetherian, it is nece
 \begin{proof}
 \label{proof-1.10.6.5}
 The condition is evidently sufficient.
-Conversely, suppose that $\mathfrak{X}$ is Noetherian, and let $\mathfrak{J}$ be an ideal of definition for $A$, $\sh{J}=\mathfrak{J}^\Delta$ the corresponding sheaf of ideals of definition for $\mathfrak{X}$.
-The (usual) preschemes $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$ are then affine and Noetherian, so the rings $A_n=A/\mathfrak{J}^{n+1}$ are Noetherian \sref{1.6.1.3}, hence we conclude that $\mathfrak{J}/\mathfrak{J}^2$ is an $A/\mathfrak{J}$-module of finite type.
-As the $\sh{J}^n$ form a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$ \sref{1.10.5.1}, we have $\OO_\mathfrak{X}=\varprojlim\OO_\mathfrak{X}/\sh{J}^n$ \sref{1.10.5.3}; we conclude \sref{1.10.1.3} that $A$ is topologically isomorphic to $\varprojlim A/\mathfrak{J}^n$, which is adic and Noetherian \sref[0]{0.7.2.8}.
+Conversely, suppose that $\mathfrak{X}$ is Noetherian, and let $\mathfrak{J}$ be an ideal of definition for $A$, and $\sh{J}=\mathfrak{J}^\Delta$ the corresponding sheaf of ideals of definition for $\mathfrak{X}$.
+The (usual) preschemes $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$ are then affine and Noetherian, so the rings $A_n=A/\mathfrak{J}^{n+1}$ are Noetherian \sref{1.6.1.3}, whence we conclude that $\mathfrak{J}/\mathfrak{J}^2$ is an $A/\mathfrak{J}$-module of finite type.
+Since the $\sh{J}^n$ form a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$ \sref{1.10.5.1}, we have $\OO_\mathfrak{X}=\varprojlim\OO_\mathfrak{X}/\sh{J}^n$ \sref{1.10.5.3}; we thus conclude \sref{1.10.1.3} that $A$ is topologically isomorphic to $\varprojlim A/\mathfrak{J}^n$, which is adic and Noetherian \sref[0]{0.7.2.8}.
 \end{proof}
 
 \begin{rmk}[10.6.6]
 \label{1.10.6.6}
-With the notation of Proposition \sref{1.10.6.3}, let $\sh{F}_i$ be an $\OO_i$-module, and suppose we are given, for $i\geq i$, a $v_{ij}$-morphism $\theta_{ji}:\sh{F}_i\to\sh{F}_j$, such that $\theta_{kj}\circ\theta_{ji}=\theta_{ki}$ for $k\leq j\leq i$.
-As the continuous underlying map of $v_{ij}$ is the identity, $\theta_{ji}$ is a homomorphism of sheaves of abelian groups on the space $\mathfrak{X}$; in addition, if $\sh{F}$ is the projective limit of the projective system $(\sh{F}_i)$ of sheaves of abelian groups, the fact that the $\theta_{ji}$ are $v_{ij}$-morphism allows one to define on $\sh{F}$ an $\OO_\mathfrak{X}$-module structure by passing to the projective limit; equipped with this structure, we say that $\sh{F}$ is the \emph{projective limit} (with respect to the $\theta_{ji}$) of the system of $\OO_i$-modules $(\sh{F}_i)$.
-In the particular case where $v_{ij}^*(\sh{F}_i)=\sh{F}_j$, and where $\theta_{ji}$ is the \emph{identity}, we say that $\sh{F}$ is the projective limit of a system $(\sh{F}_i)$ such that $v_{ij}^*(\sh{F}_i)=\sh{F}_j$ for $j\leq i$ (without mentioning the $\theta_{ji}$).
+With the notation of Proposition \sref{1.10.6.3}, let $\sh{F}_i$ be an $\OO_i$-module, and suppose we are given, for $i\geq i$, a $v_{ij}$-morphism $\theta_{ji}:\sh{F}_i\to\sh{F}_j$ such that $\theta_{kj}\circ\theta_{ji}=\theta_{ki}$ for $k\leq j\leq i$.
+Since the underlying continuous map of $v_{ij}$ is the identity, $\theta_{ji}$ is a homomorphism of sheaves of abelian groups to the space $\mathfrak{X}$; in addition, if $\sh{F}$ is the projective limit of the projective system $(\sh{F}_i)$ of sheaves of abelian groups, then the fact that the $\theta_{ji}$ are $v_{ij}$-morphisms lets us define an $\OO_\mathfrak{X}$-module structure on $\sh{F}$ by passing to the projective limit; when equipped with this structure, we say that $\sh{F}$ is the \emph{projective limit} (with respect to the $\theta_{ji}$) of the system of $\OO_i$-modules $(\sh{F}_i)$.
+In the particular case where $v_{ij}^*(\sh{F}_i)=\sh{F}_j$ and $\theta_{ji}$ is the \emph{identity}, we say that $\sh{F}$ is the projective limit of a system $(\sh{F}_i)$ such that $v_{ij}^*(\sh{F}_i)=\sh{F}_j$ for $j\leq i$ (without mentioning the $\theta_{ji}$).
 \end{rmk}
 
 \begin{env}[10.6.7]
 \label{1.10.6.7}
-Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two formal preschemes, $\sh{J}$ (resp. $\sh{K}$) a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$), $f:\mathfrak{X}\to\mathfrak{Y}$ a morphism such that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
-We then have for every integer $n>0$, $f^*(\sh{K}^n)\OO_\mathfrak{X}=(f^*(\sh{K})\OO_\mathfrak{X})^n\subset\sh{J}^n$; we can thus \sref{1.10.5.6} induce from $f$ a morphism of (usual) preschemes $f_n:X_n\to Y_n$, by setting $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$ and $Y_n=(\sh{Y},\OO_\mathfrak{Y}/\sh{K}^{n+1})$, and it immediately follows from the definitions that the diagrams
+Let $\mathfrak{X}$ and $\mathfrak{Y}$ be formal preschemes, $\sh{J}$ (resp. $\sh{K}$) a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$), and $f:\mathfrak{X}\to\mathfrak{Y}$ a morphism such that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
+We then have, for every integer $n>0$, that $f^*(\sh{K}^n)\OO_\mathfrak{X}=(f^*(\sh{K})\OO_\mathfrak{X})^n\subset\sh{J}^n$; $f$ thus induces \sref{1.10.5.6} a morphism of (usual) preschemes $f_n:X_n\to Y_n$ by setting $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$ and $Y_n=(\sh{Y},\OO_\mathfrak{Y}/\sh{K}^{n+1})$, and it immediately follows from the definitions that the diagrams
 \begin{equation*}
 \label{1.10.6.7.1}
   \xymatrix{
@@ -535,13 +535,13 @@ We then have for every integer $n>0$, $f^*(\sh{K}^n)\OO_\mathfrak{X}=(f^*(\sh{K}
   \tag{10.6.7.1}
 \end{equation*}
 \oldpage[I]{192}
-are commutative for $m\leq n$; in other words, $(f_n)$ is an \emph{inductive system} of morphisms.
+commute for $m\leq n$; in other words, $(f_n)$ is an \emph{inductive system} of morphisms.
 \end{env}
 
 \begin{env}[10.6.8]
 \label{1.10.6.8}
-Conversely, let $(X_n)$ (resp. $(Y_n)$) be an inductive system of (usual) preschemes satisfying conditions (b) and (c) of Proposition \sref{1.10.6.3}, and let $\mathfrak{X}$ (resp. $\mathfrak{Y}$) its inductive limit.
-By definition of the inductive limit, each sequence $(f_n)$ of morphisms $X_n\to Y_n$ form an inductive system admitting an \emph{inductive limit $f:\mathfrak{X}\to\mathfrak{Y}$}, which is the unique morphism of formal preschemes making the diagrams
+Conversely, let $(X_n)$ (resp. $(Y_n)$) be an inductive system of (usual) preschemes satisfying conditions~(b) and (c) of Proposition \sref{1.10.6.3}, and let $\mathfrak{X}$ (resp. $\mathfrak{Y}$) be its inductive limit.
+By definition of the inductive limit, each sequence $(f_n)$ of morphisms $X_n\to Y_n$ forms an inductive system that admits an \emph{inductive limit $f:\mathfrak{X}\to\mathfrak{Y}$}, which is the unique morphism of formal preschemes that makes the diagrams
 \[
   \xymatrix{
     X_n\ar[r]^{f_n}\ar[d] &
@@ -550,57 +550,57 @@ By definition of the inductive limit, each sequence $(f_n)$ of morphisms $X_n\to
     \mathfrak{Y}
   }
 \]
-commutative.
+commutate.
 \end{env}
 
 \begin{prop}[10.6.9]
 \label{1.10.6.9}
-Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Noetherian formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$); the map $f\mapsto(f_n)$ defined in \sref{1.10.6.7} is a bijection from the set of morphisms $f:\mathfrak{X}\to\mathfrak{Y}$ such that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ to the set of sequences $(f_n)$ of morphisms making the diagrams \sref{1.10.6.7.1} commutative.
+Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Noetherian formal preschemes, and $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$); the map $f\mapsto(f_n)$ defined in \sref{1.10.6.7} is a bijection from the set of morphisms $f:\mathfrak{X}\to\mathfrak{Y}$ such that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ to the set of sequences $(f_n)$ of morphisms that make the diagrams \sref{1.10.6.7.1} commutate.
 \end{prop}
 
 \begin{proof}
 \label{proof-1.10.6.9}
-If $f$ is the inductive limit of this sequence, then it is necessary to show that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
-The statement being local on $\mathfrak{X}$ and $\mathfrak{Y}$, we can reduce to the case where $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$ are affine, $A$ and $B$ adic Noetherian rings, $\sh{J}=\mathfrak{J}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of definition for $A$ (resp. $B$).
-We then have $X_n=\Spec(A_n)$ and $Y_n=\Spec(B_n)$, with $A_n=A/\mathfrak{J}^{n+1}$ and $B_n=B/\mathfrak{K}^{n+1}$, according to Proposition \sref{1.10.3.6} and \sref{1.10.3.2}; $f_n=({}^a\vphi_n,\wt{\vphi_n})$, where the homomorphisms $\vphi_n:B_n\to A_n$ forms a projective system, thus $f=({}^a\vphi,\wt{\vphi})$, so $f=({}^a\vphi,\wt{\vphi})$, where $\vphi=\varprojlim\vphi_n$.
-The commutativity of the diagram \sref{1.10.6.7.1} for $m=0$ then gives the condition $\vphi_n(\mathfrak{K}/\mathfrak{K}^{n+1})\subset\mathfrak{J}/\mathfrak{J}^{n+1}$ for all $n$, so by passing to the projective limit we have $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and this implies that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ \sref{1.10.5.6}[ii].
+If $f$ is the inductive limit of this sequence, then it remains to show that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$.
+The statement, being local on $\mathfrak{X}$ and $\mathfrak{Y}$, can be reduced to the case where $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$ are affine, with $A$ and $B$ adic Noetherian rings, and with $\sh{J}=\mathfrak{J}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of definition for $A$ (resp. $B$).
+We then have that $X_n=\Spec(A_n)$ and $Y_n=\Spec(B_n)$, with $A_n=A/\mathfrak{J}^{n+1}$ and $B_n=B/\mathfrak{K}^{n+1}$, by Proposition \sref{1.10.3.6} and \sref{1.10.3.2}; $f_n=({}^a\vphi_n,\wt{\vphi_n})$, where the homomorphisms $\vphi_n:B_n\to A_n$ forms a projective system, thus $f=({}^a\vphi,\wt{\vphi})$, and so $f=({}^a\vphi,\wt{\vphi})$, where $\vphi=\varprojlim\vphi_n$.
+The commutativity of the diagram \sref{1.10.6.7.1} for $m=0$ then gives the condition $\vphi_n(\mathfrak{K}/\mathfrak{K}^{n+1})\subset\mathfrak{J}/\mathfrak{J}^{n+1}$ for all $n$, so, by passing to the projective limit, we have $\vphi(\mathfrak{K})\subset\mathfrak{J}$, which implies that $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{J}$ \sref{1.10.5.6}[ii].
 \end{proof}
 
 \begin{cor}[10.6.10]
 \label{1.10.6.10}
-Let $\mathfrak{X}$ and $\mathfrak{Y}$ be two locally Noetherian formal preschemes, $\sh{T}$ the largest sheaf of ideals of definition for $\mathfrak{X}$ \sref{1.10.5.4}.
+Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Noetherian formal preschemes, and $\sh{T}$ the largest sheaf of ideals of definition for $\mathfrak{X}$ \sref{1.10.5.4}.
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item For every sheaf of ideals of definition $\sh{K}$ for $\mathfrak{Y}$ and every morphism $f:\mathfrak{X}\to\mathfrak{Y}$, we have $f^*(\sh{K})\OO_\mathfrak{X}\subset\sh{T}$.
-  \item There is a canonical bijective correspondence between $\Hom(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(f_n)$ of morphisms making the diagrams \sref{1.10.6.7.1} commutative, where $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{T}^{n+1})$ and $Y_n=(\mathfrak{Y},\OO_\mathfrak{Y}/\sh{K}^{n+1})$.
+  \item There is a canonical bijective correspondence between $\Hom(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(f_n)$ of morphisms making the diagrams \sref{1.10.6.7.1} commute, where $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{T}^{n+1})$ and $Y_n=(\mathfrak{Y},\OO_\mathfrak{Y}/\sh{K}^{n+1})$.
 \end{enumerate}
 \end{cor}
 
 \begin{proof}
 \label{proof-1.10.6.10}
 (ii) follows immediately from (i) and Proposition \sref{1.10.6.9}.
-To prove (i), we can reduce to the case where $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$, $A$ and $B$ Noetherian, $\sh{T}=\mathfrak{T}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{T}$ is the largest ideal of definition for $A$ and $\mathfrak{K}$ is an ideal of definition for $B$.
-Let $f=({}^a\vphi,\wt{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism; as the elements of $\mathfrak{K}$ are topologically nilpotent \sref[0]{0.7.1.4}[ii], so are those of $\vphi(\mathfrak{K})$, so $\vphi(\mathfrak{K})\subset\mathfrak{T}$ since $\mathfrak{T}$ is the set of topologically nilpotent elements of $A$ \sref[0]{0.7.1.6}; hence, by Proposition \sref{1.10.5.6}[ii], we are done.
+To prove (i), we can reduce to the case where $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$, with $A$ and $B$ Noetherian, and with $\sh{T}=\mathfrak{T}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{T}$ is the largest ideal of definition for $A$ and $\mathfrak{K}$ is an ideal of definition for $B$.
+Let $f=({}^a\vphi,\wt{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism; since the elements of $\mathfrak{K}$ are topologically nilpotent \sref[0]{0.7.1.4}[ii], so too are those of $\vphi(\mathfrak{K})$, and so $\vphi(\mathfrak{K})\subset\mathfrak{T}$, since $\mathfrak{T}$ is the set of topologically nilpotent elements of $A$ \sref[0]{0.7.1.6}; hence, by Proposition \sref{1.10.5.6}[ii], we are done.
 \end{proof}
 
 \begin{cor}[10.6.11]
 \label{1.10.6.11}
-Let $\mathfrak{S}$, $\mathfrak{X}$, $\mathfrak{Y}$ be locally Noetherian formal preschemes, $f:\mathfrak{X}\to\mathfrak{S}$ and $g:\mathfrak{Y}\to\mathfrak{S}$ the morphisms making $\mathfrak{X}$ and $\mathfrak{Y}$ formal $\mathfrak{S}$-preschemes.
+Let $\mathfrak{S}$, $\mathfrak{X}$, $\mathfrak{Y}$ be locally Noetherian formal preschemes, and $f:\mathfrak{X}\to\mathfrak{S}$ and $g:\mathfrak{Y}\to\mathfrak{S}$ the morphisms that make $\mathfrak{X}$ and $\mathfrak{Y}$ formal $\mathfrak{S}$-preschemes.
 Let $\sh{J}$ (resp. $\sh{K}$, $\sh{L}$) be a sheaf of ideals of definition for $\mathfrak{S}$ (resp. $\mathfrak{X}$, $\mathfrak{Y}$), and suppose that $f^*(\sh{J})\OO_\mathfrak{X}\subset\sh{K}$ and $g^*(\sh{J})\OO_\mathfrak{Y}=\sh{L}$; set $S_n=(\mathfrak{S},\OO_\mathfrak{S}/\sh{J}^{n+1})$, $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{K}^{n+1})$, and $Y_n=(\mathfrak{Y},\OO_\mathfrak{Y}/\sh{L}^{n+1})$.
 Then there exists a canonical bijective correspondence
 \oldpage[I]{193}
-between $\Hom_\mathfrak{S}(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(u_n)$ of $S_n$-morphisms $u_n:X_n\to Y_n$ making the diagrams \sref{1.10.6.7.1} commutative.
+between $\Hom_\mathfrak{S}(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(u_n)$ of $S_n$-morphisms $u_n:X_n\to Y_n$ making the diagrams \sref{1.10.6.7.1} commute.
 \end{cor}
 
 \begin{proof}
 \label{proof-1.10.6.11}
-For each $\mathfrak{S}$-morphism $u:\mathfrak{X}\to\mathfrak{Y}$, we have by definition that $f=g\circ u$, so
+For each $\mathfrak{S}$-morphism $u:\mathfrak{X}\to\mathfrak{Y}$, we have by definition that $f=g\circ u$, whence
 \[
   u^*(\sh{L})\OO_\mathfrak{X}=u^*(g^*(\sh{J}\OO_\mathfrak{Y})\OO_\mathfrak{X}=f^*(\sh{J})\OO_\mathfrak{X}\subset\sh{K},
 \]
-and the corollary follows from Proposition \sref{1.10.6.9}.
+and the corollary then follows from Proposition \sref{1.10.6.9}.
 \end{proof}
 
-We note that for $m\leq n$, the data of a morphism $f_n:X_n\to Y_n$ determines a unique morphism $f_m:X_m\to Y_m$ making the diagram \sref{1.10.6.7.1} commutative, as we immediately see that we can reduce to the affine case; we thus have defined a map $\vphi_{mn}:\Hom_{S_n}(X_n,Y_n)\to\Hom_{S_m}(X_m,Y_m)$ and the $\Hom_{S_n}(X_n,Y_n)$ form with the $\vphi_{mn}$ a \emph{projective system of sets}; Corollary \sref{1.10.6.11} says that there is a canonical bijection
+We note that, for $m\leq n$, the data of a morphism $f_n:X_n\to Y_n$ determines a unique morphism $f_m:X_m\to Y_m$ making the diagram \sref{1.10.6.7.1} commutate, since we immediately see that we can reduce to the affine case; we have thus defined a map $\vphi_{mn}:\Hom_{S_n}(X_n,Y_n)\to\Hom_{S_m}(X_m,Y_m)$, and the $\Hom_{S_n}(X_n,Y_n)$ form, with the $\vphi_{mn}$, a \emph{projective system of sets}; Corollary \sref{1.10.6.11} then says that there is a canonical bijection
 \[
   \Hom_\mathfrak{S}(\mathfrak{X},\mathfrak{Y})\isoto\varprojlim_n\Hom_{S_n}(X_n,Y_n).
 \]
