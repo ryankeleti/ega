@@ -62,17 +62,17 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 21. Differentials in rings of characteristic p
     + [ ] 22. Differential criteria for smoothness and regularity
     + [ ] 23. Japanese rings
-- [x] The language of schemes (EGA I)
-    + [x] 0. Summary _(proofread by @thosgood)_
-    + [x] 1. Affine schemes _(@ryankeleti / proofread by @thosgood)_
-    + [x] 2. Preschemes and their morphisms _(@thosgood / proofread by @thosgood)_
-    + [x] 3. Products of preschemes _(@thosgood, @ryankeleti / proofread by @thosgood)_
-    + [x] 4. Subpreschemes and immersions _(@ryankeleti / proofread by @thosgood)_
-    + [x] 5. Reduced preschemes; separation condition _(@thosgood / proofread by @thosgood)_
+- [x] The language of schemes (EGA I) _(proofread by @thosgood)_
+    + [x] 0. Summary
+    + [x] 1. Affine schemes _(@ryankeleti)_
+    + [x] 2. Preschemes and their morphisms _(@thosgood)_
+    + [x] 3. Products of preschemes _(@thosgood, @ryankeleti)_
+    + [x] 4. Subpreschemes and immersions _(@ryankeleti)_
+    + [x] 5. Reduced preschemes; separation condition _(@thosgood)_
     + [x] 6. Finiteness conditions _(@thosgood)_
-    + [x] 7. Rational maps _(@thosgood / proofread by @thosgood)_
-    + [x] 8. Chevalley schemes _(@thosgood / proofread by @thosgood)_
-    + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood / proofread by @thosgood)_
+    + [x] 7. Rational maps _(@thosgood)_
+    + [x] 8. Chevalley schemes _(@thosgood)_
+    + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
     + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
 - [ ] Elementary global study of some classes of morphisms (EGA II)
     + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
