@@ -1,6 +1,6 @@
 # EGA
 
-![EGA0status](https://img.shields.io/badge/EGA%200-46%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-green) ![EGA2status](https://img.shields.io/badge/EGA%20II-20%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
+![EGA0status](https://img.shields.io/badge/EGA%200-46%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-brightgreen) ![EGA2status](https://img.shields.io/badge/EGA%20II-20%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
 
 Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
