@@ -513,12 +513,12 @@ The (usual) preschemes $X_n=(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{J}^{n+1})$ are
 Since the $\sh{J}^n$ form a fundamental system of sheaves of ideals of definition for $\mathfrak{X}$ \sref{1.10.5.1}, we have $\sh{O}_\mathfrak{X}=\varprojlim\sh{O}_\mathfrak{X}/\sh{J}^n$ \sref{1.10.5.3}; we thus conclude \sref{1.10.1.3} that $A$ is topologically isomorphic to $\varprojlim A/\mathfrak{J}^n$, which is adic and Noetherian \sref[0]{0.7.2.8}.
 \end{proof}
 
-\begin{rmk}[10.6.6]
+\begin{remark}[10.6.6]
 \label{1.10.6.6}
 With the notation of Proposition \sref{1.10.6.3}, let $\sh{F}_i$ be an $\sh{O}_i$-module, and suppose we are given, for $i\geq i$, a $v_{ij}$-morphism $\theta_{ji}:\sh{F}_i\to\sh{F}_j$ such that $\theta_{kj}\circ\theta_{ji}=\theta_{ki}$ for $k\leq j\leq i$.
 Since the underlying continuous map of $v_{ij}$ is the identity, $\theta_{ji}$ is a homomorphism of sheaves of abelian groups to the space $\mathfrak{X}$; in addition, if $\sh{F}$ is the projective limit of the projective system $(\sh{F}_i)$ of sheaves of abelian groups, then the fact that the $\theta_{ji}$ are $v_{ij}$-morphisms lets us define an $\sh{O}_\mathfrak{X}$-module structure on $\sh{F}$ by passing to the projective limit; when equipped with this structure, we say that $\sh{F}$ is the \emph{projective limit} (with respect to the $\theta_{ji}$) of the system of $\sh{O}_i$-modules $(\sh{F}_i)$.
 In the particular case where $v_{ij}^*(\sh{F}_i)=\sh{F}_j$ and $\theta_{ji}$ is the \emph{identity}, we say that $\sh{F}$ is the projective limit of a system $(\sh{F}_i)$ such that $v_{ij}^*(\sh{F}_i)=\sh{F}_j$ for $j\leq i$ (without mentioning the $\theta_{ji}$).
-\end{rmk}
+\end{remark}
 
 \begin{env}[10.6.7]
 \label{1.10.6.7}
@@ -667,10 +667,10 @@ Let $X$ be a \emph{locally Noetherian} (usual) prescheme, and $X'$ a closed subs
 The set $\Phi$ is nonempty (\sref{1.5.2.1}, \sref{1.4.1.4}, \sref{1.6.1.1}); we order it by the relation $\supset$.
 \end{env}
 
-\begin{lem}[10.8.2]
+\begin{lemma}[10.8.2]
 \label{1.10.8.2}
 The ordered set $\Phi$ is filtered; if $X$ is Noetherian, then, for all $\sh{J}_0\in\Phi$, the set of powers $\sh{J}_0^n$ ($n>0$) is cofinal in $\Phi$.
-\end{lem}
+\end{lemma}
 
 \begin{proof}
 \label{proof-1.10.8.2}
@@ -794,7 +794,7 @@ our claim then follows, since $A$ is Noetherian, and since the functor $\widehat
 \]
 whose rows are exact.
 Furthermore, the functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ commute with finite direct sums (\sref[0]{0.3.2.6} and \sref[0]{0.4.3.2}), and we thus reduce to proving our claim for $\sh{F}=\sh{O}_X$.
-We have $i^*(\sh{O}_X)=(\sh{O}_X)_{/X'}=\sh{O}_\widehat{X}$ \sref[0]{0.4.3.4}, and that $\gamma^\sharp$ is a homomorphism of \emph{$\sh{O}_\widehat{X}$-modules}; so it suffices to check that $\gamma^\sharp$ sends the unit section of $\sh{O}_\widehat{X}$ over an open subset of $X'$ to itself, which is immediate, and shows, in this case, that $\gamma^\sharp$ is the identity.
+We have $i^*(\sh{O}_X)=(\sh{O}_X)_{/X'}=\sh{O}_{\widehat{X}}$ \sref[0]{0.4.3.4}, and that $\gamma^\sharp$ is a homomorphism of \emph{$\sh{O}_{\widehat{X}}$-modules}; so it suffices to check that $\gamma^\sharp$ sends the unit section of $\sh{O}_{\widehat{X}}$ over an open subset of $X'$ to itself, which is immediate, and shows, in this case, that $\gamma^\sharp$ is the identity.
 \end{enumerate}
 \end{proof}
 
@@ -968,7 +968,7 @@ With these conditions, the completion $Z_{/Z'}$ can be identified with the produ
 \label{proof-1.10.9.7}
 It is immediate that the question is local for $S$, $X$, and $Y$, and we thus reduce to the case where $S=\Spec(A)$, $X=\Spec(B)$, $Y=\Spec(C)$, $S'=V(\mathfrak{J})$, $X'=V(\mathfrak{K})$, and $Y'=V(\mathfrak{L})$, with $\mathfrak{J}$, $\mathfrak{K}$, and $\mathfrak{L}$ ideals such that $\vphi(\mathfrak{J})\subset\mathfrak{K}$ and $\psi(\mathfrak{J})\subset\mathfrak{L}$, where we denote by $\vphi$ and $\psi$ the homomorphisms $A\to B$ and $A\to C$ which correspond to $g$ and $h$ (respectively).
 We know that $Z=\Spec(B\otimes_A C)$ and that $Z'=V(\mathfrak{M})$, where $\mathfrak{M}$ is the ideal $\Im(\mathfrak{K}\otimes_A C)+\Im(B\otimes_A\mathfrak{L})$.
-The conclusion follows \sref{1.10.7.2} from the fact that the completed tensor product $(\widehat{B}\otimes_\widehat{A}\widehat{C})^\wedge$ (where $\widehat{A}$, $\widehat{B}$, and $\widehat{C}$ are, respectively, the separated completions of $A$, $B$, and $C$ with respect to the $\mathfrak{J}$-, $\mathfrak{K}$-, and $\mathfrak{L}$-preadic topologies) is the separated completion of the tensor product $B\otimes_A C$ with respect to the $\mathfrak{M}$-preadic topology \sref[0]{0.7.7.2}.
+The conclusion follows \sref{1.10.7.2} from the fact that the completed tensor product $(\widehat{B}\otimes_{\widehat{A}}\widehat{C})^\wedge$ (where $\widehat{A}$, $\widehat{B}$, and $\widehat{C}$ are, respectively, the separated completions of $A$, $B$, and $C$ with respect to the $\mathfrak{J}$-, $\mathfrak{K}$-, and $\mathfrak{L}$-preadic topologies) is the separated completion of the tensor product $B\otimes_A C$ with respect to the $\mathfrak{M}$-preadic topology \sref[0]{0.7.7.2}.
 \end{proof}
 
 In addition, we note that, if $T$ is a locally Noetherian $S$-prescheme, $u:T\to X$ and $v:T\to Y$ both $S$-morphisms, and $T'$ a closed subset of $T$ such that $u(T')\subset X'$ and $v(T')\subset Y'$, then the extension to the completion $((u,v)_S)^\wedge$ can be identified with $(\widehat{u},\widehat{v})_{S_{/S'}}$.
@@ -976,7 +976,7 @@ In addition, we note that, if $T$ is a locally Noetherian $S$-prescheme, $u:T\to
 \begin{corollary}[10.9.8]
 \label{1.10.9.8}
 Let $X$ and $Y$ be locally Noetherian $S$-preschemes such that $X\times_S Y$ is locally Noetherian; let $S'$ be a closed subset of $S$, and $X'$ (resp. $Y'$) a closed subset of $X$ (resp. $Y$) whose image in $S$ is contained in $S'$.
-For every $S$-morphism $f:X\to Y$ such that $f(X')\subset Y'$, the graph morphism $\Gamma_\widehat{f}$ can be identified with the extension $(\Gamma_f)^\wedge$ of the graph morphism of $f$.
+For every $S$-morphism $f:X\to Y$ such that $f(X')\subset Y'$, the graph morphism $\Gamma_{\widehat{f}}$ can be identified with the extension $(\Gamma_f)^\wedge$ of the graph morphism of $f$.
 \end{corollary}
 
 \begin{corollary}[10.9.9]
@@ -999,11 +999,11 @@ with the product $X\times_Y(Y_{/Y'})$ of formal preschemes.
 It suffices to apply Proposition \sref{1.10.9.7}, replacing $S$ and $S'$ by $Y$, and $X$ and $X'$ by $X$.
 \end{proof}
 
-\begin{rmk}[10.9.10]
+\begin{remark}[10.9.10]
 \label{1.10.9.10}
 \oldpage[I]{201}
 If $S$ is the sum $X_1\sqcup X_2$ \hyperref[subsection:1.3.1]{(3.1)}, $X'$ the union $X_1'\cup X_2'$, where $X_i'$ is a closed subset of $X_i$ ($i=1,2$), then we have $X_{/X'}={X_1}_{/X_1'}\sqcup{X_2}_{/X_2'}$.
-\end{rmk}
+\end{remark}
 
 \subsection{Application to coherent sheaves on formal affine schemes}
 \label{subsection:1.10.10}
@@ -1491,11 +1491,11 @@ We can immediately restrict to the case where $\mathfrak{X}$ is a formal affine 
 the proposition then follows from Proposition \sref{1.10.13.1}[\emph{c}].
 \end{proof}
 
-\begin{lem}[10.14.4]
+\begin{lemma}[10.14.4]
 \label{1.10.14.4}
 Let $f:\mathfrak{Y}\to\mathfrak{X}$ be a morphism of locally Noetherian formal preschemes, and let $(U_\alpha)$ be a cover of $f(\mathfrak{Y})$ by Noetherian formal affine open subsets of $\mathfrak{X}$ such that the $f^{-1}(U_\alpha)$ are Noetherian formal affine open subsets of $\mathfrak{Y}$.
 For $f$ to be a closed immersion, it is necessary and sufficient for $f(\mathfrak{Y})$ to be a closed subset of $\mathfrak{X}$ and, for all $\alpha$, for the restriction of $f$ to $f^{-1}(U_\alpha)$ to correspond \sref{1.10.4.6} to a surjective homomorphism $\Gamma(U_\alpha,\sh{O}_\mathfrak{X})\to\Gamma(f^{-1}(U_\alpha),\sh{O}_\mathfrak{Y})$.
-\end{lem}
+\end{lemma}
 
 \begin{proof}
 \label{proof-1.10.14.4}
