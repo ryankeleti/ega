@@ -616,14 +616,14 @@ Let $\mathfrak{S}$ be a formal prescheme; formal $\mathfrak{S}$-preschemes form 
 \begin{proposition}[10.7.2]
 \label{1.10.7.2}
 Let $\mathfrak{X}=\Spf(B)$ and $\mathfrak{Y}=\Spf(C)$ be formal affine schemes over a formal affine scheme $\mathfrak{S}=\Spf(A)$.
-Let $\mathfrak{Z}=\Spf(B\wh{\otimes}_A C)$, and let $p_1$ and $p_2$ be the $\mathfrak{S}$-morphisms corresponding \sref{1.10.2.2} to the canonical (continuous) $A$-homomorphisms $\rho: B\to B\wh{\otimes}_A C$ and $\sigma:C\to B\wh{\otimes}_A C$; then $(\mathfrak{Z},p_1,p_2)$ is a product of the formal affine $\mathfrak{S}$-schemes $\mathfrak{X}$ and $\mathfrak{Y}$.
+Let $\mathfrak{Z}=\Spf(B\widehat{\otimes}_A C)$, and let $p_1$ and $p_2$ be the $\mathfrak{S}$-morphisms corresponding \sref{1.10.2.2} to the canonical (continuous) $A$-homomorphisms $\rho: B\to B\widehat{\otimes}_A C$ and $\sigma:C\to B\widehat{\otimes}_A C$; then $(\mathfrak{Z},p_1,p_2)$ is a product of the formal affine $\mathfrak{S}$-schemes $\mathfrak{X}$ and $\mathfrak{Y}$.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.10.7.2}
-By Proposition \sref{1.10.4.6}, it suffices to check that, if we associate, to each continuous $A$-homomorphism $\vphi:B\wh{\otimes}_A C\to D$ (where $D$ is an admissible ring which is a topological $A$-algebra), the pair $(\vphi\circ\rho,\vphi\circ\sigma)$, then this defines a bijection
+By Proposition \sref{1.10.4.6}, it suffices to check that, if we associate, to each continuous $A$-homomorphism $\vphi:B\widehat{\otimes}_A C\to D$ (where $D$ is an admissible ring which is a topological $A$-algebra), the pair $(\vphi\circ\rho,\vphi\circ\sigma)$, then this defines a bijection
 \[
-  \Hom_A(B\wh{\otimes}_A C,D)\isoto\Hom_A(B,D)\times\Hom_A(C,D),
+  \Hom_A(B\widehat{\otimes}_A C,D)\isoto\Hom_A(B,D)\times\Hom_A(C,D),
 \]
 which is exactly the universal property of the completed tensor product \sref[0]{0.7.7.6}.
 \end{proof}
@@ -686,7 +686,7 @@ When $\sh{J}$ varies over $\Phi$, these sheaves form a \emph{projective system} 
 
 \begin{definition}[10.8.4]
 \label{1.10.8.4}
-Given a closed subset $X'$ of a locally Noetherian prescheme $X$ and a coherent $\sh{O}_X$-module $\sh{F}$, we define the \emph{completion of $\sh{F}$ along $X'$}, denoted by $\sh{F}_{/X'}$ (or $\wh{\sh{F}}$ when there is little chance of confusion), to be the restriction to $X'$ of the sheaf
+Given a closed subset $X'$ of a locally Noetherian prescheme $X$ and a coherent $\sh{O}_X$-module $\sh{F}$, we define the \emph{completion of $\sh{F}$ along $X'$}, denoted by $\sh{F}_{/X'}$ (or $\widehat{\sh{F}}$ when there is little chance of confusion), to be the restriction to $X'$ of the sheaf
 \oldpage[I]{195}
 $\varprojlim_\Phi(\sh{F}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J}))$; we say that its sections over $X'$ are the \emph{formal sections of $\sh{F}$ along $X'$}.
 \end{definition}
@@ -697,39 +697,39 @@ By passing to the projective limit, it is clear that $(\sh{O}_X)_{/X'}$ is a she
 In addition, since there exists a basis for the topology of $X'$ consisting of quasi-compact open sets, we can consider $(\sh{O}_X)_{/X'}$ (resp. $\sh{F}_{/X'}$) as a \emph{sheaf of topological rings} (resp. of \emph{topological groups}), the projective limit of the \emph{pseudo-discrete} sheaves of rings (resp. groups) $\sh{O}_X/\sh{F}$ (resp. $\sh{F}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{F})=\sh{F}/\sh{J}\sh{F}$), and, by passing to the projective limit, $\sh{F}_{/X'}$ then becomes a \emph{topological $(\sh{O}_X)_{/X'}$-module} (\sref[0]{0.3.8.1} and \sref[0]{3.8.2}); recall that, for every \emph{quasi-compact} open $U\subset X$, $\Gamma(U\cap X',(\sh{O}_X)_{/X'})$ (resp. $\Gamma(U\cap X',\sh{F}_{/X'})$) is then the projective limit of the discrete rings (resp. groups) $\Gamma(U,\sh{O}_X/\sh{J})$ (resp. $\Gamma(U,\sh{F}/\sh{J}\sh{F})$).
 
 Now, if $u:\sh{F}\to\sh{G}$ is a homomorphism of $\sh{O}_X$-modules, then there are canonically induced homomorphisms $u_\sh{J}:\sh{F}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J})\to\sh{G}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J})$ for all $\sh{J}\in\Phi$, and these homomorphisms form a projective system.
-By passing to the projective limit and restricting to $X'$, these give a continuous $(\sh{O}_X)_{/X'}$-homomorphism $\sh{F}_{/X'}\to\sh{G}_{/X'}$, denoted $u_{/X'}$ or $\wh{u}$, and called the \emph{completion} of the homomorphism $u$ along $X'$.
+By passing to the projective limit and restricting to $X'$, these give a continuous $(\sh{O}_X)_{/X'}$-homomorphism $\sh{F}_{/X'}\to\sh{G}_{/X'}$, denoted $u_{/X'}$ or $\widehat{u}$, and called the \emph{completion} of the homomorphism $u$ along $X'$.
 It is clear that, if $v:\sh{G}\to\sh{H}$ is a second homomorphism of $\sh{O}_X$-modules, then we have $(v\circ u)_{/X'}=(v_{/X'})\circ(u_{/X'})$, hence $\sh{F}_{/X'}$ is a \emph{covariant additive functor} in $\sh{F}$ from the category of coherent $\sh{O}_X$-modules to the category of topological $(\sh{O}_X)_{/X'}$-modules.
 
 \begin{proposition}[10.8.5]
 \label{1.10.8.5}
 The support of $(\sh{O}_X)_{/X'}$ is $X'$; the topologically ringed space $(X',(\sh{O}_X)_{/X'})$ is a locally Noetherian formal prescheme, and, if $\sh{J}\in\Phi$, then $\sh{J}_{/X'}$ is a sheaf of ideals of definition for this formal prescheme.
-If $X=\Spec(A)$ is an affine scheme with Noetherian ring $A$, $\sh{J}=\widetilde{\mathfrak{J}}$ for some ideal $\mathfrak{J}$ of $A$, and $X'=V(\mathfrak{J})$, then $(X',(\sh{O}_X)_{/X'})$ is canonically identified with $\Spf(\wh{A})$, where $\wh{A}$ is the separated completion of $A$ with respect to the $\mathfrak{J}$-preadic topology.
+If $X=\Spec(A)$ is an affine scheme with Noetherian ring $A$, $\sh{J}=\widetilde{\mathfrak{J}}$ for some ideal $\mathfrak{J}$ of $A$, and $X'=V(\mathfrak{J})$, then $(X',(\sh{O}_X)_{/X'})$ is canonically identified with $\Spf(\widehat{A})$, where $\widehat{A}$ is the separated completion of $A$ with respect to the $\mathfrak{J}$-preadic topology.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.10.8.5}
 We can evidently reduce to proving the latter claim.
-We know \sref[0]{0.7.3.3} that the separated completion $\wh{\mathfrak{J}}$ of $\mathfrak{J}$ with respect to the $\mathfrak{J}$-preadic topology can be identified with the ideal $\mathfrak{J}\wh{A}$ of $\wh{A}$, where $\wh{A}$ is the Noetherian $\wh{\mathfrak{J}}$-adic ring such that $\wh{A}/\wh{\mathfrak{J}}^n=A/\mathfrak{J}^n$ \sref[0]{0.7.2.6}.
-This latter equation shows that the open prime ideals of $\wh{A}$ are the ideals $\wh{\mathfrak{p}}=\mathfrak{p}\wh{\mathfrak{J}}$, where $\mathfrak{p}$ is a prime ideal of $A$ containing $\mathfrak{J}$, and that we have $\wh{\mathfrak{p}}\cap A=\mathfrak{p}$, and hence $\Spf(\wh{A})=X'$.
+We know \sref[0]{0.7.3.3} that the separated completion $\widehat{\mathfrak{J}}$ of $\mathfrak{J}$ with respect to the $\mathfrak{J}$-preadic topology can be identified with the ideal $\mathfrak{J}\widehat{A}$ of $\widehat{A}$, where $\widehat{A}$ is the Noetherian $\widehat{\mathfrak{J}}$-adic ring such that $\widehat{A}/\widehat{\mathfrak{J}}^n=A/\mathfrak{J}^n$ \sref[0]{0.7.2.6}.
+This latter equation shows that the open prime ideals of $\widehat{A}$ are the ideals $\widehat{\mathfrak{p}}=\mathfrak{p}\widehat{\mathfrak{J}}$, where $\mathfrak{p}$ is a prime ideal of $A$ containing $\mathfrak{J}$, and that we have $\widehat{\mathfrak{p}}\cap A=\mathfrak{p}$, and hence $\Spf(\widehat{A})=X'$.
 Since $\sh{O}_X/\sh{J}^n=(A/\mathfrak{J}^n)^\sim$, the proposition follows immediately from the definitions.
 \end{proof}
 
-We say that the formal prescheme defined above is the \emph{completion of $X$ along $X'$}, and we denote it by $X_{/X'}$ or $\wh{X}$ when there is little chance of confusion.
+We say that the formal prescheme defined above is the \emph{completion of $X$ along $X'$}, and we denote it by $X_{/X'}$ or $\widehat{X}$ when there is little chance of confusion.
 When we take $X'=X$, we can set $\sh{J}=0$, and we thus have $X_{/X}=X$.
 
 It is clear that, if $U$ is a subprescheme induced on an open subset of $X$, then $U_{/(U\cap X')}$ is canonically identified with the formal subprescheme induced on $X_{/X'}$ by the open subset $U\cap X'$ of $X'$.
 
 \begin{corollary}[10.8.6]
 \label{1.10.8.6}
-The (usual) prescheme $\wh{X}_\red$ is the unique reduced subprescheme of $X$ having $X'$ as its underlying space \sref{1.5.2.1}.
-For $\wh{X}$ to be Noetherian, it is necessary and sufficient for $\wh{X}_\red$ tob e Noetherian, and it suffices that $X$ be Noetherian.
+The (usual) prescheme $\widehat{X}_\red$ is the unique reduced subprescheme of $X$ having $X'$ as its underlying space \sref{1.5.2.1}.
+For $\widehat{X}$ to be Noetherian, it is necessary and sufficient for $\widehat{X}_\red$ tob e Noetherian, and it suffices that $X$ be Noetherian.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.10.8.6}
-Since $\wh{X}_\red$ is determined locally \sref{1.10.5.4}, we can assume that $X$ is an affine scheme of some Noetherian ring $A$; with the notation of Proposition \sref{1.10.8.5}, the ideal $\mathfrak{T}$ of topologically nilpotent elements of $\wh{A}$ is the inverse image under the canonical map $\wh{A}\to\wh{A}/\wh{\mathfrak{J}}=A/\mathfrak{J}$ of the nilradical of $A/\mathfrak{J}$ \sref[0]{0.7.1.3}, so $\wh{A}/\mathfrak{T}$ is isomorphic to the quotient of $A/\mathfrak{J}$ by its nilradical.
+Since $\widehat{X}_\red$ is determined locally \sref{1.10.5.4}, we can assume that $X$ is an affine scheme of some Noetherian ring $A$; with the notation of Proposition \sref{1.10.8.5}, the ideal $\mathfrak{T}$ of topologically nilpotent elements of $\widehat{A}$ is the inverse image under the canonical map $\widehat{A}\to\widehat{A}/\widehat{\mathfrak{J}}=A/\mathfrak{J}$ of the nilradical of $A/\mathfrak{J}$ \sref[0]{0.7.1.3}, so $\widehat{A}/\mathfrak{T}$ is isomorphic to the quotient of $A/\mathfrak{J}$ by its nilradical.
 The first claim then follows from Propositions \sref{1.10.5.4} and \sref{1.5.1.1}.
-If $\wh{X}_\red$ is Noetherian, then so too is its underlying space $X'$, and so the $X_n'=\Spec(\sh{O}_X/\sh{J}^n)$ are Noetherian \sref{1.6.1.2}, and thus so too is $\wh{X}$ \sref{1.10.6.4}; the converse is immediate, by Proposition \sref{1.6.1.2}.
+If $\widehat{X}_\red$ is Noetherian, then so too is its underlying space $X'$, and so the $X_n'=\Spec(\sh{O}_X/\sh{J}^n)$ are Noetherian \sref{1.6.1.2}, and thus so too is $\widehat{X}$ \sref{1.10.6.4}; the converse is immediate, by Proposition \sref{1.6.1.2}.
 \end{proof}
 
 \begin{env}[10.8.7]
@@ -769,13 +769,13 @@ We then have
 \]
 \sref{1.3.12}; so, by definition of the projective limit, we have
 \[
-  \Gamma(U\cap X',\sh{F}_{/X'})=\varprojlim_n(M\otimes_A(A/\mathfrak{J}^n))=\wh{M},
+  \Gamma(U\cap X',\sh{F}_{/X'})=\varprojlim_n(M\otimes_A(A/\mathfrak{J}^n))=\widehat{M},
 \]
 the separated completion of $M$ with respect to the $\mathfrak{J}$-preadic topology, and similarly
 \[
-  \Gamma(U\cap X',\sh{F}_{/X'}')=\wh{M'},\ \Gamma(U\cap X',\sh{F}_{/X'}'')=\wh{M''};
+  \Gamma(U\cap X',\sh{F}_{/X'}')=\widehat{M'},\ \Gamma(U\cap X',\sh{F}_{/X'}'')=\widehat{M''};
 \]
-our claim then follows, since $A$ is Noetherian, and since the functor $\wh{M}$ in $M$ is exact on the category of $A$-modules of finite type \sref[0]{0.7.3.3}.
+our claim then follows, since $A$ is Noetherian, and since the functor $\widehat{M}$ in $M$ is exact on the category of $A$-modules of finite type \sref[0]{0.7.3.3}.
 \oldpage[I]{197}
   \item The question is local, so we can assume that we have an exact sequence $\sh{O}_X^m\to\sh{O}_X^n\to\sh{F}\to 0$ \sref[0]{0.5.3.2}; since $\gamma^\sharp$ is functorial, and the functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ are right exact (by (i) and \sref[0]{0.4.3.1}), we have the commutative diagram
 \begin{equation*}
@@ -794,7 +794,7 @@ our claim then follows, since $A$ is Noetherian, and since the functor $\wh{M}$ 
 \end{equation*}
 whose rows are exact.
 Furthermore, the functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ commute with finite direct sums (\sref[0]{0.3.2.6} and \sref[0]{0.4.3.2}), and we thus reduce to proving our claim for $\sh{F}=\sh{O}_X$.
-We have $i^*(\sh{O}_X)=(\sh{O}_X)_{/X'}=\sh{O}_\wh{X}$ \sref[0]{0.4.3.4}, and that $\gamma^\sharp$ is a homomorphism of \emph{$\sh{O}_\wh{X}$-modules}; so it suffices to check that $\gamma^\sharp$ sends the unit section of $\sh{O}_\wh{X}$ over an open subset of $X'$ to itself, which is immediate, and shows, in this case, that $\gamma^\sharp$ is the identity.
+We have $i^*(\sh{O}_X)=(\sh{O}_X)_{/X'}=\sh{O}_\widehat{X}$ \sref[0]{0.4.3.4}, and that $\gamma^\sharp$ is a homomorphism of \emph{$\sh{O}_\widehat{X}$-modules}; so it suffices to check that $\gamma^\sharp$ sends the unit section of $\sh{O}_\widehat{X}$ over an open subset of $X'$ to itself, which is immediate, and shows, in this case, that $\gamma^\sharp$ is the identity.
 \end{enumerate}
 \end{proof}
 
@@ -837,7 +837,7 @@ For every coherent $\sh{O}_X$-module $\sh{F}$, the canonical homomorphism $\Gamm
 \label{proof-1.10.8.11}
 It follows from the definition of $\sh{F}_{/X'}$ that the canonical image of such a section is zero.
 Conversely, if $s\in\Gamma(X,\sh{F})$ has a zero image in $\Gamma(X',\sh{F}_{/X'})$, then it suffices to see that every $x\in X'$ admits a neighborhood in $X$ in which $s$ is zero, and we can thus reduce to the case where $X=\Spec(A)$ is affine, $A$ Noetherian, $X'=V(\mathfrak{J})$ for some ideal $\mathfrak{J}$ of $A$, and $\sh{F}=\widetilde{M}$ for some $A$-module $M$ of finite type.
-Then $\Gamma(X',\sh{F}_{/X'})$ is the separated completion $\wh{M}$ of $M$ for the $\mathfrak{J}$-preadic topology, and the homomorphism $\Gamma(X,\sh{F})\to\Gamma(X',\sh{F}_{/X'})$ is the canonical homomorphism $M\to\wh{M}$.
+Then $\Gamma(X',\sh{F}_{/X'})$ is the separated completion $\widehat{M}$ of $M$ for the $\mathfrak{J}$-preadic topology, and the homomorphism $\Gamma(X,\sh{F})\to\Gamma(X',\sh{F}_{/X'})$ is the canonical homomorphism $M\to\widehat{M}$.
 We know \sref[0]{0.7.3.7} that the kernel of this homomorphism is the set of the $z\in M$ killed by an element of $1+\mathfrak{J}$.
 So we have $(1+f)s=0$ for some $f\in\mathfrak{J}$; for every $x\in X'$ we have $(1_x+f_x)s_x=0$, and, since $1_x+f_x$ is invertible in $\sh{O}_x$ ($\mathfrak{J}_x\sh{O}_x$ being contained in the maximal ideal of $\sh{O}_x$), we have $s_x=0$, which proves the proposition.
 \end{proof}
@@ -890,13 +890,13 @@ If $u_{/X'}$ is a monomorphism (resp. an epimorphism), then we have $v_{/X'}=0$ 
 Let $X$ and $Y$ be locally Noetherian (usual) preschemes, $f:X\to Y$ a morphism, and $X'$ (resp. $Y'$) a closed subset of the underlying space $X$ (resp. $Y$) such that $f(X')\subset Y'$.
 Let $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of $\sh{O}_X$ (resp. $\sh{O}_Y$) such that the support of $\sh{O}_X/\sh{J}$ (resp. $\sh{O}_Y/\sh{K}$) is $X'$ (resp. $Y'$) and $f^*(\sh{K})\sh{O}_X\subset\sh{J}$; we note that there always exist such sheaves of ideals, since, for example, we can take $\sh{J}$ to be the largest sheaf of ideals of $\sh{O}_X$ defining a subprescheme of $X$ with underlying space $X'$ \sref{1.5.2.1}, and the hypothesis $f(X')\subset Y'$ implies that $f^*(\sh{K})\sh{O}_X\subset\sh{J}$ \sref{1.5.2.4}.
 For every integer $n>0$ we have $f^*(\sh{K}^n)\sh{O}_X\subset\sh{J}^n$ \sref[0]{0.4.3.5}; as a result \sref{1.4.4.6}, if we set $X_n'=(X',\sh{O}_X/\sh{J}^{n+1})$ and $Y_n'=(Y',\sh{O}_Y/\sh{K}^{n+1})$, then $f$ induces a morphism $f_n:X_n'\to Y_n'$, and it is immediate that the $f_n$ form an inductive system.
-We denote its inductive limit \sref{1.10.6.8} by $\wh{f}:X_{/X'}\to Y_{/Y'}$, and we say (by abuse of language) that $\wh{f}$ is the \emph{extension of $f$ to the completions of $X$ and $Y$ along $X'$ and $Y'$}.
+We denote its inductive limit \sref{1.10.6.8} by $\widehat{f}:X_{/X'}\to Y_{/Y'}$, and we say (by abuse of language) that $\widehat{f}$ is the \emph{extension of $f$ to the completions of $X$ and $Y$ along $X'$ and $Y'$}.
 It can be checked immediately that this morphism does not depend on the choice of sheaves of ideals $\sh{J}$ and $\sh{K}$ satisfying the above conditions.
-It suffices to consider the case where $X$ and $Y$ are Noetherian affine schemes with rings $A$ and $B$ (respectively); then $\sh{J}=\widetilde{\mathfrak{J}}$ and $\sh{K}=\widetilde{\mathfrak{K}}$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of $A$ (resp. $B$), $f$ corresponds to a ring homomorphism $\vphi:B\to A$ such that $\vphi(\mathfrak{K})\subset\mathfrak{J}$ (\sref{1.4.4.6} and \sref{1.1.7.4}); \emph{$\wh{f}$ is then the morphism corresponding \sref{1.10.2.2} to the continuous homomorphism $\wh{\vphi}:\wh{B}\to\wh{A}$}, where $\wh{A}$ (resp. $\wh{B}$) is the separated completion of $A$ (resp. $B$) with respect to the $\mathfrak{J}$-preadic (resp. $\mathfrak{K}$-preadic) topology \sref{1.10.6.8}; we know that, if we replace $\sh{J}$ by another
+It suffices to consider the case where $X$ and $Y$ are Noetherian affine schemes with rings $A$ and $B$ (respectively); then $\sh{J}=\widetilde{\mathfrak{J}}$ and $\sh{K}=\widetilde{\mathfrak{K}}$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of $A$ (resp. $B$), $f$ corresponds to a ring homomorphism $\vphi:B\to A$ such that $\vphi(\mathfrak{K})\subset\mathfrak{J}$ (\sref{1.4.4.6} and \sref{1.1.7.4}); \emph{$\widehat{f}$ is then the morphism corresponding \sref{1.10.2.2} to the continuous homomorphism $\widehat{\vphi}:\widehat{B}\to\widehat{A}$}, where $\widehat{A}$ (resp. $\widehat{B}$) is the separated completion of $A$ (resp. $B$) with respect to the $\mathfrak{J}$-preadic (resp. $\mathfrak{K}$-preadic) topology \sref{1.10.6.8}; we know that, if we replace $\sh{J}$ by another
 \oldpage[I]{199}
 sheaf of ideals $\sh{J}'=\widetilde{\mathfrak{J}'}$ such that the support of $\sh{O}_X/\sh{J}'$ is $X'$, then the $\mathfrak{J}$-preadic and $\mathfrak{J}'$-preadic topologies on $A$ are the same \sref{1.10.82}.
 
-We note that, by definition, the continuous map $X'\to Y'$ of the underlying spaces of $X_{/X'}$ and $Y_{/Y'}$ corresponding to $\wh{f}$ is exactly the restriction to $X'$ of $f$.
+We note that, by definition, the continuous map $X'\to Y'$ of the underlying spaces of $X_{/X'}$ and $Y_{/Y'}$ corresponding to $\widehat{f}$ is exactly the restriction to $X'$ of $f$.
 \end{env}
 
 \begin{env}[10.9.2]
@@ -904,8 +904,8 @@ We note that, by definition, the continuous map $X'\to Y'$ of the underlying spa
 It follows immediately from the above definition that the diagram of morphisms of ringed spaces
 \[
   \xymatrix{
-    \wh{X}\ar[r]^{\wh{f}}\ar[d]_{i_X} &
-    \wh{Y}\ar[d]^{i_Y}\\
+    \widehat{X}\ar[r]^{\widehat{f}}\ar[d]_{i_X} &
+    \widehat{Y}\ar[d]^{i_Y}\\
     X\ar[r]^f &
     Y
   }
@@ -916,20 +916,20 @@ commutes, with the vertical arrows being the canonical morphisms \sref{1.10.8.7}
 \begin{env}[10.9.3]
 \label{1.10.9.3}
 Let $Z$ be a third prescheme, $g:Y\to Z$ a morphism, and $Z'$ a closed subset of $Z$ such that $g(Y')\subset Z'$.
-If $\wh{g}$ denotes the completion of the morphism $g$ along $Y'$ and $Z'$, then it immediately follows from \sref{1.10.9.1} that we have $(g\circ f)^\wedge=\wh{g}\circ\wh{f}$.
+If $\widehat{g}$ denotes the completion of the morphism $g$ along $Y'$ and $Z'$, then it immediately follows from \sref{1.10.9.1} that we have $(g\circ f)^\wedge=\widehat{g}\circ\widehat{f}$.
 \end{env}
 
 \begin{proposition}[10.9.4]
 \label{1.10.9.4}
 Let $X$ and $Y$ be locally Noetherian $S$-preschemes, with $Y$ of finite type over $S$.
 Let $f$ and $g$ be $S$-morphisms from $X$ to $Y$ such that $f(X')\subset Y'$ and $g(X')\subset Y'$.
-For $\wh{f}=\wh{g}$ to hold, it is necessary and sufficient for $f$ and $g$ to coincide on a neighborhood of $X'$.
+For $\widehat{f}=\widehat{g}$ to hold, it is necessary and sufficient for $f$ and $g$ to coincide on a neighborhood of $X'$.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.10.9.4}
 The condition is evidently sufficient (even without the finiteness hypothesis on $Y$).
-To see that it is necessary, we remark first that the hypothesis $\wh{f}=\wh{g}$ implies that $f(x)=g(x)$ for all $x\in X'$.
+To see that it is necessary, we remark first that the hypothesis $\widehat{f}=\widehat{g}$ implies that $f(x)=g(x)$ for all $x\in X'$.
 Also, the question being local, we can assume that $X$ and $Y$ are affine open neighborhoods of $x$ and $y=f(x)=g(x)$ respectively (with Noetherian rings), that $S$ is affine, and that $\Gamma(Y,\sh{O}_Y)$ is a $\Gamma(S,\sh{O}_S)$-algebra of finite type \sref{1.6.3.3}.
 Then $f$ and $g$ correspond to $\Gamma(S,\sh{O}_S)$-homomorphisms $\rho$ and $\sigma$ (respectively) from $\Gamma(Y,\sh{O}_Y)$ to $\Gamma(X,\sh{O}_X)$ \sref{1.1.7.3}, and, by hypothesis, the extensions by continuity of these homomorphisms to the separated completion of $\Gamma(Y,\sh{O}_Y)$ are the same.
 We conclude from Proposition \sref{1.10.8.11} that, for every section $s\in\Gamma(Y,\sh{O}_Y)$, the sections $\rho(s)$ and $\sigma(s)$ coincide on a neighborhood (depending on $s$) of $X'$; since $\Gamma(Y,\sh{O}_Y)$ is an algebra of finite type over $\Gamma(S,\sh{O}_S)$, we have that there exists a neighborhood $V$ of $X'$ such that $\rho(s)$ and $\sigma(s)$ coincide on $V$ for \emph{every} section $s\in\Gamma(Y,\sh{O}_Y)$.
@@ -940,19 +940,19 @@ If $h\in\Gamma(X,\sh{O}_X)$ is such that $D(h)$ is a neighborhood of $x$ contain
 \label{1.10.9.5}
 Under the hypotheses of \sref{1.10.9.1}, for every coherent $\sh{O}_Y$-module $\sh{G}$, there exists a canonical functorial isomorphism of $(\sh{O}_X)_{/X'}$-modules
 \[
-  (f^*(\sh{G}))_{/X'}\isoto\wh{f}^*(\sh{G}_{/Y'}).
+  (f^*(\sh{G}))_{/X'}\isoto\widehat{f}^*(\sh{G}_{/Y'}).
 \]
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.10.9.5}
-If we canonically identify $(f^*(\sh{G}))_{/X'}$ with $i_X^*(f^*(\sh{G}))$, and $\wh{f}^*(\sh{G}_{/Y'})$ with $\wh{f}^*(i_Y^*(\sh{G}))$ \sref{1.10.8.8}, then the proposition follows immediately from the commutativity of the diagram in \sref{1.10.9.2}.
+If we canonically identify $(f^*(\sh{G}))_{/X'}$ with $i_X^*(f^*(\sh{G}))$, and $\widehat{f}^*(\sh{G}_{/Y'})$ with $\widehat{f}^*(i_Y^*(\sh{G}))$ \sref{1.10.8.8}, then the proposition follows immediately from the commutativity of the diagram in \sref{1.10.9.2}.
 \end{proof}
 
 \begin{env}[10.9.6]
 \label{1.10.9.6}
 Now let $\sh{F}$ be a coherent $\sh{O}_X$-module, and let $\sh{G}$ be a coherent $\sh{O}_Y$-module.
-If $u:\sh{G}\to\sh{F}$ is an $f$-morphism, then it corresponds to an $\sh{O}_X$-homomorphism $u^\sharp:f^*(\sh{G})\to\sh{F}$, thus, by completion, to a continuous $(\sh{O}_X)_{/X'}$-homomorphism $(u^\sharp)_{/X'}:(f^*(\sh{G}))_{/X'}\to\sh{F}_{/X'}$, and, by Proposition \sref{1.10.9.5}, there exists a unique $\wh{f}$-morphism $v:\sh{G}_{/Y'}\to\sh{F}_{/X'}$
+If $u:\sh{G}\to\sh{F}$ is an $f$-morphism, then it corresponds to an $\sh{O}_X$-homomorphism $u^\sharp:f^*(\sh{G})\to\sh{F}$, thus, by completion, to a continuous $(\sh{O}_X)_{/X'}$-homomorphism $(u^\sharp)_{/X'}:(f^*(\sh{G}))_{/X'}\to\sh{F}_{/X'}$, and, by Proposition \sref{1.10.9.5}, there exists a unique $\widehat{f}$-morphism $v:\sh{G}_{/Y'}\to\sh{F}_{/X'}$
 \oldpage[I]{200}
 such that $v^\sharp=(u^\sharp)_{/X'}$.
 If we consider the triples $(\sh{F},X,X')$ ($\sh{F}$ being a coherent $\sh{O}_X$-module, and $X'$ a closed subset of $X$) as a \emph{category}, with the morphisms $(\sh{F},X,X')\to(\sh{G},Y,Y')$ consisting of a morphism of preschemes $f:X\to Y$ such that $f(X')\subset Y'$ and an $f$-morphism $u:\sh{G}\to\sh{F}$, then we can say that $(X_{/X'},\sh{F}_{/X'})$ is a \emph{functor} in $(\sh{F},X,X')$ with values in the category of pairs $(\mathfrak{Z},\sh{H})$ consisting of a locally Noetherian formal prescheme $\mathfrak{Z}$ and an $\sh{O}_\mathfrak{Z}$-module $\sh{H}$, with the morphisms of the latter category being the pairs consisting of a morphism $g$ of formal preschemes and a $g$-morphism.
@@ -961,22 +961,22 @@ If we consider the triples $(\sh{F},X,X')$ ($\sh{F}$ being a coherent $\sh{O}_X$
 \begin{proposition}[10.9.7]
 \label{1.10.9.7}
 Let $S$, $X$, and $Y$ be locally Noetherian preschemes, $g:X\to S$ and $h:Y\to S$ morphisms, $S'$ a closed subset of $S$, and $X'$ (resp. $Y'$) a closed subset of $X$ (resp. $Y$) such that $g(X')\subset S'$ (resp. $h(Y')\subset S'$); let $Z=X\times_S Y$; suppose that $Z$ is locally Noetherian, and let $Z'=p^{-1}(X')\cap q^{-1}(Y')$, where $p$ and $q$ are the projections of $X\times_S Y$.
-With these conditions, the completion $Z_{/Z'}$ can be identified with the product $(X_{/X'})\times_{S_{/S'}}(Y_{/Y'})$ of formal $S_{/S'}$-preschemes, where the structure morphisms are identified with $\wh{g}$ and $\wh{h}$, and the projections with $\wh{p}$ and $\wh{q}$.
+With these conditions, the completion $Z_{/Z'}$ can be identified with the product $(X_{/X'})\times_{S_{/S'}}(Y_{/Y'})$ of formal $S_{/S'}$-preschemes, where the structure morphisms are identified with $\widehat{g}$ and $\widehat{h}$, and the projections with $\widehat{p}$ and $\widehat{q}$.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.10.9.7}
 It is immediate that the question is local for $S$, $X$, and $Y$, and we thus reduce to the case where $S=\Spec(A)$, $X=\Spec(B)$, $Y=\Spec(C)$, $S'=V(\mathfrak{J})$, $X'=V(\mathfrak{K})$, and $Y'=V(\mathfrak{L})$, with $\mathfrak{J}$, $\mathfrak{K}$, and $\mathfrak{L}$ ideals such that $\vphi(\mathfrak{J})\subset\mathfrak{K}$ and $\psi(\mathfrak{J})\subset\mathfrak{L}$, where we denote by $\vphi$ and $\psi$ the homomorphisms $A\to B$ and $A\to C$ which correspond to $g$ and $h$ (respectively).
 We know that $Z=\Spec(B\otimes_A C)$ and that $Z'=V(\mathfrak{M})$, where $\mathfrak{M}$ is the ideal $\Im(\mathfrak{K}\otimes_A C)+\Im(B\otimes_A\mathfrak{L})$.
-The conclusion follows \sref{1.10.7.2} from the fact that the completed tensor product $(\wh{B}\otimes_\wh{A}\wh{C})^\wedge$ (where $\wh{A}$, $\wh{B}$, and $\wh{C}$ are, respectively, the separated completions of $A$, $B$, and $C$ with respect to the $\mathfrak{J}$-, $\mathfrak{K}$-, and $\mathfrak{L}$-preadic topologies) is the separated completion of the tensor product $B\otimes_A C$ with respect to the $\mathfrak{M}$-preadic topology \sref[0]{0.7.7.2}.
+The conclusion follows \sref{1.10.7.2} from the fact that the completed tensor product $(\widehat{B}\otimes_\widehat{A}\widehat{C})^\wedge$ (where $\widehat{A}$, $\widehat{B}$, and $\widehat{C}$ are, respectively, the separated completions of $A$, $B$, and $C$ with respect to the $\mathfrak{J}$-, $\mathfrak{K}$-, and $\mathfrak{L}$-preadic topologies) is the separated completion of the tensor product $B\otimes_A C$ with respect to the $\mathfrak{M}$-preadic topology \sref[0]{0.7.7.2}.
 \end{proof}
 
-In addition, we note that, if $T$ is a locally Noetherian $S$-prescheme, $u:T\to X$ and $v:T\to Y$ both $S$-morphisms, and $T'$ a closed subset of $T$ such that $u(T')\subset X'$ and $v(T')\subset Y'$, then the extension to the completion $((u,v)_S)^\wedge$ can be identified with $(\wh{u},\wh{v})_{S_{/S'}}$.
+In addition, we note that, if $T$ is a locally Noetherian $S$-prescheme, $u:T\to X$ and $v:T\to Y$ both $S$-morphisms, and $T'$ a closed subset of $T$ such that $u(T')\subset X'$ and $v(T')\subset Y'$, then the extension to the completion $((u,v)_S)^\wedge$ can be identified with $(\widehat{u},\widehat{v})_{S_{/S'}}$.
 
 \begin{corollary}[10.9.8]
 \label{1.10.9.8}
 Let $X$ and $Y$ be locally Noetherian $S$-preschemes such that $X\times_S Y$ is locally Noetherian; let $S'$ be a closed subset of $S$, and $X'$ (resp. $Y'$) a closed subset of $X$ (resp. $Y$) whose image in $S$ is contained in $S'$.
-For every $S$-morphism $f:X\to Y$ such that $f(X')\subset Y'$, the graph morphism $\Gamma_\wh{f}$ can be identified with the extension $(\Gamma_f)^\wedge$ of the graph morphism of $f$.
+For every $S$-morphism $f:X\to Y$ such that $f(X')\subset Y'$, the graph morphism $\Gamma_\widehat{f}$ can be identified with the extension $(\Gamma_f)^\wedge$ of the graph morphism of $f$.
 \end{corollary}
 
 \begin{corollary}[10.9.9]
@@ -986,7 +986,7 @@ Then the prescheme $X_{/X'}$ can be identified, by the commutative diagram
 \[
   \xymatrix{
     X\ar[d]_f &
-    X_{/X'}\ar[l]\ar[d]^{\wh{f}}\\
+    X_{/X'}\ar[l]\ar[d]^{\widehat{f}}\\
     Y &
     Y_{/Y'}\ar[l]
   }
@@ -1113,14 +1113,14 @@ If $\sh{F}$ satisfies condition \emph{(b)} of Proposition \sref{1.10.10.5}, then
 \begin{env}[10.10.7]
 \label{1.10.10.7}
 Now let $A$ and $B$ be adic Noetherian rings, and $\vphi:B\to A$ a continuous homomorphism; we denote by $\mathfrak{J}$ (resp. $\mathfrak{K}$) an ideal of definition for $A$ (resp. $B$) such that $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and we set $X=\Spec(A)$, $Y=\Spec(B)$, $\mathfrak{X}=\Spf(A)$, and $\mathfrak{Y}=\Spf(B)$.
-Let $f:X\to Y$ be the morphism of preschemes corresponding to $\vphi$ \sref{1.1.6.1}, and $\wh{f}:\mathfrak{X}\to\mathfrak{Y}$ its extension to the completions \sref{1.10.9.1}, which is also a morphism of formal preschemes that corresponds to $\vphi$ \sref{1.10.2.2}.
+Let $f:X\to Y$ be the morphism of preschemes corresponding to $\vphi$ \sref{1.1.6.1}, and $\widehat{f}:\mathfrak{X}\to\mathfrak{Y}$ its extension to the completions \sref{1.10.9.1}, which is also a morphism of formal preschemes that corresponds to $\vphi$ \sref{1.10.2.2}.
 \end{env}
 
 \begin{proposition}[10.10.8]
 \label{1.10.10.8}
 For every $B$-module $N$ of finite type, there exists a canonical functorial isomorphism of $\sh{O}_\mathfrak{X}$-modules
 \[
-  \wh{f}^*(N^\Delta)\isoto(N\otimes_B A)^\Delta.
+  \widehat{f}^*(N^\Delta)\isoto(N\otimes_B A)^\Delta.
 \]
 \end{proposition}
 
@@ -1135,12 +1135,12 @@ Denoting by $i_X:\mathfrak{X}\to X$ and $i_Y:\mathfrak{Y}\to Y$ the canonical mo
 
 \begin{corollary}
 \label{1.10.10.9}
-For every ideal $\mathfrak{b}$ of $B$, we have $\wh{f}^*(\mathfrak{b}^\Delta)\sh{O}_\mathfrak{X}=(\mathfrak{b}A)^\Delta$.
+For every ideal $\mathfrak{b}$ of $B$, we have $\widehat{f}^*(\mathfrak{b}^\Delta)\sh{O}_\mathfrak{X}=(\mathfrak{b}A)^\Delta$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.10.10.9}
-Let $j$ be the canonical injection $\mathfrak{b}\to B$, to which corresponds the canonical injection $j^\Delta:\mathfrak{b}^\Delta\to\sh{O}_\mathfrak{Y}$ of sheaves of $\sh{O}_\mathfrak{Y}$-modules; by definition, $\wh{f}^*(\mathfrak{b}^\Delta)\sh{O}_\mathfrak{X}$ is the image of the homomorphism $\wh{f}^*(j^\Delta):\wh{f}^*(\mathfrak{b}^\Delta)\to\sh{O}_\mathfrak{X}=\wh{f}^*(\sh{O}_\mathfrak{Y})$; but this homomorphism can be identified with $(j\otimes 1)^\Delta:(\mathfrak{b}\otimes_B A)^\Delta\to\sh{O}_\mathfrak{X}=(B\otimes_B A)^\Delta$ by Proposition \sref{1.10.10.8}.
+Let $j$ be the canonical injection $\mathfrak{b}\to B$, to which corresponds the canonical injection $j^\Delta:\mathfrak{b}^\Delta\to\sh{O}_\mathfrak{Y}$ of sheaves of $\sh{O}_\mathfrak{Y}$-modules; by definition, $\widehat{f}^*(\mathfrak{b}^\Delta)\sh{O}_\mathfrak{X}$ is the image of the homomorphism $\widehat{f}^*(j^\Delta):\widehat{f}^*(\mathfrak{b}^\Delta)\to\sh{O}_\mathfrak{X}=\widehat{f}^*(\sh{O}_\mathfrak{Y})$; but this homomorphism can be identified with $(j\otimes 1)^\Delta:(\mathfrak{b}\otimes_B A)^\Delta\to\sh{O}_\mathfrak{X}=(B\otimes_B A)^\Delta$ by Proposition \sref{1.10.10.8}.
 Since the image of $j\otimes 1$ is the ideal $\mathfrak{b}A$ of $A$, the image of $(j\otimes 1)^\Delta$ is thus $(\mathfrak{b}A)^\Delta$, by Proposition \sref{1.10.10.2}, whence the conclusion.
 \end{proof}
 
@@ -1443,7 +1443,7 @@ then, since $X_0\times_{S_0}S'_0$ is of finite type over $S'_0$ \sref{1.6.3.8}, 
 
 \begin{corollary}[10.13.6]
 \label{1.10.13.6}
-Under the hypotheses of \sref{1.10.9.9}, if $f$ is a morphism of finite type, then so too is its extension $\wh{f}$ to the completions.
+Under the hypotheses of \sref{1.10.9.9}, if $f$ is a morphism of finite type, then so too is its extension $\widehat{f}$ to the completions.
 \end{corollary}
 
 \subsection{Closed subpreschemes of formal preschemes}
@@ -1529,9 +1529,9 @@ if $\psi$ is the injection $\mathfrak{Y}\to\mathfrak{X}$ of underlying spaces, t
 the kernel $\sh{K}_1$ of $\sh{O}_\mathfrak{X}\to(\sh{O}_\mathfrak{X}/\sh{J})/\psi_*(\sh{K})$ is thus a coherent sheaf of ideals of $\sh{O}_\mathfrak{X}$ \sref[0]{0.5.3.4}, and $\sh{O}_\mathfrak{X}/\sh{K}_1$ is isomorphic to $\psi_*(\sh{O}_\mathfrak{Y}/\sh{K})$, which proves that $\mathfrak{Z}$ is an isomorphism to a closed subprescheme of $\mathfrak{X}$.
 
 To prove (ii), we can immediately restrict to the case where $\mathfrak{S}=\Spf(A)$, $\mathfrak{X}=\Spf(B)$, and $\mathfrak{Y}=\Spf(C)$, with $A$ a Noetherian $\mathfrak{J}$-adic ring, $B=A/\mathfrak{a}$ (where $\mathfrak{a}$ is an ideal of $A$), and $C$ a Noetherian topological adic $A$-algebra.
-Everything then reduces to proving that the homomorphism $C\to C\wh{\otimes}_A(A/\mathfrak{a})$ is \emph{surjective}:
+Everything then reduces to proving that the homomorphism $C\to C\widehat{\otimes}_A(A/\mathfrak{a})$ is \emph{surjective}:
 but $A/\mathfrak{a}$ is an $A$-module of finite type, and its topology is the $\mathfrak{J}$-adic topology;
-it then follows from \sref[0]{0.7.7.8} that $C\wh{\otimes}_A(A/\mathfrak{a})$ can be identified with $C\otimes_A(A/\mathfrak{a})=C/\mathfrak{a}C$, whence our claim.
+it then follows from \sref[0]{0.7.7.8} that $C\widehat{\otimes}_A(A/\mathfrak{a})$ can be identified with $C\otimes_A(A/\mathfrak{a})=C/\mathfrak{a}C$, whence our claim.
 \end{proof}
 
 \begin{corollary}[10.14.6]
@@ -1566,9 +1566,9 @@ we then have $\sh{F}=M^\Delta$, where $M$ is an $(A/\mathfrak{a})$-module of fin
 \begin{corollary}[10.14.7]
 \label{1.10.14.7}
 Let $X$ be a locally Noetherian usual prescheme, $Y$ a closed subprescheme of $X$, $j$ the canonical injection $Y\to X$, $X'$ a closed subset of $X$, and $Y'=Y\cap X'$;
-then $\wh{j}:Y_{/Y'}\to X_{/X'}$ is a closed immersion, and, for every coherent $\sh{O}_Y$-module $\sh{F}$, we have
+then $\widehat{j}:Y_{/Y'}\to X_{/X'}$ is a closed immersion, and, for every coherent $\sh{O}_Y$-module $\sh{F}$, we have
 \[
-    \wh{j}_*(\sh{F}_{/Y'}) = (j_*(\sh{F}))_{/X'}.
+    \widehat{j}_*(\sh{F}_{/Y'}) = (j_*(\sh{F}))_{/X'}.
 \]
 \end{corollary}
 
@@ -1638,7 +1638,7 @@ by hypothesis, $Y_0$ is separated over $S_0$ \sref{1.10.15.2}, so the space $\Ga
 since the underlying spaces of $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$ (resp. $\Gamma_f(\mathfrak{X})$) and $X_0\times_{S_0}Y_0$ (resp. $\Gamma_{f_0}(X_0)$) are identical, we already see that $\Gamma_f(\mathfrak{X})$ is a \emph{closed} subspace of $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$.
 Now note that, when $(U,V)$ runs over the set of pairs consisting of a Noetherian formal affine open subset $U$ (resp. $V$) of $\mathfrak{X}$ (resp $\mathfrak{Y}$) such that $f(U)\subset V$, the open subsets $U\times_S V$ form a cover of $\Gamma_f(\mathfrak{X})$ in $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$, and, if $f_U:U\to V$ is the restriction of $f$ to $U$, then $\Gamma_{f_U}:U\to U\times_\mathfrak{S}V$ is the restriction of $\Gamma_f$ to $U$.
 If we show that $\Gamma_{f_U}$ is a closed immersion, then $\Gamma_f$ will be a closed immersion \sref{1.10.14.4}, or, in other words, we are led to consider the case where $\mathfrak{S}=\Spf(A)$, $\mathfrak{X}=\Spf(B)$, and $\mathfrak{Y}=\Spf(C)$ are affine (with $A$, $B$, and $C$ Noetherian adics), with $f$ corresponding to a continuous $A$-homomorphism $\vphi:C\to B$;
-then $\Gamma_f$ corresponds to the unique continuous homomorphism $\omega: B\wh{\otimes}_A C\to B$ which, when composed with the canonical homomorphisms $B\to B\wh{\otimes}_A C$ and $C\to B\wh{\otimes}_A C$, gives the identity and $\vphi$ (respectively).
+then $\Gamma_f$ corresponds to the unique continuous homomorphism $\omega: B\widehat{\otimes}_A C\to B$ which, when composed with the canonical homomorphisms $B\to B\widehat{\otimes}_A C$ and $C\to B\widehat{\otimes}_A C$, gives the identity and $\vphi$ (respectively).
 But it is clear that $\omega$ is \emph{surjective}, whence our claim.
 \end{proof}
 
@@ -1660,11 +1660,11 @@ With the notation of \sref{1.10.14.2}, $j_0:Y_0\to X_0$ is a closed immersion, t
 
 \begin{proposition}[10.15.7]
 \label{1.10.15.7}
-Let $X$ be a locally Noetherian (usual) prescheme, $X'$ a closed subset of $X$, and $\wh{X}=X_{/X'}$.
-For $\wh{X}$ to be separated, it is necessary and sufficient that $\wh{X}_\red$ be separated, and it is sufficient that $X$ be separated.
+Let $X$ be a locally Noetherian (usual) prescheme, $X'$ a closed subset of $X$, and $\widehat{X}=X_{/X'}$.
+For $\widehat{X}$ to be separated, it is necessary and sufficient that $\widehat{X}_\red$ be separated, and it is sufficient that $X$ be separated.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.10.15.7}
-With the notation of \sref{1.10.8.5}, for $\wh{X}$ to be separated, it is necessary and sufficient for $X'_0$ to be separated \sref{1.10.15.2}, and since $\wh{X}_\red=(X'_0)_\red$, it is equivalent to ask for $\wh{X}_\red$ to be separated \sref{1.5.5.1}[vi].
+With the notation of \sref{1.10.8.5}, for $\widehat{X}$ to be separated, it is necessary and sufficient for $X'_0$ to be separated \sref{1.10.15.2}, and since $\widehat{X}_\red=(X'_0)_\red$, it is equivalent to ask for $\widehat{X}_\red$ to be separated \sref{1.5.5.1}[vi].
 \end{proof}
