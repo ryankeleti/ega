@@ -1010,12 +1010,12 @@ If $S$ is the sum $X_1\sqcup X_2$ \hyperref[subsection:1.3.1]{(3.1)}, $X'$ the u
 
 \begin{env}[10.10.1]
 \label{1.10.10.1}
-In this paragraph, $A$ denotes an \emph{adic Noetherian ring}, $\mathfrak{J}$ an ideal of definition for $A$.
-Let $X=\Spec(A)$, $\mathfrak{X}=\Spf(A)$, which identifies with the closed subset $V(\mathfrak{J})$ of $X$ \sref{1.10.1.2}.
-In addition, the Definitions \sref{1.10.1.2} and \sref{1.10.8.4} show that the \emph{formal affine scheme $\mathfrak{X}$} is identical the completion $X_{/\mathfrak{X}}$ of the affine scheme $X$ along the closed subset $\mathfrak{X}$ of its underling space.
-To every coherent $\OO_X$-module $\sh{F}$ corresponds an $\OO_\mathfrak{X}$-module of finite type $\sh{F}_{/\mathfrak{X}}$, which is a sheaf of topological modules over over the sheaf of topological rings $\OO_\mathfrak{X}$.
+In this paragraph, $A$ denotes an \emph{adic Noetherian ring}, and $\mathfrak{J}$ an ideal of definition for $A$.
+Let $X=\Spec(A)$, and $\mathfrak{X}=\Spf(A)$, which can be identified with the closed subset $V(\mathfrak{J})$ of $X$ \sref{1.10.1.2}.
+In addition, Definitions \sref{1.10.1.2} and \sref{1.10.8.4} show that the \emph{formal affine scheme $\mathfrak{X}$} is identical the completion $X_{/\mathfrak{X}}$ of the affine scheme $X$ along the closed subset $\mathfrak{X}$ of its underling space.
+To every coherent $\OO_X$-module $\sh{F}$, corresponds an $\OO_\mathfrak{X}$-module of finite type $\sh{F}_{/\mathfrak{X}}$, which is a sheaf of topological modules over the sheaf of topological rings $\OO_\mathfrak{X}$.
 Every coherent $\OO_X$-module $\sh{F}$ is of the form $\wt{M}$, where $M$ is an $A$-module of finite type \sref{1.1.5.1}; we set $(\wt{M})_{/X}=M^\Delta$.
-In addition, if $u:M\to N$ is an $A$-homomorphism of $A$-modules of finite type, then it corresponds to a homomorphism $\wt{u}:\wt{M}\to\wt{N}$, and as a result to a continuous homomorphism $\wt{u}_{/X'}:(\wt{M})_{/X'}\to(\wt{N})_{/X'}$, which we denote by $u^\Delta$.
+In addition, if $u:M\to N$ is an $A$-homomorphism of $A$-modules of finite type, then it corresponds to a homomorphism $\wt{u}:\wt{M}\to\wt{N}$, and, as a result, to a continuous homomorphism $\wt{u}_{/X'}:(\wt{M})_{/X'}\to(\wt{N})_{/X'}$, which we denote by $u^\Delta$.
 It is immediate that $(v\circ u)^\Delta=v^\Delta\circ u^\Delta$; we have thus defined a \emph{covariant additive functor $M^\Delta$} from the category of $A$-modules of finite type to the category of $\OO_\mathfrak{X}$-modules of finite type.
 When $A$ is a \emph{discrete} ring, we have $M^\Delta=\wt{M}$.
 \end{env}
@@ -1025,7 +1025,7 @@ When $A$ is a \emph{discrete} ring, we have $M^\Delta=\wt{M}$.
 \medskip\noindent
 \begin{enumerate}[label=\emph{(\roman*)}]
   \item $M^\Delta$ is an exact functor in $M$, and there exists a canonical functorial isomorphism of $A$-modules $\Gamma(\mathfrak{X},M^\Delta)\isoto M$.
-  \item If $M$ and $N$ are two $A$-modules of finite type, then there exist canonical functorial isomorphisms
+  \item If $M$ and $N$ are $A$-modules of finite type, then there exist canonical functorial isomorphisms
     \begin{equation*}
     \label{1.10.10.2.1}
       (M\otimes_A N)^\Delta\isoto M^\Delta\otimes_{\OO_\mathfrak{X}}N^\Delta,
@@ -1048,15 +1048,15 @@ When $A$ is a \emph{discrete} ring, we have $M^\Delta=\wt{M}$.
 \begin{proof}
 \label{proof-1.10.10.2}
 The exactness of $M^\Delta$ follows from the exactness of the functors $\wt{M}$ \sref{1.1.3.5} and $\sh{F}_{/X'}$ \sref{1.10.8.8}.
-By definition, $\Gamma(X,M^\Delta)$ is the separated completion of the $A$-module $\Gamma(X,\wt{M})=M$ with respect to the $\mathfrak{J}$-preadic topology; but as $A$ is complete and $M$ is of finite type, we know \sref[0]{0.7.3.6} that $M$ is separated and complete, which proves (i).
+By definition, $\Gamma(X,M^\Delta)$ is the separated completion of the $A$-module $\Gamma(X,\wt{M})=M$ with respect to the $\mathfrak{J}$-preadic topology; but, since $A$ is complete and $M$ is of finite type, we know \sref[0]{0.7.3.6} that $M$ is separated and complete, which proves (i).
 The isomorphism \sref{1.10.10.2.1} (resp. \sref{1.10.10.2.2}) comes from the composition of the isomorphisms \sref{1.1.3.12}[i] and \sref{1.10.8.10.1} (resp. \sref{1.1.3.12}[ii] and \sref{1.10.8.10.2}).
-Finally, as $\Hom_A(M,N)$ is an $A$-module of finite type, we can apply (i), which identifies $\Gamma(\mathfrak{X},(\Hom_A(M,N))^\Delta)$ with $\Hom_A(M,N)$, and we use \sref{1.10.10.2.2}, which proves that the homomorphism \sref{1.10.10.2.3} is an isomorphism.
+Finally, since $\Hom_A(M,N)$ is an $A$-module of finite type, we can apply (i), which identifies $\Gamma(\mathfrak{X},(\Hom_A(M,N))^\Delta)$ with $\Hom_A(M,N)$, and we can use \sref{1.10.10.2.2}, which proves that the homomorphism \sref{1.10.10.2.3} is an isomorphism.
 \end{proof}
 
-We deduce from Proposition~\sref{1.10.10.2} a series of analogous results to those of Theorem~\sref{1.1.3.7} and Corollary~\sref{1.1.3.12}, which we leave to the reader to formulate.
+We deduce from Proposition~\sref{1.10.10.2} a series of results analogous to those of Theorem~\sref{1.1.3.7} and Corollary~\sref{1.1.3.12}, whose formulation we leave to the reader.
 
 \oldpage[I]{202}
-We note that the exactness property of $M^\Delta$, applied to the exact sequence $0\to\mathfrak{J}\to A\to A/\mathfrak{J}\to 0$ shows that the sheaf of ideals of $\OO_\mathfrak{X}$ denoted here by $\mathfrak{J}^\Delta$ coincides with the one described similarly in \sref{1.10.3.1}, by \sref{1.10.3.2}.
+We note that the exactness property of $M^\Delta$, applied to the exact sequence $0\to\mathfrak{J}\to A\to A/\mathfrak{J}\to 0$, shows that the sheaf of ideals of $\OO_\mathfrak{X}$ denoted here by $\mathfrak{J}^\Delta$ coincides with the one denoted also by $\mathfrak{J}^\Delta$ in \sref{1.10.3.1}, by \sref{1.10.3.2}.
 
 \begin{prop}[10.10.3]
 \label{1.10.10.3}
@@ -1065,14 +1065,14 @@ Under the hypotheses of \sref{1.10.10.1}, $\OO_\mathfrak{X}$ is a coherent sheaf
 
 \begin{proof}
 \label{proof-1.10.10.3}
-If $f\in A$, then we know that $A_{\{f\}}$ is an adic Noetherian ring \sref[0]{0.7.6.11}, and as the question is local, we reduce \sref{1.10.1.4} to proving that the kernel of the homomorphism $v:\OO_\mathfrak{X}^n\to\OO_\mathfrak{X}$ is an $\OO_\mathfrak{X}$-module of finite type.
-We then have $v=u^\Delta$, where $u$ is an $A$-homomorphism $A^n\to A$ \sref{1.10.10.2}; as $A$ is Noetherian, the kernel of $u$ is of finite type, in other words we have a homomorphism $A^m\xrightarrow{w}A^n$ such that the sequence $A^m\xrightarrow{w}A^n\xrightarrow{u}A$ is exact.
+If $f\in A$, then we know that $A_{\{f\}}$ is an adic Noetherian ring \sref[0]{0.7.6.11}, and, since the question is local, we reduce \sref{1.10.1.4} to proving that the kernel of the homomorphism $v:\OO_\mathfrak{X}^n\to\OO_\mathfrak{X}$ is an $\OO_\mathfrak{X}$-module of finite type.
+We then have $v=u^\Delta$, where $u$ is an $A$-homomorphism $A^n\to A$ \sref{1.10.10.2}; since $A$ is Noetherian, the kernel of $u$ is of finite type, or, equivalently, we have a homomorphism $A^m\xrightarrow{w}A^n$ such that the sequence $A^m\xrightarrow{w}A^n\xrightarrow{u}A$ is exact.
 We conclude \sref{1.10.10.2} that the sequence $\OO_\mathfrak{X}^m\xrightarrow{w^\Delta}\OO_\mathfrak{X}^n\xrightarrow{v}\OO_\mathfrak{X}$ is exact, which proves that the kernel of $v$ is of finite type.
 \end{proof}
 
 \begin{env}[10.10.4]
 \label{1.10.10.4}
-With the above notation, set $A_n=A/\mathfrak{J}^{n+1}$, and let $S_n$ be the affine scheme $\Spec(A_n)=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$, $\sh{J}=\mathfrak{J}^\Delta$ being the sheaf of ideals of definition for $\OO_\mathfrak{X}$ corresponding to the ideal $\mathfrak{J}$.
+With the above notation, set $A_n=A/\mathfrak{J}^{n+1}$, and let $S_n$ be the affine scheme $\Spec(A_n)=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$, with $\sh{J}=\mathfrak{J}^\Delta$ the sheaf of ideals of definition for $\OO_\mathfrak{X}$ corresponding to the ideal $\mathfrak{J}$.
 Let $u_{mn}$ be the morphism of preschemes $X_m\to X_n$ corresponding to the canonical homomorphism $A_n\to A_m$ for $m\leq n$; the formal scheme $\mathfrak{X}$ is the inductive limit of the $X_n$ with respect to the $u_{mn}$ \sref{1.10.6.3}.
 \end{env}
 
@@ -1081,9 +1081,9 @@ Let $u_{mn}$ be the morphism of preschemes $X_m\to X_n$ corresponding to the can
 Under the hypothesis of \sref{1.10.10.1}, let $\sh{F}$ be an $\OO_\mathfrak{X}$-module.
 The following conditions are equivalent:
 \begin{enumerate}[label=\emph{(\alph*)}]
-  \item $\sh{F}$ is a coherent $\OO_\mathfrak{X}$-module.
-  \item $\sh{F}$ is isomorphic to the projective limit \sref{1.10.6.6} of a sequence $(\sh{F}_n)$ of coherent $\OO_{X_n}$-modules such that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$.
-  \item There exists an $A$-module of finite type $M$ (determined up to a canonical isomorphism by Proposition \sref{1.10.10.2}[i]) such that $\sh{F}$ is isomorphic to $M^\Delta$.
+  \item $\sh{F}$ is a coherent $\OO_\mathfrak{X}$-module;
+  \item $\sh{F}$ is isomorphic to the projective limit \sref{1.10.6.6} of a sequence $(\sh{F}_n)$ of coherent $\OO_{X_n}$-modules such that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$; and
+  \item there exists an $A$-module $M$ of finite type (determined up to canonical isomorphism by Proposition \sref{1.10.10.2}[i]) such that $\sh{F}$ is isomorphic to $M^\Delta$.
 \end{enumerate}
 \end{prop}
 
@@ -1091,19 +1091,18 @@ The following conditions are equivalent:
 \label{proof-1.10.10.5}
 We first show that (b) implies (c).
 We have $\sh{F}_n=\wt{M_n}$, where $M_n$ is an $A_n$-module of finite type, and the hypotheses imply that $M_m=M_n\otimes_{A_n}A_m$ for $m\leq n$ \sref{1.1.6.5}; the $M_n$ thus form a projective system for the canonical di-homomorphisms $M_n\to M_m$ ($m\leq n$), and it follows immediately from the definition of the $A_n$ that this projective system satisfies the conditions of \sref[0]{0.7.2.9}; as a result, its projective limit $M$ is an $A$-module of finite type such that $M_n=M\otimes_A A_n$ for all $n$.
-We deduce that $\sh{F}_n$ is induced over $X_n$ by $\wt{M}\otimes_{\OO_X}(\OO_X/\wt{\mathfrak{J}}^{n+1})$, so $\sh{F}=M^\Delta$ by Definition \sref{1.10.8.4}.
+We deduce that $\sh{F}_n$ is induced over $X_n$ by $\wt{M}\otimes_{\OO_X}(\OO_X/\wt{\mathfrak{J}}^{n+1})$, and so $\sh{F}=M^\Delta$ by Definition \sref{1.10.8.4}.
 
-Conversely, (c) implies (b); indeed, if $u_n$ is the immersion morphism $X_n\to X$, then $u_n^*(\wt{M})=(M\otimes_A A_n)^\sim$ is induced over $X_n$ by $\wt{M}\otimes_{\OO_X}(\OO_X/\wt{\mathfrak{J}}^{n+1})$, and $M^\Delta=\varprojlim u_n^*(\wt{M})$ by Definition \sref{1.10.8.4}; as $u_m=u_n\circ u_{mn}$ for $m\leq n$, the $\sh{F}_n=u_n^*(\wt{M})$ satisfy the conditions of (b), hence our claim.
+Conversely, (c) implies (b); indeed, if $u_n$ is the immersion morphism $X_n\to X$, then $u_n^*(\wt{M})=(M\otimes_A A_n)^\sim$ is induced over $X_n$ by $\wt{M}\otimes_{\OO_X}(\OO_X/\wt{\mathfrak{J}}^{n+1})$, and $M^\Delta=\varprojlim u_n^*(\wt{M})$ by Definition \sref{1.10.8.4}; since $u_m=u_n\circ u_{mn}$ for $m\leq n$, the $\sh{F}_n=u_n^*(\wt{M})$ satisfy the conditions of (b), whence our claim.
 
-We now show that (c) implies (a): indeed, we have by definition that $\OO_\mathfrak{X}=A^\Delta$; as $M$ is the cokernel of a homomorphism $A^m\to A^n$, it follows from Proposition \sref{1.10.10.2} that $M^\Delta$ is the cokernel of a homomorphism $\OO_\mathfrak{X}^m\to\OO_\mathfrak{X}^n$, and as the sheaf of rings $\OO_\mathfrak{X}$ is coherent \sref{1.10.10.3}, so is $M^\Delta$ \sref[0]{0.5.3.4}.
+We now show that (c) implies (a): indeed, we have, by definition, that $\OO_\mathfrak{X}=A^\Delta$; since $M$ is the cokernel of a homomorphism $A^m\to A^n$, it follows from Proposition \sref{1.10.10.2} that $M^\Delta$ is the cokernel of a homomorphism $\OO_\mathfrak{X}^m\to\OO_\mathfrak{X}^n$, and, since the sheaf of rings $\OO_\mathfrak{X}$ is coherent \sref{1.10.10.3}, so too is $M^\Delta$ \sref[0]{0.5.3.4}.
 
 \oldpage[I]{203}
 Finally, (a) implies (b).
-Considered as an $\OO_\mathfrak{X}$-module, we have that $\OO_{X_n}=\OO_\mathfrak{X}/\sh{J}^{n+1}=A_n^\Delta$; $\sh{F}_n=\sh{F}\otimes_{\OO_\mathfrak{X}}\OO_{X_n}$ is a coherent $\OO_\mathfrak{X}$-module \sref[0]{0.5.3.5}, and as it is also an $\OO_{X_n}$-modules and $\sh{J}^{n+1}$ is coherent, we conclude that $\sh{F}_n$ is a coherent $\OO_{X_n}$-module \sref[0]{0.5.3.10}, and it is immediate that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leq n$ (recalling that the continuous map $X_m\to X_n$ of the underlying spaces in the identity on $\mathfrak{X}$).
-The sheaf $\sh{G}=\varprojlim\sh{F}_n$ is thus a coherent $\OO_\mathfrak{X}$-module, since we have seen that (b) implies (a). The canonical homomorphisms $\sh{F}\to\sh{F}_n$ form a projective system, which by passing to the limit gives a canonical homomorphism $w:\sh{F}\to\sh{G}$, and it remains to prove that $w$ is bijective.
-The question is now \emph{local}, so we can reduce to the case where $\sh{F}$ is the cokernel of a homomorphism $\OO_\mathfrak{X}^p\to\OO_\mathfrak{X}^q$; as this homomorphism is of the form $v^\Delta$, where $v$ is a homomorphism $A^m\to A^n$ \sref{1.10.10.2}, $\sh{F}$ is isomorphic to $M^\Delta$, where $M=\Coker{v}$ \sref{1.10.10.2}.
-We then have by Proposition \sref{1.10.10.2} that $\sh{F}_n=M^\Delta\otimes_{\OO_\mathfrak{X}}A_n^\Delta=(M\otimes_A A_n)^\Delta$, and as the $\mathfrak{J}$-adic topology on $M\otimes_A A_n$ is discrete, we have $(M\otimes_A A_n)^\Delta=(M\otimes_A A_n)^\sim$ (as an $\OO_{X_n}$-module); we have seen above that $M^\Delta=\varprojlim\sh{F}_n$, and $w$ is thus the identity in this case.
-Q.E.D.
+Considered as an $\OO_\mathfrak{X}$-module, we have that $\OO_{X_n}=\OO_\mathfrak{X}/\sh{J}^{n+1}=A_n^\Delta$; but $\sh{F}_n=\sh{F}\otimes_{\OO_\mathfrak{X}}\OO_{X_n}$ is a coherent $\OO_\mathfrak{X}$-module \sref[0]{0.5.3.5}, and, since it is also an $\OO_{X_n}$-module, and $\sh{J}^{n+1}$ is coherent, we conclude that $\sh{F}_n$ is a coherent $\OO_{X_n}$-module \sref[0]{0.5.3.10}, and it is immediate that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leq n$ (recalling that the continuous map $X_m\to X_n$ of the underlying spaces is the identity on $\mathfrak{X}$).
+The sheaf $\sh{G}=\varprojlim\sh{F}_n$ is thus a coherent $\OO_\mathfrak{X}$-module, since we have seen that (b) implies (a). The canonical homomorphisms $\sh{F}\to\sh{F}_n$ form a projective system, which, by passing to the limit, gives a canonical homomorphism $w:\sh{F}\to\sh{G}$, and it remains only to prove that $w$ is bijective.
+The question is now \emph{local}, so we can reduce to the case where $\sh{F}$ is the cokernel of a homomorphism $\OO_\mathfrak{X}^p\to\OO_\mathfrak{X}^q$; since this homomorphism is of the form $v^\Delta$, where $v$ is a homomorphism $A^m\to A^n$ \sref{1.10.10.2}, $\sh{F}$ is isomorphic to $M^\Delta$, where $M=\Coker{v}$ \sref{1.10.10.2}.
+We then have, by Proposition \sref{1.10.10.2}, that $\sh{F}_n=M^\Delta\otimes_{\OO_\mathfrak{X}}A_n^\Delta=(M\otimes_A A_n)^\Delta$, and, since the $\mathfrak{J}$-adic topology on $M\otimes_A A_n$ is discrete, we have $(M\otimes_A A_n)^\Delta=(M\otimes_A A_n)^\sim$ (as an $\OO_{X_n}$-module); we have seen above that $M^\Delta=\varprojlim\sh{F}_n$, and $w$ is thus the identity in this case.
 \end{proof}
 
 \begin{cor}[10.10.6]
@@ -1113,8 +1112,8 @@ If $\sh{F}$ satisfies condition \emph{(b)} of Proposition \sref{1.10.10.5}, then
 
 \begin{env}[10.10.7]
 \label{1.10.10.7}
-Now let $A$ and $B$ be two adic Noetherian rings, $\vphi:B\to A$ a continuous homomorphism; we denote by $\mathfrak{J}$ (resp. $\mathfrak{K}$) an ideal of definition for $A$ (resp. $B$) such that $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and we set $X=\Spec(A)$, $Y=\Spec(B)$, $\mathfrak{X}=\Spf(A)$, and $\mathfrak{Y}=\Spf(B)$.
-Let $f:X\to Y$ be the morphism of preschemes corresponding to $\vphi$ \sref{1.1.6.1}, $\wh{f}:\mathfrak{X}\to\mathfrak{Y}$ its extension to the completions \sref{1.10.9.1}, which is also a morphism of formal preschemes corresponding to $\vphi$ \sref{1.10.2.2}.
+Now let $A$ and $B$ be adic Noetherian rings, and $\vphi:B\to A$ a continuous homomorphism; we denote by $\mathfrak{J}$ (resp. $\mathfrak{K}$) an ideal of definition for $A$ (resp. $B$) such that $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and we set $X=\Spec(A)$, $Y=\Spec(B)$, $\mathfrak{X}=\Spf(A)$, and $\mathfrak{Y}=\Spf(B)$.
+Let $f:X\to Y$ be the morphism of preschemes corresponding to $\vphi$ \sref{1.1.6.1}, and $\wh{f}:\mathfrak{X}\to\mathfrak{Y}$ its extension to the completions \sref{1.10.9.1}, which is also a morphism of formal preschemes that corresponds to $\vphi$ \sref{1.10.2.2}.
 \end{env}
 
 \begin{prop}[10.10.8]
@@ -1141,8 +1140,8 @@ For every ideal $\mathfrak{b}$ of $B$, we have $\wh{f}^*(\mathfrak{b}^\Delta)\OO
 
 \begin{proof}
 \label{proof-1.10.10.9}
-Let $j$ be the canonical injection $\mathfrak{b}\to B$, to which corresponds the canonical injection $j^\Delta:\mathfrak{b}^\Delta\to\OO_\mathfrak{Y}$ of sheaves of $\OO_\mathfrak{Y}$-modules; by definition, $\wh{f}^*(\mathfrak{b}^\Delta)\OO_\mathfrak{X}$ is the image of the homomorphism $\wh{f}^*(j^\Delta):\wh{f}^*(\mathfrak{b}^\Delta)\to\OO_\mathfrak{X}=\wh{f}^*(\OO_\mathfrak{Y})$; but this homomorphism identifies with $(j\otimes 1)^\Delta:(\mathfrak{b}\otimes_B A)^\Delta\to\OO_\mathfrak{X}=(B\otimes_B A)^\Delta$ by Proposition \sref{1.10.10.8}.
-As the image of $j\otimes 1$ is the ideal $\mathfrak{b}A$ of $A$, the image of $(j\otimes 1)^\Delta$ is thus $(\mathfrak{b}A)^\Delta$ by Proposition \sref{1.10.10.2}, hence the conclusion.
+Let $j$ be the canonical injection $\mathfrak{b}\to B$, to which corresponds the canonical injection $j^\Delta:\mathfrak{b}^\Delta\to\OO_\mathfrak{Y}$ of sheaves of $\OO_\mathfrak{Y}$-modules; by definition, $\wh{f}^*(\mathfrak{b}^\Delta)\OO_\mathfrak{X}$ is the image of the homomorphism $\wh{f}^*(j^\Delta):\wh{f}^*(\mathfrak{b}^\Delta)\to\OO_\mathfrak{X}=\wh{f}^*(\OO_\mathfrak{Y})$; but this homomorphism can be identified with $(j\otimes 1)^\Delta:(\mathfrak{b}\otimes_B A)^\Delta\to\OO_\mathfrak{X}=(B\otimes_B A)^\Delta$ by Proposition \sref{1.10.10.8}.
+Since the image of $j\otimes 1$ is the ideal $\mathfrak{b}A$ of $A$, the image of $(j\otimes 1)^\Delta$ is thus $(\mathfrak{b}A)^\Delta$, by Proposition \sref{1.10.10.2}, whence the conclusion.
 \end{proof}
 
 \subsection{Coherent sheaves on formal preschemes}
