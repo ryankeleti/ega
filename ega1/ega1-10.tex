@@ -1585,7 +1585,7 @@ Since $Y'=j^{-1}(X')$, it suffices to use \sref{1.10.9.9} and to apply \sref{1.1
 Let $\mathfrak{S}$ be a formal prescheme, $\mathfrak{X}$ a formal $\mathfrak{S}$-prescheme, and $f:\mathfrak{X}\to\mathfrak{S}$ the structure morphism.
 We define the diagonal morphism $\Delta_{\mathfrak{X}|\mathfrak{S}}:\mathfrak{X}\to\mathfrak{X}\times_\mathfrak{S}\mathfrak{X}$ (also denoted by $\Delta_\mathfrak{X}$) to be the morphism $(1_\mathfrak{X},1_\mathfrak{X})_\mathfrak{S}$.
 We say that $\mathfrak{X}$ is separated over $\mathfrak{S}$, or is a formal $\mathfrak{S}$-scheme, or that $f$ is a separated morphism, if the image of the underlying space of $\mathfrak{X}$ under $\Delta_\mathfrak{X}$ is a closed subset of the underlying space of $\mathfrak{X}\times_\mathfrak{S}\mathfrak{X}$.
-We say that a formal prescheme $\mathfrak{X}$ is separated, or is a formal schemes, if it is separated over $\bb{Z}$.
+We say that a formal prescheme $\mathfrak{X}$ is separated, or is a formal scheme, if it is separated over $\bb{Z}$.
 \end{defn}
 
 \begin{prop}[10.15.2]
@@ -1614,7 +1614,7 @@ Suppose that all the formal preschemes (resp. morphisms of formal preschemes) in
 
 \begin{proof}
 \label{proof-1.10.15.3}
-With the notation of \sref{1.10.15.2}, we in fact have $(g\circ f)_0=g_0\circ f_0$, and $(f\times_\mathfrak{S}g)_0=f_0\times_{S_0}g_0$;
+With the notation of \sref{1.10.15.2}, we have, in fact, that $(g\circ f)_0=g_0\circ f_0$ and $(f\times_\mathfrak{S}g)_0=f_0\times_{S_0}g_0$;
 the claims of \sref{1.10.15.3} are then immediate consequences of \sref{1.10.15.2} and the corresponding claims in \sref{1.5.5.1} for usual preschemes.
 \end{proof}
 
@@ -1635,16 +1635,16 @@ Let $f:\mathfrak{X}\to\mathfrak{Y}$ be an $\mathfrak{S}$-morphism; then the grap
 We can assume that $\mathfrak{S}$ is the inductive limit of a sequence $(S_n)$ of locally Noetherian preschemes, $\mathfrak{X}$ (resp. $\mathfrak{Y}$) the inductive limit of a sequence $(X_n)$ (resp. $(Y_n)$) of $S_n$-preschemes, and $f$ the inductive limit of a sequence $(f_n:X_n\to Y_n)$ of $S_n$-morphisms;
 then $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$ is the inductive limit of the sequence $(X_n\times_{S_n}Y_n)$, and $\Gamma_f$ the inductive limit of the sequence $(\Gamma_{f_n})$ \sref{1.10.7.4};
 by hypothesis, $Y_0$ is separated over $S_0$ \sref{1.10.15.2}, so the space $\Gamma_{f_0}(X_0)$ is a closed subspace of $X_0\times_{S_0}Y_0$;
-since the underlying spaces of $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$ (resp. $\Gamma_f(\mathfrak{X})$) and $X_0\times_{S_0}Y_0$ (resp. $\Gamma_{f_0}(X_0)$) are the same, we already see that $\Gamma_f(\mathfrak{X})$ is a \emph{closed} subspace of $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$.
-Now note that, when $(U,V)$ runs over the set of pairs consisting of a Noetherian formal affine open subset $U$ (resp. $V$) of $\mathfrak{X}$ (resp $\mathfrak{Y}$) such that $f(U)\subset V$, the open subsets $U\times_S V$ form a cover of $\Gamma_f(\mathfrak{X})$ in $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$, and if $f_U:U\to V$ is the restriction of $f$ to $U$, then $\Gamma_{f_U}:U\to U\times_\mathfrak{S}V$ is the restriction of $\Gamma_f$ to $U$.
+since the underlying spaces of $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$ (resp. $\Gamma_f(\mathfrak{X})$) and $X_0\times_{S_0}Y_0$ (resp. $\Gamma_{f_0}(X_0)$) are identical, we already see that $\Gamma_f(\mathfrak{X})$ is a \emph{closed} subspace of $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$.
+Now note that, when $(U,V)$ runs over the set of pairs consisting of a Noetherian formal affine open subset $U$ (resp. $V$) of $\mathfrak{X}$ (resp $\mathfrak{Y}$) such that $f(U)\subset V$, the open subsets $U\times_S V$ form a cover of $\Gamma_f(\mathfrak{X})$ in $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$, and, if $f_U:U\to V$ is the restriction of $f$ to $U$, then $\Gamma_{f_U}:U\to U\times_\mathfrak{S}V$ is the restriction of $\Gamma_f$ to $U$.
 If we show that $\Gamma_{f_U}$ is a closed immersion, then $\Gamma_f$ will be a closed immersion \sref{1.10.14.4}, or, in other words, we are led to consider the case where $\mathfrak{S}=\Spf(A)$, $\mathfrak{X}=\Spf(B)$, and $\mathfrak{Y}=\Spf(C)$ are affine (with $A$, $B$, and $C$ Noetherian adics), with $f$ corresponding to a continuous $A$-homomorphism $\vphi:C\to B$;
-$\Gamma_f$ then corresponds to the unique continuous homomorphism $\omega: B\wh{\otimes}_A C\to B$ which, when composed with the canonical homomorphisms $B\to B\wh{\otimes}_A C$ and $C\to B\wh{\otimes}_A C$, gives (respectively) the identity and $\vphi$.
+then $\Gamma_f$ corresponds to the unique continuous homomorphism $\omega: B\wh{\otimes}_A C\to B$ which, when composed with the canonical homomorphisms $B\to B\wh{\otimes}_A C$ and $C\to B\wh{\otimes}_A C$, gives the identity and $\vphi$ (respectively).
 But it is clear that $\omega$ is \emph{surjective}, whence our claim.
 \end{proof}
 
 \begin{cor}[10.15.5]
 \label{1.10.15.5}
-Let $\mathfrak{S}$ be a locally Noetherian formal prescheme, and $\mathfrak{X}$ a $\mathfrak{S}$-prescheme of finite type;
+Let $\mathfrak{S}$ be a locally Noetherian formal prescheme, and $\mathfrak{X}$ an $\mathfrak{S}$-prescheme of finite type;
 for $\mathfrak{X}$ to be separated over $\mathfrak{S}$, it is necessary and sufficient for the diagonal morphism $\mathfrak{X}\to\mathfrak{X}\times_\mathfrak{S}\mathfrak{X}$ to be a closed immersion.
 \end{cor}
 
@@ -1661,7 +1661,7 @@ With the notation of \sref{1.10.14.2}, $j_0:Y_0\to X_0$ is a closed immersion, t
 \begin{prop}[10.15.7]
 \label{1.10.15.7}
 Let $X$ be a locally Noetherian (usual) prescheme, $X'$ a closed subset of $X$, and $\wh{X}=X_{/X'}$.
-For $\wh{X}$ to be separated, it is necessary and sufficient for $\wh{X}_\red$ to be separated, and it is sufficient that $X$ be separated.
+For $\wh{X}$ to be separated, it is necessary and sufficient that $\wh{X}_\red$ be separated, and it is sufficient that $X$ be separated.
 \end{prop}
 
 \begin{proof}
