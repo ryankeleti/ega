@@ -83,7 +83,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
     + [ ] 6. Integral morphisms and finite morphisms
     + [ ] 7. Valuative criteria
-    + [ ] 8. Blowup schemes; projective cones; projective closure
+    + [ ] 8. Blowup schemes; projective cones; projective closure _(@thosgood)_
 - [ ] Cohomological study of coherent sheaves (EGA III)
     + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
     + [x] 1. Cohomology of affine schemes _(@ryankeleti)_
