@@ -356,8 +356,8 @@ Let $\mathfrak{X}$ be a locally Noetherian formal prescheme, and $\sh{T}$ the la
 \begin{proposition}[10.5.6]
 \label{1.10.5.6}
 Let $\mathfrak{X}$ and $\mathfrak{Y}$ be formal preschemes, $\sh{J}$ (resp. $\sh{K}$) be a sheaf of ideals of definition for $\mathfrak{X}$ (resp. $\mathfrak{Y}$), and $f:\mathfrak{X}\to\mathfrak{Y}$ a morphism of formal preschemes.
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $f^*(\sh{K})\sh{O}_\mathfrak{X}\subset\sh{J}$, then there exists a unique morphism $f':(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{J})\to(\mathfrak{Y},\sh{O}_\mathfrak{Y}/\sh{K})$ of usual preschemes making the diagram
+\begin{enumerate}
+  \item[\rm{(i)}] If $f^*(\sh{K})\sh{O}_\mathfrak{X}\subset\sh{J}$, then there exists a unique morphism $f':(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{J})\to(\mathfrak{Y},\sh{O}_\mathfrak{Y}/\sh{K})$ of usual preschemes making the diagram
     \[
     \label{1.10.5.6.1}
       \xymatrix{
@@ -369,7 +369,7 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be formal preschemes, $\sh{J}$ (resp. $\sh
       \tag{10.5.6.1}
     \]
     commutate, where the vertical arrows are the canonical morphisms.
-  \item Suppose that $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$ are formal affine schemes, $\sh{J}=\mathfrak{J}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of definition for $A$ (resp. $B$), and $f=({}^a\vphi,\widetilde{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism;
+  \item[\rm{(ii)}] Suppose that $\mathfrak{X}=\Spf(A)$ and $\mathfrak{Y}=\Spf(B)$ are formal affine schemes, $\sh{J}=\mathfrak{J}^\Delta$ and $\sh{K}=\mathfrak{K}^\Delta$, where $\mathfrak{J}$ (resp. $\mathfrak{K}$) is an ideal of definition for $A$ (resp. $B$), and $f=({}^a\vphi,\widetilde{\vphi})$, where $\vphi:B\to A$ is a continuous homomorphism;
     for $f^*(\sh{K})\sh{O}_\mathfrak{X}\subset\sh{J}$ to hold, it is necessary and sufficient that $\vphi(\mathfrak{K})\subset\mathfrak{J}$, and, in this case, $f'$ is then the morphism $({}^a\vphi',\widetilde{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the homomorphism induced from $\vphi$ by passing to quotients.
 \end{enumerate}
 \end{proposition}
@@ -377,15 +377,15 @@ Let $\mathfrak{X}$ and $\mathfrak{Y}$ be formal preschemes, $\sh{J}$ (resp. $\sh
 \begin{proof}
 \label{proof-1.10.5.6}
 \medskip\noindent
-\begin{enumerate}[label=(\roman*)]
-  \item If $f=(\psi,\theta)$, then the hypotheses imply that the image under $\theta^\sharp:\psi^*(\sh{O}_\mathfrak{Y})\to\sh{O}_\mathfrak{X}$ of the sheaf of ideals $\psi^*(\sh{K})$ of $\psi^*(\sh{O}_\mathfrak{Y})$ is contained in $\sh{J}$ \sref[0]{0.4.3.5}.
+\begin{enumerate}
+  \item[\rm{(i)}] If $f=(\psi,\theta)$, then the hypotheses imply that the image under $\theta^\sharp:\psi^*(\sh{O}_\mathfrak{Y})\to\sh{O}_\mathfrak{X}$ of the sheaf of ideals $\psi^*(\sh{K})$ of $\psi^*(\sh{O}_\mathfrak{Y})$ is contained in $\sh{J}$ \sref[0]{0.4.3.5}.
     By passing to quotients, we thus obtain from $\theta^\sharp$ a homomorphism of sheaves of rings
     \[
       \omega:\psi^*(\sh{O}_\mathfrak{Y}/\sh{K})=\psi^*(\sh{O}_\mathfrak{Y})/\psi^*(\sh{K})\to\sh{O}_\mathfrak{X}/\sh{J};
     \]
     furthermore, since, for all $x\in\mathfrak{X}$, $\theta_x^\sharp$ is a \emph{local} homomorphism, so too is $\omega_x$.
     The morphism of ringed spaces $(\psi,\omega^\flat)$ is thus \sref{1.2.2.1} the unique morphism $f'$ of ringed spaces whose existence was claimed.
-  \item The canonical functorial correspondence between morphisms of formal affine schemes and continuous homomorphisms of rings \sref{1.10.2.2} shows that, in the case considered, the relation $f^*(\sh{K})\sh{O}_\mathfrak{X}\subset\mathfrak{J}$ implies that we have $f'=({}^a\vphi',\widetilde{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the unique homomorphism making the diagram
+  \item[\rm{(ii)}] The canonical functorial correspondence between morphisms of formal affine schemes and continuous homomorphisms of rings \sref{1.10.2.2} shows that, in the case considered, the relation $f^*(\sh{K})\sh{O}_\mathfrak{X}\subset\mathfrak{J}$ implies that we have $f'=({}^a\vphi',\widetilde{\vphi'})$, where $\vphi':B/\mathfrak{K}\to A/\mathfrak{J}$ is the unique homomorphism making the diagram
     \[
     \label{1.10.5.6.2}
       \xymatrix{
@@ -449,10 +449,10 @@ The following proposition establishes, under certain additional conditions, the 
 Let $\mathfrak{X}$ be a topological space, and $(\sh{O}_i,u_{ji})$ a projective system of sheaves of rings on $\mathfrak{X}$, with $\bb{N}$ for its set of indices.
 Let $\sh{J}_i$ be the kernel of $u_{0i}:\sh{O}_i\to\sh{O}_0$.
 Suppose that:
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item the ringed space $(\mathfrak{X},\sh{O}_i)$ is a prescheme $X_i$;
-  \item for all $x\in\mathfrak{X}$ and all $i$, there exists an open neighborhood $U_i$ of $x$ in $\mathfrak{X}$ such that the restriction $\sh{J}_i|U_i$ is nilpotent; and
-  \item the homomorphisms $u_{ji}$ are surjective.
+\begin{enumerate}
+  \item[\rm{(a)}] the ringed space $(\mathfrak{X},\sh{O}_i)$ is a prescheme $X_i$;
+  \item[\rm{(b)}] for all $x\in\mathfrak{X}$ and all $i$, there exists an open neighborhood $U_i$ of $x$ in $\mathfrak{X}$ such that the restriction $\sh{J}_i|U_i$ is nilpotent; and
+  \item[\rm{(c)}] the homomorphisms $u_{ji}$ are surjective.
 \end{enumerate}
 
 \oldpage[I]{190}
@@ -569,9 +569,9 @@ The commutativity of the diagram \sref{1.10.6.7.1} for $m=0$ then gives the cond
 \begin{corollary}[10.6.10]
 \label{1.10.6.10}
 Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Noetherian formal preschemes, and $\sh{T}$ the largest sheaf of ideals of definition for $\mathfrak{X}$ \sref{1.10.5.4}.
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item For every sheaf of ideals of definition $\sh{K}$ for $\mathfrak{Y}$ and every morphism $f:\mathfrak{X}\to\mathfrak{Y}$, we have $f^*(\sh{K})\sh{O}_\mathfrak{X}\subset\sh{T}$.
-  \item There is a canonical bijective correspondence between $\Hom(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(f_n)$ of morphisms making the diagrams \sref{1.10.6.7.1} commute, where $X_n=(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{T}^{n+1})$ and $Y_n=(\mathfrak{Y},\sh{O}_\mathfrak{Y}/\sh{K}^{n+1})$.
+\begin{enumerate}
+  \item[\rm{(i)}] For every sheaf of ideals of definition $\sh{K}$ for $\mathfrak{Y}$ and every morphism $f:\mathfrak{X}\to\mathfrak{Y}$, we have $f^*(\sh{K})\sh{O}_\mathfrak{X}\subset\sh{T}$.
+  \item[\rm{(ii)}] There is a canonical bijective correspondence between $\Hom(\mathfrak{X},\mathfrak{Y})$ and the set of sequences $(f_n)$ of morphisms making the diagrams \sref{1.10.6.7.1} commute, where $X_n=(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{T}^{n+1})$ and $Y_n=(\mathfrak{Y},\sh{O}_\mathfrak{Y}/\sh{K}^{n+1})$.
 \end{enumerate}
 \end{corollary}
 
@@ -747,17 +747,17 @@ By taking tensor products, for every coherent $\sh{O}_X$-module $\sh{F}$, the ca
 \begin{proposition}[10.8.8]
 \label{1.10.8.8}
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item The functor $\sh{F}_{/X'}$ (in $\sh{F}$) is exact.
-  \item The functorial homomorphism $\gamma^\sharp:i^*(\sh{F})\to\sh{F}_{/X'}$ of $(\sh{O}_X)_{/X'}$-modules is an isomorphism.
+\begin{enumerate}
+  \item[\rm{(i)}] The functor $\sh{F}_{/X'}$ (in $\sh{F}$) is exact.
+  \item[\rm{(ii)}] The functorial homomorphism $\gamma^\sharp:i^*(\sh{F})\to\sh{F}_{/X'}$ of $(\sh{O}_X)_{/X'}$-modules is an isomorphism.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.10.8.8}
 \medskip\noindent
-\begin{enumerate}[label=(\roman*)]
-  \item It suffices to prove that, if $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of coherent $\sh{O}_X$-modules, and if $U$ is an affine open subset of $X$ with Noetherian ring $A$, then the sequence
+\begin{enumerate}
+  \item[\rm{(i)}] It suffices to prove that, if $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of coherent $\sh{O}_X$-modules, and if $U$ is an affine open subset of $X$ with Noetherian ring $A$, then the sequence
 \[
   0\to\Gamma(U\cap X',\sh{F}_{/X'}')\to\Gamma(U\cap X',\sh{F}_{/X'})\to\Gamma(U\cap X',\sh{F}_{/X'}'')\to 0
 \]
@@ -777,7 +777,7 @@ the separated completion of $M$ with respect to the $\mathfrak{J}$-preadic topol
 \]
 our claim then follows, since $A$ is Noetherian, and since the functor $\widehat{M}$ in $M$ is exact on the category of $A$-modules of finite type \sref[0]{0.7.3.3}.
 \oldpage[I]{197}
-  \item The question is local, so we can assume that we have an exact sequence $\sh{O}_X^m\to\sh{O}_X^n\to\sh{F}\to 0$ \sref[0]{0.5.3.2}; since $\gamma^\sharp$ is functorial, and the functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ are right exact (by (i) and \sref[0]{0.4.3.1}), we have the commutative diagram
+  \item[\rm{(ii)}] The question is local, so we can assume that we have an exact sequence $\sh{O}_X^m\to\sh{O}_X^n\to\sh{F}\to 0$ \sref[0]{0.5.3.2}; since $\gamma^\sharp$ is functorial, and the functors $i^*(\sh{F})$ and $\sh{F}_{/X'}$ are right exact (by (i) and \sref[0]{0.4.3.1}), we have the commutative diagram
 \[
 \label{1.10.8.8.1}
   \xymatrix{
@@ -1023,9 +1023,9 @@ When $A$ is a \emph{discrete} ring, we have $M^\Delta=\widetilde{M}$.
 \begin{proposition}[10.10.2]
 \label{1.10.10.2}
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item $M^\Delta$ is an exact functor in $M$, and there exists a canonical functorial isomorphism of $A$-modules $\Gamma(\mathfrak{X},M^\Delta)\isoto M$.
-  \item If $M$ and $N$ are $A$-modules of finite type, then there exist canonical functorial isomorphisms
+\begin{enumerate}
+  \item[\rm{(i)}] $M^\Delta$ is an exact functor in $M$, and there exists a canonical functorial isomorphism of $A$-modules $\Gamma(\mathfrak{X},M^\Delta)\isoto M$.
+  \item[\rm{(ii)}] If $M$ and $N$ are $A$-modules of finite type, then there exist canonical functorial isomorphisms
     \[
     \label{1.10.10.2.1}
       (M\otimes_A N)^\Delta\isoto M^\Delta\otimes_{\sh{O}_\mathfrak{X}}N^\Delta,
@@ -1036,7 +1036,7 @@ When $A$ is a \emph{discrete} ring, we have $M^\Delta=\widetilde{M}$.
       (\Hom_A(M,N))^\Delta\isoto\shHom_{\sh{O}_\mathfrak{X}}(M^\Delta,N^\Delta).
       \tag{10.10.2.2}
     \]
-  \item The map $u\mapsto u^\Delta$ is a functorial isomorphism
+  \item[\rm{(iii)}] The map $u\mapsto u^\Delta$ is a functorial isomorphism
     \[
     \label{1.10.10.2.3}
       \Hom_A(M,N)\isoto\Hom_{\sh{O}_X}(M^\Delta,N^\Delta).
@@ -1080,10 +1080,10 @@ Let $u_{mn}$ be the morphism of preschemes $X_m\to X_n$ corresponding to the can
 \label{1.10.10.5}
 Under the hypothesis of \sref{1.10.10.1}, let $\sh{F}$ be an $\sh{O}_\mathfrak{X}$-module.
 The following conditions are equivalent:
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item $\sh{F}$ is a coherent $\sh{O}_\mathfrak{X}$-module;
-  \item $\sh{F}$ is isomorphic to the projective limit \sref{1.10.6.6} of a sequence $(\sh{F}_n)$ of coherent $\sh{O}_{X_n}$-modules such that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$; and
-  \item there exists an $A$-module $M$ of finite type (determined up to canonical isomorphism by Proposition \sref{1.10.10.2}[i]) such that $\sh{F}$ is isomorphic to $M^\Delta$.
+\begin{enumerate}
+  \item[\rm{(a)}] $\sh{F}$ is a coherent $\sh{O}_\mathfrak{X}$-module;
+  \item[\rm{(b)}] $\sh{F}$ is isomorphic to the projective limit \sref{1.10.6.6} of a sequence $(\sh{F}_n)$ of coherent $\sh{O}_{X_n}$-modules such that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$; and
+  \item[\rm{(c)}] there exists an $A$-module $M$ of finite type (determined up to canonical isomorphism by Proposition \sref{1.10.10.2}[i]) such that $\sh{F}$ is isomorphic to $M^\Delta$.
 \end{enumerate}
 \end{proposition}
 
@@ -1354,9 +1354,9 @@ where the projective limit is relative to the maps $u_n\to(u_n)_{(S_m)}$ for $m\
 \label{1.10.13.1}
 Let $\mathfrak{Y}$ be a locally Noetherian formal prescheme, $\sh{K}$ an ideal of definition of $\mathfrak{Y}$, and $f:\mathfrak{X}\to\mathfrak{Y}$ a morphism of formal preschemes.
 Then the following conditions are equivalent.
-\begin{enumerate}[label=\emph{(\alph*)}]
-  \item $X$ is locally Noetherian, $f$ is an adic morphism \sref{1.10.12.1}, and, if we set $\sh{J}=f^*(\sh{K})\sh{O}_\mathfrak{X}$, then the morphism $f_0:(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{J})\to(\mathfrak{Y},\sh{O}_\mathfrak{Y}/\sh{K})$ induced by $f$ is of finite type.
-  \item $\mathfrak{X}$ is locally Noetherian, and is the inductive limit of an adic inductive $(Y_n)$-system $(X_n)$ such that the morphism $X_0\to Y_0$ is of finite type.
+\begin{enumerate}
+  \item[\rm{(a)}] $X$ is locally Noetherian, $f$ is an adic morphism \sref{1.10.12.1}, and, if we set $\sh{J}=f^*(\sh{K})\sh{O}_\mathfrak{X}$, then the morphism $f_0:(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{J})\to(\mathfrak{Y},\sh{O}_\mathfrak{Y}/\sh{K})$ induced by $f$ is of finite type.
+  \item[\rm{(b)}] $\mathfrak{X}$ is locally Noetherian, and is the inductive limit of an adic inductive $(Y_n)$-system $(X_n)$ such that the morphism $X_0\to Y_0$ is of finite type.
 \oldpage[I]{208}
   \item Every point of $\mathfrak{Y}$ has a Noetherian formal affine open neighbourhood $V$ which satisfies the following property:
 \begin{enumerate}
@@ -1411,12 +1411,12 @@ We are then done, by \sref[0]{0.7.5.5}.
 
 \begin{proposition}[10.13.5]
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\roman*)}]
-    \item The composition of any two morphisms (of formal preschemes) of finite type is again of finite type.
+\begin{enumerate}
+    \item[\rm{(i)}] The composition of any two morphisms (of formal preschemes) of finite type is again of finite type.
 \oldpage[I]{209}
-    \item Let $\mathfrak{X}$, $\mathfrak{S}$, and $\mathfrak{S}'$ be locally Noetherian (resp. Noetherian) formal preschemes, and $f:\mathfrak{X}\to\mathfrak{S}$ and $\mathfrak{X}\to\mathfrak{S}'$ morphisms.
+    \item[\rm{(ii)}] Let $\mathfrak{X}$, $\mathfrak{S}$, and $\mathfrak{S}'$ be locally Noetherian (resp. Noetherian) formal preschemes, and $f:\mathfrak{X}\to\mathfrak{S}$ and $\mathfrak{X}\to\mathfrak{S}'$ morphisms.
         If $f$ is of finite type, then $\mathfrak{X}\times_\mathfrak{S}\mathfrak{S}'$ is locally Noetherian (resp. Noetherian) and of finite type over $\mathfrak{S}'$.
-    \item Let $\mathfrak{S}$ be a locally Noetherian formal prescheme, and $\mathfrak{X}'$ and $\mathfrak{Y}'$ formal $\mathfrak{S}$-preschemes such that $\mathfrak{X}'\times_\mathfrak{S}\mathfrak{Y}'$ is locally Noetherian.
+    \item[\rm{(iii)}] Let $\mathfrak{S}$ be a locally Noetherian formal prescheme, and $\mathfrak{X}'$ and $\mathfrak{Y}'$ formal $\mathfrak{S}$-preschemes such that $\mathfrak{X}'\times_\mathfrak{S}\mathfrak{Y}'$ is locally Noetherian.
     If $\mathfrak{X}$ and $\mathfrak{Y}$ are locally Noetherian formal $\mathfrak{S}$-preschemes, and $f:\mathfrak{X}\to\mathfrak{X}'$ and $g:\mathfrak{Y}\to\mathfrak{Y}'$ are $\mathfrak{S}$-morphisms of finite type, then $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}$ is locally Noetherian, and $f\times_\mathfrak{S}g$ is a $\mathfrak{S}$-morphism of finite type.
 \end{enumerate}
 \end{proposition}
@@ -1510,12 +1510,12 @@ The sheaf of ideals $\sh{A}$ being thus defined, it is then clear that $f=g\circ
 \begin{proposition}[10.14.5]
 \label{1.10.14.5}
 \medskip\noindent
-\begin{enumerate}[label=\emph{(\roman*)}]
-  \item If $f:\mathfrak{Z}\to\mathfrak{Y}$ and $g:\mathfrak{Y}\to\mathfrak{X}$ are closed immersions of locally Noetherian formal preschemes, then $g\circ f$ is a closed immersion.
+\begin{enumerate}
+  \item[\rm{(i)}] If $f:\mathfrak{Z}\to\mathfrak{Y}$ and $g:\mathfrak{Y}\to\mathfrak{X}$ are closed immersions of locally Noetherian formal preschemes, then $g\circ f$ is a closed immersion.
 \oldpage[I]{211}
-  \item Let $\mathfrak{X}$, $\mathfrak{Y}$, and $\mathfrak{S}$ be locally Noetherian formal preschemes, $f:\mathfrak{X}\to\mathfrak{S}$ a closed immersion, and $g:\mathfrak{Y}\to\mathfrak{S}$ a morphism.
+  \item[\rm{(ii)}] Let $\mathfrak{X}$, $\mathfrak{Y}$, and $\mathfrak{S}$ be locally Noetherian formal preschemes, $f:\mathfrak{X}\to\mathfrak{S}$ a closed immersion, and $g:\mathfrak{Y}\to\mathfrak{S}$ a morphism.
     Then the morphism $\mathfrak{X}\times_\mathfrak{S}\mathfrak{Y}\to\mathfrak{Y}$ is a closed immersion.
-  \item Let $\mathfrak{S}$ be a locally Noetherian formal prescheme, and $\mathfrak{X}'$ and $\mathfrak{Y}'$ locally Noetherian formal $\mathfrak{S}$-preschemes such that $\mathfrak{X}'\times_\mathfrak{S}\mathfrak{Y}'$ is locally Noetherian.
+  \item[\rm{(iii)}] Let $\mathfrak{S}$ be a locally Noetherian formal prescheme, and $\mathfrak{X}'$ and $\mathfrak{Y}'$ locally Noetherian formal $\mathfrak{S}$-preschemes such that $\mathfrak{X}'\times_\mathfrak{S}\mathfrak{Y}'$ is locally Noetherian.
     If $\mathfrak{X}$ and $\mathfrak{Y}$ are locally Noetherian $\mathfrak{S}$-preschemes, and $f:\mathfrak{X}\to\mathfrak{X}'$ and $g:\mathfrak{Y}\to\mathfrak{Y}'$ are $\mathfrak{S}$-morphisms that are closed immersions, then $f\times_\mathfrak{S}g$ is a closed immersion.
 \end{enumerate}
 \end{proposition}
@@ -1603,11 +1603,11 @@ whence the conclusion.
 \begin{proposition}[10.15.3]
 \label{1.10.15.3}
 Suppose that all the formal preschemes (resp. morphisms of formal preschemes) in what follows are inductive limits of sequences of usual preschemes (resp. of morphisms of usual preschemes).
-\begin{enumerate}[label=\emph{(\roman*)}]
-    \item The composition of any two separated morphisms is separated.
-    \item If $f:\mathfrak{X}\to\mathfrak{X}'$ and $g:\mathfrak{Y}\to\mathfrak{Y}'$ are separated $\mathfrak{S}$-morphisms, then $f\times_\mathfrak{S}g$ is separated.
-    \item If $f:\mathfrak{X}\to\mathfrak{Y}$ is a separated $\mathfrak{S}$-morphism, then the $\mathfrak{S}'$-morphism $f_{(\mathfrak{S}')}$ is separated for every extension $\mathfrak{S}'\to\mathfrak{S}$ of the base formal prescheme.
-    \item If the composition $g\circ f$ of two morphisms is separated, then $f$ is separated.
+\begin{enumerate}
+    \item[\rm{(i)}] The composition of any two separated morphisms is separated.
+    \item[\rm{(ii)}] If $f:\mathfrak{X}\to\mathfrak{X}'$ and $g:\mathfrak{Y}\to\mathfrak{Y}'$ are separated $\mathfrak{S}$-morphisms, then $f\times_\mathfrak{S}g$ is separated.
+    \item[\rm{(iii)}] If $f:\mathfrak{X}\to\mathfrak{Y}$ is a separated $\mathfrak{S}$-morphism, then the $\mathfrak{S}'$-morphism $f_{(\mathfrak{S}')}$ is separated for every extension $\mathfrak{S}'\to\mathfrak{S}$ of the base formal prescheme.
+    \item[\rm{(iv)}] If the composition $g\circ f$ of two morphisms is separated, then $f$ is separated.
 \end{enumerate}
 \emph{(In the above, it is implicit that if the same formal prescheme $\mathfrak{Z}$ is mentioned more than once in the same proposition, we consider it as the inductive limit of the \emph{same} sequence $(Z_n)$ of usual preschemes wherever it is mentioned, and the morphisms from $\mathfrak{Z}$ to another formal prescheme (resp. from a formal prescheme to $\mathfrak{Z}$) as inductive limits of morphisms from $Z_n$ to some usual preschemes (resp. from some usual preschemes to $Z_n$)).}
 \end{proposition}
