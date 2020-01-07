@@ -1270,7 +1270,7 @@ we then also say that $\mathfrak{X}$ is an \emph{adic $\mathfrak{S}$-prescheme} 
 Whenever this is the case, for \emph{every} ideal of definition $\sh{J}_1$ of $\mathfrak{S}$, $\sh{K}_1=f^*(\sh{J}_1)\OO_\mathfrak{X}$ is an ideal of definition of $\mathfrak{X}$.
 Indeed, the question being local, we can assume that $\mathfrak{X}$ and $\mathfrak{S}$ are Noetherian and affine;
 there then exists a whole number $n$ such that $\sh{J}^n\subset\sh{J}_1$ and $\sh{J}_1^n\subset\sh{J}$ (\sref{1.10.3.6} and \sref[0]{0.7.1.4}), whence $\sh{K}^n\subset\sh{K}_1$ and $\sh{K}_1^n\subset\sh{K}$.
-The first of these equalities shows that $\sh{K}_1=\mathfrak{K}_1^\Delta$, where $\mathfrak{K}_1$ is an open ideal of $A=\Gamma(\mathfrak{X},\OO_\mathfrak{X})$, and the second shows that $\mathfrak{K}_1$ is an ideal of definition of $A$ \sref[0]{0.7.1.4}, whence our claim.
+The first of these relations shows that $\sh{K}_1=\mathfrak{K}_1^\Delta$, where $\mathfrak{K}_1$ is an open ideal of $A=\Gamma(\mathfrak{X},\OO_\mathfrak{X})$, and the second shows that $\mathfrak{K}_1$ is an ideal of definition of $A$ \sref[0]{0.7.1.4}, whence our claim.
 \end{env}
 
 It follows immediately from the above that, if $\mathfrak{X}$ and $\mathfrak{Y}$ are adic $\mathfrak{S}$-preschemes, then \emph{every $\mathfrak{S}$-morphism $u:\mathfrak{X}\to\mathfrak{Y}$ is adic}:
@@ -1304,7 +1304,7 @@ There is a canonical equivalence between the category of adic $\mathfrak{S}$-pre
 The equivalence in question is obtained in the following way:
 if $\mathfrak{X}$ is an adic $\mathfrak{S}$-prescheme, and $f:\mathfrak{X}\to\mathfrak{S}$ is the structure morphism, then $\sh{K}=f^*(\sh{J})\OO_\mathfrak{X}$ is an ideal of definition of $\mathfrak{X}$, and we associate to $\mathfrak{X}$ the inductive system of the $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{K}^{n+1})$, with the structure morphism $f_n:X_n\to S_n$ corresponding to $f$ \sref{1.10.5.6}.
 We first show that $(X_n)$ is an \emph{adic inductive system}:
-if $f=(\psi,\theta)$, we have $\psi^*(\sh{J})\OO_\mathfrak{X}=\sh{K}$, so $\psi^*(\sh{J}^n)\OO_\mathfrak{X}=\sh{K}^n$ for all $n$, and (by exactness of the functor $\psi^*$) $\sh{K}^{m+1}/\sh{K}^{n+1}=\psi^*(\sh{J}^{m+1}/\sh{J}^{n+1})(\OO_\mathfrak{X}/\sh{K}^{n+1})$ for $m\leq n$;
+if $f=(\psi,\theta)$, then $\psi^*(\sh{J})\OO_\mathfrak{X}=\sh{K}$, so $\psi^*(\sh{J}^n)\OO_\mathfrak{X}=\sh{K}^n$ for all $n$, and (by exactness of the functor $\psi^*$) $\sh{K}^{m+1}/\sh{K}^{n+1}=\psi^*(\sh{J}^{m+1}/\sh{J}^{n+1})(\OO_\mathfrak{X}/\sh{K}^{n+1})$ for $m\leq n$;
 our conclusion thus follows from \sref{1.4.4.5}.
 Furthermore, it can be immediately verified that a $\mathfrak{S}$-morphism $u:\mathfrak{X}\to\mathfrak{Y}$ of adic $\mathfrak{S}$-preschemes corresponds (with the obvious notation)
 \oldpage[I]{207}
@@ -1323,18 +1323,18 @@ Then, if $X_0$ is locally Noetherian, $\mathfrak{X}$ is locally Noetherian, and 
 
 \begin{proof}
 \label{proof-1.10.12.3.1}
-Since the sheaf of ideals of $\OO_{S_n}$ that defines the subprescheme $S_m$ of $S_n$ is nilpotent, by \sref{1.4.4.5} so is the sheaf of ideals of $\OO_{X_n}$ that defines the subprescheme $X_m$ of $X_n$, so the conditions of \sref{1.10.6.3} are satisfied.
+Since the sheaf of ideals of $\OO_{S_n}$ that defines the subprescheme $S_m$ of $S_n$ is nilpotent, by \sref{1.4.4.5}, so too is the sheaf of ideals of $\OO_{X_n}$ that defines the subprescheme $X_m$ of $X_n$, and so the conditions of \sref{1.10.6.3} are satisfied.
 The question being local on $\mathfrak{X}$ and $\mathfrak{S}$, we can assume that $\mathfrak{S}=\Spf(A)$, $\sh{J}=\mathfrak{J}^\Delta$ (with $A$ a Noetherian $\mathfrak{J}$-adic ring), and $X_n=\Spec(B_n)$;
 if $A_n=A/\mathfrak{J}^{n+1}$, then the hypothesis implies that $B_0$ is Noetherian, and if we set $\mathfrak{J}_n=\mathfrak{J}/\mathfrak{J}^{n+1}$, then $B_m=B_n/\mathfrak{J}_n^{m+1}B_n$.
 The kernel of $B_n\to B_0$ is thus $\mathfrak{K}_n=\mathfrak{J}_nB_n$, and the kernel of $B_n\to B_m$ is $\mathfrak{K}_n^{m+1}$ for $m\leq n$;
 further, since $A_1$ is Noetherian, $\mathfrak{J}_1$ is of finite type over $A_1$, and so $\mathfrak{K}_1=\mathfrak{K}_1/\mathfrak{K}_1^2$ is of finite type over $B_1$, and \emph{a fortiori} of finite type over $B_0=B_1/\mathfrak{K}_1$;
 the fact that $\mathfrak{X}$ is Noetherian then follows from \sref{1.10.6.4};
-if $B=\varprojlim B_n$, then we have $\mathfrak{X}=\Spf(B)$, and if $\mathfrak{K}$ is the kernel of $B\to B_0$, then $B_n=B/\mathfrak{K}^{n+1}$.
+if $B=\varprojlim B_n$, then we have $\mathfrak{X}=\Spf(B)$, and, if $\mathfrak{K}$ is the kernel of $B\to B_0$, then $B_n=B/\mathfrak{K}^{n+1}$.
 If $\rho_n:A/\mathfrak{J}^{n+1}\to B/\mathfrak{K}^{n+1}$ is the homomorphism corresponding to $f_n$, then we have that
 \[
     \mathfrak{K}/\mathfrak{K}^{n+1} = (B/\mathfrak{K}^{n+1})\rho_n(\mathfrak{J}/\mathfrak{J}^{n+1})
 \]
-since the homomorphism $\rho:A\to B$ corresponding to $f$ is equal to $\varprojlim\rho_n$, and that the ideal $\mathfrak{J}B$ of $B$ is dense in $\mathfrak{K}$, and since every ideal of $B$ is closed \sref[0]{0.7.3.5}, we also have that $\mathfrak{K}=\mathfrak{J}B$.
+since the homomorphism $\rho:A\to B$ corresponding to $f$ is equal to $\varprojlim\rho_n$, and that the ideal $\mathfrak{J}B$ of $B$ is dense in $\mathfrak{K}$, and, since every ideal of $B$ is closed \sref[0]{0.7.3.5}, we also have that $\mathfrak{K}=\mathfrak{J}B$.
 If $\sh{K}=\mathfrak{K}^\Delta$, the equality $f^*(\sh{J})\OO_\mathfrak{X}=\sh{K}$ then follows from \sref{1.10.10.9}, and finishes the proof.
 \end{proof}
 
