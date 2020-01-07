@@ -21,18 +21,18 @@ $M'\otimes_A N'\to M\otimes_A N$.
 \begin{env}[6.1.1]
 \label{0.6.1.1}
 Let $M$ be an $A$-module. The following conditions are equivalent:
-\begin{enumerate}[label=(\alph*)]
-  \item The functor $M\otimes_A N$ is exact in $N$ on the category of $A$-modules;
-  \item $\Tor_i^A(M,N)=0$ for each $i>0$ and for each $A$-module $N$;
-  \item $\Tor_1^A(M,N)=0$ for each $A$-module $N$.
+\begin{enumerate}
+  \item[(a)] The functor $M\otimes_A N$ is exact in $N$ on the category of $A$-modules;
+  \item[(b)] $\Tor_i^A(M,N)=0$ for each $i>0$ and for each $A$-module $N$;
+  \item[(c)] $\Tor_1^A(M,N)=0$ for each $A$-module $N$.
 \end{enumerate}
 
 When $M$ satisfies these conditions, we say that $M$ is a
 \emph{flat $A$-module}. It is clear that each free $A$-module is flat.
 
-For $M$ to be a flat $A$-module, it suffices that for each ideal $\fk{J}$
+For $M$ to be a flat $A$-module, it suffices that for each ideal $\mathfrak{J}$
 of $A$, \emph{of finite type}, the canonical map
-$M\otimes_A\fk{J}\to M\otimes_A A=M$ is \emph{injective}.
+$M\otimes_A\mathfrak{J}\to M\otimes_A A=M$ is \emph{injective}.
 \end{env}
 
 \begin{env}[6.1.2]
@@ -67,7 +67,7 @@ Let $M$ be a flat $A$-module, $N$ any $A$-module; for two submodules $N'$ $N''$ 
 \label{0.6.1.4}
 Let $M$ and $N$ be two $A$-modules, $M'$ (resp. $N'$) a submodule of $M$ (resp. $N$), and suppose that one of the modules $M/M'$, $N/N'$ is flat.
 Then we have $\Im(M'\otimes_A N')=\Im(M'\otimes_A N)\cap(M\otimes_A N')$ (images in $M\otimes_A N$).
-In particular, if $\fk{J}$ is an ideal of $A$ and if $M/M'$ is flat, then we have $\fk{J}M'=M'\cap\fk{J}M$.
+In particular, if $\mathfrak{J}$ is an ideal of $A$ and if $M/M'$ is flat, then we have $\mathfrak{J}M'=M'\cap\mathfrak{J}M$.
 \end{env}
 
 \subsection{Change of ring}
@@ -110,17 +110,17 @@ $\theta_{\mu\lambda}:M_\lambda\to M_\mu$ be a $\vphi_{\mu\lambda}$-homomorphism,
 such that $(M_\lambda,\theta_{\mu\lambda})$ is an inductive system;
 $M=\varinjlim M_\lambda$ is then an $A$-module. This being so, if for each
 $\lambda$, $M_\lambda$ is a \emph{flat} $A_\lambda$-module, then $M$ is a
-\emph{flat} $A$-module. Indeed, let $\fk{J}$ be an ideal \emph{of finite
+\emph{flat} $A$-module. Indeed, let $\mathfrak{J}$ be an ideal \emph{of finite
 type} of $A$; by definition of the inductive limit, there exists an index
-$\lambda$ and an ideal $\fk{J}_\lambda$ of $A_\lambda$ such that
-$\fk{J}=\fk{J}_\lambda A$. If we put
-$\fk{J}_\mu'=\fk{J}_\lambda A_\mu$ for $\mu\geq\lambda$, we
-also have $\fk{J}=\varinjlim\fk{J}_\mu'$ (where $\mu$ varies over
+$\lambda$ and an ideal $\mathfrak{J}_\lambda$ of $A_\lambda$ such that
+$\mathfrak{J}=\mathfrak{J}_\lambda A$. If we put
+$\mathfrak{J}_\mu'=\mathfrak{J}_\lambda A_\mu$ for $\mu\geq\lambda$, we
+also have $\mathfrak{J}=\varinjlim\mathfrak{J}_\mu'$ (where $\mu$ varies over
 the indices $\geq\lambda$), hence (the functor $\varinjlim$ being exact and
 commuting with tensor products)
 \[
-  M\otimes_A\fk{J}=\varinjlim(M_\mu\otimes_{A_\mu}\fk{J}_\mu')
-  =\varinjlim\fk{J}_\mu' M_\mu=\fk{J}M.
+  M\otimes_A\mathfrak{J}=\varinjlim(M_\mu\otimes_{A_\mu}\mathfrak{J}_\mu')
+  =\varinjlim\mathfrak{J}_\mu' M_\mu=\mathfrak{J}M.
 \]
 \end{env}
 
@@ -145,9 +145,9 @@ $A$-flat, it is necessary and sufficient that it is $S^{-1}A$-flat.
 Let $A$ be a ring, $B$ an $A$-algebra, and $T$ a multiplicative subset of $B$.
 If $P$ is a $B$-module which is \emph{$A$-flat}, $T^{-1}P$ is \emph{$A$-flat}.
 Indeed, for each $A$-module $N$, we have
-$(T^{-1}P)\otimes_A N=(T^{-1}B\otimes_B P)\otimes_A N
-  =T^{-1}B\otimes_B(P\otimes_A N)
-  =T^{-1}(P\otimes_A N)$; $T^{-1}(P\otimes_A N)$ is an exact functor in $N$,
+$(T^{-1}P)\otimes_A N=(T^{-1}B\otimes_B P)\otimes_A N$
+$=T^{-1}B\otimes_B(P\otimes_A N)$
+$=T^{-1}(P\otimes_A N)$; $T^{-1}(P\otimes_A N)$ is an exact functor in $N$,
 being the composition of the two exact functors $P\otimes_A N$ (in $N$) and
 $T^{-1}Q$ (in $Q$). If $S$ is a multiplicative subset of $A$ such that its image
 in $B$ is \emph{contained in $T$}, then $T^{-1}P$ is equal to $S^{-1}(T^{-1}P)$,
@@ -158,34 +158,34 @@ so it is also $S^{-1}A$-flat according to \sref{0.6.3.1}.
 \label{0.6.3.3}
 Let $\vphi:A\to B$ be a ring homomorphism, $M$ a $B$-module. The following
 properties are equivalent:
-\begin{enumerate}[label=(\alph*)]
-  \item $M$ is a flat $A$-module.
-  \item For each maximal ideal $\fk{n}$ of $B$, $M_\fk{n}$ is a flat $A$-module.
-  \item For each maximal ideal $\fk{n}$ of $B$, by setting
-    $\fk{m}=\vphi^{-1}(\fk{n})$, $M_\fk{n}$ is a flat $A_\fk{m}$-module.
+\begin{enumerate}
+  \item[(a)] $M$ is a flat $A$-module.
+  \item[(b)] For each maximal ideal $\mathfrak{n}$ of $B$, $M_\mathfrak{n}$ is a flat $A$-module.
+  \item[(c)] For each maximal ideal $\mathfrak{n}$ of $B$, by setting
+    $\mathfrak{m}=\vphi^{-1}(\mathfrak{n})$, $M_\mathfrak{n}$ is a flat $A_\mathfrak{m}$-module.
 \end{enumerate}
 
-Indeed, as $M_\fk{n}=(M_\fk{n})_\fk{m}$, the equivalence of
+Indeed, as $M_\mathfrak{n}=(M_\mathfrak{n})_\mathfrak{m}$, the equivalence of
 (b) and (c) follows from \sref{0.6.3.1}, and the fact that (a) implies (b) is
 a particular case of \sref{0.6.3.2}. It remains to see that (b) implies (a),
 \oldpage[0\textsubscript{I}]{57}
 that is to say, that for each injective homomorhism $u:N'\to N$ of $A$-modules, the
 homomorphism $v=1\otimes u:M\otimes_A N'\to M\otimes_A N$ is injective. We have that $v$ is
 also a homomorphism of $B$-modules, and we know that for it to be injective, it suffices that
-for each maximal ideal $\fk{n}$ of $B$,
-$v_\fk{n}:(M\otimes_A N')_\fk{n}\to(M\otimes_A N)_\fk{n}$ is injective. But
+for each maximal ideal $\mathfrak{n}$ of $B$,
+$v_\mathfrak{n}:(M\otimes_A N')_\mathfrak{n}\to(M\otimes_A N)_\mathfrak{n}$ is injective. But
 as
 \[
-  (M\otimes_A N)_\fk{n}=B_\fk{n}\otimes_B(M\otimes_A N)
-  =M_\fk{n}\otimes_A N,
+  (M\otimes_A N)_\mathfrak{n}=B_\mathfrak{n}\otimes_B(M\otimes_A N)
+  =M_\mathfrak{n}\otimes_A N,
 \]
-$v_\fk{n}$ is none other that the homomorphism
-$1\otimes u:M_\fk{n}\otimes_A N'\to M_\fk{n}\otimes_A N$, which is injective
-since $M_\fk{n}$ is $A$-flat.
+$v_\mathfrak{n}$ is none other that the homomorphism
+$1\otimes u:M_\mathfrak{n}\otimes_A N'\to M_\mathfrak{n}\otimes_A N$, which is injective
+since $M_\mathfrak{n}$ is $A$-flat.
 
 In particular (by taking $B=A$), for an $A$-module $M$ to be flat, it is necessary and
-sufficient that $M_\fk{m}$ is $A_\fk{m}$-flat for each maximal ideal
-$\fk{m}$ of $A$.
+sufficient that $M_\mathfrak{m}$ is $A_\mathfrak{m}$-flat for each maximal ideal
+$\mathfrak{m}$ of $A$.
 \end{env}
 
 \begin{env}[6.3.4]
@@ -197,9 +197,9 @@ $M$ is identified with $M\otimes_A A$; if $u$ is injective, it is the same for $
 since $M$ is flat. In particular, if $A$ is \emph{integral}, $M$ is \emph{torsion-free}.
 
 Conversely, suppose that $A$ is integral, $M$ is torsion-free, and suppose that for each
-maximal ideal $\fk{m}$ of $A$, $A_\fk{m}$ is a \emph{discrete valuation ring};
+maximal ideal $\mathfrak{m}$ of $A$, $A_\mathfrak{m}$ is a \emph{discrete valuation ring};
 then $M$ is \emph{$A$-flat}. Indeed, it suffices \sref{0.6.3.3} to prove that
-$M_\fk{m}$ is $A_\fk{m}$-flat, and we can therefore suppose that $A$ is already
+$M_\mathfrak{m}$ is $A_\mathfrak{m}$-flat, and we can therefore suppose that $A$ is already
 a discrete valuation ring. But as $M$ is the inductive limit of its submodules of finite
 type, and these latter submodules are torsion-free, we can in addition reduce to the case
 where $M$ is of finite type \sref{0.6.1.2}. The proposition follows in this
@@ -208,7 +208,7 @@ case from that $M$ is a free $A$-module.
 In particular, if $A$ is an \emph{integral} ring, $\vphi:A\to B$ a ring homomorphism making
 $B$ a \emph{flat} $A$-module and $\neq\{0\}$, $\vphi$ is necessarily \emph{injective}.
 Conversely, if $B$ is integral, $A$ a subring of $B$, and if for each maximal ideal
-$\fk{m}$ of $A$, $A_\fk{m}$ is a discrete valuation ring, then $B$ is
+$\mathfrak{m}$ of $A$, $A_\mathfrak{m}$ is a discrete valuation ring, then $B$ is
 \emph{$A$-flat}.
 \end{env}
 
@@ -218,22 +218,22 @@ $\fk{m}$ of $A$, $A_\fk{m}$ is a discrete valuation ring, then $B$ is
 \begin{env}[6.4.1]
 \label{0.6.4.1}
 For an $A$-module $M$, the following four properties are equivalent:
-\begin{enumerate}[label=(\alph*)]
-  \item For a sequence $N'\to N\to N''$ of $A$-modules to be exact, it is necessary and
+\begin{enumerate}
+  \item[(a)] For a sequence $N'\to N\to N''$ of $A$-modules to be exact, it is necessary and
     sufficient that the sequence $M\otimes_A N'\to M\otimes_A N\to M\otimes_A N''$ is exact;
-  \item $M$ is flat for each $A$-module $N$, the relation $M\otimes_A N=0$ implies $N=0$;
-  \item $M$ is flat for each homomorphism $v:N\to N'$ of $A$-modules, the relation
+  \item[(b)] $M$ is flat for each $A$-module $N$, the relation $M\otimes_A N=0$ implies $N=0$;
+  \item[(c)] $M$ is flat for each homomorphism $v:N\to N'$ of $A$-modules, the relation
     $1_M\otimes v=0$, $1_M$ being the identity automorphism of $M$;
-  \item $M$ is flat for each maximal ideal $\fk{m}$ of $A$, $\fk{m}M\neq M$.
+  \item[(d)] $M$ is flat for each maximal ideal $\mathfrak{m}$ of $A$, $\mathfrak{m}M\neq M$.
 \end{enumerate}
 
 When $M$ satisfies these conditions, we say that $M$ is a \emph{faithfully flat} $A$-module; $M$ is then necessarily a \emph{faithful} module.
 In addition, if $u:N\to N'$ is a homomorphism of $A$-modules, then for $u$ to be injective (resp. surjective, bijective), it is necessary and sufficient that $1\otimes u:M\otimes_A N\to M\otimes_A N'$ is so.
 \end{env}
 
+\oldpage[0\textsubscript{I}]{58}
 \begin{env}[6.4.2]
 \label{0.6.4.2}
-\oldpage[0\textsubscript{I}]{58}
 A free module $\neq\{0\}$ is faithfully flat; it is the same for the direct sum of a flat
 module and a faithfully flat module. If $S$ is a multiplicative subset of $A$, then
 $S^{-1}A$ is a faithfully flat $A$-module if $S$ consists of invertible elements
@@ -259,16 +259,16 @@ flat $A$-module, the $B$-module $M_{(B)}$ is faithfully flat.
 \label{0.6.4.5}
 If $M$ is a faithfully flat $A$-modules and if $S$ is a multiplicative subset of $A$,
 $S^{-1}M$ is a faithfully flat $S^{-1}A$-module, since $S^{-1}M=M\otimes_A(S^{-1}A)$
-\sref{0.6.4.4}. Conversely, if for each maximal ideal $\fk{m}$ of $A$,
-$M_\fk{m}$ is a faithfully flat $A_\fk{m}$-module, then $M$ is a faithfully flat
+\sref{0.6.4.4}. Conversely, if for each maximal ideal $\mathfrak{m}$ of $A$,
+$M_\mathfrak{m}$ is a faithfully flat $A_\mathfrak{m}$-module, then $M$ is a faithfully flat
 $A$-module, since $M$ is $A$-flat \sref{0.6.3.3}, and we have
 \[
-  M_\fk{m}/\fk{m}M_\fk{m}
-  =(M\otimes_A A_\fk{m})
-  \otimes_{A_\fk{m}}(A_\fk{m}/\fk{m}A_\fk{m})
-  =M\otimes_A(A/\fk{m})=M/\fk{m}M,
+  M_\mathfrak{m}/\mathfrak{m}M_\mathfrak{m}
+  =(M\otimes_A A_\mathfrak{m})
+  \otimes_{A_\mathfrak{m}}(A_\mathfrak{m}/\mathfrak{m}A_\mathfrak{m})
+  =M\otimes_A(A/\mathfrak{m})=M/\mathfrak{m}M,
 \]
-so the hypotheses imply that $M/\fk{m}M\neq 0$ for each maximal ideal $\fk{m}$ of
+so the hypotheses imply that $M/\mathfrak{m}M\neq 0$ for each maximal ideal $\mathfrak{m}$ of
 $A$, which proves our assertion \sref{0.6.4.1}.
 \end{env}
 
@@ -280,10 +280,10 @@ $A$, which proves our assertion \sref{0.6.4.1}.
 Let $A$ be a ring, $\vphi:A\to B$ a ring homomorphism making $B$ an $A$-algebra. Suppose that
 there exists a $B$-module $N$ which is a \emph{faithfully flat} $A$-module. Then, for each
 $A$-module $M$, the homomorphism $x\mapsto 1\otimes x$ from $M$ to $B\otimes_A M=M_{(B)}$ is
-\emph{injective}. In particular, $\vphi$ is injective; for each ideal $\fk{a}$ of $A$,
-we have $\vphi^{-1}(\fk{a}B)=\fk{a}$; for each maximal (resp. prime) ideal
-$\fk{m}$ of $A$, there exists a maximal (resp. prime) ideal $\fk{n}$ of $B$ such
-that $\vphi^{-1}(\fk{n})=\fk{m}$.
+\emph{injective}. In particular, $\vphi$ is injective; for each ideal $\mathfrak{a}$ of $A$,
+we have $\vphi^{-1}(\mathfrak{a}B)=\mathfrak{a}$; for each maximal (resp. prime) ideal
+$\mathfrak{m}$ of $A$, there exists a maximal (resp. prime) ideal $\mathfrak{n}$ of $B$ such
+that $\vphi^{-1}(\mathfrak{n})=\mathfrak{m}$.
 \end{env}
 
 \begin{env}[6.5.2]
@@ -291,7 +291,7 @@ that $\vphi^{-1}(\fk{n})=\fk{m}$.
 When the conditions of \sref{0.6.5.1} are satisfied, we identify $A$ with the subring of
 $B$ by $\vphi$ and more generally, for each $A$-module $M$, we identify $M$ with an
 $A$-submodule of $M_{(B)}$. We note that if $B$ is also \emph{Noetherian}, then so is $A$,
-since the map $\fk{a}\mapsto\fk{a}B$ is an increasing injection from the set of
+since the map $\mathfrak{a}\mapsto\mathfrak{a}B$ is an increasing injection from the set of
 ideals of $A$ to the set of ideals of $B$; the existence of an infinite strictly increasing
 sequence of ideals of $A$ thus implies the existence of an analogous sequence of ideals of
 $B$.
@@ -304,18 +304,18 @@ $B$.
 \label{0.6.6.1}
 Let $\vphi:A\to B$ be a ring homomorphism making $B$ an $A$-algebra. The following five
 properties are equivalent:
-\begin{enumerate}[label=(\alph*)]
-  \item $B$ is a faithfully flat $A$-module (in other words, $M_{(B)}$ is an \emph{exact}
+\begin{enumerate}
+  \item[(a)] $B$ is a faithfully flat $A$-module (in other words, $M_{(B)}$ is an \emph{exact}
     and \emph{faithful} functor in $M$).
-  \item The homomorphism $\vphi$ is injective and the $A$-module $B/\vphi(A)$ is flat.
+  \item[(b)] The homomorphism $\vphi$ is injective and the $A$-module $B/\vphi(A)$ is flat.
 \oldpage[0\textsubscript{I}]{59}
-  \item The $A$-module $B$ is flat (in other words, the functor $M_{(B)}$ is \emph{exact}),
+  \item[(c)] The $A$-module $B$ is flat (in other words, the functor $M_{(B)}$ is \emph{exact}),
     and for each $A$-module $M$. the homomorphism $x\mapsto 1\otimes x$ from $M$ to $M_{(B)}$ is
     injective.
-  \item The $A$-module $B$ is flat and for each ideal $\fk{a}$ of $A$, we have
-    $\vphi^{-1}(\fk{a}B)=\fk{a}$.
-  \item The $A$-module $B$ is flat and for each maximal ideal $\fk{m}$ of $A$, there
-    exists a maximal ideal $\fk{n}$ of $B$ such that $\vphi^{-1}(\fk{n})=\fk{m}$.
+  \item[(d)] The $A$-module $B$ is flat and for each ideal $\mathfrak{a}$ of $A$, we have
+    $\vphi^{-1}(\mathfrak{a}B)=\mathfrak{a}$.
+  \item[(e)] The $A$-module $B$ is flat and for each maximal ideal $\mathfrak{m}$ of $A$, there
+    exists a maximal ideal $\mathfrak{n}$ of $B$ such that $\vphi^{-1}(\mathfrak{n})=\mathfrak{m}$.
 \end{enumerate}
 
 When these conditions are satisfied, we identify $A$ with a subring of $B$.
@@ -323,12 +323,12 @@ When these conditions are satisfied, we identify $A$ with a subring of $B$.
 
 \begin{env}[6.6.2]
 \label{0.6.6.2}
-Let $A$ be a \emph{local} ring, $\fk{m}$ its maximal ideal, and $B$ an $A$-algebra such
-that $\fk{m}B\neq B$ (which is so when for example $B$ is a local ring and $A\to B$ is
+Let $A$ be a \emph{local} ring, $\mathfrak{m}$ its maximal ideal, and $B$ an $A$-algebra such
+that $\mathfrak{m}B\neq B$ (which is so when for example $B$ is a local ring and $A\to B$ is
 a \emph{local} homomorphism). If $B$ is a \emph{flat} $A$-module, $B$ is a \emph{faithfully
-flat} $A$-module. Indeed, as $\fk{m}B\neq B$, there is a maximal ideal $\fk{n}$
-of $B$ containing $\fk{m}B$; as $\vphi^{-1}(\fk{n})\cap A$ contains
-$\fk{m}$ and does not contain $1$, we have that $\vphi^{-1}(\fk{n})=\fk{m}$
+flat} $A$-module. Indeed, as $\mathfrak{m}B\neq B$, there is a maximal ideal $\mathfrak{n}$
+of $B$ containing $\mathfrak{m}B$; as $\vphi^{-1}(\mathfrak{n})\cap A$ contains
+$\mathfrak{m}$ and does not contain $1$, we have that $\vphi^{-1}(\mathfrak{n})=\mathfrak{m}$
 and the condition (e) of \sref{0.6.6.1} applies.\footnote{This proof can be
 replaced with just applying \sref{0.6.4.1}[d]} Under the indicated
 conditions, we thus see that if $B$ is Noetherian, then so is
@@ -358,13 +358,13 @@ over $B$ and over $A$, then $B$ is faithfully flat over $A$.
 
 \begin{env}[6.7.1]
 \label{0.6.7.1}
-Let $f:X\to Y$ be a morphism of ringed spaces, and let $\sh{F}$ be a $\OO_X$-module. We say
+Let $f:X\to Y$ be a morphism of ringed spaces, and let $\sh{F}$ be a $\sh{O}_X$-module. We say
 that $\sh{F}$ is \emph{$f$-flat} (or \emph{$Y$-flat} when there is no chance of confusion
-with $f$) \emph{at a point $x\in X$} if $\sh{F}_x$ is a flat $\OO_{f(x)}$-module; we say that
+with $f$) \emph{at a point $x\in X$} if $\sh{F}_x$ is a flat $\sh{O}_{f(x)}$-module; we say that
 $\sh{F}$ is \emph{$f$-flat over $y\in Y$} if $\sh{F}$ is $f$-flat for all the points
 $x\in f^{-1}(y)$; we say that $\sh{F}$ is \emph{$f$-flat} if $\sh{F}$ is $f$-flat at all the
 points of $X$. We say that the morphism $f$ is \emph{flat at $x\in X$} (resp. \emph{flat over
-$y\in Y$}, resp. \emph{flat}) if $\OO_X$ is $f$-flat at $x$ (resp. $f$-flat over $y$, resp.
+$y\in Y$}, resp. \emph{flat}) if $\sh{O}_X$ is $f$-flat at $x$ (resp. $f$-flat over $y$, resp.
 $f$-flat). If $f$ is a flat morphism, we then say that $X$ if \emph{flat over $Y$}, or
 \emph{$Y$-flat}.
 \end{env}
@@ -372,25 +372,25 @@ $f$-flat). If $f$ is a flat morphism, we then say that $X$ if \emph{flat over $Y
 \begin{env}[6.7.2]
 \label{0.6.7.2}
 With the notation of \sref{0.6.7.1}, if $\sh{F}$ is $f$-flat at $x$, for each open
-neighborhood $U$ of $y=f(x)$, the functor $(f^*(\sh{G})\otimes_{\OO_X}\sh{F})_x$ in $\sh{G}$
-is \emph{exact} on the category of $(\OO_Y|U)$-modules; indeed, this stalk canonically
-identifies with $\sh{G}_y\otimes_{\OO_y}\sh{F}_x$, and our assertion follows from the
+neighborhood $U$ of $y=f(x)$, the functor $(f^*(\sh{G})\otimes_{\sh{O}_X}\sh{F})_x$ in $\sh{G}$
+is \emph{exact} on the category of $(\sh{O}_Y|U)$-modules; indeed, this stalk canonically
+identifies with $\sh{G}_y\otimes_{\sh{O}_y}\sh{F}_x$, and our assertion follows from the
 definition. In particular, if $f$ is a \emph{flat} morphism, the functor $f^*$ is
-\emph{exact} on the category of $\OO_Y$-modules.
+\emph{exact} on the category of $\sh{O}_Y$-modules.
 \end{env}
 
 \begin{env}[6.7.3]
 \label{0.6.7.3}
-Conversely, suppose the sheaf of rings $\OO_Y$ is \emph{coherent}, and suppose that for
-\emph{each} open neighborhood $U$ of $y$, the functor $(f^*(\sh{G})\otimes_{\OO_X}\sh{F})_x$
-is exact in $\sh{G}$ on the category of \emph{coherent} $(\OO_Y|U)$-modules. Then $\sh{F}$ is
+Conversely, suppose the sheaf of rings $\sh{O}_Y$ is \emph{coherent}, and suppose that for
+\emph{each} open neighborhood $U$ of $y$, the functor $(f^*(\sh{G})\otimes_{\sh{O}_X}\sh{F})_x$
+is exact in $\sh{G}$ on the category of \emph{coherent} $(\sh{O}_Y|U)$-modules. Then $\sh{F}$ is
 \emph{$f$-flat at $x$}. In fact, it suffices to prove that for each ideal of finite type
-$\fk{J}$ of $\OO_y$, the canonical homomorphism
-$\fk{J}\otimes_{\OO_y}\sh{F}_x\to\sh{F}_x$ is injective \sref{0.6.1.1}. We know
+$\mathfrak{J}$ of $\sh{O}_y$, the canonical homomorphism
+$\mathfrak{J}\otimes_{\sh{O}_y}\sh{F}_x\to\sh{F}_x$ is injective \sref{0.6.1.1}. We know
 \sref{0.5.3.8} that there then exists an open neighborhood
 \oldpage[0\textsubscript{I}]{60}
-$U$ of $y$ and a coherent sheaf of ideals $\sh{J}$ of $\OO_Y|U$ such that
-$\sh{J}_y=\fk{J}$, hence the conclusion.
+$U$ of $y$ and a coherent sheaf of ideals $\sh{J}$ of $\sh{O}_Y|U$ such that
+$\sh{J}_y=\mathfrak{J}$, hence the conclusion.
 \end{env}
 
 \begin{env}[6.7.4]
@@ -398,23 +398,23 @@ $\sh{J}_y=\fk{J}$, hence the conclusion.
 The results of (6.1) for flat modules are immediately translated into propositions for
 sheaves with are $f$-flat at a point:
 
-If $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of $\OO_X$-modules and if
+If $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of $\sh{O}_X$-modules and if
 $\sh{F}''$ is $f$-flat at a point $x\in X$, then, for each open neighborhood $U$ of $y=f(x)$
-and each $(\OO_Y|U)$-module $\sh{G}$, the sequence
+and each $(\sh{O}_Y|U)$-module $\sh{G}$, the sequence
 \[
-  0\to(f^*(\sh{G})\otimes_{\OO_X}\sh{F}')_x
-  \to(f^*(\sh{G})\otimes_{\OO_X}\sh{F})_x
-  \to(f^*(\sh{G})\otimes_{\OO_X}\sh{F}'')_x\to 0
+  0\to(f^*(\sh{G})\otimes_{\sh{O}_X}\sh{F}')_x
+  \to(f^*(\sh{G})\otimes_{\sh{O}_X}\sh{F})_x
+  \to(f^*(\sh{G})\otimes_{\sh{O}_X}\sh{F}'')_x\to 0
 \]
 is exact. For $\sh{F}$ to be $f$-flat at $x$, it is necessary and sufficient that $\sh{F}'$
-is. We have similar statements for the corresponding notions of a $f$-flat $\OO_X$-modules
-over $y\in Y$, or of a $f$-flat $\OO_X$-module.
+is. We have similar statements for the corresponding notions of a $f$-flat $\sh{O}_X$-modules
+over $y\in Y$, or of a $f$-flat $\sh{O}_X$-module.
 \end{env}
 
 \begin{env}[6.7.5]
 \label{0.6.7.5}
 Let $f:X\to Y$, $g:Y\to Z$ be two morphisms of ringed spaces; let $x\in X$, $y=f(x)$, and
-$\sh{F}$ be an $\OO_X$-module. If $\sh{F}$ is $f$-flat at the point $x$ and if the morphism
+$\sh{F}$ be an $\sh{O}_X$-module. If $\sh{F}$ is $f$-flat at the point $x$ and if the morphism
 $g$ is flat at the point $y$, then $\sh{F}$ is $(g\circ f)$-flat at $x$ \sref{0.6.2.1}. In
 particular, if $f$ and $g$ are flat morphisms, then $g\circ f$ is flat.
 \end{env}
@@ -424,25 +424,27 @@ particular, if $f$ and $g$ are flat morphisms, then $g\circ f$ is flat.
 Let $X$, $Y$ be two ringed spaces, $f:X\to Y$ a \emph{flat} morphism. Then the canonical
 homomorphism of bifunctors \sref{0.4.4.6}
 \[
-  f^*(\shHom_{\OO_Y}(\sh{F},\sh{G}))\to\shHom_{\OO_X}(f^*(\sh{F}),f^*(\sh{G}))
+\label{eq:0.6.7.6.1}
+  f^*(\shHom_{\sh{O}_Y}(\sh{F},\sh{G}))\to\shHom_{\sh{O}_X}(f^*(\sh{F}),f^*(\sh{G}))
   \tag{6.7.6.1}
 \]
 is an \emph{isomorphism} when $\sh{F}$ admits a \emph{finite presentation} \sref{0.5.2.5}.
 
 Indeed, the question being local, we can assume that there exists an exact sequence
-$\OO_Y^m\to\OO_Y^n\to\sh{F}\to 0$. The two sides of (6.7.6.1) are right exact functors in
+$\sh{O}_Y^m\to\sh{O}_Y^n\to\sh{F}\to 0$. The two sides of (6.7.6.1) are right exact functors in
 $\sh{F}$ according to the hypotheses on $f$; we then have reduced to proving the proposition
-in the case where $\sh{F}=\OO_Y$, in which the result is trivial.
+in the case where $\sh{F}=\sh{O}_Y$, in which the result is trivial.
 \end{env}
 
 \begin{env}[6.7.8]
 \label{0.6.7.8}
 We say that a morphism $f:X\to Y$ of ringed spaces is \emph{faithfully flat} if $f$ is
-\emph{surjective} and if, for each $x\in X$, $\OO_x$ is a \emph{faithfully flat}
-$\OO_{f(x)}$-module. When $X$ and $Y$ are locally ringed spaces \sref{0.5.5.1}, it is
+\emph{surjective} and if, for each $x\in X$, $\sh{O}_x$ is a \emph{faithfully flat}
+$\sh{O}_{f(x)}$-module. When $X$ and $Y$ are locally ringed spaces \sref{0.5.5.1}, it is
 equivalent to say that the morphism $f$ is \emph{surjective} and \emph{flat}
 \sref{0.6.6.2}. When $f$ is faithfully flat, $f^*$ is an \emph{exact} and \emph{faithful}
-functor on the category of $\OO_Y$-modules \sref{0.6.6.1}[a], and for an $\OO_Y$-module
+functor on the category of $\sh{O}_Y$-modules \sref{0.6.6.1}[a], and for an $\sh{O}_Y$-module
 $\sh{G}$ to be $Y$-flat, it is necessary and sufficient that $f^*(\sh{G})$ is
 \sref{0.6.6.3}.
 \end{env}
+

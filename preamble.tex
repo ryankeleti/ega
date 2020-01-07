@@ -11,10 +11,8 @@
 \usepackage[left=0.95in,right=0.95in,top=0.75in,bottom=0.75in]{geometry}
 %\usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
 \usepackage[charter,greekfamily=didot]{mathdesign}
-
-\usepackage{Baskervaldx}
-
-\usepackage{enumitem}
+\usepackage{Baskervaldx} % text font.
+\usepackage{enumerate}
 \usepackage{longtable}
 \usepackage{aurical}
 \usepackage{microtype}
@@ -40,16 +38,16 @@
 \newtheorem*{env}{---}
 
 \theoremstyle{ega-thm-env-style}
-\newtheorem*{thm}{Theorem}
-\newtheorem*{prop}{Proposition}
-\newtheorem*{lem}{Lemma}
-\newtheorem*{cor}{Corollary}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{corollary}{Corollary}
 
 \theoremstyle{ega-defn-env-style}
-\newtheorem*{defn}{Definition}
-\newtheorem*{exm}{Example}
-\newtheorem*{rmk}{Remark}
-\newtheorem*{nota}{Notation}
+\newtheorem*{definition}{Definition}
+\newtheorem*{example}{Example}
+\newtheorem*{remark}{Remark}
+\newtheorem*{notation}{Notation}
 
 % indent subsections, see https://tex.stackexchange.com/questions/177290/.
 % also make section titles bigger.
@@ -75,60 +73,11 @@
 %\renewcommand{\thechapter}{\ZeroRoman{chapter}}
 
 \def\mathcal{\mathscr}
-\def\sh{\mathcal}                   % sheaf font
-\def\bb{\mathbf}                    % bold font
-\def\cat{\mathtt}                   % category font
-\def\fk{\mathfrak}                  % mathfrak font
-\def\leq{\leqslant}                 % <=
-\def\geq{\geqslant}                 % >=
-\def\wt#1{{\widetilde{#1}}}         % tilde over
-\def\wh#1{{\widehat{#1}}}           % hat over
-\def\setmin{-}                      % set minus
-\def\rad{\fk{r}}                    % radical
-\def\nilrad{\fk{R}}                 % nilradical
-\def\emp{\varnothing}               % empty set
-\def\vphi{\phi}                     % for switching \phi and \varphi, change if needed
-\def\HH{\mathrm{H}}                 % cohomology H
-\def\CHH{\check{\HH}}               % Čech cohomology H
-\def\RR{\mathrm{R}}                 % right derived R
-\def\LL{\mathrm{L}}                 % left derived L
-\def\dual#1{{#1}^\vee}              % dual
-\def\kres{k}                        % residue field k
-\def\C{\cat{C}}                     % category C
-\def\op{^\cat{op}}                  % opposite category
-\def\Set{\cat{Set}}                 % category of sets
-\def\CHom{\cat{Hom}}                % functor category
-\def\OO{\sh{O}}                     % structure sheaf O
+\input{preamble-base}
 
 \def\shHom{\sh{H}\textup{\kern-2.2pt{\Fontauri\slshape om}}}   % sheaf Hom
-\def\shProj{\sh{P}\textup{\kern-2.2pt{\Fontauri\slshape roj}}\!} % sheaf Proj
-\def\shExt{\sh{E}\textup{\kern-2.2pt{\Fontauri\slshape xt}}\!}   % sheaf Ext
-%\def\shHom{{\sh{H}\!\textit{om}}\!}   % sheaf Hom
-%\def\shProj{{\sh{P}\!\textit{roj}}\!} % sheaf Proj
-%\def\shExt{{\sh{E}\!\textit{xt}}\!}   % sheaf Ext
-\def\red{\mathrm{red}}
-\def\rg{{\mathop{\mathrm{rg}}\nolimits}}
-\def\gr{{\mathop{\mathrm{gr}}\nolimits}}
-\def\Hom{{\mathop{\mathrm{Hom}}\nolimits}}
-\def\Proj{{\mathop{\mathrm{Proj}}\nolimits}}
-\def\Tor{{\mathop{\mathrm{Tor}}\nolimits}}
-\def\Ext{{\mathop{\mathrm{Ext}}\nolimits}}
-\def\Supp{{\mathop{\mathrm{Supp}}\nolimits}}
-\def\Ker{{\mathop{\mathrm{Ker}}\nolimits}\,}
-\def\Im{{\mathop{\mathrm{Im}}\nolimits}\,}
-\def\Coker{{\mathop{\mathrm{Coker}}\nolimits}\,}
-\def\Spec{{\mathop{\mathrm{Spec}}\nolimits}}
-\def\Spf{{\mathop{\mathrm{Spf}}\nolimits}}
-\def\grad{{\mathop{\mathrm{grad}}\nolimits}}
-\def\dim{{\mathop{\mathrm{dim}}\nolimits}}
-\def\dimc{{\mathop{\mathrm{dimc}}\nolimits}}
-\def\codim{{\mathop{\mathrm{codim}}\nolimits}}
-
-\renewcommand{\to}{\mathchoice{\longrightarrow}{\rightarrow}{\rightarrow}{\rightarrow}}
-\newcommand{\from}{\mathchoice{\longleftarrow}{\leftarrow}{\leftarrow}{\leftarrow}}
-\let\mapstoo\mapsto
-\renewcommand{\mapsto}{\mathchoice{\longmapsto}{\mapstoo}{\mapstoo}{\mapstoo}}
-\def\isoto{\simeq}  % isomorphism
+\def\shProj{\sh{P}\textup{\kern-2.2pt{\Fontauri\slshape roj}}} % sheaf Proj
+\def\shExt{\sh{E}\textup{\kern-2.2pt{\Fontauri\slshape xt}}}   % sheaf Ext
 
 % if unsure of a translation
 %\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
@@ -152,4 +101,7 @@
       {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrGobbleLeft{#2}{2})}}}%
       {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrGobbleLeft{#2}{2},~{#3})}}}}%
 }
+
+% for referencing equations, use as \eref{eq:chapter-number.x.y.z}.
+\newcommand{\eref}[1]{\hyperref[#1]{\normalfont{(\StrGobbleLeft{#1}{5})}}}
 

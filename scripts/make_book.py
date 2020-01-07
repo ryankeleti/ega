@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # see README.md/COPYING.md.
 
 # get location of repo.
@@ -85,8 +86,8 @@ with open(path + "book.tex", 'w') as book:
           line = line.replace("\\title{What this is}", "\\chapter*{What this is}")
         if line.find("\\title{Introduction}") == 0:
           line = line.replace("\\title{Introduction}", "\\chapter*{Introduction}")
-        if line.find("\\title{Preliminaries}") == 0:
-          line = line.replace("\\title{Preliminaries}", "\\setcounter{chapter}{-1}\\chapter{Preliminaries}")
+        if line.find("\\title{Preliminaries") == 0:
+          line = line.replace("\\title{Preliminaries", "\\setcounter{chapter}{-1}\\chapter{Preliminaries")
         if line.find("\\title{") == 0:
           line = line.replace("\\title{", "\\chapter{")
           if line.find("\\chapter{}") == 0:

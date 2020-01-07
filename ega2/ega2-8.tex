@@ -1,3 +1,89 @@
 \section{Blowup schemes; projective cones; projective closure}
 \label{section:2.8}
 
+\subsection{Blowup preschemes}
+\label{subsection:2.8.1}
+
+\begin{env}[8.1.1]
+\label{2.8.1.1}
+Let $Y$ be a prescheme, and for every integer $n\geq 0$, let $\sh{I}_n$ be a quasi-coherent sheaf of ideals of $\sh{O}_Y$; suppose they satisfy the following conditions:
+\[
+\label{eq:2.8.1.1.1}
+  \sh{I}_0=\sh{O}_Y,\ \sh{I}_n\subset\sh{I}_m\text{ for }m\leq n,
+  \tag{8.1.1.1}
+\]
+\[
+\label{eq:2.8.1.1.2}
+  \sh{I}_m\sh{I}_n\subset\sh{I}_{m+n}\text{ for any }m,n.
+  \tag{8.1.1.2}
+\]
+
+\oldpage[II]{153}
+We note that these hypothesies imply
+\[
+\label{eq:2.8.1.1.3}
+  \sh{I}_1^n\subset\sh{I}_n.
+  \tag{8.1.1.3}
+\]
+
+Set
+\[
+\label{eq:2.8.1.1.4}
+  \sh{S}=\bigoplus_{n\geq 0}\sh{I}_n.
+  \tag{8.1.1.4}
+\]
+
+It follows from \eref{eq:2.8.1.1.1} and \eref{eq:2.8.1.1.2} that $\sh{S}$ is a quasi-coherent graded $\sh{O}_Y$-algebra, and thus defines a $Y$-scheme $X=\Proj(\sh{S})$.
+If $\sh{J}$ is an \emph{invertible} sheaf of ideals of $\sh{O}_Y$, then $\sh{I}_n\otimes_{\sh{O}_Y}\sh{J}^{\otimes n}$ canonically identifies with $\sh{I}_n\sh{J}^n$.
+If we then replace the $\sh{I}_n$ by the the $\sh{I}_n\sh{J}^n$, which replaces $\sh{S}$ by a quasi-coherent $\sh{O}_Y$-algebra $\sh{S}_{(\sh{J})}$, then $X_{(\sh{J})}=\Proj(\sh{S}_{(\sh{J})})$ is canonically isomorphic to $X$ \sref{2.3.1.8}.
+\end{env}
+
+\subsection{Quasi-coherent sheaves on projective cones}
+\label{subsection:2.8.12}
+
+\begin{env}[8.12.1]
+\label{2.8.12.1}
+Let us take the hypotheses and notation of \sref{2.8.3.1}.
+Let $\sh{M}$ be a \emph{quasi-coherent graded $\sh{S}$-module}; to avoid any confusion, we denote by $\widetilde{\sh{M}}$ the quasi-coherent $\sh{O}_C$-module
+\oldpage[II]{192}
+associated to $\sh{M}$ \sref{2.1.4.3} when $\sh{M}$ is considered as a \emph{nongraded} $\sh{S}$-module, and by $\shProj_0(\sh{M})$ the quasi-coherent $\sh{O}_X$-module associated to $\sh{M}$, $\sh{M}$ being considered this time as a graded $\sh{S}$-module (in other words, the $\sh{O}_X$-module denoted by $\widetilde{\sh{M}}$ in \sref{2.3.2.2}).
+In addition, we set
+\[
+\label{eq:2.8.12.1.1}
+  \sh{M}_X=\shProj_0(\sh{M})=\bigoplus_{n\in\bb{Z}}\shProj_0(\sh{M}(n));
+  \tag{8.12.1.1}
+\]
+the quasi-coherent graded $\sh{O}_X$-algebra $\sh{S}_X$ being defined by \eref{eq:2.8.6.1.1}, $\shProj(\sh{M})$ is equipped with a structure of a \emph{(quasi-coherent) graded $\sh{S}_X$-module}, by means of the canonical homomorphisms \eref{eq:2.3.2.6.1}
+\[
+\label{eq:2.8.12.1.2}
+  \sh{O}_X(m)\otimes_{\sh{O}_X}\shProj_0(\sh{M}(n))\to\shProj_0(\sh{S}(m)\otimes_\sh{S}\sh{M}(n))\to\shProj_0(\sh{M}(m+n)),
+  \tag{8.12.1.2}
+\]
+the verification of the axioms of sheaves of modules being done using the commutative diagram \eref{eq:2.2.5.11.4}.
+
+If $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$, where $S$ is a graded $A$-algebra and $M$ is a graded $S$-module, then, for every homogeneous element $f\in S_+$, we have
+\[
+\label{eq:2.8.12.1.3}
+  \Gamma(X_f,\shProj(\widetilde{M}))=M_f
+  \tag{8.12.1.3}
+\]
+by the definitions and \eref{eq:2.8.2.9.1}.
+
+Now consider the quasi-coherent graded $\widehat{\sh{S}}$-module
+\[
+\label{eq:2.8.12.1.4}
+  \widehat{\sh{M}}=\sh{M}\otimes_\sh{S}\widehat{\sh{S}}
+  \tag{8.12.1.4}
+\]
+($\widehat{\sh{S}}$ defined by \eref{eq:2.8.3.1.1}); we deduce a quasi-coherent graded $\sh{O}_{\widehat{C}}$-module $\shProj_0(\widehat{\sh{M}})$, which we will also denote by
+\[
+\label{eq:2.8.12.1.5}
+  \sh{M}^\square=\shProj_0(\widehat{\sh{M}}).
+  \tag{8.12.1.5}
+\]
+
+It is clear \sref{2.3.2.4} that $\sh{M}^\square$ is an additive functor which is \emph{exact} in $\sh{M}$, commuting with direct sums and with inductive limits.
+\end{env}
+
+
+

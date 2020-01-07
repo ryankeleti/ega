@@ -16,20 +16,20 @@ if [ ! -d "$EGA" ]; then
   git clone https://github.com/ryankeleti/ega.git "$EGA"
 fi
 
-cd "$EGA"
+cd "$EGA" || return
 git fetch
-if [ $(git rev-parse HEAD) != $(git rev-parse @{u}) ]; then
+if [ "$(git rev-parse HEAD)" != "$(git rev-parse @{u})" ]; then
   git pull
   make auto
-  mv "$EGA"/pdfs/book-auto.pdf "$SURL"/book-auto.pdf
-  mv "$EGA"/pdfs/what-auto.pdf "$SURL"/what-auto.pdf
+  mv "$EGA"/pdfs/book-auto.pdf  "$SURL"/book-auto.pdf
+  mv "$EGA"/pdfs/what-auto.pdf  "$SURL"/what-auto.pdf
   mv "$EGA"/pdfs/intro-auto.pdf "$SURL"/intro-auto.pdf
-  mv "$EGA"/pdfs/ega0-auto.pdf "$SURL"/ega0-auto.pdf
-  mv "$EGA"/pdfs/ega1-auto.pdf "$SURL"/ega1-auto.pdf
-  mv "$EGA"/pdfs/ega2-auto.pdf "$SURL"/ega2-auto.pdf
-  mv "$EGA"/pdfs/ega3-auto.pdf "$SURL"/ega3-auto.pdf
-  mv "$EGA"/pdfs/ega4-auto.pdf "$SURL"/ega4-auto.pdf
-  mv "$EGA"/pdfs/ref-auto.pdf "$SURL"/ref-auto.pdf
+  mv "$EGA"/pdfs/ega0-auto.pdf  "$SURL"/ega0-auto.pdf
+  mv "$EGA"/pdfs/ega1-auto.pdf  "$SURL"/ega1-auto.pdf
+  mv "$EGA"/pdfs/ega2-auto.pdf  "$SURL"/ega2-auto.pdf
+  mv "$EGA"/pdfs/ega3-auto.pdf  "$SURL"/ega3-auto.pdf
+  mv "$EGA"/pdfs/ega4-auto.pdf  "$SURL"/ega4-auto.pdf
+  mv "$EGA"/pdfs/ref-auto.pdf   "$SURL"/ref-auto.pdf
 fi
 
 cat <<KITTY > "$SURL"/index.html
@@ -41,8 +41,8 @@ cat <<KITTY > "$SURL"/index.html
 <title>ega files</title>
 </head>
 <body>
-<p>last updated :: `date`.</p>
-<p>git hash     :: `cd $EGA && git rev-parse HEAD`.</p>
+<p>last updated :: $(date).</p>
+<p>git hash     :: $(cd $EGA && git rev-parse HEAD).</p>
 <p>source files :: <a href="https://github.com/ryankeleti/ega">github.com/ryankeleti/ega</a>.</p>
 <p><a href="book-auto.pdf">Full document</a>.</p>
 <p><a href="what-auto.pdf">What this is</a>.</p>

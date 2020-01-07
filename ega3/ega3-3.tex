@@ -4,38 +4,38 @@
 \subsection{The d\'evissage lemma}
 \label{subsection:3.3.1}
 
-\begin{defn}[3.1.1]
+\begin{definition}[3.1.1]
 \label{3.3.1.1}
 Let $\C$ be an abelian category.
 We say that a subset $\C'$ of the set of objects of $\C$ is \emph{exact} if $0\in\C'$ and if, for every exact sequence $0\to A'\to A\to A''\to 0$ in $\C$ such that two of the objects $A$, $A'$, $A''$ are in $\C'$, then the third is also in $\C'$.
-\end{defn}
+\end{definition}
 
-\begin{thm}[3.1.2]
+\begin{theorem}[3.1.2]
 \label{3.3.1.2}
-Let $X$ be a Noetherian prescheme; we denote by $\C$ the abelian category of coherent $\OO_X$-modules.
+Let $X$ be a Noetherian prescheme; we denote by $\C$ the abelian category of coherent $\sh{O}_X$-modules.
 Let $\C'$ be an exact subset of $\C$, $X'$ a closed subset of the underlying space of $X$.
-Suppose that for every closed irreducible subset $Y$ of $X'$, with generic point $y$, there exists an $\OO_X$-module $\sh{G}\in\C'$ such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
-Then every coherent $\OO_X$-module with support contained in $X'$ is in $\C'$ (and in particular, if $X'=X$, then we have $\C'=\C$).
-\end{thm}
+Suppose that for every closed irreducible subset $Y$ of $X'$, with generic point $y$, there exists an $\sh{O}_X$-module $\sh{G}\in\C'$ such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
+Then every coherent $\sh{O}_X$-module with support contained in $X'$ is in $\C'$ (and in particular, if $X'=X$, then we have $\C'=\C$).
+\end{theorem}
 
 \begin{proof}
 \label{proof-3.3.1.2}
-Consider the following property $\textbf{P}(Y)$ of a closed subset $Y$ of $X'$: every coherent $\OO_X$-module with support contained in $Y$ is in $\C'$.
+Consider the following property $\textbf{P}(Y)$ of a closed subset $Y$ of $X'$: every coherent $\sh{O}_X$-module with support contained in $Y$ is in $\C'$.
 By virtue of the principle of Noetherian induction \sref[0]{0.2.2.2}, we see that we can reduce to showing that \emph{if $Y$ is a closed subset of $X'$ such that the property $\textbf{P}(Y')$ is true for every closed subset $Y'$ of $Y$, distinct from $Y$, then $\textbf{P}(Y)$ is true}.
 
 Therefore, let $\sh{F}\in\C$ have support contained in $Y$, and we show that $\sh{F}\in\C'$.
-Denote also by $Y$ the reduced closed subprescheme of $X$ having $Y$ for its underlying space \sref[I]{1.5.2.1}; it is defined by a coherent sheaf of ideals $\sh{J}$ of $\OO_X$.
+Denote also by $Y$ the reduced closed subprescheme of $X$ having $Y$ for its underlying space \sref[I]{1.5.2.1}; it is defined by a coherent sheaf of ideals $\sh{J}$ of $\sh{O}_X$.
 We know \sref[I]{1.9.3.4} that there exists an integer $n>0$ such that $\sh{J}^n\sh{F}=0$; for $1\leq k\leq n$, we thus have an exact sequence
 \[
   0\to\sh{J}^{k-1}\sh{F}/\sh{J}^k\sh{F}\to\sh{F}/\sh{J}^k\sh{F}\to\sh{F}/\sh{J}^{k-1}\sh{F}\to 0
 \]
- of coherent $\OO_X$-modules (\sref[I]{1.5.3.6} and \sref[I]{1.5.3.3}); as $\C'$ is exact, we see, by induction on $k$, that it suffices to show that each of the $\sh{F}_k=\sh{J}^{k-1}\sh{F}/\sh{J}^k\sh{F}$ is in $\C'$.
+ of coherent $\sh{O}_X$-modules (\sref[I]{1.5.3.6} and \sref[I]{1.5.3.3}); as $\C'$ is exact, we see, by induction on $k$, that it suffices to show that each of the $\sh{F}_k=\sh{J}^{k-1}\sh{F}/\sh{J}^k\sh{F}$ is in $\C'$.
 We thus reduce to proving that $\sh{F}\in\C'$ under the additional hypothesis that $\sh{J}\sh{F}=0$; it is equivalent to say that $\sh{F}=j_*(j^*(\sh{F}))$, where $j$ is the canonical injection $Y\to X$.
 Let us now consider two cases:
-\begin{enumerate}[label=(\alph*)]
-  \item $Y$ is \emph{reducible}.
-    Let $Y=Y'\cap Y''$, where $Y'$ and $Y''$ are closed subsets of $Y$, distinct from $Y$; denote also by $Y'$ and $Y''$ the reduced closed subpreschemes of $X$ having $Y$ and $Y''$ for their respective underlying spaces, which are defined respectively by sheaves of ideals $\sh{J}'$ and $\sh{J}''$ of $\OO_X$.
-    Set $\sh{F}'=\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J}')$ and $\sh{F}''=\sh{F}\otimes_{\OO_X}(\OO_X/\sh{J}'')$.
+\begin{enumerate}
+  \item[(a)] $Y$ is \emph{reducible}.
+    Let $Y=Y'\cap Y''$, where $Y'$ and $Y''$ are closed subsets of $Y$, distinct from $Y$; denote also by $Y'$ and $Y''$ the reduced closed subpreschemes of $X$ having $Y$ and $Y''$ for their respective underlying spaces, which are defined respectively by sheaves of ideals $\sh{J}'$ and $\sh{J}''$ of $\sh{O}_X$.
+    Set $\sh{F}'=\sh{F}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J}')$ and $\sh{F}''=\sh{F}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J}'')$.
     The canonical homomorphisms $\sh{F}\to\sh{F}'$ and $\sh{F}\to\sh{F}''$ thus define a homomorphism $u:\sh{F}\to\sh{F}'\oplus\sh{F}''$.
     We show that for every $z\not\in Y'\cap Y''$, the homomorphism $u_z:\sh{F}_z\to\sh{F}_z'\oplus\sh{F}_z''$ is \emph{bijective}.
     Indeed, we have $\sh{J}'\cap\sh{J}''=\sh{J}$, since the question is local and
@@ -50,96 +50,96 @@ Let us now consider two cases:
       0\to\Ker u\to\sh{F}\to\Im u\to 0,
     \]
     and the hypothesis that $\C'$ is exact.
-  \item $Y$ is irreducible, and as a result, the subprescheme $Y$ of $X$ is \emph{integral}.
-    If $y$ is its generic point, then we have $(\OO_Y)_y=\kres(y)$, and as $j^*(\sh{F})$ is a coherent $\OO_Y$-module, $\sh{F}_y=(j^*(\sh{F}))_y$ is a $\kres(y)$-vector space of finite dimension~$m$.
-    By hypothesis, there is a coherent $\OO_X$-module $\sh{G}\in\C'$ (necessarily of support $Y$) such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
-    As a result, there is a $\kres(y)$-isomorphism $(\sh{G}_y)^m\isoto\sh{F}_y$, which is also an $\OO_Y$-isomorphism, and as $\sh{G}^m$ and $\sh{F}$ are coherent, there exists an open neighborhood $W$ of $y$ in $X$ and an isomorphism $\sh{G}^m|W\isoto\sh{F}|W$ \sref[0]{0.5.2.7}.
-    Let $\sh{H}$ be the graph of this isomorphism, which is a coherent $(\OO_X|W)$-submodule of $(\sh{G}^m\oplus\sh{F})|W$, canonically isomorphic to $\sh{G}^m|W$ and to $\sh{F}|W$; there thus exists a coherent $\OO_X$-submodule $\sh{H}_0$ of $\sh{G}^m\oplus\sh{F}$, inducing $\sh{H}$ on $W$ and $0$ on $X\setmin Y$, since $\sh{G}^m$ and $\sh{F}$ have $Y$ for their support~\sref[I]{1.9.4.7}.
-    The restrictions $v:\sh{H}_0\to\sh{G}^m$ and $w:\sh{H}_0\to\sh{F}$ of the canonical projections of $\sh{G}^m\oplus\sh{F}$ are then homomorphisms of coherent $\OO_X$-modules, which, on $W$ and on $X\setmin Y$, reduce to isomorphisms; in other words, the kernels and cokernels of $v$ and $w$ have their suppoer in the closed set $Y\setmin(Y\cap W)$, distinct from $Y$.
+  \item[(b)] $Y$ is irreducible, and as a result, the subprescheme $Y$ of $X$ is \emph{integral}.
+    If $y$ is its generic point, then we have $(\sh{O}_Y)_y=\kres(y)$, and as $j^*(\sh{F})$ is a coherent $\sh{O}_Y$-module, $\sh{F}_y=(j^*(\sh{F}))_y$ is a $\kres(y)$-vector space of finite dimension~$m$.
+    By hypothesis, there is a coherent $\sh{O}_X$-module $\sh{G}\in\C'$ (necessarily of support $Y$) such that $\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$.
+    As a result, there is a $\kres(y)$-isomorphism $(\sh{G}_y)^m\isoto\sh{F}_y$, which is also an $\sh{O}_Y$-isomorphism, and as $\sh{G}^m$ and $\sh{F}$ are coherent, there exists an open neighborhood $W$ of $y$ in $X$ and an isomorphism $\sh{G}^m|W\isoto\sh{F}|W$ \sref[0]{0.5.2.7}.
+    Let $\sh{H}$ be the graph of this isomorphism, which is a coherent $(\sh{O}_X|W)$-submodule of $(\sh{G}^m\oplus\sh{F})|W$, canonically isomorphic to $\sh{G}^m|W$ and to $\sh{F}|W$; there thus exists a coherent $\sh{O}_X$-submodule $\sh{H}_0$ of $\sh{G}^m\oplus\sh{F}$, inducing $\sh{H}$ on $W$ and $0$ on $X\setmin Y$, since $\sh{G}^m$ and $\sh{F}$ have $Y$ for their support~\sref[I]{1.9.4.7}.
+    The restrictions $v:\sh{H}_0\to\sh{G}^m$ and $w:\sh{H}_0\to\sh{F}$ of the canonical projections of $\sh{G}^m\oplus\sh{F}$ are then homomorphisms of coherent $\sh{O}_X$-modules, which, on $W$ and on $X\setmin Y$, reduce to isomorphisms; in other words, the kernels and cokernels of $v$ and $w$ have their suppoer in the closed set $Y\setmin(Y\cap W)$, distinct from $Y$.
     They are in $\C'$; on the other hand, we have $\sh{G}^m\in\C'$ since $\sh{G}\in\C'$ and since $\C'$ is exact.
     We conclude successively, by the exactness of $\C'$, that $\sh{H}_0\in\C'$, then $\sh{F}\in\C'$.
 Q.E.D.
 \end{enumerate}
 \end{proof}
 
-\begin{cor}[3.1.3]
+\begin{corollary}[3.1.3]
 \label{3.3.1.3}
-Suppose that the exact subset $\C'$ of $\C$ has in addition the property that any coherent direct factor of a coherent $\OO_X$-module $\sh{M}\in\C'$ is also in $\C'$.
+Suppose that the exact subset $\C'$ of $\C$ has in addition the property that any coherent direct factor of a coherent $\sh{O}_X$-module $\sh{M}\in\C'$ is also in $\C'$.
 In this case, the conclusion of Theorem~\sref{3.3.1.2} is still valid when the condition ``$\sh{G}_y$ is a $\kres(y)$-vector space of dimension~$1$'' is replaced by $\sh{G}_y\neq 0$ (this is equivalent to $\Supp(\sh{G})=Y$).
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-3.3.1.3}
-The reasoning of Theorem~\sref{3.3.1.2} must be modified only in the case~(b); now $\sh{G}_y$ is a $\kres(y)$-vector space of dimension $q>0$, and as a result, we have an $\OO_Y$-isomorphism $(\sh{G}_y)^m\isoto(\sh{F}_y)^q$; the end of the reasoning in Theorem~\sref{3.3.1.2} then proves that $\sh{F}^q\in\C'$, and the additional hypothesis on $\C'$ implies that $\sh{F}\in\C'$.
+The reasoning of Theorem~\sref{3.3.1.2} must be modified only in the case~(b); now $\sh{G}_y$ is a $\kres(y)$-vector space of dimension $q>0$, and as a result, we have an $\sh{O}_Y$-isomorphism $(\sh{G}_y)^m\isoto(\sh{F}_y)^q$; the end of the reasoning in Theorem~\sref{3.3.1.2} then proves that $\sh{F}^q\in\C'$, and the additional hypothesis on $\C'$ implies that $\sh{F}\in\C'$.
 \end{proof}
 
 \subsection{The finiteness theorem: the case of usual schemes}
 \label{subsection:3.3.2}
 
-\begin{thm}[3.2.1]
+\begin{theorem}[3.2.1]
 \label{3.3.2.1}
 Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a proper morphism.
-For every coherent $\OO_X$-module $\sh{F}$, the $\OO_Y$-modules $\RR^q f_*(\sh{F})$ are coherent for $q\geq 0$.
-\end{thm}
+For every coherent $\sh{O}_X$-module $\sh{F}$, the $\sh{O}_Y$-modules $\RR^q f_*(\sh{F})$ are coherent for $q\geq 0$.
+\end{theorem}
 
 \begin{proof}
 \label{proof-3.3.2.1}
 The question being local on $Y$, we can suppose $Y$ Noetherian, thus $X$ Noetherian~\sref[I]{1.6.3.7}.
-The coherent $\OO_X$-modules $\sh{F}$ for which the conclusion of Theorem~\sref{3.3.2.1} is true forms an \emph{exact} subset $\C'$ of the category $\C$ of coherent $\OO_X$-modules.
+The coherent $\sh{O}_X$-modules $\sh{F}$ for which the conclusion of Theorem~\sref{3.3.2.1} is true forms an \emph{exact} subset $\C'$ of the category $\C$ of coherent $\sh{O}_X$-modules.
 \oldpage[III]{117}
-Indeed, let $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of coherent $\OO_X$-modules; suppose for example that $\sh{F}'$ and $\sh{F}''$ belong to $\C'$; we have the long exact sequence in cohomology
+Indeed, let $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ is an exact sequence of coherent $\sh{O}_X$-modules; suppose for example that $\sh{F}'$ and $\sh{F}''$ belong to $\C'$; we have the long exact sequence in cohomology
 \[
   \RR^{q-1}f_*(\sh{F}'')\xrightarrow{\partial}\RR^q f_*(\sh{F}')\to\RR^q f_*(\sh{F})\to\RR^q f_*(\sh{F}'')\xrightarrow{\partial}\RR^{q+1}f_*(\sh{F}'),
 \]
 in which by hypothesis the outer four terms are coherent; it is the same for the middle term $\RR^q f_*(\sh{F})$ by (\sref[0]{0.5.3.4}~and~\sref[0]{0.5.3.3}).
 We show in the same way that when $\sh{F}$ and $\sh{F}'$ (resp.~$\sh{F}$ and $\sh{F}''$) are in $\C'$, then so is $\sh{F}''$ (resp.~$\sh{F}'$).
-In addition, every coherent \emph{direct factor} $\sh{F}'$ of an $\OO_X$-module $\sh{F}\in\C'$ belongs to $\C'$: indeed, $\RR^q f_*(\sh{F}')$ is then a direct factor of $\RR^q f_*(\sh{F})$~(G,~II,~4.4.4), therefore it is of finite type, and as it is quasi-coherent~\sref{3.1.4.10}, it is coherent, as $Y$ is Noetherian.
-By virtue of Corollary~\sref{3.3.1.3}, we reduce to proving that when $X$ is \emph{irreducible} with generic point $x$, there exists \emph{one} coherent $\OO_X$-module $\sh{F}$ belonging to $\C'$, such that $\sh{F}_x\neq 0$: indeed, if this point is established, then it can be applied to any irreducible closed subprescheme $Y$ of $X$, since if $j:Y\to X$ is the canonical injection, then $f\circ j$ is proper~\sref[II]{2.5.4.2}, and if $\sh{G}$ is a coherent $\OO_Y$-module with support $Y$, then $j_*(\sh{G})$ is a coherent $\OO_X$-module such that $\RR^q(f\circ j)_*(\sh{G})=\RR^q f_*(j_*(\sh{G}))$~(G,~II,~4.9.1), therefore we can apply COrollary~\sref{3.3.1.3}.
+In addition, every coherent \emph{direct factor} $\sh{F}'$ of an $\sh{O}_X$-module $\sh{F}\in\C'$ belongs to $\C'$: indeed, $\RR^q f_*(\sh{F}')$ is then a direct factor of $\RR^q f_*(\sh{F})$~(G,~II,~4.4.4), therefore it is of finite type, and as it is quasi-coherent~\sref{3.1.4.10}, it is coherent, as $Y$ is Noetherian.
+By virtue of Corollary~\sref{3.3.1.3}, we reduce to proving that when $X$ is \emph{irreducible} with generic point $x$, there exists \emph{one} coherent $\sh{O}_X$-module $\sh{F}$ belonging to $\C'$, such that $\sh{F}_x\neq 0$: indeed, if this point is established, then it can be applied to any irreducible closed subprescheme $Y$ of $X$, since if $j:Y\to X$ is the canonical injection, then $f\circ j$ is proper~\sref[II]{2.5.4.2}, and if $\sh{G}$ is a coherent $\sh{O}_Y$-module with support $Y$, then $j_*(\sh{G})$ is a coherent $\sh{O}_X$-module such that $\RR^q(f\circ j)_*(\sh{G})=\RR^q f_*(j_*(\sh{G}))$~(G,~II,~4.9.1), therefore we can apply COrollary~\sref{3.3.1.3}.
 
 By virtue of Chow's lemma~\sref[II]{2.5.6.2}, there exists an irreducible prescheme $X'$ an a \emph{projective} and surjective morphism $g:X'\to X$ such that $f\circ g:X'\to Y$ is \emph{projective}.
-There exists an ample $\OO_X$-module $\sh{L}$ for $g$~\sref[II]{2.5.3.1}; we apply the fundamental theorem of projective morphisms~\sref{3.2.2.1} to $g:X'\to X$ and with $\sh{L}$: there thus exixts an integer $n$ such that $\sh{F}=g_*(\OO_{X'}(n))$ is a coherent $\OO_X$-module and $\RR^q g_*(\OO_{X'}(n))=0$ for all $q>0$; in addition, as $g^*(g_*(\OO_{X'}(n)))\to\OO_{X'}(n)$ is surjective for $n$ large enough~\sref{3.2.2.1}, we see that we can suppose, at the generic point $x$ of $X$, that we have $\sh{F}_x\neq 0$~\sref[II]{2.3.4.7}.
-On the other hand, as $f\circ g$ is projective as $Y$ is Noetherian, the $\RR^q(f\circ g)_*(\OO_{X'}(n))$ are \emph{coherent}~\sref{3.2.2.1}.
-This being so, $\RR^\bullet(f\circ g)_*(\OO_{X'}(n))$ is the abutment of a Leray spectral sequence, whose $E_2$-term is given by $E_2^{pq}=\RR^p f_*(\RR^q g_*(\OO_{X'}(n)))$; the above shows that this spectral sequence degenerates, and we then know~\sref[0]{0.11.1.6} that $E_2^{p0}=\RR^p f_*(\sh{F})$ is isomorphic to $\RR^p(f\circ g)_*(\OO_{X'}(n))$, which finishes the proof.
+There exists an ample $\sh{O}_X$-module $\sh{L}$ for $g$~\sref[II]{2.5.3.1}; we apply the fundamental theorem of projective morphisms~\sref{3.2.2.1} to $g:X'\to X$ and with $\sh{L}$: there thus exixts an integer $n$ such that $\sh{F}=g_*(\sh{O}_{X'}(n))$ is a coherent $\sh{O}_X$-module and $\RR^q g_*(\sh{O}_{X'}(n))=0$ for all $q>0$; in addition, as $g^*(g_*(\sh{O}_{X'}(n)))\to\sh{O}_{X'}(n)$ is surjective for $n$ large enough~\sref{3.2.2.1}, we see that we can suppose, at the generic point $x$ of $X$, that we have $\sh{F}_x\neq 0$~\sref[II]{2.3.4.7}.
+On the other hand, as $f\circ g$ is projective as $Y$ is Noetherian, the $\RR^q(f\circ g)_*(\sh{O}_{X'}(n))$ are \emph{coherent}~\sref{3.2.2.1}.
+This being so, $\RR^\bullet(f\circ g)_*(\sh{O}_{X'}(n))$ is the abutment of a Leray spectral sequence, whose $E_2$-term is given by $E_2^{pq}=\RR^p f_*(\RR^q g_*(\sh{O}_{X'}(n)))$; the above shows that this spectral sequence degenerates, and we then know~\sref[0]{0.11.1.6} that $E_2^{p0}=\RR^p f_*(\sh{F})$ is isomorphic to $\RR^p(f\circ g)_*(\sh{O}_{X'}(n))$, which finishes the proof.
 \end{proof}
 
-\begin{cor}[3.2.2]
+\begin{corollary}[3.2.2]
 \label{3.3.2.2}
 Let $Y$ be a locally Noetherian prescheme.
-For every proper morphism $f:X\to Y$, the direct image under $f$ of any coherent $\OO_X$-module is a coherent $\OO_Y$-module.
-\end{cor}
+For every proper morphism $f:X\to Y$, the direct image under $f$ of any coherent $\sh{O}_X$-module is a coherent $\sh{O}_Y$-module.
+\end{corollary}
 
-\begin{cor}[3.2.3]
+\begin{corollary}[3.2.3]
 \label{3.3.2.3}
-Let $A$ be a Noetherian ring, $X$ a proper scheme over $A$; for every coherent $\OO_X$-module $\sh{F}$, the $\HH^p(X,\sh{F})$ are $A$-modules of finite type, and there exists an integer $r>0$ such that for every coherent $\OO_X$-module $\sh{F}$ and all $p>r$, $\HH^p(X,\sh{F})=0$.
-\end{cor}
+Let $A$ be a Noetherian ring, $X$ a proper scheme over $A$; for every coherent $\sh{O}_X$-module $\sh{F}$, the $\HH^p(X,\sh{F})$ are $A$-modules of finite type, and there exists an integer $r>0$ such that for every coherent $\sh{O}_X$-module $\sh{F}$ and all $p>r$, $\HH^p(X,\sh{F})=0$.
+\end{corollary}
 
 \begin{proof}
 \label{proof-3.3.2.3}
 The second assertion has already been proved~\sref{3.1.4.12}; the first follows from the finiteness theorem~\sref{3.3.2.1}, taking into account Corollary~\sref{3.1.4.11}.
 \end{proof}
 
-In particular, if $X$ is a \emph{proper algebraic scheme} over a field $k$, then, for every coherent $\OO_X$-module $\sh{F}$, the $\HH^p(X,\sh{F})$ are \emph{finite-dimensional} $k$-vector spaces.
+In particular, if $X$ is a \emph{proper algebraic scheme} over a field $k$, then, for every coherent $\sh{O}_X$-module $\sh{F}$, the $\HH^p(X,\sh{F})$ are \emph{finite-dimensional} $k$-vector spaces.
 
-\begin{cor}[3.2.4]
+\begin{corollary}[3.2.4]
 \label{3.3.2.4}
 Let $Y$ be a locally Noetherian prescheme, $f:X\to Y$ a morphism of finite type.
-For every coherent $\OO_X$-module $\sh{F}$ whose support in proper over $Y$~\sref[II]{2.5.4.10}, the $\OO_Y$-modules $\RR^q f_*(\sh{F})$ are coherent.
-\end{cor}
+For every coherent $\sh{O}_X$-module $\sh{F}$ whose support in proper over $Y$~\sref[II]{2.5.4.10}, the $\sh{O}_Y$-modules $\RR^q f_*(\sh{F})$ are coherent.
+\end{corollary}
 
 \begin{proof}
 \label{proof-3.3.2.4}
 \oldpage[III]{118}
 The question being local on $Y$, we can suppose $Y$ Noetherian, and it is the same for $X$~\sref[I]{1.6.3.7}.
 By hypothesis, every closed subprescheme $Z$ of $X$ whose underlying space is $\Supp(\sh{F})$ is proper over $Y$, in other words, if $j:Z\to X$ is the canonical injection, then $f\circ j:Z\to Y$ is proper.
-We can suppose that $Z$ is such that $\sh{F}=j_*(\sh{G})$, where $\sh{G}=j^*(\sh{F})$ is a coherent $\OO_Z$-module~\sref[I]{1.9.3.5}; as we have $\RR^q f_*(\sh{F})=\RR^q(f\circ j)_*(\sh{G})$ by Corollary~\sref{3.1.3.4}, the conclusion follows immediately from Theorem~\sref{3.3.2.1}.
+We can suppose that $Z$ is such that $\sh{F}=j_*(\sh{G})$, where $\sh{G}=j^*(\sh{F})$ is a coherent $\sh{O}_Z$-module~\sref[I]{1.9.3.5}; as we have $\RR^q f_*(\sh{F})=\RR^q(f\circ j)_*(\sh{G})$ by Corollary~\sref{3.1.3.4}, the conclusion follows immediately from Theorem~\sref{3.3.2.1}.
 \end{proof}
 
 \subsection{Generalization of the finiteness theorem (usual schemes)}
 \label{subsection:3.3.3}
 
-\begin{prop}[3.3.1]
+\begin{proposition}[3.3.1]
 \label{3.3.3.1}
-Let $Y$ be a Noetherian prescheme, $\sh{S}$ a quasi-coherent $\OO_Y$-algebra of finite type, graded in positive degrees, $Y'=\Proj(\sh{S})$, and $g:Y'\to Y$ the structure morphism.
+Let $Y$ be a Noetherian prescheme, $\sh{S}$ a quasi-coherent $\sh{O}_Y$-algebra of finite type, graded in positive degrees, $Y'=\Proj(\sh{S})$, and $g:Y'\to Y$ the structure morphism.
 Let $f:X\to Y$ be a proper morphism, $\sh{S}'=f^*(\sh{S})$, $\sh{M}=\bigoplus_{k\in\bb{Z}}\sh{M}_k$ a quasi-coherent graded $\sh{S}'$-module of finite type.
 Then the $\RR^p f_*(\sh{M})=\bigoplus_{k\in\bb{Z}}\RR^p f_*(\sh{M}_k)$ are graded $\sh{S}$-modules of finite type for all $p$.
 Suppose in addition that the $\sh{S}$ are generated by $\sh{S}_1$; then, for every $p\in\bb{Z}$, there exists an integer $k_p$ such that for all $k\geq k_p$ and all $r>0$, we have
@@ -148,31 +148,31 @@ Suppose in addition that the $\sh{S}$ are generated by $\sh{S}_1$; then, for eve
   \RR^p f_*(\sh{M}_{k+r})=\sh{S}_r\RR^p f_*(\sh{M}_k).
   \tag{3.3.1.1}
 \] 
-\end{prop}
+\end{proposition}
 
 \begin{proof}
 \label{proof-3.3.3.1}
 The first assertion is identical to the statement of Theorem~\sref{3.2.4.1}[i], where we have simply replaced ``projective morphism'' by ``proper morphism''.
-In the proof of Theorem~\sref{3.2.4.1}[i], the hypothesis on $f$ was only used to show (with the notation of this proof) that $\RR^p f_*'(\wt{\sh{M}})$ is a coherent $\OO_{Y'}$-module.
+In the proof of Theorem~\sref{3.2.4.1}[i], the hypothesis on $f$ was only used to show (with the notation of this proof) that $\RR^p f_*'(\widetilde{\sh{M}})$ is a coherent $\sh{O}_{Y'}$-module.
 With the hypothesis of Proposition~\sref{3.3.3.1}, $f'$ is proper~\sref[II]{2.5.4.2}[iii], so we can resume without change in the proof of Theorem~\sref{3.2.4.1}[i], thanks to the finiteness theorem~\sref{3.3.2.1}.
 
 As for the second assertion, it suffices to remark that there is a finite affine open cover $(U_i)$ of $Y$ such that the restrictions to the $U_i$ of the two sides of~(3.3.1.1) are equal for all $k\geq k_{p,i}$~\sref[II]{2.2.1.6}[ii]; it suffices to take for $k_p$ the largest of the $k_{p,i}$.
 \end{proof}
 
-\begin{cor}[3.3.2]
+\begin{corollary}[3.3.2]
 \label{3.3.3.2}
-Let $A$ be a Notherian ring, $\mathfrak{m}$ an ideal of $A$, $X$ a proper $A$-scheme, and $\sh{F}$ a coherent $\OO_X$-module.
+Let $A$ be a Notherian ring, $\mathfrak{m}$ an ideal of $A$, $X$ a proper $A$-scheme, and $\sh{F}$ a coherent $\sh{O}_X$-module.
 Then, for all $p\geq 0$, the direct sum $\bigoplus_{k\geq 0}\HH^p(X,\mathfrak{m}^k\sh{F})$ is a module of finite type over the ring $S=\bigoplus_{k\geq 0}\mathfrak{m}^k$; in particular, there exists an integer $k_p\geq 0$ such that for all $k\geq k_p$ and all $r>0$, we have
 \[
 \label{3.3.3.2.1}
   \HH^p(X,\mathfrak{m}^{k+r}\sh{F})=\mathfrak{m}^r\HH^p(X,\mathfrak{m}^k\sh{F}).
   \tag{3.3.2.1}
 \]
-\end{cor}
+\end{corollary}
 
 \begin{proof}
 \label{proof-3.3.3.2}
-It suffices to apply Proposition~\sref{3.3.3.1} with $Y=\Spec(A)$, $\sh{S}=\wt{S}$, $\sh{M}_k=\mathfrak{m}^k\sh{F}$, taking into account Corollary~\sref{3.1.4.11}.
+It suffices to apply Proposition~\sref{3.3.3.1} with $Y=\Spec(A)$, $\sh{S}=\widetilde{S}$, $\sh{M}_k=\mathfrak{m}^k\sh{F}$, taking into account Corollary~\sref{3.1.4.11}.
 \end{proof}
 
 It should be remembered that the $S$-module structure on $\bigoplus_{k\geq 0}\HH^p(X,\mathfrak{m}^k\sh{F})$ is obtained by considering, for every $a\in\mathfrak{m}^r$, the map $\HH^p(X,\mathfrak{m}^k\sh{F})\to\HH^p(X,\mathfrak{m}^{k+r}\sh{F})$, which comes from the passage to cohomology of the multiplication map $\mathfrak{m}^r\sh{F}\to\mathfrak{m}^{k+r}\sh{F}$ defined by $a$~\sref{3.2.4.1}.
@@ -189,9 +189,9 @@ Let $\mathfrak{X}$ and $\mathfrak{S}$ be two locally Noetherian formal prescheme
 We say that $f$ is a \emph{proper} morphism if it satisfies the following conditions:
 \begin{enumerate}
   \item[1st.] \emph{$f$ is a morphism of finite type~\sref[I]{1.10.13.3}}.
-  \item[2nd.] \emph{If $\sh{K}$ is a sheaf of ideals of definition for $\mathfrak{S}$ and if we set $\sh{J}=f^*(\sh{K})\OO_\mathfrak{X}$, $X_0=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J})$, $S_0=(\mathfrak{S},\OO_\mathfrak{S}/\sh{K})$, then the morphism $f_0:X_0\to S_0$ induced by $f$~\sref[I]{1.10.5.6} is proper}.
+  \item[2nd.] \emph{If $\sh{K}$ is a sheaf of ideals of definition for $\mathfrak{S}$ and if we set $\sh{J}=f^*(\sh{K})\sh{O}_\mathfrak{X}$, $X_0=(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{J})$, $S_0=(\mathfrak{S},\sh{O}_\mathfrak{S}/\sh{K})$, then the morphism $f_0:X_0\to S_0$ induced by $f$~\sref[I]{1.10.5.6} is proper}.
 \end{enumerate}
-It is immediate that this definition does not depend on the sheaf of ideals of definition $\sh{K}$ for $\sh{S}$ considered; indeed, if $\sh{K}'$ is a second sheaf of ideals of definition such that $\sh{K}'\subset\sh{K}$, and if we set $\sh{J}'=f^*(\sh{K}')\OO_\mathfrak{X}$, $X_0'=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}')$, $S_0'=(\sh{S},\OO_\mathfrak{S}/\sh{K}')$, then the morphism $f_0':X_0'\to S_0'$ induced by $f$ is such that the diagram
+It is immediate that this definition does not depend on the sheaf of ideals of definition $\sh{K}$ for $\sh{S}$ considered; indeed, if $\sh{K}'$ is a second sheaf of ideals of definition such that $\sh{K}'\subset\sh{K}$, and if we set $\sh{J}'=f^*(\sh{K}')\sh{O}_\mathfrak{X}$, $X_0'=(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{J}')$, $S_0'=(\sh{S},\sh{O}_\mathfrak{S}/\sh{K}')$, then the morphism $f_0':X_0'\to S_0'$ induced by $f$ is such that the diagram
 \[
   \xymatrix{
     X_0\ar[r]^{f_0}\ar[d]_i &
@@ -202,49 +202,49 @@ It is immediate that this definition does not depend on the sheaf of ideals of d
 \]
 is commutative, $i$ and $j$ being surjective immersions; it is equivalent to say that $f_0$ or $f_0'$ is proper, by virtue of~\sref[II]{2.5.4.5}.
 
-We note that, for all $n\geq 0$, if we set $X_n=(\mathfrak{X},\OO_\mathfrak{X}/\sh{J}^{n+1})$, $S_n=(\mathfrak{S},\OO_\mathfrak{S}/\sh{K}^{n+1})$, then the morphism $f_n:X_n\to S_n$ induced by $f$~\sref[I]{1.10.5.6} is proper for all $n$ whenever it is for $n=0$~\sref[II]{2.5.4.6}.
+We note that, for all $n\geq 0$, if we set $X_n=(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{J}^{n+1})$, $S_n=(\mathfrak{S},\sh{O}_\mathfrak{S}/\sh{K}^{n+1})$, then the morphism $f_n:X_n\to S_n$ induced by $f$~\sref[I]{1.10.5.6} is proper for all $n$ whenever it is for $n=0$~\sref[II]{2.5.4.6}.
 
-If $g:Y\to Z$ is a proper morphism of locally Noetherian usual preschemes, $Z'$ a closed subset of $Z$, $Y'$ a closed subset of $Y$ such that $g(Y')\subset Z'$, then the extension $\wh{g}:Y_{/Y'}\to Z_{/Z'}$ of $g$ to the completions~\sref[I]{1.10.9.1} is a proper morphism of formal preschemes, as it follows from the definition and from~\sref[II]{2.5.4.5}.
+If $g:Y\to Z$ is a proper morphism of locally Noetherian usual preschemes, $Z'$ a closed subset of $Z$, $Y'$ a closed subset of $Y$ such that $g(Y')\subset Z'$, then the extension $\widehat{g}:Y_{/Y'}\to Z_{/Z'}$ of $g$ to the completions~\sref[I]{1.10.9.1} is a proper morphism of formal preschemes, as it follows from the definition and from~\sref[II]{2.5.4.5}.
 
 Let $\mathfrak{X}$ and $\mathfrak{S}$ be two locally Noetherian formal preschemes, $f:\mathfrak{X}\to\mathfrak{S}$ a morphism \emph{of finite type}~\sref[I]{1.10.13.3}; the notation being the same as above, we say that a subset $Z$ of the underlying space of $\mathfrak{X}$ is \emph{proper} over $\mathfrak{S}$ (or proper for $f$) if, considered as a subset of $X_0$, $Z$ is \emph{proper over $S_0$}~\sref[II]{2.5.4.10}.
 All the properties of proper subsets of usual preschemes stated in~\sref[II]{2.5.4.10} are still true for the proper subsets of formal preschemes, as it follows immediately from the definitions.
 \end{env}
 
-\begin{thm}[3.4.2]
+\begin{theorem}[3.4.2]
 \label{3.3.4.2}
 Let $\mathfrak{X}$ and $\mathfrak{Y}$ be locally Noetherian formal preschemes, $f:\mathfrak{X}\to\mathfrak{Y}$ a proper morphism.
-For every coherent $\OO_\mathfrak{X}$-module $\sh{F}$, the $\OO_\mathfrak{Y}$-modules $\RR^q f_*(\sh{F})$ are coherent for all $q\geq 0$.
-\end{thm}
+For every coherent $\sh{O}_\mathfrak{X}$-module $\sh{F}$, the $\sh{O}_\mathfrak{Y}$-modules $\RR^q f_*(\sh{F})$ are coherent for all $q\geq 0$.
+\end{theorem}
 
-Let $\sh{J}$ be a sheaf of ideals of definition for $\mathfrak{Y}$, $\sh{K}=f^*(\sh{J})\OO_\mathfrak{X}$, and consider the $\OO_\mathfrak{X}$-modules
+Let $\sh{J}$ be a sheaf of ideals of definition for $\mathfrak{Y}$, $\sh{K}=f^*(\sh{J})\sh{O}_\mathfrak{X}$, and consider the $\sh{O}_\mathfrak{X}$-modules
 \[
 \label{3.3.4.2.1}
-  \sh{F}_k=\sh{F}\otimes_{\OO_\mathfrak{Y}}(\OO_\mathfrak{Y}/\sh{J}^{k+1})=\sh{F}/\sh{K}^{k+1}\sh{F}\quad(k\geq 0)
+  \sh{F}_k=\sh{F}\otimes_{\sh{O}_\mathfrak{Y}}(\sh{O}_\mathfrak{Y}/\sh{J}^{k+1})=\sh{F}/\sh{K}^{k+1}\sh{F}\quad(k\geq 0)
   \tag{3.4.2.1}
 \]
-which evidently form a \emph{projective system} of topological $\OO_\mathfrak{X}$-modules, such that
+which evidently form a \emph{projective system} of topological $\sh{O}_\mathfrak{X}$-modules, such that
 \oldpage[III]{120}
 $\sh{F}=\varprojlim_k\sh{F}_k$~\sref[I]{1.10.11.3}.
-On the other hand, it follows from Theorem~\sref{3.3.4.2} that each of the $\RR^q f_*(\sh{F})$, being coherent, is naturally equipped with a topological $\OO_\mathfrak{Y}$-module structure~\sref[I]{1.10.11.6}, and so are the $\RR^q f_*(\sh{F}_k)$.
+On the other hand, it follows from Theorem~\sref{3.3.4.2} that each of the $\RR^q f_*(\sh{F})$, being coherent, is naturally equipped with a topological $\sh{O}_\mathfrak{Y}$-module structure~\sref[I]{1.10.11.6}, and so are the $\RR^q f_*(\sh{F}_k)$.
 The canonical homomorphisms $\sh{F}\to\sh{F}_k=\sh{F}/\sh{K}^{k+1}\sh{F}$ canonically correspond to homomorphisms
 \[
   \RR^q f_*(\sh{F})\to\RR^q f_*(\sh{F}_k),
 \]
-which are necessarily continuous for the topological $\OO_\mathfrak{Y}$-module structures above~\sref[I]{1.10.11.6}, and form a projective system, giving the limit a canonical functorial homomorphism
+which are necessarily continuous for the topological $\sh{O}_\mathfrak{Y}$-module structures above~\sref[I]{1.10.11.6}, and form a projective system, giving the limit a canonical functorial homomorphism
 \[
 \label{3.3.4.2.2}
   \RR^q f_*(\sh{F})\to\varprojlim_k\RR^q f_*(\sh{F}_k),
   \tag{3.4.2.2}
 \]
-which will be a continuous homomorphism of topological $\OO_\mathfrak{Y}$-modules.
+which will be a continuous homomorphism of topological $\sh{O}_\mathfrak{Y}$-modules.
 We will prove along with Theorem~\sref{3.3.4.2} the
-\begin{cor}[3.4.3]
+\begin{corollary}[3.4.3]
 \label{3.3.4.3}
 Each of the homomorphisms~(3.4.2.2) is a topological isomorphism.
 In addition, if $\mathfrak{Y}$ is Noetherian, then the projective system $(\RR^q f_*(\sh{F}/\sh{K}^{k+1}\sh{F}))_{k\geq 0}$ satisfies the \emph{(ML)}-condition~\sref[0]{0.13.1.1}.
-\end{cor}
+\end{corollary}
 We will begin by establishing Theorem~\sref{3.3.4.2} and Corollary~\sref{3.3.4.3} when $Y$ is a Noetherian formal affine scheme~\sref[I]{1.10.4.1}:
-\begin{cor}[3.4.4]
+\begin{corollary}[3.4.4]
 \label{3.3.4.4}
 Under the hypotheses of Theorem~\sref{3.3.4.2}, suppose in addition that $\mathfrak{Y}=\Spf(A)$, where $A$ is an adic Noetherian ring.
 Let $\mathfrak{J}$ be an ideal of definition for $A$, and set $\sh{F}_k=\sh{F}/\mathfrak{J}^{k+1}\sh{F}$ for $k\geq 0$.
@@ -261,26 +261,26 @@ Then the $\HH^n(\mathfrak{X},\sh{F})$ are $A$-modules of finite type; the projec
   \tag{3.4.4.2}
 \]
 is a topological isomorphism for all $n$ (the left hand side being equipped with the $\mathfrak{J}$-adic topology, the $\HH^n(\mathfrak{X},\sh{F}_k)$ with the discrete topology).
-\end{cor}
+\end{corollary}
 
 Set
 \[
 \label{3.3.4.4.3}
   S=\gr(A)=\bigoplus_{k\geq 0}\mathfrak{J}^k/\mathfrak{J}^{k+1},\ \sh{M}=\gr(\sh{F})=\bigoplus_{k\geq 0}\mathfrak{J}^k\sh{F}/\mathfrak{J}^{k+1}\sh{F}.
 \]
-We know that $\mathfrak{J}^\Delta$ is a sheaf of ideals of definition for $\mathfrak{Y}$~\sref[I]{1.10.3.1}; let $\sh{K}=f^*(\mathfrak{J}^\Delta)\OO_\mathfrak{X}$, $X_0=(\mathfrak{X},\OO_\mathfrak{X}/\sh{K})$, $Y_0=(\mathfrak{Y},\OO_\mathfrak{Y}/\mathfrak{J}^\Delta)=\Spec(A_0)$, with $A_0=A/\mathfrak{J}$.
-It is clear that the $\sh{M}_k=\mathfrak{J}^k\sh{F}/\mathfrak{J}^{k+1}\sh{F}$ are coherent $\OO_{X_0}$-modules~\sref[I]{1.10.11.3}.
-Consider on the other hand the quasi-coherent graded $\OO_{X_0}$-algebra
+We know that $\mathfrak{J}^\Delta$ is a sheaf of ideals of definition for $\mathfrak{Y}$~\sref[I]{1.10.3.1}; let $\sh{K}=f^*(\mathfrak{J}^\Delta)\sh{O}_\mathfrak{X}$, $X_0=(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{K})$, $Y_0=(\mathfrak{Y},\sh{O}_\mathfrak{Y}/\mathfrak{J}^\Delta)=\Spec(A_0)$, with $A_0=A/\mathfrak{J}$.
+It is clear that the $\sh{M}_k=\mathfrak{J}^k\sh{F}/\mathfrak{J}^{k+1}\sh{F}$ are coherent $\sh{O}_{X_0}$-modules~\sref[I]{1.10.11.3}.
+Consider on the other hand the quasi-coherent graded $\sh{O}_{X_0}$-algebra
 \[
 \label{3.3.4.4.4}
-  \sh{S}=\OO_{X_0}\otimes_{A_0}S=\gr(\OO_\mathfrak{X})=\bigoplus_{k\geq 0}\sh{K}^k/\sh{K}^{k+1}.
+  \sh{S}=\sh{O}_{X_0}\otimes_{A_0}S=\gr(\sh{O}_\mathfrak{X})=\bigoplus_{k\geq 0}\sh{K}^k/\sh{K}^{k+1}.
   \tag{3.4.4.4}
 \]
 
-The hypothesis that $\sh{F}$ is a $\OO_\mathfrak{X}$-module of finite type implies first that $\sh{M}$ is
+The hypothesis that $\sh{F}$ is a $\sh{O}_\mathfrak{X}$-module of finite type implies first that $\sh{M}$ is
 \oldpage[III]{121}
 a graded $\sh{S}$-module \emph{of finite type}.
-Indeed, the question is local on $\mathfrak{X}$, and we can thus suppose that $\mathfrak{X}=\Spf(B)$, where $B$ is an adic Noetherian ring, and $\sh{F}=N^\Delta$, where $N$ is a $B$-module of finite type~\sref[I]{1.10.10.5}; we have in addition $X_0=\Spec(B_0)$, where $B_0=B/\mathfrak{J}B$, and the quasi-coherent $\OO_{X_0}$-modules $\sh{S}$ and $\sh{M}$ are respectively equal to $\wt{S'}$ and $\wt{M'}$, where $S'=\bigoplus_{k\geq 0}((\mathfrak{J}^k/\mathfrak{J}^{k+1})\otimes_{A_0}B_0)$ and $M'=\bigoplus_{k\geq 0}((\mathfrak{J}^k/\mathfrak{J}^{k+1})\otimes_{A_0}N_0)$, with $N_0=N/\mathfrak{J}N$; we then evidently have $M'=S'\otimes_{B_0}N_0$, and as $N_0$ is a $B_0$-module of finite type, $M'$ is a $S'$-module of finite type, hence our assertion~\sref[I]{1.1.3.13}.
+Indeed, the question is local on $\mathfrak{X}$, and we can thus suppose that $\mathfrak{X}=\Spf(B)$, where $B$ is an adic Noetherian ring, and $\sh{F}=N^\Delta$, where $N$ is a $B$-module of finite type~\sref[I]{1.10.10.5}; we have in addition $X_0=\Spec(B_0)$, where $B_0=B/\mathfrak{J}B$, and the quasi-coherent $\sh{O}_{X_0}$-modules $\sh{S}$ and $\sh{M}$ are respectively equal to $\widetilde{S'}$ and $\widetilde{M'}$, where $S'=\bigoplus_{k\geq 0}((\mathfrak{J}^k/\mathfrak{J}^{k+1})\otimes_{A_0}B_0)$ and $M'=\bigoplus_{k\geq 0}((\mathfrak{J}^k/\mathfrak{J}^{k+1})\otimes_{A_0}N_0)$, with $N_0=N/\mathfrak{J}N$; we then evidently have $M'=S'\otimes_{B_0}N_0$, and as $N_0$ is a $B_0$-module of finite type, $M'$ is a $S'$-module of finite type, hence our assertion~\sref[I]{1.1.3.13}.
 
 As the morphism $f_0:X_0\to Y_0$ is \emph{proper} by hypothesis, we can apply Corollary~\sref{3.3.3.2} to $\sh{S}$, $\sh{M}$, and the morphism $f_0$: taking into account Corollary~\sref{3.1.4.11}, we conclude that for \emph{all $n\geq 0$}, $\bigoplus_{k\geq 0}\HH^n(X_0,\sh{M}_k)$ is a graded $S$-module \emph{of finite type}.
 This proves that the condition ($\text{F}_n$) of~\sref[0]{0.13.7.7} is satisfied for \emph{all $n\geq 0$}, when we consider the strictly projective system $(\sh{F}/\mathfrak{J}^k\sh{F})_{k\geq 0}$ of sheaves of abelian groups on $X_0$, each equipped with its natural ``filtered $A$-module'' structure.
@@ -291,13 +291,13 @@ We can thus apply~\sref[0]{0.13.7.7}, which proves that:
   \item[3rd.] The filtration defined on $\HH^{\prime n}$ by the kernels of the canonical homomorphisms $\HH^{\prime n}\to\HH^n(\mathfrak{X},\sh{F}_k)$ is $\mathfrak{J}$-good.
 \end{enumerate}
 
-Note that on the other hand, if we set $X_k=(\mathfrak{X},\OO_\mathfrak{X}/\sh{K}^{k+1})$, then $\sh{F}_k$ is a coherent $\OO_{X_k}$-module~\sref[I]{1.10.11.3}, and if $U$ is an affine open set in $X_0$, then $U$ is also an affine open set in each of the $X_k$~\sref[I]{1.5.1.9}, so $\HH^n(U,\sh{F}_k)=0$ for all $n>0$ and all $k$~\sref{3.1.3.1} and $\HH^0(U,\sh{F}_k)\to\HH^0(U,\sh{F}_h)$ is surjective for $h\leq k$~\sref[I]{1.1.3.9}.
+Note that on the other hand, if we set $X_k=(\mathfrak{X},\sh{O}_\mathfrak{X}/\sh{K}^{k+1})$, then $\sh{F}_k$ is a coherent $\sh{O}_{X_k}$-module~\sref[I]{1.10.11.3}, and if $U$ is an affine open set in $X_0$, then $U$ is also an affine open set in each of the $X_k$~\sref[I]{1.5.1.9}, so $\HH^n(U,\sh{F}_k)=0$ for all $n>0$ and all $k$~\sref{3.1.3.1} and $\HH^0(U,\sh{F}_k)\to\HH^0(U,\sh{F}_h)$ is surjective for $h\leq k$~\sref[I]{1.1.3.9}.
 We are thus in the conditions of~\sref[0]{0.13.3.2} and applying~\sref[0]{0.13.3.1} proves that $\HH^{\prime n}$ canonically identifies with $\HH^n(\mathfrak{X},\varprojlim_k\sh{F}_k)=\HH^n(\mathfrak{X},\sh{F})$; this finishes the proof of Corollary~\sref{3.3.4.4}.
 
 \begin{env}[3.4.5]
 \label{3.3.4.5}
 We return to the proof of~\sref{3.3.4.2} and~\sref{3.3.4.3}.
-We first prove the propositions for the case $\mathfrak{Y}=\Spf(A)$ envissaged in~\sref{3.3.4.4}; for this, for all $g\in A$, apply~\sref{3.3.4.4} to the Noetherian affine formal scheme induced on the open set $\mathfrak{Y}_g=\mathfrak{D}(g)$ of $\mathfrak{Y}$, which is equal to $\Spf(A_{\{g\}})$, and to the formal prescheme induced by $\mathfrak{X}$ on $f^{-1}(\mathfrak{Y}_g)$; note that $\mathfrak{Y}_g$ is also an affine open set in the prescheme $Y_k=(\mathfrak{Y},\OO_\mathfrak{Y}/(\mathfrak{J}^\Delta)^{k+1})$, and as $\sh{F}_k$ is a coherent $\OO_{X_k}$-module, we have
+We first prove the propositions for the case $\mathfrak{Y}=\Spf(A)$ envissaged in~\sref{3.3.4.4}; for this, for all $g\in A$, apply~\sref{3.3.4.4} to the Noetherian affine formal scheme induced on the open set $\mathfrak{Y}_g=\mathfrak{D}(g)$ of $\mathfrak{Y}$, which is equal to $\Spf(A_{\{g\}})$, and to the formal prescheme induced by $\mathfrak{X}$ on $f^{-1}(\mathfrak{Y}_g)$; note that $\mathfrak{Y}_g$ is also an affine open set in the prescheme $Y_k=(\mathfrak{Y},\sh{O}_\mathfrak{Y}/(\mathfrak{J}^\Delta)^{k+1})$, and as $\sh{F}_k$ is a coherent $\sh{O}_{X_k}$-module, we have
 \[
   \HH^n(f^{-1}(\mathfrak{Y}_g),\sh{F}_k)=\Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}_k))
 \]
@@ -312,14 +312,14 @@ is an isomorphism; but we have~\sref[0]{0.3.2.6}
 \]
 \oldpage[III]{122}
 and as the sheaf $\RR^n f_*(\sh{F})$ is the sheaf associated to the presheaf $\mathfrak{Y}_g\mapsto\HH^n(f^{-1}(\mathfrak{Y}_g),\sh{F})$ on the $\mathfrak{Y}_g$~\sref[0]{0.3.2.1}, we have shown that the homormorphism~(3.4.2.2) is \emph{bijective}.
-Let us now prove that $\RR^n f_*(\sh{F})$ is a coherent $\OO_\mathfrak{Y}$-module, and more precisely that we have
+Let us now prove that $\RR^n f_*(\sh{F})$ is a coherent $\sh{O}_\mathfrak{Y}$-module, and more precisely that we have
 \[
-\label{3.3.4.5.1}
+\label{eq:3.3.4.5.1}
   \RR^n f_*(\sh{F})=\big(\HH^n(\mathfrak{X},\sh{F})\big)^\Delta.
   \tag{3.4.5.1}
 \]
 
-With the above notation, we have, since $\sh{F}_k$ is a coherent $\OO_{X_k}$-module~\sref{3.1.4.13},
+With the above notation, we have, since $\sh{F}_k$ is a coherent $\sh{O}_{X_k}$-module~\sref{3.1.4.13},
 \[
   \Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}_k))=(\Gamma(\mathfrak{Y},\RR^n f_*(\sh{F}_k)))_g=(\HH^n(\mathfrak{X},\sh{F}_k))_g.
 \]
@@ -331,22 +331,22 @@ We conclude~\sref[0]{0.13.7.8} that we have
 \]
 taking into account~\sref[I]{1.10.10.8} applied to $A$ and $A_{\{g\}}$; this proves~(3.4.5.1) since $\Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}))=\varprojlim_k\Gamma(\mathfrak{Y}_g,\RR^n f_*(\sh{F}_k))$.
 
-As~(3.4.2.2) is then an isomorphism of coherent $\OO_\mathfrak{Y}$-modules, it is necessarily a \emph{topological} isomorphism~\sref[I]{1.10.11.6}.
+As (3.4.2.2) is then an isomorphism of coherent $\sh{O}_\mathfrak{Y}$-modules, it is necessarily a \emph{topological} isomorphism~\sref[I]{1.10.11.6}.
 Finally, it follows from the relations $\RR^n f_*(\sh{F}_k)=(\HH^n(\mathfrak{X},\sh{F}_k))^\Delta$ that the projective system $(\RR^n f_*(\sh{F}_k))_{k\geq 0}$ satisfies (ML)~\sref[I]{1.10.10.2}.
 
-Once~\sref{3.3.4.2} and~\sref{3.3.4.3} are proved in the case where the formal prescheme $\mathfrak{Y}$ is affine Noetherian, it is immediate to pass to the general case for~\sref{3.3.4.2} and the first assertion of~\sref{3.3.4.3}, which are local on $\mathfrak{Y}$.
+Once \sref{3.3.4.2} and \sref{3.3.4.3} are proved in the case where the formal prescheme $\mathfrak{Y}$ is affine Noetherian, it is immediate to pass to the general case for~\sref{3.3.4.2} and the first assertion of~\sref{3.3.4.3}, which are local on $\mathfrak{Y}$.
 As for the second assertion of~\sref{3.3.4.3}, it suffices, $\mathfrak{Y}$ being Noetherian, to cover it by a finite number of Noetherian affine open sets $U_i$ and to note that the restricyions of the projective system $(\RR^q f_*(\sh{F}_k))$ to each of the $U_i$ satisfies (ML).
 \end{env}
 
 Along the way, we have in addition proved:
-\begin{cor}[3.4.6]
+\begin{corollary}[3.4.6]
 \label{3.3.4.6}
 Under the hypotheses of Corollary~\sref{3.3.4.4}, the canonical homomorphism
 \[
-\label{3.3.4.6.1}
+\label{eq:3.3.4.6.1}
   \HH^q(\mathfrak{X},\sh{F})\to\Gamma(\mathfrak{Y},\RR^q f_*(\sh{F}))
   \tag{3.4.6.1}
 \]
 is bijective.
-\end{cor}
+\end{corollary}
 
