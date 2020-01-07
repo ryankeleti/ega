@@ -4,6 +4,7 @@
 
 ## TODO
 - check errata in EGA II and onwards
+- more consistent use of Proposition/Theorem/Definition/whatever in front of `\sref`s
 - lists of notation?
 - terminology indices?
 - hyperref links to equations (e.g. 3.3.9.1)
