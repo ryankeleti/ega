@@ -1,6 +1,7 @@
 \section{Blowup schemes; projective cones; projective closure}
 \label{section:2.8}
 
+
 \subsection{Blowup preschemes}
 \label{subsection:2.8.1}
 
@@ -42,8 +43,8 @@ If we then replace the $\sh{I}_n$ by the $\sh{I}_n\sh{J}^n$, and, in doing so, r
 \label{2.8.1.2}
 Suppose that $Y$ is \emph{locally integral}, so that the sheaf $\sh{R}(Y)$ of rational functions is a quasi-coherent $\sh{O}_Y$-algebra \sref[1]{1.7.3.7}.
 We say that a sub-$\sh{O}_Y$-module $\sh{I}$ of $\sh{R}(Y)$ is a \emph{fractional ideal} of $\sh{R}(Y)$ if it is of \emph{finite type} \sref[0]{0.5.2.1}.
-Suppose we have, for all $n\geq0$, a quasi-coherent fractional ideal $\sh{I}_n$ of $\sh{R}(Y)$, such that $\sh{I}_0 = \sh{O}_Y$, and such that condition \eref{2.8.1.1.2} (but not necessarily the second condition \eref{2.8.1.1.1}) is satisfied;
-we can then again define a graded quasi-coherent $\sh{O}_Y$-algebra by Equation \eref{2.8.1.1.4}, and the corresponding $Y$-scheme $X = \Proj(\sh{S})$;
+Suppose we have, for all $n\geq0$, a quasi-coherent fractional ideal $\sh{I}_n$ of $\sh{R}(Y)$, such that $\sh{I}_0 = \sh{O}_Y$, and such that condition \eref{eq:2.8.1.1.2} (but not necessarily the second condition \eref{eq:2.8.1.1.1}) is satisfied;
+we can then again define a graded quasi-coherent $\sh{O}_Y$-algebra by Equation \eref{eq:2.8.1.1.4}, and the corresponding $Y$-scheme $X = \Proj(\sh{S})$;
 we will again have a canonical isomorphism from $X$ to $X_{{\sh{J}}}$ for every \emph{invertible} fractional ideal $\sh{J}$ of $\sh{R}(Y)$.
 \end{env}
 
@@ -69,7 +70,7 @@ In particular, whenever $\sh{I}$ is an \emph{invertible} ideal (resp. \emph{inve
 \label{2.8.1.4}
 Let $Y$ be an integral prescheme.
 \begin{enumerate}
-    \item[\rm{(i)}] For every sequence $(\sh{I}_n)$ of quasi-coherent fractional ideals of $\sh{R}(Y)$ that satisfies \eref{2.8.1.1.2}
+    \item[\rm{(i)}] For every sequence $(\sh{I}_n)$ of quasi-coherent fractional ideals of $\sh{R}(Y)$ that satisfies \eref{eq:2.8.1.1.2}
 \oldpage[II]{154}
         and such that $\sh{I}_0 = \sh{O}_Y$, the $Y$-scheme $X=\Proj(\bigoplus_{n\geq0}\sh{I}^n)$ is integral, and the structure morphism $f:X\to Y$ is dominant.
     \item[\rm{(ii)}] Let $\sh{I}$ be a quasi-coherent fractional ideal of $\sh{R}(Y)$, and let $X$ be the $Y$-scheme given by the blow up of $Y$ relative to $\sh{I}$.
@@ -90,7 +91,189 @@ Let $Y$ be an integral prescheme.
 \end{enumerate}
 \end{proof}
 
-We show the \emph{converse} of \sref{2.8.1.4} in \sref[III]{3.2.3.8}.
+We show a \emph{converse} of \sref{2.8.1.4} in \sref[III]{3.2.3.8}.
+
+\begin{env}[8.1.5]
+\label{2.8.1.5}
+We return to the setting and notation of \sref{2.8.1.1}.
+By definition, the injection homomorphisms $\sh{I}_{n+1}\to\sh{I}_n$ \eref{eq:2.8.1.1.1} define, for every $k\in\bb{Z}$, an injective homomorphism of degree zero of graded $\sh{S}$-modules
+\[
+\label{eq:2.8.1.5.1}
+  u_k: \sh{S}_+(k+1) \to \sh{S}(k);
+\]
+since $\sh{S}_+(k+1)$ and $\sh{S}(k+1)$ are canonically \textbf{(TN)}-isomorphic, they give a canonical correspondence between $u_k$ and an injective homomorphism of $\sh{O}_X$-modules \sref{2.3.4.2}:
+\[
+\label{eq:2.8.1.5.2}
+  \widetilde{u}_k: \sh{O}_X(k+1) \to \sh{O}_X(k).
+\]
+
+Recall as well \sref{2.3.2.6} that we have defined canonical homomorphisms
+\[
+\label{eq:2.8.1.5.3}
+  \lambda: \sh{O}_X(h) \otimes_{\sh{O}_X} \sh{O}_X(k) \to \sh{O}_X(h+k)
+\]
+and, since the diagram
+\[
+  \xymatrix{
+    \sh{S}(h) \otimes_{\sh{S}} \sh{S}(k) \otimes_{\sh{S}} \sh{S}(l)
+      \ar[r]
+      \ar[d]
+  & \sh{S}(h+k) \otimes_{\sh{S}} \sh{S}(l)
+      \ar[d]
+  \\\sh{S}(h) \otimes_{\sh{S}} \sh{S}(k+l)
+      \ar[r]
+  & \sh{S}(h+k+l)
+  }
+\]
+commutes, it follows from the functoriality of the $\lambda$ \sref{2.3.2.6} that the homomorphisms \eref{eq:2.8.1.5.3} define the structure of a \emph{graded quasi-coherent $\sh{O}_X$-algebra} on
+\[
+\label{eq:2.8.1.5.4}
+  \sh{S}_X = \bigoplus_{n\in\bb{Z}}\sh{O}_X(n).
+\]
+Furthermore, the diagram
+\[
+  \xymatrix{
+    \sh{S}(h) \otimes_{\sh{S}} \sh{S}(k+1)
+      \ar[r]
+      \ar[d]_{1\otimes u_k}
+  & \sh{S}(h+k+1)
+      \ar[d]^{u_{k+h}}
+  \\\sh{S}(h) \otimes_{\sh{S}} \sh{S}(k)
+      \ar[r]
+  & \sh{S}(h+k)
+  }
+\]
+commutes; the functoriality of the $\lambda$ then implies that we have a commutative diagram
+\[
+  \xymatrix{
+    \sh{O}_X(h) \otimes_{\sh{O}_X} \sh{O}_X(k+1)
+      \ar[r]^{\lambda}
+      \ar[d]_{1\otimes \widetilde{u}_k}
+  & \sh{O}_X(h+k+1)
+      \ar[d]^{\widetilde{u}_{k+h}}
+  \\\sh{O}_X(h) \otimes_{\sh{O}_X} \sh{O}_X(k)
+      \ar[r]^{\lambda}
+  & \sh{O}_X(h+k)
+  }
+\]
+where the horizontal arrows are the canonical homomorphisms.
+We can thus say that the $\widetilde{u}_k$ define an \emph{injective homomorphism} (of degree zero) \emph{of graded $\sh{S}_X$-modules}
+\[
+\label{eq:2.8.1.5.6}
+  \widetilde{u}: \sh{S}_X(1) \to \sh{S}_X.
+\]
+\end{env}
+
+\begin{env}[8.1.6]
+\label{2.8.1.6}
+Keeping the notation from \sref{2.8.1.5}, we now note that, for $n\geq0$, the composite homomorphism $\widetilde{v}_n = \widetilde{u}_{n-1} \circ \widetilde{u}_{n-2} \circ \ldots \circ \widetilde{u}_0$ is an \emph{injective} homomorphism $\sh{O}_X(n) \to \sh{O}_X$;
+we denote by $\sh{I}_{n,X}$ its image, which is thus a quasi-coherent ideal of $\sh{O}_X$, \emph{isomorphic} to $\sh{O}_X(n)$.
+Furthermore, the diagram
+\[
+  \xymatrix{
+    \sh{O}_X(m) \otimes_{\sh{O}_X} \sh{O}_X(n)
+      \ar[r]^{\lambda}
+      \ar[d]_{\widetilde{v}_m \otimes \widetilde{v}_n}
+  & \sh{O}_X(m+n)
+      \ar[d]^{\widetilde{v}_{m+n}}
+  \\\sh{O}_X
+      \ar[r]_{\id}
+  & \sh{O}_X
+  }
+\]
+commutes for $m\geq0$, $n\geq0$.
+We thus deduce the following inclusions:
+\[
+\label{eq:2.8.1.6.1}
+  \sh{I}_{0,X} = \sh{O}_X, \quad \sh{I}_{n,X} \subset \sh{I}_{m,X}
+  \qquad\mbox{for $0\leq m\leq n$;}
+\]
+\[
+\label{eq:2.8.1.6.2}
+  \sh{I}_{m,X}\sh{I}_{n,X} \subset \sh{I}_{m+n,X}
+  \qquad\qquad\mbox{for $m\geq0$, $n\geq0$.}
+\]
+\end{env}
+
+\oldpage[II]{156}
+
+\begin{proposition}[8.1.7]
+\label{2.8.1.7}
+Let $Y$ be a prescheme, $\sh{I}$ a quasi-coherent ideal of $\sh{O}_Y$, and $X = \Proj(\bigoplus_{n\geq0}\sh{I}^n)$ the $Y$-scheme given by blowing up $\sh{I}$.
+We then have, for all $n>0$, a canonical isomorphism
+\[
+\label{eq:2.8.1.7.1}
+  \sh{O}_X(n) \xrightarrow{\sim} \sh{I}^n\sh{O}_X = \sh{I}_{n,X}
+\]
+(cf. \sref[0]{0.4.3.5}), and thus that $\sh{I}^n\sh{O}_X$ is a very-ample invertible $\sh{O}_X$-module if $n>0$.
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.1.7}
+The last claim is immediate, since $\sh{O}_X(1)$ is invertible \sref{2.3.2.5} and very ample for $Y$ by definition (\sref{2.4.4.3} and \sref{2.4.4.9}).
+Also by definition, the image of $v_n$ is exactly $\sh{I}^n\sh{S}$, and \eref{eq:2.8.1.7.1} then follows from the exactness of the functor $\widetilde{\sh{M}}$ \sref{2.3.2.4} and from Equation \eref{eq:2.3.2.4.1}.
+\end{proof}
+
+\begin{corollary}[8.1.8]
+\label{2.8.1.8}
+Under the hypotheses of \sref{2.8.1.7}, if $f:X\to Y$ is the structure morphism, and $Y'$ the closed sub-prescheme of $Y$ defined by $\sh{I}$, then the closed sub-prescheme $X' = f^{-1}(Y')$ of $X$ is defined by $\sh{I}\sh{O}_X$ (which is canonically isomorphic to $\sh{O}_X(1)$), from which we obtain a canonical short exact sequence
+\[
+\label{eq:2.8.1.8.1}
+  0 \to \sh{O}_X(1) \to \sh{O}_X \to \sh{O}_{X'} \to 0.
+\]
+\end{corollary}
+
+\begin{proof}
+\label{proof-2.8.1.8}
+This follows from \eref{2.8.1.7.1} and from \sref[I]{1.4.4.5}.
+\end{proof}
+
+\begin{env}[8.1.9]
+\label{2.8.1.9}
+Under the hypotheses of \sref{2.8.1.7}, we can be more precise about the structure of the $\sh{I}_{n,X}$.
+Note that the homomorphism
+\[
+  \widetilde{u}_{-1}: \sh{O}_X \to \sh{O}_X(-1)
+\]
+canonically corresponds to a section $s$ of $\sh{O}_X(-1)$ over $X$, which we call the \emph{canonical section} (relative to $\sh{I}$) \sref[0]{0.5.1.1}.
+In Diagram \eref{eq:2.8.1.5.5}, the horizontal arrows are isomorphisms \sref{2.3.2.7}; by replacing $h$ with $k$, and $k$ with $-1$ in this diagram, we obtain that $\widetilde{u}_k = 1_k \otimes \widetilde{u}_{-1}$ (where $1_k$ denotes the identity on $\sh{O}_X(h)$), or, equivalently, that the homomorphism $\widetilde{u}_k$ is given exactly by \emph{tensoring with the canonical section $s$} (for all $k\in\bb{Z}$).
+The homomorphism $\widetilde{u}$ \eref{eq:2.8.1.5.6} can then be understood in the same way.
+
+Thus, for all $n\geq0$, the homomorphism $\widetilde{v}_n: \sh{O}_X(n)\to\sh{O}_X$ is given exactly by tensoring with $s^{\otimes n}$;
+we thus deduce:
+\end{env}
+
+\begin{corollary}[8.1.10]
+\label{2.8.1.10}
+With the notation of \sref{2.8.1.8}, the underlying space of $X'$ is the set of $x\in X$ such that $s(x)=0$, where $s$ denotes the canonical section of $\sh{O}_X(-1)$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-2.8.1.10}
+Indeed, if $c_x$ is a generator of the fibre $(\sh{O}_X(1))_x$ at a point $x$, then $s_x\otimes c_x$ is canonically identified with a generator of the fibre of $\sh{I}_{1,X}$ at the point $x$, and is thus invertible if and only if $s_x\not\in\fk{m}_x(\sh{O}_x(-1))_x$, or, equivalently, if and only if $s(x)\neq0$.
+\end{proof}
+
+\begin{proposition}
+\label{2.8.1.11}
+Let $Y$ be an integral prescheme, $\sh{I}$ a quasi-coherent fractional ideal of $\sh{R}(Y)$, and $X$ the $Y$-scheme given by blowing up $\sh{I}$.
+Then $\sh{I}\sh{O}_X$ is an invertible $\sh{O}_X$-module that is very ample for $Y$.
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.1.11}
+The question being local on $Y$ \sref{2.4.4.5}, we can reduce to the case where $Y=\Spec(A)$, with $A$ some integral ring of ring of fractions $K$, and $\sh{I}=\widetilde{\fk{I}}$, with $\fk{I}$ some fractional ideal of $K$;
+there then exists an element $a\neq0$ of $A$ such that $a\fk{I}\subset A$.
+Let $S = \bigoplus_{n\geq0}\fk{I}^n$;
+the map $x\mapsto ax$ is an $A$-isomorphism from $\fk{I}^{n+1} = (S(1))_n$ to $a\fk{I}^{n+1} = a\fk{I}S_n \subset \fk{I}^n = S_n$,
+\oldpage[II]{157}
+and thus defines a (TN)-isomorphism of degree zero of graded $S$-modules $S_+(1)\to a\fk{I}S$.
+On the other hand, $x\mapsto a^{-1}x$ is an isomorphism of degree zero of graded $S$-modules $a\fk{I}S \xrightarrow{\sim} \fk{I}S$.
+We thus obtain, by composition \sref{2.3.2.4}, an isomorphism of $\sh{O}_X$-modules $\sh{O}_X(1) \xrightarrow{\sim} \sh{I}\sh{O}_X$, and, since $S$ is generated by $S_1=\fk{I}$, $\sh{O}_X(1)$ is invertible \sref{2.3.2.5} and very ample (\sref{2.4.4.3} and \sref{2.4.4.9}), whence our claim.
+\end{proof}
+
+
+\subsection{Preliminary results on the localisation of graded rings}
+\label{subsection:2.8.2}
 
 % \subsection{Quasi-coherent sheaves on projective cones}
 % \label{subsection:2.8.12}
