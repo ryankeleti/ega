@@ -15,7 +15,7 @@ In this chapter and the following, we will constantly use the following notation
   \item $\Spec(A)=$ \emph{set of prime ideals} of $A$, also called the \emph{prime spectrum} of $A$; for $x\in X=\Spec(A)$, it will often be convenient to write $\mathfrak{j}_x$ instead of $x$.
     For $\Spec(A)$ to be \emph{empty}, it is necessary and sufficient for the ring $A$ to be $0$.
   \item $A_x=A_{\mathfrak{j}_x}=$ \emph{(local) ring of fractions $S^{-1}A$}, where $S=A\setmin\mathfrak{j}_x$.
-  \item $\mathfrak{m}_x=\mathfrak{j}_x A_{\mathfrak{j}_x}=$ \emph{maximal ideal of $A$}.
+  \item $\mathfrak{m}_x=\mathfrak{j}_x A_{\mathfrak{j}_x}=$ \emph{maximal ideal of $A_x$}.
   \item $\kres(x)=A_x/\mathfrak{m}_x=$ \emph{residue field of $A_x$}, canonically isomorphic to the field of fractions of the integral ring $A/\mathfrak{j}_x$, with which we identify it.
   \item $f(x)=$ \emph{class of $f$ mod.~$\mathfrak{j}_x$} in $A/\mathfrak{j}_x\subset\kres(x)$, for $f\in A$ and $x\in X$.
     We also say that $f(x)$ is the \emph{value} of $f$ at a point $x\in\Spec(A)$; the equations $f(x)=0$ and $f\in\mathfrak{j}_x$ are \emph{equivalent}.
@@ -242,6 +242,7 @@ We denote by $\vphi^x$ the injective homomorphism from $A'/\vphi^{-1}(\mathfrak{
 \[
   \vphi^x:\kres({}^a\vphi(x))\to\kres(x);
 \]
+\erratum[II]{}
 for each $f'\in A'$, we therefore have, by definition,
 \[
   \vphi^x(f'({}^a\vphi(x)))=(\vphi(f'))(x)\qquad(x\in X).
@@ -329,7 +330,7 @@ For ${}^a\vphi(X)$ to be dense in $X'$, it is necessary and sufficient for each 
 
 \begin{proof}
 \label{proof-1.1.2.7}
-Applying Equation~\hyperref[1.1.2.2]{(1.2.2.3)} to the ideal $\mathfrak{a}=(0)$, we have $\widetilde{{}^a\vphi(X)}=V(\Ker\vphi)$, and for $V(\Ker\vphi)=X$ to hold, it is necessary and sufficient for $\Ker\vphi$ to be contained in all the prime ideals of $A'$, or, equivalent, in the nilradical $\rad'$ of $A'$.
+Applying Equation~\hyperref[1.1.2.2]{(1.2.2.3)} to the ideal $\mathfrak{a}=(0)$, we have $\widetilde{{}^a\vphi(X)}=V(\Ker\vphi)$, and for \erratum[II]{$V(\Ker\vphi)=X'$} to hold, it is necessary and sufficient for $\Ker\vphi$ to be contained in all the prime ideals of \erratum[II]{$A'$, or, equivalently, in the nilradical $\rad'$ of $A'$.}
 \end{proof}
 
 \subsection{Sheaf associated to a module}
@@ -647,7 +648,7 @@ By Corollary~\sref{1.1.3.12}, the homomorphism $\widetilde{\vphi}:\widetilde{B}\
 In a similar way, the data of a $B$-module $N$ is the same as the data of an $A$-module $N$ and an $A$-homomorphism $\psi:B\otimes_A N\to N$ such that the diagram
 \[
   \xymatrix{
-    B\otimes_A B\otimes_A B\ar[r]^{\vphi\otimes 1}\ar[d]_{1\otimes\psi} &
+    B\otimes_A B\otimes_A N\ar[r]^{\vphi\otimes 1}\ar[d]_{1\otimes\psi} &
     B\otimes_A N\ar[d]^\psi\\
     B\otimes_A N\ar[r]^\psi &
     N
@@ -1029,6 +1030,7 @@ We note that $\vphi$ is entirely determined by $\Phi$, since we have, by definit
 
 \begin{theorem}[1.7.3]
 \label{1.1.7.3}
+\footnote{\emph{[Trans.] See \hyperref[subsection:1.1.8]{(1.8)} and the footnote there.}}
 Let $(X,\sh{O}_X)$  $(Y,\sh{O}_Y)$ be affine schemes.
 For a morphism of ringed spaces $(\psi,\theta):(X,\sh{O}_X)\to(Y,\sh{O}_Y)$ to be of the form $({}^a\vphi,\widetilde{\vphi})$, where $\vphi$ is a homomorphism of rings $A(Y)\to A(X)$, it is necessary and sufficient that, for each $x\in X$, $\theta_x^\sharp$ is a local homomorphism: $\sh{O}_{\psi(x)}\to\sh{O}_x$.
 \end{theorem}
