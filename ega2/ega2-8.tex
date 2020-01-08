@@ -295,7 +295,64 @@ We define
   S^\leq = \bigoplus_{n\leq0} S_n
 \tag{8.2.1.1}
 \]
-which are both graded subrings of 
+which are both graded subrings of $S$, in only positive and negative degrees (respectively).
+If $f$ is a homogeneous elements of degree $d$ (positive or negative) of $S$, then the ring of fraction $S_f=S'$ is again endowed with the structure of a graded ring, by taking $S'_n$ ($n\in\bb{Z}$) to be the set of the $x/f^k$ for $x\in S_{n+kd}$ ($k\geq0$);
+we define $S_{(f)}=S'_0$, and will write $S_f^\geq$ and $S_f^\leq$ for $S^{'\geq}$ and $S^{'\leq}$ (respectively).
+If $d>0$, then
+\[
+\label{eq:2.8.2.1.2}
+  (S^\geq)_f = S_f
+\tag{8.2.1.2}
+\]
+since, if $x\in S_{n+kd}$ with $n+kd<0$, then we can write $x/f^k = xf^h/f^{h+k}$, and we also have that $n+(h+k)d>0$ for $h$ sufficiently large and $>0$.
+We thus conclude, by definition, that
+\[
+\label{eq:2.8.2.1.3}
+  (S^\geq)_{(f)} = (S_f^\geq)_0 = S_{(f)}.
+\tag{8.2.1.3}
+\]
+
+If $M$ is a graded $S$-module, then we similarly define
+\[
+\label{eq:2.8.2.1.4}
+  M^\geq = \bigoplus_{n\geq0} M_n,
+  \qquad
+  M^\leq = \bigoplus_{n\leq0} M_n
+\tag{8.2.1.4}
+\]
+which are (respectively) a graded $S^\geq$-module and a graded $S^\leq$-module, and their intersection is the $S_0$ module $M_0$.
+If $f\in S_d$, then we define $M_f$ to be the graded $S_f$-module whose elements of degree $n$ are the $z/f^k$ for $z\in M_{n+kd}$ ($k\geq0$);
+we denote by $M_{(f)}$ the set of elements of degree zero of $M_f$, and this is an $S_{(f)}$-module, and we will write $M_f^\geq$ and $M_f^\leq$ to mean $(M_f)^\geq$ and $(M_f)^\leq$ (respectively).
+If $d>0$, then we see, as above, that
+\[
+\label{eq:2.8.2.1.5}
+  (M^\geq)_f = M_f
+\tag{8.2.1.5}
+\]
+and
+\[
+\label{eq:2.8.2.1.6}
+  (M^\geq)_{(f)} = (M_f^\geq)_0 = M_{(f)}.
+\tag{8.2.1.6}
+\]
+\end{env}
+
+\begin{env}[8.2.2]
+\label{2.8.2.2}
+Let $\bb{z}$ be an indeterminate, we we will call the \emph{homogenisation variable}.
+If $S$ is a graded ring (in positive or negative degrees), then the polynomial algebra\footnote{There should be no confusion with the use of the notation $\widehat{S}$ denoting the completed separation of a ring.}
+\[
+\label{eq:2.8.2.2.1}
+  \widehat{S} = S[\bb{z}]
+\tag{8.2.2.1}
+\]
+\oldpage[II]{158}
+is a graded $S$-algebra, where we define the degree of $f\bb{z}^n$ ($n\geq0$), with $f$ homogeneous, as
+\[
+\label{eq:2.8.2.2.2}
+  \deg(f\bb{z}^n) = n+\deg f.
+\tag{8.2.2.2}
+\]
 \end{env}
 
 % \subsection{Quasi-coherent sheaves on projective cones}
