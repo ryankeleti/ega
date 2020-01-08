@@ -11,12 +11,12 @@ Let $Y$ be a prescheme, and, for every integer $n\geq 0$, let $\sh{I}_n$ be a qu
 \[
 \label{eq:2.8.1.1.1}
   \sh{I}_0=\sh{O}_Y,\ \sh{I}_n\subset\sh{I}_m\text{ for }m\leq n,
-  \tag{8.1.1.1}
+\tag{8.1.1.1}
 \]
 \[
 \label{eq:2.8.1.1.2}
   \sh{I}_m\sh{I}_n\subset\sh{I}_{m+n}\text{ for any }m,n.
-  \tag{8.1.1.2}
+\tag{8.1.1.2}
 \]
 
 \oldpage[II]{153}
@@ -24,14 +24,14 @@ We note that these hypotheses imply
 \[
 \label{eq:2.8.1.1.3}
   \sh{I}_1^n\subset\sh{I}_n.
-  \tag{8.1.1.3}
+\tag{8.1.1.3}
 \]
 
 Set
 \[
 \label{eq:2.8.1.1.4}
   \sh{S}=\bigoplus_{n\geq 0}\sh{I}_n.
-  \tag{8.1.1.4}
+\tag{8.1.1.4}
 \]
 
 It follows from \eref{eq:2.8.1.1.1} and \eref{eq:2.8.1.1.2} that $\sh{S}$ is a quasi-coherent graded $\sh{O}_Y$-algebra, and thus defines a $Y$-scheme $X=\Proj(\sh{S})$.
@@ -100,17 +100,20 @@ By definition, the injection homomorphisms $\sh{I}_{n+1}\to\sh{I}_n$ \eref{eq:2.
 \[
 \label{eq:2.8.1.5.1}
   u_k: \sh{S}_+(k+1) \to \sh{S}(k);
+\tag{8.1.5.1}
 \]
 since $\sh{S}_+(k+1)$ and $\sh{S}(k+1)$ are canonically \textbf{(TN)}-isomorphic, they give a canonical correspondence between $u_k$ and an injective homomorphism of $\sh{O}_X$-modules \sref{2.3.4.2}:
 \[
 \label{eq:2.8.1.5.2}
   \widetilde{u}_k: \sh{O}_X(k+1) \to \sh{O}_X(k).
+\tag{8.1.5.2}
 \]
 
 Recall as well \sref{2.3.2.6} that we have defined canonical homomorphisms
 \[
 \label{eq:2.8.1.5.3}
   \lambda: \sh{O}_X(h) \otimes_{\sh{O}_X} \sh{O}_X(k) \to \sh{O}_X(h+k)
+\tag{8.1.5.3}
 \]
 and, since the diagram
 \[
@@ -129,6 +132,7 @@ commutes, it follows from the functoriality of the $\lambda$ \sref{2.3.2.6} that
 \[
 \label{eq:2.8.1.5.4}
   \sh{S}_X = \bigoplus_{n\in\bb{Z}}\sh{O}_X(n).
+\tag{8.1.5.4}
 \]
 Furthermore, the diagram
 \[
@@ -161,6 +165,7 @@ We can thus say that the $\widetilde{u}_k$ define an \emph{injective homomorphis
 \[
 \label{eq:2.8.1.5.6}
   \widetilde{u}: \sh{S}_X(1) \to \sh{S}_X.
+\tag{8.1.5.6}
 \]
 \end{env}
 
@@ -187,11 +192,13 @@ We thus deduce the following inclusions:
 \label{eq:2.8.1.6.1}
   \sh{I}_{0,X} = \sh{O}_X, \quad \sh{I}_{n,X} \subset \sh{I}_{m,X}
   \qquad\mbox{for $0\leq m\leq n$;}
+\tag{8.1.6.1}
 \]
 \[
 \label{eq:2.8.1.6.2}
   \sh{I}_{m,X}\sh{I}_{n,X} \subset \sh{I}_{m+n,X}
   \qquad\qquad\mbox{for $m\geq0$, $n\geq0$.}
+\tag{8.1.6.2}
 \]
 \end{env}
 
@@ -204,6 +211,7 @@ We then have, for all $n>0$, a canonical isomorphism
 \[
 \label{eq:2.8.1.7.1}
   \sh{O}_X(n) \xrightarrow{\sim} \sh{I}^n\sh{O}_X = \sh{I}_{n,X}
+\tag{8.1.7.1}
 \]
 (cf. \sref[0]{0.4.3.5}), and thus that $\sh{I}^n\sh{O}_X$ is a very-ample invertible $\sh{O}_X$-module if $n>0$.
 \end{proposition}
@@ -220,6 +228,7 @@ Under the hypotheses of \sref{2.8.1.7}, if $f:X\to Y$ is the structure morphism,
 \[
 \label{eq:2.8.1.8.1}
   0 \to \sh{O}_X(1) \to \sh{O}_X \to \sh{O}_{X'} \to 0.
+\tag{8.1.8.1}
 \]
 \end{corollary}
 
@@ -274,6 +283,19 @@ We thus obtain, by composition \sref{2.3.2.4}, an isomorphism of $\sh{O}_X$-modu
 
 \subsection{Preliminary results on the localisation of graded rings}
 \label{subsection:2.8.2}
+
+\begin{env}[8.2.1]
+\label{2.8.2.1}
+Let $S$ be a graded ring, but not assumed (for the moment) to be only in positive degree.
+We define
+\[
+\label{eq:2.8.2.1.1}
+  S^\geq = \bigoplus_{n\geq0} S_n,
+  \qquad
+  S^\leq = \bigoplus_{n\leq0} S_n
+\tag{8.2.1.1}
+\]
+\end{env}
 
 % \subsection{Quasi-coherent sheaves on projective cones}
 % \label{subsection:2.8.12}
