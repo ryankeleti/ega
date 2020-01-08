@@ -340,7 +340,7 @@ and
 \begin{env}[8.2.2]
 \label{2.8.2.2}
 Let $\bb{z}$ be an indeterminate, we we will call the \emph{homogenisation variable}.
-If $S$ is a graded ring (in positive or negative degrees), then the polynomial algebra\footnote{There should be no confusion with the use of the notation $\widehat{S}$ denoting the completed separation of a ring.}
+If $S$ is a graded ring (in positive or negative degrees), then the polynomial algebra\footnote{This should not be confused with the use of the notation $\widehat{S}$ to denote the completed separation of a ring.}
 \[
 \label{eq:2.8.2.2.1}
   \widehat{S} = S[\bb{z}]
@@ -354,6 +354,172 @@ is a graded $S$-algebra, where we define the degree of $f\bb{z}^n$ ($n\geq0$), w
 \tag{8.2.2.2}
 \]
 \end{env}
+
+\begin{lemma}[8.2.3]
+\label{2.8.2.3}
+\begin{enumerate}
+  \item[\rm{(i)}] There are canonical isomorphisms of (non-graded) rings
+    \[
+    \label{eq:2.8.2.3.1}
+      \widehat{S}_{(\bb{z})}
+      \xrightarrow{\sim}
+      \widehat{S}/(\bb{z}-1)\widehat{S}
+      \xrightarrow{\sim}
+      S.
+    \tag{8.2.3.1}
+    \]
+  \item[\rm{(ii)}] There is a canonical isomorphism of (non-graded) rings
+    \[
+    \label{eq:2.8.2.3.2}
+      \widehat{S}_{(f)} \xrightarrow{\sim} S_f^\leq
+    \tag{8.2.3.2}
+    \]
+    for all $f\in S_d$ with $d>0$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+\label{proof-2.8.2.3}
+The first of the isomorphisms in \eref{eq:2.8.2.3.1} was defined in \sref{2.2.2.5}, and the second is trivial;
+the isomorphism $\widehat{S}_{(\bb{z})} \xrightarrow{\sim} S$ thus defined thus gives a correspondence between $x\bb{z}^n/\bb{z}^{n+k}$ (where $\deg(x) = k$ for $k\geq -n$) and the element $x$.
+The homomorphism \eref{eq:2.8.2.3.2} gives a correspondence between $x\bb{z}^n/f^k$ (where $\deg(x) = kd-n$) and the element $x/f^k$ of degree $-n$ in $S_f^\leq$, and it is again clear that this does indeed give an isomorphism.
+\end{proof}
+
+\begin{env}[8.2.4]
+\label{2.8.2.4}
+Let $M$ be a graded $S$-module.
+It is clear that the $S$-module
+\[
+\label{eq:2.8.2.4.1}
+  \widehat{M} = M \otimes_S \widehat{S} = M \otimes_S S[\bb{z}]
+\tag{8.2.4.1}
+\]
+is the direct sum of the $S$-modules $M\otimes S\bb{z}^n$, and thus of the abelian groups $M_k\otimes S\bb{z}^n$ ($k\in\bb{Z}$, $n\geq0$);
+we define on $\widehat{M}$ the structure of a graded $\widehat{S}$-module by setting
+\[
+\label{eq:2.8.2.4.2}
+  \deg(x\otimes\bb{z}^n) = n+\deg x
+\tag{8.2.4.2}
+\]
+for all homogeneous $x$ in $M$.
+We leave it to the reader to prove the analogue of \sref{2.8.2.3}:
+\end{env}
+
+\begin{lemma}[8.2.5]
+\label{2.8.2.5}
+\begin{enumerate}
+  \item[\rm{(i)}] There is a canonical di-isomorphism of (non-graded) modules
+    \[
+    \label{eq:2.8.2.5.1}
+      \widehat{M}_{(\bb{z})} \xrightarrow{\sim} M.
+    \tag{8.2.5.1}
+    \]
+  \item[\rm{(ii)}] For all $f\in S_d$ ($d>0$), there is a di-isomorphism of (non-graded) modules
+    \[
+    \label{eq:2.8.2.5.2}
+      \widehat{M}_{(f)} \xrightarrow{\sim} M_f^\leq.
+    \tag{8.2.5.2}
+    \]
+\end{enumerate}
+\end{lemma}
+
+\begin{env}[8.2.6]
+\label{2.8.2.6}
+Let $S$ be a \emph{positively}-graded ring, and consider the decreasing sequence of graded ideals of $S$
+\[
+\label{eq:2.8.2.6.1}
+  S_{[n]} = \bigoplus_{m\geq n} S_m
+  \qquad\mbox{($n\geq0$)}
+\tag{8.2.6.1}
+\]
+(so, in particular, we have $S_{[0]}=S$ and $S_{[1]}=S_+$).
+Since it is evident that $S_{[m]}S_{[n]} \subset S_{[m+n]}$, we can define a \emph{graded ring} $S^\natural$ by setting
+\[
+\label{eq:2.8.2.6.2}
+  S^\natural = \bigoplus_{n\geq0} S_n^\natural
+  \quad
+  \text{with}
+  \quad
+  S_n^\natural = S_{[n]}.
+\tag{8.2.6.2}
+\]
+$S_0^\natural$ is then the ring $S$ considered as a \emph{non-graded} ring, and $S^\natural$ is thus an $S_0^\natural$-algebra.
+For every homogeneous element $f\in S_d$ ($d>0$), we denote by $f^\natural$ the element $f$ considered as belonging to $S_{[d]} = S_d^\natural$.
+With this notation:
+\end{env}
+
+\oldpage[II]{159}
+\begin{lemma}[8.2.7]
+\label{2.8.2.7}
+Let $S$ be a positively-graded ring, and $f$ a homogeneous element of $S_d$ ($d>0$).
+There are canonical ring isomorphisms
+\[
+\label{eq:2.8.2.7.1}
+  S_f \xrightarrow{\sim} \bigoplus_{n\in\bb{Z}} S(n)_{(f)}
+\tag{8.2.7.1}
+\]
+\[
+\label{eq:2.8.2.7.2}
+  (S_f^\geq)_{f/1} \xrightarrow{\sim} S_f
+\tag{8.2.7.2}
+\]
+\[
+\label{eq:2.8.2.7.3}
+  S_{(f^\natural)}^\natural \xrightarrow{\sim} S_f^\geq
+\tag{8.2.7.3}
+\]
+where the first two are isomorphisms of graded rings.
+\end{lemma}
+
+\begin{proof}
+\label{proof-2.8.2.7}
+It is immediate, by definition, that we have $(S_f)_n = (S(n)_f)_0$, whence the isomorphism in \eref{eq:2.8.2.7.1}, which is exactly the identity.
+Next, since $f/1$ is invertible in $S_f$, there is a canonical isomorphism $S_f \xrightarrow{\sim} (S_f^\geq)_{f/1} = (S_f)_{f/1}$, by \eref{eq:2.8.2.1.2} applied to $S_f$;
+the inverse isomorphism is, by definition, the isomorphism in \eref{eq:2.8.2.7.2}.
+Finally, if $x = \sum_{m\geq n}y_m$ is an element of $S_{[n]}$ with $n=kd$, then the element $x/(f^\natural)^k$ corresponds to the element $\sum_m y_m/f^k$ of $S_f^\geq$, and we can quickly verify that this defines an isomorphism \eref{eq:2.8.2.7.3}.
+\end{proof}
+
+\begin{env}[8.2.8]
+\label{2.8.2.8}
+If $M$ is a graded $S$-module, then we similarly define, for all $n\in\bb{Z}$,
+\[
+\label{eq:2.8.2.8.1}
+  M_{[n]} = \bigoplus_{m\geq n} M_m
+\tag{8.2.8.1}
+\]
+and, since $S_{[m]}M_{[n]} \subset M_{[m+n]}$ ($m\geq0$), we can define a graded $S^\natural$-module $M^\natural$ by setting
+\[
+\label{eq:2.8.2.8.2}
+  M^\natural = \bigoplus_{n\in\bb{Z}}
+  \quad
+  \text{with}
+  \quad
+  M_n^\natural = M_{[n]}.
+\tag{8.2.8.2}
+\]
+\end{env}
+
+We leave to the reader the proof of:
+\begin{lemma}[8.2.9]
+\label{2.8.2.9}
+With the notation of \sref{2.8.2.7} and \sref{2.8.2.8}, there are canonical di-isomorphisms of modules
+\[
+\label{eq:2.8.2.9.1}
+  M_f \xrightarrow{\sim} \bigoplus_{n\in\bb{Z}} M(n)_{(f)}
+\tag{8.2.9.1}
+\]
+\[
+\label{eq:2.8.2.9.2}
+  (M_f^\geq)_{f/1} \xrightarrow{\sim} M_f
+\tag{8.2.9.2}
+\]
+\[
+\label{eq:2.8.2.9.3}
+  M_{(f^\natural)}^\natural \xrightarrow{\sim} M_f^\geq
+\tag{8.2.9.3}
+\]
+where the first two are di-isomorphisms of graded modules.
+\end{lemma}
 
 % \subsection{Quasi-coherent sheaves on projective cones}
 % \label{subsection:2.8.12}
