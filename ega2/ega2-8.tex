@@ -44,7 +44,7 @@ If we then replace the $\sh{I}_n$ by the $\sh{I}_n\sh{J}^n$, and, in doing so, r
 Suppose that $Y$ is \emph{locally integral}, so that the sheaf $\sh{R}(Y)$ of rational functions is a quasi-coherent $\sh{O}_Y$-algebra \sref[1]{1.7.3.7}.
 We say that a sub-$\sh{O}_Y$-module $\sh{I}$ of $\sh{R}(Y)$ is a \emph{fractional ideal} of $\sh{R}(Y)$ if it is of \emph{finite type} \sref[0]{0.5.2.1}.
 Suppose we have, for all $n\geq0$, a quasi-coherent fractional ideal $\sh{I}_n$ of $\sh{R}(Y)$, such that $\sh{I}_0 = \sh{O}_Y$, and such that condition \eref{eq:2.8.1.1.2} (but not necessarily the second condition \eref{eq:2.8.1.1.1}) is satisfied;
-we can then again define a graded quasi-coherent $\sh{O}_Y$-algebra by Equation \eref{eq:2.8.1.1.4}, and the corresponding $Y$-scheme $X = \Proj(\sh{S})$;
+we can then again define a quasi-coherent graded $\sh{O}_Y$-algebra by Equation \eref{eq:2.8.1.1.4}, and the corresponding $Y$-scheme $X = \Proj(\sh{S})$;
 we will again have a canonical isomorphism from $X$ to $X_{{\sh{J}}}$ for every \emph{invertible} fractional ideal $\sh{J}$ of $\sh{R}(Y)$.
 \end{env}
 
@@ -128,7 +128,7 @@ and, since the diagram
   & \sh{S}(h+k+l)
   }
 \]
-commutes, it follows from the functoriality of the $\lambda$ \sref{2.3.2.6} that the homomorphisms \eref{eq:2.8.1.5.3} define the structure of a \emph{graded quasi-coherent $\sh{O}_X$-algebra} on
+commutes, it follows from the functoriality of the $\lambda$ \sref{2.3.2.6} that the homomorphisms \eref{eq:2.8.1.5.3} define the structure of a \emph{quasi-coherent graded $\sh{O}_X$-algebra} on
 \[
 \label{eq:2.8.1.5.4}
   \sh{S}_X = \bigoplus_{n\in\bb{Z}}\sh{O}_X(n).
@@ -938,7 +938,78 @@ This follows immediately from \sref{2.8.3.5} and \sref{2.8.3.6} by noting that, 
 
 \begin{remark}[8.3.9]
 \label{2.8.3.9}
-The pointed affine cone corresponds to the graded $\sh{O}_Y$-algebra $\sh{O}_Y[T]$ (where $T$ is an indeterminate)
+The pointed affine cone corresponding to the graded $\sh{O}_Y$-algebra $\sh{O}_Y[T]$ (where $T$ is an indeterminate) can be identified with $G_m=\Spec(\sh{O}_Y[T,T^{-1}])$, since it is exactly $C_T$, as we have seen in \sref{2.8.3.2} (see \sref{2.8.4.4} for a more general result).
+This prescheme is canonical endowed with the structure of a ``\emph{$Y$-scheme in commutative groups}''.
+This idea will be explained in detail later on, but, for now, can be quickly summarised as follows.
+A $Y$-scheme in groups is a $Y$-scheme $G$ endowed with two $Y$-morphisms, $p:G\times_Y G\to G$ and $s:G\to G$, that satisfy conditions formally analogous to the axioms of the composition law and the symmetry law of a group: the diagram
+\[
+  \xymatrix{
+    G \times G \times G
+      \ar[r]^{p \times 1}
+      \ar[d]_{1 \times p}
+  & G \times G
+      \ar[d]^{p}
+  \\G \times G
+      \ar[r]_{p}
+  & G
+  }
+\]
+should commute (``associativity''), and there should be a condition which corresponds to the fact that, for groups, the maps
+\[
+  (x,y)
+  \mapsto
+  (x,x^{-1},y)
+  \mapsto
+  (x,x^{-1}y)
+  \mapsto
+  x(x^{-1}y)
+\]
+and
+\[
+  (x,y)
+  \mapsto
+  (x,x^{-1},y)
+  \mapsto
+  (x,yx^{-1})
+  \mapsto
+  (yx^{-1})x
+\]
+should both reduce to $(x,y)\mapsto y$;
+the sequence of morphisms corresponding, for example, to the first composite map is
+\[
+  G \times G
+  \xrightarrow{(1,s) \times 1}
+  G \times G \times G
+  \xrightarrow{1 \times p}
+  G\times G
+  \xrightarrow{p}
+  G
+\]
+and the reader should write down the second sequence.
+
+\oldpage[II]{167}
+It is immediate \sref[I]{1.3.4.3} that the data of a structure of a $Y$-scheme in groups on a $Y$-scheme $G$ is equivalent to the data, for \emph{every} $Y$-prescheme $Z$, of a \emph{group} structure on the set $\Hom_Y(Z,G)$, where these structures should be such that, for every $Y$-morphism $Z\to Z'$, the corresponding map $\Hom_Y(Z',G)\to\Hom_Y(Z,G)$ is a group homomorphism.
+In the particular case of $G_m$ that we consider here, $\Hom_Y(Z,G)$ can be identified with the set of $Z$-sections of $Z\times_Y G_m$ \sref[I]{1.3.3.14}, and thus with the set of $Z$-sections of $\Spec(\sh{O}_Z[T,T^{-1}])$;
+finally, the same reasoning as in \sref[I]{1.3.3.15} shows that this set is canonically identified with the set of \emph{invertible} elements of the ring $\Gamma(Z,\sh{O}_Z)$, and the group structure on this set is the structure coming from the multiplication in the ring $\Gamma(Z,\sh{O}_Z)$.
+The reader can verify that the morphisms $p$ and $s$ from above are obtained in the following way: they correspond, by \sref{2.1.2.7} and \sref{2.1.4.6}, to the homomorphisms of $\sh{O}_Y$-algebras
+\begin{align*}
+  \pi: &\sh{O}_Y[T,T^{-1}] \to \sh{O}_Y[T,T^{-1},T',T^{'-1}]
+\\\sigma: &\sh{O}_Y[T,T^{-1}] \to \sh{O}_Y[T,T^{-1}]
+\end{align*}
+and are entirely defined by the data of $\pi(T)=TT'$ and $\sigma(T)=T^{-1}$.
+
+With this in mind, $G_m$ can be considered as a ``\emph{universal domain of operators}'' for every \emph{affine cone} $C=\Spec(\sh{S})$, where $\sh{S}$ is a quasi-coherent positively-graded $\sh{O}_Y$-algebra.
+This means that we can canonically define a $Y$-morphism $G_m\times_Y C\to C$ which has the formal properties of an external law of a set endowed with a group of operators;
+or, again, as above for schemes in groups, we can give, for every $Y$-prescheme $Z$, an external law on $\Hom_Y(Z,C)$, having the group $\Hom_Y(Z,G_m)$ as its set of operators, with the usual axioms of sets endowed with a group of operators, and a compatibility condition with respect to the $Y$-morphisms $Z\to Z'$.
+In the current case, the morphism $G_m\times_Y C\to C$ is defined by the data of a homomorphism of $\sh{O}_Y$-algebras $\sh{S} \to \sh{S}\otimes_{\sh{O}_Y}\sh{O}_Y[T,T^{-1}] = \sh{S}[T,T^{-1}]$, which associates, to each section $s_n\in\Gamma(U,\sh{S}_n)$ (where $U$ is an open subset of $Y$), the section $s_n T^n\in\Gamma(U,\sh{S}\otimes_{\sh{O}_Y}\sh{O}_Y[T,T^{-1}])$.
+
+Conversely, suppose that we are given a quasi-coherent, \emph{a priori non-graded}, $\sh{O}_Y$-algebra, and, on $C=\Spec(\sh{S})$, a structure of a ``\emph{$Y$-scheme in sets endowed with a group of operators}'' that has the $Y$-scheme in groups $G_m$ as its domain of operators;
+then we canonically obtain a \emph{grading} of $\sh{O}_Y$-algebras on $\sh{S}$.
+Indeed, the data of a $Y$-morphism $G_m\times_Y C\to C$ is equivalent to that of a homomorphism of $\sh{O}_Y$-algebras $\psi:\sh{S}\to\sh{S}[T,T^{-1}]$, which can be written as $\psi=\sum_{n\in\bb{Z}}\psi_n T^n$, where the $\psi_n:\sh{S}\to\sh{S}$ are homomorphisms of $\sh{O}_Y$-modules (with $\psi_n(s)=0$ except for finitely many $n$ for every section $s\in\Gamma(U,\sh{S})$, for any open subset $U$ of $Y$).
+We can then prove that the axioms of sets endowed with a group of operators imply that the $\psi_n(\sh{S})=\sh{S}_n$ define a grading (in positive or negative degree) of $\sh{O}_Y$-algebras on $\sh{S}$, with the $\psi_n$ being the corresponding projectors.
+We also have the notation of a structure of an ``\emph{affine cone}'' on every affine $Y$-scheme, defined in a ``geometric'' way without any reference to any prior grading.
+\oldpage[II]{168}
+We will not further develop this point of view here, and we leave the work of precisely formulating the definitions and results corresponding to the information given above to the reader.
 \end{remark}
 
 
