@@ -104,7 +104,7 @@
 
 % for marking changes following errata
 % use as \erratum[volume]{correction} to say where the erratum is given
-\newcommand{\erratum}[2][]{{#2}\marginpar{\footnotesize\textbf{{#1}}, Errata}}
+\newcommand{\erratum}[2][]{{#2}\marginpar{\footnotesize\textbf{Err}\textsubscript{#1}}}
 
 % for referencing equations, use as \eref{eq:chapter-number.x.y.z}.
 \newcommand{\eref}[1]{\hyperref[#1]{\normalfont{(\StrGobbleLeft{#1}{5})}}}
