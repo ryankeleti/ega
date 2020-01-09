@@ -1,4 +1,4 @@
-\section{Blowup schemes; projective cones; projective closure}
+\section{Blowup schemes; based cones; projective closure}
 \label{section:2.8}
 
 
@@ -677,12 +677,120 @@ It is immediate that $S_{n+1}=S_1S_n$ for $n\geq2$, but $S_1^n=K\bb{x}^n$ while 
 \end{remark}
 
 
-\subsection{Projective cones}
+\subsection{Based cones}
 \label{subsection:2.8.3}
 
 \begin{env}[8.3.1]
 \label{2.8.3.1}
+Let $Y$ be a prescheme;
+in all of this section, we will consider only \emph{$Y$-preschemes} and \emph{$Y$-morphisms}.
+Let $\sh{S}$ be a quasi-coherent \emph{positively}-graded $\sh{O}_Y$-algebra;
+\emph{we further assume that $\sh{S}_0=\sh{O}_Y$}.
+Following the notation introduced in \sref{2.8.2.2}, we let
+\[
+\label{eq:2.8.3.1.1}
+  \widehat{\sh{S}} = \sh{S}[\bb{z}] = \sh{S} \otimes_{\sh{O}_Y} \sh{O}_Y[\bb{z}]
+\tag{8.3.1.1}
+\]
+which we consider as a positively-graded $\sh{O}_Y$-algebra by defining the degrees as in \eref{eq:2.8.2.2.2}, so that, for every affine open subset $U$ of $Y$, we have
+\[
+  \Gamma(U,\widehat{\sh{S}}) = (\Gamma(U,\sh{S}))[\bb{z}].
+\]
+In what follows, we write
+\[
+\label{eq:2.8.3.1.2}
+  X = \Proj(\sh{S}),
+  \quad
+  C = \Spec(\sh{S}),
+  \quad
+  \widehat{C} = \Proj(\widehat{\sh{S}})
+\tag{8.3.1.2}
+\]
+(where, in the definition of $C$, we consider $\sh{S}$ as a non-graded $\sh{O}_Y$-algebra), and we say that $C$ (resp. $\widehat{C}$) is the \emph{affine cone} (resp. \emph{projective cone}) defined by $\sh{S}$;
+we will sometimes say ``cone'' instead of ``affine cone''.
+By an abuse of language, we also say that $C$ (resp. $\widehat{C}$) is the \emph{affine cone based at $X$} (resp. the \emph{projective cone based at $X$})\footnote{\emph{[Trans.] A more literal translation of the French (\emph{cône projetant affine/projectif}) would be the \emph{projecting affine/projective cone}, but it seems that this terminology already exists to mean something else.}}, with the implicit understanding that the prescheme $X$ is given in the form $\Proj(\sh{S})$;
+finally, we say that $\widehat{C}$ is the \emph{projective closure} of $C$ (with the data of $\sh{S}$ being implicit in the structure of $C$).
 \end{env}
+
+\begin{proposition}[8.3.2]
+\label{2.8.3.2}
+There exist canonical $Y$-morphisms
+\[
+\label{eq:2.8.3.2.1}
+  Y \xrightarrow{\epsilon} C \xrightarrow{i} \widehat{C}
+\tag{8.3.2.1}
+\]
+\[
+\label{eq:2.8.3.2.2}
+  X \xrightarrow{j} \widehat{C}
+\tag{8.3.2.2}
+\]
+such that $\epsilon$ and $j$ are closed immersions, and $i$ is an affine morphism, which is a dominant open immersion, for which
+\[
+\label{eq:2.8.3.2.3}
+  i(C) = \widehat{C}\setminus j(X);
+\tag{8.3.2.3}
+\]
+furthermore, $\widehat{C}$ is the smallest closed subprescheme of $\widehat{C}$ containing $i(C)$.
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.3.2}
+To define $i$, consider the open subset of $\widehat{C}$ given by
+\[
+\label{eq:2.8.3.2.4}
+  \widehat{C}_{\bb{z}} = \Spec(\widehat{\sh{S}}/(\bb{z}-1)\widehat{\sh{S}})
+\tag{8.3.2.4}
+\]
+\sref{2.3.1.4}, where $\bb{z}$ is canonically identified with a section of $\sh{S}$ over $Y$.
+The isomorphism $i: C\xrightarrow{\sim}\widehat{C}_{\bb{z}}$ then corresponds to the canonical isomorphism \eref{eq:2.8.2.3.1}
+\[
+  \widehat{\sh{S}}/(\bb{z}-1)\widehat{\sh{S}} \xrightarrow{\sim} \sh{S}.
+\]
+
+The morphism $\epsilon$ corresponds to the augmentation homomorphism $\sh{S}\to\sh{S}_0=\sh{O}_Y$, which has kernel $\sh{S}_+$ \sref{2.1.2.7}, and, since the latter is surjective, $\epsilon$ is a closed immersion \sref{2.1.4.10}.
+Finally, $j$ corresponds \sref{2.3.5.1} to the surjective homomorphism of degree zero $\widehat{\sh{S}}\to\sh{S}$, which restricts to the identity on $\sh{S}$ and is zero on $\bb{z}\widehat{\sh{S}}$, which is its kernel;
+$j$ is everywhere defined, and is a closed immersion, by \sref{2.3.6.2}.
+
+To prove the other claims of \sref{2.8.3.2}, we can clearly restrict to the case where $Y=\Spec(A)$ is affine, and $\sh{S}=\widetilde{S}$, with $S$ a graded $A$-algebra, whence $\widehat{\sh{S}}=(\widehat{S})^\sim$;
+the homogeneous elements $f$ of $S_+$ can then be identified with sections of $\widehat{\sh{S}}$ over $Y$, and the open subset of $\widehat{C}$, denoted $D_+(f)$ in \sref{2.2.3.3}, can then be written as $\widehat{C}_f$ \sref{2.3.1.4};
+similarly, the open subset of $C$ denoted $D(f)$ in \sref[I]{1.1.1.1} can be written as $C_f$ \sref[0]{0.5.5.2}.
+With this in mind, it follows from \sref{2.2.3.14} and from the definition of $\widehat{S}$ that, in this case, the open subsets $\widehat{C}_{\bb{z}}=i(C)$ and $\widehat{C}_f$ (with $f$ homogeneous in $S_+$) form a \emph{cover} of $\widehat{C}$.
+Furthermore, with this notation,
+\[
+\label{eq:2.8.3.2.5}
+  i^{-1}(\widehat{C}_f) = C_f;
+\tag{8.3.2.5}
+\]
+indeed, $\widehat{C}_f\cap i(C) = \widehat{C}_f\cap\widehat{C}_{\bb{z}} = \widehat{C}_{f\bb{z}} = \Spec(\widehat{S}_{(f\bb{z})})$.
+But, if $d=\deg(f)$, then $\widehat{S}_{(f\bb{z})}$ is canonically isomorphic to $(\widehat{S}_{(\bb{z})})_{f/\bb{z}^d}$ \sref{2.2.2.2}, and it follows from the definition of the isomorphism in \eref{eq:2.8.2.3.1} that the image of $(\widehat{S}_{(\bb{z})})_{f/\bb{z}^d}$ under the corresponding isomorphism of rings of fractions is exactly $S_f$.
+Since $C_f=\Spec(S_f)$, this proves \eref{2.8.3.2.5} and shows, at the same time, that the morphism $i$ is affine;
+furthermore, the restriction of $i$ to $C_f$, thought of as a morphism to $\widehat{C}_f$, corresponds \sref[I]{1.1.7.3} to the canonical homomorphism $\widehat{S}_{(f)}\to\widehat{S}_{(f\bb{z})}$, and, by the above and \eref{eq:2.8.2.3.2}, we can claim the following result:
+\begin{env}[8.3.2.6]
+\label{2.8.3.2.6}
+If $Y=\Spec(A)$ is affine, and $\sh{S}=\widetilde{S}$, then, for every homogeneous $f$ in $S_+$, $\widehat{C}_f$ is canonically identified with $\Spec(S_f^\leq)$, and the morphism $C_f\to\widehat{C}_f$ given by restricting $i$ then corresponds to the canonical injection $S_f^\leq\to S_f$.
+\end{env}
+
+Now note that (for $Y$ affine) the complement of $\widehat{C}_{\bb{z}}$ in $\widehat{C}=\Proj(\widehat{S})$
+\oldpage[II]{164}
+is, by definition, the set of graded prime ideals of $\widehat{S}$ containing $\bb{z}$, which is exactly $j(X)$, by definition of $j$, which proves \eref{eq:2.8.3.2.3}.
+
+Finally, to prove the last claim of \sref{2.8.3.2}, we can assume that $Y$ is affine.
+With the above notation, note that, in the ring $\widehat{S}$, $\bb{z}$ is not a zero divisor;
+since $i(C)=\widehat{C}$, it suffices to prove the following lemma:
+\begin{lemma}[8.3.2.7]
+\label{2.8.3.2.7}
+Let $T$ be a positively-graded ring, $Z=\Proj(T)$, and $g$ a homogeneous element of $T$ of degree $d>0$.
+If $g$ is not a zero divisor in $T$, then $Z$ is the smallest closed subprescheme of $Z$ that contains $Z_g=D_+(g)$.
+\end{lemma}
+
+By \sref[I]{1.4.1.9}, the question is local on $Z$;
+for every homogeneous element $h\in T_e$ ($e>0$), it thus suffices to prove that $Z_h$ is the smallest closed subprescheme of $Z_h$ that contains $Z_{gh}$;
+it follows from the definitions and from \sref[I]{1.4.3.2} that this condition is equivalent to asking for the canonical homomorphism $T_{(h)}\to T_{(gh)}$ to be \emph{injective}.
+But this homomorphism can be identified with the canonical homomorphism $T_{(h)}\to(T_{(h)})_{g^e/h^d}$ \sref{2.2.2.3}.
+But since $g^e$ is not a zero divisor in $T$, $g^e/h^d$ is not a zero divisor in $T_h$ (nor \emph{a fortiori} in $T_{(h)}$), since the fact that $(g^e/h^d)(t/h^m)=0$ (for $t\in T$ and $m>0$) implies the existence of some $n>0$ such that $h^ng^et=0$, whence $h^nt=0$, and thus $t/h^m=0$ in $T_h$.
+This thus finishes the proof \sref[0]{0.1.2.2}.
+\end{proof}
 
 
 % \subsection{Projective closure of a vector bundle}
@@ -697,7 +805,7 @@ It is immediate that $S_{n+1}=S_1S_n$ for $n\geq2$, but $S_1^n=K\bb{x}^n$ while 
 % \label{subsection:2.8.6}
 
 
-% \subsection{Blowing up projective cones}
+% \subsection{Blowing up \unsure{projective} cones}
 % \label{subsection:2.8.7}
 
 
@@ -717,7 +825,7 @@ It is immediate that $S_{n+1}=S_1S_n$ for $n\geq2$, but $S_1^n=K\bb{x}^n$ while 
 % \label{subsection:2.8.11}
 
 
-% \subsection{Quasi-coherent sheaves on projective cones}
+% \subsection{Quasi-coherent sheaves on \unsure{projective} cones}
 % \label{subsection:2.8.12}
 
 % \begin{env}[8.12.1]
