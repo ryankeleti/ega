@@ -717,7 +717,7 @@ finally, we say that $\widehat{C}$ is the \emph{projective closure} of $C$ (with
 There exist canonical $Y$-morphisms
 \[
 \label{eq:2.8.3.2.1}
-  Y \xrightarrow{\epsilon} C \xrightarrow{i} \widehat{C}
+  Y \xrightarrow{\varepsilon} C \xrightarrow{i} \widehat{C}
 \tag{8.3.2.1}
 \]
 \[
@@ -725,7 +725,7 @@ There exist canonical $Y$-morphisms
   X \xrightarrow{j} \widehat{C}
 \tag{8.3.2.2}
 \]
-such that $\epsilon$ and $j$ are closed immersions, and $i$ is an affine morphism, which is a dominant open immersion, for which
+such that $\varepsilon$ and $j$ are closed immersions, and $i$ is an affine morphism, which is a dominant open immersion, for which
 \[
 \label{eq:2.8.3.2.3}
   i(C) = \widehat{C}\setminus j(X);
@@ -748,7 +748,7 @@ The isomorphism $i: C\xrightarrow{\sim}\widehat{C}_{\bb{z}}$ then corresponds to
   \widehat{\sh{S}}/(\bb{z}-1)\widehat{\sh{S}} \xrightarrow{\sim} \sh{S}.
 \]
 
-The morphism $\epsilon$ corresponds to the augmentation homomorphism $\sh{S}\to\sh{S}_0=\sh{O}_Y$, which has kernel $\sh{S}_+$ \sref{2.1.2.7}, and, since the latter is surjective, $\epsilon$ is a closed immersion \sref{2.1.4.10}.
+The morphism $\varepsilon$ corresponds to the augmentation homomorphism $\sh{S}\to\sh{S}_0=\sh{O}_Y$, which has kernel $\sh{S}_+$ \sref{2.1.2.7}, and, since the latter is surjective, $\varepsilon$ is a closed immersion \sref{2.1.4.10}.
 Finally, $j$ corresponds \sref{2.3.5.1} to the surjective homomorphism of degree zero $\widehat{\sh{S}}\to\sh{S}$, which restricts to the identity on $\sh{S}$ and is zero on $\bb{z}\widehat{\sh{S}}$, which is its kernel;
 $j$ is everywhere defined, and is a closed immersion, by \sref{2.3.6.2}.
 
@@ -790,6 +790,125 @@ it follows from the definitions and from \sref[I]{1.4.3.2} that this condition i
 But this homomorphism can be identified with the canonical homomorphism $T_{(h)}\to(T_{(h)})_{g^e/h^d}$ \sref{2.2.2.3}.
 But since $g^e$ is not a zero divisor in $T$, $g^e/h^d$ is not a zero divisor in $T_h$ (nor \emph{a fortiori} in $T_{(h)}$), since the fact that $(g^e/h^d)(t/h^m)=0$ (for $t\in T$ and $m>0$) implies the existence of some $n>0$ such that $h^ng^et=0$, whence $h^nt=0$, and thus $t/h^m=0$ in $T_h$.
 This thus finishes the proof \sref[0]{0.1.2.2}.
+\end{proof}
+
+\begin{env}[8.3.3]
+\label{2.8.3.3}
+We will often identify the affine cone $C$ with the subprescheme induced by the projective cone $\widehat{C}$ on the open subset $i(C)$ by means of the open immersion $i$.
+The closed subprescheme of $C$ associated to the closed immersion $\varepsilon$ is called the \unsure{\emph{vertex prescheme}} of $C$;
+we also say that $\varepsilon$, which is a $Y$-section of $C$, is the \unsure{\emph{vertex section}}, or the \emph{null section},  or $C$;
+we can identify $Y$ with the \unsure{vertex prescheme} of $C$ by means of $\varepsilon$.
+Also, $i\circ\varepsilon$ is a $Y$-section of $\widehat{C}$, and thus also a closed immersion \sref[I]{1.5.4.6}, corresponding to the canonical surjective homomorphism of degree zero $\widehat{\sh{S}} = \sh{S}[\bb{z}] \to \sh{O}_Y[\bb{z}]$ \sref{2.3.1.7}, whose kernel is $\sh{S}_+[\bb{z}] = \sh{S}_+\widehat{\sh{S}}$;
+the subprescheme of $\widehat{C}$ associated to this closed immersion is also called the \unsure{\emph{vertex prescheme}} of $\widehat{C}$, and $i\circ\varepsilon$ the \unsure{\emph{vertex section}} of $\widehat{C}$;
+it can be identified with $Y$ by means of $i\circ\varepsilon$.
+Finally, the closed subprescheme of $\widehat{C}$ associated to $j$ is called the \unsure{\emph{points of infinity}} of $\widehat{C}$, and can be identified with $X$ by means of $j$.
+\end{env}
+
+\begin{env}[8.3.4]
+\label{2.8.3.4}
+The subpreschemes of $C$ (resp. $\widehat{C}$) induced on the \emph{open} subsets
+\[
+\label{eq:2.8.3.4.1}
+  E = C \setminus \varepsilon(Y),
+  \qquad
+  \widehat{E} = \widehat{C} \setminus i(\varepsilon(Y))
+\tag{8.3.4.1}
+\]
+are called (by an abuse of language) the \emph{affine pointed cone} and the \emph{projective pointed cone} (respectively) defined by \emph{\sh{S}};
+we note that, despite this nomenclature, \emph{$E$ is not necessarily affine} over $Y$, nor $\widehat{E}$ projective over $Y$ \sref{2.8.4.3}.
+When we identify $C$ with $i(C)$, we thus have the underlying spaces
+\[
+\label{eq:2.8.3.4.2}
+  C \cup \widehat{E} = \widehat{C},
+  \qquad
+  C \cap \widehat{E} = E
+\tag{8.3.4.2}
+\]
+so that $\widehat{C}$ can be considered as being obtained by \emph{gluing} the open subpreschemes $C$ and $\widehat{E}$;
+furthermore, by \eref{eq:2.8.3.2.3},
+\[
+\label{eq:2.8.3.4.3}
+  E = \widehat{E} \setminus j(X).
+\tag{8.3.4.3}
+\]
+
+If $Y=\Spec(A)$ is affine, then, with the notation of \sref{2.8.3.2},
+\[
+\label{eq:2.8.3.4.4}
+  E = \bigcup C_f,
+  \qquad
+  \widehat{E} = \bigcup \widehat{C}_f,
+  \qquad
+  C_f = C \cap \widehat{C}_f
+\tag{8.3.4.4}
+\]
+where $f$ runs over the set of homogeneous elements of $S_+$ (or only a subset $M$ of this set, with $M$ generating an ideal of $S_+$ whose radical in $S_+$ is $S_+$ itself, or, equivalently, such that the $X_f$ for $f\in M$ cover $X$ \sref{2.2.3.14}).
+The gluing of $C$ and $\widehat{C}_f$ along $C_f$ is thus determined by the injection morphisms $C_f\to C$ and $C_f\to\widehat{C}_f$, which, as we have seen \sref{2.8.3.2.6}, correspond (respectively) to the canonical homomorphisms $S\to S_f$ and $S_f^\leq\to S_f$.
+\end{env}
+
+\begin{proposition}[8.3.5]
+\label{2.8.3.5}
+With the notation of \sref{2.8.3.1} and \sref{2.8.3.4}, the morphism associated \sref{2.3.5.1} to the canonical injection $\varphi:\sh{S} \to \widehat{\sh{S}} = \sh{S}[\bb{z}]$ is a surjective affine morphism (called the canonical retraction)
+\[
+\label{eq:2.8.3.5.1}
+  p:\widehat{E} \to X
+\tag{8.3.5.1}
+\]
+such that
+\[
+\label{eq:2.8.3.5.2}
+  p \circ j = 1_X.
+\tag{8.3.5.2}
+\]
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.3.5}
+To prove the proposition, we can restrict to the case where $Y$ is affine.
+Taking into account the expression in \eref{eq:2.8.3.4.4} for $\widehat{E}$, the fact that the domain of definition $G(\varphi)$ of $p$ is equal to $\widehat{E}$ will follow from the first of the following claims:
+\begin{env}[8.3.5.3]
+\label{2.8.3.5.3}
+If $Y=\Spec(A)$ is affine, and $\sh{S}=\widetilde{S}$, then, for all homogeneous $f\in S_+$,
+\[
+\label{eq:2.8.3.5.4}
+  p^{-1}(X_f) = \widehat{C}_f
+\tag{8.3.5.4}
+\]
+and the restriction of $p$ to $\widehat{C}_f=\Spec(S_f^\leq)$, thought of as a morphism from $\widehat{C}_f$ to $X_f$, corresponds to the canonical injection $S_{(f)}\to S_f^\leq$.
+If, further, $f\in S_1$, then $\widehat{C}_f$ is isomorphic to $X_f\otimes_{\bb{Z}}\bb{Z}[T]$ (where $T$ is an indeterminate).
+\end{env}
+
+Indeed, Equation \eref{eq:2.8.3.5.4} is exactly a particular case of \eref{2.2.8.1.1}, and the second claim is exactly the definition of $\Proj(\varphi)$ whenever $Y$ is affine \sref{2.2.8.1}.
+Then Equation \eref{eq:2.8.3.5.2} and the fact that $p$ is surjective show that the composition $\sh{S}\to\widehat{\sh{S}}\to\sh{S}$ of the canonical homomorphisms is the identity on $\sh{S}$.
+Finally, the last claim of \sref{2.8.3.5.3} follows from the fact that $S_f^\leq$ is isomorphic to $S_{(f)}[T]$ whenever $f\in S_1$ \sref{2.2.2.1}.
+\end{proof}
+
+\begin{corollary}[8.3.6]
+\label{2.8.3.6}
+The restriction
+\[
+\label{eq:2.8.3.6.1}
+  \pi: E \to X
+\tag{8.3.6.1}
+\]
+of $p$ to $E$ is a surjective affine morphism.
+If $Y$ is affine and $f$ homogeneous in $S_+$, then
+\[
+\label{eq:2.8.3.6.2}
+  \pi^{-1}(X_f) = C_f
+\tag{8.3.6.2}
+\]
+and the restriction of $\pi$ to $C_f$ corresponds to the canonical injection $S_{(f)}\to S_f$.
+If, further, $f\in S_1$, then $C_f$ is isomorphic to $X_f\otimes_{\bb{Z}}\bb{Z}[T,T^{-1}]$ (where $T$ is an indeterminate).
+\end{corollary}
+
+\begin{proof}
+\label{proof-2.8.3.6}
+Equation \eref{eq:2.8.3.6.2} follows immediately from \sref{2.8.3.5.3} and \eref{eq:2.8.3.2.5}, and shows the surjectivity of $\pi$;
+we have already seen that the immersion $i$, restricted to $C_f$, corresponds
+\oldpage[II]{166}
+to the injection $S_f^\leq\to S_f$ \sref{2.8.3.2}.
+Finally, the last claim is a consequence of the fact that, for $f\in S_1$, $S_f$ is isomorphic to $S_{(f)}[T,T^{-1}]$ \sref{2.2.2.1}.
 \end{proof}
 
 
