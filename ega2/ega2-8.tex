@@ -708,7 +708,7 @@ In what follows, we write
 \]
 (where, in the definition of $C$, we consider $\sh{S}$ as a non-graded $\sh{O}_Y$-algebra), and we say that $C$ (resp. $\widehat{C}$) is the \emph{affine cone} (resp. \emph{projective cone}) defined by $\sh{S}$;
 we will sometimes say ``cone'' instead of ``affine cone''.
-By an abuse of language, we also say that $C$ (resp. $\widehat{C}$) is the \emph{affine cone based at $X$} (resp. the \emph{projective cone based at $X$})\footnote{\emph{[Trans.] A more literal translation of the French (\emph{c\^one projetant affine/projectif}) would be the \emph{projecting affine/projective cone}, but it seems that this terminology already exists to mean something else.}}, with the implicit understanding that the prescheme $X$ is given in the form $\Proj(\sh{S})$;
+By an abuse of language, we also say that $C$ (resp. $\widehat{C}$) is the \emph{affine cone \unsure{based at $X$}} (resp. the \emph{projective cone \unsure{based at $X$}})\footnote{\emph{[Trans.] A more literal translation of the French (\emph{c\^one projetant (affine/projectif)}) would be the \emph{projecting (affine/projective) cone}, but it seems that this terminology already exists to mean something else.}}, with the implicit understanding that the prescheme $X$ is given in the form $\Proj(\sh{S})$;
 finally, we say that $\widehat{C}$ is the \emph{projective closure} of $C$ (with the data of $\sh{S}$ being implicit in the structure of $C$).
 \end{env}
 
@@ -801,7 +801,7 @@ we can identify $Y$ with the \unsure{vertex prescheme} of $C$ by means of $\vare
 Also, $i\circ\varepsilon$ is a $Y$-section of $\widehat{C}$, and thus also a closed immersion \sref[I]{1.5.4.6}, corresponding to the canonical surjective homomorphism of degree zero $\widehat{\sh{S}} = \sh{S}[\bb{z}] \to \sh{O}_Y[\bb{z}]$ \sref{2.3.1.7}, whose kernel is $\sh{S}_+[\bb{z}] = \sh{S}_+\widehat{\sh{S}}$;
 the subprescheme of $\widehat{C}$ associated to this closed immersion is also called the \unsure{\emph{vertex prescheme}} of $\widehat{C}$, and $i\circ\varepsilon$ the \unsure{\emph{vertex section}} of $\widehat{C}$;
 it can be identified with $Y$ by means of $i\circ\varepsilon$.
-Finally, the closed subprescheme of $\widehat{C}$ associated to $j$ is called the \unsure{\emph{points of infinity}} of $\widehat{C}$, and can be identified with $X$ by means of $j$.
+Finally, the closed subprescheme of $\widehat{C}$ associated to $j$ is called the \emph{part at infinity} of $\widehat{C}$, and can be identified with $X$ by means of $j$.
 \end{env}
 
 \begin{env}[8.3.4]
@@ -1024,13 +1024,74 @@ With the affine cone $\Spec(\sh{S})$ defined by $\sh{S}$ being, by definition, $
 \end{env}
 \begin{proposition}[8.4.2]
 \label{2.8.4.2}
-The projective closure of a vector bundle $\bb{V}(\sh{E})$ on $Y$ is canonically isomorphic to $\bb{P}(\sh{E}\oplus\sh{O}_Y)$, and the points at infinity of the latter are canonically isomorphic to $\bb{P}(\sh{E})$.
+The projective closure of a vector bundle $\bb{V}(\sh{E})$ on $Y$ is canonically isomorphic to $\bb{P}(\sh{E}\oplus\sh{O}_Y)$, and the part at infinity of the latter is canonically isomorphic to $\bb{P}(\sh{E})$.
 \end{proposition}
 
 \begin{remark}[8.4.3]
 \label{2.8.4.3}
+Take, for example, $\sh{E}=\sh{O}_Y^r$ with $r\geq2$;
+then the pointed cones $E$ and $\widehat{E}$ defined by $\sh{S}$ are nether affine nor projective on $Y$ if $Y\neq\emp$.
+The second claim is immediate, because $\widehat{C}=\bb{P}(\sh{O}_Y^{r+1})$ is projective on $Y$, and the underlying spaces of $E$ and $\widehat{E}$ are non-closed open subsets of $\widehat{C}$, and so the canonical immersions $E\to\widehat{C}$ and $\widehat{E}\to\widehat{C}$ are not projective \sref{2.5.5.3}, and we conclude by appealing to \sref{2.5.5.5}[v].
+Now, supposing, for example, that $Y=\Spec(A)$ is affine, and $r=2$, then $C=\Spec(A[T_1,T_2])$, and $E$ is then the prescheme induced by $C$ on the open subset $D(T_1)\cup D(T_2)$;
+but we have already seen that the latter is not affine \sref[I]{1.5.5.11};
+\emph{a fortiori} $\widehat{E}$ cannot be affine, since $E$ is the open subset where the section $\bb{z}$ over $\widehat{E}$ does not vanish \sref{2.8.3.2}.
 
+However:
 \end{remark}
+\begin{proposition}[8.4.4]
+\label{2.8.4.4}
+If $\sh{L}$ is an invertible $\sh{O}_Y$-module, then there are canonical isomorphisms for both the pointed cones $E$ and $\widehat{E}$ corresponding to $C=\bb{V}(\sh{L})$:
+\[
+\label{eq:2.8.4.4.1}
+  \Spec(\bigoplus_{n\in\bb{Z}}\sh{L}^{\otimes n})
+  \xrightarrow{\sim}
+  E
+\tag{8.4.4.1}
+\]
+\[
+\label{eq:2.8.4.4.2}
+  \bb{V}(\sh{L}^{-1})
+  \xrightarrow{\sim}
+  \widehat{E}.
+\tag{8.4.4.2}
+\]
+
+Furthermore, there exists a canonical isomorphism from the projective closure of $\bb{V}(\sh{L})$ to the projective closure of $\bb{V}(\sh{L}^{-1})$ that sends the null section (resp. the part at infinity) of the former to the part at infinity (resp. the null section) of the second.
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.4.4}
+We have here that $\sh{S}=\bigoplus_{n\geq0}\sh{L}^{\otimes n}$;
+the canonical injection
+\[
+  \sh{S} \to \bigoplus_{n\in\bb{Z}} \sh{L}^{\otimes n}
+\]
+defines a canonical dominant morphism
+\[
+\label{eq:2.8.4.4.3}
+  \Spec(\bigoplus_{n\in\bb{Z}} \sh{L}^{\otimes n})
+  \to
+  \bb{V}(\sh{L})
+  =
+  \Spec(\bigoplus_{n\geq0} \sh{L}^{\otimes n})
+\tag{8.4.4.3}
+\]
+and it suffices to prove that this morphism is an isomorphism from the scheme $\Spec(\bigoplus_{n\in\bb{Z}} \sh{L}^{\otimes n})$ to $E$.
+The question being local on $Y$, we can assume that $Y=\Spec(A)$ is affine
+\oldpage[II]{169}
+and that $\sh{L}=\sh{O}_Y$, and so $\sh{S}=(A[T])^\sim$ and $\bigoplus_{n\in\bb{Z}}\sh{L}^{\times n} = (A[T,T^{-1}])^\sim$.
+But $A[T,T^{-1}]$ is the ring of fractions $A[T]_T$ of $A[T]$, and thus \eref{eq:2.8.4.4.3} identifies \unsure{$\bigoplus_{n\in\bb{Z}}\sh{L}^{\otimes n}$} with the prescheme induced by $C=\bb{V}(\sh{L})$ on the open subset $D(T)$;
+the complement $V(T)$ of this open subset in $C$ is the underlying space of the closed subprescheme of $C$ defined by the ideal $TA[T]$, which is exactly the null section of $C$, and so $E=D(T)$.
+
+The isomorphism in \eref{eq:2.8.4.4.2} will be a consequence of the last claim, since $\bb{V}(\sh{L}^{-1})$ is the complement of the part at infinity of its projective closure, and $\widehat{E}$ is the complement of the null section of the projective closure $C=\bb{V}(\sh{L})$.
+But these projective closures are $\bb{P}(\sh{L}^{-1}\oplus\sh{O}_Y)$ and $\bb{P}(\sh{L}\oplus\sh{O}_Y)$ (respectively);
+but we can write $\sh{L}\oplus\sh{O}_Y = \sh{L}\otimes(\sh{L}^{-1}\oplus\sh{O}_Y)$.
+The existence of the desired canonical isomorphism then follows from \sref{2.4.1.4}, and everything reduces to showing that this isomorphism swaps the null sections and the parts at infinity.
+For this, we can reduce to the case where $Y=\Spec(A)$ is affine, $L=Ac$, and $L^{-1}=Ac'$, with the canonical isomorphism $L\otimes L^{-1}\to A$ sending $c\otimes c'$ to the element $1$ of $A$.
+Then $\bb{S}(L\oplus A)$ is the tensor product of $A[\bb{z}]$ with $\bigoplus_{n\geq0}Ac^{\otimes n}$, and $\bb{S}(L^{-1}\oplus A)$ is the tensor product of $A[\bb{z}]$ with $\bigoplus_{n\geq0}Ac^{'\otimes n}$, and the isomorphism defined in \sref{2.4.1.4} sends $\bb{z}^h\otimes c^{'\otimes(n-h)}$ to the element $\bb{z}^{n-h}\otimes c^{\otimes h}$.
+But, in $\bb{P}(\sh{L}^{-1}\oplus\sh{O}_Y)$, the part at infinity is the set of points where the section $\bb{z}$ vanishes, and the null section is the section of points where the section $c'$ vanishes;
+since we have analogous definitions for $\bb{P}(\sh{L}\oplus\sh{O}_Y)$, the conclusion follows immediately from the above explanation.
+\end{proof}
 
 
 % \subsection{Functorial behaviour}
