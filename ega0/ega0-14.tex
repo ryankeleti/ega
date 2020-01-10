@@ -48,7 +48,7 @@ It follows from this definition that we have
 (the upper bound in $\overline{\bb{R}}$ of the empty set being $-\infty$).
 If $(X_\alpha)$ is the family of irreducible components of $X$, then we have
 \[
-\label{eq:0.14.1.2.1}
+\label{0.14.1.2.1}
   \dim(X)=\sup_\alpha\dim(X_\alpha),
   \tag{14.1.2.1}
 \]
@@ -76,7 +76,7 @@ Now, if $X=\bigcup_{i=1}^nX_i$, where the $X_i$ are closed, then every irreducib
 
 From \sref{0.14.1.4}[i], we see that, for all $x\in X$, we can also write
 \[
-\label{eq:0.14.1.4.1}
+\label{0.14.1.4.1}
   \dim_x(X)=\lim_U\dim(U),
   \tag{14.1.4.1}
 \]
@@ -208,7 +208,7 @@ We say that $X$ is equicodimensional if all the minimal irreducible closed subse
 It follows from this definition that $\codim(\emp,X)=+\infty$, since the lower bound of the empty set of $\overline{\bb{R}}$ is $+\infty$.
 If $Y$ is closed in $X$, and if $(X_\alpha)$ (resp.~$(Y_\alpha)$) is the family of irreducible components of $X$ (resp.~$Y$), then every $Y_\beta$ is contained in some $X_\alpha$, and, more generally, every chain of irreducible closed subsets of $X$ of which $Y_\beta$ is the smallest element is formed of subsets of some $X_\alpha$; we thus have
 \[
-\label{eq:0.14.2.1.1}
+\label{0.14.2.1.1}
   \codim(Y,X)=\inf_\beta(\sup_\alpha(\codim(Y_\beta,X_\alpha))),
   \tag{14.2.1.1}
 \]
@@ -220,20 +220,20 @@ Let $X$ be a topological space.
 \begin{enumerate}
   \item[{\rm(i)}] If $\Phi$ is the set of irreducible closed subsets of $X$, then
     \[
-    \label{eq:0.14.2.2.1}
+    \label{0.14.2.2.1}
       \dim(X)=\sup_{Y\in\Phi}(\codim(Y,X)).
       \tag{14.2.2.1}
     \]
 \oldpage[0\textsubscript{IV-1}]{9}
   \item[{\rm(ii)}] For every nonempty closed subset $Y$ of $X$, we have
     \[
-    \label{eq:0.14.2.2.2}
+    \label{0.14.2.2.2}
       \dim(Y)+\codim(Y,X)\leq\dim(X).
       \tag{14.2.2.2}
     \]
   \item[{\rm(iii)}] If $Y$, $Z$, and $T$ are closed subsets of $X$ such that $Y\subset Z\subset T$, then
     \[
-    \label{eq:0.14.2.2.3}
+    \label{0.14.2.2.3}
       \codim(Y,Z)+\codim(Z,T)\leq\codim(Y,T).
        \tag{14.2.2.3}
     \]
@@ -257,7 +257,7 @@ but then the inequality in \sref{0.14.2.2.3} is an evident consequence of Defini
 Let $X$ be a topological space, and $Y$ a closed subset of $X$.
 For every open subset $U$ of $X$, we have
 \[
-\label{eq:0.14.2.3.1}
+\label{0.14.2.3.1}
   \codim(Y\cap U,U)\geq\codim(Y,X).
   \tag{14.2.3.1}
 \]
@@ -279,7 +279,7 @@ We define the codimension of $Y$ in $X$ at the point $x$, denoted by $\codim_x(Y
 
 By \sref{0.14.2.3}, we can also write
 \[
-\label{eq:0.14.2.4.1}
+\label{0.14.2.4.1}
   \codim_x(Y,X)=\lim_U(\codim(Y\cap U,U)),
   \tag{14.2.4.1}
 \]
@@ -294,7 +294,7 @@ We note that we have
 \label{0.14.2.5}
 If $(Y_i)_{1\leq i\leq n}$ is a finite family of closed subsets of a topological space $X$, and $Y$ is the union of this family, then
 \[
-\label{eq:0.14.2.5.1}
+\label{0.14.2.5.1}
   \codim(Y,X)=\inf_i(\codim(Y_i,X)).
   \tag{14.2.5.1}
 \]
@@ -339,7 +339,7 @@ The following two conditions are equivalent.
   \item[{\rm(a)}] Any two saturated chains of closed irreducible subsets of $X$ that have the same first and last elements as one another have the same length.
   \item[{\rm(b)}] If $Y$, $Z$, and $T$ are irreducible closed subsets of $X$ such that $Y\subset Z\subset T$, then
     \[
-    \label{eq:0.14.3.2.1}
+    \label{0.14.3.2.1}
       \codim(Y,T)=\codim(Y,Z)+\codim(Z,T).
       \tag{14.3.2.1}
     \]
@@ -369,13 +369,13 @@ The following conditions are equivalent.
   \item[{\rm(b)}] $X$ is equidimensional, equicodimensional, and catenary.
   \item[{\rm(c)}] $X$ is equidimensional, and, for any irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have
     \[
-    \label{eq:0.14.3.3.1}
+    \label{0.14.3.3.1}
       \dim(Z)=\dim(Y)+\codim(Y,Z).
       \tag{14.3.3.1}
     \]
   \item[{\rm(d)}] $X$ is equicodimensional, and, for any irreducible closed subsets $Y$ and $Z$ of $X$ with $Y\subset Z$, we have
     \[
-    \label{eq:0.14.3.3.2}
+    \label{0.14.3.3.2}
       \codim(Y,Z)=\codim(Y,Z)+\codim(Z,X).
       \tag{14.3.3.2}
     \]
@@ -388,16 +388,16 @@ The hypotheses on $X$ imply that the first and last elements of a maximal chain 
 further, every saturated chain with first element $Y$ and last element $Z$ (thus $Y\subset Z$) is contained in a maximal chain whose elements differ from those of the given chain, or are contained in $Y$, or contain $Z$.
 These remarks immediately establish the equivalence between (a) and (b), and also show that if (a) is satisfied, then we have, for every irreducible closed subset $Y$ fo $X$,
 \[
-\label{eq:0.14.3.3.3}
+\label{0.14.3.3.3}
   \dim(Y)+\codim(Y,X)=\dim(X);
   \tag{14.3.3.3}
 \]
-from \sref{eq:0.14.3.2.1}, we immediately deduce \sref{eq:0.14.3.3.1} and \sref{eq:0.14.3.3.2} from \sref{eq:0.14.3.3.3}.
-Conversely, \sref{eq:0.14.3.3.1} implies \sref{eq:0.14.3.2.1}, and so \sref{eq:0.14.3.3.1} implies the chain condition, by \sref{0.14.3.2};
-further, by applying \sref{eq:0.14.3.3.1} to the case where $Y$ is a single closed point $x$ of $X$, and $Z$ is an irreducible component of $X$, we get that $\codim(\{x\},X)=\dim(Z)$;
+from \sref{0.14.3.2.1}, we immediately deduce \sref{0.14.3.3.1} and \sref{0.14.3.3.2} from \sref{0.14.3.3.3}.
+Conversely, \sref{0.14.3.3.1} implies \sref{0.14.3.2.1}, and so \sref{0.14.3.3.1} implies the chain condition, by \sref{0.14.3.2};
+further, by applying \sref{0.14.3.3.1} to the case where $Y$ is a single closed point $x$ of $X$, and $Z$ is an irreducible component of $X$, we get that $\codim(\{x\},X)=\dim(Z)$;
 we thus conclude that (c) implies (b).
-Similarly, \sref{eq:0.14.3.3.2} implies \sref{eq:0.14.3.2.1}, and thus the chain condition;
-further, with the same choice of $Y$ and $Z$ as above, \sref{eq:0.14.3.3.2} again implies that $\codim(\{x\},X)=\dim(Z)$, and so (since every irreducible component of $X$ contains a closed point, by \sref[0\textsubscript{I}]{0.2.1.3}), (d) implies (b).
+Similarly, \sref{0.14.3.3.2} implies \sref{0.14.3.2.1}, and thus the chain condition;
+further, with the same choice of $Y$ and $Z$ as above, \sref{0.14.3.3.2} again implies that $\codim(\{x\},X)=\dim(Z)$, and so (since every irreducible component of $X$ contains a closed point, by \sref[0\textsubscript{I}]{0.2.1.3}), (d) implies (b).
 \end{proof}
 
 We say that a Noetherian Kolmogoroff space is \emph{biequidimensional} if it is of \emph{finite dimension} and if it verifies any of the (equivalent) conditions of \sref{0.14.3.3}.
@@ -407,7 +407,7 @@ We say that a Noetherian Kolmogoroff space is \emph{biequidimensional} if it is 
 Let $X$ be a biequidimensional Noetherian Kolmogoroff space;
 then, for every closed point $x$ of $X$, and every irreducible component $Z$ of $X$, we have
 \[
-\label{eq:0.14.3.4.1}
+\label{0.14.3.4.1}
   \dim(X)=\dim(Z)=\codim(\{x\},X)=\dim_x(X).
   \tag{14.3.4.1}
 \]
@@ -424,7 +424,7 @@ The last equality follows from the fact that, if $Y_0=\{x\}\subset Y_1\subset\ld
 Let $X$ be a Noetherian Kolmogoroff space; if $X$ is biequidimensional, then so is every union of irreducible components of $X$, and every irreducible closed subset of $X$.
 In addition, for every closed subset $Y$ of $X$, we have
 \[
-\label{eq:0.14.3.5.1}
+\label{0.14.3.5.1}
   \dim(Y)+\codim(Y,X)=\dim(X).
   \tag{14.3.5.1}
 \]
