@@ -245,7 +245,7 @@ Note that the homomorphism
   \widetilde{u}_{-1}: \sh{O}_X \to \sh{O}_X(-1)
 \]
 canonically corresponds to a section $s$ of $\sh{O}_X(-1)$ over $X$, which we call the \emph{canonical section} (relative to $\sh{I}$) \sref[0]{0.5.1.1}.
-In Diagram \sref{2.8.1.5.5}, the horizontal arrows are isomorphisms \sref{2.3.2.7}; by replacing $h$ with $k$, and $k$ with $-1$ in this diagram, we obtain that $\widetilde{u}_k = 1_k \otimes \widetilde{u}_{-1}$ (where $1_k$ denotes the identity on $\sh{O}_X(h)$), or, equivalently, that the homomorphism $\widetilde{u}_k$ is given exactly by \emph{tensoring with the canonical section $s$} (for all $k\in\bb{Z}$).
+In the diagram in \sref{2.8.1.5.5}, the horizontal arrows are isomorphisms \sref{2.3.2.7}; by replacing $h$ with $k$, and $k$ with $-1$ in this diagram, we obtain that $\widetilde{u}_k = 1_k \otimes \widetilde{u}_{-1}$ (where $1_k$ denotes the identity on $\sh{O}_X(h)$), or, equivalently, that the homomorphism $\widetilde{u}_k$ is given exactly by \emph{tensoring with the canonical section $s$} (for all $k\in\bb{Z}$).
 The homomorphism $\widetilde{u}$ \sref{2.8.1.5.6} can then be understood in the same way.
 
 Thus, for all $n\geq0$, the homomorphism $\widetilde{v}_n: \sh{O}_X(n)\to\sh{O}_X$ is given exactly by tensoring with $s^{\otimes n}$;
@@ -1305,7 +1305,7 @@ which is a quasi-coherent graded $\sh{O}_X$-algebra, with multiplication defined
   \to
   \sh{O}_X(m+n)
 \]
-whose associativity is ensured by the commutative diagram \sref{2.2.5.11.4}.
+whose associativity is ensured by the commutative diagram in \sref{2.2.5.11.4}.
 Let $\sh{S}'$ be the quasi-coherent positively-graded sub-$\sh{O}_X$-algebra $\sh{S}_X^\geq = \bigoplus_{n\geq0}\sh{O}_X(n)$ of $\sh{S}_X$.
 
 Finally, consider the canonical $q$-morphism
@@ -1331,12 +1331,70 @@ denote the canonical morphisms defined in \sref{subsection:2.8.3} by $\varepsilo
 
 \begin{proposition}[8.6.2]
 \label{2.8.6.2}
-
+The structure morphism $u:X'\to X$ is an \emph{isomorphism}, and the morphism $\Proj(\alpha)$ is everywhere defined and identical to $u$.
+The morphism $\Proj(\widehat{\alpha}):\widehat{C}_X\to\widehat{C}$ is everywhere defined, and its restrictions to $\widehat{E}_X$ and $E_X$ are \emph{isomorphisms} to $\widehat{E}$ and $E$ (respectively).
+Finally, if we identify $X'$ with $X$ via $u$, then the morphisms $p_X$ and $\pi_X$ are identified with the structure morphisms of the $X$-preschemes $\widehat{E}_X$ and $E_X$.
 \end{proposition}
 
+\begin{proof}
+\label{proof:2.8.6.2}
+We can clearly restrict to the case where $Y=\Spec(A)$ is affine, and $\sh{S}=\widetilde{S}$;
+then $X$ is the union of affine open subsets $X_f$, where $f$ runs over the set of homogeneous elements of $S_+$, with the ring of each $X_f$ being $S_{(f)}$.
+It follows from \sref{2.8.2.7.1} that
+\[
+\label{2.8.6.2.1}
+  \Gamma(X_f, \sh{S}_X^\geq) = S_f^\geq.
+\tag{8.6.2.1}
+\]
 
-% \subsection{Blowing up based cones}
-% \label{subsection:2.8.7}
+So $u^{-1}(X_f)=\Proj(S_f^\geq)$.
+But if $f\in S_d$ ($d>0$), then $\Proj(S_f^\geq)$ is canonically isomorphic to $\Proj((S_f^\geq)^{(d)})$ \sref{2.2.4.7}, and we also know that $(S_f^\geq)^{(d)}=(S^{(d)})_f^\geq$ can be identified with $S_{(f)}[T]$ \sref{2.2.2.1} by the map $T\mapsto f/1$;
+we thus conclude \sref{2.3.1.7} that the structure morphism $u^{-1}(X_f)\to X_f$ is an isomorphism, whence the first claim.
+To prove the second, note that the restriction $u^{-1}(X_f)\cap G(\alpha)\to X=\Proj(S)$ of $\Proj(\alpha)$ corresponds to the canonical map $x\mapsto x/1$ from $S$ to $S_f^\geq$ \sref{2.2.6.2};
+we thus deduce, first of all, that $G(\alpha)=X'$, and then, taking into account the fact that $u^{-1}(X_f)=(u^{-1}(X_f))_{f/1}$, that it follows from \sref{2.2.8.1.1} that the image of $u^{-1}(X_f)$ under $\Proj(\alpha)$ is contained in $X_f$, and the restriction of $\Proj(\alpha)$ to $u^{-1}(X_f)$, thought of as a morphism to $X_f=\Spec(S_{(f)})$, is indeed identical to that of $u$.
+Finally, applying \sref{2.8.3.5.4} to $p_X$ instead of $p$, we see that $p_X^{-1}(u^{-1}(X_f)) = \Spec((S_f^\geq)_{f/1}^\leq)$, and this open subset is, by \sref{2.8.5.4.1}, the inverse image under $\Proj(\widehat{\alpha})$ of $p^{-1}(X_f)=\Spec(S_f^\leq)$ \sref{2.8.3.5.3}.
+Taking \sref{2.8.2.3.2} into account, the restriction of $\Proj(\widehat{\alpha})$ to $p_X^{-1}(u^{-1}(X_f))$ corresponds to the isomorphism inverse to \sref{2.8.2.7.2}, restricted to $S_f^\leq$, whence the third claim;
+the last claim is evident by definition.
+
+\oldpage[II]{173}
+We note also that it follows from the commutative diagram in \sref{2.8.5.3.2} that \emph{the restriction to $C_X$ of $\Proj(\widehat{\alpha})$ is exactly the morphism $\Spec(\alpha)$}.
+\end{proof}
+
+\begin{corollary}[8.6.3]
+\label{2.8.6.3}
+Considered as $X$-schemes, $\widehat{E}_X$ is canonically isomorphic to $\Spec(\sh{S}_X^\leq)$, and $E_X$ to $\Spec(\sh{S}_X)$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-2.8.6.3}
+Since we know that the morphisms $p_X$ and $\pi_X$ are affine (\sref{2.8.3.5} and \sref{2.8.3.6}), it suffices (given \sref{2.1.3.1}) to prove the corollary in the case where $Y=\Spec(A)$ is affine and $\sh{S}=\widetilde{S}$.
+The first claim follows from the existence of the canonical isomorphisms \sref{2.8.2.7.2} $(S_f^\geq)_{f/1}^\leq \xrightarrow{\sim} S_f^\leq$ and from the fact that these isomorphisms are compatible with the map sending $f$ to $fg$ (where $f$ and $g$ are homogeneous in $S_+$).
+Similarly, applying \sref{2.8.3.6.2} to $\pi_X$ instead of $\pi$, we see that $\pi_X^{-1}(u^{-1}(X_f)) = \Spec((S_f^\geq)_{f/1})$ for $f$ homogeneous in $S_+$, and the second claim then follows from the existence of the canonical isomorphisms \sref{2.8.2.7.2} $(S_f^\geq)_{f/1} \xrightarrow{\sim} S_f$.
+
+We can then say that $\widehat{C}_X$, thought of as an $X$-scheme, is given by \emph{gluing} the affine $X$-schemes $C_X=\Spec(\sh{S}_X^\geq)$ and $\widehat{E}_X=\Spec(\sh{S}_X^\leq)$ over $X$, where the intersection of the two affine $X$-schemes is the open subset $E_X=\Spec(\sh{S}_X)$.
+\end{proof}
+
+\begin{corollary}[8.6.4]
+\label{2.8.6.4}
+Assume that $\sh{O}_X(1)$ is an invertible $\sh{O}_X$-module, and that $\sh{S}_X$ is isomorphic to $\bigoplus_{n\in\bb{Z}}(\sh{O}_X(1))^{\otimes n}$ (which will be the case, in particular, whenever $\sh{S}$ is generated by $\sh{S}_1$ (\sref{2.3.2.5} and \sref{2.3.2.7})).
+Then the pointed projective cone $\widehat{E}$ can be identified with the rank-1 vector bundle $\bb{V}(\sh{O}_X(-1))$ on $X$, and the pointed affine cone $E$ with the subprescheme of this vector bundle induced on the complement of the null section.
+With this identification, the canonical retraction $\widehat{E}\to X$ is identified with the structure morphism of the $X$-scheme $\bb{V}(\sh{O}_X(-1))$.
+Finally, there exists a canonical $Y$-morphism $\bb{V}(\sh{O}_X(1))\to C$, whose restriction to the complement of the null section of $\bb{V}(\sh{O}_X(1))$ is an isomorphism from this complement to the pointed affine cone $E$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-2.8.6.4}
+If we write $\sh{L}=\sh{O}_X(1)$, then $\sh{S}_X^\geq$ is identical to $\bb{S}_{\sh{O}_X}(\sh{L})$, and so $\widehat{E}_X$ is canonically identified with $\bb{V}(\sh{L}^{-1})$, by \sref{2.8.6.3}, and $C_X$ with $\bb{V}(\sh{L})$.
+The morphism $\bb{V}(\sh{L})\to C$ is the restriction of $\Proj(\widehat{\alpha})$, and the claims of the corollary are then particular cases of \sref{2.8.6.2}.
+\end{proof}
+
+We note that the inverse image under the morphism $\bb{V}(\sh{O}_X(1))\to C$ of the underlying space of the vertex prescheme of $C$ is the underlying space of the null section of $\bb{V}(\sh{O}_X(1))$ \sref{2.8.5.5};
+but, in general, the corresponding subpreschemes of $C$ and of $\bb{V}(\sh{O}_X(1))$ are not isomorphic.
+This problem will be studied below.
+
+
+\subsection{Blowing up based cones}
+\label{subsection:2.8.7}
 
 
 % \subsection{Ample sheaves and contractions}
@@ -1376,7 +1434,7 @@ denote the canonical morphisms defined in \sref{subsection:2.8.3} by $\varepsilo
 %   \sh{O}_X(m)\otimes_{\sh{O}_X}\shProj_0(\sh{M}(n))\to\shProj_0(\sh{S}(m)\otimes_\sh{S}\sh{M}(n))\to\shProj_0(\sh{M}(m+n)),
 %   \tag{8.12.1.2}
 % \]
-% the verification of the axioms of sheaves of modules being done using the commutative diagram \sref{2.2.5.11.4}.
+% the verification of the axioms of sheaves of modules being done using the commutative diagram in \sref{2.2.5.11.4}.
 
 % If $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$, where $S$ is a graded $A$-algebra and $M$ is a graded $S$-module, then, for every homogeneous element $f\in S_+$, we have
 % \[
