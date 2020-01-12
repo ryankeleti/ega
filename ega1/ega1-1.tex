@@ -1109,15 +1109,15 @@ We note first that if $(X,\sh{O}_X)$ and $(S,\sh{O}_S)$ are any two ringed space
 Conversely, under the stated hypotheses, we set $A=\Gamma(S,\sh{O}_S)$, and consider a ring homomorphism $\vphi:A\to\Gamma(X,\sh{O}_X)$.
 For each $x\in X$, it is clear that the set of the $f\in A$ such that $\vphi(f)(x)=0$ is a \emph{prime ideal} of $A$, since $\sh{O}_x/\mathfrak{m}_x=\kres(x)$ is a field;
 it is therefore an element of $S=\Spec(A)$, which we denote by ${}^a\vphi(x)$.
-In addition, for each $f\in A$, we have, by definition \sref[0]{0.5.5.2}, that ${}^a\vphi(D(f))=X_f$, which proves that ${}^a\vphi$ is a \emph{continuous map} $X\to S$.
+  In addition, for each $f\in A$, we have, by definition \sref[0]{0.5.5.2}, that ${}^a\vphi^{-1}(D(f))=X_f$, which proves that ${}^a\vphi$ is a \emph{continuous map} $X\to S$.
 We then define a homomorphism
 \[
   \widetilde{\vphi}:\sh{O}_S\to{}^a\vphi_*(\sh{O}_X)
 \]
 of $\sh{O}_S$-modules;
 for each $f\in A$, we have $\Gamma(D(f),\sh{O}_S)=A_f$ \sref{1.1.3.6};
-for each $s\in A$, we associate to $s/f\in A_f$ the element $(\vphi(s)|X_f)(\vphi(f)|X_f)^{-1}$ of $\Gamma(X_f,\sh{O}_X)=\Gamma(D(f),{}^a\vphi(\sh{O}_X))$, and we immediately see (by passing from $D(f)$ to $D(fg)$) that this is a well-defined homomorphism of $\sh{O}_S$-modules, hence a morphism $({}^a\vphi,\widetilde{\vphi})$ of ringed spaces.
-In addition, with the same notation, and setting $y={}^a\vphi(x)$ for purposes of simplification, we immediately see \sref[0]{0.3.7.1} that we have $\widetilde{\vphi}_x^\sharp(s_y/f_y)=(\vphi(s)_x)(\vphi(f)_x)^{-1}$;
+for each $s\in A$, we associate to $s/f\in A_f$ the element $(\vphi(s)|X_f)(\vphi(f)|X_f)^{-1}$ of $\Gamma(X_f,\sh{O}_X)=\Gamma(D(f),{}^a\vphi_*(\sh{O}_X))$, and we immediately see (by passing from $D(f)$ to $D(fg)$) that this is a well-defined homomorphism of $\sh{O}_S$-modules, hence a morphism $({}^a\vphi,\widetilde{\vphi})$ of ringed spaces.
+In addition, with the same notation, and setting $y={}^a\vphi(x)$ for brevity, we immediately see \sref[0]{0.3.7.1} that we have $\widetilde{\vphi}_x^\sharp(s_y/f_y)=(\vphi(s)_x)(\vphi(f)_x)^{-1}$;
 since the relation $s_y\in\mathfrak{m}_y$ is, by definition, equivalent to $\vphi(s)_x\in\mathfrak{m}_x$, we see that $\widetilde{\vphi}_x^\sharp$ is a \emph{local} homomorphism $\sh{O}_y\to\sh{O}_x$, and we have thus defined a second map $\sigma:\Hom(\Gamma(S,\sh{O}_S),\Gamma(X,\sh{O}_X))\to\mathfrak{L}$, where $\mathfrak{L}$ is the set of the morphisms $(\psi,\theta):(X,\sh{O}_X)\to(S,\sh{O}_S)$ such that $\theta_x^\sharp$ is local for each $x\in X$.
 It remains to prove that $\sigma$ and $\rho$ (restricted to $\mathfrak{L}$) are inverses of each other;
 the definition of $\widetilde{\vphi}$ immediately shows that $\Gamma(\widetilde{\vphi})=\vphi$, and, as a result, that $\rho\circ\sigma$ is the identity.
