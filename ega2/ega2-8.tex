@@ -2114,8 +2114,88 @@ Then $\sh{L}$ is ample relative to $p$.
 \label{subsection:II.8.10}
 
 \begin{lemma}[8.10.1]
-\label{II.8.10.1}
+\label{2.8.10.1}
+Let $\pi:V\to X$ be a morphism, $j:X\to V$ an $X$-section of $V$ that is also a closed immersion, and $\sh{J}$ a quasi-coherent ideal of $\sh{O}_V$ that defines the closed subprescheme of $V$ associated to $j$.
+Then the following all hold true.
+\begin{enumerate}
+  \item[\rm{(i)}] For all $n\geq0$, $\pi_*(\sh{O}_V/\sh{J}^{n+1})$ and $\pi_*(\sh{J}/\sh{J}^{n+1})$ are quasi-coherent $\sh{O}_X$-modules, and $\pi_*(\sh{O}_V/\sh{J})=\sh{O}_X$ and $\pi_*(\sh{J}/\sh{J}^2)=j^*(\sh{J})$.
+  \item[\rm{(ii)}] If $X=\{\xi\}=\Spec(k)$, where $k$ is a field, then $\varprojlim\pi_*(\sh{O}_V/\sh{J}^{n+1})$ is isomorphic to the separated completion of the local ring $\sh{O}_{j(\xi)}$ for the $\fk{m}_{j(\xi)}$-preadic topology.
+  \item[\rm{(iii)}] Assume that $\sh{J}$ is an invertible $\sh{O}_V$-module (which implies that
+    \[
+      \sh{L} = j^*(\sh{J}) = \pi_*(\sh{J}/\sh{J}^2)
+    \]
+    is an invertible $\sh{O}_X$-module), and that there exists a homomorphism $\varphi:\sh{L}\to\varprojlim\pi_*(\sh{J}/\sh{J}^{n+1})$ such that the composition $\sh{L} \xrightarrow{\varphi} \varprojlim\pi_*(\sh{J}/\sh{J}^{n+1}) \xrightarrow{\alpha} \pi_*(\sh{J}/\sh{J}^2)$ (where $\alpha$ is the canonical homomorphism) is the identity.
+    If we write $\sh{S}=\bigoplus_{n\geq0}\sh{L}^{\otimes n}$, then $\varphi$ canonically induces an isomorphism of $\sh{O}_X$-algebras from the completion $\widehat{\sh{S}}$ of $\sh{S}$ relative to its canonical filtration (the completion being isomorphic to the product $\prod_{n\geq0}\sh{L}^{\otimes n}$) to $\varprojlim\pi_*(\sh{O}_V/\sh{J}^{n+1})$.
+\end{enumerate}
 \end{lemma}
+
+\begin{proof}
+\label{proof-2.8.10.1}
+Note first of all that the support of the $\sh{O}_V$-module $\sh{O}_V/\sh{J}^{n+1}$ is $j(X)$, and the support of $\sh{J}/\sh{J}^{n+1}$ is contained in $j(X)$.
+In the case of (ii), $j(X)$ is a closed point $j(\xi)$ of $V$,
+\oldpage[II]{185}
+and, by definition, $\pi_*(\sh{O}_V/\sh{J}^{n+1})$ is the fibre of $\sh{O}_V/\sh{J}^{n+1}$ at the point $j(\xi)$, or, equivalently, setting $C=\sh{O}_{j(\xi)}$, and denoting by $\fk{m}$ the maximal ideal of $C$, the $C$-module $C/\fk{m}^{n+1}$;
+claim (ii) is then evident.
+
+To prove (i), note that the question is local on $X$;
+we can thus restrict to the case where $X$ is affine.
+Let $U$ be an affine open subset of $V$;
+then $j(X)\cap U$ is an affine open subset of $j(X)$, so $U_0=\pi(j(X)\cap U)$, which is isomorphic to it, is an affine open subset of $X$;
+for every affine open subset $W_0\subset U_0$ in $X$, $W=\pi^{-1}(W_0)\cap U$ is an affine open subset of $V$, since $X$ is a scheme \sref[I]{1.5.5.10};
+in particular, $U'=U\cap\pi^{-1}(U_0)$ is an affine open subset of $V$, and clearly $\pi(U')=U_0$ and $j(U_0)=j(X)\cap U$.
+Then, by definition, $\Gamma(W_0,\pi_*(\sh{O}_V/\sh{J}^{n+1})) = \Gamma(\pi^{-1}(W_0),\sh{O}_V/\sh{J}^{n+1})$;
+but since every point of $\pi^{-1}(W_0)$ not belonging to $j(W_0)$ has an open neighbourhood in $\pi^{-1}(W_0)$ not intersecting $j(X)$, and in which $\sh{O}_V/\sh{J}^{n+1}$ is thus zero, it is clear that the sections of $\sh{O}_V/\sh{J}^{n+1}$ over $\pi^{-1}(W_0)$ and over $W$ are in bijective correspondence.
+In other words, if $\pi'$ is the restriction of $\pi$ to $U'$, then the $(\sh{O}_X|U_0)$-modules $\pi_*(\sh{O}_V/\sh{J}^{n+1})|U_0$ and $\pi'_*((\sh{O}_V/\sh{J}^{n+1})|U')$ are identical.
+Since $U'$ and $U_0$ are affine, and since the $U_0$ cover $X$, we thus conclude \sref[I]{1.1.6.3} that $\pi_*(\sh{O}_V/\sh{J}^{n+1})$ is quasi-coherent, and the proof is identical for $\pi_*(\sh{J}/\sh{J}^{n+1})$.
+
+Finally, to prove (iii), note that $\sh{S}$ is exactly $\bb{S}_{\sh{O}_X}(\sh{L})$;
+so $\varphi$ canonically induces a homomorphism of $\sh{O}_X$-algebras $\psi:\sh{S}\to\varprojlim\pi_*(\sh{O}_V/\sh{J}^{n+1})$ \sref{2.1.7.4};
+furthermore, this homomorphism sends $\sh{L}^{\otimes n}$ to $\varprojlim_m\pi_*(\sh{J}^n/\sh{J}^{n+1})$, and is thus continuous for the topologies considered, and indeed then extends to a homomorphism $\widehat{\psi}:\widehat{\sh{S}}\to\varprojlim\pi_*(\sh{O}_V/\sh{J}^{n+1})$.
+To see that this is indeed an isomorphism, we can, as in the proof of (i), restrict to the case where $X=\Spec(A)$ and $V=\Spec(B)$ are affine, with $\sh{J}=\widetilde{\fk{J}}$, where $\fk{J}$ is an ideal of $B$;
+there is an injection $A\to B$ corresponding to $\pi$ that identifies $A$ with a subring of $B$ that is \emph{complementary} to $B$, and $\sh{L}$ (resp. $\pi_*(\sh{O}_V/\sh{J}^{n+1})$) is the quasi-coherent $\sh{O}_X$-module associated to the $A$-module $L=\fk{J}/\fk{J}^2$ (resp. $B/\fk{J}^{n+1}$).
+Since $\sh{J}$ is an \emph{invertible} $\sh{O}_V$-module, we can further assume that $\fk{J}=Bt$, where $t$ is not a zero divisor in $B$.
+From the fact that $B=A\oplus Bt$, we deduce that, for all $n>0$,
+\[
+  B = A \oplus At \oplus At^2 \oplus \ldots \oplus At^n \oplus Bt^{n+1}
+\]
+and so there exists a canonical $A$-isomorphism from the ring of formal series $A[[T]]$ to $C=\varprojlim B/\fk{J}^{n+1}$ that sends $T$ to $t$.
+We also have that $L=A\bar{t}$, where $\bar{t}$ is the class of $t$ modulo $Bt^2$, and the homomorphism $\varphi$ sends, by hypothesis, $\bar{t}$ to an element $t'\in C$ that is congruent to $t$ modulo $Ct^2$.
+We thus deduce, by induction on $n$, that
+\[
+  A \oplus At' \oplus \ldots \oplus At^{'n} \oplus Ct^{n+1}
+  =
+  A \oplus At \oplus \ldots \oplus At^n \oplus Ct^{n+1}
+\]
+which proves that the homomorphism $\widehat{\psi}$ does indeed correspond to an isomorphism from $\prod_{n\geq0}L^{\otimes n}$ to $C$.
+\end{proof}
+
+\begin{lemma}[8.10.2]
+\label{2.8.10.2}
+Under the hypotheses of Lemma~\sref{2.8.10.1}, let $g:X'\to X$ be a morphism,
+\oldpage[II]{186}
+write $V'=V\times_X X'$, and let $\pi':V'\to X'$ and $g:V'\to V$ be the canonical projections, so that we have the commutative diagram
+\[
+  \xymatrix{
+    V
+      \ar[d]_^{\pi}
+  & V'
+      \ar[l]_{g'}
+      \ar[d]^{\pi'}
+  \\X
+  & X'
+      \ar[l]^{g}
+  }
+\]
+
+Then $j'=j\times1_{X'}$ is an $X'$-section of $V'$ that is also a closed immersion, and $\sh{J}'=g^{'*}(\sh{J})\sh{O}_{V'}$ is the quasi-coherent ideal of $\sh{O}_{V'}$ that defines the closed subprescheme of $V'$ associated to $j'$.
+Furthermore, $\pi'_*(\sh{O}_{V'}/\sh{J}{'n+1}) = g^*(\pi_*(\sh{O}_V/\sh{J}^{n+1}))$.
+Finally, $\sh{J}'$ is an $\sh{O}_{V'}$-module that is canonically isomorphic to $g^{'*}(\sh{J})$, and is, in particular, invertible if $\sh{J}$ is an invertible $\sh{O}_V$-module.
+\end{lemma}
+
+\begin{proof}
+\label{proof-2.8.10.2}
+
+\end{proof}
 
 
 \subsection{Uniqueness of contractions}
