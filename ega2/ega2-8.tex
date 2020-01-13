@@ -1785,8 +1785,8 @@ commutes; furthermore, if $\varepsilon_P:P\to C_P$ is the canonical immersion, t
 \label{2.8.8.2.5}
   \xymatrix{
     P
-      \ar[r]_{p}
-      \ar[d]^{\varepsilon_P}
+      \ar[r]^{p}
+      \ar[d]_{\varepsilon_P}
   & C_P
       \ar[d]^{h}
   \\Y
@@ -1936,11 +1936,11 @@ This induces \sref{2.1.5.6} a morphism $g':V\to C$ such that, if $\pi:V\to X$ an
     X
       \ar[d]_{f}
   & V
-      \ar[l]^{\pi}
+      \ar[l]_{\pi}
       \ar[d]^{g'}
   \\Y
   & C
-      \ar[l]_{\psi}
+      \ar[l]^{\psi}
   }
   \qquad
   \xymatrix{
@@ -2009,12 +2009,142 @@ Then $\Gamma(U,\sh{O}_C)$, which is equal to $\Gamma(g^{-1}(U),\sh{O}_V)$, by (i
 \end{proof}
 
 
-% \subsection{Grauert's ampleness criterion: statement}
-% \label{subsection:2.8.9}
+\subsection{Grauert's ampleness criterion: statement}
+\label{subsection:2.8.9}
+
+We intend to show that the properties proven in \sref{2.8.8.2} \emph{characterise} $f$-ample $\sh{O}_X$-modules, and, more precisely, to prove the following criterion:
+\begin{theorem}[8.9.1]
+\label{2.8.9.1}
+\emph{(Grauert's criterion).}
+Let $Y$ be a prescheme, $p:X\to Y$ a separated and quasi-compact morphism, and $\sh{L}$ an invertible $\sh{O}_X$-module.
+For $\sh{L}$ to be ample relative to $p$, it is necessary and sufficient for there to exist a $Y$-prescheme $C$, a $Y$-section $\varepsilon:Y\to C$ of $C$, and a $Y$-morphism $q:\bb{V}(\sh{L})\to C$, satisfying the following properties:
+\begin{enumerate}
+  \item[\rm{(i)}] the diagram
+    \[
+      \label{2.8.9.1.1}
+        \xymatrix{
+          X
+            \ar[r]^{j}
+            \ar[d]_{p}
+        & \bb{V}(\sh{L})
+            \ar[d]^{q}
+        \\Y
+            \ar[r]_{\varepsilon}
+        & C
+        }
+      \tag{8.9.1.1}
+    \]
+    commutes, where $j$ is the null section of the vector bundle $\bb{V}(\sh{L})$; and
+  \item[\rm{(ii)}] the restriction of $q$ to $\bb{V}(\sh{L})\setminus j(X)$ is a quasi-compact open immersion
+    \[
+      \bb{V}(\sh{L})\setminus j(X) \to X
+    \]
+    whose image does not intersect $\varepsilon(Y)$.
+\end{enumerate}
+\end{theorem}
+
+Note that, if $C$ is \emph{separated} over $Y$, we can, in condition~(ii), remove the hypothesis that the open immersion is quasi-compact;
+to see that this property (of quasi-compactness) is in fact a consequence of the other conditions, we can restrict to the case where $Y$ is affine, and the claim then follows from \sref[I]{1.5.5.1}{i} and \sref[I]{1.5.5.10}.
+We can also remove
+\oldpage[II]{183}
+the same hypothesis if we assume that $X$ is Noetherian, since then $V$ is also Noetherian, and the claim follows from \sref[I]{1.6.3.5}.
+
+\begin{corollary}[8.9.2]
+\label{2.8.9.2}
+If the morphism $p:X\to Y$ is proper, then we can, in the statement of Theorem~\sref{2.8.9.1}, assume that $q$ is proper, and replace ``open immersion'' by ``isomorphism''.
+\end{corollary}
+
+In a more suggestive manner, we can say (whenever $p:X\to Y$ is proper) that \emph{$\sh{L}$ is ample relative to $p$ if and only if we can ``\emph{contract}'' the null section of the vector bundle $\bb{V}(\sh{L})$ to the base prescheme $Y$.}
+An important particular case is that where $Y$ is the spectrum of a field, and where the operation of ``contraction'' consists of contract the null section $\bb{V}(\sh{L})$ \emph{to a single point}.
+
+\begin{env}[8.9.3]
+\label{2.8.9.3}
+The necessity of the conditions in Theorem~\sref{2.8.9.1} and Corollary~\sref{2.8.9.2} follow immediately from \sref{2.8.8.2} and \sref{2.8.8.4}.
+
+To show that the conditions of \sref{2.8.9.1} suffices, consider a slightly more general situation.
+For this, let (with the notation of \sref{2.8.8.2})
+\[
+  \sh{S}' = \bigoplus_{n\geq0}\sh{L}^{\otimes n}
+\]
+and
+\[
+  V = \bb{V}(\sh{L}) = \Spec(\sh{S}').
+\]
+
+The closed subprescheme $j(X)$, null section of $\bb{V}(\sh{L})$, is defined by the quasi-coherent sheaf of ideals $\sh{J}=(\sh{S}'_+)^\sim$ of $\sh{O}_V$ \sref{2.1.4.10}.
+This $\sh{O}_V$-module is \emph{invertible}, since this property is local on $X$, and this reduces to remarking that the ideal $TA[T]$ in a ring of polynomials $A[T]$ is a free cyclic $A[T]$-module.
+Furthermore, it is immediate (again, because the question is local on $X$) that
+\[
+  \sh{L} = j^*(\sh{J})
+\]
+and
+\[
+  j_*(\sh{L}) = \sh{J}/\sh{J}^2.
+\]
+
+Now, if
+\[
+  \pi : \bb{V}(\sh{L}) \to X
+\]
+is the structure morphism, then $\pi_*(\sh{J})=\sh{S}'_+$ and $\pi_*(\sh{J}/\sh{J}^2)=\sh{L}$;
+there are thus canonical homomorphisms $\sh{L}\to\pi_*(\sh{J})\to\sh{L}$, the first being the canonical injection $\sh{L}\to\sh{S}'_+$, and the second the canonical projection from $\sh{S}'_+$ to $\sh{S}'_1=\sh{L}$, and their composition being the identity.
+We can also canonically embed $\pi_*(\sh{J}) = \sh{S}'_+ = \bipoplus_{n\geq1}\sh{L}^{\otimes n}$ into the \emph{product} $\prod_{n\geq1}\sh{L}^{\otimes n} = \varprojlim_n \pi_*(\sh{J}/\sh{J}^{n+1})$ (since $\pi_*(\sh{J}/\sh{J}^{n+1}) = \sh{L}\oplus\sh{L}^{\otimes 2}\oplus\ldots\oplus\sh{L}^{\otimes n}$), and we thus have canonical homomorphisms
+\[
+\label{2.8.9.3.1}
+  \sh{L} \to \varprojlim \pi_*(\sh{J}/\sh{J}^{n+1}) \to \sh{L}
+\tag{8.9.3.1}
+\]
+whose composition is the identity.
+
+With this in mind, the generalisation of \sref{2.8.9.1} that we are going to prove is the following:
+\end{env}
+
+\begin{proposition}[8.9.4]
+\label{2.8.9.4}
+Let $Y$ be a prescheme, $V$ a $Y$-prescheme, and $X$ a closed subprescheme of $V$ defined by an ideal $\sh{J}$ of $\sh{O}_V$, which is an \emph{invertible} $\sh{O}_V$-module;
+if $j:X\to V$ is
+\oldpage[II]{184}
+the canonical injection, then let $\sh{L} = j^*(\sh{J}) = \sh{J}\otimes_{\sh{O}_V}\sh{O}_X$, so that $j_*(\sh{L})=\sh{J}/\sh{J}^2$.
+Assume that the structure morphism $p:X\to Y$ is separated and quasi-compact, and that the following conditions are satisfied:
+\begin{enumerate}
+  \item[\rm{(i)}] there exists a $Y$-morphism $\pi:V\to X$ of finite type such that $\pi\circ j=1_X$, and so $\pi_*(\sh{J}/\sh{J}^2)=\sh{L}$;
+  \item[\rm{(ii)}] there exists a homomorphism of $\sh{O}_X$-\modules $\varphi:\sh{L}\to\varprojlim\pi_*(\sh{J}/\sh{J}^{n+1})$ such that the composition
+    \[
+      \sh{L}
+      \xrightarrow{\varphi}
+      \varprojlim \pi_*(\sh{J}/\sh{J}^{n+1})
+      \xrightarrow{\alpha}
+      \pi_*(\sh{J}/\sh{J}^2) = \sh{L}
+    \]
+    (where $\alpha$ is the canonical homomorphism) is the identity;
+  \item[\rm{(iii)}] there exists a $Y$-prescheme $C$, a $Y$-section $\varepsilon$ of $C$, and a $Y$-morphism $q:V\to C$ such that the diagram
+    \[
+    \label{2.8.9.4.1}
+      \xymatrix{
+        X
+          \ar[r]^{j}
+          \ar[d]_{p}
+      & V
+          \ar[d]^{q}
+      \\Y
+          \ar[r]_{\varepsilon}
+      & C
+      }
+    \tag{8.9.4.1}
+    \]
+    commutes; and
+  \item[\rm{(iv)}] the restriction of $q$ to $W=V\setminus j(X)$ is a quasi-compact open immersion into $C$, whose image does not intersect $\varepsilon(Y)$.
+\end{enumerate}
+Then $\sh{L}$ is ample relative to $p$.
+\end{proposition}
 
 
-% \subsection{Grauert's ampleness criterion: proof}
-% \label{subsection:2.8.10}
+\subsection{Grauert's ampleness criterion: proof}
+\label{subsection:2.8.10}
+
+\begin{lemma}[8.10.1]
+\label{2.8.10.1}
+\end{lemma}
 
 
 % \subsection{Uniqueness of contractions}
