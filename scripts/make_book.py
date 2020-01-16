@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # see README.md/COPYING.md.
+from sys import argv
 
 # get location of repo.
 def get_path():
-  from sys import argv
-  if not len(argv) == 2:
+  if len(argv) < 2:
     print("\nThis script needs one argument, the path to the EGA directory.\n")
     raise Exception('Wrong arguments')
   return argv[1].rstrip("/") + "/"
@@ -26,13 +26,24 @@ def list_text_files(path):
   return listf.split()
 
 path = get_path() 
-with open(path + "book.tex", 'w') as book:
+wide = False
+if len(argv) == 3 and "--wide" in argv:
+  wide = True
+  filename = "book-wide.tex"
+else:
+  filename = "book.tex"
+with open(path + filename, 'w') as book:
   with open(path + "preamble.tex", 'r') as preamble:
     for line in preamble:
       if line.find("%") == 0:
         continue
       if line.find("externaldocument") >= 0:
         continue
+      if line.find("{geometry}") >= 0:
+        if wide:
+          line = "\\usepackage[margin=1.5in]{geometry}"
+        else:
+          continue
       if line.find("xr-hyper") >= 0:
         line = line.replace("xr-hyper", "CJKutf8")
       if line.find("\\documentclass[oneside]") == 0:

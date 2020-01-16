@@ -42,6 +42,17 @@ book:
 	mkdir -p $(PDF_DIR)
 	mv book.pdf $(PDF_DIR)
 
+.PHONY: book-wide
+book-wide:
+	python3 ./scripts/make_book.py "$(CURDIR)" --wide
+	$(PDFLATEX) book-wide
+	$(PDFLATEX) book-wide
+	bibtex book-wide
+	$(PDFLATEX) book-wide
+	$(PDFLATEX) book-wide
+	mkdir -p $(PDF_DIR)
+	mv book-wide.pdf $(PDF_DIR)
+
 .PHONY: cleanaux
 cleanaux:
 	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc
@@ -50,6 +61,7 @@ cleanaux:
 clean:
 	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc
 	if [ -f book.tex ]; then rm -i book.tex; fi
+	if [ -f book-wide.tex ]; then rm -i book-wide.tex; fi
 	for f in *.pdf; do if [ -f "$$f" ]; then rm -i *.pdf; fi; done
 	if [ -d $(PDF_DIR) ]; then\
 	  for f in $(PDF_DIR)/*.pdf; do\
@@ -61,7 +73,7 @@ clean:
 
 .PHONY: cleanforce
 cleanforce:
-	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex *-auto.tex
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex book-wide.tex *-auto.tex
 	rm -rf $(PDF_DIR)
 	rm -rf tags $(WEBNAME).* $(WEBNAME)
 	rm -rf plastex/ gerby-website/
