@@ -42,8 +42,6 @@ with open(path + filename, 'w') as book:
       if line.find("{geometry}") >= 0:
         if wide:
           line = "\\usepackage[margin=1.5in]{geometry}"
-        else:
-          continue
       if line.find("xr-hyper") >= 0:
         line = line.replace("xr-hyper", "CJKutf8")
       if line.find("\\documentclass[oneside]") == 0:
