@@ -20,12 +20,10 @@ There is the [**full document**](https://fppf.site/ega/book-auto.pdf), or indivi
 
 All the PDFs are auto-compliled every hour if any changes have been made since the last auto-compile, so will always be up to date with the latest commit.
 
-![lastupdate](https://img.shields.io/github/last-commit/ryankeleti/ega/master)
-
 ## Current status
 
 | | First draft | Proofreading |
-| ------ | ----------- | ------------ |
+| - | - | - |
 | ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-46%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
 | ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-green) | ![EGA1p](https://img.shields.io/badge/-100%25-green)|
 | ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-30%25-orange) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
@@ -35,9 +33,9 @@ All the PDFs are auto-compliled every hour if any changes have been made since t
 Here is the current status of the translation, along with who is currently working on/has worked on which sections.
 
 - [x] Introduction (EGA I) _(proofread by @thosgood)_
-- [x] Preliminaries (EGA 0_I)
-    + [x] 1. Rings of fractions _(@ryankeleti / proofread by @thosgood)_
-    + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti / proofread by @thosgood)_
+- [x] Preliminaries (EGA 0_I) _(proofread by @thosgood)_
+    + [x] 1. Rings of fractions _(@ryankeleti)_
+    + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti)_
     + [x] 3. Supplement on sheaves _(@ryankeleti)_
     + [x] 4. Ringed spaces _(@ryankeleti)_
     + [x] 5. Quasi-coherent sheaves and coherent sheaves _(@ryankeleti)_
