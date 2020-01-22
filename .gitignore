@@ -35,8 +35,10 @@
 *.synctex.gz(busy)
 *.pdfsync
 
-# Built files
+## Built files
 *.pdf
 .DS_STORE
 *.pyc
 book.tex
+*.paux
+
