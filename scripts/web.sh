@@ -79,7 +79,7 @@ setup_web() {
 
   echo "*** moving configuration.py ***"
   # 3) setup configuration.
-  mv "$EGA_DIR"/configuration.py "$BASE"/gerby-website/gerby/configuration.py
+  mv "$EGA_DIR"/scripts/configuration.py "$BASE"/gerby-website/gerby/configuration.py
 
   echo "*** linking files for plastex ***"
   # 4) setup soft links for plasTeX output.
