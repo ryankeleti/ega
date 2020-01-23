@@ -27,6 +27,7 @@ clean_web() {
 }
 
 setup_web() {
+  cd "$BASE" || return
   command -v dvipng >/dev/null 2>&1 || { echo >&2 "need to install dvipng"; exit 1; }
 
   echo "*** setting up python virtual environment ***"
@@ -77,9 +78,9 @@ setup_web() {
   pip install -e .
   cd "$BASE" || return
 
-  echo "*** moving configuration.py ***"
+  echo "*** copying configuration.py ***"
   # 3) setup configuration.
-  mv "$EGA_DIR"/scripts/configuration.py "$BASE"/gerby-website/gerby/configuration.py
+  cp "$EGA_DIR"/scripts/configuration.py "$BASE"/gerby-website/gerby/configuration.py
 
   echo "*** linking files for plastex ***"
   # 4) setup soft links for plasTeX output.
