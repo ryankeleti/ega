@@ -5,6 +5,8 @@
 Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
+View online [here](https://ega.fppf.site/).
+
 To compile, `make book`, `make pdfs`, or `make all`.
 
 ## PDFs
