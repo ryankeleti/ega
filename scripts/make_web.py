@@ -2,7 +2,7 @@
 # see README.md/COPYING.md.
 import re
 
-out = "ega"
+out = "ega-web"
 
 # get location of repo.
 def get_path():
