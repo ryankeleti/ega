@@ -2,13 +2,12 @@
 # for gerby-website.
 
 # configuration for the website.
-DATABASE = "ega.sqlite"
+DATABASE = "ega-web.sqlite"
 UNIT     = "section"
 DEPTH    = 0
 
 # configuration for the import.
-PATH     = "ega"
-PAUX     = "ega.paux"
+PATH     = "ega-web"
+PAUX     = "ega-web.paux"
 TAGS     = "tags"
 PDF      = ""
-
