@@ -95,11 +95,11 @@
 \NewDocumentCommand{\sref}{o m o}{%
   \IfNoValueTF{#1}%
     {\IfNoValueTF{#3}%
-      {\hyperref[#2]{\normalfont{(\StrGobbleLeft{#2}{2})}}}%
-      {\hyperref[#2]{\normalfont{(\StrGobbleLeft{#2}{2},~{#3})}}}}%
+      {\hyperref[#2]{\normalfont{(\StrBehind{#2}{.})}}}%
+      {\hyperref[#2]{\normalfont{(\StrBehind{#2}{.},~{#3})}}}}%
     {\IfNoValueTF{#3}%
-      {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrGobbleLeft{#2}{2})}}}%
-      {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrGobbleLeft{#2}{2},~{#3})}}}}%
+      {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrBehind{#2}{.})}}}%
+      {\hyperref[#2]{\normalfont{(\textbf{#1},~\StrBehind{#2}{.},~{#3})}}}}%
 }
 
 % for marking changes following errata
@@ -107,5 +107,5 @@
 \newcommand{\erratum}[2][]{{#2}\marginpar{\footnotesize\textbf{Err}\textsubscript{#1}}}
 
 % for referencing equations, use as \eref{eq:chapter-number.x.y.z}.
-\newcommand{\eref}[1]{\hyperref[#1]{\normalfont{(\StrGobbleLeft{#1}{5})}}}
+\newcommand{\eref}[1]{\hyperref[#1]{\normalfont{(\StrBehind{#1}{.})}}}
 
