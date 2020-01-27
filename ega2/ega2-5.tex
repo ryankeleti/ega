@@ -1,31 +1,31 @@
 \section{Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms}
-\label{section:2.5}
+\label{section:II.5}
 
 \subsection{Quasi-affine morphisms}
-\label{subsection:2.5.1}
+\label{subsection:II.5.1}
 
 \begin{definition}[5.1.1]
-\label{2.5.1.1}
+\label{II.5.1.1}
 We define a quasi-affine scheme to be a scheme isomorphic to some subscheme induced on some quasi-compact open subset of an affine scheme.
 We say that a morphism $f:X\to Y$ is quasi-affine, or that $X$ (considered as a $Y$-prescheme via $f$) is a quasi-affine $Y$-scheme, if there exists a cover $(U_\alpha)$ of $Y$ by affine open subsets such that the $f^{-1}(U_\alpha)$ are quasi-affine schemes.
 \end{definition}
 
-It is clear that a quasi-affine morphism is \emph{separated} (\sref[I]{1.5.5.5} and \sref[I]{1.5.5.8}) and \emph{quasi-compact} \sref[I]{1.6.6.1};
+It is clear that a quasi-affine morphism is \emph{separated} (\sref[I]{I.5.5.5} and \sref[I]{I.5.5.8}) and \emph{quasi-compact} \sref[I]{I.6.6.1};
 every affine morphisms is evidently quasi-affine.
 
-Recall that, for any prescheme $X$, setting $A=\Gamma(X,\sh{O}_X)$, the identity homomorphism $A\to A=\Gamma(X,\sh{O}_X)$ defines a morphism $X\to\Spec(A)$, said to be \emph{canonical} \sref[I]{1.2.2.4};
-this is nothing but the canonical morphism defined in \sref{2.4.5.1} for the specific case where $\sh{L}=\sh{O}_X$, if we remember that $\Proj(A[T])$ is canonically identified with $\Spec(A)$ \sref{2.3.1.7}.
+Recall that, for any prescheme $X$, setting $A=\Gamma(X,\sh{O}_X)$, the identity homomorphism $A\to A=\Gamma(X,\sh{O}_X)$ defines a morphism $X\to\Spec(A)$, said to be \emph{canonical} \sref[I]{I.2.2.4};
+this is nothing but the canonical morphism defined in \sref{II.4.5.1} for the specific case where $\sh{L}=\sh{O}_X$, if we remember that $\Proj(A[T])$ is canonically identified with $\Spec(A)$ \sref{II.3.1.7}.
 
 \begin{proposition}[5.1.2]
-\label{2.5.1.2}
+\label{II.5.1.2}
 Let $X$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian, and $A$ the ring $\Gamma(X,\sh{O}_X)$.
 The following conditions are equivalent.
 \begin{enumerate}
   \item[{\rm(a)}] $X$ is a quasi-affine scheme.
   \item[{\rm(b)}] The canonical morphism $u:X\to\Spec(A)$ is an open immersion.
   \item[{\rm(b')}] The canonical morphism $u:X\to\Spec(A)$ is a homeomorphism from $X$ to some subspace of the underlying space of $\Spec(A)$.
-  \item[{\rm(c)}] The $\sh{O}_X$-module $\sh{O}_X$ is very ample relative to $u$ \sref{2.4.4.2}.
-  \item[{\rm(c')}] The $\sh{O}_X$-module $\sh{O}_X$ is ample \sref{2.4.5.1}.
+  \item[{\rm(c)}] The $\sh{O}_X$-module $\sh{O}_X$ is very ample relative to $u$ \sref{II.4.4.2}.
+  \item[{\rm(c')}] The $\sh{O}_X$-module $\sh{O}_X$ is ample \sref{II.4.5.1}.
   \item[{\rm(d)}] When $f$ ranges over $A$, the $X_f$ form a basis for the topology of $X$.
   \item[{\rm(d')}] When $f$ varies over $A$, the $X_f$ that are affine form a cover of $X$.
 \oldpage[II]{95}
@@ -36,12 +36,12 @@ The following conditions are equivalent.
 
 \begin{proof}
 \label{proof-2.5.1.2}
-It is clear that (b) implies (a), and (a) implies (c) by \sref{2.4.4.4}[b] applied to the identity morphism (taking into account the remark preceding this proposition);
-Furthermore, (c) implies (c$'$) \sref{2.4.5.10}[i], and (c$'$), (b), and (b$'$) are all equivalent by \sref{2.4.5.2}[b] and \sref{2.4.5.2}[b$'$].
-Finally, (c$'$) is the same as each of (d), (d$'$), (e), and (e$'$) by \sref{2.4.5.2}[a], \sref{2.4.5.2}[a$'$], \sref{2.4.5.2}[c], and \sref{2.4.5.5}[d$''$].
+It is clear that (b) implies (a), and (a) implies (c) by \sref{II.4.4.4}[b] applied to the identity morphism (taking into account the remark preceding this proposition);
+Furthermore, (c) implies (c$'$) \sref{II.4.5.10}[i], and (c$'$), (b), and (b$'$) are all equivalent by \sref{II.4.5.2}[b] and \sref{II.4.5.2}[b$'$].
+Finally, (c$'$) is the same as each of (d), (d$'$), (e), and (e$'$) by \sref{II.4.5.2}[a], \sref{II.4.5.2}[a$'$], \sref{II.4.5.2}[c], and \sref{II.4.5.5}[d$''$].
 \end{proof}
 
-We further observe that, with the previous notation, the $X_f$ that are affine form a \emph{basis} for the topology of $X$, and that the canonical morphism $u$ is \emph{dominant} \sref{2.4.5.2}.
+We further observe that, with the previous notation, the $X_f$ that are affine form a \emph{basis} for the topology of $X$, and that the canonical morphism $u$ is \emph{dominant} \sref{II.4.5.2}.
 
 \begin{corollary}[5.1.3]
 \label{1.5.1.3}
@@ -52,37 +52,37 @@ If there exists a morphism $v:X\to Y$ from $X$ to some affine scheme $Y$ (which 
 \begin{proof}
 \label{proof-2.5.1.3}
 There exists a family $(g_\alpha)$ of sections of $\sh{O}_Y$ over $Y$ such that the $D(g_\alpha)$ form a basis for the topology of $v(X)$;
-if $v=(\psi,\theta)$ and we set $f_\alpha=\theta(g_\alpha)$, then we have $X_{f_\alpha}=\psi^{-1}(D(g_\alpha))$ \sref[I]{1.2.2.4.1}, so the $X_{f_\alpha}$ form a basis for the topology of $X$, and the criterion \sref{2.5.1.2}[d] is satisfied.
+if $v=(\psi,\theta)$ and we set $f_\alpha=\theta(g_\alpha)$, then we have $X_{f_\alpha}=\psi^{-1}(D(g_\alpha))$ \sref[I]{I.2.2.4.1}, so the $X_{f_\alpha}$ form a basis for the topology of $X$, and the criterion \sref{II.5.1.2}[d] is satisfied.
 \end{proof}
 
 \begin{corollary}[5.1.4]
-\label{2.5.1.4}
+\label{II.5.1.4}
 If $X$ is a quasi-affine scheme, then \emph{every} invertible $\sh{O}_X$-module is very ample (relative to the canonical morphism), and \emph{a fortiori} ample.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.1.4}
-Such a module $\sh{L}$ is generated by its sections over $X$ \sref{2.5.1.2}[e], so $\sh{L}\otimes\sh{O}_X=\sh{L}$ is very ample \sref{2.4.4.8}.
+Such a module $\sh{L}$ is generated by its sections over $X$ \sref{II.5.1.2}[e], so $\sh{L}\otimes\sh{O}_X=\sh{L}$ is very ample \sref{II.4.4.8}.
 \end{proof}
 
 \begin{corollary}[5.1.5]
-\label{2.5.1.5}
+\label{II.5.1.5}
 Let $X$ be a quasi-compact prescheme.
 If there exists an invertible $\sh{O}_X$-module $\sh{L}$ such that $\sh{L}$ and $\sh{L}^{-1}$ are ample, then $X$ is a quasi-affine scheme.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.1.5}
-Indeed, $\sh{O}_X=\sh{L}\otimes\sh{L}^{-1}$ is then ample \sref{2.4.5.7}.
+Indeed, $\sh{O}_X=\sh{L}\otimes\sh{L}^{-1}$ is then ample \sref{II.4.5.7}.
 \end{proof}
 
 \begin{proposition}[5.1.6]
-\label{2.5.1.6}
+\label{II.5.1.6}
 Let $f:X\to Y$ be a quasi-compact morphism.
 Then the following conditions are equivalent.
 \begin{enumerate}
   \item[{\rm(a)}] The morphism $f$ is quasi-affine.
-  \item[{\rm(b)}] The $\sh{O}_Y$-algebra $f_*(\sh{O}_X)=\sh{A}(X)$ is quasi-coherent, and the canonical morphism $X\to\Spec(\sh{A}(X))$ corresponding to the identity morphism $\sh{A}(X)\to\sh{A}(X)$ \sref{2.1.2.7} is an open immersion.
+  \item[{\rm(b)}] The $\sh{O}_Y$-algebra $f_*(\sh{O}_X)=\sh{A}(X)$ is quasi-coherent, and the canonical morphism $X\to\Spec(\sh{A}(X))$ corresponding to the identity morphism $\sh{A}(X)\to\sh{A}(X)$ \sref{II.1.2.7} is an open immersion.
   \item[{\rm(b')}] The $\sh{O}_Y$-algebra $\sh{A}(X)$ is quasi-coherent, and the canonical morphism $X\to\Spec(\sh{A}(X))$ is a homeomorphism from $X$ to some subspace of $\Spec(\sh{A}(X))$.
   \item[{\rm(c)}] The $\sh{O}_X$-module $\sh{O}_X$ is very ample for $f$.
   \item[{\rm(c')}] The $\sh{O}_X$-module $\sh{O}_X$ is ample for $f$.
@@ -94,44 +94,44 @@ Furthermore, whenever $f$ is quasi-affine, every invertible $\sh{O}_X$-module $\
 
 \begin{proof}
 \label{proof-2.5.1.6}
-The equivalence between (a) and (c$'$) follows from the local (on $Y$) character of the $f$-ampleness \sref{2.4.6.4}, Definition~\sref{2.5.1.1}, and the criterion \sref{2.5.1.2}[c$'$].
+The equivalence between (a) and (c$'$) follows from the local (on $Y$) character of the $f$-ampleness \sref{II.4.6.4}, Definition~\sref{II.5.1.1}, and the criterion \sref{II.5.1.2}[c$'$].
 The other properties are local on $Y$
 \oldpage[II]{96}
-and thus follow immediately from \sref{2.5.1.2} and \sref{2.5.1.4}, taking into account the fact that $f_*(\sh{F})$ is quasi-coherent whenever $f$ is separated \sref[I]{1.9.2.2}[a].
+and thus follow immediately from \sref{II.5.1.2} and \sref{II.5.1.4}, taking into account the fact that $f_*(\sh{F})$ is quasi-coherent whenever $f$ is separated \sref[I]{I.9.2.2}[a].
 \end{proof}
 
 \begin{corollary}[5.1.7]
-\label{2.5.1.7}
+\label{II.5.1.7}
 Let $f:X\to Y$ be a quasi-affine morphism.
 For every open subset $U$ of $Y$, the restriction $f^{-1}(U)\to U$ of $f$ is quasi-affine.
 \end{corollary}
 
 \begin{corollary}[5.1.8]
-\label{2.5.1.8}
+\label{II.5.1.8}
 Let $Y$ be an affine scheme, and $f:X\to Y$ a quasi-compact morphism.
 For $f$ to be quasi-affine, it is necessary and sufficient for $X$ to be a quasi-affine scheme.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.1.8}
-This is an immediate consequence of \sref{2.5.1.6} and \sref{2.4.6.6}.
+This is an immediate consequence of \sref{II.5.1.6} and \sref{II.4.6.6}.
 \end{proof}
 
 \begin{corollary}[5.1.9]
-\label{2.5.1.9}
+\label{II.5.1.9}
 Let $Y$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian, and $f:X\to Y$ a morphism of \emph{finite type}.
-If $f$ is quasi-affine, then there exists a quasi-coherent $\sh{O}_Y$-subalgebra $\sh{B}$ of $\sh{A}(X)=f_*(\sh{O}_X)$ of \emph{finite type} \sref[I]{1.9.6.2} such that the morphism $X\to\Spec(\sh{B})$ corresponding to the canonical injection $\sh{B}\to\sh{A}(X)$ is an immersion.
+If $f$ is quasi-affine, then there exists a quasi-coherent $\sh{O}_Y$-subalgebra $\sh{B}$ of $\sh{A}(X)=f_*(\sh{O}_X)$ of \emph{finite type} \sref[I]{I.9.6.2} such that the morphism $X\to\Spec(\sh{B})$ corresponding to the canonical injection $\sh{B}\to\sh{A}(X)$ is an immersion.
 Further, every quasi-coherent $\sh{O}_Y$-subalgebra $\sh{B}'$ of finite type over $\sh{A}(X)$ containing $\sh{B}$ has the same property.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.1.9}
-Indeed, $\sh{A}(X)$ is the inductive limit of its quasi-coherent $\sh{O}_Y$-subalgebras of finite type \sref[I]{1.9.6.5};
-the result is then a particular case of \sref{2.3.8.4}, taking into account the identification of $\Spec(\sh{A}(X))$ with $\Proj(\sh{A}(X)[T])$ \sref{2.3.1.7}.
+Indeed, $\sh{A}(X)$ is the inductive limit of its quasi-coherent $\sh{O}_Y$-subalgebras of finite type \sref[I]{I.9.6.5};
+the result is then a particular case of \sref{II.3.8.4}, taking into account the identification of $\Spec(\sh{A}(X))$ with $\Proj(\sh{A}(X)[T])$ \sref{II.3.1.7}.
 \end{proof}
 
 \begin{proposition}[5.1.10]
-\label{2.5.1.10}
+\label{II.5.1.10}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] A quasi-compact morphism $X\to Y$ that is a homeomorphism from the underlying space of $X$ to some subspace of the underlying space of $Y$ (so, in particular, any closed immersion) is quasi-affine.
@@ -145,36 +145,36 @@ the result is then a particular case of \sref{2.3.8.4}, taking into account the 
 
 \begin{proof}
 \label{proof-2.5.1.10}
-Taking into account the criterion \sref{2.5.1.6}[c$'$], all of (i), (iii), (iv), (v), and (vi) follow immediately from \sref{2.4.6.13}[i \emph{bis}], \sref{2.4.6.13}[iii], \sref{2.4.6.13}[iv], \sref{2.4.6.13}[v], and \sref{2.4.6.13}[vi] (respectively).
-To prove (ii), we can restrict to the case where $Z$ is affine, and then the claim follows directly from applying \sref{2.4.6.13}[ii] to $\sh{L}=\sh{O}_X$ and $\sh{K}=\sh{O}_Y$.
+Taking into account the criterion \sref{II.5.1.6}[c$'$], all of (i), (iii), (iv), (v), and (vi) follow immediately from \sref{II.4.6.13}[i \emph{bis}], \sref{II.4.6.13}[iii], \sref{II.4.6.13}[iv], \sref{II.4.6.13}[v], and \sref{II.4.6.13}[vi] (respectively).
+To prove (ii), we can restrict to the case where $Z$ is affine, and then the claim follows directly from applying \sref{II.4.6.13}[ii] to $\sh{L}=\sh{O}_X$ and $\sh{K}=\sh{O}_Y$.
 \end{proof}
 
 \begin{remark}[5.1.11]
-\label{2.5.1.11}
+\label{II.5.1.11}
 Let $f:X\to Y$ and $g:Y\to Z$ be morphisms such that $X\times_Z Y$ is locally Noetherian.
-Then the graph immersion $\Gamma_f:X\to X\times_Z Y$ is quasi-affine, since it is quasi-compact \sref[I]{1.6.3.5}, and since \sref[I]{1.5.5.12} shows that, in (v), the conclusion still holds true if we remove the hypothesis that $g$ is separated.
+Then the graph immersion $\Gamma_f:X\to X\times_Z Y$ is quasi-affine, since it is quasi-compact \sref[I]{I.6.3.5}, and since \sref[I]{I.5.5.12} shows that, in (v), the conclusion still holds true if we remove the hypothesis that $g$ is separated.
 \end{remark}
 
 \begin{proposition}[5.1.12]
-\label{2.5.1.12}
+\label{II.5.1.12}
 Let $f:X\to Y$ be a quasi-compact morphism, and $g:X'\to X$ a quasi-affine morphism.
 If $\sh{L}$ is an ample (for $f$) $\sh{O}_X$-module, then $g^*(\sh{L})$ is an ample (for $f\circ g$) $\sh{O}_{X'}$-module.
 \end{proposition}
 
 \begin{proof}
 \label{proof-2.5.1.12}
-Since $\sh{O}_{X'}$ is very ample for $g$, and the question is local on $Y$ \sref{2.4.6.4}, it follows from \sref{2.4.6.13}[ii] that there exists (for $Y$ affine) an integer $n$ such that
+Since $\sh{O}_{X'}$ is very ample for $g$, and the question is local on $Y$ \sref{II.4.6.4}, it follows from \sref{II.4.6.13}[ii] that there exists (for $Y$ affine) an integer $n$ such that
 \[
   g^*(\sh{L}^{\otimes n})=(g^*(\sh{L}))^{\otimes n}
 \]
-is ample for $f\circ g$, and so $g^*(\sh{L})$ is ample for $f\circ g$ \sref{2.4.6.9}
+is ample for $f\circ g$, and so $g^*(\sh{L})$ is ample for $f\circ g$ \sref{II.4.6.9}
 \end{proof}
 
 \subsection{Serre's criterion}
-\label{subsection:2.5.2}
+\label{subsection:II.5.2}
 
 \begin{theorem}[5.2.1]
-\label{2.5.2.1}
+\label{II.5.2.1}
 \emph{(Serre's criterion).}
 Let $X$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian.
 The following conditions are equivalent.
@@ -200,16 +200,16 @@ The following conditions are equivalent.
 \begin{proof}
 \label{proof-2.5.2.1}
 It is evident that (a) implies (b); furthermore, (b) implies that the $X_{f_\alpha}$ cover $X$, because, by hypothesis, the section $1$ is a linear combination of the $f_\alpha$, and the $D(f_\alpha)$ thus cover $\Spec(A)$.
-The final claim of \sref{2.4.5.2} thus implies that $X\to\Spec(A)$ is an isomorphism.
+The final claim of \sref{II.4.5.2} thus implies that $X\to\Spec(A)$ is an isomorphism.
 
-We know tha (a) implies (c) \sref[I]{1.1.3.11}, and (c) trivially implies (c$'$).
+We know tha (a) implies (c) \sref[I]{I.1.3.11}, and (c) trivially implies (c$'$).
 We now prove that (c$'$) implies (b).
 First of all, (c$'$) implies that, for every \emph{closed} point $x\in X$ and every open neighbourhood $U$ of $x$, there exists some $f\in A$ such that $x\in X_f\subset X\setmin U$.
-Let $\sh{J}$ (resp. $\sh{J}'$) be the quasi-coherent sheaf of ideals of $\sh{O}_X$ defining the reduced closed subprescheme of $X$ that has $X\setmin U$ (resp. $(X\setmin U)\cup\{x\}$) as its underlying space \sref[I]{1.5.2.1};
+Let $\sh{J}$ (resp. $\sh{J}'$) be the quasi-coherent sheaf of ideals of $\sh{O}_X$ defining the reduced closed subprescheme of $X$ that has $X\setmin U$ (resp. $(X\setmin U)\cup\{x\}$) as its underlying space \sref[I]{I.5.2.1};
 it is clear that we have $\sh{J}'\subset\sh{J}$, and that $\sh{J}''=\sh{J}/\sh{J}'$ is a quasi-coherent $\sh{O}_X$ module that has support equal to $\{x\}$, and such that $\sh{J}_x''=\kres(x)$.
 Hypothesis~(c$'$) applied to the exact sequence $0\to\sh{J}'\to\sh{J}\to\sh{J}''\to0$ shows that $\Gamma(X,\sh{J})\to\Gamma(X,\sh{J}'')$ is surjective.
 The section of $\sh{J}''$ whose germ at $x$ is $1_x$ is thus the image of some section $f\in\Gamma(X,\sh{J})\subset\Gamma(X,\sh{O}_X)$, and we have, by definition, that $f(x)=1_x$ and $f(y)=0$ in $X\setmin U$, which establishes our claim.
-Now, if $U$ is affine, then so is $X_f$ \sref[I]{1.1.3.6}, so the union of the $X_f$ that are affine ($f\in A$) is an open set $Z$ that contains \emph{all the closed points} of $X$;
+Now, if $U$ is affine, then so is $X_f$ \sref[I]{I.1.3.6}, so the union of the $X_f$ that are affine ($f\in A$) is an open set $Z$ that contains \emph{all the closed points} of $X$;
 since $X$ is a quasi-compact Kolmogoroff space, we necessarily have $Z=X$ \sref[0]{0.2.1.3}.
 Because $X$ is quasi-compact, there are a \emph{finite} number of elements $f_i\in A$ ($1\leq i\leq n$) such that the $X_{f_i}$ are affine and cover $X$.
 So consider the homomorphism $\sh{O}_X^n\to\sh{O}_X$ defined by the sections $f_i$ \sref[0]{0.5.1.1};
@@ -218,22 +218,22 @@ It then follows
 \oldpage[II]{98}
 from (c$'$) that the corresponding homomorphism $\Gamma(X,\sh{O}_X^n)\to\Gamma(X,\sh{O}_X)$ is surjective, which proves (b).
 
-Finally, (a) implies (d) \sref[I]{1.5.1.9.2}, and (d) trivially implies (d$'$).
+Finally, (a) implies (d) \sref[I]{I.5.1.9.2}, and (d) trivially implies (d$'$).
 It remains to show that (d$'$) implies (c$'$).
-But if $\sh{F}'$ is a quasi-coherent $\sh{O}_X$-submodule of $\sh{O}_X^n$, then the filtration $0\subset\sh{O}_X\subset\sh{O}_X^2\subset\ldots\subset\sh{O}_X^n$ defines a filtration of $\sh{F}'$ given by the $\sh{F}'_k=\sh{F}\cap\sh{O}_X^k$ ($0\leq k\leq n$), which are quasi-coherent $\sh{O}_X$-modules \sref[I]{1.4.1.1}, and $\sh{F}'_{k+1}/\sh{F}'_k$ is isomorphic to a quasi-coherent $\sh{O}_X$-submodule of $\sh{O}_X^{k+1}/\sh{O}_X^k=\sh{O}_X$, which is to say, a quasi-coherent sheaf of ideals of $\sh{O}_X$.
+But if $\sh{F}'$ is a quasi-coherent $\sh{O}_X$-submodule of $\sh{O}_X^n$, then the filtration $0\subset\sh{O}_X\subset\sh{O}_X^2\subset\ldots\subset\sh{O}_X^n$ defines a filtration of $\sh{F}'$ given by the $\sh{F}'_k=\sh{F}\cap\sh{O}_X^k$ ($0\leq k\leq n$), which are quasi-coherent $\sh{O}_X$-modules \sref[I]{I.4.1.1}, and $\sh{F}'_{k+1}/\sh{F}'_k$ is isomorphic to a quasi-coherent $\sh{O}_X$-submodule of $\sh{O}_X^{k+1}/\sh{O}_X^k=\sh{O}_X$, which is to say, a quasi-coherent sheaf of ideals of $\sh{O}_X$.
 Hypothesis~(d$'$) thus implies that $\HH^1(X,\sh{F}'_{k+1}/\sh{F}'_k)=0$;
 the exact cohomology sequence $\HH^1(X,\sh{F}'_k)\to\HH^1(X,\sh{F}'_{k+1})\to\HH^1(X,\sh{F}'_{k+1}/\sh{F}'_k)=0$ then lets us prove by induction on $k$ that $H^1(X,\sh{F}'_k)=0$ for all $k$.
 \end{proof}
 
 \begin{remark}[5.2.1.1]
-\label{2.5.2.1.1}
+\label{II.5.2.1.1}
 When $X$ is a \emph{Noetherian} prescheme, we can replace ``quasi-coherent'' by ``coherent'' in the statements of (c$'$) and (d$'$).
-Indeed, in the proof of the fact that (c$'$) implies (b), $\sh{J}$ and $\sh{J}'$ are then \emph{coherent} sheaves of ideals, and, furthermore, every quasi-coherent submodule of a coherent module is coherent \sref[I]{1.6.1.1};
+Indeed, in the proof of the fact that (c$'$) implies (b), $\sh{J}$ and $\sh{J}'$ are then \emph{coherent} sheaves of ideals, and, furthermore, every quasi-coherent submodule of a coherent module is coherent \sref[I]{I.6.1.1};
 whence the conclusion.
 \end{remark}
 
 \begin{corollary}[5.2.2]
-\label{2.5.2.2}
+\label{II.5.2.2}
 Let $f:X\to Y$ be a separated quasi-compact morphism.
 The following conditions are equivalent.
 \begin{enumerate}
@@ -247,24 +247,24 @@ The following conditions are equivalent.
 \begin{proof}
 \label{proof-2.5.2.2}
 All these conditions are local on $Y$, by definition of the functor $\RR^1 f_*$ (T,~3.7.3), and so we can assume that $Y$ is affine.
-If $f$ is affine, then $X$ is affine, and property~(b) is nothing more than \sref[I]{1.1.6.4}.
+If $f$ is affine, then $X$ is affine, and property~(b) is nothing more than \sref[I]{I.1.6.4}.
 Conversely, we now show that (b) implies (a):
-for every quasi-coherent $\sh{O}_X$-module $\sh{F}$, we have that $f_*(\sh{F})$ is a quasi-coherent $\sh{O}_Y$-module \sref[I]{1.9.2.2}[a].
-By hypothesis, the functor $f_*(\sh{F})$ is exact in $\sh{F}$, and the functor $\Gamma(Y,\sh{G})$ is exact in $\sh{G}$ (in the category of quasi-coherent $\sh{O}_Y$-modules) because $Y$ is affine \sref[I]{1.1.3.11};
-so $\Gamma(Y,f_*(\sh{F}))=\Gamma(X,\sh{F})$ is exact in $\sh{F}$, which proves our claim, by \sref{2.5.2.1}[c].
+for every quasi-coherent $\sh{O}_X$-module $\sh{F}$, we have that $f_*(\sh{F})$ is a quasi-coherent $\sh{O}_Y$-module \sref[I]{I.9.2.2}[a].
+By hypothesis, the functor $f_*(\sh{F})$ is exact in $\sh{F}$, and the functor $\Gamma(Y,\sh{G})$ is exact in $\sh{G}$ (in the category of quasi-coherent $\sh{O}_Y$-modules) because $Y$ is affine \sref[I]{I.1.3.11};
+so $\Gamma(Y,f_*(\sh{F}))=\Gamma(X,\sh{F})$ is exact in $\sh{F}$, which proves our claim, by \sref{II.5.2.1}[c].
 
-If $f$ is affine, then $f^{-1}(U)$ is affine for every affine open subset $U$ of $Y$ \sref{2.1.3.2}, and so $\HH^1(f^{-1}(U),\sh{F})=0$ \sref{2.5.2.1}[d], which, by definition, implies that $\RR^1 f_*(\sh{F})=0$.
+If $f$ is affine, then $f^{-1}(U)$ is affine for every affine open subset $U$ of $Y$ \sref{II.1.3.2}, and so $\HH^1(f^{-1}(U),\sh{F})=0$ \sref{II.5.2.1}[d], which, by definition, implies that $\RR^1 f_*(\sh{F})=0$.
 Finally, suppose that condition~(c$'$) is satisfied;
 the exact sequence of terms of low degree in the Leray spectral sequence (G,~II,~4.17.1 and I,~4.5.1) give, in particular, the exact sequence
 \[
   0\to\HH^1(Y,f_*(\sh{J}))\to\HH^1(X,\sh{J})\to\HH^0(Y,\RR^1 f_*(\sh{J})).
 \]
-Since $Y$ is affine, and $f_*(\sh{J})$ quasi-coherent \sref[I]{1.9.2.2}[a], we have that $\HH^1(Y,f_*(\sh{J}))=0$ \sref{2.5.2.1};
-hypothesis~(c$'$) thus implies that $\HH^1(X,\sh{J})=0$, and we conclude, by \sref{2.5.2.1}, that $X$ is an affine scheme.
+Since $Y$ is affine, and $f_*(\sh{J})$ quasi-coherent \sref[I]{I.9.2.2}[a], we have that $\HH^1(Y,f_*(\sh{J}))=0$ \sref{II.5.2.1};
+hypothesis~(c$'$) thus implies that $\HH^1(X,\sh{J})=0$, and we conclude, by \sref{II.5.2.1}, that $X$ is an affine scheme.
 \end{proof}
 
 \begin{corollary}[5.2.3]
-\label{2.5.2.3}
+\label{II.5.2.3}
 If $f:X\to Y$ is an affine morphism, then, for every quasi-coherent $\sh{O}_X$-module $\sh{F}$, the canonical homomorphism $\HH^1(Y,f_*(\sh{F}))\to\HH^1(X,\sh{F})$ is bijective.
 \end{corollary}
 
@@ -275,31 +275,31 @@ We have the exact sequence
 \[
   0\to\HH^1(Y,f_*(\sh{F}))\to\HH^1(X,\sh{F})\to\HH^0(Y,\RR^1 f_*(\sh{F}))
 \]
-of terms of low degree in the Leray spectral sequence, and the conclusion follows from \sref{2.5.2.2}.
+of terms of low degree in the Leray spectral sequence, and the conclusion follows from \sref{II.5.2.2}.
 \end{proof}
 
 \begin{remark}[5.2.4]
-\label{2.5.2.4}
+\label{II.5.2.4}
 In Chapter~III,~\textsection1, we prove that, if $X$ is affine, then we have $\HH^i(X,\sh{F})=0$ for all $i>0$ and all quasi-coherent $\sh{O}_X$-modules $\sh{F}$.
 \end{remark}
 
 \subsection{Quasi-projective morphisms}
-\label{subsection:2.5.3}
+\label{subsection:II.5.3}
 
 \begin{definition}[5.3.1]
-\label{2.5.3.1}
+\label{II.5.3.1}
 We say that a morphism $f:X\to Y$ is \emph{quasi-projective}, or that $X$ (considered as a $Y$-prescheme via $f$) is \emph{quasi-projective over $Y$}, or that $X$ is a \emph{quasi-projective $Y$-scheme}, if $f$ is of finite type and there exists an invertible $f$-ample $\sh{O}_X$-module.
 \end{definition}
 
 We note that this notion \emph{is not local on $Y$}:
 the counterexamples of Nagata~\cite{II-26} and Hironaka show that, even if $X$ and $Y$ are non-singular algebraic schemes over an algebraically closed field, every point of $Y$ can have an affine neighbourhood $U$ such that $f^{-1}(U)$ is quasi-projective over $U$, without $f$ being quasi-projective.
 
-We note that a quasi-projective morphism is necessarily \emph{separated} \sref{2.4.6.1}.
-When $Y$ is quasi-compact, it is equivalent to say either that $f$ is quasi-projective, or that $f$ is of finite type and there exists a \emph{very ample} (relative to $f$) $\sh{O}_X$-module (\sref{2.4.6.2} and \sref{2.4.6.11}).
+We note that a quasi-projective morphism is necessarily \emph{separated} \sref{II.4.6.1}.
+When $Y$ is quasi-compact, it is equivalent to say either that $f$ is quasi-projective, or that $f$ is of finite type and there exists a \emph{very ample} (relative to $f$) $\sh{O}_X$-module (\sref{II.4.6.2} and \sref{II.4.6.11}).
 Further:
 
 \begin{proposition}[5.3.2]
-\label{2.5.3.2}
+\label{II.5.3.2}
 Let $Y$ be a quasi-compact scheme or a prescheme whose underlying space is Noetherian, and let $X$ be a $Y$-prescheme.
 The following conditions are equivalent.
 \begin{enumerate}
@@ -311,24 +311,24 @@ The following conditions are equivalent.
 
 \begin{proof}
 \label{proof-2.5.3.2}
-This follows immediately from the previous remark and from \sref{2.4.4.3}, \sref{2.4.4.6}, and \sref{2.4.4.7}.
+This follows immediately from the previous remark and from \sref{II.4.4.3}, \sref{II.4.4.6}, and \sref{II.4.4.7}.
 \end{proof}
 
-We note that, whenever $Y$ is a \emph{Noetherian} prescheme, we can, in conditions~(b) and (c) of \sref{2.5.3.2}, remove the hypothesis that $X$ is of finite type over $Y$, since this automatically satisfied \sref[I]{1.6.3.5}.
+We note that, whenever $Y$ is a \emph{Noetherian} prescheme, we can, in conditions~(b) and (c) of \sref{II.5.3.2}, remove the hypothesis that $X$ is of finite type over $Y$, since this automatically satisfied \sref[I]{I.6.3.5}.
 
 \begin{corollary}[5.3.3]
-\label{2.5.3.3}
-Let $Y$ be a quasi-compact scheme such that there exists an ample $\sh{O}_Y$-module $\sh{L}$ \sref{2.4.5.3}.
+\label{II.5.3.3}
+Let $Y$ be a quasi-compact scheme such that there exists an ample $\sh{O}_Y$-module $\sh{L}$ \sref{II.4.5.3}.
 For a $Y$-scheme $X$ to be quasi-projective, it is necessary and sufficient for it to be of finite type over $Y$ and also isomorphic to a $Y$-subscheme of a projective bundle of the form $\bb{P}_Y^r$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.3.3}
-If $\sh{E}$ is a quasi-coherent $\sh{O}_Y$-module of finite type, then $\sh{E}$ is isomorphic to a quotient of an $\sh{O}_Y$-module $\sh{L}^{\otimes(-n)}\otimes_{\sh{O}_Y}\sh{O}_Y^k$ \sref{2.4.5.5}, and so $\bb{P}(\sh{E})$ is isomorphic to a closed subscheme of $\bb{P}_Y^{k-1}$ (\sref{2.4.1.2} and \sref{2.4.1.4}).
+If $\sh{E}$ is a quasi-coherent $\sh{O}_Y$-module of finite type, then $\sh{E}$ is isomorphic to a quotient of an $\sh{O}_Y$-module $\sh{L}^{\otimes(-n)}\otimes_{\sh{O}_Y}\sh{O}_Y^k$ \sref{II.4.5.5}, and so $\bb{P}(\sh{E})$ is isomorphic to a closed subscheme of $\bb{P}_Y^{k-1}$ (\sref{II.4.1.2} and \sref{II.4.1.4}).
 \end{proof}
 
 \begin{proposition}[5.3.4]
-\label{2.5.3.4}
+\label{II.5.3.4}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] A quasi-affine morphism of finite type (and, in particular, a quasi-compact immersion, or an affine morphism of finite type) is quasi-projective.
@@ -343,34 +343,34 @@ If $\sh{E}$ is a quasi-coherent $\sh{O}_Y$-module of finite type, then $\sh{E}$ 
 
 \begin{proof}
 \label{proof-2.5.3.4}
-(i) follows from \sref{2.5.1.6} and \sref{2.5.1.10}[i].
-The other claims are immediate consequences of Definition~\sref{2.5.3.1}, of the properties of morphisms of finite type \sref[I]{1.6.3.4}, and of \sref{2.4.6.13}.
+(i) follows from \sref{II.5.1.6} and \sref{II.5.1.10}[i].
+The other claims are immediate consequences of Definition~\sref{II.5.3.1}, of the properties of morphisms of finite type \sref[I]{I.6.3.4}, and of \sref{II.4.6.13}.
 \end{proof}
 
 \begin{remark}[5.3.5]
-\label{2.5.3.5}
+\label{II.5.3.5}
 We note that we can have $f_\red$ being quasi-projective without $f$ being quasi-projective, even if we assume that $Y$ is the spectrum of an algebra of finite rank over $\bb{C}$ and that $f$ is proper.
 \end{remark}
 
 \begin{corollary}[5.3.6]
-\label{2.5.3.6}
+\label{II.5.3.6}
 If $X$ and $X'$ are quasi-projective $Y$-schemes, then $X\sqcup X'$ is a quasi-projective $Y$-scheme.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.3.6}
-This follows from \sref{2.4.6.18}.
+This follows from \sref{II.4.6.18}.
 \end{proof}
 
 \subsection{Proper morphisms and universally closed morphisms}
-\label{subsection:2.5.4}
+\label{subsection:II.5.4}
 
 \begin{definition}[5.4.1]
-\label{2.5.4.1}
+\label{II.5.4.1}
 We say that a morphism of preschemes $f:X\to Y$ is \emph{proper} if it satisfies the following two conditions:
 \begin{enumerate}
   \item[(a)] $f$ is separated and of finite type; and
-  \item[(b)] for every prescheme $Y'$ and every morphism $Y'\to Y$, the projection $f_{(Y')}:X\times_Y Y'\to Y'$ is a closed morphism \sref[I]{1.2.2.6}.
+  \item[(b)] for every prescheme $Y'$ and every morphism $Y'\to Y$, the projection $f_{(Y')}:X\times_Y Y'\to Y'$ is a closed morphism \sref[I]{I.2.2.6}.
 \end{enumerate}
 
 When this is the case, we also say that $X$ (considered as a $Y$-prescheme with structure morphism $f$) is proper over $Y$.
@@ -378,13 +378,13 @@ When this is the case, we also say that $X$ (considered as a $Y$-prescheme with 
 
 It is immediate that conditions~(a) and (b) are \emph{local} on $Y$.
 To show that the image of a closed subset $Z$ of $X\times_Y Y'$ under the projection $q:X\times_Y Y'\to Y'$ is closed in $Y$, it suffices to see that $q(Z)\cap U'$ is closed in $U'$ for every affine open subset $U'$ of $Y'$;
-since $q(Z)\cap U'=q(Z\cap q^{-1}(U'))$, and since $q^{-1}(U')$ can be identified with $X\times_Y U'$ \sref[I]{1.4.4.1}, we see that to satisfy condition~(b) of Definition~\sref{2.5.4.1}, we can restrict to the case where $Y$ is an \emph{affine} scheme.
-We further see \sref{2.5.3.6} that, if $Y$ is locally Noetherian, then we can even restrict to proving (b) in the case where $Y'$ is of finite type over $Y$.
+since $q(Z)\cap U'=q(Z\cap q^{-1}(U'))$, and since $q^{-1}(U')$ can be identified with $X\times_Y U'$ \sref[I]{I.4.4.1}, we see that to satisfy condition~(b) of Definition~\sref{II.5.4.1}, we can restrict to the case where $Y$ is an \emph{affine} scheme.
+We further see \sref{II.5.3.6} that, if $Y$ is locally Noetherian, then we can even restrict to proving (b) in the case where $Y'$ is of finite type over $Y$.
 
 It is clear that every proper morphism is \emph{closed}.
 
 \begin{proposition}[5.4.2]
-\label{2.5.4.2}
+\label{II.5.4.2}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] A closed immersion is a proper morphism.
@@ -397,13 +397,13 @@ It is clear that every proper morphism is \emph{closed}.
 \oldpage[II]{101}
 \begin{proof}
 \label{proof-2.5.4.2}
-It suffices to prove (i), (ii), and (iii) \sref[I]{1.3.5.1}.
-In each of the three cases, verifying condition~(a) of \sref{2.5.4.1} follows from previous results (\sref[I]{1.5.5.1} and \sref{2.6.4.3}); it remains to verify condition~(b).
-It is immediate in case (i), because if $X\to Y$ is a closed immersion, then so is $X\times_Y Y'\to Y\times_Y Y'=Y'$ (\sref[I]{1.4.3.2} and \sref{2.3.3.3}).
+It suffices to prove (i), (ii), and (iii) \sref[I]{I.3.5.1}.
+In each of the three cases, verifying condition~(a) of \sref{II.5.4.1} follows from previous results (\sref[I]{I.5.5.1} and \sref{II.6.4.3}); it remains to verify condition~(b).
+It is immediate in case (i), because if $X\to Y$ is a closed immersion, then so is $X\times_Y Y'\to Y\times_Y Y'=Y'$ (\sref[I]{I.4.3.2} and \sref{II.3.3.3}).
 To prove (ii), consider two proper morphisms $X\to Y$ and $Y\to Z$, and a morphism $Z'\to Z$.
-We can write $X\times_Z Z'=X\times_Y(Y\times_Z Z')$ \sref[I]{1.3.3.9.1}, and so the projection $X\times_Z Z'\to Z'$ factors as $X\times_Y(Y\times_Z Z')\to Y\times_Z Z'\to Z'$.
+We can write $X\times_Z Z'=X\times_Y(Y\times_Z Z')$ \sref[I]{I.3.3.9.1}, and so the projection $X\times_Z Z'\to Z'$ factors as $X\times_Y(Y\times_Z Z')\to Y\times_Z Z'\to Z'$.
 Taking the initial remark into account, (ii) follows from the fact that the composition of two closed morphisms is closed.
-Finally, for every morphism $S'\to S$, we can identify $X_{(S')}$ with $X\times_Y Y_{(S')}$ \sref[I]{1.3.3.11}; for every morphism $Z\to Y_{(S')}$, we can write
+Finally, for every morphism $S'\to S$, we can identify $X_{(S')}$ with $X\times_Y Y_{(S')}$ \sref[I]{I.3.3.11}; for every morphism $Z\to Y_{(S')}$, we can write
 \[
   X_{(S')}\times_{Y_{(S')}}Z=(X\times_Y Y_{(S')})\times_{Y_{(S')}}Z=X\times_Y Z;
 \]
@@ -411,7 +411,7 @@ since by hypothesis $X\times_Y Z\to Z$ is closed, this proves (iii).
 \end{proof}
 
 \begin{corollary}[5.4.3]
-\label{2.5.4.3}
+\label{II.5.4.3}
 Let $f:X\to Y$ and $g:Y\to Z$ be morphisms such that $g\circ f$ is proper.
 \begin{enumerate}
   \item[{\rm(i)}] If $g$ is separated, then $f$ is proper.
@@ -421,8 +421,8 @@ Let $f:X\to Y$ and $g:Y\to Z$ be morphisms such that $g\circ f$ is proper.
 
 \begin{proof}
 \label{proof-2.5.4.3}
-(i) follows from \sref{2.5.4.2} by the general procedure \sref[I]{1.5.5.12}.
-To prove (ii), we need only verify that condition~(b) of Definition~\sref{2.5.4.1} is satisfied.
+(i) follows from \sref{II.5.4.2} by the general procedure \sref[I]{I.5.5.12}.
+To prove (ii), we need only verify that condition~(b) of Definition~\sref{II.5.4.1} is satisfied.
 For every morphism $Z'\to Z$, the diagram
 \[
   \xymatrix{
@@ -431,13 +431,13 @@ For every morphism $Z'\to Z$, the diagram
     & Z'
   }
 \]
-(where $p$ and $p'$ are the projections) commutes \sref[I]{1.3.2.1};
-furthermore, $f\times1_{Z'}$ is surjective because $f$ is surjective \sref[I]{1.3.5.2}, and $p$ is a closed morphism by hypothesis.
+(where $p$ and $p'$ are the projections) commutes \sref[I]{I.3.2.1};
+furthermore, $f\times1_{Z'}$ is surjective because $f$ is surjective \sref[I]{I.3.5.2}, and $p$ is a closed morphism by hypothesis.
 Every closed subset $F$ of $Y\times_Z Z'$ is thus the image under $f\times1_{Z'}$ of some closed subset $E$ of $X\times_Z Z'$, so $p'(F)=p(E)$ is closed in $Z'$ by hypothesis, whence the corollary.
 \end{proof}
 
 \begin{corollary}[5.4.4]
-\label{2.5.4.4}
+\label{II.5.4.4}
 If $X$ is a proper prescheme over $Y$, and $\sh{S}$ a quasi-coherent $\sh{O}_Y$-algebra, then every $Y$-morphism $f:X\to\Proj(\sh{S})$ is proper (and \emph{a fortiori} closed).
 \end{corollary}
 
@@ -447,7 +447,7 @@ The structure morphism $p:\Proj(\sh{S})\to Y$ is separated, and $p\circ f$ is pr
 \end{proof}
 
 \begin{corollary}[5.4.5]
-\label{2.5.4.5}
+\label{II.5.4.5}
 Let $f:X\to Y$ be a separated morphism of finite type.
 Let $(X_i)_{1\leq i\leq n}$ (resp. $(Y_i)_{1\leq i\leq n}$) be a finite family of closed subpreschemes of $X$ (resp. $Y$), and $j_i$ (resp. $h_i$) the canonical injection $X_i\to X$ (resp. $Y_i\to Y$).
 Suppose that the underlying space of $X$ is the union of the $X_i$, and that, for all $i$, there is a morphism $f_i:X_i\to Y_i$, such that the diagram
@@ -466,45 +466,45 @@ Then, for $f$ to be proper, it is necessary and sufficient for all of the $f_i$ 
 \oldpage[II]{102}
 \begin{proof}
 \label{proof-2.5.4.5}
-If $f$ is proper, then so is $f\circ j_i$, because $j_i$ is a closed immersion \sref{2.5.4.2};
-since $h_i$ is a closed immersion, and thus a separated morphism, $f_i$ is proper, by \sref{2.5.4.3}.
+If $f$ is proper, then so is $f\circ j_i$, because $j_i$ is a closed immersion \sref{II.5.4.2};
+since $h_i$ is a closed immersion, and thus a separated morphism, $f_i$ is proper, by \sref{II.5.4.3}.
 Conversely, suppose that all of the $f_i$ are proper, and consider the prescheme $Z$ given by the \emph{sum} of the $X_i$; let $u$ be the morphism $Z\to X$ which reduces to $j_i$ on each $X_i$.
-The restriction of $f\circ u$ to each $X_i$ is equal to $f\circ j_i=h_i\circ f_i$, and is thus proper, because both the $h_i$ and the $f_i$ are \sref{2.5.4.2};
-it then follows immediately from Definition~\sref{2.5.4.1} that $u$ is proper.
-But since by hypothesis $u$ is surjective, we conclude that $f$ is proper by \sref{2.5.4.3}.
+The restriction of $f\circ u$ to each $X_i$ is equal to $f\circ j_i=h_i\circ f_i$, and is thus proper, because both the $h_i$ and the $f_i$ are \sref{II.5.4.2};
+it then follows immediately from Definition~\sref{II.5.4.1} that $u$ is proper.
+But since by hypothesis $u$ is surjective, we conclude that $f$ is proper by \sref{II.5.4.3}.
 \end{proof}
 
 \begin{corollary}[5.4.6]
-\label{2.5.4.6}
+\label{II.5.4.6}
 Let $f:X\to Y$ be a separated morphism of finite type; for $f$ to be proper, it is necessary and sufficient for $f_\red:X_\red\to Y_\red$ to be proper.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.4.6}
-This is a particular case of \sref{2.5.4.5}, with $n=1$, $X_1=X_\red$, and $Y_1=Y_\red$ \sref[I]{1.5.1.5}.
+This is a particular case of \sref{II.5.4.5}, with $n=1$, $X_1=X_\red$, and $Y_1=Y_\red$ \sref[I]{I.5.1.5}.
 \end{proof}
 
 \begin{env}[5.4.7]
-\label{2.5.4.7}
+\label{II.5.4.7}
 If $X$ and $Y$ are Noetherian preschemes, and $f:X\to Y$ a separated morphism of finite type, then we can, to show that $f$ is proper, restrict to the the case of \emph{dominant} morphisms and \emph{integral} preschemes.
-Indeed, let $X_i$ ($1\leq i\leq n$) be the (finitely many) irreducible components of $X$, and consider, for each $i$, the unique reduced closed subprescheme of $X$ that has $X_i$ as its underlying space, which we again denote by $X_i$ \sref[I]{1.5.2.1}.
+Indeed, let $X_i$ ($1\leq i\leq n$) be the (finitely many) irreducible components of $X$, and consider, for each $i$, the unique reduced closed subprescheme of $X$ that has $X_i$ as its underlying space, which we again denote by $X_i$ \sref[I]{I.5.2.1}.
 Let $Y_i$ be the unique reduced closed subprescheme of $Y$ that has $\overline{f(X_i)}$ as its underlying space.
-If $g_i$ (resp. $h_i$) is the injection morphism $X_i\to X$ (resp. $Y_i\to Y$), then we conclude that $f\circ g_i=h_i\circ f_i$, where $f_i$ is a dominant morphism $X_i\to Y_i$ \sref[I]{1.5.2.2};
-we are then under the right conditions to apply \sref{2.5.4.5}, and for $f$ to be proper, it is necessary and sufficient for all the $f_i$ to be proper.
+If $g_i$ (resp. $h_i$) is the injection morphism $X_i\to X$ (resp. $Y_i\to Y$), then we conclude that $f\circ g_i=h_i\circ f_i$, where $f_i$ is a dominant morphism $X_i\to Y_i$ \sref[I]{I.5.2.2};
+we are then under the right conditions to apply \sref{II.5.4.5}, and for $f$ to be proper, it is necessary and sufficient for all the $f_i$ to be proper.
 \end{env}
 
 \begin{corollary}[5.4.8]
-\label{2.5.4.8}
+\label{II.5.4.8}
 Let $X$ and $Y$ be separated $S$-preschemes of finite type over $S$, and $f:X\to Y$ an $S$-morphism.
 For $f$ to be proper, it is necessary and sufficient that, for every $S$-prescheme $S'$, the morphism $f\times_S 1_{S'}:X\times_S S'\to Y\times_S S'$ be closed.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.4.8}
-First note that, if $g:X\to S$ and $h:Y\to S$ are the structure morphisms, then we have, by definition, $g=h\circ f$, and so $f$ is separated and of finite type (\sref[I]{1.5.5.1} and \sref{2.6.3.4}).
-If $f$ is proper, then so is $f\times_S 1_{S'}$ \sref{2.5.4.2}; \emph{a fortiori}, $f\times_S 1_{S'}$ is closed.
+First note that, if $g:X\to S$ and $h:Y\to S$ are the structure morphisms, then we have, by definition, $g=h\circ f$, and so $f$ is separated and of finite type (\sref[I]{I.5.5.1} and \sref{II.6.3.4}).
+If $f$ is proper, then so is $f\times_S 1_{S'}$ \sref{II.5.4.2}; \emph{a fortiori}, $f\times_S 1_{S'}$ is closed.
 Conversely, suppose that the conditions of the statement are satisfied, and let $Y'$ be a $Y$-prescheme;
-$Y'$ can also be considered as an $S$-prescheme, and since $Y\to S$ is separated, $X\times_Y Y'$ can be identified with a closed subprescheme of $X\times_S Y'$ \sref[I]{1.5.4.2}.
+$Y'$ can also be considered as an $S$-prescheme, and since $Y\to S$ is separated, $X\times_Y Y'$ can be identified with a closed subprescheme of $X\times_S Y'$ \sref[I]{I.5.4.2}.
 In the commutative diagram
 \[
   \xymatrix{
@@ -518,26 +518,26 @@ the vertical arrows are closed immersions; it thus immediately follows that if $
 \end{proof}
 
 \begin{remark}[5.4.9]
-\label{2.5.4.9}
-We say that a morphism $f:X\to Y$ is \emph{universally closed} if it satisfies condition~(b) of Definition~\sref{2.5.4.1}.
+\label{II.5.4.9}
+We say that a morphism $f:X\to Y$ is \emph{universally closed} if it satisfies condition~(b) of Definition~\sref{II.5.4.1}.
 The reader will observe that,
 \oldpage[II]{103}
-in \sref{2.5.4.2} to \sref{2.5.4.8}, we can replace every occurrence of ``proper'' with ``universally closed'' without changing the validity of the results (and in the hypotheses of \sref{2.5.4.3}, \sref{2.5.4.5}, \sref{2.5.4.6}, and \sref{2.5.4.8}, we can omit the finiteness conditions).
+in \sref{II.5.4.2} to \sref{II.5.4.8}, we can replace every occurrence of ``proper'' with ``universally closed'' without changing the validity of the results (and in the hypotheses of \sref{II.5.4.3}, \sref{II.5.4.5}, \sref{II.5.4.6}, and \sref{II.5.4.8}, we can omit the finiteness conditions).
 \end{remark}
 
 \begin{env}[5.4.10]
-\label{2.5.4.10}
+\label{II.5.4.10}
 Let $f:X\to Y$ be a morphism of finite type.
 We say that a closed subset $Z$ of $X$ is \emph{proper on $Y$} (or \emph{$Y$-proper}, or \emph{proper for $f$}) if the restriction of $f$ to a closed subprescheme of $X$, with underlying space $Z$ \sref[1]{1.5.2.1}, is \emph{proper}.
-Since this restriction is then separated, it follows from \sref{2.5.4.6} and \sref[I]{1.5.5.1}[vi] that the preceding property \emph{does not depend} on the closed subprescheme of $X$ that has $Z$ as its underlying space.
+Since this restriction is then separated, it follows from \sref{II.5.4.6} and \sref[I]{I.5.5.1}[vi] that the preceding property \emph{does not depend} on the closed subprescheme of $X$ that has $Z$ as its underlying space.
 If $g:X'\to X$ is a \emph{proper} morphism, then $g^{-1}(Z)$ is a \emph{proper} subset of $X'$:
-if $T$ is a subprescheme of $X$ that has $Z$ as its underlying space, it suffices to note that the restriction of $g$ to the closed subprescheme $g^{-1}(T)$ of $X'$ is a proper morphism $g^{-1}(T)\to T$, by \sref{2.5.4.2}[iii], and to then apply \sref{2.5.4.2}[ii].
+if $T$ is a subprescheme of $X$ that has $Z$ as its underlying space, it suffices to note that the restriction of $g$ to the closed subprescheme $g^{-1}(T)$ of $X'$ is a proper morphism $g^{-1}(T)\to T$, by \sref{II.5.4.2}[iii], and to then apply \sref{II.5.4.2}[ii].
 Further, if $X''$ is a $Y$-\emph{scheme} of finite type, and $u:X\to X''$ a $Y$-morphism, then $u(Z)$ is a \emph{proper} subset of $X''$;
 indeed, let us take $T$ to be the reduced closed subprescheme of $X$ having $Z$ as its underlying space;
-then the restriction of $f$ to $T$ is proper, and thus so is the restriction of $u$ to $T$ \sref{2.5.4.3}[i], thus $u(Z)$ is closed in $X''$;
-let $T''$ be a closed subprescheme of $X''$ having $u(Z)$ as its underlying space \sref[I]{1.5.2.1}, such that $u|T$ factors as $T\xrightarrow{v}T''\xrightarrow{j}X''$, where $j$ is the canonical injection \sref[I]{1.5.2.2}, and $v$ is thus proper and surjective \sref{2.5.4.5};
+then the restriction of $f$ to $T$ is proper, and thus so is the restriction of $u$ to $T$ \sref{II.5.4.3}[i], thus $u(Z)$ is closed in $X''$;
+let $T''$ be a closed subprescheme of $X''$ having $u(Z)$ as its underlying space \sref[I]{I.5.2.1}, such that $u|T$ factors as $T\xrightarrow{v}T''\xrightarrow{j}X''$, where $j$ is the canonical injection \sref[I]{I.5.2.2}, and $v$ is thus proper and surjective \sref{II.5.4.5};
 if $g$ is the restriction to $T''$ of the structure morphism $X''\to Y$, then $g$ is separated and of finite type, and we have that $f|T=g\circ v$;
-it thus follows from \sref{2.5.4.3}[ii] that $g$ is proper, whence our assertion.
+it thus follows from \sref{II.5.4.3}[ii] that $g$ is proper, whence our assertion.
 \end{env}
 
 It follows, in particular, from these remarks that, if $Z$ is a $Y$-proper subset of $X$, then
@@ -547,10 +547,10 @@ It follows, in particular, from these remarks that, if $Z$ is a $Y$-proper subse
 \end{enumerate}
 
 \subsection{Projective morphisms}
-\label{subsection:2.5.5}
+\label{subsection:II.5.5}
 
 \begin{proposition}[5.5.1]
-\label{2.5.5.1}
+\label{II.5.5.1}
 Let $X$ be a $Y$-prescheme.
 The following conditions are equivalent.
 \begin{enumerate}
@@ -561,20 +561,20 @@ The following conditions are equivalent.
 
 \begin{proof}
 \label{proof-2.5.5.1}
-Condition~(a) implies (b), by \sref{2.3.6.2}[ii]: if $\sh{J}$ is a quasi-coherent graded sheaf of ideals of $\bb{S}(\sh{E})$, then the quasi-coherent graded $\sh{O}_Y$-algebra $\sh{S}=\bb{S}(\sh{E})/\sh{J}$ is generated by $\sh{S}_1$, and $\sh{S}_1$, the canonical image of $\sh{E}$, is an $\sh{O}_Y$-module of finite type.
-Condition~(b) implies (a) by \sref{2.3.6.2} applied to the case where $\sh{M}\to\sh{S}_1$ is the identity map.
+Condition~(a) implies (b), by \sref{II.3.6.2}[ii]: if $\sh{J}$ is a quasi-coherent graded sheaf of ideals of $\bb{S}(\sh{E})$, then the quasi-coherent graded $\sh{O}_Y$-algebra $\sh{S}=\bb{S}(\sh{E})/\sh{J}$ is generated by $\sh{S}_1$, and $\sh{S}_1$, the canonical image of $\sh{E}$, is an $\sh{O}_Y$-module of finite type.
+Condition~(b) implies (a) by \sref{II.3.6.2} applied to the case where $\sh{M}\to\sh{S}_1$ is the identity map.
 \end{proof}
 
 \oldpage[II]{104}
 \begin{definition}[5.5.2]
-\label{2.5.5.2}
-We say that a $Y$-prescheme $X$ is \emph{projective} on $Y$, or is a projective $Y$-scheme, if it satisfies either of the (equivalent) conditions~(a) and (b) of \sref{2.5.5.1}.
+\label{II.5.5.2}
+We say that a $Y$-prescheme $X$ is \emph{projective} on $Y$, or is a projective $Y$-scheme, if it satisfies either of the (equivalent) conditions~(a) and (b) of \sref{II.5.5.1}.
 We say that a morphism $f:X\to Y$ is projective if it makes $X$ a projective $Y$-scheme.
 \end{definition}
 
-It is clear that if $f:X\to Y$ is projective, then there exists a \emph{very ample} (relative to $f$) $\sh{O}_X$-module \sref{2.4.4.2}.
+It is clear that if $f:X\to Y$ is projective, then there exists a \emph{very ample} (relative to $f$) $\sh{O}_X$-module \sref{II.4.4.2}.
 \begin{theorem}[5.5.3]
-\label{2.5.5.3}
+\label{II.5.5.3}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] Every projective morphism is quasi-projective and proper.
@@ -586,39 +586,39 @@ It is clear that if $f:X\to Y$ is projective, then there exists a \emph{very amp
 \label{proof-2.5.5.3}
 \medskip\noindent
 \begin{enumerate}
-  \item[(i)] It is clear that if $f:X\to Y$ is projective, then it is of finite type and quasi-projective (thus, in particular, separated); furthermore, it follows immediately from \sref{2.5.5.1}[b] and \sref{2.3.5.3} that if $f$ is projective, then so is $f\times_Y 1_{Y'}:X\times_Y Y'\to Y'$ for every morphism $Y'\to Y$.
+  \item[(i)] It is clear that if $f:X\to Y$ is projective, then it is of finite type and quasi-projective (thus, in particular, separated); furthermore, it follows immediately from \sref{II.5.5.1}[b] and \sref{II.3.5.3} that if $f$ is projective, then so is $f\times_Y 1_{Y'}:X\times_Y Y'\to Y'$ for every morphism $Y'\to Y$.
      To show that $f$ is universally closed, it is thus enough to show that a projective morphism $f$ is \emph{closed}.
-     Since the question is local on $Y$, we can suppose that $Y=\Spec(A)$, thus \sref{2.5.5.1} $X=\Proj(S)$, where $S$ is a graded $A$-algebra generated by a finite number of elements of $S_1$.
-     For all $y\in Y$, the fibre $f^{-1}(y)$ can be identified with $\Proj(S)\times_Y\Spec(\kres(y))$ \sref[I]{1.3.6.1}, and so also with $\Proj(S\otimes_A\kres(y))$ \sref{2.2.8.10};
-     so $f^{-1}(y)$ is empty if and only if $S\otimes_A\kres(y)$ satisfies condition~(TN) \sref{2.2.7.4}, or, in other words, if $S_n\otimes_A\kres(y)=0$ for sufficiently large $n$.
+     Since the question is local on $Y$, we can suppose that $Y=\Spec(A)$, thus \sref{II.5.5.1} $X=\Proj(S)$, where $S$ is a graded $A$-algebra generated by a finite number of elements of $S_1$.
+     For all $y\in Y$, the fibre $f^{-1}(y)$ can be identified with $\Proj(S)\times_Y\Spec(\kres(y))$ \sref[I]{I.3.6.1}, and so also with $\Proj(S\otimes_A\kres(y))$ \sref{II.2.8.10};
+     so $f^{-1}(y)$ is empty if and only if $S\otimes_A\kres(y)$ satisfies condition~(TN) \sref{II.2.7.4}, or, in other words, if $S_n\otimes_A\kres(y)=0$ for sufficiently large $n$.
      But since $(S_n)_y$ is an $\sh{O}_y$-module of finite type, the preceding condition implies that $(S_n)_y=0$ for sufficiently large $N$, by Nakayama's lemma.
      If $\fk{a}_n$ is the annihilator in $A$ of the $A$-module $S_n$, then the preceding condition also implies that $\fk{a}_n\subset\fk{j}_n$ for sufficiently large $n$ \sref[0]{0.1.7.4}.
      But since $S_nS_1=S_{n+1}$, by hypothesis, we have that $\fk{a}_n\subset\fk{a}_{n+1}$, and if $\fk{a}$ is the union of the $\fk{a}_n$, then we see that $f(X)=V(\fk{a})$, which proves that $f(X)$ is closed in $Y$.
-     If now $X'$ is an arbitrary closed subset of $X$, then there exists a closed subprescheme of $X$ that has $X'$ as its underlying space \sref[I]{1.5.2.1}, and it is clear \sref{2.5.5.1}[a] that the morphism $X'\to X\xrightarrow{f}Y$ is projective, and so $f(X')$ is closed in $Y$.
-   \item[(ii)] The hypothesis on $Y$ and the fact that $f$ is quasi-projective implies the existence of a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ of finite type, as well as a $Y$-immersion $j:X\to\bb{P}(\sh{E})$ \sref{2.5.3.2}.
-      But since $f$ is proper, $j$ is \emph{closed}, by \sref{2.5.4.4}, and so $f$ is projective.
+     If now $X'$ is an arbitrary closed subset of $X$, then there exists a closed subprescheme of $X$ that has $X'$ as its underlying space \sref[I]{I.5.2.1}, and it is clear \sref{II.5.5.1}[a] that the morphism $X'\to X\xrightarrow{f}Y$ is projective, and so $f(X')$ is closed in $Y$.
+   \item[(ii)] The hypothesis on $Y$ and the fact that $f$ is quasi-projective implies the existence of a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ of finite type, as well as a $Y$-immersion $j:X\to\bb{P}(\sh{E})$ \sref{II.5.3.2}.
+      But since $f$ is proper, $j$ is \emph{closed}, by \sref{II.5.4.4}, and so $f$ is projective.
 \end{enumerate}
 \end{proof}
 
 \begin{remark}[5.5.4]
-\label{2.5.5.4}
+\label{II.5.5.4}
 \medskip\noindent
 \begin{enumerate}
   \item[(i)] Let $f:X\to Y$ be a morphism such that $f$ is proper, such that there exists a \emph{very ample} (relative to $f$) $\sh{O}_X$-module $\sh{L}$, and such that the quasi-coherent $\sh{O}_Y$-module $\sh{E}=f_*(\sh{L})$ is \emph{of finite type}.
-    Then $f$ is a \emph{projective} morphism: indeed \sref{2.4.4.4}, there is then a $Y$-immersion $r:X\to\bb{P}(\sh{E})$, and, since $f$ is proper, $r$ is a \emph{closed} immersion \sref{2.5.4.4}.
-    We will see in Chapter~III, \textsection3, that when $Y$ is \emph{locally Noetherian}, the third condition above ($\sh{E}$ being of finite type) is a consequence of the first two, and so the first two conditions \emph{characterise}, in this case, the projective morphisms, and if $Y$ is quasi-compact, then we can replace the second condition (the existence of a very ample (relative to $f$) $\sh{O}_X$-module $\sh{L}$) by the hypothesis that there exists an \emph{ample} (relative to $f$) $\sh{O}_X$-module \sref{2.4.6.11}.
+    Then $f$ is a \emph{projective} morphism: indeed \sref{II.4.4.4}, there is then a $Y$-immersion $r:X\to\bb{P}(\sh{E})$, and, since $f$ is proper, $r$ is a \emph{closed} immersion \sref{II.5.4.4}.
+    We will see in Chapter~III, \textsection3, that when $Y$ is \emph{locally Noetherian}, the third condition above ($\sh{E}$ being of finite type) is a consequence of the first two, and so the first two conditions \emph{characterise}, in this case, the projective morphisms, and if $Y$ is quasi-compact, then we can replace the second condition (the existence of a very ample (relative to $f$) $\sh{O}_X$-module $\sh{L}$) by the hypothesis that there exists an \emph{ample} (relative to $f$) $\sh{O}_X$-module \sref{II.4.6.11}.
   \item[(ii)] Let $Y$ be a quasi-compact scheme such that there exists an ample $\sh{O}_Y$-module.
     For a $Y$-scheme $X$ to be \emph{projective}, it is necessary and sufficient for it to be $Y$-isomorphic to a \emph{closed} $Y$-subscheme of a projective bundle of the form $\bb{P}_Y^r$.
     The condition is clearly sufficient.
 \oldpage[II]{105}
-    Conversely, if $X$ is projective over $Y$, then it is quasi-projective, and so there exists a $Y$-immersion $j$ of $X$ into some $\bb{P}_Y^r$ \sref{2.5.3.3} that is \emph{closed}, by \sref{2.5.4.4} and \sref{2.5.5.3}.
-  \item[(iii)] The argument of \sref{2.5.5.3} shows that, for every prescheme $Y$ and every integer $r\geq0$, the structure morphism $\bb{P}_Y^r\to Y$ is \emph{surjective}, because if we set $\sh{S}=\bb{S}_{\sh{O}_Y}(\sh{O}_Y^{r+1})$, then we evidently have $\sh{S}_y=\bb{S}_{\kres(y)}(\kres(y)^{r+1})$ \sref{2.1.7.3}, and so $(\sh{S}_n)_y\neq0$ for any $y\in Y$ or any $n\geq0$.
+    Conversely, if $X$ is projective over $Y$, then it is quasi-projective, and so there exists a $Y$-immersion $j$ of $X$ into some $\bb{P}_Y^r$ \sref{II.5.3.3} that is \emph{closed}, by \sref{II.5.4.4} and \sref{II.5.5.3}.
+  \item[(iii)] The argument of \sref{II.5.5.3} shows that, for every prescheme $Y$ and every integer $r\geq0$, the structure morphism $\bb{P}_Y^r\to Y$ is \emph{surjective}, because if we set $\sh{S}=\bb{S}_{\sh{O}_Y}(\sh{O}_Y^{r+1})$, then we evidently have $\sh{S}_y=\bb{S}_{\kres(y)}(\kres(y)^{r+1})$ \sref{II.1.7.3}, and so $(\sh{S}_n)_y\neq0$ for any $y\in Y$ or any $n\geq0$.
   \item[(iv)] It follows from the examples of Nagata~\cite{II-26} that there exist proper morphisms that are not quasi-projective.
 \end{enumerate}
 \end{remark}
 
 \begin{proposition}[5.5.5]
-\label{2.5.5.5}
+\label{II.5.5.5}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] A closed immersion is a projective morphism.
@@ -632,63 +632,63 @@ It is clear that if $f:X\to Y$ is projective, then there exists a \emph{very amp
 
 \begin{proof}
 \label{proof-2.5.5.5}
-(i) follows immediately from \sref{2.3.1.7}.
-We have to show (iii) and (iv) separately, because of the restriction introduced on $Z$ in (ii) (cf.~\sref[I]{1.3.5.1}).
-To show (iii), we restrict to the case where $S=Y$ \sref[I]{1.3.3.11}, and the claim then immediately follows from \sref{2.5.5.1}[b] and \sref{2.3.5.3}.
+(i) follows immediately from \sref{II.3.1.7}.
+We have to show (iii) and (iv) separately, because of the restriction introduced on $Z$ in (ii) (cf.~\sref[I]{I.3.5.1}).
+To show (iii), we restrict to the case where $S=Y$ \sref[I]{I.3.3.11}, and the claim then immediately follows from \sref{II.5.5.1}[b] and \sref{II.3.5.3}.
 To show (iv), we are immediately led to the case where $X=\bb{P}(\sh{E})$ and $X=\bb{P}(\sh{E}')$, where $\sh{E}$ (resp. $\sh{E}'$) is a quasi-coherent $\sh{O}_Y$-module (resp. quasi-coherent $\sh{O}_{Y'}$-module) of finite type.
-Let $p$ and $p'$ be the canonical projections of $T=Y\times_S Y'$ to $Y$ and $Y'$ (respectively); by \sref{2.4.1.3.1}, we have $\bb{P}(p^*(\sh{E})) = \bb{P}(\sh{E})\times_Y T$ and $\bb{P}(p^{\prime *}(\sh{E}'))=\bb{P}(\sh{E}')\times_{Y'}T$; whence
+Let $p$ and $p'$ be the canonical projections of $T=Y\times_S Y'$ to $Y$ and $Y'$ (respectively); by \sref{II.4.1.3.1}, we have $\bb{P}(p^*(\sh{E})) = \bb{P}(\sh{E})\times_Y T$ and $\bb{P}(p^{\prime *}(\sh{E}'))=\bb{P}(\sh{E}')\times_{Y'}T$; whence
 \begin{align*}
   \bb{P}(p^*(\sh{E}))\times_T\bb{P}(p^{\prime *}(\sh{E}'))&=(\bb{P}(\sh{E})\times_Y T)\times_T(T\times_{Y'}\bb{P}(\sh{E}'))\\
                                               &=\bb{P}(\sh{E})\times_Y(T\times_{Y'}\bb{P}(\sh{E}'))=\bb{P}(\sh{E})\times_S\bb{P}(\sh{E}')
 \end{align*}
-by replacing $T$ with $Y\times_S Y'$, and using \sref[I]{1.3.3.9.1}.
+by replacing $T$ with $Y\times_S Y'$, and using \sref[I]{I.3.3.9.1}.
 But $p^*(\sh{E})$ and $p^{\prime *}(\sh{E}')$ are of finite type over $T$ \sref[0]{0.5.2.4}, and thus so is $p^*(\sh{E})\otimes_{\sh{O}_T}p^{\prime *}(\sh{E}')$;
-since $\bb{P}(p^*(\sh{E}))\times_T\bb{P}(p^{\prime *}(\sh{E}'))$ can be identified with a closed subprescheme of $p^*(\sh{E})\otimes_{\sh{O}_T}p^{\prime *}(\sh{E}')$ \sref{2.4.3.3}, this proves (iv).
-To show (v) and (vi), we can apply \sref[I]{1.5.5.13}, because every closed subprescheme of a projective $Y$-scheme is a projective $Y$-scheme, by \sref{2.5.5.1}[a].
+since $\bb{P}(p^*(\sh{E}))\times_T\bb{P}(p^{\prime *}(\sh{E}'))$ can be identified with a closed subprescheme of $p^*(\sh{E})\otimes_{\sh{O}_T}p^{\prime *}(\sh{E}')$ \sref{II.4.3.3}, this proves (iv).
+To show (v) and (vi), we can apply \sref[I]{I.5.5.13}, because every closed subprescheme of a projective $Y$-scheme is a projective $Y$-scheme, by \sref{II.5.5.1}[a].
 
-It remains to prove (ii); by the hypothesis on $Z$, this follows from \sref{2.5.5.3}, \sref{2.5.3.4}[ii], and \sref{2.5.4.2}[ii].
+It remains to prove (ii); by the hypothesis on $Z$, this follows from \sref{II.5.5.3}, \sref{II.5.3.4}[ii], and \sref{II.5.4.2}[ii].
 \end{proof}
 
 \begin{proposition}[5.5.6]
-\label{2.5.5.6}
+\label{II.5.5.6}
 If $X$ and $X'$ are projective $Y$-schemes, then $X\sqcup X'$ is a projective $Y$-scheme.
 \end{proposition}
 
 \begin{proof}
 \label{proof-2.5.5.6}
-This is an evident consequence of \sref{2.5.5.2} and \sref{2.4.3.6}.
+This is an evident consequence of \sref{II.5.5.2} and \sref{II.4.3.6}.
 \end{proof}
 
 \begin{proposition}[5.5.7]
-\label{2.5.5.7}
+\label{II.5.5.7}
 Let $X$ be a projective $Y$-scheme, and $\sh{L}$ a $Y$-ample $\sh{O}_X$-module; then, for every section $f$ of $\sh{L}$ over $X$, $X_f$ is affine over $Y$.
 \end{proposition}
 
 \oldpage[II]{106}
 \begin{proof}
 \label{proof-2.5.5.6}
-Since the question is local on $Y$, we can assume that $Y=\Spec(A)$; furthermore, $X_{f^{\otimes n}}=X_f$, so by replacing $\sh{L}$ with some suitable $\sh{L}^{\otimes n}$, we can assume that $\sh{L}$ is very ample relative to the structure morphism $q:X\to Y$ \sref{2.4.6.11}.
+Since the question is local on $Y$, we can assume that $Y=\Spec(A)$; furthermore, $X_{f^{\otimes n}}=X_f$, so by replacing $\sh{L}$ with some suitable $\sh{L}^{\otimes n}$, we can assume that $\sh{L}$ is very ample relative to the structure morphism $q:X\to Y$ \sref{II.4.6.11}.
 The canonical homomorphism $\sigma:q^*(q_*(\sh{L}))\to\sh{L}$ is thus surjective, and the corresponding morphism
 \[
   r=r_{\sh{L},\sigma}:X\to P=\bb{P}(q_*(\sh{L}))
 \]
-is an immersion such that $\sh{L}=r^*(\sh{O}_P(1))$ \sref{2.4.4.4}; furthermore, since $X$ is proper over $Y$, the immersion $r$ is closed \sref{2.5.4.4}.
-But by definition, $f\in\Gamma(Y,q_*(\sh{L}))$, and $\sigma^\flat$ is the identity of $q_*(\sh{L})$; it then follows from Equation~\sref{2.3.7.3.1} that we have $X_f=r^{-1}(D_+(f))$;
+is an immersion such that $\sh{L}=r^*(\sh{O}_P(1))$ \sref{II.4.4.4}; furthermore, since $X$ is proper over $Y$, the immersion $r$ is closed \sref{II.5.4.4}.
+But by definition, $f\in\Gamma(Y,q_*(\sh{L}))$, and $\sigma^\flat$ is the identity of $q_*(\sh{L})$; it then follows from Equation~\sref{II.3.7.3.1} that we have $X_f=r^{-1}(D_+(f))$;
 so $X_f$ is a closed subprescheme of the affine scheme $D_+(f)$, and is thus also an affine scheme.
 \end{proof}
 
-In the particular case where $Y=X$, we obtain (taking \sref{2.4.6.13}[i] into account) the following corollary, whose direct proof is immediate anyway:
+In the particular case where $Y=X$, we obtain (taking \sref{II.4.6.13}[i] into account) the following corollary, whose direct proof is immediate anyway:
 \begin{corollary}[5.5.8]
-\label{2.5.5.8}
+\label{II.5.5.8}
 Let $X$ be a prescheme, and $\sh{L}$ an invertible $\sh{O}_X$-module.
 For every section $f$ of $\sh{L}$ over $X$, $X_f$ is affine over $X$ (and thus also an affine scheme whenever $X$ is an affine scheme).
 \end{corollary}
 
 \subsection{Chow's lemma}
-\label{subsection:2.5.6}
+\label{subsection:II.5.6}
 
 \begin{theorem}[5.6.1]
-\label{2.5.6.1}
+\label{II.5.6.1}
 \emph{(Chow's lemma)}.
 Let $S$ be a prescheme, and $X$ an $S$-scheme of finite type.
 Suppose that the following conditions are satisfied:
@@ -714,19 +714,19 @@ The proof proceeds in multiple steps.
     It is immediate that $X'$ is reduced if all of the $X'_i$ are; furthermore, we can satisfy (ii) by taking $U$ to be the union of the sets $U_i\cap\complement\left(\bigcup_{j\neq i}X_j\right)$.
     Finally, since the $X'_i$ are quasi-projective over $S$, so is $X'$
 \oldpage[II]{107}
-    \sref{2.5.3.6}; similarly, the morphisms $X'_i\to X$ are projective by \sref{2.5.5.5}[i] and \sref{2.5.5.5}[ii], and so $f$ is projective \sref{2.5.5.6}, and is clearly surjective, by definition.
+    \sref{II.5.3.6}; similarly, the morphisms $X'_i\to X$ are projective by \sref{II.5.5.5}[i] and \sref{II.5.5.5}[ii], and so $f$ is projective \sref{II.5.5.6}, and is clearly surjective, by definition.
   \item[(B)] Now suppose that $X$ is \emph{irreducible}.
-    Since the structure morphism $r:X\to S$ is of finite type, there exists a finite cover $(S_i)$ of $S$ by affine open subsets, and for each $i$ there is a finite cover $(T_{ij})$ of $r^{-1}(S_i)$ by affine open subsets, and the morphisms $T_{ij}\to S_i$ are of finite type, and so quasi-projective \sref{2.5.3.4}[i];
-    since in both hypotheses~(a) and (b) the immersion $S_i\to S$ is quasi-compact, it is also quasi-projective \sref{2.5.3.4}[i], and so the restriction of $r$ to $T_{ij}$ is a quasi-projective morphism \sref{2.5.3.4}[ii].
+    Since the structure morphism $r:X\to S$ is of finite type, there exists a finite cover $(S_i)$ of $S$ by affine open subsets, and for each $i$ there is a finite cover $(T_{ij})$ of $r^{-1}(S_i)$ by affine open subsets, and the morphisms $T_{ij}\to S_i$ are of finite type, and so quasi-projective \sref{II.5.3.4}[i];
+    since in both hypotheses~(a) and (b) the immersion $S_i\to S$ is quasi-compact, it is also quasi-projective \sref{II.5.3.4}[i], and so the restriction of $r$ to $T_{ij}$ is a quasi-projective morphism \sref{II.5.3.4}[ii].
     Denote the $T_{ij}$ by $U_k$ ($1\leq k\leq n$).
-    There exists, for each index $k$, an open immersion $\vphi_k:U_k\to P_k$, where $P_k$ is projective over $S$ (\sref{2.5.3.2} and \sref{2.5.5.2}).
+    There exists, for each index $k$, an open immersion $\vphi_k:U_k\to P_k$, where $P_k$ is projective over $S$ (\sref{II.5.3.2} and \sref{II.5.5.2}).
     Let $U=\bigcap_k U_k$; since $X$ is irreducible, and the $U_k$ nonempty, $U$ is nonempty, and thus dense in $X$; the restrictions of the $\vphi_k$ to $U$ define a morphism
     \[
       \vphi:U\to P=P_1\times_S P_2\times_S\cdots\times_S P_n
     \]
     such that the diagrams
     \[
-    \label{2.5.6.1.1}
+    \label{II.5.6.1.1}
       \xymatrix{
         U\ar[r]^\vphi\ar[d]_{j_k} &
         P\ar[d]^{p_k}\\
@@ -736,35 +736,35 @@ The proof proceeds in multiple steps.
       \tag{5.6.1.1}
     \]
     commute, where $j_k$ is the canonical injection $U\to U_k$, and $p_k$ the canonical projection $P\to P_k$.
-    If $j$ is the canonical injection $U\to X$, then the morphism $\psi=(j,\vphi)_S:U\to X\times_S P$ is an \emph{immersion} \sref[I]{1.5.3.14}.
-    In hypothesis~(a), $X\times_S P$ is locally Noetherian (\sref{2.3.4.1}, \sref[I]{1.6.3.7}, and \sref[I]{1.6.3.8});
-    in hypothesis~(b), $X\times_S P$ is a quasi-compact scheme (\sref[I]{1.5.5.1} and \sref[I]{1.6.6.4});
+    If $j$ is the canonical injection $U\to X$, then the morphism $\psi=(j,\vphi)_S:U\to X\times_S P$ is an \emph{immersion} \sref[I]{I.5.3.14}.
+    In hypothesis~(a), $X\times_S P$ is locally Noetherian (\sref{II.3.4.1}, \sref[I]{I.6.3.7}, and \sref[I]{I.6.3.8});
+    in hypothesis~(b), $X\times_S P$ is a quasi-compact scheme (\sref[I]{I.5.5.1} and \sref[I]{I.6.6.4});
     in both cases, the \emph{closure} $X'$ in $X\times_S P$ of the subprescheme $Z$ associated to $\psi$ (and so with underlying space $\psi(U)$) exists, and $\psi$ factors as
     \[
-    \label{2.5.6.1.2}
+    \label{II.5.6.1.2}
       \psi:U\xrightarrow{\psi'}X'\xrightarrow{h}X\times_S P
       \tag{5.6.1.2}
     \]
-    where $\psi'$ is an \emph{open immersion} and $h$ a \emph{closed immersion} \sref[I]{1.9.5.10}.
+    where $\psi'$ is an \emph{open immersion} and $h$ a \emph{closed immersion} \sref[I]{I.9.5.10}.
     Let $q_1:X\times_S P\to X$ and $q_2:X\times_S P\to P$ be the canonical projections; we set
     \[
-    \label{2.5.6.1.3}
+    \label{II.5.6.1.3}
       f:X'\xrightarrow{h}X\times_S P\xrightarrow{q_1}X,
       \tag{5.6.1.3}
     \]
     \[
-    \label{2.5.6.1.4}
+    \label{II.5.6.1.4}
       g:X'\xrightarrow{h}X\times_S P\xrightarrow{q_2}P.
       \tag{5.6.1.4}
     \]
     We will see that $X'$ and $f$ satisfy the conclusion of the theorem.
   \item[(C)] First we show that $f$ is \emph{projective} and \emph{surjective}, and that the restriction of $f$ to $U'=f^{-1}(U)$ is an \emph{isomorphism} from $U'$ to $U$.
-    Since the $P_k$ are projective over $S$, so is $P$ \sref{2.5.5.5}[iv], and so $X\times_S P$ is projective over $X$ \sref{2.5.5.5}[iii], and thus so is $X'$, which is a closed subprescheme of $X\times_S P$.
-    Furthermore, we have $f\circ\psi'=q_1\circ(h\circ\psi')=q_1\circ\psi=j$, so $f(X')$ contains the open everywhere-dense subset $U$ of $X$; but $f$ is a \emph{closed} morphism \sref{2.5.5.3}, so $f(X')=X$.
+    Since the $P_k$ are projective over $S$, so is $P$ \sref{II.5.5.5}[iv], and so $X\times_S P$ is projective over $X$ \sref{II.5.5.5}[iii], and thus so is $X'$, which is a closed subprescheme of $X\times_S P$.
+    Furthermore, we have $f\circ\psi'=q_1\circ(h\circ\psi')=q_1\circ\psi=j$, so $f(X')$ contains the open everywhere-dense subset $U$ of $X$; but $f$ is a \emph{closed} morphism \sref{II.5.5.3}, so $f(X')=X$.
     Now note that $q_1^{-1}(U)=U\times_S P$ is induced on an open subset of $X\times_S P$, and, by definition, the prescheme $U'=h^{-1}(U\times_S P)$ is induced by $X'$ on the open subset $U'$; it is thus the closure \emph{relative to}
 \oldpage[II]{108}
-    $U\times_S P$ of the prescheme $Z$ \sref[I]{1.9.5.8}.
-    But the immersion $\psi$ factors as $U\xrightarrow{\Gamma_\vphi}U\times_S P\xrightarrow{j\times1}X\times_S P$, and since $P$ is separated over $S$, the graph morphism $\Gamma_\vphi$ is a closed immersion \sref[I]{1.5.4.3}, and so $Z$ is a \emph{closed} subprescheme of $U\times_S P$, whence $U'=Z$.
+    $U\times_S P$ of the prescheme $Z$ \sref[I]{I.9.5.8}.
+    But the immersion $\psi$ factors as $U\xrightarrow{\Gamma_\vphi}U\times_S P\xrightarrow{j\times1}X\times_S P$, and since $P$ is separated over $S$, the graph morphism $\Gamma_\vphi$ is a closed immersion \sref[I]{I.5.4.3}, and so $Z$ is a \emph{closed} subprescheme of $U\times_S P$, whence $U'=Z$.
     Since $\psi$ is an immersion, the restriction of $f$ to $U'$ is an isomorphism onto $U$, and the inverse of $\psi'$; finally, by the definition of $X'$, $U'$ is dense in $X'$.
   \item[(D)] We now show that $g$ is an \emph{immersion}, which will imply that $X'$ is \emph{quasi-projective} over $S$, because $P$ is projective over $S$.
     Set
@@ -777,7 +777,7 @@ The proof proceeds in multiple steps.
     It is clear that the $U'_k$ form an open cover of $X'$; we will first see that the $U_k''$ also form an open cover of $X'$, by showing that $U_k'\subset U_k''$.
     For this, it will suffice to show that the diagram
     \[
-    \label{2.5.6.1.5}
+    \label{II.5.6.1.5}
       \xymatrix{
         U_k'\ar[r]^{g|U_k'}\ar[d]_{f|U_k'} &
         P\ar[d]^{p_k}\\
@@ -787,41 +787,41 @@ The proof proceeds in multiple steps.
       \tag{5.6.1.5}
     \]
     commutes.
-    But the prescheme $U_k'=h^{-1}(U_k\times_S P)$ is induced by $X'$ on the open subset $U_k'$, and is thus the closure of $Z=U'\subset U_k'$ relative to $U_k'$ \sref[I]{1.9.5.8}.
-    To show the commutativity of \sref{2.5.6.1.5}, it thus suffices (since $P_k$ is an $S$-scheme) to show that composing the diagram with the canonical injection $U'\to U_k'$ (or, equivalently, thanks to the isomorphism from $U'$ to $U$, with $\psi$) gives us a commutative diagram \sref[I]{1.9.5.6}.
-    But, by definition, the diagram thus obtains is exactly \sref{2.5.6.1.1}, whence our claim.
+    But the prescheme $U_k'=h^{-1}(U_k\times_S P)$ is induced by $X'$ on the open subset $U_k'$, and is thus the closure of $Z=U'\subset U_k'$ relative to $U_k'$ \sref[I]{I.9.5.8}.
+    To show the commutativity of \sref{II.5.6.1.5}, it thus suffices (since $P_k$ is an $S$-scheme) to show that composing the diagram with the canonical injection $U'\to U_k'$ (or, equivalently, thanks to the isomorphism from $U'$ to $U$, with $\psi$) gives us a commutative diagram \sref[I]{I.9.5.6}.
+    But, by definition, the diagram thus obtains is exactly \sref{II.5.6.1.1}, whence our claim.
 
-    The $W_k$ thus form an open cover of $g(X')$; to show that $g$ is an immersion, it suffices to show that each of the restrictions $g|U_k''$ is an immersion into $W_k$ \sref[I]{1.4.2.4}.
-    For this, consider the morphism $u_k:W_k\xrightarrow{p_k}V_k\xrightarrow{\vphi_k^{-1}}U_k\to X$; since $X$ is separated over $S$, the graph morphism $\Gamma_{u_k}:W_k\to X\times_S W_k$ is a closed immersion \sref[I]{1.5.4.3}, and so the graph $T_k=\Gamma_{u_k}(W_k)$ is a closed subprescheme of $X\times_S W$;
-    if we show that $U'\to X\times_S W_k$ factors through this subprescheme, then the map from the subprescheme induced by $X'$ on the open subset $X_k''$ of $X'$ to $X\times_S W_k$ will also factor through this graph, by \sref[I]{1.9.5.8}.
+    The $W_k$ thus form an open cover of $g(X')$; to show that $g$ is an immersion, it suffices to show that each of the restrictions $g|U_k''$ is an immersion into $W_k$ \sref[I]{I.4.2.4}.
+    For this, consider the morphism $u_k:W_k\xrightarrow{p_k}V_k\xrightarrow{\vphi_k^{-1}}U_k\to X$; since $X$ is separated over $S$, the graph morphism $\Gamma_{u_k}:W_k\to X\times_S W_k$ is a closed immersion \sref[I]{I.5.4.3}, and so the graph $T_k=\Gamma_{u_k}(W_k)$ is a closed subprescheme of $X\times_S W$;
+    if we show that $U'\to X\times_S W_k$ factors through this subprescheme, then the map from the subprescheme induced by $X'$ on the open subset $X_k''$ of $X'$ to $X\times_S W_k$ will also factor through this graph, by \sref[I]{I.9.5.8}.
     Since the restriction of $q_2$ to $T_k$ is an isomorphism onto $W_k$, the restriction of $g$ to $X''_k$ will be an immersion into $W_k$, and our claim will be proven.
     Let $v_k$ be the canonical injection $U'\to X\times_S W_k$; we have to show that there exists a morphism $w_k:U'\to W_k$ such that $v_k=\Gamma_{u_k}\circ w_k$.
-    By the definition of the product, it suffices to prove that $q_1\circ v_k=u_k\circ q_2\circ v_k$ \sref[I]{1.3.2.1}, or, by composing on the right
+    By the definition of the product, it suffices to prove that $q_1\circ v_k=u_k\circ q_2\circ v_k$ \sref[I]{I.3.2.1}, or, by composing on the right
 \oldpage[II]{109}
     with the isomorphism $\psi':U\to U'$, that $q_1\circ\psi=u_k\circ q_2\circ\psi$.
-    But since $q_1\circ\psi=j$ and $q_2\circ\psi=\vphi$, our claim follows from the commutativity of \sref{2.5.6.1.1}, taking into account the definition of $u_k$.
-  \item[(E)] It is clear that since $U$, and thus $U'$, is irreducible, so is the $X'$ from the preceding construction, and the morphism $f$ is thus \emph{birational} \sref[I]{1.2.2.9}.
-    If in addition $X$ is reduced, then so is $U'$, and hence $X'$ is also reduced \sref[I]{1.9.5.9}.
+    But since $q_1\circ\psi=j$ and $q_2\circ\psi=\vphi$, our claim follows from the commutativity of \sref{II.5.6.1.1}, taking into account the definition of $u_k$.
+  \item[(E)] It is clear that since $U$, and thus $U'$, is irreducible, so is the $X'$ from the preceding construction, and the morphism $f$ is thus \emph{birational} \sref[I]{I.2.2.9}.
+    If in addition $X$ is reduced, then so is $U'$, and hence $X'$ is also reduced \sref[I]{I.9.5.9}.
     This finishes the proof.
 \end{enumerate}
 \end{proof}
 
 \begin{corollary}[5.6.2]
-\label{2.5.6.2}
-Suppose that one of the hypotheses, \emph{(a)} and \emph{(b)}, of \sref{2.5.6.1} is satisfied.
-For $X$ to be proper over $S$, it is necessary and sufficient for there to exist a projective scheme $X'$ over $S$, and a surjective $S-$morphism $f:X'\to X$ (which is thus projective, by \sref{2.5.5.5}[v]).
+\label{II.5.6.2}
+Suppose that one of the hypotheses, \emph{(a)} and \emph{(b)}, of \sref{II.5.6.1} is satisfied.
+For $X$ to be proper over $S$, it is necessary and sufficient for there to exist a projective scheme $X'$ over $S$, and a surjective $S-$morphism $f:X'\to X$ (which is thus projective, by \sref{II.5.5.5}[v]).
 Whenever this is the case, we can further choose $f$ to be such that there exists a dense open subset $U$ of $X$ for which the restriction of $f$ to $f^{-1}(U)$ is an isomorphism $f^{-1}(U)\isoto U$, and for which $f^{-1}(U)$ is dense in $X'$.
 If in addition $X$ is irreducible (resp. reduced), then we can assume that $X'$ is also irreducible (resp. reduced); when $X$ and $X'$ are irreducible, $f$ is a birational morphism.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.5.6.2}
-The condition is sufficient, by \sref{2.5.5.3} and \sref{2.5.4.3}[ii].
-It is necessary because, with the notation of \sref{2.5.6.1}, if $X$ is proper over $S$, then $X'$ is proper over $S$, because it is projective over $X$, and thus proper over $X$ \sref{2.5.5.3}, and our claim follows from \sref{2.5.4.2}[ii]; furthermore, since $X'$ is quasi-projective over $S$, it is projective over $S$, by \sref{2.5.5.3}.
+The condition is sufficient, by \sref{II.5.5.3} and \sref{II.5.4.3}[ii].
+It is necessary because, with the notation of \sref{II.5.6.1}, if $X$ is proper over $S$, then $X'$ is proper over $S$, because it is projective over $X$, and thus proper over $X$ \sref{II.5.5.3}, and our claim follows from \sref{II.5.4.2}[ii]; furthermore, since $X'$ is quasi-projective over $S$, it is projective over $S$, by \sref{II.5.5.3}.
 \end{proof}
 
 \begin{corollary}[5.6.3]
-\label{2.5.6.3}
+\label{II.5.6.3}
 Let $S$ be a locally Noetherian prescheme, and $X$ an $S$-scheme of finite type over $S$, with structure morphism $f_0:X\to S$.
 For $X$ to be proper over $S$, it is necessary and sufficient that, for every morphism \emph{of finite type} $S'\to S$, $(f_0)_{(S')}:X_{(S')}\to S'$ be a closed morphism.
 It even suffices for this condition to be verified only for every $S$-prescheme of the form $S'=S\otimes_\bb{Z}\bb{Z}[T_1,\ldots,T_n]$ (where the $T_i$ are indeterminates).
@@ -830,7 +830,7 @@ It even suffices for this condition to be verified only for every $S$-prescheme 
 \begin{proof}
 \label{proof-2.5.6.3}
 The condition being clearly necessary, we now show that it is sufficient.
-Since the question is local on $S$ and $S'$ \sref{2.5.4.1}, we can suppose that $S$ and $S'$ are affine and Noetherian.
+Since the question is local on $S$ and $S'$ \sref{II.5.4.1}, we can suppose that $S$ and $S'$ are affine and Noetherian.
 By Chow's lemma, there exists a projective $S$-scheme $P$, an immersion $j:X'\to P$, and a surjective projective morphism $f:X'\to X$, such that the diagram
 \[
   \xymatrix{
@@ -843,15 +843,15 @@ By Chow's lemma, there exists a projective $S$-scheme $P$, an immersion $j:X'\to
 commutes.
 Since $P$ is of finite type over $S$, the first hypothesis implies that the projection $q_2:X\times_S P\to P$ is a \emph{closed} morphism.
 But the immersion $j$ is the composition of $q_2$ and the morphism $f\times1$ from $X'\times_S P$ to $X\times_S P$;
-but $f$, being projective, is proper \sref{2.5.5.3}, and so $f\times1$ is closed.
-We thus conclude that $j$ is a closed immersion, and thus proper \sref{2.5.4.2}[i].
-Furthermore, the structure morphism $r:P\to S$ is projective, and thus proper \sref{2.5.5.3}, so $f_0\circ f=r\circ j$ is proper \sref{2.5.4.2}[ii];
-finally, since $f$ is surjective, $f_0$ is proper, by \sref{2.5.4.3}.
+but $f$, being projective, is proper \sref{II.5.5.3}, and so $f\times1$ is closed.
+We thus conclude that $j$ is a closed immersion, and thus proper \sref{II.5.4.2}[i].
+Furthermore, the structure morphism $r:P\to S$ is projective, and thus proper \sref{II.5.5.3}, so $f_0\circ f=r\circ j$ is proper \sref{II.5.4.2}[ii];
+finally, since $f$ is surjective, $f_0$ is proper, by \sref{II.5.4.3}.
 
 To prove the proposition using only the second, weaker hypothesis (where $S'$ is of the form $S\otimes_\bb{Z}\bb{Z}[T_1,\ldots,T_n]$), it suffices to show that it implies the first.
 But, if $S'$ is affine and of finite type over $S=\Spec(A)$,
 \oldpage[II]{110}
-then we have $S'=\Spec(A[c_1,\ldots,c_n])$ \sref[I]{1.6.3.3}, and $S'$ is thus isomorphic to a closed subprescheme of $S''=\Spec(A[T_1,\ldots,T_n])$ (where the $T_i$ are indeterminates).
+then we have $S'=\Spec(A[c_1,\ldots,c_n])$ \sref[I]{I.6.3.3}, and $S'$ is thus isomorphic to a closed subprescheme of $S''=\Spec(A[T_1,\ldots,T_n])$ (where the $T_i$ are indeterminates).
 In the commutative diagram
 \[
   \xymatrix{
@@ -861,6 +861,6 @@ In the commutative diagram
     S''
   }
 \]
-both $j$ and $1_X\times j$ are closed immersions \sref[I]{1.4.3.1}, and $(f_0)_{(S')}$ is closed by hypothesis; thus $(f_0)_{(S'')}$ is also closed.
+both $j$ and $1_X\times j$ are closed immersions \sref[I]{I.4.3.1}, and $(f_0)_{(S')}$ is closed by hypothesis; thus $(f_0)_{(S'')}$ is also closed.
 \end{proof}
 

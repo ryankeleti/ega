@@ -1,13 +1,13 @@
 \setcounter{section}{0}
 \section{Affine schemes}
-\label{section:1.1}
+\label{section:I.1}
 
 \setcounter{subsection}{0}
 \subsection{The prime spectrum of a ring}
-\label{subsection:1.1.1}
+\label{subsection:I.1.1}
 
 \begin{env}[1.1.1]
-\label{1.1.1.1}
+\label{I.1.1.1}
 \oldpage[I]{80}
 \emph{Notation}. Let $A$ be a (commutative) ring, and $M$ an $A$-module.
 In this chapter and the following, we will constantly use the following notation:
@@ -24,7 +24,7 @@ In this chapter and the following, we will constantly use the following notation
   \item $V(E)=$ \emph{set of $x\in X$ such that $E\subset\mathfrak{j}_x$} (or the set of $x\in X$ such that $f(x)=0$ for all $f\in E$), for $E\subset A$.
     So we have
     \[
-    \label{1.1.1.1.1}
+    \label{I.1.1.1.1}
       \rad(E)=\bigcap_{x\in V(E)}\mathfrak{j}_x.
       \tag{1.1.1.1}
     \]
@@ -34,7 +34,7 @@ In this chapter and the following, we will constantly use the following notation
 \end{env}
 
 \begin{proposition}[1.1.2]
-\label{1.1.1.2}
+\label{I.1.1.2}
 We have the following properties:
 \begin{enumerate}
   \item[{\rm(i)}] $V(0)=X$, $V(1)=\emp$.
@@ -47,18 +47,18 @@ We have the following properties:
 
 \begin{proof}
 \label{proof-1.1.1.2}
-The properties (i), (ii), (iii) are trivial, and (v) follows from (ii) and from equation \sref{1.1.1.1.1}.
+The properties (i), (ii), (iii) are trivial, and (v) follows from (ii) and from equation \sref{I.1.1.1.1}.
 It is evident that $V(EE')\supset V(E)\cap V(E')$;
 conversely, if $x\not\in V(E)$ and $x\not\in V(E')$, then there exists $f\in E$ and $f'\in E'$ such that $f(x)\neq 0$ and $f'(x)\neq 0$ in $\kres(x)$, hence $f(x)f'(x)\neq 0$, i.e., $x\not\in V(EE')$, which proves (iv).
 \end{proof}
 
-Proposition \sref{1.1.1.2} shows, among other things, that sets of the form $V(E)$ (where $E$ varies over the subsets of $A$) are the \emph{closed sets} of a topology on $X$, which we will call the \emph{spectral topology}
+Proposition \sref{I.1.1.2} shows, among other things, that sets of the form $V(E)$ (where $E$ varies over the subsets of $A$) are the \emph{closed sets} of a topology on $X$, which we will call the \emph{spectral topology}
 \footnote{The introduction of this topology in algebraic geometry is due to Zariski.
 So this topology is usually called the ``Zariski topology'' on $X$.};
 unless expressly stated otherwise, we always assume that $X=\Spec(A)$ is equipped with the spectral topology.
 
 \begin{env}[1.1.3]
-\label{1.1.1.3}
+\label{I.1.1.3}
 \oldpage[I]{81}
 For each subset $Y$ of $X$, we denote by $\mathfrak{j}(Y)$ the set of $f\in A$ such that $f(y)=0$ for all $y\in Y$;
 equivalently, $\mathfrak{j}(Y)$ is the intersection of the prime ideals $\mathfrak{j}_y$ for $y\in Y$.
@@ -76,7 +76,7 @@ Finally we have
 \end{env}
 
 \begin{proposition}[1.1.4]
-\label{1.1.1.4}
+\label{I.1.1.4}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] For each subset $E$ of $A$, we have $\mathfrak{j}(V(E))=\rad(E)$.
@@ -92,13 +92,13 @@ conversely, if $Y\subset V(E)$, we have $f(y)=0$ for $f\in E$ and all $y\in Y$, 
 \end{proof}
 
 \begin{corollary}[1.1.5]
-\label{1.1.1.5}
+\label{I.1.1.5}
 The closed subsets of $X=\Spec(A)$ and the ideals of $A$ equal to their radicals (in other words, those that are the intersection of prime ideals) correspond bijectively by the inclusion-reversing maps $Y\mapsto\mathfrak{j}(Y)$, $\mathfrak{a}\mapsto V(\mathfrak{a})$;
 the union $Y_1\cup Y_2$ of two closed subsets corresponds to $\mathfrak{j}(Y_1)\cap\mathfrak{j}(Y_2)$, and the intersection of any family $(Y_\lambda)$ of closed subsets corresponds to the radical of the sum of the $\mathfrak{j}(Y_\lambda)$.
 \end{corollary}
 
 \begin{corollary}[1.1.6]
-\label{1.1.1.6}
+\label{I.1.1.6}
 If $A$ is a Noetherian ring, $X=\Spec(A)$ is a Noetherian space.
 \end{corollary}
 
@@ -109,13 +109,13 @@ we know that, as a set, $Y$ corresponds to the set of maximal ideals of $A$, and
 Since $Y$ is not a Noetherian space, the same is true for $X$.
 
 \begin{corollary}[1.1.7]
-\label{1.1.1.7}
+\label{I.1.1.7}
 For each $x\in X$, the closure of $\{x\}$ is the set of $y\in X$ such that $\mathfrak{j}_x\subset\mathfrak{j}_y$.
 For $\{x\}$ to be closed, it is necessary and sufficient that $\mathfrak{j}_x$ is maximal.
 \end{corollary}
 
 \begin{corollary}[1.1.8]
-\label{1.1.1.8}
+\label{I.1.1.8}
 The space $X=\Spec(A)$ is a Kolmogoroff space.
 \end{corollary}
 
@@ -125,18 +125,18 @@ If $x$, $y$ are two distinct points of $X$, we have either $\mathfrak{j}_x\not\s
 \end{proof}
 
 \begin{env}[1.1.9]
-\label{1.1.1.9}
-According to Proposition \sref{1.1.1.2}[iv], for two elements $f$, $g$ of $A$, we have
+\label{I.1.1.9}
+According to Proposition \sref{I.1.1.2}[iv], for two elements $f$, $g$ of $A$, we have
 \[
   D(fg)=D(f)\cap D(g).
   \tag{1.1.9.1}
 \]
-Note also that the equality $D(f)=D(g)$ means, according to Proposition~\sref{1.1.1.4}[i] and Proposition~\sref{1.1.1.2}[v], that $\rad(f)=\rad(g)$, or that the minimal prime ideals containing $(f)$ and $(g)$ are the same;
+Note also that the equality $D(f)=D(g)$ means, according to Proposition~\sref{I.1.1.4}[i] and Proposition~\sref{I.1.1.2}[v], that $\rad(f)=\rad(g)$, or that the minimal prime ideals containing $(f)$ and $(g)$ are the same;
 in particular, it is also the case when $f=ug$, where $u$ is invertible.
 \end{env}
 
 \begin{proposition}[1.1.10]
-\label{1.1.1.10}
+\label{I.1.1.10}
 \medskip\noindent
 \oldpage[I]{82}
 \begin{enumerate}
@@ -161,7 +161,7 @@ in particular, it is also the case when $f=ug$, where $u$ is invertible.
 \end{proof}
 
 \begin{proposition}[1.1.11]
-\label{1.1.1.11}
+\label{I.1.1.11}
 For each ideal $\mathfrak{a}$ of $A$, $\Spec(A/\mathfrak{a})$ is canonically identified with the closed subspace $V(\mathfrak{a})$ of $\Spec(A)$.
 \end{proposition}
 
@@ -173,25 +173,25 @@ We know there is a canonical bijective correspondence (respecting the inclusion 
 Recall that the set $\nilrad$ of nilpotent elements of $A$ (the \emph{nilradical} of $A$) is an ideal equal to $\rad(0)$, the intersection of all the prime ideals of $A$ \sref[0]{0.1.1.1}.
 
 \begin{corollary}[1.1.12]
-\label{1.1.1.12}
+\label{I.1.1.12}
 The topological spaces $\Spec(A)$ and $\Spec(A/\nilrad)$ are canonically homeomorphic.
 \end{corollary}
 
 \begin{proposition}[1.1.13]
-\label{1.1.1.13}
+\label{I.1.1.13}
 For $X=\Spec(A)$ to be irreducible \sref[0]{0.2.1.1}, it is necessary and sufficient that the ring $A/\nilrad$ is integral (or, equivalently, that the ideal $\nilrad$ is prime).
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.1.1.13}
-By virtue of Corollary \sref{1.1.1.12}, we can restrict to the case where $\nilrad=0$.
-If $X$ is reducible, then there exist two distinct closed subsets $Y_1$ and $Y_2$ of $X$ such that $X=Y_1\cup Y_2$, so $\mathfrak{j}(X)=\mathfrak{j}(Y_1)\cap\mathfrak{j}(Y_2)=0$, since the ideals $\mathfrak{j}(Y_1)$ and $\mathfrak{j}(Y_2)$ are distinct from $(0)$ \sref{1.1.1.5};
+By virtue of Corollary \sref{I.1.1.12}, we can restrict to the case where $\nilrad=0$.
+If $X$ is reducible, then there exist two distinct closed subsets $Y_1$ and $Y_2$ of $X$ such that $X=Y_1\cup Y_2$, so $\mathfrak{j}(X)=\mathfrak{j}(Y_1)\cap\mathfrak{j}(Y_2)=0$, since the ideals $\mathfrak{j}(Y_1)$ and $\mathfrak{j}(Y_2)$ are distinct from $(0)$ \sref{I.1.1.5};
 so $A$ is not integral.
 Conversely, if there are elements $f\neq 0$, $g\neq 0$ of $A$ such that $fg=0$, we have $V(f)\neq X$, $V(g)\neq X$ (since the intersection of all the prime ideals of $A$ is $(0)$), and $X=V(fg)=V(f)\cup V(g)$.
 \end{proof}
 
 \begin{corollary}[1.1.14]
-\label{1.1.1.14}
+\label{I.1.1.14}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] In the bijective correspondence between closed subsets of $X=\Spec(A)$ and ideals of $A$ equal to their radicals, the irreducible closed subsets of $X$ correspond to the prime ideals of $A$.
@@ -202,16 +202,16 @@ Conversely, if there are elements $f\neq 0$, $g\neq 0$ of $A$ such that $fg=0$, 
 
 \begin{proof}
 \label{proof-1.1.1.14}
-(i) follows immediately from \sref{1.1.1.13} and \sref{1.1.1.11};
-and for proving (ii), we can, by \sref{1.1.1.11}, restrict to the case where $X$ is irreducible;
-then, according to Proposition~\sref{1.1.1.13}, there exists a smaller prime ideal $\nilrad$ in $A$, which corresponds to the generic point
+(i) follows immediately from \sref{I.1.1.13} and \sref{I.1.1.11};
+and for proving (ii), we can, by \sref{I.1.1.11}, restrict to the case where $X$ is irreducible;
+then, according to Proposition~\sref{I.1.1.13}, there exists a smaller prime ideal $\nilrad$ in $A$, which corresponds to the generic point
 \oldpage[I]{83}
 of $X$;
-in addition, $X$ admits at most one generic point since it is a Kolmogoroff space (\sref{1.1.1.8} and \sref[0]{0.2.1.3}).
+in addition, $X$ admits at most one generic point since it is a Kolmogoroff space (\sref{I.1.1.8} and \sref[0]{0.2.1.3}).
 \end{proof}
 
 \begin{proposition}[1.1.15]
-\label{1.1.1.15}
+\label{I.1.1.15}
 If $\mathfrak{J}$ is an ideal in $A$ containing the radical $\nilrad(A)$, the only
 neighborhood of $V(\mathfrak{J})$ in $X=\Spec(A)$ is the whole space $X$.
 \end{proposition}
@@ -223,10 +223,10 @@ As each ideal $\mathfrak{a}\neq A$ of $A$ is contained in a maximal ideal, we ha
 \end{proof}
 
 \subsection{Functorial properties of prime spectra of rings}
-\label{subsection:1.1.2}
+\label{subsection:I.1.2}
 
 \begin{env}[1.2.1]
-\label{1.1.2.1}
+\label{I.1.2.1}
 Let $A$, $A'$ be two rings, and
 \[
   \vphi:A'\to A
@@ -251,24 +251,24 @@ for each $f'\in A'$, we therefore have, by definition,
 \end{env}
 
 \begin{proposition}[1.2.2]
-\label{1.1.2.2}
+\label{I.1.2.2}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] For each subset $E'$ of $A'$, we have
     \[
-    \label{1.1.2.2.1}
+    \label{I.1.2.2.1}
       {}^a\vphi^{-1}(V(E'))=V(\vphi(E')),
       \tag{1.2.2.1}
     \]
     and in particular, for each $f'\in A'$,
     \[
-    \label{1.1.2.2.2}
+    \label{I.1.2.2.2}
       {}^a\vphi^{-1}(D(f'))=D(\vphi(f')).
       \tag{1.2.2.2}
     \]
   \item[{\rm(ii)}] For each ideal $\mathfrak{a}$ of $A$, we have
     \[
-    \label{1.1.2.2.3}
+    \label{I.1.2.2.3}
       \overline{{}^a\vphi(V(\mathfrak{a}))}=V(\vphi^{-1}(\mathfrak{a})).
       \tag{1.2.2.3}
     \]
@@ -278,21 +278,21 @@ for each $f'\in A'$, we therefore have, by definition,
 \begin{proof}
 \label{proof-1.1.2.2}
 The relation ${}^a\vphi(x)\in V(E')$ is, by definition, equivalent to $E'\subset\vphi^{-1}(\mathfrak{j}_x)$, so $\vphi(E')\subset\mathfrak{j}_x$, and finally $x\in V(\vphi(E'))$, hence (i).
-To prove (ii), we can suppose that $\mathfrak{a}$ is equal to its radical, since $V(\rad(\mathfrak{a}))=V(\mathfrak{a})$ \sref{1.1.1.2}[v] and $\vphi^{-1}(\rad(\mathfrak{a}))=\rad(\vphi^{-1}(\mathfrak{a}))$;
+To prove (ii), we can suppose that $\mathfrak{a}$ is equal to its radical, since $V(\rad(\mathfrak{a}))=V(\mathfrak{a})$ \sref{I.1.1.2}[v] and $\vphi^{-1}(\rad(\mathfrak{a}))=\rad(\vphi^{-1}(\mathfrak{a}))$;
 the relation $f'\in\mathfrak{a}'$ is, by definition, equivalent to $f'(x')=0$ for each $x\in{{}^a\vphi(Y)}$, so, by Equation~\hyperref[1.1.2.1]{(1.2.1.1)}, it is also equivalent to $\vphi(f')(x)=0$ for each $x\in Y$, or to $\vphi(f')\in\mathfrak{j}(Y)=\mathfrak{a}$, since $\mathfrak{a}$ is equal to its radical;
 hence (ii).
 \end{proof}
 
 \begin{corollary}[1.2.3]
-\label{1.1.2.3}
+\label{I.1.2.3}
 The map ${}^a\vphi$ is continuous.
 \end{corollary}
 
 We remark that, if $A''$ is a third ring, and $\vphi'$ a homomorphism $A''\to A'$, then we have ${}^a(\vphi'\circ\vphi)={}^a\vphi\circ{}^a\vphi'$;
-this result, with Corollary~\sref{1.1.2.3}, says that $\Spec(A)$ is a \emph{contravariant functor} in $A$, from the category of rings to that of topological spaces.
+this result, with Corollary~\sref{I.1.2.3}, says that $\Spec(A)$ is a \emph{contravariant functor} in $A$, from the category of rings to that of topological spaces.
 
 \begin{corollary}[1.2.4]
-\label{1.1.2.4}
+\label{I.1.2.4}
 \oldpage[I]{84}
 Suppose that $\vphi$ is such that every $f\in A$ can be written as $f=h\vphi(f')$, where $h$ is invertible in $A$ (\emph{which, in particular, is the case when $\vphi$ is \emph{surjective}}).
 Then ${}^a\vphi$ is a homeomorphism from $X$ to ${}^a\vphi(X)$.
@@ -301,30 +301,30 @@ Then ${}^a\vphi$ is a homeomorphism from $X$ to ${}^a\vphi(X)$.
 \begin{proof}
 \label{proof-1.1.2.4}
 We show that for each subset $E\subset A$, there exists a subset $E'$ of $A'$ such that $V(E)=V(\vphi(E'))$;
-according to the ($T_0$) axiom \sref{1.1.1.8} and the formula \hyperref[1.1.2.2]{(1.2.2.1)}, this implies first of all that ${}^a\vphi$ is injective, and then, by \hyperref[1.1.2.2]{(1.2.2.1)}, that ${}^a\vphi$ is a homeomorphism.
+according to the ($T_0$) axiom \sref{I.1.1.8} and the formula \hyperref[1.1.2.2]{(1.2.2.1)}, this implies first of all that ${}^a\vphi$ is injective, and then, by \hyperref[1.1.2.2]{(1.2.2.1)}, that ${}^a\vphi$ is a homeomorphism.
 But it suffices, for each $f\in E$, to take $f'\in A'$ such that $h\vphi(f')=f$ with $h$ invertible in $A$;
 the set $E'$ of these elements $f'$ is exactly what we are searching for.
 \end{proof}
 
 \begin{env}[1.2.5]
-\label{1.1.2.5}
-In particular, when $\vphi$ is the canonical homomorphism from $A$ to a ring quotient $A/\mathfrak{a}$, we again get \sref{1.1.1.12}, and ${}^a\vphi$ is the \emph{canonical injection} of $V(\mathfrak{a})$, identified with $\Spec(A/\mathfrak{a})$, into $X=\Spec(A)$.
+\label{I.1.2.5}
+In particular, when $\vphi$ is the canonical homomorphism from $A$ to a ring quotient $A/\mathfrak{a}$, we again get \sref{I.1.1.12}, and ${}^a\vphi$ is the \emph{canonical injection} of $V(\mathfrak{a})$, identified with $\Spec(A/\mathfrak{a})$, into $X=\Spec(A)$.
 \end{env}
 
-Another particular case of \sref{1.1.2.4}:
+Another particular case of \sref{I.1.2.4}:
 \begin{corollary}[1.2.6]
-\label{1.1.2.6}
+\label{I.1.2.6}
 If $S$ is a multiplicative subset of $A$, the spectrum $\Spec(S^{-1}A)$ is canonically identified (with its topology) with the subspace of $X=\Spec(A)$ consisting of the $x$ such that $\mathfrak{j}_x\cap S=\emp$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.1.2.6}
 We know by \sref[0]{0.1.2.6} that the prime ideals of $S^{-1}A$ are the ideals $S^{-1}\mathfrak{j}_x$ such that $\mathfrak{j}_x\cap S=\emp$, and that we have $\mathfrak{j}_x=(i_A^S)^{-1}(S^{-1}\mathfrak{j}_x)$.
-It then suffices to apply Corollary~\sref{1.1.2.4} to the $i_A^S$.
+It then suffices to apply Corollary~\sref{I.1.2.4} to the $i_A^S$.
 \end{proof}
 
 \begin{corollary}[1.2.7]
-\label{1.1.2.7}
+\label{I.1.2.7}
 For ${}^a\vphi(X)$ to be dense in $X'$, it is necessary and sufficient for each element of the kernel $\Ker\vphi$ to be nilpotent.
 \end{corollary}
 
@@ -334,17 +334,17 @@ Applying Equation~\hyperref[1.1.2.2]{(1.2.2.3)} to the ideal $\mathfrak{a}=(0)$,
 \end{proof}
 
 \subsection{Sheaf associated to a module}
-\label{subsection:1.1.3}
+\label{subsection:I.1.3}
 
 \begin{env}[1.3.1]
-\label{1.1.3.1}
+\label{I.1.3.1}
 Let $A$ be a commutative ring, $M$ an $A$-module, $f$ an element of $A$, and $S_f$ the multiplicative set consisting of the $f^n$, where $n\geq 0$.
 Recall that we set $A_f=S_f^{-1}A$, $M_f=S_f^{-1}M$.
 If $S_f'$ is the saturated multiplicative subset of $A$ consisting of the $g\in A$ which divide an element of $S_f$, we know that $A_f$ and $M_f$ are canonically identified with ${S_f'}^{-1}A$ and ${S_f'}^{-1}M$ \sref[0]{0.1.4.3}.
 \end{env}
 
 \begin{lemma}[1.3.2]
-\label{1.1.3.2}
+\label{I.1.3.2}
 The following conditions are equivalent:
 \begin{enumerate}
   \item[{\rm(a)}] $g\in S_f'$;
@@ -358,12 +358,12 @@ The following conditions are equivalent:
 
 \begin{proof}
 \label{proof-1.1.3.2}
-This follows immediately from the definitions and \sref{1.1.1.5}.
+This follows immediately from the definitions and \sref{I.1.1.5}.
 \end{proof}
 
 \begin{env}[1.3.3]
-\label{1.1.3.3}
-If $D(f)=D(g)$, then Lemma~\sref{1.1.3.2}[b] shows that $M_f=M_g$.
+\label{I.1.3.3}
+If $D(f)=D(g)$, then Lemma~\sref{I.1.3.2}[b] shows that $M_f=M_g$.
 More generally, if $D(f)\supset D(g)$, then $S_f'\subset S_g'$, and we know \sref[0]{0.1.4.1} that there exists a canonical functorial homomorphism
 \[
   \rho_{g,f}:M_f\to M_g,
@@ -385,8 +385,8 @@ We denote by
 the canonical homomorphism for $f\in A\setmin\mathfrak{j}_x$ (or, equivalently, $x\in D(f)$).
 
 \begin{definition}[1.3.4]
-\label{1.1.3.4}
-We define the structure sheaf of the prime spectrum $X=\Spec(A)$ (resp. the sheaf associated to the $A$-module $M$), denoted by $\widetilde{A}$ or $\sh{O}_X$ (resp. $\widetilde{M}$) as the sheaf of rings (resp. the $\widetilde{A}$-module) associated to the presheaf $D(f)\mapsto A_f$ (resp. $D(f)\mapsto M_f$), defined on the basis $\mathfrak{B}$ of $X$ consisting of the $D(f)$ for $f\in A$ (\sref{1.1.1.10}, \sref[0]{0.3.2.1}, and \sref[0]{0.3.5.6}).
+\label{I.1.3.4}
+We define the structure sheaf of the prime spectrum $X=\Spec(A)$ (resp. the sheaf associated to the $A$-module $M$), denoted by $\widetilde{A}$ or $\sh{O}_X$ (resp. $\widetilde{M}$) as the sheaf of rings (resp. the $\widetilde{A}$-module) associated to the presheaf $D(f)\mapsto A_f$ (resp. $D(f)\mapsto M_f$), defined on the basis $\mathfrak{B}$ of $X$ consisting of the $D(f)$ for $f\in A$ (\sref{I.1.1.10}, \sref[0]{0.3.2.1}, and \sref[0]{0.3.5.6}).
 \end{definition}
 
 We saw \sref[0]{0.3.2.4} that the stalk $\widetilde{A}_x$ (resp. $\widetilde{M}_x$) \emph{can be identified with the ring $A_x$} (resp. \emph{the $A_x$-module $M_x$});
@@ -404,7 +404,7 @@ the canonical map, so that, for all $x\in D(f)$ and all $\xi\in M_f$, we have
 \]
 
 \begin{proposition}[1.3.5]
-\label{1.1.3.5}
+\label{I.1.3.5}
 $\widetilde{M}$ is an exact functor, covariant in $M$, from the category of $A$-modules to the category of $\widetilde{A}$-modules.
 \end{proposition}
 
@@ -418,7 +418,7 @@ for each $f\in A$, $u$ corresponds canonically to a homomorphism $u_f$ from the 
     M_g\ar[r]^{u_g} & N_g
   }
 \]
-is commutative \sref{1.1.4.1};
+is commutative \sref{I.1.4.1};
 these homomorphisms then define a homomorphism of $\widetilde{A}$-modules $\widetilde{u}:\widetilde{M}\to\widetilde{N}$ \sref[0]{0.3.2.3}.
 In addition, for each $x\in X$, $\widetilde{u}_x$ is the inductive limit of the $u_f$ for $x\in D(f)$ ($f\in A$), and as a result \sref[0]{0.1.4.5}, if we canonically identify $\widetilde{M}_x$ and $\widetilde{N}_x$ with $M_x$ and $N_x$ respectively, then $\widetilde{u}_x$ is identified with the homomorphism $u_x$ canonically induced by $u$.
 If $P$ is a third $A$-module, $v$ a homomorphism $N\to P$, and $w=v\circ u$, it is immediate that $w_x=v_x\circ u_x$, so $\widetilde{w}=\widetilde{v}\circ\widetilde{u}$.
@@ -429,19 +429,19 @@ in addition, we have $\Supp(M)=\Supp(\widetilde{M})$, by definition (\sref[0]{0.
 
 \oldpage[I]{86}
 \begin{proposition}[1.3.6]
-\label{1.1.3.6}
+\label{I.1.3.6}
 For each $f\in A$, the open subset $D(f)\subset X$ is canonically identified with the prime spectrum $\Spec(A_f)$, and the sheaf $\widetilde{M_f}$ associated to the $A_f$-module $M_f$ is canonically identified with the restriction $\widetilde{M}|D(f)$.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.1.3.6}
-The first assertion is a particular case of \sref{1.1.2.6}.
+The first assertion is a particular case of \sref{I.1.2.6}.
 In addition, if $g\in A$ is such that $D(g)\subset D(f)$, then $M_g$ is canonically identified with the module of fractions of $M_f$ whose denominators are the powers of the canonical image of $g$ in $A_f$ \sref[0]{0.1.4.6}.
 The canonical identification of $\widetilde{M_f}$ with $\widetilde{M}|D(f)$ then follows from the definitions.
 \end{proof}
 
 \begin{theorem}[1.3.7]
-\label{1.1.3.7}
+\label{I.1.3.7}
 For each $A$-module $M$ and each $f\in A$, the homomorphism
 \[
   \theta_f:M_f\to\Gamma(D(f),\widetilde{M})
@@ -453,27 +453,27 @@ In particular, $M$ can be identified with $\Gamma(X,\widetilde{M})$ via $\theta_
 \begin{proof}
 \label{proof-1.1.3.7}
 We note that, if $M=A$, then $\theta_f$ is a homomorphism of structure rings;
-Theorem~\sref{1.1.3.7} then implies that, if we identify the rings $A_f$ and $\Gamma(D(f),\widetilde{A})$ via $\theta_f$, the homomorphism $\theta_f:M_f\to\Gamma(D(f),\widetilde{M})$ is an isomorphism of \emph{modules}.
+Theorem~\sref{I.1.3.7} then implies that, if we identify the rings $A_f$ and $\Gamma(D(f),\widetilde{A})$ via $\theta_f$, the homomorphism $\theta_f:M_f\to\Gamma(D(f),\widetilde{M})$ is an isomorphism of \emph{modules}.
 
 We show first that $\theta_f$ is \emph{injective}.
 Indeed, if $\xi\in M_f$ is such that $\theta_f(\xi)=0$, then, for each prime ideal $\mathfrak{p}$ of $A_f$, there exists $h\not\in\mathfrak{p}$ such that $h\xi=0$;
 as the annihilator of $\xi$ is not contained in any prime ideal of $A_f$, each $A_f$ integral, and so $\xi=0$.
 
 It remains to show that $\theta_f$ is \emph{surjective};
-we can restrict to the case where $f=1$ (the general case then following by ``localizing'', using \sref{1.1.3.6}).
+we can restrict to the case where $f=1$ (the general case then following by ``localizing'', using \sref{I.1.3.6}).
 Now let $s$ be a section of $\widetilde{M}$ over $X$;
-according to \sref{1.1.3.4} and \sref{1.1.1.10}[ii], there exists a \emph{finite} cover $(D(f_i))_{i\in I}$ of $X$ ($f_i\in A$) such that, for each $i\in I$, the restriction $s_i=s|D(f_i)$ is of the form $\theta_{f_i}(\xi_i)$, where $\xi_i\in M_{f_i}$.
+according to \sref{I.1.3.4} and \sref{I.1.1.10}[ii], there exists a \emph{finite} cover $(D(f_i))_{i\in I}$ of $X$ ($f_i\in A$) such that, for each $i\in I$, the restriction $s_i=s|D(f_i)$ is of the form $\theta_{f_i}(\xi_i)$, where $\xi_i\in M_{f_i}$.
 If $i$, $j$ are indices of $I$, and if the restrictions of $s_i$ and $s_j$ to $D(f_i)\cap D(f_j)=D(f_i f_j)$ are equal, then it follows, by definition of $M$, that
 \[
-  \label{1.1.3.7.1}
+  \label{I.1.3.7.1}
   \rho_{f_i f_j,f_i}(\xi_i)=\rho_{f_i f_j,f_j}(\xi_j).
   \tag{1.3.7.1}
 \]
 By definition, we can write, for each $i\in I$, $\xi_i=z_i/f_i^{n_i}$, where $z_i\in M$, and. since $I$ is finite, by multiplying each $z_i$ by a power of $f_i$, we can assume that all the $n_i$ are equal to one single $n$.
-Then, by definition, \sref{1.1.3.7.1} implies that there exists an integer $m_{ij}\geq 0$ such that $(f_i f_j)^{m_{ij}}(f_j^n z_i-f_i^n z_j)=0$, and we can moreover suppose that the $m_{ij}$ are equal to the one single $m$;
+Then, by definition, \sref{I.1.3.7.1} implies that there exists an integer $m_{ij}\geq 0$ such that $(f_i f_j)^{m_{ij}}(f_j^n z_i-f_i^n z_j)=0$, and we can moreover suppose that the $m_{ij}$ are equal to the one single $m$;
 then replacing the $z_i$ by $f_i^m z_i$, it remains to prove the case where $m=0$, in other words, the case where we have
 \[
-  \label{1.1.3.7.2}
+  \label{I.1.3.7.2}
   f_j^n z_i=f_i^n z_j
   \tag{1.3.7.2}
 \]
@@ -481,14 +481,14 @@ for any $i$, $j$.
 We have $D(f_i^n)=D(f_i)$, and since the $D(f_i)$ form a cover of $X$, the ideal generated by the $f_i^n$ is $A$;
 in other words, there exist elements $g_i\in A$ such that $\sum_i g_i f_i^n=1$.
 Then consider the element $z=\sum_i g_i z_i$ of $M$;
-in \sref{1.1.3.7.2}, we have $f_i^n z=\sum_j g_j f_i^n z_j=(\sum_j g_j f_j^n)z_i=z_i$, where, by definition, $\xi_i=z/1$ in $M_{f_i}$.
+in \sref{I.1.3.7.2}, we have $f_i^n z=\sum_j g_j f_i^n z_j=(\sum_j g_j f_j^n)z_i=z_i$, where, by definition, $\xi_i=z/1$ in $M_{f_i}$.
 We conclude
 \oldpage[I]{87}
 that the $s_i$ are the restrictions to $D(f_i)$ of $\theta_1(z)$, which proves that $s=\theta_1(z)$ and finishes the proof.
 \end{proof}
 
 \begin{corollary}[1.3.8]
-\label{1.1.3.8}
+\label{I.1.3.8}
 Let $M$ and $N$ be $A$-modules;
 the canonical homomorphism $u\mapsto\widetilde{u}$ from $\Hom_A(M,N)$ to $\Hom_{\widetilde{A}}(\widetilde{M},\widetilde{N})$ is bijective.
 In particular, the equations $M=0$ and $\widetilde{M}=0$ are equivalent.
@@ -497,7 +497,7 @@ In particular, the equations $M=0$ and $\widetilde{M}=0$ are equivalent.
 \begin{proof}
 \label{proof-1.1.3.8}
 Consider the canonical homomorphism $v\mapsto\Gamma(v)$ from $\Hom_{\widetilde{A}}(\widetilde{M},\widetilde{N})$ to $\Hom_{\Gamma(\widetilde{A})}(\Gamma(\widetilde{M}),\Gamma(\widetilde{N}))$;
-the latter module is canonically identified with $\Hom_A(M,N)$, by Theorem~\sref{1.1.3.7}.
+the latter module is canonically identified with $\Hom_A(M,N)$, by Theorem~\sref{I.1.3.7}.
 It remains to show that $u\mapsto\widetilde{u}$ and $v\mapsto\Gamma(v)$ are inverses of each other;
 it is evident that $\Gamma(\widetilde{u})=u$ by definition of $\widetilde{u}$;
 on the other hand, if we let $u=\Gamma(v)$ for $v\in\Hom_{\widetilde{A}}(\widetilde{M},\widetilde{N})$, then the map $w:\Gamma(D(f),\widetilde{M})\to\Gamma(D(f),\widetilde{N})$ canonically induced from $v$ is such that the diagram
@@ -512,7 +512,7 @@ so we necessarily have that $w=u_f$ for all $f\in A$ \sref[0]{0.1.2.4}, which sh
 \end{proof}
 
 \begin{corollary}[1.3.9]
-\label{1.1.3.9}
+\label{I.1.3.9}
 \medskip\noindent
 \begin{enumerate}
   \item[{\rm(i)}] Let $u$ be a homomorphism from an $A$-module $M$ to an $A$-module $N$;
@@ -526,14 +526,14 @@ so we necessarily have that $w=u_f$ for all $f\in A$ \sref[0]{0.1.2.4}, which sh
 \label{proof-1.1.3.9}
 \medskip\noindent
 \begin{enumerate}
-  \item[(i)] It suffices to apply the fact that $\widetilde{M}$ is an exact functor in $M$ \sref{1.1.3.5} to the two exact sequences of $A$-modules
+  \item[(i)] It suffices to apply the fact that $\widetilde{M}$ is an exact functor in $M$ \sref{I.1.3.5} to the two exact sequences of $A$-modules
     \[
       0\to\Ker u\to M\to\Im u\to 0,
     \]
     \[
       0\to\Im u\to N\to\Coker u\to 0.
     \]
-    The second claim then follows from Theorem~\sref{1.1.3.7}.
+    The second claim then follows from Theorem~\sref{I.1.3.7}.
   \item[(ii)] Let $(M_\lambda,g_{\mu\lambda})$ be an inductive system of $A$-modules, with inductive limit $M$, and let $g_\lambda$ be the canonical homomorphism $M_\lambda\to M$.
     Since we have $\widetilde{g_{\nu\mu}}\circ\widetilde{g_{\mu\lambda}}=\widetilde{g_{\nu\lambda}}$ and $\widetilde{g_\lambda}=\widetilde{g_\mu}\circ\widetilde{g_{\mu\lambda}}$ for $\lambda\leq\mu\leq\nu$, it follows that $(\widetilde{M_\lambda},\widetilde{g_{\mu\lambda}})$ is an inductive system of sheaves on $X$, and if we denote by $h_\lambda$ the canonical homomorphism $\widetilde{M_\lambda}\to\varinjlim\widetilde{M_\lambda}$, then there is a unique homomorphism $v:\varinjlim\widetilde{M_\lambda}\to\widetilde{M}$ such that $v\circ h_\lambda=\widetilde{g_\lambda}$.
     To see that $v$ is bijective, it suffices to check, for each $x\in X$, that $v_x$ is a bijection from $(\varinjlim\widetilde{M_\lambda})_x$ to $\widetilde{M}_x$;
@@ -551,44 +551,44 @@ so we necessarily have that $w=u_f$ for all $f\in A$ \sref[0]{0.1.2.4}, which sh
 \end{enumerate}
 \end{proof}
 
-We note that Corollary~\sref{1.1.3.8} proves that the sheaves isomorphic to the associated sheaves of $A$-modules form an \emph{abelian category} (T, I, 1.4).
+We note that Corollary~\sref{I.1.3.8} proves that the sheaves isomorphic to the associated sheaves of $A$-modules form an \emph{abelian category} (T, I, 1.4).
 
-We also note that Corollary~\sref{1.1.3.9} implies that, if $M$ is an $A$-module \emph{of finite type} (that is to say, there exists a surjective homomorphism $A^n\to M$) then there exists a surjective homomorphism $\widetilde{A^n}\to\widetilde{M}$, or, in other words, the $\widetilde{A}$-module $\widetilde{M}$ is \emph{generated by a finite family of sections over $X$} \sref[0]{0.5.1.1}, and vice versa.
+We also note that Corollary~\sref{I.1.3.9} implies that, if $M$ is an $A$-module \emph{of finite type} (that is to say, there exists a surjective homomorphism $A^n\to M$) then there exists a surjective homomorphism $\widetilde{A^n}\to\widetilde{M}$, or, in other words, the $\widetilde{A}$-module $\widetilde{M}$ is \emph{generated by a finite family of sections over $X$} \sref[0]{0.5.1.1}, and vice versa.
 
 \begin{env}[1.3.10]
-\label{1.1.3.10}
-If $N$ is a submodule of an $A$-module $M$, the canonical injection $j:N\to M$ gives, by \sref{1.1.3.9}, an injective homomorphism $\widetilde{N}\to\widetilde{M}$, which allows us to canonically identify $\widetilde{N}$ with an \emph{$\widetilde{A}$-submodule} of $\widetilde{M}$;
+\label{I.1.3.10}
+If $N$ is a submodule of an $A$-module $M$, the canonical injection $j:N\to M$ gives, by \sref{I.1.3.9}, an injective homomorphism $\widetilde{N}\to\widetilde{M}$, which allows us to canonically identify $\widetilde{N}$ with an \emph{$\widetilde{A}$-submodule} of $\widetilde{M}$;
 we will always assume that we have made this identification.
 If $N$ and $P$ are submodules of $M$, then we have
 \[
-\label{1.1.3.10.1}
+\label{I.1.3.10.1}
   (N+P)^\sim=\widetilde{N}+\widetilde{P},
   \tag{1.3.10.1}
 \]
 \[
-\label{1.1.3.10.2}
+\label{I.1.3.10.2}
   (N\cap P)^\sim=\widetilde{N}\cap\widetilde{P},
   \tag{1.3.10.2}
 \]
 since $N+P$ and $N\cap P$ are the image of the canonical homomorphism
-$N\oplus P\to M$ and the kernel of the canonical homomorphism $M\to(M/N)\oplus(M/P)$ (respectively), and it suffices to apply \sref{1.1.3.9}.
+$N\oplus P\to M$ and the kernel of the canonical homomorphism $M\to(M/N)\oplus(M/P)$ (respectively), and it suffices to apply \sref{I.1.3.9}.
 
-We conclude from \sref{1.1.3.10.1} and \sref{1.1.3.10.2} that, if $\widetilde{N}=\widetilde{P}$, then we have $N=P$.
+We conclude from \sref{I.1.3.10.1} and \sref{I.1.3.10.2} that, if $\widetilde{N}=\widetilde{P}$, then we have $N=P$.
 \end{env}
 
 \begin{corollary}[1.3.11]
-\label{1.1.3.11}
+\label{I.1.3.11}
 On the category of sheaves isomorphic to the associated sheaves of $A$-modules, the functor $\Gamma$ is exact.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.1.3.11}
 Let $\widetilde{M}\xrightarrow{\widetilde{u}}\widetilde{N}\xrightarrow{\widetilde{v}}\widetilde{P}$ be an exact sequence corresponding to two homomorphisms $u:M\to N$ and $v:N\to P$ of $A$-modules.
-If $Q=\Im u$ and $R=\Ker v$, we have $\widetilde{Q}=\Im\widetilde{u}=\Ker\widetilde{v}=\widetilde{R}$ (Corollary~\sref{1.1.3.9}), hence $Q=R$.
+If $Q=\Im u$ and $R=\Ker v$, we have $\widetilde{Q}=\Im\widetilde{u}=\Ker\widetilde{v}=\widetilde{R}$ (Corollary~\sref{I.1.3.9}), hence $Q=R$.
 \end{proof}
 
 \begin{corollary}[1.3.12]
-\label{1.1.3.12}
+\label{I.1.3.12}
 Let $M$ and $N$ be $A$-modules.
 \begin{enumerate}
   \item[{\rm(i)}] The sheaf associated to $M\otimes_A N$ is canonically identified with $\widetilde{M}\otimes_{\widetilde{A}}\widetilde{N}$.
@@ -604,10 +604,10 @@ Let $M$ and $N$ be $A$-modules.
     \[
       U\mapsto\sh{F}(U)=\Gamma(U,\widetilde{M})\otimes_{\Gamma(U,\widetilde{A})}\Gamma(U,\widetilde{N}),
     \]
-    with $U$ varying over the basis \sref{1.1.1.10}[i] of $X$ consisting of the $D(f)$, where $f\in A$.
-    We know that $\sh{F}(D(f))$ is canonically identified with $M_f\otimes_{A_f}N_f$, by \sref{1.1.3.7} and \sref{1.1.3.6}.
+    with $U$ varying over the basis \sref{I.1.1.10}[i] of $X$ consisting of the $D(f)$, where $f\in A$.
+    We know that $\sh{F}(D(f))$ is canonically identified with $M_f\otimes_{A_f}N_f$, by \sref{I.1.3.7} and \sref{I.1.3.6}.
     Moreover, we know that the $A_f$-module $M_f\otimes_{A_f}N_f$ is canonically
-    isomorphic to $(M\otimes_A N)_f$ \sref[0]{0.1.3.4}, which is itself canonically isomorphic to $\Gamma(D(f),(M\otimes_A N)^\sim)$ (Theorem~\sref{1.1.3.7} and Proposition~\sref{1.1.3.6}).
+    isomorphic to $(M\otimes_A N)_f$ \sref[0]{0.1.3.4}, which is itself canonically isomorphic to $\Gamma(D(f),(M\otimes_A N)^\sim)$ (Theorem~\sref{I.1.3.7} and Proposition~\sref{I.1.3.6}).
     In addition, we see immediately that the canonical isomorphisms
     \[
       \sh{F}(D(f))\isoto\Gamma(D(f),(M\otimes_A N)^\sim)
@@ -622,15 +622,15 @@ Let $M$ and $N$ be $A$-modules.
       U\mapsto\sh{G}(U)=\Hom_{\widetilde{A}|U}(\widetilde{M}|U,\widetilde{N}|U),
     \]
     with $U$ varying over the basis of $X$ consisting of the $D(f)$.
-    We know that $\sh{G}(D(f))$ is canonically identified with $\Hom_{A_f}(M_f,N_f)$ (Proposition~\sref{1.1.3.6} and
-    Corollary~\sref{1.1.3.8}), which, according to the hypotheses on $M$, is canonically identified with $(\Hom_A(M,N))_f$ \sref[0]{0.1.3.5}.
-    Finally, $(\Hom_A(M,N))_f$ is canonically identified with $\Gamma(D(f),(\Hom_A(M,N))^\sim)$ (Proposition~\sref{1.1.3.6} and Theorem~\sref{1.1.3.7}), and the canonical isomorphisms $\sh{G}(D(f))\isoto\Gamma(D(f),(\Hom_A(M,N))^\sim)$ thus obtained are compatible with the restriction operations \sref[0]{0.1.4.2};
+    We know that $\sh{G}(D(f))$ is canonically identified with $\Hom_{A_f}(M_f,N_f)$ (Proposition~\sref{I.1.3.6} and
+    Corollary~\sref{I.1.3.8}), which, according to the hypotheses on $M$, is canonically identified with $(\Hom_A(M,N))_f$ \sref[0]{0.1.3.5}.
+    Finally, $(\Hom_A(M,N))_f$ is canonically identified with $\Gamma(D(f),(\Hom_A(M,N))^\sim)$ (Proposition~\sref{I.1.3.6} and Theorem~\sref{I.1.3.7}), and the canonical isomorphisms $\sh{G}(D(f))\isoto\Gamma(D(f),(\Hom_A(M,N))^\sim)$ thus obtained are compatible with the restriction operations \sref[0]{0.1.4.2};
     they thus define a canonical isomorphism $\shHom_{\widetilde{A}}(\widetilde{M},\widetilde{N})\isoto(\Hom_A(M,N))^\sim$.
 \end{enumerate}
 \end{proof}
 
 \begin{env}[1.3.13]
-\label{1.1.3.13}
+\label{I.1.3.13}
 Now let $B$ be a (commutative) $A$-algebra; this can be understood by saying that $B$ is an $A$-module such that we have some given element $e\in B$ and an $A$-homomorphism $\vphi:B\otimes_A B\to B$, so that \emph{(a)} the diagrams
 \[
   \xymatrix{
@@ -644,7 +644,7 @@ Now let $B$ be a (commutative) $A$-algebra; this can be understood by saying tha
   }
 \]
 ($\sigma$ being the canonical symmetry map) are commutative; and \emph{(b)} $\vphi(e\otimes x)=\vphi(x\otimes e)=x$.
-By Corollary~\sref{1.1.3.12}, the homomorphism $\widetilde{\vphi}:\widetilde{B}\otimes_{\widetilde{A}}\widetilde{B}\to\widetilde{B}$ of $\widetilde{A}$-modules satisfies the analogous conditions, and so it defines an \emph{$\widetilde{A}$-algebra} structure on $\widetilde{B}$.
+By Corollary~\sref{I.1.3.12}, the homomorphism $\widetilde{\vphi}:\widetilde{B}\otimes_{\widetilde{A}}\widetilde{B}\to\widetilde{B}$ of $\widetilde{A}$-modules satisfies the analogous conditions, and so it defines an \emph{$\widetilde{A}$-algebra} structure on $\widetilde{B}$.
 In a similar way, the data of a $B$-module $N$ is the same as the data of an $A$-module $N$ and an $A$-homomorphism $\psi:B\otimes_A N\to N$ such that the diagram
 \[
   \xymatrix{
@@ -663,25 +663,25 @@ If $N$ is a $B$-module, then $\widetilde{N}$ is a $\widetilde{B}$-module of fini
 \oldpage[I]{90}
 If $M$, $N$ are $B$-modules, then the $\widetilde{B}$-module $\widetilde{M}\otimes_{\widetilde{B}}\widetilde{N}$ is canonically identified with $(M\otimes_B N)^\sim$;
 similarly $\shHom_{\widetilde{B}}(\widetilde{M},\widetilde{N})$ is canonically identified with $(\Hom_B(M,N))^\sim$ whenever $M$ admits a finite presentation;
-the proofs are similar to those for Corollary~\sref{1.1.3.12}.
+the proofs are similar to those for Corollary~\sref{I.1.3.12}.
 
 If $\mathfrak{J}$ is an ideal of $B$, and $N$ is a $B$-module, then we have $(\mathfrak{J}N)^\sim=\widetilde{\mathfrak{J}}\cdot\widetilde{N}$.
 
-Finally, if $B$ is an $A$-algebra \emph{graded} by the $A$-submodules $B_n$ ($n\in\bb{Z}$), then the $\widetilde{A}$-algebra $\widetilde{B}$, the direct sum of the $\widetilde{A}$-modules $\widetilde{B_n}$ \sref{1.1.3.9}, is graded by these $\widetilde{A}$-submodules, the axiom of graded algebras saying that the image of the homomorphism $B_m\otimes B_n\to B$ is contained in $B_{m+n}$.
+Finally, if $B$ is an $A$-algebra \emph{graded} by the $A$-submodules $B_n$ ($n\in\bb{Z}$), then the $\widetilde{A}$-algebra $\widetilde{B}$, the direct sum of the $\widetilde{A}$-modules $\widetilde{B_n}$ \sref{I.1.3.9}, is graded by these $\widetilde{A}$-submodules, the axiom of graded algebras saying that the image of the homomorphism $B_m\otimes B_n\to B$ is contained in $B_{m+n}$.
 Similarly, if $M$ is a $B$-module graded by the submodules $M_n$, then $\widetilde{M}$ is a $\widetilde{B}$-module graded by the $\widetilde{M_n}$.
 \end{env}
 
 \begin{env}[1.3.14]
-\label{1.1.3.14}
+\label{I.1.3.14}
 If $B$ is an $A$-algebra, and $M$ a submodule of $B$, then the $\widetilde{A}$-subalgebra of $\widetilde{B}$ generated by $\widetilde{M}$ \sref[0]{0.4.1.3} is the $\widetilde{A}$-subalgebra $\widetilde{C}$, where we denote by $C$ the subalgebra of $B$ generated by $M$.
-Indeed, $C$ is the direct sum of the submodules of $B$ which are the images of the homomorphisms $\bigotimes^n M\to B$ ($n\geq 0$), so it suffices to apply \sref{1.1.3.9} and \sref{1.1.3.12}.
+Indeed, $C$ is the direct sum of the submodules of $B$ which are the images of the homomorphisms $\bigotimes^n M\to B$ ($n\geq 0$), so it suffices to apply \sref{I.1.3.9} and \sref{I.1.3.12}.
 \end{env}
 
 \subsection{Quasi-coherent sheaves over a prime spectrum}
-\label{subsection:1.1.4}
+\label{subsection:I.1.4}
 
 \begin{theorem}[1.4.1]
-\label{1.1.4.1}
+\label{I.1.4.1}
 Let $X$ be the prime spectrum of a ring $A$, $V$ a quasi-compact open subset of $X$, and $\sh{F}$ an $(\sh{O}_X|V)$-module.
 The following four conditions are equivalent.
 \begin{enumerate}
@@ -695,28 +695,28 @@ The following four conditions are equivalent.
     \end{enumerate}
 \end{enumerate}
 \end{theorem}
-(In the statement of the conditions (d1) and (d2), we have tacitly identified $A$ and $\Gamma(\widetilde{A})$ using Theorem~\sref{1.1.3.7}).
+(In the statement of the conditions (d1) and (d2), we have tacitly identified $A$ and $\Gamma(\widetilde{A})$ using Theorem~\sref{I.1.3.7}).
 
 \begin{proof}
 \label{proof-1.1.4.1}
-The fact that (a) implies (b) is an immediate consequence of Proposition~\sref{1.1.3.6} and the fact that the $D(f_i)$ form a basis for the topology of $X$ \sref{1.1.1.10}.
-As each $A$-module is isomorphic to the cokernel of a homomorphism of the form $A^{(I)}\to A^{(J)}$, \sref{1.1.3.6} implies that each sheaf associated to an $A$-module is quasi-coherent;
+The fact that (a) implies (b) is an immediate consequence of Proposition~\sref{I.1.3.6} and the fact that the $D(f_i)$ form a basis for the topology of $X$ \sref{I.1.1.10}.
+As each $A$-module is isomorphic to the cokernel of a homomorphism of the form $A^{(I)}\to A^{(J)}$, \sref{I.1.3.6} implies that each sheaf associated to an $A$-module is quasi-coherent;
 so (b) implies (c).
 Conversely, if $\sh{F}$ is quasi-coherent, each $x\in V$ has a neighborhood of the form $D(f)\subset V$ such that $\sh{F}|D(f)$ is isomorphic to the cokernel of a homomorphism $\widetilde{A_f}^{(I)}\to\widetilde{A_f}^{(J)}$, so also to the sheaf $\widetilde{N}$ associated to the module $N$, the cokernel of the corresponding homomorphism
-$A_f^{(I)}\to A_f^{(J)}$ (Corollaries~\sref{1.1.3.8} and \sref{1.1.3.9});
+$A_f^{(I)}\to A_f^{(J)}$ (Corollaries~\sref{I.1.3.8} and \sref{I.1.3.9});
 since $V$ is quasi-compact, it is clear that (c) implies (b).
 
 \oldpage[I]{91}
 To prove that (b) implies (d1) and (d2), we first assume that $V=D(g)$ for some $g\in A$, and that $\sh{F}$ is isomorphic to the sheaf $\widetilde{N}$ associated to an $A_g$-module $N$;
-by replacing $X$ with $V$ and $A$ with $A_g$ \sref{1.1.3.6}, we can reduce to the case where $g=1$.
-Then $\Gamma(D(f),\widetilde{N})$ and $N_f$ are canonically identified with one another (Proposition~\sref{1.1.3.6} and Theorem~\sref{1.1.3.7}), so a section $s\in\Gamma(D(f),\widetilde{N})$ is identified with an element of the form $z/f^n$, where $z\in N$;
+by replacing $X$ with $V$ and $A$ with $A_g$ \sref{I.1.3.6}, we can reduce to the case where $g=1$.
+Then $\Gamma(D(f),\widetilde{N})$ and $N_f$ are canonically identified with one another (Proposition~\sref{I.1.3.6} and Theorem~\sref{I.1.3.7}), so a section $s\in\Gamma(D(f),\widetilde{N})$ is identified with an element of the form $z/f^n$, where $z\in N$;
 the section $f^n s$ is identified with the element $z/1$ of $N_f$ and, as a result, is the restriction to $D(f)$ of the section of $\widetilde{N}$ over $X$ that is identified with the element $z\in N$;
 hence (d1) in this case.
 Similarly, $t\in\Gamma(X,\widetilde{N})$ is identified with an element $z'\in N$, the restriction of $t$ to $D(f)$ is identified with the image $z'/1$ of $z'$ in $N_f$, and to say that this image is zero means that there exists some $n\geq 0$ such that $f^n z'=0$ in $N$, or, equivalently, $f^n t=0$.
 
 To finish the proof, that (b) implies (d1) and (d2), it suffices to establish the following lemma.
 \begin{lemma}[1.4.1.1]
-\label{1.1.4.1.1}
+\label{I.1.4.1.1}
 Suppose that $V$ is the finite union of sets of the form $D(g_i)$, and that all of the sheaves $\sh{F}|D(g_i)$ and $\sh{F}|(D(g_i)\cap D(g_j))=\sh{F}|D(g_i g_j)$ satisfy \emph{(d1)} and \emph{(d2)};
 then $\sh{F}$ has the following two properties:
 \begin{enumerate}
@@ -747,7 +747,7 @@ on the other hand, if $t\in\Gamma(D(g),\sh{F})$ is such that its restriction to 
 extends to a section $s$ of $\sh{F}$ over $V$;
 applying (d2), we see that there exists an integer $n\geq 0$ such that $f^n g^m t=0$, and as the image of $g$ in $A_g$ is invertible, $f^n t=0$.
 
-That being so, since $V$ is quasi-compact, Lemma~\sref{1.1.4.1.1} proves that
+That being so, since $V$ is quasi-compact, Lemma~\sref{I.1.4.1.1} proves that
 the conditions (d$'$1) and (d$'$2) are satisfied.
 Consider then the $A$-module $M=\Gamma(V,\sh{F})$, and define a homomorphism of $\widetilde{A}$-modules $u:\widetilde{M}\to j_*(\sh{F})$, where $j$ is the canonical injection $V\to X$.
 Since the $D(f)$ form a basis for the topology of $X$, it suffices, for each $f\in A$, to define a homomorphism $u_f:M_f\to\Gamma(D(f),j_*(\sh{F}))=\Gamma(D(f)\cap V,\sh{F})$, with the usual compatibility conditions \sref[0]{0.3.2.5}.
@@ -760,12 +760,12 @@ according to (d$'$2), there exists an integer $n\geq 0$ such that $f^n z=0$, hen
 \end{proof}
 
 \begin{corollary}[1.4.2]
-\label{1.1.4.2}
+\label{I.1.4.2}
 Each quasi-coherent sheaf over a quasi-compact open subset of $X$ is induced by a quasi-coherent sheaf on $X$.
 \end{corollary}
 
 \begin{corollary}[1.4.3]
-\label{1.1.4.3}
+\label{I.1.4.3}
 Every quasi-coherent $\sh{O}_X$-algebra over $X=\Spec(A)$ is isomorphic to an $\sh{O}_X$-algebra of the form $\widetilde{B}$, where $B$ is an algebra over $A$;
 every quasi-coherent $\widetilde{B}$-module is isomorphic to a $\widetilde{B}$-module of the form $\widetilde{N}$, where $N$ is a $B$-module.
 \end{corollary}
@@ -773,17 +773,17 @@ every quasi-coherent $\widetilde{B}$-module is isomorphic to a $\widetilde{B}$-m
 \begin{proof}
 \label{proof-1.1.4.3}
 Indeed, a quasi-coherent $\sh{O}_X$-algebra is a quasi-coherent $\sh{O}_X$-module, and therefore of the form $\widetilde{B}$, where $B$ is an $A$-module;
-the fact that $B$ is an $A$-algebra follows from the characterization of the structure of an $\sh{O}_X$-algebra using the homomorphism $\widetilde{B}\otimes_{\widetilde{A}}\widetilde{B}\to\widetilde{B}$ of $\widetilde{A}$-modules, as well as Corollary~\sref{1.1.3.12}.
+the fact that $B$ is an $A$-algebra follows from the characterization of the structure of an $\sh{O}_X$-algebra using the homomorphism $\widetilde{B}\otimes_{\widetilde{A}}\widetilde{B}\to\widetilde{B}$ of $\widetilde{A}$-modules, as well as Corollary~\sref{I.1.3.12}.
 If $\sh{G}$ is a quasi-coherent $\widetilde{B}$-module, it suffices to show, in a similar way, that it is also a quasi-coherent $\widetilde{A}$-module to conclude the proof;
 since the question is local, we can, by restricting to an open subset of $X$ of the form $D(f)$, assume that $\sh{G}$ is the cokernel of a homomorphism $\widetilde{B}^{(I)}\to\widetilde{B}^{(J)}$ of $\widetilde{B}$-modules (and \emph{a fortiori} of $\widetilde{A}$-modules);
-the proposition then follows from Corollaries~\sref{1.1.3.8} and \sref{1.1.3.9}.
+the proposition then follows from Corollaries~\sref{I.1.3.8} and \sref{I.1.3.9}.
 \end{proof}
 
 \subsection{Coherent sheaves over a prime spectrum}
-\label{subsection:1.1.5}
+\label{subsection:I.1.5}
 
 \begin{theorem}[1.5.1]
-\label{1.1.5.1}
+\label{I.1.5.1}
 Let $A$ be a \emph{Noetherian} ring, $X=\Spec(A)$ its prime spectrum, $V$ an open subset of $X$, and $\sh{F}$ an $(\sh{O}_X|V)$-module.
 The following conditions are equivalent.
 \begin{enumerate}
@@ -797,44 +797,44 @@ The following conditions are equivalent.
 \label{proof-1.1.5.1}
 \oldpage[I]{93}
 (a) trivially implies (b).
-To see that (b) implies (c), note that, since $V$ is quasi-compact \sref[0]{0.2.2.3}, we have previously seen that $\sh{F}$ is isomorphic to a sheaf $\widetilde{N}|V$, where $N$ is an $A$-module \sref{1.1.4.1}.
-We have $N=\varinjlim M_\lambda$, where $M_\lambda$ run over the set of $A$-submodules of $N$ of finite type, hence \sref{1.1.3.9} $\sh{F}=\widetilde{N}|V=\varinjlim\widetilde{M_\lambda}|V$;
+To see that (b) implies (c), note that, since $V$ is quasi-compact \sref[0]{0.2.2.3}, we have previously seen that $\sh{F}$ is isomorphic to a sheaf $\widetilde{N}|V$, where $N$ is an $A$-module \sref{I.1.4.1}.
+We have $N=\varinjlim M_\lambda$, where $M_\lambda$ run over the set of $A$-submodules of $N$ of finite type, hence \sref{I.1.3.9} $\sh{F}=\widetilde{N}|V=\varinjlim\widetilde{M_\lambda}|V$;
 but since $\sh{F}$ is of finite type, and $V$ is quasi-compact, there exists an index $\lambda$ such that $\sh{F}=\widetilde{M_\lambda}|V$ \sref[0]{0.5.2.3}.
 
 Finally, we show that (c) implies (a).
-It is clear that $\sh{F}$ is then of finite type (\sref{1.1.3.6} and \sref{1.1.3.9});
+It is clear that $\sh{F}$ is then of finite type (\sref{I.1.3.6} and \sref{I.1.3.9});
 in addition, the question being local, we can restrict to the case where $V=D(f)$, $f\in A$.
 Since $A_f$ is Noetherian, we see that it suffices to prove that the kernel of a homomorphism $\widetilde{A^n}\to\widetilde{M}$, where $M$ is an $A$-module, is of finite type.
-But such a homomorphism is of the form $\widetilde{u}$, where $u$ is a homomorphism $A^n\to M$ \sref{1.1.3.8}, and if $P=\Ker u$ then we have $\widetilde{P}=\Ker\widetilde{u}$ \sref{1.1.3.9}.
+But such a homomorphism is of the form $\widetilde{u}$, where $u$ is a homomorphism $A^n\to M$ \sref{I.1.3.8}, and if $P=\Ker u$ then we have $\widetilde{P}=\Ker\widetilde{u}$ \sref{I.1.3.9}.
 Since $A$ is Noetherian, $P$ is of finite type, which finishes the proof.
 \end{proof}
 
 \begin{corollary}[1.5.2]
-\label{1.1.5.2}
-Under the hypotheses of \sref{1.1.5.1}, the sheaf $\sh{O}_X$ is a quasi-coherent sheaf of rings.
+\label{I.1.5.2}
+Under the hypotheses of \sref{I.1.5.1}, the sheaf $\sh{O}_X$ is a quasi-coherent sheaf of rings.
 \end{corollary}
 
 \begin{corollary}[1.5.3]
-\label{1.1.5.3}
-Under the hypotheses of \sref{1.1.5.1}, every coherent sheaf over an open subset of $X$ is induced by a coherent sheaf on $X$.
+\label{I.1.5.3}
+Under the hypotheses of \sref{I.1.5.1}, every coherent sheaf over an open subset of $X$ is induced by a coherent sheaf on $X$.
 \end{corollary}
 
 \begin{corollary}[1.5.4]
-\label{1.1.5.4}
-Under the hypotheses of \sref{1.1.5.1}, every quasi-coherent $\sh{O}_X$-module $\sh{F}$ is the inductive limit of the coherent $\sh{O}_X$-submodules of $\sh{F}$.
+\label{I.1.5.4}
+Under the hypotheses of \sref{I.1.5.1}, every quasi-coherent $\sh{O}_X$-module $\sh{F}$ is the inductive limit of the coherent $\sh{O}_X$-submodules of $\sh{F}$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.1.5.4}
 Indeed, $\sh{F}=\widetilde{M}$, where $M$ is an $A$-module, and $M$ is the inductive limit of its submodules of finite type;
-we conclude the proof by appealing to \sref{1.1.3.9} and \sref{1.1.5.1}.
+we conclude the proof by appealing to \sref{I.1.3.9} and \sref{I.1.5.1}.
 \end{proof}
 
 \subsection{Functorial properties of quasi-coherent sheaves over a prime spectrum}
-\label{subsection:1.1.6}
+\label{subsection:I.1.6}
 
 \begin{env}[1.6.1]
-\label{1.1.6.1}
+\label{I.1.6.1}
 Let $A$, $A'$ be rings,
 \[
   \vphi:A'\to A
@@ -843,15 +843,15 @@ a homomorphism, and
 \[
   {}^a\vphi:X=\Spec(A)\to X'=\Spec(A')
 \]
-the continuous map associated to $\vphi$ \sref{1.1.2.1}.
+the continuous map associated to $\vphi$ \sref{I.1.2.1}.
 We will define a \emph{canonical homomorphism}
 \[
   \widetilde{\vphi}:\sh{O}_{X'}\to{}^a\vphi_*(\sh{O}_X)
 \]
 of sheaves of rings.
 For each $f'\in A'$, we put $f=\vphi(f')$;
-we have ${}^a\vphi^{-1}(D(f'))=D(f)$ \sref{1.1.2.2.2}.
-The rings $\Gamma(D(f'),\widetilde{A'})$ and $\Gamma(D(f),\widetilde{A})$ are identified  with $A_{f'}'$ and $A_f$ (respectively) (\sref{1.1.3.6} and \sref{1.1.3.7}). The homomorphism $\vphi$ canonically defines a homomorphism $\vphi_{f'}:A_{f'}'\to A_f$ \sref[0]{0.1.5.1}, in other words, we have a homomorphism of rings
+we have ${}^a\vphi^{-1}(D(f'))=D(f)$ \sref{I.1.2.2.2}.
+The rings $\Gamma(D(f'),\widetilde{A'})$ and $\Gamma(D(f),\widetilde{A})$ are identified  with $A_{f'}'$ and $A_f$ (respectively) (\sref{I.1.3.6} and \sref{I.1.3.7}). The homomorphism $\vphi$ canonically defines a homomorphism $\vphi_{f'}:A_{f'}'\to A_f$ \sref[0]{0.1.5.1}, in other words, we have a homomorphism of rings
 \[
   \Gamma(D(f),\widetilde{A'})\to\Gamma({}^a\vphi^{-1}(D(f')),\widetilde{A})
   =\Gamma(D(f'),{}^a\vphi_*(\widetilde{A})).
@@ -885,16 +885,16 @@ by considering the section $s'\in\Gamma(D(f'),\widetilde{A'})$ corresponding to 
 \end{env}
 
 \begin{example}[1.6.2]
-\label{1.1.6.2}
+\label{I.1.6.2}
 Let $S$ be a multiplicative subset of $A$, and $\vphi$ the canonical homomorphism $A\to S^{-1}A$;
-we have already seen \sref{1.1.2.6} that ${}^a\vphi$ is a \emph{homeomorphism} from $Y=\Spec(S^{-1}A)$ to the subspace of $X=\Spec(A)$ consisting of the $x$ such that $\mathfrak{j}_x\cap S=\emp$.
+we have already seen \sref{I.1.2.6} that ${}^a\vphi$ is a \emph{homeomorphism} from $Y=\Spec(S^{-1}A)$ to the subspace of $X=\Spec(A)$ consisting of the $x$ such that $\mathfrak{j}_x\cap S=\emp$.
 In addition, for each $x$ in this subspace, which is thus of the form ${}^a\vphi(y)$ with $y\in Y$, the homomorphism $\widetilde{\vphi}_y^\sharp:\sh{O}_x\to\sh{O}_y$ is
 \emph{bijective} \sref[0]{0.1.2.6};
 in other words, $\sh{O}_Y$ is identified with the sheaf on $Y$ induced by $\sh{O}_X$.
 \end{example}
 
 \begin{proposition}[1.6.3]
-\label{1.1.6.3}
+\label{I.1.6.3}
 For every $A$-module $M$, there exists a canonical functorial isomorphism from the $\sh{O}_{X'}$-module $(M_{[\vphi]})^\sim$ to the direct image $\Phi_*(\widetilde{M})$.
 \end{proposition}
 
@@ -914,18 +914,18 @@ $(B_{[\vphi]})^\sim\isoto\Phi_*(\widetilde{B})$ is an isomorphism of \emph{$\sh{
 if $M$ is a $B$-module, the canonical functorial isomorphism $(M_{[\vphi]})^\sim\isoto\Phi_*(\widetilde{M})$ is an isomorphism of $\Phi_*(\widetilde{B})$-modules.
 
 \begin{corollary}[1.6.4]
-\label{1.1.6.4}
+\label{I.1.6.4}
 The direct image functor $\Phi_*$ is exact on the category of quasi-coherent $\sh{O}_X$-modules.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.1.6.4}
 Indeed, it is clear that $M_{[\vphi]}$ is an exact functor in $M$ and $\widetilde{M'}$ is an
-exact functor in $M'$ \sref{1.1.3.5}.
+exact functor in $M'$ \sref{I.1.3.5}.
 \end{proof}
 
 \begin{proposition}[1.6.5]
-\label{1.1.6.5}
+\label{I.1.6.5}
 Let $N'$ be an $A'$-module, and $N$ the $A$-module $N'\otimes_{A'}A_{[\vphi]}$;
 then there exists a canonical functorial isomorphism from the $\sh{O}_X$-module $\Phi^*(\widetilde{N'})$ to $\widetilde{N}$.
 \end{proposition}
@@ -933,7 +933,7 @@ then there exists a canonical functorial isomorphism from the $\sh{O}_X$-module 
 \begin{proof}
 \label{proof-1.1.6.5}
 We first remark that $j:z'\mapsto z'\otimes 1$ is an $A'$-homomorphism from $N'$ to $N_{[\vphi]}$: indeed, by definition, for $f'\in A'$, we have $(f' z')\otimes 1=z'\otimes\vphi(f')=\vphi(f')(z'\otimes 1)$.
-We have \sref{1.1.3.8} a homomorphism $\widetilde{j}:\widetilde{N'}\to(N_{[\vphi]})^\sim$ of $\sh{O}_{X'}$-modules, and, thanks to \sref{1.1.6.3}, we can consider $\widetilde{j}$ as mapping $\widetilde{N'}$ to $\Phi_*(\widetilde{N})$.
+We have \sref{I.1.3.8} a homomorphism $\widetilde{j}:\widetilde{N'}\to(N_{[\vphi]})^\sim$ of $\sh{O}_{X'}$-modules, and, thanks to \sref{I.1.6.3}, we can consider $\widetilde{j}$ as mapping $\widetilde{N'}$ to $\Phi_*(\widetilde{N})$.
 There canonically corresponds to this homomorphism $\widetilde{j}$ a homomorphism $h=\widetilde{j}^\sharp$ from $\Phi^*(\widetilde{N'})$ to $\widetilde{N}$ \sref[0]{0.4.4.3};
 we will see that, for each stalk, $h_x$ is \emph{bijective}.
 Put $x'={}^a\vphi(x)$ and let $f'\in A'$ be such that $x'\in D(f')$;
@@ -949,43 +949,43 @@ But we can canonically identify $N_f$ with $N_{f'}'\otimes_{A_{f'}'}(A_f)_{[\vph
 $s$ then corresponds to the element $(n'/{f'}^p)\otimes 1$, and the section $y\mapsto t_y\cdot s_y$ with $(n'/{f'}^p)\otimes(g/f^q)$.
 The compatibility diagram of \sref[0]{0.1.5.6} show that $h_x$ is exactly the canonical isomorphism
 \[
-  \label{1.1.6.5.1}
+  \label{I.1.6.5.1}
   N_{x'}'\otimes_{A_{x'}'}(A_x)_{[\vphi_{x'}]}\isoto N_x=(N'\otimes_{A'}A_{[\vphi]})_x.
   \tag{1.6.5.1}
 \]
 
 In addition, let $v:N_1'\to N_2'$ be a homomorphism of $A'$-modules;
-since $\widetilde{v}_{x'}=v_{x'}$ for each $x'\in X'$, it follows immediately from the above that $\Phi^*(\widetilde{v})$ is canonically identified with $(v\otimes 1)^\sim$, which finishes the proof of \sref{1.1.6.5}.
+since $\widetilde{v}_{x'}=v_{x'}$ for each $x'\in X'$, it follows immediately from the above that $\Phi^*(\widetilde{v})$ is canonically identified with $(v\otimes 1)^\sim$, which finishes the proof of \sref{I.1.6.5}.
 \end{proof}
 
 If $B'$ is an $A'$-algebra, the canonical isomorphism from $\Phi^*(\widetilde{B'})$ to $(B'\otimes_{A'}A_{[\vphi]})^\sim$ is an isomorphism of $\sh{O}_X$-algebras;
 if, in addition, $N'$ is a $B'$-module, then the canonical isomorphism from $\Phi^*(\widetilde{N'})$ to $(N'\otimes_{A'}A_{[\vphi]})^\sim$ is an isomorphism of $\Phi^*(\widetilde{B'})$-modules.
 
 \begin{corollary}[1.6.6]
-\label{1.1.6.6}
+\label{I.1.6.6}
 The sections of $\Phi^*(\widetilde{N'})$, the canonical images of the sections $s'$, where $s'$ varies over the $A'$-module $\Gamma(\widetilde{N'})$, generate the $A$-module $\Gamma(\Phi^*(N'))$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.1.6.6}
-Indeed, these images are identified with the elements $z'\otimes 1$ of $N$, when we identify $N'$ and $N$ with $\Gamma(\widetilde{N'})$ and $\Gamma(\widetilde{N})$ (respectively) \sref{1.1.3.7}, and $z'$ varies over $N'$.
+Indeed, these images are identified with the elements $z'\otimes 1$ of $N$, when we identify $N'$ and $N$ with $\Gamma(\widetilde{N'})$ and $\Gamma(\widetilde{N})$ (respectively) \sref{I.1.3.7}, and $z'$ varies over $N'$.
 \end{proof}
 
 \begin{env}[1.6.7]
-\label{1.1.6.7}
-In the proof of \sref{1.1.6.5}, we had proved in passing that the canonical map (\textbf{0},~4.4.3.2) $\rho:\widetilde{N'}\to\Phi_*(\Phi^*(\widetilde{N'}))$ is exactly the homomorphism $\widetilde{j}$,
+\label{I.1.6.7}
+In the proof of \sref{I.1.6.5}, we had proved in passing that the canonical map (\textbf{0},~4.4.3.2) $\rho:\widetilde{N'}\to\Phi_*(\Phi^*(\widetilde{N'}))$ is exactly the homomorphism $\widetilde{j}$,
 \oldpage[I]{96}
 where $j:N'\to N'\otimes_{A'}A_{[\vphi]}$ is the homomorphism $z'\mapsto z'\otimes 1$.
 Similarly, the canonical map (\textbf{0},~4.4.3.3) $\sigma:\Phi^*(\Phi_*(\widetilde{M}))\to\widetilde{M}$ is exactly $\widetilde{p}$, where $p:M_{[\vphi]}\otimes_{A'}A_{[\vphi]}\to M$ is the canonical homomorphism, which sends each tensor product $z\otimes a$ ($z\in M$, $a\in A$) to $a\cdot z$;
-this follows immediately from the definitions (\sref[0]{0.3.7.1}, \sref[0]{0.4.4.3}, and \sref{1.1.3.7}).
+this follows immediately from the definitions (\sref[0]{0.3.7.1}, \sref[0]{0.4.4.3}, and \sref{I.1.3.7}).
 
 We conclude (\sref[0]{0.4.4.3} and (\textbf{0},~3.5.4.4)) that if $v:N'\to M_{[\vphi]}$ is an $A'$-homomorphism, then $\widetilde{v}^\sharp=(v\otimes 1)^\sim$.
 \end{env}
 
 \begin{env}[1.6.8]
-\label{1.1.6.8}
+\label{I.1.6.8}
 Let $N_1'$ and $N_2'$ be $A'$-modules, and assume $N_1'$ admits a \emph{finite presentation};
-it then follows from \sref{1.1.6.7} and \sref{1.1.3.12}[ii] that the
+it then follows from \sref{I.1.6.7} and \sref{I.1.3.12}[ii] that the
 canonical homomorphism \sref[0]{0.4.4.6}
 \[
   \Phi^*(\shHom_{\widetilde{A'}}(\widetilde{N_1'},\widetilde{N_2'}))
@@ -995,42 +995,42 @@ is exactly $\widetilde{\gamma}$, where $\gamma$ denotes the canonical homomorphi
 \end{env}
 
 \begin{env}[1.6.9]
-\label{1.1.6.9}
+\label{I.1.6.9}
 Let $\mathfrak{J}'$ be an ideal of $A'$, and $M$ an $A$-module;
 since, by definition, $\widetilde{\mathfrak{J}'}\widetilde{M}$ is the image of the canonical homomorphism $\Phi^*(\widetilde{\mathfrak{J}'})\otimes_{\widetilde{A}}\widetilde{M}\to\widetilde{M}$, it
-follows from Proposition~\sref{1.1.6.5} and Corollary~\sref{1.1.3.12}[i] that
+follows from Proposition~\sref{I.1.6.5} and Corollary~\sref{I.1.3.12}[i] that
 $\widetilde{\mathfrak{J}'}\widetilde{M}$ canonically identifies with $(\mathfrak{J}' M)^\sim$;
 in particular, $\Phi^*(\widetilde{\mathfrak{J}'})\widetilde{A}$ is identified with $(\mathfrak{J}' A)^\sim$, and, taking the right exactness of the functor $\Phi^*$ into account,
 the $\widetilde{A}$-algebra $\Phi^*((A'/\mathfrak{J}')^\sim)$ is identified with $(A/\mathfrak{J}' A)^\sim$.
 \end{env}
 
 \begin{env}[1.6.10]
-\label{1.1.6.10}
+\label{I.1.6.10}
 Let $A''$ be a third ring, $\vphi'$ a homomorphism $A''\to A'$, and write $\vphi''=\vphi\circ\vphi'$.
 It follows immediately from the definitions that ${}^a\vphi''=({}^a\vphi')\circ({}^a\vphi)$, and $\widetilde{\vphi''}=\widetilde{\vphi}\circ\widetilde{\vphi'}$ \sref[0]{0.1.5.7}. We conclude that $\Phi''=\Phi'\circ\Phi$;
 in other words, $(\Spec(A),\widetilde{A})$ is a \emph{functor} from the category of rings to that of ringed spaces.
 \end{env}
 
 \subsection{Characterization of morphisms of affine schemes}
-\label{subsection:1.1.7}
+\label{subsection:I.1.7}
 
 \begin{definition}[1.7.1]
-\label{1.1.7.1}
+\label{I.1.7.1}
 We say that a ringed space $(X,\sh{O}_X)$ is an \emph{affine scheme} if it is isomorphic to a ringed space of the form $(\Spec(A),\widetilde{A})$, where $A$ is a ring;
-we then say that $\Gamma(X,\sh{O}_X)$, which is canonically identified with the ring $A$ \sref{1.1.3.7}, is the ring of the affine scheme $(X,\sh{O}_X)$, and we denote it by $A(X)$ when there is no chance of confusion.
+we then say that $\Gamma(X,\sh{O}_X)$, which is canonically identified with the ring $A$ \sref{I.1.3.7}, is the ring of the affine scheme $(X,\sh{O}_X)$, and we denote it by $A(X)$ when there is no chance of confusion.
 \end{definition}
 
 By abuse of language, when we speak of an \emph{affine scheme $\Spec(A)$}; it will always be the ringed space $(\Spec(A),\widetilde{A})$.
 \begin{env}[1.7.2]
-\label{1.1.7.2}
+\label{I.1.7.2}
 Let $A$ and $B$ be rings, and $(X,\sh{O}_X)$ and $(Y,\sh{O}_Y)$ the affine schemes corresponding to the prime spectra $X=\Spec(A)$, $Y=\Spec(B)$.
-We have seen \sref{1.1.6.1} that each ring homomorphism $\vphi:B\to A$ corresponds to a morphism $\Phi=({}^a\vphi,\widetilde{\vphi})=\Spec(\vphi):(X,\sh{O}_X)\to(Y,\sh{O}_Y)$.
+We have seen \sref{I.1.6.1} that each ring homomorphism $\vphi:B\to A$ corresponds to a morphism $\Phi=({}^a\vphi,\widetilde{\vphi})=\Spec(\vphi):(X,\sh{O}_X)\to(Y,\sh{O}_Y)$.
 We note that $\vphi$ is entirely determined by $\Phi$, since we have, by definition, $\vphi=\Gamma(\widetilde{\vphi}):\Gamma(\widetilde{B})\to\Gamma({}^a\vphi_*(\widetilde{A})=\Gamma(\widetilde{A})$.
 \end{env}
 
 \begin{theorem}[1.7.3]
-\label{1.1.7.3}
-\footnote{\emph{[Trans.] See \hyperref[subsection:1.1.8]{(1.8)} and the footnote there.}}
+\label{I.1.7.3}
+\footnote{\emph{[Trans.] See \hyperref[subsection:I.1.8]{(1.8)} and the footnote there.}}
 Let $(X,\sh{O}_X)$  $(Y,\sh{O}_Y)$ be affine schemes.
 For a morphism of ringed spaces $(\psi,\theta):(X,\sh{O}_X)\to(Y,\sh{O}_Y)$ to be of the form $({}^a\vphi,\widetilde{\vphi})$, where $\vphi$ is a homomorphism of rings $A(Y)\to A(X)$, it is necessary and sufficient that, for each $x\in X$, $\theta_x^\sharp$ is a local homomorphism: $\sh{O}_{\psi(x)}\to\sh{O}_x$.
 \end{theorem}
@@ -1039,7 +1039,7 @@ For a morphism of ringed spaces $(\psi,\theta):(X,\sh{O}_X)\to(Y,\sh{O}_Y)$ to b
 \label{proof-1.1.7.3}
 \oldpage[I]{97}
 Let $A=A(X)$, $B=A(Y)$.
-The condition is necessary, since we saw \sref{1.1.6.1} that $\widetilde{\vphi}_x^\sharp$ is the homomorphism from $B_{{}^a\vphi(x)}$ to $A_x$ canonically induced by $\vphi$, and, by definition, of ${}^a\vphi(x)=\vphi^{-1}(\mathfrak{j}_x)$, this homomorphism is local.
+The condition is necessary, since we saw \sref{I.1.6.1} that $\widetilde{\vphi}_x^\sharp$ is the homomorphism from $B_{{}^a\vphi(x)}$ to $A_x$ canonically induced by $\vphi$, and, by definition, of ${}^a\vphi(x)=\vphi^{-1}(\mathfrak{j}_x)$, this homomorphism is local.
 
 We now prove that the condition is sufficient.
 By definition, $\theta$ is a homomorphism $\sh{O}_Y\to\psi_*(\sh{O}_X)$, and we canonically obtain a ring homomorphism
@@ -1060,38 +1060,38 @@ We also know that the diagram
   }
 \]
 is commutative \sref[0]{0.3.7.2}, which means that $\theta_x^\sharp$ is equal to the homomorphism $\vphi_x:B_{\psi(x)}\to A_x$ canonically induced by $\vphi$ \sref[0]{0.1.5.1}.
-As the data of the $\theta_x^\sharp$ completely characterize $\theta^\sharp$, and as a result $\theta$ \sref[0]{0.3.7.1}, we conclude that we have $\theta=\widetilde{\vphi}$, by the definition of $\widetilde{\vphi}$ \sref{1.1.6.1}.
+As the data of the $\theta_x^\sharp$ completely characterize $\theta^\sharp$, and as a result $\theta$ \sref[0]{0.3.7.1}, we conclude that we have $\theta=\widetilde{\vphi}$, by the definition of $\widetilde{\vphi}$ \sref{I.1.6.1}.
 \end{proof}
 
-We say that a morphism $(\psi,\theta)$ of ringed spaces satisfying the condition of \sref{1.1.7.3} is a \emph{morphism of affine schemes}.
+We say that a morphism $(\psi,\theta)$ of ringed spaces satisfying the condition of \sref{I.1.7.3} is a \emph{morphism of affine schemes}.
 
 \begin{corollary}[1.7.4]
-\label{1.1.7.4}
+\label{I.1.7.4}
 If $(X,\sh{O}_X)$ and $(Y,\sh{O}_Y)$ are affine schemes, there exists a canonical isomorphism from the set of morphisms of affine schemes $\Hom((X,\sh{O}_X),(Y,\sh{O}_Y))$ to the set of ring homomorphisms from $B$ to $A$, where $A=\Gamma(\sh{O}_X)$ and $B=\Gamma(\sh{O}_Y)$.
 \end{corollary}
 
 Furthermore, we can say that the functors $(\Spec(A),\widetilde{A})$ in $A$ and $\Gamma(X,\sh{O}_X)$ in $(X,\sh{O}_X)$ define an \emph{equivalence} between the category of commutative rings and the opposite category of affine schemes (T, I, 1.2).
 
 \begin{corollary}[1.7.5]
-\label{1.1.7.5}
-If $\vphi:B\to A$ is surjective, then the corresponding morphism $({}^a\vphi,\widetilde{\vphi})$ is a monomorphism of ringed spaces \emph{(cf.~\sref{1.4.1.7})}.
+\label{I.1.7.5}
+If $\vphi:B\to A$ is surjective, then the corresponding morphism $({}^a\vphi,\widetilde{\vphi})$ is a monomorphism of ringed spaces \emph{(cf.~\sref{I.4.1.7})}.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.1.7.5}
-Indeed, we know that ${}^a\vphi$ is injective \sref{1.1.2.5}, and, since $\vphi$ is
+Indeed, we know that ${}^a\vphi$ is injective \sref{I.1.2.5}, and, since $\vphi$ is
 surjective, for each $x\in X$, $\vphi_x^\sharp:B_{{}^a\vphi(x)}\to A_x$, which is induced by $\vphi$ by passing to rings of fractions, is also surjective \sref[0]{0.1.5.1};
 hence the conclusion \sref[0]{0.4.1.1}.
 \end{proof}
 
 \subsection{Morphisms from locally ringed spaces to affine schemes}
-\label{subsection:1.1.8}
+\label{subsection:I.1.8}
 
 \oldpage[II]{217}
-Due to a remark by J.~Tate, the statements of Theorem~\sref{1.1.7.3} and Proposition~\sref{1.2.2.4} can be generalized as follows:\footnote{\emph{[Trans.] The following section (I.1.8) was added in the errata of EGA~II, hence the temporary change in page numbers, which refer to EGA~II.}}
+Due to a remark by J.~Tate, the statements of Theorem~\sref{I.1.7.3} and Proposition~\sref{I.2.2.4} can be generalized as follows:\footnote{\emph{[Trans.] The following section (I.1.8) was added in the errata of EGA~II, hence the temporary change in page numbers, which refer to EGA~II.}}
 
 \begin{proposition}[1.8.1]
-\label{1.1.8.1}
+\label{I.1.8.1}
 Let $(S,\sh{O}_S)$ be an affine scheme, and $(X,\sh{O}_X)$ a locally ringed space.
 Then there is a canonical bijection from the set of ring homomorphisms
 \oldpage[II]{218}
@@ -1102,7 +1102,7 @@ $\Gamma(S,\sh{O}_S)\to\Gamma(X,\sh{O}_X)$ to the set of morphisms of ringed spac
 \label{proof-1.1.8.1}
 We note first that if $(X,\sh{O}_X)$ and $(S,\sh{O}_S)$ are any two ringed spaces, then a morphism $(\psi,\theta)$ from $(X,\sh{O}_X)$ to $(S,\sh{O}_S)$ canonically defines a ring homomorphism $\Gamma(\theta):\Gamma(S,\sh{O}_S)\to\Gamma(X,\sh{O}_X)$, hence a first map
 \[
-  \label{1.1.8.1.1}
+  \label{I.1.8.1.1}
   \rho:\Hom((X,\sh{O}_X),(S,\sh{O}_S))\to\Hom(\Gamma(S,\sh{O}_S),\Gamma(X,\sh{O}_X)).
   \tag{1.8.1.1}
 \]
@@ -1115,7 +1115,7 @@ We then define a homomorphism
   \widetilde{\vphi}:\sh{O}_S\to{}^a\vphi_*(\sh{O}_X)
 \]
 of $\sh{O}_S$-modules;
-for each $f\in A$, we have $\Gamma(D(f),\sh{O}_S)=A_f$ \sref{1.1.3.6};
+for each $f\in A$, we have $\Gamma(D(f),\sh{O}_S)=A_f$ \sref{I.1.3.6};
 for each $s\in A$, we associate to $s/f\in A_f$ the element $(\vphi(s)|X_f)(\vphi(f)|X_f)^{-1}$ of $\Gamma(X_f,\sh{O}_X)=\Gamma(D(f),{}^a\vphi_*(\sh{O}_X))$, and we immediately see (by passing from $D(f)$ to $D(fg)$) that this is a well-defined homomorphism of $\sh{O}_S$-modules, hence a morphism $({}^a\vphi,\widetilde{\vphi})$ of ringed spaces.
 In addition, with the same notation, and setting $y={}^a\vphi(x)$ for brevity, we immediately see \sref[0]{0.3.7.1} that we have $\widetilde{\vphi}_x^\sharp(s_y/f_y)=(\vphi(s)_x)(\vphi(f)_x)^{-1}$;
 since the relation $s_y\in\mathfrak{m}_y$ is, by definition, equivalent to $\vphi(s)_x\in\mathfrak{m}_x$, we see that $\widetilde{\vphi}_x^\sharp$ is a \emph{local} homomorphism $\sh{O}_y\to\sh{O}_x$, and we have thus defined a second map $\sigma:\Hom(\Gamma(S,\sh{O}_S),\Gamma(X,\sh{O}_X))\to\mathfrak{L}$, where $\mathfrak{L}$ is the set of the morphisms $(\psi,\theta):(X,\sh{O}_X)\to(S,\sh{O}_S)$ such that $\theta_x^\sharp$ is local for each $x\in X$.
@@ -1137,23 +1137,23 @@ is commutative, and it is the same for the analogous diagram where $\theta_x^\sh
 \end{proof}
 
 \begin{env}[1.8.2]
-\label{1.1.8.2}
+\label{I.1.8.2}
 When $(X,\sh{O}_X)$ and $(Y,\sh{O}_Y)$ are \emph{locally} ringed spaces, we will consider the morphisms $(\psi,\theta):(X,\sh{O}_X)\to(Y,\sh{O}_Y)$ such that, for each $x\in X$, $\theta_x^\sharp$ is a \emph{local} homomorphism $\sh{O}_{\psi(x)}\to\sh{O}_x$.
 Henceforth when we speak
 \oldpage[II]{219}
 of a \emph{morphism of locally ringed spaces}, it will always be a morphism like the above;
 with this definition of morphisms, it is clear that the locally ringed spaces form a \emph{category};
-for any two objects $X$ and $Y$ of this category, $\Hom(X,Y)$ thus denotes the set of morphisms of locally ringed spaces from $X$ to $Y$ (the set denoted $\mathfrak{L}$ in \sref{1.1.8.1});
+for any two objects $X$ and $Y$ of this category, $\Hom(X,Y)$ thus denotes the set of morphisms of locally ringed spaces from $X$ to $Y$ (the set denoted $\mathfrak{L}$ in \sref{I.1.8.1});
 when we consider the set of \emph{morphisms of ringed spaces} from $X$ to $Y$, we will denote it by $\Hom_\text{rs}(X,Y)$ to avoid any confusion.
-The map \sref{1.1.8.1.1} is then written as
+The map \sref{I.1.8.1.1} is then written as
 \[
-  \label{1.1.8.2.1}
+  \label{I.1.8.2.1}
   \rho:\Hom_\text{rs}(X,Y)\to\Hom(\Gamma(Y,\sh{O}_Y),\Gamma(X,\sh{O}_X))
   \tag{1.8.2.1}
 \]
 and its restriction
 \[
-  \label{1.1.8.2.2}
+  \label{I.1.8.2.2}
   \rho':\Hom(X,Y)\to\Hom(\Gamma(Y,\sh{O}_Y),\Gamma(X,\sh{O}_X))
   \tag{1.8.2.2}
 \]
@@ -1161,34 +1161,34 @@ is a \emph{functorial} map in $X$ and $Y$ on the category of locally ringed spac
 \end{env}
 
 \begin{corollary}[1.8.3]
-\label{1.1.8.3}
+\label{I.1.8.3}
 Let $(Y,\sh{O}_Y)$ be a locally ringed space.
-For $Y$ to be an affine scheme, it is necessary and sufficient that, for each locally ringed space $(X,\sh{O}_X)$, the map \sref{1.1.8.2.2} be bijective.
+For $Y$ to be an affine scheme, it is necessary and sufficient that, for each locally ringed space $(X,\sh{O}_X)$, the map \sref{I.1.8.2.2} be bijective.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.1.8.3}
-Proposition~\sref{1.1.8.1} shows that the condition is necessary.
-Conversely, if we suppose that the condition is satisfied, and if we put $A=\Gamma(Y,\sh{O}_Y)$, then it follows from the hypotheses and from \sref{1.1.8.1} that the functors $X\mapsto\Hom(X,Y)$ and $X\mapsto\Hom(X,\Spec(A))$, from the category of locally ringed spaces to that of sets, are \emph{isomorphic}.
+Proposition~\sref{I.1.8.1} shows that the condition is necessary.
+Conversely, if we suppose that the condition is satisfied, and if we put $A=\Gamma(Y,\sh{O}_Y)$, then it follows from the hypotheses and from \sref{I.1.8.1} that the functors $X\mapsto\Hom(X,Y)$ and $X\mapsto\Hom(X,\Spec(A))$, from the category of locally ringed spaces to that of sets, are \emph{isomorphic}.
 We know that this implies the existence of a canonical isomorphism $X\to\Spec(A)$ (cf.~\textbf{0},~8).
 \end{proof}
 
 \begin{env}[1.8.4]
-\label{1.1.8.4}
+\label{I.1.8.4}
 Let $S=\Spec(A)$ be an affine scheme;
 denote by $(S',A')$ the ringed space whose underlying space is \emph{a point} and the structure sheaf $A'$ is the (necessarily simple) sheaf on $S'$ defined by the ring $A$.
 Let $\pi:S\to S'$ be the unique map from $S$ to $S'$;
 on the other hand, we note that, for each open subset $U$ of $S$, we have a canonical map $\Gamma(S',A')=\Gamma(S,\sh{O}_S)\to\Gamma(U,\sh{O}_S)$ which thus defines a \emph{$\pi$-morphism} $\iota:A'\to\sh{O}_S$ of sheaves of rings.
 We have thus canonically defined a \emph{morphism of ringed spaces $i=(\pi,\iota):(S,\sh{O}_S)\to(S',A')$}.
 For each $A$-module $M$, we denote by $M'$ the simple sheaf on $S'$ defined by $M$, which is evidently an $A'$-module.
-It is clear that $i_*(\widetilde{M})=M'$ \sref{1.1.3.7}.
+It is clear that $i_*(\widetilde{M})=M'$ \sref{I.1.3.7}.
 \end{env}
 
 \begin{lemma}[1.8.5]
-\label{1.1.8.5}
-With the notation of \sref{1.1.8.4}, for each $A$-module $M$, the canonical functorial $\sh{O}_S$-homomorphism \sref[0]{4.4.3.3}
+\label{I.1.8.5}
+With the notation of \sref{I.1.8.4}, for each $A$-module $M$, the canonical functorial $\sh{O}_S$-homomorphism \sref[0]{4.4.3.3}
 \[
-\label{1.1.8.5.1}
+\label{I.1.8.5.1}
   i^*(i_*(\widetilde{M}))\to\widetilde{M}
   \tag{1.8.5.1}
 \]
@@ -1197,27 +1197,27 @@ is an isomorphism.
 
 \begin{proof}
 \label{proof-1.1.8.5}
-Indeed, the two parts of \sref{1.1.8.5.1} are right exact (the functor $M\mapsto i_*(\widetilde{M})$ evidently being exact) and commute with direct sums;
+Indeed, the two parts of \sref{I.1.8.5.1} are right exact (the functor $M\mapsto i_*(\widetilde{M})$ evidently being exact) and commute with direct sums;
 by considering $M$ as the cokernel of a homomorphism $A^{(I)}\to A^{(J)}$, we can reduce to proving the lemma for the case where $M=A$, and it is evident in this case.
 \end{proof}
 
 \begin{corollary}[1.8.6]
-\label{1.1.8.6}
+\label{I.1.8.6}
 Let $(X,\sh{O}_X)$ be a ringed space, and $u:X\to S$ a morphism of ringed spaces.
 \oldpage[II]{220}
-For each $A$-module $M$, we have (with the notation of \sref{1.1.8.4}) a canonical functorial isomorphism of $\sh{O}_X$-modules
+For each $A$-module $M$, we have (with the notation of \sref{I.1.8.4}) a canonical functorial isomorphism of $\sh{O}_X$-modules
 \[
-\label{1.1.8.6.1}
+\label{I.1.8.6.1}
   u^*(\widetilde{M})\isoto u^*(i^*(M')).
   \tag{1.8.6.1}
 \]
 \end{corollary}
 
 \begin{corollary}[1.8.7]
-\label{1.1.8.7}
-Under the hypotheses of \sref{1.1.8.6}, we have, for each $A$-module $M$ and each $\sh{O}_X$-module $\sh{F}$, a canonical isomorphism, functorial in $M$ and $\sh{F}$,
+\label{I.1.8.7}
+Under the hypotheses of \sref{I.1.8.6}, we have, for each $A$-module $M$ and each $\sh{O}_X$-module $\sh{F}$, a canonical isomorphism, functorial in $M$ and $\sh{F}$,
 \[
-\label{1.1.8.7.1}
+\label{I.1.8.7.1}
   \Hom_{\sh{O}_S}(\widetilde{M},u_*(\sh{F}))\isoto\Hom_A(M,\Gamma(X,\sh{F})).
   \tag{1.8.7.1}
 \]
@@ -1225,29 +1225,29 @@ Under the hypotheses of \sref{1.1.8.6}, we have, for each $A$-module $M$ and eac
 
 \begin{proof}
 \label{proof-1.1.8.7}
-We have, according to \sref[0]{0.4.4.3} and Lemma~\sref{1.1.8.5}, a canonical
+We have, according to \sref[0]{0.4.4.3} and Lemma~\sref{I.1.8.5}, a canonical
 isomorphism of bifunctors
 \[
   \Hom_{\sh{O}_S}(\widetilde{M},u_*(\sh{F}))\isoto\Hom_{A'}(M',i_*(u_*(\sh{F})))
 \]
 and it is clear that the right hand side is exactly $\Hom_A(M,\Gamma(X,\sh{F}))$.
-We note that the canonical homomorphism \sref{1.1.8.7.1} sends each $\sh{O}_S$-homomorphism $h:\widetilde{M}\to u_*(\sh{F})$ (in other words, each $u$-morphism $\widetilde{M}\to\sh{F}$) to the $A$-homomorphism $\Gamma(h):M\to\Gamma(S,u_*(\sh{F}))=\Gamma(X,\sh{F})$.
+We note that the canonical homomorphism \sref{I.1.8.7.1} sends each $\sh{O}_S$-homomorphism $h:\widetilde{M}\to u_*(\sh{F})$ (in other words, each $u$-morphism $\widetilde{M}\to\sh{F}$) to the $A$-homomorphism $\Gamma(h):M\to\Gamma(S,u_*(\sh{F}))=\Gamma(X,\sh{F})$.
 \end{proof}
 
 \begin{env}[1.8.8]
-\label{1.1.8.8}
-With the notation of \sref{1.1.8.4}, it is clear \sref[0]{0.4.1.1} that each morphism of ringed spaces $(\psi,\theta):X\to S'$ is equivalent to the data of a ring homomorphism $A\to\Gamma(X,\sh{O}_X)$.
-We can thus interpret Proposition~\sref{1.1.8.1} as defining a canonical bijection $\Hom(X,S)\isoto\Hom(X,S')$ (where we understand that the right-hand side is the collection of morphisms of ringed spaces, since in general $A$ is not a local ring).
-More generally, if $X$ and $Y$ are locally ringed spaces, and if $(Y',A')$ is the ringed space whose underlying space is a point and whose sheaf of rings $A'$ is the simple sheaf defined by the ring $\Gamma(Y,\sh{O}_Y)$, we can interpret \sref{1.1.8.2.1} as a map
+\label{I.1.8.8}
+With the notation of \sref{I.1.8.4}, it is clear \sref[0]{0.4.1.1} that each morphism of ringed spaces $(\psi,\theta):X\to S'$ is equivalent to the data of a ring homomorphism $A\to\Gamma(X,\sh{O}_X)$.
+We can thus interpret Proposition~\sref{I.1.8.1} as defining a canonical bijection $\Hom(X,S)\isoto\Hom(X,S')$ (where we understand that the right-hand side is the collection of morphisms of ringed spaces, since in general $A$ is not a local ring).
+More generally, if $X$ and $Y$ are locally ringed spaces, and if $(Y',A')$ is the ringed space whose underlying space is a point and whose sheaf of rings $A'$ is the simple sheaf defined by the ring $\Gamma(Y,\sh{O}_Y)$, we can interpret \sref{I.1.8.2.1} as a map
 \[
-  \label{1.1.8.8.1}
+  \label{I.1.8.8.1}
   \rho:\Hom_\text{rs}(X,Y)\to\Hom(X,Y').
   \tag{1.8.8.1}
 \]
-The result of Corollary~\sref{1.1.8.3} is interpreted by saying that affine schemes are characterized among locally ringed spaces as those for which the restriction of $\rho$ to
+The result of Corollary~\sref{I.1.8.3} is interpreted by saying that affine schemes are characterized among locally ringed spaces as those for which the restriction of $\rho$ to
 $\Hom(X,Y)$:
 \[
-  \label{1.1.8.8.2}
+  \label{I.1.8.8.2}
   \rho':\Hom(X,Y)\to\Hom(X,Y')
   \tag{1.8.8.2}
 \]
@@ -1257,14 +1257,14 @@ this will be the starting point for a ``relative'' theory of preschemes over any
 \end{env}
 
 \begin{env}[1.8.9]
-\label{1.1.8.9}
+\label{I.1.8.9}
 We can consider the pairs $(X,\sh{F})$ consisting of a locally ringed space $X$ and an $\sh{O}_X$-module $\sh{F}$ as forming a category, a \emph{morphism} in this category being a pair $(u,h)$ consisting of a morphism of locally ringed spaces
 \oldpage[II]{221}
 $u:X\to Y$ and a $u$-morphism $h:\sh{G}\to\sh{F}$ of modules;
 these morphisms (for $(X,\sh{F})$ and $(Y,\sh{G})$ fixed) form a set which we denote by $\Hom((X,\sh{F}),(Y,\sh{G}))$;
 the map $(u,h)\mapsto(\rho'(u),\Gamma(h))$ is a canonical map
 \[
-  \label{1.1.8.9.1}
+  \label{I.1.8.9.1}
   \Hom((X,\sh{F}),(Y,\sh{G}))\to\Hom((\Gamma(Y,\sh{O}_Y),\Gamma(Y,\sh{G})),(\Gamma(X,\sh{O}_X),\Gamma(X,\sh{F})))
   \tag{1.8.9.1}
 \]
@@ -1272,18 +1272,18 @@ the map $(u,h)\mapsto(\rho'(u),\Gamma(h))$ is a canonical map
 \end{env}
 
 \begin{corollary}[1.8.10]
-\label{1.1.8.10}
+\label{I.1.8.10}
 Let $Y$ be a locally ringed space, and $\sh{G}$ an $\sh{O}_Y$-module.
-For $Y$ to be an affine scheme and $\sh{G}$ to be a quasi-coherent $\sh{O}_Y$-module, it is necessary and sufficient that, for each pair $(X,\sh{F})$ consisting of a locally ringed space $X$ and an $\sh{O}_X$-module $\sh{F}$, the canonical map \sref{1.1.8.9.1} be bijective.
+For $Y$ to be an affine scheme and $\sh{G}$ to be a quasi-coherent $\sh{O}_Y$-module, it is necessary and sufficient that, for each pair $(X,\sh{F})$ consisting of a locally ringed space $X$ and an $\sh{O}_X$-module $\sh{F}$, the canonical map \sref{I.1.8.9.1} be bijective.
 \end{corollary}
 
-We leave the proof, which is modelled on that of \sref{1.1.8.3}, using \sref{1.1.8.1} and \sref{1.1.8.7}, to the reader.
+We leave the proof, which is modelled on that of \sref{I.1.8.3}, using \sref{I.1.8.1} and \sref{I.1.8.7}, to the reader.
 
 \begin{remark}[1.8.11]
-\label{1.1.8.11}
-The statements \sref{1.1.7.3}, \sref{1.1.7.4}, and \sref{1.2.2.4} are particular cases of \sref{1.1.8.1}, as well as the definition in \sref{1.1.6.1};
-similarly, \sref{1.2.2.5} follows from \sref{1.1.8.7}.
-Corollary~\sref{1.1.8.7} also implies \sref{1.1.6.3} (and, as a result, \sref{1.1.6.4}) as a particular case, since if $X$ is an affine scheme and $\Gamma(X,\sh{F})=N$, then the functors $M\mapsto\Hom_{\sh{O}_S}(\widetilde{M},u_*(\widetilde{N}))$ and $M\mapsto\Hom_{\sh{O}_S}(\widetilde{M},(N_{[\vphi]})^\sim)$ (where $\vphi:A\to\Gamma(X,\sh{O}_X)$ corresponds to $u$) are isomorphic, by Corollaries~\sref{1.1.8.7} and \sref{1.1.3.8}.
-Finally, \sref{1.1.6.5} (and, as a result, \sref{1.1.6.6}) follow from \sref{1.1.8.6}, and the fact that, for each $f\in A$, the $A_f$-modules $N'\otimes_{A'}A_f$ and $(N'\otimes_{A'}A)_f$ (with the notation of \sref{1.1.6.5}) are canonically isomorphic.
+\label{I.1.8.11}
+The statements \sref{I.1.7.3}, \sref{I.1.7.4}, and \sref{I.2.2.4} are particular cases of \sref{I.1.8.1}, as well as the definition in \sref{I.1.6.1};
+similarly, \sref{I.2.2.5} follows from \sref{I.1.8.7}.
+Corollary~\sref{I.1.8.7} also implies \sref{I.1.6.3} (and, as a result, \sref{I.1.6.4}) as a particular case, since if $X$ is an affine scheme and $\Gamma(X,\sh{F})=N$, then the functors $M\mapsto\Hom_{\sh{O}_S}(\widetilde{M},u_*(\widetilde{N}))$ and $M\mapsto\Hom_{\sh{O}_S}(\widetilde{M},(N_{[\vphi]})^\sim)$ (where $\vphi:A\to\Gamma(X,\sh{O}_X)$ corresponds to $u$) are isomorphic, by Corollaries~\sref{I.1.8.7} and \sref{I.1.3.8}.
+Finally, \sref{I.1.6.5} (and, as a result, \sref{I.1.6.6}) follow from \sref{I.1.8.6}, and the fact that, for each $f\in A$, the $A_f$-modules $N'\otimes_{A'}A_f$ and $(N'\otimes_{A'}A)_f$ (with the notation of \sref{I.1.6.5}) are canonically isomorphic.
 \end{remark}
 

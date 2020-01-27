@@ -1,18 +1,18 @@
 \section{Rational maps}
-\label{section:1.7}
+\label{section:I.7}
 
 \subsection{Rational maps and rational functions}
-\label{subsection:1.7.1}
+\label{subsection:I.7.1}
 
 \begin{env}[7.1.1]
-\label{1.7.1.1}
+\label{I.7.1.1}
 Let $X$ and $Y$ be preschemes, $U$ and $V$ dense open subsets of $X$, and $f$ (resp. $g$) a morphism from $U$ (resp. $V$) to $Y$; we say that $f$ and $g$ are \emph{equivalent} if they agree on a dense open subset of $U\cap V$.
 Since a finite intersection of dense open subsets of $X$ is a dense open subset of $X$, it is clear that this relation is an \emph{equivalence relation}.
 \end{env}
 
 \begin{definition}[7.1.2]
-\label{1.7.1.2}
-Given preschemes $X$ and $Y$, we define a rational map from $X$ to $Y$ to be an equivalence class of morphisms from a dense open subset of $X$ to a dense open subset of $Y$, under the equivalence relation defined in \sref{1.7.1.1}.
+\label{I.7.1.2}
+Given preschemes $X$ and $Y$, we define a rational map from $X$ to $Y$ to be an equivalence class of morphisms from a dense open subset of $X$ to a dense open subset of $Y$, under the equivalence relation defined in \sref{I.7.1.1}.
 If $X$ and $Y$ are $S$-preschemes, we say that such a class is a rational $S$-map if there exists a representative of the class that is also an $S$-morphism.
 We define a rational $S$-section of $X$ to be any rational $S$-map from $S$ to $X$.
 We define a rational function on a prescheme $X$ to be any rational $X$-section on the $X$-prescheme $X\otimes_{\bb{Z}}\bb{Z}[T]$ (where $T$ is an indeterminate).
@@ -23,17 +23,17 @@ Let $f$ be a rational map from $X$ to $Y$, and $U$ an open subset of $X$; if $f_
 
 If, to every $S$-morphism $f:X\to Y$, we take the corresponding rational $S$-map to which $f$ belongs, we obtain a canonical map from $\Hom_S(X,Y)$ to the set of rational $S$-maps from $X$ to $Y$.
 We denote by $\Gamma_\mathrm{rat}(X/Y)$ the set of rational $Y$-sections on $X$, and we thus have a canonical map $\Gamma(X/Y)\to\Gamma_\mathrm{rat}(X/Y)$.
-It is also clear that, if $X$ and $Y$ are $S$-preschemes, then the set of rational $S$-maps from $X$ to $Y$ is canonically identified with $\Gamma_\mathrm{rat}((X\times_S Y)/X)$ \sref{1.3.3.14}.
+It is also clear that, if $X$ and $Y$ are $S$-preschemes, then the set of rational $S$-maps from $X$ to $Y$ is canonically identified with $\Gamma_\mathrm{rat}((X\times_S Y)/X)$ \sref{I.3.3.14}.
 \end{definition}
 
 \begin{env}[7.1.3]
-\label{1.7.1.3}
-It also follows from \sref{1.7.1.2} and \sref{1.3.3.14} that the rational functions on $X$ are canonically identified with \emph{equivalence classes of sections of the structure sheaf $\sh{O}_X$} over dense open subsets of $X$, where two such sections are equivalent if the agree on some dense open subset of $X$ contained inside the intersection of the subsets on which they are defined.
+\label{I.7.1.3}
+It also follows from \sref{I.7.1.2} and \sref{I.3.3.14} that the rational functions on $X$ are canonically identified with \emph{equivalence classes of sections of the structure sheaf $\sh{O}_X$} over dense open subsets of $X$, where two such sections are equivalent if the agree on some dense open subset of $X$ contained inside the intersection of the subsets on which they are defined.
 In particular, it follows that the rational functions on $X$ form a \emph{ring} $R(X)$.
 \end{env}
 
 \begin{env}[7.1.4]
-\label{1.7.1.4}
+\label{I.7.1.4}
 When $X$ is an \emph{irreducible} prescheme, every nonempty open subset of $X$ is dense in $X$; so we can say that the nonempty open subsets of $X$ are the \emph{open neighbourhoods of the generic point} $x$ of $X$.
 To say that two morphisms from nonempty open subsets of $X$ to $Y$ are equivalent thus means, in this case, that they have the \emph{same germ} at the point $x$.
 In other words, the rational maps (resp. rational $S$-maps) $X\to Y$ are identified with the \emph{germs of morphisms} (resp. \emph{$S$-morphisms}) from nonempty open subsets of $X$ to $Y$ at the generic point $x$ of $X$.
@@ -41,7 +41,7 @@ In particular:
 \end{env}
 
 \begin{proposition}[7.1.5]
-\label{1.7.1.5}
+\label{I.7.1.5}
 If $X$ is an irreducible prescheme, then the ring $R(X)$ of rational maps on $X$ is canonically identified with the local ring $\sh{O}_x$ of the generic point $x$ of $X$.
 It is a local ring of dimension~0, and thus a local Artinian ring when $X$ is Noetherian; it is a field when $X$ is integral, and, when $X$ is further an affine scheme, it is identified with the field of fractions of $A(X)$.
 \end{proposition}
@@ -56,7 +56,7 @@ Finally, if $A$ is Noetherian, we know (\cite[p.~127, cor.~4]{I-11}) that $\math
 If $X$ is \emph{integral}, then the ring $\sh{O}_z$ is integral for all $z\in X$; every affine open subset $U$ containing $z$ also contains $x$, and $R(U)$, being equal to the field of fractions of $A(U)$, is identified with $R(X)$; we thus conclude that $R(X)$ can also be identified with the \emph{field of fractions of $\sh{O}_z$}: the canonical identification of $\sh{O}_z$ to a subring of $R(X)$ consists of associating, to every germ of a section $s\in\sh{O}_z$, the unique rational function on $X$, class of a section of $\sh{O}_X$, (necessarily defined on a dense open subset of $X$) having $s$ as its germ at the point $z$.
 
 \begin{env}[7.1.6]
-\label{1.7.1.6}
+\label{I.7.1.6}
 Now suppose that $X$ has a \emph{finite} number of irreducible components $X_i$ ($1\leq i\leq n$) (which will be the case whenever the underlying space of $X$ is \emph{Noetherian}); let $X'_i$ be the open subset of $X$ given by the complement of the $X_j\cap X_i$ for $j\neq i$ inside $X_i$; $X'_i$ is irreducible, its generic point $x_i$ is the generic point of $X_i$, and the $X'_i$ are pairwise disjoint, with their union being dense in $X$ \sref[0]{0.2.1.6}.
 For every dense open subset $U$ of $X$, $U_i=U\cap X'_i$ is a nonempty dense open subset of $X'_i$, with the $U_i$ being pairwise disjoint, and so $U'=\bigcup_i U'_i$ is dense in $X$.
 Giving a morphism from $U'$ to $Y$ consists of giving (arbitrarily) a morphism from each of the $U_i$ to $Y$.
@@ -64,26 +64,26 @@ Giving a morphism from $U'$ to $Y$ consists of giving (arbitrarily) a morphism f
 
 Thus:
 \begin{proposition}[7.1.7]
-\label{1.7.1.7}
+\label{I.7.1.7}
 Let $X$ and $Y$ be two preschemes (resp. $S$-preschemes) such that $X$ has a finite number of irreducible components $X_i$, with generic points $x_i$ ($1\leq i\leq n$).
 If $R_i$ is the set of germs of morphisms (resp. $S$-morphisms) from open subsets of $X$ to $Y$ at the point $x_i$, then the set of rational maps (resp. rational $S$-maps) from $X$ to $Y$ can be identified with the product of the $R_i$ ($1\leq i\leq n$).
 \end{proposition}
 
 \begin{corollary}[7.1.8]
-\label{1.7.1.8}
+\label{I.7.1.8}
 Let $X$ be a Noetherian prescheme.
 The ring of rational functions on $X$ is an Artinian ring, whose local components are the rings $\sh{O}_{x_i}$ of the generic points $x_i$ of the irreducible components of $X$.
 \end{corollary}
 
 \begin{corollary}[7.1.9]
-\label{1.7.1.9}
+\label{I.7.1.9}
 Let $A$ be a Noetherian ring, and $X=\Spec(A)$.
 If $Q$ is the complement of the union of the minimal prime ideals of $A$, then the ring of rational functions on $X$ can be canonically identified with the ring of fractions $Q^{-1}A$.
 \end{corollary}
 
 This will follow from the following lemma:
 \begin{lemma}[7.1.9.1]
-\label{1.7.1.9.1}
+\label{I.7.1.9.1}
 For an element $f\in A$ to be such that $D(f)$ is dense in $X$, it is necessary and sufficient that $f\in Q$; every dense open subset of $X$ contains an open subset of the form $D(f)$, where $f\in Q$.
 \end{lemma}
 
@@ -94,14 +94,14 @@ For the other claim, if $U$ is a dense open subset of $X$, the complement of $U$
 \end{proof}
 
 \begin{env}[7.1.10]
-\label{1.7.1.10}
+\label{I.7.1.10}
 Suppose again that $X$ is irreducible, with generic point $x$.
-Since every nonempty open subset $U$ of $X$ contains $x$, and thus also contains every $z\in X$ such that $x\in\overline{\{z\}}$, every morphism $U\to Y$ can be composed with the canonical morphism $\Spec(\sh{O}_x)\to X$ \sref{1.2.4.1}; and any two morphisms into $Y$ from two nonempty open subsets of $X$ which agree on a nonempty open subset of $X$ give, by composition, the same morphism $\Spec(\sh{O}_x)\to Y$.
+Since every nonempty open subset $U$ of $X$ contains $x$, and thus also contains every $z\in X$ such that $x\in\overline{\{z\}}$, every morphism $U\to Y$ can be composed with the canonical morphism $\Spec(\sh{O}_x)\to X$ \sref{I.2.4.1}; and any two morphisms into $Y$ from two nonempty open subsets of $X$ which agree on a nonempty open subset of $X$ give, by composition, the same morphism $\Spec(\sh{O}_x)\to Y$.
 In other words, to every rational map from $X$ to $Y$ there is a corresponding well-defined morphism $\Spec(\sh{O}_x)\to Y$.
 \end{env}
 
 \begin{proposition}[7.1.11]
-\label{1.7.1.11}
+\label{I.7.1.11}
 Let $X$ and $Y$ be two $S$-preschemes; suppose that $X$ is irreducible with generic point $x$, and that $Y$ is of finite type over $S$.
 Any two rational $S$-maps from $X$ to $Y$ that correspond to the same $S$-morphism $\Spec(\sh{O}_x)\to Y$ are then identical.
 If we further suppose $S$ to be locally Noetherian, then every $S$-morphism from $\Spec(\sh{O}_x)$ to $Y$ corresponds to exactly one rational $S$-map from $X$ to $Y$.
@@ -109,36 +109,36 @@ If we further suppose $S$ to be locally Noetherian, then every $S$-morphism from
 
 \begin{proof}
 \label{proof-1.7.1.11}
-Taking into account that every nonempty subset of $X$ is dense in $X$, this follows from \sref{1.6.5.1}.
+Taking into account that every nonempty subset of $X$ is dense in $X$, this follows from \sref{I.6.5.1}.
 \end{proof}
 
 \begin{corollary}[7.1.12]
-\label{1.7.1.12}
-Suppose that $S$ is locally Noetherian, and that the other hypotheses of \sref{1.7.1.11} are satisfied.
+\label{I.7.1.12}
+Suppose that $S$ is locally Noetherian, and that the other hypotheses of \sref{I.7.1.11} are satisfied.
 The rational $S$-maps from $X$ to $Y$ can then be identified with points of the $S$-prescheme $Y$, with values in the $S$-prescheme $\Spec(\sh{O}_x)$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.7.1.12}
-This is nothing but \sref{1.7.1.11}, with the terminology introduced in \sref{1.3.4.1}.
+This is nothing but \sref{I.7.1.11}, with the terminology introduced in \sref{I.3.4.1}.
 \end{proof}
 
 \begin{corollary}[7.1.13]
-\label{1.7.1.13}
-Suppose that the conditions of \sref{1.7.1.12} are satisfied.
+\label{I.7.1.13}
+Suppose that the conditions of \sref{I.7.1.12} are satisfied.
 Let $s$ be the image of $x$ in $S$.
 The data of a rational $S$-map from $X$ to $Y$ is equivalent to the data of a point $y$ of $Y$ over $s$ along with a local $\sh{O}_s$-homomorphism $\sh{O}_y\to\sh{O}_x=R(X)$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.7.1.13}
-This follows from \sref{1.7.1.11} and \sref{1.2.4.4}.
+This follows from \sref{I.7.1.11} and \sref{I.2.4.4}.
 \end{proof}
 
 In particular:
 \begin{corollary}[7.1.14]
-\label{1.7.1.14}
-Under the conditions of \sref{1.7.1.12}, rational $S$-maps from $X$ to $Y$ depend only (for any given $Y$) on the $S$-prescheme $\Spec(\sh{O}_x)$, and, in particular, remain the same whenever $X$ is replaced by $\Spec(\sh{O}_z)$, for any $z\in X$.
+\label{I.7.1.14}
+Under the conditions of \sref{I.7.1.12}, rational $S$-maps from $X$ to $Y$ depend only (for any given $Y$) on the $S$-prescheme $\Spec(\sh{O}_x)$, and, in particular, remain the same whenever $X$ is replaced by $\Spec(\sh{O}_z)$, for any $z\in X$.
 \end{corollary}
 
 \begin{proof}
@@ -146,38 +146,38 @@ Under the conditions of \sref{1.7.1.12}, rational $S$-maps from $X$ to $Y$ depen
 Since $z\in\overline{\{x\}}$, $x$ is the generic point of $Z=\Spec(\sh{O}_z)$, and $\sh{O}_{X,x}=\sh{O}_{Z,z}$.
 \end{proof}
 
-When $X$ is integral, $R(X)=\sh{O}_x=\kres(x)$ is a field \sref{1.7.1.5}; the preceding corollaries then specialize to the following:
+When $X$ is integral, $R(X)=\sh{O}_x=\kres(x)$ is a field \sref{I.7.1.5}; the preceding corollaries then specialize to the following:
 \begin{corollary}[7.1.15]
-\label{1.7.1.15}
-Suppose that the conditions of \sref{1.7.1.12} are satisfied, and further that $X$ is integral.
+\label{I.7.1.15}
+Suppose that the conditions of \sref{I.7.1.12} are satisfied, and further that $X$ is integral.
 Let $s$ be the image of $x$ in $S$.
 Then rational $S$-maps from $X$ to $Y$ can be identified with the geometric points of $Y\otimes_S\kres(s)$ with values in the extension $R(X)$ of $\kres(s)$, or, in other words, every such map is equivalent to the data of a point $y\in Y$ above $s$ along with a $\kres(s)$-monomorphism from $\kres(y)$ to $\kres(x)=R(X)$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.7.1.15}
-The points of $Y$ above $s$ are identified with the points of $Y\otimes_S\kres(s)$ \sref{1.3.6.3}, and the local $\sh{O}_s$-homomorphisms $\sh{O}_y\to R(X)$ with the $\kres(s)$-monomorphisms $\kres(y)\to R(X)$.
+The points of $Y$ above $s$ are identified with the points of $Y\otimes_S\kres(s)$ \sref{I.3.6.3}, and the local $\sh{O}_s$-homomorphisms $\sh{O}_y\to R(X)$ with the $\kres(s)$-monomorphisms $\kres(y)\to R(X)$.
 \end{proof}
 
 More precisely:
 \begin{corollary}[7.1.16]
-\label{1.7.1.16}
-Let $k$ be a field, and $X$ and $Y$ two algebraic preschemes over $k$ \sref{1.6.4.1}; suppose further that $X$ is integral.
-Then the rational $k$-maps from $X$ to $Y$ can be identified with the geometric points of $Y$ with values in the extension $R(X)$ of $k$ \sref{1.3.4.4}.
+\label{I.7.1.16}
+Let $k$ be a field, and $X$ and $Y$ two algebraic preschemes over $k$ \sref{I.6.4.1}; suppose further that $X$ is integral.
+Then the rational $k$-maps from $X$ to $Y$ can be identified with the geometric points of $Y$ with values in the extension $R(X)$ of $k$ \sref{I.3.4.4}.
 \end{corollary}
 
 \subsection{Domain of definition of a rational map}
-\label{subsection:1.7.2}
+\label{subsection:I.7.2}
 
 \begin{env}[7.2.1]
-\label{1.7.2.1}
+\label{I.7.2.1}
 Let $X$ and $Y$ be preschemes, and $f$ rational map from $X$ to $Y$.
 We say that $f$ is \emph{defined at a point $x\in X$} if there exists a dense open subset $U$ of $X$ that contains $x$, and a morphism $U\to Y$ belonging to the equivalence class of $f$.
 The set of points $x\in X$ where $f$ is defined is called the \emph{domain of definition} of $f$; it is clear that it is an open dense subset of $X$.
 \end{env}
 
 \begin{proposition}[7.2.2]
-\label{1.7.2.2}
+\label{I.7.2.2}
 Let
 \oldpage[I]{159}
 $X$ and $Y$ be $S$-preschemes such that $X$ is reduced and $Y$ is separated over $S$.
@@ -189,47 +189,47 @@ Then there exists exactly one $S$-morphism $U_0\to Y$ belonging to the class of 
 Since, for every morphism $U\to Y$ belonging to the class of $f$, we necessarily have $U\subset U_0$, it is clear that the proposition will be a consequence of the following:
 
 \begin{lemma}[7.2.2.1]
-\label{1.7.2.2.1}
-Under the hypotheses of \sref{1.7.2.2}, let $U_1$ and $U_2$ be two dense open subsets of $X$, and $f_i:U_i\to Y$ ($i=1,2$) two $S$-morphisms such that there exists an open subset $V\subset U_1\cap U_2$, dense in $X$, and on which $f_1$ and $f_2$ agree.
+\label{I.7.2.2.1}
+Under the hypotheses of \sref{I.7.2.2}, let $U_1$ and $U_2$ be two dense open subsets of $X$, and $f_i:U_i\to Y$ ($i=1,2$) two $S$-morphisms such that there exists an open subset $V\subset U_1\cap U_2$, dense in $X$, and on which $f_1$ and $f_2$ agree.
 Then $f_1$ and $f_2$ agree on $U_1\cap U_2$.
 \end{lemma}
 
 \begin{proof}
 \label{proof-1.7.2.2.1}
 We can clearly restrict to the case where $X=U_1=U_2$.
-Since $X$ (and thus $V$) is reduced, $X$ is the smallest closed subprescheme of $X$ containing $V$ \sref{1.5.2.2}.
-Let $g=(f_1,f_2)_S:X\to Y\times_S Y$; since, by hypothesis, the diagonal $T=\Delta_Y(Y)$ is a closed subprescheme of $Y\times_S Y$, $Z=g^{-1}(T)$ is a closed subprescheme of $X$ \sref{1.4.4.1}.
+Since $X$ (and thus $V$) is reduced, $X$ is the smallest closed subprescheme of $X$ containing $V$ \sref{I.5.2.2}.
+Let $g=(f_1,f_2)_S:X\to Y\times_S Y$; since, by hypothesis, the diagonal $T=\Delta_Y(Y)$ is a closed subprescheme of $Y\times_S Y$, $Z=g^{-1}(T)$ is a closed subprescheme of $X$ \sref{I.4.4.1}.
 If $h:V\to Y$ is the common restriction of $f_1$ and $f_2$ to $V$, then the restriction of $g$ to $V$ is $g'=(h,h)_S$, which factors as $g'=\Delta_Y\circ h$; since $\Delta_Y^{-1}(T)=Y$, we have that $g'^{-1}(T)=V$, and so $Z$ is a closed subprescheme of $X$ inducing $V$, thus containing $V$, which implies that $Z=X$.
-From the equation $g^{-1}(T)=X$, we deduce \sref{1.4.4.1} that $g$ factors as $\Delta_Y\circ f$, where $f$ is a morphism $X\to Y$, which implies, by the definition of the diagonal morphism, that $f_1=f_2=f$.
+From the equation $g^{-1}(T)=X$, we deduce \sref{I.4.4.1} that $g$ factors as $\Delta_Y\circ f$, where $f$ is a morphism $X\to Y$, which implies, by the definition of the diagonal morphism, that $f_1=f_2=f$.
 \end{proof}
 
-It is clear that the morphism $U_0\to Y$ defined in \sref{1.7.2.2} is the unique morphism of the class $f$ that \emph{cannot be extended} to a morphism from an open subset of $X$ that strictly contains $U_0$.
-\emph{Under the hypotheses of \sref{1.7.2.2}}, we can thus \emph{identify} the rational maps from $X$ to $Y$ with the \emph{non-extendible} (to strictly larger open subsets) morphisms from dense open subsets of $X$ to $Y$.
-With this identification, Proposition~\sref{1.7.2.2} implies:
+It is clear that the morphism $U_0\to Y$ defined in \sref{I.7.2.2} is the unique morphism of the class $f$ that \emph{cannot be extended} to a morphism from an open subset of $X$ that strictly contains $U_0$.
+\emph{Under the hypotheses of \sref{I.7.2.2}}, we can thus \emph{identify} the rational maps from $X$ to $Y$ with the \emph{non-extendible} (to strictly larger open subsets) morphisms from dense open subsets of $X$ to $Y$.
+With this identification, Proposition~\sref{I.7.2.2} implies:
 \begin{corollary}[7.2.3]
-\label{1.7.2.3}
-With the hypotheses from \sref{1.7.2.2} on $X$ and $Y$, let $U$ be a dense open subset of $X$.
+\label{I.7.2.3}
+With the hypotheses from \sref{I.7.2.2} on $X$ and $Y$, let $U$ be a dense open subset of $X$.
 Then there exists a canonical bijective correspondence between $S$-morphisms from $U$ to $Y$ and rational $S$-maps from $X$ to $Y$ that are defined at all points of $U$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.7.2.3}
-By \sref{1.7.2.2}, for every $S$-morphism $f$ from $U$ to $Y$, there exists exactly one rational $S$-map $\overline{f}$ from $X$ to $Y$ which extends $f$.
+By \sref{I.7.2.2}, for every $S$-morphism $f$ from $U$ to $Y$, there exists exactly one rational $S$-map $\overline{f}$ from $X$ to $Y$ which extends $f$.
 \end{proof}
 
 \begin{corollary}[7.2.4]
-\label{1.7.2.4}
+\label{I.7.2.4}
 Let $S$ be a scheme, $X$ a reduced $S$-prescheme, $Y$ an $S$-scheme, and $f:U\to Y$ an $S$-morphism from a dense open subset $U$ of $X$ to $Y$.
 If $\overline{f}$ is the rational $\bb{Z}$-map from $X$ to $Y$ that extends $f$, then $\overline{f}$ is an $S$-morphism (and thus the rational $S$-map from $X$ to $Y$ that extends $f$).
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.7.2.4}
-Indeed, if $\vphi:X\to S$ and $\psi:Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, then it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, but this follows from \sref{1.7.2.2.1}, since $f$ is an $S$-morphism.
+Indeed, if $\vphi:X\to S$ and $\psi:Y\to S$ are the structure morphisms, $U_0$ the domain of definition of $\overline{f}$, and $j$ the injection $U_0\to X$, then it suffices to show that $\psi\circ\overline{f}=\vphi\circ j$, but this follows from \sref{I.7.2.2.1}, since $f$ is an $S$-morphism.
 \end{proof}
 
 \begin{corollary}[7.2.5]
-\label{1.7.2.5}
+\label{I.7.2.5}
 Let $X$ and $Y$ be two $S$-preschemes; suppose that $X$ is reduced, and that $X$ and $Y$ are separated over $S$.
 Let $p:Y\to X$ be an $S$-morphism (making $Y$ an $X$-prescheme), $U$ a dense open subset of $X$, and $f$ a $U$-section of $Y$; then the rational map $\overline{f}$ from $X$ to $Y$ extending $f$ is a rational $X$-section of $Y$.
 \end{corollary}
@@ -238,37 +238,37 @@ Let $p:Y\to X$ be an $S$-morphism (making $Y$ an $X$-prescheme), $U$ a dense ope
 \label{proof-1.7.2.5}
 We
 \oldpage[I]{160}
-have to show that $p\circ\overline{f}$ is the identity on the domain of definition of $\overline{f}$; since $X$ is separated over $S$, this again follows from \sref{1.7.2.2.1}.
+have to show that $p\circ\overline{f}$ is the identity on the domain of definition of $\overline{f}$; since $X$ is separated over $S$, this again follows from \sref{I.7.2.2.1}.
 \end{proof}
 
 \begin{corollary}[7.2.6]
-\label{1.7.2.6}
+\label{I.7.2.6}
 Let $X$ be a reduced prescheme, and $U$ a dense open subset of $X$.
 Then there is a canonical bijective correspondence between sections of $\sh{O}_X$ over $U$ and rational functions on $X$ defined at every point of $U$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.7.2.6}
-Taking \sref{1.7.2.3}, \sref{1.7.1.2}, and \sref{1.7.1.3} into account, it suffices to note that the $X$-prescheme $X\otimes_{\bb{Z}}\bb{Z}[T]$ is separated over $X$ \sref{1.5.5.1}[iv].
+Taking \sref{I.7.2.3}, \sref{I.7.1.2}, and \sref{I.7.1.3} into account, it suffices to note that the $X$-prescheme $X\otimes_{\bb{Z}}\bb{Z}[T]$ is separated over $X$ \sref{I.5.5.1}[iv].
 \end{proof}
 
 \begin{corollary}[7.2.7]
-\label{1.7.2.7}
-Let $Y$ be a reduced prescheme, $f:X\to Y$ a separated morphism, $U$ a dense open subset of $Y$, $g:U\to f^{-1}(U)$ a $U$-section of $f^{-1}(U)$, and $Z$ the reduced subprescheme of $X$ that has $\overline{g(U)}$ as its underlying space \sref{1.5.2.1}.
-For $g$ to be the restriction of a $Y$-section of $X$ \emph{(in other words \sref{1.7.2.5}, for the rational map from $Y$ to $X$ extending $g$ to be defined everywhere)}, it is necessary and sufficient for the restriction of $f$ to $Z$ to be an isomorphism from $Z$ to $Y$.
+\label{I.7.2.7}
+Let $Y$ be a reduced prescheme, $f:X\to Y$ a separated morphism, $U$ a dense open subset of $Y$, $g:U\to f^{-1}(U)$ a $U$-section of $f^{-1}(U)$, and $Z$ the reduced subprescheme of $X$ that has $\overline{g(U)}$ as its underlying space \sref{I.5.2.1}.
+For $g$ to be the restriction of a $Y$-section of $X$ \emph{(in other words \sref{I.7.2.5}, for the rational map from $Y$ to $X$ extending $g$ to be defined everywhere)}, it is necessary and sufficient for the restriction of $f$ to $Z$ to be an isomorphism from $Z$ to $Y$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-1.7.2.7}
-The restriction of $f$ to $f^{-1}(U)$ is a separated morphism \sref{1.5.5.1}[i], so $g$ is a closed immersion \sref{1.5.4.6}, and so $g(U)=Z\cap f^{-1}(U)$, and the subprescheme induced by $Z$ on the open subset $g(U)$ of $Z$ is identical to the closed subprescheme of $f^{-1}(U)$ associated to $g$ \sref{1.5.2.1}.
+The restriction of $f$ to $f^{-1}(U)$ is a separated morphism \sref{I.5.5.1}[i], so $g$ is a closed immersion \sref{I.5.4.6}, and so $g(U)=Z\cap f^{-1}(U)$, and the subprescheme induced by $Z$ on the open subset $g(U)$ of $Z$ is identical to the closed subprescheme of $f^{-1}(U)$ associated to $g$ \sref{I.5.2.1}.
 It is then clear that the stated condition is sufficient, because, if satisfied, and if $f_Z:Z\to Y$ is the restriction of $f$ to $Z$, and $\overline{g}:Y\to Z$ is the inverse isomorphism, then $\overline{g}$ extends $g$.
-Conversely, if $g$ is the restriction to $U$ of a $Y$-section $h$ of $X$, then $h$ is a closed immersion \sref{1.5.4.6}, and so $h(Y)$ is closed, and, since it is contained in $Z$, is equal to $Z$, and it follows from \sref{1.5.2.1} that $h$ is necessarily an isomorphism from $Y$ to the closed subprescheme $Z$ of $X$.
+Conversely, if $g$ is the restriction to $U$ of a $Y$-section $h$ of $X$, then $h$ is a closed immersion \sref{I.5.4.6}, and so $h(Y)$ is closed, and, since it is contained in $Z$, is equal to $Z$, and it follows from \sref{I.5.2.1} that $h$ is necessarily an isomorphism from $Y$ to the closed subprescheme $Z$ of $X$.
 \end{proof}
 
 \begin{env}[7.2.8]
-\label{1.7.2.8}
+\label{I.7.2.8}
 Let $X$ and $Y$ be two $S$-preschemes, with $X$ reduced, and $Y$ separated over $S$.
-Let $f$ be a rational $S$-map from $X$ to $Y$, and let $x$ be a point of $X$; we can compose $f$ with the canonical $S$-morphism $\Spec(\sh{O}_x)\to X$ \sref{1.2.4.1} provided that the intersection of $\Spec(\sh{O}_x)$ with the domain of definition of $f$ is dense in $\Spec(\sh{O}_x)$ (identified with the set of $z\in X$ such that $x\in\overline{\{z\}}$ \sref{1.2.4.2}).
+Let $f$ be a rational $S$-map from $X$ to $Y$, and let $x$ be a point of $X$; we can compose $f$ with the canonical $S$-morphism $\Spec(\sh{O}_x)\to X$ \sref{I.2.4.1} provided that the intersection of $\Spec(\sh{O}_x)$ with the domain of definition of $f$ is dense in $\Spec(\sh{O}_x)$ (identified with the set of $z\in X$ such that $x\in\overline{\{z\}}$ \sref{I.2.4.2}).
 This will happen in the follow cases:
 \begin{enumerate}
   \item[1st.] $X$ is \emph{irreducible} (and thus \emph{integral}), because then the generic point $\xi$ of $X$ is the generic point of $\Spec(\sh{O}_x)$; since the domain of definition $U$ of $f$ contains $\xi$, $U\cap\Spec(\sh{O}_x)$ contains $\xi$, and so is dense in $\Spec(\sh{O}_x)$.
@@ -277,7 +277,7 @@ This will happen in the follow cases:
 \end{env}
 
 \begin{lemma}[7.2.8.1]
-\label{1.7.2.8.1}
+\label{I.7.2.8.1}
 Let $X$ be a prescheme whose underlying space is locally Noetherian, and $x$ a point of $X$.
 The irreducible components of $\Spec(\sh{O}_x)$ are the intersections of $\Spec(\sh{O}_x)$ with the irreducible components of $X$ containing $x$.
 For an open subset $U\subset X$ to be such that $U\cap\Spec(\sh{O}_x)$ is dense $\Spec(\sh{O}_x)$, it is necessary and sufficient for it to have a nonempty intersection with the irreducible components of $X$ that contain $x$ \emph{(which will be the case whenever $U$ is \emph{dense} in $X$)}.
@@ -292,44 +292,44 @@ Since the prime ideals of $A_x$ correspond bijectively to the prime ideals of $A
 contained in $\mathfrak{j}_x$ \sref{0.2.1.6}, the minimal prime ideals of $A_x$ correspond to the minimal prime ideals of $A$ that are contained in $\mathfrak{j}_x$, hence the lemma.
 \end{proof}
 
-With this in mind, suppose that we are in one of the two cases mentioned in \sref{1.7.2.8}.
-If $U$ is the domain of definition of the rational $S$-map $f$, then we denote by $f'$ the rational map from $\Spec(\sh{O}_x)$ to $Y$ which agrees (taking~\sref{1.2.4.2} into account) with $f$ on $U\cap\Spec(\sh{O}_x)$; we say that this rational map is \emph{induced by $f$}.
+With this in mind, suppose that we are in one of the two cases mentioned in \sref{I.7.2.8}.
+If $U$ is the domain of definition of the rational $S$-map $f$, then we denote by $f'$ the rational map from $\Spec(\sh{O}_x)$ to $Y$ which agrees (taking~\sref{I.2.4.2} into account) with $f$ on $U\cap\Spec(\sh{O}_x)$; we say that this rational map is \emph{induced by $f$}.
 
 \begin{proposition}[7.2.9]
-\label{1.7.2.9}
+\label{I.7.2.9}
 Let $S$ be a locally Noetherian prescheme, $X$ a reduced $S$-prescheme, and $Y$ an $S$-scheme of finite type.
 Suppose further that $X$ is either irreducible or locally Noetherian.
 Then let $f$ be a rational $S$-map from $X$ to $Y$, and $x$ a point of $X$.
-For $f$ to be defined at a point $x$, it is necessary and sufficient for the rational map $f'$ from $\Spec(\sh{O}_x)$ to $Y$, induced by $f$ \sref{1.7.2.8}, to be a morphism.
+For $f$ to be defined at a point $x$, it is necessary and sufficient for the rational map $f'$ from $\Spec(\sh{O}_x)$ to $Y$, induced by $f$ \sref{I.7.2.8}, to be a morphism.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.7.2.9}
 The condition clearly being necessary (since $\Spec(\sh{O}_x)$ is contained in every open subset containing $x$), we show that it is sufficient.
-By~\sref{1.6.5.1}, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $g$ from $U$ to $Y$ that induces $f'$ on $\Spec(\sh{O}_x)$.
-If $X$ is irreducible, then $U$ is dense in $X$, and, by \sref{1.7.2.3}, we can suppose that $g$ is a rational $S$-map.
-Further, the generic point of $X$ belongs to both $\Spec(\sh{O}_x)$ and the domain of definition of $f$, and so $s$ and $g$ agree at this point, and thus on a nonempty open subset of $X$ \sref{1.6.5.1}.
-But since $f$ and $g$ are rational $S$-maps, they are identical \sref{1.7.2.3}, and so $f$ is defined at $x$.
+By~\sref{I.6.5.1}, there exists an open neighbourhood $U$ of $x$ in $X$, and an $S$-morphism $g$ from $U$ to $Y$ that induces $f'$ on $\Spec(\sh{O}_x)$.
+If $X$ is irreducible, then $U$ is dense in $X$, and, by \sref{I.7.2.3}, we can suppose that $g$ is a rational $S$-map.
+Further, the generic point of $X$ belongs to both $\Spec(\sh{O}_x)$ and the domain of definition of $f$, and so $s$ and $g$ agree at this point, and thus on a nonempty open subset of $X$ \sref{I.6.5.1}.
+But since $f$ and $g$ are rational $S$-maps, they are identical \sref{I.7.2.3}, and so $f$ is defined at $x$.
 
-If we now suppose that $X$ is locally Noetherian, then we can suppose that $U$ is Noetherian; then there are only a finite number of irreducible components $X_i$ of $X$ that contain $x$ \sref{1.7.2.8.1}, and we can suppose that they are the only ones that have a nonempty intersection with $U$, by replacing, if needed, $U$ with a smaller open subset (since there are only a finite number of irreducible components of $X$ that have a nonempty intersection with $U$, because $U$ is Noetherian).
+If we now suppose that $X$ is locally Noetherian, then we can suppose that $U$ is Noetherian; then there are only a finite number of irreducible components $X_i$ of $X$ that contain $x$ \sref{I.7.2.8.1}, and we can suppose that they are the only ones that have a nonempty intersection with $U$, by replacing, if needed, $U$ with a smaller open subset (since there are only a finite number of irreducible components of $X$ that have a nonempty intersection with $U$, because $U$ is Noetherian).
 We then have, as above, that $f$ and $g$ agree on a nonempty open subset of each of the $X_i$.
 Taking into account the fact that each of the $X_i$ is contained in $\overline{U}$, we consider the morphism $f_1$, defined on a dense open subset of $U\cup(X\setmin\overline{U})$, equal to $g$ on $U$, and to $f$ on the intersection of $X\setmin\overline{U}$ with the domain of definition of $f$.
-Since $U\cup(X\setmin\overline{U})$ is dense in $X$, $f_1$ and $f$ agree on a dense open subset of $X$, and since $f$ is a rational map, $f$ is an extension of $f_1$ \sref{1.7.2.3}, and is thus defined at the point $x$.
+Since $U\cup(X\setmin\overline{U})$ is dense in $X$, $f_1$ and $f$ agree on a dense open subset of $X$, and since $f$ is a rational map, $f$ is an extension of $f_1$ \sref{I.7.2.3}, and is thus defined at the point $x$.
 \end{proof}
 
 \subsection{Sheaf of rational functions}
-\label{subsection:1.7.3}
+\label{subsection:I.7.3}
 
 \begin{env}[7.3.1]
-\label{1.7.3.1}
+\label{I.7.3.1}
 Let $X$ be a prescheme.
-For every open subset $U\subset X$, we denote by $R(U)$ the ring of rational functions on $U$ \sref{1.7.1.3}; this is a $\Gamma(U,\sh{O}_X)$-algebra.
+For every open subset $U\subset X$, we denote by $R(U)$ the ring of rational functions on $U$ \sref{I.7.1.3}; this is a $\Gamma(U,\sh{O}_X)$-algebra.
 Further, if $V\subset U$ is a second open subset of $X$, then every section of $\sh{O}_X$ over a dense (in $X$) open subset of $V$ gives, by restriction to $V$, a section over a dense (in $X$) open subset of $V$, and if two sections agree on a dense (in $X$) open subset of $U$, then their restrictions to $V$ agree on a dense (in $X$) open subset of $V$.
 We can thus define a di-homomorphism of algebras $\rho_{V,U}:R(U)\to R(V)$, and it is clear that, if $U\supset V\supset W$ are open subsets of $X$, then we have $\rho_{W,U}=\rho_{W,V}\circ\rho_{V,U}$; the $R(U)$ thus define a \emph{presheaf} of algebras on $X$.
 \end{env}
 
 \begin{definition}[7.3.2]
-\label{1.7.3.2}
+\label{I.7.3.2}
 We
 \oldpage[I]{162}
 define the sheaf of rational functions on a prescheme $X$, denoted by $\sh{R}(X)$, to be the $\sh{O}_X$-algebra associated to the presheaf defined by the $R(U)$.
@@ -338,7 +338,7 @@ define the sheaf of rational functions on a prescheme $X$, denoted by $\sh{R}(X)
 For every prescheme $X$ and open subset $U\subset X$, it is clear that the induced sheaf $\sh{R}(X)|U$ is exactly $\sh{R}(U)$.
 
 \begin{proposition}[7.3.3]
-\label{1.7.3.3}
+\label{I.7.3.3}
 Let $X$ be a prescheme such that the family $(X_\lambda)$ of its irreducible components is locally finite (which is the case whenever the underlying space of $X$ is locally Noetherian).
 Then the $\sh{O}_X$-module $\sh{R}(X)$ is quasi-coherent, and for every open subset $U$ of $X$ that has a nonempty intersection with only finitely many of the components $X_\lambda$, $R(U)$ is equal to $\Gamma(U,\sh{R}(X))$, and can be canonically identified with the direct sum of the local rings of the generic points of the $X_\lambda$ such that $U\cap X_\lambda\neq\emp$.
 \end{proposition}
@@ -346,21 +346,21 @@ Then the $\sh{O}_X$-module $\sh{R}(X)$ is quasi-coherent, and for every open sub
 \begin{proof}
 \label{proof-1.7.3.3}
 We can evidently restrict to the case where $X$ has only a finite number of irreducible components $X_i$, with generic points $x_i$ ($1\leq i\leq n$).
-The fact that $R(U)$ can be canonically identified with the direct sum of the $\sh{O}_{x_i}=R(X_i)$ such that $U\cap X_i\neq\emp$ then follows from \sref{1.7.1.7}.
+The fact that $R(U)$ can be canonically identified with the direct sum of the $\sh{O}_{x_i}=R(X_i)$ such that $U\cap X_i\neq\emp$ then follows from \sref{I.7.1.7}.
 We will show that the presheaf $U\to R(U)$ satisfies the sheaf axioms, which will prove that $R(U)=\Gamma(U,\sh{R}(X))$.
 Indeed, it satisfies (F1) by what has already been discussed.
 To see that it satisfies (F2), consider a cover of an open subset $U$ of $X$ by open subsets $V_\alpha\subset U$; if the $s_\alpha\in R(V_\alpha)$ are such that the restrictions of $s_\alpha$ and $s_\beta$ to $V_\alpha\cap V_\beta$ agree for every pair of indices, then we can conclude that, for every index $i$ such that $U\cap X_i\neq\emp$, the components in $R(X_i)$ of all the $s_\alpha$ such that $V_\alpha\cap X_i\neq\emp$ are all the same; denoting this component by $t_i$, it is clear that the element of $R(U)$ that has the $t_i$ as its components has $s_\alpha$ as its restriction to each $V_\alpha$.
-Finally, to see that $\sh{R}(X)$ is quasi-coherent, we can restrict to the case where $X=\Spec(A)$ is affine; by taking $U$ to be an affine open subset of the form $D(f)$, where $f\in A$, it follows from the above and from Definition~\sref{1.1.3.4} that we have $\sh{R}(X)=\widetilde{M}$, where $M$ is the direct sum of the $A$-modules $A_{x_i}$.
+Finally, to see that $\sh{R}(X)$ is quasi-coherent, we can restrict to the case where $X=\Spec(A)$ is affine; by taking $U$ to be an affine open subset of the form $D(f)$, where $f\in A$, it follows from the above and from Definition~\sref{I.1.3.4} that we have $\sh{R}(X)=\widetilde{M}$, where $M$ is the direct sum of the $A$-modules $A_{x_i}$.
 \end{proof}
 
 \begin{corollary}[7.3.4]
-\label{1.7.3.4}
-Let $X$ be a reduced prescheme that has only a finite number of irreducible components, and let $X_i$ ($1\leq i\leq n$) be the closed reduced preschemes of $X$ that have the irreducible components of $X$ as their underlying spaces \sref{1.5.2.1}.
+\label{I.7.3.4}
+Let $X$ be a reduced prescheme that has only a finite number of irreducible components, and let $X_i$ ($1\leq i\leq n$) be the closed reduced preschemes of $X$ that have the irreducible components of $X$ as their underlying spaces \sref{I.5.2.1}.
 If $h_i$ is the canonical injection $X_i\to X$, then $\sh{R}(X)$ is the direct sum of the $\sh{O}_X$-algebras $(h_i)_*(\sh{R}(X_i))$.
 \end{corollary}
 
 \begin{corollary}[7.3.5]
-\label{1.7.3.5}
+\label{I.7.3.5}
 If $X$ is irreducible, then every quasi-coherent $\sh{R}(X)$-module $\sh{F}$ is a simple sheaf.
 \end{corollary}
 
@@ -370,7 +370,7 @@ It suffices to show that every $x\in X$ admits a neighbourhood $U$ such that $\s
 \end{proof}
 
 \begin{corollary}[7.3.6]
-\label{1.7.3.6}
+\label{I.7.3.6}
 If $X$ is irreducible, then, for every quasi-coherent $\sh{O}_X$-module $\sh{F}$, $\sh{F}\otimes_{\sh{O}_X}\sh{R}(X)$ is a simple sheaf; if, further, $X$ is reduced (and thus integral), then $\sh{F}\otimes_{\sh{O}_X}\sh{R}(X)$ is isomorphic to a sheaf of the form $(\sh{R}(X))^{(I)}$.
 \end{corollary}
 
@@ -380,7 +380,7 @@ The second claim follows from the fact that $R(X)$ is a field.
 \end{proof}
 
 \begin{proposition}[7.3.7]
-\label{1.7.3.7}
+\label{I.7.3.7}
 Suppose that the prescheme $X$ is locally integral or locally Noetherian.
 \oldpage[I]{163}
 Then $\sh{R}(X)$ is a quasi-coherent $\sh{O}_X$-algebra; if, further, $X$ is reduced (which will be the case whenever $X$ is locally integral), then the canonical homomorphism $\sh{O}_X\to\sh{R}(X)$ is injective.
@@ -388,16 +388,16 @@ Then $\sh{R}(X)$ is a quasi-coherent $\sh{O}_X$-algebra; if, further, $X$ is red
 
 \begin{proof}
 \label{proof-1.7.3.7}
-The question being local, the first claim follows from \sref{1.7.3.3}; the second follows from \sref{1.7.2.3}.
+The question being local, the first claim follows from \sref{I.7.3.3}; the second follows from \sref{I.7.2.3}.
 \end{proof}
 
 \begin{env}[7.3.8]
-\label{1.7.3.8}
+\label{I.7.3.8}
 \footnote{\emph{[Trans.] This paragraph was changed entirely in the Errata of EGA~II.}}
-Let $X$ and $Y$ be two \emph{integral} preschemes, which implies that $\sh{R}(X)$ (resp. $\sh{R}(Y)$) is a quasi-coherent $\sh{O}_X$-module (resp. $\sh{O}_Y$-module) \sref{1.7.3.3}.
+Let $X$ and $Y$ be two \emph{integral} preschemes, which implies that $\sh{R}(X)$ (resp. $\sh{R}(Y)$) is a quasi-coherent $\sh{O}_X$-module (resp. $\sh{O}_Y$-module) \sref{I.7.3.3}.
 Let $f:X\to Y$ be a \emph{dominant} morphism; then there exists a canonical homomorphism of $\sh{O}_X$-modules
 \[
-\label{1.7.3.8.1}
+\label{I.7.3.8.1}
   \tau:f^*(\sh{R}(Y))\to\sh{R}(X).
   \tag{7.3.8.1}
 \]
@@ -406,7 +406,7 @@ Let $f:X\to Y$ be a \emph{dominant} morphism; then there exists a canonical homo
 \begin{proof}
 \label{proof-1.7.3.8}
 Suppose first that $X=\Spec(A)$ and $Y=\Spec(B)$ are affine, given by integral rings $A$ and $B$, with $f$ thus corresponding to an injective homomorphism $B\to A$ which extends to a monomorphism $L\to K$ from the field of fractions $L$ of $B$ to the field of fractions $K$ of $A$.
-The homomorphism \sref{1.7.3.8.1} then corresponds to the canonical homomorphism $L\otimes_B A\to K$ \sref{1.1.6.5}.
+The homomorphism \sref{I.7.3.8.1} then corresponds to the canonical homomorphism $L\otimes_B A\to K$ \sref{I.1.6.5}.
 In the general case, for each pair of nonempty affine open sets $U\subset X$ and $V\subset Y$ such that $f(U)\subset V$, we define, as above, a homomorphism $\tau_{U,V}$ and we immediately have that, if $U'\subset U$, $V'\subset V$, $f(U')\subset V'$, then $\tau_{U,V}$ extends $\tau_{U',V'}$, and hence our assertion.
 If $x$ and $y$ are the generic points of $X$ and $Y$ respectively, then we have $f(x)=y$,
 \[
@@ -416,32 +416,32 @@ If $x$ and $y$ are the generic points of $X$ and $Y$ respectively, then we have 
 \end{proof}
 
 \subsection{Torsion sheaves and torsion-free sheaves}
-\label{subsection:1.7.4}
+\label{subsection:I.7.4}
 
 \begin{env}[7.4.1]
-\label{1.7.4.1}
+\label{I.7.4.1}
 Let $X$ be an \emph{integral} scheme.
 For every $\sh{O}_X$-module $\sh{F}$, the canonical homomorphism $\sh{O}_X\to\sh{R}(X)$ defines, by tensoring, a homomorphism (again said to be \emph{canonical}) $\sh{F}\to\sh{F}\otimes_{\sh{O}_X}\sh{R}(X)$, which, on each fibre, is exactly the homomorphism $z\to z\otimes1$ from $\sh{F}_x$ to $\sh{F}_x\otimes_{\sh{O}_X}R(X)$.
-The \emph{kernel $\sh{T}$} of this homomorphism is a $\sh{O}_X$-submodule of $\sh{F}$, called the \emph{torsion sheaf} of $\sh{F}$; it is quasi-coherent if $\sh{F}$ is quasi-coherent (\sref{1.4.1.1} and \sref{1.7.3.6}).
+The \emph{kernel $\sh{T}$} of this homomorphism is a $\sh{O}_X$-submodule of $\sh{F}$, called the \emph{torsion sheaf} of $\sh{F}$; it is quasi-coherent if $\sh{F}$ is quasi-coherent (\sref{I.4.1.1} and \sref{I.7.3.6}).
 We say that $\sh{F}$ is \emph{torsion free} if $\sh{T}=0$, and that $\sh{F}$ is a \emph{torsion sheaf} if $\sh{T}=\sh{F}$.
 For every $\sh{O}_X$-module $\sh{F}$, $\sh{F}/\sh{T}$ is torsion free.
-We deduce from \sref{1.7.3.5} that:
+We deduce from \sref{I.7.3.5} that:
 \end{env}
 
 \begin{proposition}[7.4.2]
-\label{1.7.4.2}
+\label{I.7.4.2}
 If $X$ is an integral prescheme, then every torsion-free quasi-coherent $\sh{O}_X$-module $\sh{F}$ is isomorphic to a subsheaf $\sh{G}$ of a simple sheaf of the form $(\sh{R}(X))^{(I)}$, generated (as a $\sh{R}(X)$-module) by $\sh{G}$.
 \end{proposition}
 
 The cardinality of $I$ is called the \emph{rank} of $\sh{F}$; for every nonempty affine open subset $U$ of $X$, the rank of $\sh{F}$ is equal to the rank of $\Gamma(U,\sh{F})$ as a $\Gamma(U,\sh{O}_X)$-module, as we see by considering the generic point of $X$, contained in $U$.
 In particular:
 \begin{corollary}[7.4.3]
-\label{1.7.4.3}
+\label{I.7.4.3}
 On an integral prescheme $X$, every torsion-free quasi-coherent $\sh{O}_X$-module of rank $1$ (in particular, every invertible $\sh{O}_X$-module) is isomorphic to a $\sh{O}_X$-submodule of $\sh{R}(X)$, and vice versa.
 \end{corollary}
 
 \begin{corollary}[7.4.4]
-\label{1.7.4.4}
+\label{I.7.4.4}
 Let $X$ be an integral prescheme, $\sh{L}$ and $\sh{L}'$ torsion-free $\sh{O}_X$-modules, and $f$ (resp. $f'$) a section of $\sh{L}$ (resp. $\sh{L}'$) over $X$.
 In order to have $f\otimes f'=0$, it is necessary and sufficient for one of the sections $f$ and $f'$ to be zero.
 \end{corollary}
@@ -449,11 +449,11 @@ In order to have $f\otimes f'=0$, it is necessary and sufficient for one of the 
 \begin{proof}
 \label{proof-1.7.4.4}
 Let $x$ be the generic point of $X$; we have, by hypothesis, that $(f\otimes f')_x=f_x\otimes f'_x=0$.
-Since $\sh{L}_x$ and $\sh{L}'_x$ can be identified with $\sh{O}_X$-submodules of the field $\sh{O}_x$, the above equation leads to $f_x=0$ or $f'_x=0$, and thus $f=0$ or $f'=0$, since $\sh{L}$ and $\sh{L}'$ are torsion free \sref{1.7.3.5}.
+Since $\sh{L}_x$ and $\sh{L}'_x$ can be identified with $\sh{O}_X$-submodules of the field $\sh{O}_x$, the above equation leads to $f_x=0$ or $f'_x=0$, and thus $f=0$ or $f'=0$, since $\sh{L}$ and $\sh{L}'$ are torsion free \sref{I.7.3.5}.
 \end{proof}
 
 \begin{proposition}[7.4.5]
-\label{1.7.4.5}
+\label{I.7.4.5}
 Let $X$ and $Y$ be integral preschemes, and $f:X\to Y$ a dominant morphism.
 For every torsion-free quasi-coherent $\sh{O}_X$-module $\sh{F}$, $f_*(\sh{F})$ is a torsion-free $\sh{O}_Y$-module.
 \end{proposition}
@@ -462,23 +462,23 @@ For every torsion-free quasi-coherent $\sh{O}_X$-module $\sh{F}$, $f_*(\sh{F})$ 
 \label{proof-1.7.4.5}
 Since
 \oldpage[I]{164}
-$f_*$ is left exact \sref[0]{0.4.2.1}, it suffices, by \sref{1.7.4.2}, to prove the proposition in the case where $\sh{F}=(\sh{R}(X))^{(I)}$.
+$f_*$ is left exact \sref[0]{0.4.2.1}, it suffices, by \sref{I.7.4.2}, to prove the proposition in the case where $\sh{F}=(\sh{R}(X))^{(I)}$.
 But every nonempty open subset $U$ of $Y$ contains the generic point of $Y$, so $f^{-1}(U)$ contains the generic point of $X$ \sref[0]{0.2.1.5}, so we have that $\Gamma(U,f_*(\sh{F}))=\Gamma(f^{-1}(U),\sh{F})=(R(X))^{(I)}$; in other words, $f_*(\sh{F})$ is the simple sheaf with fibre $(R(X))^{(I)}$, considered as a $\sh{R}(Y)$-module, and it is clearly torsion free.
 \end{proof}
 
 \begin{proposition}[7.4.6]
-\label{1.7.4.6}
+\label{I.7.4.6}
 Let $X$ be an integral prescheme, and $x$ its generic point.
 For every quasi-coherent $\sh{O}_X$-module $\sh{F}$ of finite type, the following conditions are equivalent: \emph{(a)} $\sh{F}$ is a torsion sheaf; \emph{(b)} $\sh{F}_x=0$; \emph{(c)} $\Supp(\sh{F})\neq X$.
 \end{proposition}
 
 \begin{proof}
 \label{proof-1.7.4.6}
-By \sref{1.7.3.5} and \sref{1.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\sh{O}_X}\sh{R}(X)=0$ are equivalent, so (a) and (b) are equivalent; then $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, (b) and (c) are equivalent.
+By \sref{I.7.3.5} and \sref{I.7.4.1}, the equations $\sh{F}_x=0$ and $\sh{F}\otimes_{\sh{O}_X}\sh{R}(X)=0$ are equivalent, so (a) and (b) are equivalent; then $\Supp(\sh{F})$ is closed in $X$ \sref[0]{0.5.2.2}, and since every nonempty open subset of $X$ contains $x$, (b) and (c) are equivalent.
 \end{proof}
 
 \begin{env}[7.4.7]
-\label{1.7.4.7}
-We generalise (by an abuse of language) the definitions of \sref{1.7.4.1} to the case where $X$ is a \emph{reduced} prescheme having only a \emph{finite} number of irreducible components; it then follows from \sref{1.7.3.4} that the equivalence between \emph{a)} and \emph{c)} in \sref{1.7.4.6} still holds true for such a prescheme.
+\label{I.7.4.7}
+We generalise (by an abuse of language) the definitions of \sref{I.7.4.1} to the case where $X$ is a \emph{reduced} prescheme having only a \emph{finite} number of irreducible components; it then follows from \sref{I.7.3.4} that the equivalence between \emph{a)} and \emph{c)} in \sref{I.7.4.6} still holds true for such a prescheme.
 \end{env}
 
