@@ -43,6 +43,8 @@ def convert_symb(line):
   return line
 
 def convert_sref(line):
+  line = re.sub(r"\\hyperref\[section:(.*?)\]{.*?}", r"\\ref{section:\1}")
+  line = re.sub(r"\\hyperref\[subsection:(.*?)\]{.*?}", r"\\ref{subsection:\1}")
   line = re.sub(r"\\eref", r"\\ref", line)
   line = re.sub(r"\\sref\[.*?\]", r"\\sref", line)
   line = re.sub(r"\\sref{(.*?)}\[(.*?)\]", r"\\sref{\1}, (\2)", line)
