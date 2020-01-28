@@ -17,7 +17,7 @@ Then the support $Y$ of the sheaf $\sh{O}_X/\sh{I}$ is closed, and if we denote 
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.1.2}
+\label{proof-I.4.1.2}
 \oldpage[I]{120}
 It evidently suffices \sref{I.2.1.3} to consider the case where $X$ is an affine scheme, and to show that, in this case, $Y$ is closed in $X$, and is an \emph{affine scheme}.
 Indeed, if $X=\Spec(A)$, then we have $\sh{O}_X=\widetilde{A}$ and $\sh{I}=\widetilde{\mathfrak{I}}$, where $\mathfrak{I}$ is an ideal of $A$ \sref{I.1.4.1};
@@ -55,7 +55,7 @@ Then $(Y,\sh{O}_Y)$ is a subprescheme of $X$.
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.1.5}
+\label{proof-I.4.1.5}
 The hypotheses imply that $Y$ is locally closed in $X$ and that the largest open $U$ in which $Y$ is closed (and thus contained) contains all the $V_\alpha$;
 we can thus reduce to the case where $U=X$ and $Y$ is closed in $X$.
 We then define a quasi-coherent sheaf of ideals $\sh{J}$ of $\sh{O}_X$ by taking $\sh{J}|V_\alpha$ to be the sheaf of ideals of $\sh{O}_X|V_\alpha$ which define the closed subprescheme $(Y\cap V_\alpha,\sh{O}_Y|(Y\cap V_\alpha))$, and, for each open subset $W$ of $X$ not intersecting $Y$, $\sh{J}|W=\sh{O}_X|W$.
@@ -72,7 +72,7 @@ A subprescheme (resp. a closed subprescheme) of a subprescheme
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.1.6}
+\label{proof-I.4.1.6}
 Since a locally closed subset of a locally closed subspace of $X$ is a locally closed subspace of $X$, it is clear \sref{I.4.1.5} that the question is local and that we can thus suppose that $X$ is affine;
 the proposition then follows from the canonical identification of $A/\mathfrak{J}'$ with $(A/\mathfrak{J})/(\mathfrak{J}'/\mathfrak{J})$, where $A$ is some ring, and $\mathfrak{J}$ and $\mathfrak{J}'$ are ideals of $A$ such that $\mathfrak{J}\subset\mathfrak{J}'$.
 \end{proof}
@@ -101,7 +101,7 @@ For a morphism $f:Z\to X$ to be factor through an injection morphism $j:Y\to X$,
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.1.9}
+\label{proof-I.4.1.9}
 The conditions are evidently necessary.
 To see that they are sufficient, we can reduce to the case where $Y$ is a \emph{closed} subprescheme of $X$, by replacing $X$ by an open $U$ such that $Y$ is closed in $U$ \sref{I.4.1.3} if necessary;
 $Y$ is then defined by a quasi-coherent sheaf of ideals $\sh{I}$ of $\sh{O}_X$.
@@ -150,7 +150,7 @@ It is clear that an immersion is a \emph{monomorphism} of preschemes \sref{I.4.1
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.2.2}
+\label{proof-I.4.2.2}
 \medskip\noindent
 \begin{enumerate}
   \item[(a)] The conditions are evidently necessary.
@@ -215,7 +215,7 @@ For a morphism $f=(\psi,\theta):Y\to X$ to be a closed immersion, it is necessar
 \end{corollary}
 
 \begin{proof}
-\label{proof-1.4.2.4}
+\label{proof-I.4.2.4}
 Let $f=(\psi,\theta)$;
 in the case (a), $\theta_y^\sharp$ is surjective (resp. bijective) for all $y\in Y$, and in the case (b), $\theta_y^\sharp$ is surjective for all $y\in Y$;
 it thus suffices to check, in case (a), that $\psi$ is a homeomorphism from $Y$ to a locally closed (resp. open) subset of $X$, and, in case (b), that $\psi$ is a homeomorphism from $Y$ to a closed subset of $X$.
@@ -230,7 +230,7 @@ The composition of any two immersions (resp. of two open immersions, of two clos
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.2.5}
+\label{proof-I.4.2.5}
 This follows easily from \sref{I.4.1.6}.
 \end{proof}
 
@@ -244,7 +244,7 @@ In addition, if $\alpha$ (resp.~$\beta$) identifies $X'$ (resp.~$Y'$) with a sub
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.3.1}
+\label{proof-I.4.3.1}
 According to Definition~\sref{I.4.2.1}, we can restrict to the case where $X'$ and $Y'$ are subpreschemes, and $\alpha$ and $\beta$ the injection morphisms.
 The proposition has already been proven for the subpreschemes induced by open sets \sref{I.3.2.7};
 since every subprescheme is a closed subprescheme of a prescheme induced by an open set \sref{I.4.1.3}, we can reduce to the case where $X'$ and $Y'$ are \emph{closed} subpreschemes.
@@ -297,7 +297,7 @@ in addition, if $j'$ is the injection morphism of this subprescheme into $X$, th
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.4.1}
+\label{proof-I.4.4.1}
 Since $p=1_X\times_Y j$ \sref{I.3.3.4}, the first claim follows from Proposition~\sref{I.4.3.1};
 the second is a particular case of Corollary~\sref{I.3.5.10} (after swapping the roles of $X$ and $Y'$).
 Finally, if we have $f\circ h=j\circ h'$, where $h'$ is a morphism $Z\to Y'$, then it follows from the definition of the product that we have $h=p\circ u$, where $u$ is a morphism $Z\to X\times_Y Y'$, whence the last claim.
@@ -319,7 +319,7 @@ For each subprescheme $Z'$ of $Z$, the subpreschemes $f^{-1}(g^{-1}(Z'))$ and $h
 \end{corollary}
 
 \begin{proof}
-\label{proof-1.4.4.2}
+\label{proof-I.4.4.2}
 This follows from the existence of the canonical isomorphism $X\times_Y(Y\times_Z Z')\isoto X\times_Z Z'$ \sref{I.3.3.9.1}.
 \end{proof}
 
@@ -330,7 +330,7 @@ then ${j'}^{-1}(X'')$ and ${j''}^{-1}(X')$ are both equal to the greatest lower 
 \end{corollary}
 
 \begin{proof}
-\label{proof-1.4.4.3}
+\label{proof-I.4.4.3}
 This follows immediately from Proposition~\sref{I.4.4.1} and Corollary~\sref{I.4.1.10}.
 \end{proof}
 
@@ -341,7 +341,7 @@ then we have $f^{-1}(\inf(Y',Y''))=\inf(f^{-1}(Y'),f^{-1}(Y''))$.
 \end{corollary}
 
 \begin{proof}
-\label{proof-1.4.4.4}
+\label{proof-I.4.4.4}
 This follows from the existence of the canonical isomorphism between $(X\times_Y Y')\times_X(X\times_Y Y'')$ and $X\times_Y(Y'\times_Y Y'')$ \sref{I.3.3.9.1}.
 \end{proof}
 
@@ -352,7 +352,7 @@ the closed subprescheme $f^{-1}(Y')$ of $X$ is then defined by the quasi-coheren
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.4.5}
+\label{proof-I.4.4.5}
 The statement is evidently local on $X$ and $Y$;
 it thus suffices to note that if \erratum[II]{$A$ is a $B$-algebra} and $\mathfrak{K}$ an ideal of $B$, then we have $A\otimes_B(B/\mathfrak{K})=A/\mathfrak{K}A$, and to then apply \sref{I.1.6.9}.
 \end{proof}
@@ -364,7 +364,7 @@ for the restriction $f\circ i$ of $f$ to $X'$ to factor through the injection $j
 \end{corollary}
 
 \begin{proof}
-\label{proof-1.4.4.6}
+\label{proof-I.4.4.6}
 It suffices to apply Proposition~\sref{I.4.4.1} to $i$, taking Proposition~\sref{I.4.4.5} into account.
 \end{proof}
 
@@ -399,7 +399,7 @@ If $f$ is a local immersion, then $f$ is an immersion, and $f(X)$ is open in $Y$
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.5.4}
+\label{proof-I.4.5.4}
 Let $x\in X$, and let $U$ be an open neighborhood of $x$, and $V$ an open neighborhood of $f(x)$ in $Y$ such that the restriction of $f$ to $U$ is a closed immersion into $V$;
 since $U$ is dense in $X$, $f(U)$ is dense in $Y$ by hypothesis, so $f(U)=V$, and $f$ is a homeomorphism from $U$ to $V$;
 the hypothesis that $f$ is injective implies that $f^{-1}(V)=U$, hence the proposition.
@@ -417,7 +417,7 @@ the hypothesis that $f$ is injective implies that $f^{-1}(V)=U$, hence the propo
 \end{proposition}
 
 \begin{proof}
-\label{proof-1.4.5.5}
+\label{proof-I.4.5.5}
 According to \sref{I.3.5.1}, it suffices to prove (i) and (ii).
 
 (i) follows immediately from the transitivity of closed (resp. open) immersions \sref{I.4.2.5} and from the fact that if $f$ is a homeomorphism from $X$ to a closed subset of $Y$, then for every open $U\subset X$, $f(U)$ is open in $f(X)$, so there exists an open subset $V$ of $Y$ such that $f(U)=V\cap f(X)$, and, as a result, $f(U)$ is closed in $V$.
