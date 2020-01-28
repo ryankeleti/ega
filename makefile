@@ -73,7 +73,7 @@ clean:
 
 .PHONY: cleanforce
 cleanforce:
-	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex book-wide.tex *-auto.tex
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex book-wide.tex *-auto.tex ega-web.*
 	rm -rf $(PDF_DIR)
 	rm -rf tags $(WEBNAME).* $(WEBNAME)
 	rm -rf plastex/ gerby-website/
