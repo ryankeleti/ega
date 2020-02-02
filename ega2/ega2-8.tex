@@ -78,7 +78,7 @@ Let $Y$ be an integral prescheme.
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.1.4}
+\medskip\noindent
 \begin{enumerate}
     \item[\rm{(i)}] This follows from the fact that $\sh{S} = \bigoplus_{n\geq0}\sh{I}_n$ is an \emph{integral} $\sh{O}_Y$-algebra (\sref{II.3.1.12} and \sref{II.3.1.14}), since, for all $y\in Y$, $\sh{O}_y$ is an integral ring \sref[I]{I.5.1.4}.
     \item[\rm{(ii)}] By (i), $X$ is integral;
@@ -216,7 +216,6 @@ We then have, for all $n>0$, a canonical isomorphism
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.1.7}
 The last claim is immediate, since $\sh{O}_X(1)$ is invertible \sref{II.3.2.5} and very ample for $Y$ by definition (\sref{II.4.4.3} and \sref{II.4.4.9}).
 Also by definition, the image of $v_n$ is exactly $\sh{I}^n\sh{S}$, and \sref{II.8.1.7.1} then follows from the exactness of the functor $\widetilde{\sh{M}}$ \sref{II.3.2.4} and from Equation~\sref{II.3.2.4.1}.
 \end{proof}
@@ -232,7 +231,6 @@ Under the hypotheses of \sref{II.8.1.7}, if $f:X\to Y$ is the structure morphism
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.1.8}
 This follows from \sref{II.8.1.7.1} and from \sref[I]{I.4.4.5}.
 \end{proof}
 
@@ -257,7 +255,6 @@ With the notation of \sref{II.8.1.8}, the underlying space of $X'$ is the set of
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.1.10}
 Indeed, if $c_x$ is a generator of the fibre $(\sh{O}_X(1))_x$ at a point $x$, then $s_x\otimes c_x$ is canonically identified with a generator of the fibre of $\sh{I}_{1,X}$ at the point $x$, and is thus invertible if and only if $s_x\not\in\fk{m}_x(\sh{O}_x(-1))_x$, or, equivalently, if and only if $s(x)\neq0$.
 \end{proof}
 
@@ -268,7 +265,6 @@ Then $\sh{I}\sh{O}_X$ is an invertible $\sh{O}_X$-module that is very ample for 
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.1.11}
 The question being local on $Y$ \sref{II.4.4.5}, we can reduce to the case where $Y=\Spec(A)$, with $A$ some integral ring of ring of fractions $K$, and $\sh{I}=\widetilde{\fk{I}}$, with $\fk{I}$ some fractional ideal of $K$;
 there then exists an element $a\neq0$ of $A$ such that $a\fk{I}\subset A$.
 Let $S = \bigoplus_{n\geq0}\fk{I}^n$;
@@ -378,7 +374,6 @@ is a graded $S$-algebra, where we define the degree of $f\bb{z}^n$ ($n\geq0$), w
 \end{lemma}
 
 \begin{proof}
-\label{proof-II.8.2.3}
 The first of the isomorphisms in \sref{II.8.2.3.1} was defined in \sref{II.2.2.5}, and the second is trivial;
 the isomorphism $\widehat{S}_{(\bb{z})} \xrightarrow{\sim} S$ thus defined thus gives a correspondence between $x\bb{z}^n/\bb{z}^{n+k}$ (where $\deg(x) = k$ for $k\geq -n$) and the element $x$.
 The homomorphism \sref{II.8.2.3.2} gives a correspondence between $x\bb{z}^n/f^k$ (where $\deg(x) = kd-n$) and the element $x/f^k$ of degree $-n$ in $S_f^\leq$, and it is again clear that this does indeed give an isomorphism.
@@ -471,7 +466,6 @@ where the first two are isomorphisms of graded rings.
 \end{lemma}
 
 \begin{proof}
-\label{proof-II.8.2.7}
 It is immediate, by definition, that we have $(S_f)_n = (S(n)_f)_0$, whence the isomorphism in \sref{II.8.2.7.1}, which is exactly the identity.
 Next, since $f/1$ is invertible in $S_f$, there is a canonical isomorphism $S_f \xrightarrow{\sim} (S_f^\geq)_{f/1} = (S_f)_{f/1}$, by \sref{II.8.2.1.2} applied to $S_f$;
 the inverse isomorphism is, by definition, the isomorphism in \sref{II.8.2.7.2}.
@@ -532,7 +526,6 @@ Let $S$ be a positively-graded ring.
 \end{lemma}
 
 \begin{proof}
-\label{proof-II.8.2.10}
 \begin{enumerate}
   \item[\rm{(i)}] If $S^\natural$ is an $S_0^\natural$-algebra of finite type, then $S_+=S_1^\natural$ is a module of finite type over $S=S_0^\natural$, by \sref{II.2.1.6}[i], and so $S$ is an $S_0$-algebra of finite type \sref{II.2.1.4};
     if $S^\natural$ is a Noetherian ring, then so too is $S_0^\natural=S$ \sref{II.2.1.5}.
@@ -612,7 +605,6 @@ the converse is true whenever $S$ is Noetherian.
 \end{proposition}
 
 \begin{proof}
-\label{proof:2.8.2.12}
 To prove the first claim, it suffices \sref{II.2.8.3} to show that the kernel $\fk{I}$ of the homomorphism \sref{II.8.2.11.2} consists of \emph{nilpotent} elements.
 But if $f\in S_{[n]}$ is an element whose class modulo $S_+S_{[n]}$ belongs to this kernel, then this implies that $f\in S_{[n+1]}$;
 then $f^{n+1}$, considered as an element of $S_{[n(n+1)]}$, is also an element of $S_+S_{[n(n+1)]}$, since it can be written as $f\cdot f^n$;
@@ -643,7 +635,6 @@ the converse is true whenever $S$ is Noetherian.
 \end{proposition}
 
 \begin{proof}
-\label{proof:2.8.2.14}
 The first two claims are evident, given \sref{II.8.2.10}[iii] and \sref{II.2.9.1}.
 The third will follow from \sref{II.8.2.10}[i and iii] and the following lemma:
 \begin{lemma}[8.2.14.1]
@@ -734,7 +725,6 @@ furthermore, $\widehat{C}$ is the smallest closed subprescheme of $\widehat{C}$ 
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.3.2}
 To define $i$, consider the open subset of $\widehat{C}$ given by
 \[
 \label{II.8.3.2.4}
@@ -862,7 +852,6 @@ such that
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.3.5}
 To prove the proposition, we can restrict to the case where $Y$ is affine.
 Taking into account the expression in \sref{II.8.3.4.4} for $\widehat{E}$, the fact that the domain of definition $G(\varphi)$ of $p$ is equal to $\widehat{E}$ will follow from the first of the following claims:
 \begin{env}[8.3.5.3]
@@ -902,7 +891,6 @@ If, further, $f\in S_1$, then $C_f$ is isomorphic to $X_f\otimes_{\bb{Z}}\bb{Z}[
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.3.6}
 Equation~\sref{II.8.3.6.2} follows immediately from \sref{II.8.3.5.3} and \sref{II.8.3.2.5}, and shows the surjectivity of $\pi$;
 we have already seen that the immersion $i$, restricted to $C_f$, corresponds
 \oldpage[II]{166}
@@ -931,7 +919,6 @@ for all $x\in X$, the fibre $p^{-1}(x)$ is isomorphic to $\Spec(\kres(x)[T])$, a
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.3.8}
 This follows immediately from \sref{II.8.3.5} and \sref{II.8.3.6} by noting that, whenever $Y$ is affine and $S$ is generated by $S_1$, the $X_f$, for $f\in S_1$, form a cover of $X$ \sref{II.2.3.14}.
 \end{proof}
 
@@ -1061,7 +1048,6 @@ Furthermore, there exists a canonical isomorphism from the projective closure of
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.4.4}
 We have here that $\sh{S}=\bigoplus_{n\geq0}\sh{L}^{\otimes n}$;
 the canonical injection
 \[
@@ -1173,7 +1159,6 @@ if, further, $\Proj(\varphi):G(\varphi)\to\Proj(\sh{S})$ is everywhere defined (
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.5.2}
 The first claim follows from the commutativity of \eref{eq:2.8.5.1.3}.
 To prove the second, we can restrict to the case where $Y=\Spec(A)$ and $Y'=\Spec(A')$ are affine, and $\sh{S}=\widetilde{S}$ and $\sh{S}'=\widetilde{S'}$.
 For every homogeneous $f$ in $S_+$, writing $f'=\varphi(f)$, we have that $\Phi^{-1}(C_f)=C'_{f'}$ \sref[I]{I.2.2.4.1};
@@ -1265,7 +1250,6 @@ If $\Proj(\varphi)$ is everywhere defined, then so too is $\widehat{\Phi}$, and 
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.5.4}
 The first claim follows from the commutativity of Diagrams \sref{II.8.5.1.3} and \sref{II.8.5.3.2}, and the two following claims from the definition of the canonical retractions \sref{II.8.3.5} and the definition of $\widehat{\varphi}$.
 To see that $\widehat{\Phi}$ is everywhere defined whenever $\Proj(\varphi)$ is, we can restrict to the case where $Y=\Spec(A)$ and $Y'=\Spec(A')$ are affine, and where $\sh{S}=\widetilde{S}$ and $\sh{S}'=\widetilde{S'}$;
 the hypothesis is that, when $f$ runs over the set of homogeneous elements of $S_+$, the radical in $S'_+$ of the ideal generated in $S'_+$ by the $\varphi(f)$ is $S'_+$ itself;
@@ -1279,7 +1263,6 @@ Whenever $\Proj(\varphi)$ is everywhere defined, the inverse image under $\wideh
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.5.5}
 This follows immediately from \sref{II.8.5.4} and \sref{II.8.5.2}, taking into account the equalities \sref{II.8.3.4.1} and \sref{II.8.3.4.2}.
 \end{proof}
 
@@ -1336,7 +1319,6 @@ Finally, if we identify $X'$ with $X$ via $u$, then the morphisms $p_X$ and $\pi
 \end{proposition}
 
 \begin{proof}
-\label{proof:2.8.6.2}
 We can clearly restrict to the case where $Y=\Spec(A)$ is affine, and $\sh{S}=\widetilde{S}$;
 then $X$ is the union of affine open subsets $X_f$, where $f$ runs over the set of homogeneous elements of $S_+$, with the ring of each $X_f$ being $S_{(f)}$.
 It follows from \sref{II.8.2.7.1} that
@@ -1365,7 +1347,6 @@ Considered as $X$-schemes, $\widehat{E}_X$ is canonically isomorphic to $\Spec(\
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.6.3}
 Since we know that the morphisms $p_X$ and $\pi_X$ are affine (\sref{II.8.3.5} and \sref{II.8.3.6}), it suffices (given \sref{II.1.3.1}) to prove the corollary in the case where $Y=\Spec(A)$ is affine and $\sh{S}=\widetilde{S}$.
 The first claim follows from the existence of the canonical isomorphisms \sref{II.8.2.7.2} $(S_f^\geq)_{f/1}^\leq \xrightarrow{\sim} S_f^\leq$ and from the fact that these isomorphisms are compatible with the map sending $f$ to $fg$ (where $f$ and $g$ are homogeneous in $S_+$).
 Similarly, applying \sref{II.8.3.6.2} to $\pi_X$ instead of $\pi$, we see that $\pi_X^{-1}(u^{-1}(X_f)) = \Spec((S_f^\geq)_{f/1})$ for $f$ homogeneous in $S_+$, and the second claim then follows from the existence of the canonical isomorphisms \sref{II.8.2.7.2} $(S_f^\geq)_{f/1} \xrightarrow{\sim} S_f$.
@@ -1382,7 +1363,6 @@ Finally, there exists a canonical $Y$-morphism $\bb{V}(\sh{O}_X(1))\to C$, whose
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.6.4}
 If we write $\sh{L}=\sh{O}_X(1)$, then $\sh{S}_X^\geq$ is identical to $\bb{S}_{\sh{O}_X}(\sh{L})$, and so $\widehat{E}_X$ is canonically identified with $\bb{V}(\sh{L}^{-1})$, by \sref{II.8.6.3}, and $C_X$ with $\bb{V}(\sh{L})$.
 The morphism $\bb{V}(\sh{L})\to C$ is the restriction of $\Proj(\widehat{\alpha})$, and the claims of the corollary are then particular cases of \sref{II.8.6.2}.
 \end{proof}
@@ -1494,7 +1474,6 @@ There is a canonical $C$-isomorphism
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.7.3}
 Suppose first of all that $Y=\Spec(A)$ is affine, so that $\sh{S}=\widetilde{S}$, with $S$ a positively-graded $A$-algebra, and $C=\Spec(S)$.
 Definition~\sref{II.8.2.7.4} then shows, with the notation of \sref{II.8.2.6}, that $\sh{S}^\natural=(S^\natural)^\sim$.
 To define \sref{II.8.7.3.1}, consider a homogeneous element $f\in S_d$ ($d>0$) and the corresponding element $f^\natural\in S^\natural$ \sref{II.8.2.6};
@@ -1626,7 +1605,6 @@ Conversely, if this property is true, and if we further assume that $Y$ is Noeth
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.7.5.1}
 The first claim being local on $Y$, we can assume that $Y=\Spec(A)$ is affine, so that $\sh{S}=\widetilde{S}$, with $S$ a positively-graded $A$-algebra.
 The claim then follows from \sref{II.8.2.12}, since $\Proj(S^\natural\otimes_S S_0) = C_X\times_C\varepsilon(Y)$ (by the identification in \sref{II.8.7.3.1}), or, in other words, since this prescheme is the inverse image of $\varepsilon(Y)$ in $C_X$ \sref[I]{I.4.4.1}.
 The converse also follows from \sref{II.8.2.12} whenever $Y$ is Noetherian affine and $S$ is of finite type.
@@ -1762,7 +1740,6 @@ into the pointed affine cone $E$ corresponding to $\sh{S}$.
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.8.2}
 With the notation of \sref{II.8.8.1}, let $\sh{S}_P^\geq = \bigoplus_{n\geq0}\sh{O}_P(n)$ and $C_p=\Spec(\sh{S}_P^\geq)$.
 We know \sref{II.8.6.2} that there is a canonical morphism $h=\Spec(\alpha):C_p\to C$ such that the diagram
 \[
@@ -1858,7 +1835,6 @@ Then the morphism in \sref{II.8.8.2.1} is proper (resp. projective), and its res
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.8.8.4}
 To prove that $g$ is proper, we can restrict to the case where $Y$ is affine, and it then suffices to consider the case where $Y$ is a quasi-compact scheme.
 The same arguments as in \sref{II.8.8.3} first of all show that $r$ is an \emph{isomorphism} $X\xrightarrow{\sim}P$;
 then $q$ is also an isomorphism, and, since the restriction of $h$ to $E_P$ is an isomorphism $E_P\xrightarrow{\sim}E$, we have already seen that \sref{II.8.8.2.3} is an isomorphism.
@@ -1975,7 +1951,6 @@ then:
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.8.8.6}
 Indeed, the $f$-morphism $\tau^\flat$ is then an \emph{isomorphism}
 \[
 \tau^\flat : \sh{S} = \psi_*(\sh{O}_C) \to f_*(\pi_*(\sh{O}_V)) = \psi_*(g_*(\sh{O}_V))
@@ -1997,7 +1972,6 @@ Then the ring $\Gamma(Z,\sh{O}_Z)$ is integral and integrally closed.
 \end{lemma}
 
 \begin{proof}
-\label{proof-II.8.8.6.1}
 It follows from \sref[I]{I.8.2.1.1} that $\Gamma(Z,\sh{O}_Z)$ is the intersection, in the field of rational functions $R(Z)$, of the integrally closed rings $\sh{O}_z$ over all $z\in Z$.
 \end{proof}
 
