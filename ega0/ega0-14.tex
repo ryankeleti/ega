@@ -316,7 +316,7 @@ Further, for every $x'\in U$, the irreducible components of $Y$ that contain $x'
 
 \begin{env}[14.3.1]
 \label{0.14.3.1}
-In a topological space $X$, we say that a chain $Z_0\subset Z_1\subset\ldots\subset Z_n$ of irreducible closed subsets if \emph{saturated} if there does not exist an irreducible closed subset $Z'$, distinct from each of the $Z_i$, such that $Z_k\subset Z'\subset Z_{k+1}$ for any $k$.
+In a topological space $X$, we say that a chain $Z_0\subset Z_1\subset\cdots\subset Z_n$ of irreducible closed subsets if \emph{saturated} if there does not exist an irreducible closed subset $Z'$, distinct from each of the $Z_i$, such that $Z_k\subset Z'\subset Z_{k+1}$ for any $k$.
 \end{env}
 
 \begin{proposition}[14.3.2]
@@ -338,7 +338,7 @@ The following two conditions are equivalent.
 It is immediate that (a) implies (b).
 Conversely, suppose that (b) is satisfied, and we will show that if we have two saturated chains with the same first and last elements as one another, of lengths $m$ and $n\leq m$ (respectively), then $m=n$.
 We proceed by induction on $n$, with the proposition being clear for $n=1$.
-So suppose that $1<n<m$, and let $Z_0\subset Z_1\subset\ldots\subset Z_n$ be a
+So suppose that $1<n<m$, and let $Z_0\subset Z_1\subset\cdots\subset Z_n$ be a
 \oldpage[0\textsubscript{IV-1}]{11}
 saturated chain such that there exists another saturated chain, with first element $Z_0$ and last element $Z_n$, of length $m$.
 Since $\codim(Z_0,Z_n)\geq m>n$, and $\codim(Z_0,Z_1)=1$, it follows from \emph{(b)} that $\codim(Z_1,Z_n)=\codim(Z_0,Z_n)-1>n-1$, which contradicts our induction hypothesis.
@@ -401,7 +401,7 @@ then, for every closed point $x$ of $X$, and every irreducible component $Z$ of 
 
 \oldpage[0\textsubscript{IV-1}]{12}
 \begin{proof}
-The last equality follows from the fact that, if $Y_0=\{x\}\subset Y_1\subset\ldots\subset Y_m$ is a maximal chain of irreducible closed subsets of $X$, and $U$ an open neighbourhood of $x$, then the $U\cap Y_i$ are pairwise disjoint irreducible closed subsets of $U$ (because $\overline{U\cap Y_i}=Y_i$), whence $\dim(U)=\dim(X)$, by \sref{0.14.1.4}.
+The last equality follows from the fact that, if $Y_0=\{x\}\subset Y_1\subset\cdots\subset Y_m$ is a maximal chain of irreducible closed subsets of $X$, and $U$ an open neighbourhood of $x$, then the $U\cap Y_i$ are pairwise disjoint irreducible closed subsets of $U$ (because $\overline{U\cap Y_i}=Y_i$), whence $\dim(U)=\dim(X)$, by \sref{0.14.1.4}.
 \end{proof}
 
 \begin{corollary}[14.3.5]
