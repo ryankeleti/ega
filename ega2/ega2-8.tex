@@ -2346,11 +2346,11 @@ Suppose that
     \item the underlying space of $V$ can be identified with the quotient of the underlying space of $U$ by the relation $h_0(x)=h_0(y)$ (\emph{a condition which always holds whenever the morphism $h$ is \emph{open} or \emph{closed}, or, \emph{a fortiori} when $h$ is \emph{proper}.})
 \end{enumerate}
 Then, for every prescheme $W$, the map
-\begin{equation}
+\[
 \label{2.8.11.1.1}
     \Hom(V,W) \to \Hom(U,W)
 \tag{8.11.1.1}
-\end{equation}
+\]
 that, to each morphism $v=(v_0,\nu)$ from $V$ to $W$, associates the morphism $u=v\circ h=(u_0,\mu)$, is a bijection from $\Hom(V,W)$ to the set of $u$ such that $u_0$ is constant on every fibre $h_0^{-1}(x)$.
 \end{lemma}
 
@@ -2474,49 +2474,53 @@ Since $C$ is assumed to be normal, it suffices to apply \sref{2.8.11.2} to obtai
 \end{remark}
 
 
-% \subsection{Quasi-coherent sheaves on based cones}
-% \label{subsection:2.8.12}
+\subsection{Quasi-coherent sheaves on based cones}
+\label{subsection:2.8.12}
 
-% \begin{env}[8.12.1]
-% \label{2.8.12.1}
-% Let us take the hypotheses and notation of \sref{2.8.3.1}.
-% Let $\sh{M}$ be a \emph{quasi-coherent graded $\sh{S}$-module}; to avoid any confusion, we denote by $\widetilde{\sh{M}}$ the quasi-coherent $\sh{O}_C$-module
-% \oldpage[II]{192}
-% associated to $\sh{M}$ \sref{2.1.4.3} when $\sh{M}$ is considered as a \emph{nongraded} $\sh{S}$-module, and by $\shProj_0(\sh{M})$ the quasi-coherent $\sh{O}_X$-module associated to $\sh{M}$, $\sh{M}$ being considered this time as a graded $\sh{S}$-module (in other words, the $\sh{O}_X$-module denoted by $\widetilde{\sh{M}}$ in \sref{2.3.2.2}).
-% In addition, we set
-% \[
-% \label{2.8.12.1.1}
-%   \sh{M}_X=\shProj_0(\sh{M})=\bigoplus_{n\in\bb{Z}}\shProj_0(\sh{M}(n));
-%   \tag{8.12.1.1}
-% \]
-% the quasi-coherent graded $\sh{O}_X$-algebra $\sh{S}_X$ being defined by \sref{2.8.6.1.1}, $\shProj(\sh{M})$ is equipped with a structure of a \emph{(quasi-coherent) graded $\sh{S}_X$-module}, by means of the canonical homomorphisms \sref{2.3.2.6.1}
-% \[
-% \label{2.8.12.1.2}
-%   \sh{O}_X(m)\otimes_{\sh{O}_X}\shProj_0(\sh{M}(n))\to\shProj_0(\sh{S}(m)\otimes_\sh{S}\sh{M}(n))\to\shProj_0(\sh{M}(m+n)),
-%   \tag{8.12.1.2}
-% \]
-% the verification of the axioms of sheaves of modules being done using the commutative diagram in \sref{2.2.5.11.4}.
+\begin{env}[8.12.1]
+\label{2.8.12.1}
+Let us use the hypotheses and notation of \sref{2.8.3.1}.
+Let $\sh{M}$ be a \emph{quasi-coherent graded $\sh{S}$-module}; to avoid any confusion, we denote by $\widetilde{\sh{M}}$ the quasi-coherent $\sh{O}_C$-module
+\oldpage[II]{192}
+associated to $\sh{M}$ \sref{2.1.4.3} when $\sh{M}$ is considered as a \emph{non-graded} $\sh{S}$-module, and by $\shProj_0(\sh{M})$ the quasi-coherent $\sh{O}_X$-module associated to $\sh{M}$, $\sh{M}$ being considered this time as a graded $\sh{S}$-module (in other words, the $\sh{O}_X$-module denoted by $\widetilde{\sh{M}}$ in \sref{2.3.2.2}).
+In addition, we set
+\[
+\label{2.8.12.1.1}
+  \sh{M}_X=\shProj_0(\sh{M})=\bigoplus_{n\in\bb{Z}}\shProj_0(\sh{M}(n));
+\tag{8.12.1.1}
+\]
+the quasi-coherent graded $\sh{O}_X$-algebra $\sh{S}_X$ being defined by \sref{2.8.6.1.1}, $\shProj(\sh{M})$ is equipped with a structure of a \emph{(quasi-coherent) graded $\sh{S}_X$-module}, by means of the canonical homomorphisms \sref{2.3.2.6.1}
+\[
+\label{2.8.12.1.2}
+  \sh{O}_X(m)\otimes_{\sh{O}_X}\shProj_0(\sh{M}(n))\to\shProj_0(\sh{S}(m)\otimes_\sh{S}\sh{M}(n))\to\shProj_0(\sh{M}(m+n)),
+\tag{8.12.1.2}
+\]
+the verification of the axioms of sheaves of modules being done using the commutative diagram in \sref{2.2.5.11.4}.
 
-% If $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$, where $S$ is a graded $A$-algebra and $M$ is a graded $S$-module, then, for every homogeneous element $f\in S_+$, we have
-% \[
-% \label{2.8.12.1.3}
-%   \Gamma(X_f,\shProj(\widetilde{M}))=M_f
-%   \tag{8.12.1.3}
-% \]
-% by the definitions and \sref{2.8.2.9.1}.
+If $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$, where $S$ is a graded $A$-algebra and $M$ is a graded $S$-module, then, for every homogeneous element $f\in S_+$, we have
+\[
+\label{2.8.12.1.3}
+  \Gamma(X_f,\shProj(\widetilde{M}))=M_f
+\tag{8.12.1.3}
+\]
+by the definitions and \sref{2.8.2.9.1}.
 
-% Now consider the quasi-coherent graded $\widehat{\sh{S}}$-module
-% \[
-% \label{2.8.12.1.4}
-%   \widehat{\sh{M}}=\sh{M}\otimes_\sh{S}\widehat{\sh{S}}
-%   \tag{8.12.1.4}
-% \]
-% ($\widehat{\sh{S}}$ defined by \sref{2.8.3.1.1}); we deduce a quasi-coherent graded $\sh{O}_{\widehat{C}}$-module $\shProj_0(\widehat{\sh{M}})$, which we will also denote by
-% \[
-% \label{2.8.12.1.5}
-%   \sh{M}^\square=\shProj_0(\widehat{\sh{M}}).
-%   \tag{8.12.1.5}
-% \]
+Now consider the quasi-coherent graded $\widehat{\sh{S}}$-module
+\[
+\label{2.8.12.1.4}
+  \widehat{\sh{M}}=\sh{M}\otimes_\sh{S}\widehat{\sh{S}}
+\tag{8.12.1.4}
+\]
+($\widehat{\sh{S}}$ being defined by \sref{2.8.3.1.1}); this induces a quasi-coherent graded $\sh{O}_{\widehat{C}}$-module $\shProj_0(\widehat{\sh{M}})$, which we will also denote by
+\[
+\label{2.8.12.1.5}
+  \sh{M}^\square=\shProj_0(\widehat{\sh{M}}).
+\tag{8.12.1.5}
+\]
 
-% It is clear \sref{2.3.2.4} that $\sh{M}^\square$ is an additive functor which is \emph{exact} in $\sh{M}$, commuting with direct sums and with inductive limits.
-% \end{env}
+It is clear \sref{2.3.2.4} that $\sh{M}^\square$ is an additive functor which is \emph{exact} in $\sh{M}$, commuting with direct sums and with inductive limits.
+\end{env}
+
+\begin{proposition}[8.12.2]
+\label{2.8.12.2}
+\end{proposition}
