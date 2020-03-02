@@ -2221,7 +2221,7 @@ finally, since $\sh{O}_{j(x)}$ is integral, $j(x)$ belongs to exactly one of the
 \begin{corollary}[8.10.4]
 \label{2.8.10.4}
 Suppose that the hypotheses of Lemma~\sref{2.8.10.1} are satisfied, and assume further that $\sh{J}$ is an invertible $\sh{O}_V$-module.
-Let $W=V\setminus j(X)$;
+Let $W=V\setmin j(X)$;
 for every quasi-coherent ideal $\sh{K}$ of $\sh{O}_X$, let $\sh{K}_V=\pi^*(\sh{K})\sh{O}_V$ and $\sh{K}_W=\sh{K}_V|W$.
 Then $\sh{K}_V$ is the largest quasi-coherent ideal of $\sh{O}_V$ whose restriction to $W$ is $\sh{K}_W$.
 \end{corollary}
@@ -2240,7 +2240,7 @@ We have to show that this last relation implies that $s\in\fk{K}.B$, or again th
 \begin{corollary}[8.10.5]
 \label{2.8.10.5}
 Suppose that the hypotheses of \sref{2.8.10.3} are satisfied;
-let $W=V\setminus j(X)$, $x$ be a point of $X$, $\sh{K}$ a quasi-coherent ideal of $\sh{O}_X$, and $z$ the generic point of the irreducible component of $\pi^{-1}(x)$ that contains $j(x)$ \sref{2.8.10.3}.
+let $W=V\setmin j(X)$, $x$ be a point of $X$, $\sh{K}$ a quasi-coherent ideal of $\sh{O}_X$, and $z$ the generic point of the irreducible component of $\pi^{-1}(x)$ that contains $j(x)$ \sref{2.8.10.3}.
 \begin{enumerate}
     \item[\rm{(i)}] Let $g$ be a section of $\sh{O}_V$ over $V$ such that $g|W$ is a section of $\sh{K}_W$ over $W$ (using the notation from \sref{2.8.10.4}).
         Then $g$ is a section of $\sh{K}_V$;
@@ -2291,7 +2291,7 @@ For this, set
     \sh{K}_V &= \pi^*(\sh{K})\sh{O}_V
 \\  \sh{K}_W &= \sh{K}_V|W
 \end{align*}
-where $W=V\setminus j(X)$;
+where $W=V\setmin j(X)$;
 since the restriction of $q$ to $W$ is a quasi-compact immersion to $C$, it follows from \sref[I]{1.9.4.2} that $\sh{K}_W$ is the restriction to $W$ of a quasi-coherent ideal $\sh{K}'_V$ of $\sh{O}_V$ of the form
 \[
     \sh{K}'_V = q^*(\sh{K}_C)\sh{O}_V
@@ -2361,7 +2361,7 @@ Conversely, if $u$ has this property, we will show that there exists exactly one
 The existence and uniqueness of the continuous map $v_0:V\to W$ such that $u_0=v_0\circ h_0$ follows from the hypotheses, since $h_0$ can be identified with the canonical map from $U$ to $U/R$.
 We can also, replacing $V$ by some isomorphic prescheme if necessary, suppose that $\lambda$ is the identity;
 by hypothesis, $\mu$ is then a homomorphism $\mu:\sh{O}_W\to(u_0)_*(\sh{O}_U) = (v_0)_*((h_0)_*(\sh{O}_U))$ such that the corresponding homomorphism $\mu^\sharp:u_0^*(\sh{O}_W)\to\sh{O}_U$ is \emph{local} on every fibre.
-Since $(v_0)_*((h_0)_*(\sh{O}_U))=(v_0)_*(\sh{O}_V)$, we necessarily have that $\nu=\u$, and everything then reduces to showing that the corresponding homomorphism $\nu^\sharp:v_0^*(\sh{O}_W)\to\sh{O}_V$ is local on every fibre.
+Since $(v_0)_*((h_0)_*(\sh{O}_U))=(v_0)_*(\sh{O}_V)$, we necessarily have that $\nu=u$, and everything then reduces to showing that the corresponding homomorphism $\nu^\sharp:v_0^*(\sh{O}_W)\to\sh{O}_V$ is local on every fibre.
 But every $y\in V$ is of the form $h_0(x)$ for some $x\in U$;
 let $z=v_0(y)=u_0(x)$.
 Then \sref[0]{0.3.5.5} the homomorphism $\mu_x^\sharp$ factors as
@@ -2414,23 +2414,23 @@ Then there exists exactly one $Y$-morphism $u:C'\to C$ such that $q=u\circ q'$.
 \begin{proof}
 \label{proof-2.8.11.5}
 The hypothesis on $\theta$ implies, in particular, that $p$ is surjective;
-since, by \sref{2.8.8.4}, the restriction of $q'$ to $\bb{V}(\sh{L})\setminus j(X)$ is an \emph{isomorphism} to $C'\setminus\varepsilon'(Y)$ (where $\varepsilon$ is the vertex section of $C'$), it follows from \sref{2.8.8.4} that $q'$ is \emph{proper} and \emph{surjective};
+since, by \sref{2.8.8.4}, the restriction of $q'$ to $\bb{V}(\sh{L})\setmin j(X)$ is an \emph{isomorphism} to $C'\setmin\varepsilon'(Y)$ (where $\varepsilon$ is the vertex section of $C'$), it follows from \sref{2.8.8.4} that $q'$ is \emph{proper} and \emph{surjective};
 furthermore, by \sref{2.8.8.6}, if we let $q'=(q'_0,\tau)$, then $\tau:\sh{O}_{C'}\to q'_*(\sh{O}_V)$ is an isomorphism.
 We are thus in a situation where we can apply \sref{2.8.11.1}, and we will have proven the lemma if we show that $q$ is constant on every fibre $q^{'-1}(z')$, where $z'\in C'$.
 But this condition is trivially satisfied for $z'\not\in\varepsilon'(Y)$.
-If $z'\in\varepsilon'(Y)$, then there exists exactly one $y\in Y$ such that $z'=\varepsilon'(y)$, and, by commutativity of \sref{2.8.8.5.2} and the fact that $q'$ sends $\bb{V}(\sh{L})\setminus j(X)$ to $C'\setminus\varepsilon'(Y)$, $q^{'-1}(z')=j(p^{-1}(y))$;
+If $z'\in\varepsilon'(Y)$, then there exists exactly one $y\in Y$ such that $z'=\varepsilon'(y)$, and, by commutativity of \sref{2.8.8.5.2} and the fact that $q'$ sends $\bb{V}(\sh{L})\setmin j(X)$ to $C'\setmin\varepsilon'(Y)$, $q^{'-1}(z')=j(p^{-1}(y))$;
 the commutativity of the diagram in \sref{2.8.9.1.1} then proves our claim.
 \end{proof}
 
 \begin{corollary}[8.11.6]
 \label{2.8.11.6}
-Under the hypotheses of \sref{2.8.11.5}, suppose further that $q$ is proper, and that the restriction of $q$ to $\bb{V}(\sh{L})\setminus j(X)$ is an isomorphism to $C\setminus\varepsilon(Y)$.
-Then the morphism $u$ is universally closed, surjective, and radicial, and its restriction to $C'\setminus\varepsilon'(Y)$ is an isomorphism to $C\setminus\varepsilon(Y)$.
+Under the hypotheses of \sref{2.8.11.5}, suppose further that $q$ is proper, and that the restriction of $q$ to $\bb{V}(\sh{L})\setmin j(X)$ is an isomorphism to $C\setmin\varepsilon(Y)$.
+Then the morphism $u$ is universally closed, surjective, and radicial, and its restriction to $C'\setmin\varepsilon'(Y)$ is an isomorphism to $C\setmin\varepsilon(Y)$.
 \end{corollary}
 
 \begin{proof}
 \label{proof-2.8.11.6}
-Since $q'$ is an isomorphism from $\bb{V}(\sh{L})\setminus j(X)$ to $C'\setminus\varepsilon'(Y)$ \sref{2.8.8.4}, the last claim follows immediately from the fact that $q=u\circ q'$.
+Since $q'$ is an isomorphism from $\bb{V}(\sh{L})\setmin j(X)$ to $C'\setmin\varepsilon'(Y)$ \sref{2.8.8.4}, the last claim follows immediately from the fact that $q=u\circ q'$.
 Furthermore, the commutativity of the diagrams
 \oldpage[II]{191}
 in \sref{2.8.8.5.2} and \sref{2.8.9.1.1} shows that the restriction of $u$ to the closed subprescheme $\varepsilon'(Y)$ of $C'$ is an isomorphism to the closed subprescheme $\varepsilon(Y)$ of $C$, from which we immediately deduce that, for all $z'\in\varepsilon'(Y)$, if $z=u(z')$, then $u$ defines an isomorphism from $\kres(z)$ to $\kres(z')$.
@@ -2523,4 +2523,191 @@ It is clear \sref{2.3.2.4} that $\sh{M}^\square$ is an additive functor which is
 
 \begin{proposition}[8.12.2]
 \label{2.8.12.2}
+With the notation of \sref{2.8.3.2}, we have canonical functorial isomorphisms
+\[
+\label{2.8.12.2.1}
+    i^*(\sh{M}^\square)\xrightarrow{\sim}\widetilde{\sh{M}},
+    \quad
+    j^*(\sh{M}^\square)\xrightarrow{\sim}\shProj_0(\sh{M}).
+\tag{8.12.2.1}
+\]
+Indeed, $i^*(\sh{M}^\square)$ is canonically identified with $(\widehat{\sh{M}}/(\bb{z}-1)\widehat{\sh{M}})^\sim$ on $\Spec(\widehat{\sh{S}}/(\bb{z}-1)\widehat{\sh{S}})$ by \sref{2.3.2.3};
+the first of the canonical isomorphisms \sref{2.8.12.2.1} is then immediately induced \sref{2.1.4.1} by the canonical isomorphism $\widehat{\sh{M}}/(\bb{z}-1)\widehat{\sh{M}}\xrightarrow{\sim}\sh{M}$.
+The canonical immersion $j:X\to C$ corresponds to the canonical homomorphism $\widehat{\sh{S}}\to\sh{S}$ with kernel $\bb{z}\widehat{\sh{S}}$ \sref{2.8.3.2};
+the second homomorphism \sref{2.8.12.2.1} is the particular case of the canonical homomorphism \sref{2.3.5.2}[ii], since here we have $\widehat{\sh{M}}\otimes_{\widehat{\sh{S}}}\sh{S}=\sh{M}$;
+to verify that this is an isomorphism, we can restrict to the case where $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$;
+by appealing to \sref{2.2.8.8}, the proof that, for all homogeneous $f$ in $S_+$, the preceding homomorphism, restricted to $X_f$, restricts to an isomorphism, is then immediate.
 \end{proposition}
+
+\oldpage[II]{193}
+
+By an abuse of language, we again say, thanks to the existence of the first isomorphism \sref{2.8.12.2.1}, that $\sh{M}^\square$ is the \emph{projective closure} of the $\sh{O}_X$-module $\widetilde{\sh{M}}$ (it being implicit that the data of the $\sh{O}_C$-module $\widetilde{\sh{M}}$ includes the grading of the $\sh{S}$-module $\sh{M}$).
+
+\begin{env}[8.12.3]
+\label{2.8.12.3}
+With the notation of \sref{2.8.3.5}, we have a canonical functorial homomorphism
+\[
+\label{2.8.12.3.1}
+    p^*(\shProj(\sh{M}))\to\sh{M}^\square|\widehat{E}.
+\tag{8.12.3.1}
+\]
+
+Indeed, this is a particular case of the homomorphism $\nu^\sharp$ defined more generally in \sref{2.3.5.6}.
+If $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$, then, by appealing to \sref{2.2.8.8}, the restriction of \sref{2.8.12.3.1} to $p^{-1}(X_f)=\widehat{C}_f$ (for some homogeneous $f$ in $S_+$) corresponds to the canonical homomorphism
+\[
+\label{2.8.12.3.2}
+    M_{(f)}\otimes_{S_{(f)}}S_f^\leq \to M_f^\leq
+\tag{8.12.3.2}
+\]
+taking into account \sref{2.8.2.3.2} and \sref{2.8.2.5.2}.
+\end{env}
+
+\begin{env}[8.12.4]
+\label{2.8.12.4}
+Let us place ourselves in the settings of \sref{2.8.5.1}, and assume its hypotheses and keep its notation.
+It follows from \sref{2.1.5.6} that, for every quasi-coherent graded $\sh{S}$-module $\sh{S}$, we have, on one hand, a canonical isomorphism
+\[
+\label{2.8.12.4.1}
+    \Phi^*(\widetilde{\sh{M}}) \xrightarrow{\sim} (q^*(\sh{M})\otimes_{q^*(\sh{S})}\sh{S}')^\sim
+\tag{8.12.4.1}
+\]
+of $\sh{O}_{C'}$-modules;
+on the other hand, \sref{2.3.5.6} implies the existence of a canonical $\Proj(\varphi)$-morphism
+\[
+\label{2.8.12.4.2}
+    \shProj_0\sh{M} \to (\shProj_0(q^*(\sh{M}))\otimes_{q^*(\sh{S})}\sh{S}')|G(\varphi)
+\tag{8.12.4.2}
+\]
+and also of a canonical $\widehat{\Phi}$-morphism
+\[
+\label{2.8.12.4.3}
+    \shProj_0\widehat{\sh{M}} \to (\shProj_0(q^*(\widehat{\sh{M}}))\otimes_{q^*(\widehat{\sh{S}})}\widehat{\sh{S}}')|G(\widehat{\varphi}).
+\tag{8.12.4.3}
+\]
+\end{env}
+
+\begin{env}[8.12.5]
+\label{2.8.12.5}
+Consider now the setting of \sref{2.8.6.1}, with the same notation;
+we thus take $Y'=X$, the morphism $q:X\to Y$ being the structure morphism, and $\varphi$ the canonical $q$-morphism \sref{2.8.6.1.2}.
+We then have a canonical isomorphism
+\[
+\label{2.8.12.5.1}
+    q^*(\sh{M})\otimes_{q^*(\sh{S})}\sh{S}_X^\geq \xrightarrow{\sim} \sh{M}_X^\geq
+\tag{8.12.5.1}
+\]
+by setting $\sh{M}_X^\geq=\bigoplus_{n\geq0}\shProj_0(\sh{M}(n))$.
+We can indeed restrict to the case where $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$, and define the isomorphism \sref{2.8.12.5.1} on each of the affine open subsets $X_f$ (where $f$ is homogeneous in $S_+$), by verifying the compatibility with taking a homogeneous multiple of $f$.
+But the restriction to $X_f$ of the left-hand side of \sref{2.8.12.5.1} is $\widetilde{M}'=((M\otimes_A S_{(f)})\otimes_{S\otimes_A S_{(f)}}S_f^\geq)^\sim$ by \sref{2.8.6.2.1};
+since we have a canonical isomorphism from $M\otimes_A S_{(f)}$ to $M\otimes_S(S\otimes_A S_{(f)})$, we have an induced isomorphism from $\widetilde{M}'$ to $(M\otimes_S S_f^\geq)^\sim$, and the latter is canonically isomorphic, by \sref{2.8.2.9.1}, to the restriction to $X_f$ of the right-hand side of \sref{2.8.12.5.1}, and satisfies the required compatibility conditions.
+\oldpage[II]{194}
+
+Replacing $\sh{M}$ by $\widehat{\sh{M}}$, $\sh{S}$ by $\widehat{\sh{S}}$, and $\sh{S}_X$ by $(\sh{S}_X^\geq)^\wedge$ in the previous argument, we similarly have a canonical isomorphism
+\[
+\label{2.8.12.5.2}
+    q^*(\widehat{\sh{M}})\otimes_{q^*(\widehat{\sh{S}})}(\sh{S}_X^\geq)^\wedge \xrightarrow{\sim} (\sh{M}_X^\geq)^\wedge.
+\tag{8.12.5.2}
+\]
+
+If we recall \sref{2.8.6.2} that the structure morphism $u:\Proj(\sh{S}_X^\geq)\to X$ is an isomorphism, then we deduce, first of all, from the above, that we have a canonical $u$-isomorphism
+\[
+\label{2.8.12.5.3}
+    \shProj_0\sh{M} \xrightarrow{\sim} \shProj_0(\sh{M}_X^\geq)
+\tag{8.12.5.3}
+\]
+as a particular case of \sref{2.8.12.4.2}.
+We note that, with the notation from the proof of \sref{2.8.6.2}, this reduces to seeing that the canonical homomorphism $M_{(f)}\otimes_{S_{(f)}}(S_f^\geq)^{(d)}\to(M_f^\geq)^{(d)}$ is an isomorphism whenever $f\in S_d$, which is immediate.
+
+Secondly, the isomorphism \sref{2.8.12.5.2} gives us, by this time applying \sref{2.8.12.4.3} to the canonical morphism $r=\Proj(\widehat{\alpha}):\widehat{C}_X\to\widehat{C}$, a canonical $r$-morphism
+\[
+\label{2.8.12.5.4}
+    \sh{M}^\square \to (\sh{M}_X^\geq)^\square.
+\tag{8.12.5.4}
+\]
+
+Recall now \sref{2.8.6.2} that the restrictions of $r$ to the pointed cones $\widehat{E}_X$ and $E_X$ are \emph{isomorphisms} to $\widehat{E}$ and $E$ (respectively).
+Furthermore:
+\end{env}
+
+\begin{proposition}[8.12.6]
+\label{2.8.12.6}
+The restrictions to $\widehat{E}_X$ and $E_X$ of the canonical $r$-morphism \sref{2.8.12.5.4} are isomorphisms
+\[
+\label{2.8.12.6.1}
+    \sh{M}^\square|\widehat{E} \xrightarrow{\sim} (\sh{M}_X^\geq)^\square|\widehat{E}_X
+\tag{8.12.6.1}
+\]
+\[
+\label{2.8.12.6.2}
+    \sh{M}^\sim|\widehat{E} \xrightarrow{\sim} (\sh{M}_X^\geq)^\sim|\widehat{E}_X.
+\tag{8.12.6.2}
+\]
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.12.6}
+We restrict to the case where $Y$ is affine, as in the proof of \sref{2.8.6.2} (whose notation we adopt);
+by reducing to definitions \sref{2.2.8.8}, we have to show that the canonical homomorphism
+\[
+    \widehat{M}_{(f)}\otimes_{\widehat{S}_{(f)}}(S_f^\geq)_{(f/1)}^\wedge \to (M\otimes_S S_f^\geq)_{(f/1)}^\wedge
+\]
+is an isomorphism;
+but, by \sref{2.8.2.3.2} and \sref{2.8.2.5.2}, the left-hand side is canonically identified with $M_f^\leq\otimes_{S_f^\leq}(S_f^\geq)_{f/1}^\leq$, and thus with $M_f^\leq$, by \sref{2.8.2.7.2}, and the right-hand side with $(M_f^\geq)_{f/1}^\leq$, and thus also with $M_f^\leq$, by \sref{2.8.2.9.2}, whence the conclusion concerning \sref{2.8.12.6.1};
+\sref{2.8.12.6.2} then follows from \sref{2.8.12.6.1} and \sref{2.8.12.2.1}.
+\end{proof}
+
+\begin{corollary}[8.12.7]
+\label{2.8.12.7}
+With the identifications of \sref{2.8.6.3}, the restriction of $(\sh{M}_X^\geq)^\square$ to $\widehat{E}_X$ can be identified with $(\sh{M}_X^\leq)^\sim$, and the restriction of $(\sh{M}_X^\geq)^\square$ to $E_x$ with $\widetilde{\sh{M}}_X$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-2.8.12.7}
+We can restrict to the affine case, and this follows from the identification of $(M_f^\geq)_{f/1}^\leq$ with $M_f^\leq$, and of $(M_f^\geq)_{f/1}$ with $M_f$ \sref{2.8.2.9.2}.
+\end{proof}
+
+\begin{proposition}[8.12.8]
+\label{2.8.12.8}
+Under the hypotheses of \sref{2.8.6.4}, the canonical homomorphism \sref{2.8.12.3.1} is an isomorphism.
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.12.8}
+Taking into account the fact that $\Proj(\sh{S}_X^\geq)\to X$ is an isomorphism \sref{2.8.6.2}, and the
+\oldpage[II]{195}
+isomorphisms \sref{2.8.12.5.4} and \sref{2.8.12.6.1}, we are led to proving the corresponding proposition for the canonical homomorphism $p_X^*(\shProj_0(\sh{M}_X^\geq))\to(\sh{M}_X^\geq)^\square|E_X$, or, in other words, we can restrict to the case where $\sh{S}_1$ is an invertible $\sh{O}_Y$-module, and where $\sh{S}$ is generated by $\sh{S}_1$.
+With the notation of \sref{2.8.12.3}, we then have, for some $f\in S_1$, that $S_f^\leq=S_{(f)}[1/f]$, and the canonical homomorphism $M_{(f)}\otimes_{S_{(f)}}S_f^\leq\to M_f^\leq$ is an isomorphism, by the definition of $M_f^\leq$.
+\end{proof}
+
+\begin{env}[8.12.9]
+\label{2.8.12.9}
+Consider now the quasi-coherent $\sh{S}$-modules
+\[
+    \sh{M}_{[n]}=\bigoplus_{m\geq n}\sh{M}_m
+\]
+and (with the notation of \sref{2.8.7.2}) the graded quasi-coherent $\sh{S}^\natural$-module
+\[
+\label{2.8.12.9.1}
+    \sh{M}^\natural=\left(\bigoplus_{n\geq0}\sh{M}_{[n]}\right)^\sim.
+\tag{8.12.9.1}
+\]
+
+We have seen \sref{2.8.7.3} that there exists a canonical $C$-isomorphism $h:C_X\xrightarrow{\sim}\Proj(\sh{S}^\natural)$.
+Furthermore:
+\end{env}
+
+\begin{proposition}[8.12.10]
+\label{2.8.12.10}
+There exists a canonical $h$-isomorphism
+\[
+\label{2.8.12.10.1}
+    \shProj_0(\sh{M}^\natural) \xrightarrow{\sim} \widetilde{\sh{M}}_X.
+\tag{8.12.10.1}
+\]
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.12.10}
+We argue as in \sref{2.8.7.3}, this time using the existence of the di-isomorphism \sref{2.8.2.9.3} instead of \sref{2.8.2.7.3}.
+We leave the details to the reader.
+\end{proof}
