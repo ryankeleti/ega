@@ -2335,52 +2335,188 @@ It is immediate that the ideal $\sh{J}$ of $\sh{O}_V$ that defines $X$ is again 
 
 
 \subsection{Uniqueness of contractions}
-\label{subsection:II.8.11}
+\label{subsection:2.8.11}
 
+\begin{lemma}[8.11.1]
+\label{2.8.11.1}
+Let $U$ and $V$ be preschemes, and $h=(h_0,\lambda):U\to V$ a surjective morphism.
+Suppose that
+\begin{enumerate}
+    \item $\lambda:\sh{O}_V\to h_*(\sh{O}_U) = (h_0)_*(\sh{O}_U)$ is an isomorphism;
+    \item the underlying space of $V$ can be identified with the quotient of the underlying space of $U$ by the relation $h_0(x)=h_0(y)$ (\emph{a condition which always holds whenever the morphism $h$ is \emph{open} or \emph{closed}, or, \emph{a fortiori} when $h$ is \emph{proper}.})
+\end{enumerate}
+Then, for every prescheme $W$, the map
+\begin{equation}
+\label{2.8.11.1.1}
+    \Hom(V,W) \to \Hom(U,W)
+\tag{8.11.1.1}
+\end{equation}
+that, to each morphism $v=(v_0,\nu)$ from $V$ to $W$, associates the morphism $u=v\circ h=(u_0,\mu)$, is a bijection from $\Hom(V,W)$ to the set of $u$ such that $u_0$ is constant on every fibre $h_0^{-1}(x)$.
+\end{lemma}
 
-\subsection{Quasi-coherent sheaves on based cones}
-\label{subsection:II.8.12}
-
-\begin{env}[8.12.1]
-\label{II.8.12.1}
-Let us take the hypotheses and notation of \sref{II.8.3.1}.
-Let $\sh{M}$ be a \emph{quasi-coherent graded $\sh{S}$-module}; to avoid any confusion, we denote by $\widetilde{\sh{M}}$ the quasi-coherent $\sh{O}_C$-module
-\oldpage[II]{192}
-associated to $\sh{M}$ \sref{II.1.4.3} when $\sh{M}$ is considered as a \emph{nongraded} $\sh{S}$-module, and by $\shProj_0(\sh{M})$ the quasi-coherent $\sh{O}_X$-module associated to $\sh{M}$, $\sh{M}$ being considered this time as a graded $\sh{S}$-module (in other words, the $\sh{O}_X$-module denoted by $\widetilde{\sh{M}}$ in \sref{II.3.2.2}).
-In addition, we set
+\begin{proof}
+\label{proof-2.8.11.1}
+It is clear that, if $u=v\circ h$, so that $u_0=v_0\circ h_0$, then $u_0$ is constant on every set $h_0^{-1}(x)$.
+Conversely, if $u$ has this property, we will show that there exists exactly one $v\in\Hom(V,W)$ such that $u=v\circ h$.
+The existence and uniqueness of the continuous map $v_0:V\to W$ such that $u_0=v_0\circ h_0$ follows from the hypotheses, since $h_0$ can be identified with the canonical map from $U$ to $U/R$.
+We can also, replacing $V$ by some isomorphic prescheme if necessary, suppose that $\lambda$ is the identity;
+by hypothesis, $\mu$ is then a homomorphism $\mu:\sh{O}_W\to(u_0)_*(\sh{O}_U) = (v_0)_*((h_0)_*(\sh{O}_U))$ such that the corresponding homomorphism $\mu^\sharp:u_0^*(\sh{O}_W)\to\sh{O}_U$ is \emph{local} on every fibre.
+Since $(v_0)_*((h_0)_*(\sh{O}_U))=(v_0)_*(\sh{O}_V)$, we necessarily have that $\nu=\u$, and everything then reduces to showing that the corresponding homomorphism $\nu^\sharp:v_0^*(\sh{O}_W)\to\sh{O}_V$ is local on every fibre.
+But every $y\in V$ is of the form $h_0(x)$ for some $x\in U$;
+let $z=v_0(y)=u_0(x)$.
+Then \sref[0]{0.3.5.5} the homomorphism $\mu_x^\sharp$ factors as
 \[
-\label{II.8.12.1.1}
-  \sh{M}_X=\shProj_0(\sh{M})=\bigoplus_{n\in\bb{Z}}\shProj_0(\sh{M}(n));
-  \tag{8.12.1.1}
+    \mu_x^\sharp: \sh{O}_z \xrightarrow{\nu_y^\sharp} \sh{O}_y \xrightarrow{\lambda_x^\sharp} \sh{O}_x.
 \]
-the quasi-coherent graded $\sh{O}_X$-algebra $\sh{S}_X$ being defined by \sref{II.8.6.1.1}, $\shProj(\sh{M})$ is equipped with a structure of a \emph{(quasi-coherent) graded $\sh{S}_X$-module}, by means of the canonical homomorphisms \sref{II.3.2.6.1}
-\[
-\label{II.8.12.1.2}
-  \sh{O}_X(m)\otimes_{\sh{O}_X}\shProj_0(\sh{M}(n))\to\shProj_0(\sh{S}(m)\otimes_\sh{S}\sh{M}(n))\to\shProj_0(\sh{M}(m+n)),
-  \tag{8.12.1.2}
-\]
-the verification of the axioms of sheaves of modules being done using the commutative diagram in \sref{II.2.5.11.4}.
+By hypothesis, $\lambda_x^\sharp$ and $\mu_x^\sharp$ are local homomorphisms;
+thus $\lambda_x^\sharp$ sends every invertible element of $\sh{O}_y$ to an invertible element of $\sh{O}_x$;
+if $\nu_y^\sharp$ sent a non-invertible element of $\sh{O}_z$ to an invertible element of $\sh{O}_y$, then $\mu_x^\sharp$ would send this element of $\sh{O}_z$ to an invertible element of $\sh{O}_x$, contradicting the hypothesis, whence the lemma.
+\end{proof}
 
-If $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$, where $S$ is a graded $A$-algebra and $M$ is a graded $S$-module, then, for every homogeneous element $f\in S_+$, we have
-\[
-\label{II.8.12.1.3}
-  \Gamma(X_f,\shProj(\widetilde{M}))=M_f
-  \tag{8.12.1.3}
-\]
-by the definitions and \sref{II.8.2.9.1}.
+\begin{corollary}[8.11.2]
+\label{2.8.11.2}
+Let $U$ be an integral prescheme, and $V$ a normal prescheme;
+then every morphism $h:U\to V$ that is universally closed, birational, and radicial, is also an isomorphism.
+\end{corollary}
 
-Now consider the quasi-coherent graded $\widehat{\sh{S}}$-module
-\[
-\label{II.8.12.1.4}
-  \widehat{\sh{M}}=\sh{M}\otimes_\sh{S}\widehat{\sh{S}}
-  \tag{8.12.1.4}
-\]
-($\widehat{\sh{S}}$ defined by \sref{II.8.3.1.1}); we deduce a quasi-coherent graded $\sh{O}_{\widehat{C}}$-module $\shProj_0(\widehat{\sh{M}})$, which we will also denote by
-\[
-\label{II.8.12.1.5}
-  \sh{M}^\square=\shProj_0(\widehat{\sh{M}}).
-  \tag{8.12.1.5}
-\]
+\begin{proof}
+\label{proof-2.8.11.2}
+If $h=(h_0,\lambda)$, then it follows from the hypotheses that $h_0$ is injective and closed, and that $h_0(U)$
+\oldpage[II]{190}
+is dense in $V$, and so $h_0$ is a \emph{homeomorphism} from $U$ to $V$.
+To prove the corollary, it will suffice to show that $\lambda:\sh{O}_V\to(h_0)_*(\sh{O}_U)$ is an isomorphism: we can then apply \sref{2.8.11.1}, which proves that the map \sref{2.8.11.1.1} is bijective (the fibres $h_0^{-1}(x)$ each consisting of a single point);
+thus $h$ will be an isomorphism.
+The question clearly being local on $V$, we can suppose that $V=\Spec(A)$ is affine, of an integral and integrally closed ring \sref{2.8.8.6.1};
+$h$ then corresponds \sref[I]{1.2.2.4} to a homomorphism $\varphi:A\to\Gamma(U,\sh{O}_U)$, and everything reduces to showing that $\varphi$ is an isomorphism.
+But, if $K$ is the field of fractions of $A$, then $\Gamma(U,\sh{O}_U)$ has, by hypothesis, $K$ as its field of fractions, and $A$ is a subring of $\Gamma(U,\sh{O}_U)$, with $\varphi$ being the canonical injection \sref[I]{1.8.2.7}.
+Since the morphism $h$ satisfies the hypotheses of \sref{2.7.3.11}, $\Gamma(U,\sh{O}_U)$ is a subring of the integral closure of $A$ in $K$, and is thus identical to $A$ by hypothesis.
+\end{proof}
 
-It is clear \sref{II.3.2.4} that $\sh{M}^\square$ is an additive functor which is \emph{exact} in $\sh{M}$, commuting with direct sums and with inductive limits.
+\begin{remark}[8.11.3]
+\label{2.8.11.3}
+We will see in chapter~III \sref[III]{3.4.4.11} that, whenever $V$ is a \emph{locally Noetherian} prescheme, every morphism $h:U\to V$ that is proper and quasi-finite (in particular, every morphism satisfying the hypotheses of \sref{2.8.11.2}) is necessarily \emph{finite}.
+The conclusion of \sref{2.8.11.2} then follows in this case from \sref{2.6.1.15}.
+\end{remark}
+
+\begin{env}[8.11.4]
+\label{2.8.11.4}
+We will now see that, in Grauert's criterion, we can often prove that the prescheme $C$ and the ``contraction'' $q$ are determined in an \emph{essentially unique} manner.
 \end{env}
+
+\begin{lemma}[8.11.5]
+\label{2.8.11.5}
+Let $Y$ be a prescheme, $p:X\to Y$ a proper morphism, $\sh{L}$ a $p$-ample invertible $\sh{O}_X$-module, $C$ a $Y$-prescheme, $\varepsilon:Y\to C$ a $Y$-section, and $q:V=\bb{V}(\sh{L})\to C$ a $Y$-morphism, all such that the diagram in \sref{2.8.9.1.1} commutes.
+Suppose further that, if $p=(p_0,\theta)$, then $\theta:\sh{O}_Y\to p_*(\sh{O}_X)$ is an isomorphism.
+Let $\sh{S}'=\bigoplus_{n\geq0}p_*(\sh{L}^{\otimes n})$ and $C'=\Spec(\sh{S}')$, and let $q':\bb{V}(\sh{L})\to C'$ be the canonical $Y$-morphism \sref{2.8.8.5}.
+Then there exists exactly one $Y$-morphism $u:C'\to C$ such that $q=u\circ q'$.
+\end{lemma}
+
+\begin{proof}
+\label{proof-2.8.11.5}
+The hypothesis on $\theta$ implies, in particular, that $p$ is surjective;
+since, by \sref{2.8.8.4}, the restriction of $q'$ to $\bb{V}(\sh{L})\setminus j(X)$ is an \emph{isomorphism} to $C'\setminus\varepsilon'(Y)$ (where $\varepsilon$ is the vertex section of $C'$), it follows from \sref{2.8.8.4} that $q'$ is \emph{proper} and \emph{surjective};
+furthermore, by \sref{2.8.8.6}, if we let $q'=(q'_0,\tau)$, then $\tau:\sh{O}_{C'}\to q'_*(\sh{O}_V)$ is an isomorphism.
+We are thus in a situation where we can apply \sref{2.8.11.1}, and we will have proven the lemma if we show that $q$ is constant on every fibre $q^{'-1}(z')$, where $z'\in C'$.
+But this condition is trivially satisfied for $z'\not\in\varepsilon'(Y)$.
+If $z'\in\varepsilon'(Y)$, then there exists exactly one $y\in Y$ such that $z'=\varepsilon'(y)$, and, by commutativity of \sref{2.8.8.5.2} and the fact that $q'$ sends $\bb{V}(\sh{L})\setminus j(X)$ to $C'\setminus\varepsilon'(Y)$, $q^{'-1}(z')=j(p^{-1}(y))$;
+the commutativity of the diagram in \sref{2.8.9.1.1} then proves our claim.
+\end{proof}
+
+\begin{corollary}[8.11.6]
+\label{2.8.11.6}
+Under the hypotheses of \sref{2.8.11.5}, suppose further that $q$ is proper, and that the restriction of $q$ to $\bb{V}(\sh{L})\setminus j(X)$ is an isomorphism to $C\setminus\varepsilon(Y)$.
+Then the morphism $u$ is universally closed, surjective, and radicial, and its restriction to $C'\setminus\varepsilon'(Y)$ is an isomorphism to $C\setminus\varepsilon(Y)$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-2.8.11.6}
+Since $q'$ is an isomorphism from $\bb{V}(\sh{L})\setminus j(X)$ to $C'\setminus\varepsilon'(Y)$ \sref{2.8.8.4}, the last claim follows immediately from the fact that $q=u\circ q'$.
+Furthermore, the commutativity of the diagrams
+\oldpage[II]{191}
+in \sref{2.8.8.5.2} and \sref{2.8.9.1.1} shows that the restriction of $u$ to the closed subprescheme $\varepsilon'(Y)$ of $C'$ is an isomorphism to the closed subprescheme $\varepsilon(Y)$ of $C$, from which we immediately deduce that, for all $z'\in\varepsilon'(Y)$, if $z=u(z')$, then $u$ defines an isomorphism from $\kres(z)$ to $\kres(z')$.
+These remarks prove that $u$ is bijective and radicial;
+furthermore, if $\psi:C\to Y$ and $\psi':C'\to Y$ are the structure morphisms, then $\psi'=\psi\circ u$, and, since $\psi'$ is separated \sref{2.1.2.4}, so too is $u$ \sref[I]{1.5.5.1}[v].
+We have already seen, in the proof of \sref{2.8.11.5}, that $q'$ is surjective;
+since $q=u\circ q'$ is proper, we finally conclude, from \sref{2.5.4.3} and \sref{2.5.4.9}, that $u$ is universally closed.
+\end{proof}
+
+\begin{proposition}[8.11.7]
+\label{2.8.11.7}
+Let $Y$ be a prescheme, $X$ an \emph{integral} prescheme, $p:X\to Y$ a proper morphism, $\sh{L}$ a $p$-ample invertible $\sh{O}_X$-module, $C$ a \emph{normal} $Y$-prescheme, $\varepsilon:Y\to C$ a $Y$-section, and $q:V=\bb{V}(\sh{L})\to C$ a $Y$ morphism, all such that the diagram in \sref{2.8.9.1.1} commutes.
+Suppose further that, if $p=(p_0,\theta)$, then $\theta:\sh{O}_Y\to p_*(\sh{O}_X)$ is an isomorphism.
+Let $\sh{S}'=\bigoplus_{n\geq0}p_*(\sh{L}^{\otimes n})$ and $C'=\Spec(\sh{S}')$, and let $q':\bb{V}(\sh{L})\to C'$ be the canonical $Y$-morphism \sref{2.8.8.5}.
+Then the unique $Y$-morphism $u:C'\to C$ such that $q=u\circ q'$ is an \emph{isomorphism}.
+\end{proposition}
+
+\begin{proof}
+\label{proof-2.8.11.7}
+It follows from \sref{2.8.8.6} that $C'$ is integral;
+since $u$ is a homeomorphism of the underlying subspaces $C'\to C$ ($u$ being bijective and closed, by \sref{2.8.11.6}), $C$ is irreducible, thus integral, and, since the restriction of $u$ to a non-empty open subset of $C'$ is an isomorphism to an open subset of $C$, $u$ is birational.
+Since $C$ is assumed to be normal, it suffices to apply \sref{2.8.11.2} to obtain the conclusion.
+\end{proof}
+
+\begin{remark}[8.11.8]
+\label{2.8.11.8}
+\begin{itemize}
+    \item[\rm{(i)}] The hypothesis that $C$ is normal implies that $X$ is also normal.
+        Indeed, $C'=\Spec(\sh{S}')$ is then normal, being isomorphic to $C$, and integral, by \sref{2.8.8.6};
+        we thus conclude that $\Proj(\sh{S}')$ is \emph{normal}.
+        Indeed, the question is local on $Y$;
+        if $Y$ is affine, with $\sh{S}'=\widetilde{S'}$, then the ring $S'=\Gamma(C',\sh{S}')$ is integral and integrally closed \sref{2.8.8.6.1}, and so, for every homogeneous element $f\in S'_+$, the graded ring $S'_f$ is integral and integrally closed \cite[t.~I, p.~257 and 261]{I-13}, and thus so too is the ring $S'_{(f)}$ of its degree-zero terms, because the intersection of $S'_f$ with the field of fractions of $S'_{(f)}$ is equal to $S'_{(f)}$;
+        this proves our claim \sref{2.6.3.4}.
+        Finally, since $X$ is isomorphic to an open subprescheme of $\Proj(\sh{S}')$ \sref{2.8.8.1}, $X$ is indeed normal.
+        We can thus express \sref{2.8.11.7} in the following form:
+        \emph{If $X$ is integral and normal, and $p=(p_0,\theta):X\to Y$ is a proper morphism such that $\theta:\sh{O}_Y\to p_*(\sh{O}_X)$ is an isomorphism, then, for every $p$-ample $\sh{O}_X$-module $\sh{L}$, there exists exactly one way of contracting the null section of $V=\bb{V}(\sh{L})$ to obtain a normal $Y$-scheme $C$ and a proper $Y$-morphism $q:V\to C$.}
+    \item[\rm{(ii)}] When $p$ is proper, the hypothesis $p_*(\sh{O}_X)=\sh{O}_Y$ can be considered as an auxiliary hypothesis, not really restricting the generality of the result.
+        Indeed, if it is not satisfied, then it suffices to replace $Y$ with the $Y$-scheme $Y'=\Spec(p_*(\sh{O}_X))$, and to consider $X$ as a $Y'$-scheme.
+        We will return to this general method in chapter~III, \textsection~4.
+\end{itemize}
+\end{remark}
+
+
+% \subsection{Quasi-coherent sheaves on based cones}
+% \label{subsection:2.8.12}
+
+% \begin{env}[8.12.1]
+% \label{2.8.12.1}
+% Let us take the hypotheses and notation of \sref{2.8.3.1}.
+% Let $\sh{M}$ be a \emph{quasi-coherent graded $\sh{S}$-module}; to avoid any confusion, we denote by $\widetilde{\sh{M}}$ the quasi-coherent $\sh{O}_C$-module
+% \oldpage[II]{192}
+% associated to $\sh{M}$ \sref{2.1.4.3} when $\sh{M}$ is considered as a \emph{nongraded} $\sh{S}$-module, and by $\shProj_0(\sh{M})$ the quasi-coherent $\sh{O}_X$-module associated to $\sh{M}$, $\sh{M}$ being considered this time as a graded $\sh{S}$-module (in other words, the $\sh{O}_X$-module denoted by $\widetilde{\sh{M}}$ in \sref{2.3.2.2}).
+% In addition, we set
+% \[
+% \label{2.8.12.1.1}
+%   \sh{M}_X=\shProj_0(\sh{M})=\bigoplus_{n\in\bb{Z}}\shProj_0(\sh{M}(n));
+%   \tag{8.12.1.1}
+% \]
+% the quasi-coherent graded $\sh{O}_X$-algebra $\sh{S}_X$ being defined by \sref{2.8.6.1.1}, $\shProj(\sh{M})$ is equipped with a structure of a \emph{(quasi-coherent) graded $\sh{S}_X$-module}, by means of the canonical homomorphisms \sref{2.3.2.6.1}
+% \[
+% \label{2.8.12.1.2}
+%   \sh{O}_X(m)\otimes_{\sh{O}_X}\shProj_0(\sh{M}(n))\to\shProj_0(\sh{S}(m)\otimes_\sh{S}\sh{M}(n))\to\shProj_0(\sh{M}(m+n)),
+%   \tag{8.12.1.2}
+% \]
+% the verification of the axioms of sheaves of modules being done using the commutative diagram in \sref{2.2.5.11.4}.
+
+% If $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, and $\sh{M}=\widetilde{M}$, where $S$ is a graded $A$-algebra and $M$ is a graded $S$-module, then, for every homogeneous element $f\in S_+$, we have
+% \[
+% \label{2.8.12.1.3}
+%   \Gamma(X_f,\shProj(\widetilde{M}))=M_f
+%   \tag{8.12.1.3}
+% \]
+% by the definitions and \sref{2.8.2.9.1}.
+
+% Now consider the quasi-coherent graded $\widehat{\sh{S}}$-module
+% \[
+% \label{2.8.12.1.4}
+%   \widehat{\sh{M}}=\sh{M}\otimes_\sh{S}\widehat{\sh{S}}
+%   \tag{8.12.1.4}
+% \]
+% ($\widehat{\sh{S}}$ defined by \sref{2.8.3.1.1}); we deduce a quasi-coherent graded $\sh{O}_{\widehat{C}}$-module $\shProj_0(\widehat{\sh{M}})$, which we will also denote by
+% \[
+% \label{2.8.12.1.5}
+%   \sh{M}^\square=\shProj_0(\widehat{\sh{M}}).
+%   \tag{8.12.1.5}
+% \]
+
+% It is clear \sref{2.3.2.4} that $\sh{M}^\square$ is an additive functor which is \emph{exact} in $\sh{M}$, commuting with direct sums and with inductive limits.
+% \end{env}
