@@ -11,7 +11,7 @@ def get_path():
 
 # list the stems of the TeX files in the project in the correct order.
 def list_text_files(path):
-  with open(path + "makefile", 'r') as f:
+  with open(path + "Makefile", 'r') as f:
     for line in f:
       if line.find("FILES = ") == 0:
         break
