@@ -2787,3 +2787,84 @@ the converse is evident.
 
 \subsection{Supplement on sheaves associated to graded $\sh{S}$-modules}
 \label{subsection:II.8.14}
+
+\begin{env}[8.14.1]
+\label{II.8.14.1}
+Let $Y$ be a prescheme, $\sh{S}$ a \emph{positively-graded} quasi-coherent $\sh{O}_Y$-algebra, $X=\Proj(\sh{S})$, and $q:X\to Y$ the structure morphism (which is separated, by \sref{II.3.1.3}).
+Using the notation of \sref{II.8.12.1}, we have defined a functor $\sh{M}_X=\shProj(\sh{M})$ in $\sh{M}$, from the category of graded quasi-coherent $\sh{S}$-modules to the category of graded quasi-coherent $\sh{S}_X$-modules;
+it is further clear \sref{II.3.2.4} that this is an \emph{additive} and \emph{exact} functor, commuting with inductive limits.
+
+Note, furthermore, that it follows immediately from the definition \sref{II.8.12.1.1} that we have
+\[
+\label{II.8.14.1.1}
+    \shProj(\sh{M}(n)) = (\shProj(\sh{M}))(n)
+    \quad\mbox{for all $n\in\bb{Z}$.}
+\tag{8.14.1.1}
+\]
+\end{env}
+
+\begin{env}[8.14.2]
+\label{II.8.14.2}
+We will first extend the canonical homomorphisms $\lambda$ and $\mu$, defined in \sref{II.3.2.6}, to $\sh{S}_X$-modules of the form $\shProj(\sh{M})$.
+For this, note that, for any $m\in\bb{Z}$ and $n\in\bb{Z}$, we have, by \sref{II.2.1.2.1}, a canonical homomorphism of $\sh{O}_X$-modules
+\[
+\label{II.8.14.2.1}
+    \lambda_{mn}:
+    \shProj_0((\shHom_{\sh{S}}(\sh{M},\sh{N}))(n-m))
+    \to
+    \shHom_{\sh{O}_X}(\shProj_0(\sh{M}(m)),\shProj_0(\sh{N}(n)))
+\tag{8.14.2.1}
+\]
+for any graded quasi-coherent $\sh{S}$-modules $\sh{M}$ and $\sh{N}$.
+This induces a homomorphism
+\[
+    \mu_k:
+    \shProj_0((\shHom_{\sh{S}}(\sh{M},\sh{N}))(k))
+    \to
+    (\shHom_{\sh{S}_X}(\shProj(\sh{M}),\shProj(\sh{N})))_k
+\]
+given by sending every $u\in\Gamma(U,\shProj_0((\shHom_{\sh{S}}(\sh{M},\sh{N}))(k)))$ to the homomorphism $\mu_k(u)$, of degree $k$, of graded $\bb{Z}$-modules $\Gamma(U,\shProj(\sh{M}))\to\Gamma(U,\shProj(\sh{N}))$ (where $U$ is open in $X$) which, in each $\Gamma(U,\shProj_0(\sh{M}(m)))$, agrees with $\mu_{m,m+k}(u)$;
+furthermore, by returning to the definition of the $\mu_{mn}$ \sref{II.2.5.12.1}, we immediately see that $\mu_k(u)$ is in fact a homomorphism of degree $k$ of graded $\Gamma(U,\sh{S}_X)$-modules, and, furthermore, that the $\mu_k$ define a homomorphism of \emph{graded $\sh{S}_X$-modules}
+\[
+\label{II.8.14.2.3}
+    \shProj(\shHom_{\sh{S}}(\sh{M},\sh{N}))
+    \to
+    \shHom_{\sh{S}_X}(\shProj(\sh{M}),\shProj(\sh{N})).
+\tag{8.14.2.3}
+\]
+
+Similarly, taking the associativity diagram \sref{II.2.5.11.4} into account, the homomorphisms \sref{II.8.14.2.1} give a homomorphism of \emph{graded $\sh{S}_X$-modules}
+\[
+\label{II.8.14.2.4}
+    \lambda:
+    \shProj(\sh{M})\otimes_{\sh{S}_X}\shProj(\sh{N})
+    \to
+    \shProj(\sh{M}\otimes_{\sh{S}}\sh{N}).
+\tag{8.14.2.4}
+\]
+\end{env}
+
+\oldpage[II]{198}
+
+\begin{proposition}[8.14.3]
+\label{II.8.14.3}
+The homomorphism \sref{II.8.14.2.4} is bijective;
+so too is \sref{II.8.14.2.3} whenever the graded $\sh{S}$-module $\sh{M}$ admits a finite presentation \sref{II.3.1.1}.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.8.14.3}
+The question is clearly local on $X$ and $Y$;
+we can thus suppose that $Y=\Spec(A)$ is affine, with $\sh{S}=\widetilde{S}$, $\sh{M}=\widetilde{M}$, and $\sh{N}=\widetilde{N}$, where $S$ is a positively-graded $A$-algebra, and $M$ and $N$ are graded $S$-modules.
+If $f$ is a homogeneous element of $S_+$, then the homomorphisms \sref{II.8.14.2.1} and \sref{II.8.14.2.2}, restricted to the affine open $D_+(f)$, correspond to the canonical homomorphisms \sref{II.2.5.11.1} and \sref{II.2.5.12.1}:
+\begin{align*}
+    M(m)_{(f)}\otimes_{S_{(f)}}N(n)_{(f)}
+    &\to
+    (M\otimes_S N)(m+n)_{(f)}
+\\  (\Hom_S(M,N))(n-m)_{(f)}
+    &\to
+    \Hom_{S_{(f)}}(M(m)_{(f)},N(n)_{(f)}).
+\end{align*}
+
+If
+\end{proof}
