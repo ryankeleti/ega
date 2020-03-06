@@ -2785,7 +2785,7 @@ the converse is evident.
 \end{remark}
 
 
-\subsection{Supplement on sheaves associated to graded $\sh{S}$-modules}
+\subsection{Supplement on sheaves associated to graded $\mathcal{S}$-modules}
 \label{subsection:II.8.14}
 
 \begin{env}[8.14.1]
@@ -2866,5 +2866,68 @@ If $f$ is a homogeneous element of $S_+$, then the homomorphisms \sref{II.8.14.2
     \Hom_{S_{(f)}}(M(m)_{(f)},N(n)_{(f)}).
 \end{align*}
 
-If
+If we refer to the definitions of these homomorphisms, we thus see (taking \sref{II.8.2.9.1} into account) that the restriction of \sref{II.8.14.2.4} to $D_+(f)$ corresponds to the canonical homomorphism
+\[
+    M_f\otimes_{S_f}N_f \to (M\otimes_S N)_f
+\]
+defined in \sref[0]{0.1.3.4}, and we know that this latter homomorphism is an isomorphism.
+Similarly, the restriction of \sref{II.8.14.2.3} to $D_+(f)$ corresponds to the canonical homomorphism \sref[0]{0.1.3.5}
+\[
+    (\Hom_S(M,N))_f \to \Hom_{S_f}(M_f,N_f)
+\]
+taking into account the fact that, since $M$ is of finite type, the module $\Hom_S(M,N)$, the direct sum of the subgroups consisting of \emph{homogeneous} homomorphisms of $S$-modules \sref{II.2.1.2}, agrees with the set of \emph{all} homomorphisms $M\to N$ of $S$-modules.
+The hypothesis that $M$ admits a finite presentation then implies \sref[0]{0.1.3.5} that the canonical homomorphism in question is indeed an isomorphism.
 \end{proof}
+
+\begin{proposition}[8.14.4]
+\label{II.8.14.4}
+If $U$ is a quasi-compact open of $X$, then there exists an integer $d$ such that, for every integer $n$ that is a multiple of $d$, $\sh{O}_X(n)|U$ is invertible, with its inverse being $\sh{O}_X(-n)|U$.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.8.14.4}
+Since $q(U)$ is quasi-compact, it is covered by a finite number of affine opens $V_i$, and so every $x\in U$ is contained in some affine open of the form $D_+(f)$, where $f$ is a homogeneous element of degree $>0$ of one of the rings $\Gamma(V_i,\sh{S})$.
+Since $U$ is quasi-compact, we can cover it by a finite number of such opens $D_+(f_j)$;
+let $d$ be a common multiple of the degrees of the $f_j$.
+This $d$ satisfies the desired property, by \sref{II.2.5.17}.
+\end{proof}
+
+\begin{env}[8.14.5]
+\label{II.8.14.5}
+With the hypotheses and notation of \sref{II.8.14.1}, we defined, in \sref{II.3.3.2}, canonical homomorphisms of $\sh{O}_Y$-modules
+\[
+\label{II.8.14.5.1}
+    \alpha_n: \sh{M}_n \to q_*(\shProj_0(\sh{M}(n)))
+    \qquad (n\in\bb{Z}).
+\tag{8.14.5.1}
+\]
+
+Generalising the notation of \sref{II.3.3.1}, we set, for every \emph{graded $\sh{S}_X$-module $\sh{F}$},
+\[
+\label{II.8.14.5.2}
+    \pmb{\Gamma}_*(\sh{F}) = \bigoplus_{n\in\bb{Z}}q_*(\sh{F}_n).
+\tag{8.14.5.2}
+\]
+
+In particular, $\pmb{\Gamma}(\sh{S}_X)=\bigoplus_{n\in\bb{Z}}q_*(\sh{O}_X(n))$ is the graded $\sh{O}_Y$-algebra denoted by $\pmb{\Gamma}_*(\sh{O}_X)$ in \sref{II.3.3.1.2};
+it is clear that $\pmb{\Gamma}(\sh{F})$ is a \emph{graded $\pmb{\Gamma}_*(\sh{S}_X)$-algebra} \sref[0]{0.4.2.2}.
+When
+\oldpage[II]{199}
+we take $\sh{M}=\sh{S}$ in the homomorphisms \sref{II.8.14.5.1}, we obtain the homomorphism of graded $\sh{O}_Y$-algebras
+\[
+\label{II.8.14.5.3}
+    \alpha:\sh{S}\to\pmb{\Gamma}(\sh{S}_X)
+\tag{8.14.5.3}
+\]
+previously defined in \sref{II.3.3.2}, and which makes $\pmb{\Gamma}_*(\sh{F})$ a \emph{graded $\sh{S}$-module};
+the homomorphisms \sref{II.8.14.5.1} then define a homomorphism (of degree $0$) of \emph{graded $\sh{S}$-modules}
+\[
+\label{II.8.14.5.4}
+    \alpha:\sh{M}\to\pmb{\Gamma}_*(\shProj(\sh{M})).
+\tag{8.14.5.4}
+\]
+\end{env}
+
+\begin{env}[8.14.6]
+\label{II.8.14.6}
+\end{env}
