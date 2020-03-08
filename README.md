@@ -84,6 +84,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 6. Integral morphisms and finite morphisms
     + [ ] 7. Valuative criteria
     + [ ] 8. Blowup schemes; based cones; projective closure _(@thosgood)_
+    + [x] _Errata and addenda (list 1)_
 - [ ] Cohomological study of coherent sheaves (EGA III)
     + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
     + [x] 1. Cohomology of affine schemes _(@ryankeleti)_
