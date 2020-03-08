@@ -4,13 +4,14 @@ FILES = what intro ega0 ega1 ega2 ega3 ega4 ref
 TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
 PDFLATEX = pdflatex
-PDF_DIR = $(shell pwd)/pdfs
+PDF_DIR = $(CURDIR)/pdfs
 WEBNAME = ega
 
 .PHONY: default
 default: $(TEX)
 	@echo "make pdfs       --- makes all pdfs"
 	@echo "make book       --- makes complete book pdf"
+	@echo "make book-wide  --- makes complete book pdf, but wide margins"
 	@echo "make all        --- make pdfs + make book"
 	@echo "make auto       --- make all, but for server"
 	@echo "make clean      --- clean up"
@@ -33,7 +34,7 @@ $(FILES): %: %.pdf
 
 .PHONY: book
 book:
-	python3 ./scripts/make_book.py "$(CURDIR)"
+	python3 ./scripts/make_book.py $(CURDIR)
 	$(PDFLATEX) book
 	$(PDFLATEX) book
 	bibtex book
@@ -44,7 +45,7 @@ book:
 
 .PHONY: book-wide
 book-wide:
-	python3 ./scripts/make_book.py "$(CURDIR)" --wide
+	python3 ./scripts/make_book.py $(CURDIR) --wide
 	$(PDFLATEX) book-wide
 	$(PDFLATEX) book-wide
 	bibtex book-wide
@@ -76,17 +77,15 @@ cleanforce:
 	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex book-wide.tex *-auto.tex ega-web.*
 	rm -rf $(PDF_DIR)
 	rm -rf tags $(WEBNAME).* $(WEBNAME)
-	rm -rf plastex/ gerby-website/
-	rm -rf env/
 
 .PHONY: all
 all: pdfs book
 
 .PHONY: auto
 auto:
-	python3 ./scripts/make_book.py "$(CURDIR)"
+	python3 ./scripts/make_book.py $(CURDIR)
 	cp book.tex book-auto.tex
-	sed -i 's/\\end{titlepage}/\\vskip0.5in\\noindent\\centerline{\\tt autobuild~::~$(shell date -u +"%F %H:%M %Z"),~git~hash~::~$(shell git rev-parse --short HEAD)}\\end{titlepage}/' book-auto.tex
+	sh ./scripts/add-auto-info.sh book-auto.tex
 	mkdir -p $(PDF_DIR)
 	$(PDFLATEX) book-auto
 	$(PDFLATEX) book-auto
@@ -96,7 +95,7 @@ auto:
 	mv book-auto.pdf $(PDF_DIR)
 	for f in $(FILES); do\
 	  cp "$$f".tex "$$f"-auto.tex;\
-	  sed -i 's/\\maketitle/\\maketitle\\noindent\\centerline{\\tt autobuild~::~$(shell date -u +"%F %H:%M %Z"),~git~hash~::~$(shell git rev-parse --short HEAD)}\\\\/' "$$f"-auto.tex;\
+	  sh ./scripts/add-auto-info.sh "$$f"-auto.tex;\
 	  $(PDFLATEX) "$$f"-auto;\
 	  $(PDFLATEX) "$$f"-auto;\
 	  bibtex "$$f"-auto;\
