@@ -2930,5 +2930,187 @@ the homomorphisms \sref{II.8.14.5.1} then define a homomorphism (of degree $0$) 
 
 \begin{env}[8.14.6]
 \label{II.8.14.6}
+In general, for a graded quasi-coherent $\sh{S}_X$-module $\sh{F}$, it is not certain that the graded $\sh{S}$-module $\boldsymbol{\Gamma}_*(\sh{F})$ will necessarily be quasi-coherent.
+Consider an open $X'$ of $X$ such that the restriction $q':X'\to Y$ of $q$ to $X'$ is a \emph{quasi-compact} morphism.
+Since $q'$ is further separated, $q'_*(\sh{F}')$ is then a quasi-coherent $\sh{O}_Y$-module for every quasi-coherent $\sh{O}_{X'}$ module $\sh{F}'$ \sref[I]{I.9.2.2}[b].
+We set
+\[
+\label{II.8.14.6.1}
+    \sh{S}_{X'} = \sh{S}_X|X' = \bigoplus_{n\in\bb{Z}}\sh{O}_X(n)|X'
+\tag{8.14.6.1}
+\]
+and, for every graded $\sh{S}_{X'}$-module $\sh{F}'$,
+\[
+\label{II.8.14.6.2}
+    \boldsymbol{\Gamma}'_*(\sh{F}') = \bigoplus_{n\in\bb{Z}}q'_*(\sh{F}'_n).
+\tag{8.14.6.2}
+\]
 
+The previous remark then shows that, if $\sh{F}'$ is a quasi-coherent $\sh{S}_{X'}$-module, then $\boldsymbol{\Gamma}'_*(\sh{F}')$ is a graded \emph{quasi-coherent} $\sh{S}$-module \sref[I]{I.9.6.1}.
+
+We note also that the canonical injection $j:X'\to X$ is \emph{quasi-compact}, because $q'=q\circ j$ is quasi-compact and $q$ is separated \sref[I]{I.6.6.4}[v].
+Then $\sh{F}=j_*(\sh{F}')$ is a graded quasi-coherent $\sh{S}_X$-module for every graded quasi-coherent $\sh{S}_{X'}$-module $\sh{F}$', and it follows from the previous definitions that
+\[
+\label{II.8.14.6.3}
+    \boldsymbol{\Gamma}'_*(\sh{F}') = \boldsymbol{\Gamma}_*(\sh{F}).
+\tag{8.14.6.3}
+\]
+
+With the same hypotheses on $X'$, for every graded quasi-coherent $\sh{S}$-module $\sh{M}$, we set
+\[
+\label{II.8.14.6.4}
+    \shProj'(\sh{M}) = \shProj(\sh{M})|X'
+\tag{8.14.6.4}
+\]
+which is a graded quasi-coherent $\sh{S}_{X'}$-module.
+The canonical homomorphism
+\[
+    \shProj(\sh{M}) \to j_*(\shProj'(\sh{M}))
+\]
+\sref[0]{0.4.4.3} thus gives a canonical homomorphism $\boldsymbol{\Gamma}_*(\shProj(\sh{M}))\to\boldsymbol{\Gamma}'_*(\shProj'(\sh{M}))$ of graded $\sh{S}$-modules, and, by composition with \sref{II.8.14.5.4}, we obtain a functorial canonical homomorphism (of degree $0$) of graded quasi-coherent $\sh{S}$-modules
+\[
+\label{II.8.14.6.5}
+    \alpha': \sh{M} \to \boldsymbol{\Gamma}'_*(\shProj'(\sh{M})).
+\tag{8.14.6.5}
+\]
 \end{env}
+
+\begin{env}[8.14.7]
+\label{II.8.14.7}
+Keeping the hypotheses on $X'$ from \sref{II.8.14.6}, let $\sh{F}'$ be a \emph{graded quasi-coherent $\sh{S}_{X'}$-module} such that $\shProj'(\boldsymbol{\Gamma}'_*(\sh{F}'))$ is also a graded \emph{quasi-coherent} $\sh{S}_{X'}$-module.
+\oldpage[II]{200}
+We will define a functorial canonical homomorphism (of degree $0$) of graded $\sh{S}_{X'}$-modules
+\[
+\label{II.8.14.7.1}
+    \beta': \shProj'(\boldsymbol{\Gamma}'_*(\sh{F}')) \to \sh{F}'.
+\tag{8.14.7.1}
+\]
+
+Suppose first of all that $Y=\Spec(A)$ is affine, and that $\sh{S}=\widetilde{S}$, where $S$ is a positively-graded $A$-algebra;
+then $\boldsymbol{\Gamma}'_*(\sh{F}')=\widetilde{M}$, where $M=\bigoplus{n\in\bb{Z}}\Gamma(X',\sh{F}'_n)$ is a graded $S$-module.
+Let $f\in S_d$ be such that $D_+(f)\subset X'$;
+by definition \sref{II.2.6.2}, $\alpha_d(f)$ restricted to $D_+(f)$ is the section of $\sh{O}_X(d)$ over $D_+(f)$ corresponding to the element $f/1$ of $(S(d))_{(f)}$, and is thus invertible;
+thus so too is $\alpha_d(f^n)$ for every $n>0$.
+From this, we immediately conclude that we have defined an $S_f$-homomorphism (of degree $0$) of graded modules $\beta_f:M_f\to\Gamma(D_+(f),\sh{F}')$ by sending each element $z/f^n\in M_f$ (where $z\in M$) to the section $(z|D_+(f))(\alpha_d(f^n)|D_+(f))^{-1}$ of $\sh{F}'$ over $D_+(f)$.
+Furthermore, we have a commutative diagram corresponding to \sref{II.2.6.4.1}, whence the definition of $\beta'$ in this case.
+To pass to the general case, we must consider an $A$-algebra $A'$, the graded $A'$-algebra $S'=S\otimes_A A'$, and use the commutative diagram analogous to \sref{II.2.8.13.2};
+we leave the details to the reader.
+\end{env}
+
+\begin{proposition}[8.14.8]
+\label{II.8.14.8}
+If $X'$ is an open of $X=\Proj(\sh{S})$ such that $q':X'\to Y$ is quasi-compact, then the homomorphism $\beta'$ defined in \sref{II.8.14.7} is bijective.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.8.14.8}
+We can clearly restrict to the case where $Y$ is affine, and everything then reduces to proving (with the notation of \sref{II.8.14.7}) that the homomorphism $\beta_f:M_f\to\Gamma(D_+(f),\sh{F}')$ is an isomorphism.
+But replacing $f$ by one of its powers changes neither $D_+(f)$ nor $\beta_f$;
+since $X'$ is \emph{quasi-compact} by hypothesis, we can always assume, by \sref{II.8.14.4}, that the sheaf $\sh{O}_X(d)$ is \emph{invertible}.
+Since $X'$ is a scheme (because $q'$ is separated), the proposition is then exactly \sref[I]{I.9.3.1}.
+\end{proof}
+
+\begin{corollary}[8.14.9]
+\label{II.8.14.9}
+Under the hypotheses of \sref{II.8.14.8}, every graded quasi-coherent $\sh{S}_{X'}$-module is isomorphic to a graded $\sh{S}_{X'}$-module of the form $\shProj'(\sh{M})$, where $\sh{M}$ is a graded quasi-coherent $\sh{S}$-module.
+Further, if $\sh{F}'$ is of finite type, and if we assume that $Y$ is a quasi-compact scheme, or a prescheme whose underlying space is Noetherian, then we can assume that $\sh{M}$ is of finite type.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.8.14.9}
+The proof starting from \sref{II.8.14.8} follows exactly the same route as the proof of \sref{II.3.4.5} starting from \sref{II.3.4.4}, and we leave the details to the reader.
+\end{proof}
+
+\begin{proposition}[8.14.10]
+\label{II.8.14.10}
+Under the hypotheses of \sref{II.8.14.7}, let $\sh{M}$ be a graded quasi-coherent $\sh{S}$-module, and $\sh{F}'$ a graded quasi-coherent $\sh{S}_{X'}$-module;
+the composite homomorphisms
+\[
+\label{II.8.14.10.1}
+    \shProj'(\sh{M})
+    \xrightarrow{\shProj'(\alpha')}
+    \shProj'(\boldsymbol{\Gamma}'_*(\shProj'(\sh{M})))
+    \xrightarrow{\beta'}
+    \shProj'(\sh{M})
+\tag{8.14.10.1}
+\]
+\[
+\label{II.8.14.10.2}
+    \boldsymbol{\Gamma}'_*(\sh{F}')
+    \xrightarrow{\alpha'}
+    \boldsymbol{\Gamma}'_*(\shProj'(\boldsymbol{\Gamma}'_*(\sh{F}')))
+    \xrightarrow{\boldsymbol{\Gamma}'_*(\beta')}
+    \boldsymbol{\Gamma}'_*(\sh{F}')
+\tag{8.14.10.2}
+\]
+are the identity isomorphisms.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.8.14.10}
+The question is local on $Y$, and the proof follows as in \sref{II.2.6.5};
+we leave the details to the reader.
+\end{proof}
+
+\begin{remark}[8.14.11]
+\label{II.8.14.11}
+In chapter~III \sref[III]{III.2.3.1}, we will see that, when $Y$ is \emph{locally Noetherian}, and $\sh{S}$ is a graded quasi-coherent $\sh{O}_Y$-algebra \emph{of finite type} (in which case
+\oldpage[II]{201}
+we can take $X'=X$), then the homomorphism $\alpha$ \sref{II.8.14.5.4} is \textbf{(TN)}-\emph{bijective} for every graded quasi-coherent $\sh{S}$-module $\sh{M}$ satisfying condition~\textbf{(TF)}.
+\end{remark}
+
+\begin{remark}[8.14.12]
+\label{II.8.14.12}
+The situation described in \sref{II.8.14.4} is a particular case of the following.
+Let $X$ be a ringed space, and $\sh{S}$ a (positively- and negatively-) graded $\sh{O}_X$-algebra;
+suppose that there exists an integer $d>0$ such that $\sh{S}_d$ and $\sh{S}_{-d}$ are \emph{invertible}, with the canonical homomorphism
+\[
+\label{II.8.14.12.1}
+    \sh{S}_d\otimes_{\sh{O}_X}\sh{S}_{-d} \to \sh{O}_X
+\tag{8.14.12.1}
+\]
+being an \emph{isomorphism} (such that $\sh{S}_{-d}$ is identified with $\sh{S}_d^{-1}$).
+We then say that the graded $\sh{O}_X$-algebra $\sh{S}$ is \emph{periodic}, \emph{of period $d$}.
+This nomenclature stems from the following property:
+\emph{under the preceding hypotheses, for every graded $\sh{S}$-module $\sh{F}$, the canonical homomorphism}
+\[
+\label{II.8.14.12.2}
+    \sh{S}_d\otimes\sh{F}_n \to \sh{F}_{n+d}
+\tag{8.14.12.1}
+\]
+\emph{is an isomorphism for all $n\in\bb{Z}$.}
+Indeed, the question is local on $X$, and we can assume that $\sh{S}_d$ has an \emph{invertible} section $s$ over $X$, with its inverse $s'$ being a section of $\sh{S}_{-d}$.
+The homomorphism $\sh{F}_{n+d}\to\sh{S}_d\otimes\sh{F}_n$, which sends each section $z\in\Gamma(U,\sh{F}_{n+d})$ to the section $(s|U)\otimes(s'|U)z$ of $\sh{S}_d\otimes\sh{F}_n$ over $U$, is then the inverse of \sref{II.8.14.12.2}, whence our claim.
+This induces, for all $k\in\bb{Z}$, a canonical isomorphism
+\[
+    (\sh{S}_d)^{\otimes k}\otimes\sh{F}_n \xrightarrow{\sim} \sh{F}_{n+kd}.
+\]
+Then \emph{the data of a graded $\sh{S}$-module $\sh{F}$ is equivalent to the data of $\sh{S}_0$-modules $\sh{F}_i$ ($0\leq i\leq d-1$) and canonical homomorphisms}
+\[
+    \sh{S}_i\otimes\sh{F}_j \to \sh{F}_{i+j}
+    \qquad
+    \mbox{for $0\leq i,j\leq d-1$}
+\]
+(setting $\sh{F}_{i+j}=\sh{S}_d\otimes_{\sh{S}_0}\sh{F}_{i+j-d}$ whenever $i+j\geq d$).
+Of course, for theses homomorphisms to give a well-defined $\sh{S}$-module structure on the direct sum of the $(\sh{S}_d)^{\otimes k}\otimes\sh{F}_i$ ($k\in\bb{Z}$, $0\leq i\leq d-1$), they should satisfy some associativity conditions that we will not explain.
+
+In the case where $d=1$ (which is the one considered in \sref{subsection:II.3.3}), we can thus say that the category of graded $\sh{S}$-modules (resp. quasi-coherent $\sh{S}$-modules if $X$ is a prescheme and $\sh{S}$ is quasi-coherent) is \emph{equivalent} to the category of arbitrary $\sh{S}_0$-modules (resp. quasi-coherent $\sh{S}_0$-modules);
+it is in this way that we can think of the results of this paragraph as generalising those of §3.
+Furthermore, we see that, under suitable finiteness conditions, the results of this paragraph (along with \sref{II.8.14.11}) reduces, in some sense, the study of graded quasi-coherent algebras on a prescheme, and graded modules ``modulo \textbf{(TN)}'' on such algebras, to the study of the particular case where the algebras in question are \emph{periodic} (and where condition~\textbf{(TN)} for $\sh{M}$ \sref{II.3.4.2} thus implies that $\sh{M}=0$).
+\end{remark}
+
+\begin{remark}[8.14.13]
+\label{II.8.14.13}
+Under the hypotheses of \sref{II.8.14.1}, let $d$ be an integer $>0$;
+we have defined a canonical $Y$-isomorphism $h$ from $X$ to $X^{(d)}=\Proj(\sh{S}^{(d)})$ \sref{II.3.1.8}.
+For every
+\oldpage[II]{202}
+graded quasi-coherent $\sh{S}$-module $\sh{M}$ and every integer $k$ such that $0\leq k\leq d-1$, we also have (with the notation of \sref{II.3.1.1}) a canonical $h$-isomorphism
+\[
+\label{II.8.14.13.1}
+    (\shProj(\sh{M}))^{(d,k)} \xleftarrow{\sim} \shProj(\sh{M}^{(d,k)}).
+\tag{8.14.13.1}
+\]
+
+Suppose, first of all, that
+\end{remark}
