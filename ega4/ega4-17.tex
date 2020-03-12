@@ -1,0 +1,85 @@
+\section{Smooth morphisms, unramified morphisms, and \'etale morphisms.}
+\label{section:IV.17}
+
+In this paragraph, we revisit the concepts studied in (\textbf{0}\textsubscript{III},~\hyperref[section:0.9]{9}), expressed in the geometric language of schemes from a global point of view, for preschemes locally of finite presentation over a given base.
+Most of the results (except ~\hyperref[subsection:IV.17.7]{17.7}, ~\hyperref[subsection:IV.17.8]{17.8}, ~\hyperref[subsection:IV.17.9]{17.9}, ~\hyperref[subsection:IV.17.13]{17.13} and ~\hyperref[subsection:IV.17.16]{17.16}) are reduced to various properties already encountered in (\textbf{0}\textsubscript{III},~\hyperref[section:0.9]{9}).
+For more specific results on \'etale morphisms, the reader should consult ~\textsection\hyperref[section:IV.18]{18}. 
+
+\subsection{Formally smooth morphisms, formally unramified morphisms, formally \'etale morphisms.}
+\label{subsection:IV.17.1}
+
+\begin{definition}[17.1.1]
+\label{IV.17.1.1}
+Let $f:X\to Y$ be a morphism of preschemes. We say that $f$ is \emph{formally smooth} (resp. \emph{formally unramified}, resp. \emph{formally \'etale}) if, for all affine schemes $Y'$, all closed subschemes $Y'_{0}$ of $Y'$ defined by a nilpotent ideal $\sh{J}$ of $\sh{O}_{Y'}$, and every morphism $Y'\to Y$the map 
+\[
+\label{IV.17.1.1.1}
+\operatorname{Hom}_{Y}(Y', X) \to \operatorname{Hom}_{Y}(Y'_{0}, X)
+\tag{17.1.1.1}
+\] induced by the canonical map $Y'_{0}\to Y'$, is \emph{surjective} (resp. \emph{injective}, resp. \emph{bijective}).
+One also says that $X$ is \emph{formally smooth} (resp. \emph{formally unramified}, resp. \emph{formally \'etale}) over $Y$.
+It is clear that for $f$ being formally \'etale, it is necessary and sufficient that $f$ is formally smooth and formally unramified.
+\end{definition}
+
+\begin{remark}[17.1.2]
+\label{IV.17.1.2}
+\begin{enumerate}
+	\item[(i)] Assume that $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, so that $f$ comes from a homomorphism of rings $\varphi: A \to B$. According to (\textbf{0}, \hyperref[0.19.3.1]{19.3.1} and \textbf{0}, \hyperref[0.19.10.1]{19.10.1}), saying that $f$ is formally smooth (resp. formally unramified, resp. formally \'etale) means that, via $\varphi$, $B$ is a formally smooth (resp. formally unramified, resp. formally \'etale) $A$-algebra, where $A$ and $B$ are endowed with the discrete topologies.
+	\item[(ii)] To verify that $f$ is formally smooth (resp. formally unramified, resp. formally \'etale), one can, in definition $(\hyperref[IV.17.1.1]{17.1.1})$, restrict to the case where $\sh{J}^2 = 0$.\\
+To see this, if $f$ satisfies the corresponding condition of definition (\hyperref[IV.17.1.1]{17.1.1}) in the particular case $\sh{J}^2 = 0$, and if $\sh{J}^n = 0$, one considers the closed subscheme $Y'_j$ of $Y'$ defined by the ideal $\sh{J}^{j+1}$ for all $0\leq j \leq n-1$, so that $Y'_j$ is a closed subscheme of $Y'_{j+1}$ defined by a square-zero ideal; the assumptions implies that each of the maps
+\[
+	\operatorname{Hom}_Y(Y'_{j+1}, X) \to \operatorname{Hom}_Y(Y'_j, X) \hspace{1cm} (0 \leq j \leq n-1) TODO
+\] is surjective (resp. injective, resp. bijective); by composition, one concludes that the same holds for $\hyperref[IV.17.1.1.1]{17.1.1.1}$.
+\item[(iii)] Note that the properties of the morphism $f$ defined in (\hyperref[IV.17.1.1]{17.1.1}) are properties of the representable functor (\textbf{0}\textsubscript{III}, \hyperref[0.8.1.8]{8.1.8})
+\[
+  TODO Y' \mapsto \operatorname{Hom}_Y(Y', X) 
+\] from the category of $Y$-preschemes to the category of sets; they keep a meaning for \emph{any} contravariant functor with the same domain and codomain, representable or not.
+\item[(iv)] Assume that the morphism $f$ is formally unramified (resp. formally \'etale); consider an \emph{arbitrary} $Y$-prescheme $Z$ and a closed subprescheme $Z_0$ of $Z$ defined by a \emph{locally nilpotent} ideal $\sh{J}$ of $\sh{O}_Z$. Then the map
+\[
+\label{IV.17.1.2.1}	
+		\operatorname{Hom}_Y(Z, X) \to \operatorname{Hom}_Y(Z_0, X)
+\tag{17.1.2.1}
+		\] induced by the injection $Z_0 \to Z$, is still injective (resp. bijective).
+		To see this, let $(U_\alpha)$ be an open affine covering of $Z$ such that the ideals $\sh{J}|U_\alpha$ are nilpotent, and for each $\alpha$, let $U_\alpha ^0$ denote the preimage of $U_\alpha$ in $Z_0$, which is the closed subprescheme of $U_\alpha$ defined by $\sh{J}|U_\alpha$. Let $f_0: Z_0 \to X$ by a $Y$-morphism; by assumption, for each $\alpha$, there is at most one (resp. one and only one) $Y$-morphism $f_\alpha: U_\alpha \to X$ whose restriction to $Z_0$ coincides with $f_0|U_\alpha$. We immediately conclude that if $f_\alpha$ and $f_\beta$ are defined, then, for each affine open $V \subset U_\alpha \cap U_\beta$, we have $f_\alpha|V = f_\beta|V$, as the restrictions of these morphisms to the preimage $V_0$ of $V$ in $Z_0$ coincide. There is therefore at most one (resp. one and only one) morphism $f : Z \to X$ whose restriction to $Z_0$ coincides with $f_0$.
+\end{enumerate}
+\end{remark}
+
+\begin{proposition}[17.1.3]
+\label{IV.17.1.3}
+\begin{enumerate}
+\item[(i)] A monomorphism of preschemes is formally unramified; an open immersion is formally \'etale.
+\item[(ii)] The composition of two formally smooth (resp. formally unramified, resp. formally \'etale) morphisms is formally smooth (resp. formally unramified, resp. formally \'etale).
+\item[(iii)] If $f:X\to Y$ is a formally smooth (resp. formally unramified, resp. formally \'etale) $S$-morphism, so is $f_{(S')}:X_{(S')}\to Y_{(S')}$ for any base extension $S'\to S$.
+\item[(iv)] If $f: X \to X'$ and $g: Y \to Y'$ are two formally smooth (resp. formally unramified, resp. formally \'etale) $S$-morphisms, so is $f \times_{S} g: X\times_{S} Y \to X' \times_{S} Y'$.
+\item[(v)] Let $f : X \to Y$ and $g : Y \to Z$ be two morphisms; if $g \circ f$ is formally unramified, so is $f$.
+\item[(vi)] If $f : X \to Y$ is a formally unramified morphism, so is $f_{\mathrm{red}}: X_{\mathrm{red}} \to Y_{\mathrm{red}}$.
+\end{enumerate}
+\end{proposition}
+TODO:proof
+
+\begin{proposition}[17.1.4]
+\label{IV.17.1.4}
+	Let $f: X \to Y$ and $g: Y \to Z$ be two morphisms, and assume that $g$ is formally unramified. Then, if $g \circ f$ is formally smooth (resp. formally \'etale), so is $f$.
+\end{proposition}
+TODO:proof
+
+\begin{corollary}[17.1.5]
+\label{IV.17.1.5}
+	Assume that $g$ is formally \'etale; then, for $g \circ f$ being formally smooth (resp. formally unramified, resp. formally \'etale), it is necessary and sufficient that $f$ is.
+\end{corollary}	
+This results from (\hyperref[IV.17.1.4]{17.1.4}) and (\hyperref[IV.17.1.3]{17.1.3}, $(ii)$ and $(iv)$).
+\begin{proposition}[17.1.6]
+\label{IV.17.1.6}
+Let $f:X\to Y$ be a morphism of preschemes.
+\begin{enumerate}
+	\item[(i)] Let $(U_\alpha)$ be an open covering of $X$ and, for each $\alpha$, let $i_\alpha: U_\alpha \to X$ be the canonical injection. For $f$ being formally smooth (resp. formally unramified, resp. formally \'etale), it is necessary and sufficient that each $f \circ i_\alpha$ is.
+	\item[(ii)] Let $(V_\lambda)$ be an open covering of $Y$. For $f$ being formally smooth (resp. formally unramified, resp. formally \'etale), it is necessary and sufficient that each restriction $f^{-1}(V_\lambda) \to V_\lambda$ of $f$ is.
+\end{enumerate}
+\end{proposition}	
+TODO:proof
+
+\subsection{General properties of differentials}
+\label{subsection:IV.17.2}
+
+
+
+
