@@ -27,11 +27,12 @@ It is clear that for $f$ being formally \'etale, it is necessary and sufficient 
 	\item[(ii)] To verify that $f$ is formally smooth (resp. formally unramified, resp. formally \'etale), one can, in definition $(\hyperref[IV.17.1.1]{17.1.1})$, restrict to the case where $\sh{J}^2 = 0$.\\
 To see this, if $f$ satisfies the corresponding condition of definition (\hyperref[IV.17.1.1]{17.1.1}) in the particular case $\sh{J}^2 = 0$, and if $\sh{J}^n = 0$, one considers the closed subscheme $Y'_j$ of $Y'$ defined by the ideal $\sh{J}^{j+1}$ for all $0\leq j \leq n-1$, so that $Y'_j$ is a closed subscheme of $Y'_{j+1}$ defined by a square-zero ideal; the assumptions implies that each of the maps
 \[
-	\operatorname{Hom}_Y(Y'_{j+1}, X) \to \operatorname{Hom}_Y(Y'_j, X) \hspace{1cm} (0 \leq j \leq n-1) TODO
+%TODO%
+	\operatorname{Hom}_Y(Y'_{j+1}, X) \to \operatorname{Hom}_Y(Y'_j, X) \ \ \ \ \ (0 \leq j \leq n-1) 
 \] is surjective (resp. injective, resp. bijective); by composition, one concludes that the same holds for $\hyperref[IV.17.1.1.1]{17.1.1.1}$.
 \item[(iii)] Note that the properties of the morphism $f$ defined in (\hyperref[IV.17.1.1]{17.1.1}) are properties of the representable functor (\textbf{0}\textsubscript{III}, \hyperref[0.8.1.8]{8.1.8})
 \[
-  TODO Y' \mapsto \operatorname{Hom}_Y(Y', X) 
+  Y' \mapsto \operatorname{Hom}_Y(Y', X) 
 \] from the category of $Y$-preschemes to the category of sets; they keep a meaning for \emph{any} contravariant functor with the same domain and codomain, representable or not.
 \item[(iv)] Assume that the morphism $f$ is formally unramified (resp. formally \'etale); consider an \emph{arbitrary} $Y$-prescheme $Z$ and a closed subprescheme $Z_0$ of $Z$ defined by a \emph{locally nilpotent} ideal $\sh{J}$ of $\sh{O}_Z$. Then the map
 \[
@@ -54,14 +55,14 @@ To see this, if $f$ satisfies the corresponding condition of definition (\hyperr
 \item[(vi)] If $f : X \to Y$ is a formally unramified morphism, so is $f_{\mathrm{red}}: X_{\mathrm{red}} \to Y_{\mathrm{red}}$.
 \end{enumerate}
 \end{proposition}
-TODO:proof
-
+Using (\textbf{I}, \hyperref[I.5.5.12]{5.5.12}), it suffices to prove $(i)$, $(ii)$, and $(iii)$. The assertions in $(i)$ are both trivial. To prove $(ii)$, consider two morphisms $f: X \to Y$, $g: Y \to Z$, an affine scheme $Z'$, a closed subscheme $Z'_0$ of $Z$ defined by a nilpotent ideal and a morphism $Z' \to Z$. Assume $f$ and $g$ formally smooth, and consider a $Z$-morphism $u_0 : Z'_0 \to X$; the assumption on $g$ implies that there exists a $Z$-morphism $v: Z' \to Y$ such that $f \circ u_0 = v \circ j$ (where $j : Z'_0 \to Z$ is the canonical injection); the assumption on $f$ implies that there exists a morphism $u : Z' \to X$ such that $f \circ u = v$ and $u \circ j = u_0$. Therefore $(g \circ f) \circ u$ is equal to the given morphism $Z' \to Z$ and $u \circ j = u_0$, which proves that $g \circ f$ is formally smooth; we reason the same way when $f$ and $g$ are assumed formally unramified.\\
+Finally, to demonstrate $(iii)$, let $X' = X_{S'}$, $Y' = Y_{S'}$, $f' = f_{S'}$; consider an affine scheme $Y''$, a closed subscheme $Y''_0$ defined by a nilpotent ideal and a morphism $g : Y'' \to Y'$ making $Y''$ a $Y'$-prescheme; we then know by (\textbf{I}, \hyperref[I.3.3.8]{3.3.8}) that $\operatorname{Hom}_{Y'}(Y'', X')$ is canonically identified with $\operatorname{Hom}_{Y}(Y'', X)$ and that $\operatorname{Hom}_{Y'}(Y''_0, X')$ is canonically identified with $\operatorname{Hom}_{Y}(Y''_0, X)$, and the conclusion follows immediately from the definition $(\hyperref[IV.17.1.1]{17.1.1})$.\\
+Note that a \emph{closed immersion} is not necessarily formally smooth:
 \begin{proposition}[17.1.4]
 \label{IV.17.1.4}
 	Let $f: X \to Y$ and $g: Y \to Z$ be two morphisms, and assume that $g$ is formally unramified. Then, if $g \circ f$ is formally smooth (resp. formally \'etale), so is $f$.
 \end{proposition}
-TODO:proof
-
+Indeed, let $Y'$ be an affine scheme, $Y'_0$ a closed subscheme of $Y'$ defined by a nilpotent ideal, $h: Y' \to Y$ a morphism, $j: Y'_0 \to Y'$ the canonical injection, $u_0: Y'_0 \to Y$ a $Y$-morphism, such that $f \circ u_0 = h \circ j$. Assume $g \circ f$ formally smooth; hence there exists a morphism $u : Y' \to X$ such that $u \circ j = u_0$ and $(g\circ f) \circ u = g \circ h$. But these two relations ensure that $f \circ u$ and $h$ are $Z$-morphisms from $Y'$ to $Y$ such that $(f\circ u)\circ j = h \circ j$; by virtue of the assumption that $g$ is formally unramified, we derive that $f \circ u = h$, in other words that $u$ is a $Y$-morphism; thus $f$ is formally smooth. Taking into account $(\hyperref[IV.17.1.3]{17.1.3}, (v))$, this demonstrates the proposition.
 \begin{corollary}[17.1.5]
 \label{IV.17.1.5}
 	Assume that $g$ is formally \'etale; then, for $g \circ f$ being formally smooth (resp. formally unramified, resp. formally \'etale), it is necessary and sufficient that $f$ is.
@@ -75,8 +76,15 @@ Let $f:X\to Y$ be a morphism of preschemes.
 	\item[(ii)] Let $(V_\lambda)$ be an open covering of $Y$. For $f$ being formally smooth (resp. formally unramified, resp. formally \'etale), it is necessary and sufficient that each restriction $f^{-1}(V_\lambda) \to V_\lambda$ of $f$ is.
 \end{enumerate}
 \end{proposition}	
-TODO:proof
+First note that $(ii)$ is a consequence of $(i)$: indeed, if $j_\lambda: V_\lambda \to Y$ and $i_\lambda: f^{-1}(V_\lambda) \to X$ are the canonical injections, the restriction $f_\lambda : f^{-1}(V_\lambda) \to V_\lambda$ of $f$ is such that $j_\lambda \circ f_\lambda = f \circ i_\lambda$; if $f$ is formally smooth (resp. formally unramified), then so is $f \circ i_\lambda$ since $i_\lambda$ is formally \'etale (\hyperref[IV.17.1.3]{17.1.3}); but since $j_\lambda$ is formally \'etale, this means that $f_\lambda$ is formally smooth (resp. formally unramified), in virtue of $(\hyperref[IV.17.1.5]{17.1.5})$. Conversely, if all $f_\lambda$ are formally smooth (resp. formally unramified), the same applies to $j_\lambda \circ f_\lambda$ $(\hyperref[IV.17.1.3]{17.1.3})$, so also to $f$ in virtue of $(i)$.\\
 
+If we take into account that the $i_\alpha$ are formally \'etale, everything comes down to proving that if the $f \circ i_\alpha$ are formally smooth (resp. formally unramified), the same applies to $f$.\\
+
+Let therefore $Y'$ be an affine scheme, $Y'_0$ a closed subscheme of $Y'$ defined by a nilpotent ideal $\sh{J}$, which we may assume to satisfy $\sh{J}^2 = 0$ $(\hyperref[IV.17.1.2]{17.1.2}, (ii))$, and finally let $g : Y' \to Y$ be a morphism. Suppose given a $Y$-morphism $u_0 : Y'_0 \to X$; denote by $W_\alpha$ (resp. $W^0 _\alpha$) the prescheme induced by $Y'$ (resp. $Y'_0$) on the open subset $u_0 ^{-1}(U_\alpha)$ (we recall that $Y'$ and $Y'_0$ share the \emph{same underlying topological space}). Let us first suppose that the $f \circ i_\alpha$ are \emph{formally unramified}, and show that, if $u'$ and $u''$ are two $Y$-morphisms from $Y'$ to $X$ whose restriction to $Y'_0$ coincide, then we have $u' = u''$. Indeed, taking into account $(\hyperref[IV.17.1.2]{17.1.2}, (iv))$, the assumption that the $f \circ i_\alpha$ are formally unramified imply that for all $\alpha$, we have $u'|W_\alpha = u''|W_\alpha$, since the restrictions of both $Y$-morphisms to $W^0 _\alpha$ coincide. Hence the conclusion follows.\\
+
+Now assume the $f \circ i_\alpha$ to be \emph{formally smooth} and prove the existence of a $Y$-morphism $u : Y' \to X$ whose restriction to $Y'_0$ is $u_0$. Now, since $Y'$ is an \emph{affine scheme}, we may apply $(\hyperref[IV.16.5.17]{16.5.17})$ the hypotheses of which are satisfied, and the conclusion of which precisely demonstrate the existence.\\
+
+We can therefore say that the notions introduced in $(\hyperref[IV.17.1.1]{17.1.1})$ are \emph{local} on $X$ and $Y$, which always allows, in virtue of $(\hyperref[IV.17.1.2]{17.1.2}, (i))$, to be reduced to the study of formally smooth (resp. formally unramified, resp. formally \'etale) \emph{algebras}.
 \subsection{General properties of differentials}
 \label{subsection:IV.17.2}
 
