@@ -85,8 +85,86 @@ Let therefore $Y'$ be an affine scheme, $Y'_0$ a closed subscheme of $Y'$ define
 Now assume the $f \circ i_\alpha$ to be \emph{formally smooth} and prove the existence of a $Y$-morphism $u : Y' \to X$ whose restriction to $Y'_0$ is $u_0$. Now, since $Y'$ is an \emph{affine scheme}, we may apply $(\hyperref[IV.16.5.17]{16.5.17})$ the hypotheses of which are satisfied, and the conclusion of which precisely demonstrate the existence.\\
 
 We can therefore say that the notions introduced in $(\hyperref[IV.17.1.1]{17.1.1})$ are \emph{local} on $X$ and $Y$, which always allows, in virtue of $(\hyperref[IV.17.1.2]{17.1.2}, (i))$, to be reduced to the study of formally smooth (resp. formally unramified, resp. formally \'etale) \emph{algebras}.
+
 \subsection{General properties of differentials}
 \label{subsection:IV.17.2}
+
+\begin{proposition}[17.2.1]
+\label{IV.17.2.1}
+For a morphism $f : X \to Y$ to be formally unramified, it is necessary and sufficient that $\Omega^1 _f = 0$ (what we still write $\Omega^1 _{X/Y} = 0$ $(\hyperref[IV.16.3.1]{16.3.1})$).	
+\end{proposition}
+Taking into account $(\hyperref[IV.17.1.6]{17.1.6})$, we are reduced to the case where $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, and the conclusion then results from $(\textbf{0}, \hyperref[0.20.7.4]{20.7.4})$ and the interpretation of $\Omega^1 _{X/Y}$ in this case $(\hyperref[IV.16.3.7]{16.3.7})$.
+
+\begin{corollary}[17.2.2]
+\label{IV.17.2.2}
+Let $f: X \to Y$ and $g: Y \to Z$ be two morphisms. For $f$ being formally unramified, it is necessary and sufficient that the canonical morphism $(\hyperref[IV.16.4.19]{16.4.19})$
+\[
+  f^*(\Omega^1_{Y/Z}) \to \Omega^1_{X/Z}
+\] is surjective.
+\end{corollary}
+This is an immediate consequence of $(\hyperref[IV.17.2.1]{17.2.1})$ and the exact sequence $(\hyperref[IV.16.4.19.1]{16.4.19.1})$.
+
+\begin{proposition}[17.2.3]
+\label{IV.17.2.3}
+Let $f: X \to Y$ be a formally smooth morphism.
+\begin{enumerate}
+\item[(i)] The $\sh{O}_X$-module $\Omega^1 _{X/Y}$ is locally projective $(\hyperref[IV.16.10.1]{16.10.1})$. If $f$ is locally of finite type, $\Omega^1 _{X/Y}$ is locally free and of finite type.
+\item[(ii)] For all morphisms $g : Y \to Z$, the sequence $(\hyperref[IV.16.4.19]{16.4.19})$ of $\sh{O}_X$-modules
+\[
+\label{IV.17.2.3.1}
+ 0 \to f^*(\Omega^1 _{Y/Z}) \to \Omega^1 _{X/Z} \to \Omega^1 _{X/Y} \to 0
+\tag{17.2.3.1}
+\] is exact; moreover, for each $x \in X$, it exists an open neighborhood $U$ of $x$ such that the restrictions to $U$ of the homomorphisms in $(\hyperref[IV.17.2.3.1]{17.2.3.1})$ form an exact and split sequence.
+\end{enumerate}
+\end{proposition}
+\begin{enumerate}
+\item[(i)] We know $(\hyperref[IV.16.3.9]{16.3.9})$ that if $f$ is locally of finite type, $\Omega^1 _f$ is an $\sh{O}_X$-module of finite type. To prove that, in all cases, it is locally projective, we are reduced, by virtue of $(\hyperref[IV.17.1.6]{17.1.6})$, to the case where $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, and we conclude by the assumptions on $f$ and by $(\textbf{0}, \hyperref[0.20.4.9]{20.4.9}, \textbf{0}, \hyperref[0.19.2.1]{19.2.1})$.
+\item[(ii)] Here again, we can limit ourselves to the case where $X, Y$ and $Z$ are affine $(\hyperref[IV.17.1.6]{17.1.6})$, and the conclusion results from the interpretation of the modules in the sequence $(\hyperref[IV.17.2.3.1]{17.2.3.1})$ in this case and by $(\textbf{0}, \hyperref[0.20.5.7]{20.5.7})$.
+\end{enumerate}
+
+\begin{corollary}[17.2.4]
+\label{IV.17.2.4}
+If $f : X \to Y$ is formally \'etale, then, for all morphisms $g : Y \to Z$, the canonical homomorphisms of $\sh{O}_X$-modules
+\[
+  f^*(\Omega^1 _{Y/Z}) \to \Omega^1 _{X/Z}
+\] is bijective.
+\end{corollary}
+This results the exactness of the sequence $(\hyperref[IV.17.2.3.1]{17.2.3.1})$ and from the fact that we then have $\Omega^1 _{X/Y} = 0$ $(\hyperref[IV.17.2.1]{17.2.1})$.
+
+\begin{proposition}[17.2.5]
+\label{IV.17.2.5}
+Let $f: X \to Y$ be a morphism, $X'$ a subprescheme of $X$ such that the composed morphism $\xymatrix{X' \ar[r]^{j} & X \ar[r]^{f} & Y}$ (where $j$ is the canonical injection) is formally smooth. Then the sequence of $\sh{O}_X$-modules $(\hyperref[IV.16.4.21]{16.4.21})$
+\[
+\label{IV.17.2.5.1}
+0 \to \sh{N}_{X'/X} \to \Omega^1 _{X/Y} \otimes_{\sh{O}_X} \sh{O}_{X'} \to \Omega^1 _{X'/Y} \to 0
+\tag{17.2.5.1}
+\] is exact; moreover, for each $x \in X$, there exists an open neighborhood $U$ of $x$ such that the restrictions to $U$ of the homomorphisms in $(\hyperref[IV.17.2.5.1]{17.2.5.1})$ form an exact and split sequence.
+\end{proposition}
+Still by virtue of $(\hyperref[IV.17.1.6]{17.1.6})$, we are reduced to the case of $Y = \Spec(A)$ and $X = \Spec(B)$ affine, and $X' = \Spec(B/\mathfrak{I})$, where $\mathfrak{I}$ is an ideal of $B$. The conormal sheaf $\sh{N}_{X'/X}$ then corresponds to the $B$-module $\mathfrak{I}/\mathfrak{I}^2$ $(\hyperref[IV.16.1.3]{16.1.3})$, and the conclusion follows from $(\textbf{0}, \hyperref[0.20.5.14]{20.5.14})$.
+
+\begin{proposition}[17.2.6]
+\label{IV.17.2.6}
+Let $X, Y$ be two preschemes, $f: X \to Y$ a morphism locally of finite type. The following conditions are equivalent:
+\begin{enumerate}
+\item[a)] $f$ is a monomorphism.
+\item[b)] $f$ is radicial and formally unramified.
+\item[c)] For each $y \in Y$, the fibre $f^{-1}(y)$ is empty or $k(y)$-isomorphic to $\Spec(k(y))$ (in other words, is reduced to a single point $z$ such that $k(y) \to \sh{O}_z/\mathfrak{m}_y\sh{O}_z$ is an isomorphism).
+\end{enumerate}
+\end{proposition}
+The fact that $a)$ implies $c)$ results from $(\hyperref[IV.8.11.5.1]{8.11.5.1})$. It is clear that $c)$ implies that $f$ is radicial; let us prove that it also results from $c)$ that $\Omega^1 _{X/Y} = 0$, which will prove that $c)$ implies $b)$ $(\hyperref[IV.17.2.1]{17.2.1})$. Note that the $\sh{O}_X$-module $\Omega^1 _{X/Y}$ is quasi-coherent of finite type $(\hyperref[IV.16.3.9]{16.3.9})$. It follows from $(\textbf{I}, \hyperref[I.9.1.13.1]{9.1.13.1})$ that, for $(\Omega^1 _{X/Y})_x = 0$, it is necessary and sufficient that if we set $Y_1 = \Spec(k(y))$, $X_1 = f^{-1}(y) = X \times_{Y} Y_1$, we have $(\Omega^1 _{X_1/Y_1})_x = 0$; but as the morphism $f_1 : X_1 \to Y_1$ induced by $f$ is formally unramified by virtue of the hypothesis $c)$ $(\hyperref[IV.17.1.3]{17.1.3})$, the conclusion results from $(\hyperref[17.2.1]{17.2.1})$. Finally, let us prove that $b)$ implies $a)$; for this, consider the diagonal morphism $g = \Delta_f : X \to X \times_{Y} X$; since $f$ is radicial, $g$ is surjective $(\hyperref[IV.1.8.7.1]{1.8.7.1})$; on the other hand, $\Omega^1 _{X/Y}$ is by definition the conormal sheaf $\operatorname{\sh{G}r_1}(g)$ %TODO: is this the right way to write the operator?
+of the immersion $g$ $(\hyperref[IV.16.3.1]{16.3.1})$, and to say that $f$ is formally unramified therefore means that $\operatorname{\sh{G}r_1}(g) = 0$ $(\hyperref[IV.17.2.1]{17.2.1})$. In addition, $g$ is locally of finite presentation $(\hyperref[IV.1.4.3.1]{1.4.3.1})$; therefore the hypothesis $\operatorname{\sh{G}r_1}(g) = 0$ implies that $g$ is an open immersion $(\hyperref[IV.16.1.10]{16.1.10})$; being surjective, this immersion is an isomorphism, hence $f$ is a monomorphism $(\textbf{I}, \hyperref[I.5.3.8]{5.3.8})$.
+
+\subsection{Smooth morphisms, unramified morphisms, \'etale morphisms}
+\label{subsection:IV.17.3}
+
+\begin{definition}[17.3.1]
+\label{IV.17.3.1}
+We say that a morphism $f : X \to Y$ is \emph{smooth} (resp. \emph{unramified}$^{(1)}$, resp. \emph{\'etale}) % TODO: ^{(1)} ?
+if it is locally of finite presentation and formally smooth (resp. formally unramified, resp. formally \'etale).
+\end{definition}
+We then also say that $X$ is \emph{smooth} (resp. \emph{unramified}, resp. \emph{\'etale}) \emph{over $Y$}.\\
+We will see later $(\hyperref[IV.17.5.2]{17.5.2})$ that this definition of a smooth morphism coincides with the definition already given in $(\hyperref[IV.6.8.1]{6.8.1})$; until then, we will exclusively use definition $(\hyperref[IV.17.3.1]{17.3.1})$ only.\\
+It is clear that saying that $f$ is \'etale means that it is both smooth and unramified.
 
 
 
