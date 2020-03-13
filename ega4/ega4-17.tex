@@ -225,6 +225,99 @@ We then also say that $X$ is \emph{smooth} (resp. \emph{unramified}, resp. \emph
 We will see later \sref{IV.17.5.2} that this definition of a smooth morphism coincides with the definition already given in \sref{IV.6.8.1}; until then, we will exclusively use definition \sref{IV.17.3.1} only.\\
 It is clear that saying that $f$ is \'etale means that it is both smooth and unramified.
 
+\begin{remark}[17.3.2]
+\label{IV.17.3.2}
+\begin{enumerate}
 
+\item[(i)] Note that definition \sref{IV.17.3.1} can be phrased using only the functor
+\[
+  Y' \mapsto \operatorname{Hom}_Y(Y', X)
+\] considered in \sref{IV.17.1.2}[(iii)] because to say that $f$ is locally of finite presentation is equivalent to saying that the preceding functor \emph{commutes with projective limits of affine schemes} \sref{IV.8.14.2}.
 
+\item[(ii)] Let $A$ be a ring and $B$ an $A$-algebra. 
+One says that $B$ is a \emph{smooth} (resp. \emph{unramified}, resp. \emph{\'etale}) $A$-algebra if the corresponding morphism $\Spec(B) \to \Spec(A)$ is smooth (resp. unramified, resp. \'etale).
+It is equivalent to say that $B$ is an $A$-algebra \emph{of finite presentation} \sref{IV.1.4.6} that is furthermore formally smooth (resp. formally unramified, resp. formally \'etale) for the discrete topologies.
 
+\item[(iii)] It results from \sref{IV.17.1.6} and the definition of a morphism of finite presentation \sref{IV.1.4.2} that the notion of smooth (resp. unramified, resp. \'etale) morphism is \emph{local on $X$ and on $Y$}.
+\end{enumerate}
+\end{remark}
+
+\begin{proposition}[17.3.3]
+\label{IV.17.3.3}
+\begin{enumerate}
+\item[(i)] An open immersion is \'etale. For an immersion to be unramified, it is necessary and sufficient to be locally of finite presentation.
+\item[(ii)] The composition of two smooth (resp. unramified, resp. \'etale) morphisms is smooth (resp. unramified, resp. \'etale).
+\item[(iii)] If $f : X \to Y$ is a smooth (resp. unramified, resp. \'etale) $S$-morphism, then so is $f_{(S')}: X_{(S')} \to Y_{(S')}$ for any base extension $S' \to S$. 
+\item[(iv)] If $f : X \to X'$ and $g: Y \to Y'$ are smooth (resp. unramified, resp. \'etale) $S$-morphisms, so is $f \times_S g : X \times_S Y \to X' \times_S Y'$.
+\item[(v)] Let $f: X \to Y$ and $g: Y \to Z$ be two morphisms; if $g$ is locally of finite type and if $g \circ f$ is unramified, then $f$ is unramified.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+This results from \sref{IV.1.4.3} and \sref{IV.17.1.3}.
+\end{proof}
+
+\begin{proposition}[17.3.4]
+\label{IV.17.3.4}
+Let $f: X \to Y$, $g: Y \to Z$ be two morphisms, and assume that $g$ is unramified.
+Then, if $g \circ f$ is smooth (resp. unramified, resp. \'etale), so is $f$.
+\end{proposition}
+
+\begin{proof}
+Indeed, as $g$ and $g \circ f$ are locally of finite presentation, so is $f$ \sref{IV.1.4.3}[(v)]; the conclusion now results from \sref{IV.17.1.4} and \sref{IV.17.1.3}[(v)].
+\end{proof}
+
+\begin{corollary}[17.3.5]
+\label{IV.17.3.5}
+Assume $g$ \'etale; then, for $f$ to be smooth (resp. unramified, resp. \'etale) it is necessary and sufficient that $g \circ f$ is.
+\end{corollary}
+
+\begin{proof}
+This results from \sref{IV.17.3.4} and \sref{IV.17.3.3}[(ii)].
+\end{proof}
+
+\begin{proposition}[17.3.6]
+\label{IV.17.3.6}
+Let $g: Y \to S$ and $h: X \to S$ be two morphisms locally of finite presentation.
+For an $S$-morphism $f: X \to Y$ to be unramified, it is necessary and sufficient that the canonical homomorphism \sref{IV.16.4.19}
+\[
+ f^*(\Omega^1 _{Y/S}) \to \Omega^1 _{X/S}
+\] is surjective.
+\end{proposition}
+
+\begin{proof}
+As $f$ is locally of finite presentation \sref{IV.1.4.3}[(v)], the proposition results from \sref{IV.17.2.2}.
+\end{proof}
+
+\begin{definition}[17.3.7]
+\label{IV.17.3.7}
+Let $f: X \to Y$ be a morphism. 
+We say that $f$ is smooth (resp. unramifed, resp. \'etale) at a point $x \in X$, if there exists an open neighborhood $U$ of $x$ in $X$, such that the restriction $f|U$ is a smooth (resp. unramified, resp. \'etale) morphism.
+\end{definition}
+
+We then also say that $X$ is \emph{smooth} (resp. \emph{unramified}, resp. \emph{\'etale}) \emph{over $Y$ at the point $x$}.
+
+Taking into account remark \sref{IV.17.3.2}[(iii)], it means the same to say that $f$ is smooth (resp. unramified, resp. \'etale) and to say that $f$ is smooth (resp. unramified, resp. \'etale) at all points of $X$.\\
+It is clear that the set of points of $X$ at which the morphism $f : X \to Y$ is smooth (resp. unramified, resp. \'etale) is \emph{open} in $X$.
+
+\begin{proposition}[17.3.8]
+\label{IV.17.3.8}
+For all preschemes $Y$ and all locally free $\sh{O}_Y$-modules $\sh{E}$ of finite type, the vector bundle $\bb{V}(\sh{E})$ \sref[II]{II.1.7.8} associated to $\sh{E}$ is a smooth $Y$-prescheme.
+\end{proposition}
+
+\begin{proof}
+Indeed \sref{IV.17.3.2}[(iii)], we can restrict ourselves to the case where $Y = \Spec(A)$ is affine and $\bb{V}(\sh{E}) = \Spec(A[T_1, \ldots, T_r])$; as $A[T_1, \ldots, T_r]$ is a formally smooth $A$-algebra for discrete topologies, and of finite presentation, this demonstrates proposition \sref{IV.17.3.2}[(ii)].  
+\end{proof}
+
+\begin{corollary}[17.3.9]
+\label{IV.17.3.9}
+Under the hypotheses of \sref{IV.17.3.8}, the projective prescheme $\bb{P}(\sh{E})$ \sref[II]{II.4.1.1} associated to $\sh{E}$ is a smooth $Y$-prescheme.
+\end{corollary}
+
+\begin{proof}
+We can still restrict to the case where $Y = \Spec(A)$ is affine and $\bb{P}(\sh{E}) = \bb{P}^r_{Y}$.
+We then know \sref[II]{II.2.3.14} that we have a finite open cover of $\bb{P}^r_{A}$ by the $\operatorname{D}_+(T_i)$ ($0\leq i \leq r$) respectively equal to the spectrum of the ring $S_{(f)}$, where we wrote $S$ for $A[T_1, \ldots, T_r]$ and $f$ for $T_i$; but it results immediately from the definition of $S_{(f)}$ \sref[II]{II.2.2.1}, that this ring, in this case, is isomorphic to $A[T_0, \ldots, T_{i-1}, T_{i+1}, \ldots, T_r]$; hence the corollary follows by \sref{IV.17.3.8}.
+\end{proof}
+
+\subsection{Characterizations of unramified morphisms.}
+\label{subection:IV.17.4}
