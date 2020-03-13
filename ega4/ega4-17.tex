@@ -2,7 +2,9 @@
 \label{section:IV.17}
 
 In this paragraph, we revisit the concepts studied in (\textbf{0}\textsubscript{III},~\hyperref[section:0.9]{9}), expressed in the geometric language of schemes from a global point of view, for preschemes locally of finite presentation over a given base.
+
 Most of the results (except ~\hyperref[subsection:IV.17.7]{17.7}, ~\hyperref[subsection:IV.17.8]{17.8}, ~\hyperref[subsection:IV.17.9]{17.9}, ~\hyperref[subsection:IV.17.13]{17.13} and ~\hyperref[subsection:IV.17.16]{17.16}) are reduced to various properties already encountered in (\textbf{0}\textsubscript{III},~\hyperref[section:0.9]{9}).
+
 For more specific results on \'etale morphisms, the reader should consult ~\textsection\hyperref[section:IV.18]{18}. 
 
 \subsection{Formally smooth morphisms, formally unramified morphisms, formally \'etale morphisms.}
@@ -23,24 +25,28 @@ It is clear that for $f$ being formally \'etale, it is necessary and sufficient 
 \begin{remark}[17.1.2]
 \label{IV.17.1.2}
 \begin{enumerate}
-	\item[(i)] Assume that $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, so that $f$ comes from a homomorphism of rings $\varphi: A \to B$. According to (\textbf{0}, \hyperref[0.19.3.1]{19.3.1} and \textbf{0}, \hyperref[0.19.10.1]{19.10.1}), saying that $f$ is formally smooth (resp. formally unramified, resp. formally \'etale) means that, via $\varphi$, $B$ is a formally smooth (resp. formally unramified, resp. formally \'etale) $A$-algebra, where $A$ and $B$ are endowed with the discrete topologies.
-	\item[(ii)] To verify that $f$ is formally smooth (resp. formally unramified, resp. formally \'etale), one can, in definition $(\hyperref[IV.17.1.1]{17.1.1})$, restrict to the case where $\sh{J}^2 = 0$.\\
-To see this, if $f$ satisfies the corresponding condition of definition (\hyperref[IV.17.1.1]{17.1.1}) in the particular case $\sh{J}^2 = 0$, and if $\sh{J}^n = 0$, one considers the closed subscheme $Y'_j$ of $Y'$ defined by the ideal $\sh{J}^{j+1}$ for all $0\leq j \leq n-1$, so that $Y'_j$ is a closed subscheme of $Y'_{j+1}$ defined by a square-zero ideal; the assumptions implies that each of the maps
+	\item[(i)] Assume that $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, so that $f$ comes from a homomorphism of rings $\varphi: A \to B$. 
+    According to \sref[0]{0.19.3.1} and \sref[0]{0.19.10.1}, saying that $f$ is formally smooth (resp. formally unramified, resp. formally \'etale) means that, via $\varphi$, $B$ is a formally smooth (resp. formally unramified, resp. formally \'etale) $A$-algebra, where $A$ and $B$ are endowed with the discrete topologies.
+	\item[(ii)] To verify that $f$ is formally smooth (resp. formally unramified, resp. formally \'etale), one can, in definition \sref{IV.17.1.1}, restrict to the case where $\sh{J}^2 = 0$.\\
+To see this, if $f$ satisfies the corresponding condition of definition \sref{IV.17.1.1} in the particular case $\sh{J}^2 = 0$, and if $\sh{J}^n = 0$, one considers the closed subscheme $Y'_j$ of $Y'$ defined by the ideal $\sh{J}^{j+1}$ for all $0\leq j \leq n-1$, so that $Y'_j$ is a closed subscheme of $Y'_{j+1}$ defined by a square-zero ideal; the assumptions implies that each of the maps
 \[
 %TODO%
 	\operatorname{Hom}_Y(Y'_{j+1}, X) \to \operatorname{Hom}_Y(Y'_j, X) \ \ \ \ \ (0 \leq j \leq n-1) 
-\] is surjective (resp. injective, resp. bijective); by composition, one concludes that the same holds for $\hyperref[IV.17.1.1.1]{17.1.1.1}$.
-\item[(iii)] Note that the properties of the morphism $f$ defined in (\hyperref[IV.17.1.1]{17.1.1}) are properties of the representable functor (\textbf{0}\textsubscript{III}, \hyperref[0.8.1.8]{8.1.8})
+\] is surjective (resp. injective, resp. bijective); by composition, one concludes that the same holds for \sref{IV.17.1.1.1}.
+\item[(iii)] Note that the properties of the morphism $f$ defined in \sref{IV.17.1.1} are properties of the representable functor \sref[$0_{III}$]{0.8.1.8}
 \[
   Y' \mapsto \operatorname{Hom}_Y(Y', X) 
 \] from the category of $Y$-preschemes to the category of sets; they keep a meaning for \emph{any} contravariant functor with the same domain and codomain, representable or not.
-\item[(iv)] Assume that the morphism $f$ is formally unramified (resp. formally \'etale); consider an \emph{arbitrary} $Y$-prescheme $Z$ and a closed subprescheme $Z_0$ of $Z$ defined by a \emph{locally nilpotent} ideal $\sh{J}$ of $\sh{O}_Z$. Then the map
+\item[(iv)] Assume that the morphism $f$ is formally unramified (resp. formally \'etale); consider an \emph{arbitrary} $Y$-prescheme $Z$ and a closed subprescheme $Z_0$ of $Z$ defined by a \emph{locally nilpotent} ideal $\sh{J}$ of $\sh{O}_Z$. 
+Then the map
 \[
 \label{IV.17.1.2.1}	
 		\operatorname{Hom}_Y(Z, X) \to \operatorname{Hom}_Y(Z_0, X)
 \tag{17.1.2.1}
-		\] induced by the injection $Z_0 \to Z$, is still injective (resp. bijective).
-		To see this, let $(U_\alpha)$ be an open affine covering of $Z$ such that the ideals $\sh{J}|U_\alpha$ are nilpotent, and for each $\alpha$, let $U_\alpha ^0$ denote the preimage of $U_\alpha$ in $Z_0$, which is the closed subprescheme of $U_\alpha$ defined by $\sh{J}|U_\alpha$. Let $f_0: Z_0 \to X$ by a $Y$-morphism; by assumption, for each $\alpha$, there is at most one (resp. one and only one) $Y$-morphism $f_\alpha: U_\alpha \to X$ whose restriction to $Z_0$ coincides with $f_0|U_\alpha$. We immediately conclude that if $f_\alpha$ and $f_\beta$ are defined, then, for each affine open $V \subset U_\alpha \cap U_\beta$, we have $f_\alpha|V = f_\beta|V$, as the restrictions of these morphisms to the preimage $V_0$ of $V$ in $Z_0$ coincide. There is therefore at most one (resp. one and only one) morphism $f : Z \to X$ whose restriction to $Z_0$ coincides with $f_0$.
+\] induced by the injection $Z_0 \to Z$, is still injective (resp. bijective).
+To see this, let $(U_\alpha)$ be an open affine covering of $Z$ such that the ideals $\sh{J}|U_\alpha$ are nilpotent, and for each $\alpha$, let $U_\alpha ^0$ denote the preimage of $U_\alpha$ in $Z_0$, which is the closed subprescheme of $U_\alpha$ defined by $\sh{J}|U_\alpha$. Let $f_0: Z_0 \to X$ by a $Y$-morphism; by assumption, for each $\alpha$, there is at most one (resp. one and only one) $Y$-morphism $f_\alpha: U_\alpha \to X$ whose restriction to $Z_0$ coincides with $f_0|U_\alpha$. 
+We immediately conclude that if $f_\alpha$ and $f_\beta$ are defined, then, for each affine open $V \subset U_\alpha \cap U_\beta$, we have $f_\alpha|V = f_\beta|V$, as the restrictions of these morphisms to the preimage $V_0$ of $V$ in $Z_0$ coincide.
+There is therefore at most one (resp. one and only one) morphism $f : Z \to X$ whose restriction to $Z_0$ coincides with $f_0$.
 \end{enumerate}
 \end{remark}
 
@@ -55,19 +61,37 @@ To see this, if $f$ satisfies the corresponding condition of definition (\hyperr
 \item[(vi)] If $f : X \to Y$ is a formally unramified morphism, so is $f_{\mathrm{red}}: X_{\mathrm{red}} \to Y_{\mathrm{red}}$.
 \end{enumerate}
 \end{proposition}
-Using (\textbf{I}, \hyperref[I.5.5.12]{5.5.12}), it suffices to prove $(i)$, $(ii)$, and $(iii)$. The assertions in $(i)$ are both trivial. To prove $(ii)$, consider two morphisms $f: X \to Y$, $g: Y \to Z$, an affine scheme $Z'$, a closed subscheme $Z'_0$ of $Z$ defined by a nilpotent ideal and a morphism $Z' \to Z$. Assume $f$ and $g$ formally smooth, and consider a $Z$-morphism $u_0 : Z'_0 \to X$; the assumption on $g$ implies that there exists a $Z$-morphism $v: Z' \to Y$ such that $f \circ u_0 = v \circ j$ (where $j : Z'_0 \to Z$ is the canonical injection); the assumption on $f$ implies that there exists a morphism $u : Z' \to X$ such that $f \circ u = v$ and $u \circ j = u_0$. Therefore $(g \circ f) \circ u$ is equal to the given morphism $Z' \to Z$ and $u \circ j = u_0$, which proves that $g \circ f$ is formally smooth; we reason the same way when $f$ and $g$ are assumed formally unramified.\\
-Finally, to demonstrate $(iii)$, let $X' = X_{S'}$, $Y' = Y_{S'}$, $f' = f_{S'}$; consider an affine scheme $Y''$, a closed subscheme $Y''_0$ defined by a nilpotent ideal and a morphism $g : Y'' \to Y'$ making $Y''$ a $Y'$-prescheme; we then know by (\textbf{I}, \hyperref[I.3.3.8]{3.3.8}) that $\operatorname{Hom}_{Y'}(Y'', X')$ is canonically identified with $\operatorname{Hom}_{Y}(Y'', X)$ and that $\operatorname{Hom}_{Y'}(Y''_0, X')$ is canonically identified with $\operatorname{Hom}_{Y}(Y''_0, X)$, and the conclusion follows immediately from the definition $(\hyperref[IV.17.1.1]{17.1.1})$.\\
+
+\begin{proof}
+Using \sref[I]{I.5.5.12}, it suffices to prove $(i)$, $(ii)$, and $(iii)$. 
+The assertions in $(i)$ are both trivial. To prove $(ii)$, consider two morphisms $f: X \to Y$, $g: Y \to Z$, an affine scheme $Z'$, a closed subscheme $Z'_0$ of $Z$ defined by a nilpotent ideal and a morphism $Z' \to Z$. 
+Assume $f$ and $g$ formally smooth, and consider a $Z$-morphism $u_0 : Z'_0 \to X$; the assumption on $g$ implies that there exists a $Z$-morphism $v: Z' \to Y$ such that $f \circ u_0 = v \circ j$ (where $j : Z'_0 \to Z$ is the canonical injection); the assumption on $f$ implies that there exists a morphism $u : Z' \to X$ such that $f \circ u = v$ and $u \circ j = u_0$. 
+Therefore $(g \circ f) \circ u$ is equal to the given morphism $Z' \to Z$ and $u \circ j = u_0$, which proves that $g \circ f$ is formally smooth; we reason the same way when $f$ and $g$ are assumed formally unramified.\\
+Finally, to demonstrate $(iii)$, let $X' = X_{S'}$, $Y' = Y_{S'}$, $f' = f_{S'}$; consider an affine scheme $Y''$, a closed subscheme $Y''_0$ defined by a nilpotent ideal and a morphism $g : Y'' \to Y'$ making $Y''$ a $Y'$-prescheme; we then know by \sref[I]{I.3.3.8} that $\operatorname{Hom}_{Y'}(Y'', X')$ is canonically identified with $\operatorname{Hom}_{Y}(Y'', X)$ and that $\operatorname{Hom}_{Y'}(Y''_0, X')$ is canonically identified with $\operatorname{Hom}_{Y}(Y''_0, X)$, and the conclusion follows immediately from the definition \sref{IV.17.1.1}.
+\end{proof}
+
 Note that a \emph{closed immersion} is not necessarily formally smooth:
 \begin{proposition}[17.1.4]
 \label{IV.17.1.4}
 	Let $f: X \to Y$ and $g: Y \to Z$ be two morphisms, and assume that $g$ is formally unramified. Then, if $g \circ f$ is formally smooth (resp. formally \'etale), so is $f$.
 \end{proposition}
-Indeed, let $Y'$ be an affine scheme, $Y'_0$ a closed subscheme of $Y'$ defined by a nilpotent ideal, $h: Y' \to Y$ a morphism, $j: Y'_0 \to Y'$ the canonical injection, $u_0: Y'_0 \to Y$ a $Y$-morphism, such that $f \circ u_0 = h \circ j$. Assume $g \circ f$ formally smooth; hence there exists a morphism $u : Y' \to X$ such that $u \circ j = u_0$ and $(g\circ f) \circ u = g \circ h$. But these two relations ensure that $f \circ u$ and $h$ are $Z$-morphisms from $Y'$ to $Y$ such that $(f\circ u)\circ j = h \circ j$; by virtue of the assumption that $g$ is formally unramified, we derive that $f \circ u = h$, in other words that $u$ is a $Y$-morphism; thus $f$ is formally smooth. Taking into account $(\hyperref[IV.17.1.3]{17.1.3}, (v))$, this demonstrates the proposition.
+
+\begin{proof}
+Indeed, let $Y'$ be an affine scheme, $Y'_0$ a closed subscheme of $Y'$ defined by a nilpotent ideal, $h: Y' \to Y$ a morphism, $j: Y'_0 \to Y'$ the canonical injection, $u_0: Y'_0 \to Y$ a $Y$-morphism, such that $f \circ u_0 = h \circ j$. 
+Assume $g \circ f$ formally smooth; hence there exists a morphism $u : Y' \to X$ such that $u \circ j = u_0$ and $(g\circ f) \circ u = g \circ h$. 
+But these two relations ensure that $f \circ u$ and $h$ are $Z$-morphisms from $Y'$ to $Y$ such that $(f\circ u)\circ j = h \circ j$; by virtue of the assumption that $g$ is formally unramified, we derive that $f \circ u = h$, in other words that $u$ is a $Y$-morphism; thus $f$ is formally smooth. 
+Taking into account \sref{IV.17.1.3}[(v)], this demonstrates the proposition. 
+\end{proof}
+
 \begin{corollary}[17.1.5]
 \label{IV.17.1.5}
 	Assume that $g$ is formally \'etale; then, for $g \circ f$ being formally smooth (resp. formally unramified, resp. formally \'etale), it is necessary and sufficient that $f$ is.
-\end{corollary}	
-This results from (\hyperref[IV.17.1.4]{17.1.4}) and (\hyperref[IV.17.1.3]{17.1.3}, $(ii)$ and $(iv)$).
+\end{corollary}
+
+\begin{proof}
+This results from \sref{IV.17.1.4} and \sref{IV.17.1.3}[(ii) and (iv)].
+\end{proof}
+
 \begin{proposition}[17.1.6]
 \label{IV.17.1.6}
 Let $f:X\to Y$ be a morphism of preschemes.
@@ -75,52 +99,72 @@ Let $f:X\to Y$ be a morphism of preschemes.
 	\item[(i)] Let $(U_\alpha)$ be an open covering of $X$ and, for each $\alpha$, let $i_\alpha: U_\alpha \to X$ be the canonical injection. For $f$ being formally smooth (resp. formally unramified, resp. formally \'etale), it is necessary and sufficient that each $f \circ i_\alpha$ is.
 	\item[(ii)] Let $(V_\lambda)$ be an open covering of $Y$. For $f$ being formally smooth (resp. formally unramified, resp. formally \'etale), it is necessary and sufficient that each restriction $f^{-1}(V_\lambda) \to V_\lambda$ of $f$ is.
 \end{enumerate}
-\end{proposition}	
-First note that $(ii)$ is a consequence of $(i)$: indeed, if $j_\lambda: V_\lambda \to Y$ and $i_\lambda: f^{-1}(V_\lambda) \to X$ are the canonical injections, the restriction $f_\lambda : f^{-1}(V_\lambda) \to V_\lambda$ of $f$ is such that $j_\lambda \circ f_\lambda = f \circ i_\lambda$; if $f$ is formally smooth (resp. formally unramified), then so is $f \circ i_\lambda$ since $i_\lambda$ is formally \'etale (\hyperref[IV.17.1.3]{17.1.3}); but since $j_\lambda$ is formally \'etale, this means that $f_\lambda$ is formally smooth (resp. formally unramified), in virtue of $(\hyperref[IV.17.1.5]{17.1.5})$. Conversely, if all $f_\lambda$ are formally smooth (resp. formally unramified), the same applies to $j_\lambda \circ f_\lambda$ $(\hyperref[IV.17.1.3]{17.1.3})$, so also to $f$ in virtue of $(i)$.\\
+\end{proposition}
+
+\begin{proof}
+First note that $(ii)$ is a consequence of $(i)$: indeed, if $j_\lambda: V_\lambda \to Y$ and $i_\lambda: f^{-1}(V_\lambda) \to X$ are the canonical injections, the restriction $f_\lambda : f^{-1}(V_\lambda) \to V_\lambda$ of $f$ is such that $j_\lambda \circ f_\lambda = f \circ i_\lambda$; if $f$ is formally smooth (resp. formally unramified), then so is $f \circ i_\lambda$ since $i_\lambda$ is formally \'etale \sref{IV.17.1.3}; but since $j_\lambda$ is formally \'etale, this means that $f_\lambda$ is formally smooth (resp. formally unramified), in virtue of \sref{IV.17.1.5}. 
+Conversely, if all $f_\lambda$ are formally smooth (resp. formally unramified), the same applies to $j_\lambda \circ f_\lambda$ \sref{IV.17.1.3}, so also to $f$ in virtue of $(i)$.\\
 
 If we take into account that the $i_\alpha$ are formally \'etale, everything comes down to proving that if the $f \circ i_\alpha$ are formally smooth (resp. formally unramified), the same applies to $f$.\\
 
-Let therefore $Y'$ be an affine scheme, $Y'_0$ a closed subscheme of $Y'$ defined by a nilpotent ideal $\sh{J}$, which we may assume to satisfy $\sh{J}^2 = 0$ $(\hyperref[IV.17.1.2]{17.1.2}, (ii))$, and finally let $g : Y' \to Y$ be a morphism. Suppose given a $Y$-morphism $u_0 : Y'_0 \to X$; denote by $W_\alpha$ (resp. $W^0 _\alpha$) the prescheme induced by $Y'$ (resp. $Y'_0$) on the open subset $u_0 ^{-1}(U_\alpha)$ (we recall that $Y'$ and $Y'_0$ share the \emph{same underlying topological space}). Let us first suppose that the $f \circ i_\alpha$ are \emph{formally unramified}, and show that, if $u'$ and $u''$ are two $Y$-morphisms from $Y'$ to $X$ whose restriction to $Y'_0$ coincide, then we have $u' = u''$. Indeed, taking into account $(\hyperref[IV.17.1.2]{17.1.2}, (iv))$, the assumption that the $f \circ i_\alpha$ are formally unramified imply that for all $\alpha$, we have $u'|W_\alpha = u''|W_\alpha$, since the restrictions of both $Y$-morphisms to $W^0 _\alpha$ coincide. Hence the conclusion follows.\\
+Let therefore $Y'$ be an affine scheme, $Y'_0$ a closed subscheme of $Y'$ defined by a nilpotent ideal $\sh{J}$, which we may assume to satisfy $\sh{J}^2 = 0$ \sref{IV.17.1.2}[(ii)], and finally let $g : Y' \to Y$ be a morphism. 
+Suppose given a $Y$-morphism $u_0 : Y'_0 \to X$; denote by $W_\alpha$ (resp. $W^0 _\alpha$) the prescheme induced by $Y'$ (resp. $Y'_0$) on the open subset $u_0 ^{-1}(U_\alpha)$ (we recall that $Y'$ and $Y'_0$ share the \emph{same underlying topological space}). 
+Let us first suppose that the $f \circ i_\alpha$ are \emph{formally unramified}, and show that, if $u'$ and $u''$ are two $Y$-morphisms from $Y'$ to $X$ whose restriction to $Y'_0$ coincide, then we have $u' = u''$. 
+Indeed, taking into account \sref{IV.17.1.2}[(iv)], the assumption that the $f \circ i_\alpha$ are formally unramified imply that for all $\alpha$, we have $u'|W_\alpha = u''|W_\alpha$, since the restrictions of both $Y$-morphisms to $W^0 _\alpha$ coincide. 
+Hence the conclusion follows.\\
 
-Now assume the $f \circ i_\alpha$ to be \emph{formally smooth} and prove the existence of a $Y$-morphism $u : Y' \to X$ whose restriction to $Y'_0$ is $u_0$. Now, since $Y'$ is an \emph{affine scheme}, we may apply $(\hyperref[IV.16.5.17]{16.5.17})$ the hypotheses of which are satisfied, and the conclusion of which precisely demonstrate the existence.\\
+Now assume the $f \circ i_\alpha$ to be \emph{formally smooth} and prove the existence of a $Y$-morphism $u : Y' \to X$ whose restriction to $Y'_0$ is $u_0$. 
+Now, since $Y'$ is an \emph{affine scheme}, we may apply \sref{IV.16.5.17} the hypotheses of which are satisfied, and the conclusion of which precisely demonstrate the existence.
+\end{proof}
 
-We can therefore say that the notions introduced in $(\hyperref[IV.17.1.1]{17.1.1})$ are \emph{local} on $X$ and $Y$, which always allows, in virtue of $(\hyperref[IV.17.1.2]{17.1.2}, (i))$, to be reduced to the study of formally smooth (resp. formally unramified, resp. formally \'etale) \emph{algebras}.
+We can therefore say that the notions introduced in \sref{IV.17.1.1} are \emph{local} on $X$ and $Y$, which always allows, in virtue of \sref{IV.17.1.2}[(i)], to be reduced to the study of formally smooth (resp. formally unramified, resp. formally \'etale) \emph{algebras}.
 
 \subsection{General properties of differentials}
 \label{subsection:IV.17.2}
 
 \begin{proposition}[17.2.1]
 \label{IV.17.2.1}
-For a morphism $f : X \to Y$ to be formally unramified, it is necessary and sufficient that $\Omega^1 _f = 0$ (what we still write $\Omega^1 _{X/Y} = 0$ $(\hyperref[IV.16.3.1]{16.3.1})$).	
+For a morphism $f : X \to Y$ to be formally unramified, it is necessary and sufficient that $\Omega^1 _f = 0$ (what we still write $\Omega^1 _{X/Y} = 0$ \sref{IV.16.3.1}).	
 \end{proposition}
-Taking into account $(\hyperref[IV.17.1.6]{17.1.6})$, we are reduced to the case where $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, and the conclusion then results from $(\textbf{0}, \hyperref[0.20.7.4]{20.7.4})$ and the interpretation of $\Omega^1 _{X/Y}$ in this case $(\hyperref[IV.16.3.7]{16.3.7})$.
+
+\begin{proof}
+Taking into account \sref{IV.17.1.6}, we are reduced to the case where $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, and the conclusion then results from \sref[0]{0.20.7.4} and the interpretation of $\Omega^1 _{X/Y}$ in this case \sref{IV.16.3.7}.
+\end{proof}
 
 \begin{corollary}[17.2.2]
 \label{IV.17.2.2}
-Let $f: X \to Y$ and $g: Y \to Z$ be two morphisms. For $f$ being formally unramified, it is necessary and sufficient that the canonical morphism $(\hyperref[IV.16.4.19]{16.4.19})$
+Let $f: X \to Y$ and $g: Y \to Z$ be two morphisms. 
+For $f$ being formally unramified, it is necessary and sufficient that the canonical morphism \sref{IV.16.4.19}
 \[
   f^*(\Omega^1_{Y/Z}) \to \Omega^1_{X/Z}
 \] is surjective.
 \end{corollary}
-This is an immediate consequence of $(\hyperref[IV.17.2.1]{17.2.1})$ and the exact sequence $(\hyperref[IV.16.4.19.1]{16.4.19.1})$.
+
+\begin{proof}
+This is an immediate consequence of \sref{IV.17.2.1} and the exact sequence \sref{IV.16.4.19.1}.
+\end{proof}
 
 \begin{proposition}[17.2.3]
 \label{IV.17.2.3}
 Let $f: X \to Y$ be a formally smooth morphism.
 \begin{enumerate}
-\item[(i)] The $\sh{O}_X$-module $\Omega^1 _{X/Y}$ is locally projective $(\hyperref[IV.16.10.1]{16.10.1})$. If $f$ is locally of finite type, $\Omega^1 _{X/Y}$ is locally free and of finite type.
-\item[(ii)] For all morphisms $g : Y \to Z$, the sequence $(\hyperref[IV.16.4.19]{16.4.19})$ of $\sh{O}_X$-modules
+\item[(i)] The $\sh{O}_X$-module $\Omega^1 _{X/Y}$ is locally projective \sref{IV.16.10.1}. If $f$ is locally of finite type, $\Omega^1 _{X/Y}$ is locally free and of finite type.
+\item[(ii)] For all morphisms $g : Y \to Z$, the sequence \sref{IV.16.4.19} of $\sh{O}_X$-modules
 \[
 \label{IV.17.2.3.1}
  0 \to f^*(\Omega^1 _{Y/Z}) \to \Omega^1 _{X/Z} \to \Omega^1 _{X/Y} \to 0
 \tag{17.2.3.1}
-\] is exact; moreover, for each $x \in X$, it exists an open neighborhood $U$ of $x$ such that the restrictions to $U$ of the homomorphisms in $(\hyperref[IV.17.2.3.1]{17.2.3.1})$ form an exact and split sequence.
+\] is exact; moreover, for each $x \in X$, it exists an open neighborhood $U$ of $x$ such that the restrictions to $U$ of the homomorphisms in \sref{IV.17.2.3.1} form an exact and split sequence.
 \end{enumerate}
 \end{proposition}
+
+\begin{proof}
 \begin{enumerate}
-\item[(i)] We know $(\hyperref[IV.16.3.9]{16.3.9})$ that if $f$ is locally of finite type, $\Omega^1 _f$ is an $\sh{O}_X$-module of finite type. To prove that, in all cases, it is locally projective, we are reduced, by virtue of $(\hyperref[IV.17.1.6]{17.1.6})$, to the case where $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, and we conclude by the assumptions on $f$ and by $(\textbf{0}, \hyperref[0.20.4.9]{20.4.9}, \textbf{0}, \hyperref[0.19.2.1]{19.2.1})$.
-\item[(ii)] Here again, we can limit ourselves to the case where $X, Y$ and $Z$ are affine $(\hyperref[IV.17.1.6]{17.1.6})$, and the conclusion results from the interpretation of the modules in the sequence $(\hyperref[IV.17.2.3.1]{17.2.3.1})$ in this case and by $(\textbf{0}, \hyperref[0.20.5.7]{20.5.7})$.
+\item[(i)] We know \sref{IV.16.3.9} that if $f$ is locally of finite type, $\Omega^1 _f$ is an $\sh{O}_X$-module of finite type. 
+To prove that, in all cases, it is locally projective, we are reduced, by virtue of \sref{IV.17.1.6}, to the case where $Y = \Spec(A)$ and $X = \Spec(B)$ are affine, and we conclude by the assumptions on $f$ and by \sref[0]{0.20.4.9} and \sref[0]{0.19.2.1}.
+\item[(ii)] Here again, we can limit ourselves to the case where $X, Y$ and $Z$ are affine \sref{IV.17.1.6}, and the conclusion results from the interpretation of the modules in the sequence \sref{IV.17.2.3.1} in this case and by \sref[0]{0.20.5.7}.
 \end{enumerate}
+\end{proof}
 
 \begin{corollary}[17.2.4]
 \label{IV.17.2.4}
@@ -129,30 +173,45 @@ If $f : X \to Y$ is formally \'etale, then, for all morphisms $g : Y \to Z$, the
   f^*(\Omega^1 _{Y/Z}) \to \Omega^1 _{X/Z}
 \] is bijective.
 \end{corollary}
-This results the exactness of the sequence $(\hyperref[IV.17.2.3.1]{17.2.3.1})$ and from the fact that we then have $\Omega^1 _{X/Y} = 0$ $(\hyperref[IV.17.2.1]{17.2.1})$.
+
+\begin{proof}
+This results from the exactness of the sequence \sref{IV.17.2.3.1} and from the fact that we then have $\Omega^1 _{X/Y} = 0$ \sref{IV.17.2.1}.
+\end{proof}
 
 \begin{proposition}[17.2.5]
 \label{IV.17.2.5}
-Let $f: X \to Y$ be a morphism, $X'$ a subprescheme of $X$ such that the composed morphism $\xymatrix{X' \ar[r]^{j} & X \ar[r]^{f} & Y}$ (where $j$ is the canonical injection) is formally smooth. Then the sequence of $\sh{O}_X$-modules $(\hyperref[IV.16.4.21]{16.4.21})$
+Let $f: X \to Y$ be a morphism, $X'$ a subprescheme of $X$ such that the composed morphism $\xymatrix{X' \ar[r]^{j} & X \ar[r]^{f} & Y}$ (where $j$ is the canonical injection) is formally smooth. Then the sequence of $\sh{O}_X$-modules \sref{IV.16.4.21}
 \[
 \label{IV.17.2.5.1}
 0 \to \sh{N}_{X'/X} \to \Omega^1 _{X/Y} \otimes_{\sh{O}_X} \sh{O}_{X'} \to \Omega^1 _{X'/Y} \to 0
 \tag{17.2.5.1}
-\] is exact; moreover, for each $x \in X$, there exists an open neighborhood $U$ of $x$ such that the restrictions to $U$ of the homomorphisms in $(\hyperref[IV.17.2.5.1]{17.2.5.1})$ form an exact and split sequence.
+\] is exact; moreover, for each $x \in X$, there exists an open neighborhood $U$ of $x$ such that the restrictions to $U$ of the homomorphisms in \sref{IV.17.2.5.1} form an exact and split sequence.
 \end{proposition}
-Still by virtue of $(\hyperref[IV.17.1.6]{17.1.6})$, we are reduced to the case of $Y = \Spec(A)$ and $X = \Spec(B)$ affine, and $X' = \Spec(B/\mathfrak{I})$, where $\mathfrak{I}$ is an ideal of $B$. The conormal sheaf $\sh{N}_{X'/X}$ then corresponds to the $B$-module $\mathfrak{I}/\mathfrak{I}^2$ $(\hyperref[IV.16.1.3]{16.1.3})$, and the conclusion follows from $(\textbf{0}, \hyperref[0.20.5.14]{20.5.14})$.
+
+\begin{proof}
+Still by virtue of \sref{IV.17.1.6}, we are reduced to the case of $Y = \Spec(A)$ and $X = \Spec(B)$ affine, and $X' = \Spec(B/\mathfrak{I})$, where $\mathfrak{I}$ is an ideal of $B$. 
+The conormal sheaf $\sh{N}_{X'/X}$ then corresponds to the $B$-module $\mathfrak{I}/\mathfrak{I}^2$ \sref{IV.16.1.3}, and the conclusion follows from \sref[0]{0.20.5.14}.
+\end{proof}
 
 \begin{proposition}[17.2.6]
 \label{IV.17.2.6}
-Let $X, Y$ be two preschemes, $f: X \to Y$ a morphism locally of finite type. The following conditions are equivalent:
+Let $X, Y$ be two preschemes, $f: X \to Y$ a morphism locally of finite type. 
+The following conditions are equivalent:
 \begin{enumerate}
 \item[a)] $f$ is a monomorphism.
 \item[b)] $f$ is radicial and formally unramified.
 \item[c)] For each $y \in Y$, the fibre $f^{-1}(y)$ is empty or $k(y)$-isomorphic to $\Spec(k(y))$ (in other words, is reduced to a single point $z$ such that $k(y) \to \sh{O}_z/\mathfrak{m}_y\sh{O}_z$ is an isomorphism).
 \end{enumerate}
 \end{proposition}
-The fact that $a)$ implies $c)$ results from $(\hyperref[IV.8.11.5.1]{8.11.5.1})$. It is clear that $c)$ implies that $f$ is radicial; let us prove that it also results from $c)$ that $\Omega^1 _{X/Y} = 0$, which will prove that $c)$ implies $b)$ $(\hyperref[IV.17.2.1]{17.2.1})$. Note that the $\sh{O}_X$-module $\Omega^1 _{X/Y}$ is quasi-coherent of finite type $(\hyperref[IV.16.3.9]{16.3.9})$. It follows from $(\textbf{I}, \hyperref[I.9.1.13.1]{9.1.13.1})$ that, for $(\Omega^1 _{X/Y})_x = 0$, it is necessary and sufficient that if we set $Y_1 = \Spec(k(y))$, $X_1 = f^{-1}(y) = X \times_{Y} Y_1$, we have $(\Omega^1 _{X_1/Y_1})_x = 0$; but as the morphism $f_1 : X_1 \to Y_1$ induced by $f$ is formally unramified by virtue of the hypothesis $c)$ $(\hyperref[IV.17.1.3]{17.1.3})$, the conclusion results from $(\hyperref[17.2.1]{17.2.1})$. Finally, let us prove that $b)$ implies $a)$; for this, consider the diagonal morphism $g = \Delta_f : X \to X \times_{Y} X$; since $f$ is radicial, $g$ is surjective $(\hyperref[IV.1.8.7.1]{1.8.7.1})$; on the other hand, $\Omega^1 _{X/Y}$ is by definition the conormal sheaf $\operatorname{\sh{G}r_1}(g)$ %TODO: is this the right way to write the operator?
-of the immersion $g$ $(\hyperref[IV.16.3.1]{16.3.1})$, and to say that $f$ is formally unramified therefore means that $\operatorname{\sh{G}r_1}(g) = 0$ $(\hyperref[IV.17.2.1]{17.2.1})$. In addition, $g$ is locally of finite presentation $(\hyperref[IV.1.4.3.1]{1.4.3.1})$; therefore the hypothesis $\operatorname{\sh{G}r_1}(g) = 0$ implies that $g$ is an open immersion $(\hyperref[IV.16.1.10]{16.1.10})$; being surjective, this immersion is an isomorphism, hence $f$ is a monomorphism $(\textbf{I}, \hyperref[I.5.3.8]{5.3.8})$.
+
+\begin{proof}
+The fact that $a)$ implies $c)$ results from \sref{IV.8.11.5.1}. 
+It is clear that $c)$ implies that $f$ is radicial; let us prove that it also results from $c)$ that $\Omega^1 _{X/Y} = 0$, which will prove that $c)$ implies $b)$ \sref{IV.17.2.1}.
+Note that the $\sh{O}_X$-module $\Omega^1 _{X/Y}$ is quasi-coherent of finite type \sref{IV.16.3.9}.
+It follows from \sref[I]{I.9.1.13.1} that, for $(\Omega^1 _{X/Y})_x = 0$, it is necessary and sufficient that if we set $Y_1 = \Spec(k(y))$, $X_1 = f^{-1}(y) = X \times_{Y} Y_1$, we have $(\Omega^1 _{X_1/Y_1})_x = 0$; but as the morphism $f_1 : X_1 \to Y_1$ induced by $f$ is formally unramified by virtue of the hypothesis $c)$ \sref{IV.17.1.3}, the conclusion results from \sref{IV.17.2.1}. Finally, let us prove that $b)$ implies $a)$; for this, consider the diagonal morphism $g = \Delta_f : X \to X \times_{Y} X$; since $f$ is radicial, $g$ is surjective \sref{IV.1.8.7.1}; on the other hand, $\Omega^1 _{X/Y}$ is by definition the conormal sheaf $\operatorname{\sh{G}r_1}(g)$ %TODO: is this the right way to write the operator?
+of the immersion $g$ \sref{IV.16.3.1}, and to say that $f$ is formally unramified therefore means that $\operatorname{\sh{G}r_1}(g) = 0$ \sref{IV.17.2.1}. 
+In addition, $g$ is locally of finite presentation \sref{IV.1.4.3.1}; therefore the hypothesis $\operatorname{\sh{G}r_1}(g) = 0$ implies that $g$ is an open immersion \sref{IV.16.1.10}; being surjective, this immersion is an isomorphism, hence $f$ is a monomorphism \sref[I]{I.5.3.8}.
+\end{proof}
 
 \subsection{Smooth morphisms, unramified morphisms, \'etale morphisms}
 \label{subsection:IV.17.3}
@@ -163,7 +222,7 @@ We say that a morphism $f : X \to Y$ is \emph{smooth} (resp. \emph{unramified}$^
 if it is locally of finite presentation and formally smooth (resp. formally unramified, resp. formally \'etale).
 \end{definition}
 We then also say that $X$ is \emph{smooth} (resp. \emph{unramified}, resp. \emph{\'etale}) \emph{over $Y$}.\\
-We will see later $(\hyperref[IV.17.5.2]{17.5.2})$ that this definition of a smooth morphism coincides with the definition already given in $(\hyperref[IV.6.8.1]{6.8.1})$; until then, we will exclusively use definition $(\hyperref[IV.17.3.1]{17.3.1})$ only.\\
+We will see later \sref{IV.17.5.2} that this definition of a smooth morphism coincides with the definition already given in \sref{IV.6.8.1}; until then, we will exclusively use definition \sref{IV.17.3.1} only.\\
 It is clear that saying that $f$ is \'etale means that it is both smooth and unramified.
 
 
