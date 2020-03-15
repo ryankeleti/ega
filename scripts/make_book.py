@@ -26,12 +26,7 @@ def list_text_files(path):
   return listf.split()
 
 path = get_path() 
-wide = False
-if len(argv) == 3 and "--wide" in argv:
-  wide = True
-  filename = "book-wide.tex"
-else:
-  filename = "book.tex"
+filename = "book.tex"
 with open(path + filename, 'w') as book:
   with open(path + "preamble.tex", 'r') as preamble:
     for line in preamble:
@@ -39,9 +34,6 @@ with open(path + filename, 'w') as book:
         continue
       if line.find("externaldocument") >= 0:
         continue
-      if line.find("{geometry}") >= 0:
-        if wide:
-          line = "\\usepackage[margin=1.5in]{geometry}"
       if line.find("xr-hyper") >= 0:
         line = line.replace("xr-hyper", "CJKutf8")
       if line.find("\\documentclass[oneside]") == 0:
