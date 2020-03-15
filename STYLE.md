@@ -3,6 +3,34 @@
 
 ## General conventions
 
+### Line break style
+
+A translated sentence is put on its own line.
+For example, if the source has a line like `Soient X un préschéma.`, write
+```latex
+ % ... text that came before this sentence ...
+Let $X$ be a prescheme.
+ % ... text that comes after this sentence ...
+```
+
+If the line has a semicolon, i.e., `Soient X un préschéma; soient A un anneau.`, write
+```latex
+% ... text that came before this sentence ...
+Let $X$ be a prescheme;
+let $A$ be a ring.
+% ... text that comes after this sentence ...
+```
+
+Separate paragraphs with a single blank line.
+
+Avoid using `\\` when possible. If necessary, for example inside an `align` environment, write
+```latex
+...\\
+...
+```
+i.e., end the line with the `\\`.
+
+
 ### Indentation style
 
 In the following, `␣` denotes a single blank space.
@@ -36,7 +64,6 @@ And so on:
 \end{environment1}
 ```
 
-
 For `enumerate` environments, use the following format:
 ```latex
 \begin{enumerate}
@@ -56,6 +83,22 @@ If there is another sentence after an `\item`, use the following format:
 ␣␣...
 \end{enumerate}
 ```
+
+For equations, write
+```latex
+\[
+␣␣equation
+\]
+```
+
+If an equation needs a tag, write
+```latex
+\[
+␣␣equation
+␣␣\tag{x.y.z.n}
+\]
+```
+where `x.y.z.n` is the tag.
 
 ### Environment style
 
@@ -127,18 +170,15 @@ are cool.
 if in EGA II, page 41 ends with `Hi! Schemes` and page 42 begins with `are cool.`.
 
 
-
-
-
 ## Available commands
 
 ### Font commands
 
-* `\sh` --- the sheaf font; use for general sheaves.
+* `\sh` --- the sheaf font; use for general sheaves
   - example: `\sh{F}` for a sheaf F
-* `\bb` --- the bold font; use for "blackboard bold" type characters.
+* `\bb` --- the bold font; use for "blackboard bold" type characters
   - example: `\bb{Z}` for the ring of integers
-* `\cat` --- the category font; use for general categories.
+* `\cat` --- the category font; use for general categories
   - example: `\cat{D}` for a category D
   - example: `\C` is defined to be `\cat{C}` for a category C
 
@@ -159,6 +199,60 @@ if in EGA II, page 41 ends with `Hi! Schemes` and page 42 begins with `are cool.
 * `\grad`
 * `\dimc`
 * `\codim`
-* `\id` 
+* `\id`
+
+#### Sheaf operators
+* `\shHom`
+* `\shProj`
+* `\shExt`
+* `\shGr`
 
 ### Category names
+* `\Set` --- the category of sets
+* `\CHom` --- a hom category, i.e. `\CHom(A, B)`
+
+### Miscellaneous
+* `\vphi` --- phi `φ`
+* `\emp` --- empty set `∅`
+* `\dual` --- for the dual sheaf, i.e., `\dual{\sh{F}}` for F<sup>v</sup>
+* `\rad` --- radical
+* `\nilrad` --- nilradical
+* `\setmin` --- set minus/difference
+* `\HH` --- cohomology H
+* `\CHH` --- Čech cohomology H
+* `\RR` --- right derived R
+* `\LL` --- left derived L
+* `\kres` --- residue field k
+* `\op` --- opposite category, i.e., `\cat{C}\op` for C<sup>op</sup>
+* `\red` --- reduced, i.e., `X_\red` for X<sub>red</sub>
+
+## References
+
+Use `\sref` for references to other environments in the document.
+
+For example, within EGA R, to reference environment `(x.y.z)` from EGA R, use
+```latex
+Here's a reference: \sref{R.x.y.z}...
+```
+
+Within EGA R, to reference environment `(x.y.z)` in a different volume EGA R', use
+```latex
+Here's a reference: \sref[R']{R'.x.y.z}...
+```
+
+If you want to reference a listed item within an environment, i.e. `(i)` of `(x.y.z)`, use
+```latex
+Here's a referenceL \sref{R.x.y.z}[(i)]
+```
+
+The general syntax is
+```latex
+\sref[R]{R.x.y.z}[...]
+```
+where `[R]` and `[...]` are optional.
+Here `R` denotes the Roman numeral corresponding to the EGA volume in which the reference is found.
+Inside `[...]`, one can write anything, such as `(i) and (v)`.
+
+Use `[R]` when referencing an environment outside the current volume.
+If the reference is within the current volume, omit the `[R]`.
+
