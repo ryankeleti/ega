@@ -116,7 +116,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 14. Universally open morphisms
     + [ ] 15. Fibres of a universally open morphism
     + [ ] 16. Differential invariants. Differentially smooth morphisms
-    + [ ] 17. Smooth morphisms, unramified morphisms, and étale morphisms
+    + [ ] 17. Smooth morphisms, unramified morphisms, and étale morphisms _(@tholzschuh)_
     + [ ] 18. Supplement on étale morphisms. Henselian local rings and strictly local rings
     + [ ] 19. Regular immersions and normal flatness
     + [ ] 20. Meromorphic functions and pseudo-morphisms
