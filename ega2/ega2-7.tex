@@ -9,6 +9,104 @@ This will be the only case that we need to concern ourselves with in all that fo
 \subsection{Reminder on valuation rings}
 \label{subsection:II.7.1}
 
+\begin{env}[7.1.1]
+\label{II.7.1.1}
+Amongst the many diverse equivalent properties that characterise valuation rings, we will use the following: a ring $A$ is said to be a \emph{valuation ring} if it is an integral ring which is not a field, and $A$ is \emph{maximal} in the set of local rings strictly contained in the field of fractions $K$ of $A$ under the domination relation \sref[I]{I.8.1.1}.
+Recall that a valuation ring is \emph{integrally closed}.
+If $A$ is a valuation ring, then so too is $A_\fk{p}$ for any prime ideal $\fk{p}\neq0$ of $A$.
+\end{env}
+
+\begin{env}[7.1.2]
+\label{II.7.1.2}
+Let $K$ be a field, and $A$ a local subring of $K$ that is not a field;
+\oldpage[II]{139}
+then there exists a valuation ring that both dominates $A$ and has $K$ as its field of fractions (\cite[p.~1-07, lemma~2]{I-1}).
+
+Now let $B$ be a valuation ring, $k$ its residue field, $K$ its field of fractions, and $L$ an extension of $k$.
+Then there exists a \emph{complete} valuation ring $C$ that dominates $B$ and whose residue field is $L$.
+Indeed, $L$ is the algebraic extension of a pure transcendental extension $L'=k(T_\mu)_{\mu\in M}$;
+we know that we can extend the valuation of $B$ corresponding to $B$ to a valuation of $K'=K(T_\mu)_{\mu\in M}$ in such a way that $L'$ is the residue field of this valuation (\cite[p.~98]{II-24});
+replacing $B$ by the completion of the ring of this extended valuation, we see that that we can restrict to the case where $B$ is complete and $L$ is an algebraic closure of $k$.
+If $\overline{K}$ is an algebraic closure of $K$, we can then extend the valuation that defines $B$ to $\overline{K}$, and the corresponding residue field is an algebraic closure of $k$, as we can see by lifting to $\overline{K}$ the coefficients of a unitary polynomial of $k[T]$.
+We are thus finally led to the case where $L=k$, and it then suffices to take $C$ to be the completion of $B$ in order to satisfy our claim.
+\end{env}
+
+\begin{env}[7.1.3]
+\label{II.7.1.3}
+Let $K$ be a field, and $A$ a subring of $K$;
+the integral closure $A'$ of $A$ in $K$ is the intersection of the valuation rings that contain $A$ and have $K$ as their field of fractions (\cite[p.~51, th.~2]{I-11}).
+Proposition~\sref{II.7.1.2} can then be expressed geometrically in an equivalent form:
+\end{env}
+
+\begin{proposition}[7.1.4]
+\label{II.7.1.4}
+Let $Y$ be a prescheme, $p:X\to Y$ a morphism, $x$ a point of $X$, $y=p(x)$, and $y'\neq y$ a specialisation \sref[0]{0.2.1.2} of $y$.
+Then there exists a local scheme $Y'$ which is the spectrum of some valuation ring, and a separated morphism $f:Y'\to Y$ such that, denoting the unique closed point of $Y'$ by $a$ and the generic point of $Y'$ by $b$, we have $f(a)=y'$ and $f(b)=y$.
+We can furthermore suppose that one of the two additional following properties are satisfied:
+\begin{enumerate}
+    \item[\rm{(i)}] $Y'$ is the spectrum of a complete valuation ring whose residue field is algebraically closed, and there exists a $\kres(y)$-homomorphism $\kres(x)\to\kres(b)$.
+    \item[\rm{(ii)}] There exists a $\kres(y)$-isomorphism $\kres(x)\xrightarrow{\sim}\kres(b)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.1.4}
+Let $Y_1$ be the reduced closed subprescheme of $Y$ that has $\overline\{y\}$ as its underlying space \sref[I]{I.5.2.1}, and let $X_1$ be the closed subprescheme given by the inverse image $p^{-1}(Y_1)$;
+since $y'\in\overline{\{y\}}$ by hypothesis, and since $\kres(x)$ is the same in $X$ and in $X_1$, we can assume that $Y$ is \emph{integral}, with generic point $y$;
+$\sh{O}_{y'}$ is then an integral local ring that is not a field, and whose field of fractions is $\sh{O}_y=\kres(y)$, and $\kres(x)$ is then an extension of $\kres(y)$.
+To satisfy the conditions $f(a)=y'$ and $f(b)=y$ as well as the additional condition (i) (resp. (ii)), we take $Y'=\Spec(A')$, where $A'$ is a valuation ring that dominates $\sh{O}_{y'}$ (resp. a valuation ring that dominates $\sh{O}_{y'}$ and whose field of fractions is $\kres(x)$);
+the existence such an of $A'$ is guaranteed by \sref{II.7.1.2}.
+\end{proof}
+
+\begin{env}[7.1.5]
+\label{II.7.1.5}
+Recall that a local ring $A$ is said to be \emph{of dimension 1} if there exists a prime ideal distinct from the maximal ideal $\fk{m}$, and if every prime ideal of $A$ distinct from $\fm{m}$ is a \emph{minimal} prime ideal;
+when $A$ is \emph{integral}, it is equivalent to ask that $\fk{m}$ and $(0)$ be the only prime ideals, with $\fk{m}\neq(0)$;
+in other words, $Y=\Spec(A)$ consists of two
+\oldpage[II]{140}
+points $a$ and $b$: $a$ is the unique \emph{closed} point, we have $\fk{j}_a=\fk{m}$, and $\kres(a)=k$ is the \emph{residue field} $k=A/\fk{m}$;
+$b$ is the \emph{generic point} of $Y$, $\fk{j}_b=(0)$, with the set $\{b\}$ being the unique open subset of $Y$ distinct from both $\emp$ and $Y$ (an open subset which is thus \emph{everywhere dense}), and $\kres(b)=K$ is the \emph{field of fractions} of $A$.
+\end{env}
+
+\begin{env}[7.1.6]
+\label{II.7.1.6}
+For a local ring $A$, Noetherian and of dimension 1, we know (\cite[pp.~2-08 and 17-01]{I-1}) that the following conditions are equivalent:
+\begin{enumerate}
+    \item[(a)] $A$ is normal;
+    \item[(b)] $A$ is regular;
+    \item[(c)] $A$ is a valuation ring;
+\end{enumerate}
+furthermore, $A$ is then a \emph{discrete valuation ring}.
+Propositions~\sref{II.7.1.2} and \sref{II.7.1.3} then have the following analogues for discrete valuation rings:
+\end{env}
+
+\begin{proposition}[7.1.7]
+\label{II.7.1.7}
+Let $A$ be an integral local Noetherian ring that is not a field, $K$ its field of fractions, and $L$ an extension of finite type of $K$;
+then there exists a discrete valuation ring that dominates $A$ and has $L$ as its field of fractions.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.1.7}
+Suppose first of all that $L=K$.
+Let $\fk{m}$ be the maximal ideal of $A$, $(x_1,\ldots,x_n)$ a system of non-null generators of $\fk{m}$, and $B$ the subring $A[x_2/x_1,\ldots,x_n/x_1]$ of $K$, which is Noetherian.
+It is immediate that the ideal $\fk{m}B$ of $B$ is identical to the principal ideal $x_1B$;
+if $\fk{p}$ is a minimal prime ideal of $x_1B$, then $\fk{p}$ is of rank 1 (\cite[t.~I, p.~277]{I-13});
+in other words, $B_\fk{p}$ is a local Noetherian ring \emph{of dimension 1};
+it is clear that $\fk{p}B_\fk{p}\cap A$ is an ideal of $A$ that contains $\fk{m}$ and that does not contain $1$, and is thus equal to $\fk{m}$, and so $B_\fk{p}$ \emph{dominates} $A$ \sref[I]{I.8.1.1}.
+It follows from the Krull-Akizuki Theorem (\cite[p.~293]{II-25}) that the integral closure $C$ of $B_\fk{p}$ is a Noetherian ring (even though $C$ is not necessarily a $B_\fk{p}$-module of finite type);
+if $\fk{n}$ is a maximal ideal of $C$, then $C_\fk{n}$ is a normal local Noetherian ring of dimension 1 (\cite[p.~295]{II-25}), and thus a discrete valuation ring that dominates $B_\fk{p}$ and \emph{a fortiori} $A$.
+
+Now, if $L$ is an extension of finite type of $K$, we can, by the above, restrict to the case where $A$ is already a discrete valuation ring.
+Let $w$ be a valuation of $K$ associated to $A$;
+there exists a discrete valuation $w'$ of $L$ that \emph{extends} $w$: we can restrict, by induction on the number of generators of $L$, to the case where $L=K(\alpha)$, and then the proposition is classical (\cite[p.~106]{II-24}).
+\end{proof}
+
+\begin{corollary}[7.1.8]
+\label{II.7.1.8}
+
+\end{corollary}
+
 
 % \subsection{Valuative criterion for separatedness}
 % \label{subsection:II.7.2}
