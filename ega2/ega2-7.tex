@@ -72,9 +72,9 @@ $b$ is the \emph{generic point} of $Y$, $\mathfrak{j}_b=(0)$, with the set $\{b\
 \label{II.7.1.6}
 For a local ring $A$, Noetherian and of dimension 1, we know (\cite[pp.~2-08 and 17-01]{I-1}) that the following conditions are equivalent:
 \begin{enumerate}
-    \item[(a)] $A$ is normal;
-    \item[(b)] $A$ is regular;
-    \item[(c)] $A$ is a valuation ring;
+    \item[\rm{(a)}] $A$ is normal;
+    \item[\rm{(b)}] $A$ is regular;
+    \item[\rm{(c)}] $A$ is a valuation ring;
 \end{enumerate}
 furthermore, $A$ is then a \emph{discrete valuation ring}.
 Propositions~\sref{II.7.1.2} and \sref{II.7.1.3} then have the following analogues for discrete valuation rings:
@@ -124,7 +124,7 @@ The geometric form of \sref{II.7.1.7} is the following:
 \oldpage[II]{141}
 \begin{proposition}[7.1.9]
 \label{II.7.1.9}
-Let $Y$ be a locally Noetherian prescheme, $p:X\to Y$ a morphism of locally finite type, $x$ a point of $X$, $y=p(x)$, and $y'\neq y$ a specialisation of $y$.
+Let $Y$ be a locally Noetherian prescheme, $p:X\to Y$ a morphism locally of finite type, $x$ a point of $X$, $y=p(x)$, and $y'\neq y$ a specialisation of $y$.
 Then there exists a local scheme $Y'$, spectrum of a discrete valuation ring, a separated morphism $f:Y'\to Y$, and a rational $Y$-map $g$ from $Y'$ to $X$, such that, denoting the closed point of $Y'$ by $a$, and the generic point of $Y'$ by $b$, we have $f(a)=y'$, $f(b)=y$, $g(b)=x$, and such that, in the commutative diagram
 \[
 \label{II.7.1.9.1}
@@ -150,9 +150,97 @@ Furthermore, since $X$ and $Y$ are locally Noetherian \sref[I]{I.6.6.2} and sinc
 \subsection{Valuative criterion for separatedness}
 \label{subsection:II.7.2}
 
+\begin{proposition}[7.2.1]
+\label{II.7.2.1}
+Let $X$ and $Y$ be preschemes, and $f:X\to Y$ a quasi-compact morphism.
+The following two conditions are equivalent:
+\begin{enumerate}
+    \item[\rm{(a)}] The morphism $f$ is closed.
+    \item[\rm{(b)}] For all $x\in X$, and every specialisation $y'\neq y$ of $y=f(x)$, there exists a specialisation $x'$ of $x$ such that $f(x')=x$.
+\end{enumerate}
+\end{proposition}
 
-% \subsection{Valuative criterion for properness}
-% \label{subsection:II.7.3}
+\begin{proof}
+\label{proof-II.7.2.1}
+Condition~(b) implies that $f(\overline{\{x\}})=\overline{\{y\}}$, and is thus a consequence of (a).
+To show that (b) implies (a), consider a closed subset $X'$ of the underlying space $X$;
+let $Y'=\overline{f(X')}$, and show that $Y'=f(X')$ as follows.
+Consider the closed reduced subpreschemes of $X$ and $Y$ whose underlying spaces are $X'$ and $Y'$ (respectively) \sref[I]{I.5.2.1};
+there then exists a morphism $f':X'\to Y'$ such that the diagram
+\[
+    \xymatrix{
+        X' \ar[r]^{f'} \ar[d]
+        & Y' \ar[d]
+    \\  X \ar[r]_{f}
+        & Y
+    }
+\]
+commutes \sref[I]{I.5.2.2}, and, since $f$ is quasi-compact, so too is $f'$.
+We are thus led to proving that, if $f$ is a quasi-compact and \emph{dominant} morphism, then
+\oldpage[II]{142}
+condition~(b) implies that $f(X)=Y$.
+But let $y'$ be a point of $Y$, and let $y$ be the generic point of an irreducible component of $Y$ that contains $y'$;
+by (b), it suffices to show that $f^{-1}(y)$ is not empty.
+But we know that this property is a consequence of the fact that $f$ is quasi-compact and dominant \sref[I]{I.6.6.5}.
+\end{proof}
+
+\begin{corollary}[7.2.2]
+\label{II.7.2.2}
+Let $f:X\to Y$ be a quasi-compact immersion.
+For the underlying space $X$ to be closed in $Y$, it is necessary and sufficient for it to contain every specialisation (in $Y$) of all of its points.
+\end{corollary}
+
+\begin{proposition}[7.2.3]
+\label{II.7.2.3}
+Let $Y$ be a prescheme (resp. a locally Noetherian prescheme), and $f:X\to Y$ a morphism (resp. a morphism locally of finite type).
+The following conditions are equivalent:
+\begin{enumerate}
+    \item[\rm{(a)}] $f$ is separated.
+    \item[\rm{(b)}] The diagonal morphism $X\to X\times_Y X$ is quasi-compact, and, for every $Y$-prescheme of the form $Y'=\Spec(A)$, with $A$ some valuation ring (resp. some discrete valuation ring), any two $Y$-morphisms from $Y'$ to $X$ that agree on the generic point of $Y'$ are equal.
+    \item[\rm{(c)}] The diagonal morphism $X\to X\times_Y X$ is quasi-compact, and, for every $Y$-prescheme of the form $Y'=\Spec(A)$, with $A$ some valuation ring (resp. some discrete valuation ring), any two $Y'$-sections of $X'=X_{(Y')}$ that agree on the generic point of $Y'$ are equal.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.2.3}
+The equivalence of (b) and (c) follows from the bijective correspondence between $Y$-morphisms from $Y'$ to $X$ and $Y'$-sections of $X'$ \sref[I]{I.3.3.14}.
+If $X$ is separated over $Y$, condition~(b) is satisfied, by \sref[I]{I.7.2.2.1}, since $Y'$ is integral.
+It remains to show that (b) implies that the diagonal morphism $\Delta:X\to X\times_Y X$ is closed, and it is equivalent to show that it satisfies the criteria of \sref{II.7.2.2}.
+But let $z$ be a point of the diagonal $\Delta(X)$, and $z'\neq z$ a specialisation of $z$ in $X\times_Y X$.
+There then exists \sref{II.7.1.4} a valuation ring $A$ and a morphism $f$ from $Y'=\Spec(A)$ to $X\times_Y X$ such that $f$ sends the closed point $a$ of $Y'$ to $z'$, and the generic point $b$ of $Y'$ to $z$;
+this morphism makes $Y'$ an $(X\times_Y X)$-prescheme, and \emph{a fortiori} a $Y$-prescheme.
+If we compose the two projections of $X\times_Y X$ with $f$, then we obtain two $Y$-morphisms, $g_1$ and $g_2$, from $Y'$ to $X$, which, by hypothesis, agree on the point $b$;
+they are thus equal to one single morphism $g$, which implies \sref[I]{I.5.3.1} that $f$ factors as $f=\Delta\circ g$, and thus $z'\in\Delta(X)$.
+If we suppose that $Y$ is locally Noetherian and $f$ is locally of finite type, then $X\times_Y X$ is locally Noetherian \sref[I]{I.6.6.7};
+we can thus follow the same argument as before by supposing that $A$ is a discrete valuation ring, by \sref{II.7.1.9}.
+\end{proof}
+
+\begin{remark}[7.2.4]
+\label{II.7.2.4}
+\begin{enumerate}
+    \item[\rm{(i)}] The hypothesis that the morphism $\Delta$ is quasi-compact is always satisfied whenever $Y$ is locally Noetherian and $f$ is locally of finite type, because $X\times_Y X$ is then locally Noetherian \sref[I]{I.6.6.4}[i].
+        In the general case, this also implies that, for every cover $(U_\alpha)$ of $X$ by affine opens, the sets $U_\alpha\cap U_\beta$ are \emph{quasi-compact}.
+    \item[\rm{(ii)}] For $f$ to be separated, it is \emph{sufficient} for condition~(b) or (c) to be satisfied for some valuation ring $A$ that is \emph{complete} and whose residue field is \emph{algebraically closed};
+        this follows from the proofs of \sref{II.7.2.3} and \sref{II.7.2.4}.
+\end{enumerate}
+\end{remark}
+
+
+\oldpage[II]{143}
+
+\subsection{Valuative criterion for properness}
+\label{subsection:II.7.3}
+
+\begin{proposition}[7.3.1]
+\label{II.7.3.1}
+Let $A$ be a valuation ring, $Y=\Spec(A)$, $b$ the generic point of $Y$, $X$ an integral \emph{scheme}, and $f:X\to Y$ a \emph{closed} morphism such that $f^{-1}(b)$ consists of a single point $x$ and such that the corresponding homomorphism $\kres(b)\to\kres(x)$ is bijective.
+Then $f$ is an isomorphism.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.3.1}
+Since
+\end{proof}
 
 
 % \subsection{Algebraic curves and function fields of dimension 1}
