@@ -13,7 +13,7 @@ This will be the only case that we need to concern ourselves with in all that fo
 \label{II.7.1.1}
 Amongst the many diverse equivalent properties that characterise valuation rings, we will use the following: a ring $A$ is said to be a \emph{valuation ring} if it is an integral ring which is not a field, and $A$ is \emph{maximal} in the set of local rings strictly contained in the field of fractions $K$ of $A$ under the domination relation \sref[I]{I.8.1.1}.
 Recall that a valuation ring is \emph{integrally closed}.
-If $A$ is a valuation ring, then so too is $A_\fk{p}$ for any prime ideal $\fk{p}\neq0$ of $A$.
+If $A$ is a valuation ring, then so too is $A_\mathfrak{p}$ for any prime ideal $\mathfrak{p}\neq0$ of $A$.
 \end{env}
 
 \begin{env}[7.1.2]
@@ -60,12 +60,12 @@ the existence such an of $A'$ is guaranteed by \sref{II.7.1.2}.
 
 \begin{env}[7.1.5]
 \label{II.7.1.5}
-Recall that a local ring $A$ is said to be \emph{of dimension 1} if there exists a prime ideal distinct from the maximal ideal $\fk{m}$, and if every prime ideal of $A$ distinct from $\fm{m}$ is a \emph{minimal} prime ideal;
-when $A$ is \emph{integral}, it is equivalent to ask that $\fk{m}$ and $(0)$ be the only prime ideals, with $\fk{m}\neq(0)$;
+Recall that a local ring $A$ is said to be \emph{of dimension 1} if there exists a prime ideal distinct from the maximal ideal $\mathfrak{m}$, and if every prime ideal of $A$ distinct from $\mathfrak{m}$ is a \emph{minimal} prime ideal;
+when $A$ is \emph{integral}, it is equivalent to ask that $\mathfrak{m}$ and $(0)$ be the only prime ideals, with $\mathfrak{m}\neq(0)$;
 in other words, $Y=\Spec(A)$ consists of two
 \oldpage[II]{140}
-points $a$ and $b$: $a$ is the unique \emph{closed} point, we have $\fk{j}_a=\fk{m}$, and $\kres(a)=k$ is the \emph{residue field} $k=A/\fk{m}$;
-$b$ is the \emph{generic point} of $Y$, $\fk{j}_b=(0)$, with the set $\{b\}$ being the unique open subset of $Y$ distinct from both $\emp$ and $Y$ (an open subset which is thus \emph{everywhere dense}), and $\kres(b)=K$ is the \emph{field of fractions} of $A$.
+points $a$ and $b$: $a$ is the unique \emph{closed} point, we have $\mathfrak{j}_a=\mathfrak{m}$, and $\kres(a)=k$ is the \emph{residue field} $k=A/\mathfrak{m}$;
+$b$ is the \emph{generic point} of $Y$, $\mathfrak{j}_b=(0)$, with the set $\{b\}$ being the unique open subset of $Y$ distinct from both $\emp$ and $Y$ (an open subset which is thus \emph{everywhere dense}), and $\kres(b)=K$ is the \emph{field of fractions} of $A$.
 \end{env}
 
 \begin{env}[7.1.6]
@@ -89,13 +89,13 @@ then there exists a discrete valuation ring that dominates $A$ and has $L$ as it
 \begin{proof}
 \label{proof-II.7.1.7}
 Suppose first of all that $L=K$.
-Let $\fk{m}$ be the maximal ideal of $A$, $(x_1,\ldots,x_n)$ a system of non-null generators of $\fk{m}$, and $B$ the subring $A[x_2/x_1,\ldots,x_n/x_1]$ of $K$, which is Noetherian.
-It is immediate that the ideal $\fk{m}B$ of $B$ is identical to the principal ideal $x_1B$;
-if $\fk{p}$ is a minimal prime ideal of $x_1B$, then $\fk{p}$ is of rank 1 (\cite[t.~I, p.~277]{I-13});
-in other words, $B_\fk{p}$ is a local Noetherian ring \emph{of dimension 1};
-it is clear that $\fk{p}B_\fk{p}\cap A$ is an ideal of $A$ that contains $\fk{m}$ and that does not contain $1$, and is thus equal to $\fk{m}$, and so $B_\fk{p}$ \emph{dominates} $A$ \sref[I]{I.8.1.1}.
-It follows from the Krull-Akizuki Theorem (\cite[p.~293]{II-25}) that the integral closure $C$ of $B_\fk{p}$ is a Noetherian ring (even though $C$ is not necessarily a $B_\fk{p}$-module of finite type);
-if $\fk{n}$ is a maximal ideal of $C$, then $C_\fk{n}$ is a normal local Noetherian ring of dimension 1 (\cite[p.~295]{II-25}), and thus a discrete valuation ring that dominates $B_\fk{p}$ and \emph{a fortiori} $A$.
+Let $\mathfrak{m}$ be the maximal ideal of $A$, $(x_1,\ldots,x_n)$ a system of non-null generators of $\mathfrak{m}$, and $B$ the subring $A[x_2/x_1,\ldots,x_n/x_1]$ of $K$, which is Noetherian.
+It is immediate that the ideal $\mathfrak{m}B$ of $B$ is identical to the principal ideal $x_1B$;
+if $\mathfrak{p}$ is a minimal prime ideal of $x_1B$, then $\mathfrak{p}$ is of rank 1 (\cite[t.~I, p.~277]{I-13});
+in other words, $B_\mathfrak{p}$ is a local Noetherian ring \emph{of dimension 1};
+it is clear that $\mathfrak{p}B_\mathfrak{p}\cap A$ is an ideal of $A$ that contains $\mathfrak{m}$ and that does not contain $1$, and is thus equal to $\mathfrak{m}$, and so $B_\mathfrak{p}$ \emph{dominates} $A$ \sref[I]{I.8.1.1}.
+It follows from the Krull-Akizuki Theorem (\cite[p.~293]{II-25}) that the integral closure $C$ of $B_\mathfrak{p}$ is a Noetherian ring (even though $C$ is not necessarily a $B_\mathfrak{p}$-module of finite type);
+if $\mathfrak{n}$ is a maximal ideal of $C$, then $C_\mathfrak{n}$ is a normal local Noetherian ring of dimension 1 (\cite[p.~295]{II-25}), and thus a discrete valuation ring that dominates $B_\mathfrak{p}$ and \emph{a fortiori} $A$.
 
 Now, if $L$ is an extension of finite type of $K$, we can, by the above, restrict to the case where $A$ is already a discrete valuation ring.
 Let $w$ be a valuation of $K$ associated to $A$;
@@ -104,8 +104,37 @@ there exists a discrete valuation $w'$ of $L$ that \emph{extends} $w$: we can re
 
 \begin{corollary}[7.1.8]
 \label{II.7.1.8}
-
+Let $A$ be a Noetherian integral ring, $K$ its field of fractions, and $L$ an extension of finite type of $K$.
+Then the integral closure of $A$ in $L$ is the intersection of the discrete valuation rings that have $L$ as their field of fractions and that contain $A$.
 \end{corollary}
+
+\begin{proof}
+\label{proof-II.7.1.8}
+Indeed, such a discrete valuation ring, being normal, contains \emph{a fortiori} every element of $L$ that is integral over $A$.
+It thus suffices to prove that, if $x\in L$ is not integral over $A$, then there exists a discrete valuation ring $C$ that has $L$ as its field of fractions, contains $A$, and does not contain $x$.
+The hypothesis on $x$ implies that $x\not\in B=A[1/x]$, or, in other words, that $1/x$ is not invertible in the Noetherian ring $B$.
+There is thus a prime ideal $\mathfrak{p}$ of $B$ that contains $1/x$.
+The integral local ring $B_\mathfrak{p}$ is Noetherian and contained in $L$, which is an extension  of finite type of the field of fractions of $B_\mathfrak{p}$ (with the latter containing $K$).
+By \sref{II.7.1.7}, there thus exists a discrete valuation ring $C$ that dominates $B_\mathfrak{p}$ and has $L$ as its field of fractions;
+since $1/x\in\mathfrak{p}B_\mathfrak{p}$ belongs to the maximal ideal of $C$, we have that $x\not\in C$, which concludes the proof.
+\end{proof}
+
+The geometric form of \sref{II.7.1.7} is the following:
+
+\oldpage[II]{141}
+\begin{proposition}[7.1.9]
+\label{II.7.1.9}
+Let $Y$ be a locally Noetherian prescheme, $p:X\to Y$ a morphism of locally finite type, $x$ a point of $X$, $y=p(x)$, and $y'\neq y$ a specialisation of $y$.
+Then there exists a local scheme $Y'$, spectrum of a discrete valuation ring, a separated morphism $f:Y'\to Y$, and a rational $Y$-map $g$ from $Y'$ to $X$, such that, denoting the closed point of $Y'$ by $a$, and the generic point of $Y'$ by $b$, we have $f(a)=y'$, $f(b)=y$, $g(b)=x$, and such that, in the commutative diagram
+\[
+    \xymatrix{
+        & \kres(x) \ar[dl]_{\gamma}
+    \\  \kres(b)
+        & \kres(y) \ar[u]_{\pi} \ar[l]^{\varphi}
+    }
+\]
+(where $\pi$, $\varphi$, and $\gamma$ are the homomorphisms corresponding to $p$, $f$, and $g$, respectively) the morphism $\gamma$ is a bijection.
+\end{proposition}
 
 
 % \subsection{Valuative criterion for separatedness}
