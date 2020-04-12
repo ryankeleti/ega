@@ -127,18 +127,28 @@ The geometric form of \sref{II.7.1.7} is the following:
 Let $Y$ be a locally Noetherian prescheme, $p:X\to Y$ a morphism of locally finite type, $x$ a point of $X$, $y=p(x)$, and $y'\neq y$ a specialisation of $y$.
 Then there exists a local scheme $Y'$, spectrum of a discrete valuation ring, a separated morphism $f:Y'\to Y$, and a rational $Y$-map $g$ from $Y'$ to $X$, such that, denoting the closed point of $Y'$ by $a$, and the generic point of $Y'$ by $b$, we have $f(a)=y'$, $f(b)=y$, $g(b)=x$, and such that, in the commutative diagram
 \[
+\label{II.7.1.9.1}
     \xymatrix{
         & \kres(x) \ar[dl]_{\gamma}
     \\  \kres(b)
         & \kres(y) \ar[u]_{\pi} \ar[l]^{\varphi}
     }
+\tag{7.1.9.1}
 \]
 (where $\pi$, $\varphi$, and $\gamma$ are the homomorphisms corresponding to $p$, $f$, and $g$, respectively) the morphism $\gamma$ is a bijection.
 \end{proposition}
 
+\begin{proof}
+\label{proof-II.7.1.9}
+As in \sref{II.7.1.4}, we can restrict to the case where $Y$ is integral with generic point $y$ (taking \sref[I]{I.6.4.3}[iv] into account), and, since the question is local on $X$ and $Y$, we can assume that $p$ is of finite type;
+we are then in the situation of \sref{II.7.1.4}, with the additional property that $\kres(x)$ is an extension \emph{of finite type} of $\kres(y)$ \sref[I]{I.6.4.11} and that $\sh{O}_{y'}$ is Noetherian;
+this lets us apply \sref{II.7.1.7} and take $Y'=\Spec(A')$, where $A'$ is a discrete valuation ring that dominates $\sh{O}_{y'}$ and whose field of fractions is $\kres(x)$.
+We have thus defined a commutative diagram \sref{II.7.1.9.1} where $\gamma$ is a bijection, with $\pi$ and $\varphi$ corresponding to the morphisms $p$ and $f$.
+Furthermore, since $X$ and $Y$ are locally Noetherian \sref[I]{I.6.6.2} and since $Y'$ is integral, there exists exactly one rational $Y$-map $g$ from $Y'$ to $X$ to which corresponds the isomorphism $\gamma$ \sref[I]{I.7.1.15}, which finishes the proof.
+\end{proof}
 
-% \subsection{Valuative criterion for separatedness}
-% \label{subsection:II.7.2}
+\subsection{Valuative criterion for separatedness}
+\label{subsection:II.7.2}
 
 
 % \subsection{Valuative criterion for properness}
