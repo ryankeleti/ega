@@ -239,7 +239,121 @@ Then $f$ is an isomorphism.
 
 \begin{proof}
 \label{proof-II.7.3.1}
-Since
+Since $f$ if closed and dominant, we have that $f(X)=Y$;
+it suffices \sref[I]{I.4.2.2} to prove that, for all $y'\neq b$ in $Y$, there exists \emph{exactly one} point $x'$ such that $f(x')=y'$, and that the corresponding homomorphism $\sh{O}_{y'}\to\sh{O}_{x'}$ is bijective, since then $f$ will be a homeomorphism.
+But if $f(x')=y'$ then $\sh{O}_{x'}$ is a local ring contained in $K=\kres(x)=\kres(b)$ and dominating $\sh{O}_{y'}$;
+the latter is the local ring $A_{y'}$, and is thus a valuation ring \sref{II.7.1.1} that has $K$ as its field of fractions.
+Also, $\sh{O}_{x'}\neq K$, since $x'$ is not the generic point of $X$ \sref[0]{0.2.1.3};
+we thus conclude that $\sh{O}_{x'}=\sh{O}_{y'}$.
+Since $X$ is an integral scheme, the fact that $\sh{O}_{x'}=\sh{O}_{x''}$ implies that $x'=x''$ \sref[I]{I.8.2.2}, which finishes the proof.
+\end{proof}
+
+\begin{env}[7.3.2]
+\label{II.7.3.2}
+Let $A$ be a valuation ring, $K$ its field of fractions, $Y=\Spec(A)$, and $b$ the generic point of $Y$, such that $\sh{O}_b=\kres(b)$ is equal to $K$;
+let $f:X\to Y$ be a morphism.
+We know \sref[I]{I.7.1.4} that the \emph{rational $Y$-sections} of $X$ are in bijective correspondence with the \emph{germs} of $Y$-sections (defined in a neighbourhood of $b$) at the point $b$, whence we have a canonical map
+\[
+\label{II.7.3.2.1}
+    \Gamma_\mathrm{rat}(X/Y) \to \Gamma(f^{-1}(b)/\Spec(K))
+\tag{7.3.2.1}
+\]
+with the elements of $\Gamma(f^{-1}(b)/\Spec(K))$ being identified, by definition \sref[I]{I.3.4.5}, with the \emph{points of $f^{-1}(b)=X\otimes_A K$ that are rational over $K$}.
+When $f$ is \emph{separated}, it follows from \sref[I]{I.5.4.7} that the map \sref{II.7.3.2.1} is \emph{injective}, since $Y$ is an integral scheme.
+
+Composing \sref{II.7.3.2.1} with the canonical map $\Gamma(X/Y)\to\Gamma_\mathrm{rat}(X/Y)$ \sref[I]{I.7.1.2}, we obtain a canonical map
+\[
+\label{II.7.3.2.2}
+    \Gamma(X/Y) \to \Gamma(f^{-1}(b)/\Spec(K)).
+\tag{7.3.2.2}
+\]
+When $f$ is \emph{separated}, this map is again \emph{injective} \sref[I]{I.5.4.7}.
+\end{env}
+
+\begin{proposition}[7.3.3]
+\label{II.7.3.3}
+Let $A$ be a valuation ring with field of fractions $K$, $Y=\Spec(A)$, $b$ the generic point of $Y$, and $f:X\to Y$ a \emph{separated} and \emph{closed} morphism.
+Then the canonical map \sref{II.7.3.2.2} is bijective (which is equivalent to saying that it is \emph{surjective}, and implies that the rational $Y$-sections of $X$ are \emph{everywhere defined}).
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.3.3}
+So let $x$ be a point of $f^{-1}(b)$ that is \emph{rational} over $K$.
+Since $f$ is separated, so too is the morphism $f^{-1}(b)\to\Spec(K)$ corresponding to $f$ \sref[I]{I.5.5.1}[iv], and, since every section of $f^{-1}(b)$ is a closed immersion \sref[I]{I.5.4.6}, $\{x\}$ is closed \emph{in $f^{-1}(b)$}.
+Consider the reduced closed subprescheme $X'$ of $X$ that has the closure $\overline{\{x\}}$ of $\{x\}$ \emph{in $X$} as its underlying space.
+It is clear that the restriction of $f$ to $X'$ satisfies the hypotheses of \sref{II.7.3.1}, and is thus an \emph{isomorphism} from $X'$ to $Y$, whose inverse isomorphism is the desired $Y$-section of $X$.
+\end{proof}
+
+\begin{env}[7.3.4]
+\label{II.7.3.4}
+To state the two following results, we use a terminology that will be justified and discussed in chapter~IV: if $F$ is a subset
+\oldpage[II]{144}
+of a prescheme $Y$, we define the \emph{codimension} of $F$ in $Y$, denoted $\codim_Y F$, to be the lower bound of the integers $\dim(\sh{O}_z)$ over all $z$ in $F$.
+\end{env}
+
+\begin{corollary}[7.3.5]
+\label{II.7.3.5}
+Let $Y$ be a locally Noetherian reduced prescheme, and $N$ the set of points $y\in Y$ where $Y$ is not regular \sref[0]{0.4.1.4};
+suppose that $\codim_Y N\geq2$.
+Let $f:X\to Y$ be a morphism of finite type, both \emph{separated} and \emph{closed}, and let $g$ be a rational $Y$-section of $X$;
+if $Y'$ is the set of points of $Y$ where $g$ is not defined (a set which is \emph{closed} \sref[I]{I.7.2.1}), then $\codim_Y Y'\geq2$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.3.5}
+It suffices to prove that $g$ is defined at every point $z\in Y$ such that $\dim\sh{O}_z\leq1$.
+If $\dim\sh{O}_z=0$, then $z$ is the generic point of an irreducible component of $Y$ \sref[I]{I.1.1.14}, and so belongs to every everywhere-dense open subset of $Y$, and, in particular, to the domain of definition of $g$.
+So suppose that $\dim\sh{O}_z=1$; by hypothesis, $\sh{O}_z$ is then a regular Noetherian local ring, and thus \sref{I.7.1.6} a \emph{discrete valuation ring}.
+Let $Z=\Spec(\sh{O}_z)$;
+since $U=Y\setmin Y'$ is everywhere dense, $U\cap Z$ is nonempty \sref[I]{I.2.4.2};
+let $g'$ be the rational map from $Z$ to $X$ induced by $g$ \sref[I]{I.7.2.8};
+it suffices to show that $g'$ is a \emph{morphism} \sref[I]{I.7.2.9}.
+But $g'$ can be thought of as a rational $Z$-section of the $Z$-prescheme $f^{-1}(Z)=X\times_Y Z$;
+it is clear that the morphism $f^{-1}(Z)\to Z$ corresponding to $f$ is closed, and it follows from \sref[I]{I.5.5.1}[i] that it is separated;
+we thus conclude from \sref{II.7.3.3} that $g'$ is everywhere defined;
+since $Z$ is reduced, and $X$ is separated over $Y$, $g'$ is a morphism \sref[I]{I.7.2.2}.
+\end{proof}
+
+\begin{corollary}[7.3.6]
+\label{II.7.3.6}
+Let $S$ be a locally Noetherian prescheme, and $X$ and $Y$ both $S$-preschemes;
+suppose that $Y$ is reduced, and further that the set $N$ of points $y\in Y$ where $Y$ is not regular is such that $\codim_Y N\geq2$;
+suppose finally that the structure morphism $X\to S$ is proper.
+Let $f$ be a rational $S$-map from $Y$ to $X$, and let $Y'$ be the points of $Y$ where $f$ is not defined;
+then $\codim_Y Y'\geq2$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.3.6}
+We know \sref[I]{I.7.1.2} that we can identify the rational $S$-maps from $Y$ to $X$ with the rational $Y$-sections of $X\times_S Y$;
+since the structure morphism $X\times_S Y\to Y$ is closed \sref{II.5.4.1}, we can apply \sref{II.7.3.5}, whence the corollary.
+\end{proof}
+
+\begin{remark}[7.3.7]
+\label{II.7.3.7}
+The hypotheses on $Y$ in \sref{II.7.3.5} and \sref{II.7.3.6} will be satisfied in particular when $Y$ is \emph{normal} \sref[0]{0.4.1.4}, by \sref{II.7.1.6}.
+\end{remark}
+
+We can characterise the universally closed morphisms (resp. proper morphisms) by a converse of \sref{II.7.3.3}:
+\begin{theorem}[7.3.8]
+\label{II.7.3.8}
+Let $Y$ be a prescheme (resp. a locally Noetherian prescheme), and $f:X\to Y$ a quasi-compact separated morphism (resp. a morphism of finite type).
+The following conditions are equivalent:
+\begin{enumerate}
+    \item[\rm{(a)}] $f$ is universally closed (resp. proper).
+    \item[\rm{(b)}] For every $Y$-scheme of the form $Y'=\Spec(A)$, where $A$ is a valuation ring (resp. a discrete valuation ring) with field of fractions $K$, the canonical map
+        \[
+            \Hom_Y(Y',X) \to \Hom_Y(\Spec(K),X)
+        \]
+        corresponding to the canonical injection $A\to K$ is surjective (resp. bijective).
+\oldpage[II]{145}
+    \item[\rm{(c)}] For every $Y$-scheme of the form $Y'=\Spec(A)$, where $A$ is a valuation ring (resp. a discrete valuation ring), the canonical map \sref{II.7.3.2.2} relative to the $Y'$-prescheme $X_{(Y')}$ is surjective (resp. bijective).
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+\label{proof-II.7.3.8}
+
 \end{proof}
 
 
