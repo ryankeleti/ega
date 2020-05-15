@@ -527,7 +527,7 @@ Recall that we call the \emph{symmetric algebra} on $E$ and denote by $\bb{S}(E)
 The algebra $\bb{S}(E)$ is characterized by the following universal property: if $\sigma$ is the canonical map $E\to\bb{S}(E)$ (obtained by composing $E\to\bb{T}(E)$ with the canonical map $\bb{T}(E)\to\bb{S}(E)$), then every $A$-linear map $E\to B$, where $B$ is a \emph{commutative} $A$-algebra, factors uniquely as $E\xrightarrow{\sigma}\bb{S}(E)\xrightarrow{g}B$, where $g$ is an $A$-homomorphism \emph{of algebras}.
 We immediately deduce from this characterization that for two $A$-modules $E$ and $F$, we have
 \[
-  \bb{S}(E\oplus F)=\bb{S}(E)\oplus\bb{S}(F)
+  \bb{S}(E\oplus F)=\bb{S}(E)\otimes\bb{S}(F)
 \]
 \oldpage[II]{15}
 up to canonical isomorphism; in addition, $\bb{S}(E)$ is a covariant functor in $E$, from the category of $A$-modules to that of commutative $A$-algebras; finally, the above characterization also shows that if $E=\varinjlim E_\lambda$, then we have $\bb{S}(E)=\varinjlim\bb{S}(E_\lambda)$ up to canonical isomorphism.
@@ -567,7 +567,7 @@ In particular, every homomorphism $u:\sh{E}\to\sh{F}$ of $\sh{A}$-modules define
 
 \oldpage[II]{16}
 By \sref{II.1.7.2} and the commutativity of $\bb{S}$ with inductive limts, we have $(\bb{S}(\sh{E}))_x=\bb{S}(\sh{E}_x)$ for every point $x\in S$.
-If $\sh{E}$, $\sh{F}$ are two $\sh{A}$-modules, then $\bb{S}(\sh{E}\oplus\sh{F})$ canonically identifies with $\bb{S}(\sh{E})\otimes_A\bb{S}(\sh{F})$, as we see for the corresponding presheaves.
+If $\sh{E}$, $\sh{F}$ are two $\sh{A}$-modules, then $\bb{S}(\sh{E}\oplus\sh{F})$ canonically identifies with $\bb{S}(\sh{E})\otimes_\sh{A}\bb{S}(\sh{F})$, as we see for the corresponding presheaves.
 
 We also note that $\bb{S}(\sh{E})$ is a graded $\sh{A}$-algebra, the infinite direct sum of the $\bb{S}_n(\sh{E})$, where the $\sh{A}$-module $\bb{S}_n(\sh{E})$ is the sheaf associated to the presheaf $U\mapsto\bb{S}_n(\Gamma(U,\sh{E}))$.
 If we take in particular $\sh{E}=\sh{A}$, then we see that $\bb{S}_\sh{A}(\sh{A})$ identifies with $\sh{A}[T]=\sh{A}\otimes_\bb{Z}\bb{Z}[T]$ ($T$ indeterminate, $\bb{Z}$ being considered as a simple sheaf).
@@ -589,7 +589,7 @@ Let $A$ be a ring, $S=\Spec(A)$ its prime spectrum, $\sh{E}=\widetilde{M}$ the $
 \end{proposition}
 
 \begin{proof}
-For every $f\in A$, $\bb{S}(M_f)=(\bb{S}(M))_f$ \sref{II.1.7.3}, and the proposition thus folloes from the definition \sref[I]{I.1.3.4}.
+For every $f\in A$, $\bb{S}(M_f)=(\bb{S}(M))_f$ \sref{II.1.7.3}, and the proposition thus follows from Definition \sref[I]{I.1.3.4}.
 \end{proof}
 
 \begin{corollary}[1.7.7]
@@ -613,19 +613,19 @@ In particular:
 \begin{env}[1.7.9]
 \label{II.1.7.9}
 Take for $X$ a subprescheme induced by $S$ on an \emph{open $U\subset S$}.
-Then the $S$-morphisms $U\to\bb{V}(\sh{E})$ are none other that the $U$-sections \sref[I]{I.2.5.5} of the $U$-prescheme induces by $\bb{V}(\sh{E})$ on the open $p^{-1}(U)$ (where $p$ is the structure morphism $\bb{V}(\sh{E})\to S$).
+Then the $S$-morphisms $U\to\bb{V}(\sh{E})$ are none other than the $U$-sections \sref[I]{I.2.5.5} of the $U$-prescheme induced by $\bb{V}(\sh{E})$ on the open $p^{-1}(U)$ (where $p$ is the structure morphism $\bb{V}(\sh{E})\to S$).
 From what we have just seen, these $U$-sections bijectively correspond to homomorphisms of $\sh{O}_S$-modules $\sh{E}\to j_*(\sh{O}_S|U)$ (where $j$ is the canonical injection $U\to S$), or
 \oldpage[II]{17}
 equivalently \sref[0]{0.4.4.3} with the $(\sh{O}_S|U)$-homomorphisms $j^*(\sh{E})=\sh{E}|U\to\sh{O}_S|U$.
 In addition, it is immediate that the restriction to an open $U'\subset U$ of an $S$-morphism $U\to\bb{V}(\sh{E})$ corresponds to the restriction to $U'$ of the corresponding homomorphism $\sh{E}|U\to\sh{O}_S|U$.
-We conclude that \emph{the sheaf of germs of $S$-sections} of $\bb{V}(\sh{E})$ canonically identifies with the \emph{dual $\dual{\sh{E}}$} of $\sh{E}$.
+We conclude that \emph{the sheaf of germs of $S$-sections} of $\bb{V}(\sh{E})$ is canonically identified with the \emph{dual $\dual{\sh{E}}$} of $\sh{E}$.
 
 In particular, if we set $X=U=S$, then the \emph{zero} homomorphism $\sh{E}\to\sh{O}_S$ corrresponds to a canonical $S$-section of $\bb{V}(\sh{E})$, called the \emph{zero $S$-section} (cf.~\sref{II.8.3.3}).
 \end{env}
 
 \begin{env}[1.7.10]
 \label{II.1.7.10}
-Now take $X$ to be the spectrum $\{\xi\}$ of a field $K$; the structure morphism $f:X\to S$ then corresponfs to a monomorphism $\kres(s)\to K$, where $s=f(\xi)$ \sref[I]{I.2.4.6}; the $S$-morphisms $\{\xi\}\to\bb{V}(\sh{E})$ are none other than the \emph{geometric points of $\bb{V}(\sh{E})$ with values in the extension $K$ of $\kres(s)$} \sref[I]{I.3.4.5}, points which are localized at the points of $p^{-1}(s)$.
+Now take $X$ to be the spectrum $\{\xi\}$ of a field $K$; the structure morphism $f:X\to S$ then corresponds to a monomorphism $\kres(s)\to K$, where $s=f(\xi)$ \sref[I]{I.2.4.6}; the $S$-morphisms $\{\xi\}\to\bb{V}(\sh{E})$ are none other than the \emph{geometric points of $\bb{V}(\sh{E})$ with values in the extension $K$ of $\kres(s)$} \sref[I]{I.3.4.5}, points which are localized at the points of $p^{-1}(s)$.
 The set of these points, which we can call \emph{the rational geometric fibre over $K$} of $\bb{V}(\sh{E})$ \emph{over the point $s$}, is identified by \sref{II.1.7.8} with the set of homomorphisms of $\sh{O}_S$-modules $\sh{E}\to f_*(\sh{O}_X)$, or, equivalently \sref[0]{0.4.4.3} with the set of homomorphisms of $\sh{O}_X$-modules $f^*(\sh{E})\to\sh{O}_X=K$.
 But we have by definition \sref[0]{0.4.3.1} $f^*(\sh{E})=\sh{E}_s\otimes_{\sh{O}_s}K=\sh{E}^s\otimes_{\kres(s)}K$, setting $\sh{E}^s=\sh{E}_s/\mathfrak{m}_s\sh{E}_s$; the geometric fibre of $\bb{V}(\sh{E})$ rational over $K$ over $s$ thus identifies with the \emph{dual} of the \emph{$K$-vector space $\sh{E}^s\otimes_{\kres(s)}K$}; if $\sh{E}^s$ or $K$ is of finite dimension over $\kres(s)$, then this dual also identifies with $\dual{(\sh{E}^s)}\otimes_{\kres(s)}K$, denoting by $\dual{(\sh{E}^s)}$ the dual of the $\kres(s)$-vector space $\sh{E}^s$.
 \end{env}
@@ -669,7 +669,8 @@ The identification of the sheaf of germs of $S$-sections of $S[T]$ with $\sh{O}_
 \label{II.1.7.13}
 For every $S$-prescheme $X$, we have seen \sref{II.1.7.8} that $\Hom_S(X,S[T])$ canonically identifies with $\Hom_{\sh{O}_S}(\sh{O}_S,\sh{A}(X))$, which is canonically isomorphic to $\Gamma(S,\sh{A}(X))$, and as a result is equipped with the structure of a ring; in addition, to every $S$-morphism $h:X\to Y$ there corresponds a morphism $\Gamma(\sh{A}(h)):\Gamma(S,\sh{A}(Y))\to\Gamma(S,\sh{A}(X))$ for the ring structures \sref{II.1.1.2}.
 When we equip $\Hom_S(X,S[T])$ with a ring structure as defined, then we can see that $\Hom(X,S[T])$ can be considered as a \emph{contravariant functor} in $X$, from the category of $S$-preschemes to that of rings.
-On the other hand, $\Hom_S(X,\bb{V}(\sh{E}))$ is likewise identified with $\Hom_{\sh{O}_S}(\sh{E},\sh{A}(X))$ (where $\sh{A}(X)$ is considered as an \emph{$\sh{O}_S$-module}); as a result, we can canonically give a \emph{module} structure on the ring $\Hom_S(X,S[T])$, and we see as above that the pair
+On the other hand, $\Hom_S(X,\bb{V}(\sh{E}))$ is likewise identified with $\Hom_{\sh{O}_S}(\sh{E},\sh{A}(X))$ (where $\sh{A}(X)$ is considered as an \emph{$\sh{O}_S$-module});
+as a result, we can canonically equip it with a \emph{module} structure over the ring $\Hom_S(X,S[T])$, and we see as above that the pair
 \[
   (\Hom_S(X,S[T]),\Hom(X,\bb{V}(\sh{E})))
 \]
@@ -681,7 +682,7 @@ We will interpret these facts by saying that $S[T]$ is an \emph{$S$-scheme of ri
 \begin{env}[1.7.14]
 \label{II.1.7.14}
 We will see that the structure of an $S$-scheme of modules defined on the $S$-scheme $\bb{V}(\sh{E})$ allows us to reconstruct the $\sh{O}_S$-module $\sh{E}$ up to unique isomorphism: for this, we will show that $\sh{E}$ is canonically isomorphic to a $\sh{O}_S$-submodule of $\bb{S}(\sh{E})=\sh{A}(\bb{V}(\sh{E}))$, defined by means of this structure.
-Indeed \sref{II.1.7.4} the set $\Hom_{\sh{O}_S}(\bb{S}(\sh{E}),\sh{A}(X))$ of homomorphisms of \emph{$\sh{O}_S$-algebras} canonical identifies with $\Hom_{\sh{O}_S}(\sh{E},\sh{A}(X))$, the set of homomorphisms of \emph{$\sh{O}_S$-modules}: if $h$ and $h'$ are two elements of this latter set, $s_i$ ($1\leq i\leq n$) sections of $\sh{E}$ over an open $U\subset S$, $t$ a section of $\sh{A}(X)$ over $U$, then we have by definition
+Indeed \sref{II.1.7.4} the set $\Hom_{\sh{O}_S}(\bb{S}(\sh{E}),\sh{A}(X))$ of homomorphisms of \emph{$\sh{O}_S$-algebras} is canonically identified with $\Hom_{\sh{O}_S}(\sh{E},\sh{A}(X))$, the set of homomorphisms of \emph{$\sh{O}_S$-modules}: if $h$ and $h'$ are two elements of this latter set, $s_i$ ($1\leq i\leq n$) sections of $\sh{E}$ over an open $U\subset S$, $t$ a section of $\sh{A}(X)$ over $U$, then we have by definition
 \[
   (h+h')(s_1 s_2\cdots s_n)=\prod_{i=1}^n(h(s_i)+h'(s_i))
 \]
@@ -693,7 +694,7 @@ and
 This being so, if $z$ is a section of $\bb{S}(\sh{E})$ over $U$, then $h\mapsto h(z)$ is a map from $\Hom_S(X,\bb{V}(\sh{E}))=\Hom_{\sh{O}_S}(\bb{S}(\sh{E}),\sh{A}(X))$ to $\Gamma(U,\sh{A}(X))$.
 We will
 \oldpage[II]{19}
-show that $\sh{E}$ identifies with a submodule of $\bb{S}(\sh{E})$ such that, \emph{for every open $U\subset S$, every section $z$ of this $\sh{O}_S$-submodule of $U$, and every $S$-prescheme $X$, the map $h\mapsto h(z)$ from $\Hom_{\sh{O}_S}(\bb{S}(\sh{E})|U,\sh{A}(X)|U)$ to $\Gamma(U,\sh{A}(X))$ is a homomorphism of $\Gamma(U,\sh{A}(X))$-modules}.
+show that $\sh{E}$ is identified with a submodule of $\bb{S}(\sh{E})$ such that, \emph{for every open $U\subset S$, every section $z$ of this $\sh{O}_S$-submodule of $U$, and every $S$-prescheme $X$, the map $h\mapsto h(z)$ from $\Hom_{\sh{O}_S}(\bb{S}(\sh{E})|U,\sh{A}(X)|U)$ to $\Gamma(U,\sh{A}(X))$ is a homomorphism of $\Gamma(U,\sh{A}(X))$-modules}.
 
 It is immediate that $\sh{E}$ has this property; to show the converse, we can reduce to proving that when $S=\Spec(A)$, $\sh{E}=\widetilde{M}$, a section $z$ of $\bb{S}(\sh{E})$ over $S$ that (for $U=S$) has the property stated above is necessarily a section of $\sh{E}$; we then have $z=\sum_{n=0}^\infty z_n$, where $z_n\in\bb{S}_n(M)$, and it is a question of proving that $z_n=0$ for $n\neq 1$.
 Set $B=\bb{S}(M)$ and take for $X$ the prescheme $\Spec(B[T])$, where $T$ is an indeterminate.
@@ -704,7 +705,7 @@ In in particular we take for $h$ the canonical injection, then $\sum_{n=0}^\inft
 \begin{proposition}[1.7.15]
 \label{II.1.7.15}
 Let $Y$ be a prescheme whose underlying space is Noetherian, or a quasi-compact scheme.
-Every affine $Y$-scheme $X$ of finite type over $Y$ is $Y$-isomorphic to a closed $Y$-subscheme of the form $\bb{V}(\sh{E})$, where $\sh{E}$ is a quasi-coherent $\sh{O}_Y$-module of finite type.
+Every affine $Y$-scheme $X$ of finite type over $Y$ is $Y$-isomorphic to a closed $Y$-subscheme of a $Y$-scheme of the form $\bb{V}(\sh{E})$, where $\sh{E}$ is a quasi-coherent $\sh{O}_Y$-module of finite type.
 \end{proposition}
 
 \begin{proof}
