@@ -8,10 +8,16 @@
 \usepackage{xcolor}
 \definecolor{brightmaroon}{rgb}{0.76, 0.13, 0.28}
 \usepackage[linktocpage=true,colorlinks=true,hyperindex,citecolor=blue,linkcolor=brightmaroon]{hyperref}
-\usepackage[left=1.0in,right=1.0in,top=0.75in,bottom=0.75in]{geometry}
-%\usepackage[charter,ttscaled=false,greekfamily=didot,uppercase=upright,greeklowercase=upright]{mathdesign}
-\usepackage[charter,greekfamily=didot]{mathdesign}
-\usepackage{Baskervaldx} % text font.
+\usepackage[left=1.25in,right=1.25in,top=0.75in,bottom=0.75in]{geometry}
+%\usepackage[charter,greekfamily=didot]{mathdesign}
+%\usepackage{Baskervaldx}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{mathpazo}
+\linespread{1.05}
+
+\usepackage[nobottomtitles]{titlesec}
+\usepackage{marginnote}
 \usepackage{enumerate}
 \usepackage{longtable}
 \usepackage{aurical}
@@ -78,6 +84,7 @@
 \def\shHom{\sh{H}\textup{\kern-2.2pt{\Fontauri\slshape om}}}   % sheaf Hom
 \def\shProj{\sh{P}\textup{\kern-2.2pt{\Fontauri\slshape roj}}} % sheaf Proj
 \def\shExt{\sh{E}\textup{\kern-2.2pt{\Fontauri\slshape xt}}}   % sheaf Ext
+\def\shGr{\sh{G}\textup{\kern-2.2pt{\Fontauri\slshape r}}}     % sheaf Gr
 
 % if unsure of a translation
 %\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
@@ -86,7 +93,7 @@
 \def\completelyunsure{{\color{red}(???)}}
 
 % use to mark where original page starts
-\newcommand{\oldpage}[2][--]{{\marginpar{\textbf{#1}~|~#2}}\ignorespaces}
+\newcommand{\oldpage}[2][--]{{\marginnote{\textbf{#1}~|~#2}}\ignorespaces}
 \def\sectionbreak{\begin{center}***\end{center}}
 
 % for referencing environments.

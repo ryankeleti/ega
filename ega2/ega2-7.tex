@@ -1,17 +1,246 @@
 \section{Valuative criteria}
 \label{section:II.7}
 
+In this section, we give valuative criteria for separation and properness for a given morphism, that is, criteria which introduce a variable auxiliary scheme of the form $\Spec(A)$, where $A$ is a valuation ring.
+Under certain suitable ``Noetherian'' hypotheses, we can refine our criteria and restrict to the case where $A$ is a \emph{discrete} valuation ring.
+This will be the only case that we need to concern ourselves with in all that follows, and we introduce arbitrary valuation rings, in the general case, only to discuss the links with the classical study of such objects.
+
 
 \subsection{Reminder on valuation rings}
 \label{subsection:II.7.1}
 
+\begin{env}[7.1.1]
+\label{II.7.1.1}
+Amongst the many diverse equivalent properties that characterise valuation rings, we will use the following: a ring $A$ is said to be a \emph{valuation ring} if it is an integral ring which is not a field, and $A$ is \emph{maximal} in the set of local rings strictly contained in the field of fractions $K$ of $A$ under the domination relation \sref[I]{I.8.1.1}.
+Recall that a valuation ring is \emph{integrally closed}.
+If $A$ is a valuation ring, then so too is $A_\mathfrak{p}$ for any prime ideal $\mathfrak{p}\neq0$ of $A$.
+\end{env}
 
-% \subsection{Valuative criterion for separatedness}
-% \label{subsection:II.7.2}
+\begin{env}[7.1.2]
+\label{II.7.1.2}
+Let $K$ be a field, and $A$ a local subring of $K$ that is not a field;
+\oldpage[II]{139}
+then there exists a valuation ring that both dominates $A$ and has $K$ as its field of fractions (\cite[p.~1-07, lemma~2]{I-1}).
+
+Now let $B$ be a valuation ring, $k$ its residue field, $K$ its field of fractions, and $L$ an extension of $k$.
+Then there exists a \emph{complete} valuation ring $C$ that dominates $B$ and whose residue field is $L$.
+Indeed, $L$ is the algebraic extension of a pure transcendental extension $L'=k(T_\mu)_{\mu\in M}$;
+we know that we can extend the valuation of $B$ corresponding to $B$ to a valuation of $K'=K(T_\mu)_{\mu\in M}$ in such a way that $L'$ is the residue field of this valuation (\cite[p.~98]{II-24});
+replacing $B$ by the completion of the ring of this extended valuation, we see that that we can restrict to the case where $B$ is complete and $L$ is an algebraic closure of $k$.
+If $\overline{K}$ is an algebraic closure of $K$, we can then extend the valuation that defines $B$ to $\overline{K}$, and the corresponding residue field is an algebraic closure of $k$, as we can see by lifting to $\overline{K}$ the coefficients of a unitary polynomial of $k[T]$.
+We are thus finally led to the case where $L=k$, and it then suffices to take $C$ to be the completion of $B$ in order to satisfy our claim.
+\end{env}
+
+\begin{env}[7.1.3]
+\label{II.7.1.3}
+Let $K$ be a field, and $A$ a subring of $K$;
+the integral closure $A'$ of $A$ in $K$ is the intersection of the valuation rings that contain $A$ and have $K$ as their field of fractions (\cite[p.~51, th.~2]{I-11}).
+Proposition~\sref{II.7.1.2} can then be expressed geometrically in an equivalent form:
+\end{env}
+
+\begin{proposition}[7.1.4]
+\label{II.7.1.4}
+Let $Y$ be a prescheme, $p:X\to Y$ a morphism, $x$ a point of $X$, $y=p(x)$, and $y'\neq y$ a specialisation \sref[0]{0.2.1.2} of $y$.
+Then there exists a local scheme $Y'$ which is the spectrum of some valuation ring, and a separated morphism $f:Y'\to Y$ such that, denoting the unique closed point of $Y'$ by $a$ and the generic point of $Y'$ by $b$, we have $f(a)=y'$ and $f(b)=y$.
+We can furthermore suppose that one of the two additional following properties are satisfied:
+\begin{enumerate}
+    \item[\rm{(i)}] $Y'$ is the spectrum of a complete valuation ring whose residue field is algebraically closed, and there exists a $\kres(y)$-homomorphism $\kres(x)\to\kres(b)$.
+    \item[\rm{(ii)}] There exists a $\kres(y)$-isomorphism $\kres(x)\xrightarrow{\sim}\kres(b)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.1.4}
+Let $Y_1$ be the reduced closed subprescheme of $Y$ that has $\overline\{y\}$ as its underlying space \sref[I]{I.5.2.1}, and let $X_1$ be the closed subprescheme given by the inverse image $p^{-1}(Y_1)$;
+since $y'\in\overline{\{y\}}$ by hypothesis, and since $\kres(x)$ is the same in $X$ and in $X_1$, we can assume that $Y$ is \emph{integral}, with generic point $y$;
+$\sh{O}_{y'}$ is then an integral local ring that is not a field, and whose field of fractions is $\sh{O}_y=\kres(y)$, and $\kres(x)$ is then an extension of $\kres(y)$.
+To satisfy the conditions $f(a)=y'$ and $f(b)=y$ as well as the additional condition (i) (resp. (ii)), we take $Y'=\Spec(A')$, where $A'$ is a valuation ring that dominates $\sh{O}_{y'}$ (resp. a valuation ring that dominates $\sh{O}_{y'}$ and whose field of fractions is $\kres(x)$);
+the existence such an of $A'$ is guaranteed by \sref{II.7.1.2}.
+\end{proof}
+
+\begin{env}[7.1.5]
+\label{II.7.1.5}
+Recall that a local ring $A$ is said to be \emph{of dimension 1} if there exists a prime ideal distinct from the maximal ideal $\mathfrak{m}$, and if every prime ideal of $A$ distinct from $\mathfrak{m}$ is a \emph{minimal} prime ideal;
+when $A$ is \emph{integral}, it is equivalent to ask that $\mathfrak{m}$ and $(0)$ be the only prime ideals, with $\mathfrak{m}\neq(0)$;
+in other words, $Y=\Spec(A)$ consists of two
+\oldpage[II]{140}
+points $a$ and $b$: $a$ is the unique \emph{closed} point, we have $\mathfrak{j}_a=\mathfrak{m}$, and $\kres(a)=k$ is the \emph{residue field} $k=A/\mathfrak{m}$;
+$b$ is the \emph{generic point} of $Y$, $\mathfrak{j}_b=(0)$, with the set $\{b\}$ being the unique open subset of $Y$ distinct from both $\emp$ and $Y$ (an open subset which is thus \emph{everywhere dense}), and $\kres(b)=K$ is the \emph{field of fractions} of $A$.
+\end{env}
+
+\begin{env}[7.1.6]
+\label{II.7.1.6}
+For a local ring $A$, Noetherian and of dimension 1, we know (\cite[pp.~2-08 and 17-01]{I-1}) that the following conditions are equivalent:
+\begin{enumerate}
+    \item[\rm{(a)}] $A$ is normal;
+    \item[\rm{(b)}] $A$ is regular;
+    \item[\rm{(c)}] $A$ is a valuation ring;
+\end{enumerate}
+furthermore, $A$ is then a \emph{discrete valuation ring}.
+Propositions~\sref{II.7.1.2} and \sref{II.7.1.3} then have the following analogues for discrete valuation rings:
+\end{env}
+
+\begin{proposition}[7.1.7]
+\label{II.7.1.7}
+Let $A$ be an integral local Noetherian ring that is not a field, $K$ its field of fractions, and $L$ an extension of finite type of $K$;
+then there exists a discrete valuation ring that dominates $A$ and has $L$ as its field of fractions.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.1.7}
+Suppose first of all that $L=K$.
+Let $\mathfrak{m}$ be the maximal ideal of $A$, $(x_1,\ldots,x_n)$ a system of non-null generators of $\mathfrak{m}$, and $B$ the subring $A[x_2/x_1,\ldots,x_n/x_1]$ of $K$, which is Noetherian.
+It is immediate that the ideal $\mathfrak{m}B$ of $B$ is identical to the principal ideal $x_1B$;
+if $\mathfrak{p}$ is a minimal prime ideal of $x_1B$, then $\mathfrak{p}$ is of rank 1 (\cite[t.~I, p.~277]{I-13});
+in other words, $B_\mathfrak{p}$ is a local Noetherian ring \emph{of dimension 1};
+it is clear that $\mathfrak{p}B_\mathfrak{p}\cap A$ is an ideal of $A$ that contains $\mathfrak{m}$ and that does not contain $1$, and is thus equal to $\mathfrak{m}$, and so $B_\mathfrak{p}$ \emph{dominates} $A$ \sref[I]{I.8.1.1}.
+It follows from the Krull-Akizuki Theorem (\cite[p.~293]{II-25}) that the integral closure $C$ of $B_\mathfrak{p}$ is a Noetherian ring (even though $C$ is not necessarily a $B_\mathfrak{p}$-module of finite type);
+if $\mathfrak{n}$ is a maximal ideal of $C$, then $C_\mathfrak{n}$ is a normal local Noetherian ring of dimension 1 (\cite[p.~295]{II-25}), and thus a discrete valuation ring that dominates $B_\mathfrak{p}$ and \emph{a fortiori} $A$.
+
+Now, if $L$ is an extension of finite type of $K$, we can, by the above, restrict to the case where $A$ is already a discrete valuation ring.
+Let $w$ be a valuation of $K$ associated to $A$;
+there exists a discrete valuation $w'$ of $L$ that \emph{extends} $w$: we can restrict, by induction on the number of generators of $L$, to the case where $L=K(\alpha)$, and then the proposition is classical (\cite[p.~106]{II-24}).
+\end{proof}
+
+\begin{corollary}[7.1.8]
+\label{II.7.1.8}
+Let $A$ be a Noetherian integral ring, $K$ its field of fractions, and $L$ an extension of finite type of $K$.
+Then the integral closure of $A$ in $L$ is the intersection of the discrete valuation rings that have $L$ as their field of fractions and that contain $A$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.1.8}
+Indeed, such a discrete valuation ring, being normal, contains \emph{a fortiori} every element of $L$ that is integral over $A$.
+It thus suffices to prove that, if $x\in L$ is not integral over $A$, then there exists a discrete valuation ring $C$ that has $L$ as its field of fractions, contains $A$, and does not contain $x$.
+The hypothesis on $x$ implies that $x\not\in B=A[1/x]$, or, in other words, that $1/x$ is not invertible in the Noetherian ring $B$.
+There is thus a prime ideal $\mathfrak{p}$ of $B$ that contains $1/x$.
+The integral local ring $B_\mathfrak{p}$ is Noetherian and contained in $L$, which is an extension  of finite type of the field of fractions of $B_\mathfrak{p}$ (with the latter containing $K$).
+By \sref{II.7.1.7}, there thus exists a discrete valuation ring $C$ that dominates $B_\mathfrak{p}$ and has $L$ as its field of fractions;
+since $1/x\in\mathfrak{p}B_\mathfrak{p}$ belongs to the maximal ideal of $C$, we have that $x\not\in C$, which concludes the proof.
+\end{proof}
+
+The geometric form of \sref{II.7.1.7} is the following:
+
+\oldpage[II]{141}
+\begin{proposition}[7.1.9]
+\label{II.7.1.9}
+Let $Y$ be a locally Noetherian prescheme, $p:X\to Y$ a morphism locally of finite type, $x$ a point of $X$, $y=p(x)$, and $y'\neq y$ a specialisation of $y$.
+Then there exists a local scheme $Y'$, spectrum of a discrete valuation ring, a separated morphism $f:Y'\to Y$, and a rational $Y$-map $g$ from $Y'$ to $X$, such that, denoting the closed point of $Y'$ by $a$, and the generic point of $Y'$ by $b$, we have $f(a)=y'$, $f(b)=y$, $g(b)=x$, and such that, in the commutative diagram
+\[
+\label{II.7.1.9.1}
+    \xymatrix{
+        & \kres(x) \ar[dl]_{\gamma}
+    \\  \kres(b)
+        & \kres(y) \ar[u]_{\pi} \ar[l]^{\varphi}
+    }
+\tag{7.1.9.1}
+\]
+(where $\pi$, $\varphi$, and $\gamma$ are the homomorphisms corresponding to $p$, $f$, and $g$, respectively) the morphism $\gamma$ is a bijection.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.1.9}
+As in \sref{II.7.1.4}, we can restrict to the case where $Y$ is integral with generic point $y$ (taking \sref[I]{I.6.4.3}[iv] into account), and, since the question is local on $X$ and $Y$, we can assume that $p$ is of finite type;
+we are then in the situation of \sref{II.7.1.4}, with the additional property that $\kres(x)$ is an extension \emph{of finite type} of $\kres(y)$ \sref[I]{I.6.4.11} and that $\sh{O}_{y'}$ is Noetherian;
+this lets us apply \sref{II.7.1.7} and take $Y'=\Spec(A')$, where $A'$ is a discrete valuation ring that dominates $\sh{O}_{y'}$ and whose field of fractions is $\kres(x)$.
+We have thus defined a commutative diagram \sref{II.7.1.9.1} where $\gamma$ is a bijection, with $\pi$ and $\varphi$ corresponding to the morphisms $p$ and $f$.
+Furthermore, since $X$ and $Y$ are locally Noetherian \sref[I]{I.6.6.2} and since $Y'$ is integral, there exists exactly one rational $Y$-map $g$ from $Y'$ to $X$ to which corresponds the isomorphism $\gamma$ \sref[I]{I.7.1.15}, which finishes the proof.
+\end{proof}
+
+\subsection{Valuative criterion for separatedness}
+\label{subsection:II.7.2}
+
+\begin{proposition}[7.2.1]
+\label{II.7.2.1}
+Let $X$ and $Y$ be preschemes, and $f:X\to Y$ a quasi-compact morphism.
+The following two conditions are equivalent:
+\begin{enumerate}
+    \item[\rm{(a)}] The morphism $f$ is closed.
+    \item[\rm{(b)}] For all $x\in X$, and every specialisation $y'\neq y$ of $y=f(x)$, there exists a specialisation $x'$ of $x$ such that $f(x')=x$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.2.1}
+Condition~(b) implies that $f(\overline{\{x\}})=\overline{\{y\}}$, and is thus a consequence of (a).
+To show that (b) implies (a), consider a closed subset $X'$ of the underlying space $X$;
+let $Y'=\overline{f(X')}$, and show that $Y'=f(X')$ as follows.
+Consider the closed reduced subpreschemes of $X$ and $Y$ whose underlying spaces are $X'$ and $Y'$ (respectively) \sref[I]{I.5.2.1};
+there then exists a morphism $f':X'\to Y'$ such that the diagram
+\[
+    \xymatrix{
+        X' \ar[r]^{f'} \ar[d]
+        & Y' \ar[d]
+    \\  X \ar[r]_{f}
+        & Y
+    }
+\]
+commutes \sref[I]{I.5.2.2}, and, since $f$ is quasi-compact, so too is $f'$.
+We are thus led to proving that, if $f$ is a quasi-compact and \emph{dominant} morphism, then
+\oldpage[II]{142}
+condition~(b) implies that $f(X)=Y$.
+But let $y'$ be a point of $Y$, and let $y$ be the generic point of an irreducible component of $Y$ that contains $y'$;
+by (b), it suffices to show that $f^{-1}(y)$ is not empty.
+But we know that this property is a consequence of the fact that $f$ is quasi-compact and dominant \sref[I]{I.6.6.5}.
+\end{proof}
+
+\begin{corollary}[7.2.2]
+\label{II.7.2.2}
+Let $f:X\to Y$ be a quasi-compact immersion.
+For the underlying space $X$ to be closed in $Y$, it is necessary and sufficient for it to contain every specialisation (in $Y$) of all of its points.
+\end{corollary}
+
+\begin{proposition}[7.2.3]
+\label{II.7.2.3}
+Let $Y$ be a prescheme (resp. a locally Noetherian prescheme), and $f:X\to Y$ a morphism (resp. a morphism locally of finite type).
+The following conditions are equivalent:
+\begin{enumerate}
+    \item[\rm{(a)}] $f$ is separated.
+    \item[\rm{(b)}] The diagonal morphism $X\to X\times_Y X$ is quasi-compact, and, for every $Y$-prescheme of the form $Y'=\Spec(A)$, with $A$ some valuation ring (resp. some discrete valuation ring), any two $Y$-morphisms from $Y'$ to $X$ that agree on the generic point of $Y'$ are equal.
+    \item[\rm{(c)}] The diagonal morphism $X\to X\times_Y X$ is quasi-compact, and, for every $Y$-prescheme of the form $Y'=\Spec(A)$, with $A$ some valuation ring (resp. some discrete valuation ring), any two $Y'$-sections of $X'=X_{(Y')}$ that agree on the generic point of $Y'$ are equal.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.2.3}
+The equivalence of (b) and (c) follows from the bijective correspondence between $Y$-morphisms from $Y'$ to $X$ and $Y'$-sections of $X'$ \sref[I]{I.3.3.14}.
+If $X$ is separated over $Y$, condition~(b) is satisfied, by \sref[I]{I.7.2.2.1}, since $Y'$ is integral.
+It remains to show that (b) implies that the diagonal morphism $\Delta:X\to X\times_Y X$ is closed, and it is equivalent to show that it satisfies the criteria of \sref{II.7.2.2}.
+But let $z$ be a point of the diagonal $\Delta(X)$, and $z'\neq z$ a specialisation of $z$ in $X\times_Y X$.
+There then exists \sref{II.7.1.4} a valuation ring $A$ and a morphism $f$ from $Y'=\Spec(A)$ to $X\times_Y X$ such that $f$ sends the closed point $a$ of $Y'$ to $z'$, and the generic point $b$ of $Y'$ to $z$;
+this morphism makes $Y'$ an $(X\times_Y X)$-prescheme, and \emph{a fortiori} a $Y$-prescheme.
+If we compose the two projections of $X\times_Y X$ with $f$, then we obtain two $Y$-morphisms, $g_1$ and $g_2$, from $Y'$ to $X$, which, by hypothesis, agree on the point $b$;
+they are thus equal to one single morphism $g$, which implies \sref[I]{I.5.3.1} that $f$ factors as $f=\Delta\circ g$, and thus $z'\in\Delta(X)$.
+If we suppose that $Y$ is locally Noetherian and $f$ is locally of finite type, then $X\times_Y X$ is locally Noetherian \sref[I]{I.6.6.7};
+we can thus follow the same argument as before by supposing that $A$ is a discrete valuation ring, by \sref{II.7.1.9}.
+\end{proof}
+
+\begin{remark}[7.2.4]
+\label{II.7.2.4}
+\begin{enumerate}
+    \item[\rm{(i)}] The hypothesis that the morphism $\Delta$ is quasi-compact is always satisfied whenever $Y$ is locally Noetherian and $f$ is locally of finite type, because $X\times_Y X$ is then locally Noetherian \sref[I]{I.6.6.4}[i].
+        In the general case, this also implies that, for every cover $(U_\alpha)$ of $X$ by affine opens, the sets $U_\alpha\cap U_\beta$ are \emph{quasi-compact}.
+    \item[\rm{(ii)}] For $f$ to be separated, it is \emph{sufficient} for condition~(b) or (c) to be satisfied for some valuation ring $A$ that is \emph{complete} and whose residue field is \emph{algebraically closed};
+        this follows from the proofs of \sref{II.7.2.3} and \sref{II.7.2.4}.
+\end{enumerate}
+\end{remark}
 
 
-% \subsection{Valuative criterion for properness}
-% \label{subsection:II.7.3}
+\oldpage[II]{143}
+
+\subsection{Valuative criterion for properness}
+\label{subsection:II.7.3}
+
+\begin{proposition}[7.3.1]
+\label{II.7.3.1}
+Let $A$ be a valuation ring, $Y=\Spec(A)$, $b$ the generic point of $Y$, $X$ an integral \emph{scheme}, and $f:X\to Y$ a \emph{closed} morphism such that $f^{-1}(b)$ consists of a single point $x$ and such that the corresponding homomorphism $\kres(b)\to\kres(x)$ is bijective.
+Then $f$ is an isomorphism.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.3.1}
+Since
+\end{proof}
 
 
 % \subsection{Algebraic curves and function fields of dimension 1}

@@ -1,6 +1,6 @@
 # EGA
 
-![EGA0status](https://img.shields.io/badge/EGA%200-46%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-brightgreen) ![EGA2status](https://img.shields.io/badge/EGA%20II-30%25-red) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
+![EGA0status](https://img.shields.io/badge/EGA%200-46%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-brightgreen) ![EGA2status](https://img.shields.io/badge/EGA%20II-35%25-orange) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
 
 Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
@@ -28,7 +28,7 @@ All the PDFs are auto-compliled every hour if any changes have been made since t
 | - | - | - |
 | ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-46%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
 | ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-green) | ![EGA1p](https://img.shields.io/badge/-100%25-green)|
-| ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-30%25-orange) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
+| ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-35%25-orange) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-3%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
 | ![EGA4](https://img.shields.io/badge/EGA-4-lightgrey) | ![EGA4fd](https://img.shields.io/badge/-1%25-red) | ![EGA4p](https://img.shields.io/badge/-0%25-red)|
 
@@ -79,11 +79,12 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 1. Affine morphisms _(@ryankeleti)_
     + [ ] 2. Homogeneous prime spectra
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras
-    + [ ] 4. Projective bundles; Ample sheaves
+    + [ ] 4. Projective bundles; Ample sheaves _(@thosgood)_
     + [x] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
     + [ ] 6. Integral morphisms and finite morphisms
-    + [ ] 7. Valuative criteria
-    + [ ] 8. Blowup schemes; based cones; projective closure _(@thosgood)_
+    + [ ] 7. Valuative criteria _(@thosgood)_
+    + [x] 8. Blowup schemes; based cones; projective closure _(@thosgood)_
+    + [x] _Errata and addenda (list 1)_
 - [ ] Cohomological study of coherent sheaves (EGA III)
     + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
     + [x] 1. Cohomology of affine schemes _(@ryankeleti)_
@@ -115,7 +116,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 14. Universally open morphisms
     + [ ] 15. Fibres of a universally open morphism
     + [ ] 16. Differential invariants. Differentially smooth morphisms
-    + [ ] 17. Smooth morphisms, unramified morphisms, and étale morphisms
+    + [ ] 17. Smooth morphisms, unramified morphisms, and étale morphisms _(@tholzschuh)_
     + [ ] 18. Supplement on étale morphisms. Henselian local rings and strictly local rings
     + [ ] 19. Regular immersions and normal flatness
     + [ ] 20. Meromorphic functions and pseudo-morphisms

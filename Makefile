@@ -4,7 +4,7 @@ FILES = what intro ega0 ega1 ega2 ega3 ega4 ref
 TEX = $(patsubst %,%.tex,$(FILES))
 PDFS = $(patsubst %,%.pdf,$(FILES))
 PDFLATEX = pdflatex
-PDF_DIR = $(shell pwd)/pdfs
+PDF_DIR = $(CURDIR)/pdfs
 WEBNAME = ega
 
 .PHONY: default
@@ -33,7 +33,7 @@ $(FILES): %: %.pdf
 
 .PHONY: book
 book:
-	python3 ./scripts/make_book.py "$(CURDIR)"
+	python3 ./scripts/make_book.py $(CURDIR)
 	$(PDFLATEX) book
 	$(PDFLATEX) book
 	bibtex book
@@ -41,17 +41,6 @@ book:
 	$(PDFLATEX) book
 	mkdir -p $(PDF_DIR)
 	mv book.pdf $(PDF_DIR)
-
-.PHONY: book-wide
-book-wide:
-	python3 ./scripts/make_book.py "$(CURDIR)" --wide
-	$(PDFLATEX) book-wide
-	$(PDFLATEX) book-wide
-	bibtex book-wide
-	$(PDFLATEX) book-wide
-	$(PDFLATEX) book-wide
-	mkdir -p $(PDF_DIR)
-	mv book-wide.pdf $(PDF_DIR)
 
 .PHONY: cleanaux
 cleanaux:
@@ -61,7 +50,6 @@ cleanaux:
 clean:
 	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc
 	if [ -f book.tex ]; then rm -i book.tex; fi
-	if [ -f book-wide.tex ]; then rm -i book-wide.tex; fi
 	for f in *.pdf; do if [ -f "$$f" ]; then rm -i *.pdf; fi; done
 	if [ -d $(PDF_DIR) ]; then\
 	  for f in $(PDF_DIR)/*.pdf; do\
@@ -73,20 +61,18 @@ clean:
 
 .PHONY: cleanforce
 cleanforce:
-	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex book-wide.tex *-auto.tex ega-web.*
+	rm -f *.aux *.bbl *.blg *.log *.fdb_latexmk *.fls *.out *.toc *.pdf book.tex *-auto.tex ega-web.*
 	rm -rf $(PDF_DIR)
 	rm -rf tags $(WEBNAME).* $(WEBNAME)
-	rm -rf plastex/ gerby-website/
-	rm -rf env/
 
 .PHONY: all
 all: pdfs book
 
 .PHONY: auto
 auto:
-	python3 ./scripts/make_book.py "$(CURDIR)"
+	python3 ./scripts/make_book.py $(CURDIR)
 	cp book.tex book-auto.tex
-	sed -i 's/\\end{titlepage}/\\vskip0.5in\\noindent\\centerline{\\tt autobuild~::~$(shell date -u +"%F %H:%M %Z"),~git~hash~::~$(shell git rev-parse --short HEAD)}\\end{titlepage}/' book-auto.tex
+	sh ./scripts/add-auto-info.sh book-auto.tex
 	mkdir -p $(PDF_DIR)
 	$(PDFLATEX) book-auto
 	$(PDFLATEX) book-auto
@@ -96,7 +82,7 @@ auto:
 	mv book-auto.pdf $(PDF_DIR)
 	for f in $(FILES); do\
 	  cp "$$f".tex "$$f"-auto.tex;\
-	  sed -i 's/\\maketitle/\\maketitle\\noindent\\centerline{\\tt autobuild~::~$(shell date -u +"%F %H:%M %Z"),~git~hash~::~$(shell git rev-parse --short HEAD)}\\\\/' "$$f"-auto.tex;\
+	  sh ./scripts/add-auto-info.sh "$$f"-auto.tex;\
 	  $(PDFLATEX) "$$f"-auto;\
 	  $(PDFLATEX) "$$f"-auto;\
 	  bibtex "$$f"-auto;\
