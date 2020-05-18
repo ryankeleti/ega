@@ -5,7 +5,7 @@
 \oldpage[IV-4]{5}
 In this paragraph we will present, in global form, some notions of differential calculus particularly useful in algebraic geometry.
 We will ignore many classic developments in differential geometry (connections, infinitesimal transformations associated to vector fields, jets, etc.), although these notions are translated in a particularly natural way for schemes.
-We will similarly ignore phenomena exclusive to characteristic $p>0$ (some of which are seen, in the affine case, in \hyperref[section:0.21]{(\textbf{0}, 21)}).
+We will similarly ignore phenomena exclusive to characteristic $p>0$ (some of which are seen, in the affine case, in \hyperref[section:0.21]{(\textbf{0}, 21)}.
 For certain complements to the differential formalism for preschemes the reader may consult Expos\'es~II and VII of \cite{SGA3} as well as subsequent chapters of this treatise. 
 
 %TODO: Put SGA3 on bib!
@@ -15,4 +15,42 @@ For certain complements to the differential formalism for preschemes the reader 
 
 \begin{env}[16.1.1]
 \label{IV.16.1.1}
+
+Let $(X, \sh{O}_X), (Y, \sh{O}_Y)$ be two ringed spaces and $f = (\psi, \theta): Y \to X$ a morphism of ringed spaces \hyperref[section:0.4.1.1]{(\textbf{0}, 4.1.1)} such that the homomorphism
+\[
+  \theta^\#: \psi^*(\sh{O}_X) \to \sh{O}_Y
+\]
+is surjective, so that $\sh{O}_Y$ is identified with a sheaf of quotient rings $\psi^*(\sh{O}_X)/\sh{I}_f$. 
+We can then endow $\psi^*(\sh{O}_X)$ with the $\sh{I}_f$-preadic filtration.
 \end{env}
+
+\begin{definition}[16.1.2]
+\label{IV.16.1.2}
+The $\sh{O}_Y$-augmented sheaf of rings $\psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$ is called the $n$'th \emph{normal invariant} of $f$;
+the ringed space $(Y, \psi^*(\sh{O}_X)/\sh{I}_f^{n+1})$ is called the $n$'th \emph{infinitesimal neighbourhood} of $Y$ by $f$ and is denoted by $Y^{(n)}_f$ or simply $Y^{(n)}$.
+The sheaf of graded rings associated to the sheaf of filtered rings $\psi^*(\sh{O}_X)$
+\[
+  \label{IV.16.1.2.1}
+  \shGr_\bullet(f) = \bigoplus_{n \geq 0}\left(\sh{I}_f^{n}/\sh{I}_f^{n+1} \right)
+  \tag{16.1.2.1}
+\]
+is called the sheaf of graded rings \emph{associated to} $f$. The sheaf $\shGr_1(f) = \sh{I}_f/\sh{I}_f^{2}$ is called the \emph{conormal sheaf} of $f$ (that will be denoted by $\sh{N}_{Y/X}$ when there is no risk of confusion). 
+\end{definition}
+
+It is clear that the $\sh{O}_{Y^{(n)}} = \psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$ (that we also denote $\sh{O}_{Y_f^{(n)}})$ form a
+\oldpage[IV-4]{6}
+projective system of sheaves of rings on $Y$, the transition homomorphism $\phi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}}$ for $n \leq m$ identifies $\sh{O}_{Y^{(n)}}$ with the quotient of $\sh{O}_{Y^{(m)}}$ by the power $\left(\sh{I}_f/\sh{I}_f^{n+1} \right)^m$ of the \emph{agumentation ideal} of $\sh{O}_{Y^{(n)}}$, kernel of $\phi_0n: \sh{O}_{Y^{(n)}} \to \sh{O}_{Y}$.
+The $Y^{(n)}$ therefore form a inductive system of ringed spaces, all having underlying space $Y$, and we have canonical morphisms of ringed spaces $h_n: Y^{(n)} \to X$ equal to $(\psi, \theta_n)$, where $\theta^\#_n$ is the canonical morphism $\psi^*(\sh{O}_X) \to \psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$.
+It is clear that the sheaf $\shGr_\bullet(f)$ is a sheaf of graded algebras over the sheaf of rings $\sh{O}_Y = \shGr_0(f)$ and the $\shGr_k(f)$ of $\sh{O}_Y$-modules.
+
+As with every sheaf of filtered rings, we have a \emph{canonical surjective homomorphism} of $\sh{O}_Y$ graded algebras
+\[
+  \label{IV.16.1.2.2}
+  \bb{S}_{\sh{O}_Y}^\bullet \to \shGr_\bullet(f)
+  \tag{16.1.2.2}
+\]
+which coincide in degrees $0$ and $1$ with the identities.
+
+\begin{examples}[16.1.3]
+\label{IV.16.1.3}
+\end{examples}
