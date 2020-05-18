@@ -157,7 +157,7 @@ Use
 ```
 to denote the page number in the original text.
 Here `R` represents the current volume's Roman numeral (as above), and `n` is the page of the original text.
-In the case of volumnes with multiple parts (such as EGA IV, Part 1, etc.), use
+In the case of volumes with multiple parts (such as EGA IV, Part 1, etc.), use
 ```latex
 \oldpage[R-m]{n}
 ```
