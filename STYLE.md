@@ -157,6 +157,12 @@ Use
 ```
 to denote the page number in the original text.
 Here `R` represents the current volume's Roman numeral (as above), and `n` is the page of the original text.
+In the case of volumes with multiple parts (such as EGA IV, Part 1, etc.), use
+```latex
+\oldpage[R-m]{n}
+```
+where `m` is the part number of volume `R`.
+Here `n` refers to the page numbering in part `m`, instead of the overall volume.
 
 Insert an `\oldpage` whenever the original text has a page transition (even mid-sentence).
 Always place `\oldpage` on a new line, and at the start of the line.
