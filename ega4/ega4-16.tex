@@ -16,7 +16,7 @@ For certain complements to the differential formalism for preschemes the reader 
 \begin{env}[16.1.1]
 \label{IV.16.1.1}
 
-Let $(X, \sh{O}_X), (Y, \sh{O}_Y)$ be two ringed spaces and $f = (\psi, \theta): Y \to X$ a morphism of ringed spaces \hyperref[section:0.4.1.1]{(\textbf{0}, 4.1.1)} such that the homomorphism
+Let $(X, \sh{O}_X), (Y, \sh{O}_Y)$ be two ringed spaces and $f = (\psi, \theta): Y \to X$ a morphism of ringed spaces \sref[0]{0.4.1.1} such that the homomorphism
 \[
   \theta^\#: \psi^*(\sh{O}_X) \to \sh{O}_Y
 \]
@@ -27,11 +27,11 @@ We can then endow $\psi^*(\sh{O}_X)$ with the $\sh{I}_f$-preadic filtration.
 \begin{definition}[16.1.2]
 \label{IV.16.1.2}
 The $\sh{O}_Y$-augmented sheaf of rings $\psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$ is called the $n$'th \emph{normal invariant} of $f$;
-the ringed space $(Y, \psi^*(\sh{O}_X)/\sh{I}_f^{n+1})$ is called the $n$'th \emph{infinitesimal neighbourhood} of $Y$ by $f$ and is denoted by $Y^{(n)}_f$ or simply $Y^{(n)}$.
+the ringed space $(Y, \psi^*(\sh{O}_X)/\sh{I}_f^{n+1})$ is called the $n$'th \emph{infinitesimal neighbourhood} of $Y$ along $f$ and is denoted by $Y^{(n)}_f$ or simply $Y^{(n)}$.
 The sheaf of graded rings associated to the sheaf of filtered rings $\psi^*(\sh{O}_X)$
 \[
   \label{IV.16.1.2.1}
-  \shGr_\bullet(f) = \bigoplus_{n \geq 0}\left(\sh{I}_f^{n}/\sh{I}_f^{n+1} \right)
+  \shGr_\bullet(f) = \bigoplus_{n \geq 0}(\sh{I}_f^{n}/\sh{I}_f^{n+1} )
   \tag{16.1.2.1}
 \]
 is called the sheaf of graded rings \emph{associated to} $f$. The sheaf $\shGr_1(f) = \sh{I}_f/\sh{I}_f^{2}$ is called the \emph{conormal sheaf} of $f$ (that will be denoted by $\sh{N}_{Y/X}$ when there is no risk of confusion). 
@@ -39,18 +39,81 @@ is called the sheaf of graded rings \emph{associated to} $f$. The sheaf $\shGr_1
 
 It is clear that the $\sh{O}_{Y^{(n)}} = \psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$ (that we also denote $\sh{O}_{Y_f^{(n)}})$ form a
 \oldpage[IV-4]{6}
-projective system of sheaves of rings on $Y$, the transition homomorphism $\phi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}}$ for $n \leq m$ identifies $\sh{O}_{Y^{(n)}}$ with the quotient of $\sh{O}_{Y^{(m)}}$ by the power $\left(\sh{I}_f/\sh{I}_f^{n+1} \right)^m$ of the \emph{agumentation ideal} of $\sh{O}_{Y^{(n)}}$, kernel of $\phi_0n: \sh{O}_{Y^{(n)}} \to \sh{O}_{Y}$.
+projective system of sheaves of rings on $Y$, the transition homomorphism $\phi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}}$ for $n \leq m$ identifies $\sh{O}_{Y^{(n)}}$ with the quotient of $\sh{O}_{Y^{(m)}}$ by the power $(\sh{I}_f/\sh{I}_f^{n+1} )^m$ of the \emph{agumentation ideal} of $\sh{O}_{Y^{(n)}}$, kernel of $\phi_{0n}: \sh{O}_{Y^{(n)}} \to \sh{O}_{Y}$.
 The $Y^{(n)}$ therefore form a inductive system of ringed spaces, all having underlying space $Y$, and we have canonical morphisms of ringed spaces $h_n: Y^{(n)} \to X$ equal to $(\psi, \theta_n)$, where $\theta^\#_n$ is the canonical morphism $\psi^*(\sh{O}_X) \to \psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$.
 It is clear that the sheaf $\shGr_\bullet(f)$ is a sheaf of graded algebras over the sheaf of rings $\sh{O}_Y = \shGr_0(f)$ and the $\shGr_k(f)$ of $\sh{O}_Y$-modules.
 
-As with every sheaf of filtered rings, we have a \emph{canonical surjective homomorphism} of $\sh{O}_Y$ graded algebras
+As with every sheaf of filtered rings, we have a \emph{canonical surjective homomorphism} of graded $\sh{O}_Y$-algebras
 \[
   \label{IV.16.1.2.2}
-  \bb{S}_{\sh{O}_Y}^\bullet \to \shGr_\bullet(f)
+  \bb{S}_{\shGr_1(f)}^\bullet \to \shGr_\bullet(f)
   \tag{16.1.2.2}
 \]
 which coincide in degrees $0$ and $1$ with the identities.
 
 \begin{examples}[16.1.3]
 \label{IV.16.1.3}
+\begin{enumerate}
+  \item[(i)] Suppose that $X$ is a locally ringed space, $Y$ is reduced to a single point $y$ (endowed with a ring $\sh{O}_y$) and that, if $x = \psi(y)$, $\theta^\#:\sh{O}_x \to \sh{O}_y$ is a \emph{surjective} homomorphism of rings having as kernel the maximal ideal $\mathfrak{m}_x$ of $\sh{O}_x$.
+  So the $\sh{O}_{Y^{(n)}}$ are identified with the rings $\sh{O}_x/\mathfrak{m}_x^{n+1}$ and $\shGr_\bullet(f)$ with the graded ring associated with the local ring $\sh{O}_x$ endowed with the $\mathfrak{m}_x$-preadic filtration.
+  \item[(ii)] Suppose that $Y$ is a closed subset of an open subspace $U$ of $X$ and that the $\sh{O}_Y$ is induced on $Y$ by a quotient sheaf $\sh{O}_U/\sh{I}$, where $\sh{I}$ is an ideal of $\sh{O}_U$ such that $\sh{I}_x = \sh{O}_x$ for every $x \notin Y$;
+  if $X$ is a locally ringed space we also suppose that $\sh{I}_x \neq \sh{O}_x$ for $y \in Y$ so that $(Y, \sh{O}_Y)$ is a locally ringed space.
+  
+  Let $\psi_0: Y \to U$ be the canonical injection and denote by $\theta_0: \sh{O}_U \to (\psi_0)_*(\sh{O}_Y)$ the homomorphism such that $\theta_0^\#$ is the canonical homomorphism $\psi^*_0(\sh{O}_U) = \sh{O}_U|Y \to (\sh{O}_U/\sh{I})|Y$, so that $j_0=(\psi_0, \theta_0):Y \to U$ is a morphism of ringed spaces (and of locally ringed spaces if $X$ is a locally ringed space);
+  if $i:U \to X$ is the canonical injection (morphism of ringed spaces), $j = i\circ j_0$ is the morphism $(\psi, \theta)$ of $Y$ to $X$ where $\psi: Y \to X$ is the canonical injection and $\theta:\sh{O}_X \to \psi_*(\sh{O}_Y)$ is the homomorphism such that $\theta^\# = \theta_0^\#$.
+  Since $\theta^\#$ is surjective we can apply the previous definitions;
+  $\sh{O}_{Y^{(n)}}$ is equal to $\psi^*_0(\sh{O}_U/\sh{I}^{n+1})$, and we have $(\psi_0)_*(\sh{O}_{Y^{(n)}} ) = \sh{O}_U/\sh{I}^{n+1}$, and $\shGr_n(j) = \shGr_n(j_0) = \psi^*_0(\sh{I}^n/\sh{I}^{n+1}) = j^*_0(\sh{I}^n/\sh{I}^{n+1})$.
+  %I am pretty sure it should be \psi^* instead of j^*_0 in the last line... ~solov-t
+\end{enumerate}
 \end{examples}
+
+\begin{env}[16.1.4]
+\label{IV.16.1.4}
+The example \sref{IV.16.1.3}[ii] shows that in general the $\sh{O}_{Y^{(n)}}$ are \emph{not canonically endowed with a structure of $\sh{O}_Y$-module}, or \emph{a fortiori} with a structure of $\sh{O}_Y$-algebra.
+The data of such structure is equivalent to the data of a homomorphism of sheaves of rings $\lambda_n:\sh{O}_Y \to \sh{O}_{Y^{(n)}}$, right inverse to the augmentation morphism $\phi_{0n}$;
+it is also equivalent to the data of a morphism of ringed spaces $(I_Y, \lambda_n): Y^{(n)} \to Y$ right inverse to the canonical morphism $(I_Y, \phi_{0n}): Y \to Y^{(n)}$.
+\end{env}
+
+\begin{proposition}[16.1.5]
+\label{IV.16.1.6}
+Let $f = (\psi, \theta): Y \to X$ be an immersion of preschemes. We have:
+\begin{enumerate}
+  \item[(i)] $\shGr_\bullet(f)$ is a quasi-coherent graded $\sh{O}_Y$-algebra.
+\oldpage[IV-4]{7}
+  \item[(ii)] The $Y^{(n)}$ are preschemes, canonically isomorphic to subpreschemes of $X$.
+  \item[(iii)] Every homomorphism of sheaves of rings $\lambda_n: \sh{O}_Y \to \sh{O}_{Y^{(n)}}$, right inverse to the augmentation homomorphism $\phi_{0n}$, makes the $\sh{O}_{Y^{(n)}}$ and $\sh{O}_{Y^{(k)}}$ for $k\leq n$ quasi-coherent $\sh{O}_Y$-algebras;
+  the structure of $\sh{O}_Y$-module deducted from the preceding structures on the $\shGr_k(f)$ for $k \leq n$ coincide with the ones defined in \sref{IV.16.1.2}.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) Since the question is local on $X$ and $Y$, we can reduce to the case where $Y$ is a closed subpreschemes of $X$ defined by an quasi-coherent ideal $\sh{I}$ of $\sh{O}_X$;
+since $\sh{O}_Y$ is the restriction to $Y$ of $\sh{O}_X/\sh{I}$ the assertion (i) is evident, and $Y^{(n)}$ is the closed subprescheme of $X$ defined by the quasi-coherent ideal $\sh{I}^{n+1}$ of $\sh{O}_X$.
+Finally, to prove (iii) we notice that the data of $\lambda_n$ makes the ideal $\sh{I}/\sh{I}^n$ of the augmentation $\phi_{0n}$ and their quotients $\sh{I}/\sh{I}^{k+1} (1\leq k \leq n)$ $\sh{O}_Y$-modules, and it suffices to prove by induction on $k$ that the $\sh{I}/\sh{I}^{k+1}$ are quasi-coherent $\sh{O}_Y$-modules and the structure of quotient $\sh{O}_Y$-module induced on $\sh{I}^k/\sh{I}^{k+1}$ is the same as defined on \sref{IV.16.1.2}.
+The second assertion is immediate, $\sh{I}^k/\sh{I}^{k+1}$ being killed by $\sh{I}/\sh{I}^{n+1}$;
+the first result, by induction on $k$, is trivial for $k=1$ and for $\sh{I}/\sh{I}^{k+1}$ being an extension of $\sh{I}/\sh{I}^{k}$ by $\sh{I}^k/\sh{I}^{k+1}$ \hyperref[section:III.1.4.17]{(\textbf{III}, 1.4.17)}.
+\end{proof}
+
+\begin{corollary}[16.1.6]
+\label{IV.16.1.6}
+Under the general hypothesis of \sref{IV.16.1.5}, if the immersion $f$ is locally of finite presentation then the $\shGr_n(f)$ are quasi-coherent $\sh{O}_Y$-modules of finite type.
+\end{corollary}
+
+\begin{proof}
+Indeed, with the notation of the demonstration of \sref{IV.16.1.5}, $\sh{I}$ is an ideal of finite type of $\sh{O}_X$ \sref{IV.1.4.7}, therefore the $\sh{I}^n/\sh{I}^{n+1}$ are $\sh{O}_Y$-modules of finite type, hence the conclusion.
+\end{proof}
+
+\begin{corollary}[16.1.7]
+\label{IV.16.1.7}
+Under the general hypothesis of \sref{IV.16.1.5}, let $g:X \to Y$ be a morphism of preschemes left inverse to $f$.
+Therefore, for every $n$, the composite morphism $(I, \lambda_n): Y^{(n)}\xrightarrow{h_n} X \xrightarrow{g} Y$ defines a homomorphism of sheaves of rings $\lambda_n: \sh{O}_Y \to \sh{O}_{Y^{(n)}}$ right inverse to the augmentation $\phi_{0n}$, making $\sh{O}_{Y^{(n)}}$ a quasi-coherent $\sh{O}_Y$-algebra;
+via these homomorphisms, the transition homomorphism $\phi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}} (n \leq m)$ are homomorphisms of $\sh{O}_Y$-algebras. 
+Also, if $g$ is locally of finite type, then the $\sh{O}_{Y^{(n)}}$ are quasi-coherent $\sh{O}_Y$-modules of finite type.
+\end{corollary}
+
+\begin{proof}
+The first assertion is an immediate result from the definitions and \sref{IV.16.1.5}. For the other part, if $g$ is locally of finite type then $f$ is locally of finite presentation \sref{IV.1.4.3}[(v)];
+the $\shGr_n(f)$ being then quasi-coherent $\sh{O}_Y$-modules of finite type by \sref{IV.16.1.6}, the same goes for the $\sh{O}_Y$-modules $\sh{I}/\sh{I}^{n+1}$, being extensions of a finite number of the $\shGr_k(f)$ \sref[III]{III.1.4.17}.
+\end{proof}
+
+
