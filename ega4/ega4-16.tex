@@ -25,7 +25,7 @@ We can then endow $\psi^*(\sh{O}_X)$ with the $\sh{I}_f$-preadic filtration.
 \begin{definition}[16.1.2]
 \label{IV.16.1.2}
 The $\sh{O}_Y$-augmented sheaf of rings $\psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$ is called the $n$'th \emph{normal invariant} of $f$;
-the ringed space $(Y, \psi^*(\sh{O}_X)/\sh{I}_f^{n+1})$ is called the $n$'th \emph{infinitesimal neighbourhood} of $Y$ along $f$ and is denoted by $Y^{(n)}_f$ or simply $Y^{(n)}$.
+the ringed space $(Y, \psi^*(\sh{O}_X)/\sh{I}_f^{n+1})$ is called the $n$'th \emph{infinitesimal neighborhood} of $Y$ along $f$ and is denoted by $Y^{(n)}_f$ or simply $Y^{(n)}$.
 The sheaf of graded rings associated to the sheaf of filtered rings $\psi^*(\sh{O}_X)$
 \[
   \label{IV.16.1.2.1}
@@ -54,7 +54,7 @@ which coincide in degrees $0$ and $1$ with the identities.
 \begin{enumerate}
   \item[(i)] Suppose that $X$ is a locally ringed space, $Y$ is reduced to a single point $y$ (endowed with a ring $\sh{O}_y$) and that, if $x = \psi(y)$, $\theta^\#:\sh{O}_x \to \sh{O}_y$ is a \emph{surjective} homomorphism of rings having as kernel the maximal ideal $\mathfrak{m}_x$ of $\sh{O}_x$.
   So the $\sh{O}_{Y^{(n)}}$ are identified with the rings $\sh{O}_x/\mathfrak{m}_x^{n+1}$ and $\shGr_\bullet(f)$ with the graded ring associated with the local ring $\sh{O}_x$ endowed with the $\mathfrak{m}_x$-preadic filtration.
-  \item[(ii)] Suppose that $Y$ is a closed subset of an open subspace $U$ of $X$ and that the $\sh{O}_Y$ is induced on $Y$ by a quotient sheaf $\sh{O}_U/\sh{I}$, where $\sh{I}$ is an ideal of $\sh{O}_U$ such that $\sh{I}_x = \sh{O}_x$ for every $x \notin Y$;
+  \item[(ii)] Suppose that $Y$ is a closed subset of an open subspace $U$ of $X$ and that the $\sh{O}_Y$ is induced on $Y$ by a quotient sheaf $\sh{O}_U/\sh{I}$, where $\sh{I}$ is an ideal of $\sh{O}_U$ such that $\sh{I}_x = \sh{O}_x$ for every $x \not\in Y$;
   if $X$ is a locally ringed space we also suppose that $\sh{I}_x \neq \sh{O}_x$ for $y \in Y$ so that $(Y, \sh{O}_Y)$ is a locally ringed space.
   
   Let $\psi_0: Y \to U$ be the canonical injection and denote by $\theta_0: \sh{O}_U \to (\psi_0)_*(\sh{O}_Y)$ the homomorphism such that $\theta_0^\#$ is the canonical homomorphism $\psi^*_0(\sh{O}_U) = \sh{O}_U|Y \to (\sh{O}_U/\sh{I})|Y$, so that $j_0=(\psi_0, \theta_0):Y \to U$ is a morphism of ringed spaces (and of locally ringed spaces if $X$ is a locally ringed space);
@@ -98,19 +98,20 @@ Under the general hypothesis of \sref{IV.16.1.5}, if the immersion $f$ is locall
 \end{corollary}
 
 \begin{proof}
-Indeed, with the notation of the demonstration of \sref{IV.16.1.5}, $\sh{I}$ is an ideal of finite type of $\sh{O}_X$ \sref{IV.1.4.7}, therefore the $\sh{I}^n/\sh{I}^{n+1}$ are $\sh{O}_Y$-modules of finite type, hence the conclusion.
+Indeed, with the notation from the proof of \sref{IV.16.1.5}, $\sh{I}$ is an ideal of finite type of $\sh{O}_X$ \sref{IV.1.4.7}, therefore the $\sh{I}^n/\sh{I}^{n+1}$ are $\sh{O}_Y$-modules of finite type, hence the conclusion.
 \end{proof}
 
 \begin{corollary}[16.1.7]
 \label{IV.16.1.7}
-Under the general hypothesis of \sref{IV.16.1.5}, let $g:X \to Y$ be a morphism of preschemes left inverse to $f$.
+Under the general hypotheses of \sref{IV.16.1.5}, let $g:X \to Y$ be a morphism of preschemes, left inverse to $f$.
 Therefore, for every $n$, the composite morphism $(I, \lambda_n): Y^{(n)}\xrightarrow{h_n} X \xrightarrow{g} Y$ defines a homomorphism of sheaves of rings $\lambda_n: \sh{O}_Y \to \sh{O}_{Y^{(n)}}$ right inverse to the augmentation $\phi_{0n}$, making $\sh{O}_{Y^{(n)}}$ a quasi-coherent $\sh{O}_Y$-algebra;
-via these homomorphisms, the transition homomorphism $\phi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}} (n \leq m)$ are homomorphisms of $\sh{O}_Y$-algebras. 
+via these homomorphisms, the transition homomorphism $\phi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}}$ ($n\leq m$) are homomorphisms of $\sh{O}_Y$-algebras. 
 Also, if $g$ is locally of finite type, then the $\sh{O}_{Y^{(n)}}$ are quasi-coherent $\sh{O}_Y$-modules of finite type.
 \end{corollary}
 
 \begin{proof}
-The first assertion is an immediate result from the definitions and \sref{IV.16.1.5}. For the other part, if $g$ is locally of finite type then $f$ is locally of finite presentation \sref{IV.1.4.3}[(v)];
+The first assertion is an immediate result from the definitions and \sref{IV.16.1.5}.
+On the other hand, if $g$ is locally of finite type, then $f$ is locally of finite presentation \sref{IV.1.4.3}[(v)];
 the $\shGr_n(f)$ being then quasi-coherent $\sh{O}_Y$-modules of finite type by \sref{IV.16.1.6}, the same goes for the $\sh{O}_Y$-modules $\sh{I}/\sh{I}^{n+1}$, being extensions of a finite number of the $\shGr_k(f)$ \sref[III]{III.1.4.17}.
 \end{proof}
 
@@ -121,16 +122,15 @@ Then the $Y^{(n)}$ are locally Noetherian preschemes, the $\shGr_n(j)$ are coher
 \end{proposition}
 
 \begin{proof}
-Everything is local on $X$ and $Y$, so we reduce to the case where $X$ is affine and $j$ is a closed immersion and therefore all the assertions are evident except for the last, which results from the fact that if $A$ is a Noetherian ring and $\mathfrak{I}$ is an ideal of $A$, $\gr^\bullet_\mathfrak{I}(A)$ is a Noetherian ring, taking into account the exactness of the functor $\psi^*$ and \sref[0]{0.5.3.7}.
+Everything is local on $X$ and $Y$, so we reduce to the case where $X$ is affine and $j$ is a closed immersion and therefore all the assertions are evident except for the last, which results from the fact that if $A$ is a Noetherian ring and $\mathfrak{I}$ is an ideal of $A$, $\gr_\mathfrak{I}^\bullet(A)$ is a Noetherian ring, taking into account the exactness of the functor $\psi^*$ and \sref[0]{0.5.3.7}.
 \end{proof}
-
 
 \begin{proposition}[16.1.9]
 \label{IV.16.1.9}
 \oldpage[IV-4]{8}
 Let $X$ be a prescheme, $j: Y \to X$ an immersion locally of finite presentation, $y$ a point of $Y$. The following conditions are equivalent:
 \begin{enumerate}
-  \item[(a)] There exists an open neighbourhood $U$ of y in $Y$ such that $j|U$ is a homeomorphism of $U$ onto an open set of $X$.
+  \item[(a)] There exists an open neighborhood $U$ of y in $Y$ such that $j|U$ is a homeomorphism of $U$ onto an open set of $X$.
   \item[(b)] There is an integer $n>0$ such that the canonical homomorphism
   \[
     (\phi_{n-1,n})_y: \sh{O}_{Y^{(n)},y} \to \sh{O}_{Y^{(n-1)},y}
@@ -138,17 +138,17 @@ Let $X$ be a prescheme, $j: Y \to X$ an immersion locally of finite presentation
   is bijective.
   \item[(c)] There is an integer $n>0$ such that $(\shGr_n(j))_y = 0$.
   
-  Furthermore, if the integer $n$ verifies b) or c), there is a neighbourhood $V$ of $y$ in $Y$ such that $\shGr_m(j)|V = 0$ for $m \geq n$ and that $\phi_{nm}|V: \sh{O}_{Y^{(m)}}|V \to \sh{O}_{Y^{(n)}}|V$ is bijective for $m \geq n$. 
+  In addition, if the integer $n$ satisfiess \emph{(b)} or \emph{(c)}, then there is a neighborhood $V$ of $y$ in $Y$ such that $\shGr_m(j)|V = 0$ for $m \geq n$ and that $\phi_{nm}|V: \sh{O}_{Y^{(m)}}|V \to \sh{O}_{Y^{(n)}}|V$ is bijective for $m \geq n$. 
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 The question being local on $Y$, we can restrict ourselves to the case where $j$ is a closed immersion, $Y$ being defined by a quasi-coherent ideal \emph{of finite type} $\mathfrak{I}$ of $\sh{O}_X$.
-The equivalence of b) and c), for a given $n$, is immediate;
-also, since $\sh{I}^n/\sh{I}^{n+1}$ is an $\sh{O}_X$-module of finite type, there is an open neighbourhood $U$ of $y$ in $X$ such that $\sh{I}^n|U = \sh{I}^{n+1}|U$ \sref[0]{0.5.2.2}, so we also have $\sh{I}^n|U = \sh{I}^m|U$ for $m \geq n$ proving the last assertions.
-To prove that a) implies b), we can restrict ourselves to the cases where the underlying space of $Y$ is equal to the underlying space of $X$ and where $\sh{I}$ is generated by a finite number of sections over $X$:
+The equivalence of (b) and (c), for a given $n$, is immediate;
+also, since $\sh{I}^n/\sh{I}^{n+1}$ is an $\sh{O}_X$-module of finite type, there is an open neighborhood $U$ of $y$ in $X$ such that $\sh{I}^n|U = \sh{I}^{n+1}|U$ \sref[0]{0.5.2.2}, so we also have $\sh{I}^n|U = \sh{I}^m|U$ for $m \geq n$ proving the last assertions.
+To prove that (a) implies (b), we can restrict ourselves to the cases where the underlying space of $Y$ is equal to the underlying space of $X$ and where $\sh{I}$ is generated by a finite number of sections over $X$:
 since $\sh{I}$ is contained in the nilradical $\sh{N}$ of $\sh{O}_X$ \sref[I]{I.5.1.2}, it is now nilpotent which proves b).
-Finally, to prove that b) implies a), we can restrict ourselves to the case where $\sh{I}^n = \sh{I}^m$; 
+Finally, to prove that (b) implies (a), we can restrict ourselves to the case where $\sh{I}^n = \sh{I}^m$; 
 therefore, for every $y \in Y$, since $\sh{I}_y \subset \mathfrak{m}_y$, maximal ideal of $\sh{O}_{X,y}$, we must have $\sh{I}^n_y = 0$ because of Nakayama's lemma, since $\sh{I}_y$ is an ideal of finite type.
 The set of $x \in X$ such that $\sh{I}^n_x = 0$ is an open $U$ of $X$ contained in $Y$ \sref[0]{0.5.2.2};
 since on the other hand $\sh{I}_x \neq 0$ for $x \notin Y$, we must have $U = Y$.
@@ -156,7 +156,7 @@ since on the other hand $\sh{I}_x \neq 0$ for $x \notin Y$, we must have $U = Y$
 
 \begin{corollary}[16.1.10]
 \label{IV.16.1.10}
-For a restriction of the immersion $j$ to an open neighbourhood of $y$ in $Y$ to be an open immersion (in other words, for $j$ to be a \emph{local isomorphism} on the point $y$), it is necessary and sufficient that $(\shGr_1(j))_y = (\sh{N}_{Y/X})_y = 0$.
+For a restriction of the immersion $j$ to an open neighborhood of $y$ in $Y$ to be an open immersion (in other words, for $j$ to be a \emph{local isomorphism} on the point $y$), it is necessary and sufficient that $(\shGr_1(j))_y = (\sh{N}_{Y/X})_y = 0$.
 \end{corollary}
 
 \begin{proof}
@@ -168,12 +168,12 @@ The condition is clearly necessary, and the previous reasoning applied to $n=1$ 
 \begin{enumerate}
   \item[(i)] Under the conditions of the definition \sref{IV.16.1.1}, the projective limit of the projective system $(\sh{O}_{Y^{(n)}}, \phi_{nm})$ of sheaves of rings over $Y$ is called the \emph{normal invariant of infinite order} of $f$, and sometimes denoted by $\sh{O}_{Y^{(\infty)}}$.
   When $X$ is a locally noetherian prescheme, $j:Y \to X$ a closed immersion, $Y$ then is a closed subprescheme of $X$ defined by a coherent ideal $\sh{I}$ and $\sh{O}_{Y^{(\infty)}}$ is exactly the \emph{formal completion} of $\sh{O}_X$ along $Y$ \sref[I]{I.10.8.4}, and $Y^{(\infty)} = (Y, \sh{O}_{Y^{(\infty)}})$ is the formal prescheme that is the \emph{completion} of $X$ along $Y$ \sref[I]{I.10.8.5}.
-  In all cases, we could say that $Y^{(\infty)}$ is the \emph{formal neighbourhood} of $Y$ in $X$ (via the morphism $f$).
-  In the particular case we have just considered, it is the formal prescheme that is the inductive limit of the infinitesimal neighbourhoods of order $n$.
+  In all cases, we could say that $Y^{(\infty)}$ is the \emph{formal neighborhood} of $Y$ in $X$ (via the morphism $f$).
+  In the particular case we have just considered, it is the formal prescheme that is the inductive limit of the infinitesimal neighborhoods of order $n$.
   \item[(ii)] Note that for a morphism of preschemes $f=(\psi, \theta): Y \to X$, it can happen that the homomorphism $\theta^\#:\psi^*(\sh{O}_X) \to \sh{O}_Y$ is surjective without $f$ being a local 
 \oldpage[IV-4]{8}
   immersion and without $f$ being injective.
-  We have an example by taking $Y$ to be a sum of preschemes $Y_\lambda$ all isomorphic to $\Spec(\sh{O}_x)$, where $x \in X$, and $f$ to be the morphism equal to the canonical morphism in each of the $Y_\lambda$.
+  We have an example by taking $Y$ to be a sum of preschemes $Y_\lambda$ all isomorphic to $\Spec(\sh{O}_x)$, where $x \in X$, and taking $f$ to be the morphism equal to the canonical morphism in each of the $Y_\lambda$.
 \end{enumerate}
 \end{remark}
 
