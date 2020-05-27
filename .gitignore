@@ -42,3 +42,6 @@
 book.tex
 *.paux
 
+sublime.sublime-workspace
+sublime.sublime-project
+ega4.sublime-workspace
