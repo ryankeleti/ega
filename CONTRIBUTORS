@@ -1,9 +1,9 @@
 % current contributors (last name alphabetical order)
 % this file is read by scripts/make_book.py for building book.tex with contributors names.
-% also used for web version, if and when it's up.
+% also used for web version.
 
 Tim Holzschuh
 Tim Hosgood
 Ryan Keleti
-Thiago Solovera & Nery
+Thiago Solovera \& Nery
 
