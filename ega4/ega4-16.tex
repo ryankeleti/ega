@@ -64,7 +64,6 @@ which coincide in degrees $0$ and $1$ with the identities.
   if $i:U \to X$ is the canonical injection (morphism of ringed spaces), $j = i\circ j_0$ is the morphism $(\psi, \theta)$ of $Y$ to $X$ where $\psi: Y \to X$ is the canonical injection and $\theta:\sh{O}_X \to \psi_*(\sh{O}_Y)$ is the homomorphism such that $\theta^\# = \theta_0^\#$.
   Since $\theta^\#$ is surjective we can apply the previous definitions;
   $\sh{O}_{Y^{(n)}}$ is equal to $\psi^*_0(\sh{O}_U/\sh{I}^{n+1})$, and we have $(\psi_0)_*(\sh{O}_{Y^{(n)}} ) = \sh{O}_U/\sh{I}^{n+1}$, and $\shGr_n(j) = \shGr_n(j_0) = \psi^*_0(\sh{I}^n/\sh{I}^{n+1}) = j^*_0(\sh{I}^n/\sh{I}^{n+1})$.
-  %I am pretty sure it should be \psi^* instead of j^*_0 in the last line... ~solov-t
 \end{enumerate}
 \end{examples}
 
@@ -423,7 +422,7 @@ We deduce that for every integer $n$ there is a canonical homomorphism $\sh{I}_{
 
 \begin{proposition}[16.2.7]
 \label{IV.16.2.7}
-Let $X$ be a prescheme, $Y$ a subprescheme of $X$, $Y'$ a subprescheme of $Y$, $j:X \to Y$ the canonical injection.
+Let $X$ be a prescheme, $Y$ a subprescheme of $X$, $Y'$ a subprescheme of $Y$, $j:Y' \to Y$ the canonical injection.
 We have an exact sequence of conormal sheaves ($\sh{O}_{Y'}$-modules)
 \[
   \label{IV.16.2.7.1}
@@ -436,12 +435,142 @@ where the arrows are the degree $1$ components of the canonical homomorphisms \s
 \end{proposition}
 
 \begin{proof}
-  The problem being local, we can restrict ourselves to the case where $X = \Spec(A)$, $Y = \Spec(B)$ and $Y = \Spec(A/\mathfrak{I})$, $Y' = \Spec(A/\mathfrak{K})$, $\mathfrak{I}$ and $\mathfrak{K}$ being ideals of $A$ such that $\mathfrak{I} \subset \mathfrak{K}$;
+  The problem being local, we can restrict ourselves to the case where $X = \Spec(A)$, $Y = \Spec(A/\mathfrak{I})$ and $Y' = \Spec(A/\mathfrak{K})$, $\mathfrak{I}$ and $\mathfrak{K}$ being ideals of $A$ such that $\mathfrak{I} \subset \mathfrak{K}$;
   everything reduces to seeing 
   \oldpage[IV-4]{14}
-  that the sequence of canonical morphisms $\mathfrak{I}/\mathfrak{K}\mathfrak{I} \to \mathfrak{K}/\mathfrak{K}^2 \to (\mathfrak{K}\mathfrak{I} )/ (\mathfrak{K}\mathfrak{I} )^2 \to 0$ is exact, which is immediate given that the image of $\mathfrak{I}/\mathfrak{K}\mathfrak{I} $ in $\mathfrak{K}/\mathfrak{K}^2$ is $(\mathfrak{I} + \mathfrak{K}^2)/\mathfrak{K}^2$ and that $(\mathfrak{K}\mathfrak{I} )/ (\mathfrak{K}\mathfrak{I} )^2$ is identified with $\mathfrak{K}/ (\mathfrak{I} + \mathfrak{K}^2)$.
+  that the sequence of canonical morphisms $\mathfrak{I}/\mathfrak{K}\mathfrak{I} \to \mathfrak{K}/\mathfrak{K}^2 \to (\mathfrak{K}/\mathfrak{I} )/ (\mathfrak{K}/\mathfrak{I} )^2 \to 0$ is exact, which is immediate given that the image of $\mathfrak{I}/\mathfrak{K}\mathfrak{I} $ in $\mathfrak{K}/\mathfrak{K}^2$ is $(\mathfrak{I} + \mathfrak{K}^2)/\mathfrak{K}^2$ and that $(\mathfrak{K}/\mathfrak{I} )/ (\mathfrak{K}/\mathfrak{I} )^2$ is identified with $\mathfrak{K}/ (\mathfrak{I} + \mathfrak{K}^2)$.
 \end{proof}
 
 It is easy to give examples where the sequence \sref{IV.16.2.7.1} extended on the right by $0$ is not exact;
 with the previous notation, just take $A = k[T]$, $\mathfrak{I} = AT^2$, $\mathfrak{K} = AT$, because then $(\mathfrak{I} + \mathfrak{K}^2)/\mathfrak{K}^2 = 0$ and $\mathfrak{I}/\mathfrak{K}\mathfrak{I} \neq 0$.
 See however \sref{IV.16.9.13} and \sref{IV.19.1.5} for some cases there the extended sequence is indeed exact.
+
+\subsection{Fundamental differential invariants of morphisms of preschemes}
+\label{IV.16.3}
+
+\begin{definition}[16.3.1]
+\label{IV.16.3.1}
+Let $f:X \to S$ be a morphism of preschemes, $\Delta_f: X \to X \times_S X$ the corresponding diagonal morphism, which is an immersion \sref[I]{I.5.3.9}.
+We denote by $\sh{P}_f^n$ or $\sh{P}_{X/S}^n$, and call by \emph{sheaf of principal parts of order $n$ of the $S$-prescheme $X$}, the $\sh{O}_X$-augmented sheaf of rings, $n$'th normal invariant of $\Delta_f$ \sref{IV.16.1.2}.
+We'll also write $\sh{P}_f^\infty = \sh{P}_{X/S}^\infty = \varprojlim_n \sh{P}_{X/S}^n$, $\shGr_n(\sh{P}_f) = \shGr_n(\sh{P}_{X/S}) = \shGr_n(\Delta_f)$ \sref{IV.16.1.2};
+the $\sh{O}_X$-module $\shGr_1(\Delta_f)$, augmentation ideal of $\sh{P}_{X/S}^1$, is denoted by $\Omega_f^1$ or $\Omega_{X/S}^1$, and is called the $\sh{O}_X$-module of $1$-\emph{differentials} of $f$, or of $X$ by $S$, or of the prescheme $X$.
+\end{definition}
+
+It results from the definition that $\sh{P}_{X/S}^0$ is canonically identified with $\sh{O}_X$ \sref{IV.16.1.2}.
+
+We have \sref{IV.16.1.2.2} a canonical surjective morphism of graded $\sh{O}_X$-algebras 
+\[
+  \label{IV.16.3.1.1}
+  \bb{S}_{\sh{O}_X}^\bullet(\Omega_{X/S}^1) \to \shGr_\bullet(\sh{P}_{X/S}).
+  \tag{16.3.1.1}
+\]
+And it results from the definition \sref{IV.16.3.1} that for every open set $U$ of $X$ we have $\sh{P}_{f|U}^n = \sh{P}_f^n|U$, $\sh{P}_{f|U}^\infty = \sh{P}_f^\infty|U$, $\shGr_n(\sh{P}_{f|U}) = \shGr_n(\sh{P}_f)|U$, $\Omega_{f|U}^1 = \Omega_f^1|U$ (in other words, the introduced notions are \emph{local} on $X$).
+
+\begin{env}[16.3.2]
+\label{IV.16.3.2}
+Denote by $p_1$, $p_2$ the two canonical projections of the product $X \times_S X$;
+since $\Delta_f$ is an $X$-section of $X \times_S X$ for both $p_1$ and $p_2$, \emph{each} of these morphisms define, for all $n$, a homomorphism of sheaves of rings $\sh{P}_{X/S}^n \to \sh{O}_X$, right inverse of the augmentation $\sh{P}_{X/S}^n \to \sh{O}_X$ \sref{IV.16.1.7};
+one can also say that we can define on $\sh{P}_{X/S}^n$ \emph{two} structures of \emph{quasi-coherent augmented $\sh{O}_X$-algebras};
+the corresponding structures of $\sh{O}_X$-modules on $\shGr_n(\sh{P}_{X/S}^n)$ are the same. 
+We have the same, by passing to the limit, two structures of $\sh{O}_X$-algebras on $\sh{P}_{X/S}^\infty$.	
+\end{env}
+
+\begin{env}[16.3.3]
+\label{IV.16.3.3}
+The morphism $s = (p_2, p_1)_S: X \times_S X \to X \times_S X$ is an \emph{involution} of $X \times_S X$, called the \emph{canonical symmetry}, such that
+\[
+	\label{IV.16.3.3.1}
+  p_1 \circ s = p_2, \qquad p_2 \circ s = p_1, \qquad s \circ \Delta_f = \Delta_f.
+	\tag{16.3.3.1}
+\]
+
+If we put $s = (\rho, \lambda)$, $p_i = (\pi_i, \mu_i)$ ($i = 1,2$), $\Delta_f = (\delta, \nu)$, $\lambda^\#$ is then an isomorphism of $\rho^*(\pi_1^*(\sh{O}_X))$ onto $\pi_2^*(\sh{O}_X)$, and $\delta^*(\lambda^\#)$ fixes $\delta^*(\sh{O}_{X \times_S X})$ and the kernel $\sh{I}$ of the homomorphism $\nu^\#: \delta^*(\sh{O}_{X \times_S X}) \to \sh{O}_X$. 
+Therefore:
+\end{env}
+
+\begin{proposition}[16.3.4]
+\label{IV.16.3.4}
+The homomorphism $\sigma = \delta^*(\lambda^\#)$ deduced from $s$ (and also called \emph{canonical symmetry}) is an involution of the projective system $(\sh{P}_{X/S}^n)$ of $\sh{O}_X$-augmented 
+\oldpage[IV-4]{15}
+sheaves of rings, and as a consequence also of the projective limit $\sh{P}_{X/S}^\infty$.
+This automorphism permutes the structure of $\sh{O}_X$-algebra on $\sh{P}_{X/S}^n$ and $\sh{P}_{X/S}^\infty$.
+\end{proposition}
+
+\begin{env}[16.3.5]
+\label{IV.16.3.5}
+In what follows, the two structure of $\sh{O}_X$-algebras defined on $\sh{P}_{X/S}^n$ and on $\sh{P}_{X/S}^\infty$ will play very different roles:
+\emph{we will now agree, unless stressed otherwise, that when $\sh{P}_{X/S}^n$ and $\sh{P}_{X/S}^\infty$ are considered as an $\sh{O}_x$-algebra, it is the algebra structure induced by $p_1$}.
+\end{env}
+
+For every open set $U$ of $X$ and every section $t \in \Gamma(U, \sh{O}_x)$, we will simply denote $t.1$ or even $t$ the image of $t$ under the structural morphism $\Gamma(U, \sh{O}_x) \to \Gamma(U, \sh{P}_{X/S}^n)$ (resp. $\Gamma(U, \sh{O}_x) \to \Gamma(U, \sh{P}_{X/S}^n)$) (that is to say, the homomorphism corresponding to $p_1$).
+
+\begin{definition}[16.3.6]
+\label{IV.16.3.6}
+We denote by $d_f^n$, or $d_{X/S}^n$ (resp. $d_f^\infty$, or $d_{X/S}^\infty$), or simply $d^n$ (resp. $d^\infty$), the homomorphism of sheaves of rings $\sh{O}_x \to \sh{P}_{f}^n = \sh{P}_{X/S}^n$ (resp. $\sh{O}_x \to \sh{P}_{f}^\infty = \sh{P}_{X/S}^\infty$) deduced from $p_2$.
+For every open set $U$ of $X$, and every $t \in \Gamma(U, \sh{O}_x)$, $d^nt$ (resp. $d^\infty t$) is called the \emph{principal part of order $n$} (resp. principal part of infinite order) of $t$.
+We put $dt = d^1 t - t$, and we say that $dt$ is the differential of $t$ (element of $\Gamma(U, \Omega_{X/S}^1)$, also denoted $d_{X/S}(t)$).
+\end{definition}  
+
+It results immediately
+\footnote{
+[Trans.] This is, locally, \sref[0]{0.20.1.1}.
+}
+from the definition that we have
+\[
+  \label{IV.16.3.6.1}
+  d(t_1t_2) = t_1dt_2 + t_2dt_1
+  \tag{16.3.6.1} 
+\]
+for every $t_1$, $t_2$ in $\Gamma(U \sh{O}_x)$, that is, $d$ is a \emph{derivation} of the ring $\Gamma(U, \sh{O}_x)$ on the $\Gamma(U, \sh{O}_x)$-module $\Gamma(U, \Omega_{X/S}^1)$.
+
+On all notations introduced in \sref{IV.16.3.1} and \sref{IV.16.3.6}, we'll sometimes replace $S$ by $A$ when $S = \Spec(A)$.
+
+\begin{env}[16.3.7]
+\label{IV.16.3.7}
+Suppose in particular that $S = \Spec(A)$ and $X = \Spec(B)$ are affine schemes, $B$ being then an $A$-algebra.
+Then $\Delta_f$ correspeonds to the canonical surjective homomorphism $\pi: B \otimes_A B \to B$ such that $\pi(b\otimes b') = bb'$, with kernel $\mathfrak{I} = \mathfrak{I}_{B/A}$ \sref[0]{0.20.4.1};
+$\sh{P}_{f}^n$ is the structure sheaf of the prescheme $\Spec(P_{B/A}^n)$, where
+\[
+	P_{B/A}^n = (B \otimes_A B)/\mathfrak{I}^{n+1};
+\]
+$\shGr_\bullet(\sh{P}_f)$ is the quasi-coherent $\sh{O}_x$-module corresponding to the graded $B$-module
+\[
+	\gr_\mathfrak{I}^\bullet(B \otimes_A B) = \bigoplus_{n \geq 0} (\mathfrak{I}^n/\mathfrak{I}^{n+1});
+\]
+in particular $\Omega_f^1 = \Omega_{X/S}^1$ is the quasi-coherent $\sh{O}_x$-module corresponding to the $B$-module of $1$-differentials of $B$ over $A$, $\Omega_{B/A}^1$ \sref[0]{0.20.4.3}.
+The projection morphisms $p_1: X \times_S X \to X$, $p_2: X \times_S X \to X$ corresponding to the two homomorphisms of rings $j_1: B \to B \otimes_A B$, $j_2: B \to B \otimes_A B$ such that $j_1(b) = b \otimes 1$, $j_2(b) = 1 \otimes b$, such that (by convention of \sref{IV.16.3.5}), $P_{B/A}^n$ is always considered as a $B$-algebra via the composed homomorphism $B \xrightarrow{j_1} B \otimes_A B \xrightarrow{} P_{B/A}^n$;
+the ring homomorphism $B \xrightarrow{j_2} B \otimes_A B \xrightarrow{} P_{B/A}^n$ is denoted by $d_{B/A}^n$ and corresponds to $d_{X/S}^n$ operating on $\Gamma(X, \sh{O}_x)$;
+for every $t \in B$, $dt$ is equal to $d_{B/A}t$, defined on \sref[0]{0.20.4.6}.
+
+If $\pi_n: B \otimes_A B \to P_{B/A}^n$ is the canonical homomorphism, so we have, in light of the preceding definitions,
+\[
+	\label{IV.16.3.7.1}
+	\pi_n(b\otimes b') = b.\pi_n(1\otimes b') = b.d_{B/A}^n(b') \quad \text{for } b \in B, b' \in B.   		
+	\tag{16.3.7.1}
+\]
+\end{env}
+
+\oldpage[IV-4]{16}
+
+\begin{proposition}[16.3.8]
+\label{IV.16.3.8}
+The image of the canonical homomorphism $d_{X/S}^n: \sh{O}_x \to \sh{P}_{X/S}^n$ generates the $\sh{O}_x$-module $\sh{P}_{X/S}^n$.
+\end{proposition}
+
+\begin{proof}
+We come back immediately to the case where $X = \Spec(B)$ and $S = \Spec(A)$ are affines and the proposition results from \sref{IV.16.3.7.1} since $\pi_n$ is surjective.
+We note that in general $d_{X/S}^n$ \emph{is not surjective} (even for $n = 1$). 
+\end{proof}
+
+\begin{proposition}[16.3.9]
+\label{IV.16.3.8}
+Suppose that $f:X \to S$ is a morphism locally of finite type.
+Then the $\sh{P}_{f}^n$ and the $\shGr_n(\sh{P}_{f})$ are quasi-coherent $\sh{O}_x$-modules of finite type.
+\end{proposition}
+
+\begin{proof}
+This results from \sref{IV.16.1.6} and from the fact that $\Delta_f$ is locally of finite presentation \sref[1]{1.4.3.1}.
+\end{proof}
+
+\subsection{Functorial properties of differential invariants}
+\label{IV.16.4}
