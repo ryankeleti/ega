@@ -495,10 +495,10 @@ This automorphism permutes the structure of $\sh{O}_X$-algebra on $\sh{P}_{X/S}^
 \begin{env}[16.3.5]
 \label{IV.16.3.5}
 In what follows, the two structure of $\sh{O}_X$-algebras defined on $\sh{P}_{X/S}^n$ and on $\sh{P}_{X/S}^\infty$ will play very different roles:
-\emph{we will now agree, unless stressed otherwise, that when $\sh{P}_{X/S}^n$ and $\sh{P}_{X/S}^\infty$ are considered as an $\sh{O}_x$-algebra, it is the algebra structure induced by $p_1$}.
+\emph{we will now agree, unless stressed otherwise, that when $\sh{P}_{X/S}^n$ and $\sh{P}_{X/S}^\infty$ are considered as an $\sh{O}_X$-algebra, it is the algebra structure induced by $p_1$}.
 \end{env}
 
-For every open set $U$ of $X$ and every section $t \in \Gamma(U, \sh{O}_x)$, we will simply denote $t.1$ or even $t$ the image of $t$ under the structural morphism $\Gamma(U, \sh{O}_x) \to \Gamma(U, \sh{P}_{X/S}^n)$ (resp. $\Gamma(U, \sh{O}_x) \to \Gamma(U, \sh{P}_{X/S}^n)$) (that is to say, the homomorphism corresponding to $p_1$).
+For every open set $U$ of $X$ and every section $t \in \Gamma(U, \sh{O}_X)$, we will simply denote $t.1$ or even $t$ the image of $t$ under the structural morphism $\Gamma(U, \sh{O}_X) \to \Gamma(U, \sh{P}_{X/S}^n)$ (resp. $\Gamma(U, \sh{O}_X) \to \Gamma(U, \sh{P}_{X/S}^n)$) (that is to say, the homomorphism corresponding to $p_1$).
 
 \begin{definition}[16.3.6]
 \label{IV.16.3.6}
@@ -509,7 +509,7 @@ We put $dt = d^1 t - t$, and we say that $dt$ is the differential of $t$ (elemen
 
 It results immediately
 \footnote{
-[Trans.] This is, locally, \sref[0]{0.20.1.1}.
+[Trans.] This is, locally we have \sref[0]{0.20.1.1}.
 }
 from the definition that we have
 \[
@@ -570,3 +570,158 @@ This results from \sref{IV.16.1.6} and from the fact that $\Delta_f$ is locally 
 
 \subsection{Functorial properties of differential invariants}
 \label{IV.16.4}
+
+\begin{env}[16.4.1]
+\label{IV.16.4.1}
+Consider a commutative diagram of morphisms of preschemes
+\[
+  \label{IV.16.4.1.1}
+  \xymatrix{
+    X \ar[d]_-{f} & X' \ar[l]_-u \ar[d]^-{f'}\\
+    S & S' \ar[l]^-w
+  }
+  \tag{16.4.1.1}
+\]
+We deduce a commutative diagram
+\[
+  \xymatrix{
+    X \ar[d]_-{\Delta_f} & X' \ar[l]_-u \ar[d]^-{\Delta_{f'}}\\
+    X \times_S X & X' \times_{S'} X' \ar[l]^-v
+  }
+\]
+where $v$ is the composite homomorphism \sref[I]{I.5.3.5} and \sref[I]{I.5.3.15}.
+\[
+  \label{IV.16.4.1.2}
+  X' \times_{S'} X' \xrightarrow{(p'_1, p'_2)_S} X' \times_{S'} X' \xrightarrow{u \times_S u} X \times_S X
+  \tag{16.4.1.2}
+\]
+
+So we deduce from $u$ and $v$, as explained in \sref{IV.16.2.1}, homomorphisms of augmented sheaves of rings
+\[
+  \label{IV.16.4.1.3}
+  \nu_n: \rho^*(\sh{P}_{X/S}^n) \to \sh{P}_{X'/S'}^n
+  \tag{16.4.1.3}
+\]
+(where we put $u = (\rho,\lambda)$);
+these homomorphisms form a projective system, and give the limit a homomorphism of sheaves of graded rings
+\[
+  \label{IV.16.4.1.4}
+  \nu_\infty: \rho^*(\sh{P}_{X/S}^\infty) \to \sh{P}_{X'/S'}^\infty;
+  \tag{16.4.1.4}
+\]
+on the other hand, by passing to the quotient, the homomorphisms $\nu_n$ give rise to a di-homomorphism of graded algebras (relative to $\lambda^\#$):
+\[
+  \label{IV.16.4.1.5}
+  \gr(u): \rho^*(\shGr_\bullet(\sh{P}_{X/S})) \to \shGr(\sh{P}_{X'/S'}).
+  \tag{16.4.1.5}
+\]
+\end{env}
+
+\oldpage[IV-4]{17}
+
+\begin{env}[16.4.2]
+\label{IV.16.4.2}
+If we have a commutative diagram
+\[
+  \xymatrix{
+    X \ar[d]_-{f} & X' \ar[l]_-u \ar[d]^-{f'} & X'' \ar[l]_-{u'} \ar[d]^-{f''}\\
+    S & S' \ar[l]^-w & S'' \ar[l]^-{w'} 
+  }
+\]
+we deduce a commutative diagram
+\[
+  \xymatrix{
+    X \ar[d]_-{\Delta_f} & X' \ar[l]_-u \ar[d]^-{\Delta_{f'}} & X'' \ar[l]_-{u'} \ar[d]^-{\Delta_{f''}}\\
+    X \times_S X & X' \times_{S'} X' \ar[l]^-v & X'' \times_{S''} X'' \ar[l]^-{v'}
+  }
+\]
+where $v'$ is defined from $u'$, $w'$, $f'$, $f''$ as $v$ is from $u$, $w$, $f$, $f'$.
+We verify immediately that if $u'' = u \circ u'$, $w'' = w \circ w'$, then the composite homomorphism $v \circ v'$ is equal to the homomorphism $v''$ deduced from $u''$, $v''$, $f$, $f''$ as $v$ is from $u$, $w$, $f$, $f'$.
+If we put $u' = (\rho', \lambda')$, $u'' = (\rho'', \lambda'')$ it results \sref{IV.16.2.1} that the homomorphism $\nu''_n: \rho''^*(\sh{P}_{X/S}^n) \to \sh{P}_{X''/S''}^n$ is equal to the composite
+\[
+  \rho'^*(\rho^*(\sh{P}_{X/S}^n)) \xrightarrow{\rho'^*(\nu_n^\#)} \rho'^*(\sh{P}_{X'/S'}^n) \xrightarrow{\nu'_n} \sh{P}_{X''/S''}^n
+\]
+and we have transitivity properties analogous to the homomorphisms \sref{IV.16.4.1.4} and \sref{IV.16.4.1.5}, which lets us say that the $\sh{P}_{X/S}^n$, $\sh{P}_{X/S}^\infty$ and $\shGr_\bullet(\sh{P}_{X/S})$ \emph{depend functorially on $f$}. 
+\end{env}
+
+\begin{env}[16.4.3]
+\label{IV.16.4.3}
+We verify immediately (for example, by restricting ourselves to the affine case with aid of \sref{IV.16.3.7}) that with the notation of \sref{IV.16.4.1}, the diagram
+\[
+  \label{IV.16.4.3.1}
+  \xymatrix{
+    \rho^*(\sh{O}_X) \ar[r]^-{\lambda^\#} \ar[d] & \sh{O}_{X'} \ar[d] \\
+    \rho^*(\sh{P}_{X/S}^n) \ar[r]_-{\nu_n} & \sh{P}_{X'/S'}^n  
+  }
+  \tag{16.4.3.1}
+\]
+where the vertical arrows are the ones defining the algebra structure chosen in \sref{IV.16.3.5} (that is to say, the ones coming from the first projections) is commutative;
+the same goes for the diagram
+\[
+  \label{IV.16.4.3.2}
+  \xymatrix{
+    \rho^*(\sh{O}_X) \ar[r]^-{\lambda^\#} \ar[d]_-{\rho^*(d_{X/S}^n)} & \sh{O}_{X'} \ar[d]^-{d_{X'/S'}^n} \\
+    \rho^*(\sh{P}_{X/S}^n) \ar[r]_-{\nu_n} & \sh{P}_{X'/S'}^n  
+  }
+  \tag{16.4.3.2}
+\]
+\oldpage[IV-4]{18}
+the vertical arrows defining here the algebra structure from the second projection;
+besides, if $\sigma$ and $\sigma'$ are the canonical symmetries corresponding to $f$ and $f'$ \sref{IV.16.3.4}, we have
+\[
+  \nu_n \circ \rho^*(\sigma) = \sigma' \circ \nu_n 
+\] 
+which switches one diagram with the other.
+We deduce from \sref{IV.16.4.3.1} a canonical homomorphism of \emph{augmented $\sh{O}_{X'}$-algebras}
+\[
+  \label{IV.16.4.3.3}
+  P^n(u): u^*(\sh{P}_{X/S}^n) = \sh{P}_{X/S}^n \otimes_{\sh{O}_X} \sh{O}_{X'} \to \sh{P}_{X'/S'}^n 
+  \tag{16.4.3.3}
+\]
+and it results from \sref{IV.16.4.3.2} that the diagram 
+\[
+  \label{IV.16.4.3.4}
+  \xymatrix{
+    \sh{O}_{X'} \ar[r]^-{\operatorname{id}} \ar[d]_-{u^*(d_{X/S}^n)}  & \sh{O}_{X'} \ar[d]^-{d_{X'/S'}^n} \\
+    u^*(\sh{P}_{X/S}^n) \ar[r]_{P^n(u)} & \sh{P}_{X'/S'}^n
+  }
+  \tag{16.4.3.4}
+\]
+is commutative.
+We deduce a homomorphism of \emph{graded $\sh{O}_{X'}$-algebras}
+\[
+  \label{IV.16.4.3.5}
+  \Gr_\bullet(u):u^*(\shGr_\bullet(\sh{P}_{X/S})) \to \shGr_\bullet(\sh{P}_{X'/S'})
+  \tag{16.4.3.5}
+\]
+and in particular a homomorphism of $\sh{O}_{X'}$-modules 
+\[
+  \label{IV.16.4.3.6}
+  \Gr_1(u):\Omega_{X/S}^1 \otimes_{\sh{O}_X} \sh{O}_{X'} \to \Omega_{X'/S'}^1
+  \tag{16.4.3.6}
+\]
+giving rise to a commutative diagram
+\[
+  \label{IV.16.4.3.7}
+  \xymatrix{
+    \sh{O}_{X'} \ar[r]^-{\operatorname{id}} \ar[d]_-{d_{X/S} \otimes 1}  & \sh{O}_{X'} \ar[d]^-{d_{X'/S'}} \\
+    \Omega_{X/S}^1 \otimes_{\sh{O}_X} \sh{O}_{X'} \ar[r] & \Omega_{X'/S'}^1
+  }
+  \tag{16.4.3.7}
+\]
+\end{env}
+
+\begin{env}[16.4.4]
+\label{IV.16.4.4}
+When $S = \Spec(A)$, $S' = \Spec(A')$, $X = \Spec(B)$, $X' = \Spec(B')$ are affines, so that we have a commutative diagram of homomorphisms of rings
+\[
+  \xymatrix{
+    B \ar[r] & B' \\
+    A \ar[u] \ar[r] & A' \ar[u]
+  }
+\]
+the image of $\mathfrak{I}_{B/A}$ in $B' \otimes_{A'} B'$ is contained in $\mathfrak{I}_{B'/A'}$, and the homomorphism $\nu_n$ corresponds to the homomorphism of rings $P_{B/A}^n \to P_{B'/A'}^n$ deduced from the homomorphism $B \otimes_A B \to B' \otimes_{A'} B'$ by passing to the quotient.
+The homomorphism \sref{IV.16.4.3.6} corresponds to the homomorphism defined in \sref[0]{0.20.5.4.1}, and the commutative diagram \sref{IV.16.4.3.7} to the diagram \sref[0]{0.20.5.4.2}.
+\end{env}
+
+\oldpage[IV-4]{19}
