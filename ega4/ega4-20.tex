@@ -1,3 +1,256 @@
 \section{Meromorphic functions and pseudo-morphisms}
-\label{section:IV.20}
+\label{IV.20}
+
+\setcounter{subsection}{-1}
+\subsection{Introduction}
+\label{IV.20.0}
+
+Most of the concepts and results of \textsection\textsection20 and 21 directly relate to Chapter~I, and hardly depend on Chapters~I and IV, except for the occasional usage of the notion of depth and of a local regular ring (in \sref{IV.20.6}, \sref{IV.21.11}, \sref{IV.21.13}, and \sref{IV.21.15}), of Zariski's ``Main theorem'' in \sref{IV.20.4} and \sref{IV.21.12}, and the properties of transversely regular immersions in \sref{IV.20.6} and \sref{IV.21.15}.
+
+\oldpage[IV-4]{226}
+In \textsection20, we introduce several variants of the concept of a rational map, already studied in \sref[I]{I.7} from a point of view still fairly close to the classical point of view, and for this reason quite ill-suited to the case of not necessarily reduced preschemes.
+The notions and results of \textsection20 are used to develop in \textsection21 (n\textsuperscript{os}\sref{IV.21.1} and \sref{IV.21.7}) the general notion of a divisor and its most elementary properties.
+This notion is especially convenient when the local rings of the preschemes considered are Noetherian and integrally closed, and especially when they are also \emph{factorial} (\sref{IV.21.6} and \sref{IV.21.7}), because of its identification in the latter case with the notion of a \emph{$1$-codimensional cycle} (a linear combination of irreducible subpreschemes of codimension~$1$).
+In \sref{IV.21.9},  we determine the divisors on a Notherian prescheme of dimension~$1$ but not necessarily normal, which is useful for various applications.
+The \sref{IV.21.11} and \sref{IV.21.12} give two important theorems, due respectively to Auslander--Buchsbaum and Van der Waerden, and relate the notion of a factorial ring (the n\textsuperscript{os}\sref{IV.21.9}, \sref{IV.21.11}, and \sref{IV.21.12} are independent of each other).
+In the n\textsuperscript{os}\sref{IV.21.13} and \sref{IV.21.14}, also independent of the previous three, we study a useful variant of the notion of a local factorial ring, that of a local \emph{parafactorial} ring, which is introduce in particular~\cite{IV-41} in the development of comparison theorem of the Picard group of a projective prescheme $X$ over a field $k$ and a ``hyperplane section''.
+We will see in \sref{IV.21.14.1} (Ramanujam--Samuel theorem) that the local parafactorial rings are much more numerous than one would have expected \emph{a priori}.
+
+In \sref{IV.20.5}, \sref{IV.20.6}, and \sref{IV.21.15}, we review the previous notions but from a point of view ``relative'' to a fixed base prescheme.
+For the moment these notions are used only relatively rarely; in particular, the concept of a relative divisor is hardly used except when it comes to positive divisors, and in this case it is explained advantageously without the help of the notion of a relative meromorphic functions, using the notion of a transversely regular immersion of codimension~$1$.
+It will thereofore be advantageous to omit these sections on a first reading.
+
+\subsection{Meromorphic functions}
+\label{IV.20.1}
+
+\begin{env}[20.1.1]
+\label{IV.20.1.1}
+Let $(X,\sh{O}_X)$ be a ringed space, and let $\sh{S}$ be a subsheaf \emph{of sets} of $\sh{O}_X$.
+For every open $U$ of $X$, consider the \emph{ring of fractions} $\Gamma(U,\sh{O}_X)[\Gamma(U,\sh{S})^{-1}]$ (Bourbaki, \emph{Alg. comm.}, chap.~II, \textsection2, n\textsuperscript{o}1).
+It is immediate that the map $U\mapsto\Gamma(U,\sh{O}_X)[\Gamma(U,\sh{S})^{-1}]$ is a \emph{presheaf of rings} (\sref[0]{0.1.5.1} and \sref[0]{0.1.5.7}).
+We denote by $\sh{O}_X[\sh{S}^{-1}]$ the \emph{sheaf of rings} associated to this presheaf and we say that this is the \emph{sheaf of rings of fractions of $\sh{O}_X$ with denominators in $\sh{S}$};
+this is a \emph{flat} $\sh{O}_X$-module.
+It is immediate that for every $x\in X$, we have a canonical isomorphism
+\[
+\label{IV.20.1.1.1}
+  (\sh{O}_X[\sh{S}^{-1}])_x\isoto\sh{O}_x[\sh{S}_x^{-1}],
+  \tag{20.1.1.1}
+\]
+since the reasoning of \sref[0]{0.1.4.5} generalizes immediately in the case where we have an inductive system $(A_\alpha,\vphi_{\beta\alpha})$ of rings, and for each index $\alpha$ a subset $S_\alpha$ of $A_\alpha$ such that
+\oldpage[IV-4]{227}
+$\vphi_{\beta\alpha}(S_\alpha)\subset S_\beta$ for $\alpha\leq\beta$;
+we then take for $S$ the inductive limit in $A=\varinjlim A_\alpha$ of the inductive limit of the subsets $(S_\alpha)$.
+\end{env}
+
+\begin{env}[20.1.2]
+Now let $\sh{F}$ be an $\sh{O}_X$-module.
+We then set
+\[
+\label{IV.20.1.2.1}
+  \sh{F}[\sh{S}^{-1}]=\sh{F}\otimes_{\sh{O}_X}\sh{O}_X[\sh{S}^{-1}],
+  \tag{20.1.2.1}
+\]
+and we say that this is the \emph{sheaf of modules of fractions of $\sh{F}$ with denominators in $\sh{S}$};
+it is immedyare that it is associated to the presheaf of modules $U\mapsto\Gamma(U,\sh{F})[\Gamma(U,\sh{S})^{-1}]$, and that for every $x\in X$, we have a canonical isomorphism
+\[
+\label{IV.20.1.2.2}
+  (\sh{F}[\sh{S}^{-1}])_x\isoto\sh{F}_x[\sh{S}_x^{-1}].
+  \tag{20.1.2.2}
+\]
+\end{env}
+
+\begin{env}[20.1.3]
+\label{IV.20.1.3}
+We will focus here on the case where $\sh{S}$ is the subsheaf $\sh{S}(\sh{O}_X)$ of $\sh{O}_X$ such that for every open $U$, $\Gamma(U,\sh{S})$ is the \emph{set of regular elements} of the ring $\Gamma(U,\sh{O}_X)$;
+it is immediate that it is a sheaf (and not only a presheaf), the regularity of a section of $\sh{O}_X$ over $U$ being verified ``fibre by fibre'' (i.e. meaning that the germ of the section in $x$ is regular in $\sh{O}_X$ for all $x\in U$), in other words $\sh{S}(\sh{O}_X)_x$ is none other then the set of regular elements of $\sh{O}_{X,x}$.
+The corresponding sheaf of rings
+\[
+  \sh{M}_X=\sh{O}_X[\sh{S}^{-1}]
+\]
+is called the \emph{shead of germs of meromorphic functions on $X$}, and the sections of $\sh{M}_X$ over $X$ are called the \emph{meromorphic functions on $X$};
+they form a ring which we denote by $M(X)$.
+For every \emph{$\sh{O}_X$-module $\sh{F}$},
+\[
+  \sh{F}\otimes_{\sh{O}_X}\sh{M}_X=\sh{F}[\sh{S}^{-1}]
+\]
+is also denoted $\sh{M}_X(\sh{F})$ and called the \emph{sheaf of germs of meromorphic sections of $\sh{F}$};
+its sections over $X$ form an $M(X)$-module denoted by $M(X,\sh{F})$, whose elements are called \emph{meromorphic sections of $\sh{F}$ over $X$}.
+These definitions imply that for every open $U$ of $X$, we have a canonical isomorphism $\sh{M}_X(\sh{F})|U\isoto\sh{M}_U(\sh{F}|U)$, in particular $\sh{M}_X|U\isoto\sh{M}_U$.
+\end{env}
+
+\begin{env}[20.1.3.1]
+\label{IV.20.1.3.1}
+If $X$ is a \emph{reduced prescheme}, then we note that if an element $s\in\Gamma(U,\sh{O}_X)$ is such that $s_\xi\neq 0$ for every maximal point $\xi$ of $U$, then $s$ is \emph{regular}.
+Indeed, if $st=0$ for a $t\in\Gamma(U,\sh{O}_X)$, then we have $s_\xi t_\xi=0$, so $t_\xi=0$ since $\sh{O}_{X,\xi}$ is a field, and say that $t_\xi=0$ for every maximal point $\xi$ of $X$ means that $t=0$: we are immediately reduced to the case where $U$ is affine, and an element of a reduced ring which belongs to all the minimal prime ideals is zero by definition.
+The converse is true if the set of irreducible components of $X$ is \emph{locally finite}.
+We immediately reduce to the case where $X=\Spec(A)$ is affine;
+if $\mathfrak{p}_i$ ($1\leq i\leq n$) are the minimal prime ideals of $A$ and if $s\in\mathfrak{p}_i$ for an index $i$, then there exists $t\in A$ such that $t\in\mathfrak{p}_j$ for $j\neq i$ and $t\not\in\mathfrak{p}_i$ (Bournaki, \emph{Alg. comm.}, chap.~II, \textsection1, n\textsuperscript{o}1, Prop.~1);
+so we have $st\in\mathfrak{p}_i$ for all $i$, and as a result $st=0$ since $A$ is reduced;
+$s$ is therefore nonregular.
+\end{env}
+
+\begin{env}[20.1.4]
+\label{IV.20.1.4}
+For every open $U$ of $X$, the homomorphism $t\mapsto t/1$ from $\Gamma(U,\sh{O}_X)$ to $\Gamma(U,\sh{O}_X)[\Gamma(U,\sh{S})^{-1}]$ (which is none other than the \emph{total ring of fractions} of
+\oldpage[IV-4]{228}
+$\Gamma(U,\sh{O}_X)$) is injective;
+these homomorphisms thus define a \emph{canonical injective homomorphism}
+\[
+\label{IV.20.1.4.1}
+  i:\sh{O}_X\to\sh{M}_X
+  \tag{20.1.4.1}
+\]
+which allows us to indentify $\sh{O}_X$ with a subsheaf of $\sh{M}_X$.
+Given a meromorphic function $\vphi\in M(X)$, we say that $\vphi$ is \emph{defined} on an open $U$ of $X$ if $\vphi|U$ is a \emph{section of $\sh{O}_U$} over $U$;
+the axioms of sheaves show that there is, for a given section $\vphi$, a \emph{largest} open on which $\vphi$ is defined;
+we call this the \emph{domain of definition} of $\vphi$ and denote it by $\operatorname{dom}(\vphi)$.
+\end{env}
+
+\begin{env}[20.1.5]
+\label{IV.20.1.5}
+For every $\sh{O}_X$-module $\sh{F}$, we obtain from \sref{IV.20.1.4.1} a di-homomorphism consisting of $i$ and the homomorphism of sheaves of additive groups
+\[
+\label{IV.20.1.5.1}
+  1_\sh{F}\otimes i:\sh{F}\to\sh{M}_X(\sh{F})=\sh{F}\otimes_{\sh{O}_X}\sh{M}_X.
+  \tag{20.1.5.1}
+\]
+We note that the latter is not injective in general;
+when it is injective, we say that $\sh{F}$ is \emph{strictly torsion-free}: this means that for every open $U$ of $X$ and every section $s\in\Gamma(U,\sh{O}_X)$ which is a regular element in this ring the homothety $z\mapsto sz$ of $\Gamma(U,\sh{F})$ is injective;
+this condition is evidently satisfied if $\sh{F}$ is \emph{locally free}.
+\end{env}
+
+\begin{proposition}[20.1.6]
+\label{IV.20.1.6}
+Let $X$ be a locally Noetherian prescheme, $\sh{F}$ a quasi-coherent $\sh{O}_X$-module.
+For $\sh{F}$ to be strictly torsion-free, it is necessary and sufficient that $\operatorname{Ass}(\sh{F})\subset\operatorname{Ass}(\sh{O}_X)$.
+\end{proposition}
+ 
+\begin{proof}
+We immediately reduce to the case where $X=\Spec(A)$ is affine, $\sh{F}=\widetilde{M}$, and we know that the elements $s$ of $A$ belonging to an ideal of $\operatorname{Ass}(M)$ are exactly those for which the homothety $z\mapsto sz$ is not injective (Bourbaki, \emph{Alg. comm.}, chap.~IV, \textsection1, n\textsuperscript{o}1, cor.~2 of prop.~2).
+\end{proof}
+
+\begin{env}[20.1.7]
+\label{IV.20.1.7}
+If $u$ is a section of $\sh{M}_X(\sh{F})$ over $X$, then we say that $u$ is \emph{defined} at a point $x\in X$ if there exists an open neighborhood $V$ of $x$ in $X$ such that $u|V$ is the image of a section of $\sh{F}$ over $V$ under the di-homomorphism \sref{IV.20.1.5.1}.
+We say that $u$ is \emph{defined} on an open $U$ of $X$ if it is defined at every point in $U$;
+there is still a larger open in which $u$ is defined, called the \emph{domain of definition} of $u$ and denoted $\operatorname{dom}(u)$.
+When $\sh{F}$ is strictly torsion-free, such that $\sh{F}$ is identified by \sref{IV.20.1.5.1} with a subsheaf of $\sh{M}_X(\sh{F})$, then saying $u$ is defined on $U$ means that $u|V$ is a \emph{section of $\sh{F}$ over $U$}.
+\end{env}
+
+\begin{env}[20.1.8]
+\label{IV.20.1.8}
+In accordance with the general notation \sref[0\textsubscript{I}]{0.5.4.7}, we denote by $\sh{M}_X^*$ the sheaf of multiplicative groups such that $\Gamma(U,\sh{M}_X^*)$ is (for every open $U$ of $X$) the group of \emph{invertible elements} of $\Gamma(U,\sh{M}_X)$.
+THis sheaf is none other than the sheaf $\sh{S}(\sh{M}_X)$ defined in \sref{IV.20.1.3}: indeed, if $s\in\Gamma(U,\sh{S}(\sh{M}_X))$, then for every $x\in U$, there exists an open neighborhood $V\subset U$ of $x$ such that $s|V$ is a regular element in the \emph{total ring of fractions} of $\Gamma(V,\sh{O}_X)$, and we know that such an element is necessarily invertible in this ring of fractions.
+We say that the sections of $\sh{M}_X^*$ over $X$ are the \emph{regular meromorphic functions} (note that we are deviating here from the terminology followed by certain authors, who call ``regular'' meromorphic unctions those which are \emph{sections of $\sh{O}_X$}, identified with a subsheaf of $\sh{M}_X$).
+
+Let $\sh{L}$ be an \emph{invertible $\sh{O}_X$-module} \sref[0\textsubscript{I}]{0.5.4.1};
+then it is clear that $\sh{M}_X(\sh{L})=\sh{L}\otimes_{\sh{O}_X}\sh{M}_X$
+\oldpage[IV-4]{229}
+is an \emph{invertible $\sh{M}_X$-module}.
+Let $U$ be an open such that $\sh{L}|U$ is isomorphic to $\sh{O}_U$;
+as every automorphism of $\sh{M}_U$ is multiplication by an invertible element of $\Gamma(U,\sh{M}_X)$ \sref[0\textsubscript{I}]{0.5.4.7}, it is equivalent to say that a section $s\in\Gamma(U,\sh{M}_X(\sh{L}))$ has an invertible image in $\Gamma(U,\sh{M}_X)$ under \emph{an} isomorphism or by \emph{any} isomorphism on $\Gamma(U,\sh{M}_X)$;
+we say in this case that $s$ is a \emph{regular meromorphic section of $\sh{L}$} over $U$;
+a section $s$ of $\sh{L}$ over $X$ is called a \emph{regular meromorphic section of $\sh{L}$} if, for every open $U$ such that $\sh{L}|U$ is isomorphic to $\sh{O}_U$, $s|U$ is a regular meromorphic section of $\sh{L}$ over $U$.
+We denote by $(\sh{M}_X(\sh{L}))^*$ the subsheaf of $\sh{M}_X(\sh{L})$ such that for every open $U$, $\Gamma(U,(\sh{M}_X(\sh{L}))^*)$ is the set of regular meromorphic sections of $\sh{L}$ over $U$.
+Let $s$ be a meromorphic section of $\sh{L}$ over $X$ (i.e. a section of $\sh{M}_X(\sh{L})$);
+it defines a homomorphism $h_s:\sh{M}_X\to\sh{M}_X(\sh{L})$ which sends every section $t$ of $\sh{M}_X$ over an open $U$ to $(s|U)t$.
+It follows immediately from the above that for $s$ to be \emph{regular}, it is necessary and sufficient for $h_s$ to be \emph{injective}, and in fact $h_s$ is then a \emph{bijective} homomorphism from $\sh{M}_X$ to $\sh{M}_X(\sh{L})$, and its restriction to $\sh{M}_X^*$ is a bijection to $(\sh{M}_X(\sh{L}))^*$.
+We conclude that the homothety $t\mapsto ts$ is an isomorphism from $M(X)$ to $M(X,\sh{L})$.
+\end{env}
+
+\begin{env}[20.1.9]
+\label{IV.20.1.9}
+Let $s$ be a regular meromorphic section of an invertible $\sh{O}_X$-module $\sh{L}$ over $X$;
+then for every $\sh{O}_X$-module $\sh{F}$, $s$ similarly defines a homomorphism $h_s\otimes 1_\sh{F}:\sh{M}_X(\sh{F})\to\sh{M}_X(\sh{F}\otimes_{\sh{O}_X}\sh{L})$, which is again \emph{bijective}.
+\end{env}
+
+\begin{env}[20.1.10]
+\label{IV.20.1.10}
+Let $s$ be a meromorphic section of an invertible $\sh{O}_X$-module $\sh{L}$ over $X$;
+for $s$ to be regular, it is necessary and sufficient for there to exists a meromorphic section $s'$ of $\sh{L}^{-1}$ over $X$ such that the canonical image of $s\otimes s'$ in $\sh{M}_X$ \sref[0\textsubscript{I}]{0.5.4.3} is the unit section, and this section $s'$ is then unique: indeed, the necessity of the local existence of such a section is evident, and its local uniqueness implies its global (and unique) existence;
+moreover, the existence of $s'$ is trivially sufficient for $s$ to be regular.
+We will take $s'=s^{-1}$.
+
+Finally, if $\sh{L}'$ is a second invertible $\sh{O}_X$-module, $s$ (resp. $s'$) a regular meromorphic section of $\sh{L}$ (resp. $\sh{L}'$) over $X$, then $s\otimes s'$ is evidently a regular meromorphic section of $\sh{L}\otimes\sh{L}'$ over $X$.
+\end{env}
+
+\begin{env}[20.1.11]
+\label{IV.20.1.11}
+If $f:X'\to X$ is a morphism of ringed spaces, then there is in general no natural map sending a meromorphic function on $X$ to a meromorphic function on $X$'.
+For example, if $X$ is the spectrum of a local integral domain $A$, $X'$ its residue field $\kres$, then there is no natural homomorphism from the field of fractions $K$ of $A$ to $\kres$, and we can only send an element of $K$ to an element of $\kres$ if it is already in $A$.
+
+In general, if $f=(\psi,\theta)$, then for every open $U$ of $X$, denote by $\sh{S}_f(U)$ the set of \emph{regular} sections $s\in\Gamma(U,\sh{O}_X)$ such that the image of $s$ under
+\[
+  \Gamma(\theta^\#):\Gamma(U,\sh{O}_X)\to\Gamma(f^{-1}(U),\sh{O}_{X'})
+\]
+is a \emph{regular} section.
+It is immediate that $U\mapsto\sh{S}_f(U)$ is a \emph{subsheaf} of the sheaf of sets $\sh{S}(\sh{O}_X)$, which we denote by $\sh{S}_f$.
+We set $\sh{M}_f=\sh{O}_X[\sh{S}_f^{-1}]$;
+this is a subsheaf
+\oldpage[IV-4]{230}
+of rings of $\sh{M}_X$, and we canonically obtain from $\theta^\#:\psi^*(\sh{O}_X)\to\sh{O}_{X'}$ a homomorphism of sheaves of rings $\theta^{\prime\#}:\psi^*(\sh{M}_f)\to\sh{M}_{X'}$ extending $\theta^\#$ (Bourbaki, \emph{Alg. comm.}, chap.~II, \textsection2, n\textsuperscript{o}1, prop.~2);
+hence, recalling that $f^*(\sh{M}_f)=\psi^*(\sh{M}_f)\otimes_{\psi^*(\sh{O}_X)}\sh{O}_{X'}$,
+we get a canonical homomorphism of $\sh{O}_{X'}$-algebras
+\[
+\label{IV.20.1.11.1}
+  f^*(\sh{M}_f)\to\sh{M}_{X'}.
+  \tag{20.1.11.1}
+\]
+For every meromorphic function $\vphi$ on $X$ that \emph{is a section of $\sh{M}_f$}, $\Gamma(\theta^{\prime\#})(\vphi)$ is a meromorphic function on $X'$, called the \emph{inverse image of $\vphi$ under $f$}, and denoted by $\vphi\circ f$ is there is no cause for confusion.
+
+Similarly, if $\sh{F}$ is an $\sh{O}_X$-module, then we set $\sh{M}_f(\sh{F})=\sh{F}\otimes_{\sh{O}_X}\sh{M}_f$, and we immediately obtain from $\theta^{\prime\#}$ a canonical homomorphism (which is also written as $u\mapsto u\circ f$)
+\[
+  \Gamma(X,\sh{M}_f(\sh{F}))\to\Gamma(X',\sh{M}_{X'}(f^*(\sh{F}))).
+\]
+In addition, if $u\in\Gamma(X,\sh{M}_f(\sh{F}))$ is defined \sref{IV.20.1.7} at a point $x$, then $u$ coincides, on a neighborhood $U$ of $x$, with a section of the form $\sum_i h_i\otimes(t_i/s_i)$, where the $h_i$ belong to $\Gamma(U,\sh{F})$, the $t_i$ to $\Gamma(U,\sh{O}_X)$, and the $s_i$ to $\Gamma(U,\sh{S}_f)$.
+As by hypothesis the images of the $s_i$ in $\Gamma(f^{-1}(U),\sh{O}_{X'})$ are regular, we see that $u\circ f$ is defined at every point of $f^{-1}(U)$;
+in other words, we have
+\[
+\label{IV.20.1.11.2}
+  f^{-1}(\operatorname{dom}(u))\subset\operatorname{dom}(u\circ f).
+  \tag{20.1.11.2}
+\]
+We will see later \sref{IV.20.6.5}[(i)] examples (with $\sh{F}=\sh{O}_X$) where the two sides of \sref{IV.20.1.11.2} can be different.
+
+Consider in particular the case where $\sh{M}_f=\sh{M}_X$;
+then, if $\sh{L}$ is an invertible $\sh{O}_X$-module, the image in $\sh{M}_{X'}(f^*(\sh{L}))$, under $\Gamma(\theta^{\prime\#})$, of a \emph{regular} meromorphic section of $\sh{L}$ over $X$ \sref{IV.20.1.8} is a \emph{regular} meromorphic section of $f^*(\sh{L})$ over $X'$, as it follows immediately from the definition of its sections, and from the fact that a homomorphism of rings sends an invertible element to an invertible element.
+
+Let $f':X''\to X'$ be a second morphism of ringed spaces, and suppose that $\sh{M}_f=\sh{M}_X$ and $\sh{M}_{f'}=\sh{M}_{X'}$;
+then, if we set $f''=f\circ f'$, we also have $\sh{M}_{f''}=\sh{M}_X$, and we immediately see that for every meromorphic section $u$ of $\sh{F}$ over $X$, we have $u\circ f''=(u\circ f)\circ f'$.
+\end{env}
+
+\begin{proposition}[20.1.12]
+\label{IV.20.1.12}
+If the morphism $f:X'\to X$ is flat \sref[0\textsubscript{I}]{0.6.7.1}, then we have $\sh{M}_f=\sh{M}_X$, and the homomorphism $\vphi\mapsto\vphi\circ f$ is defined on all of $M(X)$.
+In addition, if $f$ is a (flat) morphism of locally ringed spaces, then we have $\operatorname{dom}(\vphi\circ f)=f^{-1}(\operatorname{dom}(\vphi))$;
+if in addition $f$ is surjective (thus faithfully flat), then the homomorphism $\vphi\mapsto\vphi\circ f$ is injective.
+\end{proposition}
+
+\begin{proof}
+The first assertion follows from the fact that, if $B$ is an $A$-algebra which is a flat $A$-module, then every element of $A$ not a divisor of $0$ in $A$ is not a divisor of $0$ in $B$ \sref[0\textsubscript{I}]{0.6.3.4}.
+To prove the other assertions, note that, for every $x'\in X'$, if $x=f(x')$, then $\sh{O}_{X',x'}$ is a flat $\sh{O}_{X,x}$-module, and as the homomorpism $\sh{O}_{X,x}\to\sh{O}_{X',x'}$ is \emph{local} by hypothesis, it is injective (\sref[0\textsubscript{I}]{0.6.5.1} and \sref[0\textsubscript{I}]{0.6.6.2});
+if we set $A=\sh{O}_{X,x}$, $B=\sh{O}_{X',x'}$, such that $A$ identifies with a subring of $B$, then $(f^*(\sh{M}_X))_{x'}$ is equal to $S^{-1}A\otimes_A B=S^{-1}B$, where $S$ is the set of regular elements of $A$, $(\sh{M}_{X'})_{x'}$ is equal to $T^{-1}B$, where $T$ is the set
+\oldpage[IV-4]{231}
+of regular elements of $B$, and as we have seen that $S\subset T$, the homomorphism $S^{-1}B\to T^{-1}B$ is injective;
+in other words, this proves that the homomorphism \sref{IV.20.1.11.1} $f^*(\sh{M}_X)\to\sh{M}_{X'}$ is \emph{injective} (hence the last assertion of the statement).
+The quotient $f^*(\sh{M}_X)/\sh{O}_{X'}$ identifies with a $\sh{O}_{X'}$-submodule of $\sh{M}_{X'}/\sh{O}_{X'}$, and $(f^*(\sh{M}_X)/\sh{O}_{X'})_{x'}$ identifies with $(\sh{M}_X/\sh{O}_X)_x\otimes_{\sh{O}_{X,x}}\sh{O}_{X',x'}$.
+Then suppose that $x\not\in\operatorname{dom}(\vphi)$;
+the image of $\vphi_x$ in $(\sh{M}_X/\sh{O}_X)_x$ is therefore $\neq 0$;
+by faithful flatness, we deduce that that it is the same for the image of $(\vphi\circ f)_{x'}$, so $x'\not\in\operatorname{dom}(\vphi\circ f)$, which finishes the proof.
+\end{proof}
+
+\begin{remark}[20.1.13]
+\label{IV.20.1.13}
+Let $X$ be a \emph{reduced} complex analytic space;
+then the notion of a meromorphic function on $X$ defined above coincides with the usual notion.
+Consider on the other hand a prescheme $Y$, locally of finite type over the field $\bb{C}$;
+we then know that we can associate to $Y$ an analytic space $Y^\mathrm{an}$ having the same underlying topological space, and the canonical morphism $f:Y^\mathrm{an}\to Y$ is \emph{flat}~\cite{IV-37};
+by virtue of \sref{IV.20.1.12}, the canonical homomorphism $u\mapsto u\circ f$ from $M(Y)$ to $M(Y^\mathrm{an})$ is therefore always defined and is injective;
+but it is not \emph{surjective} in general.
+For example, when $Y=\bb{V}_0^r$ (\textbf{Err}\textsubscript{\textbf{III}},~14) is the affine space of dimension~$r$ over $\bb{C}$, $M(Y)$ canonically identifies with the field $R(Y)$ of rational functions on $Y$ \sref{IV.20.2.13}[(i)], while $M(Y^\mathrm{an})$ is the field of usual meromorphic functions on $\bb{C}^r$.
+Because of this fact, it is often preferable, in algebraic geometry, to abstain from the terminology introduced in this section, and to use the equivalent terminology of ``pseudo-function'' which will be defined below.
+\end{remark}
+
+\subsection{Pseudo-morphisms and pseudo-functions}
+\label{IV.20.2}
 
