@@ -876,7 +876,7 @@ Also note that the $d_{X/S}^n$ makes a polynomial $F(T_1, \dots, T_m)$ correspon
 \begin{proposition}[16.4.11]
 \label{IV.16.4.11}  
 Let $f:X \to S$ be a morphism, $g: S \to X$ a $S$-section of $X$, $S^{(n)}$ the n'th infinitesimal neighborhood of $S$ by the immersion $g$ \sref{IV.16.1.2}.
-Then it exists one and only one morphism of $\sh{O}_S$-algebras
+Then it exists one and only one isomorphism of $\sh{O}_S$-algebras
 \[
   \label{IV.16.4.11.1}
   \bar\omega_n: g^*(\sh{P}_{X/S}^n) \to \sh{O}_{S_g^{(n)}}
@@ -930,7 +930,7 @@ The uniqueness of $\bar\omega_n$ then follows since the image of $\sh{O}_X$ by $
 \begin{corollary}[16.4.12]
 \label{IV.16.4.12}
 Let $k$ be a field, $X$ a $k$-prescheme, $x$ a point of $X$ rational over $k$.
-Then $(\sh{P}_{X/S}^n)_x \otimes_{\sh{O}_x} \kres(x)$ is canonically isomorphic (as an augmented $\kres(x)$-algebra) to $\sh{O}_x/\mathfrak{m}^{n+1}$.
+Then $(\sh{P}_{X/S}^n)_x \otimes_{\sh{O}_x} \kres(x)$ is canonically isomorphic (as an augmented $\kres(x)$-algebra) to $\sh{O}_x/\mathfrak{m}_x^{n+1}$.
 \end{corollary}
 
 \begin{proof}
@@ -987,7 +987,7 @@ It evidently suffices to define canonical isomorphisms
 	\tag{16.4.15.2}
 \]
 that is to say that we're back to the case there $\rho(R)$ is formed of invertible elements of $B$.
-But then the isomorphism \sref{IV.16.4.15.2} is simply deduced from the canonical isomorphism $B \otimes_A B \to B \otimes_{R^{-1}} B$ by passing to the quotient \sref[I]{I.1.5.3}.
+But then the isomorphism \sref{IV.16.4.15.2} is simply deduced from the canonical isomorphism $B \otimes_A B \to B \otimes_{R^{-1}A} B$ by passing to the quotient \sref[I]{I.1.5.3}.
 \end{proof}
 
 \begin{corollary}[16.4.16]
@@ -1016,7 +1016,7 @@ Then, for every integer $n$, the homomorphism of $K[U_1, \dots, U_r]$ ($U_i$ ind
 \end{corollary}
 
 \begin{proof}
-This results from \sref{IV.16.4.8} and \sref{IV.16.4.14}, where we make $A = k$, $B = k[T_1, \dots, T_r]$ and $S = B \setmin \{ 0 \}$.
+This results from \sref{IV.16.4.8}, \sref{IV.16.4.10}  and \sref{IV.16.4.14}, where we make $A = k$, $B = k[T_1, \dots, T_r]$ and $S = B \setmin \{ 0 \}$.
 \end{proof}
 
 One thus recover the fact that the $dT_i$ form a basis of the $K$-vector space $\Omega_{K/k}^1$ \sref[0]{20.5.10}.
