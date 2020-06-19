@@ -1200,3 +1200,115 @@ We immediately generalize \sref{IV.16.4.23} to the case of a product of any fini
 \end{enumerate}
 \end{remarks}
 
+\subsection{Relative tangent sheaves and bundles; derivations.}
+\label{IV.16.5}
+
+\begin{env}[16.5.1]
+\label{IV.16.5.1}
+Let $f = (\psi, \theta):X \to S$ be a morphism of ringed spaces.
+For every $\sh{O}_X$-module $\sh{F}$, we call $S$-\emph{derivation} (or $(X/S)$-derivation, or $f$-derivation) of $\sh{O}_X$ to $\sh{F}$ every homomorphism of \emph{sheaves of additive groups} $D: \sh{O}_X \to \sh{F}$, verifying the following conditions:
+\begin{enumerate}
+  \item[\rm{(a)}] for every open set $V$ of $X$, and all pair of sections $(t_1, t_2)$ of $\sh{O}_X$ over $V$, we have
+  \[
+    \label{IV.16.5.1.1}
+    D(t_1t_2) = t_1D(t_2) + D(t_1)t_2;
+    \tag{16.5.1.1}
+  \]
+  \item[\rm{(b)}] for every open set $V$ of $X$, every section $t$ of $\sh{O}_X$ over $V$ and every section $s$ of $\sh{O}_S$ over an open set $U$ of $S$ such that $V \subset f^{-1}(U)$, we have
+  \[
+    \label{IV.16.5.1.2}
+    D((s|V)t) = (s|V)D(t).
+    \tag{16.5.1.2}
+  \]
+\end{enumerate}
+It is clear that this amounts to saying that, for all $x \in X$, the homomorphism of additive groups $D_x:\sh{O}_x \to \sh{F}_x$ is an $\sh{O}_{f(x)}$-derivation.
+
+Another interpretation consists in considering the $\sh{O}_X$-algebra $\sh{D}_{\sh{O}_X}(\sh{F})$ equal to $\sh{O}_X \oplus \sh{F}$, the algebra structure being defined by the condition that for every open set $V$ of $X$, the product of two sections of $\sh{O}_X$ (resp. of a section of $\sh{O}_X$ and a section of $\sh{F}$) over $V$ is defined by the ring structure of $\Gamma(V, \sh{O}_X)$ (resp. the $\Gamma(V, \sh{O}_X)$-module structure on $\Gamma(V, \sh{F})$), and the product of two sections of $\sh{F}$ over $V$ is chosen to be zero;
+then $\sh{F}$ is an ideal of $\sh{D}_{\sh{O}_X}(\sh{F})$, kernel of the canonical augmentation $\sh{D}_{\sh{O}_X}(\sh{F}) \to \sh{O}_X$, and to say that $D$ is an $S$-derivation of $\sh{O}_X$ in $\sh{F}$ means that $1_{\sh{O}_X} + D$ is an $\sh{O}_S$-homomorphism of algebras from $\sh{O}_X$ into $\sh{D}_{\sh{O}_X}(\sh{F})$, which, composed with the augmentation, gives $1_{\sh{O}_X}$.
+
+The $S$-derivations of $\sh{O}_X$ in $\sh{F}$ clearly form a $\Gamma(X, \sh{O}_X)$-module $\Der_{\sh{O}_S}(\sh{O}_X, \sh{F})$.
+
+When $\sh{F} = \sh{O}_X$, an $S$-derivation of $\sh{O}_X$ to itself is simply called an $S$-derivation of $\sh{O}_X$.
+\end{env}
+
+\begin{proposition}[16.5.2]
+\label{IV.16.5.2}
+Let $A$ be a ring, $B$ an $A$-algebra, $L$ a $B$-module;
+let $S = \Spec(A)$, $X=\Spec(B)$, $\sh{F} = \widetilde{L}$.
+Then the mapping $D \mapsto \Gamma(D)$ which, to every $S$-derivation $D$ of $\sh{O}_X$ to $\sh{F}$ gives us the mapping $\Gamma(D): t \mapsto D(t)$ of $B$ to $L$, is an isomorphism of $B$-modules of $\Der_S(\sh{O}_X, \sh{F})$ onto $\Der_A(B, L)$ (cf. \sref[0]{0.20.1.2}).
+\end{proposition}
+
+\begin{proof}
+This results immediately from the given interpretation of $S$-derivations in terms
+\oldpage[IV-4]{28}
+of homomorphisms of algebras, analogous to the interpretation given in \sref[0]{0.20.1.6}, and of the canonical correspondence between homomorphisms of $\sh{O}_X$-algebras and homomorphisms of $B$-algebras ( \sref[I]{I.1.3.13} and  \sref[I]{I.1.3.8}).
+\end{proof}
+
+\begin{proposition}[16.5.3]
+\label{IV.16.5.3}
+Let $f = (\psi, \theta): X \to S$ be a morphism of preschemes.
+\begin{enumerate}
+  \item[\rm{(i)}] The differential $d_{X/S}:\sh{O}_X \to \Omega_{X/S}^1$ \sref{IV.16.3.6} is an $S$-derivation.
+  \item[\rm{(ii)}] For every $\sh{O}_X$-module $\sh{F}$, the mapping $u \mapsto u \circ d_{X/S}$ is an isomorphism of $\Gamma(X, \sh{O}_X)$-modules
+  \[
+    \label{IV.16.5.3.1}
+    \Hom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{F}) \xrightarrow\sim \Der_S(\sh{O}_X, \sh{F}).
+    \tag{16.5.3.1}
+  \]
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The assertion \rm{(i)} has already been noted \sref{IV.16.3.6}.
+On the other hand, it is immediate (in light of \sref[0]{0.20.4.8}) that $u \mapsto u\circ d_{X/S}$ is injective, considering considering the restrictions to a fiber $\sh{O}_x$ of the two members and \sref{IV.16.4.16.2}.
+To see that the homomorphism \sref{IV.16.5.3.1} is surjective, consider an $S$-derivation $D: \sh{O}_X \to \sh{F}$;
+for every affine open $V = \Spec(B) $ of $X$, such that $f(V)$ is contained in  an affine open $U = \Spec (A)$ of $S$, $D_V:B \to \Gamma(V, \sh{F}) $ is an $A$-derivation, and therefore there exists a \emph{unique} $B$-homomorphism $u_V:\Omega_{B/A}^1 \to \Gamma(V, \sh{F})$ such that $D_V = u_V \circ d_{B/A}$ \sref[0]{0.20.4.8};
+also, the uniqueness of the $u_V$ shows immediately that for an affine open $W \subset V$ we have $u_W = u_V|W$, and therefore the $u_V$ define a homomorphism of $\sh{O}_X$-modules $u:\sh{O}_X \to \sh{F}$ answering the question.
+\end{proof}
+
+\begin{env}[16.5.4]
+\label{IV.16.5.4}
+With the notations of \sref{IV.16.5.1}, for every open set $U$ of $X$, $\Der_S(\sh{O}_U, \sh{F}|U)$ is a $\Gamma(U, \sh{O}_X)$-module and it is cleat that the application $U \mapsto \Der_S(\sh{O}_U, \sh{F}|U)$ is a presheaf;
+in fact, it is even a \emph{sheaf} (and therefore an $\sh{O}_X$-module), in light of the pointwise characterization of $S$-derivations, seen in \sref{IV.16.5.1}.
+This $\sh{O}_X$-module is denoted by $\shDer_S(\sh{O}_X, \sh{F})$ and is called the \emph{sheaf of $S$-derivations of $\sh{O}_X$ in $\sh{F}$}, and what we've come to see is further expressed in the following corollary:
+\end{env}
+
+\begin{corollary}[16.5.5]
+\label{IV.16.5.5}
+For every $\sh{O}_X$-module $\sh{F}$, the homomorphism of $\sh{O}_X$-modules deduced from $d\mapsto u \circ d_{X/S}$
+\[
+  \label{IV.16.5.5.1}
+  \shHom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{F}) \to \shDer_S(\sh{O}_X, \sh{F})
+  \tag{16.5.5.1}
+\]
+is bijective.
+\end{corollary}
+
+
+\begin{corollary}[16.5.6]
+\label{IV.16.5.6}
+\begin{enumerate}
+  \item[(i)] If the morphism $f:X \to S$ is locally of finite presentation and if $\sh{F}$ is a quasi-coherent $\sh{O}_X$-module, then $\shDer_S(\sh{O}_X, \sh{F})$ is a quasi-coherent $\sh{O}_X$-module.
+  \item[(ii)] If $S$ is also locally Noetherian and if $\sh{F}$ is quasi-coherent, then $\shDer_S(\sh{O}_X, \sh{F})$ is a coherent $\sh{O}_X$-module.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+The assertion (i) follows from the isomorphism \sref{IV.16.5.5.1}, from \sref{IV.16.4.22} and \sref[I]{I.3.12};
+the assertion (ii) follows from \sref[0]{0.5.3.5}.
+\end{proof}
+
+\begin{env}[16.5.7]
+\label{IV.16.5.7}
+We put
+\[
+  \label{IV.16.5.7.1}
+  \mathfrak{G}_{X/S} = \shHom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{O}_X) = \shDer_S(\sh{O}_X, \sh{O}_X)
+  \tag{16.5.7.1}  
+\]
+and say that it is the \emph{sheaf of $S$-derivations of $\sh{O}_X$}, or even the \emph{tangent sheaf of $X$ relative to $S$}:
+it is therefore the dual of the $\sh{O}_X$-module $\Omega_{X/S}^1$.
+If $f$ is locally of finite
+\oldpage[IV-4]{29}
+presentation, $\mathfrak{G}_{X/S}$ is a quasi-coherent $\sh{O}_X$-module; if also $S$ is locally Noetherian, $\mathfrak{G}_{X/S}$ is coherent \sref{IV.16.5.6}.
+\end{env}
