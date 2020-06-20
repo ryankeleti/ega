@@ -1312,3 +1312,164 @@ If $f$ is locally of finite
 \oldpage[IV-4]{29}
 presentation, $\mathfrak{G}_{X/S}$ is a quasi-coherent $\sh{O}_X$-module; if also $S$ is locally Noetherian, $\mathfrak{G}_{X/S}$ is coherent \sref{IV.16.5.6}.
 \end{env}
+
+\begin{env}[16.5.8]
+\label{IV.16.5.8}
+Suppose in particular that $\Omega_{X/S}^1$ is a \emph{locally free} $\sh{O}_X$-module (of finite rank) (which will be the case then $f$ is smooth \sref{IV.17.2.3});
+then $\mathfrak{G}_{X/S}$ is locally free $\sh{O}_X$-module of same rank as $\Omega_{X/S}^1$ at each point.
+More specifically, suppose that $\Omega_{X/S}^1$ is of rank $n$ at a point $x$;
+then there are $n$ sections $s_i$ ($1 \leq i \leq n$) of $\sh{O}_X$ over an affine neighborhood $U$ of $x$ such that the canonical images of the $ds_i$ in $\Omega_{X/S}^1 \otimes \kres(x)$ form a basis if this $\kres(x)$-vector space;
+in virtue of Nakayama's lemma, the germs $(ds_i)_x = d(s_i)_x$ of the $ds_i$ at the point $x$ form a basis of the $\sh{O}_x$-module $(\Omega_{X/S}^1)_x$, and therefore, restricting $U$, we can suppose that the $ds_i$ form a \emph{basis} of the $\Gamma(U, \sh{O}_X)$-module $\Gamma(U, \Omega_{X/S}^1)$.
+So the $\Gamma(U, \sh{O}_X)$-module $\Gamma(U, \mathfrak{G}_{X/S})$ is dual to the above;
+and we denote $(D_i)_{1 \leq i \leq n}$ or $(\frac{\partial}{\partial s_i})_{1 \leq i \leq n}$ the dual basis of $(ds_i)_{1 \leq i \leq n}$, so that, by \sref{IV.16.5.3}, we have
+\[
+  \label{IV.16.5.8.1}
+  D_i s_j = \langle D_i, ds_j \rangle = \langle \frac{\partial}{\partial s_i}, ds_j \rangle = \delta_{ij} \quad \text{(Kronecker's symbol)}.
+  \tag{16.5.8.1}
+\]
+Every $\Gamma(S, \sh{O}_S)$-derivation of the $\Gamma(S, \sh{O}_S)$-algebra $\Gamma(U, \sh{O}_X)$ is written in an unique way as 
+\[
+  D = \sum_{i = 1}^n a_i D_i = \sum_{i = 1}^n a_i \frac{\partial}{\partial s_i}
+\] 
+where the $a_i$ ($1 \leq i \leq n$) are sections of $\sh{O}_X$ over $U$.
+For every section $g \in \Gamma(U, \sh{O}_X)$, if we put $dg = \sum_{i = 1}^n c_i ds_i$, we have $c_i = \langle D_i, dg \rangle = D_i g$ in virtue of \sref{IV.16.5.8.1}, in other words
+\[
+  \label{IV.16.5.8.2}
+  dg = \sum_{i = 1}^n (D_i g) ds_i = \sum_{i = 1}^n \frac{\partial g}{\partial s_i} ds_i.
+  \tag{16.5.8.2}
+\]
+\end{env}
+
+\begin{env}[16.5.9]
+\label{IV.16.5.9}
+Let $D_1$, $D_2$ be two $S$-derivations of $\sh{O}_X$. 
+For every open set $U$ of $X$, if $D_1^U$, $D_2^U$ are the corresponding derivations on the ring $\Gamma(U, \sh{O}_X)$, the \emph{bracket}
+\[
+  [D_1^U, D_2^U] = D_1^U \circ D_2^U - D_2^U \circ D_1^U
+\]
+is a derivation in this ring, and therefore the $\psi^*(\sh{O}_S)$-endomorphism of $\sh{O}_X$
+\[
+  \label{IV.16.5.9.1}
+  [D_1, D_2] = D_1 \circ D_2 - D_2 \circ D_1
+  \tag{16.5.9.1}
+\]
+is also an $S$-derivation;
+since one verifies immediately the Jacobi identity, we have thus defined on $\Der_S(\sh{O}_X, \sh{O}_X)$ a \emph{$\Gamma(S, \sh{O}_S)$-Lie algebra} structure.
+Since the definition of this structure commutes with the restriction to an open set of $X$, we thus see that $\mathfrak{G}_{X/S}$ is canonically endowed with a \emph{ $\psi^*(\sh{O}_S)$-Lie algebra} structure.
+Note that the mapping $(D_1, D_2) \mapsto [D_1, D_2]$ is \emph{not $\Gamma(X, \sh{O}_X)$-bilinear}.
+\end{env} 
+
+\begin{env}[16.5.10]
+\label{IV.16.5.10}
+For every base change $g:S' \to S$, putting $X' = X \times_S S'$, we see \sref{IV.16.4.5} that we have a canonical isomorphism
+\[
+  \label{IV.16.5.10.1}
+  \Omega_{X/S}^1 \otimes_S S' \xrightarrow{\sim} \Omega_{X'/S'}^1
+  \tag{16.5.10.1}
+\]
+\oldpage[IV-4]{30}  
+from where we deduce, by \sref{IV.16.5.10.1}, a canonical homomorphism (Bourbaki, \emph{Alg.}, chap.~II, 3rd ed. , \textsection5, no 3)
+\[
+  \label{IV.16.5.10.2}
+  \mathfrak{G}_{X/S} \otimes_{\sh{O}_S} \sh{O}_{S'} \to \mathfrak{G}_{X'/S'} 
+  \tag{16.5.10.2}
+\]
+which is neither injective nor surjective in general.
+However:
+\end{env}
+
+\begin{proposition}[16.5.11]
+\label{IV.16.5.11}
+\begin{enumerate}
+  \item[\rm{(i)}] If $g:S' \to S$ is a flat morphism and if $f$ is locally of finite type (resp. locally of finite presentation), the homomorphism \sref{IV.16.5.10.2} is injective (resp. bijective).
+  \item[\rm{(ii)}] If $\Omega_{X/S}^1$ is a locally free $\sh{O}_X$-module of finite rank, the homomorphism \sref{IV.16.5.10.2} is bijective.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Indeed, the assertion \rm{(ii)} follows from Bourbaki, \emph{Alg.}, chap.~II, 3rd ed. , \textsection5, no 3, prop. 7.
+The assertion \rm(i) results similarly from Bourbaki, \emph{Alg. Comm.}, chap.~I, \textsection2, no 10, prop. 11 and of the fact that if $f$ is locally of finite type (resp. locally of finite presentation) $\Omega_{X/S}^1$ is a finite type (resp. finite presentation) $\sh{O}_X$-module \sref{IV.16.3.9} \sref{IV.16.4.22}. 
+\end{proof}
+
+\begin{env}[16.5.12]
+\label{IV.16.5.12}
+Since $\Omega_{X/S}^1$ is a quasi-coherent $\sh{O}_X$-module, we can consider the vector bundle over $X$ defined by $\Omega_{X/S}^1$ \sref[II]{II.1.7.8}
+\[
+  \label{IV.16.5.12.1}
+  T_{X/S} = \bb{V}(\Omega_{X/S}^1)
+  \tag{16.5.12.1}
+\]
+which is called the \emph{tangent bundle of $X$ relative to $S$}.
+We have therefore a canonical bijection \sref[II]{II.1.7.9}
+\[
+  \Gamma(T_{X/S}/S) \xrightarrow{\sim} \Hom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{O}_X) = \Gamma(X, \mathfrak{G}_{X/S})
+\]
+by definition of $\mathfrak{G}_{X/S}$, and we can replace $X$ by an open set $U$ of $X$ in this isomorphism;
+so we can say that the \emph{tangent sheaf} of $X$ relative to $S$ is isomorphic to the \emph{sheaf of germs of $S$-sections} of the tangent bundle of $X$ relative to $S$.
+If $f:X \to Y$ is an $S$-morphism, we saw \sref{IV.16.4.19} that we have a canonical homomorphism $f_{X/Y/S}:f^*(\Omega_{Y/S}^1) \to \Omega_{X/S}^1$, which, having in mind that
+\[
+  \bb{V}(f^*(\Omega_{Y/S}^1)) = \bb{V}(\Omega_{Y/S}^1) \times_Y X \quad \text{\sref[II]{II.1.7.11} },
+\]
+gives us an $X$-morphism $T_{X/S}(f): T_{X/S} \to T_{Y/S} \times_Y X$.
+If $g:Y \to Z$ is a second $S$-morphism, we have $T_{X/S}(g \circ f) = (T_{Y/S}(g) \times 1_X ) \circ T_{X/S}(f)$ \sref[0]{0.20.5.4.1}.
+
+It results from \sref{IV.16.5.10.1} and from \sref[II]{II.1.7.11} that for every base change $g:S' \to S$ we have a canonical morphism
+\[
+  \label{IV.16.5.12.2}
+  T_{X'/S'} \xrightarrow{\sim} T_{X/S} \times_S S' = T_{X/S} \times_X X'.
+  \tag{16.5.12.2}
+\]
+\end{env}
+
+\begin{env}[16.5.13]
+\label{IV.16.5.13}
+For every point $x \in X$, we define the \emph{tangent space of $X$ at the point $x$} (relative to $S$) to be the set of points in the fiber $T_{X/S} \times_X \Spec(\kres(x))$ that are \emph{rational over $\kres(x)$}, that is the set
+\[
+  \label{IV.16.5.13.1}
+  T_{X/S}(x) = \Hom_{\kres(x)}(\Omega_{X/S}^1 \otimes_{\sh{O}_x} \kres(x), \kres(x))
+  \tag{16.5.13.1}
+\]
+which is the dual of the $\kres(x)$-vector space $\Omega_{\sh{O}_x/\sh{O}_s}^1/\mathfrak{m}_x.\Omega_{\sh{O}_x/\sh{O}_s}^1$.
+When $\Omega_{X/S}^1$ is a finite type $\sh{O}_X$-module, then $T_{X/S}$ is a vector space of finite rank over $\kres(x)$, and for every base change
+\oldpage[IV-4]{31}
+$g:S \to S'$, and every $x' \in X' = X \times_S S'$ over $x$, we have a canonical isomorphism
+\[
+  \label{IV.16.5.13.2}
+  T_{X'/S'}(x') \xrightarrow\sim T_{X/S} \otimes_{\kres(x)} \kres(x').
+  \tag{16.5.13.2}
+\]
+If $x$ is \emph{rational} over $\kres(s)$, where $s = f(x)$ (so that $\kres(s) \to \kres(x)$ is an isomorphism), it results from \sref{IV.16.4.13} that we have a canonical isomorphism
+\[
+  \label{IV.16.5.13.3}
+  T_{X/S}(x) = T_{X_s/\kres(s)}(x) = \Hom_{\kres(s)}(\mathfrak{m}'_x/\mathfrak{m}_x^{'2}, \kres(x))
+  \tag{16.5.13.3}
+\]
+where $\mathfrak{m}'_x$ is the maximal ideal of $\sh{O}_{X_s,x} = \sh{O}_{X, x}/\mathfrak{m}_s \sh{O}_{X,x}$.
+When $S$ is the spectrum of a field $k$, we recover the definition of Zariski tangent space of a point $x \in X$ \emph{rational over $k$} as the dual of $\mathfrak{m}_x / \mathfrak{m}_x^2$.
+
+Let $Y$ be a second $S$-prescheme and let $g:Y \to X$ be an $S$-morphism;
+then we have a canonical morphism of $\sh{O}_Y$-modules \sref{IV.16.4.19}
+\[
+  \label{IV.16.5.13.4}
+  g_{Y/X/S}: g^*(\Omega_{X/S}^1) \to \Omega_{Y/S}^1.
+  \tag{16.5.13.4}
+\]
+Now note that if $y \in Y$ and $x = g(y)$, we have
+\[
+  g^*(\Omega_{X/S}^1) \otimes_{\sh{O}_Y} \kres(y) = (\Omega_{X/S}^1 \otimes_{\sh{O}_X} \kres(x)) \otimes_{\sh{O}_Y} \kres(y) 
+\]
+and consequently, if $\Omega_{X/S}^1$ is a finite type $\sh{O}_X$-module, we can identify
+\[
+  \Hom_{\kres(y)}(g^*(\Omega_{X/S}^1) \otimes_{\sh{O}_Y} \kres(y), \kres(y))
+\]
+to $T_{X/S}(x) \otimes_{\kres(x)} \kres(y)$.
+We therefore deduce from the homomorphism \sref{IV.16.5.13.4} a homomorphism of $\kres(y)$-vector spaces
+\[
+  \label{IV.16.5.13.5}
+  T_y(g): T_{Y/S}(y) \to T_{X/S}(x) \otimes_{\kres(x)} \kres(y)
+  \tag{16.5.13.5}
+\]
+called the \emph{linear mapping tangent to $g$ at the point $y$}.
+When $y$ is \emph{rational over $\kres(s)$}, we can identify $\kres(s)$, $\kres(y)$ and $\kres(x)$, and $T_y(g)$ is then a homomorphism of $\kres(s)$-vector spaces $T_{Y/S} \to T_{X/S}(x)$;
+also note in this case, $g^*(\Omega_{X/S}^1) \otimes_{\sh{O}_Y} \kres(y)$ is identified with $\Omega_{X/S}^1 \otimes_{\sh{O}_X} \kres(x)$, and the above homomorphism is therefore defined without any conditions of finiteness on $\Omega_{X/S}^1$ and it is exactly the homomorphism \sref{IV.16.5.12} restricted to the fiber of $T_{Y/S}$ at $y$.
+\end{env}
