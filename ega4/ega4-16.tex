@@ -1239,7 +1239,7 @@ Then the mapping $D \mapsto \Gamma(D)$ which, to every $S$-derivation $D$ of $\s
 \end{proposition}
 
 \begin{proof}
-This results immediately from the given interpretation of $S$-derivations in terms
+This follows immediately from the given interpretation of $S$-derivations in terms
 \oldpage[IV-4]{28}
 of homomorphisms of algebras, analogous to the interpretation given in \sref[0]{0.20.1.6}, and of the canonical correspondence between homomorphisms of $\sh{O}_X$-algebras and homomorphisms of $B$-algebras ( \sref[I]{I.1.3.13} and  \sref[I]{I.1.3.8}).
 \end{proof}
@@ -1388,7 +1388,7 @@ However:
 
 \begin{proof}
 Indeed, the assertion \rm{(ii)} follows from Bourbaki, \emph{Alg.}, chap.~II, 3rd ed. , \textsection5, no 3, prop. 7.
-The assertion \rm(i) results similarly from Bourbaki, \emph{Alg. Comm.}, chap.~I, \textsection2, no 10, prop. 11 and of the fact that if $f$ is locally of finite type (resp. locally of finite presentation) $\Omega_{X/S}^1$ is a finite type (resp. finite presentation) $\sh{O}_X$-module \sref{IV.16.3.9} \sref{IV.16.4.22}. 
+The assertion \rm(i) follows similarly from Bourbaki, \emph{Alg. Comm.}, chap.~I, \textsection2, no 10, prop. 11 and of the fact that if $f$ is locally of finite type (resp. locally of finite presentation) $\Omega_{X/S}^1$ is a finite type (resp. finite presentation) $\sh{O}_X$-module \sref{IV.16.3.9} \sref{IV.16.4.22}. 
 \end{proof}
 
 \begin{env}[16.5.12]
@@ -1413,7 +1413,7 @@ If $f:X \to Y$ is an $S$-morphism, we saw \sref{IV.16.4.19} that we have a canon
 gives us an $X$-morphism $T_{X/S}(f): T_{X/S} \to T_{Y/S} \times_Y X$.
 If $g:Y \to Z$ is a second $S$-morphism, we have $T_{X/S}(g \circ f) = (T_{Y/S}(g) \times 1_X ) \circ T_{X/S}(f)$ \sref[0]{0.20.5.4.1}.
 
-It results from \sref{IV.16.5.10.1} and from \sref[II]{II.1.7.11} that for every base change $g:S' \to S$ we have a canonical morphism
+It follows from \sref{IV.16.5.10.1} and from \sref[II]{II.1.7.11} that for every base change $g:S' \to S$ we have a canonical morphism
 \[
   \label{IV.16.5.12.2}
   T_{X'/S'} \xrightarrow{\sim} T_{X/S} \times_S S' = T_{X/S} \times_X X'.
@@ -1438,7 +1438,7 @@ $g:S \to S'$, and every $x' \in X' = X \times_S S'$ over $x$, we have a canonica
   T_{X'/S'}(x') \xrightarrow\sim T_{X/S} \otimes_{\kres(x)} \kres(x').
   \tag{16.5.13.2}
 \]
-If $x$ is \emph{rational} over $\kres(s)$, where $s = f(x)$ (so that $\kres(s) \to \kres(x)$ is an isomorphism), it results from \sref{IV.16.4.13} that we have a canonical isomorphism
+If $x$ is \emph{rational} over $\kres(s)$, where $s = f(x)$ (so that $\kres(s) \to \kres(x)$ is an isomorphism), it follows from \sref{IV.16.4.13} that we have a canonical isomorphism
 \[
   \label{IV.16.5.13.3}
   T_{X/S}(x) = T_{X_s/\kres(s)}(x) = \Hom_{\kres(s)}(\mathfrak{m}'_x/\mathfrak{m}_x^{'2}, \kres(x))
@@ -1472,4 +1472,83 @@ We therefore deduce from the homomorphism \sref{IV.16.5.13.4} a homomorphism of 
 called the \emph{linear mapping tangent to $g$ at the point $y$}.
 When $y$ is \emph{rational over $\kres(s)$}, we can identify $\kres(s)$, $\kres(y)$ and $\kres(x)$, and $T_y(g)$ is then a homomorphism of $\kres(s)$-vector spaces $T_{Y/S} \to T_{X/S}(x)$;
 also note in this case, $g^*(\Omega_{X/S}^1) \otimes_{\sh{O}_Y} \kres(y)$ is identified with $\Omega_{X/S}^1 \otimes_{\sh{O}_X} \kres(x)$, and the above homomorphism is therefore defined without any conditions of finiteness on $\Omega_{X/S}^1$ and it is exactly the homomorphism \sref{IV.16.5.12} restricted to the fiber of $T_{Y/S}$ at $y$.
+\end{env}
+
+\begin{env}[16.5.14]
+\label{IV.16.5.14}
+The interpretation of derivations of an $A$-algebra $B$ to a $B$-module $L$, given in \sref[0]{0.20.1.1}, translates to the language of preschemes in the following way.
+
+Consider two morphisms of preschemes $f: X \to S$, $g: Y \to S$, and a closed subprescheme $Y_0$ of $Y$ defined by a \emph{zero-square} ideal $\sh{I}$ of $\sh{O}_Y$ (so that $Y$ and $Y_0$ have the same underlying subspace).
+Suppose we are given an $S$-morphism $u_0:Y_0 \to X$, so that we have a commutative diagram
+\[
+  \label{IV.16.5.14.1}
+  \xymatrix{
+    X \ar[d]_-f & Y_0 \ar[l]_-{u_0}\ar[d]^j \\
+    S & Y \ar@{-->}[ul]_-u \ar[l]^-g
+  }
+  \tag{16.5.14.1}
+\]
+\oldpage[IV-4]{32}
+and lets search for an \emph{$S$-morphism} $u:Y \to X$ such that $u_0 = u \circ j$ (in other words, if it is possible to complete the diagram above by the dotted arrow $u$ making it \emph{commutative}).
+
+For that, consider an affine open set $U = \Spec(C)$ of $Y$;
+its inverse image $j^{-1}(U)$ is the affine open $U_0 = \Spec(C/\mathfrak{L})$, where $\mathfrak{L} = \Gamma(U, \mathfrak{L})$, \emph{zero-square} ideal in $C$;
+suppose that $U$ is small enough so that $u_0(U_0)$ is contained in an affine open $V = \Spec(B)$ of $X$ and that $g(U) = f(u_0(U_0))$ is contained in an affine open $W = \Spec(A)$ of $S$, so that $B$ and $C$ are $A$-algebras and $u_0|U_0$ corresponds to an $A$-homomorphism $\psi$ from $B$ to $C/\mathfrak{L}$;
+Let $P(U_0)$ be the set of restrictions $u|U$ of the sought homomorphisms, which corresponds canonically to $A$-homomorphisms of algebras $\phi:B \to C$ such that the \emph{composite} $B \xrightarrow{\phi} C \to C/\mathfrak{L}$ is equal to $\psi$.
+So we know \sref[0]{0.20.1.1} that the set of such homomorphisms is either empty or of the form $\psi_1 + \Der_A(B, \mathfrak{L})$;
+since $P(U_0)$ is not empty, the additive group $\Der_A(B, \mathfrak{L})$ acts by addition on $P(U_0)$, which is therefore an \emph{affine space} for the additive group $\Der_A(B, \mathfrak{L})$ (or even a \emph{principal homogeneous space} (or \emph{torsor}) for $\Der_A(B, \mathfrak{L})$).
+
+Now notice that, since $\mathfrak{L}$ is endowed with a $B$-module structure via $\psi$, we have an isomorphism $v \mapsto v \circ d_{B/A}$ of $\Hom_B(\Omega_{X/S}^1, \mathfrak{L})$ onto $\Der_A(B, \mathfrak{L})$ \sref[0]{0.20.4.8}.
+Besides, as $\mathfrak{L}$ is square-zero, therefore a $(C/\mathfrak{L})$-module, every $B$-homomorphism $v: \Omega_{X/S}^1 \to \mathfrak{L}$ can be considered as a $(C/\mathfrak{L})$-homomorphism $\Omega_{X/S}^1 \otimes_B (C/\mathfrak{L}) \to \mathfrak{L}$.
+As $\sh{I}$ is square-zero, it can be considered as a quasi-coherent $\sh{O}_{Y_0}$-module;
+let's introduce the $\sh{O}_{Y_0}$-module
+\[
+  \label{IV.16.5.14.2}
+  \sh{G} = \shHom(u_0^*(\Omega_{X/S}^1), \sh{I});
+  \tag{16.5.14.2}
+\]
+it follows from the fact that $\Omega_{B/A}^1 = \Gamma(V, \Omega_{X/S}^1)$ \sref{IV.16.3.7} that we can write $\Der_A(B, \mathfrak{L}) = \Gamma(U_0, \sh{G})$.
+
+As $P(U_0)$ is defined as a set of $S$-morphisms $U \to X$, it is clear that $U_0 \mapsto P(U_0)$ is a \emph{sheaf of sets} $\sh{P}$ on $Y_0$.
+We can use this fact to prove that the mapping $h:\Gamma(U_0, \sh{G}) \times P(U_0) \to P(U_0)$ defining the torsor structure on $P(U_0)$ is independent of choice of $V$ and $W$ and also that, if $U' \subset U$ is a second affine open of $Y$, $U'_0$ the its inverse image in $Y_0$, the diagram
+\[
+  \label{IV.16.5.14.3}
+  \xymatrix{
+    \Gamma(U_0, \sh{G}) \times P(U_0) \ar[d] \ar[r]^-h & P(U_0) \ar[d] \\
+    \Gamma(U'_0, \sh{G}) \times P(U'_0) \ar[r]_-{h'} & P(U'_0)
+  }
+  \tag{16.5.14.3}
+\]
+is commutative (the vertical arrows being the restrictions).
+In light of the above remark, we are reduced to proving the commutativity of the above diagram when $h$ is defined as such from affine opens $V$, $W$ and $h'$ from affine
+\oldpage[IV-4]{33}
+opens $V' \subset V$ and $W' \subset W$.
+But in light of the preceding description of $h$, this results from the commutativity of the diagram \sref[0]{0.20.5.4.2}.
+
+The mapping $\Gamma(U_0, \sh{G}) \times P(U_0) \to P(U_0)$ therefore define a homomorphism of \emph{sheaf of sets} $m:\sh{G} \times \sh{P} \times \sh{P}$ such that, for all open sets $U_0$ for which $\Gamma(U_0, \sh{P}) \neq \emp$, $m_{U_0}:\Gamma(U_0, \sh{G}) \times \Gamma(U_0, \sh{P}) \to \Gamma(U_0, \sh{P})$ is an external law defining in $\Gamma(U_0, \sh{P})$ a torsor structure for the group $\Gamma(U_0, \sh{G})$.
+\end{env}
+
+\begin{env}[16.5.15]
+\label{IV.16.5.15}
+In general, when we are given a sheaf of sets $\sh{P}$ over a topological space $Z$, a sheaf of groups $\sh{G}$ (not necessarily commutative) and a homomorphism of sheaves of sets $m:\sh{G} \to \sh{P} \to \sh{P}$ such that, for every open $U \subset Z$ such that $\Gamma(U, \sh{P}) \neq \emp$, $m_U:\Gamma(U, \sh{G}) \times \Gamma(U, \sh{P}) \to \Gamma(U, \sh{P})$ makes $\Gamma(U, \sh{P})$ a \emph{torsor} for the group $\Gamma(U,\sh{G})$, we say that $\sh{P}$ is a \emph{pseudo-torsor} (or \emph{formally principal homogeneous sheaf}) for the sheaf of groups $\sh{G}$.
+We say that $\sh{P}$ is a \emph{torsor} (or \emph{principal homogeneous sheaf}) for $\sh{G}$
+\footnote{
+  [trans.] This is nowadays more commonly called a $\sh{G}$-torsor rather then a torsor \emph{over} $\sh{G}$.
+}
+if also $\Gamma(U, \sh{P}) \neq \emp$ for all open sets $U \neq \emp$ in a suitable basis for the topology of $Z$.
+
+For the general theory of torsors, we reference \cite{IV-42};
+we will limit ourselves to recalling the canonical correspondence between isomorphism classes of torsors (for \emph{given} $\sh{G}$) and elements from the cohomology $\HH^1(Z, \sh{G})$.
+Consider, indeed, a torsor $\sh{P}$ for $\sh{G}$ and a open cover $(U_\lambda)$ of $Z$ such that $\Gamma(U_\lambda, \sh{P}) \neq \emp$ for every $\lambda$;
+denote by $p_\lambda$ an element of $\Gamma(U_\lambda, \sh{P})$.
+For every pair of indexes $\lambda, \mu$ such that $U_\lambda \cap U_\mu \neq \emp$, there is one and only one element $\gamma_{\lambda\mu}$ of $\Gamma(U_\lambda \cap U_\mu, \sh{G})$ such that $\gamma_{\lambda\mu} . (p_\mu|U_\lambda \cap U_\mu) = p_\lambda|U_\lambda \cap U_\mu$;
+also, if $\lambda, \mu, \nu$ are three indexes such that $U_\lambda \cap U_\mu \cap U_\nu \neq \emp$, the restrictions $\gamma'_{\lambda\mu}$, $\gamma'_{\mu\nu}$, $\gamma'_{\lambda\nu}$ of $\gamma_{\lambda\mu}$, $\gamma_{\mu\nu}$, $\gamma_{\lambda\nu}$ to $U_\lambda \cap U_\mu \cap U_\nu$ verify the condition $\gamma'_{\lambda\nu} = \gamma'_{\lambda\mu}\gamma'_{\mu\nu}$;
+in other words, $(\lambda, \mu) \mapsto \gamma_{\lambda\mu}$ is a $1$-cocycle of the covering $(U_\lambda)$ with values in $\sh{G}$.
+If, for every $\lambda$, $p'_\lambda$ is a second element of $\Gamma(U_\lambda, \sh{P})$, it exists one and only one element $\beta_\lambda \in \Gamma(U_\lambda, \sh{G})$ such that $p'_\lambda = \beta_\lambda . p_\lambda$, and the $1$-cocycle $(\gamma'_{\lambda\mu})$ corresponding to the family $(p'_\lambda)$ is given by $\gamma'_{\lambda\mu} = \beta_\lambda \gamma_{\lambda\mu} \beta_\mu^{-1}$, that is, it is \emph{cohomologous} to $\gamma_{\lambda\mu}$.
+On the other hand, the data of a $1$-cocycle $(\gamma_{\lambda\mu})$ defines, for every pair $(\lambda, \mu)$, an automorphism $\theta_{\lambda\mu}$ of the sheaf \emph{of sets} $\sh{G}|U_\lambda \cap U_\mu$, namely the right translation by $\gamma_{\lambda\mu}$, and the fact that it is a cocycle shows that we can \emph{glue} the sheaves of sets $\sh{G}|U_\lambda$ via the automorphisms $\theta_{\lambda\mu}$ \sref[0]{0.3.3.1};
+we obtain as such a torsor over $\sh{G}$, call it $\sh{P}$, and if we take for $p_\lambda$ the unit section over $U_\lambda$, the corresponding $1$-cocycle is exactly the given $1$-cocycle $(\gamma_{\lambda\mu})$;
+also, if we replace $(\gamma_{\lambda\mu})$ by an $1$-cocycle $\gamma'_{\lambda\mu} = \beta_\lambda \gamma_{\lambda\mu} \beta_\mu^{-1}$ cohomologous to it we verify immediately that the torsor obtained is isomorphic to $\sh{P}$.
+
+In particular,if $(\gamma_{\lambda\mu})$ is a $1$-coboundary, in other words of the form $\gamma_{\lambda\mu} = \beta_\lambda\beta_\mu^{-1}$, the obtained torsor $\sh{P}$ is \emph{isomorphic} to $\sh{G}$ (considered as a torsor over itself by left translations);
+we say in this case that $\sh{P}$ is trivial, and the converse is obvious.
 \end{env}
