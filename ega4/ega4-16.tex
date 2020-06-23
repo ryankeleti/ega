@@ -1551,4 +1551,37 @@ also, if we replace $(\gamma_{\lambda\mu})$ by an $1$-cocycle $\gamma'_{\lambda\
 
 In particular,if $(\gamma_{\lambda\mu})$ is a $1$-coboundary, in other words of the form $\gamma_{\lambda\mu} = \beta_\lambda\beta_\mu^{-1}$, the obtained torsor $\sh{P}$ is \emph{isomorphic} to $\sh{G}$ (considered as a torsor over itself by left translations);
 we say in this case that $\sh{P}$ is trivial, and the converse is obvious.
+
+In particular, it results from \sref[III]{III.1.3.1} that:
 \end{env}
+
+\begin{proposition}[16.5.16]
+\label{IV.16.5.16}
+Let $Z$ be an affine scheme and $\sh{G}$ a quasi-coherent $\sh{O}_Z$-module;
+then every torsor over $\sh{G}$ is trivial.
+\end{proposition}
+
+\oldpage[IV-4]{34}
+
+Returnning to the problem considered in \sref{IV.16.5.13}, we obtain:
+
+\begin{proposition}[16.5.17]
+\label{IV.16.5.17}
+Let $X$, $Y$ be two $S$-preschemes, $Y_0$ a closed subprescheme of $Y$ defined by a quasi-coherent ideal $\sh{I}$ of $\sh{O}_Y$ such that $\sh{I}^2 = 0$, $j:Y_0 \to Y$ is the canonical injection.
+Let $u_0:Y_0 \to X$ be an $S$-morphism, and $\sh{P}$ the sheaf of sets on $Y$ such that, for every open set $U$ of $Y$, $\Gamma(U, \sh{P})$ is the set of $S$-morphisms $u:X \to X$ such that $u_0|U_0 = u \circ (j|U_0)$, where $U_0 = j^{-1}(U)$.
+Then it exists on $\sh{P}$ a structure of pseudo-torsor over the $\sh{O}_{Y_0}$-module $\sh{G} = \shHom_{\sh{O}_{Y_0}}(u_0^*(\Omega_{X/S}^1), \sh{I})$.
+\end{proposition}
+
+In particular:
+
+\begin{corollary}[16.5.18]
+\label{IV.16.5.18}
+Under the notations of \sref{IV.16.5.16}, suppose that $Y$ is affine and $\Omega_{X/S}^1$ is of finite presentation;
+if there is a open cover $(U_\alpha)$ of $Y$, and, for every index $\alpha$, an $S$-morphism $v_\alpha:U_\alpha \to X$ such that, if $U_\alpha^0 = j^{-1}(U_\alpha)$, we have $v_\alpha \circ (j|U_\alpha^0) = u_0|U_\alpha^0$, then there is an $S$-morphism $u:Y \to X$ such that $u \circ j = u_0$.
+\end{corollary}
+
+\begin{proof}
+Indeed, $\sh{G}$ is a quasi-coherent $\sh{O}_{Y_0}$-module \sref[I]{I.1.3.12};
+by \sref{IV.16.5.16} and the fact that $Y_0$ is then affine, the sheaf $\sh{P}$, which is by hypothesis a torsor over $\sh{G}$, not only a pseudo-torsor, is \emph{trivial};
+but if $w$ is an isomorphism from $\sh{G}$ to $\sh{P}$ (as it is a torsor over $\sh{G}$), the image by $w$ of the zero section of $\sh{G}$ is the $S$-morphism we're looking for.
+\end{proof}
