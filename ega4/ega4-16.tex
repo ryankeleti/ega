@@ -1270,12 +1270,12 @@ also, the uniqueness of the $u_V$ shows immediately that for an affine open $W \
 \label{IV.16.5.4}
 With the notations of \sref{IV.16.5.1}, for every open set $U$ of $X$, $\Der_S(\sh{O}_U, \sh{F}|U)$ is a $\Gamma(U, \sh{O}_X)$-module and it is cleat that the application $U \mapsto \Der_S(\sh{O}_U, \sh{F}|U)$ is a presheaf;
 in fact, it is even a \emph{sheaf} (and therefore an $\sh{O}_X$-module), in light of the pointwise characterization of $S$-derivations, seen in \sref{IV.16.5.1}.
-This $\sh{O}_X$-module is denoted by $\shDer_S(\sh{O}_X, \sh{F})$ and is called the \emph{sheaf of $S$-derivations of $\sh{O}_X$ in $\sh{F}$}, and what we've come to see is further expressed in the following corollary:
+This $\sh{O}_X$-module is denoted by $\shDer_S(\sh{O}_X, \sh{F})$ and is called the \emph{sheaf of $S$-derivations of $\sh{O}_X$ in $\sh{F}$}, and what we have seen is further expressed in the following corollary:
 \end{env}
 
 \begin{corollary}[16.5.5]
 \label{IV.16.5.5}
-For every $\sh{O}_X$-module $\sh{F}$, the homomorphism of $\sh{O}_X$-modules deduced from $d\mapsto u \circ d_{X/S}$
+For every $\sh{O}_X$-module $\sh{F}$, the homomorphism of $\sh{O}_X$-modules deduced from $u \mapsto u \circ d_{X/S}$
 \[
   \label{IV.16.5.5.1}
   \shHom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{F}) \to \shDer_S(\sh{O}_X, \sh{F})
@@ -1300,14 +1300,14 @@ the assertion (ii) follows from \sref[0]{0.5.3.5}.
 
 \begin{env}[16.5.7]
 \label{IV.16.5.7}
-We put
+Let
 \[
   \label{IV.16.5.7.1}
   \mathfrak{G}_{X/S} = \shHom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{O}_X) = \shDer_S(\sh{O}_X, \sh{O}_X)
   \tag{16.5.7.1}  
 \]
 and say that it is the \emph{sheaf of $S$-derivations of $\sh{O}_X$}, or even the \emph{tangent sheaf of $X$ relative to $S$}:
-it is therefore the dual of the $\sh{O}_X$-module $\Omega_{X/S}^1$.
+it is therefore the \emph{dual} of the $\sh{O}_X$-module $\Omega_{X/S}^1$.
 If $f$ is locally of finite
 \oldpage[IV-4]{29}
 presentation, $\mathfrak{G}_{X/S}$ is a quasi-coherent $\sh{O}_X$-module; if also $S$ is locally Noetherian, $\mathfrak{G}_{X/S}$ is coherent \sref{IV.16.5.6}.
@@ -1413,7 +1413,7 @@ If $f:X \to Y$ is an $S$-morphism, we saw \sref{IV.16.4.19} that we have a canon
 gives us an $X$-morphism $T_{X/S}(f): T_{X/S} \to T_{Y/S} \times_Y X$.
 If $g:Y \to Z$ is a second $S$-morphism, we have $T_{X/S}(g \circ f) = (T_{Y/S}(g) \times 1_X ) \circ T_{X/S}(f)$ \sref[0]{0.20.5.4.1}.
 
-It follows from \sref{IV.16.5.10.1} and from \sref[II]{II.1.7.11} that for every base change $g:S' \to S$ we have a canonical morphism
+It follows from \sref{IV.16.5.10.1} and from \sref[II]{II.1.7.11} that for every base change $g:S' \to S$ we have a canonical isomorphism
 \[
   \label{IV.16.5.12.2}
   T_{X'/S'} \xrightarrow{\sim} T_{X/S} \times_S S' = T_{X/S} \times_X X'.
@@ -1423,14 +1423,14 @@ It follows from \sref{IV.16.5.10.1} and from \sref[II]{II.1.7.11} that for every
 
 \begin{env}[16.5.13]
 \label{IV.16.5.13}
-For every point $x \in X$, we define the \emph{tangent space of $X$ at the point $x$} (relative to $S$) to be the set of points in the fiber $T_{X/S} \times_X \Spec(\kres(x))$ that are \emph{rational over $\kres(x)$}, that is the set
+For every point $x \in X$, we define the \emph{tangent space of $X$ at the point $x$} (relative to $S$) to be the set of points in the fiber $T_{X/S} \times_X \Spec(\kres(x))$ that are \emph{rational over $\kres(x)$}, that is, the set
 \[
   \label{IV.16.5.13.1}
   T_{X/S}(x) = \Hom_{\kres(x)}(\Omega_{X/S}^1 \otimes_{\sh{O}_x} \kres(x), \kres(x))
   \tag{16.5.13.1}
 \]
 which is the dual of the $\kres(x)$-vector space $\Omega_{\sh{O}_x/\sh{O}_s}^1/\mathfrak{m}_x.\Omega_{\sh{O}_x/\sh{O}_s}^1$.
-When $\Omega_{X/S}^1$ is a finite type $\sh{O}_X$-module, then $T_{X/S}$ is a vector space of finite rank over $\kres(x)$, and for every base change
+When $\Omega_{X/S}^1$ is a finite type $\sh{O}_X$-module, then $T_{X/S}(x)$ is a vector space of finite rank over $\kres(x)$, and for every base change
 \oldpage[IV-4]{31}
 $g:S \to S'$, and every $x' \in X' = X \times_S S'$ over $x$, we have a canonical isomorphism
 \[
@@ -1470,8 +1470,8 @@ We therefore deduce from the homomorphism \sref{IV.16.5.13.4} a homomorphism of 
   \tag{16.5.13.5}
 \]
 called the \emph{linear mapping tangent to $g$ at the point $y$}.
-When $y$ is \emph{rational over $\kres(s)$}, we can identify $\kres(s)$, $\kres(y)$ and $\kres(x)$, and $T_y(g)$ is then a homomorphism of $\kres(s)$-vector spaces $T_{Y/S} \to T_{X/S}(x)$;
-also note in this case, $g^*(\Omega_{X/S}^1) \otimes_{\sh{O}_Y} \kres(y)$ is identified with $\Omega_{X/S}^1 \otimes_{\sh{O}_X} \kres(x)$, and the above homomorphism is therefore defined without any conditions of finiteness on $\Omega_{X/S}^1$ and it is exactly the homomorphism \sref{IV.16.5.12} restricted to the fiber of $T_{Y/S}$ at $y$.
+When $y$ is \emph{rational over $\kres(s)$}, we can identify $\kres(s)$, $\kres(y)$ and $\kres(x)$, and $T_y(g)$ is then a homomorphism of $\kres(s)$-vector spaces $T_{Y/S}(y) \to T_{X/S}(x)$;
+also note in this case, $g^*(\Omega_{X/S}^1) \otimes_{\sh{O}_Y} \kres(y)$ is identified with $\Omega_{X/S}^1 \otimes_{\sh{O}_X} \kres(x)$, and the above homomorphism is therefore defined without any conditions of finiteness on $\Omega_{X/S}^1$ and it is exactly the homomorphism $T_{Y/S}(g)$\sref{IV.16.5.12} restricted to the fiber of $T_{Y/S}$ at $y$.
 \end{env}
 
 \begin{env}[16.5.14]
@@ -1489,14 +1489,14 @@ Suppose we are given an $S$-morphism $u_0:Y_0 \to X$, so that we have a commutat
   \tag{16.5.14.1}
 \]
 \oldpage[IV-4]{32}
-and lets search for an \emph{$S$-morphism} $u:Y \to X$ such that $u_0 = u \circ j$ (in other words, if it is possible to complete the diagram above by the dotted arrow $u$ making it \emph{commutative}).
+and lets search for an \emph{$S$-morphism} $u:Y \to X$ such that $u_0 = u \circ j$ (in other words, completing the diagram above by the dotted arrow $u$ making it \emph{commutative}).
 
 For that, consider an affine open set $U = \Spec(C)$ of $Y$;
 its inverse image $j^{-1}(U)$ is the affine open $U_0 = \Spec(C/\mathfrak{L})$, where $\mathfrak{L} = \Gamma(U, \mathfrak{L})$, \emph{zero-square} ideal in $C$;
 suppose that $U$ is small enough so that $u_0(U_0)$ is contained in an affine open $V = \Spec(B)$ of $X$ and that $g(U) = f(u_0(U_0))$ is contained in an affine open $W = \Spec(A)$ of $S$, so that $B$ and $C$ are $A$-algebras and $u_0|U_0$ corresponds to an $A$-homomorphism $\psi$ from $B$ to $C/\mathfrak{L}$;
 Let $P(U_0)$ be the set of restrictions $u|U$ of the sought homomorphisms, which corresponds canonically to $A$-homomorphisms of algebras $\phi:B \to C$ such that the \emph{composite} $B \xrightarrow{\phi} C \to C/\mathfrak{L}$ is equal to $\psi$.
 So we know \sref[0]{0.20.1.1} that the set of such homomorphisms is either empty or of the form $\psi_1 + \Der_A(B, \mathfrak{L})$;
-since $P(U_0)$ is not empty, the additive group $\Der_A(B, \mathfrak{L})$ acts by addition on $P(U_0)$, which is therefore an \emph{affine space} for the additive group $\Der_A(B, \mathfrak{L})$ (or even a \emph{principal homogeneous space} (or \emph{torsor}) for $\Der_A(B, \mathfrak{L})$).
+when $P(U_0)$ is not empty, the additive group $\Der_A(B, \mathfrak{L})$ acts by addition on $P(U_0)$, which is therefore an \emph{affine space} for the additive group $\Der_A(B, \mathfrak{L})$ (or even a \emph{principal homogeneous space} (or \emph{torsor}) for $\Der_A(B, \mathfrak{L})$).
 
 Now notice that, since $\mathfrak{L}$ is endowed with a $B$-module structure via $\psi$, we have an isomorphism $v \mapsto v \circ d_{B/A}$ of $\Hom_B(\Omega_{X/S}^1, \mathfrak{L})$ onto $\Der_A(B, \mathfrak{L})$ \sref[0]{0.20.4.8}.
 Besides, as $\mathfrak{L}$ is square-zero, therefore a $(C/\mathfrak{L})$-module, every $B$-homomorphism $v: \Omega_{X/S}^1 \to \mathfrak{L}$ can be considered as a $(C/\mathfrak{L})$-homomorphism $\Omega_{X/S}^1 \otimes_B (C/\mathfrak{L}) \to \mathfrak{L}$.
@@ -1523,7 +1523,7 @@ is commutative (the vertical arrows being the restrictions).
 In light of the above remark, we are reduced to proving the commutativity of the above diagram when $h$ is defined as such from affine opens $V$, $W$ and $h'$ from affine
 \oldpage[IV-4]{33}
 opens $V' \subset V$ and $W' \subset W$.
-But in light of the preceding description of $h$, this results from the commutativity of the diagram \sref[0]{0.20.5.4.2}.
+But because of the preceding description of $h$, this results from the commutativity of the diagram \sref[0]{0.20.5.4.2}.
 
 The mapping $\Gamma(U_0, \sh{G}) \times P(U_0) \to P(U_0)$ therefore define a homomorphism of \emph{sheaf of sets} $m:\sh{G} \times \sh{P} \times \sh{P}$ such that, for all open sets $U_0$ for which $\Gamma(U_0, \sh{P}) \neq \emp$, $m_{U_0}:\Gamma(U_0, \sh{G}) \times \Gamma(U_0, \sh{P}) \to \Gamma(U_0, \sh{P})$ is an external law defining in $\Gamma(U_0, \sh{P})$ a torsor structure for the group $\Gamma(U_0, \sh{G})$.
 \end{env}
