@@ -354,8 +354,133 @@ The following conditions are equivalent:
 \begin{proof}
 \label{proof-II.7.3.8}
 The equivalence of (b) and (c) follows immediately from \sref[I]{I.3.3.14};
+(a) implies (b), since (a) implies, in either case, that $f_(Y')$ is separated \sref[I]{I.5.5.1}[iv] and closed, and it suffices to apply \sref{II.7.3.3}.
+It remains to prove that (b) implies (a).
+We first consider the case where $Y$ is arbitrary, and $f$ is separated and quasi-compact.
+If condition (b) is satisfied by $f$, then it is also satisfied by $f_{(Y'')}:X_{(Y'')}\to Y''$, where $Y''$ is an arbitrary $Y$-prescheme, thanks to the equivalence between (b) and (c), and the fact that $X_{(Y'')}\times_{Y''}Y' = X\times_Y Y'$ for every morphism $Y'\to Y''$ \sref[I]{I.3.3.9.1};
+since, further, $f_{(Y'')}$ is separated and quasi-compact whenever $f$ is (\sref[I]{I.5.5.1}[iv] and \sref{II.6.6.4}[iii]), we are led to proving that (b) implies that $f$ is \emph{closed}.
+For this, it suffices to verify condition (b) of \sref{II.7.2.1}.
+So let $x\in X$, and $y'$ be a specialisation of $y=f(x)$, distinct from $y$;
+by \sref{II.7.1.4}, there exists a scheme $Y'$, the spectrum of some valuation ring, and a separated morphism $g:Y'\to Y$ such that, letting $a$ denote the closed point and $b$ the generic point of $Y'$, we have that $g(a)=y'$, $g(b)=y$, and that there exists a $\kres(y)$-homomorphism $\kres(x)\to\kres(b)$.
+The latter corresponds canonically to a $Y$-morphism $\Spec(\kres(b))\to X$ \sref[I]{I.2.4.6}, and it thus follows from (b) that there exists a $Y$-morphism $h:Y'\to X$ to which the previous morphism corresponds.
+We then have that $h(b)=x$;
+if we set $h(a)=x'$, then $x'$ is a specialisation of $x$, and we have that $f(x')=f(h(a))=g(a)=y'$.
+
+If now $Y$ is locally Noetherian and $f$ of finite type, then hypothesis (b) implies, first of all, that $f$ is \emph{separated}, by \sref{II.7.2.3}, with the diagonal morphism $X\to X\times_Y X$ being quasi-compact \sref{II.7.2.4}.
+Further, to show that $f$ is proper, it suffices to show that $f_{(Y'')}:X_{(Y'')}\to Y''$ is \emph{closed} for every $Y$-prescheme $Y''$ \emph{of finite type}, taking \sref{II.5.6.3} into account.
+Since $Y''$ is then locally Noetherian, we can follow the same reasoning as in the first case by taking $Y'$ to be the spectrum of a discrete valuation ring, and applying \sref{II.7.1.9} instead of \sref{II.7.1.4}.
 \end{proof}
 
+\begin{remarks}
+\label{II.7.3.9}
+\begin{enumerate}
+    \item[\rm{(i)}] Whenever $Y$ is an arbitrary prescheme and $f$ a separated morphism, for $f$ to be universally closed, it \emph{suffices} that condition (b) or (c) be satisfied for the \emph{complete} valuation rings $A$ whose residue field is \emph{algebraically closed};
+        this follows from the above proof and from \sref{II.7.1.4}.
+    \item[\rm{(ii)}] From criterion (c) of \sref{II.7.3.8} we obtain a new proof of the fact that a projective morphism $X\to Y$ is closed \sref{II.5.5.3}, and it is closer to the classical approach.
+        We can indeed assume that $Y$ is affine, and thus that $X$ can be identified with a closed subprescheme of a projective bundle $\bb{P}_Y^n$ \sref{II.5.3.3};
+        to prove that $X\to Y$ is closed, it suffices to verify that the structure morphism $\bb{P}_Y^n\to Y$ is closed, and criteria (c) of \sref{II.7.3.8}, combined with \sref{II.4.1.3.1}, tells us that we can reduce to proving the following fact:
+        \emph{if $Y$ is the spectrum of a valuation ring $A$, with field of fractions $K$, then every point of $\bb{P}_Y^n$ with values in $K$ comes from (by restriction to the generic point of $Y$) a point of $\bb{P}_Y^n$ with values in $A$.}
+        But every invertible $\sh{O}_Y$-module is trivial \sref[I]{I.2.4.8};
+        so it follows from \sref{II.4.2.6} that a point of $\bb{P}_Y^n$ with values in $K$ can be identified with a class of elements $(\zeta c_0,\zeta c_1,\ldots,\zeta c_n)$ of $K$, where $\zeta\neq0$ and the $c$ are elements of $K$ that are not all zero.
+        However, by multiplying the $c_i$ by an element of $A$ of
+\oldpage[II]{146}
+        suitable valuation, we can suppose that the $c_i$ all belong to $A$, and that at least one of them is invertible.
+        But then \sref{II.4.2.6} the system $(c_0,\ldots,c_n)$ also defines a point of $\bb{P}_Y^n$ with values in $A$, which proves our claim.
+    \item[\rm{(iii)}] Criteria \sref{II.7.2.3} and \sref{II.7.3.8} are particularly simple when we consider the data of a $Y$-prescheme $X$ as being equivalent to the data of the functor
+        \[
+            X(Y') = \Hom_Y(Y',X)
+        \]
+        for $Y$-preschemes $Y'$;
+        these criteria allow us, for example, to prove that, under certain conditions, the ``Picard schemes'' are proper.
+\end{enumerate}
+\end{remarks}
 
-% \subsection{Algebraic curves and function fields of dimension 1}
-% \label{subsection:II.7.4}
+\begin{corollary}
+\label{II.7.3.10}
+Let $Y$ be an integral scheme (resp. a locally Noetherian integral scheme), $X$ an integral scheme, and $f:X\to Y$ a dominant morphism.
+\begin{enumerate}
+    \item[\rm{(i)}] If $f$ is quasi-compact and universally closed, then every valuation ring whose field of fractions is the field $R(X)$ of rational functions on $X$, and which is dominated by a local ring $Y$, also dominates by a local ring of $X$.
+    \item[\rm{(ii)}] Conversely, suppose that $f$ is of finite type, and that the property described in (i) is verified by every valuation ring (resp. every discrete valuation ring) that has $R(X)$ as its field of fractions.
+        Then $f$ is proper.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.3.10}
+Note first of all that the hypotheses imply, in any case, that $f$ is separated \sref[I]{I.5.5.9}.
+\begin{enumerate}
+    \item[\rm{(i)}] Let $K=R(Y)$, $L=R(X)$, $y$ a point of $Y$, and $A$ a valuation ring that dominates $\sh{O}_y$ and has $L$ as its field of fractions;
+        the injection $\sh{O}_y\to A$ then defines a morphism $h$ from $Y'=\Spec(A)$ to $Y$ \sref[I]{I.2.4.4} such that $h(a)=y$, where we write $a$ to denote the closed point of $Y'$;
+        furthermore, if $\eta$ is the generic point of $Y$, which is also the generic point of $\Spec(\sh{O}_y)$, then we have $h(b)=\eta$, writing $b$ to denote the generic point of $Y'$ (since $K\subset L$ by hypothesis).
+        If $\xi$ is the generic point of $X$, then $\kres(\xi)=\kres(b)=L$ by hypothesis, whence we have a $Y$-morphism $g:\Spec(L)\to X$ such that $g(b)=\xi$;
+        by \sref{II.7.3.8}, $g$ comes from a $Y$-morphism $g':Y'\to X$.
+        If $x=g'(a)$, it is clear that $A$ dominates $\sh{O}_x$.
+    \item[\rm{(ii)}] The question being local on $Y$, we can always suppose that $Y$ is affine (resp. affine and Noetherian).
+        Since $f$ is of finite type, we can apply, in either case, Chow's lemma \sref{II.5.6.1}.
+        There is thus a projective morphism $p:P\to Y$, an immersion morphism $j:X'\to P$, and a projective morphism $g:X'\to X$ that is both surjective and birational, with $X$ integral, such that the diagram
+        \[
+            \xymatrix{
+                P \ar[d]_p
+                & X' \ar[l]_j \ar[d]^g
+            \\  Y
+                & X \ar[l]^f
+            }
+        \]
+        commutes.
+        It suffices to prove that $j$ is a \emph{closed} immersion, since then $f\circ g=p\circ j$ will be a projective morphism, and thus closed, and, since $g$ is surjective, $f$ will also be proper \sref{II.5.4.3}.
+        Let $Z$ be the reduced closed subprescheme of $P$ that has $\overline{j(X')}$ as its underlying space \sref[I]{I.5.2.1};
+        since $X'$ is integral, $j$ factors as $i\circ h$, where $i:Z\to P$ is the canonical injection, $h:X'\to Z$ a dominant open immersion \sref[I]{I.5.2.3}, and $Z$ is integral;
+\oldpage[II]{147}
+        furthermore, $Z$ is projective over $Y$, and we see that we can restrict to the case where $P$ is \emph{integral} and $j$ is \emph{dominant} and \emph{birational}, and everything then reduces to showing that $j$ is \emph{surjective}.
+        But let $z\in P$;
+        then $\sh{O}_z$ is an integral (resp. integral and Noetherian) local ring whose field of fractions is
+        \[
+            L = R(P) = R(X') = R(X).
+        \]
+        We can restrict to the case where $z$ is not the generic point of $P$.
+        There then exists (\sref{II.7.1.2} and \sref{II.7.1.7}) a valuation ring (resp. a discrete valuation ring) $A$ which dominates $\sh{O}_z$ and has $L$ as its field of fractions.
+        \emph{A fortiori}, $A$ dominates $\sh{O}_y$, where $y=p(z)$, and, by hypothesis, there thus exists some $x\in X$ such that $A$ dominates $\sh{O}_x$.
+        Since $g$ is proper, the first part of the proof shows that $A$ also dominates $\sh{O}_{x'}$ for some $x'\in X'$;
+        it then follows that $\sh{O}_z$ and $\sh{O}_{j(x')}=\sh{O}_{x'}$ are allied \sref[I]{I.8.1.4}, and, since $P$ is a scheme, this implies that $z=j(x')$ \sref[I]{I.8.2.2} and finishes the proof.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}
+\label{II.7.3.11}
+Let $X$ and $Y$ be integral schemes, and $f:X\to Y$ a dominant, quasi-compact, and universally closed morphism.
+Suppose further that $Y$ is affine of (integral) ring $B$.
+Then $\Gamma(X,\sh{O}_X)$ is canonically isomorphic to a subring of the integral closure of $B$ in $R(X)$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.3.11}
+Indeed \sref[I]{I.8.2.1.1}, $\Gamma(X,\sh{O}_X)$ can be identified with the intersection of the $\sh{O}_x$ over $x\in X$;
+by \sref{II.7.3.10}, \sref{II.7.1.2}, and \sref{II.7.1.3}, $\Gamma(X,\sh{O}_X)$ is then contained in the intersection of the valuation rings that contain $B$ and that have $R(X)$ as their field of fractions;
+the conclusion then follows from \sref{II.7.1.3}.
+\end{proof}
+
+\begin{remarks}
+\label{II.7.3.12}
+Under the hypotheses of \sref{II.7.3.11}, and when we suppose that $R(X)$ is an extension of finite type of $R(Y)$, we can, in many cases, conclude that $\Gamma(X,\sh{O}_X)$ is a \emph{module of finite type} over the ring $B=\Gamma(Y,\sh{O}_X)$.
+For example, this will be the case whenever $B$ is an \emph{algebra of finite type over a field}, since we then know that the integral closure of $B$ in an extension of finite type of its field of fractions is a $B$-module of finite type (\cite[t.~I, p.~267, th.~9]{I-13});
+the conclusion then follows from \sref{II.7.3.11} and the fact that $B$ is Noetherian.
+
+In particular, \emph{a proper affine scheme $X$ over a field $K$ is finite}.
+Indeed, by \sref{II.1.6.4}, \sref{II.5.4.6}, and \sref[I]{I.6.4.4}[(c)], we can restrict to the case where $X$ is \emph{reduced}.
+Furthermore, it suffices to prove that each of the closed subpreschemes of $X$ that have an irreducible component of $X$ as their underlying space (of which there are finitely many) is finite over $K$, which means (taking \sref{II.5.4.5} into account) that we are finally reduced to the case where $X$ is \emph{integral}.
+But then the result follows from the above remarks.
+
+In chapter~III, we will again prove this above proposition by other methods, and as a consequence of more general results, by showing that, if $f:X\to Y$ is proper and $Y$ is locally Noetherian, $f_*(\sh{F})$ is coherent for any coherent $\sh{O}_X$-module $\sh{F}$ \sref[III]{III.4.4.2}.
+
+Finally, note that criterion~\sref{II.7.3.10} is taken as the \emph{definition} of proper morphisms in classical algebraic geometry.
+We only mention this here as a remark, since criterion~\sref{II.7.3.8} seems more manageable in all the applications with which we are familiar.
+\end{remarks}
+
+
+\oldpage[II]{148}
+
+\subsection{Algebraic curves and function fields of dimension 1}
+\label{subsection:II.7.4}
+
+The aim of this section is to show how to formulate the classical notion of algebraic curves (as introduced, by example, in the book of C.~Chevalley \cite{II-23}) in the language of schemes.
+All throughout this section, \emph{we write $k$ to mean a field, all the schemes in question are $k$-schemes of finite type, and all the morphisms are $k$-morphisms}.
