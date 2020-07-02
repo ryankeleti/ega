@@ -484,3 +484,70 @@ We only mention this here as a remark, since criterion~\sref{II.7.3.8} seems mor
 
 The aim of this section is to show how to formulate the classical notion of algebraic curves (as introduced, by example, in the book of C.~Chevalley \cite{II-23}) in the language of schemes.
 All throughout this section, \emph{we write $k$ to mean a field, all the schemes in question are $k$-schemes of finite type, and all the morphisms are $k$-morphisms}.
+
+\begin{proposition}
+\label{II.7.4.1}
+Let $X$ be a prescheme of finite type over $k$ (and thus Noetherian);
+let $x_i$ ($1\leq i\leq n$) be the generic points of the irreducible components $X_i$ of $X$, and let $K_i=\kres(x_i)$ ($1\leq i\leq n$).
+Then the following conditions are equivalent:
+\begin{enumerate}
+    \item[\rm{(a)}] Each of the $K_i$ is an extension of $k$ with transcendence degree equal to $1$.
+    \item[\rm{(b)}] For every closed point $x$ of $X$, the local ring $\sh{O}_x$ is of dimension $1$ \sref{II.7.1.5}.
+    \item[\rm{(c)}] The closed irreducible subsets of $X$ that are distinct from the $X_i$ are exactly the closed points of $X$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.4.1}
+Since $X$ is quasi-compact, every closed irreducible subset $F$ of $X$ contains a closed point \sref[0]{0.2.1.3}.
+By \sref[I]{I.2.4.2}, there is a bijective correspondence between the prime ideals of $\sh{O}_x$ and the closed irreducible subsets of $X$ that contain $x$ \sref[I]{I.1.1.14};
+the equivalence between (b) and (c) follows immediately from this.
+Now, if $\fk{p}_\alpha$ ($1\leq\alpha\leq r$) are the minimal prime ideals of the local Noetherian ring $\sh{O}_x$, then the local rings $\sh{O}_x/\fk{p}_\alpha$ are integral, and have the $K_i$ such that $x\in X_i$ as their fields of fractions.
+Furthermore, we know (\cite[p.~4-06, th.~2]{I-1}) that the dimension of a local integral $k$-algebra of finite type is equal to the transcendence degree over $k$ of its field of fractions.
+Finally, the dimension of $\sh{O}_x$ is bounded above by the dimensions of the $\sh{O}_x/\fk{p}_\alpha$;
+but condition~(a) implies that these dimensions are equal to $1$, and so (a) implies (b);
+conversely, if $\sh{O}_x$ is of dimension $1$, then none of the $\fk{p}_\alpha$ can be equal to the maximal ideal of $\sh{O}_x$, otherwise $\sh{O}_x$ would be of dimension $0$;
+thus each of the $\sh{O}_x/\fk{p}_\alpha$ are of dimension $1$, which shows that (b) implies (a).
+\end{proof}
+
+We note that, under the conditions of \sref{II.7.4.1}, the set $X$ is either \emph{empty} or \emph{infinite}, as an immediate result of \sref[I]{I.6.4.4}.
+
+\begin{definition}
+\label{II.7.4.2}
+We define an \emph{algebraic curve over $k$} to be a non-empty algebraic \emph{scheme} over $k$ that satisfies the conditions of \sref{II.7.4.1}.
+\end{definition}
+
+In the language of dimensions, which will be introduced in Chapter~IV, this can be expressed by saying that an algebraic curve over $k$ is a non-empty algebraic $k$-scheme \emph{whose irreducible components are all of dimension $1$}.
+
+We note that, if $X$ is an algebraic curve over $k$, then the closed reduced subpreschemes $X_i$ ($1\leq i\leq n$) of $X$ that have the irreducible components of $X$ as their underlying space are also algebraic curves over $k$.
+
+\begin{corollary}
+\label{II.7.4.3}
+Let $X$ be an irreducible algebraic curve.
+The only non-closed point of $X$ is its generic point.
+The closed subsets of $X$ that are distinct from $X$ are the finite sets of closed points;
+these are also the only subsets of $X$ that are not everywhere dense.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.3}
+If a point $x\in X$ is not closed, then its closure in $X$ is an irreducible closed subset of $X$, and thus necessarily the whole of $X$, by \sref{II.7.4.1}, and thus $x$ is the generic point of $X$.
+A closed subset $F$ of $X$ that is distinct from $X$ cannot contain
+\oldpage[II]{149}
+the generic point of $X$, and so all its points are closed (in $X$, and \emph{a fortiori} in $F$);
+by considering the closed reduced subpreschemes of $X$ that have $F$ as their underlying space \sref[I]{I.5.2.1}, it thus follows from \sref[I]{I.6.2.2} that $F$ is finite and discrete.
+The closure in $X$ of any infinite subset of $X$ is thus necessarily equal to $X$ itself.
+\end{proof}
+
+If $X$ is an arbitrary algebraic curve, by applying \sref{II.7.4.3} to the irreducible components of $X$, we see that the only non-closed points of $X$ are the generic points of these components.
+
+\begin{corollary}
+\label{II.7.4.4}
+Let $X$ and $Y$ be irreducible algebraic curves over $k$, and $f:X\to Y$ a $k$-morphism.
+For $f$ to be dominant, it is necessary and sufficient for $f^{-1}(y)$ to be finite for all $y\in Y$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.4}
+
+\end{proof}
