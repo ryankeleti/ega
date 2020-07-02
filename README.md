@@ -7,6 +7,8 @@ S’il-vous plaît pardonnez-nous, Grothendieck.
 
 View online [here](https://ega.fppf.site/).
 
+For discussion regarding this project, visit [#ega:matrix.org](https://riot.im/app/#/room/#ega:matrix.org)!
+
 To compile, `make book`, `make pdfs`, or `make all`.
 
 ## PDFs
