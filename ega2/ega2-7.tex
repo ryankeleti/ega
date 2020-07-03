@@ -358,7 +358,7 @@ The equivalence of (b) and (c) follows immediately from \sref[I]{I.3.3.14};
 It remains to prove that (b) implies (a).
 We first consider the case where $Y$ is arbitrary, and $f$ is separated and quasi-compact.
 If condition (b) is satisfied by $f$, then it is also satisfied by $f_{(Y'')}:X_{(Y'')}\to Y''$, where $Y''$ is an arbitrary $Y$-prescheme, thanks to the equivalence between (b) and (c), and the fact that $X_{(Y'')}\times_{Y''}Y' = X\times_Y Y'$ for every morphism $Y'\to Y''$ \sref[I]{I.3.3.9.1};
-since, further, $f_{(Y'')}$ is separated and quasi-compact whenever $f$ is (\sref[I]{I.5.5.1}[iv] and \sref{II.6.6.4}[iii]), we are led to proving that (b) implies that $f$ is \emph{closed}.
+since, further, $f_{(Y'')}$ is separated and quasi-compact whenever $f$ is (\sref[I]{I.5.5.1}[iv] and \sref[I]{I.6.6.4}[iii]), we are led to proving that (b) implies that $f$ is \emph{closed}.
 For this, it suffices to verify condition (b) of \sref{II.7.2.1}.
 So let $x\in X$, and $y'$ be a specialisation of $y=f(x)$, distinct from $y$;
 by \sref{II.7.1.4}, there exists a scheme $Y'$, the spectrum of some valuation ring, and a separated morphism $g:Y'\to Y$ such that, letting $a$ denote the closed point and $b$ the generic point of $Y'$, we have that $g(a)=y'$, $g(b)=y$, and that there exists a $\kres(y)$-homomorphism $\kres(x)\to\kres(b)$.
@@ -549,5 +549,76 @@ For $f$ to be dominant, it is necessary and sufficient for $f^{-1}(y)$ to be fin
 
 \begin{proof}
 \label{proof-II.7.4.4}
+Indeed, if $f$ is not dominant, then $f(X)$ is necessarily a \emph{finite} subset of $Y$, by \sref{II.7.4.3}, and so it is not possible for $f^{-1}(y)$ to be finite for every point of $Y$, since otherwise $X$ would be finite, which is a contradiction \sref{II.7.4.1}.
+Conversely, if $f$ is dominant, then for any $y\in Y$ distinct from the generic point $\eta$ of $Y$, we have that $f^{-1}(y)$ is closed in $X$, since $\{y\}$ is closed in $Y$ \sref{II.7.4.3};
+also, by hypothesis, $f^{-1}(y)$ does not contain the generic point $\xi$ of $X$, and is thus finite, by \sref{II.7.4.3}.
+Finally, to see that, when $f$ is dominant, $f^{-1}(\eta)$ is finite, we note that the fibre $f^{-1}(\eta)$ is an irreducible scheme of finite type over $\kres(\eta)$, and with generic point $\xi$ (\sref[I]{I.6.3.9} and \sref[I]{6.4.11}).
+Since $\kres(\xi)$ and $\kres(\eta)$ are extensions of finite type of $k$, both of transcendence degree $1$, we have that $\kres(\xi)$ is necessarily an extension of finite degree of $\kres(\eta)$, and so $\xi$ is closed in $f^{-1}(\eta)$ \sref[I]{I.6.4.2}, and $f^{-1}(\eta)$ thus consists of a single point $\xi$.
+\end{proof}
+
+We will see, in Chapter~III, that, if $f:X\to Y$ is a \emph{proper} morphism of Noetherian preschemes such that $f^{-1}(y)$ is finite for all $y\in Y$, then $f$ is necessarily \emph{finite};
+it will thus follow from \sref{II.7.4.4} that a proper dominant morphism from an irreducible algebraic curve to an algebraic curve is \emph{finite}.
+
+\begin{corollary}
+\label{II.7.4.5}
+Let $X$ be an algebraic curve over $k$.
+For $X$ to be regular, it is necessary and sufficient for $X$ to be normal, or for the local rings of its closed points to be discrete valuation rings.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.5}
+This follows immediately from \sref{II.7.4.1}[(b)] and \sref{II.7.1.6}.
+\end{proof}
+
+\begin{corollary}
+\label{II.7.4.6}
+Let $X$ be a reduced algebraic curve, and $\sh{A}$ a reduced coherent $\sh{R}(X)$-algebra;
+then the integral closure $X'$ of $X$ relative to $\sh{A}$ \sref{II.6.3.4} is a normal algebraic curve, and the canonical morphism $X'\to X$ is finite.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.6}
+The fact that $X'\to X$ is finite follows from \sref{II.6.3.10};
+$X'$ is thus an algebraic $k$-scheme;
+furthermore, if $x_i$ ($1\leq i\leq n$) are the generic points of the irreducible components of $X$, and $x'_j$ ($1\leq j\leq m$) the generic points of the irreducible components of $X'$, then each of the $\kres(x'_j)$ is a finite algebraic extension of one of the $\kres(x_i)$ \sref{II.6.3.6}, and thus of transcendence degree $1$ over $k$.
+So $X'$ is indeed an algebraic curve over $k$, and, furthermore, we know that $X'$ is a finite sum of normal integral schemes (\sref{II.6.3.6} and \sref{II.6.3.7}).
+\end{proof}
+
+\begin{env}
+\label{II.7.4.7}
+We say that an algebraic curve $X$ over $k$ is \emph{complete} if it is \emph{proper} over $k$.
+\end{env}
+
+\begin{corollary}
+\label{II.7.4.8}
+For a reduced algebraic curve $X$ over $k$ to be complete, it is necessary and sufficient for its normalisation $X'$ to be complete.
+\end{corollary}
+
+\oldpage[II]{150}
+\begin{proof}
+\label{proof-II.7.4.8}
+The canonical morphism $f:X'\to X$ is finite \sref{II.7.4.6}, and thus proper \sref{II.6.1.11} and surjective \sref{II.6.3.8};
+if $g:X\to\Spec(k)$ is the structure morphism, then $g$ and $\circ f$ are both proper, by \sref{II.5.4.2}[(ii)] and \sref{II.5.4.3}[(ii)], since $g$ is separated by hypothesis.
+\end{proof}
+
+\begin{proposition}
+\label{II.7.4.9}
+Let $X$ be a \emph{normal} algebraic curve over $k$, and $Y$ a \emph{proper} algebraic $k$-scheme over $k$.
+Then every rational $k$-map from $X$ to $Y$ is everywhere defined, or, in other words, is a morphism.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.4.9}
+It follows from \sref{II.7.3.7} that, at the points $x\in X$ where such a map is not defined, the dimension of $\sh{O}_x$ must be $\geq2$, and so the set of such points is empty;
+the final claim follows from \sref[I]{I.7.2.3}.
+\end{proof}
+
+\begin{corollary}
+\label{II.7.4.10}
+A normal algebraic curve over $k$ is quasi-projective over $k$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.10}
 
 \end{proof}
