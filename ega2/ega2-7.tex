@@ -358,7 +358,7 @@ The equivalence of (b) and (c) follows immediately from \sref[I]{I.3.3.14};
 It remains to prove that (b) implies (a).
 We first consider the case where $Y$ is arbitrary, and $f$ is separated and quasi-compact.
 If condition (b) is satisfied by $f$, then it is also satisfied by $f_{(Y'')}:X_{(Y'')}\to Y''$, where $Y''$ is an arbitrary $Y$-prescheme, thanks to the equivalence between (b) and (c), and the fact that $X_{(Y'')}\times_{Y''}Y' = X\times_Y Y'$ for every morphism $Y'\to Y''$ \sref[I]{I.3.3.9.1};
-since, further, $f_{(Y'')}$ is separated and quasi-compact whenever $f$ is (\sref[I]{I.5.5.1}[iv] and \sref{II.6.6.4}[iii]), we are led to proving that (b) implies that $f$ is \emph{closed}.
+since, further, $f_{(Y'')}$ is separated and quasi-compact whenever $f$ is (\sref[I]{I.5.5.1}[iv] and \sref[I]{I.6.6.4}[iii]), we are led to proving that (b) implies that $f$ is \emph{closed}.
 For this, it suffices to verify condition (b) of \sref{II.7.2.1}.
 So let $x\in X$, and $y'$ be a specialisation of $y=f(x)$, distinct from $y$;
 by \sref{II.7.1.4}, there exists a scheme $Y'$, the spectrum of some valuation ring, and a separated morphism $g:Y'\to Y$ such that, letting $a$ denote the closed point and $b$ the generic point of $Y'$, we have that $g(a)=y'$, $g(b)=y$, and that there exists a $\kres(y)$-homomorphism $\kres(x)\to\kres(b)$.
@@ -371,7 +371,7 @@ Further, to show that $f$ is proper, it suffices to show that $f_{(Y'')}:X_{(Y''
 Since $Y''$ is then locally Noetherian, we can follow the same reasoning as in the first case by taking $Y'$ to be the spectrum of a discrete valuation ring, and applying \sref{II.7.1.9} instead of \sref{II.7.1.4}.
 \end{proof}
 
-\begin{remarks}
+\begin{remarks}[7.3.9]
 \label{II.7.3.9}
 \begin{enumerate}
     \item[\rm{(i)}] Whenever $Y$ is an arbitrary prescheme and $f$ a separated morphism, for $f$ to be universally closed, it \emph{suffices} that condition (b) or (c) be satisfied for the \emph{complete} valuation rings $A$ whose residue field is \emph{algebraically closed};
@@ -395,7 +395,7 @@ Since $Y''$ is then locally Noetherian, we can follow the same reasoning as in t
 \end{enumerate}
 \end{remarks}
 
-\begin{corollary}
+\begin{corollary}[7.3.10]
 \label{II.7.3.10}
 Let $Y$ be an integral scheme (resp. a locally Noetherian integral scheme), $X$ an integral scheme, and $f:X\to Y$ a dominant morphism.
 \begin{enumerate}
@@ -445,7 +445,7 @@ Note first of all that the hypotheses imply, in any case, that $f$ is separated 
 \end{enumerate}
 \end{proof}
 
-\begin{corollary}
+\begin{corollary}[7.3.11]
 \label{II.7.3.11}
 Let $X$ and $Y$ be integral schemes, and $f:X\to Y$ a dominant, quasi-compact, and universally closed morphism.
 Suppose further that $Y$ is affine of (integral) ring $B$.
@@ -459,7 +459,7 @@ by \sref{II.7.3.10}, \sref{II.7.1.2}, and \sref{II.7.1.3}, $\Gamma(X,\sh{O}_X)$ 
 the conclusion then follows from \sref{II.7.1.3}.
 \end{proof}
 
-\begin{remarks}
+\begin{remarks}[7.3.12]
 \label{II.7.3.12}
 Under the hypotheses of \sref{II.7.3.11}, and when we suppose that $R(X)$ is an extension of finite type of $R(Y)$, we can, in many cases, conclude that $\Gamma(X,\sh{O}_X)$ is a \emph{module of finite type} over the ring $B=\Gamma(Y,\sh{O}_X)$.
 For example, this will be the case whenever $B$ is an \emph{algebra of finite type over a field}, since we then know that the integral closure of $B$ in an extension of finite type of its field of fractions is a $B$-module of finite type (\cite[t.~I, p.~267, th.~9]{I-13});
@@ -484,3 +484,261 @@ We only mention this here as a remark, since criterion~\sref{II.7.3.8} seems mor
 
 The aim of this section is to show how to formulate the classical notion of algebraic curves (as introduced, by example, in the book of C.~Chevalley \cite{II-23}) in the language of schemes.
 All throughout this section, \emph{we write $k$ to mean a field, all the schemes in question are $k$-schemes of finite type, and all the morphisms are $k$-morphisms}.
+
+\begin{proposition}[7.4.1]
+\label{II.7.4.1}
+Let $X$ be a prescheme of finite type over $k$ (and thus Noetherian);
+let $x_i$ ($1\leq i\leq n$) be the generic points of the irreducible components $X_i$ of $X$, and let $K_i=\kres(x_i)$ ($1\leq i\leq n$).
+Then the following conditions are equivalent:
+\begin{enumerate}
+    \item[\rm{(a)}] Each of the $K_i$ is an extension of $k$ with transcendence degree equal to $1$.
+    \item[\rm{(b)}] For every closed point $x$ of $X$, the local ring $\sh{O}_x$ is of dimension $1$ \sref{II.7.1.5}.
+    \item[\rm{(c)}] The closed irreducible subsets of $X$ that are distinct from the $X_i$ are exactly the closed points of $X$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.4.1}
+Since $X$ is quasi-compact, every closed irreducible subset $F$ of $X$ contains a closed point \sref[0]{0.2.1.3}.
+By \sref[I]{I.2.4.2}, there is a bijective correspondence between the prime ideals of $\sh{O}_x$ and the closed irreducible subsets of $X$ that contain $x$ \sref[I]{I.1.1.14};
+the equivalence between (b) and (c) follows immediately from this.
+Now, if $\mathfrak{p}_\alpha$ ($1\leq\alpha\leq r$) are the minimal prime ideals of the local Noetherian ring $\sh{O}_x$, then the local rings $\sh{O}_x/\mathfrak{p}_\alpha$ are integral, and have the $K_i$ such that $x\in X_i$ as their fields of fractions.
+Furthermore, we know (\cite[p.~4-06, th.~2]{I-1}) that the dimension of a local integral $k$-algebra of finite type is equal to the transcendence degree over $k$ of its field of fractions.
+Finally, the dimension of $\sh{O}_x$ is bounded above by the dimensions of the $\sh{O}_x/\mathfrak{p}_\alpha$;
+but condition~(a) implies that these dimensions are equal to $1$, and so (a) implies (b);
+conversely, if $\sh{O}_x$ is of dimension $1$, then none of the $\mathfrak{p}_\alpha$ can be equal to the maximal ideal of $\sh{O}_x$, otherwise $\sh{O}_x$ would be of dimension $0$;
+thus each of the $\sh{O}_x/\mathfrak{p}_\alpha$ are of dimension $1$, which shows that (b) implies (a).
+\end{proof}
+
+We note that, under the conditions of \sref{II.7.4.1}, the set $X$ is either \emph{empty} or \emph{infinite}, as an immediate result of \sref[I]{I.6.4.4}.
+
+\begin{definition}[7.4.2]
+\label{II.7.4.2}
+We define an \emph{algebraic curve over $k$} to be a non-empty algebraic \emph{scheme} over $k$ that satisfies the conditions of \sref{II.7.4.1}.
+\end{definition}
+
+In the language of dimensions, which will be introduced in Chapter~IV, this can be expressed by saying that an algebraic curve over $k$ is a non-empty algebraic $k$-scheme \emph{whose irreducible components are all of dimension $1$}.
+
+We note that, if $X$ is an algebraic curve over $k$, then the closed reduced subpreschemes $X_i$ ($1\leq i\leq n$) of $X$ that have the irreducible components of $X$ as their underlying space are also algebraic curves over $k$.
+
+\begin{corollary}[7.4.3]
+\label{II.7.4.3}
+Let $X$ be an irreducible algebraic curve.
+The only non-closed point of $X$ is its generic point.
+The closed subsets of $X$ that are distinct from $X$ are the finite sets of closed points;
+these are also the only subsets of $X$ that are not everywhere dense.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.3}
+If a point $x\in X$ is not closed, then its closure in $X$ is an irreducible closed subset of $X$, and thus necessarily the whole of $X$, by \sref{II.7.4.1}, and thus $x$ is the generic point of $X$.
+A closed subset $F$ of $X$ that is distinct from $X$ cannot contain
+\oldpage[II]{149}
+the generic point of $X$, and so all its points are closed (in $X$, and \emph{a fortiori} in $F$);
+by considering the closed reduced subpreschemes of $X$ that have $F$ as their underlying space \sref[I]{I.5.2.1}, it thus follows from \sref[I]{I.6.2.2} that $F$ is finite and discrete.
+The closure in $X$ of any infinite subset of $X$ is thus necessarily equal to $X$ itself.
+\end{proof}
+
+If $X$ is an arbitrary algebraic curve, by applying \sref{II.7.4.3} to the irreducible components of $X$, we see that the only non-closed points of $X$ are the generic points of these components.
+
+\begin{corollary}[7.4.4]
+\label{II.7.4.4}
+Let $X$ and $Y$ be irreducible algebraic curves over $k$, and $f:X\to Y$ a $k$-morphism.
+For $f$ to be dominant, it is necessary and sufficient for $f^{-1}(y)$ to be finite for all $y\in Y$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.4}
+Indeed, if $f$ is not dominant, then $f(X)$ is necessarily a \emph{finite} subset of $Y$, by \sref{II.7.4.3}, and so it is not possible for $f^{-1}(y)$ to be finite for every point of $Y$, since otherwise $X$ would be finite, which is a contradiction \sref{II.7.4.1}.
+Conversely, if $f$ is dominant, then for any $y\in Y$ distinct from the generic point $\eta$ of $Y$, we have that $f^{-1}(y)$ is closed in $X$, since $\{y\}$ is closed in $Y$ \sref{II.7.4.3};
+also, by hypothesis, $f^{-1}(y)$ does not contain the generic point $\xi$ of $X$, and is thus finite, by \sref{II.7.4.3}.
+Finally, to see that, when $f$ is dominant, $f^{-1}(\eta)$ is finite, we note that the fibre $f^{-1}(\eta)$ is an irreducible scheme of finite type over $\kres(\eta)$, and with generic point $\xi$ (\sref[I]{I.6.3.9} and \sref[I]{6.4.11}).
+Since $\kres(\xi)$ and $\kres(\eta)$ are extensions of finite type of $k$, both of transcendence degree $1$, we have that $\kres(\xi)$ is necessarily an extension of finite degree of $\kres(\eta)$, and so $\xi$ is closed in $f^{-1}(\eta)$ \sref[I]{I.6.4.2}, and $f^{-1}(\eta)$ thus consists of a single point $\xi$.
+\end{proof}
+
+We will see, in Chapter~III, that, if $f:X\to Y$ is a \emph{proper} morphism of Noetherian preschemes such that $f^{-1}(y)$ is finite for all $y\in Y$, then $f$ is necessarily \emph{finite};
+it will thus follow from \sref{II.7.4.4} that a proper dominant morphism from an irreducible algebraic curve to an algebraic curve is \emph{finite}.
+
+\begin{corollary}[7.4.5]
+\label{II.7.4.5}
+Let $X$ be an algebraic curve over $k$.
+For $X$ to be regular, it is necessary and sufficient for $X$ to be normal, or for the local rings of its closed points to be discrete valuation rings.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.5}
+This follows immediately from \sref{II.7.4.1}[(b)] and \sref{II.7.1.6}.
+\end{proof}
+
+\begin{corollary}[7.4.6]
+\label{II.7.4.6}
+Let $X$ be a reduced algebraic curve, and $\sh{A}$ a reduced coherent $\sh{R}(X)$-algebra;
+then the integral closure $X'$ of $X$ relative to $\sh{A}$ \sref{II.6.3.4} is a normal algebraic curve, and the canonical morphism $X'\to X$ is finite.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.6}
+The fact that $X'\to X$ is finite follows from \sref{II.6.3.10};
+$X'$ is thus an algebraic $k$-scheme;
+furthermore, if $x_i$ ($1\leq i\leq n$) are the generic points of the irreducible components of $X$, and $x'_j$ ($1\leq j\leq m$) the generic points of the irreducible components of $X'$, then each of the $\kres(x'_j)$ is a finite algebraic extension of one of the $\kres(x_i)$ \sref{II.6.3.6}, and thus of transcendence degree $1$ over $k$.
+So $X'$ is indeed an algebraic curve over $k$, and, furthermore, we know that $X'$ is a finite sum of normal integral schemes (\sref{II.6.3.6} and \sref{II.6.3.7}).
+\end{proof}
+
+\begin{env}[7.4.7]
+\label{II.7.4.7}
+We say that an algebraic curve $X$ over $k$ is \emph{complete} if it is \emph{proper} over $k$.
+\end{env}
+
+\begin{corollary}[7.4.8]
+\label{II.7.4.8}
+For a reduced algebraic curve $X$ over $k$ to be complete, it is necessary and sufficient for its normalisation $X'$ to be complete.
+\end{corollary}
+
+\oldpage[II]{150}
+\begin{proof}
+\label{proof-II.7.4.8}
+The canonical morphism $f:X'\to X$ is finite \sref{II.7.4.6}, and thus proper \sref{II.6.1.11} and surjective \sref{II.6.3.8};
+if $g:X\to\Spec(k)$ is the structure morphism, then $g$ and $\circ f$ are both proper, by \sref{II.5.4.2}[(ii)] and \sref{II.5.4.3}[(ii)], since $g$ is separated by hypothesis.
+\end{proof}
+
+\begin{proposition}[7.4.9]
+\label{II.7.4.9}
+Let $X$ be a \emph{normal} algebraic curve over $k$, and $Y$ a \emph{proper} algebraic $k$-scheme over $k$.
+Then every rational $k$-map from $X$ to $Y$ is everywhere defined, or, in other words, is a morphism.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.4.9}
+It follows from \sref{II.7.3.7} that, at the points $x\in X$ where such a map is not defined, the dimension of $\sh{O}_x$ must be $\geq2$, and so the set of such points is empty;
+the final claim follows from \sref[I]{I.7.2.3}.
+\end{proof}
+
+\begin{corollary}[7.4.10]
+\label{II.7.4.10}
+A normal algebraic curve over $k$ is quasi-projective over $k$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.10}
+Since $X$ is a finite sum of normal integral algebraic curves \sref{II.6.3.8}, we can restrict to the case where $X$ is integral \sref{II.5.3.6}.
+Since $X$ is quasi-compact, it is covered by a finite number of affine open subsets $U_i$ ($1\leq i\leq n$), and, since each of these $U_i$ is of finite type over $k$, for each $i$ there exists some integer $n_i$ along with a $k$-immersion $f_i:U_i\to\bb{P}_k^{n_i}$ (\sref{II.5.3.3} and \sref{II.5.3.4}[(i)]).
+Since $U_i$ is dense in $X$, it follows from \sref{II.7.4.9} that $f_i$ can be extended to a $k$-morphism $g_i:X\to\bb{P}_k^{n_i}$, whence we obtain a $k$-morphism $g=(g_1,\ldots,g_n)_k$ from $X$ to the product $P$ of the $\bb{P}_k^{n_i}$ over $k$.
+Furthermore, for each $i$, since the restriction of $g_i$ to $U_i$ is an immersion, so too is the restriction of $g$ to $U_i$ \sref[I]{I.5.3.14}.
+Since the $U_i$ cover $X$, and since $g$ is separated \sref[I]{I.5.5.1}[(v)], $g$ is an immersion from $X$ into $P$ \sref[I]{I.8.2.8}.
+Since the Segre morphism \sref{II.4.3.3} gives an immersion of $P$ into $\bb{P}_k^N$, this proves that $X$ is quasi-projective.
+\end{proof}
+
+\begin{corollary}[7.4.11]
+\label{II.7.4.11}
+Any normal algebraic curve $X$ is isomorphic to the scheme induced by some complete normal algebraic curve $\hat{X}$ on some everywhere dense open subset, and this $\hat{X}$ is unique up to unique isomorphism.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.11}
+If $X_1$ and $X_2$ are complete normal curves, then it follows from \sref{II.7.4.9} that every isomorphism from any dense open $U_1$ in $X_1$ to any dense open $U_2$ in $X_2$ can be uniquely extended to an isomorphism from $X_1$ to $X_2$;
+whence the uniqueness claim.
+To prove the existence of $\hat{X}$, it suffices to note that we can consider $X$ as a subscheme of a projective bundle $\bb{P}_k^n$ \sref{II.7.4.10}.
+Let $\overline{X}$ be the closure of $X$ in $\bb{P}_k^n$ \sref[I]{I.9.5.11};
+since $X$ is induced by $\overline{X}$ on a dense open subset of $\overline{X}$ \sref[I]{I.9.5.10}, the generic points $x_i$ of the irreducible components of $X$ are also the generic points of the irreducible components of $\overline{X}$, and the $\kres(x_i)$ are the same for both of these schemes, and so \sref{II.7.4.1} $\overline{X}$ is an algebraic curve over $k$ that is reduced \sref[I]{I.9.5.9} and projective over $k$ \sref{II.5.5.1}, whence complete \sref{II.5.5.3}.
+So we take for $\hat{X}$ the \emph{normalisation} of $\overline{X}$, which is again complete \sref{II.7.4.8};
+furthermore, if $h:\hat{X}\to\overline{X}$ is the canonical morphism, then the restriction of $h$ to $h^{-1}(X)$ is an isomorphism to $X$, since $X$ is normal \sref{II.6.3.4}, and since $h^{-1}(X)$ contains the generic points of the irreducible components of $\hat{X}$ \sref{II.6.3.8}, it is dense in $\hat{X}$, which finishes the proof.
+\end{proof}
+
+\oldpage[II]{151}
+
+\begin{remark}[7.4.12]
+\label{II.7.4.12}
+We will show, in Chapter~V, that the conclusion of \sref{II.7.4.10} still holds true without the assumption that the curve is normal (or even reduced);
+we will also show that, for an algebraic curve (reduced or not) to be affine, it is necessary and sufficient for its (reduced) irreducible components to \emph{not} be complete.
+\end{remark}
+
+\begin{corollary}[7.4.13]
+\label{II.7.4.13}
+Let $X$ be a \emph{normal} irreducible curve over the field $K=R(X)$, and $Y$ a \emph{complete} integral curve over the field $L=R(Y)$.
+Then there is a canonical bijective correspondence between \emph{dominant} $k$-morphisms $X\to Y$ and $k$-monomorphisms $L\to K$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.13}
+By \sref{II.7.4.9}, rational $k$-map from $X$ to $Y$ can be identified with $k$-morphisms $u:X\to Y$.
+Since the dominant morphisms $u:X\to Y$ are characterised by being those such that $u(x)=y$ (writing $x$ and $y$ to denote the generic points of $X$ and $Y$, respectively), the corollary follows from these remarks and from \sref[I]{I.7.1.13}.
+\end{proof}
+
+\begin{env}[7.4.14]
+\label{II.7.4.14}
+We can refine the result of \sref{II.7.4.13} in the case where $Y$ is the \emph{projective line} $\bb{P}_k^1=\Proj(k[T_0,T])$, where $T_0$ and $T$ are indeterminates.
+Then $Y$ is an integral scheme \sref{II.2.4.4}, and the scheme induced on the open subset $D_+(T_0)$ of $Y$ is isomorphic to $\Spec(k[T])$ \sref{II.2.3.6}, and so the generic point of $Y$ is the ideal $(0)$ of $k[T]$, and the field of rational functions of $Y$ is $k(T)$, which proves that $Y$ is a complete algebraic curve over $k$.
+Furthermore, the only graded prime ideal of $S=k[T_0,T]$ that contains $T_0$ and is distinct from $S_+$ is the principal ideal $(T_0)$, and so the complement of $D_+(T_0)$ in $Y=\bb{P}_k^1$ consists of \emph{one closed point}, called the ``point at infinity'', which we denote by $\infty$ (for a general study of the links between vector bundles and projective bundles, see \sref{subsection:II.8.4}).
+With these notations:
+\end{env}
+
+\begin{corollary}[7.4.15]
+\label{II.7.4.15}
+Let $X$ be a \emph{normal} irreducible curve over the field $K=R(X)$.
+Then there exists a canonical bijective correspondence between the set $K$ and the set of morphisms $u$ from $X$ to $\bb{P}_k^1$ that are distinct from the constant morphism with value $\infty$.
+For such a rational map to be dominant, it is necessary and sufficient for the corresponding element of $K$ to be transcendent over $k$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.15}
+This claim follows immediately from \sref{II.7.4.9} and the following:
+\begin{lemma}
+\label{II.7.4.15.1}
+Let $X$ be an integral prescheme over $k$, and let $K=R(X)$ be its field of rational functions.
+Then there exists a canonical bijective correspondence between the set $K$ and the set of rational maps $u$ from $X$ to $\bb{P}_k^1$ that are distinct from the constant morphism with value $\infty$.
+For such a rational map to be dominant, it is necessary and sufficient for the corresponding element of $K$ to be transcendent over $k$.
+\end{lemma}
+First of all, rational maps from $X$ to $\bb{P}_k^1$ correspond bijectively to points of $\bb{P}_k^1$ with values in the extension $K$ of $k$ \sref[I]{I.7.1.12}.
+If such a point is located \sref[I]{I.3.4.5} at the generic point of $\bb{P}_k^1$, then the corresponding rational map is clearly dominant.
+In the converse case, since every point of $\bb{P}_k^1$ that is distinct from the generic point is closed \sref{II.7.4.3}, the image of the domain of definition $U$ of $u$ by the unique morphism $U\to\bb{P}_k^1$ of the class $u$ \sref[I]{I.7.2.2} consists of one closed point $y$ of $\bb{P}_k^1$, and this morphism (which is not necessarily everywhere defined on $X$) is thus not dominant;
+as an abuse of language, we thus say that the rational map $u$ is ``constant, of value $y$''.
+It remains to place in bijective correspondence the points of $\bb{P}_k^1$ with value in $K$ that are located \sref[I]{I.3.4.5} \emph{not} at $\infty$, and the elements of $K$, and then to verify that the location of such a point is the generic point of $\bb{P}_k^1$ if and only if it corresponds to an
+\oldpage[II]{152}
+element that is transcendental over $k$.
+But this is immediate \sref{II.4.2.6}[example~1].
+\end{proof}
+
+\begin{corollary}[7.4.16]
+\label{II.7.4.16}
+Let $X$ and $Y$ be algebraic curves over $k$ that are \emph{normal}, \emph{complete}, and irreducible;
+let $K=R(X)$ and $L=R(Y)$ be their fields.
+Then there exists a canonical bijective correspondence between the set of $k$-isomorphisms $X\xrightarrow{\sim}Y$ and the set of $k$-isomorphisms $L\xrightarrow{\sim}K$.
+\end{corollary}
+
+\begin{proof}
+\label{proof-II.7.4.16}
+This is an evident consequence of \sref{II.7.4.13}.
+\end{proof}
+
+\begin{env}[7.4.17]
+\label{II.7.4.17}
+This corollary \sref{II.7.4.16} shows that an algebraic curve over $k$ that is normal, complete, and irreducible, is \emph{determined by its field of rational functions $K$ up to unique isomorphism};
+by definition, $K$ is an extension of finite type of $k$, of transcendence degree $1$ (we classically call this a \emph{field of algebraic functions of one variable}).
+Furthermore:
+\end{env}
+
+\begin{proposition}[7.4.18]
+\label{II.7.4.18}
+For every extension $K$ of $k$ of finite type and of transcendence degree $1$, there exists an algebraic curve $X$ (determined up to unique isomorphism) that is normal, complete, and irreducible, and such that $R(X)=K$.
+The set of local rings of $X$ can be identified \sref[I]{I.8.2.1} with the set consisting of the elements of $K$ and the elements of the valuation rings that contain $k$ and have $K$ as their field of fractions.
+\end{proposition}
+
+\begin{proof}
+\label{proof-II.7.4.18}
+Indeed, $K$ is an extension of finite degree of a pure transcendental extension $k(T)$ of $k$, which can be identified, as we have seen, with the field of rational functions of the projective line $Y=\bb{P}_k^1$.
+Let $X$ be the \emph{integral closure} of $Y$ relative to $K$ \sref{II.6.3.4};
+then $X$ is a normal algebraic curve over the field $K$ \sref{II.6.3.7}, and it is complete, since the morphism $X\to Y$ is finite \sref{II.7.4.6}.
+The local rings $\sh{O}_x$ of $X$ are either the field $K$, when $x$ is the generic point, or discrete valuation rings that contain $k$ and have $K$ as their field of fractions, when $x$ is distinct from the generic point \sref{II.7.4.5}.
+Conversely, let $A$ be such a ring;
+since the morphism $X\to\Spec(k)$ is proper, the fact that $A$ dominates $k$ implies that $A$ also dominates a local ring $\sh{O}_x$ of $X$ \sref{II.7.3.10};
+since the latter is a valuation ring that has $K$ as a field of fractions, it is necessarily equal to $A$.
+\end{proof}
+
+\begin{remarks}[7.4.19]
+\label{II.7.4.19}
+It follows from \sref{II.7.4.16} and \sref{II.7.4.18} that \emph{the data of an algebraic curve over $k$ that is normal, complete, and irreducible, is essentially equivalent to the data of an extension $K$ of $k$ that is of finite type and of transcendence degree $1$}.
+We note that, if $k'$ is an extension of the base field $k$, then $X\otimes_k k'$ will again be a complete algebraic curve over $k'$ \sref{II.5.4.2}[(iii)], but, in general, it will be neither reduced nor irreducible.
+It will, however, be both reduced and irreducible if $K$ is a separable extension of $k$, and $k$ is algebraically closed in $K$ (this can be expressed, in classical terminology, which we will not use, by saying that $K$ is a ``regular extension'' of $k$).
+But even in this case, it is possible for $X\otimes_k k'$ to not be normal.
+The reader will find details on these questions in Chapter~IV.
+\end{remarks}
