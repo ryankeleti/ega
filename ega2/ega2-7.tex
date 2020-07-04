@@ -50,7 +50,6 @@ We can furthermore suppose that one of the two additional following properties a
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.1.4}
 Let $Y_1$ be the reduced closed subprescheme of $Y$ that has $\overline\{y\}$ as its underlying space \sref[I]{I.5.2.1}, and let $X_1$ be the closed subprescheme given by the inverse image $p^{-1}(Y_1)$;
 since $y'\in\overline{\{y\}}$ by hypothesis, and since $\kres(x)$ is the same in $X$ and in $X_1$, we can assume that $Y$ is \emph{integral}, with generic point $y$;
 $\sh{O}_{y'}$ is then an integral local ring that is not a field, and whose field of fractions is $\sh{O}_y=\kres(y)$, and $\kres(x)$ is then an extension of $\kres(y)$.
@@ -87,7 +86,6 @@ then there exists a discrete valuation ring that dominates $A$ and has $L$ as it
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.1.7}
 Suppose first of all that $L=K$.
 Let $\mathfrak{m}$ be the maximal ideal of $A$, $(x_1,\ldots,x_n)$ a system of non-null generators of $\mathfrak{m}$, and $B$ the subring $A[x_2/x_1,\ldots,x_n/x_1]$ of $K$, which is Noetherian.
 It is immediate that the ideal $\mathfrak{m}B$ of $B$ is identical to the principal ideal $x_1B$;
@@ -109,7 +107,6 @@ Then the integral closure of $A$ in $L$ is the intersection of the discrete valu
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.1.8}
 Indeed, such a discrete valuation ring, being normal, contains \emph{a fortiori} every element of $L$ that is integral over $A$.
 It thus suffices to prove that, if $x\in L$ is not integral over $A$, then there exists a discrete valuation ring $C$ that has $L$ as its field of fractions, contains $A$, and does not contain $x$.
 The hypothesis on $x$ implies that $x\not\in B=A[1/x]$, or, in other words, that $1/x$ is not invertible in the Noetherian ring $B$.
@@ -139,7 +136,6 @@ Then there exists a local scheme $Y'$, spectrum of a discrete valuation ring, a 
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.1.9}
 As in \sref{II.7.1.4}, we can restrict to the case where $Y$ is integral with generic point $y$ (taking \sref[I]{I.6.4.3}[iv] into account), and, since the question is local on $X$ and $Y$, we can assume that $p$ is of finite type;
 we are then in the situation of \sref{II.7.1.4}, with the additional property that $\kres(x)$ is an extension \emph{of finite type} of $\kres(y)$ \sref[I]{I.6.4.11} and that $\sh{O}_{y'}$ is Noetherian;
 this lets us apply \sref{II.7.1.7} and take $Y'=\Spec(A')$, where $A'$ is a discrete valuation ring that dominates $\sh{O}_{y'}$ and whose field of fractions is $\kres(x)$.
@@ -161,7 +157,6 @@ The following two conditions are equivalent:
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.2.1}
 Condition~(b) implies that $f(\overline{\{x\}})=\overline{\{y\}}$, and is thus a consequence of (a).
 To show that (b) implies (a), consider a closed subset $X'$ of the underlying space $X$;
 let $Y'=\overline{f(X')}$, and show that $Y'=f(X')$ as follows.
@@ -202,7 +197,6 @@ The following conditions are equivalent:
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.2.3}
 The equivalence of (b) and (c) follows from the bijective correspondence between $Y$-morphisms from $Y'$ to $X$ and $Y'$-sections of $X'$ \sref[I]{I.3.3.14}.
 If $X$ is separated over $Y$, condition~(b) is satisfied, by \sref[I]{I.7.2.2.1}, since $Y'$ is integral.
 It remains to show that (b) implies that the diagonal morphism $\Delta:X\to X\times_Y X$ is closed, and it is equivalent to show that it satisfies the criteria of \sref{II.7.2.2}.
@@ -238,7 +232,6 @@ Then $f$ is an isomorphism.
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.3.1}
 Since $f$ if closed and dominant, we have that $f(X)=Y$;
 it suffices \sref[I]{I.4.2.2} to prove that, for all $y'\neq b$ in $Y$, there exists \emph{exactly one} point $x'$ such that $f(x')=y'$, and that the corresponding homomorphism $\sh{O}_{y'}\to\sh{O}_{x'}$ is bijective, since then $f$ will be a homeomorphism.
 But if $f(x')=y'$ then $\sh{O}_{x'}$ is a local ring contained in $K=\kres(x)=\kres(b)$ and dominating $\sh{O}_{y'}$;
@@ -277,7 +270,6 @@ Then the canonical map \sref{II.7.3.2.2} is bijective (which is equivalent to sa
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.3.3}
 So let $x$ be a point of $f^{-1}(b)$ that is \emph{rational} over $K$.
 Since $f$ is separated, so too is the morphism $f^{-1}(b)\to\Spec(K)$ corresponding to $f$ \sref[I]{I.5.5.1}[iv], and, since every section of $f^{-1}(b)$ is a closed immersion \sref[I]{I.5.4.6}, $\{x\}$ is closed \emph{in $f^{-1}(b)$}.
 Consider the reduced closed subprescheme $X'$ of $X$ that has the closure $\overline{\{x\}}$ of $\{x\}$ \emph{in $X$} as its underlying space.
@@ -300,7 +292,6 @@ if $Y'$ is the set of points of $Y$ where $g$ is not defined (a set which is \em
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.3.5}
 It suffices to prove that $g$ is defined at every point $z\in Y$ such that $\dim\sh{O}_z\leq1$.
 If $\dim\sh{O}_z=0$, then $z$ is the generic point of an irreducible component of $Y$ \sref[I]{I.1.1.14}, and so belongs to every everywhere-dense open subset of $Y$, and, in particular, to the domain of definition of $g$.
 So suppose that $\dim\sh{O}_z=1$; by hypothesis, $\sh{O}_z$ is then a regular Noetherian local ring, and thus \sref{I.7.1.6} a \emph{discrete valuation ring}.
@@ -324,7 +315,6 @@ then $\codim_Y Y'\geq2$.
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.3.6}
 We know \sref[I]{I.7.1.2} that we can identify the rational $S$-maps from $Y$ to $X$ with the rational $Y$-sections of $X\times_S Y$;
 since the structure morphism $X\times_S Y\to Y$ is closed \sref{II.5.4.1}, we can apply \sref{II.7.3.5}, whence the corollary.
 \end{proof}
@@ -352,7 +342,6 @@ The following conditions are equivalent:
 \end{theorem}
 
 \begin{proof}
-\label{proof-II.7.3.8}
 The equivalence of (b) and (c) follows immediately from \sref[I]{I.3.3.14};
 (a) implies (b), since (a) implies, in either case, that $f_(Y')$ is separated \sref[I]{I.5.5.1}[iv] and closed, and it suffices to apply \sref{II.7.3.3}.
 It remains to prove that (b) implies (a).
@@ -406,7 +395,6 @@ Let $Y$ be an integral scheme (resp. a locally Noetherian integral scheme), $X$ 
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.3.10}
 Note first of all that the hypotheses imply, in any case, that $f$ is separated \sref[I]{I.5.5.9}.
 \begin{enumerate}
     \item[\rm{(i)}] Let $K=R(Y)$, $L=R(X)$, $y$ a point of $Y$, and $A$ a valuation ring that dominates $\sh{O}_y$ and has $L$ as its field of fractions;
@@ -453,7 +441,6 @@ Then $\Gamma(X,\sh{O}_X)$ is canonically isomorphic to a subring of the integral
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.3.11}
 Indeed \sref[I]{I.8.2.1.1}, $\Gamma(X,\sh{O}_X)$ can be identified with the intersection of the $\sh{O}_x$ over $x\in X$;
 by \sref{II.7.3.10}, \sref{II.7.1.2}, and \sref{II.7.1.3}, $\Gamma(X,\sh{O}_X)$ is then contained in the intersection of the valuation rings that contain $B$ and that have $R(X)$ as their field of fractions;
 the conclusion then follows from \sref{II.7.1.3}.
@@ -498,7 +485,6 @@ Then the following conditions are equivalent:
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.4.1}
 Since $X$ is quasi-compact, every closed irreducible subset $F$ of $X$ contains a closed point \sref[0]{0.2.1.3}.
 By \sref[I]{I.2.4.2}, there is a bijective correspondence between the prime ideals of $\sh{O}_x$ and the closed irreducible subsets of $X$ that contain $x$ \sref[I]{I.1.1.14};
 the equivalence between (b) and (c) follows immediately from this.
@@ -530,7 +516,6 @@ these are also the only subsets of $X$ that are not everywhere dense.
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.3}
 If a point $x\in X$ is not closed, then its closure in $X$ is an irreducible closed subset of $X$, and thus necessarily the whole of $X$, by \sref{II.7.4.1}, and thus $x$ is the generic point of $X$.
 A closed subset $F$ of $X$ that is distinct from $X$ cannot contain
 \oldpage[II]{149}
@@ -548,7 +533,6 @@ For $f$ to be dominant, it is necessary and sufficient for $f^{-1}(y)$ to be fin
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.4}
 Indeed, if $f$ is not dominant, then $f(X)$ is necessarily a \emph{finite} subset of $Y$, by \sref{II.7.4.3}, and so it is not possible for $f^{-1}(y)$ to be finite for every point of $Y$, since otherwise $X$ would be finite, which is a contradiction \sref{II.7.4.1}.
 Conversely, if $f$ is dominant, then for any $y\in Y$ distinct from the generic point $\eta$ of $Y$, we have that $f^{-1}(y)$ is closed in $X$, since $\{y\}$ is closed in $Y$ \sref{II.7.4.3};
 also, by hypothesis, $f^{-1}(y)$ does not contain the generic point $\xi$ of $X$, and is thus finite, by \sref{II.7.4.3}.
@@ -566,7 +550,6 @@ For $X$ to be regular, it is necessary and sufficient for $X$ to be normal, or f
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.5}
 This follows immediately from \sref{II.7.4.1}[(b)] and \sref{II.7.1.6}.
 \end{proof}
 
@@ -577,7 +560,6 @@ then the integral closure $X'$ of $X$ relative to $\sh{A}$ \sref{II.6.3.4} is a 
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.6}
 The fact that $X'\to X$ is finite follows from \sref{II.6.3.10};
 $X'$ is thus an algebraic $k$-scheme;
 furthermore, if $x_i$ ($1\leq i\leq n$) are the generic points of the irreducible components of $X$, and $x'_j$ ($1\leq j\leq m$) the generic points of the irreducible components of $X'$, then each of the $\kres(x'_j)$ is a finite algebraic extension of one of the $\kres(x_i)$ \sref{II.6.3.6}, and thus of transcendence degree $1$ over $k$.
@@ -596,7 +578,6 @@ For a reduced algebraic curve $X$ over $k$ to be complete, it is necessary and s
 
 \oldpage[II]{150}
 \begin{proof}
-\label{proof-II.7.4.8}
 The canonical morphism $f:X'\to X$ is finite \sref{II.7.4.6}, and thus proper \sref{II.6.1.11} and surjective \sref{II.6.3.8};
 if $g:X\to\Spec(k)$ is the structure morphism, then $g$ and $\circ f$ are both proper, by \sref{II.5.4.2}[(ii)] and \sref{II.5.4.3}[(ii)], since $g$ is separated by hypothesis.
 \end{proof}
@@ -608,7 +589,6 @@ Then every rational $k$-map from $X$ to $Y$ is everywhere defined, or, in other 
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.4.9}
 It follows from \sref{II.7.3.7} that, at the points $x\in X$ where such a map is not defined, the dimension of $\sh{O}_x$ must be $\geq2$, and so the set of such points is empty;
 the final claim follows from \sref[I]{I.7.2.3}.
 \end{proof}
@@ -619,7 +599,6 @@ A normal algebraic curve over $k$ is quasi-projective over $k$.
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.10}
 Since $X$ is a finite sum of normal integral algebraic curves \sref{II.6.3.8}, we can restrict to the case where $X$ is integral \sref{II.5.3.6}.
 Since $X$ is quasi-compact, it is covered by a finite number of affine open subsets $U_i$ ($1\leq i\leq n$), and, since each of these $U_i$ is of finite type over $k$, for each $i$ there exists some integer $n_i$ along with a $k$-immersion $f_i:U_i\to\bb{P}_k^{n_i}$ (\sref{II.5.3.3} and \sref{II.5.3.4}[(i)]).
 Since $U_i$ is dense in $X$, it follows from \sref{II.7.4.9} that $f_i$ can be extended to a $k$-morphism $g_i:X\to\bb{P}_k^{n_i}$, whence we obtain a $k$-morphism $g=(g_1,\ldots,g_n)_k$ from $X$ to the product $P$ of the $\bb{P}_k^{n_i}$ over $k$.
@@ -634,7 +613,6 @@ Any normal algebraic curve $X$ is isomorphic to the scheme induced by some compl
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.11}
 If $X_1$ and $X_2$ are complete normal curves, then it follows from \sref{II.7.4.9} that every isomorphism from any dense open $U_1$ in $X_1$ to any dense open $U_2$ in $X_2$ can be uniquely extended to an isomorphism from $X_1$ to $X_2$;
 whence the uniqueness claim.
 To prove the existence of $\hat{X}$, it suffices to note that we can consider $X$ as a subscheme of a projective bundle $\bb{P}_k^n$ \sref{II.7.4.10}.
@@ -659,7 +637,6 @@ Then there is a canonical bijective correspondence between \emph{dominant} $k$-m
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.13}
 By \sref{II.7.4.9}, rational $k$-map from $X$ to $Y$ can be identified with $k$-morphisms $u:X\to Y$.
 Since the dominant morphisms $u:X\to Y$ are characterised by being those such that $u(x)=y$ (writing $x$ and $y$ to denote the generic points of $X$ and $Y$, respectively), the corollary follows from these remarks and from \sref[I]{I.7.1.13}.
 \end{proof}
@@ -680,7 +657,6 @@ For such a rational map to be dominant, it is necessary and sufficient for the c
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.15}
 This claim follows immediately from \sref{II.7.4.9} and the following:
 \begin{lemma}
 \label{II.7.4.15.1}
@@ -706,7 +682,6 @@ Then there exists a canonical bijective correspondence between the set of $k$-is
 \end{corollary}
 
 \begin{proof}
-\label{proof-II.7.4.16}
 This is an evident consequence of \sref{II.7.4.13}.
 \end{proof}
 
@@ -724,7 +699,6 @@ The set of local rings of $X$ can be identified \sref[I]{I.8.2.1} with the set c
 \end{proposition}
 
 \begin{proof}
-\label{proof-II.7.4.18}
 Indeed, $K$ is an extension of finite degree of a pure transcendental extension $k(T)$ of $k$, which can be identified, as we have seen, with the field of rational functions of the projective line $Y=\bb{P}_k^1$.
 Let $X$ be the \emph{integral closure} of $Y$ relative to $K$ \sref{II.6.3.4};
 then $X$ is a normal algebraic curve over the field $K$ \sref{II.6.3.7}, and it is complete, since the morphism $X\to Y$ is finite \sref{II.7.4.6}.

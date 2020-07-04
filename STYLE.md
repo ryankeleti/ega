@@ -94,11 +94,12 @@ For equations, write
 If an equation needs a tag, write
 ```latex
 \[
+\label{R.x.y.z.n}
 ␣␣equation
 ␣␣\tag{x.y.z.n}
 \]
 ```
-where `x.y.z.n` is the tag.
+where `x.y.z.n` is the tag, and `R` the volume number.
 
 ### Environment style
 
