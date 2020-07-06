@@ -314,11 +314,134 @@ from this we obtain \sref{II.4.2.2} a canonical morphism, called the \emph{Segre
 \]
 
 We can study the morphism $\varsigma$ more explicitly in the case where $Y=\Spec(A)$ is affine, and $\sh{E}=\widetilde{E}$ and $\sh{F}=\widetilde{F}$, where $E$ and $F$ are $A$-modules, whence $\sh{E}\otimes_{\sh{O}_Y}\sh{F}=(E\otimes_A F)^\sim$ \sref[I]{I.1.3.12};
+let $R=\bb{S}_A(E)$, $S=\bb{S}_A(F)$, and $T=\bb{S}_A(E\otimes_A F)$;
+let $f\in E$ and $g\in F$, and consider the affine open
+\[
+  D_+(f) \times_Y D_+(g) = \Spec(B)
+\]
+\oldpage[II]{77}
+of $Q$, where $B=R_{(f)}\otimes_A S_{(g)}$;
+the restriction of $\sh{L}$ to this affine open is $\widetilde{L}$, where
+\[
+  L = (R(1))_{(f)} \otimes_A (S(1))_{(g)}
+\]
+and the element $c=(f/1)\otimes(g/1)$ is a generator of $L$ considered as a free $B$-module \sref{II.2.5.7}.
+The homomorphism \sref{II.4.3.1.1} corresponds to the homomorphism
+\[
+  (x\otimes y)\otimes b \mapsto b((x/1)\otimes(y/1))
+\]
+from $(E\otimes_A F)\otimes_A B$ to $L$.
+With the notation of \sref{II.3.7.2}, we thus have that $v_1(x\otimes y)=(x/f)\otimes(y/g)$;
+the restriction of $\varsigma$ to $D_+(f)\times_Y D_+(g)$ is a morphism from this affine scheme to $D_+(f\otimes g)$, corresponding to the ring homomorphism $\omega:T_{(f\otimes g)}\to R_{(f)}\otimes_A S_{(g)}$ defined by
+\[
+\label{II.4.3.1.3}
+  \omega((x\otimes y)/(f\otimes g)) = (x/f)\otimes(y/g)
+  \tag{4.3.1.3}
+\]
+for $x\in E$ and $y\in F$.
 \end{env}
 
+\begin{env}[4.3.2]
+\label{II.4.3.2}
+It follows from \sref{II.4.2.3} that we have a canonical isomorphism
+\[
+\label{II.4.3.2.1}
+  \tau: \varsigma^*(\sh{O}_P(1)) \xrightarrow{\sim} \sh{O}_{P_1}(1)\otimes_Y\sh{O}_{P_2}(1)
+  \tag{4.3.2.1}
+\]
+where we let $P=\bb{P}(\sh{E}\otimes_{\sh{O}_Y}\sh{F})$.
+We will show that, for $x\in\Gamma(Y,\sh{E})$ and $y\in\Gamma(Y,\sh{F})$, we have
+\[
+\label{II.4.3.2.2}
+  \tau(\alpha_1(x\otimes y)) = \alpha_1(x)\otimes\alpha_1(y).
+  \tag{4.3.2.2}
+\]
 
-% \subsection{Immersions in projective bundles; very ample sheaves}
-% \label{subsection:II.4.4}
+Indeed, we can restrict to the case where $Y$ is affine, and we then have, with the notation of \sref{II.4.3.1} and \sref{II.2.6.2}, that $\alpha_1^{f\otimes g}(x\otimes y)=(x\otimes y)/1$ in $(T(1))_{(f\otimes g)}$, that $\alpha_1^f(x)=x/1$ in $(R(1))_{(f)}$, and that $\alpha_1^g(y)=y/1$ in $(S(1))_{(g)}$.
+The definition of $\tau$ given in \sref{II.4.2.3} and the calculation of $v_1$ done in \sref{II.4.3.1} then immediately prove the claim \sref{II.4.3.2.2}.
+From this we obtain the equation
+\[
+\label{II.4.3.2.3}
+  \varsigma^{-1}(P_{x\otimes y}) = (P_1)_x\times_Y(P_2)_y
+  \tag{4.3.2.3}
+\]
+with the notation of \sref{II.3.1.4}.
+Indeed, taking \sref{II.3.3.3} into account, the equation \sref{II.4.3.2.2} (by restricting to the affine case, with the help of \sref[I]{I.3.2.7} and \sref[I]{I.3.2.3}) leaves us only to prove the following lemma:
+\begin{lemma}[4.3.2.4]
+\label{II.4.3.2.4}
+Let $B$ and $B'$ be $A$-algebras, and let $Y=\Spec(A)$, $Z=\Spec(B)$, and $Z'=\Spec(B')$;
+then $D(t\otimes t')=D(t)\times_Y D(t')$ for any $t\in B$, $t'\in B'$.
+\end{lemma}
+\begin{proof}
+Indeed, if $p:Z\times_Y Z'\to Z$ and $p':Z\times_Y Z'\to Z'$ are the canonical projections, then it follows from \sref[I]{I.1.2.2.2} that $p^{-1}(D(t))=D(t\otimes1)$ and $p'^{-1}(D(t'))=D(1\otimes t')$;
+the conclusion follows from \sref[I]{I.3.2.7} and \sref[I]{I.1.1.9.1}, since $(t\otimes1)(1\otimes t')=t\otimes t'$.
+\end{proof}
+\end{env}
+
+\begin{proposition}[4.3.3]
+\label{II.4.3.3}
+The Segre morphism is a closed immersion.
+\end{proposition}
+
+\begin{proof}
+Since the question is local on $Y$, we can restrict to the case where $Y$ is affine.
+With the notation of \sref{II.4.3.1} and \sref{II.4.3.1}, the $D_+(f\otimes g)$ then form a basis for the topology of $P$, since the $f\otimes g$ generate $T$ when $f$ runs over $E$ and $g$ runs over $F$.
+By \sref{II.4.3.2.3}, we also know that $\varsigma^{-1}(D_+(f\otimes g))=D_+(f)\times_Y D_+(g)$.
+It thus suffices \sref[I]{I.4.2.4} to prove that the restriction of $\varsigma$ to $D_+(f)\times_Y D_+(g)$ is a closed immersion into $D_+(f\otimes g)$.
+But, with the same notation, the equation \sref{II.4.3.1.3} shows that $\omega$ is \emph{surjective}, which completes the proof.
+\end{proof}
+
+\begin{env}[4.3.4]
+\label{II.4.3.4}
+The Segre morphism is \emph{functorial} in $\sh{E}$ and $\sh{F}$, if we consider only
+\oldpage[II]{78}
+\emph{surjective} homomorphisms of quasi-coherent $\sh{O}_Y$-modules.
+Indeed, we must then show that, if $\sh{E}\to\sh{E}'$ is a surjective $\sh{O}_Y$-homomorphism, then the diagram
+\[
+  \xymatrix{
+    \bb{P}(\sh{E}')\times\bb{P}(\sh{F}) \ar[r]^{j\times1} \ar[d]_{\varsigma}
+    & \bb{P}(\sh{E})\times\bb{P}(\sh{F}) \ar[d]^{\varsigma}
+  \\\bb{P}(\sh{E}'\otimes\sh{F}) \ar[r]
+    &\bb{P}(\sh{E}\otimes\sh{F})
+  }
+\]
+commutes, where $j$ denotes the canonical closed immersion $\bb{P}(\sh{E}')\to\bb{P}(\sh{E})$.
+Let $P'_1=\bb{P}(\sh{E}')$ and keep the notation from \sref{II.4.3.1};
+then $j\times1$ is a closed immersion \sref[I]{I.4.3.1} and, up to isomorphism,
+\[
+  (j\times1)^*(\sh{O}_{P_1}(1)\otimes\sh{O}_{P_2}(1))
+  = j^*(\sh{O}_{P_1}(1))\otimes\sh{O}_{P_2}(1)
+  = \sh{O}_{P'_1}(1)\otimes\sh{O}_{P_2}(1)
+\]
+by \sref{II.4.1.2.1} and \sref[I]{I.9.1.5};
+our claim then follows from \sref{II.4.2.8} and \sref{II.4.2.9}.
+\end{env}
+
+\begin{env}[4.3.5]
+\label{II.4.3.5}
+With the notation of \sref{II.4.3.1}, let $\psi:Y'\to Y$ be a morphism, and let $\sh{E}'=\psi^*(\sh{E})$ and $\sh{F}'=\psi^*(\sh{F})$;
+then the Segre morphism $\bb{P}(\sh{E}')\times\bb{P}(\sh{F}')\to\bb{P}(\sh{E}'\otimes\sh{F}')$ can be identified with $\varsigma_{(Y')}$.
+Indeed, keeping the notation of \sref{II.4.3.1}, let $P'_1=\bb{P}(\sh{E}')$ and $P_2=\bb{P}(\sh{F}')$;
+we know \sref{II.4.1.3.1} that $P'_i$ can be identified with $(P_i)_{(Y')}$ ($i=1,2$), and so the structure morphism $P'_1\times P'_2\to Y'$ can be identified with $r_{(Y')}$.
+Also $\sh{E}'\otimes\sh{F}'$ can be identified with $\psi^*(\sh{E}\otimes\sh{F})$, and so $\bb{P}(\sh{E}'\otimes\sh{F}')$ can be identified with $(\bb{P}(\sh{E}\otimes\sh{F}))_{(Y')}$ \sref{II.4.1.3.1}.
+Finally, $\sh{O}_{P'_1}(1)\otimes_Y\sh{O}_{P'_2}(1)=\sh{L}'$ can be identified with $\sh{L}\otimes_Y\sh{O}_{Y'}$, by \sref{II.4.1.3.1} and \sref[I]{I.9.1.11}.
+The canonical homomorphism $(r_{(Y)})^*(\sh{E}'\otimes\sh{F}')\to\sh{L}'$ can then be identified with $s_{(Y')}$, and our claim follows from \sref{II.4.2.10}.
+\end{env}
+
+\begin{remark}[4.3.6]
+\label{II.4.3.6}
+The prescheme given by the \emph{sum} of $\bb{P}(\sh{E})$ and $\bb{P}(\sh{F})$ is even canonically isomorphic to a \emph{closed subprescheme of $\bb{P}(\sh{E}\oplus\sh{F})$}.
+Indeed, the surjective homomorphisms $\sh{E}\oplus\sh{F}\to\sh{E}$ and $\sh{E}\oplus\sh{F}\to\sh{F}$ correspond to closed immersions $\bb{P}(\sh{E})\to\bb{P}(\sh{E}\oplus\sh{F})$ and $\bb{P}(\sh{F})\to\bb{P}(\sh{E}\oplus\sh{F})$;
+everything then reduces to showing that the underlying spaces of the closed subpreschemes of $\bb{P}(\sh{E}\oplus\sh{F})$ obtained in this way have empty intersection.
+Since the question is local on $Y$, we can adopt the notation of \sref{II.4.3.1};
+but $\bb{S}_n(E)$ and $\bb{S}_n(F)$ can be identified with submodules of $\bb{S}_n(E\oplus F)$ with intersection consisting only of $0$;
+if $\mathfrak{p}$ is a graded prime ideal of $\bb{S}(E)$ such that $\mathfrak{p}\cap\bb{S}_n(E)\neq\bb{S}_n(E)$ for any $n\geq0$, then there exists a corresponding graded prime ideal of $\bb{S}(E\oplus F)$ whose intersection with $\bb{S}_n(E)$ is $\mathfrak{p}\cap\bb{S}_n(E)$, but who also \emph{contains} $\bb{S}_+(F)$, as we immediately see;
+thus no point in $\Proj(\bb{S}(E))$ can have the same image in $\Proj(\bb{S}(E\oplus F))$ as any point in $\Proj(\bb{S}(F))$.
+\end{remark}
+
+
+\subsection{Immersions in projective bundles; very ample sheaves}
+\label{subsection:II.4.4}
 
 
 % \subsection{Ample sheaves}
