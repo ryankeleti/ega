@@ -1,6 +1,6 @@
 # EGA
 
-![EGA0status](https://img.shields.io/badge/EGA%200-46%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-brightgreen) ![EGA2status](https://img.shields.io/badge/EGA%20II-45%25-orange) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
+![EGA0status](https://img.shields.io/badge/EGA%200-35%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-brightgreen) ![EGA2status](https://img.shields.io/badge/EGA%20II-50%25-orange) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
 
 Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
@@ -26,18 +26,10 @@ All the PDFs are auto-compliled every hour if any changes have been made since t
 
 ## Current status
 
-| | First draft | Proofreading |
-| - | - | - |
-| ![EGA0](https://img.shields.io/badge/EGA-0-lightgrey) | ![EGA0fd](https://img.shields.io/badge/-46%25-yellow) | ![EGA0p](https://img.shields.io/badge/-7%25-red)|
-| ![EGA1](https://img.shields.io/badge/EGA-1-lightgrey) | ![EGA1fd](https://img.shields.io/badge/-100%25-green) | ![EGA1p](https://img.shields.io/badge/-100%25-green)|
-| ![EGA2](https://img.shields.io/badge/EGA-2-lightgrey) | ![EGA2fd](https://img.shields.io/badge/-45%25-orange) | ![EGA2p](https://img.shields.io/badge/-0%25-red)|
-| ![EGA3](https://img.shields.io/badge/EGA-3-lightgrey) | ![EGA3fd](https://img.shields.io/badge/-3%25-red) | ![EGA3p](https://img.shields.io/badge/-0%25-red)|
-| ![EGA4](https://img.shields.io/badge/EGA-4-lightgrey) | ![EGA4fd](https://img.shields.io/badge/-1%25-red) | ![EGA4p](https://img.shields.io/badge/-0%25-red)|
+Here is the current status of the translation, along with who is currently working on/has worked on which sections. (Page counts and percentages are usually just rough estimates).
 
-Here is the current status of the translation, along with who is currently working on/has worked on which sections.
-
-- [x] Introduction (EGA I) _(proofread by @thosgood)_
-- [x] Preliminaries (EGA 0_I) _(proofread by @thosgood)_
+- [x] Introduction (EGA I) _(proofread by @thosgood)_ ![introstatus](https://img.shields.io/badge/5/5-100%25-brightgreen)
+- [x] Preliminaries (EGA 0_I) _(proofread by @thosgood)_ ![EGA0(I)status](https://img.shields.io/badge/70/70-100%25-brightgreen)
     + [x] 1. Rings of fractions _(@ryankeleti)_
     + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti)_
     + [x] 3. Supplement on sheaves _(@ryankeleti)_
@@ -45,14 +37,14 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 5. Quasi-coherent sheaves and coherent sheaves _(@ryankeleti)_
     + [x] 6. Flatness _(@ryankeleti)_
     + [x] 7. Adic rings _(@ryankeleti)_
-- [ ] Preliminaries (EGA 0_III)
+- [ ] Preliminaries (EGA 0_III) ![EGA0(III)status](https://img.shields.io/badge/20/75-20%25-orange)
     + [x] 8. Representable functors _(@ryankeleti)_
     + [x] 9. Constructible sets _(@ryankeleti)_
     + [x] 10. Supplement on flat modules _(@thosgood)_
     + [ ] 11. Supplement on homological algebra _(@ryankeleti)_
     + [ ] 12. Supplement on sheaf cohomology (~25 pages)
     + [ ] 13. Projective limits in homological algebra (~10 pages)
-- [ ] Preliminaries (EGA 0_IV)
+- [ ] Preliminaries (EGA 0_IV) ![EGA0(IV)status](https://img.shields.io/badge/5/215-2%25-red)
     + [x] (14-ε). Summary _(@thosgood)_
     + [x] 14. Combinatorial dimension of a topological space _(@thosgood)_
     + [ ] 15. M-regular and F-regular sequences (~10 pages)
@@ -64,7 +56,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 21. Differentials in rings of characteristic p (~30 pages)
     + [ ] 22. Differential criteria for smoothness and regularity (~30 pages)
     + [ ] 23. Japanese rings (~5 pages)
-- [x] The language of schemes (EGA I) _(proofread by @thosgood)_
+- [x] The language of schemes (EGA I) _(proofread by @thosgood)_ ![EGAIstatus](https://img.shields.io/badge/136/136-100%25-brightgreen)
     + [x] 0. Summary
     + [x] 1. Affine schemes _(@ryankeleti)_
     + [x] 2. Preschemes and their morphisms _(@thosgood)_
@@ -76,7 +68,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 8. Chevalley schemes _(@thosgood)_
     + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
     + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
-- [ ] Elementary global study of some classes of morphisms (EGA II)
+- [ ] Elementary global study of some classes of morphisms (EGA II) ![EGAIIstatus](https://img.shields.io/badge/105/205-50%25-yellow)
     + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
     + [x] 1. Affine morphisms _(@ryankeleti)_
     + [ ] 2. Homogeneous prime spectra (~30 pages)
@@ -87,7 +79,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 7. Valuative criteria _(@thosgood)_
     + [x] 8. Blowup schemes; based cones; projective closure _(@thosgood)_
     + [x] _Errata and addenda (list 1)_
-- [ ] Cohomological study of coherent sheaves (EGA III)
+- [ ] Cohomological study of coherent sheaves (EGA III) ![EGAIIIstatus](https://img.shields.io/badge/20/160???-10%25-red)
     + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
     + [x] 1. Cohomology of affine schemes _(@ryankeleti)_
     + [ ] 2. Cohomological study of projective morphisms (~15 pages)
@@ -101,7 +93,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 10. ~~Relations between projective cohomology and local cohomology. Formal completion technique along a divisor~~
     + [x] 11. ~~Global and local Picard groups~~
     + [ ] _Errata and addenda (list 2)_
-- [ ] Local study of schemes and their morphisms (EGA IV)
+- [ ] Local study of schemes and their morphisms (EGA IV) ![EGAIVstatus](https://img.shields.io/badge/1/1100-1%25-red)
     + [x] 0. Summary _(@thosgood)_
     + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes
     + [ ] 2. Base change and flatness
