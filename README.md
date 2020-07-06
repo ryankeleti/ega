@@ -40,7 +40,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 9. Constructible sets _(@ryankeleti)_
     + [x] 10. Supplement on flat modules _(@thosgood)_
     + [ ] 11. Supplement on homological algebra _(@ryankeleti)_
-    + [ ] 12. Supplement on sheaf cohomology (~25 pages)
+    + [ ] 12. Supplement on sheaf cohomology (~25 pages) _(@thosgood)_
     + [ ] 13. Projective limits in homological algebra (~10 pages)
 - **Preliminaries (EGA 0_IV)** ![EGA0(IV)status](https://img.shields.io/badge/-5%2F215-red)
     + [x] (14-ε). Summary _(@thosgood)_
