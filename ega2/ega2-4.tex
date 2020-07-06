@@ -150,12 +150,147 @@ given $f\in E$, it follows from \sref{II.2.6.3} that
 Now let $V$ be an affine open subset of $X$ that is contained inside $r^{-1}(D_+(f))$, and let $B$ be its ring, which is an $A$-algebra;
 let $S=\bb{S}_A(E)$;
 the restriction of $r$ to $V$ corresponds to an $A$-homomorphism $\omega:\bb{S}_f\to B$, and we have that $q^*(\sh{E})|V = (E\otimes_A B)^\sim$ and $\sh{L}_r|V = \widetilde{L_r}$, whence $L_r = (S(1))_{(f)}\otimes_{S_{(f)}}B_{[\omega]}$ \sref[I]{I.1.6.5}.
-The restriction of
+The restriction of $\varphi_r$ to $q^*(\sh{E})|V$ corresponds to the $B$-homomorphism $u:E\otimes_A B\to L_r$, which sends $x\otimes1$ to $(x/1)\otimes f = (f/1)\otimes\omega(x/f)$.
+The canonical extension of $\varphi_r$ to a homomorphism of $\sh{O}_X$-algebras
+\[
+  \psi_r: q^*(\bb{S}(\sh{E})) = \bb{S}(q^*(\sh{E})) \to \bb{S}(\sh{L}_r) = \bigoplus_{n\geq0}\sh{L}_r^{\otimes n}
+\]
+is thus such that the restriction of $\psi_r$ to $q^*(\bb{S}_n(\sh{E}))|V$ corresponds to the homomorphism $\bb{S}_n(\sh{E}\otimes_A B) = \bb{S}_n(E)\otimes_A B \to L_r^{\otimes n}$ that sends $s\otimes1$ to $(f/1)^{\otimes n}\otimes\omega(s/f^n)$.
+\end{env}
+
+\begin{env}[4.2.2]
+\label{II.4.2.2}
+Conversely, suppose that we are given a morphism $q:X\to Y$, an invertible $\sh{O}_X$-module $\sh{L}$, and a quasi-coherent $\sh{O}_Y$-module $\sh{E}$;
+to each homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$ there canonically corresponding homomorphism of quasi-coherent $\sh{O}_X$-algebras
+\[
+  \psi: \bb{S}(q^*(\sh{E})) = q^*(\bb{S}(\sh{E})) \to \bigoplus_{n\geq0}\sh{L}^{\otimes n}
+\]
+and thus \sref{II.3.7.1} a $Y$-morphism $r_{\sh{L},\psi}:G(\psi)\to\Proj(\bb{S}(\sh{E}))=\bb{P}(\sh{E})$, which we denote by $r_{\sh{L},\varphi}$.
+If $\varphi$ is \emph{surjective}, then so too is $\psi$, and thus \sref{II.3.7.4} $r_{\sh{L},\varphi}$ is \emph{everywhere defined}.
+Furthermore, with the notation of \sref{II.4.2.1} and \sref{II.4.2.2}:
+\end{env}
+
+\begin{proposition}[4.2.3]
+\label{II.4.2.3}
+Given a morphism $q:X\to Y$ and a quasi-coherent $\sh{O}_Y$-module $\sh{E}$, maps $r\to(\sh{L}_r,\varphi_r)$ and $(\sh{L},\varphi)\to r_{\sh{L},\varphi}$ give a bijective correspondence between the set of $Y$-morphisms $r:X\to\bb{P}(\sh{E})$ and the set of equivalence classes of pairs $(\sh{L},\varphi)$ of an invertible $\sh{O}_X$-module $\sh{L}$ and a surjective homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$, where such pairs $(\sh{L},\varphi)$ and $(\sh{L}',\varphi')$ are defined to be equivalent if there exists an $\sh{O}_X$-isomorphism $\tau:\sh{L}\xrightarrow{\sim}\sh{L}'$ such that $\varphi'=\tau\circ\varphi$.
+\end{proposition}
+
+\begin{proof}
+Start first with a $Y$-morphism $r:X\to\bb{P}(\sh{E})$, and construct $\sh{L}_r$ and $\varphi_r$ \sref{II.4.2.1}, and let $r'=r_{\sh{L}_r,\varphi_r}$;
+it follows immediately from \sref{II.4.2.1} and \sref{II.3.7.2} that the morphisms $r$ and $r'$ are identical (by taking the generator of $\sh{L}_r$ to be the element $(f/1)\otimes1$ to define the homomorphisms $v_n$ of \sref{II.3.7.2}).
+Conversely, take a pair $(\sh{L},\varphi)$ and construct
+\oldpage[II]{74}
+$r''=r_{\sh{L},\varphi}$, and then $\sh{L}_{r''}$ and $\varphi_{r''}$;
+we will show that there exists a canonical isomorphism $\tau:\sh{L}_{r''}\xrightarrow{\sim}\sh{L}$ such that $\varphi=\tau\circ\varphi_{r''}$;
+to define it, we can restrict to the case where $Y=\Spec(A)$ and $X=\Spec(B)$ are affine, and (with the notation of \sref{II.4.2.1} and \sref{II.3.7.2}) associate to each element $(x/1)\otimes1$ of $L_{r''}$ (where $x\in E$) the element $v_1(x)c$ of $L$.
+We immediately see that $\tau$ does not depend on the chosen generator $c$ of $L$;
+since $v_1$ is surjective by hypothesis, to prove that $\tau$ is an isomorphism it suffices to to show that, if $x/1=0$ in $(S(1))_{(f)}$, then $v_1(x)/1=0$ in $B_g$;
+but the first equality implies that $f^nx=0$ in $\bb{S}_{n+1}(E)$ for some $n$, and this implies that $v_{n+1}(f^nx) = g^nv_1(x) = 0$ in $B$, whence the conclusion.
+Finally, it is immediate that, for any two equivalent pairs $(\sh{L},\varphi)$ and $(\sh{L}',\varphi')$, we have $r_{\sh{L},\varphi}=r_{\sh{L}',\varphi'}$.
+\end{proof}
+
+In particular, for $X=Y$:
+\begin{theorem}[4.2.4]
+\label{II.4.2.4}
+The set of $Y$-sections of $\bb{P}(\sh{E})$ is in canonical bijective correspondence with the set of quasi-coherent sub-$\sh{O}_Y$-modules $\sh{F}$ of $\sh{E}$ such that $\sh{E}/\sh{F}$ is invertible.
+\end{theorem}
+
+We note that this property corresponds to the classical definition of ``projective space'' as the set of hyperplanes of a vector space (the classical case corresponding to $Y=\Spec(K)$, where $K$ is a field, and $\sh{E}=\widetilde{E}$, where $E$ is a finite-dimensional $K$-vector space; the $\sh{F}$ having the property described in \sref{II.4.2.4} then correspond to the hyperplanes of $E$, and we already know that the $Y$-sections of $\bb{P}(\sh{E})$ are then the \emph{$K$-rational points of $\bb{P}(\sh{E})$} \sref[I]{I.3.4.5}).
+
+\begin{remark}[4.2.5]
+\label{II.4.2.5}
+Since there is a canonical bijective correspondence between $Y$-morphisms from $X$ to $P$ and their graph morphisms, $X$-sections of $P\times_Y X$ \sref[I]{I.3.3.14}, we see that, conversely, \sref{II.4.2.3} can be deduced from \sref{II.4.2.4}.
+Denote by $\Hyp_Y(X,\sh{E})$ the set of quasi-coherent sub-$\sh{O}_X$-modules $\sh{F}$ of $\sh{E}\otimes_Y\sh{O}_X=q^*(\sh{E})$ such that $q^*(\sh{E})/\sh{F}$ is an invertible $\sh{O}_X$-module.
+If $g:X'\to X$ is a $Y$-morphism, then it follows from the fact that $g^*$ is right exact that $g^*q^*(\sh{E})/\sh{F})=g^*q^*(\sh{E}))/g^*(\sh{F})$, and so the latter sheaf is invertible, and thus $\Hyp_Y(X,\sh{E})$ is a \emph{contravariant functor} into the category of $Y$-preschemes.
+We can thus interpret the theorem \sref{II.4.2.4} as defining a \emph{canonical isomorphism} of functors $\Hom_Y(X,\bb{P}(\sh{E}))$ and $\Hyp_Y(X,\sh{E})$, where both functors are contravariant in the variable $X$ and map into the category of $Y$-preschemes.
+This also gives a characterisation of the projective bundle $P=\bb{P}(\sh{E})$ by the following \emph{universal property}, which is much closer to the geometric intuition than the constructions from §§2--3:
+for every morphism $q:X\to Y$ and every invertible $\sh{O}_X$-module $\sh{L}$ that is a quotient of $\sh{E}\otimes_{\sh{O}_Y}\sh{O}_X$, there exists a unique $Y$-morphism $r:X\to P$ such that $\sh{L}=r^*(\sh{O}_P(1))$.
+
+We will see later that we can similarly define, amongst other things, ``Grassmannian'' schemes.
+\end{remark}
+
+\begin{corollary}[4.2.6]
+\label{II.4.2.6}
+Suppose that every invertible $\sh{O}_Y$-module is trivial \sref[I]{I.2.4.8}.
+Let $V$ be the group $\Hom_{\sh{O}_Y}(\sh{E},\sh{O}_Y)$, considered as a module over the ring $A=\Gamma(Y,\sh{O}_Y)$, and let $V^*$ be the subset of $V$ consisting of surjective homomorphisms.
+Then the set of $Y$-sections of $\bb{P}(\sh{E})$ is canonically identified with $V^*/A^*$, where $A^*$ is the group of units of $A$.
+\end{corollary}
+
+\oldpage[II]{75}
+In particular:
+\begin{enumerate}
+  \item The corollary \sref{II.4.2.6} applies whenever $Y$ is a \emph{local scheme} \sref[I]{I.2.4.8}.
+    Let $Y$ be an arbitrary prescheme, $y$ a point of $Y$, and $Y'=\Spec(\kres(y))$;
+    then the fibre $p^{-1}(y)$ of $\bb{P}(\sh{E})$ can, by \sref{II.4.1.3.1}, be identified with $\bb{P}(\sh{E}^y)$, where $\sh{E}^y = \sh{E}_y\otimes_{\sh{O}_y}\kres(y) = \sh{E}_y/\mathfrak{m}_y\sh{E}_y$ is considered as a vector space over $\kres(y)$.
+    More generally, if $K$ is an extension of $\kres(y)$, then $p^{-1}(y)\otimes_{\kres(y)}K$ can be identified with $\bb{P}(\sh{E}^y\otimes_{\kres(y)}K)$.
+    The corollary \sref{II.4.2.6} then shows that the set of \emph{geometric points of $\bb{P}(\sh{E})$ with values in the extension $K$ of $\kres(y)$} \sref[I]{I.3.4.5}, which we can also call the \emph{rational geometric fibre over $K$ of $\bb{P}(\sh{E})$ over the point $y$}, can be identified with the \emph{projective space} associated to the \emph{dual} of the $K$-vector space $\sh{E}^y\otimes_{\kres(y)}K$.
+  \item Suppose that $Y$ is affine of ring $A$, and, further, that every invertible $\sh{O}_Y$-module is trivial;
+    further, take $\sh{E}=\sh{O}_Y^n$;
+    then, in \sref{II.4.2.6}, $V$ can be identified with $A^n$ \sref[I]{I.1.3.8}, and $V^*$ with the sets of systems $(f_i)_{1\leq i\leq n}$ of elements of $A$ that generate the ideal $A$;
+    any two such systems define the same $Y$-section of $\bb{P}_Y^{n-1}=\bb{P}_A^{n-1}$, or, in other words, \emph{the same point of $\bb{P}_A^{n-1}$ with values in $A$}, if and only if one of them can be obtained from the other by multiplication by an invertible element of $A$.
+\end{enumerate}
+
+These properties justify the terminology ``projective bundle'' for $\bb{P}(\sh{E})$.
+We note that the definitions that we will similarly obtain for ``projective space'' is in fact \emph{dual} to the classical definition;
+this is imposed upon us by the necessity of being able to define $\bb{P}(\sh{E})$ for \emph{arbitrary} quasi-coherent $\sh{O}_Y$-modules $\sh{E}$, and not just locally free ones.
+
+\begin{remark}[4.2.7]
+\label{II.4.2.7}
+We will see, in Chapter~V, that, if $Y$ is connected and locally Noetherian, and if $\sh{E}$ is locally free, then, letting $P=\bb{P}(\sh{E})$, every invertible $\sh{O}_P$-module is isomorphic to an $\sh{O}_P$-module of the form $\sh{L}'\otimes_{\sh{O}_Y}\sh{O}_P(m)$, with $\sh{L}'$ some invertible $\sh{O}_Y$-module, well defined up to isomorphism, and $m$ some well defined integer.
+In other words, $\HH^1(P,\sh{O}_P^*)$ is isomorphic to $\bb{Z}\times\HH^1(Y,\sh{O}_Y^*)$ \sref[0]{0.5.4.7}.
+We will also see (\sref[III]{III.2.1.14}, taking \sref[0]{0.5.4.10} into account) that $p_*(\sh{L}^{\otimes m})=0$ if $m<0$, and $p_*(\sh{L}^{\otimes m})$ is isomorphic to $\sh{L}'\otimes_{\sh{O}_Y}(\bb{S}_{\sh{O}_Y}(\sh{E}))_m$ if $m\geq0$.
+If $\sh{F}$ is a quasi-coherent $\sh{O}_Y$-module, then every $Y$-morphism $\bb{P}(\sh{E})\to\bb{P}(\sh{F})$ is determined by the data of an invertible $\sh{O}_Y$-module, an integer $m\geq0$, and an $\sh{O}_Y$-homomorphism $\psi:\sh{F}\to\sh{L}'\otimes_{\sh{O}_Y}(\bb{S}_{\sh{O}_Y}(\sh{E}))_m$ such that the corresponding homomorphism $\psi^\sharp$ of $\sh{O}_{\bb{P}(\sh{F})}$-modules is surjective.
+We will also see that, if the $Y$-morphism in question is an isomorphism, then $m=1$ and $\sh{F}$ is isomorphic to $\sh{E}\otimes_{\sh{O}_Y}\sh{L}'$ (the converse of \sref{II.4.1.4}).
+This will allow us to determine the sheaf of germs of automorphisms of $\bb{P}(\sh{E})$ as the quotient of the sheaf of groups $\shAut(\sh{E})$ (which is locally isomorphic to $\GL(n,\sh{O}_Y)$ is $\sh{E}$ is of rank $n$) by $\sh{O}_Y^*$.
+\end{remark}
+
+\begin{env}[4.2.8]
+\label{II.4.2.8}
+Keeping the notation of \sref{II.4.2.1}, let $u:X'\to X$ be a morphism;
+if the $Y$-morphism $r:X\to P$ corresponds to the homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$, then the $Y$-morphism $r\circ u$ corresponds to $u^*(\varphi):u^*(q^*(\sh{E}))\to u^*(\sh{L})$, as follows immediately from the definitions.
+\end{env}
+
+\begin{env}[4.2.9]
+\label{II.4.2.9}
+Let $\sh{E}$ and $\sh{F}$ be quasi-coherent $\sh{O}_Y$-modules, $v:\sh{E}\to\sh{F}$ a surjective homomorphism, and $j=\bb{P}(v)$ the corresponding closed immersion $\bb{P}(\sh{F})\to\bb{P}(\sh{E})$ \sref{II.4.1.2}.
+If the $Y$-morphism $r:X\to\bb{P}(\sh{F})$ corresponds to the homomorphism $\varphi:q^*(\sh{F})\to\sh{L}$, then the
+\oldpage[II]{76}
+$Y$-morphism $j\circ r$ corresponds to $q^*(\sh{E})\xrightarrow{q^*(v)}q^*(\sh{F})\xrightarrow{\varphi}\sh{L}$;
+this again follows from the definition given in \sref{II.4.2.1}.
+\end{env}
+
+\begin{env}[4.2.10]
+\label{II.4.2.10}
+Let $\psi:Y'\to Y$ be a morphism, and let $\sh{E}'=\psi^*(\sh{E})$.
+If the $Y$-morphism $r:X\to P$ corresponds to the homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$, then the $Y'$-morphism
+\[
+  r_{(Y')}: X_{(Y')} \to P' = \bb{P}(\sh{E}')
+\]
+corresponds to $\varphi_{(Y')}:q_{(Y')}^*(\sh{E}') = q^*(\sh{E})\otimes_Y\sh{O}_{Y'} \to \sh{L}\otimes_Y\sh{O}_{Y'}$.
+Indeed, by \sref{II.4.1.3.1}, we have the commutative diagram
+\[
+  \xymatrix{
+    Y' \ar[d]
+    & P'=P_{(Y')} \ar[l]_{p_{(Y')}} \ar[d]^{u}
+    & X_{(Y')} \ar[l]_{r_{(Y')}} \ar[d]^{v}
+  \\Y
+    & P \ar[l]_{p}
+    & X \ar[l]_{r}
+  }
+\]
+
+From \sref{II.4.1.3.1}, we have
+\[
+  (r_{(Y')})^*(\sh{O}_{P'}(1)) = (r_{(Y')})^*(u^*(\sh{O}_P(1))) = v^*(r^*(\sh{O}_P(1))) = v^*(\sh{L}) = \sh{L}\otimes_Y\sh{O}_{Y'};
+\]
+we also know that $u^*(\alpha_1^\sharp)$ is exactly the canonical homomorphism $\alpha_1^\sharp:(p_{(Y')})^*(\sh{E}')\to\sh{O}_{P'}(1)$;
+we can see this by explicitly calculating the canonical homomorphisms $\alpha_1^\sharp$ to $P$ and $P'$ as in \sref{II.4.1.6}.
+Whence our claim.
 \end{env}
 
 
-% \subsection{The Segre morphism}
-% \label{subsection:II.4.3}
+\subsection{The Segre morphism}
+\label{subsection:II.4.3}
 
 
 % \subsection{Immersions in projective bundles; very ample sheaves}
