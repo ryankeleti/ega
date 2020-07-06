@@ -1,7 +1,5 @@
 # EGA
 
-![EGA0status](https://img.shields.io/badge/EGA%200-35%25-yellow) ![EGA1status](https://img.shields.io/badge/EGA%20I-100%25-brightgreen) ![EGA2status](https://img.shields.io/badge/EGA%20II-50%25-orange) ![EGA3status](https://img.shields.io/badge/EGA%20III-3%25-red) ![EGA4status](https://img.shields.io/badge/EGA%20IV-1%25-red)
-
 Community translation (French to English) of A. Grothendieck's EGA.
 S’il-vous plaît pardonnez-nous, Grothendieck.
 
@@ -79,7 +77,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 7. Valuative criteria _(@thosgood)_
     + [x] 8. Blowup schemes; based cones; projective closure _(@thosgood)_
     + [x] _Errata and addenda (list 1)_
-- [ ] Cohomological study of coherent sheaves (EGA III) ![EGAIIIstatus](https://img.shields.io/badge/20/160???-10%25-red)
+- [ ] Cohomological study of coherent sheaves (EGA III) ![EGAIIIstatus](https://img.shields.io/badge/20/160-10%25-red)
     + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
     + [x] 1. Cohomology of affine schemes _(@ryankeleti)_
     + [ ] 2. Cohomological study of projective morphisms (~15 pages)
