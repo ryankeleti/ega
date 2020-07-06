@@ -294,7 +294,26 @@ Whence our claim.
 
 \begin{env}[4.3.1]
 \label{II.4.3.1}
+Let $Y$ be a prescheme, and $\sh{E}$ and $\sh{F}$ quasi-coherent $\sh{O}_Y$-modules;
+let $P_1=\bb{P}(\sh{E})$ and $P_2=\bb{P}(\sh{F})$, and denote the structure morphisms by $p_1:P_1\to Y$ and $p_2:P_2\to Y$.
+Let $Q=P_1\times_Y P_2$, and let $q_1:Q\to P_1$ and $q_2:Q\to P_2$ be the canonical projections;
+then the $\sh{O}_Q$-module $\sh{L}=\sh{O}_{P_1}(1)\otimes_Y \sh{O}_{P_2}(1) = q_1^*(\sh{O}_{P_1}(1))\otimes_{\sh{O}_Q}q_2^*(\sh{O}_{P_2}(1))$ is invertible, since it is the tensor product of of two invertible $\sh{O}_Q$-modules \sref[0]{0.5.4.4}.
+Also, if $r=p_1\circ q_1=p_2\circ q_2$ is the structure morphism $Q\to Y$, then $r^*(\sh{E}\otimes_{\sh{O}_Y}\sh{F}) = q_1^*(p_1^*(\sh{E}))\otimes_{\sh{O}_Q}q_2^*(p_2^*(\sh{F}))$ \sref[0]{0.4.3.3};
+the canonical surjective homomorphisms \sref{II.4.1.5.1} $p_1^*(\sh{E})\to\sh{O}_{P_1}(1)$ and $p_2^*(\sh{F})\to\sh{O}_{P_2}(1)$ thus give, by taking the tensor product, a canonical homomorphism
+\[
+\label{II.4.3.1.1}
+  s: r^*(\sh{E}\otimes_{\sh{O}_Y}\sh{F}) \to \sh{L}
+  \tag{4.3.1.1}
+\]
+which is evidently surjective;
+from this we obtain \sref{II.4.2.2} a canonical morphism, called the \emph{Segre morphism}:
+\[
+\label{II.4.3.1.2}
+  \varsigma: \bb{P}(\sh{E})\times_Y\bb{P}(\sh{F}) \to \bb{P}(\sh{E}\otimes_{\sh{O}_Y}\sh{F}).
+  \tag{4.3.1.2}
+\]
 
+We can study the morphism $\varsigma$ more explicitly in the case where $Y=\Spec(A)$ is affine, and $\sh{E}=\widetilde{E}$ and $\sh{F}=\widetilde{F}$, where $E$ and $F$ are $A$-modules, whence $\sh{E}\otimes_{\sh{O}_Y}\sh{F}=(E\otimes_A F)^\sim$ \sref[I]{I.1.3.12};
 \end{env}
 
 
