@@ -91,26 +91,27 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 10. ~~Relations between projective cohomology and local cohomology. Formal completion technique along a divisor~~
     + [x] 11. ~~Global and local Picard groups~~
     + [ ] _Errata and addenda (list 2)_
-- **Local study of schemes and their morphisms (EGA IV)** ![EGAIVstatus](https://img.shields.io/badge/-1%2F1100-red)
+- **Local study of schemes and their morphisms (EGA IV)** ![EGAIVstatus](https://img.shields.io/badge/-1%2F825-red)
     + [x] 0. Summary _(@thosgood)_
-    + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes
-    + [ ] 2. Base change and flatness
-    + [ ] 3. Associated prime cycles and primary decomposition
-    + [ ] 4. Change of base field for algebraic preschemes
-    + [ ] 5. Dimension, depth, and regularity of locally Noetherian preschemes
-    + [ ] 6. Flat morphisms of locally Noetherian preschemes
-    + [ ] 7. Relations between a local Noetherian ring and its completion. Excellent rings
-    + [ ] 8. Projective limits of preschemes
-    + [ ] 9. Constructible properties
-    + [ ] 10. Jacobson preschemes
-    + [ ] 11. Topological properties of finitely presented flat morphisms. Flatness criteria
-    + [ ] 12. Fibres of finitely presented flat morphisms
-    + [ ] 13. Equidimensional morphisms
-    + [ ] 14. Universally open morphisms
-    + [ ] 15. Fibres of a universally open morphism
-    + [ ] 16. Differential invariants. Differentially smooth morphisms _(@solov-t)_
-    + [ ] 17. Smooth morphisms, unramified morphisms, and étale morphisms _(@tholzschuh)_
-    + [ ] 18. Supplement on étale morphisms. Henselian local rings and strictly local rings
-    + [ ] 19. Regular immersions and normal flatness
-    + [ ] 20. Meromorphic functions and pseudo-morphisms
-    + [ ] 21. Divisors
+    + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes (~30 pages)
+    + [ ] 2. Base change and flatness (~30 pages)
+    + [ ] 3. Associated prime cycles and primary decomposition (~15 pages)
+    + [ ] 4. Change of base field for algebraic preschemes (~35 pages)
+    + [ ] 5. Dimension, depth, and regularity of locally Noetherian preschemes (~50 pages)
+    + [ ] 6. Flat morphisms of locally Noetherian preschemes (~50 pages)
+    + [ ] 7. Relations between a local Noetherian ring and its completion. Excellent rings (~40 pages)
+    + [ ] 8. Projective limits of preschemes (~50 pages)
+    + [ ] 9. Constructible properties (~40 pages)
+    + [ ] 10. Jacobson preschemes (~20 pages)
+    + [ ] 11. Topological properties of finitely presented flat morphisms. Flatness criteria (~60 pages)
+    + [ ] 12. Fibres of finitely presented flat morphisms (~15 pages)
+    + [ ] 13. Equidimensional morphisms (~15 pages)
+    + [ ] 14. Universally open morphisms (~25 pages)
+    + [ ] 15. Fibres of a universally open morphism (~25 pages)
+    + [ ] 16. Differential invariants. Differentially smooth morphisms _(@solov-t)_ (~50 pages)
+    + [ ] 17. Smooth morphisms, unramified morphisms, and étale morphisms _(@tholzschuh)_ (~55 pages)
+    + [ ] 18. Supplement on étale morphisms. Henselian local rings and strictly local rings (~75 pages)
+    + [ ] 19. Regular immersions and normal flatness (~40 pages)
+    + [ ] 20. Meromorphic functions and pseudo-morphisms (~30 pages)
+    + [ ] 21. Divisors (~75 pages)
+    + [ ] _Errata and addenda (list 3)_
