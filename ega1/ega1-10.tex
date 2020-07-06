@@ -899,7 +899,7 @@ For $\widehat{f}=\widehat{g}$ to hold, it is necessary and sufficient for $f$ an
 \begin{proof}
 The condition is evidently sufficient (even without the finiteness hypothesis on $Y$).
 To see that it is necessary, we remark first that the hypothesis $\widehat{f}=\widehat{g}$ implies that $f(x)=g(x)$ for all $x\in X'$.
-Also, the question being local, we can assume that $X$ and $Y$ are affine open neighborhoods of $x$ and $y=f(x)=g(x)$ respectively (with Noetherian rings), that $S$ is affine, and that $\Gamma(Y,\sh{O}_Y)$ is a $\Gamma(S,\sh{O}_S)$-algebra of finite type \sref{I.6.3.3}.
+Also, since the questions is local, we can assume that $X$ and $Y$ are affine open neighborhoods of $x$ and $y=f(x)=g(x)$ respectively (with Noetherian rings), that $S$ is affine, and that $\Gamma(Y,\sh{O}_Y)$ is a $\Gamma(S,\sh{O}_S)$-algebra of finite type \sref{I.6.3.3}.
 Then $f$ and $g$ correspond to $\Gamma(S,\sh{O}_S)$-homomorphisms $\rho$ and $\sigma$ (respectively) from $\Gamma(Y,\sh{O}_Y)$ to $\Gamma(X,\sh{O}_X)$ \sref{I.1.7.3}, and, by hypothesis, the extensions by continuity of these homomorphisms to the separated completion of $\Gamma(Y,\sh{O}_Y)$ are the same.
 We conclude from Proposition \sref{I.10.8.11} that, for every section $s\in\Gamma(Y,\sh{O}_Y)$, the sections $\rho(s)$ and $\sigma(s)$ coincide on a neighborhood (depending on $s$) of $X'$; since $\Gamma(Y,\sh{O}_Y)$ is an algebra of finite type over $\Gamma(S,\sh{O}_S)$, we have that there exists a neighborhood $V$ of $X'$ such that $\rho(s)$ and $\sigma(s)$ coincide on $V$ for \emph{every} section $s\in\Gamma(Y,\sh{O}_Y)$.
 If $h\in\Gamma(X,\sh{O}_X)$ is such that $D(h)$ is a neighborhood of $x$ contained in $V$, then we conclude from the above and from Theorem \sref{I.1.4.1}[d] that $f$ and $g$ coincide on $D(h)$.
@@ -1223,7 +1223,7 @@ Let $\mathfrak{X}$ and $\mathfrak{S}$ be \emph{locally Noetherian} formal presch
 we say that a morphism $f:\mathfrak{X}\to\mathfrak{S}$ is \emph{adic} if there exists an ideal of definition $\sh{J}$ of $\mathfrak{S}$ such that $\sh{K}=f^*(\sh{J})\sh{O}_\mathfrak{X}$ is an ideal of definition of $\mathfrak{X}$;
 we then also say that $\mathfrak{X}$ is an \emph{adic $\mathfrak{S}$-prescheme} (for $f$).
 Whenever this is the case, for \emph{every} ideal of definition $\sh{J}_1$ of $\mathfrak{S}$, $\sh{K}_1=f^*(\sh{J}_1)\sh{O}_\mathfrak{X}$ is an ideal of definition of $\mathfrak{X}$.
-Indeed, the question being local, we can assume that $\mathfrak{X}$ and $\mathfrak{S}$ are Noetherian and affine;
+Indeed, since the questions is local, we can assume that $\mathfrak{X}$ and $\mathfrak{S}$ are Noetherian and affine;
 there then exists a whole number $n$ such that $\sh{J}^n\subset\sh{J}_1$ and $\sh{J}_1^n\subset\sh{J}$ (\sref{I.10.3.6} and \sref[0]{0.7.1.4}), whence $\sh{K}^n\subset\sh{K}_1$ and $\sh{K}_1^n\subset\sh{K}$.
 The first of these relations shows that $\sh{K}_1=\mathfrak{K}_1^\Delta$, where $\mathfrak{K}_1$ is an open ideal of $A=\Gamma(\mathfrak{X},\sh{O}_\mathfrak{X})$, and the second shows that $\mathfrak{K}_1$ is an ideal of definition of $A$ \sref[0]{0.7.1.4}, whence our claim.
 \end{env}
@@ -1278,7 +1278,7 @@ Then, if $X_0$ is locally Noetherian, $\mathfrak{X}$ is locally Noetherian, and 
 
 \begin{proof}
 Since the sheaf of ideals of $\sh{O}_{S_n}$ that defines the subprescheme $S_m$ of $S_n$ is nilpotent, by \sref{I.4.4.5}, so too is the sheaf of ideals of $\sh{O}_{X_n}$ that defines the subprescheme $X_m$ of $X_n$, and so the conditions of \sref{I.10.6.3} are satisfied.
-The question being local on $\mathfrak{X}$ and $\mathfrak{S}$, we can assume that $\mathfrak{S}=\Spf(A)$, $\sh{J}=\mathfrak{J}^\Delta$ (with $A$ a Noetherian $\mathfrak{J}$-adic ring), and $X_n=\Spec(B_n)$;
+Since the questions is local on $\mathfrak{X}$ and $\mathfrak{S}$, we can assume that $\mathfrak{S}=\Spf(A)$, $\sh{J}=\mathfrak{J}^\Delta$ (with $A$ a Noetherian $\mathfrak{J}$-adic ring), and $X_n=\Spec(B_n)$;
 if $A_n=A/\mathfrak{J}^{n+1}$, then the hypothesis implies that $B_0$ is Noetherian, and if we set $\mathfrak{J}_n=\mathfrak{J}/\mathfrak{J}^{n+1}$, then $B_m=B_n/\mathfrak{J}_n^{m+1}B_n$.
 The kernel of $B_n\to B_0$ is thus $\mathfrak{K}_n=\mathfrak{J}_nB_n$, and the kernel of $B_n\to B_m$ is $\mathfrak{K}_n^{m+1}$ for $m\leq n$;
 further, since $A_1$ is Noetherian, $\mathfrak{J}_1$ is of finite type over $A_1$, and so $\mathfrak{K}_1=\mathfrak{K}_1/\mathfrak{K}_1^2$ is of finite type over $B_1$, and \emph{a fortiori} of finite type over $B_0=B_1/\mathfrak{K}_1$;
