@@ -493,8 +493,8 @@ If $\sh{F}=\sh{S}_1$, then the canonical homomorphism $\bb{S}(\sh{F})\to\sh{S}$ 
 Let $q:X\to Y$ be a quasi-compact morphism, and $\sh{L}$ an invertible $\sh{O}_X$-module.
 Then the following properties are equivalent:
 \begin{enumerate}
-  \item[\rm{a)}] $\sh{L}$ is very ample relative to $q$.
-  \item[\rm{b)}] $q_*(\sh{L})$ is quasi-coherent, the canonical homomorphism $\sigma:q^*(q_*(\sh{L}))\to\sh{L}$ is surjective, and the morphism $r_{\sh{L},\sigma}:X\to\bb{P}(q_*(\sh{L}))$ is an immersion.
+  \item[\rm{(a)}] $\sh{L}$ is very ample relative to $q$.
+  \item[\rm{(b)}] $q_*(\sh{L})$ is quasi-coherent, the canonical homomorphism $\sigma:q^*(q_*(\sh{L}))\to\sh{L}$ is surjective, and the morphism $r_{\sh{L},\sigma}:X\to\bb{P}(q_*(\sh{L}))$ is an immersion.
 \end{enumerate}
 \end{proposition}
 
@@ -502,8 +502,96 @@ Then the following properties are equivalent:
 Since $q$ is quasi-compact, we know that $q_*(\sh{L})$ is quasi-coherent if $q$ is separated \sref[I]{I.9.2.2}.
 
 \oldpage[II]{80}
-We know \sref{II.3.4.7}
+We know \sref{II.3.4.7} that the existence of a surjective homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$ (with $\sh{E}$ a quasi-coherent $\sh{O}_Y$-module) implies that $\sigma$ is surjective;
+furthermore, given the factorisation $q^*(\sh{E})\to q^*(q_*(\sh{L}))\xrightarrow{\sigma}\sh{L}$ of $\varphi$, there is a canonically corresponding factorisation
+\[
+  q^*(\bb{S}(\sh{E})) \to q^*(\bb{S}(q_*(\sh{L}))) \to \bigoplus_{n\geq0}\sh{L}^{\otimes n}
+\]
+and so \sref{II.3.8.3} the hypothesis that $r_{\sh{L},\varphi}$ is an immersion implies that so too is $j=r_{\sh{L},\sigma}$;
+furthermore \sref{II.4.2.4}, $\sh{L}$ is isomorphic to $j^*(\sh{O}_{P'}(1))$, where $P'=\bb{P}(q_*(\sh{L}))$.
+We thus see that (a) and (b) are equivalent.
 \end{proof}
+
+\begin{corollary}[4.4.5]
+\label{II.4.4.5}
+Suppose that $q$ is quasi-compact.
+For $\sh{L}$ to be very ample relative to $Y$, it is necessary and sufficient for there to exist an open cover $(U_\alpha)$ of $Y$ such that $\sh{L}|q^{-1}(U_\alpha)$ is very ample relative to $U_\alpha$ for every $\alpha$.
+\end{corollary}
+
+\begin{proof}
+Indeed, condition (b) of \sref{II.4.4.4} is local on $Y$.
+\end{proof}
+
+\begin{proposition}[4.4.6]
+\label{II.4.4.6}
+Let $Y$ be a quasi-compact scheme, or a prescheme whose underlying space is Noetherian, $q:X\to Y$ a morphism \emph{of finite type}, and $\sh{L}$ an invertible $\sh{O}_X$-module.
+Then conditions (a) and (b) of \sref{II.4.4.4} are equivalent to the following:
+\begin{enumerate}
+  \item[\rm{(a')}] There exists a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ \emph{of finite type} and a surjective homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$ such that $r_{\sh{L},\varphi}$ is an immersion.
+  \item[\rm{(b')}] There exists a coherent sub-$\sh{O}_Y$-module $\sh{E}$ of $q_*(\sh{L})$ \emph{of finite type} that has the properties stated in condition~(a').
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+It is clear that (a') or (b') imply (a);
+also (a) implies (a'), by \sref{II.4.4.1}, and similarly (b) implies (b').
+\end{proof}
+
+\begin{corollary}[4.4.7]
+\label{II.4.4.7}
+Suppose that $Y$ is a quasi-compact scheme, or a Noetherian prescheme.
+If $\sh{L}$ is very ample for $q$, then there exists a graded quasi-coherent $\sh{O}_Y$-algebra $\sh{S}$ such that $\sh{S}_1$ is of finite type and generates $\sh{S}$, and also a \emph{dominant open} $Y$-immersion $i:X\to P=\Proj(\sh{S})$ such that $\sh{L}$ is isomorphic to $i^*(\sh{O}_P(1))$.
+\end{corollary}
+
+\begin{proof}
+Indeed, condition~(b) of \sref{II.4.4.6} is satisfied;
+the structure morphism $p:\bb{P}(\sh{E})=P'\to Y$ is then separated and of finite type \sref{II.3.1.3}, and so $P'$ is a quasi-compact scheme (resp. a Noetherian prescheme) if $Y$ is a quasi-compact scheme (resp. a Noetherian prescheme).
+Let $Z$ be the closure \sref[I]{I.9.5.11} of the subprescheme $X'$ of $P'$ associated to the immersion $j=r_{\sh{L},\varphi}$ from $X$ into $P'$;
+it is clear that $j$ factors as a dominant open immersion $i:X\to Z$ followed by the canonical injection $Z\to P'$.
+But $Z$ can be identified with a prescheme $\Proj(\sh{S})$, where $\sh{S}$ is a graded $\sh{O}_Y$-algebra equal to the quotient of $\bb{S}(\sh{E})$ by a graded quasi-coherent sheaf of ideals \sref{II.3.6.2}, and it is clear that $\sh{S}_1$ is of finite type and generates $\sh{S}$;
+furthermore, $\sh{O}_Z(1)$ is the inverse image of $\sh{O}_{P'}(1)$ by the canonical injection \sref{II.3.6.3}, and so $\sh{L}=i^*(\sh{O}_Z(1))$.
+\end{proof}
+
+\begin{proposition}[4.4.8]
+\label{II.4.4.8}
+Let $q:X\to Y$ be a morphism, $\sh{L}$ a very ample (relative to $q$) $\sh{O}_X$-module, and $\sh{L}'$ an invertible $\sh{O}_X$-module, such that there exists a quasi-coherent $\sh{O}_Y$-module $\sh{E}'$ and a surjective homomorphism $q^*(\sh{E}')\to\sh{L}'$.
+Then $\sh{L}\otimes_{\sh{O}_X}\sh{L}'$ is very ample relative to $q$.
+\end{proposition}
+
+\begin{proof}
+The hypothesis implies the existence of a $Y$-morphism $r':X\to P'=\bb{P}(\sh{E}')$ such that $\sh{L}'=r'^*(\sh{O}_{P'}(1))$ \sref{II.4.2.1}.
+There is, by hypothesis, a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ and a
+\oldpage[II]{81}
+$Y$-immersion $r:X\to P=\bb{P}(\sh{E})$ such that $\sh{L}=r^*(\sh{O}_P(1))$.
+Let $Q=\bb{P}(\sh{E}\otimes\sh{E}')$, and consider the Segre morphism $\varsigma:P\times_Y P'\to Q$ \sref{II.4.3.1}.
+Since $r$ is an immersion, so too is $(r,r')_Y:X\to P\times_Y P'$ \sref[I]{I.5.3.14};
+but since $\varsigma$ is an immersion \sref{II.4.3.3}, so too is $r'':X\xrightarrow{(r,r')}P\times_Y P'\xrightarrow{\varsigma}Q$.
+But also \sref{II.4.3.2.1} $\varsigma(\sh{O}_Q(1))$ is isomorphic to $\sh{O}_P(1)\otimes_Y\sh{O}_{P'}(1)$, and so \sref[I]{I.9.1.4} $r''^*(\sh{O}_Q(1))$ is isomorphic to $\sh{L}\otimes\sh{L}'$, which proves the proposition.
+\end{proof}
+
+\begin{corollary}[4.4.9]
+\label{II.4.4.9}
+Let $q:X\to Y$ be a morphism.
+\begin{enumerate}
+  \item Let $\sh{L}$ be an invertible $\sh{O}_X$-module, and $\sh{K}$ an invertible $\sh{O}_Y$-module.
+    For $\sh{L}$ to be very ample relative to $q$, it is necessary and sufficient for $\sh{L}\otimes q^*(\sh{K})$ to be so.
+  \item If $\sh{L}$ and $\sh{L}'$ are very ample (relative to $q$) $\sh{O}_X$-modules, then so too is $\sh{L}\otimes\sh{L}'$;
+    in particular, $\sh{L}^{\otimes n}$ is very ample relative to $q$ for all $n>0$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+Claim~(ii) is an immediate consequence of \sref{II.4.4.8}, as well as the necessity of condition~(i);
+conversely, if $\sh{L}\otimes q^*(\sh{K})$ is very ample, then so too is $(\sh{L}\otimes q^*(\sh{K}))\otimes q^*(\sh{K}^{-1})$, by the above, and the latter $\sh{O}_X$-module is isomorphic to $\sh{L}$ (\sref[0]{0.5.4.3} and \sref[0]{0.5.4.5}).
+\end{proof}
+
+\begin{proposition}[4.4.10]
+\label{II.4.4.10}
+\medskip\noindent
+\begin{enumerate}
+  \item[\rm{(i)}]
+\end{enumerate}
+\end{proposition}
 
 
 % \subsection{Ample sheaves}
