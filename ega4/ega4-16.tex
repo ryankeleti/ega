@@ -1620,7 +1620,7 @@ There is one and only one endomorphism $d$ of the sheaf of additive groups $\Ome
   \item[\rm{(iii)}] For every open set $U$ of $X$, every pair of integers $p$, $q$ and every pair of sections $\omega'_p \in \Gamma(U, \Omega_{X/S}^p)$, $\omega''_q \in \Gamma(U, \Omega_{X/S}^q)$, we have
   \[
     \label{IV.16.6.2.1}
-    d(\omega'_p \wedge \omega''_q) = (d\omega'_p) \wedge \omega''_q + (-1)^p \omega'_p \wedge \omega''_q.
+    d(\omega'_p \wedge \omega''_q) = (d\omega'_p) \wedge \omega''_q + (-1)^p \omega'_p \wedge d\omega''_q.
     \tag{16.6.2.1}
   \]
 \end{enumerate}
@@ -1632,9 +1632,9 @@ Suppose that we have proved the existence of an endomorphism $d$.
 For every open affine $U$ of $X$, every section of $\Omega_{X/S}^p$ over $U$ is (because of \rm{(ii)}) a linear combination if a finite number of elements of the form $g(df_1 \wedge df_2 \wedge \dots \wedge df_p)$, where $g$ and the $f_i$ are sections of $\sh{O}_X$ over $U$ \sref[0]{0.20.4.7}.
 The conditions \rm{(i)} and \rm{(iii)} then show, by induction on $p$, that we necessarily have
 \[
-  \label{IV.16.2.2}
+  \label{IV.16.6.2.2}
   d(g(df_1 \wedge df_2 \wedge \dots \wedge df_p)) = dg \wedge df_1 \wedge df_2 \wedge \dots \wedge df_p.
-  \tag{16.2.2}
+  \tag{16.6.2.2}
 \]
 This therefore proves the \emph{uniqueness} of $d$ and the last claim of the theorem.
 By virtue of this uniqueness property, to show the existence of $d$, we can restrict ourselves to the case where $S = \Spec(A)$ and $X = \Spec(B)$ are affines.
@@ -1642,7 +1642,7 @@ Now (Bourbaki, \emph{Alg.}, chap.~III, 3\textsuperscript{rd}ed., \textsection10)
 then it exists one and only one $A$-anti-derivation $D$ of $\Lambda(M)$ in $C$ coinciding with $D_0$ in $B$ and $D_1$ in $M$. 
 
 In the present case, $D_0$ is necessarily equal to $d_{B/A}$ by \rm{(ii)};
-it all comes down to seeing that, having \sref{IV.16.6.2.2} in mind, that there is an $A$-homomorphism $u$ of $\Omega_{B/A}^1$ in $\Omega_{B/A}^2$ such that we have 
+we reduce to seeing, having \sref{IV.16.6.2.2} in mind, that there is an $A$-homomorphism $u$ of $\Omega_{B/A}^1$ in $\Omega_{B/A}^2$ such that 
 \[
   \label{IV.16.6.2.3}
   u(g.df) = dg \wedge df
@@ -1688,23 +1688,23 @@ The anti-derivation $d$ defined in \sref{IV.16.6.2} (also denoted by $d_{X/S}$) 
 For every base change $g:S' \to S$, if we put $X' = X \times_S S'$, the canonical morphism
 \[
   \label{IV.16.6.4.1}
-  \Omega_{X/S}^\bullet \otimes_S S' \to \Omega_{X'/S'}^1
+  \Omega_{X/S}^\bullet \otimes_S S' \to \Omega_{X'/S'}^\bullet
   \tag{16.6.4.1}
 \]
-deduced from the isomorphism \sref{IV.16.5.9.1} is bijective.
+deduced from the isomorphism \sref{IV.16.5.10.1} is bijective.
 Also, if $s$ is a section of $\Omega_{X/S}^\bullet$ over an open set $U$ of $X$, $s \otimes 1$ its inverse image, section of $\Omega_{X'/S'}^\bullet$ over the inverse image $U'$ of $U$ in $X'$, we have $d_{X'/S'}(s \otimes 1) = d_{X/S}(s) \otimes 1$.
 \end{proposition}
 
 \begin{proof}
-The first claim is immediate, the formation of the exterior algebra of a module commutes with every extension of the scalar ring.
+The first claim is immediate, the formation of the exterior algebra of a module commutes with extending the scalar ring.
 To prove the second, we can, because of \sref{IV.16.6.2.2}, restrict ourselves to the case where $s \in \Gamma(U, \sh{O}_X)$, and in this case the claim has already been proven \sref{IV.16.4.3.7}.
 \end{proof}
 
 \begin{env}[16.6.5]
 \label{IV.16.6.5}
 Suppose that $\Omega_{X/S}^1$ is an locally free $\sh{O}_X$-module of rank $n$ in a point $x$, so that we have $n$ sections $s_i \in \Gamma(U, \sh{O}_X)$ such that the $ds_i$ form a basis for the $\Gamma(U, \sh{O}_X)$-module $\Gamma(U, \Omega_{X/S}^1)$ \sref{IV.16.5.8}.
-Then, for every integer $p \geq 1$, the $p$-differentials $ds_{i_1} \wedge ds_{i_2} \wedge \dots \wedge ds_{i_p}$ (for $i_1 \leq i_2 \leq \dots \leq i_p$ elements of $[1,n]$) form a basis of $\choose{n}{p}$ elements of $\Gamma(U, \Omega_{X/S}^p)$ over $\Gamma(U, \sh{O}_X)$.
-ALso the formula \sref{IV.16.6.2.2} shows that for every section $g \in \Gamma(U, \sh{O}_X)$, we have
+Then, for every integer $p \geq 1$, the $p$-differentials $ds_{i_1} \wedge ds_{i_2} \wedge \dots \wedge ds_{i_p}$ (for $i_1 \leq i_2 \leq \dots \leq i_p$ elements of $[1,n]$) form a basis of $\binom{n}{p}$ elements of $\Gamma(U, \Omega_{X/S}^p)$ over $\Gamma(U, \sh{O}_X)$.
+Also the formula \sref{IV.16.6.2.2} shows that for every section $g \in \Gamma(U, \sh{O}_X)$, we have
 \[
   \label{IV.16.6.5.1}
   d(g.ds_{i_1} \wedge ds_{i_2} \wedge \dots \wedge ds_{i_p}) = \sum_k (-1)^r \frac{\partial g}{\partial s_k} ds_{i_1} \wedge \dots \wedge ds_{i_r} \wedge ds_k \wedge ds_{i_{r+1}} \wedge \dots \wedge ds_{i_p}
