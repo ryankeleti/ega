@@ -159,7 +159,7 @@ We thus have, according to the above, a \emph{canonical isomorphism}
   \tag{10.3.2.1}
 \]
 
-It is clear (since $\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$) that the map $\mathfrak{J}\to\mathfrak{J}^\Delta$ is \emph{strictly increasing}; according to the above, for $\mathfrak{J}\subset\mathfrak{J}'$, the sheaf ${\mathfrak{J}'}^\Delta/\mathfrak{J}^\Delta$ is canonically isomorphic to $\widetilde{\mathfrak{J}'}/\widetilde{\mathfrak{J}}=(\mathfrak{J}'/\mathfrak{J})^\sim$.
+It is clear (since $\Gamma(\mathfrak{X},\mathfrak{J}^\Delta)=\mathfrak{J}$) that the map $\mathfrak{J}\to\mathfrak{J}^\Delta$ is \emph{strictly increasing}; according to the above, for $\mathfrak{J}\subset\mathfrak{J}'$, the sheaf ${\mathfrak{J}'}^\Delta/\mathfrak{J}^\Delta$ is canonically isomorphic to $\widetilde{\mathfrak{J}'}/\widetilde{\mathfrak{J}}=(\mathfrak{J}'/\mathfrak{J})\supertilde$.
 \end{env}
 
 \begin{env}[10.3.3]
@@ -184,9 +184,9 @@ If $A$ is an admissible ring, then every sheaf of ideals of definition for $\mat
 \begin{proof}
 Let $\sh{J}$ be a sheaf of ideals of definition of $\mathfrak{X}$; by hypothesis, and since $\mathfrak{X}$ is quasi-compact, there are finitely-many elements $f_i\in A$ such that the $\mathfrak{D}(f_i)$ cover $\mathfrak{X}$ and such that $\sh{J}|\mathfrak{D}(f_i)=\mathfrak{H}_i^\Delta$, where $\mathfrak{H}_i$ is an ideal of definition for $A_{\{f_i\}}$.
 For each $i$, there exists an open ideal $\mathfrak{K}_i$ of $A$ such that $(\mathfrak{K}_i)_{\{f_i\}}=\mathfrak{H}_i$ \sref[0]{0.7.6.9}; let $\mathfrak{K}$ be an ideal of definition for $A$ containing all the $\mathfrak{K}_i$.
-The canonical image of $\sh{J}/\mathfrak{K}^\Delta$ in the structure sheaf $(A/\mathfrak{K})^\sim$ of $\Spec(A/\mathfrak{K})$ \sref{I.10.3.2} is thus such that its restriction to $\mathfrak{D}(f_i)$ is equal to its restriction to $(\mathfrak{K}_i/\mathfrak{K})^\sim$;
-we conclude that this canonical image is a \emph{quasi-coherent} sheaf on $\Spec(A/\mathfrak{K})$, and so is of the form $(\mathfrak{J}/\mathfrak{K})^\sim$, where $\mathfrak{J}$ is an ideal of definition for $A$ containing $\mathfrak{K}$ \sref{I.1.4.1}, whence $\sh{J}=\mathfrak{J}^\Delta$ \sref{I.10.3.2};
-in addition, since for each $i$ there exists an integer $n_i$ such that $\mathfrak{H}_i^{n_i}\subset\mathfrak{K}_{\{f_i\}}$, we will have, by setting $n$ to be the largest of the $n_i$, that $(\sh{J}/\mathfrak{K}^\Delta)^n=0$, and, as a result \sref{I.10.3.2}, that $((\mathfrak{J}/\mathfrak{K})^\sim)^n=0$, whence finally that $(\mathfrak{J}/\mathfrak{K})^n=0$ \sref{I.1.3.13}, which proves that $\mathfrak{J}$ is an ideal of definition for $A$ \sref[0]{0.7.1.4}.
+The canonical image of $\sh{J}/\mathfrak{K}^\Delta$ in the structure sheaf $(A/\mathfrak{K})\supertilde$ of $\Spec(A/\mathfrak{K})$ \sref{I.10.3.2} is thus such that its restriction to $\mathfrak{D}(f_i)$ is equal to its restriction to $(\mathfrak{K}_i/\mathfrak{K})\supertilde$;
+we conclude that this canonical image is a \emph{quasi-coherent} sheaf on $\Spec(A/\mathfrak{K})$, and so is of the form $(\mathfrak{J}/\mathfrak{K})\supertilde$, where $\mathfrak{J}$ is an ideal of definition for $A$ containing $\mathfrak{K}$ \sref{I.1.4.1}, whence $\sh{J}=\mathfrak{J}^\Delta$ \sref{I.10.3.2};
+in addition, since for each $i$ there exists an integer $n_i$ such that $\mathfrak{H}_i^{n_i}\subset\mathfrak{K}_{\{f_i\}}$, we will have, by setting $n$ to be the largest of the $n_i$, that $(\sh{J}/\mathfrak{K}^\Delta)^n=0$, and, as a result \sref{I.10.3.2}, that $((\mathfrak{J}/\mathfrak{K})\supertilde)^n=0$, whence finally that $(\mathfrak{J}/\mathfrak{K})^n=0$ \sref{I.1.3.13}, which proves that $\mathfrak{J}$ is an ideal of definition for $A$ \sref[0]{0.7.1.4}.
 \end{proof}
 
 \begin{proposition}[10.3.6]
@@ -689,7 +689,7 @@ If $X=\Spec(A)$ is an affine scheme with Noetherian ring $A$, $\sh{J}=\widetilde
 We can evidently reduce to proving the latter claim.
 We know \sref[0]{0.7.3.3} that the separated completion $\widehat{\mathfrak{J}}$ of $\mathfrak{J}$ with respect to the $\mathfrak{J}$-preadic topology can be identified with the ideal $\mathfrak{J}\widehat{A}$ of $\widehat{A}$, where $\widehat{A}$ is the Noetherian $\widehat{\mathfrak{J}}$-adic ring such that $\widehat{A}/\widehat{\mathfrak{J}}^n=A/\mathfrak{J}^n$ \sref[0]{0.7.2.6}.
 This latter equation shows that the open prime ideals of $\widehat{A}$ are the ideals $\widehat{\mathfrak{p}}=\mathfrak{p}\widehat{\mathfrak{J}}$, where $\mathfrak{p}$ is a prime ideal of $A$ containing $\mathfrak{J}$, and that we have $\widehat{\mathfrak{p}}\cap A=\mathfrak{p}$, and hence $\Spf(\widehat{A})=X'$.
-Since $\sh{O}_X/\sh{J}^n=(A/\mathfrak{J}^n)^\sim$, the proposition follows immediately from the definitions.
+Since $\sh{O}_X/\sh{J}^n=(A/\mathfrak{J}^n)\supertilde$, the proposition follows immediately from the definitions.
 \end{proof}
 
 We say that the formal prescheme defined above is the \emph{completion of $X$ along $X'$}, and we denote it by $X_{/X'}$ or $\widehat{X}$ when there is little chance of confusion.
@@ -899,7 +899,7 @@ For $\widehat{f}=\widehat{g}$ to hold, it is necessary and sufficient for $f$ an
 \begin{proof}
 The condition is evidently sufficient (even without the finiteness hypothesis on $Y$).
 To see that it is necessary, we remark first that the hypothesis $\widehat{f}=\widehat{g}$ implies that $f(x)=g(x)$ for all $x\in X'$.
-Also, the question being local, we can assume that $X$ and $Y$ are affine open neighborhoods of $x$ and $y=f(x)=g(x)$ respectively (with Noetherian rings), that $S$ is affine, and that $\Gamma(Y,\sh{O}_Y)$ is a $\Gamma(S,\sh{O}_S)$-algebra of finite type \sref{I.6.3.3}.
+Also, since the questions is local, we can assume that $X$ and $Y$ are affine open neighborhoods of $x$ and $y=f(x)=g(x)$ respectively (with Noetherian rings), that $S$ is affine, and that $\Gamma(Y,\sh{O}_Y)$ is a $\Gamma(S,\sh{O}_S)$-algebra of finite type \sref{I.6.3.3}.
 Then $f$ and $g$ correspond to $\Gamma(S,\sh{O}_S)$-homomorphisms $\rho$ and $\sigma$ (respectively) from $\Gamma(Y,\sh{O}_Y)$ to $\Gamma(X,\sh{O}_X)$ \sref{I.1.7.3}, and, by hypothesis, the extensions by continuity of these homomorphisms to the separated completion of $\Gamma(Y,\sh{O}_Y)$ are the same.
 We conclude from Proposition \sref{I.10.8.11} that, for every section $s\in\Gamma(Y,\sh{O}_Y)$, the sections $\rho(s)$ and $\sigma(s)$ coincide on a neighborhood (depending on $s$) of $X'$; since $\Gamma(Y,\sh{O}_Y)$ is an algebra of finite type over $\Gamma(S,\sh{O}_S)$, we have that there exists a neighborhood $V$ of $X'$ such that $\rho(s)$ and $\sigma(s)$ coincide on $V$ for \emph{every} section $s\in\Gamma(Y,\sh{O}_Y)$.
 If $h\in\Gamma(X,\sh{O}_X)$ is such that $D(h)$ is a neighborhood of $x$ contained in $V$, then we conclude from the above and from Theorem \sref{I.1.4.1}[d] that $f$ and $g$ coincide on $D(h)$.
@@ -1056,7 +1056,7 @@ We first show that (b) implies (c).
 We have $\sh{F}_n=\widetilde{M_n}$, where $M_n$ is an $A_n$-module of finite type, and the hypotheses imply that $M_m=M_n\otimes_{A_n}A_m$ for $m\leq n$ \sref{I.1.6.5}; the $M_n$ thus form a projective system for the canonical di-homomorphisms $M_n\to M_m$ ($m\leq n$), and it follows immediately from the definition of the $A_n$ that this projective system satisfies the conditions of \sref[0]{0.7.2.9}; as a result, its projective limit $M$ is an $A$-module of finite type such that $M_n=M\otimes_A A_n$ for all $n$.
 We deduce that $\sh{F}_n$ is induced over $X_n$ by $\widetilde{M}\otimes_{\sh{O}_X}(\sh{O}_X/\widetilde{\mathfrak{J}}^{n+1})$, and so $\sh{F}=M^\Delta$ by Definition \sref{I.10.8.4}.
 
-Conversely, (c) implies (b); indeed, if $u_n$ is the immersion morphism $X_n\to X$, then $u_n^*(\widetilde{M})=(M\otimes_A A_n)^\sim$ is induced over $X_n$ by $\widetilde{M}\otimes_{\sh{O}_X}(\sh{O}_X/\widetilde{\mathfrak{J}}^{n+1})$, and $M^\Delta=\varprojlim u_n^*(\widetilde{M})$ by Definition \sref{I.10.8.4}; since $u_m=u_n\circ u_{mn}$ for $m\leq n$, the $\sh{F}_n=u_n^*(\widetilde{M})$ satisfy the conditions of (b), whence our claim.
+Conversely, (c) implies (b); indeed, if $u_n$ is the immersion morphism $X_n\to X$, then $u_n^*(\widetilde{M})=(M\otimes_A A_n)\supertilde$ is induced over $X_n$ by $\widetilde{M}\otimes_{\sh{O}_X}(\sh{O}_X/\widetilde{\mathfrak{J}}^{n+1})$, and $M^\Delta=\varprojlim u_n^*(\widetilde{M})$ by Definition \sref{I.10.8.4}; since $u_m=u_n\circ u_{mn}$ for $m\leq n$, the $\sh{F}_n=u_n^*(\widetilde{M})$ satisfy the conditions of (b), whence our claim.
 
 We now show that (c) implies (a): indeed, we have, by definition, that $\sh{O}_\mathfrak{X}=A^\Delta$; since $M$ is the cokernel of a homomorphism $A^m\to A^n$, it follows from Proposition \sref{I.10.10.2} that $M^\Delta$ is the cokernel of a homomorphism $\sh{O}_\mathfrak{X}^m\to\sh{O}_\mathfrak{X}^n$, and, since the sheaf of rings $\sh{O}_\mathfrak{X}$ is coherent \sref{I.10.10.3}, so too is $M^\Delta$ \sref[0]{0.5.3.4}.
 
@@ -1065,7 +1065,7 @@ Finally, (a) implies (b).
 Considered as an $\sh{O}_\mathfrak{X}$-module, we have that $\sh{O}_{X_n}=\sh{O}_\mathfrak{X}/\sh{J}^{n+1}=A_n^\Delta$; but $\sh{F}_n=\sh{F}\otimes_{\sh{O}_\mathfrak{X}}\sh{O}_{X_n}$ is a coherent $\sh{O}_\mathfrak{X}$-module \sref[0]{0.5.3.5}, and, since it is also an $\sh{O}_{X_n}$-module, and $\sh{J}^{n+1}$ is coherent, we conclude that $\sh{F}_n$ is a coherent $\sh{O}_{X_n}$-module \sref[0]{0.5.3.10}, and it is immediate that $u_{mn}^*(\sh{F}_n)=\sh{F}_m$ for $m\leq n$ (recalling that the continuous map $X_m\to X_n$ of the underlying spaces is the identity on $\mathfrak{X}$).
 The sheaf $\sh{G}=\varprojlim\sh{F}_n$ is thus a coherent $\sh{O}_\mathfrak{X}$-module, since we have seen that (b) implies (a). The canonical homomorphisms $\sh{F}\to\sh{F}_n$ form a projective system, which, by passing to the limit, gives a canonical homomorphism $w:\sh{F}\to\sh{G}$, and it remains only to prove that $w$ is bijective.
 The question is now \emph{local}, so we can reduce to the case where $\sh{F}$ is the cokernel of a homomorphism $\sh{O}_\mathfrak{X}^p\to\sh{O}_\mathfrak{X}^q$; since this homomorphism is of the form $v^\Delta$, where $v$ is a homomorphism $A^m\to A^n$ \sref{I.10.10.2}, $\sh{F}$ is isomorphic to $M^\Delta$, where $M=\Coker{v}$ \sref{I.10.10.2}.
-We then have, by Proposition \sref{I.10.10.2}, that $\sh{F}_n=M^\Delta\otimes_{\sh{O}_\mathfrak{X}}A_n^\Delta=(M\otimes_A A_n)^\Delta$, and, since the $\mathfrak{J}$-adic topology on $M\otimes_A A_n$ is discrete, we have $(M\otimes_A A_n)^\Delta=(M\otimes_A A_n)^\sim$ (as an $\sh{O}_{X_n}$-module); we have seen above that $M^\Delta=\varprojlim\sh{F}_n$, and $w$ is thus the identity in this case.
+We then have, by Proposition \sref{I.10.10.2}, that $\sh{F}_n=M^\Delta\otimes_{\sh{O}_\mathfrak{X}}A_n^\Delta=(M\otimes_A A_n)^\Delta$, and, since the $\mathfrak{J}$-adic topology on $M\otimes_A A_n$ is discrete, we have $(M\otimes_A A_n)^\Delta=(M\otimes_A A_n)\supertilde$ (as an $\sh{O}_{X_n}$-module); we have seen above that $M^\Delta=\varprojlim\sh{F}_n$, and $w$ is thus the identity in this case.
 \end{proof}
 
 \begin{corollary}[10.10.6]
@@ -1090,7 +1090,7 @@ For every $B$-module $N$ of finite type, there exists a canonical functorial iso
 \begin{proof}
 Denoting by $i_X:\mathfrak{X}\to X$ and $i_Y:\mathfrak{Y}\to Y$ the canonical morphisms, we have \sref{I.10.8.8}, up to canonical functorial isomorphisms, $N^\Delta=i_Y^*(\widetilde{N})$ and
 \[
-  (N\otimes_B A)^\Delta=i_X^*((N\otimes_B A)^\sim)=i_X^*(f^*(\widetilde{N}))
+  (N\otimes_B A)^\Delta=i_X^*((N\otimes_B A)\supertilde)=i_X^*(f^*(\widetilde{N}))
 \]
 \sref{I.1.6.5}; the proposition then follows from the commutativity of the diagram in \sref{I.10.9.2}.
 \end{proof}
@@ -1223,7 +1223,7 @@ Let $\mathfrak{X}$ and $\mathfrak{S}$ be \emph{locally Noetherian} formal presch
 we say that a morphism $f:\mathfrak{X}\to\mathfrak{S}$ is \emph{adic} if there exists an ideal of definition $\sh{J}$ of $\mathfrak{S}$ such that $\sh{K}=f^*(\sh{J})\sh{O}_\mathfrak{X}$ is an ideal of definition of $\mathfrak{X}$;
 we then also say that $\mathfrak{X}$ is an \emph{adic $\mathfrak{S}$-prescheme} (for $f$).
 Whenever this is the case, for \emph{every} ideal of definition $\sh{J}_1$ of $\mathfrak{S}$, $\sh{K}_1=f^*(\sh{J}_1)\sh{O}_\mathfrak{X}$ is an ideal of definition of $\mathfrak{X}$.
-Indeed, the question being local, we can assume that $\mathfrak{X}$ and $\mathfrak{S}$ are Noetherian and affine;
+Indeed, since the questions is local, we can assume that $\mathfrak{X}$ and $\mathfrak{S}$ are Noetherian and affine;
 there then exists a whole number $n$ such that $\sh{J}^n\subset\sh{J}_1$ and $\sh{J}_1^n\subset\sh{J}$ (\sref{I.10.3.6} and \sref[0]{0.7.1.4}), whence $\sh{K}^n\subset\sh{K}_1$ and $\sh{K}_1^n\subset\sh{K}$.
 The first of these relations shows that $\sh{K}_1=\mathfrak{K}_1^\Delta$, where $\mathfrak{K}_1$ is an open ideal of $A=\Gamma(\mathfrak{X},\sh{O}_\mathfrak{X})$, and the second shows that $\mathfrak{K}_1$ is an ideal of definition of $A$ \sref[0]{0.7.1.4}, whence our claim.
 \end{env}
@@ -1278,7 +1278,7 @@ Then, if $X_0$ is locally Noetherian, $\mathfrak{X}$ is locally Noetherian, and 
 
 \begin{proof}
 Since the sheaf of ideals of $\sh{O}_{S_n}$ that defines the subprescheme $S_m$ of $S_n$ is nilpotent, by \sref{I.4.4.5}, so too is the sheaf of ideals of $\sh{O}_{X_n}$ that defines the subprescheme $X_m$ of $X_n$, and so the conditions of \sref{I.10.6.3} are satisfied.
-The question being local on $\mathfrak{X}$ and $\mathfrak{S}$, we can assume that $\mathfrak{S}=\Spf(A)$, $\sh{J}=\mathfrak{J}^\Delta$ (with $A$ a Noetherian $\mathfrak{J}$-adic ring), and $X_n=\Spec(B_n)$;
+Since the questions is local on $\mathfrak{X}$ and $\mathfrak{S}$, we can assume that $\mathfrak{S}=\Spf(A)$, $\sh{J}=\mathfrak{J}^\Delta$ (with $A$ a Noetherian $\mathfrak{J}$-adic ring), and $X_n=\Spec(B_n)$;
 if $A_n=A/\mathfrak{J}^{n+1}$, then the hypothesis implies that $B_0$ is Noetherian, and if we set $\mathfrak{J}_n=\mathfrak{J}/\mathfrak{J}^{n+1}$, then $B_m=B_n/\mathfrak{J}_n^{m+1}B_n$.
 The kernel of $B_n\to B_0$ is thus $\mathfrak{K}_n=\mathfrak{J}_nB_n$, and the kernel of $B_n\to B_m$ is $\mathfrak{K}_n^{m+1}$ for $m\leq n$;
 further, since $A_1$ is Noetherian, $\mathfrak{J}_1$ is of finite type over $A_1$, and so $\mathfrak{K}_1=\mathfrak{K}_1/\mathfrak{K}_1^2$ is of finite type over $B_1$, and \emph{a fortiori} of finite type over $B_0=B_1/\mathfrak{K}_1$;

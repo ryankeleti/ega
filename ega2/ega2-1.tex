@@ -248,7 +248,7 @@ For every pair $(\sh{B},\sh{M})$ consisting of a quasi-coherent $\sh{O}_S$-algeb
 The uniqueness follows from Proposition~\sref{II.1.4.1} and Corollary~\sref{II.1.4.2}; the existence is proved as in Proposition~\sref{II.1.3.1}, and we leave the details to the reader.
 \end{proof}
 
-We denote by $\widetilde{\sh{M}}$ the $\sh{O}_X$-module $\sh{F}$, and we say that it is \emph{associated} to the quasi-coherent $\sh{B}$-module $\sh{M}$; for every affine open $U\subset S$, $\sh{M}|p^{-1}(U)$ (where $p$ is the structure morphism $X\to S$) is canonically isomorphic to $(\Gamma(U,\sh{M}))^\sim$.
+We denote by $\widetilde{\sh{M}}$ the $\sh{O}_X$-module $\sh{F}$, and we say that it is \emph{associated} to the quasi-coherent $\sh{B}$-module $\sh{M}$; for every affine open $U\subset S$, $\sh{M}|p^{-1}(U)$ (where $p$ is the structure morphism $X\to S$) is canonically isomorphic to $(\Gamma(U,\sh{M}))\supertilde$.
 
 \begin{corollary}[1.4.4]
 \label{II.1.4.4}
@@ -281,7 +281,7 @@ By \sref[I]{I.9.6.1}, $\sh{A}\otimes_\sh{B}\sh{A}'$ is a quasi-coherent $\sh{B}$
 The canonical $\sh{B}$-homomorphisms $\sh{A}\to\sh{A}\otimes_\sh{B}\sh{A}'$ and $\sh{A}'\to\sh{A}\otimes_\sh{B}\sh{A}'$ correspond \sref{II.1.2.7} to $Y$-morphisms $Z\to X$ and $p':Z\to X'$.
 To see that the triple $(Z,p,p')$ is a product $X\times_Y X'$, we can reduce to the case where $S$ is an affine scheme with ring $C$ \sref[I]{I.3.2.6.4}.
 But then $Y$, $X$, and $X'$ are affine schemes \sref{II.1.3.4} whose rings $B$, $A$, and $A'$ are $C$-algebras such that $\sh{B}=\widetilde{B}$, $\sh{A}=\widetilde{A}$, and $\sh{A}'=\widetilde{A'}$.
-We then know \sref[I]{I.1.3.13} that $\sh{A}\otimes_\sh{B}\sh{A}'$ canonically identifies with the $\sh{O}_S$-algebra $(A\otimes_B A')^\sim$, hence the ring $A(Z)$ identifies with $A\otimes_B A'$ and the morphisms $p$ and $p'$ correspond to the canonical homomorphisms $A\to A\otimes_B A'$ and $A'\to A\otimes_B A'$.
+We then know \sref[I]{I.1.3.13} that $\sh{A}\otimes_\sh{B}\sh{A}'$ canonically identifies with the $\sh{O}_S$-algebra $(A\otimes_B A')\supertilde$, hence the ring $A(Z)$ identifies with $A\otimes_B A'$ and the morphisms $p$ and $p'$ correspond to the canonical homomorphisms $A\to A\otimes_B A'$ and $A'\to A\otimes_B A'$.
 The proposition then follows from \sref[I]{I.3.2.2}.
 \end{proof}
 
@@ -305,7 +305,7 @@ in the following way: for every open $U\subset S$, we have canonical homomorphis
 \]
 
 To see that we have defined an isomorphism of $\sh{A}(Z)$-modules, we can reduce to the case where $S$ (and as a result $X$, $X'$, $Y$, and $X\times_Y X'$) are affine scheme, and (with the notation of Proposition~\sref{II.1.4.6}), $\sh{F}=\widetilde{M}$, $\sh{F}'=\widetilde{M'}$, where $M$ (resp.~$M'$) is an $A$-module (resp.~an $A'$-module).
-Then $\sh{F}\otimes_Y\sh{F}'$ identifies with the sheaf on $X\times_Y X'$ associated to the $(A\otimes_B A')$-module $M\otimes_B M'$ \sref[I]{I.9.1.3}, and the corollary follows from the canonical identification of the $\sh{O}_S$-modules $(M\otimes_B M')^\sim$ and $\widetilde{M}\otimes_{\widetilde{B}}\widetilde{M'}$ (where $M$, $M'$, and $B$ are considered as $C$-modules) (\sref[I]{I.1.3.12} and \sref[I]{I.1.6.3}).
+Then $\sh{F}\otimes_Y\sh{F}'$ identifies with the sheaf on $X\times_Y X'$ associated to the $(A\otimes_B A')$-module $M\otimes_B M'$ \sref[I]{I.9.1.3}, and the corollary follows from the canonical identification of the $\sh{O}_S$-modules $(M\otimes_B M')\supertilde$ and $\widetilde{M}\otimes_{\widetilde{B}}\widetilde{M'}$ (where $M$, $M'$, and $B$ are considered as $C$-modules) (\sref[I]{I.1.3.12} and \sref[I]{I.1.6.3}).
 \end{proof}
 
 If we apply Corollary~\sref{II.1.4.7} in particular to the case where $X=Y$ and $\sh{F}'=\sh{O}_{X'}$, then we see that the $\sh{A}'$-module $\sh{A}(f^{\prime*}(\sh{F}))$ identifies with $\sh{A}(\sh{F})\otimes_\sh{B}\sh{A}'$.
@@ -349,11 +349,11 @@ We can also express the result of Proposition~\sref{II.1.4.10} by saying that if
 \label{II.1.4.11}
 \oldpage[II]{12}
 Let $S$ be a prescheme, $\sh{B}$ a quasi-coherent $\sh{O}_S$-algebra, and $X=\Spec(\sh{B})$.
-For every quasi-coherent sheaf of ideals $\sh{K}$ of $\sh{O}_S$, we have (denoting by $f$ the structure morphism $X\to S$) $f^*(\sh{K})\sh{O}_X=(\sh{K}\sh{B})^\sim$ up to canonical isomorphism.
+For every quasi-coherent sheaf of ideals $\sh{K}$ of $\sh{O}_S$, we have (denoting by $f$ the structure morphism $X\to S$) $f^*(\sh{K})\sh{O}_X=(\sh{K}\sh{B})\supertilde$ up to canonical isomorphism.
 \end{proposition}
 
 \begin{proof}
-The question being local on $S$, we can reduce to the case where $S=\Spec(A)$ is affine, and in this case the proposition is none other than \sref[I]{I.1.6.9}.
+Since the questions is local on $S$, we can reduce to the case where $S=\Spec(A)$ is affine, and in this case the proposition is none other than \sref[I]{I.1.6.9}.
 \end{proof}
 
 \subsection{Change of base prescheme}
@@ -461,7 +461,7 @@ Let $U$ (resp. $U'$) be an affine open of $S$ (resp. $S'$) such that $q(U')\subs
 Under the same hypotheses as in \sref{II.1.5.6}, let $\sh{M}$ be a quasi-coherent $\sh{B}$-module; there is then a canonical isomorphism of $\sh{O}_{X'}$-modules
 \[
 \label{II.1.5.7.1}
-  v^*(\widetilde{\sh{M}})\isoto(q^*(\sh{M})\otimes_{q^*(\sh{B})}\sh{B}')^\sim.
+  v^*(\widetilde{\sh{M}})\isoto(q^*(\sh{M})\otimes_{q^*(\sh{B})}\sh{B}')\supertilde.
   \tag{1.5.7.1}
 \]
 
