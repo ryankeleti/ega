@@ -563,7 +563,7 @@ We note that in general $d_{X/S}^n$ \emph{is not surjective} (even for $n = 1$).
 \end{proof}
 
 \begin{proposition}[16.3.9]
-\label{IV.16.3.8}
+\label{IV.16.3.9}
 Suppose that $f:X \to S$ is a morphism locally of finite type.
 Then the $\sh{P}_{f}^n$ and the $\shGr_n(\sh{P}_{f})$ are quasi-coherent $\sh{O}_X$-modules of finite type.
 \end{proposition}
@@ -857,7 +857,7 @@ In particular:
 Under the conditions of \sref{IV.16.4.7}, we have a canonical isomorphism
 \[
 \label{IV.16.4.9.1}
-  \gr_1(\delta): f^*(\sh{E}) \xrightarrow{\sim} \Omega_{X/S}^1.
+  \gr_1(\delta): f^*(\sh{E}) \isoto \Omega_{X/S}^1.
   \tag{16.4.9.1}
 \]
 \end{corollary}
@@ -976,7 +976,7 @@ The notation being that of \sref{IV.16.4.14}, let $R$ be a multiplicative subset
 Then we have canonical isomorphisms 
 \[
   \label{IV.16.4.15.1}
-  S^{-1}P_{B/A}^n \xrightarrow{\sim} P_{S^{-1}B/R^{-1}A}^n
+  S^{-1}P_{B/A}^n \isoto P_{S^{-1}B/R^{-1}A}^n
   \tag{16.4.15.1}
 \]
 forming a projective system.
@@ -986,7 +986,7 @@ forming a projective system.
 It evidently suffices to define canonical isomorphisms 
 \[
   \label{IV.16.4.15.2}
-  P_{S^{-1}B/A}^n \xrightarrow{\sim} P_{S^{-1}B/R^{-1}A}^n
+  P_{S^{-1}B/A}^n \isoto P_{S^{-1}B/R^{-1}A}^n
   \tag{16.4.15.2}
 \]
 that is to say that we reduce to the case there $\rho(R)$ is consists of \emph{invertible} elements of $B$.
@@ -999,7 +999,7 @@ Let $f:X \to S$ be a morphism of preschemes, $x$ a point of $X$, $s = f(x)$.
 Then we have canonical isomorphisms
 \[
   \label{IV.14.4.16.1}
-  (\sh{P}_{X/S}^n)_x \xrightarrow{\sim} P_{\sh{O}_x/\sh{O}_s}^n
+  (\sh{P}_{X/S}^n)_x \isoto P_{\sh{O}_x/\sh{O}_s}^n
   \tag{14.4.16.1}
 \]
 forming a projective system.
@@ -1008,7 +1008,7 @@ forming a projective system.
 We deduce from these isomorphisms of the associated graded rings, and in particular a canonical isomorphism
 \[
   \label{IV.16.4.16.2}
-  (\Omega_{X/S}^1)_x \xrightarrow{\sim} \Omega_{\sh{O}_x/\sh{O}_s}^1.
+  (\Omega_{X/S}^1)_x \isoto \Omega_{\sh{O}_x/\sh{O}_s}^1.
   \tag{16.4.16.2}
 \]
 
@@ -1252,7 +1252,7 @@ Let $f = (\psi, \theta) : X \to S$ be a morphism of preschemes.
   \item[{\rm(ii)}] For every $\sh{O}_X$-module $\sh{F}$, the map $u \mapsto u \circ d_{X/S}$ is an isomorphism of $\Gamma(X, \sh{O}_X)$-modules
   \[
   \label{IV.16.5.3.1}
-    \Hom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{F}) \xrightarrow{\sim} \Der_S(\sh{O}_X, \sh{F}).
+    \Hom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{F}) \isoto \Der_S(\sh{O}_X, \sh{F}).
     \tag{16.5.3.1}
   \]
 \end{enumerate}
@@ -1364,7 +1364,7 @@ Note that the mapping $(D_1, D_2) \mapsto [D_1, D_2]$ is \emph{not $\Gamma(X, \s
 For every base change $g : S' \to S$, if  we set $X' = X \times_S S'$, then we see \sref{IV.16.4.5} that we have a canonical isomorphism
 \[
 \label{IV.16.5.10.1}
-  \Omega_{X/S}^1 \otimes_S S' \xrightarrow{\sim} \Omega_{X'/S'}^1,
+  \Omega_{X/S}^1 \otimes_S S' \isoto \Omega_{X'/S'}^1,
   \tag{16.5.10.1}
 \]
 \oldpage[IV-4]{30}  
@@ -1402,7 +1402,7 @@ Since $\Omega_{X/S}^1$ is a quasi-coherent $\sh{O}_X$-module, we can consider th
 which is called the \emph{tangent bundle of $X$ relative to $S$}.
 We have therefore a canonical bijection \sref[II]{II.1.7.9}
 \[
-  \Gamma(T_{X/S}/S) \xrightarrow{\sim} \Hom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{O}_X) = \Gamma(X, \mathfrak{G}_{X/S})
+  \Gamma(T_{X/S}/S) \isoto \Hom_{\sh{O}_X}(\Omega_{X/S}^1, \sh{O}_X) = \Gamma(X, \mathfrak{G}_{X/S})
 \]
 by definition of $\mathfrak{G}_{X/S}$, and we can replace $X$ by an open set $U$ of $X$ in this isomorphism;
 so we can say that the \emph{tangent sheaf} of $X$ relative to $S$ is isomorphic to the \emph{sheaf of germs of $S$-sections} of the tangent bundle of $X$ relative to $S$.
@@ -1416,7 +1416,7 @@ If $g:Y \to Z$ is a second $S$-morphism, we have $T_{X/S}(g \circ f) = (T_{Y/S}(
 It follows from \sref{IV.16.5.10.1} and from \sref[II]{II.1.7.11} that for every base change $g:S' \to S$ we have a canonical isomorphism
 \[
   \label{IV.16.5.12.2}
-  T_{X'/S'} \xrightarrow{\sim} T_{X/S} \times_S S' = T_{X/S} \times_X X'.
+  T_{X'/S'} \isoto T_{X/S} \times_S S' = T_{X/S} \times_X X'.
   \tag{16.5.12.2}
 \]
 \end{env}
@@ -1434,8 +1434,8 @@ When $\Omega_{X/S}^1$ is an $\sh{O}_X$-module of \emph{finite type}, then $T_{X/
 \oldpage[IV-4]{31}
 $g : S \to S'$, and every point $x' \in X' = X \times_S S'$ over $x$, we have a canonical isomorphism
 \[
-\label{IV.16.5.13.2}
-  T_{X'/S'}(x') \xrightarrow{\sim} T_{X/S} \otimes_{\kres(x)} \kres(x').
+  \label{IV.16.5.13.2}
+  T_{X'/S'}(x') \isoto T_{X/S} \otimes_{\kres(x)} \kres(x').
   \tag{16.5.13.2}
 \]
 If $x$ is \emph{rational over $\kres(s)$}, where $s = f(x)$ (so that $\kres(s) \to \kres(x)$ is an isomorphism), it follows from \sref{IV.16.4.13} that we have a canonical isomorphism
@@ -1586,7 +1586,7 @@ but if $w$ is an isomorphism from $\sh{G}$ to $\sh{P}$ (as it is a torsor over $
 \end{proof}
 
 \subsection{Sheaf of $p$-differentials and exterior differentials.}
-\label{IV.16.5}
+\label{IV.16.6}
 
 \begin{env}[16.6.1]
 \label{IV.16.6.1}
@@ -1718,3 +1718,191 @@ We note that the relation $d(dg) = 0$ for every section $g \in \Gamma(U, \sh{O}_
 \]
 in other words, the derivations $D_i$ defined in \sref{IV.16.5.7} commute with each other.
 \end{env}
+
+\subsection{The ~$\mathcal{P}_{X/S}^n(\mathcal{F})$.}
+\label{IV.16.7}
+
+\begin{env}[16.7.1]
+\label{IV.16.7.1}
+Let $f:X \to S$ be a morphism of preschemes, $\sh{F}$ an $\sh{O}_X$-module.
+We denote by $X_{\Delta_f}^{(n)}$ the \emph{n'th infinitesimal neighborhood} of $X$ via the diagonal morphism
+\oldpage[IV-4]{37}
+$\Delta_f: X \to X \times_S X$, by $h_n:X_{\Delta_f}^{(n)} \to X \times_S X$ the canonical morphism \sref{IV.16.1.2}, and consider the two composite morphisms
+\[
+  p_1^{(n)}:X_{\Delta_f}^{(n)} \xrightarrow{h_n} X \times_S X \xrightarrow{p_1} X, \quad 
+  p_2^{(n)}:X_{\Delta_f}^{(n)} \xrightarrow{h_n} X \times_S X \xrightarrow{p_2} X
+\]
+so that, by definition, $p_1^{(n)}$ corresponds to the homomorphism of sheaves of rings $\sh{O}_X \to \sh{P}_{X/S}^n$ which we have chosen to define the $\sh{O}_X$-algebra structure on $\sh{P}_{X/S}^n$ \sref{IV.16.3.5}, and $p_2^{(n)}$ to the homomorphism of sheaves of rings $d^n_{X/S}:\sh{O}_X \to \sh{P}_{X/S}^n$ \sref{IV.16.3.6}.
+Since $X_{\Delta_f}^{(n)}$ and $X$ have the same underlying subspace, we can write
+\[
+  \label{IV.16.7.1.1}
+  \sh{P}_{X/S}^n = (p_1^{(n)})_* ((p_2^{(n)})^* (\sh{O}_X)).
+  \tag{16.7.1.1}
+\]
+More generally, we define
+\[
+  \label{IV.16.7.1.2}
+  \sh{P}_{X/S}^n(\sh{F}) = (p_1^{(n)})_* ((p_2^{(n)})^* (\sh{F})).
+  \tag{16.7.1.2}
+\]
+so that $\sh{P}_{X/S}^n = \sh{P}_{X/S}^n(\sh{O}_X)$;
+by definition, $\sh{P}_{X/S}^n(\sh{F})$ is an $\sh{O}_X$-module.
+\end{env}
+
+\begin{env}[16.7.2]
+\label{IV.16.7.2}
+If we come back to the definition of the inverse image of modules on ringed spaces \sref[0]{0.4.3.1} and having in mind that $X_{\Delta_f}^{(n)}$ and $X$ have the same underlying space, we see that we can write the definition \sref{IV.16.7.1.2} in the form
+\[
+  \label{IV.16.7.2.1}
+  \sh{P}_{X/S}^n(\sh{F}) = \sh{P}_{X/S}^n \otimes_{\sh{O}_X} \sh{F},
+  \tag{16.7.2.1}
+\]
+but where you have to be careful that, in the interpretation of the symbol $\otimes$, $\sh{P}_{X/S}^n$ is endowed with the structure of $\sh{O}_X$-module defined by \emph{the homomorphism of sheaves of rings $d_{X/S}^n:\sh{O}_X \to \sh{P}_{X/S}^n$}.
+It follows immediately from such formula (or directly from \sref{IV.16.7.1.2}) that $\sh{P}_{X/S}^n(\sh{F})$ is canonically equipped with a $\sh{P}_{X/S}^n$-module structure. 
+\end{env}
+
+\begin{proposition}[16.7.3]
+\label{IV.16.7.3}
+\begin{enumerate}
+  \item[\rm{(i)}] The functor $\sh{F} \mapsto \sh{P}_{X/S}^n(\sh{F})$ from the category of $\sh{O}_X$-modules to the category of $\sh{P}_{X/S}^n$-modules is right exact, and commutes with arbitrary inductive limits;
+  it is exact when $\sh{P}_{X/S}^n$ is flat.
+  \item[\rm{(ii)}] If $\sh{F}$ is a quasi-coherent $\sh{O}_X$-module (resp. of finite type, resp. of finite presentation), then $\sh{P}_{X/S}^n(\sh{F})$ is quasi-coherent (resp. of finite type, resp. of finite presentation).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The claims from \rm{(i)} follow from \sref{IV.16.7.2.1} and the consideration of the symmetry of $\sh{P}_{X/S}^n$ \sref{IV.16.3.4}.
+The claims from \rm{(ii)} follow from the right exactness of the functor $\sh{F} \mapsto \sh{P}_{X/S}^n(\sh{F})$.
+\end{proof}
+
+\begin{env}[16.7.4]
+\label{IV.16.7.4}
+The two structures of $\sh{O}_X$-module on $\sh{P}_{X/S}^n$ define in $\sh{P}_{X/S}^n(\sh{F})$ two structures of $\sh{O}_X$-modules, which happen to be permutable, and therefore a $\sh{O}_X$-bimodule structure.
+It is convenient to denote the structure coming from the structure homomorphism $\sh{O}_X \to \sh{P}_{X/S}^n$ (chosen in \sref{IV.16.3.5}) on the \emph{left} and the one coming from the homomorphism $d_{X/S}^n: \sh{O}_X \to \sh{P}_{X/S}^n$ on the \emph{right}.
+On other words, for every open $U$ of $X$, and every triplet $a \in \Gamma(U, \sh{O}_X)$, $b \in \Gamma(U, \sh{P}_{X/S}^n)$, $t \in \Gamma(U, \sh{F})$, we have by definition
+\[
+  \label{IV.16.7.4.1}
+  a(b \otimes t) = (ab) \otimes t, \quad (b \otimes t)a = (b.d^n a) \otimes t = b \otimes (at) = (d^na).(b \otimes t).
+  \tag{16.7.4.1}
+\]
+The $\sh{O}_X$-module structure coming from the definition \sref{IV.16.7.1.2} is therefore, under these conventions, the \emph{left} $\sh{O}_X$-module structure.
+\oldpage[IV-4]{38}
+If $\sh{F}$ is a quasi-coherent $\sh{O}_X$-module, then the same is true for $\sh{P}_{X/S}^n(\sh{F})$ for any one of its $\sh{O}_X$-module structures.
+If also $\sh{F}$ is of finite type (resp. of finite presentation) and $f:X \to S$ is locally of finite type (resp. locally of finite presentation), $\sh{P}_{X/S}^n(\sh{F})$ is (for any one of its $\sh{O}_X$-module structures) of finite type (resp. of finite presentation), which is a consequence of \sref{IV.16.3.9} and \sref{IV.16.4.22}.
+\end{env}
+
+\begin{env}[16.7.5]
+\label{IV.16.7.5}
+The definition \sref{IV.16.7.2.1} entails the existence of a homomorphism of sheaves of commutative groups
+\[
+  \label{IV.16.7.5.1}
+  d_{X/S, \sh{F}}^n: \sh{F} \to \sh{P}_{X/S}^n(\sh{F}) \quad (\text{also denoted } d_{X/S}^n)
+  \tag{16.7.5.1}
+\]
+such that, in the notations of \sref{IV.16.7.4}, we have
+\[
+  \label{IV.16.7.5.2}
+  d_{X/S, \sh{F}}^n(t) = 1 \otimes t
+  \tag{16.7.5.2}
+\]
+and consequently, because of \sref{IV.16.7.4.1}
+\[
+  \label{IV.16.7.5.3}
+  d_{X/S, \sh{F}}^n(at) = (1 \otimes t) a = (d_{X/S, \sh{F}}^n(t)).a
+  \tag{16.7.5.3}
+\]
+\[
+  \label{IV.IV.16.7.5.4}
+  d_{X/S, \sh{F}}^n(at) = (d_{X/S, \sh{F}}^n(a)).(1 \otimes t) = (d_{X/S, \sh{F}}^n(a))(d_{X/S, \sh{F}}^n(t)).
+  \tag{IV.16.7.5.4}
+\]
+Therefore it is $\sh{O}_X$-linear for the structure of \emph{right} $\sh{O}_X$-module on $\sh{P}_{X/S}^n(\sh{F})$, and \emph{semilinear} (relative to the homomorphism $\sigma$ \sref{IV.16.3.4}) for the \emph{left} $\sh{O}_X$-module structure.
+\end{env}
+
+\begin{proposition}[16.7.6]
+\label{IV.16.7.6}
+The right $\sh{O}_X$-module $\sh{P}_{X/S}^n(\sh{F})$ is generated by the image of $\sh{F}$ by the homomorphism $d_{X/S, \sh{F}}$.
+\end{proposition}
+
+\begin{proof}
+This is an immediate consequence of \sref{IV.16.7.5.3} and of the particular case $\sh{F} = \sh{O}_X$ \sref{IV.16.3.8}.
+\end{proof}
+
+\begin{env}[16.7.7]
+\label{IV.16.7.7}
+The canonical homomorphisms of sheaves of rings
+\[
+  \phi_{nm}:\sh{P}_{X/S}^m \to \sh{P}_{X/S}^n 
+\]
+for $n \leq m$ \sref{IV.16.1.2} define, because of \sref{IV.16.7.2.1}, canonical homomorphisms 
+\[
+  \sh{P}_{X/S}^m(\sh{F}) \to \sh{P}_{X/S}^n(\sh{F}) \quad (n \leq m)
+\]
+which are homomorphisms of $\sh{O}_X$-bimodules in light of \sref{IV.16.1.6} and \sref{16.7.4.1};
+also we have commutative diagrams
+\[
+  \xymatrix{
+    \sh{P}_{X/S}^m(\sh{F}) \ar[rr] && \sh{P}_{X/S}^n(\sh{F}) \\
+      & \sh{F} \ar[ul]^-{d_{X/S,\sh{F}}^n} \ar[ur]_-{d_{X/S,\sh{F}}^n}
+  }
+\]
+We have therefore a projective system of $\sh{O}_X$-bimodules ($\sh{P}_{X/S}^n(\sh{F})$), and we define
+\[
+  \label{IV.16.7.7.1}
+  \sh{P}_{X/S}^\infty(\sh{F}) = \varprojlim \sh{P}_{X/S}^n(\sh{F}).
+  \tag{16.7.7.1}
+\]
+Also, this shows that the homomorphisms \sref{IV.16.7.5.1} form a projective system of homomorphisms, and therefore define a canonical homomorphism
+\[
+  \label{IV.16.7.7.2}
+  \xymatrix{
+    d_{X/S,\sh{F}}^\infty: \sh{F} \to \sh{P}_{X/S}^\infty(\sh{F}).
+  }
+  \tag{16.7.7.2}
+\]
+\end{env}
+
+\oldpage[IV-4]{39}
+
+\begin{env}[16.7.8]
+\label{IV.16.7.8}
+Let $\sh{F}$, $\sh{G}$ be two $\sh{O}_X$-modules;
+it follows immediately from the definition \sref{IV.16.7.2.1} that we have a canonical isomorphism of $\sh{P}_{X/S}^n$-modules
+\[
+  \label{IV.16.7.8}
+  \sh{P}_{X/S}^n(\sh{F} \otimes_{\sh{O}_X} \sh{G}) \isoto \sh{P}_{X/S}^n(\sh{F}) \otimes_{\sh{P}_{X/S}^n} \sh{P}_{X/S}^n(\sh{G})
+  \tag{16.7.8}
+\]
+(Bourbaki, \emph{Alg.}, chap.~II, 3\textsuperscript{rd}ed., \textsection5, n.1, prop. 3).
+
+We conclude in particular (or we see directly from the definition \sref{IV.16.7.2.1}) that if $\sh{F}$ has an $\sh{O}_X$-algebra structure (not necessarily associative), $\sh{P}_{X/S}^n(\sh{F})$ has a canonical $\sh{O}_X$-algebra structure;
+the latter is associative (resp. commutative, res. unital, resp. a Lie algebra) if $\sh{F}$ is so.
+Also the canonical homomorphisms $\sh{P}_{X/S}^m(\sh{F}) \to \sh{P}_{X/S}^n(\sh{F})$ for $n \leq m$ \sref{IV.16.7.7} are then algebra di-homomorphisms;
+similarly, \sref{IV.16.7.5.1} is then an $\sh{O}_X$-algebra homomorphisms when $\sh{P}_{X/S}^n(\sh{F})$ is equipped with the $\sh{O}_X$-algebra structure from its structure of \emph{right} $\sh{O}_X$-module.
+
+With the same notations, we equally have a canonical homomorphisms of $\sh{P}_{X/S}^n$-modules
+\[
+  \label{IV.16.7.8.2}
+  \sh{P}_{X/S}^n(\shHom_{\sh{O}_X}(\sh{F}, \sh{G})) \to \shHom_{\sh{P}_{X/S}^n}(\sh{P}_{X/S}^n(\sh{F}), \sh{P}_{X/S}^n(\sh{G}))
+  \tag{16.7.8.2}
+\]
+(Bourbaki, \emph{Alg.}, chap.~II, 3\textsuperscript{rd}ed., \textsection5, n.3), which is bijective when $\sh{P}_{X/S}^n$ is \emph{locally free of finite type} (\emph{loc. cit.}, prop. 7).
+\end{env}
+
+\begin{env}[16.7.9]
+\label{IV.16.7.9}
+Suppose we are in the situation described in \sref{IV.16.4.1};
+then from the canonical homomorphism $P^n(u)$ \sref{IV.16.4.3.3} we deduce immediately a canonical homomorphism of $\sh{O}_{X'}$-bimodules 
+\[
+  \label{IV.16.7.9.1}
+  u^*(\sh{P}_{X/S}^n(\sh{F})) \to \sh{P}_{X'/S'}^n(u^*(\sh{F})).
+  \tag{16.7.9.1}
+\]
+We leave it to the reader to extend the properties seen in \sref{IV.16.4} in the case $\sh{F} = \sh{O}_X$.
+\end{env}
+
+\begin{remark}[16.7.10]
+\label{IV.16.7.10}
+The definition of $\sh{P}_{X/S}^n(\sh{F})$ in the form \sref{IV.16.7.1.2} still makes sense when $\sh{F}$ is a sheaf of sets (the inverse image of a sheaf of sets by $p_2^{(n)}$ being defined in \sref[0]{0.3.7.1});
+a variant of this definition allows us to define the ``jet schemes'' (relatively to $S$) for any prescheme $X$.
+\end{remark}
