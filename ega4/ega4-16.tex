@@ -1906,3 +1906,121 @@ We leave it to the reader to extend the properties seen in \sref{IV.16.4} in the
 The definition of $\sh{P}_{X/S}^n(\sh{F})$ in the form \sref{IV.16.7.1.2} still makes sense when $\sh{F}$ is a sheaf of sets (the inverse image of a sheaf of sets by $p_2^{(n)}$ being defined in \sref[0]{0.3.7.1});
 a variant of this definition allows us to define the ``jet schemes'' (relatively to $S$) for any prescheme $X$.
 \end{remark}
+
+
+\subsection{Differential operators.}
+\footnote{
+  For a more general formalism, see the expos\'e VII of \cite{IV-42} (due to P. Gabriel).
+}
+\label{IV.16.8}
+
+\begin{definition}[16.8.1]
+\label{IV.16.8.1}
+Let $f = (\psi, \theta): X \to S$ be a morphism of preschemes, $\sh{F}$, $\sh{G}$ two $\sh{O}_X$-modules, $n$ an integer $\geq 0$.
+We say that a morphism $D: \sh{F} \to \sh{G}$ of sheaves of additive groups is a differential operator of order $\leq n$ (relative to $S$) if there is a homomorphism of $\sh{O}_X$-modules $u: \sh{P}_{X/S}^n(\sh{F}) \to \sh{G}$ (where $\sh{P}_{X/S}^n(\sh{F})$ is equipped with the structure of left $\sh{O}_X$-modules \sref{IV.16.7.4}) such that we have $D = u \circ d_{X/S, \sh{F}}^n$.
+\end{definition}
+
+It is clear, because of the existence of canonical morphisms
+\[
+  \sh{P}_{X/S}^m(\sh{F}) \to \sh{P}_{X/S}^n(\sh{F})
+\] 
+\oldpage[IV-4]{40}
+for $n \leq m$ \sref{IV.16.7.7}, that a differential operator of order $\leq n$ is a differential operator of order $\leq m$ for $n \leq m$.
+If $D:\sh{F} \to \sh{G}$ is a differential operator of order $\leq n$, then, for every open set $U$ of $X$, $D|U: \sh{F}|U \to \sh{G}|U$ is a differential operator of order $\leq n$.
+
+We say that a homomorphism $D: \sh{F} \to \sh{G}$ is a \emph{differential operator} (relative to $S$) if, for every $x \in X$, there is an open neighborhood $U$ of $x$ and an integer $n \geq 0$ such that $D|U: \sh{F}|U \to \sh{G}|U$ is a differential operator of order $\leq n$.
+The \emph{order} of a differential operator is the least upper bound of all integers $n$ so that $D$ is a differential operator of order $\leq n$ (and therefore $+\infty$ if there is no such integer);
+such order is always finite if $X$ is \emph{quasi-compact}.
+The differential operator of order $0$ are exactly the homomorphisms of $\sh{O}_X$-modules $\sh{F} \to \sh{G}$;
+the operators of order $<0$ are \emph{zero} by convention.
+For $n \geq 0$ a differential operator of order $n$ is not in general a homomorphism of $\sh{O}_X$-modules but always a homomorphism of $\psi^*(\sh{O}_S)$-modules.
+
+When $\sh{F} = \sh{O}_X$, a differential operator of order $\leq 1$ of $\sh{O}_X$ to $\sh{G}$ can be put in the form of $v + D$, where $v: \sh{O}_X \to \sh{G}$ is an $\sh{O}_X$-homomorphism, and $D$ is an \emph{$S$-derivation} \sref{IV.16.5.1} of $\sh{O}_X$ to $\sh{G}$: this results from the structure of $P_{B/A}$ \sref[0]{0.20.4.8}.
+
+\begin{env}[16.8.2]
+\label{IV.16.8.2}
+To describe in a more precise manner a differential operator of order $\leq n$, $D: \sh{F} \to \sh{G}$, it suffices, for every open set $U$ of $X$ whose image in $S$ is contained in an affine open set $V$, to characterize the homomorphism $D = D_U: \Gamma(U, \sh{F}) \to \Gamma(U, \sh{G})$.
+If we put $\Gamma(V, \sh{O}_S) = A$, $\Gamma(U, \sh{O}_X) = B$, so that $B$ is an $A$-algebra, we have $\Gamma(U, \sh{P}_{X/S}^n(\sh{F}) ) = (B \otimes_A B)/\mathfrak{I}^{n+1}$, where we abbreviate $\mathfrak{I} = \mathfrak{I}_{B/A}$. 
+Also put $M = \Gamma(U, \sh{F})$, $N = \Gamma(U, \sh{G})$;
+then the definition of $D$ means that for every pair $(U,V)$ satisfying the above, the $A$-homomorphism $D:M \to N$ factors through
+\[
+  M \to ((B \otimes_A B)/\mathfrak{I}^{n+1}) \otimes_B M \xrightarrow{v} N
+\]
+where the first arrow is the canonical morphism $t \mapsto 1 \otimes t$, and $v$ is a $B$-homomorphism, the structure of $B$-module coming from the first factor (whereas we recall that in the formation of the tensor product over $B$, the structure of $B$-module on $(B \otimes_A B)/\mathfrak{I}^{n+1}$ comes from the second factor $B$).
+Note also that the $B$-module $((B \otimes_A B)/\mathfrak{I}^{n+1}) \otimes_B M$ is isomorphic to $(B \otimes_A M)/\mathfrak{I}^{n+1}(B \otimes_A M)$, where $(B \otimes_A M)$ is considered as a $(B \otimes_A B)$ module and its structure of $B$-module comes from $t \mapsto 1 \otimes t$ of $B$ in $B \otimes_A B$.  
+Let then $D'$ be the $B$-homomorphism of $B \otimes_A M$ to $N$ such that $D'(b \otimes t) = b D(t)$; then condition of factorization of $D$ is to say that $D'$ must be zero on the $B$-module $\mathfrak{I}^{n+1}(B \otimes_A M)$.
+\end{env}
+
+\begin{env}[16.8.3]
+\label{IV.16.8.3}
+It is clear that the set of differential operators of order $\leq n$ from $\sh{F}$ to $\sh{G}$ forms an additive group, denoted by $\Diff_{X/S}^n(\sh{F}, \sh{G})$;
+when $\sh{F} = \sh{G} = \sh{O}_X$, we also write $\Diff_{X/S}^n$ instead of $\Diff_{X/S}^n(\sh{O}_X, \sh{O}_X)$.
+
+Because of \sref{IV.16.8.1}, given two open sets $U \supset V$ of $X$, we have a restriction homomorphism
+\[
+  \Diff_{X/S}^n(\sh{F}|U, \sh{G}|U) \to \Diff_{X/S}^n(\sh{F}|V, \sh{G}|V)
+\]
+\oldpage[IV-4]{41}
+from which we deduce that $U \mapsto \Diff_{U/S}^n(\sh{F}|U, \sh{G}|U)$ is a presheaf of additive groups;
+in fact, it is actually a \emph{sheaf}, since for an open set $U$ varying in $X$, the homomorphisms $u \mapsto u \circ d_{U/S, \sh{F}|U}^n$ are \emph{isomorphisms} of sheaves of additive groups
+\[
+  \label{IV.16.8.3.1}
+  \Hom_{\sh{O}_U}(\sh{P}_{U/S}^n(\sh{F}|U), \sh{G}|U) \isoto \Diff_{U/S}^n(\sh{F}|U, \sh{G}|U),
+  \tag{16.8.3.1}
+\]
+because of the fact that the image of $\sh{F}$ by $d_{X/S, \sh{F}}^n$ generates $\sh{P}_{X/S}^n(\sh{F})$ \sref{IV.16.7.6}.
+We denote this sheaf by $\shDiff_{X/S}^n(\sh{F}, \sh{G})$, and we have:
+\end{env}
+
+\begin{proposition}[16.8.4]
+\label{IV.16.8.4}
+The isomorphisms \sref{IV.16.8.3.1} define an isomorphism of sheaves of additive groups
+\[
+  \label{IV.16.8.4.1}
+  \shHom_{\sh{O}_X}(\sh{P}_{X/S}^n(\sh{F}), \sh{G}) \isoto \shDiff_{X/S}^n(\sh{F}, \sh{G}).
+  \tag{18.4.1}
+\]
+\end{proposition}
+
+When $\sh{F} = \sh{G} = \sh{O}_X$, we also write $\shDiff_{X/S}^n$ instead of $\shDiff_{X/S}^n(\sh{O}_X, \sh{O}_X)$;
+it results from \sref{IV.16.6.4} that $\shDiff_{X/S}^n$ is the \emph{dual} of $\sh{P}_{X/S}^n$;
+so we also $\langle t, D \rangle$ instead of $u(t)$ if $t$ is a section of $\sh{P}_{X/S}^n$ over an open set and if $u$ is a homomorphism from $\sh{P}_{X/S}^n$ to $\sh{O}_X$ corresponding to $D$.
+
+\begin{env}[16.8.5]
+\label{IV.16.8.5}
+When $\sh{P}_{X/S}^n(\sh{F})$ has a $\sh{O}_X$-bimodule structure \sref{IV.16.7.4}, we deduce canonicallly a $\sh{O}_X$-bimodule structure on $\shHom_{\sh{O}_X}(\sh{P}_{X/S}^n(\sh{F}), \sh{G})$, and therefore on $\shDiff_{X/S}^n(\sh{F}, \sh{G})$ because of \sref{IV.16.8.4.1}.
+More precisely, to the left $\sh{O}_X$-module structure on $\sh{P}_{X/S}^n(\sh{F})$ corresponds, because of \sref{IV.16.8.1}, the left $\sh{O}_X$-module structure on $\shDiff_{X/S}^n(\sh{F}, \sh{G})$ explained as follows:
+for every open set $U$ of $X$, every section $a \in \Gamma(U, \sh{O}_X)$ and every differential operator $D: \sh{F}|U \to \sh{G}|U$, $aD$ is the differential operator which, for every section $t \in \Gamma(U, \sh{F})$, makes correspond the section
+\[
+  \label{IV.16.8.5.1}
+  (aD)(t) = a(D(t))
+  \tag{16.8.5.1}
+\]
+of $\Gamma(U, \sh{G})$.
+Similarly, the right $\sh{O}_X$-module structure on $\shDiff_{X/S}^n(\sh{F}, \sh{G})$ is made explicit as follows:
+under the same notations as above, $Da$ is the operator which, to every $t \in \Gamma(U, \sh{F})$, makes correspond the section
+\[
+  \label{IV.16.8.5.2}
+  (Da)(t) = D(at).
+  \tag{16.8.5.2}
+\]
+\end{env}
+
+\begin{proposition}[16.8.6]
+\label{IV.16.8.6}
+If $f:X \to S$ is a morphism locally of finite presentation, $\sh{F}$ a quasi-coherent $\sh{O}_X$-module of finite presentation and $\sh{G}$ a quasi-coherent $\sh{O}_X$-module, then $\shDiff_{X/S}^n(\sh{F}, \sh{G})$ is a quasi-coherent $\sh{O}_X$-module for any of the structures defined in \sref{IV.16.8.5}.
+\end{proposition}
+
+\begin{proof}
+  The proposition follows from the fact that, under these hypothesis, $\sh{P}_{X/S}^n$ is a quasi-coherent $\sh{O}_X$-module of finite presentation \sref{IV.16.7.4} and of \sref[I]{I.3.12}
+\end{proof}
+
+\begin{env}[16.8.6]
+\label{IV.16.8.6}
+The set of differential operators (of unspecified order \sref{IV.16.8.1}) is denoted by $\Diff_{X/S}(\sh{F}, \sh{G})$;
+we also see as in \sref{IV.16.8.3} that $U \mapsto \Diff_{U/S}(\sh{F}|U, \sh{G}|U)$ is a sheaf of additive groups, which we will denote by $\shDiff_{X/S}(\sh{F}, \sh{G})$.
+It is immediate that $\shDiff_{X/S}(\sh{F}, \sh{G})$ is the reunion of the increasing filtered family of its subsheaves $\shDiff_{X/S}^n(\sh{F}, \sh{G})$;
+if $X$ is quasi-compact, $\Diff_{X/S}(\sh{F}, \sh{G})$ 
+\oldpage[IV-4]{42}
+is similarly the union of its subgroups $\Diff_{X/S}^n(\sh{F}, \sh{G})$ \sref{IV.16.8.1}.
+\end{env}
