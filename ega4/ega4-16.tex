@@ -2023,4 +2023,52 @@ It is immediate that $\shDiff_{X/S}(\sh{F}, \sh{G})$ is the reunion of the incre
 if $X$ is quasi-compact, $\Diff_{X/S}(\sh{F}, \sh{G})$ 
 \oldpage[IV-4]{42}
 is similarly the union of its subgroups $\Diff_{X/S}^n(\sh{F}, \sh{G})$ \sref{IV.16.8.1}.
+The $\sh{O}_X$-bimodule structure on the $\shDiff_{X/S}^n(\sh{F}, \sh{G})$ induce therefore a $\sh{O}_X$-bimodule structure on $\shDiff_{X/S}(\sh{F}, \sh{G})$, further explained in \sref{IV.16.8.5.1} and \sref{IV.16.8.5.2}.
+
+Note that, for $n \leq m$, we have a commutative diagram
+\[
+  \label{IV.16.8.7.1}
+  \xymatrix{
+    \shHom_{\sh{O}_X}(\sh{P}_{X/S}^n(\sh{F}), \sh{G}) \ar[r]^-{\sim} \ar[d] & \shDiff_{X/S}^n(\sh{F}, \sh{G}) \ar[d] \\
+    \shHom_{\sh{O}_X}(\sh{P}_{X/S}^m(\sh{F}), \sh{G}) \ar[r]^-{\sim} & \shDiff_{X/S}^m(\sh{F}, \sh{G})
+  }
+  \tag{16.8.7.1}
+\] 
+where the horizontal arrows are the isomorphisms \sref{IV.16.8.4.2} and the horizontal arrow on the left comes from the canonical morphism $\sh{P}_{X/S}^m(\sh{F}) \to \sh{P}_{X/S}^n(\sh{F})$ \sref{IV.16.7.7}.
+For every open set $U$ of $X$, we then endow $\Gamma(U, \sh{P}_{X/S}^\infty(\sh{F})) = \varprojlim \Gamma(U, \sh{P}_{X/S}^n(\sh{F}))$ of the projective limit topology of the discrete topology on $\Gamma(U, \sh{P}_{X/S}^n(\sh{F}))$, which defines on $\Gamma(U, \sh{P}_{X/S}^\infty(\sh{F}))$ a topological $\Gamma(U, \sh{O}_X)$-bimodule structure, so that $\sh{P}_{X/S}^\infty(\sh{F})$ shows itself as a sheaf valued in the category of topological commutative groups \sref[0]{0.3.2.6}.
+So \cite[II, 1.11]{I-4}, the limit of the inductive system of sheaves of commutative groups ($\shHom_{\sh{O}_X}(\sh{P}_{X/S}^n(\sh{F}), \sh{G})$) is precisely the sheaf of \emph{continuous} germs of homomorphisms from $\sh{P}_{X/S}^\infty(\sh{F})$ to $\sh{G}$ (the latter equipped with the discrete topology):
+the continuous homomorphisms $\Gamma(U, \sh{P}_{X/S}^\infty(\sh{F}))$ into the discrete group $\sh{G}$ indeed correspond bijectively to the inductive systems of group homomorphisms $\Gamma(U, \sh{P}_{X/S}^n(\sh{F})) \to \Gamma(U, \sh{G})$.
+We can furthermore express \sref{IV.16.8.4} by saying there is a canonical isomorphism
+\[
+  \shHomcont_{\sh{O}_X} (\sh{P}_{X/S}^\infty(\sh{F}), \sh{G}) \isoto \shDiff_{X/S}(\sh{F}, \sh{G})
+\]
+where the first member denotes the sheaf of germs of continuous homomorphisms from $\sh{P}_{X/S}^\infty(\sh{F})$ to $\sh{G}$.
 \end{env}
+
+\begin{proposition}[16.8.8]
+\label{IV.16.8.8}
+Let $\sh{F}$, $\sh{G}$ be two $\sh{O}_X$-modules, $D: \sh{F} \to \sh{G}$ a homomorphism of $\psi^*(\sh{O}_S)$-modules, $n$ an integer $\geq 0$.
+The following conditions are equivalent:
+\begin{enumerate}
+  \item[a)] $D$ is a differential operator of order $\leq n$.
+  \item[b)] For all sections $a$ of $\sh{O}_X$ over an open set $U$, the homomorphism $D_a: \sh{F}|U \to \sh{G}|U$ such that, for every section $t$ of $\sh{F}$ over an open set $V \subset U$, we have
+  \[  
+    \label{IV.16.8.8.1}
+    D_a(t) = D(at) - a D(t)
+    \tag{16.8.8.1}
+  \]
+  is a differential operator of order $\leq n-1$.
+  \item[c)] For every open set $U$ of $X$, every family $(a_i)_{1 \leq i \leq n+1}$ of $n+1$ sections of $\sh{O}_X$ over $U$ and every section $t$ of $\sh{F}$ over $U$, we have the identity
+  \[
+    \label{IV.16.8.8.2}
+    \sum_{H \subset I_{n+1}} (-1)^{|H|} (\prod_{i \in H} a_i) D ((\prod_{i \notin H} a_i ) t ) = 0
+    \tag{16.8.8.2}
+  \]
+  (where $I_{n+1}$ is the interval $1 \leq i \leq n+1$ of $\mathbb{N}$).
+\end{enumerate}
+\oldpage[IV-4]{43}
+\end{proposition}
+
+\begin{proof}
+  Lets prove first the equivalence of a) and b).
+\end{proof}
