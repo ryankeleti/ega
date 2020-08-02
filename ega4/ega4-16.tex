@@ -1956,7 +1956,7 @@ Let then $D'$ be the $B$-homomorphism of $B \otimes_A M$ to $N$ such that $D'(b 
 It is clear that the set of differential operators of order $\leq n$ from $\sh{F}$ to $\sh{G}$ forms an additive group, denoted by $\Diff_{X/S}^n(\sh{F}, \sh{G})$;
 when $\sh{F} = \sh{G} = \sh{O}_X$, we also write $\Diff_{X/S}^n$ instead of $\Diff_{X/S}^n(\sh{O}_X, \sh{O}_X)$.
 
-Because of \sref{IV.16.8.1}, given two open sets $U \supset V$ of $X$, we have a restriction homomorphism
+We have seen \sref{IV.16.8.1}, that given two open sets $U \supset V$ of $X$, we have a restriction homomorphism
 \[
   \Diff_{X/S}^n(\sh{F}|U, \sh{G}|U) \to \Diff_{X/S}^n(\sh{F}|V, \sh{G}|V)
 \]
@@ -1984,7 +1984,7 @@ The isomorphisms \sref{IV.16.8.3.1} define an isomorphism of sheaves of additive
 
 When $\sh{F} = \sh{G} = \sh{O}_X$, we also write $\shDiff_{X/S}^n$ instead of $\shDiff_{X/S}^n(\sh{O}_X, \sh{O}_X)$;
 it results from \sref{IV.16.6.4} that $\shDiff_{X/S}^n$ is the \emph{dual} of $\sh{P}_{X/S}^n$;
-so we also $\langle t, D \rangle$ instead of $u(t)$ if $t$ is a section of $\sh{P}_{X/S}^n$ over an open set and if $u$ is a homomorphism from $\sh{P}_{X/S}^n$ to $\sh{O}_X$ corresponding to $D$.
+so we also write $\langle t, D \rangle$ instead of $u(t)$ if $t$ is a section of $\sh{P}_{X/S}^n$ over an open set and if $u$ is a homomorphism from $\sh{P}_{X/S}^n$ to $\sh{O}_X$ corresponding to $D$.
 
 \begin{env}[16.8.5]
 \label{IV.16.8.5}
@@ -2012,7 +2012,7 @@ If $f:X \to S$ is a morphism locally of finite presentation, $\sh{F}$ a quasi-co
 \end{proposition}
 
 \begin{proof}
-  The proposition follows from the fact that, under these hypothesis, $\sh{P}_{X/S}^n$ is a quasi-coherent $\sh{O}_X$-module of finite presentation \sref{IV.16.7.4} and of \sref[I]{I.3.12}
+The proposition follows from the fact that, under these hypothesis, $\sh{P}_{X/S}^n$ is a quasi-coherent $\sh{O}_X$-module of finite presentation \sref{IV.16.7.4} and of \sref[I]{I.3.12}
 \end{proof}
 
 \begin{env}[16.8.6]
@@ -2034,8 +2034,8 @@ Note that, for $n \leq m$, we have a commutative diagram
   }
   \tag{16.8.7.1}
 \] 
-where the horizontal arrows are the isomorphisms \sref{IV.16.8.4.2} and the horizontal arrow on the left comes from the canonical morphism $\sh{P}_{X/S}^m(\sh{F}) \to \sh{P}_{X/S}^n(\sh{F})$ \sref{IV.16.7.7}.
-For every open set $U$ of $X$, we then endow $\Gamma(U, \sh{P}_{X/S}^\infty(\sh{F})) = \varprojlim \Gamma(U, \sh{P}_{X/S}^n(\sh{F}))$ of the projective limit topology of the discrete topology on $\Gamma(U, \sh{P}_{X/S}^n(\sh{F}))$, which defines on $\Gamma(U, \sh{P}_{X/S}^\infty(\sh{F}))$ a topological $\Gamma(U, \sh{O}_X)$-bimodule structure, so that $\sh{P}_{X/S}^\infty(\sh{F})$ shows itself as a sheaf valued in the category of topological commutative groups \sref[0]{0.3.2.6}.
+where the horizontal arrows are the isomorphisms \sref{IV.16.8.4.1} and the horizontal arrow on the left comes from the canonical morphism $\sh{P}_{X/S}^m(\sh{F}) \to \sh{P}_{X/S}^n(\sh{F})$ \sref{IV.16.7.7}.
+For every open set $U$ of $X$, we then endow $\Gamma(U, \sh{P}_{X/S}^\infty(\sh{F})) = \varprojlim \Gamma(U, \sh{P}_{X/S}^n(\sh{F}))$ of the projective limit topology of the discrete topologies on $\Gamma(U, \sh{P}_{X/S}^n(\sh{F}))$, which defines on $\Gamma(U, \sh{P}_{X/S}^\infty(\sh{F}))$ a topological $\Gamma(U, \sh{O}_X)$-bimodule structure, so that $\sh{P}_{X/S}^\infty(\sh{F})$ shows itself as a sheaf valued in the category of topological commutative groups \sref[0]{0.3.2.6}.
 So \cite[II, 1.11]{I-4}, the limit of the inductive system of sheaves of commutative groups ($\shHom_{\sh{O}_X}(\sh{P}_{X/S}^n(\sh{F}), \sh{G})$) is precisely the sheaf of \emph{continuous} germs of homomorphisms from $\sh{P}_{X/S}^\infty(\sh{F})$ to $\sh{G}$ (the latter equipped with the discrete topology):
 the continuous homomorphisms $\Gamma(U, \sh{P}_{X/S}^\infty(\sh{F}))$ into the discrete group $\sh{G}$ indeed correspond bijectively to the inductive systems of group homomorphisms $\Gamma(U, \sh{P}_{X/S}^n(\sh{F})) \to \Gamma(U, \sh{G})$.
 We can furthermore express \sref{IV.16.8.4} by saying there is a canonical isomorphism
@@ -2061,7 +2061,7 @@ The following conditions are equivalent:
   \item[(c)] For every open set $U$ of $X$, every family $(a_i)_{1 \leq i \leq n+1}$ of $n+1$ sections of $\sh{O}_X$ over $U$ and every section $t$ of $\sh{F}$ over $U$, we have the identity
   \[
     \label{IV.16.8.8.2}
-    \sum_{H \subset I_{n+1}} (-1)^{|H|} (\prod_{i \in H} a_i) D ((\prod_{i \notin H} a_i ) t ) = 0
+    \sum_{H \subset I_{n+1}} (-1)^{\operatorname{Card}(H)} (\prod_{i \in H} a_i) D ((\prod_{i \notin H} a_i ) t ) = 0
     \tag{16.8.8.2}
   \]
   (where $I_{n+1}$ is the interval $1 \leq i \leq n+1$ of $\mathbb{N}$).
@@ -2070,24 +2070,24 @@ The following conditions are equivalent:
 \end{proposition}
 
 \begin{proof}
-  Lets prove first the equivalence of (a) and (b).
-  By definition, to prove that $D$ is a differential operator of order $\leq n$, it suffices to prove so for the restriction $D|U: \sh{F}|U \to \sh{G}|U$ to any affine open set $U$ of $X$, and on the other hand the property (c) is valid for every open set $U$ if it is so on every affine open set.
-  We can therefore restrict ourselves to the case where $S = \Spec(A)$ and $X = \Spec(B)$ are affines.
-  Because of \sref{IV.16.8.2} (where we use the same notations), the condition (a) means that the $A$-homomorphism $D': B \otimes_A M \to N$ such that $D'(b \otimes t) = b D(t)$ is zero on $\mathfrak{I}^{n+1}(B \otimes_A M)$, which is, because of \sref[0]{0.20.4.4}, equivalent to saying that $D'$ is annihilates every element of the form
-  \[
-    (\prod_{i=1}^{n+1} (a_i \otimes 1 - 1 \otimes a_i) ) . (1 \otimes t)
-  \]
-  where $a_i \in B$ and $t \in M$.
-  Now, this element can be written as $\sum_{H \subset I_{n+1}} (\prod_{i \in H} a_i) \otimes ((\prod_{i \notin H} a_i ) t )$, and the image under $D'$ of this element is the first member of \sref{IV.16.8.8.2}, which proves the equivalence of (a) and (c).
+Lets prove first the equivalence of (a) and (b).
+By definition, to prove that $D$ is a differential operator of order $\leq n$, it suffices to prove so for the restriction $D|U: \sh{F}|U \to \sh{G}|U$ to any affine open set $U$ of $X$, and on the other hand the property (c) is valid for every open set $U$ if it is so on every affine open set.
+We can therefore restrict ourselves to the case where $S = \Spec(A)$ and $X = \Spec(B)$ are affines.
+Because of \sref{IV.16.8.2} (where we use the same notations), the condition (a) means that the $A$-homomorphism $D': B \otimes_A M \to N$ such that $D'(b \otimes t) = b D(t)$ is zero on $\mathfrak{I}^{n+1}(B \otimes_A M)$, which is, because of \sref[0]{0.20.4.4}, equivalent to saying that $D'$ is annihilates every element of the form
+\[
+  (\prod_{i=1}^{n+1} (a_i \otimes 1 - 1 \otimes a_i) ) . (1 \otimes t)
+\]
+ where $a_i \in B$ and $t \in M$.
+Now, this element can be written as $\sum_{H \subset I_{n+1}} (\prod_{i \in H} a_i) \otimes ((\prod_{i \notin H} a_i ) t )$, and the image under $D'$ of this element is the first member of \sref{IV.16.8.8.2}, which proves the equivalence of (a) and (c).
 
-  Let us prove now the equivalence of (b) and (c).
-  Let us reason by induction on $n$, the statement being trivial for $n=0$.
-  Writing $a_{n+1}$ instead of $a$ in the condition (b), we see, by the induction hypothesis, that condition (b) means that for every family $(a_i)_{1 \leq i \leq n}$ of $n$ sections of $\sh{O}_X$ over $U$ and every section $t$ of $\sh{F}$ over U, that
-  \[
-    \sum_{H' \subset I_{n+1}} (-1)^{|H'|} (\prod_{i \in H'} a_i) D_{a_{n+1}} ((\prod_{i \notin H'} a_i ) t ) = 0.
-  \]
-  But if we replace on this relation $D_{a_{n+1}}$ by the definition \sref{IV.16.8.8.1}, we check immediately that we have, up to sign, the first member of \sref{IV.16.8.8.2};
-  from which we conclude.
+Let us prove now the equivalence of (b) and (c).
+Let us reason by induction on $n$, the statement being trivial for $n=0$.
+Writing $a_{n+1}$ instead of $a$ in the condition (b), we see, by the induction hypothesis, that condition (b) means that for every family $(a_i)_{1 \leq i \leq n}$ of $n$ sections of $\sh{O}_X$ over $U$ and every section $t$ of $\sh{F}$ over U, that
+\[
+  \sum_{H' \subset I_{n+1}} (-1)^{\operatorname{Card}(H')}  (\prod_{i \in H'} a_i) D_{a_{n+1}} ((\prod_{i \notin H'} a_i ) t ) = 0.
+\]
+But if we replace on this relation $D_{a_{n+1}}$ by the definition \sref{IV.16.8.8.1}, we check immediately that we have, up to sign, the first member of \sref{IV.16.8.8.2};
+from which we conclude.
 \end{proof}
 
 \begin{proposition}[16.8.9]
@@ -2115,9 +2115,9 @@ It suffices to prove the
 \label{IV.16.8.9.1}
 There is one and only one $\sh{O}_X$-homomorphism
 \[
-  \label{IV.16.8.9.1}
+  \label{IV.16.8.9.2}
   \delta: \sh{P}_{X/S}^{n + n'} \to \sh{P}_{X/S}^{n'}(\sh{P}_{X/S}^n) = \sh{P}_{X/S}^{n'} \otimes_{\sh{O}_X} \sh{P}_{X/S}^n 
-  \tag{16.8.9.1}
+  \tag{16.8.9.2}
 \]
 \oldpage[IV-4]{44}
 making the following diagram commute
@@ -2167,7 +2167,7 @@ recall that on tensor product of the second member, $(B \otimes_A B)/\mathfrak{I
 as a right $B$-module by its second $B$ factor , and $(B \otimes_A B)/\mathfrak{I}^{n + 1}$ as a left $B$-module by its first $B$ factor \sref{IV.16.7.2}.
 It is the same to define a homomorphism of $B$-modules
 \[
-  \varphi_0: (B \otimes_A B) \to ((B \otimes_A B)/\mathfrak{I}^{n' + 1}) \otimes_B ((B \otimes_A B)/\mathfrak{I}^{n + 1})
+  \varphi_0: B \otimes_A B \to ((B \otimes_A B)/\mathfrak{I}^{n' + 1}) \otimes_B ((B \otimes_A B)/\mathfrak{I}^{n + 1})
 \]
 and prove it is zero on $\mathfrak{I}^{n+n'+1}$.
 Now, we immediately define a homomorphism by the condition that
@@ -2226,7 +2226,7 @@ The formulas \sref{IV.16.8.5.1} and \sref{IV.16.8.5.2} show that the structure o
   \[
     \Diff_{X/S}^n(\sh{F}, \sh{G}) = \prod_{\mu \in M} \Diff_{X/S}^n(\sh{F}, \sh{G}_\mu),
   \]
-  and therefore also
+  and consequently also
   \[
     \shDiff_{X/S}^n(\sh{F}, \sh{G}) = \prod_{\mu \in M} \shDiff_{X/S}^n(\sh{F}, \sh{G}_\mu).
   \]
