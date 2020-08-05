@@ -2235,3 +2235,75 @@ The formulas \sref{IV.16.8.5.1} and \sref{IV.16.8.5.2} show that the structure o
   the latter will be studied later \sref{IV.16.11} in a particular case.
 \end{enumerate}
 \end{remarks}
+
+\subsection{Regular and quasi-regular immersions}
+\label{IV.16.9}
+
+\begin{definition}[16.9.1]
+\label{IV.16.9.1}
+Let $X$ be a ringed space.
+We say that an ideal $\sh{I}$ of $\sh{O}_X$ is regular (resp. quasi-regular) if, for every point $x \in \Supp(\sh{O}_X/\sh{I})$, there is an open neighborhood of $x$ in $X$ and a regular sequence \sref[0]{0.15.2.2} (resp. quasi-regular \sref[0]{0.15.2.2}) of elements of $\Gamma(U, \sh{O}_X)$ which generates $\sh{I}|U$. 
+\end{definition}
+
+We say that a regular (resp. quasi-regular) sequence of sections of $\sh{O}_X$ over $U$ which generates $\sh{I}|U$ is called a \emph{regular system} (resp. \emph{quasi-regular system}) of generators of $\sh{I}|U$.
+
+\begin{definition}[16.9.2]
+\label{IV.16.9.2}
+Let $j: Y \to X$ be an immersion of preschemes and let $U$ be an open set such that $j(Y) \subset U$ and that $j$ is a closed immersion of $Y$ in $U$.
+We say that $j$ is regular (resp. quasi-regular) if the closed subprescheme $j(Y)$ of $U$ associated to $j$ is defined by a regular (resp. quasi-regular) ideal of $\sh{O}_U$ (condition independent of the choice of $U$).
+\end{definition}
+
+We say that a subprescheme $Y$ of a prescheme $X$ is \emph{regularly immersed} (resp. \emph{quasi-regularly immersed}) if the canonical injection $j:Y \to X$ is a regular immersion (resp. quasi-regular immersion). 
+If $Y$ is a closed subprescheme and $\sh{I}$ is the ideal of $\sh{O}_X$ that defines $Y$, it is the same as asking $\sh{I}$ to be \emph{regular} (resp. \emph{quasi-regular}).
+
+For example, if $A$ is an \emph{integral} ring, $f$ and element $\neq 0$ of $A$, the closed subprescheme $V(f)$ of $\Spec(A)$ (isomorphic to $\Spec(A/(f))$) is \emph{regularly immersed} in $\Spec(A)$.
+
+Every regular ideal is quasi-regular \sref[0]{0.15.2.2};
+every regular immersion is quasi-regular (cf. \sref{IV.16.9.11} for a converse).  
+
+\begin{proposition}[16.9.3]
+\label{IV.16.9.3}
+Let $X$ be a ringed space, $\sh{I}$ an ideal of $\sh{O}_X$, $(f_i)_{1 \leq i \leq m}$ a finite sequence of sections of $\sh{O}_X$ over $X$ generating $\sh{I}$.
+For the $(f_i)$ to be a quasi-regular sequence $\sref[0]{0.15.2.2}$, it is necessary and sufficient that the following conditions are verified:
+\begin{enumerate}
+  \item[\rm{(i)}] The canonical images of $f_i$ in $\sh{I}/\sh{I}^2$ form a basis of this $\sh{O}_X/\sh{I}$-module.
+  \item[\rm{(ii)}] The canonical surjective homomorphism \sref{IV.16.1.2.2}
+  \[
+    \bb{S}_{\sh{O}_X/\sh{I}}^\bullet (\sh{I}/\sh{I}^2) \to \shGr_{\sh{I}}^\bullet(\sh{O}_X) 
+  \]
+  is bijective.
+\end{enumerate}
+
+Also, if this is true, then every sequence $(f'_i)_{1 \leq i \leq n}$ of $n$ sections of $\sh{I}$ over $X$ which generates $\sh{I}$ is quasi-regular.
+\end{proposition}
+
+\oldpage[IV-4]{47}
+
+\begin{proof}
+The two conditions stated above only translate the ones in \sref[0]{0.15.2.2}, given the definition of the canonical homomorphisms \sref{IV.16.2.1.1}.
+The last claim follows from the fact that, if a module $M$ over a commutative ring $A$ admits a basis of $n$ elements, every system of $n$ generators of $M$ is a basis (Bourbaki, \emph{Alg. comm.}, chap.~II, \textsection3, cor. 5 of th. 1).
+\end{proof}
+
+\begin{corollary}[16.9.4]
+\label{IV.16.9.4}
+Let $X$ be a locally ringed space, $\sh{I}$ an ideal of $\sh{O}_X$.
+For $\sh{I}$ to be quasi-regular, it is necessary and sufficient that it verifies the following conditions:
+\begin{enumerate}
+  \item[\rm{(i)}] $\sh{I}$ is of finite type.
+  \item[\rm{(ii)}] $\sh{I}/\sh{I}^2$ is a locally free $\sh{O}_X/\sh{I}$-module.
+  \item[\rm{(iii)}] The canonical homomorphism
+  \[
+    \label{IV.16.9.4.1}
+    \bb{S}_{\sh{O}_X/\sh{I}}^\bullet (\sh{I}/\sh{I}^2) \to \shGr_{\sh{I}}^\bullet(\sh{O}_X) 
+    \tag{16.9.4.1}
+  \]
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+The necessity of the conditions follows immediately from \sref{IV.16.9.3}.
+To see that they are sufficient, it is enough to show, because of \sref{IV.16.9.3}, that if, in a point $x \in \Supp(\sh{O}_X/\sh{I})$, there is a neighborhood $U$ of $x$ in $X$ and $n$-sections $f_i$ $(1 \leq i \leq n)$ of $\sh{I}$ over $U$ such that the image in $\sh{I}/\sh{I}^2$ form a basis of $(\sh{I}/\sh{I}^2)|U$ over $(\sh{O}_X/\sh{I})|U$, then there is a neighborhood $V \subset U$ of $x$ such that the $f_i|V$ generate $\sh{I}|V$.
+Now, by hypothesis, we have $\sh{I}_x \neq \sh{O}_x$, so that $\sh{I}_x$ is contained in the maximal ideal of $\sh{O}_X$; 
+since $\sh{I}_x$ is a $\sh{O}_x$ module of finite type and the classes of $(f_i)_x$ in $\sh{I}_x/\sh{I}_x^2$ generate this $(\sh{O}_x/\sh{I}_x)$-module, Nakayama's lemma shows that the $(f_i)_x$ generate $\sh{I}_x$.
+Since $\sh{I}$ is of finite type, we conclude by \sref[0]{0.5.2.2}.
+\end{proof} 
