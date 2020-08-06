@@ -934,9 +934,49 @@ Criterion~(a) of \sref{II.4.5.2} shows that it suffices to prove
   \]
   for $m>0$ large enough.
   In fact, $Z_g$ is an \emph{affine open} subset of $Z$, and so $\HH^1(Z_g,\sh{I}(n))=0$ when $\sh{I}(n)$ is considered as an \emph{$\sh{O}_Z$-module} \sref[I]{I.5.1.9.2}.
-  In particular,
+  In particular, if we set $g'=g|Z_g$, and if we consider its image under the map $\partial:\Gamma(Z_g,\sh{L}'^{\otimes n})\to\HH^1(Z_g,\sh{I}(n))$, then $\partial g'=0$.
+  To better explain this equation, we note that, in dimension~$1$, the cohomology of a sheaf of abelian groups is the same as its Čech cohomology (G, II, 5.9);
+  to calculate $\partial g$, we must thus consider a fine-enough open cover $(U_\alpha)$ of $X$, that we can suppose to be \emph{finite} and consisting of affine opens, and take, for each $\alpha$, a section $g_\alpha\in\Gamma(U_\alpha,\sh{L}^{\otimes n})$ whose canonical image in $\Gamma(U_\alpha,\sh{L}'^{\otimes n})$ is $g|U_\alpha$, and to consider the cocycle class $(g_{\alpha|\beta}-g_{\beta|\alpha})$, with $g_{\alpha|\beta}$ being the restriction of $g_\alpha$ to $U_\alpha\cap U_\beta$ (with this cocycle taking values in $\sh{I}(n)$).
+  We can further suppose that $\partial g'$ is calculated in the same way, by means of a cover given by the $U_\alpha\cap Z_g$, and restrictions $g_\alpha|(U_\alpha\cap Z_g)$ (by replacing, if necessary, $(U_\alpha)$ by a finer cover);
+  the equation $\partial g'=0$ then implies that there exists, for each $\alpha$, a section $h_\alpha\in\Gamma(U_\alpha\cap Z_g,\sh{I}(n))$ such that $(g_{\alpha|\beta}-g_{\beta|\alpha})|(U_\alpha\cap U_\beta\cap Z_g) = h_{\alpha|\beta}-h_{\beta|\alpha}$, where $h_{\alpha|\beta}$ denotes the restriction of $h_\alpha$ to $U_\alpha\cap U_\beta\cap Z_g$ (G, II, 5.11).
+  Then there exists an integer $m>0$ such that $g^{\otimes m}\otimes h_\alpha$ is the restriction to $U_\alpha\cap Z_g$ of a section $t_\alpha\in\Gamma(U_\alpha,\sh{I}(n+nm))$ for all $\alpha$ \sref[I]{I.9.3.1};
+  thus $g^{\otimes m}\otimes(g_{\alpha|\beta}-g_{\beta|\alpha})=t_{\alpha|\beta}-t_{\beta|\alpha}$ for every pair of indices, which proves \sref{II.4.5.13.2}.
+
+  Now note that, if $s\in\Gamma(X,\sh{O}_Z(p))$ and $t\in\Gamma(X,\sh{O}_Z(q))$, then, in the group $\HH^1(X,\sh{I}(p+q))$,
+  \[
+  \label{II.4.5.13.3}
+    \partial(s\otimes t) = (\partial s)\otimes t + s\otimes(\partial t).
+  \tag{4.5.13.3}
+  \]
+
+  Indeed, we can again calculate the two members by considering an open cover $(U_\alpha)$ of $X$, and, for each $\alpha$, a section $s_\alpha\in\Gamma(U_\alpha,\sh{O}_X(p))$ (resp. $t_\alpha\in\Gamma(U_\alpha,\sh{O}_X(q))$) whose canonical image in $\Gamma(U_\alpha,\sh{O}_Z(p)$ (resp. $\Gamma(U_\alpha,\sh{O}_Z(q))$) is $s|U_\alpha$ (resp. $t|U_\alpha$);
+  equation~\sref{II.4.5.13.3} then follows from the equations
+  \[
+    (s_{\alpha|\beta}\otimes t_{\alpha|\beta}) - (s_{\beta|\alpha}\otimes t_{\beta|\alpha})
+    = (s_{\alpha|\beta} - s_{\beta|\alpha})\otimes t_{\alpha|\beta} + s_{\beta|\alpha}\otimes(t_{\alpha|\beta} - t_{\beta|\alpha})
+  \]
+  with the same notation as above.
+  By induction on $k$, we thus have
+  \[
+  \label{II.4.5.13.4}
+    \partial(g^{\otimes k}) = (kg^{\otimes (k-1)})\otimes(\partial g)
+  \tag{4.5.13.4}
+  \]
+\oldpage[II]{89}
+  and we thus conclude from \sref{II.4.5.13.2} and \sref{II.4.5.13.4} that $\partial(g^{\otimes(m+1)}=0$;
+  thus $g^{\otimes(m+1)}$ is the canonical image of a section $f$ of $\sh{L}^{\otimes n(m+1)}$ over $X$, which proves \sref{II.4.5.13}.
+\end{proof}
+
+\begin{corollary}{4.5.14}
+\label{II.4.5.14}
+  Let $X$ be a Noetherian scheme, and $j$ the canonical injection $X_\red\to X$.
+  For an invertible $\sh{O}_X$-module $\sh{L}$ to be ample, it is necessary and sufficient for $j^*(\sh{L})$ to be an ample $\sh{O}_{X_\red}$-module.
+\end{corollary}
+
+\begin{proof}
+  This follows from \sref[I]{I.6.1.6}
 \end{proof}
 
 
-% \subsection{Relatively ample sheaves}
-% \label{subsection:II.4.6}
+\subsection{Relatively ample sheaves}
+\label{subsection:II.4.6}
