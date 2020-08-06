@@ -725,8 +725,8 @@ Furthermore, if $(f_\alpha)$ is a family of homogeneous elements of $S_+$ such t
   on the other hand \sref[I]{I.9.3.1}[(ii)], such a section $s$ is of the form $(t|X_f)\otimes(f|X_f)^{-m}$, where $t\in\Gamma(X,\sh{F}(km))$;
   by definition, $t$ is also a section of $\sh{F}_{km}$, so $s$ is indeed a section of $\sh{F}_{km}(-km)$ over $X_f$, which proves (c).
   It is clear that (c) implies (c'), so it remains only to show that (c') implies (a).
-  But let $U$ be an open neighbourhood of $x\in X$, and let $\sh{I}$ be a quasi-coherent sheaf of ideals of $\sh{O}_X$ defining a closed subprescheme of $X$ that has $X\setmin U$ as its underlying space \sref[I]{I.5.2.1}.
-  Hypothesis~(c') implies that there exists an integer $n>0$ and a section $f$ of $\sh{I}(n)$ over $X$ such that $f(x)\neq0$.
+  But let $U$ be an open neighbourhood of $x\in X$, and let $\sh{J}$ be a quasi-coherent sheaf of ideals of $\sh{O}_X$ defining a closed subprescheme of $X$ that has $X\setmin U$ as its underlying space \sref[I]{I.5.2.1}.
+  Hypothesis~(c') implies that there exists an integer $n>0$ and a section $f$ of $\sh{J}(n)$ over $X$ such that $f(x)\neq0$.
   But we clearly have $f\in S_n$, and $x\in X_f\subset U$, which proves (a).
 \end{proof}
 
@@ -752,7 +752,7 @@ For every finite subspace $Z$ of $X$ and every neighbourhood $U$ of $Z$, there e
 \oldpage[II]{85}
 By \sref{II.4.5.2}[(b)], it suffices to prove that, for every finite subset $Z'$ of $\Proj(S)$ and every open neighbourhood $U$ of $Z'$, there exists a homogeneous element $f\in S_+$ such that $Z\subset(\Proj(S))_f\subset U$ \sref{II.2.4.1}.
 But, by definition, the closed set $Y$, complement of $U$ in $\Proj(S)$, is of the form $V_+(\mathfrak{I})$, where $\mathfrak{I}$ is a graded ideal of $S$ that does not contain $S_+$ \sref{II.2.3.2};
-also, the points of $Z'$ are, by definition, graded ideals $\mathfrak{p}_i$ of $S_+$ that do not contain $\sh{I}$ \sref{II.2.3.1}.
+also, the points of $Z'$ are, by definition, graded ideals $\mathfrak{p}_i$ of $S_+$ that do not contain $\sh{J}$ \sref{II.2.3.1}.
 There thus exists an element $f\in\mathfrak{I}$ that does not belong to any of the $\mathfrak{p}_i$ (Bourbaki, \emph{Alg. comm.}, chap.~II, \S1, no.~1, prop.~2), and, since the $\mathfrak{p}_i$ are graded, the argument made \emph{loc. cit.} shows that we can even take $f$ to be homogeneous;
 this element then satisfies the claim.
 \end{proof}
@@ -890,21 +890,21 @@ We do not know if the hypothesis that an $\sh{O}_X$-module $\sh{L}$ is such that
 
 \begin{proposition}[4.5.13]
 \label{II.4.5.13}
-Let $X$ be a quasi-compact prescheme, $Z$ a closed prescheme of $X$ defined by a \emph{nilpotent} quasi-coherent sheaf $\sh{I}$ of ideals of $\sh{O}_X$, and $j$ the canonical injection $Z\to X$.
+Let $X$ be a quasi-compact prescheme, $Z$ a closed prescheme of $X$ defined by a \emph{nilpotent} quasi-coherent sheaf $\sh{J}$ of ideals of $\sh{O}_X$, and $j$ the canonical injection $Z\to X$.
 For an invertible $\sh{O}_X$-module $\sh{L}$ to be ample, it is necessary and sufficient for $\sh{L}'=j^*(\sh{L})$ to be an ample $\sh{O}_Z$-module.
 \end{proposition}
 
 \begin{proof}
 The condition is \emph{necessary}.
-Indeed, for every section $f$ of $\sh{L}^{\otimes n}$ over $X$, let $f'$ be its canonical image $f\otimes1$, which is a section of $\sh{L}'^{\otimes n}=\sh{L}^{\otimes n}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{I})$ over the space $Z$ (which is identical to $X$);
+Indeed, for every section $f$ of $\sh{L}^{\otimes n}$ over $X$, let $f'$ be its canonical image $f\otimes1$, which is a section of $\sh{L}'^{\otimes n}=\sh{L}^{\otimes n}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J})$ over the space $Z$ (which is identical to $X$);
 it is clear that $X_f=Z_{f'}$, and so the criterion~(a) of \sref{II.4.5.2} shows that $\sh{L}'$ is ample.
 
-To see that the condition is \emph{sufficient}, note first of all that we can restrict to the case where $\sh{I}^2=0$, by considering the (finite) sequence of preschemes $X_k=(X,\sh{O}_X/\sh{I}^{k+1})$ with each prescheme being a closed subprescheme of the next, defined by a square-zero sheaf of ideals.
+To see that the condition is \emph{sufficient}, note first of all that we can restrict to the case where $\sh{J}^2=0$, by considering the (finite) sequence of preschemes $X_k=(X,\sh{O}_X/\sh{J}^{k+1})$ with each prescheme being a closed subprescheme of the next, defined by a square-zero sheaf of ideals.
 But $X$ is a scheme, since $X_\red$ is a scheme by hypothesis (\sref{II.4.5.3} and \sref[I]{I.5.5.1}).
 Criterion~(a) of \sref{II.4.5.2} shows that it suffices to prove
   \begin{lemma}[4.5.13.1]
   \label{II.4.5.13.1}
-  Under the hypotheses of \sref{II.4.5.13}, suppose further that $\sh{I}$ is square-zero;
+  Under the hypotheses of \sref{II.4.5.13}, suppose further that $\sh{J}$ is square-zero;
   with $\sh{L}$ being an invertible $\sh{O}_X$-module, let $g$ be a section of $\sh{L}'^{\otimes n}$ over $Z$ such that $Z_g$ is affine.
   Then there exists an integer $m>0$ such that $g^{\otimes m}$ is the canonical image of a section $f$ of $\sh{L}^{\otimes nm}$ over $X$.
   \end{lemma}
@@ -912,19 +912,19 @@ Criterion~(a) of \sref{II.4.5.2} shows that it suffices to prove
   \begin{proof}
   We have the exact sequence of $\sh{O}_X$-modules
   \[
-    0 \to \sh{I}(n) \to \sh{O}_X(n)=\sh{L}^{\otimes n} \to \sh{O}_Z(n)=\sh{L}'^{\otimes n} \to 0
+    0 \to \sh{J}(n) \to \sh{O}_X(n)=\sh{L}^{\otimes n} \to \sh{O}_Z(n)=\sh{L}'^{\otimes n} \to 0
   \]
 \oldpage[II]{88}
   since $\sh{F}(n)$ is an exact functor in $\sh{F}$;
   from this, we have the exact sequence of cohomology
   \[
-    0 \to \Gamma(X,\sh{I}(n)) \to \Gamma(X,\sh{L}^{\otimes n}) \to \Gamma(X,\sh{L}'^{\otimes n}) \xrightarrow{\partial} \HH^1(X,\sh{I}(n))
+    0 \to \Gamma(X,\sh{J}(n)) \to \Gamma(X,\sh{L}^{\otimes n}) \to \Gamma(X,\sh{L}'^{\otimes n}) \xrightarrow{\partial} \HH^1(X,\sh{J}(n))
   \]
-  that sends, in particular, $g$ to an element $\partial g\in\HH^1(X,\sh{I}(n))$.
+  that sends, in particular, $g$ to an element $\partial g\in\HH^1(X,\sh{J}(n))$.
   \end{proof}
 
-  Note that, since $\sh{I}^2=0$, $\sh{I}$ can be considered as a quasi-coherent $\sh{O}_Z$-module, and, for all $k$, $\sh{L}'^{\otimes k}\otimes_{\sh{O}_Z}\sh{I}(n)=\sh{I}(n+k)$;
-  for every section $s\in\Gamma(X,\sh{L}'^{\otimes k})$, tensor multiplication with $s$ is thus a homomorphism $\sh{I}(n)\to\sh{I}(n+k)$ of $\sh{O}_Z$-modules, which then gives a homomorphism $\HH^i(X,\sh{I}(n))\xrightarrow{s}\HH^i(X,\sh{I}(n+k))$ of cohomology groups.
+  Note that, since $\sh{J}^2=0$, $\sh{J}$ can be considered as a quasi-coherent $\sh{O}_Z$-module, and, for all $k$, $\sh{L}'^{\otimes k}\otimes_{\sh{O}_Z}\sh{J}(n)=\sh{J}(n+k)$;
+  for every section $s\in\Gamma(X,\sh{L}'^{\otimes k})$, tensor multiplication with $s$ is thus a homomorphism $\sh{J}(n)\to\sh{J}(n+k)$ of $\sh{O}_Z$-modules, which then gives a homomorphism $\HH^i(X,\sh{J}(n))\xrightarrow{s}\HH^i(X,\sh{J}(n+k))$ of cohomology groups.
 
   With this, we will see that
   \[
@@ -933,16 +933,16 @@ Criterion~(a) of \sref{II.4.5.2} shows that it suffices to prove
   \tag{4.5.13.2}
   \]
   for $m>0$ large enough.
-  In fact, $Z_g$ is an \emph{affine open} subset of $Z$, and so $\HH^1(Z_g,\sh{I}(n))=0$ when $\sh{I}(n)$ is considered as an \emph{$\sh{O}_Z$-module} \sref[I]{I.5.1.9.2}.
-  In particular, if we set $g'=g|Z_g$, and if we consider its image under the map $\partial:\Gamma(Z_g,\sh{L}'^{\otimes n})\to\HH^1(Z_g,\sh{I}(n))$, then $\partial g'=0$.
+  In fact, $Z_g$ is an \emph{affine open} subset of $Z$, and so $\HH^1(Z_g,\sh{J}(n))=0$ when $\sh{J}(n)$ is considered as an \emph{$\sh{O}_Z$-module} \sref[I]{I.5.1.9.2}.
+  In particular, if we set $g'=g|Z_g$, and if we consider its image under the map $\partial:\Gamma(Z_g,\sh{L}'^{\otimes n})\to\HH^1(Z_g,\sh{J}(n))$, then $\partial g'=0$.
   To better explain this equation, we note that, in dimension~$1$, the cohomology of a sheaf of abelian groups is the same as its Čech cohomology (G, II, 5.9);
-  to calculate $\partial g$, we must thus consider a fine-enough open cover $(U_\alpha)$ of $X$, that we can suppose to be \emph{finite} and consisting of affine opens, and take, for each $\alpha$, a section $g_\alpha\in\Gamma(U_\alpha,\sh{L}^{\otimes n})$ whose canonical image in $\Gamma(U_\alpha,\sh{L}'^{\otimes n})$ is $g|U_\alpha$, and to consider the cocycle class $(g_{\alpha|\beta}-g_{\beta|\alpha})$, with $g_{\alpha|\beta}$ being the restriction of $g_\alpha$ to $U_\alpha\cap U_\beta$ (with this cocycle taking values in $\sh{I}(n)$).
+  to calculate $\partial g$, we must thus consider a fine-enough open cover $(U_\alpha)$ of $X$, that we can suppose to be \emph{finite} and consisting of affine opens, and take, for each $\alpha$, a section $g_\alpha\in\Gamma(U_\alpha,\sh{L}^{\otimes n})$ whose canonical image in $\Gamma(U_\alpha,\sh{L}'^{\otimes n})$ is $g|U_\alpha$, and to consider the cocycle class $(g_{\alpha|\beta}-g_{\beta|\alpha})$, with $g_{\alpha|\beta}$ being the restriction of $g_\alpha$ to $U_\alpha\cap U_\beta$ (with this cocycle taking values in $\sh{J}(n)$).
   We can further suppose that $\partial g'$ is calculated in the same way, by means of a cover given by the $U_\alpha\cap Z_g$, and restrictions $g_\alpha|(U_\alpha\cap Z_g)$ (by replacing, if necessary, $(U_\alpha)$ by a finer cover);
-  the equation $\partial g'=0$ then implies that there exists, for each $\alpha$, a section $h_\alpha\in\Gamma(U_\alpha\cap Z_g,\sh{I}(n))$ such that $(g_{\alpha|\beta}-g_{\beta|\alpha})|(U_\alpha\cap U_\beta\cap Z_g) = h_{\alpha|\beta}-h_{\beta|\alpha}$, where $h_{\alpha|\beta}$ denotes the restriction of $h_\alpha$ to $U_\alpha\cap U_\beta\cap Z_g$ (G, II, 5.11).
-  Then there exists an integer $m>0$ such that $g^{\otimes m}\otimes h_\alpha$ is the restriction to $U_\alpha\cap Z_g$ of a section $t_\alpha\in\Gamma(U_\alpha,\sh{I}(n+nm))$ for all $\alpha$ \sref[I]{I.9.3.1};
+  the equation $\partial g'=0$ then implies that there exists, for each $\alpha$, a section $h_\alpha\in\Gamma(U_\alpha\cap Z_g,\sh{J}(n))$ such that $(g_{\alpha|\beta}-g_{\beta|\alpha})|(U_\alpha\cap U_\beta\cap Z_g) = h_{\alpha|\beta}-h_{\beta|\alpha}$, where $h_{\alpha|\beta}$ denotes the restriction of $h_\alpha$ to $U_\alpha\cap U_\beta\cap Z_g$ (G, II, 5.11).
+  Then there exists an integer $m>0$ such that $g^{\otimes m}\otimes h_\alpha$ is the restriction to $U_\alpha\cap Z_g$ of a section $t_\alpha\in\Gamma(U_\alpha,\sh{J}(n+nm))$ for all $\alpha$ \sref[I]{I.9.3.1};
   thus $g^{\otimes m}\otimes(g_{\alpha|\beta}-g_{\beta|\alpha})=t_{\alpha|\beta}-t_{\beta|\alpha}$ for every pair of indices, which proves \sref{II.4.5.13.2}.
 
-  Now note that, if $s\in\Gamma(X,\sh{O}_Z(p))$ and $t\in\Gamma(X,\sh{O}_Z(q))$, then, in the group $\HH^1(X,\sh{I}(p+q))$,
+  Now note that, if $s\in\Gamma(X,\sh{O}_Z(p))$ and $t\in\Gamma(X,\sh{O}_Z(q))$, then, in the group $\HH^1(X,\sh{J}(p+q))$,
   \[
   \label{II.4.5.13.3}
     \partial(s\otimes t) = (\partial s)\otimes t + s\otimes(\partial t).
@@ -983,7 +983,7 @@ This follows from \sref[I]{I.6.1.6}
 
 \begin{definition}[4.6.1]
 \label{II.4.6.1}
-Let $f: X\to y$ be a quasi-compact morphism, and $\sh{L}$ an invertible $\sh{O}_X$-module.
+Let $f: X\to Y$ be a quasi-compact morphism, and $\sh{L}$ an invertible $\sh{O}_X$-module.
 We say that $\sh{L}$ is \emph{ample relative to $f$}, or \emph{relative to $Y$}, or \emph{$f$-ample}, or \emph{$Y$-ample} (or even simply \emph{ample} if no confusion may arise with the notion defined in \sref{II.4.5.3}) if there exists an affine open cover $(U_\alpha)$ of $Y$ such that, if we set $X_\alpha=f^{-1}(U_\alpha)$, then $\sh{L}|X_\alpha$ is an ample $\sh{O}_{X_\alpha}$-module for all $\alpha$.
 \end{definition}
 
@@ -1088,7 +1088,7 @@ Let $X$ be a quasi-compact scheme or a prescheme whose underlying space is Noeth
 For an invertible $\sh{O}_X$-module $\sh{L}$ to be $f$-ample, it is necessary and sufficient for one of the following equivalent conditions to be satisfied:
 \begin{enumerate}
   \item[\rm{(c)}] For every quasi-coherent $\sh{O}_X$-module $\sh{F}$ of finite type, there exists an integer $n_0>0$ such that, for all $n\geq n_0$, the canonical homomorphism $\sigma:f^*(f_*(\sh{F}\otimes\sh{L}^{\otimes n}))\to\sh{F}\otimes\sh{L}^{\otimes n}$ is surjective.
-  \item[\rm{(c')}] For every quasi-coherent sheaf $\sh{I}$ of ideals of $\sh{O}_X$ of finite type, there exists an integer $n>0$ such that the canonical homomorphism $\sigma:f^*(f_*(\sh{I}\otimes\sh{L}^{\otimes n}))\to\sh{I}\otimes\sh{L}^{\otimes n}$ is surjective.
+  \item[\rm{(c')}] For every quasi-coherent sheaf $\sh{J}$ of ideals of $\sh{O}_X$ of finite type, there exists an integer $n>0$ such that the canonical homomorphism $\sigma:f^*(f_*(\sh{J}\otimes\sh{L}^{\otimes n}))\to\sh{J}\otimes\sh{L}^{\otimes n}$ is surjective.
 \end{enumerate}
 \end{proposition}
 
@@ -1098,9 +1098,9 @@ To prove condition~(c) when $\sh{L}$ is $f$-ample, we can replace $Y$ by the $U_
 But if $Y$ is affine, condition~(c) follows from \sref{II.4.5.5}[(d)], taking \sref{II.4.6.6} into account.
 It is trivial that (c) implies (c').
 Finally, to prove that (c') implies that $\sh{L}$ is $f$-ample, we can again restrict to the case where $Y$ is affine:
-in fact, every quasi-coherent sheaf $\sh{I}_i$ of ideals of $\sh{O}_X|f^{-1}(U_i)$ of finite type is the restriction of a coherent sheaf of ideals of $\sh{O}_X$ of finite type \sref[I]{I.9.4.7}, and hypothesis~(c') implies that
+in fact, every quasi-coherent sheaf $\sh{J}_i$ of ideals of $\sh{O}_X|f^{-1}(U_i)$ of finite type is the restriction of a coherent sheaf of ideals of $\sh{O}_X$ of finite type \sref[I]{I.9.4.7}, and hypothesis~(c') implies that
 \oldpage[II]{91}
-$\sh{I}_i\otimes(\sh{L}^{\otimes n}|f^{-1}(U_i))$ is generated by its sections (taking \sref[I]{I.9.2.2} and \sref{II.3.4.7} into account);
+$\sh{J}_i\otimes(\sh{L}^{\otimes n}|f^{-1}(U_i))$ is generated by its sections (taking \sref[I]{I.9.2.2} and \sref{II.3.4.7} into account);
 it thus suffices to apply criterion~\sref{II.4.5.5}[(d'')].
 \end{proof}
 
@@ -1222,11 +1222,66 @@ With this in mind, $X$ is separated and quasi-compact, and so there exists an in
 \[
   u_{ij}\in\Gamma(X,\sh{L}^{\otimes n}\otimes_X f^*(\sh{K}^{\otimes mk}))
 \]
-such that $t_{ij}\otimes s'_i^{\otimes m}$ is the restriction to $X_{s'_i}$ of $u_{ij}$ \sref[I]{I.9.3.1};
+such that $t_{ij}\otimes s'^{\otimes m}_i$ is the restriction to $X_{s'_i}$ of $u_{ij}$ \sref[I]{I.9.3.1};
 furthermore, $X_{u_{ij}}=X_{t_{ij}}$, and so the $X_{u_{ij}}$ are affine and cover $X$.
 We can also suppose that $m$ is of the form $nr$;
 if we set $n_0=rk$, then we see \sref{II.4.5.2}[(a')] that $\sh{L}\otimes_{\sh{O}_X}f^*(\sh{K}^{\otimes n_0})$ is ample.
 Furthermore, there exists $h_0>0$ such that $\sh{K}^{\otimes h}$ is generated by its sections over $Y$ for all $h\geq h_0$ \sref{II.4.5.5};
 \emph{a fortiori}, $f^*(\sh{K}^{\otimes h})$ is generated by its sections over $X$ for all $h\geq h_0$, by definition of the inverse images (\sref[0]{0.3.7.1} and \sref{II.4.4.1}).
 We thus conclude that $\sh{L}\otimes f^*(\sh{K}^{\otimes n_0+h})$ is ample for all $h\geq h_0$ \sref{II.4.5.6}, which finishes the proof.
+\end{proof}
+
+\begin{remark}[4.6.14]
+\label{II.4.6.14}
+Under the conditions of (ii), we refrain from believing that $\sh{L}\otimes f^*(\sh{K})$ is ample for $g\circ f$;
+in fact, since $\sh{L}\otimes f^*(\sh{K}^{-1})$ is also ample for $f$ \sref{II.4.6.5}, we would conclude that $\sh{L}$ is ample for $g\circ f$;
+taking, in particular, $g$ to be the identity morphism, \emph{every} invertible $\sh{O}_X$-module would be ample for $f$, which is not the case in general (see \sref{II.5.1.6}, \sref{II.5.3.4}[(i)], and \sref{II.5.3.1}).
+\end{remark}
+
+\begin{proposition}[4.6.15]
+\label{II.4.6.15}
+Let $f:X\to Y$ be a quasi-compact morphism, $\sh{J}$ a quasi-coherent locally-nilpotent sheaf of ideals of $\sh{O}_X$, $Z$ the closed subprescheme of $X$ defined by $\sh{J}$, and $j:Z\to X$ the canonical injection.
+For an invertible $\sh{O}_X$-module $\sh{L}$ to be ample for $f$, it is necessary and sufficient for $j^*(\sh{L})$ to be ample for $f\circ j$.
+\end{proposition}
+
+\begin{proof}
+Since the question is local on $Y$ \sref{II.4.6.4}, we can suppose $Y$ to be affine;
+since $X$ is then quasi-compact, we can suppose $\sh{J}$ to be nilpotent.
+Taking \sref{II.4.6.6} into account, the proposition is then exactly the same as \sref{II.4.5.13}.
+\end{proof}
+
+\begin{corollary}[4.6.16]
+\label{II.4.6.16}
+Let $X$ be a locally Noetherian prescheme, and $f:X\to Y$ a quasi-compact morphism.
+For an invertible $\sh{O}_X$-module $\sh{L}$ to be ample for $f$, it is necessary and sufficient for its inverse image $\sh{L}'$ under the canonical injection $X_\red\to X$ to be ample for $f_\red$.
+\end{corollary}
+
+\begin{proof}
+We have already seen that the condition is necessary \sref{II.4.6.13}[(vi)];
+conversely, if it is satisfied, then we can restrict, to prove that $\sh{L}$ is ample for $f$, to the case where $Y$ is affine \sref{II.4.6.4};
+then $Y_\red$ is also affine, and so $\sh{L}'$ is ample \sref{II.4.6.6}, and so too is $\sh{L}$ by \sref{II.4.5.13}, since $X$ is then Noetherian and $X_\red$ a closed subprescheme of $X$ defined by a quasi-coherent nilpotent sheaf of ideals \sref[I]{I.6.1.6}.
+\end{proof}
+
+\begin{proposition}[4.6.17]
+\label{II.4.6.17}
+With the notation and hypotheses of \sref{II.4.4.11}, for $\sh{L}''$ to be ample relative to $f''$, it is necessary and sufficient for $\sh{L}$ to be ample relative to $f$ and $\sh{L}'$ ample relative to $f'$.
+\end{proposition}
+
+\oldpage[II]{94}
+\begin{proof}
+The necessity of the condition follows from \sref{II.4.6.13}[(i~\emph{bis})],.
+To see that the condition is sufficient, we can restrict to the case where $Y$ is affine, and then the fact that $\sh{L}''$ is ample follows from criterion~\sref{II.4.5.2}[(a)] applied to $\sh{L}$, $\sh{L}'$, and $\sh{L}''$, noting that a section of $\sh{L}$ over $X$ can be extended (by $0$) to a section of $\sh{L}''$ over $X''$.
+\end{proof}
+
+\begin{proposition}[4.6.18]
+\label{II.4.6.18}
+Let $Y$ be a quasi-compact prescheme, $\sh{S}$ a quasi-coherent graded $\sh{O}_Y$-algebra of finite type, and $X=\Proj(\sh{S})$, and let $f:X\to Y$ the structure morphism.
+Then $f$ is of finite type, and there exists an integer $d>0$ such that $\sh{O}_X(d)$ is invertible and $f$-ample.
+\end{proposition}
+
+\begin{proof}
+By \sref{II.3.1.10}, there exists an integer $d>0$ such that $\sh{S}^{(d)}$ is generated by $\sh{S}_d$.
+We know that, under the canonical isomorphism between $X$ and $X^{(d)}=\Proj(\sh{S}^{(d)})$, $\sh{O}_X(d)$ is identified with $\sh{O}_{X^{(d)}}(1)$ \sref{II.3.2.9}[(ii)].
+We thus see that we can restrict to the case where $\sh{S}$ is generated by $\sh{S}_1$;
+the proposition then follows from \sref{II.4.4.3} and \sref{II.4.6.2} (taking into account the fact that $f$ is a morphism of finite type \sref{II.3.4.1}).
 \end{proof}

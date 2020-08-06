@@ -66,7 +66,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 8. Chevalley schemes _(@thosgood)_
     + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
     + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
-- **Elementary global study of some classes of morphisms (EGA II)** ![EGAIIstatus](https://img.shields.io/badge/-125%2F205-yellow)
+- **Elementary global study of some classes of morphisms (EGA II)** ![EGAIIstatus](https://img.shields.io/badge/-130%2F205-yellow)
     + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
     + [x] 1. Affine morphisms _(@ryankeleti)_
     + [ ] 2. Homogeneous prime spectra (~30 pages)
