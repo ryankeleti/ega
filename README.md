@@ -40,7 +40,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 9. Constructible sets _(@ryankeleti)_
     + [x] 10. Supplement on flat modules _(@thosgood)_
     + [ ] 11. Supplement on homological algebra _(@ryankeleti)_
-    + [ ] 12. Supplement on sheaf cohomology (~25 pages) _(@thosgood)_
+    + [ ] 12. Supplement on sheaf cohomology (~25 pages)
     + [ ] 13. Projective limits in homological algebra (~10 pages)
 - **Preliminaries (EGA 0_IV)** ![EGA0(IV)status](https://img.shields.io/badge/-5%2F215-red)
     + [x] (14-ε). Summary _(@thosgood)_
@@ -69,7 +69,7 @@ Here is the current status of the translation, along with who is currently worki
 - **Elementary global study of some classes of morphisms (EGA II)** ![EGAIIstatus](https://img.shields.io/badge/-130%2F205-yellow)
     + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
     + [x] 1. Affine morphisms _(@ryankeleti)_
-    + [ ] 2. Homogeneous prime spectra (~30 pages)
+    + [ ] 2. Homogeneous prime spectra (~30 pages) _(@thosgood)_
     + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras (~20 pages)
     + [x] 4. Projective bundles; Ample sheaves _(@thosgood)_
     + [x] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
