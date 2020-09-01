@@ -2323,7 +2323,7 @@ The following conditions are equivalent:
 
 \begin{proof}
 By hypothesis, $\sh{O}_x$ is a local ring, $\sh{I}_x$ an ideal of finite type of $\sh{O}_x$ contained in the maximal ideal of $\sh{O}_x$;
-the equivalence of (b), (b') and (c) results from Nakayama's lemma (Bourbaki, \emph{Alg. comm.}, chap.~II, \textsection3, no2, prop. 5).
+the equivalence of (b), (b') and (c) results from Nakayama's lemma (Bourbaki, \emph{Alg. comm.}, chap.~II, \textsection3, n\textsuperscript{o}2, prop. 5).
 It is clear that (a) implies (c) because of \sref{IV.16.9.3};
 on the other hand, from \sref[0]{0.5.2.2} it follows that if condition (c) is verified (and therefore so is (b)), there is a neighborhood $U$ of $x$ in $X$ such that $(\sh{I}/\sh{I}^2)|U$ has constant rank equal to $n$, and that the $f_i|U$ generate $\sh{I}|U$;
 it suffices now to apply the last assertion of \sref{IV.16.9.3} to U.
@@ -2456,8 +2456,118 @@ Let us first prove the following lemma:
 Let $A$ be a ring, $\mathfrak{I}$ an ideal of $A$, $A' = A/\mathfrak{I}$, $(f_i)_{1 \leq i \leq r}$ a sequence of elements of $A$ which is $A'$-regular, $\mathfrak{K} = \sum_i f_i A$, $\mathfrak{L} = \mathfrak{I} + \mathfrak{K}$, $\mathfrak{K}' = \sum_i f_i A'$, so that $C = A/\mathfrak{L}$ is isomorphic to $A'/\mathfrak{K}'$.
 For every integer $n > 0$, and every integer $N \geq n$, we have the relation
 \[
-  \label{IV.16.9.3}
+  \label{IV.16.9.13.3}
   \mathfrak{I} \cap \mathfrak{K}^n = \mathfrak{I}\mathfrak{K}^n + \mathfrak{I}\mathfrak{K}^N.
-  \tag{16.9.3}
+  \tag{16.9.13.3}
 \]
 \end{lemma}
+
+\begin{proof}
+It is clearly sufficient to prove that every element of the first is contained in the second, and, by induction on $n$, we reduce to the case $N = n + 1$.
+An element of the first member of $\sref{IV.16.9.13.3}$, being in $\mathfrak{K}^n$, is written as $P(f_1, \dots, f_r)$, where $P \in A[T_1, \dots, T_r]$ is homogeneous of degree $n$.
+If $f'_i$ is the canonical image of $f_i$ in $A'$, the hypothesis $P(f_1, \dots, f_n) \in \mathfrak{I}$ means that $P(f'_1, \dots, f'_n) = 0$.
+But $P(f'_1, \dots, f'_n) \in \mathfrak{K}'^n$, so the canonical image of $P(f'_1, \dots, f'_n)$ in $\mathfrak{K}'^n/\mathfrak{K}'^{n+1}$ is zero.
+Now the hypothesis that $(f_i)$ is $A'$-regular implies that the canonical homomorphism $\bb{S}_C^n(\mathfrak{K}'/\mathfrak{K}'^2) \to \mathfrak{K}'^n/\mathfrak{K}'^{n+1}$ is bijective \sref[0]{0.15.1.9};
+we conclude that the coefficients of $P$ are in $\mathfrak{L} = \mathfrak{I} + \mathfrak{K}$.
+It follows immediately that $P(f_1, \dots, f_n) \in \mathfrak{I}\mathfrak{K}^n + \mathfrak{K}^{n+1}$, and since $P(f_1, \dots, f_n) \in \mathfrak{I}$, we finally have $P(f_1, \dots, f_n) \in \mathfrak{I}\mathfrak{K}^n + \mathfrak{I}\mathfrak{K}^{n+1}$ which proves the lemma.
+\end{proof}
+
+By taking the quotient of both side of \sref{IV.16.9.13.3} by $\mathfrak{I}\mathfrak{K}^{n}$, we see that the relations \sref{IV.16.9.13.3} for $N \geq n$ entail
+\[
+  \label{IV.16.9.13.4}
+  (\mathfrak{I} \cap \mathfrak{K}^n)/\mathfrak{I}\mathfrak{K}^n \subset \bigcap_{N \geq n} \mathfrak{K}^N .(A/(\mathfrak{I}\mathfrak{K}^n)).  
+  \tag{16.9.13.4}
+\]
+
+We deduce the
+
+\begin{corollary}[16.9.13.5]
+\label{IV.16.9.13.5}
+Suppose that the hypothesis of \sref{IV.16.9.13.2} are verified and also that the ring $A$ is Noetherian and $\mathfrak{K}$ is contained in the radical of $A$.
+Then for every integer $n > 0$,
+\[
+  \label{IV.16.9.13.6}
+  \mathfrak{I} \cap \mathfrak{K}^n = \mathfrak{I}\mathfrak{K}^n.
+  \tag{16.9.13.6}
+\]
+\end{corollary}
+
+\begin{proof}
+Indeed, the second member of \sref{IV.16.9.13.4} is then zero, given that $A/\mathfrak{I}\mathfrak{K}^n$ is an $A$-module of finite type (Bourbaki, \emph{Alg. comm.}, chap.~III, \textsection3, n\textsuperscript{o}3, prop. 6).
+\end{proof}
+
+Taking in particular $n = 2$ in \sref{IV.16.9.13.6}, and remarking that we have $\mathfrak{L}^2 = \mathfrak{I}^2 + \mathfrak{I}\mathfrak{K} + \mathfrak{K}^2 = \mathfrak{I}\mathfrak{L} + \mathfrak{K}^2$;
+since $\mathfrak{I}\mathfrak{L} \subset \mathfrak{L}^2$, we deduce that
+\[
+  \mathfrak{I} \cap \mathfrak{L}^2 = \mathfrak{I}\mathfrak{L} + (\mathfrak{I} \cap \mathfrak{K}^2) = \mathfrak{I}\mathfrak{L} + \mathfrak{I}\mathfrak{K}^2 = \mathfrak{I}\mathfrak{L},
+\]
+in other words, 
+\[
+  \label{IV.16.9.13.7}
+  \mathfrak{I} \cap \mathfrak{L}^2 = \mathfrak{I}\mathfrak{L},
+  \tag{16.9.13.7}
+\]
+which we can also express in saying that the canonical homomorphism
+\[
+  \mathfrak{I}/\mathfrak{I}\mathfrak{L} \to (\mathfrak{I} + \mathfrak{J}^2)/\mathfrak{J}^2
+\]
+is bijective.
+
+\begin{proof}[Proof (16.9.13)]
+Having demonstrated the lemmas, let us prove the first claim of \sref{IV.16.9.13}:
+It is clearly
+\oldpage[IV-4]{51}
+enough to prove that the sequence of stalks of the sheaves appearing in \sref{IV.16.9.13.1}, in a point $x \in Y'$, is exact.
+Now, if we take $A = \sh{O}_{X,x}$, we can write $\sh{O}_{Y, x} = A' = A/\mathfrak{I}$, where $\mathfrak{I}$ is an ideal contained in the maximal ideal of $A$, then $\sh{O}_{Y', x} = A'/\mathfrak{K}'$, where $\mathfrak{K}'$ is generated by an \emph{$A'$-regular} sequence of elements of $A'$, which themselves are images of elements from a $A'$-regular sequence of elements of $A$ belonging to the maximal ideal of $A$.
+If $\mathfrak{K}$ is the ideal generated by the latter and $\mathfrak{L} = \mathfrak{I} + \mathfrak{K}$, we have $\sh{O}_{Y', x} = A/\mathfrak{L}$, and since we are in the situation of \sref{IV.16.9.13.5}, the canonical homomorphism $\mathfrak{I}/\mathfrak{I}\mathfrak{L} \to (\mathfrak{I} + \mathfrak{J}^2)/\mathfrak{J}^2$ is bijective.
+But this shows that the sequence
+\[
+  \xymatrix{
+    0 \ar[r] & \mathfrak{I}/\mathfrak{I}\mathfrak{L} \ar[r] & \mathfrak{L}/\mathfrak{L}^2 \ar[r] &  (\mathfrak{I}/\mathfrak{L})/(\mathfrak{I}/\mathfrak{L})^2 \ar[r] & 0
+  }
+\]
+is exact (see the demonstration of \sref{IV.16.2.7}), and the modules making up this sequence are precisely the stalks in $x$ of the sheaves of \sref{IV.16.9.13.1}.
+The second claim follows from the fact that $\sh{N}_{X/Y}$ is a locally free $\sh{O}_{Y'}$-module \sref{IV.16.9.8} and Bourbaki, \emph{Alg.}, chap.~II, 3\textsuperscript{rd}ed., \textsection1, n\textsuperscript{o}11, prop.\ 21.
+\end{proof}
+
+\subsection{Differentially smooth morphisms.}
+\label{IV.16.10}
+
+\begin{definition}[16.10.1]
+\label{IV.16.10.1}
+We say that a morphism of preschemes $f: X \to S$ is differentially smooth (or that $X$ is differentially smooth over $S$) if it satisfies the following conditions:
+\begin{enumerate}
+  \item[\rm{(i)}] $\Omega_{X/S}^1$ is a locally projective $\sh{O}_X$-module, which is to say that every point $x \in X$ admits an open affine neighborhood $U$ such that $\Gamma(U, \Omega_{X/S}^1)$ is a projective $\Gamma(U, \sh{O}_X)$-module (not necessarily of finite type).
+  \item[\rm{(ii)}] The canonical morphism \sref{IV.16.3.1.1}
+  \[
+    \bb{S}_{\sh{O}_X}^\bullet(\Omega_{X/S}^1) \to \shGr_\bullet(\sh{P}_{X/S})
+  \]
+  is bijective.
+\end{enumerate}
+
+In particular, if $\Omega_{X/S}^1$ is locally free of finite rank, the $\sh{P}_{X/S}^n$ are locally free of finite rank $\sh{O}_X$-modules (being extensions of such modules).
+\end{definition}
+
+We say that $f$ is \emph{differentially smooth at a point $x \in X$} if there is an open neighborhood $U$ of $x$ in $X$ such that $f|U$ is differentially smooth.
+
+We will see later \sref{IV.17.12.4} that a smooth morphism is differentially smooth, which justifies the terminology;
+but the converse is not true;
+indeed, a \emph{monomorphism} $f:X \to S$ is differentially smooth, since $\Omega^1_{X/S} = 0$ because of \sref[I]{I.5.3.8}, and consequently the surjective homomorphism \sref{IV.16.3.1.1} is clearly bijective;
+however a monomorphism is not even necessarily flat, neither \textit{a fortiori} smooth. 
+Lets limit ourselves to proving the following proposition:
+
+\begin{proposition}[16.10.2]
+\label{IV.16.10.2}
+Let $A$ be a ring, $B$ a formally smooth $A$-algebra for the discrete topology \sref[0]{0.19.3.1}.
+Then $\Spec(B)$ is differentially smooth over $\Spec(A)$.
+\end{proposition}
+
+\begin{proof}
+Indeed, $B \otimes_A B$ is then (with the discrete topology) a formally smooth $B$-algebra (by on or the other canonical homomorphisms $b \mapsto b \otimes 1$, $b \mapsto 1 \otimes b$ of $B$
+\oldpage[IV-4]{52}
+to $B \otimes_A B$
+) \sref[0]{0.19.3.5}[(iii)];
+therefore $B \otimes_A B$ is a formally smooth $A$-algebra with the discrete topology \sref[0]{0.19.3.5}[(ii)].
+Taking $\mathfrak{I} = \mathfrak{I}_{B/A}$, it follows that $B \otimes_A B$ is a formally smooth $A$-algebra for the $\mathfrak{I}$-preadic topology \sref[0]{0.19.3.8};
+since by hypothesis $B = (B \otimes_A B)/\mathfrak{I}$ is a formally smooth $A$-algebra for the discrete topology, the proposition follows from the equivalence of (a) and (b) in \sref[0]{0.19.5.4}.
+\end{proof}
