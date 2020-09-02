@@ -2571,3 +2571,56 @@ therefore $B \otimes_A B$ is a formally smooth $A$-algebra with the discrete top
 Taking $\mathfrak{I} = \mathfrak{I}_{B/A}$, it follows that $B \otimes_A B$ is a formally smooth $A$-algebra for the $\mathfrak{I}$-preadic topology \sref[0]{0.19.3.8};
 since by hypothesis $B = (B \otimes_A B)/\mathfrak{I}$ is a formally smooth $A$-algebra for the discrete topology, the proposition follows from the equivalence of (a) and (b) in \sref[0]{0.19.5.4}.
 \end{proof}
+
+\begin{proposition}[16.10.3]
+\label{IV.16.10.3}
+For a morphism $f:X \to S$ to be differentially smooth, it is necessary and sufficient that for every $x \in X$, there is an open affine neighborhood of $x$, of ring $A$, such that $\Gamma(U, \sh{P}_{X/S}^\infty)$ is an augmented topological $A$-algebra isomorphic to the completion $\hat{B}$, where $B = \bb{S}_A(V)$, $V$ being a projective $A$-module and $B$ being endowed with the $B^+$-preadic topology (where $B^+$ is the augmentation ideal).
+If $\Omega_{X/S}^1$ is locally free of finite rank, we can replace $\hat{B}$ with the ring of formal series $A[[T_1, \dots, T_n]]$.
+\end{proposition}
+
+\begin{proof}
+The notion of a differentially smooth morphism is clearly local on $X$, so we reduce to the case where $S = \Spec(B)$, $X = \Spec(C)$.
+Consider $C \otimes_B C$ as a $C$-algebra (by the first factor);
+take $\mathfrak{I} = \mathfrak{I}_{C/B}$ and endow $C$ with the $\mathfrak{I}$-preadic topology;
+we can apply to the topological $C$ algebra $C \otimes_B C$ and to the ideal $\mathfrak{I}$ of $C \otimes_B C$ the equivalence of (b) and (c) of \sref[0]{0.19.5.4}, given that $(C \otimes_B C)/\mathfrak{I} = C$ is clearly a formally smooth $C$-algebra for the discrete topologies.
+The topology of $\Gamma(U, \sh{P}_{X/S}^\infty)$ is clearly the projective limit topology of this ring \sref{IV.16.1.11}.
+\end{proof}
+
+We note that the integer $n$ of the proposition \sref{IV.16.10.3} is the \emph{rank} of $\Omega_{X/S}^1$ in the point $x$.
+We shall see \sref{IV.17.13.5} that when $f$ is differentially smooth and locally of finite type, $n$ is equal to the dimension of the fiber $f^{-1}(f(x))$. 
+
+\begin{proposition}[16.10.4]
+\label{IV.16.10.4}
+Let $f:X \to S$, $g:S' \to S$ be two morphisms, and take $X' = X \times_S S'$, $f' = f_{(S')}:X' \to S'$.
+\begin{enumerate}
+  \item[\rm{(i)}] If $f$ is differentially smooth, the same is true for $f'$. 
+  \item[\rm{(ii)}] Conversely, if $g$ is faithfully flat and quasi-compact, and if $f'$ is differentially smooth and $\Omega_{X'/S'}^1$ is a finite type $\sh{O}_{X'}$-module, $f$ is differentially smooth and $\Omega_{X/S}^1$ is a finite type $\sh{O}_X$-module.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Indeed, if $f$ is differentially smooth, the $\shGr_n(\sh{P}_{X/S}^n)$ are \emph{flat} $\sh{O}_X$-modules;
+therefore by \sref{IV.16.4.6}, the homomorphism $\shGr_n(\sh{P}_{X/S}^n) \otimes_{\sh{O}_X} \sh{O}_{X'} \to \shGr_n(\sh{P}_{X'/S'}^n)$ are bijective for every $n$, because of the commutative of the diagram \sref{IV.16.2.1.3}, it follows from the definition \sref{IV.16.10.1} that $f'$ is differentially smooth.
+On the other hand, if $g$ is faithfully flat and quasi-compact, it follows also from \sref{IV.16.4.6} that $\shGr_n(\sh{P}_{X/S}^n) \otimes_{\sh{O}_X} \sh{O}_{X'} \to \shGr_n(\sh{P}_{X'/S'}^n)$ is bijective for every $n$.
+Suppose also that $f'$ is differentially smooth and $\Omega_{X'/S'}^1$ is of finite rank.
+Since the canonical projection $X' \to X$ is a faithfully flat and quasi-compact morphism, it results first from \sref{IV.2.5.2} that $\Omega_{X/S}^1$ is an $\sh{O}_X$-module locally free of finite rank, then from \sref{IV.2.2.7} that the canonical homomorphism \sref{IV.16.3.1.1} is bijective, and therefore $f$ is differentially smooth.
+\end{proof}
+
+\begin{proposition}[16.10.5]
+\label{IV.16.10.5}
+For a morphism locally of finite type $f:X \to S$ to be differentially smooth, it is necessary and sufficient that the diagonal immersion $\Delta_f:X \to X \times_S X$ to be quasi-regular.
+\end{proposition}
+
+\oldpage[IV-4]{53}
+
+\begin{proof}
+Being a local problem, we can reduce to the case where $S$ and $X$ are affines, and therefore the diagonal subprescheme of $X \times_S X$ is closed.
+The hypothesis that $f$ is locally of finite type implies that $\Delta_f$ is locally of finite presentation \sref[I]{I.4.3.1}, therefore the diagonal prescheme of $X \times_S X$ is defined by an ideal $\sh{I}$ of finite type, and $\Omega_{X/S}^1 = \sh{I}/\sh{I}^2$ is an $\sh{O}_X$-module of finite type.
+The proposition is now immediate from the comparison of the conditions of \sref{IV.16.10.1} and \sref{IV.16.9.4}. 
+\end{proof}
+
+\begin{remark}[16.10.6]
+\label{IV.16.10.6}
+Let $f:X \to S$ be a morphism such that the $\sh{O}_X$-module $\Omega_{X/S}^1$ is locally free of finite rank.
+It results from \sref[0]{0.20.4.7} that every $x \in X$ has an open neighborhood such that there is a finite family $(z_\lambda)_{\lambda \in L}$ of sections of $\sh{O}_X$ over $U$ for which $(dz_\lambda)_{\lambda \in L}$ forms a \emph{basis} of the $\Gamma(U, \sh{O}_X)$-module $\Gamma(U, \Omega_{X/S}^1)$.
+\end{remark}
