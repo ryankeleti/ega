@@ -2624,3 +2624,126 @@ The proposition is now immediate from the comparison of the conditions of \sref{
 Let $f:X \to S$ be a morphism such that the $\sh{O}_X$-module $\Omega_{X/S}^1$ is locally free of finite rank.
 It results from \sref[0]{0.20.4.7} that every $x \in X$ has an open neighborhood such that there is a finite family $(z_\lambda)_{\lambda \in L}$ of sections of $\sh{O}_X$ over $U$ for which $(dz_\lambda)_{\lambda \in L}$ forms a \emph{basis} of the $\Gamma(U, \sh{O}_X)$-module $\Gamma(U, \Omega_{X/S}^1)$.
 \end{remark}
+
+\subsection{Differential operators on a differentially smooth $S$-prescheme}
+\label{IV.16.11}
+
+\begin{env}[16.11.1]
+\label{IV.16.11.1}
+Let $f:X \to S$ be a morphism, $U$ an open set of $X$, $(z_\lambda)_{\lambda \in L}$ a family of sections of $\sh{O}_X$ over $U$ such that the $dz_\lambda$ form system of generators of $\Omega_{X/S}^1|U = \Omega_{U/S}^1$.
+Let $m$ be an integer or the symbol $\infty$, and take, for every $\lambda$
+\[
+  \label{IV.16.11.1.1}
+  \zeta_\lambda = \delta z_\lambda = d^m z_\lambda - z_\lambda \in \Gamma(U, \sh{P}_{X/S}^m).
+  \tag{16.11.1.1}
+\]
+
+We will also use the usual notations from analysis;
+for every $\bb{p} = (p_\lambda) \in \mathbb{N}^{(L)}$ (so that $p_\lambda = 0$ except for a finite number of indices), we put
+\[
+  \label{IV.16.11.1.2}
+  |\bb{p}| = \sum_\lambda p_\lambda, \quad \bb{p} = \prod_\lambda (p_\lambda!)
+  \tag{16.11.1.2}
+\]
+\[
+  \label{IV.16.11.1.3}
+  \binom{\bb p}{\bb q} = \bb{p}!/(\bb{q}!(\bb{p} - \bb{q})!), \quad \text{for $\bb{p}$, $\bb{q}$ in $\mathbb{N}^{(L)}$, $\bb{q} \leq \bb{p}$}
+  \tag{16.11.1.3}
+\]
+and we adopt the convention that $\binom{\bb p}{\bb q} = 0$ when $\bb{q} \not\leq \bb{p}$,
+\[
+  \label{IV.16.11.1.4}
+  \bb{z}^\bb{p} = \prod_\lambda (z_\lambda)^{p_\lambda}, \quad {\pmb\zeta}^{\bb p} = \prod_\lambda (\zeta_\lambda)^{p_\lambda}.
+  \tag{16.11.1.4}
+\]
+
+We therefore have, with this notation
+\[
+  \label{IV.16.11.1.5}
+  d^m(\bb{z}^{\bb p}) = (d^m(\bb{z}))^{\bb p} = (\pmb{\zeta} + \bb{z})^{\bb p} = \sum_{\bb{q} \leq \bb{p}} \binom{\bb p}{\bb q} \bb{z}^{\bb{p} - \bb{q}} \pmb{\zeta}^{\bb q}
+  \tag{16.11.1.5}
+\]
+\[
+  \label{IV.16.11.1.6}
+  \pmb{\zeta}^{\bb p} = (d^m \bb{z} - \bb{z})^{\bb p} =  \sum_{\bb{q} \leq \bb{p}} (-1)^{|\bb{p} - \bb{q}|} \binom{\bb p}{\bb q} \bb{z}^{\bb{p} - \bb{q}} d^m(\bb{z}^{\bb q}).
+  \tag{16.11.1.6}
+\]
+  
+Since the $dz_\lambda$ generate $\Omega_{X/S}^1$, and are the images of $\delta z_\lambda$, and as the canonical morphism \sref{IV.16.3.1.1} is surjective, we conclude that for finite $m$, the $\delta z_\lambda$ generate the $\sh{O}_U$-algebra $\sh{P}_{U/S}^n$ (Bourbaki, \emph{Alg. comm.}, chap.~III, \textsection2, n\textsuperscript{o}8, cor.\ 2 du th.\ 1).
+Therefore the $\pmb{\zeta}^{\bb p}$ (for $|\bb{p}| \leq m$) generate the $\sh{O}_U$-module $\sh{P}_{U/S}^n$.
+A differential operator $D \in \Diff_{U/S}^m$ is consequently entirely determined by the values of $\langle \pmb{\zeta}^{\bb p}, D \rangle $for $|\bb{p}| \leq m$, or, which amounts to the same by \sref{IV.16.11.1.5} and \sref{IV.16.11.1.6}, by the values
+\oldpage[IV-4]{54}
+of the $\langle d^m(\bb{z}), D \rangle = D(\bb{z}^{\bb p})$ for $|\bb{p}| \leq m$;
+more precisely, it follows from \sref{IV.16.11.5} that we have
+\[
+  \label{IV.16.11.1.7}
+  D(\bb{z}^{\bb p}) = \langle d^m({\bb z}^{\bb p}), D \rangle = \sum_{\bb{q} \leq \bb{p}} \binom{\bb p}{\bb q} \langle \pmb{\zeta}^{\bb q} , D \rangle \bb{z}^{\bb{p} - \bb{q}}.
+  \tag{16.11.1.7}
+\]
+\end{env}
+
+\begin{theorem}[16.11.2]
+\label{IV.16.11.2}
+Let $f:X \to S$ be a morphism, $U$ an open set of $X$, $(z_\lambda)_{\lambda \in L}$ a family of sections of $\sh{O}_X$ over $U$ such that the family $(dz_\lambda)_{\lambda \in L}$ generates $\Omega_{X/S}^1|U = \Omega_{U/S}^1$.
+The following conditions are equivalent:
+\begin{enumerate}
+  \item[(a)] $f|U$ is differentially smooth and $(dz_\lambda)$ is a basis of the $\sh{O}_U$-module $\Omega_{U/S}^1$.
+  \item[(b)] There is a family $(D_{\bb p})_{\bb{p} \in \mathbb{N}^{(L)}}$ of differential operators of $\sh{O}_U$ to itself verifying the conditions
+  \[
+    \label{IV.16.11.2.1}
+    D_{\bb p} (\bb{z}^{\bb q}) = \binom{\bb q}{\bb p} \bb{z}^{\bb{q} - \bb{p}}, \quad (\bb{p}, \bb{q} \text{ in } \mathbb{N}^{(L)}).
+    \tag{16.11.2.1}
+  \]
+\end{enumerate}
+
+Also, when these conditions are verified, the family $(D_\bb{p})$ is uniquely determined by the conditions \sref{IV.16.11.2.1} and satisfies the relations
+\[
+  \label{IV.16.11.2.2}
+  D_{\bb q} \circ D_{\bb p} = D_{\bb p} \circ D_{\bb q} = \frac{(\bb{p} + \bb{q})!}{\bb{p}!\bb{q}!}D_{\bb{p} + \bb{q}} \quad (\bb{p}, \bb{q} \text{ in }  \mathbb{N}^{(L)}).
+  \tag{16.11.2.2}
+\]
+
+Finally, if $L$ is finite, for every integer $m$, the $D_{\bb p}$ such that $|\bb{p}| \leq m$ form a basis of the $\sh{O}_U$-module $\shDiff_{U/S}^m$, in other words, every differential operator of order $\leq m$ on $U$ can be written uniquely as
+\[
+  D = \sum_{|\bb{p}| \leq m} a_{\bb p} D_{\bb p}
+\] 
+where the $a_{\bb p}$ are sections of $\sh{O}_X$ over $U$.
+\end{theorem}
+
+\begin{proof}
+Note first that because of \sref{IV.16.11.1.6} and \sref{IV.16.11.1.5}, we verify immediately that the conditions \sref{IV.16.11.2.1} are equivalent to 
+\[
+  \label{IV.16.11.2.3}
+  \langle \pmb{\zeta}^{\bb p}, D_{\bb q} \rangle = \delta_{\bb{p} \bb{q}} \quad (\text{Kronecker's symbol}).
+  \tag{16.11.2.3}
+\]
+
+The existence of the family $(D_\bb{p})$ verifying these conditions implies first (by taking $|\bb{p}| = 1$) that the $dz_\lambda$ are linearly independent, and therefore form a basis of the $\sh{O}_U$-module $\Omega_{U/S}^1$.
+Then, for every integer $m \geq 1$, we deduce similarly from \sref{IV.16.11.2.3} that the $\pmb{\zeta}^{\bb p}$ such that $|\bb{p}| \leq m$ are linearly independent;
+it follows that the canonical homomorphism \sref{IV.16.3.1.1} is injective, and therefore bijective, which proves that (b) implies (a).
+The converse follows immediately from the definition \sref{IV.16.10.1}, the fact that $\pmb{\zeta}^{\bb p}$ form a basis of $\sh{P}_{U/S}^n$ for $|\bb{p}| \leq m$ implies the existence and uniqueness of a family of homomorphisms $u_{\bb{q}, m}: \sh{P}_{U/S}^n \to \sh{O}_U (|\bb{q}| \leq m)$ such that $\langle \zeta^{\bb p}, u_{\bb{q}, m} \rangle = \delta{\bb{p}, \bb{q}}$ for $|\bb{p}| \leq m$, $|\bb{q}| \leq m$.
+For a given value of $\bb{q}$, the differential operators corresponding to $u_{\bb{q}, m}$ for $m \geq |\bb{q}|$ are identified with the same operator $D_\bb{q}$.
+This proves that (a) implies (b), and also that the family $(D_\bb{q})$ is uniquely determined, and that, if $L$ is finite, for $|\bb{p}| \leq m$, the $D_\bb{p}$ form a basis of the dual $\shDiff_{U/S}^m$ of $\sh{P}_{U/S}^n$.
+Finally, the relations \sref{IV.16.11.2.2} follows immediately from the expression of the values of the three operators considered on the $\bb{z}^\bb{r}$, and of the fact that the $\pmb{\zeta}^\bb{r}$ for $|\bb{r}| \leq m$ generate $\sh{P}_{U/S}^n$.
+\end{proof}
+
+\oldpage[IV-4]{54}
+
+\begin{remarks}[16.11.3]
+\label{IV.16.11.3}
+\begin{enumerate}
+  \item[\rm{(i)}] The fact that, because of \sref{IV.16.11.2.2}, the $D_\bb{p}$ are pairwise permutable naturally do not imply that the $\sh{O}_U$-algebra $\shDiff_{U/S}$ is commutative, the $D_\bb{p}$ do not commute with the sections of $\sh{O}_U$ unless $n = 0$.
+  \item[\rm{(ii)}] The indices $\bb{p}$ such that $|\bb{p}| = 1$ are the $\pmb{\epsilon}_\lambda =  (\epsilon_{\lambda\mu})_{\mu \in L}$ where $\epsilon_{\lambda\mu} = 0$ if $\mu \neq \lambda$ and $\epsilon_{\lambda\lambda} = 1$;
+  when $L$ is finite, the operators $D_{\pmb{\epsilon}_\lambda}$ are exactly the $S$-derivations $D_i$ introduced in \sref{IV.16.5.7}.
+  We note that in general (contrary to what happens in classical analysis), it is not true that a differential operator of any order can be written as a linear combination of powers of $D_i$ (cf. \sref{IV.16.12}). 
+  \item[\rm{(iii)}] For every integer $r \geq 1$, we can define the notion of \emph{differentially smooth up to order $r$} by replacing in \sref{IV.16.10.1} the condition (ii) by the condition that the homomorphisms
+  \[
+    \bb{S}_{\sh{O}_X}^m(\Omega_{X/S}^1) \to \shGr_m(\sh{P}_{X/S}^n)
+  \]
+  are bijective \emph{for every $m \leq r$}.
+  The argument of \sref{IV.16.11.2} proves also that if, in the condition (a), we replace ``differentially smooth'' by ``differentially smooth up to order $r$'', this condition is equivalent to (b) by restricting ourselves to $\bb{p} \in \mathbb{N}^{(L)}$, $\bb{q} \in \mathbb{N}^{(L)}$  such that $|\bb{p}| \leq r$, $|\bb{q}| \leq r$.
+\end{enumerate}
+\end{remarks}
+
+\subsection{Case of characteristic zero: Jacobian criterion for differentially smooth morphisms.}
+\label{IV.16.12}
