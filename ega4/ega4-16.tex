@@ -2610,7 +2610,7 @@ Since the canonical projection $X' \to X$ is a faithfully flat and quasi-compact
 \label{IV.16.10.5}
 For a morphism locally of finite type $f:X \to S$ to be differentially smooth, it is necessary and sufficient that the diagonal immersion $\Delta_f:X \to X \times_S X$ to be quasi-regular.
 \end{proposition}
-
+  
 \oldpage[IV-4]{53}
 
 \begin{proof}
@@ -2727,7 +2727,7 @@ This proves that (a) implies (b), and also that the family $(D_\bb{q})$ is uniqu
 Finally, the relations \sref{IV.16.11.2.2} follows immediately from the expression of the values of the three operators considered on the $\bb{z}^\bb{r}$, and of the fact that the $\pmb{\zeta}^\bb{r}$ for $|\bb{r}| \leq m$ generate $\sh{P}_{U/S}^n$.
 \end{proof}
 
-\oldpage[IV-4]{54}
+\oldpage[IV-4]{55}
 
 \begin{remarks}[16.11.3]
 \label{IV.16.11.3}
@@ -2747,3 +2747,33 @@ Finally, the relations \sref{IV.16.11.2.2} follows immediately from the expressi
 
 \subsection{Case of characteristic zero: Jacobian criterion for differentially smooth morphisms.}
 \label{IV.16.12}
+
+\begin{env}[16.12.1]
+\label{IV.16.12.1}
+We say that a prescheme $X$ is \emph{of characteristic $p$} ($p$ equal to zero or a prime number) if, for every affine open set $U$ of $X$, the ring $\Gamma(U, \sh{O}_X)$ is of characteristic $p$ \sref[0]{0.21.1.1}.
+It follows from \sref[0]{0.21.1.3} that for $X$ to be of characteristic $0$, it is necessary and sufficient that for every \emph{closed} point $x$ of $X$, the residue field $\kres(x)$ is of characteristic $0$, or even that $X$ can be given a structure of $\mathbb{Q}$-prescheme (necessarily unique).
+\end{env}
+
+\begin{theorem}[16.12.2]
+\label{IV.16.12.2}
+Let $X$ be a scheme of characteristic $0$, $f:X \to S$ a morphism.
+If $\Omega_{X/S}^1$ is a locally free $\sh{O}_X$-module (not necessarily of finite type), $f$ is differentially smooth.
+\end{theorem}
+
+\begin{proof}
+The problem being local on $X$, we can suppose there is a family $(z_\lambda)$ of sections of $\sh{O}_X$ over $X$ such that the $(dz_\lambda)$ is a basis for the $\sh{O}_X$-module $\Omega_{X/S}^1$.
+Applying the criterion \sref{IV.16.11.2}, it is enough for the operators 
+\[
+  D_\bb{p} = (\bb{p}!)^{-1} \prod_\lambda D_\lambda^{p_\lambda}
+\]
+(where the $D_\lambda$ are the coordinate forms corresponding to the basis $(dz_\lambda)$) to verify the relations \sref{IV.16.11.2.1}, which is a consequence of the fact that the $D_\lambda$ are derivations.
+\end{proof}
+
+\begin{env}[16.12.3]
+\label{IV.16.12.3}
+The theorem above is not true if we discard the hypothesis that $X$ is of characteristic $0$.
+For example, if $S = \Spec(k)$, where $k$ is a field of characteristic $p > 0$, $X = \Spec(K)$ where $K = k(\alpha)$ where $\alpha \notin k$, $\alpha^p \in k$, we verify immediately 
+\oldpage[IV-4]{56}
+that $\Omega_{X/S}^1$ has rank $1$, and that the morphism $X \to S$ has rank $1$, and that the morphism $X \to S$ is differentially smooth up to order $p - 1$ \sref{IV.16.11.3}[(iii)], but not of order $p$.
+However, the proof of \sref{IV.16.12.2} proves that if $\Omega_{X/S}^1$ is locally free, and if $n! 1_{\sh{O}_X}$ is inversible in $\Gamma(X, \sh{O}_X)$, then $X$ is differentially smooth over $S$ up to order $n$.
+\end{env}
