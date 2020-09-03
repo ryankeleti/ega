@@ -91,7 +91,7 @@ Here is the current status of the translation, along with who is currently worki
     + [x] 10. ~~Relations between projective cohomology and local cohomology. Formal completion technique along a divisor~~
     + [x] 11. ~~Global and local Picard groups~~
     + [ ] _Errata and addenda (list 2)_
-- **Local study of schemes and their morphisms (EGA IV)** ![EGAIVstatus](https://img.shields.io/badge/-1%2F825-red)
+- **Local study of schemes and their morphisms (EGA IV)** ![EGAIVstatus](https://img.shields.io/badge/-53%2F825-red)
     + [x] 0. Summary _(@thosgood)_
     + [ ] 1. Relative finiteness conditions. Constructible sets of preschemes (~30 pages)
     + [ ] 2. Base change and flatness (~30 pages)
@@ -108,7 +108,7 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 13. Equidimensional morphisms (~15 pages)
     + [ ] 14. Universally open morphisms (~25 pages)
     + [ ] 15. Fibres of a universally open morphism (~25 pages)
-    + [ ] 16. Differential invariants. Differentially smooth morphisms _(@solov-t)_ (~50 pages)
+    + [x] 16. Differential invariants. Differentially smooth morphisms _(@solov-t)_ (~50 pages)
     + [ ] 17. Smooth morphisms, unramified morphisms, and étale morphisms _(@tholzschuh)_ (~55 pages)
     + [ ] 18. Supplement on étale morphisms. Henselian local rings and strictly local rings (~75 pages)
     + [ ] 19. Regular immersions and normal flatness (~40 pages)
