@@ -61,7 +61,7 @@
 % also make section titles bigger.
 % also add § to \thesection, https://tex.stackexchange.com/questions/119667/ and https://tex.stackexchange.com/questions/308737/.
 \makeatletter
-\def\l@subsection{\@tocline{2}{0pt}{2.5pc}{1.5pc}{}}
+\def\l@subsection{\@tocline{2}{0pt}{2.5pc}{2.2pc}{}}
 \def\section{\@startsection{section}{1}%
   \z@{.7\linespacing\@plus\linespacing}{.5\linespacing}%
   {\normalfont\bfseries\Large\scshape\centering}}
@@ -87,6 +87,10 @@
 \def\shProj{\sh{P}\textup{\kern-2.2pt{\Fontauri\slshape roj}}} % sheaf Proj
 \def\shExt{\sh{E}\textup{\kern-2.2pt{\Fontauri\slshape xt}}}   % sheaf Ext
 \def\shGr{\sh{G}\textup{\kern-2.2pt{\Fontauri\slshape r}}}     % sheaf Gr
+\def\shDer{\sh{D}\,\textup{\kern-2.2pt{\Fontauri\slshape er}}} % sheaf Der
+\def\shDiff{\sh{D}\,\textup{\kern-2.2pt{\Fontauri\slshape if{}f}}\,} % sheaf Diff
+\def\shHomcont{\sh{H}\textup{\kern-2.2pt{\Fontauri\slshape om.\,cont}}}   % sheaf Hom.cont
+\def\shAut{\sh{A}\textup{\kern-2.2pt{\Fontauri\slshape ut}}}   % sheaf Aut
 
 % if unsure of a translation
 %\newcommand{\unsure}[2][]{\hl{#2}\marginpar{#1}}
@@ -95,7 +99,7 @@
 \def\completelyunsure{{\color{red}(???)}}
 
 % use to mark where original page starts
-\newcommand{\oldpage}[2][--]{{\marginnote{\textbf{#1}~|~#2}}\ignorespaces}
+\newcommand{\oldpage}[2][--]{{\marginnote{\normalfont{\textbf{#1}~|~#2}}}\ignorespaces}
 \def\sectionbreak{\begin{center}***\end{center}}
 
 % for referencing environments.
