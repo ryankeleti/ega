@@ -85,7 +85,7 @@ Indeed, if $st=0$ for a $t\in\Gamma(U,\sh{O}_X)$, then we have $s_\xi t_\xi=0$, 
 we are immediately reduced to the case where $U$ is affine, and an element of a reduced ring which belongs to all the minimal prime ideals is zero by definition.
 The converse is true if the set of irreducible components of $X$ is \emph{locally finite}.
 We immediately reduce to the case where $X=\Spec(A)$ is affine;
-if $\mathfrak{p}_i$ ($1\leq i\leq n$) are the minimal prime ideals of $A$ and if $s\in\mathfrak{p}_i$ for an index $i$, then there exists $t\in A$ such that $t\in\mathfrak{p}_j$ for $j\neq i$ and $t\not\in\mathfrak{p}_i$ (Bourbaki, \emph{Alg. comm.}, chap.~II, \textsection1, n\textsuperscript{o}1, Prop.~1);
+if $\mathfrak{p}_i$ ($1\leq i\leq n$) are the minimal prime ideals of $A$ and if $s\in\mathfrak{p}_i$ for an index $i$, then there exists $t\in A$ such that $t\in\mathfrak{p}_j$ for $j\neq i$ and $t\not\in\mathfrak{p}_i$ (Bournaki, \emph{Alg. comm.}, chap.~II, \textsection1, n\textsuperscript{o}1, Prop.~1);
 so we have $st\in\mathfrak{p}_i$ for all $i$, and as a result $st=0$ since $A$ is reduced;
 $s$ is therefore nonregular.
 \end{env}
