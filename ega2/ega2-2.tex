@@ -382,4 +382,43 @@ It follows from \sref{II.2.3.2.2} and \sref{II.2.3.2.4} that every closed subset
 \begin{env}[2.3.5]
 \label{II.2.3.5}
 Let $f$ be a \emph{homogeneous} element of $S_+$, of degree $d>0$;
+for every graded prime ideal $\mathfrak{p}$ of $S$ that does not contain $f$, we know that the set of the $x/f^n$, where $x\in\mathfrak{p}$ and $n\geq0$, is a prime ideal of the ring of fractions $S_f$ \sref[0]{0.1.2.6};
+its intersection with $S_{(f)}$ is thus a prime ideal of $S_{(f)}$, which we denote by $\psi_f(\mathfrak{p})$:
+it is the set of the $x/f^n$ for $n\geq0$ and $x\in\mathfrak{p}\cap S_{nd}$.
+We have thus defined a map
+\[
+  \psi_f\colon D_+(f)\to\Spec(S_{(f)});
+\]
+furthermore, if $g\in S_e$ is another homogeneous element of $S_+$, then we have a commutative diagram
+\[
+\label{II.2.3.5.1}
+  \xymatrix{
+    D_+(f) \ar[r]^{\psi_f}
+    & \Spec(S_{(f)})
+  \\D_+(fg) \ar[u] \ar[r]_{\psi_{fg}}
+    & \Spec(S_{(fg)}) \ar[u]
+  }
+\tag{2.3.5.1}
+\]
+where the vertical arrow on the left is the inclusion, and the vertical arrow on the right is the map ${}^a\!\omega_{fg,f}$ induced by the canonical homomorphism $\omega=\omega_{fg,f}\colon S_{(f)}\to S_{(fg)}$ \sref[I]{I.1.2.1}.
+Indeed, if $x/f^n\in\omega^{-1}(\psi_{fg}(\mathfrak{p}))$, with $fg\not\in\mathfrak{p}$, then, by definition, $g^nx/(fg)^n\in\psi_{fg}(\mathfrak{p})$, so $g^nx\in\mathfrak{p}$, and so $x\in\mathfrak{p}$;
+the converse is evident.
 \end{env}
+
+\begin{proposition}[2.3.6]
+\label{II.2.3.6}
+The map $\psi_f$ is a homeomorphism from $D_+(f)$ to $\Spec(S_{(f)})$.
+\end{proposition}
+
+\begin{proof}
+Firstly, $\psi_f$ is continuous;
+this is since, if $h\in S_{nd}$ is such that $h/f^n\in\psi_f(\mathfrak{p})$, then, by definition, $h\in\mathfrak{p}$, and conversely, and so $\psi_f^{-1}(D(h/f^n))=D_+(hf)$, and our claim then follows from \sref{II.2.3.3.2}.
+Furthermore, the $D_+(hf)$, where $h$ runs over the sets $S_{nd}$, form a topology of $D_+(f)$, by \sref{II.2.3.4} and \sref{II.2.3.3.2};
+the
+\oldpage[II]{27}
+above thus proves, taking into account the ($T_0$) axiom, which holds in $D_+(f)$ and in $\Spec(S_{(f)})$, that $\psi_f$ is injective and that the inverse map $\psi_f(D_+(f))\to D_+(f)$ is continuous.
+Finally, to see that $\psi_f$ is surjective, we note that, if $\mathfrak{q}_0$ is a prime ideal of $S_{(f)}$, and if, for all $n>0$, we denote by $\mathfrak{p}_n$ the set of $x\in S_n$ such that $x^d/f^n\in\mathfrak{q}_0$, then the $\mathfrak{p}_n$ satisfy the conditions of \sref{II.2.1.9}:
+if $x,y\in S_n$ are such that $x^d/f^n,y^d/f^n\in\mathfrak{q}_0$, then $(x+y)^{2d}/f^{2n}\in\mathfrak{q}_0$, whence $(x+y)^d/f^n\in\mathfrak{q}_0$, since $\mathfrak{q}_0$ is prime;
+this proves that the $\mathfrak{p}_n$ are subgroups of the $S_n$, and the verification of the other conditions of \sref{II.2.1.9} is immediate, taking into account the fact that $\mathfrak{q}_0$ is prime.
+If $\mathfrak{p}$ is the graded prime ideal of $S$ thus defined, then indeed $\psi_f(\mathfrak{p})=\mathfrak{q}_0$, since, if $x\in S_{nd}$, then having $x/f^n\in\mathfrak{q}_0$ and $x^d/f^{nd}\in\mathfrak{q}_0$ is equivalent to $\mathfrak{q}_0$ being prime.
+\end{proof}
