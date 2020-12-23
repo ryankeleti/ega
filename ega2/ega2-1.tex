@@ -31,7 +31,7 @@ Let $Y$ be a second $S$-prescheme, $g:Y\to S$ its structure morphism, and $h:X\t
 
 We have by definition $h=(\psi,\theta)$, where $\theta:\sh{O}_Y\to h_*(\sh{O}_X)=\psi_*(\sh{O}_X)$ is a homomorphism of sheaves of rings; we induce \sref[0]{0.4.2.2} a homomorphism of $\sh{O}_S$-algebras $g_*(\theta):g_*(\sh{O}_Y)\to g_*(h_*(\sh{O}_X))=f_*(\sh{O}_X)$, in other words, a homomorphism of $\sh{O}_S$-algebras $\sh{A}(Y)\to\sh{A}(X)$, which we denote by $\sh{A}(h)$.
 If $h':Y\to Z$ is a second $S$-morphism, then it is immediate that $\sh{A}(h'\circ h)=\sh{A}(h)\circ\sh{A}(h')$.
-We havve thus define a \emph{contravariant functor $\sh{A}(X)$} from the category of $S$-preschemes to the category of $\sh{O}_S$-algebras.
+We have thus define a \emph{contravariant functor $\sh{A}(X)$} from the category of $S$-preschemes to the category of $\sh{O}_S$-algebras.
 
 Now let $\sh{F}$ be an $\sh{O}_X$-module, $\sh{G}$ an $\sh{O}_Y$-module, and $u:\sh{G}\to\sh{F}$ an $h$-morphism, that is \sref[0]{0.4.4.1} a homomorphism of $\sh{O}_Y$-modules $\sh{G}\to h_*(\sh{F})$.
 Then $g_*(u):g_*(\sh{G})\to g_*(h_*(\sh{F}))=f_*(\sh{F})$ is a homomorphism $\sh{A}(\sh{G})\to\sh{A}(\sh{F})$ of $\sh{O}_S$-modules, which we denote by $\sh{A}(u)$; in addition, the pair $(\sh{A}(h),\sh{A}(u))$ form a \emph{di-homomorphism} from the $\sh{A}(Y)$-module $\sh{A}(\sh{G})$ to the $\sh{A}(X)$-module $\sh{A}(\sh{F})$.
@@ -109,7 +109,7 @@ Let $f:X\to S$ and $g:Y\to S$ be the structure morphisms.
 First, suppose that $S=\Spec(A)$ and $X=\Spec(B)$ are affine; we must prove that for every homomorphism $\omega:f_*(\sh{O}_X)\to g_*(\sh{O}_Y)$ of $\sh{O}_S$-algebras, there exists a unique $S$-morphism $h:Y\to X$ such that $\sh{A}(h)=\omega$.
 By definition, for every open $U\subset S$, $\omega$ defines a homomorphism $\omega_U=\Gamma(U,\omega):\Gamma(f^{-1}(U),\sh{O}_X)\to\Gamma(g^{-1}(U),\sh{O}_Y)$ of $\Gamma(U,\sh{O}_S)$-algebras.
 In particular, for $U=S$, this gives a homomorphism $\vphi:\Gamma(X,\sh{O}_X)\to\Gamma(Y,\sh{O}_Y)$ of $\Gamma(S,\sh{O}_S)$-algebras, to which corresponds a well-defined $S$-morphism $h:Y\to X$, since $X$ is affine \sref[I]{I.2.2.4}.
-It remains to prove that $\sh{A}(h)=\omega$, in other words, for every open set $U$ of a basis for $S$, $\omega_U$ coincides with the homomorphism of algebras $\vphi_U$ corresponding to the $S$-morphism $g^{-1}(U)\to f^{-1}(U)$, a restiction of $h$.
+It remains to prove that $\sh{A}(h)=\omega$, in other words, for every open set $U$ of a basis for $S$, $\omega_U$ coincides with the homomorphism of algebras $\vphi_U$ corresponding to the $S$-morphism $g^{-1}(U)\to f^{-1}(U)$, a restriction of $h$.
 We can reduce to the case where $U=D(\lambda)$, with $\lambda\in S$; then, if $f=({}^a\rho,\widetilde{\rho})$, where $\rho:A\to B$ is a ring homomorphism, we have $f^{-1}(U)=D(\mu)$, where $\mu=\rho(\lambda)$, and $\Gamma(f^{-1}(U),\sh{O}_X)$ is the ring of fractions $B_\mu$; the diagram
 \[
   \xymatrix{
@@ -252,7 +252,7 @@ We denote by $\widetilde{\sh{M}}$ the $\sh{O}_X$-module $\sh{F}$, and we say tha
 
 \begin{corollary}[1.4.4]
 \label{II.1.4.4}
-On the category of quasi-coherent $\sh{B}$-modules, $\widetilde{\sh{M}}$ is an additive covariant exact functor in $\sh{M}$, which commutes with inductive limitd and direct sums.
+On the category of quasi-coherent $\sh{B}$-modules, $\widetilde{\sh{M}}$ is an additive covariant exact functor in $\sh{M}$, which commutes with inductive limits and direct sums.
 \end{corollary}
 
 \begin{proof}
@@ -566,7 +566,7 @@ There is thus a bijective correspondence between homomorphisms $\sh{E}\to\sh{B}$
 In particular, every homomorphism $u:\sh{E}\to\sh{F}$ of $\sh{A}$-modules defines a homomorphism $\bb{S}(u):\bb{S}(\sh{E})\to\bb{S}(\sh{F})$ of $\sh{A}$-algebras, and $\bb{S}(\sh{E})$ is thus a covariant functor in $\sh{E}$.
 
 \oldpage[II]{16}
-By \sref{II.1.7.2} and the commutativity of $\bb{S}$ with inductive limts, we have $(\bb{S}(\sh{E}))_x=\bb{S}(\sh{E}_x)$ for every point $x\in S$.
+By \sref{II.1.7.2} and the commutativity of $\bb{S}$ with inductive limits, we have $(\bb{S}(\sh{E}))_x=\bb{S}(\sh{E}_x)$ for every point $x\in S$.
 If $\sh{E}$, $\sh{F}$ are two $\sh{A}$-modules, then $\bb{S}(\sh{E}\oplus\sh{F})$ canonically identifies with $\bb{S}(\sh{E})\otimes_\sh{A}\bb{S}(\sh{F})$, as we see for the corresponding presheaves.
 
 We also note that $\bb{S}(\sh{E})$ is a graded $\sh{A}$-algebra, the infinite direct sum of the $\bb{S}_n(\sh{E})$, where the $\sh{A}$-module $\bb{S}_n(\sh{E})$ is the sheaf associated to the presheaf $U\mapsto\bb{S}_n(\Gamma(U,\sh{E}))$.
@@ -580,7 +580,7 @@ If $\sh{F}$ is a $\sh{B}$-module, then $\bb{S}(f^*(\sh{F}))$ canonically identif
 \[
   \bb{S}(f^*(\sh{F}))=\bb{S}(\psi^*(\sh{F})\otimes_{\psi^*(\sh{B})}\sh{A})=\bb{S}(\psi^*(\sh{F}))\otimes_{\psi^*(\sh{B})}\sh{A}
 \]
-\sref{II.1.7.2}; for every open $U$ of $S$ and every section $h$ of $\bb{S}(\psi^*(\sh{F}))$ over $U$, $h$ coincides, in a neighborhood $V$ of every point $s\in U$, with an element of $\bb{S}(\Gamma(V,\psi^*(\sh{F})))$; if we refer to the definition of $\psi^*(\sh{F})$ \sref[0]{0.3.7.1} and take into account that every element of $\bb{S}(E)$ for a module $E$ is a linear combination of a finite number of products of elements of $E$, then we see that there is a neighborhood $W$ of $\psi(s)$ in $T$, a section $h'$ of $\bb{S}(\sh{F})$ over $W$, and a neighborhood $V'\subset V\cap\psi^{-1}(W)$ of $s$ such that $h$ coincises with $t\mapsto h'(\psi(t))$ over $V'$; hence out assertion.
+\sref{II.1.7.2}; for every open $U$ of $S$ and every section $h$ of $\bb{S}(\psi^*(\sh{F}))$ over $U$, $h$ coincides, in a neighborhood $V$ of every point $s\in U$, with an element of $\bb{S}(\Gamma(V,\psi^*(\sh{F})))$; if we refer to the definition of $\psi^*(\sh{F})$ \sref[0]{0.3.7.1} and take into account that every element of $\bb{S}(E)$ for a module $E$ is a linear combination of a finite number of products of elements of $E$, then we see that there is a neighborhood $W$ of $\psi(s)$ in $T$, a section $h'$ of $\bb{S}(\sh{F})$ over $W$, and a neighborhood $V'\subset V\cap\psi^{-1}(W)$ of $s$ such that $h$ coincides with $t\mapsto h'(\psi(t))$ over $V'$; hence out assertion.
 \end{env}
 
 \begin{proposition}[1.7.6]
@@ -620,7 +620,7 @@ equivalently \sref[0]{0.4.4.3} with the $(\sh{O}_S|U)$-homomorphisms $j^*(\sh{E}
 In addition, it is immediate that the restriction to an open $U'\subset U$ of an $S$-morphism $U\to\bb{V}(\sh{E})$ corresponds to the restriction to $U'$ of the corresponding homomorphism $\sh{E}|U\to\sh{O}_S|U$.
 We conclude that \emph{the sheaf of germs of $S$-sections} of $\bb{V}(\sh{E})$ is canonically identified with the \emph{dual $\dual{\sh{E}}$} of $\sh{E}$.
 
-In particular, if we set $X=U=S$, then the \emph{zero} homomorphism $\sh{E}\to\sh{O}_S$ corrresponds to a canonical $S$-section of $\bb{V}(\sh{E})$, called the \emph{zero $S$-section} (cf.~\sref{II.8.3.3}).
+In particular, if we set $X=U=S$, then the \emph{zero} homomorphism $\sh{E}\to\sh{O}_S$ corresponds to a canonical $S$-section of $\bb{V}(\sh{E})$, called the \emph{zero $S$-section} (cf.~\sref{II.8.3.3}).
 \end{env}
 
 \begin{env}[1.7.10]
