@@ -29,9 +29,9 @@ Let $Y$ be a second $S$-prescheme, $g:Y\to S$ its structure morphism, and $h:X\t
   \tag{1.1.2.1}
 \]
 
-We have by definition $h=(\psi,\theta)$, where $\theta:\sh{O}_Y\to h_*(\sh{O}_X)=\psi_*(\sh{O}_X)$ is a homomorphism of sheaves of rings; we induce \sref[0]{0.4.2.2} a homomorphism of $\sh{O}_S$-algebras $g_*(\theta):g_*(\sh{O}_Y)\to g_*(h_*(\sh{O}_X))=f_*(\sh{O}_X)$, in other words, a homomorphism of $\sh{O}_S$-algebras $\sh{A}(Y)\to\sh{A}(X)$, which we denote by $\sh{A}(h)$.
+We have by definition $h=(\psi,\theta)$, where $\theta:\sh{O}_Y\to h_*(\sh{O}_X)=\psi_*(\sh{O}_X)$ is a homomorphism of sheaves of rings; we thus obtain \sref[0]{0.4.2.2} a homomorphism of $\sh{O}_S$-algebras $g_*(\theta):g_*(\sh{O}_Y)\to g_*(h_*(\sh{O}_X))=f_*(\sh{O}_X)$, in other words, a homomorphism of $\sh{O}_S$-algebras $\sh{A}(Y)\to\sh{A}(X)$, which we denote by $\sh{A}(h)$.
 If $h':Y\to Z$ is a second $S$-morphism, then it is immediate that $\sh{A}(h'\circ h)=\sh{A}(h)\circ\sh{A}(h')$.
-We have thus define a \emph{contravariant functor $\sh{A}(X)$} from the category of $S$-preschemes to the category of $\sh{O}_S$-algebras.
+We have thus defined a \emph{contravariant functor $\sh{A}(X)$} from the category of $S$-preschemes to the category of $\sh{O}_S$-algebras.
 
 Now let $\sh{F}$ be an $\sh{O}_X$-module, $\sh{G}$ an $\sh{O}_Y$-module, and $u:\sh{G}\to\sh{F}$ an $h$-morphism, that is \sref[0]{0.4.4.1} a homomorphism of $\sh{O}_Y$-modules $\sh{G}\to h_*(\sh{F})$.
 Then $g_*(u):g_*(\sh{G})\to g_*(h_*(\sh{F}))=f_*(\sh{F})$ is a homomorphism $\sh{A}(\sh{G})\to\sh{A}(\sh{F})$ of $\sh{O}_S$-modules, which we denote by $\sh{A}(u)$; in addition, the pair $(\sh{A}(h),\sh{A}(u))$ form a \emph{di-homomorphism} from the $\sh{A}(Y)$-module $\sh{A}(\sh{G})$ to the $\sh{A}(X)$-module $\sh{A}(\sh{F})$.
@@ -109,7 +109,7 @@ Let $f:X\to S$ and $g:Y\to S$ be the structure morphisms.
 First, suppose that $S=\Spec(A)$ and $X=\Spec(B)$ are affine; we must prove that for every homomorphism $\omega:f_*(\sh{O}_X)\to g_*(\sh{O}_Y)$ of $\sh{O}_S$-algebras, there exists a unique $S$-morphism $h:Y\to X$ such that $\sh{A}(h)=\omega$.
 By definition, for every open $U\subset S$, $\omega$ defines a homomorphism $\omega_U=\Gamma(U,\omega):\Gamma(f^{-1}(U),\sh{O}_X)\to\Gamma(g^{-1}(U),\sh{O}_Y)$ of $\Gamma(U,\sh{O}_S)$-algebras.
 In particular, for $U=S$, this gives a homomorphism $\vphi:\Gamma(X,\sh{O}_X)\to\Gamma(Y,\sh{O}_Y)$ of $\Gamma(S,\sh{O}_S)$-algebras, to which corresponds a well-defined $S$-morphism $h:Y\to X$, since $X$ is affine \sref[I]{I.2.2.4}.
-It remains to prove that $\sh{A}(h)=\omega$, in other words, for every open set $U$ of a basis for $S$, $\omega_U$ coincides with the homomorphism of algebras $\vphi_U$ corresponding to the $S$-morphism $g^{-1}(U)\to f^{-1}(U)$, a restriction of $h$.
+It remains to prove that $\sh{A}(h)=\omega$, or, in other words, that, for every open set $U$ of a basis for $S$, $\omega_U$ coincides with the homomorphism of algebras $\vphi_U$ corresponding to the $S$-morphism $g^{-1}(U)\to f^{-1}(U)$, a restiction of $h$.
 We can reduce to the case where $U=D(\lambda)$, with $\lambda\in S$; then, if $f=({}^a\rho,\widetilde{\rho})$, where $\rho:A\to B$ is a ring homomorphism, we have $f^{-1}(U)=D(\mu)$, where $\mu=\rho(\lambda)$, and $\Gamma(f^{-1}(U),\sh{O}_X)$ is the ring of fractions $B_\mu$; the diagram
 \[
   \xymatrix{
