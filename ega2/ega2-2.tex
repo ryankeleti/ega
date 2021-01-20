@@ -685,22 +685,22 @@ There exists on $X=\Proj(S)$ exactly one quasi-coherent $\sh{O}_X$-module $\wide
 \end{proposition}
 
 \begin{proof}
-  Suppose that $f\in S_d$ and $g\in S_e$.
-  Since $D_+(fg)$ can be identified with the prime spectrum of $(S_{(f)})_{g^d/f^e}$ by \sref{II.2.2.2}, the restriction to $D_+(fg)$ of the sheaf $(M_{(f)})^\supertilde$ on $D_+(f)$ is canonically identified with the sheaf associated to the module $(M_{(f)})_{g^d/f^e}$ \sref[I]{I.1.3.6}, and thus also with $(M_{(fg)})^\supertilde$ \sref{II.2.2.2};
-  we thus conclude that there exists a canonical isomorphism
-  \[
-    \theta_{g,f}\colon (M_{(f)})^\supertilde|D_+(fg) \xrightarrow{\sim} (M_{(g)})^\supertilde|D_+(fg)
-  \]
-  such that, if $h$ is a third homogeneous element of $S_+$, then $\theta_{f,h}=\theta_{f,g}\circ\theta_{g,h}$ in $D_+(fgh)$.
-  Consequently \sref[0]{0.3.3.1} there exists a quasi-coherent $\sh{O}_X$-module $\sh{F}$ on $X$, and, for every homogeneous $f$ in $S_+$, an isomorphism $\eta_f$ from $\sh{F}|D_+(f)$ to $(M_{f})^\supertilde$ such that $\theta_{g,f}=\eta_g\circ\eta_f^{-1}$.
-  If we then consider the sheaf $\sh{G}$ associated to the presheaf (on the base of the topology of $X$ given by the $D_+(f)$) defined by $D_+(f)\mapsto M_{(f)}$, with the canonical homomorphisms $M_{(f)}\to M_{(fg)}$ as restriction homomorphisms, then the above proves that $\sh{F}$ and $\sh{G}$ are isomorphic (taking \sref[I]{I.1.3.7} into account);
-  the sheaf $\sh{G}$ is denoted by $\widetilde{M}$, and indeed satisfies the conditions of the statement.
-  We have, in particular, $\widetilde{S}=\sh{O}_X$.
+Suppose that $f\in S_d$ and $g\in S_e$.
+Since $D_+(fg)$ can be identified with the prime spectrum of $(S_{(f)})_{g^d/f^e}$ by \sref{II.2.2.2}, the restriction to $D_+(fg)$ of the sheaf $(M_{(f)})^\supertilde$ on $D_+(f)$ is canonically identified with the sheaf associated to the module $(M_{(f)})_{g^d/f^e}$ \sref[I]{I.1.3.6}, and thus also with $(M_{(fg)})^\supertilde$ \sref{II.2.2.2};
+we thus conclude that there exists a canonical isomorphism
+\[
+  \theta_{g,f}\colon (M_{(f)})^\supertilde|D_+(fg) \xrightarrow{\sim} (M_{(g)})^\supertilde|D_+(fg)
+\]
+such that, if $h$ is a third homogeneous element of $S_+$, then $\theta_{f,h}=\theta_{f,g}\circ\theta_{g,h}$ in $D_+(fgh)$.
+Consequently \sref[0]{0.3.3.1} there exists a quasi-coherent $\sh{O}_X$-module $\sh{F}$ on $X$, and, for every homogeneous $f$ in $S_+$, an isomorphism $\eta_f$ from $\sh{F}|D_+(f)$ to $(M_{f})^\supertilde$ such that $\theta_{g,f}=\eta_g\circ\eta_f^{-1}$.
+If we then consider the sheaf $\sh{G}$ associated to the presheaf (on the base of the topology of $X$ given by the $D_+(f)$) defined by $D_+(f)\mapsto M_{(f)}$, with the canonical homomorphisms $M_{(f)}\to M_{(fg)}$ as restriction homomorphisms, then the above proves that $\sh{F}$ and $\sh{G}$ are isomorphic (taking \sref[I]{I.1.3.7} into account);
+the sheaf $\sh{G}$ is denoted by $\widetilde{M}$, and indeed satisfies the conditions of the statement.
+We have, in particular, $\widetilde{S}=\sh{O}_X$.
 \end{proof}
 
 \begin{definition}[2.5.3]
 \label{II.2.5.3}
-  We say that the quasi-coherent $\sh{O}_X$-module $\widetilde{M}$ defined in \sref{II.2.5.2} is \emph{associated} to the graded $S$-module $M$.
+We say that the quasi-coherent $\sh{O}_X$-module $\widetilde{M}$ defined in \sref{II.2.5.2} is \emph{associated} to the graded $S$-module $M$.
 \end{definition}
 
 Recall that the graded $S$-modules form a category when we restrict from arbitrary homomorphisms of graded modules to homomorphisms \emph{of degree~$0$}.
@@ -708,13 +708,13 @@ With this convention:
 
 \begin{proposition}[2.5.4]
 \label{II.2.5.4}
-  The functor $M\mapsto\widetilde{M}$ is an exact additive covariant functor from the category of graded $S$-modules to the category of quasi-coherent $\sh{O}_X$-modules, and it commutes with inductive limits and direct sums.
+The functor $M\mapsto\widetilde{M}$ is an exact additive covariant functor from the category of graded $S$-modules to the category of quasi-coherent $\sh{O}_X$-modules, and it commutes with inductive limits and direct sums.
 \end{proposition}
 
 \begin{proof}
-  Indeed, since these properties are local, it suffices to show that they are satisfied for the sheaves of the form $\widetilde{M}|D_+(f)=(M_{(f)})^\supertilde$;
-  but the functors $M\mapsto M_f$, $N\mapsto N_0$ (to the category of graded $S_f$-modules), and $P\mapsto\widetilde{P}$ (to the category of $S_{(f)}$-modules) all have the three properties of exactness and of commutativity with inductive limits and direct sums (\sref[I]{I.1.3.5} and \sref[I]{I.1.3.9});
-  whence the proposition.
+Indeed, since these properties are local, it suffices to show that they are satisfied for the sheaves of the form $\widetilde{M}|D_+(f)=(M_{(f)})^\supertilde$;
+but the functors $M\mapsto M_f$, $N\mapsto N_0$ (to the category of graded $S_f$-modules), and $P\mapsto\widetilde{P}$ (to the category of $S_{(f)}$-modules) all have the three properties of exactness and of commutativity with inductive limits and direct sums (\sref[I]{I.1.3.5} and \sref[I]{I.1.3.9});
+whence the proposition.
 \end{proof}
 
 We denote by $\widetilde{u}$ the homomorphism $\widetilde{M}\to\widetilde{N}$ corresponding to a homomorphism $u\colon M\to N$ of degree~$0$.
@@ -722,12 +722,12 @@ We immediately deduce from \sref{I.2.5.4} that the results of \sref[I]{I.1.3.9} 
 
 \begin{proposition}[2.5.5]
 \label{II.2.5.5}
-  For all $\mathfrak{p}\in X=\Proj(S)$, we have $\widetilde{M}_\mathfrak{p}=M_{(\mathfrak{p})}$.
+For all $\mathfrak{p}\in X=\Proj(S)$, we have $\widetilde{M}_\mathfrak{p}=M_{(\mathfrak{p})}$.
 \end{proposition}
 
 \begin{proof}
-  By definition, $\widetilde{M}_\mathfrak{p}=\varinjlim\Gamma(D_+(f),\widetilde{M})$, where $f$ runs over the set of homogeneous elements of $S_+$ such that $f\not\in\mathfrak{p}$;
-  since $\Gamma(D_+(f),\widetilde{M})=M_{(f)}$, the proposition follows from the definition of $M_{(\mathfrak{p})}$ \sref{II.2.2.7}
+By definition, $\widetilde{M}_\mathfrak{p}=\varinjlim\Gamma(D_+(f),\widetilde{M})$, where $f$ runs over the set of homogeneous elements of $S_+$ such that $f\not\in\mathfrak{p}$;
+since $\Gamma(D_+(f),\widetilde{M})=M_{(f)}$, the proposition follows from the definition of $M_{(\mathfrak{p})}$ \sref{II.2.2.7}
 \end{proof}
 
 \oldpage[II]{32}
@@ -737,19 +737,120 @@ Even more particularly, if $S$ is \emph{essential integral}, so that $\Proj(S)=X
 
 \begin{proposition}[2.5.6]
 \label{II.2.5.6}
-  If, for all $z\in M$ and all homogeneous $f$ in $S_+$, there exists a power of $f$ that annihilates $z$, then $\widetilde{M}=0$.
-  This sufficient condition is also necessary if the $S_0$-algebra $S$ is generated by the set $S_1$ of homogeneous elements of degree~$1$.
+If, for all $z\in M$ and all homogeneous $f$ in $S_+$, there exists a power of $f$ that annihilates $z$, then $\widetilde{M}=0$.
+This sufficient condition is also necessary if the $S_0$-algebra $S$ is generated by the set $S_1$ of homogeneous elements of degree~$1$.
 \end{proposition}
 
 \begin{proof}
-  The condition $\widetilde{M}=0$ is equivalent to $M_{(f)}=0$ for all homogeneous $f$ in $S_+$.
-  On the other hand, if $f\in S_d$, to say that $M_{(f)}=0$ implies that, for all homogeneous $z\in M$ whose degree is some multiple of $d$, there exists a power $f^n$ such that $f^nz=0$.
-  If $M_{(f)}=0$ for all $f\in S_1$, then the condition of the statement is thus satisfied for all $f\in S_1$;
-  the condition is \emph{a fortiori} satisfied for all homogeneous $f$ in $S_+$ if $S_1$ generates $S$, since every homogeneous element of $S_+$ is then a linear combination of products of elements of $S_1$.
+The condition $\widetilde{M}=0$ is equivalent to $M_{(f)}=0$ for all homogeneous $f$ in $S_+$.
+On the other hand, if $f\in S_d$, to say that $M_{(f)}=0$ implies that, for all homogeneous $z\in M$ whose degree is some multiple of $d$, there exists a power $f^n$ such that $f^nz=0$.
+If $M_{(f)}=0$ for all $f\in S_1$, then the condition of the statement is thus satisfied for all $f\in S_1$;
+the condition is \emph{a fortiori} satisfied for all homogeneous $f$ in $S_+$ if $S_1$ generates $S$, since every homogeneous element of $S_+$ is then a linear combination of products of elements of $S_1$.
 \end{proof}
 
 \begin{proposition}[2.5.7]
 \label{II.2.5.7}
-  Let $d>0$ be an integer, and let $f\in S_d$.
-  Then, for all $n\in\bb{Z}$, the $(\sh{O}_X|D_+(f))$-module $(S(nd))^\supertilde|D_+(f)$ is canonically isomorphic to $\sh{O}_X|D_+(f)$.
+Let $d>0$ be an integer, and let $f\in S_d$.
+Then, for all $n\in\bb{Z}$, the $(\sh{O}_X|D_+(f))$-module $(S(nd))^\supertilde|D_+(f)$ is canonically isomorphic to $\sh{O}_X|D_+(f)$.
 \end{proposition}
+
+\begin{proof}
+Indeed, multiplication by the invertible element $(f/1)^n$ of $S_f$ gives a bijection from $S_{(f)}=(S_f)_0$ to $(S_f)_{nd}=(S_f(nd))_0=(S(nd)_f)_0=S(nd)_{(f)}$;
+in other words, the $S_{(f)}$-modules $S_{(f)}$ and $S(nd)_{(f)}$ are canonically isomorphic, whence the proposition.
+\end{proof}
+
+\begin{corollary}[2.5.8]
+\label{II.2.5.8}
+On the open subset $U=\bigcup_{f\in S_d}D_+(f)$, the restriction of the $\sh{O}_X$-module $(S(nd))^\supertilde$ is an invertible $(\sh{O}_X|U)$-module \sref[0]{0.5.4.1}.
+\end{corollary}
+
+\begin{corollary}[2.5.9]
+\label{II.2.5.9}
+If the ideal $S_+$ of $S$ is generated by the set $S_1$ of homogeneous elements of degree~$1$, then the $\sh{O}_X$-module $(S(n))^\supertilde$ is invertible for all $n\in\bb{Z}$.
+\end{corollary}
+
+\begin{proof}
+It suffices to remark that $X=\bigcup_{f\in S_1}D_+(f)$, by the hypothesis \sref{II.2.3.14} and to apply \sref{II.2.5.8} with $U=X$.
+\end{proof}
+
+\begin{env}[2.5.10]
+\label{II.2.5.10}
+We set, for the rest of this section,
+\[
+\label{II.2.5.10.1}
+  \sh{O}_X(n) = (S(n))^\supertilde
+\tag{2.5.10.1}
+\]
+for all $n\in\bb{Z}$, and, for every open subset $U$ of $X$, and every $(\sh{O}_X|U)$-module $\sh{F}$,
+\[
+\label{II.2.5.10.2}
+  \sh{F}(n) = \sh{F}\otimes_{\sh{O}_X|U}(\sh{O}_X(n)|U)
+\tag{2.5.10.2}
+\]
+for all $n\in\bb{Z}$.
+If the ideal $S_+$ is generated by $S_1$, then the functor $\sh{F}(n)$ is \emph{exact} in $\sh{F}$ for all $n\in\bb{Z}$, since $\sh{O}_X(n)$ is then an \emph{invertible} $\sh{O}_X$-module.
+\end{env}
+
+\begin{env}[2.5.11]
+\label{II.2.5.11}
+Let $M$ and $N$ be graded $S$-modules.
+For all $f\in S_d$ ($d>0$), we define a canonical functorial homomorphism of $S_{(f)}$-modules by
+\[
+\label{II.2.5.11.1}
+  \lambda_f\colon M_{(f)}\otimes_{S_{(f)}}N_{(f)} \to (M\otimes_S N)_{(f)}
+\tag{2.5.11.1}
+\]
+\oldpage[II]{33}
+by composing the homomorphism $M_{(f)}\otimes_{S_{(f)}}N_{(f)}\to M_f\otimes_{S_f}N_f$ (coming from the injections $M_{(f)}\to M_f$, $N_{(f)}\to N_f$, and $S_{(f)}\to S_f$) with the canonical isomorphism $M_f\otimes_{S_f}N_f\xrightarrow{\sim}(M\otimes_S N)_f$ \sref[0]{0.1.3.4}, and by noting that, by the definition of the tensor product of two graded modules, this latter isomorphism preserves degrees;
+for $x\in M_{md}$ and $y\in N_{nd}$ ($m,n\geq0$), we thus have
+\[
+  \lambda_f((x/f^m)\otimes(y/f^n)) = (x\otimes y)/f^{m+n}.
+\]
+
+It immediately follows from this definition that, if $g\in S_e$ ($e>0$), then the diagram
+\[
+  \xymatrix{
+    M_{(f)}\otimes_{S_{(f)}}N_{(f)} \ar[r]^{\lambda_f} \ar[d]
+    & (M\otimes_S N)_{(f)} \ar[d]
+  \\M_{(fg)}\otimes_{S_{(fg)}}N_{(fg)} \ar[r]_{\lambda_{fg}}
+    & (M\otimes_S N)_{(fg)}
+  }
+\]
+(where the vertical arrow on the right is the canonical homomorphism, and the one on the left comes from the canonical homomorphisms) commutes.
+Thus $\lambda$ induces a canonical functorial homomorphism of $\sh{O}_X$-modules
+\[
+\label{II.2.5.11.2}
+  \lambda\colon \widetilde{M}\otimes_{\sh{O}_X}\widetilde{N} \to (M\otimes_S N)^\supertilde.
+\tag{2.5.11.2}
+\]
+
+Consider, in particular, graded ideals $\fk{J}$ and $\fk{K}$ of $S$;
+since $\widetilde{\fk{J}}$ and $\widetilde{\fk{K}}$ are sheaves of ideals of $\sh{O}_X$, we have a canonical homomorphism $\widetilde{\fk{J}}\otimes_{\sh{O}_X}\widetilde{\fk{K}}\to\sh{O}_X$;
+the diagram
+\[
+\label{II.2.5.11.3}
+  \xymatrix{
+    \widetilde{\fk{J}}\otimes_{\sh{O}_X}\widetilde{\fk{K}} \ar[rr]^\lambda \ar[dr]
+    && (\widetilde{\fk{J}}\otimes_S\widetilde{\fk{K}})^\supertilde \ar[dl]
+  \\&\sh{O}_X&
+  }
+\tag{2.5.11.3}
+\]
+then commutes.
+Indeed, we can reduce to verifying this on each open subset $D_+(f)$ (for $f$ homogeneous in $S_+$), and this follows immediately from the definition \sref{2.5.11.1} of $\lambda_f$ and from \sref[I]{I.1.3.13}.
+
+Finally, note that, if $M$, $N$, and $P$ are graded $S$-modules, then the diagram
+\[
+\label{II.2.5.11.4}
+  \xymatrix{
+    \widetilde{M}\otimes_{\sh{O}_X}\widetilde{N}\otimes_{\sh{O}_X}\widetilde{P} \ar[r]^{\lambda\otimes1} \ar[d]_{1\otimes\lambda}
+    & (M\otimes_S N)^\supertilde\otimes_{\sh{O}_X}\widetilde{P} \ar[d]^\lambda
+  \\\widetilde{M}\otimes_{\sh{O}_X}(N\otimes_S P)^\supertilde \ar[r]_\lambda
+    & (M\otimes_S N\otimes_S P)^\supertilde
+  }
+\tag{2.5.11.4}
+\]
+\oldpage[II]{34}
+commutes.
+It again suffices to verify this on each open subset $D_+(f)$, and this follows immediately from the definitions and from \sref[I]{I.1.3.13}.
+\end{env}
