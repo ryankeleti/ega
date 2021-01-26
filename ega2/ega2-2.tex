@@ -387,7 +387,7 @@ its intersection with $S_{(f)}$ is thus a prime ideal of $S_{(f)}$, which we den
 it is the set of the $x/f^n$ for $n\geq0$ and $x\in\mathfrak{p}\cap S_{nd}$.
 We have thus defined a map
 \[
-  \psi_f\colon D_+(f)\to\Spec(S_{(f)});
+  \psi_f: D_+(f)\to\Spec(S_{(f)});
 \]
 furthermore, if $g\in S_e$ is another homogeneous element of $S_+$, then we have a commutative diagram
 \[
@@ -400,7 +400,7 @@ furthermore, if $g\in S_e$ is another homogeneous element of $S_+$, then we have
   }
 \tag{2.3.5.1}
 \]
-where the vertical arrow on the left is the inclusion, and the vertical arrow on the right is the map ${}^a\!\omega_{fg,f}$ induced by the canonical homomorphism $\omega=\omega_{fg,f}\colon S_{(f)}\to S_{(fg)}$ \sref[I]{I.1.2.1}.
+where the vertical arrow on the left is the inclusion, and the vertical arrow on the right is the map ${}^a\!\omega_{fg,f}$ induced by the canonical homomorphism $\omega=\omega_{fg,f}: S_{(f)}\to S_{(fg)}$ \sref[I]{I.1.2.1}.
 Indeed, if $x/f^n\in\omega^{-1}(\psi_{fg}(\mathfrak{p}))$, with $fg\not\in\mathfrak{p}$, then, by definition, $g^nx/(fg)^n\in\psi_{fg}(\mathfrak{p})$, so $g^nx\in\mathfrak{p}$, and so $x\in\mathfrak{p}$;
 the converse is evident.
 \end{env}
@@ -545,8 +545,8 @@ we thus conclude that $V_+(\mathfrak{J})$ is the union of the closed subsets $V_
 \label{II.2.4.1}
 Let $f$ and $g$ be homogeneous elements of $S_+$;
 consider the affine schemes $Y_f=\Spec(S_{(f)})$, $Y_g=\Spec(S_{(g)})$, and $Y_{fg}=\Spec(S_{(fg)})$.
-By \sref{II.2.2.2}, the morphism $w_{fg,f} = ({}^a\!\omega_{fg,f},\widetilde{\omega}_{fg,f})$ from $Y_{fg}$ to $Y_f$, corresponding to the canonical homomorphism $\omega_{fg,f}\colon S_{(f)}\to S_{(fg)}$, is an \emph{open immersion} \sref[I]{I.1.3.6}.
-Using the inverse homeomorphism of $\psi_f\colon D_+(f)\to Y_f$ \sref{II.2.3.6}, we can transport the affine scheme structure of $Y_f$ to $D_+(f)$;
+By \sref{II.2.2.2}, the morphism $w_{fg,f} = ({}^a\!\omega_{fg,f},\widetilde{\omega}_{fg,f})$ from $Y_{fg}$ to $Y_f$, corresponding to the canonical homomorphism $\omega_{fg,f}: S_{(f)}\to S_{(fg)}$, is an \emph{open immersion} \sref[I]{I.1.3.6}.
+Using the inverse homeomorphism of $\psi_f: D_+(f)\to Y_f$ \sref{II.2.3.6}, we can transport the affine scheme structure of $Y_f$ to $D_+(f)$;
 by the commutativity of diagram~\sref{II.2.3.5.1}, the affine scheme $D_+(fg)$ can thus be identified with the induced scheme on the open subset $D_+(fg)$ of the underlying space of the affine scheme $D_+(f)$.
 It is then clear (taking \sref{II.2.3.4} into account) that $X=\Proj(S)$ is endowed with a unique \emph{prescheme} structure, whose restriction to each $D_+(f)$ is the affine scheme that we have just defined.
 Furthermore:
@@ -689,7 +689,7 @@ Suppose that $f\in S_d$ and $g\in S_e$.
 Since $D_+(fg)$ can be identified with the prime spectrum of $(S_{(f)})_{g^d/f^e}$ by \sref{II.2.2.2}, the restriction to $D_+(fg)$ of the sheaf $(M_{(f)})^\supertilde$ on $D_+(f)$ is canonically identified with the sheaf associated to the module $(M_{(f)})_{g^d/f^e}$ \sref[I]{I.1.3.6}, and thus also with $(M_{(fg)})^\supertilde$ \sref{II.2.2.2};
 we thus conclude that there exists a canonical isomorphism
 \[
-  \theta_{g,f}\colon (M_{(f)})^\supertilde|D_+(fg) \xrightarrow{\sim} (M_{(g)})^\supertilde|D_+(fg)
+  \theta_{g,f}: (M_{(f)})^\supertilde|D_+(fg) \xrightarrow{\sim} (M_{(g)})^\supertilde|D_+(fg)
 \]
 such that, if $h$ is a third homogeneous element of $S_+$, then $\theta_{f,h}=\theta_{f,g}\circ\theta_{g,h}$ in $D_+(fgh)$.
 Consequently \sref[0]{0.3.3.1} there exists a quasi-coherent $\sh{O}_X$-module $\sh{F}$ on $X$, and, for every homogeneous $f$ in $S_+$, an isomorphism $\eta_f$ from $\sh{F}|D_+(f)$ to $(M_{f})^\supertilde$ such that $\theta_{g,f}=\eta_g\circ\eta_f^{-1}$.
@@ -717,7 +717,7 @@ but the functors $M\mapsto M_f$, $N\mapsto N_0$ (to the category of graded $S_f$
 whence the proposition.
 \end{proof}
 
-We denote by $\widetilde{u}$ the homomorphism $\widetilde{M}\to\widetilde{N}$ corresponding to a homomorphism $u\colon M\to N$ of degree~$0$.
+We denote by $\widetilde{u}$ the homomorphism $\widetilde{M}\to\widetilde{N}$ corresponding to a homomorphism $u: M\to N$ of degree~$0$.
 We immediately deduce from \sref{I.2.5.4} that the results of \sref[I]{I.1.3.9} and \sref[I]{I.1.3.10} still hold for graded $S$-modules and homomorphisms of degree~$0$ (with the sense given here to $\widetilde{M}$), with the proofs being purely formal.
 
 \begin{proposition}[2.5.5]
@@ -797,7 +797,7 @@ Let $M$ and $N$ be graded $S$-modules.
 For all $f\in S_d$ ($d>0$), we define a canonical functorial homomorphism of $S_{(f)}$-modules by
 \[
 \label{II.2.5.11.1}
-  \lambda_f\colon M_{(f)}\otimes_{S_{(f)}}N_{(f)} \to (M\otimes_S N)_{(f)}
+  \lambda_f: M_{(f)}\otimes_{S_{(f)}}N_{(f)} \to (M\otimes_S N)_{(f)}
 \tag{2.5.11.1}
 \]
 \oldpage[II]{33}
@@ -820,7 +820,7 @@ It immediately follows from this definition that, if $g\in S_e$ ($e>0$), then th
 Thus $\lambda$ induces a canonical functorial homomorphism of $\sh{O}_X$-modules
 \[
 \label{II.2.5.11.2}
-  \lambda\colon \widetilde{M}\otimes_{\sh{O}_X}\widetilde{N} \to (M\otimes_S N)^\supertilde.
+  \lambda: \widetilde{M}\otimes_{\sh{O}_X}\widetilde{N} \to (M\otimes_S N)^\supertilde.
 \tag{2.5.11.2}
 \]
 
@@ -853,4 +853,161 @@ Finally, note that, if $M$, $N$, and $P$ are graded $S$-modules, then the diagra
 \oldpage[II]{34}
 commutes.
 It again suffices to verify this on each open subset $D_+(f)$, and this follows immediately from the definitions and from \sref[I]{I.1.3.13}.
+\end{env}
+
+\begin{env}[2.5.12]
+\label{II.2.5.12}
+Under the hypotheses of \sref{II.2.5.11}, we define a functorial canonical homomorphism of $S_{(f)}$-modules
+\[
+\label{II.2.5.12.1}
+  \mu_f: (\Hom_S(M,N))_{(f)} \to \Hom_{S_{(f)}}(M_{(f)},N_{(f)})
+\tag{2.5.12.1}
+\]
+by sending $u/f^n$, where $u$ is a homomorphism of degree~$nd$, to the homomorphism $M_{(f)}\to N_{(f)}$ that sends $x/f^m$ ($x\in M_{md}$) to $u(x)/f^{m+n}$.
+For $g\in S_e$ ($e>0$), we again have a commutative diagram:
+\[
+  \xymatrix{
+    (\Hom_S(M,N))_{(f)} \ar[r]^{\mu_f} \ar[d]
+    & \Hom_{S_{(f)}}(M_{(f)},N_{(f)}) \ar[d]
+  \\(\Hom_S(M,N))_{(fg)} \ar[r]_{\mu_{fg}}
+    & \Hom_{S_{(fg)}}(M_{(fg)},N_{(fg)})
+  }
+\]
+(where the vertical arrow on the left is the canonical homomorphism, and the one on the right comes from the canonical homomorphisms).
+We thus again conclude (taking \sref[I]{I.1.3.8} into account) that the $\mu_f$ define a functorial canonical homomorphism of $\sh{O}_X$-modules
+\[
+\label{II.2.5.12.2}
+  \mu: (\Hom_S(M,N))^\supertilde \to \shHom_{\sh{O}_X}(\widetilde{M},\widetilde{N})
+\tag{2.5.12.2}
+\]
+\end{env}
+
+\begin{proposition}[2.5.13]
+\label{II.2.5.13}
+Suppose that the ideal $S_+$ is generated by $S_1$.
+Then the homomorphism $\lambda$ \sref{II.2.5.11.2} is an isomorphism;
+so too is the homomorphism $\mu$ \sref{II.2.5.12.2} if the graded $S$-module $M$ admits a finite presentation \sref{II.2.1.1}
+\end{proposition}
+
+\begin{proof}
+Since $X$ is the union of the $D_+(f)$ for $f\in S_1$ \sref{II.2.3.14}, we are led to proving that $\lambda_f$ and $\mu_f$ are isomorphisms, under the given hypotheses, whenever $f$ is homogeneous and \emph{of degree~$1$}.
+But we can then define a $\ZZ$-bilinear map $M_m\times N_n\to M_{(f)}\otimes_{S_{(f)}}N_{(f)}$ by sending $(x,y)$ to the element $(x/f^m)\otimes(y/f^n)$ (if $m<0$, we write $x/f^m$ to mean $f^{-m}x/1$);
+these maps define a $\ZZ$-linear map $M\otimes_{\bb{Z}}N\to M_{(f)}\otimes_{S_{(f)}}N_{(f)}$, and, if $s\in S_q$, this map sends $(sx)\otimes y$ to $(s/f^q)((x/f^m)\otimes(y/f^n))$ (for $x\in M_m$ and $y\in N_n$).
+We thus obtain a di-homomorphism of modules $\gamma_f: M\otimes_S N\to M_{(f)}\otimes_{S_{(f)}}N_{(f)}$, with respect to the canonical homomorphism $S\to S_{(f)}$ (sending $s\in S_q$ to $s/f^q$).
+Suppose furthermore that, for an element $\sum_i(x_i\otimes y_i)$ of $M\otimes_S N$ (with $x_i$ and $y_i$ homogeneous of degree $m_i$ and $n_i$, respectively), we have that $f^r\sum_i(x_i\otimes y_i)=0$, or, in other words, that $\sum_i(f^rx_i\otimes y_i)=0$.
+We thus deduce, by \sref[0]{0.1.3.4}, that $\sum_i(f^rx_i/f^{m_i+r})\otimes(y_i/f^{n_i})=0$, i.e. $\gamma_f(\sum_i(x_i\otimes y_i))=0$.
+Then $\gamma_f$ factors as $M\otimes_S N\to(M\otimes_S N)_f\xrightarrow{\gamma'_f}M_{(f)}\otimes_{S_{(f)}}N_{(f)}$;
+if $\lambda'_f$ is the restriction of $\gamma'$
+\oldpage[II]{35}
+to $(M\otimes_S N)_{(f)}$, then we can immediately show that $\lambda_f$ and $\lambda'_f$ are inverse $S_{(f)}$-homomorphisms, whence the first part of the proposition.
+
+To prove the second part, suppose that $M$ is the cokernel of a homomorphism $P\to Q$ of graded $S$-modules, with $P$ and $Q$ being direct sums of a finite number of modules of the form $S(n)$;
+using the left-exactness of $\Hom_S(L,N)$ in $L$, and the exactness of $M_{(f)}$ in $M$, we can immediately reduce to proving that $\mu_f$ is an isomorphism whenever $M=S(n)$.
+But, for any homogeneous $z$ in $N$, let $u_z$ be the homomorphism from $S(n)$ to $N$ such that $u_z(1)=z$;
+we immediately see that $\eta: z\to u_z$ is an isomorphism of degree~$0$ from $N(-n)$ to $\Hom_S(S(n),N)$.
+There is a corresponding isomorphism
+\[
+  \eta_f: (N(-n))_{(f)} \to (\Hom_S(S(n),N))_{(f)}.
+\]
+
+Now let $\eta'_f$ be the isomorphism $N_{(f)}\to\Hom_{S_{(f)}}(S(n)_{(f)},N_{(f)})$ that, to any $z'\in N_{(f)}$, associates the homomorphism $v_{z'}$ that is such that $v_{z'}(s/f^k)=sz'/f^{n+k}$ (for $s\in S_{n+k}=(S(n))_k$).
+We easily note that the composed map
+\[
+  (N(-n))_{(f)}
+  \xrightarrow{\eta_f} (\Hom_S(S(n),N))_{(f)}
+  \xrightarrow{\mu_f} \Hom_{S_{(f)}}(S(n)_{(f)},N_{(f)})
+  \xrightarrow{{\eta'_f}^{-1}} N_{(f)}
+\]
+is the isomorphism $z/f^h\mapsto z/f^{h-n}$ from $(N(-n))_{(f)}$ to $N_{(f)}$, and thus $\mu_f$ is an isomorphism.
+\end{proof}
+
+If the ideal $S_+$ is generated by $S_1$, then we deduce from \sref{II.2.5.13} that, for every graded ideal $\fk{J}$ of $S$, and for every graded $S$-module $M$, we have
+\[
+\label{II.2.5.13.1}
+  \widetilde{\fk{J}}\cdot\widetilde{M} = (\fk{J}\cdot M)^\supertilde
+\tag{2.5.13.1}
+\]
+up to canonical isomorphism;
+this follows from the commutativity of the diagram
+\[
+  \xymatrix{
+    \widetilde{\fk{J}}\otimes_{\sh{O}_X}\widetilde{M} \ar[rr]^\lambda \ar[dr]
+    && (\fk{J}\otimes_S M)^\supertilde
+  \\&\widetilde{M}
+  }
+\]
+which we can verify as we did for \sref{II.2.5.11.3}.
+
+\begin{corollary}[2.5.14]
+\label{II.2.5.14}
+Suppose that $S$ is generated by $S_1$.
+For any $m,n\in\bb{Z}$, we then have:
+\[
+\label{II.2.5.14.1}
+  \sh{O}_X(m)\otimes_{\sh{O}_X}\sh{O}_X(n) = \sh{O}_X(m+n)
+\tag{2.5.14.1}
+\]
+\[
+\label{II.2.5.14.2}
+  \sh{O}_X(n) = (\sh{O}_X(1))^{\otimes n}
+\tag{2.5.14.2}
+\]
+up to canonical isomorphism.
+\end{corollary}
+
+\begin{proof}
+The first equation follows from \sref{II.2.5.13} and from the existence of the canonical isomorphism $S(m)\otimes_S S(n)\xrightarrow{\sim}S(m+n)$ of degree~$0$ that sends the element $1\otimes1$ (where the first $1$ is in $(S(m))_{-m}$ and the second is in $(S(n))_{-n}$) to the element $1\in(S(m+n))_{-(m+n)}$.
+It then suffices to prove the second equation for $n=-1$, and, by \sref{II.2.5.13}, this reduces to seeing that $\Hom_S(S(1),S)$ is canonically isomorphic to $S(-1)$, which can be immediately proven by going back to the definitions \sref{II.2.1.2} and by remembering that $S(1)$ is a monogeneous $S$-module.
+\end{proof}
+
+\oldpage[II]{36}
+\begin{corollary}[2.5.15]
+\label{II.2.5.15}
+Suppose that $S$ is generated by $S_1$.
+Then, for every graded $S$-module $M$, and for every $n\in\bb{Z}$, we have
+\[
+\label{II.2.5.15.1}
+  (M(n))^\supertilde = \widetilde{M}(n)
+\tag{2.5.15.1}
+\]
+up to canonical isomorphism.
+\end{corollary}
+
+\begin{proof}
+This follows from definitions \sref{II.2.5.10.2} and \sref{II.2.5.10.1}, from Proposition~\sref{II.2.5.13}, and from the existence of a canonical isomorphism $M(n)\xrightarrow{\sim}M\otimes_S S(n)$ of degree~$0$ that, to every $z\in(M(n))_h=M_{n+h}$, associates $z\otimes1\in M_{n+h}\otimes(S(n))_{-n}\subset(M\otimes_S S(n))_h$.
+\end{proof}
+
+\begin{env}[2.5.16]
+\label{II.2.5.16}
+We denote by $S'$ the graded ring such that $S'_0=\bb{Z}$, and $S'_n=S_n$ for $n>0$.
+Then, if $f\in S_d$ ($d>0$), we have that $(S(n))_{(f)}=(S'(n))_{(f)}$ for all $n\in\bb{Z}$, since an element of $(S'(n))_{(f)}$ is of the form $x/f^k$, with $x\in S'_{n+kd}$ ($k>0$), and we can always take $k$ to be such that $n+kd\neq0$.
+Since $X=\Proj(S)$ and $X'=\Proj(S')$ are canonically identified \sref{II.2.4.7}[(ii)], we see that, for all $n\in\bb{Z}$, $\sh{O}_X(n)$ and $\sh{O}_{X'}(n)$ are the images of one another under the above identification.
+
+Note also that, for all $d>0$ and all $n\in\bb{Z}$, we have
+\[
+  (S^{(d)}(n))_h = S_{(n+h)d} = (S(nd))_{hd}
+\]
+for $f\in S_d$, and thus $(S^{(d)}(n))_{(f)}=(S(nd))_{(f)}$.
+We know that the schemes $X=\Proj(S)$ and $X^{(d)}=\Proj(S^{(d)})$ are canonically identified \sref{II.2.4.7}[(ii)];
+the above shows that, if the $S_0$-algebra $S^{(d)}$ is generated by $S_d$, then $\sh{O}_X(nd)$ and $\sh{O}_{X^{(d)}}(n)$ are the images of one another under this identification, for all $n\in\bb{Z}$.
+\end{env}
+
+\begin{proposition}[2.5.17]
+\label{II.2.5.17}
+Let $d>0$ be an integer, and let $U=\bigcup_{f\in S_d}D_+(f)$.
+Then the restriction to $U$ of the canonical homomorphism $\sh{O}_X(nd)\otimes_{\sh{O}_X}\sh{O}_X(-nd)\to\sh{O}_X$ is an isomorphism for every integer $n$.
+\end{proposition}
+
+\begin{proof}
+By \sref{II.2.5.16}, we can restrict to the case where $d=1$, and the conclusion then follows from the proof of \sref{II.2.5.13}.
+\end{proof}
+
+
+\subsection{The graded $S$-module associated to a sheaf on $\Proj(S)$}
+\label{subsection:II.2.6}
+
+\emph{We suppose all throughout this section that the ideal $S_+$ of $S$ is generated by the set $S_1$ of homogeneous elements of degree~$1$.}
+
+\begin{env}[2.6.1]
+\label{II.2.6.1}
 \end{env}

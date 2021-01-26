@@ -249,7 +249,7 @@ Here's a reference: \sref[R']{R'.x.y.z}...
 
 If you want to reference a listed item within an environment, i.e. `(i)` of `(x.y.z)`, use
 ```latex
-Here's a referenceL \sref{R.x.y.z}[(i)]
+Here's a reference: \sref{R.x.y.z}[(i)]
 ```
 
 The general syntax is
