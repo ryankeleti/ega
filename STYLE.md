@@ -221,7 +221,7 @@ if in EGA II, page 41 ends with `Hi! Schemes` and page 42 begins with `are cool.
 ### Miscellaneous
 * `\vphi` --- phi `φ`
 * `\emp` --- empty set `∅`
-* `\dual` --- for the dual sheaf, i.e., `\dual{\sh{F}}` for F<sup>v</sup>
+* `\dual` --- for the dual sheaf, i.e. `\dual{\sh{F}}` for F<sup>v</sup>
 * `\rad` --- radical
 * `\nilrad` --- nilradical
 * `\setmin` --- set minus/difference
@@ -230,8 +230,10 @@ if in EGA II, page 41 ends with `Hi! Schemes` and page 42 begins with `are cool.
 * `\RR` --- right derived R
 * `\LL` --- left derived L
 * `\kres` --- residue field k
-* `\op` --- opposite category, i.e., `\cat{C}\op` for C<sup>op</sup>
-* `\red` --- reduced, i.e., `X_\red` for X<sub>red</sub>
+* `\op` --- opposite category, i.e. `\cat{C}\op` for C<sup>op</sup>
+* `\red` --- reduced, i.e. `X_\red` for X<sub>red</sub>
+* `\supertilde` --- for when `\widetilde{}` is used as a subscript
+* `\bullet` --- to be used instead of `*` when denoting a grading, e.g. `A_\bullet` instead of `A_*` for a graded module
 
 ## References
 
