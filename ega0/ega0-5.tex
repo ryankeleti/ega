@@ -310,29 +310,29 @@ We conclude that if $\sh{L}$ is invertible, then $f^*(\sh{L}^{\otimes n})$ canon
 
 \begin{env}[5.4.6]
 \label{0.5.4.6}
-Let $\sh{L}$ be an invertible $\sh{O}_X$-module; we denote by $\Gamma_*(X,\sh{L})$ or simply $\Gamma_*(\sh{L})$ the abelian group direct sum $\bigoplus_{n\in\bb{Z}}\Gamma(X,\sh{L}^{\otimes n})$;
+Let $\sh{L}$ be an invertible $\sh{O}_X$-module; we denote by $\Gamma_\bullet(X,\sh{L})$ or simply $\Gamma_\bullet(\sh{L})$ the abelian group direct sum $\bigoplus_{n\in\bb{Z}}\Gamma(X,\sh{L}^{\otimes n})$;
 we equip it with the structure of a \emph{graded ring}, by corresponding to a pair $(s_n,s_m)$, where $s_n\in\Gamma(X,\sh{L}^{\otimes n})$, $s_m\in\Gamma(X,\sh{L}^{\otimes m})$, the section of $\sh{L}^{\otimes(n+m)}$ over $X$ which corresponds canonically (5.4.4.1) to the section $s_n\otimes s_m$ of $\sh{L}^{\otimes n}\otimes_{\sh{O}_X}\sh{L}^{\otimes m}$;
 the associativity of this multiplication is verified in an immediate way.
-It is clear that $\Gamma_*(X,\sh{L})$ is a covariant functor in $\sh{L}$, with values in the category of graded rings.
+It is clear that $\Gamma_\bullet(X,\sh{L})$ is a covariant functor in $\sh{L}$, with values in the category of graded rings.
 
 If now $\sh{F}$ is any $\sh{O}_X$-module, then we set
 \[
-  \Gamma_*(\sh{L},\sh{F})=\bigoplus_{n\in\bb{Z}}\Gamma(X,\sh{F}\otimes_{\sh{O}_X}\sh{L}^{\otimes n}).
+  \Gamma_\bullet(\sh{L},\sh{F})=\bigoplus_{n\in\bb{Z}}\Gamma(X,\sh{F}\otimes_{\sh{O}_X}\sh{L}^{\otimes n}).
 \]
-We equip this abelian group with the structure of a \emph{graded module} over the graded ring $\Gamma_*(\sh{L})$ in the following way:
+We equip this abelian group with the structure of a \emph{graded module} over the graded ring $\Gamma_\bullet(\sh{L})$ in the following way:
 to a pair $(s_n,u_m)$, where $s_n\in\Gamma(X,\sh{L}^{\otimes n})$ and $u_m\in\Gamma(X,\sh{F}\otimes_{\sh{O}_X}\sh{L}^{\otimes m})$, we associate the section of $\sh{F}\otimes_{\sh{O}_X}\sh{L}^{\otimes(m+n)}$ which canonically corresponds (5.4.4.1) to $s_n\otimes u_m$;
 the verification of the module axioms are immediate.
-For $X$ and $\sh{L}$ fixed, $\Gamma_*(\sh{L},\sh{F})$ is a covariant functor in $\sh{F}$ with values in the category of graded $\Gamma_*(\sh{L})$-modules;
+For $X$ and $\sh{L}$ fixed, $\Gamma_\bullet(\sh{L},\sh{F})$ is a covariant functor in $\sh{F}$ with values in the category of graded $\Gamma_\bullet(\sh{L})$-modules;
 for $X$ and $\sh{F}$ fixed, it is a covariant functor in $\sh{L}$ with values in the category of abelian groups.
 
-If $f:Y\to X$ is a morphism of ringed spaces, the canonical homomorphism (4.4.3.2) $\rho:\sh{L}^{\otimes n}\to f_*(f^*(\sh{L}^{\otimes n}))$ defines a homomorphism of abelian groups $\Gamma(X,\sh{L}^{\otimes n})\to\Gamma(Y,f^*(\sh{L}^{\otimes n}))$, and as $f^*(\sh{L}^{\otimes n})=(f^*(\sh{L}))^{\otimes n})$, it follows from the definitions of the canonical homomorphisms (4.4.3.2) and (5.4.4.1) that the above homomorphisms define a \emph{functorial homomorphism of graded rings $\Gamma_*(\sh{L})\to\Gamma_*(f^*(\sh{L}))$}.
+If $f:Y\to X$ is a morphism of ringed spaces, the canonical homomorphism (4.4.3.2) $\rho:\sh{L}^{\otimes n}\to f_*(f^*(\sh{L}^{\otimes n}))$ defines a homomorphism of abelian groups $\Gamma(X,\sh{L}^{\otimes n})\to\Gamma(Y,f^*(\sh{L}^{\otimes n}))$, and as $f^*(\sh{L}^{\otimes n})=(f^*(\sh{L}))^{\otimes n})$, it follows from the definitions of the canonical homomorphisms (4.4.3.2) and (5.4.4.1) that the above homomorphisms define a \emph{functorial homomorphism of graded rings $\Gamma_\bullet(\sh{L})\to\Gamma_\bullet(f^*(\sh{L}))$}.
 The same canonical homomorphism \sref{0.4.4.3} similarly defines a homomorphism of abelian groups $\Gamma(X,\sh{F}\otimes_{\sh{O}_X}\sh{L}^{\otimes n})\to\Gamma(Y,f^*(\sh{F}\otimes_{\sh{O}_X}\sh{L}^{\otimes n}))$, and as
 \[
   f^*(\sh{F}\otimes_{\sh{O}_X}\sh{L}^{\otimes n})=f^*(\sh{F})\otimes_{\sh{O}_Y}(f^*(\sh{L}))^{\otimes n}
   \quad(4.3.3.1),
 \]
 \oldpage[0\textsubscript{I}]{51}
-these homomorphism (for $n$ variable) define a \emph{di-homomorphism of graded modules $\Gamma_*(\sh{L},\sh{F})\to\Gamma_*(f^*(\sh{L}),f^*(\sh{F}))$}.
+these homomorphism (for $n$ variable) define a \emph{di-homomorphism of graded modules $\Gamma_\bullet(\sh{L},\sh{F})\to\Gamma_\bullet(f^*(\sh{L}),f^*(\sh{F}))$}.
 \end{env}
 
 \begin{env}[5.4.7]
