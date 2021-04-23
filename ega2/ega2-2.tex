@@ -1149,3 +1149,21 @@ over $D_+(f)$, i.e. the restriction of $z$ to $D_+(f)$, which finishes the proof
 
 \subsection{Finiteness conditions}
 \label{subsection:II.2.7}
+
+\begin{proposition}[2.7.1]
+\label{II.2.7.1}
+\begin{enumerate}
+  \item[{\rm(i)}] If $S$ is a graded Noetherian ring, then $X=\Proj(S)$ is a Noetherian scheme.
+  \item[{\rm(ii)}] If $S$ is a graded $A$-algebra of finite type, then $X=\Proj(S)$ is a scheme of finite type over $Y=\Spec(A)$.
+\end{enumerate}
+\end{proposition}
+
+\oldpage[II]{39}
+\begin{proof}
+\begin{enumerate}
+  \item[{\rm(i)}] If $S$ is Noetherian, then the ideal $S_+$ admits a finite system of homogeneous generators $f_i$ ($1\leq i\leq p$), thus \sref{II.2.3.14} the underlying space $X$ is the union of the $D_+(f_i)=\Spec(S_{(f_i)})$, and everything then reduces to showing that each of the $S_{(f_i)}$ is Noetherian, which follows from \sref{II.2.2.6}.
+  \item[{\rm(ii)}] The hypothesis implies that $S_0$ is an $A$-algebra of finite type, and that $S$ is an $S_0$-algebra of finite type, and so $S_+$ is an ideal of finite type \sref{II.2.1.4}.
+    We are thus reduced, as in (i), to showing that $S_{(f)}$ is an $A$-algebra of finite type for all $f\in S_d$.
+    By \sref{II.2.2.5}, it suffices to show that $S^{(d)}$ is an $A$-algebra of finite type, which follows from \sref{II.2.1.6}.
+\end{enumerate}
+\end{proof}
