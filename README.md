@@ -29,13 +29,13 @@ Here is the current status of the translation, along with who is currently worki
 
 - **Introduction (EGA I)** _(proofread by @thosgood)_ ![introstatus](https://img.shields.io/badge/-5%2F5-brightgreen)
 - **Preliminaries (EGA 0_I)** _(proofread by @thosgood)_ ![EGA0(I)status](https://img.shields.io/badge/-70%2F70-brightgreen)
-    + [x] 1. Rings of fractions _(@ryankeleti)_
-    + [x] 2. Irreducible spaces. Noetherian spaces _(@ryankeleti)_
-    + [x] 3. Supplement on sheaves _(@ryankeleti)_
-    + [x] 4. Ringed spaces _(@ryankeleti)_
-    + [x] 5. Quasi-coherent sheaves and coherent sheaves _(@ryankeleti)_
-    + [x] 6. Flatness _(@ryankeleti)_
-    + [x] 7. Adic rings _(@ryankeleti)_
+    + 1. Rings of fractions _(@ryankeleti)_
+    + 2. Irreducible spaces. Noetherian spaces _(@ryankeleti)_
+    + 3. Supplement on sheaves _(@ryankeleti)_
+    + 4. Ringed spaces _(@ryankeleti)_
+    + 5. Quasi-coherent sheaves and coherent sheaves _(@ryankeleti)_
+    + 6. Flatness _(@ryankeleti)_
+    + 7. Adic rings _(@ryankeleti)_
 - **Preliminaries (EGA 0_III)** ![EGA0(III)status](https://img.shields.io/badge/-20%2F75-orange)
     + [x] 8. Representable functors _(@ryankeleti)_
     + [x] 9. Constructible sets _(@ryankeleti)_
@@ -56,17 +56,17 @@ Here is the current status of the translation, along with who is currently worki
     + [ ] 22. Differential criteria for smoothness and regularity (~30 pages)
     + [ ] 23. Japanese rings (~5 pages)
 - **The language of schemes (EGA I)** _(proofread by @thosgood)_ ![EGAIstatus](https://img.shields.io/badge/-136%2F136-brightgreen)
-    + [x] 0. Summary
-    + [x] 1. Affine schemes _(@ryankeleti)_
-    + [x] 2. Preschemes and their morphisms _(@thosgood)_
-    + [x] 3. Products of preschemes _(@thosgood, @ryankeleti)_
-    + [x] 4. Subpreschemes and immersions _(@ryankeleti)_
-    + [x] 5. Reduced preschemes; separation condition _(@thosgood)_
-    + [x] 6. Finiteness conditions _(@thosgood)_
-    + [x] 7. Rational maps _(@thosgood)_
-    + [x] 8. Chevalley schemes _(@thosgood)_
-    + [x] 9. Supplement on quasi-coherent sheaves _(@thosgood)_
-    + [x] 10. Formal schemes _(@thosgood, @ryankeleti)_
+    + 0. Summary
+    + 1. Affine schemes _(@ryankeleti)_
+    + 2. Preschemes and their morphisms _(@thosgood)_
+    + 3. Products of preschemes _(@thosgood, @ryankeleti)_
+    + 4. Subpreschemes and immersions _(@ryankeleti)_
+    + 5. Reduced preschemes; separation condition _(@thosgood)_
+    + 6. Finiteness conditions _(@thosgood)_
+    + 7. Rational maps _(@thosgood)_
+    + 8. Chevalley schemes _(@thosgood)_
+    + 9. Supplement on quasi-coherent sheaves _(@thosgood)_
+    + 10. Formal schemes _(@thosgood, @ryankeleti)_
 - **Elementary global study of some classes of morphisms (EGA II)** ![EGAIIstatus](https://img.shields.io/badge/-130%2F205-yellow)
     + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
     + [x] 1. Affine morphisms _(@ryankeleti)_
