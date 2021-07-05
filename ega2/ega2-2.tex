@@ -6,7 +6,7 @@
 
 \begin{notation}[2.1.1]
 \label{II.2.1.1}
-Given a \emph{positively-graded} ring $S$, we denote by $S_n$ the subset of $S$ consisting of homogeneous elements of degree $n$ ($n\geq 0$), by $S_+$ the (direct) sum of the $S_n$ for $n>0$;
+Given a \emph{positively graded} ring $S$, we denote by $S_n$ the subset of $S$ consisting of homogeneous elements of degree $n$ ($n\geq 0$), by $S_+$ the (direct) sum of the $S_n$ for $n>0$;
 we have $1\in S_0$, $S_0$ is a subring of $S$, $S_+$ is a graded ideal of $S$, and $S$ is the direct sum of $S_0$ and $S_+$.
 If $M$ is a \emph{graded} module over $S$ (with positive or negative degrees), we similarly denote by $M_n$ the $S_0$-module consisting of homogeneous elements of $M$ of degree $n$ (with $n\in\bb{Z}$).
 
@@ -576,7 +576,7 @@ we immediately see that these affine schemes are isomorphic to $K[T]$, and that 
 
 \begin{proposition}[2.4.4]
 \label{II.2.4.4}
-Let $S$ be a positively-graded ring, and let $X$ be the scheme $\Proj(S)$.
+Let $S$ be a positively graded ring, and let $X$ be the scheme $\Proj(S)$.
 \begin{enumerate}
   \item[{\rm(i)}] If $\mathfrak{N}_+$ is the nilradical of $S_+$ \sref{II.2.1.10}, then the scheme $X_\red$ is canonically isomorphic to $\Proj(S/\mathfrak{N}_+)$;
     in particular, if $S$ is essentially reduced, then $\Proj(S)$ is reduced.
@@ -639,7 +639,7 @@ is commutative, for homogeneous $f,g$ in $S_+$.
 
 \begin{proposition}[2.4.7]
 \label{II.2.4.7}
-Let $S$ be a positively-graded ring.
+Let $S$ be a positively graded ring.
 \begin{enumerate}
   \item[{\rm(i)}] For every integer $d>0$, there exists a canonical isomorphism from the scheme $\Proj(S)$ to the scheme $\Proj(S^{(d)})$.
   \item[{\rm(ii)}] Let $S'$ be the graded ring such that $S_0=\bb{Z}$ and $S'_n=S_n$ (considered as a $\bb{Z}$-module) for $n>0$.
@@ -1317,3 +1317,47 @@ But, by the definition of $N$, and by \sref{II.2.5.4}, the restriction of the is
 
 \subsection{Functorial behaviour}
 \label{subsection:II.2.8}
+
+\begin{env}[2.8.1]
+\label{II.2.8.1}
+Let $S$ and $S'$ be positively graded rings, and $\varphi:S'\to S$ a homomorphism of graded rings.
+We denote by $G(\varphi)$ the open subset of $X=\Proj(S)$ given by the complement of $V_+(\varphi(S'_+))$, or, equivalently, the union of the $D_+(\varphi(f'))$ where $f'$ runs over the set of homogeneous elements of $S'_+$.
+The restriction to $G(\varphi)$ of the continuous map ${}^a\varphi$ from $\Spec(S)$ to $\Spec(S')$ \sref[I]{I.1.2.1} is thus a continuous map from $G(\varphi)$ to $\Proj(S')$, which we again denote, with an abuse of language, by ${}^a\varphi$.
+If $f'\in S'_+$ is homogeneous, then
+\[
+\label{II.2.8.1.1}
+  {}^a\varphi^{-1}(D_+(f')) = D_+(\varphi(f'))
+\tag{2.8.1.1}
+\]
+taking into account the fact that ${}^a\varphi$ sends $G(\varphi)$ to $\Proj(S')$, as well as \sref[I]{I.1.2.2.2}.
+The homomorphism $\varphi$ also canonically defines (with the same notation) a homomorphism of graded rings $S'_{f'}\to S_f$, whence, by restriction to the degree~$0$ elements,
+\oldpage[II]{42}
+a homomorphism $S'_{(f')}\to S_{(f)}$, which we denote by $\varphi_{(f)}$;
+there is a corresponding \sref[I]{I.1.6.1} morphism of affine schemes $({}^a\varphi_{(f)},\widetilde{\varphi}_{(f)}):\Spec(S_{(f)})\to\Spec(S'_{(f')})$.
+If we canonically identify $\Spec(S_{(f)})$ with the scheme induced by $\Proj(S)$ on $D_+(f)$ \sref{II.2.3.6}, then we have defined a morphism $\Phi_f:D_+(f)\to D_+(f')$, and ${}^a\varphi_{(f)}$ is identified with the restriction of ${}^a\varphi$ to $D_+(f)$.
+It is also immediate that, if $g'$ is another homogeneous element of $S'_+$, and $g=\varphi(g')$, then the diagram
+\[
+  \xymatrix{
+    D_+(f) \ar[r]^{\Phi_f}
+    & D_+(f')
+  \\D_+(fg) \ar[u] \ar[r]_{\Phi_{fg}}
+    & D_+(f'g')
+  }
+\]
+commutes, by the fact that the diagram
+\[
+  \xymatrix{
+    S'_{(f')} \ar[r]^{\varphi_{(f)}} \ar[d]_{\omega_{f'g',f'}}
+    & S_{(f)} \ar[d]^{\omega_{fg,f}}
+  \\S'_{(f'g')} \ar[r]_{\varphi_{(fg)}}
+    & S_{(fg)}
+  }
+\]
+commutes.
+Taking the definition of $G(\varphi)$, along with \sref{II.2.3.3.2}, we thus see that:
+\end{env}
+
+\begin{proposition}[2.8.2]
+\label{II.2.8.2}
+Given a homomorphism of graded rings $\varphi\colon S'\to S$, there exists exactly one morphism $({}^a\varphi,\widetilde{\varphi})$ from the induced prescheme $G(\varphi)$ to $\Proj(S')$ (said to be \emph{associated to $\varphi$}, and denoted by $\Proj(\varphi)$) such that, for every homogeneous element $f'\in S'_+$, the restriction of this morphism to $D_+(\varphi(f'))$ agrees with the morphism associated to the homomorphism $S'_{(f')}\to S_{(\varphi(f'))}$ corresponding to $\varphi$.
+\end{proposition}
