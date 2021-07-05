@@ -1359,5 +1359,45 @@ Taking the definition of $G(\varphi)$, along with \sref{II.2.3.3.2}, we thus see
 
 \begin{proposition}[2.8.2]
 \label{II.2.8.2}
-Given a homomorphism of graded rings $\varphi\colon S'\to S$, there exists exactly one morphism $({}^a\varphi,\widetilde{\varphi})$ from the induced prescheme $G(\varphi)$ to $\Proj(S')$ (said to be \emph{associated to $\varphi$}, and denoted by $\Proj(\varphi)$) such that, for every homogeneous element $f'\in S'_+$, the restriction of this morphism to $D_+(\varphi(f'))$ agrees with the morphism associated to the homomorphism $S'_{(f')}\to S_{(\varphi(f'))}$ corresponding to $\varphi$.
+Given a homomorphism of graded rings $\varphi: S'\to S$, there exists exactly one morphism $({}^a\varphi,\widetilde{\varphi})$ from the induced prescheme $G(\varphi)$ to $\Proj(S')$ (said to be \emph{associated to $\varphi$}, and denoted by $\Proj(\varphi)$) such that, for every homogeneous element $f'\in S'_+$, the restriction of this morphism to $D_+(\varphi(f'))$ agrees with the morphism associated to the homomorphism $S'_{(f')}\to S_{(\varphi(f'))}$ corresponding to $\varphi$.
 \end{proposition}
+
+\begin{proof}
+With the above notation, if $f'\in S'_d$, then the diagram
+\[
+\label{II.2.8.2.1}
+  \xymatrix{
+    S'_{(f')} \ar[r]^{\varphi_{(f)}} \ar[d]_{\sim}
+    & S_{(f)} \ar[d]^{\sim}
+  \\{S'}^{(d)}/(f'-1){S'}^{(d)} \ar[r]
+    & S^{(d)}/(f-1)S^{(d)}
+  }
+\tag{2.8.2.1}
+\]
+commutes (the vertical arrows being the isomorphisms \sref{II.2.2.5}).
+\end{proof}
+
+\begin{corollary}[2.8.3]
+\label{II.2.8.3}
+\begin{enumerate}
+  \item[{\rm(i)}] The morphism $\Proj(\varphi)$ is affine.
+  \item[{\rm(ii)}] If $\Ker(\varphi)$ is nilpotent (and, in particular, if $\varphi$ is injective), then the morphism $\Proj(\varphi)$ is dominant.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+Claim~(i) is an immediate consequence of \sref{II.2.8.2} and \sref{II.2.8.1.1}.
+Claim~(ii) follows since, if $\Ker(\varphi)$ is nilpotent, then, for every homogeneous $f'$ in $S'_+$, we immediately see that $\Ker(\varphi_f)$ (with $f=\varphi(f')$) is nilpotent, and thus so too is $\Ker(\varphi_{(f)})$;
+we then apply \sref{II.2.8.2} and \sref[I]{I.1.2.7}
+\end{proof}
+
+\oldpage[II]{43}
+We note that there are, in general, morphisms from $\Proj(S)$ to $\Proj(S')$ that are not affine, and that thus do not come from homomorphisms of graded rings $S'\to S$;
+an example is the structure morphism $\Proj(S)\to\Spec(A)$ when $A$ is a field ($\Spec(A)$ thus being identified with $\Proj(A[T])$, cf.~\sref{II.3.1.7});
+indeed, this follows from \sref[I]{I.2.3.2}.
+
+\begin{env}[2.8.4]
+\label{II.2.8.4}
+Let $S''$ be another positively graded ring, and $\varphi':S''\to S'$ a homomorphism of graded rings, and set $\varphi''=\varphi\circ\varphi'$.
+By \sref{II.2.8.1.1} and the formula ${}^a\varphi''=({}^a\varphi')\circ({}^a\varphi)$, we immediately see that $G(\varphi'')\subset G(\varphi)$, and that, if $\Phi$, $\Phi'$, and $\Phi''$ are the morphisms associated to $\varphi$, $\varphi'$, and $\varphi''$ (respectively), then $\Phi''=\Phi'\circ(\Phi|G(\varphi''))$.
+\end{env}
