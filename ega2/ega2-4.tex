@@ -65,7 +65,7 @@ for all $n\in\bb{Z}$, whence, letting $P=\bb{P}(\sh{E})$ and $P'=\bb{P}(\sh{E}')
 \begin{proposition}[4.1.4]
 \label{II.4.1.4}
 Let $\sh{L}$ be an invertible $\sh{O}_Y$-module.
-For every quasi-coherent $\sh{O}_Y$-module $\sh{E}$, there exists a canonical $Y$-isomorphism $i_\sh{L}:\bb{P}(\sh{E})\simto\bb{P}(\sh{E}\otimes\sh{L})$;
+For every quasi-coherent $\sh{O}_Y$-module $\sh{E}$, there exists a canonical $Y$-isomorphism $i_\sh{L}:\bb{P}(\sh{E})\xrightarrow{\sim}\bb{P}(\sh{E}\otimes\sh{L})$;
 furthermore, if we let $P=\bb{P}(\sh{E})$ and $Q=\bb{P}(\sh{E}\otimes\sh{L})$, then $i_\sh{L}^*(\sh{O}_Q(n))$ is canonically isomorphic to $\sh{O}_P(n)\otimes_Y\sh{L}^{\otimes n}$ for all $n\in\bb{Z}$.
 \end{proposition}
 
@@ -80,11 +80,11 @@ by sending $(x_1\otimes y_1)\ldots(x_n\otimes y_n)$ to the element
   \qquad\mbox{($x_i\in E$, $y_i\in L$, for $i\leq i\leq n$);}
 \]
 we can immediately see (by restricting to the case where $L=A$) that this homomorphism is in fact an isomorphism.
-We thus obtain a canonical isomorphism of graded $A$-algebras $\bb{S}_A(E\otimes L)\simto\bigoplus_{n\geq0}\bb{S}_n(E)\otimes L^{\otimes n}$.
+We thus obtain a canonical isomorphism of graded $A$-algebras $\bb{S}_A(E\otimes L)\xrightarrow{\sim}\bigoplus_{n\geq0}\bb{S}_n(E)\otimes L^{\otimes n}$.
 By returning to the conditions of \sref{II.4.1.4}, the above remarks allow us to define a canonical isomorphism of graded $\sh{O}_Y$-algebras
 \[
 \label{II.4.1.4.1}
-  \bb{S}_{\sh{O}_Y}(\sh{E}\otimes_{\sh{O}_Y}\sh{L}) \simto \bigoplus_{n\geq0}\bb{S}_n(\sh{E})\otimes_{\sh{O}_Y}\sh{L}^{\otimes n}
+  \bb{S}_{\sh{O}_Y}(\sh{E}\otimes_{\sh{O}_Y}\sh{L}) \xrightarrow{\sim} \bigoplus_{n\geq0}\bb{S}_n(\sh{E})\otimes_{\sh{O}_Y}\sh{L}^{\otimes n}
   \tag{4.1.4.1}
 \]
 by defining this isomorphism as an isomorphism of presheaves, and taking into account \sref{II.1.7.4}, \sref[I]{I.1.3.9}, and \sref[I]{I.1.3.12}.
@@ -172,7 +172,7 @@ Furthermore, with the notation of \sref{II.4.2.1} and \sref{II.4.2.2}:
 
 \begin{proposition}[4.2.3]
 \label{II.4.2.3}
-Given a morphism $q:X\to Y$ and a quasi-coherent $\sh{O}_Y$-module $\sh{E}$, maps $r\to(\sh{L}_r,\vphi_r)$ and $(\sh{L},\vphi)\to r_{\sh{L},\vphi}$ give a bijective correspondence between the set of $Y$-morphisms $r:X\to\bb{P}(\sh{E})$ and the set of equivalence classes of pairs $(\sh{L},\vphi)$ of an invertible $\sh{O}_X$-module $\sh{L}$ and a surjective homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$, where such pairs $(\sh{L},\vphi)$ and $(\sh{L}',\vphi')$ are defined to be equivalent if there exists an $\sh{O}_X$-isomorphism $\tau:\sh{L}\simto\sh{L}'$ such that $\vphi'=\tau\circ\vphi$.
+Given a morphism $q:X\to Y$ and a quasi-coherent $\sh{O}_Y$-module $\sh{E}$, maps $r\to(\sh{L}_r,\vphi_r)$ and $(\sh{L},\vphi)\to r_{\sh{L},\vphi}$ give a bijective correspondence between the set of $Y$-morphisms $r:X\to\bb{P}(\sh{E})$ and the set of equivalence classes of pairs $(\sh{L},\vphi)$ of an invertible $\sh{O}_X$-module $\sh{L}$ and a surjective homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$, where such pairs $(\sh{L},\vphi)$ and $(\sh{L}',\vphi')$ are defined to be equivalent if there exists an $\sh{O}_X$-isomorphism $\tau:\sh{L}\xrightarrow{\sim}\sh{L}'$ such that $\vphi'=\tau\circ\vphi$.
 \end{proposition}
 
 \begin{proof}
@@ -181,7 +181,7 @@ it follows immediately from \sref{II.4.2.1} and \sref{II.3.7.2} that the morphis
 Conversely, take a pair $(\sh{L},\vphi)$ and construct
 \oldpage[II]{74}
 $r''=r_{\sh{L},\vphi}$, and then $\sh{L}_{r''}$ and $\vphi_{r''}$;
-we will show that there exists a canonical isomorphism $\tau:\sh{L}_{r''}\simto\sh{L}$ such that $\vphi=\tau\circ\vphi_{r''}$;
+we will show that there exists a canonical isomorphism $\tau:\sh{L}_{r''}\xrightarrow{\sim}\sh{L}$ such that $\vphi=\tau\circ\vphi_{r''}$;
 to define it, we can restrict to the case where $Y=\Spec(A)$ and $X=\Spec(B)$ are affine, and (with the notation of \sref{II.4.2.1} and \sref{II.3.7.2}) associate to each element $(x/1)\otimes1$ of $L_{r''}$ (where $x\in E$) the element $v_1(x)c$ of $L$.
 We immediately see that $\tau$ does not depend on the chosen generator $c$ of $L$;
 since $v_1$ is surjective by hypothesis, to prove that $\tau$ is an isomorphism it suffices to to show that, if $x/1=0$ in $(S(1))_{(f)}$, then $v_1(x)/1=0$ in $B_g$;
@@ -346,7 +346,7 @@ for $x\in E$ and $y\in F$.
 It follows from \sref{II.4.2.3} that we have a canonical isomorphism
 \[
 \label{II.4.3.2.1}
-  \tau: \varsigma^*(\sh{O}_P(1)) \simto \sh{O}_{P_1}(1)\otimes_Y\sh{O}_{P_2}(1)
+  \tau: \varsigma^*(\sh{O}_P(1)) \xrightarrow{\sim} \sh{O}_{P_1}(1)\otimes_Y\sh{O}_{P_2}(1)
   \tag{4.3.2.1}
 \]
 where we let $P=\bb{P}(\sh{E}\otimes_{\sh{O}_Y}\sh{F})$.

@@ -235,7 +235,6 @@ if in EGA II, page 41 ends with `Hi! Schemes` and page 42 begins with `are cool.
 * `\supertilde` --- for when `\widetilde{}` is used as a subscript, i.e. `\sh{F}\supertilde` instead of `\sh{F}^\sim` (note the lack of `^`)
 * `\bullet` --- to be used instead of `*` when denoting a grading, e.g. `A_\bullet` instead of `A_*` for a graded module
 * `\widehat` and `\widetilde` --- to be used instead of `\hat` and `\tilde` (which have been redefined to mean this anyway)
-* `\simto` --- isomorphic to (`\xrightarrow{\sim}`)
 
 ## References
 
