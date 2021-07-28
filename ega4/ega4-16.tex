@@ -66,8 +66,8 @@ which coincide in degrees $0$ and $1$ with the identities.
 \begin{env}[16.1.4]
 \label{IV.16.1.4}
 The example \sref{IV.16.1.3}[(ii)] shows that in general the $\sh{O}_{Y^{(n)}}$ are \emph{not canonically endowed with a structure of an $\sh{O}_Y$-module}, or \emph{a fortiori} with a structure of an $\sh{O}_Y$-algebra.
-The data of such structure is equivalent to the data of a homomorphism of sheaves of rings $\lambda_n:\sh{O}_Y \to \sh{O}_{Y^{(n)}}$, right inverse to the augmentation morphism $\varphi_{0n}$;
-it is also equivalent to the data of a morphism of ringed spaces $(1_Y, \lambda_n): Y^{(n)} \to Y$ left inverse to the canonical morphism $(1_Y, \varphi_{0n}): Y \to Y^{(n)}$.
+The data of such structure is equivalent to the data of a homomorphism of sheaves of rings $\lambda_n:\sh{O}_Y \to \sh{O}_{Y^{(n)}}$, right inverse to the augmentation morphism $\vphi_{0n}$;
+it is also equivalent to the data of a morphism of ringed spaces $(1_Y, \lambda_n): Y^{(n)} \to Y$ left inverse to the canonical morphism $(1_Y, \vphi_{0n}): Y \to Y^{(n)}$.
 \end{env}
 
 \begin{proposition}[16.1.5]
@@ -78,7 +78,7 @@ Then:
   \item[{\rm(i)}] $\shGr_\bullet(f)$ is a quasi-coherent graded $\sh{O}_Y$-algebra.
 \oldpage[IV-4]{7}
   \item[{\rm(ii)}] The $Y^{(n)}$ are preschemes, canonically isomorphic to subpreschemes of $X$.
-  \item[{\rm(iii)}] Every homomorphism of sheaves of rings $\lambda_n: \sh{O}_Y \to \sh{O}_{Y^{(n)}}$, right inverse to the augmentation homomorphism $\varphi_{0n}$, makes the $\sh{O}_{Y^{(n)}}$ and $\sh{O}_{Y^{(k)}}$ for $k\leq n$ quasi-coherent $\sh{O}_Y$-algebras;
+  \item[{\rm(iii)}] Every homomorphism of sheaves of rings $\lambda_n: \sh{O}_Y \to \sh{O}_{Y^{(n)}}$, right inverse to the augmentation homomorphism $\vphi_{0n}$, makes the $\sh{O}_{Y^{(n)}}$ and $\sh{O}_{Y^{(k)}}$ for $k\leq n$ quasi-coherent $\sh{O}_Y$-algebras;
   the $\sh{O}_Y$-module structures induced from the above structures on the $\shGr_k(f)$ for $k \leq n$ coincide with the ones defined in \sref{IV.16.1.2}.
 \end{enumerate}
 \end{proposition}
@@ -86,7 +86,7 @@ Then:
 \begin{proof}
 (i) Since the question is local on $X$ and $Y$, we can reduce to the case where $Y$ is a closed subpreschemes of $X$ defined by an quasi-coherent ideal $\sh{I}$ of $\sh{O}_X$;
 since $\sh{O}_Y$ is the restriction to $Y$ of $\sh{O}_X/\sh{I}$ the assertion (i) is evident, and $Y^{(n)}$ is the closed subprescheme of $X$ defined by the quasi-coherent ideal $\sh{I}^{n+1}$ of $\sh{O}_X$.
-Finally, to prove (iii) we notice that the data of $\lambda_n$ makes the ideal $\sh{I}/\sh{I}^n$ of the augmentation $\varphi_{0n}$ and their quotients $\sh{I}/\sh{I}^{k+1} (1\leq k \leq n)$ $\sh{O}_Y$-modules, and it suffices to prove by induction on $k$ that the $\sh{I}/\sh{I}^{k+1}$ are quasi-coherent $\sh{O}_Y$-modules and the structure of quotient $\sh{O}_Y$-module induced on $\sh{I}^k/\sh{I}^{k+1}$ is the same as defined on \sref{IV.16.1.2}.
+Finally, to prove (iii) we notice that the data of $\lambda_n$ makes the ideal $\sh{I}/\sh{I}^n$ of the augmentation $\vphi_{0n}$ and their quotients $\sh{I}/\sh{I}^{k+1} (1\leq k \leq n)$ $\sh{O}_Y$-modules, and it suffices to prove by induction on $k$ that the $\sh{I}/\sh{I}^{k+1}$ are quasi-coherent $\sh{O}_Y$-modules and the structure of quotient $\sh{O}_Y$-module induced on $\sh{I}^k/\sh{I}^{k+1}$ is the same as defined on \sref{IV.16.1.2}.
 The second assertion is immediate, $\sh{I}^k/\sh{I}^{k+1}$ being killed by $\sh{I}/\sh{I}^{n+1}$;
 the first result, by induction on $k$, is trivial for $k=1$ and for $\sh{I}/\sh{I}^{k+1}$ being an extension of $\sh{I}/\sh{I}^{k}$ by $\sh{I}^k/\sh{I}^{k+1}$ \sref{III.1.4.17}.
 \end{proof}
@@ -103,8 +103,8 @@ Indeed, with the notation from the proof of \sref{IV.16.1.5}, $\sh{I}$ is an ide
 \begin{corollary}[16.1.7]
 \label{IV.16.1.7}
 Under the general hypotheses of \sref{IV.16.1.5}, let $g:X \to Y$ be a morphism of preschemes, left inverse to $f$.
-Therefore, for every $n$, the composite morphism $(1, \lambda_n): Y^{(n)}\xrightarrow{h_n} X \xrightarrow{g} Y$ defines a homomorphism of sheaves of rings $\lambda_n: \sh{O}_Y \to \sh{O}_{Y^{(n)}}$ right inverse to the augmentation $\varphi_{0n}$, making $\sh{O}_{Y^{(n)}}$ a quasi-coherent $\sh{O}_Y$-algebra;
-via these homomorphisms, the transition homomorphism $\varphi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}}$ ($n\leq m$) are homomorphisms of $\sh{O}_Y$-algebras. 
+Therefore, for every $n$, the composite morphism $(1, \lambda_n): Y^{(n)}\xrightarrow{h_n} X \xrightarrow{g} Y$ defines a homomorphism of sheaves of rings $\lambda_n: \sh{O}_Y \to \sh{O}_{Y^{(n)}}$ right inverse to the augmentation $\vphi_{0n}$, making $\sh{O}_{Y^{(n)}}$ a quasi-coherent $\sh{O}_Y$-algebra;
+via these homomorphisms, the transition homomorphism $\vphi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}}$ ($n\leq m$) are homomorphisms of $\sh{O}_Y$-algebras. 
 Also, if $g$ is locally of finite type, then the $\sh{O}_{Y^{(n)}}$ are quasi-coherent $\sh{O}_Y$-modules of finite type.
 \end{corollary}
 
@@ -132,12 +132,12 @@ Let $X$ be a prescheme, $j: Y \to X$ an immersion locally of finite presentation
   \item[(a)] There exists an open neighborhood $U$ of y in $Y$ such that $j|U$ is a homeomorphism of $U$ onto an open set of $X$.
   \item[(b)] There is an integer $n>0$ such that the canonical homomorphism
   \[
-    (\varphi_{n-1,n})_y: \sh{O}_{Y^{(n)},y} \to \sh{O}_{Y^{(n-1)},y}
+    (\vphi_{n-1,n})_y: \sh{O}_{Y^{(n)},y} \to \sh{O}_{Y^{(n-1)},y}
   \]
   is bijective.
   \item[(c)] There is an integer $n>0$ such that $(\shGr_n(j))_y = 0$.
   
-  In addition, if the integer $n$ satisfies \emph{(b)} or \emph{(c)}, then there is a neighborhood $V$ of $y$ in $Y$ such that $\shGr_m(j)|V = 0$ for $m \geq n$ and that $\varphi_{nm}|V: \sh{O}_{Y^{(m)}}|V \to \sh{O}_{Y^{(n)}}|V$ is bijective for $m \geq n$. 
+  In addition, if the integer $n$ satisfies \emph{(b)} or \emph{(c)}, then there is a neighborhood $V$ of $y$ in $Y$ such that $\shGr_m(j)|V = 0$ for $m \geq n$ and that $\vphi_{nm}|V: \sh{O}_{Y^{(m)}}|V \to \sh{O}_{Y^{(n)}}|V$ is bijective for $m \geq n$. 
 \end{enumerate}
 \end{proposition}
 
@@ -166,7 +166,7 @@ The condition is clearly necessary, and the previous reasoning applied to $n=1$ 
 \label{IV.16.1.11}
 \medskip\noindent
 \begin{enumerate}
-  \item[(i)] Under the conditions of the definition \sref{IV.16.1.1}, the projective limit of the projective system $(\sh{O}_{Y^{(n)}}, \varphi_{nm})$ of sheaves of rings over $Y$ is called the \emph{normal invariant of infinite order} of $f$, and sometimes denoted by $\sh{O}_{Y^{(\infty)}}$.
+  \item[(i)] Under the conditions of the definition \sref{IV.16.1.1}, the projective limit of the projective system $(\sh{O}_{Y^{(n)}}, \vphi_{nm})$ of sheaves of rings over $Y$ is called the \emph{normal invariant of infinite order} of $f$, and sometimes denoted by $\sh{O}_{Y^{(\infty)}}$.
   When $X$ is a locally noetherian prescheme, $j:Y \to X$ a closed immersion, $Y$ then is a closed subprescheme of $X$ defined by a coherent ideal $\sh{I}$ and $\sh{O}_{Y^{(\infty)}}$ is exactly the \emph{formal completion} of $\sh{O}_X$ along $Y$ \sref[I]{I.10.8.4}, and $Y^{(\infty)} = (Y, \sh{O}_{Y^{(\infty)}})$ is the formal prescheme that is the \emph{completion} of $X$ along $Y$ \sref[I]{I.10.8.5}.
   In all cases, we could say that $Y^{(\infty)}$ is the \emph{formal neighborhood} of $Y$ in $X$ (via the morphism $f$).
   In the particular case we have just considered, it is the formal prescheme that is the inductive limit of the infinitesimal neighborhoods of order $n$.
@@ -1832,7 +1832,7 @@ This is an immediate consequence of \sref{IV.16.7.5.3} and of the particular cas
 \label{IV.16.7.7}
 The canonical homomorphisms of sheaves of rings
 \[
-  \varphi_{nm}:\sh{P}_{X/S}^m \to \sh{P}_{X/S}^n 
+  \vphi_{nm}:\sh{P}_{X/S}^m \to \sh{P}_{X/S}^n 
 \]
 for $n \leq m$ \sref{IV.16.1.2} define, because of \sref{IV.16.7.2.1}, canonical homomorphisms 
 \[
@@ -2159,7 +2159,7 @@ It remains to prove the lemma \sref{IV.16.8.9.3}.
 Considering \sref{IV.16.7.6}, which proves the uniqueness of $\delta$, we are brought back to the case where $S = \Spec(A)$ and $X = \Spec(B)$ are affines;
 letting $\mathfrak{I} = \mathfrak{I}_{B/A}$, it suffices to define a canonical homomorphism of $B$-modules
 \[
-  \varphi: (B \otimes_A B)/\mathfrak{I}^{n+n'+1} \to ((B \otimes_A B)/\mathfrak{I}^{n' + 1}) \otimes_B ((B \otimes_A B)/\mathfrak{I}^{n + 1})
+  \vphi: (B \otimes_A B)/\mathfrak{I}^{n+n'+1} \to ((B \otimes_A B)/\mathfrak{I}^{n' + 1}) \otimes_B ((B \otimes_A B)/\mathfrak{I}^{n + 1})
 \]
 the $B$-module structure of the two members coming from the first $B$ factor;
 recall that on tensor product of the second member, $(B \otimes_A B)/\mathfrak{I}^{n' + 1}$ must be considered
@@ -2167,18 +2167,18 @@ recall that on tensor product of the second member, $(B \otimes_A B)/\mathfrak{I
 as a right $B$-module by its second $B$ factor , and $(B \otimes_A B)/\mathfrak{I}^{n + 1}$ as a left $B$-module by its first $B$ factor \sref{IV.16.7.2}.
 It is the same to define a homomorphism of $B$-modules
 \[
-  \varphi_0: B \otimes_A B \to ((B \otimes_A B)/\mathfrak{I}^{n' + 1}) \otimes_B ((B \otimes_A B)/\mathfrak{I}^{n + 1})
+  \vphi_0: B \otimes_A B \to ((B \otimes_A B)/\mathfrak{I}^{n' + 1}) \otimes_B ((B \otimes_A B)/\mathfrak{I}^{n + 1})
 \]
 and prove it is zero on $\mathfrak{I}^{n+n'+1}$.
 Now, we immediately define a homomorphism by the condition that
 \[
-  \varphi_0(b \otimes b') = \pi_{n'}(b \otimes 1) \otimes \pi_n(1 \otimes b') \quad \text{for $b$, $b'$ in $B$}
+  \vphi_0(b \otimes b') = \pi_{n'}(b \otimes 1) \otimes \pi_n(1 \otimes b') \quad \text{for $b$, $b'$ in $B$}
 \]
 under the notations of \sref{IV.16.3.7}.
 Also, it is immediate that $\phi_0$ is a homomorphism of \emph{rings}.
 Now, we can write 
 \[
-  \varphi_0(b \otimes 1 - 1 \otimes b) = \pi_{n'}(b \otimes 1 - 1 \otimes b) \otimes \pi_n(1 \otimes 1) + \pi_{n'}(1 \otimes b) \otimes \pi_n(1 \otimes 1) - \pi_{n'}(1 \otimes 1) \otimes \pi_n(1 \otimes b)
+  \vphi_0(b \otimes 1 - 1 \otimes b) = \pi_{n'}(b \otimes 1 - 1 \otimes b) \otimes \pi_n(1 \otimes 1) + \pi_{n'}(1 \otimes b) \otimes \pi_n(1 \otimes 1) - \pi_{n'}(1 \otimes 1) \otimes \pi_n(1 \otimes b)
 \]
 and we have 
 \[
@@ -2187,7 +2187,7 @@ and we have
 from which, finally
 \[
   \label{IV.16.8.9.4}
-  \varphi_0(b \otimes 1 - 1 \otimes b) = \pi_{n'}(b \otimes 1 - 1 \otimes b) \otimes \pi_n(1 \otimes 1) + \pi_{n'}(1 \otimes 1) \otimes \pi_n(b \otimes 1 - 1 \otimes b). 
+  \vphi_0(b \otimes 1 - 1 \otimes b) = \pi_{n'}(b \otimes 1 - 1 \otimes b) \otimes \pi_n(1 \otimes 1) + \pi_{n'}(1 \otimes 1) \otimes \pi_n(b \otimes 1 - 1 \otimes b). 
   \tag{16.8.9.4}
 \]
 A product of $n + n' + 1$ of terms of the form \sref{IV.16.8.9.4} is therefore necessarily zero, because the same is true for the product of $n+1$ terms of the form $\pi_n(b \otimes 1 - 1 \otimes b)$ and of $n' + 1$ terms of the form $\pi_{n'}(b \otimes 1 - 1 \otimes b)$.
@@ -2574,8 +2574,8 @@ since by hypothesis $B = (B \otimes_A B)/\mathfrak{I}$ is a formally smooth $A$-
 
 \begin{proposition}[16.10.3]
 \label{IV.16.10.3}
-For a morphism $f:X \to S$ to be differentially smooth, it is necessary and sufficient that for every $x \in X$, there is an open affine neighborhood of $x$, of ring $A$, such that $\Gamma(U, \sh{P}_{X/S}^\infty)$ is an augmented topological $A$-algebra isomorphic to the completion $\hat{B}$, where $B = \bb{S}_A(V)$, $V$ being a projective $A$-module and $B$ being endowed with the $B^+$-preadic topology (where $B^+$ is the augmentation ideal).
-If $\Omega_{X/S}^1$ is locally free of finite rank, we can replace $\hat{B}$ with the ring of formal series $A[[T_1, \dots, T_n]]$.
+For a morphism $f:X \to S$ to be differentially smooth, it is necessary and sufficient that for every $x \in X$, there is an open affine neighborhood of $x$, of ring $A$, such that $\Gamma(U, \sh{P}_{X/S}^\infty)$ is an augmented topological $A$-algebra isomorphic to the completion $\widehat{B}$, where $B = \bb{S}_A(V)$, $V$ being a projective $A$-module and $B$ being endowed with the $B^+$-preadic topology (where $B^+$ is the augmentation ideal).
+If $\Omega_{X/S}^1$ is locally free of finite rank, we can replace $\widehat{B}$ with the ring of formal series $A[[T_1, \dots, T_n]]$.
 \end{proposition}
 
 \begin{proof}

@@ -6,7 +6,7 @@
 
 \begin{notation}[2.1.1]
 \label{II.2.1.1}
-Given a \emph{positively-graded} ring $S$, we denote by $S_n$ the subset of $S$ consisting of homogeneous elements of degree $n$ ($n\geq 0$), by $S_+$ the (direct) sum of the $S_n$ for $n>0$;
+Given a \emph{positively graded} ring $S$, we denote by $S_n$ the subset of $S$ consisting of homogeneous elements of degree $n$ ($n\geq 0$), by $S_+$ the (direct) sum of the $S_n$ for $n>0$;
 we have $1\in S_0$, $S_0$ is a subring of $S$, $S_+$ is a graded ideal of $S$, and $S$ is the direct sum of $S_0$ and $S_+$.
 If $M$ is a \emph{graded} module over $S$ (with positive or negative degrees), we similarly denote by $M_n$ the $S_0$-module consisting of homogeneous elements of $M$ of degree $n$ (with $n\in\bb{Z}$).
 
@@ -60,7 +60,7 @@ for two graded $S$-modules $M$ and $N$.
 
 \oldpage[II]{21}
 Let $S$ and $S'$ be two graded rings;
-a homomorphism of \emph{graded rings $\vphi:S\to S'$} is a homomorphism of rings such that $\vphi(S_n)\subset S_n'$ for all $n\in\bb{Z}$ (in other words, $\vphi$ must be a homomorphism \emph{of degree $0$} of graded $\bb{Z}$-modules).
+a homomorphism of \emph{graded rings $\varphi:S\to S'$} is a homomorphism of rings such that $\varphi(S_n)\subset S_n'$ for all $n\in\bb{Z}$ (in other words, $\varphi$ must be a homomorphism \emph{of degree $0$} of graded $\bb{Z}$-modules).
 The data of such a homomorphism defines on $S'$ a \emph{graded} $S'$-module structure;
 equipped with this structure and its graded ring structure, we say that $S'$ is a \emph{graded $S'$-algebra}.
 
@@ -576,7 +576,7 @@ we immediately see that these affine schemes are isomorphic to $K[T]$, and that 
 
 \begin{proposition}[2.4.4]
 \label{II.2.4.4}
-Let $S$ be a positively-graded ring, and let $X$ be the scheme $\Proj(S)$.
+Let $S$ be a positively graded ring, and let $X$ be the scheme $\Proj(S)$.
 \begin{enumerate}
   \item[{\rm(i)}] If $\mathfrak{N}_+$ is the nilradical of $S_+$ \sref{II.2.1.10}, then the scheme $X_\red$ is canonically isomorphic to $\Proj(S/\mathfrak{N}_+)$;
     in particular, if $S$ is essentially reduced, then $\Proj(S)$ is reduced.
@@ -639,7 +639,7 @@ is commutative, for homogeneous $f,g$ in $S_+$.
 
 \begin{proposition}[2.4.7]
 \label{II.2.4.7}
-Let $S$ be a positively-graded ring.
+Let $S$ be a positively graded ring.
 \begin{enumerate}
   \item[{\rm(i)}] For every integer $d>0$, there exists a canonical isomorphism from the scheme $\Proj(S)$ to the scheme $\Proj(S^{(d)})$.
   \item[{\rm(ii)}] Let $S'$ be the graded ring such that $S_0=\bb{Z}$ and $S'_n=S_n$ (considered as a $\bb{Z}$-module) for $n>0$.
@@ -934,7 +934,7 @@ this follows from the commutativity of the diagram
 \[
   \xymatrix{
     \widetilde{\mathfrak{J}}\otimes_{\sh{O}_X}\widetilde{M} \ar[rr]^\lambda \ar[dr]
-    && (\mathfrak{J}\otimes_S M)\supertilde
+    && (\mathfrak{J}\otimes_S M)\supertilde \ar[dl]
   \\&\widetilde{M}
   }
 \]
@@ -1317,3 +1317,441 @@ But, by the definition of $N$, and by \sref{II.2.5.4}, the restriction of the is
 
 \subsection{Functorial behaviour}
 \label{subsection:II.2.8}
+
+\begin{env}[2.8.1]
+\label{II.2.8.1}
+Let $S$ and $S'$ be positively graded rings, and $\varphi:S'\to S$ a homomorphism of graded rings.
+We denote by $G(\varphi)$ the open subset of $X=\Proj(S)$ given by the complement of $V_+(\varphi(S'_+))$, or, equivalently, the union of the $D_+(\varphi(f'))$ where $f'$ runs over the set of homogeneous elements of $S'_+$.
+The restriction to $G(\varphi)$ of the continuous map ${}^a\varphi$ from $\Spec(S)$ to $\Spec(S')$ \sref[I]{I.1.2.1} is thus a continuous map from $G(\varphi)$ to $\Proj(S')$, which we again denote, with an abuse of language, by ${}^a\varphi$.
+If $f'\in S'_+$ is homogeneous, then
+\[
+\label{II.2.8.1.1}
+  {}^a\varphi^{-1}(D_+(f')) = D_+(\varphi(f'))
+\tag{2.8.1.1}
+\]
+taking into account the fact that ${}^a\varphi$ sends $G(\varphi)$ to $\Proj(S')$, as well as \sref[I]{I.1.2.2.2}.
+The homomorphism $\varphi$ also canonically defines (with the same notation) a homomorphism of graded rings $S'_{f'}\to S_f$, whence, by restriction to the degree~$0$ elements,
+\oldpage[II]{42}
+a homomorphism $S'_{(f')}\to S_{(f)}$, which we denote by $\varphi_{(f)}$;
+there is a corresponding \sref[I]{I.1.6.1} morphism of affine schemes $({}^a\varphi_{(f)},\widetilde{\varphi}_{(f)}):\Spec(S_{(f)})\to\Spec(S'_{(f')})$.
+If we canonically identify $\Spec(S_{(f)})$ with the scheme induced by $\Proj(S)$ on $D_+(f)$ \sref{II.2.3.6}, then we have defined a morphism $\Phi_f:D_+(f)\to D_+(f')$, and ${}^a\varphi_{(f)}$ is identified with the restriction of ${}^a\varphi$ to $D_+(f)$.
+It is also immediate that, if $g'$ is another homogeneous element of $S'_+$, and $g=\varphi(g')$, then the diagram
+\[
+  \xymatrix{
+    D_+(f) \ar[r]^{\Phi_f}
+    & D_+(f')
+  \\D_+(fg) \ar[u] \ar[r]_{\Phi_{fg}}
+    & D_+(f'g') \ar[u]
+  }
+\]
+commutes, by the fact that the diagram
+\[
+  \xymatrix{
+    S'_{(f')} \ar[r]^{\varphi_{(f)}} \ar[d]_{\omega_{f'g',f'}}
+    & S_{(f)} \ar[d]^{\omega_{fg,f}}
+  \\S'_{(f'g')} \ar[r]_{\varphi_{(fg)}}
+    & S_{(fg)}
+  }
+\]
+commutes.
+Taking the definition of $G(\varphi)$, along with \sref{II.2.3.3.2}, we thus see that:
+\end{env}
+
+\begin{proposition}[2.8.2]
+\label{II.2.8.2}
+Given a homomorphism of graded rings $\varphi: S'\to S$, there exists exactly one morphism $({}^a\varphi,\widetilde{\varphi})$ from the induced prescheme $G(\varphi)$ to $\Proj(S')$ (said to be \emph{associated to $\varphi$}, and denoted by $\Proj(\varphi)$) such that, for every homogeneous element $f'\in S'_+$, the restriction of this morphism to $D_+(\varphi(f'))$ agrees with the morphism associated to the homomorphism $S'_{(f')}\to S_{(\varphi(f'))}$ corresponding to $\varphi$.
+\end{proposition}
+
+\begin{proof}
+With the above notation, if $f'\in S'_d$, then the diagram
+\[
+\label{II.2.8.2.1}
+  \xymatrix{
+    S'_{(f')} \ar[r]^{\varphi_{(f)}} \ar[d]_{\sim}
+    & S_{(f)} \ar[d]^{\sim}
+  \\{S'}^{(d)}/(f'-1){S'}^{(d)} \ar[r]
+    & S^{(d)}/(f-1)S^{(d)}
+  }
+\tag{2.8.2.1}
+\]
+commutes (the vertical arrows being the isomorphisms \sref{II.2.2.5}).
+\end{proof}
+
+\begin{corollary}[2.8.3]
+\label{II.2.8.3}
+\begin{enumerate}
+  \item[{\rm(i)}] The morphism $\Proj(\varphi)$ is affine.
+  \item[{\rm(ii)}] If $\Ker(\varphi)$ is nilpotent (and, in particular, if $\varphi$ is injective), then the morphism $\Proj(\varphi)$ is dominant.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+Claim~(i) is an immediate consequence of \sref{II.2.8.2} and \sref{II.2.8.1.1}.
+Claim~(ii) follows since, if $\Ker(\varphi)$ is nilpotent, then, for every homogeneous $f'$ in $S'_+$, we immediately see that $\Ker(\varphi_f)$ (with $f=\varphi(f')$) is nilpotent, and thus so too is $\Ker(\varphi_{(f)})$;
+we then apply \sref{II.2.8.2} and \sref[I]{I.1.2.7}
+\end{proof}
+
+\oldpage[II]{43}
+We note that there are, in general, morphisms from $\Proj(S)$ to $\Proj(S')$ that are not affine, and that thus do not come from homomorphisms of graded rings $S'\to S$;
+an example is the structure morphism $\Proj(S)\to\Spec(A)$ when $A$ is a field ($\Spec(A)$ thus being identified with $\Proj(A[T])$, cf.~\sref{II.3.1.7});
+indeed, this follows from \sref[I]{I.2.3.2}.
+
+\begin{env}[2.8.4]
+\label{II.2.8.4}
+Let $S''$ be another positively graded ring, and $\varphi':S''\to S'$ a homomorphism of graded rings, and set $\varphi''=\varphi\circ\varphi'$.
+By \sref{II.2.8.1.1} and the formula ${}^a\varphi''=({}^a\varphi')\circ({}^a\varphi)$, we immediately see that $G(\varphi'')\subset G(\varphi)$, and that, if $\Phi$, $\Phi'$, and $\Phi''$ are the morphisms associated to $\varphi$, $\varphi'$, and $\varphi''$ (respectively), then $\Phi''=\Phi'\circ(\Phi|G(\varphi''))$.
+\end{env}
+
+\begin{env}[2.8.5]
+\label{II.2.8.5}
+Suppose that $S$ (resp. $S'$) is a graded $A$-algebra (resp. a graded $A'$-algebra), and let $\psi:A'\to A$ be a ring homomorphism such that the diagram
+\[
+  \xymatrix{
+    A' \ar[r]^{\psi} \ar[d]
+    & A \ar[d]
+  \\S' \ar[r]_{\varphi}
+    & S
+  }
+\]
+commutes.
+We can then consider $G(\varphi)$ (resp. $\Proj(S')$) as a scheme over $\Spec(A)$ ($resp. \Spec(A')$);
+if $\Phi$ (resp. $\Psi$) is the morphism associated to $\varphi$ (resp. $\psi$), then the diagram
+\[
+  \xymatrix{
+    G(\varphi) \ar[r]^{\Phi} \ar[d]
+    & \Proj(S') \ar[d]
+  \\\Spec(A) \ar[r]_{\Psi}
+    & \Spec(A')
+  }
+\]
+commutes: it suffices to prove this for the restriction of $\Phi$ to $D_+(f)$, where $f=\varphi(f')$, with $f'$ homogeneous in $S'_+$;
+this then follows from the fact that the diagram
+\[
+  \xymatrix{
+    A' \ar[r]^{\psi} \ar[d]
+    & A \ar[d]
+  \\S'_{(f')} \ar[r]_{\varphi_{(f)}}
+    & S_{(f)}
+  }
+\]
+commutes.
+\end{env}
+
+\begin{env}[2.8.6]
+\label{II.2.8.6}
+Now let $M$ be a graded $S$-module, and consider the $S'$-module $M_{[\varphi]}$, which is evidently graded.
+Let $f'$ be homogeneous in $S'_+$, and let $f=\varphi(f')$;
+we know \sref[0]{0.1.5.2} that there is a canonical isomorphism $(M_{[\varphi]})_{f'}\xrightarrow{\sim}(M_f)_{[\varphi_f]}$, and it is immediate that this isomorphism preserves degree, whence a canonical isomorphism $(M_{[\varphi]})_{(f')}\xrightarrow{\sim}(M_{(f)})_{[\varphi_{(f)}]}$.
+To this isomorphism, there canonically corresponds an isomorphism of sheaves $(M_{[\varphi]})\supertilde|D_+(f')\xrightarrow{\sim}(\Phi_f)_*(\widetilde(M)|D_+(f))$ (\sref{II.2.5.2} and \sref[I]{I.1.6.3}).
+Furthemore,
+\oldpage{43}
+if $g'$ is another homogeneous element of $S'_+$, and $g=\varphi(g')$, then the diagram
+\[
+  \xymatrix{
+    (M_{[\varphi]})_{(f')} \ar[r]^{\sim} \ar[d]
+    & (M_{(f)})_{[\varphi_{(f)}]} \ar[d]
+  \\(M_{[\varphi]})_{(f'g')} \ar[r]^{\sim}
+    & (M_{(fg)})_{[\varphi_{(fg)}]}
+  }
+\]
+commutes, whence we immediately conclude that the isomorphism
+\[
+  (M_{[\varphi]})\supertilde|D_+(f'g') \xrightarrow{\sim} (\Phi_{fg})_*(\widetilde{M}|D_+(fg))
+\]
+is the restriction to $D_+(f'g')$ of the isomorphism $(M_{[\varphi]})\supertilde|D_+(f')\xrightarrow{\sim}(\Phi_f)_*(\widetilde{M}|D_+(f))$.
+Since $\Phi_f$ is the restriction to $D_+(f)$ of the morphism $\Phi$, we see that, taking \sref{II.2.8.1.1} into account, and setting $X'=\Proj(S)'$:
+\end{env}
+
+\begin{proposition}[2.8.7]
+\label{II.2.8.7}
+There exists a canonical functorial isomorphism from the $\sh{O}_{X'}$-module $(M_{[\varphi]})^\supertilde$ to the $\sh{O}_{X'}$-module $\Phi_*(\widetilde{M}|G(\varphi))$.
+\end{proposition}
+
+We thus immediately deduce a canonical functorial map from the set of $\varphi$-morphisms $M'\to M$ from a graded $S'$-module to the graded $S$-module $M$, to the set of $\Phi$-morphisms $\widetilde{M'}\to\widetilde{M}|G(\varphi)$.
+With the notation of \sref{II.2.8.4}, if $M''$ is a graded $S''$-module, then, to the composition of a $\varphi$-morphism $M'\to M$ and a $\varphi'$-morphism $M''\to M'$, canonically corresponds the composition of $\widetilde{M'}G(\varphi')\to\widetilde{M}|G(\varphi'')$ and $\widetilde{M''}\to\widetilde{M'}|G(\varphi')$.
+
+\begin{proposition}[2.8.8]
+\label{II.2.8.8}
+Under the hypotheses of \sref{II.2.8.1}, let $M'$ be a graded $S'$-module.
+Then there exists a canonical functorial homomorphism $\nu$ from the $(\sh{O}_X|G(\varphi))$-module $\Phi^*(\widetilde{M'})$ to the $(\sh{O}_X|G(\varphi))$-module $(M'\otimes_{S'}S)\supertilde|G(\varphi)$.
+If the ideal $S'_+$ is generated by $S'_1$, then $\nu$ is an isomorphism.
+\end{proposition}
+
+\begin{proof}
+Indeed, for $f'\in S'_d$ ($d>0$), we define a canonical functorial homomorphism of $S_{(f)}$-modules (where $f=\varphi(f')$)
+\[
+\label{II.2.8.8.1}
+  \nu_f: M'_{(f')}\otimes_{S'_{(f')}}S_{(f)} \to (M'\otimes_{S'}S)_{(f)}
+\tag{2.8.8.1}
+\]
+by composing the homomorphism $M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}\to M'_{f'}\otimes_{S'_{f'}}S_f$ and the canonical isomorphism $M'_{f'}\otimes_{S'_{f'}}S_f\xrightarrow{\sim}(M'\otimes_{S'}S)_f$ \sref[0]{0.1.5.4}, and noting that the latter preserves degrees.
+We can immediately verify the compatibility of $\nu_f$ with the restriction operators from $D_+(f)$ to $D_+(fg)$ (for any $g'\in S'_+$ and $g=\varphi(g')$), whence the definition of the homomorphism
+\[
+  \nu: \Phi^*(\widetilde{M'}) \to (M'\otimes_{S'}S)\supertilde|G(\varphi)
+\]
+taking \sref[I]{I.1.6.5} into account.
+To prove the second claim, it suffices to show that $\nu_f$ is an isomorphism for all $f'\in S_1$, since $G(\varphi)$ is then a union of the $D_+(\varphi(f'))$.
+We first define a $\bb{Z}$-bilinear $M'_m\times S_n\to M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}$ by sending $(x',s)$ to the element $(x'/{f'}^m)\otimes(s/f^n)$ (with the convention that $x'/{f'}^m$ is ${f'}^{-m}x'/1$ when $m<0$).
+\oldpage[II]{45}
+We claim that, in the proof of \sref{II.2.5.13}, this map gives rise to a di-homomorphism of modules
+\[
+  \eta_f: M'\otimes_{S'}S \to M'_{(f')}\otimes_{S_{(f')}}S_{(f)}.
+\]
+Furthermore, if, for $r>0$, we have $f^r\sum_i(x'_i\otimes s_i)=0$, then this can also be written as $\sum_i({f'}^rx'_i\otimes s_i)=0$, whence, by \sref[0]{0.1.5.4}, $\sum_i({f'}^rx_i/{f'}^{m_i+r})\otimes(s_i/f^{n_i})=0$, i.e. $\eta_f(\sum_i x_i\otimes y_i)0=$, which proves that $\eta_f$ factors as $M'\otimes_{S'}S\to(M'\otimes_{S'}S)_f\xrightarrow{\eta'_f}M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}$;
+we finally can prove that $\eta'_f$ and $\nu_f$ are inverse isomorphisms to one another.
+
+In particular, it follows from \sref{II.2.1.2.1} that we have a canonical homomorphism
+\[
+\label{II.2.8.8.2}
+  \Phi^*(\sh{O}_{X'}(n)) \xrightarrow{\sim} \sh{O}_X(n)|G(\varphi)
+\tag{2.8.8.2}
+\]
+for all $n\in\bb{Z}$.
+\end{proof}
+
+\begin{env}[2.8.9]
+\label{II.2.8.9}
+Let $A$ and $A'$ be rings, and $\psi:A'\to A$ a ring homomorphism, defining a morphism $\Psi:\Spec(A)\to\Spec(A')$.
+Let $S'$ be a positively graded $A'$-algebra, and set $S=S'\otimes_{A'}A$, which is evidently an $A$-algebra graded by the $S'_n\otimes_{A'}A$;
+the map $\varphi:s'\to s'\otimes1$ is then a graded ring homomorphism that makes the diagram \sref{II.2.8.5.1} commute.
+Since $S_+$ is here the $A$-module generated by $\varphi(S'_+)$, we have $G(\varphi)=\Proj(S)=X$;
+whence, setting $X'=\Proj(S')$, we have the commutative diagram
+\[
+\label{II.2.8.9.1}
+  \xymatrix{
+    X \ar[r]^{\Phi} \ar[d]_p
+    & X' \ar[d]
+  \\Y \ar[r]_{\Psi}
+    & Y'
+  }
+\tag{2.8.9.1}
+\]
+
+Now let $M'$ be a graded $S'$-module, and set $M=M'\otimes_{A'}A=M'\otimes_{S'}S$.
+Under these conditions:
+\end{env}
+
+\begin{proposition}[2.8.10]
+\label{II.2.8.10}
+The diagram \sref{II.2.8.9.1} identifies the scheme $X$ with the product $X'\times_{Y'}Y$;
+furthermore, the canonical homomorphism $\nu:\Phi^*(\widetilde{M'})\to\widetilde{M}$ \sref{II.2.8.8} is an isomorphism.
+\end{proposition}
+
+\begin{proof}
+The first claim will be proven if we show that, for every homogenous $f'$ in $S'_+$, setting $f=\varphi(f')$, the restrictions of $\Phi$ and $p$ to $D_+(f)$ identify this scheme with the product $D_+(f')\times_{Y'}Y$ \sref[I]{I.3.2.6.2};
+in other words, it suffices \sref[I]{I.3.2.2} to prove that $S_{(f)}$ is canonically identified with $S_f\xrightarrow{\sim}S'_{f'}\otimes_{A'}A$, which is immediate by the existence of the canonical isomorphism $S_f\xrightarrow{\sim}S'_{f'}\otimes_{A'}A$ that preserves degrees \sref[0]{0.1.5.4}.
+The second claim then follows from the fact that $M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}$ can be identified, by the above, with $M'_{(f')}\otimes_{A'}A$, and this can be identified with $M_{(f)}$, since $M_f$ is canonically identified with $M'_{f'}\otimes_{A'}A$ by an isomorphism that preserves degrees.
+\end{proof}
+
+\begin{corollary}[2.8.11]
+\label{II.2.8.11}
+For every integer $n\in\bb{Z}$, $\widetilde{M}(n)$ can be identified with $\Phi^*(\widetilde{M'}(n))=\widetilde{M'}(n)\otimes_{Y'}\sh{O}_Y$;
+in particular, $\sh{O}_X(n)=\Phi^*(\sh{O}_{X'}(n))=\sh{O}_{X'}(n)\otimes_{Y'}\sh{O}_Y$.
+\end{corollary}
+
+\begin{proof}
+This follows from \sref{II.2.8.10} and \sref{II.2.5.15}.
+\end{proof}
+
+\oldpage[II]{46}
+
+\begin{env}[2.8.12]
+\label{II.2.8.12}
+Under the hypotheses of \sref{II.2.8.9}, for $f'\in S'_d$ ($d>0$) and $f=\varphi(f')$, the diagram
+\[
+  \xymatrix{
+    M'_{(f')} \ar[r]^-{\sim} \ar[d]
+    & {M'}^{(d)}/(f'-1){M'}^{(d)} \ar[d]
+  \\M_{(f)} \ar[r]^-{\sim}
+    & M^{(d)}/(f-1)M^{(d)}
+  }
+\]
+(cf. \sref{II.2.2.5}) commutes.
+\end{env}
+
+\begin{env}[2.8.13]
+\label{II.2.8.13}
+Keep the notation and hypotheses of \sref{II.2.8.9}, and let $\sh{F}'$ be an $\sh{O}_{X'}$-module;
+if we set $\sh{F}=\Phi^*(\sh{F}')$, then, for all $n\in\bb{Z}$, we have $\sh{F}(n)=\Phi^*(\sh{F}'(n))$, by \sref{II.2.8.11} and \sref[0]{0.4.3.3}.
+Then \sref[0]{0.3.7.1} we have a canonical homomorphism
+\[
+  \Gamma(\rho): \Gamma(X',\sh{F}'(n)) \to \Gamma(X,\sh{F}(n))
+\]
+which gives a canonical di-homomorphism of graded modules
+\[
+  \Gamma_\bullet(\sh{F}') \to \Gamma_\bullet(\sh{F}).
+\]
+
+Suppose that the ideal $S_+$ is generated by $S_1$, and that $\sh{F}'=\widetilde{M'}$, thus $\sh{F}=\widetilde{M}$ with $M=M'\otimes_{A'}A$.
+If $f'$ is homogeneous in $S'_+$, and $f=\varphi(f')$, then we have seen that $M_{(f)}=M'_{(f')}\otimes_{A'}A$, and the diagram
+\[
+  \xymatrix{
+    M'_0 \ar[r] \ar[d]
+    & M'_{(f')} \ar[d]
+    & =\Gamma(D_+(f'),\widetilde{M'})
+  \\M_0 \ar[r]
+    & M_{(f)}
+    & =\Gamma(D_+(f),\widetilde{M})
+  }
+\]
+thus commutes;
+we immediately conclude from this remark, and from the definition of the homomorphism $\alpha$ \sref{II.2.6.2}, that the diagram
+\[
+\label{II.2.8.13.1}
+  \xymatrix{
+    M' \ar[r]^-{\alpha_{M'}} \ar[d]
+    & \Gamma_\bullet(\widetilde{M'}) \ar[d]
+  \\M \ar[r]_-{\alpha_M}
+    & \Gamma_\bullet(\widetilde{M})
+  }
+\tag{2.8.13.1}
+\]
+commutes.
+Similarly, the diagram
+\[
+\label{II.2.8.13.2}
+  \xymatrix{
+    (\Gamma_\bullet(\sh{F}'))\supertilde \ar[r]^-{\beta_{\sh{F}'}} \ar[d]
+    & \sh{F}' \ar[d]
+  \\(\Gamma_\bullet(\sh{F}))\supertilde \ar[r]_-{\beta_{\sh{F}}}
+    & \sh{F}
+  }
+\tag{2.8.13.2}
+\]
+commutes (the vertical arrow on the right being the canonical $\Phi$-morphism $\sh{F}'\to\Phi^*(\sh{F}')=\sh{F}$).
+\end{env}
+
+\oldpage[II]{47}
+
+\begin{env}[2.8.14]
+\label{II.2.8.14}
+Still keeping the notation and hypotheses of \sref{II.2.8.9}, let $N'$ be another graded $S'$-module, and let $N=N'\otimes_{A'}A$.
+It is immediate that the canonical di-homomorphisms $M'\to M$ and $N'\to N$ give a di-homomorphism $M'\otimes_{S'}N'\to M\otimes_S N$ (with respect to the canonical ring homomorphism $S'\to S$), and thus also an $S$-homomorphism $(M'\otimes_{S'}N')\otimes_{A'}A\to M\otimes_S N$ of degree~$0$, to which corresponds (taking \sref{II.2.8.10} into account) a homomorphism of $\sh{O}_X$-modules
+\[
+\label{II.2.8.14.1}
+  \Phi^*((M'\otimes_{S'}N')\supertilde) \to (M\otimes_S N)\supertilde.
+\tag{2.8.14.1}
+\]
+
+Furthermore, we can immediately verify that the diagram
+\[
+\label{II.2.8.14.2}
+  \xymatrix{
+    \Phi^*(\widetilde{M'}\otimes_{\sh{O}_{X'}}\widetilde{N'}) \ar[r]^\sim \ar[d]_{\Phi^*(\lambda)}
+    & \widetilde{M}\otimes_{\sh{O}_X}\widetilde{N} \ar[d]^\lambda
+    & =\Phi^*(\widetilde{M'})\otimes_{\sh{O}_X}\Phi^*(\widetilde{N'})
+  \\\Phi^*((M'\otimes_{S'}N')\supertilde) \ar[r]
+    & (M\otimes_S N)\supertilde
+  }
+\tag{2.8.14.2}
+\]
+commutes, with the first line being the canonical isomorphism \sref[0]{0.4.3.3}.
+If the ideal $S'_+$ is generated by $S'_1$, then it is clear that $S_+$ is generated by $S_1$, and the two vertical arrows of \sref{II.2.8.14.2} are then isomorphisms \sref{II.2.5.13};
+it is thus also the case for \sref{II.2.8.14.1}.
+
+We similarly have a canonical di-homomorphism $\Hom_{S'}(M',N')\to\Hom_S(M,N)$ by sending a homomorphism $u'$ of degree~$k$ to the homomorphism $u'\otimes1$, which is also of degree~$k$;
+from this, we again deduce a $S$-homomorphism of degree~$0$
+\[
+  (\Hom_{S'}(M',N'))\otimes_{A'}A \to \Hom_S(M,N)
+\]
+whence a homomorphism of $\sh{O}_X$-modules
+\[
+\label{II.2.8.14.3}
+  \Phi^*((\Hom_{S'}(M',N'))\supertilde) \to (\Hom_S(M,N))^\supertilde.
+\tag{2.8.14.3}
+\]
+
+Furthermore, the diagram
+\[
+  \xymatrix{
+    \Phi^*((\Hom_{S'}(M',N'))\supertilde) \ar[r] \ar[d]_{\Phi^*(\mu)}
+    & (\Hom_S(M,N))^\supertilde \ar[d]^\mu
+  \\\Phi^*(\shHom_{\sh{O}_{X'}}(\widetilde{M'},\widetilde{N'})) \ar[r]
+    & \shHom_{\sh{O}_X}(\widetilde{M},\widetilde{N})
+  }
+\]
+commutes (the second horizontal line being the canonical homomorphism \sref[0]{0.4.4.6}).
+\end{env}
+
+\oldpage[II]{48}
+
+\begin{env}[2.8.15]
+\label{II.2.8.15}
+With the notation and hypotheses of \sref{II.2.8.1}, it follows from \sref{II.2.4.7} that we do not change the morphism $\Phi$, up to isomorphism, when we replace $S_0$ and $S'_0$ by $\bb{Z}$, and $\varphi_0$ by the identity map, and thus when we replace $S$ and $S'$ by $S^{(d)}$ and ${S'}^{(d)}$ (respectively) ($d>0$), and $\varphi$ by its restriction $\varphi^{(d)}$ to $S^{(d)}$.
+\end{env}
+
+
+\subsection{Closed subschemes of a scheme $\operatorname{Proj}(S)$}
+\label{subsection:II.2.9}
+
+\begin{env}[2.9.1]
+\label{II.2.9.1}
+If $\varphi:S\to S'$ is a homomorphism of graded rings, then we say that $\varphi$ is (TN)-\emph{surjective} (resp. (TN)-\emph{injective}, (TN)-\emph{bijective}) if there exists an integer $n$ such that, for $k\geq n$, $\varphi_k:S_k\to S'_k$ is \emph{surjective} (resp. \emph{injective}, \emph{bijective}).
+Instead of saying that $\varphi$ is (TN)-bijective, we sometimes say that it is a (TN)-\emph{isomorphism}.
+\end{env}
+
+\begin{proposition}[2.9.2]
+\label{II.2.9.2}
+Let $S$ be a positively graded ring, and let $X=\Proj(S)$.
+\begin{enumerate}
+  \item[\rm{(i)}] If $\varphi:S\to S'$ is a (TN)-surjective homomorphism of graded rings, then the corresponding morphism $\Phi$ \sref{II.2.8.1} is defined on the whole of $\Proj(S')$, and is a closed immersion of $\Proj(S')$ into $X$.
+    If $\mathfrak{J}$ is the kernel of $\varphi$, then the closed subscheme of $X$ associated to $\Phi$ is defined by the quasi-coherent sheaf of ideals $\widetilde{\mathfrak{J}}$ of $\sh{O}_X$.
+  \item[\rm{(ii)}] Suppose further that the ideal $S_+$ is generated by a finite number of homogeneous elements of degree~$1$.
+    Let $X'$ be a closed subscheme of $X$ defined by a quasi-coherent sheaf of ideals $\sh{J}$ of $\sh{O}_X$.
+    Let $\mathfrak{J}$ be the graded ideal of $S$ given by the inverse image of $\Gamma_\bullet(\sh{J})$ under the canonical homomorphism $\alpha:S\to\Gamma_\bullet(\sh{O}_X)$ \sref{II.2.6.2}, and set $S'=S/\mathfrak{J}$.
+    Then $X'$ is the subscheme associated to the closed immersion $\Proj(S')\to X$ corresponding to the canonical homomorphism of graded rings $S\to S'$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+  \item[\rm{(i)}] We can suppose that $\varphi$ is surjective \sref{II.2.9.1}.
+    Since, by hypothesis, $\varphi(S_+)$ generates $S'_+$, we have $G(\varphi)=\Proj(S')$.
+    Now, the second claim can be checked locally on $X$;
+    so let $f$ be a homogeneous element of $S_+$, and set $f'=\varphi(f)$.
+    Since $\varphi$ is a surjective homomorphism of graded rings, we immediately see that $\varphi_{(f')}:S_{(f)}\to S'_{(f')}$ is surjective, and that its kernel is $\mathfrak{J}_{(f)}$, which proves (i) \sref[I]{I.4.2.3}.
+  \item[\rm{(ii)}] By (i), we are led to proving that the homomorphism $\widetilde{j}:\widetilde{\mathfrak{J}}\to\sh{O}_X$ induced by the canonical injection $j:\mathfrak{J}\to S$ is an isomorphism from $\widetilde{\mathfrak{J}}$ to $\sh{J}$, which follows from \sref{II.2.7.11}.
+\end{enumerate}
+\end{proof}
+
+We note that $\mathfrak{J}$ is the \emph{largest} of the graded ideals $\mathfrak{J}'$ of $S$ such that $\widetilde{j}(\widetilde{\mathfrak{J'}})=\sh{J}$, since we can immediately show, using the definitions \sref{II.2.6.2}, that this equation implies that $\alpha(\mathfrak{J}')\subset\Gamma_\bullet(\sh{J})$.
+
+\begin{corollary}[2.9.3]
+\label{II.2.9.3}
+Suppose that the hypotheses of \sref{II.2.9.2}[(i)] are satisfied, and further that the ideal $S_+$ is generated by $S_1$;
+then $\Phi^*((S(n))\supertilde)$ is canonically isomorphic to $(S'(n))\supertilde$ for all $n\in\bb{Z}$, and so $\Phi^*(\sh{F}(n))$ is canonically isomorphic to $\Phi^*(\sh{F})(n)$ for every $\sh{O}_X$-module $\sh{F}$.
+\end{corollary}
+
+\begin{proof}
+This is a particular case of \sref{II.2.8.8}, taking \sref{II.2.5.10.2} into account.
+\end{proof}
+
+\begin{corollary}[2.9.4]
+\label{II.2.9.4}
+Suppose that the hypotheses of \sref{II.2.9.2}[(ii)] are satisfied.
+For the closed sub-prescheme $X'$ of $X$ to be integral, it is necessary and sufficient for the graded ideal $\mathfrak{J}$ to be prime in $S$.
+\end{corollary}
+
+\oldpage[II]{49}
+
+\begin{proof}
+Since $X'$ is isomorphic to $\Proj(S/\mathfrak{J})$, the condition is sufficient by \sref{II.2.4.4}.
+To see that it is necessary, consider the exact sequence $0\to\sh{J}\to\sh{O}_X\to\sh{O}_X/\sh{J}$, which gives the exact sequence
+\[
+  0 \to \Gamma_\bullet(\sh{J}) \to \Gamma_\bullet(\sh{O}_X) \to \Gamma_\bullet(\sh{O}_X/\sh{J}).
+\]
+
+It suffices to prove that, if $f\in S_m$ and $g\in S_n$ are such that the image in $\Gamma_\bullet(\sh{O}_X/\sh{J})$ of $\alpha_{n+m}(fg)$ is zero, then the image of either $\alpha_m(f)$ or $\alpha_n(g)$ is zero.
+But, by definition, these images are sections of invertible $(\sh{O}_X/\sh{J})$-modules $\sh{L}=(\sh{O}_X/\sh{J})(m)$ and $\sh{L}'=(\sh{O}_X/\sh{J})(n)$ over the integral scheme $X'$;
+the hypothesis implies that the product of these two sections is zero in $\sh{L}\otimes\sh{L}'$ (\sref{II.2.9.3} and \sref{II.2.5.14.1}), and so one of them is zero by \sref[I]{I.7.4.4}.
+\end{proof}
+
+\begin{corollary}[2.9.5]
+\label{II.2.9.5}
+Let $A$ be a ring, $M$ an $A$-module, $S$ a graded $A$-algebra generated by the set $S_1$ of homogeneous elements of degree~$1$, $u:M\to S_1$ a surjective homomorphism of $A$-modules, and $\overline{u}:\bb{S}(M)\to S$ the homomorphism (of $A$-algebras) from the symmetric algebra $\bb{S}(M)$ of $M$ to $S$ that extends $u$.
+Then the morphism corresponding to $\overline{u}$ is a closed immersion of $\Proj(S)$ into $\Proj(\bb{S}(M))$.
+\end{corollary}
+
+\begin{proof}
+Indeed, $\overline{u}$ is surjective by hypothesis, and so it suffices to apply \sref{II.2.9.2}
+\end{proof}

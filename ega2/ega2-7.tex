@@ -128,18 +128,18 @@ Then there exists a local scheme $Y'$, spectrum of a discrete valuation ring, a 
     \xymatrix{
         & \kres(x) \ar[dl]_{\gamma}
     \\  \kres(b)
-        & \kres(y) \ar[u]_{\pi} \ar[l]^{\varphi}
+        & \kres(y) \ar[u]_{\pi} \ar[l]^{\vphi}
     }
 \tag{7.1.9.1}
 \]
-(where $\pi$, $\varphi$, and $\gamma$ are the homomorphisms corresponding to $p$, $f$, and $g$, respectively) the morphism $\gamma$ is a bijection.
+(where $\pi$, $\vphi$, and $\gamma$ are the homomorphisms corresponding to $p$, $f$, and $g$, respectively) the morphism $\gamma$ is a bijection.
 \end{proposition}
 
 \begin{proof}
 As in \sref{II.7.1.4}, we can restrict to the case where $Y$ is integral with generic point $y$ (taking \sref[I]{I.6.4.3}[iv] into account), and, since the question is local on $X$ and $Y$, we can assume that $p$ is of finite type;
 we are then in the situation of \sref{II.7.1.4}, with the additional property that $\kres(x)$ is an extension \emph{of finite type} of $\kres(y)$ \sref[I]{I.6.4.11} and that $\sh{O}_{y'}$ is Noetherian;
 this lets us apply \sref{II.7.1.7} and take $Y'=\Spec(A')$, where $A'$ is a discrete valuation ring that dominates $\sh{O}_{y'}$ and whose field of fractions is $\kres(x)$.
-We have thus defined a commutative diagram \sref{II.7.1.9.1} where $\gamma$ is a bijection, with $\pi$ and $\varphi$ corresponding to the morphisms $p$ and $f$.
+We have thus defined a commutative diagram \sref{II.7.1.9.1} where $\gamma$ is a bijection, with $\pi$ and $\vphi$ corresponding to the morphisms $p$ and $f$.
 Furthermore, since $X$ and $Y$ are locally Noetherian \sref[I]{I.6.6.2} and since $Y'$ is integral, there exists exactly one rational $Y$-map $g$ from $Y'$ to $X$ to which corresponds the isomorphism $\gamma$ \sref[I]{I.7.1.15}, which finishes the proof.
 \end{proof}
 
@@ -609,17 +609,17 @@ Since the Segre morphism \sref{II.4.3.3} gives an immersion of $P$ into $\bb{P}_
 
 \begin{corollary}[7.4.11]
 \label{II.7.4.11}
-Any normal algebraic curve $X$ is isomorphic to the scheme induced by some complete normal algebraic curve $\hat{X}$ on some everywhere dense open subset, and this $\hat{X}$ is unique up to unique isomorphism.
+Any normal algebraic curve $X$ is isomorphic to the scheme induced by some complete normal algebraic curve $\widehat{X}$ on some everywhere dense open subset, and this $\widehat{X}$ is unique up to unique isomorphism.
 \end{corollary}
 
 \begin{proof}
 If $X_1$ and $X_2$ are complete normal curves, then it follows from \sref{II.7.4.9} that every isomorphism from any dense open $U_1$ in $X_1$ to any dense open $U_2$ in $X_2$ can be uniquely extended to an isomorphism from $X_1$ to $X_2$;
 whence the uniqueness claim.
-To prove the existence of $\hat{X}$, it suffices to note that we can consider $X$ as a subscheme of a projective bundle $\bb{P}_k^n$ \sref{II.7.4.10}.
+To prove the existence of $\widehat{X}$, it suffices to note that we can consider $X$ as a subscheme of a projective bundle $\bb{P}_k^n$ \sref{II.7.4.10}.
 Let $\overline{X}$ be the closure of $X$ in $\bb{P}_k^n$ \sref[I]{I.9.5.11};
 since $X$ is induced by $\overline{X}$ on a dense open subset of $\overline{X}$ \sref[I]{I.9.5.10}, the generic points $x_i$ of the irreducible components of $X$ are also the generic points of the irreducible components of $\overline{X}$, and the $\kres(x_i)$ are the same for both of these schemes, and so \sref{II.7.4.1} $\overline{X}$ is an algebraic curve over $k$ that is reduced \sref[I]{I.9.5.9} and projective over $k$ \sref{II.5.5.1}, whence complete \sref{II.5.5.3}.
-So we take for $\hat{X}$ the \emph{normalisation} of $\overline{X}$, which is again complete \sref{II.7.4.8};
-furthermore, if $h:\hat{X}\to\overline{X}$ is the canonical morphism, then the restriction of $h$ to $h^{-1}(X)$ is an isomorphism to $X$, since $X$ is normal \sref{II.6.3.4}, and since $h^{-1}(X)$ contains the generic points of the irreducible components of $\hat{X}$ \sref{II.6.3.8}, it is dense in $\hat{X}$, which finishes the proof.
+So we take for $\widehat{X}$ the \emph{normalisation} of $\overline{X}$, which is again complete \sref{II.7.4.8};
+furthermore, if $h:\widehat{X}\to\overline{X}$ is the canonical morphism, then the restriction of $h$ to $h^{-1}(X)$ is an isomorphism to $X$, since $X$ is normal \sref{II.6.3.4}, and since $h^{-1}(X)$ contains the generic points of the irreducible components of $\widehat{X}$ \sref{II.6.3.8}, it is dense in $\widehat{X}$, which finishes the proof.
 \end{proof}
 
 \oldpage[II]{151}

@@ -135,7 +135,7 @@ Since the functor $r^*$ is right exact \sref[0]{0.4.3.1}, we obtain, from the su
 But $r^*(p^*(\sh{E}))=q^*(\sh{E})$, and $r^*(\sh{O}_P(1))$ is locally isomorphic to $r^*(\sh{O}_P)=\sh{O}_X$, or, in other words, the latter is an \emph{invertible} sheaf $\sh{L}_r$ on $\sh{O}_X$, and so we have defined, given $r$, a canonical surjective $\sh{O}_X$-homomorphism
 \[
 \label{II.4.2.1.1}
-  \varphi_r:q^*(\sh{E}) \to \sh{L}_r.
+  \vphi_r:q^*(\sh{E}) \to \sh{L}_r.
   \tag{4.2.1.1}
 \]
 
@@ -143,15 +143,15 @@ When $Y=\Spec(A)$ is affine, and $\mathscr{E}=\widetilde{E}$, we can further cla
 given $f\in E$, it follows from \sref{II.2.6.3} that
 \[
 \label{II.4.2.1.2}
-  r^{-1}(D_+(f)) = X_{\varphi_r^\flat(f)}.
+  r^{-1}(D_+(f)) = X_{\vphi_r^\flat(f)}.
   \tag{4.2.1.2}
 \]
 
 Now let $V$ be an affine open subset of $X$ that is contained inside $r^{-1}(D_+(f))$, and let $B$ be its ring, which is an $A$-algebra;
 let $S=\bb{S}_A(E)$;
 the restriction of $r$ to $V$ corresponds to an $A$-homomorphism $\omega:\bb{S}_f\to B$, and we have that $q^*(\sh{E})|V = (E\otimes_A B)\supertilde$ and $\sh{L}_r|V = \widetilde{L_r}$, whence $L_r = (S(1))_{(f)}\otimes_{S_{(f)}}B_{[\omega]}$ \sref[I]{I.1.6.5}.
-The restriction of $\varphi_r$ to $q^*(\sh{E})|V$ corresponds to the $B$-homomorphism $u:E\otimes_A B\to L_r$, which sends $x\otimes1$ to $(x/1)\otimes f = (f/1)\otimes\omega(x/f)$.
-The canonical extension of $\varphi_r$ to a homomorphism of $\sh{O}_X$-algebras
+The restriction of $\vphi_r$ to $q^*(\sh{E})|V$ corresponds to the $B$-homomorphism $u:E\otimes_A B\to L_r$, which sends $x\otimes1$ to $(x/1)\otimes f = (f/1)\otimes\omega(x/f)$.
+The canonical extension of $\vphi_r$ to a homomorphism of $\sh{O}_X$-algebras
 \[
   \psi_r: q^*(\bb{S}(\sh{E})) = \bb{S}(q^*(\sh{E})) \to \bb{S}(\sh{L}_r) = \bigoplus_{n\geq0}\sh{L}_r^{\otimes n}
 \]
@@ -161,32 +161,32 @@ is thus such that the restriction of $\psi_r$ to $q^*(\bb{S}_n(\sh{E}))|V$ corre
 \begin{env}[4.2.2]
 \label{II.4.2.2}
 Conversely, suppose that we are given a morphism $q:X\to Y$, an invertible $\sh{O}_X$-module $\sh{L}$, and a quasi-coherent $\sh{O}_Y$-module $\sh{E}$;
-to each homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$ there canonically corresponding homomorphism of quasi-coherent $\sh{O}_X$-algebras
+to each homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$ there canonically corresponding homomorphism of quasi-coherent $\sh{O}_X$-algebras
 \[
   \psi: \bb{S}(q^*(\sh{E})) = q^*(\bb{S}(\sh{E})) \to \bigoplus_{n\geq0}\sh{L}^{\otimes n}
 \]
-and thus \sref{II.3.7.1} a $Y$-morphism $r_{\sh{L},\psi}:G(\psi)\to\Proj(\bb{S}(\sh{E}))=\bb{P}(\sh{E})$, which we denote by $r_{\sh{L},\varphi}$.
-If $\varphi$ is \emph{surjective}, then so too is $\psi$, and thus \sref{II.3.7.4} $r_{\sh{L},\varphi}$ is \emph{everywhere defined}.
+and thus \sref{II.3.7.1} a $Y$-morphism $r_{\sh{L},\psi}:G(\psi)\to\Proj(\bb{S}(\sh{E}))=\bb{P}(\sh{E})$, which we denote by $r_{\sh{L},\vphi}$.
+If $\vphi$ is \emph{surjective}, then so too is $\psi$, and thus \sref{II.3.7.4} $r_{\sh{L},\vphi}$ is \emph{everywhere defined}.
 Furthermore, with the notation of \sref{II.4.2.1} and \sref{II.4.2.2}:
 \end{env}
 
 \begin{proposition}[4.2.3]
 \label{II.4.2.3}
-Given a morphism $q:X\to Y$ and a quasi-coherent $\sh{O}_Y$-module $\sh{E}$, maps $r\to(\sh{L}_r,\varphi_r)$ and $(\sh{L},\varphi)\to r_{\sh{L},\varphi}$ give a bijective correspondence between the set of $Y$-morphisms $r:X\to\bb{P}(\sh{E})$ and the set of equivalence classes of pairs $(\sh{L},\varphi)$ of an invertible $\sh{O}_X$-module $\sh{L}$ and a surjective homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$, where such pairs $(\sh{L},\varphi)$ and $(\sh{L}',\varphi')$ are defined to be equivalent if there exists an $\sh{O}_X$-isomorphism $\tau:\sh{L}\xrightarrow{\sim}\sh{L}'$ such that $\varphi'=\tau\circ\varphi$.
+Given a morphism $q:X\to Y$ and a quasi-coherent $\sh{O}_Y$-module $\sh{E}$, maps $r\to(\sh{L}_r,\vphi_r)$ and $(\sh{L},\vphi)\to r_{\sh{L},\vphi}$ give a bijective correspondence between the set of $Y$-morphisms $r:X\to\bb{P}(\sh{E})$ and the set of equivalence classes of pairs $(\sh{L},\vphi)$ of an invertible $\sh{O}_X$-module $\sh{L}$ and a surjective homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$, where such pairs $(\sh{L},\vphi)$ and $(\sh{L}',\vphi')$ are defined to be equivalent if there exists an $\sh{O}_X$-isomorphism $\tau:\sh{L}\xrightarrow{\sim}\sh{L}'$ such that $\vphi'=\tau\circ\vphi$.
 \end{proposition}
 
 \begin{proof}
-Start first with a $Y$-morphism $r:X\to\bb{P}(\sh{E})$, and construct $\sh{L}_r$ and $\varphi_r$ \sref{II.4.2.1}, and let $r'=r_{\sh{L}_r,\varphi_r}$;
+Start first with a $Y$-morphism $r:X\to\bb{P}(\sh{E})$, and construct $\sh{L}_r$ and $\vphi_r$ \sref{II.4.2.1}, and let $r'=r_{\sh{L}_r,\vphi_r}$;
 it follows immediately from \sref{II.4.2.1} and \sref{II.3.7.2} that the morphisms $r$ and $r'$ are identical (by taking the generator of $\sh{L}_r$ to be the element $(f/1)\otimes1$ to define the homomorphisms $v_n$ of \sref{II.3.7.2}).
-Conversely, take a pair $(\sh{L},\varphi)$ and construct
+Conversely, take a pair $(\sh{L},\vphi)$ and construct
 \oldpage[II]{74}
-$r''=r_{\sh{L},\varphi}$, and then $\sh{L}_{r''}$ and $\varphi_{r''}$;
-we will show that there exists a canonical isomorphism $\tau:\sh{L}_{r''}\xrightarrow{\sim}\sh{L}$ such that $\varphi=\tau\circ\varphi_{r''}$;
+$r''=r_{\sh{L},\vphi}$, and then $\sh{L}_{r''}$ and $\vphi_{r''}$;
+we will show that there exists a canonical isomorphism $\tau:\sh{L}_{r''}\xrightarrow{\sim}\sh{L}$ such that $\vphi=\tau\circ\vphi_{r''}$;
 to define it, we can restrict to the case where $Y=\Spec(A)$ and $X=\Spec(B)$ are affine, and (with the notation of \sref{II.4.2.1} and \sref{II.3.7.2}) associate to each element $(x/1)\otimes1$ of $L_{r''}$ (where $x\in E$) the element $v_1(x)c$ of $L$.
 We immediately see that $\tau$ does not depend on the chosen generator $c$ of $L$;
 since $v_1$ is surjective by hypothesis, to prove that $\tau$ is an isomorphism it suffices to to show that, if $x/1=0$ in $(S(1))_{(f)}$, then $v_1(x)/1=0$ in $B_g$;
 but the first equality implies that $f^nx=0$ in $\bb{S}_{n+1}(E)$ for some $n$, and this implies that $v_{n+1}(f^nx) = g^nv_1(x) = 0$ in $B$, whence the conclusion.
-Finally, it is immediate that, for any two equivalent pairs $(\sh{L},\varphi)$ and $(\sh{L}',\varphi')$, we have $r_{\sh{L},\varphi}=r_{\sh{L}',\varphi'}$.
+Finally, it is immediate that, for any two equivalent pairs $(\sh{L},\vphi)$ and $(\sh{L}',\vphi')$, we have $r_{\sh{L},\vphi}=r_{\sh{L}',\vphi'}$.
 \end{proof}
 
 In particular, for $X=Y$:
@@ -247,26 +247,26 @@ This will allow us to determine the sheaf of germs of automorphisms of $\bb{P}(\
 \begin{env}[4.2.8]
 \label{II.4.2.8}
 Keeping the notation of \sref{II.4.2.1}, let $u:X'\to X$ be a morphism;
-if the $Y$-morphism $r:X\to P$ corresponds to the homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$, then the $Y$-morphism $r\circ u$ corresponds to $u^*(\varphi):u^*(q^*(\sh{E}))\to u^*(\sh{L})$, as follows immediately from the definitions.
+if the $Y$-morphism $r:X\to P$ corresponds to the homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$, then the $Y$-morphism $r\circ u$ corresponds to $u^*(\vphi):u^*(q^*(\sh{E}))\to u^*(\sh{L})$, as follows immediately from the definitions.
 \end{env}
 
 \begin{env}[4.2.9]
 \label{II.4.2.9}
 Let $\sh{E}$ and $\sh{F}$ be quasi-coherent $\sh{O}_Y$-modules, $v:\sh{E}\to\sh{F}$ a surjective homomorphism, and $j=\bb{P}(v)$ the corresponding closed immersion $\bb{P}(\sh{F})\to\bb{P}(\sh{E})$ \sref{II.4.1.2}.
-If the $Y$-morphism $r:X\to\bb{P}(\sh{F})$ corresponds to the homomorphism $\varphi:q^*(\sh{F})\to\sh{L}$, then the
+If the $Y$-morphism $r:X\to\bb{P}(\sh{F})$ corresponds to the homomorphism $\vphi:q^*(\sh{F})\to\sh{L}$, then the
 \oldpage[II]{76}
-$Y$-morphism $j\circ r$ corresponds to $q^*(\sh{E})\xrightarrow{q^*(v)}q^*(\sh{F})\xrightarrow{\varphi}\sh{L}$;
+$Y$-morphism $j\circ r$ corresponds to $q^*(\sh{E})\xrightarrow{q^*(v)}q^*(\sh{F})\xrightarrow{\vphi}\sh{L}$;
 this again follows from the definition given in \sref{II.4.2.1}.
 \end{env}
 
 \begin{env}[4.2.10]
 \label{II.4.2.10}
 Let $\psi:Y'\to Y$ be a morphism, and let $\sh{E}'=\psi^*(\sh{E})$.
-If the $Y$-morphism $r:X\to P$ corresponds to the homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$, then the $Y'$-morphism
+If the $Y$-morphism $r:X\to P$ corresponds to the homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$, then the $Y'$-morphism
 \[
   r_{(Y')}: X_{(Y')} \to P' = \bb{P}(\sh{E}')
 \]
-corresponds to $\varphi_{(Y')}:q_{(Y')}^*(\sh{E}') = q^*(\sh{E})\otimes_Y\sh{O}_{Y'} \to \sh{L}\otimes_Y\sh{O}_{Y'}$.
+corresponds to $\vphi_{(Y')}:q_{(Y')}^*(\sh{E}') = q^*(\sh{E})\otimes_Y\sh{O}_{Y'} \to \sh{L}\otimes_Y\sh{O}_{Y'}$.
 Indeed, by \sref{II.4.1.3.1}, we have the commutative diagram
 \[
   \xymatrix{
@@ -450,21 +450,21 @@ Let $Y$ be a quasi-compact scheme, or a prescheme whose underlying space is Noet
   \item[\rm{(i)}] Let $\sh{S}$ be a positively-graded quasi-coherent $\sh{O}_Y$-algebra, and $\psi:q^*(\sh{S})\to\bigoplus_{n\geq0}\sh{L}^{\otimes n}$ a homomorphism of graded algebras.
     For $r_{\sh{L},\psi}$ to be everywhere defined and an immersion, it is necessary and
 \oldpage[II]{79}
-    sufficient for there to exist an integer $n\geq0$ and a quasi-coherent sub-$\sh{O}_Y$-module \emph{of finite type} $\sh{E}$ of $\sh{S}_n$ such that the homomorphism $\psi'=\psi_n\circ q^*(j):q^*(\sh{E})\to\sh{L}^{\otimes n}=\sh{L}'$ (where $j$ is the injection $\sh{E}\to\sh{S}_n$) is surjective and such that the morphism $r_{\sh{L}',\varphi'}:X\to\bb{P}(\sh{E})$ is an immersion.
-  \item[\rm{(ii)}] Let $\sh{F}$ be a quasi-coherent $\sh{O}_Y$-module, and $\varphi:q^*(\sh{F})\to\sh{L}$ a surjective homomorphism.
-    For the morphism $r_{\sh{L},\varphi}$ to be an immersion $X\to\bb{P}(\sh{F})$, it is necessary and sufficient for there to exist a quasi-coherent sub-$\sh{O}_Y$-module \emph{of finite type} $\sh{E}$ of $\sh{F}$ such that the homomorphism $\varphi'=\varphi\circ q(j):q^*(\sh{E})\to\sh{L}$ (where $j$ is the canonical injection $\sh{E}\to\sh{F}$) is surjective and such that the morphism $r_{\sh{L},\varphi'}:X\to\bb{P}(\sh{E})$ is an immersion.
+    sufficient for there to exist an integer $n\geq0$ and a quasi-coherent sub-$\sh{O}_Y$-module \emph{of finite type} $\sh{E}$ of $\sh{S}_n$ such that the homomorphism $\psi'=\psi_n\circ q^*(j):q^*(\sh{E})\to\sh{L}^{\otimes n}=\sh{L}'$ (where $j$ is the injection $\sh{E}\to\sh{S}_n$) is surjective and such that the morphism $r_{\sh{L}',\vphi'}:X\to\bb{P}(\sh{E})$ is an immersion.
+  \item[\rm{(ii)}] Let $\sh{F}$ be a quasi-coherent $\sh{O}_Y$-module, and $\vphi:q^*(\sh{F})\to\sh{L}$ a surjective homomorphism.
+    For the morphism $r_{\sh{L},\vphi}$ to be an immersion $X\to\bb{P}(\sh{F})$, it is necessary and sufficient for there to exist a quasi-coherent sub-$\sh{O}_Y$-module \emph{of finite type} $\sh{E}$ of $\sh{F}$ such that the homomorphism $\vphi'=\vphi\circ q(j):q^*(\sh{E})\to\sh{L}$ (where $j$ is the canonical injection $\sh{E}\to\sh{F}$) is surjective and such that the morphism $r_{\sh{L},\vphi'}:X\to\bb{P}(\sh{E})$ is an immersion.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 \medskip\noindent
 \begin{enumerate}
-  \item[\rm{(i)}] The fact that $r_{\sh{L},\varphi}$ is everywhere defined and is an immersion is equivalent, by \sref{II.3.8.5}, to the existence of some $n\geq0$ and $\sh{E}$ such that, if $\sh{S}'$ is the subalgebra of $\sh{S}$ generated by $\sh{E}$, the homomorphism $q^*(\sh{E})\to\sh{L}^{\otimes n}$ is surjective and the morphism $r_{\sh{L},\psi'}:X\to\Proj(\sh{S}')$ is everywhere defined and is an immersion.
+  \item[\rm{(i)}] The fact that $r_{\sh{L},\vphi}$ is everywhere defined and is an immersion is equivalent, by \sref{II.3.8.5}, to the existence of some $n\geq0$ and $\sh{E}$ such that, if $\sh{S}'$ is the subalgebra of $\sh{S}$ generated by $\sh{E}$, the homomorphism $q^*(\sh{E})\to\sh{L}^{\otimes n}$ is surjective and the morphism $r_{\sh{L},\psi'}:X\to\Proj(\sh{S}')$ is everywhere defined and is an immersion.
     We already have a canonical surjective homomorphism $\bb{S}(\sh{E})\to\sh{S}'$ to which there exists a corresponding closed immersion $\Proj(\sh{S}')\to\bb{P}(\sh{E})$ \sref{II.3.6.2};
     whence the conclusion.
   \item[\rm{(ii)}] Since $\sh{F}$ is the inductive limit of its quasi-coherent submodules of finite type $\sh{E}_\lambda$ \sref[I]{I.9.4.9}, $\bb{S}(\sh{F})$ is the inductive limit of the $\bb{S}(\sh{E}_\lambda)$;
     the conclusion then follows from \sref{II.3.8.4}, by observing that we can take all the $n_i$ in the proof of \sref{II.3.8.4} to be equal to $1$:
-    indeed, supposing that $Y$ is affine, if $r=r_{\sh{L},\varphi}$ is an immersion, then $r(X)$ is a quasi-compact subspace of $\bb{P}(\sh{F})$ that we can cover by finitely many open subsets of $\bb{P}(\sh{F})$ of the form $D_+(f)$, with $f\in F$, such that $D_+(f)\cap r(X)$ is closed.
+    indeed, supposing that $Y$ is affine, if $r=r_{\sh{L},\vphi}$ is an immersion, then $r(X)$ is a quasi-compact subspace of $\bb{P}(\sh{F})$ that we can cover by finitely many open subsets of $\bb{P}(\sh{F})$ of the form $D_+(f)$, with $f\in F$, such that $D_+(f)\cap r(X)$ is closed.
 \end{enumerate}
 \end{proof}
 
@@ -474,7 +474,7 @@ Let $Y$ be a prescheme, and $q:X\to Y$ a morphism.
 We say that an invertible $\sh{O}_X$-module $\sh{L}$ is \emph{very ample for $q$}, or \emph{relative to $q$} (or \emph{very ample for} (or \emph{relative to}) \emph{$Y$}, or simply \emph{very ample}, if $q$ is clear from the context) if there exists a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ and a $Y$-immersion $i$ from $X$ to $P=\bb{P}(\sh{E})$ such that $\sh{L}$ is isomorphic to $i^*(\sh{O}_P(1))$.
 \end{definition}
 
-It is equivalent \sref{II.4.2.3} to say that there exists a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ and a \emph{surjective} homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$ such that $r_{\sh{L},\varphi}:X\to\bb{P}(\sh{E})$ is an \emph{immersion}.
+It is equivalent \sref{II.4.2.3} to say that there exists a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ and a \emph{surjective} homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$ such that $r_{\sh{L},\vphi}:X\to\bb{P}(\sh{E})$ is an \emph{immersion}.
 
 We note that the existence of a very ample (for $Y$) $\sh{O}_X$-module implies that $q$ is \emph{separated} (\sref{II.3.1.3} and \sref[I]{I.5.5.1}[(i) and (ii)]).
 
@@ -502,12 +502,12 @@ Then the following properties are equivalent:
 Since $q$ is quasi-compact, we know that $q_*(\sh{L})$ is quasi-coherent if $q$ is separated \sref[I]{I.9.2.2}.
 
 \oldpage[II]{80}
-We know \sref{II.3.4.7} that the existence of a surjective homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$ (with $\sh{E}$ a quasi-coherent $\sh{O}_Y$-module) implies that $\sigma$ is surjective;
-furthermore, given the factorisation $q^*(\sh{E})\to q^*(q_*(\sh{L}))\xrightarrow{\sigma}\sh{L}$ of $\varphi$, there is a canonically corresponding factorisation
+We know \sref{II.3.4.7} that the existence of a surjective homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$ (with $\sh{E}$ a quasi-coherent $\sh{O}_Y$-module) implies that $\sigma$ is surjective;
+furthermore, given the factorisation $q^*(\sh{E})\to q^*(q_*(\sh{L}))\xrightarrow{\sigma}\sh{L}$ of $\vphi$, there is a canonically corresponding factorisation
 \[
   q^*(\bb{S}(\sh{E})) \to q^*(\bb{S}(q_*(\sh{L}))) \to \bigoplus_{n\geq0}\sh{L}^{\otimes n}
 \]
-and so \sref{II.3.8.3} the hypothesis that $r_{\sh{L},\varphi}$ is an immersion implies that so too is $j=r_{\sh{L},\sigma}$;
+and so \sref{II.3.8.3} the hypothesis that $r_{\sh{L},\vphi}$ is an immersion implies that so too is $j=r_{\sh{L},\sigma}$;
 furthermore \sref{II.4.2.4}, $\sh{L}$ is isomorphic to $j^*(\sh{O}_{P'}(1))$, where $P'=\bb{P}(q_*(\sh{L}))$.
 We thus see that (a) and (b) are equivalent.
 \end{proof}
@@ -527,7 +527,7 @@ Indeed, condition (b) of \sref{II.4.4.4} is local on $Y$.
 Let $Y$ be a quasi-compact scheme, or a prescheme whose underlying space is Noetherian, $q:X\to Y$ a morphism \emph{of finite type}, and $\sh{L}$ an invertible $\sh{O}_X$-module.
 Then conditions (a) and (b) of \sref{II.4.4.4} are equivalent to the following:
 \begin{enumerate}
-  \item[\rm{(a')}] There exists a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ \emph{of finite type} and a surjective homomorphism $\varphi:q^*(\sh{E})\to\sh{L}$ such that $r_{\sh{L},\varphi}$ is an immersion.
+  \item[\rm{(a')}] There exists a quasi-coherent $\sh{O}_Y$-module $\sh{E}$ \emph{of finite type} and a surjective homomorphism $\vphi:q^*(\sh{E})\to\sh{L}$ such that $r_{\sh{L},\vphi}$ is an immersion.
   \item[\rm{(b')}] There exists a coherent sub-$\sh{O}_Y$-module $\sh{E}$ of $q_*(\sh{L})$ \emph{of finite type} that has the properties stated in condition~(a').
 \end{enumerate}
 \end{proposition}
@@ -546,7 +546,7 @@ If $\sh{L}$ is very ample for $q$, then there exists a graded quasi-coherent $\s
 \begin{proof}
 Indeed, condition~(b) of \sref{II.4.4.6} is satisfied;
 the structure morphism $p:\bb{P}(\sh{E})=P'\to Y$ is then separated and of finite type \sref{II.3.1.3}, and so $P'$ is a quasi-compact scheme (resp. a Noetherian prescheme) if $Y$ is a quasi-compact scheme (resp. a Noetherian prescheme).
-Let $Z$ be the closure \sref[I]{I.9.5.11} of the subprescheme $X'$ of $P'$ associated to the immersion $j=r_{\sh{L},\varphi}$ from $X$ into $P'$;
+Let $Z$ be the closure \sref[I]{I.9.5.11} of the subprescheme $X'$ of $P'$ associated to the immersion $j=r_{\sh{L},\vphi}$ from $X$ into $P'$;
 it is clear that $j$ factors as a dominant open immersion $i:X\to Z$ followed by the canonical injection $Z\to P'$.
 But $Z$ can be identified with a prescheme $\Proj(\sh{S})$, where $\sh{S}$ is a graded $\sh{O}_Y$-algebra equal to the quotient of $\bb{S}(\sh{E})$ by a graded quasi-coherent sheaf of ideals \sref{II.3.6.2}, and it is clear that $\sh{S}_1$ is of finite type and generates $\sh{S}$;
 furthermore, $\sh{O}_Z(1)$ is the inverse image of $\sh{O}_{P'}(1)$ by the canonical injection \sref{II.3.6.3}, and so $\sh{L}=i^*(\sh{O}_Z(1))$.
