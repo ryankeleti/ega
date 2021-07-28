@@ -1341,7 +1341,7 @@ It is also immediate that, if $g'$ is another homogeneous element of $S'_+$, and
     D_+(f) \ar[r]^{\Phi_f}
     & D_+(f')
   \\D_+(fg) \ar[u] \ar[r]_{\Phi_{fg}}
-    & D_+(f'g')
+    & D_+(f'g') \ar[u]
   }
 \]
 commutes, by the fact that the diagram
@@ -1560,9 +1560,9 @@ This follows from \sref{II.2.8.10} and \sref{II.2.5.15}.
 Under the hypotheses of \sref{II.2.8.9}, for $f'\in S'_d$ ($d>0$) and $f=\varphi(f')$, the diagram
 \[
   \xymatrix{
-    M'_{(f')} \ar[r]^\sim \ar[d]
+    M'_{(f')} \ar[r]^-{\sim} \ar[d]
     & {M'}^{(d)}/(f'-1){M'}^{(d)} \ar[d]
-  \\M_{(f)} \ar[r]^\sim
+  \\M_{(f)} \ar[r]^-{\sim}
     & M^{(d)}/(f-1)M^{(d)}
   }
 \]
@@ -1599,9 +1599,9 @@ we immediately conclude from this remark, and from the definition of the homomor
 \[
 \label{II.2.8.13.1}
   \xymatrix{
-    M' \ar[r]^{\alpha_{M'}} \ar[d]
+    M' \ar[r]^-{\alpha_{M'}} \ar[d]
     & \Gamma_\bullet(\widetilde{M'}) \ar[d]
-  \\M \ar[r]_{\alpha_M}
+  \\M \ar[r]_-{\alpha_M}
     & \Gamma_\bullet(\widetilde{M})
   }
 \tag{2.8.13.1}
@@ -1611,9 +1611,9 @@ Similarly, the diagram
 \[
 \label{II.2.8.13.2}
   \xymatrix{
-    (\Gamma_\bullet(\sh{F}'))\supertilde \ar[r]^{\beta_{\sh{F}'}} \ar[d]
+    (\Gamma_\bullet(\sh{F}'))\supertilde \ar[r]^-{\beta_{\sh{F}'}} \ar[d]
     & \sh{F}' \ar[d]
-  \\(\Gamma_\bullet(\sh{F}))\supertilde \ar[r]_{\beta_{\sh{F}}}
+  \\(\Gamma_\bullet(\sh{F}))\supertilde \ar[r]_-{\beta_{\sh{F}}}
     & \sh{F}
   }
 \tag{2.8.13.2}
