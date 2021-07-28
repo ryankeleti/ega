@@ -1530,3 +1530,32 @@ whence, setting $X'=\Proj(S')$, we have the commutative diagram
 Now let $M'$ be a graded $S'$-module, and set $M=M'\otimes_{A'}A=M'\otimes_{S'}S$.
 Under these conditions:
 \end{env}
+
+\begin{proposition}[2.8.10]
+\label{II.2.8.10}
+The diagram \sref{II.2.8.9.1} identifies the scheme $X$ with the product $X'\times_{Y'}Y$;
+furthermore, the canonical homomorphism $\nu:\Phi^*(\widetilde{M'})\to\widetilde{M}$ \sref{II.2.8.8} is an isomorphism.
+\end{proposition}
+
+\begin{proof}
+The first claim will be proven if we show that, for every homogenous $f'$ in $S'_+$, setting $f=\varphi(f')$, the restrictions of $\Phi$ and $p$ to $D_+(f)$ identify this scheme with the product $D_+(f')\times_{Y'}Y$ \sref[I]{I.3.2.6.2};
+in other words, it suffices \sref[I]{I.3.2.2} to prove that $S_{(f)}$ is canonically identified with $S_f\xrightarrow{\sim}S'_{f'}\otimes_{A'}A$, which is immediate by the existence of the canonical isomorphism $S_f\xrightarrow{\sim}S'_{f'}\otimes_{A'}A$ that preserves degrees \sref[0]{0.1.5.4}.
+The second claim then follows from the fact that $M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}$ can be identified, by the above, with $M'_{(f')}\otimes_{A'}A$, and this can be identified with $M_{(f)}$, since $M_f$ is canonically identified with $M'_{f'}\otimes_{A'}A$ by an isomorphism that preserves degrees.
+\end{proof}
+
+\begin{corollary}[2.8.11]
+\label{II.2.8.11}
+For every integer $n\in\bb{Z}$, $\widetilde{M}(n)$ can be identified with $\Phi^*(\widetilde{M'}(n))=\widetilde{M'}(n)\otimes_{Y'}\sh{O}_Y$;
+in particular, $\sh{O}_X(n)=\Phi^*(\sh{O}_{X'}(n))=\sh{O}_{X'}(n)\otimes_{Y'}\sh{O}_Y$.
+\end{corollary}
+
+\begin{proof}
+This follows from \sref{II.2.8.10} and \sref{II.2.5.15}.
+\end{proof}
+
+\oldpage[II]{46}
+
+\begin{env}[2.8.12]
+\label{II.2.8.12}
+Under
+\end{env}
