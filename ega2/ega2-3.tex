@@ -7,8 +7,30 @@
 
 \begin{env}[3.1.1]
 \label{II.3.1.1}
-Let $Y$ be a prescheme,
+Let $Y$ be a prescheme, $\sh{S}$ a graded $\sh{O}_Y$-algebra, and $\sh{M}$ a graded $\sh{S}$-module.
+If $\sh{S}$ is \emph{quasi-coherent}, then each of its homogenous components $\sh{S}_n$ is a \emph{quasi-coherent} $\sh{O}_Y$-module, since they are the images of $\sh{S}$ under a homomorphism from $\sh{S}$ to itself (\sref[I]{I.1.3.8} and \sref[I]{I.1.3.9});
+similarly, if $\sh{M}$ is quasi-coherent as an $\sh{O}_Y$-module, then its homogenous components $\sh{M}_n$ are also quasi-coherent, and the converse is also true.
+For an integer $d>0$, we denote by $\sh{S}^{(d)}$ the direct sum of the $\sh{O}_Y$-modules $\sh{S}_{nd}$ (for $n\in\bb{Z}$), which is quasi-coherent if $\sh{S}$ is \sref[I]{I.1.3.9};
+for every integer $k$ such that $0\leq k\leq d-1$, we denote by $\sh{M}^{(d,k)}$ (or $\sh{M}^{(d)}$, for $k=0$) the direct sum of the $\sh{M}_{nd+k}$ (for $n\in\bb{Z}$), which is a graded $\sh{S}^{(d)}$-module, and quasi-coherent if both $\sh{S}$ and $\sh{M}$ are quasi-coherent \sref[I]{I.9.6.1}.
+We denote by $\sh{M}(n)$ the graded $\sh{S}$-module such that $(\sh{M}(n))_k=\sh{M}_{n+k}$ for all $k\in\bb{Z}$;
+if $\sh{S}$ and $\sh{M}$ are quasi-coherent, then $\sh{M}(n)$ is a quasi-coherent graded $\sh{S}$-module \sref[I]{I.9.6.1}.
+
+We say that $\sh{M}$ is a graded $\sh{S}$-module \emph{of finite type} (resp. admitting a \emph{finite presentation})  if, for all $y\in Y$, there exists an open neighbourhood $U$ of $y$, along with integers $n_i$ (resp. integers $m_i$ and $n_j$) such that there is a surjective degree~$0$ homomorphism $\bigoplus_{i=1}^r(\sh{S}(n_i)|U)\to\sh{M}|U$ (resp. such that $\sh{M}|U$ is isomorphic to the cokernel of a degree~$0$ homomorphism $\bigoplus_{i=1}^r(\sh{S}(m_i)|U)\to\bigoplus_{j 1}^s(\sh{S}(n_J)|U)$).
+
+Let $U$ be an open affine of $Y$, with ring $A=\Gamma(U,\sh{O}_Y)$;
+by hypothesis, the graded $(\sh{O}_Y|U)$-algebra $\sh{S}|U$ is isomorphic to $\widetilde{S}$, where $S=\Gamma(U,\sh{S})$ is a graded $A$-algebra \sref[I]{I.1.4.3};
+\oldpage[II]{50}
+set $X_U=\Proj(\Gamma(U,\sh{S}))$.
+Let $U'\subset U$ be another open affine of $Y$, with ring $A'$, and let $j:U'\to U$ be the canonical injection, which corresponds to the restriction homomorphism $A\to A'$;
+we have that $\sh{S}|U'=j^*(\sh{S}|U)$, and so $S'=\Gamma(U',\sh{S})$ is canonically identified with $X_U\times_U U'$, and thus also with $f_U^{-1}(U')$, where we denote by $f_U$ the structure morphism $X_U\to U$ \sref[I]{I.4.4.1}.
+We denote by $\sigma_{U',U}$ the canonical isomorphism $f_U^{-1}(U')\xrightarrow{\sim}X_{U'}$ thus defined, and by $\rho_{U',U}$ the open immersion $X_{U'}\to X_U$ obtained by composing $\sigma_{U',U}^{-1}$ with the canonical injection $f_U^{-1}(U')\to X_U$.
+It is immediate that, if $U''\subset U'$ is another open affine of $Y$, then $\rho_{U'',U}=\rho_{U'',U'}\circ\rho_{U',U}$.
 \end{env}
+
+\begin{proposition}[3.1.2]
+\label{II.3.1.2}
+Let
+\end{proposition}
 
 
 % \subsection{Sheaf on $\operatorname{Proj}(\mathcal{S})$ associated to a graded $\mathcal{S}$-module}

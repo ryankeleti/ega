@@ -94,7 +94,7 @@ Here is the current status of the translation, along with who is currently worki
 + [ ] 6. Integral morphisms and finite morphisms (~25 pages)
 + [x] 7. Valuative criteria _(@thosgood)_
 + [x] 8. Blowup schemes; based cones; projective closure _(@thosgood)_
-+ [x] _Errata and addenda (list 1)_
++ [x] Errata and addenda (list 1) _(@thosgood)_
 
 ### Cohomological study of coherent sheaves (EGA III) ![EGAIIIstatus](https://img.shields.io/badge/-20%2F160-red)
 
@@ -110,7 +110,7 @@ Here is the current status of the translation, along with who is currently worki
 + [x] 9. ~~Relative cohomology and local cohomology; local duality~~
 + [x] 10. ~~Relations between projective cohomology and local cohomology. Formal completion technique along a divisor~~
 + [x] 11. ~~Global and local Picard groups~~
-+ [ ] _Errata and addenda (list 2)_
++ [ ] Errata and addenda (list 2)
 
 ### Local study of schemes and their morphisms (EGA IV) ![EGAIVstatus](https://img.shields.io/badge/-53%2F825-red)
 
@@ -136,4 +136,4 @@ Here is the current status of the translation, along with who is currently worki
 + [ ] 19. Regular immersions and normal flatness (~40 pages)
 + [ ] 20. Meromorphic functions and pseudo-morphisms (~30 pages)
 + [ ] 21. Divisors (~75 pages)
-+ [ ] _Errata and addenda (list 3)_
++ [ ] Errata and addenda (list 3)
