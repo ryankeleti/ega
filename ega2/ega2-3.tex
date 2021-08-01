@@ -29,6 +29,50 @@ It is immediate that, if $U''\subset U'$ is another open affine of $Y$, then $\r
 
 \begin{proposition}[3.1.2]
 \label{II.3.1.2}
+Let $Y$ be a prescheme.
+For every quasi-coherent positively graded $\sh{O}_Y$-algebra, there exists exactly one (up to $Y$-isomorphism) prescheme $X$ over $Y$ satisfying the following property:
+if $f:X\to Y$ is the structure morphism, then, for every open affine $U$ of $Y$, there exists an \emph{isomorphism} $\eta_U$ from the induced prescheme $f^{-1}(U)$ to $X_U=\Proj(\Gamma(U,\sh{S}))$ such that, if $V$ is another open affine of $Y$ that is contained in $U$, then the diagram
+\[
+\label{II.3.1.2.1}
+  \xymatrix{
+    f^{-1}(V) \ar[r]^{\eta_V} \ar[d]
+    & X_V \ar[d]^{\rho_{V,U}}
+  \\f^{-1}(U) \ar[r]_{\eta_V}
+    & X_U
+  }
+\tag{3.1.2.1}
+\]
+commutes.
+\end{proposition}
+
+\begin{proof}
+Given affine opens $U$ and $V$ of $Y$, let $X_{U,V}$ be the prescheme induced on $f_U^{-1}(U\cap V)$ by $X_U$;
+we are going to define a $Y$-isomorphism $\theta_{U,V}:X_{V,U}\xrightarrow{\sim}X_{U,V}$.
+For this, we consider an open affine $W\subset U\cap V$:
+by composing the isomorphisms
+\[
+  f_U^{-1}(W)
+  \xrightarrow{\sigma_{W,U}} X_W
+  \xrightarrow{\sigma_{W,V}^{-1}} f_V^{-1}(W),
+\]
+we obtain an isomorphism $\tau_W$, and we immediately see that, if $W'\subset W$ is an open affine, then $\tau_{W'}$ is the restriction of $\tau_W$ to $f_U^{-1}(W')$;
+the $\tau_W$ are thus indeed the restrictions of a $Y$-isomorphism $\theta_{V,U}$.
+Further, if $U$, $V$, and $W$ are open affines of $Y$, and $\theta'_{U,V}$, $\theta'_{V,W}$, and $\theta'_{U,W}$ the restrictions of $\theta_{U,V}$, $\theta_{V,W}$, and $\theta_{U,W}$ (respectively) to the inverse images of $U\cap V\cap W$ in $X_V$, $X_W$, and $X_W$ (respectively), then it follows from the above definitions that we have $\theta'_{U,V}\circ\theta'_{V,W}=\theta'_{U,W}$.
+The existence of some $X$ satisfying the properties in the statement thus follows from \sref[I]{I.2.3.1};
+its uniqueness up to $Y$-isomorphism is trivial, taking \sref{I.3.1.2.1} into account.
+\end{proof}
+
+\begin{env}[3.1.3]
+\label{II.3.1.3}
+We say that the prescheme $X$ defined in \sref{II.3.1.2} is the \emph{homogeneous spectrum} of the quasi-coherent graded $\sh{O}_Y$-algebra $\sh{S}$, and we denote it by $\Proj(\sh{S})$.
+It is immediate that $\Proj(\sh{S})$ is \emph{separated over $Y$} (\sref{II.2.4.2} and \sref[I]{I.5.5.5});
+if $\sh{S}$ is an $\sh{O}_Y$-algebra \emph{of finite type} \sref[I]{I.9.6.2}, then $\Proj(\sh{S})$ is \emph{of finite type} over $Y$ (\sref{II.2.7.1}[(ii)] and \sref[I]{I.6.3.1}).
+
+If $f$ is the structure morphism $X\to Y$, then it is immediate that, for every prescheme induced by $Y$ on an open subset $U$ of $Y$, $f^{-1}(U)$ can be identified with the homogeneous spectrum $\Proj(\sh{S}|U)$.
+\end{env}
+
+\begin{proposition}[3.1.4]
+\label{II.3.1.4}
 Let
 \end{proposition}
 
