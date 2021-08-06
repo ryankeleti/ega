@@ -73,8 +73,31 @@ If $f$ is the structure morphism $X\to Y$, then it is immediate that, for every 
 
 \begin{proposition}[3.1.4]
 \label{II.3.1.4}
-Let
+Let $f\in\Gamma(Y,\sh{S}_d)$ for $d>0$.
+Then there exists an open subset $X_f$ of the underlying space of $X=\Proj(\sh{S})$ that satisfies the following property:
+for every open affine $U$ of $Y$, we have $X_f\cap\varphi^{-1}(U)=D_+(f|U)$ in $\varphi^{-1}(U)$ identified with $X_U=\Proj(\Gamma(U,\sh{S}))$, where $\varphi$ denotes the structure morphism $X\to Y$.
+\oldpage[II]{51}
+Furthermore, the prescheme induced on $X_f$ is affine over $Y$, and is canonically isomorphic to $\Spec(\sh{S}^{(d)}/(f-1)\sh{S}^{[d]})$ \sref{II.1.3.1}.
 \end{proposition}
+
+\begin{proof}
+We have $f|U\in\Gamma(U,\sh{S}_d)=(\Gamma(U,\sh{S}))_d$.
+If $U$ and $U'$ are open affines of $Y$ such that $U'\subset U$, then $f|U'$ is the image of $f|U$ under the restriction homomorphism
+\[
+  \Gamma(U,\sh{S}) \to \Gamma(U',\sh{S})
+\]
+and so $D_+(f|U')$ is equal (with the notation of \sref{II.3.1.1}) to the prescheme induced on the inverse image $\rho_{U',U}^{-1}(D_+(f|U))$ in $X_{U'}$ \sref{II.2.8.1};
+whence the first claim.
+Furthermore, the prescheme induced on $D_+(f|U)$ by $X_U$ is canonically identified with $\Spec((\Gamma(U,\sh{S}))_{f|U})$, with these identifications being compatible with the restriction homomorphisms \sref{II.2.8.1};
+the second claim then follows from \sref{II.2.2.5} and from the commutativity of the diagram \sref{II.2.8.2.1}.
+\end{proof}
+
+We also say that $X_f$ (as an open subset of the underlying space $X$) is the set of $x\in X$ where $f$ \emph{does not vanish}.
+
+\begin{corollary}[3.1.5]
+\label{II.3.1.5}
+If
+\end{corollary}
 
 
 % \subsection{Sheaf on $\operatorname{Proj}(\mathcal{S})$ associated to a graded $\mathcal{S}$-module}
