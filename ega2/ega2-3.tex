@@ -146,8 +146,32 @@ indeed, we can restrict to the case where $Y=\Spec(A)$ is affine, and everything
 
 \begin{proposition}[3.1.8]
 \label{II.3.1.8}
-Let
+Let $\sh{S}$ be a quasi-coherent positively-graded $\sh{O}_Y$-algebra.
+Then
+\begin{enumerate}
+  \item[(i)] For all $d>0$, there exists a canonical $Y$-isomorphism from $\Proj(\sh{S})$ to $\Proj(\sh{S}^{(d)})$.
+\oldpage[II]{52}
+  \item[(ii)] Let $\sh{S}'$ be the graded $\sh{O}_Y$-algebra given by the direct sum of $\sh{O}_Y$ with the $\sh{S}_n$ (for $n\geq0$);
+    then $\Proj(\sh{S}')$ and $\Proj(\sh{S})$ are canonically $Y$-isomorphic.
+  \item[(iii)] Let $\sh{L}$ be an invertible $\sh{O}_Y$-module \sref[0]{0.5.4.1}, and let $\sh{S}_{(\sh{L})}$ be the graded $\sh{O}_Y$-algebra given by the direct sum of the $\sh{S}_d\otimes\sh{L}^{\otimes d}$ (for $d\geq0$);
+    then $\Proj(\sh{S})$ and $\Proj(\sh{S}_{(\sh{L})})$ are canonically $Y$-isomorphic.
+\end{enumerate}
 \end{proposition}
+
+\begin{proof}
+In each of the three cases, it suffices to define the isomorphism locally on $Y$, since the verification of compatibility with the restriction operations from one open subset to a smaller one is trivial.
+We can thus suppose that $Y$ is affine, and then (i) follows from \sref{II.2.4.7}[(i)], and (ii) follows from \sref{II.2.4.8}.
+As for (iii), if we further suppose that $\sh{L}$ is isomorphic to $\sh{O}_Y$ (which we are allowed to do, since the question is local on $Y$), then the isomorphism between $\Proj(\sh{S})$ and $\Proj(\sh{S}_{(\sh{L})})$ is evident;
+to define a \emph{canonical} isomorphism, let $Y=\Spec(A)$ and $\sh{S}=\widetilde{S}$, where $S$ is a graded $A$-algebra, and let $c$ be a generator of the free $A$-module $L$ such that $\sh{L}=\widetilde{L}$;
+then, for all $n>0$, $x_n\mapsto x_n\otimes c^{\otimes n}$ is an $A$-isomorphism from $S_n$ to $S_n\otimes L^{\otimes n}$, and these $A$-isomorphisms define an $A$-isomorphism of graded algebras $\varphi_c:S\to S_{(L)}=\bigoplus_{n\geq0}S_n\otimes L^{\otimes n}$.
+So let $f\in S_+$ be homogeneous of degree~$d$;
+for all $x\in S_{nd}$, we have that $(x\otimes c^{nd})/(f\otimes c^d)^n=(x\otimes(\varepsilon c)^{nd})/(f\otimes(\varepsilon c)^d)^n$ for every invertible element $\varepsilon\in A$, which shows that the isomorphism $S_{(f)}\to(S_{(L)})_{(f\otimes c^d)}$ induced from $\varphi_c$ is \emph{independent} of the generator $c$ of $L$ considered, and thus finishes the proof.
+\end{proof}
+
+\begin{env}[3.1.9]
+\label{II.3.1.9}
+Recall
+\end{env}
 
 
 % \subsection{Sheaf on $\operatorname{Proj}(\mathcal{S})$ associated to a graded $\mathcal{S}$-module}
