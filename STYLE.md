@@ -149,6 +149,16 @@ Use
 ```
 for a proof environment (no `\label` needed).
 
+If a proof begins directly with an `enumerate` environment, then use
+```latex
+\begin{proof}
+\medskip\noindent
+\begin{enumerate}
+  ...
+\end{enumerate}
+\end{proof}
+```
+
 
 ### Oldpage
 
