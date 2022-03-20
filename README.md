@@ -3,7 +3,7 @@
 Community translation (French to English) of A. Grothendieck's EGA.
 On est désolé, Grothendieck.
 
-~~View online [here](https://ega.fppf.site/).~~ (the web version is not currently kept up to date; please refer to the PDF versions linked below)
+View online [here](https://ega.fppf.site/).
 
 For discussion regarding this project, visit [#ega:matrix.org](https://matrix.to/#/#ega:matrix.org)!
 
