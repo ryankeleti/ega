@@ -659,7 +659,7 @@ Let $S$ be a positively graded ring.
     it is immediate that the $\mathfrak{p}_n$ thus defined, for $n\geq0$, satisfy the conditions of \sref{II.2.1.9}, and so there exists a unique prime ideal $\mathfrak{p}\in\Proj(S)$ such that $\mathfrak{p}\cap S^{(d)}=\mathfrak{p}'$.
     Since, for every homogeneous $f$ in $S_+$, we have that $V_+(f)=V_+(f^d)$ \sref{II.2.3.2.3}, we see that the above bijection is a \emph{homeomorphism} of topological spaces.
     Finally, with the same notation, $S_{(f)}$ and $S_{(f^d)}$ are canonically identified \sref{II.2.2.2}, and so $\Proj(S)$ and $\Proj(S^{(d)})$ are canonically identified as \emph{schemes}.
-  \item[{\rm(ii)}] If, to each $\mathfrak{p}\in\Proj(S)$, we associate the unique prime ideal $\mathfrak{p}'\in\Proj(S')$ such that $\mathfrak{p}'\cap S_n=\mathfrak{p}\cap S_n$ for every $n>0$ \sref{II.2.1.9}, then it is clear that we have defined a canonical homeomorphism $\Proj(S)\xrightarrow{\sim}\Proj(S')$ of the underlying spaces, since $V_+(f)$ is the same set for $S$ and $S'$ when $f$ is a homogeneous element of $S_+$.
+  \item[{\rm(ii)}] If, to each $\mathfrak{p}\in\Proj(S)$, we associate the unique prime ideal $\mathfrak{p}'\in\Proj(S')$ such that $\mathfrak{p}'\cap S_n=\mathfrak{p}\cap S_n$ for every $n>0$ \sref{II.2.1.9}, then it is clear that we have defined a canonical homeomorphism $\Proj(S)\simto\Proj(S')$ of the underlying spaces, since $V_+(f)$ is the same set for $S$ and $S'$ when $f$ is a homogeneous element of $S_+$.
   Since, further, $S_{(f)}=S'_{(f)}$, $\Proj(S)$ and $\Proj(S')$ can be identified as \emph{schemes}.
 \end{enumerate}
 \end{proof}
@@ -694,7 +694,7 @@ Suppose that $f\in S_d$ and $g\in S_e$.
 Since $D_+(fg)$ can be identified with the prime spectrum of $(S_{(f)})_{g^d/f^e}$ by \sref{II.2.2.2}, the restriction to $D_+(fg)$ of the sheaf $(M_{(f)})\supertilde$ on $D_+(f)$ is canonically identified with the sheaf associated to the module $(M_{(f)})_{g^d/f^e}$ \sref[I]{I.1.3.6}, and thus also with $(M_{(fg)})\supertilde$ \sref{II.2.2.2};
 we thus conclude that there exists a canonical isomorphism
 \[
-  \theta_{g,f}: (M_{(f)})\supertilde|D_+(fg) \xrightarrow{\sim} (M_{(g)})\supertilde|D_+(fg)
+  \theta_{g,f}: (M_{(f)})\supertilde|D_+(fg) \simto (M_{(g)})\supertilde|D_+(fg)
 \]
 such that, if $h$ is a third homogeneous element of $S_+$, then $\theta_{f,h}=\theta_{f,g}\circ\theta_{g,h}$ in $D_+(fgh)$.
 Consequently \sref[0]{0.3.3.1} there exists a quasi-coherent $\sh{O}_X$-module $\sh{F}$ on $X$, and, for every homogeneous $f$ in $S_+$, an isomorphism $\eta_f$ from $\sh{F}|D_+(f)$ to $(M_{f})\supertilde$ such that $\theta_{g,f}=\eta_g\circ\eta_f^{-1}$.
@@ -806,7 +806,7 @@ For all $f\in S_d$ ($d>0$), we define a canonical functorial homomorphism of $S_
 \tag{2.5.11.1}
 \]
 \oldpage[II]{33}
-by composing the homomorphism $M_{(f)}\otimes_{S_{(f)}}N_{(f)}\to M_f\otimes_{S_f}N_f$ (coming from the injections $M_{(f)}\to M_f$, $N_{(f)}\to N_f$, and $S_{(f)}\to S_f$) with the canonical isomorphism $M_f\otimes_{S_f}N_f\xrightarrow{\sim}(M\otimes_S N)_f$ \sref[0]{0.1.3.4}, and by noting that, by the definition of the tensor product of two graded modules, this latter isomorphism preserves degrees;
+by composing the homomorphism $M_{(f)}\otimes_{S_{(f)}}N_{(f)}\to M_f\otimes_{S_f}N_f$ (coming from the injections $M_{(f)}\to M_f$, $N_{(f)}\to N_f$, and $S_{(f)}\to S_f$) with the canonical isomorphism $M_f\otimes_{S_f}N_f\simto(M\otimes_S N)_f$ \sref[0]{0.1.3.4}, and by noting that, by the definition of the tensor product of two graded modules, this latter isomorphism preserves degrees;
 for $x\in M_{md}$ and $y\in N_{nd}$ ($m,n\geq0$), we thus have
 \[
   \lambda_f((x/f^m)\otimes(y/f^n)) = (x\otimes y)/f^{m+n}.
@@ -961,7 +961,7 @@ up to canonical isomorphism.
 \end{corollary}
 
 \begin{proof}
-The first equation follows from \sref{II.2.5.13} and from the existence of the canonical isomorphism $S(m)\otimes_S S(n)\xrightarrow{\sim}S(m+n)$ of degree~$0$ that sends the element $1\otimes1$ (where the first $1$ is in $(S(m))_{-m}$ and the second is in $(S(n))_{-n}$) to the element $1\in(S(m+n))_{-(m+n)}$.
+The first equation follows from \sref{II.2.5.13} and from the existence of the canonical isomorphism $S(m)\otimes_S S(n)\simtoS(m+n)$ of degree~$0$ that sends the element $1\otimes1$ (where the first $1$ is in $(S(m))_{-m}$ and the second is in $(S(n))_{-n}$) to the element $1\in(S(m+n))_{-(m+n)}$.
 It then suffices to prove the second equation for $n=-1$, and, by \sref{II.2.5.13}, this reduces to seeing that $\Hom_S(S(1),S)$ is canonically isomorphic to $S(-1)$, which can be immediately proven by going back to the definitions \sref{II.2.1.2} and by remembering that $S(1)$ is a monogeneous $S$-module.
 \end{proof}
 
@@ -979,7 +979,7 @@ up to canonical isomorphism.
 \end{corollary}
 
 \begin{proof}
-This follows from definitions \sref{II.2.5.10.2} and \sref{II.2.5.10.1}, from Proposition~\sref{II.2.5.13}, and from the existence of a canonical isomorphism $M(n)\xrightarrow{\sim}M\otimes_S S(n)$ of degree~$0$ that, to every $z\in(M(n))_h=M_{n+h}$, associates $z\otimes1\in M_{n+h}\otimes(S(n))_{-n}\subset(M\otimes_S S(n))_h$.
+This follows from definitions \sref{II.2.5.10.2} and \sref{II.2.5.10.1}, from Proposition~\sref{II.2.5.13}, and from the existence of a canonical isomorphism $M(n)\simtoM\otimes_S S(n)$ of degree~$0$ that, to every $z\in(M(n))_h=M_{n+h}$, associates $z\otimes1\in M_{n+h}\otimes(S(n))_{-n}\subset(M\otimes_S S(n))_h$.
 \end{proof}
 
 \begin{env}[2.5.16]
@@ -1080,7 +1080,7 @@ For every $f\in S_d$ ($d>0$), $D_+(f)$ is identical to the set of $\mathfrak{p}\
 \begin{proof}
 Since $X=\bigcup_{g\in S_1}D_+(g)$ by hypothesis, it suffices to show that, for all $g\in S_1$, the set of $\mathfrak{p}\in D_+(g)$ on which $\alpha_d(f)$ does not vanish is identical to $D_+(fg)$.
 But the restriction of $\alpha_d(f)$ to $D_+(g)$ is, by definition, the section corresponding to the element $f/1$ of $(S(d))_{(g)}$;
-under the canonical isomorphism $(S(d))_{(g)}\xrightarrow{\sim}S_{(g)}$ \sref{II.2.5.7}, this section of $\sh{O}_X(d)$ over $D_+(g)$ is identified with the section of $\sh{O}_X$ over $D_+(g)$ that corresponds to the element $f/g^d$ of $S_{(g)}$;
+under the canonical isomorphism $(S(d))_{(g)}\simtoS_{(g)}$ \sref{II.2.5.7}, this section of $\sh{O}_X(d)$ over $D_+(g)$ is identified with the section of $\sh{O}_X$ over $D_+(g)$ that corresponds to the element $f/g^d$ of $S_{(g)}$;
 to say that this section vanishes at $\mathfrak{p}\in D_+(g)$ implies that $f/g^d\in\mathfrak{q}$, where $\mathfrak{q}$ is the prime ideal of $S_{(g)}$ corresponding to $\mathfrak{p}$ \sref{II.2.3.6};
 by definition, this implies that $f\in\mathfrak{p}$, whence the proposition.
 \end{proof}
@@ -1240,7 +1240,7 @@ Then, for every quasi-coherent $\sh{O}_X$-module $\sh{F}$, the canonical homomor
 \begin{proof}
 If $S_+$ is generated by a finite number of elements $f_i\in S_1$, then $X$ is the union of the subspaces $\Spec(S_{(f_i)})$ \sref{II.2.3.6}, which are quasi-compact, and so $X$ is quasi-compact;
 furthermore, $X$ is a scheme \sref{II.2.4.2};
-by \sref[I]{I.9.3.2}, \sref{II.2.5.14.2}, and \sref{II.2.6.3}, we have, for all $f\in S_d$ ($d>0$), a canonical isomorphism $(\Gamma_\bullet(\sh{F}))_{(\alpha_d(f))}\xrightarrow{\sim}\Gamma(D_+(f),\sh{F})$;
+by \sref[I]{I.9.3.2}, \sref{II.2.5.14.2}, and \sref{II.2.6.3}, we have, for all $f\in S_d$ ($d>0$), a canonical isomorphism $(\Gamma_\bullet(\sh{F}))_{(\alpha_d(f))}\simto\Gamma(D_+(f),\sh{F})$;
 also, by definition, $(\Gamma_\bullet(\sh{F}))_{(\alpha_d(f))}$ (where $\Gamma_\bullet(\sh{F})$ is thought of as a $\Gamma_\bullet(\sh{O}_X)$-module) is exactly $(\Gamma_\bullet(\sh{F}))_{(f)}$ (where $\Gamma_\bullet(\sh{F})$ is thought of as an $S$-module);
 if we refer to the definition \sref[I]{I.9.3.1} of the above canonical isomorphism, then we see that it agrees with the homomorphism $\beta_f$, whence the theorem.
 \end{proof}
@@ -1445,8 +1445,8 @@ commutes.
 \label{II.2.8.6}
 Now let $M$ be a graded $S$-module, and consider the $S'$-module $M_{[\varphi]}$, which is evidently graded.
 Let $f'$ be homogeneous in $S'_+$, and let $f=\varphi(f')$;
-we know \sref[0]{0.1.5.2} that there is a canonical isomorphism $(M_{[\varphi]})_{f'}\xrightarrow{\sim}(M_f)_{[\varphi_f]}$, and it is immediate that this isomorphism preserves degree, whence a canonical isomorphism $(M_{[\varphi]})_{(f')}\xrightarrow{\sim}(M_{(f)})_{[\varphi_{(f)}]}$.
-To this isomorphism, there canonically corresponds an isomorphism of sheaves $(M_{[\varphi]})\supertilde|D_+(f')\xrightarrow{\sim}(\Phi_f)_*(\widetilde(M)|D_+(f))$ (\sref{II.2.5.2} and \sref[I]{I.1.6.3}).
+we know \sref[0]{0.1.5.2} that there is a canonical isomorphism $(M_{[\varphi]})_{f'}\simto(M_f)_{[\varphi_f]}$, and it is immediate that this isomorphism preserves degree, whence a canonical isomorphism $(M_{[\varphi]})_{(f')}\simto(M_{(f)})_{[\varphi_{(f)}]}$.
+To this isomorphism, there canonically corresponds an isomorphism of sheaves $(M_{[\varphi]})\supertilde|D_+(f')\simto(\Phi_f)_*(\widetilde(M)|D_+(f))$ (\sref{II.2.5.2} and \sref[I]{I.1.6.3}).
 Furthemore,
 \oldpage{43}
 if $g'$ is another homogeneous element of $S'_+$, and $g=\varphi(g')$, then the diagram
@@ -1460,9 +1460,9 @@ if $g'$ is another homogeneous element of $S'_+$, and $g=\varphi(g')$, then the 
 \]
 commutes, whence we immediately conclude that the isomorphism
 \[
-  (M_{[\varphi]})\supertilde|D_+(f'g') \xrightarrow{\sim} (\Phi_{fg})_*(\widetilde{M}|D_+(fg))
+  (M_{[\varphi]})\supertilde|D_+(f'g') \simto (\Phi_{fg})_*(\widetilde{M}|D_+(fg))
 \]
-is the restriction to $D_+(f'g')$ of the isomorphism $(M_{[\varphi]})\supertilde|D_+(f')\xrightarrow{\sim}(\Phi_f)_*(\widetilde{M}|D_+(f))$.
+is the restriction to $D_+(f'g')$ of the isomorphism $(M_{[\varphi]})\supertilde|D_+(f')\simto(\Phi_f)_*(\widetilde{M}|D_+(f))$.
 Since $\Phi_f$ is the restriction to $D_+(f)$ of the morphism $\Phi$, we see that, taking \sref{II.2.8.1.1} into account, and setting $X'=\Proj(S)'$:
 \end{env}
 
@@ -1488,7 +1488,7 @@ Indeed, for $f'\in S'_d$ ($d>0$), we define a canonical functorial homomorphism 
   \nu_f: M'_{(f')}\otimes_{S'_{(f')}}S_{(f)} \to (M'\otimes_{S'}S)_{(f)}
 \tag{2.8.8.1}
 \]
-by composing the homomorphism $M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}\to M'_{f'}\otimes_{S'_{f'}}S_f$ and the canonical isomorphism $M'_{f'}\otimes_{S'_{f'}}S_f\xrightarrow{\sim}(M'\otimes_{S'}S)_f$ \sref[0]{0.1.5.4}, and noting that the latter preserves degrees.
+by composing the homomorphism $M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}\to M'_{f'}\otimes_{S'_{f'}}S_f$ and the canonical isomorphism $M'_{f'}\otimes_{S'_{f'}}S_f\simto(M'\otimes_{S'}S)_f$ \sref[0]{0.1.5.4}, and noting that the latter preserves degrees.
 We can immediately verify the compatibility of $\nu_f$ with the restriction operators from $D_+(f)$ to $D_+(fg)$ (for any $g'\in S'_+$ and $g=\varphi(g')$), whence the definition of the homomorphism
 \[
   \nu: \Phi^*(\widetilde{M'}) \to (M'\otimes_{S'}S)\supertilde|G(\varphi)
@@ -1507,7 +1507,7 @@ we finally can prove that $\eta'_f$ and $\nu_f$ are inverse isomorphisms to one 
 In particular, it follows from \sref{II.2.1.2.1} that we have a canonical homomorphism
 \[
 \label{II.2.8.8.2}
-  \Phi^*(\sh{O}_{X'}(n)) \xrightarrow{\sim} \sh{O}_X(n)|G(\varphi)
+  \Phi^*(\sh{O}_{X'}(n)) \simto \sh{O}_X(n)|G(\varphi)
 \tag{2.8.8.2}
 \]
 for all $n\in\bb{Z}$.
@@ -1543,7 +1543,7 @@ furthermore, the canonical homomorphism $\nu:\Phi^*(\widetilde{M'})\to\widetilde
 
 \begin{proof}
 The first claim will be proven if we show that, for every homogenous $f'$ in $S'_+$, setting $f=\varphi(f')$, the restrictions of $\Phi$ and $p$ to $D_+(f)$ identify this scheme with the product $D_+(f')\times_{Y'}Y$ \sref[I]{I.3.2.6.2};
-in other words, it suffices \sref[I]{I.3.2.2} to prove that $S_{(f)}$ is canonically identified with $S_f\xrightarrow{\sim}S'_{f'}\otimes_{A'}A$, which is immediate by the existence of the canonical isomorphism $S_f\xrightarrow{\sim}S'_{f'}\otimes_{A'}A$ that preserves degrees \sref[0]{0.1.5.4}.
+in other words, it suffices \sref[I]{I.3.2.2} to prove that $S_{(f)}$ is canonically identified with $S_f\simtoS'_{f'}\otimes_{A'}A$, which is immediate by the existence of the canonical isomorphism $S_f\simtoS'_{f'}\otimes_{A'}A$ that preserves degrees \sref[0]{0.1.5.4}.
 The second claim then follows from the fact that $M'_{(f')}\otimes_{S'_{(f')}}S_{(f)}$ can be identified, by the above, with $M'_{(f')}\otimes_{A'}A$, and this can be identified with $M_{(f)}$, since $M_f$ is canonically identified with $M'_{f'}\otimes_{A'}A$ by an isomorphism that preserves degrees.
 \end{proof}
 

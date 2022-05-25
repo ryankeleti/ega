@@ -23,7 +23,7 @@ by hypothesis, the graded $(\sh{O}_Y|U)$-algebra $\sh{S}|U$ is isomorphic to $\w
 set $X_U=\Proj(\Gamma(U,\sh{S}))$.
 Let $U'\subset U$ be another open affine of $Y$, with ring $A'$, and let $j:U'\to U$ be the canonical injection, which corresponds to the restriction homomorphism $A\to A'$;
 we have that $\sh{S}|U'=j^*(\sh{S}|U)$, and so $S'=\Gamma(U',\sh{S})$ is canonically identified with $X_U\times_U U'$, and thus also with $f_U^{-1}(U')$, where we denote by $f_U$ the structure morphism $X_U\to U$ \sref[I]{I.4.4.1}.
-We denote by $\sigma_{U',U}$ the canonical isomorphism $f_U^{-1}(U')\xrightarrow{\sim}X_{U'}$ thus defined, and by $\rho_{U',U}$ the open immersion $X_{U'}\to X_U$ obtained by composing $\sigma_{U',U}^{-1}$ with the canonical injection $f_U^{-1}(U')\to X_U$.
+We denote by $\sigma_{U',U}$ the canonical isomorphism $f_U^{-1}(U')\simtoX_{U'}$ thus defined, and by $\rho_{U',U}$ the open immersion $X_{U'}\to X_U$ obtained by composing $\sigma_{U',U}^{-1}$ with the canonical injection $f_U^{-1}(U')\to X_U$.
 It is immediate that, if $U''\subset U'$ is another open affine of $Y$, then $\rho_{U'',U}=\rho_{U'',U'}\circ\rho_{U',U}$.
 \end{env}
 
@@ -47,7 +47,7 @@ commutes.
 
 \begin{proof}
 Given affine opens $U$ and $V$ of $Y$, let $X_{U,V}$ be the prescheme induced on $f_U^{-1}(U\cap V)$ by $X_U$;
-we are going to define a $Y$-isomorphism $\theta_{U,V}:X_{V,U}\xrightarrow{\sim}X_{U,V}$.
+we are going to define a $Y$-isomorphism $\theta_{U,V}:X_{V,U}\simtoX_{U,V}$.
 For this, we consider an open affine $W\subset U\cap V$:
 by composing the isomorphisms
 \[
@@ -262,8 +262,27 @@ Let $Y$ be an integral prescheme, and $\sh{S}$ a quasi-coherent graded $\sh{O}_Y
 
 \begin{env}[3.2.1]
 \label{II.3.2.1}
-Let $Y$ be
+Let $Y$ be a prescheme, $\sh{S}$ a quasi-coherent positively-graded $\OO_Y$-algebra, and $\sh{M}$ a quasi-coherent graded $\sh{S}$-module (on $(Y,\OO_Y)$, or, equivalently \sref[I]{I.9.6.1}, on the ringed space $(Y,\sh{S})$).
+With the notation of \sref{II.3.1.1}, we denote by $\widetilde{\sh{M}}_U$ the quasi-coherent $\OO_{X_U}$-module $(\Gamma(U,\sh{M}))\supertilde$;
+for $U'\subset U$, $\Gamma(U',\sh{M})$ is canonically identified with $\Gamma(U,\sh{M})\otimes_A A'$ \sref[I]{I.1.6.4};
+thus we have $\widetilde{\sh{M}}_{U'}=\rho_{U',U}^*(\widetilde{\sh{M}}_U)$ \sref{II.2.8.11}.
 \end{env}
+
+\begin{proposition}[3.2.2]
+\label{II.3.2.2}
+There exists on $\Proj(\sh{S})=X$ exactly one quasi-coherent $\OO_X$-module $\sh{M}$ such that, for every open affine $U$ of $Y$, we have $\eta_U^*((\Gamma(U,\sh{M}))\supertilde)=\widetilde{M}|f^{-1}(U)$ (denoting by $\eta_U$ the isomorphism $f^{-1}(U)\simto\Proj(\Gamma(U,\sh{S}))$), where $f$ is the structure morphism $X\to Y$.
+\end{proposition}
+
+\begin{proof}
+Since $\rho_{U',U}$ is identified with the injection morphism $f^{-1}(U')\to f^{-1}(U)$ \sref{II.3.1.2.1}, the proposition follows immediately from the relation $\widetilde{\sh{M}}_{U'}=\rho_{U',U}^*(\widetilde{\sh{M}}_U)$ and from the gluing principle for sheaves \sref[0]{0.3.3.1}.
+\end{proof}
+
+We say that $\widetilde{\sh{M}}$ is the $\OO_X$-module \emph{associated to} the quasi-coherent graded $\sh{S}$-module $\sh{M}$.
+
+\begin{proposition}[3.2.3]
+\label{II.3.2.3}
+Let
+\end{proposition}
 
 
 % \subsection{Graded $\mathcal{S}$-module associated to a sheaf on $\operatorname{Proj}(\mathcal{S})$}
