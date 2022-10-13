@@ -3,7 +3,7 @@
 Community translation (French to English) of A. Grothendieck's EGA.
 On est désolé, Grothendieck.
 
-~~View online [here](https://ega.fppf.site/).~~ (the web version is not currently kept up to date; please refer to the PDF versions linked below)
+View online [here](https://ega.fppf.site/).
 
 For discussion regarding this project, visit [#ega:matrix.org](https://matrix.to/#/#ega:matrix.org)!
 
@@ -14,18 +14,18 @@ To compile, `make book`, `make pdfs`, or `make all`.
 
 Individual volumes can be downloaded separately:
 
-- [What this is](https://labs.thosgood.com/ega/what-auto.pdf)
-- [Introduction](https://labs.thosgood.com/ega/intro-auto.pdf)
-- [EGA 0](https://labs.thosgood.com/ega/ega0-auto.pdf)
-- [EGA I](https://labs.thosgood.com/ega/ega1-auto.pdf)
-- [EGA II](https://labs.thosgood.com/ega/ega2-auto.pdf)
-- [EGA III](https://labs.thosgood.com/ega/ega3-auto.pdf)
-- [EGA IV](https://labs.thosgood.com/ega/ega4-auto.pdf)
-- [References](https://labs.thosgood.com/ega/ref-auto.pdf)
+- [What this is](https://fppf.site/ega/what-auto.pdf)
+- [Introduction](https://fppf.site/ega/intro-auto.pdf)
+- [EGA 0](https://fppf.site/ega/ega0-auto.pdf)
+- [EGA I](https://fppf.site/ega/ega1-auto.pdf)
+- [EGA II](https://fppf.site/ega/ega2-auto.pdf)
+- [EGA III](https://fppf.site/ega/ega3-auto.pdf)
+- [EGA IV](https://fppf.site/ega/ega4-auto.pdf)
+- [References](https://fppf.site/ega/ref-auto.pdf)
 
 Alternatively, the full document can be downloaded:
 
-- [Book](https://labs.thosgood.com/ega/book-auto.pdf)
+- [Book](https://fppf.site/ega/book-auto.pdf)
 
 (All the PDFs are auto-compliled every hour if any changes have been made since the last auto-compile, so will always be up to date with the latest commit).
 
