@@ -149,6 +149,6 @@ Here is the current status of the translation, along with who is currently worki
 - check for any `\unsure` commands in the source
 - check that all `\hyperref` references are found
 - when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
-- web version? work in progress
-- make style guidelines?
+- web version? (work in progress!)
+- more detailed style guidelines? (e.g. language, sentence construction, etc.)
 - link (M), (G), (T) references
