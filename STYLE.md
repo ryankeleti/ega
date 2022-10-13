@@ -84,6 +84,17 @@ If there is another sentence after an `\item`, use the following format:
 \end{enumerate}
 ```
 
+If an environment (e.g. a proof) begins directly with an `enumerate`, then use
+```latex
+\begin{proof}
+\medskip\noindent
+\begin{enumerate}
+  ...
+\end{enumerate}
+\end{proof}
+```
+
+
 For equations, write
 ```latex
 \[
@@ -103,16 +114,21 @@ where `x.y.z.n` is the tag, and `R` the volume number.
 
 ### Environment style
 
-The custom environment styles are
-* `env`
-* `theorem`
-* `proposition`
-* `lemma`
-* `corollary`
-* `definition`
-* `example`
-* `remark`
-* `notation`
+The custom environment styles are split into two groups:
+
+- Italicised
+  * `env`
+  * `theorem`
+  * `proposition`
+  * `lemma`
+  * `corollary`
+- Upright
+  * `definition`
+  * `example`
+  * `examples`
+  * `remark`
+  * `remarks`
+  * `notation`
 
 Use `env` for the general environments labeled `(x.y.z)` in the text.
 
@@ -148,17 +164,6 @@ Use
 \end{proof}
 ```
 for a proof environment (no `\label` needed).
-
-If a proof begins directly with an `enumerate` environment, then use
-```latex
-\begin{proof}
-\medskip\noindent
-\begin{enumerate}
-  ...
-\end{enumerate}
-\end{proof}
-```
-
 
 ### Oldpage
 

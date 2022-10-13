@@ -262,27 +262,27 @@ Let $Y$ be an integral prescheme, and $\sh{S}$ a quasi-coherent graded $\sh{O}_Y
 
 \begin{env}[3.2.1]
 \label{II.3.2.1}
-Let $Y$ be a prescheme, $\sh{S}$ a quasi-coherent positively-graded $\OO_Y$-algebra, and $\sh{M}$ a quasi-coherent graded $\sh{S}$-module (on $(Y,\OO_Y)$, or, equivalently \sref[I]{I.9.6.1}, on the ringed space $(Y,\sh{S})$).
-With the notation of \sref{II.3.1.1}, we denote by $\widetilde{\sh{M}}_U$ the quasi-coherent $\OO_{X_U}$-module $(\Gamma(U,\sh{M}))\supertilde$;
+Let $Y$ be a prescheme, $\sh{S}$ a quasi-coherent positively-graded $\sh{O}_Y$-algebra, and $\sh{M}$ a quasi-coherent graded $\sh{S}$-module (on $(Y,\sh{O}_Y)$, or, equivalently \sref[I]{I.9.6.1}, on the ringed space $(Y,\sh{S})$).
+With the notation of \sref{II.3.1.1}, we denote by $\widetilde{\sh{M}}_U$ the quasi-coherent $\sh{O}_{X_U}$-module $(\Gamma(U,\sh{M}))\supertilde$;
 for $U'\subset U$, $\Gamma(U',\sh{M})$ is canonically identified with $\Gamma(U,\sh{M})\otimes_A A'$ \sref[I]{I.1.6.4};
 thus we have $\widetilde{\sh{M}}_{U'}=\rho_{U',U}^*(\widetilde{\sh{M}}_U)$ \sref{II.2.8.11}.
 \end{env}
 
 \begin{proposition}[3.2.2]
 \label{II.3.2.2}
-There exists on $\Proj(\sh{S})=X$ exactly one quasi-coherent $\OO_X$-module $\sh{M}$ such that, for every affine open $U$ of $Y$, we have $\eta_U^*((\Gamma(U,\sh{M}))\supertilde)=\widetilde{M}|f^{-1}(U)$ (denoting by $\eta_U$ the isomorphism $f^{-1}(U)\simto\Proj(\Gamma(U,\sh{S}))$), where $f$ is the structure morphism $X\to Y$.
+There exists on $\Proj(\sh{S})=X$ exactly one quasi-coherent $\sh{O}_X$-module $\sh{M}$ such that, for every affine open $U$ of $Y$, we have $\eta_U^*((\Gamma(U,\sh{M}))\supertilde)=\widetilde{M}|f^{-1}(U)$ (denoting by $\eta_U$ the isomorphism $f^{-1}(U)\simto\Proj(\Gamma(U,\sh{S}))$), where $f$ is the structure morphism $X\to Y$.
 \end{proposition}
 
 \begin{proof}
 Since $\rho_{U',U}$ is identified with the injection morphism $f^{-1}(U')\to f^{-1}(U)$ \sref{II.3.1.2.1}, the proposition follows immediately from the relation $\widetilde{\sh{M}}_{U'}=\rho_{U',U}^*(\widetilde{\sh{M}}_U)$ and from the gluing principle for sheaves \sref[0]{0.3.3.1}.
 \end{proof}
 
-We say that $\widetilde{\sh{M}}$ is the $\OO_X$-module \emph{associated to} the quasi-coherent graded $\sh{S}$-module $\sh{M}$.
+We say that $\widetilde{\sh{M}}$ is the $\sh{O}_X$-module \emph{associated to} the quasi-coherent graded $\sh{S}$-module $\sh{M}$.
 
 \begin{proposition}[3.2.3]
 \label{II.3.2.3}
 Let $\sh{M}$ be a quasi-coherent graded $\sh{S}$-module, and let $f\in\Gamma(Y,\sh{S}_d)$ (for $d>0$).
-If $\xi_f$ is the canonical isomorphism from $X_f$ to the $Y$-prescheme $Z_f=\Spec(\sh{S}^{(d)}/(f-1)\sh{S}^{(d)})$ \sref{II.3.1.4}, then $(\xi_f)_*(\widetilde{\sh{M}}|X_f)$ is the $\OO_{Z_f}$-module $(\sh{M}^{(l)}/(f-1)\sh{M}^{(d)})$ \sref{II.1.4.3}.
+If $\xi_f$ is the canonical isomorphism from $X_f$ to the $Y$-prescheme $Z_f=\Spec(\sh{S}^{(d)}/(f-1)\sh{S}^{(d)})$ \sref{II.3.1.4}, then $(\xi_f)_*(\widetilde{\sh{M}}|X_f)$ is the $\sh{O}_{Z_f}$-module $(\sh{M}^{(l)}/(f-1)\sh{M}^{(d)})$ \sref{II.1.4.3}.
 \end{proposition}
 
 \begin{proof}
@@ -291,17 +291,17 @@ Since the question is local on $Y$, we can immediately reduce to \sref{II.2.2.5}
 
 \begin{proposition}[3.2.4]
 \label{II.3.2.4}
-The $\OO_X$-module $\widetilde{\sh{M}}$ is an exact additive covariant functor in $\sh{M}$, from the category of quasi-coherent graded $\sh{S}$-modules to the category of quasi-coherent $\OO_X$-modules, that commutes with inductive limits and direct sums.
+The $\sh{O}_X$-module $\widetilde{\sh{M}}$ is an exact additive covariant functor in $\sh{M}$, from the category of quasi-coherent graded $\sh{S}$-modules to the category of quasi-coherent $\sh{O}_X$-modules, that commutes with inductive limits and direct sums.
 \end{proposition}
 
 \begin{proof}
 Since the question is local on $Y$, we can reduce to \sref[I]{I.1.3.11}, \sref[I]{I.1.3.9}, and \sref{II.2.5.4}.
 \end{proof}
 
-In particular, if $\sh{N}$ is a quasi-coherent graded sub-$\sh{S}$-module of $\sh{M}$, then $\widetilde{\sh{N}}$ is canonically identified with with a quasi-coherent sub-$\OO_X$-module of $\widetilde{\sh{M}}$;
-in particular, for every quasi-coherent graded sheaf $\sh{J}$ of ideals of $\sh{S}$, $\widetilde{\sh{J}}$ is a quasi-coherent sheaf of ideals of $\OO_X$.
+In particular, if $\sh{N}$ is a quasi-coherent graded sub-$\sh{S}$-module of $\sh{M}$, then $\widetilde{\sh{N}}$ is canonically identified with with a quasi-coherent sub-$\sh{O}_X$-module of $\widetilde{\sh{M}}$;
+in particular, for every quasi-coherent graded sheaf $\sh{J}$ of ideals of $\sh{S}$, $\widetilde{\sh{J}}$ is a quasi-coherent sheaf of ideals of $\sh{O}_X$.
 
-If $\sh{M}$ is a quasi-coherent graded $\sh{S}$-module, and $\sh{I}$ a quasi-coherent sheaf of ideals of $\OO_Y$, then $\sh{I}\sh{M}$ is a quasi-coherent graded sub-$\sh{S}$-module of $\sh{M}$, and we have
+If $\sh{M}$ is a quasi-coherent graded $\sh{S}$-module, and $\sh{I}$ a quasi-coherent sheaf of ideals of $\sh{O}_Y$, then $\sh{I}\sh{M}$ is a quasi-coherent graded sub-$\sh{S}$-module of $\sh{M}$, and we have
 \[
 \label{II.3.2.4.1}
   (\sh{I}\sh{M})\supertilde = \sh{I}\cdot\widetilde{\sh{M}}
@@ -315,12 +315,12 @@ For every homogeneous element $f$ of $S_+$, the restriction to $D_+(f)=\Spec(S_{
 \begin{proposition}[3.2.5]
 \label{II.3.2.5}
 Let $f\in\Gamma(Y,\sh{S}_d)$ (for $d>0$).
-On the open subset $X_f$, the $(\OO_X|X_f)$-module $(\sh{S}(nd))\supertilde X_f$ is canonically isomorphic to $\OO_X|X_f$ for all $n\in\bb{Z}$.
-In particular, if the $\OO_Y$-algebra $\sh{S}$ is generated by $\sh{S}_1$ \sref{II.3.1.9}, then the $\OO_X$-modules $(\sh{S}(n))\supertilde$ are invertible for all $n\in\bb{Z}$.
+On the open subset $X_f$, the $(\sh{O}_X|X_f)$-module $(\sh{S}(nd))\supertilde X_f$ is canonically isomorphic to $\sh{O}_X|X_f$ for all $n\in\bb{Z}$.
+In particular, if the $\sh{O}_Y$-algebra $\sh{S}$ is generated by $\sh{S}_1$ \sref{II.3.1.9}, then the $\sh{O}_X$-modules $(\sh{S}(n))\supertilde$ are invertible for all $n\in\bb{Z}$.
 \end{proposition}
 
 \begin{proof}
-Indeed, for every affine open $U$ of $Y$, we defined in \sref{II.2.5.7} a canonical isomorphism from $(\sh{S}(nd))\supertilde|(X_f\cap\vphi^{-1}(U))$ to $\OO_X|(X_f\cap\vphi^{-1}(U))$, taking \sref{II.3.1.4} into account (where $\vphi$ is the structure morphism $X\to Y$);
+Indeed, for every affine open $U$ of $Y$, we defined in \sref{II.2.5.7} a canonical isomorphism from $(\sh{S}(nd))\supertilde|(X_f\cap\vphi^{-1}(U))$ to $\sh{O}_X|(X_f\cap\vphi^{-1}(U))$, taking \sref{II.3.1.4} into account (where $\vphi$ is the structure morphism $X\to Y$);
 it is immediate that these isomorphisms are compatible with the restriction from $U$ to an affine open $U'\subset U$, whence the first claim.
 To prove the second, it suffices to note that, if $\sh{S}$ is generated by $\sh{S}_1$, then there is a cover $(U_\alpha)$ of $Y$ by affine opens such that $\Gamma(U_\alpha,\sh{S})$ is generated by $\Gamma(U_\alpha,\sh{S})_1=\Gamma(U_\alpha,\sh{S}_1)$;
 we can then apply the result of \sref{II.2.5.9}, since the property of being invertible is local.
@@ -329,19 +329,19 @@ we can then apply the result of \sref{II.2.5.9}, since the property of being inv
 We again set, for all $n\in\bb{Z}$,
 \[
 \label{II.3.2.5.1}
-  \OO_X(n) = (\sh{S}(n))\supertilde
+  \sh{O}_X(n) = (\sh{S}(n))\supertilde
 \tag{3.2.5.1}
 \]
-and, for all $\OO_X$-modules $\scr{F}$,
+and, for all $\sh{O}_X$-modules $\scr{F}$,
 \[
 \label{II.3.2.5.2}
-  \sh{F}(n) = \sh{F}\otimes_{\OO_X}\OO_X(n).
+  \sh{F}(n) = \sh{F}\otimes_{\sh{O}_X}\sh{O}_X(n).
 \tag{3.2.5.2}
 \]
 
 It follows immediately from these definitions that, for every open subset $U$ of $Y$, we have
 \[
-  ((\sh{S}|U)(n))\supertilde = \OO_X(n)|f^{-1}(U)
+  ((\sh{S}|U)(n))\supertilde = \sh{O}_X(n)|f^{-1}(U)
 \]
 where $f$ is the structure morphism $X\to Y$.
 
@@ -351,13 +351,13 @@ Let $\sh{M}$ and $\sh{N}$ be quasi-coherent graded $\sh{S}$-modules.
 Then there exists a canonical functorial (in $\sh{M}$ and $\sh{N}$) homomorphism
 \[
 \label{II.3.2.6.1}
-  \lambda : \widetilde{\sh{M}}\otimes_{\OO_X}\widetilde{\sh{N}} \to (\sh{M}\otimes_{\sh{S}}\sh{N})\supertilde
+  \lambda : \widetilde{\sh{M}}\otimes_{\sh{O}_X}\widetilde{\sh{N}} \to (\sh{M}\otimes_{\sh{S}}\sh{N})\supertilde
 \tag{3.2.6.1}
 \]
 and a canonical functorial (in $\sh{M}$ and $\sh{N}$) homomorphism
 \[
 \label{II.3.2.6.2}
-  \mu : (\shHom_{\sh{S}}(\sh{M},\sh{N}))\supertilde \to \shHom_{\OO_X}(\widetilde{\sh{M}},\widetilde{\sh{N}}).
+  \mu : (\shHom_{\sh{S}}(\sh{M},\sh{N}))\supertilde \to \shHom_{\sh{O}_X}(\widetilde{\sh{M}},\widetilde{\sh{N}}).
 \tag{3.2.6.2}
 \]
 
@@ -366,12 +366,78 @@ if, further, $\sh{M}$ admits a finite presentation \sref{II.3.1.1}, then $\mu$ i
 \end{proposition}
 
 \begin{proof}
-  The
+The isomorphisms $\lambda$ and $\mu$ were defined in \sref{II.2.5.11.2} and \sref{II.2.5.12.2} in the case where $Y$ is affine;
+since these definitions are local, they transfer immediately to the general case considered here, taking \sref{II.2.8.14} into account.
+\end{proof}
+
+\begin{corollary}[3.2.7]
+\label{II.3.2.7}
+If $\sh{S}$ is generated by $\sh{S}_1$, then, for any $m,n\in\bb{Z}$,
+\[
+\label{II.3.2.7.1}
+  \sh{O}_X(m)\otimes_{\sh{O}_X}\sh{O}_X(n) = \sh{O}_X(m+n)
+\tag{3.2.7.1}
+\]
+\[
+\label{II.3.2.7.2}
+  \sh{O}_X(n) = (\sh{O}_X(1))^{\otimes n}
+\tag{3.2.7.2}
+\]
+up to canonical isomorphism.
+\end{corollary}
+
+\oldpage[II]{56}
+
+\begin{corollary}[3.2.8]
+\label{II.3.2.8}
+If $\sh{S}$ is generated by $\sh{S}_1$, then, for any graded $\sh{S}$-module $\sh{M}$ and any $n\in\bb{Z}$,
+\[
+\label{II.3.2.8.1}
+  (\sh{M}(n))\supertilde = \widetilde{\sh{M}}(n)
+\tag{3.2.8.1}
+\]
+up to canonical isomorphism.
+\end{corollary}
+
+\begin{proof}
+This follows from the corresponding properties in the case where $Y$ is affine (\sref{II.2.5.14} and \sref{II.2.5.15}), along with \sref{II.2.8.11}.
+\end{proof}
+
+\begin{remarks}[3.2.9]
+\label{II.3.2.9}
+\medskip\noindent
+  \begin{enumerate}
+    \item If $\sh{S}=\sh{A}[T]$, with $\sh{A}$ a quasi-coherent $\sh{O}_Y$-algebra \sref{II.3.1.7}, then we immediately see that all the invertible $\sh{O}$-modules $\sh{O}(n)$ are canonically isomorphic to $\sh{O}_X$.
+
+      Furthermore, let $\sh{N}$ be a quasi-coherent $\sh{A}$-module, and set $\sh{M}=\sh{N}\otimes_{\sh{A}}\sh{A}[T]$.
+      It then follows from \sref{II.3.2.3} and \sref{II.3.1.7} that, under the canonical identification of $X=\Proj(\sh{A}[T])$ with $X'=\Spec(\sh{A})$, the $\sh{O}_X$-module $\widetilde{\sh{M}}$ is identified with the $\sh{O}_{X'}$-module $\widetilde{\sh{N}}$ associated to $\sh{N}$ (in the sense of \sref{II.1.4.3}).
+    \item Let $\sh{S}$ be an arbitrary graded $\sh{O}_Y$-algebra, and $\sh{S}'$ the graded $\sh{O}_Y$-algebra such that $\sh{S}'_0=\sh{O}_Y$ and $\sh{S}'_n=\sh{S}_n$ for all $n>0$;
+      then the canonical isomorphism from $X=\Proj(\sh{S})$ to $X'=\Proj(\sh{S}')$ \sref{II.3.1.8}[(ii)] identifies $\sh{O}_X(n)$ with $\sh{O}_{X'}(n)$ for all $n\in\bb{Z}$.
+      This follows from the same proposition for the affine case \sref{II.2.5.16} and from the fact that the identifications, for the affine opens of $Y$, commute with the restriction operations.
+      Similarly, let $X^{(d)}=\Proj(\sh{S}^{(d)})$;
+      then the canonical isomorphism from $X$ to $X^{(d)}$ \sref{II.3.1.8}[(i)] identifies $\sh{O}_X(nd)$ with $\sh{O}_{X^{(d)}}(n)$ for all $n\in\bb{Z}$.
+  \end{enumerate}
+\end{remarks}
+
+\begin{proposition}[3.2.10]
+\label{II.3.2.10}
+Let $\sh{L}$ be an invertible $\sh{O}_Y$-module, and $g$ the canonical isomorphism from $X_{(\sh{L})}=\Proj(\sh{S}_{(\sh{L})})$ to $X=\Proj(\sh{S})$ \sref{II.3.1.8}[(iii)].
+Then, for any $n\in\bb{Z}$, $g_*(\sh{O}_{X_{(\sh{L})}}(n))$ is canonically isomorphic to $\sh{O}_X(n)\otimes_Y\sh{L}^{\otimes n}$.
+\end{proposition}
+
+\begin{proof}
+Suppose first of all that $Y$ is affine, of ring $A$, and that $\sh{L}=\widetilde{L}$, where $L$ is a free monogenous $A$-module.
+With the notation from the proof of \sref{II.3.1.8}[(iii)], we define, for $f\in S_d$, an isomorphism from $(S(n))_{(f)}\otimes_A L^{\otimes n}$ to $(S_{(L)}(n))_{(f\otimes c^d)}$ by sending $(x/f^k)\otimes c^n$, where $x\in S_{kd+n}$, to the element $(x\otimes c^{n+kd})/(f\otimes c^d)^k$;
+it is immediate that this isomorphism is independent of the chosen generator $c$ of $L$;
+further, the isomorphisms thus defined for each $f\in S_+$ are compatible with the restriction operators $D_+(f)\to D_+(fg)$.
+Finally, in the general case, we easily see, from the definitions \sref{II.3.1.1}, that the isomorphisms thus defined for each affine open $U$ of $Y$ are compatible with passing from $U$ to an affine open $U'\subset U$.
 \end{proof}
 
 
-% \subsection{Graded $\mathcal{S}$-module associated to a sheaf on $\operatorname{Proj}(\mathcal{S})$}
-% \label{subsection:II.3.3}
+\subsection{Graded $\mathcal{S}$-module associated to a sheaf on $\operatorname{Proj}(\mathcal{S})$}
+\label{subsection:II.3.3}
+
+We
 
 
 % \subsection{Finiteness conditions}
