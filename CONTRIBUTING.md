@@ -1,19 +1,8 @@
 ## notes for contributors
-- please do not commit PDF files
-- if you have contributed, then add your name to `CONTRIBUTORS`
 
-## TODO
-- check errata in EGA II and onwards
-- more consistent use of Proposition/Theorem/Definition/whatever in front of `\sref`s
-- lists of notation?
-- terminology indices?
-- hyperref links to equations (e.g. 3.3.9.1)
-- check for any `\unsure` commands in the source
-- check that all `\hyperref` references are found
-- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
-- web version? work in progress
-- make style guidelines?
-- link (M), (G), (T) references
+- please *do not* commit PDF files
+- please *do* read the below (especially the section on LaTeX conventions)
+- if you have contributed, then add your name to `CONTRIBUTORS`
 
 ## resources for contributors
 
@@ -24,5 +13,7 @@
 - some chapters (I think just V and VI) have already been translated: [check here](https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/pubtexts.php)
 
 ## LaTeX conventions
-- for commands, see `preamble-base.tex`, `preamble,tex`, `preamble-web.tex`.
+
+- for commands, see `preamble-base.tex`, `preamble,tex`, `preamble-web.tex`
+- note that this redefines a few things, so please follow this! e.g. use `\bb` instead of `\mathbb`, `\vphi` instead of `\varphi`, and so on
 

@@ -17,21 +17,21 @@ if $\sh{S}$ and $\sh{M}$ are quasi-coherent, then $\sh{M}(n)$ is a quasi-coheren
 
 We say that $\sh{M}$ is a graded $\sh{S}$-module \emph{of finite type} (resp. admitting a \emph{finite presentation})  if, for all $y\in Y$, there exists an open neighbourhood $U$ of $y$, along with integers $n_i$ (resp. integers $m_i$ and $n_j$) such that there is a surjective degree~$0$ homomorphism $\bigoplus_{i=1}^r(\sh{S}(n_i)|U)\to\sh{M}|U$ (resp. such that $\sh{M}|U$ is isomorphic to the cokernel of a degree~$0$ homomorphism $\bigoplus_{i=1}^r(\sh{S}(m_i)|U)\to\bigoplus_{j 1}^s(\sh{S}(n_J)|U)$).
 
-Let $U$ be an open affine of $Y$, with ring $A=\Gamma(U,\sh{O}_Y)$;
+Let $U$ be an affine open of $Y$, with ring $A=\Gamma(U,\sh{O}_Y)$;
 by hypothesis, the graded $(\sh{O}_Y|U)$-algebra $\sh{S}|U$ is isomorphic to $\widetilde{S}$, where $S=\Gamma(U,\sh{S})$ is a graded $A$-algebra \sref[I]{I.1.4.3};
 \oldpage[II]{50}
 set $X_U=\Proj(\Gamma(U,\sh{S}))$.
-Let $U'\subset U$ be another open affine of $Y$, with ring $A'$, and let $j:U'\to U$ be the canonical injection, which corresponds to the restriction homomorphism $A\to A'$;
+Let $U'\subset U$ be another affine open of $Y$, with ring $A'$, and let $j:U'\to U$ be the canonical injection, which corresponds to the restriction homomorphism $A\to A'$;
 we have that $\sh{S}|U'=j^*(\sh{S}|U)$, and so $S'=\Gamma(U',\sh{S})$ is canonically identified with $X_U\times_U U'$, and thus also with $f_U^{-1}(U')$, where we denote by $f_U$ the structure morphism $X_U\to U$ \sref[I]{I.4.4.1}.
 We denote by $\sigma_{U',U}$ the canonical isomorphism $f_U^{-1}(U')\simtoX_{U'}$ thus defined, and by $\rho_{U',U}$ the open immersion $X_{U'}\to X_U$ obtained by composing $\sigma_{U',U}^{-1}$ with the canonical injection $f_U^{-1}(U')\to X_U$.
-It is immediate that, if $U''\subset U'$ is another open affine of $Y$, then $\rho_{U'',U}=\rho_{U'',U'}\circ\rho_{U',U}$.
+It is immediate that, if $U''\subset U'$ is another affine open of $Y$, then $\rho_{U'',U}=\rho_{U'',U'}\circ\rho_{U',U}$.
 \end{env}
 
 \begin{proposition}[3.1.2]
 \label{II.3.1.2}
 Let $Y$ be a prescheme.
 For every quasi-coherent positively graded $\sh{O}_Y$-algebra, there exists exactly one (up to $Y$-isomorphism) prescheme $X$ over $Y$ satisfying the following property:
-if $f:X\to Y$ is the structure morphism, then, for every open affine $U$ of $Y$, there exists an \emph{isomorphism} $\eta_U$ from the induced prescheme $f^{-1}(U)$ to $X_U=\Proj(\Gamma(U,\sh{S}))$ such that, if $V$ is another open affine of $Y$ that is contained in $U$, then the diagram
+if $f:X\to Y$ is the structure morphism, then, for every affine open $U$ of $Y$, there exists an \emph{isomorphism} $\eta_U$ from the induced prescheme $f^{-1}(U)$ to $X_U=\Proj(\Gamma(U,\sh{S}))$ such that, if $V$ is another affine open of $Y$ that is contained in $U$, then the diagram
 \[
 \label{II.3.1.2.1}
   \xymatrix{
@@ -48,16 +48,16 @@ commutes.
 \begin{proof}
 Given affine opens $U$ and $V$ of $Y$, let $X_{U,V}$ be the prescheme induced on $f_U^{-1}(U\cap V)$ by $X_U$;
 we are going to define a $Y$-isomorphism $\theta_{U,V}:X_{V,U}\simtoX_{U,V}$.
-For this, we consider an open affine $W\subset U\cap V$:
+For this, we consider an affine open $W\subset U\cap V$:
 by composing the isomorphisms
 \[
   f_U^{-1}(W)
   \xrightarrow{\sigma_{W,U}} X_W
   \xrightarrow{\sigma_{W,V}^{-1}} f_V^{-1}(W),
 \]
-we obtain an isomorphism $\tau_W$, and we immediately see that, if $W'\subset W$ is an open affine, then $\tau_{W'}$ is the restriction of $\tau_W$ to $f_U^{-1}(W')$;
+we obtain an isomorphism $\tau_W$, and we immediately see that, if $W'\subset W$ is an affine open, then $\tau_{W'}$ is the restriction of $\tau_W$ to $f_U^{-1}(W')$;
 the $\tau_W$ are thus indeed the restrictions of a $Y$-isomorphism $\theta_{V,U}$.
-Further, if $U$, $V$, and $W$ are open affines of $Y$, and $\theta'_{U,V}$, $\theta'_{V,W}$, and $\theta'_{U,W}$ the restrictions of $\theta_{U,V}$, $\theta_{V,W}$, and $\theta_{U,W}$ (respectively) to the inverse images of $U\cap V\cap W$ in $X_V$, $X_W$, and $X_W$ (respectively), then it follows from the above definitions that we have $\theta'_{U,V}\circ\theta'_{V,W}=\theta'_{U,W}$.
+Further, if $U$, $V$, and $W$ are affine open subsets of $Y$, and $\theta'_{U,V}$, $\theta'_{V,W}$, and $\theta'_{U,W}$ the restrictions of $\theta_{U,V}$, $\theta_{V,W}$, and $\theta_{U,W}$ (respectively) to the inverse images of $U\cap V\cap W$ in $X_V$, $X_W$, and $X_W$ (respectively), then it follows from the above definitions that we have $\theta'_{U,V}\circ\theta'_{V,W}=\theta'_{U,W}$.
 The existence of some $X$ satisfying the properties in the statement thus follows from \sref[I]{I.2.3.1};
 its uniqueness up to $Y$-isomorphism is trivial, taking \sref{I.3.1.2.1} into account.
 \end{proof}
@@ -75,14 +75,14 @@ If $f$ is the structure morphism $X\to Y$, then it is immediate that, for every 
 \label{II.3.1.4}
 Let $f\in\Gamma(Y,\sh{S}_d)$ for $d>0$.
 Then there exists an open subset $X_f$ of the underlying space of $X=\Proj(\sh{S})$ that satisfies the following property:
-for every open affine $U$ of $Y$, we have $X_f\cap\varphi^{-1}(U)=D_+(f|U)$ in $\varphi^{-1}(U)$ identified with $X_U=\Proj(\Gamma(U,\sh{S}))$, where $\varphi$ denotes the structure morphism $X\to Y$.
+for every affine open $U$ of $Y$, we have $X_f\cap\vphi^{-1}(U)=D_+(f|U)$ in $\vphi^{-1}(U)$ identified with $X_U=\Proj(\Gamma(U,\sh{S}))$, where $\vphi$ denotes the structure morphism $X\to Y$.
 \oldpage[II]{51}
 Furthermore, the prescheme induced on $X_f$ is affine over $Y$, and is canonically isomorphic to $\Spec(\sh{S}^{(d)}/(f-1)\sh{S}^{[d]})$ \sref{II.1.3.1}.
 \end{proposition}
 
 \begin{proof}
 We have $f|U\in\Gamma(U,\sh{S}_d)=(\Gamma(U,\sh{S}))_d$.
-If $U$ and $U'$ are open affines of $Y$ such that $U'\subset U$, then $f|U'$ is the image of $f|U$ under the restriction homomorphism
+If $U$ and $U'$ are affine opens of $Y$ such that $U'\subset U$, then $f|U'$ is the image of $f|U$ under the restriction homomorphism
 \[
   \Gamma(U,\sh{S}) \to \Gamma(U',\sh{S})
 \]
@@ -105,7 +105,7 @@ If $f\in\Gamma(Y,\sh{S}_d)$ and $g\in\Gamma(Y,\sh{S}_e)$, then
 \end{corollary}
 
 \begin{proof}
-It suffices to consider the intersection of the two sets with a set $\varphi^{-1}(U)$, where $U$ is an open affine in $Y$, and to then apply formula \sref{II.2.3.3.2}.
+It suffices to consider the intersection of the two sets with a set $\vphi^{-1}(U)$, where $U$ is an affine open in $Y$, and to then apply formula \sref{II.2.3.3.2}.
 \end{proof}
 
 \begin{corollary}[3.1.6]
@@ -115,7 +115,7 @@ if the sheaf of ideals of $\sh{S}$ generated by this family \sref[0]{0.5.1.1} co
 \end{corollary}
 
 \begin{proof}
-  For every open affine $U$ of $Y$, $\varphi^{-1}(U)$ is the union of the $X_{f_\alpha}\cap\varphi^{-1}(U)$ \sref{II.2.3.14.
+  For every affine open $U$ of $Y$, $\vphi^{-1}(U)$ is the union of the $X_{f_\alpha}\cap\vphi^{-1}(U)$ \sref{II.2.3.14.
 \end{proof}
 
 \begin{corollary}[3.1.7]
@@ -163,20 +163,20 @@ In each of the three cases, it suffices to define the isomorphism locally on $Y$
 We can thus suppose that $Y$ is affine, and then (i) follows from \sref{II.2.4.7}[(i)], and (ii) follows from \sref{II.2.4.8}.
 As for (iii), if we further suppose that $\sh{L}$ is isomorphic to $\sh{O}_Y$ (which we are allowed to do, since the question is local on $Y$), then the isomorphism between $\Proj(\sh{S})$ and $\Proj(\sh{S}_{(\sh{L})})$ is evident;
 to define a \emph{canonical} isomorphism, let $Y=\Spec(A)$ and $\sh{S}=\widetilde{S}$, where $S$ is a graded $A$-algebra, and let $c$ be a generator of the free $A$-module $L$ such that $\sh{L}=\widetilde{L}$;
-then, for all $n>0$, $x_n\mapsto x_n\otimes c^{\otimes n}$ is an $A$-isomorphism from $S_n$ to $S_n\otimes L^{\otimes n}$, and these $A$-isomorphisms define an $A$-isomorphism of graded algebras $\varphi_c:S\to S_{(L)}=\bigoplus_{n\geq0}S_n\otimes L^{\otimes n}$.
+then, for all $n>0$, $x_n\mapsto x_n\otimes c^{\otimes n}$ is an $A$-isomorphism from $S_n$ to $S_n\otimes L^{\otimes n}$, and these $A$-isomorphisms define an $A$-isomorphism of graded algebras $\vphi_c:S\to S_{(L)}=\bigoplus_{n\geq0}S_n\otimes L^{\otimes n}$.
 So let $f\in S_+$ be homogeneous of degree~$d$;
-for all $x\in S_{nd}$, we have that $(x\otimes c^{nd})/(f\otimes c^d)^n=(x\otimes(\varepsilon c)^{nd})/(f\otimes(\varepsilon c)^d)^n$ for every invertible element $\varepsilon\in A$, which shows that the isomorphism $S_{(f)}\to(S_{(L)})_{(f\otimes c^d)}$ induced from $\varphi_c$ is \emph{independent} of the generator $c$ of $L$ considered, and thus finishes the proof.
+for all $x\in S_{nd}$, we have that $(x\otimes c^{nd})/(f\otimes c^d)^n=(x\otimes(\varepsilon c)^{nd})/(f\otimes(\varepsilon c)^d)^n$ for every invertible element $\varepsilon\in A$, which shows that the isomorphism $S_{(f)}\to(S_{(L)})_{(f\otimes c^d)}$ induced from $\vphi_c$ is \emph{independent} of the generator $c$ of $L$ considered, and thus finishes the proof.
 \end{proof}
 
 \begin{env}[3.1.9]
 \label{II.3.1.9}
-Recall (\sref[0]{0.4.1.3} and \sref[I]{I.1.3.14}) that, for the quasi-coherent graded $\sh{O}_Y$-algebra $\sh{S}$ to be \emph{generated by the $\sh{O}_Y$-module $\sh{S}_1$}, it is necessary and sufficient for there to exist an open affine cover $(U_\alpha)$ of $Y$ such that the graded algebra $\Gamma(U_\alpha,\sh{S})$ over $\Gamma(U_\alpha,\sh{S}_0)$ is generated by the set $\Gamma(U_\alpha,\sh{S}_1)$ of its homogeneous elements of degree~$1$.
+Recall (\sref[0]{0.4.1.3} and \sref[I]{I.1.3.14}) that, for the quasi-coherent graded $\sh{O}_Y$-algebra $\sh{S}$ to be \emph{generated by the $\sh{O}_Y$-module $\sh{S}_1$}, it is necessary and sufficient for there to exist an affine open cover $(U_\alpha)$ of $Y$ such that the graded algebra $\Gamma(U_\alpha,\sh{S})$ over $\Gamma(U_\alpha,\sh{S}_0)$ is generated by the set $\Gamma(U_\alpha,\sh{S}_1)$ of its homogeneous elements of degree~$1$.
 For every open $V$ of $Y$, $\sh{S}|V$ is then generated by the $(\sh{O}_Y|V)$-module $\sh{S}_1|V$.
 \end{env}
 
 \begin{proposition}[3.1.10]
 \label{II.3.1.10}
-Suppose that there exists a finite open affine cover $(U_i)$ of $Y$ such that each graded algebra $\Gamma(U_i,\sh{S})$ is of finite type over $\Gamma(U_i\sh{O}_Y)$.
+Suppose that there exists a finite affine open cover $(U_i)$ of $Y$ such that each graded algebra $\Gamma(U_i,\sh{S})$ is of finite type over $\Gamma(U_i\sh{O}_Y)$.
 Then there exists $d>0$ such that $\sh{S}^{(d)}$ is generated by $\sh{S}_d$, with $\sh{S}_d$ a $\sh{O}_Y$-module of finite type.
 \end{proposition}
 
@@ -217,8 +217,8 @@ in particular, if $\sh{S}$ is essentially reduced, then $X$ is reduced.
 
 \begin{proof}
 The fact that $X'=\Proj(\sh{S}/\sh{N}_+)$ is reduced follows immediately from \sref{II.2.4.4}[(i)], since the property is local;
-further, for every open affine $U\subset Y$, ${\varphi'}^{-1}(U)$ is equal to $(\varphi^{-1}(U))_\red$ (where we denote by $\varphi$ and $\varphi'$ the structure morphisms $X\to Y$ and $X'\to Y$, respectively);
-we immediately see that the canonical $U$-morphisms ${\varphi'}^{-1}(U)\to\varphi^{-1}(U)$ are compatible with the restriction operations, and thus define a closed immersion $X'\to X$ that is a homeomorphism of the underlying spaces;
+further, for every affine open $U\subset Y$, ${\vphi'}^{-1}(U)$ is equal to $(\vphi^{-1}(U))_\red$ (where we denote by $\vphi$ and $\vphi'$ the structure morphisms $X\to Y$ and $X'\to Y$, respectively);
+we immediately see that the canonical $U$-morphisms ${\vphi'}^{-1}(U)\to\vphi^{-1}(U)$ are compatible with the restriction operations, and thus define a closed immersion $X'\to X$ that is a homeomorphism of the underlying spaces;
 whence the conclusion \sref[I]{I.5.1.2}.
 \end{proof}
 
@@ -226,18 +226,18 @@ whence the conclusion \sref[I]{I.5.1.2}.
 \label{II.3.1.14}
 Let $Y$ be an integral prescheme, and $\sh{S}$ a quasi-coherent graded $\sh{O}_Y$-algebra such that $\sh{S}_0=\sh{O}_Y$.
 \begin{enumerate}
-  \item[(i)] If $\sh{S}$ is integral \sref{II.3.1.12}, then $X=\Proj(\sh{S})$ is integral, and the structure morphism $\varphi\colon X\to Y$ is dominant.
+  \item[(i)] If $\sh{S}$ is integral \sref{II.3.1.12}, then $X=\Proj(\sh{S})$ is integral, and the structure morphism $\vphi: X\to Y$ is dominant.
   \item[(ii)] Suppose furthermore that $\sh{S}$ is essentially reduced.
-    Then, conversely, if $X$ is integral and $\varphi$ is dominant, then $\sh{S}$ is integral.
+    Then, conversely, if $X$ is integral and $\vphi$ is dominant, then $\sh{S}$ is integral.
 \end{enumerate}
 \end{proposition}
 
 \begin{proof}
 \medskip\noindent
 \begin{enumerate}
-  \item[(i)] If $(U_\alpha)$ is a base of $Y$ consisting of non-empty open affines, then it suffices to prove the proposition in the case where $Y$ is replaced by one of the $U_\alpha$, and $\sh{S}$ by $\sh{S}|U_\alpha$:
-    indeed, one one hand it will follow that the underlying space $\varphi^{-1}(U_\alpha)$ are irreducible opens (and thus non-empty) of $X$ such that $\varphi^{-1}(U_\alpha)\cap\varphi^{-1}(U_\beta)\neq\emp$ for any pair of indices (since $U_\alpha\cap U_\beta$ contains some $U_\gamma$), and so $X$ is irreducible \sref[0]{0.2.1.4};
-    on the other hand, $X$ will be reduced, since this is a local property, and so $X$ will indeed be integral, with $\varphi(X)$ dense in $Y$.
+  \item[(i)] If $(U_\alpha)$ is a base of $Y$ consisting of non-empty affine opens, then it suffices to prove the proposition in the case where $Y$ is replaced by one of the $U_\alpha$, and $\sh{S}$ by $\sh{S}|U_\alpha$:
+    indeed, one one hand it will follow that the underlying space $\vphi^{-1}(U_\alpha)$ are irreducible opens (and thus non-empty) of $X$ such that $\vphi^{-1}(U_\alpha)\cap\vphi^{-1}(U_\beta)\neq\emp$ for any pair of indices (since $U_\alpha\cap U_\beta$ contains some $U_\gamma$), and so $X$ is irreducible \sref[0]{0.2.1.4};
+    on the other hand, $X$ will be reduced, since this is a local property, and so $X$ will indeed be integral, with $\vphi(X)$ dense in $Y$.
 
     So suppose that $Y=\Spec(A)$, where $A$ is integral \sref[I]{I.5.1.4}, and that $\sh{S}=\widetilde{S}$, where $S$ is a graded $A$-algebra;
     the hypothesis is that, for every $y\in Y$, $\widetilde{S}_y=S_y$ is an integral graded ring such that $(S_y)_+\neq0$.
@@ -251,7 +251,7 @@ Let $Y$ be an integral prescheme, and $\sh{S}$ a quasi-coherent graded $\sh{O}_Y
     By hypothesis, for all $y\in Y$, $(S_y)_+$ does not contain any non-zero nilpotent elements, and the same is true of $(S_0)_y=A_y$ by hypothesis;
     so $S_y$ is a reduced ring for all $y\in Y$, and we thus conclude first of all that $S$ itself is reduced \sref[I]{I.5.1.1}.
     The hypothesis that $X$ is integral implies that $S$ is essentially integral \sref{II.2.4.4}[(ii)], and everything then reduces to showing that the annihilator $\mathfrak{J}$ of $S_+$ in $A=S_0$ is just $0$ \sref{II.2.1.11}.
-    If this were not the case, we would have that $(S_h)_+=0$ for some $h\neq0$ in $\mathfrak{J}$, and thus \sref{II.3.1.1} that $\varphi^{-1}(D(h))=\emp$, and $\varphi(X)$ would not be dense in $Y$, contradicting the hypothesis (since $D(h)\neq\emp$, since $h$ is not nilpotent).
+    If this were not the case, we would have that $(S_h)_+=0$ for some $h\neq0$ in $\mathfrak{J}$, and thus \sref{II.3.1.1} that $\vphi^{-1}(D(h))=\emp$, and $\vphi(X)$ would not be dense in $Y$, contradicting the hypothesis (since $D(h)\neq\emp$, since $h$ is not nilpotent).
 \oldpage[II]{54}
 \end{enumerate}
 \end{proof}
@@ -270,7 +270,7 @@ thus we have $\widetilde{\sh{M}}_{U'}=\rho_{U',U}^*(\widetilde{\sh{M}}_U)$ \sref
 
 \begin{proposition}[3.2.2]
 \label{II.3.2.2}
-There exists on $\Proj(\sh{S})=X$ exactly one quasi-coherent $\OO_X$-module $\sh{M}$ such that, for every open affine $U$ of $Y$, we have $\eta_U^*((\Gamma(U,\sh{M}))\supertilde)=\widetilde{M}|f^{-1}(U)$ (denoting by $\eta_U$ the isomorphism $f^{-1}(U)\simto\Proj(\Gamma(U,\sh{S}))$), where $f$ is the structure morphism $X\to Y$.
+There exists on $\Proj(\sh{S})=X$ exactly one quasi-coherent $\OO_X$-module $\sh{M}$ such that, for every affine open $U$ of $Y$, we have $\eta_U^*((\Gamma(U,\sh{M}))\supertilde)=\widetilde{M}|f^{-1}(U)$ (denoting by $\eta_U$ the isomorphism $f^{-1}(U)\simto\Proj(\Gamma(U,\sh{S}))$), where $f$ is the structure morphism $X\to Y$.
 \end{proposition}
 
 \begin{proof}
@@ -281,8 +281,93 @@ We say that $\widetilde{\sh{M}}$ is the $\OO_X$-module \emph{associated to} the 
 
 \begin{proposition}[3.2.3]
 \label{II.3.2.3}
-Let
+Let $\sh{M}$ be a quasi-coherent graded $\sh{S}$-module, and let $f\in\Gamma(Y,\sh{S}_d)$ (for $d>0$).
+If $\xi_f$ is the canonical isomorphism from $X_f$ to the $Y$-prescheme $Z_f=\Spec(\sh{S}^{(d)}/(f-1)\sh{S}^{(d)})$ \sref{II.3.1.4}, then $(\xi_f)_*(\widetilde{\sh{M}}|X_f)$ is the $\OO_{Z_f}$-module $(\sh{M}^{(l)}/(f-1)\sh{M}^{(d)})$ \sref{II.1.4.3}.
 \end{proposition}
+
+\begin{proof}
+Since the question is local on $Y$, we can immediately reduce to \sref{II.2.2.5}, taking into account the commutativity of the diagram in \sref{II.2.8.12.1}.
+\end{proof}
+
+\begin{proposition}[3.2.4]
+\label{II.3.2.4}
+The $\OO_X$-module $\widetilde{\sh{M}}$ is an exact additive covariant functor in $\sh{M}$, from the category of quasi-coherent graded $\sh{S}$-modules to the category of quasi-coherent $\OO_X$-modules, that commutes with inductive limits and direct sums.
+\end{proposition}
+
+\begin{proof}
+Since the question is local on $Y$, we can reduce to \sref[I]{I.1.3.11}, \sref[I]{I.1.3.9}, and \sref{II.2.5.4}.
+\end{proof}
+
+In particular, if $\sh{N}$ is a quasi-coherent graded sub-$\sh{S}$-module of $\sh{M}$, then $\widetilde{\sh{N}}$ is canonically identified with with a quasi-coherent sub-$\OO_X$-module of $\widetilde{\sh{M}}$;
+in particular, for every quasi-coherent graded sheaf $\sh{J}$ of ideals of $\sh{S}$, $\widetilde{\sh{J}}$ is a quasi-coherent sheaf of ideals of $\OO_X$.
+
+If $\sh{M}$ is a quasi-coherent graded $\sh{S}$-module, and $\sh{I}$ a quasi-coherent sheaf of ideals of $\OO_Y$, then $\sh{I}\sh{M}$ is a quasi-coherent graded sub-$\sh{S}$-module of $\sh{M}$, and we have
+\[
+\label{II.3.2.4.1}
+  (\sh{I}\sh{M})\supertilde = \sh{I}\cdot\widetilde{\sh{M}}
+\tag{3.2.4.1}
+\]
+(where the right-hand side is defined as in \sref[0]{0.4.3.5}).
+It suffices to verify this formula in the case where $Y=\Spec(A)$ is affine, $\sh{S}=\widetilde{S}$, with $S$ a graded $A$-algebra, $\sh{M}=\widetilde{M}$, with $M$ a graded $S$-module, and $\sh{I}=\mathfrak{I}$, with $\mathfrak{I}$ an ideal of $A$.
+\oldpage[II]{55}
+For every homogeneous element $f$ of $S_+$, the restriction to $D_+(f)=\Spec(S_{(f)})$ of the left-hand side of \sref{II.3.2.4.1} can be associated with $(\mathfrak{I}M)_{(f)}=\mathfrak{I}\cdot M_{(f)}$, and the same is true of the restriction of the right-hand side, given \sref[I]{I.1.3.13} and \sref[i]{I.1.6.9}.
+
+\begin{proposition}[3.2.5]
+\label{II.3.2.5}
+Let $f\in\Gamma(Y,\sh{S}_d)$ (for $d>0$).
+On the open subset $X_f$, the $(\OO_X|X_f)$-module $(\sh{S}(nd))\supertilde X_f$ is canonically isomorphic to $\OO_X|X_f$ for all $n\in\bb{Z}$.
+In particular, if the $\OO_Y$-algebra $\sh{S}$ is generated by $\sh{S}_1$ \sref{II.3.1.9}, then the $\OO_X$-modules $(\sh{S}(n))\supertilde$ are invertible for all $n\in\bb{Z}$.
+\end{proposition}
+
+\begin{proof}
+Indeed, for every affine open $U$ of $Y$, we defined in \sref{II.2.5.7} a canonical isomorphism from $(\sh{S}(nd))\supertilde|(X_f\cap\vphi^{-1}(U))$ to $\OO_X|(X_f\cap\vphi^{-1}(U))$, taking \sref{II.3.1.4} into account (where $\vphi$ is the structure morphism $X\to Y$);
+it is immediate that these isomorphisms are compatible with the restriction from $U$ to an affine open $U'\subset U$, whence the first claim.
+To prove the second, it suffices to note that, if $\sh{S}$ is generated by $\sh{S}_1$, then there is a cover $(U_\alpha)$ of $Y$ by affine opens such that $\Gamma(U_\alpha,\sh{S})$ is generated by $\Gamma(U_\alpha,\sh{S})_1=\Gamma(U_\alpha,\sh{S}_1)$;
+we can then apply the result of \sref{II.2.5.9}, since the property of being invertible is local.
+\end{proof}
+
+We again set, for all $n\in\bb{Z}$,
+\[
+\label{II.3.2.5.1}
+  \OO_X(n) = (\sh{S}(n))\supertilde
+\tag{3.2.5.1}
+\]
+and, for all $\OO_X$-modules $\scr{F}$,
+\[
+\label{II.3.2.5.2}
+  \sh{F}(n) = \sh{F}\otimes_{\OO_X}\OO_X(n).
+\tag{3.2.5.2}
+\]
+
+It follows immediately from these definitions that, for every open subset $U$ of $Y$, we have
+\[
+  ((\sh{S}|U)(n))\supertilde = \OO_X(n)|f^{-1}(U)
+\]
+where $f$ is the structure morphism $X\to Y$.
+
+\begin{proposition}[3.2.6]
+\label{II.3.2.6}
+Let $\sh{M}$ and $\sh{N}$ be quasi-coherent graded $\sh{S}$-modules.
+Then there exists a canonical functorial (in $\sh{M}$ and $\sh{N}$) homomorphism
+\[
+\label{II.3.2.6.1}
+  \lambda : \widetilde{\sh{M}}\otimes_{\OO_X}\widetilde{\sh{N}} \to (\sh{M}\otimes_{\sh{S}}\sh{N})\supertilde
+\tag{3.2.6.1}
+\]
+and a canonical functorial (in $\sh{M}$ and $\sh{N}$) homomorphism
+\[
+\label{II.3.2.6.2}
+  \mu : (\shHom_{\sh{S}}(\sh{M},\sh{N}))\supertilde \to \shHom_{\OO_X}(\widetilde{\sh{M}},\widetilde{\sh{N}}).
+\tag{3.2.6.2}
+\]
+
+Furthermore, if $\sh{S}$ is generated by $\sh{S}_1$ \sref{II.3.1.9}, then $\lambda$ is an isomorphism;
+if, further, $\sh{M}$ admits a finite presentation \sref{II.3.1.1}, then $\mu$ is an isomorphism.
+\end{proposition}
+
+\begin{proof}
+  The
+\end{proof}
 
 
 % \subsection{Graded $\mathcal{S}$-module associated to a sheaf on $\operatorname{Proj}(\mathcal{S})$}

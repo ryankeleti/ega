@@ -35,7 +35,7 @@ is called the sheaf of graded rings \emph{associated to} $f$. The sheaf $\shGr_1
 
 It is clear that the $\sh{O}_{Y^{(n)}} = \psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$ (that we also denote $\sh{O}_{Y_f^{(n)}})$ form a
 \oldpage[IV-4]{6}
-projective system of sheaves of rings on $Y$, the transition homomorphism $\varphi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}}$ for $n \leq m$ identifies $\sh{O}_{Y^{(n)}}$ with the quotient of $\sh{O}_{Y^{(m)}}$ by the power $(\sh{I}_f/\sh{I}_f^{n+1} )^m$ of the \emph{augmentation ideal} of $\sh{O}_{Y^{(n)}}$, kernel of $\varphi_{0n}: \sh{O}_{Y^{(n)}} \to \sh{O}_{Y}$.
+projective system of sheaves of rings on $Y$, the transition homomorphism $\vphi_{nm}:\sh{O}_{Y^{(m)}} \to \sh{O}_{Y^{(n)}}$ for $n \leq m$ identifies $\sh{O}_{Y^{(n)}}$ with the quotient of $\sh{O}_{Y^{(m)}}$ by the power $(\sh{I}_f/\sh{I}_f^{n+1} )^m$ of the \emph{augmentation ideal} of $\sh{O}_{Y^{(n)}}$, kernel of $\vphi_{0n}: \sh{O}_{Y^{(n)}} \to \sh{O}_{Y}$.
 The $Y^{(n)}$ therefore form a inductive system of ringed spaces, all having underlying space $Y$, and we have canonical morphisms of ringed spaces $h_n: Y^{(n)} \to X$ equal to $(\psi, \theta_n)$, where $\theta^\#_n$ is the canonical morphism $\psi^*(\sh{O}_X) \to \psi^*(\sh{O}_X)/\sh{I}_f^{n+1}$.
 It is clear that the sheaf $\shGr_\bullet(f)$ is a sheaf of graded algebras over the sheaf of rings $\sh{O}_Y = \shGr_0(f)$ and the $\shGr_k(f)$ of $\sh{O}_Y$-modules.
 
@@ -1601,7 +1601,7 @@ So we have $\Omega_{X/S}^0 = \sh{O}_X$, and $\Omega_{X/S}^p = 0$ for $p < 0$;
 the $\Omega_{X/S}^p$ are the homogeneous components of the exterior algebra of $\Omega_{X/S}^1$
 \[  
   \label{IV.16.6.1.2}
-  \Omega_{X/S}^\bullet = \bigwedge(\Omega_{X/S}^1) = \bigoplus_{p \in \mathbb{Z}}\bigwedge^p(\Omega_{X/S}^1),  
+  \Omega_{X/S}^\bullet = \bigwedge(\Omega_{X/S}^1) = \bigoplus_{p \in \bb{Z}}\bigwedge^p(\Omega_{X/S}^1),  
   \tag{16.6.1.2}
 \] 
 which is therefore a quasi-coherent graded anti-commutative $\sh{O}_X$-algebra whose elements of degree $1$ are square-zero.
@@ -1629,7 +1629,7 @@ Also, $d$ is an endomorphism of graded $\psi^*(\sh{O}_X)$-modules of degree $+1$
 
 \begin{proof}
 Suppose that we have proved the existence of an endomorphism $d$.
-For every open affine $U$ of $X$, every section of $\Omega_{X/S}^p$ over $U$ is (because of \rm{(ii)}) a linear combination if a finite number of elements of the form $g(df_1 \wedge df_2 \wedge \dots \wedge df_p)$, where $g$ and the $f_i$ are sections of $\sh{O}_X$ over $U$ \sref[0]{0.20.4.7}.
+For every affine open $U$ of $X$, every section of $\Omega_{X/S}^p$ over $U$ is (because of \rm{(ii)}) a linear combination if a finite number of elements of the form $g(df_1 \wedge df_2 \wedge \dots \wedge df_p)$, where $g$ and the $f_i$ are sections of $\sh{O}_X$ over $U$ \sref[0]{0.20.4.7}.
 The conditions \rm{(i)} and \rm{(iii)} then show, by induction on $p$, that we necessarily have
 \[
   \label{IV.16.6.2.2}
@@ -2383,7 +2383,7 @@ The problem being local on $Y$, we can restrict ourselves to the case where $j$ 
 \label{IV.16.9.9}
 Let $Y$ be a prescheme, $X$ an $Y$-prescheme, $j:Y \to X$ a $Y$-section of $X$, so that the $n$'th normal invariant $\sh{A}^{(n)}$ of $j$ \sref{IV.16.1.2} is an augmented $\sh{O}_Y$-algebra \sref{IV.16.1.7};
 take $\sh{A}^{(\infty)} = \varprojlim \sh{A}^{(n)}$.
-For $j$ to be a quasi-regular immersion it is necessary and sufficient that $j$ is locally of finite presentation, and that every $y \in Y$ admits an open affine neighborhood $U$ of ring $C$ such that $\sh{A}^{(\infty)}|U$ is isomorphic as an augmented $\sh{O}_U$-algebra to $\sh{O}_U[[T_1, \dots, T_n]]$.
+For $j$ to be a quasi-regular immersion it is necessary and sufficient that $j$ is locally of finite presentation, and that every $y \in Y$ admits an affine open neighborhood $U$ of ring $C$ such that $\sh{A}^{(\infty)}|U$ is isomorphic as an augmented $\sh{O}_U$-algebra to $\sh{O}_U[[T_1, \dots, T_n]]$.
 \end{corollary}
 
 \begin{proof}
@@ -2537,7 +2537,7 @@ The second claim follows from the fact that $\sh{N}_{X/Y}$ is a locally free $\s
 \label{IV.16.10.1}
 We say that a morphism of preschemes $f: X \to S$ is differentially smooth (or that $X$ is differentially smooth over $S$) if it satisfies the following conditions:
 \begin{enumerate}
-  \item[\rm{(i)}] $\Omega_{X/S}^1$ is a locally projective $\sh{O}_X$-module, which is to say that every point $x \in X$ admits an open affine neighborhood $U$ such that $\Gamma(U, \Omega_{X/S}^1)$ is a projective $\Gamma(U, \sh{O}_X)$-module (not necessarily of finite type).
+  \item[\rm{(i)}] $\Omega_{X/S}^1$ is a locally projective $\sh{O}_X$-module, which is to say that every point $x \in X$ admits an affine open neighborhood $U$ such that $\Gamma(U, \Omega_{X/S}^1)$ is a projective $\Gamma(U, \sh{O}_X)$-module (not necessarily of finite type).
   \item[\rm{(ii)}] The canonical morphism \sref{IV.16.3.1.1}
   \[
     \bb{S}_{\sh{O}_X}^\bullet(\Omega_{X/S}^1) \to \shGr_\bullet(\sh{P}_{X/S})
@@ -2574,7 +2574,7 @@ since by hypothesis $B = (B \otimes_A B)/\mathfrak{I}$ is a formally smooth $A$-
 
 \begin{proposition}[16.10.3]
 \label{IV.16.10.3}
-For a morphism $f:X \to S$ to be differentially smooth, it is necessary and sufficient that for every $x \in X$, there is an open affine neighborhood of $x$, of ring $A$, such that $\Gamma(U, \sh{P}_{X/S}^\infty)$ is an augmented topological $A$-algebra isomorphic to the completion $\widehat{B}$, where $B = \bb{S}_A(V)$, $V$ being a projective $A$-module and $B$ being endowed with the $B^+$-preadic topology (where $B^+$ is the augmentation ideal).
+For a morphism $f:X \to S$ to be differentially smooth, it is necessary and sufficient that for every $x \in X$, there is an affine open neighborhood of $x$, of ring $A$, such that $\Gamma(U, \sh{P}_{X/S}^\infty)$ is an augmented topological $A$-algebra isomorphic to the completion $\widehat{B}$, where $B = \bb{S}_A(V)$, $V$ being a projective $A$-module and $B$ being endowed with the $B^+$-preadic topology (where $B^+$ is the augmentation ideal).
 If $\Omega_{X/S}^1$ is locally free of finite rank, we can replace $\widehat{B}$ with the ring of formal series $A[[T_1, \dots, T_n]]$.
 \end{proposition}
 

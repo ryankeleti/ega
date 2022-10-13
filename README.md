@@ -83,7 +83,7 @@ Here is the current status of the translation, along with who is currently worki
 9. Supplement on quasi-coherent sheaves _(@thosgood)_
 10. Formal schemes _(@thosgood, @ryankeleti)_
 
-### Elementary global study of some classes of morphisms (EGA II) ![EGAIIstatus](https://img.shields.io/badge/-160%2F205-yellow)
+### Elementary global study of some classes of morphisms (EGA II) ![EGAIIstatus](https://img.shields.io/badge/-180%2F205-yellow)
 
 + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
 + [x] 1. Affine morphisms _(@ryankeleti)_
@@ -137,3 +137,18 @@ Here is the current status of the translation, along with who is currently worki
 + [ ] 20. Meromorphic functions and pseudo-morphisms (~30 pages)
 + [ ] 21. Divisors (~75 pages)
 + [ ] Errata and addenda (list 3)
+
+
+## To-do (incomplete)
+
+- check errata in EGA II and onwards
+- more consistent use of Proposition/Theorem/Definition/whatever in front of `\sref`s
+- lists of notation?
+- terminology indices?
+- hyperref links to equations (e.g. 3.3.9.1)
+- check for any `\unsure` commands in the source
+- check that all `\hyperref` references are found
+- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
+- web version? work in progress
+- make style guidelines?
+- link (M), (G), (T) references
