@@ -133,7 +133,7 @@ We immediately reduce to the case where $X=\Spec(A)$ is affine, $\sh{F}=\widetil
 
 \begin{env}[20.1.7]
 \label{IV.20.1.7}
-If $u$ is a section of $\sh{M}_X(\sh{F})$ over $X$, then we say that $u$ is \emph{defined} at a point $x\in X$ if there exists an open neighborhood $V$ of $x$ in $X$ such that $u|V$ is the image of a section of $\sh{F}$ over $V$ under the di-homomorphism \sref{IV.20.1.5.1}.
+If $u$ is a section of $\sh{M}_X(\sh{F})$ over $X$, then we say that $u$ is \emph{defined} at a point $x\in X$ if there exists an open neighbourhood $V$ of $x$ in $X$ such that $u|V$ is the image of a section of $\sh{F}$ over $V$ under the di-homomorphism \sref{IV.20.1.5.1}.
 We say that $u$ is \emph{defined} on an open $U$ of $X$ if it is defined at every point in $U$;
 there is still a larger open in which $u$ is defined, called the \emph{domain of definition} of $u$ and denoted $\operatorname{dom}(u)$.
 When $\sh{F}$ is strictly torsion-free, such that $\sh{F}$ is identified by \sref{IV.20.1.5.1} with a subsheaf of $\sh{M}_X(\sh{F})$, then saying $u$ is defined on $U$ means that $u|V$ is a \emph{section of $\sh{F}$ over $U$}.
@@ -143,7 +143,7 @@ When $\sh{F}$ is strictly torsion-free, such that $\sh{F}$ is identified by \sre
 \label{IV.20.1.8}
 In accordance with the general notation of \sref[0\textsubscript{I}]{0.5.4.7}, we denote by $\sh{M}_X^*$ the sheaf of multiplicative groups such that $\Gamma(U,\sh{M}_X^*)$ is (for every open $U$ of $X$) the group of \emph{invertible elements} of $\Gamma(U,\sh{M}_X)$.
 This sheaf is none other than the sheaf $\sh{S}(\sh{M}_X)$ defined in \sref{IV.20.1.3}:
-indeed, if $s\in\Gamma(U,\sh{S}(\sh{M}_X))$, then for every $x\in U$, there exists an open neighborhood $V\subset U$ of $x$ such that $s|V$ is a regular element in the \emph{total ring of fractions} of $\Gamma(V,\sh{O}_X)$, and we know that such an element is necessarily invertible in this ring of fractions.
+indeed, if $s\in\Gamma(U,\sh{S}(\sh{M}_X))$, then for every $x\in U$, there exists an open neighbourhood $V\subset U$ of $x$ such that $s|V$ is a regular element in the \emph{total ring of fractions} of $\Gamma(V,\sh{O}_X)$, and we know that such an element is necessarily invertible in this ring of fractions.
 We say that the sections of $\sh{M}_X^*$ over $X$ are the \emph{regular meromorphic functions} (note that we are deviating here from the terminology followed by certain authors, who call ``regular'' meromorphic functions those which are \emph{sections of $\sh{O}_X$}, identified with a subsheaf of $\sh{M}_X$).
 
 Let $\sh{L}$ be an \emph{invertible $\sh{O}_X$-module} \sref[0\textsubscript{I}]{0.5.4.1};
@@ -206,7 +206,7 @@ Similarly, if $\sh{F}$ is an $\sh{O}_X$-module, then we set $\sh{M}_f(\sh{F})=\s
 \[
   \Gamma(X,\sh{M}_f(\sh{F}))\to\Gamma(X',\sh{M}_{X'}(f^*(\sh{F}))).
 \]
-In addition, if $u\in\Gamma(X,\sh{M}_f(\sh{F}))$ is defined \sref{IV.20.1.7} at a point $x$, then $u$ coincides, on a neighborhood $U$ of $x$, with a section of the form $\sum_i h_i\otimes(t_i/s_i)$, where the $h_i$ belong to $\Gamma(U,\sh{F})$, the $t_i$ to $\Gamma(U,\sh{O}_X)$, and the $s_i$ to $\Gamma(U,\sh{S}_f)$.
+In addition, if $u\in\Gamma(X,\sh{M}_f(\sh{F}))$ is defined \sref{IV.20.1.7} at a point $x$, then $u$ coincides, on a neighbourhood $U$ of $x$, with a section of the form $\sum_i h_i\otimes(t_i/s_i)$, where the $h_i$ belong to $\Gamma(U,\sh{F})$, the $t_i$ to $\Gamma(U,\sh{O}_X)$, and the $s_i$ to $\Gamma(U,\sh{S}_f)$.
 As by hypothesis the images of the $s_i$ in $\Gamma(f^{-1}(U),\sh{O}_{X'})$ are regular, we see that $u\circ f$ is defined at every point of $f^{-1}(U)$;
 in other words, we have
 \[
