@@ -248,7 +248,7 @@ if in EGA II, page 41 ends with `Hi! Schemes` and page 42 begins with `are cool.
 * `\op` --- opposite category, i.e. `\cat{C}\op` for C<sup>op</sup>
 * `\red` --- reduced, i.e. `X_\red` for X<sub>red</sub>
 * `\supertilde` --- for when `\widetilde{}` is used as a subscript, i.e. `\sh{F}\supertilde` instead of `\sh{F}^\sim` (note the lack of `^`)
-* `\bullet` --- to be used instead of `*` when denoting a grading, e.g. `A_\bullet` instead of `A_*` for a graded module
+* `\bullet` --- to be used instead of `*` when denoting a grading, e.g. `A_\bullet` instead of `A_*` for a graded module (but continue to use `*` for pushforward/pullback of sheaves, etc.)
 * `\widehat` and `\widetilde` --- to be used instead of `\hat` and `\tilde` (which have been redefined to mean this anyway)
 
 ## References
