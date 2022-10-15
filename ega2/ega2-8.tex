@@ -540,8 +540,8 @@ Let $S$ be a positively-graded ring.
     \[
       S_m^\natural = S_m + \ldots + S_{m_0+h-1} + S_hE + S_h^2E + \ldots.
     \]
-    For $1\leq m\leq m_0$, let $G_m$ be the union of the finite systems of generators of the $S_0$-modules $S_i$ for $m\leq i\leq m_0+h-1$, thought of as a subset of $S_{[m]}$.
-    For $m_0+1\leq m\leq m_0+h-1$, let $G_m$ be the union of the finite system of generators of the $S_0$-modules $S_i$ for $m\leq i\leq m_0+h-1$ and of $S_hE$, thought of as a subset of $S_{[m]}$.
+    For $1\leq m\leq m_0$, let $G_m$ be the union of the finite systems of generators of the $S_0$-modules $S_i$ for $m\leq i\leq m_0+h-1$, considered as a subset of $S_{[m]}$.
+    For $m_0+1\leq m\leq m_0+h-1$, let $G_m$ be the union of the finite system of generators of the $S_0$-modules $S_i$ for $m\leq i\leq m_0+h-1$ and of $S_hE$, considered as a subset of $S_{[m]}$.
     It is clear that $S_m^\natural=S_0^\natural G_m$ for $1\leq m\leq m_0+h-1$, and thus the union $G$ of the $G_m$ for $1\leq m\leq m_0+h-1$ is a system of generators of the $S_0^\natural$-algebra $S^\natural$.
     We thus conclude that, if $S=S_0^\natural$ is a Noetherian ring, then so too is $S^\natural$.
   \item[\rm{(ii)}] It is clear that, if $S_{n+1}=S_1S_n$ for $n\geq n_0$, then $S_{n+1}^\natural=S_1S_n^\natural$, and \emph{a fortiori} $S_{n+1}^\natural=S_1^\natural S_n^\natural$ for $n\geq n_0$.
@@ -755,7 +755,7 @@ Furthermore, with this notation,
 indeed, $\widehat{C}_f\cap i(C) = \widehat{C}_f\cap\widehat{C}_{\bb{z}} = \widehat{C}_{f\bb{z}} = \Spec(\widehat{S}_{(f\bb{z})})$.
 But, if $d=\deg(f)$, then $\widehat{S}_{(f\bb{z})}$ is canonically isomorphic to $(\widehat{S}_{(\bb{z})})_{f/\bb{z}^d}$ \sref{II.2.2.2}, and it follows from the definition of the isomorphism in \sref{II.8.2.3.1} that the image of $(\widehat{S}_{(\bb{z})})_{f/\bb{z}^d}$ under the corresponding isomorphism of rings of fractions is exactly $S_f$.
 Since $C_f=\Spec(S_f)$, this proves \sref{II.8.3.2.5} and shows, at the same time, that the morphism $i$ is affine;
-furthermore, the restriction of $i$ to $C_f$, thought of as a morphism to $\widehat{C}_f$, corresponds \sref[I]{I.1.7.3} to the canonical homomorphism $\widehat{S}_{(f)}\to\widehat{S}_{(f\bb{z})}$, and, by the above and \sref{II.8.2.3.2}, we can claim the following result:
+furthermore, the restriction of $i$ to $C_f$, considered as a morphism to $\widehat{C}_f$, corresponds \sref[I]{I.1.7.3} to the canonical homomorphism $\widehat{S}_{(f)}\to\widehat{S}_{(f\bb{z})}$, and, by the above and \sref{II.8.2.3.2}, we can claim the following result:
 \begin{env}[8.3.2.6]
 \label{II.8.3.2.6}
 If $Y=\Spec(A)$ is affine, and $\sh{S}=\widetilde{S}$, then, for every homogeneous $f$ in $S_+$, $\widehat{C}_f$ is canonically identified with $\Spec(S_f^\leq)$, and the morphism $C_f\to\widehat{C}_f$ given by restricting $i$ then corresponds to the canonical injection $S_f^\leq\to S_f$.
@@ -863,7 +863,7 @@ If $Y=\Spec(A)$ is affine, and $\sh{S}=\widetilde{S}$, then, for all homogeneous
   p^{-1}(X_f) = \widehat{C}_f
 \tag{8.3.5.4}
 \]
-and the restriction of $p$ to $\widehat{C}_f=\Spec(S_f^\leq)$, thought of as a morphism from $\widehat{C}_f$ to $X_f$, corresponds to the canonical injection $S_{(f)}\to S_f^\leq$.
+and the restriction of $p$ to $\widehat{C}_f=\Spec(S_f^\leq)$, considered as a morphism from $\widehat{C}_f$ to $X_f$, corresponds to the canonical injection $S_{(f)}\to S_f^\leq$.
 If, further, $f\in S_1$, then $\widehat{C}_f$ is isomorphic to $X_f\otimes_{\bb{Z}}\bb{Z}[T]$ (where $T$ is an indeterminate).
 \end{env}
 
@@ -1331,7 +1331,7 @@ So $u^{-1}(X_f)=\Proj(S_f^\geq)$.
 But if $f\in S_d$ ($d>0$), then $\Proj(S_f^\geq)$ is canonically isomorphic to $\Proj((S_f^\geq)^{(d)})$ \sref{II.2.4.7}, and we also know that $(S_f^\geq)^{(d)}=(S^{(d)})_f^\geq$ can be identified with $S_{(f)}[T]$ \sref{II.2.2.1} by the map $T\mapsto f/1$;
 we thus conclude \sref{II.3.1.7} that the structure morphism $u^{-1}(X_f)\to X_f$ is an isomorphism, whence the first claim.
 To prove the second, note that the restriction $u^{-1}(X_f)\cap G(\alpha)\to X=\Proj(S)$ of $\Proj(\alpha)$ corresponds to the canonical map $x\mapsto x/1$ from $S$ to $S_f^\geq$ \sref{II.2.6.2};
-we thus deduce, first of all, that $G(\alpha)=X'$, and then, taking into account the fact that $u^{-1}(X_f)=(u^{-1}(X_f))_{f/1}$, that it follows from \sref{II.2.8.1.1} that the image of $u^{-1}(X_f)$ under $\Proj(\alpha)$ is contained in $X_f$, and the restriction of $\Proj(\alpha)$ to $u^{-1}(X_f)$, thought of as a morphism to $X_f=\Spec(S_{(f)})$, is indeed identical to that of $u$.
+we thus deduce, first of all, that $G(\alpha)=X'$, and then, taking into account the fact that $u^{-1}(X_f)=(u^{-1}(X_f))_{f/1}$, that it follows from \sref{II.2.8.1.1} that the image of $u^{-1}(X_f)$ under $\Proj(\alpha)$ is contained in $X_f$, and the restriction of $\Proj(\alpha)$ to $u^{-1}(X_f)$, considered as a morphism to $X_f=\Spec(S_{(f)})$, is indeed identical to that of $u$.
 Finally, applying \sref{II.8.3.5.4} to $p_X$ instead of $p$, we see that $p_X^{-1}(u^{-1}(X_f)) = \Spec((S_f^\geq)_{f/1}^\leq)$, and this open subset is, by \sref{II.8.5.4.1}, the inverse image under $\Proj(\widehat{\alpha})$ of $p^{-1}(X_f)=\Spec(S_f^\leq)$ \sref{II.8.3.5.3}.
 Taking \sref{II.8.2.3.2} into account, the restriction of $\Proj(\widehat{\alpha})$ to $p_X^{-1}(u^{-1}(X_f))$ corresponds to the isomorphism inverse to \sref{II.8.2.7.2}, restricted to $S_f^\leq$, whence the third claim;
 the last claim is evident by definition.
@@ -1350,7 +1350,7 @@ Since we know that the morphisms $p_X$ and $\pi_X$ are affine (\sref{II.8.3.5} a
 The first claim follows from the existence of the canonical isomorphisms \sref{II.8.2.7.2} $(S_f^\geq)_{f/1}^\leq \simto S_f^\leq$ and from the fact that these isomorphisms are compatible with the map sending $f$ to $fg$ (where $f$ and $g$ are homogeneous in $S_+$).
 Similarly, applying \sref{II.8.3.6.2} to $\pi_X$ instead of $\pi$, we see that $\pi_X^{-1}(u^{-1}(X_f)) = \Spec((S_f^\geq)_{f/1})$ for $f$ homogeneous in $S_+$, and the second claim then follows from the existence of the canonical isomorphisms \sref{II.8.2.7.2} $(S_f^\geq)_{f/1} \simto S_f$.
 
-We can then say that $\widehat{C}_X$, thought of as an $X$-scheme, is given by \emph{gluing} the affine $X$-schemes $C_X=\Spec(\sh{S}_X^\geq)$ and $\widehat{E}_X=\Spec(\sh{S}_X^\leq)$ over $X$, where the intersection of the two affine $X$-schemes is the open subset $E_X=\Spec(\sh{S}_X)$.
+We can then say that $\widehat{C}_X$, considered as an $X$-scheme, is given by \emph{gluing} the affine $X$-schemes $C_X=\Spec(\sh{S}_X^\geq)$ and $\widehat{E}_X=\Spec(\sh{S}_X^\leq)$ over $X$, where the intersection of the two affine $X$-schemes is the open subset $E_X=\Spec(\sh{S}_X)$.
 \end{proof}
 
 \begin{corollary}[8.6.4]
@@ -1630,7 +1630,7 @@ defines (by the identification in \sref{II.8.7.3}) a canonical dominant $C$-morp
 \]
 where $G(\iota)$ is an open subset of $C_X$ \sref{II.3.5.1};
 note that it could be the case that $G(\iota)\neq C_X$, as shown by the example where $Y=\Spec(K)$, with $K$ a field, and $\sh{S}=\widetilde{S}$, with $S=K[\bb{y}]$, where $\bb{y}$ is an indeterminate \emph{of degree 2};
-if $R_n$ denotes the set $(S_+)^n$, thought of as a subset of $S_{[n]}=S_n^\natural$, then $S_+^\natural$ is not the radical in $S_+^\natural$ of the ideal generated by the union of the $R_n$ (cf. \sref{II.2.3.14}).
+if $R_n$ denotes the set $(S_+)^n$, considered as a subset of $S_{[n]}=S_n^\natural$, then $S_+^\natural$ is not the radical in $S_+^\natural$ of the ideal generated by the union of the $R_n$ (cf. \sref{II.2.3.14}).
 \end{env}
 
 \begin{corollary}[8.7.7]
