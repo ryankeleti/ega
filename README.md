@@ -32,6 +32,18 @@ Alternatively, the full document can be downloaded:
 
 ## Current status
 
+**Summary:**
+
+- [x] EGA I preliminaries
+- [x] EGA I
+- [x] EGA II
+- [ ] EGA III preliminaries
+- [ ] EGA III
+- [ ] EGA IV preliminaries
+- [ ] EGA IV
+
+
+**Details:**
 Here is the current status of the translation, along with who is currently working on/has worked on which sections. (Page counts and percentages are usually just rough estimates).
 
 ### Introduction (EGA I) _(proofread by @thosgood)_ ![introstatus](https://img.shields.io/badge/-5%2F5-brightgreen)
