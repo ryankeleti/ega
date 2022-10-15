@@ -84,7 +84,7 @@ If there is another sentence after an `\item`, use the following format:
 \end{enumerate}
 ```
 
-If an environment (e.g. a proof) begins directly with an `enumerate`, then use
+If an environment (e.g. a proof) begins directly with an `enumerate`, then precede it with `\medskip\noindent`, as in
 ```latex
 \begin{proof}
 \medskip\noindent
