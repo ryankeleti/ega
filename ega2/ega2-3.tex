@@ -948,6 +948,84 @@ Indeed, $\overline{u}$ is surjective by hypothesis, and we apply \sref{II.3.6.1}
 \subsection{Morphisms from a prescheme to a homogeneous spectrum}
 \label{subsection:II.3.7}
 
+\begin{env}[3.7.1]
+\label{II.3.7.1}
+Let $q:X\to Y$ be a morphism of preschemes, $\sh{L}$ an invertible $\sh{O}_X$-module, and $\sh{S}$ a quasi-coherent positively-graded $\sh{O}_Y$-algebra;
+then $q^*(\sh{S})$ is a quasi-coherent positively-graded $\sh{O}_X$-algebra.
+Consider the quasi-coherent graded $\sh{O}_X$-algebra $\sh{S}'=\bigoplus_{n\geq0}\sh{L}^{\otimes n}$;
+suppose that we have some $\sh{O}_X$-homomorphism of graded algebras
+\[
+  \psi : q^*(\sh{S}) \to \sh{S}' = \bigoplus_{n\geq0}\sh{L}^{\otimes n}
+\]
+which is equivalent to having a $q$-morphism of graded algebras
+\[
+  \psi^\flat : \sh{S} \to q_*(\sh{S}').
+\]
+
+We know that $\Proj(\sh{S}')$ is canonically identified with $X$ (\sref{II.3.1.7} and \sref{II.3.1.8}[(iii)]);
+we thus canonically obtain from $\psi$ an open subset $G(\psi)$ of $X$, and a $Y$-morphism
+\[
+\label{II.3.7.1.1}
+  r_{\sh{L},\psi} : G(\psi) \to \Proj(\sh{S}) = P
+\tag{3.7.1.1}
+\]
+\oldpage[II]{66}
+which we call the morphism \emph{associated to $\sh{L}$ and $\psi$};
+recall \sref{II.3.5.6} that this morphism is obtained by composing the $Y$-morphism
+\[
+  \tau = \Proj(\psi) : G(\psi) \to \Proj(q^*(\sh{S}))
+\]
+with the first projection $\pi:\Proj(q^*(\sh{S}))=P\times_Y X\to P$.
+\end{env}
+
+\begin{env}[3.7.2]
+\label{II.3.7.2}
+We will explicitly describe $r=r_{\sh{L},\psi}$ in the case where $Y=\Spec(A)$ is affine, so that $\sh{S}=\widetilde{S}$, where $S$ is a positively-graded $A$-algebra.
+Suppose first of all that $X=\Spec(B)$ is also affine, and that we have $\sh{L}=\widetilde{L}$, where $L$ is a free $B$-module of rank~$1$.
+Then $q^*(\sh{S})=(S\otimes_A B)\supertilde$ \sref[I]{I.1.6.5};
+if $c$ is a generator of $L$, then $\psi_n:q^*(\sh{S}_n)\to\sh{L}^{\otimes n}$ corresponds to a homomorphism $w_n:s\otimes b\mapsto bv_n(s)c^{\otimes n}$ from $S_n\otimes A_ B$to $L^{\otimes n}$, where $v_n:S_n\to B$ is a homomorphism of $A$-modules, constituting a homomorphism of algebras $S\to B$.
+Let $f\in S_d$ (where $d>0$), and set $g=v_d(f)$;
+we have $\pi^{-1}(D_+(f))=D_+(f\otimes1)$ by \sref{II.2.8.10} and the identification of $D_+(f)$ with $\Spec(S_{(f)})$ \sref{II.2.3.6};
+we also know, from \sref{II.2.8.1.1} (taking into account the canonical identification of $X$ with $\Proj(\sh{S}')$), that
+\[
+  \tau^{-1}(D_+(f\otimes1)) = D(g)
+\]
+whence
+\[
+\label{II.3.7.2.1}
+  r^{-1}(D_+(f)) = D(g).
+\tag{3.7.2.1}
+\]
+
+Furthermore, the morphism $\tau=\Proj(\psi)$, restricted to $D(g)$, corresponds to the homomorphism that sends $(s\otimes1)/(f\otimes1)^n$ (where $s\in S_{nd}$) to $v_{nd}(s)/g^n$ \sref{II.2.8.1}, and the projection $\pi$, restricted to $D_+(f\otimes1)$, corresponds t the homomorphism $s/f^n\mapsto(s\otimes1)/(f\otimes1)^n$;
+we thus conclude that $r$, restricted to $D(g)$, corresponds to the homomorphism of $A$-algebras $\omega:S_{(f)}\to B_g$ such that $\omega(s/f^n)=v_{nd}(s)/g^n$ (where $s\in S_{nd}$ and $n>0$).
+Passing to the case where $X$ is arbitrary (but $Y$ still affine), we thus obtain, taking \sref{II.2.8.1} into account, the following:
+\end{env}
+
+\begin{proposition}[3.7.3]
+\label{II.3.7.3}
+If $Y=\Spec(A)$ is affine and $\sh{S}=\widetilde{S}$, where $S$ is a graded $A$-algebra, then, for all $f\in S_d=\Gamma(Y,\sh{S}_d)$, we have
+\[
+\label{II.3.7.3.1}
+  r_{\sh{L},\psi}^{-1}(D_+(f)) = X_{\psi^\flat(f)}
+\tag{3.7.3.1}
+\]
+(where $\psi^\flat(f)\in\Gamma(X,\sh{L}^{\otimes d})$) and the restriction $X_{\psi^\flat(f)}\to D_+(f)=\Spec(S_{(f)})$ of $r_{\sh{L},\psi}$ corresponds \sref[I]{I.2.2.4} to the homomorphism of algebras
+\[
+\label{II.3.7.3.2}
+  \psi_{(f)}^\flat : S_{(f)} \to \Gamma(X_{\psi^\flat(f)},\sh{O}_X)
+\tag{3.7.3.2}
+\]
+such that, for $s\in S_{nd}=\Gamma(Y,\sh{S}_{nd})$,
+\[
+\label{II.3.7.3.3}
+  \psi_{(f)}^\flat(s/f^n) = (\psi^\flat(s)|X_{\psi^\flat(f)})(\psi^\flat(f)|X_{\psi^\flat(f)})^{-n}.
+\tag{3.7.3.3}
+\]
+\end{proposition}
+
+We say that
+
 
 % \subsection{Criteria for immersion into a homogeneous spectrum}
 % \label{subsection:II.3.8}
