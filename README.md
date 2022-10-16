@@ -3,7 +3,7 @@
 Community translation (French to English) of A. Grothendieck's EGA.
 On est désolé, Grothendieck.
 
-View online [here](https://ega.fppf.site/).
+~~View online [here](https://ega.fppf.site/).~~
 
 For discussion regarding this project, visit [#ega:matrix.org](https://matrix.to/#/#ega:matrix.org)!
 
@@ -32,6 +32,18 @@ Alternatively, the full document can be downloaded:
 
 ## Current status
 
+**Summary:**
+
+- [x] EGA I preliminaries
+- [x] EGA I
+- [x] EGA II
+- [ ] EGA III preliminaries
+- [ ] EGA III
+- [ ] EGA IV preliminaries
+- [ ] EGA IV
+
+
+**Details:**
 Here is the current status of the translation, along with who is currently working on/has worked on which sections. (Page counts and percentages are usually just rough estimates).
 
 ### Introduction (EGA I) _(proofread by @thosgood)_ ![introstatus](https://img.shields.io/badge/-5%2F5-brightgreen)
@@ -83,7 +95,7 @@ Here is the current status of the translation, along with who is currently worki
 9. Supplement on quasi-coherent sheaves _(@thosgood)_
 10. Formal schemes _(@thosgood, @ryankeleti)_
 
-### Elementary global study of some classes of morphisms (EGA II) ![EGAIIstatus](https://img.shields.io/badge/-160%2F205-yellow)
+### Elementary global study of some classes of morphisms (EGA II) ![EGAIIstatus](https://img.shields.io/badge/-180%2F205-yellow)
 
 + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
 + [x] 1. Affine morphisms _(@ryankeleti)_
@@ -91,7 +103,7 @@ Here is the current status of the translation, along with who is currently worki
 + [ ] 3. Homogeneous prime spectrum of a sheaf of graded algebras (~20 pages) _(@thosgood)_
 + [x] 4. Projective bundles; Ample sheaves _(@thosgood)_
 + [x] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
-+ [ ] 6. Integral morphisms and finite morphisms (~25 pages)
++ [ ] 6. Integral morphisms and finite morphisms (~25 pages) _(@thosgood)_
 + [x] 7. Valuative criteria _(@thosgood)_
 + [x] 8. Blowup schemes; based cones; projective closure _(@thosgood)_
 + [x] Errata and addenda (list 1) _(@thosgood)_
@@ -137,3 +149,18 @@ Here is the current status of the translation, along with who is currently worki
 + [ ] 20. Meromorphic functions and pseudo-morphisms (~30 pages)
 + [ ] 21. Divisors (~75 pages)
 + [ ] Errata and addenda (list 3)
+
+
+## To-do (incomplete)
+
+- check errata in EGA III and onwards
+- more consistent use of Proposition/Theorem/Definition/whatever in front of `\sref`s
+- lists of notation?
+- terminology indices?
+- hyperref links to equations (e.g. 3.3.9.1)
+- check for any `\unsure` commands in the source
+- check that all `\hyperref` references are found
+- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
+- web version? (work in progress!)
+- more detailed style guidelines? (e.g. language, sentence construction, etc.)
+- link (M), (G), (T) references

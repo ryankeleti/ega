@@ -80,7 +80,7 @@ In what follows, we will always make use of the above identification.
 \label{I.4.1.7}
 Let $Y$ be a subprescheme of a prescheme $X$, and denote by $\psi$ the canonical injection $Y\to X$ of the \emph{underlying subspaces};
 we know that the inverse image $\psi^*(\sh{O}_X)$ is the restriction $\sh{O}_X|Y$ \sref[0]{0.3.7.1}.
-If, for each $y\in Y$, we denote by $\omega_y$ the canonical homomorphism $(\sh{O}_X)_y\to(\sh{O}_Y)_y$, then these homomorphisms are the restrictions to stalks of a \emph{surjective} homomorphism $\omega$ of sheaves of rings $\sh{O}_X|Y\to\sh{O}_Y$: indeed, it suffices to check locally on $Y$, that is to say, we can suppose that $X$ is affine and that the subprescheme $Y$ is closed; if in this case $\sh{I}$ is the sheaf of ideals in $\sh{O}_X$ which defines $Y$, then the $\omega_y$ are none other than the restriction to stalks of the homomorphism $\sh{O}_X|Y\to(\sh{O}_X/\sh{I})|Y$.
+If, for each $y\in Y$, we denote by $\omega_y$ the canonical homomorphism $(\sh{O}_X)_y\to(\sh{O}_Y)_y$, then these homomorphisms are the restrictions to stalks of a \emph{surjective} homomorphism $\omega$ of sheaves of rings $\sh{O}_X|Y\to\sh{O}_Y$: indeed, it suffices to check locally on $Y$, that is to say, we can suppose that $X$ is affine and that the subprescheme $Y$ is closed; if in this case $\sh{I}$ is the sheaf of ideals of $\sh{O}_X$ which defines $Y$, then the $\omega_y$ are none other than the restriction to stalks of the homomorphism $\sh{O}_X|Y\to(\sh{O}_X/\sh{I})|Y$.
 We have thus defined a \emph{monomorphism of ringed spaces} \sref[0]{0.4.1.1} $j=(\psi,\omega^\flat)$ which is evidently a morphism $Y\to X$ of preschemes \sref{I.2.2.1}, and we call this the \emph{canonical injection morphism}.
 
 If $f:X\to Z$ is a morphism, we then say that the composite morphism $Y\xrightarrow{j}X\xrightarrow{f}Z$ is the \emph{restriction} of $f$ to the subprescheme $Y$.
@@ -155,9 +155,9 @@ It is clear that an immersion is a \emph{monomorphism} of preschemes \sref{I.4.1
     Consider first the particular case where we suppose that $X$ is an affine scheme, and that $Z=\psi(Y)$ is \emph{closed} in $X$.
     We then know \sref[0]{0.3.4.6} that $\psi_*(\sh{O}_Y)$ has support equal to $Z$, and that, denoting its restriction to $Z$ by $\sh{O}_Z'$, the ringed space $(Z,\sh{O}_Z')$ is induced from $(Y,\sh{O}_Y)$ by transport of structure via the homeomorphism $\psi$ considered as a map from $Y$ to $Z$.
     Let us now show that $f_*(\sh{O}_Y)=\psi_*(\sh{O}_Y)$ is a \emph{quasi-coherent} $\sh{O}_X$-module.
-    Indeed, for all $x\not\in Z$, $\psi_*(\sh{O}_Y)$ restricted to a suitable neighborhood of $x$ is zero.
+    Indeed, for all $x\not\in Z$, $\psi_*(\sh{O}_Y)$ restricted to a suitable neighbourhood of $x$ is zero.
     On the contrary, if $z\in Z$, then we have $x=\psi(y)$ for some well-defined $y\in Y$;
-    let $V$ be an affine open neighborhood of $y$ in $Y$;
+    let $V$ be an affine open neighbourhood of $y$ in $Y$;
     $\psi(V)$ is then open in $Z$, and so equal to the intersection of $Z$ with an open subset $U$ of $X$, and the restriction of $U$ to $\psi_*(\sh{O}_Y)$ is identical to the restriction of $U$ to the direct image
 \oldpage[I]{123}
     $(\psi_V)_*(\sh{O}_Y|V)$, where $\psi_V$ is the restriction of $\psi$ to $V$.
@@ -213,7 +213,7 @@ For a morphism $f=(\psi,\theta):Y\to X$ to be a closed immersion, it is necessar
 Let $f=(\psi,\theta)$;
 in the case (a), $\theta_y^\sharp$ is surjective (resp. bijective) for all $y\in Y$, and in the case (b), $\theta_y^\sharp$ is surjective for all $y\in Y$;
 it thus suffices to check, in case (a), that $\psi$ is a homeomorphism from $Y$ to a locally closed (resp. open) subset of $X$, and, in case (b), that $\psi$ is a homeomorphism from $Y$ to a closed subset of $X$.
-Now $\psi$ is evidently injective, and sends each neighborhood of $y$ in $Y$ to a neighborhood of $\psi(y)$ is $\psi(Y)$ for all $y\in Y$, by virtue of the hypothesis;
+Now $\psi$ is evidently injective, and sends each neighbourhood of $y$ in $Y$ to a neighbourhood of $\psi(y)$ is $\psi(Y)$ for all $y\in Y$, by virtue of the hypothesis;
 in case (a), $\psi(Y)\cap V_\lambda$ is locally closed (resp. open) in $V_\lambda$, so $\psi(Y)$ is locally closed (resp. open) in the union of the $V_\lambda$, and \emph{a fortiori} in $X$;
 in case (b), $\psi(Y)\cap V_\lambda$ is closed in $V_\lambda$, so $\psi(Y)$ is closed in $X$ since $X=\bigcup_\lambda V_\lambda$.
 \end{proof}
@@ -360,7 +360,7 @@ It suffices to apply Proposition~\sref{I.4.4.1} to $i$, taking Proposition~\sref
 \begin{definition}[4.5.1]
 \label{I.4.5.1}
 Let $f:X\to Y$ be a morphism of preschemes.
-We say that $f$ is a local immersion at a point $x\in X$ if there exists an open neighborhood $U$ of $x$ in $X$ and an open neighborhood $V$ of $f(x)$ in $Y$ such that the restriction of $f$ to the induced prescheme $U$ is a closed immersion of $U$ into the induced prescheme $V$.
+We say that $f$ is a local immersion at a point $x\in X$ if there exists an open neighbourhood $U$ of $x$ in $X$ and an open neighbourhood $V$ of $f(x)$ in $Y$ such that the restriction of $f$ to the induced prescheme $U$ is a closed immersion of $U$ into the induced prescheme $V$.
 We say that $f$ is a local immersion if $f$ is a local immersion at each point of $X$.
 \end{definition}
 
@@ -368,7 +368,7 @@ We say that $f$ is a local immersion if $f$ is a local immersion at each point o
 \label{I.4.5.2}
 We say that a morphism $f:X\to Y$ is a local isomorphism at
 \oldpage[I]{127}
-a point $x\in X$ if there exists an open neighborhood $U$ of $x$ in $X$ such that the restriction of $f$ to the induced prescheme $U$ is an open immersion of $U$ into $Y$.
+a point $x\in X$ if there exists an open neighbourhood $U$ of $x$ in $X$ such that the restriction of $f$ to the induced prescheme $U$ is an open immersion of $U$ into $Y$.
 We say that $f$ is a local isomorphism if $f$ is a local isomorphism at each point of $X$.
 \end{definition}
 
@@ -385,7 +385,7 @@ If $f$ is a local immersion, then $f$ is an immersion, and $f(X)$ is open in $Y$
 \end{proposition}
 
 \begin{proof}
-Let $x\in X$, and let $U$ be an open neighborhood of $x$, and $V$ an open neighborhood of $f(x)$ in $Y$ such that the restriction of $f$ to $U$ is a closed immersion into $V$;
+Let $x\in X$, and let $U$ be an open neighbourhood of $x$, and $V$ an open neighbourhood of $f(x)$ in $Y$ such that the restriction of $f$ to $U$ is a closed immersion into $V$;
 since $U$ is dense in $X$, $f(U)$ is dense in $Y$ by hypothesis, so $f(U)=V$, and $f$ is a homeomorphism from $U$ to $V$;
 the hypothesis that $f$ is injective implies that $f^{-1}(V)=U$, hence the proposition.
 \end{proof}
@@ -407,7 +407,7 @@ According to \sref{I.3.5.1}, it suffices to prove (i) and (ii).
 (i) follows immediately from the transitivity of closed (resp. open) immersions \sref{I.4.2.5} and from the fact that if $f$ is a homeomorphism from $X$ to a closed subset of $Y$, then for every open $U\subset X$, $f(U)$ is open in $f(X)$, so there exists an open subset $V$ of $Y$ such that $f(U)=V\cap f(X)$, and, as a result, $f(U)$ is closed in $V$.
 
 To prove (ii), let $p$ and $q$ be the projections from $X\times_X Y$, and $p'$ and $q'$ the projections from $X'\times_S Y'$.
-There exists, by hypothesis, open neighborhoods $U$, $U'$, $V$, and $V'$ of $x=p(z)$, $x'=p'(z')$, $y=q(z)$, and $y'=q'(z')$ (respectively), such that the restrictions of $f$ and $g$ to $U$ and $V$ (respectively) are closed (resp. open) immersions into $U'$ and $V'$ (respectively).
-Since the underlying spaces of $U\times_S V$ and $U'\times_S V'$ can be identified with the open neighborhoods $p^{-1}(U)\cap q^{-1}(V)$ and ${p'}^{-1}(U')\cap{q'}^{-1}(V')$ of $z$ and $z'$ (respectively) \sref{I.3.2.7}, the proposition follows from Proposition~\sref{I.4.3.1}.
+There exists, by hypothesis, open neighbourhoods $U$, $U'$, $V$, and $V'$ of $x=p(z)$, $x'=p'(z')$, $y=q(z)$, and $y'=q'(z')$ (respectively), such that the restrictions of $f$ and $g$ to $U$ and $V$ (respectively) are closed (resp. open) immersions into $U'$ and $V'$ (respectively).
+Since the underlying spaces of $U\times_S V$ and $U'\times_S V'$ can be identified with the open neighbourhoods $p^{-1}(U)\cap q^{-1}(V)$ and ${p'}^{-1}(U')\cap{q'}^{-1}(V')$ of $z$ and $z'$ (respectively) \sref{I.3.2.7}, the proposition follows from Proposition~\sref{I.4.3.1}.
 \end{proof}
 
