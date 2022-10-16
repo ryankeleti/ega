@@ -1154,5 +1154,92 @@ if $s\in S$ is such that $\psi^\flat(s)$ is locally nilpotent, since we can writ
 \oldpage[II]{69}
 \begin{env}[3.8.1]
 \label{II.3.8.1}
-With
+With the notation of \sref{II.3.7.1}, the question of if $r_{\sh{L},\psi}$ is an immersion (resp. an open immersion, a closed immersion) is clearly \emph{local on $Y$}.
 \end{env}
+
+\begin{proposition}[3.8.2]
+\label{II.3.8.2}
+Under the hypotheses of \sref{II.3.7.3}, for $r_{\sh{L},\psi}$ to be everywhere defined and an immersion, it is necessary and sufficient that there exist a family of sections $s_\alpha\in S_{n_\alpha}$ (where $n_\alpha>0$) such that, if we set $f_\alpha=\psi^\flat(s_\alpha)$, the following conditions are satisfied:
+\begin{enumerate}
+  \item[(i)] The $X_{f_\alpha}$ form a cover of $X$.
+  \item[(ii)] The $X_{f_\alpha}$ are affine opens.
+  \item[(iii)] For every $\alpha$ and every $t\in\Gamma(X_{f_\alpha},\sh{O}_X)$, there exists an integer $m>0$ and some $s\in S_{mn_\alpha}$ such that $t=(\psi^\flat(s)|X_{f_\alpha})(f_\alpha|X_{f_\alpha})^{-m}$.
+\end{enumerate}
+
+For $r_{\sh{L},\psi}$ to be everywhere defined and an open immersion, it is necessary and sufficient that there exist a family $(s_\alpha)$ satisfying conditions~(i), (ii), and (iii) above, as well as:
+\begin{enumerate}
+  \item[(iv)] For all $n>0$ and every $s\in S_{nn\alpha}$ such that $\psi^\flat(s)|X_{f_\alpha}=0$, there exists an integer $k>0$ such that $s_\alpha^k=0$.
+\end{enumerate}
+
+For $r_{\sh{L},\psi}$ to be everywhere defined and a closed immersion, it is necessary and sufficient that there exist a family $(s_\alpha)$ satisfying conditions~(i), (ii), and (iii) above, as well as:
+\begin{enumerate}
+  \item[(v)] The $D_+(s_\alpha)$ form a cover of $P=\Proj(S)$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+For $r$ to be an immersion (resp. a closed immersion), it is necessary and sufficient that there exist a cover of $r(G(\psi))$ (resp. of $P$) by the $D_+(s_\alpha)$, such that, if we set $V_\alpha=r^{-1}(D_+(s_\alpha))$, then the restriction of $r$ to $U_\alpha$ is a \emph{closed} immersion of $V_\alpha$ into $D_+(s_\alpha)$ \sref[I]{I.4.2.4}.
+Condition~(i) says that $r$ is everywhere defined and also that the $D_+(s_\alpha)$ cover $r(X)$, by \sref{II.3.7.3.1};
+since $D_+(s_\alpha)$ is affine, conditions~(ii) and (iii) say that the restriction of $r$ to $X_{f_\alpha}$ is a closed immersion into $D_+(s_\alpha)$, by \sref[I]{I.4.2.3};
+finally, since conditions~(iii) and (iv) say that $\psi_{(s_\alpha)}^\flat$ is bijective (using the notation of \sref{II.3.7.3.2}), conditions~(ii), (iii), and (iv) say that the restriction of $r$ to $X_{f_\alpha}$ is an isomorphism to $D_+(s_\alpha)$ for all $\alpha$, and so conditions~(i), (ii), (iii), and (iv) together say that $r$ is an open immersion.
+\end{proof}
+
+\begin{corollary}[3.8.3]
+\label{II.3.8.3}
+Under the hypotheses of \sref{II.3.7.6}, if $r_{\sh{L},\psi'}$ is everywhere defined and an immersion, then so too is $r_{\sh{L},\psi}$.
+If we further suppose that $u$ is (\textbf{TN})-surjective, then if $r_{\sh{L},\psi'}$ is an open (resp. closed) immersion, so too is $r_{\sh{L},\psi}$.
+\end{corollary}
+
+\begin{proof}
+By \sref{II.3.8.2}, there exists a family $s'_\alpha\in S'_{n_\alpha}$ such that, if we set $f_\alpha=\psi'^\flat(s'_\alpha)$, conditions~(i), (ii), and (iii) are satisfied.
+But if we set $s_\alpha=u(s'_\alpha)$, then we also have that $f_\alpha=\psi^\flat(s_\alpha)$, and if $t=(\psi'^\flat(s')|X_{f_\alpha})(f_\alpha|X_{f_\alpha})^{-m}$, then also $t=(\psi^\flat(s)|X_{f_\alpha})(f_\alpha|X_{f_\alpha})^{-m}$ by setting $s=u(s')$, whence the first claim.
+The second claim follows immediately from the fact that $\Proj(u)$ is a closed immersion.
+\end{proof}
+
+\begin{proposition}[3.8.4]
+\label{II.3.8.4}
+Suppose that the hypotheses of \sref{II.3.7.7} are satisfied, and further that $q:X\to Y$ is a morphism of finite type.
+Then, for $r_{\sh{L},\psi}$ to be everywhere defined and an immersion, it is necessary and sufficient that there exist some $\lambda$ such that $r_{\sh{L},\psi_\lambda}$ is everywhere defined and an immersion;
+in this case, $r_{\sh{L},\psi_\mu}$ is also everywhere defined and an immersion for all $\mu\geq\lambda$.
+\end{proposition}
+
+\oldpage[II]{70}
+\begin{proof}
+Taking \sref{II.3.8.3} into account, it suffices to show that, if $r_{\sh{L},\psi}$ is everywhere defined and an immersion, then so too is $r_{\sh{L},\psi_\lambda}$ for at least one $\lambda$.
+By the same argument as in \sref{II.3.7.7}, using the fact that $Y$ is quasi-compact, \sref{II.3.8.2} shows the existence of a \emph{finite} family $(s_i\in S_{n_i})$ of elements of $S$ satisfying conditions~(i), (ii), and (iii).
+The morphism $X_{f_i}\to Y$ (where $f_i=\psi^\flat(s_i)$) is of finite type: it is a morphism of affine schemes, and is thus quasi-compact \sref[I]{I.6.6.1}, and also locally of finite type, since $q$ is of finite type \sref[I]{I.6.3.2}, and the conclusion then follows from \sref[I]{I.6.6.3}.
+The ring $B_i$ of $X_{f_i}$ is thus an $A$-algebra of finite type \sref[I]{I.6.6.3};
+let $(t_{ij})$ be a family of generators of this algebra.
+By hypothesis, there exist elements $s'_{ij}\in S_{m_{ij}n_i}$ such that
+\[
+  t_{ij} = (\psi^\flat(s'_{ij})|X_{f_i})(\psi^\flat(s_i)|X_{f_i})^{-m_{ij}}.
+\]
+Also by hypothesis, there exists some $\lambda$ and elements $s_{i\lambda}\in S_{n_i}^\lambda$ and $s'_{ij\lambda}\in S_{m_{ij}n_i}^\lambda$ whose images under $\vphi_\lambda$ are $s_i$ and $s'_{ij}$, respectively;
+it is clear that $r_{\sh{L},\psi_\lambda}$ satisfies conditions~(i), (ii), and (iii) of \sref{II.3.8.2}.
+\end{proof}
+
+\begin{proposition}[3.8.5]
+\label{II.3.8.5}
+Let $Y$ be a quasi-compact scheme, or a prescheme whose underlying space is Noetherian, $q:X\to Y$ a morphism \emph{of finite type}, $\sh{L}$ an invertible $\sh{O}_X$-module, $\sh{S}$ a quasi-coherent graded $\sh{O}_Y$-algebra, and $\psi:q^*(\sh{S})\to\bigoplus_{n\geq0}\sh{L}^{\otimes n}$ a homomorphism of graded algebras.
+For $r_{\sh{L},\psi}$ to be everywhere defined and an immersion, it is necessary and sufficient that there exist an integer $n>0$ and a quasi-coherent sub-$\sh{O}_Y$-module \emph{of finite type} $\sh{E}$ of $\sh{S}_n$ such that
+\begin{enumerate}
+  \item[a)] the homomorphism $\psi_n\circ q^*(j_n):q^*(\sh{E})\to\sh{L}^{\otimes n}$ (where $j_n:\sh{E}\to\sh{S}$ is the canonical injection) is surjective; and
+  \item[b)] if we denote by $\sh{S}'$ the (graded) sub-$\sh{O}_Y$-algebra of $\sh{S}$ generated by $\sh{E}$, and by $\psi'$ the homomorphism $\psi\circ q^*(j')$ (where $j'$ is the injection of $\sh{S}'$ into $\sh{S}$), $r_{\sh{L},\psi'}$ is everywhere defined and an immersion.
+\end{enumerate}
+
+If this is the case, then every quasi-coherent sub-$\sh{O}_Y$-module $\sh{E}'$ of $\sh{S}_n$ that contains $\sh{E}$ also possesses the same property, as does the image of $\otimes^k\sh{E}$ in $\sh{S}_{kn}$ for all $k>0$.
+\end{proposition}
+
+\begin{proof}
+The fact that the condition is sufficient, and the last two claims, are particular cases of \sref{II.3.8.3}, taking into account the canonical isomorphism between $\Proj(\sh{S})$ and $\Proj(\sh{S}^{(k)})$ \sref{II.3.1.8}.
+
+Let $(U_i)$ be a finite cover of $Y$ by affine opens, and set $A_i=A(U_i)$.
+Since $q^{-1}(U_i)$ is compact, the hypothesis that $r_{\sh{L},\psi}$ be everywhere defined and an immersion implies, along with \sref{II.3.8.2}, the existence of a finite family $(s_{ij}\in S_{n_{ij}}^{(i)})$ of elements of $S^{(i)}=\Gamma(U_i,\sh{S})$ satisfying conditions~(i), (ii), and (iii).
+We see, as in the proof of \sref{II.3.8.4}, that the morphism $X_{f_{ij}}\to U_i$ (where $f_{ij}=\psi^\flat(s_{ij})$) is of finite type, and that the ring $B_{ij}$ of $X_{f_{ij}}$ is thus an $A_i$-algebra of finite type, having a system of generators of the form $(\psi^\flat(t_{ijk})X_{f_{ij}})(f_{ij}|X_{f_{ij}})^{-m_{ijk}}$, where $t_{ijk}\in S_{m_{ijk}n_{ij}}^{(i)}$.
+Let $n$ be a common multiple of the $m_{ijk}n_{ij}$;
+replacing (for each $(i,j,k)$) $s_{ij}$ by some power $s_{ij}^\rho$ such that $\rho m_{ijk}n_{ij}=n$, and multiplying $t_{ijk}$ by $s_{ij}^{\rho-m_{ijk}}$, we can assume that, for each $i$, the $s_{ij}$ and $t_{ijk}$ belong to $S_n^{(i)}$ and that $m_{ijk}=1$.
+Let $E_i$ be the sub-$A_i$-module of $S^{(i)}$ generated by these elements (for fixed $i$).
+Then there exists a coherent sub-$\sh{O}_Y$-module $\sh{E}_i$ of $\sh{S}_n$ of finite type such that $\sh{E}_i|U_i=(E_i)\supertilde$ \sref[I]{I.9.4.7}.
+\oldpage[II]{71}
+It is clear that the sub-$\sh{O}_Y$-module $\sh{E}$ of $\sh{S}_n$ given by the sum of the $\sh{E}_i$ is the desired object (since each section $f_{ij}$ is such that, for all $x\in X_{f_{ij}}$, there exists an affine neighbourhood $V\subset X_{f_{ij}}$ of $x$ such that $f|V$ is a basis for $\Gamma(V,\sh{L}^{\otimes n})$).
+\end{proof}
