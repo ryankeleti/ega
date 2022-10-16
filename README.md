@@ -36,7 +36,7 @@ Alternatively, the full document can be downloaded:
 
 - [x] EGA I preliminaries
 - [x] EGA I
-- [x] EGA II
+- [ ] EGA II
 - [ ] EGA III preliminaries
 - [ ] EGA III
 - [ ] EGA IV preliminaries
