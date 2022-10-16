@@ -1103,10 +1103,56 @@ if $s\in S$ is such that $\psi^\flat(s)$ is locally nilpotent, since we can writ
 \label{II.3.7.9}
 \medskip\noindent
 \begin{enumerate}
-  \item[(i)] With
+  \item[(i)] With the notation of \sref{II.3.7.1}, and taking \sref{II.3.2.10} into account, we have, for all $n\in\bb{Z}$, a canonical homomorphism
+    \[
+    \label{II.3.7.9.1}
+      \theta : r_{\sh{L},\psi}^*(\sh{O}_P(n)) \to \sh{L}^{\otimes n}
+    \tag{3.7.9.1}
+    \]
+    defined in a general way in \sref{II.3.5.6.2}.
+    We immediately see that, under the conditions of \sref{II.3.7.3}, the restriction of this homomorphism to $X_{\psi^\flat(f)}$ sends $s/f^k$ (where $s\in S_{n+kd}$) to the element $(\psi^\flat(s)|X_{\psi^\flat(f)})(\psi^\flat(f)|X_{\psi^\flat(f)})^{-k}$.
+  \item[(ii)] Let $\sh{F}$ be a quasi-coherent $\sh{O}_X$-module, and suppose that $q$ is quasi-compact and separated, so that, for all $n\geq0$, $q_*(\sh{F}\otimes\sh{L}^{\otimes n})$ is a quasi-coherent $\sh{O}_Y$-module \sref[I]{I.9.2.2}.
+    Let $\sh{M'}=\bigoplus_{n\geq0}\sh{F}\otimes\sh{L}^{\otimes n}$, which is a quasi-coherent graded $\sh{S}'$-module, and consider its image $\sh{M}=q_*(\sh{M}')=\bigoplus_{n\geq0}(\sh{F}\otimes\sh{L}^{\otimes n})$ (which is a quasi-coherent $\sh{S}$-module, via the homomorphism $\psi^\flat$).
+    We are going to show the existence of a canonical homomorphism of $\sh{O}_X$-modules
+    \[
+    \label{II.3.7.9.2}
+      \xi : r_{\sh{L},\psi}^*(\widetilde{\sh{M}}) \to \sh{F}|G(\psi).
+    \tag{3.7.9.2}
+    \]
+
+    Indeed, we have already defined \sref{II.3.5.6.1} a canonical homomorphism
+    \[
+    \label{II.3.7.9.3}
+      r_{\sh{L},\psi}^*(\widetilde{\sh{M}}) \to (q^*(\sh{M})\otimes_{q^*(\sh{S})}\sh{S}')\supertilde|G(\psi)
+    \tag{3.7.9.3}
+    \]
+    where the right-hand side is considered as a quasi-coherent sheaf on $\Proj(\sh{S}')$.
+    We also have a canonical homomorphism
+    \[
+    \label{II.3.7.9.4}
+      q^*(q_*(\sh{M}'))\otimes_{q^*(\sh{S})}\sh{S}' \to \sh{M}'
+    \tag{3.7.9.4}
+    \]
+    for any quasi-coherent graded $\sh{S}'$-module $\sh{M}'$: for any open $U$ of $X$, any section $t'$ of $q^*(q_*(\sh{M}'_h))$ over $U$, and any section $b'$ of $\sh{S}'_k$ over $U$, we send $t'\otimes b'$ to the section $b'\sigma(t')$ of $\sh{M}'_{h+k}$, where $\sigma(t')$ is the section of $\sh{M}'_h$ over $U$ that corresponds canonically \sref[0]{0.4.4.3} to $t'$.
+    We thus obtain a canonical homomorphism
+    \[
+    \label{II.3.7.9.5}
+      (q^*(q_*(\sh{M}'))\otimes_{q^*(\sh{S})}\sh{S}')\supertilde|G(\psi) \to \widetilde{\sh{M}'}|G(\psi)
+    \tag{3.7.9.5}
+    \]
+    and, finally, since $\widetilde{\sh{M}'}$ is canonically identified with $\sh{F}$ \sref{II.3.2.9}[(i)], we indeed obtain the desired canonical homomorphism.
+
+    Under the conditions of \sref{II.3.7.3}, the restriction of this homomorphism to $X_{\psi^\flat(f)}$ acts as follows:
+    given a section $t_{nd}$ of $\sh{F}\otimes\sh{L}^{\otimes nd}$ over $X$, if $t'_{nd}$ is the section $t_{nd}$ considered as a section of $q_*(\sh{F}\otimes\sh{L}^{\otimes n})$ over $Y$, then it sends the element $t'_{nd}/f^n$ to the section $(t_{nd}|X_{\psi^\flat(f)})(\psi^\flat(f)|X_{\psi^\flat(f)})^{-n}$ of $\sh{F}$ over $X_{\psi^\flat(f)}$.
 \end{enumerate}
 \end{remarks}
 
 
-% \subsection{Criteria for immersion into a homogeneous spectrum}
-% \label{subsection:II.3.8}
+\subsection{Criteria for immersion into a homogeneous spectrum}
+\label{subsection:II.3.8}
+
+\oldpage[II]{69}
+\begin{env}[3.8.1]
+\label{II.3.8.1}
+With
+\end{env}
