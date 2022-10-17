@@ -95,7 +95,94 @@ it follows from the hypothesis that each $C_{h_i}$ is an $A_{g_i}$-module of fin
 
 \oldpage[II]{112}
 \begin{proof}
-By
+By \sref[I]{I.5.5.12}, it suffices to prove (i), (ii), and (iii).
+To prove that a closed immersion $X\to S$ is finite, we can restrict to the case where $S=\Spec(A)$, and everything then follows from noting that a quotient ring $A/\mathfrak{J}$ is a monogeneous $A$-module.
+To prove that the composition of two finite (resp. integral) morphism $X\to Y$, $Y\to Z$ is finite (resp. integral), we can again assume that $Z$ (and thus $X$ and $Y$ \sref{II.1.3.4}) is affine, and then the claim is equivalent to saying that, if $B$ is a finite (resp. integral) $A$-algebra and $C$ a finite (resp. integral) $B$-algebra, then $C$ is a finite (resp. integral) $A$-algebra, which is immediate.
+Finally, to prove (iii), we can restrict to the case where $S=Y$, since $X_{(S')}$ can be identified with $X\times_Y Y_{(S')}$ \sref[I]{I.3.3.11};
+we can further suppose that $S=\Spec(A)$ and $S'=\Spec(A')$;
+then $X$ is affine of ring $B$ \sref{II.1.3.4}, and $X_{(S')}$ affine of ring $A'\otimes_A B$, and it suffices to note that, if $B$ is a finite (resp. integral) $A$-algebra, then $A'\otimes_A B$ is a finite (resp. integral) $A'$-algebra.
+\end{proof}
+
+We also note that, if $X$ and $Y$ are $S$-preschemes that are finite (resp. integral) over $S$, then their \emph{sum} $X\sqcup Y$ is a finite (resp. integral) prescheme over $S$, since this reduces to showing that, if $B$ and $C$ are finite (resp. integral) $A$-algebras over $A$, then so too is $B\times C$.
+
+\begin{corollary}[6.1.6]
+\label{II.6.1.6}
+If $X$ is an integral (resp. finite) prescheme over $S$, then, for every open $U\subset S$, $f^{-1}(U)$ is integral (resp. finite) over $U$.
+\end{corollary}
+
+\begin{proof}
+This is a particular case of \sref{II.6.1.5}[(iii)].
+\end{proof}
+
+\begin{corollary}[6.1.7]
+\label{II.6.1.7}
+Let $f:X\to Y$ be a finite morphism.
+Then, for all $y\in Y$, the fibre $f^{-1}(y)$ is a finite algebraic scheme over $\kres(y)$, and \emph{a fortiori} its underlying space is discrete and finite.
+\end{corollary}
+
+\begin{proof}
+Indeed, as a $\kres(y)$-prescheme, $f^{-1}(y)$ can be identified with $X\times_Y\Spec(\kres(y))$ \sref[I]{I.3.6.1}, which is finite over $\Spec(\kres(y))$ \sref{II.6.1.5}[(iii)];
+it is thus an affine scheme whose ring is an algebra of finite rank over $\kres(y)$ \sref{II.6.1.4}.
+The corollary then follows from \sref[I]{I.6.4.4}.
+\end{proof}
+
+\begin{corollary}[6.1.8]
+\label{II.6.1.8}
+Let $X$ and $S$ be integral preschemes, and $f:X\to S$ a \emph{dominant} morphism.
+If $f$ is integral (resp. finite) then the field $R(X)$ of rational functions on $X$ is algebraic (resp. algebraic of finite degree) over the field $R(S)$ of rational functions on $S$.
+\end{corollary}
+
+\begin{proof}
+Let $s$ be the generic point of $S$;
+the $\kres(s)$-prescheme $f^{-1}(s)$ is integral (resp. finite) over $\Spec(\kres(s))$ \sref{II.6.1.5}[(iii)] and contains, by hypothesis, the generic point $x$ of $X$;
+since the local ring of $x$ in $f^{-1}(s)$ is equal to $\kres(x)$ \sref[I]{I.3.6.5}, and is thus a local ring of an integral (resp. finite) algebra over $\kres(s)$ \sref{II.6.1.4}, whence the corollary.
+\end{proof}
+
+\begin{remark}[6.1.9]
+\label{II.6.1.9}
+The hypothesis that $g$ be \emph{separated} is essential for the validity of \sref{II.6.1.5}[(v)]: if $Y$ is not separated over $S$, then the identity $1_Y$ is the composite morphism $Y\xrightarrow{\Delta_Y}Y\times_Z Y\xrightarrow{p_1}Y$, but $\Delta_Y$ is not an integral morphism, as follows from \sref{II.6.1.10}:
+\end{remark}
+
+\begin{proposition}[6.1.10]
+\label{II.6.1.10}
+Every integral morphism is universally closed.
+\end{proposition}
+
+\begin{proof}
+Let $f:X\to Y$ be an integral morphism;
+by \sref{II.6.1.5}[(iii)], it suffices to show that $f$ is \emph{closed}.
+Let $Z$ be a closed subset of $X$;
+\oldpage[II]{113}
+then there exists a subprescheme of $X$ whose underlying space is $Z$ \sref[I]{I.5.4.1}, and it thus follows from \sref{II.6.1.5}[(i) and (ii)] that it suffices to prove that $f(X)$ is \emph{closed} in $Y$.
+By \sref{II.6.1.5}[(vi)], we can suppose that $X$ and $Y$ are \emph{reduced};
+further, if $T$ is the closed reduced subprescheme of $Y$ whose underlying space is $\overline{f(X)}$ \sref[I]{I.5.2.1} then we know that $f$ factors as $X\to T\xrightarrow{j}Y$, where $j$ is the injection morphism \sref[I]{I.5.2.2}, and since $j$ is separated \sref[I]{I.5.5.1}[(i)], it follows from \sref{II.6.1.5}[(v)] that $g$ is an integral morphism.
+We can thus suppose that $f(X)$ is \emph{dense} in $Y$.
+Finally, since the question is local on $Y$, we can restrict to the case where $Y=\Spec(A)$.
+Then $X=\Spec(B)$, where $B$ is an $A$-algebra that is integral over $A$ \sref{II.6.1.4};
+furthermore, $A$ is reduced \sref[I]{I.5.1.4}, and the hypothesis that $f(X)$ be dense in $Y$ implies that the homomorphism $\vphi:A\to B$ corresponding to $f$ is \emph{injective} \sref[I]{I.1.2.7}.
+Under these conditions, saying that $f(X)=Y$ implies that every prime ideal of $A$ is the intersection with $A$ of a prime ideal of $B$, which is exactly the first theorem of Cohen--Seidenberg (\cite[t.~I, p.~257, th.~3]{II-13}).
+\end{proof}
+
+\begin{corollary}[6.1.11]
+\label{II.6.1.11}
+Every finite morphism $f:X\to Y$ is projective.
+\end{corollary}
+
+\begin{proof}
+Since $f$ is affine, $\sh{O}_X$ is a \emph{very ample} $\sh{O}_X$-module with respect to $f$ \sref{II.5.1.2};
+furthermore, $f_*(\sh{O}_X)$ is a quasi-coherent $\sh{O}_Y$-module \emph{of finite type} \sref{II.6.1.2};
+finally, $f$ is separated, of finite type, and universally closed \sref{II.6.1.10}, and thus satisfies the conditions of criterion~\sref{II.5.5.4}[(i)].
+\end{proof}
+
+\begin{proposition}[6.1.12]
+\label{II.6.1.12}
+Let $f:X'\to X$ be a finite morphism, and let $\sh{B}=f_*(\sh{O}_{X'})$ (which is a quasi-coherent $\sh{O}_X$-algebra, and a $\sh{O}_X$-module of finite type).
+Let $\sh{F}'$ be a quasi-coherent $\sh{O}_{X'}$-module;
+for $\sh{F}'$ to be locally free of rank~$r$, it is necessary and sufficient that $f_*(\sh{F}')$ be a locally free $\sh{B}$-module of rank~$r$.
+\end{proposition}
+
+\begin{proof}
+It
 \end{proof}
 
 
