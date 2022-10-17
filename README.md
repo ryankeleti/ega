@@ -12,6 +12,8 @@ To compile, `make book`, `make pdfs`, or `make all`.
 
 ## PDFs
 
+(All the PDFs are auto-compliled every hour if any changes have been made since the last auto-compile, so will always be up to date with the latest commit --- if two versions have different autobuild times but the same git commit, then they are identical).
+
 Individual volumes can be downloaded separately:
 
 - [What this is](https://fppf.site/ega/what-auto.pdf)
@@ -26,8 +28,6 @@ Individual volumes can be downloaded separately:
 Alternatively, the full document can be downloaded:
 
 - [Book](https://fppf.site/ega/book-auto.pdf)
-
-(All the PDFs are auto-compliled every hour if any changes have been made since the last auto-compile, so will always be up to date with the latest commit).
 
 
 ## Current status
