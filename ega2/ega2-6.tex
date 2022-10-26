@@ -182,12 +182,95 @@ for $\sh{F}'$ to be locally free of rank~$r$, it is necessary and sufficient tha
 \end{proposition}
 
 \begin{proof}
-It
+It is clear that, if $f_*(\sh{F}')|U$ is isomorphic to $\sh{B}^r|U$ (where $U\subset X$ is open), then $\sh{F}'|f^{-1}(U)$ is isomorphic to $\sh{O}_{X'}^r|f^{-1}(U)$ \sref{II.1.4.2}.
+Conversely, suppose that $\sh{F}'$ is locally free of rank~$r$; we will show that $f_*(\sh{F}')$ is locally isomorphic to $\sh{B}^r$ as a $\sh{B}$-module.
+Let $x$ be a point of $X$;
+as $U$ runs over a fundamental system of affine neighbourhoods of $x$, $f^{-1}(U)$ runs over a fundamental system of affine neighbourhoods \sref{II.1.2.5} of the finite set $f^{-1}(x)$, since $f$ is closed \sref{II.6.1.10}.
+The proposition then follows from the following lemma:
+\end{proof}
+
+\begin{lemma}[6.1.12.1]
+\label{II.6.1.12.1}
+Let $Y$ be a prescheme, $\sh{E}$ a locally free $\sh{O}_Y$-module of rank~$r$, and $Z$ a finite subset of $Y$ contained inside some affine open $V$.
+Then there exists a neighbourhood $U\subset V$ of $Z$ such that $\sh{E}|U$ is isomorphic to $\sh{O}_Y^r|U$.
+\end{lemma}
+
+\begin{proof}
+We can evidently assume that $Y$ is affine;
+for all $z_i\in Z$, there exists in the closure $\overline{\{z_i\}}$ at least one closed point $z'_i$ \sref[0]{0.2.1.3};
+if $Z'$ is the set of the $z'_i$ then every neighbourhood of $Z'$ is a neighbourhood of $Z$, and we can thus assume that $Z$ is discrete and closed in $Y$.
+Consider the closed reduced subprescheme of $Y$ that has $Z$ has its underlying space \sref[I]{I.5.2.1} and let $j:Z\to Y$ be the canonical injection;
+$j^*(\sh{E})=\sh{E}\otimes_Y\sh{O}_Z$ is locally free of rank~$r$ on the discrete scheme $Z$, and is thus isomorphic to $\sh{O}_Z^r$;
+in other words, there exist $r$ sections $s_i$ (for $1\leq i\leq r$) of $\sh{E}\otimes_Y\sh{O}_Z$ over $Z$ such that the homomorphism $\sh{O}_Z^r\to\sh{E}\otimes_Y\sh{O}_Z$ defined by these sections is bijective.
+But $Y=\Spec(A)$ is affine, $Z$ is defined by an ideal $\mathfrak{J}$ of $A$, and we have $\sh{E}=\widetilde{M}$, where $M$ is an $A$-module;
+the $s_i$ are elements of $M\otimes_A(A/\mathfrak{J})$ and are thus images of $r$ elements $t_i\in M=\Gamma(Y,\sh{E})$.
+\oldpage[II]{114}
+For all $z_j\in Z$ there is thus a neighbourhood $V_j$ of $z_j$ such that the restrictions of the $t_i$ to $V_j$ defined an isomorphism $\sh{O}_Y^r|V_j\to\sh{E}|V_j$ \sref[0]{0.5.5.4};
+the neighbourhood $U$ given by the union of the $V_j$ is the desired neighbourhood.
+\end{proof}
+
+\begin{proposition}[6.1.13]
+\label{II.6.1.13}
+Let $g:X'\to X$ be an integral morphism of preschemes, $Y$ a normal locally integral prescheme, and $f$ a rational map from $Y$ to $X'$ such that $g\circ f$ is an everywhere defined rational map \sref[I]{I.7.2.1}.
+Then $f$ is everywhere defined.
+\end{proposition}
+
+\begin{proof}
+If $f_1$ and $f_2$ are morphisms (from dense open subsets of $Y$ to $X'$) in the class $f$, then it is clear that $g\circ f_1$ and $g\circ f_2$ are equivalent morphisms, which justifies the notation $g\circ f$ for their equivalence class.
+We recall also that, if we further suppose $Y$ to be \emph{locally Noetherian}, then the hypothesis that $Y$ is normal already implies that $Y$ is locally integral \sref[I]{I.6.1.13}.
+
+To prove the proposition, note first of all that the question is local on $Y$, and so we can suppose that there exists in the class $g\circ f$ a \emph{morphism} $h:Y\to X$.
+Consider the inverse image $Y'=X'_{(h)}=X'_{(Y)}$, and note that the morphism $g'=g_{(Y)}:Y'\to Y$ is \emph{integral} \sref{II.6.1.5}[(iii)].
+Given the correspondence between rational maps from $Y$ to $X'$ and rational $Y$-sections of $Y'$ \sref[I]{I.7.1.2}, we see that it suffices to prove the specific case of \sref{II.6.1.13} where $X=Y$; in other words, the following:
+\end{proof}
+
+\begin{corollary}[6.1.14]
+\label{II.6.1.14}
+Let $X$ be a normal locally integral prescheme, $g:X'\to X$ an \emph{integral} morphism, and $f$ a rational $X$-section of $X'$.
+Then $f$ is everywhere defined.
+\end{corollary}
+
+\begin{proof}
+Since the question is local on $X$, we can assume that $X$ is integral, and then $f$ is identified with a morphism from an open $U$ of $X$ to $X'$ \sref[I]{I.7.2.2} that is a $U$-section of $g^{-1}(U)$.
+Since $g$ is separated, $f$ is a closed immersion from $U$ into $g^{-1}(U)$ \sref[I]{I.5.4.6};
+let $Z$ be the closed subprescheme of $g^{-1}(U)$ associated to $f$ \sref[I]{I.4.2.1}, which is isomorphic to $U$, and thus integral;
+let $X_1$ be the reduced subprescheme of $X'$ whose underlying space is the closure $\overline{Z}$ of $Z$ in $X'$ \sref[I]{I.5.2.1};
+then $Z$ is an induced subprescheme on an open of $X_1$ \sref[I]{I.5.2.3}, and, since it is irreducible, so too is $X_1$, which is thus integral.
+The morphism $f$ can then be considered as a rational $X$-section of $X_1$;
+since the restriction of $g$ to $X_1$ is an integral morphism \sref{II.6.1.5}[(i) and (ii)], we can finally reduce to proving \sref{II.6.1.14} in the specific case where $X'=X_1$;
+in other words, the following:
+\end{proof}
+
+\begin{corollary}[6.1.15]
+\label{II.6.1.15}
+Let $X$ be a normal integral prescheme, $X'$ an integral prescheme, and $g:X'\to X$ an \emph{integral} morphism.
+If there exists a rational $X$-section $f$ of $X'$, then $g$ is an isomorphism.
+\end{corollary}
+
+\begin{proof}
+Since the question is local on $X$, we can assume that $X$ is affine of integral ring $A$, and then $X'$ is affine of ring $A'$ with $A'$ integral over $A$ \sref{II.6.1.4} and integral;
+furthermore, the argument of \sref{II.6.1.14} shows that there exists a dense open of $X$ that is isomorphic to a dense open of $X'$, and so $A$ and $A'$ have the same field of fractions.
+Also, by \sref[I]{I.8.2.1.1}, and the hypothesis that the $\sh{O}_x$ are integrally closed, the ring $A$ is integrally closed, and so $A'=A$, which finishes the proof of \sref{II.6.1.13}
 \end{proof}
 
 
-% \subsection{Quasi-finite morphisms}
-% \label{subsection:II.6.2}
+\subsection{Quasi-finite morphisms}
+\label{subsection:II.6.2}
+
+\begin{proposition}[6.2.1]
+\label{II.6.2.1}
+Let $f:X\to Y$ be morphism locally of finite type, and $x$ a point of $X$.
+Then the following conditions are equivalent:
+\oldpage[II]{115}
+\begin{enumerate}
+  \item[a)] The point $x$ is isolated in its fibre $f^{-1}(f(x))$.
+  \item[b)] The ring $\sh{O}_x$ is a quasi-finite $\sh{O}_{f(x)}$-module \sref[0]{0.7.4.1}.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+The
+\end{proof}
 
 
 % \subsection{Integral closure of a prescheme}
