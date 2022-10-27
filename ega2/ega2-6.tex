@@ -269,8 +269,20 @@ Then the following conditions are equivalent:
 \end{proposition}
 
 \begin{proof}
-The
+Since the question is clearly local on $X$ and on $Y$, we can assume that $X=\Spec(A)$ and $Y=\Spec(B)$ are affine, with $A$ a $B$-algebra of finite type \sref[I]{I.6.3.3}.
+Furthermore, we can replace $X$ by $X\times_Y\Spec(\sh{O}_{f(x)})$ without changing either the fibre $f^{-1}(f(x))$ or the local ring $\sh{O}_x$ \sref[I]{I.3.6.5};
+we can thus assume that $B$ is a local ring (equal to $\sh{O}_{f(x)}$);
+if $\mathfrak{n}$ is the maximal ideal of $B$, then $f^{-1}(f(x))$ is an affine scheme of ring $A/\mathfrak{n}A$, of finite type over $\kres(f(x))=B/\mathfrak{n}$ \sref[I]{I.6.4.11}.
+With this, if (a) is satisfied then we can further suppose that $f^{-1}(f(x))$ consists of the single point $x$;
+thus $A/\mathfrak{n}A$ is of finite rank over $B/\mathfrak{n}$ \sref[I]{I.6.4.4}, or, in other words, $A$ is a quasi-finite $B$-module.
+Conversely, if $A$ is a quasi-finite $B$-module, then $f^{-1}(f(x))$ is an Artinian affine scheme, and thus discrete \sref[I]{I.6.4.4};
+so $x$ is isolated in its fibre, and this shows that (b) implies (a).
 \end{proof}
+
+\begin{corollary}[6.2.2]
+\label{II.6.2.2}
+Let
+\end{corollary}
 
 
 % \subsection{Integral closure of a prescheme}
