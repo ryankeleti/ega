@@ -281,12 +281,99 @@ so $x$ is isolated in its fibre, and this shows that (b) implies (a).
 
 \begin{corollary}[6.2.2]
 \label{II.6.2.2}
-Let
+Let $f:X\to Y$ be a morphism of finite type.
+Then the following conditions are equivalent:
+\begin{enumerate}
+  \item[a)] Every point $x\in X$ is isolated in its fibre $f^{-1}(f(x))$ (or, in other words, the subspace $f^{-1}(f(x))$ is \emph{discrete}).
+  \item[b)] For all $x\in X$, the prescheme $f^{-1}(f(x))$ is a finite $\kres(f(x))$-prescheme.
+  \item[c)] For all $x\in X$, the ring $\sh{O}_x$ is a quasi-finite $\sh{O}_{f(x)}$-module.
+\end{enumerate}
 \end{corollary}
 
+\begin{proof}
+The equivalence of (a) and (c) follows from \sref{II.6.2.1}.
+Since $f^{-1}(f(x))$ is an algebraic $\kres(f(x))$-prescheme \sref[I]{I.6.4.11}, the equivalence of (a) and (b) follows from \sref[I]{I.6.4.4}.
+\end{proof}
 
-% \subsection{Integral closure of a prescheme}
-% \label{subsection:II.6.3}
+\begin{definition}[6.2.3]
+\label{II.6.2.3}
+If $f:X\to Y$ is a morphism of finite type satisfying the equivalent conditions of \sref{II.6.2.2}, we say that $f$ is \emph{quasi-finite}, or that $X$ is \emph{quasi-finite over $Y$}.
+\end{definition}
+
+It is clear that every \emph{finite} morphism is quasi-finite \sref{II.6.1.8}.
+
+\begin{proposition}[6.2.4]
+\label{II.6.2.4}
+\medskip\noindent
+\begin{enumerate}
+  \item[(i)] An immersion $X\to Y$ that is closed, or such that $X$ is Noetherian, is a quasi-finite morphism.
+  \item[(ii)] If $f:X\to Y$ and $g:Y\to Z$ are quasi-finite morphisms, then $g\circ f$ is quasi-finite.
+  \item[(iii)] If $X$ and $Y$ are $S$-preschemes, and $f:X\to Y$ a quasi-finite $S$-morphism, then $f_{(S')}:X_{(S')}\to Y_{(S')}$ is quasi-finite for any base extension $g:S'\to S$.
+  \item[(iv)] If $f:X\to Y$ and $g:X'\to Y'$ are quasi-finite $S$-morphisms, then
+    \[
+      f\times_S g : X\times_S Y \to X'\times_S Y'
+    \]
+    is quasi-finite.
+  \item[(v)] Let $f:X\to Y$ and $g:Y\to Z$ be morphisms such that $g\circ f$ is quasi-finite; if, further, $g$ is separated, or $X$ is Noetherian, or $X\times_Z Y$ is locally Noetherian, then $f$ is quasi-finite.
+  \item[(vi)] If $f$ is quasi-finite, then $f_\red$ is quasi-finite.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+If $f:X\to Y$ is an immersion, then every fibre consists of a single point, and claim (i) then follows from (\sref[I]{I.6.3.4}[(i)] and \sref[I]{I.6.3.5}).
+To prove (ii), note first of all that $h=g\circ f$ is of finite type \sref[I]{I.6.3.4}[(ii)];
+furthermore, if $z=h(x)$ and $y=f(x)$, then $y$ is isolated in $g^{-1}(z)$, and so there exists an open neighbourhood $V$ of $y$ in $Y$ that does not meet any point of $g^{-1}(z)$ apart from $y$;
+thus $f^{-1}(V)$ is an open neighbourhood of $x$ that does not meet any of the $f^{-1}(y')$, where $y'\neq y$ is in $g^{-1}(z)$;
+\oldpage[II]{116}
+since $x$ is isolated in $f^{-1}(y)$, it is isolated in $h^{-1}(z)=f^{-1}(g^{-1}(z))$.
+To prove (iii), we can reduce to the case where $Y=S$ \sref[I]{I.3.3.11};
+we again note first of all that $f'=f_{(S')}$ is of finite type \sref[I]{I.6.3.4}[(iii)];
+also, if $x'\in X'=X_{(S')}$, and if we set $y'=f'(x')$ and $y=g(y')$, then ${f'}^{-1}(y')$ can be identified with $f^{-1}(y)\otimes_{\kres(y)}\kres(y')$ \sref[I]{I.3.6.5};
+since $f^{-1}(y)$ is of finite rank over $\kres(y)$ by hypothesis, ${f'}^{-1}(y')$ is of finite rank over $\kres(y')$, and thus discrete.
+Claims (iv), (v), and (vi) follows from (i), (ii), and (iii) by the general method \sref[I]{I.5.5.12}, except for when the hypotheses in (v) are not ``g is separated'';
+in these cases, we remark first of all that, if $x$ is isolated in $f^{-1}(g^{-1}(g(f(x))))$, then it is \emph{a fortiori} isolated in $f^{-1}(f(x))$;
+the fact that $f$ is of finite type then follows from \sref[I]{I.6.3.6}.
+\end{proof}
+
+\begin{proposition}[6.2.5]
+\label{II.6.2.5}
+Let $A$ be a \emph{complete} local Noetherian ring, $X$ an $A$-scheme locally of finite type, and $x$ a point of $X$ over the closed point $y$ of $Y=\Spec(A)$.
+Suppose that $x$ is isolated in its fibre $f^{-1}(y)$ (where $f$ is the structure morphism $X\to Y$).
+Then $\sh{O}_x$ is an $A$-module of finite type, and $X$ is $Y$-isomorphic to the sum \sref[I]{I.3.1} of $X'=\Spec(\sh{O}_x)$ (which is a finite $Y$-scheme) and an $A$-scheme $X''$.
+\end{proposition}
+
+\begin{proof}
+It follows from \sref{II.6.2.1} that $\sh{O}_x$ is a quasi-finite $A$-module.
+Since $\sh{O}_x$ is Noetherian \sref[I]{I.6.3.7}, and the homomorphism $A\to\sh{O}_x$ is local, the hypothesis that $A$ is \emph{complete} implies that $\sh{O}_x$ is an $A$-module \emph{of finite type} \sref[0]{0.7.4.3}.
+Let $X'=\Spec(\sh{O}_x)$ be the local scheme of $X$ at the point $x$ \sref[I]{I.2.4.1}, and let $g:X'\to X$ be the canonical morphism.
+Since the composite $X'\xrightarrow{g}X\xrightarrow{f}Y$ is finite \sref{II.6.1.1}, and since $f$ is separated, $g$ is finite \sref{II.6.1.5}[(v)], and so $g(X')$ is \emph{closed} in $X$ \sref{II.6.1.10};
+also, since $g$ is of finite type, $g$ is a local isomorphism at the closed point $x'$ of $X'$ by the definition of $g$ and \sref[I]{I.6.5.4};
+but since $X'$ is the only open neighbourhood of $x'$, this implies that $g$ is an open immersion, and so $g(X')$ is also \emph{open} in $X$, which finishes the proof.
+\end{proof}
+
+\begin{corollary}[6.2.6]
+\label{II.6.2.6}
+Let $A$ be a \emph{complete} local Noetherian ring, $Y=\Spec(A)$, and $f:X\to Y$ a separated quasi-finite morphism.
+Then $X$ is $Y$-isomorphic to a sum $X'\sqcup X''$, where $X'$ is a finite $Y$-scheme, and $X''$ is a quasi-finite $Y$-scheme such that, if $y$ is the closed point of $Y$, then $X''\cap f^{-1}(y)=\emp$.
+\end{corollary}
+
+\begin{proof}
+Indeed, the fibre $f^{-1}(y)$ is finite and discrete by hypothesis, and the corollary then follows, by induction on the number of points in this fibre, from \sref{II.6.2.5}.
+\end{proof}
+
+\begin{remark}[6.2.7]
+\label{II.6.2.7}
+In Chapter~V, we will see that, if $Y$ is \emph{locally Noetherian}, then a separated quasi-finite morphism $X\to Y$ is necessarily \emph{quasi-affine}.
+\end{remark}
+
+
+\subsection{Integral closure of a prescheme}
+\label{subsection:II.6.3}
+
+\begin{proposition}[6.3.1]
+\label{II.6.3.1}
+Let
+\end{proposition}
 
 
 % \subsection{Determinant of an endomorphism of $\mathcal{O}_X$-modules}
