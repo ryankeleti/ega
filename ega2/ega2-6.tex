@@ -487,8 +487,34 @@ Furthermore, under these hypotheses, and with this notation, we have:
 \oldpage[II]{119}
 \begin{proposition}[6.3.7]
 \label{II.6.3.7}
-Each
+Each of the $X'_{ij}$ is an integral normal $X$-prescheme, and its field of rational functions $R(X'_{ij})$ is canonically identified with the algebraic closure $K'_{ij}$ of $\kres(\xi_i)$ in $K_{ij}$.
 \end{proposition}
+
+\begin{proof}
+By the above, we can suppose that $X$ is integral, and so $r=1$ and $s_1=1$, so that the unique algebra $A_1$ is a field $K$;
+let $\xi$ be the generic point of $X$, and let $f:X\to X'$ be the structure morphism.
+For every non-empty affine open $U$ of $X$, $f^{-1}(U)$ can be identified with the spectrum of the integral closure $B'_U$ in the field $K$ of the integral ring $B_U=\Gamma(Y,\sh{O}_X)$ \sref{II.6.3.4};
+since the ring $B'_U$ is integral and integrally closed, so too are the local rings of the points of its spectrum, and thus $f^{-1}(U)$ is by definition an \emph{integral} and \emph{normal} scheme (\sref[0]{0.4.1.4} and \sref[I]{I.5.1.4}).
+Furthermore, since $(0)$ is the only prime ideal of $B'_U$ over the prime ideal $(0)$ of $B_U$ \cite[t.~1, p.~259]{I-13}, $f^{-1}(\xi)$ consists of a single point $\xi'$, and $\kres(\xi')$ is the field of fractions $K'$ of $B'_U$, which is exactly the algebraic closure of $\kref(\xi)$ in $K$.
+Finally, $X'$ is irreducible, since, if $U$ runs over the set of non-empty affine opens of $X$, then the $f^{-1}(U)$ give an open cover of $X'$ by irreducible opens;
+furthermore, the intersection $f^{-1}(U\cap V)$ of any two of these opens contains $\xi'$, and is thus non-empty, and we conclude by \sref[0]{0.2.1.4}.
+\end{proof}
+
+\begin{corollary}
+Let $X$ be a reduced prescheme that has only a finite number of irreducible components $X_i$ (where $1\leq i\leq r$), and let $\xi_i$ be the generic point of $X_i$.
+Then the integral closure $X'$ of $X$ with respect to $\sh{R}(X)$ is the sum of the $r$ $X$-schemes $X'_i$, which are integral and normal.
+If $f:X'\to X$ is the structure morphism, then $f^{-1}(\xi_i)$ consists only of the generic point $\xi'_i$ of $X'_i$, and we have $\kres(\xi'_i)=\kres(\xi_i)$, or, in other words, that $f$ is birational.
+\end{corollary}
+
+In this case, we say that $X'$ is the \emph{normalisation} of the reduced prescheme $X$;
+we note that $f$, since it is birational and integral, is \emph{surjective} \sref{II.6.1.10}.
+Then in order to have $X'=X$, it is necessary and sufficient that $X$ be \emph{normal}.
+If $X$ is an integral prescheme, then it follows from \sref{II.6.3.8} that its normalisation $X'$ is integral.
+
+\begin{env}[6.3.9]
+\label{II.6.3.9}
+Let
+\end{env}
 
 
 % \subsection{Determinant of an endomorphism of $\mathcal{O}_X$-modules}
