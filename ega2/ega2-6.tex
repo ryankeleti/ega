@@ -513,12 +513,51 @@ If $X$ is an integral prescheme, then it follows from \sref{II.6.3.8} that its n
 
 \begin{env}[6.3.9]
 \label{II.6.3.9}
-Let
+Let $X$ and $Y$ be integral preschemes, $f:X\to Y$ a dominant morphism, and $L=R(X)$ (resp. $K=R(Y)$) the field of rational functions of $X$ (resp. $Y$);
+there is a canonical injection $K\to L$ corresponding to $f$, and if we identify $K$ (resp. $L$) with the simple sheaf $\sh{R}(Y)$ (resp. $\sh{R}(X)$), this injection is an $f$-morphism.
+Let $K_1$ (resp. $L_1$) be an extension of $K$ (resp. $L$), and suppose we have a morphism $K_1\to L_1$ such that the diagram
+\[
+  \xymatrix{
+    K_1 \ar[r]
+    & L_1
+  \\K \ar[u] \ar[r]
+    & L \ar[u]
+  }
+\]
+commutes;
+if $K_1$ (resp. $L_1$) is considered as a simple sheaf on $Y$ (resp. $X$), and thus as an $\sh{R}(Y)$-algebra (resp. $\sh{R}(X)$-algebra), this implies that $K_1\to L_1$ is an $f$-morphism.
+With this, if $X'$ (resp. $Y'$) is the integral closure of $X$ (resp. $Y$) with respect to $L_1$ (resp. $K_1$), then $X'$ (resp. $Y'$) is a normal integral prescheme \sref{II.6.3.6} whose field of rational functions is canonically identified with the algebraic closure $L'$ (resp. $K'$) of $L$ (resp. $K$) in $L_1$ (resp $K_1$), and there exists a (necessarily dominant) canonical morphism $f':X'\to Y'$ that makes the diagram \sref{II.6.3.5.1} commute.
+\oldpage[II]{120}
+
+The most important case is when we take $L_1=L$, with $K_1$ then being an extension of $K$ contained in $L$, and when we suppose $X$ to be integral and \emph{normal}, so that $X'=X$.
+The above then shows that, since $X$ is normal, if $Y'$ is the integral closure of $Y$ with respect to a field $K_1\subset L=R(X)$, then every dominant morphism $f:X\to Y$ factors as
+\[
+  f:X\xrightarrow{f'}Y'\to Y
+\]
+where $f'$ is dominant;
+also, since the monomorphism $K_1\to L$ is given, $f'$ is necessarily unique, as we see by reducing to the case where $X$ and $Y$ are affine.
+We thus see that, given $Y$, $L$, and a $K$-monomorphism $K_1\to L$, the integral closure $Y'$ of $Y$ with respect to $K_1$ is the solution of a \emph{universal problem}.
 \end{env}
 
+\begin{remark}[6.3.10]
+\label{II.6.3.10}
+Consider the hypothesis of \sref{II.6.3.6}, and suppose further that each of the algebras $A_i$ is \emph{of finite rank} over $\kres(\xi_i)$ (which implies that $A_i$ is a direct sum of a finite number of fields);
+we can then show, in certain cases, that the structure morphism $X'\to X$ is not just integral, but even \emph{finite}.
+Restrict to the case where $X$ is \emph{reduced};
+since the question is local on $X$, we can further suppose that $X$ is affine of ring $C$, and that $C$ has only a finite number of minimal ideals $\mathfrak{p}_i$ (for $1\leq i\leq r$) such the that $C_i=C/\mathfrak{p}_i$ are integral;
+then $X'$ is finite over $X$ if the integral closure of each $C_i$ in finite-dgree extension of its field of fractions is a \emph{$C$-module of finite type} \sref{II.6.3.4}.
+We know that this condition is always satisfied if $C$ is an \emph{algebra of finite type over a field} \cite[t.~I, p.~267, th.~9]{I-13}, or \emph{over $\bb{Z}$} \cite[I,p.~93, th.~3]{I-9}, or \emph{over a complete Noetherian local ring} \cite[p.~298]{II-25}.
+We thus conclude that $X'\to X$ will be a finite morphism whenever $X$ is a scheme \emph{of finite type} over a field, or over $\bb{Z}$, or over a complete Noetherian local ring.
+\end{remark}
 
-% \subsection{Determinant of an endomorphism of $\mathcal{O}_X$-modules}
-% \label{subsection:II.6.4}
+
+\subsection{Determinant of an endomorphism of $\mathcal{O}_X$-modules}
+\label{subsection:II.6.4}
+
+\begin{env}[6.4.1]
+\label{II.6.4.1}
+Let
+\end{env}
 
 
 % \subsection{Norm of an invertible sheaf}
