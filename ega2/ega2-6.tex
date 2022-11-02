@@ -556,7 +556,51 @@ We thus conclude that $X'\to X$ will be a finite morphism whenever $X$ is a sche
 
 \begin{env}[6.4.1]
 \label{II.6.4.1}
-Let
+Let $A$ be a (commutative) ring, $E$ a free $A$-module of rank~$n$, and $u$ an endomorphism of $E$;
+recall that, to define the \emph{characteristic polynomial} of $u$, we consider the endomorphism $u\otimes1$ of the free $A[T]$-module of rank~$n$, $E\otimes_A A[T]$ (where $T$ is an indeterminate), and we set
+\[
+\label{II.6.4.1.1}
+  P(u,T) = \det(T\cdot I-(u\otimes 1))
+\tag{6.4.1.1}
+\]
+(where $I$ is the identity automorphism of $E\otimes_A A[T]$).
+We have
+\[
+\label{II.6.4.1.2}
+  P(u,T) = T^n - \sigma_1(u)T^{n-1} + \ldots + (-1)^n\sigma_n(u)
+\tag{6.4.1.2}
+\]
+where $\sigma_i(u)$ is an element of $A$, equal to a homogeneous polynomial of degree~$i$ (with integer coefficients) with respect to the entries of the matrix of $u$ in some arbitrary basis of $E$;
+we say that the $\sigma_i(u)$ are the \emph{elementary symmetric functions} of $u$;
+in particular, we have that $\sigma_1(u)=\Tr u$ and $\sigma_n(u)=\det u$.
+Recall that, by the Hamilton--Cayley theorem, we have
+\[
+\label{II.6.4.1.3}
+  P(u,u) = u^n - \sigma_1(u)u^{n-1} + \ldots + (-1)^n\sigma_n(u) = 0
+\tag{6.4.1.3}
+\]
+\oldpage[II]{121}
+which can also be written as
+\[
+\label{II.6.4.1.4}
+  (\det u)\cdot I_E = uQ(u)
+\tag{6.4.1.4}
+\]
+(where $I_E$ is the identity automorphism of $E$), where
+\[
+\label{II.6.4.1.5}
+  Q(u) = (-1)^{n+1}(u^{n-1}-\sigma_1(u)u^{n-2}+\ldots+(-1)^{n-1}\sigma_{n-1}(u)).
+\tag{6.4.1.5}
+\]
+
+Let $\vphi:A\to B$ be a ring homomorphism, which makes $B$ into an $A$-algebra;
+consider the $B$-module $E_{(B)}=E\otimes_A B$, which is free of rank~$n$, and the extension $u\otimes1$ of $u$ to an endomorphism of $E_{(B)}$;
+it is immediate that we have $\sigma_i(u\otimes1)=\vphi(\sigma_i(u))$ for all indices $i$.
+\end{env}
+
+\begin{env}[6.4.2]
+\label{II.6.4.2}
+Now
 \end{env}
 
 
