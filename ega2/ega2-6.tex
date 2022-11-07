@@ -600,8 +600,31 @@ it is immediate that we have $\sigma_i(u\otimes1)=\vphi(\sigma_i(u))$ for all in
 
 \begin{env}[6.4.2]
 \label{II.6.4.2}
-Now
+Now suppose that $A$ is an \emph{integral} ring, with field of fractions $K$, and let $E$ be an $A$-module \emph{of finite type} (but not necessarily free).
+Let $n$ be the \emph{rank} of $E$, i.e. the rank of the free $K$-module $E\otimes_A K$;
+to every endomorphism $u$ of $E$ there canonically corresponds the endomorphism $u\otimes1$ of $E\otimes_A K$;
+by an abuse of language, we also define the \emph{characteristic polynomial} of $u$, denoted by $P(u,T)$, to be the polynomial $P(u\otimes1,T)$, whose coefficients $\sigma_i(u\otimes1)$ (which belong to $K$) are also denoted by $\sigma_i(u)$ and called the \emph{elementary symmetric functions of $u$};
+in particular, $\det u=\det(u\otimes1)$ by definition.
+With this notation, Equations~\sref{II.6.4.1.3} to \sref{II.6.4.1.5} make sense and still hold true, if we interpret $u^j$ as the composite homomorphism $E\to E\otimes_A K$ of the endomorphism $u^j\otimes1=(u\otimes1)^j$ of $E\otimes_A K$ and the canonical homomorphism $x\mapsto x\otimes1$.
+
+If $F$ is the torsion submodule of $E$, and if $E_0=E/F$, then $u(F)\subset F$, and so, by passing to quotients, $u$ gives an endomorphism $u_0$ of $E_0$;
+furthermore, $E\otimes_A K$ can be identified with $E_0\otimes_A K$, and $u\otimes1$ with $u_0\otimes1$, and so $\sigma_i(u)=\sigma_i(u_0)$ for $1\leq i\leq n$.
+
+If $E$ is \emph{torsion free}, then $E$ is canonically identified with a sub-$A$-module of $E\otimes_A K$, and the relation $u\otimes1=0$ is equivalent to $u=0$.
+If $A$ is a free $A$-module, then the two definitions of $\sigma_i(u)$ given in \sref{II.6.4.1} and \sref{II.6.4.2} coincide, by the above, which justifies the notation used.
+
+We also note that, if $E$ is a \emph{torsion module}, or, in other words, if $E_0=\{0\}$, then the exterior algebra of $E_0$ consists of $K$, and the determinant of the unique endomorphism $u_0$ of $E_0$ is \emph{equal to $1$}.
 \end{env}
+
+\begin{proposition}[6.4.3]
+\label{II.6.4.3}
+Let $A$ be an integral ring, $E$ an $A$-module of finite type, and $u$ an endomorphism of $E$;
+then the elementary symmetric functions $\sigma_i(u)$ of $u$ (and, in particular, $\det u$) are elements of $K$ that are integral over $A$.
+\end{proposition}
+
+\begin{proof}
+Let
+\end{proof}
 
 
 % \subsection{Norm of an invertible sheaf}
