@@ -623,8 +623,49 @@ then the elementary symmetric functions $\sigma_i(u)$ of $u$ (and, in particular
 \end{proposition}
 
 \begin{proof}
-Let
+Let $A'$ be the integral closure of $A$;
+since $A'[T]$ is an integrally closed ring \cite[p.~99]{II-24}, it is the integral closure of $A[T]$ in its field of fractions $K(T)$.
+Replacing $u$ by $T\cdot I-u\otimes1$, and $A$ by $A[T]$, we see that we can reduce to proving that $u$ is integral over $A$.
+If $n$ is the rank of $E$, then $\det(u)=\det(\vee^n u)$ and $(\vee^n u\otimes1)=\vee^n(u\otimes1)$, so we can suppose that $n=1$.
+But then the map $u\mapsto\det u$ is a homomorphism from the $A$-module $\Hom_A(E,E)$ to $K$;
+since $E$ is of finite type, $\Hom_A(E,E)$ is isomorphic to a sub-$A$-module of the $A$-module of finite type $E^n$ (if $E$ admits a system of $n$ generators), and so the elements $\det u$ belong to a sub-$A$-module of $K$ of finite type, and are thus integral over $A$.
 \end{proof}
+
+\oldpage[II]{122}
+\begin{corollary}[6.4.4]
+\label{II.6.4.4}
+Under the hypotheses of \sref{II.6.4.3}, if we further suppose $A$ to be normal, then the $\sigma_i(u)$ (and, in particular, $\Tr u$ and $\det u$) belong to $A$.
+\end{corollary}
+
+\begin{proposition}[6.4.5]
+\label{II.6.4.5}
+Let $A$ be an integral ring, $E$ an $A$-module of finite type of rank~$n$, and $u$ an endomorphism of $E$ such that the $\sigma_i(u)$ belong to $A$.
+For $u$ to be an automorphism of $E$, it is necessary that $\det u$ be invertible in $A$;
+this condition is sufficient if $E$ is torsion free.
+\end{proposition}
+
+\begin{proof}
+The condition is \emph{sufficient} when $E$ is torsion free, since the hypothesis and equations~\sref{II.6.4.1.4} and \sref{II.6.4.1.5} (which hold in $E$, and not just in $E\otimes_A K$, since $E$ is torsion free) prove that $(\det u)^{-1}Q(u)$ is the inverse of $u$.
+
+The condition is \emph{necessary}, since, if $u$ is invertible, then it follows from \sref{II.6.4.3} that $\det(u^{-1})$ belongs to the integral closure $A'$ of $A$ in its field of fractions $K$, and is evidently the inverse of $\det u$ \emph{in $A'$}.
+Our claim then follows from:
+\end{proof}
+
+\begin{lemma}[6.4.5.1]
+\label{II.6.4.5.1}
+Let $A$ be a subring of a ring $A'$ such that $A'$ is \emph{integral} over $A$.
+If an element $x\in A$ is invertible in $A'$, then it is also invertible in $A$.
+\end{lemma}
+
+\begin{proof}
+In the contrary case, $x$ would belong to a maximal ideal $\mathfrak{m}$ of $A$, and it follows from the first theorem of Cohen--Seidenberg \cite[t.~I, p.~257, th.~3]{I-13} that there would be a maximal ideal $\mathfrak{m}'$ of $A'$ such that $\mathfrak{m}=\mathfrak{m}'\cap A$;
+we would then have that $x\in\mathfrak{m}'$, which is a contradiction.
+\end{proof}
+
+\begin{corollary}[6.4.6]
+\label{II.6.4.6}
+Let
+\end{corollary}
 
 
 % \subsection{Norm of an invertible sheaf}
