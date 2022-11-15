@@ -738,12 +738,77 @@ and, if the rank of $\sh{E}$ is constant (which will be the case \sref[0]{0.5.4.
 for all $s\in\Gamma(X,\sh{A})$ (note that $\det(0)=0_{\sh{A}}$ if $n\geq1$, but $\det(0)=1_{\sh{A}}$ for $n=0$).
 Furthermore, for $u$ to be an \emph{automorphism} of $\sh{E}$, it is necessary and sufficient that $u$ be \emph{invertible} in $\Gamma(X,\sh{A})$.
 
-\textbf{CONTINUE FROM HERE}
+If the rank of $\sh{E}$ is constant, then we can similarly define the elementary symmetric functions $\sigma_i(u)$, which are elements of $\Gamma(X,\sh{A})$;
+we again have the relations in \sref{II.6.4.1.3} and \sref{II.6.4.1.5}.
+
+\oldpage[II]{124}
+We have thus defined a homomorphism $\det:\Hom_{\sh{A}}(\sh{E},\sh{E})\to\Gamma(X,\sh{A})$ of multiplicative monoids;
+if we note that $\Hom_{\sh{A}}(\sh{E},\sh{E})=\Gamma(X,\shHom_{\sh{A}}(\sh{E},\sh{E}))$ by definition, then we see that we can replace $X$ in this definition by an arbitrary open $U$ of $X$, which immediately defines a homomorphism $\det:\shHom_{\sh{A}}(\sh{E},\sh{E})\to\sh{A}$ of sheaves of multiplicative monoids.
+If $\sh{E}$ has constant rank, then we similarly define homomorphisms $\sigma_i:\shHom_{\sh{A}}(\sh{E},\sh{E})\to\sh{A}$ of sheaves of sets;
+for $i=1$, the homomorphism $\sigma_1=\Tr$ is a homomorphism of $\sh{A}$-modules.
+
+Let $(Y,\sh{B})$ be another ringed space, and let $f:(X,\sh{A})\to(Y,\sh{B})$ be a morphism of ringed spaces;
+if $\sh{F}$ is a locally free $\sh{B}$-module, then $f^*(\sh{F})$ is a locally free $\sh{A}$-module (which is of the same rank as $\sh{F}$ if the latter is of constant rank) \sref[0]{0.5.4.5}.
+For every endomorphism $v$ of $\sh{F}$, $f^*(v)$ is an endomorphism of $f^*(\sh{F})$, and it follows immediately from the definitions that $\det f^*(v)$ is the section of $\sh{A}=f^*(\sh{B})$ over $X$ that canonically corresponds to $\det v\in\Gamma(Y,\sh{B})$.
+We can further say that the homomorphism $f^*(\det):f^*(\shHom_{\sh{B}}(\sh{F},\sh{F}))\to f^*(\sh{B})=\sh{A}$ is the composition
+\[
+  f^*(\shHom_{\sh{B}}(\sh{F},\sh{F}))
+  \xrightarrow{\gamma^\sharp} \shHom_{\sh{A}}(f^*(\sh{F}),f^*(\sh{F}))
+  \xrightarrow{\det} \sh{A}
+\]
+\sref[0]{0.4.4.6}.
+We have analogous results for the $\sigma_i$.
+\end{env}
+
+\begin{env}[6.4.9]
+Now suppose that $X$ is a \emph{locally integral prescheme}, so that the sheaf $\sh{R}(X)$ of rational functions on $X$ is a locally simple sheaf of fields \sref[I]{I.7.4.3}, and quasi-coherent as an $\sh{O}_X$-module.
+If $\sh{E}$ is a quasi-coherent $\sh{O}_X$-module \emph{of finite type}, then $\sh{E}'=\sh{E}\otimes_{\sh{O}_X}\sh{R}(X)$ is a locally free $\sh{R}(X)$-module \sref[I]{I.7.3.6};
+for every endomorphism $u$ of $\sh{E}$, $u\otimes1_{\sh{R}(X)}$ is then an endomorphism of $\sh{E}'$, and $\det(u\otimes1)$ is a section of $\sh{R}(X)$ over $X$, which we also call the \emph{determinant} of $u$, and also denote by $\det u$.
+It follows from \sref{II.6.4.3} that $\det u$ is a section of the \emph{integral closure} of $\sh{O}_X$ in $\sh{R}(X)$ \sref{II.6.3.2};
+if, further, $X$ is \emph{normal}, then $\det u$ is a \emph{section of $\sh{O}_X$} over $X$, and if we further suppose that $\sh{E}$ is \emph{torsion free}, then for $u$ to be an automorphism of $\sh{E}$ it is necessary and sufficient that $\det u$ be \emph{invertible}, by \sref{II.6.4.6}.
+Equations~\sref{II.6.4.8.1} to \sref{II.6.4.8.3} still hold true;
+from the homomorphism $u\mapsto\det u$, applied to the modules of sections of $\shHom_{\sh{O}_X}(\sh{E},\sh{E})$, we obtain a homomorphism of sheaves $\det:\shHom_{\sh{O}_X}(\sh{E},\sh{E})\to\sh{R}(X)$, which takes values in $\sh{O}_X$ if $X$ is normal.
+We have analogous definitions and results for the other elementary symmetric functions $\sigma_j(u)$, if $\sh{E}'$ is of \emph{constant rank};
+if, further, $X$ is \emph{normal}, then the $\sigma_j(u)$ are \emph{sections of $\sh{O}_X$} over $X$.
+
+Finally, let $X$ and $Y$ be integral preschemes, and $f:X\to Y$ a \emph{dominant} morphism.
+We know that there exists a canonical homomorphism $f^*(\sh{R}(Y))\to\sh{R}(X)$ \sref[I]{I.7.3.8}, whence we obtain, for every quasi-coherent $\sh{O}_Y$-module $\sh{F}$ of finite type, a canonical homomorphism $\theta:f^*(\sh{F}\otimes_{\sh{O}_Y}\sh{R}(Y))\to f^*(\sh{F})\otimes_{\sh{O}_X}\sh{R}(X)$.
+\oldpage[II]{125}
+If $v$ is an endomorphism of $\sh{F}$, then $f^*(v\otimes1_{\sh{R}(Y)})$ is an endomorphism of $f^*(\sh{F}\otimes_{\sh{O}_Y}\sh{R}(Y))$, and we have a commutative diagram
+\[
+  \xymatrix{
+    f^*(\sh{F}\otimes_{\sh{O}_Y}\sh{R}(Y))
+      \ar[r]^{f^*(v\otimes1)}
+      \ar[d]_{\theta}
+    & f^*(\sh{F}\otimes{\sh{O}_Y}\sh{R}(Y))
+      \ar[d]^{\theta}
+  \\f^*(\sh{F})\otimes_{\sh{O}_X}\sh{R}(X)
+      \ar[r]_{f^*(v)\otimes1}
+    & f^*(\sh{F})\otimes_{\sh{O}_X}\sh{R}(X)
+  }
+\]
+
+We thus easily conclude that $\det f^*(v)$ is the canonical image, under the homomorphism $f^*(\sh{R}(Y))\to\sh{R}(X)$, of the section $\det v$ of $\sh{R}(Y)$;
+indeed, we can immediately reduce to the case where $X=\Spec(A)$ and $Y=\Spec(B)$ are affine, with $A$ and $B$ integral rings with fields of fractions $K$ and $L$ (resp.), with the homomorphism $B\to A$ an injection and thus extending to a monomorphism $L\to K$;
+if $\sh{F}=\widetilde{M}$, where $M$ is a $B$-module of finite type, then the rank of $M\otimes_B L$ over $L$ is \emph{equal} to that of $(M\otimes_B A)\otimes_A K$ over $K$, and $\det((u\otimes1)\otimes1)$ is the image in $K$ of $\det(u\otimes1)$ for any endomorphism $u$ of $M$, whence the conclusion.
+\end{env}
+
+\begin{env}[6.4.10]
+\label{II.6.4.10}
+Finally, suppose that $X$ is a \emph{locally Noetherian reduced prescheme}, so that the sheaf $\sh{R}(X)$ of rational functions on $X$ is again a quasi-coherent $\sh{O}_X$-module \sref[I]{I.7.3.4};
+let $\sh{E}$ be a \emph{coherent} $\sh{O}_X$-module such that $\sh{E}'=\sh{E}\otimes_{\sh{O}_X}\sh{R}(X)$ is \emph{locally free} (of finite rank).
+By \sref{II.6.4.7}, if $\sh{E}'$ is of constant rank, then we can, for any endomorphism $u$ of $\sh{E}$, define the $\sigma_j(u)$, which are sections of $\sh{R}(X)$ over $X$.
+If we do not suppose $\sh{E}'$ to be of constant rank, we can still define the homomorphism $\det:\shHom_{\sh{O}_X}(\sh{E},\sh{E})\to\sh{R}(X)$.
 \end{env}
 
 
-% \subsection{Norm of an invertible sheaf}
-% \label{subsection:II.6.5}
+\subsection{Norm of an invertible sheaf}
+\label{subsection:II.6.5}
+
+\begin{env}[6.5.1]
+\label{II.6.5.1}
+Let
+\end{env}
 
 
 % \subsection{Application: criteria for ampleness}
