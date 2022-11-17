@@ -807,7 +807,58 @@ If we do not suppose $\sh{E}'$ to be of constant rank, we can still define the h
 
 \begin{env}[6.5.1]
 \label{II.6.5.1}
-Let
+Let $(X,\sh{A})$ be a ringed space and $\sh{B}$ a (commutative) $\sh{A}$-algebra.
+The $\sh{A}$-module $\sh{B}$ is canonically identified with a sub-$\sh{A}$-module of $\shHom_{\sh{A}}(\sh{B},\sh{B})$, and a section $f$ of $\sh{B}$ over an open $U$ of $X$ is identified with multiplication by this section.
+If $(X,\sh{A})$ and $\sh{B}$ satisfy one of the conditions given in \sref{II.6.4.8}, \sref{II.6.4.9}, or \sref{II.6.4.10}, then we can define $\det(f)$ (and, in certain cases, the $\sigma_j(f)$) as sections of $\sh{A}$ or $\sh{R}(X)$ over $U$, that we call the \emph{norm} of $f$ (resp. the \emph{elementary symmetric functions} of $f$), and denote by $N_{\sh{B}/\sh{A}}(f)$.
+We will suppose that \emph{one} of the following conditions is satisfied:
+\begin{enumerate}
+  \item[(I)] \emph{$\sh{B}$ is a locally free $\sh{A}$-module (of finite rank).}
+  \item[(II)] \emph{$(X,\sh{A})$ is a locally Noetherian reduced prescheme, $\sh{B}$ is a coherent $\sh{A}$-module such that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is a locally free $\sh{R}(X)$-module, and, for every section $f\in\Gamma(U,\sh{B})$ over an open $U$ of $X$, the norm $N_{\sh{B}/\sh{A}}(f)$ is a section of $\sh{A}$ over $U$.}
+\end{enumerate}
+
+\oldpage[II]{126}
+Note that the latter condition is automatically satisfied whenever the locally Noetherian prescheme $X$ is \emph{normal} \sref{II.6.4.9}.
+
+The hypothesis that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is locally free can also be expressed in the following way: denote by $X_\alhpa$ the closed reduced subpreschemes of $X$ whose underlying spaces are the irreducible components of $X$ \sref[I]{I.5.2.1}, which are thus locally Noetherian integral preschemes.
+Every $x\in X$ belongs to a finite number of the subspaces $X_\alpha$;
+on the other hand, $\sh{B}\otimes_{\sh{A}}\sh{R}(X_\alpha)$ is a locally free $\sh{R}(X_\alpha)$-module of constant rank~$k_\alpha$ \sref[I]{I.7.3.6};
+to say that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is a locally free $\sh{R}(X)$-module implies that, for all $x\in X$, \emph{the ranks $k_\alpha$ that correspond to the indices such that $x\in X_\alpha$ are equal}.
+This is a local statement, and we can reduce to the case $X=\Spec(C)$, where $C$ is a reduced Noetherian ring, and $\sh{B}=\widetilde{D}$, where $D$ is a $C$-algebra that is a $C$-module of finite type;
+if $\mathfrak{p}_i$ (for $1\leq i\leq m$) are the minimal prime ideals of $C$, then the total ring of fractions $L$ of $C$ is the direct sum of the fields of fractions $K_i$ of the integral rings $C/\mathfrak{p}_i$, and $D\otimes_C L$ is the direct sum of the $D\otimes_C K_i$, whence the conclusion.
+
+It is clear that, under hypothesis~(I) or (II), we have thus defined a \emph{homomorphism of sheaves of multiplicative monoids} $N_{\sh{B}/\sh{A}}\colon\sh{B}\to\sh{A}$, also denoted by $N$ if no confusion may arise, and we call this homomorphism the \emph{norm}.
+For sections $f$ and $g$ of $\sh{B}$ over the same open $U$, we thus have
+\[
+\label{II.6.5.1.1}
+  N_{\sh{B}/\sh{A}}(fg) = N{\sh{B}/\sh{A}}(f){\sh{B}/\sh{A}}(g)
+\tag{6.5.1.1}
+\]
+for the corresponding sections of $\sh{A}$ over $U$;
+\[
+\label{II.6.5.1.2}
+  N{\sh{B}/\sh{A}}(1_{\sh{B}}) = 1_{\sh{A}};
+\tag{6.5.1.2}
+\]
+finally, for any section $s$ of $\sh{A}$ over $U$,
+\[
+\label{II.6.5.1.3}
+  N{\sh{B}/\sh{A}}(s\cdot1_{\sh{B}}) = s^n
+\tag{6.5.1.3}
+\]
+if the rank of $\sh{B}$ is constant and equal to $n$ (for $s=0_{\sh{A}}$, this formula gives $N(0_{\sh{B}})=0_{\sh{A}}$ if $n\geq1$, and $N(0_{\sh{B}})=N(1_{\sh{B}})=1_{\sh{A}}$ if $n=0$).
+
+In hypothesis~(I), for $f\in\Gamma(U,\sh{B})$ to be invertible it is necessary and sufficient that $N(f)\in\Gamma(U,\sh{A})$ be invertible.
+In hypothesis~(II), this condition is necessary;
+it is sufficient (by \sref{II.6.4.7}) if we suppose that $\sh{B}\to\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is \emph{injective} and that the following more restrictive hypothesis is satisfied:
+\begin{enumerate}
+  \item[(II~\emph{bis})] \emph{$(X,\sh{A})$ is a locally Noetherian reduced prescheme, $\sh{B}$ is a coherent $\sh{A}$-module such that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is a locally free $\sh{R}(X)$-module, and, for any section $f\in\Gamma(U,\sh{B})$ over an open $U$ such that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)|U$ is of constant rank~$n$ on $\sh{R}(X)|U$, the $\sigma_j(f)$ (for $1\leq j\leq n$) are sections of $\sh{A}$ over $U$.}
+\end{enumerate}
+
+(We again note that this condition is satisfied if $X$ is \emph{normal}.)
+\end{env}
+
+\begin{env}[6.5.2]
+\label{II.6.5.2}
 \end{env}
 
 
