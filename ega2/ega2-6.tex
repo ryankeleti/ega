@@ -826,7 +826,7 @@ to say that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is a locally free $\sh{R}(X)$-modu
 This is a local statement, and we can reduce to the case $X=\Spec(C)$, where $C$ is a reduced Noetherian ring, and $\sh{B}=\widetilde{D}$, where $D$ is a $C$-algebra that is a $C$-module of finite type;
 if $\mathfrak{p}_i$ (for $1\leq i\leq m$) are the minimal prime ideals of $C$, then the total ring of fractions $L$ of $C$ is the direct sum of the fields of fractions $K_i$ of the integral rings $C/\mathfrak{p}_i$, and $D\otimes_C L$ is the direct sum of the $D\otimes_C K_i$, whence the conclusion.
 
-It is clear that, under hypothesis~(I) or (II), we have thus defined a \emph{homomorphism of sheaves of multiplicative monoids} $N_{\sh{B}/\sh{A}}\colon\sh{B}\to\sh{A}$, also denoted by $N$ if no confusion may arise, and we call this homomorphism the \emph{norm}.
+It is clear that, under hypothesis~(I) or (II), we have thus defined a \emph{homomorphism of sheaves of multiplicative monoids} $N_{\sh{B}/\sh{A}}:\sh{B}\to\sh{A}$, also denoted by $N$ if no confusion may arise, and we call this homomorphism the \emph{norm}.
 For sections $f$ and $g$ of $\sh{B}$ over the same open $U$, we thus have
 \[
 \label{II.6.5.1.1}
@@ -859,6 +859,49 @@ it is sufficient (by \sref{II.6.4.7}) if we suppose that $\sh{B}\to\sh{B}\otimes
 
 \begin{env}[6.5.2]
 \label{II.6.5.2}
+Suppose that one of the hypotheses (I) or (II) of \sref{II.6.5.1} are satisfied, and let $\sh{L}'$ be an \emph{invertible} $\sh{B}$-module.
+We will canonically associate (up to unique isomorphism) an \emph{invertible} $\sh{A}$-module in the following way.
+Denote by $\sh{A}^*$ (resp. $\sh{B}^*$) the subsheaf of $\sh{A}$ (resp. of $\sh{B}$) such that $\Gamma(U,\sh{A}^*)$ (resp. $\Gamma(U,\sh{B}^*)$) is the set of invertible elements of $\Gamma(U,\sh{A})$ (resp. of $\Gamma(U,\sh{B})$) for every open $U\subset X$;
+\oldpage[II]{127}
+these are sheaves of multiplicative groups, and $N_{\sh{B}/\sh{A}}$ restricted to $\sh{B}^*$ is a \emph{homomorphism} $\sh{B}^*\to\sh{A}^*$ of sheaves of groups \sref{II.6.5.1}.
+Let $\mathfrak{L}$ be the set of pairs $(U_\lambda,\nu_\lambda)$ that have the following property: $U_\lambda$ is an open of $X$, and $\nu_\lambda$ is an isomorphism $\sh{L}'|U_\lambda\simto\sh{B}|U_\lambda$ of $(B|U_\lambda)$-modules.
+By hypothesis, the $U_\lambda$ form a cover of $X$;
+for arbitrary indices $\lambda$ and $\mu$, set $\omega_{\lambda\mu}=(\eta_\lambda|U_\lambda\cap U_\mu)\circ(\nu_\mu|U_\lambda\cap U_\mu)^{-1}$, which is an automorphism of $\sh{B}|U_\lambda\cap U_\mu$ which is canonically identified with a section of $\sh{B}^*$ over $U_\lambda\cap U_\mu$, and $(\omega_{\lambda\mu})$ is a $1$-cocycle for the cover $\mathfrak{U}=(U_\lambda)$ with values in $\sh{B}^*$ \sref[0]{0.5.4.7}.
+The fact that $N_{\sh{B}/\sh{A}}:\sh{B}^*\to\sh{A}^*$ is a homomorphism implies that $(N_{\sh{B}/\sh{A}}\omega_{\lambda\mu})$ is a $1$-cocycle of $\mathfrak{U}$ with values in $\sh{A}^*$, and thus corresponds (up to unique isomorphism) to an invertible $\sh{A}$-module $\sh{L}$ \sref[0]{0.5.4.7} which we denote by $N_{\sh{B}/\sh{A}}(\sh{L}')$, and call the \emph{norm} of the invertible $\sh{B}$-module $\sh{L}'$.
+
+Let $\mathfrak{M}$ be a subset of $\mathfrak{L}$ such that the corresponding $U_\lambda$ still form a cover of $X$, and let $\mathfrak{B}$ be the resulting cover;
+the restriction of the cocycle $(\omega_{\lambda\mu})$ to $\mathfrak{B}$ defines a $1$-cocycle $(N_{\sh{B}/\sh{A}}\omega_{\lambda\mu})$ of $\mathfrak{B}$ with values in $\sh{A}^*$, the restriction of the $1$-cocycle $(N_{\sh{B}/\sh{A}}\omega_{\lambda\mu})$ of $\mathfrak{U}$;
+it is clear that there is a canonical isomorphism from the invertible $\sh{A}$-module defined by this $1$-cocycle of $\mathfrak{B}$ to $N_{\sh{B}/\sh{A}}(\sh{L}')$, which allows us to define the invertible $\sh{A}$-module by an arbitrary sub-cover of $\mathfrak{U}$.
+This possibility immediately shows that, if $\sh{L}'_1$ and $\sh{L}'_2$ are invertible $\sh{B}$-modules, then, by \sref{II.6.5.1.1} and \sref{II.6.5.1.2},
+\[
+\label{II.6.5.2.1}
+  N(\sh{L}'_1\otimes_{\sh{B}}\sh{L}'_2) = N(\sh{L}'_1)\otimes_{\sh{A}}N(\sh{L}'_2)
+\tag{6.5.2.1}
+\]
+and
+\[
+\label{II.6.5.2.2}
+  N_{\sh{B}/\sh{A}}(\sh{B}) = \sh{A}
+\tag{6.5.2.2}
+\]
+as well as
+\[
+\label{II.6.5.2.3}
+  N({\sh{L}'}^{-1}) = (N(\sh{L}'))^{-1}
+\tag{6.5.2.3}
+\]
+up to canonical isomorphisms.
+Furthermore, it follows from \sref{II.6.5.1.3} that, if $\sh{L}$ is an invertible $\sh{A}$-module = and if $\sh{B}$ is of constant rank~$n$ on $\sh{A}$ in case~(I) (resp. $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is of constant rank~$n$ on $\sh{R}(X)$ in case~(II)), we have, up to canonical isomorphism,
+\[
+\label{II.6.5.2.4}
+  N_{\sh{B}/\sh{A}}(\sh{L}\otimes_{\sh{A}}\sh{B}) = \sh{L}^{\otimes n}.
+\tag{6.5.2.4}
+\]
+\end{env}
+
+\begin{env}[6.5.3]
+\label{II.6.5.3}
+We
 \end{env}
 
 
