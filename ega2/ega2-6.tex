@@ -901,7 +901,53 @@ Furthermore, it follows from \sref{II.6.5.1.3} that, if $\sh{L}$ is an invertibl
 
 \begin{env}[6.5.3]
 \label{II.6.5.3}
-We
+We now show that $N_{\sh{B}/\sh{A}}$ is a covariant \emph{functor} in the category of invertible $\sh{B}$-modules.
+Let $h':\sh{L}'_1\to\sh{L}'_2$ be a homomorphism of invertible $\sh{B}$-modules, and let $\mathfrak{B}=(U_\lambda)$ be an open cover of $X$ such that, for all $\lambda$, we have $(\sh{B}|U_\lambda)$-isomorphisms $\eta_\lambda^{(1)}:\sh{L}'_1|U_\lambda\simto\sh{B}|U_\lambda$ and $\eta_\lambda^{(2)}:\sh{L}'_2|U_\lambda\simto\sh{B}|U_\lambda$;
+there is thus, for each $\lambda$, an endomorphism $h'_\lambda$ of $\sh{B}|U_\lambda$ such that $h'_\lambda\circ\eta_\lambda^{(1)}=\eta_\lambda^{(2)}\circ(h'|U_\lambda)$, and we can evidently identify $h'_\lambda$ with a section of $\sh{B}$ over $U_\lambda$ \sref[0]{0.5.1.1}.
+So, for every pair $(\lambda,\mu)$ of indices, the restrictions to $U_\lambda\cap U_\mu$ of $(\eta_\lambda^{(2)})^{-1}\circ h'_\lambda\circ\eta_\lambda^{(1)}$ and $(\eta_\mu^{(2)})^{-1}\circ h'_\mu\circ\eta_\mu^{(1)}$ agree.
+We thus obtain, for $1$-cocycles $(\omega_{\lambda\mu}^{(1)})$ and $(\omega_{\lambda\mu}^{(2)})$ with values in $\sh{B}^*$ corresponding to $\sh{L}'_1$ and $\sh{L}'_2$, the relation
+\[
+  \omega_{\lambda\mu}^{(2)}h'_\mu = h'_\lambda\omega_{\lambda\mu}^{(1)}.
+\]
+
+\oldpage[II]{128}
+If we set $h_\lambda=N(h'_\lambda)$, we thus have the analogous relations
+\[
+  N(\omega_{\lambda\mu}^{(2)})h_\mu = h_\lambda N(\omega_{\lambda\mu}^{(1)})
+\]
+and so the $h_\lambda$ define a homomorphism $N(\sh{L}'_1)\to N(\sh{L}'_2)$ which we denote by $N_{\sh{B}/\sh{A}}(h')$, or $N(h')$.
+In hypothesis~(I), for $h'$ to be an \emph{isomorphism}, it is necessary and sufficient (since it is a local question) for $N_{\sh{B}/\sh{A}}(h')$ to be an isomorphism.
+In hypothesis~(II), this condition is again necessary;
+it is sufficient if hypothesis~(II~\emph{bis}) is satisfied and $\sh{B}\to\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is injective.
+
+Take, in particular, $\sh{L}'_1=\sh{B}$;
+the homomorphisms $\sh{B}\to\sh{L}'$ can then be identified \sref[0]{0.5.1.1} with the sections of $\sh{L}'$ over $X$, whence a canonical map
+\[
+  N_{\sh{B}/\sh{A}} : \Gamma(X,\sh{L}')\to\Gamma(X,N_{\sh{B}/\sh{A}}(\sh{L}')).
+\]
+
+It again follows from \sref{II.6.5.1.1} that, if $f'_1\in\Gamma(X,\sh{L}'_1)$ and $f'_2\in\Gamma(X,\sh{L}'_2)$, then
+\[
+\label{II.6.5.3.1}
+  N(f'_1\otimes f'_2) = N(f'_1)\otimes N(f'_2).
+\tag{6.5.3.1}
+\]
+
+For every invertible $\sh{A}$-module $\sh{L}$ and every section $f\in\Gamma(X,\sh{L})$, we have, taking \sref{II.6.5.2.4} into account, that
+\[
+\label{II.6.5.3.2}
+  N_{\sh{B}/\sh{A}}(f\otimes 1_{\sh{B}}) = f^{\otimes n}
+\tag{6.5.3.2}
+\]
+whenever $\sh{B}$ is of constant rank~$n$ in hypothesis~(I) (resp. whenever $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is of constant rank~$n$ in hypothesis~(II)).
+Finally, for the homomorphism $\sh{B}\to\sh{L}'$ corresponding to a section $f'$ of $\sh{L}'$ over $X$ to be an isomorphism, it is necessary and sufficient for $f'_x$ to be a basis for $\sh{L}'_x$ for all $x\in X$;
+in hypothesis~(I), this condition is thus equivalent to saying that $(N(f'))_x$ is a basis for $(N(\sh{L}'))_x$ for all $x$;
+in hypothesis~(II), this condition is again necessary, and it is sufficient whenever $\sh{B}$ satisfies hypothesis~(II~\emph{bis}) and $\sh{B}\to\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is injective.
+\end{env}
+
+\begin{env}[6.5.4]
+\label{II.6.5.4}
+Let
 \end{env}
 
 
