@@ -495,7 +495,7 @@ By the above, we can suppose that $X$ is integral, and so $r=1$ and $s_1=1$, so 
 let $\xi$ be the generic point of $X$, and let $f:X\to X'$ be the structure morphism.
 For every non-empty affine open $U$ of $X$, $f^{-1}(U)$ can be identified with the spectrum of the integral closure $B'_U$ in the field $K$ of the integral ring $B_U=\Gamma(Y,\sh{O}_X)$ \sref{II.6.3.4};
 since the ring $B'_U$ is integral and integrally closed, so too are the local rings of the points of its spectrum, and thus $f^{-1}(U)$ is by definition an \emph{integral} and \emph{normal} scheme (\sref[0]{0.4.1.4} and \sref[I]{I.5.1.4}).
-Furthermore, since $(0)$ is the only prime ideal of $B'_U$ over the prime ideal $(0)$ of $B_U$ \cite[t.~1, p.~259]{I-13}, $f^{-1}(\xi)$ consists of a single point $\xi'$, and $\kres(\xi')$ is the field of fractions $K'$ of $B'_U$, which is exactly the algebraic closure of $\kref(\xi)$ in $K$.
+Furthermore, since $(0)$ is the only prime ideal of $B'_U$ over the prime ideal $(0)$ of $B_U$ \cite[t.~1, p.~259]{I-13}, $f^{-1}(\xi)$ consists of a single point $\xi'$, and $\kres(\xi')$ is the field of fractions $K'$ of $B'_U$, which is exactly the algebraic closure of $\kres(\xi)$ in $K$.
 Finally, $X'$ is irreducible, since, if $U$ runs over the set of non-empty affine opens of $X$, then the $f^{-1}(U)$ give an open cover of $X'$ by irreducible opens;
 furthermore, the intersection $f^{-1}(U\cap V)$ of any two of these opens contains $\xi'$, and is thus non-empty, and we conclude by \sref[0]{0.2.1.4}.
 \end{proof}
@@ -710,7 +710,7 @@ then Proposition~\sref{II.6.4.5} extends also to this case, with the same proof.
 \begin{env}[6.4.8]
 \label{II.6.4.8}
 Let $(X,\sh{A})$ be a ringed space, $\sh{E}$ a \emph{locally free} $\sh{A}$-module (of finite rank), and $u$ an endomorphism of $\sh{E}$.
-By hypothesis, there exists a base $\mathfrak{B}$ for the topology of $X$ such that, for all $V\in\mathkfrak{B}$, $\sh{E}|V$ is isomorphic to some $\sh{A}^n|V$ (where $n$ may vary with $V$).
+By hypothesis, there exists a base $\mathfrak{B}$ for the topology of $X$ such that, for all $V\in\mathfrak{B}$, $\sh{E}|V$ is isomorphic to some $\sh{A}^n|V$ (where $n$ may vary with $V$).
 Let $u$ be an endomorphism of $\sh{E}$;
 for all $V\in\mathfrak{B}$, $u_V$ is thus an endomorphism of the $\Gamma(V,\sh{A})$-module $\Gamma(V,\sh{E})$, which is free by hypothesis;
 the determinant $\det u_V$ is thus defined and belongs to $\Gamma(V,\sh{A})$.
@@ -819,7 +819,7 @@ We will suppose that \emph{one} of the following conditions is satisfied:
 \oldpage[II]{126}
 Note that the latter condition is automatically satisfied whenever the locally Noetherian prescheme $X$ is \emph{normal} \sref{II.6.4.9}.
 
-The hypothesis that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is locally free can also be expressed in the following way: denote by $X_\alhpa$ the closed reduced subpreschemes of $X$ whose underlying spaces are the irreducible components of $X$ \sref[I]{I.5.2.1}, which are thus locally Noetherian integral preschemes.
+The hypothesis that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is locally free can also be expressed in the following way: denote by $X_\alpha$ the closed reduced subpreschemes of $X$ whose underlying spaces are the irreducible components of $X$ \sref[I]{I.5.2.1}, which are thus locally Noetherian integral preschemes.
 Every $x\in X$ belongs to a finite number of the subspaces $X_\alpha$;
 on the other hand, $\sh{B}\otimes_{\sh{A}}\sh{R}(X_\alpha)$ is a locally free $\sh{R}(X_\alpha)$-module of constant rank~$k_\alpha$ \sref[I]{I.7.3.6};
 to say that $\sh{B}\otimes_{\sh{A}}\sh{R}(X)$ is a locally free $\sh{R}(X)$-module implies that, for all $x\in X$, \emph{the ranks $k_\alpha$ that correspond to the indices such that $x\in X_\alpha$ are equal}.
@@ -1061,8 +1061,73 @@ We later generalise the notion of norm developed above, by placing it relation t
 
 \begin{proposition}[6.6.1]
 \label{II.6.6.1}
-Let
+Let $Y$ be a prescheme, $f:X\to Y$ a quasi-compact morphism, and $g:X'\to X$ a finite and surjective morphism.
+Suppose that either $g_*(\sh{O}_{X'})$ is a locally free $\sh{O}_X$-module or that $(X,\sh{O}_X)$ and $g_*(\sh{O}_{X'})$ satisfy (II~\emph{bis}).
+Then, for every invertible $\sh{O}_{X'}$-module $\sh{L}'$ that is ample for $f\circ g$, $\sh{L}=N_{X'/X}(\sh{L}')$ is ample for $f$.
 \end{proposition}
+
+\begin{proof}
+We can suppose $Y$ to be affine \sref{II.4.6.4}, and then, by \sref{II.4.6.6}, the statement is equivalent to:
+\end{proof}
+
+\begin{corollary}[6.6.2]
+\label{II.6.6.2}
+Let $X$ be a quasi-compact prescheme, $g:X'\to X$ a finite surjective morphism, such that either $g_*(\sh{O}_{X'})$ is a locally free $\sh{O}_X$-module or that $(X,\sh{O}_X)$ and $g_*(\sh{O}_{X'})$ satisfy (II~\emph{bis}).
+Then, for every ample $\sh{O}_{X'}$-module $\sh{L}'$, $\sh{L}=N_{X'/X}(\sh{L}')$ is ample.
+\end{corollary}
+
+\begin{proof}
+In the second hypothesis, we can further suppose that the canonical homomorphism $g_*(\sh{O}_{X'})\to g_*(\sh{O}_{X'})\otimes_{\sh{O}_X}\sh{R}(X)$ is \emph{injective}.
+\oldpage[II]{131}
+Indeed, if not, let $\sh{T}$ be the kernel of this homomorphism, which is a coherent ideal of $\sh{B}=g_*(\sh{O}_{X'})$ \sref[I]{I.6.1.1}, and set $X''=\Spec(\sh{B}/\sh{T})$;
+we thus have a commutative diagram
+\[
+  \xymatrix{
+    X'' \ar[rr]^{h} \ar[dr]_{g'}
+    && X' \ar[dl]_{g}
+  \\&X
+  }
+\]
+where $h$ is a closed immersion \sref{II.1.4.10}.
+Furthermore, we know that the support of $\sh{T}$ is a closed set \sref[0]{0.5.2.2} that is rare in $X$ \sref[I]{I.7.4.6}, whence we conclude that, for the generic point $x$ of an irreducible component of $X$, there is an affine open neighbourhood $U$ of $x$ such that $\sh{B}|U=(\sh{B}/\sh{T})|U$.
+Since $g$ is, by hypothesis, surjective, we thus conclude that $x\in g'(X'')$;
+$g'$ is thus dominant, and, since it is a finite morphism, it is \emph{surjective} \sref{II.6.1.10};
+by definition,
+\[
+  g'_*(\sh{O}_{X''})\otimes_{\sh{O}_X}\sh{R}(X)
+  = (\sh{B}/\sh{T})\otimes_{\sh{O}_X}\sh{R}(X)
+  = g_*(\sh{O}_{X'})\otimes_{\sh{O}_X}\sh{R}(X)
+\]
+thus $(X,\sh{O}_X)$ and $g'_*(\sh{O}_{X''})$ satisfy (II~\emph{bis}), and furthermore $g'_*(\sh{O}_{X''})\to g'_*(\sh{O}_{X''})\otimes_{\sh{O}_X}\sh{R}(X)$ is injective.
+Finally, $h^*(\sh{L}')=\sh{L}''$ is an ample $\sh{O}_{X''}$-module \sref{II.4.6.13}[(i~\emph{bis})], and we have that $N_{X''/X}(\sh{L}'')=N_{X'/X}(\sh{L}')$.
+Indeed, to define these two invertible $\sh{O}_X$-modules, we can use the same affine open cover $(U_\lambda)$ of $X$ such that the restrictions of $g_*(\sh{L}')$ and $g'_*(\sh{L}'')$ to $U_\lambda$ are isomorphic to $\sh{B}|U_\lambda$ and $(\sh{B}/\sh{T})|U_\lambda$ (respectively).
+We immediately see that, for every isomorphism $\eta_\lambda:g_*(\sh{L}')|U_\lambda\to\sh{B}|U_\lambda$, there is a canonically corresponding isomorphism
+\[
+  \eta'_\lambda : g'_*(\sh{L}'')|U_\lambda \to (\sh{B}/\sh{T})|U_\lambda
+\]
+so that, if $(\omega_{\lambda\mu})$ and $(\omega'_{\lambda\mu})$ are the $1$-cocycles corresponding to the systems of isomorphisms $(\eta_\lambda)$ and $(\eta'_\lambda)$ \sref{II.6.5.2}, $\omega'_{\lambda\mu}$ is the canonical image in $\Gamma(U_\lambda\cap U_\mu,\sh{B}/\sh{T})$ of $\omega_{\lambda\mu}\in\Gamma(U_\lambda\cap U_\mu,\sh{B})$.
+By the definition of $\sh{T}$, we thus conclude that
+\[
+  N_{\sh{B}/\sh{A}}(\omega_{\lambda\mu}) = N_{(\sh{B}/\sh{T})/\sh{A}}(\omega'_{\lambda\mu})
+\]
+(where $\sh{A}=\sh{O}_X$), whence the claimed equality.
+
+So suppose that the homomorphism $g_*(\sh{O}_{X'})\to g_*(\sh{O}_{X'})\otimes_{\sh{O}_X}\sh{R}(X)$ is injective when we are in hypothesis~(II~\emph{bis}).
+It suffices to prove that, as $f$ runs over the sections of $\sh{L}^{\otimes n}$ (for $n>0$) over $X$, the $X_f$ form a base for the topology of $X$ \sref{II.4.5.2}.
+But let $x\in X$, and let $U$ be an arbitrary neighbourhood of $x$;
+since $g^{-1}(x)$ is finite \sref{II.6.1.7} and $\sh{L}'$ is ample, there exists an integer $n>0$ and a section $f'$ of ${\sh{L}'}^{\otimes n}$ over $X'$ such that $X'_{f'}$ is a neighbourhood of $g^{-1}(x)$ contained inside $g^{-1}(U)$ \sref{II.4.5.4}.
+Since
+\[
+  \sh{L}^{\otimes n} = N_{X'/X}({\sh{L}'}^{\otimes n})
+\]
+it suffices to take $f=N_{X'/X}(f')$;
+indeed, then $X\setminus X_f=g(X'\setminus X'_{f'})$ \sref{II.6.5.7}, and so $x\in X_f\subset U$.
+\end{proof}
+
+\begin{corollary}[6.6.3]
+\label{II.6.6.3}
+Under
+\end{corollary}
 
 
 % \subsection{Chevalley's theorem}
