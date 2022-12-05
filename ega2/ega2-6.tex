@@ -947,12 +947,122 @@ in hypothesis~(II), this condition is again necessary, and it is sufficient when
 
 \begin{env}[6.5.4]
 \label{II.6.5.4}
-Let
+Let $(X,\sh{A})$ and $(X',\sh{A}')$ be ringed spaces, $f:X'\to X$ a morphism, $\sh{B}$ an $\sh{A}$-algebra, and $\sh{B}'=f^*(\sh{B})$ the inverse image $\sh{A}'$-algebra.
+Suppose that one of the following hypotheses is satisfied:
+\begin{enumerate}
+  \item $\sh{B}$ satisfies hypothesis~(I) of \sref{II.6.5.1}.
+  \item $(X,\sh{A})$ and $\sh{B}$ satisfy hypothesis~(II) of \sref{II.6.5.1}, $(X',\sh{A}')$ is a locally Noetherian reduced prescheme, and, if we denote by $X_\alpha$ and $X'_\beta$ the closed reduced subpreschemes of $X$ and $X'$ (respectively) that have the irreducible components of these spaces as their underlying spaces, then the restriction of $f$ to each $X'_\beta$ is a \emph{dominant} morphism from $X'_\beta$ to $X_\alpha$.
+\end{enumerate}
+
+Under these conditions, $\sh{B}'$ satisfies hypothesis~(I) or hypothesis~(II) (respectively) of \sref{II.6.5.1}.
+The first claim is immediate;
+to establish the second, it suffices to show that, for all $x'\in X'$, the ranks of the $\sh{B}'\otimes_{\sh{O}_{X'}}\sh{R}(X'_\beta)$ are \emph{the same} for the $\beta$ such that $x'\in X'_\beta$.
+But if the restriction of $f$ to $X'_\beta$ is a dominant morphism to $X_\alpha$, then the rank of $\sh{B}'\otimes_{\sh{O}_{X'}}\sh{R}(X'_\beta)$ is equal to that of $\sh{B}\otimes_{\sh{O}_X}\sh{R}(X_\alpha)$ (as we immediately see by reducing to the affine case, as in \sref{II.6.4.9}), whence our claim, by hypothesis~(II) and \sref{II.6.5.1}.
+
+\oldpage[II]{129}
+With this in mind, it follows from \sref{II.6.4.8}, \sref{II.6.4.9}, and \sref{II.6.4.10} that, if $s$ is a section of $\sh{B}$ over an open $U\subset X$, and $s'$ the corresponding section of $\sh{B}'$ over $f^{-1}(U)$, then $N_{\sh{B}'/\sh{A}'}(s')$ is the section of $\sh{A}'$ over $f^{-1}(U)$ that corresponds to the section $N_{\sh{B}/\sh{A}}(s)$ of $\sh{A}$ over $U$.
+
+If $\sh{M}$ is an invertible $\sh{B}$-module, then we deduce from the above that, if $\sh{M}'=f^*(\sh{M})$ (which is an invertible $\sh{B}'$-module), we have $N_{\sh{B}'/\sh{A}'}(\sh{M}')=f^*(N_{\sh{B}/\sh{A}}(\sh{M}))$ up to canonical isomorphism.
 \end{env}
 
+\begin{env}[6.5.5]
+\label{II.6.5.5}
+Suppose from now on that $(X,\sh{A})$ is a \emph{prescheme}.
+The data of a quasi-coherent $\sh{A}$-algebra $\sh{B}$, which is an \emph{$\sh{A}$-module of finite type}, is then equivalent, as we know, to that of a \emph{finite} morphism $g:X'\to X$ such that $g_*(\sh{O}_{X'})=\sh{B}$, defined up to $X$-isomorphism (\sref{II.6.1.2} and \sref{II.1.3.1}).
+Furthermore, the data of a quasi-coherent $\sh{O}_{X'}$-module $\sh{F}'$ is equivalent to that of a quasi-coherent $\sh{B}$-module $\sh{F}$ such that $g_*(\sh{F})=\sh{F}$ \sref{II.1.4.3}, and for $\sh{F}'$ to be invertible it is necessary and sufficient that $\sh{F}$ be invertible \sref{II.6.1.12}.
+To translate the above results in terms of finite morphisms $g$, it will be necessary to suppose either that $g_*(\sh{O}_{X'})$ is a \emph{locally free} $\sh{O}_X$-module (of finite type) or that $(X,\sh{O}_X)$ and $g_*(\sh{O}_{X'})$ satisfy hypothesis~(II).
+For every invertible $\sh{O}_{X'}$-module $\sh{L}'$, we thus set
+\[
+\label{II.6.5.5.1}
+  N_{X'/X}(\sh{L}') = N_{g_*(\sh{O}_{X'})/\sh{O}_X}(g_*(\sh{L}'))
+\tag{6.5.5.1}
+\]
+and we call this the \emph{norm} (with respect to $g$) of $\sh{L}'$.
+Similarly, if $h':\sh{L}'_1\to\sh{L}'_2$ is a homomorphism of invertible $\sh{O}_{X'}$-modules, then we set
+\[
+\label{II.6.5.5.2}
+  N_{X'/X}(h') = N_{g_*(\sh{O}_{X'})/\sh{O}_X}(g_*(h')) : N_{X'/X}(\sh{L}'_1)\to N_{X'/X}(\sh{L}'_2).
+\tag{6.5.5.2}
+\]
 
-% \subsection{Application: criteria for ampleness}
-% \label{subsection:II.6.6}
+In particular, for $\sh{L}'_1=\sh{O}_{X'}$, we thus obtain a canonical map
+\[
+\label{II.6.5.5.3}
+  N_{X'/X} : \Gamma(X',\sh{L}') \to \Gamma(X,N_{X'/X}(\sh{L}')).
+\tag{6.5.5.3}
+\]
+
+We leave to the reader the majority of these translations, and we restrict ourselves to spelling out the details of the following:
+\end{env}
+
+\begin{proposition}[6.5.6]
+\label{II.6.5.6}
+Let $g:X'\to X$ be a finite morphism, and suppose that either $g_*(\sh{O}_{X'})$ is a locally free $\sh{O}_X$-module or that $(X,\sh{O}_X)$ and $g_*(\sh{O}_{X'})$ satisfy (II~\emph{bis}) (which will be the case, in particular, if $X$ is locally Noetherian and normal).
+For a homomorphism $h':\sh{L}'_1\to\sh{L}'_2$ of invertible $\sh{O}_{X'}$-modules to be an isomorphism, it is necessary and sufficient, in the first hypothesis, that $N_{X'/X}(h')$ be an isomorphism;
+in the second hypothesis, this condition is again necessary, and is sufficient if the homomorphism $g_*(\sh{O}_{X'})\to g_*(\sh{O}_{X'})\otimes_{\sh{O}_X}\sh{R}(X)$ is injective.
+\end{proposition}
+
+\begin{proof}
+Note that we use here the fact that, for $g_*(h')$ to be an isomorphism, it is necessary and sufficient for $h'$ to be an isomorphism \sref{II.1.4.2}.
+\end{proof}
+
+\begin{corollary}[6.5.7]
+\label{II.6.5.7}
+Let $g:X'\to X$ be a finite morphism, and suppose that either $g_*(\sh{O}_{X'})$ is a locally free $\sh{O}_X$-module or that $(X,\sh{O}_X)$ and $g_*(\sh{O}_{X'})$ satisfy (II~\emph{bis}) and $g_*(\sh{O}_{X'})\to g_*(\sh{O}_{X'})\otimes_{\sh{O}_X}\sh{R}(X)$ is injective.
+Let $\sh{L}'$ be an invertible $\sh{O}_{X'}$-module, $f'$ a section of $\sh{L}'$ over $X'$, and $f=N_{X'/X}(f')$ the corresponding section of $\sh{L}=N_{X'/X}(\sh{L}')$ over $X$ \sref{II.6.5.5.1}.
+\oldpage[II]{130}
+Then $g(X'\setminus X'_{f'})=X\setminus X_f$, and $X_f$ is the largest open subset $U$ of $X$ such that $g^{-1}(U)\subset X'_{f'}$.
+\end{corollary}
+
+\begin{proof}
+Indeed, $g(X'\setminus X'_{f'})$ is closed in $X$ \sref{II.6.1.10};
+it thus suffices to prove the last claim.
+But the relation $U\subset X_f$ is equivalent to the fact that the homomorphism $\sh{O}_X|U\to\sh{L}|U$ defined by $f|U$ is an isomorphism.
+By \sref{II.6.5.6}, this is equivalent to saying that the homomorphism $\sh{O}_{X'}|g^{-1}(U)\to\sh{L}'|g^{-1}(U)$ defined by $f'|g^{-1}(U)$ is an isomorphism, which is equivalent to the relation $g^{-1}(U)\subset X'_{f'}$.
+\end{proof}
+
+\begin{proposition}[6.5.8]
+\label{II.6.5.8}
+Let $g:X'\to X$ be a finite morphism, and $f:Y\to X$ a morphism;
+let $Y'=X'_{(Y)}$, $g'=g_{(Y)}$, and $f'=f_{(X')}$, so that the diagram
+\[
+  \xymatrix{
+    X' \ar[d]_{g}
+    & Y' \ar[l]_{f'} \ar[d]^{g'}
+  \\X
+    & Y \ar[l]^{f}
+  }
+\]
+commutes.
+
+Suppose that either $g_*(\sh{O}_{X'})$ is a locally free $\sh{O}_X$-module or that $(X,\sh{O}_X)$ and $g_*(\sh{O}_{X'})$ satisfy (II).
+Suppose further that $Y$ is a locally Noetherian reduced prescheme, and that the restriction of $f$ to any irreducible component of $Y$ is a dominant morphism to an irreducible component of $X$.
+Then, for every invertible $\sh{O}_{X'}$-module $\sh{L}'$, we have
+\[
+  N_{Y'/Y}({f'}^*(\sh{L}')) = f^*(N_{X'/X}(\sh{L}'))
+\]
+up to canonical isomorphism.
+\end{proposition}
+
+\begin{proof}
+Note that we have $f^*(g_*(\sh{L}'))=g'_*({f'}^*(\sh{L}'))$, by \sref{II.1.5.2}, and, in particular, $g'_*(\sh{O}_{Y'})=f^*(g_*(\sh{O}_{X'}))$;
+if $g_*(\sh{O}_{X'})$ is locally free, then so too is $g'_*(\sh{O}_{Y'})$.
+The conclusion then follows from the definitions and \sref{II.6.5.4}.
+\end{proof}
+
+\begin{remark}[6.5.9]
+\label{II.6.5.9}
+We later generalise the notion of norm developed above, by placing it relation to the notion of direct image of a divisor.
+\end{remark}
+
+
+\subsection{Application: criteria for ampleness}
+\label{subsection:II.6.6}
+
+\begin{proposition}[6.6.1]
+\label{II.6.6.1}
+Let
+\end{proposition}
 
 
 % \subsection{Chevalley's theorem}

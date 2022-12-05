@@ -50,7 +50,7 @@ We can furthermore suppose that one of the two additional following properties a
 \end{proposition}
 
 \begin{proof}
-Let $Y_1$ be the reduced closed subprescheme of $Y$ that has $\overline\{y\}$ as its underlying space \sref[I]{I.5.2.1}, and let $X_1$ be the closed subprescheme given by the inverse image $p^{-1}(Y_1)$;
+Let $Y_1$ be the closed reduced subprescheme of $Y$ that has $\overline\{y\}$ as its underlying space \sref[I]{I.5.2.1}, and let $X_1$ be the closed subprescheme given by the inverse image $p^{-1}(Y_1)$;
 since $y'\in\overline{\{y\}}$ by hypothesis, and since $\kres(x)$ is the same in $X$ and in $X_1$, we can assume that $Y$ is \emph{integral}, with generic point $y$;
 $\sh{O}_{y'}$ is then an integral local ring that is not a field, and whose field of fractions is $\sh{O}_y=\kres(y)$, and $\kres(x)$ is then an extension of $\kres(y)$.
 To satisfy the conditions $f(a)=y'$ and $f(b)=y$ as well as the additional condition (i) (resp. (ii)), we take $Y'=\Spec(A')$, where $A'$ is a valuation ring that dominates $\sh{O}_{y'}$ (resp. a valuation ring that dominates $\sh{O}_{y'}$ and whose field of fractions is $\kres(x)$);
@@ -272,7 +272,7 @@ Then the canonical map \sref{II.7.3.2.2} is bijective (which is equivalent to sa
 \begin{proof}
 So let $x$ be a point of $f^{-1}(b)$ that is \emph{rational} over $K$.
 Since $f$ is separated, so too is the morphism $f^{-1}(b)\to\Spec(K)$ corresponding to $f$ \sref[I]{I.5.5.1}[iv], and, since every section of $f^{-1}(b)$ is a closed immersion \sref[I]{I.5.4.6}, $\{x\}$ is closed \emph{in $f^{-1}(b)$}.
-Consider the reduced closed subprescheme $X'$ of $X$ that has the closure $\overline{\{x\}}$ of $\{x\}$ \emph{in $X$} as its underlying space.
+Consider the closed reduced subprescheme $X'$ of $X$ that has the closure $\overline{\{x\}}$ of $\{x\}$ \emph{in $X$} as its underlying space.
 It is clear that the restriction of $f$ to $X'$ satisfies the hypotheses of \sref{II.7.3.1}, and is thus an \emph{isomorphism} from $X'$ to $Y$, whose inverse isomorphism is the desired $Y$-section of $X$.
 \end{proof}
 
@@ -337,7 +337,7 @@ The following conditions are equivalent:
         \]
         corresponding to the canonical injection $A\to K$ is surjective (resp. bijective).
 \oldpage[II]{145}
-    \item[\rm{(c)}] For every $Y$-scheme of the form $Y'=\Spec(A)$, where $A$ is a valuation ring (resp. a discrete valuation ring), the canonical map \sref{II.7.3.2.2} relative to the $Y'$-prescheme $X_{(Y')}$ is surjective (resp. bijective).
+    \item[\rm{(c)}] For every $Y$-scheme of the form $Y'=\Spec(A)$, where $A$ is a valuation ring (resp. a discrete valuation ring), the canonical map \sref{II.7.3.2.2} with respect to the $Y'$-prescheme $X_{(Y')}$ is surjective (resp. bijective).
 \end{enumerate}
 \end{theorem}
 
@@ -416,7 +416,7 @@ Note first of all that the hypotheses imply, in any case, that $f$ is separated 
         \]
         commutes.
         It suffices to prove that $j$ is a \emph{closed} immersion, since then $f\circ g=p\circ j$ will be a projective morphism, and thus closed, and, since $g$ is surjective, $f$ will also be proper \sref{II.5.4.3}.
-        Let $Z$ be the reduced closed subprescheme of $P$ that has $\overline{j(X')}$ as its underlying space \sref[I]{I.5.2.1};
+        Let $Z$ be the closed reduced subprescheme of $P$ that has $\overline{j(X')}$ as its underlying space \sref[I]{I.5.2.1};
         since $X'$ is integral, $j$ factors as $i\circ h$, where $i:Z\to P$ is the canonical injection, $h:X'\to Z$ a dominant open immersion \sref[I]{I.5.2.3}, and $Z$ is integral;
 \oldpage[II]{147}
         furthermore, $Z$ is projective over $Y$, and we see that we can restrict to the case where $P$ is \emph{integral} and $j$ is \emph{dominant} and \emph{birational}, and everything then reduces to showing that $j$ is \emph{surjective}.
@@ -556,7 +556,7 @@ This follows immediately from \sref{II.7.4.1}[(b)] and \sref{II.7.1.6}.
 \begin{corollary}[7.4.6]
 \label{II.7.4.6}
 Let $X$ be a reduced algebraic curve, and $\sh{A}$ a reduced coherent $\sh{R}(X)$-algebra;
-then the integral closure $X'$ of $X$ relative to $\sh{A}$ \sref{II.6.3.4} is a normal algebraic curve, and the canonical morphism $X'\to X$ is finite.
+then the integral closure $X'$ of $X$ with respect to $\sh{A}$ \sref{II.6.3.4} is a normal algebraic curve, and the canonical morphism $X'\to X$ is finite.
 \end{corollary}
 
 \begin{proof}
@@ -700,7 +700,7 @@ The set of local rings of $X$ can be identified \sref[I]{I.8.2.1} with the set c
 
 \begin{proof}
 Indeed, $K$ is an extension of finite degree of a pure transcendental extension $k(T)$ of $k$, which can be identified, as we have seen, with the field of rational functions of the projective line $Y=\bb{P}_k^1$.
-Let $X$ be the \emph{integral closure} of $Y$ relative to $K$ \sref{II.6.3.4};
+Let $X$ be the \emph{integral closure} of $Y$ with respect to $K$ \sref{II.6.3.4};
 then $X$ is a normal algebraic curve over the field $K$ \sref{II.6.3.7}, and it is complete, since the morphism $X\to Y$ is finite \sref{II.7.4.6}.
 The local rings $\sh{O}_x$ of $X$ are either the field $K$, when $x$ is the generic point, or discrete valuation rings that contain $k$ and have $K$ as their field of fractions, when $x$ is distinct from the generic point \sref{II.7.4.5}.
 Conversely, let $A$ be such a ring;

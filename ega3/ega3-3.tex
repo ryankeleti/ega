@@ -23,7 +23,7 @@ Consider the following property $\textbf{P}(Y)$ of a closed subset $Y$ of $X'$: 
 By virtue of the principle of Noetherian induction \sref[0]{0.2.2.2}, we see that we can reduce to showing that \emph{if $Y$ is a closed subset of $X'$ such that the property $\textbf{P}(Y')$ is true for every closed subset $Y'$ of $Y$, distinct from $Y$, then $\textbf{P}(Y)$ is true}.
 
 Therefore, let $\sh{F}\in\C$ have support contained in $Y$, and we show that $\sh{F}\in\C'$.
-Denote also by $Y$ the reduced closed subprescheme of $X$ having $Y$ for its underlying space \sref[I]{I.5.2.1}; it is defined by a coherent sheaf of ideals $\sh{J}$ of $\sh{O}_X$.
+Denote also by $Y$ the closed reduced subprescheme of $X$ having $Y$ for its underlying space \sref[I]{I.5.2.1}; it is defined by a coherent sheaf of ideals $\sh{J}$ of $\sh{O}_X$.
 We know \sref[I]{I.9.3.4} that there exists an integer $n>0$ such that $\sh{J}^n\sh{F}=0$; for $1\leq k\leq n$, we thus have an exact sequence
 \[
   0\to\sh{J}^{k-1}\sh{F}/\sh{J}^k\sh{F}\to\sh{F}/\sh{J}^k\sh{F}\to\sh{F}/\sh{J}^{k-1}\sh{F}\to 0
@@ -33,7 +33,7 @@ We thus reduce to proving that $\sh{F}\in\C'$ under the additional hypothesis th
 Let us now consider two cases:
 \begin{enumerate}
   \item[(a)] $Y$ is \emph{reducible}.
-    Let $Y=Y'\cap Y''$, where $Y'$ and $Y''$ are closed subsets of $Y$, distinct from $Y$; denote also by $Y'$ and $Y''$ the reduced closed subpreschemes of $X$ having $Y$ and $Y''$ for their respective underlying spaces, which are defined respectively by sheaves of ideals $\sh{J}'$ and $\sh{J}''$ of $\sh{O}_X$.
+    Let $Y=Y'\cap Y''$, where $Y'$ and $Y''$ are closed subsets of $Y$, distinct from $Y$; denote also by $Y'$ and $Y''$ the closed reduced subpreschemes of $X$ having $Y$ and $Y''$ for their respective underlying spaces, which are defined respectively by sheaves of ideals $\sh{J}'$ and $\sh{J}''$ of $\sh{O}_X$.
     Set $\sh{F}'=\sh{F}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J}')$ and $\sh{F}''=\sh{F}\otimes_{\sh{O}_X}(\sh{O}_X/\sh{J}'')$.
     The canonical homomorphisms $\sh{F}\to\sh{F}'$ and $\sh{F}\to\sh{F}''$ thus define a homomorphism $u:\sh{F}\to\sh{F}'\oplus\sh{F}''$.
     We show that for every $z\not\in Y'\cap Y''$, the homomorphism $u_z:\sh{F}_z\to\sh{F}_z'\oplus\sh{F}_z''$ is \emph{bijective}.
