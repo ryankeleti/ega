@@ -1330,4 +1330,25 @@ We will see in the next section that this circumstance cannot happen when we rep
 \subsection{Chevalley's theorem}
 \label{subsection:II.6.7}
 
-We
+We are going to prove (with the help of Serre's criterion \sref{II.5.2.1}) the following theorem, which was proven by C.~Chevalley by other methods, in the case of \emph{algebraic} schemes.
+
+\oldpage[II]{136}
+\begin{theorem}[6.7.1]
+\label{II.6.7.1}
+Let $X$ be an affine scheme, $Y$ a Noetherian prescheme, and $f:X\to Y$ a finite surjective morphism.
+Then $Y$ is an affine scheme.
+\end{theorem}
+
+\begin{proof}
+It is clear that $f_\red:X_\red\to Y_\red$ is finite \sref{II.6.1.5}[(vi)];
+since $X_\red$ is an affine scheme, and since saying that $Y$ is affine is equivalent to saying that $Y_\red$ is affine (since $Y$ is Noetherian \sref[I]{I.6.1.7}), we see that we can suppose $Y$ to be \emph{reduced}.
+For every closed subset $Y'$ of $Y$, there exists exactly one reduced subprescheme of $Y$ that has $Y'$ as its underlying space \sref[I]{I.5.1.2};
+its inverse image $f^{-1}(Y')$, which is canonically isomorphic to $X\times_Y Y'$ \sref[I]{I.4.4.1}, is affine as a closed subprescheme of $X$, and the restriction of $f$ to $f^{-1}(Y')$, which can be identified with $f\times_Y 1_{Y'}$, is a finite surjective morphism \sref{II.6.1.5}[(iii)].
+By the principal of Noetherian induction \sref[0]{0.2.2.2}, we can thus (taking \sref[I]{I.6.1.7} into account) reduce to proving the theorem under the hypothesis that for \emph{every} closed subset $Y'\neq Y$, every closed subprescheme of $Y$ that has $Y'$ as its underlying space is affine.
+We thus conclude that, \emph{for every coherent $\sh{O}_Y$-module $\sh{F}$ whose (closed) support $Z$ is distinct from $Y$, we have $\HH^1(Y,\sh{F})=0$}.
+Indeed, there exists a closed subprescheme $Y'$ of $Y$ that has $Z$ as its underlying space and is such that, if $j:Y\to Y$ is the canonical injection, then $\sh{F}=j_*(j^*(\sh{F}))$ \sref[I]{I.9.3.5};
+then \sref{II.5.2.3} $\HH^1(Y,\sh{F})=\HH^1(Y',j^*(\sh{F}))=0$, by \sref[I]{I.5.1.9.2}.
+
+Suppose first of all that $Y$ is not irreducible, and let $Y'$ be an irreducible component of $Y$, and $Y''=Y\setminus Y'$;
+
+\end{proof}
