@@ -95,7 +95,7 @@ Here is the current status of the translation, along with who is currently worki
 9. Supplement on quasi-coherent sheaves _(@thosgood)_
 10. Formal schemes _(@thosgood, @ryankeleti)_
 
-### Elementary global study of some classes of morphisms (EGA II) ![EGAIIstatus](https://img.shields.io/badge/-180%2F205-yellow)
+### Elementary global study of some classes of morphisms (EGA II) ![EGAIIstatus](https://img.shields.io/badge/-205%2F205-brightgreen)
 
 + [x] 0. Summary _(@ryankeleti / proofread by @thosgood)_
 + [x] 1. Affine morphisms _(@ryankeleti)_
@@ -103,7 +103,7 @@ Here is the current status of the translation, along with who is currently worki
 + [x] 3. Homogeneous prime spectrum of a sheaf of graded algebras _(@thosgood)_
 + [x] 4. Projective bundles; Ample sheaves _(@thosgood)_
 + [x] 5. Quasi-affine morphisms; quasi-projective morphisms; proper morphisms; projective morphisms _(@thosgood)_
-+ [ ] 6. Integral morphisms and finite morphisms _(@thosgood; https://github.com/ryankeleti/ega/pull/198)_
++ [x] 6. Integral morphisms and finite morphisms _(@thosgood)_
 + [x] 7. Valuative criteria _(@thosgood)_
 + [x] 8. Blowup schemes; based cones; projective closure _(@thosgood)_
 + [x] Errata and addenda (list 1) _(@thosgood)_
