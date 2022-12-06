@@ -1270,9 +1270,64 @@ for every invertible $\sh{O}_X$-module $\sh{L}$ such that $g^*(\sh{L})$ is ample
 \end{corollary}
 
 \begin{proof}
-If
+If we set $\sh{L}'=g^*(\sh{L})$, then $g_*(\sh{L}')=\sh{L}\otimes_{\sh{O}_X}\sh{B}$ \sref[0]{0.5.4.10}, so
+\[
+  N'(g_*(\sh{L}')) = (\sh{L}\otimes_{\sh{O}_X}\sh{C})^{\otimes n}
+\]
+(by the same argument as for \sref{II.6.5.2.4}).
+We thus conclude that $\sh{M}=(h^*(\sh{L}))^{\otimes n}$, and since $\sh{M}$ is ample, so too is $h^*(\sh{L})$ \sref{II.4.5.6}.
 \end{proof}
 
+\begin{proposition}[6.6.11]
+\label{II.6.6.11}
+Let $Y$ be an affine scheme, $X$ an reduced Noetherian prescheme, $f:X\to Y$ a quasi-compact morphism, and $g:X'\to X$ a finite surjective morphism.
+Let $W$ be an open subset of $X$ such that, for all $x\in W$, either $X$ is normal at the point $x$ or there exists an open neighbourhood $T\subset W$ of $x$ such that $(g_*(\sh{O}_{X'}))|T$ is a locally free $(\sh{O}_X|T)$-module.
+Then there exists a reduced $Y$-prescheme $Z$ and a \emph{finite birational} $Y$-morphism $h:Z\to X$ such that the restriction of $h$ to $h^{-1}(W)$ is an isomorphism from $h^{-1}(W)$ to $W$ and has the following property: for every invertible $\sh{O}_X$-module $\sh{L}$ such that $g^*(\sh{L})$ is ample for $f\circ g$, $h^*(\sh{L})$ is ample for $f\circ h$.
+\end{proposition}
 
-% \subsection{Chevalley's theorem}
-% \label{subsection:II.6.7}
+\begin{proof}
+Since $Y$ is affine, $g^*(\sh{L})$ is ample, and the problem thus reduces to proving that, for a suitable choice of $h$, $h^*(\sh{L})$ is ample \sref{II.4.6.6}.
+We will show that we can replace $g$ by a finite surjective morphism $g':X''\to X$ such that ${g'}^*(\sh{L})$ is ample and $g'_*(\sh{O}_{X''})\otimes_{\sh{O}_X}\sh{R}(X)$ is a \emph{locally free} $\sh{R}(X)$-module \emph{of constant rank};
+we will then have reduced to the conditions of \sref{II.6.6.10}, and the proposition will thus be proven.
+
+For this, let $\sh{B}=g_*(\sh{O}_{X'})$;
+denote by $X_i$ (for $1\leq i\leq n$) the closed reduced subpreschemes of $X$ that have the irreducible components of $X$ as their underlying space \sref[I]{I.5.2.1};
+they are integral by hypothesis.
+\oldpage[II]{135}
+Let $X'_i$ be the closed subprescheme $g^{-1}(X_i)$ of $X'$, and $g_i:X'_i\to X_i$ the morphism $g$ restricted to $X'_i$, which is finite \sref{II.6.1.5}[(iii)] and surjective;
+let $k_i$ be the \emph{rank} of the $\sh{O}_{X_i}$-algebra $\sh{B}_i=(g_i)_*(\sh{O}_{X'_i})$.
+Since $\sh{B}_i\otimes_{\sh{O}_{X_i}}\sh{R}(X_i)$ is a constant presheaf \sref[I]{I.7.3.5}, the rank $k_i$ is also the rank of the $(\sh{O}_X|U)$-algebra $\sh{B}|U$ for every open $U$ of $X$ that does not meet the \emph{only} irreducible component $X_i$.
+If $T$ is an open subset of $X$ such that $\sh{B}|T$ is isomorphic to $\sh{O}_X^m|T$, then it follows from the above remark that the numbers $k_i$ are equal to $m$ for all the indices $i$ such that $T\cap X_i\neq\emp$.
+So let $U$ be the open subset of $X$ given by the points that admit a neighbourhood on which $\sh{B}$ is a locally free $\sh{O}_X$-module, and let $U_j$ (for $1\leq j\leq s$) be its connected components, which are open in $X$ and finitely many (since $U$ is Noetherian);
+denote by $V_j$ the closed subprescheme of $X'$ given by the \emph{closure} of the subprescheme induced on the open $g^{-1}(U_j)$ \sref[I]{I.9.5.11}.
+By the above, for all indices $i$ such that $X_i\cap U_j\neq\emp$, the ranks $k_i$ are all equal to a single integer $m_j$;
+note also that a single $X_i$ cannot meet two $U_j$ with different indices $j$.
+Let $i_\lambda$ be the indices $i$ such that $X_i\cap U=\emp$.
+Consider the product $k$ of all the $k_i$, set $n_i=k/k_i$, and let $X''$ be the prescheme defined as follows.
+For each $j$ (for $1\leq j\leq s$), consider $k/m_j$ preschemes isomorphic to $V_j$, and for each $\lambda$, $k/k_{i_\lambda}$ preschemes isomorphic to $X'_{i_\lambda}$;
+then $X''$ is the \emph{sum} of all these preschemes.
+We define a morphism $g'':X''\to X'$ that reduces to the canonical injection on each of the summands of $X''$;
+it is clear that $g''$ is a finite dominant morphism, and thus surjective (since a finite morphism is closed \sref{II.6.1.10});
+set $g'=g\circ g''$, which is a finite surjective morphism $X''\to X$;
+we have ${g'}^*(\sh{L})={g''}^*(g^*(\sh{L}))$, and so ${g'}^*(\sh{L})$ is an ample $\sh{O}_{X''}$-module \sref{II.5.1.12}.
+It is then clear that, for this new prescheme $X''$, the ranks defined as the $k_i$ for $X'$ are all \emph{equal to $k$};
+taking \sref[I]{I.7.3.3} into account, we immediately conclude that, for every affine open $T$ of $X$, $(g'_*(\sh{O}_{X''})\otimes_{\sh{O}_X}\sh{R}(X))|T$ is an $(\sh{R}(X)|T)$-module isomorphic to $(\sh{R}(X)|T)^k$.
+\end{proof}
+
+\begin{corollary}[6.6.12]
+\label{II.6.6.12}
+If, in the statement of \sref{II.6.6.11}, we have $W=X$, then for an invertible $\sh{O}_X$-module $\sh{L}$ to be ample for $f$, it is necessary and sufficient that $g^*(\sh{L})$ be ample for $f\circ g$.
+\end{corollary}
+
+\begin{remark}[6.6.13]
+\label{II.6.6.13}
+In Chapter~III, we will see that, if $Y$ is Noetherian, and $f$ of finite type, and if the restriction of $f$ to the closed reduced subprescheme of $X$ that has $X\setminus W$ as its underlying space is \emph{proper}, then the conclusion of \sref{II.6.6.12} still holds true.
+But we will give, in Chapter~V, examples of algebraic schemes $X$ over a field $K$ (with the structure morphism $X\to\Spec(K)$ not proper) whose normalisation $X'$ is quasi-affine, but which are not quasi-affine (in that $\sh{O}_X$ is not ample, even though $\sh{O}_{X'}$ is \sref{II.5.1.12} and the morphism $X'\to X$ is finite and surjective \sref{II.6.3.10}).
+We will see in the next section that this circumstance cannot happen when we replace ``quasi-affine'' by ``affine''.
+\end{remark}
+
+
+\subsection{Chevalley's theorem}
+\label{subsection:II.6.7}
+
+We
