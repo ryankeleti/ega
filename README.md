@@ -112,7 +112,7 @@ Here is the current status of the translation, along with who is currently worki
 
 + [x] 0. Summary _(@thosgood / proofread by @thosgood)_
 + [x] 1. Cohomology of affine schemes _(@ryankeleti)_
-+ [ ] 2. Cohomological study of projective morphisms (~15 pages)
++ [ ] 2. Cohomological study of projective morphisms (~15 pages) _(@thosgood)_
 + [x] 3. Finiteness theorem for proper morphisms _(@ryankeleti)_
 + [ ] 4. The fundamental theorem of proper morphisms. Applications (~30 pages)
 + [ ] 5. An existence theorem for coherent algebraic sheaves (~10 pages)
