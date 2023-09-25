@@ -16,19 +16,20 @@ To compile, `make book`, `make pdfs`, or `make all`.
 
 Individual volumes can be downloaded separately:
 
-- [What this is](https://fppf.site/ega/what-auto.pdf)
-- [Introduction](https://fppf.site/ega/intro-auto.pdf)
-- [EGA 0](https://fppf.site/ega/ega0-auto.pdf)
-- [EGA I](https://fppf.site/ega/ega1-auto.pdf)
-- [EGA II](https://fppf.site/ega/ega2-auto.pdf)
-- [EGA III](https://fppf.site/ega/ega3-auto.pdf)
-- [EGA IV](https://fppf.site/ega/ega4-auto.pdf)
-- [References](https://fppf.site/ega/ref-auto.pdf)
+- [What this is](https://ryankeleti.com/ega/what-auto.pdf)
+- [Introduction](https://ryankeleti.com/ega/intro-auto.pdf)
+- [EGA 0](https://ryankeleti.com/ega/ega0-auto.pdf)
+- [EGA I](https://ryankeleti.com/ega/ega1-auto.pdf)
+- [EGA II](https://ryankeleti.com/ega/ega2-auto.pdf)
+- [EGA III](https://ryankeleti.com/ega/ega3-auto.pdf)
+- [EGA IV](https://ryankeleti.com/ega/ega4-auto.pdf)
+- [References](https://ryankeleti.com/ega/ref-auto.pdf)
 
 Alternatively, the full document can be downloaded:
 
-- [Book](https://fppf.site/ega/book-auto.pdf)
+- [Book](https://ryankeleti.com/ega/book-auto.pdf)
 
+*Please contact me if for any reason these links break! Thank you :)*
 
 ## Current status
 
