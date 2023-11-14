@@ -160,7 +160,7 @@ We can thus suppose that $f(X)$ is \emph{dense} in $Y$.
 Finally, since the question is local on $Y$, we can restrict to the case where $Y=\Spec(A)$.
 Then $X=\Spec(B)$, where $B$ is an $A$-algebra that is integral over $A$ \sref{II.6.1.4};
 furthermore, $A$ is reduced \sref[I]{I.5.1.4}, and the hypothesis that $f(X)$ be dense in $Y$ implies that the homomorphism $\vphi:A\to B$ corresponding to $f$ is \emph{injective} \sref[I]{I.1.2.7}.
-Under these conditions, saying that $f(X)=Y$ implies that every prime ideal of $A$ is the intersection with $A$ of a prime ideal of $B$, which is exactly the first theorem of Cohen--Seidenberg (\cite[t.~I, p.~257, th.~3]{II-13}).
+Under these conditions, saying that $f(X)=Y$ implies that every prime ideal of $A$ is the intersection with $A$ of a prime ideal of $B$, which is exactly the first theorem of Cohen--Seidenberg (\cite[t.~I, p.~257, th.~3]{(II-13)}).
 \end{proof}
 
 \begin{corollary}[6.1.11]
@@ -339,7 +339,7 @@ the fact that $f$ is of finite type then follows from \sref[I]{I.6.3.6}.
 \label{II.6.2.5}
 Let $A$ be a \emph{complete} local Noetherian ring, $X$ an $A$-scheme locally of finite type, and $x$ a point of $X$ over the closed point $y$ of $Y=\Spec(A)$.
 Suppose that $x$ is isolated in its fibre $f^{-1}(y)$ (where $f$ is the structure morphism $X\to Y$).
-Then $\sh{O}_x$ is an $A$-module of finite type, and $X$ is $Y$-isomorphic to the sum \sref[I]{I.3.1} of $X'=\Spec(\sh{O}_x)$ (which is a finite $Y$-scheme) and an $A$-scheme $X''$.
+Then $\sh{O}_x$ is an $A$-module of finite type, and $X$ is $Y$-isomorphic to the sum \sref[I]{section:I.3.1} of $X'=\Spec(\sh{O}_x)$ (which is a finite $Y$-scheme) and an $A$-scheme $X''$.
 \end{proposition}
 
 \begin{proof}
@@ -500,7 +500,8 @@ Finally, $X'$ is irreducible, since, if $U$ runs over the set of non-empty affin
 furthermore, the intersection $f^{-1}(U\cap V)$ of any two of these opens contains $\xi'$, and is thus non-empty, and we conclude by \sref[0]{0.2.1.4}.
 \end{proof}
 
-\begin{corollary}
+\begin{corollary}[6.3.8]
+\label{II.6.3.8}
 Let $X$ be a reduced prescheme that has only a finite number of irreducible components $X_i$ (where $1\leq i\leq r$), and let $\xi_i$ be the generic point of $X_i$.
 Then the integral closure $X'$ of $X$ with respect to $\sh{R}(X)$ is the sum of the $r$ $X$-schemes $X'_i$, which are integral and normal.
 If $f:X'\to X$ is the structure morphism, then $f^{-1}(\xi_i)$ consists only of the generic point $\xi'_i$ of $X'_i$, and we have $\kres(\xi'_i)=\kres(\xi_i)$, or, in other words, that $f$ is birational.
@@ -761,6 +762,7 @@ We have analogous results for the $\sigma_i$.
 \end{env}
 
 \begin{env}[6.4.9]
+\label{II.6.4.9}
 Now suppose that $X$ is a \emph{locally integral prescheme}, so that the sheaf $\sh{R}(X)$ of rational functions on $X$ is a locally simple sheaf of fields \sref[I]{I.7.4.3}, and quasi-coherent as an $\sh{O}_X$-module.
 If $\sh{E}$ is a quasi-coherent $\sh{O}_X$-module \emph{of finite type}, then $\sh{E}'=\sh{E}\otimes_{\sh{O}_X}\sh{R}(X)$ is a locally free $\sh{R}(X)$-module \sref[I]{I.7.3.6};
 for every endomorphism $u$ of $\sh{E}$, $u\otimes1_{\sh{R}(X)}$ is then an endomorphism of $\sh{E}'$, and $\det(u\otimes1)$ is a section of $\sh{R}(X)$ over $X$, which we also call the \emph{determinant} of $u$, and also denote by $\det u$.
@@ -1383,7 +1385,7 @@ since $X_i$ is also an affine scheme, we see that we can replace $X$ by $X_i$ in
   since $f$ is finite, $U'=f^{-1}(U)$ is affine \sref{II.1.3.2};
   let $D$ be its (integral) ring with field of fractions $K=\sh{O}_x$;
   by hypothesis, $D$ is a $C$-module of finite type \sref{II.6.1.4}, and so $K$ is an extension of finite rank of $k$.
-  The fibre $f^{-1}(y)=X\times_Y\Spec(\kres(y))=X\times_Y\Spec(\sh{O}_y)$ can be identified with $\Spec(K)$ \sref[I]{I.3.6.6};
+  The fibre $f^{-1}(y)=X\times_Y\Spec(\kres(y))=X\times_Y\Spec(\sh{O}_y)$ can be identified with $\Spec(K)$ \sref[I]{I.3.6.5};
   let $s_i$ (for $1\leq i\leq m$) be elements of $D$ that form a basis of $K$ over $k$.
   There exists $n>0$ such that the sections $(s_i|X_g)g^{\otimes n}$ of $\sh{L}^{\otimes n}$ over $X_g$ extend to sections $b_i$ (for $1\leq i\leq m$) of $\sh{L}^{\otimes n}$ over $X$ \sref[I]{I.9.3.1}.
   The $b_i$ are also, by definition, sections of $f_*(\sh{L}^{\otimes n})$ over $Y$, and thus define a homomorphism $u:\sh{O}_Y^m\to f_*(\sh{L}^{\otimes n})$ \sref[0]{0.5.1.1};
