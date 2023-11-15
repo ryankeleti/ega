@@ -248,7 +248,7 @@ When the filtration of $K^\bullet$ is regular and exhaustive, and filtered induc
 \end{env}
 
 \subsection{The spectral sequences of a bicomplex}
-\label{subsection:0.11.4}
+\label{subsection:0.11.3}
 
 \begin{env}[11.3.1]
 \label{0.11.3.1}
@@ -304,5 +304,120 @@ Let $K^{\bullet\bullet}=(K^{ij})$ be a bicomplex in an abelian category $\cat{C}
 
 \begin{proof}
 The proposition follows immediately from the definitions~\sref{0.11.1.3} and from~\sref{0.11.2.4}, 
+as well as of the following observations relating to the filtration $F_\text{I}$
+(and similar observations that we can deduce for $F_\text{II}$ by exchange the roles of the two indices in $K^{\bullet\bullet}$):
+\begin{enumerate}
+  \item[{$1^{\circ}$}] If there exists $i_0$ such that $K^{ij}=0$ for $i>i_0$, the filtration $F_\text{I}(K^{\bullet\bullet})$ is \emph{discrete}.
+  \item[{$2^{\circ}$}] If there exists $i_0$ such that $K^{ij}=0$ for $i<i_0$, the filtration $F_\text{I}(K^{\bullet\bullet})$ is \emph{co-discrete}.
+  We can immediate deduce that it is the same for the corresponding filtration $F_\text{I}(\HH^n(K^{\bullet\bullet}))$ for all $n$. 
+  Furthermore, the definition of the $B_{r}^{pq}$ corresponding to the filtration $F_\text{I}(K^{\bullet\bullet})$ \sref{0.11.2.2}
+  shows that for any pair $(p,q)$, the sequence $(B_{r}^{pq})_{r\leq{2}}$ is stable.
+  \item[{$3^{\circ}$}] If there exists $j_0$ such that $K^{ij}=0$ for $j<j_0$, we have 
+  \[
+    F_\text{I}^{p+r}(K^{\bullet\bullet}) \cap (\sum_{i+j=n}K^{ij}) = 0
+  \]
+  as soon as $p+r+j_{0}>n$, so $Z_{r}^{pq} = Z_\infty(E_2^{pq})$ for $r>q-j_{0}+1$.
+  On the other hand, $\HH^{n}(F_\text{I}^{p}(K^{\bullet\bullet})) = 0$ for $p>n-j_{0}+1$.
+  \item[{$4^{\circ}$}] If there exists $j_0$ such that $K^{ij}=0$ for $j>j_0$, we have 
+  \[
+    F_\text{I}^{p-r+1}(K^{\bullet\bullet}) \cap (\sum_{i+j=n}K^{ij}) = \sum_{i+j=n}K^{ij}
+  \]
+  as soon as $p-r+1+j_{0}<n$, so $B_{r}^{pq} = B_\infty(E_2^{pq})$ for $r<j_{0}-q+1$.
+  On the other hand, $\HH^{n}(F_\text{I}^{p}(K^{\bullet\bullet})) = \HH^{n}(K^{\bullet\bullet})$ for $p+j_{0}<n-1$.
+\end{enumerate}
 \end{proof}
 
+\begin{env}[11.3.4]
+\label{0.11.3.4}
+\oldpage[0\textsubscript{III}]{31}
+Suppose that the bicomplex $K^{\bullet\bullet}=(K^{ij})$ is such that $K^{ij}=0$ for $i<0$ or $j<0$.
+We know that we can define for all $p \in Z$ a canonical "edge-homomorphism".
+  \[
+\label{0.11.3.4.1}
+    'E_2^{p0}(K^{\bullet\bullet}) \rightarrow \HH^{p}(K^{\bullet\bullet})
+\tag{11.3.4.1}
+  \]
+(M, XV, 6).
+Recall that this is due to, on the one hand, we have in the spectral sequence
+$'E(K^{\bullet\bullet})$, $Z_r^{p0}=Z_{\text{I}}^{p}(Z_{\text{II}}^{0}(K^{\bullet\bullet}))$ for $2\leq r \leq +\infty$, 
+and on the other hand, we have that $\HH^{p}(F_\text{I}^{p+1}(K^{\bullet\bullet})) = 0$, 
+so that the isomorphism $\beta^{p0}:\ 'E_\infty^{p0} \rightarrow \HH^{p}(F_1^p)/\HH^{p}(F_1^{p+1})$
+gives a homomorphism $'E_\infty^{p0} \rightarrow \HH^{p}(F_1^p(K^{\bullet\bullet})) \rightarrow \HH^{p}(K^{\bullet\bullet})$; 
+The equality of all the $Z_r^{p0}$ allows us to define a canonical homomorphism $'E_r^{p0} \rightarrow 'E_s^{p0}$ for $r \leq s$, 
+and in particular a homomorphism $'E_2^{p0} \rightarrow 'E_\infty^{p0}$, from the composition of the edge-homomorphism
+$'E_2^{p0}(K^{\bullet\bullet}) \rightarrow \HH^{p}(K^{\bullet\bullet})$;
+Furthermore, we can immediately verify that, in the class $\mod B_2^{p0}$ of an element $z \in Z_\text{II}^0(K^{\bullet\bullet}) \subset K^{p0}$ such that $d'z=0$, 
+the edge-homomorphism thus defined corressponds in $'E_{\infty}^{p0}$, to the class of $\mod B_\infty^{p0}$, 
+then to the latter, the cohomology class of $z$ in $H^p(K^{\bullet\bullet})$.
+We therefore finally see that the \emph{edge-homomorphism \sref{0.11.3.4.1} comes from, by passing to cohomology, the canonical injection} $Z_\text{II}^0(K^{\bullet\bullet}) \rightarrow K^{\bullet\bullet}$ 
+(where $K^{\bullet\bullet}$ is considered as simple complex).
+We naturally intepret the edge-homomorphism in the same way 
+  \[
+\label{0.11.3.4.2}
+    ''E_2^{p0}(K^{\bullet\bullet}) \rightarrow \HH^{p}(K^{\bullet\bullet})
+\tag{11.3.4.2}
+  \]
+as coming from the canonical injection $Z_\text{I}^0(K^{\bullet\bullet}) \rightarrow K^{\bullet\bullet}$ .
+\end{env}
+\begin{env}[11.3.5]
+\label{0.11.3.5}
+Now let $K_{\bullet\bullet} = (K_{ij})$ a bicomplex of $C$ whose two differential operators are of degress -1.
+We will then write 
+$K_{i, \bullet}$ (resp. $K_{\bullet, j}$) the simple complex $(K_{ij})_{j\in Z}$ (resp. $(K_{ij})_{i\in Z}$), 
+$\HH_{p}^\text{II}(K_{i, \bullet})$ (resp. $\HH_{p}^\text{I}(K_{\bullet, j})$) are $p^e$ homology object,
+$\HH_{p}^\text{II}(K_{\bullet\bullet})$ (resp. $\HH_{p}^\text{I}(K_{\bullet\bullet})$) the complex $(\HH_{p}^\text{II}(K_{i, \bullet}))_{i \in Z}$ (resp. $(\HH_{p}^\text{I}(K_{\bullet, j}))_{j \in Z}$), $(\HH_{p}^\text{II}(K_{i, \bullet}))_{i \in Z}$, 
+$\HH_q^\text{I}(\HH_{p}^\text{II}(K_{\bullet\bullet}))$ (resp. $\HH_q^\text{II}(\HH_{p}^\text{I}(K_{\bullet\bullet}))$) are $q^e$ homology object;
+analogous notations for the objects of cycles and objects of boundaries;
+Finally, we will designate $\HH_n(K_{\bullet\bullet})$ (when it exists) the $n^e$ homology object of simple complex (with a differential operator of degree -1) defined over $K_{\bullet\bullet}$.
+Let $K'^{\bullet\bullet} = (K^{ij})$ with $K'^{\bullet\bullet} = (K_{-i,-j})$ be the bicomplex differential operator of degress +1 associated to $K_{\bullet\bullet}$.
+By definition, the \emph{special sequences} of $K_{\bullet\bullet}$ are those of $K'^{\bullet\bullet}$, that we have written as $'E(K_{\bullet\bullet})$ and $''E(K_{\bullet\bullet})$, 
+where, however, we change the notations, by putting
+  \[
+    'E_{pq}^{r}(K_{\bullet\bullet}) = 'E_{r}^{-p,-q}(K'^{\bullet\bullet}), ''E_{pq}^{r}(K_{\bullet\bullet}) = ''E_{r}^{-p,-q}(K'^{\bullet\bullet}), 
+  \]
+for $2\leq r \leq \infty$. With these notations, we have
+  \[
+    'E_{pq}^{2}(K_{\bullet\bullet}) = \HH_{p}^\text{I}(\HH_{q}^\text{II}(K_{\bullet\bullet})), 'E_{pq}^{2}(K_{\bullet\bullet}) = \HH_{q}^\text{II}(\HH_{p}^\text{I}(K_{\bullet\bullet})).
+  \]
+To avoid sign errors, in general, it will be preferable to return to the complex $K'^{\bullet\bullet}$ for the relations between these spectral and their abutment.
+However, note the criteria corresponding to \sref{0.11.3.3}.
+\end{env}
+
+\begin{env}[11.3.6]
+\label{0.11.3.6}
+\oldpage[0\textsubscript{III}]{32}
+The spectral sequences $'E(K_{\bullet\bullet})$ and $''E(K_{\bullet\bullet})$ are \emph{biregular} in the following cases:
+\begin{enumerate}
+  \item[(a)] There exists $i_0$ and $j_0$ such that $K_{ij}=0$ for $i>i_0$ and $j>j_0$ (resp. for $i<i_0$ and $j<j_0$);
+  \item[(b)] There exists $i_0$ and $i_1$ such that $K_{ij}=0$ for $i<i_0$ and $i>i_1$;
+  \item[(c)] There exists $j_0$ and $j_1$ such that $K_{ij}=0$ for $j<j_0$ and $j>j_1$.
+\end{enumerate}
+The sequence $'E(K_{\bullet\bullet})$ is \emph{regular} if there exists $i_0$ such that $K_{ij}=0$ for $i<i_0$ and $K_{ij}=0$ for $j>j_0$.
+The sequence $''E(K_{\bullet\bullet})$ is \emph{regular} if there exists $i_0$ such that $K_{ij}=0$ for $i>i_0$ and $K_{ij}=0$ for $j<j_0$.
+\end{env}
+
+\subsection{Hypercohomology of a functor with respect to a complex $K^{\bullet}$}
+\label{subsection:0.11.4}
+
+\begin{env}[11.4.1]
+\label{0.11.4.1}
+\end{env}
+
+
+\subsection{Passage to the inductive limit in the hypercohomology}
+\label{subsection:0.11.5}
+
+\subsection{Hypercohomology of a functor with respect to a complex $K_{\bullet}$}
+\label{subsection:0.11.6}
+
+\subsection{Hypercohomology of a functor with respect to a bicomplex $K_{\bullet\bullet}$}
+\label{subsection:0.11.7}
+
+\subsection{Supplement on the cohomology of simplicial complexes}
+\label{subsection:0.11.8}
+
+\subsection{A lemma on the complexes of finite type}
+\label{subsection:0.11.9}
+
+\subsection{Euler-Poincare characteristic of a complex of finite length modules}
+\label{subsection:0.11.10}
