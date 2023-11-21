@@ -636,6 +636,99 @@ by a Cartan--Eilenberg resolution, but only $n-1$ of them, provided that, when w
 \subsection{Passage to the inductive limit in the hypercohomology}
 \label{subsection:0.11.5}
 \oldpage[0\textsubscript{III}]{36}
+\begin{lemma}[11.5.1]
+\label{0.11.5.1}
+Let $\cx{K} = (K^i)_{i\in \bb{Z}}$ be a complex $\cat{C}$, and for all integer $r\in \bb{Z}$.
+Let $\cx{K_{(r)}}$ be a complex such that $K_{(r)}^i = 0$ for $i<r, K_{(r)}^i = K^i$ for $i\geq r$.
+Let $T$ be an additive covariant functor from $\cat{C}$ to $\cat{C'}$, permute with inductive limits 
+(we suppose that the inductive limit filtrants exist and are exact from $\cat{C}$ to $\cat{C'}$).
+Then $\cx{\RR}T(\cx{K})$ is isomorphic to the inductive limit $\varinjlim \cx{\RR} T(\cx{K_{(r)}})$ when r tends to $-\infty$
+\end{lemma}
+\begin{proof}
+The construction of an injective Cartan--Eilenberg resoluion of $\cx{K}$ is making in \emph{arbitrary} choice, for each $i$, 
+an injection resolution $(X_{B}^{ij})_{j\geq 0}$ of $B^i(\cx{K})$ and an injective resolution $(X_{H}^{ij})_{j\geq 0}$ of $\HH^i(\cx{K})$; 
+By making this, the method of construction shows that the injective resolution $(L^{ij})_{j\geq 0}$ of $\cx{K}$ and 
+the differentials $L^{i,j} \rightarrow L^{i+1, j}$ \emph{only depend on the resolutions} $(\cx{X_B^i}), (\cx{X_H^i})$ and $(\cx{X_B^{i+1}})$ (~M, ~XVII, ~1.2).
+But, it is clear that we have $B^i(\cx{K_{(r)}}) = B^i(\cx{K})$ and $\HH^i(\cx{K_{(r)}}) = \HH^i(\cx{K})$ for $i\geq r+1$.
+We have, on the one hand, for each $r$, a canonical injection $\cx{\varphi_{r-1, r}}: \cx{K_{(r)}} \rightarrow \cx{K_{(r-1)}}, \varphi_{r-1, r}^i$ is identity for $i\neq r-1$. 
+The preceding remark shows that, if $\bcx{L} = (L^{ij})$ is an injective Cartan--Eilenberg resolution of $\cx{K}$,
+for each $r$ we can define an injective Cartan--Eilenberg resolution $\bcx{L_{(r)}} = (L_{(r)}^{ij})$ of $\cx{K_{(r)}}$ such that $L_{(r)}^{ij} = 0$ for $i<r$ and $L_{(r)}^{ij} = L^{ij}$ for $i\geq i+1$.
+We can on the other hand define a bicomplex morphism $\bcx{\Phi_{r-1, r}}: \bcx{L_{(r)}} \rightarrow \bcx{L_{(r-1)}}$ corresponding to $\cx{\varphi_{(r-1)}}$, and 
+the method of definition of this morphism \emph{(loc. cit.)} showing again that we can construct so that $\Phi_{r-1}^{ij}$, is identity for $i\neq r$ and $i\neq r-1$.
+Similarly we can define a inductive system $(\bcx{L_{(r)}})$ of bicomplexes of $\cat{C}$, 
+of which $\bcx{L}$ is evidently the inductive limit when $r$ tends to $-\infty$; 
+due to the permutability of direct sums and inductive limits, the simple complex associated to $\bcx{L}$ is also inductive limit of simple complex associated to $\bcx{L_{(r)}}$.
+As $T$ permute by hypothesis with inductive limits and that it is the same for cohomology 
+(due to the exactness of functor $\lim_{\to}$), we have good $\cx{H}(T(\bcx{L})) = \lim_{\to}\cx{\HH}(T(\bcx{L_{(r)}}))$ up to an isomorphism.
+\end{proof}
+
+The lemma \sref{0.11.5.1} allows us to extend to any complex $\cx{K}$, by passing to the inductive limit,  
+this property valid for the \emph{inf limit} complexes.
+As a first example, we prove:
+
+\begin{proposition}[11.5.2]
+\label{0.11.5.2}
+Under the hypothesis of \sref{0.11.5.1} concerning $\cat{C}, \cat{C'}$ and $T, \cx{\RR} T(\cx{K})$ 
+is a cohomologic functor in the abelian category of complexes of $\cat{C}$.
+\end{proposition}
+
+\begin{proof}
+Let us show that we can reduce ourselves to the \emph{inf limit} of complexes: 
+if we have an exact sequence $0 \rightarrow \cx{K'} \rightarrow \cx{K} \rightarrow \cx{K''} \rightarrow 0$ of complexes, 
+we evidently reduce for each $r$ an exact sequence $0 \rightarrow \cx{K'_{(r)}} \rightarrow \cx{K_{(r)}} \rightarrow \cx{K''_{(r)}} \rightarrow 0$, 
+but by hypothesis, an exact sequence
+\[
+  \ldots \rightarrow \RR^n T(\cx{K'_{(r)}}) \rightarrow \RR^n T(\cx{K_{(r)}}) \rightarrow \RR^n T(\cx{K''_{(r)}}) \xrightarrow[]{\partial} \RR^{n+1} T(\cx{K'_{(r)}}) \rightarrow \ldots
+\]
+this exact sequence forms an inductive system; the lemma \sref{0.11.5.1} and the exactness of functor $\injlim$ demonstrates that we have an exact sequence
+\[
+  \ldots \rightarrow \RR^n T(\cx{K'}) \rightarrow \RR^n T(\cx{K}) \rightarrow \RR^n T(\cx{K''}) \xrightarrow[]{\partial} \RR^{n+1} T(\cx{K'}) \rightarrow \ldots
+\]
+
+To deal with the case of inf limit complexes, we can limit to the case such that $K^i=0$ for $i<0$;
+They evidently form a \emph{abelian category} $\cat{K}$.
+\end{proof}
+
+\begin{lemma}[11.5.2.1]
+\label{0.11.5.2.1}
+In $\cat{K}$, if 
+\end{lemma}
+  
+\begin{corollary}[11.5.2.2]
+\label{0.11.5.2.2}
+\end{corollary}
+  
+\begin{env}[11.5.2.3]
+\label{0.11.5.2.3}
+\end{env}
+  
+\begin{lemma}[11.5.2.4]
+\label{0.11.5.2.4}
+\end{lemma}
+
+\begin{env}[11.5.2.5]
+\label{0.11.5.2.5}
+\end{env}
+
+\begin{proposition}[11.5.3]
+\label{0.11.5.3}
+\end{proposition}
+
+\begin{remark}[11.5.4]
+\label{0.11.5.4}
+\end{remark}
+
+\begin{env}[11.5.5]
+\label{0.11.5.5}
+\end{env}
+
+\begin{env}[11.5.6]
+\label{0.11.5.6}
+\end{env}
+
+\begin{env}[11.5.7]
+\label{0.11.5.7}
+\end{env}
 
 \subsection{Hypercohomology of a functor with respect to a complex $K_{\bullet}$}
 \label{subsection:0.11.6}
