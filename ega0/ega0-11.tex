@@ -80,7 +80,7 @@ The above definitions show, by induction on $r$, that if the $u_2^{pq}$ are \emp
 
 \begin{env}[11.1.3]
 \label{0.11.1.3}
-Recall that if $(F^p(X))_{p\in\bb{Z}}$ is a (decreasing) \emph{filtration} of an object $X\in\C$, then we say that this filtration is \emph{separated} if $\inf(F^p(X))=0$, \emph{discrete} if there exists a $p$ such that $F^p(X)=0$, \emph{exhaustive} (or \emph{coseparated}) if $\sup(F^p(X))=X$, \emph{codiscrete} if there exists a $p$ such that $F^p(X)=X$.
+Recall that if $(F^p(X))_{p\in\bb{Z}}$ is a (decreasing) \emph{filtration} of an object $X\in\cat{C}$, then we say that this filtration is \emph{separated} if $\inf(F^p(X))=0$, \emph{discrete} if there exists a $p$ such that $F^p(X)=0$, \emph{exhaustive} (or \emph{coseparated}) if $\sup(F^p(X))=X$, \emph{codiscrete} if there exists a $p$ such that $F^p(X)=X$.
 
 We say that a spectral sequence $E=(E_r^{pq},E^n)$ is \emph{weakly convergent} if we have $B_\infty(E_2^{pq})=\sup_k(B_k(E_2^{pq}))$ and $Z_\infty(E_2^{pq})=\inf_k(Z_k(E_2^{pq}))$ (in other words, the objects of $B_\infty(E_2^{pq})$ and $Z_\infty(E_2^{pq})$ are determined from the data of (a) and (c) of the spectral sequence $E$).
 We say that the spectral sequence $E$ is \emph{regular} if it is weakly convergent and if in addition:
@@ -107,7 +107,7 @@ The spectral sequences defined in (T, 2.4) are thus biregular spectral sequences
 \begin{env}[11.1.4]
 \label{0.11.1.4}
 Suppose that in the category $\cat{C}$, filtered inductive limits exist and the functor $\varinjlim$ is \emph{exact} (which is equivalent to saying that the axiom (AB~5) of (T, 1.5) is satisfied (cf.~T, 1.8)).
-The condition that the filtration $(F^p(X))_{p\in\bb{Z}}$ of an object $X\in\C$ is exhaustive is then expressed as $\varinjlim_{p\to-\infty}F^p(X)=X$.
+The condition that the filtration $(F^p(X))_{p\in\bb{Z}}$ of an object $X\in\cat{C}$ is exhaustive is then expressed as $\varinjlim_{p\to-\infty}F^p(X)=X$.
 If a spectral sequence $E$ is weakly convergent, then we have $B_\infty(E_2^{pq})=\varinjlim_{k\to\infty}B_k(E_2^{pq})$; if in addition $u:E\to E'$ is a morphism from $E$ to a weakly convergent spectral sequence $E'$ in $\cat{C}$, then we have $u_2^{pq}(B_\infty(E_2^{pq}))=B_\infty(E_2^{\prime pq})$, by the exactness of $\varinjlim$.
 In addition:
 \end{env}
@@ -184,7 +184,7 @@ The notation $K^\bullet$ and $K_\bullet$ will also be used for \emph{$\bb{Z}$-gr
 
 Recall in this case that for a complex $K^\bullet$ (resp. $K_\bullet$), we will write in general $Z^i(K^\bullet)=\Ker(K^i\to K^{i+1})$ (``object of cocycles'') and $B^i(K^\bullet)=\Im(K^{i-1}\to K^i)$ (``object of coboundaries'') (resp. $Z_i(K_\bullet)=\Ker(K_i\to K_{i-1})$ (``object of cycles'') and $B_i(K_\bullet)=\Im(K_{i+1}\to K_i)$ (``object of boundaries'')) so that $\HH^i(K^\bullet)=Z^i(K^\bullet)/B^i(K^\bullet)$ (resp. $\HH_i(K_\bullet)=Z_i(K_\bullet)/B_i(K_\bullet)$).
 
-If $K^\bullet=(K^i)$ (resp. $K_\bullet=(K_i)$) is a complex in $\cat{C}$ and $T:\C\to\C'$ a functor from $\cat{C}$ to an abelian category $\C'$, then we denote by $T(K^\bullet)$ (resp. $T(K_\bullet)$) the complex $(T(K^i))$ (resp. $(T(K_i))$) in $\C'$.
+If $K^\bullet=(K^i)$ (resp. $K_\bullet=(K_i)$) is a complex in $\cat{C}$ and $T:\cat{C}\to\cat{C}'$ a functor from $\cat{C}$ to an abelian category $\cat{C}'$, then we denote by $T(K^\bullet)$ (resp. $T(K_\bullet)$) the complex $(T(K^i))$ (resp. $(T(K_i))$) in $\cat{C}'$.
 
 We will not review the definition of the \emph{$\partial$-functors} (T, 2.1), except to note that we \emph{also} say $\partial$-functor in place of $\partial^*$-functor when the morphism $\partial$ decreases the degree of a unit, the context clarifying this point if there is cause for confusion.
 
@@ -422,189 +422,190 @@ The sequence $''E(K_{\bullet\bullet})$ is \emph{regular} if there exists $i_0$ s
 \begin{env}[11.4.1]
 \label{0.11.4.1}
 Let $\cat{C}$ be an abelian category.
-Recall that we called \emph{right resolution} (or \emph{cohomological}) of a object $A$ in $\cat{C}$ to be
-a complex of objects in $\cat{C}$, whose differential operator of degree +1.
+Recall that we defined the \emph{right resolution} (or \emph{cohomological resolution}) of a object $A$ in $\cat{C}$ to be a complex of objects in $\cat{C}$, whose differential operator is of degree $+1$,
 \[
-  0 \rightarrow L^0 \rightarrow L^1 \rightarrow L^2 ...
+  0 \rightarrow L^0 \rightarrow L^1 \rightarrow L^2 \ldots
 \]
-provided with a morphism $\varepsilon: A \rightarrow L^0$ saying \emph{augmentation} of the resolution (and that we can consider as a morphism of complexes)
+endowed with a morphism $\varepsilon: A \rightarrow L^0$, called the \emph{augmentation} of the resolution, which we can consider as a morphism of complexes
 \[
-  0 \rightarrow A \rightarrow 0 \rightarrow 0 ...
-\]
-\[
-  0 \rightarrow L^0 \rightarrow L^1 \rightarrow L^2 ...
+  \xymatrix{
+    0 \ar[r]
+    & A \ar[r] \ar[d]_{\varepsilon}
+    & 0 \ar[r] \ar[d]
+    & 0 \ar[r] \ar[d]
+    & \ldots
+  \\0 \ar[r]
+    & L^0 \ar[r]
+    & L^1 \ar[r]
+    & L^2 \ar[r]
+    & \ldots
+  }
 \]
 such that the sequence
 \[
-  0 \rightarrow A \xrightarrow[]{\varepsilon} L^0 \rightarrow L^1 ...
+  0 \rightarrow A \xrightarrow{\varepsilon} L^0 \rightarrow L^1 \ldots
 \]
 is exact.
-Similarly for the \emph{left resolution} (or \emph{homological}) of $A$ to be a complex $0 \leftarrow L_0 \leftarrow L_1 \leftarrow L_2 ...$
-of objects in $\cat{C}$, whose differential operator of degree -1, provided that an \emph{augmentation} $L_0 \xrightarrow[]{\varepsilon} A$, so that the sequence
+Similarly, a \emph{left resolution} (or \emph{homological resolution}) of $A$ is a complex $0 \leftarrow L_0 \leftarrow L_1 \leftarrow L_2 \ldots$ of objects in $\cat{C}$, whose differential operator is of degree~$-1$, endowed with an \emph{augmentation} $L_0 \xrightarrow{\varepsilon} A$ such that the sequence
 \[
-  0 \leftarrow A \xleftarrow[]{\varepsilon} L_0 \leftarrow L_1 ...
+  0 \leftarrow A \xleftarrow{\varepsilon} L_0 \leftarrow L_1 \ldots
 \]
 is exact.
-When the right resolution $(L_i)_i\geq 0$ of a object $A$ is such that $L_i=0$ for $i\geq n+1$, we say that this resolution is $of length \leq n$.
-Similarly, we define the left resolution of length $\leq n$.
-A resolution which is of of length $\leq n$ for an integer $n$ is called \emph{finite}.
 
-A resolution of $A$ is called \emph{projective} (resp. \emph{injective}) if the objects of $\cat{C}$ other than $A$ which compose it are \emph{projective} (resp. \emph{injective}). 
-When $\cat{C}$ is the category of modules (left for example) on a ring, 
-we will say in the same way that a resolution of A is \emph{flat} (resp. \emph{free}) when the modules other than $A$ which compose it are \emph{flat} (resp. \emph{free}).
+When the right resolution $(L_i)_i\geq 0$ of a object $A$ is such that $L_i=0$ for $i\geq n+1$, we say that this resolution is \emph{of length $\leq n$}.
+We define a left resolution of length $\leq n$ similarly.
+A resolution which is of of length $\leq n$ for some integer $n$ is said to be \emph{finite}.
+
+A resolution of $A$ is called \emph{projective} (resp. \emph{injective}) if the objects of $\cat{C}$, apart from $A$, of which it is composed are \emph{projective} (resp. \emph{injective}). 
+When $\cat{C}$ is the category of (left, say) modules over a ring, we say that a resolution of $A$ is \emph{flat} (resp. \emph{free}) when the modules, apart from $A$, of which it is composed are \emph{flat} (resp. \emph{free}).
 \end{env}
-
 
 \begin{env}[11.4.2]
 \label{0.11.4.2}
-Let $K^\bullet = (K^i)_{i\in Z}$ be a complex of objects $\cat{C}$, whose differential operator is of degree +1.
-We call the \emph{right Cartan-Eilenberg resolution} of $K^\bullet$ a pair formed by a bicomplex $L^{\bullet\bullet} = (L^{ij})$
-with differential operator of degree +1, and $L^{ij}=0$ for $j\leq 0$, and a morphism of simple complexes $\varepsilon: K^\bullet \rightarrow L^{\bullet, 0}$,
-so that the following condition are fulfilled:
+Let $K^\bullet = (K^i)_{i\in Z}$ be a complex of objects of $\cat{C}$, whose differential operator is of degree~$+1$.
+We define the \emph{right Cartan--Eilenberg resolution} of $K^\bullet$ to be a pair consisting of a bicomplex $L^{\bullet\bullet} = (L^{ij})$ with differential operator of degree~$+1$ and such that $L^{ij}=0$ for $j\leq 0$, and a morphism of simple complexes $\varepsilon: K^\bullet \rightarrow L^{\bullet, 0}$, such that the following condition are fulfilled:
 \oldpage[0\textsubscript{III}]{33}
 \begin{enumerate}
   \item[(i)] For each index $i$, the sequences
-  \[
-    0 \rightarrow K^i \xrightarrow[]{\varepsilon} L^{i0} \rightarrow L^{i1} \rightarrow ...
-  \]
-  \[
-    0 \rightarrow B^i(K^\bullet) \xrightarrow[]{\varepsilon} B_\mathrm{I}^i(L^{\bullet,0}) \rightarrow B_\mathrm{I}^i(L^{\bullet,1}) \rightarrow ...
-  \]
-  \[
-    0 \rightarrow Z^i(K^\bullet) \xrightarrow[]{\varepsilon} Z_\mathrm{I}^i(L^{\bullet,0}) \rightarrow Z_\mathrm{I}^i(L^{\bullet,1}) \rightarrow ...
-  \]
-  \[
-    0 \rightarrow \HH^i(K^\bullet) \xrightarrow[]{\varepsilon} \HH_\mathrm{I}^i(L^{\bullet,0}) \rightarrow \HH_\mathrm{I}^i(L^{\bullet,1}) \rightarrow ...
-  \]
-  are exact, in other words $(L^{i,\bullet}), (B_\mathrm{I}^i(L^{\bullet\bullet})), (Z_\mathrm{I}^i(L^{\bullet\bullet}))$ and $(\HH_\mathrm{I}^i(L^{\bullet\bullet}))$ 
-  are the \emph{resolution} of $K^i, B^i(K^\bullet), Z^i(K^\bullet)$ and $\HH^i(K^\bullet)$, respectively.
-  \item[(ii)] For each $j$, the simple complex $L^{\bullet, j}$ is \emph{split}, in other words, the exact sequences
-  \[
-    \label{0.11.4.2.1}
-    0 \rightarrow B_\mathrm{I}^i(L^{\bullet,j}) \rightarrow Z_\mathrm{I}^i(L^{\bullet,j}) \rightarrow \HH_\mathrm{I}^i(L^{\bullet,j}) \rightarrow 0
-    \tag{11.4.2.1}
-  \]
-  \[
-    \label{0.11.4.2.2}
-    0 \rightarrow Z_\mathrm{I}^i(L^{\bullet,j}) \rightarrow L^{ij} \rightarrow B_\mathrm{I}^{i+1}(L^{\bullet,j}) \rightarrow 0
-    \tag{11.4.2.2}
-  \]
-  are split.
+    \[
+      \begin{aligned}
+        0 \rightarrow
+        & K^i
+        \xrightarrow{\varepsilon} L^{i0}
+        \rightarrow L^{i1}
+        \rightarrow \ldots
+      \\0 \rightarrow
+        & B^i(K^\bullet)
+        \xrightarrow{\varepsilon} B_\mathrm{I}^i(L^{\bullet,0})
+        \rightarrow B_\mathrm{I}^i(L^{\bullet,1})
+        \rightarrow \ldots
+      \\0 \rightarrow
+        & Z^i(K^\bullet)
+        \xrightarrow{\varepsilon} Z_\mathrm{I}^i(L^{\bullet,0})
+        \rightarrow Z_\mathrm{I}^i(L^{\bullet,1})
+        \rightarrow \ldots
+      \\0 \rightarrow
+        & \HH^i(K^\bullet)
+        \xrightarrow{\varepsilon} \HH_\mathrm{I}^i(L^{\bullet,0})
+        \rightarrow \HH_\mathrm{I}^i(L^{\bullet,1})
+        \rightarrow \ldots
+      \end{aligned}
+    \]
+    are exact, or, in other words, $(L^{i,\bullet}), (B_\mathrm{I}^i(L^{\bullet\bullet})), (Z_\mathrm{I}^i(L^{\bullet\bullet}))$ and $(\HH_\mathrm{I}^i(L^{\bullet\bullet}))$ are \emph{resolutions} of $K^i, B^i(K^\bullet), Z^i(K^\bullet)$ and $\HH^i(K^\bullet)$ (respectively).
+  \item[(ii)] For each $j$, the simple complex $L^{\bullet, j}$ is \emph{split}, or, in other words, the exact sequences
+    \[
+      \label{0.11.4.2.1}
+      0 \rightarrow B_\mathrm{I}^i(L^{\bullet,j}) \rightarrow Z_\mathrm{I}^i(L^{\bullet,j}) \rightarrow \HH_\mathrm{I}^i(L^{\bullet,j}) \rightarrow 0
+      \tag{11.4.2.1}
+    \]
+    \[
+      \label{0.11.4.2.2}
+      0 \rightarrow Z_\mathrm{I}^i(L^{\bullet,j}) \rightarrow L^{ij} \rightarrow B_\mathrm{I}^{i+1}(L^{\bullet,j}) \rightarrow 0
+      \tag{11.4.2.2}
+    \]
+    are \emph{split}.
 \end{enumerate}
-We prove (M, XVII, 1.2) that if every object of $\cat{C}$ is subobjects of an injective object, 
-then every complex $K^\bullet$ of $\cat{C}$ admits an \emph{injective} resolution of Cartan-Eilenberg.
 
-That is to say it formed injective objects of $L^{ij}$ 
-(the condition (ii) above then results $(B_\mathrm{I}^i(L^{\bullet,j})), (Z_\mathrm{I}^i(L^{\bullet,j}))$ and $(\HH_\mathrm{I}^i(L^{\bullet,j}))$ being also injective objects).
-
+We can prove (M, XVII, 1.2) that if every object of $\cat{C}$ is subobjects of an injective object, then every complex $K^\bullet$ of $\cat{C}$ admits an \emph{injective} Cartan--Eilenberg resolution, i.e. consisting of injective objects of $L^{ij}$ (the condition (ii) above then implying that the $(B_\mathrm{I}^i(L^{\bullet,j})), (Z_\mathrm{I}^i(L^{\bullet,j}))$ and $(\HH_\mathrm{I}^i(L^{\bullet,j}))$ also consist of injective objects).
 Furthermore, for any morphsim $f: K^\bullet \rightarrow K'^\bullet$ of complexes of $\cat{C}$, 
-any Cartan-Eilenberg resolution $L^{\bullet\bullet}$ of $K^\bullet$ and any \emph{injective} Cartan-Eilenberg resolution $L'^{\bullet\bullet}$ of $K'^\bullet$.
-There exists a morphism of bicomplex $F: L^{\bullet\bullet} \rightarrow L'^{\bullet\bullet}$ compatible with $f$ and its augmentation.
-And if $f$ and $g$ are two morphisms homotopes from $K^\bullet$ to $K'^\bullet$, then the corresponding morphisms from $L^{\bullet\bullet}$ to $L'^{\bullet\bullet}$ are homotopes.
-\emph{(loc. cit.)}.
+any Cartan--Eilenberg resolution $L^{\bullet\bullet}$ of $K^\bullet$, and any \emph{injective} Cartan--Eilenberg resolution $L'^{\bullet\bullet}$ of $K'^\bullet$, there exists a morphism of bicomplexes $F: L^{\bullet\bullet} \rightarrow L'^{\bullet\bullet}$ that is compatible with $f$ and its augmentation, and if $f$ and $g$ are homotopic morphisms from $K^\bullet$ to $K'^\bullet$, then the corresponding morphisms from $L^{\bullet\bullet}$ to $L'^{\bullet\bullet}$ are also homotopic \emph{(loc. cit.)}.
 
-When $K^{\bullet}$ is \emph{inf limit} (resp. \emph{sup limit}), we can take $L^{\bullet\bullet}$ such that $L^{ij}=0$ for $i<i_0$ (resp. $i>i_0$)
-if $K^i=0$ for $i<i_0$ (resp. $i>i_0$) (M, XVII, 1.3).
+When $K^{\bullet}$ is \emph{bounded below} (resp. \emph{bounded above}), we can take $L^{\bullet\bullet}$ to be such that $L^{ij}=0$ for $i<i_0$ (resp. $i>i_0$) if $K^i=0$ for $i<i_0$ (resp. $i>i_0$) (M, XVII, 1.3).
 
-Suppose on the other hand that there exists a integer $n$ such that every object of $\cat{C}$ admits a \emph{injective resolution of length} $\leq n$;
+Suppose, on the other hand, that there exists a integer $n$ such that every object of $\cat{C}$ admits a \emph{injective resolution of length $\leq n$};
 then we can assume that we have $L^{ij}=0$ for $j>n$ (M, XVII, 1.4).
 \end{env}
 
 
 \begin{env}[11.4.3]
 \label{0.11.4.3}
-Now let T be an \emph{additive covariant functor} of $\cat{C}$ in a abelian category $\cat{C'}$.
-Given a complex $K^\bullet$ of $\C$ and an \emph{injective} resolution of Cartan-Eilenberg $L^{\bullet\bullet}$ of $K^{\bullet}$.
-Suppose that the (simple) complex defined by the bicomplex $T(\bcx{L})$ exists \sref{0.11.3.1};
-Then the two spectral sequences $'E(T(\bcx{L}))$ and $''E(T(\bcx{L}))$ of this bicomplex are called \emph{spectral sequences of hypercohomology} of $T$ with respect ot $\cx{K}$.
-By virtue of \sref{0.11.4.2} and \sref{0.11.4.3}, they only depend on complex $\cx{K}$ effectively;
-but not depend on the choice of the injective Cartan-Eilenberg resolution $\bcx{L}$.
-Furthermore, they depend \emph{functorially} on $\cx{K}$.
-They have the same abutment $\cx{\HH}(T(\bcx{L}))$ also called \emph{hypercohomology} of $T$ with respect to $\cx{K}$, and denoted $\cx{\RR} T(\cx{K})$.
-We show that the terms $E_2$ of prvious two spectral sequences are given by 
+Now let T be an \emph{additive covariant functor} from $\cat{C}$ to an abelian category $\cat{C'}$.
+Given a complex $K^\bullet$ of $\cat{C}$ and an \emph{injective} Cartan--Eilenberg resolution of $L^{\bullet\bullet}$ of $K^{\bullet}$, suppose that the (simple) complex defined by the bicomplex $T(L^{\bullet\bullet})$ exists \sref{0.11.3.1};
+then the two spectral sequences $'E(T(L^{\bullet\bullet}))$ and $''E(T(L^{\bullet\bullet}))$ of this bicomplex are called the \emph{hypercohomology spectral sequences} of $T$ with respect to $K^\bullet$;
+by \sref{0.11.4.2} and \sref{0.11.4.3}, they effectively only depend on the complex $K^\bullet$ effectively, not on the choice of the injective Cartan--Eilenberg resolution $L^{\bullet\bullet}$;
+furthermore, they depend \emph{functorially} on $K^\bullet$.
+They have the same abutment $\HH^\bullet(T(L^{\bullet\bullet}))$, also called the \emph{hypercohomology} of $T$ with respect to $K^\bullet$, and denoted by $\RR^\bullet T(K^\bullet)$.
+We can show that the $E_2$ terms of the two spectral sequences above are given by 
 \[
 \label{0.11.4.3.1}
-  'E_2^{pq} = H^p(\RR^q T(\cx{K}))
+  'E_2^{pq}
+  = H^p(\RR^q T(K^\bullet))
 \tag{11.4.3.1}
 \]
 \[
 \label{0.11.4.3.2}
-  ''E_2^{pq} = \RR^p T(H^q(\cx{K}))
+  ''E_2^{pq}
+  = \RR^p T(H^q(K^\bullet))
 \tag{11.4.3.2}
 \]
 \oldpage[0\textsubscript{III}]{34}
-$\RR^p T$ designating as usual the $p^e$ \emph{derived functor} of $T$ for $p\in Z$;
-$\RR^q T(\cx{K})$ designating the complexes $(\RR^q T(K^i))_{i\in Z}$.
-Unless expressly mentioned, we will henceforth asumme that every object of $\C$ is a subobject of an injective object of $\C$,
-so that the injection Cartan-Eilenberg resolutions exist for any complex object of $\C$.
-As $L^{ij}=0$ for $j<0$, the criteria of \sref{0.11.3.3} shows that the \emph{two} hypercohomology of spectral sequences of $T$ with respect to $\cx{K}$ exist 
-and are \emph{biregular} in the each of the following two cases:
-$1^\circ\ \cx{K}$ is the inf limit; $2^\circ$ Every object of $\C$ admits a injective resolution of length at most equal to an integer $n$ (Independent of the oject considered).
-Indeed, in the first case, we can suppose \sref{0.11.4.2} that there exists $i_0$ such that $L^{ij}=0$ for $i<i_0$.
-And, in the second case, there exist $j_1$ such that $L^{ij}=0$ for $j>j_1$;
-In each of the two cases, it is further clear that for a given $n$, there are only a finite number of pairs $(i,j)$ such that $L^{ij}\neq 0$ and $i+j=n$, which establishes our assertions.
+where $\RR^p T$ denotes, as usual, the $p$-th \emph{derived functor} of $T$ for $p\in Z$;
+$\RR^q T(K^\bullet)$ denotes the complexes $(\RR^q T(K^i))_{i\in Z}$.
+Unless explicitly otherwise mentioned, we will henceforth assume that every object of $\cat{C}$ is a subobject of an injective object of $\cat{C}$, so that injective Cartan--Eilenberg resolutions exist for any complex of $\cat{C}$.
+Since $L^{ij}=0$ for $j<0$, the criteria of \sref{0.11.3.3} show that the \emph{two} hypercohomology spectral sequences of $T$ with respect to $K^\bullet$ exist and are \emph{biregular} in the each of the following two cases:
+\begin{enumerate}
+  \item $K^\bullet$ is bounded below;
+  \item Every object of $\cat{C}$ admits an injective resolution of length at most $n$, for some integer $n$ independent of the object in question.
+\end{enumerate}
+Indeed, we can suppose, in the first case, that \sref{0.11.4.2} there exists $i_0$ such that $L^{ij}=0$ for $i<i_0$, and, in the second case, that there exists $j_1$ such that $L^{ij}=0$ for $j>j_1$;
+in each of these two cases, it is furthermore clear that, for any given $n$, there exist only a finite number of pairs $(i,j)$ such that $L^{ij}\neq 0$ and $i+j=n$, which proves our claims.
 
-When we assume that in $\C'$ the inductive limits filter exist and are exact 
-(which imply that in particular the existence in $\C'$ of infinite direct sums).
-Then the complex defined by the bicomplex $T(\bcx{L})$ exists, and criteion \sref{0.11.3.3} shows that the sequence $'E(T(\bcx{L}))$ is always \emph{regular}.
+If we assume that filtrant inductive limits exist and are exact in $\cat{C}'$ (which implies, in particular, the existence of infinite direct sums in $\cat{C}'$), then the complex defined by the bicomplex $T(L^{\bullet\bullet})$ exists, and criterion \sref{0.11.3.3} shows that the sequence $'E(T(L^{\bullet\bullet}))$ is always \emph{regular}.
 
-When $\cx{K}$ is a complex of which all the $K^i$ are zero except for a single $K^{i_0}$,
-$\RR^n T(\cx{K})$ is isomorphic to $\RR^{n-i_0} T(\cx{K})$, as follows immediately from the definitions by taking a Cartan-Eilenberg resolution $\bcx{L}$ such that $L^{ij}=0$ for $i\neq i_0$.
+If $K^\bullet$ is a complex such that all the $K^i$ are zero except for a single $K^{i_0}$, then
+$\RR^n T(K^\bullet)$ is isomorphic to $\RR^{n-i_0} T(K^\bullet)$, as follows immediately from the definitions by taking a Cartan--Eilenberg resolution $L^{\bullet\bullet}$ such that $L^{ij}=0$ for $i\neq i_0$.
 
-If $\cx{K}$ and $\cx{K'}$ are two complexes of $\C$. $f$, $g$ two morphism homotopes from $\cx{K}$ to $\cx{K'}$.
-Then the morphisms $\cx{\RR}T(\cx{K}) \rightarrow \cx{\RR}T(\cx{K'})$ deduced from $f$ and $g$ are identical,
-and it is the same for the morphisms of the spectral sequences of cohomology.
+If $K^\bullet$ and $K'^\bullet$ are two complexes of $\cat{C}$, and $f$ and $g$ are homotopic morphism from $K^\bullet$ to $K'^\bullet$, then the morphisms $\RR^\bullet T(K^\bullet) \rightarrow \RR^\bullet T(K'^\bullet)$ induced by $f$ and $g$ are identical, and the same is true for the morphisms of the cohomology spectral sequences.
 \end{env}
-
 
 \begin{proposition}[11.4.5]
 \label{0.11.4.5}
-Suppose that in $\C'$ the inductive limit filters exist and are exact.
+Suppose that in $\cat{C}'$ the inductive limit filters exist and are exact.
 If $\RR^n T(K^i) = 0$ for all $n>0$ and all $i\in Z$, we have functorial isomorphisms
 \[
 \label{0.11.4.5.1}
-  \RR^i T(\cx{K}) \simto \HH^i(T(\cx{K})), (i\in Z)
+  \RR^i T(K^\bullet) \simto \HH^i(T(K^\bullet)), (i\in Z)
 \tag{11.4.5.1}
 \]
 \end{proposition}
-Indeed, the only non-zero $E_2$ terms of the first spectral sequence \sref{0.11.4.3.1} are then $'E_2^{p0} = \HH^p(T(\cx{K}))$;
+Indeed, the only non-zero $E_2$ terms of the first spectral sequence \sref{0.11.4.3.1} are then $'E_2^{p0} = \HH^p(T(K^\bullet))$;
 In other words, this sequence is \emph{degenerate}; as it is regular \sref{0.11.4.4}, the conclusion follows from \sref{0.11.1.6}.
 
 
 \begin{env}[11.4.6]
 \label{0.11.4.6}
-Now consider, for example, a covariant bifunctor $(M, N) \rightarrow T(M, N)$ of $\C \times \C$ in $\C''$.
-$\C, \C', \C''$ are three abelian category; We assume, for simplicity, $T$ additive in each of its argument, 
-and furthermore that all object of $\C$ and all object of $\C'$ are subobjects of an injective object, 
-and that the inductive limit filters exist in $\C$ and are exact.
-We then define \emph{hypercohomology} of $T$ with respect to two complexes $\cx{K}, \cx{K'}$ of $\C$ and $\C'$ respectively, 
-with differential operators of degree +1, having $\cx{K}$ (resp. $\cx{K'}$) a injective Cartan-Eilenberg resolution $\bcx{L}$ (resp. $\bcx{L'}$);
-then $T(\bcx{L}, \bcx{L'})$ is a quadricomplex of $\C''$, which we consider as a \emph{bicomplex} of $\C'$ having degree of $T(L^{ij}, L'^{hk})$ the integers $i+h$ and $j+k$.
-The \emph{hypercohomology} of $T$ with respect to $\cx{K}$ and $\cx{K'}$ is by definitoin the cohomology $\cx{\HH}(T(\bcx{L}, \bcx{L'}))$ of this bicomplex 
-(in other words, that of the associated simple complex) denoted $\cx{\RR}T(\cx{K}, \cx{K'})$;
+Now consider, for example, a covariant bifunctor $(M, N) \rightarrow T(M, N)$ of $\cat{C} \times \cat{C}$ in $\cat{C}''$.
+$\cat{C}, \cat{C}', \cat{C}''$ are three abelian category; We assume, for simplicity, $T$ additive in each of its argument, 
+and furthermore that all object of $\cat{C}$ and all object of $\cat{C}'$ are subobjects of an injective object, 
+and that the inductive limit filters exist in $\cat{C}$ and are exact.
+We then define \emph{hypercohomology} of $T$ with respect to two complexes $K^\bullet, K'^\bullet$ of $\cat{C}$ and $\cat{C}'$ respectively, 
+with differential operators of degree~$+1$, having $K^\bullet$ (resp. $K'^\bullet$) a injective Cartan--Eilenberg resolution $L^{\bullet\bullet}$ (resp. $\bcx{L'}$);
+then $T(L^{\bullet\bullet}, \bcx{L'})$ is a quadricomplex of $\cat{C}''$, which we consider as a \emph{bicomplex} of $\cat{C}'$ having degree of $T(L^{ij}, L'^{hk})$ the integers $i+h$ and $j+k$.
+The \emph{hypercohomology} of $T$ with respect to $K^\bullet$ and $K'^\bullet$ is by definitoin the cohomology $\HH^\bullet(T(L^{\bullet\bullet}, \bcx{L'}))$ of this bicomplex 
+(in other words, that of the associated simple complex) denoted $\RR^\bullet T(K^\bullet, K'^\bullet)$;
 \oldpage[0\textsubscript{III}]{35}
 It is the abutment of two spectral sequences whose terms $E_2$ are given by
 \[
 \label{0.11.4.6.1}
-  'E_2^{pq} = \HH^p(\RR^q T(\cx{K}, \cx{K'}))
+  'E_2^{pq} = \HH^p(\RR^q T(K^\bullet, K'^\bullet))
 \tag{11.4.6.1}
 \]
 \[
 \label{0.11.4.6.2}
-  ''E_2^{pq} = \sum_{q'+q''=q}\RR^p T(\HH^{q'}{\cx{K}},\HH^{q''}{\cx{K'}}), (cf.\ M, XVII, 2).
+  ''E_2^{pq} = \sum_{q'+q''=q}\RR^p T(\HH^{q'}{K^\bullet},\HH^{q''}{K'^\bullet}), (cf.\ M, XVII, 2).
 \tag{11.4.6.2}
 \]
 
-Here $\RR^q T(\cx{K}, \cx{K'})$ is the bicomplex $(\RR^q T(K^i, K'^j))_{(i,j)\in Z\times Z}$ and the second member of \sref{0.11.4.6.1} is its cohomology when we consider it as a simple complex.
+Here $\RR^q T(K^\bullet, K'^\bullet)$ is the bicomplex $(\RR^q T(K^i, K'^j))_{(i,j)\in Z\times Z}$ and the second member of \sref{0.11.4.6.1} is its cohomology when we consider it as a simple complex.
 
 Furthermore, the first spectral sequence is always regular, and the two spectral sequences are biregular when there exists $n$ such that every object of $C$ and every object of $C'$ 
-admit an injective resolution of length $\leq n$, or when $\cx{K}$ and $\cx{K'}$ are inf limit;
-In the latter case, we can furthermore omit the hypothesis that the inductive limits exist in $\C$ and $\C'$.
+admit an injective resolution of length $\leq n$, or when $K^\bullet$ and $K'^\bullet$ are inf limit;
+In the latter case, we can furthermore omit the hypothesis that the inductive limits exist in $\cat{C}$ and $\cat{C}'$.
 
-If $\cx{K}, \cx{K'}$ are two other complexes of $\C$ and $\C'$ respectively.
-$f, g$ two morphism \emph{homotopes} from $\cx{K}$ to $\cx{K_1}$, 
-$f', g'$ two morphism \emph{homotopes} from $\cx{K'}$ to $\cx{K'_1}$.
-Then the morphisms $\cx{\RR} T(\cx{K}, \cx{K'}) \rightarrow \cx{\RR} T(\cx{K_1}, \cx{K'_1})$ 
+If $K^\bullet, K'^\bullet$ are two other complexes of $\cat{C}$ and $\cat{C}'$ respectively.
+$f, g$ two morphism \emph{homotopes} from $K^\bullet$ to $\cx{K_1}$, 
+$f', g'$ two morphism \emph{homotopes} from $K'^\bullet$ to $\cx{K'_1}$.
+Then the morphisms $\RR^\bullet  T(K^\bullet, K'^\bullet) \rightarrow \RR^\bullet  T(\cx{K_1}, \cx{K'_1})$ 
 deduced from $f$ and $f'$ on the one hand, from $g$ and $g'$ on the other hand, are identical, 
 and it is the same for the morphisms of hypercohomology of the spectral sequences.
 
@@ -613,20 +614,20 @@ We generalize easily to any additive covariant multifunctor.
 
 \begin{proposition}[11.4.7]
 \label{0.11.4.7}
-Suppose that for any injective object $\cat{I}$ of $\C$ (resp. $\cat{I'}$ of $\C'$), $\cat{A'}\rightsquigarrow \cat{T}(\cat{I}, \cat{A'})$ (resp. $\cat{A}\rightsquigarrow \cat{T}(\cat{A}, \cat{I'})$)
+Suppose that for any injective object $\cat{I}$ of $\cat{C}$ (resp. $\cat{I'}$ of $\cat{C}'$), $\cat{A'}\rightsquigarrow \cat{T}(\cat{I}, \cat{A'})$ (resp. $\cat{A}\rightsquigarrow \cat{T}(\cat{A}, \cat{I'})$)
 is an exact functor. Then, with the notation of \sref{0.11.4.6}, we have a canonical isomorphism
 \[
-  \cx{\RR}T(\cx{K}, \cx{K'}) \simto \cx{\HH}(T(\bcx{L}, \cx{K'})) \simto \cx{\HH}(T(\cx{K}, \bcx{L'})) 
+  \RR^\bullet T(K^\bullet, K'^\bullet) \simto \HH^\bullet(T(L^{\bullet\bullet}, K'^\bullet)) \simto \HH^\bullet(T(K^\bullet, \bcx{L'})) 
 \]
-where the last two terms are the cohomology of simple complexes defined by tricomplexes $T(\bcx{L}, \cx{K'})$ and $T(\cx{K}, \bcx{L})$ respectively.
+where the last two terms are the cohomology of simple complexes defined by tricomplexes $T(L^{\bullet\bullet}, K'^\bullet)$ and $T(K^\bullet, L^{\bullet\bullet})$ respectively.
 \end{proposition}
 
-Let us define for example the first of these isomorphisms. The quadricomplex $T(\bcx{L}, \bcx{L'})$ can be considered as a bicomplex, having degree of $T(L^{ij}, L'^{hk})$ the numbers $i+j$ and $h+k$.
-For each $h, \cx{L'^h}$ is a \emph{resolution} of $K'^h$, we have, for this bicomplex, by virtue of the hypothesis on $\cat{T}, \HH_\mathrm{II}^q(T(\bcx{L}, \bcx{L'}))=0$ for $q\neq 0$ and $\HH_\mathrm{II}^0(T(\bcx{L}, \bcx{L'})) = T(\bcx{L}, \cx{K'})$; 
+Let us define for example the first of these isomorphisms. The quadricomplex $T(L^{\bullet\bullet}, \bcx{L'})$ can be considered as a bicomplex, having degree of $T(L^{ij}, L'^{hk})$ the numbers $i+j$ and $h+k$.
+For each $h, \cx{L'^h}$ is a \emph{resolution} of $K'^h$, we have, for this bicomplex, by virtue of the hypothesis on $\cat{T}, \HH_\mathrm{II}^q(T(L^{\bullet\bullet}, \bcx{L'}))=0$ for $q\neq 0$ and $\HH_\mathrm{II}^0(T(L^{\bullet\bullet}, \bcx{L'})) = T(L^{\bullet\bullet}, K'^\bullet)$; 
 The first spectral sequence of this bicomplex is therefore \emph{degenerate}; As $L'^{hk}=0$ for $k<0$, this sequence is also regular \sref{0.11.3.3} and the conclusion therefore results from \sref{0.11.1.6}.
 
 We have similar results for a covariant multifunctor in any number of arguments $n$: in the calculation of the hypercohomology, it is not necessary to replace \emph{all} the complexes 
-by a Cartan-Eilenberg resolution, but only $n-1$ of them, provided that, when we fixed $n-1$ abitrary arguments by giving them \emph{injective} objects as values.
+by a Cartan--Eilenberg resolution, but only $n-1$ of them, provided that, when we fixed $n-1$ abitrary arguments by giving them \emph{injective} objects as values.
 The covariant functor in the remaining argument is \emph{exact}.
 
 
