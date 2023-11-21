@@ -6,7 +6,7 @@
 
 \begin{env}[11.1.1]
 \label{0.11.1.1}
-In the following, we use a more general notion of a spectral sequence than that defined in (T, 2.4); keeping the notations of (T, 2.4), we call a \emph{spectral sequence} in an abelian category $\cat{C}$ a system $E$ consisting of the following parts:
+In the following, we use a more general notion of a spectral sequence than that defined in (T, 2.4); keeping the notation of (T, 2.4), we call a \emph{spectral sequence} in an abelian category $\cat{C}$ a system $E$ consisting of the following parts:
 \begin{enumerate}
   \item[(a)] A family $(E_r^{pq})$ of objects of $\cat{C}$ defined for $p,q\in\bb{Z}$ and $r\geq 2$.
   \item[(b)] A family of morphisms $d_r^{pq}:E_r^{pq}\to E_r^{p+r,q-r+1}$ such that $d_r^{p+r,q-r+1}d_r^{pq}=0$.
@@ -16,7 +16,7 @@ In the following, we use a more general notion of a spectral sequence than that 
     \]
   \item[(c)] A family of isomorphisms $\alpha_r^{pq}:Z_{r+1}(E_r^{pq})/B_{r+1}(E_r^{pq})\isoto E_{r+1}^{pq}$.
 
-  We then define for $k\geq r+1$, by induction on $k$, the subobjects $B_k(E_r^{pq})$ and $Z_k(E_r^{pq})$ as the inverse images, under the canonical morphism $E_r^{pq}\to E_r^{pq}/B_{r+1}(E_r^{pq})$ of the subobjects of this quotuent identified via $\alpha_r^{pq}$ with the subobjects $B_k(E_{r+1}^{pq})$ and $Z_k(E_{r+1}^{pq})$ respectively.
+  We then define for $k\geq r+1$, by induction on $k$, the subobjects $B_k(E_r^{pq})$ and $Z_k(E_r^{pq})$ as the inverse images, under the canonical morphism $E_r^{pq}\to E_r^{pq}/B_{r+1}(E_r^{pq})$ of the subobjects of this quotient identified via $\alpha_r^{pq}$ with the subobjects $B_k(E_{r+1}^{pq})$ and $Z_k(E_{r+1}^{pq})$ respectively.
 It is clear that we then have, up to isomorphism,
   \[
   \label{0.11.1.1.1}
@@ -177,9 +177,9 @@ According to the conditions (a), (b), and (c) of \sref{0.11.1.1}, we have that s
 
 \begin{env}[11.2.1]
 \label{0.11.2.1}
-Given an abelian category $\cat{C}$, we will agree to denote by notations such as $K^\bullet$ the \emph{complexes $(K^i)_{i\in\bb{Z}}$} of objects of $\cat{C}$ whose differential is of degree $+1$, and by the notations such as $K_\bullet$ the complexes $(K_i)_{i\in\bb{Z}}$ of objects of $\cat{C}$ whose differential is of degree $-1$.
+Given an abelian category $\cat{C}$, we will agree to denote by notation such as $K^\bullet$ the \emph{complexes $(K^i)_{i\in\bb{Z}}$} of objects of $\cat{C}$ whose differential is of degree $+1$, and by the notation such as $K_\bullet$ the complexes $(K_i)_{i\in\bb{Z}}$ of objects of $\cat{C}$ whose differential is of degree $-1$.
 To each complex $K^\bullet=(K^i)$ whose differential $d$ is of degree $+1$, we can associate a complex $K_\bullet'=(K_i')$ by setting $K_i'=K^{-i}$, the differential $K_i'\to K_{i-1}'$ being the operator $d:K^{-i}\to K^{-i-1}$; and \emph{vice versa}, which, depending on the circumstances, will allow one to consider either one of the types of complexes and translate  any result from one type into results for the other.
-We similarly denote by notations such as $K^{\bullet\bullet}=(K^{ij})$ (resp. $K_{\bullet\bullet}=(K_{ij})$) the \emph{bicomplexes} (or \emph{double complexes}) of objects of $\cat{C}$ in which the \emph{two} differntials are of degree $+1$ (resp. $-1$); we can still pass from one type to the other by changing the signs of the indices, and we have similar notations and remarks for any multicomplexes.
+We similarly denote by notation such as $K^{\bullet\bullet}=(K^{ij})$ (resp. $K_{\bullet\bullet}=(K_{ij})$) the \emph{bicomplexes} (or \emph{double complexes}) of objects of $\cat{C}$ in which the \emph{two} differentials are of degree $+1$ (resp. $-1$); we can still pass from one type to the other by changing the signs of the indices, and we have similar notation and remarks for any multicomplexes.
 The notation $K^\bullet$ and $K_\bullet$ will also be used for \emph{$\bb{Z}$-graded objects} of $\cat{C}$, which are not necessarily complexes (they can be considered as such for the \emph{zero} differentials); for example, we write $\HH^\bullet(K^\bullet)=(\HH^i(K^\bullet))_{i\in\bb{Z}}$ for the \emph{cohomology} of a complex $K^\bullet$ whose differential is of degree $+1$, and $H_\bullet(K_\bullet)=(\HH_i(K_\bullet))_{i\in\bb{Z}}$ for the \emph{homology} of a complex $K_\bullet$ whose differential is of degree $-1$; when we pass from $K^\bullet$ to $K_\bullet'$ by the method described above, we have $\HH_i(K_\bullet')=\HH^{-i}(K^\bullet)$.
 
 Recall in this case that for a complex $K^\bullet$ (resp. $K_\bullet$), we will write in general $Z^i(K^\bullet)=\Ker(K^i\to K^{i+1})$ (``object of cocycles'') and $B^i(K^\bullet)=\Im(K^{i-1}\to K^i)$ (``object of coboundaries'') (resp. $Z_i(K_\bullet)=\Ker(K_i\to K_{i-1})$ (``object of cycles'') and $B_i(K_\bullet)=\Im(K_{i+1}\to K_i)$ (``object of boundaries'')) so that $\HH^i(K^\bullet)=Z^i(K^\bullet)/B^i(K^\bullet)$ (resp. $\HH_i(K_\bullet)=Z_i(K_\bullet)/B_i(K_\bullet)$).
@@ -252,43 +252,60 @@ When the filtration of $K^\bullet$ is regular and exhaustive, and filtered induc
 
 \begin{env}[11.3.1]
 \label{0.11.3.1}
-With regard the conventions for bicomplexes, we follow those of~(T,~2.4) rather than those of~(M), the two differentials $d'$ and $d''$ (of degree~$+1$) of such a bicomplex $K^{\bullet\bullet}=(K^{ij})$ being thus assumed to be \emph{permutable}.
-Suppose that \emph{one} of the following two conditions is satisfied: 1st.~\emph{Infinite direct sums} exist in $\cat{C}$; 2nd.~For all $n\in\bb{Z}$, there is only a \emph{finite} number of pairs $(p,q)$ such that $p+q=n$ and $K^{pq}\neq 0$.
-Then, the bicomplex $K^{\bullet\bullet}$ defines a (simple) \emph{complex} $(K^{\prime n})_{n\in\bb{Z}}$ with $K^{\prime n}=\sum_{i+j=n}K^{ij}$, the differential $d$ (of degree~$+1$) of this complex being given by $dx=d'x+(-1)^i d''x$ for $x\in K^{ij}$.
-When we later speak of the spectral sequence of a (simple) \emph{complex} that is \emph{defined by a bicomplex $K^{\bullet\bullet}$}, it will always be understood that of the above conditions is satisfied.
+With regard the conventions for bicomplexes, we follow those of~(T,~2.4) rather than those of~(M), the two differentials $d'$ and $d''$ (of degree~$+1$) of such a bicomplex $K^{\bullet\bullet}=(K^{ij})$ thus being assumed to be \emph{permutable}.
+Suppose that \emph{one} of the following two conditions is satisfied:
+\begin{enumerate}
+   \item \emph{Infinite direct sums} exist in $\cat{C}$;
+   \item For all $n\in\bb{Z}$, there is only a \emph{finite} number of pairs $(p,q)$ such that $p+q=n$ and $K^{pq}\neq 0$.
+ \end{enumerate}
+Then the bicomplex $K^{\bullet\bullet}$ defines a (simple) \emph{complex} $(K^{\prime n})_{n\in\bb{Z}}$ with $K^{\prime n}=\sum_{i+j=n}K^{ij}$, the differential $d$ (of degree~$+1$) of this complex being given by $dx=d'x+(-1)^i d''x$ for $x\in K^{ij}$.
+When we later speak of the spectral sequence of a (simple) \emph{complex} that is \emph{defined by a bicomplex $K^{\bullet\bullet}$}, it will always be understood that one of the above conditions is satisfied.
 We adopt the analogous conventions for multicomplexes.
 
-We denote by $K^{i,\bullet}$ (resp.~$K^{\bullet,j}$) the simple complex $(K^{ij})_{j\in\bb{Z}}$ (resp.~$(K^{ij})_{i\in\bb{Z}}$), by $Z_\text{II}^p(K^{i,\bullet})$, $B_\text{II}^p(K^{i,\bullet})$, $\HH_\text{II}^p(K^{i,\bullet})$ (resp.~$Z_\text{I}^p(K^{\bullet,j})$, $B_\text{I}^p(K^{\bullet,j})$, $\HH_\text{I}^p(K^{\bullet,j})$) its $p$ objects of cocycles, of coboundaries, and of cohomology, respectively; the differential $d':K^{i,\bullet}\to K^{i+1,\bullet}$ is a morphism of complexes, which thus gives an operator on the cocycles, coboundaries, and cohomology,
+We denote by $K^{i,\bullet}$ (resp.~$K^{\bullet,j}$) the simple complex $(K^{ij})_{j\in\bb{Z}}$ (resp.~$(K^{ij})_{i\in\bb{Z}}$), by $Z_\mathrm{II}^p(K^{i,\bullet})$, $B_\mathrm{II}^p(K^{i,\bullet})$, $\HH_\mathrm{II}^p(K^{i,\bullet})$ (resp.~$Z_\mathrm{I}^p(K^{\bullet,j})$, $B_\mathrm{I}^p(K^{\bullet,j})$, $\HH_\mathrm{I}^p(K^{\bullet,j})$) its $p$ objects of cocycles, of coboundaries, and of cohomology, respectively;
+the differential $d':K^{i,\bullet}\to K^{i+1,\bullet}$ is a morphism of complexes, which thus gives an operator on the cocycles, coboundaries, and cohomology,
 \begin{align*}
-  d'&:Z_\text{II}^p(K^{i,\bullet})\to Z_\text{II}^p(K^{i+1,\bullet}),\\
-  d'&:B_\text{II}^p(K^{i,\bullet})\to B_\text{II}^p(K^{i+1,\bullet}),\\
-  d'&:\HH_\text{II}^p(K^{i,\bullet})\to\HH_\text{II}^p(K^{i+1,\bullet}),
+  d'&:Z_\mathrm{II}^p(K^{i,\bullet})\to Z_\mathrm{II}^p(K^{i+1,\bullet})
+\\d'&:B_\mathrm{II}^p(K^{i,\bullet})\to B_\mathrm{II}^p(K^{i+1,\bullet})
+\\d'&:\HH_\mathrm{II}^p(K^{i,\bullet})\to\HH_\mathrm{II}^p(K^{i+1,\bullet})
 \end{align*}
-and it is clear that for these operators, $(Z_\text{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$, $(B_\text{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$, and $(\HH_\text{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$ are complexes; we denote the complex $(\HH_\text{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$ by $\HH_\text{II}^p(K^{\bullet\bullet})$, its $q$ objects of cocycles, coboundaries, and cohomology by $Z_\text{I}^q(\HH_\text{II}^p(K^{\bullet\bullet}))$, $B_\text{I}^q(\HH_\text{II}^p(K^{\bullet\bullet}))$, and $\HH_\text{I}^q(\HH_\text{II}^p(K^{\bullet\bullet}))$.
-We similarly define the complexes $\HH_\text{I}^p(K^{\bullet\bullet})$ and their cohomology objects $\HH_\text{II}^q(\HH_\text{I}^p(K^{\bullet\bullet}))$.
-Recall on the other hand that $\HH^n(K^{\bullet\bullet})$ denotes the $n$ object of the cohomology of the \emph{(simple)} complex defined by $K^{\bullet\bullet}$.
+and it is clear that for these operators, $(Z_\mathrm{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$, $(B_\mathrm{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$, and $(\HH_\mathrm{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$ are complexes;
+we denote the complex $(\HH_\mathrm{II}^p(K^{i,\bullet}))_{i\in\bb{Z}}$ by $\HH_\mathrm{II}^p(K^{\bullet\bullet})$, and its $q$ objects of cocycles, coboundaries, and cohomology by $Z_\mathrm{I}^q(\HH_\mathrm{II}^p(K^{\bullet\bullet}))$, $B_\mathrm{I}^q(\HH_\mathrm{II}^p(K^{\bullet\bullet}))$, and $\HH_\mathrm{I}^q(\HH_\mathrm{II}^p(K^{\bullet\bullet}))$.
+We similarly define the complexes $\HH_\mathrm{I}^p(K^{\bullet\bullet})$ and their cohomology objects $\HH_\mathrm{II}^q(\HH_\mathrm{I}^p(K^{\bullet\bullet}))$.
+Recall, however, that $\HH^n(K^{\bullet\bullet})$ denotes the $n$ object of the cohomology of the \emph{(simple)} complex defined by $K^{\bullet\bullet}$.
 \end{env}
 
 \begin{env}[11.3.2]
 \label{0.11.3.2}
-On the complex defined by a bicomplex $K^{\bullet\bullet}$, we can consider two canonical filtrations $(F_\text{I}^p(K^{\bullet\bullet}))$ and $(F_\text{II}^p(K^{\bullet\bullet}))$ given by
+On the complex defined by a bicomplex $K^{\bullet\bullet}$, we can consider two canonical filtrations, $(F_\mathrm{I}^p(K^{\bullet\bullet}))$ and $(F_\mathrm{II}^p(K^{\bullet\bullet}))$, given by
 \[
 \label{0.11.3.2.1}
-  F_\text{I}^p(K^{\bullet\bullet})=\left(\sum_{i+j=n,i\geq p}K^{ij}\right)_{n\in\bb{Z}}\quad\text{and}\quad F_\text{II}^p(K^{\bullet\bullet})=\left(\sum_{i+j=n,j\geq p}K^{ij}\right)_{n\in\bb{Z}},
+  F_\mathrm{I}^p(K^{\bullet\bullet})
+  = \left(\sum_{i+j=n,i\geq p}K^{ij}\right)_{n\in\bb{Z}}
+  \quad\text{and}\quad
+  F_\mathrm{II}^p(K^{\bullet\bullet})
+  = \left(\sum_{i+j=n,j\geq p}K^{ij}\right)_{n\in\bb{Z}}
   \tag{11.3.2.1}
 \]
 \oldpage[0\textsubscript{III}]{30}
-which, by definition, are graded subobjects of the (simple) complex define by $K^{\bullet\bullet}$, and thus make this complex a filtered complex; moreover, is is clear that these filtrations are \emph{exhaustive} and \emph{separated}.
+which, by definition, are graded subobjects of the (simple) complex defined by $K^{\bullet\bullet}$, and thus make this complex a filtered complex;
+moreover, is is clear that these filtrations are \emph{exhaustive} and \emph{separated}.
 
-There corresponds to each of these filtrations a spectral sequence~\sref{0.11.2.2}; we denote by $'E(K^{\bullet\bullet})$ and $''E(K^{\bullet\bullet})$ the spectral sequences corresponding to $(F_\text{I}^p(K^{\bullet\bullet}))$ and $(F_\text{II}^p(K^{\bullet\bullet}))$ respectively, called the \emph{spectral sequence of the bicomplex $K^{\bullet\bullet}$}, and both having as their abutment the cohomology $(\HH^n(K^{\bullet\bullet}))$.
-We show in addition~(M,~XV,~6) that we have
+There corresponds to each of these filtrations a spectral sequence~\sref{0.11.2.2};
+we denote by $'E(K^{\bullet\bullet})$ and $''E(K^{\bullet\bullet})$ the spectral sequences corresponding to $(F_\mathrm{I}^p(K^{\bullet\bullet}))$ and $(F_\mathrm{II}^p(K^{\bullet\bullet}))$ respectively, called the \emph{spectral sequence of the bicomplex $K^{\bullet\bullet}$}, and both having as their abutment the cohomology $(\HH^n(K^{\bullet\bullet}))$.
+We can further show~(M,~XV,~6) that we have
 \[
 \label{0.11.3.2.2}
-  'E_2^{pq}(K^{\bullet\bullet})=\HH_\text{I}^p(\HH_\text{II}^p(K^{\bullet\bullet})),\quad ''E_2^{pq}(K^{\bullet\bullet}))=\HH_\text{II}^p(\HH_\text{I}^p(K^{\bullet\bullet})).
+  'E_2^{pq}(K^{\bullet\bullet})
+  = \HH_\mathrm{I}^p(\HH_\mathrm{II}^p(K^{\bullet\bullet}))
+  \quad\text{and}\quad
+  ''E_2^{pq}(K^{\bullet\bullet}))
+  = \HH_\mathrm{II}^p(\HH_\mathrm{I}^p(K^{\bullet\bullet})).
   \tag{11.3.2.2}
 \]
 
-Every morphism $u:K^{\bullet\bullet}\to K^{\prime\bullet\bullet}$ of bicomplexes is \emph{ipso facto} compatible with the filtrations of the same type of $K^{\bullet\bullet}$ and $K^{\prime\bullet\bullet}$, thus define a morphism for each of the two spectral sequences; in addition, two \emph{homotopic} morphisms define a homotopy \emph{of order $\leq 1$} of the corresponding filtered (simple) complexes, thus the \emph{same} morphism for each of the two spectral sequences~(M,~XV,~6.1).
+Every morphism $u:K^{\bullet\bullet}\to K^{\prime\bullet\bullet}$ of bicomplexes is \emph{ipso facto} compatible with the filtrations of the same type of $K^{\bullet\bullet}$ and $K^{\prime\bullet\bullet}$, thus defines a morphism for each of the two spectral sequences;
+in addition, two \emph{homotopic} morphisms define a homotopy \emph{of order $\leq 1$} of the corresponding filtered (simple) complexes, thus the \emph{same} morphism for each of the two spectral sequences~(M,~XV,~6.1).
 \end{env}
 
 \begin{proposition}[11.3.3]
@@ -303,27 +320,28 @@ Let $K^{\bullet\bullet}=(K^{ij})$ be a bicomplex in an abelian category $\cat{C}
 \end{proposition}
 
 \begin{proof}
-The proposition follows immediately from the definitions~\sref{0.11.1.3} and from~\sref{0.11.2.4}, 
-as well as of the following observations relating to the filtration $F_\text{I}$
-(and similar observations that we can deduce for $F_\text{II}$ by exchange the roles of the two indices in $K^{\bullet\bullet}$):
+The proposition follows immediately from the definitions~\sref{0.11.1.3} and from~\sref{0.11.2.4}, as well as from the following observations relating to the filtration $F_\mathrm{I}$ (and similar observations that we can deduce for $F_\mathrm{II}$ by exchange the roles of the two indices in $K^{\bullet\bullet}$):
 \begin{enumerate}
-  \item[{$1^{\circ}$}] If there exists $i_0$ such that $K^{ij}=0$ for $i>i_0$, the filtration $F_\text{I}(K^{\bullet\bullet})$ is \emph{discrete}.
-  \item[{$2^{\circ}$}] If there exists $i_0$ such that $K^{ij}=0$ for $i<i_0$, the filtration $F_\text{I}(K^{\bullet\bullet})$ is \emph{co-discrete}.
-  We can immediate deduce that it is the same for the corresponding filtration $F_\text{I}(\HH^n(K^{\bullet\bullet}))$ for all $n$. 
-  Furthermore, the definition of the $B_{r}^{pq}$ corresponding to the filtration $F_\text{I}(K^{\bullet\bullet})$ \sref{0.11.2.2}
-  shows that for any pair $(p,q)$, the sequence $(B_{r}^{pq})_{r\leq{2}}$ is stable.
-  \item[{$3^{\circ}$}] If there exists $j_0$ such that $K^{ij}=0$ for $j<j_0$, we have 
-  \[
-    F_\text{I}^{p+r}(K^{\bullet\bullet}) \cap (\sum_{i+j=n}K^{ij}) = 0
-  \]
-  as soon as $p+r+j_{0}>n$, so $Z_{r}^{pq} = Z_\infty(E_2^{pq})$ for $r>q-j_{0}+1$.
-  On the other hand, $\HH^{n}(F_\text{I}^{p}(K^{\bullet\bullet})) = 0$ for $p>n-j_{0}+1$.
-  \item[{$4^{\circ}$}] If there exists $j_0$ such that $K^{ij}=0$ for $j>j_0$, we have 
-  \[
-    F_\text{I}^{p-r+1}(K^{\bullet\bullet}) \cap (\sum_{i+j=n}K^{ij}) = \sum_{i+j=n}K^{ij}
-  \]
-  as soon as $p-r+1+j_{0}<n$, so $B_{r}^{pq} = B_\infty(E_2^{pq})$ for $r<j_{0}-q+1$.
-  On the other hand, $\HH^{n}(F_\text{I}^{p}(K^{\bullet\bullet})) = \HH^{n}(K^{\bullet\bullet})$ for $p+j_{0}<n-1$.
+  \item[{$1^{\circ}$}] If there exists $i_0$ such that $K^{ij}=0$ for $i>i_0$, then the filtration $F_\mathrm{I}(K^{\bullet\bullet})$ is \emph{discrete}.
+  \item[{$2^{\circ}$}] If there exists $i_0$ such that $K^{ij}=0$ for $i<i_0$, then the filtration $F_\mathrm{I}(K^{\bullet\bullet})$ is \emph{co-discrete}.
+    We can then immediate deduce that it is the same for the corresponding filtration $F_\mathrm{I}(\HH^n(K^{\bullet\bullet}))$ for all $n$. 
+    Furthermore, the definition of the $B_{r}^{pq}$ corresponding to the filtration $F_\mathrm{I}(K^{\bullet\bullet})$ \sref{0.11.2.2} shows that for any pair $(p,q)$, the sequence $(B_{r}^{pq})_{r\leq{2}}$ is stable.
+  \item[{$3^{\circ}$}] If there exists $j_0$ such that $K^{ij}=0$ for $j<j_0$, then we have 
+    \[
+      F_\mathrm{I}^{p+r}(K^{\bullet\bullet})
+      \cap (\sum_{i+j=n}K^{ij})
+      = 0
+    \]
+    as soon as $p+r+j_{0}>n$, so $Z_{r}^{pq} = Z_\infty(E_2^{pq})$ for $r>q-j_{0}+1$.
+    On the other hand, $\HH^{n}(F_\mathrm{I}^{p}(K^{\bullet\bullet})) = 0$ for $p>n-j_{0}+1$.
+  \item[{$4^{\circ}$}] If there exists $j_0$ such that $K^{ij}=0$ for $j>j_0$, then we have 
+    \[
+      F_\mathrm{I}^{p-r+1}(K^{\bullet\bullet})
+      \cap (\sum_{i+j=n}K^{ij})
+      = \sum_{i+j=n}K^{ij}
+    \]
+    as soon as $p-r+1+j_{0}<n$, so $B_{r}^{pq} = B_\infty(E_2^{pq})$ for $r<j_{0}-q+1$.
+    On the other hand, $\HH^{n}(F_\mathrm{I}^{p}(K^{\bullet\bullet})) = \HH^{n}(K^{\bullet\bullet})$ for $p+j_{0}<n-1$.
 \end{enumerate}
 \end{proof}
 
@@ -331,56 +349,55 @@ as well as of the following observations relating to the filtration $F_\text{I}$
 \label{0.11.3.4}
 \oldpage[0\textsubscript{III}]{31}
 Suppose that the bicomplex $K^{\bullet\bullet}=(K^{ij})$ is such that $K^{ij}=0$ for $i<0$ or $j<0$.
-We know that we can define for all $p \in Z$ a canonical "edge-homomorphism".
-  \[
+We know that we can define, for all $p \in Z$, a canonical ``edge-homomorphism''.
+\[
 \label{0.11.3.4.1}
-    'E_2^{p0}(K^{\bullet\bullet}) \rightarrow \HH^{p}(K^{\bullet\bullet})
+  'E_2^{p0}(K^{\bullet\bullet})
+  \rightarrow \HH^{p}(K^{\bullet\bullet})
 \tag{11.3.4.1}
-  \]
+\]
 (M, XV, 6).
-Recall that this is due to, on the one hand, we have in the spectral sequence
-$'E(K^{\bullet\bullet})$, $Z_r^{p0}=Z_{\text{I}}^{p}(Z_{\text{II}}^{0}(K^{\bullet\bullet}))$ for $2\leq r \leq +\infty$, 
-and on the other hand, we have that $\HH^{p}(F_\text{I}^{p+1}(K^{\bullet\bullet})) = 0$, 
-so that the isomorphism $\beta^{p0}:\ 'E_\infty^{p0} \xrightarrow[]{~} \HH^{p}(F_1^p)/\HH^{p}(F_1^{p+1})$
-gives a homomorphism $'E_\infty^{p0} \rightarrow \HH^{p}(F_1^p(K^{\bullet\bullet})) \rightarrow \HH^{p}(K^{\bullet\bullet})$; 
-The equality of all the $Z_r^{p0}$ allows us to define a canonical homomorphism $'E_r^{p0} \rightarrow 'E_s^{p0}$ for $r \leq s$, 
-and in particular a homomorphism $'E_2^{p0} \rightarrow 'E_\infty^{p0}$, from the composition of the edge-homomorphism
-$'E_2^{p0}(K^{\bullet\bullet}) \rightarrow \HH^{p}(K^{\bullet\bullet})$;
-Furthermore, we can immediately verify that, in the class $\mod B_2^{p0}$ of an element $z \in Z_\text{II}^0(K^{\bullet\bullet}) \subset K^{p0}$ such that $d'z=0$, 
-the edge-homomorphism thus defined corressponds in $'E_{\infty}^{p0}$, to the class of $\mod B_\infty^{p0}$, 
-then to the latter, the cohomology class of $z$ in $H^p(K^{\bullet\bullet})$.
-We therefore finally see that the \emph{edge-homomorphism \sref{0.11.3.4.1} comes from, by passing to cohomology, the canonical injection} $Z_\text{II}^0(K^{\bullet\bullet}) \rightarrow K^{\bullet\bullet}$ 
-(where $K^{\bullet\bullet}$ is considered as simple complex).
-We naturally intepret the edge-homomorphism in the same way 
-  \[
+Recall that this is due to, on the one hand, the spectral sequence
+$'E(K^{\bullet\bullet})$, since $Z_r^{p0}=Z_{\mathrm{I}}^{p}(Z_{\mathrm{II}}^{0}(K^{\bullet\bullet}))$ for $2\leq r \leq +\infty$, and on the other hand, that $\HH^{p}(F_\mathrm{I}^{p+1}(K^{\bullet\bullet})) = 0$, so that the isomorphism $\beta^{p0}:\ 'E_\infty^{p0} \simto \HH^{p}(F_1^p)/\HH^{p}(F_1^{p+1})$ gives a homomorphism $'E_\infty^{p0} \rightarrow \HH^{p}(F_1^p(K^{\bullet\bullet})) \rightarrow \HH^{p}(K^{\bullet\bullet})$.
+The equality of all the $Z_r^{p0}$ allows us to define a canonical homomorphism $'E_r^{p0} \rightarrow 'E_s^{p0}$ for $r \leq s$, and, in particular, a homomorphism $'E_2^{p0} \rightarrow 'E_\infty^{p0}$, from the composition of the edge-homomorphism $'E_2^{p0}(K^{\bullet\bullet}) \rightarrow \HH^{p}(K^{\bullet\bullet})$.
+Furthermore, we can immediately verify that, in the class $\mod B_2^{p0}$ of an element $z \in Z_\mathrm{II}^0(K^{\bullet\bullet}) \subset K^{p0}$ such that $d'z=0$, the edge-homomorphism thus defined associates, to the class of $\mod B_\infty^{p0}$ in $'E_{\infty}^{p0}$, the cohomology class of $z$ in $H^p(K^{\bullet\bullet})$.
+We therefore finally see that the \emph{edge-homomorphism} \sref{0.11.3.4.1} \emph{comes from, by passing to cohomology, the canonical injection} $Z_\mathrm{II}^0(K^{\bullet\bullet}) \rightarrow K^{\bullet\bullet}$  (where $K^{\bullet\bullet}$ is considered as simple complex).
+We naturally interpret the edge-homomorphism in the same way 
+\[
 \label{0.11.3.4.2}
-    ''E_2^{p0}(K^{\bullet\bullet}) \rightarrow \HH^{p}(K^{\bullet\bullet})
+  ''E_2^{p0}(K^{\bullet\bullet})
+  \rightarrow \HH^{p}(K^{\bullet\bullet})
 \tag{11.3.4.2}
-  \]
-as coming from the canonical injection $Z_\text{I}^0(K^{\bullet\bullet}) \rightarrow K^{\bullet\bullet}$ .
+\]
+as coming from the canonical injection $Z_\mathrm{I}^0(K^{\bullet\bullet}) \rightarrow K^{\bullet\bullet}$.
 \end{env}
+
 \begin{env}[11.3.5]
 \label{0.11.3.5}
-Now let $K_{\bullet\bullet} = (K_{ij})$ a bicomplex of $\cat{C}$ whose two differential operators are of degress -1.
-We will then write 
-$K_{i, \bullet}$ (resp. $K_{\bullet, j}$) the simple complex $(K_{ij})_{j\in Z}$ (resp. $(K_{ij})_{i\in Z}$), 
-$\HH_{p}^\text{II}(K_{i, \bullet})$ (resp. $\HH_{p}^\text{I}(K_{\bullet, j})$) are $p^e$ homology object,
-$\HH_{p}^\text{II}(K_{\bullet\bullet})$ (resp. $\HH_{p}^\text{I}(K_{\bullet\bullet})$) the complex $(\HH_{p}^\text{II}(K_{i, \bullet}))_{i \in Z}$ (resp. $(\HH_{p}^\text{I}(K_{\bullet, j}))_{j \in Z}$), $(\HH_{p}^\text{II}(K_{i, \bullet}))_{i \in Z}$, 
-$\HH_q^\text{I}(\HH_{p}^\text{II}(K_{\bullet\bullet}))$ (resp. $\HH_q^\text{II}(\HH_{p}^\text{I}(K_{\bullet\bullet}))$) are $q^e$ homology object;
-analogous notations for the objects of cycles and objects of boundaries;
-Finally, we will designate $\HH_n(K_{\bullet\bullet})$ (when it exists) the $n^e$ homology object of simple complex (with a differential operator of degree -1) defined over $K_{\bullet\bullet}$.
-Let $K'^{\bullet\bullet} = (K^{ij})$ with $K'^{\bullet\bullet} = (K_{-i,-j})$ be the bicomplex differential operator of degress +1 associated to $K_{\bullet\bullet}$.
-By definition, the \emph{special sequences} of $K_{\bullet\bullet}$ are those of $K'^{\bullet\bullet}$, that we have written as $'E(K_{\bullet\bullet})$ and $''E(K_{\bullet\bullet})$, 
-where, however, we change the notations, by putting
-  \[
-    'E_{pq}^{r}(K_{\bullet\bullet}) = 'E_{r}^{-p,-q}(K'^{\bullet\bullet}), ''E_{pq}^{r}(K_{\bullet\bullet}) = ''E_{r}^{-p,-q}(K'^{\bullet\bullet}), 
-  \]
-for $2\leq r \leq \infty$. With these notations, we have
-  \[
-    'E_{pq}^{2}(K_{\bullet\bullet}) = \HH_{p}^\text{I}(\HH_{q}^\text{II}(K_{\bullet\bullet})), 'E_{pq}^{2}(K_{\bullet\bullet}) = \HH_{q}^\text{II}(\HH_{p}^\text{I}(K_{\bullet\bullet})).
-  \]
-To avoid sign errors, in general, it will be preferable to return to the complex $K'^{\bullet\bullet}$ for the relations between these spectral and their abutment.
-However, note the criteria corresponding to \sref{0.11.3.3}.
+Now let $K_{\bullet\bullet} = (K_{ij})$ be a bicomplex in $\cat{C}$ whose two differential operators are of degrees~$-1$.
+We then write $K_{i,\bullet}$ (resp. $K_{\bullet,j}$) to mean the simple complex $(K_{ij})_{j\in Z}$ (resp. $(K_{ij})_{i\in Z}$), $\HH_{p}^\mathrm{II}(K_{i, \bullet})$ (resp. $\HH_{p}^\mathrm{I}(K_{\bullet, j})$) to mean the $p$-th homology object, $\HH_{p}^\mathrm{II}(K_{\bullet\bullet})$ (resp. $\HH_{p}^\mathrm{I}(K_{\bullet\bullet})$) to mean the complex $(\HH_{p}^\mathrm{II}(K_{i, \bullet}))_{i \in Z}$ (resp. $(\HH_{p}^\mathrm{I}(K_{\bullet, j}))_{j \in Z}$), and $\HH_q^\mathrm{I}(\HH_{p}^\mathrm{II}(K_{\bullet\bullet}))$ (resp. $\HH_q^\mathrm{II}(\HH_{p}^\mathrm{I}(K_{\bullet\bullet}))$) to mean the $q$-th homology object;
+we use analogous notation for the objects of cycles and objects of boundaries;
+finally, we will denote by $\HH_n(K_{\bullet\bullet})$ the $n$-th homology object (when it exists) of the simple complex (with a differential operator of degree~$-1$) defined by $K_{\bullet\bullet}$.
+Let $K'^{\bullet\bullet} = (K^{ij})$ with $K'^{\bullet\bullet} = (K_{-i,-j})$ be the bicomplex with differential operators of degrees~$+1$ associated to $K_{\bullet\bullet}$.
+By definition, the \emph{spectral sequences} of $K_{\bullet\bullet}$ are those of $K'^{\bullet\bullet}$, that we write as $'E(K_{\bullet\bullet})$ and $''E(K_{\bullet\bullet})$, where, however, we change the notation, by putting
+\[
+  'E_{pq}^{r}(K_{\bullet\bullet})
+  = 'E_{r}^{-p,-q}(K'^{\bullet\bullet})
+  \quad\text{and}\quad
+  ''E_{pq}^{r}(K_{\bullet\bullet})
+  = ''E_{r}^{-p,-q}(K'^{\bullet\bullet}), 
+\]
+for $2\leq r \leq \infty$.
+With this notation, we have
+\[
+  'E_{pq}^{2}(K_{\bullet\bullet})
+  = \HH_{p}^\mathrm{I}(\HH_{q}^\mathrm{II}(K_{\bullet\bullet}))
+  \quad\text{and}\quad
+  'E_{pq}^{2}(K_{\bullet\bullet})
+  = \HH_{q}^\mathrm{II}(\HH_{p}^\mathrm{I}(K_{\bullet\bullet})).
+\]
+To avoid sign errors, it will be preferable in general to return to the complex $K'^{\bullet\bullet}$ for the relations between these spectral sequences and their abutments.
+We note, however, the criteria corresponding to \sref{0.11.3.3}:
 \end{env}
 
 \begin{env}[11.3.6]
@@ -388,13 +405,16 @@ However, note the criteria corresponding to \sref{0.11.3.3}.
 \oldpage[0\textsubscript{III}]{32}
 The spectral sequences $'E(K_{\bullet\bullet})$ and $''E(K_{\bullet\bullet})$ are \emph{biregular} in the following cases:
 \begin{enumerate}
-  \item[(a)] There exists $i_0$ and $j_0$ such that $K_{ij}=0$ for $i>i_0$ and $j>j_0$ (resp. for $i<i_0$ and $j<j_0$);
-  \item[(b)] There exists $i_0$ and $i_1$ such that $K_{ij}=0$ for $i<i_0$ and $i>i_1$;
-  \item[(c)] There exists $j_0$ and $j_1$ such that $K_{ij}=0$ for $j<j_0$ and $j>j_1$.
+  \item[(a)] There exist $i_0$ and $j_0$ such that $K_{ij}=0$ for $i>i_0$ and $j>j_0$ (resp. for $i<i_0$ and $j<j_0$);
+  \item[(b)] There exist $i_0$ and $i_1$ such that $K_{ij}=0$ for $i<i_0$ and $i>i_1$;
+  \item[(c)] There exist $j_0$ and $j_1$ such that $K_{ij}=0$ for $j<j_0$ and $j>j_1$.
 \end{enumerate}
+
 The sequence $'E(K_{\bullet\bullet})$ is \emph{regular} if there exists $i_0$ such that $K_{ij}=0$ for $i<i_0$ and $K_{ij}=0$ for $j>j_0$.
+
 The sequence $''E(K_{\bullet\bullet})$ is \emph{regular} if there exists $i_0$ such that $K_{ij}=0$ for $i>i_0$ and $K_{ij}=0$ for $j<j_0$.
 \end{env}
+
 
 \subsection{Hypercohomology of a functor with respect to a complex $K^{\bullet}$}
 \label{subsection:0.11.4}
@@ -407,7 +427,7 @@ a complex of objects in $\cat{C}$, whose differential operator of degree +1.
 \[
   0 \rightarrow L^0 \rightarrow L^1 \rightarrow L^2 ...
 \]
-provided with a morphism $\varepsilon: A \rightarrow L^0$ saying \emph{augmentation} of the resolution (and that we can consider as a morphsim of complexes)
+provided with a morphism $\varepsilon: A \rightarrow L^0$ saying \emph{augmentation} of the resolution (and that we can consider as a morphism of complexes)
 \[
   0 \rightarrow A \rightarrow 0 \rightarrow 0 ...
 \]
@@ -448,25 +468,25 @@ so that the following condition are fulfilled:
     0 \rightarrow K^i \xrightarrow[]{\varepsilon} L^{i0} \rightarrow L^{i1} \rightarrow ...
   \]
   \[
-    0 \rightarrow B^i(K^\bullet) \xrightarrow[]{\varepsilon} B_\text{I}^i(L^{\bullet,0}) \rightarrow B_\text{I}^i(L^{\bullet,1}) \rightarrow ...
+    0 \rightarrow B^i(K^\bullet) \xrightarrow[]{\varepsilon} B_\mathrm{I}^i(L^{\bullet,0}) \rightarrow B_\mathrm{I}^i(L^{\bullet,1}) \rightarrow ...
   \]
   \[
-    0 \rightarrow Z^i(K^\bullet) \xrightarrow[]{\varepsilon} Z_\text{I}^i(L^{\bullet,0}) \rightarrow Z_\text{I}^i(L^{\bullet,1}) \rightarrow ...
+    0 \rightarrow Z^i(K^\bullet) \xrightarrow[]{\varepsilon} Z_\mathrm{I}^i(L^{\bullet,0}) \rightarrow Z_\mathrm{I}^i(L^{\bullet,1}) \rightarrow ...
   \]
   \[
-    0 \rightarrow \HH^i(K^\bullet) \xrightarrow[]{\varepsilon} \HH_\text{I}^i(L^{\bullet,0}) \rightarrow \HH_\text{I}^i(L^{\bullet,1}) \rightarrow ...
+    0 \rightarrow \HH^i(K^\bullet) \xrightarrow[]{\varepsilon} \HH_\mathrm{I}^i(L^{\bullet,0}) \rightarrow \HH_\mathrm{I}^i(L^{\bullet,1}) \rightarrow ...
   \]
-  are exact, in other words $(L^{i,\bullet}), (B_\text{I}^i(L^{\bullet\bullet})), (Z_\text{I}^i(L^{\bullet\bullet}))$ and $(\HH_\text{I}^i(L^{\bullet\bullet}))$ 
+  are exact, in other words $(L^{i,\bullet}), (B_\mathrm{I}^i(L^{\bullet\bullet})), (Z_\mathrm{I}^i(L^{\bullet\bullet}))$ and $(\HH_\mathrm{I}^i(L^{\bullet\bullet}))$ 
   are the \emph{resolution} of $K^i, B^i(K^\bullet), Z^i(K^\bullet)$ and $\HH^i(K^\bullet)$, respectively.
   \item[(ii)] For each $j$, the simple complex $L^{\bullet, j}$ is \emph{split}, in other words, the exact sequences
   \[
     \label{0.11.4.2.1}
-    0 \rightarrow B_\text{I}^i(L^{\bullet,j}) \rightarrow Z_\text{I}^i(L^{\bullet,j}) \rightarrow \HH_\text{I}^i(L^{\bullet,j}) \rightarrow 0
+    0 \rightarrow B_\mathrm{I}^i(L^{\bullet,j}) \rightarrow Z_\mathrm{I}^i(L^{\bullet,j}) \rightarrow \HH_\mathrm{I}^i(L^{\bullet,j}) \rightarrow 0
     \tag{11.4.2.1}
   \]
   \[
     \label{0.11.4.2.2}
-    0 \rightarrow Z_\text{I}^i(L^{\bullet,j}) \rightarrow L^{ij} \rightarrow B_\text{I}^{i+1}(L^{\bullet,j}) \rightarrow 0
+    0 \rightarrow Z_\mathrm{I}^i(L^{\bullet,j}) \rightarrow L^{ij} \rightarrow B_\mathrm{I}^{i+1}(L^{\bullet,j}) \rightarrow 0
     \tag{11.4.2.2}
   \]
   are split.
@@ -475,7 +495,7 @@ We prove (M, XVII, 1.2) that if every object of $\cat{C}$ is subobjects of an in
 then every complex $K^\bullet$ of $\cat{C}$ admits an \emph{injective} resolution of Cartan-Eilenberg.
 
 That is to say it formed injective objects of $L^{ij}$ 
-(the condition (ii) above then results $(B_\text{I}^i(L^{\bullet,j})), (Z_\text{I}^i(L^{\bullet,j}))$ and $(\HH_\text{I}^i(L^{\bullet,j}))$ being also injective objects).
+(the condition (ii) above then results $(B_\mathrm{I}^i(L^{\bullet,j})), (Z_\mathrm{I}^i(L^{\bullet,j}))$ and $(\HH_\mathrm{I}^i(L^{\bullet,j}))$ being also injective objects).
 
 Furthermore, for any morphsim $f: K^\bullet \rightarrow K'^\bullet$ of complexes of $\cat{C}$, 
 any Cartan-Eilenberg resolution $L^{\bullet\bullet}$ of $K^\bullet$ and any \emph{injective} Cartan-Eilenberg resolution $L'^{\bullet\bullet}$ of $K'^\bullet$.
@@ -602,7 +622,7 @@ where the last two terms are the cohomology of simple complexes defined by trico
 \end{proposition}
 
 Let us define for example the first of these isomorphisms. The quadricomplex $T(\bcx{L}, \bcx{L'})$ can be considered as a bicomplex, having degree of $T(L^{ij}, L'^{hk})$ the numbers $i+j$ and $h+k$.
-For each $h, \cx{L'^h}$ is a \emph{resolution} of $K'^h$, we have, for this bicomplex, by virtue of the hypothesis on $\cat{T}, \HH_\text{II}^q(T(\bcx{L}, \bcx{L'}))=0$ for $q\neq 0$ and $\HH_\text{II}^0(T(\bcx{L}, \bcx{L'})) = T(\bcx{L}, \cx{K'})$; 
+For each $h, \cx{L'^h}$ is a \emph{resolution} of $K'^h$, we have, for this bicomplex, by virtue of the hypothesis on $\cat{T}, \HH_\mathrm{II}^q(T(\bcx{L}, \bcx{L'}))=0$ for $q\neq 0$ and $\HH_\mathrm{II}^0(T(\bcx{L}, \bcx{L'})) = T(\bcx{L}, \cx{K'})$; 
 The first spectral sequence of this bicomplex is therefore \emph{degenerate}; As $L'^{hk}=0$ for $k<0$, this sequence is also regular \sref{0.11.3.3} and the conclusion therefore results from \sref{0.11.1.6}.
 
 We have similar results for a covariant multifunctor in any number of arguments $n$: in the calculation of the hypercohomology, it is not necessary to replace \emph{all} the complexes 
