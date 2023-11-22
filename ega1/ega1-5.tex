@@ -220,8 +220,19 @@ the uniqueness of $Y_V$ thus implies our claim.
 
 \begin{proposition}[5.2.2]
 \label{I.5.2.2}
-Let $X$ be a reduced subprescheme of a prescheme $Y$; if $Z$ is the closed reduced subprescheme of $Y$ that has $\overline{X}$ as its underlying space, then $X$ is a subprescheme induced on an open subset of $Z$.
+Let $X$ be reduced, $f:X \to Y$ a morphism, and $Z$ a sub-prescheme closed over $Y$ such that $f(X) \subset Z$.
+Then, $f$ factors as $X \xrightarrow{g} Z \xrightarrow{j} Y$, where $j$ is an injective morphism.
 \end{proposition}
+
+\begin{proof}
+It follows from the hypotheses that the closed subprescheme $f^{-1}(Z)$ of $X$ has all of $X$ as its underlying space \sref{I.4.4.1};
+since $X$ is reduced, this closed subprescheme agrees with $X$ \sref{I.5.1.2}, and the proposition then follows from \sref{I.4.4.1}.
+\end{proof}
+
+\begin{corollary}[5.2.3]
+\label{I.5.2.3}
+Let $X$ be a reduced subprescheme of a prescheme $Y$; if $Z$ is the closed reduced subprescheme of $Y$ that has $\overline{X}$ as its underlying space, then $X$ is a subprescheme induced on an open subset of $Z$.
+\end{corollary}
 
 \begin{proof}
 \oldpage[I]{132}
@@ -296,6 +307,7 @@ Let $X$ and $Y$ be $S$-preschemes, and $\vphi:S\to T$ a morphism of preschemes, 
 Let $f:X\to S$ and $g:Y\to S$ be the structure morphisms, $p$ and $q$ the projections of $X\times_S Y$, and $\pi=f\circ p=g\circ q$ the structure morphism $X\times_S Y\to S$.
 Then the diagram
 \[
+\label{I.5.3.5.1}
   \xymatrix{
     X\times_S Y\ar[r]^{(p,q)_T}\ar[d]_\pi &
     X\times_T Y\ar[d]^{f\times_T g}\\
@@ -347,7 +359,7 @@ For $f:X\to Y$ to be a monomorphism of preschemes, it is necessary and sufficien
 
 \begin{proof}
 Indeed, to say that $f$ is a monomorphism implies that, for every $Y$-prescheme $Z$, the corresponding map $f':X(Z)_Y\to Y(Z)_Y$ is an injection, and, since $Y(Z)_Y$ consists of a single element, this implies that $X(Z)_Y$ consists of a single element as well.
-But this can also be expressed by saying that $X(Z)_Y\times X(Z)_Y$ is canonically isomorphic to $X(Z)_Y$; the former is exactly the set $(X\times_Y X)(Z)_Y$ \hyperref[1.3.4.3]{(3.4.3.1)}, which implies that $\Delta_{X|Y}$ is an isomorphism.
+But this can also be expressed by saying that $X(Z)_Y\times X(Z)_Y$ is canonically isomorphic to $X(Z)_Y$; the former is exactly the set $(X\times_Y X)(Z)_Y$ \hyperref[I.3.4.3]{(3.4.3.1)}, which implies that $\Delta_{X|Y}$ is an isomorphism.
 \end{proof}
 
 \begin{proposition}[5.3.9]
@@ -606,7 +618,7 @@ If $f$ and $g$ are separated, then $\Delta_{X|Y}$ is a closed immersion by defin
 \oldpage[I]{137}
 proves~(ii).
 Given~(i) and~(ii), (iii) and~(iv) are equivalent \sref{I.3.5.1}, so it suffices to prove (iv).
-But $X_{(S')}\times_{Y_{(S')}}X_{(S')}$ is canonically identified with $(X\times_Y X)\times_Y Y_{(S')}$ by \sref{I.3.3.11} and \hyperref[1.3.3.9]{(3.3.9.1)}, and we immediately see that the diagonal morphism $\Delta_{X_{(S')}}$ can then be identified with $\Delta_X\times_Y 1_{Y_{(S')}}$;
+But $X_{(S')}\times_{Y_{(S')}}X_{(S')}$ is canonically identified with $(X\times_Y X)\times_Y Y_{(S')}$ by \sref{I.3.3.11} and \hyperref[I.3.3.9]{(3.3.9.1)}, and we immediately see that the diagonal morphism $\Delta_{X_{(S')}}$ can then be identified with $\Delta_X\times_Y 1_{Y_{(S')}}$;
 the proposition then follows from \sref{I.4.3.1}.
 
 To prove (v), consider, as in \sref{I.5.3.13}, the factorisation $X\xrightarrow{\Gamma_f}X\times_Z Y\xrightarrow{p_2}Y$ of $f$, noting that $p_2=(g\circ f)\times_Z 1_Y$;
@@ -653,7 +665,7 @@ For $f$ to be separated, it is necessary and sufficient for all the $f_k$ to be 
 
 \begin{proof}
 The necessity follows from \sref{I.5.5.1}[i, ii, and v].
-Conversely, if the condition of the statement is satisfied, then each of the restrictions $X_k\to Y$ of $f$ is separated \hyperref[1.5.5.1]{(5.5.1, (i) and (ii))};
+Conversely, if the condition of the statement is satisfied, then each of the restrictions $X_k\to Y$ of $f$ is separated \hyperref[I.5.5.1]{(5.5.1, (i) and (ii))};
 if $p_1$ and $p_2$ are the projections of $X\times_Y X$, then the subspace $\Delta_{X_k}(X_k)$ can be identified with the subspace $\Delta_X(X)\cap p_1^{-1}(X_k)$ of the underlying space of $X\times_Y X$ \sref{I.5.3.16};
 these subspaces are closed in $X\times_Y X$, and thus so too is their union $\Delta_X(X)$.
 \end{proof}

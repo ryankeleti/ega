@@ -64,7 +64,7 @@ Here is the current status of the translation, along with who is currently worki
 + [x] 8. Representable functors _(@ryankeleti)_
 + [x] 9. Constructible sets _(@ryankeleti)_
 + [x] 10. Supplement on flat modules _(@thosgood)_
-+ [ ] 11. Supplement on homological algebra _(@ryankeleti)_
++ [ ] 11. Supplement on homological algebra _(@ryankeleti, @wayneyang108)_
 + [ ] 12. Supplement on sheaf cohomology (~25 pages)
 + [ ] 13. Projective limits in homological algebra (~10 pages)
 
