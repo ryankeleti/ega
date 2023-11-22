@@ -83,13 +83,13 @@ The above definitions show, by induction on $r$, that if the $u_2^{pq}$ are \emp
 Recall that if $(F^p(X))_{p\in\bb{Z}}$ is a (decreasing) \emph{filtration} of an object $X\in\cat{C}$, then we say that this filtration is \emph{separated} if $\inf(F^p(X))=0$, \emph{discrete} if there exists a $p$ such that $F^p(X)=0$, \emph{exhaustive} (or \emph{coseparated}) if $\sup(F^p(X))=X$, \emph{codiscrete} if there exists a $p$ such that $F^p(X)=X$.
 
 We say that a spectral sequence $E=(E_r^{pq},E^n)$ is \emph{weakly convergent} if we have $B_\infty(E_2^{pq})=\sup_k(B_k(E_2^{pq}))$ and $Z_\infty(E_2^{pq})=\inf_k(Z_k(E_2^{pq}))$ (in other words, the objects of $B_\infty(E_2^{pq})$ and $Z_\infty(E_2^{pq})$ are determined from the data of (a) and (c) of the spectral sequence $E$).
-We say that the spectral sequence $E$ is \emph{regular} if it is weakly convergent and if in addition:
+We say that the spectral sequence $E$ is \emph{regular} if it is weakly convergent and if, in addition:
 \begin{enumerate}
   \item[(1st)] For every pair $(p,q)$, the decreasing sequence $(Z_k(E_2^{pq}))_{k\geq 2}$ is \emph{stable}; the hypothesis that $E$ is weakly convergent then implies that $Z_\infty(E_2^{pq})=Z_k(E_2^{pq})$ for $k$ large enough (depending on $p$ and $q$).
   \item[(2nd)] For every $n$, the filtration $(F^p(E^n))_{p\in\bb{Z}}$ of $E^n$ is \emph{discrete} and \emph{exhaustive}.
 \end{enumerate}
 
-We say that the spectral sequence $E$ is \emph{coregular} if it is weakly convergent and if in addition:
+We say that the spectral sequence $E$ is \emph{coregular} if it is weakly convergent and if, in addition:
 \begin{enumerate}
   \item[(3rd)] For every pair $(p,q)$, the increasing sequence $(B_k(E_2^{pq}))_{k\geq 2}$ is \emph{stable}, which implies that $B_\infty(E_2^{pq})=B_k(E_2^{pq})$, and as a result, $E_\infty^{pq}=\inf E_k^{pq}$.
   \item[(4th)] For every $n$, the filtration of $E^n$ is \emph{codiscrete}.
@@ -566,8 +566,8 @@ If $\RR^n T(K^i) = 0$ for all $n>0$ and all $i\in\bb{Z}$, then we have functoria
 \label{0.11.4.5.1}
   \RR^i T(K^\bullet) \simto \HH^i(T(K^\bullet))
 \tag{11.4.5.1}
-for all $i\in\bb{Z}$.
 \]
+for all $i\in\bb{Z}$.
 \end{proposition}
 
 \begin{proof}
