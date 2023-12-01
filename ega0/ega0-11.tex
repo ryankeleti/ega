@@ -565,8 +565,8 @@ If $\RR^n T(K^i) = 0$ for all $n>0$ and all $i\in\bb{Z}$, then we have functoria
 \[
 \label{0.11.4.5.1}
   \RR^i T(K^\bullet) \simto \HH^i(T(K^\bullet))
+for all i\in\bb{Z}.
 \tag{11.4.5.1}
-for all $i\in\bb{Z}$.
 \]
 \end{proposition}
 
@@ -653,13 +653,13 @@ But, it is clear that we have $B^i(\cx{K_{(r)}}) = B^i(\cx{K})$ and $\HH^i(\cx{K
 We have, on the one hand, for each $r$, a canonical injection $\cx{\varphi_{r-1, r}}: \cx{K_{(r)}} \rightarrow \cx{K_{(r-1)}}, \varphi_{r-1, r}^i$ is identity for $i\neq r-1$. 
 The preceding remark shows that, if $\bcx{L} = (L^{ij})$ is an injective Cartan--Eilenberg resolution of $\cx{K}$,
 for each $r$ we can define an injective Cartan--Eilenberg resolution $\bcx{L_{(r)}} = (L_{(r)}^{ij})$ of $\cx{K_{(r)}}$ such that $L_{(r)}^{ij} = 0$ for $i<r$ and $L_{(r)}^{ij} = L^{ij}$ for $i\geq i+1$.
-We can on the other hand define a bicomplex morphism $\bcx{\Phi_{r-1, r}}: \bcx{L_{(r)}} \rightarrow \bcx{L_{(r-1)}}$ corresponding to $\cx{\varphi_{(r-1)}}$, and 
-the method of definition of this morphism \emph{(loc. cit.)} showing again that we can construct so that $\Phi_{r-1}^{ij}$, is identity for $i\neq r$ and $i\neq r-1$.
+We can on the other hand define a bicomplex morphism $\bcx{\Phi_{r-1, r}}: \bcx{L_{(r)}} \rightarrow \bcx{L_{(r-1)}}$ corresponding to $\cx{\varphi_{r-1, r}}$ and 
+the method of definition of this morphism \emph{(loc. cit.)} showing again that we can construct so that $\Phi_{r-1, r}^{ij}$ is identity for $i\neq r$ and $i\neq r-1$.
 Similarly we can define a inductive system $(\bcx{L_{(r)}})$ of bicomplexes of $\cat{C}$, 
 of which $\bcx{L}$ is evidently the inductive limit when $r$ tends to $-\infty$; 
 due to the permutability of direct sums and inductive limits, the simple complex associated to $\bcx{L}$ is also inductive limit of simple complex associated to $\bcx{L_{(r)}}$.
 As $T$ permute by hypothesis with inductive limits and that it is the same for cohomology 
-(due to the exactness of functor $\lim_{\to}$), we have good $\cx{H}(T(\bcx{L})) = \lim_{\to}\cx{\HH}(T(\bcx{L_{(r)}}))$ up to an isomorphism.
+(due to the exactness of functor $\varinjlim$ we have good $\cx{H}(T(\bcx{L})) = \varinjlim\cx{\HH}(T(\bcx{L_{(r)}}))$ up to an isomorphism.
 \end{proof}
 
 The lemma \sref{0.11.5.1} allows us to extend to any complex $\cx{K}$, by passing to the inductive limit,  
@@ -680,7 +680,7 @@ but by hypothesis, an exact sequence
 \[
   \ldots \rightarrow \RR^n T(\cx{K'_{(r)}}) \rightarrow \RR^n T(\cx{K_{(r)}}) \rightarrow \RR^n T(\cx{K''_{(r)}}) \xrightarrow[]{\partial} \RR^{n+1} T(\cx{K'_{(r)}}) \rightarrow \ldots
 \]
-this exact sequence forms an inductive system; the lemma \sref{0.11.5.1} and the exactness of functor $\injlim$ demonstrates that we have an exact sequence
+this exact sequence forms an inductive system; the lemma \sref{0.11.5.1} and the exactness of functor $\varinjlim$ demonstrates that we have an exact sequence
 \[
   \ldots \rightarrow \RR^n T(\cx{K'}) \rightarrow \RR^n T(\cx{K}) \rightarrow \RR^n T(\cx{K''}) \xrightarrow[]{\partial} \RR^{n+1} T(\cx{K'}) \rightarrow \ldots
 \]
@@ -691,43 +691,146 @@ They evidently form a \emph{abelian category} $\cat{K}$.
 
 \begin{lemma}[11.5.2.1]
 \label{0.11.5.2.1}
-In $\cat{K}$, if 
+\oldpage[0\textsubscript{III}]{37}
+In $\cat{K}$, let $\mathfrak{I}$ be the set of complexes $\cx{Q} = (Q^i)_{i\geq 0}$ having the following properties:
+$1^\circ$ All $Q^i$ is an injective object of $\C$;
+$2^\circ$ For all $i\geq 0$, we have $Z^i(\cx{Q}) = B^i(\cx{Q})$, and $Z^i({\cx{Q}})$ is direct factor of $Q^i$. Then:
+\begin{enumerate}
+  \item[(i)] All $\cx{Q}\in \mathfrak{I}$ is an injective object of $\cat{K}$.
+  \item[(ii)] All object of $\cat{K}$ is isomorphic to a sub-complex of a complex belong to $\mathfrak{I}$.
+\end{enumerate}
 \end{lemma}
+\begin{proof}
+\begin{enumerate}
+  \item[(i)] Let $\cx{A}=(A^i)$ be an object of $\cat{K}, \cx{A'} = (A'^i)$ a subobject of $\cx{A}, \cx{Q} = (Q^i)$
+  a object of $\mathfrak{I}$, and suppose given a morphism $f = (f^i): \cx{A'}\rightarrow \cx{Q}$, that it extends 
+  to a morphsim $g = (g^i): \cx{A}\rightarrow \cx{Q}$. We use the language of module category for simplicity (cf. [27]).
+
+  Let us identify $Q$ with $B^i(\cx{Q})\oplus B^{i+1}(\cx{Q})$; let's proceed by induction on $i$, and therefor suppose 
+  $g^j$ defined for all $j<i$, compatible with the differentials $d^j: A^j\rightarrow A^{j+1}$ and $d'^j: Q^j\rightarrow Q^{j+1}$ for $j<i-1$
+  and further such that: $1^\circ g^{i-1}(Z^{i-1}(\cx{A}))\subset Z^{i-1}(\cx{Q})$; 
+  $2^\circ$ If we set $C^j = (d^j)^{-1}(A'^{j+1})$ for all $j$, then $d'^{i-1}\circ g^{i-1}$ coincide with $f^i\circ d^{i-1}$ on $C^{i-1}$.
+  The morphism $f'^i: A'^i\rightarrow Q^i$ gives by composition with the two projective morphisms $f'^i: A'^i\rightarrow B^i(\cx{Q})$ and $f''^i: A'^i\rightarrow B^{i+1}(\cx{Q})$.
+  As $d'^{i-1}\circ g^{i-1}$ applies $A^{i-1}$ in $B^i(\cx{Q})$ and vanishes in $Z^{i-1}(\cx{A})$, it defines a morphism $h^i:B^i(\cx{A})\rightarrow B^i(\cx{Q})$,
+  and since $d'^{i-1}\circ g^{i-1}$ coincides with $f^i\circ d^{i-1}$ on $C^{i-1}$, $h^i$ coincides with $f'_i$ in $B^i(\cx{A})\cap A'^i$.
+  As $B^i(\cx{Q})$, direct factor of $Q^i$, is injective, there is a morphism $g'^i: A^i\rightarrow B^i(\cx{Q})$ that coincide with $h^i$ in $B^i(\cx{A})$ and with $f'^i$ in $A'^i$.
+  Considering on the other hand the morphisms $f''^{i+1}\circ d^i: C^i\rightarrow B^{i+1}(\cx{Q})$, that vanish in $Z^i(\cx{A})$;
+  As $B^{i+1}(\cx{Q})$ is injective, there is a morphism $g''^i: A^i\rightarrow B^{i+1}(\cx{Q})$, that coincide with $f''^{i+1}\circ d^i$ in $C^i$ and with 0 in $Z^i(\cx{A})$.
+  It suffices then to take $g^i = g'^i + g''^i$ to continue the induction.
+  \item[(ii)] To immerse $\cx{A} = (A^i)$ in a complex belongs to $\mathfrak{I}$, we take for each $i\geq 1$ a injective object $Q'^i$ of $\C$ such that there exist a injection $f'^i:A^i\rightarrow Q'^i$.
+  Let's pose then $Q^i=0$ for $i<0, Q^0 = Q'^1$ and $Q^i=Q'^i\oplus Q'^{i+1}$ for $i\geq 1$, with obvious differential.
+  Let's pose $f^i = f'^i + (f'^{i+1} \circ d^i)$ for all $i$ (with $f'^i = 0$ for $i\leq 0$);
+  it is immediate that $f^i$ is injective for all $i$, and that the $f^i$ are compatible with the differentials.
+\end{enumerate}
+\end{proof}
   
 \begin{corollary}[11.5.2.2]
 \label{0.11.5.2.2}
+All oject $\cx{K}$ of $\cat{K}$ admits a right resolution formed from ojects of $\mathfrak{I}$.
+If $\bcx{L}$ is a such a resolution, for all resolution $\bcx{L''}$ of $\cx{K}$, formed from objects of $\cat{K}$,
+there is a bicomplex morphism $F: \bcx{L'}\rightarrow \bcx{L}$ compatible with the augmentation, and such two morphism $F, F'$ are homotopic.
+
+\begin{proof}
+It is none other than (~M, ~V, ~1.1.a) applies to the abelian category $\cat{K}$.
+\end{proof}
 \end{corollary}
   
 \begin{env}[11.5.2.3]
 \label{0.11.5.2.3}
+These preliminaries have been established, let us consider an injective Cartan--Eilenberg resolution $\bcx{L'}$ of $\cx{K}$ and a resolution $\bcx{L}$ and $\cx{K}$ formed from ojects of $\mathfrak{I}$, 
+and let us show that it has an isomorphism $\cx{\HH}(T(\bcx{L'}))\simto \cx{\HH}(T(\bcx{L}))$. In fact, We deduce from \sref{0.11.5.2.2} a bicomplex morphism $T(\bcx{L'})\rightarrow T(\bcx{L})$, 
+and consequently a sequence of morphism $'E(T(\bcx{L'}))\rightarrow 'E(T(\bcx{L}))$ of first spectral sequences of bicomplexes.
+As in virtue of \sref{0.11.3.3}, these spectral sequences are \emph{regular}, it suffices \sref{0.11.1.5} to see that the preceding morphism is an isomorphism for the $E_2$ terms, 
+or even that $\HH_\text{II}^q(T(\cx{L'^i}))$ is equal to $\RR^q T(K^i)$; as $\cx{L'^i}$ is a right resolution of $K^i$, we are reducing to prove that
 \end{env}
   
 \begin{lemma}[11.5.2.4]
 \label{0.11.5.2.4}
+\oldpage[0\textsubscript{III}]{38}
+If $\cx{L} = (L^i)_{i\in \bb{Z}}$ is a right resolution of an object $A$ of $\C$ such that $\RR^n T(L^i) = 0$ for all $i\in \bb{Z}$ for all $n>0$, then we have $\cx{\HH}T(\cx{L}) = \cx{R} T(A)$.
+It is in particular a case of (~T, ~2.5.2).
 \end{lemma}
 
 \begin{env}[11.5.2.5]
 \label{0.11.5.2.5}
+The proof of \sref{0.11.5.2} now ends immediately, because $\bcx{L'}$ is an injective resolution of $\cx{K}$ \emph{the abelian category} $\cat{K}$,
+in other words, $\cx{K} \mapsto \cx{\HH}(T(\bcx{L'}))$ is none other than the \emph{right derived} cohomological functor of $T$ in the category $\cat{K}$ (~T, ~2.3).
 \end{env}
 
 \begin{proposition}[11.5.3]
 \label{0.11.5.3}
+Under the hypothesis of \sref{0.11.5.1} concerning $\cat{C}, \cat{C'}$ of $T$, if $\bcx{L} = (L^{ij})$ a bicomplex such that $L^{ij} = 0$ for $j<0$ and that, for all $i$, 
+$\cx{L^i}$ is a resolution of $K^i$; finally suppose that $\RR^n T(L^{ij}) = 0$ for all pair $(i,j)$ and all $n>0$. Then there exists a functorial isomorphism 
+\[
+  \label{0.11.5.3.1}
+  \cx{R}(T(\cx{K}))\simto \cx{\HH}(T(\bcx{L}))
+  \tag{11.5.3.1}
+\]
 \end{proposition}
+\begin{proof}
+If $\bcx{L_{(r)}} = (L_{(r)}^{ij})$ is a bicomplex such that $L_{(r)}^{ij} = 0$ for $i<r$, $L_{(r)}^{ij} = L^{ij}$ for $i\geq r$;
+it is immediate that $\bcx{L}$ is the inductive limit of $\bcx{L_(r)^{ij}}$ for $r$ tends to $-\infty$; 
+in virtue of the hypothesis on $T$ and of \sref{0.11.5.1}, therefore it suffices to prove the proposition when $K^i$ is inf limit, for example $K^i=0$ for $i<0$, 
+and $L^{ij} = 0$ for $i<0$. Then if $\bcx{L'} = (L'^{ij})$ a right resolution of $\cx{K}$ formed from the objects of $\mathfrak{I}$ \sref{0.11.5.2.2};
+there is a bicomplex morphism $\bcx{L}\rightarrow \bcx{L'}$ for the first spectral sequences; the lemma \sref{0.11.5.2.4} shows that, as in \sref{0.11.5.2.3}, 
+that this morphism is a \emph{isomorphism}, hence the conclusion.
+\end{proof}
 
 \begin{remark}[11.5.4]
 \label{0.11.5.4}
+The preceding arguments prove that the conclusions of \sref{0.11.5.2} and \sref{0.11.5.3} are valid in the categories of complexes $\cx{K}$ 
+\emph{inf limit, without assuming that $T$ permute with inductive limit filtrants}. Furthermore, when we consider only the category $\cat{K}$ of complexes $\cx{K}$ such that $K^i=0$ for $i<0$, 
+the characterization of $\cx{R} T(\cx{K})$ as the system of \emph{right derived functors} of $T$ in $\cat{K}$ shows that this cohomologic functor is \emph{universal} (~T, ~2.3).
+
+Another case where \sref{0.11.5.2} is valid without making any additiona assumptions about $T$ is the case where there exists an integer $m>0$ such that anay object of $\cat{C}$ admits a injective resolution \emph{of length $\leq m$}.
+In fact, in the proof of \sref{0.11.5.1}, all the injectvie resolution from objects of $\cat{C}$ intervined can be taken of length $\leq m$, hence it follows immediately that the terms of bicomplex $T(\bcx{L_{(r)}})$ with total degree $n$ 
+are \emph{equal to those of} $T(\bcx{L})$ and in \emph{finite} number, as soon as $r$ larger enough, which means that for all $n, \HH^n(T(\bcx{L})) = \HH^n(T(\bcx{L_{(r)}}))$ as soon as $r$ larger enough.
+With the notations of \sref{0.11.5.2}, therefore we have simliary $\RR^nT(\cx{K_{(r)}}) = R^n T(\cx{K})$ for $r$ larger enough (dependent on $n$) and the same for $\cx(K')$ and $\cx{K''}$, hence the conclusion.
+Likewise, \sref{0.11.5.3} is valid without the addition condition on $T$ when $\C$ verify the preceding hypothesis and that we suppose that the resolution $\cx{L^i}$ are of length $\leq m$.
 \end{remark}
 
 \begin{env}[11.5.5]
 \label{0.11.5.5}
+\oldpage[0\textsubscript{III}]{39}
+The results of \sref{0.11.5.2} can be generalized to the covariant multifunctor.
+Considering for example the situation of \sref{0.11.4.6}, where we suppose that in $\cat{C}, \cat{C'}$ and $\cat{C''}$ 
+the inductive limit filtrants exist and are exact, and that $T$ commutes with the inductvie limit.
+Then $\cx{R}T(\cx{K}, \cx{K'})$ is a \emph{cohomological} bifunctor in each of complexes $\cx{K}, \cx{K'}$
+To see that, we go back as in \sref{0.11.5.2} in the case where $\cx{K}$ and $\cx{K'}$ are inf limits; 
+then taking for $\cx{K}$ and $\cx{K'}$ the injective resolution of type described in \sref{0.11.5.2.2}, 
+we are brought back to the general properties proved in (~M, ~V, ~4.1).
 \end{env}
 
 \begin{env}[11.5.6]
 \label{0.11.5.6}
+Likewise, the results of \sref{0.11.4.7} and \sref{0.11.5.3} are general as follows.
+Suppose (under the hypothesis of \sref{0.11.5.5}) that we have two bicomplexes $\bcx{L} = (L^{ij}), \bcx{L'} = (L'^{ij})$ such that $L^{ij} = 0$ and $L'^{ij} = 0$ for $j<0$, 
+that for all $i$, $\cx{L^i}$ is a resolution of $K^i$ and $\cx{L'^i}$ a resolution of $K'^i$, and finally that $\RR^n T(L^{ij}, L'^{hk})=0$ for $n>0$ and for all indices $(i,j,h,k)$.
+Then we have a functorial isomorphism in $\cx{K}$ and $\cx{K'}$
+\[
+  \label{0.11.5.6.1}
+  \cx{R}T(\cx{K}, \cx{K'}) \simto \cx{\HH}(T(\bcx{L}, \bcx{L'}))
+  \tag{11.5.6.1}
+\]
+
+This established as in \sref{0.11.5.3} by reducing to the case where $\cx{K}$ and $\cx{K'}$ are inf limits.
+
+Furthermore, suppose that for all pair $(i,j)$ and for all pair $(h,k)$, the functor $A\mapsto T(A, L'^{hk})$ and $A'\mapsto T(L^{ij}, A')$ 
+are exact in $\cat{C}$ and $\cat{C'}$ respectively. Then we have similarly a functorial isomorphism
+\[
+  \label{0.11.5.6.2}
+  \cx{R}T(\cx{K}, \cx{K'}) \sim \cx{\HH}(T(\bcx{L}, \cx{K'})) \simto \cx{\HH}(T(\cx{K'}, \bcx{L'}))
+  \tag{11.5.6.2}
+\]
+
+The proof is similar to that of \sref{0.11.4.7}.
 \end{env}
 
 \begin{env}[11.5.7]
 \label{0.11.5.7}
+We note again that the results of \sref{0.11.5.5} and \sref{0.11.5.6} are valid without supposing that $T$ permutes with inductive limits, 
+provided that we restricted ourselves to complexes $\cx{K}, \cx{K'}$ inf limits, or that we suppose that all object of $\cat{C}$ (resp. $\cat{C'})$ 
+admit a injective resolution of bounded length, and that in \sref{0.11.5.6} the bicomplexes $\bcx{L}$ and $\bcx{L'}$ have their second degree sup limits.
 \end{env}
 
 \subsection{Hypercohomology of a functor with respect to a complex $K_{\bullet}$}
