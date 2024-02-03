@@ -1,6 +1,6 @@
 # EGA
 
-Community translation (French to English) of A. Grothendieck's EGA.
+Community translation (French to English) of A. Grothendieck and J. Dieudonné's *Éléments de géométrie algébrique*.
 On est désolé, Grothendieck.
 
 ~~View online [here](https://ega.fppf.site/).~~
@@ -161,7 +161,7 @@ Here is the current status of the translation, along with who is currently worki
 - hyperref links to equations (e.g. 3.3.9.1)
 - check for any `\unsure` commands in the source
 - check that all `\hyperref` references are found
-- when this is finished (?!) we should [assign a DOI?](https://guides.github.com/activities/citable-code/)
+- when this is finished (?!) should we [assign a DOI?](https://guides.github.com/activities/citable-code/)
 - web version? (work in progress!)
 - more detailed style guidelines? (e.g. language, sentence construction, etc.)
 - link (M), (G), (T) references
