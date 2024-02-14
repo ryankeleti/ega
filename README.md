@@ -1,9 +1,7 @@
 # EGA
 
 Community translation (French to English) of A. Grothendieck and J. Dieudonné's *Éléments de géométrie algébrique*.
-On est désolé, Grothendieck.
-
-~~View online [here](https://ega.fppf.site/).~~
+Désolé, Grothendieck.
 
 For discussion regarding this project, visit [#ega:matrix.org](https://matrix.to/#/#ega:matrix.org)!
 
