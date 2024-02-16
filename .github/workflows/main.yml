@@ -24,7 +24,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: pdf_file
-        path: book.pdf
+        path: pdfs/book.pdf
   
   deploy:
     runs-on: ubuntu-latest
