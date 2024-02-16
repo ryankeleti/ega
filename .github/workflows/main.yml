@@ -7,9 +7,14 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v2.3.2
     
-    - uses: r-lib/actions/setup-tinytex@v2
+    - name: Install TinyTeX
+      uses: r-lib/actions/setup-tinytex@v2
       env:
         TINYTEX_INSTALLER: TinyTeX
+
+    - name: Install LaTeX packages
+      run: |
+        tlmgr install aurical auxhook bigintcalc bitset cjk etoolbox geometry gettitlestring hycolor hyperref infwarerr intcalc kvdefinekeys kvoptions kvsetkeys letltxmacro ltxcmds marginnote mathpazo microtype pdfescape pdftexcmds refcount titlesec url xcolor
 
     - name: Build PDFs
       run: |
