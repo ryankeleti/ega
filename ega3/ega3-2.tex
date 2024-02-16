@@ -47,8 +47,45 @@ Now consider the graded $S$-module \sref[0]{0.5.4.6}
 \]
 
 \oldpage[III]{96}
-If
+If $X$ is a prescheme whose underlying space is Noetherian, or a quasi-compact scheme, then it follows from \sref[I]{I.9.3.1} that, setting $U_{i_0i_1\ldots i_p}=\bigcap_{k=0}^p U_{i_k}$ as usual, we have, up to canonical isomorphism,
+\[
+  \Gamma(U_{i_0i_1\ldots i_p}, \sh{F}(\anotherbullet))
+  = \HH^0(U_{i_0i_1\ldots i_p}, \sh{F}(\anotherbullet))
+  = M_{f_{i_0}f_{i_1}\ldots f_{i_p}}.
+\]
+
+We can again, with the notation of \sref{III.1.2.2}, identify $M_{f_{i_0}f_{i_1}\ldots f_{i_p}}$ with $\varinjlim_n M_{i_0i_1\ldots i_p}^{(n)}$.
+This identification is an isomorphism of \emph{graded} $S$-modules, if we define the degree of a homogeneous element $z\in\varinjlim_n M_{i_0i_1\ldots i_p}^{(n)}$ in the following way:
+$z$ is the canonical image of a homogeneous element $x\in M_{i_0i_1\ldots i_p}^{(n)}=M$ of degree~$m$;
+we then take the degree of $z$ to be the integer $m-n(d_{i_0}+d_{i_1}+\ldots+d_{i_p})$.
+Taking into account the definition of the homomorphisms $\vphi_{kh}:M_{i_0i_1\ldots i_p}^{(h)}\to M_{i_0i_1\ldots i_p}^{(k)}$ \sref{III.1.2.2}, we immediately see that this definition does not depend on the ``representative'' $x$ of $z$ that we have chosen.
+Denote, as in \sref{III.1.2.2}, by $C_n^p(M)$ the set of alternating maps from $[1,r]^{p+1}$ to $M$ (for all $n$), we define in the same way as above the structure of a \emph{graded} $S$-module on $\varinjlim_n C_n^p(M)$;
+we again have, as in \sref{III.1.2.2},
+\[
+\label{III.2.1.2.2}
+  C^p(\mathfrak{U}, \sh{F}(\anotherbullet))
+  = \varinjlim_n C_n^p(M)
+\tag{2.1.2.2}
+\]
+with the isomorphism \emph{respecting degrees}.
+We then have, as in \sref{III.1.2.2},
+\[
+\label{III.2.1.2.3}
+  C^p(\mathfrak{U}, \sh{F}(\anotherbullet))
+  = C^{p+1}((\mathbf{f}), M)
+  = \varinjlim_n K^{p+1}(\mathbf{f}^n, M)
+\tag{2.1.2.3}
+\]
+with the isomorphism \emph{preserving degrees}:
+the degree of an element of $\varinjlim_n K^{p+1}(\mathbf{f}^n, M)$, given by the canonical image of a cochain $g\in K^{p+1}(\mathbf{f}^n,M)$ such that the values $g(i_0,\ldots,i_p)$ are all in the \emph{same} homogeneous component $M_m$ of $M$, is $m-n(d_{i_0}+\ldots+d_{i_p})$, and it is independent of the choice of this cochain as a representative of the element in question.
+
+Since the above isomorphisms are compatible with the coboundary operators, we thus conclude, as in \sref{III.1.2.2}, that we have:
 \end{env}
+
+\begin{proposition}[2.1.3]
+\label{III.2.1.3}
+Let
+\end{proposition}
 
 
 % \subsection{The fundamental theorem of projective morphisms}
