@@ -10,24 +10,8 @@ To compile, `make book`, `make pdfs`, or `make all`.
 
 ## PDFs
 
-(All the PDFs are auto-compliled every hour if any changes have been made since the last auto-compile, so will always be up to date with the latest commit --- if two versions have different autobuild times but the same git commit, then they are identical).
+The PDFs are automatically generated whenever any changes are made, and you can always find the latest version on the [releases page](https://github.com/ryankeleti/ega/releases).
 
-Individual volumes can be downloaded separately:
-
-- [What this is](https://ryankeleti.com/ega/what-auto.pdf)
-- [Introduction](https://ryankeleti.com/ega/intro-auto.pdf)
-- [EGA 0](https://ryankeleti.com/ega/ega0-auto.pdf)
-- [EGA I](https://ryankeleti.com/ega/ega1-auto.pdf)
-- [EGA II](https://ryankeleti.com/ega/ega2-auto.pdf)
-- [EGA III](https://ryankeleti.com/ega/ega3-auto.pdf)
-- [EGA IV](https://ryankeleti.com/ega/ega4-auto.pdf)
-- [References](https://ryankeleti.com/ega/ref-auto.pdf)
-
-Alternatively, the full document can be downloaded:
-
-- [Book](https://ryankeleti.com/ega/book-auto.pdf)
-
-*Please contact me if for any reason these links break! Thank you :)*
 
 ## Current status
 

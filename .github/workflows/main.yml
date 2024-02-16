@@ -1,5 +1,8 @@
 name: PDF release
-on: push
+on:
+  push:
+    branches:
+      - master
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -18,7 +21,7 @@ jobs:
 
     - name: Build PDFs
       run: |
-        make cleanforce && make book
+        make cleanforce && make all
     
     # - name: Upload PDF artifact
     #   uses: actions/upload-artifact@v2
@@ -36,24 +39,18 @@ jobs:
     #   uses: actions/download-artifact@v2
     #   with:
     #     name: pdf_file
-    
+
     - name: Create release
-      uses: actions/create-release@v1
-      id: create_release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: softprops/action-gh-release@v1
       with:
-        tag_name: main-${{ steps.vars.outputs.date }}-${{ steps.vars.outputs.sha8 }}
-        release_name: Automatic build (version ${{ steps.vars.outputs.date }})
+        tag_name: ${{ steps.vars.outputs.date }}-${{ steps.vars.outputs.sha8 }}
+        name: ${{ steps.vars.outputs.date }} (commit ${{ steps.vars.outputs.sha8 }})
         draft: false
         prerelease: false
-    
-    - name: Upload PDF asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: pdfs/book.pdf
-        asset_name: EGA-book.pdf
-        asset_content_type: application/pdf
+        files: |
+          pdfs/book.pdf
+          pdfs/ega0.pdf
+          pdfs/ega1.pdf
+          pdfs/ega2.pdf
+          pdfs/ega3.pdf
+          pdfs/ega4.pdf
