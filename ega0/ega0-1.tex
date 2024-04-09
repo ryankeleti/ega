@@ -224,7 +224,7 @@ Let $M$ and $N$ be $A$-modules, and $u$ an $A$-homomorphism $M\to N$. If $S$ is 
 multiplicative subset of $A$, we define a $S^{-1}A$-homomorphism
 $S^{-1}M\to S^{-1}N$, denoted by $S^{-1}u$, by setting $S^{-1}u(m/s)=u(m)/s$; if
 $S^{-1}M$ and $S^{-1}N$ are canonically identified with $S^{-1}A\otimes_A M$ and
-$S^{-1}A\otimes_A N$ \sref{0.1.2.5}, then $S^{-1}u$ is considered as $1\otimes u$.
+$S^{-1}A\otimes_A N$ \sref{0.1.2.5}, then $S^{-1}u$ is identified with $1\otimes u$.
 If $P$ is a third $A$-module, and $v$ an $A$-homomorphism $N\to P$, we have
 $S^{-1}(v\circ u)=(S^{-1}v)\circ(S^{-1}u)$; in other words, $S^{-1}M$ is a
 \emph{covariant functor in $M$}, from the category of $A$-modules to that of
@@ -237,16 +237,21 @@ The functor $S^{-1}M$ is \emph{exact}; in other words, if the sequence
 \[
   M\xrightarrow{u}N\xrightarrow{v}P
 \]
-is exact, then so is the sequence
+is exact, then so too is the sequence
 \[
   S^{-1}M\xrightarrow{S^{-1}u}S^{-1}N\xrightarrow{S^{-1}v}S^{-1}P.
 \]
-In particular, if $u:M\to N$ is injective (resp. surjective), the same is true
+In particular, if $u:M\to N$ is injective (resp. surjective), then the same is true
 for $S^{-1}u$;
 \oldpage[0\textsubscript{I}]{15}
-if $N$ and $P$ are submodules of $M$, $S^{-1}N$ and $S^{-1}P$ are canonically identified with submodules of $S^{-1}M$, and we have
+if $N$ and $P$ are submodules of $M$, then $S^{-1}N$ and $S^{-1}P$ are canonically identified with submodules of $S^{-1}M$, and we have
 \[
-  S^{-1}(N+P)=S^{-1}N+S^{-1}P\text{ and }S^{-1}(N\cap P)=(S^{-1}N)\cap(S^{-1}P).
+  \begin{aligned}
+    S^{-1}(N+P)
+    &=S^{-1}N+S^{-1}P
+  \\S^{-1}(N\cap P)
+    &=(S^{-1}N)\cap(S^{-1}P).
+  \end{aligned}
 \]
 \end{env}
 
@@ -261,7 +266,7 @@ inductive limit operations that we have a canonical isomorphism
 \[
   S^{-1}\varinjlim M_\alpha\isoto\varinjlim S^{-1}M_\alpha
 \]
-which is we can further express by saying that the functor $S^{-1}M$ (in $M$)
+which we can also express by saying that the functor $S^{-1}M$ (in $M$)
 \emph{commutes with inductive limits}.
 \end{env}
 
@@ -280,8 +285,8 @@ We also have a \emph{functorial} (in $M$ and $N$) homomorphism
 \[
   S^{-1}\Hom_A(M,N)\to\Hom_{S^{-1}A}(S^{-1}M,S^{-1}N)
 \]
-which sends $u/s$ to the homomorphism $m/t\mapsto u(m)/st$. When $M$ has a
-finite presentation, the above homomorphism is an \emph{isomorphism}: it is
+that sends $u/s$ to the homomorphism $m/t\mapsto u(m)/st$. When $M$ has a
+\emph{finite presentation}, the above homomorphism is an \emph{isomorphism}: this is
 immediate when $M$ is of the form $A^r$, and we pass to the general case by
 starting with the exact sequence $A^p\to A^q\to M\to 0$ and using the
 exactness of the functor $S^{-1}M$ and the left-exactness of the functor
