@@ -301,17 +301,18 @@ $\Hom_A(M,N)$ in $M$. Note that this is always the case when $A$ is
 \label{0.1.4.1}
 Let $S$ and $T$ be multiplicative subsets of a ring $A$ such that $S\subset T$;
 there exists a canonical homomorphism $\rho_A^{T,S}$ (or simply $\rho^{T,S}$)
-from $S^{-1}A$ to $T^{-1}A$, sending the element denoted $a/s$ of $S^{-1}A$ to
+from $S^{-1}A$ to $T^{-1}A$, sending the element denoted $a/s$ in $S^{-1}A$ to
 the element denoted $a/s$ in $T^{-1}A$; we have $i_A^T=\rho_A^{T,S}\circ i_A^S$.
 For every $A$-module $M$, there exists, in the same way, an $S^{-1}A$-linear map
 from $S^{-1}M$ to $T^{-1}M$ (the latter considered as an $S^{-1}A$-module by
-the homomorphism $\rho_A^{T,S}$), which sends the element $m/s$ of $S^{-1}M$
+the homomorphism $\rho_A^{T,S}$) that sends the element $m/s$ of $S^{-1}M$
 to the element $m/s$ of $T^{-1}M$; we denote this map by $\rho_M^{T,S}$, or
 simply $\rho^{T,S}$, and we still have $i_M^T=\rho_M^{T,S}\circ i_M^S$; by the
 canonical identification \sref{0.1.2.5}, $\rho_M^{T,S}$ is identified with
 $\rho_A^{T,S}\otimes 1$. The homomorphism $\rho_M^{T,S}$ is a \emph{functorial
 morphism} (or natural transformation) from the functor $S^{-1}M$ to the functor
-$T^{-1}M$, in other words, the diagram
+$T^{-1}M$;
+in other words, the diagram
 \[
   \xymatrix{
     S^{-1}M\ar[r]^{S^{-1}u}\ar[d]_{\rho_M^{T,S}} &
@@ -320,9 +321,9 @@ $T^{-1}M$, in other words, the diagram
     T^{-1}N
   }
 \]
-is
+commutes,
 \oldpage[0\textsubscript{I}]{16}
-commutative, for every homomorphism $u:M\to N$; $T^{-1}u$ is entirely
+for every homomorphism $u:M\to N$; $T^{-1}u$ is entirely
 determined by $S^{-1}u$, since, for $m\in M$ and $t\in T$, we have
 \[
   (T^{-1}u)(m/t)=(t/1)^{-1}\rho^{T,S}((S^{-1}u)(m/1)).
@@ -348,7 +349,7 @@ With the same notation, for $A$-modules $M$ and $N$, the diagrams (cf. \sref{0.1
     \Hom_{T^{-1}A}(T^{-1}M,T^{-1}N)
   }
 \]
-are commutative.
+commute.
 \end{env}
 
 \begin{env}[1.4.3]
