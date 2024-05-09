@@ -354,9 +354,9 @@ commute.
 
 \begin{env}[1.4.3]
 \label{0.1.4.3}
-There is an important case, in which the homomorphism $\rho^{T,S}$ is
-\emph{bijective}, when we then know that every element of $T$ is a divisor of an
-element of $S$; we then identify the modules $S^{-1}M$ and $T^{-1}M$ via
+There is an important case in which the homomorphism $\rho^{T,S}$ is
+\emph{bijective}, namely when every element of $T$ is a divisor of an
+element of $S$; we can then identify the modules $S^{-1}M$ and $T^{-1}M$ via
 $\rho^{T,S}$. We say that $S$ is \emph{saturated} if every divisor in $A$ of an
 element of $S$ is in $S$; by replacing $S$ with the set $T$ of all the divisors
 of the elements of $S$ (a set which is multiplicative and saturated), we see
@@ -366,7 +366,7 @@ fractions $S^{-1}M$, where $S$ is saturated.
 
 \begin{env}[1.4.4]
 \label{0.1.4.4}
-If $S$, $T$, and $U$ are three multiplicative subsets of $A$ such that $S\subset T\subset U$, then we have
+If $S$, $T$, and $U$ are multiplicative subsets of $A$ such that $S\subset T\subset U$, then we have
 \[
   \rho^{U,S}=\rho^{U,T}\circ\rho^{T,S}.
 \]
@@ -376,12 +376,12 @@ If $S$, $T$, and $U$ are three multiplicative subsets of $A$ such that $S\subset
 \label{0.1.4.5}
 Consider an \emph{increasing filtered family} $(S_\alpha)$ of multiplicative
 subsets of $A$ (we write $\alpha\leq\beta$ for $S_\alpha\subset S_\beta$),
-and let $S$ be the multiplicative subset $\bigcup_\alpha S_\alpha$; let us put
+and let $S$ be the multiplicative subset $\bigcup_\alpha S_\alpha$; we put
 $\rho_{\beta\alpha}=\rho_A^{S_\beta,S_\alpha}$ for $\alpha\leq\beta$;
 according to \sref{0.1.4.4}, the homomorphisms $\rho_{\beta\alpha}$ define a
 ring $A'$ as the \emph{inductive limit} of the inductive system of rings
 $(S_\alpha^{-1}A,\rho_{\beta\alpha})$.
-Let $\rho_\alpha$ be the canonical map $S_\alpha^{-1}A\to A'$, and let $\vphi_\alpha=\rho_A^{S,S_\alpha}$; as
+Let $\rho_\alpha$ be the canonical map $S_\alpha^{-1}A\to A'$, and let $\vphi_\alpha=\rho_A^{S,S_\alpha}$; since
 $\vphi_\alpha=\vphi_\beta\circ\rho_{\beta\alpha}$ for $\alpha\leq\beta$
 according to \sref{0.1.4.4}, we can uniquely define a homomorphism $\vphi:A'\to S^{-1}A$ such that the diagram
 \[
@@ -393,13 +393,17 @@ according to \sref{0.1.4.4}, we can uniquely define a homomorphism $\vphi:A'\to 
     S^{-1}A
   }
 \]
-is commutative.
-In fact, $\vphi$ is an \emph{isomorphism}; it is indeed immediate by construction that $\vphi$ is surjective.
-On the other hand, if $\rho_\alpha(a/s_\alpha)\in A'$ is such that $\vphi(\rho_\alpha(a/s_\alpha))=0$, then this means that $a/s_\alpha=0$ in $S^{-1}A$, that is to say that there exists an $s\in S$ such that $sa=0$; but there is a $\beta\geq\alpha$ such that $s\in S_\beta$, and consequently, as $\rho_\alpha(a/s_\alpha)=\rho_\beta(sa/ss_\alpha)=0$, we find that $\vphi$ is injective.
+commutes.
+In fact, $\vphi$ is an \emph{isomorphism}; indeed, it is immediate by construction that $\vphi$ is surjective.
+On the other hand, if $\rho_\alpha(a/s_\alpha)\in A'$ is such that $\vphi(\rho_\alpha(a/s_\alpha))=0$, then this means that $a/s_\alpha=0$ in $S^{-1}A$, i.e. there exists an $s\in S$ such that $sa=0$; but there is a $\beta\geq\alpha$ such that $s\in S_\beta$, and consequently, since $\rho_\alpha(a/s_\alpha)=\rho_\beta(sa/ss_\alpha)=0$, we find that $\vphi$ is injective.
 The case for an $A$-module $M$ is treated likewise, and we have thus defined canonical isomorphisms
 \[
-  \varinjlim S_\alpha^{-1}A\isoto(\varinjlim S_\alpha)^{-1}A,\
-  \varinjlim S_\alpha^{-1}M\isoto(\varinjlim S_\alpha)^{-1}M,
+  \begin{aligned}
+    \varinjlim S_\alpha^{-1}A
+    &\isoto(\varinjlim S_\alpha)^{-1}A,
+  \\\varinjlim S_\alpha^{-1}M
+    &\isoto(\varinjlim S_\alpha)^{-1}M,
+  \end{aligned}
 \]
 the second being \emph{functorial} in $M$.
 \end{env}
@@ -414,7 +418,7 @@ For every $A$-module $M$ there is then a functorial isomorphism
 \[
   {S_2'}^{-1}(S_1^{-1}M)\isoto(S_1 S_2)^{-1}M
 \]
-which sends $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
+that sends $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
 \end{env}
 
 \subsection{Change of ring}
@@ -423,12 +427,12 @@ which sends $(m/s_1)/(s_2/1)$ to the element $m/(s_1 s_2)$.
 \begin{env}[1.5.1]
 \label{0.1.5.1}
 Let $A$ and $A'$ be rings, $\vphi$ a homomorphism $A'\to A$, and $S$ (resp. $S'$)
-a multiplicative subset of $A$ (resp. $A'$), such that $\vphi(S')\subset S$; the
-composition homomorphism $\smash{A'\xrightarrow{\vphi}A\to S^{-1}A}$ factors as
+a multiplicative subset of $A$ (resp. $A'$) such that $\vphi(S')\subset S$; the
+composite homomorphism $\smash{A'\xrightarrow{\vphi}A\to S^{-1}A}$ factors as
 \[
   A'\to{S'}^{-1}A'\xrightarrow{\vphi^{S'}}S^{-1}A,
 \]
-by \sref{0.1.2.4}; where $\vphi^{S'}(a'/s')=\vphi(a')/\vphi(s')$. If
+by \sref{0.1.2.4}; we have $\vphi^{S'}(a'/s')=\vphi(a')/\vphi(s')$. If
 $A=\vphi(A')$ and $S=\vphi(S')$, then $\vphi^{S'}$ is \emph{surjective}. If
 $A'=A$ and $\vphi$ is the identity, then $\vphi^{S'}$ is exactly the
 homomorphism $\rho_A^{S,S'}$ defined in \sref{0.1.4.1}.
@@ -446,9 +450,9 @@ ${S'}^{-1}(M_{[\vphi]})$ to the element $m/\vphi(s')$ of
 $(S^{-1}M)_{[\vphi^{S'}]}$; indeed, we immediately see that this definition
 does not depend on the representative $m/s'$ of the element in question. When
 $S=\vphi(S')$, the homomorphism $\sigma$ is \emph{bijective}.
-When $A'=A$ and $\vphi$ is the identity, $\sigma$ is none other than the homomorphism $\rho_M^{S,S'}$ defined in \sref{0.1.4.1}.
+When $A'=A$ and $\vphi$ is the identity, $\sigma$ is exactly the homomorphism $\rho_M^{S,S'}$ defined in \sref{0.1.4.1}.
 
-When, in particular, we take $M=A$ the homomorphism $\vphi$ defines an
+In particular, when we take $M=A$, the homomorphism $\vphi$ defines an
 $A'$-algebra structure on $A$; ${S'}^{-1}(A_{[\vphi]})$ is then endowed with a ring
 structure, with which it can be identified with $(\vphi(S'))^{-1}A$, and the
 homomorphism $\sigma:{S'}^{-1}(A_{[\vphi]})\to S^{-1}A$ is a homomorphism of
