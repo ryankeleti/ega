@@ -15,14 +15,15 @@ for every integer $k$ such that $0\leq k\leq d-1$, we denote by $\sh{M}^{(d,k)}$
 We denote by $\sh{M}(n)$ the graded $\sh{S}$-module such that $(\sh{M}(n))_k=\sh{M}_{n+k}$ for all $k\in\bb{Z}$;
 if $\sh{S}$ and $\sh{M}$ are quasi-coherent, then $\sh{M}(n)$ is a quasi-coherent graded $\sh{S}$-module \sref[I]{I.9.6.1}.
 
-We say that $\sh{M}$ is a graded $\sh{S}$-module \emph{of finite type} (resp. admitting a \emph{finite presentation})  if, for all $y\in Y$, there exists an open neighbourhood $U$ of $y$, along with integers $n_i$ (resp. integers $m_i$ and $n_j$) such that there is a surjective degree~$0$ homomorphism $\bigoplus_{i=1}^r(\sh{S}(n_i)|U)\to\sh{M}|U$ (resp. such that $\sh{M}|U$ is isomorphic to the cokernel of a degree~$0$ homomorphism $\bigoplus_{i=1}^r(\sh{S}(m_i)|U)\to\bigoplus_{j 1}^s(\sh{S}(n_J)|U)$).
+We say that $\sh{M}$ is a graded $\sh{S}$-module \emph{of finite type} (resp. admitting a \emph{finite presentation})  if, for all $y\in Y$, there exists an open neighbourhood $U$ of $y$, along with integers $n_i$ (resp. integers $m_i$ and $n_j$) such that there is a surjective degree~$0$ homomorphism $\bigoplus_{i=1}^r(\sh{S}(n_i)|U)\to\sh{M}|U$ (resp. such that $\sh{M}|U$ is isomorphic to the cokernel of a degree~$0$ homomorphism $\bigoplus_{i=1}^r(\sh{S}(m_i)|U)\to\bigoplus_{j=1}^s(\sh{S}(n_j)|U)$).
 
 Let $U$ be an affine open of $Y$, with ring $A=\Gamma(U,\sh{O}_Y)$;
 by hypothesis, the graded $(\sh{O}_Y|U)$-algebra $\sh{S}|U$ is isomorphic to $\widetilde{S}$, where $S=\Gamma(U,\sh{S})$ is a graded $A$-algebra \sref[I]{I.1.4.3};
 \oldpage[II]{50}
 set $X_U=\Proj(\Gamma(U,\sh{S}))$.
 Let $U'\subset U$ be another affine open of $Y$, with ring $A'$, and let $j:U'\to U$ be the canonical injection, which corresponds to the restriction homomorphism $A\to A'$;
-we have that $\sh{S}|U'=j^*(\sh{S}|U)$, and so $S'=\Gamma(U',\sh{S})$ is canonically identified with $X_U\times_U U'$, and thus also with $f_U^{-1}(U')$, where we denote by $f_U$ the structure morphism $X_U\to U$ \sref[I]{I.4.4.1}.
+we have that $\sh{S}|U'=j^*(\sh{S}|U)$, and so $S'=\Gamma(U',\sh{S})$ is canonically identified with $S\otimes_AA'$ \sref[I]{I.1.6.5}.
+We conclude \sref{II.2.8.10} that $X_{U'}$ is canonically identified with $X_U\times_U U'$, and thus also with $f_U^{-1}(U')$, where we denote by $f_U$ the structure morphism $X_U\to U$ \sref[I]{I.4.4.1}.
 We denote by $\sigma_{U',U}$ the canonical isomorphism $f_U^{-1}(U')\simto X_{U'}$ thus defined, and by $\rho_{U',U}$ the open immersion $X_{U'}\to X_U$ obtained by composing $\sigma_{U',U}^{-1}$ with the canonical injection $f_U^{-1}(U')\to X_U$.
 It is immediate that, if $U''\subset U'$ is another affine open of $Y$, then $\rho_{U'',U}=\rho_{U'',U'}\circ\rho_{U',U}$.
 \end{env}
@@ -131,7 +132,7 @@ In particular, $\Proj(\sh{O}_Y[T])$ is identified with $Y$.
 \end{corollary}
 
 \begin{proof}
-By applying \sref{II.3.1.6} to the unique section $f\in\Gamma(Y,\sh{S})$ that is equal to $T$ at each point of $Y$< we see that $X_f=X$.
+By applying \sref{II.3.1.6} to the unique section $f\in\Gamma(Y,\sh{S})$ that is equal to $T$ at each point of $Y$ we see that $X_f=X$.
 Further, here we have $d=1$, and $\sh{S}^{(1)}/(f-1)\sh{S}^{(1)}=\sh{S}/(f-1)\sh{S}$ is canonically isomorphic to $\sh{A}$, whence the corollary \sref{II.1.2.2}.
 \end{proof}
 
